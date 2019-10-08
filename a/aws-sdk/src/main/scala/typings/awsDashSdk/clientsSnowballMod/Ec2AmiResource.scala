@@ -10,7 +10,7 @@ trait Ec2AmiResource extends js.Object {
     */
   var AmiId: typings.awsDashSdk.clientsSnowballMod.AmiId
   /**
-    * The ID of the AMI on the supported device.
+    * The ID of the AMI on the Snowball Edge device.
     */
   var SnowballAmiId: js.UndefOr[String] = js.undefined
 }

@@ -2,6 +2,7 @@ package typings.stripe.stripeMod.invoiceItems
 
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IResourceObject
+import typings.stripe.stripeMod.customers.ICustomer
 import typings.stripe.stripeMod.invoices.IInvoice
 import typings.stripe.stripeMod.invoices.IPeriod
 import typings.stripe.stripeMod.plans.IPlan
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait InvoiceItem extends IResourceObject {
   var amount: Double
   var currency: String
-  var customer: String
+  var customer: String | ICustomer
   var date: Double
   var description: String
   /**
@@ -56,7 +57,7 @@ object InvoiceItem {
   def apply(
     amount: Double,
     currency: String,
-    customer: String,
+    customer: String | ICustomer,
     date: Double,
     description: String,
     discountable: Boolean,
@@ -71,7 +72,7 @@ object InvoiceItem {
     subscription: String | ISubscription,
     invoice: String | IInvoice = null
   ): InvoiceItem = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, customer = customer, date = date, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, customer = customer.asInstanceOf[js.Any], date = date, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceItem]

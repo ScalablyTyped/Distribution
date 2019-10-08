@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "optimize-css-assets-webpack-plugin"
-version := "5.0-dt-20190820Z-fdd69a"
+version := "5.0-dt-20191007Z-8b0f88"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

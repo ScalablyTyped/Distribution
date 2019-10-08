@@ -115,6 +115,14 @@ class ASPxClientRichEdit () extends ASPxClientControl {
     */
   var document: RichEditDocument = js.native
   /**
+    * Provides access to a document's layout functionality.
+    */
+  var layout: RichEditLayout = js.native
+  /**
+    * Provides access to settings related to a loading panel functionality.
+    */
+  var loadingPanel: LoadingPanel = js.native
+  /**
     * Provides access to request settings.
     */
   var requestSettings: RequestSettings = js.native

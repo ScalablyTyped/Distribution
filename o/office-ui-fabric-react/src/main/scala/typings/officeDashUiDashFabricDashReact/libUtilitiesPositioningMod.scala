@@ -63,6 +63,13 @@ object libUtilitiesPositioningMod extends js.Object {
     elementToPosition: HTMLElement,
     previousPositions: ICalloutPositionedInfo
   ): ICalloutPositionedInfo = js.native
+  def positionCard(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = js.native
+  def positionCard(
+    props: IPositionProps,
+    hostElement: HTMLElement,
+    elementToPosition: HTMLElement,
+    previousPositions: ICalloutPositionedInfo
+  ): ICalloutPositionedInfo = js.native
   def positionElement(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): IPositionedData = js.native
   def positionElement(
     props: IPositionProps,
@@ -112,7 +119,7 @@ object libUtilitiesPositioningMod extends js.Object {
           typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningMod.Rectangle
         ], 
         /* coverTarget */ js.UndefOr[Boolean], 
-        /* previousPositions */ js.UndefOr[Boolean], 
+        /* doNotFinalizeReturnEdge */ js.UndefOr[Boolean], 
         IPositionedData
       ] = js.native
     var _getMaxHeightFromTargetRectangle: js.Function5[

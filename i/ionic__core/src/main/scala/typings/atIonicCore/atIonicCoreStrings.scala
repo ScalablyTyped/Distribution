@@ -13,6 +13,7 @@ import typings.atIonicCore.distTypesInterfaceMod.Side
 import typings.atIonicCore.distTypesInterfaceMod.TextFieldTypes
 import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationDirection
 import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationFill
+import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.AnimationPlayTo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -177,7 +178,9 @@ object atIonicCoreStrings {
   sealed trait email extends TextFieldTypes
   
   @js.native
-  sealed trait end extends Side
+  sealed trait end
+    extends AnimationPlayTo
+       with Side
   
   @js.native
   sealed trait evenodd extends js.Object
@@ -500,7 +503,9 @@ object atIonicCoreStrings {
   sealed trait stacked extends js.Object
   
   @js.native
-  sealed trait start extends Side
+  sealed trait start
+    extends AnimationPlayTo
+       with Side
   
   @js.native
   sealed trait statusTap extends js.Object

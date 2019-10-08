@@ -35,6 +35,7 @@ trait Message extends js.Object {
   var new_chat_title: js.UndefOr[String] = js.undefined
   var photo: js.UndefOr[js.Array[PhotoSize]] = js.undefined
   var pinned_message: js.UndefOr[Message] = js.undefined
+  var reply_markup: js.UndefOr[InlineKeyboardMarkup] = js.undefined
   var reply_to_message: js.UndefOr[Message] = js.undefined
   var sticker: js.UndefOr[Sticker] = js.undefined
   var successful_payment: js.UndefOr[SuccessfulPayment] = js.undefined
@@ -79,6 +80,7 @@ object Message {
     new_chat_title: String = null,
     photo: js.Array[PhotoSize] = null,
     pinned_message: Message = null,
+    reply_markup: InlineKeyboardMarkup = null,
     reply_to_message: Message = null,
     sticker: Sticker = null,
     successful_payment: SuccessfulPayment = null,
@@ -117,6 +119,7 @@ object Message {
     if (new_chat_title != null) __obj.updateDynamic("new_chat_title")(new_chat_title)
     if (photo != null) __obj.updateDynamic("photo")(photo)
     if (pinned_message != null) __obj.updateDynamic("pinned_message")(pinned_message)
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
     if (reply_to_message != null) __obj.updateDynamic("reply_to_message")(reply_to_message)
     if (sticker != null) __obj.updateDynamic("sticker")(sticker)
     if (successful_payment != null) __obj.updateDynamic("successful_payment")(successful_payment)

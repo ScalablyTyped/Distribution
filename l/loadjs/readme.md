@@ -1,7 +1,7 @@
 
 # Scala.js typings for loadjs
 
-Typings are for version 3.5
+Typings are for version 4.0
 
 ## Library description:
 Tiny async loader for modern browsers

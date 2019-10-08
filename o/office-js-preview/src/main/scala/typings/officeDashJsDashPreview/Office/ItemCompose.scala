@@ -80,9 +80,13 @@ trait ItemCompose extends Item {
   /**
     * Adds a file to a message or appointment as an attachment.
     *
-    * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the asyncResult.value object.
+    * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form.
+    * This method returns the attachment identifier in the asyncResult.value object.
     *
     * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+    * 
+    * **Note**: If you're using a data URL API (e.g., readAsDataURL), you need to strip out the data URL prefix then send the rest of the string to this API.
+    * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
     *
     * [Api set: Mailbox Preview]
     *

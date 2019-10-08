@@ -1,7 +1,7 @@
 
 # Scala.js typings for dinero_dot_js
 
-Typings are for version 1.4
+Typings are for version 1.6
 
 ## Library description:
 An immutable library to create, calculate and format monetary values.

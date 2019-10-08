@@ -43,6 +43,10 @@ trait Document extends js.Object {
     */
   var schema: Schema
   /**
+    * a blank line before this node and its commentBefore
+    */
+  var spaceBefore: js.UndefOr[Boolean] = js.undefined
+  /**
     * Array of prefixes; each will have a string `handle` that
     * starts and ends with `!` and a string `prefix` that the handle will be replaced by.
     */
@@ -94,6 +98,7 @@ object Document {
     contents: AstNode = null,
     cstNode: typings.yaml.yamlMod.cst.Document = null,
     range: js.Tuple2[Double, Double] = null,
+    spaceBefore: js.UndefOr[Boolean] = js.undefined,
     version: String = null
   ): Document = {
     val __obj = js.Dynamic.literal(anchors = anchors, errors = errors, listNonDefaultTags = js.Any.fromFunction0(listNonDefaultTags), parse = js.Any.fromFunction1(parse), schema = schema, setTagPrefix = js.Any.fromFunction2(setTagPrefix), tagPrefixes = tagPrefixes, toJSON = js.Any.fromFunction0(toJSON), toString = js.Any.fromFunction0(toString), warnings = warnings)
@@ -103,6 +108,7 @@ object Document {
     if (contents != null) __obj.updateDynamic("contents")(contents)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)
     if (range != null) __obj.updateDynamic("range")(range)
+    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[Document]
   }

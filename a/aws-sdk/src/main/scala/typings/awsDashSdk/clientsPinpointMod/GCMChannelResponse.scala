@@ -14,7 +14,7 @@ trait GCMChannelResponse extends js.Object {
     */
   var CreationDate: js.UndefOr[__string] = js.undefined
   /**
-    * The API key, also referred to as a server key, that you received from Google to communicate with Google services.
+    * The Web API Key, also referred to as an API_KEY or server key, that you received from Google to communicate with Google services.
     */
   var Credential: __string
   /**

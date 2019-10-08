@@ -11,6 +11,7 @@ trait Dinero extends js.Object {
   def convert(currency: String): js.Promise[Dinero] = js.native
   def convert(currency: String, options: ExchangeRatesApiOptions): js.Promise[Dinero] = js.native
   def convertPrecision(newPrecision: Double): Dinero = js.native
+  def convertPrecision(newPrecision: Double, roundingMode: RoundingMode): Dinero = js.native
   def divide(divisor: Double): Dinero = js.native
   def divide(divisor: Double, roundingMode: RoundingMode): Dinero = js.native
   def equalsTo(comparator: Dinero): Boolean = js.native

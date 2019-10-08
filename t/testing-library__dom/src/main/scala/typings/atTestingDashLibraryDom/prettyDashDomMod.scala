@@ -2,7 +2,8 @@ package typings.atTestingDashLibraryDom
 
 import typings.atTestingDashLibraryDom.atTestingDashLibraryDomNumbers.`false`
 import typings.prettyDashFormat.prettyDashFormatMod.OptionsReceived
-import typings.std.HTMLElement
+import typings.std.Element
+import typings.std.HTMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +11,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@testing-library/dom/pretty-dom", JSImport.Namespace)
 @js.native
 object prettyDashDomMod extends js.Object {
-  def prettyDOM(element: HTMLElement): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  def prettyDOM(): String | `false` = js.native
+  def prettyDOM(dom: Element): String | `false` = js.native
+  def prettyDOM(dom: Element, maxLength: Double): String | `false` = js.native
+  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
 }
 

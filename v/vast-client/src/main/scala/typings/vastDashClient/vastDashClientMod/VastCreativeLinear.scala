@@ -12,7 +12,7 @@ trait VastCreativeLinear extends VastCreative {
   var skipDelay: Double | Null
   var videoClickThroughURLTemplate: String | Null
   var videoClickTrackingURLTemplates: js.Array[String]
-  var videoCustomClickURLTempaltes: js.Array[String]
+  var videoCustomClickURLTemplates: js.Array[String]
 }
 
 object VastCreativeLinear {
@@ -24,7 +24,7 @@ object VastCreativeLinear {
     trackingEvents: VastTrackingEvents,
     `type`: String,
     videoClickTrackingURLTemplates: js.Array[String],
-    videoCustomClickURLTempaltes: js.Array[String],
+    videoCustomClickURLTemplates: js.Array[String],
     adId: String = null,
     adParameters: String = null,
     apiFramework: String = null,
@@ -33,7 +33,7 @@ object VastCreativeLinear {
     skipDelay: Int | Double = null,
     videoClickThroughURLTemplate: String = null
   ): VastCreativeLinear = {
-    val __obj = js.Dynamic.literal(duration = duration, icons = icons, mediaFiles = mediaFiles, trackingEvents = trackingEvents, videoClickTrackingURLTemplates = videoClickTrackingURLTemplates, videoCustomClickURLTempaltes = videoCustomClickURLTempaltes)
+    val __obj = js.Dynamic.literal(duration = duration, icons = icons, mediaFiles = mediaFiles, trackingEvents = trackingEvents, videoClickTrackingURLTemplates = videoClickTrackingURLTemplates, videoCustomClickURLTemplates = videoCustomClickURLTemplates)
     __obj.updateDynamic("type")(`type`)
     if (adId != null) __obj.updateDynamic("adId")(adId)
     if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/addon-jest" : "5.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/addon-jest" : "5.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -14,15 +14,13 @@ sealed trait ListLevelFormat extends js.Object
 @js.native
 object ListLevelFormat extends js.Object {
   /**
-    * Specifies that the sequence shall consist of full-width hiragana characters in the traditional a-i-u-e-o order.
-  Currently not supported.
+    * Specifies that the sequence shall consist of full-width hiragana characters in the traditional a-i-u-e-o order. Currently not supported.
     */
   @js.native
   sealed trait AIUEOFullWidthHiragana extends ListLevelFormat
   
   /**
-    * Specifies that the sequence shall consist of hiragana characters in the traditional a-i-u-e-o order.
-  Currently not supported.
+    * Specifies that the sequence shall consist of hiragana characters in the traditional a-i-u-e-o order. Currently not supported.
     */
   @js.native
   sealed trait AIUEOHiragana extends ListLevelFormat

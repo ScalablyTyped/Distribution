@@ -63,6 +63,7 @@ package object clientsFirehoseMod {
   type DestinationId = String
   type ElasticsearchBufferingIntervalInSeconds = Double
   type ElasticsearchBufferingSizeInMBs = Double
+  type ElasticsearchClusterEndpoint = String
   type ElasticsearchDomainARN = String
   type ElasticsearchIndexName = String
   /* Rewritten from type alias, can be one of: 

@@ -14,7 +14,7 @@ trait CampaignDateRangeKpiResponse extends js.Object {
     */
   var CampaignId: __string
   /**
-    * The last date or date and time of the date range that was used to filter the query results, in ISO 8601 format. The date range is inclusive.
+    * The last date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
   var EndTime: __timestampIso8601
   /**
@@ -30,7 +30,7 @@ trait CampaignDateRangeKpiResponse extends js.Object {
     */
   var NextToken: js.UndefOr[__string] = js.undefined
   /**
-    * The first date or date and time of the date range that was used to filter the query results, in ISO 8601 format. The date range is inclusive.
+    * The first date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
   var StartTime: __timestampIso8601
 }

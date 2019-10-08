@@ -2197,43 +2197,43 @@ package object devexpressDashWeb {
   /**
     * A method that will handle the BootstrapClientChartBase.LegendClick event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementClickEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientChartBaseLegendClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChartBase.PointClick event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementClickEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientChartBasePointClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChartBase.PointHoverChanged event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientChartBasePointHoverChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChartBase.PointSelectionChanged event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientChartBasePointSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChartBase.TooltipHidden event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientChartBaseTooltipHiddenEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChartBase.TooltipShown event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientChartBaseTooltipShownEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChart.ZoomEnd event.
     * @param source The event source.
-    * @param e A BootstrapClientChartZoomEndEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientChartZoomEndEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
@@ -2245,25 +2245,25 @@ package object devexpressDashWeb {
   /**
     * A method that will handle the Invoke event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementClickEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientCoordinateSystemChartArgumentAxisClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChartBase.SeriesClick event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementClickEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientCoordinateSystemChartSeriesClickEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChartBase.SeriesHoverChanged event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientCoordinateSystemChartSeriesHoverChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapClientChartBase.SeriesSelectionChanged event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetElementActionEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientCoordinateSystemChartSeriesSelectionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   type BootstrapClientFloatingActionButtonContextChangingEventHandler[Sender] = js.Function2[
@@ -2292,7 +2292,7 @@ package object devexpressDashWeb {
   /**
     * A method that will handle the BootstrapClientRangeSelector.ValueChanged event.
     * @param source The event source.
-    * @param e A BootstrapClientRangeSelectorValueChangedEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapClientRangeSelectorValueChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   type BootstrapClientSparklineTooltipHiddenEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
@@ -2358,7 +2358,7 @@ package object devexpressDashWeb {
   /**
     * A method that will handle the BootstrapUIWidgetBase.IncidentOccurred event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetErrorEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapUIWidgetErrorEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
@@ -2370,13 +2370,13 @@ package object devexpressDashWeb {
   /**
     * A method that will handle the BootstrapUIWidgetBase.Exporting event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetExportEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapUIWidgetExportingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
     * A method that will handle the BootstrapUIWidgetBase.FileSaving event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetExportEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapUIWidgetFileSavingEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**
@@ -2388,7 +2388,7 @@ package object devexpressDashWeb {
   /**
     * A method that will handle the BootstrapUIWidgetBase.OptionChanged event.
     * @param source The event source.
-    * @param e A BootstrapUIWidgetOptionChangedEventArgs object that contains event data.
+    * @param e An object that contains event data.
     */
   type BootstrapUIWidgetOptionChangedEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ js.Any, Unit]
   /**

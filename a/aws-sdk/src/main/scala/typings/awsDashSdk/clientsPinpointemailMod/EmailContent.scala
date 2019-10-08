@@ -13,14 +13,19 @@ trait EmailContent extends js.Object {
     * The simple email message. The message consists of a subject and a message body.
     */
   var Simple: js.UndefOr[Message] = js.undefined
+  /**
+    * The template to use for the email message.
+    */
+  var Template: js.UndefOr[typings.awsDashSdk.clientsPinpointemailMod.Template] = js.undefined
 }
 
 object EmailContent {
   @scala.inline
-  def apply(Raw: RawMessage = null, Simple: Message = null): EmailContent = {
+  def apply(Raw: RawMessage = null, Simple: Message = null, Template: Template = null): EmailContent = {
     val __obj = js.Dynamic.literal()
     if (Raw != null) __obj.updateDynamic("Raw")(Raw)
     if (Simple != null) __obj.updateDynamic("Simple")(Simple)
+    if (Template != null) __obj.updateDynamic("Template")(Template)
     __obj.asInstanceOf[EmailContent]
   }
 }

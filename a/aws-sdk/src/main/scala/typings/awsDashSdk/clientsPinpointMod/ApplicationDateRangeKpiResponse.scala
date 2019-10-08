@@ -10,7 +10,7 @@ trait ApplicationDateRangeKpiResponse extends js.Object {
     */
   var ApplicationId: __string
   /**
-    * The last date or date and time of the date range that was used to filter the query results, in ISO 8601 format. The date range is inclusive.
+    * The last date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
   var EndTime: __timestampIso8601
   /**
@@ -22,11 +22,11 @@ trait ApplicationDateRangeKpiResponse extends js.Object {
     */
   var KpiResult: BaseKpiResult
   /**
-    * The string to use in a subsequent request to get the next page of results in a paginated response. This value is null for the App Metrics resource. The App Metrics resource returns all results in a single page.
+    * The string to use in a subsequent request to get the next page of results in a paginated response. This value is null for the Application Metrics resource. The Application Metrics resource returns all results in a single page.
     */
   var NextToken: js.UndefOr[__string] = js.undefined
   /**
-    * The first date or date and time of the date range that was used to filter the query results, in ISO 8601 format. The date range is inclusive.
+    * The first date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
   var StartTime: __timestampIso8601
 }

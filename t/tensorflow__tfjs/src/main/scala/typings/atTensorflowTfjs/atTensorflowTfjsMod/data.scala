@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjs.atTensorflowTfjsMod
 
 import typings.atTensorflowTfjs.atTensorflowTfjsNumbers.`10000`
-import typings.atTensorflowTfjs.atTensorflowTfjsStrings.`1DOT2DOT10`
+import typings.atTensorflowTfjs.atTensorflowTfjsStrings.`1DOT2DOT11`
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorContainer
 import typings.atTensorflowTfjsDashData.distDatasetMod.DatasetContainer
 import typings.atTensorflowTfjsDashData.distDatasourceMod.DataSource
@@ -108,7 +108,7 @@ object data extends js.Object {
     def this(url: RequestInfo, fileOptions: FileChunkIteratorOptions) = this()
   }
   
-  val version_data: `1DOT2DOT10` = js.native
+  val version_data: `1DOT2DOT11` = js.native
   def array[T /* <: TensorContainer */](items: js.Array[T]): typings.atTensorflowTfjsDashData.distDatasetMod.Dataset[T] = js.native
   def csv(source: RequestInfo): typings.atTensorflowTfjsDashData.distDatasetsCsvUnderscoreDatasetMod.CSVDataset = js.native
   def csv(source: RequestInfo, csvConfig: CSVConfig): typings.atTensorflowTfjsDashData.distDatasetsCsvUnderscoreDatasetMod.CSVDataset = js.native

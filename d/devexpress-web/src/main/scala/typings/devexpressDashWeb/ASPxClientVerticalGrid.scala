@@ -318,6 +318,7 @@ class ASPxClientVerticalGrid () extends ASPxClientGridBase {
     * @param isFilterEnabled true to enable the current filter; otherwise, false.
     */
   def SetFilterEnabled(isFilterEnabled: Boolean): Unit = js.native
+  def SetFixedRowsTopOffset(offset: Double): Unit = js.native
   /**
     * Specifies the horizontal scroll position for the grid's content.
     * @param position An integer value specifying the horizontal scroll position.

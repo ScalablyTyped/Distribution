@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "testing-library__vue"
-version := "2.0-dt-20190816Z-3707a5"
+version := "2.0-dt-20190816Z-22e91d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "pretty-format" % "24.9.0-53a7e6",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3",
-  "org.scalablytyped" %%% "testing-library__dom" % "6.5-dt-20191003Z-516265",
+  "org.scalablytyped" %%% "testing-library__dom" % "6.5-dt-20191007Z-4eca1f",
   "org.scalablytyped" %%% "vue" % "2.6.10-15060f",
   "org.scalablytyped" %%% "vue-router" % "3.1.3-5efb38",
   "org.scalablytyped" %%% "vuex" % "3.1.1-c1ac56")

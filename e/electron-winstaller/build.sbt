@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-winstaller"
-version := "2.6-dt-20190212Z-ecc292"
+version := "4.0.0-301f05"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

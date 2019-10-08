@@ -21,6 +21,11 @@ trait MiddlewaresOptions extends js.Object {
     */
   var noCors: js.UndefOr[Boolean] = js.undefined
   /**
+    * Disable compression
+    * @default false
+    */
+  var noGzip: js.UndefOr[Boolean] = js.undefined
+  /**
     * Accept only GET requests
     * @default false
     */
@@ -38,6 +43,7 @@ object MiddlewaresOptions {
     bodyParser: js.UndefOr[Boolean] = js.undefined,
     logger: js.UndefOr[Boolean] = js.undefined,
     noCors: js.UndefOr[Boolean] = js.undefined,
+    noGzip: js.UndefOr[Boolean] = js.undefined,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     static: String = null
   ): MiddlewaresOptions = {
@@ -45,6 +51,7 @@ object MiddlewaresOptions {
     if (!js.isUndefined(bodyParser)) __obj.updateDynamic("bodyParser")(bodyParser)
     if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger)
     if (!js.isUndefined(noCors)) __obj.updateDynamic("noCors")(noCors)
+    if (!js.isUndefined(noGzip)) __obj.updateDynamic("noGzip")(noGzip)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (static != null) __obj.updateDynamic("static")(static)
     __obj.asInstanceOf[MiddlewaresOptions]

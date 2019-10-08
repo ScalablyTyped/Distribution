@@ -19,6 +19,7 @@ class MessageBarBase protected () extends BaseComponent[IMessageBarProps, IMessa
   var _getDismissSingleLine: js.Any = js.native
   var _getExpandSingleLine: js.Any = js.native
   var _getIconSpan: js.Any = js.native
+  var _getRegionProps: js.Any = js.native
   var _onClick: js.Any = js.native
   var _renderInnerText: js.Any = js.native
   var _renderMultiLine: js.Any = js.native

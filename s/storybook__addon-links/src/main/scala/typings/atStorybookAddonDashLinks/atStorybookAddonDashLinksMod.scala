@@ -1,6 +1,5 @@
 package typings.atStorybookAddonDashLinks
 
-import typings.atStorybookAddonDashLinks.atStorybookAddonDashLinksMod.LinkToFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,13 +7,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/addon-links", JSImport.Namespace)
 @js.native
 object atStorybookAddonDashLinksMod extends js.Object {
-  def hrefTo(kind: String, story: String): js.Promise[String] = js.native
-  def linkTo[T](book: String): js.Function0[Unit] = js.native
-  def linkTo[T](book: String, kind: String): js.Function0[Unit] = js.native
-  def linkTo[T](book: String, kind: LinkToFunction): js.Function0[Unit] = js.native
-  def linkTo[T](book: LinkToFunction): js.Function0[Unit] = js.native
-  def linkTo[T](book: LinkToFunction, kind: String): js.Function0[Unit] = js.native
-  def linkTo[T](book: LinkToFunction, kind: LinkToFunction): js.Function0[Unit] = js.native
-  type LinkToFunction = js.Function1[/* repeated */ js.Any, String]
+  def LinkTo(): Null = js.native
+  def hrefTo(kind: String, name: String): js.Promise[String] = js.native
+  def linkTo(kind: String): js.Function1[/* repeated */ String, Unit] = js.native
+  def linkTo(kind: String, story: String): js.Function1[/* repeated */ String, Unit] = js.native
+  def withLinks(storyFn: js.Function0[Unit]): Unit = js.native
 }
 

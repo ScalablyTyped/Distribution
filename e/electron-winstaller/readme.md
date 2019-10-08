@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-winstaller
 
-Typings are for version 2.6
+Typings are for version 4.0.0
 
 ## Library description:
 Module to generate Windows installers for Electron apps
@@ -24,7 +24,7 @@ Module to generate Windows installers for Electron apps
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -5427,8 +5427,8 @@ trait LoDashFp extends js.Object {
       Boolean
     ]
   ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
-  def remove[T](predicate: ValueIteratee[T]): LodashRemove1x1[T] = js.native
-  def remove[T](predicate: ValueIteratee[T], array: List[T]): js.Array[T] = js.native
+  def remove[T](predicate: js.Function1[/* value */ T, NotVoid]): LodashRemove1x1[T] = js.native
+  def remove[T](predicate: js.Function1[/* value */ T, NotVoid], array: List[T]): js.Array[T] = js.native
   def remove[T](predicate: __, array: List[T]): LodashRemove1x2[T] = js.native
   def repeat(n: Double): LodashRepeat1x1 = js.native
   def repeat(n: Double, string: String): String = js.native

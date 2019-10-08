@@ -74,6 +74,10 @@ trait TileProps extends js.Object {
     */
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
+    * Styling for overlay
+    */
+  var overlayContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
     * Text inside the tile
     */
   var title: js.UndefOr[String] = js.undefined
@@ -106,6 +110,7 @@ object TileProps {
     imageContainerStyle: StyleProp[ViewStyle] = null,
     imageProps: Partial[ImageProps] = null,
     onPress: () => Unit = null,
+    overlayContainerStyle: StyleProp[ViewStyle] = null,
     title: String = null,
     titleStyle: StyleProp[TextStyle] = null,
     width: Int | Double = null
@@ -124,6 +129,7 @@ object TileProps {
     if (imageContainerStyle != null) __obj.updateDynamic("imageContainerStyle")(imageContainerStyle.asInstanceOf[js.Any])
     if (imageProps != null) __obj.updateDynamic("imageProps")(imageProps)
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))
+    if (overlayContainerStyle != null) __obj.updateDynamic("overlayContainerStyle")(overlayContainerStyle.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

@@ -32,6 +32,7 @@ object Scalar {
     cstNode: typings.yaml.yamlMod.cst.Node = null,
     format: BIN | HEX | OCT | TIME = null,
     range: js.Tuple2[Double, Double] = null,
+    spaceBefore: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
     `type`: BLOCK_FOLDED | BLOCK_LITERAL | PLAIN | QUOTE_DOUBLE | QUOTE_SINGLE = null,
     value: Boolean | Double | String = null
@@ -42,6 +43,7 @@ object Scalar {
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range)
+    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore)
     if (tag != null) __obj.updateDynamic("tag")(tag)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

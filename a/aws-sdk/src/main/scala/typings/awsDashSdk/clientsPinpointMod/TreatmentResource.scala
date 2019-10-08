@@ -25,6 +25,7 @@ trait TreatmentResource extends js.Object {
     * The status of the treatment.
     */
   var State: js.UndefOr[CampaignState] = js.undefined
+  var TemplateConfiguration: js.UndefOr[typings.awsDashSdk.clientsPinpointMod.TemplateConfiguration] = js.undefined
   /**
     * The custom description of the treatment.
     */
@@ -43,6 +44,7 @@ object TreatmentResource {
     MessageConfiguration: MessageConfiguration = null,
     Schedule: Schedule = null,
     State: CampaignState = null,
+    TemplateConfiguration: TemplateConfiguration = null,
     TreatmentDescription: __string = null,
     TreatmentName: __string = null
   ): TreatmentResource = {
@@ -50,6 +52,7 @@ object TreatmentResource {
     if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration)
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
     if (State != null) __obj.updateDynamic("State")(State)
+    if (TemplateConfiguration != null) __obj.updateDynamic("TemplateConfiguration")(TemplateConfiguration)
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)
     __obj.asInstanceOf[TreatmentResource]

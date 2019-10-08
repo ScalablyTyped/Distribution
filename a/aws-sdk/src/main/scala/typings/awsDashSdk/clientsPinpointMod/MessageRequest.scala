@@ -22,6 +22,10 @@ trait MessageRequest extends js.Object {
     */
   var MessageConfiguration: DirectMessageConfiguration
   /**
+    * The message template to use for the message.
+    */
+  var TemplateConfiguration: js.UndefOr[typings.awsDashSdk.clientsPinpointMod.TemplateConfiguration] = js.undefined
+  /**
     * The unique identifier for tracing the message. This identifier is visible to message recipients.
     */
   var TraceId: js.UndefOr[__string] = js.undefined
@@ -34,12 +38,14 @@ object MessageRequest {
     Addresses: MapOfAddressConfiguration = null,
     Context: MapOf__string = null,
     Endpoints: MapOfEndpointSendConfiguration = null,
+    TemplateConfiguration: TemplateConfiguration = null,
     TraceId: __string = null
   ): MessageRequest = {
     val __obj = js.Dynamic.literal(MessageConfiguration = MessageConfiguration)
     if (Addresses != null) __obj.updateDynamic("Addresses")(Addresses)
     if (Context != null) __obj.updateDynamic("Context")(Context)
     if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints)
+    if (TemplateConfiguration != null) __obj.updateDynamic("TemplateConfiguration")(TemplateConfiguration)
     if (TraceId != null) __obj.updateDynamic("TraceId")(TraceId)
     __obj.asInstanceOf[MessageRequest]
   }

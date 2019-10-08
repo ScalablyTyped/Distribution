@@ -38,7 +38,9 @@ import typings.atTestingDashLibraryReact.atTestingDashLibraryReactNumbers.`false
 import typings.atTestingDashLibraryReact.atTestingDashLibraryReactStrings.queries
 import typings.prettyDashFormat.prettyDashFormatMod.OptionsReceived
 import typings.react.reactMod.ReactElement
+import typings.std.Element
 import typings.std.Error
+import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
@@ -118,9 +120,13 @@ object pureMod extends js.Object {
   def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
   def logDom(htmlElement: HTMLElement): Unit = js.native
   def logRoles(container: HTMLElement): String = js.native
-  def prettyDOM(element: HTMLElement): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  def prettyDOM(): String | `false` = js.native
+  def prettyDOM(dom: Element): String | `false` = js.native
+  def prettyDOM(dom: Element, maxLength: Double): String | `false` = js.native
+  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def render(ui: ReactElement): RenderResult[Typeofqueries] = js.native
   def render[Q /* <: Queries */](ui: ReactElement, options: RenderOptions[Q]): RenderResult[Q] = js.native
   @JSName("render")

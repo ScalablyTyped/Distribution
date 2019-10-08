@@ -10,7 +10,7 @@ trait TagResourceRequest extends js.Object {
     */
   var resourceArn: ResourceArn
   /**
-    * The tags to assign.
+    * The tags to add.
     */
   var tags: TagList
 }

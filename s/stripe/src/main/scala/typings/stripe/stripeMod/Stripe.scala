@@ -39,6 +39,8 @@ import typings.stripe.stripeMod.resources.Transfers
 import typings.stripe.stripeMod.resources.UsageRecordSummaries
 import typings.stripe.stripeMod.resources.UsageRecords
 import typings.stripe.stripeMod.resources.WebHooks
+import typings.stripe.stripeStrings.request
+import typings.stripe.stripeStrings.response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,6 +103,18 @@ trait Stripe extends js.Object {
   def getConstant(c: String): js.Any = js.native
   def getMaxNetworkRetries(): Double = js.native
   def getTelemetryEnabled(): Boolean = js.native
+  @JSName("off")
+  def off_request(event: request, handler: js.Function1[/* event */ RequestEvent, Unit]): Unit = js.native
+  @JSName("off")
+  def off_response(event: response, handler: js.Function1[/* event */ ResponseEvent, Unit]): Unit = js.native
+  @JSName("on")
+  def on_request(event: request, handler: js.Function1[/* event */ RequestEvent, Unit]): Unit = js.native
+  @JSName("on")
+  def on_response(event: response, handler: js.Function1[/* event */ ResponseEvent, Unit]): Unit = js.native
+  @JSName("once")
+  def once_request(event: request, handler: js.Function1[/* event */ RequestEvent, Unit]): Unit = js.native
+  @JSName("once")
+  def once_response(event: response, handler: js.Function1[/* event */ ResponseEvent, Unit]): Unit = js.native
   def setApiKey(): Unit = js.native
   def setApiKey(key: String): Unit = js.native
   def setApiVersion(): Unit = js.native

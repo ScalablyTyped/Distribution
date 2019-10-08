@@ -204,6 +204,23 @@ trait IButtonProps extends AllHTMLAttributes[
     */
   var primaryDisabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * If true, the persisted menu is rendered hidden when the button
+    * initially mounts. Non-persisted menus will
+    * not be in the component tree unless they are being shown
+    *
+    * Note: This increases the time the button will take to mount, but
+    * can improve perceived menu open perf. when the user opens the menu.
+    *
+    * @defaultvalue undefined, equivalent to false
+    *
+    * @deprecated There is known bug in Edge when this prop is true where scrollbars
+    * overlap with the content when a menu is first rendered hidden.
+    * See: https://github.com/OfficeDev/office-ui-fabric-react/issues/9034
+    * Please do not start using this. If you are already using this,
+    * please make sure that you are doing so only in non-Edge browsers
+    */
+  var renderPersistedMenuHiddenOnMount: js.UndefOr[Boolean] = js.undefined
+  /**
     * Deprecated at v0.56.2, to be removed at \>= v1.0.0. Just pass in button props instead.
     * they will be mixed into the button/anchor element rendered by the component.
     * @deprecated Use button props instead.
@@ -300,6 +317,7 @@ object IButtonProps {
     primary: js.UndefOr[Boolean] = js.undefined,
     primaryActionButtonProps: IButtonProps = null,
     primaryDisabled: js.UndefOr[Boolean] = js.undefined,
+    renderPersistedMenuHiddenOnMount: js.UndefOr[Boolean] = js.undefined,
     rootProps: ButtonHTMLAttributes[HTMLButtonElement] | AnchorHTMLAttributes[HTMLAnchorElement] = null,
     secondaryText: String = null,
     split: js.UndefOr[Boolean] = js.undefined,
@@ -348,6 +366,7 @@ object IButtonProps {
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (primaryActionButtonProps != null) __obj.updateDynamic("primaryActionButtonProps")(primaryActionButtonProps)
     if (!js.isUndefined(primaryDisabled)) __obj.updateDynamic("primaryDisabled")(primaryDisabled)
+    if (!js.isUndefined(renderPersistedMenuHiddenOnMount)) __obj.updateDynamic("renderPersistedMenuHiddenOnMount")(renderPersistedMenuHiddenOnMount)
     if (rootProps != null) __obj.updateDynamic("rootProps")(rootProps.asInstanceOf[js.Any])
     if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText)
     if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)

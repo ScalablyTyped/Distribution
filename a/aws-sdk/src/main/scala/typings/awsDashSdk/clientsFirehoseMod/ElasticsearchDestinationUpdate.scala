@@ -14,7 +14,11 @@ trait ElasticsearchDestinationUpdate extends js.Object {
     */
   var CloudWatchLoggingOptions: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.CloudWatchLoggingOptions] = js.undefined
   /**
-    * The ARN of the Amazon ES domain. The IAM role must have permissions for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig after assuming the IAM role specified in RoleARN. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The endpoint to use when communicating with the cluster. Specify either this ClusterEndpoint or the DomainARN field.
+    */
+  var ClusterEndpoint: js.UndefOr[ElasticsearchClusterEndpoint] = js.undefined
+  /**
+    * The ARN of the Amazon ES domain. The IAM role must have permissions for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig after assuming the IAM role specified in RoleARN. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces. Specify either ClusterEndpoint or DomainARN.
     */
   var DomainARN: js.UndefOr[ElasticsearchDomainARN] = js.undefined
   /**
@@ -52,6 +56,7 @@ object ElasticsearchDestinationUpdate {
   def apply(
     BufferingHints: ElasticsearchBufferingHints = null,
     CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
+    ClusterEndpoint: ElasticsearchClusterEndpoint = null,
     DomainARN: ElasticsearchDomainARN = null,
     IndexName: ElasticsearchIndexName = null,
     IndexRotationPeriod: ElasticsearchIndexRotationPeriod = null,
@@ -64,6 +69,7 @@ object ElasticsearchDestinationUpdate {
     val __obj = js.Dynamic.literal()
     if (BufferingHints != null) __obj.updateDynamic("BufferingHints")(BufferingHints)
     if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions)
+    if (ClusterEndpoint != null) __obj.updateDynamic("ClusterEndpoint")(ClusterEndpoint)
     if (DomainARN != null) __obj.updateDynamic("DomainARN")(DomainARN)
     if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
     if (IndexRotationPeriod != null) __obj.updateDynamic("IndexRotationPeriod")(IndexRotationPeriod.asInstanceOf[js.Any])

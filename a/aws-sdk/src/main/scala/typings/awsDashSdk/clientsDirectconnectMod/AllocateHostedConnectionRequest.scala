@@ -22,7 +22,7 @@ trait AllocateHostedConnectionRequest extends js.Object {
     */
   var ownerAccount: OwnerAccount
   /**
-    * The tags to assign to the hosted connection.
+    * The tags associated with the connection.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   /**

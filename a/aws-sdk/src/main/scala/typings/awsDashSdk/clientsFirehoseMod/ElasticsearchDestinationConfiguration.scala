@@ -14,9 +14,13 @@ trait ElasticsearchDestinationConfiguration extends js.Object {
     */
   var CloudWatchLoggingOptions: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.CloudWatchLoggingOptions] = js.undefined
   /**
-    * The ARN of the Amazon ES domain. The IAM role must have permissions for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig after assuming the role specified in RoleARN. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The endpoint to use when communicating with the cluster. Specify either this ClusterEndpoint or the DomainARN field.
     */
-  var DomainARN: ElasticsearchDomainARN
+  var ClusterEndpoint: js.UndefOr[ElasticsearchClusterEndpoint] = js.undefined
+  /**
+    * The ARN of the Amazon ES domain. The IAM role must have permissions for DescribeElasticsearchDomain, DescribeElasticsearchDomains, and DescribeElasticsearchDomainConfig after assuming the role specified in RoleARN. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces. Specify either ClusterEndpoint or DomainARN.
+    */
+  var DomainARN: js.UndefOr[ElasticsearchDomainARN] = js.undefined
   /**
     * The Elasticsearch index name.
     */
@@ -54,21 +58,24 @@ trait ElasticsearchDestinationConfiguration extends js.Object {
 object ElasticsearchDestinationConfiguration {
   @scala.inline
   def apply(
-    DomainARN: ElasticsearchDomainARN,
     IndexName: ElasticsearchIndexName,
     RoleARN: RoleARN,
     S3Configuration: S3DestinationConfiguration,
     TypeName: ElasticsearchTypeName,
     BufferingHints: ElasticsearchBufferingHints = null,
     CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
+    ClusterEndpoint: ElasticsearchClusterEndpoint = null,
+    DomainARN: ElasticsearchDomainARN = null,
     IndexRotationPeriod: ElasticsearchIndexRotationPeriod = null,
     ProcessingConfiguration: ProcessingConfiguration = null,
     RetryOptions: ElasticsearchRetryOptions = null,
     S3BackupMode: ElasticsearchS3BackupMode = null
   ): ElasticsearchDestinationConfiguration = {
-    val __obj = js.Dynamic.literal(DomainARN = DomainARN, IndexName = IndexName, RoleARN = RoleARN, S3Configuration = S3Configuration, TypeName = TypeName)
+    val __obj = js.Dynamic.literal(IndexName = IndexName, RoleARN = RoleARN, S3Configuration = S3Configuration, TypeName = TypeName)
     if (BufferingHints != null) __obj.updateDynamic("BufferingHints")(BufferingHints)
     if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions)
+    if (ClusterEndpoint != null) __obj.updateDynamic("ClusterEndpoint")(ClusterEndpoint)
+    if (DomainARN != null) __obj.updateDynamic("DomainARN")(DomainARN)
     if (IndexRotationPeriod != null) __obj.updateDynamic("IndexRotationPeriod")(IndexRotationPeriod.asInstanceOf[js.Any])
     if (ProcessingConfiguration != null) __obj.updateDynamic("ProcessingConfiguration")(ProcessingConfiguration)
     if (RetryOptions != null) __obj.updateDynamic("RetryOptions")(RetryOptions)

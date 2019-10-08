@@ -3062,7 +3062,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.remove
     */
   def remove[T](`this`: LoDashExplicitWrapper[List[T]]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def remove[T](`this`: LoDashExplicitWrapper[List[T]], predicate: ListIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def remove[T](`this`: LoDashExplicitWrapper[List[T]], predicate: ListIterator[T, NotVoid]): LoDashExplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.repeat
     */

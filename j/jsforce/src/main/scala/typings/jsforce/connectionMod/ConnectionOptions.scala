@@ -13,6 +13,9 @@ trait ConnectionOptions extends PartialOAuth2Options {
   var maxRequest: js.UndefOr[Double] = js.undefined
   var oauth2: js.UndefOr[Partial[PartialOAuth2Options]] = js.undefined
   var proxyUrl: js.UndefOr[String] = js.undefined
+  var refreshFn: js.UndefOr[
+    js.Function2[/* conn */ Connection, /* callback */ Callback[UserInfo], js.Promise[UserInfo]]
+  ] = js.undefined
   var refreshToken: js.UndefOr[String] = js.undefined
   var serverUrl: js.UndefOr[String] = js.undefined
   var sessionId: js.UndefOr[String] = js.undefined
@@ -34,6 +37,7 @@ object ConnectionOptions {
     oauth2: Partial[PartialOAuth2Options] = null,
     proxyUrl: String = null,
     redirectUri: String = null,
+    refreshFn: (/* conn */ Connection, /* callback */ Callback[UserInfo]) => js.Promise[UserInfo] = null,
     refreshToken: String = null,
     serverUrl: String = null,
     sessionId: String = null,
@@ -52,6 +56,7 @@ object ConnectionOptions {
     if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2)
     if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl)
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (refreshFn != null) __obj.updateDynamic("refreshFn")(js.Any.fromFunction2(refreshFn))
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
     if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl)
     if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)

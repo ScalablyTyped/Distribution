@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "electron-winstaller" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "electron-winstaller" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -22,7 +22,7 @@ trait PartitionInput extends js.Object {
     */
   var StorageDescriptor: js.UndefOr[typings.awsDashSdk.clientsGlueMod.StorageDescriptor] = js.undefined
   /**
-    * The values of the partition. Although this parameter is not required by the SDK, you must specify this parameter for a valid input.
+    * The values of the partition. Although this parameter is not required by the SDK, you must specify this parameter for a valid input. The values for the keys for the new partition must be passed as an array of String objects that must be ordered in the same order as the partition keys appearing in the Amazon S3 prefix. Otherwise AWS Glue will add the values to the wrong keys.
     */
   var Values: js.UndefOr[ValueStringList] = js.undefined
 }

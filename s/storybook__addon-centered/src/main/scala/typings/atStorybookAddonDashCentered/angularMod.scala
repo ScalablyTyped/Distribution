@@ -1,6 +1,5 @@
 package typings.atStorybookAddonDashCentered
 
-import typings.atStorybookReact.atStorybookReactMod.StoryDecorator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/addon-centered/angular", JSImport.Namespace)
 @js.native
 object angularMod extends js.Object {
-  val default: StoryDecorator = js.native
+  def centered(
+    story: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryFn<IStory> */ js.Any
+  ): IStory = js.native
 }
 

@@ -24,7 +24,7 @@ object __positioningTestPackage extends js.Object {
     /* hostElement */ HTMLElement, 
     /* bounds */ js.UndefOr[Rectangle], 
     /* coverTarget */ js.UndefOr[Boolean], 
-    /* previousPositions */ js.UndefOr[Boolean], 
+    /* doNotFinalizeReturnEdge */ js.UndefOr[Boolean], 
     IPositionedData
   ] = js.native
   var _getMaxHeightFromTargetRectangle: js.Function5[

@@ -79,7 +79,7 @@ object Options {
     if (redact != null) __obj.updateDynamic("redact")(redact.asInstanceOf[js.Any])
     if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
     if (serializers != null) __obj.updateDynamic("serializers")(serializers)
-    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (useLevel != null) __obj.updateDynamic("useLevel")(useLevel)
     if (!js.isUndefined(useLevelLabels)) __obj.updateDynamic("useLevelLabels")(useLevelLabels)

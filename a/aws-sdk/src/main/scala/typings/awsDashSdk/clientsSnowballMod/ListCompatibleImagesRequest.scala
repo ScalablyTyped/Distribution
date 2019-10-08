@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ListCompatibleImagesRequest extends js.Object {
   /**
-    * The maximum number of results for the list of compatible images. Currently, each supported device can store 10 AMIs.
+    * The maximum number of results for the list of compatible images. Currently, a Snowball Edge device can store 10 AMIs.
     */
   var MaxResults: js.UndefOr[ListLimit] = js.undefined
   /**

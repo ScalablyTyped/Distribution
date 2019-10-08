@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait DineroObject extends js.Object {
   var amount: Double
-  var currency: String
+  var currency: Currency
   var precision: Double
 }
 
 object DineroObject {
   @scala.inline
-  def apply(amount: Double, currency: String, precision: Double): DineroObject = {
+  def apply(amount: Double, currency: Currency, precision: Double): DineroObject = {
     val __obj = js.Dynamic.literal(amount = amount, currency = currency, precision = precision)
   
     __obj.asInstanceOf[DineroObject]

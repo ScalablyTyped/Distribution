@@ -11,8 +11,8 @@ trait Document extends Node {
   val anchor_Document: Null
   @JSName("comment")
   val comment_Document: Null
-  var contents: js.Array[Comment | ContentNode]
-  var directives: js.Array[Comment | Directive]
+  var contents: js.Array[BlankLine | Comment | ContentNode]
+  var directives: js.Array[BlankLine | Comment | Directive]
   @JSName("tag")
   val tag_Document: Null
   @JSName("type")
@@ -24,8 +24,8 @@ object Document {
   def apply(
     anchor: Null,
     comment: Null,
-    contents: js.Array[Comment | ContentNode],
-    directives: js.Array[Comment | Directive],
+    contents: js.Array[BlankLine | Comment | ContentNode],
+    directives: js.Array[BlankLine | Comment | Directive],
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,

@@ -4,6 +4,7 @@ import typings.flexmonster.Anon_Blocking
 import typings.flexmonster.Anon_CallbackHandler
 import typings.flexmonster.Anon_CallbackHandlerError
 import typings.flexmonster.Anon_CallbackHandlerErrorFormat
+import typings.flexmonster.Anon_IgnoreScroll
 import typings.flexmonster.Anon_IsRemoved
 import typings.flexmonster.Anon_Slice
 import scala.scalajs.js
@@ -262,6 +263,8 @@ trait Pivot extends js.Object {
   def sortValues(axisName: String, `type`: String, tuple: js.Array[Double], measure: MeasureObject): Unit = js.native
   def sortingMethod(hierarchyName: String, compareFunction: js.Function2[/* a */ String, /* b */ String, Double]): Unit = js.native
   def updateData(`object`: js.Array[js.Object]): Unit = js.native
+  def updateData(`object`: js.Array[js.Object], options: Anon_IgnoreScroll): Unit = js.native
   def updateData(`object`: DataSource): Unit = js.native
+  def updateData(`object`: DataSource, options: Anon_IgnoreScroll): Unit = js.native
 }
 

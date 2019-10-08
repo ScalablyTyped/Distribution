@@ -1458,6 +1458,7 @@ import typings.awsDashSdk.clientsPinpointMod._Mode
 import typings.awsDashSdk.clientsPinpointMod._RecencyType
 import typings.awsDashSdk.clientsPinpointMod._SegmentType
 import typings.awsDashSdk.clientsPinpointMod._SourceType
+import typings.awsDashSdk.clientsPinpointMod._TemplateType
 import typings.awsDashSdk.clientsPinpointMod._Type
 import typings.awsDashSdk.clientsPinpointemailMod._BehaviorOnMxFailure
 import typings.awsDashSdk.clientsPinpointemailMod._DeliverabilityDashboardAccountStatus
@@ -6695,6 +6696,12 @@ object awsDashSdkStrings {
   sealed trait CUSTOM_CHALLENGE extends _ChallengeNameType
   
   @js.native
+  sealed trait CUSTOM_JDBC_CERT extends _ConnectionPropertyKey
+  
+  @js.native
+  sealed trait CUSTOM_JDBC_CERT_STRING extends _ConnectionPropertyKey
+  
+  @js.native
   sealed trait CUSTOM_LAMBDA extends _Owner
   
   @js.native
@@ -8835,6 +8842,7 @@ object awsDashSdkStrings {
        with _HandshakePartyType
        with _HandshakeResourceType
        with _SubscriptionType
+       with _TemplateType
        with _ValidationMethod
   
   @js.native
@@ -16630,6 +16638,9 @@ object awsDashSdkStrings {
   sealed trait PUS extends _LanguageCode
   
   @js.native
+  sealed trait PUSH extends _TemplateType
+  
+  @js.native
   sealed trait PUSH_DOMAIN extends _OperationType
   
   @js.native
@@ -18914,6 +18925,9 @@ object awsDashSdkStrings {
   sealed trait SKIPPED_OVERLAPPING extends _MaintenanceWindowExecutionStatus
   
   @js.native
+  sealed trait SKIP_CUSTOM_JDBC_CERT_VALIDATION extends _ConnectionPropertyKey
+  
+  @js.native
   sealed trait SKIP_EVALUATION extends _StopAction
   
   @js.native
@@ -18985,6 +18999,7 @@ object awsDashSdkStrings {
   sealed trait SMS
     extends _ChannelType
        with _DeliveryMediumType
+       with _TemplateType
   
   @js.native
   sealed trait SMS_MFA extends _ChallengeNameType
@@ -30949,6 +30964,10 @@ object awsDashSdkStrings {
   @scala.inline
   def CUSTOM_CHALLENGE: CUSTOM_CHALLENGE = "CUSTOM_CHALLENGE".asInstanceOf[CUSTOM_CHALLENGE]
   @scala.inline
+  def CUSTOM_JDBC_CERT: CUSTOM_JDBC_CERT = "CUSTOM_JDBC_CERT".asInstanceOf[CUSTOM_JDBC_CERT]
+  @scala.inline
+  def CUSTOM_JDBC_CERT_STRING: CUSTOM_JDBC_CERT_STRING = "CUSTOM_JDBC_CERT_STRING".asInstanceOf[CUSTOM_JDBC_CERT_STRING]
+  @scala.inline
   def CUSTOM_LAMBDA: CUSTOM_LAMBDA = "CUSTOM_LAMBDA".asInstanceOf[CUSTOM_LAMBDA]
   @scala.inline
   def CV: CV = "CV".asInstanceOf[CV]
@@ -35507,6 +35526,8 @@ object awsDashSdkStrings {
   @scala.inline
   def PUS: PUS = "PUS".asInstanceOf[PUS]
   @scala.inline
+  def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
+  @scala.inline
   def PUSH_DOMAIN: PUSH_DOMAIN = "PUSH_DOMAIN".asInstanceOf[PUSH_DOMAIN]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
@@ -36690,6 +36711,8 @@ object awsDashSdkStrings {
   def SKIPPED: SKIPPED = "SKIPPED".asInstanceOf[SKIPPED]
   @scala.inline
   def SKIPPED_OVERLAPPING: SKIPPED_OVERLAPPING = "SKIPPED_OVERLAPPING".asInstanceOf[SKIPPED_OVERLAPPING]
+  @scala.inline
+  def SKIP_CUSTOM_JDBC_CERT_VALIDATION: SKIP_CUSTOM_JDBC_CERT_VALIDATION = "SKIP_CUSTOM_JDBC_CERT_VALIDATION".asInstanceOf[SKIP_CUSTOM_JDBC_CERT_VALIDATION]
   @scala.inline
   def SKIP_EVALUATION: SKIP_EVALUATION = "SKIP_EVALUATION".asInstanceOf[SKIP_EVALUATION]
   @scala.inline

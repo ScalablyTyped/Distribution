@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deepmerge"
-version := "4.0.0-52b3c5"
+version := "4.1.0-aa07fb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

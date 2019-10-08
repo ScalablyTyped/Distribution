@@ -22,7 +22,7 @@ trait DirectMessageConfiguration extends js.Object {
     */
   var DefaultMessage: js.UndefOr[typings.awsDashSdk.clientsPinpointMod.DefaultMessage] = js.undefined
   /**
-    * The default push notification message for all push channels.
+    * The default push notification message for all push notification channels.
     */
   var DefaultPushNotificationMessage: js.UndefOr[typings.awsDashSdk.clientsPinpointMod.DefaultPushNotificationMessage] = js.undefined
   /**

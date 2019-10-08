@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ASPxClientPopupControl () extends ASPxClientPopupControlBase {
   /**
-    * Occurs when a popup window's close button is clicked.
+    * Occurs when a popup window's <strong>close button</strong> is clicked.
     */
   var CloseButtonClick: ASPxClientEvent[ASPxClientPopupWindowEventHandler[ASPxClientPopupControl]] = js.native
   /**
@@ -52,7 +52,7 @@ class ASPxClientPopupControl () extends ASPxClientPopupControlBase {
     */
   def GetWindowCollapsed(window: ASPxClientPopupWindow): Boolean = js.native
   /**
-    * Gets the height of the specified popup window's content region. An integer value representing the height of the content region.
+    * Gets the height of the specified popup window's <strong>content region</strong>. An integer value representing the height of the content region.
     * @param window An ASPxClientPopupWindow object that specifies the required popup window.
     */
   def GetWindowContentHeight(window: ASPxClientPopupWindow): Double = js.native
@@ -72,7 +72,7 @@ class ASPxClientPopupControl () extends ASPxClientPopupControlBase {
     */
   def GetWindowContentUrl(window: ASPxClientPopupWindow): String = js.native
   /**
-    * Gets the width of the specified popup window's content region. An integer value representing the width of the content region.
+    * Gets the width of the specified popup window's <strong>content region</strong>. An integer value representing the width of the content region.
     * @param window An ASPxClientPopupWindow object that specifies the required popup window.
     */
   def GetWindowContentWidth(window: ASPxClientPopupWindow): Double = js.native

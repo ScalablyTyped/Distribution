@@ -18,7 +18,7 @@ object FlowSeq {
   def apply(
     hasComment: Boolean,
     hasProps: Boolean,
-    items: js.Array[FlowChar | Comment | Alias | Scalar | FlowCollection],
+    items: js.Array[FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection],
     jsonLike: Boolean,
     props: js.Array[Range],
     `type`: FLOW_SEQ,

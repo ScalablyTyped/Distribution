@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/vue" : "5.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/vue" : "5.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

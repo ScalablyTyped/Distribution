@@ -22,7 +22,7 @@ trait MessageResult extends js.Object {
     */
   var StatusMessage: js.UndefOr[__string] = js.undefined
   /**
-    * For push notifications that are sent through the GCM channel, specifies whether the token was updated as part of delivering the message.
+    * For push notifications that are sent through the GCM channel, specifies whether the endpoint's device registration token was updated as part of delivering the message.
     */
   var UpdatedToken: js.UndefOr[__string] = js.undefined
 }

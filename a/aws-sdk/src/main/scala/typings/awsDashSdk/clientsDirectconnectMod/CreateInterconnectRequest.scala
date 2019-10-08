@@ -22,7 +22,11 @@ trait CreateInterconnectRequest extends js.Object {
     */
   var location: LocationCode
   /**
-    * The tags to assign to the interconnect,
+    * The name of the service provider associated with the interconnect.
+    */
+  var providerName: js.UndefOr[ProviderName] = js.undefined
+  /**
+    * The tags to associate with the interconnect.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -34,10 +38,12 @@ object CreateInterconnectRequest {
     interconnectName: InterconnectName,
     location: LocationCode,
     lagId: LagId = null,
+    providerName: ProviderName = null,
     tags: TagList = null
   ): CreateInterconnectRequest = {
     val __obj = js.Dynamic.literal(bandwidth = bandwidth, interconnectName = interconnectName, location = location)
     if (lagId != null) __obj.updateDynamic("lagId")(lagId)
+    if (providerName != null) __obj.updateDynamic("providerName")(providerName)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateInterconnectRequest]
   }

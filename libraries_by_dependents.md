@@ -650,11 +650,13 @@
 | 367 | [hash-sum](./h/hash-sum) | Blazing fast unique hash generator
 | 367 | [sprintf](./s/sprintf) | Sprintf() for node.js
 | 366 | [dockerode](./d/dockerode) | Docker Remote API module.
+| 364 | [fuse_dot_js](./f/fuse_dot_js) | Lightweight fuzzy-search
 | 364 | [pngjs](./p/pngjs) | PNG encoder/decoder in pure JS, supporting any bit
 | 363 | [decompress](./d/decompress) | Extracting archives made easy
 | 362 | [is-promise](./i/is-promise) | Test whether an object looks like a promises-a+ pr
 | 361 | [envify](./e/envify) | Selectively replace Node-style environment variabl
 | 360 | [rc-slider](./r/rc-slider) | Slider UI component for React
+| 358 | [react-draggable](./r/react-draggable) | React draggable component
 | 357 | [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js
 | 357 | [pako](./p/pako) | zlib port to javascript - fast, modularized, with 
 | 356 | [bson](./b/bson) | A bson parser for node.js and the browser
@@ -687,6 +689,7 @@
 | 341 | [left-pad](./l/left-pad) | String left pad
 | 340 | [fluent-ffmpeg](./f/fluent-ffmpeg) | A fluent API to FFMPEG (http://www.ffmpeg.org)
 | 340 | [md5-file](./m/md5-file) | return an md5sum of a given file
+| 339 | [immer](./i/immer) | Create your next immutable state by mutating the c
 | 339 | [react-lifecycles-compat](./r/react-lifecycles-compat) | Backwards compatibility polyfill for React class c
 | 337 | [bytebuffer](./b/bytebuffer) | The swiss army knife for binary data in JavaScript
 | 335 | [jwt-simple](./j/jwt-simple) | JWT(JSON Web Token) encode and decode module
@@ -1204,6 +1207,7 @@
 | 166 | [dot-object](./d/dot-object) | dot-object makes it possible to transform and read
 | 166 | [react-addons-transition-g](./r/react-addons-transition-group) | The code in this package has moved. We recommend y
 | 166 | [storybook__react](./s/storybook__react) | Storybook for React: Develop React Component in is
+| 166 | [tmp-promise](./t/tmp-promise) | The tmp package with promises support and disposer
 | 165 | [builtin-modules](./b/builtin-modules) | List of the Node.js builtin modules
 | 165 | [csv-stringify](./c/csv-stringify) | CSV stringifier implementing the Node.js stream.Tr
 | 165 | [expect_dot_js](./e/expect_dot_js) | BDD style assertions for node and the browser.
@@ -1382,7 +1386,6 @@
 | 136 | [uid-safe](./u/uid-safe) | URL and cookie safe UIDs
 | 135 | [d3-axis](./d/d3-axis) | Displays automatic reference lines for scales.
 | 135 | [node-telegram-bot-api](./n/node-telegram-bot-api) | Telegram Bot API
-| 135 | [storybook__addons](./s/storybook__addons) | Storybook addons store
 | 135 | [xmlrpc](./x/xmlrpc) | A pure JavaScript XML-RPC client and server.
 | 134 | [kcors](./k/kcors) | Cross-Origin Resource Sharing(CORS) for koa
 | 134 | [line-reader](./l/line-reader) | Asynchronous, buffered, line-by-line file/stream r
@@ -1678,6 +1681,7 @@
 | 99 | [urlsafe-base64](./u/urlsafe-base64) | URL Safe Base64 encoding
 | 98 | [better-sqlite3](./b/better-sqlite3) | The fastest and simplest library for SQLite3 in No
 | 98 | [buffer-from](./b/buffer-from) | A 
+| 98 | [bufferhelper](./b/bufferhelper) | Concat buffer correctly.
 | 98 | [checksum](./c/checksum) | Checksum utility for node
 | 98 | [d3-queue](./d/d3-queue) | Evaluate asynchronous tasks with configurable conc
 | 98 | [earcut](./e/earcut) | The fastest and smallest JavaScript polygon triang
@@ -1895,7 +1899,6 @@
 | 80 | [minilog](./m/minilog) | Lightweight client & server-side logging with Stre
 | 80 | [path-parse](./p/path-parse) | Node.js path.parse() ponyfill
 | 80 | [reactcss](./r/reactcss) | Bringing Classes to Inline Styles
-| 80 | [storybook__addon-knobs](./s/storybook__addon-knobs) | Storybook Addon Prop Editor Component
 | 80 | [winreg](./w/winreg) | provides access to the windows registry through th
 | 79 | [bunyan-prettystream](./b/bunyan-prettystream) | A stream implementation of the bunyan cli tool's p
 | 79 | [d3-time](./d/d3-time) | A calculator for humanity’s peculiar conventions o
@@ -2110,6 +2113,7 @@
 | 66 | [proper-lockfile](./p/proper-lockfile) | A inter-process and inter-machine lockfile utility
 | 66 | [qrcode_dot_react](./q/qrcode_dot_react) | React component to generate QR codes
 | 66 | [querystringify](./q/querystringify) | Querystringify - Small, simple but powerful query 
+| 66 | [react-hotkeys](./r/react-hotkeys) | A declarative library for handling hotkeys and foc
 | 66 | [serverless](./s/serverless) | Serverless Framework - Build web, mobile and IoT a
 | 66 | [ssb-keys](./s/ssb-keys) | keyfile operations for ssb
 | 66 | [storybook__addon-links](./s/storybook__addon-links) | Story Links addon for storybook
@@ -3352,6 +3356,7 @@
 | 23 | [braft-editor](./b/braft-editor) | Rich Text Editor Based On Draft.js
 | 23 | [color-support](./c/color-support) | A module which will endeavor to guess your termina
 | 23 | [credit-card-type](./c/credit-card-type) | A library for determining credit card type
+| 23 | [current-git-branch](./c/current-git-branch) | A tool to check if files are added in a git reposi
 | 23 | [d3-hexbin](./d/d3-hexbin) | Group two-dimensional points into hexagonal bins.
 | 23 | [d3-polygon](./d/d3-polygon) | Operations for two-dimensional polygons.
 | 23 | [elastic__elasticsearch](./e/elastic__elasticsearch) | The official Elasticsearch client for Node.js
@@ -3366,6 +3371,7 @@
 | 23 | [keycloak-connect](./k/keycloak-connect) | Keycloak Connect Middleware
 | 23 | [ky](./k/ky) | Tiny and elegant HTTP client based on the browser 
 | 23 | [ladda](./l/ladda) | Buttons with built-in loading indicators
+| 23 | [line-column](./l/line-column) | Convert efficiently index to/from line-column in a
 | 23 | [lodash_dot_countby](./l/lodash_dot_countby) | The lodash method _.countBy exported as a module.
 | 23 | [lodash_dot_tail](./l/lodash_dot_tail) | The lodash method _.tail exported as a module.
 | 23 | [lodash_dot_take](./l/lodash_dot_take) | The lodash method _.take exported as a module.
@@ -3694,6 +3700,7 @@
 | 18 | [rfc6902](./r/rfc6902) | Complete implementation of RFC6902 (patch and diff
 | 18 | [robust-point-in-polygon](./r/robust-point-in-polygon) | Exactly test if a point is inside, outside or on t
 | 18 | [sqs-producer](./s/sqs-producer) | Enqueues messages onto a given SQS queue
+| 18 | [storybook__node-logger](./s/storybook__node-logger) | Any node logging that is done through storybook sh
 | 18 | [svg-pan-zoom](./s/svg-pan-zoom) | JavaScript library for panning and zooming an SVG 
 | 18 | [thepiratebay](./t/thepiratebay) | The pirate bay client
 | 18 | [unique-random](./u/unique-random) | Generate random numbers that are consecutively uni
@@ -3890,6 +3897,7 @@
 | 15 | [ssh2-streams](./s/ssh2-streams) | SSH2 and SFTP(v3) client/server protocol streams f
 | 15 | [storybook__addon-a11y](./s/storybook__addon-a11y) | a11y addon for storybook
 | 15 | [storybook__addon-centered](./s/storybook__addon-centered) | Storybook decorator to center components
+| 15 | [storybook__channel-postme](./s/storybook__channel-postmessage) | Storybook PostMessage Channel is a channel for Sto
 | 15 | [streaming-json-stringify](./s/streaming-json-stringify) | Streaming JSON.stringify()
 | 15 | [sugar-core](./s/sugar-core) | Core module for the Sugar Javascript utility libra
 | 15 | [tether-drop](./t/tether-drop) | Client-side library for creating dropdowns
@@ -4381,7 +4389,6 @@
 | 10 | [sparkly](./s/sparkly) | Generate sparklines ▁▂▃▅▂▇
 | 10 | [sparse-bitfield](./s/sparse-bitfield) | Bitfield that allocates a series of small buffers 
 | 10 | [storybook__channels](./s/storybook__channels) | Storybook Channel is similar to an EventEmitter. C
-| 10 | [storybook__react-native](./s/storybook__react-native) | A better way to develop React Native Components fo
 | 10 | [string-pixel-width](./s/string-pixel-width) | String pixel width measurement on the backend in J
 | 10 | [tableify](./t/tableify) | Create HTML tables from Javascript Objects
 | 10 | [theo](./t/theo) | Design Tokens formatter
@@ -4921,6 +4928,7 @@
 | 6 | [simplebar-react](./s/simplebar-react) | React component for SimpleBar
 | 6 | [sinon-chrome](./s/sinon-chrome) | Mock of chrome extensions API for unit testing und
 | 6 | [storybook__addon-jest](./s/storybook__addon-jest) | React storybook addon that show component jest rep
+| 6 | [storybook__channel-websoc](./s/storybook__channel-websocket) | Storybook Websocket Channel is a channel for Story
 | 6 | [stringify-attributes](./s/stringify-attributes) | Turn an object into a string of HTML attributes
 | 6 | [style-value-types](./s/style-value-types) | Parsers, transformers and tests for special value 
 | 6 | [styletron-standard](./s/styletron-standard) | Standard interfaces for Styletron
@@ -5609,6 +5617,7 @@
 | 3 | [strong-cluster-control](./s/strong-cluster-control) | node cluster API wrapper and extensions
 | 3 | [swig-email-templates](./s/swig-email-templates) | Node.js module for rendering emails with swig temp
 | 3 | [switchery](./s/switchery) | Browserify version of Switchery
+| 3 | [telejson](./t/telejson) | A library for teleporting rich data to another pla
 | 3 | [tensorflow__tfjs-layers](./t/tensorflow__tfjs-layers) | TensorFlow layers API in JavaScript
 | 3 | [testing-library__react-ho](./t/testing-library__react-hooks) | Simple and complete React hooks testing utilities 
 | 3 | [tether-shepherd](./t/tether-shepherd) | Guide your users through a tour of your app.
@@ -6086,6 +6095,7 @@
 | 1 | [cordova-plugin-device-mot](./c/cordova-plugin-device-motion) | -
 | 1 | [cordova-plugin-email-comp](./c/cordova-plugin-email-composer) | Provides access to the standard interface that man
 | 1 | [cordova-plugin-insomnia](./c/cordova-plugin-insomnia) | Prevent the screen of the mobile device from falli
+| 1 | [corejs-upgrade-webpack-pl](./c/corejs-upgrade-webpack-plugin) | a webpack plugin that transforms core-js v2 paths 
 | 1 | [country-select-js](./c/country-select-js) | A jQuery plugin for selecting a country
 | 1 | [coverup](./c/coverup) | Conceal a string with asterisks
 | 1 | [cryptex](./c/cryptex) | Secure secret storage and cryptographic key retrie

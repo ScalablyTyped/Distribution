@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-vega"
-version := "6.0-dt-20190822Z-cbab2c"
+version := "6.0-dt-20190822Z-65c518"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-e54803",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-3b437f",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3",
-  "org.scalablytyped" %%% "vega-typings" % "0.10.0-773ddd",
-  "org.scalablytyped" %%% "vega-util" % "1.11.2-384158")
+  "org.scalablytyped" %%% "vega-typings" % "0.10.0-9987d5",
+  "org.scalablytyped" %%% "vega-util" % "1.12.0-9567ac")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ListCompatibleImagesResult extends js.Object {
   /**
-    * A JSON-formatted object that describes a compatible AMI.
+    * A JSON-formatted object that describes a compatible AMI, including the ID and name for a Snowball Edge AMI.
     */
   var CompatibleImages: js.UndefOr[CompatibleImageList] = js.undefined
   /**

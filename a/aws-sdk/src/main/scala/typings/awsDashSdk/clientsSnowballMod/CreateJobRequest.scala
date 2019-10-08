@@ -50,7 +50,7 @@ trait CreateJobRequest extends js.Object {
     */
   var SnowballCapacityPreference: js.UndefOr[SnowballCapacity] = js.undefined
   /**
-    * The type of AWS Snowball device to use for this job. The only supported device types for cluster jobs are EDGE, EDGE_C, and EDGE_CG.
+    * The type of AWS Snowball device to use for this job. Currently, the only supported device type for cluster jobs is EDGE.
     */
   var SnowballType: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.SnowballType] = js.undefined
 }

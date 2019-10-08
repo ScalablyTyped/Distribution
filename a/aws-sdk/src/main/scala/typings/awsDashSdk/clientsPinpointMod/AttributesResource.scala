@@ -10,7 +10,7 @@ trait AttributesResource extends js.Object {
     */
   var ApplicationId: __string
   /**
-    * The type of attribute or attributes that were removed from the endpoints. Valid values are: endpoint-custom-attributes - Custom attributes that describe endpoints endpoint-custom-metrics - Custom metrics that your app reports to Amazon Pinpoint for endpoints endpoint-user-attributes - Custom attributes that describe users
+    * The type of attribute or attributes that were removed from the endpoints. Valid values are: endpoint-custom-attributes - Custom attributes that describe endpoints. endpoint-custom-metrics - Custom metrics that your app reports to Amazon Pinpoint for endpoints. endpoint-user-attributes - Custom attributes that describe users.
     */
   var AttributeType: __string
   /**

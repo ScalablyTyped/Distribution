@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait Seq
   extends Node
      with ContentNode {
-  var items: js.Array[Comment | SeqItem]
+  var items: js.Array[BlankLine | Comment | SeqItem]
   @JSName("type")
   var type_Seq: SEQ
 }
@@ -21,7 +21,7 @@ object Seq {
   def apply(
     hasComment: Boolean,
     hasProps: Boolean,
-    items: js.Array[Comment | SeqItem],
+    items: js.Array[BlankLine | Comment | SeqItem],
     jsonLike: Boolean,
     props: js.Array[Range],
     `type`: SEQ,

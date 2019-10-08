@@ -12,6 +12,7 @@ import typings.muiDashDatatables.muiDashDatatablesStrings.textField
 import typings.react.reactMod.Component
 import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.std.BlobPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,7 +82,7 @@ trait MUIDataTableOptions extends js.Object {
       /* buildBody */ js.Function1[/* data */ js.Any, String], 
       /* columns */ js.Any, 
       /* data */ js.Any, 
-      String
+      BlobPart
     ]
   ] = js.undefined
   var onFilterChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* filterList */ js.Array[_], Unit]] = js.undefined
@@ -148,7 +149,7 @@ object MUIDataTableOptions {
     onChangeRowsPerPage: /* numberOfRows */ Double => Unit = null,
     onColumnSortChange: (/* changedColumn */ String, /* direction */ String) => Unit = null,
     onColumnViewChange: (/* changedColumn */ String, /* action */ String) => Unit = null,
-    onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => String = null,
+    onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => BlobPart = null,
     onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_]) => Unit = null,
     onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ Anon_DataIndexRowIndex) => Unit = null,
     onRowsDelete: /* rowsDeleted */ js.Array[_] => Unit = null,

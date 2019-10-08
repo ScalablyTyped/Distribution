@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ansi-regex" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ansi-regex" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

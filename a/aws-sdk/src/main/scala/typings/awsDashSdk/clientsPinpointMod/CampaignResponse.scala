@@ -77,6 +77,7 @@ trait CampaignResponse extends js.Object {
     * The current status of the campaign.
     */
   var State: js.UndefOr[CampaignState] = js.undefined
+  var TemplateConfiguration: js.UndefOr[typings.awsDashSdk.clientsPinpointMod.TemplateConfiguration] = js.undefined
   /**
     * The custom description of a variation of the campaign that's used for A/B testing.
     */
@@ -116,6 +117,7 @@ object CampaignResponse {
     Name: __string = null,
     Schedule: Schedule = null,
     State: CampaignState = null,
+    TemplateConfiguration: TemplateConfiguration = null,
     TreatmentDescription: __string = null,
     TreatmentName: __string = null,
     Version: Int | Double = null,
@@ -133,6 +135,7 @@ object CampaignResponse {
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
     if (State != null) __obj.updateDynamic("State")(State)
+    if (TemplateConfiguration != null) __obj.updateDynamic("TemplateConfiguration")(TemplateConfiguration)
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])

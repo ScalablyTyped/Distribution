@@ -28,6 +28,7 @@ object BlockLiteral {
     cstNode: typings.yaml.yamlMod.cst.BlockLiteral = null,
     format: BIN | HEX | OCT | TIME = null,
     range: js.Tuple2[Double, Double] = null,
+    spaceBefore: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
     value: Boolean | Double | String = null
   ): BlockLiteral = {
@@ -38,6 +39,7 @@ object BlockLiteral {
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range)
+    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore)
     if (tag != null) __obj.updateDynamic("tag")(tag)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockLiteral]

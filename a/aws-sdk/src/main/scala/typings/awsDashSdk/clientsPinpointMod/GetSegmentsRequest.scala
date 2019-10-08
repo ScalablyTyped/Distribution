@@ -10,7 +10,7 @@ trait GetSegmentsRequest extends js.Object {
     */
   var ApplicationId: __string
   /**
-    * The maximum number of items to include in each page of a paginated response. This parameter is currently not supported by the App Metrics and Campaign Metrics resources.
+    * The maximum number of items to include in each page of a paginated response. This parameter is currently not supported by the Application Metrics and Campaign Metrics resources.
     */
   var PageSize: js.UndefOr[__string] = js.undefined
   /**

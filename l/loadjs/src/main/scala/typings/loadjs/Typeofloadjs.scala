@@ -11,10 +11,14 @@ import scala.scalajs.js.annotation._
 trait Typeofloadjs extends js.Object {
   def apply(files: String, bundleIdOrLoaded: String): Unit = js.native
   def apply(files: String, bundleIdOrLoaded: LoadedFn): Unit = js.native
+  def apply(files: String, bundleId: String, optionsOrCallback: LoadedFn): Unit = js.native
+  def apply(files: String, bundleId: String, options: LoadOptions with Anon_ReturnPromise): js.Promise[Unit] = js.native
+  def apply(files: String, options: LoadOptions with Anon_ReturnPromise): js.Promise[Unit] = js.native
   def apply(files: js.Array[String], bundleIdOrLoaded: String): Unit = js.native
   def apply(files: js.Array[String], bundleIdOrLoaded: LoadedFn): Unit = js.native
-  def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadOptions): Unit = js.native
   def apply(files: js.Array[String], bundleId: String, optionsOrCallback: LoadedFn): Unit = js.native
+  def apply(files: js.Array[String], bundleId: String, options: LoadOptions with Anon_ReturnPromise): js.Promise[Unit] = js.native
+  def apply(files: js.Array[String], options: LoadOptions with Anon_ReturnPromise): js.Promise[Unit] = js.native
   def done(bundleId: String): Unit = js.native
   def isDefined(bundleId: String): Boolean = js.native
   def ready(bundleIds: String, optionsOrCallback: LoadedFn): /* import warning: ImportType.apply Failed type conversion: typeof loadjs */ js.Any = js.native

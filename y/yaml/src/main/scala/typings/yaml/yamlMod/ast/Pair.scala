@@ -27,6 +27,7 @@ object Pair {
     cstNode: typings.yaml.yamlMod.cst.Node = null,
     key: AstNode = null,
     range: js.Tuple2[Double, Double] = null,
+    spaceBefore: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
     value: AstNode = null
   ): Pair = {
@@ -37,6 +38,7 @@ object Pair {
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)
     if (key != null) __obj.updateDynamic("key")(key)
     if (range != null) __obj.updateDynamic("range")(range)
+    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore)
     if (tag != null) __obj.updateDynamic("tag")(tag)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Pair]

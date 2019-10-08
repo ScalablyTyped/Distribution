@@ -58,11 +58,15 @@ trait Connection extends js.Object {
     */
   var partnerName: js.UndefOr[PartnerName] = js.undefined
   /**
+    * The name of the service provider associated with the connection.
+    */
+  var providerName: js.UndefOr[ProviderName] = js.undefined
+  /**
     * The AWS Region where the connection is located.
     */
   var region: js.UndefOr[Region] = js.undefined
   /**
-    * Any tags assigned to the connection.
+    * The tags associated with the connection.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   /**
@@ -87,6 +91,7 @@ object Connection {
     location: LocationCode = null,
     ownerAccount: OwnerAccount = null,
     partnerName: PartnerName = null,
+    providerName: ProviderName = null,
     region: Region = null,
     tags: TagList = null,
     vlan: Int | Double = null
@@ -105,6 +110,7 @@ object Connection {
     if (location != null) __obj.updateDynamic("location")(location)
     if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount)
     if (partnerName != null) __obj.updateDynamic("partnerName")(partnerName)
+    if (providerName != null) __obj.updateDynamic("providerName")(providerName)
     if (region != null) __obj.updateDynamic("region")(region)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])

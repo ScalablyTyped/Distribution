@@ -17,6 +17,7 @@ trait WriteTreatmentResource extends js.Object {
     * The allocated percentage of users (segment members) to send the treatment to.
     */
   var SizePercent: __integer
+  var TemplateConfiguration: js.UndefOr[typings.awsDashSdk.clientsPinpointMod.TemplateConfiguration] = js.undefined
   /**
     * The custom description of the treatment.
     */
@@ -33,12 +34,14 @@ object WriteTreatmentResource {
     SizePercent: __integer,
     MessageConfiguration: MessageConfiguration = null,
     Schedule: Schedule = null,
+    TemplateConfiguration: TemplateConfiguration = null,
     TreatmentDescription: __string = null,
     TreatmentName: __string = null
   ): WriteTreatmentResource = {
     val __obj = js.Dynamic.literal(SizePercent = SizePercent)
     if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration)
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
+    if (TemplateConfiguration != null) __obj.updateDynamic("TemplateConfiguration")(TemplateConfiguration)
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)
     __obj.asInstanceOf[WriteTreatmentResource]

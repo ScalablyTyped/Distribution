@@ -377,8 +377,8 @@ class ASPxClientGridView () extends ASPxClientGridBase {
   def GetTopVisibleIndex(): Double = js.native
   /**
     * Sends a callback to the server and generates the server-side ASPxGridView.CustomDataCallback event.
-    * @param args A string value that is any information that needs to be sent to the server-side ASPxGridView.CustomDataCallback event.
-    * @param onCallback A ASPxClientGridViewValuesCallback object that is the JavaScript function which receives the information on the client side.
+    * @param args Information that you need to send to the ASPxGridView.CustomDataCallback server-side event.
+    * @param onCallback A JavaScript function that receives the information on the client side.
     */
   def GetValuesOnCustomCallback(args: String, onCallback: ASPxClientGridViewValuesCallback): Unit = js.native
   /** @deprecated Use the GetVerticalScrollPosition method instead. */
@@ -742,6 +742,7 @@ class ASPxClientGridView () extends ASPxClientGridBase {
   def UnselectRowOnPage(visibleIndex: Double): Unit = js.native
   /**
     * Deselects the specified row (if selected) within the grid.
+    * @param visibleIndices Visible indices of rows to unselect.
     */
   def UnselectRows(): Unit = js.native
   def UnselectRows(visibleIndices: js.Array[Double]): Unit = js.native

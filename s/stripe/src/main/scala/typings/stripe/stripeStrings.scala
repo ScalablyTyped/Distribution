@@ -741,6 +741,9 @@ object stripeStrings {
   sealed trait repeating extends js.Object
   
   @js.native
+  sealed trait request extends js.Object
+  
+  @js.native
   sealed trait requested extends js.Object
   
   @js.native
@@ -762,6 +765,9 @@ object stripeStrings {
   
   @js.native
   sealed trait requires_payment_method extends js.Object
+  
+  @js.native
+  sealed trait response extends js.Object
   
   @js.native
   sealed trait response_disabled extends js.Object
@@ -1476,6 +1482,8 @@ object stripeStrings {
   @scala.inline
   def repeating: repeating = "repeating".asInstanceOf[repeating]
   @scala.inline
+  def request: request = "request".asInstanceOf[request]
+  @scala.inline
   def requested: requested = "requested".asInstanceOf[requested]
   @scala.inline
   def requested_by_customer: requested_by_customer = "requested_by_customer".asInstanceOf[requested_by_customer]
@@ -1489,6 +1497,8 @@ object stripeStrings {
   def requires_confirmation: requires_confirmation = "requires_confirmation".asInstanceOf[requires_confirmation]
   @scala.inline
   def requires_payment_method: requires_payment_method = "requires_payment_method".asInstanceOf[requires_payment_method]
+  @scala.inline
+  def response: response = "response".asInstanceOf[response]
   @scala.inline
   def response_disabled: response_disabled = "response_disabled".asInstanceOf[response_disabled]
   @scala.inline

@@ -161,6 +161,7 @@ object vegaDashTypingsMod extends js.Object {
     array2: js.Array[_],
     output: js.Array[_]
   ): Unit = js.native
+  def mergeConfig[C /* <: js.Object */](c: C*): C = js.native
   @JSName("merge")
   def merge_Unit(
     compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double],
@@ -236,6 +237,9 @@ object vegaDashTypingsMod extends js.Object {
     filter: js.Function1[/* any */ js.Any, js.UndefOr[Boolean]],
     visitor: js.Function3[/* v */ js.Any, /* i */ Double, /* arr */ js.Array[_], Unit]
   ): Unit = js.native
+  def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any): Unit = js.native
+  def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any, recurse: js.Object): Unit = js.native
+  def writeConfig[C /* <: js.Object */](c: C, key: String, value: js.Any, recurse: Boolean): Unit = js.native
   def zero(): `0` = js.native
   def zoomLinear(domain: js.Array[Double], anchor: Double, scale: Double): js.Array[Double] = js.native
   def zoomLinear(domain: js.Array[Double], anchor: Null, scale: Double): js.Array[Double] = js.native

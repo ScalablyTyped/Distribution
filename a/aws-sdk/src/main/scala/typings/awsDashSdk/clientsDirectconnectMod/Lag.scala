@@ -62,11 +62,15 @@ trait Lag extends js.Object {
     */
   var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   /**
+    * The name of the service provider associated with the LAG.
+    */
+  var providerName: js.UndefOr[ProviderName] = js.undefined
+  /**
     * The AWS Region where the connection is located.
     */
   var region: js.UndefOr[Region] = js.undefined
   /**
-    * Any tags assigned to link aggregation group (LAG).
+    * The tags associated with the LAG.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -88,6 +92,7 @@ object Lag {
     minimumLinks: Int | Double = null,
     numberOfConnections: Int | Double = null,
     ownerAccount: OwnerAccount = null,
+    providerName: ProviderName = null,
     region: Region = null,
     tags: TagList = null
   ): Lag = {
@@ -106,6 +111,7 @@ object Lag {
     if (minimumLinks != null) __obj.updateDynamic("minimumLinks")(minimumLinks.asInstanceOf[js.Any])
     if (numberOfConnections != null) __obj.updateDynamic("numberOfConnections")(numberOfConnections.asInstanceOf[js.Any])
     if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount)
+    if (providerName != null) __obj.updateDynamic("providerName")(providerName)
     if (region != null) __obj.updateDynamic("region")(region)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[Lag]

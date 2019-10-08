@@ -128,6 +128,7 @@ package object clientsPinpointMod {
   type ListOfSegmentGroup = js.Array[SegmentGroup]
   type ListOfSegmentReference = js.Array[SegmentReference]
   type ListOfSegmentResponse = js.Array[SegmentResponse]
+  type ListOfTemplateResponse = js.Array[TemplateResponse]
   type ListOfTreatmentResource = js.Array[TreatmentResource]
   type ListOfWriteTreatmentResource = js.Array[WriteTreatmentResource]
   type ListOf__string = js.Array[__string]
@@ -178,6 +179,13 @@ package object clientsPinpointMod {
     - java.lang.String
   */
   type SourceType = _SourceType | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.EMAIL
+    - typings.awsDashSdk.awsDashSdkStrings.SMS
+    - typings.awsDashSdk.awsDashSdkStrings.PUSH
+    - java.lang.String
+  */
+  type TemplateType = _TemplateType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ALL
     - typings.awsDashSdk.awsDashSdkStrings.ANY

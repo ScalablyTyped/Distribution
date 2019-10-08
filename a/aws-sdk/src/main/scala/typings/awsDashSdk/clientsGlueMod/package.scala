@@ -82,6 +82,9 @@ package object clientsGlueMod {
     - typings.awsDashSdk.awsDashSdkStrings.INSTANCE_ID
     - typings.awsDashSdk.awsDashSdkStrings.JDBC_CONNECTION_URL
     - typings.awsDashSdk.awsDashSdkStrings.JDBC_ENFORCE_SSL
+    - typings.awsDashSdk.awsDashSdkStrings.CUSTOM_JDBC_CERT
+    - typings.awsDashSdk.awsDashSdkStrings.SKIP_CUSTOM_JDBC_CERT_VALIDATION
+    - typings.awsDashSdk.awsDashSdkStrings.CUSTOM_JDBC_CERT_STRING
     - java.lang.String
   */
   type ConnectionPropertyKey = _ConnectionPropertyKey | String

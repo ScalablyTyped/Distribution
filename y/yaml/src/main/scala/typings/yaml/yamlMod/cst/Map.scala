@@ -12,7 +12,7 @@ trait Map
   extends Node
      with ContentNode {
   /** implicit keys are not wrapped */
-  var items: js.Array[Comment | Alias | Scalar | MapItem]
+  var items: js.Array[BlankLine | Comment | Alias | Scalar | MapItem]
   @JSName("type")
   var type_Map: MAP
 }
@@ -22,7 +22,7 @@ object Map {
   def apply(
     hasComment: Boolean,
     hasProps: Boolean,
-    items: js.Array[Comment | Alias | Scalar | MapItem],
+    items: js.Array[BlankLine | Comment | Alias | Scalar | MapItem],
     jsonLike: Boolean,
     props: js.Array[Range],
     `type`: MAP,

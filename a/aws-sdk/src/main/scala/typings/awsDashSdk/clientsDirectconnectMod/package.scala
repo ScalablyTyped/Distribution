@@ -167,6 +167,7 @@ package object clientsDirectconnectMod {
   type PaginationToken = String
   type PartnerName = String
   type PortSpeed = String
+  type ProviderList = js.Array[ProviderName]
   type ProviderName = String
   type Region = String
   type ResourceArn = String

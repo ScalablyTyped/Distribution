@@ -12,5 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createNode_true extends js.Object {
   def apply(value: js.Any, wrapScalars: `true`): MapBase | SeqBase | Scalar = js.native
+  def apply(value: js.Any, wrapScalars: `true`, tag: String): MapBase | SeqBase | Scalar = js.native
 }
 

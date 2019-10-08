@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "loadjs"
-version := "3.5-dt-20180524Z-e7de2e"
+version := "4.0-dt-20191007Z-f2d431"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

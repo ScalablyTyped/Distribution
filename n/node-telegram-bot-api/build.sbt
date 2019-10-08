@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-telegram-bot-api"
-version := "0.31-dt-20190717Z-0f1846"
+version := "0.31-dt-20191007Z-ccbfb7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

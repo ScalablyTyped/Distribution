@@ -98,7 +98,7 @@ object distTypesMod extends js.Object {
   
   @js.native
   object menuController extends js.Object {
-    def _createAnimation(`type`: String, menuCmp: MenuI): js.Promise[_] = js.native
+    def _createAnimation(`type`: String, menuCmp: MenuI): js.Any = js.native
     def _getOpenSync(): js.UndefOr[HTMLIonMenuElement] = js.native
     def _register(menu: MenuI): Unit = js.native
     def _setActiveMenu(menu: MenuI): Unit = js.native

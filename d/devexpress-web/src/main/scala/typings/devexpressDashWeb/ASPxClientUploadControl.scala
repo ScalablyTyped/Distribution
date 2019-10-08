@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class ASPxClientUploadControl () extends ASPxClientControl {
   /**
-    * Fires when the mouse enters a drop zone or an external drop zone element while dragging a file.
+    * Fires when the mouse enters a <strong>drop zone</strong> or an external drop zone element while dragging a file.
     */
   var DropZoneEnter: ASPxClientEvent[ASPxClientUploadControlDropZoneEnterEventHandler[ASPxClientUploadControl]] = js.native
   /**
-    * Fires when the mouse leaves a drop zone or an external drop zone element while dragging a file.
+    * Fires when the mouse leaves a <strong>drop zone</strong> or an external drop zone element while dragging a file.
     */
   var DropZoneLeave: ASPxClientEvent[ASPxClientUploadControlDropZoneLeaveEventHandler[ASPxClientUploadControl]] = js.native
   /**
-    * Occurs on the client side when the file input elements count is changed.
+    * Occurs on the client side when the <strong>file input elements</strong> count is changed.
     */
   var FileInputCountChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientUploadControl]] = js.native
   /**
@@ -44,7 +44,7 @@ class ASPxClientUploadControl () extends ASPxClientControl {
     */
   var TextChanged: ASPxClientEvent[ASPxClientUploadControlTextChangedEventHandler[ASPxClientUploadControl]] = js.native
   /**
-    * Occurs on the client side when the progress bar indicator position is changed.
+    * Occurs on the client side when the <strong>progress bar indicator</strong> position is changed.
     */
   var UploadingProgressChanged: ASPxClientEvent[
     ASPxClientUploadControlUploadingProgressChangedEventHandler[ASPxClientUploadControl]
@@ -56,7 +56,7 @@ class ASPxClientUploadControl () extends ASPxClientControl {
     ASPxClientUploadControlValidationErrorOccurredEventHandler[ASPxClientUploadControl]
   ] = js.native
   /**
-    * Adds a new file input element to the ASPxUploadControl.
+    * Adds a new <strong>file input</strong> element to the ASPxUploadControl.
     */
   def AddFileInput(): Unit = js.native
   /**
@@ -68,7 +68,7 @@ class ASPxClientUploadControl () extends ASPxClientControl {
     */
   def ClearText(): Unit = js.native
   /**
-    * Returns the add button's text.
+    * Returns the <strong>add button</strong>'s text.
     */
   def GetAddButtonText(): String = js.native
   /**
@@ -76,12 +76,12 @@ class ASPxClientUploadControl () extends ASPxClientControl {
     */
   def GetEnabled(): Boolean = js.native
   /**
-    * Gets the number of file input elements contained within the ASPxUploadControl.
+    * Gets the number of <strong>file input elements</strong> contained within the ASPxUploadControl.
     */
   def GetFileInputCount(): Double = js.native
   /**
-    * Returns files selected for uploading within the specified file input. An array of ASPxClientUploadControlFile objects that are files selected for uploading.
-    * @param inputIndex An integer value that specifies the index of a file input. Default value is "0".
+    * Returns files selected for uploading within the specified <strong>file input</strong>. An array of ASPxClientUploadControlFile objects that are files selected for uploading.
+    * @param inputIndex An integer value that specifies the index of a <strong>file input</strong>. Default value is "0".
     */
   def GetSelectedFiles(inputIndex: Double): js.Array[ASPxClientUploadControlFile] = js.native
   /**
@@ -90,7 +90,7 @@ class ASPxClientUploadControl () extends ASPxClientControl {
     */
   def GetText(index: Double): String = js.native
   /**
-    * Returns the text displayed within the upload button.
+    * Returns the text displayed within the <strong>upload button</strong>.
     */
   def GetUploadButtonText(): String = js.native
   /**
@@ -104,12 +104,12 @@ class ASPxClientUploadControl () extends ASPxClientControl {
   def RemoveFileFromSelection(fileIndex: Double): Unit = js.native
   def RemoveFileFromSelection(fileIndex: ASPxClientUploadControlFile): Unit = js.native
   /**
-    * Removes a file input element from the ASPxUploadControl.
+    * Removes a <strong>file input</strong> element from the ASPxUploadControl.
     * @param index An integer value that represents a file input element's index.
     */
   def RemoveFileInput(index: Double): Unit = js.native
   /**
-    * Sets the text to be displayed within the add button.
+    * Sets the text to be displayed within the <strong>add button</strong>.
     * @param text A string value specifying the text to be displayed within the button.
     */
   def SetAddButtonText(text: String): Unit = js.native
@@ -124,12 +124,12 @@ class ASPxClientUploadControl () extends ASPxClientControl {
     */
   def SetEnabled(enabled: Boolean): Unit = js.native
   /**
-    * Specifies the count of the file input elements within the upload control.
+    * Specifies the count of the <strong>file input</strong> elements within the upload control.
     * @param count An integer value that specifies the file input elements count.
     */
   def SetFileInputCount(count: Double): Unit = js.native
   /**
-    * Sets the text to be displayed within the upload button.
+    * Sets the text to be displayed within the <strong>upload button</strong>.
     * @param text A string value specifying the text to be displayed within the button.
     */
   def SetUploadButtonText(text: String): Unit = js.native

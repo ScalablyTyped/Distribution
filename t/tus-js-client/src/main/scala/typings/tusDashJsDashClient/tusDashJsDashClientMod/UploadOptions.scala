@@ -23,6 +23,7 @@ trait UploadOptions extends js.Object {
   var removeFingerprintOnSuccess: js.UndefOr[Boolean] = js.undefined
   var resume: js.UndefOr[Boolean] = js.undefined
   var retryDelays: js.UndefOr[js.Array[Double]] = js.undefined
+  var uploadLengthDeferred: js.UndefOr[Boolean] = js.undefined
   var uploadSize: js.UndefOr[Double | Null] = js.undefined
   var uploadUrl: js.UndefOr[String | Null] = js.undefined
   var withCredentials: js.UndefOr[Boolean] = js.undefined
@@ -44,6 +45,7 @@ object UploadOptions {
     removeFingerprintOnSuccess: js.UndefOr[Boolean] = js.undefined,
     resume: js.UndefOr[Boolean] = js.undefined,
     retryDelays: js.Array[Double] = null,
+    uploadLengthDeferred: js.UndefOr[Boolean] = js.undefined,
     uploadSize: Int | Double = null,
     uploadUrl: String = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
@@ -61,6 +63,7 @@ object UploadOptions {
     if (!js.isUndefined(removeFingerprintOnSuccess)) __obj.updateDynamic("removeFingerprintOnSuccess")(removeFingerprintOnSuccess)
     if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume)
     if (retryDelays != null) __obj.updateDynamic("retryDelays")(retryDelays)
+    if (!js.isUndefined(uploadLengthDeferred)) __obj.updateDynamic("uploadLengthDeferred")(uploadLengthDeferred)
     if (uploadSize != null) __obj.updateDynamic("uploadSize")(uploadSize.asInstanceOf[js.Any])
     if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl)
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)

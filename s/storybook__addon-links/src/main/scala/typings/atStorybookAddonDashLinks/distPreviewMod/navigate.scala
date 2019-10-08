@@ -1,0 +1,13 @@
+package typings.atStorybookAddonDashLinks.distPreviewMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@storybook/addon-links/dist/preview", "navigate")
+@js.native
+object navigate extends js.Object {
+  def apply(params: ParamsCombo): Unit = js.native
+  def apply(params: ParamsId): Unit = js.native
+}
+

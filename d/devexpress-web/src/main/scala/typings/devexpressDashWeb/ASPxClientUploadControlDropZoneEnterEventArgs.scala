@@ -16,7 +16,7 @@ class ASPxClientUploadControlDropZoneEnterEventArgs protected () extends ASPxCli
     */
   def this(dropZone: js.Any) = this()
   /**
-    * Gets a drop zone object related to the processed event.
+    * Gets a <strong>drop zone</strong> object related to the processed event.
     */
   var dropZone: js.Any = js.native
 }

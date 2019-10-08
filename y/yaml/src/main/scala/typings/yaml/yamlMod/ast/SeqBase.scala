@@ -23,6 +23,7 @@ object SeqBase {
     commentBefore: String = null,
     cstNode: typings.yaml.yamlMod.cst.Node = null,
     range: js.Tuple2[Double, Double] = null,
+    spaceBefore: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
     `type`: FLOW_SEQ | SEQ = null
   ): SeqBase = {
@@ -31,6 +32,7 @@ object SeqBase {
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)
     if (range != null) __obj.updateDynamic("range")(range)
+    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore)
     if (tag != null) __obj.updateDynamic("tag")(tag)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeqBase]

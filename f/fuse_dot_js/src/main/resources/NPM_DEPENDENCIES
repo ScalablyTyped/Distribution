@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fuse.js" : "3.4.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fuse.js" : "3.4.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for immer
 
-Typings are for version 1.12.1
+Typings are for version 1.10.0
 
 ## Library description:
 Create your next immutable state by mutating the current one
@@ -31,11 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/** Object types that should never be mapped */
-
-```
 

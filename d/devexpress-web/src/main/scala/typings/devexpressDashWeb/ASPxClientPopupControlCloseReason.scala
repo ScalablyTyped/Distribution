@@ -20,7 +20,7 @@ object ASPxClientPopupControlCloseReason extends js.Object {
     */
   val API: String = js.native
   /**
-    * An end-user clicks the close header button.
+    * An end-user clicks the close <strong>header button</strong>.
     */
   val CloseButton: String = js.native
   /**

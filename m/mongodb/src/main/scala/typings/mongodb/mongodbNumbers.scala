@@ -1,15 +1,16 @@
 package typings.mongodb
 
+import typings.mongodb.mongodbMod.SortValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object mongodbNumbers {
   @js.native
-  sealed trait `-1` extends js.Object
+  sealed trait `-1` extends SortValues
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1` extends SortValues
   
   @js.native
   sealed trait `4` extends js.Object

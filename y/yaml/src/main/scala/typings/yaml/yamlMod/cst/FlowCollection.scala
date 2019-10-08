@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait FlowCollection
   extends Node
      with ContentNode {
-  var items: js.Array[FlowChar | Comment | Alias | Scalar | FlowCollection]
+  var items: js.Array[FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection]
   @JSName("type")
   var type_FlowCollection: FLOW_MAP | FLOW_SEQ
 }
@@ -22,7 +22,7 @@ object FlowCollection {
   def apply(
     hasComment: Boolean,
     hasProps: Boolean,
-    items: js.Array[FlowChar | Comment | Alias | Scalar | FlowCollection],
+    items: js.Array[FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection],
     jsonLike: Boolean,
     props: js.Array[Range],
     `type`: FLOW_MAP | FLOW_SEQ,

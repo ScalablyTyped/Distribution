@@ -14,11 +14,11 @@ trait NewTransitVirtualInterfaceAllocation extends js.Object {
     */
   var amazonAddress: js.UndefOr[AmazonAddress] = js.undefined
   /**
-    * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
+    * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration. The valid values are 1-2147483647.
     */
   var asn: js.UndefOr[ASN] = js.undefined
   /**
-    * The authentication key for BGP configuration.
+    * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximun lenth of 80 characters.
     */
   var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   /**
@@ -26,11 +26,11 @@ trait NewTransitVirtualInterfaceAllocation extends js.Object {
     */
   var customerAddress: js.UndefOr[CustomerAddress] = js.undefined
   /**
-    * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 8500. The default value is 1500. 
+    * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500. 
     */
   var mtu: js.UndefOr[MTU] = js.undefined
   /**
-    * Any tags assigned to the transit virtual interface.
+    * The tags associated with the transitive virtual interface.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   /**

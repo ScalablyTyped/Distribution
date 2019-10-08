@@ -16,7 +16,7 @@ class ASPxClientUploadControlTextChangedEventArgs protected () extends ASPxClien
     */
   def this(inputIndex: Double) = this()
   /**
-    * Gets the index of a file input element within the ASPxUploadControl.
+    * Gets the index of a <strong>file input element</strong> within the ASPxUploadControl.
     */
   var inputIndex: Double = js.native
 }

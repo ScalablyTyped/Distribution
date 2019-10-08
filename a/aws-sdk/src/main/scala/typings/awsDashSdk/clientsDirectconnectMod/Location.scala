@@ -10,6 +10,10 @@ trait Location extends js.Object {
     */
   var availablePortSpeeds: js.UndefOr[AvailablePortSpeeds] = js.undefined
   /**
+    * The name of the service provider for the location.
+    */
+  var availableProviders: js.UndefOr[ProviderList] = js.undefined
+  /**
     * The code for the location.
     */
   var locationCode: js.UndefOr[LocationCode] = js.undefined
@@ -27,12 +31,14 @@ object Location {
   @scala.inline
   def apply(
     availablePortSpeeds: AvailablePortSpeeds = null,
+    availableProviders: ProviderList = null,
     locationCode: LocationCode = null,
     locationName: LocationName = null,
     region: Region = null
   ): Location = {
     val __obj = js.Dynamic.literal()
     if (availablePortSpeeds != null) __obj.updateDynamic("availablePortSpeeds")(availablePortSpeeds)
+    if (availableProviders != null) __obj.updateDynamic("availableProviders")(availableProviders)
     if (locationCode != null) __obj.updateDynamic("locationCode")(locationCode)
     if (locationName != null) __obj.updateDynamic("locationName")(locationName)
     if (region != null) __obj.updateDynamic("region")(region)

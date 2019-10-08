@@ -49,6 +49,7 @@ trait WriteCampaignRequest extends js.Object {
     * The version of the segment to associate with the campaign.
     */
   var SegmentVersion: js.UndefOr[__integer] = js.undefined
+  var TemplateConfiguration: js.UndefOr[typings.awsDashSdk.clientsPinpointMod.TemplateConfiguration] = js.undefined
   /**
     * The custom description of a variation of the campaign to use for A/B testing.
     */
@@ -77,6 +78,7 @@ object WriteCampaignRequest {
     Schedule: Schedule = null,
     SegmentId: __string = null,
     SegmentVersion: Int | Double = null,
+    TemplateConfiguration: TemplateConfiguration = null,
     TreatmentDescription: __string = null,
     TreatmentName: __string = null,
     tags: MapOf__string = null
@@ -93,6 +95,7 @@ object WriteCampaignRequest {
     if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
     if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId)
     if (SegmentVersion != null) __obj.updateDynamic("SegmentVersion")(SegmentVersion.asInstanceOf[js.Any])
+    if (TemplateConfiguration != null) __obj.updateDynamic("TemplateConfiguration")(TemplateConfiguration)
     if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
     if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)
     if (tags != null) __obj.updateDynamic("tags")(tags)

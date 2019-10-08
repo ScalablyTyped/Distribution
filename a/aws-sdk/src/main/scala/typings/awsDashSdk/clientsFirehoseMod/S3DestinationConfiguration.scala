@@ -26,11 +26,11 @@ trait S3DestinationConfiguration extends js.Object {
     */
   var EncryptionConfiguration: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.EncryptionConfiguration] = js.undefined
   /**
-    * A prefix that Kinesis Data Firehose evaluates and adds to failed records before writing them to S3. This prefix appears immediately following the bucket name.
+    * A prefix that Kinesis Data Firehose evaluates and adds to failed records before writing them to S3. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.
     */
   var ErrorOutputPrefix: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ErrorOutputPrefix] = js.undefined
   /**
-    * The "YYYY/MM/DD/HH" time format prefix is automatically used for delivered Amazon S3 files. You can specify an extra prefix to be added in front of the time format prefix. If the prefix ends with a slash, it appears as a folder in the S3 bucket. For more information, see Amazon S3 Object Name Format in the Amazon Kinesis Data Firehose Developer Guide.
+    * The "YYYY/MM/DD/HH" time format prefix is automatically used for delivered Amazon S3 files. You can also specify a custom prefix, as described in Custom Prefixes for Amazon S3 Objects.
     */
   var Prefix: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.Prefix] = js.undefined
   /**

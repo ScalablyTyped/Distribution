@@ -21,16 +21,16 @@ class ASPxClientCustomizeExportOptionsEventArgs protected () extends ASPxClientE
     */
   def GetExportOptionsModel(format: js.Any): js.Any = js.native
   /**
-    * Hides the entire <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/html5-document-viewer/exporting/export-a-document.html">Export Options</a> panel from the Web Document Viewer.
+    * Hides the entire <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel from the Web Document Viewer.
     */
   def HideExportOptionsPanel(): Unit = js.native
   /**
-    * Hides the specified export format from the Export To drop-down list and the corresponding category from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/html5-document-viewer/exporting/export-a-document.html">Export Options</a> panel.
+    * Hides the specified export format from the Export To drop-down list and the corresponding category from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel.
     * @param format An object that specifies the export format to hide.
     */
   def HideFormat(format: js.Any): Unit = js.native
   /**
-    * Hides the specified options for the specified export format from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/html5-document-viewer/exporting/export-a-document.html">Export Options</a> panel.
+    * Hides the specified options for the specified export format from the <a href="https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/document-viewer/exporting/export-a-document.html">Export Options</a> panel.
     * @param format An object that specifies the export format whose options should be hidden.
     * @param properties An array of properties to hide.
     */

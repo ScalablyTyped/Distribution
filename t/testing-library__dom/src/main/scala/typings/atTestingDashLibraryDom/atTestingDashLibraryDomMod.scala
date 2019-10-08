@@ -32,7 +32,9 @@ import typings.atTestingDashLibraryDom.queryDashHelpersMod.GetAllBy
 import typings.atTestingDashLibraryDom.queryDashHelpersMod.QueryByAttribute
 import typings.atTestingDashLibraryDom.waitDashForDashElementMod.WaitForElementOptions
 import typings.prettyDashFormat.prettyDashFormatMod.OptionsReceived
+import typings.std.Element
 import typings.std.Error
+import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
@@ -110,9 +112,13 @@ object atTestingDashLibraryDomMod extends js.Object {
   def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
   def logDom(htmlElement: HTMLElement): Unit = js.native
   def logRoles(container: HTMLElement): String = js.native
-  def prettyDOM(element: HTMLElement): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double): String | `false` = js.native
-  def prettyDOM(element: HTMLElement, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  def prettyDOM(): String | `false` = js.native
+  def prettyDOM(dom: Element): String | `false` = js.native
+  def prettyDOM(dom: Element, maxLength: Double): String | `false` = js.native
+  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
+  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
   def wait(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def wait(callback: js.Function0[Unit], options: Anon_Interval): js.Promise[Unit] = js.native
   def waitForDomChange(): js.Promise[_] = js.native

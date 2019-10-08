@@ -1,13 +1,15 @@
 package typings.loadjs.loadjsMod
 
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LoadOptions extends js.Object {
   var async: js.UndefOr[Boolean] = js.undefined
-  var before: js.UndefOr[js.Function2[/* path */ String, /* scriptEl */ String, Unit]] = js.undefined
-  var error: js.UndefOr[js.Function1[/* depsNotFound */ String, Unit]] = js.undefined
+  var before: js.UndefOr[js.Function2[/* path */ String, /* scriptEl */ HTMLElement, Unit]] = js.undefined
+   // Arguments provided are different in case of returnPromise: true / false
+  var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.undefined
   var numRetries: js.UndefOr[Double] = js.undefined
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
@@ -16,8 +18,8 @@ object LoadOptions {
   @scala.inline
   def apply(
     async: js.UndefOr[Boolean] = js.undefined,
-    before: (/* path */ String, /* scriptEl */ String) => Unit = null,
-    error: /* depsNotFound */ String => Unit = null,
+    before: (/* path */ String, /* scriptEl */ HTMLElement) => Unit = null,
+    error: /* depsNotFound */ js.Array[String] => Unit = null,
     numRetries: Int | Double = null,
     success: () => Unit = null
   ): LoadOptions = {

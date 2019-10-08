@@ -1,6 +1,5 @@
 package typings.atStorybookAddonDashCentered
 
-import typings.atStorybookReact.atStorybookReactMod.StoryDecorator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/addon-centered", JSImport.Namespace)
 @js.native
 object atStorybookAddonDashCenteredMod extends js.Object {
-  val default: StoryDecorator = js.native
+  def default(
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+  ): js.Any = js.native
 }
 

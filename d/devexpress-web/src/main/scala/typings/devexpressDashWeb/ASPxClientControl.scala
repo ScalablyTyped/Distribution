@@ -23,14 +23,13 @@ class ASPxClientControl () extends ASPxClientControlBase {
     */
   def GetWidth(): Double = js.native
   /**
-    * Specifies the control's height. 
-  Note that this method is not in effect for some controls.
+    * Specifies the control's height.  Note that this method is not in effect for some controls.
     * @param height An integer value that specifies the control's height.
     */
   def SetHeight(height: Double): Unit = js.native
   /**
-    * Specifies the control's width.
-    * @param width An integer value that specifies the control's width.
+    * Specifies the control's width in pixels.
+    * @param width An integer value that specifies the control's width, in pixels.
     */
   def SetWidth(width: Double): Unit = js.native
 }

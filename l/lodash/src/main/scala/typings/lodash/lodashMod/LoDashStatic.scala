@@ -6351,7 +6351,7 @@ trait LoDashStatic extends js.Object {
     * @return Returns the new array of removed elements.
     */
   def remove[T](array: List[T]): js.Array[T] = js.native
-  def remove[T](array: List[T], predicate: ListIteratee[T]): js.Array[T] = js.native
+  def remove[T](array: List[T], predicate: ListIterator[T, NotVoid]): js.Array[T] = js.native
   /**
     * Repeats the given string n times.
     *

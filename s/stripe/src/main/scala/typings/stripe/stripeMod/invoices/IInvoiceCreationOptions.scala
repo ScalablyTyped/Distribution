@@ -25,12 +25,16 @@ trait IInvoiceCreationOptions extends IDataOptionsWithMetadata {
     */
   var auto_advance: js.UndefOr[Boolean] = js.undefined
   /**
+    * @deprecated Use collection_method instead
+    */
+  var billing: js.UndefOr[charge_automatically | send_invoice] = js.undefined
+  /**
     * Either `charge_automatically`, or `send_invoice`. When charging automatically, Stripe
     * will attempt to pay this invoice using the default source attached to the customer.
     * When sending an invoice, Stripe will email this invoice to the customer with payment
     * instructions. Defaults to charge_automatically.
     */
-  var billing: js.UndefOr[charge_automatically | send_invoice] = js.undefined
+  var collection_method: js.UndefOr[charge_automatically | send_invoice] = js.undefined
   /**
     * A list of up to 4 custom fields to be displayed on the invoice.
     */
@@ -82,6 +86,7 @@ object IInvoiceCreationOptions {
     application_fee: Int | Double = null,
     auto_advance: js.UndefOr[Boolean] = js.undefined,
     billing: charge_automatically | send_invoice = null,
+    collection_method: charge_automatically | send_invoice = null,
     custom_fields: js.Array[Anon_Name] = null,
     days_until_due: Int | Double = null,
     default_source: String = null,
@@ -99,6 +104,7 @@ object IInvoiceCreationOptions {
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
     if (!js.isUndefined(auto_advance)) __obj.updateDynamic("auto_advance")(auto_advance)
     if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
+    if (collection_method != null) __obj.updateDynamic("collection_method")(collection_method.asInstanceOf[js.Any])
     if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields)
     if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
     if (default_source != null) __obj.updateDynamic("default_source")(default_source)

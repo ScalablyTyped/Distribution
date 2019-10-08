@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-hotkeys" : "2.0.0-pre4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-hotkeys" : "2.0.0-pre4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,6 +2,9 @@ package typings.sortablejs.sortablejsMod
 
 import typings.sortablejs.Anon_Get
 import typings.sortablejs.Anon_X
+import typings.sortablejs.sortablejsNumbers.`-1`
+import typings.sortablejs.sortablejsNumbers.`1`
+import typings.sortablejs.sortablejsNumbers.`false`
 import typings.std.DataTransfer
 import typings.std.Event
 import typings.std.HTMLElement
@@ -104,8 +107,13 @@ trait Options extends js.Object {
   var onFilter: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
   /**
     * Event when you move an item in the list or between lists
+    * return false; for cancel
+    * return -1; insert before target
+    * return 1; insert after target
     */
-  var onMove: js.UndefOr[js.Function1[/* event */ MoveEvent, Boolean]] = js.undefined
+  var onMove: js.UndefOr[
+    js.Function2[/* event */ MoveEvent, /* originalEvent */ MouseEvent, `false` | `-1` | `1`]
+  ] = js.undefined
   /**
     * Element is removed from the list into another list
     */
@@ -194,7 +202,7 @@ object Options {
     onClone: /* event */ SortableEvent => Unit = null,
     onEnd: /* event */ SortableEvent => Unit = null,
     onFilter: /* event */ SortableEvent => Unit = null,
-    onMove: /* event */ MoveEvent => Boolean = null,
+    onMove: (/* event */ MoveEvent, /* originalEvent */ MouseEvent) => `false` | `-1` | `1` = null,
     onRemove: /* event */ SortableEvent => Unit = null,
     onSort: /* event */ SortableEvent => Unit = null,
     onStart: /* event */ SortableEvent => Unit = null,
@@ -240,7 +248,7 @@ object Options {
     if (onClone != null) __obj.updateDynamic("onClone")(js.Any.fromFunction1(onClone))
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
     if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1(onFilter))
-    if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction1(onMove))
+    if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction2(onMove))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))

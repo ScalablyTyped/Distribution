@@ -1,0 +1,20 @@
+package typings.atStorybookNodeDashLogger
+
+import typings.chalk.chalkMod.ColorSupport
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_SupportsColor extends js.Object {
+  var supportsColor: ColorSupport
+}
+
+object Anon_SupportsColor {
+  @scala.inline
+  def apply(supportsColor: ColorSupport): Anon_SupportsColor = {
+    val __obj = js.Dynamic.literal(supportsColor = supportsColor)
+  
+    __obj.asInstanceOf[Anon_SupportsColor]
+  }
+}
+

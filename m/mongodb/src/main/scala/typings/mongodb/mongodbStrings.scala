@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 
 object mongodbStrings {
   @js.native
+  sealed trait AcceptedFields extends js.Object
+  
+  @js.native
   sealed trait DEFAULT extends js.Object
   
   @js.native
@@ -27,13 +30,31 @@ object mongodbStrings {
   sealed trait `MONGODB-X509` extends js.Object
   
   @js.native
+  sealed trait NotAcceptedFields extends js.Object
+  
+  @js.native
   sealed trait PLAIN extends js.Object
+  
+  @js.native
+  sealed trait PullAllOperator extends js.Object
+  
+  @js.native
+  sealed trait PullOperator extends js.Object
+  
+  @js.native
+  sealed trait PushOperator extends js.Object
+  
+  @js.native
+  sealed trait ReadonlyPartial extends js.Object
   
   @js.native
   sealed trait `SCRAM-SHA-1` extends js.Object
   
   @js.native
   sealed trait `SCRAM-SHA-256` extends js.Object
+  
+  @js.native
+  sealed trait SetFields extends js.Object
   
   @js.native
   sealed trait UpdateQuery extends js.Object
@@ -144,6 +165,8 @@ object mongodbStrings {
   sealed trait warn extends js.Object
   
   @scala.inline
+  def AcceptedFields: AcceptedFields = "AcceptedFields".asInstanceOf[AcceptedFields]
+  @scala.inline
   def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
@@ -156,11 +179,23 @@ object mongodbStrings {
   @scala.inline
   def `MONGODB-X509`: `MONGODB-X509` = "MONGODB-X509".asInstanceOf[`MONGODB-X509`]
   @scala.inline
+  def NotAcceptedFields: NotAcceptedFields = "NotAcceptedFields".asInstanceOf[NotAcceptedFields]
+  @scala.inline
   def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
+  @scala.inline
+  def PullAllOperator: PullAllOperator = "PullAllOperator".asInstanceOf[PullAllOperator]
+  @scala.inline
+  def PullOperator: PullOperator = "PullOperator".asInstanceOf[PullOperator]
+  @scala.inline
+  def PushOperator: PushOperator = "PushOperator".asInstanceOf[PushOperator]
+  @scala.inline
+  def ReadonlyPartial: ReadonlyPartial = "ReadonlyPartial".asInstanceOf[ReadonlyPartial]
   @scala.inline
   def `SCRAM-SHA-1`: `SCRAM-SHA-1` = "SCRAM-SHA-1".asInstanceOf[`SCRAM-SHA-1`]
   @scala.inline
   def `SCRAM-SHA-256`: `SCRAM-SHA-256` = "SCRAM-SHA-256".asInstanceOf[`SCRAM-SHA-256`]
+  @scala.inline
+  def SetFields: SetFields = "SetFields".asInstanceOf[SetFields]
   @scala.inline
   def UpdateQuery: UpdateQuery = "UpdateQuery".asInstanceOf[UpdateQuery]
   @scala.inline

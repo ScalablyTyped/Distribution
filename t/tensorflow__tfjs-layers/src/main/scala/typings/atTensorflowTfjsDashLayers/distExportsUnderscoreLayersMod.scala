@@ -35,6 +35,7 @@ import typings.atTensorflowTfjsDashLayers.distLayersNoiseMod.GaussianDropoutArgs
 import typings.atTensorflowTfjsDashLayers.distLayersNoiseMod.GaussianNoise
 import typings.atTensorflowTfjsDashLayers.distLayersNoiseMod.GaussianNoiseArgs
 import typings.atTensorflowTfjsDashLayers.distLayersNormalizationMod.BatchNormalizationLayerArgs
+import typings.atTensorflowTfjsDashLayers.distLayersNormalizationMod.LayerNormalizationLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersPaddingMod.ZeroPadding2DLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersPoolingMod.GlobalPooling2DLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersPoolingMod.Pooling1DLayerArgs
@@ -136,6 +137,8 @@ object distExportsUnderscoreLayersMod extends js.Object {
   def gruCell(args: GRUCellLayerArgs): typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod.RNNCell = js.native
   def input(config: InputConfig): SymbolicTensor = js.native
   def inputLayer(args: InputLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
+  def layerNormalization(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
+  def layerNormalization(args: LayerNormalizationLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def leakyReLU(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def leakyReLU(args: LeakyReLULayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def lstm(args: LSTMLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native

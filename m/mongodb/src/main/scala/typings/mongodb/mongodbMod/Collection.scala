@@ -14,6 +14,7 @@ import typings.mongodb.Anon_Session
 import typings.mongodb.Anon_SessionClientSession
 import typings.mongodb.Anon_SessionClientSession_582825874
 import typings.mongodb.Anon_Single
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -957,15 +958,6 @@ trait Collection[TSchema] extends js.Object {
   def stats(callback: MongoCallback[CollStats]): Unit = js.native
   def stats(options: Anon_ScaleSession): js.Promise[CollStats] = js.native
   def stats(options: Anon_ScaleSession, callback: MongoCallback[CollStats]): Unit = js.native
-  def update(filter: FilterQuery[TSchema], update: TSchema): js.Promise[WriteOpResult] = js.native
-  def update(filter: FilterQuery[TSchema], update: TSchema, callback: MongoCallback[WriteOpResult]): Unit = js.native
-  def update(filter: FilterQuery[TSchema], update: TSchema, options: UpdateOneOptions with Anon_Multi): js.Promise[WriteOpResult] = js.native
-  def update(
-    filter: FilterQuery[TSchema],
-    update: TSchema,
-    options: UpdateOneOptions with Anon_Multi,
-    callback: MongoCallback[WriteOpResult]
-  ): Unit = js.native
   /** @deprecated use updateOne, updateMany or bulkWrite */
   def update(filter: FilterQuery[TSchema], update: UpdateQuery[TSchema]): js.Promise[WriteOpResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#update */
@@ -983,14 +975,14 @@ trait Collection[TSchema] extends js.Object {
     options: UpdateOneOptions with Anon_Multi,
     callback: MongoCallback[WriteOpResult]
   ): Unit = js.native
-  def updateMany(filter: FilterQuery[TSchema], update: TSchema): js.Promise[UpdateWriteOpResult] = js.native
-  def updateMany(filter: FilterQuery[TSchema], update: TSchema, callback: MongoCallback[UpdateWriteOpResult]): Unit = js.native
-  def updateMany(filter: FilterQuery[TSchema], update: TSchema, options: UpdateManyOptions): js.Promise[UpdateWriteOpResult] = js.native
-  def updateMany(
+  def update(filter: FilterQuery[TSchema], update: Partial[TSchema]): js.Promise[WriteOpResult] = js.native
+  def update(filter: FilterQuery[TSchema], update: Partial[TSchema], callback: MongoCallback[WriteOpResult]): Unit = js.native
+  def update(filter: FilterQuery[TSchema], update: Partial[TSchema], options: UpdateOneOptions with Anon_Multi): js.Promise[WriteOpResult] = js.native
+  def update(
     filter: FilterQuery[TSchema],
-    update: TSchema,
-    options: UpdateManyOptions,
-    callback: MongoCallback[UpdateWriteOpResult]
+    update: Partial[TSchema],
+    options: UpdateOneOptions with Anon_Multi,
+    callback: MongoCallback[WriteOpResult]
   ): Unit = js.native
   def updateMany(filter: FilterQuery[TSchema], update: UpdateQuery[TSchema]): js.Promise[UpdateWriteOpResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#updateMany */
@@ -1006,13 +998,17 @@ trait Collection[TSchema] extends js.Object {
     options: UpdateManyOptions,
     callback: MongoCallback[UpdateWriteOpResult]
   ): Unit = js.native
-  def updateOne(filter: FilterQuery[TSchema], update: TSchema): js.Promise[UpdateWriteOpResult] = js.native
-  def updateOne(filter: FilterQuery[TSchema], update: TSchema, callback: MongoCallback[UpdateWriteOpResult]): Unit = js.native
-  def updateOne(filter: FilterQuery[TSchema], update: TSchema, options: UpdateOneOptions): js.Promise[UpdateWriteOpResult] = js.native
-  def updateOne(
+  def updateMany(filter: FilterQuery[TSchema], update: Partial[TSchema]): js.Promise[UpdateWriteOpResult] = js.native
+  def updateMany(
     filter: FilterQuery[TSchema],
-    update: TSchema,
-    options: UpdateOneOptions,
+    update: Partial[TSchema],
+    callback: MongoCallback[UpdateWriteOpResult]
+  ): Unit = js.native
+  def updateMany(filter: FilterQuery[TSchema], update: Partial[TSchema], options: UpdateManyOptions): js.Promise[UpdateWriteOpResult] = js.native
+  def updateMany(
+    filter: FilterQuery[TSchema],
+    update: Partial[TSchema],
+    options: UpdateManyOptions,
     callback: MongoCallback[UpdateWriteOpResult]
   ): Unit = js.native
   def updateOne(filter: FilterQuery[TSchema], update: UpdateQuery[TSchema]): js.Promise[UpdateWriteOpResult] = js.native
@@ -1026,6 +1022,19 @@ trait Collection[TSchema] extends js.Object {
   def updateOne(
     filter: FilterQuery[TSchema],
     update: UpdateQuery[TSchema],
+    options: UpdateOneOptions,
+    callback: MongoCallback[UpdateWriteOpResult]
+  ): Unit = js.native
+  def updateOne(filter: FilterQuery[TSchema], update: Partial[TSchema]): js.Promise[UpdateWriteOpResult] = js.native
+  def updateOne(
+    filter: FilterQuery[TSchema],
+    update: Partial[TSchema],
+    callback: MongoCallback[UpdateWriteOpResult]
+  ): Unit = js.native
+  def updateOne(filter: FilterQuery[TSchema], update: Partial[TSchema], options: UpdateOneOptions): js.Promise[UpdateWriteOpResult] = js.native
+  def updateOne(
+    filter: FilterQuery[TSchema],
+    update: Partial[TSchema],
     options: UpdateOneOptions,
     callback: MongoCallback[UpdateWriteOpResult]
   ): Unit = js.native

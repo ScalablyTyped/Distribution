@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-notes"
-version := "5.2.1-58eebf"
+version := "5.2.3-4ce39f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

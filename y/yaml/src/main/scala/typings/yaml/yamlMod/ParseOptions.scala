@@ -23,6 +23,10 @@ trait ParseOptions extends js.Object {
     */
   var keepNodeTypes: js.UndefOr[Boolean] = js.undefined
   /**
+    * When outputting JS, use Map rather than Object to represent mappings. By default `false`.
+    */
+  var mapAsMap: js.UndefOr[Boolean] = js.undefined
+  /**
     * Enable support for `<<` merge keys.
     */
   var merge: js.UndefOr[Boolean] = js.undefined
@@ -46,6 +50,7 @@ object ParseOptions {
     keepBlobsInJSON: js.UndefOr[Boolean] = js.undefined,
     keepCstNodes: js.UndefOr[Boolean] = js.undefined,
     keepNodeTypes: js.UndefOr[Boolean] = js.undefined,
+    mapAsMap: js.UndefOr[Boolean] = js.undefined,
     merge: js.UndefOr[Boolean] = js.undefined,
     schema: core | failsafe | json | `yaml-1DOT1` = null,
     tags: js.Array[Tag] | (js.Function1[/* tags */ js.Array[Tag], js.Array[Tag]]) = null,
@@ -55,6 +60,7 @@ object ParseOptions {
     if (!js.isUndefined(keepBlobsInJSON)) __obj.updateDynamic("keepBlobsInJSON")(keepBlobsInJSON)
     if (!js.isUndefined(keepCstNodes)) __obj.updateDynamic("keepCstNodes")(keepCstNodes)
     if (!js.isUndefined(keepNodeTypes)) __obj.updateDynamic("keepNodeTypes")(keepNodeTypes)
+    if (!js.isUndefined(mapAsMap)) __obj.updateDynamic("mapAsMap")(mapAsMap)
     if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

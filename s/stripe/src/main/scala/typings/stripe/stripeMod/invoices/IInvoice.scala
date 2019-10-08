@@ -109,6 +109,8 @@ trait IInvoice extends IResourceObject {
     * Stripe will attempt to pay this invoice using the default source attached to the
     * customer. When sending an invoice, Stripe will email this invoice to the customer
     * with payment instructions.
+    *
+    * @deprecated This field has been renamed to collection_method and will be removed in a future API version.
     */
   var billing: charge_automatically | send_invoice
   /**
@@ -321,7 +323,7 @@ trait IInvoice extends IResourceObject {
   /**
     * The subscription that this invoice was prepared for, if any.
     */
-  var subscription: String | ISubscription
+  var subscription: String | ISubscription | Null
   /**
     * Only set for upcoming invoices that preview prorations. The time used to calculate prorations.
     */
@@ -409,7 +411,6 @@ object IInvoice {
     statement_descriptor: String,
     status: draft | open | paid | uncollectible | void,
     status_transitions: IStatusTransitions,
-    subscription: String | ISubscription,
     subscription_proration_date: Double,
     subtotal: Double,
     threshold_reason: IThresholdReason,
@@ -428,10 +429,11 @@ object IInvoice {
     hosted_invoice_url: String = null,
     invoice_pdf: String = null,
     payment_intent: IPaymentIntent = null,
+    subscription: String | ISubscription = null,
     tax: Int | Double = null,
     tax_percent: Int | Double = null
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(account_country = account_country, account_name = account_name, amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_phone = customer_phone, customer_shipping = customer_shipping, customer_tax_exempt = customer_tax_exempt, customer_tax_ids = customer_tax_ids, default_payment_method = default_payment_method, default_source = default_source, default_tax_rates = default_tax_rates, description = description, footer = footer, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, post_payment_credit_notes_amount = post_payment_credit_notes_amount, pre_payment_credit_notes_amount = pre_payment_credit_notes_amount, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, total_tax_amounts = total_tax_amounts, webhooks_delivered_at = webhooks_delivered_at)
+    val __obj = js.Dynamic.literal(account_country = account_country, account_name = account_name, amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_phone = customer_phone, customer_shipping = customer_shipping, customer_tax_exempt = customer_tax_exempt, customer_tax_ids = customer_tax_ids, default_payment_method = default_payment_method, default_source = default_source, default_tax_rates = default_tax_rates, description = description, footer = footer, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, post_payment_credit_notes_amount = post_payment_credit_notes_amount, pre_payment_credit_notes_amount = pre_payment_credit_notes_amount, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, total_tax_amounts = total_tax_amounts, webhooks_delivered_at = webhooks_delivered_at)
     __obj.updateDynamic("object")(`object`)
     if (charge != null) __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
@@ -445,6 +447,7 @@ object IInvoice {
     if (hosted_invoice_url != null) __obj.updateDynamic("hosted_invoice_url")(hosted_invoice_url)
     if (invoice_pdf != null) __obj.updateDynamic("invoice_pdf")(invoice_pdf)
     if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent)
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoice]

@@ -142,6 +142,8 @@ package object clientsPinpointemailMod {
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
   type TagValue = String
+  type TemplateArn = String
+  type TemplateData = String
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.REQUIRE

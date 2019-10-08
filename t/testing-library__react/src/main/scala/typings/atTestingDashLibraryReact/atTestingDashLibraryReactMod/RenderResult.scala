@@ -14,6 +14,7 @@ trait RenderResult[Q /* <: Queries */] extends js.Object {
   var container: HTMLElement = js.native
   def asFragment(): DocumentFragment = js.native
   def debug(): Unit = js.native
+  def debug(baseElement: js.Array[HTMLElement | DocumentFragment]): Unit = js.native
   def debug(baseElement: DocumentFragment): Unit = js.native
   def debug(baseElement: HTMLElement): Unit = js.native
   def rerender(ui: ReactElement): Unit = js.native

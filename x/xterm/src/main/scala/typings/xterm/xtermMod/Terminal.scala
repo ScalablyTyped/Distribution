@@ -574,22 +574,37 @@ class Terminal () extends IDisposable {
   @JSName("setOption")
   def setOption_wordSeparator(key: wordSeparator, value: String): Unit = js.native
   /**
-    * Writes text to the terminal.
-    * @param data The text to write to the terminal.
+    * Write data to the terminal.
+    * @param data The data to write to the terminal. This can either be raw
+    * bytes given as Uint8Array from the pty or a string. Raw bytes will always
+    * be treated as UTF-8 encoded, string data as UTF-16.
+    * @param callback Optional callback that fires when the data was processed
+    * by the parser.
     */
   def write(data: String): Unit = js.native
+  def write(data: String, callback: js.Function0[Unit]): Unit = js.native
+  def write(data: Uint8Array): Unit = js.native
+  def write(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
   /**
-    * Writes UTF8 data to the terminal. This has a slight performance advantage
-    * over the string based write method due to lesser data conversions needed
-    * on the way from the pty to xterm.js.
+    * Write UTF8 data to the terminal.
     * @param data The data to write to the terminal.
+    * @param callback Optional callback when data was processed.
+    * @deprecated use `write` instead
     */
   def writeUtf8(data: Uint8Array): Unit = js.native
+  def writeUtf8(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
   /**
-    * Writes text to the terminal, followed by a break line character (\n).
-    * @param data The text to write to the terminal.
+    * Writes data to the terminal, followed by a break line character (\n).
+    * @param data The data to write to the terminal. This can either be raw
+    * bytes given as Uint8Array from the pty or a string. Raw bytes will always
+    * be treated as UTF-8 encoded, string data as UTF-16.
+    * @param callback Optional callback that fires when the data was processed
+    * by the parser.
     */
   def writeln(data: String): Unit = js.native
+  def writeln(data: String, callback: js.Function0[Unit]): Unit = js.native
+  def writeln(data: Uint8Array): Unit = js.native
+  def writeln(data: Uint8Array, callback: js.Function0[Unit]): Unit = js.native
 }
 
 /* static members */

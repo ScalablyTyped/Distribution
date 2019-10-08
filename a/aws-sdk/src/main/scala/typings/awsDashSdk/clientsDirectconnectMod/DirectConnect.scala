@@ -361,12 +361,12 @@ trait DirectConnect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ Connection, Unit]
   ): Request[Connection, AWSError] = js.native
   /**
-    * Deletes the specified Direct Connect gateway. You must first delete all virtual interfaces that are attached to the Direct Connect gateway and disassociate all virtual private gateways that are associated with the Direct Connect gateway.
+    * Deletes the specified Direct Connect gateway. You must first delete all virtual interfaces that are attached to the Direct Connect gateway and disassociate all virtual private gateways associated with the Direct Connect gateway.
     */
   def deleteDirectConnectGateway(): Request[DeleteDirectConnectGatewayResult, AWSError] = js.native
   def deleteDirectConnectGateway(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDirectConnectGatewayResult, Unit]): Request[DeleteDirectConnectGatewayResult, AWSError] = js.native
   /**
-    * Deletes the specified Direct Connect gateway. You must first delete all virtual interfaces that are attached to the Direct Connect gateway and disassociate all virtual private gateways that are associated with the Direct Connect gateway.
+    * Deletes the specified Direct Connect gateway. You must first delete all virtual interfaces that are attached to the Direct Connect gateway and disassociate all virtual private gateways associated with the Direct Connect gateway.
     */
   def deleteDirectConnectGateway(params: DeleteDirectConnectGatewayRequest): Request[DeleteDirectConnectGatewayResult, AWSError] = js.native
   def deleteDirectConnectGateway(
@@ -374,14 +374,14 @@ trait DirectConnect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDirectConnectGatewayResult, Unit]
   ): Request[DeleteDirectConnectGatewayResult, AWSError] = js.native
   /**
-    * Deletes the association between the specified Direct Connect gateway and virtual private gateway.
+    * Deletes the association between the specified Direct Connect gateway and virtual private gateway. We recommend that you specify the associationID to delete the association. Alternatively, if you own virtual gateway and a Direct Connect gateway association, you can specify the virtualGatewayId and directConnectGatewayId to delete an association.
     */
   def deleteDirectConnectGatewayAssociation(): Request[DeleteDirectConnectGatewayAssociationResult, AWSError] = js.native
   def deleteDirectConnectGatewayAssociation(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDirectConnectGatewayAssociationResult, Unit]
   ): Request[DeleteDirectConnectGatewayAssociationResult, AWSError] = js.native
   /**
-    * Deletes the association between the specified Direct Connect gateway and virtual private gateway.
+    * Deletes the association between the specified Direct Connect gateway and virtual private gateway. We recommend that you specify the associationID to delete the association. Alternatively, if you own virtual gateway and a Direct Connect gateway association, you can specify the virtualGatewayId and directConnectGatewayId to delete an association.
     */
   def deleteDirectConnectGatewayAssociation(params: DeleteDirectConnectGatewayAssociationRequest): Request[DeleteDirectConnectGatewayAssociationResult, AWSError] = js.native
   def deleteDirectConnectGatewayAssociation(

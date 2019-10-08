@@ -21,6 +21,9 @@ object yamlStrings {
   sealed trait BIN extends js.Object
   
   @js.native
+  sealed trait BLANK_LINE extends js.Object
+  
+  @js.native
   sealed trait BLOCK_FOLDED extends js.Object
   
   @js.native
@@ -132,6 +135,8 @@ object yamlStrings {
   def ALIAS: ALIAS = "ALIAS".asInstanceOf[ALIAS]
   @scala.inline
   def BIN: BIN = "BIN".asInstanceOf[BIN]
+  @scala.inline
+  def BLANK_LINE: BLANK_LINE = "BLANK_LINE".asInstanceOf[BLANK_LINE]
   @scala.inline
   def BLOCK_FOLDED: BLOCK_FOLDED = "BLOCK_FOLDED".asInstanceOf[BLOCK_FOLDED]
   @scala.inline

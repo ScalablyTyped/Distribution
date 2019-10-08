@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * A client-side equivalent of the ASPxDockManager
-object.
+  * A client-side equivalent of the ASPxDockManager object.
   */
 @JSGlobal("ASPxClientDockManager")
 @js.native

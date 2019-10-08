@@ -14,7 +14,11 @@ trait ElasticsearchDestinationDescription extends js.Object {
     */
   var CloudWatchLoggingOptions: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.CloudWatchLoggingOptions] = js.undefined
   /**
-    * The ARN of the Amazon ES domain. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The endpoint to use when communicating with the cluster. Kinesis Data Firehose uses either this ClusterEndpoint or the DomainARN field to send data to Amazon ES.
+    */
+  var ClusterEndpoint: js.UndefOr[ElasticsearchClusterEndpoint] = js.undefined
+  /**
+    * The ARN of the Amazon ES domain. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces. Kinesis Data Firehose uses either ClusterEndpoint or DomainARN to send data to Amazon ES.
     */
   var DomainARN: js.UndefOr[ElasticsearchDomainARN] = js.undefined
   /**
@@ -56,6 +60,7 @@ object ElasticsearchDestinationDescription {
   def apply(
     BufferingHints: ElasticsearchBufferingHints = null,
     CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
+    ClusterEndpoint: ElasticsearchClusterEndpoint = null,
     DomainARN: ElasticsearchDomainARN = null,
     IndexName: ElasticsearchIndexName = null,
     IndexRotationPeriod: ElasticsearchIndexRotationPeriod = null,
@@ -69,6 +74,7 @@ object ElasticsearchDestinationDescription {
     val __obj = js.Dynamic.literal()
     if (BufferingHints != null) __obj.updateDynamic("BufferingHints")(BufferingHints)
     if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions)
+    if (ClusterEndpoint != null) __obj.updateDynamic("ClusterEndpoint")(ClusterEndpoint)
     if (DomainARN != null) __obj.updateDynamic("DomainARN")(DomainARN)
     if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
     if (IndexRotationPeriod != null) __obj.updateDynamic("IndexRotationPeriod")(IndexRotationPeriod.asInstanceOf[js.Any])

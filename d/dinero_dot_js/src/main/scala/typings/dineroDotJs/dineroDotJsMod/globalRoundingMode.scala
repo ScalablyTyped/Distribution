@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("dinero.js", "globalRoundingMode")
 @js.native
-object globalRoundingMode extends TopLevel[String]
+object globalRoundingMode extends TopLevel[RoundingMode]
 

@@ -38,7 +38,7 @@ trait EndpointResponse extends js.Object {
     */
   var EffectiveDate: js.UndefOr[__string] = js.undefined
   /**
-    * Not used.
+    * Specifies whether messages or push notifications are sent to the endpoint. Possible values are: ACTIVE, messages are sent to the endpoint; and, INACTIVE, messages aren’t sent to the endpoint. Amazon Pinpoint automatically sets this value to ACTIVE when you create an endpoint or update an existing endpoint. Amazon Pinpoint automatically sets this value to INACTIVE if you update another endpoint that has the same address specified by the Address property.
     */
   var EndpointStatus: js.UndefOr[__string] = js.undefined
   /**

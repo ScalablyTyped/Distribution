@@ -14,7 +14,7 @@ trait NewPublicVirtualInterfaceAllocation extends js.Object {
     */
   var amazonAddress: js.UndefOr[AmazonAddress] = js.undefined
   /**
-    * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
+    * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration. The valid values are 1-2147483647.
     */
   var asn: ASN
   /**
@@ -30,7 +30,7 @@ trait NewPublicVirtualInterfaceAllocation extends js.Object {
     */
   var routeFilterPrefixes: js.UndefOr[RouteFilterPrefixList] = js.undefined
   /**
-    * Any tags assigned to the public virtual interface to be provisioned on a connection.
+    * The tags associated with the public virtual interface.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   /**

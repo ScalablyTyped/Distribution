@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GCMChannelRequest extends js.Object {
   /**
-    * The API key, also referred to as a server key, that you received from Google to communicate with Google services.
+    * The Web API Key, also referred to as an API_KEY or server key, that you received from Google to communicate with Google services.
     */
   var ApiKey: __string
   /**

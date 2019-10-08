@@ -1,0 +1,14 @@
+package typings.atStorybookVue
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object atStorybookVueStrings {
+  @js.native
+  sealed trait STORYBOOK_WRAPS extends js.Object
+  
+  @scala.inline
+  def STORYBOOK_WRAPS: STORYBOOK_WRAPS = "STORYBOOK_WRAPS".asInstanceOf[STORYBOOK_WRAPS]
+}
+

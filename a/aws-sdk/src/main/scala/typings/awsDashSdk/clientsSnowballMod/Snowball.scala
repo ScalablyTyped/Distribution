@@ -169,6 +169,19 @@ trait Snowball extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetSnowballUsageResult, Unit]
   ): Request[GetSnowballUsageResult, AWSError] = js.native
   /**
+    * Returns an Amazon S3 presigned URL for an update file associated with a specified JobId.
+    */
+  def getSoftwareUpdates(): Request[GetSoftwareUpdatesResult, AWSError] = js.native
+  def getSoftwareUpdates(callback: js.Function2[/* err */ AWSError, /* data */ GetSoftwareUpdatesResult, Unit]): Request[GetSoftwareUpdatesResult, AWSError] = js.native
+  /**
+    * Returns an Amazon S3 presigned URL for an update file associated with a specified JobId.
+    */
+  def getSoftwareUpdates(params: GetSoftwareUpdatesRequest): Request[GetSoftwareUpdatesResult, AWSError] = js.native
+  def getSoftwareUpdates(
+    params: GetSoftwareUpdatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSoftwareUpdatesResult, Unit]
+  ): Request[GetSoftwareUpdatesResult, AWSError] = js.native
+  /**
     * Returns an array of JobListEntry objects of the specified length. Each JobListEntry object is for a job in the specified cluster and contains a job's state, a job's ID, and other information.
     */
   def listClusterJobs(): Request[ListClusterJobsResult, AWSError] = js.native
@@ -195,12 +208,12 @@ trait Snowball extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListClustersResult, Unit]
   ): Request[ListClustersResult, AWSError] = js.native
   /**
-    * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on EDGE, EDGE_C, and EDGE_CG devices. For more information on compatible AMIs, see Using Amazon EC2 Compute Instances in the AWS Snowball Developer Guide.
+    * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snowball Edge device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
     */
   def listCompatibleImages(): Request[ListCompatibleImagesResult, AWSError] = js.native
   def listCompatibleImages(callback: js.Function2[/* err */ AWSError, /* data */ ListCompatibleImagesResult, Unit]): Request[ListCompatibleImagesResult, AWSError] = js.native
   /**
-    * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on EDGE, EDGE_C, and EDGE_CG devices. For more information on compatible AMIs, see Using Amazon EC2 Compute Instances in the AWS Snowball Developer Guide.
+    * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snowball Edge device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
     */
   def listCompatibleImages(params: ListCompatibleImagesRequest): Request[ListCompatibleImagesResult, AWSError] = js.native
   def listCompatibleImages(

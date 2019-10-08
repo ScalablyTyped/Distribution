@@ -792,6 +792,7 @@
 | [buffer-from](./b/buffer-from) | A  | buffer, buffer from |
 | [buffer-reader](./b/buffer-reader) | a reader for nodejs buffer | - |
 | [buffer-xor](./b/buffer-xor) | A simple module for bitwise-xor on buffers | bits, bitwise, buffer, buffer-xor, crypto, inline, math, memory, performance, xor |
+| [bufferhelper](./b/bufferhelper) | Concat buffer correctly. | Buffer |
 | [buffers](./b/buffers) | Treat a collection of Buffers as a single contiguo | - |
 | [bufferstream](./b/bufferstream) | painless stream buffering and cutting | buffer, buffers, stream, streams |
 | [bugsnag-js](./b/bugsnag-js) | Automatically detect JavaScript errors, collect de | exception, bugsnag, error, JavaScript, browsers, monitoring, reporting, client-side |
@@ -1176,6 +1177,7 @@
 | [core-decorators](./c/core-decorators) | Library of JavaScript stage-0 decorators (aka ES20 | es6, es7, es2015, es2016, babel, decorators, override, deprecated, java, annotations, autobind, react, angular, lodash, mixin, mixins |
 | [core-js](./c/core-js) | Standard library | ES3, ES5, ES6, ES7, ES2015, ES2016, ES2017, ES2018, ES2019, ECMAScript 3, ECMAScript 5, ECMAScript 6, ECMAScript 7, ECMAScript 2015, ECMAScript 2016, ECMAScript 2017, ECMAScript 2018, ECMAScript 2019, Harmony, Strawman, Map, Set, WeakMap, WeakSet, Promise, Observable, Symbol, TypedArray, URL, URLSearchParams, queueMicrotask, setImmediate, polyfill, ponyfill, shim |
 | [core-object](./c/core-object) | A lightweight implementation of OOP Class in JavaS | - |
+| [corejs-upgrade-webpack-pl](./c/corejs-upgrade-webpack-plugin) | a webpack plugin that transforms core-js v2 paths  | core-js, path, resolve, transform, webpack |
 | [correlation-id](./c/correlation-id) | Correlation id for node.js | logging, correlation, debug |
 | [cors](./c/cors) | Node.js CORS middleware | cors, express, connect, middleware |
 | [cosmiconfig](./c/cosmiconfig) | Find and load configuration from a package.json pr | load, configuration, config |
@@ -1255,6 +1257,7 @@
 | [cuid](./c/cuid) | Collision-resistant ids optimized for horizontal s | guid, id, uid, unique id, uuid |
 | [cuint](./c/cuint) | Unsigned integers for Javascript | C, unsigned, integer, 32bits, 64bits |
 | [currency-formatter](./c/currency-formatter) | A simple Javascript utility that helps you to disp | format, currency, money |
+| [current-git-branch](./c/current-git-branch) | A tool to check if files are added in a git reposi | is, git, added, HEAD, repo, is-git, exists |
 | [custom-error-generator](./c/custom-error-generator) | Custom errors and exceptions in Node.js | error, errors, error factory, custom error |
 | [custom-functions-runtime](./c/custom-functions-runtime) | - | - |
 | [cwd](./c/cwd) | Easily get the CWD (current working directory) of  | current, cwd, dir, directory, file, filepath, path, paths, process, process.cwd, resolve, resolved, working |
@@ -2164,6 +2167,7 @@
 | [fullname](./f/fullname) | Get the fullname of the current user | name, fullname, realname, full name, first name, surname, full, real, given, user, gecos, pwuid, uid |
 | [fullpage_dot_js](./f/fullpage_dot_js) | Create beautiful fullscreen scrolling websites | jquery, javacript, scrolling, single_page, onepage, fullpage, fullpagejs, one_page, sliding, snap, scroll, swipe, mousewheel, sections, slides, slidehow |
 | [fundamental-react](./f/fundamental-react) | SAP Fiori Fundamentals, implemented in React | - |
+| [fuse_dot_js](./f/fuse_dot_js) | Lightweight fuzzy-search | fuzzy, bitap |
 | [fusioncharts](./f/fusioncharts) | FusionCharts JavaScript charting framework | fusioncharts, charts, dataviz, graphs, visualization, js-charts, javascript-charts, dashboards, data-stories, bar-charts, pie-charts, line-charts, area-charts, column-charts, gantt-chart |
 | [fuzzaldrin](./f/fuzzaldrin) | Fuzzy filtering and string scoring | fuzzy, filter, stringscore |
 | [fuzzaldrin-plus](./f/fuzzaldrin-plus) | Fuzzy filtering and string similarity scoring - co | fuzzy, approximate, string, matching, filter, search, highlight, sublime |
@@ -2863,6 +2867,7 @@
 | [imap-simple](./i/imap-simple) | Wrapper over node-imap, providing a simpler api fo | imap, node-imap |
 | [imgur-rest-api](./i/imgur-rest-api) | - | - |
 | [immediate](./i/immediate) | A cross browser microtask library | - |
+| [immer](./i/immer) | Create your next immutable state by mutating the c | immutable, mutable, copy-on-write |
 | [immutability-helper](./i/immutability-helper) | mutate a copy of data without changing the origina | immutability |
 | [immutable](./i/immutable) | Immutable Data Collections | immutable, persistent, lazy, data, datastructure, functional, collection, stateless, sequence, iteration |
 | [imperium](./i/imperium) | Imperium is a role-based user's authorizations (AC | node acl, acl, auth, authorization, user acl, security, imperium |
@@ -3773,6 +3778,7 @@
 | [lil-uuid](./l/lil-uuid) | UUID v4 generator and validator (RFC4122 compliant | lil, tiny, micro, uuid, generator, v4, validator, unique, identifier, user |
 | [lime-js](./l/lime-js) | JavaScript LIME implementation | LIME, MessagingHub, TypeScript, TCP, WebSocket, WS |
 | [line-by-line](./l/line-by-line) | A NodeJS module that helps you reading large text  | line, file, reader, fs |
+| [line-column](./l/line-column) | Convert efficiently index to/from line-column in a | string, index, line, column, linecol, position |
 | [line-column-path](./l/line-column-path) | Parse and stringify file paths with line and colum | file, filepath, line, column, path, editor, position, parse, stringify, parsing, decode, encode, format |
 | [line-reader](./l/line-reader) | Asynchronous, buffered, line-by-line file/stream r | file, line, reader, scanner |
 | [linear-gradient](./l/linear-gradient) | Calculates the color representing a number based o | - |
@@ -5596,6 +5602,7 @@
 | [react-dom-factories](./r/react-dom-factories) | React package for DOM factory methods. | react |
 | [react-dotdotdot](./r/react-dotdotdot) | Multiline text ellipsis for react | - |
 | [react-draft-wysiwyg](./r/react-draft-wysiwyg) | A wysiwyg on top of DraftJS. | - |
+| [react-draggable](./r/react-draggable) | React draggable component | react, draggable, react-component |
 | [react-draggable-list](./r/react-draggable-list) | Make a list of draggable collapsible items. | react, react-component, animation, reorder, move, drag-and-drop, draggable |
 | [react-dragtastic](./r/react-dragtastic) | A simple drag and drop library for React which use | - |
 | [react-dropzone](./r/react-dropzone) | Simple HTML5 drag-drop zone with React.js | react-component, react, drag, drop, upload |
@@ -5654,6 +5661,7 @@
 | [react-holder](./r/react-holder) | React image Holder (with holder.js) | react, image, placeholder, holder.js |
 | [react-hooks-helper](./r/react-hooks-helper) | A custom React Hooks library that gives you custom | react-hooks, hooks, react, utils, lib, form, step, wizard |
 | [react-hot-loader](./r/react-hot-loader) | Tweak React components in real time. | react, javascript, webpack, hmr, livereload, live, edit, hot, loader, reload |
+| [react-hotkeys](./r/react-hotkeys) | A declarative library for handling hotkeys and foc | react-component, hotkeys, focus, react |
 | [react-html-parser](./r/react-html-parser) | Parse HTML into React components | react, html, htmlparser, htmlparser2, inner html, dangerouslySetInnerHTML |
 | [react-hyperscript](./r/react-hyperscript) | Hyperscript syntax for React.js markup | react, react.js, hyperscript, markup, dom |
 | [react-i18next](./r/react-i18next) | Internationalization for react done right. Using t | i18next, internationalization, i18n, translation, localization, l10n, globalization, react, reactjs |
@@ -6785,22 +6793,22 @@
 | [storybook__addon-centered](./s/storybook__addon-centered) | Storybook decorator to center components | addon, storybook |
 | [storybook__addon-info](./s/storybook__addon-info) | A Storybook addon to show additional information f | addon, storybook |
 | [storybook__addon-jest](./s/storybook__addon-jest) | React storybook addon that show component jest rep | addon, jest, react, report, results, storybook, unit-testing |
-| [storybook__addon-knobs](./s/storybook__addon-knobs) | Storybook Addon Prop Editor Component | addon, storybook |
 | [storybook__addon-links](./s/storybook__addon-links) | Story Links addon for storybook | addon, storybook |
 | [storybook__addon-notes](./s/storybook__addon-notes) | Write notes for your Storybook stories. | addon, notes, storybook |
 | [storybook__addon-options](./s/storybook__addon-options) | Options addon for storybook | addon, storybook |
 | [storybook__addon-storysho](./s/storybook__addon-storyshots) | StoryShots is a Jest Snapshot Testing Addon for St | addon, storybook |
 | [storybook__addon-storysho](./s/storybook__addon-storyshots-puppeteer) | Image snappshots addition to StoryShots base on pu | addon, storybook |
 | [storybook__addon-viewport](./s/storybook__addon-viewport) | Storybook addon to change the viewport size to mob | addon, storybook |
-| [storybook__addons](./s/storybook__addons) | Storybook addons store | storybook |
+| [storybook__channel-postme](./s/storybook__channel-postmessage) | Storybook PostMessage Channel is a channel for Sto | storybook |
+| [storybook__channel-websoc](./s/storybook__channel-websocket) | Storybook Websocket Channel is a channel for Story | storybook |
 | [storybook__channels](./s/storybook__channels) | Storybook Channel is similar to an EventEmitter. C | storybook |
 | [storybook__client-logger](./s/storybook__client-logger) | Any client-side logging that is done through story | storybook |
 | [storybook__core-events](./s/storybook__core-events) | Event names used in storybook core | storybook |
 | [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio | storybook |
+| [storybook__node-logger](./s/storybook__node-logger) | Any node logging that is done through storybook sh | storybook |
 | [storybook__polymer](./s/storybook__polymer) | Storybook for Polymer: Develop Polymer components  | storybook |
 | [storybook__preact](./s/storybook__preact) | Storybook for Preact: Develop Preact Component in  | storybook |
 | [storybook__react](./s/storybook__react) | Storybook for React: Develop React Component in is | storybook |
-| [storybook__react-native](./s/storybook__react-native) | A better way to develop React Native Components fo | react, react-native, storybook |
 | [storybook__router](./s/storybook__router) | Core Storybook Router | storybook |
 | [storybook__vue](./s/storybook__vue) | Storybook for Vue: Develop Vue Component in isolat | storybook |
 | [strange](./s/strange) | Range aka interval object. Supports exclusive and  | range, ranges, interval, interval-tree, bst, integer, integers, sort, bounds, math |
@@ -6985,6 +6993,7 @@
 | [teechart](./t/teechart) | - | - |
 | [teeny-request](./t/teeny-request) | Like request, but smaller. | request, node-fetch, fetch |
 | [telebot](./t/telebot) | The easy way to write Telegram bots. | bot, api, wrapper, telebot, telegram, telegram api, telegram bot, telegram bot api |
+| [telejson](./t/telejson) | A library for teleporting rich data to another pla | JSON, parse, stringify, cyclic, cyclical, function, date, regex |
 | [temp](./t/temp) | Temporary files and directories | temporary, tmp, temp, tempdir, tempfile, tmpdir, tmpfile |
 | [temp-dir](./t/temp-dir) | Get the real path of the system temp directory | temp, tmpdir, os, system, real, path, realpath, resolved, temporary, directory, folder |
 | [temp-file](./t/temp-file) | typescript export function getTempName(prefix?: st | - |
@@ -7085,6 +7094,7 @@
 | [tlds](./t/tlds) | List of TLDs | data, tld, tlds, top, level, domains |
 | [tmi_dot_js](./t/tmi_dot_js) | Javascript library for the Twitch Messaging Interf | tmi, twitch, twitch.tv, stream, broadcast, message, messaging, interface, subscriber, websocket, ws, bot, robot |
 | [tmp](./t/tmp) | Temporary file and directory creator | temporary, tmp, temp, tempdir, tempfile, tmpdir, tmpfile |
+| [tmp-promise](./t/tmp-promise) | The tmp package with promises support and disposer | tmp, promise, tempfile, mkdtemp, mktemp |
 | [to-absolute-glob](./t/to-absolute-glob) | Make a glob pattern absolute, ensuring that negati | absolute, file, filepath, glob, negate, negative, path, pattern, resolve, to |
 | [to-camel-case](./t/to-camel-case) | Convert a string to camel case. | camel, case, camelcase, string |
 | [to-markdown](./t/to-markdown) | HTML-to-Markdown converter | markdown |
