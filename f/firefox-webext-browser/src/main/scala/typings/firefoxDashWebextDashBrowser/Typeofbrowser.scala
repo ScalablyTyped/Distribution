@@ -8,6 +8,14 @@ trait Typeofbrowser extends js.Object {
   /** Not allowed in: Content scripts, Devtools pages */
   val _manifest: js.Any
   /**
+    * Monitor extension activity
+    *
+    * Permissions: `activityLog`
+    *
+    * Not allowed in: Content scripts, Devtools pages
+    */
+  val activityLog: TypeofactivityLog
+  /**
     * Permissions: `alarms`
     *
     * Not allowed in: Content scripts, Devtools pages
@@ -47,6 +55,14 @@ trait Typeofbrowser extends js.Object {
     * Not allowed in: Content scripts, Devtools pages
     */
   val browsingData: TypeofbrowsingData
+  /**
+    * This API provides the ability detect the captive portal state of the users connection.
+    *
+    * Permissions: `captivePortal`
+    *
+    * Not allowed in: Content scripts, Devtools pages
+    */
+  val captivePortal: TypeofcaptivePortal
   /**
     * Offers the ability to write to the clipboard. Reading is not supported because the clipboard can already be read
     * through the standard web platform APIs.
@@ -190,6 +206,21 @@ trait Typeofbrowser extends js.Object {
     */
   val menus: Typeofmenus
   /**
+    * This API provides the ability to determine the status of and detect changes in the network connection. This API can
+    * only be used in privileged extensions.
+    *
+    * Permissions: `networkStatus`
+    *
+    * Not allowed in: Content scripts, Devtools pages
+    */
+  val networkStatus: TypeofnetworkStatus
+  /**
+    * Normandy Study API
+    *
+    * Permissions: `normandyAddonStudy`
+    */
+  val normandyAddonStudy: TypeofnormandyAddonStudy
+  /**
     * Permissions: `notifications`
     *
     * Not allowed in: Content scripts, Devtools pages
@@ -290,7 +321,7 @@ trait Typeofbrowser extends js.Object {
     * Use the `browser.telemetry` API to send telemetry data to the Mozilla Telemetry service. Restricted to Mozilla
     * privileged webextensions.
     *
-    * Permissions: `telemetry`, `mozillaAddons`
+    * Permissions: `telemetry`
     *
     * Not allowed in: Content scripts, Devtools pages
     */
@@ -315,6 +346,15 @@ trait Typeofbrowser extends js.Object {
     * Not allowed in: Content scripts, Devtools pages
     */
   val types: js.Any
+  /**
+    * Use the `browser.urlbar` API to experiment with new features in the URLBar. Restricted to Mozilla privileged
+    * WebExtensions.
+    *
+    * Permissions: `urlbar`
+    *
+    * Not allowed in: Content scripts, Devtools pages
+    */
+  val urlbar: Typeofurlbar
   /**
     * Manifest keys: `user_scripts`, `user_scripts`
     *
@@ -351,11 +391,13 @@ object Typeofbrowser {
   @scala.inline
   def apply(
     _manifest: js.Any,
+    activityLog: TypeofactivityLog,
     alarms: Typeofalarms,
     bookmarks: Typeofbookmarks,
     browserAction: TypeofbrowserAction,
     browserSettings: TypeofbrowserSettings,
     browsingData: TypeofbrowsingData,
+    captivePortal: TypeofcaptivePortal,
     clipboard: Typeofclipboard,
     commands: Typeofcommands,
     contentScripts: TypeofcontentScripts,
@@ -377,6 +419,8 @@ object Typeofbrowser {
     idle: Typeofidle,
     management: Typeofmanagement,
     menus: Typeofmenus,
+    networkStatus: TypeofnetworkStatus,
+    normandyAddonStudy: TypeofnormandyAddonStudy,
     notifications: Typeofnotifications,
     omnibox: Typeofomnibox,
     pageAction: TypeofpageAction,
@@ -394,12 +438,13 @@ object Typeofbrowser {
     theme: Typeoftheme,
     topSites: TypeoftopSites,
     types: js.Any,
+    urlbar: Typeofurlbar,
     userScripts: TypeofuserScripts,
     webNavigation: TypeofwebNavigation,
     webRequest: TypeofwebRequest,
     windows: Typeofwindows
   ): Typeofbrowser = {
-    val __obj = js.Dynamic.literal(_manifest = _manifest, alarms = alarms, bookmarks = bookmarks, browserAction = browserAction, browserSettings = browserSettings, browsingData = browsingData, clipboard = clipboard, commands = commands, contentScripts = contentScripts, contextMenus = contextMenus, contextualIdentities = contextualIdentities, cookies = cookies, devtools = devtools, dns = dns, downloads = downloads, events = events, experiments = experiments, extension = extension, extensionTypes = extensionTypes, find = find, geckoProfiler = geckoProfiler, history = history, i18n = i18n, identity = identity, idle = idle, management = management, menus = menus, notifications = notifications, omnibox = omnibox, pageAction = pageAction, permissions = permissions, pkcs11 = pkcs11, privacy = privacy, proxy = proxy, runtime = runtime, search = search, sessions = sessions, sidebarAction = sidebarAction, storage = storage, tabs = tabs, telemetry = telemetry, theme = theme, topSites = topSites, types = types, userScripts = userScripts, webNavigation = webNavigation, webRequest = webRequest, windows = windows)
+    val __obj = js.Dynamic.literal(_manifest = _manifest, activityLog = activityLog, alarms = alarms, bookmarks = bookmarks, browserAction = browserAction, browserSettings = browserSettings, browsingData = browsingData, captivePortal = captivePortal, clipboard = clipboard, commands = commands, contentScripts = contentScripts, contextMenus = contextMenus, contextualIdentities = contextualIdentities, cookies = cookies, devtools = devtools, dns = dns, downloads = downloads, events = events, experiments = experiments, extension = extension, extensionTypes = extensionTypes, find = find, geckoProfiler = geckoProfiler, history = history, i18n = i18n, identity = identity, idle = idle, management = management, menus = menus, networkStatus = networkStatus, normandyAddonStudy = normandyAddonStudy, notifications = notifications, omnibox = omnibox, pageAction = pageAction, permissions = permissions, pkcs11 = pkcs11, privacy = privacy, proxy = proxy, runtime = runtime, search = search, sessions = sessions, sidebarAction = sidebarAction, storage = storage, tabs = tabs, telemetry = telemetry, theme = theme, topSites = topSites, types = types, urlbar = urlbar, userScripts = userScripts, webNavigation = webNavigation, webRequest = webRequest, windows = windows)
   
     __obj.asInstanceOf[Typeofbrowser]
   }

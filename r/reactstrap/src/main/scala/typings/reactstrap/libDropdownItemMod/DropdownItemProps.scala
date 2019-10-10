@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactType
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.std.HTMLElement
@@ -21,8 +22,8 @@ trait DropdownItemProps
   var header: js.UndefOr[Boolean] = js.undefined
   var href: js.UndefOr[String] = js.undefined
   @JSName("onClick")
-  var onClick_DropdownItemProps: js.UndefOr[js.Function1[/* event */ MouseEvent[_, NativeMouseEvent], Unit]] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var onClick_DropdownItemProps: js.UndefOr[MouseEventHandler[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var toggle: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -38,8 +39,8 @@ object DropdownItemProps {
     divider: js.UndefOr[Boolean] = js.undefined,
     header: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
-    onClick: /* event */ MouseEvent[_, NativeMouseEvent] => Unit = null,
-    tag: ReactType[_] = null,
+    onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
+    tag: String | ReactType[_] = null,
     toggle: js.UndefOr[Boolean] = js.undefined
   ): DropdownItemProps = {
     val __obj = js.Dynamic.literal()

@@ -1160,13 +1160,17 @@
 [info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/typings/shared) / TsDeclTypeAlias(ReactCreateElementParam) / TsTypeLookup() / TsTypeRef() / TsTypeObject())] 
 [info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/typings/shared) / TsDeclTypeAlias(ReactCreateElementParam) / TsTypeLookup() / TsTypeRef() / TsTypeObject())] 
 [info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/typings/shared) / TsDeclTypeAlias(ReactCreateElementParam) / TsTypeLookup() / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Key) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react) / TsDeclTypeAlias(DataTableCustomHeaderProps) / TsTypeParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_SelectedItem) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/ComboBox/ComboBox) / TsDeclInterface(ComboBoxProps) / TsMemberProperty(onChange) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cells) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/DataTable/DataTable) / TsDeclTypeAlias(DenormalizedRow) / TsTypeIntersect() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Key) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/DataTable/DataTable) / TsDeclInterface(DataTableCustomHeaderProps) / TsTypeParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Header) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/DataTable/DataTable) / TsDeclInterface(DataTableCell) / TsMemberProperty(info) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Key) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/DataTable) / TsDeclTypeAlias(DataTableCustomHeaderProps) / TsTypeParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ASC) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/DataTable/state/sorting) / TsDeclTypeAlias(DataTableSortStates) / TsTypeRef() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Page) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/Pagination/Pagination) / TsDeclInterface(PaginationProps) / TsMemberFunction(onChange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Format) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/SearchLayoutButton/SearchLayoutButton) / TsDeclInterface(SearchLayoutButtonProps) / TsMemberProperty(onChangeFormat) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Value) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/Slider/Slider) / TsDeclInterface(SliderProps) / TsMemberProperty(onRelease) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Open) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/Tooltip/Tooltip) / TsDeclInterface(TooltipProps) / TsMemberProperty(onChange) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Fn_A) [id => carbon-components-react, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/typings/shared) / TsDeclTypeAlias(ReactCreateElementParam) / TsTypeLookup() / TsTypeRef() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => carbon-components-react, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing carbon-components-react [id => carbon-components-react, phase => scala.js] 
@@ -1197,6 +1201,7 @@
 [info ] ImportType.scala:245 Failed type conversion: std.Parameters<carbon-components-react.Fn_A>[0] [id => carbon-components-react, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/typings/shared) / TsDeclTypeAlias(ReactCreateElementParam) / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: carbon-components-react.carbon-components-react/typings/shared.ReactAnchorAttr<std.HTMLAnchorElement>['href'] [id => carbon-components-react, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/Tab/Tab) / TsDeclInterface(TabCustomAnchorProvidedProps) / TsMemberProperty(href) / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:245 Failed type conversion: carbon-components-react.carbon-components-react/lib/components/RadioTile/RadioTile.RadioTileProps['name'] [id => carbon-components-react, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(carbon-components-react/lib/components/RadioTile/RadioTile) / TsDeclInterface(RadioTileProps) / TsMemberProperty(onChange) / TsTypeFunction() / TsFunParam() / TsTypeLookup())] 
+[info ] ImportType.scala:245 Failed type conversion: H['key'] [id => carbon-components-react, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_Header) / TsMemberProperty(header) / TsTypeLookup())] 
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 
 - typings.react.reactMod.DeprecatedLifecycle because Already inherited
 - typings.react.reactMod.NewLifecycle because Already inherited
@@ -1221,15 +1226,53 @@
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(carbonDashComponentsDashReact) / Name(Fn_A) [id => carbon-components-react, phase => scala.js, this => Name(typings) / Name(carbonDashComponentsDashReact) / Name(Fn_A)] 
 [debug] PhaseRunner.scala:84 Success [id => carbon-components-react, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building carbon-components-react... [id => carbon-components-react, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E2] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsDataTableTableSelectAllMod/InheritedProps.scala:37:5
+[error] Phase3Compile.scala:240 [E] [E10] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellSwitcherItemMod/package.scala:12:8
+[E]       illegal cyclic reference involving type Omit
+[E]       L12:   type SwitcherItemProps[E /* <: js.Object */] = (Omit[LinkProps[E, E], tabIndex]) with SwitcherItemPropsBase
+[E]                   ^
+[E] [E9] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellSwitcherItemMod/default.scala:14:7
+[E]      illegal cyclic reference involving type Omit
+[E]      L14:   def apply[E /* <: js.Object */](props: PropsWithChildren[SwitcherItemProps[E]], ref: Ref[HTMLElement]): ReactElement | Null = js.native
+[E]                 ^
+[E] [E8] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellMod.scala:77:7
+[E]      illegal cyclic reference involving type Omit
+[E]      L77:   def SwitcherItem[E /* <: js.Object */](props: PropsWithChildren[SwitcherItemProps[E]], ref: Ref[HTMLElement]): ReactElement | Null = js.native
+[E]                 ^
+[E] [E7] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellMod.scala:73:7
+[E]      illegal cyclic reference involving type Omit
+[E]      L73:   def HeaderMenuItem[E /* <: js.Object */](props: PropsWithChildren[HeaderMenuItemProps[E]], ref: Ref[HTMLElement]): ReactElement | Null = js.native
+[E]                 ^
+[E] [E6] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellHeaderMenuItemMod.scala:30:8
+[E]      illegal cyclic reference involving type Omit
+[E]      L30:   type HeaderMenuItemProps[E /* <: js.Object */] = (Omit[LinkProps[E, E], ExcludedAttributes]) with HeaderMenuItemPropsBase
+[E]                  ^
+[E] [E5] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellHeaderMenuItemMod.scala:29:7
+[E]      illegal cyclic reference involving type Omit
+[E]      L29:   def default[E /* <: js.Object */](props: PropsWithChildren[HeaderMenuItemProps[E]], ref: Ref[HTMLElement]): ReactElement | Null = js.native
+[E]                 ^
+[E] [E4] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsDataTableTableSelectAllMod/InheritedProps.scala:37:5
 [E]      cyclic aliasing or subtyping involving type NonNullable
 [E]      L37:     id: NonNullable[
 [E]               ^
-[E] [E1] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsDataTableTableSelectAllMod/InheritedProps.scala:17:7
+[E] [E3] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsDataTableTableSelectAllMod/InheritedProps.scala:17:7
 [E]      cyclic aliasing or subtyping involving type NonNullable
 [E]      L17:   var id: NonNullable[
 [E]             ^^^^
-[E] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsDataTableTableSelectAllMod/InheritedProps.scala: L17 [E1], L37 [E2]
+[E] [E2] src/main/scala/typings/carbonDashComponentsDashReact/carbonDashComponentsDashReactMod/SwitcherItem.scala:15:7
+[E]      illegal cyclic reference involving type Omit
+[E]      L15:   def apply[E /* <: js.Object */](props: PropsWithChildren[SwitcherItemProps[E]], ref: Ref[HTMLElement]): ReactElement | Null = js.native
+[E]                 ^
+[E] [E1] src/main/scala/typings/carbonDashComponentsDashReact/carbonDashComponentsDashReactMod/HeaderMenuItem.scala:15:7
+[E]      illegal cyclic reference involving type Omit
+[E]      L15:   def apply[E /* <: js.Object */](props: PropsWithChildren[HeaderMenuItemProps[E]], ref: Ref[HTMLElement]): ReactElement | Null = js.native
+[E]                 ^
+[E] src/main/scala/typings/carbonDashComponentsDashReact/carbonDashComponentsDashReactMod/HeaderMenuItem.scala: L15 [E1]
+[E] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsDataTableTableSelectAllMod/InheritedProps.scala: L17 [E3], L37 [E4]
+[E] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellSwitcherItemMod/package.scala: L12 [E10]
+[E] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellHeaderMenuItemMod.scala: L29 [E5], L30 [E6]
+[E] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellMod.scala: L73 [E7], L77 [E8]
+[E] src/main/scala/typings/carbonDashComponentsDashReact/carbonDashComponentsDashReactMod/SwitcherItem.scala: L15 [E2]
+[E] src/main/scala/typings/carbonDashComponentsDashReact/libComponentsUIShellSwitcherItemMod/default.scala: L14 [E9]
 [E] Failed to compile 'carbon-components-react'
  [id => carbon-components-react, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [carbon-components-react => Compilation failed] [id => carbon-components-react, phase => build] 

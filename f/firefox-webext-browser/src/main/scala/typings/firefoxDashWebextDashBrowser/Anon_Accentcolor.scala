@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Accentcolor extends js.Object {
-  /** @deprecated Please use _theme.colors.frame_, this alias will be removed in Firefox 69. */
+  /**
+    * @deprecated Unsupported colors property, use 'theme.colors.frame', this alias is ignored in Firefox >=
+    *     70.
+    */
   var accentcolor: js.UndefOr[ThemeColor] = js.undefined
   var bookmark_text: js.UndefOr[ThemeColor] = js.undefined
   var button_background_active: js.UndefOr[ThemeColor] = js.undefined
@@ -33,7 +36,10 @@ trait Anon_Accentcolor extends js.Object {
   var tab_loading: js.UndefOr[ThemeColor] = js.undefined
   var tab_selected: js.UndefOr[ThemeColor] = js.undefined
   var tab_text: js.UndefOr[ThemeColor] = js.undefined
-  /** @deprecated Please use _theme.colors.tab_background_text_, this alias will be removed in Firefox 69. */
+  /**
+    * @deprecated Unsupported color property, use 'theme.colors.tab_background_text', this alias is ignored in
+    *     Firefox >= 70.
+    */
   var textcolor: js.UndefOr[ThemeColor] = js.undefined
   var toolbar: js.UndefOr[ThemeColor] = js.undefined
   var toolbar_bottom_separator: js.UndefOr[ThemeColor] = js.undefined
@@ -46,7 +52,7 @@ trait Anon_Accentcolor extends js.Object {
   var toolbar_field_separator: js.UndefOr[ThemeColor] = js.undefined
   var toolbar_field_text: js.UndefOr[ThemeColor] = js.undefined
   var toolbar_field_text_focus: js.UndefOr[ThemeColor] = js.undefined
-  /** @deprecated Please use _theme.colors.bookmark_text_, this alias will be removed in Firefox 69. */
+  /** This color property is an alias of 'bookmark_text'. */
   var toolbar_text: js.UndefOr[ThemeColor] = js.undefined
   var toolbar_top_separator: js.UndefOr[ThemeColor] = js.undefined
   var toolbar_vertical_separator: js.UndefOr[ThemeColor] = js.undefined

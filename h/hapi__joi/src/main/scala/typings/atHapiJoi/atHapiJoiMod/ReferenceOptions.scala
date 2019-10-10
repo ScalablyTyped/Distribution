@@ -1,32 +1,65 @@
 package typings.atHapiJoi.atHapiJoiMod
 
+import typings.atHapiJoi.Anon_Global
+import typings.atHapiJoi.atHapiJoiNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReferenceOptions extends js.Object {
-  var contextPrefix: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[js.Any] = js.undefined
-  var functions: js.UndefOr[Boolean] = js.undefined
-  var separator: js.UndefOr[String] = js.undefined
-  var strict: js.UndefOr[Boolean] = js.undefined
+trait ReferenceOptions extends HierarchySeparatorOptions {
+  /**
+    * a function with the signature `function(value)` where `value` is the resolved reference value and the return value is the adjusted value to use.
+    * Note that the adjust feature will not perform any type validation on the adjusted value and it must match the value expected by the rule it is used in.
+    * Cannot be used with `map`.
+    *
+    * @example `(value) => value + 5`
+    */
+  var adjust: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
+  /**
+    * If set to a number, sets the reference relative starting point.
+    * Cannot be combined with separator prefix characters.
+    * Defaults to the reference key prefix (or 1 if none present)
+    */
+  var ancestor: js.UndefOr[Double] = js.undefined
+  /**
+    * creates an in-reference.
+    */
+  var in: js.UndefOr[Boolean] = js.undefined
+  /**
+    * when true, the reference resolves by reaching into maps and sets.
+    */
+  var iterables: js.UndefOr[Boolean] = js.undefined
+  /**
+    * an array of array pairs using the format `[[key, value], [key, value]]` used to maps the resolved reference value to another value.
+    * If the resolved value is not in the map, it is returned as-is.
+    * Cannot be used with `adjust`.
+    */
+  var map: js.UndefOr[js.Array[js.Tuple2[_, _]]] = js.undefined
+  /**
+    * overrides default prefix characters.
+    */
+  var prefix: js.UndefOr[Anon_Global] = js.undefined
 }
 
 object ReferenceOptions {
   @scala.inline
   def apply(
-    contextPrefix: String = null,
-    default: js.Any = null,
-    functions: js.UndefOr[Boolean] = js.undefined,
-    separator: String = null,
-    strict: js.UndefOr[Boolean] = js.undefined
+    adjust: /* value */ js.Any => _ = null,
+    ancestor: Int | Double = null,
+    in: js.UndefOr[Boolean] = js.undefined,
+    iterables: js.UndefOr[Boolean] = js.undefined,
+    map: js.Array[js.Tuple2[_, _]] = null,
+    prefix: Anon_Global = null,
+    separator: String | `false` = null
   ): ReferenceOptions = {
     val __obj = js.Dynamic.literal()
-    if (contextPrefix != null) __obj.updateDynamic("contextPrefix")(contextPrefix)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (adjust != null) __obj.updateDynamic("adjust")(js.Any.fromFunction1(adjust))
+    if (ancestor != null) __obj.updateDynamic("ancestor")(ancestor.asInstanceOf[js.Any])
+    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)
+    if (!js.isUndefined(iterables)) __obj.updateDynamic("iterables")(iterables)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceOptions]
   }
 }

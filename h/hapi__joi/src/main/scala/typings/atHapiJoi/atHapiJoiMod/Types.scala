@@ -12,10 +12,11 @@ import scala.scalajs.js.annotation._
   - typings.atHapiJoi.atHapiJoiStrings.binary
   - typings.atHapiJoi.atHapiJoiStrings.date
   - typings.atHapiJoi.atHapiJoiStrings.function
-  - typings.atHapiJoi.atHapiJoiStrings.`lazy`
+  - typings.atHapiJoi.atHapiJoiStrings.link
   - typings.atHapiJoi.atHapiJoiStrings.number
   - typings.atHapiJoi.atHapiJoiStrings.`object`
   - typings.atHapiJoi.atHapiJoiStrings.string
+  - typings.atHapiJoi.atHapiJoiStrings.symbol
 */
 trait Types extends js.Object
 

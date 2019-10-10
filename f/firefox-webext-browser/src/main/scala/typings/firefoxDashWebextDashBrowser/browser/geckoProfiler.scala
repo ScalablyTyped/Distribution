@@ -23,7 +23,6 @@ object geckoProfiler extends js.Object {
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.JS
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.leaf
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.mainthreadio
-    - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.memory
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.privacy
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.responsiveness
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.screenshots
@@ -33,6 +32,8 @@ object geckoProfiler extends js.Object {
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.threads
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.trackopts
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.jstracer
+    - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.jsallocations
+    - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.preferencereads
   */
   trait ProfilerFeature extends js.Object
   
@@ -42,6 +43,12 @@ object geckoProfiler extends js.Object {
     * @param isRunning Whether the profiler is running or not. Pausing the profiler will not affect this value.
     */
   val onRunning: WebExtEvent[js.Function1[/* isRunning */ Boolean, Unit]] = js.native
+  /**
+    * Gathers the profile data from the current profiling session, and writes it to disk. The returned promise
+    * resolves to a path that locates the created file.
+    * @param fileName The name of the file inside the profile/profiler directory
+    */
+  def dumpProfileToFile(fileName: String): js.Promise[_] = js.native
   /** Gathers the profile data from the current profiling session. */
   def getProfile(): js.Promise[_] = js.native
   /**
@@ -49,6 +56,11 @@ object geckoProfiler extends js.Object {
     * that contains a JSON string.
     */
   def getProfileAsArrayBuffer(): js.Promise[_] = js.native
+  /**
+    * Gathers the profile data from the current profiling session. The returned promise resolves to an array buffer
+    * that contains a gzipped JSON string.
+    */
+  def getProfileAsGzippedArrayBuffer(): js.Promise[_] = js.native
   /**
     * Gets the debug symbols for a particular library.
     * @param debugName The name of the library's debug file. For example, 'xul.pdb

@@ -18,7 +18,7 @@ trait FadeProps
   var in: js.UndefOr[Boolean] = js.undefined
   var onEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var transitionAppear: js.UndefOr[Boolean] = js.undefined
   var transitionAppearTimeout: js.UndefOr[Double] = js.undefined
   var transitionEnter: js.UndefOr[Boolean] = js.undefined
@@ -39,7 +39,7 @@ object FadeProps {
     in: js.UndefOr[Boolean] = js.undefined,
     onEnter: () => Unit = null,
     onLeave: () => Unit = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     transitionAppear: js.UndefOr[Boolean] = js.undefined,
     transitionAppearTimeout: Int | Double = null,
     transitionEnter: js.UndefOr[Boolean] = js.undefined,

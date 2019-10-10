@@ -16,7 +16,7 @@ trait PaginationProps
   var listClassName: js.UndefOr[String] = js.undefined
   var listTag: js.UndefOr[ReactType[_]] = js.undefined
   var size: js.UndefOr[String] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object PaginationProps {
@@ -30,7 +30,7 @@ object PaginationProps {
     listClassName: String = null,
     listTag: ReactType[_] = null,
     size: String = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): PaginationProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

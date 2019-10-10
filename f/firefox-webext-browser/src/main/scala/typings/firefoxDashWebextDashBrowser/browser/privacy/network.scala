@@ -22,6 +22,7 @@ object network extends js.Object {
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.default_public_and_private_interfaces
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.default_public_interface_only
     - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.disable_non_proxied_udp
+    - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.proxy_only
   */
   trait IPHandlingPolicy extends js.Object
   

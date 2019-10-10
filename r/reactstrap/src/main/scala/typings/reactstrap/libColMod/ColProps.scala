@@ -14,7 +14,7 @@ trait ColProps
   var lg: js.UndefOr[ColumnProps] = js.undefined
   var md: js.UndefOr[ColumnProps] = js.undefined
   var sm: js.UndefOr[ColumnProps] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   // custom widths
   var widths: js.UndefOr[js.Array[String]] = js.undefined
   var xl: js.UndefOr[ColumnProps] = js.undefined
@@ -29,7 +29,7 @@ object ColProps {
     lg: ColumnProps = null,
     md: ColumnProps = null,
     sm: ColumnProps = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     widths: js.Array[String] = null,
     xl: ColumnProps = null,
     xs: ColumnProps = null

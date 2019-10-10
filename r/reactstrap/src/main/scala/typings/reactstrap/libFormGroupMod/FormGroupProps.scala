@@ -16,7 +16,7 @@ trait FormGroupProps
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var row: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object FormGroupProps {
@@ -30,7 +30,7 @@ object FormGroupProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     row: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): FormGroupProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)

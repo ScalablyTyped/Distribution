@@ -17,6 +17,7 @@ trait Auth[T] extends js.Object {
   var user: Partial[T] = js.native
   def fetchUser(): js.Promise[scala.Nothing] = js.native
   def fetchUserOnce(): js.Promise[scala.Nothing] = js.native
+  def getToken(strategyName: String): String = js.native
   def hasScope(scopeName: String): Boolean = js.native
   def login(
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any

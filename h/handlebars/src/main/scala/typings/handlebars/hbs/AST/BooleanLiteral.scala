@@ -6,12 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait BooleanLiteral extends Node {
   var original: Boolean
+  @JSName("type")
+  var type_BooleanLiteral: typings.handlebars.handlebarsStrings.BooleanLiteral
   var value: Boolean
 }
 
 object BooleanLiteral {
   @scala.inline
-  def apply(loc: SourceLocation, original: Boolean, `type`: String, value: Boolean): BooleanLiteral = {
+  def apply(
+    loc: SourceLocation,
+    original: Boolean,
+    `type`: typings.handlebars.handlebarsStrings.BooleanLiteral,
+    value: Boolean
+  ): BooleanLiteral = {
     val __obj = js.Dynamic.literal(loc = loc, original = original, value = value)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BooleanLiteral]

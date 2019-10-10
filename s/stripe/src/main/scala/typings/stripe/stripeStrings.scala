@@ -84,6 +84,9 @@ object stripeStrings {
   sealed trait accepted extends js.Object
   
   @js.native
+  sealed trait account extends js.Object
+  
+  @js.native
   sealed trait ach_credit_transfer extends js.Object
   
   @js.native
@@ -347,6 +350,9 @@ object stripeStrings {
   sealed trait expired_or_canceled_card extends js.Object
   
   @js.native
+  sealed trait express extends js.Object
+  
+  @js.native
   sealed trait fail extends js.Object
   
   @js.native
@@ -419,6 +425,9 @@ object stripeStrings {
   
   @js.native
   sealed trait in_transit extends Statuses
+  
+  @js.native
+  sealed trait inactive extends js.Object
   
   @js.native
   sealed trait incomplete extends SubscriptionStatus
@@ -1060,6 +1069,8 @@ object stripeStrings {
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
+  def account: account = "account".asInstanceOf[account]
+  @scala.inline
   def ach_credit_transfer: ach_credit_transfer = "ach_credit_transfer".asInstanceOf[ach_credit_transfer]
   @scala.inline
   def ach_debit: ach_debit = "ach_debit".asInstanceOf[ach_debit]
@@ -1226,6 +1237,8 @@ object stripeStrings {
   @scala.inline
   def expired_or_canceled_card: expired_or_canceled_card = "expired_or_canceled_card".asInstanceOf[expired_or_canceled_card]
   @scala.inline
+  def express: express = "express".asInstanceOf[express]
+  @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
@@ -1273,6 +1286,8 @@ object stripeStrings {
   def in_stock: in_stock = "in_stock".asInstanceOf[in_stock]
   @scala.inline
   def in_transit: in_transit = "in_transit".asInstanceOf[in_transit]
+  @scala.inline
+  def inactive: inactive = "inactive".asInstanceOf[inactive]
   @scala.inline
   def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
   @scala.inline

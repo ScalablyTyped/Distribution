@@ -38,6 +38,10 @@ trait Options extends js.Object {
     */
   var PreserveDevices: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.PreserveDevices] = js.undefined
   /**
+    * A value that determines whether tasks should be queued before executing the tasks. If set to Enabled, the tasks will queued. The default is Enabled. If you use the same agent to run multiple tasks you can enable the tasks to run in series. For more information see task-queue.
+    */
+  var TaskQueueing: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.TaskQueueing] = js.undefined
+  /**
     * The user ID (UID) of the file's owner.  Default value: INT_VALUE. This preserves the integer value of the ID. INT_VALUE: Preserve the integer value of UID and group ID (GID) (recommended). NONE: Ignore UID and GID. 
     */
   var Uid: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.Uid] = js.undefined
@@ -58,6 +62,7 @@ object Options {
     PosixPermissions: PosixPermissions = null,
     PreserveDeletedFiles: PreserveDeletedFiles = null,
     PreserveDevices: PreserveDevices = null,
+    TaskQueueing: TaskQueueing = null,
     Uid: Uid = null,
     VerifyMode: VerifyMode = null
   ): Options = {
@@ -70,6 +75,7 @@ object Options {
     if (PosixPermissions != null) __obj.updateDynamic("PosixPermissions")(PosixPermissions.asInstanceOf[js.Any])
     if (PreserveDeletedFiles != null) __obj.updateDynamic("PreserveDeletedFiles")(PreserveDeletedFiles.asInstanceOf[js.Any])
     if (PreserveDevices != null) __obj.updateDynamic("PreserveDevices")(PreserveDevices.asInstanceOf[js.Any])
+    if (TaskQueueing != null) __obj.updateDynamic("TaskQueueing")(TaskQueueing.asInstanceOf[js.Any])
     if (Uid != null) __obj.updateDynamic("Uid")(Uid.asInstanceOf[js.Any])
     if (VerifyMode != null) __obj.updateDynamic("VerifyMode")(VerifyMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

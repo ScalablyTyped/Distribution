@@ -18,7 +18,7 @@ trait Target extends js.Object {
     */
   var EcsParameters: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.EcsParameters] = js.undefined
   /**
-    * The ID of the target.
+    * A name for the target. Use a string that will help you identify the target. Each target associated with a rule must have an Id unique for that rule.
     */
   var Id: TargetId
   /**

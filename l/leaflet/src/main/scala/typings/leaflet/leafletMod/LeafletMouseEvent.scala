@@ -17,12 +17,15 @@ object LeafletMouseEvent {
   def apply(
     containerPoint: Point,
     latlng: LatLng,
+    layer: js.Any,
     layerPoint: Point,
     originalEvent: MouseEvent,
+    propagatedFrom: js.Any,
+    sourceTarget: js.Any,
     target: js.Any,
     `type`: String
   ): LeafletMouseEvent = {
-    val __obj = js.Dynamic.literal(containerPoint = containerPoint, latlng = latlng, layerPoint = layerPoint, originalEvent = originalEvent, target = target)
+    val __obj = js.Dynamic.literal(containerPoint = containerPoint, latlng = latlng, layer = layer, layerPoint = layerPoint, originalEvent = originalEvent, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LeafletMouseEvent]
   }

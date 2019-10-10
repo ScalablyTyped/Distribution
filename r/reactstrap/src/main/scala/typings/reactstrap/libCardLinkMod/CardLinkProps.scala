@@ -17,7 +17,7 @@ trait CardLinkProps
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var href: js.UndefOr[String] = js.undefined
   var innerRef: js.UndefOr[Ref[HTMLAnchorElement]] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object CardLinkProps {
@@ -29,7 +29,7 @@ object CardLinkProps {
     cssModule: CSSModule = null,
     href: String = null,
     innerRef: Ref[HTMLAnchorElement] = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): CardLinkProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 object sendNativeMessage extends js.Object {
   /**
     * Send a single message to a native application.
+    *
+    * Not allowed in: Devtools pages
     * @param application The name of the native messaging host.
     * @param message The message that will be passed to the native messaging host.
     */

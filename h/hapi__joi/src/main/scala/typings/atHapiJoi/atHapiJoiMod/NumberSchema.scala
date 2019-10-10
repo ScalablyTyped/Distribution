@@ -1,12 +1,14 @@
 package typings.atHapiJoi.atHapiJoiMod
 
+import typings.atHapiJoi.atHapiJoiStrings.negative
+import typings.atHapiJoi.atHapiJoiStrings.positive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.atHapiJoi.atHapiJoiMod._SchemaLike because Already inherited
-- typings.atHapiJoi.atHapiJoiMod._Schema because Already inherited */ @js.native
+- typings.atHapiJoi.atHapiJoiMod.Schema because Already inherited */ @js.native
 trait NumberSchema extends AnySchema {
   /**
     * Specifies that the value must be greater than limit.
@@ -40,6 +42,7 @@ trait NumberSchema extends AnySchema {
     * Specifies that the value must be a multiple of base.
     */
   def multiple(base: Double): this.type = js.native
+  def multiple(base: Reference): this.type = js.native
   /**
     * Requires the number to be negative.
     */
@@ -57,10 +60,17 @@ trait NumberSchema extends AnySchema {
     * @param limit - the maximum number of decimal places allowed.
     */
   def precision(limit: Double): this.type = js.native
+  @JSName("sign")
+  def sign_negative(sign: negative): this.type = js.native
+  /**
+    * Requires the number to be negative or positive.
+    */
+  @JSName("sign")
+  def sign_positive(sign: positive): this.type = js.native
   /**
     * Allows the number to be outside of JavaScript's safety range (Number.MIN_SAFE_INTEGER & Number.MAX_SAFE_INTEGER).
     */
   def unsafe(): this.type = js.native
-  def unsafe(enabled: Boolean): this.type = js.native
+  def unsafe(enabled: js.Any): this.type = js.native
 }
 

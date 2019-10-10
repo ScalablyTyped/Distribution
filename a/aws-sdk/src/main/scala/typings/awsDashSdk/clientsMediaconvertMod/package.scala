@@ -101,9 +101,18 @@ package object clientsMediaconvertMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
     - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.PREFERRED
     - java.lang.String
   */
   type AccelerationMode = _AccelerationMode | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NOT_APPLICABLE
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.ACCELERATED
+    - typings.awsDashSdk.awsDashSdkStrings.NOT_ACCELERATED
+    - java.lang.String
+  */
+  type AccelerationStatus = _AccelerationStatus | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NONE
     - typings.awsDashSdk.awsDashSdkStrings.AUTO
@@ -196,6 +205,7 @@ package object clientsMediaconvertMod {
     - typings.awsDashSdk.awsDashSdkStrings.QUEUE
     - typings.awsDashSdk.awsDashSdkStrings.PRESET
     - typings.awsDashSdk.awsDashSdkStrings.JOB_TEMPLATE
+    - typings.awsDashSdk.awsDashSdkStrings.JOB
     - java.lang.String
   */
   type BillingTagsSource = _BillingTagsSource | String
@@ -321,6 +331,12 @@ package object clientsMediaconvertMod {
   */
   type CmafManifestDurationFormat = _CmafManifestDurationFormat | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.MAIN_PROFILE
+    - typings.awsDashSdk.awsDashSdkStrings.ON_DEMAND_PROFILE
+    - java.lang.String
+  */
+  type CmafMpdProfile = _CmafMpdProfile | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SINGLE_FILE
     - typings.awsDashSdk.awsDashSdkStrings.SEGMENTED_FILES
     - java.lang.String
@@ -395,6 +411,12 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type DashIsoHbbtvCompliance = _DashIsoHbbtvCompliance | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.MAIN_PROFILE
+    - typings.awsDashSdk.awsDashSdkStrings.ON_DEMAND_PROFILE
+    - java.lang.String
+  */
+  type DashIsoMpdProfile = _DashIsoMpdProfile | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CENC_V1
     - typings.awsDashSdk.awsDashSdkStrings.UNENCRYPTED_SEI
@@ -2047,10 +2069,10 @@ package object clientsMediaconvertMod {
   type __stringMin0 = String
   type __stringMin1 = String
   type __stringMin11Max11Pattern01D20305D205D = String
-  type __stringMin14Max1285PatternS3Mov09Png = String
-  type __stringMin14PatternS3BmpBMPPngPNG = String
-  type __stringMin14PatternS3BmpBMPPngPNGTgaTGA = String
-  type __stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI = String
+  type __stringMin14Max1285PatternHttpHttpsS3Mov09Png = String
+  type __stringMin14PatternHttpHttpsS3BmpBMPPngPNG = String
+  type __stringMin14PatternHttpHttpsS3BmpBMPPngPNGTgaTGA = String
+  type __stringMin14PatternHttpHttpsS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI = String
   type __stringMin16Max24PatternAZaZ0922AZaZ0916 = String
   type __stringMin1Max256 = String
   type __stringMin24Max512PatternAZaZ0902 = String
@@ -2069,12 +2091,12 @@ package object clientsMediaconvertMod {
   type __stringPatternArnAwsUsGovAcm = String
   type __stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912 = String
   type __stringPatternDD = String
+  type __stringPatternHttpHttpsS3MM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEE = String
   type __stringPatternHttpHttpsS3MM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL = String
   type __stringPatternHttps = String
   type __stringPatternIdentityAZaZ26AZaZ09163 = String
   type __stringPatternS3 = String
   type __stringPatternS3ASSETMAPXml = String
-  type __stringPatternS3MM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEE = String
   type __stringPatternSNManifestConfirmConditionNotificationNS = String
   type __stringPatternSNSignalProcessingNotificationNS = String
   type __stringPatternW = String

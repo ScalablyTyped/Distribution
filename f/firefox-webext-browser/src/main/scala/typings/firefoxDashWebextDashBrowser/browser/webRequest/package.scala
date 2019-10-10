@@ -20,4 +20,6 @@ package object webRequest {
   type OnResponseStartedOptions = responseHeaders
   type OnSendHeadersOptions = requestHeaders
   type TransportWeaknessReasons = cipher
+  /** If the request has been classified this is an array of `UrlClassificationFlags`. */
+  type UrlClassificationParty = js.Array[UrlClassificationFlags]
 }

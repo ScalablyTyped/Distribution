@@ -11,13 +11,29 @@ trait Anon_Statementdescriptor extends js.Object {
     * charge.
     */
   var statement_descriptor: js.UndefOr[String] = js.undefined
+  /**
+    * The Kana variation of the default text that appears on credit card statements
+    * when a charge is made (Japan only)
+    */
+  var statement_descriptor_kana: js.UndefOr[String | Null] = js.undefined
+  /**
+    * The Kanji variation of the default text that appears on credit card statements
+    * when a charge is made (Japan only)
+    */
+  var statement_descriptor_kanji: js.UndefOr[String | Null] = js.undefined
 }
 
 object Anon_Statementdescriptor {
   @scala.inline
-  def apply(statement_descriptor: String = null): Anon_Statementdescriptor = {
+  def apply(
+    statement_descriptor: String = null,
+    statement_descriptor_kana: String = null,
+    statement_descriptor_kanji: String = null
+  ): Anon_Statementdescriptor = {
     val __obj = js.Dynamic.literal()
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (statement_descriptor_kana != null) __obj.updateDynamic("statement_descriptor_kana")(statement_descriptor_kana)
+    if (statement_descriptor_kanji != null) __obj.updateDynamic("statement_descriptor_kanji")(statement_descriptor_kanji)
     __obj.asInstanceOf[Anon_Statementdescriptor]
   }
 }

@@ -52,12 +52,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationEfsResponse, Unit]
   ): Request[CreateLocationEfsResponse, AWSError] = js.native
   /**
-    * Creates an endpoint for a Network File System (NFS) file system.
+    * Defines a file system on a Network File System (NFS) server that can be read from or written to
     */
   def createLocationNfs(): Request[CreateLocationNfsResponse, AWSError] = js.native
   def createLocationNfs(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationNfsResponse, Unit]): Request[CreateLocationNfsResponse, AWSError] = js.native
   /**
-    * Creates an endpoint for a Network File System (NFS) file system.
+    * Defines a file system on a Network File System (NFS) server that can be read from or written to
     */
   def createLocationNfs(params: CreateLocationNfsRequest): Request[CreateLocationNfsResponse, AWSError] = js.native
   def createLocationNfs(
@@ -78,12 +78,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationS3Response, Unit]
   ): Request[CreateLocationS3Response, AWSError] = js.native
   /**
-    * Creates an endpoint for a Server Message Block (SMB) file system.
+    * Defines a file system on an Server Message Block (SMB) server that can be read from or written to
     */
   def createLocationSmb(): Request[CreateLocationSmbResponse, AWSError] = js.native
   def createLocationSmb(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationSmbResponse, Unit]): Request[CreateLocationSmbResponse, AWSError] = js.native
   /**
-    * Creates an endpoint for a Server Message Block (SMB) file system.
+    * Defines a file system on an Server Message Block (SMB) server that can be read from or written to
     */
   def createLocationSmb(params: CreateLocationSmbRequest): Request[CreateLocationSmbResponse, AWSError] = js.native
   def createLocationSmb(

@@ -18,7 +18,7 @@ trait PutRuleRequest extends js.Object {
     */
   var EventPattern: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.EventPattern] = js.undefined
   /**
-    * The name of the rule that you're creating or updating.
+    * The name of the rule that you're creating or updating. A rule can't have the same name as another rule in the same Region or on the same event bus.
     */
   var Name: RuleName
   /**

@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait DataUriOptions extends js.Object {
   /**
-    * optional parameter defaulting to true which will require = padding if true or make padding optional if false
+    * optional parameter defaulting to true which will require `=` padding if true or make padding optional if false
+    *
+    * @default true
     */
   var paddingRequired: js.UndefOr[Boolean] = js.undefined
 }

@@ -141,6 +141,7 @@ package object clientsDatasyncMod {
   type TaskExecutionArn = String
   type TaskExecutionList = js.Array[TaskExecutionListEntry]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.QUEUED
     - typings.awsDashSdk.awsDashSdkStrings.LAUNCHING
     - typings.awsDashSdk.awsDashSdkStrings.PREPARING
     - typings.awsDashSdk.awsDashSdkStrings.TRANSFERRING
@@ -152,8 +153,15 @@ package object clientsDatasyncMod {
   type TaskExecutionStatus = _TaskExecutionStatus | String
   type TaskList = js.Array[TaskListEntry]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type TaskQueueing = _TaskQueueing | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AVAILABLE
     - typings.awsDashSdk.awsDashSdkStrings.CREATING
+    - typings.awsDashSdk.awsDashSdkStrings.QUEUED
     - typings.awsDashSdk.awsDashSdkStrings.RUNNING
     - typings.awsDashSdk.awsDashSdkStrings.UNAVAILABLE
     - java.lang.String

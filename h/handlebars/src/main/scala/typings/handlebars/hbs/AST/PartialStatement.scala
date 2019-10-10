@@ -10,6 +10,8 @@ trait PartialStatement extends Node {
   var name: PathExpression | SubExpression
   var params: js.Array[Expression]
   var strip: StripFlags
+  @JSName("type")
+  var type_PartialStatement: typings.handlebars.handlebarsStrings.PartialStatement
 }
 
 object PartialStatement {
@@ -21,7 +23,7 @@ object PartialStatement {
     name: PathExpression | SubExpression,
     params: js.Array[Expression],
     strip: StripFlags,
-    `type`: String
+    `type`: typings.handlebars.handlebarsStrings.PartialStatement
   ): PartialStatement = {
     val __obj = js.Dynamic.literal(hash = hash, indent = indent, loc = loc, name = name.asInstanceOf[js.Any], params = params, strip = strip)
     __obj.updateDynamic("type")(`type`)

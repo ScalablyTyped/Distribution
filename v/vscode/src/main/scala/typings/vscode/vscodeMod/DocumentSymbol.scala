@@ -42,5 +42,9 @@ class DocumentSymbol protected () extends js.Object {
   		 * Must be contained by the [`range`](#DocumentSymbol.range).
   		 */
   var selectionRange: Range = js.native
+  /**
+  		 * Tags for this symbol.
+  		 */
+  var tags: js.UndefOr[js.Array[SymbolTag]] = js.native
 }
 

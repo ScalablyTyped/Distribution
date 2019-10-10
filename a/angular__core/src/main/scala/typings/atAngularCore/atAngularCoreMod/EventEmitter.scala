@@ -18,10 +18,6 @@ import scala.scalajs.js.annotation._
 class EventEmitter[T /* <: js.Any */] () extends Subject[T] {
   def this(isAsync: Boolean) = this()
   /**
-    * Internal
-    */
-  var __isAsync: Boolean = js.native
-  /**
     * Emits an event containing a given value.
     * @param value The value to emit.
     */

@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.geolocation
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.idle
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.notifications
-  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.topSites
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.webNavigation
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.webRequest
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.webRequestBlocking
@@ -26,6 +25,7 @@ import scala.scalajs.js.annotation._
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.activeTab
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.tabs
   - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.tabHide
+  - typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.topSites
 */
 trait _OptionalPermission extends js.Object
 

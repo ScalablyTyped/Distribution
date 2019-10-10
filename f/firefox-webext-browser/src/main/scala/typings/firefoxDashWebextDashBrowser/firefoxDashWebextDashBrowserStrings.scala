@@ -9,9 +9,13 @@ import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManif
 import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
 import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
 import typings.firefoxDashWebextDashBrowser.browser._manifest._WebExtensionManifestIncognito
+import typings.firefoxDashWebextDashBrowser.browser.activityLog._UndefinedType
+import typings.firefoxDashWebextDashBrowser.browser.activityLog._UndefinedViewType
 import typings.firefoxDashWebextDashBrowser.browser.bookmarks.BookmarkTreeNodeType
 import typings.firefoxDashWebextDashBrowser.browser.browserSettings.ContextMenuMouseEvent
 import typings.firefoxDashWebextDashBrowser.browser.browserSettings.ImageAnimationBehavior
+import typings.firefoxDashWebextDashBrowser.browser.captivePortal._Status
+import typings.firefoxDashWebextDashBrowser.browser.captivePortal._UndefinedState
 import typings.firefoxDashWebextDashBrowser.browser.clipboard._SetImageData
 import typings.firefoxDashWebextDashBrowser.browser.contextMenus.ContextType
 import typings.firefoxDashWebextDashBrowser.browser.contextMenus.ItemType
@@ -37,6 +41,8 @@ import typings.firefoxDashWebextDashBrowser.browser.idle.IdleState
 import typings.firefoxDashWebextDashBrowser.browser.management.ExtensionDisabledReason
 import typings.firefoxDashWebextDashBrowser.browser.management.ExtensionInstallType
 import typings.firefoxDashWebextDashBrowser.browser.management.ExtensionType
+import typings.firefoxDashWebextDashBrowser.browser.networkStatus._NetworkLinkInfoStatus
+import typings.firefoxDashWebextDashBrowser.browser.networkStatus._NetworkLinkInfoType
 import typings.firefoxDashWebextDashBrowser.browser.notifications.PermissionLevel
 import typings.firefoxDashWebextDashBrowser.browser.notifications.TemplateType
 import typings.firefoxDashWebextDashBrowser.browser.omnibox.DescriptionStyleType
@@ -58,8 +64,11 @@ import typings.firefoxDashWebextDashBrowser.browser.tabs.ZoomSettingsMode
 import typings.firefoxDashWebextDashBrowser.browser.tabs.ZoomSettingsScope
 import typings.firefoxDashWebextDashBrowser.browser.tabs._QueryScreen
 import typings.firefoxDashWebextDashBrowser.browser.telemetry.ScalarType
+import typings.firefoxDashWebextDashBrowser.browser.topSites._MostVisitedURLType
 import typings.firefoxDashWebextDashBrowser.browser.types.LevelOfControl
 import typings.firefoxDashWebextDashBrowser.browser.types.SettingScope
+import typings.firefoxDashWebextDashBrowser.browser.urlbar.ResultType
+import typings.firefoxDashWebextDashBrowser.browser.urlbar.SourceType
 import typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionQualifier
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.CertificateTransparencyStatus
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnAuthRequiredOptions
@@ -67,6 +76,7 @@ import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnBeforeRequestOp
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnBeforeSendHeadersOptions
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.OnHeadersReceivedOptions
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.ResourceType
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.UrlClassificationFlags
 import typings.firefoxDashWebextDashBrowser.browser.webRequest._SecurityInfoProtocolVersion
 import typings.firefoxDashWebextDashBrowser.browser.webRequest._SecurityInfoState
 import typings.firefoxDashWebextDashBrowser.browser.windows.CreateType
@@ -76,6 +86,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object firefoxDashWebextDashBrowserStrings {
+  @js.native
+  sealed trait `2g` extends _NetworkLinkInfoType
+  
+  @js.native
+  sealed trait `3g` extends _NetworkLinkInfoType
+  
+  @js.native
+  sealed trait `4g` extends _NetworkLinkInfoType
+  
   @js.native
   sealed trait `<all_urls>` extends js.Object
   
@@ -219,6 +238,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait activeTab extends _OptionalPermission
   
   @js.native
+  sealed trait activityLog extends _Permission
+  
+  @js.native
   sealed trait addon_child extends APIChildScope
   
   @js.native
@@ -246,6 +268,21 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait android extends PlatformOs
+  
+  @js.native
+  sealed trait any_basic_tracking extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait any_social_tracking extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait any_strict_tracking extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait api_call extends _UndefinedType
+  
+  @js.native
+  sealed trait api_event extends _UndefinedType
   
   @js.native
   sealed trait app
@@ -298,6 +335,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait automatic extends ZoomSettingsMode
   
   @js.native
+  sealed trait background extends _UndefinedViewType
+  
+  @js.native
   sealed trait basic extends TemplateType
   
   @js.native
@@ -322,7 +362,9 @@ object firefoxDashWebextDashBrowserStrings {
        with typings.firefoxDashWebextDashBrowser.browser.menus._OverrideContextContext
   
   @js.native
-  sealed trait bookmarks extends _OptionalPermission
+  sealed trait bookmarks
+    extends SourceType
+       with _OptionalPermission
   
   @js.native
   sealed trait boolean extends ScalarType
@@ -354,6 +396,12 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait canonical_name extends _ResolveFlags
   
   @js.native
+  sealed trait captive extends _Status
+  
+  @js.native
+  sealed trait captivePortal extends _Permission
+  
+  @js.native
   sealed trait capture extends MutedInfoReason
   
   @js.native
@@ -377,6 +425,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait cipher extends js.Object
   
   @js.native
+  sealed trait clear extends _Status
+  
+  @js.native
   sealed trait client_redirect extends TransitionQualifier
   
   @js.native
@@ -398,6 +449,9 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait content_parent extends APIParentScope
+  
+  @js.native
+  sealed trait content_script extends _UndefinedType
   
   @js.native
   sealed trait contextMenus extends _Permission
@@ -425,6 +479,12 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait cros extends PlatformOs
+  
+  @js.native
+  sealed trait cryptomining extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait cryptomining_content extends UrlClassificationFlags
   
   @js.native
   sealed trait csp_report extends ResourceType
@@ -461,6 +521,12 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait devtools_child extends APIChildScope
+  
+  @js.native
+  sealed trait devtools_page extends _UndefinedViewType
+  
+  @js.native
+  sealed trait devtools_panel extends _UndefinedViewType
   
   @js.native
   sealed trait devtools_parent extends APIParentScope
@@ -502,6 +568,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait document_start extends RunAt
   
   @js.native
+  sealed trait down extends _NetworkLinkInfoStatus
+  
+  @js.native
   sealed trait downloads extends _OptionalPermission
   
   @js.native
@@ -514,6 +583,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait editable
     extends ContextType
        with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
+  
+  @js.native
+  sealed trait ethernet extends _NetworkLinkInfoType
   
   @js.native
   sealed trait evicted extends OnChangedCause
@@ -540,6 +612,12 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait find extends _OptionalPermission
+  
+  @js.native
+  sealed trait fingerprinting extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait fingerprinting_content extends UrlClassificationFlags
   
   @js.native
   sealed trait folder extends BookmarkTreeNodeType
@@ -590,7 +668,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait hidden extends UpdatePropertyName
   
   @js.native
-  sealed trait history extends _OptionalPermission
+  sealed trait history
+    extends SourceType
+       with _OptionalPermission
   
   @js.native
   sealed trait homepage extends _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
@@ -621,6 +701,9 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait in_progress extends State
+  
+  @js.native
+  sealed trait inactive extends js.Object
   
   @js.native
   sealed trait incognito_persistent extends SettingScope
@@ -662,6 +745,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait jpeg
     extends ImageFormat
        with _SetImageData
+  
+  @js.native
+  sealed trait jsallocations extends ProfilerFeature
   
   @js.native
   sealed trait jstracer extends ProfilerFeature
@@ -717,6 +803,12 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait loading extends TabStatus
   
   @js.native
+  sealed trait local extends SourceType
+  
+  @js.native
+  sealed trait locked_portal extends _UndefinedState
+  
+  @js.native
   sealed trait mac extends PlatformOs
   
   @js.native
@@ -757,9 +849,6 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait media extends ResourceType
   
   @js.native
-  sealed trait memory extends ProfilerFeature
-  
-  @js.native
   sealed trait menupanel extends _WebExtensionManifestBrowserActionDefaultArea
   
   @js.native
@@ -791,6 +880,12 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait navbar extends _WebExtensionManifestBrowserActionDefaultArea
+  
+  @js.native
+  sealed trait network extends SourceType
+  
+  @js.native
+  sealed trait networkStatus extends _Permission
   
   @js.native
   sealed trait never extends TrackingProtectionModeOption
@@ -836,10 +931,16 @@ object firefoxDashWebextDashBrowserStrings {
        with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
   
   @js.native
+  sealed trait normandyAddonStudy extends _Permission
+  
+  @js.native
   sealed trait not_allowed extends _WebExtensionManifestIncognito
   
   @js.native
   sealed trait not_applicable extends CertificateTransparencyStatus
+  
+  @js.native
+  sealed trait not_captive extends _UndefinedState
   
   @js.native
   sealed trait not_controllable extends LevelOfControl
@@ -940,9 +1041,13 @@ object firefoxDashWebextDashBrowserStrings {
        with ViewType
        with WindowType
        with typings.firefoxDashWebextDashBrowser.browser.windows.WindowType
+       with _UndefinedViewType
   
   @js.native
   sealed trait pref extends _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
+  
+  @js.native
+  sealed trait preferencereads extends ProfilerFeature
   
   @js.native
   sealed trait priority_low extends _ResolveFlags
@@ -966,6 +1071,9 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait proxy extends _Permission
+  
+  @js.native
+  sealed trait proxy_only extends IPHandlingPolicy
   
   @js.native
   sealed trait purpose extends _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
@@ -996,6 +1104,9 @@ object firefoxDashWebextDashBrowserStrings {
        with typings.firefoxDashWebextDashBrowser.browser.webNavigation.TransitionType
   
   @js.native
+  sealed trait remote_tab extends ResultType
+  
+  @js.native
   sealed trait repeat extends _ThemeTypeAdditionalBackgroundsTiling
   
   @js.native
@@ -1019,6 +1130,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait responsiveness extends ProfilerFeature
   
   @js.native
+  sealed trait restricting extends js.Object
+  
+  @js.native
   sealed trait right extends _ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
@@ -1040,7 +1154,11 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait script extends ResourceType
   
   @js.native
-  sealed trait search extends _OptionalPermission
+  sealed trait search
+    extends ResultType
+       with SourceType
+       with _MostVisitedURLType
+       with _OptionalPermission
   
   @js.native
   sealed trait searchbar extends _WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
@@ -1072,7 +1190,9 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait sharingState extends UpdatePropertyName
   
   @js.native
-  sealed trait sidebar extends ViewType
+  sealed trait sidebar
+    extends ViewType
+       with _UndefinedViewType
   
   @js.native
   sealed trait sideload extends ExtensionInstallType
@@ -1139,15 +1259,19 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait tab
     extends ContextType
        with typings.firefoxDashWebextDashBrowser.browser.menus.ContextType
+       with ResultType
        with ViewType
        with _OverrideContextContext
        with typings.firefoxDashWebextDashBrowser.browser.menus._OverrideContextContext
+       with _UndefinedViewType
   
   @js.native
   sealed trait tabHide extends _OptionalPermission
   
   @js.native
-  sealed trait tabs extends _OptionalPermission
+  sealed trait tabs
+    extends SourceType
+       with _OptionalPermission
   
   @js.native
   sealed trait tabstrip extends _WebExtensionManifestBrowserActionDefaultArea
@@ -1186,6 +1310,21 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait topSites extends _OptionalPermission
   
   @js.native
+  sealed trait tracking extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait tracking_ad extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait tracking_analytics extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait tracking_content extends UrlClassificationFlags
+  
+  @js.native
+  sealed trait tracking_social extends UrlClassificationFlags
+  
+  @js.native
   sealed trait trackopts extends ProfilerFeature
   
   @js.native
@@ -1202,13 +1341,22 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait unknown
     extends ExtensionDisabledReason
+       with _NetworkLinkInfoStatus
+       with _NetworkLinkInfoType
        with _SecurityInfoProtocolVersion
+       with _UndefinedState
   
   @js.native
   sealed trait unlimitedStorage extends _Permission
   
   @js.native
+  sealed trait unlocked_portal extends _UndefinedState
+  
+  @js.native
   sealed trait unwanted extends DangerType
+  
+  @js.native
+  sealed trait up extends _NetworkLinkInfoStatus
   
   @js.native
   sealed trait update extends OnInstalledReason
@@ -1220,14 +1368,25 @@ object firefoxDashWebextDashBrowserStrings {
   sealed trait url
     extends DangerType
        with DescriptionStyleType
+       with ResultType
+       with _MostVisitedURLType
+  
+  @js.native
+  sealed trait urlbar extends _Permission
   
   @js.native
   sealed trait urn extends _ProtocolHandlerProtocol
   
   @js.native
+  sealed trait usb extends _NetworkLinkInfoType
+  
+  @js.native
   sealed trait user
     extends CSSOrigin
        with MutedInfoReason
+  
+  @js.native
+  sealed trait user_script extends _UndefinedType
   
   @js.native
   sealed trait video
@@ -1254,6 +1413,12 @@ object firefoxDashWebextDashBrowserStrings {
   
   @js.native
   sealed trait websocket extends ResourceType
+  
+  @js.native
+  sealed trait wifi extends _NetworkLinkInfoType
+  
+  @js.native
+  sealed trait wimax extends _NetworkLinkInfoType
   
   @js.native
   sealed trait win extends PlatformOs
@@ -1285,6 +1450,12 @@ object firefoxDashWebextDashBrowserStrings {
   @js.native
   sealed trait xslt extends ResourceType
   
+  @scala.inline
+  def `2g`: `2g` = "2g".asInstanceOf[`2g`]
+  @scala.inline
+  def `3g`: `3g` = "3g".asInstanceOf[`3g`]
+  @scala.inline
+  def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   @scala.inline
   def `<all_urls>`: `<all_urls>` = "<all_urls>".asInstanceOf[`<all_urls>`]
   @scala.inline
@@ -1374,6 +1545,8 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def activeTab: activeTab = "activeTab".asInstanceOf[activeTab]
   @scala.inline
+  def activityLog: activityLog = "activityLog".asInstanceOf[activityLog]
+  @scala.inline
   def addon_child: addon_child = "addon_child".asInstanceOf[addon_child]
   @scala.inline
   def addon_parent: addon_parent = "addon_parent".asInstanceOf[addon_parent]
@@ -1391,6 +1564,16 @@ object firefoxDashWebextDashBrowserStrings {
   def always: always = "always".asInstanceOf[always]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
+  @scala.inline
+  def any_basic_tracking: any_basic_tracking = "any_basic_tracking".asInstanceOf[any_basic_tracking]
+  @scala.inline
+  def any_social_tracking: any_social_tracking = "any_social_tracking".asInstanceOf[any_social_tracking]
+  @scala.inline
+  def any_strict_tracking: any_strict_tracking = "any_strict_tracking".asInstanceOf[any_strict_tracking]
+  @scala.inline
+  def api_call: api_call = "api_call".asInstanceOf[api_call]
+  @scala.inline
+  def api_event: api_event = "api_event".asInstanceOf[api_event]
   @scala.inline
   def app: app = "app".asInstanceOf[app]
   @scala.inline
@@ -1419,6 +1602,8 @@ object firefoxDashWebextDashBrowserStrings {
   def auto_toplevel: auto_toplevel = "auto_toplevel".asInstanceOf[auto_toplevel]
   @scala.inline
   def automatic: automatic = "automatic".asInstanceOf[automatic]
+  @scala.inline
+  def background: background = "background".asInstanceOf[background]
   @scala.inline
   def basic: basic = "basic".asInstanceOf[basic]
   @scala.inline
@@ -1450,6 +1635,10 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def canonical_name: canonical_name = "canonical_name".asInstanceOf[canonical_name]
   @scala.inline
+  def captive: captive = "captive".asInstanceOf[captive]
+  @scala.inline
+  def captivePortal: captivePortal = "captivePortal".asInstanceOf[captivePortal]
+  @scala.inline
   def capture: capture = "capture".asInstanceOf[capture]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -1464,6 +1653,8 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def cipher: cipher = "cipher".asInstanceOf[cipher]
   @scala.inline
+  def clear: clear = "clear".asInstanceOf[clear]
+  @scala.inline
   def client_redirect: client_redirect = "client_redirect".asInstanceOf[client_redirect]
   @scala.inline
   def clipboardRead: clipboardRead = "clipboardRead".asInstanceOf[clipboardRead]
@@ -1477,6 +1668,8 @@ object firefoxDashWebextDashBrowserStrings {
   def content_child: content_child = "content_child".asInstanceOf[content_child]
   @scala.inline
   def content_parent: content_parent = "content_parent".asInstanceOf[content_parent]
+  @scala.inline
+  def content_script: content_script = "content_script".asInstanceOf[content_script]
   @scala.inline
   def contextMenus: contextMenus = "contextMenus".asInstanceOf[contextMenus]
   @scala.inline
@@ -1495,6 +1688,10 @@ object firefoxDashWebextDashBrowserStrings {
   def count: count = "count".asInstanceOf[count]
   @scala.inline
   def cros: cros = "cros".asInstanceOf[cros]
+  @scala.inline
+  def cryptomining: cryptomining = "cryptomining".asInstanceOf[cryptomining]
+  @scala.inline
+  def cryptomining_content: cryptomining_content = "cryptomining_content".asInstanceOf[cryptomining_content]
   @scala.inline
   def csp_report: csp_report = "csp_report".asInstanceOf[csp_report]
   @scala.inline
@@ -1517,6 +1714,10 @@ object firefoxDashWebextDashBrowserStrings {
   def devtools: devtools = "devtools".asInstanceOf[devtools]
   @scala.inline
   def devtools_child: devtools_child = "devtools_child".asInstanceOf[devtools_child]
+  @scala.inline
+  def devtools_page: devtools_page = "devtools_page".asInstanceOf[devtools_page]
+  @scala.inline
+  def devtools_panel: devtools_panel = "devtools_panel".asInstanceOf[devtools_panel]
   @scala.inline
   def devtools_parent: devtools_parent = "devtools_parent".asInstanceOf[devtools_parent]
   @scala.inline
@@ -1544,6 +1745,8 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def document_start: document_start = "document_start".asInstanceOf[document_start]
   @scala.inline
+  def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def downloads: downloads = "downloads".asInstanceOf[downloads]
   @scala.inline
   def downloadsDOTopen: downloadsDOTopen = "downloads.open".asInstanceOf[downloadsDOTopen]
@@ -1551,6 +1754,8 @@ object firefoxDashWebextDashBrowserStrings {
   def dweb: dweb = "dweb".asInstanceOf[dweb]
   @scala.inline
   def editable: editable = "editable".asInstanceOf[editable]
+  @scala.inline
+  def ethernet: ethernet = "ethernet".asInstanceOf[ethernet]
   @scala.inline
   def evicted: evicted = "evicted".asInstanceOf[evicted]
   @scala.inline
@@ -1567,6 +1772,10 @@ object firefoxDashWebextDashBrowserStrings {
   def file: file = "file".asInstanceOf[file]
   @scala.inline
   def find: find = "find".asInstanceOf[find]
+  @scala.inline
+  def fingerprinting: fingerprinting = "fingerprinting".asInstanceOf[fingerprinting]
+  @scala.inline
+  def fingerprinting_content: fingerprinting_content = "fingerprinting_content".asInstanceOf[fingerprinting_content]
   @scala.inline
   def folder: folder = "folder".asInstanceOf[folder]
   @scala.inline
@@ -1614,6 +1823,8 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def in_progress: in_progress = "in_progress".asInstanceOf[in_progress]
   @scala.inline
+  def inactive: inactive = "inactive".asInstanceOf[inactive]
+  @scala.inline
   def incognito_persistent: incognito_persistent = "incognito_persistent".asInstanceOf[incognito_persistent]
   @scala.inline
   def incognito_session_only: incognito_session_only = "incognito_session_only".asInstanceOf[incognito_session_only]
@@ -1639,6 +1850,8 @@ object firefoxDashWebextDashBrowserStrings {
   def java: java = "java".asInstanceOf[java]
   @scala.inline
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  @scala.inline
+  def jsallocations: jsallocations = "jsallocations".asInstanceOf[jsallocations]
   @scala.inline
   def jstracer: jstracer = "jstracer".asInstanceOf[jstracer]
   @scala.inline
@@ -1668,6 +1881,10 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
   @scala.inline
+  def local: local = "local".asInstanceOf[local]
+  @scala.inline
+  def locked_portal: locked_portal = "locked_portal".asInstanceOf[locked_portal]
+  @scala.inline
   def mac: mac = "mac".asInstanceOf[mac]
   @scala.inline
   def magnet: magnet = "magnet".asInstanceOf[magnet]
@@ -1692,8 +1909,6 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def media: media = "media".asInstanceOf[media]
   @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
-  @scala.inline
   def menupanel: menupanel = "menupanel".asInstanceOf[menupanel]
   @scala.inline
   def menus: menus = "menus".asInstanceOf[menus]
@@ -1715,6 +1930,10 @@ object firefoxDashWebextDashBrowserStrings {
   def nativeMessaging: nativeMessaging = "nativeMessaging".asInstanceOf[nativeMessaging]
   @scala.inline
   def navbar: navbar = "navbar".asInstanceOf[navbar]
+  @scala.inline
+  def network: network = "network".asInstanceOf[network]
+  @scala.inline
+  def networkStatus: networkStatus = "networkStatus".asInstanceOf[networkStatus]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
@@ -1738,9 +1957,13 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
+  def normandyAddonStudy: normandyAddonStudy = "normandyAddonStudy".asInstanceOf[normandyAddonStudy]
+  @scala.inline
   def not_allowed: not_allowed = "not_allowed".asInstanceOf[not_allowed]
   @scala.inline
   def not_applicable: not_applicable = "not_applicable".asInstanceOf[not_applicable]
+  @scala.inline
+  def not_captive: not_captive = "not_captive".asInstanceOf[not_captive]
   @scala.inline
   def not_controllable: not_controllable = "not_controllable".asInstanceOf[not_controllable]
   @scala.inline
@@ -1798,6 +2021,8 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def pref: pref = "pref".asInstanceOf[pref]
   @scala.inline
+  def preferencereads: preferencereads = "preferencereads".asInstanceOf[preferencereads]
+  @scala.inline
   def priority_low: priority_low = "priority_low".asInstanceOf[priority_low]
   @scala.inline
   def priority_medium: priority_medium = "priority_medium".asInstanceOf[priority_medium]
@@ -1811,6 +2036,8 @@ object firefoxDashWebextDashBrowserStrings {
   def prompt: prompt = "prompt".asInstanceOf[prompt]
   @scala.inline
   def proxy: proxy = "proxy".asInstanceOf[proxy]
+  @scala.inline
+  def proxy_only: proxy_only = "proxy_only".asInstanceOf[proxy_only]
   @scala.inline
   def purpose: purpose = "purpose".asInstanceOf[purpose]
   @scala.inline
@@ -1828,6 +2055,8 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def reload: reload = "reload".asInstanceOf[reload]
   @scala.inline
+  def remote_tab: remote_tab = "remote_tab".asInstanceOf[remote_tab]
+  @scala.inline
   def repeat: repeat = "repeat".asInstanceOf[repeat]
   @scala.inline
   def `repeat-x`: `repeat-x` = "repeat-x".asInstanceOf[`repeat-x`]
@@ -1841,6 +2070,8 @@ object firefoxDashWebextDashBrowserStrings {
   def responseHeaders: responseHeaders = "responseHeaders".asInstanceOf[responseHeaders]
   @scala.inline
   def responsiveness: responsiveness = "responsiveness".asInstanceOf[responsiveness]
+  @scala.inline
+  def restricting: restricting = "restricting".asInstanceOf[restricting]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
@@ -1944,6 +2175,16 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def topSites: topSites = "topSites".asInstanceOf[topSites]
   @scala.inline
+  def tracking: tracking = "tracking".asInstanceOf[tracking]
+  @scala.inline
+  def tracking_ad: tracking_ad = "tracking_ad".asInstanceOf[tracking_ad]
+  @scala.inline
+  def tracking_analytics: tracking_analytics = "tracking_analytics".asInstanceOf[tracking_analytics]
+  @scala.inline
+  def tracking_content: tracking_content = "tracking_content".asInstanceOf[tracking_content]
+  @scala.inline
+  def tracking_social: tracking_social = "tracking_social".asInstanceOf[tracking_social]
+  @scala.inline
   def trackopts: trackopts = "trackopts".asInstanceOf[trackopts]
   @scala.inline
   def typed: typed = "typed".asInstanceOf[typed]
@@ -1956,7 +2197,11 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def unlimitedStorage: unlimitedStorage = "unlimitedStorage".asInstanceOf[unlimitedStorage]
   @scala.inline
+  def unlocked_portal: unlocked_portal = "unlocked_portal".asInstanceOf[unlocked_portal]
+  @scala.inline
   def unwanted: unwanted = "unwanted".asInstanceOf[unwanted]
+  @scala.inline
+  def up: up = "up".asInstanceOf[up]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline
@@ -1964,9 +2209,15 @@ object firefoxDashWebextDashBrowserStrings {
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   @scala.inline
+  def urlbar: urlbar = "urlbar".asInstanceOf[urlbar]
+  @scala.inline
   def urn: urn = "urn".asInstanceOf[urn]
   @scala.inline
+  def usb: usb = "usb".asInstanceOf[usb]
+  @scala.inline
   def user: user = "user".asInstanceOf[user]
+  @scala.inline
+  def user_script: user_script = "user_script".asInstanceOf[user_script]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline
@@ -1983,6 +2234,10 @@ object firefoxDashWebextDashBrowserStrings {
   def webcal: webcal = "webcal".asInstanceOf[webcal]
   @scala.inline
   def websocket: websocket = "websocket".asInstanceOf[websocket]
+  @scala.inline
+  def wifi: wifi = "wifi".asInstanceOf[wifi]
+  @scala.inline
+  def wimax: wimax = "wimax".asInstanceOf[wimax]
   @scala.inline
   def win: win = "win".asInstanceOf[win]
   @scala.inline

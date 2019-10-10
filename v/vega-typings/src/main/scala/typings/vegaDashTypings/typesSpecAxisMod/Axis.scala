@@ -1,7 +1,6 @@
 package typings.vegaDashTypings.typesSpecAxisMod
 
 import typings.vegaDashTypings.typesSpecEncodeMod.Text
-import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import typings.vegaDashTypings.typesSpecValuesMod.AlignValue
 import typings.vegaDashTypings.typesSpecValuesMod.AnchorValue
@@ -17,22 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Axis extends BaseAxis[
-      NumberValue, 
-      Double | SignalRef, 
-      BooleanValue, 
-      Double | Boolean | SignalRef, 
-      StringValue, 
-      ColorValue, 
-      FontWeightValue, 
-      FontStyleValue, 
-      AlignValue, 
-      TextBaselineValue, 
-      LayoutAlign | SignalRef, 
-      LabelOverlap | SignalRef, 
-      DashArrayValue, 
-      AnchorValue
-    ] {
+trait Axis extends BaseAxis {
   /**
     * Mark definitions for custom axis encoding.
     */

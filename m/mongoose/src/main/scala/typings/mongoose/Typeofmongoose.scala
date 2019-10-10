@@ -7,7 +7,6 @@ import typings.mongodb.mongodbMod.MongoError
 import typings.mongodb.mongodbMod.SessionOptions
 import typings.mongoose.mongooseMod.Connection
 import typings.mongoose.mongooseMod.ConnectionOptions
-import typings.mongoose.mongooseMod.ConnectionStates
 import typings.mongoose.mongooseMod.Document
 import typings.mongoose.mongooseMod.Model
 import typings.mongoose.mongooseMod.Mongoose
@@ -26,7 +25,6 @@ trait Typeofmongoose extends js.Object {
   ] = js.native
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
-  var STATES: ConnectionStates = js.native
   val Schema: TypeofSchema = js.native
   // Interfaces specific to schema type options should be scoped in this namespace
   val SchemaTypeOpts: js.Any = js.native

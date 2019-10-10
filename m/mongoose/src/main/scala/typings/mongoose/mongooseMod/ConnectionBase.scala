@@ -41,7 +41,7 @@ trait ConnectionBase extends EventEmitter {
     */
   var readyState: Double = js.native
   /** mapping of ready states */
-  var states: ConnectionStates = js.native
+  var states: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConnectionStates */ js.Any = js.native
   /** Closes the connection */
   def close(): js.Promise[Unit] = js.native
   def close(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native

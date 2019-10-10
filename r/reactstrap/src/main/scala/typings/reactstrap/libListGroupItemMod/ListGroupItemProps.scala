@@ -22,7 +22,7 @@ trait ListGroupItemProps
   var href: js.UndefOr[String] = js.undefined
   @JSName("onClick")
   var onClick_ListGroupItemProps: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object ListGroupItemProps {
@@ -38,7 +38,7 @@ object ListGroupItemProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
     onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): ListGroupItemProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

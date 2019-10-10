@@ -13,7 +13,7 @@ trait NavbarTogglerProps
   extends HTMLProps[HTMLAnchorElement]
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object NavbarTogglerProps {
@@ -23,7 +23,7 @@ object NavbarTogglerProps {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     className: String = null,
     cssModule: CSSModule = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     `type`: String = null
   ): NavbarTogglerProps = {
     val __obj = js.Dynamic.literal()

@@ -6,11 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait Hash extends Node {
   var pairs: js.Array[HashPair]
+  @JSName("type")
+  var type_Hash: typings.handlebars.handlebarsStrings.Hash
 }
 
 object Hash {
   @scala.inline
-  def apply(loc: SourceLocation, pairs: js.Array[HashPair], `type`: String): Hash = {
+  def apply(loc: SourceLocation, pairs: js.Array[HashPair], `type`: typings.handlebars.handlebarsStrings.Hash): Hash = {
     val __obj = js.Dynamic.literal(loc = loc, pairs = pairs)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Hash]

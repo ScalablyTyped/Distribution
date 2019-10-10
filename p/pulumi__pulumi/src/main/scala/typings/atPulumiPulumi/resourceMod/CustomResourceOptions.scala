@@ -40,6 +40,7 @@ object CustomResourceOptions {
     parent: Resource = null,
     protect: js.UndefOr[Boolean] = js.undefined,
     provider: ProviderResource = null,
+    transformations: js.Array[ResourceTransformation] = null,
     version: String = null
   ): CustomResourceOptions = {
     val __obj = js.Dynamic.literal()
@@ -54,6 +55,7 @@ object CustomResourceOptions {
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
     if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[CustomResourceOptions]
   }

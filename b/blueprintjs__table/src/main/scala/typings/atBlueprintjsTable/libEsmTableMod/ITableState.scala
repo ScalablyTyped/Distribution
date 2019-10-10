@@ -1,13 +1,17 @@
 package typings.atBlueprintjsTable.libEsmTableMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atBlueprintjsTable.libEsmCommonCellMod.IFocusedCellCoordinates
 import typings.atBlueprintjsTable.libEsmCommonRectMod.Rect
 import typings.atBlueprintjsTable.libEsmRegionsMod.IRegion
+import typings.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITableState extends js.Object {
+  var childrenArray: js.Array[ReactElement]
+  var columnIdToIndex: StringDictionary[Double]
   /**
     * An array of column widths. These are initialized from the column props
     * and updated when the user drags column header resize handles.
@@ -67,6 +71,8 @@ trait ITableState extends js.Object {
 object ITableState {
   @scala.inline
   def apply(
+    childrenArray: js.Array[ReactElement],
+    columnIdToIndex: StringDictionary[Double],
     columnWidths: js.Array[Double] = null,
     focusedCell: IFocusedCellCoordinates = null,
     horizontalGuides: js.Array[Double] = null,
@@ -79,7 +85,7 @@ object ITableState {
     verticalGuides: js.Array[Double] = null,
     viewportRect: Rect = null
   ): ITableState = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(childrenArray = childrenArray, columnIdToIndex = columnIdToIndex)
     if (columnWidths != null) __obj.updateDynamic("columnWidths")(columnWidths)
     if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell)
     if (horizontalGuides != null) __obj.updateDynamic("horizontalGuides")(horizontalGuides)

@@ -46,6 +46,10 @@ trait CreateJobRequest extends js.Object {
     */
   var StatusUpdateInterval: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.StatusUpdateInterval] = js.undefined
   /**
+    * The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.
+    */
+  var Tags: js.UndefOr[__mapOf__string] = js.undefined
+  /**
     * User-defined metadata that you want to associate with an MediaConvert job. You specify metadata in key/value pairs.
     */
   var UserMetadata: js.UndefOr[__mapOf__string] = js.undefined
@@ -64,6 +68,7 @@ object CreateJobRequest {
     Queue: __string = null,
     SimulateReservedQueue: SimulateReservedQueue = null,
     StatusUpdateInterval: StatusUpdateInterval = null,
+    Tags: __mapOf__string = null,
     UserMetadata: __mapOf__string = null
   ): CreateJobRequest = {
     val __obj = js.Dynamic.literal(Role = Role, Settings = Settings)
@@ -75,6 +80,7 @@ object CreateJobRequest {
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)
     if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata)
     __obj.asInstanceOf[CreateJobRequest]
   }

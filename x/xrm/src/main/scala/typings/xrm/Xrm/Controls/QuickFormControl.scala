@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation._
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui-quickforms External Link: formContext.ui.quickForms (Client API reference)}
   */
 @js.native
-trait QuickFormControl extends Control {
+trait QuickFormControl
+  extends Control
+     with UiFocusable
+     with UiCanGetDisabledElement
+     with UiCanSetDisabledElement
+     with UiCanSetVisibleElement {
   /**
     * Gets the constituent controls in a quick view control.
     * @returns An array of controls.

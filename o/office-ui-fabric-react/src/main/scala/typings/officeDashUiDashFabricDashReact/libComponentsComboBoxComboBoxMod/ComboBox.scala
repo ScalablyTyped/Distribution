@@ -102,7 +102,7 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
   var _handleInputWhenDisabled: js.Any = js.native
   var _handleTouchAndPointerEvent: js.Any = js.native
   var _hasPendingValue: js.Any = js.native
-  /** The base id for the comboBox */
+  /** The base id for the ComboBox */
   var _id: js.Any = js.native
   /**
     * Is the index within the bounds of the array?

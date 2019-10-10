@@ -18,7 +18,7 @@ trait PutPermissionRequest extends js.Object {
     */
   var EventBusName: js.UndefOr[NonPartnerEventBusName] = js.undefined
   /**
-    * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify "*" to permit any account to put events to your default event bus. If you specify "*" without specifying Condition, avoid creating rules that might match undesirable events. To create more secure rules, make sure that the event pattern for each rule contains an account field with a specific account ID to receive events from. Rules with an account field don't match any events sent from other accounts.
+    * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify "*" to permit any account to put events to your default event bus. If you specify "*" without specifying Condition, avoid creating rules that might match undesirable events. To create more secure rules, make sure that the event pattern for each rule contains an account field with a specific account ID to receive events from. Rules that have an account field match events sent only from accounts that are listed in the rule's account field.
     */
   var Principal: typings.awsDashSdk.clientsEventbridgeMod.Principal
   /**

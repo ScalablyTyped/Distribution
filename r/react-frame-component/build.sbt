@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-frame-component"
-version := "4.1-dt-20191002Z-508af6"
+version := "4.1-dt-20191009Z-b1f138"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

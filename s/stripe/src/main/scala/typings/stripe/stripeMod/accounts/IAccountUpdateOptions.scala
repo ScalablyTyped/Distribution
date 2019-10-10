@@ -4,8 +4,8 @@ import typings.stripe.Anon_Accountholdername
 import typings.stripe.Anon_Branding
 import typings.stripe.Anon_Date
 import typings.stripe.Anon_Mcc
-import typings.stripe.stripeMod.IDataOptions
-import typings.stripe.stripeMod.IMetadata
+import typings.stripe.stripeMod.IDataOptionsWithMetadata
+import typings.stripe.stripeMod.IOptionsMetadata
 import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.individual
 import scala.scalajs.js
@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IAccountUpdateOptions
-  extends IDataOptions
+  extends IDataOptionsWithMetadata
      with IAccountShared {
   /**
     * An account token, used to securely provide details to the account.
@@ -56,8 +56,9 @@ object IAccountUpdateOptions {
     external_account: Anon_Accountholdername = null,
     include: js.Array[String] = null,
     individual: IIndividualCreateUpdateOptions = null,
-    metadata: IMetadata = null,
+    metadata: IOptionsMetadata = null,
     product_description: String = null,
+    requested_capabilities: js.Array[String] = null,
     settings: Anon_Branding = null,
     tos_acceptance: Anon_Date = null
   ): IAccountUpdateOptions = {
@@ -74,6 +75,7 @@ object IAccountUpdateOptions {
     if (individual != null) __obj.updateDynamic("individual")(individual)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (product_description != null) __obj.updateDynamic("product_description")(product_description)
+    if (requested_capabilities != null) __obj.updateDynamic("requested_capabilities")(requested_capabilities)
     if (settings != null) __obj.updateDynamic("settings")(settings)
     if (tos_acceptance != null) __obj.updateDynamic("tos_acceptance")(tos_acceptance)
     __obj.asInstanceOf[IAccountUpdateOptions]

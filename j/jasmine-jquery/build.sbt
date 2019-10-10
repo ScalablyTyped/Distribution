@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jasmine-jquery"
-version := "1.5.8-dt-20190322Z-44d8ba"
+version := "1.5.8-dt-20190322Z-77ea8e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jasmine" % "3.4-dt-20191001Z-761326",
+  "org.scalablytyped" %%% "jasmine" % "3.4-dt-20191009Z-761326",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-f791ad",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-77de40",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")

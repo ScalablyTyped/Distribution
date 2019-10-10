@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "swag"
-version := "0.6.1-dt-20190322Z-f6b3a0"
+version := "0.6.1-dt-20190322Z-a3495e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "handlebars" % "4.4.2-869183",
+  "org.scalablytyped" %%% "handlebars" % "4.4.3-e0451c",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

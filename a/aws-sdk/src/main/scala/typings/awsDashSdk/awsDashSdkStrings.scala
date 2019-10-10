@@ -370,6 +370,7 @@ import typings.awsDashSdk.clientsDatasyncMod._PreserveDeletedFiles
 import typings.awsDashSdk.clientsDatasyncMod._PreserveDevices
 import typings.awsDashSdk.clientsDatasyncMod._SmbVersion
 import typings.awsDashSdk.clientsDatasyncMod._TaskExecutionStatus
+import typings.awsDashSdk.clientsDatasyncMod._TaskQueueing
 import typings.awsDashSdk.clientsDatasyncMod._TaskStatus
 import typings.awsDashSdk.clientsDatasyncMod._Uid
 import typings.awsDashSdk.clientsDatasyncMod._VerifyMode
@@ -1018,6 +1019,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._Ac3DynamicRangeCompressionProf
 import typings.awsDashSdk.clientsMediaconvertMod._Ac3LfeFilter
 import typings.awsDashSdk.clientsMediaconvertMod._Ac3MetadataControl
 import typings.awsDashSdk.clientsMediaconvertMod._AccelerationMode
+import typings.awsDashSdk.clientsMediaconvertMod._AccelerationStatus
 import typings.awsDashSdk.clientsMediaconvertMod._AfdSignaling
 import typings.awsDashSdk.clientsMediaconvertMod._AncillaryConvert608To708
 import typings.awsDashSdk.clientsMediaconvertMod._AncillaryTerminateCaptions
@@ -1046,6 +1048,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._CmafInitializationVectorInMani
 import typings.awsDashSdk.clientsMediaconvertMod._CmafKeyProviderType
 import typings.awsDashSdk.clientsMediaconvertMod._CmafManifestCompression
 import typings.awsDashSdk.clientsMediaconvertMod._CmafManifestDurationFormat
+import typings.awsDashSdk.clientsMediaconvertMod._CmafMpdProfile
 import typings.awsDashSdk.clientsMediaconvertMod._CmafSegmentControl
 import typings.awsDashSdk.clientsMediaconvertMod._CmafStreamInfResolution
 import typings.awsDashSdk.clientsMediaconvertMod._CmafWriteDASHManifest
@@ -1056,6 +1059,7 @@ import typings.awsDashSdk.clientsMediaconvertMod._ColorSpaceConversion
 import typings.awsDashSdk.clientsMediaconvertMod._ColorSpaceUsage
 import typings.awsDashSdk.clientsMediaconvertMod._ContainerType
 import typings.awsDashSdk.clientsMediaconvertMod._DashIsoHbbtvCompliance
+import typings.awsDashSdk.clientsMediaconvertMod._DashIsoMpdProfile
 import typings.awsDashSdk.clientsMediaconvertMod._DashIsoPlaybackDeviceCompatibility
 import typings.awsDashSdk.clientsMediaconvertMod._DashIsoSegmentControl
 import typings.awsDashSdk.clientsMediaconvertMod._DashIsoWriteSegmentTimelineInRepresentation
@@ -2829,6 +2833,9 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait AC3 extends _AudioCodec
+  
+  @js.native
+  sealed trait ACCELERATED extends _AccelerationStatus
   
   @js.native
   sealed trait ACCEPT
@@ -7954,6 +7961,7 @@ object awsDashSdkStrings {
        with _SimulateReservedQueue
        with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamStatus
        with _StreamingStatus
+       with _TaskQueueing
        with _TimeToLiveStatus
        with typings.awsDashSdk.clientsDynamodbMod._TimeToLiveStatus
        with _TtmlStylePassthrough
@@ -8989,6 +8997,7 @@ object awsDashSdkStrings {
        with _SimulateReservedQueue
        with typings.awsDashSdk.clientsDynamodbstreamsMod._StreamStatus
        with _StreamingStatus
+       with _TaskQueueing
        with _TimeToLiveStatus
        with typings.awsDashSdk.clientsDynamodbMod._TimeToLiveStatus
        with _TtmlStylePassthrough
@@ -12107,7 +12116,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait IN_PROGRESS
-    extends _AcceleratorStatus
+    extends _AccelerationStatus
+       with _AcceleratorStatus
        with _ApplicationStatus
        with _AuditCheckRunStatus
        with _AuditMitigationActionsExecutionStatus
@@ -12708,7 +12718,8 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait JOB
-    extends typings.awsDashSdk.clientsIotMod._EventType
+    extends _BillingTagsSource
+       with typings.awsDashSdk.clientsIotMod._EventType
        with _NodeType
   
   @js.native
@@ -13776,6 +13787,11 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait MAIN_MAIN extends _H265CodecProfile
+  
+  @js.native
+  sealed trait MAIN_PROFILE
+    extends _CmafMpdProfile
+       with _DashIsoMpdProfile
   
   @js.native
   sealed trait MAL extends _LanguageCode
@@ -14980,8 +14996,12 @@ object awsDashSdkStrings {
   sealed trait NOTIFICATIONS extends _Feature
   
   @js.native
+  sealed trait NOT_ACCELERATED extends _AccelerationStatus
+  
+  @js.native
   sealed trait NOT_APPLICABLE
-    extends _ComplianceType
+    extends _AccelerationStatus
+       with _ComplianceType
        with _PatchComplianceDataState
        with _SchemaStatus
   
@@ -15553,6 +15573,11 @@ object awsDashSdkStrings {
   
   @js.native
   sealed trait ON_DEMAND_AUDIT_TASK extends _AuditTaskType
+  
+  @js.native
+  sealed trait ON_DEMAND_PROFILE
+    extends _CmafMpdProfile
+       with _DashIsoMpdProfile
   
   @js.native
   sealed trait OPEN
@@ -16366,7 +16391,9 @@ object awsDashSdkStrings {
        with typings.awsDashSdk.clientsWafregionalMod._GeoMatchConstraintValue
   
   @js.native
-  sealed trait PREFERRED extends _Criticality
+  sealed trait PREFERRED
+    extends _AccelerationMode
+       with _Criticality
   
   @js.native
   sealed trait PREFIX extends _StringFilterComparison
@@ -17048,6 +17075,8 @@ object awsDashSdkStrings {
        with _MatchmakingConfigurationStatus
        with _QueryExecutionState
        with _RemediationExecutionState
+       with _TaskExecutionStatus
+       with _TaskStatus
   
   @js.native
   sealed trait QUEUED_TIME extends _HistoricalMetricName
@@ -29152,6 +29181,8 @@ object awsDashSdkStrings {
   @scala.inline
   def AC3: AC3 = "AC3".asInstanceOf[AC3]
   @scala.inline
+  def ACCELERATED: ACCELERATED = "ACCELERATED".asInstanceOf[ACCELERATED]
+  @scala.inline
   def ACCEPT: ACCEPT = "ACCEPT".asInstanceOf[ACCEPT]
   @scala.inline
   def ACCEPTED: ACCEPTED = "ACCEPTED".asInstanceOf[ACCEPTED]
@@ -34186,6 +34217,8 @@ object awsDashSdkStrings {
   @scala.inline
   def MAIN_MAIN: MAIN_MAIN = "MAIN_MAIN".asInstanceOf[MAIN_MAIN]
   @scala.inline
+  def MAIN_PROFILE: MAIN_PROFILE = "MAIN_PROFILE".asInstanceOf[MAIN_PROFILE]
+  @scala.inline
   def MAL: MAL = "MAL".asInstanceOf[MAL]
   @scala.inline
   def MANAGED: MANAGED = "MANAGED".asInstanceOf[MANAGED]
@@ -34734,6 +34767,8 @@ object awsDashSdkStrings {
   @scala.inline
   def NOTIFICATIONS: NOTIFICATIONS = "NOTIFICATIONS".asInstanceOf[NOTIFICATIONS]
   @scala.inline
+  def NOT_ACCELERATED: NOT_ACCELERATED = "NOT_ACCELERATED".asInstanceOf[NOT_ACCELERATED]
+  @scala.inline
   def NOT_APPLICABLE: NOT_APPLICABLE = "NOT_APPLICABLE".asInstanceOf[NOT_APPLICABLE]
   @scala.inline
   def NOT_AVAILABLE: NOT_AVAILABLE = "NOT_AVAILABLE".asInstanceOf[NOT_AVAILABLE]
@@ -35001,6 +35036,8 @@ object awsDashSdkStrings {
   def ON_DEMAND: ON_DEMAND = "ON_DEMAND".asInstanceOf[ON_DEMAND]
   @scala.inline
   def ON_DEMAND_AUDIT_TASK: ON_DEMAND_AUDIT_TASK = "ON_DEMAND_AUDIT_TASK".asInstanceOf[ON_DEMAND_AUDIT_TASK]
+  @scala.inline
+  def ON_DEMAND_PROFILE: ON_DEMAND_PROFILE = "ON_DEMAND_PROFILE".asInstanceOf[ON_DEMAND_PROFILE]
   @scala.inline
   def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
   @scala.inline

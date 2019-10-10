@@ -46,5 +46,9 @@ class SymbolInformation protected () extends js.Object {
   		 * The name of this symbol.
   		 */
   var name: String = js.native
+  /**
+  		 * Tags for this symbol.
+  		 */
+  var tags: js.UndefOr[js.Array[SymbolTag]] = js.native
 }
 

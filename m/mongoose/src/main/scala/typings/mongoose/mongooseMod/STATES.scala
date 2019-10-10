@@ -7,5 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mongoose", "STATES")
 @js.native
-object STATES extends TopLevel[ConnectionStates]
+object STATES
+  extends TopLevel[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConnectionStates */ js.Any
+    ]
 

@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser.browser.proxy
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxDashWebextDashBrowser.Anon_DocumentUrl
+import typings.firefoxDashWebextDashBrowser.Anon_CookieStoreId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.proxy.onRequest")
 @js.native
 object onRequest
-  extends TopLevel[_ProxyOnRequestEvent[js.Function1[/* details */ Anon_DocumentUrl, Unit]]]
+  extends TopLevel[_ProxyOnRequestEvent[js.Function1[/* details */ Anon_CookieStoreId, Unit]]]
 

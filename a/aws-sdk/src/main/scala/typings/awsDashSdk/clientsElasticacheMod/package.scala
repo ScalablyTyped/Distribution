@@ -27,12 +27,14 @@ package object clientsElasticacheMod {
   type AvailabilityZonesList = js.Array[String]
   type Boolean = scala.Boolean
   type BooleanOptional = scala.Boolean
+  type CacheClusterIdList = js.Array[String]
   type CacheClusterList = js.Array[CacheCluster]
   type CacheEngineVersionList = js.Array[CacheEngineVersion]
   type CacheNodeIdsList = js.Array[String]
   type CacheNodeList = js.Array[CacheNode]
   type CacheNodeTypeSpecificParametersList = js.Array[CacheNodeTypeSpecificParameter]
   type CacheNodeTypeSpecificValueList = js.Array[CacheNodeTypeSpecificValue]
+  type CacheNodeUpdateStatusList = js.Array[CacheNodeUpdateStatus]
   type CacheParameterGroupList = js.Array[CacheParameterGroup]
   type CacheSecurityGroupMembershipList = js.Array[CacheSecurityGroupMembership]
   type CacheSecurityGroupNameList = js.Array[String]

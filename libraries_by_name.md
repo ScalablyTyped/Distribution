@@ -336,6 +336,7 @@
 | [array-union](./a/array-union) | Create an array of unique values, in order, from t | array, set, uniq, unique, duplicate, remove, union, combine, merge |
 | [array-uniq](./a/array-uniq) | Create an array without duplicates | array, set, uniq, unique, duplicate, remove |
 | [array-unique](./a/array-unique) | Remove duplicate values from an array. Fastest ES5 | array, unique |
+| [array_dot_prototype_dot_f](./a/array_dot_prototype_dot_flat) | An ESnext spec-compliant Array.prototype.flat shim | Array.prototype.flatten, Array.prototype.flat, flatten, flat, array, ESnext, shim, polyfill, flatMap, Array.prototype.flatMap, es-shim API |
 | [array_dot_prototype_dot_f](./a/array_dot_prototype_dot_flatmap) | An ESnext spec-compliant Array.prototype.flatMap s | Array.prototype.flatMap, flatMap, array, ESnext, shim, polyfill, flatten, Array.prototype.flatten, es-shim API |
 | [arrify](./a/arrify) | Convert a value to an array | array, arrify, arrayify, convert, value, ensure |
 | [artillery](./a/artillery) | Flexible and powerful toolkit for load and functio | load testing, stress testing, benchmark, performance, blackbox testing |
@@ -415,6 +416,7 @@
 | [auto-sni](./a/auto-sni) | Automatically generate tls credentials using letse | auto, auto-sni, http, https, lets-encrypt, letsencrypt, letsencrypt-auto, renew, secure, sni, ssl, tls, web |
 | [autobahn](./a/autobahn) | An implementation of The Web Application Messaging | WAMP, WebSocket, RPC, PubSub |
 | [autobind-decorator](./a/autobind-decorator) | Decorator for binding method to an object | - |
+| [autocannon](./a/autocannon) | Fast HTTP benchmarking tool written in Node.js | http, soak, load, fast, wrk, ab, test |
 | [autolinker](./a/autolinker) | Utility to automatically link the URLs, email addr | auto, link, autolink, url, urls, anchor |
 | [autoprefixer](./a/autoprefixer) | Parse CSS and add vendor prefixes to CSS rules usi | autoprefixer, css, prefix, postcss, postcss-plugin |
 | [autoprefixer-core](./a/autoprefixer-core) | autoprefixer-core was depreacted, use autoprefixer | - |
@@ -851,6 +853,7 @@
 | [capitalize](./c/capitalize) | capitalize the first letter of a string, or all wo | capitalize |
 | [capture-console](./c/capture-console) | Simple and easy stdio capture for Node.js | stdio, stderr, stdout, logging, capture, console, intercept |
 | [carbon__colors](./c/carbon__colors) | Colors for digital and software products using the | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
+| [carbon__icons-react](./c/carbon__icons-react) | React components for icons in digital and software | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
 | [carbon__layout](./c/carbon__layout) | Layout helpers for digital and software products u | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
 | [carbon__motion](./c/carbon__motion) | Motion helpers for digital and software products u | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
 | [carbon__themes](./c/carbon__themes) | Themes for applying color in the Carbon Design Sys | ibm, elements, carbon, carbon-elements, carbon-design-system |
@@ -1762,6 +1765,7 @@
 | [esrever](./e/esrever) | A fully Unicode-aware string reverser written in J | string, reverse, unicode |
 | [esri-leaflet](./e/esri-leaflet) | Leaflet plugins for consuming ArcGIS Online and Ar | arcgis, esri, esri leaflet, gis, leaflet plugin, mapping |
 | [esri-leaflet-geocoder](./e/esri-leaflet-geocoder) | Esri Geocoding utility and search plugin for Leafl | - |
+| [estimate](./e/estimate) | Calculate remaining reading time estimates in real | - |
 | [estraverse](./e/estraverse) | ECMAScript JS AST traversal functions | - |
 | [estree](./e/estree) | - | - |
 | [estree-walker](./e/estree-walker) | Traverse an ESTree-compliant AST | - |
@@ -1878,6 +1882,7 @@
 | [express-slow-down](./e/express-slow-down) | Basic IP rate-limiting middleware for Express that | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
 | [express-socket_dot_io-ses](./e/express-socket_dot_io-session) | Share a cookie-based express-session middleware wi | socket.io, express, express-session |
 | [express-sslify](./e/express-sslify) | Enforces SSL for node.js express projects | express, node.js, node, ssl, sslify, http, redirect |
+| [express-status-monitor](./e/express-status-monitor) | Realtime Monitoring for Express-based Node applica | node, status, monitoring, express, charts |
 | [express-to-koa](./e/express-to-koa) | Use express middlewares in Koa2, the one that real | express-to-koa, express, koa, koa2, middleware, converter, connect, framework |
 | [express-unless](./e/express-unless) | Conditionally add a middleware to express with som | - |
 | [express-urlrewrite](./e/express-urlrewrite) | URL rewrite middleware for express | express, middleware, rewrite, redirect, url |
@@ -2427,6 +2432,7 @@
 | [globalize](./g/globalize) | A JavaScript library for internationalization and  | utility, globalization, internationalization, multilingualization, localization, g11n, i18n, m17n, L10n, localize, format, parse, translate, strings, numbers, dates, times, calendars, plural, plurals, pluralize, cultures, languages, locales, Unicode, CLDR, JSON |
 | [globalize-compiler](./g/globalize-compiler) | Globalize.js runtime compiler for your formatters  | globalize |
 | [globby](./g/globby) | Extends glob with support for multiple patterns an | all, array, directories, dirs, expand, files, filesystem, filter, find, fnmatch, folders, fs, glob, globbing, globs, gulpfriendly, match, matcher, minimatch, multi, multiple, paths, pattern, patterns, traverse, util, utility, wildcard, wildcards, promise, gitignore, git |
+| [globjoin](./g/globjoin) | Join paths and globs. | array, glob, glob join, globbing, multiple, negative glob, path, path join, patterns, wildcard |
 | [globule](./g/globule) | An easy-to-use wildcard globbing library. | glob, file, match, mapping, expand, wildcard, pattern, sync, awesome |
 | [glue](./g/glue) | Server composer for hapi.js | server, pack, composer, manifest, hapi |
 | [gm](./g/gm) | GraphicsMagick and ImageMagick for node.js | graphics, magick, image, graphicsmagick, imagemagick, gm, convert, identify, compare |
@@ -2758,6 +2764,7 @@
 | [hpp](./h/hpp) | Express middleware to protect against HTTP Paramet | hpp, http, parameter, pollution, attack, security |
 | [html-entities](./h/html-entities) | Faster HTML entities encode/decode library. | html, html entities, html entities encode, html entities decode, entities, entities encode, entities decode |
 | [html-minifier](./h/html-minifier) | Highly configurable, well-tested, JavaScript-based | cli, compress, compressor, css, html, htmlmin, javascript, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, uglifier, uglify |
+| [html-parser](./h/html-parser) | HTML/XML parser with less explosions | html, xml, parser, explosion |
 | [html-pdf](./h/html-pdf) | HTML to PDF converter that uses phantomjs | html, pdf, phantom, phantomjs, nodejs |
 | [html-tag-names](./h/html-tag-names) | List of known HTML tag-names | html, tag, name, element, tagname, w3c, whatwg |
 | [html-tags](./h/html-tags) | List of standard HTML tags | html, html5, tags, elements, list, whatwg, w3c, void, self-closing |
@@ -3684,6 +3691,7 @@
 | [ky-universal](./k/ky-universal) | Use Ky in both Node.js and browsers | ky, universal, isomorphic, browser, browsers, node, react, vue, ssr, fetch, request, requests, http, https, fetching, get, url, curl, wget, net, network, ajax, api, rest, xhr, browser, got, axios, node-fetch |
 | [kythe](./k/kythe) | - | - |
 | [lab](./l/lab) | Test utility | test |
+| [labeled-stream-splicer](./l/labeled-stream-splicer) | stream splicer with labels | splice, stream, labels, mutable, pipeline |
 | [ladda](./l/ladda) | Buttons with built-in loading indicators | - |
 | [lambda-log](./l/lambda-log) | Basic logging mechanism for Node 6.10+ Lambda Func | lambda, aws, log, logger, console, wrap, wrapper, node6.10, error, warn, info, message, assert, json, cloudwatch, logs |
 | [lambda-phi](./l/lambda-phi) | Typescript framework for AWS API Gateway and Lambd | api gateway, lambda, aws, typescript |
@@ -4056,6 +4064,7 @@
 | [lodash_dot_spread](./l/lodash_dot_spread) | The lodash method _.spread exported as a module. | lodash-modularized, spread |
 | [lodash_dot_startcase](./l/lodash_dot_startcase) | The lodash method _.startCase exported as a module | lodash-modularized, startcase |
 | [lodash_dot_startswith](./l/lodash_dot_startswith) | The lodash method _.startsWith exported as a modul | lodash-modularized, startswith |
+| [lodash_dot_stubtrue](./l/lodash_dot_stubtrue) | The lodash method _.stubTrue exported as a module. | lodash-modularized, stubtrue |
 | [lodash_dot_subtract](./l/lodash_dot_subtract) | The lodash method _.subtract exported as a module. | lodash-modularized, subtract |
 | [lodash_dot_sum](./l/lodash_dot_sum) | The lodash method _.sum exported as a module. | lodash-modularized, sum |
 | [lodash_dot_sumby](./l/lodash_dot_sumby) | The lodash method _.sumBy exported as a module. | lodash-modularized, sumby |
@@ -4521,6 +4530,7 @@
 | [nano](./n/nano) | The official CouchDB client for Node.js | couchdb, data, request, json, nosql, micro, nano, database |
 | [nano-equal](./n/nano-equal) | Ultra fast and compact implementation of deep equa | equal, deep equal |
 | [nanoajax](./n/nanoajax) | A small ajax lib | - |
+| [nanoassert](./n/nanoassert) | Nanoscale assertion module | assert, unassert, power-assert, tiny, nano, pico |
 | [nanoevents](./n/nanoevents) | Simple and tiny (101 bytes) event emitter library | EventEmitter, Events, emit, emitter, event, pub/sub, publish, reactor, subscribe |
 | [nanographql](./n/nanographql) | Tiny graphQL client library | graphql, small, nano |
 | [nanoid](./n/nanoid) | A tiny (141 bytes), secure URL-friendly unique str | uuid, random, id, url |
@@ -5816,6 +5826,7 @@
 | [react-native-pdf-lib](./r/react-native-pdf-lib) | A react native library for handling generating PDF | react-native |
 | [react-native-percentage-c](./r/react-native-percentage-circle) | react native percentage circle and also be a progr | percentage, circle, progress, bar |
 | [react-native-permissions](./r/react-native-permissions) | Check user permissions in React Native | react-native, react-permissions, permissions |
+| [react-native-phone-input](./r/react-native-phone-input) | Phone input box for React Native | react-native, phone, telephone, phone input, input, tel, input text, international, react-native-component, ios, android |
 | [react-native-photo-view](./r/react-native-photo-view) | Displaying photos with pinch-to-zoom | react-native, react-component, ios, android, gallery, lightbox, pinch, pinch-to-zoom, mobile |
 | [react-native-platform-tou](./r/react-native-platform-touchable) | Uses TouchableNativeFeedback where possible and fa | react-native, react |
 | [react-native-popup-dialog](./r/react-native-popup-dialog) | React Native Popup Dialog for IOS & Android. | dialog, popup, react dialog, react-native, react-native-popup-dialog, react-native-dialog, react native dialog, popup-dialog, react-component, ios, android |
@@ -5826,6 +5837,7 @@
 | [react-native-read-more-te](./r/react-native-read-more-text) | Add a 'Read More' and optionally a 'Read Less' but | - |
 | [react-native-referrer](./r/react-native-referrer) |   | react-native, referrer, play store |
 | [react-native-restart](./r/react-native-restart) | React Native Restart Component | react-component, react-native, ios, android, restart |
+| [react-native-rss-parser](./r/react-native-rss-parser) | React Native compatible package to parse RSS feeds | react, native, rss, parser |
 | [react-native-safari-view](./r/react-native-safari-view) | A React Native wrapper for Safari View Controller | react-native, react, native, webview, web, view, safari, safariview, react-component, react-native-component |
 | [react-native-safe-area](./r/react-native-safe-area) | React Native module to get Safe Area Insets for iO | react-native, ios, iPhoneX, SafeArea |
 | [react-native-safe-area-vi](./r/react-native-safe-area-view) | JS only version of SafeAreaView for supporting iPh | react-native, iPhoneX, SafeAreaView |
@@ -6690,6 +6702,7 @@
 | [spark-md5](./s/spark-md5) | Lightning fast normal and incremental md5 for java | md5, fast, spark, incremental |
 | [sparkly](./s/sparkly) | Generate sparklines ▁▂▃▅▂▇ | spark, sparkly, line, sparkline, sparklines, unicode, data, graph, plot, ascii |
 | [sparkpost](./s/sparkpost) | A Node.js wrapper for interfacing with your favori | email, messaging |
+| [sparql-http-client](./s/sparql-http-client) | Simplified SPARQL HTTP request client | sparql, http, rdf |
 | [sparqljs](./s/sparqljs) | A parser for the SPARQL query language | sparql, rdf, query, parser |
 | [sparse-bitfield](./s/sparse-bitfield) | Bitfield that allocates a series of small buffers  | - |
 | [spatialite](./s/spatialite) | SpatiaLite for node | - |
@@ -7148,6 +7161,7 @@
 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension | truncate, trunk8, jquery, text, cut-off, spill-over |
 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types | - |
 | [tryer](./t/tryer) | Because everyone loves a tryer | repeat, retry, predicate, conditional, invocation, execution, loop, condition, termination, exponential, backoff |
+| [tryghost__content-api](./t/tryghost__content-api) | JavaScript Client Library for the Ghost  | - |
 | [ts-essentials](./t/ts-essentials) | All essential Typescript types in one place | typescript, types, essentials |
 | [ts-invariant](./t/ts-invariant) | TypeScript implementation of invariant(condition,  | invariant, assertion, precondition, TypeScript |
 | [ts-mockito](./t/ts-mockito) | Mocking library for TypeScript | mock, typescript, tests, fake, stub, spy, javascript |
@@ -7434,6 +7448,7 @@
 | [vue](./v/vue) | Reactive, component-oriented view layer for modern | vue |
 | [vue-chartkick](./v/vue-chartkick) | Create beautiful JavaScript charts with one line o | - |
 | [vue-class-component](./v/vue-class-component) | ES201X/TypeScript class decorator for Vue componen | vue, class, babel, typescript |
+| [vue-clickaway](./v/vue-clickaway) | Reusable clickaway directive for reusable Vue.js c | click, clickaway, reusable, vue, vue-directive, vuejs |
 | [vue-color](./v/vue-color) | Color of Vue Components | color, vuejs |
 | [vue-datetime](./v/vue-datetime) | Mobile friendly datetime picker for Vue. Supports  | datetime, datetime-picker, picker, date, vue |
 | [vue-i18n](./v/vue-i18n) | Internationalization plugin for Vue.js | i18n, internationalization, plugin, vue, vue.js |

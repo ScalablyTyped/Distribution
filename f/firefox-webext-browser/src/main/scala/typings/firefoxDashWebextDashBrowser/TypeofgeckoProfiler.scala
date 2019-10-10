@@ -11,6 +11,12 @@ trait TypeofgeckoProfiler extends js.Object {
     * @param isRunning Whether the profiler is running or not. Pausing the profiler will not affect this value.
     */
   val onRunning: WebExtEvent[js.Function1[/* isRunning */ Boolean, Unit]]
+  /**
+    * Gathers the profile data from the current profiling session, and writes it to disk. The returned promise
+    * resolves to a path that locates the created file.
+    * @param fileName The name of the file inside the profile/profiler directory
+    */
+  def dumpProfileToFile(fileName: String): js.Promise[_]
   /** Gathers the profile data from the current profiling session. */
   def getProfile(): js.Promise[_]
   /**
@@ -18,6 +24,11 @@ trait TypeofgeckoProfiler extends js.Object {
     * that contains a JSON string.
     */
   def getProfileAsArrayBuffer(): js.Promise[_]
+  /**
+    * Gathers the profile data from the current profiling session. The returned promise resolves to an array buffer
+    * that contains a gzipped JSON string.
+    */
+  def getProfileAsGzippedArrayBuffer(): js.Promise[_]
   /**
     * Gets the debug symbols for a particular library.
     * @param debugName The name of the library's debug file. For example, 'xul.pdb
@@ -38,8 +49,10 @@ trait TypeofgeckoProfiler extends js.Object {
 object TypeofgeckoProfiler {
   @scala.inline
   def apply(
+    dumpProfileToFile: String => js.Promise[_],
     getProfile: () => js.Promise[_],
     getProfileAsArrayBuffer: () => js.Promise[_],
+    getProfileAsGzippedArrayBuffer: () => js.Promise[_],
     getSymbols: (String, String) => js.Promise[_],
     onRunning: WebExtEvent[js.Function1[/* isRunning */ Boolean, Unit]],
     pause: () => js.Promise[_],
@@ -47,7 +60,7 @@ object TypeofgeckoProfiler {
     start: Anon_BufferSize => js.Promise[_],
     stop: () => js.Promise[_]
   ): TypeofgeckoProfiler = {
-    val __obj = js.Dynamic.literal(getProfile = js.Any.fromFunction0(getProfile), getProfileAsArrayBuffer = js.Any.fromFunction0(getProfileAsArrayBuffer), getSymbols = js.Any.fromFunction2(getSymbols), onRunning = onRunning, pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(dumpProfileToFile = js.Any.fromFunction1(dumpProfileToFile), getProfile = js.Any.fromFunction0(getProfile), getProfileAsArrayBuffer = js.Any.fromFunction0(getProfileAsArrayBuffer), getProfileAsGzippedArrayBuffer = js.Any.fromFunction0(getProfileAsGzippedArrayBuffer), getSymbols = js.Any.fromFunction2(getSymbols), onRunning = onRunning, pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[TypeofgeckoProfiler]
   }

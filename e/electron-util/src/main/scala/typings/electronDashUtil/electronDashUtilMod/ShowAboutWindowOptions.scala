@@ -11,21 +11,24 @@ trait ShowAboutWindowOptions extends js.Object {
   val copyright: js.UndefOr[String] = js.undefined
   /**
   	An absolute path to the app icon.
+  	Only used on Linux and Windows.
   	*/
   val icon: js.UndefOr[String] = js.undefined
   /**
   	Some additional text if needed.
+  	Only used on Windows.
   	*/
   val text: js.UndefOr[String] = js.undefined
   /**
-  	Customizable for localization. Used in the menu item label and window title.
+  	Customizable for localization. Used in the menu item label and window title (Windows-only).
   	The app name is automatically appended at runtime.
-  	@default 'about'
+  	Only used on Linux and Windows.
+  	@default 'About'
   	*/
   val title: js.UndefOr[String] = js.undefined
   /**
   	The URL to the app's website.
-  	For Linux only.
+  	Only used on Linux.
   	*/
   val website: js.UndefOr[String] = js.undefined
 }

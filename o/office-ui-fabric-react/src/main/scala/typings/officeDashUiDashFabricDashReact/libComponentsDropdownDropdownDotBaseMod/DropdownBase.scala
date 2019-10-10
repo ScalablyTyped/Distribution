@@ -37,6 +37,8 @@ class DropdownBase protected ()
     * This helper method avoids all the repetition.
     */
   var _isDisabled: js.Any = js.native
+  /** Flag for identifiying dropdown is opened by getting focus using keyboard */
+  var _isOpenedByKeyboardFocus: js.Any = js.native
   var _isScrollIdle: js.Any = js.native
   /** True if the most recent keydown event was for alt (option) or meta (command). */
   var _lastKeyDownWasAltOrMeta: js.Any = js.native

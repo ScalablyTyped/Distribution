@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Additionalbackgrounds extends js.Object {
   var additional_backgrounds: js.UndefOr[js.Array[ImageDataOrExtensionURL]] = js.undefined
-  /** @deprecated Please use _theme.images.theme_frame_, this alias will be removed in Firefox 69. */
+  /**
+    * @deprecated Unsupported images property, use 'theme.images.theme_frame', this alias is ignored in
+    *     Firefox >= 70.
+    */
   var headerURL: js.UndefOr[ImageDataOrExtensionURL] = js.undefined
   var theme_frame: js.UndefOr[ImageDataOrExtensionURL] = js.undefined
 }

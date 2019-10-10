@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "parse-torrent"
-version := "5.8-dt-20190212Z-6e1ce3"
+version := "5.8-dt-20190212Z-3d4783"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "magnet-uri" % "5.1-dt-20190212Z-f26185",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
-  "org.scalablytyped" %%% "parse-torrent-file" % "4.0-dt-20190212Z-0579a5",
+  "org.scalablytyped" %%% "magnet-uri" % "5.1-dt-20190212Z-0c44e5",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
+  "org.scalablytyped" %%% "parse-torrent-file" % "4.0-dt-20190212Z-cf6ea8",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

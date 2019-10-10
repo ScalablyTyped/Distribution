@@ -3,23 +3,8 @@ package typings.vegaDashTypings.typesSpecConfigMod
 import typings.vegaDashTypings.Anon_Any
 import typings.vegaDashTypings.Anon_Category
 import typings.vegaDashTypings.typesSpecAutosizeMod.AutoSize
-import typings.vegaDashTypings.typesSpecAxisMod.LabelOverlap
-import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
-import typings.vegaDashTypings.typesSpecLegendMod.LegendOrient
 import typings.vegaDashTypings.typesSpecSignalMod.InitSignal
 import typings.vegaDashTypings.typesSpecSignalMod.NewSignal
-import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
-import typings.vegaDashTypings.typesSpecValuesMod.AlignValue
-import typings.vegaDashTypings.typesSpecValuesMod.AnchorValue
-import typings.vegaDashTypings.typesSpecValuesMod.ColorValue
-import typings.vegaDashTypings.typesSpecValuesMod.DashArrayValue
-import typings.vegaDashTypings.typesSpecValuesMod.FontStyleValue
-import typings.vegaDashTypings.typesSpecValuesMod.FontWeightValue
-import typings.vegaDashTypings.typesSpecValuesMod.NumberValue
-import typings.vegaDashTypings.typesSpecValuesMod.OrientValue
-import typings.vegaDashTypings.typesSpecValuesMod.StringValue
-import typings.vegaDashTypings.typesSpecValuesMod.SymbolShapeValue
-import typings.vegaDashTypings.typesSpecValuesMod.TextBaselineValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,25 +18,7 @@ import scala.scalajs.js.annotation._
   var events: js.UndefOr[Anon_Any] = js.undefined
   var group: js.UndefOr[js.Any] = js.undefined
    // TODO
-  var legend: js.UndefOr[
-    LegendConfig[
-      NumberValue, 
-      Double | SignalRef, 
-      StringValue, 
-      ColorValue, 
-      FontWeightValue, 
-      FontStyleValue, 
-      AlignValue, 
-      TextBaselineValue, 
-      LayoutAlign | SignalRef, 
-      LabelOverlap | SignalRef, 
-      SymbolShapeValue, 
-      DashArrayValue, 
-      OrientValue, 
-      AnchorValue, 
-      LegendOrient | SignalRef
-    ]
-  ] = js.undefined
+  var legend: js.UndefOr[LegendConfig] = js.undefined
   var projection: js.UndefOr[ProjectionConfig] = js.undefined
   var range: js.UndefOr[Anon_Category] = js.undefined
   var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.undefined
@@ -66,23 +33,7 @@ object Config {
     background: String = null,
     events: Anon_Any = null,
     group: js.Any = null,
-    legend: LegendConfig[
-      NumberValue, 
-      Double | SignalRef, 
-      StringValue, 
-      ColorValue, 
-      FontWeightValue, 
-      FontStyleValue, 
-      AlignValue, 
-      TextBaselineValue, 
-      LayoutAlign | SignalRef, 
-      LabelOverlap | SignalRef, 
-      SymbolShapeValue, 
-      DashArrayValue, 
-      OrientValue, 
-      AnchorValue, 
-      LegendOrient | SignalRef
-    ] = null,
+    legend: LegendConfig = null,
     projection: ProjectionConfig = null,
     range: Anon_Category = null,
     signals: js.Array[InitSignal | NewSignal] = null,

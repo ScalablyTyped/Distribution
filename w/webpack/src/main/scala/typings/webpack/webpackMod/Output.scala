@@ -33,7 +33,7 @@ trait Output extends js.Object {
   /** This option determines the modules namespace used with the output.devtoolModuleFilenameTemplate. */
   var devtoolNamespace: js.UndefOr[String] = js.undefined
   /** The filename of the entry chunk as relative path inside the output.path directory. */
-  var filename: js.UndefOr[String] = js.undefined
+  var filename: js.UndefOr[String | (js.Function1[/* chunkData */ ChunkData, String])] = js.undefined
   /**
     * Use the future version of asset emitting logic, which allows freeing memory of assets after emitting.
     * It could break plugins which assume that assets are still readable after they were emitted.
@@ -104,7 +104,7 @@ object Output {
     devtoolLineToLine: js.UndefOr[Boolean] = js.undefined,
     devtoolModuleFilenameTemplate: String | (js.Function1[/* info */ DevtoolModuleFilenameTemplateInfo, String]) = null,
     devtoolNamespace: String = null,
-    filename: String = null,
+    filename: String | (js.Function1[/* chunkData */ ChunkData, String]) = null,
     futureEmitAssets: js.UndefOr[Boolean] = js.undefined,
     globalObject: String = null,
     hashDigest: hex | latin1 | base64 = null,
@@ -135,7 +135,7 @@ object Output {
     if (!js.isUndefined(devtoolLineToLine)) __obj.updateDynamic("devtoolLineToLine")(devtoolLineToLine)
     if (devtoolModuleFilenameTemplate != null) __obj.updateDynamic("devtoolModuleFilenameTemplate")(devtoolModuleFilenameTemplate.asInstanceOf[js.Any])
     if (devtoolNamespace != null) __obj.updateDynamic("devtoolNamespace")(devtoolNamespace)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (!js.isUndefined(futureEmitAssets)) __obj.updateDynamic("futureEmitAssets")(futureEmitAssets)
     if (globalObject != null) __obj.updateDynamic("globalObject")(globalObject)
     if (hashDigest != null) __obj.updateDynamic("hashDigest")(hashDigest.asInstanceOf[js.Any])

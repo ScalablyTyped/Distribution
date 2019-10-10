@@ -3,14 +3,14 @@ package typings.atWordpressData.atWordpressDataMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Reducer
-import typings.std.IterableIterator
+import typings.std.Generator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StoreConfig[S] extends js.Object {
   var actions: js.UndefOr[
-    StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | IterableIterator[_]]]
+    StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | (Generator[_, _, _])]]
   ] = js.undefined
   var controls: js.UndefOr[StringDictionary[js.Function1[/* action */ AnyAction, _]]] = js.undefined
   var initialState: js.UndefOr[S] = js.undefined
@@ -23,7 +23,7 @@ object StoreConfig {
   @scala.inline
   def apply[S](
     reducer: (/* state */ js.UndefOr[S], AnyAction) => S,
-    actions: StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | IterableIterator[_]]] = null,
+    actions: StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | (Generator[_, _, _])]] = null,
     controls: StringDictionary[js.Function1[/* action */ AnyAction, _]] = null,
     initialState: S = null,
     resolvers: StringDictionary[js.Function1[/* repeated */ js.Any, _]] = null,

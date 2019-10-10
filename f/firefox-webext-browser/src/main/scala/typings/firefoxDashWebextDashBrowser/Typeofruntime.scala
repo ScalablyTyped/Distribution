@@ -125,6 +125,8 @@ trait Typeofruntime extends js.Object {
   def connect(extensionId: String, connectInfo: Anon_IncludeTlsChannelId): Port = js.native
   /**
     * Connects to a native application in the host machine.
+    *
+    * Not allowed in: Devtools pages
     * @param application The name of the registered application to connect to.
     * @returns Port through which messages can be sent and received with the application
     */
@@ -204,6 +206,8 @@ trait Typeofruntime extends js.Object {
   def sendMessage(message: js.Any, options: Anon_IncludeTlsChannelIdToProxyScript): js.Promise[_] = js.native
   /**
     * Send a single message to a native application.
+    *
+    * Not allowed in: Devtools pages
     * @param application The name of the native messaging host.
     * @param message The message that will be passed to the native messaging host.
     */

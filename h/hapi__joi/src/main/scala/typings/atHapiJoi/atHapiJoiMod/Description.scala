@@ -56,9 +56,3 @@ object Description {
   }
 }
 
-@JSImport("@hapi/joi", "description")
-@js.native
-object description extends js.Object {
-  def apply(desc: String): Schema = js.native
-}
-

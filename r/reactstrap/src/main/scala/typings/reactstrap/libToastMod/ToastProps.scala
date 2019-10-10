@@ -18,7 +18,7 @@ trait ToastProps
   var fade: js.UndefOr[Boolean] = js.undefined
   var innerRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
   var isOpen: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var transition: js.UndefOr[FadeProps] = js.undefined
 }
 
@@ -32,7 +32,7 @@ object ToastProps {
     fade: js.UndefOr[Boolean] = js.undefined,
     innerRef: Ref[HTMLElement] = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     transition: FadeProps = null
   ): ToastProps = {
     val __obj = js.Dynamic.literal()

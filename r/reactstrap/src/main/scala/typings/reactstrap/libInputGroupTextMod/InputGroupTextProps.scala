@@ -13,7 +13,7 @@ trait InputGroupTextProps
   extends HTMLAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object InputGroupTextProps {
@@ -22,7 +22,7 @@ object InputGroupTextProps {
     HTMLAttributes: HTMLAttributes[HTMLElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     cssModule: CSSModule = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): InputGroupTextProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

@@ -17,7 +17,7 @@ trait PaginationLinkProps
   var last: js.UndefOr[Boolean] = js.undefined
   var next: js.UndefOr[Boolean] = js.undefined
   var previous: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object PaginationLinkProps {
@@ -32,7 +32,7 @@ object PaginationLinkProps {
     last: js.UndefOr[Boolean] = js.undefined,
     next: js.UndefOr[Boolean] = js.undefined,
     previous: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): PaginationLinkProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)

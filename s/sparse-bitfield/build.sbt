@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sparse-bitfield"
-version := "3.0-dt-20181231Z-6546ab"
+version := "3.0-dt-20181231Z-a3cc87"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "memory-pager" % "1.4-dt-20181231Z-363fad",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "memory-pager" % "1.4-dt-20181231Z-e9a50a",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

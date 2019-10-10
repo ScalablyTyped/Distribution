@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "xmpp__xml"
-version := "0.6-dt-20181205Z-f510dc"
+version := "0.6-dt-20181205Z-1b6ede"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ltx" % "2.8-dt-20190212Z-4746b4",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "ltx" % "2.8-dt-20190212Z-b4139c",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

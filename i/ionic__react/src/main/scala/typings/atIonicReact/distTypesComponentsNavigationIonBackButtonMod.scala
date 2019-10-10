@@ -2,10 +2,12 @@ package typings.atIonicReact
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import typings.atIonicReact.atIonicReactStrings.icon
 import typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps
 import typings.atIonicReact.distTypesComponentsNavigationIonBackButtonMod.Props
 import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
 import typings.react.reactMod.Context
+import typings.std.Omit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +29,9 @@ object distTypesComponentsNavigationIonBackButtonMod extends js.Object {
     val displayName: String = js.native
   }
   
-  type Props = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocalJSX.IonBackButton */ js.Any) with IonicReactProps with Anon_RefHTMLIonBackButtonElement
+  type Props = (Omit[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocalJSX.IonBackButton */ _, 
+    icon
+  ]) with IonicReactProps with Anon_Icon
 }
 

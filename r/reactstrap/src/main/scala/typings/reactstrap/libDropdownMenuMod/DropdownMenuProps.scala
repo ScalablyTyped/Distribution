@@ -19,7 +19,7 @@ trait DropdownMenuProps
   var persist: js.UndefOr[Boolean] = js.undefined
   var positionFixed: js.UndefOr[Boolean] = js.undefined
   var right: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object DropdownMenuProps {
@@ -34,7 +34,7 @@ object DropdownMenuProps {
     persist: js.UndefOr[Boolean] = js.undefined,
     positionFixed: js.UndefOr[Boolean] = js.undefined,
     right: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): DropdownMenuProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

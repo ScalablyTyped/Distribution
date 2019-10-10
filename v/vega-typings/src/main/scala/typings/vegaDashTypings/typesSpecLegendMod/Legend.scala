@@ -22,23 +22,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Legend extends BaseLegend[
-      NumberValue, 
-      Double | SignalRef, 
-      StringValue, 
-      ColorValue, 
-      FontWeightValue, 
-      FontStyleValue, 
-      AlignValue, 
-      TextBaselineValue, 
-      LayoutAlign | SignalRef, 
-      LabelOverlap | SignalRef, 
-      SymbolShapeValue, 
-      DashArrayValue, 
-      OrientValue, 
-      AnchorValue, 
-      LegendOrient | SignalRef
-    ] {
+trait Legend extends BaseLegend {
   /**
     * The direction of the legend, one of `"vertical"` (default) or `"horizontal"`.
     *

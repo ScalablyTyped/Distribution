@@ -15,7 +15,7 @@ trait SpinnerProps
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   @JSName("size")
   var size_SpinnerProps: js.UndefOr[js.Any] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object SpinnerProps {
@@ -27,7 +27,7 @@ object SpinnerProps {
     color: String = null,
     cssModule: CSSModule = null,
     size: js.Any = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     `type`: String = null
   ): SpinnerProps = {
     val __obj = js.Dynamic.literal()

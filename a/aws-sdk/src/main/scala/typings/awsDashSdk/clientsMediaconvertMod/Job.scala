@@ -10,6 +10,10 @@ trait Job extends js.Object {
     */
   var AccelerationSettings: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.AccelerationSettings] = js.undefined
   /**
+    * Describes whether the current job is running with accelerated transcoding. For jobs that have Acceleration (AccelerationMode) set to DISABLED, AccelerationStatus is always NOT_APPLICABLE. For jobs that have Acceleration (AccelerationMode) set to ENABLED or PREFERRED, AccelerationStatus is one of the other states. AccelerationStatus is IN_PROGRESS initially, while the service determines whether the input files and job settings are compatible with accelerated transcoding. If they are, AcclerationStatus is ACCELERATED. If your input files and job settings aren't compatible with accelerated transcoding, the service either fails your job or runs it without accelerated transcoding, depending on how you set Acceleration (AccelerationMode). When the service runs your job without accelerated transcoding, AccelerationStatus is NOT_ACCELERATED.
+    */
+  var AccelerationStatus: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.AccelerationStatus] = js.undefined
+  /**
     * An identifier for this resource that is unique within all of AWS.
     */
   var Arn: js.UndefOr[__string] = js.undefined
@@ -45,6 +49,10 @@ trait Job extends js.Object {
     * The job template that the job is created from, if it is created from a job template.
     */
   var JobTemplate: js.UndefOr[__string] = js.undefined
+  /**
+    * Provides messages from the service about jobs that you have already successfully submitted.
+    */
+  var Messages: js.UndefOr[JobMessages] = js.undefined
   /**
     * List of output group details
     */
@@ -97,6 +105,7 @@ object Job {
     Role: __string,
     Settings: JobSettings,
     AccelerationSettings: AccelerationSettings = null,
+    AccelerationStatus: AccelerationStatus = null,
     Arn: __string = null,
     BillingTagsSource: BillingTagsSource = null,
     CreatedAt: __timestampUnix = null,
@@ -106,6 +115,7 @@ object Job {
     Id: __string = null,
     JobPercentComplete: Int | Double = null,
     JobTemplate: __string = null,
+    Messages: JobMessages = null,
     OutputGroupDetails: __listOfOutputGroupDetail = null,
     Priority: Int | Double = null,
     Queue: __string = null,
@@ -118,6 +128,7 @@ object Job {
   ): Job = {
     val __obj = js.Dynamic.literal(Role = Role, Settings = Settings)
     if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings)
+    if (AccelerationStatus != null) __obj.updateDynamic("AccelerationStatus")(AccelerationStatus.asInstanceOf[js.Any])
     if (Arn != null) __obj.updateDynamic("Arn")(Arn)
     if (BillingTagsSource != null) __obj.updateDynamic("BillingTagsSource")(BillingTagsSource.asInstanceOf[js.Any])
     if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
@@ -127,6 +138,7 @@ object Job {
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (JobPercentComplete != null) __obj.updateDynamic("JobPercentComplete")(JobPercentComplete.asInstanceOf[js.Any])
     if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate)
+    if (Messages != null) __obj.updateDynamic("Messages")(Messages)
     if (OutputGroupDetails != null) __obj.updateDynamic("OutputGroupDetails")(OutputGroupDetails)
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
     if (Queue != null) __obj.updateDynamic("Queue")(Queue)

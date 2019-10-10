@@ -14,12 +14,25 @@ trait ReCaptcha extends js.Object {
   def execute(): Unit = js.native
   def execute(opt_widget_id: Double): Unit = js.native
   /**
+    * Programatically invoke the reCAPTCHA check. Used if the invisible reCAPTCHA is on a div instead of a button.
+    * @param siteKey the key of your site
+    * @param action the action
+    *
+    * @return a promise containing the token
+    */
+  def execute(siteKey: String, action: Action): js.Promise[String] = js.native
+  /**
     * Gets the response for the reCAPTCHA widget.
     * @param opt_widget_id Optional widget ID, defaults to the first widget created if unspecified.
     * @return the response of the reCAPTCHA widget.
     */
   def getResponse(): String = js.native
   def getResponse(opt_widget_id: Double): String = js.native
+  /**
+    * will run the given function as soon as the reCAPTCHA library has loaded
+    * @param callback the function to coll
+    */
+  def ready(callback: js.Function0[Unit]): Unit = js.native
   /**
     * Renders the container as a reCAPTCHA widget and returns the ID of the newly created widget.
     * @param container The HTML element to render the reCAPTCHA widget. Specify either the ID of the container (string) or the DOM element itself.

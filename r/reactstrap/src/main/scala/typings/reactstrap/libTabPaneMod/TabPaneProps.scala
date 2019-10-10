@@ -14,7 +14,7 @@ trait TabPaneProps
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var tabId: js.UndefOr[Double | String] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object TabPaneProps {
@@ -25,7 +25,7 @@ object TabPaneProps {
     className: String = null,
     cssModule: CSSModule = null,
     tabId: Double | String = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): TabPaneProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

@@ -1,128 +1,120 @@
 package typings.paper.paper
 
-import typings.paper.Anon_X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** 
+  * Style is used for changing the visual styles of items
+  * contained within a Paper.js project and is returned by
+  * {@link Item#style} and {@link Project#currentStyle}.
+  * 
+  * All properties of Style are also reflected directly in {@link Item},
+  * i.e.: {@link Item#fillColor}.
+  * 
+  * To set multiple style properties in one go, you can pass an object to
+  * {@link Item#style}. This is a convenient way to define a style once and
+  * apply it to a series of items:
+  */
 @JSGlobal("paper.Style")
 @js.native
-class Style () extends Base {
-  /**
+class Style protected () extends js.Object {
+  /** 
+    * Style objects don't need to be created directly. Just pass an object to
+    * {@link Item#style} or {@link Project#currentStyle}, it will be converted
+    * to a Style object internally.
+    */
+  def this(style: js.Object) = this()
+  /** 
     * Specifies an array containing the dash and gap lengths of the stroke.
-    * Default: []
     */
-  var dashArray: js.Array[Double] = js.native
-  /**
+  var dashArray: js.Array[Double] | Null = js.native
+  /** 
     * The dash offset of the stroke.
-    * Default: 0
     */
-  var dashOffset: Double = js.native
-  /**
+  var dashOffset: Double | Null = js.native
+  /** 
     * The fill color.
     */
-  var fillColor: Color | String | Null = js.native
-  /**
-    * The fill-rule with which the shape gets filled. Please note that only modern browsers support fill-rules other than 'nonzero'.
-    * Values: 'nonzero', 'evenodd'
-    * Default: 'nonzero'
+  var fillColor: Color | Null = js.native
+  /** 
+    * The fill-rule with which the shape gets filled. Please note that only
+    * modern browsers support fill-rules other than `'nonzero'`.
     */
-  var fillRule: String = js.native
-  /**
+  var fillRule: String | Null = js.native
+  /** 
     * The font-family to be used in text content.
-    * Default: 'sans-serif'
     */
-  var fontFamily: String = js.native
-  /**
-    * The font size of text content, as {@Number} in pixels, or as {@String} with optional units 'px', 'pt' and 'em'.
-    * Default: 10
+  var fontFamily: String | Null = js.native
+  /** 
+    * The font size of text content, as a number in pixels, or as a string with
+    * optional units `'px'`, `'pt'` and `'em'`.
     */
-  var fontSize: String | Double = js.native
-  /**
+  var fontSize: Double | String | Null = js.native
+  /** 
     * The font-weight to be used in text content.
-    * Default: 'normal'
     */
-  var fontWeight: String | Double = js.native
-  /**
+  var fontWeight: String | Double | Null = js.native
+  /** 
     * The justification of text paragraphs.
-    * Values: 'left', 'right', 'center'
-    * Default: 'left'
     */
-  var justification: String = js.native
-  /**
+  var justification: String | Null = js.native
+  /** 
     * The text leading of text content.
-    * Default: fontSize * 1.2
     */
-  var leading: Double | String = js.native
-  /**
-    * The miter limit of the stroke. When two line segments meet at a sharp angle and miter joins have been specified for strokeJoin, it is possible for the miter to extend far beyond the strokeWidth of the path. The miterLimit imposes a limit on the ratio of the miter length to the strokeWidth.
-    * Default: 10
+  var leading: Double | String | Null = js.native
+  /** 
+    * The miter limit of the stroke. When two line segments meet at a sharp
+    * angle and miter joins have been specified for {@link #strokeJoin}, it is
+    * possible for the miter to extend far beyond the {@link #strokeWidth} of
+    * the path. The miterLimit imposes a limit on the ratio of the miter length
+    * to the {@link #strokeWidth}.
     */
-  var miterLimit: Double = js.native
-  /**
-    * The color the item is highlighted with when selected. If the item does not specify its own color, the color defined by its layer is used instead.
+  var miterLimit: Double | Null = js.native
+  /** 
+    * The color the item is highlighted with when selected. If the item does
+    * not specify its own color, the color defined by its layer is used instead.
     */
-  var selectedColor: Color | String | Null = js.native
-  /**
+  var selectedColor: Color | Null = js.native
+  /** 
     * The shadow's blur radius.
-    * Default: 0
     */
-  var shadowBlur: Double = js.native
-  /**
+  var shadowBlur: Double | Null = js.native
+  /** 
     * The shadow color.
     */
-  var shadowColor: Color | String | Null = js.native
-  /**
+  var shadowColor: Color | Null = js.native
+  /** 
     * The shadow's offset.
-    * Default: 0
     */
-  var shadowOffset: Double | js.Array[Double] | Anon_X | Point = js.native
-  /**
-    * The shape to be used at the beginning and end of open Path items, when they have a stroke.
-    * Values: 'round', 'square', 'butt'
-    * Default: 'butt'
+  var shadowOffset: Point | Null = js.native
+  /** 
+    * The shape to be used at the beginning and end of open {@link Path} items,
+    * when they have a stroke.
     */
-  var strokeCap: String = js.native
-  /**
+  var strokeCap: String | Null = js.native
+  /** 
     * The color of the stroke.
     */
-  var strokeColor: Color | String | Null = js.native
-  /**
-    * The shape to be used at the segments and corners of Path items when they have a stroke.
-    * Values: 'miter', 'round', 'bevel'
-    * Default: 'miter'
+  var strokeColor: Color | Null = js.native
+  /** 
+    * The shape to be used at the segments and corners of {@link Path} items
+    * when they have a stroke.
     */
-  var strokeJoin: String = js.native
-  /**
-    * Specifies whether the stroke is to be drawn taking the current affine transformation into account (the default behavior), or whether it should appear as a non-scaling stroke.
-    * Default: true
+  var strokeJoin: String | Null = js.native
+  /** 
+    * Specifies whether the stroke is to be drawn taking the current affine
+    * transformation into account (the default behavior), or whether it should
+    * appear as a non-scaling stroke.
     */
-  var strokeScaling: Boolean = js.native
-  /**
+  var strokeScaling: Boolean | Null = js.native
+  /** 
     * The width of the stroke.
-    * Default: 1
     */
-  var strokeWidth: Double = js.native
-  /**
+  var strokeWidth: Double | Null = js.native
+  /** 
     * The view that this style belongs to.
-    * Read only.
     */
   val view: View = js.native
-  def getFillColor(): Color = js.native
-  def getSelectedColor(): Color = js.native
-  def getShadowColor(): Color = js.native
-  def getStrokeColor(): Color = js.native
-  def setFillColor(): Unit = js.native
-  def setFillColor(value: String): Unit = js.native
-  def setFillColor(value: Color): Unit = js.native
-  def setSelectedColor(): Unit = js.native
-  def setSelectedColor(value: String): Unit = js.native
-  def setSelectedColor(value: Color): Unit = js.native
-  def setShadowColor(): Unit = js.native
-  def setShadowColor(value: String): Unit = js.native
-  def setShadowColor(value: Color): Unit = js.native
-  def setStrokeColor(): Unit = js.native
-  def setStrokeColor(value: String): Unit = js.native
-  def setStrokeColor(value: Color): Unit = js.native
 }
 

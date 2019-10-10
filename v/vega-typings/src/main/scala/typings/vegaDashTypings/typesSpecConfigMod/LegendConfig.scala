@@ -1,13 +1,28 @@
 package typings.vegaDashTypings.typesSpecConfigMod
 
+import typings.vegaDashTypings.typesSpecAxisMod.LabelOverlap
 import typings.vegaDashTypings.typesSpecAxisMod.TickCount
 import typings.vegaDashTypings.typesSpecEncodeMod.Orientation
+import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
 import typings.vegaDashTypings.typesSpecLegendMod.BaseLegend
+import typings.vegaDashTypings.typesSpecLegendMod.LegendOrient
+import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
+import typings.vegaDashTypings.typesSpecValuesMod.AlignValue
+import typings.vegaDashTypings.typesSpecValuesMod.AnchorValue
+import typings.vegaDashTypings.typesSpecValuesMod.ColorValue
+import typings.vegaDashTypings.typesSpecValuesMod.DashArrayValue
+import typings.vegaDashTypings.typesSpecValuesMod.FontStyleValue
+import typings.vegaDashTypings.typesSpecValuesMod.FontWeightValue
+import typings.vegaDashTypings.typesSpecValuesMod.NumberValue
+import typings.vegaDashTypings.typesSpecValuesMod.OrientValue
+import typings.vegaDashTypings.typesSpecValuesMod.StringValue
+import typings.vegaDashTypings.typesSpecValuesMod.SymbolShapeValue
+import typings.vegaDashTypings.typesSpecValuesMod.TextBaselineValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] {
+trait LegendConfig extends BaseLegend {
   /**
     * The default direction (`"horizontal"` or `"vertical"`) for gradient legends.
     *
@@ -17,13 +32,13 @@ trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] exten
   /**
     * The maximum allowed length in pixels of color ramp gradient labels.
     */
-  var gradientLabelLimit: js.UndefOr[N] = js.undefined
+  var gradientLabelLimit: js.UndefOr[NumberValue] = js.undefined
   /**
     * Vertical offset in pixels for color ramp gradient labels.
     *
     * __Default value:__ `2`.
     */
-  var gradientLabelOffset: js.UndefOr[N] = js.undefined
+  var gradientLabelOffset: js.UndefOr[NumberValue] = js.undefined
   /**
     * Legend orient group layout parameters.
     */
@@ -35,19 +50,19 @@ trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] exten
   /**
     * Border stroke width for the full legend.
     */
-  var strokeWidth: js.UndefOr[N] = js.undefined
+  var strokeWidth: js.UndefOr[NumberValue] = js.undefined
   /**
     * Default fill color for legend symbols. Only applied if there is no `"fill"` scale color encoding for the legend.
     *
     * __Default value:__ `"transparent"`.
     */
-  var symbolBaseFillColor: js.UndefOr[C] = js.undefined
+  var symbolBaseFillColor: js.UndefOr[ColorValue] = js.undefined
   /**
     * Default stroke color for legend symbols. Only applied if there is no `"fill"` scale color encoding for the legend.
     *
     * __Default value:__ `"gray"`.
     */
-  var symbolBaseStrokeColor: js.UndefOr[C] = js.undefined
+  var symbolBaseStrokeColor: js.UndefOr[ColorValue] = js.undefined
   /**
     * The default direction (`"horizontal"` or `"vertical"`) for symbol legends.
     *
@@ -58,72 +73,72 @@ trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] exten
 
 object LegendConfig {
   @scala.inline
-  def apply[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR](
-    clipHeight: NS = null,
-    columnPadding: NS = null,
-    columns: NS = null,
-    cornerRadius: N = null,
-    fillColor: C = null,
+  def apply(
+    clipHeight: Double | SignalRef = null,
+    columnPadding: Double | SignalRef = null,
+    columns: Double | SignalRef = null,
+    cornerRadius: NumberValue = null,
+    fillColor: ColorValue = null,
     gradientDirection: Orientation = null,
-    gradientLabelLimit: N = null,
-    gradientLabelOffset: N = null,
-    gradientLength: NS = null,
-    gradientOpacity: N = null,
-    gradientStrokeColor: C = null,
-    gradientStrokeWidth: N = null,
-    gradientThickness: NS = null,
-    gridAlign: LA = null,
-    labelAlign: A = null,
-    labelBaseline: TB = null,
-    labelColor: C = null,
-    labelFont: S = null,
-    labelFontSize: N = null,
-    labelFontStyle: FS = null,
-    labelFontWeight: FW = null,
-    labelLimit: N = null,
-    labelOffset: N = null,
-    labelOpacity: N = null,
-    labelOverlap: LO = null,
-    labelPadding: N = null,
-    labelSeparation: NS = null,
+    gradientLabelLimit: NumberValue = null,
+    gradientLabelOffset: NumberValue = null,
+    gradientLength: Double | SignalRef = null,
+    gradientOpacity: NumberValue = null,
+    gradientStrokeColor: ColorValue = null,
+    gradientStrokeWidth: NumberValue = null,
+    gradientThickness: Double | SignalRef = null,
+    gridAlign: LayoutAlign | SignalRef = null,
+    labelAlign: AlignValue = null,
+    labelBaseline: TextBaselineValue = null,
+    labelColor: ColorValue = null,
+    labelFont: StringValue = null,
+    labelFontSize: NumberValue = null,
+    labelFontStyle: FontStyleValue = null,
+    labelFontWeight: FontWeightValue = null,
+    labelLimit: NumberValue = null,
+    labelOffset: NumberValue = null,
+    labelOpacity: NumberValue = null,
+    labelOverlap: LabelOverlap | SignalRef = null,
+    labelPadding: NumberValue = null,
+    labelSeparation: Double | SignalRef = null,
     layout: LegendLayout = null,
-    legendX: N = null,
-    legendY: N = null,
-    offset: N = null,
-    orient: LOR = null,
-    padding: N = null,
-    rowPadding: NS = null,
-    strokeColor: C = null,
+    legendX: NumberValue = null,
+    legendY: NumberValue = null,
+    offset: NumberValue = null,
+    orient: LegendOrient | SignalRef = null,
+    padding: NumberValue = null,
+    rowPadding: Double | SignalRef = null,
+    strokeColor: ColorValue = null,
     strokeDash: js.Array[Double] = null,
-    strokeWidth: N = null,
-    symbolBaseFillColor: C = null,
-    symbolBaseStrokeColor: C = null,
-    symbolDash: DA = null,
-    symbolDashOffset: N = null,
+    strokeWidth: NumberValue = null,
+    symbolBaseFillColor: ColorValue = null,
+    symbolBaseStrokeColor: ColorValue = null,
+    symbolDash: DashArrayValue = null,
+    symbolDashOffset: NumberValue = null,
     symbolDirection: Orientation = null,
-    symbolFillColor: C = null,
-    symbolLimit: N = null,
-    symbolOffset: N = null,
-    symbolOpacity: N = null,
-    symbolSize: N = null,
-    symbolStrokeColor: C = null,
-    symbolStrokeWidth: N = null,
-    symbolType: SY = null,
+    symbolFillColor: ColorValue = null,
+    symbolLimit: NumberValue = null,
+    symbolOffset: NumberValue = null,
+    symbolOpacity: NumberValue = null,
+    symbolSize: NumberValue = null,
+    symbolStrokeColor: ColorValue = null,
+    symbolStrokeWidth: NumberValue = null,
+    symbolType: SymbolShapeValue = null,
     tickCount: TickCount = null,
-    titleAlign: A = null,
-    titleAnchor: AN = null,
-    titleBaseline: TB = null,
-    titleColor: C = null,
-    titleFont: S = null,
-    titleFontSize: N = null,
-    titleFontStyle: FS = null,
-    titleFontWeight: FW = null,
-    titleLimit: N = null,
-    titleLineHeight: N = null,
-    titleOpacity: N = null,
-    titleOrient: O = null,
-    titlePadding: N = null
-  ): LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] = {
+    titleAlign: AlignValue = null,
+    titleAnchor: AnchorValue = null,
+    titleBaseline: TextBaselineValue = null,
+    titleColor: ColorValue = null,
+    titleFont: StringValue = null,
+    titleFontSize: NumberValue = null,
+    titleFontStyle: FontStyleValue = null,
+    titleFontWeight: FontWeightValue = null,
+    titleLimit: NumberValue = null,
+    titleLineHeight: NumberValue = null,
+    titleOpacity: NumberValue = null,
+    titleOrient: OrientValue = null,
+    titlePadding: NumberValue = null
+  ): LegendConfig = {
     val __obj = js.Dynamic.literal()
     if (clipHeight != null) __obj.updateDynamic("clipHeight")(clipHeight.asInstanceOf[js.Any])
     if (columnPadding != null) __obj.updateDynamic("columnPadding")(columnPadding.asInstanceOf[js.Any])
@@ -189,7 +204,7 @@ object LegendConfig {
     if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
     if (titleOrient != null) __obj.updateDynamic("titleOrient")(titleOrient.asInstanceOf[js.Any])
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR]]
+    __obj.asInstanceOf[LegendConfig]
   }
 }
 

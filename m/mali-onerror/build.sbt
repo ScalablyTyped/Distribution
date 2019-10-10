@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mali-onerror"
-version := "0.1-dt-20181120Z-f412af"
+version := "0.1-dt-20181120Z-811f81"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "grpc" % "1.21.1-b4b036",
-  "org.scalablytyped" %%% "mali" % "0.19.0-c9d198",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "grpc" % "1.21.1-c1b45a",
+  "org.scalablytyped" %%% "mali" % "0.19.0-755f26",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
   "org.scalablytyped" %%% "protobufjs" % "6.8.8-d60ad2",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false

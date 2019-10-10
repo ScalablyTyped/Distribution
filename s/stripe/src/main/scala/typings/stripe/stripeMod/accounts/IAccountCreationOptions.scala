@@ -4,11 +4,10 @@ import typings.stripe.Anon_Accountholdername
 import typings.stripe.Anon_Branding
 import typings.stripe.Anon_Date
 import typings.stripe.Anon_Mcc
-import typings.stripe.stripeMod.IMetadata
+import typings.stripe.stripeMod.IOptionsMetadata
 import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.custom
 import typings.stripe.stripeStrings.individual
-import typings.stripe.stripeStrings.standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,20 +23,16 @@ trait IAccountCreationOptions extends IAccountUpdateOptions {
     */
   var country: js.UndefOr[String] = js.undefined
   /**
-    * Whether you'd like to create a Custom or Standard account. Custom
-    * accounts have extra parameters available to them, and require that you,
-    * the platform, handle all communication with the account holder.
-    * Standard accounts are normal Stripe accounts: Stripe will email the
-    * account holder to setup a username and password, and handle all account
-    * management directly with them. Possible values are custom and standard.
+    * The type of Stripe account to create. Currently must be custom, as only Custom
+    * accounts may be created via the API.
     */
-  var `type`: custom | standard
+  var `type`: custom
 }
 
 object IAccountCreationOptions {
   @scala.inline
   def apply(
-    `type`: custom | standard,
+    `type`: custom,
     account_token: String = null,
     business_profile: Anon_Mcc = null,
     business_type: individual | company = null,
@@ -49,13 +44,14 @@ object IAccountCreationOptions {
     external_account: Anon_Accountholdername = null,
     include: js.Array[String] = null,
     individual: IIndividualCreateUpdateOptions = null,
-    metadata: IMetadata = null,
+    metadata: IOptionsMetadata = null,
     product_description: String = null,
+    requested_capabilities: js.Array[String] = null,
     settings: Anon_Branding = null,
     tos_acceptance: Anon_Date = null
   ): IAccountCreationOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (account_token != null) __obj.updateDynamic("account_token")(account_token)
     if (business_profile != null) __obj.updateDynamic("business_profile")(business_profile)
     if (business_type != null) __obj.updateDynamic("business_type")(business_type.asInstanceOf[js.Any])
@@ -69,6 +65,7 @@ object IAccountCreationOptions {
     if (individual != null) __obj.updateDynamic("individual")(individual)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (product_description != null) __obj.updateDynamic("product_description")(product_description)
+    if (requested_capabilities != null) __obj.updateDynamic("requested_capabilities")(requested_capabilities)
     if (settings != null) __obj.updateDynamic("settings")(settings)
     if (tos_acceptance != null) __obj.updateDynamic("tos_acceptance")(tos_acceptance)
     __obj.asInstanceOf[IAccountCreationOptions]

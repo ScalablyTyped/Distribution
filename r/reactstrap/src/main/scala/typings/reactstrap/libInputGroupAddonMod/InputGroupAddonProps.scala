@@ -16,7 +16,7 @@ trait InputGroupAddonProps
      with /* key */ StringDictionary[js.Any] {
   var addonType: prepend | append
   var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object InputGroupAddonProps {
@@ -27,7 +27,7 @@ object InputGroupAddonProps {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     className: String = null,
     cssModule: CSSModule = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): InputGroupAddonProps = {
     val __obj = js.Dynamic.literal(addonType = addonType.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

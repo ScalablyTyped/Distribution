@@ -14,7 +14,7 @@ object ^ extends js.Object {
   var Mongoose: Instantiable1[/* args (repeated) */ js.Any, Typeofmongoose] = js.native
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
-  var STATES: ConnectionStates = js.native
+  var STATES: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConnectionStates */ js.Any = js.native
   var connection: Connection = js.native
   var connections: js.Array[Connection] = js.native
   var version: String = js.native

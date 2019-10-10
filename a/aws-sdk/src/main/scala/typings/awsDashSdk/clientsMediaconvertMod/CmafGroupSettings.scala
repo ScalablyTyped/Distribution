@@ -50,6 +50,10 @@ trait CmafGroupSettings extends js.Object {
     */
   var MinFinalSegmentLength: js.UndefOr[__doubleMin0Max2147483647] = js.undefined
   /**
+    * Specify whether your DASH profile is on-demand or main. When you choose Main profile (MAIN_PROFILE), the service signals  urn:mpeg:dash:profile:isoff-main:2011 in your .mpd DASH manifest. When you choose On-demand (ON_DEMAND_PROFILE), the service signals urn:mpeg:dash:profile:isoff-on-demand:2011 in your .mpd. When you choose On-demand, you must also set the output group setting Segment control (SegmentControl) to Single file (SINGLE_FILE).
+    */
+  var MpdProfile: js.UndefOr[CmafMpdProfile] = js.undefined
+  /**
     * When set to SINGLE_FILE, a single output file is generated, which is internally segmented using the Fragment Length and Segment Length. When set to SEGMENTED_FILES, separate segment files will be created.
     */
   var SegmentControl: js.UndefOr[CmafSegmentControl] = js.undefined
@@ -85,6 +89,7 @@ object CmafGroupSettings {
     ManifestDurationFormat: CmafManifestDurationFormat = null,
     MinBufferTime: Int | Double = null,
     MinFinalSegmentLength: Int | Double = null,
+    MpdProfile: CmafMpdProfile = null,
     SegmentControl: CmafSegmentControl = null,
     SegmentLength: Int | Double = null,
     StreamInfResolution: CmafStreamInfResolution = null,
@@ -103,6 +108,7 @@ object CmafGroupSettings {
     if (ManifestDurationFormat != null) __obj.updateDynamic("ManifestDurationFormat")(ManifestDurationFormat.asInstanceOf[js.Any])
     if (MinBufferTime != null) __obj.updateDynamic("MinBufferTime")(MinBufferTime.asInstanceOf[js.Any])
     if (MinFinalSegmentLength != null) __obj.updateDynamic("MinFinalSegmentLength")(MinFinalSegmentLength.asInstanceOf[js.Any])
+    if (MpdProfile != null) __obj.updateDynamic("MpdProfile")(MpdProfile.asInstanceOf[js.Any])
     if (SegmentControl != null) __obj.updateDynamic("SegmentControl")(SegmentControl.asInstanceOf[js.Any])
     if (SegmentLength != null) __obj.updateDynamic("SegmentLength")(SegmentLength.asInstanceOf[js.Any])
     if (StreamInfResolution != null) __obj.updateDynamic("StreamInfResolution")(StreamInfResolution.asInstanceOf[js.Any])

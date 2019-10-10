@@ -1,5 +1,6 @@
 package typings.atBabelTypes
 
+import typings.atBabelTypes.atBabelTypesMod.CommentTypeShorthand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -777,6 +778,9 @@ object atBabelTypesStrings {
   sealed trait `_backtick^_backtick` extends js.Object
   
   @js.native
+  sealed trait boolean extends js.Object
+  
+  @js.native
   sealed trait const extends js.Object
   
   @js.native
@@ -784,6 +788,9 @@ object atBabelTypesStrings {
   
   @js.native
   sealed trait delete extends js.Object
+  
+  @js.native
+  sealed trait function extends js.Object
   
   @js.native
   sealed trait get extends js.Object
@@ -795,7 +802,13 @@ object atBabelTypesStrings {
   sealed trait init extends js.Object
   
   @js.native
+  sealed trait inner extends CommentTypeShorthand
+  
+  @js.native
   sealed trait instanceof extends js.Object
+  
+  @js.native
+  sealed trait leading extends CommentTypeShorthand
   
   @js.native
   sealed trait let extends js.Object
@@ -810,10 +823,19 @@ object atBabelTypesStrings {
   sealed trait module extends js.Object
   
   @js.native
+  sealed trait number extends js.Object
+  
+  @js.native
+  sealed trait `object` extends js.Object
+  
+  @js.native
   sealed trait plus extends js.Object
   
   @js.native
   sealed trait `private` extends js.Object
+  
+  @js.native
+  sealed trait property extends js.Object
   
   @js.native
   sealed trait `protected` extends js.Object
@@ -828,13 +850,25 @@ object atBabelTypesStrings {
   sealed trait set extends js.Object
   
   @js.native
+  sealed trait string extends js.Object
+  
+  @js.native
+  sealed trait symbol extends js.Object
+  
+  @js.native
   sealed trait `throw` extends js.Object
+  
+  @js.native
+  sealed trait trailing extends CommentTypeShorthand
   
   @js.native
   sealed trait `type` extends js.Object
   
   @js.native
   sealed trait typeof extends js.Object
+  
+  @js.native
+  sealed trait undefined extends js.Object
   
   @js.native
   sealed trait value extends js.Object
@@ -1369,11 +1403,15 @@ object atBabelTypesStrings {
   @scala.inline
   def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline
   def constructor: constructor = "constructor".asInstanceOf[constructor]
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
+  def function: function = "function".asInstanceOf[function]
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   @scala.inline
@@ -1381,7 +1419,11 @@ object atBabelTypesStrings {
   @scala.inline
   def init: init = "init".asInstanceOf[init]
   @scala.inline
+  def inner: inner = "inner".asInstanceOf[inner]
+  @scala.inline
   def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
+  @scala.inline
+  def leading: leading = "leading".asInstanceOf[leading]
   @scala.inline
   def let: let = "let".asInstanceOf[let]
   @scala.inline
@@ -1391,9 +1433,15 @@ object atBabelTypesStrings {
   @scala.inline
   def module: module = "module".asInstanceOf[module]
   @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
   def plus: plus = "plus".asInstanceOf[plus]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
+  def property: property = "property".asInstanceOf[property]
   @scala.inline
   def `protected`: `protected` = "protected".asInstanceOf[`protected`]
   @scala.inline
@@ -1403,11 +1451,19 @@ object atBabelTypesStrings {
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
+  @scala.inline
+  def trailing: trailing = "trailing".asInstanceOf[trailing]
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline
   def typeof: typeof = "typeof".asInstanceOf[typeof]
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline

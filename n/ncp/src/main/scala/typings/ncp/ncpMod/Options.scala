@@ -12,6 +12,7 @@ trait Options extends js.Object {
   var dereference: js.UndefOr[Boolean] = js.undefined
   var errs: js.UndefOr[WritableStream] = js.undefined
   var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
+  var limit: js.UndefOr[Double] = js.undefined
   var stopOnErr: js.UndefOr[Boolean] = js.undefined
   var transform: js.UndefOr[js.Function2[/* read */ ReadableStream, /* write */ WritableStream, Unit]] = js.undefined
 }
@@ -23,6 +24,7 @@ object Options {
     dereference: js.UndefOr[Boolean] = js.undefined,
     errs: WritableStream = null,
     filter: RegExp | (js.Function1[/* filename */ String, Boolean]) = null,
+    limit: Int | Double = null,
     stopOnErr: js.UndefOr[Boolean] = js.undefined,
     transform: (/* read */ ReadableStream, /* write */ WritableStream) => Unit = null
   ): Options = {
@@ -31,6 +33,7 @@ object Options {
     if (!js.isUndefined(dereference)) __obj.updateDynamic("dereference")(dereference)
     if (errs != null) __obj.updateDynamic("errs")(errs)
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (!js.isUndefined(stopOnErr)) __obj.updateDynamic("stopOnErr")(stopOnErr)
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[Options]

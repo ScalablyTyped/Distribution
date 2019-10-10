@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionBooleanModel protected () extends Question {
   def this(name: String) = this()
+  val checkedLabel: String = js.native
   /**
     * Get/set question value in 3 modes: indeterminate (value is empty), true (check is set) and false (check is unset).
     * @see valueTrue
@@ -30,6 +31,7 @@ class QuestionBooleanModel protected () extends Question {
     * Set this property to true to show the question title. It is hidden by default.
     */
   var showTitle: Boolean = js.native
+  val uncheckedLabel: String = js.native
   /**
     * Set this property, if you want to have a different value from false when check is unset.
     */

@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
 trait StandardControl
   extends Control
      with UiStandardElement
-     with UiFocusable {
+     with UiFocusable
+     with UiCanGetDisabledElement
+     with UiCanSetDisabledElement {
   /**
     * Displays an error or recommendation notification for a control, and lets you specify actions to execute based on the notification.
     */
@@ -38,16 +40,6 @@ trait StandardControl
     */
   @JSName("getAttribute")
   def getAttribute_T_Attribute_T[T /* <: Attribute */](): T = js.native
-  /**
-    * Gets a boolean value, indicating whether the control is disabled.
-    * @returns true if it is disabled, otherwise false.
-    */
-  def getDisabled(): Boolean = js.native
-  /**
-    * Sets the state of the control to either enabled, or disabled.
-    * @param disabled true to disable, false to enable.
-    */
-  def setDisabled(disabled: Boolean): Unit = js.native
   /**
     * Sets a control-local notification message.
     * @param message The message.

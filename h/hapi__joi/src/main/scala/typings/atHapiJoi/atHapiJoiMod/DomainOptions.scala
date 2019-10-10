@@ -1,6 +1,6 @@
 package typings.atHapiJoi.atHapiJoiMod
 
-import typings.atHapiJoi.Anon_Allow
+import typings.atHapiJoi.atHapiJoiNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait DomainOptions extends js.Object {
     *
     * @default { allow: true }
     */
-  var tlds: js.UndefOr[Anon_Allow] = js.undefined
+  var tlds: js.UndefOr[TopLevelDomainOptions | `false`] = js.undefined
 }
 
 object DomainOptions {
@@ -31,12 +31,12 @@ object DomainOptions {
   def apply(
     allowUnicode: js.UndefOr[Boolean] = js.undefined,
     minDomainSegments: Int | Double = null,
-    tlds: Anon_Allow = null
+    tlds: TopLevelDomainOptions | `false` = null
   ): DomainOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode)
     if (minDomainSegments != null) __obj.updateDynamic("minDomainSegments")(minDomainSegments.asInstanceOf[js.Any])
-    if (tlds != null) __obj.updateDynamic("tlds")(tlds)
+    if (tlds != null) __obj.updateDynamic("tlds")(tlds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainOptions]
   }
 }

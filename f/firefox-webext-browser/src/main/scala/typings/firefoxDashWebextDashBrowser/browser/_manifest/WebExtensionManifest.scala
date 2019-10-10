@@ -9,6 +9,7 @@ import typings.firefoxDashWebextDashBrowser.Anon_BrowserstyleDefaultarea
 import typings.firefoxDashWebextDashBrowser.Anon_BrowserstyleDefaulticon
 import typings.firefoxDashWebextDashBrowser.Anon_BrowserstyleDefaulticonDefaultpanel
 import typings.firefoxDashWebextDashBrowser.Anon_DescriptionSuggestedkey
+import typings.firefoxDashWebextDashBrowser.Anon_Edge
 import typings.firefoxDashWebextDashBrowser.Anon_Gecko
 import typings.firefoxDashWebextDashBrowser.Anon_Homepage
 import typings.firefoxDashWebextDashBrowser.Anon_Keyword
@@ -26,7 +27,7 @@ trait WebExtensionManifest extends js.Object {
   var author: js.UndefOr[String] = js.undefined
   var background: js.UndefOr[Anon_Page | Anon_Persistent] = js.undefined
   var browser_action: js.UndefOr[Anon_BrowserstyleDefaultarea] = js.undefined
-  var browser_specific_settings: js.UndefOr[Anon_Gecko] = js.undefined
+  var browser_specific_settings: js.UndefOr[Anon_Edge] = js.undefined
   var chrome_settings_overrides: js.UndefOr[Anon_Homepage] = js.undefined
   var chrome_url_overrides: js.UndefOr[Anon_Bookmarks] = js.undefined
   var commands: js.UndefOr[StringDictionary[Anon_DescriptionSuggestedkey]] = js.undefined
@@ -70,7 +71,7 @@ object WebExtensionManifest {
     author: String = null,
     background: Anon_Page | Anon_Persistent = null,
     browser_action: Anon_BrowserstyleDefaultarea = null,
-    browser_specific_settings: Anon_Gecko = null,
+    browser_specific_settings: Anon_Edge = null,
     chrome_settings_overrides: Anon_Homepage = null,
     chrome_url_overrides: Anon_Bookmarks = null,
     commands: StringDictionary[Anon_DescriptionSuggestedkey] = null,

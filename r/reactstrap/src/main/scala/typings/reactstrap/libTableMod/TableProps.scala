@@ -22,7 +22,7 @@ trait TableProps
   var responsiveTag: js.UndefOr[ReactType[_]] = js.undefined
   var size: js.UndefOr[String] = js.undefined
   var striped: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object TableProps {
@@ -41,7 +41,7 @@ object TableProps {
     responsiveTag: ReactType[_] = null,
     size: String = null,
     striped: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): TableProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

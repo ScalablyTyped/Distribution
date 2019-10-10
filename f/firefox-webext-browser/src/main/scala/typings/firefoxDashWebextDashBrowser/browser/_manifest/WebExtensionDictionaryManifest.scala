@@ -1,6 +1,7 @@
 package typings.firefoxDashWebextDashBrowser.browser._manifest
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firefoxDashWebextDashBrowser.Anon_Edge
 import typings.firefoxDashWebextDashBrowser.Anon_Gecko
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait WebExtensionDictionaryManifest extends js.Object {
   var applications: js.UndefOr[Anon_Gecko] = js.undefined
   var author: js.UndefOr[String] = js.undefined
-  var browser_specific_settings: js.UndefOr[Anon_Gecko] = js.undefined
+  var browser_specific_settings: js.UndefOr[Anon_Edge] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var dictionaries: StringDictionary[String]
   var homepage_url: js.UndefOr[String] = js.undefined
@@ -29,7 +30,7 @@ object WebExtensionDictionaryManifest {
     version: String,
     applications: Anon_Gecko = null,
     author: String = null,
-    browser_specific_settings: Anon_Gecko = null,
+    browser_specific_settings: Anon_Edge = null,
     description: String = null,
     homepage_url: String = null,
     short_name: String = null

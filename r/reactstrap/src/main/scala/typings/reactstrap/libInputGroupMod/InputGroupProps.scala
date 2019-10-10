@@ -14,7 +14,7 @@ trait InputGroupProps
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var size: js.UndefOr[String] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object InputGroupProps {
@@ -25,7 +25,7 @@ object InputGroupProps {
     className: String = null,
     cssModule: CSSModule = null,
     size: String = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): InputGroupProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

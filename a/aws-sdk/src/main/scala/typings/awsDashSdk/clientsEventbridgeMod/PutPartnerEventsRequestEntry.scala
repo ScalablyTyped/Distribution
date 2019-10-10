@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait PutPartnerEventsRequestEntry extends js.Object {
   /**
-    * A valid JSON string. There is no other schema imposed. The JSON string can contain fields and nested subobjects.
+    * A valid JSON object. There is no other schema imposed. The JSON object can contain fields and nested subobjects. This field is required.
     */
   var Detail: js.UndefOr[String] = js.undefined
   /**
-    * A free-form string used to decide which fields to expect in the event detail.
+    * A free-form string used to decide which fields to expect in the event detail. This field is required.
     */
   var DetailType: js.UndefOr[String] = js.undefined
   /**
@@ -18,7 +18,7 @@ trait PutPartnerEventsRequestEntry extends js.Object {
     */
   var Resources: js.UndefOr[EventResourceList] = js.undefined
   /**
-    * The event source that is generating the evntry.
+    * The event source that is generating the evntry. This field is required.
     */
   var Source: js.UndefOr[String] = js.undefined
   /**

@@ -25,9 +25,9 @@ package object _manifest {
     * add-ons, but, reasons. The MatchPattern class will still refuse privileged schemes for those extensions.
     */
   type MatchPatternUnestricted = String
-  /* _manifest types */
   type OptionalPermission = _OptionalPermission
   type OptionalPermissionOrOrigin = OptionalPermission | MatchPattern
+  /* _manifest types */
   type Permission = String | OptionalPermission | _Permission
   type PermissionOrOrigin = Permission | MatchPattern
   /** @deprecated Event pages are not currently supported. This will run as a persistent background page. */

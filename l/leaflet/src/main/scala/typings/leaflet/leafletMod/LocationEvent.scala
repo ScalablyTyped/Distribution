@@ -24,12 +24,15 @@ object LocationEvent {
     bounds: LatLngBounds,
     heading: Double,
     latlng: LatLng,
+    layer: js.Any,
+    propagatedFrom: js.Any,
+    sourceTarget: js.Any,
     speed: Double,
     target: js.Any,
     timestamp: Double,
     `type`: String
   ): LocationEvent = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, altitudeAccuracy = altitudeAccuracy, bounds = bounds, heading = heading, latlng = latlng, speed = speed, target = target, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, altitudeAccuracy = altitudeAccuracy, bounds = bounds, heading = heading, latlng = latlng, layer = layer, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, speed = speed, target = target, timestamp = timestamp)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LocationEvent]
   }

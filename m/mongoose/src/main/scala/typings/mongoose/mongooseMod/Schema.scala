@@ -128,13 +128,6 @@ trait Schema[T] extends EventEmitter {
     */
   def plugin(plugin: js.Function1[/* schema */ Schema[_], Unit]): this.type = js.native
   def plugin[T](plugin: js.Function2[/* schema */ Schema[_], /* options */ T, Unit], opts: T): this.type = js.native
-  /**
-    * Defines a post hook for the document
-    * Post hooks fire on the event emitted from document instances of Models compiled
-    *   from this schema.
-    * @param method name of the method to hook
-    * @param fn callback
-    */
   def post[T /* <: Document */](
     method: String,
     fn: js.Function2[/* doc */ T, /* next */ js.Function1[/* err */ js.UndefOr[NativeError], Unit], Unit]
@@ -157,6 +150,34 @@ trait Schema[T] extends EventEmitter {
     fn: js.Function3[
       /* error */ MongoError, 
       /* doc */ T, 
+      /* next */ js.Function1[/* err */ js.UndefOr[NativeError], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("post")
+  def post_insertMany[T /* <: Document */](
+    method: insertMany,
+    fn: js.ThisFunction2[
+      /* this */ Model[Document, js.Object], 
+      /* docs */ js.Array[T], 
+      /* next */ js.Function1[js.UndefOr[NativeError], js.Promise[_] | Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Defines a post hook for the document
+    * Post hooks fire on the event emitted from document instances of Models compiled
+    *   from this schema.
+    * @param method name of the method to hook
+    * @param fn callback
+    */
+  @JSName("post")
+  def post_insertMany[T /* <: Document */](
+    method: insertMany,
+    fn: js.ThisFunction3[
+      /* this */ Model[Document, js.Object], 
+      /* error */ MongoError, 
+      /* docs */ js.Array[T], 
       /* next */ js.Function1[/* err */ js.UndefOr[NativeError], Unit], 
       Unit
     ]

@@ -14,7 +14,7 @@ trait FormTextProps
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object FormTextProps {
@@ -26,7 +26,7 @@ object FormTextProps {
     color: String = null,
     cssModule: CSSModule = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): FormTextProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

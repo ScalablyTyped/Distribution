@@ -79,6 +79,7 @@ object reactDashDatepickerMod extends js.Object {
     var monthsShown: js.UndefOr[Double] = js.native
     var name: js.UndefOr[String] = js.native
     var nextMonthButtonLabel: js.UndefOr[String] = js.native
+    var nextYearButtonLabel: js.UndefOr[String] = js.native
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], Unit]] = js.native
     var onChangeRaw: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], Unit]] = js.native
     var onClickOutside: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
@@ -112,6 +113,7 @@ object reactDashDatepickerMod extends js.Object {
     var popperProps: js.UndefOr[js.Object] = js.native
     var preventOpenOnFocus: js.UndefOr[Boolean] = js.native
     var previousMonthButtonLabel: js.UndefOr[String] = js.native
+    var previousYearButtonLabel: js.UndefOr[String] = js.native
     var readOnly: js.UndefOr[Boolean] = js.native
     var renderCustomHeader: js.UndefOr[js.Function1[/* params */ Anon_ChangeMonth, ReactNode]] = js.native
     var renderDayContents: js.UndefOr[js.Function1[/* dayOfMonth */ Double, ReactNode]] = js.native
@@ -126,6 +128,7 @@ object reactDashDatepickerMod extends js.Object {
     var showMonthDropdown: js.UndefOr[Boolean] = js.native
     var showMonthYearDropdown: js.UndefOr[Boolean] = js.native
     var showMonthYearPicker: js.UndefOr[Boolean] = js.native
+    var showPopperArrow: js.UndefOr[Boolean] = js.native
     var showTimeInput: js.UndefOr[Boolean] = js.native
     var showTimeSelect: js.UndefOr[Boolean] = js.native
     var showTimeSelectOnly: js.UndefOr[Boolean] = js.native
@@ -146,6 +149,7 @@ object reactDashDatepickerMod extends js.Object {
     var value: js.UndefOr[String] = js.native
     var weekLabel: js.UndefOr[String] = js.native
     var withPortal: js.UndefOr[Boolean] = js.native
+    var wrapperClassName: js.UndefOr[String] = js.native
     var yearDropdownItemNumber: js.UndefOr[Double] = js.native
     def onChange(): Unit = js.native
     def onChange(date: Null, event: SyntheticEvent[_, Event]): Unit = js.native

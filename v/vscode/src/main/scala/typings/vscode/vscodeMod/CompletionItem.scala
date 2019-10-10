@@ -97,6 +97,10 @@ class CompletionItem protected () extends js.Object {
   		 */
   var sortText: js.UndefOr[String] = js.native
   /**
+  		 * Tags for this completion item.
+  		 */
+  var tags: js.UndefOr[js.Array[CompletionItemTag]] = js.native
+  /**
   		 * @deprecated Use `CompletionItem.insertText` and `CompletionItem.range` instead.
   		 *
   		 * ~~An [edit](#TextEdit) which is applied to a document when selecting

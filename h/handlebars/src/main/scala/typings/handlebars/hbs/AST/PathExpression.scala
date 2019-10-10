@@ -9,6 +9,8 @@ trait PathExpression extends Node {
   var depth: Double
   var original: String
   var parts: js.Array[String]
+  @JSName("type")
+  var type_PathExpression: typings.handlebars.handlebarsStrings.PathExpression
 }
 
 object PathExpression {
@@ -19,7 +21,7 @@ object PathExpression {
     loc: SourceLocation,
     original: String,
     parts: js.Array[String],
-    `type`: String
+    `type`: typings.handlebars.handlebarsStrings.PathExpression
   ): PathExpression = {
     val __obj = js.Dynamic.literal(data = data, depth = depth, loc = loc, original = original, parts = parts)
     __obj.updateDynamic("type")(`type`)

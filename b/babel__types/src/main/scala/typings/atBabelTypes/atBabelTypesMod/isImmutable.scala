@@ -12,6 +12,6 @@ object isImmutable extends js.Object {
   def apply(node: js.Object): /* is @babel/types.@babel/types.Immutable */ Boolean = js.native
   def apply(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Immutable */ Boolean = js.native
   def apply(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Immutable */ Boolean = js.native
-  def apply(node: Node): Boolean = js.native
+  def apply(node: Node): /* is @babel/types.@babel/types.Immutable */ Boolean = js.native
 }
 

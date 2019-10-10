@@ -22,7 +22,7 @@ trait InputProps
   var invalid: js.UndefOr[Boolean] = js.undefined
   var plaintext: js.UndefOr[Boolean] = js.undefined
   var state: js.UndefOr[String] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   @JSName("type")
   var type_InputProps: js.UndefOr[InputType] = js.undefined
   var valid: js.UndefOr[Boolean] = js.undefined
@@ -41,7 +41,7 @@ object InputProps {
     invalid: js.UndefOr[Boolean] = js.undefined,
     plaintext: js.UndefOr[Boolean] = js.undefined,
     state: String = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     `type`: InputType = null,
     valid: js.UndefOr[Boolean] = js.undefined
   ): InputProps = {

@@ -40,6 +40,12 @@ trait ServerOptions extends js.Object {
   		 */
   var cookie: js.UndefOr[String | Boolean] = js.undefined
   /**
+    * Whether to let engine.io handle the OPTIONS requests.
+    * You can also pass a custom function to handle the requests
+    * @default true
+    */
+  var handlePreflightRequest: js.UndefOr[(js.Function2[/* req */ js.Any, /* res */ js.Any, Unit]) | Boolean] = js.undefined
+  /**
   		 * Parameters of the http compression for the polling transports (see zlib).
   		 * Set to false to disable, or set an object with parameter "threshold:number"
   		 * to only compress data if the byte size is above this value (1024) (engine.io)
@@ -97,6 +103,7 @@ object ServerOptions {
     allowRequest: (/* request */ js.Any, /* callback */ js.Function2[/* err */ Double, /* success */ Boolean, Unit]) => Unit = null,
     allowUpgrades: js.UndefOr[Boolean] = js.undefined,
     cookie: String | Boolean = null,
+    handlePreflightRequest: (js.Function2[/* req */ js.Any, /* res */ js.Any, Unit]) | Boolean = null,
     httpCompression: js.Object | Boolean = null,
     maxHttpBufferSize: Int | Double = null,
     origins: String | js.Array[String] = null,
@@ -112,6 +119,7 @@ object ServerOptions {
     if (allowRequest != null) __obj.updateDynamic("allowRequest")(js.Any.fromFunction2(allowRequest))
     if (!js.isUndefined(allowUpgrades)) __obj.updateDynamic("allowUpgrades")(allowUpgrades)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (handlePreflightRequest != null) __obj.updateDynamic("handlePreflightRequest")(handlePreflightRequest.asInstanceOf[js.Any])
     if (httpCompression != null) __obj.updateDynamic("httpCompression")(httpCompression.asInstanceOf[js.Any])
     if (maxHttpBufferSize != null) __obj.updateDynamic("maxHttpBufferSize")(maxHttpBufferSize.asInstanceOf[js.Any])
     if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])

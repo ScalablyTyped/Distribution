@@ -18,6 +18,7 @@ trait Anon_CommentContent extends js.Object {
   var mainRoot: String
   var number: String
   var required: String
+  var requiredText: String
   var title: String
   var titleLeftRoot: String
   var titleRequired: String
@@ -39,11 +40,12 @@ object Anon_CommentContent {
     mainRoot: String,
     number: String,
     required: String,
+    requiredText: String,
     title: String,
     titleLeftRoot: String,
     titleRequired: String
   ): Anon_CommentContent = {
-    val __obj = js.Dynamic.literal(comment = comment, content = content, contentLeft = contentLeft, description = description, flowRoot = flowRoot, formGroup = formGroup, hasError = hasError, header = header, headerLeft = headerLeft, indent = indent, mainRoot = mainRoot, number = number, required = required, title = title, titleLeftRoot = titleLeftRoot, titleRequired = titleRequired)
+    val __obj = js.Dynamic.literal(comment = comment, content = content, contentLeft = contentLeft, description = description, flowRoot = flowRoot, formGroup = formGroup, hasError = hasError, header = header, headerLeft = headerLeft, indent = indent, mainRoot = mainRoot, number = number, required = required, requiredText = requiredText, title = title, titleLeftRoot = titleLeftRoot, titleRequired = titleRequired)
   
     __obj.asInstanceOf[Anon_CommentContent]
   }

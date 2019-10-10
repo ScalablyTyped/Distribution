@@ -19,7 +19,7 @@ trait NavbarProps
   var full: js.UndefOr[Boolean] = js.undefined
   var light: js.UndefOr[Boolean] = js.undefined
   var sticky: js.UndefOr[String] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object NavbarProps {
@@ -37,7 +37,7 @@ object NavbarProps {
     light: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
     sticky: String = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): NavbarProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

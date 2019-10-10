@@ -5,6 +5,7 @@ import typings.popperDotJs.popperDotJsMod.Boundary
 import typings.popperDotJs.popperDotJsMod.Modifiers
 import typings.popperDotJs.popperDotJsMod.Placement
 import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod.MouseEventHandler
 import typings.reactstrap.Anon_Hide
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.std.Element
@@ -30,7 +31,7 @@ trait PopoverProps
   var placement: js.UndefOr[Placement] = js.undefined
   var placementPrefix: js.UndefOr[String] = js.undefined
   var target: String | HTMLElement
-  var toggle: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var toggle: js.UndefOr[MouseEventHandler[_] | js.Function0[Unit]] = js.undefined
 }
 
 object PopoverProps {
@@ -53,7 +54,7 @@ object PopoverProps {
     modifiers: Modifiers = null,
     placement: Placement = null,
     placementPrefix: String = null,
-    toggle: () => Unit = null
+    toggle: MouseEventHandler[_] | js.Function0[Unit] = null
   ): PopoverProps = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
@@ -72,7 +73,7 @@ object PopoverProps {
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (placementPrefix != null) __obj.updateDynamic("placementPrefix")(placementPrefix)
-    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
+    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverProps]
   }
 }

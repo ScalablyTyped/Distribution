@@ -12,8 +12,16 @@ trait TileEvent extends LeafletEvent {
 
 object TileEvent {
   @scala.inline
-  def apply(coords: Point, target: js.Any, tile: HTMLImageElement, `type`: String): TileEvent = {
-    val __obj = js.Dynamic.literal(coords = coords, target = target, tile = tile)
+  def apply(
+    coords: Point,
+    layer: js.Any,
+    propagatedFrom: js.Any,
+    sourceTarget: js.Any,
+    target: js.Any,
+    tile: HTMLImageElement,
+    `type`: String
+  ): TileEvent = {
+    val __obj = js.Dynamic.literal(coords = coords, layer = layer, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target, tile = tile)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TileEvent]
   }

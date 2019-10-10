@@ -21,7 +21,7 @@ trait CarouselItemProps
   var onExited: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onExiting: js.UndefOr[js.Function0[Unit]] = js.undefined
   var slide: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object CarouselItemProps {
@@ -38,7 +38,7 @@ object CarouselItemProps {
     onExited: () => Unit = null,
     onExiting: () => Unit = null,
     slide: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): CarouselItemProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)

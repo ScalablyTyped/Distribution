@@ -13,7 +13,7 @@ trait CardBodyProps
   extends HTMLAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object CardBodyProps {
@@ -23,7 +23,7 @@ object CardBodyProps {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     className: String = null,
     cssModule: CSSModule = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): CardBodyProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

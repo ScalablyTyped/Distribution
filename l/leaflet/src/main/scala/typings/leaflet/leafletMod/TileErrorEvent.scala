@@ -12,8 +12,17 @@ trait TileErrorEvent extends TileEvent {
 
 object TileErrorEvent {
   @scala.inline
-  def apply(coords: Point, error: Error, target: js.Any, tile: HTMLImageElement, `type`: String): TileErrorEvent = {
-    val __obj = js.Dynamic.literal(coords = coords, error = error, target = target, tile = tile)
+  def apply(
+    coords: Point,
+    error: Error,
+    layer: js.Any,
+    propagatedFrom: js.Any,
+    sourceTarget: js.Any,
+    target: js.Any,
+    tile: HTMLImageElement,
+    `type`: String
+  ): TileErrorEvent = {
+    val __obj = js.Dynamic.literal(coords = coords, error = error, layer = layer, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target, tile = tile)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TileErrorEvent]
   }

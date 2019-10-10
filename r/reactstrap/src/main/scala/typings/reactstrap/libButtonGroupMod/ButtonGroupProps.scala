@@ -14,7 +14,7 @@ trait ButtonGroupProps
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var size: js.UndefOr[String] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var vertical: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -28,7 +28,7 @@ object ButtonGroupProps {
     cssModule: CSSModule = null,
     role: String = null,
     size: String = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): ButtonGroupProps = {
     val __obj = js.Dynamic.literal()

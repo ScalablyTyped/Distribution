@@ -50,9 +50,9 @@ trait ElasticsearchDestinationConfiguration extends js.Object {
     */
   var S3Configuration: S3DestinationConfiguration
   /**
-    * The Elasticsearch type name. For Elasticsearch 6.x, there can be only one type per index. If you try to specify a new type for an existing index that already has another type, Kinesis Data Firehose returns an error during run time.
+    * The Elasticsearch type name. For Elasticsearch 6.x, there can be only one type per index. If you try to specify a new type for an existing index that already has another type, Kinesis Data Firehose returns an error during run time. For Elasticsearch 7.x, don't specify a TypeName.
     */
-  var TypeName: ElasticsearchTypeName
+  var TypeName: js.UndefOr[ElasticsearchTypeName] = js.undefined
 }
 
 object ElasticsearchDestinationConfiguration {
@@ -61,7 +61,6 @@ object ElasticsearchDestinationConfiguration {
     IndexName: ElasticsearchIndexName,
     RoleARN: RoleARN,
     S3Configuration: S3DestinationConfiguration,
-    TypeName: ElasticsearchTypeName,
     BufferingHints: ElasticsearchBufferingHints = null,
     CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
     ClusterEndpoint: ElasticsearchClusterEndpoint = null,
@@ -69,9 +68,10 @@ object ElasticsearchDestinationConfiguration {
     IndexRotationPeriod: ElasticsearchIndexRotationPeriod = null,
     ProcessingConfiguration: ProcessingConfiguration = null,
     RetryOptions: ElasticsearchRetryOptions = null,
-    S3BackupMode: ElasticsearchS3BackupMode = null
+    S3BackupMode: ElasticsearchS3BackupMode = null,
+    TypeName: ElasticsearchTypeName = null
   ): ElasticsearchDestinationConfiguration = {
-    val __obj = js.Dynamic.literal(IndexName = IndexName, RoleARN = RoleARN, S3Configuration = S3Configuration, TypeName = TypeName)
+    val __obj = js.Dynamic.literal(IndexName = IndexName, RoleARN = RoleARN, S3Configuration = S3Configuration)
     if (BufferingHints != null) __obj.updateDynamic("BufferingHints")(BufferingHints)
     if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions)
     if (ClusterEndpoint != null) __obj.updateDynamic("ClusterEndpoint")(ClusterEndpoint)
@@ -80,6 +80,7 @@ object ElasticsearchDestinationConfiguration {
     if (ProcessingConfiguration != null) __obj.updateDynamic("ProcessingConfiguration")(ProcessingConfiguration)
     if (RetryOptions != null) __obj.updateDynamic("RetryOptions")(RetryOptions)
     if (S3BackupMode != null) __obj.updateDynamic("S3BackupMode")(S3BackupMode.asInstanceOf[js.Any])
+    if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName)
     __obj.asInstanceOf[ElasticsearchDestinationConfiguration]
   }
 }

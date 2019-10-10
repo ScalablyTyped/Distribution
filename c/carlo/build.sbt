@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "carlo"
-version := "0.9-dt-20190314Z-9654a2"
+version := "0.9-dt-20190314Z-e63272"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
-  "org.scalablytyped" %%% "puppeteer" % "1.20-dt-20191003Z-dc0177",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
+  "org.scalablytyped" %%% "puppeteer" % "1.20-dt-20191003Z-2bd73f",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

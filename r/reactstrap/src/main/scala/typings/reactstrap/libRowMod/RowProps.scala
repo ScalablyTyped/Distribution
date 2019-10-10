@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var form: js.UndefOr[Boolean] = js.undefined
   var noGutters: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object RowProps {
@@ -25,7 +25,7 @@ object RowProps {
     cssModule: CSSModule = null,
     form: js.UndefOr[Boolean] = js.undefined,
     noGutters: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): RowProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

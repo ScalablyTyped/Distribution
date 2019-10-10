@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-frame-component", "FrameContextConsumer")
 @js.native
-object FrameContextConsumer extends TopLevel[Consumer[FrameContext]]
+object FrameContextConsumer extends TopLevel[Consumer[FrameContextProps]]
 

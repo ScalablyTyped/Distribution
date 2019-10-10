@@ -30,7 +30,7 @@ class ReportDesigner_ protected () extends Widget {
     * @param {any} JSON for the new report item to be added
     * @returns {void}
     */
-  def addReportItem(item: js.Any): Unit = js.native
+  def addItem(item: js.Any): Unit = js.native
   /** Visually move the selected report item over its closest intersected report items.
     * @returns {void}
     */
@@ -109,6 +109,10 @@ class ReportDesigner_ protected () extends Widget {
     * @returns {void}
     */
   def openReport(): Unit = js.native
+  /** This method opens the report using raw report data.
+    * @returns {void}
+    */
+  def openReportDefinition(): Unit = js.native
   /** Opens the client browse dialog to browse the report.
     * @returns {void}
     */
@@ -143,11 +147,15 @@ class ReportDesigner_ protected () extends Widget {
     * @param {string} Name of the report item to be removed from report
     * @returns {void}
     */
-  def removeReportItem(itemName: String): Unit = js.native
+  def removeItem(itemName: String): Unit = js.native
   /** This method saves the report into the server.
     * @returns {void}
     */
   def saveReport(): Unit = js.native
+  /** This method returns the report in JSON or XML format.
+    * @returns {void}
+    */
+  def saveReportDefinition(): Unit = js.native
   /** Opens the report designer browse dialog to save the report into server.
     * @returns {void}
     */
@@ -156,11 +164,11 @@ class ReportDesigner_ protected () extends Widget {
     * @returns {void}
     */
   def saveToDevice(): Unit = js.native
-  /** Update the selection to report item at runtime.
-    * @param {string} Name of the report item.
+  /** Update the selection to report items at runtime.
+    * @param {any[]} Name of the report items as string array.
     * @returns {void}
     */
-  def selectReportItem(itemName: String): Unit = js.native
+  def selectItems(itemNames: js.Array[_]): Unit = js.native
   /** Visually move the selected report item behind its closest intersected report item.
     * @returns {void}
     */

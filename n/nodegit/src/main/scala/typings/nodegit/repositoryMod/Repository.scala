@@ -45,6 +45,7 @@ class Repository () extends js.Object {
   def checkoutRef(reference: Reference): js.Promise[Reference] = js.native
   def checkoutRef(reference: Reference, opts: CheckoutOptions): js.Promise[Reference] = js.native
   def cleanup(): Unit = js.native
+  def commondir(): String = js.native
   def config(): js.Promise[Config] = js.native
   def configSnapshot(): js.Promise[Config] = js.native
   def continueRebase(signature: Signature, beforeNextFn: js.Function): js.Promise[Oid] = js.native

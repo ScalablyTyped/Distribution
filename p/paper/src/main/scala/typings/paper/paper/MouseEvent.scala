@@ -1,56 +1,42 @@
 package typings.paper.paper
 
-import typings.paper.NativeMouseEvent
-import typings.paper.paperStrings.click
-import typings.paper.paperStrings.doubleclick
-import typings.paper.paperStrings.mousedown
-import typings.paper.paperStrings.mousedrag
-import typings.paper.paperStrings.mouseenter
-import typings.paper.paperStrings.mouseleave
-import typings.paper.paperStrings.mousemove
-import typings.paper.paperStrings.mouseup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** 
+  * The MouseEvent object is received by the {@link Item}'s mouse event
+  * handlers {@link Item#onMouseDown}, {@link Item#onMouseDrag},
+  * {@link Item#onMouseMove}, {@link Item#onMouseUp}, {@link Item#onClick},
+  * {@link Item#onDoubleClick}, {@link Item#onMouseEnter} and
+  * {@link Item#onMouseLeave}. The MouseEvent object is the only parameter passed
+  * to these functions and contains information about the mouse event.
+  */
 @JSGlobal("paper.MouseEvent")
 @js.native
-class MouseEvent protected () extends Event {
-  def this(`type`: String, event: NativeMouseEvent, point: Point, target: Item, delta: Point) = this()
-  /**
-    * The current target for the event, as the event traverses the scene
-    * graph. It always refers to the element the event handler has been
-    * attached to as opposed to target which identifies the element on
+class MouseEvent () extends Event {
+  /** 
+    * The current target for the event, as the event traverses the scene graph.
+    * It always refers to the element the event handler has been attached to as
+    * opposed to {@link #target} which identifies the element on
     * which the event occurred.
     */
-  var currentTarget: Item = js.native
-  /**
-    *
-    */
-  var delta: Point = js.native
-  /**
-    * The JavaScript mouse event
-    */
-  var event: NativeMouseEvent = js.native
-  /**
-    * The last event's position of the mouse in project coordinates when
-    * the event was fired.
-    */
-  var lastPoint: Point = js.native
-  /**
+  var currentTarget: Item | Null = js.native
+  var delta: Point | Null = js.native
+  /** 
     * The position of the mouse in project coordinates when the event was
     * fired.
     */
-  var point: Point = js.native
-  /**
+  var point: Point | Null = js.native
+  /** 
     * The item that dispatched the event. It is different from
-    * currentTarget when the event handler is called during the bubbling
-    * phase of the event.
+    * {@link #currentTarget} when the event handler is called during
+    * the bubbling phase of the event.
     */
-  var target: Item = js.native
-  /**
-    * Type of mouse event
+  var target: Item | Null = js.native
+  /** 
+    * The type of mouse event.
     */
-  var `type`: mousedown | mouseup | mousedrag | click | doubleclick | mousemove | mouseenter | mouseleave = js.native
+  var `type`: String | Null = js.native
 }
 

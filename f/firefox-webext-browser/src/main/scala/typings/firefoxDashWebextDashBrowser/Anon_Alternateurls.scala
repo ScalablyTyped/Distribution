@@ -29,10 +29,15 @@ trait Anon_Alternateurls extends js.Object {
   var params: js.UndefOr[js.Array[Anon_Condition]] = js.undefined
   /** @deprecated Unsupported on Firefox. */
   var prepopulated_id: js.UndefOr[Double] = js.undefined
+  var search_form: js.UndefOr[String] = js.undefined
   var search_url: String
+  /** GET parameters to the search_url as a query string. */
+  var search_url_get_params: js.UndefOr[String] = js.undefined
   /** POST parameters to the search_url as a query string. */
   var search_url_post_params: js.UndefOr[String] = js.undefined
   var suggest_url: js.UndefOr[String] = js.undefined
+  /** GET parameters to the suggest_url as a query string. */
+  var suggest_url_get_params: js.UndefOr[String] = js.undefined
   /** POST parameters to the suggest_url as a query string. */
   var suggest_url_post_params: js.UndefOr[String] = js.undefined
 }
@@ -53,8 +58,11 @@ object Anon_Alternateurls {
     keyword: String = null,
     params: js.Array[Anon_Condition] = null,
     prepopulated_id: Int | Double = null,
+    search_form: String = null,
+    search_url_get_params: String = null,
     search_url_post_params: String = null,
     suggest_url: String = null,
+    suggest_url_get_params: String = null,
     suggest_url_post_params: String = null
   ): Anon_Alternateurls = {
     val __obj = js.Dynamic.literal(name = name, search_url = search_url)
@@ -69,8 +77,11 @@ object Anon_Alternateurls {
     if (keyword != null) __obj.updateDynamic("keyword")(keyword)
     if (params != null) __obj.updateDynamic("params")(params)
     if (prepopulated_id != null) __obj.updateDynamic("prepopulated_id")(prepopulated_id.asInstanceOf[js.Any])
+    if (search_form != null) __obj.updateDynamic("search_form")(search_form)
+    if (search_url_get_params != null) __obj.updateDynamic("search_url_get_params")(search_url_get_params)
     if (search_url_post_params != null) __obj.updateDynamic("search_url_post_params")(search_url_post_params)
     if (suggest_url != null) __obj.updateDynamic("suggest_url")(suggest_url)
+    if (suggest_url_get_params != null) __obj.updateDynamic("suggest_url_get_params")(suggest_url_get_params)
     if (suggest_url_post_params != null) __obj.updateDynamic("suggest_url_post_params")(suggest_url_post_params)
     __obj.asInstanceOf[Anon_Alternateurls]
   }

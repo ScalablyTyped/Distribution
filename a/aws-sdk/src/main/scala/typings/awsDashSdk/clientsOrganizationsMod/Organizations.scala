@@ -487,12 +487,12 @@ trait Organizations extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListRootsResponse, Unit]
   ): Request[ListRootsResponse, AWSError] = js.native
   /**
-    * Lists tags for the specified resource.  Currently, you can list tags on an account in AWS Organizations.
+    * Lists tags for the specified resource.  Currently, you can list tags on an account in AWS Organizations. This operation can be called only from the organization's master account.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Lists tags for the specified resource.  Currently, you can list tags on an account in AWS Organizations.
+    * Lists tags for the specified resource.  Currently, you can list tags on an account in AWS Organizations. This operation can be called only from the organization's master account.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -536,22 +536,22 @@ trait Organizations extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Adds one or more tags to the specified resource. Currently, you can tag and untag accounts in AWS Organizations.
+    * Adds one or more tags to the specified resource. Currently, you can tag and untag accounts in AWS Organizations. This operation can be called only from the organization's master account.
     */
   def tagResource(): Request[js.Object, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Adds one or more tags to the specified resource. Currently, you can tag and untag accounts in AWS Organizations.
+    * Adds one or more tags to the specified resource. Currently, you can tag and untag accounts in AWS Organizations. This operation can be called only from the organization's master account.
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes a tag from the specified resource.  Currently, you can tag and untag accounts in AWS Organizations.
+    * Removes a tag from the specified resource.  Currently, you can tag and untag accounts in AWS Organizations. This operation can be called only from the organization's master account.
     */
   def untagResource(): Request[js.Object, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes a tag from the specified resource.  Currently, you can tag and untag accounts in AWS Organizations.
+    * Removes a tag from the specified resource.  Currently, you can tag and untag accounts in AWS Organizations. This operation can be called only from the organization's master account.
     */
   def untagResource(params: UntagResourceRequest): Request[js.Object, AWSError] = js.native
   def untagResource(

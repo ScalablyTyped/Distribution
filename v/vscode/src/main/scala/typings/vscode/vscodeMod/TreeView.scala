@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TreeView[T] extends Disposable {
   /**
+  		 * An optional human-readable message that will be rendered in the view.
+  		 * Setting the message to null, undefined, or empty string will remove the message from the view.
+  		 */
+  var message: js.UndefOr[String] = js.native
+  /**
   		 * Currently selected elements.
   		 */
   val selection: js.Array[T] = js.native

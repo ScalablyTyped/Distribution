@@ -46,7 +46,7 @@ trait ElasticsearchDestinationUpdate extends js.Object {
     */
   var S3Update: js.UndefOr[S3DestinationUpdate] = js.undefined
   /**
-    * The Elasticsearch type name. For Elasticsearch 6.x, there can be only one type per index. If you try to specify a new type for an existing index that already has another type, Kinesis Data Firehose returns an error during runtime.
+    * The Elasticsearch type name. For Elasticsearch 6.x, there can be only one type per index. If you try to specify a new type for an existing index that already has another type, Kinesis Data Firehose returns an error during runtime. If you upgrade Elasticsearch from 6.x to 7.x and don’t update your delivery stream, Kinesis Data Firehose still delivers data to Elasticsearch with the old index name and type name. If you want to update your delivery stream with a new index name, provide an empty string for TypeName. 
     */
   var TypeName: js.UndefOr[ElasticsearchTypeName] = js.undefined
 }

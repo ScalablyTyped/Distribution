@@ -12,6 +12,7 @@ import typings.paper.paper.Path.RegularPolygon
 import typings.paper.paper.Path.Star
 import typings.paper.paper.Point
 import typings.paper.paper.Rectangle
+import typings.paper.paper.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +24,7 @@ trait TypeofPath extends js.Object {
   var Line: Instantiable2[/* from */ Point, /* to */ Point, typings.paper.paper.Path.Line]
   var Rectangle: Instantiable2[
     /* rectangle */ typings.paper.paper.Rectangle, 
-    js.UndefOr[/* radius */ Double], 
+    js.UndefOr[/* radius */ Size], 
     typings.paper.paper.Path.Rectangle
   ]
   var RegularPolygon: Instantiable3[
@@ -50,7 +51,7 @@ object TypeofPath {
     Line: Instantiable2[/* from */ Point, /* to */ Point, Line],
     Rectangle: Instantiable2[
       /* rectangle */ Rectangle, 
-      js.UndefOr[/* radius */ Double], 
+      js.UndefOr[/* radius */ Size], 
       typings.paper.paper.Path.Rectangle
     ],
     RegularPolygon: Instantiable3[/* center */ Point, /* sides */ Double, /* radius */ Double, RegularPolygon],

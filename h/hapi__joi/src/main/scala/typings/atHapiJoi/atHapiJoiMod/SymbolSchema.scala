@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.atHapiJoi.atHapiJoiMod._SchemaLike because Already inherited
+- typings.atHapiJoi.atHapiJoiMod.Schema because Already inherited */ @js.native
 trait SymbolSchema extends AnySchema {
   def map(iterable: StringDictionary[js.Symbol]): this.type = js.native
   // TODO: support number and symbol index

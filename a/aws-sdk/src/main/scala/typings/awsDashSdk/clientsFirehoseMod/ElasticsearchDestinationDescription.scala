@@ -50,7 +50,7 @@ trait ElasticsearchDestinationDescription extends js.Object {
     */
   var S3DestinationDescription: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.S3DestinationDescription] = js.undefined
   /**
-    * The Elasticsearch type name.
+    * The Elasticsearch type name. This applies to Elasticsearch 6.x and lower versions. For Elasticsearch 7.x, there's no value for TypeName.
     */
   var TypeName: js.UndefOr[ElasticsearchTypeName] = js.undefined
 }

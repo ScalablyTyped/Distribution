@@ -25,7 +25,7 @@ trait ButtonProps
   var onClick_ButtonProps: js.UndefOr[MouseEventHandler[_]] = js.undefined
   var outline: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[js.Any] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object ButtonProps {
@@ -44,7 +44,7 @@ object ButtonProps {
     outline: js.UndefOr[Boolean] = js.undefined,
     size: js.Any = null,
     style: CSSProperties = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ButtonHTMLAttributes)

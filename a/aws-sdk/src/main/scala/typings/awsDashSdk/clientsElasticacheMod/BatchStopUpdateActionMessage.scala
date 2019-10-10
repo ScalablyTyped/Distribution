@@ -6,9 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait BatchStopUpdateActionMessage extends js.Object {
   /**
+    * The cache cluster IDs
+    */
+  var CacheClusterIds: js.UndefOr[CacheClusterIdList] = js.undefined
+  /**
     * The replication group IDs
     */
-  var ReplicationGroupIds: ReplicationGroupIdList
+  var ReplicationGroupIds: js.UndefOr[ReplicationGroupIdList] = js.undefined
   /**
     * The unique ID of the service update
     */
@@ -17,9 +21,14 @@ trait BatchStopUpdateActionMessage extends js.Object {
 
 object BatchStopUpdateActionMessage {
   @scala.inline
-  def apply(ReplicationGroupIds: ReplicationGroupIdList, ServiceUpdateName: String): BatchStopUpdateActionMessage = {
-    val __obj = js.Dynamic.literal(ReplicationGroupIds = ReplicationGroupIds, ServiceUpdateName = ServiceUpdateName)
-  
+  def apply(
+    ServiceUpdateName: String,
+    CacheClusterIds: CacheClusterIdList = null,
+    ReplicationGroupIds: ReplicationGroupIdList = null
+  ): BatchStopUpdateActionMessage = {
+    val __obj = js.Dynamic.literal(ServiceUpdateName = ServiceUpdateName)
+    if (CacheClusterIds != null) __obj.updateDynamic("CacheClusterIds")(CacheClusterIds)
+    if (ReplicationGroupIds != null) __obj.updateDynamic("ReplicationGroupIds")(ReplicationGroupIds)
     __obj.asInstanceOf[BatchStopUpdateActionMessage]
   }
 }

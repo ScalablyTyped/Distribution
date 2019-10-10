@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "enzyme-async-helpers"
-version := "0.9-dt-20190219Z-79a22d"
+version := "0.9-dt-20190219Z-d32c33"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-e5f29b",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-726142",
   "org.scalablytyped" %%% "csstype" % "2.6.6-1967d7",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-acacf6",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-b45774",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-e54803",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-3b437f",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")

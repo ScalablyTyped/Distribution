@@ -1,7 +1,7 @@
 
 # Scala.js typings for grecaptcha
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 reCAPTCHA v3 / v2 client for Node

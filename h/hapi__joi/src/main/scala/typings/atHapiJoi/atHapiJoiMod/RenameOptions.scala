@@ -6,19 +6,27 @@ import scala.scalajs.js.annotation._
 
 trait RenameOptions extends js.Object {
   /**
-    * if true, does not delete the old key name, keeping both the new and old keys in place. Defaults to false.
+    * if true, does not delete the old key name, keeping both the new and old keys in place.
+    *
+    * @default false
     */
   var alias: js.UndefOr[Boolean] = js.undefined
   /**
-    * if true, skip renaming of a key if it's undefined. Defaults to false.
+    * if true, skip renaming of a key if it's undefined.
+    *
+    * @default false
     */
   var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
   /**
-    * if true, allows renaming multiple keys to the same destination where the last rename wins. Defaults to false.
+    * if true, allows renaming multiple keys to the same destination where the last rename wins.
+    *
+    * @default false
     */
   var multiple: js.UndefOr[Boolean] = js.undefined
   /**
-    * if true, allows renaming a key over an existing key. Defaults to false.
+    * if true, allows renaming a key over an existing key.
+    *
+    * @default false
     */
   var `override`: js.UndefOr[Boolean] = js.undefined
 }

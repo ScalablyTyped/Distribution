@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gulp-responsive-images"
-version := "0.0-dt-20180411Z-d41384"
+version := "0.0-dt-20180411Z-5d63cc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gm" % "1.18-dt-20190819Z-a2d730",
-  "org.scalablytyped" %%% "gulp-rename" % "0.0-unknown-dt-20190322Z-15c07d",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "gm" % "1.18-dt-20190819Z-73be8f",
+  "org.scalablytyped" %%% "gulp-rename" % "0.0-unknown-dt-20190322Z-6fe9a2",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -6,6 +6,18 @@ import scala.scalajs.js.annotation._
 
 trait UpdateAction extends js.Object {
   /**
+    * The ID of the cache cluster
+    */
+  var CacheClusterId: js.UndefOr[String] = js.undefined
+  /**
+    * The status of the service update on the cache node
+    */
+  var CacheNodeUpdateStatus: js.UndefOr[CacheNodeUpdateStatusList] = js.undefined
+  /**
+    * The Elasticache engine to which the update applies. Either Redis or Memcached
+    */
+  var Engine: js.UndefOr[String] = js.undefined
+  /**
     * The estimated length of time for the update to complete
     */
   var EstimatedUpdateTime: js.UndefOr[String] = js.undefined
@@ -66,6 +78,9 @@ trait UpdateAction extends js.Object {
 object UpdateAction {
   @scala.inline
   def apply(
+    CacheClusterId: String = null,
+    CacheNodeUpdateStatus: CacheNodeUpdateStatusList = null,
+    Engine: String = null,
     EstimatedUpdateTime: String = null,
     NodeGroupUpdateStatus: NodeGroupUpdateStatusList = null,
     NodesUpdated: String = null,
@@ -82,6 +97,9 @@ object UpdateAction {
     UpdateActionStatusModifiedDate: TStamp = null
   ): UpdateAction = {
     val __obj = js.Dynamic.literal()
+    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId)
+    if (CacheNodeUpdateStatus != null) __obj.updateDynamic("CacheNodeUpdateStatus")(CacheNodeUpdateStatus)
+    if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EstimatedUpdateTime != null) __obj.updateDynamic("EstimatedUpdateTime")(EstimatedUpdateTime)
     if (NodeGroupUpdateStatus != null) __obj.updateDynamic("NodeGroupUpdateStatus")(NodeGroupUpdateStatus)
     if (NodesUpdated != null) __obj.updateDynamic("NodesUpdated")(NodesUpdated)

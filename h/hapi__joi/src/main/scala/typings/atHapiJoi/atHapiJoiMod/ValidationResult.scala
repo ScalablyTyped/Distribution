@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in 'then' | 'catch' ]: std.Promise<std.Promise<T>>[P]} */ trait ValidationResult[T] extends js.Object {
+trait ValidationResult extends js.Object {
   var error: ValidationError
-  var value: T
+  var errors: ValidationError
+  var value: js.Any
+  var warning: ValidationError
 }
 
 object ValidationResult {
   @scala.inline
-  def apply[T](error: ValidationError, value: T): ValidationResult[T] = {
-    val __obj = js.Dynamic.literal(error = error, value = value.asInstanceOf[js.Any])
+  def apply(error: ValidationError, errors: ValidationError, value: js.Any, warning: ValidationError): ValidationResult = {
+    val __obj = js.Dynamic.literal(error = error, errors = errors, value = value, warning = warning)
   
-    __obj.asInstanceOf[ValidationResult[T]]
+    __obj.asInstanceOf[ValidationResult]
   }
 }
 

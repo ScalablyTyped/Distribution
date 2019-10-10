@@ -17,11 +17,13 @@ import typings.atPulumiPulumi.queryableMod.ResolvedResource
 import typings.atPulumiPulumi.resourceMod.ComponentResource
 import typings.atPulumiPulumi.resourceMod.Resource
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
+import typings.atPulumiPulumi.resourceMod.ResourceTransformation
 import typings.atPulumiPulumi.resourceMod.URN
 import typings.atPulumiPulumi.runtimeClosureCodePathsMod.CodePathOptions
 import typings.atPulumiPulumi.runtimeClosureSerializeClosureMod.SerializeFunctionArgs
 import typings.atPulumiPulumi.runtimeClosureSerializeClosureMod.SerializedFunction
 import typings.atPulumiPulumi.runtimeRpcMod.OutputResolvers
+import typings.atPulumiPulumi.runtimeStackMod.Stack
 import typings.atPulumiQuery.interfacesMod.AsyncQueryable
 import typings.std.Map
 import typings.std.Record
@@ -60,6 +62,7 @@ object runtimeMod extends js.Object {
   def getProject(): String = js.native
   def getRootResource(): js.Promise[js.UndefOr[URN]] = js.native
   def getStack(): String = js.native
+  def getStackResource(): js.UndefOr[Stack] = js.native
   def hasMonitor(): Boolean = js.native
   def invoke(tok: String, props: Inputs): js.Promise[_] = js.native
   def invoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[_] = js.native
@@ -76,6 +79,7 @@ object runtimeMod extends js.Object {
   def registerResourceOutputs(res: Resource, outputs: js.Promise[Inputs]): Unit = js.native
   def registerResourceOutputs(res: Resource, outputs: Inputs): Unit = js.native
   def registerResourceOutputs(res: Resource, outputs: Output[Inputs]): Unit = js.native
+  def registerStackTransformation(t: ResourceTransformation): Unit = js.native
   def resolveProperties(
     res: Resource,
     resolvers: Record[

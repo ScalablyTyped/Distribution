@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "rsocket-tcp-client"
-version := "0.0-dt-20190708Z-f1eb06"
+version := "0.0-dt-20190708Z-50fe62"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
-  "org.scalablytyped" %%% "rsocket-core" % "0.0-dt-20190708Z-985093",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
+  "org.scalablytyped" %%% "rsocket-core" % "0.0-dt-20190708Z-91a96b",
   "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20190708Z-1ad808",
-  "org.scalablytyped" %%% "rsocket-types" % "0.0-dt-20190708Z-27a905",
+  "org.scalablytyped" %%% "rsocket-types" % "0.0-dt-20190708Z-c66a65",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

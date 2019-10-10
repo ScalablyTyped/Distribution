@@ -58,7 +58,7 @@ trait ISelectableDroppableTextProps[TComponent, TListenerElement] extends HTMLAt
     */
   var onRenderOption: js.UndefOr[IRenderFunction[ISelectableOption]] = js.undefined
   /**
-    * Whether or not the combobox should expand on keyboard focus
+    * Whether or not the ComboBox/Dropdown should expand on keyboard focus.
     * @defaultvalue false
     */
   var openOnKeyboardFocus: js.UndefOr[Boolean] = js.undefined

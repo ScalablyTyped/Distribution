@@ -19,9 +19,10 @@ trait DebugSession extends js.Object {
   		 */
   val id: String = js.native
   /**
-  		 * The debug session's name from the [debug configuration](#DebugConfiguration).
+  		 * The debug session's name is initially taken from the [debug configuration](#DebugConfiguration).
+  		 * Any changes will be properly reflected in the UI.
   		 */
-  val name: String = js.native
+  var name: String = js.native
   /**
   		 * The debug session's type from the [debug configuration](#DebugConfiguration).
   		 */

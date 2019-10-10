@@ -7,7 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Please use `proxy.onError`. */
+/**
+  * Please use `proxy.onError`.
+  * @deprecated proxy.onProxyError has been deprecated and will be removed in Firefox 71\. Use proxy.onError instead.
+  */
 @JSGlobal("browser.proxy.onProxyError")
 @js.native
 object onProxyError

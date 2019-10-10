@@ -1,7 +1,7 @@
 
 # Scala.js typings for execa
 
-Typings are for version 2.0.5
+Typings are for version 2.1.0
 
 ## Library description:
 A better `child_process`

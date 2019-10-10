@@ -3841,7 +3841,7 @@ trait Typeofts extends js.Object {
   def isObjectLiteralExpression(node: Node): /* is typescript.typescript.ObjectLiteralExpression */ Boolean = js.native
   def isOmittedExpression(node: Node): /* is typescript.typescript.OmittedExpression */ Boolean = js.native
   def isParameter(node: Node): /* is typescript.typescript.ParameterDeclaration */ Boolean = js.native
-  def isParameterPropertyDeclaration(node: Node): /* is typescript.typescript.ParameterPropertyDeclaration */ Boolean = js.native
+  def isParameterPropertyDeclaration(node: Node, parent: Node): /* is typescript.typescript.ParameterPropertyDeclaration */ Boolean = js.native
   def isParenthesizedExpression(node: Node): /* is typescript.typescript.ParenthesizedExpression */ Boolean = js.native
   def isParenthesizedTypeNode(node: Node): /* is typescript.typescript.ParenthesizedTypeNode */ Boolean = js.native
   /**

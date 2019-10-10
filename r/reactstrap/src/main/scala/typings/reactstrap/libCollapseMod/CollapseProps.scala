@@ -25,7 +25,7 @@ trait CollapseProps
   var onExited: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onExiting: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object CollapseProps {
@@ -45,7 +45,7 @@ object CollapseProps {
     onExited: () => Unit = null,
     onExiting: () => Unit = null,
     onOpened: () => Unit = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): CollapseProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)

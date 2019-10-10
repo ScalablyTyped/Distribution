@@ -111,6 +111,7 @@ class Question protected ()
     * Returns true if the question may have a title located on the left
     */
   val isAllowTitleLeft: Boolean = js.native
+  var isAnswered: Boolean = js.native
   val isFlowLayout: Boolean = js.native
   /**
     * Always returns false.
@@ -305,6 +306,7 @@ class Question protected ()
   override def getErrorCustomText(text: String, error: SurveyError): String = js.native
   /* protected */ def getFirstErrorInputElementId(): String = js.native
   /* protected */ def getFirstInputElementId(): String = js.native
+  /* protected */ def getIsAnswered(): Boolean = js.native
   /* protected */ def getIsRunningValidators(): Boolean = js.native
   def getLayoutType(): String = js.native
   /* CompleteClass */
@@ -401,6 +403,7 @@ class Question protected ()
   /* protected */ def setNewValue(newValue: js.Any): Unit = js.native
   /* protected */ def setNewValueInData(newValue: js.Any): Unit = js.native
   /* protected */ def setQuestionValue(newValue: js.Any): Unit = js.native
+  /* protected */ def setQuestionValue(newValue: js.Any, updateIsAnswered: Boolean): Unit = js.native
   /* protected */ def setValueCore(newValue: js.Any): Unit = js.native
   def supportComment(): Boolean = js.native
   def supportGoNextPageAutomatic(): Boolean = js.native
@@ -410,6 +413,7 @@ class Question protected ()
   /* protected */ def updateCssClasses(res: js.Any, surveyCss: js.Any): Unit = js.native
   def updateCustomWidget(): Unit = js.native
   /* protected */ def updateDisplayValue(): js.Any = js.native
+  /* protected */ def updateIsAnswered(): Unit = js.native
   def updateValueFromSurvey(newValue: js.Any): Unit = js.native
   @JSName("updateValueFromSurvey")
   def updateValueFromSurvey_Any(newValue: js.Any): js.Any = js.native

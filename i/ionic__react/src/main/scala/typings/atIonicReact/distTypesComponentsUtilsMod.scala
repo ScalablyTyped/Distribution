@@ -34,8 +34,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/react/dist/types/components/utils", JSImport.Namespace)
 @js.native
 object distTypesComponentsUtilsMod extends js.Object {
-  def attachEventProps(node: HTMLElement, newProps: js.Any): Unit = js.native
-  def attachEventProps(node: HTMLElement, newProps: js.Any, oldProps: js.Any): Unit = js.native
+  def attachProps(node: HTMLElement, newProps: js.Any): Unit = js.native
+  def attachProps(node: HTMLElement, newProps: js.Any, oldProps: js.Any): Unit = js.native
   def camelToDashCase(str: String): String = js.native
   def createForwardRef[PropType, ElementType](ReactComponent: js.Any, displayName: String): ForwardRefExoticComponent[
     (PropsWithoutRef[IonicReactExternalProps[PropType, ElementType]]) with RefAttributes[ElementType]
@@ -50,7 +50,8 @@ object distTypesComponentsUtilsMod extends js.Object {
   def isPlatform(
     platform: ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ): Boolean = js.native
-  def syncEvent(node: Element, eventName: String, newEventHandler: js.Function1[/* e */ Event, _]): Unit = js.native
+  def syncEvent(node: Element with Anon_E, eventName: String): Unit = js.native
+  def syncEvent(node: Element with Anon_E, eventName: String, newEventHandler: js.Function1[/* e */ Event, _]): Unit = js.native
   type IonicReactExternalProps[PropType, ElementType] = PropType with (Omit[HTMLAttributes[ElementType], style]) with IonicReactProps
 }
 

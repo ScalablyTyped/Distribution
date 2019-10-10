@@ -2,6 +2,7 @@ package typings.reactstrap.libLabelMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.LabelHTMLAttributes
+import typings.react.reactMod.ReactType
 import typings.reactstrap.libColMod.ColumnProps
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.std.HTMLLabelElement
@@ -21,7 +22,7 @@ trait LabelProps
   var md: js.UndefOr[ColumnProps] = js.undefined
   var size: js.UndefOr[String] = js.undefined
   var sm: js.UndefOr[ColumnProps] = js.undefined
-  var tag: js.UndefOr[String] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var xl: js.UndefOr[ColumnProps] = js.undefined
   var xs: js.UndefOr[ColumnProps] = js.undefined
 }
@@ -42,7 +43,7 @@ object LabelProps {
     md: ColumnProps = null,
     size: String = null,
     sm: ColumnProps = null,
-    tag: String = null,
+    tag: String | ReactType[_] = null,
     xl: ColumnProps = null,
     xs: ColumnProps = null
   ): LabelProps = {
@@ -60,7 +61,7 @@ object LabelProps {
     if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size)
     if (sm != null) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (xl != null) __obj.updateDynamic("xl")(xl.asInstanceOf[js.Any])
     if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelProps]

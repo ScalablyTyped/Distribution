@@ -17,7 +17,7 @@ trait CardImgProps
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var height: js.UndefOr[String] = js.undefined
   var src: js.UndefOr[String] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var top: js.UndefOr[Boolean] = js.undefined
   var width: js.UndefOr[String] = js.undefined
 }
@@ -33,7 +33,7 @@ object CardImgProps {
     cssModule: CSSModule = null,
     height: String = null,
     src: String = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     top: js.UndefOr[Boolean] = js.undefined,
     width: String = null
   ): CardImgProps = {

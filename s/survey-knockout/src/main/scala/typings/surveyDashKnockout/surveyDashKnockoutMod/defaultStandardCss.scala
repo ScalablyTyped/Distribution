@@ -11,12 +11,12 @@ import typings.surveyDashKnockout.Anon_Comment
 import typings.surveyDashKnockout.Anon_Complete
 import typings.surveyDashKnockout.Anon_Container
 import typings.surveyDashKnockout.Anon_Control
+import typings.surveyDashKnockout.Anon_ControlOther
 import typings.surveyDashKnockout.Anon_Description
 import typings.surveyDashKnockout.Anon_Disabled
 import typings.surveyDashKnockout.Anon_Error
 import typings.surveyDashKnockout.Anon_FileDecorator
 import typings.surveyDashKnockout.Anon_Icon
-import typings.surveyDashKnockout.Anon_Item
 import typings.surveyDashKnockout.Anon_ItemTitle
 import typings.surveyDashKnockout.Anon_Root
 import scala.scalajs.js
@@ -28,12 +28,12 @@ import scala.scalajs.js.annotation._
 object defaultStandardCss extends js.Object {
   var body: String = js.native
   var bodyEmpty: String = js.native
-  var boolean: Anon_Item = js.native
+  var boolean: Anon_Control = js.native
   var checkbox: Anon_Column = js.native
   var comment: String = js.native
   var completedPage: String = js.native
   var container: String = js.native
-  var dropdown: Anon_Control = js.native
+  var dropdown: Anon_ControlOther = js.native
   var error: Anon_Icon = js.native
   var expression: String = js.native
   var file: Anon_FileDecorator = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.atHapiJoi.atHapiJoiMod._SchemaLike because Already inherited
-- typings.atHapiJoi.atHapiJoiMod._Schema because Already inherited */ @js.native
+- typings.atHapiJoi.atHapiJoiMod.Schema because Already inherited */ @js.native
 trait BinarySchema extends AnySchema {
   /**
     * Sets the string encoding format if a string input is converted to a buffer.
@@ -16,13 +16,16 @@ trait BinarySchema extends AnySchema {
     * Specifies the exact length of the buffer:
     */
   def length(limit: Double): this.type = js.native
+  def length(limit: Reference): this.type = js.native
   /**
     * Specifies the maximum length of the buffer.
     */
   def max(limit: Double): this.type = js.native
+  def max(limit: Reference): this.type = js.native
   /**
     * Specifies the minimum length of the buffer.
     */
   def min(limit: Double): this.type = js.native
+  def min(limit: Reference): this.type = js.native
 }
 

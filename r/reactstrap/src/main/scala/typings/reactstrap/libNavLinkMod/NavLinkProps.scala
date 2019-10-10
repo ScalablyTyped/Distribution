@@ -21,7 +21,7 @@ trait NavLinkProps
   var innerRef: js.UndefOr[Ref[HTMLAnchorElement]] = js.undefined
   @JSName("onClick")
   var onClick_NavLinkProps: js.UndefOr[MouseEventHandler[_]] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object NavLinkProps {
@@ -36,7 +36,7 @@ object NavLinkProps {
     href: String = null,
     innerRef: Ref[HTMLAnchorElement] = null,
     onClick: MouseEvent[_, NativeMouseEvent] => Unit = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): NavLinkProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)

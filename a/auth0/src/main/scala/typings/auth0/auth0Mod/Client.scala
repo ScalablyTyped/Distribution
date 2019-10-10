@@ -49,7 +49,7 @@ trait Client extends js.Object {
   var description: js.UndefOr[String] = js.undefined
   var encryption_key: js.UndefOr[Anon_Cert] = js.undefined
   var form_template: js.UndefOr[String] = js.undefined
-  /** 
+  /**
     * A set of grant types that the client is authorized to use
     */
   var grant_types: js.UndefOr[js.Array[Grant]] = js.undefined

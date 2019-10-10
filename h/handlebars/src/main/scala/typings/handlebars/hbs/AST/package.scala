@@ -9,7 +9,5 @@ package object AST {
   type DecoratorBlock = BlockStatement
   type Expression = Node
   type Literal = Expression
-  type NullLiteral = Literal
   type Statement = Node
-  type UndefinedLiteral = Literal
 }

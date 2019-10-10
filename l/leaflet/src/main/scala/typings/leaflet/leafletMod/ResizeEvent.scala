@@ -11,8 +11,16 @@ trait ResizeEvent extends LeafletEvent {
 
 object ResizeEvent {
   @scala.inline
-  def apply(newSize: Point, oldSize: Point, target: js.Any, `type`: String): ResizeEvent = {
-    val __obj = js.Dynamic.literal(newSize = newSize, oldSize = oldSize, target = target)
+  def apply(
+    layer: js.Any,
+    newSize: Point,
+    oldSize: Point,
+    propagatedFrom: js.Any,
+    sourceTarget: js.Any,
+    target: js.Any,
+    `type`: String
+  ): ResizeEvent = {
+    val __obj = js.Dynamic.literal(layer = layer, newSize = newSize, oldSize = oldSize, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ResizeEvent]
   }

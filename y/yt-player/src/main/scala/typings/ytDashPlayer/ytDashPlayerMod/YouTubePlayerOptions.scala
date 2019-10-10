@@ -6,18 +6,70 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait YouTubePlayerOptions extends js.Object {
+  /**
+    * This parameter indicates whether the player will show video annotations.
+    * The default value is true.
+    */
   var annotations: js.UndefOr[Boolean] = js.undefined
+  /**
+    * This parameter indicates whether the initial video will automatically
+    * start to play when the player loads. The default value is false.
+    */
   var autoplay: js.UndefOr[Boolean] = js.undefined
+  /**
+    * This parameter indicates whether closed captions should be shown, even if
+    * the user has turned captions off. The default behavior is based on user
+    * preference.
+    */
   var captions: js.UndefOr[`false` | String] = js.undefined
+  /**
+    * This parameter indicates whether the video player controls are displayed.
+    * The default value is true.
+    */
   var controls: js.UndefOr[Boolean] = js.undefined
+  /**
+    * This parameter indicates whether the player will show a fullscreen
+    * button. The default value is true.
+    */
   var fullscreen: js.UndefOr[Boolean] = js.undefined
+  /** This parameter indicates the height of the player. */
   var height: js.UndefOr[Double] = js.undefined
+  /**
+    * This parameter indicates whether the player should display information
+    * like the video title and uploader before the video starts playing. The
+    * default value is true.
+    * @deprecated Ignored after September 25, 2018
+    * @see https://developers.google.com/youtube/player_parameters#release_notes_08_23_2018
+    */
   var info: js.UndefOr[Boolean] = js.undefined
+  /**
+    * This parameter indicates whether the player will respond to keyboard
+    * shortcuts. The default value is true.
+    */
   var keyboard: js.UndefOr[Boolean] = js.undefined
+  /**
+    * This parameter lets you use a YouTube player that does not show a
+    * YouTube logo. Even when this option is enabled, a small YouTube text
+    * label will still display in the upper-right corner of a paused video
+    * when the user's mouse pointer hovers over the player.
+    */
   var modestBranding: js.UndefOr[Boolean] = js.undefined
+  /**
+    * This parameter controls whether videos play inline or fullscreen in an
+    * HTML5 player on iOS. The default value is true.
+    */
   var playsInline: js.UndefOr[Boolean] = js.undefined
+  /**
+    * This parameter indicates whether the player should show related videos
+    * from other channels
+    */
   var related: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The time between onTimeupdate callbacks, in milliseconds. Default is
+    * 1000.
+    */
   var timeupdateFrequency: js.UndefOr[Double] = js.undefined
+  /**  This parameter indicates the width of the player. */
   var width: js.UndefOr[Double] = js.undefined
 }
 

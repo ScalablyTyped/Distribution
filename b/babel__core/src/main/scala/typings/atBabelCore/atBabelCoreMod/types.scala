@@ -27,6 +27,7 @@ import typings.atBabelCore.atBabelCoreStrings.`>>`
 import typings.atBabelCore.atBabelCoreStrings.`>`
 import typings.atBabelCore.atBabelCoreStrings.`??`
 import typings.atBabelCore.atBabelCoreStrings.`_backtick^_backtick`
+import typings.atBabelCore.atBabelCoreStrings.`object`
 import typings.atBabelCore.atBabelCoreStrings.`private`
 import typings.atBabelCore.atBabelCoreStrings.`protected`
 import typings.atBabelCore.atBabelCoreStrings.`throw`
@@ -34,9 +35,11 @@ import typings.atBabelCore.atBabelCoreStrings.`type`
 import typings.atBabelCore.atBabelCoreStrings.`var`
 import typings.atBabelCore.atBabelCoreStrings.`||`
 import typings.atBabelCore.atBabelCoreStrings.`~`
+import typings.atBabelCore.atBabelCoreStrings.boolean
 import typings.atBabelCore.atBabelCoreStrings.const
 import typings.atBabelCore.atBabelCoreStrings.constructor
 import typings.atBabelCore.atBabelCoreStrings.delete
+import typings.atBabelCore.atBabelCoreStrings.function
 import typings.atBabelCore.atBabelCoreStrings.get
 import typings.atBabelCore.atBabelCoreStrings.in
 import typings.atBabelCore.atBabelCoreStrings.init
@@ -45,15 +48,26 @@ import typings.atBabelCore.atBabelCoreStrings.let
 import typings.atBabelCore.atBabelCoreStrings.method
 import typings.atBabelCore.atBabelCoreStrings.minus
 import typings.atBabelCore.atBabelCoreStrings.module
+import typings.atBabelCore.atBabelCoreStrings.number
 import typings.atBabelCore.atBabelCoreStrings.plus
+import typings.atBabelCore.atBabelCoreStrings.property
 import typings.atBabelCore.atBabelCoreStrings.public
 import typings.atBabelCore.atBabelCoreStrings.script
 import typings.atBabelCore.atBabelCoreStrings.set
+import typings.atBabelCore.atBabelCoreStrings.string
+import typings.atBabelCore.atBabelCoreStrings.symbol
 import typings.atBabelCore.atBabelCoreStrings.typeof
+import typings.atBabelCore.atBabelCoreStrings.undefined
 import typings.atBabelCore.atBabelCoreStrings.value
 import typings.atBabelCore.atBabelCoreStrings.void
+import typings.atBabelTypes.Anon_Body
+import typings.atBabelTypes.Anon_BuildUndefinedNode
+import typings.atBabelTypes.Anon_Children
+import typings.atBabelTypes.Anon_Computed
 import typings.atBabelTypes.Anon_Cooked
 import typings.atBabelTypes.Anon_PreserveComments
+import typings.atBabelTypes.Anon_ToString
+import typings.atBabelTypes.Anon_Type
 import typings.atBabelTypes.atBabelTypesMod.AnyTypeAnnotation
 import typings.atBabelTypes.atBabelTypesMod.ArgumentPlaceholder
 import typings.atBabelTypes.atBabelTypesMod.ArrayExpression
@@ -73,6 +87,7 @@ import typings.atBabelTypes.atBabelTypesMod.BooleanTypeAnnotation
 import typings.atBabelTypes.atBabelTypesMod.BreakStatement
 import typings.atBabelTypes.atBabelTypesMod.CallExpression
 import typings.atBabelTypes.atBabelTypesMod.CatchClause
+import typings.atBabelTypes.atBabelTypesMod.Class
 import typings.atBabelTypes.atBabelTypesMod.ClassBody
 import typings.atBabelTypes.atBabelTypesMod.ClassDeclaration
 import typings.atBabelTypes.atBabelTypesMod.ClassExpression
@@ -81,6 +96,8 @@ import typings.atBabelTypes.atBabelTypesMod.ClassMethod
 import typings.atBabelTypes.atBabelTypesMod.ClassPrivateMethod
 import typings.atBabelTypes.atBabelTypesMod.ClassPrivateProperty
 import typings.atBabelTypes.atBabelTypesMod.ClassProperty
+import typings.atBabelTypes.atBabelTypesMod.Comment
+import typings.atBabelTypes.atBabelTypesMod.CommentTypeShorthand
 import typings.atBabelTypes.atBabelTypesMod.ConditionalExpression
 import typings.atBabelTypes.atBabelTypesMod.ContinueStatement
 import typings.atBabelTypes.atBabelTypesMod.DebuggerStatement
@@ -118,6 +135,7 @@ import typings.atBabelTypes.atBabelTypesMod.FlowType
 import typings.atBabelTypes.atBabelTypesMod.ForInStatement
 import typings.atBabelTypes.atBabelTypesMod.ForOfStatement
 import typings.atBabelTypes.atBabelTypesMod.ForStatement
+import typings.atBabelTypes.atBabelTypesMod.Function
 import typings.atBabelTypes.atBabelTypesMod.FunctionDeclaration
 import typings.atBabelTypes.atBabelTypesMod.FunctionExpression
 import typings.atBabelTypes.atBabelTypesMod.FunctionTypeAnnotation
@@ -156,6 +174,7 @@ import typings.atBabelTypes.atBabelTypesMod.LabeledStatement
 import typings.atBabelTypes.atBabelTypesMod.LogicalExpression
 import typings.atBabelTypes.atBabelTypesMod.MemberExpression
 import typings.atBabelTypes.atBabelTypesMod.MetaProperty
+import typings.atBabelTypes.atBabelTypesMod.Method
 import typings.atBabelTypes.atBabelTypesMod.MixedTypeAnnotation
 import typings.atBabelTypes.atBabelTypesMod.ModuleSpecifier
 import typings.atBabelTypes.atBabelTypesMod.NewExpression
@@ -188,6 +207,7 @@ import typings.atBabelTypes.atBabelTypesMod.PipelineTopicExpression
 import typings.atBabelTypes.atBabelTypesMod.Placeholder
 import typings.atBabelTypes.atBabelTypesMod.PrivateName
 import typings.atBabelTypes.atBabelTypesMod.Program
+import typings.atBabelTypes.atBabelTypesMod.Property
 import typings.atBabelTypes.atBabelTypesMod.QualifiedTypeIdentifier
 import typings.atBabelTypes.atBabelTypesMod.RegExpLiteral
 import typings.atBabelTypes.atBabelTypesMod.RestElement
@@ -293,6 +313,11 @@ import typings.atBabelTypes.atBabelTypesMod.VoidTypeAnnotation
 import typings.atBabelTypes.atBabelTypesMod.WhileStatement
 import typings.atBabelTypes.atBabelTypesMod.WithStatement
 import typings.atBabelTypes.atBabelTypesMod.YieldExpression
+import typings.std.Extract
+import typings.std.Partial
+import typings.std.Pick
+import typings.std.Record
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -300,7 +325,21 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/core", "types")
 @js.native
 object types extends js.Object {
+  def addComment[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](node: T, `type`: CommentTypeShorthand, content: String): T = js.native
+  def addComment[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](node: T, `type`: CommentTypeShorthand, content: String, line: Boolean): T = js.native
+  def addComments[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](node: T, `type`: CommentTypeShorthand, comments: js.Array[Comment]): T = js.native
   def anyTypeAnnotation(): AnyTypeAnnotation = js.native
+  @JSName("appendToMemberExpression")
+  def appendToMemberExpression_property[T /* <: Pick[MemberExpression, `object` | property] */](
+    member: T,
+    append: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any
+  ): T = js.native
+  @JSName("appendToMemberExpression")
+  def appendToMemberExpression_property[T /* <: Pick[MemberExpression, `object` | property] */](
+    member: T,
+    append: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.MemberExpression['property'] */ js.Any,
+    computed: Boolean
+  ): T = js.native
   def argumentPlaceholder(): ArgumentPlaceholder = js.native
   def arrayExpression(): ArrayExpression = js.native
   def arrayExpression(elements: js.Array[Null | Expression | SpreadElement]): ArrayExpression = js.native
@@ -637,6 +676,15 @@ object types extends js.Object {
   def booleanTypeAnnotation(): BooleanTypeAnnotation = js.native
   def breakStatement(): BreakStatement = js.native
   def breakStatement(label: Identifier): BreakStatement = js.native
+  def buildChildren(node: Anon_Children): js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment] = js.native
+  def buildMatchMemberExpression(`match`: String): js.Function1[
+    /* node */ js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node | Null], 
+    /* is @babel/types.@babel/types.MemberExpression */ Boolean
+  ] = js.native
+  def buildMatchMemberExpression(`match`: String, allowPartial: Boolean): js.Function1[
+    /* node */ js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node | Null], 
+    /* is @babel/types.@babel/types.MemberExpression */ Boolean
+  ] = js.native
   def callExpression(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder]
@@ -1146,9 +1194,27 @@ object types extends js.Object {
   def cloneDeep[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](n: T): T = js.native
   def cloneNode[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](n: T): T = js.native
   def cloneNode[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](n: T, deep: Boolean): T = js.native
+  def cloneWithoutLoc[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](n: T): T = js.native
   def conditionalExpression(test: Expression, consequent: Expression, alternate: Expression): ConditionalExpression = js.native
   def continueStatement(): ContinueStatement = js.native
   def continueStatement(label: Identifier): ContinueStatement = js.native
+  @JSName("createTypeAnnotationBasedOnTypeof")
+  def createTypeAnnotationBasedOnTypeof_boolean(`type`: boolean): StringTypeAnnotation | VoidTypeAnnotation | NumberTypeAnnotation | BooleanTypeAnnotation | GenericTypeAnnotation = js.native
+  @JSName("createTypeAnnotationBasedOnTypeof")
+  def createTypeAnnotationBasedOnTypeof_function(`type`: function): StringTypeAnnotation | VoidTypeAnnotation | NumberTypeAnnotation | BooleanTypeAnnotation | GenericTypeAnnotation = js.native
+  @JSName("createTypeAnnotationBasedOnTypeof")
+  def createTypeAnnotationBasedOnTypeof_number(`type`: number): StringTypeAnnotation | VoidTypeAnnotation | NumberTypeAnnotation | BooleanTypeAnnotation | GenericTypeAnnotation = js.native
+  @JSName("createTypeAnnotationBasedOnTypeof")
+  def createTypeAnnotationBasedOnTypeof_object(`type`: `object`): StringTypeAnnotation | VoidTypeAnnotation | NumberTypeAnnotation | BooleanTypeAnnotation | GenericTypeAnnotation = js.native
+  @JSName("createTypeAnnotationBasedOnTypeof")
+  def createTypeAnnotationBasedOnTypeof_string(`type`: string): StringTypeAnnotation | VoidTypeAnnotation | NumberTypeAnnotation | BooleanTypeAnnotation | GenericTypeAnnotation = js.native
+  @JSName("createTypeAnnotationBasedOnTypeof")
+  def createTypeAnnotationBasedOnTypeof_symbol(`type`: symbol): StringTypeAnnotation | VoidTypeAnnotation | NumberTypeAnnotation | BooleanTypeAnnotation | GenericTypeAnnotation = js.native
+  @JSName("createTypeAnnotationBasedOnTypeof")
+  def createTypeAnnotationBasedOnTypeof_undefined(`type`: undefined): StringTypeAnnotation | VoidTypeAnnotation | NumberTypeAnnotation | BooleanTypeAnnotation | GenericTypeAnnotation = js.native
+  def createUnionTypeAnnotation(types: js.Array[FlowType]): UnionTypeAnnotation = js.native
+  @JSName("createUnionTypeAnnotation")
+  def createUnionTypeAnnotation_T_FlowType_T[T /* <: FlowType */](types: js.Array[T]): T = js.native
   def debuggerStatement(): DebuggerStatement = js.native
   def declareClass(
     id: Identifier,
@@ -1596,6 +1662,14 @@ object types extends js.Object {
   def doWhileStatement(test: Expression, body: Statement): DoWhileStatement = js.native
   def emptyStatement(): EmptyStatement = js.native
   def emptyTypeAnnotation(): EmptyTypeAnnotation = js.native
+  def ensureBlock(node: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Body]): BlockStatement = js.native
+  def ensureBlock[K /* <: String */](
+    node: Extract[
+      typings.atBabelTypes.atBabelTypesMod.Node, 
+      Record[K, BlockStatement | Statement | Expression]
+    ],
+    key: K
+  ): BlockStatement = js.native
   def existsTypeAnnotation(): ExistsTypeAnnotation = js.native
   def exportAllDeclaration(source: StringLiteral): ExportAllDeclaration = js.native
   def exportDefaultDeclaration(declaration: ClassDeclaration): ExportDefaultDeclaration = js.native
@@ -2093,6 +2167,23 @@ object types extends js.Object {
   def genericTypeAnnotation(id: Identifier, typeParameters: TypeParameterInstantiation): GenericTypeAnnotation = js.native
   def genericTypeAnnotation(id: QualifiedTypeIdentifier): GenericTypeAnnotation = js.native
   def genericTypeAnnotation(id: QualifiedTypeIdentifier, typeParameters: TypeParameterInstantiation): GenericTypeAnnotation = js.native
+  def getBindingIdentifiers(node: typings.atBabelTypes.atBabelTypesMod.Node): Record[String, Identifier] = js.native
+  def getBindingIdentifiers(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: Boolean): Record[String, Identifier | js.Array[Identifier]] = js.native
+  def getBindingIdentifiers(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: Boolean, outerOnly: Boolean): Record[String, Identifier | js.Array[Identifier]] = js.native
+  @JSName("getBindingIdentifiers")
+  def getBindingIdentifiers_false(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: `false`): Record[String, Identifier] = js.native
+  @JSName("getBindingIdentifiers")
+  def getBindingIdentifiers_false(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: `false`, outerOnly: Boolean): Record[String, Identifier] = js.native
+  @JSName("getBindingIdentifiers")
+  def getBindingIdentifiers_true(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: `true`): Record[String, js.Array[Identifier]] = js.native
+  @JSName("getBindingIdentifiers")
+  def getBindingIdentifiers_true(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: `true`, outerOnly: Boolean): Record[String, js.Array[Identifier]] = js.native
+  def getOuterBindingIdentifiers(node: typings.atBabelTypes.atBabelTypesMod.Node): Record[String, Identifier] = js.native
+  def getOuterBindingIdentifiers(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: Boolean): Record[String, Identifier | js.Array[Identifier]] = js.native
+  @JSName("getOuterBindingIdentifiers")
+  def getOuterBindingIdentifiers_false(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: `false`): Record[String, Identifier] = js.native
+  @JSName("getOuterBindingIdentifiers")
+  def getOuterBindingIdentifiers_true(node: typings.atBabelTypes.atBabelTypesMod.Node, duplicates: `true`): Record[String, js.Array[Identifier]] = js.native
   def identifier(name: String): Identifier = js.native
   def identifier(name: String, decorators: js.Array[Decorator]): Identifier = js.native
   def identifier(name: String, decorators: js.Array[Decorator], optional: Boolean): Identifier = js.native
@@ -2142,6 +2233,12 @@ object types extends js.Object {
   @JSName("importSpecifier")
   def importSpecifier_typeof(local: Identifier, imported: Identifier, importKind: typeof): ImportSpecifier = js.native
   def inferredPredicate(): InferredPredicate = js.native
+  def inheritInnerComments(node: typings.atBabelTypes.atBabelTypesMod.Node, parent: typings.atBabelTypes.atBabelTypesMod.Node): Unit = js.native
+  def inheritLeadingComments(node: typings.atBabelTypes.atBabelTypesMod.Node, parent: typings.atBabelTypes.atBabelTypesMod.Node): Unit = js.native
+  def inheritTrailingComments(node: typings.atBabelTypes.atBabelTypesMod.Node, parent: typings.atBabelTypes.atBabelTypesMod.Node): Unit = js.native
+  def inherits[T /* <: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node | Null] */](child: T): T = js.native
+  def inherits[T /* <: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node | Null] */](child: T, parent: typings.atBabelTypes.atBabelTypesMod.Node): T = js.native
+  def inheritsComments[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](node: T, parent: typings.atBabelTypes.atBabelTypesMod.Node): Unit = js.native
   def interfaceDeclaration(
     id: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
@@ -2335,7 +2432,18 @@ object types extends js.Object {
   def interfaceTypeAnnotation(_extends: Null, body: ObjectTypeAnnotation): InterfaceTypeAnnotation = js.native
   def interpreterDirective(value: String): InterpreterDirective = js.native
   def intersectionTypeAnnotation(types: js.Array[FlowType]): IntersectionTypeAnnotation = js.native
-  def is(`type`: String, n: typings.atBabelTypes.atBabelTypesMod.Node, opts: js.Object): Boolean = js.native
+  def is(`type`: String): /* is @babel/types.@babel/types.Node */ Boolean = js.native
+  def is(
+    `type`: String,
+    n: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node],
+    required: Partial[typings.atBabelTypes.atBabelTypesMod.Node]
+  ): /* is @babel/types.@babel/types.Node */ Boolean = js.native
+  def is(`type`: String, n: Null, required: Partial[typings.atBabelTypes.atBabelTypesMod.Node]): /* is @babel/types.@babel/types.Node */ Boolean = js.native
+  def is(`type`: String, n: typings.atBabelTypes.atBabelTypesMod.Node): /* is @babel/types.@babel/types.Node */ Boolean = js.native
+  def is[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.Anon_Type<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](`type`: T, n: typings.atBabelTypes.atBabelTypesMod.Node): /* is std.Extract<@babel/types.@babel/types.Node, @babel/types.Anon_Type<T>> */ Boolean = js.native
+  def is[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Type[T]] */](`type`: T, n: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node], required: Partial[P]): /* is P */ Boolean = js.native
+  def is[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */, P /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Type[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
   def isAnyTypeAnnotation(): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
   def isAnyTypeAnnotation(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
   def isAnyTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ Boolean = js.native
@@ -2778,7 +2886,7 @@ object types extends js.Object {
   def isImmutable(node: js.Object): /* is @babel/types.@babel/types.Immutable */ Boolean = js.native
   def isImmutable(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Immutable */ Boolean = js.native
   def isImmutable(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Immutable */ Boolean = js.native
-  def isImmutable(node: typings.atBabelTypes.atBabelTypesMod.Node): Boolean = js.native
+  def isImmutable(node: typings.atBabelTypes.atBabelTypesMod.Node): /* is @babel/types.@babel/types.Immutable */ Boolean = js.native
   def isImport(): /* is @babel/types.@babel/types.Import */ Boolean = js.native
   def isImport(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.Import */ Boolean = js.native
   def isImport(node: js.Object): /* is @babel/types.@babel/types.Import */ Boolean = js.native
@@ -2924,7 +3032,7 @@ object types extends js.Object {
   def isLabeledStatement(node: js.Object): /* is @babel/types.@babel/types.LabeledStatement */ Boolean = js.native
   def isLabeledStatement(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.LabeledStatement */ Boolean = js.native
   def isLabeledStatement(node: Null, opts: js.Object): /* is @babel/types.@babel/types.LabeledStatement */ Boolean = js.native
-  def isLet(node: typings.atBabelTypes.atBabelTypesMod.Node): Boolean = js.native
+  def isLet(node: typings.atBabelTypes.atBabelTypesMod.Node): /* is @babel/types.@babel/types.VariableDeclaration */ Boolean = js.native
   def isLiteral(): /* is @babel/types.@babel/types.Literal */ Boolean = js.native
   def isLiteral(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.Literal */ Boolean = js.native
   def isLiteral(node: js.Object): /* is @babel/types.@babel/types.Literal */ Boolean = js.native
@@ -2975,9 +3083,10 @@ object types extends js.Object {
   def isNewExpression(node: js.Object): /* is @babel/types.@babel/types.NewExpression */ Boolean = js.native
   def isNewExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.NewExpression */ Boolean = js.native
   def isNewExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types.NewExpression */ Boolean = js.native
-  def isNode(): Boolean = js.native
-  def isNode(node: js.Object): Boolean = js.native
+  def isNode(): /* is @babel/types.@babel/types.Node */ Boolean = js.native
+  def isNode(node: js.Object): /* is @babel/types.@babel/types.Node */ Boolean = js.native
   def isNodesEquivalent(a: js.Any, b: js.Any): Boolean = js.native
+  def isNodesEquivalent[T /* <: Partial[typings.atBabelTypes.atBabelTypesMod.Node] */](a: T, b: js.Any): /* is T */ Boolean = js.native
   def isNoop(): /* is @babel/types.@babel/types.Noop */ Boolean = js.native
   def isNoop(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.Noop */ Boolean = js.native
   def isNoop(node: js.Object): /* is @babel/types.@babel/types.Noop */ Boolean = js.native
@@ -3123,7 +3232,11 @@ object types extends js.Object {
   def isPlaceholder(node: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
   def isPlaceholder(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
   def isPlaceholder(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ Boolean = js.native
-  def isPlaceholderType(placeholderType: String, targetType: String): Boolean = js.native
+  @JSName("isPlaceholderType")
+  def isPlaceholderType_type(
+    placeholderType: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any,
+    targetType: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any
+  ): Boolean = js.native
   def isPrivate(): /* is @babel/types.@babel/types.Private */ Boolean = js.native
   def isPrivate(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.Private */ Boolean = js.native
   def isPrivate(node: js.Object): /* is @babel/types.@babel/types.Private */ Boolean = js.native
@@ -3190,7 +3303,7 @@ object types extends js.Object {
   def isScopable(node: js.Object): /* is @babel/types.@babel/types.Scopable */ Boolean = js.native
   def isScopable(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Scopable */ Boolean = js.native
   def isScopable(node: Null, opts: js.Object): /* is @babel/types.@babel/types.Scopable */ Boolean = js.native
-  def isScope(node: typings.atBabelTypes.atBabelTypesMod.Node, parent: typings.atBabelTypes.atBabelTypesMod.Node): Boolean = js.native
+  def isScope(node: typings.atBabelTypes.atBabelTypesMod.Node, parent: typings.atBabelTypes.atBabelTypesMod.Node): /* is @babel/types.@babel/types.Scopable */ Boolean = js.native
   def isSequenceExpression(): /* is @babel/types.@babel/types.SequenceExpression */ Boolean = js.native
   def isSequenceExpression(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.SequenceExpression */ Boolean = js.native
   def isSequenceExpression(node: js.Object): /* is @babel/types.@babel/types.SequenceExpression */ Boolean = js.native
@@ -3610,6 +3723,7 @@ object types extends js.Object {
   def isType(nodetype: js.UndefOr[scala.Nothing], targetType: String): Boolean = js.native
   def isType(nodetype: String, targetType: String): Boolean = js.native
   def isType(nodetype: Null, targetType: String): Boolean = js.native
+  def isType[T /* <: /* import warning: ImportType.apply Failed type conversion: @babel/types.@babel/types.Node['type'] */ js.Any */](nodetype: String, targetType: T): /* is T */ Boolean = js.native
   def isTypeAlias(): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
   def isTypeAlias(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
   def isTypeAlias(node: js.Object): /* is @babel/types.@babel/types.TypeAlias */ Boolean = js.native
@@ -3677,7 +3791,7 @@ object types extends js.Object {
   def isV8IntrinsicIdentifier(node: Null, opts: js.Object): /* is @babel/types.@babel/types.V8IntrinsicIdentifier */ Boolean = js.native
   def isValidES3Identifier(name: String): Boolean = js.native
   def isValidIdentifier(name: String): Boolean = js.native
-  def isVar(node: typings.atBabelTypes.atBabelTypesMod.Node): Boolean = js.native
+  def isVar(node: typings.atBabelTypes.atBabelTypesMod.Node): /* is @babel/types.@babel/types.VariableDeclaration */ Boolean = js.native
   def isVariableDeclaration(): /* is @babel/types.@babel/types.VariableDeclaration */ Boolean = js.native
   def isVariableDeclaration(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.VariableDeclaration */ Boolean = js.native
   def isVariableDeclaration(node: js.Object): /* is @babel/types.@babel/types.VariableDeclaration */ Boolean = js.native
@@ -3718,6 +3832,10 @@ object types extends js.Object {
   def isYieldExpression(node: js.Object): /* is @babel/types.@babel/types.YieldExpression */ Boolean = js.native
   def isYieldExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.YieldExpression */ Boolean = js.native
   def isYieldExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types.YieldExpression */ Boolean = js.native
+  @JSName("is")
+  def is_P_Node[P /* <: typings.atBabelTypes.atBabelTypesMod.Node */](`type`: String, n: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node], required: Partial[P]): /* is P */ Boolean = js.native
+  @JSName("is")
+  def is_P_Node[P /* <: typings.atBabelTypes.atBabelTypesMod.Node */](`type`: String, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
   def jsxAttribute(name: JSXIdentifier): JSXAttribute = js.native
   def jsxAttribute(name: JSXIdentifier, value: JSXElement): JSXAttribute = js.native
   def jsxAttribute(name: JSXIdentifier, value: JSXExpressionContainer): JSXAttribute = js.native
@@ -3820,6 +3938,22 @@ object types extends js.Object {
   def logicalExpression(operator: `&&`, left: Expression, right: Expression): LogicalExpression = js.native
   def logicalExpression(operator: `??`, left: Expression, right: Expression): LogicalExpression = js.native
   def logicalExpression(operator: `||`, left: Expression, right: Expression): LogicalExpression = js.native
+  def matchesPattern(node: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node], `match`: String): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
+  def matchesPattern(
+    node: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node],
+    `match`: String,
+    allowPartial: Boolean
+  ): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
+  def matchesPattern(node: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node], `match`: js.Array[String]): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
+  def matchesPattern(
+    node: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node],
+    `match`: js.Array[String],
+    allowPartial: Boolean
+  ): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
+  def matchesPattern(node: Null, `match`: String): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
+  def matchesPattern(node: Null, `match`: String, allowPartial: Boolean): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
+  def matchesPattern(node: Null, `match`: js.Array[String]): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
+  def matchesPattern(node: Null, `match`: js.Array[String], allowPartial: Boolean): /* is @babel/types.@babel/types.MemberExpression */ Boolean = js.native
   def memberExpression(`object`: Expression, property: js.Any): MemberExpression = js.native
   def memberExpression(`object`: Expression, property: js.Any, computed: Boolean): MemberExpression = js.native
   @JSName("memberExpression")
@@ -4363,6 +4497,7 @@ object types extends js.Object {
   def placeholder_Statement(expectedNode: typings.atBabelCore.atBabelCoreStrings.Statement, name: Identifier): Placeholder = js.native
   @JSName("placeholder")
   def placeholder_StringLiteral(expectedNode: typings.atBabelCore.atBabelCoreStrings.StringLiteral, name: Identifier): Placeholder = js.native
+  def prependToMemberExpression[T /* <: Pick[MemberExpression, `object` | property] */](member: T, prepend: Expression): T = js.native
   def privateName(id: Identifier): PrivateName = js.native
   def program(body: js.Array[Statement]): Program = js.native
   def program(body: js.Array[Statement], directives: js.Array[Directive]): Program = js.native
@@ -4420,10 +4555,13 @@ object types extends js.Object {
   def qualifiedTypeIdentifier(id: Identifier, qualification: QualifiedTypeIdentifier): QualifiedTypeIdentifier = js.native
   def regExpLiteral(pattern: String): RegExpLiteral = js.native
   def regExpLiteral(pattern: String, flags: String): RegExpLiteral = js.native
+  def removeComments[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](node: T): T = js.native
   def removeProperties(n: typings.atBabelTypes.atBabelTypesMod.Node): Unit = js.native
   def removeProperties(n: typings.atBabelTypes.atBabelTypesMod.Node, opts: Anon_PreserveComments): Unit = js.native
   def removePropertiesDeep[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](n: T): T = js.native
   def removePropertiesDeep[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */](n: T, opts: Anon_PreserveComments): T = js.native
+  @JSName("removeTypeDuplicates")
+  def removeTypeDuplicates_false(types: js.Array[js.UndefOr[FlowType | `false` | Null]]): js.Array[FlowType] = js.native
   def restElement(argument: LVal): RestElement = js.native
   def restElement(argument: LVal, decorators: js.Array[Decorator]): RestElement = js.native
   def restElement(argument: LVal, decorators: js.Array[Decorator], typeAnnotation: Noop): RestElement = js.native
@@ -4435,6 +4573,7 @@ object types extends js.Object {
   def returnStatement(): ReturnStatement = js.native
   def returnStatement(argument: Expression): ReturnStatement = js.native
   def sequenceExpression(expressions: js.Array[Expression]): SequenceExpression = js.native
+  def shallowEqual[T /* <: js.Object */](actual: js.Object, expected: T): /* is T */ Boolean = js.native
   def spreadElement(argument: Expression): SpreadElement = js.native
   def stringLiteral(value: String): StringLiteral = js.native
   def stringLiteralTypeAnnotation(value: String): StringLiteralTypeAnnotation = js.native
@@ -4453,10 +4592,64 @@ object types extends js.Object {
   def thisExpression(): ThisExpression = js.native
   def thisTypeAnnotation(): ThisTypeAnnotation = js.native
   def throwStatement(argument: Expression): ThrowStatement = js.native
+  def toBindingIdentifierName(): String = js.native
+  def toBindingIdentifierName(name: Anon_ToString): String = js.native
+  def toBlock(node: Expression): BlockStatement = js.native
+  def toBlock(node: Expression, parent: Function): BlockStatement = js.native
+  def toBlock(node: Statement): BlockStatement = js.native
+  def toBlock(node: Statement, parent: Function): BlockStatement = js.native
+  def toComputedKey[T /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Computed] */](node: T): Expression = js.native
+  def toComputedKey[T /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Computed] */](node: T, key: Expression): Expression = js.native
+  def toComputedKey[T /* <: Extract[typings.atBabelTypes.atBabelTypesMod.Node, Anon_Computed] */](node: T, key: Identifier): Expression = js.native
+  def toExpression(node: Class): ClassExpression = js.native
+  def toExpression(node: Expression): Expression = js.native
+  def toExpression(node: ExpressionStatement): Expression = js.native
+  def toExpression(node: Function): FunctionExpression = js.native
+  @JSName("toExpression")
+  def toExpression_Expression(node: Class): Expression = js.native
+  @JSName("toExpression")
+  def toExpression_Expression(node: Function): Expression = js.native
+  def toIdentifier(): String = js.native
+  def toIdentifier(name: Anon_ToString): String = js.native
+  def toKeyAlias(node: Method): String = js.native
+  def toKeyAlias(node: Method, key: typings.atBabelTypes.atBabelTypesMod.Node): String = js.native
+  def toKeyAlias(node: Property): String = js.native
+  def toKeyAlias(node: Property, key: typings.atBabelTypes.atBabelTypesMod.Node): String = js.native
+  def toSequenceExpression(nodes: js.Array[typings.atBabelTypes.atBabelTypesMod.Node], scope: Anon_BuildUndefinedNode): js.UndefOr[SequenceExpression] = js.native
+  def toStatement(node: AssignmentExpression): ExpressionStatement = js.native
+  def toStatement(node: AssignmentExpression, ignore: Boolean): ExpressionStatement = js.native
+  def toStatement(node: Class): ClassDeclaration = js.native
+  def toStatement(node: Class, ignore: Boolean): ClassDeclaration = js.native
+  def toStatement(node: Function): FunctionDeclaration = js.native
+  def toStatement(node: Function, ignore: Boolean): FunctionDeclaration = js.native
+  def toStatement(node: Statement): Statement = js.native
+  def toStatement(node: Statement, ignore: Boolean): Statement = js.native
+  @JSName("toStatement")
+  def toStatement_Statement(node: AssignmentExpression): Statement = js.native
+  @JSName("toStatement")
+  def toStatement_Statement(node: AssignmentExpression, ignore: Boolean): Statement = js.native
+  @JSName("toStatement")
+  def toStatement_Statement(node: Class): Statement = js.native
+  @JSName("toStatement")
+  def toStatement_Statement(node: Class, ignore: Boolean): Statement = js.native
+  @JSName("toStatement")
+  def toStatement_Statement(node: Function): Statement = js.native
+  @JSName("toStatement")
+  def toStatement_Statement(node: Function, ignore: Boolean): Statement = js.native
+  @JSName("toStatement")
+  def toStatement_true(node: AssignmentExpression, ignore: `true`): js.UndefOr[Statement] = js.native
+  @JSName("toStatement")
+  def toStatement_true(node: Class, ignore: `true`): js.UndefOr[ClassDeclaration] = js.native
+  @JSName("toStatement")
+  def toStatement_true(node: Function, ignore: `true`): js.UndefOr[FunctionDeclaration] = js.native
+  @JSName("toStatement")
+  def toStatement_true(node: Statement, ignore: `true`): js.UndefOr[Statement] = js.native
   def traverse[T](n: typings.atBabelTypes.atBabelTypesMod.Node, h: TraversalHandler[T]): Unit = js.native
   def traverse[T](n: typings.atBabelTypes.atBabelTypesMod.Node, h: TraversalHandlers[T]): Unit = js.native
   def traverse[T](n: typings.atBabelTypes.atBabelTypesMod.Node, h: TraversalHandlers[T], state: T): Unit = js.native
   def traverse[T](n: typings.atBabelTypes.atBabelTypesMod.Node, h: TraversalHandler[T], state: T): Unit = js.native
+  def traverseFast[T](n: typings.atBabelTypes.atBabelTypesMod.Node, h: TraversalHandler[T]): Unit = js.native
+  def traverseFast[T](n: typings.atBabelTypes.atBabelTypesMod.Node, h: TraversalHandler[T], state: T): Unit = js.native
   def tryStatement(block: BlockStatement): TryStatement = js.native
   def tryStatement(block: BlockStatement, handler: Null, finalizer: BlockStatement): TryStatement = js.native
   def tryStatement(block: BlockStatement, handler: CatchClause): TryStatement = js.native
@@ -5053,6 +5246,33 @@ object types extends js.Object {
   def updateExpression(operator: `--`, argument: Expression, prefix: Boolean): UpdateExpression = js.native
   def v8IntrinsicIdentifier(name: String): V8IntrinsicIdentifier = js.native
   def validate(n: typings.atBabelTypes.atBabelTypesMod.Node, key: String, value: js.Any): Unit = js.native
+  def validate[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */, K /* <: String */](
+    n: js.UndefOr[typings.atBabelTypes.atBabelTypesMod.Node],
+    key: K,
+    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+  ): Unit = js.native
+  def validate[T /* <: typings.atBabelTypes.atBabelTypesMod.Node */, K /* <: String */](n: Null, key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): Unit = js.native
+  def valueToNode(): NullLiteral = js.native
+  def valueToNode(value: String): StringLiteral = js.native
+  def valueToNode(value: js.Array[js.UndefOr[Boolean | Null | String | Double | RegExp | js.Object]]): ArrayExpression = js.native
+  def valueToNode(value: js.Object): ObjectExpression = js.native
+  def valueToNode(value: Boolean): BooleanLiteral = js.native
+  def valueToNode(value: Double): NumericLiteral | BinaryExpression | UnaryExpression = js.native
+  def valueToNode(value: RegExp): RegExpLiteral = js.native
+  @JSName("valueToNode")
+  def valueToNode_Expression(): Expression = js.native
+  @JSName("valueToNode")
+  def valueToNode_Expression(value: String): Expression = js.native
+  @JSName("valueToNode")
+  def valueToNode_Expression(value: js.Object): Expression = js.native
+  @JSName("valueToNode")
+  def valueToNode_Expression(value: Boolean): Expression = js.native
+  @JSName("valueToNode")
+  def valueToNode_Expression(value: Double): Expression = js.native
+  @JSName("valueToNode")
+  def valueToNode_Expression(value: RegExp): Expression = js.native
+  @JSName("valueToNode")
+  def valueToNode_Identifier(): Identifier = js.native
   @JSName("variableDeclaration")
   def variableDeclaration_const(kind: const, declarations: js.Array[VariableDeclarator]): VariableDeclaration = js.native
   @JSName("variableDeclaration")

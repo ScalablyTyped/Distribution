@@ -5,6 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConfigurePaneSettings extends js.Object {
+  /** Shows or hides the grouped items in the configuration pane with the help of enum ej.ReportDesigner.ConfigureItems
+    * @Default {ej.ReportDesigner.ConfigureItems.All}
+    */
+  var items: js.UndefOr[ConfigureItems | String] = js.undefined
   /** Shows or hides the configuration pane in ReportDesigner control.
     * @Default {true}
     */
@@ -13,8 +17,9 @@ trait ConfigurePaneSettings extends js.Object {
 
 object ConfigurePaneSettings {
   @scala.inline
-  def apply(showConfigurePane: js.UndefOr[Boolean] = js.undefined): ConfigurePaneSettings = {
+  def apply(items: ConfigureItems | String = null, showConfigurePane: js.UndefOr[Boolean] = js.undefined): ConfigurePaneSettings = {
     val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (!js.isUndefined(showConfigurePane)) __obj.updateDynamic("showConfigurePane")(showConfigurePane)
     __obj.asInstanceOf[ConfigurePaneSettings]
   }

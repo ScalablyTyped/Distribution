@@ -1811,6 +1811,7 @@
 | 87 | [diff-match-patch](./d/diff-match-patch) | npm package for https://github.com/google/diff-mat
 | 87 | [file-url](./f/file-url) | Convert a file path to a file url: unicorn.jpg → f
 | 87 | [material-design-lite](./m/material-design-lite) | Material Design Components in CSS, JS and HTML
+| 87 | [nanoassert](./n/nanoassert) | Nanoscale assertion module
 | 87 | [next-tick](./n/next-tick) | Environment agnostic nextTick polyfill
 | 87 | [react-jsonschema-form](./r/react-jsonschema-form) | A simple React component capable of building HTML 
 | 87 | [react-toastify](./r/react-toastify) | React notification made easy
@@ -1978,6 +1979,7 @@
 | 74 | [pusher-js](./p/pusher-js) | Pusher JavaScript library for browsers, React Nati
 | 74 | [title-case](./t/title-case) | Title case a string
 | 74 | [ttf2woff2](./t/ttf2woff2) | Convert TTF files to WOFF2 ones.
+| 74 | [vue-clickaway](./v/vue-clickaway) | Reusable clickaway directive for reusable Vue.js c
 | 73 | [async-lock](./a/async-lock) | Lock on asynchronous code
 | 73 | [binary-search](./b/binary-search) | tiny binary search function with comparators
 | 73 | [console-stamp](./c/console-stamp) | Patch NodeJS console methods in order to add times
@@ -2721,6 +2723,7 @@
 | 40 | [isomorphic-form-data](./i/isomorphic-form-data) | A library to create readable "multipart/form-data"
 | 40 | [jenkins](./j/jenkins) | Jenkins client
 | 40 | [jupyterlab__codeeditor](./j/jupyterlab__codeeditor) | JupyterLab - Abstract Code Editor
+| 40 | [labeled-stream-splicer](./l/labeled-stream-splicer) | stream splicer with labels
 | 40 | [lodash_dot_first](./l/lodash_dot_first) | The modern build of lodash’s _.first as a module.
 | 40 | [lodash_dot_transform](./l/lodash_dot_transform) | The lodash method _.transform exported as a module
 | 40 | [mongoose-auto-increment](./m/mongoose-auto-increment) | This plugin allows you to auto-increment any field
@@ -3170,6 +3173,7 @@
 | 27 | [actioncable](./a/actioncable) | WebSocket framework for Ruby on Rails.
 | 27 | [allure-js-commons](./a/allure-js-commons) | Common helper for writing plugins to allure-framew
 | 27 | [apollo-server-env](./a/apollo-server-env) | -
+| 27 | [array_dot_prototype_dot_f](./a/array_dot_prototype_dot_flat) | An ESnext spec-compliant Array.prototype.flat shim
 | 27 | [buffer-reader](./b/buffer-reader) | a reader for nodejs buffer
 | 27 | [bufferstream](./b/bufferstream) | painless stream buffering and cutting
 | 27 | [chai-string](./c/chai-string) | strings comparison matchers for chai
@@ -3230,6 +3234,7 @@
 | 26 | [cordova-plugin-network-in](./c/cordova-plugin-network-information) | Cordova Network Information Plugin
 | 26 | [debounce-promise](./d/debounce-promise) | Create a debounced version of a promise returning 
 | 26 | [delete-empty](./d/delete-empty) | Recursively delete all empty folders in a director
+| 26 | [express-status-monitor](./e/express-status-monitor) | Realtime Monitoring for Express-based Node applica
 | 26 | [fast-html-parser](./f/fast-html-parser) | A very fast HTML parser, generating a simplified D
 | 26 | [ffi-napi](./f/ffi-napi) | A foreign function interface (FFI) for Node.js, N-
 | 26 | [fine-uploader](./f/fine-uploader) | Multiple file upload plugin with progress-bar, dra
@@ -4336,6 +4341,7 @@
 | 10 | [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js
 | 10 | [google-images](./g/google-images) | Search images using Google Custom Search Engine AP
 | 10 | [hopscotch](./h/hopscotch) | A framework to make it easy for developers to add 
+| 10 | [html-parser](./h/html-parser) | HTML/XML parser with less explosions
 | 10 | [identicon_dot_js](./i/identicon_dot_js) | GitHub-style identicons as PNGs or SVGs in JS.
 | 10 | [inversify-logger-middlewa](./i/inversify-logger-middleware) | A basic logger middleware for InversifyJS
 | 10 | [iterm2-version](./i/iterm2-version) | Get the iTerm2 version
@@ -4407,6 +4413,7 @@
 | 9 | [arcgis-js-api](./a/arcgis-js-api) | Minified, unbuilt version of the ArcGIS API for Ja
 | 9 | [aria-query](./a/aria-query) | Programmatic access to the ARIA specification
 | 9 | [audiosprite](./a/audiosprite) | Concat small audio files into single file and expo
+| 9 | [autocannon](./a/autocannon) | Fast HTTP benchmarking tool written in Node.js
 | 9 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
 | 9 | [aws-sdk__node-http-handle](./a/aws-sdk__node-http-handler) | Provides a way to make requests
 | 9 | [aws-sdk__protocol-json-rp](./a/aws-sdk__protocol-json-rpc) | Provides a marshaller and unmarshaller for the AWS
@@ -4420,6 +4427,7 @@
 | 9 | [bootstrap3-dialog](./b/bootstrap3-dialog) | Make use of Bootstrap Modal more monkey-friendly.
 | 9 | [bristol](./b/bristol) | Insanely configurable logging for Node.js
 | 9 | [bump-regex](./b/bump-regex) | bump RegEx with semver
+| 9 | [carbon__icons-react](./c/carbon__icons-react) | React components for icons in digital and software
 | 9 | [chai-dom](./c/chai-dom) | DOM assertions for the Chai assertion library usin
 | 9 | [circuit-breaker-js](./c/circuit-breaker-js) | Hystrix-like circuit breaker for JavaScript.
 | 9 | [cometd](./c/cometd) | Comet and WebSocket library for web messaging
@@ -4618,6 +4626,7 @@
 | 8 | [single-spa-react](./s/single-spa-react) | A single spa plugin for React apps
 | 8 | [slonik](./s/slonik) | A PostgreSQL client with strict types, detail logg
 | 8 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for 
+| 8 | [sparql-http-client](./s/sparql-http-client) | Simplified SPARQL HTTP request client
 | 8 | [styled-system__css](./s/styled-system__css) | Styled System for the css prop
 | 8 | [stylefire](./s/stylefire) | Performant, simplified stylers for CSS, SVG, path 
 | 8 | [superagent-no-cache](./s/superagent-no-cache) | Plugin for visionmedia/superagent that adds header
@@ -4686,6 +4695,7 @@
 | 7 | [fusioncharts](./f/fusioncharts) | FusionCharts JavaScript charting framework
 | 7 | [gaxios](./g/gaxios) | A simple common HTTP client specifically for Googl
 | 7 | [get-func-name](./g/get-func-name) | Utility for getting a function's name for node and
+| 7 | [globjoin](./g/globjoin) | Join paths and globs.
 | 7 | [gridstack](./g/gridstack) | gridstack.js is a jQuery plugin for widget layout
 | 7 | [gulp-intercept](./g/gulp-intercept) | Intercept Gulp streams and take full control of th
 | 7 | [halogenium](./h/halogenium) | A collection of loading spinners with React.js bas
@@ -5335,6 +5345,7 @@
 | 4 | [to-semver](./t/to-semver) | Get an array of valid, sorted, and cleaned semver 
 | 4 | [topojson-simplify](./t/topojson-simplify) | Topology-preserving simplification and filtering f
 | 4 | [trie-prefix-tree](./t/trie-prefix-tree) | Create and modify trie prefix structures, extract 
+| 4 | [tryghost__content-api](./t/tryghost__content-api) | JavaScript Client Library for the Ghost 
 | 4 | [ts-mockito](./t/ts-mockito) | Mocking library for TypeScript
 | 4 | [twilio-sync](./t/twilio-sync) | Twilio Sync client library
 | 4 | [unimodules__react-native-](./u/unimodules__react-native-adapter) | The adapter to use universal modules with the Reac
@@ -5916,6 +5927,8 @@
 | 2 | [react-native-google-analy](./r/react-native-google-analytics-bridge) | React Native bridge for using native Google Analyt
 | 2 | [react-native-material-kit](./r/react-native-material-kit) | Bringing Material Design to React Native
 | 2 | [react-native-mixpanel](./r/react-native-mixpanel) | A React Native wrapper for Mixpanel tracking
+| 2 | [react-native-phone-input](./r/react-native-phone-input) | Phone input box for React Native
+| 2 | [react-native-rss-parser](./r/react-native-rss-parser) | React Native compatible package to parse RSS feeds
 | 2 | [react-native-safari-view](./r/react-native-safari-view) | A React Native wrapper for Safari View Controller
 | 2 | [react-native-safe-area](./r/react-native-safe-area) | React Native module to get Safe Area Insets for iO
 | 2 | [react-plyr](./r/react-plyr) | A simple, accessible HTML5 media player React Comp
@@ -6136,6 +6149,7 @@
 | 1 | [enzyme-redux](./e/enzyme-redux) | Test utils to simplify testing of containers in re
 | 1 | [esfx__disposable](./e/esfx__disposable) | A low-level API for defining explicit resource man
 | 1 | [esri-leaflet-geocoder](./e/esri-leaflet-geocoder) | Esri Geocoding utility and search plugin for Leafl
+| 1 | [estimate](./e/estimate) | Calculate remaining reading time estimates in real
 | 1 | [event-hooks-webpack-plugi](./e/event-hooks-webpack-plugin) | Execute JavaScript on any available Webpack event 
 | 1 | [ex-react-native-i18n](./e/ex-react-native-i18n) | Exponentisation of => React Native and I18n.js int
 | 1 | [excel-style-dataformatter](./e/excel-style-dataformatter) | Excel-Style Javascript Data Formatter
@@ -6904,6 +6918,7 @@
 | 0 | [lodash_dot_flatmapdepth](./l/lodash_dot_flatmapdepth) | The lodash method _.flatMapDepth exported as a mod
 | 0 | [lodash_dot_meanby](./l/lodash_dot_meanby) | The lodash method _.meanBy exported as a module.
 | 0 | [lodash_dot_multiply](./l/lodash_dot_multiply) | The lodash method _.multiply exported as a module.
+| 0 | [lodash_dot_stubtrue](./l/lodash_dot_stubtrue) | The lodash method _.stubTrue exported as a module.
 | 0 | [lodash_dot_tofinite](./l/lodash_dot_tofinite) | The lodash method _.toFinite exported as a module.
 | 0 | [lodash_dot_updatewith](./l/lodash_dot_updatewith) | The lodash method _.updateWith exported as a modul
 | 0 | [macaca-circular-json](./m/macaca-circular-json) | JSON does not handle circular references. This ver

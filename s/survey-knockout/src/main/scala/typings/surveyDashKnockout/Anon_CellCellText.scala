@@ -18,6 +18,7 @@ trait Anon_CellCellText extends js.Object {
   var label: String
   var materialDecorator: String
   var root: String
+  var tableWrapper: String
 }
 
 object Anon_CellCellText {
@@ -35,9 +36,10 @@ object Anon_CellCellText {
     itemValue: String,
     label: String,
     materialDecorator: String,
-    root: String
+    root: String,
+    tableWrapper: String
   ): Anon_CellCellText = {
-    val __obj = js.Dynamic.literal(cell = cell, cellText = cellText, cellTextDisabled = cellTextDisabled, cellTextSelected = cellTextSelected, headerCell = headerCell, itemChecked = itemChecked, itemDecorator = itemDecorator, itemDisabled = itemDisabled, itemHover = itemHover, itemValue = itemValue, label = label, materialDecorator = materialDecorator, root = root)
+    val __obj = js.Dynamic.literal(cell = cell, cellText = cellText, cellTextDisabled = cellTextDisabled, cellTextSelected = cellTextSelected, headerCell = headerCell, itemChecked = itemChecked, itemDecorator = itemDecorator, itemDisabled = itemDisabled, itemHover = itemHover, itemValue = itemValue, label = label, materialDecorator = materialDecorator, root = root, tableWrapper = tableWrapper)
   
     __obj.asInstanceOf[Anon_CellCellText]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait AccelerationSettings extends js.Object {
   /**
-    * Acceleration configuration for the job.
+    * Specify the conditions when the service will run your job with accelerated transcoding.
     */
   var Mode: AccelerationMode
 }

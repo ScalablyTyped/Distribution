@@ -78,6 +78,10 @@ trait Model extends js.Object {
   /** Specifies the parameter settings.
     */
   var parameterSettings: js.UndefOr[ParameterSettings] = js.undefined
+  /** Fires when the dependent parameter value is changing in the parameter block. You can add custom user interface, loading indicator and modify the default progress text, using the
+    * ParameterUpdateStateChange event.
+    */
+  var parameterUpdateStateChange: js.UndefOr[js.Function1[/* e */ ParameterUpdateStateChangeEventArgs, Unit]] = js.undefined
   /** Gets or sets the list of parameters associated with the report.
     * @Default {[]}
     */
@@ -139,6 +143,10 @@ trait Model extends js.Object {
     * viewing error detail, you can make use of the showError event.
     */
   var showError: js.UndefOr[js.Function1[/* e */ ShowErrorEventArgs, Unit]] = js.undefined
+  /** Gets or sets the showExceptionsInDialog for report viewer.
+    * @Default {false}
+    */
+  var showExceptionsInDialog: js.UndefOr[Boolean] = js.undefined
   /** Render the ReportViewer height based on the report content size.
     * @Default {false}
     */
@@ -185,6 +193,7 @@ object Model {
     locale: String = null,
     pageSettings: PageSettings = null,
     parameterSettings: ParameterSettings = null,
+    parameterUpdateStateChange: /* e */ ParameterUpdateStateChangeEventArgs => Unit = null,
     parameters: js.Array[Parameter] = null,
     printMode: js.UndefOr[Boolean] = js.undefined,
     printOption: PrintOptions | String = null,
@@ -202,6 +211,7 @@ object Model {
     reportServiceUrl: String = null,
     serviceAuthorizationToken: String = null,
     showError: /* e */ ShowErrorEventArgs => Unit = null,
+    showExceptionsInDialog: js.UndefOr[Boolean] = js.undefined,
     sizeToReportContent: js.UndefOr[Boolean] = js.undefined,
     toolBarItemClick: /* e */ ToolBarItemClickEventArgs => Unit = null,
     toolbarRendering: /* e */ ToolbarRenderingEventArgs => Unit = null,
@@ -231,6 +241,7 @@ object Model {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (pageSettings != null) __obj.updateDynamic("pageSettings")(pageSettings)
     if (parameterSettings != null) __obj.updateDynamic("parameterSettings")(parameterSettings)
+    if (parameterUpdateStateChange != null) __obj.updateDynamic("parameterUpdateStateChange")(js.Any.fromFunction1(parameterUpdateStateChange))
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     if (!js.isUndefined(printMode)) __obj.updateDynamic("printMode")(printMode)
     if (printOption != null) __obj.updateDynamic("printOption")(printOption.asInstanceOf[js.Any])
@@ -248,6 +259,7 @@ object Model {
     if (reportServiceUrl != null) __obj.updateDynamic("reportServiceUrl")(reportServiceUrl)
     if (serviceAuthorizationToken != null) __obj.updateDynamic("serviceAuthorizationToken")(serviceAuthorizationToken)
     if (showError != null) __obj.updateDynamic("showError")(js.Any.fromFunction1(showError))
+    if (!js.isUndefined(showExceptionsInDialog)) __obj.updateDynamic("showExceptionsInDialog")(showExceptionsInDialog)
     if (!js.isUndefined(sizeToReportContent)) __obj.updateDynamic("sizeToReportContent")(sizeToReportContent)
     if (toolBarItemClick != null) __obj.updateDynamic("toolBarItemClick")(js.Any.fromFunction1(toolBarItemClick))
     if (toolbarRendering != null) __obj.updateDynamic("toolbarRendering")(js.Any.fromFunction1(toolbarRendering))

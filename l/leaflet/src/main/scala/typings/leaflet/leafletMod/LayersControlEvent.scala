@@ -10,8 +10,15 @@ trait LayersControlEvent extends LayerEvent {
 
 object LayersControlEvent {
   @scala.inline
-  def apply(layer: Layer, name: String, target: js.Any, `type`: String): LayersControlEvent = {
-    val __obj = js.Dynamic.literal(layer = layer, name = name, target = target)
+  def apply(
+    layer: Layer,
+    name: String,
+    propagatedFrom: js.Any,
+    sourceTarget: js.Any,
+    target: js.Any,
+    `type`: String
+  ): LayersControlEvent = {
+    val __obj = js.Dynamic.literal(layer = layer, name = name, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LayersControlEvent]
   }

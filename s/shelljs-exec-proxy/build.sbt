@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "shelljs-exec-proxy"
-version := "0.1-dt-20190124Z-fb8e8f"
+version := "0.1-dt-20190124Z-53c445"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-a815bb",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-5f99ff",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-24cccf",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
-  "org.scalablytyped" %%% "shelljs" % "0.8-dt-20190412Z-1bec85",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
+  "org.scalablytyped" %%% "shelljs" % "0.8-dt-20190412Z-a34d24",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

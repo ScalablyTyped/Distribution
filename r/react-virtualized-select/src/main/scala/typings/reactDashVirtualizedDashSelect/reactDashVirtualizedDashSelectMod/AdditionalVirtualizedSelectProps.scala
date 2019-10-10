@@ -4,13 +4,14 @@ import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.StatelessComponent
+import typings.reactDashVirtualizedDashSelect.Anon_Option
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AdditionalVirtualizedSelectProps[TValue] extends js.Object {
   var maxHeight: js.UndefOr[Double] = js.undefined
-  var optionHeight: js.UndefOr[Double] = js.undefined
+  var optionHeight: js.UndefOr[Double | (js.Function1[/* options */ Anon_Option[TValue], Double])] = js.undefined
   var optionRenderer: js.UndefOr[js.Function1[/* options */ VirtualizedOptionRenderOptions[TValue], Element]] = js.undefined
   var selectComponent: js.UndefOr[(ComponentClass[_, ComponentState]) | StatelessComponent[_]] = js.undefined
 }
@@ -19,7 +20,7 @@ object AdditionalVirtualizedSelectProps {
   @scala.inline
   def apply[TValue](
     maxHeight: Int | Double = null,
-    optionHeight: Int | Double = null,
+    optionHeight: Double | (js.Function1[/* options */ Anon_Option[TValue], Double]) = null,
     optionRenderer: /* options */ VirtualizedOptionRenderOptions[TValue] => Element = null,
     selectComponent: (ComponentClass[_, ComponentState]) | StatelessComponent[_] = null
   ): AdditionalVirtualizedSelectProps[TValue] = {

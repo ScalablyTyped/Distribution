@@ -40,6 +40,11 @@ trait ITransferCreationOptions extends IDataOptionsWithMetadata {
     */
   var source_transaction: js.UndefOr[String] = js.undefined
   /**
+    * The source balance to use for this transfer. One of bank_account
+    * or card. For most users, this will default to card.
+    */
+  var source_type: js.UndefOr[SourceTypes] = js.undefined
+  /**
     * A string that identifies this transaction as part of a group.
     * See the Connect documentation for details.
     */
@@ -57,6 +62,7 @@ object ITransferCreationOptions {
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null,
     source_transaction: String = null,
+    source_type: SourceTypes = null,
     transfer_group: String = null
   ): ITransferCreationOptions = {
     val __obj = js.Dynamic.literal(amount = amount, currency = currency, destination = destination)
@@ -65,6 +71,7 @@ object ITransferCreationOptions {
     if (include != null) __obj.updateDynamic("include")(include)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (source_transaction != null) __obj.updateDynamic("source_transaction")(source_transaction)
+    if (source_type != null) __obj.updateDynamic("source_type")(source_type)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[ITransferCreationOptions]
   }

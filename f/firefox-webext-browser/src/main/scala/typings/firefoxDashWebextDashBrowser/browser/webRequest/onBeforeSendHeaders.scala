@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxDashWebextDashBrowser.Anon_DocumentUrlFrameIdMethod
+import typings.firefoxDashWebextDashBrowser.Anon_CookieStoreIdDocumentUrlFrameId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ object onBeforeSendHeaders
   extends TopLevel[
       _WebRequestOnBeforeSendHeadersEvent[
         js.Function1[
-          /* details */ Anon_DocumentUrlFrameIdMethod, 
+          /* details */ Anon_CookieStoreIdDocumentUrlFrameId, 
           BlockingResponse | js.Promise[BlockingResponse] | Unit
         ]
       ]

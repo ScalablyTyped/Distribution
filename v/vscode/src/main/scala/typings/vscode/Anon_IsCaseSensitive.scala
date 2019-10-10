@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_IsCaseSensitive extends js.Object {
-  var isCaseSensitive: js.UndefOr[Boolean] = js.undefined
-  var isReadonly: js.UndefOr[Boolean] = js.undefined
+  val isCaseSensitive: js.UndefOr[Boolean] = js.undefined
+  val isReadonly: js.UndefOr[Boolean] = js.undefined
 }
 
 object Anon_IsCaseSensitive {

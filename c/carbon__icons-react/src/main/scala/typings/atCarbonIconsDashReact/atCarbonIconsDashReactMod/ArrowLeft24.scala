@@ -1,0 +1,11 @@
+package typings.atCarbonIconsDashReact.atCarbonIconsDashReactMod
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@carbon/icons-react", "ArrowLeft24")
+@js.native
+object ArrowLeft24 extends TopLevel[CarbonIconType]
+

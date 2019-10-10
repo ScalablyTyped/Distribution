@@ -10,14 +10,8 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.atHapiJoi.atHapiJoiMod._SchemaLike because Already inherited
-- typings.atHapiJoi.atHapiJoiMod._Schema because Already inherited */ @js.native
+- typings.atHapiJoi.atHapiJoiMod.Schema because Already inherited */ @js.native
 trait DateSchema extends AnySchema {
-  /**
-    * Specifies the allowed date format:
-    * @param format - string or array of strings that follow the moment.js format.
-    */
-  def format(format: String): this.type = js.native
-  def format(format: js.Array[String]): this.type = js.native
   def greater(date: String): this.type = js.native
   def greater(date: Double): this.type = js.native
   def greater(date: Reference): this.type = js.native

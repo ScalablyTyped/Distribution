@@ -14,7 +14,7 @@ trait NavItemProps
      with /* key */ StringDictionary[js.Any] {
   var active: js.UndefOr[Boolean] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object NavItemProps {
@@ -25,7 +25,7 @@ object NavItemProps {
     active: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     cssModule: CSSModule = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): NavItemProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

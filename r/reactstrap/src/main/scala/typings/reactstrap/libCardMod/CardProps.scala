@@ -17,7 +17,7 @@ trait CardProps
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var inverse: js.UndefOr[Boolean] = js.undefined
   var outline: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
 object CardProps {
@@ -32,7 +32,7 @@ object CardProps {
     inverse: js.UndefOr[Boolean] = js.undefined,
     outline: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    tag: ReactType[_] = null
+    tag: String | ReactType[_] = null
   ): CardProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

@@ -14,7 +14,7 @@ trait UncontrolledAlertProps
   extends HTMLAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var transition: js.UndefOr[FadeProps] = js.undefined
 }
 
@@ -26,7 +26,7 @@ object UncontrolledAlertProps {
     className: String = null,
     color: String = null,
     cssModule: CSSModule = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     transition: FadeProps = null
   ): UncontrolledAlertProps = {
     val __obj = js.Dynamic.literal()

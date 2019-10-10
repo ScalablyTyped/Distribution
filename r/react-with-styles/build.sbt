@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-with-styles"
-version := "4.0-dt-20190916Z-99f3c8"
+version := "4.0-dt-20191009Z-cc5460"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,13 +7,13 @@ import typings.surveyDashKnockout.Anon_ButtonButtonAddButtonRemoveCell
 import typings.surveyDashKnockout.Anon_Cell
 import typings.surveyDashKnockout.Anon_CellCellText
 import typings.surveyDashKnockout.Anon_CellHeaderCell
-import typings.surveyDashKnockout.Anon_CheckedPath
 import typings.surveyDashKnockout.Anon_ChooseFile
 import typings.surveyDashKnockout.Anon_ClearButtonColumnControlLabel
 import typings.surveyDashKnockout.Anon_ClearButtonImageItemItemChecked
 import typings.surveyDashKnockout.Anon_ColumnControlLabelItemItemChecked
 import typings.surveyDashKnockout.Anon_Complete
 import typings.surveyDashKnockout.Anon_ContainerDescription
+import typings.surveyDashKnockout.Anon_Control
 import typings.surveyDashKnockout.Anon_ControlOnError
 import typings.surveyDashKnockout.Anon_Description
 import typings.surveyDashKnockout.Anon_Disabled
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
 object bemCss extends js.Object {
   var body: String = js.native
   var bodyEmpty: String = js.native
-  var boolean: Anon_CheckedPath = js.native
+  var boolean: Anon_Control = js.native
   var checkbox: Anon_ColumnControlLabelItemItemChecked = js.native
   var comment: Anon_RootSmall = js.native
   var completedPage: String = js.native

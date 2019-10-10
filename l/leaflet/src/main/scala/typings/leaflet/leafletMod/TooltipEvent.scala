@@ -10,8 +10,15 @@ trait TooltipEvent extends LeafletEvent {
 
 object TooltipEvent {
   @scala.inline
-  def apply(target: js.Any, tooltip: Tooltip, `type`: String): TooltipEvent = {
-    val __obj = js.Dynamic.literal(target = target, tooltip = tooltip)
+  def apply(
+    layer: js.Any,
+    propagatedFrom: js.Any,
+    sourceTarget: js.Any,
+    target: js.Any,
+    tooltip: Tooltip,
+    `type`: String
+  ): TooltipEvent = {
+    val __obj = js.Dynamic.literal(layer = layer, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target, tooltip = tooltip)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TooltipEvent]
   }

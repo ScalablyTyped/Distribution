@@ -75,7 +75,7 @@ class SurveyElement protected ()
   override def setSurveyImpl(value: ISurveyImpl): js.Any = js.native
   /* CompleteClass */
   override def setVisibleIndex(value: Double): Double = js.native
-  /* protected */ def updateContainsErrors(): Unit = js.native
+  def updateContainsErrors(): Unit = js.native
   def updateCustomWidgets(): Unit = js.native
 }
 

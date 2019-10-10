@@ -13,6 +13,8 @@ trait BlockStatement extends Node {
   var params: js.Array[Expression]
   var path: PathExpression
   var program: Program
+  @JSName("type")
+  var type_BlockStatement: typings.handlebars.handlebarsStrings.BlockStatement
 }
 
 object BlockStatement {
@@ -27,7 +29,7 @@ object BlockStatement {
     params: js.Array[Expression],
     path: PathExpression,
     program: Program,
-    `type`: String
+    `type`: typings.handlebars.handlebarsStrings.BlockStatement
   ): BlockStatement = {
     val __obj = js.Dynamic.literal(closeStrip = closeStrip, hash = hash, inverse = inverse, inverseStrip = inverseStrip, loc = loc, openStrip = openStrip, params = params, path = path, program = program)
     __obj.updateDynamic("type")(`type`)

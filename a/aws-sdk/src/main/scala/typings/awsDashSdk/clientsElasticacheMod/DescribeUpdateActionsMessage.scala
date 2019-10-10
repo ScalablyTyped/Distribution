@@ -6,6 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait DescribeUpdateActionsMessage extends js.Object {
   /**
+    * The cache cluster IDs
+    */
+  var CacheClusterIds: js.UndefOr[CacheClusterIdList] = js.undefined
+  /**
+    * The Elasticache engine to which the update applies. Either Redis or Memcached 
+    */
+  var Engine: js.UndefOr[String] = js.undefined
+  /**
     * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
   var Marker: js.UndefOr[String] = js.undefined
@@ -42,6 +50,8 @@ trait DescribeUpdateActionsMessage extends js.Object {
 object DescribeUpdateActionsMessage {
   @scala.inline
   def apply(
+    CacheClusterIds: CacheClusterIdList = null,
+    Engine: String = null,
     Marker: String = null,
     MaxRecords: Int | scala.Double = null,
     ReplicationGroupIds: ReplicationGroupIdList = null,
@@ -52,6 +62,8 @@ object DescribeUpdateActionsMessage {
     UpdateActionStatus: UpdateActionStatusList = null
   ): DescribeUpdateActionsMessage = {
     val __obj = js.Dynamic.literal()
+    if (CacheClusterIds != null) __obj.updateDynamic("CacheClusterIds")(CacheClusterIds)
+    if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)
     if (MaxRecords != null) __obj.updateDynamic("MaxRecords")(MaxRecords.asInstanceOf[js.Any])
     if (ReplicationGroupIds != null) __obj.updateDynamic("ReplicationGroupIds")(ReplicationGroupIds)

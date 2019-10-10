@@ -1253,7 +1253,7 @@ package object fpMod {
     js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashRemove1x1[T] = js.Function1[/* array */ List[T], js.Array[T]]
-  type LodashRemove1x2[T] = js.Function1[/* predicate */ js.Function1[/* value */ T, NotVoid], js.Array[T]]
+  type LodashRemove1x2[T] = js.Function1[/* predicate */ ValueIteratee[T], js.Array[T]]
   type LodashRepeat1x1 = js.Function1[/* string */ String, String]
   type LodashRepeat1x2 = js.Function1[/* n */ Double, String]
   type LodashReplace1x3 = js.Function1[/* string */ String, String]

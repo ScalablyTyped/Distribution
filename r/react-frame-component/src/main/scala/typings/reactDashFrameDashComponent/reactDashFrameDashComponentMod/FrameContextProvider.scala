@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-frame-component", "FrameContextProvider")
 @js.native
-object FrameContextProvider extends TopLevel[Provider[FrameContext]]
+object FrameContextProvider extends TopLevel[Provider[FrameContextProps]]
 

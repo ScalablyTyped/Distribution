@@ -11,6 +11,8 @@ trait PartialBlockStatement extends Node {
   var openStrip: StripFlags
   var params: js.Array[Expression]
   var program: Program
+  @JSName("type")
+  var type_PartialBlockStatement: typings.handlebars.handlebarsStrings.PartialBlockStatement
 }
 
 object PartialBlockStatement {
@@ -23,7 +25,7 @@ object PartialBlockStatement {
     openStrip: StripFlags,
     params: js.Array[Expression],
     program: Program,
-    `type`: String
+    `type`: typings.handlebars.handlebarsStrings.PartialBlockStatement
   ): PartialBlockStatement = {
     val __obj = js.Dynamic.literal(closeStrip = closeStrip, hash = hash, loc = loc, name = name.asInstanceOf[js.Any], openStrip = openStrip, params = params, program = program)
     __obj.updateDynamic("type")(`type`)

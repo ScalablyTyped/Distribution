@@ -12,7 +12,7 @@ trait FileSourceSettings extends js.Object {
   /**
     * External caption file used for loading captions. Accepted file extensions are 'scc', 'ttml', 'dfxp', 'stl', 'srt', 'xml', and 'smi'.
     */
-  var SourceFile: js.UndefOr[__stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI] = js.undefined
+  var SourceFile: js.UndefOr[__stringMin14PatternHttpHttpsS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI] = js.undefined
   /**
     * Specifies a time delta in seconds to offset the captions from the source file.
     */
@@ -23,7 +23,7 @@ object FileSourceSettings {
   @scala.inline
   def apply(
     Convert608To708: FileSourceConvert608To708 = null,
-    SourceFile: __stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI = null,
+    SourceFile: __stringMin14PatternHttpHttpsS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI = null,
     TimeDelta: Int | Double = null
   ): FileSourceSettings = {
     val __obj = js.Dynamic.literal()

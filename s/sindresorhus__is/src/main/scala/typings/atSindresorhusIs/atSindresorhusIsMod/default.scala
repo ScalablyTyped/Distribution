@@ -87,7 +87,7 @@ object default extends js.Object {
   var uint8Array: js.Function1[/* value */ js.Any, /* is std.Uint8Array */ Boolean] = js.native
   var uint8ClampedArray: js.Function1[/* value */ js.Any, /* is std.Uint8ClampedArray */ Boolean] = js.native
   var undefined: js.Function1[/* value */ js.Any, /* is undefined */ Boolean] = js.native
-  var urlInstance: js.Function1[/* value */ js.Any, /* is @sindresorhus/is.@sindresorhus/is.URL */ Boolean] = js.native
+  var urlInstance: js.Function1[/* value */ js.Any, /* is std.URL */ Boolean] = js.native
   var urlString: js.Function1[/* value */ js.Any, /* is string */ Boolean] = js.native
   var weakMap: js.Function1[/* value */ js.Any, /* is std.WeakMap<object, unknown> */ Boolean] = js.native
   var weakSet: js.Function1[/* value */ js.Any, /* is std.WeakSet<object> */ Boolean] = js.native

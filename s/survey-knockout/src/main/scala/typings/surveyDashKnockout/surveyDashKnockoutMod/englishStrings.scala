@@ -10,6 +10,8 @@ object englishStrings extends js.Object {
   var addColumn: String = js.native
   var addPanel: String = js.native
   var addRow: String = js.native
+  var booleanCheckedLabel: String = js.native
+  var booleanUncheckedLabel: String = js.native
   var choices_Item: String = js.native
   var chooseFile: String = js.native
   var chooseFileCaption: String = js.native

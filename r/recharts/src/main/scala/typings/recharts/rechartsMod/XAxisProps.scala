@@ -13,10 +13,16 @@ trait XAxisProps extends EventAttributes {
   var allowDataOverflow: js.UndefOr[Boolean] = js.undefined
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
   var allowDuplicatedCategory: js.UndefOr[Boolean] = js.undefined
+  // Rotation of tick labels
+  var angle: js.UndefOr[Double] = js.undefined
   var axisLine: js.UndefOr[Boolean | js.Object] = js.undefined
   // The key of data displayed in the axis
   var dataKey: js.UndefOr[DataKey] = js.undefined
   var domain: js.UndefOr[js.Tuple2[AxisDomain, AxisDomain]] = js.undefined
+  // X offset of tick label
+  var dx: js.UndefOr[Double] = js.undefined
+  // Y offset of tick label
+  var dy: js.UndefOr[Double] = js.undefined
   // The height of axis, which need to be set by user
   var height: js.UndefOr[Double] = js.undefined
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -61,9 +67,12 @@ object XAxisProps {
     allowDataOverflow: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     allowDuplicatedCategory: js.UndefOr[Boolean] = js.undefined,
+    angle: Int | Double = null,
     axisLine: Boolean | js.Object = null,
     dataKey: DataKey = null,
     domain: js.Tuple2[AxisDomain, AxisDomain] = null,
+    dx: Int | Double = null,
+    dy: Int | Double = null,
     height: Int | Double = null,
     hide: js.UndefOr[Boolean] = js.undefined,
     interval: AxisInterval = null,
@@ -105,9 +114,12 @@ object XAxisProps {
     if (!js.isUndefined(allowDataOverflow)) __obj.updateDynamic("allowDataOverflow")(allowDataOverflow)
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals)
     if (!js.isUndefined(allowDuplicatedCategory)) __obj.updateDynamic("allowDuplicatedCategory")(allowDuplicatedCategory)
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
+    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])

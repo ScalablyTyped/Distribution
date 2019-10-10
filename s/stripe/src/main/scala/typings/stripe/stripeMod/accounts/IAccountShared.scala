@@ -3,7 +3,6 @@ package typings.stripe.stripeMod.accounts
 import typings.stripe.Anon_Branding
 import typings.stripe.Anon_Date
 import typings.stripe.Anon_Mcc
-import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.individual
 import scala.scalajs.js
@@ -33,17 +32,18 @@ trait IAccountShared extends js.Object {
     */
   var email: js.UndefOr[String] = js.undefined
   /**
-    * A set of key/value pairs that you can attach to an account object. It can be
-    * useful for storing additional information about the account in a structured
-    * format. This can be unset by updating the value to null and then saving.
-    */
-  var metadata: js.UndefOr[IMetadata] = js.undefined
-  /**
     * Internal-only description of the product being sold or service being
     * provided by this account. It’s used by Stripe for risk and underwriting
     * purposes.
     */
   var product_description: js.UndefOr[String] = js.undefined
+  /**
+    * The set of capabilities you want to unlock for this account (US only).
+    * Each capability will be inactive until you have provided its specific
+    * requirements and Stripe has verified them. An account may have some of
+    * its requested capabilities be active and some be inactive.
+    */
+  var requested_capabilities: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Account options for customizing how the account functions within Stripe.
     */
@@ -63,8 +63,8 @@ object IAccountShared {
     business_type: individual | company = null,
     default_currency: String = null,
     email: String = null,
-    metadata: IMetadata = null,
     product_description: String = null,
+    requested_capabilities: js.Array[String] = null,
     settings: Anon_Branding = null,
     tos_acceptance: Anon_Date = null
   ): IAccountShared = {
@@ -73,8 +73,8 @@ object IAccountShared {
     if (business_type != null) __obj.updateDynamic("business_type")(business_type.asInstanceOf[js.Any])
     if (default_currency != null) __obj.updateDynamic("default_currency")(default_currency)
     if (email != null) __obj.updateDynamic("email")(email)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (product_description != null) __obj.updateDynamic("product_description")(product_description)
+    if (requested_capabilities != null) __obj.updateDynamic("requested_capabilities")(requested_capabilities)
     if (settings != null) __obj.updateDynamic("settings")(settings)
     if (tos_acceptance != null) __obj.updateDynamic("tos_acceptance")(tos_acceptance)
     __obj.asInstanceOf[IAccountShared]

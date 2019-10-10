@@ -7,6 +7,7 @@ import typings.atPulumiPulumi.resourceMod.CustomTimeouts
 import typings.atPulumiPulumi.resourceMod.ID
 import typings.atPulumiPulumi.resourceMod.ProviderResource
 import typings.atPulumiPulumi.resourceMod.Resource
+import typings.atPulumiPulumi.resourceMod.ResourceTransformation
 import typings.atPulumiPulumi.resourceMod.URN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,6 +48,7 @@ object CustomResourceGetOptions {
     parent: Resource = null,
     protect: js.UndefOr[Boolean] = js.undefined,
     provider: ProviderResource = null,
+    transformations: js.Array[ResourceTransformation] = null,
     version: String = null
   ): CustomResourceGetOptions = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
@@ -60,6 +62,7 @@ object CustomResourceGetOptions {
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
     if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[CustomResourceGetOptions]
   }

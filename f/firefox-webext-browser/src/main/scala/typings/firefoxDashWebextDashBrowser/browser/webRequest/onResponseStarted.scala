@@ -1,7 +1,7 @@
 package typings.firefoxDashWebextDashBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.TopLevel
-import typings.firefoxDashWebextDashBrowser.Anon_DocumentUrlFrameIdFromCache
+import typings.firefoxDashWebextDashBrowser.Anon_CookieStoreIdDocumentUrlFrameIdFromCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onResponseStarted
   extends TopLevel[
-      _WebRequestOnResponseStartedEvent[js.Function1[/* details */ Anon_DocumentUrlFrameIdFromCache, Unit]]
+      _WebRequestOnResponseStartedEvent[js.Function1[/* details */ Anon_CookieStoreIdDocumentUrlFrameIdFromCache, Unit]]
     ]
 

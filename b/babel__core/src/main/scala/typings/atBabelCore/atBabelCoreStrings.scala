@@ -126,6 +126,9 @@ object atBabelCoreStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait boolean extends js.Object
+  
+  @js.native
   sealed trait both extends js.Object
   
   @js.native
@@ -142,6 +145,9 @@ object atBabelCoreStrings {
   
   @js.native
   sealed trait exit extends js.Object
+  
+  @js.native
+  sealed trait function extends js.Object
   
   @js.native
   sealed trait get extends js.Object
@@ -171,6 +177,12 @@ object atBabelCoreStrings {
   sealed trait module extends js.Object
   
   @js.native
+  sealed trait number extends js.Object
+  
+  @js.native
+  sealed trait `object` extends js.Object
+  
+  @js.native
   sealed trait plugin extends js.Object
   
   @js.native
@@ -181,6 +193,9 @@ object atBabelCoreStrings {
   
   @js.native
   sealed trait `private` extends js.Object
+  
+  @js.native
+  sealed trait property extends js.Object
   
   @js.native
   sealed trait `protected` extends js.Object
@@ -198,6 +213,12 @@ object atBabelCoreStrings {
   sealed trait set extends js.Object
   
   @js.native
+  sealed trait string extends js.Object
+  
+  @js.native
+  sealed trait symbol extends js.Object
+  
+  @js.native
   sealed trait `throw` extends js.Object
   
   @js.native
@@ -208,6 +229,9 @@ object atBabelCoreStrings {
   
   @js.native
   sealed trait unambiguous extends js.Object
+  
+  @js.native
+  sealed trait undefined extends js.Object
   
   @js.native
   sealed trait upward extends js.Object
@@ -314,6 +338,8 @@ object atBabelCoreStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
   def const: const = "const".asInstanceOf[const]
@@ -325,6 +351,8 @@ object atBabelCoreStrings {
   def enter: enter = "enter".asInstanceOf[enter]
   @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
+  @scala.inline
+  def function: function = "function".asInstanceOf[function]
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   @scala.inline
@@ -344,6 +372,10 @@ object atBabelCoreStrings {
   @scala.inline
   def module: module = "module".asInstanceOf[module]
   @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
   def plugin: plugin = "plugin".asInstanceOf[plugin]
   @scala.inline
   def plus: plus = "plus".asInstanceOf[plus]
@@ -351,6 +383,8 @@ object atBabelCoreStrings {
   def preset: preset = "preset".asInstanceOf[preset]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
+  def property: property = "property".asInstanceOf[property]
   @scala.inline
   def `protected`: `protected` = "protected".asInstanceOf[`protected`]
   @scala.inline
@@ -362,6 +396,10 @@ object atBabelCoreStrings {
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
@@ -369,6 +407,8 @@ object atBabelCoreStrings {
   def typeof: typeof = "typeof".asInstanceOf[typeof]
   @scala.inline
   def unambiguous: unambiguous = "unambiguous".asInstanceOf[unambiguous]
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
   @scala.inline
   def upward: upward = "upward".asInstanceOf[upward]
   @scala.inline

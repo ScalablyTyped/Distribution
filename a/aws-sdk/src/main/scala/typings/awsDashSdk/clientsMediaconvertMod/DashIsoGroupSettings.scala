@@ -34,6 +34,10 @@ trait DashIsoGroupSettings extends js.Object {
     */
   var MinBufferTime: js.UndefOr[__integerMin0Max2147483647] = js.undefined
   /**
+    * Specify whether your DASH profile is on-demand or main. When you choose Main profile (MAIN_PROFILE), the service signals  urn:mpeg:dash:profile:isoff-main:2011 in your .mpd DASH manifest. When you choose On-demand (ON_DEMAND_PROFILE), the service signals urn:mpeg:dash:profile:isoff-on-demand:2011 in your .mpd. When you choose On-demand, you must also set the output group setting Segment control (SegmentControl) to Single file (SINGLE_FILE).
+    */
+  var MpdProfile: js.UndefOr[DashIsoMpdProfile] = js.undefined
+  /**
     * When set to SINGLE_FILE, a single output file is generated, which is internally segmented using the Fragment Length and Segment Length. When set to SEGMENTED_FILES, separate segment files will be created.
     */
   var SegmentControl: js.UndefOr[DashIsoSegmentControl] = js.undefined
@@ -42,7 +46,7 @@ trait DashIsoGroupSettings extends js.Object {
     */
   var SegmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined
   /**
-    * When you enable Precise segment duration in manifests (writeSegmentTimelineInRepresentation), your DASH manifest shows precise segment durations. The segment duration information appears inside the SegmentTimeline element, inside SegmentTemplate at the Representation level. When this feature isn't enabled, the segment durations in your DASH manifest are approximate. The segment duration information appears in the duration attribute of the SegmentTemplate element.
+    * If you get an HTTP error in the 400 range when you play back your DASH output, enable this setting and run your transcoding job again. When you enable this setting, the service writes precise segment durations in the DASH manifest. The segment duration information appears inside the SegmentTimeline element, inside SegmentTemplate at the Representation level. When you don't enable this setting, the service writes approximate segment durations in your DASH manifest.
     */
   var WriteSegmentTimelineInRepresentation: js.UndefOr[DashIsoWriteSegmentTimelineInRepresentation] = js.undefined
 }
@@ -57,6 +61,7 @@ object DashIsoGroupSettings {
     FragmentLength: Int | Double = null,
     HbbtvCompliance: DashIsoHbbtvCompliance = null,
     MinBufferTime: Int | Double = null,
+    MpdProfile: DashIsoMpdProfile = null,
     SegmentControl: DashIsoSegmentControl = null,
     SegmentLength: Int | Double = null,
     WriteSegmentTimelineInRepresentation: DashIsoWriteSegmentTimelineInRepresentation = null
@@ -69,6 +74,7 @@ object DashIsoGroupSettings {
     if (FragmentLength != null) __obj.updateDynamic("FragmentLength")(FragmentLength.asInstanceOf[js.Any])
     if (HbbtvCompliance != null) __obj.updateDynamic("HbbtvCompliance")(HbbtvCompliance.asInstanceOf[js.Any])
     if (MinBufferTime != null) __obj.updateDynamic("MinBufferTime")(MinBufferTime.asInstanceOf[js.Any])
+    if (MpdProfile != null) __obj.updateDynamic("MpdProfile")(MpdProfile.asInstanceOf[js.Any])
     if (SegmentControl != null) __obj.updateDynamic("SegmentControl")(SegmentControl.asInstanceOf[js.Any])
     if (SegmentLength != null) __obj.updateDynamic("SegmentLength")(SegmentLength.asInstanceOf[js.Any])
     if (WriteSegmentTimelineInRepresentation != null) __obj.updateDynamic("WriteSegmentTimelineInRepresentation")(WriteSegmentTimelineInRepresentation.asInstanceOf[js.Any])

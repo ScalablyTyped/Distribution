@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-linear-gradient"
-version := "7.0.0-eb4292"
+version := "7.0.1-ca094d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

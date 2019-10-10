@@ -24,7 +24,7 @@ trait MediaProps
   var `object`: js.UndefOr[Boolean] = js.undefined
   var right: js.UndefOr[Boolean] = js.undefined
   var src: js.UndefOr[String] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var top: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -46,7 +46,7 @@ object MediaProps {
     `object`: js.UndefOr[Boolean] = js.undefined,
     right: js.UndefOr[Boolean] = js.undefined,
     src: String = null,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     top: js.UndefOr[Boolean] = js.undefined
   ): MediaProps = {
     val __obj = js.Dynamic.literal()

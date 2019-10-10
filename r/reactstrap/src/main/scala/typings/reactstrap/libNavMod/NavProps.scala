@@ -20,7 +20,7 @@ trait NavProps
   var navbar: js.UndefOr[Boolean] = js.undefined
   var pills: js.UndefOr[Boolean] = js.undefined
   var tabs: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[ReactType[_]] = js.undefined
+  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
   var vertical: js.UndefOr[Boolean | String] = js.undefined
 }
 
@@ -38,7 +38,7 @@ object NavProps {
     navbar: js.UndefOr[Boolean] = js.undefined,
     pills: js.UndefOr[Boolean] = js.undefined,
     tabs: js.UndefOr[Boolean] = js.undefined,
-    tag: ReactType[_] = null,
+    tag: String | ReactType[_] = null,
     vertical: Boolean | String = null
   ): NavProps = {
     val __obj = js.Dynamic.literal()

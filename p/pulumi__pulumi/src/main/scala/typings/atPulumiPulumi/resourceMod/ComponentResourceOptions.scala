@@ -31,6 +31,7 @@ object ComponentResourceOptions {
     protect: js.UndefOr[Boolean] = js.undefined,
     provider: ProviderResource = null,
     providers: (Record[String, ProviderResource]) | js.Array[ProviderResource] = null,
+    transformations: js.Array[ResourceTransformation] = null,
     version: String = null
   ): ComponentResourceOptions = {
     val __obj = js.Dynamic.literal()
@@ -43,6 +44,7 @@ object ComponentResourceOptions {
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
     if (provider != null) __obj.updateDynamic("provider")(provider)
     if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[ComponentResourceOptions]
   }

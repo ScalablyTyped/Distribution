@@ -37,6 +37,7 @@ object window extends js.Object {
   def createTerminal(name: String, shellPath: String): Terminal = js.native
   def createTerminal(name: String, shellPath: String, shellArgs: String): Terminal = js.native
   def createTerminal(name: String, shellPath: String, shellArgs: js.Array[String]): Terminal = js.native
+  def createTerminal(options: ExtensionTerminalOptions): Terminal = js.native
   def createTerminal(options: TerminalOptions): Terminal = js.native
   def createTextEditorDecorationType(options: DecorationRenderOptions): TextEditorDecorationType = js.native
   def createTreeView[T](viewId: String, options: TreeViewOptions[T]): TreeView[T] = js.native

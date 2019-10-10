@@ -4,130 +4,181 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** 
+  * The Size object is used to describe the size or dimensions of
+  * something, through its {@link #width} and {@link #height} properties.
+  */
 @JSGlobal("paper.Size")
 @js.native
-class Size protected () extends Base {
-  /**
-    * Creates a Size object using the numbers in the given array as dimensions.
-    * @param array - an array of numbers
+class Size protected () extends js.Object {
+  /** 
+    * Creates a Size object using the numbers in the given array as
+    * dimensions.
     */
-  def this(array: js.Array[Double]) = this()
-  /**
+  def this(array: js.Array[_]) = this()
+  /** 
     * Creates a Size object using the properties in the given object.
-    * @param object - the object literal containing properies (width:10, height:10 etc)
     */
-  def this(`object`: js.Any) = this()
-  /**
-    * Creates a Size object using the point.x and point.y values of the given Point object.
-    * @param point - the point from which to create a size
+  def this(`object`: js.Object) = this()
+  /** 
+    * Creates a Size object using the {@link Point#x} and {@link Point#y}
+    * values of the given Point object.
     */
   def this(point: Point) = this()
-  /**
+  /** 
     * Creates a Size object using the coordinates of the given Size object.
-    * @param size - the size to duplicate from
     */
   def this(size: Size) = this()
-  /**
+  /** 
     * Creates a Size object with the given width and height values.
+    * 
     * @param width - the width
     * @param height - the height
     */
   def this(width: Double, height: Double) = this()
-  /**
+  /** 
     * The height of the size
     */
-  var height: Double = js.native
-  /**
+  var height: Double | Null = js.native
+  /** 
     * The width of the size
     */
-  var width: Double = js.native
-  /**
-    * Returns a new size with the absolute values of the specified width and height values. The object itself is not modified!
+  var width: Double | Null = js.native
+  /** 
+    * Returns a new size with the absolute values of the specified
+    * {@link #width} and {@link #height} values. The object itself is not
+    * modified!
     */
   def abs(): Size = js.native
-  def add(size: js.Array[Double]): Size = js.native
-  def add(size: Double): Size = js.native
-  /*
-    * Returns a new size
-    * @param size - The size you want to add with
+  /** 
+    * Returns the addition of the supplied value to the width and height of the
+    * size as a new size. The object itself is not modified!
+    * 
+    * @param number - the number to add
+    * 
+    * @return the addition of the size and the value as a new size
+    */
+  def add(number: Double): Size = js.native
+  /** 
+    * Returns the addition of the width and height of the supplied size to the
+    * size as a new size. The object itself is not modified!
+    * 
+    * @param size - the size to add
+    * 
+    * @return the addition of the two sizes as a new size
     */
   def add(size: Size): Size = js.native
-  /**
-    * Returns a new size with the nearest greater non-fractional values to the specified width and height values. The object itself is not modified!
+  /** 
+    * Returns a new size with the nearest greater non-fractional values to the
+    * specified {@link #width} and {@link #height} values. The object itself is
+    * not modified!
     */
   def ceil(): Size = js.native
-  def divide(size: js.Array[Double]): Size = js.native
-  def divide(size: Double): Size = js.native
-  /*
-    * Returns the new divided size
-    * @param size - The size you want to divide with
+  /** 
+    * Returns the division of the supplied value by the width and height of the
+    * size as a new size. The object itself is not modified!
+    * 
+    * @param number - the number to divide by
+    * 
+    * @return the division of the size and the value as a new size
+    */
+  def divide(number: Double): Size = js.native
+  /** 
+    * Returns the division of the width and height of the supplied size by the
+    * size as a new size. The object itself is not modified!
+    * 
+    * @param size - the size to divide by
+    * 
+    * @return the division of the two sizes as a new size
     */
   def divide(size: Size): Size = js.native
-  /**
-    * Checks whether the width and height of the size are equal to those of the supplied size.
+  /** 
+    * Checks whether the width and height of the size are equal to those of the
+    * supplied size.
+    * 
+    * @param size - the size to compare to
     */
   def equals(size: Size): Boolean = js.native
-  /**
-    * Returns a new size with the nearest smaller non-fractional values to the specified width and height values. The object itself is not modified!
+  /** 
+    * Returns a new size with the nearest smaller non-fractional values to the
+    * specified {@link #width} and {@link #height} values. The object itself is
+    * not modified!
     */
   def floor(): Size = js.native
-  /**
+  /** 
     * Checks if the width or the height of the size are NaN.
+    * 
+    * @return true if the width or height of the size are NaN
     */
   def isNaN(): Boolean = js.native
-  /**
+  /** 
     * Checks if this size has both the width and height set to 0.
+    * 
+    * @return true if both width and height are 0
     */
   def isZero(): Boolean = js.native
-  def modulo(size: js.Array[Double]): Size = js.native
-  def modulo(size: Double): Size = js.native
-  /**
-    * Returns the new modulo size
-    * @param size - The size you want to modulo with
+  /** 
+    * The modulo operator returns the integer remainders of dividing the size
+    * by the supplied size as a new size.
+    * 
+    * @return the integer remainders of dividing the sizes by each
+    * other as a new size
     */
   def modulo(size: Size): Size = js.native
-  def multiply(size: js.Array[Double]): Size = js.native
-  def multiply(size: Double): Size = js.native
-  /*
-    * Returns the new multiplied size
-    * @param size - The size you want to multiply with
+  /** 
+    * The modulo operator returns the integer remainders of dividing the size
+    * by the supplied value as a new size.
+    * 
+    * @return the integer remainders of dividing the size by the value
+    * as a new size
+    */
+  def modulo(value: Double): Size = js.native
+  /** 
+    * Returns the multiplication of the supplied value with the width and
+    * height of the size as a new size. The object itself is not modified!
+    * 
+    * @param number - the number to multiply by
+    * 
+    * @return the multiplication of the size and the value as a new size
+    */
+  def multiply(number: Double): Size = js.native
+  /** 
+    * Returns the multiplication of the width and height of the supplied size
+    * with the size as a new size. The object itself is not modified!
+    * 
+    * @param size - the size to multiply by
+    * 
+    * @return the multiplication of the two sizes as a new size
     */
   def multiply(size: Size): Size = js.native
-  /**
-    * Returns a new size with rounded width and height values. The object itself is not modified!
+  /** 
+    * Returns a new size with rounded {@link #width} and {@link #height}
+    * values. The object itself is not modified!
     */
   def round(): Size = js.native
-  /**
-    * Sets the size using the numbers in the given array as dimensions.
-    * @param array - an array of numbers
+  /** 
+    * Sets the size to the passed values. Note that any sequence of parameters
+    * that is supported by the various {@link Size} constructors also work
+    * for calls of `set()`.
     */
-  def set(array: js.Array[Double]): Size = js.native
-  /**
-    * Sets the size using the properties in the given object.
-    * @param object - the object literal containing properies (width:10, height:10 etc)
+  def set(values: js.Any*): Size = js.native
+  /** 
+    * Returns the subtraction of the supplied value from the width and height
+    * of the size as a new size. The object itself is not modified!
+    * The object itself is not modified!
+    * 
+    * @param number - the number to subtract
+    * 
+    * @return the subtraction of the size and the value as a new size
     */
-  def set(`object`: js.Any): Size = js.native
-  /**
-    * Sets the size using the point.x and point.y values of the given Point object.
-    * @param point - the point from which to create a size
-    */
-  def set(point: Point): Size = js.native
-  /**
-    * Sets the size using the coordinates of the given Size object.
-    * @param size - the size to duplicate from
-    */
-  def set(size: Size): Size = js.native
-  /**
-    * Sets the size with the given width and height values.
-    * @param width - the width
-    * @param height - the height
-    */
-  def set(width: Double, height: Double): Size = js.native
-  def subtract(size: js.Array[Double]): Size = js.native
-  def subtract(size: Double): Size = js.native
-  /*
-    * Returns a new size
-    * @param size - The size you want to subtract with
+  def subtract(number: Double): Size = js.native
+  /** 
+    * Returns the subtraction of the width and height of the supplied size from
+    * the size as a new size. The object itself is not modified!
+    * 
+    * @param size - the size to subtract
+    * 
+    * @return the subtraction of the two sizes as a new size
     */
   def subtract(size: Size): Size = js.native
 }
@@ -136,20 +187,25 @@ class Size protected () extends Base {
 @JSGlobal("paper.Size")
 @js.native
 object Size extends js.Object {
-  /**
-    * Returns a new size object with the largest width and height of the supplied sizes.
-    * @param size1 - the first size
-    * @param size2 - the second size
+  /** 
+    * Returns a new size object with the largest {@link #width} and
+    * {@link #height} of the supplied sizes.
+    * 
+    * @return the newly created size object
     */
   def max(size1: Size, size2: Size): Size = js.native
-  /**
-    * Returns a new size object with the smallest width and height of the supplied sizes.
-    * @param size1 - the first size
-    * @param size2 - the second size
+  /** 
+    * Returns a new size object with the smallest {@link #width} and
+    * {@link #height} of the supplied sizes.
+    * 
+    * @return the newly created size object
     */
   def min(size1: Size, size2: Size): Size = js.native
-  /**
-    * Returns a size object with random width and height values between 0 and 1.
+  /** 
+    * Returns a size object with random {@link #width} and {@link #height}
+    * values between `0` and `1`.
+    * 
+    * @return the newly created size object
     */
   def random(): Size = js.native
 }

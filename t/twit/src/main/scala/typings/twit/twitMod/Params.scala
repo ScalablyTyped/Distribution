@@ -37,8 +37,12 @@ trait Params extends js.Object {
   var since_id: js.UndefOr[String] = js.undefined
   var skip_status: js.UndefOr[Boolean] = js.undefined
   var slug: js.UndefOr[String] = js.undefined
+  var source_id: js.UndefOr[Double] = js.undefined
+  var source_screen_name: js.UndefOr[String] = js.undefined
   var status: js.UndefOr[String] = js.undefined
   var stringify_ids: js.UndefOr[Boolean] = js.undefined
+  var target_id: js.UndefOr[Double] = js.undefined
+  var target_screen_name: js.UndefOr[String] = js.undefined
   // Other params from various endpoints
   var track: js.UndefOr[String | js.Array[String]] = js.undefined
   var trim_user: js.UndefOr[Boolean] = js.undefined
@@ -79,8 +83,12 @@ object Params {
     since_id: String = null,
     skip_status: js.UndefOr[Boolean] = js.undefined,
     slug: String = null,
+    source_id: Int | Double = null,
+    source_screen_name: String = null,
     status: String = null,
     stringify_ids: js.UndefOr[Boolean] = js.undefined,
+    target_id: Int | Double = null,
+    target_screen_name: String = null,
     track: String | js.Array[String] = null,
     trim_user: js.UndefOr[Boolean] = js.undefined,
     tweet_mode: String = null,
@@ -117,8 +125,12 @@ object Params {
     if (since_id != null) __obj.updateDynamic("since_id")(since_id)
     if (!js.isUndefined(skip_status)) __obj.updateDynamic("skip_status")(skip_status)
     if (slug != null) __obj.updateDynamic("slug")(slug)
+    if (source_id != null) __obj.updateDynamic("source_id")(source_id.asInstanceOf[js.Any])
+    if (source_screen_name != null) __obj.updateDynamic("source_screen_name")(source_screen_name)
     if (status != null) __obj.updateDynamic("status")(status)
     if (!js.isUndefined(stringify_ids)) __obj.updateDynamic("stringify_ids")(stringify_ids)
+    if (target_id != null) __obj.updateDynamic("target_id")(target_id.asInstanceOf[js.Any])
+    if (target_screen_name != null) __obj.updateDynamic("target_screen_name")(target_screen_name)
     if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     if (!js.isUndefined(trim_user)) __obj.updateDynamic("trim_user")(trim_user)
     if (tweet_mode != null) __obj.updateDynamic("tweet_mode")(tweet_mode)

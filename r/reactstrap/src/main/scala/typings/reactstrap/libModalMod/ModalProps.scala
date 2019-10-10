@@ -1,7 +1,12 @@
 package typings.reactstrap.libModalMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod.KeyboardEvent
+import typings.react.reactMod.KeyboardEventHandler
+import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.reactstrap.libFadeMod.FadeProps
 import typings.reactstrap.reactstrapMod.CSSModule
@@ -35,7 +40,7 @@ trait ModalProps
   var returnFocusAfterClose: js.UndefOr[Boolean] = js.undefined
   var scrollable: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[String] = js.undefined
-  var toggle: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var toggle: js.UndefOr[KeyboardEventHandler[_] | MouseEventHandler[_]] = js.undefined
   var unmountOnClose: js.UndefOr[Boolean] = js.undefined
   var wrapClassName: js.UndefOr[String] = js.undefined
   var zIndex: js.UndefOr[Double | String] = js.undefined
@@ -69,7 +74,7 @@ object ModalProps {
     role: String = null,
     scrollable: js.UndefOr[Boolean] = js.undefined,
     size: String = null,
-    toggle: () => Unit = null,
+    toggle: KeyboardEvent[_] | (MouseEvent[_, NativeMouseEvent]) => Unit = null,
     unmountOnClose: js.UndefOr[Boolean] = js.undefined,
     wrapClassName: String = null,
     zIndex: Double | String = null
@@ -100,7 +105,7 @@ object ModalProps {
     if (role != null) __obj.updateDynamic("role")(role)
     if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
     if (size != null) __obj.updateDynamic("size")(size)
-    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
+    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction1(toggle))
     if (!js.isUndefined(unmountOnClose)) __obj.updateDynamic("unmountOnClose")(unmountOnClose)
     if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

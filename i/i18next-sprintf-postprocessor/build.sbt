@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "i18next-sprintf-postprocessor"
-version := "0.2-dt-20190819Z-3d0ee8"
+version := "0.2-dt-20190819Z-e629de"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "i18next" % "17.0.18-150946",
+  "org.scalablytyped" %%% "i18next" % "17.1.0-4b653c",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

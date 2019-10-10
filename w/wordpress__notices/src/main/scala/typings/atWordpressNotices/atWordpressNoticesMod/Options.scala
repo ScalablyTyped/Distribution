@@ -1,5 +1,7 @@
 package typings.atWordpressNotices.atWordpressNoticesMod
 
+import typings.atWordpressNotices.atWordpressNoticesStrings.default
+import typings.atWordpressNotices.atWordpressNoticesStrings.snackbar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +30,25 @@ trait Options extends js.Object {
     * @defaultValue `true`
     */
   var speak: Boolean
+  /**
+    * The type of notice.
+    * @defaultValue `'default'`
+    */
+  var `type`: default | snackbar
 }
 
 object Options {
   @scala.inline
-  def apply(actions: js.Array[Action], context: String, id: String, isDismissible: Boolean, speak: Boolean): Options = {
+  def apply(
+    actions: js.Array[Action],
+    context: String,
+    id: String,
+    isDismissible: Boolean,
+    speak: Boolean,
+    `type`: default | snackbar
+  ): Options = {
     val __obj = js.Dynamic.literal(actions = actions, context = context, id = id, isDismissible = isDismissible, speak = speak)
-  
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

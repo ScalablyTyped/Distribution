@@ -15,7 +15,6 @@ trait Model extends js.Object {
     */
   var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
   /** Shows or hides the items of configuration pane in ReportDesigner control.
-    * @Default {ej.ReportDesigner.ConfigureItems.All}
     */
   var configurePaneSettings: js.UndefOr[ConfigurePaneSettings] = js.undefined
   /** This event will be triggered when the Report Designer widget is created.
@@ -24,13 +23,13 @@ trait Model extends js.Object {
   /** This event will be triggered when the Report Designer widget is destroyed.
     */
   var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
-  /** This event will be triggered on locale change action in report designer.
-    */
-  var extensionLocaleChanged: js.UndefOr[js.Function1[/* e */ ExtensionLocaleChangedEventArgs, Unit]] = js.undefined
   /** Specifies the locale for report designer.
     * @Default {en-US}
     */
   var locale: js.UndefOr[String] = js.undefined
+  /** This event will be triggered while initiating new data click action. You can suppress the new data creation panel and perform custom actions.
+    */
+  var newDataClick: js.UndefOr[js.Function1[/* e */ NewDataClickEventArgs, Unit]] = js.undefined
   /** This event will be triggered while clicking open menu items.
     */
   var openReportClick: js.UndefOr[js.Function1[/* e */ OpenReportClickEventArgs, Unit]] = js.undefined
@@ -38,6 +37,9 @@ trait Model extends js.Object {
     * @Default {ej.ReportDesigner.Permission.All}
     */
   var permissionSettings: js.UndefOr[PermissionSettings] = js.undefined
+  /** This event will be triggered while previewing the report in RDLC mode. It can be used to suppress the preview data dialog in RDLC mode.
+    */
+  var previewReport: js.UndefOr[js.Function1[/* e */ PreviewReportEventArgs, Unit]] = js.undefined
   /** Gets or sets the list of custom data extension items.
     * @Default {[]}
     */
@@ -102,10 +104,11 @@ object Model {
     configurePaneSettings: ConfigurePaneSettings = null,
     create: /* e */ CreateEventArgs => Unit = null,
     destroy: /* e */ DestroyEventArgs => Unit = null,
-    extensionLocaleChanged: /* e */ ExtensionLocaleChangedEventArgs => Unit = null,
     locale: String = null,
+    newDataClick: /* e */ NewDataClickEventArgs => Unit = null,
     openReportClick: /* e */ OpenReportClickEventArgs => Unit = null,
     permissionSettings: PermissionSettings = null,
+    previewReport: /* e */ PreviewReportEventArgs => Unit = null,
     reportDataExtensions: js.Array[ReportDataExtension] = null,
     reportItemExtensions: js.Array[ReportItemExtension] = null,
     reportModified: /* e */ ReportModifiedEventArgs => Unit = null,
@@ -129,10 +132,11 @@ object Model {
     if (configurePaneSettings != null) __obj.updateDynamic("configurePaneSettings")(configurePaneSettings)
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (extensionLocaleChanged != null) __obj.updateDynamic("extensionLocaleChanged")(js.Any.fromFunction1(extensionLocaleChanged))
     if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (newDataClick != null) __obj.updateDynamic("newDataClick")(js.Any.fromFunction1(newDataClick))
     if (openReportClick != null) __obj.updateDynamic("openReportClick")(js.Any.fromFunction1(openReportClick))
     if (permissionSettings != null) __obj.updateDynamic("permissionSettings")(permissionSettings)
+    if (previewReport != null) __obj.updateDynamic("previewReport")(js.Any.fromFunction1(previewReport))
     if (reportDataExtensions != null) __obj.updateDynamic("reportDataExtensions")(reportDataExtensions)
     if (reportItemExtensions != null) __obj.updateDynamic("reportItemExtensions")(reportItemExtensions)
     if (reportModified != null) __obj.updateDynamic("reportModified")(js.Any.fromFunction1(reportModified))

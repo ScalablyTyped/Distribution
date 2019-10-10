@@ -5,7 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StringRegexOptions extends js.Object {
+  /**
+    * when true, the provided pattern will be disallowed instead of required.
+    *
+    * @default false
+    */
   var invert: js.UndefOr[Boolean] = js.undefined
+  /**
+    * optional pattern name.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
 

@@ -4,28 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** 
+  * The Gradient object.
+  */
 @JSGlobal("paper.Gradient")
 @js.native
-/**
-  * Creates a Gradient object.
-  * @param stops [optional] - Array of GradientStops
-  * @param radial [optional] - Whether the gradient is radial or linear
-  */
-class Gradient () extends Base {
-  def this(`object`: js.Any) = this()
-  def this(stops: js.Array[(js.Array[String | Double]) | GradientStop | String]) = this()
-  def this(stops: js.Array[(js.Array[String | Double]) | GradientStop | String], radial: Boolean) = this()
-  /**
+class Gradient () extends js.Object {
+  /** 
     * Specifies whether the gradient is radial or linear.
     */
-  var radial: Boolean = js.native
-  /**
+  var radial: Boolean | Null = js.native
+  /** 
     * The gradient stops on the gradient ramp.
     */
-  var stops: js.Array[GradientStop] = js.native
-  /**
+  var stops: js.Array[GradientStop] | Null = js.native
+  /** 
     * Checks whether the gradient is equal to the supplied gradient.
-    * @param gradient - the gradient to check against
+    * 
+    * @return true if they are equal
     */
   def equals(gradient: Gradient): Boolean = js.native
 }

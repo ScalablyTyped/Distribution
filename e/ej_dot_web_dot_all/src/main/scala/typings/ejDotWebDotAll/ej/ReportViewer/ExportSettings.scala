@@ -17,6 +17,10 @@ trait ExportSettings extends js.Object {
     * @Default {ej.ReportViewer.ExportOptions.All}
     */
   var exportOptions: js.UndefOr[ExportOptions | String] = js.undefined
+  /** Specifies the ppt export format.
+    * @Default {ej.ReportViewer.PPTFormats.PowerPoint97to2003}
+    */
+  var pptFormat: js.UndefOr[PPTFormats | String] = js.undefined
   /** Specifies the word export format.
     * @Default {ej.ReportViewer.WordFormats.Doc}
     */
@@ -29,12 +33,14 @@ object ExportSettings {
     customItems: js.Array[_] = null,
     excelFormat: ExcelFormats | String = null,
     exportOptions: ExportOptions | String = null,
+    pptFormat: PPTFormats | String = null,
     wordFormat: WordFormats | String = null
   ): ExportSettings = {
     val __obj = js.Dynamic.literal()
     if (customItems != null) __obj.updateDynamic("customItems")(customItems)
     if (excelFormat != null) __obj.updateDynamic("excelFormat")(excelFormat.asInstanceOf[js.Any])
     if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions.asInstanceOf[js.Any])
+    if (pptFormat != null) __obj.updateDynamic("pptFormat")(pptFormat.asInstanceOf[js.Any])
     if (wordFormat != null) __obj.updateDynamic("wordFormat")(wordFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettings]
   }

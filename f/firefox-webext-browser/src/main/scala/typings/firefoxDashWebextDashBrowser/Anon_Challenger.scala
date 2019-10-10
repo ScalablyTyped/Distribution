@@ -2,6 +2,7 @@ package typings.firefoxDashWebextDashBrowser
 
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.HttpHeaders
 import typings.firefoxDashWebextDashBrowser.browser.webRequest.ResourceType
+import typings.firefoxDashWebextDashBrowser.browser.webRequest.UrlClassification
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,8 @@ import scala.scalajs.js.annotation._
 trait Anon_Challenger extends js.Object {
   /** The server requesting authentication. */
   var challenger: Anon_Host
+  /** The cookie store ID of the contextual identity. */
+  var cookieStoreId: js.UndefOr[String] = js.undefined
   /** URL of the page into which the requested resource will be loaded. */
   var documentUrl: js.UndefOr[String] = js.undefined
   /**
@@ -18,6 +21,8 @@ trait Anon_Challenger extends js.Object {
     * within a tab.
     */
   var frameId: Double
+  /** True for private browsing requests. */
+  var incognito: js.UndefOr[Boolean] = js.undefined
   /** True for Proxy-Authenticate, false for WWW-Authenticate. */
   var isProxy: Boolean
   /** Standard HTTP method. */
@@ -51,6 +56,8 @@ trait Anon_Challenger extends js.Object {
   /** How the requested resource will be used. */
   var `type`: ResourceType
   var url: String
+  /** Tracking classification if the request has been classified. */
+  var urlClassification: js.UndefOr[UrlClassification] = js.undefined
 }
 
 object Anon_Challenger {
@@ -69,17 +76,23 @@ object Anon_Challenger {
     timeStamp: Double,
     `type`: ResourceType,
     url: String,
+    cookieStoreId: String = null,
     documentUrl: String = null,
+    incognito: js.UndefOr[Boolean] = js.undefined,
     originUrl: String = null,
     realm: String = null,
-    responseHeaders: HttpHeaders = null
+    responseHeaders: HttpHeaders = null,
+    urlClassification: UrlClassification = null
   ): Anon_Challenger = {
     val __obj = js.Dynamic.literal(challenger = challenger, frameId = frameId, isProxy = isProxy, method = method, parentFrameId = parentFrameId, requestId = requestId, scheme = scheme, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, url = url)
     __obj.updateDynamic("type")(`type`)
+    if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId)
     if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
     if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
     if (realm != null) __obj.updateDynamic("realm")(realm)
     if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    if (urlClassification != null) __obj.updateDynamic("urlClassification")(urlClassification)
     __obj.asInstanceOf[Anon_Challenger]
   }
 }

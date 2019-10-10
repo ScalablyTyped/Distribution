@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "log4js" : "5.2.0"
+      "log4js" : "5.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "log4js" : "5.2.0"
+      "log4js" : "5.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -286,5 +286,11 @@ package object atBabelTypesMod {
   type RestProperty = RestElement
   type SpreadProperty = SpreadElement
   type TraversalAncestors = js.Array[Anon_Index]
-  type TraversalHandler[T] = js.Function3[/* node */ Node, /* parent */ TraversalAncestors, /* type */ T, Unit]
+  type TraversalHandler[T] = js.ThisFunction3[
+    /* this */ js.UndefOr[scala.Nothing], 
+    /* node */ Node, 
+    /* parent */ TraversalAncestors, 
+    /* type */ T, 
+    Unit
+  ]
 }

@@ -23,7 +23,7 @@ trait IBreadcrumbItem extends js.Object {
     */
   var href: js.UndefOr[String] = js.undefined
   /**
-    * If this breadcrumb item is the item the user is currently on, if set to true, aria-current="page" will be applied to this
+    * If this breadcrumb item is the item the user is currently on, if set to true, aria-current='page' will be applied to this
     * breadcrumb link
     */
   var isCurrentItem: js.UndefOr[Boolean] = js.undefined

@@ -5,28 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ValidationError
   extends Error
      with JoiObject {
-  var _object: js.Any
-  var details: js.Array[ValidationErrorItem]
-  def annotate(): String
-}
-
-object ValidationError {
-  @scala.inline
-  def apply(
-    _object: js.Any,
-    annotate: () => String,
-    details: js.Array[ValidationErrorItem],
-    isJoi: Boolean,
-    message: String,
-    name: String,
-    stack: String = null
-  ): ValidationError = {
-    val __obj = js.Dynamic.literal(_object = _object, annotate = js.Any.fromFunction0(annotate), details = details, isJoi = isJoi, message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    __obj.asInstanceOf[ValidationError]
-  }
+  var _object: js.Any = js.native
+  /**
+    * array of errors.
+    */
+  var details: js.Array[ValidationErrorItem] = js.native
+  @JSName("name")
+  var name_ValidationError: typings.atHapiJoi.atHapiJoiStrings.ValidationError = js.native
+  /**
+    * function that returns a string with an annotated version of the object pointing at the places where errors occurred.
+    * @param stripColors - if truthy, will strip the colors out of the output.
+    */
+  def annotate(): String = js.native
+  def annotate(stripColors: Boolean): String = js.native
 }
 

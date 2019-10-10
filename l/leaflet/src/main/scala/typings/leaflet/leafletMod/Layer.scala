@@ -13,7 +13,7 @@ class Layer () extends Evented {
   var _map: Map = js.native
   var beforeAdd: js.UndefOr[js.Function1[/* map */ Map, this.type]] = js.native
   var getAttribution: js.UndefOr[js.Function0[String | Null]] = js.native
-  var getEvents: js.UndefOr[js.Function0[StringDictionary[js.Function1[/* event */ LeafletEvent, Unit]]]] = js.native
+  var getEvents: js.UndefOr[js.Function0[StringDictionary[LeafletEventHandlerFn]]] = js.native
   def addTo(map: LayerGroup[_]): this.type = js.native
   def addTo(map: Map): this.type = js.native
   // Popup methods

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "leadfoot"
-version := "0.0-unknown-dt-20190322Z-efe4ce"
+version := "0.0-unknown-dt-20190322Z-445219"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "dojo" % "v1.9-dt-20190322Z-da65fd",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191003Z-a35ed6",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
   "org.scalablytyped" %%% "std" % "3.6-abb6d3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

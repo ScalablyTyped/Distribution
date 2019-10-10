@@ -43,6 +43,12 @@ trait ResourceOptions extends js.Object {
     */
   var provider: js.UndefOr[ProviderResource] = js.undefined
   /**
+    * Optional list of transformations to apply to this resource during construction. The
+    * transformations are applied in order, and are applied prior to transformation applied to
+    * parents walking from the resource up to the stack.
+    */
+  var transformations: js.UndefOr[js.Array[ResourceTransformation]] = js.undefined
+  /**
     * An optional version, corresponding to the version of the provider plugin that should be used when operating on
     * this resource. This version overrides the version information inferred from the current package and should
     * rarely be used.
@@ -61,6 +67,7 @@ object ResourceOptions {
     parent: Resource = null,
     protect: js.UndefOr[Boolean] = js.undefined,
     provider: ProviderResource = null,
+    transformations: js.Array[ResourceTransformation] = null,
     version: String = null
   ): ResourceOptions = {
     val __obj = js.Dynamic.literal()
@@ -72,6 +79,7 @@ object ResourceOptions {
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
     if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[ResourceOptions]
   }

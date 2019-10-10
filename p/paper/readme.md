@@ -1,7 +1,7 @@
 
 # Scala.js typings for paper
 
-Typings are for version v0.11.8
+Typings are for version 0.12.3
 
 ## Library description:
 The Swiss Army Knife of Vector Graphics Scripting
@@ -24,7 +24,7 @@ The Swiss Army Knife of Vector Graphics Scripting
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

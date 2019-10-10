@@ -1,6 +1,8 @@
 package typings.atBlueprintjsTable.libEsmTableMod
 
 import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractComponent2
+import typings.atBlueprintjsTable.Anon_ChildrenArray
+import typings.atBlueprintjsTable.Anon_NextScrollLeft
 import typings.atBlueprintjsTable.libEsmCommonContextMod.IColumnInteractionBarContextTypes
 import typings.atBlueprintjsTable.libEsmCommonGridMod.Grid
 import typings.atBlueprintjsTable.libEsmCommonGridMod.ICellMapper
@@ -14,19 +16,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/table/lib/esm/table", "Table")
 @js.native
-class Table protected ()
-  extends AbstractComponent2[ITableProps, ITableState, js.Object] {
+class Table protected () extends AbstractComponent2[ITableProps, ITableState, ITableSnapshot] {
   def this(props: ITableProps) = this()
   def this(props: ITableProps, context: js.Any) = this()
   var bodyCellRenderer: js.Any = js.native
   var cellContainerElement: js.Any = js.native
-  var childrenArray: js.Any = js.native
   var clearSelection: js.Any = js.native
   var columnHeaderCellRenderer: js.Any = js.native
   var columnHeaderElement: js.Any = js.native
-  var columnIdToIndex: js.Any = js.native
   var didCompletelyMount: js.Any = js.native
-  var didUpdateColumnOrRowSizes: js.Any = js.native
   var getColumnProps: js.Any = js.native
   var getEnabledSelectionHandler: js.Any = js.native
   var getMaxFrozenColumnIndex: js.Any = js.native
@@ -75,7 +73,6 @@ class Table protected ()
   var invalidateGrid: js.Any = js.native
   var invokeOnVisibleCellsChangeCallback: js.Any = js.native
   var isGuidesShowing: js.Any = js.native
-  var isSelectionModeEnabled: js.Any = js.native
   var locator: Locator = js.native
   var maybeRenderCopyHotkey: js.Any = js.native
   var maybeRenderFocusHotkeys: js.Any = js.native
@@ -88,7 +85,6 @@ class Table protected ()
   var maybeRenderRegions: js.Any = js.native
   var maybeRenderSelectAllHotkey: js.Any = js.native
   var maybeRenderSelectionResizeHotkeys: js.Any = js.native
-  var maybeScrollTableIntoView: js.Any = js.native
   var moveFocusCell: js.Any = js.native
   var quadrantStackInstance: js.Any = js.native
   var refHandlers: js.Any = js.native
@@ -130,12 +126,12 @@ class Table protected ()
   @JSName("componentDidMount")
   def componentDidMount_MTable(): Unit = js.native
   @JSName("componentDidUpdate")
-  def componentDidUpdate_MTable(prevProps: ITableProps, prevState: ITableState): Unit = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MTable(prevProps: ITableProps, prevState: ITableState, snapshot: js.Object): Unit = js.native
+  def componentDidUpdate_MTable(prevProps: ITableProps, prevState: ITableState, snapshot: ITableSnapshot): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTable(): Unit = js.native
   def getChildContext(): IColumnInteractionBarContextTypes = js.native
+  @JSName("getSnapshotBeforeUpdate")
+  def getSnapshotBeforeUpdate_MTable(): Anon_NextScrollLeft = js.native
   def renderHotkeys(): Element = js.native
   /**
     * __Experimental!__ Resizes all rows in the table to the approximate
@@ -189,6 +185,8 @@ object Table extends js.Object {
   var createColumnIdIndex: js.Any = js.native
   var defaultProps: ITableProps = js.native
   var displayName: String = js.native
+  var isSelectionModeEnabled: js.Any = js.native
   var resizeRowsByApproximateHeightDefaults: js.Any = js.native
+  def getDerivedStateFromProps(props: ITableProps, state: ITableState): Anon_ChildrenArray = js.native
 }
 

@@ -10,11 +10,11 @@ trait ServiceUpdate extends js.Object {
     */
   var AutoUpdateAfterRecommendedApplyByDate: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The Redis engine to which the service update applies
+    * The Elasticache engine to which the update applies. Either Redis or Memcached
     */
   var Engine: js.UndefOr[String] = js.undefined
   /**
-    * The Redis engine version to which the service update applies
+    * The Elasticache engine version to which the update applies. Either Redis or Memcached engine version
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**

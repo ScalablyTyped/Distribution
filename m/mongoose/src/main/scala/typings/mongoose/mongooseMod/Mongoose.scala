@@ -23,7 +23,6 @@ trait Mongoose extends js.Object {
   ] = js.native
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
-  var STATES: ConnectionStates = js.native
   val Schema: TypeofSchema = js.native
   // Interfaces specific to schema type options should be scoped in this namespace
   val SchemaTypeOpts: js.Any = js.native

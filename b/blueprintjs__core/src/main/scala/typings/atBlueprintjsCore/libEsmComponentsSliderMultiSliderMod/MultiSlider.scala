@@ -22,7 +22,6 @@ class MultiSlider ()
   var getTrackIntent: js.Any = js.native
   var handleChange: js.Any = js.native
   var handleElements: js.Any = js.native
-  var handleProps: js.Any = js.native
   var handleRelease: js.Any = js.native
   var maybeHandleTrackClick: js.Any = js.native
   var maybeHandleTrackTouch: js.Any = js.native
@@ -38,7 +37,7 @@ class MultiSlider ()
   @JSName("componentDidUpdate")
   def componentDidUpdate_MMultiSlider(prevProps: IMultiSliderProps, prevState: ISliderState, ss: js.Object): Unit = js.native
   @JSName("getSnapshotBeforeUpdate")
-  def getSnapshotBeforeUpdate_MMultiSlider(): js.Object | Null = js.native
+  def getSnapshotBeforeUpdate_MMultiSlider(prevProps: IMultiSliderProps): Null = js.native
 }
 
 /* static members */
@@ -50,6 +49,6 @@ object MultiSlider extends js.Object {
   var defaultSliderProps: ISliderBaseProps = js.native
   var displayName: String = js.native
   var getLabelPrecision: js.Any = js.native
-  def getDerivedStateFromProps(props: IMultiSliderProps with IChildrenProps): Anon_LabelPrecision = js.native
+  def getDerivedStateFromProps(props: IMultiSliderProps): Anon_LabelPrecision = js.native
 }
 
