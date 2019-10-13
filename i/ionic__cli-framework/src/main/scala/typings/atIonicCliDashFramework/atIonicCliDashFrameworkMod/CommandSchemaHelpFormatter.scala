@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework", "CommandSchemaHelpFormatter")
 @js.native
 class CommandSchemaHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] ()
-  extends typings.atIonicCliDashFramework.libMod.CommandSchemaHelpFormatter[C, N, M, I, O]
+  extends typings.atIonicCliDashFramework.libHelpMod.CommandSchemaHelpFormatter[C, N, M, I, O]
 

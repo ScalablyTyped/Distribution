@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon-framework", "protocol.DedicatedWorkerServer")
 @js.native
 abstract class DedicatedWorkerServer ()
-  extends typings.samchon.samchonMod.protocol.DedicatedWorkerServer
+  extends typings.samchon.protocolServerDedicatedWorkerServerMod.DedicatedWorkerServer
 

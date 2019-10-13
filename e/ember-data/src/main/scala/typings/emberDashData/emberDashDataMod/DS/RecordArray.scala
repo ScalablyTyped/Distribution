@@ -1,7 +1,7 @@
 package typings.emberDashData.emberDashDataMod.DS
 
+import typings.atEmberArray.proxyMod.ArrayProxy
 import typings.atEmberObject.eventedMod.Evented
-import typings.ember.emberMod.default.ArrayProxy
 import typings.ember.emberMod.default.ComputedProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`

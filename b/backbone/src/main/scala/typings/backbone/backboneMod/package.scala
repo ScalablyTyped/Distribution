@@ -14,6 +14,7 @@ package object backboneMod {
     */
   type EventHandler = js.Function1[/* repeated */ js.Any, Unit]
   type EventMap = StringDictionary[EventHandler]
+  type Events = EventsMixin
   /**
     * DOM events (used in the events property of a View)
     */

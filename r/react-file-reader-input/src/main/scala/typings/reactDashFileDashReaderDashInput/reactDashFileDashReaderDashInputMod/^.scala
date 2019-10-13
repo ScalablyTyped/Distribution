@@ -1,10 +1,12 @@
 package typings.reactDashFileDashReaderDashInput.reactDashFileDashReaderDashInputMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-file-reader-input", JSImport.Namespace)
 @js.native
-class ^ () extends FileInput
+class ^ ()
+  extends Component[Props, js.Object, js.Any]
 

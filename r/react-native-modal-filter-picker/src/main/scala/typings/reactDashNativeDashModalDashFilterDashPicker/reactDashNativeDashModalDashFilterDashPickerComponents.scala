@@ -2,14 +2,12 @@ package typings.reactDashNativeDashModalDashFilterDashPicker
 
 import typings.react.reactMod.ComponentType
 import typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerOption
-import typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNativeDashModalDashFilterDashPickerComponents extends reactDashNativeDashModalDashFilterDashPickerProps {
   @scala.inline
-  def ReactDashNativeDashModalDashFilterDashPicker[T /* <: ModalFilterPickerOption */]: ComponentType[ModalFilterPickerProps[T]] = js.constructorOf[typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod.ModalFilterPickerProps[T]]]
+  def ReactDashNativeDashModalDashFilterDashPicker[T /* <: ModalFilterPickerOption */]: ComponentType[ReactDashNativeDashModalDashFilterDashPickerProps[T]] = js.constructorOf[typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashNativeDashModalDashFilterDashPickerProps[T]]]
 }
 

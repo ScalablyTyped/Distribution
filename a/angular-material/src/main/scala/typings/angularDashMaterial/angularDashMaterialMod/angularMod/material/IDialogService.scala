@@ -1,8 +1,8 @@
 package typings.angularDashMaterial.angularDashMaterialMod.angularMod.material
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.angularMod.Global.Function
 import typings.angular.angularMod.IPromise
+import typings.angular.angularMod._Global_.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

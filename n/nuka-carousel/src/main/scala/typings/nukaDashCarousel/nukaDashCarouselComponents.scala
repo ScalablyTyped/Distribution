@@ -1,6 +1,5 @@
 package typings.nukaDashCarousel
 
-import typings.nukaDashCarousel.nukaDashCarouselMod.CarouselProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 object nukaDashCarouselComponents extends nukaDashCarouselProps {
   @scala.inline
-  def NextButton: ComponentType[typings.nukaDashCarousel.nukaDashCarouselMod.NextButtonProps] = js.constructorOf[typings.nukaDashCarousel.nukaDashCarouselMod.NextButton].asInstanceOf[typings.react.reactMod.ComponentType[typings.nukaDashCarousel.nukaDashCarouselMod.NextButtonProps]]
+  def NextButton: ComponentType[NextButtonProps] = js.constructorOf[typings.nukaDashCarousel.nukaDashCarouselMod.NextButton].asInstanceOf[typings.react.reactMod.ComponentType[NextButtonProps]]
   @scala.inline
-  def NukaDashCarousel: ComponentType[CarouselProps] = js.constructorOf[typings.nukaDashCarousel.nukaDashCarouselMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.nukaDashCarousel.nukaDashCarouselMod.CarouselProps]]
+  def NukaDashCarousel: ComponentType[NukaDashCarouselProps] = js.constructorOf[typings.nukaDashCarousel.nukaDashCarouselMod.default].asInstanceOf[typings.react.reactMod.ComponentType[NukaDashCarouselProps]]
   @scala.inline
-  def PagingDots: ComponentType[typings.nukaDashCarousel.nukaDashCarouselMod.PagingDotsProps] = js.constructorOf[typings.nukaDashCarousel.nukaDashCarouselMod.PagingDots].asInstanceOf[typings.react.reactMod.ComponentType[typings.nukaDashCarousel.nukaDashCarouselMod.PagingDotsProps]]
+  def PagingDots: ComponentType[PagingDotsProps] = js.constructorOf[typings.nukaDashCarousel.nukaDashCarouselMod.PagingDots].asInstanceOf[typings.react.reactMod.ComponentType[PagingDotsProps]]
   @scala.inline
-  def PreviousButton: ComponentType[typings.nukaDashCarousel.nukaDashCarouselMod.PreviousButtonProps] = js.constructorOf[typings.nukaDashCarousel.nukaDashCarouselMod.PreviousButton].asInstanceOf[typings.react.reactMod.ComponentType[typings.nukaDashCarousel.nukaDashCarouselMod.PreviousButtonProps]]
+  def PreviousButton: ComponentType[PreviousButtonProps] = js.constructorOf[typings.nukaDashCarousel.nukaDashCarouselMod.PreviousButton].asInstanceOf[typings.react.reactMod.ComponentType[PreviousButtonProps]]
 }
 

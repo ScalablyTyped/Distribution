@@ -16,7 +16,7 @@ class CatalogDiscount () extends js.Object {
     * Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale.
     * See [CatalogDiscountType](#type-catalogdiscounttype) for possible values.
     */
-  var discount_type: js.UndefOr[DiscountTypeEnum] = js.native
+  var discount_type: js.UndefOr[DiscountType] = js.native
   /**
     * The color of the discount's display label in the Square Point of Sale app. This must be a valid hex color code.
     */

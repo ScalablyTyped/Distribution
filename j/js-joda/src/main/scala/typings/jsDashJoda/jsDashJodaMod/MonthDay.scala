@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "MonthDay")
 @js.native
-class MonthDay protected () extends Temporal {
+class MonthDay protected () extends TemporalAccessor {
   def adjustInto(temporal: Temporal): Temporal = js.native
   def atYear(year: Double): LocalDate = js.native
   def compareTo(other: MonthDay): Double = js.native

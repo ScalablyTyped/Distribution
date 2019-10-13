@@ -9,6 +9,7 @@ import typings.puppeteer.puppeteerMod.ChromeArgOptions
 import typings.puppeteer.puppeteerMod.ConnectOptions
 import typings.puppeteer.puppeteerMod.FetcherOptions
 import typings.puppeteer.puppeteerMod.LaunchOptions
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,8 +33,12 @@ object puppeteerDashCoreMod extends js.Object {
   @js.native
   object errors extends js.Object {
     @js.native
-    class TimeoutError ()
-      extends typings.puppeteer.puppeteerMod.errors.TimeoutError
+    class TimeoutError () extends Error {
+      /* CompleteClass */
+      override var message: String = js.native
+      /* CompleteClass */
+      override var name: String = js.native
+    }
     
   }
   

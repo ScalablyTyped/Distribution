@@ -2,7 +2,6 @@ package typings.reactDashScroll
 
 import typings.react.reactMod.Component
 import typings.react.reactMod.HTMLProps
-import typings.reactDashScroll.modulesComponentsButtonMod.Button
 import typings.reactDashScroll.modulesComponentsButtonMod.ButtonProps
 import typings.reactDashScroll.modulesComponentsLinkMod.ReactScrollLinkProps
 import typings.std.HTMLButtonElement
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object modulesComponentsButtonMod extends js.Object {
   @js.native
-  class default () extends Button
+  class default ()
+    extends Component[ButtonProps, js.Object, js.Any]
   
   type Button = Component[ButtonProps, js.Object, js.Any]
   type ButtonProps = ReactScrollLinkProps with HTMLProps[HTMLButtonElement]

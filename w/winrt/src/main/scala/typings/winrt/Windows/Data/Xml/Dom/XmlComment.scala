@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Windows.Data.Xml.Dom.XmlComment")
 @js.native
-class XmlComment () extends IXmlComment {
+class XmlComment () extends IXmlCharacterData {
   /* CompleteClass */
   override var attributes: XmlNamedNodeMap = js.native
   /* CompleteClass */

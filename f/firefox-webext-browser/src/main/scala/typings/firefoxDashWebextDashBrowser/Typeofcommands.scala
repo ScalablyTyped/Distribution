@@ -10,7 +10,7 @@ trait Typeofcommands extends js.Object {
   /** Fired when a registered command is activated using a keyboard shortcut. */
   val onCommand: WebExtEvent[js.Function1[/* command */ String, Unit]]
   /** Returns all the registered extension commands for this extension and their shortcut (if active). */
-  def getAll(): js.Promise[js.UndefOr[js.Array[Command]]]
+  def getAll(): js.Promise[js.Array[Command]]
   /**
     * Reset a command's details to what is specified in the manifest.
     * @param name The name of the command.
@@ -27,7 +27,7 @@ trait Typeofcommands extends js.Object {
 object Typeofcommands {
   @scala.inline
   def apply(
-    getAll: () => js.Promise[js.UndefOr[js.Array[Command]]],
+    getAll: () => js.Promise[js.Array[Command]],
     onCommand: WebExtEvent[js.Function1[/* command */ String, Unit]],
     reset: String => js.Promise[Unit],
     update: Anon_Description => js.Promise[Unit]

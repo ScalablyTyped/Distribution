@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 object reactDashLazylogComponents extends reactDashLazylogProps {
   @scala.inline
-  def LazyLog: ComponentType[typings.reactDashLazylog.buildLazyLogMod.LazyLogProps] = js.constructorOf[typings.reactDashLazylog.buildLazyLogMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashLazylog.buildLazyLogMod.LazyLogProps]]
+  def LazyLog: ComponentType[LazyLogProps] = js.constructorOf[typings.reactDashLazylog.buildLazyLogMod.default].asInstanceOf[typings.react.reactMod.ComponentType[LazyLogProps]]
   @scala.inline
-  def Line: ComponentType[typings.reactDashLazylog.buildLineMod.LineProps] = js.constructorOf[typings.reactDashLazylog.buildLineMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashLazylog.buildLineMod.LineProps]]
+  def Line: ComponentType[LineProps] = js.constructorOf[typings.reactDashLazylog.buildLineMod.default].asInstanceOf[typings.react.reactMod.ComponentType[LineProps]]
   @scala.inline
-  def LineContent: ComponentType[typings.reactDashLazylog.buildLineContentMod.LineContentProps] = js.constructorOf[typings.reactDashLazylog.buildLineContentMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashLazylog.buildLineContentMod.LineContentProps]]
+  def LineContent: ComponentType[LineContentProps] = js.constructorOf[typings.reactDashLazylog.buildLineContentMod.default].asInstanceOf[typings.react.reactMod.ComponentType[LineContentProps]]
   @scala.inline
-  def LineNumber: ComponentType[typings.reactDashLazylog.buildLineNumberMod.LineNumberProps] = js.constructorOf[typings.reactDashLazylog.buildLineNumberMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashLazylog.buildLineNumberMod.LineNumberProps]]
+  def LineNumber: ComponentType[LineNumberProps] = js.constructorOf[typings.reactDashLazylog.buildLineNumberMod.default].asInstanceOf[typings.react.reactMod.ComponentType[LineNumberProps]]
   @scala.inline
-  def LinePart: ComponentType[typings.reactDashLazylog.buildLinePartMod.LinePartProps] = js.constructorOf[typings.reactDashLazylog.buildLinePartMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashLazylog.buildLinePartMod.LinePartProps]]
+  def LinePart: ComponentType[LinePartProps] = js.constructorOf[typings.reactDashLazylog.buildLinePartMod.default].asInstanceOf[typings.react.reactMod.ComponentType[LinePartProps]]
   @scala.inline
   def Loading: ComponentType[js.Object] = js.constructorOf[typings.reactDashLazylog.buildLoadingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def ScrollFollow: ComponentType[typings.reactDashLazylog.buildScrollFollowMod.ScrollFollowProps] = js.constructorOf[typings.reactDashLazylog.buildScrollFollowMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashLazylog.buildScrollFollowMod.ScrollFollowProps]]
+  def ScrollFollow: ComponentType[ScrollFollowProps] = js.constructorOf[typings.reactDashLazylog.buildScrollFollowMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ScrollFollowProps]]
 }
 

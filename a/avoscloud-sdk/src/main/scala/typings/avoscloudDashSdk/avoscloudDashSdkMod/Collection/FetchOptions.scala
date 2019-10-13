@@ -1,14 +1,16 @@
 package typings.avoscloudDashSdk.avoscloudDashSdkMod.Collection
 
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorOption
 import typings.avoscloudDashSdk.avoscloudDashSdkMod.SilentOption
-import typings.avoscloudDashSdk.avoscloudDashSdkMod.SuccessFailureOptions
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.SuccessOption
 import typings.avoscloudDashSdk.avoscloudDashSdkMod.UseMasterKeyOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FetchOptions
-  extends SuccessFailureOptions
+  extends SuccessOption
+     with ErrorOption
      with SilentOption
      with UseMasterKeyOption
 

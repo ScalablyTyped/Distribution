@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-priority-queue", JSImport.Namespace)
 @js.native
-class ^[T] () extends PriorityQueue[T] {
+class ^[T] () extends AbstractPriorityQueue[T] {
   /**
     * Returns the number of elements in the queue
     */

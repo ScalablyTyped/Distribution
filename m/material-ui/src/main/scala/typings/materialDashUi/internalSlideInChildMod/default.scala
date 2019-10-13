@@ -1,10 +1,12 @@
 package typings.materialDashUi.internalSlideInChildMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("material-ui/internal/SlideInChild", JSImport.Default)
 @js.native
-class default () extends SlideInChild
+class default ()
+  extends Component[SlideInChildProps, js.Object, js.Any]
 

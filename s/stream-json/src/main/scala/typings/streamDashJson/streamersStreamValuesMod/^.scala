@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stream-json/streamers/StreamValues", JSImport.Namespace)
 @js.native
-class ^ () extends StreamValues {
+class ^ ()
+  extends typings.streamDashJson.streamersStreamBaseMod.^ {
   def this(options: StreamOptions) = this()
 }
 

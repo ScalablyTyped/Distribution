@@ -1,9 +1,15 @@
 package typings.samchon
 
+import typings.ecol.libBasicCollectionEventMod.CollectionEvent
+import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Listener
+import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
 import typings.samchon.protocolCommunicatorIClientDriverMod.IClientDriver
 import typings.samchon.protocolServerIServerMod.IServer
+import typings.samchon.templatesExternalExternalSystemArrayMod.ExternalSystemArray
 import typings.samchon.templatesExternalExternalSystemMod.ExternalSystem
-import typings.samchon.templatesExternalInterfacesIExternalClientArrayMod.IExternalClientArray
+import typings.tstl.containerDequeMod.Deque
+import typings.tstl.containerDequeMod.Deque.Iterator
+import typings.tstl.containerDequeMod.Deque.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +21,9 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
   /**
     * Default Constructor.
     */
-  abstract class ExternalClientArray[T /* <: ExternalSystem */] () extends IExternalClientArray[T] {
+  abstract class ExternalClientArray[T /* <: ExternalSystem */] ()
+    extends ExternalSystemArray[T]
+       with IServer {
     /**
       * @hidden
       */
@@ -39,6 +47,16 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       */
     /* CompleteClass */
     override def addClient(driver: IClientDriver): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: Type, listener: Listener[T, Deque[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
+    /**
+      * Iterator to the first element.
+      *
+      * @return Iterator to the first element.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Deque[T], Iterator[T], ReverseIterator[T], T] = js.native
     /**
       * Close server.
       *
@@ -70,6 +88,24 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       * @return A new {@link IServerBase} object.
       */
     /* protected */ def createServerBase(): IServer = js.native
+    /* InferMemberOverrides */
+    override def dispatchEvent(event: CollectionEvent[T, Deque[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
+    /**
+      * Test whether container is empty.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def empty(): Boolean = js.native
+    /**
+      * Iterator to the end.
+      *
+      * @return Iterator to the end.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Deque[T], Iterator[T], ReverseIterator[T], T] = js.native
+    /* InferMemberOverrides */
+    override def hasEventListener(`type`: Type): Boolean = js.native
     /**
       * Open server.
       *
@@ -77,6 +113,46 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       */
     /* CompleteClass */
     override def open(port: Double): Unit = js.native
+    /**
+      * Insert items at the end.
+      *
+      * @param items Items to insert.
+      * @return Number of elements in the container after insertion.
+      */
+    /* InferMemberOverrides */
+    override def push(items: T*): Double = js.native
+    /**
+      * Insert an element at the end.
+      *
+      * @param val Value to insert.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def push_back(`val`: T): Unit = js.native
+    /**
+      * Reverse iterator to the first element in reverse.
+      *
+      * @return Reverse iterator to the first.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def rbegin(): ReverseIterator[T] = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: Type, listener: Listener[T, Deque[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
+    /**
+      * Reverse iterator to the reverse end.
+      *
+      * @return Reverse iterator to the end.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def rend(): ReverseIterator[T] = js.native
+    /**
+      * Number of elements in the container.
+      */
+    /* CompleteClass */
+    /* InferMemberOverrides */
+    override def size(): Double = js.native
   }
   
 }

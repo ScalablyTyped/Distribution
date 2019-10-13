@@ -1,6 +1,6 @@
 package typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap-typeahead", "Highlighter")
 @js.native
 class Highlighter ()
-  extends PureComponent[HighligherProps, js.Object, js.Any]
+  extends Component[HighligherProps, js.Object, js.Any]
 

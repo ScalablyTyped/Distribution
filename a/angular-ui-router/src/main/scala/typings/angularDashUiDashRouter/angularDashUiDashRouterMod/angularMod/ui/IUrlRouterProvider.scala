@@ -1,7 +1,7 @@
 package typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui
 
-import typings.angular.angularMod.Global.Function
 import typings.angular.angularMod.IServiceProvider
+import typings.angular.angularMod._Global_.Function
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown", "Token")
 @js.native
 class Token[TKind /* <: TokenKind */] ()
-  extends typings.grammarkdown.distNodesMod.Token[TKind]
+  extends typings.grammarkdown.distNodesMod.Node[TKind]
 

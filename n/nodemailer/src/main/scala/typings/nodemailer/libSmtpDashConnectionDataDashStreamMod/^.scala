@@ -1,5 +1,6 @@
 package typings.nodemailer.libSmtpDashConnectionDataDashStreamMod
 
+import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,5 +11,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("nodemailer/lib/smtp-connection/data-stream", JSImport.Namespace)
 @js.native
-class ^ () extends DataStream
+class ^ () extends Transform
 

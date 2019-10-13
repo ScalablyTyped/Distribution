@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SearchOptions extends PaginationMarketOptions {
+trait SearchOptions
+  extends PaginationOptions
+     with MarketOptions {
   var include_external: js.UndefOr[audio] = js.undefined
 }
 

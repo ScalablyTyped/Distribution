@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ssh2"
-version := "v0.5.x-dt-20190903Z-91ce25"
+version := "v0.5.x-dt-20190903Z-541607"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
-  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20190322Z-9064eb",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20190322Z-fbd0d5",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

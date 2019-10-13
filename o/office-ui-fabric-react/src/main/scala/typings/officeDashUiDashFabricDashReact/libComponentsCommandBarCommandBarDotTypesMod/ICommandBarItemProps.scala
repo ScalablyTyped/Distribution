@@ -17,10 +17,10 @@ import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypes
 import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js

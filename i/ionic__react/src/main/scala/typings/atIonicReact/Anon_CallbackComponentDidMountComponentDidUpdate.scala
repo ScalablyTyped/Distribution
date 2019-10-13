@@ -1,7 +1,7 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonLoadingElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonLoadingElement
 import typings.atIonicReact.distTypesComponentsCreateControllerComponentMod.ReactControllerProps
 import typings.react.reactMod.ReactInstance
 import typings.std.Pick

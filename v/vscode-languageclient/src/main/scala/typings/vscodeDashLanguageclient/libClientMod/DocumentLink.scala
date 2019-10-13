@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageclient/lib/client", "DocumentLink")
 @js.native
 class DocumentLink ()
-  extends typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentLink
+  extends typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentLink
 
 @JSImport("vscode-languageclient/lib/client", "DocumentLink")
 @js.native

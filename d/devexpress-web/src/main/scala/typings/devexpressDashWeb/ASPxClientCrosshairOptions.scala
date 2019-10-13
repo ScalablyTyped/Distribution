@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientCrosshairOptions")
 @js.native
-class ASPxClientCrosshairOptions () extends ASPxClientWebChartEmptyElement {
+class ASPxClientCrosshairOptions () extends ASPxClientWebChartElement {
   /**
     * Gets the color of a crosshair argument line.
     */

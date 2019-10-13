@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "PipelineSchedules")
 @js.native
 class PipelineSchedules ()
-  extends typings.gitlab.distServicesMod.PipelineSchedules
+  extends typings.gitlab.distServicesPipelineSchedulesMod.PipelineSchedules
 

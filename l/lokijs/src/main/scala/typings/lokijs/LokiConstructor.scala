@@ -24,22 +24,28 @@ class LokiConstructor protected () extends Loki {
 @js.native
 object LokiConstructor extends js.Object {
   @js.native
-  class Collection[E /* <: js.Object */] () extends _Collection[E]
+  class Collection[E /* <: js.Object */] ()
+    extends typings.lokijs.Collection[E]
   
   @js.native
-  class KeyValueStore () extends _KeyValueStore
+  class KeyValueStore ()
+    extends typings.lokijs.KeyValueStore
   
   @js.native
-  class LokiFsAdapter () extends _LokiFsAdapter
+  class LokiFsAdapter ()
+    extends typings.lokijs.LokiFsAdapter
   
   @js.native
-  class LokiLocalStorageAdapter () extends _LokiLocalStorageAdapter
+  class LokiLocalStorageAdapter ()
+    extends typings.lokijs.LokiLocalStorageAdapter
   
   @js.native
-  class LokiMemoryAdapter () extends _LokiMemoryAdapter
+  class LokiMemoryAdapter ()
+    extends typings.lokijs.LokiMemoryAdapter
   
   @js.native
-  class LokiPartitioningAdapter () extends _LokiPartitioningAdapter
+  class LokiPartitioningAdapter ()
+    extends typings.lokijs.LokiPartitioningAdapter
   
   var LokiOps: typings.lokijs.LokiOps = js.native
   def aeq(prop1: js.Any, prop2: js.Any): Boolean = js.native

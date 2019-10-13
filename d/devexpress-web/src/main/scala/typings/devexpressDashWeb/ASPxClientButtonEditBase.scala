@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientButtonEditBase")
 @js.native
-class ASPxClientButtonEditBase () extends ASPxClientTextBoxBase {
+class ASPxClientButtonEditBase () extends ASPxClientTextEdit {
   /**
     * Occurs on the client side after an editor button is clicked.
     */

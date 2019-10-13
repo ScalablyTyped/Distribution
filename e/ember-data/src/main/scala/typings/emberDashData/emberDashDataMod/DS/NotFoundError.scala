@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.NotFoundError")
 @js.native
-class NotFoundError () extends AdapterError
+class NotFoundError ()
+  extends typings.atEmberObject.atEmberObjectMod.default
 

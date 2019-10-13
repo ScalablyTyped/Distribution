@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.Input
 
+import typings.phaser.Phaser.Input.Touch.TouchManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -88,6 +89,14 @@ object Touch extends js.Object {
       * Destroys this Touch Manager instance.
       */
     def destroy(): Unit = js.native
+    /**
+      * Attempts to disable the context menu from appearing if you touch-hold on the browser.
+      * 
+      * Works by listening for the `contextmenu` event and prevent defaulting it.
+      * 
+      * Use this if you need to disable the OS context menu on mobile.
+      */
+    def disableContextMenu(): TouchManager = js.native
     /**
       * Starts the Touch Event listeners running as long as an input target is set.
       * 

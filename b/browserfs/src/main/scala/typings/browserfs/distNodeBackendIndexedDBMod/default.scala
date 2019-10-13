@@ -2,13 +2,14 @@ package typings.browserfs.distNodeBackendIndexedDBMod
 
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
 import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
+import typings.browserfs.distNodeGenericKeyUnderscoreValueUnderscoreFilesystemMod.AsyncKeyValueFileSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("browserfs/dist/node/backend/IndexedDB", JSImport.Default)
 @js.native
-class default protected () extends IndexedDBFileSystem {
+class default protected () extends AsyncKeyValueFileSystem {
   /**
     * **Deprecated. Use IndexedDB.Create() method instead.**
     *

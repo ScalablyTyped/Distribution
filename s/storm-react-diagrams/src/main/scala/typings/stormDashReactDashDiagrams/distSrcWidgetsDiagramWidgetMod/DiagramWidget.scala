@@ -1,6 +1,6 @@
 package typings.stormDashReactDashDiagrams.distSrcWidgetsDiagramWidgetMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.KeyboardEvent
 import typings.std.Window
 import typings.stormDashReactDashDiagrams.Anon_Element

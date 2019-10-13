@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-daterange-picker"
-version := "2.0-dt-20181002Z-08e5e8"
+version := "2.0-dt-20181002Z-9749ff"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-1967d7",
-  "org.scalablytyped" %%% "moment" % "2.24.0-376d78",
-  "org.scalablytyped" %%% "moment-range" % "3.1-dt-20190212Z-406621",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-e54803",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-3b437f",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
+  "org.scalablytyped" %%% "moment" % "2.24.0-3909a2",
+  "org.scalablytyped" %%% "moment-range" % "3.1-dt-20190212Z-858a48",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-965e98",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

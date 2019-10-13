@@ -1,7 +1,7 @@
 package typings.atIonicCore.distTypesInterfaceMod
 
 import typings.atIonicCore.distTypesComponentsLoadingLoadingDashInterfaceMod.LoadingOptions
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonLoadingElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonLoadingElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

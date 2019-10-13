@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.TimeoutError")
 @js.native
-class TimeoutError () extends AdapterError
+class TimeoutError ()
+  extends typings.atEmberObject.atEmberObjectMod.default
 

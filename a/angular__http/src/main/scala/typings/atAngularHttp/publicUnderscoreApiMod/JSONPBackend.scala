@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/http/public_api", "JSONPBackend")
 @js.native
 class JSONPBackend ()
-  extends typings.atAngularHttp.srcMod.JSONPBackend
+  extends typings.atAngularHttp.srcBackendsJsonpUnderscoreBackendMod.JSONPBackend
 

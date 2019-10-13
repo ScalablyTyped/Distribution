@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.listListMod.List
+import typings.materialDashUi.__MaterialUI.List.ListProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object listListMod extends js.Object {
   @js.native
   class List ()
-    extends typings.materialDashUi.__MaterialUI.List.List
+    extends Component[ListProps, js.Object, js.Any]
   
   @js.native
-  class default () extends List
+  class default ()
+    extends Component[ListProps, js.Object, js.Any]
   
 }
 

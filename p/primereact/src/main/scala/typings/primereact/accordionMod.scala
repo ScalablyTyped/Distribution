@@ -1,5 +1,8 @@
 package typings.primereact
 
+import typings.primereact.componentsAccordionAccordionMod.AccordionProps
+import typings.primereact.componentsAccordionAccordionMod.AccordionTabProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +12,11 @@ import scala.scalajs.js.annotation._
 object accordionMod extends js.Object {
   @js.native
   class Accordion ()
-    extends typings.primereact.componentsAccordionAccordionMod.Accordion
+    extends Component[AccordionProps, js.Any, js.Any]
   
   @js.native
   class AccordionTab ()
-    extends typings.primereact.componentsAccordionAccordionMod.AccordionTab
+    extends Component[AccordionTabProps, js.Any, js.Any]
   
 }
 

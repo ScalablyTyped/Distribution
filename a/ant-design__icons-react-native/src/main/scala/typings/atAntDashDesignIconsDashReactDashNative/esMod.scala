@@ -1,6 +1,5 @@
 package typings.atAntDashDesignIconsDashReactDashNative
 
-import typings.atAntDashDesignIconsDashReactDashNative.esFillMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object esMod extends js.Object {
   @js.native
-  class IconFill () extends default
+  class IconFill ()
+    extends typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFill
   
   @js.native
   class IconOutline ()
-    extends typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.default
+    extends typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutline
   
 }
 

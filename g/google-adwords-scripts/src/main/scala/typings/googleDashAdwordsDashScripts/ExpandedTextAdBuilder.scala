@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExpandedTextAdBuilder[ExpandedTextAd] extends AdBuilder[ExpandedTextAdBuilder[ExpandedTextAd]] {
+trait ExpandedTextAdBuilder[ExpandedTextAd]
+  extends AdWordsBuilder[ExpandedTextAdBuilder[ExpandedTextAd]]
+     with hasFinalUrlBuilder[ExpandedTextAdBuilder[ExpandedTextAd]]
+     with hasTrackingTemplateBuilder[ExpandedTextAdBuilder[ExpandedTextAd]] {
   def withDescription(descriptions: String): ExpandedTextAdBuilder[ExpandedTextAd]
   def withHeadlinePart1(headline1: String): ExpandedTextAdBuilder[ExpandedTextAd]
   def withHeadlinePart2(headline2: String): ExpandedTextAdBuilder[ExpandedTextAd]

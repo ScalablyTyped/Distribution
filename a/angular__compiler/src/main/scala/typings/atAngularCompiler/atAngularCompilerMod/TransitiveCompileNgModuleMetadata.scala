@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "TransitiveCompileNgModuleMetadata")
 @js.native
 class TransitiveCompileNgModuleMetadata ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.TransitiveCompileNgModuleMetadata
+  extends typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.TransitiveCompileNgModuleMetadata
 

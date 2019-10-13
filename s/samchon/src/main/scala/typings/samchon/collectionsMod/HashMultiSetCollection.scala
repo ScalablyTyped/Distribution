@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/collections", "HashMultiSetCollection")
 @js.native
 class HashMultiSetCollection[T] ()
-  extends typings.ecol.ecolMod.HashMultiSetCollection[T]
+  extends typings.ecol.libSetsHashMultiSetCollectionMod.HashMultiSetCollection[T]
 
 @JSImport("samchon/collections", "HashMultiSetCollection")
 @js.native

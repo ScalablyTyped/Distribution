@@ -1,12 +1,14 @@
 package typings.reactDashMarkdown.reactDashMarkdownMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-markdown", JSImport.Namespace)
 @js.native
-class ^ () extends ReactMarkdown
+class ^ ()
+  extends Component[ReactMarkdownProps, js.Object, js.Any]
 
 @JSImport("react-markdown", JSImport.Namespace)
 @js.native

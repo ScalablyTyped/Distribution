@@ -17,7 +17,7 @@ object distTypographyDocumentWrapperMod extends js.Object {
     DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
     Pick[
       DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 254 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 254 */ js.Any
     ], 
     Theme
   ] = js.native

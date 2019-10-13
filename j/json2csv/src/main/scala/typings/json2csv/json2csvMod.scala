@@ -2,6 +2,7 @@ package typings.json2csv
 
 import typings.json2csv.jSON2CSVAsyncParserMod.default
 import typings.json2csv.jSON2CSVBaseMod.json2csv.Options
+import typings.json2csv.jSON2CSVParserMod.JSON2CSVParser
 import typings.node.streamMod.Readable
 import typings.node.streamMod.TransformOptions
 import scala.scalajs.js
@@ -18,8 +19,7 @@ object json2csvMod extends js.Object {
   }
   
   @js.native
-  class Parser[T] ()
-    extends typings.json2csv.jSON2CSVParserMod.default[T]
+  class Parser[T] () extends JSON2CSVParser[T]
   
   @js.native
   // implements JSON2CSVBase<T>

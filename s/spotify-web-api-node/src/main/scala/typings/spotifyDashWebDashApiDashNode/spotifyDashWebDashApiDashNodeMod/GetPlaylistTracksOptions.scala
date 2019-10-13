@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetPlaylistTracksOptions
-  extends PaginationMarketOptions
+  extends PaginationOptions
+     with MarketOptions
      with FieldsOptions
 
 object GetPlaylistTracksOptions {

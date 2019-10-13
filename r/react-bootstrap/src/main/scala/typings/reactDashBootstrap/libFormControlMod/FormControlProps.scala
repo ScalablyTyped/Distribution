@@ -1,6 +1,7 @@
 package typings.reactDashBootstrap.libFormControlMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import typings.reactDashBootstrap.reactDashBootstrapMod.Sizes
 import typings.std.HTMLInputElement
@@ -8,7 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormControlProps extends HTMLProps[FormControl] {
+trait FormControlProps
+  extends AllHTMLAttributes[FormControl]
+     with ClassAttributes[FormControl] {
   var bsClass: js.UndefOr[String] = js.undefined
   var bsSize: js.UndefOr[Sizes] = js.undefined
   var componentClass: js.UndefOr[ReactType[_]] = js.undefined
@@ -18,7 +21,8 @@ trait FormControlProps extends HTMLProps[FormControl] {
 object FormControlProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[FormControl] = null,
+    AllHTMLAttributes: AllHTMLAttributes[FormControl] = null,
+    ClassAttributes: ClassAttributes[FormControl] = null,
     bsClass: String = null,
     bsSize: Sizes = null,
     componentClass: ReactType[_] = null,
@@ -27,7 +31,8 @@ object FormControlProps {
     `type`: String = null
   ): FormControlProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])

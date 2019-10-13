@@ -7,8 +7,8 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libCommonDirectionalHintMod.DirectionalHint
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
 import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotBaseMod.TooltipBase
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

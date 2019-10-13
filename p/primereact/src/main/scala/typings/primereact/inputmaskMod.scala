@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsInputmaskInputMaskMod.InputMaskProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object inputmaskMod extends js.Object {
   @js.native
   class InputMask ()
-    extends typings.primereact.componentsInputmaskInputMaskMod.InputMask
+    extends Component[InputMaskProps, js.Any, js.Any]
   
 }
 

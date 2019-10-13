@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashRequestComponents extends reactDashRequestProps {
   @scala.inline
-  def Fetch[T]: ComponentType[typings.reactDashRequest.reactDashRequestMod.FetchProps[T]] = js.constructorOf[typings.reactDashRequest.reactDashRequestMod.Fetch[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRequest.reactDashRequestMod.FetchProps[T]]]
+  def Fetch[T]: ComponentType[FetchProps[T]] = js.constructorOf[typings.reactDashRequest.reactDashRequestMod.Fetch[T]].asInstanceOf[typings.react.reactMod.ComponentType[FetchProps[T]]]
 }
 

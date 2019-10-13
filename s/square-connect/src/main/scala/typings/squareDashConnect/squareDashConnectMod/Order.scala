@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.Order.StateEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,7 +82,7 @@ class Order () extends js.Object {
   /**
     * The current state of the order. `OPEN`,`COMPLETED`,`CANCELED` See [OrderState](#type-orderstate) for possible values.
     */
-  var state: js.UndefOr[StateEnum] = js.native
+  var state: js.UndefOr[OrderStateType] = js.native
   /**
     * The list of all taxes associated with the order. Taxes can be scoped to either `ORDER` or `LINE_ITEM`.
     * For taxes with `LINE_ITEM` scope, an `OrderLineItemAppliedTax` must be added to each line item that the tax applies to.
@@ -125,31 +124,5 @@ class Order () extends js.Object {
     * [Read more about working with versions](/orders-api/manage-orders#update-orders).
     */
   var version: js.UndefOr[Double] = js.native
-}
-
-@JSImport("square-connect", "Order")
-@js.native
-object Order extends js.Object {
-  @js.native
-  sealed trait StateEnum extends js.Object
-  
-  @js.native
-  object StateEnum extends js.Object {
-    @js.native
-    sealed trait CANCELED extends StateEnum
-    
-    @js.native
-    sealed trait COMPLETED extends StateEnum
-    
-    @js.native
-    sealed trait OPEN extends StateEnum
-    
-    /* "CANCELED" */ val CANCELED: typings.squareDashConnect.squareDashConnectMod.Order.StateEnum.CANCELED with String = js.native
-    /* "COMPLETED" */ val COMPLETED: typings.squareDashConnect.squareDashConnectMod.Order.StateEnum.COMPLETED with String = js.native
-    /* "OPEN" */ val OPEN: typings.squareDashConnect.squareDashConnectMod.Order.StateEnum.OPEN with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[StateEnum with String] = js.native
-  }
-  
 }
 

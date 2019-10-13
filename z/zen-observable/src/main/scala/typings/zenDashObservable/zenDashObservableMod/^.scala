@@ -1,8 +1,8 @@
 package typings.zenDashObservable.zenDashObservableMod
 
 import typings.std.ArrayLike
-import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservable.ObservableLike
-import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservable.Subscriber
+import typings.zenDashObservable.zenDashObservableMod._Global_.ZenObservable.ObservableLike
+import typings.zenDashObservable.zenDashObservableMod._Global_.ZenObservable.Subscriber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +17,8 @@ class ^[T] protected () extends Observable[T] {
 @js.native
 object ^ extends js.Object {
   def from[R](observable: ArrayLike[R]): Observable[R] = js.native
-  def from[R](observable: ObservableLike[R]): Observable[R] = js.native
   def from[R](observable: Observable[R]): Observable[R] = js.native
+  def from[R](observable: ObservableLike[R]): Observable[R] = js.native
   def of[R](items: R*): Observable[R] = js.native
 }
 

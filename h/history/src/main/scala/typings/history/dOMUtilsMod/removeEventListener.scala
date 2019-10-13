@@ -1,8 +1,8 @@
 package typings.history.dOMUtilsMod
 
-import typings.history.dOMUtilsMod.Global.EventListener
-import typings.history.dOMUtilsMod.Global.EventListenerObject
-import typings.history.dOMUtilsMod.Global.EventTarget
+import typings.history.dOMUtilsMod._Global_.EventListener
+import typings.history.dOMUtilsMod._Global_.EventListenerObject
+import typings.history.dOMUtilsMod._Global_.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

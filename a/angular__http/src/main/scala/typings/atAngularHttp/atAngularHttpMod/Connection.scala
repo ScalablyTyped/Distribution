@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/http", "Connection")
 @js.native
 abstract class Connection ()
-  extends typings.atAngularHttp.publicUnderscoreApiMod.Connection
+  extends typings.atAngularHttp.srcInterfacesMod.Connection
 

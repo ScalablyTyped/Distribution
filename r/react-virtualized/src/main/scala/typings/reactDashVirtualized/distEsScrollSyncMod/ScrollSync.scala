@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsScrollSyncMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_ChildrenProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-virtualized/dist/es/ScrollSync", "ScrollSync")
 @js.native
 class ScrollSync ()
-  extends PureComponent[ScrollSyncProps, ScrollSyncState, js.Any]
+  extends Component[ScrollSyncProps, ScrollSyncState, js.Any]
 
 /* static members */
 @JSImport("react-virtualized/dist/es/ScrollSync", "ScrollSync")

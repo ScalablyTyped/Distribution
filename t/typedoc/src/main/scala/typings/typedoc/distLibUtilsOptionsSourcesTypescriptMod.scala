@@ -1,6 +1,7 @@
 package typings.typedoc
 
-import typings.typedoc.distLibUtilsOptionsOptionsMod.OptionsComponent
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
+import typings.typedoc.distLibUtilsOptionsOptionsMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibUtilsOptionsSourcesTypescriptMod extends js.Object {
   @js.native
-  class TypeScriptSource () extends OptionsComponent {
+  class TypeScriptSource () extends AbstractComponent[Options] {
     var addTSOption: js.Any = js.native
     var declarations: js.Any = js.native
   }

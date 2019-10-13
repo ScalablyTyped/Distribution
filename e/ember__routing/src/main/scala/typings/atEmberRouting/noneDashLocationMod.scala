@@ -1,6 +1,5 @@
 package typings.atEmberRouting
 
-import typings.atEmberRouting.noneDashLocationMod.NoneLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object noneDashLocationMod extends js.Object {
   @js.native
-  class default () extends NoneLocation
+  class default ()
+    extends typings.atEmberObject.atEmberObjectMod.default
   
   type NoneLocation = typings.atEmberObject.atEmberObjectMod.default
 }

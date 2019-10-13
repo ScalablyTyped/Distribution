@@ -1,7 +1,7 @@
 package typings.snowboy
 
 import typings.node.Buffer
-import typings.node.streamMod.Stream
+import typings.node.streamMod.internal
 import typings.snowboy.snowboyMod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object snowboyMod extends js.Object {
   @js.native
-  class Detector protected () extends Stream {
+  class Detector protected () extends internal {
     def this(params: js.Any) = this()
     def on(
       event: js.Symbol,

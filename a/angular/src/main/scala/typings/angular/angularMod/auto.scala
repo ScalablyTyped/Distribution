@@ -2,7 +2,7 @@ package typings.angular.angularMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.Anon_Args
-import typings.angular.angularMod.Global.Function
+import typings.angular.angularMod._Global_.Function
 import typings.angular.angularStrings.DOLLARanchorScroll
 import typings.angular.angularStrings.DOLLARcacheFactory
 import typings.angular.angularStrings.DOLLARcompile

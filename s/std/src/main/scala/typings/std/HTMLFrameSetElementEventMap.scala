@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HTMLFrameSetElementEventMap
-  extends HTMLElementEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap
      with WindowEventHandlersEventMap
 
 object HTMLFrameSetElementEventMap {

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/sdk/internal", "PrimitiveProperty")
 @js.native
 class PrimitiveProperty[T] ()
-  extends typings.mendixmodelsdk.distSdkInternalPropertiesMod.PrimitiveProperty[T]
+  extends typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveProperty[T]
 

@@ -1,14 +1,12 @@
 package typings.reactDashMotionDashUiDashPack
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashMotionDashUiDashPack.reactDashMotionDashUiDashPackMod.Transition.TransitionProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashMotionDashUiDashPackComponents extends reactDashMotionDashUiDashPackProps {
   @scala.inline
-  def ReactDashMotionDashUiDashPack: ComponentType[TransitionProps] = js.constructorOf[typings.reactDashMotionDashUiDashPack.reactDashMotionDashUiDashPackMod.default.^].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashMotionDashUiDashPack.reactDashMotionDashUiDashPackMod.Transition.TransitionProps]]
+  def ReactDashMotionDashUiDashPack: ComponentType[ReactDashMotionDashUiDashPackProps] = js.constructorOf[typings.reactDashMotionDashUiDashPack.reactDashMotionDashUiDashPackMod.default.^].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashMotionDashUiDashPackProps]]
 }
 

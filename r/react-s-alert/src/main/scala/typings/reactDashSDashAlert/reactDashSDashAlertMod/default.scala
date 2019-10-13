@@ -1,13 +1,16 @@
 package typings.reactDashSDashAlert.reactDashSDashAlertMod
 
+import typings.react.reactMod.Component
 import typings.reactDashSDashAlert.reactDashSDashAlertMod.SAlert.SAlertConfigProps
+import typings.reactDashSDashAlert.reactDashSDashAlertMod.SAlert.SAlertProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-s-alert", JSImport.Default)
 @js.native
-class default () extends SAlert
+class default ()
+  extends Component[SAlertProps, js.Object, js.Any]
 
 @JSImport("react-s-alert", JSImport.Default)
 @js.native

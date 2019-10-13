@@ -1,13 +1,16 @@
 package typings.reactDashBootstrap.libButtonMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import typings.reactDashBootstrap.reactDashBootstrapMod.Sizes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ButtonProps extends HTMLProps[Button] {
+trait ButtonProps
+  extends AllHTMLAttributes[Button]
+     with ClassAttributes[Button] {
   var active: js.UndefOr[Boolean] = js.undefined
   var block: js.UndefOr[Boolean] = js.undefined
   var bsClass: js.UndefOr[String] = js.undefined
@@ -19,7 +22,8 @@ trait ButtonProps extends HTMLProps[Button] {
 object ButtonProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Button] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Button] = null,
+    ClassAttributes: ClassAttributes[Button] = null,
     active: js.UndefOr[Boolean] = js.undefined,
     block: js.UndefOr[Boolean] = js.undefined,
     bsClass: String = null,
@@ -29,7 +33,8 @@ object ButtonProps {
     disabled: js.UndefOr[Boolean] = js.undefined
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)

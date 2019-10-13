@@ -1,6 +1,7 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CatalogModifierList.SelectionTypeEnum
+import typings.squareDashConnect.squareDashConnectStrings.MULTIPLE
+import typings.squareDashConnect.squareDashConnectStrings.SINGLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,28 +25,6 @@ class CatalogModifierList () extends js.Object {
     * single [CatalogItem](#type-catalogitem).
     * See [CatalogModifierListSelectionType](#type-catalogmodifierlistselectiontype) for possible values.
     */
-  var selection_type: js.UndefOr[SelectionTypeEnum] = js.native
-}
-
-@JSImport("square-connect", "CatalogModifierList")
-@js.native
-object CatalogModifierList extends js.Object {
-  @js.native
-  sealed trait SelectionTypeEnum extends js.Object
-  
-  @js.native
-  object SelectionTypeEnum extends js.Object {
-    @js.native
-    sealed trait MULTIPLE extends SelectionTypeEnum
-    
-    @js.native
-    sealed trait SINGLE extends SelectionTypeEnum
-    
-    /* "MULTIPLE" */ val MULTIPLE: typings.squareDashConnect.squareDashConnectMod.CatalogModifierList.SelectionTypeEnum.MULTIPLE with String = js.native
-    /* "SINGLE" */ val SINGLE: typings.squareDashConnect.squareDashConnectMod.CatalogModifierList.SelectionTypeEnum.SINGLE with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[SelectionTypeEnum with String] = js.native
-  }
-  
+  var selection_type: js.UndefOr[SINGLE | MULTIPLE] = js.native
 }
 

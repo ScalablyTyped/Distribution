@@ -3,7 +3,7 @@ package typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridDotTypesMod
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

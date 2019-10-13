@@ -1,5 +1,6 @@
 package typings.amcharts
 
+import typings.amcharts.amSerialChartMod.AmSerialChart
 import typings.amcharts.stockPanelMod.StockPanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,8 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object stockPanelMod extends js.Object {
   @js.native
-  trait StockPanel
-    extends typings.amcharts.amSerialChartMod.default {
+  trait StockPanel extends AmSerialChart {
     /**
       * Specifies whether x button will be displayed near the panel. This button allows turning panel off.
       */

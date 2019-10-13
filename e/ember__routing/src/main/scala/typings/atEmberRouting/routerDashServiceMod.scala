@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object routerDashServiceMod extends js.Object {
   @js.native
   trait RouterService
-    extends typings.atEmberService.atEmberServiceMod.default {
+    extends typings.atEmberObject.atEmberObjectMod.default {
     //
     /**
       * A `RouteInfo` that represents the current leaf route.

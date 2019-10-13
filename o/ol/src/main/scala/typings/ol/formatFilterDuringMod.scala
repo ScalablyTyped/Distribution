@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterDuringMod.During
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterDuringMod extends js.Object {
   @js.native
-  class default protected () extends During {
+  class default protected ()
+    extends typings.ol.formatFilterComparisonMod.default {
     def this(propertyName: String, begin: String, end: String) = this()
   }
   

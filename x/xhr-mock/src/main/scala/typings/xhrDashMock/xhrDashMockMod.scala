@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 object xhrDashMockMod extends js.Object {
   @js.native
   class MockRequest ()
-    extends typings.xhrDashMock.libMockRequestMod.default
+    extends typings.xhrDashMock.libMockRequestMod.MockRequest
   
   @js.native
   class MockResponse ()
-    extends typings.xhrDashMock.libMockResponseMod.default
+    extends typings.xhrDashMock.libMockResponseMod.MockResponse
   
   val default: XHRMock = js.native
   def delay(mock: MockFunction): MockFunction = js.native

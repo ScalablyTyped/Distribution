@@ -1,8 +1,8 @@
 package typings.reactDashToolbox.libLayoutLayoutMod
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashToolbox.libMod.ReactToolbox.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`

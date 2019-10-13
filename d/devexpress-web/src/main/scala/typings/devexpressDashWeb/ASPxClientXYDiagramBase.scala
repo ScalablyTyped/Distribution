@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientXYDiagramBase")
 @js.native
-class ASPxClientXYDiagramBase () extends ASPxClientWebChartRequiredElement {
+class ASPxClientXYDiagramBase () extends ASPxClientWebChartElement {
   /**
     * Gets the X-axis.
     */

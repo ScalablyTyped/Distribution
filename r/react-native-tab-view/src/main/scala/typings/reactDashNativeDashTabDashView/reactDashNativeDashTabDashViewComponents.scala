@@ -9,29 +9,14 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashTabDashViewComponents extends reactDashNativeDashTabDashViewProps {
   @scala.inline
-  def PagerAndroid[T /* <: Route[RouteBase] */]: ComponentType[
-    typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerAndroidProps[T]
-  ] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerAndroid[T]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerAndroidProps[T]]]
+  def PagerAndroid[T /* <: Route[RouteBase] */]: ComponentType[PagerAndroidProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerAndroid[T]].asInstanceOf[typings.react.reactMod.ComponentType[PagerAndroidProps[T]]]
   @scala.inline
-  def PagerPan[T /* <: Route[RouteBase] */]: ComponentType[
-    typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerPanProps[T]
-  ] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerPan[T]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerPanProps[T]]]
+  def PagerPan[T /* <: Route[RouteBase] */]: ComponentType[PagerPanProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerPan[T]].asInstanceOf[typings.react.reactMod.ComponentType[PagerPanProps[T]]]
   @scala.inline
-  def PagerScroll[T /* <: Route[RouteBase] */]: ComponentType[
-    typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerScrollProps[T]
-  ] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerScroll[T]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerScrollProps[T]]]
+  def PagerScroll[T /* <: Route[RouteBase] */]: ComponentType[PagerScrollProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerScroll[T]].asInstanceOf[typings.react.reactMod.ComponentType[PagerScrollProps[T]]]
   @scala.inline
-  def TabBar[T /* <: Route[RouteBase] */]: ComponentType[
-    typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabBarProps[T]
-  ] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabBar[T]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabBarProps[T]]]
+  def TabBar[T /* <: Route[RouteBase] */]: ComponentType[TabBarProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabBar[T]].asInstanceOf[typings.react.reactMod.ComponentType[TabBarProps[T]]]
   @scala.inline
-  def TabView[T /* <: Route[RouteBase] */]: ComponentType[
-    typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabViewProps[T]
-  ] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabView[T]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabViewProps[T]]]
+  def TabView[T /* <: Route[RouteBase] */]: ComponentType[TabViewProps[T]] = js.constructorOf[typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabView[T]].asInstanceOf[typings.react.reactMod.ComponentType[TabViewProps[T]]]
 }
 

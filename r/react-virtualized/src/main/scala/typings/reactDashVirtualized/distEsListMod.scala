@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellPosition
 import typings.reactDashVirtualized.distEsGridMod.GridCellProps
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 object distEsListMod extends js.Object {
   @js.native
   class List ()
-    extends PureComponent[ListProps, js.Object, js.Any] {
+    extends Component[ListProps, js.Object, js.Any] {
     var Grid: js.UndefOr[typings.reactDashVirtualized.distEsGridMod.Grid] = js.native
     def forceUpdateGrid(): Unit = js.native
     /** See Grid#getOffsetForCell */

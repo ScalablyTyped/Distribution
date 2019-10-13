@@ -13,8 +13,7 @@ package object jquery {
   import typings.jquery.JQuery.EventStatic
   import typings.jquery.JQuery.NameValuePair
   import typings.jquery.JQuery.PlainObject
-  import typings.jquery.JQuery.Promise
-  import typings.jquery.JQuery.Thenable
+  import typings.jquery.JQuery.PromiseBase
   import typings.jquery.JQuery.TypeOrArray
   import typings.jquery.JQuery.jqXHR
   import typings.std.DragEvent
@@ -40,12 +39,12 @@ package object jquery {
   type JQueryEasingFunction = js.Function1[/* percent */ Double, Double]
   // tslint:disable-next-line:no-empty-interface
   type JQueryEventConstructor = EventStatic
-  type JQueryGenericPromise[T] = Thenable[T]
+  type JQueryGenericPromise[T] = js.Thenable[T]
   /**
     * @deprecated ​ Deprecated. Use \`{@link JQueryStatic.param JQueryStatic&#91;'param'&#93;}\`.
     */
   type JQueryParam = js.Function2[/* obj */ js.Any, /* traditional */ js.UndefOr[Boolean], String]
-  type JQueryPromise[T] = Promise[T, js.Any, js.Any]
+  type JQueryPromise[T] = PromiseBase[T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any]
   // Legacy types that are not represented in the current type definitions are marked deprecated.
   /**
     * @deprecated ​ Deprecated. Use \`{@link JQuery.Deferred.Callback }\` or \`{@link JQuery.Deferred.CallbackBase }\`.

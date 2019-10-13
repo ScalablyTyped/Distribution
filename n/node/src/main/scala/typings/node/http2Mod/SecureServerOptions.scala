@@ -11,13 +11,16 @@ import typings.node.streamMod.Duplex
 import typings.node.streamMod.ReadableOptions
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
+import typings.node.tlsMod.TlsOptions
 import typings.node.urlMod.URL
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SecureServerOptions extends SecureServerSessionOptions {
+trait SecureServerOptions
+  extends TlsOptions
+     with ServerSessionOptions {
   var allowHTTP1: js.UndefOr[Boolean] = js.undefined
   var origins: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }

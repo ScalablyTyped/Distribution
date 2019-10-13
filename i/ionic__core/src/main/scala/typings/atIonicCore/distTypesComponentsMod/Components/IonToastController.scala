@@ -1,6 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonToastElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToastElement
 import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

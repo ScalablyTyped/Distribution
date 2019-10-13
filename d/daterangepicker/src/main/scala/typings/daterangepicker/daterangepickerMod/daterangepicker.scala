@@ -1,6 +1,6 @@
 package typings.daterangepicker.daterangepickerMod
 
-import typings.daterangepicker.daterangepickerMod.Global.JQuery
+import typings.daterangepicker.daterangepickerMod._Global_.JQuery
 import typings.moment.momentMod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`

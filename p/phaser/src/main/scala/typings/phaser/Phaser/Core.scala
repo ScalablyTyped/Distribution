@@ -38,6 +38,10 @@ object Core extends js.Object {
       */
     val antialias: Boolean = js.native
     /**
+      * Sets the `antialias` property when the WebGL context is created. Setting this value does not impact any subsequent textures that are created, or the canvas style attributes.
+      */
+    val antialiasGL: Boolean = js.native
+    /**
       * The Audio Configuration object.
       */
     val audio: AudioConfig = js.native

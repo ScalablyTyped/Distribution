@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_Disabled
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisabl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ToolbarButton")
 @js.native
 class ToolbarButton ()
-  extends Component[Anon_Disabled, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringdisabl, js.Any, js.Any]
 

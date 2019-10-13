@@ -1,5 +1,6 @@
 package typings.reactDashTransitionDashGroup.switchTransitionMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,5 +32,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("react-transition-group/SwitchTransition", JSImport.Default)
 @js.native
-class default () extends SwitchTransition
+class default ()
+  extends Component[SwitchTransitionProps, js.Object, js.Any]
 

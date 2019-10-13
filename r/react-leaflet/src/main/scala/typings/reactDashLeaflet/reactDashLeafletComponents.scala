@@ -11,8 +11,6 @@ import typings.leaflet.leafletMod.Evented
 import typings.leaflet.leafletMod.Layer
 import typings.leaflet.leafletMod.TileLayer.WMS
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ConsumerProps
-import typings.react.reactMod.ProviderProps
 import typings.reactDashLeaflet.reactDashLeafletMod.AttributionControlProps
 import typings.reactDashLeaflet.reactDashLeafletMod.CircleMarkerProps
 import typings.reactDashLeaflet.reactDashLeafletMod.CircleProps
@@ -74,11 +72,11 @@ object reactDashLeafletComponents extends reactDashLeafletProps {
   @scala.inline
   def LayersControl_[P /* <: LayersControlProps */, E /* <: Layers */]: ComponentType[P] = js.constructorOf[typings.reactDashLeaflet.reactDashLeafletMod.LayersControl_[P, E]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
   @scala.inline
-  def LeafletConsumer: ComponentType[ConsumerProps[LeafletContext]] = typings.reactDashLeaflet.reactDashLeafletMod.LeafletConsumer.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.react.reactMod.ConsumerProps[typings.reactDashLeaflet.reactDashLeafletMod.LeafletContext]]]
+  def LeafletConsumer: ComponentType[LeafletConsumerProps[LeafletContext]] = typings.reactDashLeaflet.reactDashLeafletMod.LeafletConsumer.asInstanceOf[typings.react.reactMod.ComponentType[
+  LeafletConsumerProps[typings.reactDashLeaflet.reactDashLeafletMod.LeafletContext]]]
   @scala.inline
-  def LeafletProvider: ComponentType[ProviderProps[LeafletContext]] = typings.reactDashLeaflet.reactDashLeafletMod.LeafletProvider.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.react.reactMod.ProviderProps[typings.reactDashLeaflet.reactDashLeafletMod.LeafletContext]]]
+  def LeafletProvider: ComponentType[LeafletProviderProps[LeafletContext]] = typings.reactDashLeaflet.reactDashLeafletMod.LeafletProvider.asInstanceOf[typings.react.reactMod.ComponentType[
+  LeafletProviderProps[typings.reactDashLeaflet.reactDashLeafletMod.LeafletContext]]]
   @scala.inline
   def Map[P /* <: MapProps */, E /* <: typings.leaflet.leafletMod.Map */]: ComponentType[P] = js.constructorOf[typings.reactDashLeaflet.reactDashLeafletMod.Map[P, E]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
   @scala.inline

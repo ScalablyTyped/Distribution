@@ -1,12 +1,14 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabProps
-  extends HTMLProps[js.Any]
+  extends AllHTMLAttributes[js.Any]
+     with ClassAttributes[js.Any]
      with CustomRenderedComponent {
   var active: js.UndefOr[Boolean] = js.undefined
   var cssPrefix: js.UndefOr[String] = js.undefined
@@ -17,16 +19,18 @@ trait TabProps
 object TabProps {
   @scala.inline
   def apply(
+    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
+    ClassAttributes: ClassAttributes[js.Any] = null,
     CustomRenderedComponent: CustomRenderedComponent = null,
-    HTMLProps: HTMLProps[js.Any] = null,
     active: js.UndefOr[Boolean] = js.undefined,
     cssPrefix: String = null,
     onTabClick: /* tabId */ Double => _ = null,
     tabId: Int | Double = null
   ): TabProps = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix)
     if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction1(onTabClick))

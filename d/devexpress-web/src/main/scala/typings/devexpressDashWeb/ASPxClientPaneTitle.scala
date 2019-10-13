@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientPaneTitle")
 @js.native
-class ASPxClientPaneTitle () extends ASPxClientWebChartRequiredElement {
+class ASPxClientPaneTitle () extends ASPxClientWebChartElement {
   /**
     * Returns the value that defines how to align the pane title.
     */

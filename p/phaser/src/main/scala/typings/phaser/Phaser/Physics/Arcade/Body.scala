@@ -2,6 +2,7 @@ package typings.phaser.Phaser.Physics.Arcade
 
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Graphics
+import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeBodyBounds
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeBodyCollision
@@ -84,6 +85,15 @@ class Body protected () extends js.Object {
     * Whether this Body interacts with the world boundary.
     */
   var collideWorldBounds: Boolean = js.native
+  /**
+    * The rectangle used for world boundary collisions.
+    * 
+    * By default it is set to the world boundary rectangle. Or, if this Body was
+    * created by a Physics Group, then whatever rectangle that Group defined.
+    * 
+    * You can also change it by using the `Body.setBoundsRectangle` method.
+    */
+  var customBoundsRectangle: Rectangle = js.native
   /**
     * A flag disabling the default horizontal separation of colliding bodies.
     * Pass your own `collideCallback` to the collider.
@@ -250,6 +260,10 @@ class Body protected () extends js.Object {
     * The position of this Body during the previous step.
     */
   var prev: Vector2 = js.native
+  /**
+    * The position of this Body during the previous frame.
+    */
+  var prevFrame: Vector2 = js.native
   /**
     * If this Body is circular, this is the unscaled radius of the Body's boundary, as set by setCircle(), in source pixels.
     * The true radius is equal to `halfWidth`.
@@ -487,6 +501,13 @@ class Body protected () extends js.Object {
     * @param value The bounce, relative to 1.
     */
   def setBounceY(value: Double): Body = js.native
+  /**
+    * Sets a custom collision boundary rectangle. Use if you want to have a custom
+    * boundary instead of the world boundaries.
+    * @param bounds The new boundary rectangle. Pass `null` to use the World bounds.
+    */
+  def setBoundsRectangle(): this.type = js.native
+  def setBoundsRectangle(bounds: Rectangle): this.type = js.native
   /**
     * Sizes and positions this Body's boundary, as a circle.
     * @param radius The radius of the Body, in source pixels.

@@ -103,7 +103,7 @@ object List extends js.Object {
     */
   @js.native
   class ReverseIterator[T] ()
-    extends typings.tstl.containerMod.List.ReverseIterator[T]
+    extends typings.tstl.containerListMod.List.ReverseIterator[T]
   
 }
 
@@ -129,7 +129,7 @@ object list extends js.Object {
     */
   @js.native
   class ReverseIterator[T] ()
-    extends typings.tstl.containerMod.list.ReverseIterator[T]
+    extends typings.tstl.containerListMod.List.ReverseIterator[T]
   
 }
 

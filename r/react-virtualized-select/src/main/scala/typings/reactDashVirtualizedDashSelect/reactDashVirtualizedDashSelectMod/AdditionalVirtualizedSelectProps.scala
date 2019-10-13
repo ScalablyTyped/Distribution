@@ -2,8 +2,8 @@ package typings.reactDashVirtualizedDashSelect.reactDashVirtualizedDashSelectMod
 
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.StatelessComponent
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashVirtualizedDashSelect.Anon_Option
 import scala.scalajs.js
 import scala.scalajs.js.`|`

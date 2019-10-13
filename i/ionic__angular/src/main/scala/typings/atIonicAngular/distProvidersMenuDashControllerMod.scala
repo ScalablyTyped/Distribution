@@ -1,6 +1,6 @@
 package typings.atIonicAngular
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonMenuElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,15 @@
 package typings.reactDashAriaDashMenubutton.reactDashAriaDashMenubuttonMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MenuItemProps[T /* <: HTMLElement */] extends HTMLProps[T] {
+trait MenuItemProps[T /* <: HTMLElement */]
+  extends AllHTMLAttributes[T]
+     with ClassAttributes[T] {
   /**
   	 * The HTML tag for this element. Default: 'span'.
   	 */
@@ -29,13 +32,15 @@ trait MenuItemProps[T /* <: HTMLElement */] extends HTMLProps[T] {
 object MenuItemProps {
   @scala.inline
   def apply[T /* <: HTMLElement */](
-    HTMLProps: HTMLProps[T] = null,
+    AllHTMLAttributes: AllHTMLAttributes[T] = null,
+    ClassAttributes: ClassAttributes[T] = null,
     tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null,
     text: String = null,
     value: js.Any = null
   ): MenuItemProps[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (tag != null) __obj.updateDynamic("tag")(tag)
     if (text != null) __obj.updateDynamic("text")(text)
     if (value != null) __obj.updateDynamic("value")(value)

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object libLinkMod extends js.Object {
   @js.native
   class LinkBase ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsLinkMod.LinkBase
+    extends typings.officeDashUiDashFabricDashReact.libComponentsLinkLinkDotBaseMod.LinkBase
   
   val Link: StatelessComponent[ILinkProps] = js.native
 }

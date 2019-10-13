@@ -1,7 +1,7 @@
 
 # Scala.js typings for phaser
 
-Typings are for version 3.19.0
+Typings are for version 3.20.0
 
 ## Library description:
 A fast, free and fun HTML5 Game Framework for Desktop and Mobile web browsers.

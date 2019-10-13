@@ -1,20 +1,27 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SpinnerProps
-  extends HTMLProps[js.Any] {
+  extends AllHTMLAttributes[js.Any]
+     with ClassAttributes[js.Any] {
   var singleColor: js.UndefOr[Boolean] = js.undefined
 }
 
 object SpinnerProps {
   @scala.inline
-  def apply(HTMLProps: HTMLProps[js.Any] = null, singleColor: js.UndefOr[Boolean] = js.undefined): SpinnerProps = {
+  def apply(
+    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
+    ClassAttributes: ClassAttributes[js.Any] = null,
+    singleColor: js.UndefOr[Boolean] = js.undefined
+  ): SpinnerProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(singleColor)) __obj.updateDynamic("singleColor")(singleColor)
     __obj.asInstanceOf[SpinnerProps]
   }

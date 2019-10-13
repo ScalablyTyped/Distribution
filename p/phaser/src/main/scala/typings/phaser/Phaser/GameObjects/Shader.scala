@@ -89,34 +89,27 @@ class Shader protected ()
     * @param width The width of the Game Object. Default 128.
     * @param height The height of the Game Object. Default 128.
     * @param textures Optional array of texture keys to bind to the iChannel0...3 uniforms. The textures must already exist in the Texture Manager.
+    * @param textureData Additional texture data if you want to create shader with none NPOT textures.
     */
-  def this(scene: Scene, key: String) = this()
-  def this(scene: Scene, key: BaseShader) = this()
-  def this(scene: Scene, key: String, x: Double) = this()
-  def this(scene: Scene, key: BaseShader, x: Double) = this()
-  def this(scene: Scene, key: String, x: Double, y: Double) = this()
-  def this(scene: Scene, key: BaseShader, x: Double, y: Double) = this()
-  def this(scene: Scene, key: String, x: Double, y: Double, width: Double) = this()
-  def this(scene: Scene, key: BaseShader, x: Double, y: Double, width: Double) = this()
-  def this(scene: Scene, key: String, x: Double, y: Double, width: Double, height: Double) = this()
-  def this(scene: Scene, key: BaseShader, x: Double, y: Double, width: Double, height: Double) = this()
   def this(
     scene: Scene,
     key: String,
-    x: Double,
-    y: Double,
-    width: Double,
-    height: Double,
-    textures: js.Array[String]
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    textures: js.UndefOr[js.Array[String]],
+    textureData: js.UndefOr[js.Any]
   ) = this()
   def this(
     scene: Scene,
     key: BaseShader,
-    x: Double,
-    y: Double,
-    width: Double,
-    height: Double,
-    textures: js.Array[String]
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    textures: js.UndefOr[js.Array[String]],
+    textureData: js.UndefOr[js.Any]
   ) = this()
   /**
     * Uint8 view to the vertex raw buffer. Used for uploading vertex buffer resources to the GPU.
@@ -269,7 +262,7 @@ class Shader protected ()
     * Returns the uniform object for the given key, or `null` if the uniform couldn't be found.
     * @param key The key of the uniform to return the value for.
     */
-  def getUniform(key: String): this.type = js.native
+  def getUniform(key: String): js.Any = js.native
   /**
     * Called automatically during render.
     * 
@@ -458,11 +451,14 @@ class Shader protected ()
     * with the given source. Finally, the shader uniforms are initialized.
     * @param key The key of the shader to use from the shader cache, or a BaseShader instance.
     * @param textures Optional array of texture keys to bind to the iChannel0...3 uniforms. The textures must already exist in the Texture Manager.
+    * @param textureData Additional texture data.
     */
   def setShader(key: String): this.type = js.native
   def setShader(key: String, textures: js.Array[String]): this.type = js.native
+  def setShader(key: String, textures: js.Array[String], textureData: js.Any): this.type = js.native
   def setShader(key: BaseShader): this.type = js.native
   def setShader(key: BaseShader, textures: js.Array[String]): this.type = js.native
+  def setShader(key: BaseShader, textures: js.Array[String], textureData: js.Any): this.type = js.native
   /**
     * Sets the internal size of this Game Object, as used for frame or physics body creation.
     * 

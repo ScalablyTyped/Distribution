@@ -1,6 +1,7 @@
 package typings.reactDashBootstrap.libPanelMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapMod.SelectCallback
 import typings.reactDashBootstrap.reactDashBootstrapMod.TransitionCallbacks
 import scala.scalajs.js
@@ -8,8 +9,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PanelProps
-  extends HTMLProps[Panel]
-     with TransitionCallbacks {
+  extends AllHTMLAttributes[Panel]
+     with TransitionCallbacks
+     with ClassAttributes[Panel] {
   var bsStyle: js.UndefOr[String] = js.undefined
   var defaultExpanded: js.UndefOr[Boolean] = js.undefined
   var eventKey: js.UndefOr[js.Any] = js.undefined
@@ -22,7 +24,8 @@ trait PanelProps
 object PanelProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Panel] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Panel] = null,
+    ClassAttributes: ClassAttributes[Panel] = null,
     TransitionCallbacks: TransitionCallbacks = null,
     bsStyle: String = null,
     defaultExpanded: js.UndefOr[Boolean] = js.undefined,
@@ -32,7 +35,8 @@ object PanelProps {
     onToggle: SelectCallback = null
   ): PanelProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, TransitionCallbacks)
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
     if (!js.isUndefined(defaultExpanded)) __obj.updateDynamic("defaultExpanded")(defaultExpanded)

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distCommonjsElementsFlagFlagMod {
-  import typings.react.reactMod.PureComponent
+  import typings.react.reactMod.Component
 
-  type Flag = PureComponent[FlagProps, js.Object, js.Any]
+  type Flag = Component[FlagProps, js.Object, js.Any]
 }

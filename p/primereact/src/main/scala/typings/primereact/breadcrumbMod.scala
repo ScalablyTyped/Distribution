@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsBreadcrumbBreadCrumbMod.BreadCrumbProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object breadcrumbMod extends js.Object {
   @js.native
   class BreadCrumb ()
-    extends typings.primereact.componentsBreadcrumbBreadCrumbMod.BreadCrumb
+    extends Component[BreadCrumbProps, js.Any, js.Any]
   
 }
 

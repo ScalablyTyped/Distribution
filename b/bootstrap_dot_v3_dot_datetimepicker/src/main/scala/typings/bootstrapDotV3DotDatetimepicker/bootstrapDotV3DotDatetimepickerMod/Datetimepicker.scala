@@ -1,6 +1,6 @@
 package typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerMod
 
-import typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerMod.Global.JQuery
+import typings.bootstrapDotV3DotDatetimepicker.bootstrapDotV3DotDatetimepickerMod._Global_.JQuery
 import typings.moment.momentMod.Moment
 import typings.moment.momentMod.MomentBuiltinFormat
 import typings.std.Date

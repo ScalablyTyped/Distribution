@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Windows.Foundation.Collections.ValueSet")
 @js.native
-class ValueSet () extends IPropertySet {
+class ValueSet ()
+  extends IObservableMap[String, js.Any] {
   /* CompleteClass */
   override var onmapchanged: js.Any = js.native
   /* CompleteClass */

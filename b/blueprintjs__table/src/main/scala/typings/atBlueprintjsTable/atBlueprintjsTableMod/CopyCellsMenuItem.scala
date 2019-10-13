@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/table", "CopyCellsMenuItem")
 @js.native
 class CopyCellsMenuItem ()
-  extends typings.atBlueprintjsTable.libEsmInteractionsMenusMod.CopyCellsMenuItem
+  extends typings.atBlueprintjsTable.libEsmInteractionsMenusCopyCellsMenuItemMod.CopyCellsMenuItem
 

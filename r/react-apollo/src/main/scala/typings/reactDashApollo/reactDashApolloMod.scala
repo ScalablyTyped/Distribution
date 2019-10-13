@@ -29,9 +29,9 @@ import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Context
 import typings.react.reactMod.FC
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashApollo.reactDashApolloStrings.client
 import typings.std.Omit
 import scala.scalajs.js

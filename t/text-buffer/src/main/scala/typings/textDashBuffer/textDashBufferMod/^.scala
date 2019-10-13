@@ -2,8 +2,8 @@ package typings.textDashBuffer.textDashBufferMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.textDashBuffer.Anon_ShouldDestroyOnFileDelete
-import typings.textDashBuffer.textDashBufferMod.Global.TextBuffer.TextBuffer
-import typings.textDashBuffer.textDashBufferMod.Global.TextBuffer.TextBufferStatic
+import typings.textDashBuffer.textDashBufferMod._Global_.TextBuffer.TextBuffer
+import typings.textDashBuffer.textDashBufferMod._Global_.TextBuffer.TextBufferStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

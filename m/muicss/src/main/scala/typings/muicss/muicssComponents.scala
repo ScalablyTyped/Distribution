@@ -1,6 +1,5 @@
 package typings.muicss
 
-import typings.muicss.reactMod.DivProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,42 +7,42 @@ import scala.scalajs.js.annotation._
 
 object muicssComponents extends muicssProps {
   @scala.inline
-  def Appbar: ComponentType[DivProps] = js.constructorOf[typings.muicss.libReactAppbarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.DivProps]]
+  def Appbar: ComponentType[AppbarProps] = js.constructorOf[typings.muicss.libReactAppbarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[AppbarProps]]
   @scala.inline
-  def Button: ComponentType[typings.muicss.reactMod.ButtonProps] = js.constructorOf[typings.muicss.libReactButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.ButtonProps]]
+  def Button: ComponentType[ButtonProps] = js.constructorOf[typings.muicss.libReactButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ButtonProps]]
   @scala.inline
-  def Checkbox: ComponentType[typings.muicss.reactMod.CheckboxProps] = js.constructorOf[typings.muicss.libReactCheckboxMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.CheckboxProps]]
+  def Checkbox: ComponentType[CheckboxProps] = js.constructorOf[typings.muicss.libReactCheckboxMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CheckboxProps]]
   @scala.inline
-  def Col: ComponentType[typings.muicss.reactMod.ColProps] = js.constructorOf[typings.muicss.libReactColMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.ColProps]]
+  def Col: ComponentType[ColProps] = js.constructorOf[typings.muicss.libReactColMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ColProps]]
   @scala.inline
-  def Container: ComponentType[typings.muicss.reactMod.ContainerProps] = js.constructorOf[typings.muicss.libReactContainerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.ContainerProps]]
+  def Container: ComponentType[ContainerProps] = js.constructorOf[typings.muicss.libReactContainerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ContainerProps]]
   @scala.inline
-  def Divider: ComponentType[typings.muicss.reactMod.DividerProps] = js.constructorOf[typings.muicss.libReactDividerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.DividerProps]]
+  def Divider: ComponentType[DividerProps] = js.constructorOf[typings.muicss.libReactDividerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DividerProps]]
   @scala.inline
-  def Dropdown: ComponentType[typings.muicss.reactMod.DropdownProps] = js.constructorOf[typings.muicss.libReactDropdownMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.DropdownProps]]
+  def Dropdown: ComponentType[DropdownProps] = js.constructorOf[typings.muicss.libReactDropdownMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DropdownProps]]
   @scala.inline
-  def DropdownDashItem: ComponentType[typings.muicss.reactMod.DropdownItemProps] = js.constructorOf[typings.muicss.libReactDropdownDashItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.DropdownItemProps]]
+  def DropdownDashItem: ComponentType[DropdownDashItemProps] = js.constructorOf[typings.muicss.libReactDropdownDashItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DropdownDashItemProps]]
   @scala.inline
-  def DropdownItem: ComponentType[typings.muicss.reactMod.DropdownItemProps] = js.constructorOf[typings.muicss.reactMod.DropdownItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.DropdownItemProps]]
+  def DropdownItem: ComponentType[DropdownItemProps] = js.constructorOf[typings.muicss.reactMod.DropdownItem].asInstanceOf[typings.react.reactMod.ComponentType[DropdownItemProps]]
   @scala.inline
-  def Form: ComponentType[typings.muicss.reactMod.FormProps] = js.constructorOf[typings.muicss.libReactFormMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.FormProps]]
+  def Form: ComponentType[FormProps] = js.constructorOf[typings.muicss.libReactFormMod.default].asInstanceOf[typings.react.reactMod.ComponentType[FormProps]]
   @scala.inline
-  def Input: ComponentType[typings.muicss.reactMod.InputProps] = js.constructorOf[typings.muicss.libReactInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.InputProps]]
+  def Input: ComponentType[InputProps] = js.constructorOf[typings.muicss.libReactInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[InputProps]]
   @scala.inline
-  def Option: ComponentType[typings.muicss.reactMod.OptionProps] = js.constructorOf[typings.muicss.libReactOptionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.OptionProps]]
+  def Option: ComponentType[OptionProps] = js.constructorOf[typings.muicss.libReactOptionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[OptionProps]]
   @scala.inline
-  def Panel: ComponentType[typings.muicss.reactMod.PanelProps] = js.constructorOf[typings.muicss.libReactPanelMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.PanelProps]]
+  def Panel: ComponentType[PanelProps] = js.constructorOf[typings.muicss.libReactPanelMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PanelProps]]
   @scala.inline
-  def Radio: ComponentType[typings.muicss.reactMod.RadioProps] = js.constructorOf[typings.muicss.libReactRadioMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.RadioProps]]
+  def Radio: ComponentType[RadioProps] = js.constructorOf[typings.muicss.libReactRadioMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RadioProps]]
   @scala.inline
-  def Row: ComponentType[typings.muicss.reactMod.RowProps] = js.constructorOf[typings.muicss.libReactRowMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.RowProps]]
+  def Row: ComponentType[RowProps] = js.constructorOf[typings.muicss.libReactRowMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RowProps]]
   @scala.inline
-  def Select: ComponentType[typings.muicss.reactMod.SelectProps] = js.constructorOf[typings.muicss.libReactSelectMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.SelectProps]]
+  def Select: ComponentType[SelectProps] = js.constructorOf[typings.muicss.libReactSelectMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SelectProps]]
   @scala.inline
-  def Tab: ComponentType[typings.muicss.reactMod.TabProps] = js.constructorOf[typings.muicss.libReactTabMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.TabProps]]
+  def Tab: ComponentType[TabProps] = js.constructorOf[typings.muicss.libReactTabMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabProps]]
   @scala.inline
-  def Tabs: ComponentType[typings.muicss.reactMod.TabsProps] = js.constructorOf[typings.muicss.libReactTabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.TabsProps]]
+  def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.muicss.libReactTabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
   @scala.inline
-  def Textarea: ComponentType[typings.muicss.reactMod.TextareaProps] = js.constructorOf[typings.muicss.libReactTextareaMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muicss.reactMod.TextareaProps]]
+  def Textarea: ComponentType[TextareaProps] = js.constructorOf[typings.muicss.libReactTextareaMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TextareaProps]]
 }
 

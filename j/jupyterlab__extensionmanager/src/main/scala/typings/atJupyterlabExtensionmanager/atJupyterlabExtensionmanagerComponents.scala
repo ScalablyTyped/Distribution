@@ -1,6 +1,5 @@
 package typings.atJupyterlabExtensionmanager
 
-import typings.atJupyterlabExtensionmanager.libWidgetMod.CollapsibleSection.IProperties
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 object atJupyterlabExtensionmanagerComponents extends atJupyterlabExtensionmanagerProps {
   @scala.inline
-  def CollapsibleSection: ComponentType[IProperties] = js.constructorOf[typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.CollapsibleSection].asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.CollapsibleSection.IProperties]]
+  def CollapsibleSection: ComponentType[CollapsibleSectionProps] = js.constructorOf[typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.CollapsibleSection].asInstanceOf[typings.react.reactMod.ComponentType[CollapsibleSectionProps]]
   @scala.inline
-  def CollapsibleSection_ : ComponentType[IProperties] = js.constructorOf[typings.atJupyterlabExtensionmanager.libWidgetMod.CollapsibleSection_].asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.CollapsibleSection.IProperties]]
+  def CollapsibleSection_ : ComponentType[CollapsibleSection_Props] = js.constructorOf[typings.atJupyterlabExtensionmanager.libWidgetMod.CollapsibleSection_].asInstanceOf[typings.react.reactMod.ComponentType[CollapsibleSection_Props]]
   @scala.inline
-  def ListView: ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.ListView.IProperties] = typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.ListView.asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.ListView.IProperties]]
+  def ListView: ComponentType[ListViewProps] = typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.ListView.asInstanceOf[typings.react.reactMod.ComponentType[ListViewProps]]
   @scala.inline
-  def SearchBar: ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.SearchBar.IProperties] = js.constructorOf[typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.SearchBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.SearchBar.IProperties]]
+  def SearchBar: ComponentType[SearchBarProps] = js.constructorOf[typings.atJupyterlabExtensionmanager.atJupyterlabExtensionmanagerMod.SearchBar].asInstanceOf[typings.react.reactMod.ComponentType[SearchBarProps]]
   @scala.inline
-  def SearchBar_ : ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.SearchBar.IProperties] = js.constructorOf[typings.atJupyterlabExtensionmanager.libWidgetMod.SearchBar_].asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabExtensionmanager.libWidgetMod.SearchBar.IProperties]]
+  def SearchBar_ : ComponentType[SearchBar_Props] = js.constructorOf[typings.atJupyterlabExtensionmanager.libWidgetMod.SearchBar_].asInstanceOf[typings.react.reactMod.ComponentType[SearchBar_Props]]
 }
 

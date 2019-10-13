@@ -23,7 +23,7 @@ object bugsnagDashJsMod extends js.Object {
     
     @js.native
     class default ()
-      extends typings.bugsnagDashJs.typesClientMod.default
+      extends typings.bugsnagDashJs.typesClientMod.Client
     
   }
   

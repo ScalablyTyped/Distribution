@@ -16,8 +16,8 @@ object atNivoPieComponents extends atNivoPieProps {
   def PieCanvas: ComponentType[PieCanvasProps with Dimensions] = js.constructorOf[typings.atNivoPie.atNivoPieMod.PieCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoPie.atNivoPieMod.PieCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
   @scala.inline
-  def ResponsivePie: ComponentType[PieSvgProps] = js.constructorOf[typings.atNivoPie.atNivoPieMod.ResponsivePie].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoPie.atNivoPieMod.PieSvgProps]]
+  def ResponsivePie: ComponentType[ResponsivePieProps] = js.constructorOf[typings.atNivoPie.atNivoPieMod.ResponsivePie].asInstanceOf[typings.react.reactMod.ComponentType[ResponsivePieProps]]
   @scala.inline
-  def ResponsivePieCanvas: ComponentType[PieCanvasProps] = js.constructorOf[typings.atNivoPie.atNivoPieMod.ResponsivePieCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoPie.atNivoPieMod.PieCanvasProps]]
+  def ResponsivePieCanvas: ComponentType[ResponsivePieCanvasProps] = js.constructorOf[typings.atNivoPie.atNivoPieMod.ResponsivePieCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsivePieCanvasProps]]
 }
 

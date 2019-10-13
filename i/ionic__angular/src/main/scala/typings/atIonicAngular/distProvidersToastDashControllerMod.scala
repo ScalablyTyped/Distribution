@@ -1,7 +1,7 @@
 package typings.atIonicAngular
 
 import typings.atIonicAngular.distUtilOverlayMod.OverlayBaseController
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonToastElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToastElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

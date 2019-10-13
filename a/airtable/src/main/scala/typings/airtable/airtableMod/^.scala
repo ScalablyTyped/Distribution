@@ -1,7 +1,7 @@
 package typings.airtable.airtableMod
 
-import typings.airtable.airtableMod.Global.Airtable
-import typings.airtable.airtableMod.Global.Airtable.AirtableOptions
+import typings.airtable.airtableMod._Global_.Airtable
+import typings.airtable.airtableMod._Global_.Airtable.AirtableOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

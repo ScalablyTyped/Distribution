@@ -4,11 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TupleType extends GenericType {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.typescript.typescriptMod.FlowType because Already inherited
+- typings.typescript.typescriptMod.Type because Already inherited
+- typings.typescript.typescriptMod.ObjectType because Already inherited
+- typings.typescript.typescriptMod.TypeReference because var conflicts: aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol. Inlined target, typeArguments */ trait TupleType extends InterfaceType {
   var associatedNames: js.UndefOr[js.Array[__String]] = js.undefined
   var hasRestElement: Boolean
   var minLength: Double
   var readonly: Boolean
+  var target: GenericType
+  var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
 }
 
 object TupleType {

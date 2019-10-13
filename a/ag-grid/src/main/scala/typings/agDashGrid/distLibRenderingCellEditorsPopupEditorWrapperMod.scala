@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ag-grid/dist/lib/rendering/cellEditors/popupEditorWrapper", JSImport.Namespace)
 @js.native
 object distLibRenderingCellEditorsPopupEditorWrapperMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.agDashGrid.distLibInterfacesIComponentMod.IComponent because Already inherited
-  - typings.agDashGrid.distLibRenderingCellEditorsICellEditorMod.ICellEditorComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @js.native
+  @js.native
   class PopupEditorWrapper protected ()
     extends Component
        with ICellEditor {

@@ -434,9 +434,11 @@ object Tweens extends js.Object {
       */
     def getTimeScale(): Double = js.native
     /**
-      * Returns the current value of the Tween.
+      * Returns the current value of the specified Tween Data.
+      * @param index The Tween Data to return the value from. Default 0.
       */
     def getValue(): Double = js.native
+    def getValue(index: integer): Double = js.native
     /**
       * See if this Tween is currently acting upon the given target.
       * @param target The target to check against this Tween.
@@ -576,8 +578,9 @@ object Tweens extends js.Object {
       */
     def update(timestamp: Double, delta: Double): Boolean = js.native
     /**
-      * Updates the value of a property of this Tween to a new value, without adjusting the
-      * Tween duration or current progress.
+      * Updates the 'end' value of the given property across all matching targets.
+      * 
+      * Calling this does not adjust the duration of the tween, or the current progress.
       * 
       * You can optionally tell it to set the 'start' value to be the current value (before the change).
       * @param key The property to set the new value for.

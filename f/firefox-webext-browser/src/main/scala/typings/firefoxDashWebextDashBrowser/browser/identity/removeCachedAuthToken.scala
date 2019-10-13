@@ -13,6 +13,6 @@ object removeCachedAuthToken extends js.Object {
     * Removes an OAuth2 access token from the Identity API's token cache.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def apply(details: Anon_Token): js.Promise[js.UndefOr[Anon_Email]] = js.native
+  def apply(details: Anon_Token): js.Promise[Anon_Email] = js.native
 }
 

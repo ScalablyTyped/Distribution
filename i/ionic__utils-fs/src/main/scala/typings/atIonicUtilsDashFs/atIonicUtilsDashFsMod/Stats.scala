@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/utils-fs", "Stats")
 @js.native
 class Stats ()
-  extends typings.fsDashExtra.fsDashExtraMod.Stats
+  extends typings.node.fsMod.Stats
 

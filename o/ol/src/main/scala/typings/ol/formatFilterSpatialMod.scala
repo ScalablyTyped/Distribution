@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterSpatialMod.Spatial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterSpatialMod extends js.Object {
   @js.native
-  class default protected () extends Spatial {
+  class default protected ()
+    extends typings.ol.formatFilterFilterMod.default {
     def this(tagName: String, geometryName: String, geometry: typings.ol.geomGeometryMod.default) = this()
     def this(
       tagName: String,

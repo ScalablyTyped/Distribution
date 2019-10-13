@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object libBasicICollectionMod extends js.Object {
   @js.native
   trait ICollection[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */]
-    extends Container[T, SourceT, IteratorT, ReverseT, T]
+    extends typings.tstl.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T]
        with IEventDispatcher[T, SourceT, IteratorT, ReverseT] {
     /**
       * Iterator to the first element.

@@ -29,7 +29,7 @@ class ListPaymentRefundsRequest () extends js.Object {
   /**
     * The order in which results are listed. - `ASC` - oldest to newest - `DESC` - newest to oldest (default).
     */
-  var sort_order: js.UndefOr[SortOrderEnum] = js.native
+  var sort_order: js.UndefOr[SortOrderType] = js.native
   /**
     * If provided, only refunds with the given source type are returned.
     * - `CARD` - List refunds only for payments where card was specified as payment source.

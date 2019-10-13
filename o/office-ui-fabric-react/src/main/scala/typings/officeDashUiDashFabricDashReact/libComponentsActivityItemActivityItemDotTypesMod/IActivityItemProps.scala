@@ -3,8 +3,8 @@ package typings.officeDashUiDashFabricDashReact.libComponentsActivityItemActivit
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaSharedProps
 import typings.react.reactMod.AllHTMLAttributes
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

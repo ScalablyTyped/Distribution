@@ -1,10 +1,12 @@
 package typings.reactDashBootstrap.libPaginationPrevMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-bootstrap/lib/PaginationPrev", JSImport.Namespace)
 @js.native
-class ^ () extends PaginationPrev
+class ^ ()
+  extends Component[PaginationPrevProps, js.Object, js.Any]
 

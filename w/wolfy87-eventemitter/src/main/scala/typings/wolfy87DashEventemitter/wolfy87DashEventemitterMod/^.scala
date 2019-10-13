@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("wolfy87-eventemitter", JSImport.Namespace)
 @js.native
-class ^ () extends EventEmitter
+class ^ ()
+  extends typings.wolfy87DashEventemitter.wolfy87DashEventemitterMod.Wolfy87EventEmitter.EventEmitter
 

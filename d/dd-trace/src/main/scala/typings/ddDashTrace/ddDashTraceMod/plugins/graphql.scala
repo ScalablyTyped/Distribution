@@ -1,6 +1,7 @@
 package typings.ddDashTrace.ddDashTraceMod.plugins
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ddDashTrace.ddDashTraceMod.Analyzable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +30,9 @@ import scala.scalajs.js.annotation._
   * }
   * ```
   */
-trait graphql extends Instrumentation {
+trait graphql
+  extends Integration
+     with Analyzable {
   /**
     * Whether to collapse list items into a single element. (i.e. single
     * `users.*.name` span instead of `users.0.name`, `users.1.name`, etc)

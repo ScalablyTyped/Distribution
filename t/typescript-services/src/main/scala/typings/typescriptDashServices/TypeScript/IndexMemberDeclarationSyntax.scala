@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.typescriptDashServices.TypeScript.ISyntaxElement because Already inherited
-- typings.typescriptDashServices.TypeScript.IClassElementSyntax because Already inherited */ @JSGlobal("TypeScript.IndexMemberDeclarationSyntax")
+@JSGlobal("TypeScript.IndexMemberDeclarationSyntax")
 @js.native
 class IndexMemberDeclarationSyntax protected () extends SyntaxNode {
   def this(

@@ -4,7 +4,7 @@ import typings.jquery.JQuery.Ajax.ErrorTextStatus
 import typings.jquery.JQuery.Ajax.StatusCodeCallbacks
 import typings.jquery.JQuery.Ajax.SuccessTextStatus
 import typings.jquery.JQuery.Ajax.TextStatus
-import typings.jquery.JQuery.Deferred.Callback3
+import typings.jquery.JQuery.Deferred.CallbackBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,8 +39,8 @@ trait jqXHR[TResolve]
 @JSGlobal("JQuery.jqXHR")
 @js.native
 object jqXHR extends js.Object {
-  type AlwaysCallback[TResolve, TjqXHR] = Callback3[TResolve | TjqXHR, TextStatus, TjqXHR | String]
-  type DoneCallback[TResolve, TjqXHR] = Callback3[TResolve, SuccessTextStatus, TjqXHR]
-  type FailCallback[TjqXHR] = Callback3[TjqXHR, ErrorTextStatus, String]
+  type AlwaysCallback[TResolve, TjqXHR] = CallbackBase[TResolve | TjqXHR, TextStatus, TjqXHR | String, scala.Nothing]
+  type DoneCallback[TResolve, TjqXHR] = CallbackBase[TResolve, SuccessTextStatus, TjqXHR, scala.Nothing]
+  type FailCallback[TjqXHR] = CallbackBase[TjqXHR, ErrorTextStatus, String, scala.Nothing]
 }
 

@@ -1,14 +1,17 @@
 package typings.csvDashStringify.csvDashStringifyMod
 
 import typings.node.Buffer
-import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Stringifier extends ReadWriteStream {
+trait Stringifier
+  extends ReadableStream
+     with WritableStream {
   def write(buffer: String, cb: js.Function2[/* error */ js.UndefOr[Error], /* output */ String, Unit]): Boolean = js.native
   def write(buffer: Buffer): Boolean = js.native
   def write(buffer: Buffer, cb: js.Function2[/* error */ js.UndefOr[Error], /* output */ String, Unit]): Boolean = js.native

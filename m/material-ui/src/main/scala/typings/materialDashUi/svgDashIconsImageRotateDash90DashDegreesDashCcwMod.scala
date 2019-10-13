@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsImageRotateDash90DashDegreesDashCcwMod.ImageRotate90DegreesCcw
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsImageRotateDash90DashDegreesDashCcwMod extends js.Object {
   @js.native
-  class ImageRotate90DegreesCcw () extends SvgIcon
+  class ImageRotate90DegreesCcw ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends ImageRotate90DegreesCcw
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

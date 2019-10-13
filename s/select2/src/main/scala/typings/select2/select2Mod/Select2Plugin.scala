@@ -2,7 +2,7 @@ package typings.select2.select2Mod
 
 import typings.select2.Anon_Key
 import typings.select2.Anon_Require
-import typings.select2.select2Mod.Global.JQuery
+import typings.select2.select2Mod._Global_.JQuery
 import typings.select2.select2Strings.close
 import typings.select2.select2Strings.data
 import typings.select2.select2Strings.destroy

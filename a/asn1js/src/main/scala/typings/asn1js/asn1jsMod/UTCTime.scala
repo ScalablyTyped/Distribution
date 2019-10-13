@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "UTCTime")
 @js.native
-class UTCTime () extends VisibleString {
+class UTCTime () extends LocalSimpleStringBlock {
   def this(params: UTCTimeParams) = this()
   var day: Double = js.native
   var hour: Double = js.native

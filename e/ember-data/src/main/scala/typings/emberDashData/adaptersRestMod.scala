@@ -1,6 +1,6 @@
 package typings.emberDashData
 
-import typings.emberDashData.emberDashDataMod.default.RESTAdapter
+import typings.emberDashData.emberDashDataMod.DS.RESTAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

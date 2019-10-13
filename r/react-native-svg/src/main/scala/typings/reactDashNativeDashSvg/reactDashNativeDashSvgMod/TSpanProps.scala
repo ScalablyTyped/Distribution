@@ -14,7 +14,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TSpanProps
-  extends CommonPathProps
+  extends TransformProps
+     with FillProps
+     with StrokeProps
+     with ClipProps
+     with VectorEffectProps
+     with ResponderProps
+     with TouchableProps
+     with DefinitionProps
+     with CommonMaskProps
      with FontProps {
   var dx: js.UndefOr[NumberArray] = js.undefined
   var dy: js.UndefOr[NumberArray] = js.undefined

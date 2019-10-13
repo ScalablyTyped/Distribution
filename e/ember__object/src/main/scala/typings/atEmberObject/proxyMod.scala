@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@ember/object/proxy", JSImport.Namespace)
 @js.native
 object proxyMod extends js.Object {
-  @js.native
-  trait ObjectProxy[T /* <: js.Object */]
-    extends typings.atEmberObject.atEmberObjectMod.default {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : CoreObject.extend(Observable) * / any */ @js.native
+  trait ObjectProxy[T /* <: js.Object */] extends js.Object {
     /**
       * The object whose properties will be forwarded.
       */

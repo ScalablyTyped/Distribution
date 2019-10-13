@@ -12,16 +12,16 @@ package object knuddelsDashUserappsDashApiMod {
     - scala.Double
     - scala.Boolean
     - typings.std.Date
-    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.Json
-    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.JsonArray
+    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.Json
+    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.JsonArray
     - `js.undefined`
     - scala.Nothing
   */
   type JsonData = js.UndefOr[_JsonData | String | Double | Boolean | Date]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.Json
-    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.KnuddelsEventArray
+    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.Json
+    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.KnuddelsEventArray
   */
   type KnuddelsEvent = _KnuddelsEvent | String
   /* Rewritten from type alias, can be one of: 
@@ -29,8 +29,8 @@ package object knuddelsDashUserappsDashApiMod {
     - scala.Double
     - scala.Boolean
     - typings.std.Date
-    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.KnuddelsJson
-    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.KnuddelsJsonArray
+    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.KnuddelsJson
+    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.KnuddelsJsonArray
     - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.KnuddelsSerializable
     - `js.undefined`
     - scala.Nothing
@@ -40,8 +40,8 @@ package object knuddelsDashUserappsDashApiMod {
     - java.lang.String
     - scala.Double
     - scala.Boolean
-    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.User
-    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.BotUser
+    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.User
+    - typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.BotUser
     - `js.undefined`
     - scala.Nothing
   */

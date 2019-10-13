@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object show extends js.Object {
   /** Show the downloaded file in its folder in a file manager. */
-  def apply(downloadId: Double): js.Promise[js.UndefOr[Boolean]] = js.native
+  def apply(downloadId: Double): js.Promise[Boolean] = js.native
 }
 

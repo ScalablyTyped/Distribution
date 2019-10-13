@@ -6,6 +6,7 @@ import typings.leaflet.leafletMod.LeafletEvent
 import typings.leaflet.leafletMod.LeafletMouseEvent
 import typings.leaflet.leafletMod.LineCapShape
 import typings.leaflet.leafletMod.LineJoinShape
+import typings.leaflet.leafletMod.PolylineOptions
 import typings.leaflet.leafletMod.PopupEvent
 import typings.leaflet.leafletMod.Renderer
 import scala.scalajs.js
@@ -13,13 +14,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.leaflet.leafletMod.LayerOptions because Already inherited
-- typings.leaflet.leafletMod.InteractiveLayerOptions because Already inherited
-- typings.leaflet.leafletMod.PathOptions because Already inherited
-- typings.leaflet.leafletMod.PolylineOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined noClip, smoothFactor */ trait PolylineProps extends PathProps {
-  var noClip: js.UndefOr[Boolean] = js.undefined
+- typings.reactDashLeaflet.reactDashLeafletMod.MapComponentProps because var conflicts: pane. Inlined leaflet
+- typings.reactDashLeaflet.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait PolylineProps
+  extends PolylineOptions
+     with PathEvents {
+  var children: js.UndefOr[Children] = js.undefined
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
   var positions: js.Array[js.Array[LatLngExpression] | LatLngExpression]
-  var smoothFactor: js.UndefOr[Double] = js.undefined
 }
 
 object PolylineProps {

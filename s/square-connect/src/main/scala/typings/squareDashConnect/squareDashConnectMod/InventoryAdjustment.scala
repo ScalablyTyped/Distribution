@@ -28,7 +28,7 @@ class InventoryAdjustment () extends js.Object {
     * The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment.
     * See [InventoryState](#type-inventorystate) for possible values.
     */
-  var from_state: js.UndefOr[InventoryStateEnum] = js.native
+  var from_state: js.UndefOr[InventoryStateType] = js.native
   /**
     * The read-only Square ID of the Square goods receipt that caused the adjustment. Only relevant for state
     * transitions from the Square for Retail app.
@@ -78,7 +78,7 @@ class InventoryAdjustment () extends js.Object {
     * The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment.
     * See [InventoryState](#type-inventorystate) for possible values.
     */
-  var to_state: js.UndefOr[InventoryStateEnum] = js.native
+  var to_state: js.UndefOr[InventoryStateType] = js.native
   /**
     * The read-only total price paid for goods associated with the adjustment.
     * Present if and only if `to_state` is `SOLD`. Always non-negative.

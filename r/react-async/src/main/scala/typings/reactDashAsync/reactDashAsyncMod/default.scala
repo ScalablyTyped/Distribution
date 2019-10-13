@@ -1,6 +1,7 @@
 package typings.reactDashAsync.reactDashAsyncMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod.Component
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashAsync.Anon_Children
 import typings.reactDashAsync.Anon_ChildrenInitial
 import typings.reactDashAsync.Anon_ChildrenPersist
@@ -12,7 +13,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-async", JSImport.Default)
 @js.native
-class default[T] () extends Async[T]
+class default[T] ()
+  extends Component[AsyncProps[T], AsyncState[T], js.Any]
 
 @JSImport("react-async", JSImport.Default)
 @js.native

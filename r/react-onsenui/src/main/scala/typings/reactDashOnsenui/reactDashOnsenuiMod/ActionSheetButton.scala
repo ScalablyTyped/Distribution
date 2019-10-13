@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_E
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringiconstClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ActionSheetButton")
 @js.native
 class ActionSheetButton ()
-  extends Component[Anon_E, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringiconstClassName, js.Any, js.Any]
 

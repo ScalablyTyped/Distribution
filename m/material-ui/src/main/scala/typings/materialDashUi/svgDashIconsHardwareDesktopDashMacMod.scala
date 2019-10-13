@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsHardwareDesktopDashMacMod.HardwareDesktopMac
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsHardwareDesktopDashMacMod extends js.Object {
   @js.native
-  class HardwareDesktopMac () extends SvgIcon
+  class HardwareDesktopMac ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends HardwareDesktopMac
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

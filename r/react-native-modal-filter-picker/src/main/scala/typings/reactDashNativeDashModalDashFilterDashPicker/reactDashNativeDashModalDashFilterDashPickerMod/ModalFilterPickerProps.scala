@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashModalDashFilterDashPicker.reactDashNativeDashModalDashFilterDashPickerMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.FlatListProps
 import typings.reactDashNative.reactDashNativeMod.KeyboardAvoidingView
 import typings.reactDashNative.reactDashNativeMod.ListViewProps

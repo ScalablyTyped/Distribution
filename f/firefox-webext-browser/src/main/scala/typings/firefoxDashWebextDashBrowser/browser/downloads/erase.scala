@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object erase extends js.Object {
   /** Erase matching DownloadItems from history */
-  def apply(query: DownloadQuery): js.Promise[js.UndefOr[js.Array[Double]]] = js.native
+  def apply(query: DownloadQuery): js.Promise[js.Array[Double]] = js.native
 }
 

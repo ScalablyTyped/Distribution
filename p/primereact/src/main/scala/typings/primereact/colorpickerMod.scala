@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsColorpickerColorPickerMod.ColorPickerProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object colorpickerMod extends js.Object {
   @js.native
   class ColorPicker ()
-    extends typings.primereact.componentsColorpickerColorPickerMod.ColorPicker
+    extends Component[ColorPickerProps, js.Any, js.Any]
   
 }
 

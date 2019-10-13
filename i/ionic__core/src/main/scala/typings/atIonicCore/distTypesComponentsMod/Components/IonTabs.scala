@@ -1,6 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonTabElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabElement
 import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouteID
 import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouteWrite
 import scala.scalajs.js

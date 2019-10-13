@@ -4,7 +4,7 @@ import typings.atAngularCore.atAngularCoreMod.ComponentFactoryResolver
 import typings.atAngularCore.atAngularCoreMod.Injector
 import typings.atIonicAngular.distProvidersAngularDashDelegateMod.AngularDelegate
 import typings.atIonicAngular.distUtilOverlayMod.OverlayBaseController
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPopoverElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPopoverElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

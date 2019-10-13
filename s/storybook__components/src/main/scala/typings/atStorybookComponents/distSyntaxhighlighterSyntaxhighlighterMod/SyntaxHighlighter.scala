@@ -2,8 +2,8 @@ package typings.atStorybookComponents.distSyntaxhighlighterSyntaxhighlighterMod
 
 import typings.atStorybookComponents.Anon_Copied
 import typings.react.reactMod.Component
-import typings.react.reactMod.MouseEvent
 import typings.std.Element
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ class SyntaxHighlighter ()
     ] {
   @JSName("state")
   var state_SyntaxHighlighter: Anon_Copied = js.native
-  def onClick(e: MouseEvent[Element, typings.std.MouseEvent]): Unit = js.native
+  def onClick(e: typings.react.reactMod.MouseEvent[Element, MouseEvent]): Unit = js.native
 }
 
 /* static members */

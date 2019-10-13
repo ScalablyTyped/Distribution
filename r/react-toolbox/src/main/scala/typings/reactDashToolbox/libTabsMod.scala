@@ -1,5 +1,8 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libTabsTabMod.TabProps
+import typings.reactDashToolbox.libTabsTabsMod.TabsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +12,11 @@ import scala.scalajs.js.annotation._
 object libTabsMod extends js.Object {
   @js.native
   class Tab ()
-    extends typings.reactDashToolbox.libTabsTabMod.Tab
+    extends Component[TabProps, js.Object, js.Any]
   
   @js.native
   class Tabs ()
-    extends typings.reactDashToolbox.libTabsTabsMod.Tabs
+    extends Component[TabsProps, js.Object, js.Any]
   
 }
 

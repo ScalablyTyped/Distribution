@@ -1,7 +1,7 @@
 
 # Scala.js typings for getenv
 
-Typings are for version 0.7
+Typings are for version 1.0
 
 ## Library description:
 Get and typecast environment variables.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.earth.KmlStyle")
 @js.native
-class KmlStyle () extends KmlStyleSelector {
+class KmlStyle () extends KmlObject {
   /**
     * Specifies the drawing style for balloons.
     */

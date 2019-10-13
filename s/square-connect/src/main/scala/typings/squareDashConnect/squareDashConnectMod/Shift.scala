@@ -1,6 +1,7 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.Shift.StatusEnum
+import typings.squareDashConnect.squareDashConnectStrings.CLOSED
+import typings.squareDashConnect.squareDashConnectStrings.OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +42,7 @@ class Shift () extends js.Object {
   /**
     * Describes working state of the current `Shift`. See [ShiftStatus](#type-shiftstatus) for possible values.
     */
-  var status: js.UndefOr[StatusEnum] = js.native
+  var status: js.UndefOr[OPEN | CLOSED] = js.native
   /**
     * Read-only convenience value that is calculated from the location based on `location_id`. Format: the IANA
     * Timezone Database identifier for the location timezone.
@@ -60,27 +61,5 @@ class Shift () extends js.Object {
     * Job and pay related information.
     */
   var wage: js.UndefOr[ShiftWage] = js.native
-}
-
-@JSImport("square-connect", "Shift")
-@js.native
-object Shift extends js.Object {
-  @js.native
-  sealed trait StatusEnum extends js.Object
-  
-  @js.native
-  object StatusEnum extends js.Object {
-    @js.native
-    sealed trait CLOSED extends StatusEnum
-    
-    @js.native
-    sealed trait OPEN extends StatusEnum
-    
-    /* "CLOSED" */ val CLOSED: typings.squareDashConnect.squareDashConnectMod.Shift.StatusEnum.CLOSED with String = js.native
-    /* "OPEN" */ val OPEN: typings.squareDashConnect.squareDashConnectMod.Shift.StatusEnum.OPEN with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[StatusEnum with String] = js.native
-  }
-  
 }
 

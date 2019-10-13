@@ -33,7 +33,7 @@ trait Typeofbookmarks extends js.Object {
   /**
     * Creates a bookmark or folder under the specified parentId. If url is NULL or missing, it will be a folder.
     */
-  def create(bookmark: CreateDetails): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
+  def create(bookmark: CreateDetails): js.Promise[BookmarkTreeNode] = js.native
   /* bookmarks functions */
   /**
     * Retrieves the specified BookmarkTreeNode(s).
@@ -56,7 +56,7 @@ trait Typeofbookmarks extends js.Object {
   /** Retrieves the entire Bookmarks hierarchy. */
   def getTree(): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /** Moves the specified BookmarkTreeNode to the provided location. */
-  def move(id: String, destination: Anon_Index): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
+  def move(id: String, destination: Anon_Index): js.Promise[BookmarkTreeNode] = js.native
   /** Removes a bookmark or an empty bookmark folder. */
   def remove(id: String): js.Promise[Unit] = js.native
   /** Recursively removes a bookmark folder. */
@@ -74,6 +74,6 @@ trait Typeofbookmarks extends js.Object {
     * Updates the properties of a bookmark or folder. Specify only the properties that you want to change; unspecified
     * properties will be left unchanged. **Note:** Currently, only 'title' and 'url' are supported.
     */
-  def update(id: String, changes: Anon_Title): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
+  def update(id: String, changes: Anon_Title): js.Promise[BookmarkTreeNode] = js.native
 }
 

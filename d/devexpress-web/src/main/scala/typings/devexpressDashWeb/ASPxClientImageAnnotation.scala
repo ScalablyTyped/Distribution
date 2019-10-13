@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientImageAnnotation")
 @js.native
-class ASPxClientImageAnnotation () extends ASPxClientAnnotation
+class ASPxClientImageAnnotation () extends ASPxClientWebChartElementNamed
 

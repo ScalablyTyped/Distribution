@@ -1,10 +1,12 @@
 package typings.reactDashMdl.reactDashMdlMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "FooterLinkList")
 @js.native
-class FooterLinkList () extends __MDLComponent[FooterLinkListProps]
+class FooterLinkList ()
+  extends Component[FooterLinkListProps, js.Object, js.Any]
 

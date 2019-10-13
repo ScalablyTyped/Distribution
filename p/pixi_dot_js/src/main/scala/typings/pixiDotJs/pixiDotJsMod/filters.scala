@@ -56,7 +56,7 @@ object filters extends js.Object {
   
   @js.native
   class FXAAFilter ()
-    extends typings.pixiDotJs.PIXI.filters.FXAAFilter
+    extends typings.pixiDotJs.PIXI.Filter[js.Object]
   
   // pixi-filters.d.ts todo
   // https://github.com/pixijs/pixi-filters/

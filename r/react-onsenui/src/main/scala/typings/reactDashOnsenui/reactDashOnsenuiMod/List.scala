@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_DataSource
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdataSo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "List")
 @js.native
 class List ()
-  extends Component[Anon_DataSource, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringdataSo, js.Any, js.Any]
 

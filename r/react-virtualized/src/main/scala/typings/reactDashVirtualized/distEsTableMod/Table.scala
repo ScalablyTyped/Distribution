@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsTableMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_0110
 import typings.reactDashVirtualized.Anon_AlignmentIndex
 import typings.reactDashVirtualized.Anon_ArialabelAutoHeight
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-virtualized/dist/es/Table", "Table")
 @js.native
 class Table ()
-  extends PureComponent[TableProps, js.Object, js.Any] {
+  extends Component[TableProps, js.Object, js.Any] {
   var Grid: typings.reactDashVirtualized.distEsGridMod.Grid = js.native
   def forceUpdateGrid(): Unit = js.native
   /** See Grid#getOffsetForCell */

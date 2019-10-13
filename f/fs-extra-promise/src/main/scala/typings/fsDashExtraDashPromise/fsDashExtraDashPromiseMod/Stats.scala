@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fs-extra-promise", "Stats")
 @js.native
 class Stats ()
-  extends typings.fsDashExtra.fsDashExtraMod.Stats
+  extends typings.node.fsMod.Stats
 

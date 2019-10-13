@@ -1,6 +1,6 @@
 package typings.emberDashData
 
-import typings.emberDashData.emberDashDataMod.default.StringTransform
+import typings.emberDashData.emberDashDataMod.DS.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object transformsStringMod extends js.Object {
     * [DS.attr](../../data#method_attr) function.
     */
   @js.native
-  class default () extends StringTransform
+  class default () extends Transform
   
 }
 

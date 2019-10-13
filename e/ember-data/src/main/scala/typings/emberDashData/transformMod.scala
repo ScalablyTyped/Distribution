@@ -1,6 +1,6 @@
 package typings.emberDashData
 
-import typings.emberDashData.emberDashDataMod.default.Transform
+import typings.emberDashData.emberDashDataMod.DS.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

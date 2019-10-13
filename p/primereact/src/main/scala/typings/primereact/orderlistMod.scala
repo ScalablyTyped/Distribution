@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsOrderlistOrderListMod.OrderListProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object orderlistMod extends js.Object {
   @js.native
   class OrderList ()
-    extends typings.primereact.componentsOrderlistOrderListMod.OrderList
+    extends Component[OrderListProps, js.Any, js.Any]
   
 }
 

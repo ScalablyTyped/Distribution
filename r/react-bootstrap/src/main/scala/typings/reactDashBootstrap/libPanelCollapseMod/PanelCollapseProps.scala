@@ -1,11 +1,14 @@
 package typings.reactDashBootstrap.libPanelCollapseMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PanelCollapseProps extends HTMLProps[PanelCollapse] {
+trait PanelCollapseProps
+  extends AllHTMLAttributes[PanelCollapse]
+     with ClassAttributes[PanelCollapse] {
   var bsClass: js.UndefOr[String] = js.undefined
   var onEnter: js.UndefOr[js.Function] = js.undefined
   var onEntered: js.UndefOr[js.Function] = js.undefined
@@ -18,7 +21,8 @@ trait PanelCollapseProps extends HTMLProps[PanelCollapse] {
 object PanelCollapseProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[PanelCollapse] = null,
+    AllHTMLAttributes: AllHTMLAttributes[PanelCollapse] = null,
+    ClassAttributes: ClassAttributes[PanelCollapse] = null,
     bsClass: String = null,
     onEnter: js.Function = null,
     onEntered: js.Function = null,
@@ -28,7 +32,8 @@ object PanelCollapseProps {
     onExiting: js.Function = null
   ): PanelCollapseProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
     if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered)

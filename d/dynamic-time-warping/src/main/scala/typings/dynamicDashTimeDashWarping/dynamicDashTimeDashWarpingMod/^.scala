@@ -1,6 +1,6 @@
 package typings.dynamicDashTimeDashWarping.dynamicDashTimeDashWarpingMod
 
-import typings.dynamicDashTimeDashWarping.dynamicDashTimeDashWarpingMod.Global.DynamicTimeWarping
+import typings.dynamicDashTimeDashWarping.dynamicDashTimeDashWarpingMod._Global_.DynamicTimeWarping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

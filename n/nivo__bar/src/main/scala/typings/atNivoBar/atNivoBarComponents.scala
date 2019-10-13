@@ -16,8 +16,8 @@ object atNivoBarComponents extends atNivoBarProps {
   def BarCanvas: ComponentType[BarCanvasProps with Dimensions] = js.constructorOf[typings.atNivoBar.atNivoBarMod.BarCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoBar.atNivoBarMod.BarCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
   @scala.inline
-  def ResponsiveBar: ComponentType[BarSvgProps] = js.constructorOf[typings.atNivoBar.atNivoBarMod.ResponsiveBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoBar.atNivoBarMod.BarSvgProps]]
+  def ResponsiveBar: ComponentType[ResponsiveBarProps] = js.constructorOf[typings.atNivoBar.atNivoBarMod.ResponsiveBar].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveBarProps]]
   @scala.inline
-  def ResponsiveBarCanvas: ComponentType[BarCanvasProps] = js.constructorOf[typings.atNivoBar.atNivoBarMod.ResponsiveBarCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoBar.atNivoBarMod.BarCanvasProps]]
+  def ResponsiveBarCanvas: ComponentType[ResponsiveBarCanvasProps] = js.constructorOf[typings.atNivoBar.atNivoBarMod.ResponsiveBarCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveBarCanvasProps]]
 }
 

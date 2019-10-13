@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object libButtonMod extends js.Object {
   @js.native
   class ActionButton ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonMod.ActionButton
+    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonActionButtonActionButtonMod.ActionButton
   
   @js.native
   class BaseButton protected ()
@@ -29,27 +29,27 @@ object libButtonMod extends js.Object {
   
   @js.native
   class CommandBarButton ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonMod.CommandBarButton
+    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonCommandBarButtonCommandBarButtonMod.CommandBarButton
   
   @js.native
   class CompoundButton ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonMod.CompoundButton
+    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonCompoundButtonCompoundButtonMod.CompoundButton
   
   @js.native
   class DefaultButton ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonMod.DefaultButton
+    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonDefaultButtonDefaultButtonMod.DefaultButton
   
   @js.native
   class IconButton ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonMod.IconButton
+    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonIconButtonIconButtonMod.IconButton
   
   @js.native
   class MessageBarButton ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonMod.MessageBarButton
+    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonMessageBarButtonMessageBarButtonMod.MessageBarButton
   
   @js.native
   class PrimaryButton ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonMod.PrimaryButton
+    extends typings.officeDashUiDashFabricDashReact.libComponentsButtonPrimaryButtonPrimaryButtonMod.PrimaryButton
   
   val CommandButton: Instantiable0[
     typings.officeDashUiDashFabricDashReact.libComponentsButtonActionButtonActionButtonMod.ActionButton

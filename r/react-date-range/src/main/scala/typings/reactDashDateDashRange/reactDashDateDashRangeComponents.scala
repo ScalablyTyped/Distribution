@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactDashDateDashRangeComponents extends reactDashDateDashRangeProps {
   @scala.inline
-  def Calendar: ComponentType[typings.reactDashDateDashRange.reactDashDateDashRangeMod.CalendarProps] = js.constructorOf[typings.reactDashDateDashRange.reactDashDateDashRangeMod.Calendar].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashDateDashRange.reactDashDateDashRangeMod.CalendarProps]]
+  def Calendar: ComponentType[CalendarProps] = js.constructorOf[typings.reactDashDateDashRange.reactDashDateDashRangeMod.Calendar].asInstanceOf[typings.react.reactMod.ComponentType[CalendarProps]]
   @scala.inline
-  def DateRange: ComponentType[typings.reactDashDateDashRange.reactDashDateDashRangeMod.DateRangeProps] = js.constructorOf[typings.reactDashDateDashRange.reactDashDateDashRangeMod.DateRange].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashDateDashRange.reactDashDateDashRangeMod.DateRangeProps]]
+  def DateRange: ComponentType[DateRangeProps] = js.constructorOf[typings.reactDashDateDashRange.reactDashDateDashRangeMod.DateRange].asInstanceOf[typings.react.reactMod.ComponentType[DateRangeProps]]
   @scala.inline
-  def DateRangePicker: ComponentType[typings.reactDashDateDashRange.reactDashDateDashRangeMod.DateRangeProps] = js.constructorOf[typings.reactDashDateDashRange.reactDashDateDashRangeMod.DateRangePicker].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashDateDashRange.reactDashDateDashRangeMod.DateRangeProps]]
+  def DateRangePicker: ComponentType[DateRangePickerProps] = js.constructorOf[typings.reactDashDateDashRange.reactDashDateDashRangeMod.DateRangePicker].asInstanceOf[typings.react.reactMod.ComponentType[DateRangePickerProps]]
 }
 

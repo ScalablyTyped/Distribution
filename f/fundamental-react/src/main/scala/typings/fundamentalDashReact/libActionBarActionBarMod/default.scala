@@ -1,5 +1,6 @@
 package typings.fundamentalDashReact.libActionBarActionBarMod
 
+import typings.react.reactMod.Component
 import typings.react.reactMod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fundamental-react/lib/ActionBar/ActionBar", JSImport.Default)
 @js.native
-class default () extends ActionBar
+class default ()
+  extends Component[ActionBarProps, js.Object, js.Any]
 
 /* static members */
 @JSImport("fundamental-react/lib/ActionBar/ActionBar", JSImport.Default)

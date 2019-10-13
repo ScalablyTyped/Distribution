@@ -1,5 +1,6 @@
 package typings.amcharts
 
+import typings.amcharts.amCoordinateChartMod.AmCoordinateChart
 import typings.amcharts.amRectangularChartMod.AmRectangularChart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,8 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object amRectangularChartMod extends js.Object {
   @js.native
-  trait AmRectangularChart
-    extends typings.amcharts.amCoordinateChartMod.default {
+  trait AmRectangularChart extends AmCoordinateChart {
     /**
       * The angle of the 3D part of plot area. This creates a 3D effect (if the "depth3D" is > 0).
       * @default 0

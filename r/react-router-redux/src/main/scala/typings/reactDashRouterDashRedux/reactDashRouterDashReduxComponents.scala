@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashRouterDashReduxComponents extends reactDashRouterDashReduxProps {
   @scala.inline
-  def ConnectedRouter[State]: ComponentType[
-    typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps[State]
-  ] = js.constructorOf[typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouter[State]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps[State]]]
+  def ConnectedRouter[State]: ComponentType[ConnectedRouterProps[State]] = js.constructorOf[typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouter[State]].asInstanceOf[typings.react.reactMod.ComponentType[ConnectedRouterProps[State]]]
 }
 

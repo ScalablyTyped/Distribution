@@ -1,6 +1,8 @@
 package typings.reactDashCsv
 
-import typings.reactDashCsv.componentsDownloadMod.default
+import typings.react.reactMod.Component
+import typings.reactDashCsv.componentsDownloadMod.DownloadPropTypes
+import typings.reactDashCsv.componentsLinkMod.LinkProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashCsvMod extends js.Object {
   @js.native
-  class CSVDownload () extends default
+  class CSVDownload ()
+    extends Component[DownloadPropTypes, js.Object, js.Any]
   
   @js.native
   class CSVLink ()
-    extends typings.reactDashCsv.componentsLinkMod.default
+    extends Component[LinkProps, js.Object, js.Any]
   
 }
 

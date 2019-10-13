@@ -1,10 +1,12 @@
 package typings.reactDashBytesizeDashIcons.reactDashBytesizeDashIconsMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-bytesize-icons", "External")
 @js.native
-class External () extends BytesizeIconComponent
+class External ()
+  extends Component[BytesizeIconsProps, js.Object, js.Any]
 

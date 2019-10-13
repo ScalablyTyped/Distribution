@@ -1,7 +1,8 @@
 package typings.typedoc
 
-import typings.typedoc.distLibConverterComponentsMod.ConverterComponent
+import typings.typedoc.distLibConverterConverterMod.Converter
 import typings.typedoc.distLibConverterPluginsGitHubPluginMod.Repository
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibConverterPluginsGitHubPluginMod extends js.Object {
   @js.native
-  class GitHubPlugin () extends ConverterComponent {
+  class GitHubPlugin () extends AbstractComponent[Converter] {
     var getRepository: js.Any = js.native
     var gitRevision: String = js.native
     var ignoredPaths: js.Any = js.native

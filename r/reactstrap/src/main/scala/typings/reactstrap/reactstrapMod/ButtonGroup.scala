@@ -1,11 +1,13 @@
 package typings.reactstrap.reactstrapMod
 
-import typings.reactstrap.libButtonGroupMod.default
+import typings.react.reactMod.Component
+import typings.reactstrap.libButtonGroupMod.ButtonGroupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("reactstrap", "ButtonGroup")
 @js.native
-class ButtonGroup[T] () extends default[T]
+class ButtonGroup[T] ()
+  extends Component[ButtonGroupProps, js.Object, js.Any]
 

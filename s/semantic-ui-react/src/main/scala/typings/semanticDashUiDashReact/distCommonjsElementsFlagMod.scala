@@ -1,5 +1,7 @@
 package typings.semanticDashUiDashReact
 
+import typings.react.reactMod.Component
+import typings.semanticDashUiDashReact.distCommonjsElementsFlagFlagMod.FlagProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object distCommonjsElementsFlagMod extends js.Object {
   @js.native
   class default ()
-    extends typings.semanticDashUiDashReact.distCommonjsElementsFlagFlagMod.default
+    extends Component[FlagProps, js.Object, js.Any]
   
 }
 

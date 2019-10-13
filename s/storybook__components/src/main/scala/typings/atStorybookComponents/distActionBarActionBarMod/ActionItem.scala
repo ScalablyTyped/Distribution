@@ -1,8 +1,8 @@
 package typings.atStorybookComponents.distActionBarActionBarMod
 
-import typings.react.reactMod.Global.JSXNs.Element
-import typings.react.reactMod.MouseEvent
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLButtonElement
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 trait ActionItem extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var title: String | Element
-  def onClick(e: MouseEvent[HTMLButtonElement, typings.std.MouseEvent]): Unit
+  def onClick(e: typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent]): Unit
 }
 
 object ActionItem {
   @scala.inline
   def apply(
-    onClick: MouseEvent[HTMLButtonElement, typings.std.MouseEvent] => Unit,
+    onClick: typings.react.reactMod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit,
     title: String | Element,
     disabled: js.UndefOr[Boolean] = js.undefined
   ): ActionItem = {

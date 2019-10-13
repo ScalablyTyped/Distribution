@@ -2,9 +2,9 @@ package typings.atJupyterlabStatusbar
 
 import typings.atJupyterlabStatusbar.libComponentsGroupMod.GroupItem.IProps
 import typings.atJupyterlabStatusbar.libComponentsHoverMod.Popup.IOptions
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import scala.scalajs.js

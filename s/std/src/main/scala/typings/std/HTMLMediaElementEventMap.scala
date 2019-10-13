@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HTMLMediaElementEventMap extends HTMLElementEventMap {
+trait HTMLMediaElementEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   var encrypted: MediaEncryptedEvent
   var msneedkey: Event
   var waitingforkey: Event

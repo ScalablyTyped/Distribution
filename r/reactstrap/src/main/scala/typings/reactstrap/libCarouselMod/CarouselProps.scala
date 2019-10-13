@@ -1,7 +1,8 @@
 package typings.reactstrap.libCarouselMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.reactstrap.reactstrapNumbers.`false`
 import typings.reactstrap.reactstrapStrings.carousel
@@ -12,7 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CarouselProps
-  extends HTMLProps[HTMLElement]
+  extends AllHTMLAttributes[HTMLElement]
+     with ClassAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
   var activeIndex: js.UndefOr[Double] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
@@ -32,7 +34,8 @@ object CarouselProps {
   def apply(
     next: () => Unit,
     previous: () => Unit,
-    HTMLProps: HTMLProps[HTMLElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
+    ClassAttributes: ClassAttributes[HTMLElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     activeIndex: Int | Double = null,
     cssModule: CSSModule = null,
@@ -45,7 +48,8 @@ object CarouselProps {
     slide: js.UndefOr[Boolean] = js.undefined
   ): CarouselProps = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next), previous = js.Any.fromFunction0(previous))
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)

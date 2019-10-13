@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsActionViewDashWeekMod.ActionViewWeek
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsActionViewDashWeekMod extends js.Object {
   @js.native
-  class ActionViewWeek () extends SvgIcon
+  class ActionViewWeek ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends ActionViewWeek
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

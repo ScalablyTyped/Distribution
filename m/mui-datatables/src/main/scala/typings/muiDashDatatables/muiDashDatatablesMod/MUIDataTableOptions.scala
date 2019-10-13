@@ -10,8 +10,8 @@ import typings.muiDashDatatables.muiDashDatatablesStrings.dropdown
 import typings.muiDashDatatables.muiDashDatatablesStrings.multiselect
 import typings.muiDashDatatables.muiDashDatatablesStrings.textField
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.BlobPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`

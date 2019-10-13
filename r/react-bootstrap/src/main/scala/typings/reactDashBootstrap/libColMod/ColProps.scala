@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libColMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ColProps extends HTMLProps[Col] {
+trait ColProps
+  extends AllHTMLAttributes[Col]
+     with ClassAttributes[Col] {
   var componentClass: js.UndefOr[ReactType[_]] = js.undefined
   var lg: js.UndefOr[Double] = js.undefined
   var lgHidden: js.UndefOr[Boolean] = js.undefined
@@ -33,7 +36,8 @@ trait ColProps extends HTMLProps[Col] {
 object ColProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Col] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Col] = null,
+    ClassAttributes: ClassAttributes[Col] = null,
     componentClass: ReactType[_] = null,
     lg: Int | Double = null,
     lgHidden: js.UndefOr[Boolean] = js.undefined,
@@ -57,7 +61,8 @@ object ColProps {
     xsPush: Int | Double = null
   ): ColProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
     if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
     if (!js.isUndefined(lgHidden)) __obj.updateDynamic("lgHidden")(lgHidden)

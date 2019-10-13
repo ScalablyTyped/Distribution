@@ -1,6 +1,5 @@
 package typings.atMaterialTopDashAppDashBar
 
-import typings.atMaterialTopDashAppDashBar.shortFoundationMod.MDCShortTopAppBarFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object shortFoundationMod extends js.Object {
   @js.native
-  class default () extends MDCShortTopAppBarFoundation
+  class default ()
+    extends typings.atMaterialTopDashAppDashBar.foundationMod.default
   
   type MDCShortTopAppBarFoundation = typings.atMaterialTopDashAppDashBar.foundationMod.default
 }

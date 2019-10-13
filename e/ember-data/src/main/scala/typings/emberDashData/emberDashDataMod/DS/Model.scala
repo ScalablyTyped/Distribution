@@ -3,7 +3,6 @@ package typings.emberDashData.emberDashDataMod.DS
 import typings.ember.emberMod.Ember.NativeArray
 import typings.ember.emberMod.default.ComputedProperty
 import typings.ember.emberMod.default.Map
-import typings.ember.emberMod.default.Object
 import typings.emberDashData.Anon_AdapterOptions
 import typings.emberDashData.Anon_IncludeId
 import typings.emberDashData.ModelKeys
@@ -27,7 +26,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.Model")
 @js.native
-class Model () extends Object {
+class Model ()
+  extends typings.atEmberObject.atEmberObjectMod.default {
   /**
     * This property holds the `DS.AdapterError` object with which
     * last adapter operation was rejected.

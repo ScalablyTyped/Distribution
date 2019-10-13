@@ -1,6 +1,7 @@
 package typings.fundamentalDashReact
 
-import typings.fundamentalDashReact.libSearchInputSearchInputMod.default
+import typings.fundamentalDashReact.libSearchInputSearchInputMod.SearchInputProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libSearchInputMod extends js.Object {
   @js.native
-  class SearchInput () extends default
+  class SearchInput ()
+    extends Component[SearchInputProps, js.Object, js.Any]
   
 }
 

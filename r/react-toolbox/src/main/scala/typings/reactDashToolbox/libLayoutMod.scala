@@ -1,5 +1,10 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libLayoutLayoutMod.LayoutProps
+import typings.reactDashToolbox.libLayoutNavDrawerMod.NavDrawerProps
+import typings.reactDashToolbox.libLayoutPanelMod.PanelProps
+import typings.reactDashToolbox.libLayoutSidebarMod.SidebarProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,19 +14,19 @@ import scala.scalajs.js.annotation._
 object libLayoutMod extends js.Object {
   @js.native
   class Layout ()
-    extends typings.reactDashToolbox.libLayoutLayoutMod.Layout
+    extends Component[LayoutProps, js.Object, js.Any]
   
   @js.native
   class NavDrawer ()
-    extends typings.reactDashToolbox.libLayoutNavDrawerMod.NavDrawer
+    extends Component[NavDrawerProps, js.Object, js.Any]
   
   @js.native
   class Panel ()
-    extends typings.reactDashToolbox.libLayoutPanelMod.Panel
+    extends Component[PanelProps, js.Object, js.Any]
   
   @js.native
   class Sidebar ()
-    extends typings.reactDashToolbox.libLayoutSidebarMod.Sidebar
+    extends Component[SidebarProps, js.Object, js.Any]
   
 }
 

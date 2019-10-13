@@ -4,7 +4,6 @@ import typings.std.ClassDecorator
 import typings.std.RegExp
 import typings.typedoc.distLibModelsReflectionsMod.DeclarationReflection
 import typings.typedoc.distLibModelsReflectionsMod.ProjectReflection
-import typings.typedoc.distLibOutputComponentsMod.RendererComponent
 import typings.typedoc.distLibOutputEventsMod.PageEvent
 import typings.typedoc.distLibOutputEventsMod.RendererEvent
 import typings.typedoc.distLibOutputRendererMod.Renderer
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibOutputComponentsMod extends js.Object {
   @js.native
-  abstract class ContextAwareRendererComponent () extends RendererComponent {
+  abstract class ContextAwareRendererComponent () extends AbstractComponent[Renderer] {
     var location: js.Any = js.native
     var project: js.UndefOr[ProjectReflection] = js.native
     var reflection: js.UndefOr[DeclarationReflection] = js.native

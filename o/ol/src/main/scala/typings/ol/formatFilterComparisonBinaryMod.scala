@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterComparisonBinaryMod.ComparisonBinary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterComparisonBinaryMod extends js.Object {
   @js.native
-  class default protected () extends ComparisonBinary {
+  class default protected ()
+    extends typings.ol.formatFilterComparisonMod.default {
     def this(tagName: String, propertyName: String, expression: String) = this()
     def this(tagName: String, propertyName: String, expression: Double) = this()
     def this(tagName: String, propertyName: String, expression: String, opt_matchCase: Boolean) = this()

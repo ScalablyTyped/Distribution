@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object enzymeMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.react.reactMod.AllHTMLAttributes
-  import typings.react.reactMod.Global.JSX.Element
   import typings.react.reactMod.SVGAttributes
+  import typings.react.reactMod._Global_.JSX.Element
 
   type ComponentType[Props] = ComponentClass[Props] | StatelessComponent[Props]
   type EnzymePropSelector = StringDictionary[js.Any]

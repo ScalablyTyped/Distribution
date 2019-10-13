@@ -1,5 +1,8 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libRadioRadioButtonMod.RadioButtonProps
+import typings.reactDashToolbox.libRadioRadioGroupMod.RadioGroupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,15 +12,15 @@ import scala.scalajs.js.annotation._
 object libRadioMod extends js.Object {
   @js.native
   class RadioButton ()
-    extends typings.reactDashToolbox.libRadioRadioButtonMod.RadioButton
+    extends Component[RadioButtonProps, js.Object, js.Any]
   
   @js.native
   class RadioGroup ()
-    extends typings.reactDashToolbox.libRadioRadioGroupMod.RadioGroup
+    extends Component[RadioGroupProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libRadioRadioButtonMod.RadioButton
+    extends Component[RadioButtonProps, js.Object, js.Any]
   
 }
 

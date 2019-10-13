@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.selectFieldMod.SelectField
+import typings.materialDashUi.__MaterialUI.SelectFieldProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object selectFieldMod extends js.Object {
   @js.native
   class SelectField ()
-    extends typings.materialDashUi.__MaterialUI.SelectField
+    extends Component[SelectFieldProps, js.Object, js.Any]
   
   @js.native
-  class default () extends SelectField
+  class default ()
+    extends Component[SelectFieldProps, js.Object, js.Any]
   
 }
 

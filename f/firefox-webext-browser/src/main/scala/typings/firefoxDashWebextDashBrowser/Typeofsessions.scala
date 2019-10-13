@@ -36,9 +36,8 @@ trait Typeofsessions extends js.Object {
   def getDevices(): js.Promise[js.Array[Device]] = js.native
   def getDevices(filter: Filter): js.Promise[js.Array[Device]] = js.native
   /** Gets the list of recently closed tabs and/or windows. */
-  def getRecentlyClosed(callback: js.Function1[/* sessions */ js.Array[Session], Unit]): js.Promise[js.Array[Session]] = js.native
-  /** Gets the list of recently closed tabs and/or windows. */
-  def getRecentlyClosed(filter: Filter, callback: js.Function1[/* sessions */ js.Array[Session], Unit]): js.Promise[js.Array[Session]] = js.native
+  def getRecentlyClosed(): js.Promise[js.Array[Session]] = js.native
+  def getRecentlyClosed(filter: Filter): js.Promise[js.Array[Session]] = js.native
   /**
     * Retrieve a value that was set for a given key on a given tab.
     * @param tabId The id of the tab whose value is being retrieved from.
@@ -70,7 +69,6 @@ trait Typeofsessions extends js.Object {
     */
   def restore(): js.Promise[Session] = js.native
   def restore(sessionId: String): js.Promise[Session] = js.native
-  def restore(sessionId: String, callback: js.Function1[/* restoredSession */ Session, Unit]): js.Promise[Session] = js.native
   /**
     * Set a key/value pair on a given tab.
     * @param tabId The id of the tab that the key/value pair is being set on.

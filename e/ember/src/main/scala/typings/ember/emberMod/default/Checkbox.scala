@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Checkbox")
 @js.native
 class Checkbox ()
-  extends typings.ember.emberMod.Ember.Checkbox
+  extends typings.atEmberComponent.atEmberComponentMod.default
 

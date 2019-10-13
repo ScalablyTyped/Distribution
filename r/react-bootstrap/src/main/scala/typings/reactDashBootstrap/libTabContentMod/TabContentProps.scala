@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libTabContentMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TabContentProps extends HTMLProps[TabContent] {
+trait TabContentProps
+  extends AllHTMLAttributes[TabContent]
+     with ClassAttributes[TabContent] {
   var animation: js.UndefOr[Boolean | ReactType[_]] = js.undefined
   var bsClass: js.UndefOr[String] = js.undefined
   var componentClass: js.UndefOr[ReactType[_]] = js.undefined
@@ -17,7 +20,8 @@ trait TabContentProps extends HTMLProps[TabContent] {
 object TabContentProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[TabContent] = null,
+    AllHTMLAttributes: AllHTMLAttributes[TabContent] = null,
+    ClassAttributes: ClassAttributes[TabContent] = null,
     animation: Boolean | ReactType[_] = null,
     bsClass: String = null,
     componentClass: ReactType[_] = null,
@@ -25,7 +29,8 @@ object TabContentProps {
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
   ): TabContentProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])

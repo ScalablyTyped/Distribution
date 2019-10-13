@@ -1,6 +1,6 @@
 package typings.emberDashData
 
-import typings.emberDashData.emberDashDataMod.default.EmbeddedRecordsMixin
+import typings.emberDashData.emberDashDataMod.DS.EmbeddedRecordsMixin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

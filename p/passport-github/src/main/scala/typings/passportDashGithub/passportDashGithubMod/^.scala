@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("passport-github", JSImport.Namespace)
 @js.native
-class ^ protected () extends Strategy {
+class ^ protected ()
+  extends typings.passportDashOauth2.passportDashOauth2Mod.Strategy {
   def this(
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify github.StrategyOptions */ js.Any,
     verify: js.Function4[

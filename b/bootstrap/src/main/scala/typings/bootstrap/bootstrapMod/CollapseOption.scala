@@ -1,6 +1,6 @@
 package typings.bootstrap.bootstrapMod
 
-import typings.bootstrap.bootstrapMod.Global.JQuery
+import typings.bootstrap.bootstrapMod._Global_.JQuery
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js

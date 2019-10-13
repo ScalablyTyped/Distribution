@@ -16,7 +16,7 @@ object libComboBoxMod extends js.Object {
   
   @js.native
   class VirtualizedComboBox ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsComboBoxMod.VirtualizedComboBox
+    extends typings.officeDashUiDashFabricDashReact.libComponentsComboBoxVirtualizedComboBoxMod.VirtualizedComboBox
   
   /* static members */
   @js.native

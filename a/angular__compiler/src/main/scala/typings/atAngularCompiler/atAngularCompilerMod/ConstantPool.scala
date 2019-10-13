@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ConstantPool")
 @js.native
 class ConstantPool ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.ConstantPool
+  extends typings.atAngularCompiler.srcConstantUnderscorePoolMod.ConstantPool
 

@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsEditorBorderDashOuterMod.EditorBorderOuter
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsEditorBorderDashOuterMod extends js.Object {
   @js.native
-  class EditorBorderOuter () extends SvgIcon
+  class EditorBorderOuter ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends EditorBorderOuter
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

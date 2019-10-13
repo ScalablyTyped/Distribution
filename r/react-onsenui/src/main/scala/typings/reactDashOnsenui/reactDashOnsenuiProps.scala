@@ -4,5 +4,145 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait reactDashOnsenuiProps
+trait reactDashOnsenuiProps {
+  @scala.inline
+  def ActionSheetProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonCancelvoidisOpenboAnimation.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonCancelvoidisOpenboAnimation
+  type ActionSheetProps = HTMLAttributesidclassNamestyleonCancelvoidisOpenboAnimation
+  @scala.inline
+  def ActionSheetButtonProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringiconstClassName.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringiconstClassName
+  type ActionSheetButtonProps = HTMLAttributesidclassNamestylemodifierstringiconstClassName
+  @scala.inline
+  def AlertDialogProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonCancelvoidisOpenbo.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonCancelvoidisOpenbo
+  type AlertDialogProps = HTMLAttributesidclassNamestyleonCancelvoidisOpenbo
+  @scala.inline
+  def BackButtonProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonClic.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonClic
+  type BackButtonProps = HTMLAttributesidclassNamestylemodifierstringonClic
+  @scala.inline
+  def BottomToolbarProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring
+  type BottomToolbarProps = HTMLAttributesidclassNamestylemodifierstring
+  @scala.inline
+  def ButtonProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablClassName.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablClassName
+  type ButtonProps = HTMLAttributesidclassNamestylemodifierstringdisablClassName
+  @scala.inline
+  def CardProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring
+  type CardProps = HTMLAttributesidclassNamestylemodifierstring
+  @scala.inline
+  def CarouselProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyledirectionhorizontalv.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyledirectionhorizontalv
+  type CarouselProps = HTMLAttributesidclassNamestyledirectionhorizontalv
+  @scala.inline
+  def CarouselItemProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring
+  type CarouselItemProps = HTMLAttributesidclassNamestylemodifierstring
+  @scala.inline
+  def CheckboxProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablCheckedClassName.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablCheckedClassName
+  type CheckboxProps = HTMLAttributesidclassNamestylemodifierstringdisablCheckedClassName
+  @scala.inline
+  def ColProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleverticalAligntopbott.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleverticalAligntopbott
+  type ColProps = HTMLAttributesidclassNamestyleverticalAligntopbott
+  @scala.inline
+  def DialogProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonCancelvoidisOpenbo.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonCancelvoidisOpenbo
+  type DialogProps = HTMLAttributesidclassNamestyleonCancelvoidisOpenbo
+  @scala.inline
+  def FabProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringripple.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringripple
+  type FabProps = HTMLAttributesidclassNamestylemodifierstringripple
+  @scala.inline
+  def IconProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringiconst.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringiconst
+  type IconProps = HTMLAttributesidclassNamestylemodifierstringiconst
+  @scala.inline
+  def InputProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleInputHTMLAttributesm.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleInputHTMLAttributesm
+  type InputProps = HTMLAttributesidclassNamestyleInputHTMLAttributesm
+  @scala.inline
+  def LazyListProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringlength.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringlength
+  type LazyListProps = HTMLAttributesidclassNamestylemodifierstringlength
+  @scala.inline
+  def ListProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdataSo.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdataSo
+  type ListProps = HTMLAttributesidclassNamestylemodifierstringdataSo
+  @scala.inline
+  def ListHeaderProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring
+  type ListHeaderProps = HTMLAttributesidclassNamestylemodifierstring
+  @scala.inline
+  def ListItemProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringtappab.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringtappab
+  type ListItemProps = HTMLAttributesidclassNamestylemodifierstringtappab
+  @scala.inline
+  def ListTitleProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonClicClassName.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonClicClassName
+  type ListTitleProps = HTMLAttributesidclassNamestylemodifierstringonClicClassName
+  @scala.inline
+  def ModalProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleanimationfadeliftnon.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleanimationfadeliftnon
+  type ModalProps = HTMLAttributesidclassNamestyleanimationfadeliftnon
+  type NavigatorProps = HTMLAttributesidclassNamestylerenderPagerouteanyna
+  @scala.inline
+  def PageProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylecontentStyleanymodif.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylecontentStyleanymodif
+  type PageProps = HTMLAttributesidclassNamestylecontentStyleanymodif
+  @scala.inline
+  def PopoverProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylegetTargetReactInstan.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylegetTargetReactInstan
+  type PopoverProps = HTMLAttributesidclassNamestylegetTargetReactInstan
+  @scala.inline
+  def ProgressBarProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringvaluen.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringvaluen
+  type ProgressBarProps = HTMLAttributesidclassNamestylemodifierstringvaluen
+  @scala.inline
+  def ProgressCircularProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringvaluenClassName.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringvaluenClassName
+  type ProgressCircularProps = HTMLAttributesidclassNamestylemodifierstringvaluenClassName
+  @scala.inline
+  def PullHookProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonChangeePullHookCha.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonChangeePullHookCha
+  type PullHookProps = HTMLAttributesidclassNamestyleonChangeePullHookCha
+  @scala.inline
+  def RadioProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablChecked.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablChecked
+  type RadioProps = HTMLAttributesidclassNamestylemodifierstringdisablChecked
+  @scala.inline
+  def RangeProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonChan.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonChan
+  type RangeProps = HTMLAttributesidclassNamestylemodifierstringonChan
+  @scala.inline
+  def RippleProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylecolorstringbackgroun.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylecolorstringbackgroun
+  type RippleProps = HTMLAttributesidclassNamestylecolorstringbackgroun
+  @scala.inline
+  def RowProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleverticalAligntopbottBottom.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleverticalAligntopbottBottom
+  type RowProps = HTMLAttributesidclassNamestyleverticalAligntopbottBottom
+  @scala.inline
+  def SearchInputProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablClassNameDisabled.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablClassNameDisabled
+  type SearchInputProps = HTMLAttributesidclassNamestylemodifierstringdisablClassNameDisabled
+  @scala.inline
+  def SegmentProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleindexnumbertabbarIds.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleindexnumbertabbarIds
+  type SegmentProps = HTMLAttributesidclassNamestyleindexnumbertabbarIds
+  @scala.inline
+  def SelectProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablAutofocus.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablAutofocus
+  type SelectProps = HTMLAttributesidclassNamestylemodifierstringdisablAutofocus
+  @scala.inline
+  def SpeedDialProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringpositi.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringpositi
+  type SpeedDialProps = HTMLAttributesidclassNamestylemodifierstringpositi
+  @scala.inline
+  def SpeedDialItemProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonClicClassNameE.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonClicClassNameE
+  type SpeedDialItemProps = HTMLAttributesidclassNamestylemodifierstringonClicClassNameE
+  @scala.inline
+  def SplitterProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyle.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyle
+  type SplitterProps = HTMLAttributesidclassNamestyle
+  @scala.inline
+  def SplitterContentProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyle.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyle
+  type SplitterContentProps = HTMLAttributesidclassNamestyle
+  @scala.inline
+  def SplitterSideProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylesideleftrightcollaps.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylesideleftrightcollaps
+  type SplitterSideProps = HTMLAttributesidclassNamestylesideleftrightcollaps
+  @scala.inline
+  def SwitchProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonChanChecked.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonChanChecked
+  type SwitchProps = HTMLAttributesidclassNamestylemodifierstringonChanChecked
+  @scala.inline
+  def TabProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylelabelstringiconstrin.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylelabelstringiconstrin
+  type TabProps = HTMLAttributesidclassNamestylelabelstringiconstrin
+  @scala.inline
+  def TabActiveProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyle.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyle
+  type TabActiveProps = HTMLAttributesidclassNamestyle
+  @scala.inline
+  def TabInactiveProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyle.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyle
+  type TabInactiveProps = HTMLAttributesidclassNamestyle
+  @scala.inline
+  def TabbarProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleindexnumberrenderTab.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleindexnumberrenderTab
+  type TabbarProps = HTMLAttributesidclassNamestyleindexnumberrenderTab
+  @scala.inline
+  def ToastProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestyleisOpenbooleananimati.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestyleisOpenbooleananimati
+  type ToastProps = HTMLAttributesidclassNamestyleisOpenbooleananimati
+  @scala.inline
+  def ToolbarProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstring
+  type ToolbarProps = HTMLAttributesidclassNamestylemodifierstring
+  @scala.inline
+  def ToolbarButtonProps: typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisabl.type = typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisabl
+  type ToolbarButtonProps = HTMLAttributesidclassNamestylemodifierstringdisabl
+}
 

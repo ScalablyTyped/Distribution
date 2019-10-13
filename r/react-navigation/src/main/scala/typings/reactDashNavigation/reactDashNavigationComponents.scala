@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashNavigationComponents extends reactDashNavigationProps {
   @scala.inline
-  def DrawerItems: ComponentType[typings.reactDashNavigation.reactDashNavigationMod.DrawerItemsProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.DrawerItems].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNavigation.reactDashNavigationMod.DrawerItemsProps]]
+  def DrawerItems: ComponentType[DrawerItemsProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.DrawerItems].asInstanceOf[typings.react.reactMod.ComponentType[DrawerItemsProps]]
   @scala.inline
-  def Header: ComponentType[typings.reactDashNavigation.reactDashNavigationMod.HeaderProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.Header].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNavigation.reactDashNavigationMod.HeaderProps]]
+  def Header: ComponentType[HeaderProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.Header].asInstanceOf[typings.react.reactMod.ComponentType[HeaderProps]]
   @scala.inline
-  def HeaderBackButton: ComponentType[typings.reactDashNavigation.reactDashNavigationMod.HeaderBackButtonProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.HeaderBackButton].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNavigation.reactDashNavigationMod.HeaderBackButtonProps]]
+  def HeaderBackButton: ComponentType[HeaderBackButtonProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.HeaderBackButton].asInstanceOf[typings.react.reactMod.ComponentType[HeaderBackButtonProps]]
   @scala.inline
-  def NavigationEvents: ComponentType[typings.reactDashNavigation.reactDashNavigationMod.NavigationEventsProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.NavigationEvents].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNavigation.reactDashNavigationMod.NavigationEventsProps]]
+  def NavigationEvents: ComponentType[NavigationEventsProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.NavigationEvents].asInstanceOf[typings.react.reactMod.ComponentType[NavigationEventsProps]]
   @scala.inline
-  def SafeAreaView: ComponentType[typings.reactDashNavigation.reactDashNavigationMod.SafeAreaViewProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.SafeAreaView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNavigation.reactDashNavigationMod.SafeAreaViewProps]]
+  def SafeAreaView: ComponentType[SafeAreaViewProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.SafeAreaView].asInstanceOf[typings.react.reactMod.ComponentType[SafeAreaViewProps]]
   @scala.inline
-  def TabBarBottom: ComponentType[typings.reactDashNavigation.reactDashNavigationMod.TabBarBottomProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.TabBarBottom].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNavigation.reactDashNavigationMod.TabBarBottomProps]]
+  def TabBarBottom: ComponentType[TabBarBottomProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.TabBarBottom].asInstanceOf[typings.react.reactMod.ComponentType[TabBarBottomProps]]
   @scala.inline
-  def TabBarTop: ComponentType[typings.reactDashNavigation.reactDashNavigationMod.TabBarTopProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.TabBarTop].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNavigation.reactDashNavigationMod.TabBarTopProps]]
+  def TabBarTop: ComponentType[TabBarTopProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.TabBarTop].asInstanceOf[typings.react.reactMod.ComponentType[TabBarTopProps]]
   @scala.inline
-  def Transitioner: ComponentType[typings.reactDashNavigation.reactDashNavigationMod.TransitionerProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.Transitioner].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNavigation.reactDashNavigationMod.TransitionerProps]]
+  def Transitioner: ComponentType[TransitionerProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.Transitioner].asInstanceOf[typings.react.reactMod.ComponentType[TransitionerProps]]
 }
 

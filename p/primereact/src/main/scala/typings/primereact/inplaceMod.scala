@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsInplaceInplaceMod.InplaceProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,15 +11,15 @@ import scala.scalajs.js.annotation._
 object inplaceMod extends js.Object {
   @js.native
   class Inplace ()
-    extends typings.primereact.componentsInplaceInplaceMod.Inplace
+    extends Component[InplaceProps, js.Any, js.Any]
   
   @js.native
   class InplaceContent ()
-    extends typings.primereact.componentsInplaceInplaceMod.InplaceContent
+    extends Component[js.Object, js.Object, js.Any]
   
   @js.native
   class InplaceDisplay ()
-    extends typings.primereact.componentsInplaceInplaceMod.InplaceDisplay
+    extends Component[js.Object, js.Object, js.Any]
   
 }
 

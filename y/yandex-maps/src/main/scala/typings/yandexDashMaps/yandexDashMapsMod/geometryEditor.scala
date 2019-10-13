@@ -162,7 +162,7 @@ object geometryEditor extends js.Object {
     }
     
     @js.native
-    class Edge () extends IGeometryEditorRootModel {
+    class Edge () extends IGeometryEditorModel {
       /* CompleteClass */
       override var events: IEventManager = js.native
       /* CompleteClass */
@@ -186,7 +186,7 @@ object geometryEditor extends js.Object {
     }
     
     @js.native
-    class RootLineString () extends IGeometryEditorRootModel {
+    class RootLineString () extends IGeometryEditorModel {
       /* CompleteClass */
       override var events: IEventManager = js.native
       /* CompleteClass */
@@ -199,7 +199,7 @@ object geometryEditor extends js.Object {
     }
     
     @js.native
-    class RootPolygon () extends IGeometryEditorRootModel {
+    class RootPolygon () extends IGeometryEditorModel {
       /* CompleteClass */
       override var events: IEventManager = js.native
       /* CompleteClass */

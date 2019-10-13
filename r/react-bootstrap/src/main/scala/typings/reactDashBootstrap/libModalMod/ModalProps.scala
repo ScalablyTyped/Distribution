@@ -1,6 +1,7 @@
 package typings.reactDashBootstrap.libModalMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactElement
 import typings.reactDashBootstrap.reactDashBootstrapMod.Sizes
 import typings.reactDashBootstrap.reactDashBootstrapMod.TransitionCallbacks
@@ -10,8 +11,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ModalProps
-  extends HTMLProps[Modal]
-     with TransitionCallbacks {
+  extends AllHTMLAttributes[Modal]
+     with TransitionCallbacks
+     with ClassAttributes[Modal] {
   // Optional
   var animation: js.UndefOr[Boolean] = js.undefined
   var backdrop: js.UndefOr[Boolean | String] = js.undefined
@@ -47,7 +49,8 @@ object ModalProps {
   @scala.inline
   def apply(
     onHide: js.Function,
-    HTMLProps: HTMLProps[Modal] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Modal] = null,
+    ClassAttributes: ClassAttributes[Modal] = null,
     TransitionCallbacks: TransitionCallbacks = null,
     animation: js.UndefOr[Boolean] = js.undefined,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
@@ -73,7 +76,8 @@ object ModalProps {
     transition: ReactElement = null
   ): ModalProps = {
     val __obj = js.Dynamic.literal(onHide = onHide)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, TransitionCallbacks)
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)

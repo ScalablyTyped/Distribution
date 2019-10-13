@@ -1,14 +1,18 @@
 package typings.parse.Parse.Query
 
-import typings.parse.Parse.ScopeOptions
-import typings.parse.Parse.SuccessFailureOptions
+import typings.parse.Parse.ErrorOption
+import typings.parse.Parse.SessionTokenOption
+import typings.parse.Parse.SuccessOption
+import typings.parse.Parse.UseMasterKeyOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EachOptions
-  extends SuccessFailureOptions
-     with ScopeOptions
+  extends SuccessOption
+     with ErrorOption
+     with SessionTokenOption
+     with UseMasterKeyOption
 
 object EachOptions {
   @scala.inline

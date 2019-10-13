@@ -1,6 +1,6 @@
 package typings.rmcDashCalendar.esDateSingleMonthMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.rmcDashCalendar.Anon_WeekComponents
 import typings.rmcDashCalendar.esDateDataTypesMod.Models.CellData
 import typings.rmcDashCalendar.esDateDataTypesMod.Models.MonthData
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SingleMonth
-  extends PureComponent[PropsType, Anon_WeekComponents, js.Any] {
+  extends Component[PropsType, Anon_WeekComponents, js.Any] {
   var wrapperDivDOM: HTMLDivElement | Null = js.native
   @JSName("componentWillMount")
   def componentWillMount_MSingleMonth(): Unit = js.native

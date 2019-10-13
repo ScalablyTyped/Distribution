@@ -1,23 +1,5 @@
 package typings.muiDashDatatables
 
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableBody
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableBodyCell
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableBodyRow
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableFilter
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableFilterList
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableFooter
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableHead
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableHeadCell
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableHeadRow
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTablePagination
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTablePopover
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableProps
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableResize
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableSearch
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableSelectCell
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableToolbar
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableToolbarSelect
-import typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableViewCol
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,40 +7,40 @@ import scala.scalajs.js.annotation._
 
 object muiDashDatatablesComponents extends muiDashDatatablesProps {
   @scala.inline
-  def MuiDashDatatables: ComponentType[MUIDataTableProps] = js.constructorOf[typings.muiDashDatatables.muiDashDatatablesMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableProps]]
+  def MuiDashDatatables: ComponentType[MuiDashDatatablesProps] = js.constructorOf[typings.muiDashDatatables.muiDashDatatablesMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MuiDashDatatablesProps]]
   @scala.inline
-  def Popover: ComponentType[MUIDataTablePopover] = typings.muiDashDatatables.muiDashDatatablesMod.Popover.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTablePopover]]
+  def Popover: ComponentType[PopoverProps] = typings.muiDashDatatables.muiDashDatatablesMod.Popover.asInstanceOf[typings.react.reactMod.ComponentType[PopoverProps]]
   @scala.inline
-  def TableBody: ComponentType[MUIDataTableBody] = typings.muiDashDatatables.muiDashDatatablesMod.TableBody.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableBody]]
+  def TableBody: ComponentType[TableBodyProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableBody.asInstanceOf[typings.react.reactMod.ComponentType[TableBodyProps]]
   @scala.inline
-  def TableBodyCell: ComponentType[MUIDataTableBodyCell] = typings.muiDashDatatables.muiDashDatatablesMod.TableBodyCell.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableBodyCell]]
+  def TableBodyCell: ComponentType[TableBodyCellProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableBodyCell.asInstanceOf[typings.react.reactMod.ComponentType[TableBodyCellProps]]
   @scala.inline
-  def TableBodyRow: ComponentType[MUIDataTableBodyRow] = typings.muiDashDatatables.muiDashDatatablesMod.TableBodyRow.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableBodyRow]]
+  def TableBodyRow: ComponentType[TableBodyRowProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableBodyRow.asInstanceOf[typings.react.reactMod.ComponentType[TableBodyRowProps]]
   @scala.inline
-  def TableFilter: ComponentType[MUIDataTableFilter] = typings.muiDashDatatables.muiDashDatatablesMod.TableFilter.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableFilter]]
+  def TableFilter: ComponentType[TableFilterProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableFilter.asInstanceOf[typings.react.reactMod.ComponentType[TableFilterProps]]
   @scala.inline
-  def TableFilterList: ComponentType[MUIDataTableFilterList] = typings.muiDashDatatables.muiDashDatatablesMod.TableFilterList.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableFilterList]]
+  def TableFilterList: ComponentType[TableFilterListProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableFilterList.asInstanceOf[typings.react.reactMod.ComponentType[TableFilterListProps]]
   @scala.inline
-  def TableFooter: ComponentType[MUIDataTableFooter] = typings.muiDashDatatables.muiDashDatatablesMod.TableFooter.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableFooter]]
+  def TableFooter: ComponentType[TableFooterProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableFooter.asInstanceOf[typings.react.reactMod.ComponentType[TableFooterProps]]
   @scala.inline
-  def TableHead: ComponentType[MUIDataTableHead] = typings.muiDashDatatables.muiDashDatatablesMod.TableHead.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableHead]]
+  def TableHead: ComponentType[TableHeadProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableHead.asInstanceOf[typings.react.reactMod.ComponentType[TableHeadProps]]
   @scala.inline
-  def TableHeadCell: ComponentType[MUIDataTableHeadCell] = typings.muiDashDatatables.muiDashDatatablesMod.TableHeadCell.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableHeadCell]]
+  def TableHeadCell: ComponentType[TableHeadCellProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableHeadCell.asInstanceOf[typings.react.reactMod.ComponentType[TableHeadCellProps]]
   @scala.inline
-  def TableHeadRow: ComponentType[MUIDataTableHeadRow] = typings.muiDashDatatables.muiDashDatatablesMod.TableHeadRow.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableHeadRow]]
+  def TableHeadRow: ComponentType[TableHeadRowProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableHeadRow.asInstanceOf[typings.react.reactMod.ComponentType[TableHeadRowProps]]
   @scala.inline
-  def TablePagination: ComponentType[MUIDataTablePagination] = typings.muiDashDatatables.muiDashDatatablesMod.TablePagination.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTablePagination]]
+  def TablePagination: ComponentType[TablePaginationProps] = typings.muiDashDatatables.muiDashDatatablesMod.TablePagination.asInstanceOf[typings.react.reactMod.ComponentType[TablePaginationProps]]
   @scala.inline
-  def TableResize: ComponentType[MUIDataTableResize] = typings.muiDashDatatables.muiDashDatatablesMod.TableResize.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableResize]]
+  def TableResize: ComponentType[TableResizeProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableResize.asInstanceOf[typings.react.reactMod.ComponentType[TableResizeProps]]
   @scala.inline
-  def TableSearch: ComponentType[MUIDataTableSearch] = typings.muiDashDatatables.muiDashDatatablesMod.TableSearch.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableSearch]]
+  def TableSearch: ComponentType[TableSearchProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableSearch.asInstanceOf[typings.react.reactMod.ComponentType[TableSearchProps]]
   @scala.inline
-  def TableSelectCell: ComponentType[MUIDataTableSelectCell] = typings.muiDashDatatables.muiDashDatatablesMod.TableSelectCell.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableSelectCell]]
+  def TableSelectCell: ComponentType[TableSelectCellProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableSelectCell.asInstanceOf[typings.react.reactMod.ComponentType[TableSelectCellProps]]
   @scala.inline
-  def TableToolbar: ComponentType[MUIDataTableToolbar] = typings.muiDashDatatables.muiDashDatatablesMod.TableToolbar.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableToolbar]]
+  def TableToolbar: ComponentType[TableToolbarProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableToolbar.asInstanceOf[typings.react.reactMod.ComponentType[TableToolbarProps]]
   @scala.inline
-  def TableToolbarSelect: ComponentType[MUIDataTableToolbarSelect] = typings.muiDashDatatables.muiDashDatatablesMod.TableToolbarSelect.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableToolbarSelect]]
+  def TableToolbarSelect: ComponentType[TableToolbarSelectProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableToolbarSelect.asInstanceOf[typings.react.reactMod.ComponentType[TableToolbarSelectProps]]
   @scala.inline
-  def TableViewCol: ComponentType[MUIDataTableViewCol] = typings.muiDashDatatables.muiDashDatatablesMod.TableViewCol.asInstanceOf[typings.react.reactMod.ComponentType[typings.muiDashDatatables.muiDashDatatablesMod.MUIDataTableViewCol]]
+  def TableViewCol: ComponentType[TableViewColProps] = typings.muiDashDatatables.muiDashDatatablesMod.TableViewCol.asInstanceOf[typings.react.reactMod.ComponentType[TableViewColProps]]
 }
 

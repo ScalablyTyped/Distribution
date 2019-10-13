@@ -7,7 +7,7 @@ import typings.fullcalendar.srcTypesInputDashTypesMod.EventSourceInput
 import typings.fullcalendar.srcTypesInputDashTypesMod.MomentInput
 import typings.fullcalendar.srcTypesInputDashTypesMod.OptionsInput
 import typings.fullcalendar.srcTypesInputDashTypesMod.RangeInput
-import typings.fullcalendar.srcTypesJqueryDashHooksMod.Global.JQuery
+import typings.fullcalendar.srcTypesJqueryDashHooksMod._Global_.JQuery
 import typings.jquery.JQueryEventObject
 import typings.moment.momentMod.Duration
 import typings.moment.momentMod.Moment

@@ -10,7 +10,7 @@ class BusinessHoursPeriod () extends js.Object {
   /**
     * The day of week for this time period. See [DayOfWeek](#type-dayofweek) for possible values
     */
-  var day_of_week: js.UndefOr[DayOfWeekEnum] = js.native
+  var day_of_week: js.UndefOr[DayOfWeekType] = js.native
   /**
     * The end time of a business hours period, specified in local time using partial-time RFC3339 format.
     */

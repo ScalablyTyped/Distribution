@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.Scroller")
 @js.native
-class Scroller protected () extends Widget {
+class Scroller protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: ScrollerOptions) = this()
   @JSName("options")

@@ -26,9 +26,7 @@ object libLinearListCollectionMod extends js.Object {
   - typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer because Already inherited
   - typings.tstl.baseContainerIContainerMod.IContainer because Already inherited
   - typings.tstl.baseContainerContainerMod.Container because Already inherited
-  - typings.tstl.baseMod.Container because Inheritance from two classes. Inlined 
-  - typings.tstl.tstlMod.base.Container because Inheritance from two classes. Inlined 
-  - typings.ecol.libBasicICollectionMod.ICollection because Inheritance from two classes. Inlined refresh, refresh, refresh */ @js.native
+  - typings.ecol.libBasicICollectionMod.ICollection because var conflicts: iterator, iterator_IContainer. Inlined refresh, refresh, refresh */ @js.native
   class ListCollection[T] ()
     extends List[T]
        with IEventDispatcher[T, List[T], Iterator[T], ReverseIterator[T]] {

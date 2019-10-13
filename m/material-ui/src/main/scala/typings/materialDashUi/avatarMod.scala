@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.avatarMod.Avatar
+import typings.materialDashUi.__MaterialUI.AvatarProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object avatarMod extends js.Object {
   @js.native
   class Avatar ()
-    extends typings.materialDashUi.__MaterialUI.Avatar
+    extends Component[AvatarProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Avatar
+  class default ()
+    extends Component[AvatarProps, js.Object, js.Any]
   
 }
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashI18nextComponents extends reactDashI18nextProps {
   @scala.inline
-  def I18nextProvider: ComponentType[typings.reactDashI18next.reactDashI18nextMod.I18nextProviderProps] = typings.reactDashI18next.reactDashI18nextMod.I18nextProvider.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashI18next.reactDashI18nextMod.I18nextProviderProps]]
+  def I18nextProvider: ComponentType[I18nextProviderProps] = typings.reactDashI18next.reactDashI18nextMod.I18nextProvider.asInstanceOf[typings.react.reactMod.ComponentType[I18nextProviderProps]]
 }
 

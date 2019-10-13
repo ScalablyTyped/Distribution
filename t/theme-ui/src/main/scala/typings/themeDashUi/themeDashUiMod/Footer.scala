@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Footer protected ()
   extends Component[
-      (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As, 
+      (/* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As, 
       ComponentState, 
       js.Any
     ] {
-  def this(props: (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As) = this()
+  def this(props: (/* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As) = this()
   def this(
-    props: (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As,
+    props: (/* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As,
     context: js.Any
   ) = this()
 }
@@ -28,7 +28,7 @@ class Footer protected ()
 object Footer
   extends TopLevel[
       SxComponent[
-        (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements['div'] */ js.Any) with SxProps
+        (/* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps
       ]
     ]
 

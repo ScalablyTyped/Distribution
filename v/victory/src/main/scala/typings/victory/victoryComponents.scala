@@ -7,42 +7,42 @@ import scala.scalajs.js.annotation._
 
 object victoryComponents extends victoryProps {
   @scala.inline
-  def VictoryAnimation: ComponentType[typings.victory.victoryMod.VictoryAnimationProps] = js.constructorOf[typings.victory.victoryMod.VictoryAnimation].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryAnimationProps]]
+  def VictoryAnimation: ComponentType[VictoryAnimationProps] = js.constructorOf[typings.victory.victoryMod.VictoryAnimation].asInstanceOf[typings.react.reactMod.ComponentType[VictoryAnimationProps]]
   @scala.inline
-  def VictoryArea: ComponentType[typings.victory.victoryMod.VictoryAreaProps] = js.constructorOf[typings.victory.victoryMod.VictoryArea].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryAreaProps]]
+  def VictoryArea: ComponentType[VictoryAreaProps] = js.constructorOf[typings.victory.victoryMod.VictoryArea].asInstanceOf[typings.react.reactMod.ComponentType[VictoryAreaProps]]
   @scala.inline
-  def VictoryAxis: ComponentType[typings.victory.victoryMod.VictoryAxisProps] = js.constructorOf[typings.victory.victoryMod.VictoryAxis].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryAxisProps]]
+  def VictoryAxis: ComponentType[VictoryAxisProps] = js.constructorOf[typings.victory.victoryMod.VictoryAxis].asInstanceOf[typings.react.reactMod.ComponentType[VictoryAxisProps]]
   @scala.inline
-  def VictoryBar: ComponentType[typings.victory.victoryMod.VictoryBarProps] = js.constructorOf[typings.victory.victoryMod.VictoryBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryBarProps]]
+  def VictoryBar: ComponentType[VictoryBarProps] = js.constructorOf[typings.victory.victoryMod.VictoryBar].asInstanceOf[typings.react.reactMod.ComponentType[VictoryBarProps]]
   @scala.inline
-  def VictoryBoxPlot: ComponentType[typings.victory.victoryMod.VictoryBoxPlotProps] = js.constructorOf[typings.victory.victoryMod.VictoryBoxPlot].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryBoxPlotProps]]
+  def VictoryBoxPlot: ComponentType[VictoryBoxPlotProps] = js.constructorOf[typings.victory.victoryMod.VictoryBoxPlot].asInstanceOf[typings.react.reactMod.ComponentType[VictoryBoxPlotProps]]
   @scala.inline
-  def VictoryBrushContainer: ComponentType[typings.victory.victoryMod.VictoryBrushContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryBrushContainer].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryBrushContainerProps]]
+  def VictoryBrushContainer: ComponentType[VictoryBrushContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryBrushContainer].asInstanceOf[typings.react.reactMod.ComponentType[VictoryBrushContainerProps]]
   @scala.inline
-  def VictoryChart: ComponentType[typings.victory.victoryMod.VictoryChartProps] = js.constructorOf[typings.victory.victoryMod.VictoryChart].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryChartProps]]
+  def VictoryChart: ComponentType[VictoryChartProps] = js.constructorOf[typings.victory.victoryMod.VictoryChart].asInstanceOf[typings.react.reactMod.ComponentType[VictoryChartProps]]
   @scala.inline
-  def VictoryContainer: ComponentType[typings.victory.victoryMod.VictoryContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryContainer].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryContainerProps]]
+  def VictoryContainer: ComponentType[VictoryContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryContainer].asInstanceOf[typings.react.reactMod.ComponentType[VictoryContainerProps]]
   @scala.inline
-  def VictoryCursorContainer: ComponentType[typings.victory.victoryMod.VictoryCursorContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryCursorContainer].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryCursorContainerProps]]
+  def VictoryCursorContainer: ComponentType[VictoryCursorContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryCursorContainer].asInstanceOf[typings.react.reactMod.ComponentType[VictoryCursorContainerProps]]
   @scala.inline
-  def VictoryGroup: ComponentType[typings.victory.victoryMod.VictoryGroupProps] = js.constructorOf[typings.victory.victoryMod.VictoryGroup].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryGroupProps]]
+  def VictoryGroup: ComponentType[VictoryGroupProps] = js.constructorOf[typings.victory.victoryMod.VictoryGroup].asInstanceOf[typings.react.reactMod.ComponentType[VictoryGroupProps]]
   @scala.inline
-  def VictoryLabel: ComponentType[typings.victory.victoryMod.VictoryLabelProps] = js.constructorOf[typings.victory.victoryMod.VictoryLabel].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryLabelProps]]
+  def VictoryLabel: ComponentType[VictoryLabelProps] = js.constructorOf[typings.victory.victoryMod.VictoryLabel].asInstanceOf[typings.react.reactMod.ComponentType[VictoryLabelProps]]
   @scala.inline
-  def VictoryLegend: ComponentType[typings.victory.victoryMod.VictoryLegendProps] = js.constructorOf[typings.victory.victoryMod.VictoryLegend].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryLegendProps]]
+  def VictoryLegend: ComponentType[VictoryLegendProps] = js.constructorOf[typings.victory.victoryMod.VictoryLegend].asInstanceOf[typings.react.reactMod.ComponentType[VictoryLegendProps]]
   @scala.inline
-  def VictoryLine: ComponentType[typings.victory.victoryMod.VictoryLineProps] = js.constructorOf[typings.victory.victoryMod.VictoryLine].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryLineProps]]
+  def VictoryLine: ComponentType[VictoryLineProps] = js.constructorOf[typings.victory.victoryMod.VictoryLine].asInstanceOf[typings.react.reactMod.ComponentType[VictoryLineProps]]
   @scala.inline
-  def VictoryPie: ComponentType[typings.victory.victoryMod.VictoryPieProps] = js.constructorOf[typings.victory.victoryMod.VictoryPie].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryPieProps]]
+  def VictoryPie: ComponentType[VictoryPieProps] = js.constructorOf[typings.victory.victoryMod.VictoryPie].asInstanceOf[typings.react.reactMod.ComponentType[VictoryPieProps]]
   @scala.inline
-  def VictoryScatter: ComponentType[typings.victory.victoryMod.VictoryScatterProps] = js.constructorOf[typings.victory.victoryMod.VictoryScatter].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryScatterProps]]
+  def VictoryScatter: ComponentType[VictoryScatterProps] = js.constructorOf[typings.victory.victoryMod.VictoryScatter].asInstanceOf[typings.react.reactMod.ComponentType[VictoryScatterProps]]
   @scala.inline
-  def VictoryStack: ComponentType[typings.victory.victoryMod.VictoryStackProps] = js.constructorOf[typings.victory.victoryMod.VictoryStack].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryStackProps]]
+  def VictoryStack: ComponentType[VictoryStackProps] = js.constructorOf[typings.victory.victoryMod.VictoryStack].asInstanceOf[typings.react.reactMod.ComponentType[VictoryStackProps]]
   @scala.inline
-  def VictoryTooltip: ComponentType[typings.victory.victoryMod.VictoryTooltipProps] = js.constructorOf[typings.victory.victoryMod.VictoryTooltip].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryTooltipProps]]
+  def VictoryTooltip: ComponentType[VictoryTooltipProps] = js.constructorOf[typings.victory.victoryMod.VictoryTooltip].asInstanceOf[typings.react.reactMod.ComponentType[VictoryTooltipProps]]
   @scala.inline
-  def VictoryVoronoiContainer: ComponentType[typings.victory.victoryMod.VictoryVoronoiContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryVoronoiContainer].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryVoronoiContainerProps]]
+  def VictoryVoronoiContainer: ComponentType[VictoryVoronoiContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryVoronoiContainer].asInstanceOf[typings.react.reactMod.ComponentType[VictoryVoronoiContainerProps]]
   @scala.inline
-  def VictoryZoomContainer: ComponentType[typings.victory.victoryMod.VictoryZoomContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryZoomContainer].asInstanceOf[typings.react.reactMod.ComponentType[typings.victory.victoryMod.VictoryZoomContainerProps]]
+  def VictoryZoomContainer: ComponentType[VictoryZoomContainerProps] = js.constructorOf[typings.victory.victoryMod.VictoryZoomContainer].asInstanceOf[typings.react.reactMod.ComponentType[VictoryZoomContainerProps]]
 }
 

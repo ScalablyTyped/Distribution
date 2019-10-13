@@ -1,7 +1,7 @@
 package typings.grasp
 
 import typings.cliDashColor.cliDashColorMod.Format
-import typings.node.processMod.Global.NodeJS.ReadStream
+import typings.node.processMod._Global_.NodeJS.ReadStream
 import typings.std.Console
 import typings.std.Record
 import scala.scalajs.js

@@ -43,14 +43,14 @@ trait Typeofdownloads extends js.Object {
     * strings are not guaranteed to remain backwards compatible between releases. You must not parse it.
     * @param options What to download and how.
     */
-  def download(options: Anon_Body): js.Promise[js.UndefOr[Double]] = js.native
+  def download(options: Anon_Body): js.Promise[Double] = js.native
   /**
     * Initiate dragging the file to another application.
     * @deprecated Unsupported on Firefox at this time.
     */
   def drag(downloadId: Double): Unit = js.native
   /** Erase matching DownloadItems from history */
-  def erase(query: DownloadQuery): js.Promise[js.UndefOr[js.Array[Double]]] = js.native
+  def erase(query: DownloadQuery): js.Promise[js.Array[Double]] = js.native
   /**
     * Retrieve an icon for the specified download. For new downloads, file icons are available after the onCreated
     * event has been received. The image returned by this function while a download is in progress may be different
@@ -85,7 +85,7 @@ trait Typeofdownloads extends js.Object {
   /** @deprecated Unsupported on Firefox at this time. */
   def setShelfEnabled(enabled: Boolean): Unit = js.native
   /** Show the downloaded file in its folder in a file manager. */
-  def show(downloadId: Double): js.Promise[js.UndefOr[Boolean]] = js.native
+  def show(downloadId: Double): js.Promise[Boolean] = js.native
   def showDefaultFolder(): Unit = js.native
 }
 

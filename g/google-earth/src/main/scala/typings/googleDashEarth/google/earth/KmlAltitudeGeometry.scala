@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.earth.KmlAltitudeGeometry")
 @js.native
-class KmlAltitudeGeometry () extends KmlGeometry {
+class KmlAltitudeGeometry () extends KmlObject {
   /**
     * Specifies how altitude components in the geometry coordinates are interpreted.
     */

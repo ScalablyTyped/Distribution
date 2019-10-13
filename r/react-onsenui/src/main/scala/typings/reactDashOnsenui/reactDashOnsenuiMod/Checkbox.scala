@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_CheckedDisabled
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablCheckedClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Checkbox")
 @js.native
 class Checkbox ()
-  extends Component[Anon_CheckedDisabled, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringdisablCheckedClassName, js.Any, js.Any]
 

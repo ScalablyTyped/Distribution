@@ -4,7 +4,6 @@ import typings.atFrctlFractal.Anon_HandleString
 import typings.atFrctlFractal.Anon_Mount
 import typings.atFrctlFractal.Anon_MountPath
 import typings.atFrctlFractal.Anon_Params
-import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.ConfigurableEmitter
 import typings.atFrctlFractal.atFrctlFractalNumbers.`false`
 import typings.atFrctlFractal.atFrctlFractalStrings.favicon
 import typings.atFrctlFractal.atFrctlFractalStrings.format
@@ -18,13 +17,15 @@ import typings.atFrctlFractal.atFrctlFractalStrings.static
 import typings.atFrctlFractal.atFrctlFractalStrings.staticDOTmount
 import typings.atFrctlFractal.atFrctlFractalStrings.styles
 import typings.atFrctlFractal.atFrctlFractalStrings.version
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@frctl/fractal", "WebTheme")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @JSImport("@frctl/fractal", "WebTheme")
 @js.native
-class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
+class WebTheme protected () extends EventEmitter {
   def this(viewPaths: js.Array[String]) = this()
   def this(viewPaths: js.Array[String], options: WebThemeOptions) = this()
   def addLoadPath(path: String): this.type = js.native
@@ -32,7 +33,15 @@ class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
   def addRoute(path: String, opts: Anon_HandleString): this.type = js.native
   def addRoute(path: String, opts: Anon_HandleString, resolver: js.Any): this.type = js.native
   def addStatic(path: String, mount: String): Unit = js.native
+  def config(): WebThemeOptions = js.native
+  def config(config: WebThemeOptions): this.type = js.native
   def errorView(): String = js.native
+  def get[K /* <: String */, V](path: K): js.UndefOr[
+    (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+  ] = js.native
+  def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+    (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+  ] = js.native
   @JSName("getOption")
   def getOption_favicon(key: favicon): String = js.native
   @JSName("getOption")
@@ -64,6 +73,8 @@ class WebTheme protected () extends ConfigurableEmitter[WebThemeOptions] {
   def redirectView(): String = js.native
   def resolvers(): js.Any = js.native
   def routes(): js.Array[_] = js.native
+  def set[K /* <: String */](path: K): this.type = js.native
+  def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
   def setErrorView(view: String): Unit = js.native
   @JSName("setOption")
   def setOption_favicon(key: favicon, value: String): this.type = js.native

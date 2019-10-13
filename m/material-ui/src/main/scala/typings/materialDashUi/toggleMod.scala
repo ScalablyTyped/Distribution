@@ -1,6 +1,5 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.toggleMod.Toggle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,8 @@ object toggleMod extends js.Object {
     extends typings.materialDashUi.__MaterialUI.Switches.Toggle
   
   @js.native
-  class default () extends Toggle
+  class default ()
+    extends typings.materialDashUi.__MaterialUI.Switches.Toggle
   
 }
 

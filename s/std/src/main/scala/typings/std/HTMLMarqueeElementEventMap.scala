@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HTMLMarqueeElementEventMap extends HTMLElementEventMap {
+trait HTMLMarqueeElementEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   var bounce: Event
   var finish: Event
   var start: Event

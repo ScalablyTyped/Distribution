@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "yeoman-assert"
-version := "3.1-dt-20190212Z-edde2f"
+version := "3.1-dt-20190212Z-a79fe1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "assert" % "1.4-dt-20190725Z-3dc142",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "assert" % "1.4-dt-20190725Z-9e94b1",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

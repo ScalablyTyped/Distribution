@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "CustomersApi")
 @js.native
+/**
+  * Constructs a new CustomersApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class CustomersApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Creates a new customer for a business, which can have associated cards on file. You must provide at least one of the
     * following values in your request to this endpoint: `given_name`. `family_name`, `company_name`, `email_address`,`phone_number`.

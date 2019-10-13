@@ -16,9 +16,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TextNode
-  extends DefaultShapeMixin
-     with ConstraintMixin
-     with SceneNode {
+  extends SceneNode
+     with BaseNodeMixin
+     with SceneNodeMixin
+     with BlendMixin
+     with GeometryMixin
+     with LayoutMixin
+     with ExportMixin
+     with ConstraintMixin {
   var autoRename: Boolean = js.native
   var characters: String = js.native
   var fontName: FontName | js.Symbol = js.native

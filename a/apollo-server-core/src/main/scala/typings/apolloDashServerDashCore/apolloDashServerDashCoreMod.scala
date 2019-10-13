@@ -53,7 +53,7 @@ object apolloDashServerDashCoreMod extends js.Object {
   
   @js.native
   class GraphQLExtension[TContext] ()
-    extends typings.apolloDashServerDashCore.distTypesMod.GraphQLExtension[TContext]
+    extends typings.graphqlDashExtensions.graphqlDashExtensionsMod.GraphQLExtension[TContext]
   
   @js.native
   class HttpQueryError protected ()
@@ -64,8 +64,12 @@ object apolloDashServerDashCoreMod extends js.Object {
   }
   
   @js.native
-  class InvalidGraphQLRequestError ()
-    extends typings.apolloDashServerDashCore.distRequestPipelineAPIMod.InvalidGraphQLRequestError
+  class InvalidGraphQLRequestError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
   class SyntaxError protected ()

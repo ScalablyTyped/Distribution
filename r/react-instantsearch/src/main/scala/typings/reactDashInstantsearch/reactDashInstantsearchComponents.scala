@@ -1,7 +1,6 @@
 package typings.reactDashInstantsearch
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashInstantsearchDashDom.Anon_Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +19,7 @@ object reactDashInstantsearchComponents extends reactDashInstantsearchProps {
   @scala.inline
   def Highlight: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearch.domMod.Highlight].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def Hits[T]: ComponentType[
-    typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.HitsProps[T]
-  ] = js.constructorOf[typings.reactDashInstantsearch.domMod.Hits[T]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.HitsProps[T]]]
+  def Hits[T]: ComponentType[HitsProps[T]] = js.constructorOf[typings.reactDashInstantsearch.domMod.Hits[T]].asInstanceOf[typings.react.reactMod.ComponentType[HitsProps[T]]]
   @scala.inline
   def HitsPerPage: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearch.domMod.HitsPerPage].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -31,10 +27,7 @@ object reactDashInstantsearchComponents extends reactDashInstantsearchProps {
   @scala.inline
   def InfiniteHits: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearch.domMod.InfiniteHits].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def InstantSearch: ComponentType[
-    typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.InstantSearchProps
-  ] = js.constructorOf[typings.reactDashInstantsearch.domMod.InstantSearch].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.InstantSearchProps]]
+  def InstantSearch: ComponentType[InstantSearchProps] = js.constructorOf[typings.reactDashInstantsearch.domMod.InstantSearch].asInstanceOf[typings.react.reactMod.ComponentType[InstantSearchProps]]
   @scala.inline
   def Menu: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearch.domMod.Menu].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
@@ -58,16 +51,13 @@ object reactDashInstantsearchComponents extends reactDashInstantsearchProps {
   @scala.inline
   def ScrollTo: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearch.domMod.ScrollTo].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def SearchBox: ComponentType[
-    typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.SearchBoxProps
-  ] = js.constructorOf[typings.reactDashInstantsearch.domMod.SearchBox].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.SearchBoxProps]]
+  def SearchBox: ComponentType[SearchBoxProps] = js.constructorOf[typings.reactDashInstantsearch.domMod.SearchBox].asInstanceOf[typings.react.reactMod.ComponentType[SearchBoxProps]]
   @scala.inline
   def Snippet: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearch.domMod.Snippet].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
   def SortBy: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearch.domMod.SortBy].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def Stats: ComponentType[Anon_Key] = js.constructorOf[typings.reactDashInstantsearch.domMod.Stats].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashInstantsearchDashDom.Anon_Key]]
+  def Stats: ComponentType[StatsProps] = js.constructorOf[typings.reactDashInstantsearch.domMod.Stats].asInstanceOf[typings.react.reactMod.ComponentType[StatsProps]]
   @scala.inline
   def ToggleRefinement: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearch.domMod.ToggleRefinement].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
 }

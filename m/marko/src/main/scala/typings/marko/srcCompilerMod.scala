@@ -58,8 +58,7 @@ object srcCompilerMod extends js.Object {
   @js.native
   object taglibLoader extends js.Object {
     @js.native
-    class Taglib ()
-      extends typings.marko.srcCompilerTaglibDashLoaderMod.Taglib
+    class Taglib () extends default
     
     def clearCache(): Unit = js.native
     def createTaglib(filePath: String): typings.marko.srcCompilerTaglibDashLoaderMod.Taglib = js.native
@@ -72,7 +71,7 @@ object srcCompilerMod extends js.Object {
   object taglibLookup extends js.Object {
     @js.native
     class TaglibLookup ()
-      extends typings.marko.srcCompilerTaglibDashLookupMod.TaglibLookup
+      extends typings.marko.srcCompilerTaglibDashLookupTaglibLookupMod.default
     
     val registeredTaglibs: js.Array[default] = js.native
     def buildLookup(dirname: String): typings.marko.srcCompilerTaglibDashLookupMod.TaglibLookup = js.native

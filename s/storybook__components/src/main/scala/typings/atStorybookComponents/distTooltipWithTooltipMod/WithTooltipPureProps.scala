@@ -28,8 +28,7 @@ trait WithTooltipPureProps extends js.Object {
 object WithTooltipPureProps {
   @scala.inline
   def apply(
-    children: ReactNode,
-    tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode]),
+    children: ReactNode = null,
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
     hasChrome: js.UndefOr[Boolean] = js.undefined,
     modifiers: Modifiers = null,
@@ -37,10 +36,12 @@ object WithTooltipPureProps {
     onVisibilityChange: /* visibility */ Boolean => Unit = null,
     placement: Placement = null,
     svg: js.UndefOr[Boolean] = js.undefined,
+    tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode]) = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined,
     trigger: none | hover | click | `right-click` = null
   ): WithTooltipPureProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
     if (!js.isUndefined(hasChrome)) __obj.updateDynamic("hasChrome")(hasChrome)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
@@ -48,6 +49,7 @@ object WithTooltipPureProps {
     if (onVisibilityChange != null) __obj.updateDynamic("onVisibilityChange")(js.Any.fromFunction1(onVisibilityChange))
     if (placement != null) __obj.updateDynamic("placement")(placement)
     if (!js.isUndefined(svg)) __obj.updateDynamic("svg")(svg)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (!js.isUndefined(tooltipShown)) __obj.updateDynamic("tooltipShown")(tooltipShown)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithTooltipPureProps]

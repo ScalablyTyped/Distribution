@@ -1,5 +1,7 @@
 package typings.atMaterialDashUiCore
 
+import typings.atMaterialDashUiCore.portalPortalMod.PortalProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object portalMod extends js.Object {
   @js.native
   class default ()
-    extends typings.atMaterialDashUiCore.portalPortalMod.default
+    extends Component[PortalProps, js.Object, js.Any]
   
 }
 

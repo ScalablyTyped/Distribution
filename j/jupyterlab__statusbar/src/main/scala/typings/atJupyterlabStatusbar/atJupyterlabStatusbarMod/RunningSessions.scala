@@ -23,7 +23,7 @@ object RunningSessions extends js.Object {
     */
   @js.native
   class Model ()
-    extends typings.atJupyterlabStatusbar.libDefaultsMod.RunningSessions.Model
+    extends typings.atJupyterlabStatusbar.libDefaultsRunningSessionsMod.RunningSessions.Model
   
 }
 

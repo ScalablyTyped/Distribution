@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Lexer")
 @js.native
 class Lexer ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.Lexer
+  extends typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.Lexer
 

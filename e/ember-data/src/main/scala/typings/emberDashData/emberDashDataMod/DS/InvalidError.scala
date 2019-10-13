@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.InvalidError")
 @js.native
-class InvalidError protected () extends AdapterError {
+class InvalidError protected ()
+  extends typings.atEmberObject.atEmberObjectMod.default {
   def this(errors: js.Array[_]) = this()
 }
 

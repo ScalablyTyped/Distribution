@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsMegamenuMegaMenuMod.MegaMenuProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object megamenuMod extends js.Object {
   @js.native
   class MegaMenu ()
-    extends typings.primereact.componentsMegamenuMegaMenuMod.MegaMenu
+    extends Component[MegaMenuProps, js.Any, js.Any]
   
 }
 

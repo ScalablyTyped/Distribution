@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "Instant")
 @js.native
-class Instant protected () extends Temporal {
+class Instant protected () extends TemporalAccessor {
   def adjustInto(temporal: Temporal): Temporal = js.native
   def atZone(zone: ZoneId): ZonedDateTime = js.native
   def compareTo(otherInstant: Instant): Double = js.native

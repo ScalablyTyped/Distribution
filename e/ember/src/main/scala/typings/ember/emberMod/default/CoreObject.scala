@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "CoreObject")
 @js.native
 class CoreObject ()
-  extends typings.ember.emberMod.Ember.CoreObject
+  extends typings.atEmberObject.coreMod.default
 

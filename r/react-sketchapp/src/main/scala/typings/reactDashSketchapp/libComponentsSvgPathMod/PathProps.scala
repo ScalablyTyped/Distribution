@@ -1,7 +1,12 @@
 package typings.reactDashSketchapp.libComponentsSvgPathMod
 
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.ClipProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.DefinationProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.FillProps
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.NumberArrayProp
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.NumberProp
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.StrokeProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.TransformProps
 import typings.reactDashSketchapp.reactDashSketchappStrings.bevel
 import typings.reactDashSketchapp.reactDashSketchappStrings.butt
 import typings.reactDashSketchapp.reactDashSketchappStrings.evenodd
@@ -14,7 +19,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PathProps
-  extends typings.reactDashSketchapp.libComponentsSvgPropsMod.PathProps {
+  extends FillProps
+     with StrokeProps
+     with ClipProps
+     with TransformProps
+     with DefinationProps {
   var d: String
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Windows.Data.Xml.Dom.XmlCDataSection")
 @js.native
-class XmlCDataSection () extends IXmlCDataSection {
+class XmlCDataSection () extends IXmlText {
   /* CompleteClass */
   override var attributes: XmlNamedNodeMap = js.native
   /* CompleteClass */

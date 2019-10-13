@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object libLabelMod extends js.Object {
   @js.native
   class LabelBase ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsLabelMod.LabelBase
+    extends typings.officeDashUiDashFabricDashReact.libComponentsLabelLabelDotBaseMod.LabelBase
   
   val Label: StatelessComponent[ILabelProps] = js.native
 }

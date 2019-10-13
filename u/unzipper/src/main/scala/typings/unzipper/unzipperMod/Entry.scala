@@ -1,7 +1,6 @@
 package typings.unzipper.unzipperMod
 
 import typings.node.Buffer
-import typings.node.streamMod.PassThrough
 import typings.node.streamMod.Transform
 import typings.unzipper.Anon_CompressedSize
 import typings.unzipper.Anon_CompressedSizeDisknum
@@ -12,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Entry extends PassThrough {
+trait Entry extends Transform {
   var extra: Anon_CompressedSizeDisknum = js.native
   var path: String = js.native
   var props: Anon_Path = js.native

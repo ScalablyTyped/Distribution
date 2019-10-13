@@ -1,6 +1,6 @@
 package typings.atJupyterlabExtensionmanager.libWidgetMod
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomRenderer
+import typings.atJupyterlabApputils.libVdomMod.VDomRenderer
 import typings.atJupyterlabExtensionmanager.libModelMod.Action
 import typings.atJupyterlabExtensionmanager.libModelMod.IEntry
 import typings.atJupyterlabExtensionmanager.libModelMod.ListModel

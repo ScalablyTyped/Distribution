@@ -2,7 +2,8 @@ package typings.reactstrap.libNavLinkMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactType
@@ -14,7 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavLinkProps
-  extends HTMLProps[HTMLAnchorElement]
+  extends AllHTMLAttributes[HTMLAnchorElement]
+     with ClassAttributes[HTMLAnchorElement]
      with /* key */ StringDictionary[js.Any] {
   var active: js.UndefOr[Boolean] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
@@ -27,7 +29,8 @@ trait NavLinkProps
 object NavLinkProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLAnchorElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLAnchorElement] = null,
+    ClassAttributes: ClassAttributes[HTMLAnchorElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     active: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -39,7 +42,8 @@ object NavLinkProps {
     tag: String | ReactType[_] = null
   ): NavLinkProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (className != null) __obj.updateDynamic("className")(className)

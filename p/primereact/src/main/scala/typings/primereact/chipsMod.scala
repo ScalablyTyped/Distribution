@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsChipsChipsMod.ChipsProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object chipsMod extends js.Object {
   @js.native
   class Chips ()
-    extends typings.primereact.componentsChipsChipsMod.Chips
+    extends Component[ChipsProps, js.Any, js.Any]
   
 }
 

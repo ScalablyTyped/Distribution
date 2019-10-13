@@ -1,8 +1,8 @@
 package typings.mergeDashStream
 
 import typings.mergeDashStream.mergeDashStreamMod.MergedStream
-import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object mergeDashStreamMod extends js.Object {
   @js.native
-  trait MergedStream extends ReadWriteStream {
+  trait MergedStream
+    extends ReadableStream
+       with WritableStream {
     def add(source: js.Array[ReadableStream]): MergedStream = js.native
     def add(source: ReadableStream): MergedStream = js.native
     def isEmpty(): Boolean = js.native

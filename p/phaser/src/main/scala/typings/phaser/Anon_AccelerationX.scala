@@ -1,5 +1,6 @@
 package typings.phaser
 
+import typings.phaser.Phaser.Geom.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,6 +50,10 @@ trait Anon_AccelerationX extends js.Object {
     * Sets {@link Phaser.Physics.Arcade.Body#collideWorldBounds}.
     */
   var collideWorldBounds: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Sets {@link Phaser.Physics.Arcade.Body#setBoundsRectangle setBoundsRectangle}.
+    */
+  var customBoundsRectangle: js.UndefOr[Rectangle] = js.undefined
   /**
     * Sets {@link Phaser.Physics.Arcade.Body#drag drag.x}.
     */
@@ -109,6 +114,7 @@ object Anon_AccelerationX {
     bounceX: Int | Double = null,
     bounceY: Int | Double = null,
     collideWorldBounds: js.UndefOr[Boolean] = js.undefined,
+    customBoundsRectangle: Rectangle = null,
     dragX: Int | Double = null,
     dragY: Int | Double = null,
     enable: js.UndefOr[Boolean] = js.undefined,
@@ -133,6 +139,7 @@ object Anon_AccelerationX {
     if (bounceX != null) __obj.updateDynamic("bounceX")(bounceX.asInstanceOf[js.Any])
     if (bounceY != null) __obj.updateDynamic("bounceY")(bounceY.asInstanceOf[js.Any])
     if (!js.isUndefined(collideWorldBounds)) __obj.updateDynamic("collideWorldBounds")(collideWorldBounds)
+    if (customBoundsRectangle != null) __obj.updateDynamic("customBoundsRectangle")(customBoundsRectangle)
     if (dragX != null) __obj.updateDynamic("dragX")(dragX.asInstanceOf[js.Any])
     if (dragY != null) __obj.updateDynamic("dragY")(dragY.asInstanceOf[js.Any])
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)

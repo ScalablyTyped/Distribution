@@ -12,11 +12,11 @@ class Money () extends js.Object {
     * For example, when `currency` is `USD`, `amount` is in cents. Monetary amounts can be positive or negative.
     * See the specific API documentation to determine the meaning of the sign in a particular case.
     */
-  var amount: js.UndefOr[Double] = js.native
+  var amount: Double = js.native
   /**
     * The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.
     * See [Currency](#type-currency) for possible values. See [Currency](#type-currency) for possible values
     */
-  var currency: js.UndefOr[CurrencyEnum] = js.native
+  var currency: CurrencyType = js.native
 }
 

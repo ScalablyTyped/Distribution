@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mailgun-js"
-version := "0.22-dt-20190806Z-4cad26"
+version := "0.22-dt-20190806Z-747180"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "form-data" % "2.5.1-2eee36",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "form-data" % "2.5.1-2a6934",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

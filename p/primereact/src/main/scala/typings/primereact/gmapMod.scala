@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsGmapGMapMod.GMapProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object gmapMod extends js.Object {
   @js.native
   class GMap ()
-    extends typings.primereact.componentsGmapGMapMod.GMap
+    extends Component[GMapProps, js.Any, js.Any]
   
 }
 

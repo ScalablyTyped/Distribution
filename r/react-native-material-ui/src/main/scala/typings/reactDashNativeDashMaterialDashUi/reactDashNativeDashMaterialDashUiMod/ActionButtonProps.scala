@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashNativeDashMaterialDashUi.Anon_Container
 import typings.reactDashNativeDashMaterialDashUi.Anon_Icon
 import typings.reactDashNativeDashMaterialDashUi.reactDashNativeDashMaterialDashUiStrings.speedDial

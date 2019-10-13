@@ -39,12 +39,12 @@ package object reactDashNativeMod {
   type DatePickerAndroid = DatePickerAndroidStatic
   type DatePickerIOSComponent = Component[DatePickerIOSProps, js.Object, js.Any]
   type DrawerLayoutAndroidComponent = Component[DrawerLayoutAndroidProps, js.Object, js.Any]
-  type DrawerSlideEvent = NativeSyntheticEvent[NativeTouchEvent]
+  type DrawerSlideEvent = BaseSyntheticEvent[NativeTouchEvent, NodeHandle, NodeHandle]
   type Easing = EasingStatic
   type EasingFunction = js.Function1[/* value */ Double, Double]
   type ErrorHandlerCallback = js.Function2[/* error */ js.Any, /* isFatal */ js.UndefOr[Boolean], Unit]
   type Falsy = js.UndefOr[Null | `false`]
-  type GestureResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
+  type GestureResponderEvent = BaseSyntheticEvent[NativeTouchEvent, NodeHandle, NodeHandle]
   type Handle = Double
   type I18nManager = I18nManagerStatic
   type ImageBackgroundComponent = Component[ImageBackgroundProps, js.Object, js.Any]
@@ -154,7 +154,7 @@ package object reactDashNativeMod {
     * such as rounded corners or camera notches (aka sensor housing area on iPhone X).
     */
   type SafeAreaViewComponent = Component[ViewProps, js.Object, js.Any]
-  type ScrollResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
+  type ScrollResponderEvent = BaseSyntheticEvent[NativeTouchEvent, NodeHandle, NodeHandle]
   type ScrollViewComponent = Component[ScrollViewProps, js.Object, js.Any]
   type SectionList[ItemT] = SectionListStatic[ItemT]
   type SectionListRenderItem[ItemT] = js.Function1[/* info */ SectionListRenderItemInfo[ItemT], ReactElement | Null]
@@ -188,7 +188,7 @@ package object reactDashNativeMod {
   type SliderIOS = Slider
   type SnapshotViewIOSComponent = Component[SnapshotViewIOSProps, js.Object, js.Any]
   type StatusBarIOS = StatusBarIOSStatic
-  type StatusBarIOSStatic = NativeEventEmitter
+  type StatusBarIOSStatic = EventEmitter
   type StyleProp[T] = T | RegisteredStyle[T] | (RecursiveArray[T | RegisteredStyle[T] | Falsy]) | Falsy
   /**
     * Renders a boolean input.

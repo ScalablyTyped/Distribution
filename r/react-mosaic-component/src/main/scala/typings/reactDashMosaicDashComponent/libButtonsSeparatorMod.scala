@@ -1,6 +1,6 @@
 package typings.reactDashMosaicDashComponent
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libButtonsSeparatorMod extends js.Object {
   @js.native
   class Separator ()
-    extends PureComponent[js.Object, js.Object, js.Any]
+    extends Component[js.Object, js.Object, js.Any]
   
 }
 

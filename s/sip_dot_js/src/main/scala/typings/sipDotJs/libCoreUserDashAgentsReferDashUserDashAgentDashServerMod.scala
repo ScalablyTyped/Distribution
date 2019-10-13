@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/user-agents/refer-user-agent-server", JSImport.Namespace)
 @js.native
 object libCoreUserDashAgentsReferDashUserDashAgentDashServerMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.sipDotJs.libCoreMessagesMethodsReferMod.IncomingReferRequest because Already inherited */ @js.native
+  @js.native
   class ReferUserAgentServer protected () extends UserAgentServer {
     /**
       * REFER UAS constructor.

@@ -2,7 +2,7 @@ package typings.expressDashSession.expressDashSessionMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.expressMod.Request
-import typings.expressDashSession.expressDashSessionMod.Global.Express.SessionData
+import typings.expressDashSession.expressDashSessionMod._Global_.Express.SessionData
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

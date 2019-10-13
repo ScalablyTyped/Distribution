@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonActionSheetElement
-  - typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAlertElement
-  - typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPopoverElement
+  - typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonActionSheetElement
+  - typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAlertElement
+  - typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPopoverElement
 */
 trait OverlaySelect extends js.Object
 

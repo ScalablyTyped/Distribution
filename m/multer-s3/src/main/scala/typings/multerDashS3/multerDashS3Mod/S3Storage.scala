@@ -1,8 +1,8 @@
 package typings.multerDashS3.multerDashS3Mod
 
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.Express.Request
-import typings.multer.multerMod.Global.Express.Multer.File
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod._Global_.Express.Request
 import typings.multer.multerMod.StorageEngine
+import typings.multer.multerMod._Global_.Express.Multer.File
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`

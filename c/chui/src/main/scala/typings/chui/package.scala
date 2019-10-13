@@ -11,7 +11,7 @@ package object chui {
     * Interface of the JQuery extension of the W3C event object
     */
   type BaseJQueryEventObject = Event
-  type JQueryInputEventObject = BaseJQueryEventObject
-  type JQueryKeyEventObject = JQueryInputEventObject
-  type JQueryMouseEventObject = JQueryInputEventObject
+  type JQueryInputEventObject = Event
+  type JQueryKeyEventObject = Event
+  type JQueryMouseEventObject = Event
 }

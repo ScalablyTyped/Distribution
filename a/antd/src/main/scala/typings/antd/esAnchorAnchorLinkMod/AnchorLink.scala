@@ -3,7 +3,7 @@ package typings.antd.esAnchorAnchorLinkMod
 import typings.antd.Anon_AntAnchor_672673334
 import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js

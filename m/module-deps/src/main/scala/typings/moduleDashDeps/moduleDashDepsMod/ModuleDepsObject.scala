@@ -11,13 +11,16 @@ import typings.moduleDashDeps.moduleDashDepsStrings.missing
 import typings.moduleDashDeps.moduleDashDepsStrings.transform
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ModuleDepsObject extends ReadWriteStream {
+trait ModuleDepsObject
+  extends ReadableStream
+     with WritableStream {
   def _flush(): Unit = js.native
   def _isTopLevel(file: String): Boolean = js.native
   def _transform(row: String, enc: String, next: js.Function0[Unit]): Unit = js.native

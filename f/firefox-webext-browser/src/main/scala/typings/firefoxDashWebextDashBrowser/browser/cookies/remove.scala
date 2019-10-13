@@ -13,6 +13,6 @@ object remove extends js.Object {
     * Deletes a cookie by name.
     * @param details Information to identify the cookie to remove.
     */
-  def apply(details: Anon_FirstPartyDomain): js.Promise[js.UndefOr[Anon_FirstPartyDomainName]] = js.native
+  def apply(details: Anon_FirstPartyDomain): js.Promise[Anon_FirstPartyDomainName] = js.native
 }
 

@@ -9,9 +9,9 @@ object reactDashAppComponents extends reactDashAppProps {
   @scala.inline
   def Header: ComponentType[js.Object] = js.constructorOf[typings.reactDashApp.reactDashAppMod.Header].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def Layout: ComponentType[typings.reactDashApp.reactDashAppMod.LayoutProps] = js.constructorOf[typings.reactDashApp.reactDashAppMod.Layout].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashApp.reactDashAppMod.LayoutProps]]
+  def Layout: ComponentType[LayoutProps] = js.constructorOf[typings.reactDashApp.reactDashAppMod.Layout].asInstanceOf[typings.react.reactMod.ComponentType[LayoutProps]]
   @scala.inline
-  def Link: ComponentType[typings.reactDashApp.reactDashAppMod.LinkProps] = js.constructorOf[typings.reactDashApp.reactDashAppMod.Link].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashApp.reactDashAppMod.LinkProps]]
+  def Link: ComponentType[LinkProps] = js.constructorOf[typings.reactDashApp.reactDashAppMod.Link].asInstanceOf[typings.react.reactMod.ComponentType[LinkProps]]
   @scala.inline
   def Navigation: ComponentType[js.Object] = js.constructorOf[typings.reactDashApp.reactDashAppMod.Navigation].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
 }

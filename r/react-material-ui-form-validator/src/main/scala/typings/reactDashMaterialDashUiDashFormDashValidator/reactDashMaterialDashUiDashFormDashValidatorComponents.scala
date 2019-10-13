@@ -15,9 +15,6 @@ object reactDashMaterialDashUiDashFormDashValidatorComponents extends reactDashM
   def ValidatorComponent: ComponentType[ValidatorComponentProps with TextFieldProps] = js.constructorOf[typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponent].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorComponentProps with typings.materialDashUi.__MaterialUI.TextFieldProps]]
   @scala.inline
-  def ValidatorForm: ComponentType[
-    typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps
-  ] = js.constructorOf[typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorForm].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorFormProps]]
+  def ValidatorForm: ComponentType[ValidatorFormProps] = js.constructorOf[typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod.ValidatorForm].asInstanceOf[typings.react.reactMod.ComponentType[ValidatorFormProps]]
 }
 

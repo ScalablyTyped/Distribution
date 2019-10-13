@@ -23,7 +23,7 @@ object KernelStatus extends js.Object {
     */
   @js.native
   class Model ()
-    extends typings.atJupyterlabStatusbar.libDefaultsMod.KernelStatus.Model
+    extends typings.atJupyterlabStatusbar.libDefaultsKernelStatusMod.KernelStatus.Model
   
 }
 

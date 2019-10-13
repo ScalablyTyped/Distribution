@@ -1,5 +1,6 @@
 package typings.reactDashLottie.reactDashLottieMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,5 +10,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("react-lottie", JSImport.Default)
 @js.native
-class default () extends Lottie
+class default ()
+  extends Component[LottieProps, js.Any, js.Any]
 

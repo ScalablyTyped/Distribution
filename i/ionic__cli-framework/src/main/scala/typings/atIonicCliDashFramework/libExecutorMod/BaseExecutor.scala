@@ -9,7 +9,7 @@ import typings.atIonicCliDashFramework.definitionsMod.INamespace
 import typings.atIonicCliDashFramework.definitionsMod.NamespaceLocateResult
 import typings.atIonicCliDashFramework.libColorsMod.Colors
 import typings.atIonicCliDashFramework.utilsIpcMod.RPCProcess
-import typings.node.processMod.Global.NodeJS.WriteStream
+import typings.node.processMod._Global_.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

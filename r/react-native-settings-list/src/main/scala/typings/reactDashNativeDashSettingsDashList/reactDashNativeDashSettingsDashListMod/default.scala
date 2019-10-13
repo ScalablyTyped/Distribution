@@ -1,23 +1,25 @@
 package typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-native-settings-list", JSImport.Default)
 @js.native
-class default () extends SettingsList
+class default ()
+  extends Component[SettingsListProps, js.Object, js.Any]
 
 @JSImport("react-native-settings-list", JSImport.Default)
 @js.native
 object default extends js.Object {
   @js.native
   class Header ()
-    extends typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.SettingsList.Header
+    extends Component[HeaderProps, js.Object, js.Any]
   
   @js.native
   class Item ()
-    extends typings.reactDashNativeDashSettingsDashList.reactDashNativeDashSettingsDashListMod.SettingsList.Item
+    extends Component[ItemProps, js.Object, js.Any]
   
 }
 

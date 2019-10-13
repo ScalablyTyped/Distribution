@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "MenuController")
 @js.native
 class MenuController ()
-  extends typings.atIonicAngular.distMod.MenuController
+  extends typings.atIonicAngular.distProvidersMenuDashControllerMod.MenuController
 

@@ -12,7 +12,25 @@ import scala.scalajs.js.annotation._
 object Test extends js.Object {
   @js.native
   class Adapter ()
-    extends typings.ember.emberMod.Ember.Test.Adapter
+    extends typings.atEmberTest.adapterMod.Adapter {
+    /**
+      * This callback will be called whenever an async operation has completed.
+      */
+    /* CompleteClass */
+    override def asyncEnd(): js.Any = js.native
+    /**
+      * This callback will be called whenever an async operation is about to start.
+      */
+    /* CompleteClass */
+    override def asyncStart(): js.Any = js.native
+    /**
+      * Override this method with your testing framework's false assertion.
+      * This function is called whenever an exception occurs causing the testing
+      * promise to fail.
+      */
+    /* CompleteClass */
+    override def exception(error: String): js.Any = js.native
+  }
   
   @js.native
   class Promise[T] protected ()
@@ -30,7 +48,25 @@ object Test extends js.Object {
     */
   @js.native
   class QUnitAdapter ()
-    extends typings.ember.emberMod.Ember.Test.QUnitAdapter
+    extends typings.atEmberTest.adapterMod.Adapter {
+    /**
+      * This callback will be called whenever an async operation has completed.
+      */
+    /* CompleteClass */
+    override def asyncEnd(): js.Any = js.native
+    /**
+      * This callback will be called whenever an async operation is about to start.
+      */
+    /* CompleteClass */
+    override def asyncStart(): js.Any = js.native
+    /**
+      * Override this method with your testing framework's false assertion.
+      * This function is called whenever an exception occurs causing the testing
+      * promise to fail.
+      */
+    /* CompleteClass */
+    override def exception(error: String): js.Any = js.native
+  }
   
   /**
     * Used to allow ember-testing to communicate with a specific testing

@@ -1,7 +1,7 @@
 package typings.atApolloReactDashHooks.libTypesMod
 
 import typings.apolloDashClient.apolloDashClientMod.ObservableQuery
-import typings.zenDashObservable.zenDashObservableMod.Global.ZenObservable.Subscription
+import typings.zenDashObservable.zenDashObservableMod._Global_.ZenObservable.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

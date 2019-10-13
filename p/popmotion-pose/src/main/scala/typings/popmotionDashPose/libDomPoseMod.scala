@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object libDomPoseMod extends js.Object {
   @js.native
   class Action ()
-    extends typings.popmotion.popmotionMod.Action
+    extends typings.popmotion.libActionMod.Action
   
   @js.native
   class ValueReaction protected ()

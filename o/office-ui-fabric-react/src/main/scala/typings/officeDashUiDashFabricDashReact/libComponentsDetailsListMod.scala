@@ -7,6 +7,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsLi
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.IDetailsListProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowCheckDotTypesMod.IDetailsRowCheckProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsRowBaseProps
+import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowFieldsDotTypesMod.IDetailsRowFieldsProps
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.change
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.FunctionComponent
@@ -58,6 +59,7 @@ object libComponentsDetailsListMod extends js.Object {
   val DetailsList: StatelessComponent[IDetailsListProps] = js.native
   val DetailsRow: StatelessComponent[IDetailsRowBaseProps] = js.native
   val DetailsRowCheck: FunctionComponent[IDetailsRowCheckProps] = js.native
+  val DetailsRowFields: FunctionComponent[IDetailsRowFieldsProps] = js.native
   val SELECTION_CHANGE: change = js.native
   def buildColumns(
     items: js.Array[_],

@@ -14,6 +14,7 @@ import typings.std.ArrayBuffer
 import typings.std.Float32Array
 import typings.std.GLenum
 import typings.std.HTMLCanvasElement
+import typings.std.HTMLVideoElement
 import typings.std.Uint32Array
 import typings.std.WebGLBuffer
 import typings.std.WebGLFramebuffer
@@ -229,14 +230,18 @@ class WebGLRenderer protected () extends js.Object {
     */
   def addPipeline(pipelineName: String, pipelineInstance: WebGLPipeline): WebGLPipeline = js.native
   /**
-    * Creates a WebGL Texture based on the given canvas element.
-    * @param srcCanvas The Canvas element that will be used to populate the texture.
-    * @param dstTexture Is this going to replace an existing texture? If so, pass it here.
-    * @param noRepeat Should this canvas never be allowed to set REPEAT? (such as for Text objects) Default false.
+    * Creates a new WebGL Texture based on the given Canvas Element.
+    * 
+    * If the `dstTexture` parameter is given, the WebGL Texture is updated, rather than created fresh.
+    * @param srcCanvas The Canvas to create the WebGL Texture from
+    * @param dstTexture The destination WebGL Texture to set.
+    * @param noRepeat Should this canvas be allowed to set `REPEAT` (such as for Text objects?) Default false.
+    * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
     */
   def canvasToTexture(srcCanvas: HTMLCanvasElement): WebGLTexture = js.native
   def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture): WebGLTexture = js.native
   def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture, noRepeat: Boolean): WebGLTexture = js.native
+  def canvasToTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture, noRepeat: Boolean, flipY: Boolean): WebGLTexture = js.native
   /**
     * Flushes the current WebGLPipeline being used and then clears it, along with the
     * the current shader program and vertex buffer. Then resets the blend mode to NORMAL.
@@ -244,6 +249,15 @@ class WebGLRenderer protected () extends js.Object {
     * you wish to return control to Phaser again.
     */
   def clearPipeline(): Unit = js.native
+  /**
+    * Creates a new WebGL Texture based on the given Canvas Element.
+    * @param srcCanvas The Canvas to create the WebGL Texture from
+    * @param noRepeat Should this canvas be allowed to set `REPEAT` (such as for Text objects?) Default false.
+    * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
+    */
+  def createCanvasTexture(srcCanvas: HTMLCanvasElement): WebGLTexture = js.native
+  def createCanvasTexture(srcCanvas: HTMLCanvasElement, noRepeat: Boolean): WebGLTexture = js.native
+  def createCanvasTexture(srcCanvas: HTMLCanvasElement, noRepeat: Boolean, flipY: Boolean): WebGLTexture = js.native
   /**
     * Wrapper for creating WebGLFramebuffer.
     * @param width Width in pixels of the framebuffer
@@ -275,8 +289,21 @@ class WebGLRenderer protected () extends js.Object {
     * @param pixels pixel data.
     * @param width Width of the texture in pixels.
     * @param height Height of the texture in pixels.
-    * @param pma Does the texture have premultiplied alpha?
+    * @param pma Does the texture have premultiplied alpha? Default true.
+    * @param forceSize If `true` it will use the width and height passed to this method, regardless of the pixels dimension. Default false.
+    * @param flipY Sets the `UNPACK_FLIP_Y_WEBGL` flag the WebGL Texture uses during upload. Default false.
     */
+  def createTexture2D(
+    mipLevel: integer,
+    minFilter: integer,
+    magFilter: integer,
+    wrapT: integer,
+    wrapS: integer,
+    format: integer,
+    pixels: js.Object,
+    width: integer,
+    height: integer
+  ): WebGLTexture = js.native
   def createTexture2D(
     mipLevel: integer,
     minFilter: integer,
@@ -288,6 +315,33 @@ class WebGLRenderer protected () extends js.Object {
     width: integer,
     height: integer,
     pma: Boolean
+  ): WebGLTexture = js.native
+  def createTexture2D(
+    mipLevel: integer,
+    minFilter: integer,
+    magFilter: integer,
+    wrapT: integer,
+    wrapS: integer,
+    format: integer,
+    pixels: js.Object,
+    width: integer,
+    height: integer,
+    pma: Boolean,
+    forceSize: Boolean
+  ): WebGLTexture = js.native
+  def createTexture2D(
+    mipLevel: integer,
+    minFilter: integer,
+    magFilter: integer,
+    wrapT: integer,
+    wrapS: integer,
+    format: integer,
+    pixels: js.Object,
+    width: integer,
+    height: integer,
+    pma: Boolean,
+    forceSize: Boolean,
+    flipY: Boolean
   ): WebGLTexture = js.native
   /**
     * Creates a texture from an image source. If the source is not valid it creates an empty texture.
@@ -303,6 +357,15 @@ class WebGLRenderer protected () extends js.Object {
     * @param bufferUsage How the buffer is used. gl.DYNAMIC_DRAW, gl.STATIC_DRAW or gl.STREAM_DRAW
     */
   def createVertexBuffer(initialDataOrSize: ArrayBuffer, bufferUsage: integer): WebGLBuffer = js.native
+  /**
+    * Creates a new WebGL Texture based on the given HTML Video Element.
+    * @param srcVideo The Video to create the WebGL Texture from
+    * @param noRepeat Should this canvas be allowed to set `REPEAT`? Default false.
+    * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
+    */
+  def createVideoTexture(srcVideo: HTMLVideoElement): WebGLTexture = js.native
+  def createVideoTexture(srcVideo: HTMLVideoElement, noRepeat: Boolean): WebGLTexture = js.native
+  def createVideoTexture(srcVideo: HTMLVideoElement, noRepeat: Boolean, flipY: Boolean): WebGLTexture = js.native
   /**
     * Deletes a WebGLBuffer from the GL instance.
     * @param vertexBuffer The WebGLBuffer to be deleted.
@@ -763,5 +826,21 @@ class WebGLRenderer protected () extends js.Object {
     * @param equation The equation to use for the blend mode.
     */
   def updateBlendMode(index: integer, func: js.Function, equation: js.Function): this.type = js.native
+  /**
+    * Updates a WebGL Texture based on the given Canvas Element.
+    * @param srcCanvas The Canvas to update the WebGL Texture from.
+    * @param dstTexture The destination WebGL Texture to update.
+    * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
+    */
+  def updateCanvasTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture): WebGLTexture = js.native
+  def updateCanvasTexture(srcCanvas: HTMLCanvasElement, dstTexture: WebGLTexture, flipY: Boolean): WebGLTexture = js.native
+  /**
+    * Updates a WebGL Texture based on the given HTML Video Element.
+    * @param srcVideo The Video to update the WebGL Texture with.
+    * @param dstTexture The destination WebGL Texture to update.
+    * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y`? Default false.
+    */
+  def updateVideoTexture(srcVideo: HTMLVideoElement, dstTexture: WebGLTexture): WebGLTexture = js.native
+  def updateVideoTexture(srcVideo: HTMLVideoElement, dstTexture: WebGLTexture, flipY: Boolean): WebGLTexture = js.native
 }
 

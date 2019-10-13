@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => @esfx/internal-guards, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/internal-guards/dist/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/internal-guards),TsIdentLibraryScoped(esfx,Some(internal-guards))),TsIdentModule(Some(esfx),List(internal-guards))) [id => @esfx/internal-guards, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(esfx),List(internal-guards)) [id => @esfx/internal-guards, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibraryScoped(esfx,Some(internal-guards)) [id => @esfx/internal-guards, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibraryScoped(esfx,Some(internal-guards)) [id => @esfx/internal-guards, phase => typescript] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(isFunction) [id => @esfx/internal-guards, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@esfx/internal-guards))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(isObject) [id => @esfx/internal-guards, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@esfx/internal-guards))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(isInstance) [id => @esfx/internal-guards, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@esfx/internal-guards))] 

@@ -10,7 +10,7 @@ import typings.propDashTypes.propDashTypesMod.Requireable
 import typings.propDashTypes.propDashTypesMod.Validator
 import typings.react.reactMod.Context
 import typings.react.reactMod.FC
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,8 +3,8 @@ package typings.antlr4
 import typings.antlr4.intervalSetMod.Interval
 import typings.antlr4.parserRuleContextMod.ParserRuleContext
 import typings.antlr4.ruleContextMod.RuleContext
+import typings.antlr4.treeTreeMod.ParseTree
 import typings.antlr4.treeTreeMod.ParseTreeVisitor
-import typings.antlr4.treeTreeMod.RuleNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ruleContextMod extends js.Object {
   @js.native
-  class RuleContext protected () extends RuleNode {
+  class RuleContext protected () extends ParseTree {
     def this(parent: js.Any, invokingState: Double) = this()
     val invokingState: Double = js.native
     val parentCtx: ParserRuleContext = js.native

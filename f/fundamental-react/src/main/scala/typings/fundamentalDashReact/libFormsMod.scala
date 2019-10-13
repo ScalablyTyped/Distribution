@@ -6,11 +6,12 @@ import typings.fundamentalDashReact.libFormsFormItemMod.FormItemProps
 import typings.fundamentalDashReact.libFormsFormLabelMod.FormLabelProps
 import typings.fundamentalDashReact.libFormsFormLegendMod.FormLegendProps
 import typings.fundamentalDashReact.libFormsFormMessageMod.FormMessageProps
-import typings.fundamentalDashReact.libFormsFormRadioGroupMod.default
+import typings.fundamentalDashReact.libFormsFormRadioGroupMod.FormRadioGroupProps
 import typings.fundamentalDashReact.libFormsFormRadioItemMod.FormRadioItemProps
 import typings.fundamentalDashReact.libFormsFormSelectMod.FormSelectProps
 import typings.fundamentalDashReact.libFormsFormSetMod.FormSetProps
 import typings.fundamentalDashReact.libFormsFormTextareaMod.FormTextareaProps
+import typings.react.reactMod.Component
 import typings.react.reactMod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +21,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libFormsMod extends js.Object {
   @js.native
-  class FormRadioGroup () extends default
+  class FormRadioGroup ()
+    extends Component[FormRadioGroupProps, js.Object, js.Any]
   
   val FormFieldset: FunctionComponent[FormFieldsetProps] = js.native
   val FormInput: FunctionComponent[FormInputProps] = js.native

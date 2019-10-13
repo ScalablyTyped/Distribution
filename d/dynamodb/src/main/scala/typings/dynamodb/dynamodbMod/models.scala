@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object models
   extends /* key */ StringDictionary[
-      (Instantiable1[/* attrs */ js.Any, typings.dynamodb.modelMod.Model]) with TypeofModel
+      TypeofModel with (Instantiable1[/* attrs */ js.Any, typings.dynamodb.modelMod.Model])
     ]
 

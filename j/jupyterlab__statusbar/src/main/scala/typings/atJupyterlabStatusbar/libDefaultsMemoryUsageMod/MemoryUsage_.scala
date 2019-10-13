@@ -1,6 +1,6 @@
 package typings.atJupyterlabStatusbar.libDefaultsMemoryUsageMod
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomRenderer
+import typings.atJupyterlabApputils.libVdomMod.VDomRenderer
 import typings.atJupyterlabStatusbar.libDefaultsMemoryUsageMod.MemoryUsage.Model
 import scala.scalajs.js
 import scala.scalajs.js.`|`

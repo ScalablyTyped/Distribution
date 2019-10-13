@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "DateTransform")
 @js.native
 class DateTransform ()
-  extends typings.emberDashData.emberDashDataMod.DS.DateTransform
+  extends typings.emberDashData.emberDashDataMod.DS.Transform
 

@@ -18,69 +18,12 @@ class Query[R /* <: QueryResultRow */, I /* <: js.Array[_] */] ()
   def this(queryTextOrConfig: QueryConfig[I]) = this()
   def this(queryTextOrConfig: String, values: I) = this()
   def this(queryTextOrConfig: QueryConfig[I], values: I) = this()
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_end(event: end, listener: js.Function1[/* result */ ResultBuilder[R], Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("on")
   def on_row(event: row, listener: js.Function2[/* row */ R, /* result */ js.UndefOr[ResultBuilder[R]], Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
   /* CompleteClass */
   override def submit(connection: Connection): Unit = js.native
 }

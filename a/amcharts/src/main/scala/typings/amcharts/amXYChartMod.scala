@@ -1,5 +1,6 @@
 package typings.amcharts
 
+import typings.amcharts.amRectangularChartMod.AmRectangularChart
 import typings.amcharts.amXYChartMod.AmXYChart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,8 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object amXYChartMod extends js.Object {
   @js.native
-  trait AmXYChart
-    extends typings.amcharts.amRectangularChartMod.default {
+  trait AmXYChart extends AmRectangularChart {
     /**
       * Specifies if Scrollbar of X axis (horizontal) should be hidden.
       */

@@ -2,7 +2,7 @@ package typings.styledDashComponents.styledDashComponentsMod
 
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
-import typings.styledDashComponents.styledDashComponentsMod.Global.NodeJS.ReadableStream
+import typings.styledDashComponents.styledDashComponentsMod._Global_.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -18,9 +18,7 @@ object distLibRenderingCellEditorsLargeTextCellEditorMod extends js.Object {
     var rows: Double = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.agDashGrid.distLibInterfacesIComponentMod.IComponent because Already inherited
-  - typings.agDashGrid.distLibRenderingCellEditorsICellEditorMod.ICellEditorComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @js.native
+  @js.native
   class LargeTextCellEditor ()
     extends Component
        with ICellEditor {

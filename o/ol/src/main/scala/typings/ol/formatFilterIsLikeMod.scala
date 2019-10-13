@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterIsLikeMod.IsLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterIsLikeMod extends js.Object {
   @js.native
-  class default protected () extends IsLike {
+  class default protected ()
+    extends typings.ol.formatFilterComparisonMod.default {
     def this(propertyName: String, pattern: String) = this()
     def this(propertyName: String, pattern: String, opt_wildCard: String) = this()
     def this(propertyName: String, pattern: String, opt_wildCard: String, opt_singleChar: String) = this()

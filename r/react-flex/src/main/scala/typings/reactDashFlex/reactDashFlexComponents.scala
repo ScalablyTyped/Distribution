@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactDashFlexComponents extends reactDashFlexProps {
   @scala.inline
-  def Flex: ComponentType[typings.reactDashFlex.reactDashFlexMod.FlexProps] = js.constructorOf[typings.reactDashFlex.reactDashFlexMod.Flex].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFlex.reactDashFlexMod.FlexProps]]
+  def Flex: ComponentType[FlexProps] = js.constructorOf[typings.reactDashFlex.reactDashFlexMod.Flex].asInstanceOf[typings.react.reactMod.ComponentType[FlexProps]]
   @scala.inline
-  def Item: ComponentType[typings.reactDashFlex.reactDashFlexMod.ItemProps] = js.constructorOf[typings.reactDashFlex.reactDashFlexMod.Item].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFlex.reactDashFlexMod.ItemProps]]
+  def Item: ComponentType[ItemProps] = js.constructorOf[typings.reactDashFlex.reactDashFlexMod.Item].asInstanceOf[typings.react.reactMod.ComponentType[ItemProps]]
 }
 

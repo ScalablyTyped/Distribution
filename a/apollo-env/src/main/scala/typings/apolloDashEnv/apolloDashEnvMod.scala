@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 object apolloDashEnvMod extends js.Object {
   @js.native
   class Body ()
-    extends typings.apolloDashEnv.libFetchMod.Body
+    extends typings.apolloDashEnv.libFetchFetchMod.Body
   
   @js.native
   class Headers ()

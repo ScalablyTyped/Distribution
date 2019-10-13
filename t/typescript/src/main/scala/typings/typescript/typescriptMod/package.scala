@@ -159,7 +159,7 @@ package object typescriptMod {
   type SymbolTable = UnderscoreEscapedMap[Symbol]
   type Transformer[T /* <: Node */] = js.Function1[/* node */ T, T]
   type TransformerFactory[T /* <: Node */] = js.Function1[/* context */ TransformationContext, Transformer[T]]
-  type TypeParameter = InstantiableType
+  type TypeParameter = Type
   type TypeVariable = TypeParameter | IndexedAccessType
   type UnionType = UnionOrIntersectionType
   type VisitResult[T /* <: Node */] = js.UndefOr[T | js.Array[T]]

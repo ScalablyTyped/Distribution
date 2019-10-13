@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsCheckboxCheckboxMod.CheckboxProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object checkboxMod extends js.Object {
   @js.native
   class Checkbox ()
-    extends typings.primereact.componentsCheckboxCheckboxMod.Checkbox
+    extends Component[CheckboxProps, js.Any, js.Any]
   
 }
 

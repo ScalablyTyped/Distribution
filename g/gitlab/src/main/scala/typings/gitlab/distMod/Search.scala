@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "Search")
 @js.native
 class Search ()
-  extends typings.gitlab.distServicesMod.Search
+  extends typings.gitlab.distServicesSearchMod.Search
 

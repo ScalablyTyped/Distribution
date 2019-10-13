@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libPagerItemMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapMod.SelectCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PagerItemProps extends HTMLProps[PagerItem] {
+trait PagerItemProps
+  extends AllHTMLAttributes[PagerItem]
+     with ClassAttributes[PagerItem] {
   var eventKey: js.UndefOr[js.Any] = js.undefined
   var next: js.UndefOr[Boolean] = js.undefined
   @JSName("onSelect")
@@ -17,7 +20,8 @@ trait PagerItemProps extends HTMLProps[PagerItem] {
 object PagerItemProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[PagerItem] = null,
+    AllHTMLAttributes: AllHTMLAttributes[PagerItem] = null,
+    ClassAttributes: ClassAttributes[PagerItem] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     eventKey: js.Any = null,
     next: js.UndefOr[Boolean] = js.undefined,
@@ -26,7 +30,8 @@ object PagerItemProps {
     target: String = null
   ): PagerItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey)
     if (!js.isUndefined(next)) __obj.updateDynamic("next")(next)

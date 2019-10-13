@@ -1,13 +1,16 @@
 package typings.ddDashTrace.ddDashTraceMod.plugins
 
 import typings.ddDashTrace.Anon_ReqRequestRes
+import typings.ddDashTrace.ddDashTraceMod.Analyzable
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @hidden */
-trait Http extends Instrumentation {
+trait Http
+  extends Integration
+     with Analyzable {
   /**
     * List of URLs that should not be instrumented. Takes precedence over
     * whitelist if a URL matches an entry in both.
@@ -52,7 +55,6 @@ trait Http extends Instrumentation {
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.ddDashTrace.ddDashTraceMod.Analyzable because Already inherited
 - typings.ddDashTrace.ddDashTraceMod.plugins.Integration because Already inherited
-- typings.ddDashTrace.ddDashTraceMod.plugins.Instrumentation because Already inherited
 - typings.ddDashTrace.ddDashTraceMod.plugins.Http because Already inherited
 - typings.ddDashTrace.ddDashTraceMod.plugins.HttpServer because var conflicts: analytics, blacklist, enabled, headers, hooks, service, validateStatus, whitelist. Inlined  */ trait http extends HttpClient {
   /**

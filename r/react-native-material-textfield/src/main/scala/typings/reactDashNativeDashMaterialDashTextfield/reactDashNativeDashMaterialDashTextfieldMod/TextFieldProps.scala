@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaterialDashTextfield.reactDashNativeDashMaterialDashTextfieldMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashNative.Anon_EndStart
 import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
 import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo

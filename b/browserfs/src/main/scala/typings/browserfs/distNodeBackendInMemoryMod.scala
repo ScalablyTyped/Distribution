@@ -28,7 +28,7 @@ object distNodeBackendInMemoryMod extends js.Object {
   }
   
   @js.native
-  class default () extends InMemoryFileSystem
+  class default () extends SyncKeyValueFileSystem
   
   /* static members */
   @js.native

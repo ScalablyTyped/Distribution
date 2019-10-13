@@ -1,6 +1,6 @@
 package typings.reactDashMosaicDashComponent
 
-import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
+import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
 import typings.reactDashMosaicDashComponent.libButtonsMosaicButtonMod.MosaicButtonProps
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicKey
 import scala.scalajs.js

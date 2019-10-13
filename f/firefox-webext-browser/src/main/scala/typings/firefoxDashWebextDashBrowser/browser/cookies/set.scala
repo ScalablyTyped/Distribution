@@ -12,6 +12,6 @@ object set extends js.Object {
     * Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
     * @param details Details about the cookie being set.
     */
-  def apply(details: Anon_DomainExpirationDate): js.Promise[js.UndefOr[Cookie]] = js.native
+  def apply(details: Anon_DomainExpirationDate): js.Promise[Cookie] = js.native
 }
 

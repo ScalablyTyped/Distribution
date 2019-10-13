@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashGatewayComponents extends reactDashGatewayProps {
   @scala.inline
-  def Gateway: ComponentType[typings.reactDashGateway.gatewayMod.GatewayProps] = js.constructorOf[typings.reactDashGateway.gatewayMod.^].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashGateway.gatewayMod.GatewayProps]]
+  def Gateway: ComponentType[GatewayProps] = js.constructorOf[typings.reactDashGateway.gatewayMod.^].asInstanceOf[typings.react.reactMod.ComponentType[GatewayProps]]
   @scala.inline
-  def GatewayDest: ComponentType[typings.reactDashGateway.gatewayDestMod.GatewayDestProps] = js.constructorOf[typings.reactDashGateway.gatewayDestMod.^].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashGateway.gatewayDestMod.GatewayDestProps]]
+  def GatewayDest: ComponentType[GatewayDestProps] = js.constructorOf[typings.reactDashGateway.gatewayDestMod.^].asInstanceOf[typings.react.reactMod.ComponentType[GatewayDestProps]]
   @scala.inline
   def GatewayProvider: ComponentType[js.Object] = js.constructorOf[typings.reactDashGateway.gatewayProviderMod.^].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
 }

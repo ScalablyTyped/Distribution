@@ -2,9 +2,11 @@ package typings.atLinguiMacro
 
 import typings.atLinguiCore.i18nMod.MessageDescriptor
 import typings.atLinguiMacro.createFormatMod.FormatPropsWithoutI18n
+import typings.atLinguiMacro.reactSelectMod.PluralPropsWithoutI18n
+import typings.atLinguiMacro.reactSelectMod.SelectPropsWithoutI18n
 import typings.atLinguiMacro.selectMod.PluralProps
 import typings.atLinguiMacro.selectMod.SelectProps
-import typings.atLinguiMacro.transMod.default
+import typings.atLinguiMacro.transMod.TransPropsWithoutI18n
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
@@ -35,18 +37,19 @@ object atLinguiMacroMod extends js.Object {
   
   @js.native
   class Plural ()
-    extends typings.atLinguiMacro.reactSelectMod.Plural
+    extends Component[PluralPropsWithoutI18n, js.Object, js.Any]
   
   @js.native
   class Select ()
-    extends typings.atLinguiMacro.reactSelectMod.Select
+    extends Component[SelectPropsWithoutI18n, js.Object, js.Any]
   
   @js.native
   class SelectOrdinal ()
-    extends typings.atLinguiMacro.reactSelectMod.SelectOrdinal
+    extends Component[PluralPropsWithoutI18n, js.Object, js.Any]
   
   @js.native
-  class Trans () extends default
+  class Trans ()
+    extends Component[TransPropsWithoutI18n, js.Object, js.Any]
   
   val DateFormat: ComponentClass[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState] = js.native
   val NumberFormat: ComponentClass[FormatPropsWithoutI18n[Double, NumberFormatOptions], ComponentState] = js.native

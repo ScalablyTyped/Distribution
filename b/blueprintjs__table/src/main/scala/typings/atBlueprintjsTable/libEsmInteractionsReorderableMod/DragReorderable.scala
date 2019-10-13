@@ -1,6 +1,6 @@
 package typings.atBlueprintjsTable.libEsmInteractionsReorderableMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/table/lib/esm/interactions/reorderable", "DragReorderable")
 @js.native
 class DragReorderable ()
-  extends PureComponent[IDragReorderable, js.Object, js.Any] {
+  extends Component[IDragReorderable, js.Object, js.Any] {
   var getDraggableProps: js.Any = js.native
   var handleActivate: js.Any = js.native
   var handleDragEnd: js.Any = js.native

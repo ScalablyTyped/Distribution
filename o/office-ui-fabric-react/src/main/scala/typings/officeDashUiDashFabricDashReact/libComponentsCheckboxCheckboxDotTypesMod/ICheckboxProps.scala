@@ -10,7 +10,7 @@ import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactSt
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.start
 import typings.react.reactMod.ButtonHTMLAttributes
 import typings.react.reactMod.FormEvent
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement

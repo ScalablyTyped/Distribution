@@ -2,7 +2,7 @@ package typings.antdDashMobile.esModalModalMod
 
 import typings.antdDashMobile.esModalPropsTypeMod.Action
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

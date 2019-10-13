@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "Events")
 @js.native
 class Events ()
-  extends typings.gitlab.distServicesMod.Events
+  extends typings.gitlab.distServicesEventsMod.Events
 

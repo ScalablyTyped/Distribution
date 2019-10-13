@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.dialogMod.Dialog
+import typings.materialDashUi.__MaterialUI.DialogProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object dialogMod extends js.Object {
   @js.native
   class Dialog ()
-    extends typings.materialDashUi.__MaterialUI.Dialog
+    extends Component[DialogProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Dialog
+  class default ()
+    extends Component[DialogProps, js.Object, js.Any]
   
 }
 

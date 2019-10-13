@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.tableTableRowMod.TableRow
+import typings.materialDashUi.__MaterialUI.Table.TableRowProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object tableTableRowMod extends js.Object {
   @js.native
   class TableRow ()
-    extends typings.materialDashUi.__MaterialUI.Table.TableRow
+    extends Component[TableRowProps, js.Object, js.Any]
   
   @js.native
-  class default () extends TableRow
+  class default ()
+    extends Component[TableRowProps, js.Object, js.Any]
   
 }
 

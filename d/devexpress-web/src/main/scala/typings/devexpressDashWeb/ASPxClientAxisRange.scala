@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientAxisRange")
 @js.native
-class ASPxClientAxisRange () extends ASPxClientWebChartRequiredElement {
+class ASPxClientAxisRange () extends ASPxClientWebChartElement {
   /**
     * Gets the axis that owns the current axis range object.
     */

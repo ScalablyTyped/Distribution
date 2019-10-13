@@ -1,6 +1,6 @@
 package typings.reactDashSketchapp.reactDashSketchappMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashSketchapp.typesMod.SketchLayer
 import typings.reactDashSketchapp.typesMod.WrappedSketchLayer
 import scala.scalajs.js

@@ -1,6 +1,7 @@
 package typings.phaser.Phaser
 
 import typings.phaser.AdInstance
+import typings.phaser.ChooseContextConfig
 import typings.phaser.Phaser.Data.DataManager
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Product
@@ -190,9 +191,10 @@ class FacebookInstantGamesPlugin protected () extends EventEmitter {
     * Opens a context selection dialog for the player. If the player selects an available context,
     * the client will attempt to switch into that context, and emit the `choose` event if successful.
     * Otherwise, if the player exits the menu or the client fails to switch into the new context, the `choosefail` event will be emitted.
-    * @param contextID The ID of the desired context.
+    * @param options An object specifying conditions on the contexts that should be offered.
     */
-  def chooseContext(contextID: String): this.type = js.native
+  def chooseContext(): this.type = js.native
+  def chooseContext(options: ChooseContextConfig): this.type = js.native
   /**
     * Consumes a specific purchase belonging to the current player. Before provisioning a product's effects to the player,
     * the game should request the consumption of the purchased product. Once the purchase is successfully consumed,

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object mixin {
   import typings.senchaUnderscoreTouch.Ext.IBase
 
-  type IBindable = IMixin
+  type IBindable = IBase
   type IMixin = IBase
-  type ITemplatable = IMixin
-  type ITraversable = IMixin
+  type ITemplatable = IBase
+  type ITraversable = IBase
 }

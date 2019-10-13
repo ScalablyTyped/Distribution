@@ -8,14 +8,14 @@ package object yandexDashMapsMod {
   import typings.yandexDashMaps.yandexDashMapsMod.geometry.Point
 
   type IChildOnMap = IChild[IControlParent]
-  type IControl = IChildOnMap
+  type IControl = IChild[IControlParent]
   type ICopyrightsAccessor = ICopyrightsProvider
   type IDomEventEmitter = IEventEmitter
   type IExpandableControlLayout = ILayout
   type IGeometryEditorRootModel = IGeometryEditorModel
   type IHintManager[T] = IPopupManager[T]
   type IMultiRouteReferencePoint = String | js.Array[Double] | Point
-  type ISearchControlLayout = IExpandableControlLayout
+  type ISearchControlLayout = ILayout
   type ISelectableControlLayout = ILayout
   /* Rewritten from type alias, can be one of: 
     - typings.yandexDashMaps.yandexDashMapsStrings.`default#opaque`

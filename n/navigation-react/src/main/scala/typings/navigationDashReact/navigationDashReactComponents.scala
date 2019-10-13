@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object navigationDashReactComponents extends navigationDashReactProps {
   @scala.inline
-  def NavigationBackLink: ComponentType[typings.navigationDashReact.navigationDashReactMod.NavigationBackLinkProps] = js.constructorOf[typings.navigationDashReact.navigationDashReactMod.NavigationBackLink].asInstanceOf[typings.react.reactMod.ComponentType[typings.navigationDashReact.navigationDashReactMod.NavigationBackLinkProps]]
+  def NavigationBackLink: ComponentType[NavigationBackLinkProps] = js.constructorOf[typings.navigationDashReact.navigationDashReactMod.NavigationBackLink].asInstanceOf[typings.react.reactMod.ComponentType[NavigationBackLinkProps]]
   @scala.inline
-  def NavigationLink: ComponentType[typings.navigationDashReact.navigationDashReactMod.NavigationLinkProps] = js.constructorOf[typings.navigationDashReact.navigationDashReactMod.NavigationLink].asInstanceOf[typings.react.reactMod.ComponentType[typings.navigationDashReact.navigationDashReactMod.NavigationLinkProps]]
+  def NavigationLink: ComponentType[NavigationLinkProps] = js.constructorOf[typings.navigationDashReact.navigationDashReactMod.NavigationLink].asInstanceOf[typings.react.reactMod.ComponentType[NavigationLinkProps]]
   @scala.inline
-  def RefreshLink: ComponentType[typings.navigationDashReact.navigationDashReactMod.RefreshLinkProps] = js.constructorOf[typings.navigationDashReact.navigationDashReactMod.RefreshLink].asInstanceOf[typings.react.reactMod.ComponentType[typings.navigationDashReact.navigationDashReactMod.RefreshLinkProps]]
+  def RefreshLink: ComponentType[RefreshLinkProps] = js.constructorOf[typings.navigationDashReact.navigationDashReactMod.RefreshLink].asInstanceOf[typings.react.reactMod.ComponentType[RefreshLinkProps]]
 }
 

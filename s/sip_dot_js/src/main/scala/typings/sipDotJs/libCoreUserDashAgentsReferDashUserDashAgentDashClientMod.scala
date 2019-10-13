@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/user-agents/refer-user-agent-client", JSImport.Namespace)
 @js.native
 object libCoreUserDashAgentsReferDashUserDashAgentDashClientMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.sipDotJs.libCoreMessagesMethodsReferMod.OutgoingReferRequest because Already inherited */ @js.native
+  @js.native
   class ReferUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()

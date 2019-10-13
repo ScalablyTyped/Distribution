@@ -1,7 +1,7 @@
 package typings.rmcDashDialog
 
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.rmcDashDialog.libIDialogPropTypesMod.IDialogPropTypes
 import typings.rmcDashDialog.rmcDashDialogMod.DialogWrap
 import scala.scalajs.js

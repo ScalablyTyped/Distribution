@@ -2,7 +2,6 @@ package typings.senchaUnderscoreTouch.Ext.device
 
 import typings.senchaUnderscoreTouch.Ext.IBase
 import typings.senchaUnderscoreTouch.Ext.IClass
-import typings.senchaUnderscoreTouch.Ext.device.splashscreen.IAbstract
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,8 +58,8 @@ object Splashscreen extends js.Object {
 @js.native
 object splashscreen extends js.Object {
   type IAbstract = IBase
-  type ICordova = IAbstract
-  type IPhoneGap = IAbstract
-  type ISimulator = IAbstract
+  type ICordova = IBase
+  type IPhoneGap = IBase
+  type ISimulator = IBase
 }
 

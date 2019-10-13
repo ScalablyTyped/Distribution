@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "apollo-link-ws"
-version := "1.0.19-0796fb"
+version := "1.0.19-2736fd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.13-eb52ae",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-04d977",
-  "org.scalablytyped" %%% "graphql" % "14.5.8-ae2a8e",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3",
-  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-382e29",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20190823Z-9e4cb7",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-569cc1")
+  "org.scalablytyped" %%% "apollo-link" % "1.2.13-05736d",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-dd73fa",
+  "org.scalablytyped" %%% "graphql" % "14.5.8-9a82b3",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
+  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-55feed",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20190823Z-9bab89",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-fe506f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

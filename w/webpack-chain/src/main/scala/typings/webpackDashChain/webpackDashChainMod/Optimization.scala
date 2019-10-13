@@ -8,8 +8,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack-chain", "Optimization")
 @js.native
-class Optimization () extends ChainedMap[Config] {
+class Optimization ()
+  extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedMap[Config, js.Any] {
   def concatenateModules(value: Boolean): this.type = js.native
+  /* CompleteClass */
+  override def end(): Config = js.native
   def flagIncludedChunks(value: Boolean): this.type = js.native
   def mergeDuplicateChunks(value: Boolean): this.type = js.native
   def minimize(value: Boolean): this.type = js.native

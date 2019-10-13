@@ -7,16 +7,25 @@ import scala.scalajs.js.annotation._
 
 /* devtools.panels types */
 /** Represents the Elements panel. */
-@js.native
 trait ElementsPanel extends js.Object {
   /** Fired when an object is selected in the panel. */
-  var onSelectionChanged: WebExtEvent[js.Function0[Unit]] = js.native
+  var onSelectionChanged: WebExtEvent[js.Function0[Unit]]
   /**
     * Creates a pane within panel's sidebar.
     * @param title Text that is displayed in sidebar caption.
-    * @param [callback] A callback invoked when the sidebar is created.
     */
-  def createSidebarPane(title: String): Unit = js.native
-  def createSidebarPane(title: String, callback: js.Function1[/* result */ ExtensionSidebarPane, Unit]): Unit = js.native
+  def createSidebarPane(title: String): js.Promise[ExtensionSidebarPane]
+}
+
+object ElementsPanel {
+  @scala.inline
+  def apply(
+    createSidebarPane: String => js.Promise[ExtensionSidebarPane],
+    onSelectionChanged: WebExtEvent[js.Function0[Unit]]
+  ): ElementsPanel = {
+    val __obj = js.Dynamic.literal(createSidebarPane = js.Any.fromFunction1(createSidebarPane), onSelectionChanged = onSelectionChanged)
+  
+    __obj.asInstanceOf[ElementsPanel]
+  }
 }
 

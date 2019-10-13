@@ -1,7 +1,7 @@
 package typings.angularDashAnimate.angularDashAnimateMod.angularMod.animate
 
 import typings.angular.JQuery
-import typings.angular.angularMod.Global.Function
+import typings.angular.angularMod._Global_.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

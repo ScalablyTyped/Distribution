@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashListMod {
-  import typings.react.reactMod.Global.JSX.Element
+  import typings.react.reactMod._Global_.JSX.Element
 
   type ItemRenderer = js.Function2[/* index */ Double, /* key */ Double | String, Element]
   type ItemSizeEstimator = js.Function2[/* index */ Double, /* cache */ js.Object, Double]

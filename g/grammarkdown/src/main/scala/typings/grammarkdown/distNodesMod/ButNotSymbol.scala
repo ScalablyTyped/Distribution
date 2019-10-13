@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown/dist/nodes", "ButNotSymbol")
 @js.native
 class ButNotSymbol protected ()
-  extends LexicalSymbolBase[typings.grammarkdown.distTokensMod.SyntaxKind.ButNotSymbol] {
+  extends Node[typings.grammarkdown.distTokensMod.SyntaxKind.ButNotSymbol] {
   def this(left: LexicalSymbol) = this()
   def this(left: LexicalSymbol, butKeyword: Token[ButKeyword]) = this()
   def this(left: LexicalSymbol, butKeyword: js.UndefOr[scala.Nothing], notKeyword: Token[NotKeyword]) = this()

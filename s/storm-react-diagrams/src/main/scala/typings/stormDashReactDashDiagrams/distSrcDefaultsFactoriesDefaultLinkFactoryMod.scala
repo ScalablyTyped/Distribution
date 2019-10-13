@@ -1,6 +1,6 @@
 package typings.stormDashReactDashDiagrams
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.stormDashReactDashDiagrams.distSrcDefaultsModelsDefaultLinkModelMod.DefaultLinkModel
 import typings.stormDashReactDashDiagrams.distSrcDefaultsWidgetsDefaultLinkWidgetMod.DefaultLinkWidget
 import typings.stormDashReactDashDiagrams.distSrcFactoriesAbstractLinkFactoryMod.AbstractLinkFactory

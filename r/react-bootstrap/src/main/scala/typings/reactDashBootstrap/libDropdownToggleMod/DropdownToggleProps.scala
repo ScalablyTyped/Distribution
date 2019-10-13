@@ -1,11 +1,14 @@
 package typings.reactDashBootstrap.libDropdownToggleMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DropdownToggleProps extends HTMLProps[DropdownToggle] {
+trait DropdownToggleProps
+  extends AllHTMLAttributes[DropdownToggle]
+     with ClassAttributes[DropdownToggle] {
   var bsClass: js.UndefOr[String] = js.undefined
   var bsRole: js.UndefOr[String] = js.undefined
   var bsSize: js.UndefOr[String] = js.undefined
@@ -18,7 +21,8 @@ trait DropdownToggleProps extends HTMLProps[DropdownToggle] {
 object DropdownToggleProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[DropdownToggle] = null,
+    AllHTMLAttributes: AllHTMLAttributes[DropdownToggle] = null,
+    ClassAttributes: ClassAttributes[DropdownToggle] = null,
     bsClass: String = null,
     bsRole: String = null,
     bsSize: String = null,
@@ -29,7 +33,8 @@ object DropdownToggleProps {
     useAnchor: js.UndefOr[Boolean] = js.undefined
   ): DropdownToggleProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (bsRole != null) __obj.updateDynamic("bsRole")(bsRole)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)

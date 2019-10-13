@@ -2,8 +2,8 @@ package typings.atBlueprintjsSelect
 
 import typings.atBlueprintjsSelect.libEsmCommonItemListRendererMod.IItemListRendererProps
 import typings.atBlueprintjsSelect.libEsmCommonListItemsUtilsMod.ICreateNewItem
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

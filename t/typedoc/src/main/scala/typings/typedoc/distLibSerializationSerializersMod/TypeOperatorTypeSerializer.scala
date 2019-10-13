@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/serialization/serializers", "TypeOperatorTypeSerializer")
 @js.native
 class TypeOperatorTypeSerializer ()
-  extends typings.typedoc.distLibSerializationSerializersTypesMod.TypeOperatorTypeSerializer
+  extends typings.typedoc.distLibSerializationSerializersTypesTypeDashOperatorMod.TypeOperatorTypeSerializer
 

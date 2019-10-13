@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lokijs", "LokiLocalStorageAdapter")
 @js.native
 class LokiLocalStorageAdapter ()
-  extends typings.lokijs.LokiConstructor.LokiLocalStorageAdapter
+  extends typings.lokijs.LokiLocalStorageAdapter
 

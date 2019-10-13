@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_Background
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylecolorstringbackgroun
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Ripple")
 @js.native
 class Ripple ()
-  extends Component[Anon_Background, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylecolorstringbackgroun, js.Any, js.Any]
 

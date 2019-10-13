@@ -1,11 +1,11 @@
 package typings.reactDashWidgets.libDateTimePickerMod
 
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactType
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashWidgets.libCommonPropsMod.AutoFocus
 import typings.reactDashWidgets.libCommonPropsMod.ReactWidgetsCommonDropdownProps
 import typings.reactDashWidgets.reactDashWidgetsNumbers.`false`

@@ -1,7 +1,7 @@
 package typings.reactDashThemeableDashTs.buildDashEs2015ThemeDashProviderMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.react.reactMod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-themeable-ts/build-es2015/theme-provider", "ThemeProvider")
 @js.native
 class ThemeProvider ()
-  extends PureComponent[IThemeProviderProps, js.Object, js.Any] {
+  extends Component[IThemeProviderProps, js.Object, js.Any] {
   def getChildContext(): StringDictionary[js.Any] = js.native
 }
 

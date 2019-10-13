@@ -1,10 +1,12 @@
 package typings.reactDashMdl.reactDashMdlMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "ListItemAction")
 @js.native
-class ListItemAction () extends __MDLComponent[ListItemActionProps]
+class ListItemAction ()
+  extends Component[ListItemActionProps, js.Object, js.Any]
 

@@ -1,13 +1,16 @@
 package typings.reactDashSwipeableDashViews.reactDashSwipeableDashViewsMod
 
+import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.ClassAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SwipeableViewsProps extends HTMLProps[HTMLDivElement] {
+trait SwipeableViewsProps
+  extends AllHTMLAttributes[HTMLDivElement]
+     with ClassAttributes[HTMLDivElement] {
   var animateHeight: js.UndefOr[Boolean] = js.undefined
   var animateTransitions: js.UndefOr[Boolean] = js.undefined
   var axis: js.UndefOr[AxisType] = js.undefined
@@ -34,7 +37,8 @@ trait SwipeableViewsProps extends HTMLProps[HTMLDivElement] {
 object SwipeableViewsProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLDivElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
+    ClassAttributes: ClassAttributes[HTMLDivElement] = null,
     animateHeight: js.UndefOr[Boolean] = js.undefined,
     animateTransitions: js.UndefOr[Boolean] = js.undefined,
     axis: AxisType = null,
@@ -56,7 +60,8 @@ object SwipeableViewsProps {
     threshold: Int | Double = null
   ): SwipeableViewsProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(animateHeight)) __obj.updateDynamic("animateHeight")(animateHeight)
     if (!js.isUndefined(animateTransitions)) __obj.updateDynamic("animateTransitions")(animateTransitions)
     if (axis != null) __obj.updateDynamic("axis")(axis)

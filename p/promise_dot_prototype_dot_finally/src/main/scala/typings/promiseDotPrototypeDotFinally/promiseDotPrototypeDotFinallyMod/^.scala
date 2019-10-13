@@ -1,6 +1,6 @@
 package typings.promiseDotPrototypeDotFinally.promiseDotPrototypeDotFinallyMod
 
-import typings.promiseDotPrototypeDotFinally.promiseDotPrototypeDotFinallyMod.Global.Promise
+import typings.promiseDotPrototypeDotFinally.promiseDotPrototypeDotFinallyMod._Global_.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

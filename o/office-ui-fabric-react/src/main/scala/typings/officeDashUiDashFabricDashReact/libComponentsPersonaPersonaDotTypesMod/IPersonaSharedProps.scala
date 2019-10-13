@@ -5,8 +5,8 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaCoinPersonaCoinDotBaseMod.PersonaCoinBase
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotBaseMod.PersonaBase
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

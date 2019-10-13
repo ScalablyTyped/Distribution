@@ -33,8 +33,8 @@ trait Typeofpanels extends js.Object {
     *     default extension icon as the panel icon.
     * @param pagePath Path of the panel's HTML page relative to the extension directory.
     */
-  def create(title: String, iconPath: ExtensionURL, pagePath: ExtensionURL): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
-  def create(title: String, iconPath: _Create, pagePath: ExtensionURL): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
+  def create(title: String, iconPath: ExtensionURL, pagePath: ExtensionURL): js.Promise[ExtensionPanel] = js.native
+  def create(title: String, iconPath: _Create, pagePath: ExtensionURL): js.Promise[ExtensionPanel] = js.native
   /**
     * Requests DevTools to open a URL in a Developer Tools panel.
     * @param url The URL of the resource to open.
@@ -47,6 +47,6 @@ trait Typeofpanels extends js.Object {
     * the handler, either call the method with no parameters or pass null as the parameter.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def setOpenResourceHandler(): js.Promise[js.UndefOr[Resource]] = js.native
+  def setOpenResourceHandler(): js.Promise[Resource] = js.native
 }
 

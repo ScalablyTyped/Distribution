@@ -2,12 +2,14 @@ package typings.chromeDashApps.WebView.Events
 
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
+import typings.std.ElementEventMap
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
-import typings.std.HTMLElementEventMap
+import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -21,7 +23,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WebViewElementEventMap extends HTMLElementEventMap {
+trait WebViewElementEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   @JSName("close")
   var close_WebViewElementEventMap: CloseEvent
   var consolemessage: ConsoleMessageEvent

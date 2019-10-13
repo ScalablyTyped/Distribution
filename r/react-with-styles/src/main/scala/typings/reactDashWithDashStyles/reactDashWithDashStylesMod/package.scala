@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object reactDashWithDashStylesMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.aphrodite.aphroditeMod.CSSProperties
-  import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
+  import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
 
   type ComponentClassProps[C] = js.Any
   type ElementConfig[C] = LibraryManagedAttributes[C, ElementProps[C]]

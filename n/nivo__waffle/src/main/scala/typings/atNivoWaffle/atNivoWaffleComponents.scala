@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 
 object atNivoWaffleComponents extends atNivoWaffleProps {
   @scala.inline
-  def ResponsiveWaffle: ComponentType[WaffleSvgProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.ResponsiveWaffle].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoWaffle.atNivoWaffleMod.WaffleSvgProps]]
+  def ResponsiveWaffle: ComponentType[ResponsiveWaffleProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.ResponsiveWaffle].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveWaffleProps]]
   @scala.inline
-  def ResponsiveWaffleCanvas: ComponentType[WaffleCanvasProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.ResponsiveWaffleCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoWaffle.atNivoWaffleMod.WaffleCanvasProps]]
+  def ResponsiveWaffleCanvas: ComponentType[ResponsiveWaffleCanvasProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.ResponsiveWaffleCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveWaffleCanvasProps]]
   @scala.inline
-  def ResponsiveWaffleHtml: ComponentType[WaffleHtmlProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.ResponsiveWaffleHtml].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoWaffle.atNivoWaffleMod.WaffleHtmlProps]]
+  def ResponsiveWaffleHtml: ComponentType[ResponsiveWaffleHtmlProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.ResponsiveWaffleHtml].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveWaffleHtmlProps]]
   @scala.inline
   def Waffle: ComponentType[WaffleSvgProps with Dimensions] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.Waffle].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoWaffle.atNivoWaffleMod.WaffleSvgProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]

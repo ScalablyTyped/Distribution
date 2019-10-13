@@ -1,5 +1,6 @@
 package typings.reactDashModal.reactDashModalMod
 
+import typings.react.reactMod.Component
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-modal", JSImport.Namespace)
 @js.native
-class ^ () extends ReactModal
+class ^ ()
+  extends Component[Props, js.Object, js.Any]
 
 @JSImport("react-modal", JSImport.Namespace)
 @js.native

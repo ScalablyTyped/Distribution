@@ -6,8 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.agDashGrid.distLibRenderingOverlaysLoadingOverlayComponentMod.ILoadingOverlayComp because Already inherited */ @JSImport("ag-grid/dist/lib/rendering/overlays/loadingOverlayComponent", "LoadingOverlayComponent")
+@JSImport("ag-grid/dist/lib/rendering/overlays/loadingOverlayComponent", "LoadingOverlayComponent")
 @js.native
 class LoadingOverlayComponent () extends Component {
   var gridOptionsWrapper: GridOptionsWrapper = js.native

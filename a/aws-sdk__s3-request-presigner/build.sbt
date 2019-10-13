@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__s3-request-presigner"
-version := "0.1.0-preview.2-6da222"
+version := "0.1.0-preview.2-8fa44b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "0.1.0-preview.2-0a1bd4",
-  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-d9a0ad",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "0.1.0-preview.2-721adc",
+  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-22daf0",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

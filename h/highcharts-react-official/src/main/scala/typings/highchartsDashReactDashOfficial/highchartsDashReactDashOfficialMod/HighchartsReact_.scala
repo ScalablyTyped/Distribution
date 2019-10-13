@@ -2,7 +2,7 @@ package typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialM
 
 import typings.highcharts.highchartsMod.Chart
 import typings.highchartsDashReactDashOfficial.highchartsDashReactDashOfficialMod.HighchartsReact.Props
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.react.reactMod.RefObject
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSName("HighchartsReact")
 @js.native
 trait HighchartsReact_
-  extends PureComponent[Props, js.Object, js.Any] {
+  extends Component[Props, js.Object, js.Any] {
   /* *
     *
     *  Properties

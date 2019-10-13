@@ -1,12 +1,15 @@
 package typings.ddDashTrace.ddDashTraceMod.plugins
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ddDashTrace.ddDashTraceMod.Analyzable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @hidden */
-trait Grpc extends Instrumentation {
+trait Grpc
+  extends Integration
+     with Analyzable {
   /**
     * An array of metadata entries to record. Can also be a callback that returns
     * the key/value pairs to record. For example, using

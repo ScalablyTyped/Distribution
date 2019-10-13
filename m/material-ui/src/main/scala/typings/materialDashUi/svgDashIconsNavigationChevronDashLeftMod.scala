@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsNavigationChevronDashLeftMod.NavigationChevronLeft
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsNavigationChevronDashLeftMod extends js.Object {
   @js.native
-  class NavigationChevronLeft () extends SvgIcon
+  class NavigationChevronLeft ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends NavigationChevronLeft
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

@@ -2,8 +2,8 @@ package typings.rmcDashTabs.esTabsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rcDashGesture.rcDashGestureMod.IGestureStatus
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.rmcDashTabs.Anon_Children
 import typings.rmcDashTabs.Anon_OffsetOnPanEnd
 import typings.rmcDashTabs.TypeofClassDefaultTabBar

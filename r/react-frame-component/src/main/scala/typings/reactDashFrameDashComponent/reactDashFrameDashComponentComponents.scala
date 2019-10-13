@@ -1,9 +1,6 @@
 package typings.reactDashFrameDashComponent
 
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ConsumerProps
-import typings.react.reactMod.ProviderProps
-import typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameComponentProps
 import typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameContextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,17 +8,16 @@ import scala.scalajs.js.annotation._
 
 object reactDashFrameDashComponentComponents extends reactDashFrameDashComponentProps {
   @scala.inline
-  def FrameContextConsumer: ComponentType[ConsumerProps[FrameContextProps]] = typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameContextConsumer.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.react.reactMod.ConsumerProps[
+  def FrameContextConsumer: ComponentType[FrameContextConsumerProps[FrameContextProps]] = typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameContextConsumer.asInstanceOf[typings.react.reactMod.ComponentType[
+  FrameContextConsumerProps[
     typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameContextProps
   ]]]
   @scala.inline
-  def FrameContextProvider: ComponentType[ProviderProps[FrameContextProps]] = typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameContextProvider.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.react.reactMod.ProviderProps[
+  def FrameContextProvider: ComponentType[FrameContextProviderProps[FrameContextProps]] = typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameContextProvider.asInstanceOf[typings.react.reactMod.ComponentType[
+  FrameContextProviderProps[
     typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameContextProps
   ]]]
   @scala.inline
-  def ReactDashFrameDashComponent: ComponentType[FrameComponentProps] = js.constructorOf[typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.FrameComponentProps]]
+  def ReactDashFrameDashComponent: ComponentType[ReactDashFrameDashComponentProps] = js.constructorOf[typings.reactDashFrameDashComponent.reactDashFrameDashComponentMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashFrameDashComponentProps]]
 }
 

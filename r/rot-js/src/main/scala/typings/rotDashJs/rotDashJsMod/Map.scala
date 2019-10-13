@@ -1,10 +1,10 @@
 package typings.rotDashJs.rotDashJsMod
 
-import typings.rotDashJs.rotDashJsMod.Global.Array
 import typings.rotDashJs.rotDashJsMod.Map.Dungeon
 import typings.rotDashJs.rotDashJsMod.Map.Feature
 import typings.rotDashJs.rotDashJsMod.Map.Feature.Corridor
 import typings.rotDashJs.rotDashJsMod.Map.Feature.Room
+import typings.rotDashJs.rotDashJsMod._Global_.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_Autofocus
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablAutofocus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Select")
 @js.native
 class Select ()
-  extends Component[Anon_Autofocus, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringdisablAutofocus, js.Any, js.Any]
 

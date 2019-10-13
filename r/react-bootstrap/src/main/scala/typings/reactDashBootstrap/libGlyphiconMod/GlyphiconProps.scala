@@ -1,11 +1,14 @@
 package typings.reactDashBootstrap.libGlyphiconMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GlyphiconProps extends HTMLProps[Glyphicon] {
+trait GlyphiconProps
+  extends AllHTMLAttributes[Glyphicon]
+     with ClassAttributes[Glyphicon] {
   // Optional
   var bsClass: js.UndefOr[String] = js.undefined
   // Required
@@ -14,9 +17,15 @@ trait GlyphiconProps extends HTMLProps[Glyphicon] {
 
 object GlyphiconProps {
   @scala.inline
-  def apply(glyph: String, HTMLProps: HTMLProps[Glyphicon] = null, bsClass: String = null): GlyphiconProps = {
+  def apply(
+    glyph: String,
+    AllHTMLAttributes: AllHTMLAttributes[Glyphicon] = null,
+    ClassAttributes: ClassAttributes[Glyphicon] = null,
+    bsClass: String = null
+  ): GlyphiconProps = {
     val __obj = js.Dynamic.literal(glyph = glyph)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     __obj.asInstanceOf[GlyphiconProps]
   }

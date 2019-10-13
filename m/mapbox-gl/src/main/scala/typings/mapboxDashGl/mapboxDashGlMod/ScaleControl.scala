@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mapbox-gl", "ScaleControl")
 @js.native
-class ScaleControl () extends Control {
+class ScaleControl () extends Evented {
   def this(options: Anon_MaxWidth) = this()
   @JSName("setUnit")
   def setUnit_imperial(unit: imperial): Unit = js.native

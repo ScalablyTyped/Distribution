@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/public_api", "NullAstVisitor")
 @js.native
 class NullAstVisitor ()
-  extends typings.atAngularCompiler.srcCompilerMod.NullAstVisitor
+  extends typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.NullAstVisitor
 

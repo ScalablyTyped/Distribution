@@ -1,6 +1,8 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.SearchOrdersSort.SortFieldEnum
+import typings.squareDashConnect.squareDashConnectStrings.CLOSED_AT
+import typings.squareDashConnect.squareDashConnectStrings.CREATED_AT
+import typings.squareDashConnect.squareDashConnectStrings.UPDATED_AT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,37 +18,11 @@ class SearchOrdersSort () extends js.Object {
     * match the timestamp field in `DateTimeFilter`, SearchOrders will return an error. Default: `CREATED_AT`.
     * See [SearchOrdersSortField](#type-searchorderssortfield) for possible values.
     */
-  var sort_field: SortFieldEnum = js.native
+  var sort_field: CREATED_AT | UPDATED_AT | CLOSED_AT = js.native
   /**
     * The chronological order in which results are returned. Defaults to `DESC`.
     * See [SortOrder](#type-sortorder) for possible values.
     */
-  var sort_order: js.UndefOr[SortOrderEnum] = js.native
-}
-
-@JSImport("square-connect", "SearchOrdersSort")
-@js.native
-object SearchOrdersSort extends js.Object {
-  @js.native
-  sealed trait SortFieldEnum extends js.Object
-  
-  @js.native
-  object SortFieldEnum extends js.Object {
-    @js.native
-    sealed trait CLOSED_AT extends SortFieldEnum
-    
-    @js.native
-    sealed trait CREATED_AT extends SortFieldEnum
-    
-    @js.native
-    sealed trait UPDATED_AT extends SortFieldEnum
-    
-    /* "CLOSED_AT" */ val CLOSED_AT: typings.squareDashConnect.squareDashConnectMod.SearchOrdersSort.SortFieldEnum.CLOSED_AT with String = js.native
-    /* "CREATED_AT" */ val CREATED_AT: typings.squareDashConnect.squareDashConnectMod.SearchOrdersSort.SortFieldEnum.CREATED_AT with String = js.native
-    /* "UPDATED_AT" */ val UPDATED_AT: typings.squareDashConnect.squareDashConnectMod.SearchOrdersSort.SortFieldEnum.UPDATED_AT with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[SortFieldEnum with String] = js.native
-  }
-  
+  var sort_order: js.UndefOr[SortOrderType] = js.native
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/serialization", "IntersectionTypeSerializer")
 @js.native
 class IntersectionTypeSerializer ()
-  extends typings.typedoc.distLibSerializationSerializersMod.IntersectionTypeSerializer
+  extends typings.typedoc.distLibSerializationSerializersTypesIntersectionDashUnionMod.IntersectionTypeSerializer
 

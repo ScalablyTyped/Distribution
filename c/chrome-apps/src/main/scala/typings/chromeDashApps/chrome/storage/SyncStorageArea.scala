@@ -11,7 +11,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SyncStorageArea extends StorageArea {
+trait SyncStorageArea
+  extends StorageAreaRead
+     with StorageAreaWrite {
   /**
     * The maximum number of items that can be stored in sync storage.
     * Updates that would cause this limit to be exceeded will fail immediately

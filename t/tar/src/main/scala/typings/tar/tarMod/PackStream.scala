@@ -1,13 +1,16 @@
 package typings.tar.tarMod
 
-import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PackStream extends ReadWriteStream {
+trait PackStream
+  extends ReadableStream
+     with WritableStream {
   var _buffer: js.Array[Stream] = js.native
   var _currentEntry: js.Any = js.native
   var _global: HeaderProperties = js.native

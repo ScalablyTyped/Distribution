@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /** Represents a collection of key-value pairs, correlating several other collection interfaces. */
 trait IPropertySet
-  extends IObservableMap[String, js.Any]
+  extends IMap[String, js.Any]
 
 object IPropertySet {
   @scala.inline

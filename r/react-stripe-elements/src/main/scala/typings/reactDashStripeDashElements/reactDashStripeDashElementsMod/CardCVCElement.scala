@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-stripe-elements", "CardCVCElement")
 @js.native
-class CardCVCElement () extends CardCvcElement
+class CardCVCElement ()
+  extends Component[ElementProps, js.Object, js.Any]
 
 @JSImport("react-stripe-elements", "CardCvcElement")
 @js.native

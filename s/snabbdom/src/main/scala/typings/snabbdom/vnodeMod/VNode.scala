@@ -1,6 +1,6 @@
 package typings.snabbdom.vnodeMod
 
-import typings.snabbdom.modulesAttributesMod.Global.Element
+import typings.snabbdom.modulesAttributesMod._Global_.Element
 import typings.std.Node
 import typings.std.Text
 import scala.scalajs.js

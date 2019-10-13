@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

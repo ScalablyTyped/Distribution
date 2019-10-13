@@ -11,6 +11,6 @@ object duplicate extends js.Object {
     * Duplicates a tab.
     * @param tabId The ID of the tab which is to be duplicated.
     */
-  def apply(tabId: Double): js.Promise[js.UndefOr[Tab]] = js.native
+  def apply(tabId: Double): js.Promise[Tab] = js.native
 }
 

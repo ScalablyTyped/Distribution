@@ -1,5 +1,6 @@
 package typings.stringDashReplaceDashWebpackDashPlugin.stringDashReplaceDashWebpackDashPluginMod
 
+import typings.webpack.webpackMod.Plugin
 import typings.webpack.webpackMod.RuleSetUse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("string-replace-webpack-plugin", JSImport.Namespace)
 @js.native
-class ^ () extends StringReplacePlugin
+class ^ () extends Plugin
 
 @JSImport("string-replace-webpack-plugin", JSImport.Namespace)
 @js.native

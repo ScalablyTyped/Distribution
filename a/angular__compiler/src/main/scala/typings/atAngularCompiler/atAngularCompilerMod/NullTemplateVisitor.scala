@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "NullTemplateVisitor")
 @js.native
 class NullTemplateVisitor ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.NullTemplateVisitor
+  extends typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.NullTemplateVisitor
 

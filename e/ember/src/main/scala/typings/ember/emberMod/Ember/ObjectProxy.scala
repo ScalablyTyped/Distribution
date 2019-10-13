@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.ObjectProxy")
 @js.native
 class ObjectProxy ()
-  extends typings.atEmberObject.proxyMod.default[js.Object]
+  extends typings.atEmberObject.proxyMod.ObjectProxy[js.Object]
 

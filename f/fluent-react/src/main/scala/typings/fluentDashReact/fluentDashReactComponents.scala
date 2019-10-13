@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object fluentDashReactComponents extends fluentDashReactProps {
   @scala.inline
-  def LocalizationProvider: ComponentType[typings.fluentDashReact.fluentDashReactMod.LocalizationProviderProps] = js.constructorOf[typings.fluentDashReact.fluentDashReactMod.LocalizationProvider].asInstanceOf[typings.react.reactMod.ComponentType[typings.fluentDashReact.fluentDashReactMod.LocalizationProviderProps]]
+  def LocalizationProvider: ComponentType[LocalizationProviderProps] = js.constructorOf[typings.fluentDashReact.fluentDashReactMod.LocalizationProvider].asInstanceOf[typings.react.reactMod.ComponentType[LocalizationProviderProps]]
   @scala.inline
-  def Localized: ComponentType[typings.fluentDashReact.fluentDashReactMod.LocalizedProps] = js.constructorOf[typings.fluentDashReact.fluentDashReactMod.Localized].asInstanceOf[typings.react.reactMod.ComponentType[typings.fluentDashReact.fluentDashReactMod.LocalizedProps]]
+  def Localized: ComponentType[LocalizedProps] = js.constructorOf[typings.fluentDashReact.fluentDashReactMod.Localized].asInstanceOf[typings.react.reactMod.ComponentType[LocalizedProps]]
 }
 

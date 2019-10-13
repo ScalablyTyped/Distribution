@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/sdk/internal", "PartListProperty")
 @js.native
 class PartListProperty[T /* <: typings.mendixmodelsdk.distSdkInternalElementsMod.Element */] ()
-  extends typings.mendixmodelsdk.distSdkInternalPropertiesMod.PartListProperty[T]
+  extends typings.mendixmodelsdk.distSdkInternalPropertiesPartMod.PartListProperty[T]
 

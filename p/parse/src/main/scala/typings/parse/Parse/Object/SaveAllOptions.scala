@@ -1,14 +1,16 @@
 package typings.parse.Parse.Object
 
 import typings.parse.Parse.BatchSizeOption
-import typings.parse.Parse.ScopeOptions
+import typings.parse.Parse.SessionTokenOption
+import typings.parse.Parse.UseMasterKeyOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SaveAllOptions
-  extends ScopeOptions
-     with BatchSizeOption
+  extends BatchSizeOption
+     with SessionTokenOption
+     with UseMasterKeyOption
 
 object SaveAllOptions {
   @scala.inline

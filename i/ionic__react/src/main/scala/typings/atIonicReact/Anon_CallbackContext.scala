@@ -1,12 +1,12 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRouterOutletElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRouterOutletElement
 import typings.atIonicReact.distTypesComponentsNavigationIonTabsMod.Props
 import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactInstance
 import typings.react.reactMod.Ref
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`

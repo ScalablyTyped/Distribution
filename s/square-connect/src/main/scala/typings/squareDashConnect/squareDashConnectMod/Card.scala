@@ -14,7 +14,7 @@ class Card () extends js.Object {
   /**
     * The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for possible values.
     */
-  var card_brand: js.UndefOr[CardBrandEnum] = js.native
+  var card_brand: js.UndefOr[CardBrandType] = js.native
   /**
     * The name of the cardholder.
     */

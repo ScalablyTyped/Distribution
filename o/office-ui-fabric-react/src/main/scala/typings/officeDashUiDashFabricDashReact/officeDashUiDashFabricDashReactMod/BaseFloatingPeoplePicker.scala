@@ -1,5 +1,7 @@
 package typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod
 
+import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerPeoplePickerFloatingPeoplePickerMod.IPeopleFloatingPickerProps
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react", "BaseFloatingPeoplePicker")
 @js.native
 class BaseFloatingPeoplePicker ()
-  extends typings.officeDashUiDashFabricDashReact.libFloatingPickerMod.BaseFloatingPeoplePicker
+  extends typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerBaseFloatingPickerMod.BaseFloatingPicker[IPersonaProps, IPeopleFloatingPickerProps]
 

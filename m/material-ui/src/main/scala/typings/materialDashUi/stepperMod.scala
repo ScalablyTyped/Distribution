@@ -1,5 +1,11 @@
 package typings.materialDashUi
 
+import typings.materialDashUi.__MaterialUI.Stepper.StepButtonProps
+import typings.materialDashUi.__MaterialUI.Stepper.StepContentProps
+import typings.materialDashUi.__MaterialUI.Stepper.StepLabelProps
+import typings.materialDashUi.__MaterialUI.Stepper.StepProps
+import typings.materialDashUi.__MaterialUI.Stepper.StepperProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,23 +15,23 @@ import scala.scalajs.js.annotation._
 object stepperMod extends js.Object {
   @js.native
   class Step ()
-    extends typings.materialDashUi.__MaterialUI.Stepper.Step
+    extends Component[StepProps, js.Object, js.Any]
   
   @js.native
   class StepButton ()
-    extends typings.materialDashUi.__MaterialUI.Stepper.StepButton
+    extends Component[StepButtonProps, js.Object, js.Any]
   
   @js.native
   class StepContent ()
-    extends typings.materialDashUi.__MaterialUI.Stepper.StepContent
+    extends Component[StepContentProps, js.Object, js.Any]
   
   @js.native
   class StepLabel ()
-    extends typings.materialDashUi.__MaterialUI.Stepper.StepLabel
+    extends Component[StepLabelProps, js.Object, js.Any]
   
   @js.native
   class Stepper ()
-    extends typings.materialDashUi.__MaterialUI.Stepper.Stepper
+    extends Component[StepperProps, js.Object, js.Any]
   
 }
 

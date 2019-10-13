@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/format/TopoJSON", JSImport.Default)
 @js.native
-class default () extends TopoJSON {
+class default ()
+  extends typings.ol.formatJSONFeatureMod.default {
   def this(opt_options: Options) = this()
 }
 

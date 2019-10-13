@@ -1,7 +1,6 @@
 package typings.backboneDotRadio.backboneDotRadioMod.backboneMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.backbone.backboneMod.Events
 import typings.backbone.backboneMod.EventsMixin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,11 +17,10 @@ trait Radio extends js.Object {
 @js.native
 object Radio extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.backbone.backboneMod.Events because Already inherited
   - typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Requests because Inheritance from two classes. Inlined request, reply, reply, reply, reply, replyOnce, replyOnce, replyOnce, replyOnce, stopReplying, stopReplying, stopReplying, stopReplying
   - typings.backboneDotRadio.backboneDotRadioMod.backboneMod.Radio.Commands because Inheritance from two classes. Inlined command, comply, comply, comply, comply, complyOnce, complyOnce, complyOnce, complyOnce, stopComplying, stopComplying, stopComplying, stopComplying */ @js.native
-  class Channel ()
-    extends EventsMixin
-       with Events {
+  class Channel () extends EventsMixin {
     var channelName: String = js.native
     // Radio.Commands
     def command(commandName: String, args: js.Any*): Unit = js.native

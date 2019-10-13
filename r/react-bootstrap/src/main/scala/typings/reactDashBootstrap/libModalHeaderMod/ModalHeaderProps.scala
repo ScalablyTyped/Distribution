@@ -1,11 +1,14 @@
 package typings.reactDashBootstrap.libModalHeaderMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ModalHeaderProps extends HTMLProps[ModalHeader] {
+trait ModalHeaderProps
+  extends AllHTMLAttributes[ModalHeader]
+     with ClassAttributes[ModalHeader] {
   var bsClass: js.UndefOr[String] = js.undefined
   var closeButton: js.UndefOr[Boolean] = js.undefined
   var closeLabel: js.UndefOr[String] = js.undefined
@@ -15,14 +18,16 @@ trait ModalHeaderProps extends HTMLProps[ModalHeader] {
 object ModalHeaderProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[ModalHeader] = null,
+    AllHTMLAttributes: AllHTMLAttributes[ModalHeader] = null,
+    ClassAttributes: ClassAttributes[ModalHeader] = null,
     bsClass: String = null,
     closeButton: js.UndefOr[Boolean] = js.undefined,
     closeLabel: String = null,
     onHide: js.Function = null
   ): ModalHeaderProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
     if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel)

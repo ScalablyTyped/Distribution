@@ -4,8 +4,8 @@ import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.SFC
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashBigDashCalendar.Anon_Date
 import typings.reactDashBigDashCalendar.Anon_DateHeader
 import typings.reactDashBigDashCalendar.Anon_Event

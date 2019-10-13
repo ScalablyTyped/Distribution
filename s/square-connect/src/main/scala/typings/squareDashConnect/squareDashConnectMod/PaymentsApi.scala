@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "PaymentsApi")
 @js.native
+/**
+  * Constructs a new PaymentsApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class PaymentsApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Cancels a payment. If you set `autocomplete` to false when creating a payment, you can cancel the payment using
     * this endpoint. For more information, see [Delayed Payments](/payments-api/take-payments#delayed-payments).

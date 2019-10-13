@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.typescriptDashServices.TypeScript.ISyntaxElement because Already inherited
-- typings.typescriptDashServices.TypeScript.ITypeSyntax because Already inherited */ @JSGlobal("TypeScript.TypeQuerySyntax")
+@JSGlobal("TypeScript.TypeQuerySyntax")
 @js.native
 class TypeQuerySyntax protected () extends SyntaxNode {
   def this(typeOfKeyword: ISyntaxToken, name: INameSyntax, parsedInStrictMode: Boolean) = this()

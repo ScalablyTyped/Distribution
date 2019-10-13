@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libPanelGroupMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapMod.SelectCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PanelGroupProps extends HTMLProps[PanelGroup] {
+trait PanelGroupProps
+  extends AllHTMLAttributes[PanelGroup]
+     with ClassAttributes[PanelGroup] {
   var accordion: js.UndefOr[Boolean] = js.undefined
   var activeKey: js.UndefOr[js.Any] = js.undefined
   var defaultActiveKey: js.UndefOr[js.Any] = js.undefined
@@ -18,7 +21,8 @@ trait PanelGroupProps extends HTMLProps[PanelGroup] {
 object PanelGroupProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[PanelGroup] = null,
+    AllHTMLAttributes: AllHTMLAttributes[PanelGroup] = null,
+    ClassAttributes: ClassAttributes[PanelGroup] = null,
     accordion: js.UndefOr[Boolean] = js.undefined,
     activeKey: js.Any = null,
     defaultActiveKey: js.Any = null,
@@ -27,7 +31,8 @@ object PanelGroupProps {
     role: String = null
   ): PanelGroupProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(accordion)) __obj.updateDynamic("accordion")(accordion)
     if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey)
     if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey)

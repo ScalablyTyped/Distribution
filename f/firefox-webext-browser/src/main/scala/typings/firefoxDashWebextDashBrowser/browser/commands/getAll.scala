@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getAll extends js.Object {
   /** Returns all the registered extension commands for this extension and their shortcut (if active). */
-  def apply(): js.Promise[js.UndefOr[js.Array[Command]]] = js.native
+  def apply(): js.Promise[js.Array[Command]] = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.popoverPopoverAnimationVerticalMod.PopoverAnimationVertical
+import typings.materialDashUi.__MaterialUI.Popover.PopoverAnimationVerticalProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object popoverPopoverAnimationVerticalMod extends js.Object {
   @js.native
   class PopoverAnimationVertical ()
-    extends typings.materialDashUi.__MaterialUI.Popover.PopoverAnimationVertical
+    extends Component[PopoverAnimationVerticalProps, js.Object, js.Any]
   
   @js.native
-  class default () extends PopoverAnimationVertical
+  class default ()
+    extends Component[PopoverAnimationVerticalProps, js.Object, js.Any]
   
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compiler", "Xtb")
 @js.native
 class Xtb ()
-  extends typings.atAngularCompiler.srcI18nMod.Xtb
+  extends typings.atAngularCompiler.srcI18nSerializersXtbMod.Xtb
 

@@ -15,11 +15,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack-chain", "Rule")
 @js.native
-class Rule () extends ChainedMap[Module] {
+class Rule ()
+  extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedMap[Module, js.Any] {
   var exclude: TypedChainedSet[this.type, Condition] = js.native
   var include: TypedChainedSet[this.type, Condition] = js.native
   var oneOfs: TypedChainedMap[this.type, OneOf] = js.native
   var uses: TypedChainedMap[this.type, Use[Rule]] = js.native
+  /* CompleteClass */
+  override def end(): Module = js.native
   @JSName("enforce")
   def enforce_post(value: post): this.type = js.native
   @JSName("enforce")

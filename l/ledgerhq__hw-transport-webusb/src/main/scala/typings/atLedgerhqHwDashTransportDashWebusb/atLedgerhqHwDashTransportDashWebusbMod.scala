@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object atLedgerhqHwDashTransportDashWebusbMod extends js.Object {
   @js.native
-  class default protected () extends TransportWebUSB {
+  class default protected ()
+    extends typings.atLedgerhqHwDashTransport.atLedgerhqHwDashTransportMod.default[String] {
     def this(device: String) = this()
   }
   

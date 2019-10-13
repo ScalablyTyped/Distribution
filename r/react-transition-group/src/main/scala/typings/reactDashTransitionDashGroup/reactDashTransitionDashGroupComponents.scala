@@ -8,16 +8,14 @@ import scala.scalajs.js.annotation._
 
 object reactDashTransitionDashGroupComponents extends reactDashTransitionDashGroupProps {
   @scala.inline
-  def CSSTransition: ComponentType[typings.reactDashTransitionDashGroup.cSSTransitionMod.CSSTransitionProps] = js.constructorOf[typings.reactDashTransitionDashGroup.cSSTransitionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTransitionDashGroup.cSSTransitionMod.CSSTransitionProps]]
+  def CSSTransition: ComponentType[CSSTransitionProps] = js.constructorOf[typings.reactDashTransitionDashGroup.cSSTransitionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CSSTransitionProps]]
   @scala.inline
-  def SwitchTransition: ComponentType[typings.reactDashTransitionDashGroup.switchTransitionMod.SwitchTransitionProps] = js.constructorOf[typings.reactDashTransitionDashGroup.switchTransitionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTransitionDashGroup.switchTransitionMod.SwitchTransitionProps]]
+  def SwitchTransition: ComponentType[SwitchTransitionProps] = js.constructorOf[typings.reactDashTransitionDashGroup.switchTransitionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SwitchTransitionProps]]
   @scala.inline
-  def Transition: ComponentType[typings.reactDashTransitionDashGroup.transitionMod.TransitionProps] = js.constructorOf[typings.reactDashTransitionDashGroup.transitionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTransitionDashGroup.transitionMod.TransitionProps]]
+  def Transition: ComponentType[TransitionProps] = js.constructorOf[typings.reactDashTransitionDashGroup.transitionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TransitionProps]]
   @scala.inline
-  def TransitionGroup: ComponentType[
-    typings.reactDashTransitionDashGroup.transitionGroupMod.TransitionGroupProps[div, js.Any]
-  ] = js.constructorOf[typings.reactDashTransitionDashGroup.transitionGroupMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashTransitionDashGroup.transitionGroupMod.TransitionGroupProps[
+  def TransitionGroup: ComponentType[TransitionGroupProps[div, js.Any]] = js.constructorOf[typings.reactDashTransitionDashGroup.transitionGroupMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
+  TransitionGroupProps[
     typings.reactDashTransitionDashGroup.reactDashTransitionDashGroupStrings.div, 
     js.Any
   ]]]

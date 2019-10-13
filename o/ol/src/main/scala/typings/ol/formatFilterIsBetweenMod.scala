@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterIsBetweenMod.IsBetween
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterIsBetweenMod extends js.Object {
   @js.native
-  class default protected () extends IsBetween {
+  class default protected ()
+    extends typings.ol.formatFilterComparisonMod.default {
     def this(propertyName: String, lowerBoundary: Double, upperBoundary: Double) = this()
   }
   

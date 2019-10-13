@@ -3,7 +3,7 @@ package typings.reactDashMosaicDashComponent.libMosaicWindowMod
 import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
+import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
 import typings.reactDashDnd.libDecoratorsInterfacesMod.DndComponentClass
 import typings.reactDashMosaicDashComponent.TypeofClassInternalMosaicWindow
 import typings.reactDashMosaicDashComponent.reactDashMosaicDashComponentStrings.additionalControlButtonText

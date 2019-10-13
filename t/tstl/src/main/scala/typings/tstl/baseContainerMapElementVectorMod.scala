@@ -7,8 +7,7 @@ import typings.tstl.baseContainerMapElementVectorMod.MapElementVector.ReverseIte
 import typings.tstl.baseContainerVectorContainerMod.VectorContainer
 import typings.tstl.baseIteratorArrayIteratorBaseMod.ArrayIteratorBase
 import typings.tstl.baseIteratorArrayIteratorBaseMod.ArrayReverseIteratorBase
-import typings.tstl.baseIteratorIMapIteratorMod.IMapIterator
-import typings.tstl.baseIteratorIMapIteratorMod.IMapReverseIterator
+import typings.tstl.baseIteratorIMapIteratorMod.IMapIteratorBase
 import typings.tstl.utilityEntryMod.Entry
 import typings.tstl.utilityIPairMod.IPair
 import scala.scalajs.js
@@ -41,7 +40,8 @@ object baseContainerMapElementVectorMod extends js.Object {
   
   @js.native
   object MapElementVector extends js.Object {
-    @js.native
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
+    - Dropped {readonly [ P in keyof tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>> ]: tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>>[P]} */ @js.native
     class Iterator[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
         Key, 
         T, 
@@ -58,14 +58,7 @@ object baseContainerMapElementVectorMod extends js.Object {
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
             ]
-         with IMapIterator[
-              Key, 
-              T, 
-              Unique, 
-              Source, 
-              Iterator[Key, T, Unique, Source], 
-              ReverseIterator[Key, T, Unique, Source]
-            ] {
+         with IMapIteratorBase[Key, T] {
       /**
         * The first, key element.
         */
@@ -78,7 +71,8 @@ object baseContainerMapElementVectorMod extends js.Object {
       override var second: T = js.native
     }
     
-    @js.native
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
+    - Dropped {readonly [ P in keyof tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>> ]: tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, tstl.tstl/base/iterator/ReverseIterator.IReverseIterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementVector.MapElementVector.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementVector.MapElementVector.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>>[P]} */ @js.native
     class ReverseIterator[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
         Key, 
         T, 
@@ -95,14 +89,7 @@ object baseContainerMapElementVectorMod extends js.Object {
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
             ]
-         with IMapReverseIterator[
-              Key, 
-              T, 
-              Unique, 
-              Source, 
-              Iterator[Key, T, Unique, Source], 
-              ReverseIterator[Key, T, Unique, Source]
-            ] {
+         with IMapIteratorBase[Key, T] {
       /**
         * The first, key element.
         */

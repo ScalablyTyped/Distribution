@@ -25,8 +25,8 @@ trait Typeofidentity extends js.Object {
     * Gets an OAuth2 access token using the client ID and scopes specified in the oauth2 section of manifest.json.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def getAuthToken(): js.Promise[js.UndefOr[js.Array[AccountInfo]]] = js.native
-  def getAuthToken(details: Anon_Account): js.Promise[js.UndefOr[js.Array[AccountInfo]]] = js.native
+  def getAuthToken(): js.Promise[js.Array[AccountInfo]] = js.native
+  def getAuthToken(details: Anon_Account): js.Promise[js.Array[AccountInfo]] = js.native
   /**
     * Retrieves email address and obfuscated gaia id of the user signed into a profile.
     * @deprecated Unsupported on Firefox at this time.
@@ -44,6 +44,6 @@ trait Typeofidentity extends js.Object {
     * Removes an OAuth2 access token from the Identity API's token cache.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def removeCachedAuthToken(details: Anon_Token): js.Promise[js.UndefOr[Anon_Email]] = js.native
+  def removeCachedAuthToken(details: Anon_Token): js.Promise[Anon_Email] = js.native
 }
 

@@ -1,7 +1,9 @@
 package typings.reactDashMove
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactDashMove.animateMod.default
+import typings.react.reactMod.Component
+import typings.reactDashMove.animateMod.IAnimateProps
+import typings.reactDashMove.nodeGroupMod.INodeGroupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashMoveMod extends js.Object {
   @js.native
-  class Animate () extends default
+  class Animate ()
+    extends Component[IAnimateProps, js.Object, js.Any]
   
   @js.native
   class NodeGroup ()
-    extends typings.reactDashMove.nodeGroupMod.default
+    extends Component[INodeGroupProps, js.Object, js.Any]
   
   type GetInterpolator = js.Function4[
     /* begValue */ js.UndefOr[js.Any], 

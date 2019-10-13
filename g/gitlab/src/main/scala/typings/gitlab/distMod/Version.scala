@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "Version")
 @js.native
 class Version ()
-  extends typings.gitlab.distServicesMod.Version
+  extends typings.gitlab.distServicesVersionMod.Version
 

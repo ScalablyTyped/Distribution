@@ -15,6 +15,7 @@ class Participant () extends EventEmitter {
   var dataTracks: Map[SID, DataTrackPublication] = js.native
   var identity: Identity = js.native
   var networkQualityLevel: NetworkQualityLevel | Null = js.native
+  var networkQualityStats: NetworkQualityStats | Null = js.native
   var sid: typings.twilioDashVideo.twilioDashVideoMod.Participant.SID = js.native
   var state: String = js.native
   var tracks: Map[SID, TrackPublication] = js.native

@@ -1,6 +1,6 @@
 package typings.knuddelsDashUserappsDashApi
 
-import typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.KnuddelTransferDisplayType
+import typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.KnuddelTransferDisplayType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

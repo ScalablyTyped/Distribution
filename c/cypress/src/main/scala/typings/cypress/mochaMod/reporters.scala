@@ -40,7 +40,7 @@ object reporters extends js.Object {
     */
   @js.native
   class Doc ()
-    extends typings.cypress.Mocha.reporters.Doc
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `Dot` matrix test reporter.
@@ -49,7 +49,7 @@ object reporters extends js.Object {
     */
   @js.native
   class Dot ()
-    extends typings.cypress.Mocha.reporters.Dot
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `HTML` reporter.
@@ -69,7 +69,7 @@ object reporters extends js.Object {
     */
   @js.native
   class JSON ()
-    extends typings.cypress.Mocha.reporters.JSON
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `JSONStream` test reporter.
@@ -78,7 +78,7 @@ object reporters extends js.Object {
     */
   @js.native
   class JSONStream ()
-    extends typings.cypress.Mocha.reporters.JSONStream
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `Landing` reporter.
@@ -87,7 +87,7 @@ object reporters extends js.Object {
     */
   @js.native
   class Landing ()
-    extends typings.cypress.Mocha.reporters.Landing
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `List` test reporter.
@@ -96,7 +96,7 @@ object reporters extends js.Object {
     */
   @js.native
   class List ()
-    extends typings.cypress.Mocha.reporters.List
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `Markdown` test reporter.
@@ -105,7 +105,7 @@ object reporters extends js.Object {
     */
   @js.native
   class Markdown ()
-    extends typings.cypress.Mocha.reporters.Markdown
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `Min` minimal test reporter (best used with --watch).
@@ -114,7 +114,7 @@ object reporters extends js.Object {
     */
   @js.native
   class Min ()
-    extends typings.cypress.Mocha.reporters.Min
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `NyanCat` test reporter.
@@ -150,7 +150,7 @@ object reporters extends js.Object {
     */
   @js.native
   class Spec ()
-    extends typings.cypress.Mocha.reporters.Spec
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `TAP` test reporter.
@@ -159,7 +159,7 @@ object reporters extends js.Object {
     */
   @js.native
   class TAP ()
-    extends typings.cypress.Mocha.reporters.TAP
+    extends typings.cypress.Mocha.reporters.Base
   
   /**
     * Initialize a new `XUnit` test reporter.

@@ -30,8 +30,6 @@ object libMapsHashMapCollectionMod extends js.Object {
   - typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer because Already inherited
   - typings.tstl.baseContainerIContainerMod.IContainer because Already inherited
   - typings.tstl.baseContainerContainerMod.Container because Inheritance from two classes. Inlined begin, empty, end, push, rbegin, rend, size
-  - typings.tstl.baseMod.Container because Inheritance from two classes. Inlined 
-  - typings.tstl.tstlMod.base.Container because Inheritance from two classes. Inlined 
   - typings.ecol.libBasicICollectionMod.ICollection because Inheritance from two classes. Inlined refresh, refresh, refresh */ @js.native
   class HashMapCollection[Key, T] ()
     extends HashMap[Key, T]

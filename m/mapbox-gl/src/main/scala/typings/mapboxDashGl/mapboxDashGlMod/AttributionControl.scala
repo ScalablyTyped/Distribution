@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mapbox-gl", "AttributionControl")
 @js.native
-class AttributionControl () extends Control {
+class AttributionControl () extends Evented {
   def this(options: Anon_Compact) = this()
 }
 

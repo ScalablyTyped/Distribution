@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hexo-fs", "Stats")
 @js.native
 class Stats ()
-  extends typings.gracefulDashFs.gracefulDashFsMod.Stats
+  extends typings.node.fsMod.Stats
 

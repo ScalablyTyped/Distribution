@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "gulp-htmlmin"
-version := "v1.3.0-dt-20190322Z-092d94"
+version := "v1.3.0-dt-20190322Z-02657d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-7ae9d8",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-6b9021",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
-  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-cefd85",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-293c86",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-5e730c")
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-5a0c61",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-fe4a5f",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-707462",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-54a40f",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-2f0bcb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

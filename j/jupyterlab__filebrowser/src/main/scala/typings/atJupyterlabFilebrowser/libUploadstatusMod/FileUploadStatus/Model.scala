@@ -1,6 +1,6 @@
 package typings.atJupyterlabFilebrowser.libUploadstatusMod.FileUploadStatus
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabApputils.libVdomMod.VDomModel
 import typings.atJupyterlabFilebrowser.libMod.FileBrowserModel
 import typings.atJupyterlabFilebrowser.libUploadstatusMod.IFileUploadItem
 import scala.scalajs.js

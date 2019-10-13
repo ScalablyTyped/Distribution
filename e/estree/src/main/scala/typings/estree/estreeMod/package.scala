@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object estreeMod {
-  type BaseDeclaration = BaseStatement
+  type BaseDeclaration = BaseNode
   type BaseExpression = BaseNode
   type BaseModuleDeclaration = BaseNode
   type BasePattern = BaseNode

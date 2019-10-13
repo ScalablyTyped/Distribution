@@ -1,6 +1,6 @@
 package typings.atJupyterlabCodemirror.libSyntaxstatusMod.EditorSyntaxStatus
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabApputils.libVdomMod.VDomModel
 import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`

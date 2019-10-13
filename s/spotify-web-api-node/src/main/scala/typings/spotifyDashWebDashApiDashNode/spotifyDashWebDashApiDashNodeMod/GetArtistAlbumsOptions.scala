@@ -4,7 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GetArtistAlbumsOptions extends PaginationCountryOptions {
+trait GetArtistAlbumsOptions
+  extends PaginationOptions
+     with CountryOptions {
   var include_groups: js.UndefOr[String] = js.undefined
 }
 

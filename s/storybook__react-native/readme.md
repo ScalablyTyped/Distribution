@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__react-native
 
-Typings are for version 3.0
+Typings are for version 5.2.3
 
 ## Library description:
 A better way to develop React Native Components for your app
@@ -24,7 +24,7 @@ A better way to develop React Native Components for your app
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

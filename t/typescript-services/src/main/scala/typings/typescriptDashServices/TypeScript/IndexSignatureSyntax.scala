@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.typescriptDashServices.TypeScript.ISyntaxElement because Already inherited
-- typings.typescriptDashServices.TypeScript.ITypeMemberSyntax because Already inherited */ @JSGlobal("TypeScript.IndexSignatureSyntax")
+@JSGlobal("TypeScript.IndexSignatureSyntax")
 @js.native
 class IndexSignatureSyntax protected () extends SyntaxNode {
   def this(

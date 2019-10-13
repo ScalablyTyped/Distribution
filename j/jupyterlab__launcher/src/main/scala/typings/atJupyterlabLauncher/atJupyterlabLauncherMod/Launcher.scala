@@ -1,6 +1,6 @@
 package typings.atJupyterlabLauncher.atJupyterlabLauncherMod
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomRenderer
+import typings.atJupyterlabApputils.libVdomMod.VDomRenderer
 import typings.atJupyterlabLauncher.atJupyterlabLauncherMod.ILauncher.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

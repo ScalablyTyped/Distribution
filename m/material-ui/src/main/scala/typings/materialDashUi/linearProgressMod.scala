@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.linearProgressMod.LinearProgress
+import typings.materialDashUi.__MaterialUI.LinearProgressProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object linearProgressMod extends js.Object {
   @js.native
   class LinearProgress ()
-    extends typings.materialDashUi.__MaterialUI.LinearProgress
+    extends Component[LinearProgressProps, js.Object, js.Any]
   
   @js.native
-  class default () extends LinearProgress
+  class default ()
+    extends Component[LinearProgressProps, js.Object, js.Any]
   
 }
 

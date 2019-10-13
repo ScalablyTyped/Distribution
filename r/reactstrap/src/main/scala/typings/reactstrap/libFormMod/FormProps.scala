@@ -1,7 +1,8 @@
 package typings.reactstrap.libFormMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import typings.react.reactMod.Ref
 import typings.reactstrap.reactstrapMod.CSSModule
@@ -11,7 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormProps
-  extends HTMLProps[HTMLFormElement]
+  extends AllHTMLAttributes[HTMLFormElement]
+     with ClassAttributes[HTMLFormElement]
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
@@ -22,7 +24,8 @@ trait FormProps
 object FormProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLFormElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLFormElement] = null,
+    ClassAttributes: ClassAttributes[HTMLFormElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     className: String = null,
     cssModule: CSSModule = null,
@@ -31,7 +34,8 @@ object FormProps {
     tag: String | ReactType[_] = null
   ): FormProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)

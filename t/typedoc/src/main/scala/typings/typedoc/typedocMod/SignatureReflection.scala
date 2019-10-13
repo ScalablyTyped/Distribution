@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc", "SignatureReflection")
 @js.native
 class SignatureReflection ()
-  extends typings.typedoc.distLibModelsReflectionsMod.SignatureReflection
+  extends typings.typedoc.distLibModelsReflectionsSignatureMod.SignatureReflection
 

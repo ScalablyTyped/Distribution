@@ -1,6 +1,6 @@
 package typings.atJupyterlabServices.libSettingMod
 
-import typings.atJupyterlabCoreutils.atJupyterlabCoreutilsMod.DataConnector
+import typings.atJupyterlabCoreutils.libDataconnectorMod.DataConnector
 import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistry.IPlugin
 import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atJupyterlabServices.libSettingMod.SettingManager.IOptions

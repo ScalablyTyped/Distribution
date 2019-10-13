@@ -1,6 +1,5 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.datePickerDatePickerDialogMod.DatePickerDialog
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,8 @@ object datePickerDatePickerDialogMod extends js.Object {
     extends typings.materialDashUi.__MaterialUI.DatePicker.DatePickerDialog
   
   @js.native
-  class default () extends DatePickerDialog
+  class default ()
+    extends typings.materialDashUi.__MaterialUI.DatePicker.DatePickerDialog
   
 }
 

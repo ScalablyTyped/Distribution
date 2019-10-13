@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "DayOfWeek")
 @js.native
-class DayOfWeek protected () extends Temporal {
+class DayOfWeek protected () extends TemporalAccessor {
   def adjustInto(temporal: TemporalAdjuster): this.type = js.native
   def compareTo(other: DayOfWeek): Double = js.native
   def equals(other: js.Any): Boolean = js.native

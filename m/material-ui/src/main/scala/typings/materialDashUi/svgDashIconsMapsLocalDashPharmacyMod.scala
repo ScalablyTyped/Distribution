@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsMapsLocalDashPharmacyMod.MapsLocalPharmacy
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsMapsLocalDashPharmacyMod extends js.Object {
   @js.native
-  class MapsLocalPharmacy () extends SvgIcon
+  class MapsLocalPharmacy ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends MapsLocalPharmacy
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

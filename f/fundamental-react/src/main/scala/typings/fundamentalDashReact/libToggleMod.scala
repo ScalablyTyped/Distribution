@@ -1,6 +1,7 @@
 package typings.fundamentalDashReact
 
-import typings.fundamentalDashReact.libToggleToggleMod.default
+import typings.fundamentalDashReact.libToggleToggleMod.ToggleProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libToggleMod extends js.Object {
   @js.native
-  class Toggle () extends default
+  class Toggle ()
+    extends Component[ToggleProps, js.Object, js.Any]
   
 }
 

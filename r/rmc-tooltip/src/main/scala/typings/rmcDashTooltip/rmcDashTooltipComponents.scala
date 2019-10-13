@@ -1,17 +1,16 @@
 package typings.rmcDashTooltip
 
 import typings.react.reactMod.ComponentType
-import typings.rmcDashTooltip.esTooltipMod.ITooltipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rmcDashTooltipComponents extends rmcDashTooltipProps {
   @scala.inline
-  def Es: ComponentType[ITooltipProps] = js.constructorOf[typings.rmcDashTooltip.esMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashTooltip.esTooltipMod.ITooltipProps]]
+  def Es: ComponentType[EsProps] = js.constructorOf[typings.rmcDashTooltip.esMod.default].asInstanceOf[typings.react.reactMod.ComponentType[EsProps]]
   @scala.inline
-  def Lib: ComponentType[typings.rmcDashTooltip.libTooltipMod.ITooltipProps] = js.constructorOf[typings.rmcDashTooltip.libMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashTooltip.libTooltipMod.ITooltipProps]]
+  def Lib: ComponentType[LibProps] = js.constructorOf[typings.rmcDashTooltip.libMod.default].asInstanceOf[typings.react.reactMod.ComponentType[LibProps]]
   @scala.inline
-  def Tooltip: ComponentType[ITooltipProps] = js.constructorOf[typings.rmcDashTooltip.esTooltipMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashTooltip.esTooltipMod.ITooltipProps]]
+  def Tooltip: ComponentType[TooltipProps] = js.constructorOf[typings.rmcDashTooltip.esTooltipMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TooltipProps]]
 }
 

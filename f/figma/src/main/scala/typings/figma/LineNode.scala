@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LineNode
-  extends DefaultShapeMixin
-     with ConstraintMixin
-     with SceneNode {
+  extends SceneNode
+     with BaseNodeMixin
+     with SceneNodeMixin
+     with BlendMixin
+     with GeometryMixin
+     with LayoutMixin
+     with ExportMixin
+     with ConstraintMixin {
   val `type`: LINE = js.native
 }
 

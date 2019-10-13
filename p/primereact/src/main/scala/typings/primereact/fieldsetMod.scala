@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsFieldsetFieldsetMod.FieldsetProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object fieldsetMod extends js.Object {
   @js.native
   class Fieldset ()
-    extends typings.primereact.componentsFieldsetFieldsetMod.Fieldset
+    extends Component[FieldsetProps, js.Any, js.Any]
   
 }
 

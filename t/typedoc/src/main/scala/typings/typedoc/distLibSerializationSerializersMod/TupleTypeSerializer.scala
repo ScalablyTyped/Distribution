@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/serialization/serializers", "TupleTypeSerializer")
 @js.native
 class TupleTypeSerializer ()
-  extends typings.typedoc.distLibSerializationSerializersTypesMod.TupleTypeSerializer
+  extends typings.typedoc.distLibSerializationSerializersTypesTupleMod.TupleTypeSerializer
 

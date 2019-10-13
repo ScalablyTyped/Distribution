@@ -1,11 +1,13 @@
 package typings.materialDashUi.svgDashIconsMod
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("material-ui/svg-icons", "ActionTurnedInNot")
 @js.native
-class ActionTurnedInNot () extends SvgIcon
+class ActionTurnedInNot ()
+  extends Component[SvgIconProps, js.Object, js.Any]
 

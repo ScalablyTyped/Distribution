@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object setup extends js.Object {
   def apply(): TypeofClassConfiguration = js.native
-  def apply(instrumentationKey: String): TypeofClassConfiguration = js.native
+  def apply(setupString: String): TypeofClassConfiguration = js.native
 }
 

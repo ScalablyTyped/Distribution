@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "AdapterError")
 @js.native
 class AdapterError ()
-  extends typings.emberDashData.emberDashDataMod.DS.AdapterError
+  extends typings.atEmberObject.atEmberObjectMod.default
 

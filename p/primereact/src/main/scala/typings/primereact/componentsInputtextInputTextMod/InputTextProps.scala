@@ -2,8 +2,9 @@ package typings.primereact.componentsInputtextInputTextMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.primereact.componentsTooltipTooltipOptionsMod.TooltipOptions
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.FormEvent
-import typings.react.reactMod.HTMLProps
 import typings.react.reactMod.KeyboardEvent
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -11,7 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InputTextProps
-  extends HTMLProps[HTMLInputElement]
+  extends AllHTMLAttributes[HTMLInputElement]
+     with ClassAttributes[HTMLInputElement]
      with /* key */ StringDictionary[js.Any] {
   var keyfilter: js.UndefOr[js.Any] = js.undefined
   @JSName("onInput")
@@ -26,7 +28,8 @@ trait InputTextProps
 object InputTextProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLInputElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLInputElement] = null,
+    ClassAttributes: ClassAttributes[HTMLInputElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     keyfilter: js.Any = null,
     onInput: /* event */ FormEvent[HTMLInputElement] => Unit = null,
@@ -36,7 +39,8 @@ object InputTextProps {
     validateOnly: js.UndefOr[Boolean] = js.undefined
   ): InputTextProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (keyfilter != null) __obj.updateDynamic("keyfilter")(keyfilter)
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))

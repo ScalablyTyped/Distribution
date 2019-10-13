@@ -139,6 +139,10 @@ object Cache extends js.Object {
       */
     var tilemap: BaseCache = js.native
     /**
+      * A Cache storing all non-streaming video files, typically added via the Loader.
+      */
+    var video: BaseCache = js.native
+    /**
       * A Cache storing all xml data files, typically added via the Loader.
       */
     var xml: BaseCache = js.native

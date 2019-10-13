@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/user-agents/notify-user-agent-server", JSImport.Namespace)
 @js.native
 object libCoreUserDashAgentsNotifyDashUserDashAgentDashServerMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.sipDotJs.libCoreMessagesMethodsNotifyMod.IncomingNotifyRequest because Already inherited */ @js.native
+  @js.native
   class NotifyUserAgentServer protected () extends UserAgentServer {
     /**
       * NOTIFY UAS constructor.

@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashAriaDashModalMod {
-  import typings.react.reactMod.PureComponent
+  import typings.react.reactMod.Component
   import typings.reactDashAriaDashModal.reactDashAriaDashModalStrings.titleId
   import typings.reactDashAriaDashModal.reactDashAriaDashModalStrings.titleText
   import typings.std.Pick
 
-  type AriaModal = PureComponent[
+  type AriaModal = Component[
     AriaModalProps with (RequiredAriaTypes[Pick[AriaModalProps, titleId], Pick[AriaModalProps, titleText]]), 
     js.Object, 
     js.Any

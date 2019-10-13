@@ -1,5 +1,6 @@
 package typings.atEmberApplication
 
+import typings.atEmberApplication.dashPrivateDefaultDashResolverMod.DefaultResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object globalsDashResolverMod extends js.Object {
   @js.native
-  class default ()
-    extends typings.atEmberApplication.dashPrivateDefaultDashResolverMod.default
+  class default () extends DefaultResolver
   
 }
 

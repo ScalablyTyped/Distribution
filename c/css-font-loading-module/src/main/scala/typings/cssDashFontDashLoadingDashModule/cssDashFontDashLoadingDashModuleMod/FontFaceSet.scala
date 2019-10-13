@@ -1,6 +1,6 @@
 package typings.cssDashFontDashLoadingDashModule.cssDashFontDashLoadingDashModuleMod
 
-import typings.cssDashFontDashLoadingDashModule.cssDashFontDashLoadingDashModuleMod.Global.FontFace
+import typings.cssDashFontDashLoadingDashModule.cssDashFontDashLoadingDashModuleMod._Global_.FontFace
 import typings.std.Event
 import typings.std.Set
 import scala.scalajs.js

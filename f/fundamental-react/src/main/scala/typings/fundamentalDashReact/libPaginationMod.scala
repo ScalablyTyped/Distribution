@@ -1,6 +1,7 @@
 package typings.fundamentalDashReact
 
-import typings.fundamentalDashReact.libPaginationPaginationMod.default
+import typings.fundamentalDashReact.libPaginationPaginationMod.PaginationProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libPaginationMod extends js.Object {
   @js.native
-  class Pagination () extends default
+  class Pagination ()
+    extends Component[PaginationProps, js.Object, js.Any]
   
 }
 

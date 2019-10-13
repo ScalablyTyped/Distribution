@@ -1,6 +1,6 @@
 package typings.rmcDashCalendar
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.rmcDashCalendar.esCalendarShortcutPanelMod.PropsType
 import typings.rmcDashCalendar.esCalendarShortcutPanelMod.ShortcutPanel
 import typings.rmcDashCalendar.esDateDataTypesMod.Models.Locale
@@ -22,7 +22,7 @@ object esCalendarShortcutPanelMod extends js.Object {
   
   @js.native
   trait ShortcutPanel
-    extends PureComponent[PropsType, js.Object, js.Any] {
+    extends Component[PropsType, js.Object, js.Any] {
     def onClick(`type`: String): Unit = js.native
   }
   

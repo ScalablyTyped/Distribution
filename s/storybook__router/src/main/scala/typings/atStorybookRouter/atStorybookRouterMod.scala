@@ -1,5 +1,6 @@
 package typings.atStorybookRouter
 
+import typings.atReachRouter.atReachRouterMod.LocationProviderProps
 import typings.atStorybookRouter.distRouterMod.QueryLinkProps
 import typings.atStorybookRouter.distRouterMod.QueryLocationProps
 import typings.atStorybookRouter.distRouterMod.QueryMatchProps
@@ -7,7 +8,8 @@ import typings.atStorybookRouter.distRouterMod.RouteProps
 import typings.atStorybookRouter.distUtilsMod.Query
 import typings.atStorybookRouter.distUtilsMod.SeparatorOptions
 import typings.atStorybookRouter.distUtilsMod.StoryData
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod.Component
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +19,7 @@ import scala.scalajs.js.annotation._
 object atStorybookRouterMod extends js.Object {
   @js.native
   class LocationProvider ()
-    extends typings.atStorybookRouter.distRouterMod.LocationProvider
+    extends Component[LocationProviderProps, js.Object, js.Any]
   
   def getMatch(current: String, target: String): Anon_Path = js.native
   def getMatch(current: String, target: String, startsWith: Boolean): Anon_Path = js.native

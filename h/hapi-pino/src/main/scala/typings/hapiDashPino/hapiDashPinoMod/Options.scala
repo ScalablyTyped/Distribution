@@ -2,7 +2,7 @@ package typings.hapiDashPino.hapiDashPinoMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.hapiDashPino.hapiDashPinoNumbers.`false`
-import typings.node.processMod.Global.NodeJS.WriteStream
+import typings.node.processMod._Global_.NodeJS.WriteStream
 import typings.pino.pinoMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`

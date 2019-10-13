@@ -1,12 +1,13 @@
 package typings.xadesjs.xadesjsMod.xml
 
+import typings.xmlDashCore.xmlDashCoreMod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.SignedSignatureProperties")
 @js.native
-class SignedSignatureProperties () extends XadesObject {
+class SignedSignatureProperties () extends XmlObject {
   var Id: String = js.native
   var SignaturePolicyIdentifier: typings.xadesjs.xadesjsMod.xml.SignaturePolicyIdentifier = js.native
   var SignatureProductionPlace: typings.xadesjs.xadesjsMod.xml.SignatureProductionPlace = js.native

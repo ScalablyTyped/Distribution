@@ -1,6 +1,6 @@
 package typings.atBlueprintjsTable.libEsmCellFormatsTruncatedFormatMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/table/lib/esm/cell/formats/truncatedFormat", "TruncatedFormat")
 @js.native
 class TruncatedFormat ()
-  extends PureComponent[ITruncatedFormatProps, ITruncatedFormatState, js.Any] {
+  extends Component[ITruncatedFormatProps, ITruncatedFormatState, js.Any] {
   var contentDiv: js.Any = js.native
   var handleContentDivRef: js.Any = js.native
   var handlePopoverClose: js.Any = js.native

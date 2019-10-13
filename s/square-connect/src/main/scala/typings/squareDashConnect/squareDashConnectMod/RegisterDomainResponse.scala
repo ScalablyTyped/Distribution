@@ -1,6 +1,7 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.RegisterDomainResponse.StatusEnum
+import typings.squareDashConnect.squareDashConnectStrings.PENDING
+import typings.squareDashConnect.squareDashConnectStrings.VERIFIED
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,28 +18,6 @@ class RegisterDomainResponse () extends js.Object {
     * Status of the domain registration.
     * See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values.
     */
-  var status: js.UndefOr[StatusEnum] = js.native
-}
-
-@JSImport("square-connect", "RegisterDomainResponse")
-@js.native
-object RegisterDomainResponse extends js.Object {
-  @js.native
-  sealed trait StatusEnum extends js.Object
-  
-  @js.native
-  object StatusEnum extends js.Object {
-    @js.native
-    sealed trait PENDING extends StatusEnum
-    
-    @js.native
-    sealed trait VERIFIED extends StatusEnum
-    
-    /* "PENDING" */ val PENDING: typings.squareDashConnect.squareDashConnectMod.RegisterDomainResponse.StatusEnum.PENDING with String = js.native
-    /* "VERIFIED" */ val VERIFIED: typings.squareDashConnect.squareDashConnectMod.RegisterDomainResponse.StatusEnum.VERIFIED with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[StatusEnum with String] = js.native
-  }
-  
+  var status: js.UndefOr[PENDING | VERIFIED] = js.native
 }
 

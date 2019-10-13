@@ -1,6 +1,9 @@
 package typings.backboneDashFetchDashCache.backboneDashFetchDashCacheMod.backboneMod
 
-import typings.backbone.backboneMod.ModelFetchOptions
+import typings.backbone.backboneMod.Parseable
+import typings.backbone.backboneMod.PersistenceOptions
+import typings.backbone.backboneMod.Silenceable
+import typings.backbone.backboneMod.Validable
 import typings.jquery.JQueryXHR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +14,11 @@ import scala.scalajs.js.annotation._
   * Collection #.fetch() method. Here are the options you can pass into that
   * method to get behaviour particular to Backbone Fetch Cache.
   */
-trait ModelFetchWithCacheOptions extends ModelFetchOptions {
+trait ModelFetchWithCacheOptions
+  extends PersistenceOptions
+     with Silenceable
+     with Validable
+     with Parseable {
   /**
     * Calls to modelInstance.fetch or collectionInstance.fetch will be
     * fulfilled from the cache (if possible) when cache: true is set in

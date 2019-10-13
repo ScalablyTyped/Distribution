@@ -1,22 +1,6 @@
 package typings.atAntDashDesignReactDashNative
 
 import typings.atAntDashDesignReactDashNative.esAccordionMod.AccordionHeader
-import typings.atAntDashDesignReactDashNative.esAccordionMod.AccordionNativeProps
-import typings.atAntDashDesignReactDashNative.esActivityDashIndicatorMod.ActivityIndicatorNativeProps
-import typings.atAntDashDesignReactDashNative.esCardMod.CardNativeProps
-import typings.atAntDashDesignReactDashNative.esDrawerMod.DrawerNativeProps
-import typings.atAntDashDesignReactDashNative.esInputDashItemInputMod.TextInputProps
-import typings.atAntDashDesignReactDashNative.esLocaleDashProviderMod.LocaleProviderProps
-import typings.atAntDashDesignReactDashNative.esNoticeDashBarMod.NoticeNativeProps
-import typings.atAntDashDesignReactDashNative.esPaginationMod.PaginationNativeProps
-import typings.atAntDashDesignReactDashNative.esPortalPortalDashHostMod.PortalHostProps
-import typings.atAntDashDesignReactDashNative.esRadioRadioMod.RadioNativeProps
-import typings.atAntDashDesignReactDashNative.esResultMod.ResultNativeProps
-import typings.atAntDashDesignReactDashNative.esStepperMod.StepProps
-import typings.atAntDashDesignReactDashNative.esSwitchMod.AntmSwitchProps
-import typings.atAntDashDesignReactDashNative.esTabDashBarMod.TabBarNativeProps
-import typings.atAntDashDesignReactDashNative.esTabsDefaultTabBarMod.PropsType
-import typings.atAntDashDesignReactDashNative.esTagMod.TagNativeProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,184 +8,154 @@ import scala.scalajs.js.annotation._
 
 object atAntDashDesignReactDashNativeComponents extends atAntDashDesignReactDashNativeProps {
   @scala.inline
-  def Accordion[T /* <: AccordionHeader */]: ComponentType[AccordionNativeProps[T]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esAccordionMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esAccordionMod.AccordionNativeProps[T]]]
+  def Accordion[T /* <: AccordionHeader */]: ComponentType[AccordionProps[T]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esAccordionMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[AccordionProps[T]]]
   @scala.inline
-  def ActivityDashIndicator: ComponentType[ActivityIndicatorNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esActivityDashIndicatorMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esActivityDashIndicatorMod.ActivityIndicatorNativeProps]]
+  def ActivityDashIndicator: ComponentType[ActivityDashIndicatorProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esActivityDashIndicatorMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ActivityDashIndicatorProps]]
   @scala.inline
-  def ActivityIndicator: ComponentType[ActivityIndicatorNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.ActivityIndicator].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esActivityDashIndicatorMod.ActivityIndicatorNativeProps]]
+  def ActivityIndicator: ComponentType[ActivityIndicatorProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.ActivityIndicator].asInstanceOf[typings.react.reactMod.ComponentType[ActivityIndicatorProps]]
   @scala.inline
-  def Badge: ComponentType[typings.atAntDashDesignReactDashNative.esBadgeMod.BadgeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esBadgeMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esBadgeMod.BadgeProps]]
+  def Badge: ComponentType[BadgeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esBadgeMod.default].asInstanceOf[typings.react.reactMod.ComponentType[BadgeProps]]
   @scala.inline
-  def Brief: ComponentType[typings.atAntDashDesignReactDashNative.esListListItemMod.BriefProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esListListItemMod.Brief].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esListListItemMod.BriefProps]]
+  def Brief: ComponentType[BriefProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esListListItemMod.Brief].asInstanceOf[typings.react.reactMod.ComponentType[BriefProps]]
   @scala.inline
-  def Button: ComponentType[typings.atAntDashDesignReactDashNative.esButtonMod.ButtonProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esButtonMod.ButtonProps]]
+  def Button: ComponentType[ButtonProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ButtonProps]]
   @scala.inline
-  def CameraRollPicker: ComponentType[
-    typings.atAntDashDesignReactDashNative.esImageDashPickerCameraRollPickerMod.CameraRollPickerProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esImageDashPickerCameraRollPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esImageDashPickerCameraRollPickerMod.CameraRollPickerProps]]
+  def CameraRollPicker: ComponentType[CameraRollPickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esImageDashPickerCameraRollPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CameraRollPickerProps]]
   @scala.inline
-  def Card: ComponentType[CardNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCardMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esCardMod.CardNativeProps]]
+  def Card: ComponentType[CardProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCardMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CardProps]]
   @scala.inline
-  def CardBody: ComponentType[typings.atAntDashDesignReactDashNative.esCardCardBodyMod.CardBodyProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCardCardBodyMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esCardCardBodyMod.CardBodyProps]]
+  def CardBody: ComponentType[CardBodyProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCardCardBodyMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CardBodyProps]]
   @scala.inline
-  def CardFooter: ComponentType[typings.atAntDashDesignReactDashNative.esCardCardFooterMod.CardFooterProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCardCardFooterMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esCardCardFooterMod.CardFooterProps]]
+  def CardFooter: ComponentType[CardFooterProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCardCardFooterMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CardFooterProps]]
   @scala.inline
-  def CardHeader: ComponentType[typings.atAntDashDesignReactDashNative.esCardCardHeaderMod.CardHeaderProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCardCardHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esCardCardHeaderMod.CardHeaderProps]]
+  def CardHeader: ComponentType[CardHeaderProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCardCardHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CardHeaderProps]]
   @scala.inline
-  def Carousel: ComponentType[typings.atAntDashDesignReactDashNative.esCarouselMod.CarouselProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCarouselMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esCarouselMod.CarouselProps]]
+  def Carousel: ComponentType[CarouselProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCarouselMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CarouselProps]]
   @scala.inline
-  def Checkbox: ComponentType[typings.atAntDashDesignReactDashNative.esCheckboxCheckboxMod.CheckboxProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCheckboxMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esCheckboxCheckboxMod.CheckboxProps]]
+  def Checkbox: ComponentType[CheckboxProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esCheckboxMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CheckboxProps]]
   @scala.inline
-  def DateDashPicker: ComponentType[typings.atAntDashDesignReactDashNative.esDateDashPickerMod.DatePickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esDateDashPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esDateDashPickerMod.DatePickerProps]]
+  def DateDashPicker: ComponentType[DateDashPickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esDateDashPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DateDashPickerProps]]
   @scala.inline
-  def DateDashPickerDashView: ComponentType[
-    typings.atAntDashDesignReactDashNative.esDateDashPickerDashViewPropsTypeMod.DatePickerProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esDateDashPickerDashViewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esDateDashPickerDashViewPropsTypeMod.DatePickerProps]]
+  def DateDashPickerDashView: ComponentType[DateDashPickerDashViewProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esDateDashPickerDashViewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DateDashPickerDashViewProps]]
   @scala.inline
-  def DatePicker: ComponentType[typings.atAntDashDesignReactDashNative.esDateDashPickerMod.DatePickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.DatePicker].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esDateDashPickerMod.DatePickerProps]]
+  def DatePicker: ComponentType[DatePickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.DatePicker].asInstanceOf[typings.react.reactMod.ComponentType[DatePickerProps]]
   @scala.inline
-  def DatePickerView: ComponentType[
-    typings.atAntDashDesignReactDashNative.esDateDashPickerDashViewPropsTypeMod.DatePickerProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.DatePickerView].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esDateDashPickerDashViewPropsTypeMod.DatePickerProps]]
+  def DatePickerView: ComponentType[DatePickerViewProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.DatePickerView].asInstanceOf[typings.react.reactMod.ComponentType[DatePickerViewProps]]
   @scala.inline
-  def DefaultTabBar: ComponentType[PropsType] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTabsDefaultTabBarMod.DefaultTabBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTabsDefaultTabBarMod.PropsType]]
+  def DefaultTabBar: ComponentType[DefaultTabBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTabsDefaultTabBarMod.DefaultTabBar].asInstanceOf[typings.react.reactMod.ComponentType[DefaultTabBarProps]]
   @scala.inline
-  def Drawer: ComponentType[DrawerNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esDrawerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esDrawerMod.DrawerNativeProps]]
+  def Drawer: ComponentType[DrawerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esDrawerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DrawerProps]]
   @scala.inline
-  def Flex: ComponentType[typings.atAntDashDesignReactDashNative.esFlexFlexMod.FlexProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esFlexMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esFlexFlexMod.FlexProps]]
+  def Flex: ComponentType[FlexProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esFlexMod.default].asInstanceOf[typings.react.reactMod.ComponentType[FlexProps]]
   @scala.inline
-  def Grid: ComponentType[typings.atAntDashDesignReactDashNative.esGridMod.GridProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esGridMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esGridMod.GridProps]]
+  def Grid: ComponentType[GridProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esGridMod.default].asInstanceOf[typings.react.reactMod.ComponentType[GridProps]]
   @scala.inline
-  def Icon: ComponentType[typings.atAntDashDesignReactDashNative.esIconMod.IconProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esIconMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esIconMod.IconProps]]
+  def Icon: ComponentType[IconProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esIconMod.default].asInstanceOf[typings.react.reactMod.ComponentType[IconProps]]
   @scala.inline
-  def ImageDashPicker: ComponentType[typings.atAntDashDesignReactDashNative.esImageDashPickerMod.ImagePickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esImageDashPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esImageDashPickerMod.ImagePickerProps]]
+  def ImageDashPicker: ComponentType[ImageDashPickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esImageDashPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ImageDashPickerProps]]
   @scala.inline
-  def ImagePicker: ComponentType[typings.atAntDashDesignReactDashNative.esImageDashPickerMod.ImagePickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.ImagePicker].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esImageDashPickerMod.ImagePickerProps]]
+  def ImagePicker: ComponentType[ImagePickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.ImagePicker].asInstanceOf[typings.react.reactMod.ComponentType[ImagePickerProps]]
   @scala.inline
-  def ImageRoll: ComponentType[
-    typings.atAntDashDesignReactDashNative.esImageDashPickerImageRollMod.ImageRollProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esImageDashPickerImageRollMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esImageDashPickerImageRollMod.ImageRollProps]]
+  def ImageRoll: ComponentType[ImageRollProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esImageDashPickerImageRollMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ImageRollProps]]
   @scala.inline
-  def Input: ComponentType[TextInputProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esInputDashItemInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esInputDashItemInputMod.TextInputProps]]
+  def Input: ComponentType[InputProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esInputDashItemInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[InputProps]]
   @scala.inline
-  def InputDashItem: ComponentType[typings.atAntDashDesignReactDashNative.esInputDashItemMod.InputItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esInputDashItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esInputDashItemMod.InputItemProps]]
+  def InputDashItem: ComponentType[InputDashItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esInputDashItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[InputDashItemProps]]
   @scala.inline
-  def InputItem: ComponentType[typings.atAntDashDesignReactDashNative.esInputDashItemMod.InputItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.InputItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esInputDashItemMod.InputItemProps]]
+  def InputItem: ComponentType[InputItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.InputItem].asInstanceOf[typings.react.reactMod.ComponentType[InputItemProps]]
   @scala.inline
-  def List: ComponentType[typings.atAntDashDesignReactDashNative.esListMod.ListProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esListMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esListMod.ListProps]]
+  def List: ComponentType[ListProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esListMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ListProps]]
   @scala.inline
-  def ListDashView[T]: ComponentType[typings.atAntDashDesignReactDashNative.esListDashViewMod.ListViewProps[T]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esListDashViewMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esListDashViewMod.ListViewProps[T]]]
+  def ListDashView[T]: ComponentType[ListDashViewProps[T]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esListDashViewMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[ListDashViewProps[T]]]
   @scala.inline
-  def ListItem: ComponentType[typings.atAntDashDesignReactDashNative.esListListItemMod.ListItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esListListItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esListListItemMod.ListItemProps]]
+  def ListItem: ComponentType[ListItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esListListItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ListItemProps]]
   @scala.inline
-  def ListView[T]: ComponentType[typings.atAntDashDesignReactDashNative.esListDashViewMod.ListViewProps[T]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.ListView[T]].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esListDashViewMod.ListViewProps[T]]]
+  def ListView[T]: ComponentType[ListViewProps[T]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.ListView[T]].asInstanceOf[typings.react.reactMod.ComponentType[ListViewProps[T]]]
   @scala.inline
-  def LocaleDashProvider: ComponentType[LocaleProviderProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esLocaleDashProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esLocaleDashProviderMod.LocaleProviderProps]]
+  def LocaleDashProvider: ComponentType[LocaleDashProviderProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esLocaleDashProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[LocaleDashProviderProps]]
   @scala.inline
-  def Marquee: ComponentType[typings.atAntDashDesignReactDashNative.esNoticeDashBarMarqueeMod.MarqueeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esNoticeDashBarMarqueeMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esNoticeDashBarMarqueeMod.MarqueeProps]]
+  def Marquee: ComponentType[MarqueeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esNoticeDashBarMarqueeMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MarqueeProps]]
   @scala.inline
-  def Modal: ComponentType[typings.atAntDashDesignReactDashNative.esModalModalMod.ModalProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esModalMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esModalModalMod.ModalProps]]
+  def Modal: ComponentType[ModalProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esModalMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ModalProps]]
   @scala.inline
-  def NoticeBar: ComponentType[NoticeNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.NoticeBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esNoticeDashBarMod.NoticeNativeProps]]
+  def NoticeBar: ComponentType[NoticeBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.NoticeBar].asInstanceOf[typings.react.reactMod.ComponentType[NoticeBarProps]]
   @scala.inline
-  def NoticeDashBar: ComponentType[NoticeNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esNoticeDashBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esNoticeDashBarMod.NoticeNativeProps]]
+  def NoticeDashBar: ComponentType[NoticeDashBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esNoticeDashBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[NoticeDashBarProps]]
   @scala.inline
-  def Pagination: ComponentType[PaginationNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPaginationMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esPaginationMod.PaginationNativeProps]]
+  def Pagination: ComponentType[PaginationProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPaginationMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PaginationProps]]
   @scala.inline
-  def Picker: ComponentType[typings.atAntDashDesignReactDashNative.esPickerMod.PickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esPickerMod.PickerProps]]
+  def Picker: ComponentType[PickerProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PickerProps]]
   @scala.inline
-  def PickerDashView: ComponentType[
-    typings.atAntDashDesignReactDashNative.esPickerDashViewPickerViewMod.PickerViewProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPickerDashViewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esPickerDashViewPickerViewMod.PickerViewProps]]
+  def PickerDashView: ComponentType[PickerDashViewProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPickerDashViewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PickerDashViewProps]]
   @scala.inline
-  def PickerView: ComponentType[
-    typings.atAntDashDesignReactDashNative.esPickerDashViewPickerViewMod.PickerViewProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPickerDashViewPickerViewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esPickerDashViewPickerViewMod.PickerViewProps]]
+  def PickerView: ComponentType[PickerViewProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPickerDashViewPickerViewMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PickerViewProps]]
   @scala.inline
-  def Popover: ComponentType[typings.atAntDashDesignReactDashNative.esPopoverMod.PopoverProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPopoverMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esPopoverMod.PopoverProps]]
+  def Popover: ComponentType[PopoverProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPopoverMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PopoverProps]]
   @scala.inline
-  def PopoverItem: ComponentType[typings.atAntDashDesignReactDashNative.esPopoverMod.PopoverItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPopoverMod.PopoverItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esPopoverMod.PopoverItemProps]]
+  def PopoverItem: ComponentType[PopoverItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPopoverMod.PopoverItem].asInstanceOf[typings.react.reactMod.ComponentType[PopoverItemProps]]
   @scala.inline
-  def Portal: ComponentType[typings.atAntDashDesignReactDashNative.esPortalPortalMod.PortalProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPortalMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esPortalPortalMod.PortalProps]]
+  def Portal: ComponentType[PortalProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPortalMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PortalProps]]
   @scala.inline
-  def PortalDashHost: ComponentType[PortalHostProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPortalPortalDashHostMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esPortalPortalDashHostMod.PortalHostProps]]
+  def PortalDashHost: ComponentType[PortalDashHostProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPortalPortalDashHostMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PortalDashHostProps]]
   @scala.inline
   def PortalDashManager: ComponentType[js.Object] = js.constructorOf[typings.atAntDashDesignReactDashNative.esPortalPortalDashManagerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def Progress: ComponentType[typings.atAntDashDesignReactDashNative.esProgressMod.ProgressProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esProgressMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esProgressMod.ProgressProps]]
+  def Progress: ComponentType[ProgressProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esProgressMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ProgressProps]]
   @scala.inline
-  def Provider: ComponentType[typings.atAntDashDesignReactDashNative.esProviderMod.ProviderProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esProviderMod.ProviderProps]]
+  def Provider: ComponentType[ProviderProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ProviderProps]]
   @scala.inline
-  def Radio: ComponentType[RadioNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esRadioMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esRadioRadioMod.RadioNativeProps]]
+  def Radio: ComponentType[RadioProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esRadioMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RadioProps]]
   @scala.inline
-  def Result: ComponentType[ResultNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esResultMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esResultMod.ResultNativeProps]]
+  def Result: ComponentType[ResultProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esResultMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ResultProps]]
   @scala.inline
-  def SearchBar: ComponentType[typings.atAntDashDesignReactDashNative.esSearchDashBarMod.SearchBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.SearchBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSearchDashBarMod.SearchBarProps]]
+  def SearchBar: ComponentType[SearchBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.SearchBar].asInstanceOf[typings.react.reactMod.ComponentType[SearchBarProps]]
   @scala.inline
-  def SearchDashBar: ComponentType[typings.atAntDashDesignReactDashNative.esSearchDashBarMod.SearchBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSearchDashBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSearchDashBarMod.SearchBarProps]]
+  def SearchDashBar: ComponentType[SearchDashBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSearchDashBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SearchDashBarProps]]
   @scala.inline
-  def SegmentedControl: ComponentType[
-    typings.atAntDashDesignReactDashNative.esSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.SegmentedControl].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps]]
+  def SegmentedControl: ComponentType[SegmentedControlProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.SegmentedControl].asInstanceOf[typings.react.reactMod.ComponentType[SegmentedControlProps]]
   @scala.inline
-  def SegmentedDashControl: ComponentType[
-    typings.atAntDashDesignReactDashNative.esSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSegmentedDashControlMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps]]
+  def SegmentedDashControl: ComponentType[SegmentedDashControlProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSegmentedDashControlMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SegmentedDashControlProps]]
   @scala.inline
-  def SegmentedDotIos: ComponentType[
-    typings.atAntDashDesignReactDashNative.esSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps
-  ] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSegmentedDashControlSegmentedDotIosMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atAntDashDesignReactDashNative.esSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps]]
+  def SegmentedDotIos: ComponentType[SegmentedDotIosProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSegmentedDashControlSegmentedDotIosMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SegmentedDotIosProps]]
   @scala.inline
-  def Slider: ComponentType[typings.atAntDashDesignReactDashNative.esSliderMod.SliderProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSliderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSliderMod.SliderProps]]
+  def Slider: ComponentType[SliderProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSliderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SliderProps]]
   @scala.inline
-  def Stepper: ComponentType[StepProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStepperMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esStepperMod.StepProps]]
+  def Stepper: ComponentType[StepperProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStepperMod.default].asInstanceOf[typings.react.reactMod.ComponentType[StepperProps]]
   @scala.inline
-  def Steps: ComponentType[typings.atAntDashDesignReactDashNative.esStepsMod.StepsProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStepsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esStepsMod.StepsProps]]
+  def Steps: ComponentType[StepsProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStepsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[StepsProps]]
   @scala.inline
-  def StepsItem: ComponentType[typings.atAntDashDesignReactDashNative.esStepsStepsItemMod.StepsItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStepsStepsItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esStepsStepsItemMod.StepsItemProps]]
+  def StepsItem: ComponentType[StepsItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStepsStepsItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[StepsItemProps]]
   @scala.inline
-  def SwipeAction: ComponentType[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.SwipeActionProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.SwipeAction].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.SwipeActionProps]]
+  def SwipeAction: ComponentType[SwipeActionProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.SwipeAction].asInstanceOf[typings.react.reactMod.ComponentType[SwipeActionProps]]
   @scala.inline
-  def SwipeDashAction: ComponentType[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.SwipeActionProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.SwipeActionProps]]
+  def SwipeDashAction: ComponentType[SwipeDashActionProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esSwipeDashActionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SwipeDashActionProps]]
   @scala.inline
-  def Switch: ComponentType[AntmSwitchProps] = typings.atAntDashDesignReactDashNative.esMod.Switch.asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esSwitchMod.AntmSwitchProps]]
+  def Switch: ComponentType[SwitchProps] = typings.atAntDashDesignReactDashNative.esMod.Switch.asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
   @scala.inline
-  def TabBar: ComponentType[TabBarNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.TabBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTabDashBarMod.TabBarNativeProps]]
+  def TabBar: ComponentType[TabBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.TabBar].asInstanceOf[typings.react.reactMod.ComponentType[TabBarProps]]
   @scala.inline
-  def TabBarItem: ComponentType[typings.atAntDashDesignReactDashNative.esTabDashBarTabBarItemMod.TabBarItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTabDashBarTabBarItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTabDashBarTabBarItemMod.TabBarItemProps]]
+  def TabBarItem: ComponentType[TabBarItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTabDashBarTabBarItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabBarItemProps]]
   @scala.inline
-  def TabDashBar: ComponentType[TabBarNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTabDashBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTabDashBarMod.TabBarNativeProps]]
+  def TabDashBar: ComponentType[TabDashBarProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTabDashBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabDashBarProps]]
   @scala.inline
-  def Tabs: ComponentType[typings.atAntDashDesignReactDashNative.esTabsTabsMod.TabsProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTabsTabsMod.TabsProps]]
+  def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
   @scala.inline
-  def Tag: ComponentType[TagNativeProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTagMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTagMod.TagNativeProps]]
+  def Tag: ComponentType[TagProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTagMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TagProps]]
   @scala.inline
-  def TextareaDashItem: ComponentType[typings.atAntDashDesignReactDashNative.esTextareaDashItemMod.TextareaItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTextareaDashItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTextareaDashItemMod.TextareaItemProps]]
+  def TextareaDashItem: ComponentType[TextareaDashItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esTextareaDashItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TextareaDashItemProps]]
   @scala.inline
-  def TextareaItem: ComponentType[typings.atAntDashDesignReactDashNative.esTextareaDashItemMod.TextareaItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.TextareaItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esTextareaDashItemMod.TextareaItemProps]]
+  def TextareaItem: ComponentType[TextareaItemProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.TextareaItem].asInstanceOf[typings.react.reactMod.ComponentType[TextareaItemProps]]
   @scala.inline
-  def ThemeProvider: ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProviderProps] = typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProvider.asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProviderProps]]
+  def ThemeProvider: ComponentType[ThemeProviderProps] = typings.atAntDashDesignReactDashNative.esStyleMod.ThemeProvider.asInstanceOf[typings.react.reactMod.ComponentType[ThemeProviderProps]]
   @scala.inline
-  def WhiteDashSpace: ComponentType[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.WhiteSpaceProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.WhiteSpaceProps]]
+  def WhiteDashSpace: ComponentType[WhiteDashSpaceProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.default].asInstanceOf[typings.react.reactMod.ComponentType[WhiteDashSpaceProps]]
   @scala.inline
-  def WhiteSpace: ComponentType[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.WhiteSpaceProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.WhiteSpace].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esWhiteDashSpaceMod.WhiteSpaceProps]]
+  def WhiteSpace: ComponentType[WhiteSpaceProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.WhiteSpace].asInstanceOf[typings.react.reactMod.ComponentType[WhiteSpaceProps]]
   @scala.inline
-  def WingBlank: ComponentType[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.WingBlankProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.WingBlank].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.WingBlankProps]]
+  def WingBlank: ComponentType[WingBlankProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esMod.WingBlank].asInstanceOf[typings.react.reactMod.ComponentType[WingBlankProps]]
   @scala.inline
-  def WingDashBlank: ComponentType[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.WingBlankProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.WingBlankProps]]
+  def WingDashBlank: ComponentType[WingDashBlankProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esWingDashBlankMod.default].asInstanceOf[typings.react.reactMod.ComponentType[WingDashBlankProps]]
   @scala.inline
-  def WithTheme[T, S]: ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.WithThemeProps[T, S]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStyleMod.WithTheme[T, S]].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAntDashDesignReactDashNative.esStyleMod.WithThemeProps[T, S]]]
+  def WithTheme[T, S]: ComponentType[WithThemeProps[T, S]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esStyleMod.WithTheme[T, S]].asInstanceOf[typings.react.reactMod.ComponentType[WithThemeProps[T, S]]]
 }
 

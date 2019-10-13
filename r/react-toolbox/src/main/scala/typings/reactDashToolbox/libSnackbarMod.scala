@@ -1,5 +1,7 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libSnackbarSnackbarMod.SnackbarProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,11 @@ import scala.scalajs.js.annotation._
 object libSnackbarMod extends js.Object {
   @js.native
   class Snackbar ()
-    extends typings.reactDashToolbox.libSnackbarSnackbarMod.Snackbar
+    extends Component[SnackbarProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libSnackbarSnackbarMod.Snackbar
+    extends Component[SnackbarProps, js.Object, js.Any]
   
 }
 

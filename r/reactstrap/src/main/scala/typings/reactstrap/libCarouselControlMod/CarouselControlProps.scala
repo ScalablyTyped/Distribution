@@ -1,7 +1,8 @@
 package typings.reactstrap.libCarouselControlMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.reactstrap.reactstrapStrings.next
 import typings.reactstrap.reactstrapStrings.prev
@@ -11,7 +12,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CarouselControlProps
-  extends HTMLProps[HTMLElement]
+  extends AllHTMLAttributes[HTMLElement]
+     with ClassAttributes[HTMLElement]
      with /* s */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var direction: prev | next
@@ -25,12 +27,14 @@ object CarouselControlProps {
     direction: prev | next,
     directionText: String,
     onClickHandler: () => Unit,
-    HTMLProps: HTMLProps[HTMLElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
+    ClassAttributes: ClassAttributes[HTMLElement] = null,
     StringDictionary: /* s */ StringDictionary[js.Any] = null,
     cssModule: CSSModule = null
   ): CarouselControlProps = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], directionText = directionText, onClickHandler = js.Any.fromFunction0(onClickHandler))
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     __obj.asInstanceOf[CarouselControlProps]

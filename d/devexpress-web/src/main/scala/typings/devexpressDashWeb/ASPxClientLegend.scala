@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientLegend")
 @js.native
-class ASPxClientLegend () extends ASPxClientWebChartEmptyElement {
+class ASPxClientLegend () extends ASPxClientWebChartElement {
   /**
     * Returns a collection of custom legend items of the legend.
     */

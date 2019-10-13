@@ -2,6 +2,7 @@ package typings.reactDashJss
 
 import typings.jss.jssMod.GenerateClassName
 import typings.jss.jssMod.JSS
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentType
 import typings.reactDashJss.libInjectSheetMod.InjectOptions
 import typings.reactDashJss.libInjectSheetMod.PropInjector
@@ -9,11 +10,12 @@ import typings.reactDashJss.libInjectSheetMod.StyleCreator
 import typings.reactDashJss.libInjectSheetMod.StyledComponentProps
 import typings.reactDashJss.libInjectSheetMod.Styles
 import typings.reactDashJss.libInjectSheetMod.WithSheet
-import typings.reactDashJss.libJssProviderMod.default
+import typings.reactDashJss.libJssProviderMod.Props
 import typings.reactDashJss.reactDashJssStrings.theme
 import typings.std.Exclude
 import typings.std.Pick
 import typings.theming.Anon_Theme
+import typings.theming.themingMod.ThemeProviderProps
 import typings.theming.themingMod.Theming
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +25,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashJssMod extends js.Object {
   @js.native
-  class JssProvider () extends default
+  class JssProvider ()
+    extends Component[Props, js.Object, js.Any]
   
   @js.native
   class SheetsRegistry ()
@@ -31,7 +34,7 @@ object reactDashJssMod extends js.Object {
   
   @js.native
   class ThemeProvider ()
-    extends typings.theming.themingMod.ThemeProvider
+    extends Component[ThemeProviderProps, js.Object, js.Any]
   
   val jss: JSS = js.native
   def createGenerateClassName(): GenerateClassName[_] = js.native

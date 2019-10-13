@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.twilio.twilioMod.Resource because Already inherited
 - typings.twilio.twilioMod.PostableResource because Already inherited
+- typings.twilio.twilioMod.ListableResource because var conflicts: get_Original. Inlined list, list, list, list_Original
 - typings.twilio.twilioMod.AccountInstance because var conflicts: get_Original, post_Original. Inlined update, update, update, update_Original, put, put, put, put_Original, availablePhoneNumbers, availablePhoneNumbers_Original, outgoingCallerIds, incomingPhoneNumbers, messages, sms, applications, connectApps, authorizedConnectApps, calls, conferences, queues, recordings, tokens, transcriptions, notifications, usage, sip, addresses, keys */ @js.native
-trait AccountResource extends ListMappedResource[AccountInstance] {
+trait AccountResource extends CreatableMappedResource[AccountInstance] {
   var addresses: AddressResource = js.native
   var applications: ApplicationResource = js.native
   var authorizedConnectApps: AuthorizedConnectAppResource = js.native
@@ -21,6 +22,8 @@ trait AccountResource extends ListMappedResource[AccountInstance] {
   var connectApps: ConnectAppResource = js.native
   var incomingPhoneNumbers: IncomingPhoneNumberResource = js.native
   var keys: KeyResource = js.native
+  @JSName("list")
+  var list_Original: RestMethod = js.native
   var messages: MessageResource = js.native
   var notifications: NotificationResource = js.native
   var outgoingCallerIds: OutgoingCallerIdResource = js.native
@@ -37,6 +40,9 @@ trait AccountResource extends ListMappedResource[AccountInstance] {
   var usage: UsageIntermediary = js.native
   // Mixed-in resources
   def availablePhoneNumbers(resourceSid: String): AvailablePhoneNumberInstance = js.native
+  def list(args: js.Any): Promise[_] = js.native
+  def list(args: js.Any, callback: RequestCallback): Promise[_] = js.native
+  def list(callback: RequestCallback): Promise[_] = js.native
   def put(args: js.Any): Promise[_] = js.native
   def put(args: js.Any, callback: RequestCallback): Promise[_] = js.native
   def put(callback: RequestCallback): Promise[_] = js.native

@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.floatingActionButtonMod.FloatingActionButton
+import typings.materialDashUi.__MaterialUI.FloatingActionButtonProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object floatingActionButtonMod extends js.Object {
   @js.native
   class FloatingActionButton ()
-    extends typings.materialDashUi.__MaterialUI.FloatingActionButton
+    extends Component[FloatingActionButtonProps, js.Object, js.Any]
   
   @js.native
-  class default () extends FloatingActionButton
+  class default ()
+    extends Component[FloatingActionButtonProps, js.Object, js.Any]
   
 }
 

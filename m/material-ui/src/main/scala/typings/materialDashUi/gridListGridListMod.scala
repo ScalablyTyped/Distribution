@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.gridListGridListMod.GridList
+import typings.materialDashUi.__MaterialUI.GridList.GridListProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object gridListGridListMod extends js.Object {
   @js.native
   class GridList ()
-    extends typings.materialDashUi.__MaterialUI.GridList.GridList
+    extends Component[GridListProps, js.Object, js.Any]
   
   @js.native
-  class default () extends GridList
+  class default ()
+    extends Component[GridListProps, js.Object, js.Any]
   
 }
 

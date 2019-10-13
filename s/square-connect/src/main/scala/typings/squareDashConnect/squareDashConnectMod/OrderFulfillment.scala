@@ -25,11 +25,11 @@ class OrderFulfillment () extends js.Object {
   /**
     * The state of the fulfillment. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values.
     */
-  var state: js.UndefOr[FulfillmentStateEnum] = js.native
+  var state: js.UndefOr[FulfillmentStateType] = js.native
   /**
     * The type of the fulfillment. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values.
     */
-  var `type`: js.UndefOr[FulfillmentTypeEnum] = js.native
+  var `type`: js.UndefOr[FulfillmentType] = js.native
   /**
     * Unique ID that identifies the fulfillment only within this order.
     */

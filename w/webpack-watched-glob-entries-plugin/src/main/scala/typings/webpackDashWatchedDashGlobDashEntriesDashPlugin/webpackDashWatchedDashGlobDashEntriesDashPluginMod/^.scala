@@ -3,13 +3,14 @@ package typings.webpackDashWatchedDashGlobDashEntriesDashPlugin.webpackDashWatch
 import typings.glob.globMod.IOptions
 import typings.std.Record
 import typings.webpack.webpackMod.EntryFunc
+import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("webpack-watched-glob-entries-plugin", JSImport.Namespace)
 @js.native
-class ^ () extends WebpackWatchedGlobEntries
+class ^ () extends Plugin
 
 @JSImport("webpack-watched-glob-entries-plugin", JSImport.Namespace)
 @js.native

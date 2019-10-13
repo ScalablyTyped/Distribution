@@ -1,0 +1,18 @@
+package typings.aframe.aframeMod._Global_.AFRAME
+
+import typings.aframe.Anon_DefaultComponents
+import typings.aframe.aframeMod.Component
+import typings.aframe.aframeMod.Entity
+import typings.aframe.aframeMod.ObjectMap
+import typings.aframe.aframeMod.System
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("AFRAME.primitives")
+@js.native
+object primitives extends js.Object {
+  var primitives: ObjectMap[Entity[ObjectMap[Component[_, System[_]]]]] = js.native
+  def getMeshMixin(): Anon_DefaultComponents = js.native
+}
+

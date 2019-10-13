@@ -1,7 +1,7 @@
 package typings.reactDashNotificationDashSystem.reactDashNotificationDashSystemMod
 
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashNotificationDashSystem.reactDashNotificationDashSystemStrings.bc
 import typings.reactDashNotificationDashSystem.reactDashNotificationDashSystemStrings.bl
 import typings.reactDashNotificationDashSystem.reactDashNotificationDashSystemStrings.br

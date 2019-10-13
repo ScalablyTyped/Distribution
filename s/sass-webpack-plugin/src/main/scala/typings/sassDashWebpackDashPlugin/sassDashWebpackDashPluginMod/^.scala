@@ -1,12 +1,13 @@
 package typings.sassDashWebpackDashPlugin.sassDashWebpackDashPluginMod
 
+import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("sass-webpack-plugin", JSImport.Namespace)
 @js.native
-class ^ protected () extends SassPlugin {
+class ^ protected () extends Plugin {
   def this(file: FileRule) = this()
   def this(file: FileRule, mode: Config) = this()
   def this(file: FileRule, mode: NODE_ENV) = this()

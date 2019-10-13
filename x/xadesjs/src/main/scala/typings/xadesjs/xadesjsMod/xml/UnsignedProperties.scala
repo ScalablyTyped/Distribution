@@ -1,12 +1,13 @@
 package typings.xadesjs.xadesjsMod.xml
 
+import typings.xmlDashCore.xmlDashCoreMod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.UnsignedProperties")
 @js.native
-class UnsignedProperties () extends XadesObject {
+class UnsignedProperties () extends XmlObject {
   var Id: String = js.native
   var UnsignedDataObjectProperties: typings.xadesjs.xadesjsMod.xml.UnsignedDataObjectProperties = js.native
   var UnsignedSignatureProperties: typings.xadesjs.xadesjsMod.xml.UnsignedSignatureProperties = js.native

@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.tabsTabsMod.Tabs
+import typings.materialDashUi.__MaterialUI.Tabs.TabsProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object tabsTabsMod extends js.Object {
   @js.native
   class Tabs ()
-    extends typings.materialDashUi.__MaterialUI.Tabs.Tabs
+    extends Component[TabsProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Tabs
+  class default ()
+    extends Component[TabsProps, js.Object, js.Any]
   
 }
 

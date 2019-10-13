@@ -1,6 +1,6 @@
 package typings.yandexDashMaps.yandexDashMapsMod.control
 
-import typings.yandexDashMaps.yandexDashMapsMod.IControl
+import typings.yandexDashMaps.yandexDashMapsMod.IChild
 import typings.yandexDashMaps.yandexDashMapsMod.IControlParent
 import typings.yandexDashMaps.yandexDashMapsMod.IEventManager
 import typings.yandexDashMaps.yandexDashMapsMod.IOptionManager
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 - typings.yandexDashMaps.yandexDashMapsMod.IEventEmitter because Already inherited
 - typings.yandexDashMaps.yandexDashMapsMod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "control.RouteButton")
 @js.native
-class RouteButton () extends IControl {
+class RouteButton () extends IChild[IControlParent] {
   def this(parameters: IRouteButtonParameters) = this()
   /* CompleteClass */
   override var events: IEventManager = js.native

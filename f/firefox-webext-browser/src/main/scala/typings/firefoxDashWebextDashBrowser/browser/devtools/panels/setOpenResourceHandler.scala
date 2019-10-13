@@ -13,6 +13,6 @@ object setOpenResourceHandler extends js.Object {
     * the handler, either call the method with no parameters or pass null as the parameter.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def apply(): js.Promise[js.UndefOr[Resource]] = js.native
+  def apply(): js.Promise[Resource] = js.native
 }
 

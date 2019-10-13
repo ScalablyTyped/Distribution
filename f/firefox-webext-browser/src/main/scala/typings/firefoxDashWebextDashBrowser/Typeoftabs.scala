@@ -100,7 +100,7 @@ trait Typeoftabs extends js.Object {
   def connect(tabId: Double): Port = js.native
   def connect(tabId: Double, connectInfo: Anon_FrameIdName): Port = js.native
   /** Creates a new tab. */
-  def create(createProperties: Anon_Active): js.Promise[js.UndefOr[Tab]] = js.native
+  def create(createProperties: Anon_Active): js.Promise[Tab] = js.native
   /**
     * Detects the primary language of the content in a tab.
     * @param [tabId] Defaults to the active tab of the current window.
@@ -117,20 +117,20 @@ trait Typeoftabs extends js.Object {
     * Duplicates a tab.
     * @param tabId The ID of the tab which is to be duplicated.
     */
-  def duplicate(tabId: Double): js.Promise[js.UndefOr[Tab]] = js.native
+  def duplicate(tabId: Double): js.Promise[Tab] = js.native
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts
     * doc.
     * @param details Details of the script to run.
     */
-  def executeScript(details: InjectDetails): js.Promise[js.UndefOr[js.Array[_]]] = js.native
+  def executeScript(details: InjectDetails): js.Promise[js.Array[_]] = js.native
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts
     * doc.
     * @param tabId The ID of the tab in which to run the script; defaults to the active tab of the current window.
     * @param details Details of the script to run.
     */
-  def executeScript(tabId: Double, details: InjectDetails): js.Promise[js.UndefOr[js.Array[_]]] = js.native
+  def executeScript(tabId: Double, details: InjectDetails): js.Promise[js.Array[_]] = js.native
   /* tabs functions */
   /** Retrieves details about the specified tab. */
   def get(tabId: Double): js.Promise[Tab] = js.native
@@ -175,7 +175,7 @@ trait Typeoftabs extends js.Object {
     */
   def hide(tabIds: Double): js.Promise[js.Array[Double]] = js.native
   /** Highlights the given tabs. */
-  def highlight(highlightInfo: Anon_Populate): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
+  def highlight(highlightInfo: Anon_Populate): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
   /**
     * Injects CSS into a page. For details, see the programmatic injection section of the content scripts doc.
     * @param details Details of the CSS text to insert.
@@ -187,13 +187,13 @@ trait Typeoftabs extends js.Object {
     * @param details Details of the CSS text to insert.
     */
   def insertCSS(tabId: Double, details: InjectDetails): js.Promise[Unit] = js.native
-  def move(tabIds: js.Array[Double], moveProperties: Anon_IndexWindowId): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
+  def move(tabIds: js.Array[Double], moveProperties: Anon_IndexWindowId): js.Promise[Tab | js.Array[Tab]] = js.native
   /**
     * Moves one or more tabs to a new position within its window, or to a new window. Note that tabs can only be moved
     * to and from normal (window.type === "normal") windows.
     * @param tabIds The tab or list of tabs to move.
     */
-  def move(tabIds: Double, moveProperties: Anon_IndexWindowId): js.Promise[js.UndefOr[Tab | js.Array[Tab]]] = js.native
+  def move(tabIds: Double, moveProperties: Anon_IndexWindowId): js.Promise[Tab | js.Array[Tab]] = js.native
   /**
     * Removes an array of tabs from their lines of succession and prepends or appends them in a chain to another tab.
     * @param tabIds An array of tab IDs to move in the line of succession. For each tab in the array, the tab's
@@ -243,7 +243,7 @@ trait Typeoftabs extends js.Object {
     * Saves page in active tab as a PDF file.
     * @param pageSettings The page settings used to save the PDF file.
     */
-  def saveAsPDF(pageSettings: PageSettings): js.Promise[js.UndefOr[String]] = js.native
+  def saveAsPDF(pageSettings: PageSettings): js.Promise[String] = js.native
   /**
     * Sends a single message to the content script(s) in the specified tab, with an optional callback to run when a
     * response is sent back. The `runtime.onMessage` event is fired in each content script running in the specified
@@ -302,10 +302,10 @@ trait Typeoftabs extends js.Object {
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     * @param tabId Defaults to the selected tab of the current window.
     */
-  def update(tabId: Double, updateProperties: Anon_ActiveHighlighted): js.Promise[js.UndefOr[Tab]] = js.native
+  def update(tabId: Double, updateProperties: Anon_ActiveHighlighted): js.Promise[Tab] = js.native
   /**
     * Modifies the properties of a tab. Properties that are not specified in `updateProperties` are not modified.
     */
-  def update(updateProperties: Anon_ActiveHighlighted): js.Promise[js.UndefOr[Tab]] = js.native
+  def update(updateProperties: Anon_ActiveHighlighted): js.Promise[Tab] = js.native
 }
 

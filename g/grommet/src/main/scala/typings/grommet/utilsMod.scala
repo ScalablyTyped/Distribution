@@ -8,9 +8,9 @@ import typings.grommet.utilsMod._GapType
 import typings.grommet.utilsMod._MarginType
 import typings.grommet.utilsMod._PolymorphicType
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Exclude
 import typings.std.HTMLElement
 import typings.std.Pick

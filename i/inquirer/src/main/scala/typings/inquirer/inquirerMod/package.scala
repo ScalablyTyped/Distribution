@@ -105,7 +105,7 @@ package object inquirerMod {
     * @template T
     * The type of the answers.
     */
-  type RawListQuestionOptions[T /* <: Answers */] = ListQuestionOptions[T]
+  type RawListQuestionOptions[T /* <: Answers */] = ListQuestionOptionsBase[T, ListChoiceMap[T]]
   /**
     * Provides the functionality to transform an answer.
     *

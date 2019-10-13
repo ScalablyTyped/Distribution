@@ -1,6 +1,7 @@
 package typings.reactDashCustomDashScrollbars.reactDashCustomDashScrollbarsMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.StatelessComponent
 import typings.react.reactMod.UIEvent
 import typings.react.reactMod.UIEventHandler
@@ -8,7 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ScrollbarProps extends HTMLProps[Scrollbars] {
+trait ScrollbarProps
+  extends AllHTMLAttributes[Scrollbars]
+     with ClassAttributes[Scrollbars] {
   var autoHeight: js.UndefOr[Boolean] = js.undefined
   var autoHeightMax: js.UndefOr[Double | String] = js.undefined
   var autoHeightMin: js.UndefOr[Double | String] = js.undefined
@@ -36,7 +39,8 @@ trait ScrollbarProps extends HTMLProps[Scrollbars] {
 object ScrollbarProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Scrollbars] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Scrollbars] = null,
+    ClassAttributes: ClassAttributes[Scrollbars] = null,
     autoHeight: js.UndefOr[Boolean] = js.undefined,
     autoHeightMax: Double | String = null,
     autoHeightMin: Double | String = null,
@@ -60,7 +64,8 @@ object ScrollbarProps {
     universal: js.UndefOr[Boolean] = js.undefined
   ): ScrollbarProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
     if (autoHeightMax != null) __obj.updateDynamic("autoHeightMax")(autoHeightMax.asInstanceOf[js.Any])
     if (autoHeightMin != null) __obj.updateDynamic("autoHeightMin")(autoHeightMin.asInstanceOf[js.Any])

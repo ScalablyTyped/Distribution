@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typesettable", "Tokenizer")
 @js.native
 class Tokenizer ()
-  extends typings.typesettable.buildSrcUtilsMod.Tokenizer
+  extends typings.typesettable.buildSrcUtilsTokenizerMod.Tokenizer
 

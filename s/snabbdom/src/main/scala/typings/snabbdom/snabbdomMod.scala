@@ -2,7 +2,7 @@ package typings.snabbdom
 
 import typings.snabbdom.hMod.VNodeChildren
 import typings.snabbdom.htmldomapiMod.DOMAPI
-import typings.snabbdom.modulesAttributesMod.Global.Element
+import typings.snabbdom.modulesAttributesMod._Global_.Element
 import typings.snabbdom.modulesModuleMod.Module
 import typings.snabbdom.thunkMod.ThunkFn
 import typings.snabbdom.vnodeMod.VNode

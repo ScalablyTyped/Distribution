@@ -1,6 +1,6 @@
 package typings.knuddelsDashUserappsDashApi
 
-import typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod.Global.ExternalServerResponse
+import typings.knuddelsDashUserappsDashApi.knuddelsDashUserappsDashApiMod._Global_.ExternalServerResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

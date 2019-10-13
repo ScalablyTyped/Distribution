@@ -3951,8 +3951,8 @@ trait LoDashStatic extends js.Object {
     * @param value The value to check.
     * @returns Returns true if value is correctly classified, else false.
     */
-  def isMap(): /* is lodash.lodash.Global.Map<any, any> */ Boolean = js.native
-  def isMap(value: js.Any): /* is lodash.lodash.Global.Map<any, any> */ Boolean = js.native
+  def isMap(): /* is lodash.lodash._Global_.Map<any, any> */ Boolean = js.native
+  def isMap(value: js.Any): /* is lodash.lodash._Global_.Map<any, any> */ Boolean = js.native
   /**
     * Performs a deep comparison between `object` and `source` to determine if
     * `object` contains equivalent property values.
@@ -4137,8 +4137,8 @@ trait LoDashStatic extends js.Object {
     * @param value The value to check.
     * @returns Returns true if value is correctly classified, else false.
     */
-  def isSet(): /* is lodash.lodash.Global.Set<any> */ Boolean = js.native
-  def isSet(value: js.Any): /* is lodash.lodash.Global.Set<any> */ Boolean = js.native
+  def isSet(): /* is lodash.lodash._Global_.Set<any> */ Boolean = js.native
+  def isSet(value: js.Any): /* is lodash.lodash._Global_.Set<any> */ Boolean = js.native
   /**
     * Checks if value is classified as a String primitive or object.
     *
@@ -4182,16 +4182,16 @@ trait LoDashStatic extends js.Object {
     * @param value The value to check.
     * @returns Returns true if value is correctly classified, else false.
     */
-  def isWeakMap(): /* is lodash.lodash.Global.WeakMap<object, any> */ Boolean = js.native
-  def isWeakMap(value: js.Any): /* is lodash.lodash.Global.WeakMap<object, any> */ Boolean = js.native
+  def isWeakMap(): /* is lodash.lodash._Global_.WeakMap<object, any> */ Boolean = js.native
+  def isWeakMap(value: js.Any): /* is lodash.lodash._Global_.WeakMap<object, any> */ Boolean = js.native
   /**
     * Checks if value is classified as a WeakSet object.
     *
     * @param value The value to check.
     * @returns Returns true if value is correctly classified, else false.
     */
-  def isWeakSet(): /* is lodash.lodash.Global.WeakSet<object> */ Boolean = js.native
-  def isWeakSet(value: js.Any): /* is lodash.lodash.Global.WeakSet<object> */ Boolean = js.native
+  def isWeakSet(): /* is lodash.lodash._Global_.WeakSet<object> */ Boolean = js.native
+  def isWeakSet(value: js.Any): /* is lodash.lodash._Global_.WeakSet<object> */ Boolean = js.native
   /**
     * @see _.iteratee
     */

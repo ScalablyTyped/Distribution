@@ -1,6 +1,6 @@
 package typings.fullcalendar.srcTypesInputDashTypesMod
 
-import typings.fullcalendar.srcTypesJqueryDashHooksMod.Global.JQuery
+import typings.fullcalendar.srcTypesJqueryDashHooksMod._Global_.JQuery
 import typings.moment.momentMod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`

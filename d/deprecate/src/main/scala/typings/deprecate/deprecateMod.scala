@@ -1,6 +1,6 @@
 package typings.deprecate
 
-import typings.node.processMod.Global.NodeJS.WriteStream
+import typings.node.processMod._Global_.NodeJS.WriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

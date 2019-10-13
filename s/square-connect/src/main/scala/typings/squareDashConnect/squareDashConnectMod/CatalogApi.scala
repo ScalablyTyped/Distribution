@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "CatalogApi")
 @js.native
+/**
+  * Constructs a new CatalogApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class CatalogApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Returns a list of [CatalogObject](#type-catalogobject)s that includes all objects of a set of desired types
     * (for example, all [CatalogItem](#type-catalogitem) and [CatalogTax](#type-catalogtax) objects) in the catalog.

@@ -1,6 +1,5 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.checkboxMod.Checkbox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,8 @@ object checkboxMod extends js.Object {
     extends typings.materialDashUi.__MaterialUI.Switches.Checkbox
   
   @js.native
-  class default () extends Checkbox
+  class default ()
+    extends typings.materialDashUi.__MaterialUI.Switches.Checkbox
   
 }
 

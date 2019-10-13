@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "format.filter.Or")
 @js.native
-class Or protected () extends LogicalNary {
+class Or protected () extends Filter {
   /**
     * @classdesc
     * Represents a logical <Or> operator between two or more filter conditions.

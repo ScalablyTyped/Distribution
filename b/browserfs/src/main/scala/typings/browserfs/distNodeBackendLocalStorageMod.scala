@@ -30,7 +30,7 @@ object distNodeBackendLocalStorageMod extends js.Object {
   /**
     * Creates a new LocalStorage file system using the contents of `localStorage`.
     */
-  class default () extends LocalStorageFileSystem
+  class default () extends SyncKeyValueFileSystem
   
   /* static members */
   @js.native

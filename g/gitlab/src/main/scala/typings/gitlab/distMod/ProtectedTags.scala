@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "ProtectedTags")
 @js.native
 class ProtectedTags ()
-  extends typings.gitlab.distServicesMod.ProtectedTags
+  extends typings.gitlab.distServicesProtectedTagsMod.ProtectedTags
 

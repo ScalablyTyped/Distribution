@@ -9,9 +9,9 @@ import typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerDotTypesMo
 import typings.officeDashUiDashFabricDashReact.libComponentsOverlayOverlayDotTypesMod.IOverlayProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPanelPanelDotBaseMod.PanelBase
 import typings.react.Event
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.SyntheticEvent
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

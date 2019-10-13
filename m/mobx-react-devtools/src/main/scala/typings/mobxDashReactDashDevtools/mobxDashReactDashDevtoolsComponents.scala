@@ -1,6 +1,5 @@
 package typings.mobxDashReactDashDevtools
 
-import typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.IDevToolProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,8 +11,8 @@ object mobxDashReactDashDevtoolsComponents extends mobxDashReactDashDevtoolsProp
   @scala.inline
   def LogControl: ComponentType[js.Object] = js.constructorOf[typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.LogControl].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
-  def MobxDashReactDashDevtools: ComponentType[IDevToolProps] = js.constructorOf[typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.IDevToolProps]]
+  def MobxDashReactDashDevtools: ComponentType[MobxDashReactDashDevtoolsProps] = js.constructorOf[typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MobxDashReactDashDevtoolsProps]]
   @scala.inline
-  def UpdatesControl: ComponentType[Anon_HighlightTimeout] = js.constructorOf[typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.UpdatesControl].asInstanceOf[typings.react.reactMod.ComponentType[typings.mobxDashReactDashDevtools.Anon_HighlightTimeout]]
+  def UpdatesControl: ComponentType[UpdatesControlProps] = js.constructorOf[typings.mobxDashReactDashDevtools.mobxDashReactDashDevtoolsMod.UpdatesControl].asInstanceOf[typings.react.reactMod.ComponentType[UpdatesControlProps]]
 }
 

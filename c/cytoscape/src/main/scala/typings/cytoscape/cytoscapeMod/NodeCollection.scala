@@ -12,7 +12,19 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait NodeCollection
-  extends Collection[NodeSingular, NodeSingular]
+  extends CollectionIteration[NodeSingular, NodeSingular]
+     with CollectionGraphManipulation
+     with CollectionEvents
+     with CollectionData
+     with CollectionPosition
+     with CollectionTraversing
+     with CollectionLayout
+     with CollectionSelection
+     with CollectionStyle
+     with CollectionAnimation
+     with CollectionComparision
+     with CollectionBuildingFiltering[NodeSingular, NodeSingular]
+     with CollectionAlgorithms
      with NodeCollectionMetadata
      with NodeCollectionPosition
      with NodeCollectionTraversing

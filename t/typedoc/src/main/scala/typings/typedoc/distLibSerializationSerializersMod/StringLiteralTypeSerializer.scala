@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/serialization/serializers", "StringLiteralTypeSerializer")
 @js.native
 class StringLiteralTypeSerializer ()
-  extends typings.typedoc.distLibSerializationSerializersTypesMod.StringLiteralTypeSerializer
+  extends typings.typedoc.distLibSerializationSerializersTypesStringDashLiteralMod.StringLiteralTypeSerializer
 

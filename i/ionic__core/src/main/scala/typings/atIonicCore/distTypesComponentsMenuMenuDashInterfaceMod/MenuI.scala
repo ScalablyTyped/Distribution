@@ -1,6 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonMenuElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuElement
 import typings.atIonicCore.distTypesInterfaceMod.Side
 import typings.std.HTMLElement
 import scala.scalajs.js

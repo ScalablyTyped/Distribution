@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core", "MemoryLocationConfig")
 @js.native
 class MemoryLocationConfig ()
-  extends typings.atUirouterCore.libVanillaMod.MemoryLocationConfig
+  extends typings.atUirouterCore.libVanillaMemoryLocationConfigMod.MemoryLocationConfig
 

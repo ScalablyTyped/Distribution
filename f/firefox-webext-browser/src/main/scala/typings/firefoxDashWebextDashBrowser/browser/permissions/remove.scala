@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object remove extends js.Object {
   /** Relinquish the given permissions. */
-  def apply(permissions: Permissions): js.Promise[Unit] = js.native
+  def apply(permissions: Permissions): js.Promise[Boolean] = js.native
 }
 

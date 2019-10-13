@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsNavigationArrowDashUpwardMod.NavigationArrowUpward
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsNavigationArrowDashUpwardMod extends js.Object {
   @js.native
-  class NavigationArrowUpward () extends SvgIcon
+  class NavigationArrowUpward ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends NavigationArrowUpward
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

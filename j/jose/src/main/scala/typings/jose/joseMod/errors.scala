@@ -1,6 +1,5 @@
 package typings.jose.joseMod
 
-import typings.jose.joseMod.errors.JOSEError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,10 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object errors extends js.Object {
   @js.native
-  class JOSEAlgNotWhitelisted () extends JOSEError
+  class JOSEAlgNotWhitelisted () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JOSECritNotUnderstood () extends JOSEError
+  class JOSECritNotUnderstood () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
   class JOSEError () extends Error {
@@ -24,40 +33,100 @@ object errors extends js.Object {
   }
   
   @js.native
-  class JOSEMultiError () extends JOSEError
+  class JOSEMultiError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JOSENotSupported () extends JOSEError
+  class JOSENotSupported () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWEDecryptionFailed () extends JOSEError
+  class JWEDecryptionFailed () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWEInvalid () extends JOSEError
+  class JWEInvalid () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWKImportFailed () extends JOSEError
+  class JWKImportFailed () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWKInvalid () extends JOSEError
+  class JWKInvalid () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWKKeySupport () extends JOSEError
+  class JWKKeySupport () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWKSNoMatchingKey () extends JOSEError
+  class JWKSNoMatchingKey () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWSInvalid () extends JOSEError
+  class JWSInvalid () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWSVerificationFailed () extends JOSEError
+  class JWSVerificationFailed () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWTClaimInvalid () extends JOSEError
+  class JWTClaimInvalid () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class JWTMalformed () extends JOSEError
+  class JWTMalformed () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
 }
 

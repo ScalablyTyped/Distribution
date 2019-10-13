@@ -1,6 +1,7 @@
 package typings.reactDashSketchapp.libComponentsSvgSvgMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.react.reactMod.Component
 import typings.reactDashSketchapp.libComponentsSvgCircleMod.CircleProps
 import typings.reactDashSketchapp.libComponentsSvgClipPathMod.ClipPathProps
 import typings.reactDashSketchapp.libComponentsSvgDefsMod.DefsProps
@@ -26,7 +27,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-sketchapp/lib/components/Svg/Svg", JSImport.Default)
 @js.native
-class default () extends Svg
+class default ()
+  extends Component[SvgProps, js.Object, js.Any]
 
 /* static members */
 @JSImport("react-sketchapp/lib/components/Svg/Svg", JSImport.Default)

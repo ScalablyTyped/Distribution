@@ -14,6 +14,7 @@ import typings.styledDashComponents.styledDashComponentsMod.Interpolation
 import typings.styledDashComponents.styledDashComponentsMod.InterpolationFunction
 import typings.styledDashComponents.styledDashComponentsMod.Keyframes
 import typings.styledDashComponents.styledDashComponentsMod.SimpleInterpolation
+import typings.styledDashComponents.styledDashComponentsMod.StyleSheetManagerProps
 import typings.styledDashComponents.styledDashComponentsMod.StyledInterface
 import typings.styledDashComponents.styledDashComponentsMod.ThemeProviderComponent
 import typings.styledDashComponents.styledDashComponentsMod.ThemeProviderProps
@@ -33,7 +34,7 @@ object macroMod extends js.Object {
   
   @js.native
   class StyleSheetManager ()
-    extends typings.styledDashComponents.styledDashComponentsMod.StyleSheetManager
+    extends Component[StyleSheetManagerProps, js.Object, js.Any]
   
   @js.native
   class ThemeProvider protected ()

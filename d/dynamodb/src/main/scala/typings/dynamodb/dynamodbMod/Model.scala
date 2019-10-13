@@ -57,7 +57,7 @@ object Model extends js.Object {
 @JSImport("dynamodb", "model")
 @js.native
 object model extends js.Object {
-  def apply(name: String): (Instantiable1[/* attrs */ js.Any, typings.dynamodb.modelMod.Model]) with TypeofModel = js.native
-  def apply(name: String, model: typings.dynamodb.modelMod.Model): (Instantiable1[/* attrs */ js.Any, typings.dynamodb.modelMod.Model]) with TypeofModel = js.native
+  def apply(name: String): TypeofModel with (Instantiable1[/* attrs */ js.Any, typings.dynamodb.modelMod.Model]) = js.native
+  def apply(name: String, model: typings.dynamodb.modelMod.Model): TypeofModel with (Instantiable1[/* attrs */ js.Any, typings.dynamodb.modelMod.Model]) = js.native
 }
 

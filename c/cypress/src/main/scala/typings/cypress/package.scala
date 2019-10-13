@@ -13,8 +13,7 @@ package object cypress {
   import typings.cypress.JQuery.EventStatic
   import typings.cypress.JQuery.NameValuePair
   import typings.cypress.JQuery.PlainObject
-  import typings.cypress.JQuery.Promise
-  import typings.cypress.JQuery.Thenable
+  import typings.cypress.JQuery.PromiseBase
   import typings.cypress.JQuery.TypeOrArray
   import typings.cypress.JQuery.jqXHR
   import typings.cypress.Mocha.Done
@@ -38,12 +37,12 @@ package object cypress {
   type JQueryEasingFunction = js.Function1[/* percent */ Double, Double]
   // tslint:disable-next-line:no-empty-interface
   type JQueryEventConstructor = EventStatic
-  type JQueryGenericPromise[T] = Thenable[T]
+  type JQueryGenericPromise[T] = js.Thenable[T]
   /**
     * @deprecated Use \`{@link JQueryStatic.param JQueryStatic&#91;'param'&#93;}\`.
     */
   type JQueryParam = js.Function2[/* obj */ js.Any, /* traditional */ js.UndefOr[Boolean], String]
-  type JQueryPromise[T] = Promise[T, js.Any, js.Any]
+  type JQueryPromise[T] = PromiseBase[T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any]
   // Legacy types that are not represented in the current type definitions are marked deprecated.
   /**
     * @deprecated Use \`{@link JQuery.Deferred.Callback }\` or \`{@link JQuery.Deferred.CallbackBase }\`.

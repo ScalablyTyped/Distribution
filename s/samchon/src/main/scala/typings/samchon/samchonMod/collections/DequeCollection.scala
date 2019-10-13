@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon", "collections.DequeCollection")
 @js.native
 class DequeCollection[T] ()
-  extends typings.samchon.collectionsMod.DequeCollection[T]
+  extends typings.ecol.libLinearDequeCollectionMod.DequeCollection[T]
 
 @JSImport("samchon", "collections.DequeCollection")
 @js.native

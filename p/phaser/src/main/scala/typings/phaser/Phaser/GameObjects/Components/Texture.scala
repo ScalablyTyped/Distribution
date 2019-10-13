@@ -43,11 +43,14 @@ trait Texture extends js.Object {
     * Sets the texture and frame this Game Object will use to render with.
     * 
     * Textures are referenced by their string-based keys, as stored in the Texture Manager.
-    * @param key The key of the texture to be used, as stored in the Texture Manager.
+    * @param key The key of the texture to be used, as stored in the Texture Manager, or a Texture instance.
     * @param frame The name or index of the frame within the Texture.
     */
   def setTexture(key: String): this.type = js.native
   def setTexture(key: String, frame: String): this.type = js.native
   def setTexture(key: String, frame: integer): this.type = js.native
+  def setTexture(key: typings.phaser.Phaser.Textures.Texture): this.type = js.native
+  def setTexture(key: typings.phaser.Phaser.Textures.Texture, frame: String): this.type = js.native
+  def setTexture(key: typings.phaser.Phaser.Textures.Texture, frame: integer): this.type = js.native
 }
 

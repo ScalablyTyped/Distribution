@@ -1,6 +1,9 @@
 package typings.reactDashFlexr
 
+import typings.react.reactMod.Component
+import typings.reactDashFlexr.__ReactFlexr.CellProps
 import typings.reactDashFlexr.__ReactFlexr.ErgonomicType
+import typings.reactDashFlexr.__ReactFlexr.GridProps
 import typings.reactDashFlexr.__ReactFlexr.OptimizedResize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,11 +14,11 @@ import scala.scalajs.js.annotation._
 object reactDashFlexrMod extends js.Object {
   @js.native
   class Cell ()
-    extends typings.reactDashFlexr.__ReactFlexr.Cell
+    extends Component[CellProps, js.Object, js.Any]
   
   @js.native
   class Grid ()
-    extends typings.reactDashFlexr.__ReactFlexr.Grid
+    extends Component[GridProps, js.Object, js.Any]
   
   val desk: String = js.native
   val lap: String = js.native

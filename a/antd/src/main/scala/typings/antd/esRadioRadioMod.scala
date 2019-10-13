@@ -6,7 +6,7 @@ import typings.antd.esRadioInterfaceMod.RadioGroupContext
 import typings.antd.esRadioInterfaceMod.RadioProps
 import typings.antd.esRadioRadioMod.Radio
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,12 +1,14 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HeaderRowProps
-  extends HTMLProps[js.Any] {
+  extends AllHTMLAttributes[js.Any]
+     with ClassAttributes[js.Any] {
    // string | JSX.Element
   var hideSpacer: js.UndefOr[Boolean] = js.undefined
   @JSName("title")
@@ -16,12 +18,14 @@ trait HeaderRowProps
 object HeaderRowProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[js.Any] = null,
+    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
+    ClassAttributes: ClassAttributes[js.Any] = null,
     hideSpacer: js.UndefOr[Boolean] = js.undefined,
     title: js.Any = null
   ): HeaderRowProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(hideSpacer)) __obj.updateDynamic("hideSpacer")(hideSpacer)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[HeaderRowProps]

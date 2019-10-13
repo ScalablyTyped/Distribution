@@ -1,15 +1,23 @@
 package typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod
 
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.ClipProps
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Color
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.ColumnMajorTransformMatrix
-import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.CommonPathProps
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.CommonMaskProps
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.DefinitionProps
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.FillProps
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.FillRule
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Linecap
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Linejoin
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.NumberArray
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.NumberProp
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.ResponderProps
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.StrokeProps
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.TouchableProps
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.TransformObject
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.TransformProps
+import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.VectorEffectProps
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-none`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`box-only`
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`non-scaling-stroke`
@@ -23,7 +31,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnimatedPathProps extends CommonPathProps {
+trait AnimatedPathProps
+  extends TransformProps
+     with FillProps
+     with StrokeProps
+     with ClipProps
+     with VectorEffectProps
+     with ResponderProps
+     with TouchableProps
+     with DefinitionProps
+     with CommonMaskProps {
   var animated: js.UndefOr[Boolean] = js.undefined
   var animationDuration: js.UndefOr[Double] = js.undefined
   var renderPlaceholder: js.UndefOr[js.Function0[_]] = js.undefined

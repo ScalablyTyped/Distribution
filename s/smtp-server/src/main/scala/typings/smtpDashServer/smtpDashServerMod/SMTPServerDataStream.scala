@@ -1,12 +1,12 @@
 package typings.smtpDashServer.smtpDashServerMod
 
-import typings.node.streamMod.PassThrough
+import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SMTPServerDataStream extends PassThrough {
+trait SMTPServerDataStream extends Transform {
   /**
     * number of bytes read from DATA stream
     */

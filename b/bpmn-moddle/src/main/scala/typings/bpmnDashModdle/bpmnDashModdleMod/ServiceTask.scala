@@ -5,9 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ServiceTask extends Task {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ trait ServiceTask extends Activity {
   var implementation: String
+  var incomingConversationLinks: js.Array[ConversationLink]
   var operationRef: Operation
+  var outgoingConversationLinks: js.Array[ConversationLink]
 }
 
 object ServiceTask {

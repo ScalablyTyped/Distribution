@@ -1,11 +1,12 @@
 package typings.muicss.reactMod
 
-import typings.muicss.libReactDropdownDashItemMod.default
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("muicss/react", "DropdownItem")
 @js.native
-class DropdownItem () extends default
+class DropdownItem ()
+  extends Component[DropdownItemProps, js.Object, js.Any]
 

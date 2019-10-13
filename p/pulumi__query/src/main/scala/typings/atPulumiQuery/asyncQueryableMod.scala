@@ -378,9 +378,7 @@ object asyncQueryableMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.atPulumiQuery.interfacesMod.AsyncIterator because Already inherited
   - typings.atPulumiQuery.interfacesMod.AsyncIterableIterator because Already inherited
-  - typings.atPulumiQuery.interfacesMod.AsyncQueryable because Already inherited
-  - typings.atPulumiQuery.interfacesMod.GroupedAsyncIterableIterator because var conflicts: `return`, `throw`. Inlined key
-  - typings.atPulumiQuery.interfacesMod.AsyncQueryableGrouping because var conflicts: `return`, `throw`. Inlined  */ @js.native
+  - typings.atPulumiQuery.interfacesMod.GroupedAsyncIterableIterator because var conflicts: `return`, `throw`. Inlined key */ @js.native
   class GroupingImpl[TKey, TSource] protected () extends AsyncQueryableImpl[TSource] {
     def this(key: TKey, group: AsyncIterableIterator[TSource]) = this()
     val key: TKey = js.native

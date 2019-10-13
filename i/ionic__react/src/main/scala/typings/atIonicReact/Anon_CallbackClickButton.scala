@@ -20,7 +20,7 @@ trait Anon_CallbackClickButton extends js.Object {
   def clickButton(e: typings.react.reactMod.MouseEvent[Element, MouseEvent]): Unit = js.native
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
-  def render(): typings.react.reactMod.Global.JSX.Element = js.native
+  def render(): typings.react.reactMod._Global_.JSX.Element = js.native
   def setState[K /* <: scala.Nothing */](): Unit = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[

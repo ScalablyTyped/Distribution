@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterIsNullMod.IsNull
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterIsNullMod extends js.Object {
   @js.native
-  class default protected () extends IsNull {
+  class default protected ()
+    extends typings.ol.formatFilterComparisonMod.default {
     def this(propertyName: String) = this()
   }
   

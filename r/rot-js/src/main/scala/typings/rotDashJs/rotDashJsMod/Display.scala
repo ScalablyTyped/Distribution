@@ -1,6 +1,6 @@
 package typings.rotDashJs.rotDashJsMod
 
-import typings.rotDashJs.rotDashJsMod.Global.Array
+import typings.rotDashJs.rotDashJsMod._Global_.Array
 import typings.std.Node
 import typings.std.UIEvent
 import scala.scalajs.js

@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "TransactionsApi")
 @js.native
+/**
+  * Constructs a new TransactionsApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class TransactionsApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Captures a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.
     * See the [Delay Capture of Funds](/transactions-api/cookbook/delay-capture) recipe for more information.

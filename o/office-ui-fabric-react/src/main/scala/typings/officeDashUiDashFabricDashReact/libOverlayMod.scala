@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object libOverlayMod extends js.Object {
   @js.native
   class OverlayBase ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsOverlayMod.OverlayBase
+    extends typings.officeDashUiDashFabricDashReact.libComponentsOverlayOverlayDotBaseMod.OverlayBase
   
   val Overlay: StatelessComponent[IOverlayProps] = js.native
 }

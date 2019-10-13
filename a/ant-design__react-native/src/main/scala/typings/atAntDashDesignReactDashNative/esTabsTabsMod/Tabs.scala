@@ -10,11 +10,11 @@ import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStri
 import typings.atAntDashDesignReactDashNative.esTabsPropsTypeMod.PropsType
 import typings.atAntDashDesignReactDashNative.esTabsPropsTypeMod.TabData
 import typings.atReactDashNativeDashCommunityViewpager.atReactDashNativeDashCommunityViewpagerMod.default
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSX.Element
-import typings.react.reactMod.PureComponent
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.NativeScrollEvent
 import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/react-native/es/tabs/Tabs", "Tabs")
 @js.native
 class Tabs protected ()
-  extends PureComponent[TabsProps, StateType, js.Any] {
+  extends Component[TabsProps, StateType, js.Any] {
   def this(props: PropsType) = this()
   var instanceId: Double = js.native
   /** compatible for different between react and preact in `setState`. */

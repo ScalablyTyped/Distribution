@@ -1,7 +1,7 @@
 package typings.expoDashKeepDashAwake
 
 import typings.expoDashKeepDashAwake.expoDashKeepDashAwakeMod.KeepAwake
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object expoDashKeepDashAwakeMod extends js.Object {
   @js.native
   trait KeepAwake
-    extends PureComponent[js.Object, js.Object, js.Any] {
+    extends Component[js.Object, js.Object, js.Any] {
     @JSName("componentDidMount")
     def componentDidMount_MKeepAwake(): Unit = js.native
     @JSName("componentWillUnmount")

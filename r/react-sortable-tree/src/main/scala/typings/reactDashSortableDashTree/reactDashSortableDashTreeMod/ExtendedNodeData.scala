@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ExtendedNodeData extends NodeData {
+trait ExtendedNodeData
+  extends TreeNode
+     with TreePath
+     with TreeIndex {
   var isSearchFocus: Boolean
   var isSearchMatch: Boolean
   var lowerSiblingCounts: js.Array[Double]

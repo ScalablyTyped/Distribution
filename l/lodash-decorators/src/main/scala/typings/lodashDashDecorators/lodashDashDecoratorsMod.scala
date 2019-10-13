@@ -34,7 +34,7 @@ object lodashDashDecoratorsMod extends js.Object {
   
   @js.native
   class InternalDecoratorFactory ()
-    extends typings.lodashDashDecorators.factoryMod.InternalDecoratorFactory
+    extends typings.lodashDashDecorators.factoryDecoratorFactoryMod.InternalDecoratorFactory
   
   val Attempt: BiTypedMethodDecorator = js.native
   val Bind: BiTypedMethodDecorator1[js.Any] = js.native

@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsMasonryMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_0150
 import typings.reactDashVirtualized.Anon_RowIndex
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-virtualized/dist/es/Masonry", "Masonry")
 @js.native
 class Masonry ()
-  extends PureComponent[MasonryProps, MasonryState, js.Any] {
+  extends Component[MasonryProps, MasonryState, js.Any] {
   def clearCellPositions(): Unit = js.native
   // HACK This method signature was intended for Grid
   def invalidateCellSizeAfterRender(params: Anon_RowIndex): Unit = js.native

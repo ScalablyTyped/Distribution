@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/public_api", "SummaryResolver")
 @js.native
 abstract class SummaryResolver[T] ()
-  extends typings.atAngularCompiler.srcCompilerMod.SummaryResolver[T]
+  extends typings.atAngularCompiler.srcSummaryUnderscoreResolverMod.SummaryResolver[T]
 

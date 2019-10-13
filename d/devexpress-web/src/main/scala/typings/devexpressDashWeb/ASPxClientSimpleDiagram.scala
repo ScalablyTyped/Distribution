@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientSimpleDiagram")
 @js.native
-class ASPxClientSimpleDiagram () extends ASPxClientWebChartEmptyElement
+class ASPxClientSimpleDiagram () extends ASPxClientWebChartElement
 

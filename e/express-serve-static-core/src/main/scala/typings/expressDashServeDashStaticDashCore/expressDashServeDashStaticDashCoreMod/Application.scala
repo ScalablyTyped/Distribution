@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 - typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.IRouter because Inheritance from two classes. Inlined param, param, all, all, all, all_Original, get, get, get, get_Original, post, post, post, post_Original, put, put, put, put_Original, delete, delete, delete, delete_Original, patch, patch, patch, patch_Original, options, options, options, options_Original, head, head, head, head_Original, checkout, checkout, checkout, checkout_Original, connect, connect, connect, connect_Original, copy, copy, copy, copy_Original, lock, lock, lock, lock_Original, merge, merge, merge, merge_Original, mkactivity, mkactivity, mkactivity, mkactivity_Original, mkcol, mkcol, mkcol, mkcol_Original, move, move, move, move_Original, `m-search`, `m-search`, `m-search`, `m-search_Original`, notify, notify, notify, notify_Original, propfind, propfind, propfind, propfind_Original, proppatch, proppatch, proppatch, proppatch_Original, purge, purge, purge, purge_Original, report, report, report, report_Original, search, search, search, search_Original, subscribe, subscribe, subscribe, subscribe_Original, trace, trace, trace, trace_Original, unlock, unlock, unlock, unlock_Original, unsubscribe, unsubscribe, unsubscribe, unsubscribe_Original, use, use, use, use, use, use_Original, route, stack */ @js.native
 trait Application
   extends EventEmitter
-     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.Express.Application {
+     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod._Global_.Express.Application {
   /**
     * Used to get all registered routes in Express Application
     */
@@ -113,10 +113,6 @@ trait Application
   def apply(req: Request[ParamsDictionary], res: ServerResponse): js.Any = js.native
   def apply(req: IncomingMessage, res: Response): js.Any = js.native
   def apply(req: IncomingMessage, res: ServerResponse): js.Any = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
     * Special-cased "all" method, applying the given route `path`,
     * middleware, and callback to _every_ HTTP method.
@@ -159,10 +155,6 @@ trait Application
     *    // => false
     */
   def disabled(setting: String): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   /** Enable `setting`. */
   def enable(setting: String): Application = js.native
   /**
@@ -213,14 +205,10 @@ trait Application
       Unit
     ]
   ): Application = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
   def get(name: String): js.Any = js.native
   def get(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def get[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
   def head(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def head[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
@@ -266,14 +254,6 @@ trait Application
     callback: js.Function1[/* repeated */ js.Any, Unit]
   ): Server = js.native
   def listen(port: Double, hostname: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Server = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   def lock(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def lock[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
@@ -295,18 +275,6 @@ trait Application
   def notify(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def notify[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def options(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def options[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
@@ -361,15 +329,6 @@ trait Application
   def post(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def post[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def propfind(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def propfind[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
@@ -382,20 +341,6 @@ trait Application
   def put(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def put[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
     * Render the given view `name` name with `options`
     * and a callback accepting an error and the
@@ -431,8 +376,6 @@ trait Application
     * Mounted servers inherit their parent server's settings.
     */
   def set(setting: String, `val`: js.Any): Application = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
   def subscribe(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def subscribe[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native

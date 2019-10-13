@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "TmplAstRecursiveVisitor")
 @js.native
 class TmplAstRecursiveVisitor ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.TmplAstRecursiveVisitor
+  extends typings.atAngularCompiler.srcRender3R3UnderscoreAstMod.RecursiveVisitor
 

@@ -1,5 +1,6 @@
 package typings.amcharts
 
+import typings.amcharts.amRectangularChartMod.AmRectangularChart
 import typings.amcharts.amSerialChartMod.AmSerialChart
 import typings.std.Date
 import scala.scalajs.js
@@ -10,8 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object amSerialChartMod extends js.Object {
   @js.native
-  trait AmSerialChart
-    extends typings.amcharts.amRectangularChartMod.default {
+  trait AmSerialChart extends AmRectangularChart {
     /**
       * Date format of the graph balloon (if chart parses dates and you don't use chartCursor).
       * @default 'MMM DD, YYYY'

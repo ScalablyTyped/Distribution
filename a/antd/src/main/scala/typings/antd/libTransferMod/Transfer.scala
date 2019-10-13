@@ -7,9 +7,9 @@ import typings.antd.antdStrings.targetSelectedKeys
 import typings.antd.libCollapseCollapseMod.ExpandIconPosition
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement

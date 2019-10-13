@@ -1,6 +1,5 @@
 package typings.muicss
 
-import typings.muicss.libReactRowMod.Row
 import typings.muicss.reactMod.RowProps
 import typings.react.reactMod.Component
 import scala.scalajs.js
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libReactRowMod extends js.Object {
   @js.native
-  class default () extends Row
+  class default ()
+    extends Component[RowProps, js.Object, js.Any]
   
   type Row = Component[RowProps, js.Object, js.Any]
 }

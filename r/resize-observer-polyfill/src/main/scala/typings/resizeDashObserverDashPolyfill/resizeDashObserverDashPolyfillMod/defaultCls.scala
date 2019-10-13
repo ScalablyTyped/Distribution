@@ -1,6 +1,6 @@
 package typings.resizeDashObserverDashPolyfill.resizeDashObserverDashPolyfillMod
 
-import typings.resizeDashObserverDashPolyfill.resizeDashObserverDashPolyfillMod.Global.ResizeObserverCallback
+import typings.resizeDashObserverDashPolyfill.resizeDashObserverDashPolyfillMod._Global_.ResizeObserverCallback
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

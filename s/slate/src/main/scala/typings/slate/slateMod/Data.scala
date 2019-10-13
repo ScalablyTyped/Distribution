@@ -6,13 +6,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : Immutable.Record(object) * / any */ @JSImport("slate", "Data")
-@js.native
-class Data ()
-  extends /* key */ StringDictionary[js.Any]
-
-/* static members */
 @JSImport("slate", "Data")
 @js.native
 object Data extends js.Object {

@@ -1,6 +1,5 @@
 package typings.emberDashModalDashDialog
 
-import typings.ember.emberMod.default.Component
 import typings.emberDashModalDashDialog.componentsModalDashDialogMod.ModalDialog
 import typings.emberDashModalDashDialog.emberDashModalDashDialogStrings.parent
 import typings.emberDashModalDashDialog.emberDashModalDashDialogStrings.sibling
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object componentsModalDashDialogMod extends js.Object {
   @js.native
-  trait ModalDialog extends Component {
+  trait ModalDialog
+    extends typings.atEmberComponent.atEmberComponentMod.default {
     /**
       * A boolean, when true makes modal animatable using liquid-fire
       * (requires liquid-wormhole to be installed, and for tethering situations

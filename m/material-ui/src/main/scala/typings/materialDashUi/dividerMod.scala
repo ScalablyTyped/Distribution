@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.dividerMod.Divider
+import typings.materialDashUi.__MaterialUI.DividerProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object dividerMod extends js.Object {
   @js.native
   class Divider ()
-    extends typings.materialDashUi.__MaterialUI.Divider
+    extends Component[DividerProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Divider
+  class default ()
+    extends Component[DividerProps, js.Object, js.Any]
   
 }
 

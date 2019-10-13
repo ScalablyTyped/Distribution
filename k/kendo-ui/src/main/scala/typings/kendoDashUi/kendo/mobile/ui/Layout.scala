@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.Layout")
 @js.native
-class Layout protected () extends Widget {
+class Layout protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: LayoutOptions) = this()
   @JSName("options")

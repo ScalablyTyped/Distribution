@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.HistoryLocation")
 @js.native
 class HistoryLocation ()
-  extends typings.atEmberRouting.historyDashLocationMod.default
+  extends typings.atEmberObject.atEmberObjectMod.default
 

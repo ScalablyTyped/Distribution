@@ -1,6 +1,7 @@
 package typings.nodeDashZopfliDashEs.nodeDashZopfliDashEsMod
 
 import typings.node.Buffer
+import typings.node.streamMod.Transform
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("node-zopfli-es", JSImport.Namespace)
 @js.native
-class ^ () extends Zopfli {
+class ^ () extends Transform {
   def this(format: Format) = this()
   def this(format: Format, options: Options) = this()
 }

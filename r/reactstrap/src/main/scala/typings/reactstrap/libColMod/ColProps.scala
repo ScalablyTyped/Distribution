@@ -1,7 +1,8 @@
 package typings.reactstrap.libColMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -9,7 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColProps
-  extends HTMLProps[HTMLDivElement]
+  extends AllHTMLAttributes[HTMLDivElement]
+     with ClassAttributes[HTMLDivElement]
      with /* key */ StringDictionary[js.Any] {
   var lg: js.UndefOr[ColumnProps] = js.undefined
   var md: js.UndefOr[ColumnProps] = js.undefined
@@ -24,7 +26,8 @@ trait ColProps
 object ColProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLDivElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
+    ClassAttributes: ClassAttributes[HTMLDivElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     lg: ColumnProps = null,
     md: ColumnProps = null,
@@ -35,7 +38,8 @@ object ColProps {
     xs: ColumnProps = null
   ): ColProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
     if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])

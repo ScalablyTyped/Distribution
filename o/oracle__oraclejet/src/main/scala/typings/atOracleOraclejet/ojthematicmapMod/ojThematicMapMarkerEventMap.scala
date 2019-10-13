@@ -20,12 +20,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.triangleDown
 import typings.atOracleOraclejet.atOracleOraclejetStrings.triangleUp
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
+import typings.std.ElementEventMap
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
-import typings.std.HTMLElementEventMap
+import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -39,7 +41,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ojThematicMapMarkerEventMap extends HTMLElementEventMap {
+trait ojThematicMapMarkerEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   var borderColorChanged: JetElementCustomEvent[String]
   var borderStyleChanged: JetElementCustomEvent[solid | none]
   var borderWidthChanged: JetElementCustomEvent[Double]

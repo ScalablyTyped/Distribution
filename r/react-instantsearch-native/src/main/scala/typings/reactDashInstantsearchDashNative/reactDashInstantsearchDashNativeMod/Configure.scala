@@ -1,5 +1,6 @@
 package typings.reactDashInstantsearchDashNative.reactDashInstantsearchDashNativeMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-instantsearch-native", "Configure")
 @js.native
 class Configure ()
-  extends typings.reactDashInstantsearchDashCore.reactDashInstantsearchDashCoreMod.Configure
+  extends Component[js.Any, js.Any, js.Any]
 

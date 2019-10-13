@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsContentRemoveDashCircleDashOutlineMod.ContentRemoveCircleOutline
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsContentRemoveDashCircleDashOutlineMod extends js.Object {
   @js.native
-  class ContentRemoveCircleOutline () extends SvgIcon
+  class ContentRemoveCircleOutline ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends ContentRemoveCircleOutline
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

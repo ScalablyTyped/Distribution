@@ -1,6 +1,5 @@
 package typings.muicss
 
-import typings.muicss.libReactTextareaMod.TextArea
 import typings.muicss.reactMod.TextareaProps
 import typings.react.reactMod.Component
 import scala.scalajs.js
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libReactTextareaMod extends js.Object {
   @js.native
-  class default () extends TextArea
+  class default ()
+    extends Component[TextareaProps, js.Object, js.Any]
   
   type TextArea = Component[TextareaProps, js.Object, js.Any]
 }

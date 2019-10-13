@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "OrdersApi")
 @js.native
+/**
+  * Constructs a new OrdersApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class OrdersApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Retrieves a set of [Order](#type-order)s by their IDs.
     * If a given Order ID does not exist, the ID is ignored instead of generating an error.

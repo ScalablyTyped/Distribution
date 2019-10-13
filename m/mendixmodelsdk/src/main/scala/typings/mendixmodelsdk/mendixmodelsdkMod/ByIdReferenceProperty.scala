@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk", "ByIdReferenceProperty")
 @js.native
 class ByIdReferenceProperty[T /* <: typings.mendixmodelsdk.distSdkInternalElementsMod.AbstractElement */] ()
-  extends typings.mendixmodelsdk.distSdkInternalPropertiesMod.ByIdReferenceProperty[T]
+  extends typings.mendixmodelsdk.distSdkInternalPropertiesByDashIdDashReferenceMod.ByIdReferenceProperty[T]
 

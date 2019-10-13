@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ChronoLocalDateTime")
 @js.native
-abstract class ChronoLocalDateTime () extends Temporal {
+abstract class ChronoLocalDateTime () extends TemporalAccessor {
   def adjustInto(temporal: js.Any): js.Any = js.native
   def chronology(): Chronology = js.native
   def toEpochSecond(offset: ZoneOffset): Double = js.native

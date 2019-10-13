@@ -1,7 +1,7 @@
 package typings.flickity.flickityMod
 
 import typings.flickity.Anon_X
-import typings.flickity.flickityMod.Global.JQuery
+import typings.flickity.flickityMod._Global_.JQuery
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement

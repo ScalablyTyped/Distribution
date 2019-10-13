@@ -34,8 +34,8 @@ trait TypeofinspectedWindow extends js.Object {
     * @param expression An expression to evaluate.
     * @param [options] The options parameter can contain one or more options.
     */
-  def eval(expression: String): js.Promise[js.UndefOr[js.Object]] = js.native
-  def eval(expression: String, options: Anon_ContextSecurityOrigin): js.Promise[js.UndefOr[js.Object]] = js.native
+  def eval(expression: String): js.Promise[js.Object] = js.native
+  def eval(expression: String, options: Anon_ContextSecurityOrigin): js.Promise[js.Object] = js.native
   /**
     * Retrieves the list of resources from the inspected page.
     * @deprecated Unsupported on Firefox at this time.

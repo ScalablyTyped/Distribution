@@ -1,6 +1,6 @@
 package typings.reactDashUserDashTour.reactDashUserDashTourMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashUserDashTour.reactDashUserDashTourStrings.bottom
 import typings.reactDashUserDashTour.reactDashUserDashTourStrings.bottomLeft
 import typings.reactDashUserDashTour.reactDashUserDashTourStrings.left

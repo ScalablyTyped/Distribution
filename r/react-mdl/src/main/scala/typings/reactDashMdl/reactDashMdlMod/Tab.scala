@@ -1,10 +1,12 @@
 package typings.reactDashMdl.reactDashMdlMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-mdl", "Tab")
 @js.native
-class Tab () extends __MDLComponent[TabProps]
+class Tab ()
+  extends Component[TabProps, js.Object, js.Any]
 

@@ -1,7 +1,7 @@
 package typings.ionicons.distTypesComponentsMod.LocalJSX
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ionicons.distTypesComponentsMod.Global.HTMLIonIconElement
+import typings.ionicons.distTypesComponentsMod._Global_.HTMLIonIconElement
 import typings.ionicons.distTypesStencilDotCoreMod.JSXBase.HTMLAttributes
 import typings.ionicons.ioniconsStrings.ios
 import typings.ionicons.ioniconsStrings.md

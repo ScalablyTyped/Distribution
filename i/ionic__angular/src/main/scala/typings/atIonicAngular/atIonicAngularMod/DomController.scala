@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "DomController")
 @js.native
 class DomController ()
-  extends typings.atIonicAngular.distMod.DomController
+  extends typings.atIonicAngular.distProvidersDomDashControllerMod.DomController
 

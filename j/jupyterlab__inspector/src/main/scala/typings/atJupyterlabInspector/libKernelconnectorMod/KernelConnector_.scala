@@ -1,6 +1,6 @@
 package typings.atJupyterlabInspector.libKernelconnectorMod
 
-import typings.atJupyterlabCoreutils.atJupyterlabCoreutilsMod.DataConnector
+import typings.atJupyterlabCoreutils.libDataconnectorMod.DataConnector
 import typings.atJupyterlabInspector.libHandlerMod.InspectionHandler.IReply
 import typings.atJupyterlabInspector.libHandlerMod.InspectionHandler.IRequest
 import typings.atJupyterlabInspector.libKernelconnectorMod.KernelConnector.IOptions

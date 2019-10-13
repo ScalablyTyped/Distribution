@@ -1,6 +1,11 @@
 package typings.reactDashColor
 
-import typings.reactDashColor.libComponentsCommonAlphaMod.default
+import typings.react.reactMod.Component
+import typings.reactDashColor.libComponentsCommonAlphaMod.AlphaProps
+import typings.reactDashColor.libComponentsCommonCheckboardMod.CheckboardProps
+import typings.reactDashColor.libComponentsCommonEditableInputMod.EditableInputProps
+import typings.reactDashColor.libComponentsCommonHueMod.HueProps
+import typings.reactDashColor.libComponentsCommonSaturationMod.SaturationProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,23 +14,24 @@ import scala.scalajs.js.annotation._
 @js.native
 object libComponentsCommonMod extends js.Object {
   @js.native
-  class Alpha () extends default
+  class Alpha ()
+    extends Component[AlphaProps, js.Object, js.Any]
   
   @js.native
   class Checkboard ()
-    extends typings.reactDashColor.libComponentsCommonCheckboardMod.default
+    extends Component[CheckboardProps, js.Object, js.Any]
   
   @js.native
   class EditableInput ()
-    extends typings.reactDashColor.libComponentsCommonEditableInputMod.default
+    extends Component[EditableInputProps, js.Object, js.Any]
   
   @js.native
   class Hue ()
-    extends typings.reactDashColor.libComponentsCommonHueMod.default
+    extends Component[HueProps, js.Object, js.Any]
   
   @js.native
   class Saturation ()
-    extends typings.reactDashColor.libComponentsCommonSaturationMod.default
+    extends Component[SaturationProps, js.Object, js.Any]
   
 }
 

@@ -17,7 +17,7 @@ object ngxDashInfiniteDashScrollMod extends js.Object {
   
   @js.native
   class InfiniteScrollModule ()
-    extends typings.ngxDashInfiniteDashScroll.publicUnderscoreApiMod.InfiniteScrollModule
+    extends typings.ngxDashInfiniteDashScroll.srcModulesNgxDashInfiniteDashScrollDotModuleMod.InfiniteScrollModule
   
 }
 

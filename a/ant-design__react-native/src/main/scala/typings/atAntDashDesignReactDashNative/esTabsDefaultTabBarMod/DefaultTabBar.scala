@@ -4,8 +4,8 @@ import typings.atAntDashDesignReactDashNative.Anon_ActiveTab
 import typings.atAntDashDesignReactDashNative.Anon_ContainerTab
 import typings.atAntDashDesignReactDashNative.esStyleMod.Theme
 import typings.atAntDashDesignReactDashNative.esTabsPropsTypeMod.TabData
-import typings.react.reactMod.Global.JSX.Element
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.ScrollView
 import scala.scalajs.js
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/react-native/es/tabs/DefaultTabBar", "DefaultTabBar")
 @js.native
 class DefaultTabBar protected ()
-  extends PureComponent[PropsType, StateType, js.Any] {
+  extends Component[PropsType, StateType, js.Any] {
   def this(props: PropsType) = this()
   var _containerMeasurements: js.Any = js.native
   var _scrollView: ScrollView = js.native

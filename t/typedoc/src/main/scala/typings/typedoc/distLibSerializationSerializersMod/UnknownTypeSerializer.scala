@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/serialization/serializers", "UnknownTypeSerializer")
 @js.native
 class UnknownTypeSerializer ()
-  extends typings.typedoc.distLibSerializationSerializersTypesMod.UnknownTypeSerializer
+  extends typings.typedoc.distLibSerializationSerializersTypesUnknownMod.UnknownTypeSerializer
 

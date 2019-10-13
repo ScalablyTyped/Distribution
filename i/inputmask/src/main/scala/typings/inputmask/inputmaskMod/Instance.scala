@@ -1,6 +1,6 @@
 package typings.inputmask.inputmaskMod
 
-import typings.inputmask.inputmaskMod.Global.HTMLElement
+import typings.inputmask.inputmaskMod._Global_.HTMLElement
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`

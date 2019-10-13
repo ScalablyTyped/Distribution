@@ -2,7 +2,7 @@ package typings.reactDashSketchapp.reactDashSketchappMod
 
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashSketchapp.Anon_Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`

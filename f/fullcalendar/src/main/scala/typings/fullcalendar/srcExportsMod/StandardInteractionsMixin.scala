@@ -1,6 +1,6 @@
 package typings.fullcalendar.srcExportsMod
 
-import typings.fullcalendar.standardInteractionsMixinMod.default
+import typings.fullcalendar.mixinMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

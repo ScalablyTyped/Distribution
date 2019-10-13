@@ -187,7 +187,7 @@ object libUtilitiesMod extends js.Object {
   
   @js.native
   class Customizer ()
-    extends typings.atUifabricUtilities.atUifabricUtilitiesMod.Customizer
+    extends typings.atUifabricUtilities.libCustomizationsCustomizerMod.Customizer
   
   @js.native
   class DelayedRender protected ()
@@ -453,7 +453,7 @@ object libUtilitiesMod extends js.Object {
   def mergeSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = js.native
   @JSName("merge")
   def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = js.native
-  def nullRender(): typings.react.reactMod.Global.JSX.Element | Null = js.native
+  def nullRender(): typings.react.reactMod._Global_.JSX.Element | Null = js.native
   def on(element: Element, eventName: String, callback: js.Function1[/* ev */ Event, Unit]): js.Function0[Unit] = js.native
   def on(
     element: Element,

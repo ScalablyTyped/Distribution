@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 object libCalloutMod extends js.Object {
   @js.native
   class Callout ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsCalloutMod.Callout
+    extends typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutMod.Callout
   
   val FocusTrapCallout: StatelessComponent[IFocusTrapCalloutProps] = js.native
   @js.native

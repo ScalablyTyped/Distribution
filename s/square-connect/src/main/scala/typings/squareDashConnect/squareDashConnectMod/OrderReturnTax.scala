@@ -30,7 +30,7 @@ class OrderReturnTax () extends js.Object {
     * `OrderReturnLineItem`s with references in their `applied_discounts` field.
     * See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values.
     */
-  var scope: js.UndefOr[TaxApplicationScopeEnum] = js.native
+  var scope: js.UndefOr[TaxApplicationScopeType] = js.native
   /**
     * `uid` of the Tax from the Order which contains the original charge of this tax.
     */
@@ -39,7 +39,7 @@ class OrderReturnTax () extends js.Object {
     * Indicates the calculation method used to apply the tax.
     * See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     */
-  var `type`: js.UndefOr[TaxTypeEnum] = js.native
+  var `type`: js.UndefOr[TaxType] = js.native
   /**
     * Unique ID that identifies the return tax only within this order.
     */

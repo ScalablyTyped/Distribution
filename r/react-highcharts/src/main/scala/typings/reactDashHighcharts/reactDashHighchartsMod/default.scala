@@ -1,5 +1,6 @@
 package typings.reactDashHighcharts.reactDashHighchartsMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("react-highcharts", JSImport.Default)
 @js.native
-class default () extends ReactHighcharts
+class default ()
+  extends Component[ReactHighchartsProps, js.Object, js.Any]
 
 /* static members */
 @JSImport("react-highcharts", JSImport.Default)

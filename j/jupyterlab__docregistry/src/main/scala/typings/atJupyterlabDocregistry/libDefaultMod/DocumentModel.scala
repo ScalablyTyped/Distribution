@@ -10,10 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable because Already inherited
-- typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IModel because Already inherited
-- typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.ICodeModel because var conflicts: mimeType, mimeTypeChanged. Inlined  */ @JSImport("@jupyterlab/docregistry/lib/default", "DocumentModel")
+@JSImport("@jupyterlab/docregistry/lib/default", "DocumentModel")
 @js.native
 /**
   * Construct a new document model.

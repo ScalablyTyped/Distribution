@@ -21,5 +21,5 @@ class ^[DataType] ()
 
 @JSImport("gun/gun", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[Typeofimported_gun with Constructor]
+object ^ extends TopLevel[Constructor with Typeofimported_gun]
 

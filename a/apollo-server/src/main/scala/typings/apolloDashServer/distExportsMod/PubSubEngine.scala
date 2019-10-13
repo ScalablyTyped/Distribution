@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server/dist/exports", "PubSubEngine")
 @js.native
 abstract class PubSubEngine ()
-  extends typings.graphqlDashSubscriptions.graphqlDashSubscriptionsMod.PubSubEngine
+  extends typings.graphqlDashSubscriptions.distPubsubDashEngineMod.PubSubEngine
 

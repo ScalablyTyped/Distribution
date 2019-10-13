@@ -1,6 +1,5 @@
 package typings.emberDashData.emberDashDataMod.DS
 
-import typings.ember.emberMod.default.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.Transform")
 @js.native
-class Transform () extends Object {
+class Transform ()
+  extends typings.atEmberObject.atEmberObjectMod.default {
   /**
     * When given a serialize value from a JSON object this method must
     * return the deserialized value for the record attribute.

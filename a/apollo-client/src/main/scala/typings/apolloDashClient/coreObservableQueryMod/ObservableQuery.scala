@@ -7,7 +7,7 @@ import typings.apolloDashClient.coreWatchQueryOptionsMod.FetchMoreQueryOptions
 import typings.apolloDashClient.coreWatchQueryOptionsMod.SubscribeToMoreOptions
 import typings.apolloDashClient.coreWatchQueryOptionsMod.WatchQueryOptions
 import typings.apolloDashClient.errorsApolloErrorMod.ApolloError
-import typings.apolloDashClient.utilObservableMod.Observable
+import typings.zenDashObservableDashTs.libZenObservableMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

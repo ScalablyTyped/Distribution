@@ -12,6 +12,6 @@ object atNivoCalendarComponents extends atNivoCalendarProps {
   def Calendar: ComponentType[CalendarSvgProps with Dimensions] = js.constructorOf[typings.atNivoCalendar.atNivoCalendarMod.Calendar].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoCalendar.atNivoCalendarMod.CalendarSvgProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
   @scala.inline
-  def ResponsiveCalendar: ComponentType[CalendarSvgProps] = js.constructorOf[typings.atNivoCalendar.atNivoCalendarMod.ResponsiveCalendar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoCalendar.atNivoCalendarMod.CalendarSvgProps]]
+  def ResponsiveCalendar: ComponentType[ResponsiveCalendarProps] = js.constructorOf[typings.atNivoCalendar.atNivoCalendarMod.ResponsiveCalendar].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveCalendarProps]]
 }
 

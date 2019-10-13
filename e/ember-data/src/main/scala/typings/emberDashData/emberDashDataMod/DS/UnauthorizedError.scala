@@ -12,5 +12,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.UnauthorizedError")
 @js.native
-class UnauthorizedError () extends AdapterError
+class UnauthorizedError ()
+  extends typings.atEmberObject.atEmberObjectMod.default
 

@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GmailImageAdBuilder[GmailImageAd] extends AdBuilder[GmailImageAdBuilder[GmailImageAd]] {
+trait GmailImageAdBuilder[GmailImageAd]
+  extends AdWordsBuilder[GmailImageAdBuilder[GmailImageAd]]
+     with hasFinalUrlBuilder[GmailImageAdBuilder[GmailImageAd]]
+     with hasTrackingTemplateBuilder[GmailImageAdBuilder[GmailImageAd]] {
   def withAdvertiser(advertiser: String): GmailImageAdBuilder[GmailImageAd]
   def withDescription(description: String): GmailImageAdBuilder[GmailImageAd]
   def withDisplayUrl(displayUrl: String): GmailImageAdBuilder[GmailImageAd]

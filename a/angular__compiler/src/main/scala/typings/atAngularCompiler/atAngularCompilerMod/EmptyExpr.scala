@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "EmptyExpr")
 @js.native
 class EmptyExpr ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.EmptyExpr
+  extends typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.EmptyExpr
 

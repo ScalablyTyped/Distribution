@@ -15,7 +15,7 @@ class ListPaymentsRequest () extends js.Object {
   /**
     * The brand of `Payment` card. For example, `VISA`.
     */
-  var card_brand: js.UndefOr[CardBrandEnum] = js.native
+  var card_brand: js.UndefOr[CardBrandType] = js.native
   /**
     * A pagination cursor returned by a previous call to this endpoint.
     * Provide this to retrieve the next set of results for the original query.

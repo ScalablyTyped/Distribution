@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsSpinnerSpinnerMod.SpinnerProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object spinnerMod extends js.Object {
   @js.native
   class Spinner ()
-    extends typings.primereact.componentsSpinnerSpinnerMod.Spinner
+    extends Component[SpinnerProps, js.Any, js.Any]
   
 }
 

@@ -11,7 +11,7 @@ import typings.antd.esUploadInterfaceMod.UploadState
 import typings.antd.esUploadUploadMod.Upload
 import typings.react.reactMod.Component
 import typings.react.reactMod.DragEvent
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Error
 import typings.std.HTMLDivElement
 import scala.scalajs.js

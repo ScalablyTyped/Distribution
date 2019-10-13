@@ -72,7 +72,7 @@ object layers extends js.Object {
   
   @js.native
   abstract class RNNCell ()
-    extends typings.atTensorflowTfjs.atTensorflowTfjsMod.layers.RNNCell
+    extends typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod.RNNCell
   
   val globalMaxPool1d: js.Function1[
     /* args */ js.UndefOr[LayerArgs], 

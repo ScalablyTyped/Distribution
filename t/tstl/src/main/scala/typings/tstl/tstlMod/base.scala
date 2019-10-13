@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 object base extends js.Object {
   @js.native
   abstract class ArrayContainer[T /* <: ElemT */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseT, ElemT] */, ArrayT /* <: typings.tstl.baseContainerArrayContainerMod.ArrayContainer[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, IteratorT /* <: ArrayIteratorBase[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, ReverseT /* <: ArrayReverseIteratorBase[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT] */, ElemT] ()
-    extends typings.tstl.baseMod.ArrayContainer[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT]
+    extends typings.tstl.baseContainerArrayContainerMod.ArrayContainer[T, SourceT, ArrayT, IteratorT, ReverseT, ElemT]
   
   @js.native
   class ArrayIterator[T, SourceT /* <: typings.tstl.baseContainerArrayContainerMod.ArrayContainer[
@@ -34,7 +34,7 @@ object base extends js.Object {
     typings.tstl.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT], 
     T
   ] */] ()
-    extends typings.tstl.baseMod.ArrayIterator[T, SourceT]
+    extends typings.tstl.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT]
   
   @js.native
   class ArrayReverseIterator[T, SourceT /* <: typings.tstl.baseContainerArrayContainerMod.ArrayContainer[
@@ -45,11 +45,11 @@ object base extends js.Object {
     typings.tstl.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT], 
     T
   ] */] ()
-    extends typings.tstl.baseMod.ArrayReverseIterator[T, SourceT]
+    extends typings.tstl.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT]
   
   @js.native
   abstract class Container[T /* <: Elem */, SourceT /* <: typings.tstl.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: IReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] ()
-    extends typings.tstl.baseMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem]
+    extends typings.tstl.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem]
   
   @js.native
   class ForOfAdaptor[T, InputIterator /* <: IForwardIterator[T, InputIterator] */] protected ()
@@ -90,11 +90,11 @@ object base extends js.Object {
   
   @js.native
   abstract class MultiMap[Key, T, Source /* <: typings.tstl.baseContainerMultiMapMod.MultiMap[Key, T, Source, Iterator, Reverse] */, Iterator /* <: IMapIterator[Key, T, `false`, Source, Iterator, Reverse] */, Reverse /* <: IMapReverseIterator[Key, T, `false`, Source, Iterator, Reverse] */] ()
-    extends typings.tstl.baseMod.MultiMap[Key, T, Source, Iterator, Reverse]
+    extends typings.tstl.baseContainerMultiMapMod.MultiMap[Key, T, Source, Iterator, Reverse]
   
   @js.native
   abstract class MultiSet[Key, Source /* <: typings.tstl.baseContainerMultiSetMod.MultiSet[Key, Source, IteratorT, ReverseT] */, IteratorT /* <: ISetIterator[Key, `false`, Source, IteratorT, ReverseT] */, ReverseT /* <: ISetReverseIterator[Key, `false`, Source, IteratorT, ReverseT] */] ()
-    extends typings.tstl.baseMod.MultiSet[Key, Source, IteratorT, ReverseT]
+    extends typings.tstl.baseContainerMultiSetMod.MultiSet[Key, Source, IteratorT, ReverseT]
   
   @js.native
   abstract class ReverseIterator[T /* <: Elem */, Source /* <: IContainer[T, Source, Base, This, Elem] */, Base /* <: Iterator[T, Source, Base, This, Elem] */, This /* <: typings.tstl.baseIteratorReverseIteratorMod.ReverseIterator[T, Source, Base, This, Elem] */, Elem] protected ()
@@ -118,11 +118,11 @@ object base extends js.Object {
   
   @js.native
   abstract class UniqueMap[Key, T, Source /* <: typings.tstl.baseContainerUniqueMapMod.UniqueMap[Key, T, Source, Iterator, Reverse] */, Iterator /* <: IMapIterator[Key, T, `true`, Source, Iterator, Reverse] */, Reverse /* <: IMapReverseIterator[Key, T, `true`, Source, Iterator, Reverse] */] ()
-    extends typings.tstl.baseMod.UniqueMap[Key, T, Source, Iterator, Reverse]
+    extends typings.tstl.baseContainerUniqueMapMod.UniqueMap[Key, T, Source, Iterator, Reverse]
   
   @js.native
   abstract class UniqueSet[Key, Source /* <: typings.tstl.baseContainerUniqueSetMod.UniqueSet[Key, Source, IteratorT, ReverseT] */, IteratorT /* <: ISetIterator[Key, `true`, Source, IteratorT, ReverseT] */, ReverseT /* <: ISetReverseIterator[Key, `true`, Source, IteratorT, ReverseT] */] ()
-    extends typings.tstl.baseMod.UniqueSet[Key, Source, IteratorT, ReverseT]
+    extends typings.tstl.baseContainerUniqueSetMod.UniqueSet[Key, Source, IteratorT, ReverseT]
   
 }
 

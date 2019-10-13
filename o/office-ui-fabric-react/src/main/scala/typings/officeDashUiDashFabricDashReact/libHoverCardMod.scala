@@ -39,7 +39,7 @@ object libHoverCardMod extends js.Object {
   
   @js.native
   class PlainCardBase ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsHoverCardMod.PlainCardBase
+    extends typings.officeDashUiDashFabricDashReact.libComponentsHoverCardPlainCardPlainCardDotBaseMod.PlainCardBase
   
   val ExpandingCard: StatelessComponent[IExpandingCardProps] = js.native
   val HoverCard: StatelessComponent[IHoverCardProps] = js.native

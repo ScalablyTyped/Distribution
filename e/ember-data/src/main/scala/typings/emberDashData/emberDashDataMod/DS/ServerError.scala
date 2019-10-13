@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.ServerError")
 @js.native
-class ServerError () extends AdapterError
+class ServerError ()
+  extends typings.atEmberObject.atEmberObjectMod.default
 

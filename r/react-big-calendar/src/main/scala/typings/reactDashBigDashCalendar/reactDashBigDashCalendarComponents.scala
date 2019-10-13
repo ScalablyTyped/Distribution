@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashBigDashCalendarComponents extends reactDashBigDashCalendarProps {
   @scala.inline
-  def Calendar[TEvent /* <: js.Object */, TResource /* <: js.Object */]: ComponentType[
-    typings.reactDashBigDashCalendar.reactDashBigDashCalendarMod.CalendarProps[TEvent, TResource]
-  ] = js.constructorOf[typings.reactDashBigDashCalendar.reactDashBigDashCalendarMod.Calendar[TEvent, TResource]].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashBigDashCalendar.reactDashBigDashCalendarMod.CalendarProps[TEvent, TResource]]]
+  def Calendar[TEvent /* <: js.Object */, TResource /* <: js.Object */]: ComponentType[CalendarProps[TEvent, TResource]] = js.constructorOf[typings.reactDashBigDashCalendar.reactDashBigDashCalendarMod.Calendar[TEvent, TResource]].asInstanceOf[typings.react.reactMod.ComponentType[CalendarProps[TEvent, TResource]]]
 }
 

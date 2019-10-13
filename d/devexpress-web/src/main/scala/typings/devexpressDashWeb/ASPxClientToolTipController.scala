@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientToolTipController")
 @js.native
-class ASPxClientToolTipController () extends ASPxClientWebChartEmptyElement {
+class ASPxClientToolTipController () extends ASPxClientWebChartElement {
   /**
     * Gets a value that defines the position of an image within a tooltip.
     */

@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_IndeterminateModifier
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringvaluenClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ProgressCircular")
 @js.native
 class ProgressCircular ()
-  extends Component[Anon_IndeterminateModifier, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringvaluenClassName, js.Any, js.Any]
 

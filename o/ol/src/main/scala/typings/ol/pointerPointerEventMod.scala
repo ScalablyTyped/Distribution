@@ -1,7 +1,6 @@
 package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ol.pointerPointerEventMod.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object pointerPointerEventMod extends js.Object {
   @js.native
-  class default protected () extends PointerEvent {
+  class default protected ()
+    extends typings.ol.eventsEventMod.default {
     def this(`type`: String, originalEvent: typings.ol.eventsEventMod.default) = this()
     def this(
       `type`: String,

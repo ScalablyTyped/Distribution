@@ -1,5 +1,6 @@
 package typings.pixiDotJs.pixiDotJsMod
 
+import typings.pixiDotJs.PIXI.glCore.GLShader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("pixi.js", "PrimitiveShader")
 @js.native
-class PrimitiveShader ()
-  extends typings.pixiDotJs.PIXI.PrimitiveShader
+class PrimitiveShader () extends GLShader
 

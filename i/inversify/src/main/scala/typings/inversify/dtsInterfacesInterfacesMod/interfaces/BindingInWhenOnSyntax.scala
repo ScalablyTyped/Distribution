@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BindingInWhenOnSyntax[T]
-  extends BindingWhenOnSyntax[T]
-     with BindingInSyntax[T]
+  extends BindingInSyntax[T]
+     with BindingWhenSyntax[T]
+     with BindingOnSyntax[T]
 

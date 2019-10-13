@@ -3,10 +3,10 @@ package typings.atIonicReact
 import org.scalablytyped.runtime.StringDictionary
 import typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps
 import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.ReactInstance
 import typings.react.reactMod.RefObject
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.Pick

@@ -1,10 +1,13 @@
 package typings.reduxDashForm
 
+import typings.react.reactMod.Component
 import typings.react.reactMod.StatelessComponent
 import typings.reduxDashForm.libActionsMod.FormAction
 import typings.reduxDashForm.libFieldMod.BaseFieldProps
 import typings.reduxDashForm.libFieldMod.GenericFieldHTMLAttributes
+import typings.reduxDashForm.libFormMod.FormProps
 import typings.reduxDashForm.libFormNameMod.FormNameProps
+import typings.reduxDashForm.libFormSectionMod.FormSectionProps
 import typings.reduxDashForm.libReducerMod.FormReducer
 import typings.reduxDashForm.libReducerMod.FormStateMap
 import typings.reduxDashForm.libReduxFormMod.ConfigProps
@@ -25,23 +28,23 @@ import scala.scalajs.js.annotation._
 object immutableMod extends js.Object {
   @js.native
   class Field[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */] ()
-    extends typings.reduxDashForm.reduxDashFormMod.Field[P]
+    extends typings.reduxDashForm.libFieldMod.Field[P]
   
   @js.native
   class FieldArray[P, FieldValue] ()
-    extends typings.reduxDashForm.reduxDashFormMod.FieldArray[P, FieldValue]
+    extends typings.reduxDashForm.libFieldArrayMod.FieldArray[P, FieldValue]
   
   @js.native
   class Fields[P] ()
-    extends typings.reduxDashForm.reduxDashFormMod.Fields[P]
+    extends typings.reduxDashForm.libFieldsMod.Fields[P]
   
   @js.native
   class Form[FormData, P, ErrorType] ()
-    extends typings.reduxDashForm.reduxDashFormMod.Form[FormData, P, ErrorType]
+    extends Component[FormProps[FormData, P, ErrorType], js.Object, js.Any]
   
   @js.native
   class FormSection[P] ()
-    extends typings.reduxDashForm.reduxDashFormMod.FormSection[P]
+    extends Component[FormSectionProps[P] with P, js.Object, js.Any]
   
   @js.native
   class SubmissionError[FormData, ErrorType] protected ()

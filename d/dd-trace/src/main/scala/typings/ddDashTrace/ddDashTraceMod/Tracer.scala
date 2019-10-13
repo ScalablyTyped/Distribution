@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Tracer
-  extends typings.opentracing.opentracingMod.Tracer {
+  extends typings.opentracing.libTracerMod.Tracer {
   /**
     * Initializes the tracer. This should be called before importing other libraries.
     */

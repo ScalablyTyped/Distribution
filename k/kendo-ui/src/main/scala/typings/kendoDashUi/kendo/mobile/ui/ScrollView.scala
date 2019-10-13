@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.ScrollView")
 @js.native
-class ScrollView protected () extends Widget {
+class ScrollView protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: ScrollViewOptions) = this()
   var dataSource: DataSource = js.native

@@ -37,12 +37,12 @@ package object wx {
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
   type DefaultMethods[V] = StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type DefaultProps = js.Object | (Record[String, js.Any])
-  type FormEvent = BuiltInEvent[form, Anon_Name]
+  type FormEvent = BaseEvent[form, Anon_Name]
   /**
   	 * 指定focus时的光标位置
   	 * @version 1.5.0
   	 */
-  type InputEvent = BuiltInEvent[input, Anon_Cursor]
+  type InputEvent = BaseEvent[input, Anon_Cursor]
   /**
   	 * https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/observer.html
   	 */
@@ -146,7 +146,7 @@ package object wx {
     - scala.Double
   */
   type SceneValues = _SceneValues | Double
-  type ScrollEvent = BuiltInEvent[scroll, js.Object]
+  type ScrollEvent = BaseEvent[scroll, js.Object]
   type TapEvent = TouchEvent[tap]
   type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = js.Object with (ComponentOptions[V, Data, Methods, Props, Behaviors]) with (ThisType[CombinedInstance[V, Data, Methods, Props, Behaviors]])
   type TouchCancelEvent = TouchEvent[touchcancel]

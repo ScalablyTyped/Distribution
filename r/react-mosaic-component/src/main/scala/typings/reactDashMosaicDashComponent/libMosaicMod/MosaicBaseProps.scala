@@ -1,6 +1,6 @@
 package typings.reactDashMosaicDashComponent.libMosaicMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicBranch
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicKey
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicNode

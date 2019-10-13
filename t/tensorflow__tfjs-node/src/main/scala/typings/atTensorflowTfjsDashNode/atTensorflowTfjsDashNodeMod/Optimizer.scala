@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-node", "Optimizer")
 @js.native
 abstract class Optimizer ()
-  extends typings.atTensorflowTfjs.atTensorflowTfjsMod.Optimizer
+  extends typings.atTensorflowTfjsDashCore.distOptimizersOptimizerMod.Optimizer
 

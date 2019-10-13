@@ -1,7 +1,7 @@
 package typings.atBlueprintjsSelect.libEsmComponentsSelectSelectMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/select/lib/esm/components/select/select", "Select")
 @js.native
 class Select[T] ()
-  extends PureComponent[ISelectProps[T], ISelectState, js.Any] {
+  extends Component[ISelectProps[T], ISelectState, js.Any] {
   var TypedQueryList: js.Any = js.native
   var handleItemSelect: js.Any = js.native
   var handlePopoverClosing: js.Any = js.native

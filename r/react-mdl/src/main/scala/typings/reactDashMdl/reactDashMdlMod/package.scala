@@ -8,7 +8,6 @@ package object reactDashMdlMod {
   import typings.react.reactMod.ClassAttributes
   import typings.react.reactMod.HTMLProps
 
-  type NavigationProps = __MDLOtherProps
   type __MDLClassProps = ClassAttributes[js.Any]
   type __MDLOtherProps = HTMLProps[js.Any]
 }

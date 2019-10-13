@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.cardCardHeaderMod.CardHeader
+import typings.materialDashUi.__MaterialUI.Card.CardHeaderProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object cardCardHeaderMod extends js.Object {
   @js.native
   class CardHeader ()
-    extends typings.materialDashUi.__MaterialUI.Card.CardHeader
+    extends Component[CardHeaderProps, js.Object, js.Any]
   
   @js.native
-  class default () extends CardHeader
+  class default ()
+    extends Component[CardHeaderProps, js.Object, js.Any]
   
 }
 

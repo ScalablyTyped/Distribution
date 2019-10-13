@@ -1,5 +1,6 @@
 package typings.applicationinsights
 
+import typings.applicationinsights.outDeclarationsContractsConstantsMod.ConnectionStringKey
 import typings.applicationinsights.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeKeys
 import typings.applicationinsights.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeValues
 import scala.scalajs.js
@@ -43,6 +44,24 @@ object applicationinsightsStrings {
   @js.native
   sealed trait Trace extends TelemetryTypeKeys
   
+  @js.native
+  sealed trait authorization extends ConnectionStringKey
+  
+  @js.native
+  sealed trait endpointsuffix extends ConnectionStringKey
+  
+  @js.native
+  sealed trait ingestionendpoint extends ConnectionStringKey
+  
+  @js.native
+  sealed trait instrumentationkey extends ConnectionStringKey
+  
+  @js.native
+  sealed trait liveendpoint extends ConnectionStringKey
+  
+  @js.native
+  sealed trait location extends ConnectionStringKey
+  
   @scala.inline
   def Dependency: Dependency = "Dependency".asInstanceOf[Dependency]
   @scala.inline
@@ -67,5 +86,17 @@ object applicationinsightsStrings {
   def RequestData: RequestData = "RequestData".asInstanceOf[RequestData]
   @scala.inline
   def Trace: Trace = "Trace".asInstanceOf[Trace]
+  @scala.inline
+  def authorization: authorization = "authorization".asInstanceOf[authorization]
+  @scala.inline
+  def endpointsuffix: endpointsuffix = "endpointsuffix".asInstanceOf[endpointsuffix]
+  @scala.inline
+  def ingestionendpoint: ingestionendpoint = "ingestionendpoint".asInstanceOf[ingestionendpoint]
+  @scala.inline
+  def instrumentationkey: instrumentationkey = "instrumentationkey".asInstanceOf[instrumentationkey]
+  @scala.inline
+  def liveendpoint: liveendpoint = "liveendpoint".asInstanceOf[liveendpoint]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
 }
 

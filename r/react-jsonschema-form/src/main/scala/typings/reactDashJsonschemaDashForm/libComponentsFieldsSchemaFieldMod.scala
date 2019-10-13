@@ -1,7 +1,6 @@
 package typings.reactDashJsonschemaDashForm
 
 import typings.react.reactMod.Component
-import typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.SchemaField
 import typings.reactDashJsonschemaDashForm.libComponentsFieldsSchemaFieldMod.SchemaFieldProps
 import typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormMod.FieldProps
 import typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormStrings.errorSchema
@@ -19,7 +18,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libComponentsFieldsSchemaFieldMod extends js.Object {
   @js.native
-  class default () extends SchemaField
+  class default ()
+    extends Component[SchemaFieldProps[js.Any], js.Object, js.Any]
   
   type SchemaField = Component[SchemaFieldProps[js.Any], js.Object, js.Any]
   type SchemaFieldProps[T] = Pick[FieldProps[T], schema | uiSchema | idSchema | formData | errorSchema | registry]

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UTCTimeParams extends LocalSimpleLocalSimpleStringValueBlockParams {
+trait UTCTimeParams extends LocalHexBlockParams {
   var value: js.UndefOr[String] = js.undefined
   var valueDate: js.UndefOr[Date] = js.undefined
 }

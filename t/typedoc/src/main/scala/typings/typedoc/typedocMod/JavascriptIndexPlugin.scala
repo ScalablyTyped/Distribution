@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc", "JavascriptIndexPlugin")
 @js.native
 class JavascriptIndexPlugin ()
-  extends typings.typedoc.distLibOutputPluginsMod.JavascriptIndexPlugin
+  extends typings.typedoc.distLibOutputPluginsJavascriptIndexPluginMod.JavascriptIndexPlugin
 

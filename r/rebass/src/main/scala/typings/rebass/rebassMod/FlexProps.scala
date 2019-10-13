@@ -36,6 +36,10 @@ import typings.react.reactMod.Key
 import typings.react.reactMod.Ref
 import typings.styledDashComponents.styledDashComponentsMod.CSSObject
 import typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
+import typings.styledDashSystem.styledDashSystemMod.AlignItemsProps
+import typings.styledDashSystem.styledDashSystemMod.FlexDirectionProps
+import typings.styledDashSystem.styledDashSystemMod.FlexWrapProps
+import typings.styledDashSystem.styledDashSystemMod.JustifyContentProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
 import typings.styledDashSystem.styledDashSystemMod.TLengthStyledSystem
 import scala.scalajs.js
@@ -43,7 +47,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLDivElement>, keyof rebass.rebass.FlexKnownProps> ]: react.react.HTMLProps<std.HTMLDivElement>[P]} */ trait FlexProps extends FlexKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLDivElement>, keyof rebass.rebass.FlexKnownProps> ]: react.react.HTMLProps<std.HTMLDivElement>[P]} */ trait FlexProps
+  extends BoxKnownProps
+     with FlexWrapProps
+     with FlexDirectionProps
+     with AlignItemsProps
+     with JustifyContentProps
 
 object FlexProps {
   @scala.inline

@@ -17,7 +17,7 @@ object Handlebars extends js.Object {
   
   @js.native
   class SafeString ()
-    extends typings.ember.emberMod.Ember.Handlebars.SafeString
+    extends typings.atEmberTemplate.dashPrivateHandlebarsMod.SafeString
   
   def Exception(message: String): Unit = js.native
   def K(): js.Any = js.native

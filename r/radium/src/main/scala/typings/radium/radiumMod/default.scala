@@ -2,10 +2,13 @@ package typings.radium.radiumMod
 
 import typings.radium.radiumMod.Radium.RadiumConfig
 import typings.radium.radiumMod.Radium.RadiumTestMode
+import typings.radium.radiumMod.Radium.StyleProps
+import typings.radium.radiumMod.Radium.StyleRootProps
 import typings.radium.radiumMod.Radium.StyleRules
 import typings.radium.radiumStrings.`:active`
 import typings.radium.radiumStrings.`:focus`
 import typings.radium.radiumStrings.`:hover`
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +18,11 @@ import scala.scalajs.js.annotation._
 object default extends js.Object {
   @js.native
   class Style ()
-    extends typings.radium.radiumMod.Radium.Style
+    extends Component[StyleProps, js.Object, js.Any]
   
   @js.native
   class StyleRoot ()
-    extends typings.radium.radiumMod.Radium.StyleRoot
+    extends Component[StyleRootProps, js.Object, js.Any]
   
   var TestMode: RadiumTestMode = js.native
   def apply(config: RadiumConfig): js.Function1[/* component */ js.UndefOr[js.Any], _] = js.native

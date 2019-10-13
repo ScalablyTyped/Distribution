@@ -20,7 +20,7 @@ object LineCol extends js.Object {
     */
   @js.native
   class Model ()
-    extends typings.atJupyterlabStatusbar.libDefaultsMod.LineCol.Model
+    extends typings.atJupyterlabStatusbar.libDefaultsLineColMod.LineCol.Model
   
 }
 

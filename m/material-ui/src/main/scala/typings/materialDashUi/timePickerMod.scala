@@ -1,6 +1,5 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.timePickerMod.TimePicker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,8 @@ object timePickerMod extends js.Object {
     extends typings.materialDashUi.__MaterialUI.TimePicker
   
   @js.native
-  class default () extends TimePicker
+  class default ()
+    extends typings.materialDashUi.__MaterialUI.TimePicker
   
 }
 

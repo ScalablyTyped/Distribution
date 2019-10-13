@@ -3,8 +3,6 @@ package typings.ionic
 import typings.atIonicCliDashFramework.atIonicCliDashFrameworkMod.BaseError
 import typings.ionic.ionicStrings.Exception
 import typings.ionic.libErrorsMod.BaseException
-import typings.ionic.libErrorsMod.IntegrationException
-import typings.ionic.libErrorsMod.RunnerException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,13 +35,13 @@ object libErrorsMod extends js.Object {
   class IntegrationException () extends BaseException
   
   @js.native
-  class IntegrationNotFoundException () extends IntegrationException
+  class IntegrationNotFoundException () extends BaseException
   
   @js.native
   class RunnerException () extends BaseException
   
   @js.native
-  class RunnerNotFoundException () extends RunnerException
+  class RunnerNotFoundException () extends BaseException
   
   @js.native
   class ServeCLIProgramNotFoundException () extends BaseException

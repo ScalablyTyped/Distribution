@@ -1,6 +1,7 @@
 package typings.fundamentalDashReact
 
-import typings.fundamentalDashReact.libTimePickerTimePickerMod.default
+import typings.fundamentalDashReact.libTimePickerTimePickerMod.TimePickerProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libTimePickerMod extends js.Object {
   @js.native
-  class TimePicker () extends default
+  class TimePicker ()
+    extends Component[TimePickerProps, js.Object, js.Any]
   
 }
 

@@ -8,8 +8,8 @@ import typings.atJupyterlabUiDashComponents.libIconTabbarsvgMod.DockPanelSvg.IOp
 import typings.atJupyterlabUiDashComponents.libStyleIconMod.IconKindType
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.react.reactMod.DOMAttributes
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -93,7 +93,7 @@ object atJupyterlabUiDashComponentsMod extends js.Object {
       */
     @js.native
     class Renderer ()
-      extends typings.atJupyterlabUiDashComponents.libIconMod.TabBarSvg.Renderer
+      extends typings.atJupyterlabUiDashComponents.libIconTabbarsvgMod.TabBarSvg.Renderer
     
     val defaultRenderer: typings.atJupyterlabUiDashComponents.libIconTabbarsvgMod.TabBarSvg.Renderer = js.native
   }

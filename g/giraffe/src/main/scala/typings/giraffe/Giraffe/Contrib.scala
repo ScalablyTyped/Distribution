@@ -1,6 +1,5 @@
 package typings.giraffe.Giraffe
 
-import typings.backbone.backboneMod.Events
 import typings.backbone.backboneMod.EventsMixin
 import typings.jquery.JQuery
 import typings.std.HTMLElement
@@ -24,11 +23,11 @@ object Contrib extends js.Object {
     def removeOne(model: Model): View[TModel] = js.native
   }
   
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.backbone.backboneMod.Events because Already inherited */ @js.native
   class Controller ()
     extends EventsMixin
-       with GiraffeObject
-       with Events {
+       with GiraffeObject {
     /* CompleteClass */
     override var app: App = js.native
     /**

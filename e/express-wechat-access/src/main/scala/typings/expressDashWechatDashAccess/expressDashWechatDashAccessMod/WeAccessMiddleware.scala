@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.node.eventsMod.internal because Inheritance from two classes. Inlined addListener, addListener, emit, emit, eventNames, getMaxListeners, listenerCount, listenerCount, listeners, listeners, off, off, on, on, once, once, prependListener, prependListener, prependOnceListener, prependOnceListener, rawListeners, rawListeners, removeAllListeners, removeAllListeners, removeAllListeners, removeListener, removeListener, setMaxListeners
+- typings.node.NodeJS.EventEmitter because Inheritance from two classes. Inlined addListener, addListener, emit, emit, eventNames, getMaxListeners, listenerCount, listenerCount, listeners, listeners, off, off, on, on, once, once, prependListener, prependListener, prependOnceListener, prependOnceListener, rawListeners, rawListeners, removeAllListeners, removeAllListeners, removeAllListeners, removeListener, removeListener, setMaxListeners
 - typings.node.eventsMod.EventEmitter because Inheritance from two classes. Inlined  */ @js.native
 trait WeAccessMiddleware extends WeMiddleware {
   def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native

@@ -37,8 +37,8 @@ class DropdownBase protected ()
     * This helper method avoids all the repetition.
     */
   var _isDisabled: js.Any = js.native
-  /** Flag for identifiying dropdown is opened by getting focus using keyboard */
-  var _isOpenedByKeyboardFocus: js.Any = js.native
+  /** Flag for tracking whether focus is triggered by click (alternatively triggered by keyboard nav) */
+  var _isFocusedByClick: js.Any = js.native
   var _isScrollIdle: js.Any = js.native
   /** True if the most recent keydown event was for alt (option) or meta (command). */
   var _lastKeyDownWasAltOrMeta: js.Any = js.native
@@ -56,6 +56,7 @@ class DropdownBase protected ()
   var _onDropdownClick: js.Any = js.native
   var _onDropdownKeyDown: js.Any = js.native
   var _onDropdownKeyUp: js.Any = js.native
+  var _onDropdownMouseDown: js.Any = js.native
   var _onFocus: js.Any = js.native
   var _onItemClick: js.Any = js.native
   var _onItemMouseEnter: js.Any = js.native
@@ -107,6 +108,11 @@ class DropdownBase protected ()
     */
   var _shouldHandleKeyUp: js.Any = js.native
   var _shouldIgnoreMouseEvent: js.Any = js.native
+  /**
+    * Returns true if dropdown should set to open on focus.
+    * Otherwise, isOpen state should be toggled on click
+    */
+  var _shouldOpenOnFocus: js.Any = js.native
   var _sizePosCache: js.Any = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MDropdownBase(newProps: IDropdownProps): Unit = js.native

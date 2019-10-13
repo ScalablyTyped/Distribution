@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addons
 
-Typings are for version 4.1
+Typings are for version 5.2.3
 
 ## Library description:
 Storybook addons store
@@ -24,7 +24,7 @@ Storybook addons store
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

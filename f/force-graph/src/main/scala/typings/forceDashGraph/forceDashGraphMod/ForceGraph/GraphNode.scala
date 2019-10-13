@@ -5,15 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphNode extends GraphEntity {
-  var name: String
-  var `val`: js.Any
+  var name: js.UndefOr[String] = js.undefined
+  var `val`: js.UndefOr[js.Any] = js.undefined
 }
 
 object GraphNode {
   @scala.inline
-  def apply(id: String, name: String, `val`: js.Any): GraphNode = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
-    __obj.updateDynamic("val")(`val`)
+  def apply(id: String = null, name: String = null, `val`: js.Any = null): GraphNode = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`val` != null) __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[GraphNode]
   }
 }

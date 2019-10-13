@@ -23,9 +23,9 @@ package object srcMod {
   // Preact Component interface
   // -----------------------------------
   type Key = String | Double | js.Any
-  type PreactConsumer[T] = Consumer[T]
+  type PreactConsumer[T] = FunctionComponent[Anon_ChildrenValue[T]]
   type PreactContext[T] = Context[T]
-  type PreactProvider[T] = Provider[T]
+  type PreactProvider[T] = FunctionComponent[Anon_ChildrenValueComponentChildren[T]]
   type Provider[T] = FunctionComponent[Anon_ChildrenValueComponentChildren[T]]
   type Ref[T] = RefObject[T] | RefCallback[T]
   type RefCallback[T] = js.Function1[/* instance */ T | Null, Unit]

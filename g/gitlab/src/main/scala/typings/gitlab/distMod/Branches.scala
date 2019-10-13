@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "Branches")
 @js.native
 class Branches ()
-  extends typings.gitlab.distServicesMod.Branches
+  extends typings.gitlab.distServicesBranchesMod.Branches
 

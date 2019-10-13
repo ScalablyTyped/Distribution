@@ -10,7 +10,6 @@ import typings.phaser.Phaser.Sound.HTML5AudioSoundManager
 import typings.phaser.Phaser.Sound.NoAudioSoundManager
 import typings.phaser.Phaser.Sound.WebAudioSound
 import typings.phaser.Phaser.Sound.WebAudioSoundManager
-import typings.phaser.Phaser.Types.Sound.AudioSpriteSound
 import typings.phaser.Phaser.Types.Sound.DecodeAudioConfig
 import typings.phaser.Phaser.Types.Sound.SoundConfig
 import typings.phaser.Phaser.Types.Sound.SoundMarker
@@ -93,12 +92,14 @@ object Sound extends js.Object {
       * Play this sound, or a marked section of it.
       * It always plays the sound from the start. If you want to start playback from a specific time
       * you can set 'seek' setting of the config object, provided to this call, to that value.
-      * @param markerName If you want to play a marker then provide the marker name here, otherwise omit it to play the full sound. Default ''.
+      * @param markerName If you want to play a marker then provide the marker name here. Alternatively, this parameter can be a SoundConfig object. Default ''.
       * @param config Optional sound config object to be applied to this marker or entire sound if no marker name is provided. It gets memorized for future plays of current section of the sound.
       */
     def play(): Boolean = js.native
     def play(markerName: String): Boolean = js.native
     def play(markerName: String, config: SoundConfig): Boolean = js.native
+    def play(markerName: SoundConfig): Boolean = js.native
+    def play(markerName: SoundConfig, config: SoundConfig): Boolean = js.native
     /**
       * Removes a marker from the sound.
       * @param markerName The name of the marker to remove.
@@ -196,8 +197,8 @@ object Sound extends js.Object {
       * @param key Asset key for the sound.
       * @param config An optional config object containing default sound settings.
       */
-    def addAudioSprite(key: String): AudioSpriteSound = js.native
-    def addAudioSprite(key: String, config: SoundConfig): AudioSpriteSound = js.native
+    def addAudioSprite(key: String): HTML5AudioSound | WebAudioSound = js.native
+    def addAudioSprite(key: String, config: SoundConfig): HTML5AudioSound | WebAudioSound = js.native
     /**
       * Method used internally for pausing sound manager if
       * Phaser.Sound.BaseSoundManager#pauseOnBlur is set to true.

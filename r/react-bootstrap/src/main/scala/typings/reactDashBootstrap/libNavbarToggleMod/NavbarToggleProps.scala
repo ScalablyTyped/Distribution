@@ -1,23 +1,31 @@
 package typings.reactDashBootstrap.libNavbarToggleMod
 
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NavbarToggleProps extends HTMLProps[NavbarToggle] {
+trait NavbarToggleProps
+  extends AllHTMLAttributes[NavbarToggle]
+     with ClassAttributes[NavbarToggle] {
   @JSName("onClick")
   var onClick_NavbarToggleProps: js.UndefOr[MouseEventHandler[_]] = js.undefined
 }
 
 object NavbarToggleProps {
   @scala.inline
-  def apply(HTMLProps: HTMLProps[NavbarToggle] = null, onClick: MouseEvent[_, NativeMouseEvent] => Unit = null): NavbarToggleProps = {
+  def apply(
+    AllHTMLAttributes: AllHTMLAttributes[NavbarToggle] = null,
+    ClassAttributes: ClassAttributes[NavbarToggle] = null,
+    onClick: MouseEvent[_, NativeMouseEvent] => Unit = null
+  ): NavbarToggleProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[NavbarToggleProps]
   }

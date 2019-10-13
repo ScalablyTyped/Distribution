@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashModalDashPopover.libPopoverMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashNativeDashModalDashPopover.Anon_Args
 import typings.std.Partial
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-modal-popover/lib/Popover", "Popover")
 @js.native
 class Popover protected ()
-  extends PureComponent[PopoverProps, PopoverState, js.Any] {
+  extends Component[PopoverProps, PopoverState, js.Any] {
   def this(props: PopoverProps) = this()
   var computeGeometry: js.Any = js.native
   var computeStyles: js.Any = js.native

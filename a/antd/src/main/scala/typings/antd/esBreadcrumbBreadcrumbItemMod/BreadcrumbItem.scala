@@ -2,8 +2,8 @@ package typings.antd.esBreadcrumbBreadcrumbItemMod
 
 import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

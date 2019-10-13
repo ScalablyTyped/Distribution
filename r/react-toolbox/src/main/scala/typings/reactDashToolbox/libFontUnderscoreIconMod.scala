@@ -1,5 +1,7 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libFontUnderscoreIconFontIconMod.FontIconProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,11 @@ import scala.scalajs.js.annotation._
 object libFontUnderscoreIconMod extends js.Object {
   @js.native
   class FontIcon ()
-    extends typings.reactDashToolbox.libFontUnderscoreIconFontIconMod.FontIcon
+    extends Component[FontIconProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libFontUnderscoreIconFontIconMod.FontIcon
+    extends Component[FontIconProps, js.Object, js.Any]
   
 }
 

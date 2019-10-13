@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/render/webgl/PolygonReplay", JSImport.Default)
 @js.native
-class default protected () extends WebGLPolygonReplay {
+class default protected ()
+  extends typings.ol.renderWebglReplayMod.default {
   def this(tolerance: Double, maxExtent: Extent) = this()
 }
 

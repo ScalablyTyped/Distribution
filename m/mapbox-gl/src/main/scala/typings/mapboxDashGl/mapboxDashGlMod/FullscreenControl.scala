@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mapbox-gl", "FullscreenControl")
 @js.native
-class FullscreenControl () extends Control {
+class FullscreenControl () extends Evented {
   def this(options: FullscreenControlOptions) = this()
 }
 

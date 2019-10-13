@@ -32,67 +32,10 @@ object areDashWeDashThereDashYetMod extends js.Object {
        with TrackerObject {
     def this(name: String) = this()
     def this(name: String, todo: Double) = this()
-    /* InferMemberOverrides */
-    override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addWork(work: Double): Unit = js.native
     def completeWork(completed: Double): Unit = js.native
     def completed(): Double = js.native
-    /* InferMemberOverrides */
-    override def emit(event: String, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def eventNames(): js.Array[String | js.Symbol] = js.native
     def finish(): Unit = js.native
-    /* InferMemberOverrides */
-    override def getMaxListeners(): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(`type`: String): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(`type`: js.Symbol): Double = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    // Added in Node 6...
-    /* InferMemberOverrides */
-    override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: String): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: js.Symbol): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def setMaxListeners(n: Double): this.type = js.native
   }
   
   @js.native
@@ -117,31 +60,11 @@ object areDashWeDashThereDashYetMod extends js.Object {
     extends TrackerBase
        with TrackerObject {
     def this(name: String) = this()
-    /* InferMemberOverrides */
-    override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addUnit(tracker: TrackerBase): TrackerObject = js.native
     def addUnit(tracker: TrackerBase, weight: Double): TrackerObject = js.native
     def completed(): Double = js.native
     def debug(): String = js.native
-    /* InferMemberOverrides */
-    override def emit(event: String, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def eventNames(): js.Array[String | js.Symbol] = js.native
     def finish(): Unit = js.native
-    /* InferMemberOverrides */
-    override def getMaxListeners(): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(`type`: String): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(`type`: js.Symbol): Double = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
     def newGroup(): TrackerGroup = js.native
     def newGroup(name: String): TrackerGroup = js.native
     def newGroup(name: String, weight: Double): TrackerGroup = js.native
@@ -153,43 +76,6 @@ object areDashWeDashThereDashYetMod extends js.Object {
     def newStream(name: String): TrackerStream = js.native
     def newStream(name: String, todo: Double): TrackerStream = js.native
     def newStream(name: String, todo: Double, weight: Double): TrackerStream = js.native
-    /* InferMemberOverrides */
-    override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    // Added in Node 6...
-    /* InferMemberOverrides */
-    override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: String): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: js.Symbol): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def setMaxListeners(n: Double): this.type = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -206,10 +92,6 @@ object areDashWeDashThereDashYetMod extends js.Object {
     def this(name: String) = this()
     def this(name: String, size: Double) = this()
     def this(name: String, size: Double, options: TransformOptions) = this()
-    /* InferMemberOverrides */
-    override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("addListener")
@@ -224,30 +106,6 @@ object areDashWeDashThereDashYetMod extends js.Object {
     def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
     def addWork(work: Double): Unit = js.native
     def completed(): Double = js.native
-    /* InferMemberOverrides */
-    override def emit(event: String, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def eventNames(): js.Array[String | js.Symbol] = js.native
-    /* InferMemberOverrides */
-    override def getMaxListeners(): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(`type`: String): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(`type`: js.Symbol): Double = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("on")
     def on_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("on")
@@ -260,10 +118,6 @@ object areDashWeDashThereDashYetMod extends js.Object {
     def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
     @JSName("on")
     def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("once")
     def once_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("once")
@@ -282,11 +136,6 @@ object areDashWeDashThereDashYetMod extends js.Object {
     /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
-    // Added in Node 6...
-    /* InferMemberOverrides */
-    override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("prependListener")
@@ -299,10 +148,6 @@ object areDashWeDashThereDashYetMod extends js.Object {
     def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("prependOnceListener")
@@ -315,20 +160,6 @@ object areDashWeDashThereDashYetMod extends js.Object {
     def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: String): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: js.Symbol): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("removeListener")
@@ -341,8 +172,6 @@ object areDashWeDashThereDashYetMod extends js.Object {
     def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def setMaxListeners(n: Double): this.type = js.native
   }
   
   type GenericEventListener = js.Function1[/* repeated */ js.Any, Unit]

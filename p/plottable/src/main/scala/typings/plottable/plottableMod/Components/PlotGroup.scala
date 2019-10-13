@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable", "Components.PlotGroup")
 @js.native
 class PlotGroup ()
-  extends typings.plottable.buildSrcComponentsMod.PlotGroup
+  extends typings.plottable.buildSrcComponentsPlotGroupMod.PlotGroup
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashTagcloudComponents extends reactDashTagcloudProps {
   @scala.inline
-  def TagCloud: ComponentType[typings.reactDashTagcloud.ReactTagCloud.TagCloudProps] = js.constructorOf[typings.reactDashTagcloud.reactTagCloud.TagCloud].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashTagcloud.ReactTagCloud.TagCloudProps]]
+  def TagCloud: ComponentType[TagCloudProps] = js.constructorOf[typings.reactDashTagcloud.reactTagCloud.TagCloud].asInstanceOf[typings.react.reactMod.ComponentType[TagCloudProps]]
 }
 

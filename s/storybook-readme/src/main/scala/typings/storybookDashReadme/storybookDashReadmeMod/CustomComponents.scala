@@ -1,6 +1,6 @@
 package typings.storybookDashReadme.storybookDashReadmeMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.storybookDashReadme.Anon_ChildrenElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

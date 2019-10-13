@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distCommonjsElementsIconIconMod {
-  import typings.react.reactMod.PureComponent
+  import typings.react.reactMod.Component
 
-  type Icon = PureComponent[IconProps, js.Object, js.Any]
+  type Icon = Component[IconProps, js.Object, js.Any]
 }

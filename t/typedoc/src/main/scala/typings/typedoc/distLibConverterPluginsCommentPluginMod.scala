@@ -1,9 +1,10 @@
 package typings.typedoc
 
-import typings.typedoc.distLibConverterComponentsMod.ConverterComponent
+import typings.typedoc.distLibConverterConverterMod.Converter
 import typings.typedoc.distLibModelsCommentsMod.Comment
 import typings.typedoc.distLibModelsReflectionsMod.ProjectReflection
 import typings.typedoc.distLibModelsReflectionsMod.Reflection
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibConverterPluginsCommentPluginMod extends js.Object {
   @js.native
-  class CommentPlugin () extends ConverterComponent {
+  class CommentPlugin () extends AbstractComponent[Converter] {
     var applyModifiers: js.Any = js.native
     var comments: js.Any = js.native
     var hidden: js.UndefOr[js.Any] = js.native

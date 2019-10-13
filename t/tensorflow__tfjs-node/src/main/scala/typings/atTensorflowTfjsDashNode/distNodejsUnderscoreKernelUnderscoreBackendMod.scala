@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashNode
 
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor
+import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.Conv3DInfo
 import typings.atTensorflowTfjsDashCore.distTensorMod.Scalar
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor1D

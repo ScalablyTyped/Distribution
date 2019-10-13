@@ -1,7 +1,7 @@
 package typings.reactDashDom.serverMod
 
 import typings.react.reactMod.ReactElement
-import typings.reactDashDom.serverMod.Global.NodeJS.ReadableStream
+import typings.reactDashDom.serverMod._Global_.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

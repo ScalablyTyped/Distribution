@@ -2,9 +2,6 @@ package typings.dynogels.dynogelsMod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.clientsDynamodbMod.CreateTableOutput
-import typings.awsDashSdk.clientsDynamodbMod.DescribeTableOutput
-import typings.awsDashSdk.clientsDynamodbMod.UpdateTableOutput
 import typings.dynogels.Anon_Name
 import typings.std.Error
 import scala.scalajs.js
@@ -35,13 +32,29 @@ trait Model
   def config(config: ModelConfig): Anon_Name = js.native
   def create(item: js.Any, callback: DynogelsItemCallback): Unit = js.native
   def create(item: js.Any, options: CreateItemOptions, callback: DynogelsItemCallback): Unit = js.native
-  def createTable(callback: js.Function2[/* err */ Error, /* data */ CreateTableOutput, Unit]): Unit = js.native
+  def createTable(
+    callback: js.Function2[
+      /* err */ Error, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.CreateTableOutput */ /* data */ js.Any, 
+      Unit
+    ]
+  ): Unit = js.native
   def createTable(
     options: CreateTablesOptions,
-    callback: js.Function2[/* err */ Error, /* data */ CreateTableOutput, Unit]
+    callback: js.Function2[
+      /* err */ Error, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.CreateTableOutput */ /* data */ js.Any, 
+      Unit
+    ]
   ): Unit = js.native
   def deleteTable(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def describeTable(callback: js.Function2[/* err */ Error, /* data */ DescribeTableOutput, Unit]): Unit = js.native
+  def describeTable(
+    callback: js.Function2[
+      /* err */ Error, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.DescribeTableOutput */ /* data */ js.Any, 
+      Unit
+    ]
+  ): Unit = js.native
   def destroy(hashKey: js.Any, callback: DynogelsItemCallback): Unit = js.native
   def destroy(hashKey: js.Any, rangeKey: js.Any, callback: DynogelsItemCallback): Unit = js.native
   def destroy(hashKey: js.Any, rangeKey: js.Any, options: DestroyItemOptions, callback: DynogelsItemCallback): Unit = js.native
@@ -65,10 +78,20 @@ trait Model
   def tableName(): String = js.native
   def update(item: js.Any, callback: DynogelsItemCallback): Unit = js.native
   def update(item: js.Any, options: UpdateItemOptions, callback: DynogelsItemCallback): Unit = js.native
-  def updateTable(callback: js.Function2[/* err */ Error, /* data */ UpdateTableOutput, Unit]): Unit = js.native
+  def updateTable(
+    callback: js.Function2[
+      /* err */ Error, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.UpdateTableOutput */ /* data */ js.Any, 
+      Unit
+    ]
+  ): Unit = js.native
   def updateTable(
     throughput: Throughput,
-    callback: js.Function2[/* err */ Error, /* data */ UpdateTableOutput, Unit]
+    callback: js.Function2[
+      /* err */ Error, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.UpdateTableOutput */ /* data */ js.Any, 
+      Unit
+    ]
   ): Unit = js.native
 }
 

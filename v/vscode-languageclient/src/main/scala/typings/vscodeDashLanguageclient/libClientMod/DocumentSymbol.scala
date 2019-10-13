@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageclient/lib/client", "DocumentSymbol")
 @js.native
 class DocumentSymbol ()
-  extends typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol
+  extends typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbol
 
 @JSImport("vscode-languageclient/lib/client", "DocumentSymbol")
 @js.native

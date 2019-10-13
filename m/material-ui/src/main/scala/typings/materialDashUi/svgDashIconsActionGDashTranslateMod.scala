@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsActionGDashTranslateMod.ActionGTranslate
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsActionGDashTranslateMod extends js.Object {
   @js.native
-  class ActionGTranslate () extends SvgIcon
+  class ActionGTranslate ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends ActionGTranslate
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

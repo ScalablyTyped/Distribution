@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.sliderMod.Slider
+import typings.materialDashUi.__MaterialUI.SliderProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object sliderMod extends js.Object {
   @js.native
   class Slider ()
-    extends typings.materialDashUi.__MaterialUI.Slider
+    extends Component[SliderProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Slider
+  class default ()
+    extends Component[SliderProps, js.Object, js.Any]
   
 }
 

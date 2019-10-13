@@ -1,6 +1,7 @@
 package typings.fundamentalDashReact
 
-import typings.fundamentalDashReact.libPopoverPopoverMod.default
+import typings.fundamentalDashReact.libPopoverPopoverMod.PopoverProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libPopoverMod extends js.Object {
   @js.native
-  class Popover () extends default
+  class Popover ()
+    extends Component[PopoverProps, js.Object, js.Any]
   
 }
 

@@ -1,7 +1,8 @@
 package typings.reactstrap.libCarouselMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.reactstrap.reactstrapNumbers.`false`
 import typings.reactstrap.reactstrapStrings.carousel
@@ -12,7 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UncontrolledCarouselProps
-  extends HTMLProps[HTMLElement]
+  extends AllHTMLAttributes[HTMLElement]
+     with ClassAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
   var activeIndex: js.UndefOr[Double] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
@@ -33,7 +35,8 @@ object UncontrolledCarouselProps {
   @scala.inline
   def apply(
     items: js.Array[_],
-    HTMLProps: HTMLProps[HTMLElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
+    ClassAttributes: ClassAttributes[HTMLElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     activeIndex: Int | Double = null,
     autoPlay: js.UndefOr[Boolean] = js.undefined,
@@ -51,7 +54,8 @@ object UncontrolledCarouselProps {
     slide: js.UndefOr[Boolean] = js.undefined
   ): UncontrolledCarouselProps = {
     val __obj = js.Dynamic.literal(items = items)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)

@@ -12,7 +12,7 @@ import typings.fullcalendar.fullcalendarStrings.parent
 import typings.fullcalendar.fullcalendarStrings.popover
 import typings.fullcalendar.fullcalendarStrings.standard
 import typings.fullcalendar.fullcalendarStrings.week
-import typings.fullcalendar.srcTypesJqueryDashHooksMod.Global.JQuery
+import typings.fullcalendar.srcTypesJqueryDashHooksMod._Global_.JQuery
 import typings.fullcalendar.viewMod.default
 import typings.moment.momentMod.Duration
 import typings.moment.momentMod.Moment

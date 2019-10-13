@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.PopOver")
 @js.native
-class PopOver protected () extends Widget {
+class PopOver protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: PopOverOptions) = this()
   @JSName("options")

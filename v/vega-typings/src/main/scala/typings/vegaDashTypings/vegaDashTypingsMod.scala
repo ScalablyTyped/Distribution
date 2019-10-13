@@ -37,15 +37,15 @@ import scala.scalajs.js.annotation._
 object vegaDashTypingsMod extends js.Object {
   @js.native
   class Bounds ()
-    extends typings.vegaDashTypings.typesRuntimeMod.Bounds
+    extends typings.vegaDashTypings.typesRuntimeSceneMod.Bounds
   
   @js.native
   class CanvasHandler ()
-    extends typings.vegaDashTypings.typesRuntimeMod.CanvasHandler
+    extends typings.vegaDashTypings.typesRuntimeRendererMod.Handler
   
   @js.native
   class Handler ()
-    extends typings.vegaDashTypings.typesRuntimeMod.Handler
+    extends typings.vegaDashTypings.typesRuntimeRendererMod.Handler
   
   @js.native
   class Operator ()

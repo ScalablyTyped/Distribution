@@ -6,9 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.agDashGrid.distLibInterfacesIComponentMod.IComponent because Already inherited
-- typings.agDashGrid.distLibHeaderRenderingHeaderHeaderCompMod.IHeaderComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @JSImport("ag-grid/dist/lib/headerRendering/header/headerComp", "HeaderComp")
+@JSImport("ag-grid/dist/lib/headerRendering/header/headerComp", "HeaderComp")
 @js.native
 class HeaderComp ()
   extends Component

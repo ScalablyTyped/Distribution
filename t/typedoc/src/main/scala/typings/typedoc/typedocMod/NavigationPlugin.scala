@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc", "NavigationPlugin")
 @js.native
 class NavigationPlugin ()
-  extends typings.typedoc.distLibOutputPluginsMod.NavigationPlugin
+  extends typings.typedoc.distLibOutputPluginsNavigationPluginMod.NavigationPlugin
 

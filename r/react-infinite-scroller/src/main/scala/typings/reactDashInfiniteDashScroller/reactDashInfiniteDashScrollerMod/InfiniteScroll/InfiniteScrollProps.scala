@@ -1,6 +1,7 @@
 package typings.reactDashInfiniteDashScroller.reactDashInfiniteDashScrollerMod.InfiniteScroll
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -11,7 +12,10 @@ import scala.scalajs.js.annotation._
   * <InfiniteScroll /> properties.
   */
 trait InfiniteScrollProps
-  extends HTMLProps[
+  extends AllHTMLAttributes[
+      typings.reactDashInfiniteDashScroller.reactDashInfiniteDashScrollerMod.InfiniteScroll.InfiniteScroll
+    ]
+     with ClassAttributes[
       typings.reactDashInfiniteDashScroller.reactDashInfiniteDashScrollerMod.InfiniteScroll.InfiniteScroll
     ] {
   /**
@@ -73,7 +77,10 @@ object InfiniteScrollProps {
   @scala.inline
   def apply(
     loadMore: Double => Unit,
-    HTMLProps: HTMLProps[
+    AllHTMLAttributes: AllHTMLAttributes[
+      typings.reactDashInfiniteDashScroller.reactDashInfiniteDashScrollerMod.InfiniteScroll.InfiniteScroll
+    ] = null,
+    ClassAttributes: ClassAttributes[
       typings.reactDashInfiniteDashScroller.reactDashInfiniteDashScrollerMod.InfiniteScroll.InfiniteScroll
     ] = null,
     element: String = null,
@@ -88,7 +95,8 @@ object InfiniteScrollProps {
     useWindow: js.UndefOr[Boolean] = js.undefined
   ): InfiniteScrollProps = {
     val __obj = js.Dynamic.literal(loadMore = js.Any.fromFunction1(loadMore))
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (element != null) __obj.updateDynamic("element")(element)
     if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(js.Any.fromFunction0(getScrollParent))
     if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore)

@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterNotMod.Not
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterNotMod extends js.Object {
   @js.native
-  class default protected () extends Not {
+  class default protected ()
+    extends typings.ol.formatFilterFilterMod.default {
     def this(condition: typings.ol.formatFilterFilterMod.default) = this()
   }
   

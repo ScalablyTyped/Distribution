@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_Icon
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylelabelstringiconstrin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Tab")
 @js.native
 class Tab ()
-  extends Component[Anon_Icon, js.Object]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylelabelstringiconstrin, js.Object, js.Any]
 

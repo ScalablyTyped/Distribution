@@ -725,19 +725,26 @@ class GameObjectFactory protected () extends js.Object {
     * @param width The width of the Game Object. Default 128.
     * @param height The height of the Game Object. Default 128.
     * @param textures Optional array of texture keys to bind to the iChannel0...3 uniforms. The textures must already exist in the Texture Manager.
+    * @param textureData Optional additional texture data.
     */
-  def shader(key: String): Shader = js.native
-  def shader(key: String, x: Double): Shader = js.native
-  def shader(key: String, x: Double, y: Double): Shader = js.native
-  def shader(key: String, x: Double, y: Double, width: Double): Shader = js.native
-  def shader(key: String, x: Double, y: Double, width: Double, height: Double): Shader = js.native
-  def shader(key: String, x: Double, y: Double, width: Double, height: Double, textures: js.Array[String]): Shader = js.native
-  def shader(key: BaseShader): Shader = js.native
-  def shader(key: BaseShader, x: Double): Shader = js.native
-  def shader(key: BaseShader, x: Double, y: Double): Shader = js.native
-  def shader(key: BaseShader, x: Double, y: Double, width: Double): Shader = js.native
-  def shader(key: BaseShader, x: Double, y: Double, width: Double, height: Double): Shader = js.native
-  def shader(key: BaseShader, x: Double, y: Double, width: Double, height: Double, textures: js.Array[String]): Shader = js.native
+  def shader(
+    key: String,
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    textures: js.UndefOr[js.Array[String]],
+    textureData: js.UndefOr[js.Object]
+  ): Shader = js.native
+  def shader(
+    key: BaseShader,
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    textures: js.UndefOr[js.Array[String]],
+    textureData: js.UndefOr[js.Object]
+  ): Shader = js.native
   /**
     * Creates a new Sprite Game Object and adds it to the Scene.
     * 
@@ -914,6 +921,18 @@ class GameObjectFactory protected () extends js.Object {
     * @param config The Tween configuration.
     */
   def tween(config: TweenBuilderConfig): Tween = js.native
+  /**
+    * Creates a new Image Game Object and adds it to the Scene.
+    * 
+    * Note: This method will only be available if the Image Game Object has been built into Phaser.
+    * @param x The horizontal position of this Game Object in the world.
+    * @param y The vertical position of this Game Object in the world.
+    * @param texture The key of the Texture this Game Object will use to render with, as stored in the Texture Manager.
+    * @param frame An optional frame from the Texture this Game Object is rendering with.
+    */
+  def video(x: Double, y: Double, texture: String): Image = js.native
+  def video(x: Double, y: Double, texture: String, frame: String): Image = js.native
+  def video(x: Double, y: Double, texture: String, frame: integer): Image = js.native
   /**
     * Creates a new Zone Game Object and adds it to the Scene.
     * 

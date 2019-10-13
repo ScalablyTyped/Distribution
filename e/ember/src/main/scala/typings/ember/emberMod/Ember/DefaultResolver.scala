@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.DefaultResolver")
 @js.native
 class DefaultResolver ()
-  extends typings.atEmberApplication.dashPrivateDefaultDashResolverMod.default
+  extends typings.atEmberApplication.dashPrivateDefaultDashResolverMod.DefaultResolver
 

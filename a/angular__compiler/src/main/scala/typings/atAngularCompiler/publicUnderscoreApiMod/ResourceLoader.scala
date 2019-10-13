@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/public_api", "ResourceLoader")
 @js.native
 class ResourceLoader ()
-  extends typings.atAngularCompiler.srcCompilerMod.ResourceLoader
+  extends typings.atAngularCompiler.srcResourceUnderscoreLoaderMod.ResourceLoader
 

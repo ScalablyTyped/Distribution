@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object libMod extends js.Object {
   @js.native
   class Step ()
-    extends typings.rmcDashSteps.libStepMod.default
+    extends typings.rmcDashSteps.libStepMod.Step
   
   @js.native
   class default ()

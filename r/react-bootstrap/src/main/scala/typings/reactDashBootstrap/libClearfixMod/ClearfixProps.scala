@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libClearfixMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClearfixProps extends HTMLProps[Clearfix] {
+trait ClearfixProps
+  extends AllHTMLAttributes[Clearfix]
+     with ClassAttributes[Clearfix] {
   var bsClass: js.UndefOr[String] = js.undefined
   var componentClass: js.UndefOr[ReactType[_]] = js.undefined
   var visibleLgBlock: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +21,8 @@ trait ClearfixProps extends HTMLProps[Clearfix] {
 object ClearfixProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Clearfix] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Clearfix] = null,
+    ClassAttributes: ClassAttributes[Clearfix] = null,
     bsClass: String = null,
     componentClass: ReactType[_] = null,
     visibleLgBlock: js.UndefOr[Boolean] = js.undefined,
@@ -27,7 +31,8 @@ object ClearfixProps {
     visibleXsBlock: js.UndefOr[Boolean] = js.undefined
   ): ClearfixProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
     if (!js.isUndefined(visibleLgBlock)) __obj.updateDynamic("visibleLgBlock")(visibleLgBlock)

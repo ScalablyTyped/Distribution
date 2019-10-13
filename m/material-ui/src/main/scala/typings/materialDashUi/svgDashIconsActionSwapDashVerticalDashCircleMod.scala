@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsActionSwapDashVerticalDashCircleMod.ActionSwapVerticalCircle
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsActionSwapDashVerticalDashCircleMod extends js.Object {
   @js.native
-  class ActionSwapVerticalCircle () extends SvgIcon
+  class ActionSwapVerticalCircle ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends ActionSwapVerticalCircle
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

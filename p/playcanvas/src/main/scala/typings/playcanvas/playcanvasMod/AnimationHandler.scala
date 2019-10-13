@@ -1,5 +1,6 @@
 package typings.playcanvas.playcanvasMod
 
+import typings.playcanvas.pc.ResourceHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("playcanvas", "AnimationHandler")
 @js.native
-class AnimationHandler ()
-  extends typings.playcanvas.pc.AnimationHandler
+class AnimationHandler () extends ResourceHandler
 

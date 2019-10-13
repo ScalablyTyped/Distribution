@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsGridMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_01
 import typings.reactDashVirtualized.Anon_Alignment
 import typings.reactDashVirtualized.Anon_ColumnIndex
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-virtualized/dist/es/Grid", "Grid")
 @js.native
 class Grid ()
-  extends PureComponent[GridProps, GridState, js.Any] {
+  extends Component[GridProps, GridState, js.Any] {
   /**
     * Gets offsets for a given cell and alignment.
     */

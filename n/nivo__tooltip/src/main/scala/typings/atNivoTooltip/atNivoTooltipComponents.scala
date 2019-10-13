@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object atNivoTooltipComponents extends atNivoTooltipProps {
   @scala.inline
-  def BasicTooltip: ComponentType[typings.atNivoTooltip.atNivoTooltipMod.BasicTooltipProps] = js.constructorOf[typings.atNivoTooltip.atNivoTooltipMod.BasicTooltip].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoTooltip.atNivoTooltipMod.BasicTooltipProps]]
+  def BasicTooltip: ComponentType[BasicTooltipProps] = js.constructorOf[typings.atNivoTooltip.atNivoTooltipMod.BasicTooltip].asInstanceOf[typings.react.reactMod.ComponentType[BasicTooltipProps]]
   @scala.inline
-  def TableTooltip: ComponentType[typings.atNivoTooltip.atNivoTooltipMod.TableTooltipProps] = js.constructorOf[typings.atNivoTooltip.atNivoTooltipMod.TableTooltip].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoTooltip.atNivoTooltipMod.TableTooltipProps]]
+  def TableTooltip: ComponentType[TableTooltipProps] = js.constructorOf[typings.atNivoTooltip.atNivoTooltipMod.TableTooltip].asInstanceOf[typings.react.reactMod.ComponentType[TableTooltipProps]]
 }
 

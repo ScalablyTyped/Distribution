@@ -11,7 +11,7 @@ import typings.node.nodeStrings.finish
 import typings.node.nodeStrings.pipe
 import typings.node.nodeStrings.unpipe
 import typings.node.streamMod.Readable
-import typings.node.streamMod.Stream
+import typings.node.streamMod.internal
 import typings.node.tlsMod.TLSSocket
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("http2", "Http2ServerResponse")
 @js.native
-class Http2ServerResponse protected () extends Stream {
+class Http2ServerResponse protected () extends internal {
   def this(stream: ServerHttp2Stream) = this()
   val connection: Socket | TLSSocket = js.native
   val finished: Boolean = js.native

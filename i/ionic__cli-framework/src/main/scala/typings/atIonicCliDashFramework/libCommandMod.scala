@@ -12,9 +12,7 @@ import typings.atIonicCliDashFramework.definitionsMod.ICommand
 import typings.atIonicCliDashFramework.definitionsMod.INamespace
 import typings.atIonicCliDashFramework.definitionsMod.NamespaceMapGetter
 import typings.atIonicCliDashFramework.libCommandMod.BaseCommand
-import typings.atIonicCliDashFramework.libCommandMod.BaseCommandMap
 import typings.atIonicCliDashFramework.libCommandMod.BaseNamespace
-import typings.atIonicCliDashFramework.libCommandMod.BaseNamespaceMap
 import typings.atIonicCliDashFramework.libCommandMod.Command
 import typings.atIonicCliDashFramework.libCommandMod.Namespace
 import typings.atIonicUtilsDashObject.atIonicUtilsDashObjectMod.AliasedMap
@@ -64,13 +62,18 @@ object libCommandMod extends js.Object {
           CommandMetadataOption
         ]
   
-  @js.native
-  class CommandMap () extends BaseCommandMap[
-          Command, 
-          Namespace, 
-          CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
-          CommandMetadataInput, 
-          CommandMetadataOption
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.std.Map because Already inherited
+  - typings.atIonicCliDashFramework.definitionsMod.ICommandMap because Already inherited */ @js.native
+  class CommandMap () extends AliasedMap[
+          String, 
+          CommandMapGetter[
+            Command, 
+            Namespace, 
+            CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
+            CommandMetadataInput, 
+            CommandMetadataOption
+          ]
         ]
   
   @js.native
@@ -82,13 +85,18 @@ object libCommandMod extends js.Object {
           CommandMetadataOption
         ]
   
-  @js.native
-  class NamespaceMap () extends BaseNamespaceMap[
-          Command, 
-          Namespace, 
-          CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
-          CommandMetadataInput, 
-          CommandMetadataOption
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.std.Map because Already inherited
+  - typings.atIonicCliDashFramework.definitionsMod.INamespaceMap because Already inherited */ @js.native
+  class NamespaceMap () extends AliasedMap[
+          String, 
+          NamespaceMapGetter[
+            Command, 
+            Namespace, 
+            CommandMetadata[CommandMetadataInput, CommandMetadataOption], 
+            CommandMetadataInput, 
+            CommandMetadataOption
+          ]
         ]
   
   val CommandMapDefault: js.Symbol = js.native

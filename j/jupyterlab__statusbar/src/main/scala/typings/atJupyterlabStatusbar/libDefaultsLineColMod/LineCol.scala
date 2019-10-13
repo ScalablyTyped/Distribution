@@ -1,7 +1,7 @@
 package typings.atJupyterlabStatusbar.libDefaultsLineColMod
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomRenderer
+import typings.atJupyterlabApputils.libVdomMod.VDomModel
+import typings.atJupyterlabApputils.libVdomMod.VDomRenderer
 import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabStatusbar.libDefaultsLineColMod.LineCol.Model
 import scala.scalajs.js

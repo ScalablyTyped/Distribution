@@ -8,12 +8,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.start
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
+import typings.std.ElementEventMap
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
-import typings.std.HTMLElementEventMap
+import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -27,7 +29,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ojLegendSectionEventMap extends HTMLElementEventMap {
+trait ojLegendSectionEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   var collapsibleChanged: JetElementCustomEvent[js.UndefOr[on | off]]
   var textChanged: JetElementCustomEvent[js.UndefOr[String]]
   var textHalignChanged: JetElementCustomEvent[js.UndefOr[center | end | start]]

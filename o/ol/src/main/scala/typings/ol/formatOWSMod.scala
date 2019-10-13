@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatOWSMod.OWS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatOWSMod extends js.Object {
   @js.native
-  class default () extends OWS
+  class default ()
+    extends typings.ol.formatXMLMod.default
   
   type OWS = typings.ol.formatXMLMod.default
 }

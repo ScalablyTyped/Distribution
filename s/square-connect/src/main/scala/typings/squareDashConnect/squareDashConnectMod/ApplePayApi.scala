@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "ApplePayApi")
 @js.native
+/**
+  * Constructs a new ApplePayApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class ApplePayApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Activates a domain for use with Web Apple Pay and Square.
     * A validation will be performed on this domain by Apple to ensure is it properly set up as an Apple Pay enabled domain.

@@ -1,7 +1,7 @@
 package typings.jqueryDashNextDashId.jqueryDashNextDashIdMod
 
 import typings.jqueryDashNextDashId.Anon_Prefix
-import typings.jqueryDashNextDashId.jqueryDashNextDashIdMod.Global.JQuery
+import typings.jqueryDashNextDashId.jqueryDashNextDashIdMod._Global_.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

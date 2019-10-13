@@ -37,6 +37,6 @@ class InventoryCount () extends js.Object {
     * The current [InventoryState](#type-inventorystate) for the related quantity of items.
     * See [InventoryState](#type-inventorystate) for possible values.
     */
-  var state: js.UndefOr[InventoryStateEnum] = js.native
+  var state: js.UndefOr[InventoryStateType] = js.native
 }
 

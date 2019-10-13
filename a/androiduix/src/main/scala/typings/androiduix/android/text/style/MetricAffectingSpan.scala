@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MetricAffectingSpan ()
   extends CharacterStyle
-     with UpdateLayout {
+     with UpdateAppearance {
   def updateMeasureState(p: TextPaint): Unit = js.native
 }
 

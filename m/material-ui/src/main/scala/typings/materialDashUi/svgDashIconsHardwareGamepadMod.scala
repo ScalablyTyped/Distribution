@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsHardwareGamepadMod.HardwareGamepad
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsHardwareGamepadMod extends js.Object {
   @js.native
-  class HardwareGamepad () extends SvgIcon
+  class HardwareGamepad ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends HardwareGamepad
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

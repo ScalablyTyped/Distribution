@@ -1,6 +1,6 @@
 package typings.textDashBuffer
 
-import typings.textDashBuffer.textDashBufferMod.Global.TextBuffer.Point
+import typings.textDashBuffer.textDashBufferMod._Global_.TextBuffer.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

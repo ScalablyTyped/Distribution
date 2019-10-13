@@ -1,7 +1,6 @@
 package typings.reactDashNativeDashKeepDashAwake
 
 import typings.react.reactMod.Component
-import typings.reactDashNativeDashKeepDashAwake.reactDashNativeDashKeepDashAwakeMod.KeepAwake
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashNativeDashKeepDashAwakeMod extends js.Object {
   @js.native
-  class default () extends KeepAwake
+  class default ()
+    extends Component[Anon_Children, js.Object, js.Any]
   
   /* static members */
   @js.native

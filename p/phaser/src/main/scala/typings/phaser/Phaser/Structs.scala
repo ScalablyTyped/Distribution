@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.phaser.EachListCallback
 import typings.phaser.EachMapCallback
 import typings.phaser.EachSetCallback
+import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Structs.List
 import typings.phaser.Phaser.Structs.Map
@@ -378,27 +379,38 @@ object Structs extends js.Object {
     * time, rather than at the time of the request from the API.
     */
   @js.native
-  class ProcessQueue[T] () extends js.Object {
+  class ProcessQueue[T] () extends EventEmitter {
+    /**
+      * The number of entries in the active list.
+      */
+    val length: integer = js.native
     /**
       * Adds a new item to the Process Queue.
+      * 
       * The item is added to the pending list and made active in the next update.
       * @param item The item to add to the queue.
       */
     def add(item: T): ProcessQueue[T] = js.native
     /**
-      * Immediately destroys this process queue, clearing all of its internal arrays and resetting the process totals.
-      */
-    def destroy(): Unit = js.native
-    /**
       * Returns the current list of active items.
+      * 
+      * This method returns a reference to the active list array, not a copy of it.
+      * Therefore, be careful to not modify this array outside of the ProcessQueue.
       */
     def getActive(): js.Array[T] = js.native
     /**
       * Removes an item from the Process Queue.
+      * 
       * The item is added to the pending destroy and fully removed in the next update.
       * @param item The item to be removed from the queue.
       */
     def remove(item: T): ProcessQueue[T] = js.native
+    /**
+      * Removes all active items from this Process Queue.
+      * 
+      * All the items are marked as 'pending destroy' and fully removed in the next update.
+      */
+    def removeAll(): this.type = js.native
     /**
       * Update this queue. First it will process any items awaiting destruction, and remove them.
       * 
@@ -808,6 +820,30 @@ object Structs extends js.Object {
       * @param width The new width of the Size component.
       */
     def setWidth(width: Double): this.type = js.native
+  }
+  
+  @js.native
+  object Events extends js.Object {
+    /**
+      * The Process Queue Add Event.
+      * 
+      * This event is dispatched by a Process Queue when a new item is successfully moved to its active list.
+      * 
+      * You will most commonly see this used by a Scene's Update List when a new Game Object has been added.
+      * 
+      * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('add', listener)`.
+      */
+    val PROCESS_QUEUE_ADD: js.Any = js.native
+    /**
+      * The Process Queue Remove Event.
+      * 
+      * This event is dispatched by a Process Queue when a new item is successfully removed from its active list.
+      * 
+      * You will most commonly see this used by a Scene's Update List when a Game Object has been removed.
+      * 
+      * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('remove', listener)`.
+      */
+    val PROCESS_QUEUE_REMOVE: js.Any = js.native
   }
   
   /* static members */

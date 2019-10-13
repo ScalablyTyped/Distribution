@@ -66,6 +66,10 @@ class Bob protected () extends js.Object {
     */
   var parent: Blitter = js.native
   /**
+    * The tint value of this Bob.
+    */
+  var tint: Double = js.native
+  /**
     * The visible state of the Bob.
     * 
     * An invisible Bob will skip rendering.
@@ -136,6 +140,17 @@ class Bob protected () extends js.Object {
   def setFrame(frame: String): Bob = js.native
   def setFrame(frame: Frame): Bob = js.native
   def setFrame(frame: integer): Bob = js.native
+  /**
+    * Changes the position of this Bob to the values given.
+    * @param x The x position of the Bob. Bob coordinate are relative to the position of the Blitter object.
+    * @param y The y position of the Bob. Bob coordinate are relative to the position of the Blitter object.
+    */
+  def setPosition(x: Double, y: Double): Bob = js.native
+  /**
+    * Sets the tint of this Bob.
+    * @param value The tint value used for this Bob. Between 0 and 0xffffff.
+    */
+  def setTint(value: Double): Bob = js.native
   /**
     * Sets the visibility of this Bob.
     * 

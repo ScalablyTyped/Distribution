@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsDeferredcontentDeferredContentMod.DeferredContentProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object deferredcontentMod extends js.Object {
   @js.native
   class DeferredContent ()
-    extends typings.primereact.componentsDeferredcontentDeferredContentMod.DeferredContent
+    extends Component[DeferredContentProps, js.Any, js.Any]
   
 }
 

@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod
 
-import typings.reactDashNative.reactDashNativeMod.Animated.AnimatedWithChildren
+import typings.reactDashNative.reactDashNativeMod.Animated.Animated
 import typings.reactDashNative.reactDashNativeMod.Animated.CompositeAnimation
 import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-native-maps", "AnimatedRegion")
 @js.native
-class AnimatedRegion () extends AnimatedWithChildren {
+class AnimatedRegion () extends Animated {
   def this(region: Region) = this()
   var latitude: Value = js.native
   var latitudeDelta: Value = js.native

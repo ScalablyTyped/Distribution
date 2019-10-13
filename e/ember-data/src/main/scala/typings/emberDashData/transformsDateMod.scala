@@ -1,6 +1,6 @@
 package typings.emberDashData
 
-import typings.emberDashData.emberDashDataMod.default.DateTransform
+import typings.emberDashData.emberDashDataMod.DS.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object transformsDateMod extends js.Object {
     * standard.
     */
   @js.native
-  class default () extends DateTransform
+  class default () extends Transform
   
 }
 

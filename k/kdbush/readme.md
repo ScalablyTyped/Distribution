@@ -1,7 +1,7 @@
 
 # Scala.js typings for kdbush
 
-Typings are for version 1.0
+Typings are for version 3.0
 
 ## Library description:
 A very fast static 2D index for points based on kd-tree.

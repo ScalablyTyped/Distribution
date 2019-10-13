@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.csstype.csstypeMod.SvgPropertiesHyphenFallback because var conflicts: clip, `clip-path`, color, cursor, direction, display, filter, font, `font-family`, `font-size`, `font-size-adjust`, `font-stretch`, `font-style`, `font-variant`, `font-weight`, `image-rendering`, `letter-spacing`, `line-height`, mask, opacity, overflow, `paint-order`, `pointer-events`, `text-decoration`, `text-rendering`, `unicode-bidi`, visibility, `white-space`, `word-spacing`, `writing-mode`. Inlined `alignment-baseline`, `baseline-shift`, `clip-rule`, `color-interpolation`, `color-rendering`, `dominant-baseline`, fill, `fill-opacity`, `fill-rule`, `flood-color`, `flood-opacity`, `glyph-orientation-vertical`, `lighting-color`, marker, `marker-end`, `marker-mid`, `marker-start`, `shape-rendering`, `stop-color`, `stop-opacity`, stroke, `stroke-dasharray`, `stroke-dashoffset`, `stroke-linecap`, `stroke-linejoin`, `stroke-miterlimit`, `stroke-opacity`, `stroke-width`, `text-anchor`, `vector-effect` */ trait PropertiesHyphenFallback[TLength]
-  extends StandardPropertiesHyphenFallback[TLength]
-     with VendorPropertiesHyphenFallback[TLength]
+  extends StandardLonghandPropertiesHyphenFallback[TLength]
+     with StandardShorthandPropertiesHyphenFallback[TLength]
+     with VendorLonghandPropertiesHyphenFallback[TLength]
+     with VendorShorthandPropertiesHyphenFallback[TLength]
      with ObsoletePropertiesHyphenFallback[TLength] {
   var `alignment-baseline`: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.undefined
   var `baseline-shift`: js.UndefOr[BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]] = js.undefined
@@ -45,8 +47,10 @@ object PropertiesHyphenFallback {
   @scala.inline
   def apply[TLength](
     ObsoletePropertiesHyphenFallback: ObsoletePropertiesHyphenFallback[TLength] = null,
-    StandardPropertiesHyphenFallback: StandardPropertiesHyphenFallback[TLength] = null,
-    VendorPropertiesHyphenFallback: VendorPropertiesHyphenFallback[TLength] = null,
+    StandardLonghandPropertiesHyphenFallback: StandardLonghandPropertiesHyphenFallback[TLength] = null,
+    StandardShorthandPropertiesHyphenFallback: StandardShorthandPropertiesHyphenFallback[TLength] = null,
+    VendorLonghandPropertiesHyphenFallback: VendorLonghandPropertiesHyphenFallback[TLength] = null,
+    VendorShorthandPropertiesHyphenFallback: VendorShorthandPropertiesHyphenFallback[TLength] = null,
     `alignment-baseline`: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty] = null,
     `baseline-shift`: BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]] = null,
     `clip-rule`: ClipRuleProperty | js.Array[ClipRuleProperty] = null,
@@ -80,8 +84,10 @@ object PropertiesHyphenFallback {
   ): PropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardPropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorPropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesHyphenFallback)
     if (`alignment-baseline` != null) __obj.updateDynamic("alignment-baseline")(`alignment-baseline`.asInstanceOf[js.Any])
     if (`baseline-shift` != null) __obj.updateDynamic("baseline-shift")(`baseline-shift`.asInstanceOf[js.Any])
     if (`clip-rule` != null) __obj.updateDynamic("clip-rule")(`clip-rule`.asInstanceOf[js.Any])

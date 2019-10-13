@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack-chain", "Resolve")
 @js.native
-class Resolve () extends ChainedMap[Config] {
+class Resolve ()
+  extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedMap[Config, js.Any] {
   var alias: TypedChainedMap[this.type, String] = js.native
   var aliasFields: TypedChainedSet[this.type, String] = js.native
   var descriptionFiles: TypedChainedSet[this.type, String] = js.native
@@ -19,6 +20,8 @@ class Resolve () extends ChainedMap[Config] {
   var plugins: TypedChainedMap[this.type, Plugin[this.type]] = js.native
   def cachePredicate(value: js.Function1[/* data */ Anon_Path, Boolean]): this.type = js.native
   def cacheWithContext(value: Boolean): this.type = js.native
+  /* CompleteClass */
+  override def end(): Config = js.native
   def enforceExtension(value: Boolean): this.type = js.native
   def enforceModuleExtension(value: Boolean): this.type = js.native
   def plugin(name: String): Plugin[this.type] = js.native

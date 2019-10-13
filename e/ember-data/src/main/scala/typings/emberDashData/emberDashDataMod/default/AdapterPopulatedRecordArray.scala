@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "AdapterPopulatedRecordArray")
 @js.native
 class AdapterPopulatedRecordArray[T] ()
-  extends typings.emberDashData.emberDashDataMod.DS.AdapterPopulatedRecordArray[T]
+  extends typings.emberDashData.emberDashDataMod.DS.RecordArray[T]
 

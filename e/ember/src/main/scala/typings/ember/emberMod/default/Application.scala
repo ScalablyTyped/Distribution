@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Application")
 @js.native
 class Application ()
-  extends typings.ember.emberMod.Ember.Application
+  extends typings.atEmberApplication.atEmberApplicationMod.Application
 

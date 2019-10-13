@@ -35,10 +35,6 @@ trait RedisClient
   def MULTI(): Multi = js.native
   def MULTI(args: js.Array[js.Array[String | Double | Callback[_]]]): Multi = js.native
   def addCommand(command: String): Unit = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def add_command(command: String): Unit = js.native
   def batch(): Multi = js.native
   def batch(args: js.Array[js.Array[String | Double | Callback[_]]]): Multi = js.native
@@ -46,40 +42,16 @@ trait RedisClient
   def duplicate(): RedisClient = js.native
   def duplicate(options: ClientOpts): RedisClient = js.native
   def duplicate(options: ClientOpts, cb: Callback[RedisClient]): RedisClient = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   /**
     * Client methods.
     */
   def end(): Unit = js.native
   def end(flush: Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   /**
     * Mark the start of a transaction block.
     */
   def multi(): Multi = js.native
   def multi(args: js.Array[js.Array[String | Double | Callback[_]]]): Multi = js.native
-  /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_message(event: message, listener: js.Function2[/* channel */ String, /* message */ String, Unit]): this.type = js.native
   @JSName("on")
@@ -102,33 +74,6 @@ trait RedisClient
   def on_subscribe(event: subscribe, listener: js.Function2[/* channel */ String, /* count */ Double, Unit]): this.type = js.native
   @JSName("on")
   def on_unsubscribe(event: unsubscribe, listener: js.Function2[/* channel */ String, /* count */ Double, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def sendCommand(command: String): Boolean = js.native
   def sendCommand(command: String, args: js.Array[_]): Boolean = js.native
   def sendCommand(command: String, args: js.Array[_], cb: Callback[_]): Boolean = js.native
@@ -137,8 +82,6 @@ trait RedisClient
   def send_command(command: String, args: js.Array[_]): Boolean = js.native
   def send_command(command: String, args: js.Array[_], cb: Callback[_]): Boolean = js.native
   def send_command(command: String, cb: Callback[_]): Boolean = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
   def uncork(): Unit = js.native
   def unref(): Unit = js.native
 }

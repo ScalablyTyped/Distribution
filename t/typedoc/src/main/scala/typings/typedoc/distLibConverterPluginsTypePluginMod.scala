@@ -1,7 +1,8 @@
 package typings.typedoc
 
-import typings.typedoc.distLibConverterComponentsMod.ConverterComponent
+import typings.typedoc.distLibConverterConverterMod.Converter
 import typings.typedoc.distLibModelsReflectionsMod.DeclarationReflection
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibConverterPluginsTypePluginMod extends js.Object {
   @js.native
-  class TypePlugin () extends ConverterComponent {
+  class TypePlugin () extends AbstractComponent[Converter] {
     var onResolve: js.Any = js.native
     var onResolveEnd: js.Any = js.native
     var postpone: js.Any = js.native

@@ -1,14 +1,12 @@
 package typings.reactDashNativeDashSignatureDashCapture
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashNativeDashSignatureDashCapture.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSignatureDashCaptureComponents extends reactDashNativeDashSignatureDashCaptureProps {
   @scala.inline
-  def ReactDashNativeDashSignatureDashCapture: ComponentType[SignatureCaptureProps] = js.constructorOf[typings.reactDashNativeDashSignatureDashCapture.reactDashNativeDashSignatureDashCaptureMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashSignatureDashCapture.reactDashNativeDashSignatureDashCaptureMod.SignatureCaptureProps]]
+  def ReactDashNativeDashSignatureDashCapture: ComponentType[ReactDashNativeDashSignatureDashCaptureProps] = js.constructorOf[typings.reactDashNativeDashSignatureDashCapture.reactDashNativeDashSignatureDashCaptureMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashNativeDashSignatureDashCaptureProps]]
 }
 

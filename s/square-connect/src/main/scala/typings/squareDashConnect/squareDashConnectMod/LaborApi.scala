@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "LaborApi")
 @js.native
+/**
+  * Constructs a new LaborApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class LaborApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Creates a new `BreakType`. A `BreakType` is a template for creating `Break` objects.
     * You must provide the following values in your request to this endpoint:

@@ -11,6 +11,10 @@ trait RenderConfig extends js.Object {
     */
   var antialias: js.UndefOr[Boolean] = js.undefined
   /**
+    * Sets the `antialias` property when the WebGL context is created. Setting this value does not impact any subsequent textures that are created, or the canvas style attributes.
+    */
+  var antialiasGL: js.UndefOr[Boolean] = js.undefined
+  /**
     * The default WebGL batch size.
     */
   var batchSize: js.UndefOr[integer] = js.undefined
@@ -56,6 +60,7 @@ object RenderConfig {
   @scala.inline
   def apply(
     antialias: js.UndefOr[Boolean] = js.undefined,
+    antialiasGL: js.UndefOr[Boolean] = js.undefined,
     batchSize: Int | Double = null,
     clearBeforeRender: js.UndefOr[Boolean] = js.undefined,
     desynchronized: js.UndefOr[Boolean] = js.undefined,
@@ -69,6 +74,7 @@ object RenderConfig {
   ): RenderConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
+    if (!js.isUndefined(antialiasGL)) __obj.updateDynamic("antialiasGL")(antialiasGL)
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (!js.isUndefined(clearBeforeRender)) __obj.updateDynamic("clearBeforeRender")(clearBeforeRender)
     if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized)

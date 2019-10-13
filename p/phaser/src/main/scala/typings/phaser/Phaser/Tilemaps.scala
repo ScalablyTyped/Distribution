@@ -683,20 +683,26 @@ object Tilemaps extends js.Object {
       */
     /* CompleteClass */
     override def resetFlip(): this.type = js.native
-    def setCollision(indexes: js.Array[_]): DynamicTilemapLayer = js.native
-    def setCollision(indexes: js.Array[_], collides: Boolean): DynamicTilemapLayer = js.native
-    def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def setCollision(indexes: js.Array[_]): Tilemap = js.native
+    def setCollision(indexes: js.Array[_], collides: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): Tilemap = js.native
     /**
       * Sets collision on the given tile or tiles within a layer by index. You can pass in either a
       * single numeric index or an array of indexes: [2, 3, 15, 20]. The `collides` parameter controls if
       * collision will be enabled (true) or disabled (false).
+      * 
+      * If no layer specified, the map's current layer is used.
       * @param indexes Either a single tile index, or an array of tile indexes.
       * @param collides If true it will enable collision. If false it will clear collision. Default true.
       * @param recalculateFaces Whether or not to recalculate the tile faces after the update. Default true.
+      * @param updateLayer If true, updates the current tiles on the layer. Set to
+      * false if no tiles have been placed for significant performance boost. Default true.
       */
-    def setCollision(indexes: integer): DynamicTilemapLayer = js.native
-    def setCollision(indexes: integer, collides: Boolean): DynamicTilemapLayer = js.native
-    def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def setCollision(indexes: integer): Tilemap = js.native
+    def setCollision(indexes: integer, collides: Boolean): Tilemap = js.native
+    def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): Tilemap = js.native
     /**
       * Sets collision on a range of tiles in a layer whose index is between the specified `start` and
       * `stop` (inclusive). Calling this with a start value of 10 and a stop value of 14 would set
@@ -1860,6 +1866,7 @@ object Tilemaps extends js.Object {
     def setCollision(indexes: js.Array[_]): StaticTilemapLayer = js.native
     def setCollision(indexes: js.Array[_], collides: Boolean): StaticTilemapLayer = js.native
     def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): StaticTilemapLayer = js.native
     /**
       * Sets collision on the given tile or tiles within a layer by index. You can pass in either a
       * single numeric index or an array of indexes: [2, 3, 15, 20]. The `collides` parameter controls if
@@ -1869,10 +1876,13 @@ object Tilemaps extends js.Object {
       * collision. Default true.
       * @param recalculateFaces Whether or not to recalculate the tile faces after the
       * update. Default true.
+      * @param updateLayer If true, updates the current tiles on the layer. Set to
+      * false if no tiles have been placed for significant performance boost. Default true.
       */
     def setCollision(indexes: integer): StaticTilemapLayer = js.native
     def setCollision(indexes: integer, collides: Boolean): StaticTilemapLayer = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): StaticTilemapLayer = js.native
     /**
       * Sets collision on a range of tiles in a layer whose index is between the specified `start` and
       * `stop` (inclusive). Calling this with a start value of 10 and a stop value of 14 would set
@@ -3929,9 +3939,37 @@ object Tilemaps extends js.Object {
     def setCollision(indexes: js.Array[_], collides: Boolean): Tilemap = js.native
     def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
     def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean, layer: String): Tilemap = js.native
+    def setCollision(
+      indexes: js.Array[_],
+      collides: Boolean,
+      recalculateFaces: Boolean,
+      layer: String,
+      updateLayer: Boolean
+    ): Tilemap = js.native
     def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollision(
+      indexes: js.Array[_],
+      collides: Boolean,
+      recalculateFaces: Boolean,
+      layer: DynamicTilemapLayer,
+      updateLayer: Boolean
+    ): Tilemap = js.native
     def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollision(
+      indexes: js.Array[_],
+      collides: Boolean,
+      recalculateFaces: Boolean,
+      layer: StaticTilemapLayer,
+      updateLayer: Boolean
+    ): Tilemap = js.native
     def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollision(
+      indexes: js.Array[_],
+      collides: Boolean,
+      recalculateFaces: Boolean,
+      layer: integer,
+      updateLayer: Boolean
+    ): Tilemap = js.native
     /**
       * Sets collision on the given tile or tiles within a layer by index. You can pass in either a
       * single numeric index or an array of indexes: [2, 3, 15, 20]. The `collides` parameter controls if
@@ -3942,14 +3980,43 @@ object Tilemaps extends js.Object {
       * @param collides If true it will enable collision. If false it will clear collision. Default true.
       * @param recalculateFaces Whether or not to recalculate the tile faces after the update. Default true.
       * @param layer The tile layer to use. If not given the current layer is used.
+      * @param updateLayer If true, updates the current tiles on the layer. Set to false if no tiles have been placed for significant performance boost. Default true.
       */
     def setCollision(indexes: integer): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean, layer: String): Tilemap = js.native
+    def setCollision(
+      indexes: integer,
+      collides: Boolean,
+      recalculateFaces: Boolean,
+      layer: String,
+      updateLayer: Boolean
+    ): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollision(
+      indexes: integer,
+      collides: Boolean,
+      recalculateFaces: Boolean,
+      layer: DynamicTilemapLayer,
+      updateLayer: Boolean
+    ): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollision(
+      indexes: integer,
+      collides: Boolean,
+      recalculateFaces: Boolean,
+      layer: StaticTilemapLayer,
+      updateLayer: Boolean
+    ): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollision(
+      indexes: integer,
+      collides: Boolean,
+      recalculateFaces: Boolean,
+      layer: integer,
+      updateLayer: Boolean
+    ): Tilemap = js.native
     /**
       * Sets collision on a range of tiles in a layer whose index is between the specified `start` and
       * `stop` (inclusive). Calling this with a start value of 10 and a stop value of 14 would set

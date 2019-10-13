@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object libKeytipDataMod extends js.Object {
   @js.native
   class KeytipData ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsKeytipDataMod.KeytipData
+    extends typings.officeDashUiDashFabricDashReact.libComponentsKeytipDataKeytipDataMod.KeytipData
   
 }
 

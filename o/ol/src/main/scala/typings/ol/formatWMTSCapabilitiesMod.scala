@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatWMTSCapabilitiesMod.WMTSCapabilities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatWMTSCapabilitiesMod extends js.Object {
   @js.native
-  class default () extends WMTSCapabilities
+  class default ()
+    extends typings.ol.formatXMLMod.default
   
   type WMTSCapabilities = typings.ol.formatXMLMod.default
 }

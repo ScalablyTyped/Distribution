@@ -99,7 +99,7 @@ object jstsMod extends js.Object {
     
     @js.native
     class LinearRing ()
-      extends typings.jsts.jsts.geom.LinearRing
+      extends typings.jsts.jsts.geom.LineString
     
     @js.native
     class Point protected ()

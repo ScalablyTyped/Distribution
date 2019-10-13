@@ -1,6 +1,6 @@
 package typings.clearbladejsDashClient.CbClient
 
-import typings.pahoDashMqtt.pahoDashMqttMod.Global.Paho.MQTT.Client
+import typings.pahoDashMqtt.pahoDashMqttMod._Global_.Paho.MQTT.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

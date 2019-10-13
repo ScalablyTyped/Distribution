@@ -1,5 +1,8 @@
 package typings.primereact
 
+import typings.primereact.componentsDataviewDataViewMod.DataViewLayoutOptionsProps
+import typings.primereact.componentsDataviewDataViewMod.DataViewProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +12,11 @@ import scala.scalajs.js.annotation._
 object dataviewMod extends js.Object {
   @js.native
   class DataView ()
-    extends typings.primereact.componentsDataviewDataViewMod.DataView
+    extends Component[DataViewProps, js.Any, js.Any]
   
   @js.native
   class DataViewLayoutOptions ()
-    extends typings.primereact.componentsDataviewDataViewMod.DataViewLayoutOptions
+    extends Component[DataViewLayoutOptionsProps, js.Any, js.Any]
   
 }
 

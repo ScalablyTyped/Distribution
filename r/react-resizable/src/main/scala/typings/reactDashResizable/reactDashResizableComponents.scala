@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactDashResizableComponents extends reactDashResizableProps {
   @scala.inline
-  def Resizable: ComponentType[typings.reactDashResizable.reactDashResizableMod.ResizableProps] = js.constructorOf[typings.reactDashResizable.reactDashResizableMod.Resizable].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashResizable.reactDashResizableMod.ResizableProps]]
+  def Resizable: ComponentType[ResizableProps] = js.constructorOf[typings.reactDashResizable.reactDashResizableMod.Resizable].asInstanceOf[typings.react.reactMod.ComponentType[ResizableProps]]
   @scala.inline
-  def ResizableBox: ComponentType[typings.reactDashResizable.reactDashResizableMod.ResizableBoxProps] = js.constructorOf[typings.reactDashResizable.reactDashResizableMod.ResizableBox].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashResizable.reactDashResizableMod.ResizableBoxProps]]
+  def ResizableBox: ComponentType[ResizableBoxProps] = js.constructorOf[typings.reactDashResizable.reactDashResizableMod.ResizableBox].asInstanceOf[typings.react.reactMod.ComponentType[ResizableBoxProps]]
 }
 

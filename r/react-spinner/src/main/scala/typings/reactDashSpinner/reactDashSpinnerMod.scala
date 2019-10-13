@@ -1,7 +1,6 @@
 package typings.reactDashSpinner
 
 import typings.react.reactMod.Component
-import typings.reactDashSpinner.reactDashSpinnerMod.Spinner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashSpinnerMod extends js.Object {
   @js.native
-  class default () extends Spinner
+  class default ()
+    extends Component[js.Object, js.Object, js.Any]
   
   type Spinner = Component[js.Object, js.Object, js.Any]
 }

@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ModelFetchOptions
-  extends ModelSetOptions
-     with PersistenceOptions
+  extends PersistenceOptions
+     with Silenceable
+     with Validable
      with Parseable
 
 object ModelFetchOptions {

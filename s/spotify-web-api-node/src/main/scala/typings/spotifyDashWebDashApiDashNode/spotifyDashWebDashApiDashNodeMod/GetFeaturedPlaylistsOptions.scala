@@ -4,7 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GetFeaturedPlaylistsOptions extends PaginationLocaleOptions {
+trait GetFeaturedPlaylistsOptions
+  extends PaginationOptions
+     with LocaleOptions {
   var timestamp: js.UndefOr[String] = js.undefined
 }
 

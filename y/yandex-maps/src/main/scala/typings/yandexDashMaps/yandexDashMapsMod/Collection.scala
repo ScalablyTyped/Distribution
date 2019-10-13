@@ -29,7 +29,7 @@ object collection extends js.Object {
   - typings.yandexDashMaps.yandexDashMapsMod.IEventEmitter because Already inherited
   - typings.yandexDashMaps.yandexDashMapsMod.ICustomizable because var conflicts: events. Inlined options */ @js.native
   class Item ()
-    extends IChildOnMap
+    extends IChild[IControlParent]
        with IParentOnMap {
     def this(options: js.Object) = this()
     /* CompleteClass */
@@ -37,14 +37,8 @@ object collection extends js.Object {
     var options: IOptionManager = js.native
     /* CompleteClass */
     override def getMap(): Map = js.native
-    /* InferMemberOverrides */
-    override def getParent(): js.Object | Null = js.native
     def onAddToMap(map: Map): Unit = js.native
     def onRemoveFromMap(oldMap: Map): Unit = js.native
-    /* InferMemberOverrides */
-    override def setParent(): this.type = js.native
-    /* InferMemberOverrides */
-    override def setParent(parent: js.Object): this.type = js.native
     def setParent(parent: IControlParent): this.type = js.native
   }
   

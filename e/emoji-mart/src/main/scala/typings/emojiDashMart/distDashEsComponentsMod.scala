@@ -1,6 +1,9 @@
 package typings.emojiDashMart
 
-import typings.emojiDashMart.distDashEsComponentsCategoryMod.default
+import typings.emojiDashMart.distDashEsComponentsCategoryMod.Props
+import typings.emojiDashMart.distDashEsComponentsPickerNimbleDashPickerMod.NimblePickerProps
+import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.PickerProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,15 +12,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object distDashEsComponentsMod extends js.Object {
   @js.native
-  class Category () extends default
+  class Category ()
+    extends Component[Props, js.Object, js.Any]
   
   @js.native
   class NimblePicker ()
-    extends typings.emojiDashMart.distDashEsComponentsPickerNimbleDashPickerMod.default
+    extends Component[NimblePickerProps, js.Object, js.Any]
   
   @js.native
   class Picker ()
-    extends typings.emojiDashMart.distDashEsComponentsPickerPickerMod.default
+    extends Component[PickerProps, js.Object, js.Any]
   
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object route {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.angular.angularMod.Global.Function
+  import typings.angular.angularMod._Global_.Function
 
   ///////////////////////////////////////////////////////////////////////////
   // RouteParamsService

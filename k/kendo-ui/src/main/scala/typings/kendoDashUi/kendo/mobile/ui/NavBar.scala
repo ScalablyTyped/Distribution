@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.NavBar")
 @js.native
-class NavBar protected () extends Widget {
+class NavBar protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: NavBarOptions) = this()
   @JSName("options")

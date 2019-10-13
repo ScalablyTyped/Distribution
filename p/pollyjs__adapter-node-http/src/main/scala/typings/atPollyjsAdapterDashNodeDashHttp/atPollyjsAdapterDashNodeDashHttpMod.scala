@@ -1,6 +1,5 @@
 package typings.atPollyjsAdapterDashNodeDashHttp
 
-import typings.atPollyjsAdapterDashNodeDashHttp.atPollyjsAdapterDashNodeDashHttpMod.HttpAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object atPollyjsAdapterDashNodeDashHttpMod extends js.Object {
   @js.native
-  class default () extends HttpAdapter
+  class default ()
+    extends typings.atPollyjsAdapter.atPollyjsAdapterMod.default
   
   type HttpAdapter = typings.atPollyjsAdapter.atPollyjsAdapterMod.default
 }

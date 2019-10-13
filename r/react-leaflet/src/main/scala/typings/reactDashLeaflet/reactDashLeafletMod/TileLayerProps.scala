@@ -9,20 +9,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.leaflet.leafletMod.GridLayerOptions because Already inherited
-- typings.leaflet.leafletMod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined accessToken, crossOrigin, detectRetina, errorTileUrl, id, maxNativeZoom, minNativeZoom, subdomains, tms, zoomOffset, zoomReverse */ trait TileLayerProps
-  extends GridLayerProps
+- typings.leaflet.leafletMod.GridLayerOptions because var conflicts: attribution, pane. Inlined bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex
+- typings.leaflet.leafletMod.TileLayerOptions because var conflicts: attribution, pane. Inlined accessToken, crossOrigin, detectRetina, errorTileUrl, id, maxNativeZoom, minNativeZoom, subdomains, tms, zoomOffset, zoomReverse */ trait TileLayerProps
+  extends MapLayerProps
      with TileLayerEvents {
   var accessToken: js.UndefOr[String] = js.undefined
+  var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
+  var className: js.UndefOr[String] = js.undefined
   var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
   var detectRetina: js.UndefOr[Boolean] = js.undefined
   var errorTileUrl: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
+  var keepBuffer: js.UndefOr[Double] = js.undefined
   var maxNativeZoom: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double] = js.undefined
   var minNativeZoom: js.UndefOr[Double] = js.undefined
+  var minZoom: js.UndefOr[Double] = js.undefined
+  var noWrap: js.UndefOr[Boolean] = js.undefined
+  var opacity: js.UndefOr[Double] = js.undefined
   var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
+  var tileSize: js.UndefOr[Double | typings.leaflet.leafletMod.Point] = js.undefined
   var tms: js.UndefOr[Boolean] = js.undefined
+  var updateInterval: js.UndefOr[Double] = js.undefined
+  var updateWhenIdle: js.UndefOr[Boolean] = js.undefined
+  var updateWhenZooming: js.UndefOr[Boolean] = js.undefined
   var url: String
+  var zIndex: js.UndefOr[Double] = js.undefined
   var zoomOffset: js.UndefOr[Double] = js.undefined
   var zoomReverse: js.UndefOr[Boolean] = js.undefined
 }

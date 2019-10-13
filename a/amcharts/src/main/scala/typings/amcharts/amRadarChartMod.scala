@@ -1,5 +1,6 @@
 package typings.amcharts
 
+import typings.amcharts.amCoordinateChartMod.AmCoordinateChart
 import typings.amcharts.amRadarChartMod.AmRadarChart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,8 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object amRadarChartMod extends js.Object {
   @js.native
-  trait AmRadarChart
-    extends typings.amcharts.amCoordinateChartMod.default {
+  trait AmRadarChart extends AmCoordinateChart {
     /**
       * Bottom margin of the chart.
       */

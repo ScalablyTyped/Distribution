@@ -1,7 +1,6 @@
 package typings.reactDashLazylog
 
 import typings.react.reactMod.Component
-import typings.reactDashLazylog.buildLoadingMod.Loading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object buildLoadingMod extends js.Object {
   @js.native
-  class default () extends Loading
+  class default ()
+    extends Component[js.Object, js.Object, js.Any]
   
   type Loading = Component[js.Object, js.Object, js.Any]
 }

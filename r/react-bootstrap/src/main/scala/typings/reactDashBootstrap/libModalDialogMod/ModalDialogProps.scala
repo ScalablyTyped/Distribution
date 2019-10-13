@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libModalDialogMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapMod.Sizes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ModalDialogProps extends HTMLProps[ModalDialog] {
+trait ModalDialogProps
+  extends AllHTMLAttributes[ModalDialog]
+     with ClassAttributes[ModalDialog] {
   var bsClass: js.UndefOr[String] = js.undefined
   var bsSize: js.UndefOr[Sizes] = js.undefined
   var onEnter: js.UndefOr[js.Function] = js.undefined
@@ -22,7 +25,8 @@ trait ModalDialogProps extends HTMLProps[ModalDialog] {
 object ModalDialogProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[ModalDialog] = null,
+    AllHTMLAttributes: AllHTMLAttributes[ModalDialog] = null,
+    ClassAttributes: ClassAttributes[ModalDialog] = null,
     bsClass: String = null,
     bsSize: Sizes = null,
     onEnter: js.Function = null,
@@ -34,7 +38,8 @@ object ModalDialogProps {
     onHide: js.Function = null
   ): ModalDialogProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)

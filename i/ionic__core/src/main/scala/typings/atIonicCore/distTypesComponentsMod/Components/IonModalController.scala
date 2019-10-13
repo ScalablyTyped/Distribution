@@ -1,6 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonModalElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonModalElement
 import typings.atIonicCore.distTypesComponentsModalModalDashInterfaceMod.ModalOptions
 import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import scala.scalajs.js

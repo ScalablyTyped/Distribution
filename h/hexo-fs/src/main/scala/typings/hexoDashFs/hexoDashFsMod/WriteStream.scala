@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hexo-fs", "WriteStream")
 @js.native
 class WriteStream ()
-  extends typings.gracefulDashFs.gracefulDashFsMod.WriteStream
+  extends typings.node.fsMod.WriteStream
 

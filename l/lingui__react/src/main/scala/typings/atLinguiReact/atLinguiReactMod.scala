@@ -2,7 +2,11 @@ package typings.atLinguiReact
 
 import typings.atLinguiReact.atLinguiReactStrings.i18n
 import typings.atLinguiReact.createFormatMod.FormatPropsWithoutI18n
-import typings.atLinguiReact.i18nMod.default
+import typings.atLinguiReact.i18nMod.I18nComponentProps
+import typings.atLinguiReact.i18nProviderMod.I18nProviderProps
+import typings.atLinguiReact.selectMod.PluralPropsWithoutI18n
+import typings.atLinguiReact.selectMod.SelectPropsWithoutI18n
+import typings.atLinguiReact.transMod.TransPropsWithoutI18n
 import typings.atLinguiReact.withI18nMod.ComponentConstructor
 import typings.atLinguiReact.withI18nMod.withI18nOptions
 import typings.react.reactMod.Component
@@ -28,11 +32,12 @@ object atLinguiReactMod extends js.Object {
   }
   
   @js.native
-  class I18n () extends default
+  class I18n ()
+    extends Component[I18nComponentProps, js.Object, js.Any]
   
   @js.native
   class I18nProvider ()
-    extends typings.atLinguiReact.i18nProviderMod.default
+    extends Component[I18nProviderProps, js.Object, js.Any]
   
   @js.native
   class NumberFormat protected ()
@@ -43,19 +48,19 @@ object atLinguiReactMod extends js.Object {
   
   @js.native
   class Plural ()
-    extends typings.atLinguiReact.selectMod.Plural
+    extends Component[PluralPropsWithoutI18n, js.Object, js.Any]
   
   @js.native
   class Select ()
-    extends typings.atLinguiReact.selectMod.Select
+    extends Component[SelectPropsWithoutI18n, js.Object, js.Any]
   
   @js.native
   class SelectOrdinal ()
-    extends typings.atLinguiReact.selectMod.SelectOrdinal
+    extends Component[PluralPropsWithoutI18n, js.Object, js.Any]
   
   @js.native
   class Trans ()
-    extends typings.atLinguiReact.transMod.default
+    extends Component[TransPropsWithoutI18n, js.Object, js.Any]
   
   val DateFormat: ComponentClass[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState] = js.native
   val NumberFormat: ComponentClass[FormatPropsWithoutI18n[Double, NumberFormatOptions], ComponentState] = js.native

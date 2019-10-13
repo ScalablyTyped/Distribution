@@ -11,6 +11,6 @@ object saveAsPDF extends js.Object {
     * Saves page in active tab as a PDF file.
     * @param pageSettings The page settings used to save the PDF file.
     */
-  def apply(pageSettings: PageSettings): js.Promise[js.UndefOr[String]] = js.native
+  def apply(pageSettings: PageSettings): js.Promise[String] = js.native
 }
 

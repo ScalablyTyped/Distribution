@@ -1,7 +1,6 @@
 package typings.backboneDashRelational
 
 import typings.backbone.backboneMod.Collection
-import typings.backbone.backboneMod.Events
 import typings.backbone.backboneMod.EventsMixin
 import typings.backboneDashRelational.backboneDashRelationalMod.Model
 import typings.backboneDashRelational.backboneDashRelationalMod.Relation
@@ -91,10 +90,9 @@ object backboneDashRelationalMod extends js.Object {
     def setRelated(related: typings.backbone.backboneMod.Model): Unit = js.native
   }
   
-  @js.native
-  class Store ()
-    extends EventsMixin
-       with Events {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.backbone.backboneMod.Events because Already inherited */ @js.native
+  class Store () extends EventsMixin {
     def addModelScope(scope: js.Any): Unit = js.native
     def addOrphanRelation(relation: js.Any): Unit = js.native
     def addReverseRelation(relation: js.Any): Unit = js.native

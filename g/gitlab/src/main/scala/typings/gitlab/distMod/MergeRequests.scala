@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "MergeRequests")
 @js.native
 class MergeRequests ()
-  extends typings.gitlab.distServicesMod.MergeRequests
+  extends typings.gitlab.distServicesMergeRequestsMod.MergeRequests
 

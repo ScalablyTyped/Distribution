@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientSeriesPoint")
 @js.native
-class ASPxClientSeriesPoint () extends ASPxClientWebChartRequiredElement {
+class ASPxClientSeriesPoint () extends ASPxClientWebChartElement {
   /**
     * Gets the data point's argument.
     */

@@ -13,6 +13,6 @@ object update extends js.Object {
     * @param options Contents of the notification to update to.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def apply(notificationId: String, options: UpdateNotificationOptions): js.Promise[js.UndefOr[Boolean]] = js.native
+  def apply(notificationId: String, options: UpdateNotificationOptions): js.Promise[Boolean] = js.native
 }
 

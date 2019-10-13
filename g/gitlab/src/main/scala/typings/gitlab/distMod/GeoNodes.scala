@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "GeoNodes")
 @js.native
 class GeoNodes ()
-  extends typings.gitlab.distServicesMod.GeoNodes
+  extends typings.gitlab.distServicesGeoNodesMod.GeoNodes
 

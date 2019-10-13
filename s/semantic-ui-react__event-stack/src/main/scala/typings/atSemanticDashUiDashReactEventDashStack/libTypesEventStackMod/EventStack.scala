@@ -1,13 +1,13 @@
 package typings.atSemanticDashUiDashReactEventDashStack.libTypesEventStackMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait EventStack
-  extends PureComponent[EventStackProps, js.Object, js.Any] {
+  extends Component[EventStackProps, js.Object, js.Any] {
   @JSName("componentDidMount")
   def componentDidMount_MEventStack(): Unit = js.native
   @JSName("componentDidUpdate")

@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_Index
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestyleindexnumbertabbarIds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Segment")
 @js.native
 class Segment ()
-  extends Component[Anon_Index, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestyleindexnumbertabbarIds, js.Any, js.Any]
 

@@ -13,13 +13,13 @@ object executeScript extends js.Object {
     * doc.
     * @param details Details of the script to run.
     */
-  def apply(details: InjectDetails): js.Promise[js.UndefOr[js.Array[_]]] = js.native
+  def apply(details: InjectDetails): js.Promise[js.Array[_]] = js.native
   /**
     * Injects JavaScript code into a page. For details, see the programmatic injection section of the content scripts
     * doc.
     * @param tabId The ID of the tab in which to run the script; defaults to the active tab of the current window.
     * @param details Details of the script to run.
     */
-  def apply(tabId: Double, details: InjectDetails): js.Promise[js.UndefOr[js.Array[_]]] = js.native
+  def apply(tabId: Double, details: InjectDetails): js.Promise[js.Array[_]] = js.native
 }
 

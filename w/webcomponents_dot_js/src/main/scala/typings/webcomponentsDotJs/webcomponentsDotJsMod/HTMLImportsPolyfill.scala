@@ -1,6 +1,6 @@
 package typings.webcomponentsDotJs.webcomponentsDotJsMod
 
-import typings.webcomponentsDotJs.webcomponentsDotJsMod.Global.Document
+import typings.webcomponentsDotJs.webcomponentsDotJsMod._Global_.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

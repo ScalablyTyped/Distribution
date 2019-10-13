@@ -1,7 +1,8 @@
 package typings.reactDashBootstrap.libMenuItemMod
 
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.reactDashBootstrap.reactDashBootstrapMod.SelectCallback
@@ -9,7 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MenuItemProps extends HTMLProps[MenuItem] {
+trait MenuItemProps
+  extends AllHTMLAttributes[MenuItem]
+     with ClassAttributes[MenuItem] {
   var active: js.UndefOr[Boolean] = js.undefined
   var bsClass: js.UndefOr[String] = js.undefined
   var divider: js.UndefOr[Boolean] = js.undefined
@@ -24,7 +27,8 @@ trait MenuItemProps extends HTMLProps[MenuItem] {
 object MenuItemProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[MenuItem] = null,
+    AllHTMLAttributes: AllHTMLAttributes[MenuItem] = null,
+    ClassAttributes: ClassAttributes[MenuItem] = null,
     active: js.UndefOr[Boolean] = js.undefined,
     bsClass: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -37,7 +41,8 @@ object MenuItemProps {
     title: String = null
   ): MenuItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

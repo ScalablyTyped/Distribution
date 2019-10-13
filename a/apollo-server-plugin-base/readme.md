@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server-plugin-base
 
-Typings are for version 0.6.4
+Typings are for version 0.6.5
 
 ## Library description:
 Apollo Server plugin base classes

@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Html5AdBuilder[Html5Ad] extends AdBuilder[Html5AdBuilder[Html5Ad]] {
+trait Html5AdBuilder[Html5Ad]
+  extends AdWordsBuilder[Html5AdBuilder[Html5Ad]]
+     with hasFinalUrlBuilder[Html5AdBuilder[Html5Ad]]
+     with hasTrackingTemplateBuilder[Html5AdBuilder[Html5Ad]] {
   def withDimensions(dimensions: String): Html5AdBuilder[Html5Ad]
   def withDisplayUrl(displayUrl: String): Html5AdBuilder[Html5Ad]
   def withEntryPoint(entryPoint: String): Html5AdBuilder[Html5Ad]

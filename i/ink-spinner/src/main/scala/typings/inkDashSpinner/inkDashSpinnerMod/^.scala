@@ -1,10 +1,12 @@
 package typings.inkDashSpinner.inkDashSpinnerMod
 
+import typings.ink.inkMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("ink-spinner", JSImport.Namespace)
 @js.native
-class ^ () extends Spinner
+class ^ ()
+  extends Component[SpinnerProps with ChalkProps, js.Object, js.Object]
 

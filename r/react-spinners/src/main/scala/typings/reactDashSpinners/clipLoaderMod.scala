@@ -1,6 +1,6 @@
 package typings.reactDashSpinners
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashSpinners.clipLoaderMod.Loader
 import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object clipLoaderMod extends js.Object {
   @js.native
   trait Loader
-    extends PureComponent[LoaderSizeProps, js.Object, js.Any] {
+    extends Component[LoaderSizeProps, js.Object, js.Any] {
     var style: StyleFunction = js.native
   }
   

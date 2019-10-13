@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("inquirer/lib/prompts/number", JSImport.Namespace)
 @js.native
-class ^[TQuestion /* <: Question */] protected () extends NumberPrompt[TQuestion] {
+class ^[TQuestion /* <: Question */] protected ()
+  extends typings.inquirer.libPromptsInputMod.^[TQuestion] {
   /**
     * Initializes a new instance of the `NumberPrompt<T>` class.
     *

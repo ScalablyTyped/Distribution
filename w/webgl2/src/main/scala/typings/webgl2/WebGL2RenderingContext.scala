@@ -20,7 +20,8 @@ import typings.std.Uint8ClampedArray
 import typings.std.WebGLActiveInfo
 import typings.std.WebGLBuffer
 import typings.std.WebGLProgram
-import typings.std.WebGLRenderingContext
+import typings.std.WebGLRenderingContextBase
+import typings.std.WebGLRenderingContextOverloads
 import typings.std.WebGLTexture
 import typings.std.WebGLUniformLocation
 import scala.scalajs.js
@@ -28,7 +29,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait WebGL2RenderingContext extends WebGLRenderingContext {
+trait WebGL2RenderingContext
+  extends WebGLRenderingContextBase
+     with WebGLRenderingContextOverloads {
                  // 0x8A34
   val ACTIVE_UNIFORM_BLOCKS: Double = js.native
                                         // 0x9119

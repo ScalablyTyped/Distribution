@@ -1,6 +1,7 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CatalogTax.CalculationPhaseEnum
+import typings.squareDashConnect.squareDashConnectStrings.TAX_SUBTOTAL_PHASE
+import typings.squareDashConnect.squareDashConnectStrings.TAX_TOTAL_PHASE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ class CatalogTax () extends js.Object {
     * Whether the tax is calculated based on a payment's subtotal or total.
     * See [TaxCalculationPhase](#type-taxcalculationphase) for possible values.
     */
-  var calculation_phase: js.UndefOr[CalculationPhaseEnum] = js.native
+  var calculation_phase: js.UndefOr[TAX_SUBTOTAL_PHASE | TAX_TOTAL_PHASE] = js.native
   /**
     * If `true`, the tax will be shown as enabled in the Square Point of Sale app.
     */
@@ -25,7 +26,7 @@ class CatalogTax () extends js.Object {
   /**
     * Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for possible values.
     */
-  var inclusion_type: js.UndefOr[TaxTypeEnum] = js.native
+  var inclusion_type: js.UndefOr[TaxType] = js.native
   /**
     * The tax's name. Searchable. This field has max length of 255 Unicode code points.
     */
@@ -35,27 +36,5 @@ class CatalogTax () extends js.Object {
     * A value of `7.5` corresponds to 7.5%.
     */
   var percentage: js.UndefOr[String] = js.native
-}
-
-@JSImport("square-connect", "CatalogTax")
-@js.native
-object CatalogTax extends js.Object {
-  @js.native
-  sealed trait CalculationPhaseEnum extends js.Object
-  
-  @js.native
-  object CalculationPhaseEnum extends js.Object {
-    @js.native
-    sealed trait TAX_SUBTOTAL_PHASE extends CalculationPhaseEnum
-    
-    @js.native
-    sealed trait TAX_TOTAL_PHASE extends CalculationPhaseEnum
-    
-    /* "TAX_SUBTOTAL_PHASE" */ val TAX_SUBTOTAL_PHASE: typings.squareDashConnect.squareDashConnectMod.CatalogTax.CalculationPhaseEnum.TAX_SUBTOTAL_PHASE with String = js.native
-    /* "TAX_TOTAL_PHASE" */ val TAX_TOTAL_PHASE: typings.squareDashConnect.squareDashConnectMod.CatalogTax.CalculationPhaseEnum.TAX_TOTAL_PHASE with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[CalculationPhaseEnum with String] = js.native
-  }
-  
 }
 

@@ -1,7 +1,8 @@
 package typings.reactstrap.libCarouselItemMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.std.HTMLElement
@@ -10,7 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CarouselItemProps
-  extends HTMLProps[HTMLElement]
+  extends AllHTMLAttributes[HTMLElement]
+     with ClassAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var in: js.UndefOr[Boolean] = js.undefined
@@ -27,7 +29,8 @@ trait CarouselItemProps
 object CarouselItemProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
+    ClassAttributes: ClassAttributes[HTMLElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     cssModule: CSSModule = null,
     in: js.UndefOr[Boolean] = js.undefined,
@@ -41,7 +44,8 @@ object CarouselItemProps {
     tag: String | ReactType[_] = null
   ): CarouselItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)

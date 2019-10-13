@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("azure-sb/lib/servicebusservicebase", JSImport.Namespace)
 @js.native
-class ^ protected () extends ServiceBusServiceBase {
+class ^ protected ()
+  extends typings.azureDashSb.libServicebusserviceclientMod.^ {
   def this(configOrNamespaceOrConnectionString: String) = this()
   def this(configOrNamespaceOrConnectionString: String, accessKey: String) = this()
   def this(configOrNamespaceOrConnectionString: String, accessKey: String, issuer: String) = this()

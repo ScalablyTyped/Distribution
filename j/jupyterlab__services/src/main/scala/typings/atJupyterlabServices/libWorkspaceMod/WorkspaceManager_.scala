@@ -1,6 +1,6 @@
 package typings.atJupyterlabServices.libWorkspaceMod
 
-import typings.atJupyterlabCoreutils.atJupyterlabCoreutilsMod.DataConnector
+import typings.atJupyterlabCoreutils.libDataconnectorMod.DataConnector
 import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atJupyterlabServices.libWorkspaceMod.Workspace.IWorkspace
 import typings.atJupyterlabServices.libWorkspaceMod.WorkspaceManager.IOptions

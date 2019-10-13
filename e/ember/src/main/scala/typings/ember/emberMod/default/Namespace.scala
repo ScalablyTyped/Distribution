@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Namespace")
 @js.native
 class Namespace ()
-  extends typings.ember.emberMod.Ember.Namespace
+  extends typings.atEmberObject.atEmberObjectMod.default
 

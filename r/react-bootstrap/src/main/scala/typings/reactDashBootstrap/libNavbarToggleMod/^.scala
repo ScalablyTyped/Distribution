@@ -1,10 +1,12 @@
 package typings.reactDashBootstrap.libNavbarToggleMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-bootstrap/lib/NavbarToggle", JSImport.Namespace)
 @js.native
-class ^ () extends NavbarToggle
+class ^ ()
+  extends Component[NavbarToggleProps, js.Object, js.Any]
 

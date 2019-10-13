@@ -1,5 +1,9 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libButtonBrowseButtonMod.BrowseButtonProps
+import typings.reactDashToolbox.libButtonButtonMod.ButtonProps
+import typings.reactDashToolbox.libButtonIconButtonMod.IconButtonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,19 +13,19 @@ import scala.scalajs.js.annotation._
 object libButtonMod extends js.Object {
   @js.native
   class BrowseButton ()
-    extends typings.reactDashToolbox.libButtonBrowseButtonMod.BrowseButton
+    extends Component[BrowseButtonProps, js.Object, js.Any]
   
   @js.native
   class Button ()
-    extends typings.reactDashToolbox.libButtonButtonMod.Button
+    extends Component[ButtonProps, js.Object, js.Any]
   
   @js.native
   class IconButton ()
-    extends typings.reactDashToolbox.libButtonIconButtonMod.IconButton
+    extends Component[IconButtonProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libButtonButtonMod.Button
+    extends Component[ButtonProps, js.Object, js.Any]
   
 }
 

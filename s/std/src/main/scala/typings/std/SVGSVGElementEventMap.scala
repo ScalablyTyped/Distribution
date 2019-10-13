@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SVGSVGElementEventMap extends SVGElementEventMap {
+trait SVGSVGElementEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   var SVGUnload: Event
   var SVGZoom: SVGZoomEvent
 }

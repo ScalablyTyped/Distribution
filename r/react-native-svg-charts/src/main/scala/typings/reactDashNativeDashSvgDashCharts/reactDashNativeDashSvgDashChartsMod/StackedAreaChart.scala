@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChartsMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-svg-charts", "StackedAreaChart")
 @js.native
 class StackedAreaChart[T] ()
-  extends PureComponent[StackedAreaChartProps[T], js.Object, js.Any]
+  extends Component[StackedAreaChartProps[T], js.Object, js.Any]
 
 /* static members */
 @JSImport("react-native-svg-charts", "StackedAreaChart")

@@ -1,8 +1,7 @@
 package typings.multerDashS3.multerDashS3Mod
 
-import typings.awsDashSdk.awsDashSdkMod.S3
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.Express.Request
-import typings.multer.multerMod.Global.Express.Multer.File
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod._Global_.Express.Request
+import typings.multer.multerMod._Global_.Express.Multer.File
 import typings.node.NodeJS.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,7 +59,7 @@ trait Options extends js.Object {
       Unit
     ]
   ] = js.undefined
-  var s3: S3
+  var s3: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.S3 */ js.Any
   var serverSideEncryption: js.UndefOr[
     (js.Function3[
       /* req */ Request, 
@@ -80,7 +79,7 @@ object Options {
       /* callback */ js.Function2[/* error */ js.Any, /* bucket */ js.UndefOr[String], Unit], 
       Unit
     ]) | String,
-    s3: S3,
+    s3: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.S3 */ js.Any,
     acl: (js.Function3[
       /* req */ Request, 
       /* file */ File, 

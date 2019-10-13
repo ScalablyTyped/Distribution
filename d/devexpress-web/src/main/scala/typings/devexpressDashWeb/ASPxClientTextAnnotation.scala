@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientTextAnnotation")
 @js.native
-class ASPxClientTextAnnotation () extends ASPxClientAnnotation {
+class ASPxClientTextAnnotation () extends ASPxClientWebChartElementNamed {
   /**
     * Gets the lines of text within an annotation.
     */

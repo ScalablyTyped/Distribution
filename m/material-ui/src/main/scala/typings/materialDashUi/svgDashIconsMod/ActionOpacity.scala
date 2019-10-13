@@ -1,11 +1,13 @@
 package typings.materialDashUi.svgDashIconsMod
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("material-ui/svg-icons", "ActionOpacity")
 @js.native
-class ActionOpacity () extends SvgIcon
+class ActionOpacity ()
+  extends Component[SvgIconProps, js.Object, js.Any]
 

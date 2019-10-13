@@ -7,11 +7,8 @@ import scala.scalajs.js.annotation._
 
 object atApolloReactDashHocComponents extends atApolloReactDashHocProps {
   @scala.inline
-  def ApolloConsumer: ComponentType[typings.atApolloReactDashCommon.libContextApolloConsumerMod.ApolloConsumerProps] = typings.atApolloReactDashHoc.atApolloReactDashHocMod.ApolloConsumer.asInstanceOf[typings.react.reactMod.ComponentType[typings.atApolloReactDashCommon.libContextApolloConsumerMod.ApolloConsumerProps]]
+  def ApolloConsumer: ComponentType[ApolloConsumerProps] = typings.atApolloReactDashHoc.atApolloReactDashHocMod.ApolloConsumer.asInstanceOf[typings.react.reactMod.ComponentType[ApolloConsumerProps]]
   @scala.inline
-  def ApolloProvider: ComponentType[
-    typings.atApolloReactDashCommon.libContextApolloProviderMod.ApolloProviderProps[js.Any]
-  ] = typings.atApolloReactDashHoc.atApolloReactDashHocMod.ApolloProvider.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atApolloReactDashCommon.libContextApolloProviderMod.ApolloProviderProps[js.Any]]]
+  def ApolloProvider: ComponentType[ApolloProviderProps[js.Any]] = typings.atApolloReactDashHoc.atApolloReactDashHocMod.ApolloProvider.asInstanceOf[typings.react.reactMod.ComponentType[ApolloProviderProps[js.Any]]]
 }
 

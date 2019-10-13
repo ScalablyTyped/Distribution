@@ -1,11 +1,11 @@
 package typings.fullcalendar.srcMainMod
 
+import typings.fullcalendar.singleEventDefMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("fullcalendar/src/main", "SingleEventDef")
 @js.native
-class SingleEventDef ()
-  extends typings.fullcalendar.srcExportsMod.SingleEventDef
+class SingleEventDef () extends Default
 

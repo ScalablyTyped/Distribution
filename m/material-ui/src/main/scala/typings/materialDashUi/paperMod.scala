@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.paperMod.Paper
+import typings.materialDashUi.__MaterialUI.PaperProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object paperMod extends js.Object {
   @js.native
   class Paper ()
-    extends typings.materialDashUi.__MaterialUI.Paper
+    extends Component[PaperProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Paper
+  class default ()
+    extends Component[PaperProps, js.Object, js.Any]
   
 }
 

@@ -1,7 +1,8 @@
 package typings.reactstrap.libPaginationLinkMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.std.HTMLAnchorElement
@@ -10,7 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaginationLinkProps
-  extends HTMLProps[HTMLAnchorElement]
+  extends AllHTMLAttributes[HTMLAnchorElement]
+     with ClassAttributes[HTMLAnchorElement]
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var first: js.UndefOr[Boolean] = js.undefined
@@ -23,7 +25,8 @@ trait PaginationLinkProps
 object PaginationLinkProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLAnchorElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLAnchorElement] = null,
+    ClassAttributes: ClassAttributes[HTMLAnchorElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     `aria-label`: String = null,
     className: String = null,
@@ -35,7 +38,8 @@ object PaginationLinkProps {
     tag: String | ReactType[_] = null
   ): PaginationLinkProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (className != null) __obj.updateDynamic("className")(className)

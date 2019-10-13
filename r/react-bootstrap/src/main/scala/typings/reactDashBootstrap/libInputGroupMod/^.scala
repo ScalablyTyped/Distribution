@@ -1,13 +1,15 @@
 package typings.reactDashBootstrap.libInputGroupMod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-bootstrap/lib/InputGroup", JSImport.Namespace)
 @js.native
-class ^ () extends InputGroup
+class ^ ()
+  extends Component[InputGroupProps, js.Object, js.Any]
 
 @JSImport("react-bootstrap/lib/InputGroup", JSImport.Namespace)
 @js.native

@@ -13,7 +13,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectableOptionSelec
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.off
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.on
 import typings.react.reactMod.FormEvent
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

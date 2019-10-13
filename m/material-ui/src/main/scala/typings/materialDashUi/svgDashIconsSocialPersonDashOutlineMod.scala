@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsSocialPersonDashOutlineMod.SocialPersonOutline
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsSocialPersonDashOutlineMod extends js.Object {
   @js.native
-  class SocialPersonOutline () extends SvgIcon
+  class SocialPersonOutline ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends SocialPersonOutline
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

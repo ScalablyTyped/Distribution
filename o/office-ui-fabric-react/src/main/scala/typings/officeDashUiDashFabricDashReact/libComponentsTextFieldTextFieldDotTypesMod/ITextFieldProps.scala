@@ -8,7 +8,7 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.FormEvent
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import typings.std.RegExp

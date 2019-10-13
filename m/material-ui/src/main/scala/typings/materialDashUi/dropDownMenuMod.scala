@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.dropDownMenuMod.DropDownMenu
+import typings.materialDashUi.__MaterialUI.Menus.DropDownMenuProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object dropDownMenuMod extends js.Object {
   @js.native
   class DropDownMenu ()
-    extends typings.materialDashUi.__MaterialUI.Menus.DropDownMenu
+    extends Component[DropDownMenuProps, js.Object, js.Any]
   
   @js.native
-  class default () extends DropDownMenu
+  class default ()
+    extends Component[DropDownMenuProps, js.Object, js.Any]
   
 }
 

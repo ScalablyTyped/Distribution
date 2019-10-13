@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object isotopeDashLayoutMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.isotopeDashLayout.isotopeDashLayoutMod.Global.JQuery
+  import typings.isotopeDashLayout.isotopeDashLayoutMod._Global_.JQuery
   import typings.std.HTMLElement
   import typings.std.NodeList
 

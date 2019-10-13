@@ -11,11 +11,11 @@ object googleDashMapsDashReactComponents extends googleDashMapsDashReactProps {
   @scala.inline
   def HeatMap: ComponentType[js.Any] = js.constructorOf[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.HeatMap].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def InfoWindow: ComponentType[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.InfoWindowProps] = js.constructorOf[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.InfoWindow].asInstanceOf[typings.react.reactMod.ComponentType[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.InfoWindowProps]]
+  def InfoWindow: ComponentType[InfoWindowProps] = js.constructorOf[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.InfoWindow].asInstanceOf[typings.react.reactMod.ComponentType[InfoWindowProps]]
   @scala.inline
-  def Map: ComponentType[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.MapProps] = js.constructorOf[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.Map].asInstanceOf[typings.react.reactMod.ComponentType[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.MapProps]]
+  def Map: ComponentType[MapProps] = js.constructorOf[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.Map].asInstanceOf[typings.react.reactMod.ComponentType[MapProps]]
   @scala.inline
-  def Marker: ComponentType[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.MarkerProps] = js.constructorOf[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.Marker].asInstanceOf[typings.react.reactMod.ComponentType[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.MarkerProps]]
+  def Marker: ComponentType[MarkerProps] = js.constructorOf[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.Marker].asInstanceOf[typings.react.reactMod.ComponentType[MarkerProps]]
   @scala.inline
   def Polygon: ComponentType[js.Any] = js.constructorOf[typings.googleDashMapsDashReact.googleDashMapsDashReactMod.Polygon].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline

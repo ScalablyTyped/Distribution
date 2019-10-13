@@ -1,7 +1,7 @@
 package typings.reactDashFoundation
 
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.StatelessComponent
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashFoundation.componentsAccordionMod.AccordianContentProps
 import typings.reactDashFoundation.componentsAccordionMod.AccordianItemProps
 import typings.reactDashFoundation.componentsAccordionMod.AccordianProps

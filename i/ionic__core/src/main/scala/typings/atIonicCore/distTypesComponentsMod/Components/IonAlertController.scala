@@ -1,7 +1,7 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.distTypesComponentsAlertAlertDashInterfaceMod.AlertOptions
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonAlertElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAlertElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ScriptTask extends Task {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ trait ScriptTask extends Activity {
+  var incomingConversationLinks: js.Array[ConversationLink]
+  var outgoingConversationLinks: js.Array[ConversationLink]
   var script: String
   var scriptFormat: String
 }

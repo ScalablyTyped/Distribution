@@ -12,6 +12,6 @@ object atNivoRadarComponents extends atNivoRadarProps {
   def Radar: ComponentType[RadarProps with Dimensions] = js.constructorOf[typings.atNivoRadar.atNivoRadarMod.Radar].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoRadar.atNivoRadarMod.RadarProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
   @scala.inline
-  def ResponsiveRadar: ComponentType[RadarProps] = js.constructorOf[typings.atNivoRadar.atNivoRadarMod.ResponsiveRadar].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoRadar.atNivoRadarMod.RadarProps]]
+  def ResponsiveRadar: ComponentType[ResponsiveRadarProps] = js.constructorOf[typings.atNivoRadar.atNivoRadarMod.ResponsiveRadar].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveRadarProps]]
 }
 

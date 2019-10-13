@@ -1,8 +1,8 @@
 package typings.atAntDashDesignReactDashNative.libSwipeDashActionMod
 
 import typings.atAntDashDesignReactDashNative.Anon_BackgroundColor
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNativeDashSwipeout.reactDashNativeDashSwipeoutMod.SwipeoutButtonProperties

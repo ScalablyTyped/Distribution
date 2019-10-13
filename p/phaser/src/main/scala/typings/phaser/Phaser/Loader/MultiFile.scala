@@ -23,6 +23,11 @@ class MultiFile protected () extends js.Object {
     */
   def this(loader: LoaderPlugin, `type`: String, key: String, files: js.Array[File]) = this()
   /**
+    * A reference to the Loaders baseURL at the time this MultiFile was created.
+    * Used to populate child-files.
+    */
+  var baseURL: String = js.native
+  /**
     * The completion status of this MultiFile.
     */
   var complete: Boolean = js.native
@@ -47,9 +52,19 @@ class MultiFile protected () extends js.Object {
     */
   var loader: LoaderPlugin = js.native
   /**
+    * A reference to the Loaders path at the time this MultiFile was created.
+    * Used to populate child-files.
+    */
+  var path: String = js.native
+  /**
     * The number of files to load.
     */
   var pending: integer = js.native
+  /**
+    * A reference to the Loaders prefix at the time this MultiFile was created.
+    * Used to populate child-files.
+    */
+  var prefix: String = js.native
   /**
     * The file type string for sorting within the Loader.
     */

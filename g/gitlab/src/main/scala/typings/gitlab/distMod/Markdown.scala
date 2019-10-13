@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "Markdown")
 @js.native
 class Markdown ()
-  extends typings.gitlab.distServicesMod.Markdown
+  extends typings.gitlab.distServicesMarkdownMod.Markdown
 

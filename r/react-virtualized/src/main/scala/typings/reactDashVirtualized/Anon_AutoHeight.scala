@@ -1,8 +1,8 @@
 package typings.reactDashVirtualized
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellMeasurerCache
 import typings.reactDashVirtualized.distEsGridMod.OverscanIndices
 import typings.reactDashVirtualized.distEsGridMod.OverscanIndicesGetter

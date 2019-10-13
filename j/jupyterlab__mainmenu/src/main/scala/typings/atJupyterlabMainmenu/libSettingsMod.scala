@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/mainmenu/lib/settings", JSImport.Namespace)
 @js.native
 object libSettingsMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable because Already inherited
-  - typings.atJupyterlabMainmenu.libSettingsMod.ISettingsMenu because Already inherited */ @js.native
+  @js.native
   class SettingsMenu protected () extends JupyterLabMenu {
     /**
       * Construct the settings menu.

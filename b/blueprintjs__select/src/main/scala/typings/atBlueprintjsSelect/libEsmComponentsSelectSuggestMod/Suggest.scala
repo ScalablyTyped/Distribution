@@ -1,7 +1,7 @@
 package typings.atBlueprintjsSelect.libEsmComponentsSelectSuggestMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/select/lib/esm/components/select/suggest", "Suggest")
 @js.native
 class Suggest[T] ()
-  extends PureComponent[ISuggestProps[T], ISuggestState[T], js.Any] {
+  extends Component[ISuggestProps[T], ISuggestState[T], js.Any] {
   var TypedQueryList: js.Any = js.native
   var getInitialSelectedItem: js.Any = js.native
   var getTargetKeyDownHandler: js.Any = js.native

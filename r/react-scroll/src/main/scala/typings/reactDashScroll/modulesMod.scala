@@ -1,6 +1,9 @@
 package typings.reactDashScroll
 
-import typings.reactDashScroll.modulesComponentsButtonMod.default
+import typings.react.reactMod.Component
+import typings.reactDashScroll.modulesComponentsButtonMod.ButtonProps
+import typings.reactDashScroll.modulesComponentsElementMod.ElementProps
+import typings.reactDashScroll.modulesComponentsLinkMod.LinkProps
 import typings.reactDashScroll.modulesMixinsScrollDashEventsMod.Events.ScrollEvent
 import typings.reactDashScroll.modulesMixinsScrollDashSpyMod.ScrollSpy
 import scala.scalajs.js
@@ -11,15 +14,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object modulesMod extends js.Object {
   @js.native
-  class Button () extends default
+  class Button ()
+    extends Component[ButtonProps, js.Object, js.Any]
   
   @js.native
   class Element ()
-    extends typings.reactDashScroll.modulesComponentsElementMod.default
+    extends Component[ElementProps, js.Object, js.Any]
   
   @js.native
   class Link ()
-    extends typings.reactDashScroll.modulesComponentsLinkMod.default
+    extends Component[LinkProps, js.Object, js.Any]
   
   val scrollSpy: ScrollSpy = js.native
   @js.native

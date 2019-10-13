@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ndn-js", "WebSocketTransport")
 @js.native
 class WebSocketTransport ()
-  extends typings.ndnDashJs.transportMod.WebSocketTransport
+  extends typings.ndnDashJs.transportMod.Transport
 
 @JSImport("ndn-js", "WebSocketTransport")
 @js.native

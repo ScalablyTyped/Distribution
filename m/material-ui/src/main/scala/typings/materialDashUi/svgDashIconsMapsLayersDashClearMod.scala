@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsMapsLayersDashClearMod.MapsLayersClear
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsMapsLayersDashClearMod extends js.Object {
   @js.native
-  class MapsLayersClear () extends SvgIcon
+  class MapsLayersClear ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends MapsLayersClear
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

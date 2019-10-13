@@ -1,11 +1,14 @@
 package typings.reactDashBootstrap.libPanelBodyMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PanelBodyProps extends HTMLProps[PanelBody] {
+trait PanelBodyProps
+  extends AllHTMLAttributes[PanelBody]
+     with ClassAttributes[PanelBody] {
   var bsClass: js.UndefOr[String] = js.undefined
   var collapsible: js.UndefOr[Boolean] = js.undefined
 }
@@ -13,12 +16,14 @@ trait PanelBodyProps extends HTMLProps[PanelBody] {
 object PanelBodyProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[PanelBody] = null,
+    AllHTMLAttributes: AllHTMLAttributes[PanelBody] = null,
+    ClassAttributes: ClassAttributes[PanelBody] = null,
     bsClass: String = null,
     collapsible: js.UndefOr[Boolean] = js.undefined
   ): PanelBodyProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
     __obj.asInstanceOf[PanelBodyProps]

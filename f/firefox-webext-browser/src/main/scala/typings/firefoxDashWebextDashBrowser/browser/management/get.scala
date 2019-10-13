@@ -12,6 +12,6 @@ object get extends js.Object {
     * Returns information about the installed extension that has the given ID.
     * @param id The ID from an item of `management.ExtensionInfo`.
     */
-  def apply(id: ExtensionID): js.Promise[js.UndefOr[ExtensionInfo]] = js.native
+  def apply(id: ExtensionID): js.Promise[ExtensionInfo] = js.native
 }
 

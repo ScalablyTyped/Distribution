@@ -23,23 +23,23 @@ import scala.scalajs.js.annotation._
 object reactDashFnsMod extends js.Object {
   @js.native
   class DeviceMotion ()
-    extends typings.reactDashFns.distDeviceMotionMod.DeviceMotion
+    extends typings.reactDashFns.distDeviceMotionDeviceMotionMod.DeviceMotion
   
   @js.native
   class DeviceOrientation ()
-    extends typings.reactDashFns.distDeviceOrientationMod.DeviceOrientation
+    extends typings.reactDashFns.distDeviceOrientationDeviceOrientationMod.DeviceOrientation
   
   @js.native
   class GeoPosition ()
-    extends typings.reactDashFns.distGeoPositionMod.GeoPosition
+    extends typings.reactDashFns.distGeoPositionGeoPositionMod.GeoPosition
   
   @js.native
   class Locales ()
-    extends typings.reactDashFns.distLocalesMod.Locales
+    extends typings.reactDashFns.distLocalesLocalesMod.Locales
   
   @js.native
   class Network ()
-    extends typings.reactDashFns.distNetworkMod.Network
+    extends typings.reactDashFns.distNetworkNetworkMod.Network
   
   @js.native
   class Scroll ()

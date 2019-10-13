@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-cache-control" : "0.8.4"
+      "apollo-cache-control" : "0.8.5"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-cache-control" : "0.8.4"
+      "apollo-cache-control" : "0.8.5"
     }
   ],
   "compile-devDependencies" : [

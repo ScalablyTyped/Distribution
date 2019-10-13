@@ -13,7 +13,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PathProps extends CommonPathProps {
+trait PathProps
+  extends TransformProps
+     with FillProps
+     with StrokeProps
+     with ClipProps
+     with VectorEffectProps
+     with ResponderProps
+     with TouchableProps
+     with DefinitionProps
+     with CommonMaskProps {
   var d: js.UndefOr[String] = js.undefined
   var opacity: js.UndefOr[NumberProp] = js.undefined
 }

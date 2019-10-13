@@ -1,12 +1,13 @@
 package typings.xadesjs.xadesjsMod.xml
 
+import typings.xmlDashCore.xmlDashCoreMod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.DataObjectFormat")
 @js.native
-class DataObjectFormat () extends XadesObject {
+class DataObjectFormat () extends XmlObject {
   var Description: String = js.native
   var Encoding: String = js.native
   var MimeType: String = js.native

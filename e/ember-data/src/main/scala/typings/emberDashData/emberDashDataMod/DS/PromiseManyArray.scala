@@ -1,5 +1,7 @@
 package typings.emberDashData.emberDashDataMod.DS
 
+import typings.atEmberObject.promiseDashProxyDashMixinMod.PromiseProxyMixin
+import typings.ember.emberMod.default.ArrayProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +13,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.PromiseManyArray")
 @js.native
-class PromiseManyArray[T /* <: Model */] () extends PromiseArray[T] {
+class PromiseManyArray[T /* <: Model */] ()
+  extends PromiseProxyMixin[ArrayProxy[T]]
+     with typings.atEmberArray.proxyMod.ArrayProxy[T] {
   /**
     * Create a child record within the owner
     */

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object reactDashReduxMod {
   import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsMod.NonReactStatics
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
   import typings.react.reactMod.NamedExoticComponent
+  import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
   import typings.reactDashRedux.Anon_WrappedComponent
   import typings.redux.reduxMod.Action
   import typings.redux.reduxMod.Dispatch

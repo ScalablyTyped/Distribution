@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react", "VirtualizedComboBox")
 @js.native
 class VirtualizedComboBox ()
-  extends typings.officeDashUiDashFabricDashReact.libComboBoxMod.VirtualizedComboBox
+  extends typings.officeDashUiDashFabricDashReact.libComponentsComboBoxVirtualizedComboBoxMod.VirtualizedComboBox
 

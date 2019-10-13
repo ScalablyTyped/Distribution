@@ -1,6 +1,6 @@
 package typings.reactDashRouterDashConfig.reactDashRouterDashConfigMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashRouter.reactDashRouterMod.SwitchProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`

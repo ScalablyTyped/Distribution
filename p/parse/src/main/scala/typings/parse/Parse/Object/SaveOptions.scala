@@ -1,19 +1,23 @@
 package typings.parse.Parse.Object
 
 import typings.parse.Parse.CascadeSaveOption
-import typings.parse.Parse.ScopeOptions
+import typings.parse.Parse.ErrorOption
+import typings.parse.Parse.SessionTokenOption
 import typings.parse.Parse.SilentOption
-import typings.parse.Parse.SuccessFailureOptions
+import typings.parse.Parse.SuccessOption
+import typings.parse.Parse.UseMasterKeyOption
 import typings.parse.Parse.WaitOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SaveOptions
-  extends SuccessFailureOptions
-     with CascadeSaveOption
+  extends CascadeSaveOption
+     with SuccessOption
+     with ErrorOption
      with SilentOption
-     with ScopeOptions
+     with SessionTokenOption
+     with UseMasterKeyOption
      with WaitOption
 
 object SaveOptions {

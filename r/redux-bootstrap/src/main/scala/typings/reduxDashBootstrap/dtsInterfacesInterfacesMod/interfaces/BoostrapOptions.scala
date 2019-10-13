@@ -1,6 +1,6 @@
 package typings.reduxDashBootstrap.dtsInterfacesInterfacesMod.interfaces
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Dispatch
 import typings.redux.reduxMod.Middleware

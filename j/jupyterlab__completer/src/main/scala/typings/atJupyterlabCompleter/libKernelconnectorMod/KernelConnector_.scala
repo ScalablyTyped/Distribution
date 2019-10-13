@@ -3,7 +3,7 @@ package typings.atJupyterlabCompleter.libKernelconnectorMod
 import typings.atJupyterlabCompleter.libHandlerMod.CompletionHandler.IReply
 import typings.atJupyterlabCompleter.libHandlerMod.CompletionHandler.IRequest
 import typings.atJupyterlabCompleter.libKernelconnectorMod.KernelConnector.IOptions
-import typings.atJupyterlabCoreutils.atJupyterlabCoreutilsMod.DataConnector
+import typings.atJupyterlabCoreutils.libDataconnectorMod.DataConnector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

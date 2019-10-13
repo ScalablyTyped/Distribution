@@ -1,6 +1,6 @@
 package typings.atJupyterlabLauncher.atJupyterlabLauncherMod
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabApputils.libVdomMod.VDomModel
 import typings.atJupyterlabLauncher.atJupyterlabLauncherMod.ILauncher.IItemOptions
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable

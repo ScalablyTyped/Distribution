@@ -13,9 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.agDashGrid.distLibInterfacesIComponentMod.IComponent because Already inherited
-- typings.agDashGrid.distLibInterfacesIFilterMod.IFilterComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter")
+@JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter")
 @js.native
 abstract class BaseFilter[T, P /* <: IFilterParams */, M] ()
   extends Component

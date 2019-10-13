@@ -111,6 +111,8 @@ trait reactDashMdlProps {
   def MenuProps: typings.reactDashMdl.reactDashMdlMod.MenuProps.type = typings.reactDashMdl.reactDashMdlMod.MenuProps
   type MenuProps = typings.reactDashMdl.reactDashMdlMod.MenuProps
   type MenuItemProps = __MDLOtherProps
+  @scala.inline
+  def NavigationProps: typings.reactDashMdl.reactDashMdlMod.NavigationProps.type = typings.reactDashMdl.reactDashMdlMod.NavigationProps
   type NavigationProps = typings.reactDashMdl.reactDashMdlMod.NavigationProps
   @scala.inline
   def ProgressBarProps: typings.reactDashMdl.reactDashMdlMod.ProgressBarProps.type = typings.reactDashMdl.reactDashMdlMod.ProgressBarProps

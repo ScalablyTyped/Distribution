@@ -2,8 +2,8 @@ package typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChart
 
 import typings.d3DashScale.d3DashScaleMod.ScaleBand
 import typings.d3DashShape.d3DashShapeMod.CurveGenerator
-import typings.d3DashShape.d3DashShapeMod.Global.CanvasRenderingContext2D
 import typings.d3DashShape.d3DashShapeMod.Series
+import typings.d3DashShape.d3DashShapeMod._Global_.CanvasRenderingContext2D
 import typings.react.reactMod.Component
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle

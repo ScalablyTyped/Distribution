@@ -1,5 +1,6 @@
 package typings.antd
 
+import typings.antd.esPaginationPaginationMod.Pagination
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object esPaginationMod extends js.Object {
   @js.native
-  class default ()
-    extends typings.antd.esPaginationPaginationMod.default
+  class default () extends Pagination
   
 }
 

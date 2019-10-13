@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object glDashReactDashDomComponents extends glDashReactDashDomProps {
   @scala.inline
-  def GLViewDOM: ComponentType[typings.glDashReactDashDom.gLViewDOMMod.GLViewDOMProps] = js.constructorOf[typings.glDashReactDashDom.gLViewDOMMod.GLViewDOM].asInstanceOf[typings.react.reactMod.ComponentType[typings.glDashReactDashDom.gLViewDOMMod.GLViewDOMProps]]
+  def GLViewDOM: ComponentType[GLViewDOMProps] = js.constructorOf[typings.glDashReactDashDom.gLViewDOMMod.GLViewDOM].asInstanceOf[typings.react.reactMod.ComponentType[GLViewDOMProps]]
   @scala.inline
-  def Surface: ComponentType[typings.glDashReact.glDashReactMod.SurfaceProps] = js.constructorOf[typings.glDashReactDashDom.glDashReactDashDomMod.Surface].asInstanceOf[typings.react.reactMod.ComponentType[typings.glDashReact.glDashReactMod.SurfaceProps]]
+  def Surface: ComponentType[SurfaceProps] = js.constructorOf[typings.glDashReactDashDom.glDashReactDashDomMod.Surface].asInstanceOf[typings.react.reactMod.ComponentType[SurfaceProps]]
 }
 

@@ -12,9 +12,11 @@ trait GraphNodeObject extends GraphNode {
 
 object GraphNodeObject {
   @scala.inline
-  def apply(id: String, index: Double, name: String, `val`: js.Any, x: Double, y: Double): GraphNodeObject = {
-    val __obj = js.Dynamic.literal(id = id, index = index, name = name, x = x, y = y)
-    __obj.updateDynamic("val")(`val`)
+  def apply(index: Double, x: Double, y: Double, id: String = null, name: String = null, `val`: js.Any = null): GraphNodeObject = {
+    val __obj = js.Dynamic.literal(index = index, x = x, y = y)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`val` != null) __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[GraphNodeObject]
   }
 }

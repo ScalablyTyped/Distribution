@@ -1,6 +1,6 @@
 package typings.ionDashRangeslider.ionDashRangesliderMod
 
-import typings.ionDashRangeslider.ionDashRangesliderMod.Global.JQuery
+import typings.ionDashRangeslider.ionDashRangesliderMod._Global_.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

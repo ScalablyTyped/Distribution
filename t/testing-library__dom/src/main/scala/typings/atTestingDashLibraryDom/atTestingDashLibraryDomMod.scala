@@ -110,7 +110,13 @@ object atTestingDashLibraryDomMod extends js.Object {
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
   def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
-  def logDom(htmlElement: HTMLElement): Unit = js.native
+  def logDOM(): Unit = js.native
+  def logDOM(dom: Element): Unit = js.native
+  def logDOM(dom: Element, maxLength: Double): Unit = js.native
+  def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
+  def logDOM(dom: HTMLDocument): Unit = js.native
+  def logDOM(dom: HTMLDocument, maxLength: Double): Unit = js.native
+  def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
   def logRoles(container: HTMLElement): String = js.native
   def prettyDOM(): String | `false` = js.native
   def prettyDOM(dom: Element): String | `false` = js.native
@@ -189,7 +195,6 @@ object atTestingDashLibraryDomMod extends js.Object {
       getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
     ): BuiltQueryMethods[Arguments] = js.native
     def getElementError(message: String, container: HTMLElement): Error = js.native
-    def logDom(htmlElement: HTMLElement): Unit = js.native
   }
   
   @js.native

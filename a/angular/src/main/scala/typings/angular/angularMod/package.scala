@@ -10,7 +10,7 @@ package object angularMod {
   import typings.angular.JQLite
   import typings.angular.JQuery
   import typings.angular.JQueryStatic
-  import typings.angular.angularMod.Global.Function
+  import typings.angular.angularMod._Global_.Function
   import typings.angular.angularNumbers.`-1`
   import typings.angular.angularNumbers.`0`
   import typings.angular.angularNumbers.`1`

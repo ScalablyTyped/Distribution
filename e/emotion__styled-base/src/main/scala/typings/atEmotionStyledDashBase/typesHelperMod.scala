@@ -1,7 +1,7 @@
 package typings.atEmotionStyledDashBase
 
 import typings.react.reactMod.ComponentPropsWithRef
-import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
+import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
 import typings.std.Exclude
 import typings.std.Extract
 import typings.std.Pick

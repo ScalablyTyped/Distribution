@@ -1,8 +1,7 @@
 package typings.emojiDashMart
 
-import typings.emojiDashMart.distDashEsComponentsPickerPickerMod.Picker
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.PickerProps
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object distDashEsComponentsPickerPickerMod extends js.Object {
   @js.native
-  class default () extends Picker
+  class default ()
+    extends Component[PickerProps, js.Object, js.Any]
   
-  type Picker = PureComponent[PickerProps, js.Object, js.Any]
+  type Picker = Component[PickerProps, js.Object, js.Any]
 }
 

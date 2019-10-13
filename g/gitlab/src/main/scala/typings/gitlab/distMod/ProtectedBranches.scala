@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "ProtectedBranches")
 @js.native
 class ProtectedBranches ()
-  extends typings.gitlab.distServicesMod.ProtectedBranches
+  extends typings.gitlab.distServicesProtectedBranchesMod.ProtectedBranches
 

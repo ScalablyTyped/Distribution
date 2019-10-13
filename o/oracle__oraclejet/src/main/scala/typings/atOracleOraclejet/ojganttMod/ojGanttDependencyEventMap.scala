@@ -7,12 +7,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.startFinish
 import typings.atOracleOraclejet.atOracleOraclejetStrings.startStart
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
+import typings.std.ElementEventMap
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
-import typings.std.HTMLElementEventMap
+import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -26,7 +28,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ojGanttDependencyEventMap extends HTMLElementEventMap {
+trait ojGanttDependencyEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   var predecessorTaskIdChanged: JetElementCustomEvent[
     /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any
   ]

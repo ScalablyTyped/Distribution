@@ -1,7 +1,7 @@
 package typings.cypress.typesBluebirdMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.cypress.typesLodashMod.Global.Map
+import typings.cypress.typesLodashMod._Global_.Map
 import typings.std.Error
 import typings.std.PromiseLike
 import scala.scalajs.js

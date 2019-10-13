@@ -1,5 +1,7 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libChipChipMod.ChipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,11 @@ import scala.scalajs.js.annotation._
 object libChipMod extends js.Object {
   @js.native
   class Chip ()
-    extends typings.reactDashToolbox.libChipChipMod.Chip
+    extends Component[ChipProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libChipChipMod.Chip
+    extends Component[ChipProps, js.Object, js.Any]
   
 }
 

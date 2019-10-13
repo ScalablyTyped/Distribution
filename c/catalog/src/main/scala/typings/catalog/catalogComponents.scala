@@ -4,7 +4,6 @@ import typings.catalog.catalogMod.AudioSpecimenProps
 import typings.catalog.catalogMod.CodeSpecimenProps
 import typings.catalog.catalogMod.ColorPaletteSpecimenProps
 import typings.catalog.catalogMod.ColorSpecimenProps
-import typings.catalog.catalogMod.Config
 import typings.catalog.catalogMod.DownloadSpecimenProps
 import typings.catalog.catalogMod.HintSpecimenProps
 import typings.catalog.catalogMod.HtmlSpecimenProps
@@ -24,7 +23,7 @@ object catalogComponents extends catalogProps {
   def AudioSpecimen: ComponentType[SpecimenProps with AudioSpecimenProps] = js.constructorOf[typings.catalog.catalogMod.AudioSpecimen].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.catalog.catalogMod.SpecimenProps with typings.catalog.catalogMod.AudioSpecimenProps]]
   @scala.inline
-  def Catalog: ComponentType[Config] = js.constructorOf[typings.catalog.catalogMod.Catalog].asInstanceOf[typings.react.reactMod.ComponentType[typings.catalog.catalogMod.Config]]
+  def Catalog: ComponentType[CatalogProps] = js.constructorOf[typings.catalog.catalogMod.Catalog].asInstanceOf[typings.react.reactMod.ComponentType[CatalogProps]]
   @scala.inline
   def CodeSpecimen: ComponentType[SpecimenProps with CodeSpecimenProps] = js.constructorOf[typings.catalog.catalogMod.CodeSpecimen].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.catalog.catalogMod.SpecimenProps with typings.catalog.catalogMod.CodeSpecimenProps]]

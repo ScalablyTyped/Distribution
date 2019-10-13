@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterComparisonMod.Comparison
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterComparisonMod extends js.Object {
   @js.native
-  class default protected () extends Comparison {
+  class default protected ()
+    extends typings.ol.formatFilterFilterMod.default {
     def this(tagName: String, propertyName: String) = this()
   }
   

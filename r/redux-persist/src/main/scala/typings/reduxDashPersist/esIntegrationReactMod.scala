@@ -1,5 +1,8 @@
 package typings.reduxDashPersist
 
+import typings.react.reactMod.Component
+import typings.reduxDashPersist.integrationReactMod.PersistGateProps
+import typings.reduxDashPersist.integrationReactMod.PersistorGateState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +18,7 @@ object esIntegrationReactMod extends js.Object {
     */
   @js.native
   class PersistGate ()
-    extends typings.reduxDashPersist.integrationReactMod.PersistGate
+    extends Component[PersistGateProps, PersistorGateState, js.Any]
   
 }
 

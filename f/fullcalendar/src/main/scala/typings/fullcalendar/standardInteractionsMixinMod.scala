@@ -1,6 +1,5 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.standardInteractionsMixinMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,8 @@ object standardInteractionsMixinMod extends js.Object {
     extends typings.fullcalendar.mixinMod.default
   
   @js.native
-  class default () extends Default
+  class default ()
+    extends typings.fullcalendar.mixinMod.default
   
 }
 

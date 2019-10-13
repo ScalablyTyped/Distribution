@@ -1,6 +1,6 @@
 package typings.atBlueprintjsTable.libEsmInteractionsSelectableMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/table/lib/esm/interactions/selectable", "DragSelectable")
 @js.native
 class DragSelectable ()
-  extends PureComponent[IDragSelectableProps, js.Object, js.Any] {
+  extends Component[IDragSelectableProps, js.Object, js.Any] {
   var didExpandSelectionOnActivate: js.Any = js.native
   /**
     * Expands the last-selected region to the new region, and replaces the

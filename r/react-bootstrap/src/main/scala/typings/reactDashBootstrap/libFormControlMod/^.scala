@@ -1,13 +1,15 @@
 package typings.reactDashBootstrap.libFormControlMod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-bootstrap/lib/FormControl", JSImport.Namespace)
 @js.native
-class ^ () extends FormControl
+class ^ ()
+  extends Component[FormControlProps, js.Object, js.Any]
 
 @JSImport("react-bootstrap/lib/FormControl", JSImport.Namespace)
 @js.native

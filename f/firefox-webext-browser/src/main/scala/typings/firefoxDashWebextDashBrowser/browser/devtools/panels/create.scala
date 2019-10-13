@@ -16,7 +16,7 @@ object create extends js.Object {
     *     default extension icon as the panel icon.
     * @param pagePath Path of the panel's HTML page relative to the extension directory.
     */
-  def apply(title: String, iconPath: ExtensionURL, pagePath: ExtensionURL): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
-  def apply(title: String, iconPath: _Create, pagePath: ExtensionURL): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
+  def apply(title: String, iconPath: ExtensionURL, pagePath: ExtensionURL): js.Promise[ExtensionPanel] = js.native
+  def apply(title: String, iconPath: _Create, pagePath: ExtensionURL): js.Promise[ExtensionPanel] = js.native
 }
 

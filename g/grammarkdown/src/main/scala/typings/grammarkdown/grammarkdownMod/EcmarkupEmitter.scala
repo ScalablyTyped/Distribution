@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown", "EcmarkupEmitter")
 @js.native
 class EcmarkupEmitter ()
-  extends typings.grammarkdown.distEmitterMod.EcmarkupEmitter
+  extends typings.grammarkdown.distEmitterEcmarkupMod.EcmarkupEmitter
 

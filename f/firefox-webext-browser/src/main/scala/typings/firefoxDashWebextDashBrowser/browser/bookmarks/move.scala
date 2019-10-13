@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object move extends js.Object {
   /** Moves the specified BookmarkTreeNode to the provided location. */
-  def apply(id: String, destination: Anon_Index): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
+  def apply(id: String, destination: Anon_Index): js.Promise[BookmarkTreeNode] = js.native
 }
 

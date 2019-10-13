@@ -1,14 +1,16 @@
 package typings.reactDashBootstrap.libFadeMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapMod.TransitionCallbacks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FadeProps
-  extends HTMLProps[Fade]
-     with TransitionCallbacks {
+  extends AllHTMLAttributes[Fade]
+     with TransitionCallbacks
+     with ClassAttributes[Fade] {
   var appear: js.UndefOr[Boolean] = js.undefined
   var in: js.UndefOr[Boolean] = js.undefined
   var mountOnEnter: js.UndefOr[Boolean] = js.undefined
@@ -19,7 +21,8 @@ trait FadeProps
 object FadeProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Fade] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Fade] = null,
+    ClassAttributes: ClassAttributes[Fade] = null,
     TransitionCallbacks: TransitionCallbacks = null,
     appear: js.UndefOr[Boolean] = js.undefined,
     in: js.UndefOr[Boolean] = js.undefined,
@@ -28,7 +31,8 @@ object FadeProps {
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
   ): FadeProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, TransitionCallbacks)
     if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear)
     if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)

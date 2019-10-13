@@ -1,13 +1,12 @@
 package typings.reactDashStickyDashEl
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashStickyDashEl.reactDashStickyDashElMod.Sticky.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashStickyDashElComponents extends reactDashStickyDashElProps {
   @scala.inline
-  def ReactDashStickyDashEl: ComponentType[Props[js.Object]] = js.constructorOf[typings.reactDashStickyDashEl.reactDashStickyDashElMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashStickyDashEl.reactDashStickyDashElMod.Sticky.Props[js.Object]]]
+  def ReactDashStickyDashEl: ComponentType[ReactDashStickyDashElProps[js.Object]] = js.constructorOf[typings.reactDashStickyDashEl.reactDashStickyDashElMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashStickyDashElProps[js.Object]]]
 }
 

@@ -1,48 +1,32 @@
 package typings.reactDashStripeDashElements
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps
-import typings.stripeDashV3.stripe.elements.ElementsCreateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashStripeDashElementsComponents extends reactDashStripeDashElementsProps {
   @scala.inline
-  def CardCVCElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardCVCElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps]]
+  def CardCVCElement: ComponentType[CardCVCElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardCVCElement].asInstanceOf[typings.react.reactMod.ComponentType[CardCVCElementProps]]
   @scala.inline
-  def CardCvcElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardCvcElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps]]
+  def CardCvcElement: ComponentType[CardCvcElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardCvcElement].asInstanceOf[typings.react.reactMod.ComponentType[CardCvcElementProps]]
   @scala.inline
-  def CardElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps]]
+  def CardElement: ComponentType[CardElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardElement].asInstanceOf[typings.react.reactMod.ComponentType[CardElementProps]]
   @scala.inline
-  def CardExpiryElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardExpiryElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps]]
+  def CardExpiryElement: ComponentType[CardExpiryElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardExpiryElement].asInstanceOf[typings.react.reactMod.ComponentType[CardExpiryElementProps]]
   @scala.inline
-  def CardNumberElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardNumberElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps]]
+  def CardNumberElement: ComponentType[CardNumberElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.CardNumberElement].asInstanceOf[typings.react.reactMod.ComponentType[CardNumberElementProps]]
   @scala.inline
-  def Elements: ComponentType[ElementsCreateOptions] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.Elements].asInstanceOf[typings.react.reactMod.ComponentType[typings.stripeDashV3.stripe.elements.ElementsCreateOptions]]
+  def Elements: ComponentType[ElementsProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.Elements].asInstanceOf[typings.react.reactMod.ComponentType[ElementsProps]]
   @scala.inline
-  def IbanElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.IbanElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps]]
+  def IbanElement: ComponentType[IbanElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.IbanElement].asInstanceOf[typings.react.reactMod.ComponentType[IbanElementProps]]
   @scala.inline
-  def IdealBankElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.IdealBankElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps]]
+  def IdealBankElement: ComponentType[IdealBankElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.IdealBankElement].asInstanceOf[typings.react.reactMod.ComponentType[IdealBankElementProps]]
   @scala.inline
-  def PaymentRequestButtonElement: ComponentType[
-    typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.PaymentRequestButtonElementProps
-  ] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.PaymentRequestButtonElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.PaymentRequestButtonElementProps]]
+  def PaymentRequestButtonElement: ComponentType[PaymentRequestButtonElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.PaymentRequestButtonElement].asInstanceOf[typings.react.reactMod.ComponentType[PaymentRequestButtonElementProps]]
   @scala.inline
-  def PostalCodeElement: ComponentType[ElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.PostalCodeElement].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.ElementProps]]
+  def PostalCodeElement: ComponentType[PostalCodeElementProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.PostalCodeElement].asInstanceOf[typings.react.reactMod.ComponentType[PostalCodeElementProps]]
   @scala.inline
-  def StripeProvider: ComponentType[
-    typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.StripeProviderProps
-  ] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.StripeProvider].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.ReactStripeElements.StripeProviderProps]]
+  def StripeProvider: ComponentType[StripeProviderProps] = js.constructorOf[typings.reactDashStripeDashElements.reactDashStripeDashElementsMod.StripeProvider].asInstanceOf[typings.react.reactMod.ComponentType[StripeProviderProps]]
 }
 

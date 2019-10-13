@@ -1,11 +1,14 @@
 package typings.reactDashBootstrap.libToggleButtonMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ToggleButtonProps extends HTMLProps[ToggleButton] {
+trait ToggleButtonProps
+  extends AllHTMLAttributes[ToggleButton]
+     with ClassAttributes[ToggleButton] {
   @JSName("value")
   var value_ToggleButtonProps: Double | String
 }
@@ -14,12 +17,14 @@ object ToggleButtonProps {
   @scala.inline
   def apply(
     value: Double | String,
-    HTMLProps: HTMLProps[ToggleButton] = null,
+    AllHTMLAttributes: AllHTMLAttributes[ToggleButton] = null,
+    ClassAttributes: ClassAttributes[ToggleButton] = null,
     checked: js.UndefOr[Boolean] = js.undefined,
     name: String = null
   ): ToggleButtonProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[ToggleButtonProps]

@@ -1,14 +1,17 @@
 package typings.reactDashTextareaDashAutosize.reactDashTextareaDashAutosizeMod
 
+import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.ChangeEvent
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.RefObject
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TextareaAutosizeProps extends HTMLProps[HTMLTextAreaElement] {
+trait TextareaAutosizeProps
+  extends AllHTMLAttributes[HTMLTextAreaElement]
+     with ClassAttributes[HTMLTextAreaElement] {
   /**
     * Allows an owner to retrieve the DOM node.
     */
@@ -53,7 +56,8 @@ trait TextareaAutosizeProps extends HTMLProps[HTMLTextAreaElement] {
 object TextareaAutosizeProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLTextAreaElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLTextAreaElement] = null,
+    ClassAttributes: ClassAttributes[HTMLTextAreaElement] = null,
     inputRef: (js.Function1[/* node */ HTMLTextAreaElement, Unit]) | RefObject[HTMLTextAreaElement] = null,
     maxRows: Int | Double = null,
     minRows: Int | Double = null,
@@ -64,7 +68,8 @@ object TextareaAutosizeProps {
     value: String = null
   ): TextareaAutosizeProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
     if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])

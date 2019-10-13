@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_AnimationOptions
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestyledirectionhorizontalv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Carousel")
 @js.native
 class Carousel ()
-  extends Component[Anon_AnimationOptions, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestyledirectionhorizontalv, js.Any, js.Any]
 

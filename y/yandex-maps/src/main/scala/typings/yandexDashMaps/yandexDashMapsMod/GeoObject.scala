@@ -41,7 +41,7 @@ object geoObject extends js.Object {
   }
   
   @js.native
-  class Hint protected () extends IHintManager[GeoObject] {
+  class Hint protected () extends IPopupManager[GeoObject] {
     def this(geoObject: GeoObject) = this()
     /* CompleteClass */
     override var events: IEventManager = js.native

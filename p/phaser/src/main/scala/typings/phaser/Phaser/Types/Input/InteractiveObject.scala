@@ -13,6 +13,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InteractiveObject extends js.Object {
   /**
+    * An Interactive Object that is 'always enabled' will receive input even if the parent object is invisible or won't render.
+    */
+  var alwaysEnabled: Boolean = js.native
+  /**
     * The most recent Camera to be tested against this Interactive Object.
     */
   var camera: Camera = js.native

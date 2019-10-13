@@ -2,8 +2,8 @@ package typings.eventDashStream
 
 import typings.eventDashStream.eventDashStreamMod.MapStream
 import typings.node.streamMod.Readable
-import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
+import typings.node.streamMod.internal
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object eventDashStreamMod extends js.Object {
   @js.native
-  trait MapStream extends Stream {
+  trait MapStream extends internal {
     var end: js.Any = js.native
     var readable: Boolean = js.native
     var writable: Boolean = js.native

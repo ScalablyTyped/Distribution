@@ -33,23 +33,45 @@ import typings.react.reactMod.Ref
 import typings.styledDashComponents.styledDashComponentsMod.CSSObject
 import typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
 import typings.styledDashSystem.styledDashSystemMod.AlignSelfProps
-import typings.styledDashSystem.styledDashSystemMod.ColorProps
+import typings.styledDashSystem.styledDashSystemMod.BackgroundColorProps
+import typings.styledDashSystem.styledDashSystemMod.DisplayProps
 import typings.styledDashSystem.styledDashSystemMod.FontSizeProps
-import typings.styledDashSystem.styledDashSystemMod.LayoutProps
+import typings.styledDashSystem.styledDashSystemMod.HeightProps
+import typings.styledDashSystem.styledDashSystemMod.MaxHeightProps
+import typings.styledDashSystem.styledDashSystemMod.MaxWidthProps
+import typings.styledDashSystem.styledDashSystemMod.MinHeightProps
+import typings.styledDashSystem.styledDashSystemMod.MinWidthProps
+import typings.styledDashSystem.styledDashSystemMod.OpacityProps
 import typings.styledDashSystem.styledDashSystemMod.OrderProps
+import typings.styledDashSystem.styledDashSystemMod.OverflowProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
+import typings.styledDashSystem.styledDashSystemMod.SizeProps
 import typings.styledDashSystem.styledDashSystemMod.SpaceProps
 import typings.styledDashSystem.styledDashSystemMod.TLengthStyledSystem
+import typings.styledDashSystem.styledDashSystemMod.TextColorProps
+import typings.styledDashSystem.styledDashSystemMod.VerticalAlignProps
+import typings.styledDashSystem.styledDashSystemMod.WidthProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BoxKnownProps
-  extends LayoutProps
-     with BaseProps
+  extends BaseProps
      with SpaceProps[TLengthStyledSystem]
+     with WidthProps[TLengthStyledSystem]
+     with HeightProps[TLengthStyledSystem]
+     with MinWidthProps[TLengthStyledSystem]
+     with MinHeightProps[TLengthStyledSystem]
+     with MaxWidthProps[TLengthStyledSystem]
+     with MaxHeightProps[TLengthStyledSystem]
+     with DisplayProps
+     with VerticalAlignProps[TLengthStyledSystem]
+     with SizeProps[TLengthStyledSystem]
+     with OverflowProps
      with FontSizeProps[TLengthStyledSystem]
-     with ColorProps
+     with TextColorProps
+     with BackgroundColorProps[TLengthStyledSystem]
+     with OpacityProps
      with typings.styledDashSystem.styledDashSystemMod.FlexProps[TLengthStyledSystem]
      with OrderProps
      with AlignSelfProps

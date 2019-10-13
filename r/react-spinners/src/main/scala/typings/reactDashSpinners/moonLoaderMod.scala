@@ -1,6 +1,6 @@
 package typings.reactDashSpinners
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashSpinners.interfacesMod.CalcFunction
 import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import typings.reactDashSpinners.interfacesMod.PrecompiledCss
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object moonLoaderMod extends js.Object {
   @js.native
   trait Loader
-    extends PureComponent[LoaderSizeProps, js.Object, js.Any] {
+    extends Component[LoaderSizeProps, js.Object, js.Any] {
     var ball: CalcFunction[PrecompiledCss] = js.native
     var ballStyle: BallStyleFunction = js.native
     var circle: CalcFunction[PrecompiledCss] = js.native

@@ -8,8 +8,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FrameNode
-  extends DefaultContainerMixin
-     with SceneNode {
+  extends SceneNode
+     with BaseNodeMixin
+     with SceneNodeMixin
+     with ChildrenMixin
+     with FrameMixin
+     with BlendMixin
+     with ConstraintMixin
+     with LayoutMixin
+     with ExportMixin {
   val `type`: FRAME | GROUP = js.native
 }
 

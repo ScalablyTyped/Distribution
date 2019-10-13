@@ -8,9 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.agDashGrid.distLibInterfacesIComponentMod.IComponent because Already inherited
-- typings.agDashGrid.distLibRenderingDateComponentMod.IDateComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @JSImport("ag-grid/dist/lib/filter/dateFilter", "DefaultDateComponent")
+@JSImport("ag-grid/dist/lib/filter/dateFilter", "DefaultDateComponent")
 @js.native
 class DefaultDateComponent ()
   extends Component

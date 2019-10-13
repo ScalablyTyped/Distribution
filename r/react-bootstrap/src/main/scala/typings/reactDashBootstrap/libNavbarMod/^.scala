@@ -1,13 +1,15 @@
 package typings.reactDashBootstrap.libNavbarMod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-bootstrap/lib/Navbar", JSImport.Namespace)
 @js.native
-class ^ () extends Navbar
+class ^ ()
+  extends Component[NavbarProps, js.Object, js.Any]
 
 @JSImport("react-bootstrap/lib/Navbar", JSImport.Namespace)
 @js.native

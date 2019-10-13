@@ -1,6 +1,6 @@
 package typings.koaDashBouncer
 
-import typings.koa.koaMod.Context
+import typings.koaDashBouncer.koaDashBouncerMod.koaMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

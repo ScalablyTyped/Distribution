@@ -1,5 +1,7 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libDropdownDropdownMod.DropdownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,11 @@ import scala.scalajs.js.annotation._
 object libDropdownMod extends js.Object {
   @js.native
   class Dropdown ()
-    extends typings.reactDashToolbox.libDropdownDropdownMod.Dropdown
+    extends Component[DropdownProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libDropdownDropdownMod.Dropdown
+    extends Component[DropdownProps, js.Object, js.Any]
   
 }
 

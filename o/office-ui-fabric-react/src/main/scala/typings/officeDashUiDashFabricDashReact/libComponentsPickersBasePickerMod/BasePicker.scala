@@ -14,9 +14,9 @@ import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSu
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
 import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionMod.Selection
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.RefObject
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement

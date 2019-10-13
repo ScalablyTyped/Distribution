@@ -1,7 +1,8 @@
 package typings.typedoc
 
-import typings.typedoc.distLibOutputComponentsMod.RendererComponent
 import typings.typedoc.distLibOutputEventsMod.PageEvent
+import typings.typedoc.distLibOutputRendererMod.Renderer
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibOutputPluginsPrettyPrintPluginMod extends js.Object {
   @js.native
-  class PrettyPrintPlugin () extends RendererComponent {
+  class PrettyPrintPlugin () extends AbstractComponent[Renderer] {
     def onRendererEndPage(event: PageEvent): Unit = js.native
   }
   

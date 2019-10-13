@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.appBarMod.AppBar
+import typings.materialDashUi.__MaterialUI.AppBarProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +12,11 @@ import scala.scalajs.js.annotation._
 object appBarMod extends js.Object {
   @js.native
   class AppBar ()
-    extends typings.materialDashUi.__MaterialUI.AppBar
+    extends Component[AppBarProps, js.Object, js.Any]
   
   @js.native
-  class default () extends AppBar
+  class default ()
+    extends Component[AppBarProps, js.Object, js.Any]
   
 }
 

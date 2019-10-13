@@ -2,7 +2,7 @@ package typings.atBlueprintjsSelect.libEsmComponentsSelectMultiSelectMod
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.atBlueprintjsSelect.Anon_Fill
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect")
 @js.native
 class MultiSelect[T] ()
-  extends PureComponent[IMultiSelectProps[T], IMultiSelectState, js.Any] {
+  extends Component[IMultiSelectProps[T], IMultiSelectState, js.Any] {
   var TypedQueryList: js.Any = js.native
   var getTargetKeyDownHandler: js.Any = js.native
   var handleItemSelect: js.Any = js.native

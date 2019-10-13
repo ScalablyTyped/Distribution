@@ -6,8 +6,8 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionMode
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupHeaderDotTypesMod.IGroupHeaderProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithViewportMod.IViewport
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,5 +1,6 @@
 package typings.miniDashCssDashExtractDashPlugin.miniDashCssDashExtractDashPluginMod
 
+import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mini-css-extract-plugin", JSImport.Namespace)
 @js.native
-class ^ () extends MiniCssExtractPlugin {
+class ^ () extends Plugin {
   def this(options: PluginOptions) = this()
 }
 

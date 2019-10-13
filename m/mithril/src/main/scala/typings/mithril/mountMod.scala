@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object mountMod
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _mount */ js.Any
+      /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof _mount */ js.Any
     ]
 

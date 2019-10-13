@@ -1,14 +1,17 @@
 package typings.reactDashAriaDashMenubutton.reactDashAriaDashMenubuttonMod
 
 import typings.react.Event
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.SyntheticEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WrapperProps[T /* <: HTMLElement */] extends HTMLProps[T] {
+trait WrapperProps[T /* <: HTMLElement */]
+  extends AllHTMLAttributes[T]
+     with ClassAttributes[T] {
   /**
   	 * By default, it does automatically close.
   	 * If false, the menu will not automatically close when it
@@ -41,7 +44,8 @@ trait WrapperProps[T /* <: HTMLElement */] extends HTMLProps[T] {
 object WrapperProps {
   @scala.inline
   def apply[T /* <: HTMLElement */](
-    HTMLProps: HTMLProps[T] = null,
+    AllHTMLAttributes: AllHTMLAttributes[T] = null,
+    ClassAttributes: ClassAttributes[T] = null,
     closeOnBlur: js.UndefOr[Boolean] = js.undefined,
     closeOnSelection: js.UndefOr[Boolean] = js.undefined,
     isOpen: js.UndefOr[Boolean] = js.undefined,
@@ -50,7 +54,8 @@ object WrapperProps {
     tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
   ): WrapperProps[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
     if (!js.isUndefined(closeOnSelection)) __obj.updateDynamic("closeOnSelection")(closeOnSelection)
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)

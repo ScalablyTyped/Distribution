@@ -10,9 +10,9 @@ import typings.atBlueprintjsCore.libEsmComponentsTagTagMod.ITagProps
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
 import typings.react.reactMod.FormEvent
 import typings.react.reactMod.FormEventHandler
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.RegExp

@@ -1,5 +1,8 @@
 package typings.primereact
 
+import typings.primereact.componentsTabviewTabViewMod.TabPanelProps
+import typings.primereact.componentsTabviewTabViewMod.TabViewProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +12,11 @@ import scala.scalajs.js.annotation._
 object tabviewMod extends js.Object {
   @js.native
   class TabPanel ()
-    extends typings.primereact.componentsTabviewTabViewMod.TabPanel
+    extends Component[TabPanelProps, js.Any, js.Any]
   
   @js.native
   class TabView ()
-    extends typings.primereact.componentsTabviewTabViewMod.TabView
+    extends Component[TabViewProps, js.Any, js.Any]
   
 }
 

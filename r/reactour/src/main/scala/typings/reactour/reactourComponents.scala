@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 object reactourComponents extends reactourProps {
   @scala.inline
-  def Arrow: ComponentType[typings.reactour.reactourMod.ArrowProps] = typings.reactour.reactourMod.Arrow.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactour.reactourMod.ArrowProps]]
+  def Arrow: ComponentType[ArrowProps] = typings.reactour.reactourMod.Arrow.asInstanceOf[typings.react.reactMod.ComponentType[ArrowProps]]
   @scala.inline
-  def Badge: ComponentType[typings.reactour.reactourMod.BadgeProps] = typings.reactour.reactourMod.Badge.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactour.reactourMod.BadgeProps]]
+  def Badge: ComponentType[BadgeProps] = typings.reactour.reactourMod.Badge.asInstanceOf[typings.react.reactMod.ComponentType[BadgeProps]]
   @scala.inline
-  def Close: ComponentType[typings.reactour.reactourMod.CloseProps] = typings.reactour.reactourMod.Close.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactour.reactourMod.CloseProps]]
+  def Close: ComponentType[CloseProps] = typings.reactour.reactourMod.Close.asInstanceOf[typings.react.reactMod.ComponentType[CloseProps]]
   @scala.inline
-  def Controls: ComponentType[typings.reactour.reactourMod.ControlsProps] = typings.reactour.reactourMod.Controls.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactour.reactourMod.ControlsProps]]
+  def Controls: ComponentType[ControlsProps] = typings.reactour.reactourMod.Controls.asInstanceOf[typings.react.reactMod.ComponentType[ControlsProps]]
   @scala.inline
-  def Dot: ComponentType[typings.reactour.reactourMod.DotProps] = typings.reactour.reactourMod.Dot.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactour.reactourMod.DotProps]]
+  def Dot: ComponentType[DotProps] = typings.reactour.reactourMod.Dot.asInstanceOf[typings.react.reactMod.ComponentType[DotProps]]
   @scala.inline
-  def Navigation: ComponentType[typings.reactour.reactourMod.NavigationProps] = typings.reactour.reactourMod.Navigation.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactour.reactourMod.NavigationProps]]
+  def Navigation: ComponentType[NavigationProps] = typings.reactour.reactourMod.Navigation.asInstanceOf[typings.react.reactMod.ComponentType[NavigationProps]]
   @scala.inline
-  def Reactour: ComponentType[typings.reactour.reactourMod.ReactourProps] = js.constructorOf[typings.reactour.reactourMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactour.reactourMod.ReactourProps]]
+  def Reactour: ComponentType[ReactourProps] = js.constructorOf[typings.reactour.reactourMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactourProps]]
 }
 

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "babylon"
-version := "6.16-dt-20190212Z-5a5b3e"
+version := "6.16-dt-20190212Z-13ceda"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-31c637",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190424Z-5e9729",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

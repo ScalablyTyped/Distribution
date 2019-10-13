@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fs-promise", "WriteStream")
 @js.native
 class WriteStream ()
-  extends typings.mz.fsMod.WriteStream
+  extends typings.node.fsMod.WriteStream
 

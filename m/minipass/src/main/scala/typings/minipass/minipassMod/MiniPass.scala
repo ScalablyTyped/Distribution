@@ -43,14 +43,6 @@ trait MiniPass
   def addEventHandler_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addEventHandler")
   def addEventHandler_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   @JSName("emit")
   def emit_close(event: close): Boolean = js.native
   @JSName("emit")
@@ -72,26 +64,6 @@ trait MiniPass
   def end(chunk: js.Any, encoding: String): Unit = js.native
   def end(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: Null, cb: js.Function0[Unit]): Unit = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -108,10 +80,6 @@ trait MiniPass
   def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -131,11 +99,6 @@ trait MiniPass
   def pause(): Unit = js.native
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
   def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -152,10 +115,6 @@ trait MiniPass
   def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -172,22 +131,8 @@ trait MiniPass
   def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
   def read(): js.Any = js.native
   def read(size: Double): js.Any = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
@@ -207,8 +152,6 @@ trait MiniPass
   def resume(): Unit = js.native
   def setEncoding(): Unit = js.native
   def setEncoding(encoding: String): Unit = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function0[Unit]): Boolean = js.native
   def write(chunk: js.Any, encoding: String): Boolean = js.native

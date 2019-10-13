@@ -7,17 +7,29 @@ import typings.history.historyMod.History
 import typings.history.historyMod.Location
 import typings.history.historyMod.LocationDescriptor
 import typings.history.historyMod.LocationState
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
+import typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps
 import typings.reactDashRouter.reactDashRouterMod.Omit
+import typings.reactDashRouter.reactDashRouterMod.PromptProps
+import typings.reactDashRouter.reactDashRouterMod.RedirectProps
 import typings.reactDashRouter.reactDashRouterMod.RouteComponentProps
 import typings.reactDashRouter.reactDashRouterMod.RouteProps
+import typings.reactDashRouter.reactDashRouterMod.RouterProps
 import typings.reactDashRouter.reactDashRouterMod.StaticContext
+import typings.reactDashRouter.reactDashRouterMod.StaticRouterProps
+import typings.reactDashRouter.reactDashRouterMod.SwitchProps
 import typings.reactDashRouter.reactDashRouterMod.WithRouterProps
 import typings.reactDashRouter.reactDashRouterMod.WithRouterStatics
 import typings.reactDashRouter.reactDashRouterMod.`match`
+import typings.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouterProps
+import typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps
+import typings.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps
+import typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps
 import typings.reactDashRouterDashRedux.Anon_Router
+import typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouterProps
 import typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.RouterAction
 import typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.RouterState
 import typings.redux.reduxMod.AnyAction
@@ -33,47 +45,47 @@ import scala.scalajs.js.annotation._
 object routerMod extends js.Object {
   @js.native
   class BrowserRouter ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouter
+    extends Component[BrowserRouterProps, js.Any, js.Any]
   
   @js.native
   class HashRouter ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouter
+    extends Component[HashRouterProps, js.Any, js.Any]
   
   @js.native
   class Link[S] ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Link[S]
+    extends Component[LinkProps[S], js.Any, js.Any]
   
   @js.native
   class MemoryRouter ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.MemoryRouter
+    extends Component[MemoryRouterProps, js.Any, js.Any]
   
   @js.native
   class NavLink[S] ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLink[S]
+    extends Component[NavLinkProps[S], js.Any, js.Any]
   
   @js.native
   class Prompt ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Prompt
+    extends Component[PromptProps, js.Any, js.Any]
   
   @js.native
   class Redirect ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Redirect
+    extends Component[RedirectProps, js.Any, js.Any]
   
   @js.native
   class Route[T /* <: RouteProps */] ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Route[T]
+    extends Component[T, js.Any, js.Any]
   
   @js.native
   class Router ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Router
+    extends Component[RouterProps, js.Any, js.Any]
   
   @js.native
   class StaticRouter ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.StaticRouter
+    extends Component[StaticRouterProps, js.Any, js.Any]
   
   @js.native
   class Switch ()
-    extends typings.reactDashRouterDashDom.reactDashRouterDashDomMod.Switch
+    extends Component[SwitchProps, js.Any, js.Any]
   
   def generatePath(pattern: String): String = js.native
   def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = js.native
@@ -110,7 +122,7 @@ object routerMod extends js.Object {
   object routerRedux extends js.Object {
     @js.native
     class ConnectedRouter[State] ()
-      extends typings.reactDashRouterDashRedux.reactDashRouterDashReduxMod.ConnectedRouter[State]
+      extends Component[ConnectedRouterProps[State], js.Object, js.Any]
     
     val CALL_HISTORY_METHOD: `@@router/CALL_HISTORY_METHOD` = js.native
     val LOCATION_CHANGE: `@@router/LOCATION_CHANGE` = js.native

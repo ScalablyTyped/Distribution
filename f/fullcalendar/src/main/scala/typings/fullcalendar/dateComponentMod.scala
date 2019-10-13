@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object dateComponentMod extends js.Object {
   @js.native
   abstract class Default ()
-    extends typings.fullcalendar.componentMod.default {
+    extends typings.fullcalendar.componentMod.Default {
     def this(_view: js.Any) = this()
     def this(_view: js.Any, _options: js.Any) = this()
     var businessHourRenderer: js.Any = js.native

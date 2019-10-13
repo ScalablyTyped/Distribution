@@ -1,5 +1,16 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libListListCheckboxMod.ListCheckboxProps
+import typings.reactDashToolbox.libListListDividerMod.ListDividerProps
+import typings.reactDashToolbox.libListListItemActionMod.ListItemActionProps
+import typings.reactDashToolbox.libListListItemActionsMod.ListItemActionsProps
+import typings.reactDashToolbox.libListListItemContentMod.ListItemContentProps
+import typings.reactDashToolbox.libListListItemLayoutMod.ListItemLayoutProps
+import typings.reactDashToolbox.libListListItemMod.ListItemProps
+import typings.reactDashToolbox.libListListItemTextMod.ListItemTextProps
+import typings.reactDashToolbox.libListListMod.ListProps
+import typings.reactDashToolbox.libListListSubHeaderMod.ListSubHeaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,43 +20,43 @@ import scala.scalajs.js.annotation._
 object libListMod extends js.Object {
   @js.native
   class List ()
-    extends typings.reactDashToolbox.libListListMod.List
+    extends Component[ListProps, js.Object, js.Any]
   
   @js.native
   class ListCheckbox ()
-    extends typings.reactDashToolbox.libListListCheckboxMod.ListCheckbox
+    extends Component[ListCheckboxProps, js.Object, js.Any]
   
   @js.native
   class ListDivider ()
-    extends typings.reactDashToolbox.libListListDividerMod.ListDivider
+    extends Component[ListDividerProps, js.Object, js.Any]
   
   @js.native
   class ListItem ()
-    extends typings.reactDashToolbox.libListListItemMod.ListItem
+    extends Component[ListItemProps with ListItemLayoutProps, js.Object, js.Any]
   
   @js.native
   class ListItemAction ()
-    extends typings.reactDashToolbox.libListListItemActionMod.ListItemAction
+    extends Component[ListItemActionProps, js.Object, js.Any]
   
   @js.native
   class ListItemActions ()
-    extends typings.reactDashToolbox.libListListItemActionsMod.ListItemActions
+    extends Component[ListItemActionsProps, js.Object, js.Any]
   
   @js.native
   class ListItemContent ()
-    extends typings.reactDashToolbox.libListListItemContentMod.ListItemContent
+    extends Component[ListItemContentProps, js.Object, js.Any]
   
   @js.native
   class ListItemLayout ()
-    extends typings.reactDashToolbox.libListListItemLayoutMod.ListItemLayout
+    extends Component[ListItemLayoutProps, js.Object, js.Any]
   
   @js.native
   class ListItemText ()
-    extends typings.reactDashToolbox.libListListItemTextMod.ListItemText
+    extends Component[ListItemTextProps, js.Object, js.Any]
   
   @js.native
   class ListSubHeader ()
-    extends typings.reactDashToolbox.libListListSubHeaderMod.ListSubHeader
+    extends Component[ListSubHeaderProps, js.Object, js.Any]
   
 }
 

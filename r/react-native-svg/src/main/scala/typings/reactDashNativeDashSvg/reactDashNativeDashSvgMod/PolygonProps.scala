@@ -13,7 +13,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PolygonProps extends CommonPathProps {
+trait PolygonProps
+  extends TransformProps
+     with FillProps
+     with StrokeProps
+     with ClipProps
+     with VectorEffectProps
+     with ResponderProps
+     with TouchableProps
+     with DefinitionProps
+     with CommonMaskProps {
   var opacity: js.UndefOr[NumberProp] = js.undefined
   var points: js.UndefOr[String | js.Array[NumberProp]] = js.undefined
 }

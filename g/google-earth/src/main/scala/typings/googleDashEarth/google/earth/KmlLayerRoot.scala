@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.earth.KmlLayerRoot")
 @js.native
-class KmlLayerRoot () extends KmlFolder {
+class KmlLayerRoot () extends KmlContainer {
   /**
     * Enables a layer based on its ID.
     */

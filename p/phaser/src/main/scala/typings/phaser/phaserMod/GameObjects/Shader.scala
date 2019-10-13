@@ -58,48 +58,27 @@ class Shader protected ()
     * @param width The width of the Game Object. Default 128.
     * @param height The height of the Game Object. Default 128.
     * @param textures Optional array of texture keys to bind to the iChannel0...3 uniforms. The textures must already exist in the Texture Manager.
+    * @param textureData Additional texture data if you want to create shader with none NPOT textures.
     */
-  def this(scene: typings.phaser.Phaser.Scene, key: String) = this()
-  def this(scene: typings.phaser.Phaser.Scene, key: BaseShader) = this()
-  def this(scene: typings.phaser.Phaser.Scene, key: String, x: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, key: BaseShader, x: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, key: String, x: Double, y: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, key: BaseShader, x: Double, y: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, key: String, x: Double, y: Double, width: Double) = this()
-  def this(scene: typings.phaser.Phaser.Scene, key: BaseShader, x: Double, y: Double, width: Double) = this()
   def this(
     scene: typings.phaser.Phaser.Scene,
     key: String,
-    x: Double,
-    y: Double,
-    width: Double,
-    height: Double
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    textures: js.UndefOr[js.Array[String]],
+    textureData: js.UndefOr[js.Any]
   ) = this()
   def this(
     scene: typings.phaser.Phaser.Scene,
     key: BaseShader,
-    x: Double,
-    y: Double,
-    width: Double,
-    height: Double
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    key: String,
-    x: Double,
-    y: Double,
-    width: Double,
-    height: Double,
-    textures: js.Array[String]
-  ) = this()
-  def this(
-    scene: typings.phaser.Phaser.Scene,
-    key: BaseShader,
-    x: Double,
-    y: Double,
-    width: Double,
-    height: Double,
-    textures: js.Array[String]
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
+    textures: js.UndefOr[js.Array[String]],
+    textureData: js.UndefOr[js.Any]
   ) = this()
 }
 

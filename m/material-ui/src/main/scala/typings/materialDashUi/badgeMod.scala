@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.badgeMod.Badge
+import typings.materialDashUi.__MaterialUI.BadgeProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object badgeMod extends js.Object {
   @js.native
   class Badge ()
-    extends typings.materialDashUi.__MaterialUI.Badge
+    extends Component[BadgeProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Badge
+  class default ()
+    extends Component[BadgeProps, js.Object, js.Any]
   
 }
 

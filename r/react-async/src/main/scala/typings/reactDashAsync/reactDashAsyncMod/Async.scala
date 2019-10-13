@@ -1,7 +1,7 @@
 package typings.reactDashAsync.reactDashAsyncMod
 
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashAsync.Anon_Children
 import typings.reactDashAsync.Anon_ChildrenInitial
 import typings.reactDashAsync.Anon_ChildrenPersist

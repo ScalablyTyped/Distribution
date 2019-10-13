@@ -1,13 +1,15 @@
 package typings.reactDashBootstrap.libPaginationMod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-bootstrap/lib/Pagination", JSImport.Namespace)
 @js.native
-class ^ () extends Pagination
+class ^ ()
+  extends Component[PaginationProps, js.Object, js.Any]
 
 @JSImport("react-bootstrap/lib/Pagination", JSImport.Namespace)
 @js.native

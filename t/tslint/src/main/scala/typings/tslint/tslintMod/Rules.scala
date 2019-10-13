@@ -17,11 +17,11 @@ object Rules extends js.Object {
   
   @js.native
   abstract class OptionallyTypedRule ()
-    extends typings.tslint.libRulesMod.OptionallyTypedRule
+    extends typings.tslint.libLanguageRuleOptionallyTypedRuleMod.OptionallyTypedRule
   
   @js.native
   abstract class TypedRule ()
-    extends typings.tslint.libRulesMod.TypedRule
+    extends typings.tslint.libLanguageRuleTypedRuleMod.TypedRule
   
   /* static members */
   @js.native

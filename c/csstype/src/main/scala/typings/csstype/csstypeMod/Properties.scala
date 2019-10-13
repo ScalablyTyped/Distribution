@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.csstype.csstypeMod.SvgProperties because var conflicts: clip, clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined alignmentBaseline, baselineShift, clipRule, colorInterpolation, colorRendering, dominantBaseline, fill, fillOpacity, fillRule, floodColor, floodOpacity, glyphOrientationVertical, lightingColor, marker, markerEnd, markerMid, markerStart, shapeRendering, stopColor, stopOpacity, stroke, strokeDasharray, strokeDashoffset, strokeLinecap, strokeLinejoin, strokeMiterlimit, strokeOpacity, strokeWidth, textAnchor, vectorEffect */ trait Properties[TLength]
-  extends StandardProperties[TLength]
-     with VendorProperties[TLength]
+  extends StandardLonghandProperties[TLength]
+     with StandardShorthandProperties[TLength]
+     with VendorLonghandProperties[TLength]
+     with VendorShorthandProperties[TLength]
      with ObsoleteProperties[TLength] {
   var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.undefined
   var baselineShift: js.UndefOr[BaselineShiftProperty[TLength]] = js.undefined
@@ -45,8 +47,10 @@ object Properties {
   @scala.inline
   def apply[TLength](
     ObsoleteProperties: ObsoleteProperties[TLength] = null,
-    StandardProperties: StandardProperties[TLength] = null,
-    VendorProperties: VendorProperties[TLength] = null,
+    StandardLonghandProperties: StandardLonghandProperties[TLength] = null,
+    StandardShorthandProperties: StandardShorthandProperties[TLength] = null,
+    VendorLonghandProperties: VendorLonghandProperties[TLength] = null,
+    VendorShorthandProperties: VendorShorthandProperties[TLength] = null,
     alignmentBaseline: AlignmentBaselineProperty = null,
     baselineShift: BaselineShiftProperty[TLength] = null,
     clipRule: ClipRuleProperty = null,
@@ -80,8 +84,10 @@ object Properties {
   ): Properties[TLength] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ObsoleteProperties)
-    js.Dynamic.global.Object.assign(__obj, StandardProperties)
-    js.Dynamic.global.Object.assign(__obj, VendorProperties)
+    js.Dynamic.global.Object.assign(__obj, StandardLonghandProperties)
+    js.Dynamic.global.Object.assign(__obj, StandardShorthandProperties)
+    js.Dynamic.global.Object.assign(__obj, VendorLonghandProperties)
+    js.Dynamic.global.Object.assign(__obj, VendorShorthandProperties)
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline)
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule)

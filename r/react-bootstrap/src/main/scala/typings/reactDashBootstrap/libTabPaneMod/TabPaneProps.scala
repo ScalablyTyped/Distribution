@@ -1,16 +1,18 @@
 package typings.reactDashBootstrap.libTabPaneMod
 
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.HTMLProps
 import typings.reactDashBootstrap.reactDashBootstrapMod.TransitionCallbacks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TabPaneProps
-  extends HTMLProps[TabPane]
-     with TransitionCallbacks {
+  extends AllHTMLAttributes[TabPane]
+     with TransitionCallbacks
+     with ClassAttributes[TabPane] {
   var animation: js.UndefOr[Boolean | (ComponentClass[_, ComponentState])] = js.undefined
   var bsClass: js.UndefOr[String] = js.undefined
   var eventKey: js.UndefOr[js.Any] = js.undefined
@@ -21,7 +23,8 @@ trait TabPaneProps
 object TabPaneProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[TabPane] = null,
+    AllHTMLAttributes: AllHTMLAttributes[TabPane] = null,
+    ClassAttributes: ClassAttributes[TabPane] = null,
     TransitionCallbacks: TransitionCallbacks = null,
     animation: Boolean | (ComponentClass[_, ComponentState]) = null,
     `aria-labelledby`: String = null,
@@ -31,7 +34,8 @@ object TabPaneProps {
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
   ): TabPaneProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, TransitionCallbacks)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`)

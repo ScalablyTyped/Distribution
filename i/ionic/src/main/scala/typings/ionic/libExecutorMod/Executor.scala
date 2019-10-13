@@ -1,7 +1,7 @@
 package typings.ionic.libExecutorMod
 
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkMod.AbstractExecutor
 import typings.atIonicCliDashFramework.definitionsMod.CommandMetadataInput
+import typings.atIonicCliDashFramework.libExecutorMod.AbstractExecutor
 import typings.ionic.definitionsMod.CommandInstanceInfo
 import typings.ionic.definitionsMod.CommandMetadata
 import typings.ionic.definitionsMod.CommandMetadataOption

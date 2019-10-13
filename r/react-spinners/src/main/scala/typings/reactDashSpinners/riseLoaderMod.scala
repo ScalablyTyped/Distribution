@@ -1,6 +1,6 @@
 package typings.reactDashSpinners
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
 import typings.reactDashSpinners.interfacesMod.StyleFunctionWithIndex
 import typings.reactDashSpinners.riseLoaderMod.Loader
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object riseLoaderMod extends js.Object {
   @js.native
   trait Loader
-    extends PureComponent[LoaderSizeMarginProps, js.Object, js.Any] {
+    extends Component[LoaderSizeMarginProps, js.Object, js.Any] {
     var style: StyleFunctionWithIndex = js.native
   }
   

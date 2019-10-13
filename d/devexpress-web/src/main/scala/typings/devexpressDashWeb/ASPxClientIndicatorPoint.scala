@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientIndicatorPoint")
 @js.native
-class ASPxClientIndicatorPoint () extends ASPxClientWebChartRequiredElement {
+class ASPxClientIndicatorPoint () extends ASPxClientWebChartElement {
   /**
     * Returns the indicator point's argument.
     */

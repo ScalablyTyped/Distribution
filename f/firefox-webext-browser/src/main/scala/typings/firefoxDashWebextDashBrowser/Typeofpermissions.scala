@@ -24,7 +24,7 @@ trait Typeofpermissions extends js.Object {
   /** Get a list of all the extension's permissions. */
   def getAll(): js.Promise[AnyPermissions]
   /** Relinquish the given permissions. */
-  def remove(permissions: Permissions): js.Promise[Unit]
+  def remove(permissions: Permissions): js.Promise[Boolean]
   /**
     * Request the given permissions.
     *
@@ -38,7 +38,7 @@ object Typeofpermissions {
   def apply(
     contains: AnyPermissions => js.Promise[Boolean],
     getAll: () => js.Promise[AnyPermissions],
-    remove: Permissions => js.Promise[Unit],
+    remove: Permissions => js.Promise[Boolean],
     request: Permissions => js.Promise[Boolean],
     onAdded: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = null,
     onRemoved: WebExtEvent[js.Function1[/* permissions */ Permissions, Unit]] = null

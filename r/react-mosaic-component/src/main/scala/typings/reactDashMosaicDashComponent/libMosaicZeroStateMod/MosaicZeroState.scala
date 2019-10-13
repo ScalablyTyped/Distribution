@@ -1,7 +1,7 @@
 package typings.reactDashMosaicDashComponent.libMosaicZeroStateMod
 
+import typings.react.reactMod.Component
 import typings.react.reactMod.Context
-import typings.react.reactMod.PureComponent
 import typings.reactDashMosaicDashComponent.libContextTypesMod.MosaicContext
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicKey
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-mosaic-component/lib/MosaicZeroState", "MosaicZeroState")
 @js.native
 class MosaicZeroState[T /* <: MosaicKey */] ()
-  extends PureComponent[MosaicZeroStateProps[T], js.Object, js.Any] {
+  extends Component[MosaicZeroStateProps[T], js.Object, js.Any] {
   @JSName("context")
   var context_MosaicZeroState: MosaicContext[T] = js.native
   var replace: js.Any = js.native

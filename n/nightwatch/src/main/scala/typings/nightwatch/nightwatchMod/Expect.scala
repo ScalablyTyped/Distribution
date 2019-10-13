@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Expect
-  extends NightwatchBrowser
+  extends NightwatchAPI
      with NightwatchLanguageChains {
   /**
     * Property that checks if an element is currently enabled.

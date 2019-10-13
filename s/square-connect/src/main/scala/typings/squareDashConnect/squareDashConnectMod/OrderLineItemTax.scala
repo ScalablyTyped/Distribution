@@ -31,12 +31,12 @@ class OrderLineItemTax () extends js.Object {
     * To change the scope, you must delete the tax and re-add it as a new tax.
     * See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values.
     */
-  var scope: js.UndefOr[TaxApplicationScopeEnum] = js.native
+  var scope: js.UndefOr[TaxApplicationScopeType] = js.native
   /**
     * Indicates the calculation method used to apply the tax.
     * See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     */
-  var `type`: js.UndefOr[TaxTypeEnum] = js.native
+  var `type`: js.UndefOr[TaxType] = js.native
   /**
     * Unique ID that identifies the tax only within this order.
     */

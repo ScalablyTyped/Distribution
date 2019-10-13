@@ -1,10 +1,12 @@
 package typings.fundamentalDashReact.libPopoverPopoverMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("fundamental-react/lib/Popover/Popover", JSImport.Default)
 @js.native
-class default () extends Popover
+class default ()
+  extends Component[PopoverProps, js.Object, js.Any]
 

@@ -42,7 +42,7 @@ object Scale extends js.Object {
     * 
     * #### Scale Modes
     * 
-    * The way the scaling is handled is determined by the `scaleMode` property. The default is `NO_SCALE`,
+    * The way the scaling is handled is determined by the `scaleMode` property. The default is `NONE`,
     * which prevents Phaser from scaling or touching the canvas, or its parent, at all. In this mode, you are
     * responsible for all scaling. The other scaling modes afford you automatic scaling.
     * 

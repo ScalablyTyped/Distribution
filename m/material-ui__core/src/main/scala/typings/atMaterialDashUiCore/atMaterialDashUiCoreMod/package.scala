@@ -9,7 +9,7 @@ package object atMaterialDashUiCoreMod {
   import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.classes
   import typings.atMaterialDashUiCore.stylesWithStylesMod.StyledComponentProps
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.Global.JSX.LibraryManagedAttributes
+  import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
   import typings.std.Exclude
   import typings.std.Pick
 
@@ -22,6 +22,6 @@ package object atMaterialDashUiCoreMod {
     /* component */ js.Any, 
     ComponentType[(Omit[LibraryManagedAttributes[_, PropsOf[_]], String]) with AdditionalProps]
   ]
-  type PropsOf[C] = /* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[C] */ js.Any
+  type PropsOf[C] = /* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[C] */ js.Any
   type StandardProps[C, ClassKey /* <: String */, Removals /* <: String */] = (Omit[C, classes | Removals]) with StyledComponentProps[ClassKey] with Anon_ClassName
 }

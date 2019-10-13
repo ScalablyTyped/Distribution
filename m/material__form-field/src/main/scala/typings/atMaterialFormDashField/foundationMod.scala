@@ -1,7 +1,6 @@
 package typings.atMaterialFormDashField
 
 import typings.atMaterialFormDashField.adapterMod.MDCFormFieldAdapter
-import typings.atMaterialFormDashField.foundationMod.MDCFormFieldFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object foundationMod extends js.Object {
   @js.native
-  class default () extends MDCFormFieldFoundation
+  class default ()
+    extends typings.atMaterialBase.foundationMod.default[MDCFormFieldAdapter]
   
   /* static members */
   @js.native

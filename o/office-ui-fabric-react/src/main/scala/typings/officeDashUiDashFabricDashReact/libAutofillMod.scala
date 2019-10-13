@@ -16,7 +16,7 @@ object libAutofillMod extends js.Object {
   
   @js.native
   class BaseAutoFill ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsAutofillMod.BaseAutoFill
+    extends typings.officeDashUiDashFabricDashReact.libComponentsAutofillAutofillMod.Autofill
   
   /* static members */
   @js.native

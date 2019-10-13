@@ -1,6 +1,5 @@
 package typings.atMaterialTopDashAppDashBar
 
-import typings.atMaterialTopDashAppDashBar.fixedFoundationMod.MDCFixedTopAppBarFoundation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object fixedFoundationMod extends js.Object {
   @js.native
-  class default () extends MDCFixedTopAppBarFoundation
+  class default ()
+    extends typings.atMaterialTopDashAppDashBar.foundationMod.default
   
   type MDCFixedTopAppBarFoundation = typings.atMaterialTopDashAppDashBar.foundationMod.default
 }

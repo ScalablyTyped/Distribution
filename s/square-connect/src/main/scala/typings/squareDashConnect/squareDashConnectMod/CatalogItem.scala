@@ -1,6 +1,10 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.CatalogItem.ProductTypeEnum
+import typings.squareDashConnect.squareDashConnectStrings.APPOINTMENTS_SERVICE
+import typings.squareDashConnect.squareDashConnectStrings.GIFT_CARD
+import typings.squareDashConnect.squareDashConnectStrings.REGULAR
+import typings.squareDashConnect.squareDashConnectStrings.RESTAURANT_ITEM
+import typings.squareDashConnect.squareDashConnectStrings.RETAIL_ITEM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,7 +61,7 @@ class CatalogItem () extends js.Object {
     * Only items of product type `REGULAR` or `APPOINTMENTS_SERVICE` may be created by this API; items with other product
     * types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
     */
-  var product_type: js.UndefOr[ProductTypeEnum] = js.native
+  var product_type: js.UndefOr[REGULAR | GIFT_CARD | APPOINTMENTS_SERVICE | RETAIL_ITEM | RESTAURANT_ITEM] = js.native
   /**
     * If `false`, the Square Point of Sale app will present the [CatalogItem](#type-catalogitem)'s details screen immediately,
     * allowing the merchant to choose [CatalogModifier](#type-catalogmodifier)s before adding the item to the cart.
@@ -77,39 +81,5 @@ class CatalogItem () extends js.Object {
     * for this item. Maximum: 250 item variations.
     */
   var variations: js.UndefOr[js.Array[CatalogObject]] = js.native
-}
-
-@JSImport("square-connect", "CatalogItem")
-@js.native
-object CatalogItem extends js.Object {
-  @js.native
-  sealed trait ProductTypeEnum extends js.Object
-  
-  @js.native
-  object ProductTypeEnum extends js.Object {
-    @js.native
-    sealed trait APPOINTMENTS_SERVICE extends ProductTypeEnum
-    
-    @js.native
-    sealed trait GIFT_CARD extends ProductTypeEnum
-    
-    @js.native
-    sealed trait REGULAR extends ProductTypeEnum
-    
-    @js.native
-    sealed trait RESTAURANT_ITEM extends ProductTypeEnum
-    
-    @js.native
-    sealed trait RETAIL_ITEM extends ProductTypeEnum
-    
-    /* "APPOINTMENTS_SERVICE" */ val APPOINTMENTS_SERVICE: typings.squareDashConnect.squareDashConnectMod.CatalogItem.ProductTypeEnum.APPOINTMENTS_SERVICE with String = js.native
-    /* "GIFT_CARD" */ val GIFT_CARD: typings.squareDashConnect.squareDashConnectMod.CatalogItem.ProductTypeEnum.GIFT_CARD with String = js.native
-    /* "REGULAR" */ val REGULAR: typings.squareDashConnect.squareDashConnectMod.CatalogItem.ProductTypeEnum.REGULAR with String = js.native
-    /* "RESTAURANT_ITEM" */ val RESTAURANT_ITEM: typings.squareDashConnect.squareDashConnectMod.CatalogItem.ProductTypeEnum.RESTAURANT_ITEM with String = js.native
-    /* "RETAIL_ITEM" */ val RETAIL_ITEM: typings.squareDashConnect.squareDashConnectMod.CatalogItem.ProductTypeEnum.RETAIL_ITEM with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[ProductTypeEnum with String] = js.native
-  }
-  
 }
 

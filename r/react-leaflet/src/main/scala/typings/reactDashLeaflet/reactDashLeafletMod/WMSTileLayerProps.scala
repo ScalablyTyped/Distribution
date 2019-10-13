@@ -5,35 +5,19 @@ import typings.leaflet.leafletMod.CrossOrigin
 import typings.leaflet.leafletMod.LatLngBoundsExpression
 import typings.leaflet.leafletMod.LeafletEvent
 import typings.leaflet.leafletMod.TileEvent
+import typings.leaflet.leafletMod.WMSOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.leaflet.leafletMod.GridLayerOptions because Already inherited
-- typings.leaflet.leafletMod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined accessToken, crossOrigin, detectRetina, errorTileUrl, id, maxNativeZoom, minNativeZoom, subdomains, tms, zoomOffset, zoomReverse
-- typings.leaflet.leafletMod.WMSOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined crs, format, layers, styles, transparent, uppercase, version */ trait WMSTileLayerProps
-  extends GridLayerProps
+- typings.reactDashLeaflet.reactDashLeafletMod.MapComponentProps because var conflicts: pane. Inlined leaflet
+- typings.reactDashLeaflet.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait WMSTileLayerProps
+  extends WMSOptions
      with TileLayerEvents {
-  var accessToken: js.UndefOr[String] = js.undefined
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
-  var crs: js.UndefOr[CRS] = js.undefined
-  var detectRetina: js.UndefOr[Boolean] = js.undefined
-  var errorTileUrl: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var layers: js.UndefOr[String] = js.undefined
-  var maxNativeZoom: js.UndefOr[Double] = js.undefined
-  var minNativeZoom: js.UndefOr[Double] = js.undefined
-  var styles: js.UndefOr[String] = js.undefined
-  var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
-  var tms: js.UndefOr[Boolean] = js.undefined
-  var transparent: js.UndefOr[Boolean] = js.undefined
-  var uppercase: js.UndefOr[Boolean] = js.undefined
+  var children: js.UndefOr[Children] = js.undefined
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
   var url: String
-  var version: js.UndefOr[String] = js.undefined
-  var zoomOffset: js.UndefOr[Double] = js.undefined
-  var zoomReverse: js.UndefOr[Boolean] = js.undefined
 }
 
 object WMSTileLayerProps {

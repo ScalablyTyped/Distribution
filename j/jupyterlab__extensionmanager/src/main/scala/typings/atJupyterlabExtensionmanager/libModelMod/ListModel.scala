@@ -1,7 +1,7 @@
 package typings.atJupyterlabExtensionmanager.libModelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabApputils.libVdomMod.VDomModel
 import typings.atJupyterlabExtensionmanager.libQueryMod.ISearchResult
 import typings.atJupyterlabExtensionmanager.libQueryMod.Searcher
 import typings.atJupyterlabServices.atJupyterlabServicesMod.ServiceManager

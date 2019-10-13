@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object protocolEntityIEntityGroupMod extends js.Object {
   @js.native
   trait IEntityGroup[T /* <: IEntity */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */]
-    extends Container[T, SourceT, IteratorT, ReverseT, T]
+    extends typings.tstl.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T]
        with IEntity {
     /**
       * A tag name of children objects.

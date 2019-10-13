@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "Namespaces")
 @js.native
 class Namespaces ()
-  extends typings.gitlab.distServicesMod.Namespaces
+  extends typings.gitlab.distServicesNamespacesMod.Namespaces
 

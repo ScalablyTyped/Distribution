@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon", "collections.ListCollection")
 @js.native
 class ListCollection[T] ()
-  extends typings.samchon.collectionsMod.ListCollection[T]
+  extends typings.ecol.libLinearListCollectionMod.ListCollection[T]
 
 @JSImport("samchon", "collections.ListCollection")
 @js.native
@@ -33,7 +33,7 @@ object ListCollection extends js.Object {
     */
   @js.native
   class ReverseIterator[T] ()
-    extends typings.samchon.collectionsMod.ListCollection.ReverseIterator[T]
+    extends typings.ecol.libLinearListCollectionMod.ListCollection.ReverseIterator[T]
   
   val Event: Instantiable3[
     /* type */ String, 

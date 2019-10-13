@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/models", "ContainerReflection")
 @js.native
 class ContainerReflection ()
-  extends typings.typedoc.distLibModelsReflectionsMod.ContainerReflection
+  extends typings.typedoc.distLibModelsReflectionsContainerMod.ContainerReflection
 

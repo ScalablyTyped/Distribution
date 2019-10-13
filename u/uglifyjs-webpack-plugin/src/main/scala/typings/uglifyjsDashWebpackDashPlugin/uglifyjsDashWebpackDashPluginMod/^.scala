@@ -1,12 +1,13 @@
 package typings.uglifyjsDashWebpackDashPlugin.uglifyjsDashWebpackDashPluginMod
 
+import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("uglifyjs-webpack-plugin", JSImport.Namespace)
 @js.native
-class ^ () extends UglifyJsPlugin {
+class ^ () extends Plugin {
   def this(options: UglifyJsPluginOptions) = this()
 }
 

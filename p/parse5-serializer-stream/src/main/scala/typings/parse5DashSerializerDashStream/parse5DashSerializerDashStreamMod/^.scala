@@ -1,5 +1,6 @@
 package typings.parse5DashSerializerDashStream.parse5DashSerializerDashStreamMod
 
+import typings.node.streamMod.Readable
 import typings.parse5.parse5Mod.Node
 import typings.parse5.parse5Mod.SerializerOptions
 import scala.scalajs.js
@@ -29,7 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse5-serializer-stream", JSImport.Namespace)
 @js.native
-class ^ protected () extends SerializerStream {
+class ^ protected () extends Readable {
   /**
     * Streaming AST node to an HTML serializer. A readable stream.
     *

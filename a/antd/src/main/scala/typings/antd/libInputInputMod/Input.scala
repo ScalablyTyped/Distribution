@@ -3,9 +3,9 @@ package typings.antd.libInputInputMod
 import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.MouseEvent

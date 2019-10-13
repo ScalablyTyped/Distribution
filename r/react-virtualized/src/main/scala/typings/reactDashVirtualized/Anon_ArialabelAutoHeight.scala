@@ -1,10 +1,10 @@
 package typings.reactDashVirtualized
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Requireable
 import typings.react.reactMod.Validator
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashVirtualized.distEsTableMod.Column
 import typings.reactDashVirtualized.distEsTableMod.HeaderMouseEventHandlerParams
 import typings.reactDashVirtualized.distEsTableMod.RowMouseEventHandlerParams

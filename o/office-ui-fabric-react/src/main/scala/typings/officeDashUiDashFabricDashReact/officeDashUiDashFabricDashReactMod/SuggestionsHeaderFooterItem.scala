@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react", "SuggestionsHeaderFooterItem")
 @js.native
 class SuggestionsHeaderFooterItem ()
-  extends typings.officeDashUiDashFabricDashReact.libFloatingPickerMod.SuggestionsHeaderFooterItem
+  extends typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionsHeaderFooterItem
 

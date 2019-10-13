@@ -1,5 +1,7 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libAppUnderscoreBarAppBarMod.AppBarProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,11 @@ import scala.scalajs.js.annotation._
 object libAppUnderscoreBarMod extends js.Object {
   @js.native
   class AppBar ()
-    extends typings.reactDashToolbox.libAppUnderscoreBarAppBarMod.AppBar
+    extends Component[AppBarProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libAppUnderscoreBarAppBarMod.AppBar
+    extends Component[AppBarProps, js.Object, js.Any]
   
 }
 

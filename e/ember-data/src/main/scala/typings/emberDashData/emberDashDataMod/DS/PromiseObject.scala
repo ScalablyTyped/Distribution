@@ -1,6 +1,7 @@
 package typings.emberDashData.emberDashDataMod.DS
 
-import typings.rsvp.rsvpMod.RSVP.Promise
+import typings.atEmberObject.promiseDashProxyDashMixinMod.PromiseProxyMixin
+import typings.atEmberObject.proxyMod.ObjectProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,37 +13,9 @@ import scala.scalajs.js.annotation._
   * it easy to create data bindings with the `PromiseObject` that will
   * be updated when the promise resolves.
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.rsvp.rsvpMod.default.Promise because Inheritance from two classes. Inlined 
-- typings.atEmberObject.promiseDashProxyDashMixinMod.PromiseProxyMixin because Inheritance from two classes. Inlined isFulfilled, isPending, isRejected, isSettled, promise, reason */ @JSImport("ember-data", "DS.PromiseObject")
+@JSImport("ember-data", "DS.PromiseObject")
 @js.native
 class PromiseObject[T] ()
-  extends typings.atEmberObject.proxyMod.default[T]
-     with Promise[T with typings.atEmberObject.proxyMod.default[js.Object]] {
-  /**
-    * Will become `true` if the proxied promise is fulfilled.
-    */
-  var isFulfilled: Boolean = js.native
-  /**
-    * Once the proxied promise has settled this will become `false`.
-    */
-  var isPending: Boolean = js.native
-  /**
-    * Will become `true` if the proxied promise is rejected.
-    */
-  var isRejected: Boolean = js.native
-  /**
-    * Once the proxied promise has settled this will become `true`.
-    */
-  var isSettled: Boolean = js.native
-  /**
-    * The promise whose fulfillment value is being proxied by this object.
-    */
-  var promise: typings.rsvp.rsvpMod.default.Promise[T with typings.atEmberObject.proxyMod.default[js.Object]] = js.native
-  /**
-    * If the proxied promise is rejected this will contain the reason
-    * provided.
-    */
-  var reason: js.Any = js.native
-}
+  extends PromiseProxyMixin[T with typings.atEmberObject.proxyMod.default[js.Object]]
+     with ObjectProxy[T]
 

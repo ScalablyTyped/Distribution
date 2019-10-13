@@ -1,6 +1,5 @@
 package typings.atEmberRouting
 
-import typings.atEmberRouting.hashDashLocationMod.HashLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object hashDashLocationMod extends js.Object {
   @js.native
-  class default () extends HashLocation
+  class default ()
+    extends typings.atEmberObject.atEmberObjectMod.default
   
   type HashLocation = typings.atEmberObject.atEmberObjectMod.default
 }

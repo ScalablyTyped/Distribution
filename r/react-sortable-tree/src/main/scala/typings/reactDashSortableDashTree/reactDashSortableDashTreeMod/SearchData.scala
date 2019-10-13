@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SearchData extends NodeData {
+trait SearchData
+  extends TreeNode
+     with TreePath
+     with TreeIndex {
   var searchQuery: js.Any
 }
 

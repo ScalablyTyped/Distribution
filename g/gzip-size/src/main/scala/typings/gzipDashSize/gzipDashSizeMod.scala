@@ -4,7 +4,7 @@ import typings.gzipDashSize.gzipDashSizeMod.GzipSizeStream
 import typings.gzipDashSize.gzipDashSizeMod.Options
 import typings.gzipDashSize.gzipDashSizeStrings.`gzip-size`
 import typings.node.Buffer
-import typings.node.streamMod.PassThrough
+import typings.node.streamMod.Transform
 import typings.node.zlibMod.ZlibOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object gzipDashSizeMod extends js.Object {
   @js.native
-  trait GzipSizeStream extends PassThrough {
+  trait GzipSizeStream extends Transform {
     /**
     		Contains the gzip size of the stream after it is finished. Since this happens asynchronously, it is recommended you use the `gzip-size` event instead.
     		*/

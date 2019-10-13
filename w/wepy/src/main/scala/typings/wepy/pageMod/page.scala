@@ -2,6 +2,7 @@ package typings.wepy.pageMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.wepy.Anon_Delta
+import typings.wepy.componentMod.component
 import typings.wepy.wepyStrings.navigateTo
 import typings.wepy.wepyStrings.redirectTo
 import scala.scalajs.js
@@ -9,8 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait page
-  extends typings.wepy.componentMod.default {
+trait page extends component {
   @JSName("$preloadData")
   var $preloadData: js.UndefOr[StringDictionary[js.Any]] = js.native
   var config: js.UndefOr[PageConfig] = js.native

@@ -1,0 +1,38 @@
+package typings.mapbox.mapboxMod._Global_.L.mapbox
+
+import typings.leaflet.leafletMod.ControlPosition
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GridControlOptions extends ControlOptions {
+  var follow: js.UndefOr[Boolean] = js.undefined
+  var location: js.UndefOr[Boolean] = js.undefined
+  var pinnable: js.UndefOr[Boolean] = js.undefined
+  var template: js.UndefOr[String] = js.undefined
+  var touchTeaser: js.UndefOr[Boolean] = js.undefined
+}
+
+object GridControlOptions {
+  @scala.inline
+  def apply(
+    follow: js.UndefOr[Boolean] = js.undefined,
+    location: js.UndefOr[Boolean] = js.undefined,
+    pinnable: js.UndefOr[Boolean] = js.undefined,
+    position: ControlPosition = null,
+    sanitizer: /* template */ String => String = null,
+    template: String = null,
+    touchTeaser: js.UndefOr[Boolean] = js.undefined
+  ): GridControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location)
+    if (!js.isUndefined(pinnable)) __obj.updateDynamic("pinnable")(pinnable)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (sanitizer != null) __obj.updateDynamic("sanitizer")(js.Any.fromFunction1(sanitizer))
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(touchTeaser)) __obj.updateDynamic("touchTeaser")(touchTeaser)
+    __obj.asInstanceOf[GridControlOptions]
+  }
+}
+

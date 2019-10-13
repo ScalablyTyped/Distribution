@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular", "Config")
 @js.native
 class Config ()
-  extends typings.atIonicAngular.distMod.Config
+  extends typings.atIonicAngular.distProvidersConfigMod.Config
 

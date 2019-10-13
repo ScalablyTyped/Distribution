@@ -1,5 +1,9 @@
 package typings.squareDashConnect.squareDashConnectMod
 
+import typings.squareDashConnect.squareDashConnectStrings.COMPLETED
+import typings.squareDashConnect.squareDashConnectStrings.FAILED
+import typings.squareDashConnect.squareDashConnectStrings.PENDING
+import typings.squareDashConnect.squareDashConnectStrings.REJECTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +57,7 @@ class PaymentRefund () extends js.Object {
     * - `REJECTED` - the refund was rejected
     * - `FAILED` - an error occurred
     */
-  var status: js.UndefOr[String] = js.native
+  var status: PENDING | COMPLETED | REJECTED | FAILED = js.native
   /**
     * Timestamp of when the refund was last updated, in RFC 3339 format.
     */

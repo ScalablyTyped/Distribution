@@ -1,6 +1,11 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.Tender.TypeEnum
+import typings.squareDashConnect.squareDashConnectStrings.CARD
+import typings.squareDashConnect.squareDashConnectStrings.CASH
+import typings.squareDashConnect.squareDashConnectStrings.NO_SALE
+import typings.squareDashConnect.squareDashConnectStrings.OTHER
+import typings.squareDashConnect.squareDashConnectStrings.SQUARE_GIFT_CARD
+import typings.squareDashConnect.squareDashConnectStrings.THIRD_PARTY_CARD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,44 +73,6 @@ class Tender () extends js.Object {
   /**
     * The type of tender, such as `CARD` or `CASH`. See [TenderType](#type-tendertype) for possible values.
     */
-  var `type`: TypeEnum = js.native
-}
-
-@JSImport("square-connect", "Tender")
-@js.native
-object Tender extends js.Object {
-  @js.native
-  sealed trait TypeEnum extends js.Object
-  
-  @js.native
-  object TypeEnum extends js.Object {
-    @js.native
-    sealed trait CARD extends TypeEnum
-    
-    @js.native
-    sealed trait CASH extends TypeEnum
-    
-    @js.native
-    sealed trait NO_SALE extends TypeEnum
-    
-    @js.native
-    sealed trait OTHER extends TypeEnum
-    
-    @js.native
-    sealed trait SQUARE_GIFT_CARD extends TypeEnum
-    
-    @js.native
-    sealed trait THIRD_PARTY_CARD extends TypeEnum
-    
-    /* "CARD" */ val CARD: typings.squareDashConnect.squareDashConnectMod.Tender.TypeEnum.CARD with String = js.native
-    /* "CASH" */ val CASH: typings.squareDashConnect.squareDashConnectMod.Tender.TypeEnum.CASH with String = js.native
-    /* "NO_SALE" */ val NO_SALE: typings.squareDashConnect.squareDashConnectMod.Tender.TypeEnum.NO_SALE with String = js.native
-    /* "OTHER" */ val OTHER: typings.squareDashConnect.squareDashConnectMod.Tender.TypeEnum.OTHER with String = js.native
-    /* "SQUARE_GIFT_CARD" */ val SQUARE_GIFT_CARD: typings.squareDashConnect.squareDashConnectMod.Tender.TypeEnum.SQUARE_GIFT_CARD with String = js.native
-    /* "THIRD_PARTY_CARD" */ val THIRD_PARTY_CARD: typings.squareDashConnect.squareDashConnectMod.Tender.TypeEnum.THIRD_PARTY_CARD with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[TypeEnum with String] = js.native
-  }
-  
+  var `type`: CARD | CASH | THIRD_PARTY_CARD | SQUARE_GIFT_CARD | NO_SALE | OTHER = js.native
 }
 

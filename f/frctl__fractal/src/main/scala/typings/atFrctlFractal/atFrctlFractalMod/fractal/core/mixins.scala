@@ -2,7 +2,6 @@ package typings.atFrctlFractal.atFrctlFractalMod.fractal.core
 
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.EntitySource
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Collection
-import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.ConfigurableEmitter
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Entity
 import typings.atFrctlFractal.atFrctlFractalNumbers.`true`
 import typings.node.eventsMod.EventEmitter
@@ -111,9 +110,10 @@ object mixins extends js.Object {
     def toJSON(): js.Object = js.native
   }
   
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @js.native
   trait Source[T, TConfig]
-    extends ConfigurableEmitter[TConfig]
+    extends EventEmitter
        with Collection[T] {
     val fullPath: String | Null = js.native
     val isWatching: Boolean = js.native
@@ -121,68 +121,21 @@ object mixins extends js.Object {
     val relPath: String = js.native
     val source: this.type = js.native
     val title: String = js.native
-    /* InferMemberOverrides */
-    override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def emit(event: String, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def eventNames(): js.Array[String | js.Symbol] = js.native
+    def config(): TConfig = js.native
+    def config(config: TConfig): this.type = js.native
     def exists(): Boolean = js.native
-    /* InferMemberOverrides */
-    override def getMaxListeners(): Double = js.native
+    def get[K /* <: String */, V](path: K): js.UndefOr[
+        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+      ] = js.native
+    def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+      ] = js.native
     def isConfig(file: String): Boolean = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(`type`: String): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(`type`: js.Symbol): Double = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
     def load(): js.Promise[this.type] = js.native
     def load(force: Boolean): js.Promise[this.type] = js.native
-    /* InferMemberOverrides */
-    override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    // Added in Node 6...
-    /* InferMemberOverrides */
-    override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
     def refresh(): js.Promise[this.type] = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: String): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: js.Symbol): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def setMaxListeners(n: Double): this.type = js.native
+    def set[K /* <: String */](path: K): this.type = js.native
+    def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
     def unwatch(): Unit = js.native
     def watch(): Unit = js.native
   }

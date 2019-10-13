@@ -37,13 +37,13 @@ class OrderLineItemDiscount () extends js.Object {
     * This field is immutable. To change the scope of a discount you must delete the discount and re-add it as a new discount.
     * See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
     */
-  var scope: js.UndefOr[DiscountApplicationScopeEnum] = js.native
+  var scope: js.UndefOr[DiscountApplicationScopeType] = js.native
   /**
     * The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.
     * VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has
     * to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
     */
-  var `type`: js.UndefOr[DiscountTypeEnum] = js.native
+  var `type`: js.UndefOr[DiscountType] = js.native
   /**
     * Unique ID that identifies the discount only within this order.
     */

@@ -1,11 +1,11 @@
 package typings.rmcDashCalendar.libCalendarHeaderMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Header
-  extends PureComponent[PropsType, js.Object, js.Any]
+  extends Component[PropsType, js.Object, js.Any]
 

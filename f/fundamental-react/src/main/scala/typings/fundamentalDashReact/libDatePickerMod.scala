@@ -1,6 +1,7 @@
 package typings.fundamentalDashReact
 
-import typings.fundamentalDashReact.libDatePickerDatePickerMod.default
+import typings.fundamentalDashReact.libDatePickerDatePickerMod.DatePickerProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libDatePickerMod extends js.Object {
   @js.native
-  class DatePicker () extends default
+  class DatePicker ()
+    extends Component[DatePickerProps, js.Object, js.Any]
   
 }
 

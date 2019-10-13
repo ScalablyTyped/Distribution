@@ -1,5 +1,6 @@
 package typings.reactDashLeaflet.reactDashLeafletMod
 
+import typings.leaflet.leafletMod.CircleMarkerOptions
 import typings.leaflet.leafletMod.FillRule
 import typings.leaflet.leafletMod.LatLngExpression
 import typings.leaflet.leafletMod.LeafletEvent
@@ -13,12 +14,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.leaflet.leafletMod.LayerOptions because Already inherited
-- typings.leaflet.leafletMod.InteractiveLayerOptions because Already inherited
-- typings.leaflet.leafletMod.PathOptions because Already inherited
-- typings.leaflet.leafletMod.CircleMarkerOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined radius */ trait CircleMarkerProps extends PathProps {
+- typings.reactDashLeaflet.reactDashLeafletMod.MapComponentProps because var conflicts: pane. Inlined leaflet
+- typings.reactDashLeaflet.reactDashLeafletMod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait CircleMarkerProps
+  extends CircleMarkerOptions
+     with PathEvents {
   var center: LatLngExpression
-  var radius: js.UndefOr[Double]
+  var children: js.UndefOr[Children] = js.undefined
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  @JSName("radius")
+  var radius_CircleMarkerProps: Double
 }
 
 object CircleMarkerProps {

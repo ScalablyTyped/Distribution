@@ -1,14 +1,17 @@
 package typings.tar.tarMod
 
 import typings.node.Buffer
-import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ParseStream extends ReadWriteStream {
+trait ParseStream
+  extends ReadableStream
+     with WritableStream {
   var _ended: Boolean = js.native
   var _stream: Stream = js.native
   var position: Double = js.native

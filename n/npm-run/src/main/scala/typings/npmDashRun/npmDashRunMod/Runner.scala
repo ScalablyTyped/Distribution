@@ -16,8 +16,6 @@ import typings.node.childUnderscoreProcessMod.SpawnSyncOptionsWithStringEncoding
 import typings.node.childUnderscoreProcessMod.SpawnSyncReturns
 import typings.node.childUnderscoreProcessMod.StdioNull
 import typings.node.childUnderscoreProcessMod.StdioPipe
-import typings.node.streamMod.Readable
-import typings.node.streamMod.Writable
 import typings.npmDashRun.Fn_Args
 import typings.npmDashRun.Fn_ArgsCommand
 import typings.npmDashRun.Fn_Command
@@ -49,16 +47,16 @@ trait Runner extends ExecFunction {
     command: String,
     args: js.Array[String],
     options: SpawnOptionsWithStdioTuple[StdioNull | StdioPipe, StdioNull | StdioPipe, StdioNull | StdioPipe]
-  ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
+  ): ChildProcessByStdio[Null, Null, Null] = js.native
   def spawn(command: String, args: js.Array[String], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, options: SpawnOptions): ChildProcess = js.native
   def spawn(
     command: String,
     options: SpawnOptionsWithStdioTuple[StdioNull | StdioPipe, StdioNull | StdioPipe, StdioNull | StdioPipe]
-  ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
+  ): ChildProcessByStdio[Null, Null, Null] = js.native
   def spawn(command: String, options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawnSync(command: String): SpawnSyncReturns[Buffer] = js.native
-  def spawnSync(command: String, args: js.Array[String]): SpawnSyncReturns[String] = js.native
+  def spawnSync(command: String, args: js.Array[String]): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, args: js.Array[String], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, args: js.Array[String], options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native

@@ -21,6 +21,6 @@ class CatalogQuerySortedAttribute () extends js.Object {
     * The desired [SortOrder](#type-sortorder), "ASC" (ascending) or "DESC" (descending).
     * See [SortOrder](#type-sortorder) for possible values.
     */
-  var sort_order: js.UndefOr[SortOrderEnum] = js.native
+  var sort_order: js.UndefOr[SortOrderType] = js.native
 }
 

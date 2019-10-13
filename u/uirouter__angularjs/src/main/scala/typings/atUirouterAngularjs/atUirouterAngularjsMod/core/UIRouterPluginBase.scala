@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/angularjs", "core.UIRouterPluginBase")
 @js.native
 abstract class UIRouterPluginBase ()
-  extends typings.atUirouterCore.atUirouterCoreMod.UIRouterPluginBase
+  extends typings.atUirouterCore.libInterfaceMod.UIRouterPluginBase
 

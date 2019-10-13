@@ -4,7 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("square-connect", "InventoryAlertType")
-@js.native
-class InventoryAlertType () extends js.Object
+/* Rewritten from type alias, can be one of: 
+  - typings.squareDashConnect.squareDashConnectStrings.NONE
+  - typings.squareDashConnect.squareDashConnectStrings.LOW_QUANTITY
+*/
+trait InventoryAlertType extends js.Object
 

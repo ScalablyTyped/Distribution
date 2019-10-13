@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("photonui.FAIcon")
 @js.native
-class FAIcon () extends BaseIcon {
+class FAIcon () extends Widget {
   def this(name: String) = this()
   def this(params: StringDictionary[js.Any]) = this()
   def this(name: String, params: StringDictionary[js.Any]) = this()

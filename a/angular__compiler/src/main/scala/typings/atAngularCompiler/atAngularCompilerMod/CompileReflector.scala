@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "CompileReflector")
 @js.native
 abstract class CompileReflector ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.CompileReflector
+  extends typings.atAngularCompiler.srcCompileUnderscoreReflectorMod.CompileReflector
 

@@ -1,7 +1,6 @@
 package typings.fundamentalDashReact
 
 import typings.fundamentalDashReact.libCalendarCalendarMod.CalendarBaseProps
-import typings.fundamentalDashReact.libDatePickerDatePickerMod.DatePicker
 import typings.fundamentalDashReact.libDatePickerDatePickerMod.DatePickerProps
 import typings.react.reactMod.Component
 import scala.scalajs.js
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libDatePickerDatePickerMod extends js.Object {
   @js.native
-  class default () extends DatePicker
+  class default ()
+    extends Component[DatePickerProps, js.Object, js.Any]
   
   type DatePicker = Component[DatePickerProps, js.Object, js.Any]
   type DatePickerProps = Anon_ButtonProps with CalendarBaseProps

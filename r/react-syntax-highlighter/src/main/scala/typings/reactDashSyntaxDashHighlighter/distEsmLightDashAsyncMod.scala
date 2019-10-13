@@ -1,7 +1,6 @@
 package typings.reactDashSyntaxDashHighlighter
 
 import typings.react.reactMod.Component
-import typings.reactDashSyntaxDashHighlighter.distEsmLightDashAsyncMod.SyntaxHighlighter
 import typings.reactDashSyntaxDashHighlighter.reactDashSyntaxDashHighlighterMod.SyntaxHighlighterProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object distEsmLightDashAsyncMod extends js.Object {
   @js.native
-  class default () extends SyntaxHighlighter
+  class default ()
+    extends Component[SyntaxHighlighterProps, js.Object, js.Any]
   
   /* static members */
   @js.native

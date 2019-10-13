@@ -3,7 +3,8 @@ package typings.antdDashMobile.esNavDashBarPropsTypeMod
 import typings.antdDashMobile.antdDashMobileStrings.dark
 import typings.antdDashMobile.antdDashMobileStrings.light
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
@@ -12,7 +13,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NavBarProps extends HTMLProps[HTMLDivElement] {
+trait NavBarProps
+  extends AllHTMLAttributes[HTMLDivElement]
+     with ClassAttributes[HTMLDivElement] {
   var icon: js.UndefOr[ReactNode] = js.undefined
   var leftContent: js.UndefOr[ReactNode] = js.undefined
   var mode: js.UndefOr[dark | light] = js.undefined
@@ -24,7 +27,8 @@ trait NavBarProps extends HTMLProps[HTMLDivElement] {
 object NavBarProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLDivElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
+    ClassAttributes: ClassAttributes[HTMLDivElement] = null,
     className: String = null,
     icon: ReactNode = null,
     leftContent: ReactNode = null,
@@ -34,7 +38,8 @@ object NavBarProps {
     rightContent: ReactNode = null
   ): NavBarProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (className != null) __obj.updateDynamic("className")(className)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (leftContent != null) __obj.updateDynamic("leftContent")(leftContent.asInstanceOf[js.Any])

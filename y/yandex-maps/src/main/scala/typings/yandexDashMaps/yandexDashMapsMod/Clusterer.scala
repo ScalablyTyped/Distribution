@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 - typings.yandexDashMaps.yandexDashMapsMod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "Clusterer")
 @js.native
 class Clusterer ()
-  extends IChildOnMap
+  extends IChild[IControlParent]
      with IParentOnMap {
   def this(options: IClustererOptions) = this()
   var balloon: typings.yandexDashMaps.yandexDashMapsMod.clusterer.Balloon = js.native
@@ -21,12 +21,6 @@ class Clusterer ()
   var options: IOptionManager = js.native
   /* CompleteClass */
   override def getMap(): Map = js.native
-  /* InferMemberOverrides */
-  override def getParent(): js.Object | Null = js.native
-  /* InferMemberOverrides */
-  override def setParent(): this.type = js.native
-  /* InferMemberOverrides */
-  override def setParent(parent: js.Object): this.type = js.native
   def setParent(parent: IControlParent): this.type = js.native
 }
 
@@ -42,7 +36,7 @@ object clusterer extends js.Object {
   }
   
   @js.native
-  class Hint protected () extends IHintManager[Clusterer] {
+  class Hint protected () extends IPopupManager[Clusterer] {
     def this(clusterer: Clusterer) = this()
     /* CompleteClass */
     override var events: IEventManager = js.native

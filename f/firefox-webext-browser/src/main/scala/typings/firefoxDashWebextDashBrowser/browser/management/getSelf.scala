@@ -11,6 +11,6 @@ object getSelf extends js.Object {
     * Returns information about the calling extension. Note: This function can be used without requesting the
     * 'management' permission in the manifest.
     */
-  def apply(): js.Promise[js.UndefOr[ExtensionInfo]] = js.native
+  def apply(): js.Promise[ExtensionInfo] = js.native
 }
 

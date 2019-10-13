@@ -16,9 +16,7 @@ object distLibRenderingCellEditorsTextCellEditorMod extends js.Object {
     var useFormatter: Boolean = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.agDashGrid.distLibInterfacesIComponentMod.IComponent because Already inherited
-  - typings.agDashGrid.distLibRenderingCellEditorsICellEditorMod.ICellEditorComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @js.native
+  @js.native
   class TextCellEditor ()
     extends Component
        with ICellEditor {

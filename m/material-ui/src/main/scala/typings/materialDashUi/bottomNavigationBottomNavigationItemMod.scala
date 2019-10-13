@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.bottomNavigationBottomNavigationItemMod.BottomNavigationItem
+import typings.materialDashUi.__MaterialUI.BottomNavigation.BottomNavigationItemProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object bottomNavigationBottomNavigationItemMod extends js.Object {
   @js.native
   class BottomNavigationItem ()
-    extends typings.materialDashUi.__MaterialUI.BottomNavigation.BottomNavigationItem
+    extends Component[BottomNavigationItemProps, js.Object, js.Any]
   
   @js.native
-  class default () extends BottomNavigationItem
+  class default ()
+    extends Component[BottomNavigationItemProps, js.Object, js.Any]
   
 }
 

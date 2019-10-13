@@ -17,7 +17,7 @@ object distFormMod extends js.Object {
     DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
     Pick[
       DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 262 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 262 */ js.Any
     ], 
     Theme
   ]) with Anon_About = js.native

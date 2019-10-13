@@ -15,7 +15,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MediaQueryProps extends MediaQueryAllQueryable {
+trait MediaQueryProps
+  extends MediaQueryFeatures
+     with MediaQueryTypes {
   var children: js.UndefOr[ReactNode | (js.Function1[/* matches */ Boolean, ReactNode])] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var component: js.UndefOr[String | SFC[_] | (ClassType[_, _, _]) | (ComponentClass[_, ComponentState])] = js.undefined

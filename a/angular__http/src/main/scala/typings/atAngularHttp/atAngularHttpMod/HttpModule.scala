@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/http", "HttpModule")
 @js.native
 class HttpModule ()
-  extends typings.atAngularHttp.publicUnderscoreApiMod.HttpModule
+  extends typings.atAngularHttp.srcHttpUnderscoreModuleMod.HttpModule
 

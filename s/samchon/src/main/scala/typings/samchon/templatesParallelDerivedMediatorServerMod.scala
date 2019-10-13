@@ -18,10 +18,7 @@ object templatesParallelDerivedMediatorServerMod extends js.Object {
   @js.native
   class MediatorDedicatedWorkerServer () extends MediatorServer
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.samchon.protocolInvokeIProtocolMod.IProtocol because Already inherited
-  - typings.samchon.templatesSlaveSlaveSystemMod.SlaveSystem because Already inherited
-  - typings.samchon.templatesSlaveSlaveServerMod.ISlaveServer because var conflicts: _Complete_process, communicator_. Inlined  */ @js.native
+  @js.native
   class MediatorServer protected ()
     extends MediatorSystem
        with IServer {

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("vega-typings/types/runtime", "CanvasHandler")
 @js.native
 class CanvasHandler ()
-  extends typings.vegaDashTypings.typesRuntimeRendererMod.CanvasHandler
+  extends typings.vegaDashTypings.typesRuntimeRendererMod.Handler
 

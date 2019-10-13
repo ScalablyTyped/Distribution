@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocmanager.libSavingstatusMod
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomRenderer
+import typings.atJupyterlabApputils.libVdomMod.VDomRenderer
 import typings.atJupyterlabDocmanager.libSavingstatusMod.SavingStatus.IOptions
 import typings.atJupyterlabDocmanager.libSavingstatusMod.SavingStatus.Model
 import scala.scalajs.js

@@ -11,9 +11,6 @@ object reactDashInstantsearchDashNativeComponents extends reactDashInstantsearch
   @scala.inline
   def Index: ComponentType[js.Any] = js.constructorOf[typings.reactDashInstantsearchDashNative.reactDashInstantsearchDashNativeMod.Index].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
   @scala.inline
-  def InstantSearch: ComponentType[
-    typings.reactDashInstantsearchDashNative.reactDashInstantsearchDashNativeMod.InstantSearchProps
-  ] = js.constructorOf[typings.reactDashInstantsearchDashNative.reactDashInstantsearchDashNativeMod.InstantSearch].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashInstantsearchDashNative.reactDashInstantsearchDashNativeMod.InstantSearchProps]]
+  def InstantSearch: ComponentType[InstantSearchProps] = js.constructorOf[typings.reactDashInstantsearchDashNative.reactDashInstantsearchDashNativeMod.InstantSearch].asInstanceOf[typings.react.reactMod.ComponentType[InstantSearchProps]]
 }
 

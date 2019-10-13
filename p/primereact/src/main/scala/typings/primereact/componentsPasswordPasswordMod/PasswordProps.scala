@@ -2,14 +2,16 @@ package typings.primereact.componentsPasswordPasswordMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.primereact.componentsTooltipTooltipOptionsMod.TooltipOptions
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PasswordProps
-  extends HTMLProps[HTMLInputElement]
+  extends AllHTMLAttributes[HTMLInputElement]
+     with ClassAttributes[HTMLInputElement]
      with /* key */ StringDictionary[js.Any] {
   var feedback: js.UndefOr[Boolean] = js.undefined
   var mediumLabel: js.UndefOr[String] = js.undefined
@@ -23,7 +25,8 @@ trait PasswordProps
 object PasswordProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLInputElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLInputElement] = null,
+    ClassAttributes: ClassAttributes[HTMLInputElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     feedback: js.UndefOr[Boolean] = js.undefined,
     mediumLabel: String = null,
@@ -34,7 +37,8 @@ object PasswordProps {
     weakLabel: String = null
   ): PasswordProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(feedback)) __obj.updateDynamic("feedback")(feedback)
     if (mediumLabel != null) __obj.updateDynamic("mediumLabel")(mediumLabel)

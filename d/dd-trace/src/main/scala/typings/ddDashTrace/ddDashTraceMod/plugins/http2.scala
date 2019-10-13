@@ -16,7 +16,6 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.ddDashTrace.ddDashTraceMod.Analyzable because Already inherited
 - typings.ddDashTrace.ddDashTraceMod.plugins.Integration because Already inherited
-- typings.ddDashTrace.ddDashTraceMod.plugins.Instrumentation because Already inherited
 - typings.ddDashTrace.ddDashTraceMod.plugins.Http because Already inherited
 - typings.ddDashTrace.ddDashTraceMod.plugins.Http2Server because var conflicts: analytics, blacklist, enabled, headers, service, validateStatus, whitelist. Inlined  */ trait http2 extends Http2Client {
   /**

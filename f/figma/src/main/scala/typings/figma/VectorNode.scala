@@ -7,10 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait VectorNode
-  extends DefaultShapeMixin
+  extends SceneNode
+     with BaseNodeMixin
+     with SceneNodeMixin
+     with BlendMixin
+     with GeometryMixin
+     with LayoutMixin
+     with ExportMixin
      with ConstraintMixin
-     with CornerMixin
-     with SceneNode {
+     with CornerMixin {
   var handleMirroring: HandleMirroring | js.Symbol = js.native
   val `type`: VECTOR = js.native
   var vectorNetwork: VectorNetwork = js.native

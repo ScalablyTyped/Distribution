@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack-chain", "DevServer")
 @js.native
-class DevServer () extends ChainedMap[Config] {
+class DevServer ()
+  extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedMap[Config, js.Any] {
   var allowedHosts: TypedChainedSet[this.type, String] = js.native
   def apply(value: String): this.type = js.native
   def bonjour(value: Boolean): this.type = js.native
@@ -32,6 +33,8 @@ class DevServer () extends ChainedMap[Config] {
   def contentBase(value: js.Array[String]): this.type = js.native
   def contentBase(value: Boolean): this.type = js.native
   def disableHostCheck(value: Boolean): this.type = js.native
+  /* CompleteClass */
+  override def end(): Config = js.native
   def filename(value: String): this.type = js.native
   def headers(value: StringDictionary[String]): this.type = js.native
   def historyApiFallback(value: js.Any): this.type = js.native

@@ -1,17 +1,16 @@
 package typings.rmcDashCascader
 
 import typings.react.reactMod.ComponentType
-import typings.rmcDashCascader.esCascaderTypesMod.ICascaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rmcDashCascaderComponents extends rmcDashCascaderProps {
   @scala.inline
-  def Cascader: ComponentType[ICascaderProps] = js.constructorOf[typings.rmcDashCascader.esCascaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashCascader.esCascaderTypesMod.ICascaderProps]]
+  def Cascader: ComponentType[CascaderProps] = js.constructorOf[typings.rmcDashCascader.esCascaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CascaderProps]]
   @scala.inline
-  def Es: ComponentType[ICascaderProps] = js.constructorOf[typings.rmcDashCascader.esMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashCascader.esCascaderTypesMod.ICascaderProps]]
+  def Es: ComponentType[EsProps] = js.constructorOf[typings.rmcDashCascader.esMod.default].asInstanceOf[typings.react.reactMod.ComponentType[EsProps]]
   @scala.inline
-  def RmcDashCascader: ComponentType[typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps] = js.constructorOf[typings.rmcDashCascader.rmcDashCascaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps]]
+  def RmcDashCascader: ComponentType[RmcDashCascaderProps] = js.constructorOf[typings.rmcDashCascader.rmcDashCascaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RmcDashCascaderProps]]
 }
 

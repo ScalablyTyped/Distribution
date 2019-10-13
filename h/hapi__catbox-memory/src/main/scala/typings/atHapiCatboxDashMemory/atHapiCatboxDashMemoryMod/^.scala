@@ -2,6 +2,7 @@ package typings.atHapiCatboxDashMemory.atHapiCatboxDashMemoryMod
 
 import typings.atHapiCatbox.atHapiCatboxMod.CacheKey
 import typings.atHapiCatbox.atHapiCatboxMod.CachedObject
+import typings.atHapiCatbox.atHapiCatboxMod.ClientApi
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line:no-unnecessary-class
 @JSImport("@hapi/catbox-memory", JSImport.Namespace)
 @js.native
-class ^[T] () extends CatboxMemory[T] {
+class ^[T] () extends ClientApi[T] {
   def this(options: Options) = this()
   /**
     * drop(key) - remove an item from cache where:

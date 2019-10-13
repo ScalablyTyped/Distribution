@@ -1,20 +1,28 @@
 package typings.antdDashMobile.libViewMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ViewProps[T] extends HTMLProps[T] {
+trait ViewProps[T]
+  extends AllHTMLAttributes[T]
+     with ClassAttributes[T] {
   var Component: js.UndefOr[String] = js.undefined
 }
 
 object ViewProps {
   @scala.inline
-  def apply[T](Component: String = null, HTMLProps: HTMLProps[T] = null): ViewProps[T] = {
+  def apply[T](
+    AllHTMLAttributes: AllHTMLAttributes[T] = null,
+    ClassAttributes: ClassAttributes[T] = null,
+    Component: String = null
+  ): ViewProps[T] = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (Component != null) __obj.updateDynamic("Component")(Component)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
     __obj.asInstanceOf[ViewProps[T]]
   }
 }

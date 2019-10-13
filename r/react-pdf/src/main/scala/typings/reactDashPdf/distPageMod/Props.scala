@@ -1,9 +1,9 @@
 package typings.reactDashPdf.distPageMod
 
 import typings.pdfjsDashDist.pdfjsDashDistMod.PDFPageProxy
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashPdf.reactDashPdfStrings.canvas
 import typings.reactDashPdf.reactDashPdfStrings.none
 import typings.reactDashPdf.reactDashPdfStrings.svg

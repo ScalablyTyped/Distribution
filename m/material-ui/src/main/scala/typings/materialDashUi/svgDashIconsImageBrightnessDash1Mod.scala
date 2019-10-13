@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsImageBrightnessDash1Mod.ImageBrightness1
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsImageBrightnessDash1Mod extends js.Object {
   @js.native
-  class ImageBrightness1 () extends SvgIcon
+  class ImageBrightness1 ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends ImageBrightness1
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

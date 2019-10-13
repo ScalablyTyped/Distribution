@@ -2,9 +2,9 @@ package typings.reactDashMosaicDashComponent
 
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.Context
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashMosaicDashComponent.libInternalTypesMod.MosaicDropTargetPosition
 import typings.reactDashMosaicDashComponent.libMosaicMod.MosaicProps
 import typings.reactDashMosaicDashComponent.libMosaicMod.MosaicState
@@ -30,7 +30,7 @@ object reactDashMosaicDashComponentMod extends js.Object {
   
   @js.native
   class Mosaic[T /* <: MosaicKey */] ()
-    extends typings.reactDashMosaicDashComponent.libMosaicMod.Mosaic[T]
+    extends typings.reactDashMosaicDashComponent.libMosaicMod.MosaicWithoutDragDropContext[T]
   
   @js.native
   class MosaicWindow[T /* <: MosaicKey */] ()

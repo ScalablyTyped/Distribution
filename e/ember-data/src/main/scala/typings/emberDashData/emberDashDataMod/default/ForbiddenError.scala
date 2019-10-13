@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "ForbiddenError")
 @js.native
 class ForbiddenError ()
-  extends typings.emberDashData.emberDashDataMod.DS.ForbiddenError
+  extends typings.atEmberObject.atEmberObjectMod.default
 

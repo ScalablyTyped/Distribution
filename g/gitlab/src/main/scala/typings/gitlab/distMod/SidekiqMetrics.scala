@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "SidekiqMetrics")
 @js.native
 class SidekiqMetrics ()
-  extends typings.gitlab.distServicesMod.SidekiqMetrics
+  extends typings.gitlab.distServicesSidekiqMetricsMod.SidekiqMetrics
 

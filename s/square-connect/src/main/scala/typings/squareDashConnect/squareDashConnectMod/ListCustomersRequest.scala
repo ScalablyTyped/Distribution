@@ -1,6 +1,5 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.ListCustomersRequest.SortFieldEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,33 +16,11 @@ class ListCustomersRequest () extends js.Object {
     * Indicates how Customers should be sorted. Default: `DEFAULT`.
     * See [CustomerSortField](#type-customersortfield) for possible values.
     */
-  var sort_field: js.UndefOr[SortFieldEnum] = js.native
+  var sort_field: js.UndefOr[String] = js.native
   /**
     * Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`.
     * See [SortOrder](#type-sortorder) for possible values.
     */
-  var sort_order: js.UndefOr[SortOrderEnum] = js.native
-}
-
-@JSImport("square-connect", "ListCustomersRequest")
-@js.native
-object ListCustomersRequest extends js.Object {
-  @js.native
-  sealed trait SortFieldEnum extends js.Object
-  
-  @js.native
-  object SortFieldEnum extends js.Object {
-    @js.native
-    sealed trait CREATED_AT extends SortFieldEnum
-    
-    @js.native
-    sealed trait DEFAULT extends SortFieldEnum
-    
-    /* "CREATED_AT" */ val CREATED_AT: typings.squareDashConnect.squareDashConnectMod.ListCustomersRequest.SortFieldEnum.CREATED_AT with String = js.native
-    /* "DEFAULT" */ val DEFAULT: typings.squareDashConnect.squareDashConnectMod.ListCustomersRequest.SortFieldEnum.DEFAULT with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[SortFieldEnum with String] = js.native
-  }
-  
+  var sort_order: js.UndefOr[SortOrderType] = js.native
 }
 

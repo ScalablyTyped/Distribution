@@ -1,6 +1,7 @@
 package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsAutofillAutofillDotTypesMod.IAutofillProps
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.IBasePickerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps
@@ -12,7 +13,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagP
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemSuggestionProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagPickerProps
 import typings.react.reactMod.FunctionComponent
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,11 +29,11 @@ object libComponentsPickersMod extends js.Object {
   
   @js.native
   class BaseAutoFill ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsPickersAutoFillBaseAutoFillMod.BaseAutoFill
+    extends typings.officeDashUiDashFabricDashReact.libComponentsAutofillAutofillMod.Autofill
   
   @js.native
   class BasePeoplePicker ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerMod.BasePeoplePicker
+    extends typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerMod.BasePicker[IPersonaProps, IPeoplePickerProps]
   
   @js.native
   class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
@@ -54,7 +55,7 @@ object libComponentsPickersMod extends js.Object {
   
   @js.native
   class MemberListPeoplePicker ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerMod.MemberListPeoplePicker
+    extends typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerMod.BasePickerListBelow[IPersonaProps, IPeoplePickerProps]
   
   @js.native
   class NormalPeoplePickerBase ()

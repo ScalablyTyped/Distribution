@@ -1,6 +1,6 @@
 package typings.prex
 
-import typings.prex.outLibAsyncIterableMod.Global.AsyncIterableIterator
+import typings.prex.outLibAsyncIterableMod._Global_.AsyncIterableIterator
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

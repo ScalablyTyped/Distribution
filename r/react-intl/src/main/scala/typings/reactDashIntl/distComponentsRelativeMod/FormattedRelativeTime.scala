@@ -1,6 +1,6 @@
 package typings.reactDashIntl.distComponentsRelativeMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashIntl.Anon_CurrentValueInSeconds
 import typings.reactDashIntl.reactDashIntlStrings.unit
 import typings.reactDashIntl.reactDashIntlStrings.value
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-intl/dist/components/relative", "FormattedRelativeTime")
 @js.native
 class FormattedRelativeTime protected ()
-  extends PureComponent[Props, State, js.Any] {
+  extends Component[Props, State, js.Any] {
   def this(props: Props) = this()
   var _updateTimer: js.Any = js.native
   @JSName("componentDidMount")

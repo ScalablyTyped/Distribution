@@ -2,7 +2,6 @@ package typings.samchon
 
 import typings.samchon.protocolCommunicatorIClientDriverMod.IClientDriver
 import typings.samchon.protocolServerIServerMod.IServer
-import typings.samchon.templatesSlaveSlaveServerMod.ISlaveServer
 import typings.samchon.templatesSlaveSlaveSystemMod.SlaveSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,9 @@ object templatesSlaveSlaveServerMod extends js.Object {
   /**
     * Default Constructor.
     */
-  abstract class SlaveServer () extends ISlaveServer {
+  abstract class SlaveServer ()
+    extends SlaveSystem
+       with IServer {
     /**
       * @hidden
       */

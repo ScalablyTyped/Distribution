@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 object fixedDashDataDashTableComponents extends fixedDashDataDashTableProps {
   @scala.inline
-  def Cell: ComponentType[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.CellProps] = js.constructorOf[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.Cell].asInstanceOf[typings.react.reactMod.ComponentType[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.CellProps]]
+  def Cell: ComponentType[CellProps] = js.constructorOf[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.Cell].asInstanceOf[typings.react.reactMod.ComponentType[CellProps]]
   @scala.inline
-  def Column: ComponentType[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.ColumnProps] = js.constructorOf[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.Column].asInstanceOf[typings.react.reactMod.ComponentType[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.ColumnProps]]
+  def Column: ComponentType[ColumnProps] = js.constructorOf[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.Column].asInstanceOf[typings.react.reactMod.ComponentType[ColumnProps]]
   @scala.inline
-  def ColumnGroup: ComponentType[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.ColumnGroupProps] = js.constructorOf[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.ColumnGroup].asInstanceOf[typings.react.reactMod.ComponentType[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.ColumnGroupProps]]
+  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.ColumnGroup].asInstanceOf[typings.react.reactMod.ComponentType[ColumnGroupProps]]
   @scala.inline
-  def Table: ComponentType[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.TableProps] = js.constructorOf[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.Table].asInstanceOf[typings.react.reactMod.ComponentType[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.TableProps]]
+  def Table: ComponentType[TableProps] = js.constructorOf[typings.fixedDashDataDashTable.fixedDashDataDashTableMod.Table].asInstanceOf[typings.react.reactMod.ComponentType[TableProps]]
 }
 

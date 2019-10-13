@@ -1,10 +1,12 @@
 package typings.rcDashCheckbox.rcDashCheckboxMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rc-checkbox", JSImport.Default)
 @js.native
-class default () extends CheckBox
+class default ()
+  extends Component[Props, js.Object, js.Any]
 

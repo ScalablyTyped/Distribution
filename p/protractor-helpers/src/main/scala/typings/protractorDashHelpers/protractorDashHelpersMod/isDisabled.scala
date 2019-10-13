@@ -1,6 +1,6 @@
 package typings.protractorDashHelpers.protractorDashHelpersMod
 
-import typings.protractorDashHelpers.protractorDashHelpersMod.Global.protractor.ElementFinder
+import typings.protractorDashHelpers.protractorDashHelpersMod._Global_.protractor.ElementFinder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

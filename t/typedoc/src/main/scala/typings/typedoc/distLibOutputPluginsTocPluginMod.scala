@@ -1,8 +1,9 @@
 package typings.typedoc
 
 import typings.typedoc.distLibModelsReflectionsMod.Reflection
-import typings.typedoc.distLibOutputComponentsMod.RendererComponent
 import typings.typedoc.distLibOutputModelsNavigationItemMod.NavigationItem
+import typings.typedoc.distLibOutputRendererMod.Renderer
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibOutputPluginsTocPluginMod extends js.Object {
   @js.native
-  class TocPlugin () extends RendererComponent {
+  class TocPlugin () extends AbstractComponent[Renderer] {
     var onRendererBeginPage: js.Any = js.native
   }
   

@@ -1,6 +1,6 @@
 package typings.connectDashRedis.connectDashRedisMod
 
-import typings.expressDashSession.expressDashSessionMod.Global.Express.SessionData
+import typings.expressDashSession.expressDashSessionMod._Global_.Express.SessionData
 import typings.redis.redisMod.RedisClient
 import typings.std.JSON
 import scala.scalajs.js

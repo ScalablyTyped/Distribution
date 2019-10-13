@@ -1,7 +1,7 @@
 package typings.atBlueprintjsTable.libEsmInteractionsDraggableMod
 
 import typings.atBlueprintjsTable.Anon_PreventDefault
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/table/lib/esm/interactions/draggable", "Draggable")
 @js.native
 class Draggable ()
-  extends PureComponent[IDraggableProps, js.Object, js.Any] {
+  extends Component[IDraggableProps, js.Object, js.Any] {
   var events: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MDraggable(): Unit = js.native

@@ -13,7 +13,7 @@ import typings.atApolloReactDashCommon.libTypesTypesMod.MutationFunction
 import typings.atApolloReactDashCommon.libTypesTypesMod.MutationResult
 import typings.atApolloReactDashCommon.libTypesTypesMod.RefetchQueriesFunction
 import typings.graphql.languageAstMod.DocumentNode
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

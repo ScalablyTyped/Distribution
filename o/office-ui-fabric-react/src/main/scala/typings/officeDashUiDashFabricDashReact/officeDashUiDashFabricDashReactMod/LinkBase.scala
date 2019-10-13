@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react", "LinkBase")
 @js.native
 class LinkBase ()
-  extends typings.officeDashUiDashFabricDashReact.libLinkMod.LinkBase
+  extends typings.officeDashUiDashFabricDashReact.libComponentsLinkLinkDotBaseMod.LinkBase
 

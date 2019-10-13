@@ -22,7 +22,7 @@ import typings.antd.antdStrings.rightTop
 import typings.antd.antdStrings.top
 import typings.antd.antdStrings.topLeft
 import typings.antd.antdStrings.topRight
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

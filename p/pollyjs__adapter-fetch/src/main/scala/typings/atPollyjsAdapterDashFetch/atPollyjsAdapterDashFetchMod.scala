@@ -1,6 +1,5 @@
 package typings.atPollyjsAdapterDashFetch
 
-import typings.atPollyjsAdapterDashFetch.atPollyjsAdapterDashFetchMod.FetchAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object atPollyjsAdapterDashFetchMod extends js.Object {
   @js.native
-  class default () extends FetchAdapter
+  class default ()
+    extends typings.atPollyjsAdapter.atPollyjsAdapterMod.default
   
   type FetchAdapter = typings.atPollyjsAdapter.atPollyjsAdapterMod.default
 }

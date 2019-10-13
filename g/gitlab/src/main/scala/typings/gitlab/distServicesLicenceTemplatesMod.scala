@@ -1,7 +1,6 @@
 package typings.gitlab
 
 import typings.gitlab.distInfrastructureMod.BaseServiceOptions
-import typings.gitlab.distServicesLicenceTemplatesMod.LicenceTemplates
 import typings.gitlab.distTemplatesMod.ResourceTemplates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distServicesLicenceTemplatesMod extends js.Object {
   @js.native
-  class default protected () extends LicenceTemplates {
+  class default protected () extends ResourceTemplates {
     def this(options: BaseServiceOptions) = this()
   }
   

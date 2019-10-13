@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 package object publisher {
   import typings.senchaUnderscoreTouch.Ext.IBase
 
-  type IComponentDelegation = IPublisher
-  type IComponentPaint = IPublisher
-  type IComponentSize = IPublisher
-  type IDom = IPublisher
-  type IElementPaint = IPublisher
-  type IElementSize = IPublisher
+  type IComponentDelegation = IBase
+  type IComponentPaint = IBase
+  type IComponentSize = IBase
+  type IDom = IBase
+  type IElementPaint = IBase
+  type IElementSize = IBase
   type IPublisher = IBase
 }

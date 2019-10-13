@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon", "collections.HashMultiMapCollection")
 @js.native
 class HashMultiMapCollection[Key, T] ()
-  extends typings.samchon.collectionsMod.HashMultiMapCollection[Key, T]
+  extends typings.ecol.libMapsHashMultiMapCollectionMod.HashMultiMapCollection[Key, T]
 
 @JSImport("samchon", "collections.HashMultiMapCollection")
 @js.native

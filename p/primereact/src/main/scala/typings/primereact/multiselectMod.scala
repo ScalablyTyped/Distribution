@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsMultiselectMultiSelectMod.MultiSelectProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object multiselectMod extends js.Object {
   @js.native
   class MultiSelect ()
-    extends typings.primereact.componentsMultiselectMultiSelectMod.MultiSelect
+    extends Component[MultiSelectProps, js.Any, js.Any]
   
 }
 

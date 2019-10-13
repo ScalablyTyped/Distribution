@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "format.filter.And")
 @js.native
-class And protected () extends LogicalNary {
+class And protected () extends Filter {
   /**
     * @classdesc
     * Represents a logical <And> operator between two or more filter conditions.

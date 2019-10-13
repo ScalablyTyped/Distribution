@@ -1,6 +1,6 @@
 package typings.atBlueprintjsCore
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libEsmCommonAbstractPureComponentMod extends js.Object {
   @js.native
   abstract class AbstractPureComponent[P, S] ()
-    extends PureComponent[P, S, js.Any] {
+    extends Component[P, S, js.Any] {
     def this(props: P) = this()
     def this(props: P, context: js.Any) = this()
     var timeoutIds: js.Any = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown", "SourceElementBase")
 @js.native
 abstract class SourceElementBase[TKind /* <: SyntaxKind */] ()
-  extends typings.grammarkdown.distNodesMod.SourceElementBase[TKind]
+  extends typings.grammarkdown.distNodesMod.Node[TKind]
 

@@ -16,8 +16,8 @@ object atNivoHeatmapComponents extends atNivoHeatmapProps {
   def HeatMapCanvas: ComponentType[HeatMapCanvasProps with Dimensions] = js.constructorOf[typings.atNivoHeatmap.atNivoHeatmapMod.HeatMapCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoHeatmap.atNivoHeatmapMod.HeatMapCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
   @scala.inline
-  def ResponsiveHeatMap: ComponentType[HeatMapSvgProps] = js.constructorOf[typings.atNivoHeatmap.atNivoHeatmapMod.ResponsiveHeatMap].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoHeatmap.atNivoHeatmapMod.HeatMapSvgProps]]
+  def ResponsiveHeatMap: ComponentType[ResponsiveHeatMapProps] = js.constructorOf[typings.atNivoHeatmap.atNivoHeatmapMod.ResponsiveHeatMap].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveHeatMapProps]]
   @scala.inline
-  def ResponsiveHeatMapCanvas: ComponentType[HeatMapCanvasProps] = js.constructorOf[typings.atNivoHeatmap.atNivoHeatmapMod.ResponsiveHeatMapCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoHeatmap.atNivoHeatmapMod.HeatMapCanvasProps]]
+  def ResponsiveHeatMapCanvas: ComponentType[ResponsiveHeatMapCanvasProps] = js.constructorOf[typings.atNivoHeatmap.atNivoHeatmapMod.ResponsiveHeatMapCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveHeatMapCanvasProps]]
 }
 

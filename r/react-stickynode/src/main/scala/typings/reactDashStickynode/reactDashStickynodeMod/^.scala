@@ -1,5 +1,6 @@
 package typings.reactDashStickynode.reactDashStickynodeMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 /** A performant and comprehensive React sticky component. */
 @JSImport("react-stickynode", JSImport.Namespace)
 @js.native
-class ^ () extends Sticky
+class ^ ()
+  extends Component[Props, js.Object, js.Any]
 
 @JSImport("react-stickynode", JSImport.Namespace)
 @js.native

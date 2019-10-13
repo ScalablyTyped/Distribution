@@ -1,11 +1,14 @@
 package typings.reactDashBootstrap.libTableMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TableProps extends HTMLProps[Table] {
+trait TableProps
+  extends AllHTMLAttributes[Table]
+     with ClassAttributes[Table] {
   var bordered: js.UndefOr[Boolean] = js.undefined
   var bsClass: js.UndefOr[String] = js.undefined
   var condensed: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +21,8 @@ trait TableProps extends HTMLProps[Table] {
 object TableProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Table] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Table] = null,
+    ClassAttributes: ClassAttributes[Table] = null,
     bordered: js.UndefOr[Boolean] = js.undefined,
     bsClass: String = null,
     condensed: js.UndefOr[Boolean] = js.undefined,
@@ -28,7 +32,8 @@ object TableProps {
     striped: js.UndefOr[Boolean] = js.undefined
   ): TableProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (!js.isUndefined(condensed)) __obj.updateDynamic("condensed")(condensed)

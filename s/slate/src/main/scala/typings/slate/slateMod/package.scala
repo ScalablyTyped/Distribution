@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 package object slateMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.immutable.immutableMod.List
+  import typings.immutable.immutableMod.Map
 
   type CommandFunc = js.Function2[/* editor */ Editor, /* repeated */ js.Any, Editor]
+  type Data = Map[js.Any, js.Any]
   type Path = List[Double] | js.Array[Double] | String
   type QueryFunc = js.Function2[/* editor */ Editor, /* repeated */ js.Any, js.Any]
   type RulesByNodeType = StringDictionary[Rules]

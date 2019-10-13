@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("yandex-maps", "Map")
 @js.native
-class Map protected () extends IDomEventEmitter {
+class Map protected () extends IEventEmitter {
   def this(parentElement: String, state: IMapState) = this()
   def this(parentElement: HTMLElement, state: IMapState) = this()
   def this(parentElement: String, state: IMapState, options: IMapOptions) = this()
@@ -81,7 +81,7 @@ object map extends js.Object {
   }
   
   @js.native
-  class Container protected () extends IDomEventEmitter {
+  class Container protected () extends IEventEmitter {
     def this(parentElement: String) = this()
     def this(parentElement: HTMLElement) = this()
     /* CompleteClass */
@@ -131,7 +131,7 @@ object map extends js.Object {
   }
   
   @js.native
-  class Hint protected () extends IHintManager[Hint] {
+  class Hint protected () extends IPopupManager[Hint] {
     def this(map: Map) = this()
     /* CompleteClass */
     override var events: IEventManager = js.native
@@ -194,38 +194,21 @@ object map extends js.Object {
   object layer extends js.Object {
     /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
     - typings.yandexDashMaps.yandexDashMapsMod.IEventEmitter because Already inherited
-    - typings.yandexDashMaps.yandexDashMapsMod.ICustomizable because Already inherited
-    - typings.yandexDashMaps.yandexDashMapsMod.IChild because var conflicts: events. Inlined getParent, setParent, setParent
-    - typings.yandexDashMaps.yandexDashMapsMod.ILayer because var conflicts: events, options. Inlined getBrightness, getCopyrights, getZoomRange */ @js.native
-    class Manager protected () extends IMapObjectCollection {
+    - typings.yandexDashMaps.yandexDashMapsMod.ICollection because var conflicts: events. Inlined add, getIterator, remove */ @js.native
+    class Manager protected ()
+      extends ILayer
+         with IParentOnMap {
       def this(map: Map) = this()
       def this(map: Map, options: Anon_TrafficImageZIndex) = this()
       /* CompleteClass */
       override var events: IEventManager = js.native
-      var getBrightness: js.UndefOr[js.Function0[Double]] = js.native
-      var getCopyrights: js.UndefOr[
-            js.Function2[
-              /* coords */ js.Array[Double], 
-              /* zoom */ Double, 
-              js.Promise[js.Array[String | HTMLElement]]
-            ]
-          ] = js.native
-      var getZoomRange: js.UndefOr[js.Function1[/* point */ js.Array[Double], js.Promise[js.Array[Double]]]] = js.native
-      /* CompleteClass */
-      override var options: IOptionManager = js.native
-      /* CompleteClass */
-      override def add(`object`: js.Object): this.type = js.native
+      def add(`object`: js.Object): this.type = js.native
       def each(callback: js.Function1[/* layer */ ILayer, Unit]): Unit = js.native
       def each(callback: js.Function1[/* layer */ ILayer, Unit], context: js.Object): Unit = js.native
-      /* CompleteClass */
-      override def getIterator(): IIterator = js.native
+      def getIterator(): IIterator = js.native
       /* CompleteClass */
       override def getMap(): Map = js.native
-      def getParent(): Null | IControlParent = js.native
-      /* CompleteClass */
-      override def remove(`object`: js.Object): this.type = js.native
-      def setParent(): this.type = js.native
-      def setParent(parent: js.Object): this.type = js.native
+      def remove(`object`: js.Object): this.type = js.native
       def setParent(parent: IControlParent): this.type = js.native
     }
     

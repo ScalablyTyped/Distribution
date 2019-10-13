@@ -25,7 +25,7 @@ object libDialogMod extends js.Object {
   
   @js.native
   class DialogFooterBase ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsDialogMod.DialogFooterBase
+    extends typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogFooterDotBaseMod.DialogFooterBase
   
   val Dialog: StatelessComponent[IDialogProps] = js.native
   val DialogContent: StatelessComponent[IDialogContentProps] = js.native

@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.renderCanvasImageReplayMod.CanvasImageReplay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object renderCanvasImageReplayMod extends js.Object {
   @js.native
-  class default protected () extends CanvasImageReplay {
+  class default protected ()
+    extends typings.ol.renderCanvasReplayMod.default {
     def this(
       tolerance: Double,
       maxExtent: Extent,

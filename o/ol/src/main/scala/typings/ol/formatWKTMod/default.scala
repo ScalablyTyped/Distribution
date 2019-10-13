@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/format/WKT", JSImport.Default)
 @js.native
-class default () extends WKT {
+class default ()
+  extends typings.ol.formatTextFeatureMod.default {
   def this(opt_options: Options) = this()
 }
 

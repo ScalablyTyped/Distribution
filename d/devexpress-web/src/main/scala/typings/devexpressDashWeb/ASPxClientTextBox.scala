@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientTextBox")
 @js.native
-class ASPxClientTextBox () extends ASPxClientTextBoxBase
+class ASPxClientTextBox () extends ASPxClientTextEdit
 
 /* static members */
 @JSGlobal("ASPxClientTextBox")

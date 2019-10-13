@@ -1,12 +1,13 @@
 package typings.xmldsigjs.xmldsigjsMod
 
+import typings.xmlDashCore.xmlDashCoreMod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "SignedInfo")
 @js.native
-class SignedInfo () extends XmlSignatureObject {
+class SignedInfo () extends XmlObject {
   /**
     * Gets or sets the canonicalization algorithm that is used before signing
     * for the current SignedInfo object.

@@ -1,7 +1,8 @@
 package typings.easyDashXapiDashSupertest.streamMod
 
 import typings.easyDashXapiDashSupertest.Buffer
-import typings.easyDashXapiDashSupertest.NodeJS.ReadWriteStream
+import typings.easyDashXapiDashSupertest.NodeJS.ReadableStream
+import typings.easyDashXapiDashSupertest.NodeJS.WritableStream
 import typings.easyDashXapiDashSupertest.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Transform ()
   extends EventEmitter
-     with ReadWriteStream {
+     with ReadableStream
+     with WritableStream {
   def this(opts: TransformOptions) = this()
   def _flush(callback: js.Function): Unit = js.native
   def _transform(chunk: String, encoding: String, callback: js.Function): Unit = js.native

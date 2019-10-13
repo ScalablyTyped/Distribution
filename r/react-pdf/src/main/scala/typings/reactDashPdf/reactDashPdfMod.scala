@@ -1,7 +1,8 @@
 package typings.reactDashPdf
 
 import typings.pdfjsDashDist.pdfjsDashDistMod.PDFJSStatic
-import typings.reactDashPdf.distDocumentMod.default
+import typings.react.reactMod.Component
+import typings.reactDashPdf.distDocumentMod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,15 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashPdfMod extends js.Object {
   @js.native
-  class Document () extends default
+  class Document ()
+    extends Component[Props, js.Object, js.Any]
   
   @js.native
   class Outline ()
-    extends typings.reactDashPdf.distOutlineMod.default
+    extends Component[typings.reactDashPdf.distOutlineMod.Props, js.Object, js.Any]
   
   @js.native
   class Page ()
-    extends typings.reactDashPdf.distPageMod.default
+    extends Component[typings.reactDashPdf.distPageMod.Props, js.Object, js.Any]
   
   @js.native
   object pdfjs extends js.Object {

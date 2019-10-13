@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("blessed", "Widgets.BoxElement")
 @js.native
-class BoxElement protected () extends ScrollableTextElement {
+class BoxElement protected () extends ScrollableBoxElement {
   def this(opts: BoxOptions) = this()
   /**
     * Original options object.

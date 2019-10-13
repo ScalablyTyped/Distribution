@@ -1,13 +1,16 @@
 package typings.reactDashBootstrap.libAccordionMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactNode
 import typings.reactDashBootstrap.reactDashBootstrapMod.Sizes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AccordionProps extends HTMLProps[Accordion] {
+trait AccordionProps
+  extends AllHTMLAttributes[Accordion]
+     with ClassAttributes[Accordion] {
   var bsSize: js.UndefOr[Sizes] = js.undefined
   var bsStyle: js.UndefOr[String] = js.undefined
   var collapsible: js.UndefOr[Boolean] = js.undefined
@@ -21,7 +24,8 @@ trait AccordionProps extends HTMLProps[Accordion] {
 object AccordionProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Accordion] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Accordion] = null,
+    ClassAttributes: ClassAttributes[Accordion] = null,
     bsSize: Sizes = null,
     bsStyle: String = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
@@ -32,7 +36,8 @@ object AccordionProps {
     header: ReactNode = null
   ): AccordionProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)

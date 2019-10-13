@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterLessThanMod.LessThan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterLessThanMod extends js.Object {
   @js.native
-  class default protected () extends LessThan {
+  class default protected ()
+    extends typings.ol.formatFilterComparisonBinaryMod.default {
     def this(propertyName: String, expression: Double) = this()
   }
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ndn-js", "UnixTransport")
 @js.native
 class UnixTransport ()
-  extends typings.ndnDashJs.transportMod.UnixTransport
+  extends typings.ndnDashJs.transportMod.Transport
 
 @JSImport("ndn-js", "UnixTransport")
 @js.native

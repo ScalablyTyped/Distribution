@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashFbsdkComponents extends reactDashNativeDashFbsdkProps {
   @scala.inline
-  def LoginButton: ComponentType[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginButtonProps] = js.constructorOf[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginButton].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginButtonProps]]
+  def LoginButton: ComponentType[LoginButtonProps] = js.constructorOf[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.LoginButton].asInstanceOf[typings.react.reactMod.ComponentType[LoginButtonProps]]
   @scala.inline
-  def SendButton: ComponentType[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.SendButtonProps] = js.constructorOf[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.SendButton].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.SendButtonProps]]
+  def SendButton: ComponentType[SendButtonProps] = js.constructorOf[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.SendButton].asInstanceOf[typings.react.reactMod.ComponentType[SendButtonProps]]
   @scala.inline
-  def ShareButton: ComponentType[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ShareButtonProps] = js.constructorOf[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ShareButton].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ShareButtonProps]]
+  def ShareButton: ComponentType[ShareButtonProps] = js.constructorOf[typings.reactDashNativeDashFbsdk.reactDashNativeDashFbsdkMod.ShareButton].asInstanceOf[typings.react.reactMod.ComponentType[ShareButtonProps]]
 }
 

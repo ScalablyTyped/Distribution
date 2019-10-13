@@ -1,6 +1,6 @@
 package typings.reactDashFlagDashIconDashCss.reactDashFlagDashIconDashCssMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-flag-icon-css", "FlagIcon")
 @js.native
 class FlagIcon ()
-  extends PureComponent[FlagIconProps, js.Object, js.Any]
+  extends Component[FlagIconProps, js.Object, js.Any]
 

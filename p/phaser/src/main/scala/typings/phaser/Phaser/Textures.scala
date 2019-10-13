@@ -21,6 +21,7 @@ import typings.std.ArrayBuffer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.HTMLVideoElement
 import typings.std.ImageData
 import typings.std.Uint32Array
 import typings.std.Uint8ClampedArray
@@ -967,11 +968,16 @@ object Textures extends js.Object {
     def generate(key: String, config: js.Object): Texture = js.native
     /**
       * Returns a Texture from the Texture Manager that matches the given key.
-      * If the key is undefined it will return the `__DEFAULT` Texture.
-      * If the key is given, but not found, it will return the `__MISSING` Texture.
-      * @param key The unique string-based key of the Texture.
+      * 
+      * If the key is `undefined` it will return the `__DEFAULT` Texture.
+      * 
+      * If the key is an instance of a Texture, it will return the key directly.
+      * 
+      * Finally. if the key is given, but not found and not a Texture instance, it will return the `__MISSING` Texture.
+      * @param key The unique string-based key of the Texture, or a Texture instance.
       */
     def get(key: String): Texture = js.native
+    def get(key: Texture): Texture = js.native
     /**
       * Gets an existing texture frame and converts it into a base64 encoded image and returns the base64 data.
       * 
@@ -1071,7 +1077,8 @@ object Textures extends js.Object {
   
   /**
     * A Texture Source is the encapsulation of the actual source data for a Texture.
-    * This is typically an Image Element, loaded from the file system or network, or a Canvas Element.
+    * 
+    * This is typically an Image Element, loaded from the file system or network, a Canvas Element or a Video Element.
     * 
     * A Texture can contain multiple Texture Sources, which only happens when a multi-atlas is loaded.
     */
@@ -1085,21 +1092,34 @@ object Textures extends js.Object {
       * @param source The source image data.
       * @param width Optional width of the source image. If not given it's derived from the source itself.
       * @param height Optional height of the source image. If not given it's derived from the source itself.
+      * @param flipY Sets the `UNPACK_FLIP_Y_WEBGL` flag the WebGL Texture uses during upload. Default false.
       */
     def this(texture: Texture, source: HTMLImageElement) = this()
+    def this(texture: Texture, source: HTMLVideoElement) = this()
     def this(texture: Texture, source: WebGLTexture) = this()
     def this(texture: Texture, source: RenderTexture, width: integer) = this()
     def this(texture: Texture, source: HTMLCanvasElement, width: integer) = this()
     def this(texture: Texture, source: HTMLImageElement, width: integer) = this()
+    def this(texture: Texture, source: HTMLVideoElement, width: integer) = this()
     def this(texture: Texture, source: WebGLTexture, width: integer) = this()
     def this(texture: Texture, source: RenderTexture, width: integer, height: integer) = this()
     def this(texture: Texture, source: HTMLCanvasElement, width: integer, height: integer) = this()
     def this(texture: Texture, source: HTMLImageElement, width: integer, height: integer) = this()
+    def this(texture: Texture, source: HTMLVideoElement, width: integer, height: integer) = this()
     def this(texture: Texture, source: WebGLTexture, width: integer, height: integer) = this()
+    def this(texture: Texture, source: RenderTexture, width: integer, height: integer, flipY: Boolean) = this()
+    def this(texture: Texture, source: HTMLCanvasElement, width: integer, height: integer, flipY: Boolean) = this()
+    def this(texture: Texture, source: HTMLImageElement, width: integer, height: integer, flipY: Boolean) = this()
+    def this(texture: Texture, source: HTMLVideoElement, width: integer, height: integer, flipY: Boolean) = this()
+    def this(texture: Texture, source: WebGLTexture, width: integer, height: integer, flipY: Boolean) = this()
     /**
       * Currently un-used.
       */
     var compressionAlgorithm: integer = js.native
+    /**
+      * Sets the `UNPACK_FLIP_Y_WEBGL` flag the WebGL Texture uses during upload.
+      */
+    var flipY: Boolean = js.native
     /**
       * The WebGL Texture of the source image. If this TextureSource is driven from a WebGLTexture
       * already, then this is a reference to that WebGLTexture.
@@ -1112,9 +1132,10 @@ object Textures extends js.Object {
     var height: integer = js.native
     /**
       * The image data.
-      * This is either an Image element or a Canvas element.
+      * 
+      * This is either an Image element, Canvas element or a Video Element.
       */
-    var image: HTMLImageElement | HTMLCanvasElement = js.native
+    var image: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement = js.native
     /**
       * Is the source image a Canvas Element?
       */
@@ -1132,6 +1153,10 @@ object Textures extends js.Object {
       */
     var isRenderTexture: Boolean = js.native
     /**
+      * Is the source image a Video Element?
+      */
+    var isVideo: Boolean = js.native
+    /**
       * The Texture this TextureSource belongs to.
       */
     var renderer: CanvasRenderer | WebGLRenderer = js.native
@@ -1146,9 +1171,10 @@ object Textures extends js.Object {
     var scaleMode: Double = js.native
     /**
       * The source of the image data.
-      * This is either an Image Element, a Canvas Element, a RenderTexture or a WebGLTexture.
+      * 
+      * This is either an Image Element, a Canvas Element, a Video Element, a RenderTexture or a WebGLTexture.
       */
-    var source: HTMLImageElement | HTMLCanvasElement | RenderTexture | WebGLTexture = js.native
+    var source: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | RenderTexture | WebGLTexture = js.native
     /**
       * The Texture this TextureSource belongs to.
       */
@@ -1176,6 +1202,12 @@ object Textures extends js.Object {
       * @param filterMode The Filter Mode.
       */
     def setFilter(filterMode: FilterMode): Unit = js.native
+    /**
+      * Sets the `UNPACK_FLIP_Y_WEBGL` flag for the WebGL Texture during texture upload.
+      * @param value Should the WebGL Texture be flipped on the Y axis on texture upload or not? Default true.
+      */
+    def setFlipY(): Unit = js.native
+    def setFlipY(value: Boolean): Unit = js.native
     /**
       * If this TextureSource is backed by a Canvas and is running under WebGL,
       * it updates the WebGLTexture using the canvas data.

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown", "PrimarySymbolBase")
 @js.native
 abstract class PrimarySymbolBase[TKind /* <: PrimarySymbolKind */] ()
-  extends typings.grammarkdown.distNodesMod.PrimarySymbolBase[TKind]
+  extends typings.grammarkdown.distNodesMod.Node[TKind]
 

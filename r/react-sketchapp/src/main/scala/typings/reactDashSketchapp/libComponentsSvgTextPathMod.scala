@@ -2,7 +2,6 @@ package typings.reactDashSketchapp
 
 import typings.react.reactMod.Component
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.TextPathProps
-import typings.reactDashSketchapp.libComponentsSvgTextPathMod.TextPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libComponentsSvgTextPathMod extends js.Object {
   @js.native
-  class default () extends TextPath
+  class default ()
+    extends Component[TextPathProps, js.Object, js.Any]
   
   type TextPath = Component[TextPathProps, js.Object, js.Any]
 }

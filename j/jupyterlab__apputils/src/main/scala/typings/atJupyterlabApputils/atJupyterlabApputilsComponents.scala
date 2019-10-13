@@ -1,7 +1,5 @@
 package typings.atJupyterlabApputils
 
-import typings.atJupyterlabApputils.libToolbarMod.CommandToolbarButtonComponent.IProps
-import typings.atJupyterlabApputils.libVdomMod.IUseSignalProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object atJupyterlabApputilsComponents extends atJupyterlabApputilsProps {
   @scala.inline
-  def CommandToolbarButtonComponent: ComponentType[IProps] = typings.atJupyterlabApputils.atJupyterlabApputilsMod.CommandToolbarButtonComponent.asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabApputils.libToolbarMod.CommandToolbarButtonComponent.IProps]]
+  def CommandToolbarButtonComponent: ComponentType[CommandToolbarButtonComponentProps] = typings.atJupyterlabApputils.atJupyterlabApputilsMod.CommandToolbarButtonComponent.asInstanceOf[typings.react.reactMod.ComponentType[CommandToolbarButtonComponentProps]]
   @scala.inline
-  def ToolbarButtonComponent: ComponentType[typings.atJupyterlabApputils.libToolbarMod.ToolbarButtonComponent.IProps] = typings.atJupyterlabApputils.atJupyterlabApputilsMod.ToolbarButtonComponent.asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabApputils.libToolbarMod.ToolbarButtonComponent.IProps]]
+  def ToolbarButtonComponent: ComponentType[ToolbarButtonComponentProps] = typings.atJupyterlabApputils.atJupyterlabApputilsMod.ToolbarButtonComponent.asInstanceOf[typings.react.reactMod.ComponentType[ToolbarButtonComponentProps]]
   @scala.inline
-  def UseSignal[SENDER, ARGS]: ComponentType[IUseSignalProps[SENDER, ARGS]] = js.constructorOf[typings.atJupyterlabApputils.libVdomMod.UseSignal[SENDER, ARGS]].asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabApputils.libVdomMod.IUseSignalProps[SENDER, ARGS]]]
+  def UseSignal[SENDER, ARGS]: ComponentType[UseSignalProps[SENDER, ARGS]] = js.constructorOf[typings.atJupyterlabApputils.libVdomMod.UseSignal[SENDER, ARGS]].asInstanceOf[typings.react.reactMod.ComponentType[UseSignalProps[SENDER, ARGS]]]
 }
 

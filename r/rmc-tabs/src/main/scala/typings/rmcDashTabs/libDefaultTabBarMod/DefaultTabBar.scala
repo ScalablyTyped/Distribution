@@ -1,7 +1,7 @@
 package typings.rmcDashTabs.libDefaultTabBarMod
 
-import typings.react.reactMod.Global.JSX.Element
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
+import typings.react.reactMod._Global_.JSX.Element
 import typings.rmcDashTabs.Anon_Offset
 import typings.rmcDashTabs.Anon_ShowNext
 import typings.rmcDashTabs.libModelsMod.Models.TabData
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rmc-tabs/lib/DefaultTabBar", "DefaultTabBar")
 @js.native
 class DefaultTabBar protected ()
-  extends PureComponent[PropsType, StateType, js.Any] {
+  extends Component[PropsType, StateType, js.Any] {
   def this(props: PropsType) = this()
   var layout: HTMLDivElement = js.native
   var onPan: Anon_Offset = js.native

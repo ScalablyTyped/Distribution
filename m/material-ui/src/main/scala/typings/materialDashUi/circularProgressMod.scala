@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.circularProgressMod.CircularProgress
+import typings.materialDashUi.__MaterialUI.CircularProgressProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object circularProgressMod extends js.Object {
   @js.native
   class CircularProgress ()
-    extends typings.materialDashUi.__MaterialUI.CircularProgress
+    extends Component[CircularProgressProps, js.Object, js.Any]
   
   @js.native
-  class default () extends CircularProgress
+  class default ()
+    extends Component[CircularProgressProps, js.Object, js.Any]
   
 }
 

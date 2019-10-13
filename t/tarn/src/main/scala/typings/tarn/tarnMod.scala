@@ -1,5 +1,6 @@
 package typings.tarn
 
+import typings.std.Error
 import typings.tarn.libPoolMod.PoolOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +16,12 @@ object tarnMod extends js.Object {
   }
   
   @js.native
-  class TimeoutError ()
-    extends typings.tarn.libTimeoutErrorMod.TimeoutError
+  class TimeoutError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
 }
 

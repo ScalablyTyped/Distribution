@@ -1,6 +1,5 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.radioButtonMod.RadioButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,8 @@ object radioButtonMod extends js.Object {
     extends typings.materialDashUi.__MaterialUI.Switches.RadioButtonGroup
   
   @js.native
-  class default () extends RadioButton
+  class default ()
+    extends typings.materialDashUi.__MaterialUI.Switches.RadioButton
   
 }
 

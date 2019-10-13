@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object series {
-  import typings.senchaUnderscoreTouch.Ext.event.publisher.IPublisher
+  import typings.senchaUnderscoreTouch.Ext.IBase
 
-  type IItemPublisher = IPublisher
+  type IItemPublisher = IBase
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object monthViewDateProfileGeneratorMod extends js.Object {
   @js.native
   class Default ()
-    extends typings.fullcalendar.basicViewDateProfileGeneratorMod.default
+    extends typings.fullcalendar.basicViewDateProfileGeneratorMod.Default
   
   @js.native
   class default () extends Default

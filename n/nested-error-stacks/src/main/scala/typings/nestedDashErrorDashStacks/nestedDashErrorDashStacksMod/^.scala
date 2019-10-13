@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("nested-error-stacks", JSImport.Namespace)
 @js.native
-class ^ () extends NestedError {
+class ^ () extends Error {
   def this(message: js.Any) = this()
   def this(message: js.Any, nested: Error) = this()
   /* CompleteClass */

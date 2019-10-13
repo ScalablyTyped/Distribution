@@ -3,7 +3,8 @@ package typings.flux
 import typings.flux.libFluxContainerMod.Component
 import typings.flux.libFluxContainerMod.RealOptions
 import typings.flux.libFluxMixinLegacyMod.Options
-import typings.flux.libFluxReduceStoreMod.^
+import typings.flux.libFluxReduceStoreMod.FluxReduceStore
+import typings.flux.libFluxStoreMod.^
 import typings.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,7 @@ object utilsMod extends js.Object {
     * should extend this class.
     */
   @js.native
-  abstract class ReduceStore[TState, TPayload] () extends ^[TState, TPayload]
+  abstract class ReduceStore[TState, TPayload] () extends FluxReduceStore[TState, TPayload]
   
   /**
     * This class represents the most basic functionality for a FluxStore. Do not
@@ -25,8 +26,7 @@ object utilsMod extends js.Object {
     * new store.
     */
   @js.native
-  abstract class Store[TPayload] protected ()
-    extends typings.flux.libFluxStoreMod.^[TPayload] {
+  abstract class Store[TPayload] protected () extends ^[TPayload] {
     /**
       * Constructs and registers an instance of this store with the given dispatcher.
       */
@@ -42,7 +42,7 @@ object utilsMod extends js.Object {
       getStores: js.Function2[
           /* maybeProps */ js.UndefOr[TProps], 
           /* maybeContext */ js.UndefOr[js.Any], 
-          js.Array[typings.flux.libFluxStoreMod.^[_]]
+          js.Array[^[_]]
         ],
       calculateState: js.Function3[
           /* prevState */ js.UndefOr[TState], 
@@ -56,7 +56,7 @@ object utilsMod extends js.Object {
       getStores: js.Function2[
           /* maybeProps */ js.UndefOr[TProps], 
           /* maybeContext */ js.UndefOr[js.Any], 
-          js.Array[typings.flux.libFluxStoreMod.^[_]]
+          js.Array[^[_]]
         ],
       calculateState: js.Function3[
           /* prevState */ js.UndefOr[TState], 
@@ -97,8 +97,8 @@ object utilsMod extends js.Object {
       * updated to contain the previous foo AND the bar that was just returned. Only
       * returning bar will not delete foo.
       */
-    def apply(stores: js.Array[typings.flux.libFluxStoreMod.^[_]]): js.Any = js.native
-    def apply(stores: js.Array[typings.flux.libFluxStoreMod.^[_]], options: Options): js.Any = js.native
+    def apply(stores: js.Array[^[_]]): js.Any = js.native
+    def apply(stores: js.Array[^[_]], options: Options): js.Any = js.native
   }
   
 }

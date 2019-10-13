@@ -17,12 +17,12 @@ trait Config extends js.Object {
     * *The object containing configurations specific for flowcharts*
     */
   var flowchart: js.UndefOr[FlowChartConfig] = js.undefined
-  var git: js.UndefOr[js.Any] = js.undefined
   /**
     * ### gantt
     * The object containing configurations specific for gantt diagrams*
     */
-  var gnatt: js.UndefOr[GnattConfig] = js.undefined
+  var gantt: js.UndefOr[GanttConfig] = js.undefined
+  var git: js.UndefOr[js.Any] = js.undefined
   /**
     * logLevel , decides the amount of logging to be used.
     * default: LogLevel.Fatal
@@ -56,8 +56,8 @@ object Config {
     arrowMarkerAbsolute: js.UndefOr[Boolean] = js.undefined,
     `class`: js.Any = null,
     flowchart: FlowChartConfig = null,
+    gantt: GanttConfig = null,
     git: js.Any = null,
-    gnatt: GnattConfig = null,
     logLevel: LogLevel = null,
     securityLevel: String = null,
     sequence: SequenceDiagramConfig = null,
@@ -68,8 +68,8 @@ object Config {
     if (!js.isUndefined(arrowMarkerAbsolute)) __obj.updateDynamic("arrowMarkerAbsolute")(arrowMarkerAbsolute)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (flowchart != null) __obj.updateDynamic("flowchart")(flowchart)
+    if (gantt != null) __obj.updateDynamic("gantt")(gantt)
     if (git != null) __obj.updateDynamic("git")(git)
-    if (gnatt != null) __obj.updateDynamic("gnatt")(gnatt)
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
     if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel)
     if (sequence != null) __obj.updateDynamic("sequence")(sequence)

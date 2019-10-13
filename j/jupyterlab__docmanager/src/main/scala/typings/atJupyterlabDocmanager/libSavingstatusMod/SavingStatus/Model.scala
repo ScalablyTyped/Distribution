@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocmanager.libSavingstatusMod.SavingStatus
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabApputils.libVdomMod.VDomModel
 import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.SaveState
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget

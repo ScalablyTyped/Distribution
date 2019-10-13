@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "yeoman-environment"
-version := "2.3-dt-20190731Z-4085f7"
+version := "2.3-dt-20190731Z-d1626d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20190731Z-eb7b27",
-  "org.scalablytyped" %%% "mem-fs" % "1.1-dt-20181203Z-35aa36",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
-  "org.scalablytyped" %%% "rxjs" % "6.5.3-b128ef",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-f77903",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-03237f",
-  "org.scalablytyped" %%% "yeoman-generator" % "3.1-dt-20190731Z-2aa80e")
+  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20190731Z-19763c",
+  "org.scalablytyped" %%% "mem-fs" % "1.1-dt-20181203Z-de1a27",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "rxjs" % "6.5.3-06bc12",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-a5d07d",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-2e1adc",
+  "org.scalablytyped" %%% "yeoman-generator" % "3.1-dt-20190731Z-2cf587")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

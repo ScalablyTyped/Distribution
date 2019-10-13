@@ -55,7 +55,7 @@
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
 	at com.olvind.tso.importer.Main.run(Main.scala:215)
-	at com.olvind.tso.importer.Main$.main(Main.scala:314)
+	at com.olvind.tso.importer.Main$.main(Main.scala:332)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [csv-parse => java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/csv-parse/package.json: DecodingFailure(String, List(DownField(types)))] [id => csv-parse, phase => typescript] 

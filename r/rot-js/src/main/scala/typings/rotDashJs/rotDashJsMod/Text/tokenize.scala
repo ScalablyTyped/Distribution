@@ -1,6 +1,6 @@
 package typings.rotDashJs.rotDashJsMod.Text
 
-import typings.rotDashJs.rotDashJsMod.Global.Array
+import typings.rotDashJs.rotDashJsMod._Global_.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

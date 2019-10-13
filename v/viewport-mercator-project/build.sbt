@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "viewport-mercator-project"
-version := "6.1-dt-20190313Z-ff97b9"
+version := "6.1-dt-20190313Z-e39fb0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gl-matrix" % "2.4-dt-20190322Z-4e2090",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "gl-matrix" % "2.4-dt-20190322Z-5042cb",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

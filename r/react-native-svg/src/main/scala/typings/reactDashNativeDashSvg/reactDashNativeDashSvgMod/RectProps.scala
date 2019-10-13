@@ -13,7 +13,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RectProps extends CommonPathProps {
+trait RectProps
+  extends TransformProps
+     with FillProps
+     with StrokeProps
+     with ClipProps
+     with VectorEffectProps
+     with ResponderProps
+     with TouchableProps
+     with DefinitionProps
+     with CommonMaskProps {
   var height: js.UndefOr[NumberProp] = js.undefined
   var opacity: js.UndefOr[NumberProp] = js.undefined
   var rx: js.UndefOr[NumberProp] = js.undefined

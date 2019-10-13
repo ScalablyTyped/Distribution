@@ -1,5 +1,6 @@
 package typings.reactDashDevDashUtils.moduleScopePluginMod
 
+import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("react-dev-utils/ModuleScopePlugin", JSImport.Namespace)
 @js.native
-class ^ protected () extends ModuleScopePlugin {
+class ^ protected () extends Plugin {
   def this(appSrc: String) = this()
   def this(appSrc: js.Array[String]) = this()
   def this(appSrc: String, allowedFiles: js.Array[String]) = this()

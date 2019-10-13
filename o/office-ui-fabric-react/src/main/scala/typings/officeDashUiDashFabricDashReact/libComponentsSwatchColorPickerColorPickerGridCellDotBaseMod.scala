@@ -1,7 +1,7 @@
 package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerColorPickerGridCellDotTypesMod.IColorPickerGridCellProps
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object libComponentsSwatchColorPickerColorPickerGridCellDotBaseMod extends js.Object {
   @js.native
   class ColorPickerGridCellBase ()
-    extends PureComponent[IColorPickerGridCellProps, js.Object, js.Any] {
+    extends Component[IColorPickerGridCellProps, js.Object, js.Any] {
     var _classNames: js.Any = js.native
     /**
       * Validate if the cell's color is white or not to apply whiteCell style

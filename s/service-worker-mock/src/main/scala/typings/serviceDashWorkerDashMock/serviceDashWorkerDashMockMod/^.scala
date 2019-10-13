@@ -1,6 +1,6 @@
 package typings.serviceDashWorkerDashMock.serviceDashWorkerDashMockMod
 
-import typings.serviceDashWorkerDashMock.serviceDashWorkerDashMockMod.Global.WorkerGlobalScope
+import typings.serviceDashWorkerDashMock.serviceDashWorkerDashMockMod._Global_.WorkerGlobalScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

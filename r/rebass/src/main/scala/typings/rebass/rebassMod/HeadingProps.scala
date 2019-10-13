@@ -37,14 +37,25 @@ import typings.react.reactMod.Key
 import typings.react.reactMod.Ref
 import typings.styledDashComponents.styledDashComponentsMod.CSSObject
 import typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
+import typings.styledDashSystem.styledDashSystemMod.FontFamilyProps
+import typings.styledDashSystem.styledDashSystemMod.FontWeightProps
+import typings.styledDashSystem.styledDashSystemMod.LetterSpacingProps
+import typings.styledDashSystem.styledDashSystemMod.LineHeightProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
 import typings.styledDashSystem.styledDashSystemMod.TLengthStyledSystem
+import typings.styledDashSystem.styledDashSystemMod.TextAlignProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLHeadingElement>, keyof rebass.rebass.TextKnownProps> ]: react.react.HTMLProps<std.HTMLHeadingElement>[P]} */ trait HeadingProps extends TextKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLHeadingElement>, keyof rebass.rebass.TextKnownProps> ]: react.react.HTMLProps<std.HTMLHeadingElement>[P]} */ trait HeadingProps
+  extends BoxKnownProps
+     with FontFamilyProps
+     with FontWeightProps
+     with TextAlignProps
+     with LineHeightProps[TLengthStyledSystem]
+     with LetterSpacingProps[TLengthStyledSystem]
 
 object HeadingProps {
   @scala.inline

@@ -1,6 +1,6 @@
 package typings.atIonicReact
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonBackButtonElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBackButtonElement
 import typings.react.reactMod.RefObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`

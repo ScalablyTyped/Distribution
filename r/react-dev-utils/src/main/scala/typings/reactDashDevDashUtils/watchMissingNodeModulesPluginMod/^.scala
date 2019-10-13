@@ -1,5 +1,6 @@
 package typings.reactDashDevDashUtils.watchMissingNodeModulesPluginMod
 
+import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("react-dev-utils/WatchMissingNodeModulesPlugin", JSImport.Namespace)
 @js.native
-class ^ protected () extends WatchMissingNodeModulesPlugin {
+class ^ protected () extends Plugin {
   def this(nodeModulesPath: String) = this()
 }
 

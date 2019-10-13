@@ -5,8 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BusinessRuleTask extends Task {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ trait BusinessRuleTask extends Activity {
   var implementation: String
+  var incomingConversationLinks: js.Array[ConversationLink]
+  var outgoingConversationLinks: js.Array[ConversationLink]
 }
 
 object BusinessRuleTask {

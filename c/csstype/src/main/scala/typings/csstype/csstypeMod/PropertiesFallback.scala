@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.csstype.csstypeMod.SvgPropertiesFallback because var conflicts: clip, clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined alignmentBaseline, baselineShift, clipRule, colorInterpolation, colorRendering, dominantBaseline, fill, fillOpacity, fillRule, floodColor, floodOpacity, glyphOrientationVertical, lightingColor, marker, markerEnd, markerMid, markerStart, shapeRendering, stopColor, stopOpacity, stroke, strokeDasharray, strokeDashoffset, strokeLinecap, strokeLinejoin, strokeMiterlimit, strokeOpacity, strokeWidth, textAnchor, vectorEffect */ trait PropertiesFallback[TLength]
-  extends StandardPropertiesFallback[TLength]
-     with VendorPropertiesFallback[TLength]
+  extends StandardLonghandPropertiesFallback[TLength]
+     with StandardShorthandPropertiesFallback[TLength]
+     with VendorLonghandPropertiesFallback[TLength]
+     with VendorShorthandPropertiesFallback[TLength]
      with ObsoletePropertiesFallback[TLength] {
   var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.undefined
   var baselineShift: js.UndefOr[BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]] = js.undefined
@@ -45,8 +47,10 @@ object PropertiesFallback {
   @scala.inline
   def apply[TLength](
     ObsoletePropertiesFallback: ObsoletePropertiesFallback[TLength] = null,
-    StandardPropertiesFallback: StandardPropertiesFallback[TLength] = null,
-    VendorPropertiesFallback: VendorPropertiesFallback[TLength] = null,
+    StandardLonghandPropertiesFallback: StandardLonghandPropertiesFallback[TLength] = null,
+    StandardShorthandPropertiesFallback: StandardShorthandPropertiesFallback[TLength] = null,
+    VendorLonghandPropertiesFallback: VendorLonghandPropertiesFallback[TLength] = null,
+    VendorShorthandPropertiesFallback: VendorShorthandPropertiesFallback[TLength] = null,
     alignmentBaseline: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty] = null,
     baselineShift: BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]] = null,
     clipRule: ClipRuleProperty | js.Array[ClipRuleProperty] = null,
@@ -80,8 +84,10 @@ object PropertiesFallback {
   ): PropertiesFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorPropertiesFallback)
+    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
+    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
+    js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesFallback)
+    js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesFallback)
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])

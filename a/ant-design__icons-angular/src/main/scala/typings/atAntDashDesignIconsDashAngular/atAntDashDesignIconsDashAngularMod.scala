@@ -29,7 +29,7 @@ object atAntDashDesignIconsDashAngularMod extends js.Object {
   
   @js.native
   class IconModule ()
-    extends typings.atAntDashDesignIconsDashAngular.publicUnderscoreApiMod.IconModule
+    extends typings.atAntDashDesignIconsDashAngular.componentIconDotModuleMod.IconModule
   
   @js.native
   class IconService protected ()

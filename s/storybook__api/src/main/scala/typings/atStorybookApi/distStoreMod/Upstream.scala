@@ -11,8 +11,11 @@ trait Upstream extends js.Object {
 
 object Upstream {
   @scala.inline
-  def apply(getState: GetState, setState: SetState): Upstream = {
-    val __obj = js.Dynamic.literal(getState = getState, setState = setState)
+  def apply(
+    getState: () => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify State */ js.Any,
+    setState: (/* a */ js.Any, /* b */ js.Any) => js.Any
+  ): Upstream = {
+    val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), setState = js.Any.fromFunction2(setState))
   
     __obj.asInstanceOf[Upstream]
   }

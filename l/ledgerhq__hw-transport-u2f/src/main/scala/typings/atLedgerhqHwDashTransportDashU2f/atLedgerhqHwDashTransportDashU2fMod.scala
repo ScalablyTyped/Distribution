@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object atLedgerhqHwDashTransportDashU2fMod extends js.Object {
   @js.native
-  class default () extends TransportU2F
+  class default ()
+    extends typings.atLedgerhqHwDashTransport.atLedgerhqHwDashTransportMod.default[String]
   
   /* static members */
   @js.native

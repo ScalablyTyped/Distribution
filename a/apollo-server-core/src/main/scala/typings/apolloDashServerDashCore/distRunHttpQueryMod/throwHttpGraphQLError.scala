@@ -19,5 +19,11 @@ object throwHttpGraphQLError extends js.Object {
     errors: js.Array[E],
     options: Pick[GraphQLServerOptions[Record[String, _], _], debug | formatError]
   ): scala.Nothing = js.native
+  def apply[E /* <: Error */](
+    statusCode: Double,
+    errors: js.Array[E],
+    options: Pick[GraphQLServerOptions[Record[String, _], _], debug | formatError],
+    extensions: Record[String, _]
+  ): scala.Nothing = js.native
 }
 

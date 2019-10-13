@@ -24,7 +24,7 @@ object drawer extends js.Object {
   
   @js.native
   class MDCModalDrawerFoundation ()
-    extends typings.atMaterialDrawer.atMaterialDrawerMod.MDCModalDrawerFoundation
+    extends typings.atMaterialDrawer.modalFoundationMod.MDCModalDrawerFoundation
   
   /* static members */
   @js.native

@@ -1,7 +1,7 @@
 package typings.select2.select2Mod
 
 import typings.select2.Anon_Options
-import typings.select2.select2Mod.Global.JQuery
+import typings.select2.select2Mod._Global_.JQuery
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 object getAll extends js.Object {
   /* management functions */
   /** Returns a list of information about installed extensions. */
-  def apply(): js.Promise[js.UndefOr[js.Array[ExtensionInfo]]] = js.native
+  def apply(): js.Promise[js.Array[ExtensionInfo]] = js.native
 }
 

@@ -16,7 +16,8 @@ object libComponentsSliderSliderMod extends js.Object {
     extends Component[SliderPickerProps, js.Object, js.Any]
   
   @js.native
-  class default () extends SliderPicker
+  class default ()
+    extends Component[SliderPickerProps, js.Object, js.Any]
   
   type SliderPickerProps = ColorPickerProps[SliderPicker]
 }

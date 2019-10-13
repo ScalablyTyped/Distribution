@@ -2,7 +2,7 @@ package typings.atBlueprintjsTable.libEsmHeadersHeaderCellMod
 
 import typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.ResizeHandle
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

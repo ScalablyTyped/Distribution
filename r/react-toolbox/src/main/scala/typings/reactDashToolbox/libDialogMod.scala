@@ -1,5 +1,7 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libDialogDialogMod.DialogProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,11 @@ import scala.scalajs.js.annotation._
 object libDialogMod extends js.Object {
   @js.native
   class Dialog ()
-    extends typings.reactDashToolbox.libDialogDialogMod.Dialog
+    extends Component[DialogProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libDialogDialogMod.Dialog
+    extends Component[DialogProps, js.Object, js.Any]
   
 }
 

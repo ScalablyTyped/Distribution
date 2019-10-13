@@ -1,7 +1,7 @@
 package typings.snabbdom
 
 import typings.snabbdom.htmldomapiMod.DOMAPI
-import typings.snabbdom.modulesAttributesMod.Global.Element
+import typings.snabbdom.modulesAttributesMod._Global_.Element
 import typings.std.Comment
 import typings.std.HTMLElement
 import typings.std.Node
@@ -24,7 +24,7 @@ object htmldomapiMod extends js.Object {
     def insertBefore(parentNode: Node, newNode: Node): Unit = js.native
     def insertBefore(parentNode: Node, newNode: Node, referenceNode: Node): Unit = js.native
     def isComment(node: Node): /* is std.Comment */ Boolean = js.native
-    def isElement(node: Node): /* is snabbdom.snabbdom/modules/attributes.Global.Element */ Boolean = js.native
+    def isElement(node: Node): /* is snabbdom.snabbdom/modules/attributes._Global_.Element */ Boolean = js.native
     def isText(node: Node): /* is std.Text */ Boolean = js.native
     def nextSibling(node: Node): Node = js.native
     def parentNode(node: Node): Node = js.native

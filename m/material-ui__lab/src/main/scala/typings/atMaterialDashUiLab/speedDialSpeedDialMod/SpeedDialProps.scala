@@ -64,17 +64,20 @@ import scala.scalajs.js.annotation._
     * Callback fired when the component requests to be closed.
     *
     * @param {object} event The event source of the callback.
-    * @param {string} key The key pressed.
+    * @param {string} reason Can be:`"toggle"`, `"blur"`, `"mouseLeave"`, `"escapeKeyDown"`.
     */
   var onClose: js.UndefOr[
-    js.Function2[/* event */ SyntheticEvent[js.Object, Event], /* key */ String, Unit]
+    js.Function2[/* event */ SyntheticEvent[js.Object, Event], /* reason */ CloseReason, Unit]
   ] = js.undefined
   /**
     * Callback fired when the component requests to be open.
     *
     * @param {object} event The event source of the callback.
+    * @param {string} reason Can be:`"toggle"`, `"focus"`, `"mouseEnter"`.
     */
-  var onOpen: js.UndefOr[js.Function1[/* event */ SyntheticEvent[js.Object, Event], Unit]] = js.undefined
+  var onOpen: js.UndefOr[
+    js.Function2[/* event */ SyntheticEvent[js.Object, Event], /* reason */ OpenReason, Unit]
+  ] = js.undefined
   /**
     * If `true`, the SpeedDial is open.
     */
@@ -105,8 +108,8 @@ object SpeedDialProps {
     hidden: js.UndefOr[Boolean] = js.undefined,
     icon: ReactNode = null,
     innerRef: Ref[_] | RefObject[_] = null,
-    onClose: (/* event */ SyntheticEvent[js.Object, Event], /* key */ String) => Unit = null,
-    onOpen: /* event */ SyntheticEvent[js.Object, Event] => Unit = null,
+    onClose: (/* event */ SyntheticEvent[js.Object, Event], /* reason */ CloseReason) => Unit = null,
+    onOpen: (/* event */ SyntheticEvent[js.Object, Event], /* reason */ OpenReason) => Unit = null,
     openIcon: ReactNode = null,
     style: CSSProperties = null,
     transitionDuration: Double | Anon_Appear = null
@@ -123,7 +126,7 @@ object SpeedDialProps {
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
+    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
     if (openIcon != null) __obj.updateDynamic("openIcon")(openIcon.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])

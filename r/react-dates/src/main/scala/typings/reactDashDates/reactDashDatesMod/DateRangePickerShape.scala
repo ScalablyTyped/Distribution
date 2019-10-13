@@ -1,6 +1,6 @@
 package typings.reactDashDates.reactDashDatesMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashDates.Anon_CurrentMonth
 import typings.reactDashDates.Anon_EndDate
 import typings.reactDashDates.Anon_EndDateStartDate

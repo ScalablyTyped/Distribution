@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.drawerMod.Drawer
+import typings.materialDashUi.__MaterialUI.DrawerProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object drawerMod extends js.Object {
   @js.native
   class Drawer ()
-    extends typings.materialDashUi.__MaterialUI.Drawer
+    extends Component[DrawerProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Drawer
+  class default ()
+    extends Component[DrawerProps, js.Object, js.Any]
   
 }
 

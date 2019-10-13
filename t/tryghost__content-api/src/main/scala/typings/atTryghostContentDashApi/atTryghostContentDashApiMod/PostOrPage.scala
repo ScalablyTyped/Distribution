@@ -5,11 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PostOrPage
-  extends SocialMedia
-     with Identification
+  extends Identification
      with Excerpt
      with CodeInjection
      with Metadata
+     with Facebook
+     with Twitter
      with GhostData {
   // Authors - Only shown when using Include Param
   var authors: js.UndefOr[js.Array[Author]] = js.undefined

@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsAutoSizerMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_DisableHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-virtualized/dist/es/AutoSizer", "AutoSizer")
 @js.native
 class AutoSizer protected ()
-  extends PureComponent[AutoSizerProps, Size, js.Any] {
+  extends Component[AutoSizerProps, Size, js.Any] {
   def this(props: AutoSizerProps) = this()
   @JSName("componentDidMount")
   def componentDidMount_MAutoSizer(): Unit = js.native

@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.webglVertexMod.WebGLVertex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object webglVertexMod extends js.Object {
   @js.native
-  class default protected () extends WebGLVertex {
+  class default protected ()
+    extends typings.ol.webglShaderMod.default {
     def this(source: String) = this()
   }
   

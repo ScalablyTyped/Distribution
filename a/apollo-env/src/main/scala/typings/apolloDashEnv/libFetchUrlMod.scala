@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apolloDashEnv.libFetchUrlMod.URL
 import typings.apolloDashEnv.libFetchUrlMod.URLSearchParams
 import typings.apolloDashEnv.libFetchUrlMod.URLSearchParamsInit
-import typings.apolloDashEnv.libPolyfillsArrayMod.Global.Array
+import typings.apolloDashEnv.libPolyfillsArrayMod._Global_.Array
 import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js

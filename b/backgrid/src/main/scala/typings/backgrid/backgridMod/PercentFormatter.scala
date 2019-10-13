@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backgrid", "PercentFormatter")
 @js.native
-class PercentFormatter () extends NumberFormatter
+class PercentFormatter () extends CellFormatter
 

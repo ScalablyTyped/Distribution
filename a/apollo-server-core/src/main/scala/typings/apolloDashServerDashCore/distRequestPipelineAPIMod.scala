@@ -1,5 +1,6 @@
 package typings.apolloDashServerDashCore
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object distRequestPipelineAPIMod extends js.Object {
   @js.native
-  class InvalidGraphQLRequestError ()
-    extends typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.InvalidGraphQLRequestError
+  class InvalidGraphQLRequestError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
 }
 

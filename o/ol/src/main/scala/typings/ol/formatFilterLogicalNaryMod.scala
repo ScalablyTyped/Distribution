@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterLogicalNaryMod.LogicalNary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterLogicalNaryMod extends js.Object {
   @js.native
-  class default protected () extends LogicalNary {
+  class default protected ()
+    extends typings.ol.formatFilterFilterMod.default {
     def this(tagName: String, conditions: js.Array[typings.ol.formatFilterFilterMod.default]) = this()
   }
   

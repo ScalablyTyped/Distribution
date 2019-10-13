@@ -94,9 +94,14 @@ trait MigrationBuilder extends js.Object {
   // Tables
   def createTable(tableName: Name, columns: ColumnDefinitions): Unit = js.native
   def createTable(tableName: Name, columns: ColumnDefinitions, options: TableOptions): Unit = js.native
+  def createTrigger(
+    tableName: Name,
+    triggerName: Name,
+    triggerOptions: TriggerOptions with FunctionOptions,
+    definition: Value
+  ): Unit = js.native
   // Triggers
   def createTrigger(tableName: Name, triggerName: Name, triggerOptions: TriggerOptions): Unit = js.native
-  def createTrigger(tableName: Name, triggerName: Name, triggerOptions: TriggerOptions, definition: Value): Unit = js.native
   // Types
   def createType(typeName: Name, values: js.Array[Value]): Unit = js.native
   def createType(typeName: Name, values: StringDictionary[Type]): Unit = js.native

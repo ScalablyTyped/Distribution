@@ -17,7 +17,7 @@ object libLayerMod extends js.Object {
   
   @js.native
   class LayerHost ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsLayerMod.LayerHost
+    extends typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerHostMod.LayerHost
   
   val Layer: StatelessComponent[ILayerProps] = js.native
   /* static members */

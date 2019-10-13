@@ -7,14 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactDashRouterDashHashDashLinkComponents extends reactDashRouterDashHashDashLinkProps {
   @scala.inline
-  def HashLink: ComponentType[
-    typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod.HashLinkProps
-  ] = js.constructorOf[typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod.HashLink].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod.HashLinkProps]]
+  def HashLink: ComponentType[HashLinkProps] = js.constructorOf[typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod.HashLink].asInstanceOf[typings.react.reactMod.ComponentType[HashLinkProps]]
   @scala.inline
-  def NavHashLink: ComponentType[
-    typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod.NavHashLinkProps
-  ] = js.constructorOf[typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod.NavHashLink].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod.NavHashLinkProps]]
+  def NavHashLink: ComponentType[NavHashLinkProps] = js.constructorOf[typings.reactDashRouterDashHashDashLink.reactDashRouterDashHashDashLinkMod.NavHashLink].asInstanceOf[typings.react.reactMod.ComponentType[NavHashLinkProps]]
 }
 

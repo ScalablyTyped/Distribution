@@ -11,10 +11,10 @@ import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDo
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDragdropInterfacesMod.IDragDropHelper
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClassAttributes
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

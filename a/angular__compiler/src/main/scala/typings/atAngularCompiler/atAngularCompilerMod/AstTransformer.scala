@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "AstTransformer")
 @js.native
 class AstTransformer ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.AstTransformer
+  extends typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AstTransformer
 

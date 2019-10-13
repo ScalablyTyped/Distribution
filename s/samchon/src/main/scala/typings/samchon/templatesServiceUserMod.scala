@@ -1,9 +1,9 @@
 package typings.samchon
 
-import typings.ecol.ecolMod.HashMapCollection
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Listener
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
+import typings.ecol.libMapsHashMapCollectionMod.HashMapCollection
 import typings.samchon.protocolCommunicatorClientUnderscoreDriverWebClientDriverMod.WebClientDriver
 import typings.samchon.protocolInvokeIProtocolMod.IProtocol
 import typings.samchon.protocolInvokeInvokeMod.Invoke

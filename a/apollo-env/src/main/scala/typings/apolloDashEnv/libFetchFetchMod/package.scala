@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object libFetchFetchMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.apolloDashEnv.libPolyfillsArrayMod.Global.Array
+  import typings.apolloDashEnv.libPolyfillsArrayMod._Global_.Array
   import typings.node.httpMod.Agent
   import typings.std.ArrayBuffer
   import typings.std.ArrayBufferView

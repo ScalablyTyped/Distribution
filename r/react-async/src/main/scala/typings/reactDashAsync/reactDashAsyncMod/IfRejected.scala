@@ -1,6 +1,6 @@
 package typings.reactDashAsync.reactDashAsyncMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashAsync.Anon_ChildrenPersistStateAsyncStateBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`

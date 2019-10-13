@@ -1,7 +1,7 @@
 package typings.angularDashLocalDashStorage.angularDashLocalDashStorageMod.angularMod.local.storage
 
-import typings.angular.angularMod.Global.Function
 import typings.angular.angularMod.IScope
+import typings.angular.angularMod._Global_.Function
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

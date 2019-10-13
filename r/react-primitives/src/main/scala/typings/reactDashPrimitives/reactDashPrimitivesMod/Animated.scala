@@ -24,15 +24,15 @@ object Animated extends js.Object {
   
   @js.native
   class AnimatedAddition ()
-    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedAddition
+    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
   
   @js.native
   class AnimatedDiffClamp ()
-    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedDiffClamp
+    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
   
   @js.native
   class AnimatedDivision ()
-    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedDivision
+    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
   
   @js.native
   class AnimatedInterpolation ()
@@ -40,19 +40,19 @@ object Animated extends js.Object {
   
   @js.native
   class AnimatedModulo ()
-    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedModulo
+    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
   
   @js.native
   class AnimatedMultiplication ()
-    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedMultiplication
+    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
   
   @js.native
   class AnimatedSubtraction ()
-    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedSubtraction
+    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
   
   @js.native
   class AnimatedWithChildren ()
-    extends typings.reactDashNative.reactDashNativeMod.Animated.AnimatedWithChildren
+    extends typings.reactDashNative.reactDashNativeMod.Animated.Animated
   
   @js.native
   class Value protected ()

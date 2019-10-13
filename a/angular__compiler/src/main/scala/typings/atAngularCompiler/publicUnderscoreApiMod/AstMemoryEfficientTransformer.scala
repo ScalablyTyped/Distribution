@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/public_api", "AstMemoryEfficientTransformer")
 @js.native
 class AstMemoryEfficientTransformer ()
-  extends typings.atAngularCompiler.srcCompilerMod.AstMemoryEfficientTransformer
+  extends typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AstMemoryEfficientTransformer
 

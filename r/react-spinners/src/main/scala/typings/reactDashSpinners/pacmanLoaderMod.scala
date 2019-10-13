@@ -1,7 +1,7 @@
 package typings.reactDashSpinners
 
 import typings.atEmotionSerialize.atEmotionSerializeMod.Keyframes
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashSpinners.interfacesMod.CalcFunction
 import typings.reactDashSpinners.interfacesMod.LoaderSizeMarginProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object pacmanLoaderMod extends js.Object {
   @js.native
   trait Loader
-    extends PureComponent[LoaderSizeMarginProps, js.Object, js.Any] {
+    extends Component[LoaderSizeMarginProps, js.Object, js.Any] {
     var ball: CalcFunction[Keyframes] = js.native
     var ballStyle: StyleFunctionWithIndex = js.native
     var man: StyleFunction = js.native

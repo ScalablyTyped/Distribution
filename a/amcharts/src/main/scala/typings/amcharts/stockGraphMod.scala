@@ -1,5 +1,6 @@
 package typings.amcharts
 
+import typings.amcharts.amGraphMod.AmGraph
 import typings.amcharts.stockGraphMod.StockGraph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,8 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object stockGraphMod extends js.Object {
   @js.native
-  trait StockGraph
-    extends typings.amcharts.amGraphMod.default {
+  trait StockGraph extends AmGraph {
     /**
       * Specifies whether this graph will be compared if some data set is selected for comparing.
       */

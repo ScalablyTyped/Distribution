@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object atFortawesomeReactDashFontawesomeComponents extends atFortawesomeReactDashFontawesomeProps {
   @scala.inline
-  def FontAwesomeIcon: ComponentType[
-    typings.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIconProps
-  ] = typings.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIcon.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIconProps]]
+  def FontAwesomeIcon: ComponentType[FontAwesomeIconProps] = typings.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIcon.asInstanceOf[typings.react.reactMod.ComponentType[FontAwesomeIconProps]]
 }
 

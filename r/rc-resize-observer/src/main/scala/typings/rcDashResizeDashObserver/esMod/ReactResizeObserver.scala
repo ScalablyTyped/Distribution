@@ -2,8 +2,8 @@ package typings.rcDashResizeDashObserver.esMod
 
 import typings.rcDashResizeDashObserver.Anon_Height
 import typings.react.reactMod.Component
-import typings.resizeDashObserverDashPolyfill.resizeDashObserverDashPolyfillMod.Global.ResizeObserverCallback
 import typings.resizeDashObserverDashPolyfill.resizeDashObserverDashPolyfillMod.ResizeObserver
+import typings.resizeDashObserverDashPolyfill.resizeDashObserverDashPolyfillMod._Global_.ResizeObserverCallback
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

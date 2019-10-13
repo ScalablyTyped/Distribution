@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "OAuthApi")
 @js.native
+/**
+  * Constructs a new OAuthApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class OAuthApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Returns an OAuth access token. The endpoint supports distinct methods of obtaining OAuth access tokens.
     * Applications specify a method by adding the `grant_type` parameter  in the request and also provide relevant information.

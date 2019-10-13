@@ -16,7 +16,8 @@ object libComponentsCommonSaturationMod extends js.Object {
     extends Component[SaturationProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Saturation
+  class default ()
+    extends Component[SaturationProps, js.Object, js.Any]
   
   type SaturationProps = CustomPickerProps[Saturation]
 }

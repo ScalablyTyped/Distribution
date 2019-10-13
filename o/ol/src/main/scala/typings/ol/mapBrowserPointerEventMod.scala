@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.mapBrowserPointerEventMod.MapBrowserPointerEvent
 import typings.ol.pluggableMapMod.FrameState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mapBrowserPointerEventMod extends js.Object {
   @js.native
-  class default protected () extends MapBrowserPointerEvent {
+  class default protected ()
+    extends typings.ol.mapBrowserEventMod.default {
     def this(
       `type`: String,
       map: typings.ol.pluggableMapMod.default,

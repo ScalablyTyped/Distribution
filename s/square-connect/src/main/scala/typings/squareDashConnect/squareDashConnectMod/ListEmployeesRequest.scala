@@ -22,6 +22,6 @@ class ListEmployeesRequest () extends js.Object {
   /**
     * Specifies the EmployeeStatus to filter the employee by. See [EmployeeStatus](#type-employeestatus) for possible values.
     */
-  var status: js.UndefOr[ActivityStatusEnum] = js.native
+  var status: js.UndefOr[ActivityStatusType] = js.native
 }
 

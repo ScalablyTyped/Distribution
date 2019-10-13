@@ -1,12 +1,14 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HeaderProps
-  extends HTMLProps[js.Any] {
+  extends AllHTMLAttributes[js.Any]
+     with ClassAttributes[js.Any] {
   var hideSpacer: js.UndefOr[Boolean] = js.undefined
   var hideTop: js.UndefOr[Boolean] = js.undefined
    // string | JSX.Element
@@ -21,7 +23,8 @@ trait HeaderProps
 object HeaderProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[js.Any] = null,
+    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
+    ClassAttributes: ClassAttributes[js.Any] = null,
     hideSpacer: js.UndefOr[Boolean] = js.undefined,
     hideTop: js.UndefOr[Boolean] = js.undefined,
     scroll: js.UndefOr[Boolean] = js.undefined,
@@ -31,7 +34,8 @@ object HeaderProps {
     waterfall: js.UndefOr[Boolean] = js.undefined
   ): HeaderProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(hideSpacer)) __obj.updateDynamic("hideSpacer")(hideSpacer)
     if (!js.isUndefined(hideTop)) __obj.updateDynamic("hideTop")(hideTop)
     if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)

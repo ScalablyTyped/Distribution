@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redux-localstorage-debounce"
-version := "0.1-dt-20180214Z-54cf82"
+version := "0.1-dt-20180214Z-6d4fc6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.4-59c127",
-  "org.scalablytyped" %%% "redux-localstorage" % "1.0-dt-20180214Z-3e80b7",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "redux" % "4.0.4-8412ae",
+  "org.scalablytyped" %%% "redux-localstorage" % "1.0-dt-20180214Z-83d664",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

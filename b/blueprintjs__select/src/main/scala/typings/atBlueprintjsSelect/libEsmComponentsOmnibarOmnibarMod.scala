@@ -8,7 +8,7 @@ import typings.atBlueprintjsSelect.libEsmCommonListItemsPropsMod.IListItemsProps
 import typings.atBlueprintjsSelect.libEsmComponentsOmnibarOmnibarMod.IOmnibarProps
 import typings.atBlueprintjsSelect.libEsmComponentsOmnibarOmnibarMod.Omnibar
 import typings.react.Event
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.react.reactMod.SyntheticEvent
 import typings.std.HTMLElement
 import typings.std.Partial
@@ -49,7 +49,7 @@ object libEsmComponentsOmnibarOmnibarMod extends js.Object {
   
   @js.native
   class Omnibar[T] ()
-    extends PureComponent[IOmnibarProps[T], js.Object, js.Any] {
+    extends Component[IOmnibarProps[T], js.Object, js.Any] {
     var TypedQueryList: js.Any = js.native
     var handleOverlayClose: js.Any = js.native
     var renderQueryList: js.Any = js.native

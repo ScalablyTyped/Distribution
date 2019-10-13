@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.earth.KmlTimeStamp")
 @js.native
-class KmlTimeStamp () extends KmlTimePrimitive {
+class KmlTimeStamp () extends KmlObject {
   /**
     * Represents a single moment in time.
     * This is a simple element and contains no children.

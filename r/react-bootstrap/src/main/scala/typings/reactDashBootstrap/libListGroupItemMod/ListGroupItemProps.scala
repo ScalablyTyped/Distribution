@@ -1,13 +1,16 @@
 package typings.reactDashBootstrap.libListGroupItemMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactNode
 import typings.reactDashBootstrap.reactDashBootstrapMod.Sizes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ListGroupItemProps extends HTMLProps[ListGroupItem] {
+trait ListGroupItemProps
+  extends AllHTMLAttributes[ListGroupItem]
+     with ClassAttributes[ListGroupItem] {
   var active: js.UndefOr[js.Any] = js.undefined
   var bsSize: js.UndefOr[Sizes] = js.undefined
   var bsStyle: js.UndefOr[String] = js.undefined
@@ -19,7 +22,8 @@ trait ListGroupItemProps extends HTMLProps[ListGroupItem] {
 object ListGroupItemProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[ListGroupItem] = null,
+    AllHTMLAttributes: AllHTMLAttributes[ListGroupItem] = null,
+    ClassAttributes: ClassAttributes[ListGroupItem] = null,
     active: js.Any = null,
     bsSize: Sizes = null,
     bsStyle: String = null,
@@ -28,7 +32,8 @@ object ListGroupItemProps {
     listItem: js.UndefOr[Boolean] = js.undefined
   ): ListGroupItemProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (active != null) __obj.updateDynamic("active")(active)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)

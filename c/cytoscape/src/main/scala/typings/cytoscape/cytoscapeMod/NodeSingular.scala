@@ -8,32 +8,33 @@ import scala.scalajs.js.annotation._
   *  node --> Cy.NodeSingular
   *  a collection of a single node
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- org.scalablytyped.runtime.NumberDictionary because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionAlgorithms because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionBuildingFiltering because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionIteration because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionComparision because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionAnimation because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionStyle because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionSelection because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionLayout because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionTraversing because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionPosition because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionData because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionEvents because Already inherited
-- typings.cytoscape.cytoscapeMod.CollectionGraphManipulation because Already inherited
-- typings.cytoscape.cytoscapeMod._CollectionArgument because Already inherited
-- typings.cytoscape.cytoscapeMod.Collection because Already inherited
-- typings.cytoscape.cytoscapeMod.NodeCollection because var conflicts: `!_Original`, `&_Original`, `(+)_Original`, `(-)_Original`, `+_Original`, `-_Original`, `._Original`, `\\_Original`, add_Original, and_Original, difference_Original, intersect_Original, intersection_Original, length, n_Original, not_Original, or_Original, relativeComplement_Original, subtract_Original, symdiff_Original, symmetricDifference_Original, u_Original, union_Original, xor_Original, `|_Original`. Inlined  */ @js.native
+@js.native
 trait NodeSingular
-  extends Singular[NodeSingular, NodeSingular]
-     with NodeSingularMetadata
-     with NodeSingularPosition
-     with NodeSingularCompound
-     with SingularElementArgument
+  extends CollectionIteration[NodeSingular, NodeSingular]
+     with SingularGraphManipulation
+     with SingularData
+     with SingularPosition
+     with SingularSelection
+     with SingularStyle
+     with SingularAnimation
      with NodeCollectionMetadata
      with NodeCollectionPosition
      with NodeCollectionTraversing
      with NodeCollectionCompound
+     with NodeSingularMetadata
+     with NodeSingularPosition
+     with NodeSingularCompound
+     with CollectionStyle
+     with CollectionComparision
+     with CollectionAnimation
+     with CollectionBuildingFiltering[NodeSingular, NodeSingular]
+     with CollectionTraversing
+     with CollectionEvents
+     with CollectionGraphManipulation
+     with CollectionAlgorithms
+     with CollectionData
+     with CollectionLayout
+     with CollectionSelection
+     with CollectionPosition
+     with SingularElementArgument
 

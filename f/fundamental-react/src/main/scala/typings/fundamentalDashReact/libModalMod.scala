@@ -1,6 +1,7 @@
 package typings.fundamentalDashReact
 
-import typings.fundamentalDashReact.libModalModalMod.default
+import typings.fundamentalDashReact.libModalModalMod.ModalProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libModalMod extends js.Object {
   @js.native
-  class Modal () extends default
+  class Modal ()
+    extends Component[ModalProps, js.Object, js.Any]
   
 }
 

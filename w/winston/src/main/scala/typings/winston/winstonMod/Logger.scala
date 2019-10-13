@@ -64,10 +64,6 @@ trait Logger
   @JSName("warning")
   var warning_Original: LeveledLogMethod = js.native
   def add(transport: ^): Logger = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def alert(infoObject: js.Object): Logger = js.native
   def alert(message: String, callback: LogCallback): Logger = js.native
   def alert(message: String, meta: js.Any*): Logger = js.native
@@ -96,10 +92,6 @@ trait Logger
   def emerg(message: String, meta: js.Any*): Logger = js.native
   // for syslog levels only
   def emerg(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   // for cli and npm levels
   def error(infoObject: js.Object): Logger = js.native
   // for cli and npm levels
@@ -108,10 +100,6 @@ trait Logger
   def error(message: String, meta: js.Any*): Logger = js.native
   // for cli and npm levels
   def error(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
   def help(infoObject: js.Object): Logger = js.native
   def help(message: String, callback: LogCallback): Logger = js.native
   def help(message: String, meta: js.Any*): Logger = js.native
@@ -128,14 +116,6 @@ trait Logger
   def input(message: String, callback: LogCallback): Logger = js.native
   def input(message: String, meta: js.Any*): Logger = js.native
   def input(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   def log(entry: LogEntry): Logger = js.native
   def log(level: String, message: String, callback: LogCallback): Logger = js.native
   def log(level: String, message: String, meta: js.Any*): Logger = js.native
@@ -145,32 +125,11 @@ trait Logger
   def notice(message: String, meta: js.Any*): Logger = js.native
   def notice(message: String, meta: js.Any, callback: LogCallback): Logger = js.native
   /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def profile(id: String): Logger = js.native
   def profile(id: String, meta: LogEntry): Logger = js.native
   def profile(id: Double): Logger = js.native
@@ -182,23 +141,7 @@ trait Logger
   def query(): js.Any = js.native
   def query(options: QueryOptions): js.Any = js.native
   def query(options: QueryOptions, callback: js.Function2[/* err */ Error, /* results */ js.Any, Unit]): js.Any = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
   def remove(transport: ^): Logger = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
   def silly(infoObject: js.Object): Logger = js.native
   def silly(message: String, callback: LogCallback): Logger = js.native
   def silly(message: String, meta: js.Any*): Logger = js.native

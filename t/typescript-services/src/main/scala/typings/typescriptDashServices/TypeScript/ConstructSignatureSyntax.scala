@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.typescriptDashServices.TypeScript.ISyntaxElement because Already inherited
-- typings.typescriptDashServices.TypeScript.ITypeMemberSyntax because Already inherited */ @JSGlobal("TypeScript.ConstructSignatureSyntax")
+@JSGlobal("TypeScript.ConstructSignatureSyntax")
 @js.native
 class ConstructSignatureSyntax protected () extends SyntaxNode {
   def this(newKeyword: ISyntaxToken, callSignature: CallSignatureSyntax, parsedInStrictMode: Boolean) = this()

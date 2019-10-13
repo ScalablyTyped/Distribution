@@ -1,17 +1,16 @@
 package typings.rmcDashNukaDashCarousel
 
 import typings.react.reactMod.ComponentType
-import typings.rmcDashNukaDashCarousel.esCarouselMod.ICarouselProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rmcDashNukaDashCarouselComponents extends rmcDashNukaDashCarouselProps {
   @scala.inline
-  def Carousel: ComponentType[ICarouselProps] = js.constructorOf[typings.rmcDashNukaDashCarousel.esCarouselMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashNukaDashCarousel.esCarouselMod.ICarouselProps]]
+  def Carousel: ComponentType[CarouselProps] = js.constructorOf[typings.rmcDashNukaDashCarousel.esCarouselMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CarouselProps]]
   @scala.inline
-  def Es: ComponentType[ICarouselProps] = js.constructorOf[typings.rmcDashNukaDashCarousel.esMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashNukaDashCarousel.esCarouselMod.ICarouselProps]]
+  def Es: ComponentType[EsProps] = js.constructorOf[typings.rmcDashNukaDashCarousel.esMod.default].asInstanceOf[typings.react.reactMod.ComponentType[EsProps]]
   @scala.inline
-  def Lib: ComponentType[typings.rmcDashNukaDashCarousel.libCarouselMod.ICarouselProps] = js.constructorOf[typings.rmcDashNukaDashCarousel.libMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashNukaDashCarousel.libCarouselMod.ICarouselProps]]
+  def Lib: ComponentType[LibProps] = js.constructorOf[typings.rmcDashNukaDashCarousel.libMod.default].asInstanceOf[typings.react.reactMod.ComponentType[LibProps]]
 }
 

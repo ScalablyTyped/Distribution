@@ -1,6 +1,6 @@
 package typings.esriDashLeafletDashGeocoder.leafletMod.esri.Geocoding
 
-import typings.esriDashLeaflet.esriDashLeafletMod.Service
+import typings.esriDashLeaflet.esriDashLeafletMod.leafletMod.esri.Service
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

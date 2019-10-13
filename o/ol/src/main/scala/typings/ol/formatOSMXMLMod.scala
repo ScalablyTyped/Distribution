@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatOSMXMLMod.OSMXML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatOSMXMLMod extends js.Object {
   @js.native
-  class default () extends OSMXML
+  class default ()
+    extends typings.ol.formatXMLFeatureMod.default
   
   type OSMXML = typings.ol.formatXMLFeatureMod.default
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object renderQueueMod extends js.Object {
   @js.native
   class Default protected ()
-    extends typings.fullcalendar.taskQueueMod.default {
+    extends typings.fullcalendar.taskQueueMod.Default {
     def this(waitsByNamespace: js.Any) = this()
     var waitId: js.Any = js.native
     var waitNamespace: js.Any = js.native

@@ -14,21 +14,21 @@ object flatbuffers extends js.Object {
   ////////////////////////////////////////////////////////////////////////////////
   @js.native
   class Builder ()
-    extends typings.flatbuffers.flatbuffersMod.Global.flatbuffers.Builder {
+    extends typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Builder {
     def this(initial_size: Double) = this()
   }
   
   ////////////////////////////////////////////////////////////////////////////////
   @js.native
   class ByteBuffer protected ()
-    extends typings.flatbuffers.flatbuffersMod.Global.flatbuffers.ByteBuffer {
+    extends typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.ByteBuffer {
     def this(bytes: Uint8Array) = this()
   }
   
   ////////////////////////////////////////////////////////////////////////////////
   @js.native
   class Long protected ()
-    extends typings.flatbuffers.flatbuffersMod.Global.flatbuffers.Long {
+    extends typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Long {
     def this(low: Double, high: Double) = this()
   }
   
@@ -50,28 +50,28 @@ object flatbuffers extends js.Object {
       * @returns A new byte buffer with the old data copied
       * to it. The data is located at the end of the buffer.
       */
-    def growByteBuffer(bb: typings.flatbuffers.flatbuffersMod.Global.flatbuffers.ByteBuffer): typings.flatbuffers.flatbuffersMod.Global.flatbuffers.ByteBuffer = js.native
+    def growByteBuffer(bb: typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.ByteBuffer): typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.ByteBuffer = js.native
   }
   
   /* static members */
   @js.native
   object ByteBuffer extends js.Object {
-    def allocate(byte_size: Double): typings.flatbuffers.flatbuffersMod.Global.flatbuffers.ByteBuffer = js.native
+    def allocate(byte_size: Double): typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.ByteBuffer = js.native
   }
   
   @js.native
   object Encoding extends js.Object {
-    /* 1 */ val UTF16_STRING: typings.flatbuffers.flatbuffersMod.Global.flatbuffers.Encoding.UTF16_STRING with Double = js.native
-    /* 0 */ val UTF8_BYTES: typings.flatbuffers.flatbuffersMod.Global.flatbuffers.Encoding.UTF8_BYTES with Double = js.native
+    /* 1 */ val UTF16_STRING: typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Encoding.UTF16_STRING with Double = js.native
+    /* 0 */ val UTF8_BYTES: typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Encoding.UTF8_BYTES with Double = js.native
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.flatbuffers.flatbuffersMod.Global.flatbuffers.Encoding with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Encoding with Double] = js.native
   }
   
   /* static members */
   @js.native
   object Long extends js.Object {
-    var ZERO: typings.flatbuffers.flatbuffersMod.Global.flatbuffers.Long = js.native
-    def create(low: Double, high: Double): typings.flatbuffers.flatbuffersMod.Global.flatbuffers.Long = js.native
+    var ZERO: typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Long = js.native
+    def create(low: Double, high: Double): typings.flatbuffers.flatbuffersMod._Global_.flatbuffers.Long = js.native
   }
   
 }

@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_AnimationAnimationOptionsIsCancelable
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestyleonCancelvoidisOpenboAnimation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ActionSheet")
 @js.native
 class ActionSheet ()
-  extends Component[Anon_AnimationAnimationOptionsIsCancelable, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestyleonCancelvoidisOpenboAnimation, js.Any, js.Any]
 

@@ -1,6 +1,5 @@
 package typings.sjcl.sjclMod
 
-import typings.sjcl.sjclMod.TypeHelpers.Bind1
 import typings.sjcl.sjclMod.TypeHelpers.One
 import typings.sjcl.sjclMod.TypeHelpers.Two
 import scala.scalajs.js
@@ -15,7 +14,7 @@ object TypeHelpers extends js.Object {
   trait BigNumberBinaryOperator extends One[BigNumber | Double | String]
   
   @js.native
-  trait BigNumberTrinaryOperator extends Bind1[BigNumber | Double | String]
+  trait BigNumberTrinaryOperator extends Two[BigNumber | Double | String, BigNumber | Double | String]
   
   @js.native
   trait Bind1[T] extends Two[BigNumber | Double | String, T]

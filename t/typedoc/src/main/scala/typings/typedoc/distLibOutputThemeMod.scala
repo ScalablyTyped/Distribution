@@ -1,11 +1,11 @@
 package typings.typedoc
 
 import typings.typedoc.distLibModelsReflectionsProjectMod.ProjectReflection
-import typings.typedoc.distLibOutputComponentsMod.RendererComponent
 import typings.typedoc.distLibOutputModelsNavigationItemMod.NavigationItem
 import typings.typedoc.distLibOutputModelsUrlMappingMod.UrlMapping
 import typings.typedoc.distLibOutputRendererMod.Renderer
 import typings.typedoc.distLibOutputUtilsResourcesMod.Resources
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibOutputThemeMod extends js.Object {
   @js.native
-  abstract class Theme protected () extends RendererComponent {
+  abstract class Theme protected () extends AbstractComponent[Renderer] {
     def this(renderer: Renderer, basePath: String) = this()
     var basePath: String = js.native
     var resources: Resources = js.native

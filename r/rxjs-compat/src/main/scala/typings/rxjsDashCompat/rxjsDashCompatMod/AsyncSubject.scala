@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat", "AsyncSubject")
 @js.native
 class AsyncSubject[T] ()
-  extends typings.rxjs.rxjsMod.AsyncSubject[T]
+  extends typings.rxjs.internalAsyncSubjectMod.AsyncSubject[T]
 

@@ -1,7 +1,8 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.Location.CapabilitiesEnum
-import typings.squareDashConnect.squareDashConnectMod.Location.TypeEnum
+import typings.squareDashConnect.squareDashConnectStrings.CREDIT_CARD_PROCESSING
+import typings.squareDashConnect.squareDashConnectStrings.MOBILE
+import typings.squareDashConnect.squareDashConnectStrings.PHYSICAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +31,7 @@ class Location () extends js.Object {
     * Indicates which Square features are enabled for the location.
     * See [LocationCapability](#type-locationcapability) for possible values.
     */
-  var capabilities: js.UndefOr[js.Array[CapabilitiesEnum]] = js.native
+  var capabilities: js.UndefOr[js.Array[CREDIT_CARD_PROCESSING]] = js.native
   /**
     * The physical coordinates (latitude and longitude) of the location.
     */
@@ -38,7 +39,7 @@ class Location () extends js.Object {
   /**
     * The location's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values.
     */
-  var country: js.UndefOr[CountryEnum] = js.native
+  var country: js.UndefOr[CountryType] = js.native
   /**
     * The time when the location was created, in RFC 3339 format.
     */
@@ -48,7 +49,7 @@ class Location () extends js.Object {
     * For example, the currency for a location processing transactions in the United States is 'USD'.
     * See [Currency](#type-currency) for possible values.
     */
-  var currency: js.UndefOr[CurrencyEnum] = js.native
+  var currency: js.UndefOr[CurrencyType] = js.native
   /**
     * The business description of the location.
     */
@@ -92,7 +93,7 @@ class Location () extends js.Object {
   /**
     * The location's status. See [LocationStatus](#type-locationstatus) for possible values.
     */
-  var status: js.UndefOr[ActivityStatusEnum] = js.native
+  var status: js.UndefOr[ActivityStatusType] = js.native
   /**
     * The [IANA Timezone Database](https://www.iana.org/time-zones) identifier for the location's timezone.
     */
@@ -106,46 +107,11 @@ class Location () extends js.Object {
     * Typically used to indicate whether or not the location object represents a physical space like a building or mall space.
     * See [LocationType](#type-locationtype) for possible values.
     */
-  var `type`: js.UndefOr[TypeEnum] = js.native
+  var `type`: js.UndefOr[PHYSICAL | MOBILE] = js.native
   /**
     * The location's website, as set by the account owner in the Square dashboard.
     * Default: none; only exists if explicitly set.
     */
   var website_url: js.UndefOr[String] = js.native
-}
-
-@JSImport("square-connect", "Location")
-@js.native
-object Location extends js.Object {
-  @js.native
-  sealed trait CapabilitiesEnum extends js.Object
-  
-  @js.native
-  sealed trait TypeEnum extends js.Object
-  
-  @js.native
-  object CapabilitiesEnum extends js.Object {
-    @js.native
-    sealed trait CREDIT_CARD_PROCESSING extends CapabilitiesEnum
-    
-    /* "CREDIT_CARD_PROCESSING" */ val CREDIT_CARD_PROCESSING: typings.squareDashConnect.squareDashConnectMod.Location.CapabilitiesEnum.CREDIT_CARD_PROCESSING with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[CapabilitiesEnum with String] = js.native
-  }
-  
-  @js.native
-  object TypeEnum extends js.Object {
-    @js.native
-    sealed trait MOBILE extends TypeEnum
-    
-    @js.native
-    sealed trait PHYSICAL extends TypeEnum
-    
-    /* "MOBILE" */ val MOBILE: typings.squareDashConnect.squareDashConnectMod.Location.TypeEnum.MOBILE with String = js.native
-    /* "PHYSICAL" */ val PHYSICAL: typings.squareDashConnect.squareDashConnectMod.Location.TypeEnum.PHYSICAL with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[TypeEnum with String] = js.native
-  }
-  
 }
 

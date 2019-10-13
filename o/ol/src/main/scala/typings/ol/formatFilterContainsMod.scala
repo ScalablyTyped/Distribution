@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.formatFilterContainsMod.Contains
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterContainsMod extends js.Object {
   @js.native
-  class default protected () extends Contains {
+  class default protected ()
+    extends typings.ol.formatFilterSpatialMod.default {
     def this(geometryName: String, geometry: typings.ol.geomGeometryMod.default) = this()
     def this(geometryName: String, geometry: typings.ol.geomGeometryMod.default, opt_srsName: String) = this()
   }

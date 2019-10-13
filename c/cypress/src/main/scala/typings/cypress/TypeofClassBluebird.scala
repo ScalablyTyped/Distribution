@@ -10,7 +10,7 @@ import typings.cypress.typesBluebirdMod.PromisifyAllOptions
 import typings.cypress.typesBluebirdMod.PromisifyOptions
 import typings.cypress.typesBluebirdMod.ResolvableProps
 import typings.cypress.typesBluebirdMod.Resolver
-import typings.cypress.typesLodashMod.Global.Map
+import typings.cypress.typesLodashMod._Global_.Map
 import typings.std.Error
 import typings.std.IterableIterator
 import scala.scalajs.js

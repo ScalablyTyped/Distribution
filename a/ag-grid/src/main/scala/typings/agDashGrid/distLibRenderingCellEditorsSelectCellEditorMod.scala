@@ -16,9 +16,7 @@ object distLibRenderingCellEditorsSelectCellEditorMod extends js.Object {
     var values: js.Array[_] = js.native
   }
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.agDashGrid.distLibInterfacesIComponentMod.IComponent because Already inherited
-  - typings.agDashGrid.distLibRenderingCellEditorsICellEditorMod.ICellEditorComp because var conflicts: afterGuiAttached, destroy, init. Inlined  */ @js.native
+  @js.native
   class SelectCellEditor ()
     extends Component
        with ICellEditor {

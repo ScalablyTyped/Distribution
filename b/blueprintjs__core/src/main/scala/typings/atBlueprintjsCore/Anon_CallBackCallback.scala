@@ -3,9 +3,9 @@ package typings.atBlueprintjsCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysEventsMod.HotkeysEvents
 import typings.react.reactMod.ErrorInfo
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactInstance
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Error
 import typings.std.Pick
 import scala.scalajs.js

@@ -23,7 +23,6 @@ object templatesDistributedDerivedDistributedServerArrayMediatorMod extends js.O
   - typings.ecol.libBasicIEventDispatcherMod.IEventDispatcher because Already inherited
   - typings.tstl.containerDequeMod.Deque because Already inherited
   - typings.ecol.libLinearDequeCollectionMod.DequeCollection because Already inherited
-  - typings.ecol.ecolMod.DequeCollection because Already inherited
   - typings.samchon.protocolInvokeIProtocolMod.IProtocol because Already inherited
   - typings.samchon.protocolEntityEntityCollectionMod.EntityDequeCollection because Already inherited
   - typings.samchon.templatesExternalExternalSystemArrayMod.ExternalSystemArray because Already inherited

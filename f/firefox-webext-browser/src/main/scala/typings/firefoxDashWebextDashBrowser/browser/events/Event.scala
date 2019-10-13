@@ -19,7 +19,7 @@ trait Event extends js.Object {
       /* eventName */ String, 
       /* webViewInstanceId */ Double, 
       /* rules */ js.Array[Rule], 
-      js.Promise[js.UndefOr[js.Array[Rule]]]
+      js.Promise[js.Array[Rule]]
     ]
   ] = js.undefined
   /**
@@ -82,7 +82,7 @@ object Event {
     hasListener: js.Function0[Unit] => Boolean,
     hasListeners: () => Boolean,
     removeListener: js.Function0[Unit] => Unit,
-    addRules: (/* eventName */ String, /* webViewInstanceId */ Double, /* rules */ js.Array[Rule]) => js.Promise[js.UndefOr[js.Array[Rule]]] = null,
+    addRules: (/* eventName */ String, /* webViewInstanceId */ Double, /* rules */ js.Array[Rule]) => js.Promise[js.Array[Rule]] = null,
     getRules: (/* eventName */ String, /* webViewInstanceId */ Double, /* ruleIdentifiers */ js.UndefOr[js.Array[String]]) => js.Promise[js.Array[Rule]] = null,
     removeRules: (/* eventName */ String, /* webViewInstanceId */ Double, /* ruleIdentifiers */ js.UndefOr[js.Array[String]]) => js.Promise[Unit] = null
   ): Event = {

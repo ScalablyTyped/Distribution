@@ -6643,6 +6643,9 @@ trait atMaterialDashUiIconsProps {
   def GifTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type GifTwoToneProps = SvgIconProps
   @scala.inline
+  def GitHubProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type GitHubProps = SvgIconProps
+  @scala.inline
   def GolfCourseProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type GolfCourseProps = SvgIconProps
   @scala.inline
@@ -10503,8 +10506,5 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def PermScanWifiProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type PermScanWifiProps = SvgIconProps
-  @scala.inline
-  def PermScanWifiOutlinedProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermScanWifiOutlinedProps = SvgIconProps
 }
 

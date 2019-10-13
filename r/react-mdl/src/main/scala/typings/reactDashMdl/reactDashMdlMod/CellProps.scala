@@ -1,12 +1,14 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CellProps
-  extends HTMLProps[js.Any]
+  extends AllHTMLAttributes[js.Any]
+     with ClassAttributes[js.Any]
      with CustomRenderedComponent
      with ShadowedComponent {
   var align: js.UndefOr[String] = js.undefined
@@ -26,8 +28,9 @@ object CellProps {
   @scala.inline
   def apply(
     col: Double,
+    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
+    ClassAttributes: ClassAttributes[js.Any] = null,
     CustomRenderedComponent: CustomRenderedComponent = null,
-    HTMLProps: HTMLProps[js.Any] = null,
     ShadowedComponent: ShadowedComponent = null,
     align: String = null,
     hideDesktop: js.UndefOr[Boolean] = js.undefined,
@@ -41,8 +44,9 @@ object CellProps {
     tablet: Int | Double = null
   ): CellProps = {
     val __obj = js.Dynamic.literal(col = col)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
     js.Dynamic.global.Object.assign(__obj, ShadowedComponent)
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(hideDesktop)) __obj.updateDynamic("hideDesktop")(hideDesktop)

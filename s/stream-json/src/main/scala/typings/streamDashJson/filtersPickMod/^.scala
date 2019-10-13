@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stream-json/filters/Pick", JSImport.Namespace)
 @js.native
-class ^ protected () extends Pick {
+class ^ protected ()
+  extends typings.streamDashJson.filtersFilterBaseMod.^ {
   def this(options: FilterOptions) = this()
 }
 

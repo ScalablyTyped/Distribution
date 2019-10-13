@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__service-model"
-version := "0.1.0-preview.2-e14c3d"
+version := "0.1.0-preview.2-633b19"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk__build-types" % "0.1.0-preview.1-fa8bf3",
-  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-d9a0ad",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "aws-sdk__build-types" % "0.1.0-preview.1-b13e65",
+  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-22daf0",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -3,10 +3,10 @@ package typings.winrt.Windows.Graphics.Imaging
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrt.Windows.Storage.Streams.IBuffer
+import typings.winrt.Windows.Storage.Streams.IContentTypeProvider
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
-import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import typings.winrt.Windows.Storage.Streams.InputStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Windows.Graphics.Imaging.ImageStream")
 @js.native
-class ImageStream () extends IRandomAccessStreamWithContentType {
+class ImageStream ()
+  extends IRandomAccessStream
+     with IContentTypeProvider {
   /* CompleteClass */
   override var canRead: Boolean = js.native
   /* CompleteClass */

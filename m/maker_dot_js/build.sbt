@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "maker_dot_js"
-version := "0.9.33-dt-20190322Z-698f78"
+version := "0.9.33-dt-20190322Z-782ec8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bezier-js" % "0.0-unknown-dt-20190322Z-7de4ef",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-8637fd",
-  "org.scalablytyped" %%% "opentype_dot_js" % "0.7-dt-20190212Z-4379dd",
-  "org.scalablytyped" %%% "pdfkit" % "v0.10.0-dt-20191002Z-6f0d9c",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "bezier-js" % "0.0-unknown-dt-20190322Z-306785",
+  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "opentype_dot_js" % "0.7-dt-20190212Z-7ce86e",
+  "org.scalablytyped" %%% "pdfkit" % "v0.10.0-dt-20191002Z-153fd4",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

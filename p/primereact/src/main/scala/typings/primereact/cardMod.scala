@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsCardCardMod.CardProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object cardMod extends js.Object {
   @js.native
   class Card ()
-    extends typings.primereact.componentsCardCardMod.Card
+    extends Component[CardProps, js.Any, js.Any]
   
 }
 

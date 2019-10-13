@@ -5,8 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GlobalChoreographyTask extends Choreography {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.BaseElement because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.Collaboration because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, isClosed, participants, messageFlows, artifacts, conversations, conversationAssociations, participantAssociations, messageFlowAssociations, correlationKeys, choreographyRef, conversationLinks */ trait GlobalChoreographyTask extends FlowElementsContainer {
+  var artifacts: js.Array[Artifact]
+  var choreographyRef: js.Array[Choreography]
+  var conversationAssociations: js.Array[ConversationAssociation]
+  var conversationLinks: js.Array[ConversationLink]
+  var conversations: js.Array[ConversationNode]
+  var correlationKeys: js.Array[CorrelationKey]
   var initiatingParticipantRef: Participant
+  var isClosed: Boolean
+  var messageFlowAssociations: js.Array[MessageFlowAssociation]
+  var messageFlows: js.Array[MessageFlow]
+  var name: String
+  var participantAssociations: js.Array[ParticipantAssociation]
+  var participants: js.Array[Participant]
 }
 
 object GlobalChoreographyTask {

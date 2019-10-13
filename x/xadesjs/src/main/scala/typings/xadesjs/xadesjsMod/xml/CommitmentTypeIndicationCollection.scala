@@ -1,10 +1,11 @@
 package typings.xadesjs.xadesjsMod.xml
 
+import typings.xmlDashCore.xmlDashCoreMod.XmlCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xadesjs", "xml.CommitmentTypeIndicationCollection")
 @js.native
-class CommitmentTypeIndicationCollection () extends XadesCollection[CommitmentTypeIndication]
+class CommitmentTypeIndicationCollection () extends XmlCollection[CommitmentTypeIndication]
 

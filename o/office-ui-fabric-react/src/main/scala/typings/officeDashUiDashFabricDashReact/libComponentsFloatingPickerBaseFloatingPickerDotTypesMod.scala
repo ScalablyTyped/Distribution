@@ -12,7 +12,7 @@ import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactSt
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.shouldSelectFirstItem
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.showRemoveButtons
 import typings.react.reactMod.ClassAttributes
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLInputElement
 import typings.std.Pick
 import scala.scalajs.js

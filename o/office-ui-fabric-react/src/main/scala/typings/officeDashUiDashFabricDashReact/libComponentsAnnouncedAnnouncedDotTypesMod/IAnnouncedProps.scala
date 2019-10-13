@@ -2,6 +2,9 @@ package typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedD
 
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedDotBaseMod.AnnouncedBase
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.assertive
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.off
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.polite
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
@@ -12,6 +15,12 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.react.reactMod.Props because var conflicts: children. Inlined key, ref */ trait IAnnouncedProps extends HTMLAttributes[HTMLDivElement] {
+  /**
+    * Priority with which the screen reader should treat updates to this region
+    * @default 'polite'
+    */
+  @JSName("aria-live")
+  var `aria-live_IAnnouncedProps`: js.UndefOr[off | polite | assertive] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
   /**
     * The status message provided as screen reader output
@@ -26,6 +35,7 @@ object IAnnouncedProps {
   @scala.inline
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
+    `aria-live`: off | polite | assertive = null,
     key: Key = null,
     message: String = null,
     ref: LegacyRef[AnnouncedBase] = null,
@@ -33,6 +43,7 @@ object IAnnouncedProps {
   ): IAnnouncedProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

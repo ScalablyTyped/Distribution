@@ -1,49 +1,56 @@
 package typings.dynogels.dynogelsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.clientsDynamodbMod.ConditionExpression
-import typings.awsDashSdk.clientsDynamodbMod.ConditionalOperator
-import typings.awsDashSdk.clientsDynamodbMod.ExpectedAttributeMap
-import typings.awsDashSdk.clientsDynamodbMod.ExpressionAttributeNameMap
-import typings.awsDashSdk.clientsDynamodbMod.ReturnConsumedCapacity
-import typings.awsDashSdk.clientsDynamodbMod.ReturnItemCollectionMetrics
-import typings.awsDashSdk.clientsDynamodbMod.ReturnValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DestroyItemOptions extends js.Object {
-  var ConditionExpression: js.UndefOr[typings.awsDashSdk.clientsDynamodbMod.ConditionExpression] = js.undefined
-  var ConditionalOperator: js.UndefOr[typings.awsDashSdk.clientsDynamodbMod.ConditionalOperator] = js.undefined
-  var Expected: js.UndefOr[ExpectedAttributeMap] = js.undefined
-  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
+  var ConditionExpression: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ConditionExpression */ js.Any
+  ] = js.undefined
+  var ConditionalOperator: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ConditionalOperator */ js.Any
+  ] = js.undefined
+  var Expected: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ExpectedAttributeMap */ js.Any
+  ] = js.undefined
+  var ExpressionAttributeNames: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ExpressionAttributeNameMap */ js.Any
+  ] = js.undefined
   var ExpressionAttributeValues: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var ReturnConsumedCapacity: js.UndefOr[typings.awsDashSdk.clientsDynamodbMod.ReturnConsumedCapacity] = js.undefined
-  var ReturnItemCollectionMetrics: js.UndefOr[typings.awsDashSdk.clientsDynamodbMod.ReturnItemCollectionMetrics] = js.undefined
-  var ReturnValues: js.UndefOr[ReturnValue] = js.undefined
+  var ReturnConsumedCapacity: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ReturnConsumedCapacity */ js.Any
+  ] = js.undefined
+  var ReturnItemCollectionMetrics: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ReturnItemCollectionMetrics */ js.Any
+  ] = js.undefined
+  var ReturnValues: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ReturnValue */ js.Any
+  ] = js.undefined
 }
 
 object DestroyItemOptions {
   @scala.inline
   def apply(
-    ConditionExpression: ConditionExpression = null,
-    ConditionalOperator: ConditionalOperator = null,
-    Expected: ExpectedAttributeMap = null,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ConditionExpression: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ConditionExpression */ js.Any = null,
+    ConditionalOperator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ConditionalOperator */ js.Any = null,
+    Expected: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ExpectedAttributeMap */ js.Any = null,
+    ExpressionAttributeNames: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ExpressionAttributeNameMap */ js.Any = null,
     ExpressionAttributeValues: StringDictionary[js.Any] = null,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null,
-    ReturnValues: ReturnValue = null
+    ReturnConsumedCapacity: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ReturnConsumedCapacity */ js.Any = null,
+    ReturnItemCollectionMetrics: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ReturnItemCollectionMetrics */ js.Any = null,
+    ReturnValues: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ReturnValue */ js.Any = null
   ): DestroyItemOptions = {
     val __obj = js.Dynamic.literal()
     if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
-    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
+    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator)
     if (Expected != null) __obj.updateDynamic("Expected")(Expected)
     if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
     if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
-    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
-    if (ReturnValues != null) __obj.updateDynamic("ReturnValues")(ReturnValues.asInstanceOf[js.Any])
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity)
+    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics)
+    if (ReturnValues != null) __obj.updateDynamic("ReturnValues")(ReturnValues)
     __obj.asInstanceOf[DestroyItemOptions]
   }
 }

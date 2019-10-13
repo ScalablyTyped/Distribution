@@ -1,13 +1,14 @@
 package typings.xmldsigjs.xmldsigjsMod
 
 import typings.std.Uint8Array
+import typings.xmlDashCore.xmlDashCoreMod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "Signature")
 @js.native
-class Signature () extends XmlSignatureObject {
+class Signature () extends XmlObject {
   /**
     * Gets or sets the ID of the current Signature.
     */

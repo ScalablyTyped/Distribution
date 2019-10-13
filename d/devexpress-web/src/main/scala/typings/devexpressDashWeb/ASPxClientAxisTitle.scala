@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientAxisTitle")
 @js.native
-class ASPxClientAxisTitle () extends ASPxClientWebChartRequiredElement {
+class ASPxClientAxisTitle () extends ASPxClientWebChartElement {
   /**
     * Gets the axis to which the axis title belongs.
     */

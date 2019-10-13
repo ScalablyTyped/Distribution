@@ -1,6 +1,6 @@
 package typings.select2.select2Mod
 
-import typings.select2.select2Mod.Global.JQuery
+import typings.select2.select2Mod._Global_.JQuery
 import typings.select2.select2Strings.ltr
 import typings.select2.select2Strings.rtl
 import typings.std.HTMLElement

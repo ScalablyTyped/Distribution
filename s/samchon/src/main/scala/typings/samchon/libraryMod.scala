@@ -94,7 +94,7 @@ object libraryMod extends js.Object {
   
   @js.native
   class XMLList ()
-    extends typings.samchon.libraryXMLMod.XMLList
+    extends typings.sxml.libXMLListMod.XMLList
   
   /* static members */
   @js.native

@@ -16,7 +16,8 @@ object libComponentsCommonAlphaMod extends js.Object {
     extends Component[AlphaProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Alpha
+  class default ()
+    extends Component[AlphaProps, js.Object, js.Any]
   
   type AlphaProps = CustomPickerProps[Alpha]
 }

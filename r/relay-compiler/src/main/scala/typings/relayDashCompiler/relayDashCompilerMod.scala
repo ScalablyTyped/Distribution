@@ -10,7 +10,8 @@ import typings.relayDashCompiler.libCoreGraphQLIRMod.Fragment
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Root
 import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.NodeVisitor
 import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
-import typings.relayDashCompiler.libReportersGraphQLConsoleReporterMod.^
+import typings.relayDashCompiler.libReportersGraphQLConsoleReporterMod.GraphQLMultiReporter
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object relayDashCompilerMod extends js.Object {
   @js.native
-  class ConsoleReporter () extends ^
+  class ConsoleReporter () extends GraphQLMultiReporter {
+    /* CompleteClass */
+    override def reportError(caughtLocation: String, error: Error): Unit = js.native
+    /* CompleteClass */
+    override def reportMessage(message: String): Unit = js.native
+    /* CompleteClass */
+    override def reportTime(name: String, ms: Double): Unit = js.native
+  }
   
   @js.native
   class GraphQLCompilerContext protected ()
@@ -30,7 +38,14 @@ object relayDashCompilerMod extends js.Object {
   
   @js.native
   class MultiReporter ()
-    extends typings.relayDashCompiler.libReportersGraphQLMultiReporterMod.^
+    extends typings.relayDashCompiler.libReportersGraphQLMultiReporterMod.GraphQLMultiReporter {
+    /* CompleteClass */
+    override def reportError(caughtLocation: String, error: Error): Unit = js.native
+    /* CompleteClass */
+    override def reportMessage(message: String): Unit = js.native
+    /* CompleteClass */
+    override def reportTime(name: String, ms: Double): Unit = js.native
+  }
   
   var transformASTSchema: js.Function2[/* schema */ GraphQLSchema, /* transforms */ js.Array[String], GraphQLSchema] = js.native
   def relayCompiler(config: Config): js.Promise[Unit] = js.native

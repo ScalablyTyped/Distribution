@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_Bottom
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestyleverticalAligntopbott
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Col")
 @js.native
 class Col ()
-  extends Component[Anon_Bottom, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestyleverticalAligntopbott, js.Any, js.Any]
 

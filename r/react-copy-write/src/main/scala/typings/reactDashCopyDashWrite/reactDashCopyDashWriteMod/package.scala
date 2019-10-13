@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object reactDashCopyDashWriteMod {
   import typings.react.reactMod.Component
-  import typings.react.reactMod.Global.JSX.Element
+  import typings.react.reactMod._Global_.JSX.Element
   import typings.reactDashCopyDashWrite.AnyDeepMemberOfState
   import typings.std.ReturnType
 

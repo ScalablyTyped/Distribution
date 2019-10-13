@@ -26,6 +26,6 @@ class CreateOrderRequestTax () extends js.Object {
     * Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     * See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     */
-  var `type`: js.UndefOr[TaxTypeEnum] = js.native
+  var `type`: js.UndefOr[TaxType] = js.native
 }
 

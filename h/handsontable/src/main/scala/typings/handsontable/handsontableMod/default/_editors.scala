@@ -51,7 +51,7 @@ object _editors extends js.Object {
   
   @js.native
   class Dropdown ()
-    extends typings.handsontable.handsontableMod.Handsontable._editors.Dropdown
+    extends typings.handsontable.handsontableMod.Handsontable._editors.Autocomplete
   
   @js.native
   class Handsontable ()
@@ -63,11 +63,11 @@ object _editors extends js.Object {
   
   @js.native
   class Numeric ()
-    extends typings.handsontable.handsontableMod.Handsontable._editors.Numeric
+    extends typings.handsontable.handsontableMod.Handsontable._editors.Text
   
   @js.native
   class Password ()
-    extends typings.handsontable.handsontableMod.Handsontable._editors.Password
+    extends typings.handsontable.handsontableMod.Handsontable._editors.Text
   
   @js.native
   class Select ()

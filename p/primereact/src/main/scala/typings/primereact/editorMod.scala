@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsEditorEditorMod.EditorProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object editorMod extends js.Object {
   @js.native
   class Editor ()
-    extends typings.primereact.componentsEditorEditorMod.Editor
+    extends Component[EditorProps, js.Any, js.Any]
   
 }
 

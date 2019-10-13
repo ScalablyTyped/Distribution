@@ -3,14 +3,15 @@ package typings.winrt.Windows.Security.Credentials
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.Windows.Foundation.Collections.IMapView
-import typings.winrt.Windows.Foundation.Collections.IPropertySet
+import typings.winrt.Windows.Foundation.Collections.IObservableMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("Windows.Security.Credentials.PasswordCredentialPropertyStore")
 @js.native
-class PasswordCredentialPropertyStore () extends IPropertySet {
+class PasswordCredentialPropertyStore ()
+  extends IObservableMap[String, js.Any] {
   /* CompleteClass */
   override var onmapchanged: js.Any = js.native
   /* CompleteClass */

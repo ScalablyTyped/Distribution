@@ -1,6 +1,7 @@
 package typings.fundamentalDashReact
 
-import typings.fundamentalDashReact.libTimeTimeMod.default
+import typings.fundamentalDashReact.libTimeTimeMod.TimeProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libTimeMod extends js.Object {
   @js.native
-  class Time () extends default
+  class Time ()
+    extends Component[TimeProps, js.Object, js.Any]
   
 }
 

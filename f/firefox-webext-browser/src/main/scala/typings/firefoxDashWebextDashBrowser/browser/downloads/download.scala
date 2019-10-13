@@ -18,6 +18,6 @@ object download extends js.Object {
     * strings are not guaranteed to remain backwards compatible between releases. You must not parse it.
     * @param options What to download and how.
     */
-  def apply(options: Anon_Body): js.Promise[js.UndefOr[Double]] = js.native
+  def apply(options: Anon_Body): js.Promise[Double] = js.native
 }
 

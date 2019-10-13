@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon", "protocol.EntityDeque")
 @js.native
 abstract class EntityDeque[T /* <: IEntity */] ()
-  extends typings.samchon.protocolMod.EntityDeque[T]
+  extends typings.samchon.protocolEntityEntityArrayMod.EntityDeque[T]
 

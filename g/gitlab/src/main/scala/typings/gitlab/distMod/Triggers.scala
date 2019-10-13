@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "Triggers")
 @js.native
 class Triggers ()
-  extends typings.gitlab.distServicesMod.Triggers
+  extends typings.gitlab.distServicesTriggersMod.Triggers
 

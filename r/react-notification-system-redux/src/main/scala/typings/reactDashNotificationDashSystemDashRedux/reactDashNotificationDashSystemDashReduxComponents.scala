@@ -1,14 +1,12 @@
 package typings.reactDashNotificationDashSystemDashRedux
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxMod.NotificationsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNotificationDashSystemDashReduxComponents extends reactDashNotificationDashSystemDashReduxProps {
   @scala.inline
-  def ReactDashNotificationDashSystemDashRedux: ComponentType[NotificationsProps] = js.constructorOf[typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxMod.^].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxMod.NotificationsProps]]
+  def ReactDashNotificationDashSystemDashRedux: ComponentType[ReactDashNotificationDashSystemDashReduxProps] = js.constructorOf[typings.reactDashNotificationDashSystemDashRedux.reactDashNotificationDashSystemDashReduxMod.^].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashNotificationDashSystemDashReduxProps]]
 }
 

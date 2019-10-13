@@ -16,13 +16,13 @@ import typings.hexo.hexoStrings.processBefore
 import typings.hexo.hexoStrings.ready
 import typings.hexo.hexoStrings.skip
 import typings.hexo.hexoStrings.update
+import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Hexo
-  extends typings.node.eventsMod.^ {
+trait Hexo extends EventEmitter {
   val base_dir: String = js.native
   /**
     * Site settings in `_config.yml`

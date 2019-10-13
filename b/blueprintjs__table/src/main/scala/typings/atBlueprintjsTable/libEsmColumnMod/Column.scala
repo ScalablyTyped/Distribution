@@ -1,6 +1,6 @@
 package typings.atBlueprintjsTable.libEsmColumnMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/table/lib/esm/column", "Column")
 @js.native
 class Column ()
-  extends PureComponent[IColumnProps, js.Object, js.Any]
+  extends Component[IColumnProps, js.Object, js.Any]
 
 /* static members */
 @JSImport("@blueprintjs/table/lib/esm/column", "Column")

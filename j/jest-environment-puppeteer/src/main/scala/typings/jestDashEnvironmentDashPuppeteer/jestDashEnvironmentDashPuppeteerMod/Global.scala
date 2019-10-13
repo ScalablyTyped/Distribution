@@ -2,7 +2,6 @@ package typings.jestDashEnvironmentDashPuppeteer.jestDashEnvironmentDashPuppetee
 
 import typings.node.vmMod.Context
 import typings.puppeteer.puppeteerMod.Browser
-import typings.puppeteer.puppeteerMod.BrowserContext
 import typings.puppeteer.puppeteerMod.Page
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,14 +14,5 @@ trait Global
   var context: Context = js.native
   var jestPuppeteer: JestPuppeteer = js.native
   var page: Page = js.native
-}
-
-@JSGlobalScope
-@js.native
-object Global extends js.Object {
-  val browser: Browser = js.native
-  val context: BrowserContext = js.native
-  val jestPuppeteer: JestPuppeteer = js.native
-  val page: Page = js.native
 }
 

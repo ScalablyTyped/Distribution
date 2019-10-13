@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsCommunicationStopDashScreenDashShareMod.CommunicationStopScreenShare
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsCommunicationStopDashScreenDashShareMod extends js.Object {
   @js.native
-  class CommunicationStopScreenShare () extends SvgIcon
+  class CommunicationStopScreenShare ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends CommunicationStopScreenShare
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

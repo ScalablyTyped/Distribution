@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack-chain", "Output")
 @js.native
-class Output () extends ChainedMap[Config] {
+class Output ()
+  extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedMap[Config, js.Any] {
   def auxiliaryComment(value: String): this.type = js.native
   def auxiliaryComment(value: StringDictionary[String]): this.type = js.native
   def chunkFilename(value: String): this.type = js.native
@@ -17,6 +18,8 @@ class Output () extends ChainedMap[Config] {
   def devtoolFallbackModuleFilenameTemplate(value: js.Any): this.type = js.native
   def devtoolLineToLine(value: js.Any): this.type = js.native
   def devtoolModuleFilenameTemplate(value: js.Any): this.type = js.native
+  /* CompleteClass */
+  override def end(): Config = js.native
   def filename(value: String): this.type = js.native
   def globalObject(value: String): this.type = js.native
   def hashDigest(value: String): this.type = js.native

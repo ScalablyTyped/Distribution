@@ -201,6 +201,15 @@ class GameObjectCreator protected () extends js.Object {
     */
   def tween(config: TweenBuilderConfig): Tween = js.native
   /**
+    * Creates a new Video Game Object and returns it.
+    * 
+    * Note: This method will only be available if the Video Game Object has been built into Phaser.
+    * @param config The configuration object this Game Object will use to create itself.
+    * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+    */
+  def video(config: js.Object): Video = js.native
+  def video(config: js.Object, addToScene: Boolean): Video = js.native
+  /**
     * Creates a new Zone Game Object and returns it.
     * 
     * Note: This method will only be available if the Zone Game Object has been built into Phaser.

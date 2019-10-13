@@ -1,7 +1,7 @@
 package typings.knockoutDotMapping.knockoutDotMappingMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.knockoutDotMapping.knockoutDotMappingMod.Global.KnockoutMapping
+import typings.knockoutDotMapping.knockoutDotMappingMod._Global_.KnockoutMapping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

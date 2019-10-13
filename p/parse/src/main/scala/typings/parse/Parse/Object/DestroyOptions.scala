@@ -1,16 +1,20 @@
 package typings.parse.Parse.Object
 
-import typings.parse.Parse.ScopeOptions
-import typings.parse.Parse.SuccessFailureOptions
+import typings.parse.Parse.ErrorOption
+import typings.parse.Parse.SessionTokenOption
+import typings.parse.Parse.SuccessOption
+import typings.parse.Parse.UseMasterKeyOption
 import typings.parse.Parse.WaitOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DestroyOptions
-  extends SuccessFailureOptions
+  extends SuccessOption
+     with ErrorOption
      with WaitOption
-     with ScopeOptions
+     with SessionTokenOption
+     with UseMasterKeyOption
 
 object DestroyOptions {
   @scala.inline

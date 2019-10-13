@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react", "OverlayBase")
 @js.native
 class OverlayBase ()
-  extends typings.officeDashUiDashFabricDashReact.libOverlayMod.OverlayBase
+  extends typings.officeDashUiDashFabricDashReact.libComponentsOverlayOverlayDotBaseMod.OverlayBase
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Library/Config", JSImport.Namespace)
 @js.native
 class ^ () extends Config {
-  def this(instrumentationKey: String) = this()
+  def this(setupString: String) = this()
   /* CompleteClass */
   override var _profileQueryEndpoint: js.Any = js.native
   /** Host name for quickpulse service */
@@ -67,6 +67,7 @@ class ^ () extends Config {
 @js.native
 object ^ extends js.Object {
   var ENV_azurePrefix: String = js.native
+  var ENV_connectionString: String = js.native
   var ENV_http_proxy: String = js.native
   var ENV_https_proxy: String = js.native
   var ENV_iKey: String = js.native

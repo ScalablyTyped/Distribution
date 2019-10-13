@@ -1,6 +1,5 @@
 package typings.muicss
 
-import typings.muicss.libReactButtonMod.Button
 import typings.muicss.reactMod.ButtonProps
 import typings.react.reactMod.Component
 import scala.scalajs.js
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libReactButtonMod extends js.Object {
   @js.native
-  class default () extends Button
+  class default ()
+    extends Component[ButtonProps, js.Object, js.Any]
   
   type Button = Component[ButtonProps, js.Object, js.Any]
 }

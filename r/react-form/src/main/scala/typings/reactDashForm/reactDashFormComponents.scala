@@ -21,7 +21,7 @@ object reactDashFormComponents extends reactDashFormProps {
   def Form: ComponentType[FormProps with Anon_Children] = js.constructorOf[typings.reactDashForm.reactDashFormMod.Form].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashForm.reactDashFormMod.FormProps with typings.reactDashForm.Anon_Children]]
   @scala.inline
-  def NestedForm: ComponentType[FieldProps] = typings.reactDashForm.reactDashFormMod.NestedForm.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashForm.reactDashFormMod.FieldProps]]
+  def NestedForm: ComponentType[NestedFormProps] = typings.reactDashForm.reactDashFormMod.NestedForm.asInstanceOf[typings.react.reactMod.ComponentType[NestedFormProps]]
   @scala.inline
   def Radio: ComponentType[FieldProps with InputHTMLAttributes[HTMLInputElement] with Anon_Group] = typings.reactDashForm.reactDashFormMod.Radio.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashForm.reactDashFormMod.FieldProps with typings.react.reactMod.InputHTMLAttributes[typings.std.HTMLInputElement] with typings.reactDashForm.Anon_Group]]
@@ -29,7 +29,7 @@ object reactDashFormComponents extends reactDashFormProps {
   def RadioGroup: ComponentType[FieldProps with Anon_ChildrenProps] = js.constructorOf[typings.reactDashForm.reactDashFormMod.RadioGroup].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashForm.reactDashFormMod.FieldProps with typings.reactDashForm.Anon_ChildrenProps]]
   @scala.inline
-  def Select: ComponentType[typings.reactDashForm.reactDashFormMod.SelectProps] = typings.reactDashForm.reactDashFormMod.Select.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashForm.reactDashFormMod.SelectProps]]
+  def Select: ComponentType[SelectProps] = typings.reactDashForm.reactDashFormMod.Select.asInstanceOf[typings.react.reactMod.ComponentType[SelectProps]]
   @scala.inline
   def StyledCheckbox: ComponentType[StyledProps with InputHTMLAttributes[HTMLInputElement] with Anon_LabelString] = typings.reactDashForm.reactDashFormMod.StyledCheckbox.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashForm.reactDashFormMod.StyledProps with typings.react.reactMod.InputHTMLAttributes[typings.std.HTMLInputElement] with typings.reactDashForm.Anon_LabelString]]

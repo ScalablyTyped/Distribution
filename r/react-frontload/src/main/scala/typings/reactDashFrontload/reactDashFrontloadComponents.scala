@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashFrontloadComponents extends reactDashFrontloadProps {
   @scala.inline
-  def Frontload: ComponentType[typings.reactDashFrontload.reactDashFrontloadMod.FrontloadProps] = js.constructorOf[typings.reactDashFrontload.reactDashFrontloadMod.Frontload].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashFrontload.reactDashFrontloadMod.FrontloadProps]]
+  def Frontload: ComponentType[FrontloadProps] = js.constructorOf[typings.reactDashFrontload.reactDashFrontloadMod.Frontload].asInstanceOf[typings.react.reactMod.ComponentType[FrontloadProps]]
 }
 

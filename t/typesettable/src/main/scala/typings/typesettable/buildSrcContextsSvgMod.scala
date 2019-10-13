@@ -3,7 +3,8 @@ package typings.typesettable
 import typings.std.Element
 import typings.std.SVGElement
 import typings.std.SVGGraphicsElement
-import typings.typesettable.buildSrcContextsMod.ITypesetterContext
+import typings.typesettable.buildSrcContextsMod.IPenFactoryContext
+import typings.typesettable.buildSrcContextsMod.IRulerFactoryContext
 import typings.typesettable.buildSrcMeasurersAbstractMeasurerMod.IDimensions
 import typings.typesettable.buildSrcWritersWriterMod.ITransform
 import scala.scalajs.js
@@ -21,7 +22,9 @@ object buildSrcContextsSvgMod extends js.Object {
   trait IAnchor extends js.Object
   
   @js.native
-  class SvgContext protected () extends ITypesetterContext[SVGElement] {
+  class SvgContext protected ()
+    extends IPenFactoryContext[SVGElement]
+       with IRulerFactoryContext {
     def this(element: SVGElement) = this()
     def this(element: SVGElement, className: String) = this()
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()

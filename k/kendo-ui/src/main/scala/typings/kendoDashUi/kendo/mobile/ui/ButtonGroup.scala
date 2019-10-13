@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.ButtonGroup")
 @js.native
-class ButtonGroup protected () extends Widget {
+class ButtonGroup protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: ButtonGroupOptions) = this()
   @JSName("options")

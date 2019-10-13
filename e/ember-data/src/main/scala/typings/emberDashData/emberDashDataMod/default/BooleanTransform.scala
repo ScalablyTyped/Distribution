@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "BooleanTransform")
 @js.native
 class BooleanTransform ()
-  extends typings.emberDashData.emberDashDataMod.DS.BooleanTransform
+  extends typings.emberDashData.emberDashDataMod.DS.Transform
 

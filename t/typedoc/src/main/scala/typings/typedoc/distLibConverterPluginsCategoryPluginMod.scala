@@ -1,8 +1,9 @@
 package typings.typedoc
 
-import typings.typedoc.distLibConverterComponentsMod.ConverterComponent
+import typings.typedoc.distLibConverterConverterMod.Converter
 import typings.typedoc.distLibModelsMod.Reflection
 import typings.typedoc.distLibModelsReflectionCategoryMod.ReflectionCategory
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibConverterPluginsCategoryPluginMod extends js.Object {
   @js.native
-  class CategoryPlugin () extends ConverterComponent {
+  class CategoryPlugin () extends AbstractComponent[Converter] {
     var categorize: js.Any = js.native
     var categorizeByGroup: Boolean = js.native
     var categoryOrder: js.Array[String] = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Object")
 @js.native
 class Object ()
-  extends typings.ember.emberMod.Ember.Object
+  extends typings.atEmberObject.atEmberObjectMod.default
 

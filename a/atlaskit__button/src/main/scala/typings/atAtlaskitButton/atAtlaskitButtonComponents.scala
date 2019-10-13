@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object atAtlaskitButtonComponents extends atAtlaskitButtonProps {
   @scala.inline
-  def Button: ComponentType[typings.atAtlaskitButton.atAtlaskitButtonMod.ButtonProps] = js.constructorOf[typings.atAtlaskitButton.atAtlaskitButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAtlaskitButton.atAtlaskitButtonMod.ButtonProps]]
+  def Button: ComponentType[ButtonProps] = js.constructorOf[typings.atAtlaskitButton.atAtlaskitButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ButtonProps]]
   @scala.inline
-  def ButtonGroup: ComponentType[typings.atAtlaskitButton.atAtlaskitButtonMod.ButtonGroupProps] = js.constructorOf[typings.atAtlaskitButton.atAtlaskitButtonMod.ButtonGroup].asInstanceOf[typings.react.reactMod.ComponentType[typings.atAtlaskitButton.atAtlaskitButtonMod.ButtonGroupProps]]
+  def ButtonGroup: ComponentType[ButtonGroupProps] = js.constructorOf[typings.atAtlaskitButton.atAtlaskitButtonMod.ButtonGroup].asInstanceOf[typings.react.reactMod.ComponentType[ButtonGroupProps]]
 }
 

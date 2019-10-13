@@ -1,11 +1,13 @@
 package typings.reactDashColor.reactDashColorMod
 
-import typings.reactDashColor.libComponentsCircleCircleMod.default
+import typings.react.reactMod.Component
+import typings.reactDashColor.libComponentsCircleCircleMod.CirclePickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-color", "CirclePicker")
 @js.native
-class CirclePicker () extends default
+class CirclePicker ()
+  extends Component[CirclePickerProps, js.Object, js.Any]
 

@@ -48,7 +48,7 @@ trait Typeofnotifications extends js.Object {
     * Clears an existing notification.
     * @param notificationId The id of the notification to be updated.
     */
-  def clear(notificationId: String): js.Promise[js.UndefOr[Boolean]] = js.native
+  def clear(notificationId: String): js.Promise[Boolean] = js.native
   /**
     * Creates and displays a notification.
     * @param notificationId Identifier of the notification. If it is empty, this method generates an id. If it matches
@@ -56,13 +56,13 @@ trait Typeofnotifications extends js.Object {
     *     operation.
     * @param options Contents of the notification.
     */
-  def create(notificationId: String, options: CreateNotificationOptions): js.Promise[js.UndefOr[String]] = js.native
+  def create(notificationId: String, options: CreateNotificationOptions): js.Promise[String] = js.native
   /* notifications functions */
   /**
     * Creates and displays a notification.
     * @param options Contents of the notification.
     */
-  def create(options: CreateNotificationOptions): js.Promise[js.UndefOr[String]] = js.native
+  def create(options: CreateNotificationOptions): js.Promise[String] = js.native
   /** Retrieves all the notifications. */
   def getAll(): js.Promise[StringDictionary[CreateNotificationOptions]] = js.native
   /**
@@ -76,6 +76,6 @@ trait Typeofnotifications extends js.Object {
     * @param options Contents of the notification to update to.
     * @deprecated Unsupported on Firefox at this time.
     */
-  def update(notificationId: String, options: UpdateNotificationOptions): js.Promise[js.UndefOr[Boolean]] = js.native
+  def update(notificationId: String, options: UpdateNotificationOptions): js.Promise[Boolean] = js.native
 }
 

@@ -2,7 +2,6 @@ package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerBaseExtendedPickerDotTypesMod.IBaseExtendedPickerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerBaseExtendedPickerMod.BaseExtendedPicker
-import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerPeoplePickerExtendedPeoplePickerMod.BaseExtendedPeoplePicker
 import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerPeoplePickerExtendedPeoplePickerMod.IExtendedPeoplePickerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersPickerItemDotTypesMod.IPickerItemProps
@@ -18,7 +17,7 @@ object libComponentsExtendedPickerPeoplePickerExtendedPeoplePickerMod extends js
   class BaseExtendedPeoplePicker () extends BaseExtendedPicker[IPersonaProps, IExtendedPeoplePickerProps]
   
   @js.native
-  class ExtendedPeoplePicker () extends BaseExtendedPeoplePicker
+  class ExtendedPeoplePicker () extends BaseExtendedPicker[IPersonaProps, IExtendedPeoplePickerProps]
   
   type IExtendedPeoplePickerProps = IBaseExtendedPickerProps[IPersonaProps]
   type IPeoplePickerItemProps = IPickerItemProps[IExtendedPersonaProps]

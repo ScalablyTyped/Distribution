@@ -7,24 +7,18 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiLabComponents extends atMaterialDashUiLabProps {
   @scala.inline
-  def Rating: ComponentType[typings.atMaterialDashUiLab.ratingRatingMod.RatingProps] = js.constructorOf[typings.atMaterialDashUiLab.ratingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.ratingRatingMod.RatingProps]]
+  def Rating: ComponentType[RatingProps] = js.constructorOf[typings.atMaterialDashUiLab.ratingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RatingProps]]
   @scala.inline
-  def SpeedDial: ComponentType[typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDial").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps]]
+  def SpeedDial: ComponentType[SpeedDialProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDial").asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialProps]]
   @scala.inline
-  def SpeedDialAction: ComponentType[
-    typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionProps
-  ] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDialAction").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionProps]]
+  def SpeedDialAction: ComponentType[SpeedDialActionProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDialAction").asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialActionProps]]
   @scala.inline
-  def SpeedDialIcon: ComponentType[typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDialIcon").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconProps]]
+  def SpeedDialIcon: ComponentType[SpeedDialIconProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDialIcon").asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialIconProps]]
   @scala.inline
-  def ToggleButtonGroup: ComponentType[
-    typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps
-  ] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("ToggleButtonGroup").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps]]
+  def ToggleButtonGroup: ComponentType[ToggleButtonGroupProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("ToggleButtonGroup").asInstanceOf[typings.react.reactMod.ComponentType[ToggleButtonGroupProps]]
   @scala.inline
-  def TreeItem: ComponentType[typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("TreeItem").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.treeItemTreeItemMod.TreeItemProps]]
+  def TreeItem: ComponentType[TreeItemProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("TreeItem").asInstanceOf[typings.react.reactMod.ComponentType[TreeItemProps]]
   @scala.inline
-  def TreeView: ComponentType[typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("TreeView").asInstanceOf[typings.react.reactMod.ComponentType[typings.atMaterialDashUiLab.treeViewTreeViewMod.TreeViewProps]]
+  def TreeView: ComponentType[TreeViewProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("TreeView").asInstanceOf[typings.react.reactMod.ComponentType[TreeViewProps]]
 }
 

@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.stylesMuiThemeProviderMod.MuiThemeProvider
+import typings.materialDashUi.__MaterialUI.Styles.MuiThemeProviderProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object stylesMuiThemeProviderMod extends js.Object {
   @js.native
   class MuiThemeProvider ()
-    extends typings.materialDashUi.__MaterialUI.Styles.MuiThemeProvider
+    extends Component[MuiThemeProviderProps, js.Object, js.Any]
   
   @js.native
-  class default () extends MuiThemeProvider
+  class default ()
+    extends Component[MuiThemeProviderProps, js.Object, js.Any]
   
 }
 

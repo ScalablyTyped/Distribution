@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_CheckedDisabledE
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonChanChecked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Switch")
 @js.native
 class Switch ()
-  extends Component[Anon_CheckedDisabledE, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringonChanChecked, js.Any, js.Any]
 

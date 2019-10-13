@@ -1,5 +1,10 @@
 package typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod
 
+import typings.react.reactMod.Component
+import typings.reactDashNative.reactDashNativeMod.TextInputProps
+import typings.reactDashNative.reactDashNativeMod.TextProps
+import typings.reactDashNative.reactDashNativeMod.ViewProps
+import typings.reactDashNativeDashDialog.reactNativeModalContainerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,23 +14,23 @@ import scala.scalajs.js.annotation._
 object default extends js.Object {
   @js.native
   class Button ()
-    extends typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.Dialog.Button
+    extends Component[ButtonProps with ViewProps with TextProps, js.Object, js.Any]
   
   @js.native
   class Container ()
-    extends typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.Dialog.Container
+    extends Component[ContainerProps with ViewProps with reactNativeModalContainerProps, js.Object, js.Any]
   
   @js.native
   class Description ()
-    extends typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.Dialog.Description
+    extends Component[DescriptionProps with ViewProps with TextProps, js.Object, js.Any]
   
   @js.native
   class Input[T] ()
-    extends typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.Dialog.Input[T]
+    extends Component[InputProps[T] with ViewProps with TextInputProps, js.Object, js.Any]
   
   @js.native
   class Title ()
-    extends typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.Dialog.Title
+    extends Component[TitleProps with ViewProps with TextProps, js.Object, js.Any]
   
 }
 

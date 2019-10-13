@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "StringTransform")
 @js.native
 class StringTransform ()
-  extends typings.emberDashData.emberDashDataMod.DS.StringTransform
+  extends typings.emberDashData.emberDashDataMod.DS.Transform
 

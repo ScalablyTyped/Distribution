@@ -69,7 +69,8 @@ import typings.csstype.csstypeMod.ScrollSnapPointsYProperty
 import typings.csstype.csstypeMod.ScrollSnapTypeXProperty
 import typings.csstype.csstypeMod.ScrollSnapTypeYProperty
 import typings.csstype.csstypeMod.ShapeRenderingProperty
-import typings.csstype.csstypeMod.StandardPropertiesFallback
+import typings.csstype.csstypeMod.StandardLonghandPropertiesFallback
+import typings.csstype.csstypeMod.StandardShorthandPropertiesFallback
 import typings.csstype.csstypeMod.StopColorProperty
 import typings.csstype.csstypeMod.StrokeDasharrayProperty
 import typings.csstype.csstypeMod.StrokeDashoffsetProperty
@@ -89,7 +90,8 @@ import typings.csstype.csstypeMod.TransitionPropertyProperty
 import typings.csstype.csstypeMod.TransitionTimingFunctionProperty
 import typings.csstype.csstypeMod.UserSelectProperty
 import typings.csstype.csstypeMod.VectorEffectProperty
-import typings.csstype.csstypeMod.VendorPropertiesHyphenFallback
+import typings.csstype.csstypeMod.VendorLonghandPropertiesHyphenFallback
+import typings.csstype.csstypeMod.VendorShorthandPropertiesHyphenFallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,8 +99,10 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.csstype.csstypeMod.ObsoletePropertiesFallback because var conflicts: clip. Inlined KhtmlBoxAlign, KhtmlBoxDirection, KhtmlBoxFlex, KhtmlBoxFlexGroup, KhtmlBoxLines, KhtmlBoxOrdinalGroup, KhtmlBoxOrient, KhtmlBoxPack, KhtmlLineBreak, KhtmlOpacity, KhtmlUserSelect, MozBackgroundClip, MozBackgroundInlinePolicy, MozBackgroundOrigin, MozBackgroundSize, MozBinding, MozBorderRadius, MozBorderRadiusBottomleft, MozBorderRadiusBottomright, MozBorderRadiusTopleft, MozBorderRadiusTopright, MozBoxAlign, MozBoxDirection, MozBoxFlex, MozBoxOrdinalGroup, MozBoxOrient, MozBoxPack, MozBoxShadow, MozOpacity, MozOutline, MozOutlineColor, MozOutlineRadius, MozOutlineStyle, MozOutlineWidth, MozTextAlignLast, MozTextBlink, MozTextDecorationColor, MozTextDecorationLine, MozTextDecorationStyle, MozUserInput, MozWindowShadow, OAnimation, OAnimationDelay, OAnimationDirection, OAnimationDuration, OAnimationFillMode, OAnimationIterationCount, OAnimationName, OAnimationPlayState, OAnimationTimingFunction, OBackgroundSize, OBorderImage, OTransform, OTransition, OTransitionDelay, OTransitionDuration, OTransitionProperty, OTransitionTimingFunction, WebkitBoxAlign, WebkitBoxDirection, WebkitBoxFlex, WebkitBoxFlexGroup, WebkitBoxLines, WebkitBoxOrdinalGroup, WebkitBoxOrient, WebkitBoxPack, WebkitScrollSnapPointsX, WebkitScrollSnapPointsY, boxAlign, boxDirection, boxFlex, boxFlexGroup, boxLines, boxOrdinalGroup, boxOrient, boxPack, fontVariantAlternates, gridColumnGap, gridGap, gridRowGap, imeMode, msImeMode, offsetBlock, offsetBlockEnd, offsetBlockStart, offsetInline, offsetInlineEnd, offsetInlineStart, scrollSnapCoordinate, scrollSnapDestination, scrollSnapPointsX, scrollSnapPointsY, scrollSnapTypeX, scrollSnapTypeY, textCombineHorizontal
 - typings.csstype.csstypeMod.SvgPropertiesFallback because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined alignmentBaseline, baselineShift, clip, clipRule, colorInterpolation, colorRendering, dominantBaseline, fill, fillOpacity, fillRule, floodColor, floodOpacity, glyphOrientationVertical, lightingColor, marker, markerEnd, markerMid, markerStart, shapeRendering, stopColor, stopOpacity, stroke, strokeDasharray, strokeDashoffset, strokeLinecap, strokeLinejoin, strokeMiterlimit, strokeOpacity, strokeWidth, textAnchor, vectorEffect */ trait CSSProperties
-  extends StandardPropertiesFallback[TLength]
-     with VendorPropertiesHyphenFallback[TLength] {
+  extends StandardLonghandPropertiesFallback[TLength]
+     with StandardShorthandPropertiesFallback[TLength]
+     with VendorLonghandPropertiesHyphenFallback[TLength]
+     with VendorShorthandPropertiesHyphenFallback[TLength] {
   /**
     * Typestyle configuration options
     **/
@@ -963,8 +967,10 @@ object CSSProperties {
     OTransitionDuration: GlobalsString | js.Array[GlobalsString] = null,
     OTransitionProperty: TransitionPropertyProperty | js.Array[TransitionPropertyProperty] = null,
     OTransitionTimingFunction: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
-    StandardPropertiesFallback: StandardPropertiesFallback[TLength] = null,
-    VendorPropertiesHyphenFallback: VendorPropertiesHyphenFallback[TLength] = null,
+    StandardLonghandPropertiesFallback: StandardLonghandPropertiesFallback[TLength] = null,
+    StandardShorthandPropertiesFallback: StandardShorthandPropertiesFallback[TLength] = null,
+    VendorLonghandPropertiesHyphenFallback: VendorLonghandPropertiesHyphenFallback[TLength] = null,
+    VendorShorthandPropertiesHyphenFallback: VendorShorthandPropertiesHyphenFallback[TLength] = null,
     WebkitBoxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     WebkitBoxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
     WebkitBoxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
@@ -1094,8 +1100,10 @@ object CSSProperties {
     if (OTransitionDuration != null) __obj.updateDynamic("OTransitionDuration")(OTransitionDuration.asInstanceOf[js.Any])
     if (OTransitionProperty != null) __obj.updateDynamic("OTransitionProperty")(OTransitionProperty.asInstanceOf[js.Any])
     if (OTransitionTimingFunction != null) __obj.updateDynamic("OTransitionTimingFunction")(OTransitionTimingFunction.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StandardPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorPropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
+    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
+    js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesHyphenFallback)
     if (WebkitBoxAlign != null) __obj.updateDynamic("WebkitBoxAlign")(WebkitBoxAlign.asInstanceOf[js.Any])
     if (WebkitBoxDirection != null) __obj.updateDynamic("WebkitBoxDirection")(WebkitBoxDirection.asInstanceOf[js.Any])
     if (WebkitBoxFlex != null) __obj.updateDynamic("WebkitBoxFlex")(WebkitBoxFlex.asInstanceOf[js.Any])

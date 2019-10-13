@@ -1,6 +1,7 @@
 package typings.typedoc
 
-import typings.typedoc.distLibOutputComponentsMod.RendererComponent
+import typings.typedoc.distLibOutputRendererMod.Renderer
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibOutputPluginsLayoutPluginMod extends js.Object {
   @js.native
-  class LayoutPlugin () extends RendererComponent {
+  class LayoutPlugin () extends AbstractComponent[Renderer] {
     var onRendererEndPage: js.Any = js.native
   }
   

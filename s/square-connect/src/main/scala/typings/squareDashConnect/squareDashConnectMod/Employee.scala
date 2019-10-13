@@ -38,7 +38,7 @@ class Employee () extends js.Object {
   /**
     * Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values.
     */
-  var status: js.UndefOr[ActivityStatusEnum] = js.native
+  var status: js.UndefOr[ActivityStatusType] = js.native
   /**
     * A read-only timestamp in RFC 3339 format.
     */

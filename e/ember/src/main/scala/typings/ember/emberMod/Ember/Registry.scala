@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.Registry")
 @js.native
 class Registry ()
-  extends typings.atEmberApplication.dashPrivateRegistryMod.default
+  extends typings.atEmberApplication.dashPrivateRegistryMod.Registry
 

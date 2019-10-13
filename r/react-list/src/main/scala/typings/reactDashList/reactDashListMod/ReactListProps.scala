@@ -1,10 +1,10 @@
 package typings.reactDashList.reactDashListMod
 
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.Props
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashList.reactDashListStrings.x
 import typings.reactDashList.reactDashListStrings.y
 import scala.scalajs.js

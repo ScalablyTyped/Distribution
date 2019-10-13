@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.earth.KmlTimeSpan")
 @js.native
-class KmlTimeSpan () extends KmlTimePrimitive {
+class KmlTimeSpan () extends KmlObject {
   /**
     * Describes the beginning instant of a time period.
     * If absent, the beginning of the period is unbounded.

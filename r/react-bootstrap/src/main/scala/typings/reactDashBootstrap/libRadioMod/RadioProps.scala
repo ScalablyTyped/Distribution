@@ -1,6 +1,7 @@
 package typings.reactDashBootstrap.libRadioMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapStrings.error
 import typings.reactDashBootstrap.reactDashBootstrapStrings.success
 import typings.reactDashBootstrap.reactDashBootstrapStrings.warning
@@ -9,7 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RadioProps extends HTMLProps[Radio] {
+trait RadioProps
+  extends AllHTMLAttributes[Radio]
+     with ClassAttributes[Radio] {
   var bsClass: js.UndefOr[String] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var inputRef: js.UndefOr[js.Function1[/* instance */ HTMLInputElement, Unit]] = js.undefined
@@ -19,7 +22,8 @@ trait RadioProps extends HTMLProps[Radio] {
 object RadioProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Radio] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Radio] = null,
+    ClassAttributes: ClassAttributes[Radio] = null,
     bsClass: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     `inline`: js.UndefOr[Boolean] = js.undefined,
@@ -27,7 +31,8 @@ object RadioProps {
     validationState: success | warning | error = null
   ): RadioProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)

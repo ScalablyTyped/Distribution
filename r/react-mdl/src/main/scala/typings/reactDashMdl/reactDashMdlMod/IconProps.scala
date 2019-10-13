@@ -1,21 +1,28 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IconProps
-  extends HTMLProps[js.Any] {
+  extends AllHTMLAttributes[js.Any]
+     with ClassAttributes[js.Any] {
   @JSName("name")
   var name_IconProps: String
 }
 
 object IconProps {
   @scala.inline
-  def apply(name: String, HTMLProps: HTMLProps[js.Any] = null): IconProps = {
+  def apply(
+    name: String,
+    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
+    ClassAttributes: ClassAttributes[js.Any] = null
+  ): IconProps = {
     val __obj = js.Dynamic.literal(name = name)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[IconProps]
   }
 }

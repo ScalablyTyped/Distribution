@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocmanager.libPathstatusMod
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomRenderer
+import typings.atJupyterlabApputils.libVdomMod.VDomRenderer
 import typings.atJupyterlabDocmanager.libPathstatusMod.PathStatus.IOptions
 import typings.atJupyterlabDocmanager.libPathstatusMod.PathStatus.Model
 import scala.scalajs.js

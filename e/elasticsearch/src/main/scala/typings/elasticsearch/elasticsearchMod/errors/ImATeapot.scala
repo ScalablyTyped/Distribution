@@ -1,10 +1,16 @@
 package typings.elasticsearch.elasticsearchMod.errors
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("elasticsearch", "errors.ImATeapot")
 @js.native
-class ImATeapot () extends _Abstract
+class ImATeapot () extends Error {
+  /* CompleteClass */
+  override var message: String = js.native
+  /* CompleteClass */
+  override var name: String = js.native
+}
 

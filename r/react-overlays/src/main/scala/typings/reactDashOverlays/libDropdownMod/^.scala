@@ -1,13 +1,15 @@
 package typings.reactDashOverlays.libDropdownMod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-overlays/lib/Dropdown", JSImport.Namespace)
 @js.native
-class ^ () extends Dropdown
+class ^ ()
+  extends Component[DropdownProps, js.Object, js.Any]
 
 @JSImport("react-overlays/lib/Dropdown", JSImport.Namespace)
 @js.native

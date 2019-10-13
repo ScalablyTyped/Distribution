@@ -1,7 +1,7 @@
 package typings.webicon.iconOptionsSvgIconOptionsMod
 
-import typings.webicon.iconOptionsImageIconOptionsMod.ImageIconOptions
 import typings.webicon.iconOptionsSizeableOptionsMod.SizeableOptions
+import typings.webicon.iconOptionsStoreableMod.Storeable
 import typings.webicon.webUrlConfigMod.UrlConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 - typings.webicon.iconSizeableMod.Sizeable because Already inherited
 - typings.webicon.iconIconMod.Icon because Already inherited
 - typings.webicon.iconSvgIconMod.SvgIcon because var conflicts: iconIdParser, iconSize. Inlined viewBox */ trait SvgIconOptions
-  extends ImageIconOptions
+  extends Storeable
      with SizeableOptions {
   /**
     * The default viewBox of the icon.

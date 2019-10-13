@@ -21,6 +21,5 @@ object queryHelpers extends js.Object {
     getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
   ): BuiltQueryMethods[Arguments] = js.native
   def getElementError(message: String, container: HTMLElement): Error = js.native
-  def logDom(htmlElement: HTMLElement): Unit = js.native
 }
 

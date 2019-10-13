@@ -13,7 +13,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MaskProps extends CommonPathProps {
+trait MaskProps
+  extends TransformProps
+     with FillProps
+     with StrokeProps
+     with ClipProps
+     with VectorEffectProps
+     with ResponderProps
+     with TouchableProps
+     with DefinitionProps
+     with CommonMaskProps {
   var height: js.UndefOr[NumberProp] = js.undefined
   var maskContentUnits: js.UndefOr[TMaskUnits] = js.undefined
   var maskTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined

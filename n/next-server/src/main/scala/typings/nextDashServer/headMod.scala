@@ -1,9 +1,8 @@
 package typings.nextDashServer
 
-import typings.nextDashServer.headMod.Head
 import typings.react.reactMod.Component
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object headMod extends js.Object {
   @js.native
-  class default () extends Head
+  class default ()
+    extends Component[js.Object, js.Object, js.Any]
   
   def defaultHead(): js.Array[Element] = js.native
   def defaultHead(className: String): js.Array[Element] = js.native

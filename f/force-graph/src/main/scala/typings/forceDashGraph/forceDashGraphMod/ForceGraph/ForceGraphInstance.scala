@@ -79,8 +79,8 @@ trait ForceGraphInstance extends js.Object {
   def linkColor(color: LinkAccessorFn[String]): ForceGraphInstance with (String | LinkAccessorFn[String]) = js.native
   def linkCurvature(): ForceGraphInstance = js.native
   def linkCurvature(curvature: String): ForceGraphInstance = js.native
-  def linkCurvature(curvature: LinkAccessorFn[LinkCurvatureType]): ForceGraphInstance = js.native
-  def linkCurvature(curvature: LinkCurvatureType): ForceGraphInstance = js.native
+  def linkCurvature(curvature: Double): ForceGraphInstance = js.native
+  def linkCurvature(curvature: LinkAccessorFn[Double]): ForceGraphInstance = js.native
   def linkDirectionalArrowColor(): ForceGraphInstance with (String | LinkAccessorFn[String]) = js.native
   def linkDirectionalArrowColor(color: String): ForceGraphInstance with (String | LinkAccessorFn[String]) = js.native
   def linkDirectionalArrowColor(color: LinkAccessorFn[String]): ForceGraphInstance with (String | LinkAccessorFn[String]) = js.native

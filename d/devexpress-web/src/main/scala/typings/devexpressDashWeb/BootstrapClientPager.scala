@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("BootstrapClientPager")
 @js.native
-class BootstrapClientPager () extends ASPxClientPager
+class BootstrapClientPager () extends ASPxClientControl
 

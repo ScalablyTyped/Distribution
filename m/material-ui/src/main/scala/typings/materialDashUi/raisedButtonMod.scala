@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.raisedButtonMod.RaisedButton
+import typings.materialDashUi.__MaterialUI.RaisedButtonProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object raisedButtonMod extends js.Object {
   @js.native
   class RaisedButton ()
-    extends typings.materialDashUi.__MaterialUI.RaisedButton
+    extends Component[RaisedButtonProps, js.Object, js.Any]
   
   @js.native
-  class default () extends RaisedButton
+  class default ()
+    extends Component[RaisedButtonProps, js.Object, js.Any]
   
 }
 

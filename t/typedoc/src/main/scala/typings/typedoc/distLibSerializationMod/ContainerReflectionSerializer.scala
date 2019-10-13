@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/serialization", "ContainerReflectionSerializer")
 @js.native
 class ContainerReflectionSerializer ()
-  extends typings.typedoc.distLibSerializationSerializersMod.ContainerReflectionSerializer
+  extends typings.typedoc.distLibSerializationSerializersReflectionsContainerMod.ContainerReflectionSerializer
 

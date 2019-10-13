@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_Indeterminate
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringvaluen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ProgressBar")
 @js.native
 class ProgressBar ()
-  extends Component[Anon_Indeterminate, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringvaluen, js.Any, js.Any]
 

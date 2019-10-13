@@ -28,5 +28,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse5-plain-text-conversion-stream", JSImport.Namespace)
 @js.native
-class ^[TDocument] () extends PlainTextConversionStream[TDocument]
+class ^[TDocument] ()
+  extends typings.parse5DashParserDashStream.parse5DashParserDashStreamMod.^[TDocument]
 

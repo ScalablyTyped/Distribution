@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asn1js", "Sequence")
 @js.native
-class Sequence () extends Constructed
+class Sequence () extends BaseBlock[LocalConstructedValueBlock]
 

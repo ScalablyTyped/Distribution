@@ -18,7 +18,8 @@ import typings.csstype.csstypeMod.MarkerMidProperty
 import typings.csstype.csstypeMod.MarkerProperty
 import typings.csstype.csstypeMod.MarkerStartProperty
 import typings.csstype.csstypeMod.ShapeRenderingProperty
-import typings.csstype.csstypeMod.StandardProperties
+import typings.csstype.csstypeMod.StandardLonghandProperties
+import typings.csstype.csstypeMod.StandardShorthandProperties
 import typings.csstype.csstypeMod.StopColorProperty
 import typings.csstype.csstypeMod.StrokeDasharrayProperty
 import typings.csstype.csstypeMod.StrokeDashoffsetProperty
@@ -33,7 +34,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.csstype.csstypeMod.SvgProperties because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined alignmentBaseline, baselineShift, clip, clipRule, colorInterpolation, colorRendering, dominantBaseline, fill, fillOpacity, fillRule, floodColor, floodOpacity, glyphOrientationVertical, lightingColor, marker, markerEnd, markerMid, markerStart, shapeRendering, stopColor, stopOpacity, stroke, strokeDasharray, strokeDashoffset, strokeLinecap, strokeLinejoin, strokeMiterlimit, strokeOpacity, strokeWidth, textAnchor, vectorEffect */ trait CSSProperties extends StandardProperties[Double | String] {
+- typings.csstype.csstypeMod.SvgProperties because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined alignmentBaseline, baselineShift, clip, clipRule, colorInterpolation, colorRendering, dominantBaseline, fill, fillOpacity, fillRule, floodColor, floodOpacity, glyphOrientationVertical, lightingColor, marker, markerEnd, markerMid, markerStart, shapeRendering, stopColor, stopOpacity, stroke, strokeDasharray, strokeDashoffset, strokeLinecap, strokeLinejoin, strokeMiterlimit, strokeOpacity, strokeWidth, textAnchor, vectorEffect */ trait CSSProperties
+  extends StandardLonghandProperties[Double | String]
+     with StandardShorthandProperties[Double | String] {
   var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.undefined
   var baselineShift: js.UndefOr[BaselineShiftProperty[Double | String]] = js.undefined
   var clip: js.UndefOr[ClipProperty] = js.undefined
@@ -70,7 +73,8 @@ import scala.scalajs.js.annotation._
 object CSSProperties {
   @scala.inline
   def apply(
-    StandardProperties: StandardProperties[Double | String] = null,
+    StandardLonghandProperties: StandardLonghandProperties[Double | String] = null,
+    StandardShorthandProperties: StandardShorthandProperties[Double | String] = null,
     alignmentBaseline: AlignmentBaselineProperty = null,
     baselineShift: BaselineShiftProperty[Double | String] = null,
     clip: ClipProperty = null,
@@ -104,7 +108,8 @@ object CSSProperties {
     vectorEffect: VectorEffectProperty = null
   ): CSSProperties = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StandardProperties)
+    js.Dynamic.global.Object.assign(__obj, StandardLonghandProperties)
+    js.Dynamic.global.Object.assign(__obj, StandardShorthandProperties)
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline)
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])

@@ -18,7 +18,7 @@ object esMod extends js.Object {
   
   @js.native
   class DatePicker ()
-    extends typings.rmcDashCalendar.esDatePickerMod.default
+    extends typings.rmcDashCalendar.esDatePickerMod.DatePicker
   
   /* static members */
   @js.native

@@ -16,8 +16,8 @@ object atNivoChordComponents extends atNivoChordProps {
   def ChordCanvas: ComponentType[ChordCanvasProps with Dimensions] = js.constructorOf[typings.atNivoChord.atNivoChordMod.ChordCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoChord.atNivoChordMod.ChordCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
   @scala.inline
-  def ResponsiveChord: ComponentType[ChordProps] = js.constructorOf[typings.atNivoChord.atNivoChordMod.ResponsiveChord].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoChord.atNivoChordMod.ChordProps]]
+  def ResponsiveChord: ComponentType[ResponsiveChordProps] = js.constructorOf[typings.atNivoChord.atNivoChordMod.ResponsiveChord].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveChordProps]]
   @scala.inline
-  def ResponsiveChordCanvas: ComponentType[ChordCanvasProps] = js.constructorOf[typings.atNivoChord.atNivoChordMod.ResponsiveChordCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoChord.atNivoChordMod.ChordCanvasProps]]
+  def ResponsiveChordCanvas: ComponentType[ResponsiveChordCanvasProps] = js.constructorOf[typings.atNivoChord.atNivoChordMod.ResponsiveChordCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveChordCanvasProps]]
 }
 

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("passport-bnet", JSImport.Namespace)
 @js.native
-class ^ protected () extends BnetStrategy {
+class ^ protected ()
+  extends typings.passportDashOauth2.passportDashOauth2Mod.Strategy {
   def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
   def this(options: StrategyOptions, verify: VerifyFunction) = this()
 }

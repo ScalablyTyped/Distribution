@@ -1,6 +1,6 @@
 package typings.atIonicCore.distTypesInterfaceMod
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPickerElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerElement
 import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

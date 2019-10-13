@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Router")
 @js.native
 class Router ()
-  extends typings.ember.emberMod.Ember.Router
+  extends typings.atEmberRouting.routerMod.default
 

@@ -63,11 +63,11 @@ package object knexMod {
   // to facilitates type-safe aliasing for object syntax
   type MappedAliasType[TBase, TAliasMapping] = js.Object with typings.knex.knexStrings.MappedAliasType with js.Any
   type MaybeArray[T] = T | js.Array[T]
-  type MySqlAlterTableBuilder = AlterTableBuilder
+  type MySqlAlterTableBuilder = TableBuilder
   // Boxing is necessary to prevent distribution of conditional types:
   // https://lorefnon.tech/2019/05/02/using-boxing-to-prevent-distribution-of-conditional-types/
   type PartialOrAny[TBase, TKeys] = (SafePick[TBase, TKeys with String]) | js.Object
-  type PostgreSqlAlterTableBuilder = AlterTableBuilder
+  type PostgreSqlAlterTableBuilder = TableBuilder
   //
   // QueryBuilder
   //

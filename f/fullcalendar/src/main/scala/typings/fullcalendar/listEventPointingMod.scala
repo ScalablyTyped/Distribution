@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object listEventPointingMod extends js.Object {
   @js.native
   class Default ()
-    extends typings.fullcalendar.eventPointingMod.default
+    extends typings.fullcalendar.eventPointingMod.Default
   
   @js.native
   class default () extends Default

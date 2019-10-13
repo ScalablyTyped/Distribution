@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework", "NamespaceStringHelpFormatter")
 @js.native
 class NamespaceStringHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] ()
-  extends typings.atIonicCliDashFramework.libMod.NamespaceStringHelpFormatter[C, N, M, I, O]
+  extends typings.atIonicCliDashFramework.libHelpMod.NamespaceStringHelpFormatter[C, N, M, I, O]
 

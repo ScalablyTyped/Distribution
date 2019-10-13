@@ -1,5 +1,9 @@
 package typings.reactDashTabsDashRedux
 
+import typings.react.reactMod.Component
+import typings.reactDashTabsDashRedux.tabContentMod.TabContentProps
+import typings.reactDashTabsDashRedux.tabLinkMod.TabLinkProps
+import typings.reactDashTabsDashRedux.tabsMod.TabsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,15 +13,15 @@ import scala.scalajs.js.annotation._
 object reactDashTabsDashReduxMod extends js.Object {
   @js.native
   class TabContent ()
-    extends typings.reactDashTabsDashRedux.tabContentMod.TabContent
+    extends Component[TabContentProps, js.Object, js.Any]
   
   @js.native
   class TabLink ()
-    extends typings.reactDashTabsDashRedux.tabLinkMod.TabLink
+    extends Component[TabLinkProps, js.Object, js.Any]
   
   @js.native
   class Tabs ()
-    extends typings.reactDashTabsDashRedux.tabsMod.Tabs
+    extends Component[TabsProps, js.Object, js.Any]
   
 }
 

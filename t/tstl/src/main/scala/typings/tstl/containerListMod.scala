@@ -24,15 +24,14 @@ object containerListMod extends js.Object {
   - typings.std.Iterable because Already inherited
   - typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer because Already inherited
   - typings.tstl.baseContainerIContainerMod.IContainer because Already inherited
-  - typings.tstl.baseContainerILinearContainerMod.ILinearContainer because var conflicts: iterator. Inlined back, back
-  - typings.tstl.baseContainerIDequeContainerMod.IDequeContainer because var conflicts: iterator. Inlined  */ @js.native
+  - typings.tstl.baseContainerILinearContainerMod.ILinearContainer because var conflicts: iterator. Inlined back, back */ @js.native
   /**
     * Default Constructor.
     */
   class List[T] ()
     extends ListContainer[T, List[T], Iterator[T], ReverseIterator[T]]
-       with _IListAlgorithm[T, List[T]]
        with _IDeque[T]
+       with _IListAlgorithm[T, List[T]]
        with _IPushBack[T] {
     /**
       * Initializer Constructor.

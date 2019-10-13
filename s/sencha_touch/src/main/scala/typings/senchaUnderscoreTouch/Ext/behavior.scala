@@ -1,6 +1,5 @@
 package typings.senchaUnderscoreTouch.Ext
 
-import typings.senchaUnderscoreTouch.Ext.behavior.IBehavior
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object behavior extends js.Object {
   type IBehavior = IBase
-  type IDraggable = IBehavior
-  type IScrollable = IBehavior
-  type ITranslatable = IBehavior
+  type IDraggable = IBase
+  type IScrollable = IBase
+  type ITranslatable = IBase
 }
 

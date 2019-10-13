@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "ConflictError")
 @js.native
 class ConflictError ()
-  extends typings.emberDashData.emberDashDataMod.DS.ConflictError
+  extends typings.atEmberObject.atEmberObjectMod.default
 

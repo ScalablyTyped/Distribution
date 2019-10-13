@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("wonder.js/dist/es2015", "Log")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Log$ * / any */ @JSImport("wonder.js/dist/es2015", "Log")
 @js.native
-class Log ()
-  extends typings.wonderDotJs.distEs2015UtilsLogMod.Log
+class Log () extends js.Object
 

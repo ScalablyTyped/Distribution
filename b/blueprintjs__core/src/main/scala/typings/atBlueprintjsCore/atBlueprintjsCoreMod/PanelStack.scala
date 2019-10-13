@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core", "PanelStack")
 @js.native
 class PanelStack ()
-  extends typings.atBlueprintjsCore.libEsmComponentsMod.PanelStack
+  extends typings.atBlueprintjsCore.libEsmComponentsPanelDashStackPanelStackMod.PanelStack
 

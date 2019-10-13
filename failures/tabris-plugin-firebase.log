@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => tabris-plugin-firebase, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/tabris-plugin-firebase/types/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/tabris-plugin-firebase),TsIdentLibrarySimple(tabris-plugin-firebase)),TsIdentModule(None,List(tabris-plugin-firebase))) [id => tabris-plugin-firebase, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(tabris-plugin-firebase)) [id => tabris-plugin-firebase, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(tabris-plugin-firebase) [id => tabris-plugin-firebase, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(tabris-plugin-firebase) [id => tabris-plugin-firebase, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(logEvent) [id => tabris-plugin-firebase, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris-plugin-firebase) / TsGlobal() / TsDeclNamespace(firebase) / TsDeclInterface(Analytics))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(setUserProperty) [id => tabris-plugin-firebase, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris-plugin-firebase) / TsGlobal() / TsDeclNamespace(firebase) / TsDeclInterface(Analytics))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(set) [id => tabris-plugin-firebase, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris-plugin-firebase) / TsGlobal() / TsDeclNamespace(firebase) / TsDeclInterface(Analytics))] 

@@ -39,7 +39,7 @@ object parallel extends js.Object {
   
   @js.native
   class MediatorDedicatedWorkerServer ()
-    extends typings.samchon.templatesParallelMod.MediatorDedicatedWorkerServer
+    extends typings.samchon.templatesParallelDerivedMediatorServerMod.MediatorDedicatedWorkerServer
   
   @js.native
   class MediatorServer protected ()
@@ -65,11 +65,11 @@ object parallel extends js.Object {
   
   @js.native
   class MediatorSharedWorkerClient ()
-    extends typings.samchon.templatesParallelMod.MediatorSharedWorkerClient
+    extends typings.samchon.templatesParallelDerivedMediatorClientMod.MediatorSharedWorkerClient
   
   @js.native
   class MediatorSharedWorkerServer ()
-    extends typings.samchon.templatesParallelMod.MediatorSharedWorkerServer
+    extends typings.samchon.templatesParallelDerivedMediatorServerMod.MediatorSharedWorkerServer
   
   @js.native
   abstract class MediatorSystem protected ()
@@ -90,11 +90,11 @@ object parallel extends js.Object {
   
   @js.native
   class MediatorWebClient ()
-    extends typings.samchon.templatesParallelMod.MediatorWebClient
+    extends typings.samchon.templatesParallelDerivedMediatorClientMod.MediatorWebClient
   
   @js.native
   class MediatorWebServer ()
-    extends typings.samchon.templatesParallelMod.MediatorWebServer
+    extends typings.samchon.templatesParallelDerivedMediatorServerMod.MediatorWebServer
   
   @js.native
   /**

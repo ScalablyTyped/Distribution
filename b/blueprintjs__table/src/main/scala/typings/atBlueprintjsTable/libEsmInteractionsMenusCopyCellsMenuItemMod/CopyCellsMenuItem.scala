@@ -1,6 +1,6 @@
 package typings.atBlueprintjsTable.libEsmInteractionsMenusCopyCellsMenuItemMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/table/lib/esm/interactions/menus/copyCellsMenuItem", "CopyCellsMenuItem")
 @js.native
 class CopyCellsMenuItem ()
-  extends PureComponent[ICopyCellsMenuItemProps, js.Object, js.Any] {
+  extends Component[ICopyCellsMenuItemProps, js.Object, js.Any] {
   var handleClick: js.Any = js.native
 }
 

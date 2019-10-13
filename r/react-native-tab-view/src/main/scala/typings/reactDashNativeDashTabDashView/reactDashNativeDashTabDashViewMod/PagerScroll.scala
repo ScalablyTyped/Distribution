@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-tab-view", "PagerScroll")
 @js.native
 class PagerScroll[T /* <: Route[RouteBase] */] ()
-  extends PureComponent[PagerScrollProps[T], js.Object, js.Any]
+  extends Component[PagerScrollProps[T], js.Object, js.Any]
 

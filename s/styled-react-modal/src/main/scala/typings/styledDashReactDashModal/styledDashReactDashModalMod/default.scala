@@ -1,5 +1,6 @@
 package typings.styledDashReactDashModal.styledDashReactDashModalMod
 
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.std.TemplateStringsArray
@@ -12,7 +13,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("styled-react-modal", JSImport.Default)
 @js.native
-class default () extends Modal
+class default ()
+  extends Component[ModalProps, js.Object, js.Any]
 
 /* static members */
 @JSImport("styled-react-modal", JSImport.Default)

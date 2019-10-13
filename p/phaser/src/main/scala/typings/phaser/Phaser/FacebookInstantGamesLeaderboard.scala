@@ -1,6 +1,7 @@
 package typings.phaser.Phaser
 
 import typings.phaser.LeaderboardScore
+import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Phaser.FacebookInstantGamesLeaderboard")
 @js.native
-class FacebookInstantGamesLeaderboard protected () extends js.Object {
+class FacebookInstantGamesLeaderboard protected () extends EventEmitter {
   /**
     * 
     * @param plugin A reference to the Facebook Instant Games Plugin.
@@ -59,12 +60,8 @@ class FacebookInstantGamesLeaderboard protected () extends js.Object {
     * The data is requested in an async call, so the result isn't available immediately.
     * 
     * When the call completes this Leaderboard will emit the `getconnectedscores` event along with an array of LeaderboardScore entries and the name of the Leaderboard.
-    * @param count The number of entries to attempt to fetch from the leaderboard. Currently, up to a maximum of 100 entries may be fetched per query. Default 10.
-    * @param offset The offset from the top of the leaderboard that entries will be fetched from. Default 0.
     */
   def getConnectedScores(): this.type = js.native
-  def getConnectedScores(count: integer): this.type = js.native
-  def getConnectedScores(count: integer, offset: integer): this.type = js.native
   /**
     * Fetches the total number of player entries in the leaderboard.
     * 

@@ -10,9 +10,9 @@ trait GlobalProps[Theme] extends js.Object {
 
 object GlobalProps {
   @scala.inline
-  def apply[Theme](styles: InterpolationWithTheme[Theme]): GlobalProps[Theme] = {
-    val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
-  
+  def apply[Theme](styles: InterpolationWithTheme[Theme] = null): GlobalProps[Theme] = {
+    val __obj = js.Dynamic.literal()
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalProps[Theme]]
   }
 }

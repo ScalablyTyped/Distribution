@@ -1,6 +1,6 @@
 package typings.reactDashSpinners
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashSpinners.fadeLoaderMod.Loader
 import typings.reactDashSpinners.interfacesMod.LoaderHeightWidthRadiusProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object fadeLoaderMod extends js.Object {
   @js.native
   trait Loader
-    extends PureComponent[LoaderHeightWidthRadiusProps, js.Object, js.Any] {
+    extends Component[LoaderHeightWidthRadiusProps, js.Object, js.Any] {
     var a: StyleFunction = js.native
     var b: StyleFunction = js.native
     var c: StyleFunction = js.native

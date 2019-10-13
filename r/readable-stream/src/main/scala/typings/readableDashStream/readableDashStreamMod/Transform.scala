@@ -8,13 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.node.eventsMod.internal because Already inherited
-- typings.node.eventsMod.EventEmitter because Already inherited
 - typings.node.NodeJS.EventEmitter because Already inherited
-- typings.node.childUnderscoreProcessMod.StdioNull because Already inherited
-- typings.node.streamMod.internal because Already inherited
+- typings.node.eventsMod.EventEmitter because Already inherited
 - typings.node.NodeJS.ReadableStream because Already inherited
-- typings.node.streamMod.Stream because Already inherited
+- typings.node.streamMod.internal because Already inherited
 - typings.node.streamMod.Readable because Already inherited
 - typings.node.streamMod.Duplex because Already inherited
 - typings.node.streamMod.Transform because Inheritance from two classes. Inlined _flush, _transform */ @JSImport("readable-stream", "Transform")

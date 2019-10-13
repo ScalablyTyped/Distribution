@@ -14,12 +14,12 @@ object create extends js.Object {
     *     operation.
     * @param options Contents of the notification.
     */
-  def apply(notificationId: String, options: CreateNotificationOptions): js.Promise[js.UndefOr[String]] = js.native
+  def apply(notificationId: String, options: CreateNotificationOptions): js.Promise[String] = js.native
   /* notifications functions */
   /**
     * Creates and displays a notification.
     * @param options Contents of the notification.
     */
-  def apply(options: CreateNotificationOptions): js.Promise[js.UndefOr[String]] = js.native
+  def apply(options: CreateNotificationOptions): js.Promise[String] = js.native
 }
 

@@ -1,10 +1,11 @@
 package typings.parse.Parse
 
+import typings.parse.Parse.Schema._TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Pointer extends js.Object {
+trait Pointer extends _TYPE {
   var __type: String
   var className: String
   var objectId: String

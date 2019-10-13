@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server", "GraphQLExtension")
 @js.native
 class GraphQLExtension[TContext] ()
-  extends typings.apolloDashServer.distExportsMod.GraphQLExtension[TContext]
+  extends typings.graphqlDashExtensions.graphqlDashExtensionsMod.GraphQLExtension[TContext]
 

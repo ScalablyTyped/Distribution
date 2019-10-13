@@ -1,7 +1,6 @@
 package typings.gitlab
 
 import typings.gitlab.distInfrastructureMod.BaseServiceOptions
-import typings.gitlab.distServicesCommitDiscussionsMod.CommitDiscussions
 import typings.gitlab.distTemplatesMod.ResourceDiscussions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distServicesCommitDiscussionsMod extends js.Object {
   @js.native
-  class default protected () extends CommitDiscussions {
+  class default protected () extends ResourceDiscussions {
     def this(options: BaseServiceOptions) = this()
   }
   

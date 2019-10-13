@@ -4,9 +4,9 @@ import typings.atFrctlFractal.atFrctlFractalMod.fractal.api.assets.Asset
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.api.assets.AssetSource
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.Entity
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.entities.EntityCollection
-import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.ConfigurableEmitter
 import typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Source
 import typings.atFrctlFractal.atFrctlFractalNumbers.`true`
+import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.std.IterableIterator
 import typings.vinyl.vinylMod.File
@@ -47,17 +47,27 @@ object assets extends js.Object {
     def toVinylStream(): Readable = js.native
   }
   
-  @js.native
-  trait AssetSourceCollection
-    extends ConfigurableEmitter[js.Any] {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - typings.atFrctlFractal.atFrctlFractalMod.fractal.core.mixins.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @js.native
+  trait AssetSourceCollection extends EventEmitter {
     @JSName(scala.scalajs.js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[AssetSource]] = js.native
     val label: String = js.native
     val title: String = js.native
     def add(name: String, config: js.Any): AssetSource = js.native
+    def config(): js.Any = js.native
+    def config(config: js.Any): this.type = js.native
     def find(name: String): js.UndefOr[AssetSource] = js.native
+    def get[K /* <: String */, V](path: K): js.UndefOr[
+        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+      ] = js.native
+    def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
+        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+      ] = js.native
     def load(): js.Promise[Unit] = js.native
     def remove(name: String): this.type = js.native
+    def set[K /* <: String */](path: K): this.type = js.native
+    def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
     def sources(): js.Array[AssetSource] = js.native
     def toArray(): js.Array[AssetSource] = js.native
     def toJSON(): js.Object = js.native

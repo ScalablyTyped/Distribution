@@ -1,6 +1,7 @@
 package typings.reactDashBootstrap.libCheckboxMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapStrings.error
 import typings.reactDashBootstrap.reactDashBootstrapStrings.success
 import typings.reactDashBootstrap.reactDashBootstrapStrings.warning
@@ -9,7 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CheckboxProps extends HTMLProps[Checkbox] {
+trait CheckboxProps
+  extends AllHTMLAttributes[Checkbox]
+     with ClassAttributes[Checkbox] {
   var bsClass: js.UndefOr[String] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var inputRef: js.UndefOr[js.Function1[/* instance */ HTMLInputElement, Unit]] = js.undefined
@@ -19,7 +22,8 @@ trait CheckboxProps extends HTMLProps[Checkbox] {
 object CheckboxProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Checkbox] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Checkbox] = null,
+    ClassAttributes: ClassAttributes[Checkbox] = null,
     bsClass: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     `inline`: js.UndefOr[Boolean] = js.undefined,
@@ -27,7 +31,8 @@ object CheckboxProps {
     validationState: success | warning | error = null
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)

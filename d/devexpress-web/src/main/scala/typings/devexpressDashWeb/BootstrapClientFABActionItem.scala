@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("BootstrapClientFABActionItem")
 @js.native
-class BootstrapClientFABActionItem () extends ASPxClientFABActionItem {
+class BootstrapClientFABActionItem () extends ASPxClientFABActionItemBase {
   def GetBadgeCssClass(): String = js.native
   def GetBadgeIconCssClass(): String = js.native
   def GetBadgeText(): String = js.native

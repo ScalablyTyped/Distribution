@@ -1,7 +1,8 @@
 package typings.reactstrap.libFormGroupMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.std.HTMLDivElement
@@ -10,7 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormGroupProps
-  extends HTMLProps[HTMLDivElement]
+  extends AllHTMLAttributes[HTMLDivElement]
+     with ClassAttributes[HTMLDivElement]
      with /* key */ StringDictionary[js.Any] {
   var check: js.UndefOr[Boolean] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
@@ -22,7 +24,8 @@ trait FormGroupProps
 object FormGroupProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLDivElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLDivElement] = null,
+    ClassAttributes: ClassAttributes[HTMLDivElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     check: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -33,7 +36,8 @@ object FormGroupProps {
     tag: String | ReactType[_] = null
   ): FormGroupProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(check)) __obj.updateDynamic("check")(check)
     if (className != null) __obj.updateDynamic("className")(className)

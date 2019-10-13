@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@ember/service", JSImport.Default)
 @js.native
-class default () extends Service
+class default ()
+  extends typings.atEmberObject.atEmberObjectMod.default
 

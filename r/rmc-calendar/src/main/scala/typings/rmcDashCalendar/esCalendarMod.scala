@@ -1,7 +1,7 @@
 package typings.rmcDashCalendar
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.rmcDashCalendar.esCalendarMod.Calendar
 import typings.rmcDashCalendar.esCalendarMod.StateType
 import typings.rmcDashCalendar.esCalendarPropsMod.PropsType
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object esCalendarMod extends js.Object {
   @js.native
   trait Calendar
-    extends PureComponent[PropsType, StateType, js.Any] {
+    extends Component[PropsType, StateType, js.Any] {
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MCalendar(nextProps: PropsType): Unit = js.native
     def onCancel(): Unit = js.native

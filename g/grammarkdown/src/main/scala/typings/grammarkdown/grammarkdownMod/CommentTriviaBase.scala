@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown", "CommentTriviaBase")
 @js.native
 abstract class CommentTriviaBase[TKind /* <: CommentTriviaKind */] ()
-  extends typings.grammarkdown.distNodesMod.CommentTriviaBase[TKind]
+  extends typings.grammarkdown.distNodesMod.Node[TKind]
 

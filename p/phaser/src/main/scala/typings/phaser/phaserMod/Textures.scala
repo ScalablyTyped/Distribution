@@ -4,6 +4,7 @@ import typings.phaser.Phaser.GameObjects.RenderTexture
 import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.HTMLVideoElement
 import typings.std.WebGLTexture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -180,7 +181,8 @@ object Textures extends js.Object {
   
   /**
     * A Texture Source is the encapsulation of the actual source data for a Texture.
-    * This is typically an Image Element, loaded from the file system or network, or a Canvas Element.
+    * 
+    * This is typically an Image Element, loaded from the file system or network, a Canvas Element or a Video Element.
     * 
     * A Texture can contain multiple Texture Sources, which only happens when a multi-atlas is loaded.
     */
@@ -195,12 +197,15 @@ object Textures extends js.Object {
       * @param source The source image data.
       * @param width Optional width of the source image. If not given it's derived from the source itself.
       * @param height Optional height of the source image. If not given it's derived from the source itself.
+      * @param flipY Sets the `UNPACK_FLIP_Y_WEBGL` flag the WebGL Texture uses during upload. Default false.
       */
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLImageElement) = this()
+    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLVideoElement) = this()
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture) = this()
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: RenderTexture, width: integer) = this()
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLCanvasElement, width: integer) = this()
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLImageElement, width: integer) = this()
+    def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLVideoElement, width: integer) = this()
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: WebGLTexture, width: integer) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
@@ -222,9 +227,50 @@ object Textures extends js.Object {
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLVideoElement,
+      width: integer,
+      height: integer
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
       width: integer,
       height: integer
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: RenderTexture,
+      width: integer,
+      height: integer,
+      flipY: Boolean
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLCanvasElement,
+      width: integer,
+      height: integer,
+      flipY: Boolean
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLImageElement,
+      width: integer,
+      height: integer,
+      flipY: Boolean
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: HTMLVideoElement,
+      width: integer,
+      height: integer,
+      flipY: Boolean
+    ) = this()
+    def this(
+      texture: typings.phaser.Phaser.Textures.Texture,
+      source: WebGLTexture,
+      width: integer,
+      height: integer,
+      flipY: Boolean
     ) = this()
   }
   

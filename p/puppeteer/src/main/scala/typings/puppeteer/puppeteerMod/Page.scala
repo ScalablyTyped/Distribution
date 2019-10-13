@@ -40,10 +40,6 @@ trait Page
   var touchscreen: Touchscreen = js.native
   /** Returns the tracing object. */
   var tracing: Tracing = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def authenticate(): js.Promise[Unit] = js.native
   /**
     * Provide credentials for http authentication.
@@ -69,10 +65,6 @@ trait Page
     * Deletes the specified cookies.
     */
   def deleteCookie(cookies: DeleteCookie*): js.Promise[Unit] = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   /** Emulates given device metrics and user agent. This method is a shortcut for `setUserAgent` and `setViewport`.  */
   def emulate(options: EmulateOptions): js.Promise[Unit] = js.native
   def emulateMedia(): js.Promise[Unit] = js.native
@@ -85,8 +77,6 @@ trait Page
     * @param args The arguments to pass to the `fn`.
     */
   def evaluateOnNewDocument(fn: EvaluateFn[_], args: SerializableOrJSHandle*): js.Promise[Unit] = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
   /**
     * The method adds a function called name on the page's `window` object.
     * When called, the function executes `puppeteerFunction` in node.js and returns a
@@ -97,8 +87,6 @@ trait Page
   def exposeFunction(name: String, puppeteerFunction: js.Function1[/* repeated */ js.Any, _]): js.Promise[Unit] = js.native
   /** An array of all frames attached to the page. */
   def frames(): js.Array[Frame] = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
   /**
     * Navigate to the previous page in history.
     * @param options The navigation parameters.
@@ -113,26 +101,10 @@ trait Page
   def goForward(options: NavigationOptions): js.Promise[Response | Null] = js.native
   /** Indicates that the page has been closed. */
   def isClosed(): Boolean = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   /** Page is guaranteed to have a main frame which persists during navigation's. */
   def mainFrame(): Frame = js.native
   /** Gets the page metrics. */
   def metrics(): js.Promise[Metrics] = js.native
-  /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
     * Adds the listener function to the end of the listeners array for the event named `eventName`.
     * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
@@ -185,10 +157,6 @@ trait Page
   def on_workercreated(eventName: workercreated, handler: js.Function2[/* e */ Worker, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_workerdestroyed(eventName: workerdestroyed, handler: js.Function2[/* e */ Worker, /* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
     * Adds a one time listener function for the event named `eventName`.
     * The next time `eventName` is triggered, this listener is removed and then invoked.
@@ -247,40 +215,17 @@ trait Page
     */
   def pdf(): js.Promise[Buffer] = js.native
   def pdf(options: PDFOptions): js.Promise[Buffer] = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
     * The method iterates JavaScript heap and finds all the objects with the given prototype.
     * @param prototypeHandle A handle to the object prototype.
     */
   def queryObjects(prototypeHandle: JSHandle[_]): js.Promise[JSHandle[_]] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
   /**
     * Reloads the current page.
     * @param options The navigation parameters.
     */
   def reload(): js.Promise[Response] = js.native
   def reload(options: NavigationOptions): js.Promise[Response] = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
     * Captures a screenshot of the page.
     * @param options The screenshot options.
@@ -348,8 +293,6 @@ trait Page
     * @param enable Whether or not to enable JavaScript on the page.
     */
   def setJavaScriptEnabled(enabled: Boolean): js.Promise[Unit] = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
   /**
     * Determines whether the offline mode is enabled.
     * @param enabled When `true`, enables the offline mode for the page.

@@ -22,7 +22,7 @@ object Interactions extends js.Object {
   
   @js.native
   class Key ()
-    extends typings.plottable.buildSrcInteractionsMod.Key
+    extends typings.plottable.buildSrcInteractionsKeyInteractionMod.Key
   
   @js.native
   /**
@@ -41,7 +41,7 @@ object Interactions extends js.Object {
   
   @js.native
   class Pointer ()
-    extends typings.plottable.buildSrcInteractionsMod.Pointer
+    extends typings.plottable.buildSrcInteractionsPointerInteractionMod.Pointer
   
   def zoomOut(value: Double, zoom: Double, center: Double): Double = js.native
   /* static members */

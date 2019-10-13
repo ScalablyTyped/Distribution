@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.fontIconMod.FontIcon
+import typings.materialDashUi.__MaterialUI.FontIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object fontIconMod extends js.Object {
   @js.native
   class FontIcon ()
-    extends typings.materialDashUi.__MaterialUI.FontIcon
+    extends Component[FontIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends FontIcon
+  class default ()
+    extends Component[FontIconProps, js.Object, js.Any]
   
 }
 

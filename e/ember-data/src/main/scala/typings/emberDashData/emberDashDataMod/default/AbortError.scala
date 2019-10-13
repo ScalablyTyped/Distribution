@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember-data", "AbortError")
 @js.native
 class AbortError ()
-  extends typings.emberDashData.emberDashDataMod.DS.AbortError
+  extends typings.atEmberObject.atEmberObjectMod.default
 

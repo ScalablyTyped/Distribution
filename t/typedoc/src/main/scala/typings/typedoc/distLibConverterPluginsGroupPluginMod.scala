@@ -1,9 +1,10 @@
 package typings.typedoc
 
-import typings.typedoc.distLibConverterComponentsMod.ConverterComponent
+import typings.typedoc.distLibConverterConverterMod.Converter
 import typings.typedoc.distLibModelsReflectionGroupMod.ReflectionGroup
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind
 import typings.typedoc.distLibModelsReflectionsMod.Reflection
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibConverterPluginsGroupPluginMod extends js.Object {
   @js.native
-  class GroupPlugin () extends ConverterComponent {
+  class GroupPlugin () extends AbstractComponent[Converter] {
     var onEndResolve: js.Any = js.native
     var onResolve: js.Any = js.native
   }

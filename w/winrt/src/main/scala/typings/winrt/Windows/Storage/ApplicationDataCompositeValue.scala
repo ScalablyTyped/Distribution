@@ -3,14 +3,15 @@ package typings.winrt.Windows.Storage
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.Windows.Foundation.Collections.IMapView
-import typings.winrt.Windows.Foundation.Collections.IPropertySet
+import typings.winrt.Windows.Foundation.Collections.IObservableMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("Windows.Storage.ApplicationDataCompositeValue")
 @js.native
-class ApplicationDataCompositeValue () extends IPropertySet {
+class ApplicationDataCompositeValue ()
+  extends IObservableMap[String, js.Any] {
   /* CompleteClass */
   override var onmapchanged: js.Any = js.native
   /* CompleteClass */

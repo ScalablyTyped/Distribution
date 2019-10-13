@@ -1,6 +1,6 @@
 package typings.dropzone.dropzoneMod
 
-import typings.dropzone.dropzoneMod.Global.HTMLElement
+import typings.dropzone.dropzoneMod._Global_.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

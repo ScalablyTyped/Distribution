@@ -1,6 +1,7 @@
 package typings.materialDashComponentsDashWeb.materialDashComponentsDashWebMod
 
 import typings.atMaterialTopDashAppDashBar.adapterMod.MDCTopAppBarAdapter
+import typings.atMaterialTopDashAppDashBar.foundationMod.default
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object topAppBar extends js.Object {
   @js.native
-  class MDCFixedTopAppBarFoundation ()
-    extends typings.atMaterialTopDashAppDashBar.atMaterialTopDashAppDashBarMod.MDCFixedTopAppBarFoundation
+  class MDCFixedTopAppBarFoundation () extends default
   
   @js.native
-  class MDCShortTopAppBarFoundation ()
-    extends typings.atMaterialTopDashAppDashBar.atMaterialTopDashAppDashBarMod.MDCShortTopAppBarFoundation
+  class MDCShortTopAppBarFoundation () extends default
   
   @js.native
   class MDCTopAppBar ()
@@ -26,8 +25,7 @@ object topAppBar extends js.Object {
     extends typings.atMaterialTopDashAppDashBar.atMaterialTopDashAppDashBarMod.MDCTopAppBarBaseFoundation
   
   @js.native
-  class MDCTopAppBarFoundation ()
-    extends typings.atMaterialTopDashAppDashBar.atMaterialTopDashAppDashBarMod.MDCTopAppBarFoundation
+  class MDCTopAppBarFoundation () extends default
   
   /* static members */
   @js.native

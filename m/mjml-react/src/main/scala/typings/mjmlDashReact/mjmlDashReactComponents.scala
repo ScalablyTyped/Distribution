@@ -34,13 +34,13 @@ import scala.scalajs.js.annotation._
 
 object mjmlDashReactComponents extends mjmlDashReactProps {
   @scala.inline
-  def ExtensionsMjmlComment: ComponentType[Anon_Children] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.extensions.MjmlComment].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_Children]]
+  def ExtensionsMjmlComment: ComponentType[ExtensionsMjmlCommentProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.extensions.MjmlComment].asInstanceOf[typings.react.reactMod.ComponentType[ExtensionsMjmlCommentProps]]
   @scala.inline
-  def ExtensionsMjmlConditionalComment: ComponentType[Anon_ChildrenCondition] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.extensions.MjmlConditionalComment].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_ChildrenCondition]]
+  def ExtensionsMjmlConditionalComment: ComponentType[ExtensionsMjmlConditionalCommentProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.extensions.MjmlConditionalComment].asInstanceOf[typings.react.reactMod.ComponentType[ExtensionsMjmlConditionalCommentProps]]
   @scala.inline
-  def ExtensionsMjmlTrackingPixel: ComponentType[Anon_Src] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.extensions.MjmlTrackingPixel].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_Src]]
+  def ExtensionsMjmlTrackingPixel: ComponentType[ExtensionsMjmlTrackingPixelProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.extensions.MjmlTrackingPixel].asInstanceOf[typings.react.reactMod.ComponentType[ExtensionsMjmlTrackingPixelProps]]
   @scala.inline
-  def ExtensionsMjmlYahooStyle: ComponentType[Anon_Children] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.extensions.MjmlYahooStyle].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_Children]]
+  def ExtensionsMjmlYahooStyle: ComponentType[ExtensionsMjmlYahooStyleProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.extensions.MjmlYahooStyle].asInstanceOf[typings.react.reactMod.ComponentType[ExtensionsMjmlYahooStyleProps]]
   @scala.inline
   def Mjml: ComponentType[MjmlProps with RequiredChildrenProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.Mjml].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlProps with typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps]]
@@ -61,14 +61,14 @@ object mjmlDashReactComponents extends mjmlDashReactProps {
   ] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlAccordionTitle].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps with typings.mjmlDashReact.mjmlDashReactMod.MjmlAccordionTitleProps with typings.mjmlDashReact.mjmlDashReactMod.PaddingProps with typings.mjmlDashReact.mjmlDashReactMod.ClassNameProps]]
   @scala.inline
-  def MjmlAll: ComponentType[Anon_ChildrenKey] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlAll].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_ChildrenKey]]
+  def MjmlAll: ComponentType[MjmlAllProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlAll].asInstanceOf[typings.react.reactMod.ComponentType[MjmlAllProps]]
   @scala.inline
-  def MjmlAttributes: ComponentType[RequiredChildrenProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlAttributes].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps]]
+  def MjmlAttributes: ComponentType[MjmlAttributesProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlAttributes].asInstanceOf[typings.react.reactMod.ComponentType[MjmlAttributesProps]]
   @scala.inline
   def MjmlBody: ComponentType[RequiredChildrenProps with MjmlBodyProps with ClassNameProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlBody].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps with typings.mjmlDashReact.mjmlDashReactMod.MjmlBodyProps with typings.mjmlDashReact.mjmlDashReactMod.ClassNameProps]]
   @scala.inline
-  def MjmlBreakpoint: ComponentType[typings.mjmlDashReact.mjmlDashReactMod.MjmlBreakpointProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlBreakpoint].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.mjmlDashReactMod.MjmlBreakpointProps]]
+  def MjmlBreakpoint: ComponentType[MjmlBreakpointProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlBreakpoint].asInstanceOf[typings.react.reactMod.ComponentType[MjmlBreakpointProps]]
   @scala.inline
   def MjmlButton: ComponentType[
     RequiredChildrenProps with MjmlButtonProps with PaddingProps with ClassNameProps with HrefProps with BorderProps
@@ -81,7 +81,7 @@ object mjmlDashReactComponents extends mjmlDashReactProps {
   def MjmlCarouselImage: ComponentType[MjmlCarouselImageProps with ClassNameProps with HrefProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlCarouselImage].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlCarouselImageProps with typings.mjmlDashReact.mjmlDashReactMod.ClassNameProps with typings.mjmlDashReact.mjmlDashReactMod.HrefProps]]
   @scala.inline
-  def MjmlClass: ComponentType[Anon_ChildrenKeyName] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlClass].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_ChildrenKeyName]]
+  def MjmlClass: ComponentType[MjmlClassProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlClass].asInstanceOf[typings.react.reactMod.ComponentType[MjmlClassProps]]
   @scala.inline
   def MjmlColumn: ComponentType[
     RequiredChildrenProps with MjmlColumnProps with PaddingProps with ClassNameProps with BorderProps
@@ -91,12 +91,12 @@ object mjmlDashReactComponents extends mjmlDashReactProps {
   def MjmlDivider: ComponentType[MjmlDividerProps with ClassNameProps with PaddingProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlDivider].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlDividerProps with typings.mjmlDashReact.mjmlDashReactMod.ClassNameProps with typings.mjmlDashReact.mjmlDashReactMod.PaddingProps]]
   @scala.inline
-  def MjmlFont: ComponentType[typings.mjmlDashReact.mjmlDashReactMod.MjmlFontProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlFont].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.mjmlDashReactMod.MjmlFontProps]]
+  def MjmlFont: ComponentType[MjmlFontProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlFont].asInstanceOf[typings.react.reactMod.ComponentType[MjmlFontProps]]
   @scala.inline
   def MjmlGroup: ComponentType[MjmlGroupProps with RequiredChildrenProps with ClassNameProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlGroup].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlGroupProps with typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps with typings.mjmlDashReact.mjmlDashReactMod.ClassNameProps]]
   @scala.inline
-  def MjmlHead: ComponentType[RequiredChildrenProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlHead].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps]]
+  def MjmlHead: ComponentType[MjmlHeadProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlHead].asInstanceOf[typings.react.reactMod.ComponentType[MjmlHeadProps]]
   @scala.inline
   def MjmlHero: ComponentType[MjmlHeroProps with ClassNameProps with PaddingProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlHero].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlHeroProps with typings.mjmlDashReact.mjmlDashReactMod.ClassNameProps with typings.mjmlDashReact.mjmlDashReactMod.PaddingProps]]
@@ -110,9 +110,9 @@ object mjmlDashReactComponents extends mjmlDashReactProps {
   def MjmlNavbarLink: ComponentType[MjmlNavbarLinkProps with HrefProps with PaddingProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlNavbarLink].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlNavbarLinkProps with typings.mjmlDashReact.mjmlDashReactMod.HrefProps with typings.mjmlDashReact.mjmlDashReactMod.PaddingProps]]
   @scala.inline
-  def MjmlPreview: ComponentType[Anon_Children] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlPreview].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_Children]]
+  def MjmlPreview: ComponentType[MjmlPreviewProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlPreview].asInstanceOf[typings.react.reactMod.ComponentType[MjmlPreviewProps]]
   @scala.inline
-  def MjmlRaw: ComponentType[RequiredChildrenProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlRaw].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps]]
+  def MjmlRaw: ComponentType[MjmlRawProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlRaw].asInstanceOf[typings.react.reactMod.ComponentType[MjmlRawProps]]
   @scala.inline
   def MjmlSection: ComponentType[
     MjmlSectionProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps
@@ -130,7 +130,7 @@ object mjmlDashReactComponents extends mjmlDashReactProps {
   def MjmlSpacer: ComponentType[MjmlSpacerProps with BorderProps with PaddingProps with ClassNameProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlSpacer].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlSpacerProps with typings.mjmlDashReact.mjmlDashReactMod.BorderProps with typings.mjmlDashReact.mjmlDashReactMod.PaddingProps with typings.mjmlDashReact.mjmlDashReactMod.ClassNameProps]]
   @scala.inline
-  def MjmlStyle: ComponentType[Anon_ChildrenInline] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlStyle].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_ChildrenInline]]
+  def MjmlStyle: ComponentType[MjmlStyleProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlStyle].asInstanceOf[typings.react.reactMod.ComponentType[MjmlStyleProps]]
   @scala.inline
   def MjmlTable: ComponentType[MjmlTableProps with RequiredChildrenProps with PaddingProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlTable].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlTableProps with typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps with typings.mjmlDashReact.mjmlDashReactMod.PaddingProps]]
@@ -138,7 +138,7 @@ object mjmlDashReactComponents extends mjmlDashReactProps {
   def MjmlText: ComponentType[MjmlTextProps with RequiredChildrenProps with PaddingProps with ClassNameProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlText].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.mjmlDashReact.mjmlDashReactMod.MjmlTextProps with typings.mjmlDashReact.mjmlDashReactMod.RequiredChildrenProps with typings.mjmlDashReact.mjmlDashReactMod.PaddingProps with typings.mjmlDashReact.mjmlDashReactMod.ClassNameProps]]
   @scala.inline
-  def MjmlTitle: ComponentType[Anon_Children] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlTitle].asInstanceOf[typings.react.reactMod.ComponentType[typings.mjmlDashReact.Anon_Children]]
+  def MjmlTitle: ComponentType[MjmlTitleProps] = js.constructorOf[typings.mjmlDashReact.mjmlDashReactMod.MjmlTitle].asInstanceOf[typings.react.reactMod.ComponentType[MjmlTitleProps]]
   @scala.inline
   def MjmlWrapper: ComponentType[
     MjmlWrapperProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps

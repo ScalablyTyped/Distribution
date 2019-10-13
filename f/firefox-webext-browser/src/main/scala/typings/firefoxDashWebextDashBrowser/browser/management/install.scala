@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object install extends js.Object {
   /** Installs and enables a theme extension from the given url. */
-  def apply(options: Anon_Hash): js.Promise[js.UndefOr[Anon_Id]] = js.native
+  def apply(options: Anon_Hash): js.Promise[Anon_Id] = js.native
 }
 

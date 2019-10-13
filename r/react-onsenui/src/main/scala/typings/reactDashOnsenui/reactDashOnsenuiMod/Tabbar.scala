@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_AnimationAnimationOptionsAuto
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestyleindexnumberrenderTab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Tabbar")
 @js.native
 class Tabbar ()
-  extends Component[Anon_AnimationAnimationOptionsAuto, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestyleindexnumberrenderTab, js.Any, js.Any]
 

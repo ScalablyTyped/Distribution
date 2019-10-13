@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-native", "Animated.ValueXY")
 @js.native
-class ValueXY () extends AnimatedWithChildren {
+class ValueXY ()
+  extends typings.reactDashNative.reactDashNativeMod.Animated.Animated {
   def this(valueIn: Anon_XY) = this()
   var x: AnimatedValue = js.native
   var y: AnimatedValue = js.native

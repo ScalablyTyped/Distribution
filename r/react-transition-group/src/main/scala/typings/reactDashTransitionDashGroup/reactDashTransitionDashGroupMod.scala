@@ -1,7 +1,12 @@
 package typings.reactDashTransitionDashGroup
 
-import typings.reactDashTransitionDashGroup.cSSTransitionMod.default
+import typings.react.reactMod.Component
+import typings.reactDashTransitionDashGroup.cSSTransitionMod.CSSTransitionProps
 import typings.reactDashTransitionDashGroup.configMod.Config
+import typings.reactDashTransitionDashGroup.reactDashTransitionDashGroupStrings.div
+import typings.reactDashTransitionDashGroup.switchTransitionMod.SwitchTransitionProps
+import typings.reactDashTransitionDashGroup.transitionGroupMod.TransitionGroupProps
+import typings.reactDashTransitionDashGroup.transitionMod.TransitionProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +15,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashTransitionDashGroupMod extends js.Object {
   @js.native
-  class CSSTransition () extends default
+  class CSSTransition ()
+    extends Component[CSSTransitionProps, js.Object, js.Any]
   
   /**
     * A transition component inspired by the [vue transition modes](https://vuejs.org/v2/guide/transitions.html#Transition-Modes).
@@ -39,7 +45,7 @@ object reactDashTransitionDashGroupMod extends js.Object {
     */
   @js.native
   class SwitchTransition ()
-    extends typings.reactDashTransitionDashGroup.switchTransitionMod.default
+    extends Component[SwitchTransitionProps, js.Object, js.Any]
   
   /**
     * The Transition component lets you describe a transition from one component
@@ -84,7 +90,7 @@ object reactDashTransitionDashGroupMod extends js.Object {
     */
   @js.native
   class Transition ()
-    extends typings.reactDashTransitionDashGroup.transitionMod.default
+    extends Component[TransitionProps, js.Object, js.Any]
   
   /**
     * The `<TransitionGroup>` component manages a set of `<Transition>` components
@@ -145,7 +151,7 @@ object reactDashTransitionDashGroupMod extends js.Object {
     */
   @js.native
   class TransitionGroup ()
-    extends typings.reactDashTransitionDashGroup.transitionGroupMod.default
+    extends Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
   
   val config: Config = js.native
 }

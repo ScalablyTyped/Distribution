@@ -1,6 +1,8 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.ShiftWorkday.MatchShiftsByEnum
+import typings.squareDashConnect.squareDashConnectStrings.END_AT
+import typings.squareDashConnect.squareDashConnectStrings.INTERSECTION
+import typings.squareDashConnect.squareDashConnectStrings.START_AT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,32 +23,6 @@ class ShiftWorkday () extends js.Object {
   /**
     * The strategy on which the dates are applied. See [ShiftWorkdayMatcher](#type-shiftworkdaymatcher) for possible values.
     */
-  var match_shifts_by: js.UndefOr[MatchShiftsByEnum] = js.native
-}
-
-@JSImport("square-connect", "ShiftWorkday")
-@js.native
-object ShiftWorkday extends js.Object {
-  @js.native
-  sealed trait MatchShiftsByEnum extends js.Object
-  
-  @js.native
-  object MatchShiftsByEnum extends js.Object {
-    @js.native
-    sealed trait END_AT extends MatchShiftsByEnum
-    
-    @js.native
-    sealed trait INTERSECTION extends MatchShiftsByEnum
-    
-    @js.native
-    sealed trait START_AT extends MatchShiftsByEnum
-    
-    /* "END_AT" */ val END_AT: typings.squareDashConnect.squareDashConnectMod.ShiftWorkday.MatchShiftsByEnum.END_AT with String = js.native
-    /* "INTERSECTION" */ val INTERSECTION: typings.squareDashConnect.squareDashConnectMod.ShiftWorkday.MatchShiftsByEnum.INTERSECTION with String = js.native
-    /* "START_AT" */ val START_AT: typings.squareDashConnect.squareDashConnectMod.ShiftWorkday.MatchShiftsByEnum.START_AT with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[MatchShiftsByEnum with String] = js.native
-  }
-  
+  var match_shifts_by: js.UndefOr[START_AT | END_AT | INTERSECTION] = js.native
 }
 

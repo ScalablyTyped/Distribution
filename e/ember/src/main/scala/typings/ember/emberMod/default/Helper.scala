@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Helper")
 @js.native
 class Helper ()
-  extends typings.ember.emberMod.Ember.Helper
+  extends typings.atEmberComponent.helperMod.default
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.NoneLocation")
 @js.native
 class NoneLocation ()
-  extends typings.atEmberRouting.noneDashLocationMod.default
+  extends typings.atEmberObject.atEmberObjectMod.default
 

@@ -24,12 +24,12 @@ object atNivoGeoComponents extends atNivoGeoProps {
   def GeoMapCanvas: ComponentType[GeoMapCanvasProps with Dimensions] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.GeoMapCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoGeo.atNivoGeoMod.GeoMapCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
   @scala.inline
-  def ResponsiveChoropleth: ComponentType[ChoroplethProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveChoropleth].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoGeo.atNivoGeoMod.ChoroplethProps]]
+  def ResponsiveChoropleth: ComponentType[ResponsiveChoroplethProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveChoropleth].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveChoroplethProps]]
   @scala.inline
-  def ResponsiveChoroplethCanvas: ComponentType[ChoroplethCanvasProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveChoroplethCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoGeo.atNivoGeoMod.ChoroplethCanvasProps]]
+  def ResponsiveChoroplethCanvas: ComponentType[ResponsiveChoroplethCanvasProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveChoroplethCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveChoroplethCanvasProps]]
   @scala.inline
-  def ResponsiveGeoMap: ComponentType[GeoMapProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveGeoMap].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoGeo.atNivoGeoMod.GeoMapProps]]
+  def ResponsiveGeoMap: ComponentType[ResponsiveGeoMapProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveGeoMap].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveGeoMapProps]]
   @scala.inline
-  def ResponsiveGeoMapCanvas: ComponentType[GeoMapCanvasProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveGeoMapCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoGeo.atNivoGeoMod.GeoMapCanvasProps]]
+  def ResponsiveGeoMapCanvas: ComponentType[ResponsiveGeoMapCanvasProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveGeoMapCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveGeoMapCanvasProps]]
 }
 

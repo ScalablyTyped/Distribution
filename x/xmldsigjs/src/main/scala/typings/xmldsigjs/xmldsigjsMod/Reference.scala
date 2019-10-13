@@ -1,13 +1,14 @@
 package typings.xmldsigjs.xmldsigjsMod
 
 import typings.std.Uint8Array
+import typings.xmlDashCore.xmlDashCoreMod.XmlObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xmldsigjs", "Reference")
 @js.native
-class Reference () extends XmlSignatureObject {
+class Reference () extends XmlObject {
   def this(uri: String) = this()
   /**
     * Gets or sets the digest method Uniform Resource Identifier (URI) of the current

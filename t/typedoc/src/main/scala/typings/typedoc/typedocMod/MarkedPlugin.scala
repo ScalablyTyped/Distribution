@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc", "MarkedPlugin")
 @js.native
 class MarkedPlugin ()
-  extends typings.typedoc.distLibOutputPluginsMod.MarkedPlugin
+  extends typings.typedoc.distLibOutputPluginsMarkedPluginMod.MarkedPlugin
 

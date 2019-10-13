@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 object errorMod extends js.Object {
   @js.native
   class BailErrorStrategy ()
-    extends typings.antlr4.errorErrorStrategyMod.BailErrorStrategy
+    extends typings.antlr4.errorErrorStrategyMod.ErrorStrategy
   
   @js.native
   class ConsoleErrorListener ()
-    extends typings.antlr4.errorErrorListenerMod.ConsoleErrorListener
+    extends typings.antlr4.errorErrorListenerMod.ErrorListener
   
   @js.native
   class DefaultErrorStrategy ()
-    extends typings.antlr4.errorErrorStrategyMod.DefaultErrorStrategy
+    extends typings.antlr4.errorErrorStrategyMod.ErrorStrategy
   
   @js.native
   class ErrorListener ()
@@ -29,27 +29,27 @@ object errorMod extends js.Object {
   
   @js.native
   class FailedPredicateException ()
-    extends typings.antlr4.errorErrorsMod.FailedPredicateException
+    extends typings.antlr4.errorErrorsMod.RecognitionException
   
   @js.native
   class InputMismatchException ()
-    extends typings.antlr4.errorErrorsMod.InputMismatchException
+    extends typings.antlr4.errorErrorsMod.RecognitionException
   
   @js.native
   class LexerNoViableAltException ()
-    extends typings.antlr4.errorErrorsMod.LexerNoViableAltException
+    extends typings.antlr4.errorErrorsMod.RecognitionException
   
   @js.native
   class NoViableAltException ()
-    extends typings.antlr4.errorErrorsMod.NoViableAltException
+    extends typings.antlr4.errorErrorsMod.RecognitionException
   
   @js.native
   class ParseCancellationException ()
-    extends typings.antlr4.errorErrorsMod.ParseCancellationException
+    extends typings.antlr4.errorErrorsMod.RecognitionException
   
   @js.native
   class ProxyErrorListener ()
-    extends typings.antlr4.errorErrorListenerMod.ProxyErrorListener
+    extends typings.antlr4.errorErrorListenerMod.ErrorListener
   
   @js.native
   class RecognitionException ()

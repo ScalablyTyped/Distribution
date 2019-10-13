@@ -1,8 +1,8 @@
 package typings.reactDashSortableDashTree.reactDashSortableDashTreeMod
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragPreview
 import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragSource
 import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement

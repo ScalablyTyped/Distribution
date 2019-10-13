@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon-framework", "collections.TreeMultiSetCollection")
 @js.native
 class TreeMultiSetCollection[T] ()
-  extends typings.samchon.samchonMod.collections.TreeMultiSetCollection[T]
+  extends typings.ecol.libSetsTreeMultiSetCollectionMod.TreeMultiSetCollection[T]
 
 @JSImport("samchon-framework", "collections.TreeMultiSetCollection")
 @js.native

@@ -10,8 +10,8 @@ import typings.officeDashUiDashFabricDashReact.libComponentsPickersPickerItemDot
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsItemDotTypesMod.ISuggestionItemProps
 import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.Props
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

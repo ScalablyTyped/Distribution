@@ -1,8 +1,8 @@
 package typings.samchon
 
-import typings.ecol.ecolMod.ArrayCollection
-import typings.ecol.ecolMod.DequeCollection
-import typings.ecol.ecolMod.ListCollection
+import typings.ecol.libLinearDequeCollectionMod.DequeCollection
+import typings.ecol.libLinearListCollectionMod.ListCollection
+import typings.ecol.libLinearVectorCollectionMod.ArrayCollection
 import typings.samchon.protocolEntityIEntityMod.IEntity
 import typings.sxml.sxmlMod.XML
 import scala.scalajs.js

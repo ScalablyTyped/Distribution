@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.refreshIndicatorMod.RefreshIndicator
+import typings.materialDashUi.__MaterialUI.RefreshIndicatorProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object refreshIndicatorMod extends js.Object {
   @js.native
   class RefreshIndicator ()
-    extends typings.materialDashUi.__MaterialUI.RefreshIndicator
+    extends Component[RefreshIndicatorProps, js.Object, js.Any]
   
   @js.native
-  class default () extends RefreshIndicator
+  class default ()
+    extends Component[RefreshIndicatorProps, js.Object, js.Any]
   
 }
 

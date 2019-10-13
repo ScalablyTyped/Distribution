@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.Collapsible")
 @js.native
-class Collapsible protected () extends Widget {
+class Collapsible protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: CollapsibleOptions) = this()
   @JSName("options")

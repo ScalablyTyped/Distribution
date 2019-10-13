@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsColumnSizerMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_Children
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-virtualized/dist/es/ColumnSizer", "ColumnSizer")
 @js.native
 class ColumnSizer ()
-  extends PureComponent[ColumnSizerProps, js.Object, js.Any]
+  extends Component[ColumnSizerProps, js.Object, js.Any]
 
 /* static members */
 @JSImport("react-virtualized/dist/es/ColumnSizer", "ColumnSizer")

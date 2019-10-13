@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "InventoryApi")
 @js.native
+/**
+  * Constructs a new InventoryApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class InventoryApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Applies adjustments and counts to the provided item quantities.
     * On success: returns the current calculated counts for all objects referenced in the request.

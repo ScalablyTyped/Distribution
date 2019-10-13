@@ -1,7 +1,7 @@
 package typings.reactDashMosaicDashComponent
 
+import typings.react.reactMod.Component
 import typings.react.reactMod.Context
-import typings.react.reactMod.PureComponent
 import typings.reactDashMosaicDashComponent.libButtonsMosaicButtonMod.MosaicButtonProps
 import typings.reactDashMosaicDashComponent.libContextTypesMod.MosaicWindowContext
 import scala.scalajs.js
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object libButtonsSplitButtonMod extends js.Object {
   @js.native
   class SplitButton ()
-    extends PureComponent[MosaicButtonProps, js.Object, js.Any] {
+    extends Component[MosaicButtonProps, js.Object, js.Any] {
     @JSName("context")
     var context_SplitButton: MosaicWindowContext = js.native
     var split: js.Any = js.native

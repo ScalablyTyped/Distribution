@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hexo-fs", "ReadStream")
 @js.native
 class ReadStream ()
-  extends typings.gracefulDashFs.gracefulDashFsMod.ReadStream
+  extends typings.node.fsMod.ReadStream
 

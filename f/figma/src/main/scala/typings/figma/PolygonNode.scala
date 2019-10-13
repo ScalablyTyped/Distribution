@@ -7,10 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PolygonNode
-  extends DefaultShapeMixin
+  extends SceneNode
+     with BaseNodeMixin
+     with SceneNodeMixin
+     with BlendMixin
+     with GeometryMixin
+     with LayoutMixin
+     with ExportMixin
      with ConstraintMixin
-     with CornerMixin
-     with SceneNode {
+     with CornerMixin {
   var pointCount: Double = js.native
   val `type`: POLYGON = js.native
 }

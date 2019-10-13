@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
 object dns extends js.Object {
   @js.native
   class Resolver ()
-    extends typings.mz.dnsMod.Resolver
+    extends typings.node.dnsMod.Resolver
   
   // Supported getaddrinfo flags.
   val ADDRCONFIG: Double = js.native
@@ -141,7 +141,7 @@ object dns extends js.Object {
   object promises extends js.Object {
     @js.native
     class Resolver ()
-      extends typings.mz.dnsMod.promises.Resolver
+      extends typings.node.dnsMod.promises.Resolver
     
     def getServers(): js.Array[String] = js.native
     def lookup(hostname: String): js.Promise[LookupAddress] = js.native

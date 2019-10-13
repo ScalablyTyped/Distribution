@@ -2,8 +2,6 @@ package typings.protractor
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.blockingDashProxy.blockingDashProxyMod.BPClient
-import typings.protractor.builtBrowserMod.AbstractExtendedWebDriver
-import typings.protractor.builtBrowserMod.AbstractWebDriver
 import typings.protractor.builtBrowserMod.ElementHelper
 import typings.protractor.builtBrowserMod.ProtractorBrowser
 import typings.protractor.builtDebuggerMod.DebugHelper
@@ -24,9 +22,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object builtBrowserMod extends js.Object {
   @js.native
-  class AbstractExtendedWebDriver ()
-    extends AbstractWebDriver
-       with ExtendedWebDriver
+  class AbstractExtendedWebDriver () extends ExtendedWebDriver
   
   @js.native
   class AbstractWebDriver () extends WebDriver
@@ -40,7 +36,7 @@ object builtBrowserMod extends js.Object {
   
   @js.native
   class ProtractorBrowser protected ()
-    extends AbstractExtendedWebDriver
+    extends ExtendedWebDriver
        with /* key */ StringDictionary[js.Any] {
     def this(webdriverInstance: WebDriver) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String) = this()

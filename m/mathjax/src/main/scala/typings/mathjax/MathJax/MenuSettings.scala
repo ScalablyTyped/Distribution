@@ -1,5 +1,11 @@
 package typings.mathjax.MathJax
 
+import typings.mathjax.mathjaxStrings.CommonHTML
+import typings.mathjax.mathjaxStrings.NativeMML
+import typings.mathjax.mathjaxStrings.PlainSource
+import typings.mathjax.mathjaxStrings.PreviewHTML
+import typings.mathjax.mathjaxStrings.SVG
+import typings.mathjax.mathjaxStrings.`HTML-CSS`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,6 +28,7 @@ trait MenuSettings extends js.Object {
   var context: js.UndefOr[String] = js.undefined
   var mpContext: js.UndefOr[Boolean] = js.undefined
   var mpMouse: js.UndefOr[Boolean] = js.undefined
+  val renderer: js.UndefOr[`HTML-CSS` | CommonHTML | PreviewHTML | NativeMML | SVG | PlainSource] = js.undefined
   /*This controls whether the “Show Source” menu item includes special class names that help MathJax to typeset
     * the mathematics that was produced by the TeX input jax. If these are included, then you can take the output
     * from “Show Source” and put it into a page that uses MathJax’s MathML input jax and expect to get the same
@@ -48,6 +55,7 @@ object MenuSettings {
     context: String = null,
     mpContext: js.UndefOr[Boolean] = js.undefined,
     mpMouse: js.UndefOr[Boolean] = js.undefined,
+    renderer: `HTML-CSS` | CommonHTML | PreviewHTML | NativeMML | SVG | PlainSource = null,
     texHints: js.UndefOr[Boolean] = js.undefined,
     zoom: String = null,
     zscale: String = null
@@ -60,6 +68,7 @@ object MenuSettings {
     if (context != null) __obj.updateDynamic("context")(context)
     if (!js.isUndefined(mpContext)) __obj.updateDynamic("mpContext")(mpContext)
     if (!js.isUndefined(mpMouse)) __obj.updateDynamic("mpMouse")(mpMouse)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     if (!js.isUndefined(texHints)) __obj.updateDynamic("texHints")(texHints)
     if (zoom != null) __obj.updateDynamic("zoom")(zoom)
     if (zscale != null) __obj.updateDynamic("zscale")(zscale)

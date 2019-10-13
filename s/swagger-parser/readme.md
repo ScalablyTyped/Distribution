@@ -1,7 +1,7 @@
 
 # Scala.js typings for swagger-parser
 
-Typings are for version 8.0.1
+Typings are for version 8.0.2
 
 ## Library description:
 Swagger 2.0 and OpenAPI 3.0 parser and validator for Node and browsers

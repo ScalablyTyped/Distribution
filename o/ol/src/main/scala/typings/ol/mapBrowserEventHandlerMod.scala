@@ -1,6 +1,5 @@
 package typings.ol
 
-import typings.ol.mapBrowserEventHandlerMod.MapBrowserEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object mapBrowserEventHandlerMod extends js.Object {
   @js.native
-  class default protected () extends MapBrowserEventHandler {
+  class default protected ()
+    extends typings.ol.eventsTargetMod.default {
     def this(map: typings.ol.pluggableMapMod.default) = this()
     def this(map: typings.ol.pluggableMapMod.default, moveTolerance: Double) = this()
   }

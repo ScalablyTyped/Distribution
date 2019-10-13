@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LocalForage extends LocalForageDbMethods {
+trait LocalForage
+  extends LocalForageDbMethodsCore
+     with LocalForageDbMethodsOptional {
   var INDEXEDDB: String = js.native
   var LOCALSTORAGE: String = js.native
   var WEBSQL: String = js.native

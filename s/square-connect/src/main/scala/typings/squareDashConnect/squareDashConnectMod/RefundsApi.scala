@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("square-connect", "RefundsApi")
 @js.native
+/**
+  * Constructs a new RefundsApi.
+  * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
+  */
 class RefundsApi () extends js.Object {
+  def this(apiClient: ApiClient) = this()
   /**
     * Retrieves a specific `Refund` using the `refund_id`.
     */

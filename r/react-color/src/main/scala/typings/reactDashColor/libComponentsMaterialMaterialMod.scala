@@ -16,7 +16,8 @@ object libComponentsMaterialMaterialMod extends js.Object {
     extends Component[MaterialPickerProps, js.Object, js.Any]
   
   @js.native
-  class default () extends MaterialPicker
+  class default ()
+    extends Component[MaterialPickerProps, js.Object, js.Any]
   
   type MaterialPickerProps = ColorPickerProps[MaterialPicker]
 }

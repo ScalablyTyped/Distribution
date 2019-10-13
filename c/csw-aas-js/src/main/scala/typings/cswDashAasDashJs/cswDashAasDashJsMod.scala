@@ -6,7 +6,7 @@ import typings.cswDashAasDashJs.distComponentsAuthorizationRealmRoleMod.RealmRol
 import typings.cswDashAasDashJs.distComponentsContextAuthContextMod.AuthContextType
 import typings.cswDashAasDashJs.distComponentsContextAuthContextProviderMod.AuthContextProps
 import typings.react.reactMod.Context
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

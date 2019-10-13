@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/models", "ParameterReflection")
 @js.native
 class ParameterReflection ()
-  extends typings.typedoc.distLibModelsReflectionsMod.ParameterReflection
+  extends typings.typedoc.distLibModelsReflectionsParameterMod.ParameterReflection
 

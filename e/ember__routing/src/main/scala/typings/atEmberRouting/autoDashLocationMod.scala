@@ -1,6 +1,5 @@
 package typings.atEmberRouting
 
-import typings.atEmberRouting.autoDashLocationMod.AutoLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object autoDashLocationMod extends js.Object {
   @js.native
-  class default () extends AutoLocation
+  class default ()
+    extends typings.atEmberObject.atEmberObjectMod.default
   
   type AutoLocation = typings.atEmberObject.atEmberObjectMod.default
 }

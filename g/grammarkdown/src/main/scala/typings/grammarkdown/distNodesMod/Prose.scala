@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown/dist/nodes", "Prose")
 @js.native
 class Prose protected ()
-  extends LexicalSymbolBase[typings.grammarkdown.distTokensMod.SyntaxKind.Prose] {
+  extends Node[typings.grammarkdown.distTokensMod.SyntaxKind.Prose] {
   def this(greaterThanToken: Token[GreaterThanToken]) = this()
   def this(greaterThanToken: Token[GreaterThanToken], fragments: js.Array[ProseFragment]) = this()
   val fragments: js.UndefOr[js.Array[ProseFragment]] = js.native

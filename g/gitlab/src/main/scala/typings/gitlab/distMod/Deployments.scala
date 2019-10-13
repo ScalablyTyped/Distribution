@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "Deployments")
 @js.native
 class Deployments ()
-  extends typings.gitlab.distServicesMod.Deployments
+  extends typings.gitlab.distServicesDeploymentsMod.Deployments
 

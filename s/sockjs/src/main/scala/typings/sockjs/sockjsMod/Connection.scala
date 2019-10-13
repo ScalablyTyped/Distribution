@@ -1,7 +1,8 @@
 package typings.sockjs.sockjsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.sockjs.Anon_Address
 import typings.sockjs.sockjsStrings.close
 import typings.sockjs.sockjsStrings.data
@@ -10,7 +11,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Connection extends ReadWriteStream {
+trait Connection
+  extends ReadableStream
+     with WritableStream {
   var address: StringDictionary[Anon_Address] = js.native
   var headers: StringDictionary[String] = js.native
   var id: String = js.native

@@ -1,13 +1,15 @@
 package typings.reactDashBootstrap.libMediaMod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-bootstrap/lib/Media", JSImport.Namespace)
 @js.native
-class ^ () extends Media
+class ^ ()
+  extends Component[MediaProps, js.Object, js.Any]
 
 @JSImport("react-bootstrap/lib/Media", JSImport.Namespace)
 @js.native

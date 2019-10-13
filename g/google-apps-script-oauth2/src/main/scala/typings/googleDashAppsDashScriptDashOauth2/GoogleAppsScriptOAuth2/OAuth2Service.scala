@@ -2,6 +2,7 @@ package typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleDashAppsDashScript.GoogleAppsScript.Cache.Cache
+import typings.googleDashAppsDashScript.GoogleAppsScript.Lock.Lock
 import typings.googleDashAppsDashScript.GoogleAppsScript.Properties.Properties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -98,6 +99,13 @@ trait OAuth2Service extends js.Object {
     * If not set the client ID will be used instead.
     */
   def setIssuer(issuer: String): OAuth2Service = js.native
+  /**
+    * Sets the lock to use when checking and refreshing credentials (optional).
+    * Using a lock will ensure that only one execution will be able to access the
+    * stored credentials at a time. This can prevent race conditions that arise
+    * when two executions attempt to refresh an expired token.
+    */
+  def setLock(lock: Lock): OAuth2Service = js.native
   /**
     * Sets an additional parameter to use when constructing the authorization URL (optional).
     * See the documentation for your service provider for information on what parameter values they support.

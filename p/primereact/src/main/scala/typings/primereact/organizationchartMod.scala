@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsOrganizationchartOrganizationChartMod.OrganizationChartProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object organizationchartMod extends js.Object {
   @js.native
   class OrganizationChart ()
-    extends typings.primereact.componentsOrganizationchartOrganizationChartMod.OrganizationChart
+    extends Component[OrganizationChartProps, js.Any, js.Any]
   
 }
 

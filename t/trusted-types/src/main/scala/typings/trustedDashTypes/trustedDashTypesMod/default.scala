@@ -1,7 +1,7 @@
 package typings.trustedDashTypes.trustedDashTypesMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.trustedDashTypes.trustedDashTypesMod.Global.TrustedTypePolicyFactory
+import typings.trustedDashTypes.trustedDashTypesMod._Global_.TrustedTypePolicyFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,5 @@
 package typings.sqsDashConsumer.sqsDashConsumerMod
 
-import typings.awsDashSdk.awsDashSdkMod.SQS
-import typings.awsDashSdk.clientsSqsMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,24 +11,29 @@ trait Options extends js.Object {
   var messageAttributeNames: js.UndefOr[js.Array[String]] = js.undefined
   var queueUrl: String
   var region: js.UndefOr[String] = js.undefined
-  var sqs: js.UndefOr[SQS] = js.undefined
+  var sqs: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any
+  ] = js.undefined
   var terminateVisibilityTimeout: js.UndefOr[Boolean] = js.undefined
   var visibilityTimeout: js.UndefOr[Double] = js.undefined
   var waitTimeSeconds: js.UndefOr[Double] = js.undefined
-  def handleMessage(message: Message, done: ConsumerDone): js.Any
+  def handleMessage(
+    message: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS.Message */ js.Any,
+    done: ConsumerDone
+  ): js.Any
 }
 
 object Options {
   @scala.inline
   def apply(
-    handleMessage: (Message, ConsumerDone) => js.Any,
+    handleMessage: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS.Message */ js.Any, ConsumerDone) => js.Any,
     queueUrl: String,
     attributeNames: js.Array[String] = null,
     authenticationErrorTimeout: Int | Double = null,
     batchSize: Int | Double = null,
     messageAttributeNames: js.Array[String] = null,
     region: String = null,
-    sqs: SQS = null,
+    sqs: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any = null,
     terminateVisibilityTimeout: js.UndefOr[Boolean] = js.undefined,
     visibilityTimeout: Int | Double = null,
     waitTimeSeconds: Int | Double = null

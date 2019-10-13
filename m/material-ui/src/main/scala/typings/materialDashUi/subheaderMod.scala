@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.subheaderMod.Subheader
+import typings.materialDashUi.__MaterialUI.SubheaderProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object subheaderMod extends js.Object {
   @js.native
   class Subheader ()
-    extends typings.materialDashUi.__MaterialUI.Subheader
+    extends Component[SubheaderProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Subheader
+  class default ()
+    extends Component[SubheaderProps, js.Object, js.Any]
   
 }
 

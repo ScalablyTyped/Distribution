@@ -6,5 +6,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webpack-chain", "EntryPoint")
 @js.native
-class EntryPoint () extends TypedChainedSet[Config, String]
+class EntryPoint ()
+  extends typings.webpackDashChain.webpackDashChainMod.__Config.TypedChainedSet[Config, String] {
+  /* CompleteClass */
+  override def end(): Config = js.native
+}
 

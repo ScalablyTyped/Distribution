@@ -4,7 +4,7 @@ import typings.tstl.baseContainerListContainerMod.ListContainer
 import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator
 import typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator
-import typings.tstl.baseIteratorIMapIteratorMod.IMapIterator
+import typings.tstl.baseIteratorIMapIteratorMod.IMapIteratorBase
 import typings.tstl.baseIteratorListIteratorMod.ListIterator
 import typings.tstl.utilityEntryMod.Entry
 import typings.tstl.utilityIPairMod.IPair
@@ -39,7 +39,8 @@ object baseContainerMapElementListMod extends js.Object {
   
   @js.native
   object MapElementList extends js.Object {
-    @js.native
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
+    - Dropped {readonly [ P in keyof tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>> ]: tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/utility/Entry.Entry<Key, T>, Source, tstl.tstl/base/container/MapElementList.MapElementList.Iterator<Key, T, Unique, Source>, tstl.tstl/base/container/MapElementList.MapElementList.ReverseIterator<Key, T, Unique, Source>, tstl.tstl/utility/IPair.IPair<Key, T>>>>[P]} */ @js.native
     /**
       * @hidden
       */
@@ -58,14 +59,7 @@ object baseContainerMapElementListMod extends js.Object {
               ReverseIterator[Key, T, Unique, Source], 
               IPair[Key, T]
             ]
-         with IMapIterator[
-              Key, 
-              T, 
-              Unique, 
-              Source, 
-              Iterator[Key, T, Unique, Source], 
-              ReverseIterator[Key, T, Unique, Source]
-            ] {
+         with IMapIteratorBase[Key, T] {
       /**
         * The first, key element.
         */

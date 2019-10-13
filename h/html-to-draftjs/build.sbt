@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "html-to-draftjs"
-version := "1.4-dt-20190925Z-1e5811"
+version := "1.4-dt-20190925Z-0d30e4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-1967d7",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20191003Z-701bf2",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-d6e294",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-e54803",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-3b437f",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20191003Z-f262fe",
+  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-cc2aa7",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-965e98",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

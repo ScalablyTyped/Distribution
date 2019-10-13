@@ -1,5 +1,6 @@
 package typings.zipDashWebpackDashPlugin.zipDashWebpackDashPluginMod
 
+import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 /**
   * @param options Options for ZipPlugin.
   */
-class ^ () extends ZipPlugin {
+class ^ () extends Plugin {
   def this(options: Options) = this()
 }
 

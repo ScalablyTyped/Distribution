@@ -4,9 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.typescriptDashServices.TypeScript.ISyntaxElement because Already inherited
-- typings.typescriptDashServices.TypeScript.ITypeSyntax because Already inherited */ @JSGlobal("TypeScript.ObjectTypeSyntax")
+@JSGlobal("TypeScript.ObjectTypeSyntax")
 @js.native
 class ObjectTypeSyntax protected () extends SyntaxNode {
   def this(

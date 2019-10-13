@@ -5,5 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object loaderMod {
-  type Loader = typings.wixDashStyleDashReact.baseComponentsMod.default[LoaderProps]
+  import typings.react.reactMod.Component
+
+  type Loader = Component[LoaderProps, js.Object, js.Any]
 }

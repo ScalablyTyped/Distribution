@@ -23,9 +23,9 @@ trait Anon_About extends js.Object {
     (Pick[
       (Pick[
         HTMLProps[HTMLInputElement], 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 360 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 360 */ js.Any
       ]) with InputStyleProps, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 362 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 362 */ js.Any
     ]) with RefAttributes[_], 
     InputStyleProps, 
     Theme
@@ -33,11 +33,11 @@ trait Anon_About extends js.Object {
   var Select: (StyledComponent[
     (Pick[
       SelectHTMLAttributes[HTMLSelectElement], 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 262 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 262 */ js.Any
     ]) with InputStyleProps with RefAttributes[_], 
     (Pick[
       SelectHTMLAttributes[HTMLSelectElement], 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 262 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 262 */ js.Any
     ]) with InputStyleProps, 
     Theme
   ]) with Anon_DisplayName
@@ -45,13 +45,13 @@ trait Anon_About extends js.Object {
     (Pick[
       (Pick[
         TextareaAutosizeProps, 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 365 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 365 */ js.Any
       ]) with InputStyleProps, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 367 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 367 */ js.Any
     ]) with RefAttributes[_], 
     (Pick[
       TextareaAutosizeProps, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 365 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 365 */ js.Any
     ]) with InputStyleProps, 
     Theme
   ]) with Anon_DisplayName
@@ -66,9 +66,9 @@ object Anon_About {
       (Pick[
         (Pick[
           HTMLProps[HTMLInputElement], 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 360 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 360 */ js.Any
         ]) with InputStyleProps, 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 362 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 362 */ js.Any
       ]) with RefAttributes[_], 
       InputStyleProps, 
       Theme
@@ -76,11 +76,11 @@ object Anon_About {
     Select: (StyledComponent[
       (Pick[
         SelectHTMLAttributes[HTMLSelectElement], 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 262 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 262 */ js.Any
       ]) with InputStyleProps with RefAttributes[_], 
       (Pick[
         SelectHTMLAttributes[HTMLSelectElement], 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 262 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 262 */ js.Any
       ]) with InputStyleProps, 
       Theme
     ]) with Anon_DisplayName,
@@ -88,13 +88,13 @@ object Anon_About {
       (Pick[
         (Pick[
           TextareaAutosizeProps, 
-          /* import warning: LimitUnionLength.enterTypeRef Was union type with length 365 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 365 */ js.Any
         ]) with InputStyleProps, 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 367 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 367 */ js.Any
       ]) with RefAttributes[_], 
       (Pick[
         TextareaAutosizeProps, 
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 365 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 365 */ js.Any
       ]) with InputStyleProps, 
       Theme
     ]) with Anon_DisplayName

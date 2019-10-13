@@ -2,8 +2,8 @@ package typings.atomDashKeymap.atomDashKeymapMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.atomDashKeymap.Anon_DefaultTarget
-import typings.atomDashKeymap.atomDashKeymapMod.Global.AtomKeymap.KeymapManager
-import typings.atomDashKeymap.atomDashKeymapMod.Global.AtomKeymap.KeymapManagerStatic
+import typings.atomDashKeymap.atomDashKeymapMod._Global_.AtomKeymap.KeymapManager
+import typings.atomDashKeymap.atomDashKeymapMod._Global_.AtomKeymap.KeymapManagerStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

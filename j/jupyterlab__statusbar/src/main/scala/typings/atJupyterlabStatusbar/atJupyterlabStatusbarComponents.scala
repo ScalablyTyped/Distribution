@@ -19,7 +19,7 @@ object atJupyterlabStatusbarComponents extends atJupyterlabStatusbarProps {
   ] = typings.atJupyterlabStatusbar.atJupyterlabStatusbarMod.IconItem.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atJupyterlabStatusbar.libDeprecatedMod.IconItem.IProps with typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement]]]
   @scala.inline
-  def ProgressBar: ComponentType[typings.atJupyterlabStatusbar.libComponentsProgressBarMod.ProgressBar.IProps] = typings.atJupyterlabStatusbar.libComponentsMod.ProgressBar.asInstanceOf[typings.react.reactMod.ComponentType[typings.atJupyterlabStatusbar.libComponentsProgressBarMod.ProgressBar.IProps]]
+  def ProgressBar: ComponentType[ProgressBarProps] = typings.atJupyterlabStatusbar.libComponentsMod.ProgressBar.asInstanceOf[typings.react.reactMod.ComponentType[ProgressBarProps]]
   @scala.inline
   def TextItem: ComponentType[
     typings.atJupyterlabStatusbar.libComponentsTextMod.TextItem.IProps with HTMLAttributes[HTMLSpanElement]

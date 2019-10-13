@@ -1,14 +1,12 @@
 package typings.reactDashNativeDashAppDashIntroDashSlider
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashNativeDashAppDashIntroDashSlider.reactDashNativeDashAppDashIntroDashSliderMod.AppIntroProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNativeDashAppDashIntroDashSliderComponents extends reactDashNativeDashAppDashIntroDashSliderProps {
   @scala.inline
-  def ReactDashNativeDashAppDashIntroDashSlider: ComponentType[AppIntroProps] = js.constructorOf[typings.reactDashNativeDashAppDashIntroDashSlider.reactDashNativeDashAppDashIntroDashSliderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashAppDashIntroDashSlider.reactDashNativeDashAppDashIntroDashSliderMod.AppIntroProps]]
+  def ReactDashNativeDashAppDashIntroDashSlider: ComponentType[ReactDashNativeDashAppDashIntroDashSliderProps] = js.constructorOf[typings.reactDashNativeDashAppDashIntroDashSlider.reactDashNativeDashAppDashIntroDashSliderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashNativeDashAppDashIntroDashSliderProps]]
 }
 

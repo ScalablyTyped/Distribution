@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientTitleBase")
 @js.native
-class ASPxClientTitleBase () extends ASPxClientWebChartRequiredElement {
+class ASPxClientTitleBase () extends ASPxClientWebChartElement {
   /**
     * Gets the alignment of the title.
     */

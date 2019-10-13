@@ -20,7 +20,7 @@ object readdirSync extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def apply(path: PathLike): js.Array[String] = js.native
+  def apply(path: PathLike): js.Array[Buffer | String] = js.native
   def apply(path: PathLike, options: String): js.Array[Buffer | String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "wordpress__core-data"
-version := "2.4-dt-20191008Z-fcd507"
+version := "2.4-dt-20191008Z-4e8db0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3",
-  "org.scalablytyped" %%% "wordpress__api-fetch" % "3.2-dt-20190726Z-bf2656")
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
+  "org.scalablytyped" %%% "wordpress__api-fetch" % "3.2-dt-20190726Z-a4274b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

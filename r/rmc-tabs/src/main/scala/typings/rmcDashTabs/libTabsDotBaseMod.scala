@@ -2,9 +2,9 @@ package typings.rmcDashTabs
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.PureComponent
 import typings.react.reactMod.ReactNode
 import typings.rmcDashTabs.libModelsMod.Models.TabData
 import typings.rmcDashTabs.libPropsTypeMod.PropsType
@@ -25,7 +25,7 @@ object libTabsDotBaseMod extends js.Object {
   
   @js.native
   abstract class Tabs[P /* <: PropsType */, S /* <: StateType */] protected ()
-    extends PureComponent[P, S, js.Any] {
+    extends Component[P, S, js.Any] {
     def this(props: P) = this()
     var instanceId: Double = js.native
     /** compatible for different between react and preact in `setState`. */

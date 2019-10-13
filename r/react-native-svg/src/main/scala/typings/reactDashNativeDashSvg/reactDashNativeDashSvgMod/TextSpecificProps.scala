@@ -15,7 +15,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextSpecificProps
-  extends CommonPathProps
+  extends TransformProps
+     with FillProps
+     with StrokeProps
+     with ClipProps
+     with VectorEffectProps
+     with ResponderProps
+     with TouchableProps
+     with DefinitionProps
+     with CommonMaskProps
      with FontProps {
   var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.undefined
   var baselineShift: js.UndefOr[BaselineShift] = js.undefined

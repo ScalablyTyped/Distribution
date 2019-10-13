@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "JitEvaluator")
 @js.native
 class JitEvaluator ()
-  extends typings.atAngularCompiler.publicUnderscoreApiMod.JitEvaluator
+  extends typings.atAngularCompiler.srcOutputOutputUnderscoreJitMod.JitEvaluator
 

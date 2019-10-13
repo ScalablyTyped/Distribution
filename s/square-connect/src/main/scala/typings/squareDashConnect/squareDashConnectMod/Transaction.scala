@@ -1,6 +1,13 @@
 package typings.squareDashConnect.squareDashConnectMod
 
-import typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum
+import typings.squareDashConnect.squareDashConnectStrings.APPOINTMENTS
+import typings.squareDashConnect.squareDashConnectStrings.BILLING
+import typings.squareDashConnect.squareDashConnectStrings.EXTERNAL_API
+import typings.squareDashConnect.squareDashConnectStrings.INVOICES
+import typings.squareDashConnect.squareDashConnectStrings.ONLINE_STORE
+import typings.squareDashConnect.squareDashConnectStrings.OTHER
+import typings.squareDashConnect.squareDashConnectStrings.PAYROLL
+import typings.squareDashConnect.squareDashConnectStrings.REGISTER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +42,9 @@ class Transaction () extends js.Object {
   /**
     * The Square product that processed the transaction. See [TransactionProduct](#type-transactionproduct) for possible values.
     */
-  var product: js.UndefOr[ProductEnum] = js.native
+  var product: js.UndefOr[
+    REGISTER | EXTERNAL_API | BILLING | APPOINTMENTS | INVOICES | ONLINE_STORE | PAYROLL | OTHER
+  ] = js.native
   /**
     * If the transaction was created with the [Charge](#endpoint-transactions-charge) endpoint, this value is the same as
     * the value provided for the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
@@ -53,51 +62,5 @@ class Transaction () extends js.Object {
     * The tenders used to pay in the transaction.
     */
   var tenders: js.UndefOr[js.Array[Tender]] = js.native
-}
-
-@JSImport("square-connect", "Transaction")
-@js.native
-object Transaction extends js.Object {
-  @js.native
-  sealed trait ProductEnum extends js.Object
-  
-  @js.native
-  object ProductEnum extends js.Object {
-    @js.native
-    sealed trait APPOINTMENTS extends ProductEnum
-    
-    @js.native
-    sealed trait BILLING extends ProductEnum
-    
-    @js.native
-    sealed trait EXTERNAL_API extends ProductEnum
-    
-    @js.native
-    sealed trait INVOICES extends ProductEnum
-    
-    @js.native
-    sealed trait ONLINE_STORE extends ProductEnum
-    
-    @js.native
-    sealed trait OTHER extends ProductEnum
-    
-    @js.native
-    sealed trait PAYROLL extends ProductEnum
-    
-    @js.native
-    sealed trait REGISTER extends ProductEnum
-    
-    /* "APPOINTMENTS" */ val APPOINTMENTS: typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum.APPOINTMENTS with String = js.native
-    /* "BILLING" */ val BILLING: typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum.BILLING with String = js.native
-    /* "EXTERNAL_API" */ val EXTERNAL_API: typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum.EXTERNAL_API with String = js.native
-    /* "INVOICES" */ val INVOICES: typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum.INVOICES with String = js.native
-    /* "ONLINE_STORE" */ val ONLINE_STORE: typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum.ONLINE_STORE with String = js.native
-    /* "OTHER" */ val OTHER: typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum.OTHER with String = js.native
-    /* "PAYROLL" */ val PAYROLL: typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum.PAYROLL with String = js.native
-    /* "REGISTER" */ val REGISTER: typings.squareDashConnect.squareDashConnectMod.Transaction.ProductEnum.REGISTER with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[ProductEnum with String] = js.native
-  }
-  
 }
 

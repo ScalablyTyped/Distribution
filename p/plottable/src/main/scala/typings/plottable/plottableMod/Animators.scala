@@ -18,7 +18,7 @@ object Animators extends js.Object {
   
   @js.native
   class Null ()
-    extends typings.plottable.buildSrcAnimatorsMod.Null
+    extends typings.plottable.buildSrcAnimatorsNullAnimatorMod.Null
   
   @js.native
   object EaseName extends js.Object {

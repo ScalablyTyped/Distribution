@@ -1,12 +1,12 @@
 package typings.ngDashFileDashUpload.ngDashFileDashUploadMod.angularMod.angularFileUpload
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.angularMod.Global.Function
 import typings.angular.angularMod.IHttpRequestConfigHeaders
 import typings.angular.angularMod.IHttpRequestTransformer
 import typings.angular.angularMod.IHttpResponseTransformer
 import typings.angular.angularMod.IPromise
 import typings.angular.angularMod.IRequestConfig
+import typings.angular.angularMod._Global_.Function
 import typings.std.EventListenerOrEventListenerObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`

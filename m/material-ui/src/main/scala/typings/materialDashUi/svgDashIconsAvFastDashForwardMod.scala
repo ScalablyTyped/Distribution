@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsAvFastDashForwardMod.AvFastForward
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsAvFastDashForwardMod extends js.Object {
   @js.native
-  class AvFastForward () extends SvgIcon
+  class AvFastForward ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends AvFastForward
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

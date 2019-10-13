@@ -1,7 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
-import typings.materialDashUi.svgDashIconsDeviceSignalDashCellularDash3DashBarMod.DeviceSignalCellular3Bar
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object svgDashIconsDeviceSignalDashCellularDash3DashBarMod extends js.Object {
   @js.native
-  class DeviceSignalCellular3Bar () extends SvgIcon
+  class DeviceSignalCellular3Bar ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
   @js.native
-  class default () extends DeviceSignalCellular3Bar
+  class default ()
+    extends Component[SvgIconProps, js.Object, js.Any]
   
 }
 

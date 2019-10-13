@@ -1,6 +1,7 @@
 package typings.typedoc
 
-import typings.typedoc.distLibConverterComponentsMod.ConverterComponent
+import typings.typedoc.distLibConverterConverterMod.Converter
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibConverterPluginsDecoratorPluginMod extends js.Object {
   @js.native
-  class DecoratorPlugin () extends ConverterComponent {
+  class DecoratorPlugin () extends AbstractComponent[Converter] {
     var extractArguments: js.Any = js.native
     var onBegin: js.Any = js.native
     var onBeginResolve: js.Any = js.native

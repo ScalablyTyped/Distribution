@@ -57,7 +57,7 @@ class InventoryTransfer () extends js.Object {
     * The [InventoryState](#type-inventorystate) for the quantity of items being transfered.
     * See [InventoryState](#type-inventorystate) for possible values.
     */
-  var state: js.UndefOr[InventoryStateEnum] = js.native
+  var state: js.UndefOr[InventoryStateType] = js.native
   /**
     * The Square ID of the [Location](#type-location) where the related quantity of items were tracked after the transfer.
     */

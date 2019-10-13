@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/core/user-agents/message-user-agent-server", JSImport.Namespace)
 @js.native
 object libCoreUserDashAgentsMessageDashUserDashAgentDashServerMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.sipDotJs.libCoreMessagesMethodsMessageMod.IncomingMessageRequest because Already inherited */ @js.native
+  @js.native
   class MessageUserAgentServer protected () extends UserAgentServer {
     def this(core: UserAgentCore, message: IncomingRequestMessage) = this()
     def this(core: UserAgentCore, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()

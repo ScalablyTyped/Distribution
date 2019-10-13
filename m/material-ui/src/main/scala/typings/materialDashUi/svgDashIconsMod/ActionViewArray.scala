@@ -1,11 +1,13 @@
 package typings.materialDashUi.svgDashIconsMod
 
-import typings.materialDashUi.__MaterialUI.SvgIcon
+import typings.materialDashUi.__MaterialUI.SvgIconProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("material-ui/svg-icons", "ActionViewArray")
 @js.native
-class ActionViewArray () extends SvgIcon
+class ActionViewArray ()
+  extends Component[SvgIconProps, js.Object, js.Any]
 

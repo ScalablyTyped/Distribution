@@ -5,14 +5,21 @@ import typings.history.historyMod.History
 import typings.history.historyMod.Location
 import typings.history.historyMod.LocationState
 import typings.history.historyMod.Pathname
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Context
+import typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps
 import typings.reactDashRouter.reactDashRouterMod.Omit
+import typings.reactDashRouter.reactDashRouterMod.PromptProps
+import typings.reactDashRouter.reactDashRouterMod.RedirectProps
 import typings.reactDashRouter.reactDashRouterMod.RouteComponentProps
 import typings.reactDashRouter.reactDashRouterMod.RouteProps
+import typings.reactDashRouter.reactDashRouterMod.RouterProps
 import typings.reactDashRouter.reactDashRouterMod.StaticContext
+import typings.reactDashRouter.reactDashRouterMod.StaticRouterProps
+import typings.reactDashRouter.reactDashRouterMod.SwitchProps
 import typings.reactDashRouter.reactDashRouterMod.WithRouterProps
 import typings.reactDashRouter.reactDashRouterMod.WithRouterStatics
 import typings.reactDashRouter.reactDashRouterMod.`match`
@@ -49,31 +56,31 @@ object reduxDashRouterMod extends js.Object {
   object ReduxRouter extends js.Object {
     @js.native
     class MemoryRouter ()
-      extends typings.reduxDashRouter.libReduxRouterMod.default.MemoryRouter
+      extends Component[MemoryRouterProps, js.Any, js.Any]
     
     @js.native
     class Prompt ()
-      extends typings.reduxDashRouter.libReduxRouterMod.default.Prompt
+      extends Component[PromptProps, js.Any, js.Any]
     
     @js.native
     class Redirect ()
-      extends typings.reduxDashRouter.libReduxRouterMod.default.Redirect
+      extends Component[RedirectProps, js.Any, js.Any]
     
     @js.native
     class Route[T /* <: RouteProps */] ()
-      extends typings.reduxDashRouter.libReduxRouterMod.default.Route[T]
+      extends Component[T, js.Any, js.Any]
     
     @js.native
     class Router ()
-      extends typings.reduxDashRouter.libReduxRouterMod.default.Router
+      extends Component[RouterProps, js.Any, js.Any]
     
     @js.native
     class StaticRouter ()
-      extends typings.reduxDashRouter.libReduxRouterMod.default.StaticRouter
+      extends Component[StaticRouterProps, js.Any, js.Any]
     
     @js.native
     class Switch ()
-      extends typings.reduxDashRouter.libReduxRouterMod.default.Switch
+      extends Component[SwitchProps, js.Any, js.Any]
     
     val __RouterContext: Context[RouteComponentProps[js.Object, StaticContext, LocationState]] = js.native
     def generatePath(pattern: String): String = js.native

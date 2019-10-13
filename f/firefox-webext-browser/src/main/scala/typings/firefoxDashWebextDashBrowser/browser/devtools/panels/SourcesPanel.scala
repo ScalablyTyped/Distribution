@@ -12,7 +12,7 @@ trait SourcesPanel extends js.Object {
     * @param title Text that is displayed in sidebar caption.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var createSidebarPane: js.UndefOr[js.Function1[/* title */ String, js.Promise[js.UndefOr[ExtensionSidebarPane]]]] = js.undefined
+  var createSidebarPane: js.UndefOr[js.Function1[/* title */ String, js.Promise[ExtensionSidebarPane]]] = js.undefined
   /**
     * Fired when an object is selected in the panel.
     * @deprecated Unsupported on Firefox at this time.
@@ -24,7 +24,7 @@ object SourcesPanel {
   @scala.inline
   def apply(
     onSelectionChanged: WebExtEvent[js.Function0[Unit]],
-    createSidebarPane: /* title */ String => js.Promise[js.UndefOr[ExtensionSidebarPane]] = null
+    createSidebarPane: /* title */ String => js.Promise[ExtensionSidebarPane] = null
   ): SourcesPanel = {
     val __obj = js.Dynamic.literal(onSelectionChanged = onSelectionChanged)
     if (createSidebarPane != null) __obj.updateDynamic("createSidebarPane")(js.Any.fromFunction1(createSidebarPane))

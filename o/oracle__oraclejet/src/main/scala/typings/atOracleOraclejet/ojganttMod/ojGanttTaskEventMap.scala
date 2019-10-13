@@ -15,12 +15,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.start
 import typings.atOracleOraclejet.atOracleOraclejetStrings.summary
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
+import typings.std.ElementEventMap
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
-import typings.std.HTMLElementEventMap
+import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -34,7 +36,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ojGanttTaskEventMap extends HTMLElementEventMap {
+trait ojGanttTaskEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   var baselineChanged: JetElementCustomEvent[Anon_BorderRadiusEnd]
   var borderRadiusChanged: JetElementCustomEvent[String]
   var endChanged: JetElementCustomEvent[String]

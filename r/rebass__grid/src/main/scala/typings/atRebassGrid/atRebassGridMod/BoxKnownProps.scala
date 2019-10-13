@@ -22,23 +22,27 @@ import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactNode
 import typings.styledDashSystem.styledDashSystemMod.AlignSelfProps
-import typings.styledDashSystem.styledDashSystemMod.ColorProps
+import typings.styledDashSystem.styledDashSystemMod.BackgroundColorProps
 import typings.styledDashSystem.styledDashSystemMod.FontSizeProps
+import typings.styledDashSystem.styledDashSystemMod.OpacityProps
 import typings.styledDashSystem.styledDashSystemMod.OrderProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
 import typings.styledDashSystem.styledDashSystemMod.SpaceProps
 import typings.styledDashSystem.styledDashSystemMod.TLengthStyledSystem
+import typings.styledDashSystem.styledDashSystemMod.TextColorProps
 import typings.styledDashSystem.styledDashSystemMod.WidthProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BoxKnownProps
-  extends ColorProps
-     with BaseProps
+  extends BaseProps
      with SpaceProps[TLengthStyledSystem]
      with WidthProps[TLengthStyledSystem]
      with FontSizeProps[TLengthStyledSystem]
+     with TextColorProps
+     with BackgroundColorProps[TLengthStyledSystem]
+     with OpacityProps
      with typings.styledDashSystem.styledDashSystemMod.FlexProps[TLengthStyledSystem]
      with OrderProps
      with AlignSelfProps

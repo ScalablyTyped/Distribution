@@ -110,6 +110,30 @@ object Structs extends js.Object {
     def this(width: Double, height: Double, aspectMode: integer, parent: js.Any) = this()
   }
   
+  @js.native
+  object Events extends js.Object {
+    /**
+      * The Process Queue Add Event.
+      * 
+      * This event is dispatched by a Process Queue when a new item is successfully moved to its active list.
+      * 
+      * You will most commonly see this used by a Scene's Update List when a new Game Object has been added.
+      * 
+      * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('add', listener)`.
+      */
+    val PROCESS_QUEUE_ADD: js.Any = js.native
+    /**
+      * The Process Queue Remove Event.
+      * 
+      * This event is dispatched by a Process Queue when a new item is successfully removed from its active list.
+      * 
+      * You will most commonly see this used by a Scene's Update List when a Game Object has been removed.
+      * 
+      * In that instance, listen to this event from within a Scene using: `this.sys.updateList.on('remove', listener)`.
+      */
+    val PROCESS_QUEUE_REMOVE: js.Any = js.native
+  }
+  
   /* static members */
   @js.native
   object Size extends js.Object {

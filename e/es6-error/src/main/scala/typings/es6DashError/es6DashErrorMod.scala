@@ -1,6 +1,5 @@
 package typings.es6DashError
 
-import typings.es6DashError.es6DashErrorMod.ExtendableError
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object es6DashErrorMod extends js.Object {
   @js.native
-  class default () extends ExtendableError {
+  class default () extends Error {
     /* CompleteClass */
     override var message: String = js.native
     /* CompleteClass */

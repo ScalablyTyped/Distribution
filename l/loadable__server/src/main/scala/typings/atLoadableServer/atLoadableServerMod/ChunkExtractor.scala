@@ -1,8 +1,8 @@
 package typings.atLoadableServer.atLoadableServerMod
 
 import typings.atLoadableServer.Anon_Default
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

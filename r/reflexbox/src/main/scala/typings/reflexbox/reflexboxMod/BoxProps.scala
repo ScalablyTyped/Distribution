@@ -42,23 +42,81 @@ import typings.csstype.csstypeMod.TextAlignProperty
 import typings.csstype.csstypeMod.VerticalAlignProperty
 import typings.csstype.csstypeMod.WidthProperty
 import typings.react.reactMod.ElementType
-import typings.styledDashSystem.styledDashSystemMod.ColorProps
-import typings.styledDashSystem.styledDashSystemMod.FlexboxProps
-import typings.styledDashSystem.styledDashSystemMod.LayoutProps
+import typings.styledDashSystem.styledDashSystemMod.AlignContentProps
+import typings.styledDashSystem.styledDashSystemMod.AlignItemsProps
+import typings.styledDashSystem.styledDashSystemMod.AlignSelfProps
+import typings.styledDashSystem.styledDashSystemMod.BackgroundColorProps
+import typings.styledDashSystem.styledDashSystemMod.DisplayProps
+import typings.styledDashSystem.styledDashSystemMod.FlexBasisProps
+import typings.styledDashSystem.styledDashSystemMod.FlexDirectionProps
+import typings.styledDashSystem.styledDashSystemMod.FlexGrowProps
+import typings.styledDashSystem.styledDashSystemMod.FlexProps
+import typings.styledDashSystem.styledDashSystemMod.FlexShrinkProps
+import typings.styledDashSystem.styledDashSystemMod.FlexWrapProps
+import typings.styledDashSystem.styledDashSystemMod.FontFamilyProps
+import typings.styledDashSystem.styledDashSystemMod.FontSizeProps
+import typings.styledDashSystem.styledDashSystemMod.FontStyleProps
+import typings.styledDashSystem.styledDashSystemMod.FontWeightProps
+import typings.styledDashSystem.styledDashSystemMod.HeightProps
+import typings.styledDashSystem.styledDashSystemMod.JustifyContentProps
+import typings.styledDashSystem.styledDashSystemMod.JustifyItemsProps
+import typings.styledDashSystem.styledDashSystemMod.JustifySelfProps
+import typings.styledDashSystem.styledDashSystemMod.LetterSpacingProps
+import typings.styledDashSystem.styledDashSystemMod.LineHeightProps
+import typings.styledDashSystem.styledDashSystemMod.MaxHeightProps
+import typings.styledDashSystem.styledDashSystemMod.MaxWidthProps
+import typings.styledDashSystem.styledDashSystemMod.MinHeightProps
+import typings.styledDashSystem.styledDashSystemMod.MinWidthProps
+import typings.styledDashSystem.styledDashSystemMod.OpacityProps
+import typings.styledDashSystem.styledDashSystemMod.OrderProps
+import typings.styledDashSystem.styledDashSystemMod.OverflowProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
+import typings.styledDashSystem.styledDashSystemMod.SizeProps
 import typings.styledDashSystem.styledDashSystemMod.SpaceProps
 import typings.styledDashSystem.styledDashSystemMod.TLengthStyledSystem
-import typings.styledDashSystem.styledDashSystemMod.TypographyProps
+import typings.styledDashSystem.styledDashSystemMod.TextAlignProps
+import typings.styledDashSystem.styledDashSystemMod.TextColorProps
+import typings.styledDashSystem.styledDashSystemMod.VerticalAlignProps
+import typings.styledDashSystem.styledDashSystemMod.WidthProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BoxProps
-  extends FlexboxProps
-     with SpaceProps[TLengthStyledSystem]
-     with LayoutProps
-     with TypographyProps
-     with ColorProps {
+  extends SpaceProps[TLengthStyledSystem]
+     with WidthProps[TLengthStyledSystem]
+     with HeightProps[TLengthStyledSystem]
+     with MinWidthProps[TLengthStyledSystem]
+     with MinHeightProps[TLengthStyledSystem]
+     with MaxWidthProps[TLengthStyledSystem]
+     with MaxHeightProps[TLengthStyledSystem]
+     with DisplayProps
+     with VerticalAlignProps[TLengthStyledSystem]
+     with SizeProps[TLengthStyledSystem]
+     with OverflowProps
+     with FontFamilyProps
+     with FontSizeProps[TLengthStyledSystem]
+     with FontWeightProps
+     with LineHeightProps[TLengthStyledSystem]
+     with LetterSpacingProps[TLengthStyledSystem]
+     with FontStyleProps
+     with TextAlignProps
+     with TextColorProps
+     with BackgroundColorProps[TLengthStyledSystem]
+     with OpacityProps
+     with AlignItemsProps
+     with AlignContentProps
+     with JustifyItemsProps
+     with JustifyContentProps
+     with FlexWrapProps
+     with FlexDirectionProps
+     with FlexProps[TLengthStyledSystem]
+     with FlexGrowProps
+     with FlexShrinkProps
+     with FlexBasisProps[TLengthStyledSystem]
+     with JustifySelfProps
+     with AlignSelfProps
+     with OrderProps {
   var as: js.UndefOr[ElementType[_]] = js.undefined
 }
 

@@ -8,8 +8,8 @@ import typings.atBlueprintjsTable.libEsmCommonGridMod.Grid
 import typings.atBlueprintjsTable.libEsmCommonGridMod.ICellMapper
 import typings.atBlueprintjsTable.libEsmLocatorMod.Locator
 import typings.atBlueprintjsTable.libEsmRegionsMod.IRegion
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ValidationMap
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

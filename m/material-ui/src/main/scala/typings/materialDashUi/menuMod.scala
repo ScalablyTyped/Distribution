@@ -1,6 +1,8 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.menuMod.Menu
+import typings.materialDashUi.__MaterialUI.Menus.MenuItemProps
+import typings.materialDashUi.__MaterialUI.Menus.MenuProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +12,15 @@ import scala.scalajs.js.annotation._
 object menuMod extends js.Object {
   @js.native
   class Menu ()
-    extends typings.materialDashUi.__MaterialUI.Menus.Menu
+    extends Component[MenuProps, js.Object, js.Any]
   
   @js.native
   class MenuItem ()
-    extends typings.materialDashUi.__MaterialUI.Menus.MenuItem
+    extends Component[MenuItemProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Menu
+  class default ()
+    extends Component[MenuProps, js.Object, js.Any]
   
 }
 

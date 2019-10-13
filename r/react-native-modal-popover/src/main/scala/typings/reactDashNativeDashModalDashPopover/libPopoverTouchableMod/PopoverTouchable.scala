@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashModalDashPopover.libPopoverTouchableMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashNativeDashModalDashPopover.Anon_ArgsOnPopoverDisplayed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-modal-popover/lib/PopoverTouchable", "PopoverTouchable")
 @js.native
 class PopoverTouchable protected ()
-  extends PureComponent[Props, State, js.Any] {
+  extends Component[Props, State, js.Any] {
   def this(props: Props) = this()
   var onClosePopover: js.Any = js.native
   var onOrientationChange: js.Any = js.native

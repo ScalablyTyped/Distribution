@@ -7,19 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactDashBreadcrumbsDashDynamicComponents extends reactDashBreadcrumbsDashDynamicProps {
   @scala.inline
-  def Breadcrumbs: ComponentType[
-    typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps
-  ] = js.constructorOf[typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.Breadcrumbs].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProps]]
+  def Breadcrumbs: ComponentType[BreadcrumbsProps] = js.constructorOf[typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.Breadcrumbs].asInstanceOf[typings.react.reactMod.ComponentType[BreadcrumbsProps]]
   @scala.inline
-  def BreadcrumbsItem: ComponentType[
-    typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps
-  ] = js.constructorOf[typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItem].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItemProps]]
+  def BreadcrumbsItem: ComponentType[BreadcrumbsItemProps] = js.constructorOf[typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsItem].asInstanceOf[typings.react.reactMod.ComponentType[BreadcrumbsItemProps]]
   @scala.inline
-  def BreadcrumbsProvider: ComponentType[
-    typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps
-  ] = js.constructorOf[typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProvider].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProviderProps]]
+  def BreadcrumbsProvider: ComponentType[BreadcrumbsProviderProps] = js.constructorOf[typings.reactDashBreadcrumbsDashDynamic.reactDashBreadcrumbsDashDynamicMod.BreadcrumbsProvider].asInstanceOf[typings.react.reactMod.ComponentType[BreadcrumbsProviderProps]]
 }
 

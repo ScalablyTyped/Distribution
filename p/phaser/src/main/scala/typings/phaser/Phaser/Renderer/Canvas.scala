@@ -32,6 +32,10 @@ object Canvas extends js.Object {
       */
     def this(game: Game) = this()
     /**
+      * Should the Canvas use Image Smoothing or not when drawing Sprites?
+      */
+    var antialias: Boolean = js.native
+    /**
       * The blend modes supported by the Canvas Renderer.
       * 
       * This object maps the {@link Phaser.BlendModes} to canvas compositing operations.
@@ -45,10 +49,6 @@ object Canvas extends js.Object {
       * The canvas context currently used by the CanvasRenderer for all rendering operations.
       */
     var currentContext: CanvasRenderingContext2D = js.native
-    /**
-      * The scale mode currently in use by the Canvas Renderer.
-      */
-    var currentScaleMode: Double = js.native
     /**
       * The total number of Game Objects which were rendered in a frame.
       */
@@ -69,10 +69,6 @@ object Canvas extends js.Object {
       * The height of the canvas being rendered to.
       */
     var height: integer = js.native
-    /**
-      * The scale mode which should be used by the CanvasRenderer.
-      */
-    var scaleMode: integer = js.native
     /**
       * Details about the currently scheduled snapshot.
       * 
@@ -274,6 +270,7 @@ object Canvas extends js.Object {
     * 4. Sets the alpha value of the context to be that used by the Game Object combined with the Camera.
     * 5. Saves the context state.
     * 6. Sets the final matrix values into the context via setTransform.
+    * 7. If Renderer.antialias, or the frame.source.scaleMode is set, then imageSmoothingEnabled is set.
     * 
     * This function is only meant to be used internally. Most of the Canvas Renderer classes use it.
     * @param renderer A reference to the current active Canvas renderer.

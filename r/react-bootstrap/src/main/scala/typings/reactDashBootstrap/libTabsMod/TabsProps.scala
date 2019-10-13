@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libTabsMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapMod.SelectCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TabsProps extends HTMLProps[Tabs] {
+trait TabsProps
+  extends AllHTMLAttributes[Tabs]
+     with ClassAttributes[Tabs] {
   var activeKey: js.UndefOr[js.Any] = js.undefined
   var animation: js.UndefOr[Boolean] = js.undefined
   var bsStyle: js.UndefOr[String] = js.undefined
@@ -26,7 +29,8 @@ trait TabsProps extends HTMLProps[Tabs] {
 object TabsProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Tabs] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Tabs] = null,
+    ClassAttributes: ClassAttributes[Tabs] = null,
     activeKey: js.Any = null,
     animation: js.UndefOr[Boolean] = js.undefined,
     bsStyle: String = null,
@@ -40,7 +44,8 @@ object TabsProps {
     unmountOnExit: js.UndefOr[Boolean] = js.undefined
   ): TabsProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey)
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)

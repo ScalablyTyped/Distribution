@@ -19,7 +19,7 @@ object eval extends js.Object {
     * @param expression An expression to evaluate.
     * @param [options] The options parameter can contain one or more options.
     */
-  def apply(expression: String): js.Promise[js.UndefOr[js.Object]] = js.native
-  def apply(expression: String, options: Anon_ContextSecurityOrigin): js.Promise[js.UndefOr[js.Object]] = js.native
+  def apply(expression: String): js.Promise[js.Object] = js.native
+  def apply(expression: String, options: Anon_ContextSecurityOrigin): js.Promise[js.Object] = js.native
 }
 

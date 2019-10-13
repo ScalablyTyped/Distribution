@@ -4,6 +4,8 @@ import typings.atMaterialDashUiLab.ratingRatingMod.RatingClassKey
 import typings.atMaterialDashUiLab.skeletonSkeletonMod.SkeletonClassKey
 import typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
 import typings.atMaterialDashUiLab.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
+import typings.atMaterialDashUiLab.speedDialSpeedDialMod.CloseReason
+import typings.atMaterialDashUiLab.speedDialSpeedDialMod.OpenReason
 import typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialClassKey
 import typings.atMaterialDashUiLab.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupClassKey
 import typings.atMaterialDashUiLab.toggleButtonToggleButtonMod.ToggleButtonClassKey
@@ -36,6 +38,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait assertive extends js.Object
+  
+  @js.native
+  sealed trait blur extends CloseReason
   
   @js.native
   sealed trait both extends js.Object
@@ -97,6 +102,9 @@ object atMaterialDashUiLabStrings {
   sealed trait down extends js.Object
   
   @js.native
+  sealed trait escapeKeyDown extends CloseReason
+  
+  @js.native
   sealed trait execute extends js.Object
   
   @js.native
@@ -112,6 +120,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait fabClosed extends SpeedDialActionClassKey
+  
+  @js.native
+  sealed trait focus extends OpenReason
   
   @js.native
   sealed trait focusVisible extends RatingClassKey
@@ -207,6 +218,12 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait mixed extends js.Object
+  
+  @js.native
+  sealed trait mouseEnter extends OpenReason
+  
+  @js.native
+  sealed trait mouseLeave extends CloseReason
   
   @js.native
   sealed trait move extends js.Object
@@ -316,6 +333,11 @@ object atMaterialDashUiLabStrings {
   sealed trait time extends js.Object
   
   @js.native
+  sealed trait toggle
+    extends CloseReason
+       with OpenReason
+  
+  @js.native
   sealed trait tooltipPlacementLeft extends SpeedDialActionClassKey
   
   @js.native
@@ -356,6 +378,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
+  def blur: blur = "blur".asInstanceOf[blur]
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
@@ -394,6 +418,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
+  def escapeKeyDown: escapeKeyDown = "escapeKeyDown".asInstanceOf[escapeKeyDown]
+  @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
@@ -403,6 +429,8 @@ object atMaterialDashUiLabStrings {
   def fab: fab = "fab".asInstanceOf[fab]
   @scala.inline
   def fabClosed: fabClosed = "fabClosed".asInstanceOf[fabClosed]
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def focusVisible: focusVisible = "focusVisible".asInstanceOf[focusVisible]
   @scala.inline
@@ -463,6 +491,10 @@ object atMaterialDashUiLabStrings {
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
+  @scala.inline
+  def mouseEnter: mouseEnter = "mouseEnter".asInstanceOf[mouseEnter]
+  @scala.inline
+  def mouseLeave: mouseLeave = "mouseLeave".asInstanceOf[mouseLeave]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   @scala.inline
@@ -527,6 +559,8 @@ object atMaterialDashUiLabStrings {
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
+  @scala.inline
+  def toggle: toggle = "toggle".asInstanceOf[toggle]
   @scala.inline
   def tooltipPlacementLeft: tooltipPlacementLeft = "tooltipPlacementLeft".asInstanceOf[tooltipPlacementLeft]
   @scala.inline

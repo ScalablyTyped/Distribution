@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object dashPrivateDefaultDashResolverMod extends js.Object {
   @js.native
   trait DefaultResolver
-    extends typings.atEmberEngine.dashPrivateResolverMod.default {
+    extends typings.atEmberObject.atEmberObjectMod.default {
     /**
       * This will be set to the Application instance when it is
       * created.

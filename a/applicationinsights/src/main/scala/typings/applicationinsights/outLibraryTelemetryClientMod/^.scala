@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 @js.native
 /**
   * Constructs a new client of the client
-  * @param iKey the instrumentation key to use (read from environment variable if not specified)
+  * @param setupString the Connection String or Instrumentation Key to use (read from environment variable if not specified)
   */
 class ^ () extends TelemetryClient {
-  def this(iKey: String) = this()
+  def this(setupString: String) = this()
 }
 

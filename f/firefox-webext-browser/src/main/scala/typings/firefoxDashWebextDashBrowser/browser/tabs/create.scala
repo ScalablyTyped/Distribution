@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object create extends js.Object {
   /** Creates a new tab. */
-  def apply(createProperties: Anon_Active): js.Promise[js.UndefOr[Tab]] = js.native
+  def apply(createProperties: Anon_Active): js.Promise[Tab] = js.native
 }
 

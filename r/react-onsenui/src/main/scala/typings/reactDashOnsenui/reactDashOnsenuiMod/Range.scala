@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_DisabledEModifierOnChange
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringonChan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Range")
 @js.native
 class Range ()
-  extends Component[Anon_DisabledEModifierOnChange, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringonChan, js.Any, js.Any]
 

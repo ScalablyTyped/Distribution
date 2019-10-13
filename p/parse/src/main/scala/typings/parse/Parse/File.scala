@@ -1,5 +1,6 @@
 package typings.parse.Parse
 
+import typings.parse.Parse.Schema._TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +36,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.File")
 @js.native
-class File protected () extends js.Object {
+class File protected () extends _TYPE {
   def this(name: String, data: js.Any) = this()
   def this(name: String, data: js.Any, `type`: String) = this()
   def name(): String = js.native

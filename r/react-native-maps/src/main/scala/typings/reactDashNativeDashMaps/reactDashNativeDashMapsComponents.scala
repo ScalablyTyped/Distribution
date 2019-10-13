@@ -1,49 +1,38 @@
 package typings.reactDashNativeDashMaps
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapCalloutProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapCalloutSubviewProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapCircleProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapLocalTileProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapOverlayProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapPolygonProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapPolylineProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapUrlTileProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapViewProps
-import typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapWMSTileProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNativeDashMapsComponents extends reactDashNativeDashMapsProps {
   @scala.inline
-  def Callout: ComponentType[MapCalloutProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Callout].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapCalloutProps]]
+  def Callout: ComponentType[CalloutProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Callout].asInstanceOf[typings.react.reactMod.ComponentType[CalloutProps]]
   @scala.inline
-  def CalloutSubview: ComponentType[MapCalloutSubviewProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.CalloutSubview].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapCalloutSubviewProps]]
+  def CalloutSubview: ComponentType[CalloutSubviewProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.CalloutSubview].asInstanceOf[typings.react.reactMod.ComponentType[CalloutSubviewProps]]
   @scala.inline
-  def Circle: ComponentType[MapCircleProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Circle].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapCircleProps]]
+  def Circle: ComponentType[CircleProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Circle].asInstanceOf[typings.react.reactMod.ComponentType[CircleProps]]
   @scala.inline
-  def LocalTile: ComponentType[MapLocalTileProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.LocalTile].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapLocalTileProps]]
+  def LocalTile: ComponentType[LocalTileProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.LocalTile].asInstanceOf[typings.react.reactMod.ComponentType[LocalTileProps]]
   @scala.inline
-  def MapViewAnimated: ComponentType[MapViewProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapViewAnimated].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapViewProps]]
+  def MapViewAnimated: ComponentType[MapViewAnimatedProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapViewAnimated].asInstanceOf[typings.react.reactMod.ComponentType[MapViewAnimatedProps]]
   @scala.inline
-  def Marker: ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MarkerProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Marker].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MarkerProps]]
+  def Marker: ComponentType[MarkerProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Marker].asInstanceOf[typings.react.reactMod.ComponentType[MarkerProps]]
   @scala.inline
-  def MarkerAnimated: ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MarkerProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MarkerAnimated].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MarkerProps]]
+  def MarkerAnimated: ComponentType[MarkerAnimatedProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MarkerAnimated].asInstanceOf[typings.react.reactMod.ComponentType[MarkerAnimatedProps]]
   @scala.inline
-  def Overlay: ComponentType[MapOverlayProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Overlay].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapOverlayProps]]
+  def Overlay: ComponentType[OverlayProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Overlay].asInstanceOf[typings.react.reactMod.ComponentType[OverlayProps]]
   @scala.inline
-  def OverlayAnimated: ComponentType[MapOverlayProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.OverlayAnimated].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapOverlayProps]]
+  def OverlayAnimated: ComponentType[OverlayAnimatedProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.OverlayAnimated].asInstanceOf[typings.react.reactMod.ComponentType[OverlayAnimatedProps]]
   @scala.inline
-  def Polygon: ComponentType[MapPolygonProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Polygon].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapPolygonProps]]
+  def Polygon: ComponentType[PolygonProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Polygon].asInstanceOf[typings.react.reactMod.ComponentType[PolygonProps]]
   @scala.inline
-  def Polyline: ComponentType[MapPolylineProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Polyline].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapPolylineProps]]
+  def Polyline: ComponentType[PolylineProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.Polyline].asInstanceOf[typings.react.reactMod.ComponentType[PolylineProps]]
   @scala.inline
-  def ReactDashNativeDashMaps: ComponentType[MapViewProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapViewProps]]
+  def ReactDashNativeDashMaps: ComponentType[ReactDashNativeDashMapsProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashNativeDashMapsProps]]
   @scala.inline
-  def UrlTile: ComponentType[MapUrlTileProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.UrlTile].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapUrlTileProps]]
+  def UrlTile: ComponentType[UrlTileProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.UrlTile].asInstanceOf[typings.react.reactMod.ComponentType[UrlTileProps]]
   @scala.inline
-  def WMSTile: ComponentType[MapWMSTileProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.WMSTile].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.MapWMSTileProps]]
+  def WMSTile: ComponentType[WMSTileProps] = js.constructorOf[typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod.WMSTile].asInstanceOf[typings.react.reactMod.ComponentType[WMSTileProps]]
 }
 

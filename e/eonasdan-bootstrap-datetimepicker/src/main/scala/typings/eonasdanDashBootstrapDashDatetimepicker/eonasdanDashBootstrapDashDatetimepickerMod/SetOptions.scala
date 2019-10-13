@@ -1,6 +1,6 @@
 package typings.eonasdanDashBootstrapDashDatetimepicker.eonasdanDashBootstrapDashDatetimepickerMod
 
-import typings.eonasdanDashBootstrapDashDatetimepicker.eonasdanDashBootstrapDashDatetimepickerMod.Global.JQuery
+import typings.eonasdanDashBootstrapDashDatetimepicker.eonasdanDashBootstrapDashDatetimepickerMod._Global_.JQuery
 import typings.moment.momentMod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -30,9 +30,6 @@ object reactDashOnsenuiStrings {
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait className extends js.Object
-  
-  @js.native
   sealed trait collapse extends js.Object
   
   @js.native
@@ -51,9 +48,6 @@ object reactDashOnsenuiStrings {
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait id extends js.Object
-  
-  @js.native
   sealed trait initial extends js.Object
   
   @js.native
@@ -66,12 +60,6 @@ object reactDashOnsenuiStrings {
   
   @js.native
   sealed trait lift extends _NavigatorAnimationTypes
-  
-  @js.native
-  sealed trait max extends js.Object
-  
-  @js.native
-  sealed trait min extends js.Object
   
   @js.native
   sealed trait none extends _NavigatorAnimationTypes
@@ -95,12 +83,6 @@ object reactDashOnsenuiStrings {
   
   @js.native
   sealed trait split extends js.Object
-  
-  @js.native
-  sealed trait step extends js.Object
-  
-  @js.native
-  sealed trait style extends js.Object
   
   @js.native
   sealed trait top extends SpeedDialPosition
@@ -132,8 +114,6 @@ object reactDashOnsenuiStrings {
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
-  def className: className = "className".asInstanceOf[className]
-  @scala.inline
   def collapse: collapse = "collapse".asInstanceOf[collapse]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
@@ -146,8 +126,6 @@ object reactDashOnsenuiStrings {
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
@@ -155,10 +133,6 @@ object reactDashOnsenuiStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def lift: lift = "lift".asInstanceOf[lift]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
@@ -173,10 +147,6 @@ object reactDashOnsenuiStrings {
   def slide: slide = "slide".asInstanceOf[slide]
   @scala.inline
   def split: split = "split".asInstanceOf[split]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

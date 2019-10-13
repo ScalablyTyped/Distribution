@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/serialization/serializers", "ArrayTypeSerializer")
 @js.native
 class ArrayTypeSerializer ()
-  extends typings.typedoc.distLibSerializationSerializersTypesMod.ArrayTypeSerializer
+  extends typings.typedoc.distLibSerializationSerializersTypesArrayMod.ArrayTypeSerializer
 

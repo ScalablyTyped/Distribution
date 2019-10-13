@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Windows.Data.Xml.Dom.XmlEntityReference")
 @js.native
-class XmlEntityReference () extends IXmlEntityReference {
+class XmlEntityReference () extends IXmlNode {
   /* CompleteClass */
   override var attributes: XmlNamedNodeMap = js.native
   /* CompleteClass */

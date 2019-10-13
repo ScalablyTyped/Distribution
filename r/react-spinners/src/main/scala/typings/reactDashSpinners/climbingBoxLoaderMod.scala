@@ -1,6 +1,6 @@
 package typings.reactDashSpinners
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashSpinners.climbingBoxLoaderMod.Loader
 import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object climbingBoxLoaderMod extends js.Object {
   @js.native
   trait Loader
-    extends PureComponent[LoaderSizeProps, js.Object, js.Any] {
+    extends Component[LoaderSizeProps, js.Object, js.Any] {
     var container: StyleFunction = js.native
     var hill: StyleFunction = js.native
     var style: StyleFunction = js.native

@@ -1,6 +1,13 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.tableMod.Table
+import typings.materialDashUi.__MaterialUI.Table.TableBodyProps
+import typings.materialDashUi.__MaterialUI.Table.TableFooterProps
+import typings.materialDashUi.__MaterialUI.Table.TableHeaderColumnProps
+import typings.materialDashUi.__MaterialUI.Table.TableHeaderProps
+import typings.materialDashUi.__MaterialUI.Table.TableProps
+import typings.materialDashUi.__MaterialUI.Table.TableRowColumnProps
+import typings.materialDashUi.__MaterialUI.Table.TableRowProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,34 +17,35 @@ import scala.scalajs.js.annotation._
 object tableMod extends js.Object {
   @js.native
   class Table ()
-    extends typings.materialDashUi.__MaterialUI.Table.Table
+    extends Component[TableProps, js.Object, js.Any]
   
   @js.native
   class TableBody ()
-    extends typings.materialDashUi.__MaterialUI.Table.TableBody
+    extends Component[TableBodyProps, js.Object, js.Any]
   
   @js.native
   class TableFooter ()
-    extends typings.materialDashUi.__MaterialUI.Table.TableFooter
+    extends Component[TableFooterProps, js.Object, js.Any]
   
   @js.native
   class TableHeader ()
-    extends typings.materialDashUi.__MaterialUI.Table.TableHeader
+    extends Component[TableHeaderProps, js.Object, js.Any]
   
   @js.native
   class TableHeaderColumn ()
-    extends typings.materialDashUi.__MaterialUI.Table.TableHeaderColumn
+    extends Component[TableHeaderColumnProps, js.Object, js.Any]
   
   @js.native
   class TableRow ()
-    extends typings.materialDashUi.__MaterialUI.Table.TableRow
+    extends Component[TableRowProps, js.Object, js.Any]
   
   @js.native
   class TableRowColumn ()
-    extends typings.materialDashUi.__MaterialUI.Table.TableRowColumn
+    extends Component[TableRowColumnProps, js.Object, js.Any]
   
   @js.native
-  class default () extends Table
+  class default ()
+    extends Component[TableProps, js.Object, js.Any]
   
 }
 

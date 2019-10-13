@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object reactDashOffcanvasComponents extends reactDashOffcanvasProps {
   @scala.inline
-  def OffCanvas: ComponentType[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasProps] = js.constructorOf[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasProps]]
+  def OffCanvas: ComponentType[OffCanvasProps] = js.constructorOf[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvas].asInstanceOf[typings.react.reactMod.ComponentType[OffCanvasProps]]
   @scala.inline
-  def OffCanvasBody: ComponentType[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasBodyProps] = js.constructorOf[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasBody].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasBodyProps]]
+  def OffCanvasBody: ComponentType[OffCanvasBodyProps] = js.constructorOf[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasBody].asInstanceOf[typings.react.reactMod.ComponentType[OffCanvasBodyProps]]
   @scala.inline
-  def OffCanvasMenu: ComponentType[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasMenuProps] = js.constructorOf[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasMenu].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasMenuProps]]
+  def OffCanvasMenu: ComponentType[OffCanvasMenuProps] = js.constructorOf[typings.reactDashOffcanvas.reactDashOffcanvasMod.OffCanvasMenu].asInstanceOf[typings.react.reactMod.ComponentType[OffCanvasMenuProps]]
 }
 

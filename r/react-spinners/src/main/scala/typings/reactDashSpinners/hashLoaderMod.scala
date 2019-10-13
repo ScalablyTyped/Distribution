@@ -1,7 +1,7 @@
 package typings.reactDashSpinners
 
 import typings.atEmotionSerialize.atEmotionSerializeMod.Keyframes
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashSpinners.hashLoaderMod.Loader
 import typings.reactDashSpinners.interfacesMod.CalcFunction
 import typings.reactDashSpinners.interfacesMod.LoaderSizeProps
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object hashLoaderMod extends js.Object {
   @js.native
   trait Loader
-    extends PureComponent[LoaderSizeProps, js.Object, js.Any] {
+    extends Component[LoaderSizeProps, js.Object, js.Any] {
     var after: CalcFunction[Keyframes] = js.native
     var before: CalcFunction[Keyframes] = js.native
     var color: CalcFunction[String] = js.native

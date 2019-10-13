@@ -63,11 +63,11 @@ object opentracingMod extends js.Object {
   
   @js.native
   class Span ()
-    extends typings.opentracing.libSpanMod.default
+    extends typings.opentracing.libSpanMod.Span
   
   @js.native
   class SpanContext ()
-    extends typings.opentracing.libSpanUnderscoreContextMod.default
+    extends typings.opentracing.libSpanUnderscoreContextMod.SpanContext
   
   @js.native
   class Tracer ()

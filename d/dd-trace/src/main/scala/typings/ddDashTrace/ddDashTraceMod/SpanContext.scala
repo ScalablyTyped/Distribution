@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SpanContext
-  extends typings.opentracing.opentracingMod.SpanContext
+  extends typings.opentracing.libSpanUnderscoreContextMod.SpanContext
 

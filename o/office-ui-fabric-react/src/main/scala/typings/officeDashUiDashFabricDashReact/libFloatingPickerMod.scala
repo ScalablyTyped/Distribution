@@ -1,6 +1,7 @@
 package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps
+import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerPeoplePickerFloatingPeoplePickerMod.IPeopleFloatingPickerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsDotTypesMod.ISuggestionsControlProps
 import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsDotTypesMod.ISuggestionsCoreProps
 import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsStoreMod.SuggestionsStoreOptions
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation._
 object libFloatingPickerMod extends js.Object {
   @js.native
   class BaseFloatingPeoplePicker ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerMod.BaseFloatingPeoplePicker
+    extends typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerBaseFloatingPickerMod.BaseFloatingPicker[IPersonaProps, IPeopleFloatingPickerProps]
   
   @js.native
   class BaseFloatingPicker[T, P /* <: IBaseFloatingPickerProps[T] */] protected ()
@@ -41,7 +42,7 @@ object libFloatingPickerMod extends js.Object {
   
   @js.native
   class SuggestionsHeaderFooterItem ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerMod.SuggestionsHeaderFooterItem
+    extends typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionsHeaderFooterItem
   
   @js.native
   class SuggestionsStore[T] ()

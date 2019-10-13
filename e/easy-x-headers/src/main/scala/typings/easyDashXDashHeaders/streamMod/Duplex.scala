@@ -6,10 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.easyDashXDashHeaders.NodeJS.EventEmitter because Already inherited
-- typings.easyDashXDashHeaders.NodeJS.ReadableStream because Already inherited
-- typings.easyDashXDashHeaders.NodeJS.ReadWriteStream because var conflicts: readable. Inlined  */ @JSImport("stream", "Duplex")
+@JSImport("stream", "Duplex")
 @js.native
 class Duplex ()
   extends Readable

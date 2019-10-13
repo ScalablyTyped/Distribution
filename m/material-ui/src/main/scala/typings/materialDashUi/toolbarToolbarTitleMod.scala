@@ -1,6 +1,7 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.toolbarToolbarTitleMod.ToolbarTitle
+import typings.materialDashUi.__MaterialUI.Toolbar.ToolbarTitleProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +11,11 @@ import scala.scalajs.js.annotation._
 object toolbarToolbarTitleMod extends js.Object {
   @js.native
   class ToolbarTitle ()
-    extends typings.materialDashUi.__MaterialUI.Toolbar.ToolbarTitle
+    extends Component[ToolbarTitleProps, js.Object, js.Any]
   
   @js.native
-  class default () extends ToolbarTitle
+  class default ()
+    extends Component[ToolbarTitleProps, js.Object, js.Any]
   
 }
 

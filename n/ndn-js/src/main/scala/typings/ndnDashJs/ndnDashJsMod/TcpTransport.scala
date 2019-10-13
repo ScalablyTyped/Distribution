@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ndn-js", "TcpTransport")
 @js.native
 class TcpTransport ()
-  extends typings.ndnDashJs.transportMod.TcpTransport
+  extends typings.ndnDashJs.transportMod.Transport
 
 @JSImport("ndn-js", "TcpTransport")
 @js.native

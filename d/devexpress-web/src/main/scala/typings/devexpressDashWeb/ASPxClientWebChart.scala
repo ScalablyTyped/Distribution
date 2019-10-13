@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientWebChart")
 @js.native
-class ASPxClientWebChart () extends ASPxClientWebChartRequiredElement {
+class ASPxClientWebChart () extends ASPxClientWebChartElement {
   /**
     * Provides access to the chart's collection of annotations.
     */

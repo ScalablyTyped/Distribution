@@ -1,5 +1,7 @@
 package typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod
 
+import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerPeoplePickerExtendedPeoplePickerMod.IExtendedPeoplePickerProps
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react", "BaseExtendedPeoplePicker")
 @js.native
 class BaseExtendedPeoplePicker ()
-  extends typings.officeDashUiDashFabricDashReact.libExtendedPickerMod.BaseExtendedPeoplePicker
+  extends typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerBaseExtendedPickerMod.BaseExtendedPicker[IPersonaProps, IExtendedPeoplePickerProps]
 

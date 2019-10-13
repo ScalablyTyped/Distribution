@@ -26,6 +26,6 @@ class ListAdditionalRecipientReceivableRefundsRequest () extends js.Object {
     * The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).
     * Default value: `DESC` See [SortOrder](#type-sortorder) for possible values.
     */
-  var sort_order: js.UndefOr[SortOrderEnum] = js.native
+  var sort_order: js.UndefOr[SortOrderType] = js.native
 }
 

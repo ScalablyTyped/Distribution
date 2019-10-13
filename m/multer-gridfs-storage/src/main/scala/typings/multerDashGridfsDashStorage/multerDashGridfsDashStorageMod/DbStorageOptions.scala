@@ -1,11 +1,11 @@
 package typings.multerDashGridfsDashStorage.multerDashGridfsDashStorageMod
 
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.Express.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod._Global_.Express.Request
 import typings.mongodb.mongodbMod.Db
 import typings.mongodb.mongodbMod.MongoClient
 import typings.mongoose.mongooseMod.Connection
 import typings.mongoose.mongooseMod.Mongoose
-import typings.multerDashGridfsDashStorage.multerDashGridfsDashStorageMod.Global.Express.Multer.File
+import typings.multerDashGridfsDashStorage.multerDashGridfsDashStorageMod._Global_.Express.Multer.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

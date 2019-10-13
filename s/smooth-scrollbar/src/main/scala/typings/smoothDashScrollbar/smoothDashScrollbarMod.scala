@@ -2,7 +2,6 @@ package typings.smoothDashScrollbar
 
 import typings.smoothDashScrollbar.interfacesScrollbarMod.ScrollbarOptions
 import typings.smoothDashScrollbar.scrollbarMod.Scrollbar
-import typings.smoothDashScrollbar.smoothDashScrollbarMod.SmoothScrollbar
 import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
@@ -20,7 +19,7 @@ object smoothDashScrollbarMod extends js.Object {
   }
   
   @js.native
-  class default () extends SmoothScrollbar
+  class default () extends Scrollbar
   
   /* static members */
   @js.native

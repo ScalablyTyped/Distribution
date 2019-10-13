@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown", "LexicalSymbolBase")
 @js.native
 abstract class LexicalSymbolBase[TKind /* <: LexicalSymbolKind */] ()
-  extends typings.grammarkdown.distNodesMod.LexicalSymbolBase[TKind]
+  extends typings.grammarkdown.distNodesMod.Node[TKind]
 

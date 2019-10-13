@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.DataAdapter")
 @js.native
 class DataAdapter ()
-  extends typings.atEmberDebug.dataDashAdapterMod.default
+  extends typings.atEmberDebug.dataDashAdapterMod.DataAdapter
 

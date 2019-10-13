@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.earth.KmlStyleMap")
 @js.native
-class KmlStyleMap () extends KmlStyleSelector {
+class KmlStyleMap () extends KmlObject {
   /**
     * Defines highlighted styles for a placemark, so that the highlighted version appears when the user mouses over the icon in Google Earth.
     */

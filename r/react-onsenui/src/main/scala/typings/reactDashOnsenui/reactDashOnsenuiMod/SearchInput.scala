@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_DisabledEInputId
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringdisablClassNameDisabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "SearchInput")
 @js.native
 class SearchInput ()
-  extends Component[Anon_DisabledEInputId, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringdisablClassNameDisabled, js.Any, js.Any]
 

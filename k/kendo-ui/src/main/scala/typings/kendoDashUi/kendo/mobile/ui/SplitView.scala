@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.SplitView")
 @js.native
-class SplitView protected () extends Widget {
+class SplitView protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: SplitViewOptions) = this()
   @JSName("options")

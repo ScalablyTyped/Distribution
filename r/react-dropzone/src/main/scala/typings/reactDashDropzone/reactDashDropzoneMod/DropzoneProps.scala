@@ -1,6 +1,6 @@
 package typings.reactDashDropzone.reactDashDropzoneMod
 
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashDropzone.Anon_Accept
 import typings.std.DataTransferItem
 import typings.std.File

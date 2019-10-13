@@ -871,7 +871,7 @@ trait UnderscoreStatic extends js.Object {
     * @param object Check if this object is a DOM element.
     * @return True if `object` is a DOM element, otherwise false.
     **/
-  def isElement(`object`: js.Any): /* is underscore.underscore.Global.Element */ Boolean = js.native
+  def isElement(`object`: js.Any): /* is underscore.underscore._Global_.Element */ Boolean = js.native
   /**
     * Returns true if object contains no values.
     * @param object Check if this object has no properties or values.

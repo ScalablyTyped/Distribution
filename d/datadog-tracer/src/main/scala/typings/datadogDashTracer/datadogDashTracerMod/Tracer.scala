@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Tracer
-  extends typings.opentracing.opentracingMod.Tracer {
+  extends typings.opentracing.libTracerMod.Tracer {
   @JSName("addEventListener")
   def addEventListener_error(method: error): Unit = js.native
   @JSName("addEventListener")

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Controller")
 @js.native
 class Controller ()
-  extends typings.ember.emberMod.Ember.Controller
+  extends typings.atEmberController.atEmberControllerMod.default
 

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon-framework", "collections.ArrayCollection")
 @js.native
 class ArrayCollection[T] ()
-  extends typings.samchon.samchonMod.collections.ArrayCollection[T]
+  extends typings.ecol.libLinearVectorCollectionMod.ArrayCollection[T]
 
 @JSImport("samchon-framework", "collections.ArrayCollection")
 @js.native

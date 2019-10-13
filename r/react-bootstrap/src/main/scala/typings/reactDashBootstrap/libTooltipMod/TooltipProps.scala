@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libTooltipMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapMod.Sizes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TooltipProps extends HTMLProps[Tooltip] {
+trait TooltipProps
+  extends AllHTMLAttributes[Tooltip]
+     with ClassAttributes[Tooltip] {
   // Optional
   var arrowOffsetLeft: js.UndefOr[Double | String] = js.undefined
   var arrowOffsetTop: js.UndefOr[Double | String] = js.undefined
@@ -21,7 +24,8 @@ trait TooltipProps extends HTMLProps[Tooltip] {
 object TooltipProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Tooltip] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Tooltip] = null,
+    ClassAttributes: ClassAttributes[Tooltip] = null,
     arrowOffsetLeft: Double | String = null,
     arrowOffsetTop: Double | String = null,
     bsClass: String = null,
@@ -32,7 +36,8 @@ object TooltipProps {
     positionTop: Int | Double = null
   ): TooltipProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (arrowOffsetLeft != null) __obj.updateDynamic("arrowOffsetLeft")(arrowOffsetLeft.asInstanceOf[js.Any])
     if (arrowOffsetTop != null) __obj.updateDynamic("arrowOffsetTop")(arrowOffsetTop.asInstanceOf[js.Any])
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)

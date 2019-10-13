@@ -1,7 +1,7 @@
 package typings.multer.multerMod
 
-import typings.multer.multerMod.Global.Express.Multer.File
-import typings.multer.multerMod.Global.Express.Request
+import typings.multer.multerMod._Global_.Express.Multer.File
+import typings.multer.multerMod._Global_.Express.Request
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

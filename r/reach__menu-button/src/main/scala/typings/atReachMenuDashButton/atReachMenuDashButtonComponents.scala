@@ -181,576 +181,508 @@ import scala.scalajs.js.annotation._
 
 object atReachMenuDashButtonComponents extends atReachMenuDashButtonProps {
   @scala.inline
-  def Menu: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuProps] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.Menu.asInstanceOf[typings.react.reactMod.ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuProps]]
+  def Menu: ComponentType[MenuProps] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.Menu.asInstanceOf[typings.react.reactMod.ComponentType[MenuProps]]
   @scala.inline
-  def MenuButton: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuButtonProps] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuButton.asInstanceOf[typings.react.reactMod.ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuButtonProps]]
+  def MenuButton: ComponentType[MenuButtonProps] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuButton.asInstanceOf[typings.react.reactMod.ComponentType[MenuButtonProps]]
   @scala.inline
-  def MenuItem: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuItemProps] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuItem.asInstanceOf[typings.react.reactMod.ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuItemProps]]
+  def MenuItem: ComponentType[MenuItemProps] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuItem.asInstanceOf[typings.react.reactMod.ComponentType[MenuItemProps]]
   @scala.inline
-  def MenuLink[T /* <: js.Object */]: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[T]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[T]]]
+  def MenuLink[T /* <: js.Object */]: ComponentType[MenuLinkProps[T]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink.asInstanceOf[typings.react.reactMod.ComponentType[MenuLinkProps[T]]]
   @scala.inline
-  def MenuLink_aMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[a]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_a.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.a]]]
+  def MenuLink_a: ComponentType[MenuLink_aProps[a]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_a.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_aProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.a]]]
   @scala.inline
-  def MenuLink_abbrMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[abbr]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_abbr.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.abbr]]]
+  def MenuLink_abbr: ComponentType[MenuLink_abbrProps[abbr]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_abbr.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_abbrProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.abbr]]]
   @scala.inline
-  def MenuLink_addressMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[address]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_address.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.address]]]
+  def MenuLink_address: ComponentType[MenuLink_addressProps[address]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_address.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_addressProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.address]]]
   @scala.inline
-  def MenuLink_animateMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[animate]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_animate.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.animate]]]
+  def MenuLink_animate: ComponentType[MenuLink_animateProps[animate]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_animate.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_animateProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.animate]]]
   @scala.inline
-  def MenuLink_animateMotionMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[animateMotion]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_animateMotion.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.animateMotion]]]
+  def MenuLink_animateMotion: ComponentType[MenuLink_animateMotionProps[animateMotion]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_animateMotion.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_animateMotionProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.animateMotion]]]
   @scala.inline
-  def MenuLink_animateTransformMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[animateTransform]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_animateTransform.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.animateTransform]]]
+  def MenuLink_animateTransform: ComponentType[MenuLink_animateTransformProps[animateTransform]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_animateTransform.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_animateTransformProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.animateTransform]]]
   @scala.inline
-  def MenuLink_areaMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[area]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_area.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.area]]]
+  def MenuLink_area: ComponentType[MenuLink_areaProps[area]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_area.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_areaProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.area]]]
   @scala.inline
-  def MenuLink_articleMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[article]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_article.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.article]]]
+  def MenuLink_article: ComponentType[MenuLink_articleProps[article]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_article.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_articleProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.article]]]
   @scala.inline
-  def MenuLink_asideMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[aside]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_aside.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.aside]]]
+  def MenuLink_aside: ComponentType[MenuLink_asideProps[aside]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_aside.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_asideProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.aside]]]
   @scala.inline
-  def MenuLink_audioMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[audio]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_audio.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.audio]]]
+  def MenuLink_audio: ComponentType[MenuLink_audioProps[audio]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_audio.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_audioProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.audio]]]
   @scala.inline
-  def MenuLink_bMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[b]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_b.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.b]]]
+  def MenuLink_b: ComponentType[MenuLink_bProps[b]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_b.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_bProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.b]]]
   @scala.inline
-  def MenuLink_baseMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[base]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_base.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.base]]]
+  def MenuLink_base: ComponentType[MenuLink_baseProps[base]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_base.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_baseProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.base]]]
   @scala.inline
-  def MenuLink_bdiMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[bdi]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_bdi.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.bdi]]]
+  def MenuLink_bdi: ComponentType[MenuLink_bdiProps[bdi]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_bdi.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_bdiProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.bdi]]]
   @scala.inline
-  def MenuLink_bdoMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[bdo]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_bdo.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.bdo]]]
+  def MenuLink_bdo: ComponentType[MenuLink_bdoProps[bdo]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_bdo.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_bdoProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.bdo]]]
   @scala.inline
-  def MenuLink_bigMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[big]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_big.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.big]]]
+  def MenuLink_big: ComponentType[MenuLink_bigProps[big]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_big.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_bigProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.big]]]
   @scala.inline
-  def MenuLink_blockquoteMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[blockquote]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_blockquote.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.blockquote]]]
+  def MenuLink_blockquote: ComponentType[MenuLink_blockquoteProps[blockquote]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_blockquote.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_blockquoteProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.blockquote]]]
   @scala.inline
-  def MenuLink_bodyMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[body]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_body.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.body]]]
+  def MenuLink_body: ComponentType[MenuLink_bodyProps[body]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_body.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_bodyProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.body]]]
   @scala.inline
-  def MenuLink_brMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[br]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_br.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.br]]]
+  def MenuLink_br: ComponentType[MenuLink_brProps[br]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_br.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_brProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.br]]]
   @scala.inline
-  def MenuLink_buttonMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[button]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_button.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.button]]]
+  def MenuLink_button: ComponentType[MenuLink_buttonProps[button]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_button.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_buttonProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.button]]]
   @scala.inline
-  def MenuLink_canvasMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[canvas]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_canvas.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.canvas]]]
+  def MenuLink_canvas: ComponentType[MenuLink_canvasProps[canvas]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_canvas.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_canvasProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.canvas]]]
   @scala.inline
-  def MenuLink_captionMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[caption]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_caption.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.caption]]]
+  def MenuLink_caption: ComponentType[MenuLink_captionProps[caption]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_caption.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_captionProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.caption]]]
   @scala.inline
-  def MenuLink_circleMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[circle]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_circle.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.circle]]]
+  def MenuLink_circle: ComponentType[MenuLink_circleProps[circle]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_circle.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_circleProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.circle]]]
   @scala.inline
-  def MenuLink_citeMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[cite]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_cite.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.cite]]]
+  def MenuLink_cite: ComponentType[MenuLink_citeProps[cite]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_cite.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_citeProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.cite]]]
   @scala.inline
-  def MenuLink_clipPathMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[clipPath]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_clipPath.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.clipPath]]]
+  def MenuLink_clipPath: ComponentType[MenuLink_clipPathProps[clipPath]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_clipPath.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_clipPathProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.clipPath]]]
   @scala.inline
-  def MenuLink_codeMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[code]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_code.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.code]]]
+  def MenuLink_code: ComponentType[MenuLink_codeProps[code]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_code.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_codeProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.code]]]
   @scala.inline
-  def MenuLink_colMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[col]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_col.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.col]]]
+  def MenuLink_col: ComponentType[MenuLink_colProps[col]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_col.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_colProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.col]]]
   @scala.inline
-  def MenuLink_colgroupMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[colgroup]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_colgroup.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.colgroup]]]
+  def MenuLink_colgroup: ComponentType[MenuLink_colgroupProps[colgroup]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_colgroup.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_colgroupProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.colgroup]]]
   @scala.inline
-  def MenuLink_dataMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[data]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_data.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.data]]]
+  def MenuLink_data: ComponentType[MenuLink_dataProps[data]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_data.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_dataProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.data]]]
   @scala.inline
-  def MenuLink_datalistMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[datalist]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_datalist.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.datalist]]]
+  def MenuLink_datalist: ComponentType[MenuLink_datalistProps[datalist]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_datalist.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_datalistProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.datalist]]]
   @scala.inline
-  def MenuLink_ddMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[dd]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dd.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dd]]]
+  def MenuLink_dd: ComponentType[MenuLink_ddProps[dd]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dd.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_ddProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dd]]]
   @scala.inline
-  def MenuLink_defsMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[defs]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_defs.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.defs]]]
+  def MenuLink_defs: ComponentType[MenuLink_defsProps[defs]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_defs.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_defsProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.defs]]]
   @scala.inline
-  def MenuLink_delMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[del]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_del.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.del]]]
+  def MenuLink_del: ComponentType[MenuLink_delProps[del]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_del.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_delProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.del]]]
   @scala.inline
-  def MenuLink_descMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[desc]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_desc.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.desc]]]
+  def MenuLink_desc: ComponentType[MenuLink_descProps[desc]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_desc.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_descProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.desc]]]
   @scala.inline
-  def MenuLink_detailsMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[details]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_details.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.details]]]
+  def MenuLink_details: ComponentType[MenuLink_detailsProps[details]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_details.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_detailsProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.details]]]
   @scala.inline
-  def MenuLink_dfnMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[dfn]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dfn.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dfn]]]
+  def MenuLink_dfn: ComponentType[MenuLink_dfnProps[dfn]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dfn.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_dfnProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dfn]]]
   @scala.inline
-  def MenuLink_dialogMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[dialog]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dialog.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dialog]]]
+  def MenuLink_dialog: ComponentType[MenuLink_dialogProps[dialog]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dialog.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_dialogProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dialog]]]
   @scala.inline
-  def MenuLink_divMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[div]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_div.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.div]]]
+  def MenuLink_div: ComponentType[MenuLink_divProps[div]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_div.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_divProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.div]]]
   @scala.inline
-  def MenuLink_dlMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[dl]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dl.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dl]]]
+  def MenuLink_dl: ComponentType[MenuLink_dlProps[dl]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dl.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_dlProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dl]]]
   @scala.inline
-  def MenuLink_dtMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[dt]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dt.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dt]]]
+  def MenuLink_dt: ComponentType[MenuLink_dtProps[dt]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_dt.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_dtProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.dt]]]
   @scala.inline
-  def MenuLink_ellipseMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[ellipse]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ellipse.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ellipse]]]
+  def MenuLink_ellipse: ComponentType[MenuLink_ellipseProps[ellipse]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ellipse.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_ellipseProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ellipse]]]
   @scala.inline
-  def MenuLink_emMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[em]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_em.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.em]]]
+  def MenuLink_em: ComponentType[MenuLink_emProps[em]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_em.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_emProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.em]]]
   @scala.inline
-  def MenuLink_embedMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[embed]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_embed.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.embed]]]
+  def MenuLink_embed: ComponentType[MenuLink_embedProps[embed]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_embed.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_embedProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.embed]]]
   @scala.inline
-  def MenuLink_feBlendMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feBlend]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feBlend.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feBlend]]]
+  def MenuLink_feBlend: ComponentType[MenuLink_feBlendProps[feBlend]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feBlend.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feBlendProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feBlend]]]
   @scala.inline
-  def MenuLink_feColorMatrixMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feColorMatrix]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feColorMatrix.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feColorMatrix]]]
+  def MenuLink_feColorMatrix: ComponentType[MenuLink_feColorMatrixProps[feColorMatrix]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feColorMatrix.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feColorMatrixProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feColorMatrix]]]
   @scala.inline
-  def MenuLink_feComponentTransferMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feComponentTransfer]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feComponentTransfer.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feComponentTransfer]]]
+  def MenuLink_feComponentTransfer: ComponentType[MenuLink_feComponentTransferProps[feComponentTransfer]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feComponentTransfer.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feComponentTransferProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feComponentTransfer]]]
   @scala.inline
-  def MenuLink_feCompositeMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feComposite]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feComposite.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feComposite]]]
+  def MenuLink_feComposite: ComponentType[MenuLink_feCompositeProps[feComposite]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feComposite.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feCompositeProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feComposite]]]
   @scala.inline
-  def MenuLink_feConvolveMatrixMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feConvolveMatrix]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feConvolveMatrix.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feConvolveMatrix]]]
+  def MenuLink_feConvolveMatrix: ComponentType[MenuLink_feConvolveMatrixProps[feConvolveMatrix]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feConvolveMatrix.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feConvolveMatrixProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feConvolveMatrix]]]
   @scala.inline
-  def MenuLink_feDiffuseLightingMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feDiffuseLighting]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feDiffuseLighting.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feDiffuseLighting]]]
+  def MenuLink_feDiffuseLighting: ComponentType[MenuLink_feDiffuseLightingProps[feDiffuseLighting]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feDiffuseLighting.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feDiffuseLightingProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feDiffuseLighting]]]
   @scala.inline
-  def MenuLink_feDisplacementMapMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feDisplacementMap]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feDisplacementMap.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feDisplacementMap]]]
+  def MenuLink_feDisplacementMap: ComponentType[MenuLink_feDisplacementMapProps[feDisplacementMap]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feDisplacementMap.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feDisplacementMapProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feDisplacementMap]]]
   @scala.inline
-  def MenuLink_feDistantLightMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feDistantLight]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feDistantLight.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feDistantLight]]]
+  def MenuLink_feDistantLight: ComponentType[MenuLink_feDistantLightProps[feDistantLight]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feDistantLight.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feDistantLightProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feDistantLight]]]
   @scala.inline
-  def MenuLink_feDropShadowMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feDropShadow]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feDropShadow.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feDropShadow]]]
+  def MenuLink_feDropShadow: ComponentType[MenuLink_feDropShadowProps[feDropShadow]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feDropShadow.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feDropShadowProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feDropShadow]]]
   @scala.inline
-  def MenuLink_feFloodMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feFlood]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFlood.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFlood]]]
+  def MenuLink_feFlood: ComponentType[MenuLink_feFloodProps[feFlood]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFlood.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feFloodProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFlood]]]
   @scala.inline
-  def MenuLink_feFuncAMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feFuncA]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFuncA.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFuncA]]]
+  def MenuLink_feFuncA: ComponentType[MenuLink_feFuncAProps[feFuncA]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFuncA.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feFuncAProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFuncA]]]
   @scala.inline
-  def MenuLink_feFuncBMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feFuncB]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFuncB.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFuncB]]]
+  def MenuLink_feFuncB: ComponentType[MenuLink_feFuncBProps[feFuncB]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFuncB.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feFuncBProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFuncB]]]
   @scala.inline
-  def MenuLink_feFuncGMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feFuncG]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFuncG.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFuncG]]]
+  def MenuLink_feFuncG: ComponentType[MenuLink_feFuncGProps[feFuncG]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFuncG.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feFuncGProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFuncG]]]
   @scala.inline
-  def MenuLink_feFuncRMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feFuncR]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFuncR.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFuncR]]]
+  def MenuLink_feFuncR: ComponentType[MenuLink_feFuncRProps[feFuncR]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feFuncR.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feFuncRProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feFuncR]]]
   @scala.inline
-  def MenuLink_feGaussianBlurMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feGaussianBlur]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feGaussianBlur.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feGaussianBlur]]]
+  def MenuLink_feGaussianBlur: ComponentType[MenuLink_feGaussianBlurProps[feGaussianBlur]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feGaussianBlur.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feGaussianBlurProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feGaussianBlur]]]
   @scala.inline
-  def MenuLink_feImageMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feImage]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feImage.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feImage]]]
+  def MenuLink_feImage: ComponentType[MenuLink_feImageProps[feImage]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feImage.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feImageProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feImage]]]
   @scala.inline
-  def MenuLink_feMergeMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feMerge]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feMerge.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feMerge]]]
+  def MenuLink_feMerge: ComponentType[MenuLink_feMergeProps[feMerge]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feMerge.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feMergeProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feMerge]]]
   @scala.inline
-  def MenuLink_feMergeNodeMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feMergeNode]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feMergeNode.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feMergeNode]]]
+  def MenuLink_feMergeNode: ComponentType[MenuLink_feMergeNodeProps[feMergeNode]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feMergeNode.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feMergeNodeProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feMergeNode]]]
   @scala.inline
-  def MenuLink_feMorphologyMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feMorphology]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feMorphology.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feMorphology]]]
+  def MenuLink_feMorphology: ComponentType[MenuLink_feMorphologyProps[feMorphology]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feMorphology.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feMorphologyProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feMorphology]]]
   @scala.inline
-  def MenuLink_feOffsetMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feOffset]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feOffset.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feOffset]]]
+  def MenuLink_feOffset: ComponentType[MenuLink_feOffsetProps[feOffset]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feOffset.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feOffsetProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feOffset]]]
   @scala.inline
-  def MenuLink_fePointLightMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[fePointLight]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_fePointLight.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.fePointLight]]]
+  def MenuLink_fePointLight: ComponentType[MenuLink_fePointLightProps[fePointLight]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_fePointLight.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_fePointLightProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.fePointLight]]]
   @scala.inline
-  def MenuLink_feSpecularLightingMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feSpecularLighting]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feSpecularLighting.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feSpecularLighting]]]
+  def MenuLink_feSpecularLighting: ComponentType[MenuLink_feSpecularLightingProps[feSpecularLighting]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feSpecularLighting.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feSpecularLightingProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feSpecularLighting]]]
   @scala.inline
-  def MenuLink_feSpotLightMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feSpotLight]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feSpotLight.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feSpotLight]]]
+  def MenuLink_feSpotLight: ComponentType[MenuLink_feSpotLightProps[feSpotLight]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feSpotLight.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feSpotLightProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feSpotLight]]]
   @scala.inline
-  def MenuLink_feTileMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feTile]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feTile.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feTile]]]
+  def MenuLink_feTile: ComponentType[MenuLink_feTileProps[feTile]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feTile.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feTileProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feTile]]]
   @scala.inline
-  def MenuLink_feTurbulenceMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[feTurbulence]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feTurbulence.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feTurbulence]]]
+  def MenuLink_feTurbulence: ComponentType[MenuLink_feTurbulenceProps[feTurbulence]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_feTurbulence.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_feTurbulenceProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.feTurbulence]]]
   @scala.inline
-  def MenuLink_fieldsetMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[fieldset]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_fieldset.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.fieldset]]]
+  def MenuLink_fieldset: ComponentType[MenuLink_fieldsetProps[fieldset]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_fieldset.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_fieldsetProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.fieldset]]]
   @scala.inline
-  def MenuLink_figcaptionMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[figcaption]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_figcaption.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.figcaption]]]
+  def MenuLink_figcaption: ComponentType[MenuLink_figcaptionProps[figcaption]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_figcaption.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_figcaptionProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.figcaption]]]
   @scala.inline
-  def MenuLink_figureMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[figure]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_figure.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.figure]]]
+  def MenuLink_figure: ComponentType[MenuLink_figureProps[figure]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_figure.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_figureProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.figure]]]
   @scala.inline
-  def MenuLink_filterMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[filter]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_filter.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.filter]]]
+  def MenuLink_filter: ComponentType[MenuLink_filterProps[filter]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_filter.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_filterProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.filter]]]
   @scala.inline
-  def MenuLink_footerMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[footer]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_footer.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.footer]]]
+  def MenuLink_footer: ComponentType[MenuLink_footerProps[footer]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_footer.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_footerProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.footer]]]
   @scala.inline
-  def MenuLink_foreignObjectMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[foreignObject]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_foreignObject.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.foreignObject]]]
+  def MenuLink_foreignObject: ComponentType[MenuLink_foreignObjectProps[foreignObject]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_foreignObject.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_foreignObjectProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.foreignObject]]]
   @scala.inline
-  def MenuLink_formMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[form]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_form.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.form]]]
+  def MenuLink_form: ComponentType[MenuLink_formProps[form]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_form.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_formProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.form]]]
   @scala.inline
-  def MenuLink_gMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[g]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_g.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.g]]]
+  def MenuLink_g: ComponentType[MenuLink_gProps[g]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_g.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_gProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.g]]]
   @scala.inline
-  def MenuLink_h1MenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[h1]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h1.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h1]]]
+  def MenuLink_h1: ComponentType[MenuLink_h1Props[h1]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h1.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_h1Props[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h1]]]
   @scala.inline
-  def MenuLink_h2MenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[h2]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h2.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h2]]]
+  def MenuLink_h2: ComponentType[MenuLink_h2Props[h2]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h2.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_h2Props[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h2]]]
   @scala.inline
-  def MenuLink_h3MenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[h3]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h3.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h3]]]
+  def MenuLink_h3: ComponentType[MenuLink_h3Props[h3]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h3.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_h3Props[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h3]]]
   @scala.inline
-  def MenuLink_h4MenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[h4]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h4.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h4]]]
+  def MenuLink_h4: ComponentType[MenuLink_h4Props[h4]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h4.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_h4Props[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h4]]]
   @scala.inline
-  def MenuLink_h5MenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[h5]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h5.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h5]]]
+  def MenuLink_h5: ComponentType[MenuLink_h5Props[h5]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h5.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_h5Props[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h5]]]
   @scala.inline
-  def MenuLink_h6MenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[h6]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h6.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h6]]]
+  def MenuLink_h6: ComponentType[MenuLink_h6Props[h6]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_h6.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_h6Props[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.h6]]]
   @scala.inline
-  def MenuLink_headMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[head]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_head.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.head]]]
+  def MenuLink_head: ComponentType[MenuLink_headProps[head]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_head.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_headProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.head]]]
   @scala.inline
-  def MenuLink_headerMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[header]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_header.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.header]]]
+  def MenuLink_header: ComponentType[MenuLink_headerProps[header]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_header.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_headerProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.header]]]
   @scala.inline
-  def MenuLink_hgroupMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[hgroup]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_hgroup.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.hgroup]]]
+  def MenuLink_hgroup: ComponentType[MenuLink_hgroupProps[hgroup]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_hgroup.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_hgroupProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.hgroup]]]
   @scala.inline
-  def MenuLink_hrMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[hr]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_hr.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.hr]]]
+  def MenuLink_hr: ComponentType[MenuLink_hrProps[hr]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_hr.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_hrProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.hr]]]
   @scala.inline
-  def MenuLink_htmlMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[html]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_html.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.html]]]
+  def MenuLink_html: ComponentType[MenuLink_htmlProps[html]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_html.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_htmlProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.html]]]
   @scala.inline
-  def MenuLink_iMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[i]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_i.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.i]]]
+  def MenuLink_i: ComponentType[MenuLink_iProps[i]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_i.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_iProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.i]]]
   @scala.inline
-  def MenuLink_iframeMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[iframe]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_iframe.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.iframe]]]
+  def MenuLink_iframe: ComponentType[MenuLink_iframeProps[iframe]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_iframe.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_iframeProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.iframe]]]
   @scala.inline
-  def MenuLink_imageMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[image]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_image.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.image]]]
+  def MenuLink_image: ComponentType[MenuLink_imageProps[image]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_image.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_imageProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.image]]]
   @scala.inline
-  def MenuLink_imgMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[img]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_img.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.img]]]
+  def MenuLink_img: ComponentType[MenuLink_imgProps[img]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_img.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_imgProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.img]]]
   @scala.inline
-  def MenuLink_inputMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[input]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_input.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.input]]]
+  def MenuLink_input: ComponentType[MenuLink_inputProps[input]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_input.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_inputProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.input]]]
   @scala.inline
-  def MenuLink_insMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[ins]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ins.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ins]]]
+  def MenuLink_ins: ComponentType[MenuLink_insProps[ins]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ins.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_insProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ins]]]
   @scala.inline
-  def MenuLink_kbdMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[kbd]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_kbd.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.kbd]]]
+  def MenuLink_kbd: ComponentType[MenuLink_kbdProps[kbd]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_kbd.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_kbdProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.kbd]]]
   @scala.inline
-  def MenuLink_keygenMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[keygen]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_keygen.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.keygen]]]
+  def MenuLink_keygen: ComponentType[MenuLink_keygenProps[keygen]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_keygen.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_keygenProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.keygen]]]
   @scala.inline
-  def MenuLink_labelMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[label]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_label.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.label]]]
+  def MenuLink_label: ComponentType[MenuLink_labelProps[label]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_label.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_labelProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.label]]]
   @scala.inline
-  def MenuLink_legendMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[legend]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_legend.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.legend]]]
+  def MenuLink_legend: ComponentType[MenuLink_legendProps[legend]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_legend.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_legendProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.legend]]]
   @scala.inline
-  def MenuLink_liMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[li]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_li.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.li]]]
+  def MenuLink_li: ComponentType[MenuLink_liProps[li]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_li.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_liProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.li]]]
   @scala.inline
-  def MenuLink_lineMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[line]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_line.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.line]]]
+  def MenuLink_line: ComponentType[MenuLink_lineProps[line]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_line.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_lineProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.line]]]
   @scala.inline
-  def MenuLink_linearGradientMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[linearGradient]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_linearGradient.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.linearGradient]]]
+  def MenuLink_linearGradient: ComponentType[MenuLink_linearGradientProps[linearGradient]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_linearGradient.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_linearGradientProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.linearGradient]]]
   @scala.inline
-  def MenuLink_linkMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[link]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_link.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.link]]]
+  def MenuLink_link: ComponentType[MenuLink_linkProps[link]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_link.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_linkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.link]]]
   @scala.inline
-  def MenuLink_mainMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[main]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_main.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.main]]]
+  def MenuLink_main: ComponentType[MenuLink_mainProps[main]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_main.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_mainProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.main]]]
   @scala.inline
-  def MenuLink_mapMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[map]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_map.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.map]]]
+  def MenuLink_map: ComponentType[MenuLink_mapProps[map]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_map.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_mapProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.map]]]
   @scala.inline
-  def MenuLink_markMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[mark]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_mark.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.mark]]]
+  def MenuLink_mark: ComponentType[MenuLink_markProps[mark]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_mark.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_markProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.mark]]]
   @scala.inline
-  def MenuLink_markerMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[marker]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_marker.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.marker]]]
+  def MenuLink_marker: ComponentType[MenuLink_markerProps[marker]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_marker.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_markerProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.marker]]]
   @scala.inline
-  def MenuLink_maskMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[mask]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_mask.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.mask]]]
+  def MenuLink_mask: ComponentType[MenuLink_maskProps[mask]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_mask.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_maskProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.mask]]]
   @scala.inline
-  def MenuLink_menuMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[menu]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_menu.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.menu]]]
+  def MenuLink_menu: ComponentType[MenuLink_menuProps[menu]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_menu.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_menuProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.menu]]]
   @scala.inline
-  def MenuLink_menuitemMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[menuitem]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_menuitem.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.menuitem]]]
+  def MenuLink_menuitem: ComponentType[MenuLink_menuitemProps[menuitem]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_menuitem.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_menuitemProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.menuitem]]]
   @scala.inline
-  def MenuLink_metaMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[meta]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_meta.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.meta]]]
+  def MenuLink_meta: ComponentType[MenuLink_metaProps[meta]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_meta.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_metaProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.meta]]]
   @scala.inline
-  def MenuLink_metadataMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[metadata]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_metadata.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.metadata]]]
+  def MenuLink_metadata: ComponentType[MenuLink_metadataProps[metadata]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_metadata.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_metadataProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.metadata]]]
   @scala.inline
-  def MenuLink_meterMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[meter]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_meter.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.meter]]]
+  def MenuLink_meter: ComponentType[MenuLink_meterProps[meter]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_meter.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_meterProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.meter]]]
   @scala.inline
-  def MenuLink_mpathMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[mpath]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_mpath.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.mpath]]]
+  def MenuLink_mpath: ComponentType[MenuLink_mpathProps[mpath]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_mpath.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_mpathProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.mpath]]]
   @scala.inline
-  def MenuLink_navMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[nav]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_nav.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.nav]]]
+  def MenuLink_nav: ComponentType[MenuLink_navProps[nav]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_nav.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_navProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.nav]]]
   @scala.inline
-  def MenuLink_noindexMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[noindex]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_noindex.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.noindex]]]
+  def MenuLink_noindex: ComponentType[MenuLink_noindexProps[noindex]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_noindex.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_noindexProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.noindex]]]
   @scala.inline
-  def MenuLink_noscriptMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[noscript]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_noscript.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.noscript]]]
+  def MenuLink_noscript: ComponentType[MenuLink_noscriptProps[noscript]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_noscript.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_noscriptProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.noscript]]]
   @scala.inline
-  def MenuLink_objectMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[`object`]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_object.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.`object`]]]
+  def MenuLink_object: ComponentType[MenuLink_objectProps[`object`]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_object.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_objectProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.`object`]]]
   @scala.inline
-  def MenuLink_olMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[ol]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ol.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ol]]]
+  def MenuLink_ol: ComponentType[MenuLink_olProps[ol]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ol.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_olProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ol]]]
   @scala.inline
-  def MenuLink_optgroupMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[optgroup]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_optgroup.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.optgroup]]]
+  def MenuLink_optgroup: ComponentType[MenuLink_optgroupProps[optgroup]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_optgroup.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_optgroupProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.optgroup]]]
   @scala.inline
-  def MenuLink_optionMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[option]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_option.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.option]]]
+  def MenuLink_option: ComponentType[MenuLink_optionProps[option]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_option.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_optionProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.option]]]
   @scala.inline
-  def MenuLink_outputMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[output]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_output.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.output]]]
+  def MenuLink_output: ComponentType[MenuLink_outputProps[output]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_output.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_outputProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.output]]]
   @scala.inline
-  def MenuLink_pMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[p]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_p.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.p]]]
+  def MenuLink_p: ComponentType[MenuLink_pProps[p]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_p.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_pProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.p]]]
   @scala.inline
-  def MenuLink_paramMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[param]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_param.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.param]]]
+  def MenuLink_param: ComponentType[MenuLink_paramProps[param]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_param.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_paramProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.param]]]
   @scala.inline
-  def MenuLink_pathMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[path]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_path.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.path]]]
+  def MenuLink_path: ComponentType[MenuLink_pathProps[path]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_path.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_pathProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.path]]]
   @scala.inline
-  def MenuLink_patternMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[pattern]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_pattern.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.pattern]]]
+  def MenuLink_pattern: ComponentType[MenuLink_patternProps[pattern]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_pattern.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_patternProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.pattern]]]
   @scala.inline
-  def MenuLink_pictureMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[picture]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_picture.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.picture]]]
+  def MenuLink_picture: ComponentType[MenuLink_pictureProps[picture]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_picture.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_pictureProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.picture]]]
   @scala.inline
-  def MenuLink_polygonMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[polygon]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_polygon.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.polygon]]]
+  def MenuLink_polygon: ComponentType[MenuLink_polygonProps[polygon]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_polygon.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_polygonProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.polygon]]]
   @scala.inline
-  def MenuLink_polylineMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[polyline]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_polyline.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.polyline]]]
+  def MenuLink_polyline: ComponentType[MenuLink_polylineProps[polyline]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_polyline.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_polylineProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.polyline]]]
   @scala.inline
-  def MenuLink_preMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[pre]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_pre.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.pre]]]
+  def MenuLink_pre: ComponentType[MenuLink_preProps[pre]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_pre.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_preProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.pre]]]
   @scala.inline
-  def MenuLink_progressMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[progress]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_progress.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.progress]]]
+  def MenuLink_progress: ComponentType[MenuLink_progressProps[progress]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_progress.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_progressProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.progress]]]
   @scala.inline
-  def MenuLink_qMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[q]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_q.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.q]]]
+  def MenuLink_q: ComponentType[MenuLink_qProps[q]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_q.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_qProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.q]]]
   @scala.inline
-  def MenuLink_radialGradientMenuLink: ComponentType[
-    typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[radialGradient]
-  ] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_radialGradient.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.radialGradient]]]
+  def MenuLink_radialGradient: ComponentType[MenuLink_radialGradientProps[radialGradient]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_radialGradient.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_radialGradientProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.radialGradient]]]
   @scala.inline
-  def MenuLink_rectMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[rect]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_rect.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.rect]]]
+  def MenuLink_rect: ComponentType[MenuLink_rectProps[rect]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_rect.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_rectProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.rect]]]
   @scala.inline
-  def MenuLink_rpMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[rp]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_rp.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.rp]]]
+  def MenuLink_rp: ComponentType[MenuLink_rpProps[rp]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_rp.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_rpProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.rp]]]
   @scala.inline
-  def MenuLink_rtMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[rt]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_rt.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.rt]]]
+  def MenuLink_rt: ComponentType[MenuLink_rtProps[rt]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_rt.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_rtProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.rt]]]
   @scala.inline
-  def MenuLink_rubyMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[ruby]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ruby.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ruby]]]
+  def MenuLink_ruby: ComponentType[MenuLink_rubyProps[ruby]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ruby.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_rubyProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ruby]]]
   @scala.inline
-  def MenuLink_sMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[s]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_s.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.s]]]
+  def MenuLink_s: ComponentType[MenuLink_sProps[s]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_s.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_sProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.s]]]
   @scala.inline
-  def MenuLink_sampMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[samp]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_samp.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.samp]]]
+  def MenuLink_samp: ComponentType[MenuLink_sampProps[samp]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_samp.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_sampProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.samp]]]
   @scala.inline
-  def MenuLink_scriptMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[script]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_script.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.script]]]
+  def MenuLink_script: ComponentType[MenuLink_scriptProps[script]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_script.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_scriptProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.script]]]
   @scala.inline
-  def MenuLink_sectionMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[section]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_section.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.section]]]
+  def MenuLink_section: ComponentType[MenuLink_sectionProps[section]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_section.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_sectionProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.section]]]
   @scala.inline
-  def MenuLink_selectMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[select]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_select.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.select]]]
+  def MenuLink_select: ComponentType[MenuLink_selectProps[select]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_select.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_selectProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.select]]]
   @scala.inline
-  def MenuLink_smallMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[small]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_small.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.small]]]
+  def MenuLink_small: ComponentType[MenuLink_smallProps[small]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_small.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_smallProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.small]]]
   @scala.inline
-  def MenuLink_sourceMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[source]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_source.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.source]]]
+  def MenuLink_source: ComponentType[MenuLink_sourceProps[source]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_source.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_sourceProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.source]]]
   @scala.inline
-  def MenuLink_spanMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[span]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_span.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.span]]]
+  def MenuLink_span: ComponentType[MenuLink_spanProps[span]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_span.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_spanProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.span]]]
   @scala.inline
-  def MenuLink_stopMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[stop]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_stop.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.stop]]]
+  def MenuLink_stop: ComponentType[MenuLink_stopProps[stop]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_stop.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_stopProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.stop]]]
   @scala.inline
-  def MenuLink_strongMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[strong]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_strong.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.strong]]]
+  def MenuLink_strong: ComponentType[MenuLink_strongProps[strong]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_strong.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_strongProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.strong]]]
   @scala.inline
-  def MenuLink_styleMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[style]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_style.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.style]]]
+  def MenuLink_style: ComponentType[MenuLink_styleProps[style]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_style.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_styleProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.style]]]
   @scala.inline
-  def MenuLink_subMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[sub]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_sub.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.sub]]]
+  def MenuLink_sub: ComponentType[MenuLink_subProps[sub]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_sub.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_subProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.sub]]]
   @scala.inline
-  def MenuLink_summaryMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[summary]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_summary.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.summary]]]
+  def MenuLink_summary: ComponentType[MenuLink_summaryProps[summary]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_summary.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_summaryProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.summary]]]
   @scala.inline
-  def MenuLink_supMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[sup]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_sup.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.sup]]]
+  def MenuLink_sup: ComponentType[MenuLink_supProps[sup]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_sup.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_supProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.sup]]]
   @scala.inline
-  def MenuLink_svgMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[svg]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_svg.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.svg]]]
+  def MenuLink_svg: ComponentType[MenuLink_svgProps[svg]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_svg.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_svgProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.svg]]]
   @scala.inline
-  def MenuLink_switchMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[switch]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_switch.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.switch]]]
+  def MenuLink_switch: ComponentType[MenuLink_switchProps[switch]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_switch.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_switchProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.switch]]]
   @scala.inline
-  def MenuLink_symbolMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[symbol]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_symbol.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.symbol]]]
+  def MenuLink_symbol: ComponentType[MenuLink_symbolProps[symbol]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_symbol.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_symbolProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.symbol]]]
   @scala.inline
-  def MenuLink_tableMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[table]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_table.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.table]]]
+  def MenuLink_table: ComponentType[MenuLink_tableProps[table]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_table.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_tableProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.table]]]
   @scala.inline
-  def MenuLink_tbodyMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[tbody]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_tbody.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.tbody]]]
+  def MenuLink_tbody: ComponentType[MenuLink_tbodyProps[tbody]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_tbody.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_tbodyProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.tbody]]]
   @scala.inline
-  def MenuLink_tdMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[td]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_td.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.td]]]
+  def MenuLink_td: ComponentType[MenuLink_tdProps[td]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_td.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_tdProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.td]]]
   @scala.inline
-  def MenuLink_templateMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[template]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_template.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.template]]]
+  def MenuLink_template: ComponentType[MenuLink_templateProps[template]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_template.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_templateProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.template]]]
   @scala.inline
-  def MenuLink_textMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[text]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_text.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.text]]]
+  def MenuLink_text: ComponentType[MenuLink_textProps[text]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_text.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_textProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.text]]]
   @scala.inline
-  def MenuLink_textPathMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[textPath]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_textPath.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.textPath]]]
+  def MenuLink_textPath: ComponentType[MenuLink_textPathProps[textPath]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_textPath.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_textPathProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.textPath]]]
   @scala.inline
-  def MenuLink_textareaMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[textarea]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_textarea.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.textarea]]]
+  def MenuLink_textarea: ComponentType[MenuLink_textareaProps[textarea]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_textarea.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_textareaProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.textarea]]]
   @scala.inline
-  def MenuLink_tfootMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[tfoot]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_tfoot.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.tfoot]]]
+  def MenuLink_tfoot: ComponentType[MenuLink_tfootProps[tfoot]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_tfoot.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_tfootProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.tfoot]]]
   @scala.inline
-  def MenuLink_thMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[th]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_th.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.th]]]
+  def MenuLink_th: ComponentType[MenuLink_thProps[th]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_th.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_thProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.th]]]
   @scala.inline
-  def MenuLink_theadMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[thead]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_thead.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.thead]]]
+  def MenuLink_thead: ComponentType[MenuLink_theadProps[thead]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_thead.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_theadProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.thead]]]
   @scala.inline
-  def MenuLink_timeMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[time]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_time.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.time]]]
+  def MenuLink_time: ComponentType[MenuLink_timeProps[time]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_time.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_timeProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.time]]]
   @scala.inline
-  def MenuLink_titleMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[title]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_title.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.title]]]
+  def MenuLink_title: ComponentType[MenuLink_titleProps[title]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_title.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_titleProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.title]]]
   @scala.inline
-  def MenuLink_trMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[tr]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_tr.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.tr]]]
+  def MenuLink_tr: ComponentType[MenuLink_trProps[tr]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_tr.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_trProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.tr]]]
   @scala.inline
-  def MenuLink_trackMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[track]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_track.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.track]]]
+  def MenuLink_track: ComponentType[MenuLink_trackProps[track]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_track.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_trackProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.track]]]
   @scala.inline
-  def MenuLink_tspanMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[tspan]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_tspan.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.tspan]]]
+  def MenuLink_tspan: ComponentType[MenuLink_tspanProps[tspan]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_tspan.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_tspanProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.tspan]]]
   @scala.inline
-  def MenuLink_uMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[u]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_u.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.u]]]
+  def MenuLink_u: ComponentType[MenuLink_uProps[u]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_u.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_uProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.u]]]
   @scala.inline
-  def MenuLink_ulMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[ul]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ul.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ul]]]
+  def MenuLink_ul: ComponentType[MenuLink_ulProps[ul]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_ul.asInstanceOf[typings.react.reactMod.ComponentType[MenuLink_ulProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.ul]]]
   @scala.inline
-  def MenuLink_useMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[use]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_use.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.use]]]
+  def MenuLink_use: ComponentType[MenuLink_useProps[use]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_use.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_useProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.use]]]
   @scala.inline
-  def MenuLink_varMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[`var`]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_var.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.`var`]]]
+  def MenuLink_var: ComponentType[MenuLink_varProps[`var`]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_var.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_varProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.`var`]]]
   @scala.inline
-  def MenuLink_videoMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[video]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_video.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.video]]]
+  def MenuLink_video: ComponentType[MenuLink_videoProps[video]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_video.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_videoProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.video]]]
   @scala.inline
-  def MenuLink_viewMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[view]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_view.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.view]]]
+  def MenuLink_view: ComponentType[MenuLink_viewProps[view]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_view.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_viewProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.view]]]
   @scala.inline
-  def MenuLink_wbrMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[wbr]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_wbr.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.wbr]]]
+  def MenuLink_wbr: ComponentType[MenuLink_wbrProps[wbr]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_wbr.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_wbrProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.wbr]]]
   @scala.inline
-  def MenuLink_webviewMenuLink: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[webview]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_webview.asInstanceOf[js.Dynamic].selectDynamic("<apply>").asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLinkProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.webview]]]
+  def MenuLink_webview: ComponentType[MenuLink_webviewProps[webview]] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuLink_webview.asInstanceOf[typings.react.reactMod.ComponentType[
+  MenuLink_webviewProps[typings.atReachMenuDashButton.atReachMenuDashButtonStrings.webview]]]
   @scala.inline
-  def MenuList: ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuListProps] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuList.asInstanceOf[typings.react.reactMod.ComponentType[typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuListProps]]
+  def MenuList: ComponentType[MenuListProps] = typings.atReachMenuDashButton.atReachMenuDashButtonMod.MenuList.asInstanceOf[typings.react.reactMod.ComponentType[MenuListProps]]
 }
 

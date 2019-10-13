@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/serialization/serializers", "TypeParameterReflectionSerializer")
 @js.native
 class TypeParameterReflectionSerializer ()
-  extends typings.typedoc.distLibSerializationSerializersReflectionsMod.TypeParameterReflectionSerializer
+  extends typings.typedoc.distLibSerializationSerializersReflectionsTypeDashParameterMod.TypeParameterReflectionSerializer
 

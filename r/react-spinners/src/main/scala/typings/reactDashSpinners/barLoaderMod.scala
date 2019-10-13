@@ -1,6 +1,6 @@
 package typings.reactDashSpinners
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashSpinners.barLoaderMod.Loader
 import typings.reactDashSpinners.interfacesMod.LoaderHeightWidthProps
 import typings.reactDashSpinners.interfacesMod.StyleFunction
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object barLoaderMod extends js.Object {
   @js.native
   class Loader ()
-    extends PureComponent[LoaderHeightWidthProps, js.Object, js.Any] {
+    extends Component[LoaderHeightWidthProps, js.Object, js.Any] {
     var style: StyleFunctionWithIndex = js.native
     var wrapper: StyleFunction = js.native
   }

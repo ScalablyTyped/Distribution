@@ -1,7 +1,7 @@
 package typings.atJupyterlabCsvviewer.libModelMod
 
 import typings.atJupyterlabCsvviewer.libModelMod.DSVModel.IOptions
-import typings.atPhosphorDatagrid.atPhosphorDatagridMod.DataModel
+import typings.atPhosphorDatagrid.libDatamodelMod.DataModel
 import typings.atPhosphorDatagrid.libDatamodelMod.DataModel.CellRegion
 import typings.atPhosphorDatagrid.libDatamodelMod.DataModel.ChangedArgs
 import typings.atPhosphorDatagrid.libDatamodelMod.DataModel.ColumnRegion

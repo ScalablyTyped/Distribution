@@ -1,6 +1,6 @@
 [debug] PhaseRunner.scala:84 Success [id => multiplexjs, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/multiplexjs/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/multiplexjs),TsIdentLibrarySimple(multiplexjs)),TsIdentModule(None,List(multiplexjs))) [id => multiplexjs, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(multiplexjs) [id => multiplexjs, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(multiplexjs) [id => multiplexjs, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(@@iterator) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Iterable))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(next) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Iterator))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(next) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Enumerator))] 

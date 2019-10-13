@@ -1,12 +1,14 @@
 package typings.reactDashRte.reactDashRteMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-rte", JSImport.Default)
 @js.native
-class default () extends RichTextEditor
+class default ()
+  extends Component[Props, js.Any, js.Any]
 
 /* static members */
 @JSImport("react-rte", JSImport.Default)

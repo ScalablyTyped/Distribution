@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsCollectionMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.reactDashVirtualized.Anon_Align
 import typings.reactDashVirtualized.Anon_Arialabel
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-virtualized/dist/es/Collection", "Collection")
 @js.native
 class Collection ()
-  extends PureComponent[CollectionProps, js.Object, js.Any] {
+  extends Component[CollectionProps, js.Object, js.Any] {
   /** CellLayoutManager interface */
   def calculateSizeAndPositionData(): Unit = js.native
   def cellRenderers(params: Anon_IsScrolling with SizeInfo): js.Array[ReactNode] = js.native

@@ -12,24 +12,40 @@ import scala.scalajs.js.annotation._
 @js.native
 object redisClientFactory extends js.Object {
   @js.native
-  class AbortError ()
-    extends typings.redis.redisMod.AbortError
+  class AbortError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class AggregateError ()
-    extends typings.redis.redisMod.AggregateError
+  class AggregateError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
   class ParserError ()
     extends typings.redis.redisMod.ParserError
   
   @js.native
-  class RedisError ()
-    extends typings.redis.redisMod.RedisError
+  class RedisError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   @js.native
-  class ReplyError ()
-    extends typings.redis.redisMod.ReplyError
+  class ReplyError () extends Error {
+    /* CompleteClass */
+    override var message: String = js.native
+    /* CompleteClass */
+    override var name: String = js.native
+  }
   
   val Multi: Instantiable0[typings.redis.redisMod.Multi] = js.native
   val RedisClient: Instantiable1[/* options */ ClientOpts, typings.redis.redisMod.RedisClient] = js.native

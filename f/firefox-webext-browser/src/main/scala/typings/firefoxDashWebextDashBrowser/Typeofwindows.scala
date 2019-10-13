@@ -31,8 +31,8 @@ trait Typeofwindows extends js.Object {
     */
   val onRemoved: WebExtEvent[js.Function1[/* windowId */ Double, Unit]] = js.native
   /** Creates (opens) a new browser with any optional sizing, position or default URL provided. */
-  def create(): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
-  def create(createData: Anon_AllowScriptsToClose): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
+  def create(): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
+  def create(createData: Anon_AllowScriptsToClose): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
   /* windows functions */
   /** Gets details about a window. */
   def get(windowId: Double): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
@@ -56,6 +56,6 @@ trait Typeofwindows extends js.Object {
     * Updates the properties of a window. Specify only the properties that you want to change; unspecified properties
     * will be left unchanged.
     */
-  def update(windowId: Double, updateInfo: Anon_DrawAttention): js.Promise[js.UndefOr[typings.firefoxDashWebextDashBrowser.browser.windows.Window]] = js.native
+  def update(windowId: Double, updateInfo: Anon_DrawAttention): js.Promise[typings.firefoxDashWebextDashBrowser.browser.windows.Window] = js.native
 }
 

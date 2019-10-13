@@ -1,7 +1,8 @@
 package typings.reactDashBootstrap.libNavbarMod
 
 import typings.react.NativeMouseEvent
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import scala.scalajs.js
@@ -11,7 +12,9 @@ import scala.scalajs.js.annotation._
 /**
   * the classes below aren't present in lib/
   */
-trait NavbarLinkProps extends HTMLProps[NavbarLink] {
+trait NavbarLinkProps
+  extends AllHTMLAttributes[NavbarLink]
+     with ClassAttributes[NavbarLink] {
   @JSName("href")
   var href_NavbarLinkProps: String
   @JSName("onClick")
@@ -22,11 +25,13 @@ object NavbarLinkProps {
   @scala.inline
   def apply(
     href: String,
-    HTMLProps: HTMLProps[NavbarLink] = null,
+    AllHTMLAttributes: AllHTMLAttributes[NavbarLink] = null,
+    ClassAttributes: ClassAttributes[NavbarLink] = null,
     onClick: MouseEvent[_, NativeMouseEvent] => Unit = null
   ): NavbarLinkProps = {
     val __obj = js.Dynamic.literal(href = href)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[NavbarLinkProps]
   }

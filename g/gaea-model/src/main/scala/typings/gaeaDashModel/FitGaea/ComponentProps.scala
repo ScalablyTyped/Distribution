@@ -1,13 +1,15 @@
 package typings.gaeaDashModel.FitGaea
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ComponentProps
-  extends HTMLProps[js.Any]
+  extends AllHTMLAttributes[js.Any]
+     with ClassAttributes[js.Any]
      with /**
   * 渲染编辑回调
   */
@@ -64,7 +66,8 @@ object ComponentProps {
   def apply(
     gaeaName: String,
     gaeaUniqueKey: String,
-    HTMLProps: HTMLProps[js.Any] = null,
+    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
+    ClassAttributes: ClassAttributes[js.Any] = null,
     StringDictionary: /**
     * 渲染编辑回调
     */
@@ -81,7 +84,8 @@ object ComponentProps {
     gaeaVariables: StringDictionary[VariableData] = null
   ): ComponentProps = {
     val __obj = js.Dynamic.literal(gaeaName = gaeaName, gaeaUniqueKey = gaeaUniqueKey)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(canDragIn)) __obj.updateDynamic("canDragIn")(canDragIn)
     if (gaeaData != null) __obj.updateDynamic("gaeaData")(gaeaData)

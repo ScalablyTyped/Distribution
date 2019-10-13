@@ -5,11 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReceiveTask extends Task {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.bpmnDashModdle.bpmnDashModdleMod.TypeDerived because Already inherited
+- typings.bpmnDashModdle.bpmnDashModdleMod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ trait ReceiveTask extends Activity {
   var implementation: String
+  var incomingConversationLinks: js.Array[ConversationLink]
   var instantiate: Boolean
   var messageRef: Message
   var operationRef: Operation
+  var outgoingConversationLinks: js.Array[ConversationLink]
 }
 
 object ReceiveTask {

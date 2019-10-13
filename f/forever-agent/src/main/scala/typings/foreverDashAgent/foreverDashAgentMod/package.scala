@@ -8,5 +8,5 @@ package object foreverDashAgentMod {
   import typings.node.httpMod.Agent
 
   type ForeverAgent = Agent
-  type ForeverAgentSSL = ForeverAgent
+  type ForeverAgentSSL = Agent
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("ASPxClientFinancialIndicatorPoint")
 @js.native
-class ASPxClientFinancialIndicatorPoint () extends ASPxClientWebChartRequiredElement {
+class ASPxClientFinancialIndicatorPoint () extends ASPxClientWebChartElement {
   /**
     * Gets the argument of the financial indicator's point.
     */

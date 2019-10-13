@@ -1,8 +1,12 @@
 package typings.atExpoVectorDashIcons.atExpoVectorDashIconsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.reactMod.Component
 import typings.reactDashNativeDashVectorDashIcons.entypoMod.default
+import typings.reactDashNativeDashVectorDashIcons.iconMod.IconButtonProps
 import typings.reactDashNativeDashVectorDashIcons.iconMod.ImageSource
+import typings.reactDashNativeDashVectorDashIcons.iconMod.TabBarItemIOSProps
+import typings.reactDashNativeDashVectorDashIcons.iconMod.ToolbarAndroidProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,19 +21,19 @@ class Entypo () extends default
 object Entypo extends js.Object {
   @js.native
   class Button ()
-    extends typings.reactDashNativeDashVectorDashIcons.entypoMod.default.Button
+    extends Component[IconButtonProps, js.Any, js.Any]
   
   @js.native
   class TabBarItem ()
-    extends typings.reactDashNativeDashVectorDashIcons.entypoMod.default.TabBarItem
+    extends Component[TabBarItemIOSProps, js.Any, js.Any]
   
   @js.native
   class TabBarItemIOS ()
-    extends typings.reactDashNativeDashVectorDashIcons.entypoMod.default.TabBarItemIOS
+    extends Component[TabBarItemIOSProps, js.Any, js.Any]
   
   @js.native
   class ToolbarAndroid ()
-    extends typings.reactDashNativeDashVectorDashIcons.entypoMod.default.ToolbarAndroid
+    extends Component[ToolbarAndroidProps, js.Any, js.Any]
   
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native

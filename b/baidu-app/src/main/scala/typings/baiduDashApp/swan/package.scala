@@ -48,12 +48,12 @@ package object swan {
   type DefaultMethods[V] = StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type DefaultProps = js.Object | (Record[String, js.Any])
   type ExtendedComponent[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = (CombinedInstance[Instance, Data, Methods, Props]) with (Component[Data, Props])
-  type FormEvent = BuiltInEvent[form, Anon_NameValue]
+  type FormEvent = BaseEvent[form, Anon_NameValue]
   /**
   	 * 指定focus时的光标位置
   	 * @version 1.5.0
   	 */
-  type InputEvent = BuiltInEvent[input, Anon_Cursor]
+  type InputEvent = BaseEvent[input, Anon_Cursor]
   type Prop[T] = js.Function0[T] | Anon_Args[T]
   type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
@@ -64,7 +64,7 @@ package object swan {
   // #region 网络API列表
   // 发起请求
   type RequestHeader = StringDictionary[String]
-  type ScrollEvent = BuiltInEvent[scroll, js.Object]
+  type ScrollEvent = BaseEvent[scroll, js.Object]
   type TapEvent = TouchEvent[tap]
   type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (ThisType[CombinedInstance[V, Data, Methods, Props]])
   type TouchCancelEvent = TouchEvent[touchcancel]

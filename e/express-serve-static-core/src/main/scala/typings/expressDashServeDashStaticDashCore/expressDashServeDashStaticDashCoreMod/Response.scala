@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Response
   extends ServerResponse
-     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Global.Express.Response {
+     with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod._Global_.Express.Response {
   @JSName("app")
   var app_Original: Application = js.native
   var charset: String = js.native
@@ -56,10 +56,6 @@ trait Response
     */
   @JSName("send")
   var send_Original: Send = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
@@ -140,12 +136,6 @@ trait Response
   def download(path: String, filename: String, options: js.Any): Unit = js.native
   def download(path: String, filename: String, options: js.Any, fn: Errback): Unit = js.native
   def download(path: String, fn: Errback): Unit = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
   /**
     * Respond to the Acceptable formats using an `obj`
     * of mime-type callbacks.
@@ -201,8 +191,6 @@ trait Response
   def format(obj: js.Any): Response = js.native
   /** Get value for header `field`. */
   def get(field: String): String = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
   def header(field: String): Response = js.native
   def header(field: String, value: String): Response = js.native
   def header(field: js.Any): Response = js.native
@@ -241,14 +229,6 @@ trait Response
     *    });
     */
   def links(links: js.Any): Response = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   /**
     * Set the location header to `url`.
     *
@@ -276,31 +256,6 @@ trait Response
     *      res.location('/login');
     */
   def location(url: String): Response = js.native
-  /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
   def redirect(status: Double, url: String): Unit = js.native
   /**
     * Redirect to the given `url` with optional response `status`
@@ -320,16 +275,6 @@ trait Response
     */
   def redirect(url: String): Unit = js.native
   def redirect(url: String, status: Double): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   /**
     * Render `view` with the given `options` and optional callback `fn`.
     * When a callback function is given a response will _not_ be made
@@ -444,8 +389,6 @@ trait Response
     * Aliased as `res.header()`.
     */
   def set(field: js.Any): Response = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
   /**
     * Set status `code`.
     */

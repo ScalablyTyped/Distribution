@@ -1,6 +1,5 @@
 package typings.atPollyjsPersisterDashFs
 
-import typings.atPollyjsPersisterDashFs.atPollyjsPersisterDashFsMod.FSPersister
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object atPollyjsPersisterDashFsMod extends js.Object {
   @js.native
-  class default () extends FSPersister
+  class default ()
+    extends typings.atPollyjsPersister.atPollyjsPersisterMod.default
   
   type FSPersister = typings.atPollyjsPersister.atPollyjsPersisterMod.default
 }

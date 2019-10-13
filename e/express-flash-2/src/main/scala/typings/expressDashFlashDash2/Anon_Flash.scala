@@ -1,6 +1,6 @@
 package typings.expressDashFlashDash2
 
-import typings.expressDashFlashDash2.expressDashFlashDash2Mod.Global.Express.Flash
+import typings.expressDashFlashDash2.expressDashFlashDash2Mod._Global_.Express.Flash
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

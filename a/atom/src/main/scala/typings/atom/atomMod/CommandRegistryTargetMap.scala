@@ -1,7 +1,7 @@
 package typings.atom.atomMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atom.atomMod.Global.HTMLElementTagNameMap
+import typings.atom.atomMod._Global_.HTMLElementTagNameMap
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

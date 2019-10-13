@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_Animation
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylesideleftrightcollaps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "SplitterSide")
 @js.native
 class SplitterSide ()
-  extends Component[Anon_Animation, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylesideleftrightcollaps, js.Any, js.Any]
 

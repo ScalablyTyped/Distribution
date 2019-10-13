@@ -1,11 +1,11 @@
 package typings.fullcalendar.srcMainMod
 
+import typings.fullcalendar.taskQueueMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("fullcalendar/src/main", "TaskQueue")
 @js.native
-class TaskQueue ()
-  extends typings.fullcalendar.srcExportsMod.TaskQueue
+class TaskQueue () extends Default
 

@@ -1,12 +1,14 @@
 package typings.reactDashNumericDashInput.reactDashNumericDashInputMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-numeric-input", JSImport.Namespace)
 @js.native
-class ^ () extends NumericInput
+class ^ ()
+  extends Component[NumericInputProps, NumericInputState, js.Any]
 
 @JSImport("react-numeric-input", JSImport.Namespace)
 @js.native

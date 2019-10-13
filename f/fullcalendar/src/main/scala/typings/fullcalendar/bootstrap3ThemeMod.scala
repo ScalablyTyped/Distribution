@@ -1,6 +1,5 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.bootstrap3ThemeMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,8 @@ object bootstrap3ThemeMod extends js.Object {
     extends typings.fullcalendar.themeMod.default
   
   @js.native
-  class default () extends Default
+  class default ()
+    extends typings.fullcalendar.themeMod.default
   
 }
 

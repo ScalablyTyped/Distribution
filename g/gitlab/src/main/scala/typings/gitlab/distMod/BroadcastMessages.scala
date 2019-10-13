@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "BroadcastMessages")
 @js.native
 class BroadcastMessages ()
-  extends typings.gitlab.distServicesMod.BroadcastMessages
+  extends typings.gitlab.distServicesBroadcastMessagesMod.BroadcastMessages
 

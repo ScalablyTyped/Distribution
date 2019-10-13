@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_LockOnDrag
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylemodifierstringtappab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ListItem")
 @js.native
 class ListItem ()
-  extends Component[Anon_LockOnDrag, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylemodifierstringtappab, js.Any, js.Any]
 

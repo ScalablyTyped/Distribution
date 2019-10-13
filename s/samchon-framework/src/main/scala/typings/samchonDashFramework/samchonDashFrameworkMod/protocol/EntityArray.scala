@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon-framework", "protocol.EntityArray")
 @js.native
 abstract class EntityArray[T /* <: IEntity */] ()
-  extends typings.samchon.samchonMod.protocol.EntityArray[T]
+  extends typings.samchon.protocolEntityEntityArrayMod.EntityArray[T]
 

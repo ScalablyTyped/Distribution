@@ -1,5 +1,7 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libSwitchSwitchMod.SwitchProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +11,11 @@ import scala.scalajs.js.annotation._
 object libSwitchMod extends js.Object {
   @js.native
   class Switch ()
-    extends typings.reactDashToolbox.libSwitchSwitchMod.Switch
+    extends Component[SwitchProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libSwitchSwitchMod.Switch
+    extends Component[SwitchProps, js.Object, js.Any]
   
 }
 

@@ -1,7 +1,8 @@
 package typings.reactstrap.libNavMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.ReactType
 import typings.reactstrap.reactstrapMod.CSSModule
 import typings.std.HTMLUListElement
@@ -10,7 +11,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavProps
-  extends HTMLProps[HTMLUListElement]
+  extends AllHTMLAttributes[HTMLUListElement]
+     with ClassAttributes[HTMLUListElement]
      with /* key */ StringDictionary[js.Any] {
   var card: js.UndefOr[Boolean] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
@@ -27,7 +29,8 @@ trait NavProps
 object NavProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[HTMLUListElement] = null,
+    AllHTMLAttributes: AllHTMLAttributes[HTMLUListElement] = null,
+    ClassAttributes: ClassAttributes[HTMLUListElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     card: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -42,7 +45,8 @@ object NavProps {
     vertical: Boolean | String = null
   ): NavProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(card)) __obj.updateDynamic("card")(card)
     if (className != null) __obj.updateDynamic("className")(className)

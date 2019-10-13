@@ -1,19 +1,27 @@
 package typings.reactDashBootstrap.libFormControlFeedbackMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormControlFeedbackProps extends HTMLProps[FormControlFeedback] {
+trait FormControlFeedbackProps
+  extends AllHTMLAttributes[FormControlFeedback]
+     with ClassAttributes[FormControlFeedback] {
   var bsClass: js.UndefOr[String] = js.undefined
 }
 
 object FormControlFeedbackProps {
   @scala.inline
-  def apply(HTMLProps: HTMLProps[FormControlFeedback] = null, bsClass: String = null): FormControlFeedbackProps = {
+  def apply(
+    AllHTMLAttributes: AllHTMLAttributes[FormControlFeedback] = null,
+    ClassAttributes: ClassAttributes[FormControlFeedback] = null,
+    bsClass: String = null
+  ): FormControlFeedbackProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     __obj.asInstanceOf[FormControlFeedbackProps]
   }

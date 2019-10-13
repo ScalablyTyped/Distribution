@@ -1,18 +1,26 @@
 package typings.downshift.downshiftMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GetInputPropsOptions extends HTMLProps[HTMLInputElement]
+trait GetInputPropsOptions
+  extends AllHTMLAttributes[HTMLInputElement]
+     with ClassAttributes[HTMLInputElement]
 
 object GetInputPropsOptions {
   @scala.inline
-  def apply(HTMLProps: HTMLProps[HTMLInputElement] = null, disabled: js.UndefOr[Boolean] = js.undefined): GetInputPropsOptions = {
+  def apply(
+    AllHTMLAttributes: AllHTMLAttributes[HTMLInputElement] = null,
+    ClassAttributes: ClassAttributes[HTMLInputElement] = null,
+    disabled: js.UndefOr[Boolean] = js.undefined
+  ): GetInputPropsOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     __obj.asInstanceOf[GetInputPropsOptions]
   }

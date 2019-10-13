@@ -1,7 +1,7 @@
 package typings.atJupyterlabStatusbar.libDefaultsKernelStatusMod.KernelStatus
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
 import typings.atJupyterlabApputils.libClientsessionMod.IClientSession
+import typings.atJupyterlabApputils.libVdomMod.VDomModel
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`

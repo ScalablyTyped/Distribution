@@ -21,9 +21,9 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesDragdropInterfacesMod
 import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js

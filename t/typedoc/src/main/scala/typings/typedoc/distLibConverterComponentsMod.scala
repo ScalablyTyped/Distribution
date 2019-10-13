@@ -1,7 +1,6 @@
 package typings.typedoc
 
 import typings.std.ClassDecorator
-import typings.typedoc.distLibConverterComponentsMod.ConverterComponent
 import typings.typedoc.distLibConverterComponentsMod.ConverterTypeComponent
 import typings.typedoc.distLibConverterComponentsMod.TypeTypeConverter
 import typings.typedoc.distLibConverterContextMod.Context
@@ -23,13 +22,13 @@ object distLibConverterComponentsMod extends js.Object {
   abstract class ConverterComponent () extends AbstractComponent[Converter]
   
   @js.native
-  abstract class ConverterNodeComponent[T /* <: Node */] () extends ConverterComponent {
+  abstract class ConverterNodeComponent[T /* <: Node */] () extends AbstractComponent[Converter] {
     var supports: js.Array[SyntaxKind] = js.native
     def convert(context: Context, node: T): js.UndefOr[Reflection] = js.native
   }
   
   @js.native
-  abstract class ConverterTypeComponent () extends ConverterComponent {
+  abstract class ConverterTypeComponent () extends AbstractComponent[Converter] {
     var priority: Double = js.native
   }
   
@@ -37,7 +36,6 @@ object distLibConverterComponentsMod extends js.Object {
   - typings.typedoc.distLibUtilsComponentMod.ComponentHost because Already inherited
   - typings.typedoc.distLibUtilsEventsMod.EventDispatcher because Already inherited
   - typings.typedoc.distLibUtilsComponentMod.AbstractComponent because Already inherited
-  - typings.typedoc.distLibConverterComponentsMod.ConverterComponent because Already inherited
   - typings.typedoc.distLibConverterComponentsMod.ConverterTypeComponent because Already inherited
   - typings.typedoc.distLibConverterComponentsMod.TypeNodeConverter because var conflicts: _componentOptions, _componentOwner, _events, _listeners, _listeningTo, _savedListenId, componentName, internalOn, priority. Inlined supportsNode, supportsNode, convertNode, convertNode */ @js.native
   trait TypeConverter[T /* <: Type */, N /* <: Node */] extends TypeTypeConverter[T] {

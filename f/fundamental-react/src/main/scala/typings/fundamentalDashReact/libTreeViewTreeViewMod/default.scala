@@ -1,5 +1,6 @@
 package typings.fundamentalDashReact.libTreeViewTreeViewMod
 
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
@@ -8,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fundamental-react/lib/TreeView/TreeView", JSImport.Default)
 @js.native
-class default () extends TreeView
+class default ()
+  extends Component[TreeViewProps, js.Object, js.Any]
 
 /* static members */
 @JSImport("fundamental-react/lib/TreeView/TreeView", JSImport.Default)

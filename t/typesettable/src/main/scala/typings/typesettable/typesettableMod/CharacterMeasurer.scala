@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("typesettable", "CharacterMeasurer")
 @js.native
 class CharacterMeasurer ()
-  extends typings.typesettable.buildSrcMeasurersMod.CharacterMeasurer
+  extends typings.typesettable.buildSrcMeasurersCharacterMeasurerMod.CharacterMeasurer
 

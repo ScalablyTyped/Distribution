@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.Types.Physics.Arcade
 
+import typings.phaser.Phaser.Geom.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,6 +46,10 @@ trait PhysicsGroupDefaults extends js.Object {
     * As {@link Phaser.Physics.Arcade.Body#setBounceY}.
     */
   var setBounceY: Double
+  /**
+    * As {@link Phaser.Physics.Arcade.Body#setBoundsRectangle}.
+    */
+  var setBoundsRectangle: Rectangle
   /**
     * As {@link Phaser.Physics.Arcade.Body#setCollideWorldBounds}.
     */
@@ -108,6 +113,7 @@ object PhysicsGroupDefaults {
     setAngularVelocity: Double,
     setBounceX: Double,
     setBounceY: Double,
+    setBoundsRectangle: Rectangle,
     setCollideWorldBounds: Boolean,
     setDragX: Double,
     setDragY: Double,
@@ -121,7 +127,7 @@ object PhysicsGroupDefaults {
     setVelocityX: Double,
     setVelocityY: Double
   ): PhysicsGroupDefaults = {
-    val __obj = js.Dynamic.literal(setAccelerationX = setAccelerationX, setAccelerationY = setAccelerationY, setAllowDrag = setAllowDrag, setAllowGravity = setAllowGravity, setAllowRotation = setAllowRotation, setAngularAcceleration = setAngularAcceleration, setAngularDrag = setAngularDrag, setAngularVelocity = setAngularVelocity, setBounceX = setBounceX, setBounceY = setBounceY, setCollideWorldBounds = setCollideWorldBounds, setDragX = setDragX, setDragY = setDragY, setEnable = setEnable, setFrictionX = setFrictionX, setFrictionY = setFrictionY, setGravityX = setGravityX, setGravityY = setGravityY, setImmovable = setImmovable, setMass = setMass, setVelocityX = setVelocityX, setVelocityY = setVelocityY)
+    val __obj = js.Dynamic.literal(setAccelerationX = setAccelerationX, setAccelerationY = setAccelerationY, setAllowDrag = setAllowDrag, setAllowGravity = setAllowGravity, setAllowRotation = setAllowRotation, setAngularAcceleration = setAngularAcceleration, setAngularDrag = setAngularDrag, setAngularVelocity = setAngularVelocity, setBounceX = setBounceX, setBounceY = setBounceY, setBoundsRectangle = setBoundsRectangle, setCollideWorldBounds = setCollideWorldBounds, setDragX = setDragX, setDragY = setDragY, setEnable = setEnable, setFrictionX = setFrictionX, setFrictionY = setFrictionY, setGravityX = setGravityX, setGravityY = setGravityY, setImmovable = setImmovable, setMass = setMass, setVelocityX = setVelocityX, setVelocityY = setVelocityY)
   
     __obj.asInstanceOf[PhysicsGroupDefaults]
   }

@@ -5,7 +5,7 @@ import typings.angular.Anon_CodeName
 import typings.angular.JQLite
 import typings.angular.JQuery
 import typings.angular.JQueryStatic
-import typings.angular.angularMod.Global.Function
+import typings.angular.angularMod._Global_.Function
 import typings.angular.angularMod.auto.IInjectorService
 import typings.std.ArrayLike
 import typings.std.Document
@@ -171,7 +171,7 @@ trait IAngularStatic extends js.Object {
   def isDate(value: js.Any): /* is std.Date */ Boolean = js.native
   def isDefined(value: js.Any): Boolean = js.native
   def isElement(value: js.Any): Boolean = js.native
-  def isFunction(value: js.Any): /* is angular.angular.Global.Function */ Boolean = js.native
+  def isFunction(value: js.Any): /* is angular.angular._Global_.Function */ Boolean = js.native
   def isNumber(value: js.Any): /* is number */ Boolean = js.native
   def isObject(value: js.Any): /* is std.Object */ Boolean = js.native
   @JSName("isObject")

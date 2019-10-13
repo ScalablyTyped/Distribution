@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsAutocompleteAutoCompleteMod.AutoCompleteProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object autocompleteMod extends js.Object {
   @js.native
   class AutoComplete ()
-    extends typings.primereact.componentsAutocompleteAutoCompleteMod.AutoComplete
+    extends Component[AutoCompleteProps, js.Any, js.Any]
   
 }
 

@@ -1,20 +1,27 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DialogTitleProps
-  extends HTMLProps[js.Any]
+  extends AllHTMLAttributes[js.Any]
+     with ClassAttributes[js.Any]
      with CustomRenderedComponent
 
 object DialogTitleProps {
   @scala.inline
-  def apply(CustomRenderedComponent: CustomRenderedComponent = null, HTMLProps: HTMLProps[js.Any] = null): DialogTitleProps = {
+  def apply(
+    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
+    ClassAttributes: ClassAttributes[js.Any] = null,
+    CustomRenderedComponent: CustomRenderedComponent = null
+  ): DialogTitleProps = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
     __obj.asInstanceOf[DialogTitleProps]
   }
 }

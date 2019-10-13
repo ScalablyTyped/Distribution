@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object reactDashSortableDashHocMod {
   import typings.react.NativeMouseEvent
-  import typings.react.reactMod.ComponentClass
-  import typings.react.reactMod.ComponentState
-  import typings.react.reactMod.Global.JSX.Element
   import typings.react.reactMod.MouseEvent
   import typings.react.reactMod.ReactElement
   import typings.react.reactMod.TouchEvent
@@ -22,6 +19,4 @@ package object reactDashSortableDashHocMod {
   type SortEventWithTag = SortEvent with Anon_Target
   type SortMoveHandler = js.Function1[/* event */ SortEvent, Unit]
   type SortStartHandler = js.Function2[/* sort */ SortStart, /* event */ SortEvent, Unit]
-  type WrappedComponent[P] = (ComponentClass[P, ComponentState]) | WrappedComponentFactory[P]
-  type WrappedComponentFactory[P] = js.Function1[/* props */ P, Element]
 }

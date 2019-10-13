@@ -1,6 +1,5 @@
 package typings.emberDashData.emberDashDataMod.DS
 
-import typings.ember.emberMod.default.Object
 import typings.rsvp.rsvpMod.default.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember-data", "DS.Adapter")
 @js.native
-class Adapter () extends Object {
+class Adapter ()
+  extends typings.atEmberObject.atEmberObjectMod.default {
   /**
     * By default the store will try to coalesce all `fetchRecord` calls within the same runloop
     * into as few requests as possible by calling groupRecordsForFindMany and passing it into a findMany call.

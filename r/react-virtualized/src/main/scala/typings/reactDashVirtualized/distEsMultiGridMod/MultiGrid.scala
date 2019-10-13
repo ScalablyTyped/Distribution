@@ -1,6 +1,6 @@
 package typings.reactDashVirtualized.distEsMultiGridMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_
 import typings.reactDashVirtualized.Anon_ClassNameBottomLeftGrid
 import typings.reactDashVirtualized.Anon_ColumnIndexRowIndex
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-virtualized/dist/es/MultiGrid", "MultiGrid")
 @js.native
 class MultiGrid ()
-  extends PureComponent[MultiGridProps, MultiGridState, js.Any] {
+  extends Component[MultiGridProps, MultiGridState, js.Any] {
   def forceUpdateGrids(): Unit = js.native
   /** See Grid#invalidateCellSizeAfterRender */
   def invalidateCellSizeAfterRender(): Unit = js.native

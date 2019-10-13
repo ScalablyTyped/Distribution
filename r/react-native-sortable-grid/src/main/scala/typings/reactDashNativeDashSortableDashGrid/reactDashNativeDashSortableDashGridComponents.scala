@@ -1,17 +1,14 @@
 package typings.reactDashNativeDashSortableDashGrid
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.SortableGridProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSortableDashGridComponents extends reactDashNativeDashSortableDashGridProps {
   @scala.inline
-  def DefaultCls: ComponentType[SortableGridProps] = js.constructorOf[typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.defaultCls].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.SortableGridProps]]
+  def DefaultCls: ComponentType[DefaultClsProps] = js.constructorOf[typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.defaultCls].asInstanceOf[typings.react.reactMod.ComponentType[DefaultClsProps]]
   @scala.inline
-  def ReactDashNativeDashSortableDashGrid: ComponentType[SortableGridProps] = typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.default.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.SortableGridProps]]
+  def ReactDashNativeDashSortableDashGrid: ComponentType[ReactDashNativeDashSortableDashGridProps] = typings.reactDashNativeDashSortableDashGrid.reactDashNativeDashSortableDashGridMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ReactDashNativeDashSortableDashGridProps]]
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object libTypesMod {
   import typings.immutabilityDashHelper.immutabilityDashHelperMod.Spec
-  import typings.react.reactMod.Global.JSX.Element
+  import typings.react.reactMod._Global_.JSX.Element
 
   type CreateNode[T /* <: MosaicKey */] = js.Function1[/* repeated */ js.Any, js.Promise[MosaicNode[T]] | MosaicNode[T]]
   type MosaicKey = String | Double

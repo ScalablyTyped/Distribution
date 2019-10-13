@@ -1,0 +1,101 @@
+package typings.squareDashConnect.squareDashConnectMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.squareDashConnect.squareDashConnectStrings.INTERNAL_SERVER_ERROR
+  - typings.squareDashConnect.squareDashConnectStrings.UNAUTHORIZED
+  - typings.squareDashConnect.squareDashConnectStrings.ACCESS_TOKEN_EXPIRED
+  - typings.squareDashConnect.squareDashConnectStrings.ACCESS_TOKEN_REVOKED
+  - typings.squareDashConnect.squareDashConnectStrings.FORBIDDEN
+  - typings.squareDashConnect.squareDashConnectStrings.INSUFFICIENT_SCOPES
+  - typings.squareDashConnect.squareDashConnectStrings.APPLICATION_DISABLED
+  - typings.squareDashConnect.squareDashConnectStrings.V1_APPLICATION
+  - typings.squareDashConnect.squareDashConnectStrings.V1_ACCESS_TOKEN
+  - typings.squareDashConnect.squareDashConnectStrings.CARD_PROCESSING_NOT_ENABLED
+  - typings.squareDashConnect.squareDashConnectStrings.BAD_REQUEST
+  - typings.squareDashConnect.squareDashConnectStrings.MISSING_REQUIRED_PARAMETER
+  - typings.squareDashConnect.squareDashConnectStrings.INCORRECT_TYPE
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_TIME
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_TIME_RANGE
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_VALUE
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_CURSOR
+  - typings.squareDashConnect.squareDashConnectStrings.UNKNOWN_QUERY_PARAMETER
+  - typings.squareDashConnect.squareDashConnectStrings.CONFLICTING_PARAMETERS
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_JSON_BODY
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_SORT_ORDER
+  - typings.squareDashConnect.squareDashConnectStrings.VALUE_REGEX_MISMATCH
+  - typings.squareDashConnect.squareDashConnectStrings.VALUE_TOO_SHORT
+  - typings.squareDashConnect.squareDashConnectStrings.VALUE_TOO_LONG
+  - typings.squareDashConnect.squareDashConnectStrings.VALUE_TOO_LOW
+  - typings.squareDashConnect.squareDashConnectStrings.VALUE_TOO_HIGH
+  - typings.squareDashConnect.squareDashConnectStrings.VALUE_EMPTY
+  - typings.squareDashConnect.squareDashConnectStrings.ARRAY_LENGTH_TOO_LONG
+  - typings.squareDashConnect.squareDashConnectStrings.ARRAY_LENGTH_TOO_SHORT
+  - typings.squareDashConnect.squareDashConnectStrings.ARRAY_EMPTY
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_BOOLEAN
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_INTEGER
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_FLOAT
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_STRING
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_OBJECT
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_ARRAY
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_MAP
+  - typings.squareDashConnect.squareDashConnectStrings.EXPECTED_BASE64_ENCODED_BYTE_ARRAY
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_ARRAY_VALUE
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_ENUM_VALUE
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_CONTENT_TYPE
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_FORM_VALUE
+  - typings.squareDashConnect.squareDashConnectStrings.ONE_INSTRUMENT_EXPECTED
+  - typings.squareDashConnect.squareDashConnectStrings.NO_FIELDS_SET
+  - typings.squareDashConnect.squareDashConnectStrings.DEPRECATED_FIELD_SET
+  - typings.squareDashConnect.squareDashConnectStrings.CARD_EXPIRED
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_EXPIRATION
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_EXPIRATION_YEAR
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_EXPIRATION_DATE
+  - typings.squareDashConnect.squareDashConnectStrings.UNSUPPORTED_CARD_BRAND
+  - typings.squareDashConnect.squareDashConnectStrings.UNSUPPORTED_ENTRY_METHOD
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_ENCRYPTED_CARD
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_CARD
+  - typings.squareDashConnect.squareDashConnectStrings.DELAYED_TRANSACTION_EXPIRED
+  - typings.squareDashConnect.squareDashConnectStrings.DELAYED_TRANSACTION_CANCELED
+  - typings.squareDashConnect.squareDashConnectStrings.DELAYED_TRANSACTION_CAPTURED
+  - typings.squareDashConnect.squareDashConnectStrings.DELAYED_TRANSACTION_FAILED
+  - typings.squareDashConnect.squareDashConnectStrings.CARD_TOKEN_EXPIRED
+  - typings.squareDashConnect.squareDashConnectStrings.CARD_TOKEN_USED
+  - typings.squareDashConnect.squareDashConnectStrings.AMOUNT_TOO_HIGH
+  - typings.squareDashConnect.squareDashConnectStrings.UNSUPPORTED_INSTRUMENT_TYPE
+  - typings.squareDashConnect.squareDashConnectStrings.REFUND_AMOUNT_INVALID
+  - typings.squareDashConnect.squareDashConnectStrings.REFUND_ALREADY_PENDING
+  - typings.squareDashConnect.squareDashConnectStrings.PAYMENT_NOT_REFUNDABLE
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_CARD_DATA
+  - typings.squareDashConnect.squareDashConnectStrings.LOCATION_MISMATCH
+  - typings.squareDashConnect.squareDashConnectStrings.IDEMPOTENCY_KEY_REUSED
+  - typings.squareDashConnect.squareDashConnectStrings.UNEXPECTED_VALUE
+  - typings.squareDashConnect.squareDashConnectStrings.SANDBOX_NOT_SUPPORTED
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_EMAIL_ADDRESS
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_PHONE_NUMBER
+  - typings.squareDashConnect.squareDashConnectStrings.CHECKOUT_EXPIRED
+  - typings.squareDashConnect.squareDashConnectStrings.BAD_CERTIFICATE
+  - typings.squareDashConnect.squareDashConnectStrings.INVALID_SQUARE_VERSION_FORMAT
+  - typings.squareDashConnect.squareDashConnectStrings.API_VERSION_INCOMPATIBLE
+  - typings.squareDashConnect.squareDashConnectStrings.CARD_DECLINED
+  - typings.squareDashConnect.squareDashConnectStrings.VERIFY_CVV_FAILURE
+  - typings.squareDashConnect.squareDashConnectStrings.VERIFY_AVS_FAILURE
+  - typings.squareDashConnect.squareDashConnectStrings.CARD_DECLINED_CALL_ISSUER
+  - typings.squareDashConnect.squareDashConnectStrings.NOT_FOUND
+  - typings.squareDashConnect.squareDashConnectStrings.APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND
+  - typings.squareDashConnect.squareDashConnectStrings.METHOD_NOT_ALLOWED
+  - typings.squareDashConnect.squareDashConnectStrings.NOT_ACCEPTABLE
+  - typings.squareDashConnect.squareDashConnectStrings.REQUEST_TIMEOUT
+  - typings.squareDashConnect.squareDashConnectStrings.CONFLICT
+  - typings.squareDashConnect.squareDashConnectStrings.REQUEST_ENTITY_TOO_LARGE
+  - typings.squareDashConnect.squareDashConnectStrings.UNSUPPORTED_MEDIA_TYPE
+  - typings.squareDashConnect.squareDashConnectStrings.RATE_LIMITED
+  - typings.squareDashConnect.squareDashConnectStrings.NOT_IMPLEMENTED
+  - typings.squareDashConnect.squareDashConnectStrings.SERVICE_UNAVAILABLE
+  - typings.squareDashConnect.squareDashConnectStrings.GATEWAY_TIMEOUT
+*/
+trait ErrorCodeType extends js.Object
+

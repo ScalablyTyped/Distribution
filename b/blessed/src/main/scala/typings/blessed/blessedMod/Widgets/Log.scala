@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("blessed", "Widgets.Log")
 @js.native
-class Log () extends ScrollableTextElement {
+class Log () extends ScrollableBoxElement {
   def this(options: LogOptions) = this()
   @JSName("options")
   var options_Log: LogOptions = js.native

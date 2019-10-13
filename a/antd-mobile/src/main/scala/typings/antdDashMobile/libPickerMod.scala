@@ -1,7 +1,8 @@
 package typings.antdDashMobile
 
+import typings.antdDashMobile.libPickerAbstractPickerMod.AbstractPicker
 import typings.antdDashMobile.libPickerMod.Picker
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libPickerMod extends js.Object {
   @js.native
-  trait Picker
-    extends typings.antdDashMobile.libPickerAbstractPickerMod.default {
+  trait Picker extends AbstractPicker {
     var popupProps: Anon_MaskTransitionName = js.native
   }
   

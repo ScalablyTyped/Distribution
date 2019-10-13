@@ -22,7 +22,6 @@ package object nodeDashPgDashMigrateMod {
   type RunnerOption = RunnerOptionConfig with (RunnerOptionClient | RunnerOptionUrl)
   type SequenceOptionsAlter = SequenceOptionsAlterEn with SequenceOptions
   type SequenceOptionsCreate = SequenceOptionsCreateEn with SequenceOptions
-  type TriggerOptions = TriggerOptionsEn with FunctionOptions
   type Type = String | Anon_Type
   /* Rewritten from type alias, can be one of: 
     - scala.Null

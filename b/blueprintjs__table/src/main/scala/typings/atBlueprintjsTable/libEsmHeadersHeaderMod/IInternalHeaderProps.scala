@@ -4,8 +4,8 @@ import typings.atBlueprintjsTable.libEsmInteractionsDraggableMod.IClientCoordina
 import typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation
 import typings.atBlueprintjsTable.libEsmRegionsMod.IRegion
 import typings.atBlueprintjsTable.libEsmRegionsMod.RegionCardinality
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

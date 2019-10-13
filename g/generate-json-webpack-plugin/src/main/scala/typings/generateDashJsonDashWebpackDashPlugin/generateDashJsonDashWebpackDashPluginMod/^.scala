@@ -1,12 +1,13 @@
 package typings.generateDashJsonDashWebpackDashPlugin.generateDashJsonDashWebpackDashPluginMod
 
+import typings.webpack.webpackMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("generate-json-webpack-plugin", JSImport.Namespace)
 @js.native
-class ^ protected () extends GenerateJsonWebpackPlugin {
+class ^ protected () extends Plugin {
   def this(fileName: String, value: js.Object) = this()
   def this(
     fileName: String,

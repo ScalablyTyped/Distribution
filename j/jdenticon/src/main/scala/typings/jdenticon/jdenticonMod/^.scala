@@ -1,7 +1,7 @@
 package typings.jdenticon.jdenticonMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.jdenticon.jdenticonMod.Global.Jdenticon
+import typings.jdenticon.jdenticonMod._Global_.Jdenticon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

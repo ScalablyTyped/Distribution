@@ -19,6 +19,14 @@ package object phaser {
   type CenterFunction = js.Function1[/* triangle */ Triangle, Unit]
   type CollideCallback = js.Function3[/* body */ Body, /* other */ Body, /* axis */ String, Unit]
   type ContentLoadedCallback = js.Function0[Unit]
+  /**
+    * A filter that may be applied to a Context Choose operation.
+    * 
+    * 'NEW_CONTEXT_ONLY' - Prefer to only surface contexts the game has not been played in before.
+    * 'INCLUDE_EXISTING_CHALLENGES' - Include the "Existing Challenges" section, which surfaces actively played-in contexts that the player is a part of.
+    * 'NEW_PLAYERS_ONLY' - In sections containing individuals, prefer people who have not played the game.
+    */
+  type ContextFilter = String
   type CreateCallback = js.Function2[/* bob */ Bob, /* index */ integer, Unit]
   type DataEachCallback = js.Function4[/* parent */ js.Any, /* key */ String, /* value */ js.Any, /* repeated */ js.Any, Unit]
   type EachContainerCallback[I] = js.Function2[/* item */ js.Any, /* repeated */ js.Any, Unit]

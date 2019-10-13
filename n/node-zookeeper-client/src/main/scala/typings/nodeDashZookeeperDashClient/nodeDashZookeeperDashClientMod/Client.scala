@@ -1,7 +1,7 @@
 package typings.nodeDashZookeeperDashClient.nodeDashZookeeperDashClientMod
 
 import typings.node.Buffer
-import typings.node.eventsMod.^
+import typings.node.NodeJS.EventEmitter
 import typings.nodeDashZookeeperDashClient.nodeDashZookeeperDashClientStrings.authenticationFailed
 import typings.nodeDashZookeeperDashClient.nodeDashZookeeperDashClientStrings.connected
 import typings.nodeDashZookeeperDashClient.nodeDashZookeeperDashClientStrings.connectedReadOnly
@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Client extends ^ {
+trait Client extends EventEmitter {
   def addAuthInfo(scheme: String, auth: Buffer): Unit = js.native
   def addListener(event: String, cb: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")

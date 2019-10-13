@@ -8,7 +8,7 @@ import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
 import typings.node.netMod.Socket
 import typings.node.streamMod.Readable
-import typings.node.streamMod.Stream
+import typings.node.streamMod.internal
 import typings.node.urlMod.Url
 import typings.request.Anon_Connect
 import typings.request.Anon_Href
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Request
-  extends Stream
+  extends internal
      with Httpified {
   var agent: `false` | Agent | typings.node.httpsMod.Agent = js.native
   var body: Buffer | (js.Array[Buffer | String]) | String | Readable = js.native
@@ -79,10 +79,6 @@ trait Request
   var withCredentials: js.UndefOr[Boolean] = js.native
   var writable: Boolean = js.native
   def abort(): Unit = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def auth(username: String, password: String): Request = js.native
   def auth(username: String, password: String, sendImmediately: Boolean): Request = js.native
   def auth(username: String, password: String, sendImmediately: Boolean, bearer: String): Request = js.native
@@ -90,10 +86,6 @@ trait Request
   def aws(opts: AWSOptions, now: Boolean): Request = js.native
   def debug(args: js.Any*): Unit = js.native
   def destroy(): Unit = js.native
-  /* InferMemberOverrides */
-  override def emit(event: String, args: js.Any*): Boolean = js.native
-  /* InferMemberOverrides */
-  override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   def end(): Unit = js.native
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: String): Unit = js.native
@@ -102,33 +94,13 @@ trait Request
   def end(chunk: Buffer, cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: String): Unit = js.native
   def end(str: String, encoding: String, cb: js.Function0[Unit]): Unit = js.native
-  /* InferMemberOverrides */
-  override def eventNames(): js.Array[String | js.Symbol] = js.native
   def form(): ^ = js.native
   def form(form: js.Any): Request = js.native
-  /* InferMemberOverrides */
-  override def getMaxListeners(): Double = js.native
   def hawk(opts: HawkOptions): Unit = js.native
   def jar(jar: CookieJar): Request = js.native
   def json(`val`: js.Any): Request = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: String): Double = js.native
-  /* InferMemberOverrides */
-  override def listenerCount(`type`: js.Symbol): Double = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
   def multipart(multipart: js.Array[RequestPart]): Request = js.native
   def oauth(oauth: OAuthOptions): Request = js.native
-  /* InferMemberOverrides */
-  override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_complete(
     event: complete,
@@ -149,40 +121,11 @@ trait Request
   def on_response(event: response, listener: js.Function1[/* resp */ Response, Unit]): this.type = js.native
   @JSName("on")
   def on_socket(event: socket, listener: js.Function1[/* src */ Socket, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def pause(): Unit = js.native
   def pipeDest(dest: js.Any): Unit = js.native
-  // Added in Node 6...
-  /* InferMemberOverrides */
-  override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def qs(q: js.Object): Request = js.native
   def qs(q: js.Object, clobber: Boolean): Request = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: String): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: String): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeAllListeners(event: js.Symbol): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-  /* InferMemberOverrides */
-  override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
   def resume(): Unit = js.native
-  /* InferMemberOverrides */
-  override def setMaxListeners(n: Double): this.type = js.native
   def toJSON(): RequestAsJSON = js.native
   def write(buffer: String): Boolean = js.native
   def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native

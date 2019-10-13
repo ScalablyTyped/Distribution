@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon-framework", "collections.TreeMultiMapCollection")
 @js.native
 class TreeMultiMapCollection[Key, T] ()
-  extends typings.samchon.samchonMod.collections.TreeMultiMapCollection[Key, T]
+  extends typings.ecol.libMapsTreeMultiMapCollectionMod.TreeMultiMapCollection[Key, T]
 
 @JSImport("samchon-framework", "collections.TreeMultiMapCollection")
 @js.native

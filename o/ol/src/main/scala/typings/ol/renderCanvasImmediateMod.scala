@@ -1,7 +1,6 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
-import typings.ol.renderCanvasImmediateMod.CanvasImmediateRenderer
 import typings.ol.transformMod.Transform
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object renderCanvasImmediateMod extends js.Object {
   @js.native
-  class default protected () extends CanvasImmediateRenderer {
+  class default protected ()
+    extends typings.ol.renderVectorContextMod.default {
     def this(
       context: CanvasRenderingContext2D,
       pixelRatio: Double,

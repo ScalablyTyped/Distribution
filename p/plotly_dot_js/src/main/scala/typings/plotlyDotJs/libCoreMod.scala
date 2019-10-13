@@ -134,7 +134,6 @@ import typings.d3DashShape.d3DashShapeMod.CurveCatmullRomFactory
 import typings.d3DashShape.d3DashShapeMod.CurveGenerator
 import typings.d3DashShape.d3DashShapeMod.DefaultArcObject
 import typings.d3DashShape.d3DashShapeMod.DefaultLinkObject
-import typings.d3DashShape.d3DashShapeMod.Global.CanvasRenderingContext2D
 import typings.d3DashShape.d3DashShapeMod.Line
 import typings.d3DashShape.d3DashShapeMod.LineRadial
 import typings.d3DashShape.d3DashShapeMod.Link
@@ -146,6 +145,7 @@ import typings.d3DashShape.d3DashShapeMod.Series
 import typings.d3DashShape.d3DashShapeMod.Stack
 import typings.d3DashShape.d3DashShapeMod.Symbol
 import typings.d3DashShape.d3DashShapeMod.SymbolType
+import typings.d3DashShape.d3DashShapeMod._Global_.CanvasRenderingContext2D
 import typings.d3DashTime.d3DashTimeMod.CountableTimeInterval
 import typings.d3DashTime.d3DashTimeMod.TimeInterval
 import typings.d3DashTimeDashFormat.d3DashTimeDashFormatMod.TimeLocaleDefinition

@@ -6,9 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Setting
-  extends SocialMedia
-     with Metadata
+  extends Metadata
      with CodeInjection
+     with Facebook
+     with Twitter
      with GhostData {
   var cover_image: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined

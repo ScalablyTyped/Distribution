@@ -327,7 +327,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(tablesorter, Widgets, ZebraOptions)) [id => tablesorter, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/tablesorter/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/tablesorter),TsIdentLibrarySimple(tablesorter)),TsIdentModule(None,List(tablesorter))) [id => tablesorter, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(tablesorter)) [id => tablesorter, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:182 Processing TsIdentLibrarySimple(tablesorter) [id => tablesorter, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(tablesorter) [id => tablesorter, phase => typescript] 
 [info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter/Filtering/FilterEventHandler) / TsDeclInterface(FilterEventHandler))] 
 [info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter/Filtering/FilterFunction) / TsDeclInterface(FilterFunction))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(bindSearch) [id => tablesorter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tablesorter/Filtering/FilterStatic) / TsDeclInterface(FilterStatic))] 

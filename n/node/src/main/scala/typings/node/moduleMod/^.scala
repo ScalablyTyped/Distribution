@@ -1,7 +1,7 @@
 package typings.node.moduleMod
 
-import typings.node.Anon_BuiltinModules
 import typings.node.NodeJS.Module
+import typings.node.TypeofClassModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class ^ protected () extends Module {
 @JSImport("module", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Module: Anon_BuiltinModules = js.native
+  var Module: TypeofClassModule = js.native
   var builtinModules: js.Array[java.lang.String] = js.native
   def createRequireFromPath(path: java.lang.String): js.Function1[/* path */ java.lang.String, _] = js.native
   def runMain(): Unit = js.native

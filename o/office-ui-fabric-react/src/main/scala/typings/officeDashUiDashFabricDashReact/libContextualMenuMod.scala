@@ -33,7 +33,7 @@ object libContextualMenuMod extends js.Object {
   
   @js.native
   class ContextualMenuItemBase ()
-    extends typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuMod.ContextualMenuItemBase
+    extends typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemDotBaseMod.ContextualMenuItemBase
   
   val ContextualMenu: StatelessComponent[IContextualMenuProps] = js.native
   val ContextualMenuItem: StatelessComponent[IContextualMenuItemProps] = js.native

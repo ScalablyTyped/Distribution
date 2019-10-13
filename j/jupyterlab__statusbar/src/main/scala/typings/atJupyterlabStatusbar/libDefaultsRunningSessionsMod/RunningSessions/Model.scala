@@ -1,6 +1,6 @@
 package typings.atJupyterlabStatusbar.libDefaultsRunningSessionsMod.RunningSessions
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.VDomModel
+import typings.atJupyterlabApputils.libVdomMod.VDomModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

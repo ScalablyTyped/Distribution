@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsButtonButtonMod.ButtonProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object buttonMod extends js.Object {
   @js.native
   class Button ()
-    extends typings.primereact.componentsButtonButtonMod.Button
+    extends Component[ButtonProps, js.Any, js.Any]
   
 }
 

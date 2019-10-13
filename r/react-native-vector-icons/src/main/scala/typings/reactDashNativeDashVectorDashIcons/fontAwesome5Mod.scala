@@ -2,7 +2,6 @@ package typings.reactDashNativeDashVectorDashIcons
 
 import typings.react.reactMod.Component
 import typings.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.AllowOnlyOne
-import typings.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.FontAwesome5Icon
 import typings.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.FontAwesome5IconProps
 import typings.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.FontAwesome5IconVariants
 import typings.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.Omit
@@ -23,7 +22,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object fontAwesome5Mod extends js.Object {
   @js.native
-  class default () extends FontAwesome5Icon
+  class default ()
+    extends Component[FontAwesome5IconProps, js.Any, js.Any]
   
   @js.native
   object FA5Style extends js.Object {

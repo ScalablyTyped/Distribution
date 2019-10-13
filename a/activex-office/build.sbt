@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "activex-office"
-version := "16.0-dt-20190213Z-7375e1"
+version := "16.0-dt-20190213Z-adc925"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20190213Z-875f66",
-  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-7bbc2b",
-  "org.scalablytyped" %%% "std" % "3.6-abb6d3")
+  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20190213Z-aad963",
+  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-4042fc",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,5 +1,8 @@
 package typings.reactDashSketchapp.libComponentsSvgGMod
 
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.ClipProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.DefinationProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.FillProps
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.Font
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.FontFamily
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.FontProps
@@ -12,9 +15,10 @@ import typings.reactDashSketchapp.libComponentsSvgPropsMod.Kerning
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.LetterSpacing
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.NumberArrayProp
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.NumberProp
-import typings.reactDashSketchapp.libComponentsSvgPropsMod.PathProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.StrokeProps
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.TextAnchor
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.TextDecoration
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.TransformProps
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.WordSpacing
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.fontSize
 import typings.reactDashSketchapp.reactDashSketchappStrings.bevel
@@ -29,7 +33,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GProps
-  extends PathProps
+  extends FillProps
+     with StrokeProps
+     with ClipProps
+     with TransformProps
+     with DefinationProps
      with FontProps
 
 object GProps {

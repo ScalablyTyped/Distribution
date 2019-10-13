@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactDashBreadcrumbsComponents extends reactDashBreadcrumbsProps {
   @scala.inline
-  def Breadcrumb: ComponentType[typings.reactDashBreadcrumbs.reactDashBreadcrumbsMod.BreadcrumbProps] = js.constructorOf[typings.reactDashBreadcrumbs.reactDashBreadcrumbsMod.Breadcrumb].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashBreadcrumbs.reactDashBreadcrumbsMod.BreadcrumbProps]]
+  def Breadcrumb: ComponentType[BreadcrumbProps] = js.constructorOf[typings.reactDashBreadcrumbs.reactDashBreadcrumbsMod.Breadcrumb].asInstanceOf[typings.react.reactMod.ComponentType[BreadcrumbProps]]
   @scala.inline
-  def Breadcrumbs: ComponentType[typings.reactDashBreadcrumbs.reactDashBreadcrumbsMod.BreadcrumbsProps] = js.constructorOf[typings.reactDashBreadcrumbs.reactDashBreadcrumbsMod.Breadcrumbs].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashBreadcrumbs.reactDashBreadcrumbsMod.BreadcrumbsProps]]
+  def Breadcrumbs: ComponentType[BreadcrumbsProps] = js.constructorOf[typings.reactDashBreadcrumbs.reactDashBreadcrumbsMod.Breadcrumbs].asInstanceOf[typings.react.reactMod.ComponentType[BreadcrumbsProps]]
 }
 

@@ -16,8 +16,8 @@ object atNivoLineComponents extends atNivoLineProps {
   def LineCanvas: ComponentType[LineCanvasProps with Dimensions] = js.constructorOf[typings.atNivoLine.atNivoLineMod.LineCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atNivoLine.atNivoLineMod.LineCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
   @scala.inline
-  def ResponsiveLine: ComponentType[LineSvgProps] = js.constructorOf[typings.atNivoLine.atNivoLineMod.ResponsiveLine].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoLine.atNivoLineMod.LineSvgProps]]
+  def ResponsiveLine: ComponentType[ResponsiveLineProps] = js.constructorOf[typings.atNivoLine.atNivoLineMod.ResponsiveLine].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveLineProps]]
   @scala.inline
-  def ResponsiveLineCanvas: ComponentType[LineCanvasProps] = js.constructorOf[typings.atNivoLine.atNivoLineMod.ResponsiveLineCanvas].asInstanceOf[typings.react.reactMod.ComponentType[typings.atNivoLine.atNivoLineMod.LineCanvasProps]]
+  def ResponsiveLineCanvas: ComponentType[ResponsiveLineCanvasProps] = js.constructorOf[typings.atNivoLine.atNivoLineMod.ResponsiveLineCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveLineCanvasProps]]
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ChronoZonedDateTime")
 @js.native
-abstract class ChronoZonedDateTime () extends Temporal {
+abstract class ChronoZonedDateTime () extends TemporalAccessor {
   def compareTo(other: ChronoZonedDateTime): Double = js.native
   def equals(other: js.Any): Boolean = js.native
   def format(formatter: DateTimeFormatter): String = js.native

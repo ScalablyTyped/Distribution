@@ -1,7 +1,7 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPopoverElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPopoverElement
 import typings.atIonicReact.atIonicReactStrings.animated
 import typings.atIonicReact.atIonicReactStrings.backdropDismiss
 import typings.atIonicReact.atIonicReactStrings.cssClass

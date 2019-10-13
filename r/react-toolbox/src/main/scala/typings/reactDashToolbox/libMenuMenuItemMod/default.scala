@@ -1,10 +1,12 @@
 package typings.reactDashToolbox.libMenuMenuItemMod
 
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-toolbox/lib/menu/MenuItem", JSImport.Default)
 @js.native
-class default () extends MenuItem
+class default ()
+  extends Component[MenuItemProps, js.Object, js.Any]
 

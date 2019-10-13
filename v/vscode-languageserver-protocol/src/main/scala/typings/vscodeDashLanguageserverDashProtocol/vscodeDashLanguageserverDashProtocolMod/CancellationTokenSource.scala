@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver-protocol", "CancellationTokenSource")
 @js.native
 class CancellationTokenSource ()
-  extends typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.CancellationTokenSource
+  extends typings.vscodeDashJsonrpc.libCancellationMod.CancellationTokenSource
 

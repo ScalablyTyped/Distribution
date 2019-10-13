@@ -94,7 +94,7 @@ object Mouse extends js.Object {
       */
     var pointerLockChange: js.Function = js.native
     /**
-      * The Touch Event target, as defined in the Game Config.
+      * The Mouse target, as defined in the Game Config.
       * Typically the canvas to which the game is rendering, but can be any interactive DOM element.
       */
     var target: js.Any = js.native

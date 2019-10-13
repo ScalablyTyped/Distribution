@@ -8,6 +8,7 @@ import typings.hexo.hexoStrings.skip
 import typings.hexo.hexoStrings.update
 import typings.hexoDashUtil.hexoDashUtilMod.Pattern
 import typings.node.Buffer
+import typings.node.NodeJS.EventEmitter
 import typings.node.fsMod.Stats
 import typings.std.RegExp
 import scala.scalajs.js
@@ -15,8 +16,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Box
-  extends typings.node.eventsMod.^ {
+trait Box extends EventEmitter {
   /**
     * A processor is an essential element of `Box` and is used to process files.
     * You can use path matching as described above to restrict what exactly the processor should process.

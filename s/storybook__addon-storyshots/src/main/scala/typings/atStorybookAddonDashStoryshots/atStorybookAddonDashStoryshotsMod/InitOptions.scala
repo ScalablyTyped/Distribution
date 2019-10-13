@@ -1,7 +1,7 @@
 package typings.atStorybookAddonDashStoryshots.atStorybookAddonDashStoryshotsMod
 
 import typings.atStorybookAddonDashStoryshots.Anon_Context
-import typings.react.reactMod.Global.JSX.Element
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

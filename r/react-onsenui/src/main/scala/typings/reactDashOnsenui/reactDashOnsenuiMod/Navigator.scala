@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_AnimationAnimationOptions
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestylerenderPagerouteanyna
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Navigator")
 @js.native
 class Navigator ()
-  extends Component[Anon_AnimationAnimationOptions, js.Any] {
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestylerenderPagerouteanyna, js.Any, js.Any] {
   var pages: js.Array[_] = js.native
   var routes: js.Array[_] = js.native
   def popPage(): js.Promise[HTMLElement] = js.native

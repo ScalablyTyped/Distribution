@@ -1,11 +1,13 @@
 package typings.semanticDashUiDashReact.semanticDashUiDashReactMod
 
-import typings.semanticDashUiDashReact.distCommonjsAddonsPaginationPaginationItemMod.default
+import typings.react.reactMod.Component
+import typings.semanticDashUiDashReact.distCommonjsAddonsPaginationPaginationItemMod.PaginationItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("semantic-ui-react", "PaginationItem")
 @js.native
-class PaginationItem () extends default
+class PaginationItem ()
+  extends Component[PaginationItemProps, js.Object, js.Any]
 

@@ -1,6 +1,6 @@
 package typings.reactDashOnsenui.reactDashOnsenuiMod
 
-import typings.reactDashOnsenui.Anon_AnimationAnimationOptionsFade
+import typings.reactDashOnsenui.HTMLAttributesidclassNamestyleanimationfadeliftnon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Modal")
 @js.native
 class Modal ()
-  extends Component[Anon_AnimationAnimationOptionsFade, js.Any]
+  extends typings.react.reactMod.Component[HTMLAttributesidclassNamestyleanimationfadeliftnon, js.Any, js.Any]
 

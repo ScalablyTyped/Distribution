@@ -8,13 +8,13 @@ package object sanctuaryMod {
   import org.scalablytyped.runtime.StringDictionary
 
   type Alt[A] = Functor[A]
-  type Applicative[A] = Apply[A]
+  type Applicative[A] = Functor[A]
   type Apply[A] = Functor[A]
   type Bifunctor[A, C] = Functor[C]
   type Category[A] = Semigroupoid[A, A]
-  type Chain[A] = Apply[A]
-  type ChainRec[A] = Chain[A]
-  type Comonad[A] = Extend[A]
+  type Chain[A] = Functor[A]
+  type ChainRec[A] = Functor[A]
+  type Comonad[A] = Functor[A]
   type Extend[A] = Functor[A]
   type Fn[A, B] = js.Function1[/* a */ A, B]
   type Fn2[A, B, C] = js.Function1[/* a */ A, js.Function1[/* b */ B, C]]
@@ -38,7 +38,7 @@ package object sanctuaryMod {
   type Nullable[A] = A | Null
   type Ord[A] = Setoid[A]
   type Pair[A, B] = js.Tuple2[A, B]
-  type Plus[A] = Alt[A]
+  type Plus[A] = Functor[A]
   type Predicate[A] = js.Function1[/* a */ A, Boolean]
   type Profunctor[B, C] = Functor[C]
   type StrMap[A] = StringDictionary[A]

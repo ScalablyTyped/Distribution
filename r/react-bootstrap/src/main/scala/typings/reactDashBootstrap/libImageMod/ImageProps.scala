@@ -1,11 +1,14 @@
 package typings.reactDashBootstrap.libImageMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImageProps extends HTMLProps[Image] {
+trait ImageProps
+  extends AllHTMLAttributes[Image]
+     with ClassAttributes[Image] {
   var circle: js.UndefOr[Boolean] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
   var rounded: js.UndefOr[Boolean] = js.undefined
@@ -15,14 +18,16 @@ trait ImageProps extends HTMLProps[Image] {
 object ImageProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Image] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Image] = null,
+    ClassAttributes: ClassAttributes[Image] = null,
     circle: js.UndefOr[Boolean] = js.undefined,
     responsive: js.UndefOr[Boolean] = js.undefined,
     rounded: js.UndefOr[Boolean] = js.undefined,
     thumbnail: js.UndefOr[Boolean] = js.undefined
   ): ImageProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(circle)) __obj.updateDynamic("circle")(circle)
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded)

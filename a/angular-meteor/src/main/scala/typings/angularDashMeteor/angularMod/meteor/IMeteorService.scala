@@ -1,7 +1,7 @@
 package typings.angularDashMeteor.angularMod.meteor
 
-import typings.angular.angularMod.Global.Function
 import typings.angular.angularMod.IPromise
+import typings.angular.angularMod._Global_.Function
 import typings.angularDashMeteor.Anon_Bind
 import typings.angularDashMeteor.Anon_Email
 import typings.angularDashMeteor.Anon_EmailPassword

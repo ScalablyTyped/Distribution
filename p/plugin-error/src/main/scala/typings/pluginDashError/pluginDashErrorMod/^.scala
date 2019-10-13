@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plugin-error", JSImport.Namespace)
 @js.native
-class ^ protected () extends PluginError {
+class ^ protected () extends Error {
   /**
     * Constructor
     * @param options Options, including message and plugin name

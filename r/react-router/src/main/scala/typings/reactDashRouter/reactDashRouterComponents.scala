@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 
 object reactDashRouterComponents extends reactDashRouterProps {
   @scala.inline
-  def MemoryRouter: ComponentType[typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.MemoryRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps]]
+  def MemoryRouter: ComponentType[MemoryRouterProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.MemoryRouter].asInstanceOf[typings.react.reactMod.ComponentType[MemoryRouterProps]]
   @scala.inline
-  def Prompt: ComponentType[typings.reactDashRouter.reactDashRouterMod.PromptProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Prompt].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.PromptProps]]
+  def Prompt: ComponentType[PromptProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Prompt].asInstanceOf[typings.react.reactMod.ComponentType[PromptProps]]
   @scala.inline
-  def Redirect: ComponentType[typings.reactDashRouter.reactDashRouterMod.RedirectProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Redirect].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.RedirectProps]]
+  def Redirect: ComponentType[RedirectProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Redirect].asInstanceOf[typings.react.reactMod.ComponentType[RedirectProps]]
   @scala.inline
   def Route[T /* <: RouteProps */]: ComponentType[T] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Route[T]].asInstanceOf[typings.react.reactMod.ComponentType[T]]
   @scala.inline
-  def Router: ComponentType[typings.reactDashRouter.reactDashRouterMod.RouterProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Router].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.RouterProps]]
+  def Router: ComponentType[RouterProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Router].asInstanceOf[typings.react.reactMod.ComponentType[RouterProps]]
   @scala.inline
-  def StaticRouter: ComponentType[typings.reactDashRouter.reactDashRouterMod.StaticRouterProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.StaticRouter].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.StaticRouterProps]]
+  def StaticRouter: ComponentType[StaticRouterProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.StaticRouter].asInstanceOf[typings.react.reactMod.ComponentType[StaticRouterProps]]
   @scala.inline
-  def Switch: ComponentType[typings.reactDashRouter.reactDashRouterMod.SwitchProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Switch].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashRouter.reactDashRouterMod.SwitchProps]]
+  def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Switch].asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
 }
 

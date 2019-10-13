@@ -36,7 +36,7 @@ class Address () extends js.Object {
   /**
     * The address's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
     */
-  var country: js.UndefOr[CountryEnum] = js.native
+  var country: js.UndefOr[CountryType] = js.native
   /**
     * Optional first name when it's representing recipient.
     */

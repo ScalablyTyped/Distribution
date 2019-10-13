@@ -1,6 +1,6 @@
 package typings.atIonicCore.distTypesInterfaceMod
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonPopoverElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPopoverElement
 import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`

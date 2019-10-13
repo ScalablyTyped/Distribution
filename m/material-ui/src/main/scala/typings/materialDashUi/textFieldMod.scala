@@ -1,6 +1,5 @@
 package typings.materialDashUi
 
-import typings.materialDashUi.textFieldMod.TextField
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,8 @@ object textFieldMod extends js.Object {
     extends typings.materialDashUi.__MaterialUI.TextField
   
   @js.native
-  class default () extends TextField
+  class default ()
+    extends typings.materialDashUi.__MaterialUI.TextField
   
 }
 

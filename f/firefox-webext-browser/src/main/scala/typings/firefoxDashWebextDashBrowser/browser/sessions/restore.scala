@@ -14,6 +14,5 @@ object restore extends js.Object {
     */
   def apply(): js.Promise[Session] = js.native
   def apply(sessionId: String): js.Promise[Session] = js.native
-  def apply(sessionId: String, callback: js.Function1[/* restoredSession */ Session, Unit]): js.Promise[Session] = js.native
 }
 

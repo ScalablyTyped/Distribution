@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tspromise", JSImport.Namespace)
 @js.native
-class ^[T] protected () extends Promise[T] {
+class ^[T] protected () extends Thenable[T] {
   def this(callback: js.Function2[
         /* resolve */ js.Function1[/* value */ js.UndefOr[T], Unit], 
         /* reject */ js.UndefOr[js.Function1[/* error */ Error, Unit]], 

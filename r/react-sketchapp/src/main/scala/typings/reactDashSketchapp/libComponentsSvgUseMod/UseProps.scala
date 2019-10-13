@@ -1,8 +1,12 @@
 package typings.reactDashSketchapp.libComponentsSvgUseMod
 
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.ClipProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.DefinationProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.FillProps
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.NumberArrayProp
 import typings.reactDashSketchapp.libComponentsSvgPropsMod.NumberProp
-import typings.reactDashSketchapp.libComponentsSvgPropsMod.PathProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.StrokeProps
+import typings.reactDashSketchapp.libComponentsSvgPropsMod.TransformProps
 import typings.reactDashSketchapp.reactDashSketchappStrings.bevel
 import typings.reactDashSketchapp.reactDashSketchappStrings.butt
 import typings.reactDashSketchapp.reactDashSketchappStrings.evenodd
@@ -14,7 +18,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UseProps extends PathProps {
+trait UseProps
+  extends FillProps
+     with StrokeProps
+     with ClipProps
+     with TransformProps
+     with DefinationProps {
    // Just for reusing `Symbol`
   var height: js.UndefOr[NumberProp] = js.undefined
   var href: String

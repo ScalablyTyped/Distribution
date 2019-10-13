@@ -1,7 +1,7 @@
 package typings.atTestingDashLibraryCypress.atTestingDashLibraryCypressMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTestingDashLibraryCypress.atTestingDashLibraryCypressMod.Global.Cypress.Chainable
+import typings.atTestingDashLibraryCypress.atTestingDashLibraryCypressMod._Global_.Cypress.Chainable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

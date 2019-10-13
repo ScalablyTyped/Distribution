@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "NotificationSettings")
 @js.native
 class NotificationSettings ()
-  extends typings.gitlab.distServicesMod.NotificationSettings
+  extends typings.gitlab.distServicesNotificationSettingsMod.NotificationSettings
 

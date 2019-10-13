@@ -1,13 +1,15 @@
 package typings.avoscloudDashSdk.avoscloudDashSdkMod.Object
 
-import typings.avoscloudDashSdk.avoscloudDashSdkMod.SuccessFailureOptions
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorOption
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.SuccessOption
 import typings.avoscloudDashSdk.avoscloudDashSdkMod.UseMasterKeyOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SaveAllOptions
-  extends SuccessFailureOptions
+  extends SuccessOption
+     with ErrorOption
      with UseMasterKeyOption
 
 object SaveAllOptions {

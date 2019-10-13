@@ -1,6 +1,6 @@
 package typings.atAntDashDesignReactDashNative.libNoticeDashBarMarqueeMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Marquee
-  extends PureComponent[MarqueeProps, js.Any, js.Any] {
+  extends Component[MarqueeProps, js.Any, js.Any] {
   var texts: js.Any = js.native
   var twidth: Double = js.native
   var width: Double = js.native

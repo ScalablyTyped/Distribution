@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("kendo.mobile.ui.TabStrip")
 @js.native
-class TabStrip protected () extends Widget {
+class TabStrip protected ()
+  extends typings.kendoDashUi.kendo.ui.Widget {
   def this(element: Element) = this()
   def this(element: Element, options: TabStripOptions) = this()
   @JSName("options")

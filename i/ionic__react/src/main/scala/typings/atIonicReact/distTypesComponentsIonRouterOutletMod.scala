@@ -1,6 +1,6 @@
 package typings.atIonicReact
 
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonRouterOutletElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRouterOutletElement
 import typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps
 import typings.atIonicReact.distTypesComponentsUtilsMod.IonicReactExternalProps
 import typings.react.reactMod.ForwardRefExoticComponent

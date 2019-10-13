@@ -17,10 +17,10 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithRespons
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Global.JSX.Element
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.StatelessComponent
+import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js

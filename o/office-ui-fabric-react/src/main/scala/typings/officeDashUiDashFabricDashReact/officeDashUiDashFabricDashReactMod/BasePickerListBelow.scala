@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react", "BasePickerListBelow")
 @js.native
 class BasePickerListBelow[T, P /* <: IBasePickerProps[T] */] ()
-  extends typings.officeDashUiDashFabricDashReact.libPickersMod.BasePickerListBelow[T, P]
+  extends typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerMod.BasePickerListBelow[T, P]
 

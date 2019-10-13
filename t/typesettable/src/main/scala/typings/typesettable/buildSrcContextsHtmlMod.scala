@@ -2,7 +2,8 @@ package typings.typesettable
 
 import typings.std.Element
 import typings.std.HTMLElement
-import typings.typesettable.buildSrcContextsMod.ITypesetterContext
+import typings.typesettable.buildSrcContextsMod.IPenFactoryContext
+import typings.typesettable.buildSrcContextsMod.IRulerFactoryContext
 import typings.typesettable.buildSrcMeasurersAbstractMeasurerMod.IDimensions
 import typings.typesettable.buildSrcWritersWriterMod.ITransform
 import scala.scalajs.js
@@ -13,7 +14,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object buildSrcContextsHtmlMod extends js.Object {
   @js.native
-  class HtmlContext protected () extends ITypesetterContext[HTMLElement] {
+  class HtmlContext protected ()
+    extends IPenFactoryContext[HTMLElement]
+       with IRulerFactoryContext {
     /**
       * @param element - The CSS font styles applied to `element` will determine the
       * size of text measurements. Also the default text block container.

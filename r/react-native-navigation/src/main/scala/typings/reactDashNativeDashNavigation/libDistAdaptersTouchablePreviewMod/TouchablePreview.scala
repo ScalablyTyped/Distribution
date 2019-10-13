@@ -1,6 +1,6 @@
 package typings.reactDashNativeDashNavigation.libDistAdaptersTouchablePreviewMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
 import typings.reactDashNativeDashNavigation.Anon_Args
 import typings.reactDashNativeDashNavigation.Anon_TouchableComponentTouchableWithoutFeedback
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-navigation/lib/dist/adapters/TouchablePreview", "TouchablePreview")
 @js.native
 class TouchablePreview ()
-  extends PureComponent[Props, js.Object, js.Any] {
+  extends Component[Props, js.Object, js.Any] {
   var onRef: js.Any = js.native
   var timeout: js.Any = js.native
   var touchStartedAt: js.Any = js.native

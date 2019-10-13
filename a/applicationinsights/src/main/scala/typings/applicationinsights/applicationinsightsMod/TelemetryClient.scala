@@ -1,6 +1,6 @@
 package typings.applicationinsights.applicationinsightsMod
 
-import typings.applicationinsights.outLibraryNodeClientMod.^
+import typings.applicationinsights.outLibraryNodeClientMod.NodeClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("applicationinsights", "TelemetryClient")
 @js.native
-class TelemetryClient () extends ^
+class TelemetryClient () extends NodeClient
 

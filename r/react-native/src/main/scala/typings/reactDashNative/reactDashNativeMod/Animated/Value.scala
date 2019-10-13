@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-native", "Animated.Value")
 @js.native
-class Value protected () extends AnimatedWithChildren {
+class Value protected ()
+  extends typings.reactDashNative.reactDashNativeMod.Animated.Animated {
   def this(value: Double) = this()
   /**
     * Adds an asynchronous listener to the value so you can observe updates from

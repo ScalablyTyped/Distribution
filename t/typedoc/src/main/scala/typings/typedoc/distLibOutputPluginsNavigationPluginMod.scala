@@ -1,7 +1,8 @@
 package typings.typedoc
 
-import typings.typedoc.distLibOutputComponentsMod.RendererComponent
 import typings.typedoc.distLibOutputModelsNavigationItemMod.NavigationItem
+import typings.typedoc.distLibOutputRendererMod.Renderer
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibOutputPluginsNavigationPluginMod extends js.Object {
   @js.native
-  class NavigationPlugin () extends RendererComponent {
+  class NavigationPlugin () extends AbstractComponent[Renderer] {
     var navigation: NavigationItem = js.native
     var onBeginPage: js.Any = js.native
     var onBeginRenderer: js.Any = js.native

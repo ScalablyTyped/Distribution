@@ -2,7 +2,7 @@ package typings.reactDashRouterDashNavigationDashCore.reactDashRouterDashNavigat
 
 import typings.history.historyMod.History
 import typings.history.historyMod.LocationState
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import typings.reactDashRouterDashNavigationDashCore.Anon_Cards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router-navigation-core", "CardStack")
 @js.native
 class CardStack protected ()
-  extends PureComponent[CardStackProps, Anon_Cards, js.Any] {
+  extends Component[CardStackProps, Anon_Cards, js.Any] {
   def this(props: CardStackProps) = this()
   def this(props: CardStackProps, context: js.Any) = this()
   def onListenHistory(history: History[LocationState], nextHistory: History[LocationState]): Unit = js.native

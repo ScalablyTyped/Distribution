@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "ReleaseLinks")
 @js.native
 class ReleaseLinks ()
-  extends typings.gitlab.distServicesMod.ReleaseLinks
+  extends typings.gitlab.distServicesReleaseLinksMod.ReleaseLinks
 

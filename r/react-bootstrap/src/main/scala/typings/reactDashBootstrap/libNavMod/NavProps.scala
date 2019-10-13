@@ -1,12 +1,15 @@
 package typings.reactDashBootstrap.libNavMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import typings.reactDashBootstrap.reactDashBootstrapMod.Sizes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NavProps extends HTMLProps[Nav] {
+trait NavProps
+  extends AllHTMLAttributes[Nav]
+     with ClassAttributes[Nav] {
   // Optional
   var activeHref: js.UndefOr[String] = js.undefined
   var activeKey: js.UndefOr[js.Any] = js.undefined
@@ -28,7 +31,8 @@ trait NavProps extends HTMLProps[Nav] {
 object NavProps {
   @scala.inline
   def apply(
-    HTMLProps: HTMLProps[Nav] = null,
+    AllHTMLAttributes: AllHTMLAttributes[Nav] = null,
+    ClassAttributes: ClassAttributes[Nav] = null,
     activeHref: String = null,
     activeKey: js.Any = null,
     bsClass: String = null,
@@ -46,7 +50,8 @@ object NavProps {
     ulId: String = null
   ): NavProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (activeHref != null) __obj.updateDynamic("activeHref")(activeHref)
     if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)

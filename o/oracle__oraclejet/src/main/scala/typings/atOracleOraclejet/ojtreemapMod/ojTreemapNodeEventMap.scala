@@ -28,12 +28,14 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.start
 import typings.atOracleOraclejet.atOracleOraclejetStrings.top
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
+import typings.std.ElementEventMap
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
-import typings.std.HTMLElementEventMap
+import typings.std.GlobalEventHandlersEventMap
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -47,7 +49,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ojTreemapNodeEventMap extends HTMLElementEventMap {
+trait ojTreemapNodeEventMap
+  extends ElementEventMap
+     with GlobalEventHandlersEventMap
+     with DocumentAndElementEventHandlersEventMap {
   var categoriesChanged: JetElementCustomEvent[js.UndefOr[js.Array[String]]]
   var colorChanged: JetElementCustomEvent[js.UndefOr[String]]
   var drillingChanged: JetElementCustomEvent[js.UndefOr[on | off | inherit]]

@@ -33,6 +33,7 @@ import typings.react.reactMod.Key
 import typings.react.reactMod.Ref
 import typings.styledDashComponents.styledDashComponentsMod.CSSObject
 import typings.styledDashComponents.styledDashComponentsMod.FlattenSimpleInterpolation
+import typings.styledDashSystem.styledDashSystemMod.FontWeightProps
 import typings.styledDashSystem.styledDashSystemMod.ResponsiveValue
 import typings.styledDashSystem.styledDashSystemMod.TLengthStyledSystem
 import scala.scalajs.js
@@ -40,7 +41,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLButtonElement>, keyof rebass.rebass.ButtonKnownProps> ]: react.react.HTMLProps<std.HTMLButtonElement>[P]} */ trait ButtonProps extends ButtonKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLButtonElement>, keyof rebass.rebass.ButtonKnownProps> ]: react.react.HTMLProps<std.HTMLButtonElement>[P]} */ /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.styledDashSystem.styledDashSystemMod.ButtonStyleProps because var conflicts: variant. Inlined  */ trait ButtonProps
+  extends BoxKnownProps
+     with FontWeightProps
 
 object ButtonProps {
   @scala.inline

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stream-json/filters/Ignore", JSImport.Namespace)
 @js.native
-class ^ protected () extends Ignore {
+class ^ protected ()
+  extends typings.streamDashJson.filtersFilterBaseMod.^ {
   def this(options: FilterOptions) = this()
 }
 

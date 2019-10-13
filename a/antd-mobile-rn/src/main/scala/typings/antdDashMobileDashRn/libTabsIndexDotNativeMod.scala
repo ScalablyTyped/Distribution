@@ -2,8 +2,8 @@ package typings.antdDashMobileDashRn
 
 import typings.antdDashMobileDashRn.libTabsIndexDotNativeMod.Tabs
 import typings.antdDashMobileDashRn.libTabsPropsTypeMod.TabsProps
-import typings.react.reactMod.Global.JSX.Element
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
+import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object libTabsIndexDotNativeMod extends js.Object {
   @js.native
   trait Tabs
-    extends PureComponent[TabsProps, js.Object, js.Any] {
+    extends Component[TabsProps, js.Object, js.Any] {
     def renderTabBar(props: js.Any): Element = js.native
   }
   

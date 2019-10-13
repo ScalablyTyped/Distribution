@@ -1,19 +1,27 @@
 package typings.reactDashBootstrap.libPanelToggleMod
 
-import typings.react.reactMod.HTMLProps
+import typings.react.reactMod.AllHTMLAttributes
+import typings.react.reactMod.ClassAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PanelToggleProps extends HTMLProps[PanelToggle] {
+trait PanelToggleProps
+  extends AllHTMLAttributes[PanelToggle]
+     with ClassAttributes[PanelToggle] {
   var componentClass: js.UndefOr[String] = js.undefined
 }
 
 object PanelToggleProps {
   @scala.inline
-  def apply(HTMLProps: HTMLProps[PanelToggle] = null, componentClass: String = null): PanelToggleProps = {
+  def apply(
+    AllHTMLAttributes: AllHTMLAttributes[PanelToggle] = null,
+    ClassAttributes: ClassAttributes[PanelToggle] = null,
+    componentClass: String = null
+  ): PanelToggleProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass)
     __obj.asInstanceOf[PanelToggleProps]
   }

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashSplitterDashLayoutMod {
-  import typings.react.reactMod.PureComponent
+  import typings.react.reactMod.Component
 
-  type SplitterLayout = PureComponent[SplitterLayoutProps, js.Object, js.Any]
+  type SplitterLayout = Component[SplitterLayoutProps, js.Object, js.Any]
 }

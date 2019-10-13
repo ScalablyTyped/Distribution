@@ -1,5 +1,7 @@
 package typings.primereact
 
+import typings.primereact.componentsCaptchaCaptchaMod.CaptchaProps
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 object captchaMod extends js.Object {
   @js.native
   class Captcha ()
-    extends typings.primereact.componentsCaptchaCaptchaMod.Captcha
+    extends Component[CaptchaProps, js.Any, js.Any]
   
 }
 

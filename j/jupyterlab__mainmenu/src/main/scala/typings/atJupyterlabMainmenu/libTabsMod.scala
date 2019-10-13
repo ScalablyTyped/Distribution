@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/mainmenu/lib/tabs", JSImport.Namespace)
 @js.native
 object libTabsMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable because Already inherited
-  - typings.atJupyterlabMainmenu.libTabsMod.ITabsMenu because Already inherited */ @js.native
+  @js.native
   class TabsMenu protected () extends JupyterLabMenu {
     /**
       * Construct the tabs menu.

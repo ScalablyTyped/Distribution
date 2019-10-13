@@ -1,7 +1,7 @@
 package typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.angularMod.Global.Function
+import typings.angular.angularMod._Global_.Function
 import typings.angularDashUiDashRouter.Fn_Params
 import scala.scalajs.js
 import scala.scalajs.js.`|`

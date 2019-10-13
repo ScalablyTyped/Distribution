@@ -1,21 +1,20 @@
 package typings.rmcDashCalendar
 
 import typings.react.reactMod.ComponentType
-import typings.rmcDashCalendar.esCalendarPropsMod.PropsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rmcDashCalendarComponents extends rmcDashCalendarProps {
   @scala.inline
-  def Calendar: ComponentType[PropsType] = js.constructorOf[typings.rmcDashCalendar.esCalendarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashCalendar.esCalendarPropsMod.PropsType]]
+  def Calendar: ComponentType[CalendarProps] = js.constructorOf[typings.rmcDashCalendar.esCalendarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CalendarProps]]
   @scala.inline
-  def DatePicker: ComponentType[typings.rmcDashCalendar.esDatePickerPropsMod.PropsType] = js.constructorOf[typings.rmcDashCalendar.esDatePickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashCalendar.esDatePickerPropsMod.PropsType]]
+  def DatePicker: ComponentType[DatePickerProps] = js.constructorOf[typings.rmcDashCalendar.esDatePickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DatePickerProps]]
   @scala.inline
-  def Header: ComponentType[typings.rmcDashCalendar.esCalendarHeaderMod.PropsType] = js.constructorOf[typings.rmcDashCalendar.esCalendarHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashCalendar.esCalendarHeaderMod.PropsType]]
+  def Header: ComponentType[HeaderProps] = js.constructorOf[typings.rmcDashCalendar.esCalendarHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[HeaderProps]]
   @scala.inline
-  def ShortcutPanel: ComponentType[typings.rmcDashCalendar.esCalendarShortcutPanelMod.PropsType] = js.constructorOf[typings.rmcDashCalendar.esCalendarShortcutPanelMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashCalendar.esCalendarShortcutPanelMod.PropsType]]
+  def ShortcutPanel: ComponentType[ShortcutPanelProps] = js.constructorOf[typings.rmcDashCalendar.esCalendarShortcutPanelMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ShortcutPanelProps]]
   @scala.inline
-  def SingleMonth: ComponentType[typings.rmcDashCalendar.esDateSingleMonthMod.PropsType] = js.constructorOf[typings.rmcDashCalendar.esDateSingleMonthMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.rmcDashCalendar.esDateSingleMonthMod.PropsType]]
+  def SingleMonth: ComponentType[SingleMonthProps] = js.constructorOf[typings.rmcDashCalendar.esDateSingleMonthMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SingleMonthProps]]
 }
 

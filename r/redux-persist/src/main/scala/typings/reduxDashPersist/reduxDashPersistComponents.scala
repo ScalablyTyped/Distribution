@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reduxDashPersistComponents extends reduxDashPersistProps {
   @scala.inline
-  def PersistGate: ComponentType[typings.reduxDashPersist.integrationReactMod.PersistGateProps] = js.constructorOf[typings.reduxDashPersist.integrationReactMod.PersistGate].asInstanceOf[typings.react.reactMod.ComponentType[typings.reduxDashPersist.integrationReactMod.PersistGateProps]]
+  def PersistGate: ComponentType[PersistGateProps] = js.constructorOf[typings.reduxDashPersist.integrationReactMod.PersistGate].asInstanceOf[typings.react.reactMod.ComponentType[PersistGateProps]]
 }
 

@@ -1,5 +1,11 @@
 package typings.reactDashToolbox
 
+import typings.react.reactMod.Component
+import typings.reactDashToolbox.libCardCardActionsMod.CardActionsProps
+import typings.reactDashToolbox.libCardCardMediaMod.CardMediaProps
+import typings.reactDashToolbox.libCardCardMod.CardProps
+import typings.reactDashToolbox.libCardCardTextMod.CardTextProps
+import typings.reactDashToolbox.libCardCardTitleMod.CardTitleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,27 +15,27 @@ import scala.scalajs.js.annotation._
 object libCardMod extends js.Object {
   @js.native
   class Card ()
-    extends typings.reactDashToolbox.libCardCardMod.Card
+    extends Component[CardProps, js.Object, js.Any]
   
   @js.native
   class CardActions ()
-    extends typings.reactDashToolbox.libCardCardActionsMod.CardActions
+    extends Component[CardActionsProps, js.Object, js.Any]
   
   @js.native
   class CardMedia ()
-    extends typings.reactDashToolbox.libCardCardMediaMod.CardMedia
+    extends Component[CardMediaProps, js.Object, js.Any]
   
   @js.native
   class CardText ()
-    extends typings.reactDashToolbox.libCardCardTextMod.CardText
+    extends Component[CardTextProps, js.Object, js.Any]
   
   @js.native
   class CardTitle ()
-    extends typings.reactDashToolbox.libCardCardTitleMod.CardTitle
+    extends Component[CardTitleProps, js.Object, js.Any]
   
   @js.native
   class default ()
-    extends typings.reactDashToolbox.libCardCardMod.Card
+    extends Component[CardProps, js.Object, js.Any]
   
 }
 

@@ -496,7 +496,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent styled-components.styled-components.CSSProperties */
+/* Inlined parent csstype.csstype.StandardLonghandProperties<string | number> */
+/* Inlined parent csstype.csstype.StandardShorthandProperties<string | number> */
+/* Inlined parent csstype.csstype.VendorLonghandProperties<string | number> */
+/* Inlined parent csstype.csstype.VendorShorthandProperties<string | number> */
+/* Inlined parent csstype.csstype.ObsoleteProperties<string | number> */
+/* Inlined parent csstype.csstype.SvgProperties<string | number> */
 /* Inlined parent styled-components.styled-components.CSSPseudos */
 trait CSSObject
   extends _InterpolationValue

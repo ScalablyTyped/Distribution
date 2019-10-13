@@ -1,122 +1,118 @@
 package typings.reactDashNative
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps
-import typings.reactDashNative.reactDashNativeMod.ARTGroupProps
-import typings.reactDashNative.reactDashNativeMod.ARTShapeProps
-import typings.reactDashNative.reactDashNativeMod.ARTSurfaceProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNativeComponents extends reactDashNativeProps {
   @scala.inline
-  def ARTClippingRectangleCls: ComponentType[ARTClippingRectangleProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.ClippingRectangleCls].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps]]
+  def ARTClippingRectangleCls: ComponentType[ARTClippingRectangleClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.ClippingRectangleCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTClippingRectangleClsProps]]
   @scala.inline
-  def ARTGroupCls: ComponentType[ARTGroupProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.GroupCls].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTGroupProps]]
+  def ARTGroupCls: ComponentType[ARTGroupClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.GroupCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTGroupClsProps]]
   @scala.inline
-  def ARTShapeCls: ComponentType[ARTShapeProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.ShapeCls].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTShapeProps]]
+  def ARTShapeCls: ComponentType[ARTShapeClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.ShapeCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTShapeClsProps]]
   @scala.inline
-  def ARTSurfaceCls: ComponentType[ARTSurfaceProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.SurfaceCls].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTSurfaceProps]]
+  def ARTSurfaceCls: ComponentType[ARTSurfaceClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.SurfaceCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTSurfaceClsProps]]
   @scala.inline
-  def ARTText: ComponentType[typings.reactDashNative.reactDashNativeMod.ARTTextProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ARTText].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTTextProps]]
+  def ARTText: ComponentType[ARTTextProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ARTText].asInstanceOf[typings.react.reactMod.ComponentType[ARTTextProps]]
   @scala.inline
-  def ARTTextCls: ComponentType[typings.reactDashNative.reactDashNativeMod.ARTTextProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.TextCls].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTTextProps]]
+  def ARTTextCls: ComponentType[ARTTextClsProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ART.TextCls].asInstanceOf[typings.react.reactMod.ComponentType[ARTTextClsProps]]
   @scala.inline
-  def ActivityIndicator: ComponentType[typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ActivityIndicator].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProps]]
+  def ActivityIndicator: ComponentType[ActivityIndicatorProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ActivityIndicator].asInstanceOf[typings.react.reactMod.ComponentType[ActivityIndicatorProps]]
   @scala.inline
-  def Button: ComponentType[typings.reactDashNative.reactDashNativeMod.ButtonProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Button].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ButtonProps]]
+  def Button: ComponentType[ButtonProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Button].asInstanceOf[typings.react.reactMod.ComponentType[ButtonProps]]
   @scala.inline
-  def CheckBox: ComponentType[typings.reactDashNative.reactDashNativeMod.CheckBoxProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.CheckBox].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.CheckBoxProps]]
+  def CheckBox: ComponentType[CheckBoxProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.CheckBox].asInstanceOf[typings.react.reactMod.ComponentType[CheckBoxProps]]
   @scala.inline
-  def ClippingRectangle: ComponentType[ARTClippingRectangleProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ClippingRectangle].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps]]
+  def ClippingRectangle: ComponentType[ClippingRectangleProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ClippingRectangle].asInstanceOf[typings.react.reactMod.ComponentType[ClippingRectangleProps]]
   @scala.inline
-  def DatePickerIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.DatePickerIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.DatePickerIOSProps]]
+  def DatePickerIOS: ComponentType[DatePickerIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.DatePickerIOS].asInstanceOf[typings.react.reactMod.ComponentType[DatePickerIOSProps]]
   @scala.inline
-  def DrawerLayoutAndroid: ComponentType[typings.reactDashNative.reactDashNativeMod.DrawerLayoutAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.DrawerLayoutAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.DrawerLayoutAndroidProps]]
+  def DrawerLayoutAndroid: ComponentType[DrawerLayoutAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.DrawerLayoutAndroid].asInstanceOf[typings.react.reactMod.ComponentType[DrawerLayoutAndroidProps]]
   @scala.inline
-  def FlatList[ItemT]: ComponentType[typings.reactDashNative.reactDashNativeMod.FlatListProps[ItemT]] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.FlatList[ItemT]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.FlatListProps[ItemT]]]
+  def FlatList[ItemT]: ComponentType[FlatListProps[ItemT]] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.FlatList[ItemT]].asInstanceOf[typings.react.reactMod.ComponentType[FlatListProps[ItemT]]]
   @scala.inline
-  def Group: ComponentType[ARTGroupProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Group].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTGroupProps]]
+  def Group: ComponentType[GroupProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Group].asInstanceOf[typings.react.reactMod.ComponentType[GroupProps]]
   @scala.inline
-  def Image: ComponentType[typings.reactDashNative.reactDashNativeMod.ImageProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Image].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ImageProps]]
+  def Image: ComponentType[ImageProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Image].asInstanceOf[typings.react.reactMod.ComponentType[ImageProps]]
   @scala.inline
-  def ImageBackground: ComponentType[typings.reactDashNative.reactDashNativeMod.ImageBackgroundProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ImageBackground].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ImageBackgroundProps]]
+  def ImageBackground: ComponentType[ImageBackgroundProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ImageBackground].asInstanceOf[typings.react.reactMod.ComponentType[ImageBackgroundProps]]
   @scala.inline
-  def InputAccessoryView: ComponentType[typings.reactDashNative.reactDashNativeMod.InputAccessoryViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.InputAccessoryView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.InputAccessoryViewProps]]
+  def InputAccessoryView: ComponentType[InputAccessoryViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.InputAccessoryView].asInstanceOf[typings.react.reactMod.ComponentType[InputAccessoryViewProps]]
   @scala.inline
-  def KeyboardAvoidingView: ComponentType[typings.reactDashNative.reactDashNativeMod.KeyboardAvoidingViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.KeyboardAvoidingView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.KeyboardAvoidingViewProps]]
+  def KeyboardAvoidingView: ComponentType[KeyboardAvoidingViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.KeyboardAvoidingView].asInstanceOf[typings.react.reactMod.ComponentType[KeyboardAvoidingViewProps]]
   @scala.inline
-  def ListView: ComponentType[typings.reactDashNative.reactDashNativeMod.ListViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ListView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ListViewProps]]
+  def ListView: ComponentType[ListViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ListView].asInstanceOf[typings.react.reactMod.ComponentType[ListViewProps]]
   @scala.inline
-  def MaskedViewIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.MaskedViewIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.MaskedViewIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.MaskedViewIOSProps]]
+  def MaskedViewIOS: ComponentType[MaskedViewIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.MaskedViewIOS].asInstanceOf[typings.react.reactMod.ComponentType[MaskedViewIOSProps]]
   @scala.inline
-  def Modal: ComponentType[typings.reactDashNative.reactDashNativeMod.ModalProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Modal].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ModalProps]]
+  def Modal: ComponentType[ModalProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Modal].asInstanceOf[typings.react.reactMod.ComponentType[ModalProps]]
   @scala.inline
-  def NavigatorIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.NavigatorIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.NavigatorIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.NavigatorIOSProps]]
+  def NavigatorIOS: ComponentType[NavigatorIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.NavigatorIOS].asInstanceOf[typings.react.reactMod.ComponentType[NavigatorIOSProps]]
   @scala.inline
-  def Picker: ComponentType[typings.reactDashNative.reactDashNativeMod.PickerProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Picker].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.PickerProps]]
+  def Picker: ComponentType[PickerProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Picker].asInstanceOf[typings.react.reactMod.ComponentType[PickerProps]]
   @scala.inline
-  def PickerIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.PickerIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.PickerIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.PickerIOSProps]]
+  def PickerIOS: ComponentType[PickerIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.PickerIOS].asInstanceOf[typings.react.reactMod.ComponentType[PickerIOSProps]]
   @scala.inline
-  def PickerIOSItem: ComponentType[typings.reactDashNative.reactDashNativeMod.PickerIOSItemProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.PickerIOSItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.PickerIOSItemProps]]
+  def PickerIOSItem: ComponentType[PickerIOSItemProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.PickerIOSItem].asInstanceOf[typings.react.reactMod.ComponentType[PickerIOSItemProps]]
   @scala.inline
-  def PickerItem: ComponentType[typings.reactDashNative.reactDashNativeMod.PickerItemProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.PickerItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.PickerItemProps]]
+  def PickerItem: ComponentType[PickerItemProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.PickerItem].asInstanceOf[typings.react.reactMod.ComponentType[PickerItemProps]]
   @scala.inline
-  def ProgressBarAndroid: ComponentType[typings.reactDashNative.reactDashNativeMod.ProgressBarAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ProgressBarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ProgressBarAndroidProps]]
+  def ProgressBarAndroid: ComponentType[ProgressBarAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ProgressBarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[ProgressBarAndroidProps]]
   @scala.inline
-  def ProgressViewIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.ProgressViewIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ProgressViewIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ProgressViewIOSProps]]
+  def ProgressViewIOS: ComponentType[ProgressViewIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ProgressViewIOS].asInstanceOf[typings.react.reactMod.ComponentType[ProgressViewIOSProps]]
   @scala.inline
-  def RecyclerViewBackedScrollView: ComponentType[typings.reactDashNative.reactDashNativeMod.RecyclerViewBackedScrollViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.RecyclerViewBackedScrollView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.RecyclerViewBackedScrollViewProps]]
+  def RecyclerViewBackedScrollView: ComponentType[RecyclerViewBackedScrollViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.RecyclerViewBackedScrollView].asInstanceOf[typings.react.reactMod.ComponentType[RecyclerViewBackedScrollViewProps]]
   @scala.inline
-  def RefreshControl: ComponentType[typings.reactDashNative.reactDashNativeMod.RefreshControlProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.RefreshControl].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.RefreshControlProps]]
+  def RefreshControl: ComponentType[RefreshControlProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.RefreshControl].asInstanceOf[typings.react.reactMod.ComponentType[RefreshControlProps]]
   @scala.inline
-  def SafeAreaView: ComponentType[typings.reactDashNative.reactDashNativeMod.ViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SafeAreaView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ViewProps]]
+  def SafeAreaView: ComponentType[SafeAreaViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SafeAreaView].asInstanceOf[typings.react.reactMod.ComponentType[SafeAreaViewProps]]
   @scala.inline
-  def ScrollView: ComponentType[typings.reactDashNative.reactDashNativeMod.ScrollViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ScrollView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ScrollViewProps]]
+  def ScrollView: ComponentType[ScrollViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ScrollView].asInstanceOf[typings.react.reactMod.ComponentType[ScrollViewProps]]
   @scala.inline
-  def SectionList: ComponentType[typings.reactDashNative.reactDashNativeMod.SectionListProps[js.Any]] = typings.reactDashNative.reactDashNativeMod.SectionList.asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.SectionListProps[js.Any]]]
+  def SectionList: ComponentType[SectionListProps[js.Any]] = typings.reactDashNative.reactDashNativeMod.SectionList.asInstanceOf[typings.react.reactMod.ComponentType[SectionListProps[js.Any]]]
   @scala.inline
-  def SectionListCls: ComponentType[typings.reactDashNative.reactDashNativeMod.SectionListProps[js.Any]] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SectionListCls].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.SectionListProps[js.Any]]]
+  def SectionListCls: ComponentType[SectionListClsProps[js.Any]] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SectionListCls].asInstanceOf[typings.react.reactMod.ComponentType[SectionListClsProps[js.Any]]]
   @scala.inline
-  def SegmentedControlIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.SegmentedControlIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SegmentedControlIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.SegmentedControlIOSProps]]
+  def SegmentedControlIOS: ComponentType[SegmentedControlIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SegmentedControlIOS].asInstanceOf[typings.react.reactMod.ComponentType[SegmentedControlIOSProps]]
   @scala.inline
-  def Shape: ComponentType[ARTShapeProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Shape].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTShapeProps]]
+  def Shape: ComponentType[ShapeProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Shape].asInstanceOf[typings.react.reactMod.ComponentType[ShapeProps]]
   @scala.inline
-  def Slider: ComponentType[typings.reactDashNative.reactDashNativeMod.SliderProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Slider].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.SliderProps]]
+  def Slider: ComponentType[SliderProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Slider].asInstanceOf[typings.react.reactMod.ComponentType[SliderProps]]
   @scala.inline
-  def SnapshotViewIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.SnapshotViewIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SnapshotViewIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.SnapshotViewIOSProps]]
+  def SnapshotViewIOS: ComponentType[SnapshotViewIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SnapshotViewIOS].asInstanceOf[typings.react.reactMod.ComponentType[SnapshotViewIOSProps]]
   @scala.inline
-  def StatusBar: ComponentType[typings.reactDashNative.reactDashNativeMod.StatusBarProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.StatusBar].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.StatusBarProps]]
+  def StatusBar: ComponentType[StatusBarProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.StatusBar].asInstanceOf[typings.react.reactMod.ComponentType[StatusBarProps]]
   @scala.inline
-  def Surface: ComponentType[ARTSurfaceProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Surface].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ARTSurfaceProps]]
+  def Surface: ComponentType[SurfaceProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Surface].asInstanceOf[typings.react.reactMod.ComponentType[SurfaceProps]]
   @scala.inline
-  def SwipeableListView: ComponentType[typings.reactDashNative.reactDashNativeMod.SwipeableListViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SwipeableListView].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.SwipeableListViewProps]]
+  def SwipeableListView: ComponentType[SwipeableListViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SwipeableListView].asInstanceOf[typings.react.reactMod.ComponentType[SwipeableListViewProps]]
   @scala.inline
-  def Switch: ComponentType[typings.reactDashNative.reactDashNativeMod.SwitchProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Switch].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.SwitchProps]]
+  def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Switch].asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
   @scala.inline
-  def SwitchIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.SwitchIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SwitchIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.SwitchIOSProps]]
+  def SwitchIOS: ComponentType[SwitchIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SwitchIOS].asInstanceOf[typings.react.reactMod.ComponentType[SwitchIOSProps]]
   @scala.inline
-  def TabBarIOS: ComponentType[typings.reactDashNative.reactDashNativeMod.TabBarIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TabBarIOS].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.TabBarIOSProps]]
+  def TabBarIOS: ComponentType[TabBarIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TabBarIOS].asInstanceOf[typings.react.reactMod.ComponentType[TabBarIOSProps]]
   @scala.inline
-  def TabBarIOSItem: ComponentType[typings.reactDashNative.reactDashNativeMod.TabBarIOSItemProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TabBarIOSItem].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.TabBarIOSItemProps]]
+  def TabBarIOSItem: ComponentType[TabBarIOSItemProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TabBarIOSItem].asInstanceOf[typings.react.reactMod.ComponentType[TabBarIOSItemProps]]
   @scala.inline
-  def Text: ComponentType[typings.reactDashNative.reactDashNativeMod.TextProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Text].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.TextProps]]
+  def Text: ComponentType[TextProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.Text].asInstanceOf[typings.react.reactMod.ComponentType[TextProps]]
   @scala.inline
-  def TextInput: ComponentType[typings.reactDashNative.reactDashNativeMod.TextInputProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TextInput].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.TextInputProps]]
+  def TextInput: ComponentType[TextInputProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TextInput].asInstanceOf[typings.react.reactMod.ComponentType[TextInputProps]]
   @scala.inline
-  def ToolbarAndroid: ComponentType[typings.reactDashNative.reactDashNativeMod.ToolbarAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ToolbarAndroidProps]]
+  def ToolbarAndroid: ComponentType[ToolbarAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ToolbarAndroid].asInstanceOf[typings.react.reactMod.ComponentType[ToolbarAndroidProps]]
   @scala.inline
-  def TouchableHighlight: ComponentType[typings.reactDashNative.reactDashNativeMod.TouchableHighlightProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TouchableHighlight].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.TouchableHighlightProps]]
+  def TouchableHighlight: ComponentType[TouchableHighlightProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TouchableHighlight].asInstanceOf[typings.react.reactMod.ComponentType[TouchableHighlightProps]]
   @scala.inline
-  def TouchableNativeFeedback: ComponentType[typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedback].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProps]]
+  def TouchableNativeFeedback: ComponentType[TouchableNativeFeedbackProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedback].asInstanceOf[typings.react.reactMod.ComponentType[TouchableNativeFeedbackProps]]
   @scala.inline
-  def TouchableOpacity: ComponentType[typings.reactDashNative.reactDashNativeMod.TouchableOpacityProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TouchableOpacity].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.TouchableOpacityProps]]
+  def TouchableOpacity: ComponentType[TouchableOpacityProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TouchableOpacity].asInstanceOf[typings.react.reactMod.ComponentType[TouchableOpacityProps]]
   @scala.inline
-  def TouchableWithoutFeedback: ComponentType[typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedback].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackProps]]
+  def TouchableWithoutFeedback: ComponentType[TouchableWithoutFeedbackProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedback].asInstanceOf[typings.react.reactMod.ComponentType[TouchableWithoutFeedbackProps]]
   @scala.inline
-  def View: ComponentType[typings.reactDashNative.reactDashNativeMod.ViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.View].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ViewProps]]
+  def View: ComponentType[ViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.View].asInstanceOf[typings.react.reactMod.ComponentType[ViewProps]]
   @scala.inline
-  def ViewPagerAndroid: ComponentType[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroid].asInstanceOf[typings.react.reactMod.ComponentType[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroidProps]]
+  def ViewPagerAndroid: ComponentType[ViewPagerAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroid].asInstanceOf[typings.react.reactMod.ComponentType[ViewPagerAndroidProps]]
 }
 

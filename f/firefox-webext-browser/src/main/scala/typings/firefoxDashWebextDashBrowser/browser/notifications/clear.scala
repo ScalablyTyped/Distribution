@@ -11,6 +11,6 @@ object clear extends js.Object {
     * Clears an existing notification.
     * @param notificationId The id of the notification to be updated.
     */
-  def apply(notificationId: String): js.Promise[js.UndefOr[Boolean]] = js.native
+  def apply(notificationId: String): js.Promise[Boolean] = js.native
 }
 

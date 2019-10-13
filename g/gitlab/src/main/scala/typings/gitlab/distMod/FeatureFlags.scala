@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gitlab/dist", "FeatureFlags")
 @js.native
 class FeatureFlags ()
-  extends typings.gitlab.distServicesMod.FeatureFlags
+  extends typings.gitlab.distServicesFeatureFlagsMod.FeatureFlags
 

@@ -1,6 +1,5 @@
 package typings.atEmberRouting
 
-import typings.atEmberRouting.historyDashLocationMod.HistoryLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object historyDashLocationMod extends js.Object {
   @js.native
-  class default () extends HistoryLocation
+  class default ()
+    extends typings.atEmberObject.atEmberObjectMod.default
   
   type HistoryLocation = typings.atEmberObject.atEmberObjectMod.default
 }

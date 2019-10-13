@@ -220,10 +220,9 @@ object Scenes extends js.Object {
       * 
       * If the SceneManager is processing the Scenes when this method is called it will
       * queue the operation for the next update sequence.
-      * @param scene The Scene to be removed.
+      * @param key A unique key used to reference the Scene, i.e. `MainMenu` or `Level1`.
       */
-    def remove(scene: String): SceneManager = js.native
-    def remove(scene: Scene): SceneManager = js.native
+    def remove(key: String): SceneManager = js.native
     /**
       * Renders the Scenes.
       * @param renderer The renderer to use.
@@ -275,8 +274,10 @@ object Scenes extends js.Object {
     /**
       * Stops the given Scene.
       * @param key The Scene to stop.
+      * @param data Optional data object to pass to Scene.shutdown.
       */
     def stop(key: String): SceneManager = js.native
+    def stop(key: String, data: js.Object): SceneManager = js.native
     /**
       * Swaps the positions of two Scenes in the Scenes list.
       * @param keyA The first Scene to swap.
@@ -529,9 +530,11 @@ object Scenes extends js.Object {
     /**
       * Shutdown the Scene, clearing display list, timers, etc.
       * @param key The Scene to stop.
+      * @param data Optional data object to pass to Scene.Systems.shutdown.
       */
     def stop(): ScenePlugin = js.native
     def stop(key: String): ScenePlugin = js.native
+    def stop(key: String, data: js.Any): ScenePlugin = js.native
     /**
       * Swaps the position of two scenes in the Scenes list.
       * 

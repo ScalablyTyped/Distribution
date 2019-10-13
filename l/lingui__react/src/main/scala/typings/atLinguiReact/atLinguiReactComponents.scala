@@ -1,10 +1,5 @@
 package typings.atLinguiReact
 
-import typings.atLinguiReact.createFormatMod.FormatPropsWithoutI18n
-import typings.atLinguiReact.i18nMod.I18nComponentProps
-import typings.atLinguiReact.selectMod.PluralPropsWithoutI18n
-import typings.atLinguiReact.selectMod.SelectPropsWithoutI18n
-import typings.atLinguiReact.transMod.TransPropsWithoutI18n
 import typings.react.reactMod.ComponentType
 import typings.std.Date
 import typings.std.Intl.DateTimeFormatOptions
@@ -15,22 +10,20 @@ import scala.scalajs.js.annotation._
 
 object atLinguiReactComponents extends atLinguiReactProps {
   @scala.inline
-  def DateFormat: ComponentType[FormatPropsWithoutI18n[Date, DateTimeFormatOptions]] = js.constructorOf[typings.atLinguiReact.atLinguiReactMod.DateFormat].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atLinguiReact.createFormatMod.FormatPropsWithoutI18n[typings.std.Date, typings.std.Intl.DateTimeFormatOptions]]]
+  def DateFormat: ComponentType[DateFormatProps[Date, DateTimeFormatOptions]] = js.constructorOf[typings.atLinguiReact.atLinguiReactMod.DateFormat].asInstanceOf[typings.react.reactMod.ComponentType[DateFormatProps[typings.std.Date, typings.std.Intl.DateTimeFormatOptions]]]
   @scala.inline
-  def I18n: ComponentType[I18nComponentProps] = js.constructorOf[typings.atLinguiReact.i18nMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atLinguiReact.i18nMod.I18nComponentProps]]
+  def I18n: ComponentType[I18nProps] = js.constructorOf[typings.atLinguiReact.i18nMod.default].asInstanceOf[typings.react.reactMod.ComponentType[I18nProps]]
   @scala.inline
-  def I18nProvider: ComponentType[typings.atLinguiReact.i18nProviderMod.I18nProviderProps] = js.constructorOf[typings.atLinguiReact.i18nProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atLinguiReact.i18nProviderMod.I18nProviderProps]]
+  def I18nProvider: ComponentType[I18nProviderProps] = js.constructorOf[typings.atLinguiReact.i18nProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[I18nProviderProps]]
   @scala.inline
-  def NumberFormat: ComponentType[FormatPropsWithoutI18n[Double, NumberFormatOptions]] = js.constructorOf[typings.atLinguiReact.atLinguiReactMod.NumberFormat].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atLinguiReact.createFormatMod.FormatPropsWithoutI18n[scala.Double, typings.std.Intl.NumberFormatOptions]]]
+  def NumberFormat: ComponentType[NumberFormatProps[Double, NumberFormatOptions]] = js.constructorOf[typings.atLinguiReact.atLinguiReactMod.NumberFormat].asInstanceOf[typings.react.reactMod.ComponentType[NumberFormatProps[scala.Double, typings.std.Intl.NumberFormatOptions]]]
   @scala.inline
-  def Plural: ComponentType[PluralPropsWithoutI18n] = js.constructorOf[typings.atLinguiReact.selectMod.Plural].asInstanceOf[typings.react.reactMod.ComponentType[typings.atLinguiReact.selectMod.PluralPropsWithoutI18n]]
+  def Plural: ComponentType[PluralProps] = js.constructorOf[typings.atLinguiReact.selectMod.Plural].asInstanceOf[typings.react.reactMod.ComponentType[PluralProps]]
   @scala.inline
-  def Select: ComponentType[SelectPropsWithoutI18n] = js.constructorOf[typings.atLinguiReact.selectMod.Select].asInstanceOf[typings.react.reactMod.ComponentType[typings.atLinguiReact.selectMod.SelectPropsWithoutI18n]]
+  def Select: ComponentType[SelectProps] = js.constructorOf[typings.atLinguiReact.selectMod.Select].asInstanceOf[typings.react.reactMod.ComponentType[SelectProps]]
   @scala.inline
-  def SelectOrdinal: ComponentType[PluralPropsWithoutI18n] = js.constructorOf[typings.atLinguiReact.selectMod.SelectOrdinal].asInstanceOf[typings.react.reactMod.ComponentType[typings.atLinguiReact.selectMod.PluralPropsWithoutI18n]]
+  def SelectOrdinal: ComponentType[SelectOrdinalProps] = js.constructorOf[typings.atLinguiReact.selectMod.SelectOrdinal].asInstanceOf[typings.react.reactMod.ComponentType[SelectOrdinalProps]]
   @scala.inline
-  def Trans: ComponentType[TransPropsWithoutI18n] = js.constructorOf[typings.atLinguiReact.transMod.default].asInstanceOf[typings.react.reactMod.ComponentType[typings.atLinguiReact.transMod.TransPropsWithoutI18n]]
+  def Trans: ComponentType[TransProps] = js.constructorOf[typings.atLinguiReact.transMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TransProps]]
 }
 

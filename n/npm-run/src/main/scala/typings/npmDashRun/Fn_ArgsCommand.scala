@@ -8,8 +8,6 @@ import typings.node.childUnderscoreProcessMod.SpawnOptionsWithStdioTuple
 import typings.node.childUnderscoreProcessMod.SpawnOptionsWithoutStdio
 import typings.node.childUnderscoreProcessMod.StdioNull
 import typings.node.childUnderscoreProcessMod.StdioPipe
-import typings.node.streamMod.Readable
-import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,13 +21,13 @@ trait Fn_ArgsCommand extends js.Object {
     command: String,
     args: js.Array[String],
     options: SpawnOptionsWithStdioTuple[StdioNull | StdioPipe, StdioNull | StdioPipe, StdioNull | StdioPipe]
-  ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
+  ): ChildProcessByStdio[Null, Null, Null] = js.native
   def apply(command: String, args: js.Array[String], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def apply(command: String, options: SpawnOptions): ChildProcess = js.native
   def apply(
     command: String,
     options: SpawnOptionsWithStdioTuple[StdioNull | StdioPipe, StdioNull | StdioPipe, StdioNull | StdioPipe]
-  ): ChildProcessByStdio[Writable, Readable, Readable] = js.native
+  ): ChildProcessByStdio[Null, Null, Null] = js.native
   def apply(command: String, options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
 }
 

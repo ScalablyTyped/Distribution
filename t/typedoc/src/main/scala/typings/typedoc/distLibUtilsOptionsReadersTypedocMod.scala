@@ -1,7 +1,8 @@
 package typings.typedoc
 
+import typings.typedoc.distLibUtilsComponentMod.AbstractComponent
 import typings.typedoc.distLibUtilsOptionsOptionsMod.DiscoverEvent
-import typings.typedoc.distLibUtilsOptionsOptionsMod.OptionsComponent
+import typings.typedoc.distLibUtilsOptionsOptionsMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distLibUtilsOptionsReadersTypedocMod extends js.Object {
   @js.native
-  class TypedocReader () extends OptionsComponent {
+  class TypedocReader () extends AbstractComponent[Options] {
     var options: String = js.native
     def findTypedocFile(path: String): js.UndefOr[String] = js.native
     def load(event: DiscoverEvent, optionFile: String): Unit = js.native

@@ -17,51 +17,51 @@ object reporters extends js.Object {
   
   @js.native
   class Doc ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.Doc
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class Dot ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.Dot
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class HTML ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.HTML
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class HTMLCov ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.HTMLCov
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class JSON ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.JSON
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class JSONCov ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.JSONCov
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class JSONStream ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.JSONStream
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class Landing ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.Landing
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class List ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.List
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class Markdown ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.Markdown
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class Min ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.Min
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class Nyan ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.Nyan
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class Progress protected ()
@@ -78,11 +78,11 @@ object reporters extends js.Object {
   
   @js.native
   class Spec ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.Spec
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class TAP ()
-    extends typings.jqueryDotAjaxfile.Mocha.reporters.TAP
+    extends typings.jqueryDotAjaxfile.Mocha.reporters.Base
   
   @js.native
   class XUnit protected ()

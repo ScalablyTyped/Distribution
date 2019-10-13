@@ -1,7 +1,7 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atIonicCore.distTypesComponentsMod.Global.HTMLIonActionSheetElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonActionSheetElement
 import typings.atIonicReact.distTypesComponentsCreateOverlayComponentMod.ReactOverlayProps
 import typings.react.reactMod.ReactInstance
 import typings.react.reactMod.ReactPortal

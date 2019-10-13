@@ -1,6 +1,6 @@
 package typings.atBlueprintjsTable.libEsmHeadersEditableNameMod
 
-import typings.react.reactMod.PureComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/table/lib/esm/headers/editableName", "EditableName")
 @js.native
 class EditableName protected ()
-  extends PureComponent[IEditableNameProps, IEditableNameState, js.Any] {
+  extends Component[IEditableNameProps, IEditableNameState, js.Any] {
   def this(props: IEditableNameProps) = this()
   def this(props: IEditableNameProps, context: js.Any) = this()
   var handleCancel: js.Any = js.native
