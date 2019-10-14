@@ -1,9 +1,9 @@
 package typings.atBlueprintjsSelect.libEsmComponentsQueryDashListQueryListMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractComponent2
 import typings.atBlueprintjsSelect.Anon_Children
 import typings.atBlueprintjsSelect.Anon_Disabled
-import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "QueryList")
 @js.native
 class QueryList[T] protected ()
-  extends Component[IQueryListProps[T], IQueryListState[T], js.Any] {
+  extends AbstractComponent2[IQueryListProps[T], IQueryListState[T], js.Object] {
   def this(props: IQueryListProps[T]) = this()
   def this(props: IQueryListProps[T], context: js.Any) = this()
   var canCreateItems: js.Any = js.native

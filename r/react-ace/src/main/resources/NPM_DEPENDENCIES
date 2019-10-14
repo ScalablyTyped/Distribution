@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-ace" : "7.0.4"
+      "react-ace" : "7.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-ace" : "7.0.4"
+      "react-ace" : "7.0.5"
     }
   ],
   "compile-devDependencies" : [
