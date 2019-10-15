@@ -30,7 +30,7 @@ trait AttachmentQueryProperties extends js.Object {
     */
   var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
   /**
-    * If `true`, the [exif information](http://www.cipa.jp/std/documents/e/DC-008-Translation-2016-E.pdf) for the attachment will be included in [attachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#exifInfo).
+    * If `true`, the [Exchangeable image file format](https://en.wikipedia.org/wiki/Exif) for the attachment will be included in [attachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#exifInfo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#returnMetadata)
     *

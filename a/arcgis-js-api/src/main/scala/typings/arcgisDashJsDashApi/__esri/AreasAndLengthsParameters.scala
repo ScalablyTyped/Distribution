@@ -1,18 +1,36 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`preserve-shape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-kilometers`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-meters`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-yards`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.acres
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geodesic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hectares
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.planar
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AreasAndLengthsParameters extends Accessor {
+trait AreasAndLengthsParameters
+  extends Accessor
+     with JSONSupport {
   /**
-    * The area unit in which areas of polygons will be calculated. Use the strings listed below or [any other valid area unit](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.AreaUnit.Code.ACRE).  **Possible Values:** acres | hectares | square-miles | square-kilometers | square-meters | square-feet | square-yards
+    * The area unit in which areas of polygons will be calculated. Use the strings listed below or [any other valid area unit](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.AreaUnit.Code.ACRE).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#areaUnit)
     */
-  var areaUnit: String = js.native
+  var areaUnit: acres | hectares | `square-miles` | `square-kilometers` | `square-meters` | `square-feet` | `square-yards` = js.native
   /**
     * Defines the type of calculation for the geometry. The type can be one of the following:
     *
@@ -25,27 +43,19 @@ trait AreasAndLengthsParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#calculationType)
     */
-  var calculationType: String = js.native
+  var calculationType: planar | geodesic | `preserve-shape` = js.native
   /**
-    * The length unit in which perimeters of polygons will be calculated. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER).  **Possible Values:** feet | kilometers | meters | miles | nautical-miles | yards
+    * The length unit in which perimeters of polygons will be calculated. Use one of the possible values listed below or any of the [numeric codes for linear units](https://developers.arcgis.com/java/api-reference/constant-values.html#com.esri.core.geometry.LinearUnit.Code.CENTIMETER).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#lengthUnit)
     */
-  var lengthUnit: String = js.native
+  var lengthUnit: feet | kilometers | meters | miles | `nautical-miles` | yards = js.native
   /**
     * Polygon geometries for which to compute areas and lengths.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#polygons)
     */
   var polygons: js.Array[Polygon] = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.AreasAndLengthsParameters")

@@ -10,9 +10,9 @@ trait ChartMediaInfoValueSeries extends Accessor {
   /**
     * String value indicating the tooltip for a series.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#tooltipField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#tooltip)
     */
-  var tooltipField: String = js.native
+  var tooltip: String = js.native
   /**
     * Numerical value indicating the x-value for the chart series.
     *

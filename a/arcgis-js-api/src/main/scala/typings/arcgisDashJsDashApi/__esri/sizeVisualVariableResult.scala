@@ -20,6 +20,12 @@ trait sizeVisualVariableResult extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#VisualVariableResult)
+    */
+  var basemapTheme: String
+  /**
     * Indicates whether default values were used in the absence of sufficient data and/or statistics from the layer. Default values are typically used when all features have the same field value or no value at all.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#VisualVariableResult)
@@ -50,6 +56,7 @@ object sizeVisualVariableResult {
   def apply(
     authoringInfo: AuthoringInfo,
     basemapId: String,
+    basemapTheme: String,
     constructor: js.Function,
     defaultValuesUsed: Boolean,
     hasOwnProperty: PropertyKey => Boolean,
@@ -58,7 +65,7 @@ object sizeVisualVariableResult {
     statistics: SummaryStatisticsResult,
     visualVariables: js.Array[SizeVariable]
   ): sizeVisualVariableResult = {
-    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, statistics = statistics, visualVariables = visualVariables)
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sizeScheme = sizeScheme, statistics = statistics, visualVariables = visualVariables)
   
     __obj.asInstanceOf[sizeVisualVariableResult]
   }

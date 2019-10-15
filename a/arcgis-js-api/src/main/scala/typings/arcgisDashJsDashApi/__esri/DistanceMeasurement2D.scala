@@ -30,11 +30,13 @@ trait DistanceMeasurement2D extends Widget {
     */
   var unit: metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers = js.native
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the distance values. By default, the following units are included: `metric`, `imperial`, `inches`, `feet`, `us-feet`, `yards`, `miles`, `nautical-miles`, `meters`, `kilometers`.
+    * List of available units and unit systems (imperial, metric) for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#unitOptions)
     */
-  var unitOptions: js.Array[String] = js.native
+  var unitOptions: js.Array[
+    metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+  ] = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
     *
@@ -47,14 +49,6 @@ trait DistanceMeasurement2D extends Widget {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#viewModel)
     */
   var viewModel: DistanceMeasurement2DViewModel = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
 }
 
 @JSGlobal("__esri.DistanceMeasurement2D")

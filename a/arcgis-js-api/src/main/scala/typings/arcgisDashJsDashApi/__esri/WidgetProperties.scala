@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait WidgetProperties extends js.Object {
   /**
-    * The ID or node representing the DOM element containing the widget. This property can only be set once.
+    * The ID or node representing the DOM element containing the widget. This property can only be set once. The following examples are all valid use cases when working with widgets.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#container)
     */

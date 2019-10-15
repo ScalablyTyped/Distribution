@@ -11,18 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PointCloudValueFilter extends PointCloudFilter {
   /**
-    * Whether points should be included or excluded from the filter.  **Possible values:** include | exclude
+    * Whether points should be included or excluded from the filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#mode)
     *
     * @default "exclude"
     */
   var mode: include | exclude = js.native
-  /**
-    * For PointCloudValueFilter the type is always `value`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#type)
-    */
   @JSName("type")
   val type_PointCloudValueFilter: value = js.native
   /**

@@ -1,11 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`max-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`min-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-drag`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,14 +19,6 @@ trait ColorSizeSlider extends SmartMappingSliderBase {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html#viewModel)
     */
   var viewModel: ColorSizeSliderViewModel = js.native
-  @JSName("on")
-  def on_maxchange(name: `max-change`, eventHandler: ColorSizeSliderMaxChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_minchange(name: `min-change`, eventHandler: ColorSizeSliderMinChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_thumbchange(name: `thumb-change`, eventHandler: ColorSizeSliderThumbChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_thumbdrag(name: `thumb-drag`, eventHandler: ColorSizeSliderThumbDragEventHandler): IHandle = js.native
   /**
     * A convenience function used to update the properties of a ColorSizeSlider widget instance from the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#ContinuousRendererResult) of the [univariateColorSize.createContinuousRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer) method.
     *

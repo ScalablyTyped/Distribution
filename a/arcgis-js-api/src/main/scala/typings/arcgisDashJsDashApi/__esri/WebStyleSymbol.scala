@@ -36,11 +36,6 @@ trait WebStyleSymbol
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#styleUrl)
     */
   var styleUrl: String = js.native
-  /**
-    * For WebStyleSymbol the type is always `web-style`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#type)
-    */
   @JSName("type")
   val type_WebStyleSymbol: `web-style` = js.native
   /**

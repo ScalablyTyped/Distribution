@@ -81,14 +81,6 @@ trait Directions
     */
   def getDirections(): IPromise[RouteResult] = js.native
   /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
-  /**
     * Zoom so that the full route is displayed within the current map extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#zoomToRoute)

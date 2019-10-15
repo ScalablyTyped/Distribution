@@ -143,6 +143,31 @@ trait watchUtils extends js.Object {
   def whenDefinedOnce(obj: Accessor, propertyName: js.Array[String]): PromisedWatchHandle = js.native
   def whenDefinedOnce(obj: Accessor, propertyName: js.Array[String], callback: WatchCallback): PromisedWatchHandle = js.native
   /**
+    * Watches a property for becoming equal with a given `value`. The `callback` will fire after the given property has a value equal to the provided value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenEqual)
+    *
+    * @param obj The object containing the property to watch.
+    * @param propertyName The name of the property to watch.
+    * @param value The value to test with the value of the given property.
+    * @param callback The function to call when the property is equal to the given value.
+    *
+    */
+  def whenEqual(obj: Accessor, propertyName: String, value: js.Any, callback: WatchCallback): WatchHandle = js.native
+  /**
+    * Watches a property for becoming equal with a given `value`. The `callback` will fire after the given property is equal to the provided value for the first time. The returned watch handle is removed after the first time the callback has been invoked.  The returned handle additionally implements the Promise interface and can be used to create a promise chain to asynchronously handle a property value becoming false. The promise result is an object containing a `value`, `oldValue`, `propertyName` and `target`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenEqualOnce)
+    *
+    * @param obj The object containing the property to watch.
+    * @param propertyName The name of the property to watch.
+    * @param value The value to test with the value of the given property.
+    * @param callback The function to call when the property is equal to the given value.
+    *
+    */
+  def whenEqualOnce(obj: Accessor, propertyName: String, value: js.Any): PromisedWatchHandle = js.native
+  def whenEqualOnce(obj: Accessor, propertyName: String, value: js.Any, callback: WatchCallback): PromisedWatchHandle = js.native
+  /**
     * Watches a property for becoming `false`. As with init(), the callback is called if the property is initially `false`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenFalse)

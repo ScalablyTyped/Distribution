@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Camera
   extends Accessor
-     with JSONSupport {
+     with JSONSupport
+     with _GoToTarget3D {
   /**
     * The field of view of the camera in degrees.
     *

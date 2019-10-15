@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SketchEdges3DProperties extends Edges3DProperties {
   /**
-    * For SketchEdges3D the type is always `sketch`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-SketchEdges3D.html#type)
     */

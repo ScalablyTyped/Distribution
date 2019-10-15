@@ -2,6 +2,12 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mesh
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipatch
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polygon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,11 +62,11 @@ trait FeatureLayerProperties
     */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   /**
-    * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from client-side features, this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.  **Possible Values:** point | multipoint | polyline | polygon | multipatch | mesh
+    * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from client-side features, this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType)
     */
-  var geometryType: js.UndefOr[String] = js.undefined
+  var geometryType: js.UndefOr[point | multipoint | polyline | polygon | multipatch | mesh] = js.undefined
   /**
     * The historic moment to query. If historicMoment is not specified, the query will apply to the current features.
     *
@@ -178,6 +184,12 @@ trait FeatureLayerProperties
     */
   var source: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
   /**
+    * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API. While most commonly used [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#properties-summary) are exposed on the FeatureLayer class directly, this property gives access to all information returned by the feature service. This property is useful if working in an application built using an older version of the API which requires access to feature service properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#sourceJSON)
+    */
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  /**
     * The spatial reference of the layer. When creating the layer from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url), the spatial reference is read from the service.  When creating a FeatureLayer from client-side features, this property is inferred from the geometries of the features provided in the [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference)
@@ -189,6 +201,12 @@ trait FeatureLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#templates)
     */
   var templates: js.UndefOr[js.Array[FeatureTemplateProperties]] = js.undefined
+  /**
+    * The name of the field holding the type ID or subtypes for the features. See [ArcGIS Pro subtypes document](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/overview/an-overview-of-subtypes.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#typeIdField)
+    */
+  var typeIdField: js.UndefOr[String] = js.undefined
   /**
     * An array of subtypes defined in the feature service exposed by ArcGIS REST API. Each item includes information about the type, such as the type ID, name, and definition expression.
     *
@@ -214,7 +232,7 @@ object FeatureLayerProperties {
     featureReduction: FeatureLayerFeatureReduction = null,
     fields: js.Array[FieldProperties] = null,
     fullExtent: ExtentProperties = null,
-    geometryType: String = null,
+    geometryType: point | multipoint | polyline | polygon | multipatch | mesh = null,
     historicMoment: DateProperties = null,
     id: String = null,
     isTable: js.UndefOr[Boolean] = js.undefined,
@@ -237,10 +255,12 @@ object FeatureLayerProperties {
     returnZ: js.UndefOr[Boolean] = js.undefined,
     screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined,
     source: CollectionProperties[GraphicProperties] = null,
+    sourceJSON: js.Any = null,
     spatialReference: SpatialReferenceProperties = null,
     templates: js.Array[FeatureTemplateProperties] = null,
     timeInfo: TimeInfoProperties = null,
     title: String = null,
+    typeIdField: String = null,
     types: js.Array[FeatureTypeProperties] = null,
     url: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
@@ -254,7 +274,7 @@ object FeatureLayerProperties {
     if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
     if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isTable)) __obj.updateDynamic("isTable")(isTable)
@@ -277,10 +297,12 @@ object FeatureLayerProperties {
     if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ)
     if (!js.isUndefined(screenSizePerspectiveEnabled)) __obj.updateDynamic("screenSizePerspectiveEnabled")(screenSizePerspectiveEnabled)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
     if (templates != null) __obj.updateDynamic("templates")(templates)
     if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo)
     if (title != null) __obj.updateDynamic("title")(title)
+    if (typeIdField != null) __obj.updateDynamic("typeIdField")(typeIdField)
     if (types != null) __obj.updateDynamic("types")(types)
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

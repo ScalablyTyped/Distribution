@@ -1,5 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.KVP
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.RESTful
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
@@ -37,13 +39,13 @@ trait WMTSLayerProperties
     */
   var customParameters: js.UndefOr[js.Any] = js.undefined
   /**
-    * The service mode for the WMTS layer. If not specified, the API will first make a getCapabilities request using `RESTful`. If that fails, it will try using `KVP`.  **Possible Values:** RESTful | KVP
+    * The service mode for the WMTS layer. If not specified, the API will first make a getCapabilities request using `RESTful`. If that fails, it will try using `KVP`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#serviceMode)
     *
     * @default RESTful
     */
-  var serviceMode: js.UndefOr[String] = js.undefined
+  var serviceMode: js.UndefOr[RESTful | KVP] = js.undefined
   /**
     * A collection of [WMTSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html) objects.
     *
@@ -79,7 +81,7 @@ object WMTSLayerProperties {
     opacity: Int | Double = null,
     portalItem: PortalItemProperties = null,
     refreshInterval: Int | Double = null,
-    serviceMode: String = null,
+    serviceMode: RESTful | KVP = null,
     sublayers: CollectionProperties[WMTSSublayerProperties] = null,
     title: String = null,
     url: String = null,
@@ -99,7 +101,7 @@ object WMTSLayerProperties {
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (serviceMode != null) __obj.updateDynamic("serviceMode")(serviceMode)
+    if (serviceMode != null) __obj.updateDynamic("serviceMode")(serviceMode.asInstanceOf[js.Any])
     if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (url != null) __obj.updateDynamic("url")(url)

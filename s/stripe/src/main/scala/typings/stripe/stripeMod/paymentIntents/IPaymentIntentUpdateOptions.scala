@@ -50,7 +50,7 @@ trait IPaymentIntentUpdateOptions extends js.Object {
     * Set to `true` to save this PaymentIntent’s payment method to the associated Customer, if the payment method is not already attached. This parameter only applies to the payment method passed in the same request or the current payment method attached to the PaymentIntent and must be specified again if a new payment method is added.
     */
   var save_payment_method: js.UndefOr[Boolean] = js.undefined
-  /*
+  /**
     * Indicates that you intend to make future payments with this PaymentIntent’s payment method.
     */
   var setup_future_usage: js.UndefOr[PaymentIntentFutureUsageType] = js.undefined
@@ -59,13 +59,13 @@ trait IPaymentIntentUpdateOptions extends js.Object {
     */
   var shipping: js.UndefOr[IShippingInformation] = js.undefined
   /**
-    * ID of the Source object to attach to this PaymentIntent.
-    */
-  var source: js.UndefOr[String] = js.undefined
-  /**
     * Extra information about a PaymentIntent. This will appear on your customer’s statement when this PaymentIntent succeeds in creating a charge.
     */
   var statement_descriptor: js.UndefOr[String] = js.undefined
+  /**
+    * Provides information about a card payment that customers see on their statements. Concatenated with the prefix (shortened descriptor) or statement descriptor that’s set on the account to form the complete statement descriptor.
+    */
+  var statement_descriptor_suffix: js.UndefOr[String] = js.undefined
   /**
     * A string that identifies the resulting payment as part of a group.
     */
@@ -87,8 +87,8 @@ object IPaymentIntentUpdateOptions {
     save_payment_method: js.UndefOr[Boolean] = js.undefined,
     setup_future_usage: PaymentIntentFutureUsageType = null,
     shipping: IShippingInformation = null,
-    source: String = null,
     statement_descriptor: String = null,
+    statement_descriptor_suffix: String = null,
     transfer_group: String = null
   ): IPaymentIntentUpdateOptions = {
     val __obj = js.Dynamic.literal()
@@ -104,8 +104,8 @@ object IPaymentIntentUpdateOptions {
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)
     if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
-    if (source != null) __obj.updateDynamic("source")(source)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (statement_descriptor_suffix != null) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[IPaymentIntentUpdateOptions]
   }

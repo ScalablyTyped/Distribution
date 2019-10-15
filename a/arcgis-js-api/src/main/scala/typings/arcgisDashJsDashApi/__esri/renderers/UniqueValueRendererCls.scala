@@ -65,14 +65,14 @@ class UniqueValueRendererCls ()
     * See the [Thematic visualization with realistic 3D symbols](https://developers.arcgis.com/javascript/latest/sample-code/visualization-trees-realistic/index.html)
     * for an example of using multiple visual variables to visualize your data.
     *
-    * > **Known Limitations**  Color and opacity visual variables must not have more than 8 stops and size visual variables must not have more than 6 stops. This does not apply to variables driven by view scale.
+    * > **Known Limitations**  Color and opacity visual variables must not have more than 8 stops and size visual variables must not have more than 6 stops. This does not apply to variables driven by view scale.  For apps where users can interactively change the `field` or `valueExpression` of a visual variable, we suggest you include all potential fields referenced by visual variables in the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields) of the layer. This ensures the best user experience when switching or updating fields in renderers.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-mixins-VisualVariablesRenderer.html#visualVariables)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-mixins-VisualVariablesMixin.html#visualVariables)
     */
   /* CompleteClass */
   override var visualVariables: js.Array[VisualVariable] = js.native
   /**
-    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
     *

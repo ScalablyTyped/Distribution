@@ -32,7 +32,8 @@ object ClassedColorSliderProperties {
     labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
     max: Int | Double = null,
     min: Int | Double = null,
-    viewModel: ClassedColorSliderViewModelProperties = null
+    viewModel: ClassedColorSliderViewModelProperties = null,
+    zoomOptions: SmartMappingSliderBaseZoomOptions = null
   ): ClassedColorSliderProperties = {
     val __obj = js.Dynamic.literal()
     if (breaks != null) __obj.updateDynamic("breaks")(breaks)
@@ -45,6 +46,7 @@ object ClassedColorSliderProperties {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions)
     __obj.asInstanceOf[ClassedColorSliderProperties]
   }
 }

@@ -44,7 +44,7 @@ trait config extends js.Object {
     */
   var kmlServiceUrl: String
   /**
-    * The URL of the portal instance. If using an on-premise portal, this value should be set to the portal instance, for example: `https://www.example.com/arcgis`
+    * The default URL of new portal instances. If using an on-premise portal, this value should be set to the portal instance, for example: `https://www.example.com/arcgis`
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl)
     *

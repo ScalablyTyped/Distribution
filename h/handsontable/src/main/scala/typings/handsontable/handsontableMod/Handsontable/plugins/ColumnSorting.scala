@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ColumnSorting extends Base {
+trait ColumnSorting extends BasePlugin {
   def clearSort(): Unit = js.native
   def getSortConfig(): js.Array[Config] = js.native
   def getSortConfig(column: Double): Unit | Config = js.native

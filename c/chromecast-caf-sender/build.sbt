@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "chromecast-caf-sender"
-version := "1.0-dt-20190827Z-8206fd"
+version := "1.0-dt-20190827Z-7083af"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20190923Z-da5e34",
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20191014Z-c9c049",
   "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-0e06e5",
   "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-dce26a",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")

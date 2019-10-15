@@ -15,7 +15,7 @@ trait MultipartColorRamp extends ColorRamp {
     */
   var colorRamps: js.Array[AlgorithmicColorRamp] = js.native
   /**
-    * A string value representing the color ramp type. This value is always `multipart`.
+    * A string value representing the color ramp type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-MultipartColorRamp.html#type)
     *

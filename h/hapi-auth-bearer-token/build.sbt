@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "hapi-auth-bearer-token"
-version := "6.1-dt-20181213Z-84bdb9"
+version := "6.1-dt-20181213Z-771e07"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "boom" % "7.3-dt-20190805Z-210d99",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-b970ae",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-6d65e8",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20191014Z-6d65e8",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-d312c5",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-c7c4ce",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-7db5f5",

@@ -1,5 +1,6 @@
 package typings.gcsDashResumableDashUpload
 
+import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadMod.PredefinedAcl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,22 +10,28 @@ object gcsDashResumableDashUploadStrings {
   sealed trait `*` extends js.Object
   
   @js.native
-  sealed trait authenticatedRead extends js.Object
+  sealed trait authenticatedRead extends PredefinedAcl
   
   @js.native
-  sealed trait bucketOwnerFullControl extends js.Object
+  sealed trait bucketOwnerFullControl extends PredefinedAcl
   
   @js.native
-  sealed trait bucketOwnerRead extends js.Object
+  sealed trait bucketOwnerRead extends PredefinedAcl
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait full extends js.Object
   
   @js.native
-  sealed trait projectPrivate extends js.Object
+  sealed trait noAcl extends js.Object
   
   @js.native
-  sealed trait publicRead extends js.Object
+  sealed trait `private` extends PredefinedAcl
+  
+  @js.native
+  sealed trait projectPrivate extends PredefinedAcl
+  
+  @js.native
+  sealed trait publicRead extends PredefinedAcl
   
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
@@ -34,6 +41,10 @@ object gcsDashResumableDashUploadStrings {
   def bucketOwnerFullControl: bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[bucketOwnerFullControl]
   @scala.inline
   def bucketOwnerRead: bucketOwnerRead = "bucketOwnerRead".asInstanceOf[bucketOwnerRead]
+  @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  @scala.inline
+  def noAcl: noAcl = "noAcl".asInstanceOf[noAcl]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   @scala.inline

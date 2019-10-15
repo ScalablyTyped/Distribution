@@ -38,11 +38,6 @@ trait Extent
     * @default undefined
     */
   var mmin: Double = js.native
-  /**
-    * For Extent, the type is always `extent`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#type)
-    */
   @JSName("type")
   val type_Extent: typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.extent = js.native
   /**

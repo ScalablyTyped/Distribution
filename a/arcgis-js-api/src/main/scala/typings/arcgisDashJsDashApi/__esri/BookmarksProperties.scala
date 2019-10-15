@@ -9,11 +9,25 @@ trait BookmarksProperties
   extends WidgetProperties
      with GoToProperties {
   /**
+    * Specifies how new bookmarks will be created if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`. Can be used to enable or disable taking screenshots or creating an extent based on the current view when a bookmark is created. See [BookmarkCreationOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions) for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarkCreationOptions)
+    */
+  var bookmarkCreationOptions: js.UndefOr[BookmarkCreationOptions] = js.undefined
+  /**
     * A collection of [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)s.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarks)
     */
   var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.undefined
+  /**
+    * Indicates whether the widget is able to be edited. When `true`, allows bookmarks to be added, edited, reordered, or deleted from within the widget. Any edits made will only be shown locally and will not be saved.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
+    *
+    * @default false
+    */
+  var editingEnabled: js.UndefOr[Boolean] = js.undefined
   /**
     * The widget's default CSS icon class.
     *
@@ -32,31 +46,43 @@ trait BookmarksProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#viewModel)
     */
   var viewModel: js.UndefOr[BookmarksViewModelProperties] = js.undefined
+  /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[VisibleElements] = js.undefined
 }
 
 object BookmarksProperties {
   @scala.inline
   def apply(
+    bookmarkCreationOptions: BookmarkCreationOptions = null,
     bookmarks: CollectionProperties[BookmarkProperties] = null,
     container: String | HTMLElement = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    editingEnabled: js.UndefOr[Boolean] = js.undefined,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     iconClass: String = null,
     id: String = null,
     label: String = null,
     view: MapViewProperties = null,
-    viewModel: BookmarksViewModelProperties = null
+    viewModel: BookmarksViewModelProperties = null,
+    visibleElements: VisibleElements = null
   ): BookmarksProperties = {
     val __obj = js.Dynamic.literal()
+    if (bookmarkCreationOptions != null) __obj.updateDynamic("bookmarkCreationOptions")(bookmarkCreationOptions)
     if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (!js.isUndefined(editingEnabled)) __obj.updateDynamic("editingEnabled")(editingEnabled)
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
     if (view != null) __obj.updateDynamic("view")(view)
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (visibleElements != null) __obj.updateDynamic("visibleElements")(visibleElements)
     __obj.asInstanceOf[BookmarksProperties]
   }
 }

@@ -5,16 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IStrategyOptions extends js.Object {
-  var passReqToCallback: Boolean
-  var realm: String
-  var scope: String | js.Array[String]
+  var passReqToCallback: js.UndefOr[Boolean] = js.undefined
+  var realm: js.UndefOr[String] = js.undefined
+  var scope: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 
 object IStrategyOptions {
   @scala.inline
-  def apply(passReqToCallback: Boolean, realm: String, scope: String | js.Array[String]): IStrategyOptions = {
-    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback, realm = realm, scope = scope.asInstanceOf[js.Any])
-  
+  def apply(
+    passReqToCallback: js.UndefOr[Boolean] = js.undefined,
+    realm: String = null,
+    scope: String | js.Array[String] = null
+  ): IStrategyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    if (realm != null) __obj.updateDynamic("realm")(realm)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStrategyOptions]
   }
 }

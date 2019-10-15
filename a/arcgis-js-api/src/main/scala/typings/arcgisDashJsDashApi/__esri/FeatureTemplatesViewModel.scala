@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.select
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,6 +68,8 @@ trait FeatureTemplatesViewModel
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#filterFunction)
     */
   def filterFunction(filterName: js.Any): Boolean = js.native
+  @JSName("on")
+  def on_select(name: select, eventHandler: FeatureTemplatesViewModelSelectEventHandler): IHandle = js.native
   /**
     * This method updates the [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) with the provided filter.
     *

@@ -1,11 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`max-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`min-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-drag`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,19 +14,17 @@ trait SizeSlider extends SmartMappingSliderBase {
     */
   var stops: js.Array[SizeStop] = js.native
   /**
+    * Exposes various properties of the widget that can be styled.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
+    */
+  var style: SizeSliderStyle = js.native
+  /**
     * The view model for the SizeSlider widget. This class contains all the logic (properties and methods) that controls this widget's behavior. See the [SizeSliderViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html) class to access all properties and methods on the SizeSlider widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#viewModel)
     */
   var viewModel: SizeSliderViewModel = js.native
-  @JSName("on")
-  def on_maxchange(name: `max-change`, eventHandler: SizeSliderMaxChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_minchange(name: `min-change`, eventHandler: SizeSliderMinChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_thumbchange(name: `thumb-change`, eventHandler: SizeSliderThumbChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_thumbdrag(name: `thumb-drag`, eventHandler: SizeSliderThumbDragEventHandler): IHandle = js.native
   /**
     * A convenience function used to update the properties of a SizeSlider widget instance from the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#ContinuousRendererResult) of the [createContinuousRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createContinuousRenderer) method. This method is useful for cases when the app allows the end user to switch data variables used to render the data.
     *

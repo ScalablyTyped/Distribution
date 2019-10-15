@@ -71,7 +71,7 @@ trait DotDensityRenderer
     */
   var seed: Double = js.native
   /**
-    * The type of renderer. For DotDensityRenderer this value is always `dot-density`.
+    * The type of renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#type)
     */
@@ -82,7 +82,7 @@ trait DotDensityRenderer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#visualVariables)
     */
-  var visualVariables: js.Array[ScaleDependentStops] = js.native
+  var visualVariables: js.Array[VisualVariable] = js.native
   /**
     * Calculates an updated dot value for the given scale for the cases where a [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) is provided. This allows the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) to update the dot value as the user zooms in or out in the view.
     *

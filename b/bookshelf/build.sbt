@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "bookshelf"
-version := "v0.13.0-dt-20190821Z-505e54"
+version := "v0.13.0-dt-20190821Z-6288e3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-347560",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191014Z-347560",
   "org.scalablytyped" %%% "create-error" % "0.3.1-dt-20190322Z-8043d7",
   "org.scalablytyped" %%% "knex" % "0.19.5-43be22",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20191009Z-45ddf4",

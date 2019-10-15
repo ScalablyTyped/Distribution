@@ -1,7 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`locate-error`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.locate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,14 +85,10 @@ trait Locate
     *
     */
   def locate(): IPromise[_] = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_locate(name: locate, eventHandler: LocateLocateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_locateerror(name: `locate-error`, eventHandler: LocateLocateErrorEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.Locate")

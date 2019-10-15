@@ -1,5 +1,26 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`decimal-degrees`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`width-and-depth`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.all
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.area
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.centimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.depth
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.diameter
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.distance
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.height
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.radius
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.width
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +42,9 @@ trait SizeVariableProperties extends VisualVariableProperties {
     *
     * @default all
     */
-  var axis: js.UndefOr[String] = js.undefined
+  var axis: js.UndefOr[width | depth | height | `width-and-depth` | all] = js.undefined
   /**
-    * Deprecated. Use [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueExpression) instead**. The only supported expression is `view.scale`.
+    * The only supported expression is `view.scale`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#expression)
     */
@@ -96,19 +117,21 @@ trait SizeVariableProperties extends VisualVariableProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueRepresentation)
     */
-  var valueRepresentation: js.UndefOr[String] = js.undefined
+  var valueRepresentation: js.UndefOr[radius | diameter | area | width | distance] = js.undefined
   /**
-    * Indicates the unit of measurement used to interpret the value returned by [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#field) or [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueExpression). For 3D volumetric symbols the default is `meters`. This property should not be used if the data value represents a thematic quantity (e.g. traffic count, census data, etc.).  **Possible Values:** unknown | inches | feet | yards | miles | nautical-miles | millimeters | centimeters | decimeters | meters | kilometers | decimal-degrees
+    * Indicates the unit of measurement used to interpret the value returned by [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#field) or [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueExpression). For 3D volumetric symbols the default is `meters`. This property should not be used if the data value represents a thematic quantity (e.g. traffic count, census data, etc.).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueUnit)
     */
-  var valueUnit: js.UndefOr[String] = js.undefined
+  var valueUnit: js.UndefOr[
+    unknown | inches | feet | yards | miles | `nautical-miles` | millimeters | centimeters | decimeters | meters | kilometers | `decimal-degrees`
+  ] = js.undefined
 }
 
 object SizeVariableProperties {
   @scala.inline
   def apply(
-    axis: String = null,
+    axis: width | depth | height | `width-and-depth` | all = null,
     expression: String = null,
     field: String = null,
     legendOptions: VisualVariableLegendOptions = null,
@@ -122,11 +145,11 @@ object SizeVariableProperties {
     useSymbolValue: js.UndefOr[Boolean] = js.undefined,
     valueExpression: String = null,
     valueExpressionTitle: String = null,
-    valueRepresentation: String = null,
-    valueUnit: String = null
+    valueRepresentation: radius | diameter | area | width | distance = null,
+    valueUnit: unknown | inches | feet | yards | miles | `nautical-miles` | millimeters | centimeters | decimeters | meters | kilometers | `decimal-degrees` = null
   ): SizeVariableProperties = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (field != null) __obj.updateDynamic("field")(field)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
@@ -140,8 +163,8 @@ object SizeVariableProperties {
     if (!js.isUndefined(useSymbolValue)) __obj.updateDynamic("useSymbolValue")(useSymbolValue)
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
     if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
-    if (valueRepresentation != null) __obj.updateDynamic("valueRepresentation")(valueRepresentation)
-    if (valueUnit != null) __obj.updateDynamic("valueUnit")(valueUnit)
+    if (valueRepresentation != null) __obj.updateDynamic("valueRepresentation")(valueRepresentation.asInstanceOf[js.Any])
+    if (valueUnit != null) __obj.updateDynamic("valueUnit")(valueUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeVariableProperties]
   }
 }

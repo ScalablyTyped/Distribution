@@ -54,7 +54,7 @@ trait HeatmapRenderer
     */
   var minPixelIntensity: Double = js.native
   /**
-    * The type of renderer. For HeatmapRenderer this value is always `heatmap`.
+    * The type of renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#type)
     */

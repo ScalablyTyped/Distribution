@@ -1,6 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.attachments
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.fields
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.media
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +14,11 @@ trait Content
   extends Accessor
      with JSONSupport {
   /**
-    * The type of popup element displayed.  **Possible values**: text | fields | media | attachments
+    * The type of popup element displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-Content.html#type)
     */
-  val `type`: String = js.native
+  val `type`: text | fields | media | attachments = js.native
 }
 
 @JSGlobal("__esri.Content")

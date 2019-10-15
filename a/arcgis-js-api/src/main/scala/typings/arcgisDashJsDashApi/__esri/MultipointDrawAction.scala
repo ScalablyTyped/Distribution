@@ -1,6 +1,13 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`cursor-update`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`draw-complete`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertex-add`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertex-remove`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.redo
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.undo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +28,18 @@ trait MultipointDrawAction extends DrawAction {
     *
     */
   def complete(): Unit = js.native
+  @JSName("on")
+  def on_cursorupdate(name: `cursor-update`, eventHandler: MultipointDrawActionCursorUpdateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_drawcomplete(name: `draw-complete`, eventHandler: MultipointDrawActionDrawCompleteEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_redo(name: redo, eventHandler: MultipointDrawActionRedoEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_undo(name: undo, eventHandler: MultipointDrawActionUndoEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_vertexadd(name: `vertex-add`, eventHandler: MultipointDrawActionVertexAddEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_vertexremove(name: `vertex-remove`, eventHandler: MultipointDrawActionVertexRemoveEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.MultipointDrawAction")

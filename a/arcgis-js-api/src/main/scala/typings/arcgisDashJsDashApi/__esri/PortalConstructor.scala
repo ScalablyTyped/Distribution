@@ -16,7 +16,7 @@ trait PortalConstructor
 Instantiable0[Portal]
      with Instantiable1[/* properties */ PortalProperties, Portal] {
   /**
-    * Returns a cached default Portal instance.
+    * A new `Portal` instance is created the first time this method is called. The URL from [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) is automatically used for this instance. This instance is then cached and used for any subsequent calls to this method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#getDefault)
     *

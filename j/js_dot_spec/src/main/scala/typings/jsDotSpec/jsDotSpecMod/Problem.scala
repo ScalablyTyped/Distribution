@@ -14,7 +14,7 @@ trait Problem extends js.Object {
     */
   val value: js.Any
   /**
-    * Pth to he Spec that applies.
+    * Path to the Spec that applies.
     */
   val via: js.Array[String]
   /**

@@ -1,7 +1,16 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bottom-center`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bottom-left`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bottom-right`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`top-center`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`top-left`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`top-right`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`trigger-action`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +27,7 @@ trait Popup
     */
   var actions: Collection[ActionButton | ActionToggle] = js.native
   /**
-    * Position of the popup in relation to the selected feature.  **Possible Values:** auto | top-center | top-right | bottom-left | bottom-center | bottom-right | Function
+    * Position of the popup in relation to the selected feature. The default behavior is to display above the feature and adjust if not enough room. If needing to explicitly control where the popup displays in relation to the feature, choose an option besides `auto`.  **Possible Values:** auto | top-center | top-right | bottom-left | bottom-center | bottom-right | Function
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#alignment)
     *
@@ -64,13 +73,13 @@ trait Popup
     */
   var content: String | HTMLElement | Widget = js.native
   /**
-    * Dock position in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).  **Possible Values:** top-left | top-center | top-right | bottom-left | bottom-center | bottom-right
+    * Dock position in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#currentDockPosition)
     */
-  val currentDockPosition: String = js.native
+  val currentDockPosition: auto | `top-center` | `top-right` | `top-left` | `bottom-left` | `bottom-center` | `bottom-right` = js.native
   /**
-    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
+    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
     * > Starting with version 4.12, [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) content can no longer be set using a wildcard, e.g. `*`. Instead, set the `defaultPopupTemplateEnabled` property to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled)
@@ -214,6 +223,8 @@ trait Popup
     *
     */
   def next(): PopupViewModel = js.native
+  @JSName("on")
+  def on_triggeraction(name: `trigger-action`, eventHandler: PopupTriggerActionEventHandler): IHandle = js.native
   /**
     * Opens the popup at the given location with content defined either explicitly with `content` or driven from the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) of input features. This method sets the popup's [visible](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visible) property to `true`. Users can alternatively open the popup by directly setting the [visible](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visible) property to `true`. The popup will only display if the view's size constraints in [dockOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions) are met or the [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location) property is set to a geometry.
     *
@@ -241,14 +252,6 @@ trait Popup
     *
     */
   def previous(): PopupViewModel = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
   /**
     * Positions the popup on the view. Moves the popup into the view's extent if the popup is partially or fully outside the view's extent.  If the popup is partially out of view, the view will move to fully show the popup. If the popup is fully out of view, the view will move to the popup's location.
     *

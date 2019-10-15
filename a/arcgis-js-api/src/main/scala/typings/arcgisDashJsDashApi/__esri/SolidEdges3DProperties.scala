@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SolidEdges3DProperties extends Edges3DProperties {
   /**
-    * For SolidEdges3D the type is always `solid`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-SolidEdges3D.html#type)
     */

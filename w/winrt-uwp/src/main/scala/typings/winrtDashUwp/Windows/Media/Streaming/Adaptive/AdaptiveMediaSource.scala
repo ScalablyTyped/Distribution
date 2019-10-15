@@ -146,13 +146,13 @@ object AdaptiveMediaSource extends js.Object {
   def createFromStreamAsync(stream: IInputStream, uri: Uri, contentType: String, httpClient: HttpClient): IPromiseWithIAsyncOperation[AdaptiveMediaSourceCreationResult] = js.native
   /**
     * Asynchronously creates a AdaptiveMediaSource object from the Uniform Resource Identifier (URI) of the source.
-    * @param uri T he URI of the source.
+    * @param uri The URI of the source.
     * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
     */
   def createFromUriAsync(uri: Uri): IPromiseWithIAsyncOperation[AdaptiveMediaSourceCreationResult] = js.native
   /**
     * Asynchronously creates a AdaptiveMediaSource object from the Uniform Resource Identifier (URI) of the source.
-    * @param uri T he URI of the source.
+    * @param uri The URI of the source.
     * @param httpClient The HttpClient instance that the AdaptiveMediaSource should use for downloading resources. This allows you to specify custom HTTP headers for the requests.
     * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
     */

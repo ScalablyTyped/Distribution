@@ -1,6 +1,19 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-and-below`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`centered-on`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`high-to-low`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`percent-of-total`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.days
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.extremes
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hours
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.minutes
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.months
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.percent
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ratio
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.seconds
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.years
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,29 +53,29 @@ trait AuthoringInfoVisualVariable
     */
   var startTime: String | Double = js.native
   /**
-    * If the UI offers the option to display values based on a ratio or percentage, this indicates which selection was made.  **Possible Values:** percent | percent-of-total | ratio
+    * If the UI offers the option to display values based on a ratio or percentage, this indicates which selection was made.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#style)
     */
-  var style: String = js.native
+  var style: percent | `percent-of-total` | ratio = js.native
   /**
-    * Indicates the theme selected by the user when generating a renderer or visual variable with one of the Smart Mapping functions.  **Possible Values:** above-and-below | centered-on | extremes | high-to-low
+    * Indicates the theme selected by the user when generating a renderer or visual variable with one of the Smart Mapping functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#theme)
     */
-  var theme: String = js.native
+  var theme: `above-and-below` | `centered-on` | extremes | `high-to-low` = js.native
   /**
-    * The type of visual variable generated.  **Possible Values:** color | size | opacity
+    * The type of visual variable generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#type)
     */
-  var `type`: String = js.native
+  var `type`: typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.color | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.size | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.opacity = js.native
   /**
-    * If an age or timeline renderer was generated, indicates the time units used.  **Possible Values:** seconds | minutes | hours | days | months | years
+    * If an age or timeline renderer was generated, indicates the time units used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#units)
     */
-  var units: String = js.native
+  var units: seconds | minutes | hours | days | months | years = js.native
 }
 
 @JSGlobal("__esri.AuthoringInfoVisualVariable")

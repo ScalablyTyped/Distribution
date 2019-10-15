@@ -3,6 +3,9 @@ package typings.arcgisDashJsDashApi.__esri
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`class-breaks`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`percent-of-total`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.field
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.log
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ClassBreaksRenderer
   extends Renderer
-     with VisualVariablesRenderer
-     with RasterRenderer
-     with typings.arcgisDashJsDashApi.__esri.renderers.RasterRenderer
+     with VisualVariablesMixin
      with RendererWithVisualVariables
      with typings.arcgisDashJsDashApi.__esri.renderers.RendererWithVisualVariables {
   /**
@@ -77,9 +78,9 @@ trait ClassBreaksRenderer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#normalizationType)
     */
-  var normalizationType: String = js.native
+  var normalizationType: field | log | `percent-of-total` = js.native
   /**
-    * The type of renderer. For ClassBreaksRenderer this value is always `class-breaks`.
+    * The type of renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#type)
     */

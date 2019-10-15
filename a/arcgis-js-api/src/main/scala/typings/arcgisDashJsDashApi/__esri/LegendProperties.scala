@@ -33,6 +33,19 @@ trait LegendProperties extends WidgetProperties {
     */
   var layerInfos: js.UndefOr[js.Array[LegendLayerInfos]] = js.undefined
   /**
+    * Determines whether to respect the properties of the layers in the map that control the legend's visibility (`minScale`, `maxScale`, `legendEnabled`). By default, a layer's legend elements **will not render** in the legend given the following conditions:
+    *   * The layer's [legendEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#legendEnabled) property is set to `false`.
+    *   * If the view's scale is outside the visibility range defined by the layer's [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#minScale) and [maxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#maxScale) properties.
+    *
+    *
+    * When the `respectLayerVisibility` property of the legend is set to `false`, the legend elements for each layer in the map will always display, thus disregarding the `minScale`, `maxScale`, and `legendEnabled` properties for each layer in the map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#respectLayerVisibility)
+    *
+    * @default true
+    */
+  var respectLayerVisibility: js.UndefOr[Boolean] = js.undefined
+  /**
     * Indicates the style of the legend. The style determines the legend's layout and behavior. You can either specify a string or an object to indicate the style. The known string values are the same values listed in the table within the `type` property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#style)
@@ -65,6 +78,7 @@ object LegendProperties {
     id: String = null,
     label: String = null,
     layerInfos: js.Array[LegendLayerInfos] = null,
+    respectLayerVisibility: js.UndefOr[Boolean] = js.undefined,
     style: String | LegendStyle = null,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: LegendViewModelProperties = null
@@ -78,6 +92,7 @@ object LegendProperties {
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
     if (layerInfos != null) __obj.updateDynamic("layerInfos")(layerInfos)
+    if (!js.isUndefined(respectLayerVisibility)) __obj.updateDynamic("respectLayerVisibility")(respectLayerVisibility)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)

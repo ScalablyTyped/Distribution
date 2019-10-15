@@ -1,5 +1,33 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year-short-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`day-short-month-year`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date-short-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-date`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year-short-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-day-year`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-month-year`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-le-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-le-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-le-short-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-le-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-le`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-long-time-24`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-long-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date-short-time`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-date`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-month-year`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.default
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +70,9 @@ trait FieldInfoFormatProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-FieldInfoFormat.html#dateFormat)
     */
-  var dateFormat: js.UndefOr[String] = js.undefined
+  var dateFormat: js.UndefOr[
+    default | `short-date` | `short-date-short-time` | `short-date-long-time` | `short-date-long-time-24` | `short-date-le` | `short-date-le-short-time` | `short-date-le-short-time-24` | `short-date-le-long-time` | `short-date-le-long-time-24` | `long-month-day-year` | `long-month-day-year-short-time` | `long-month-day-year-short-time-24` | `long-month-day-year-long-time` | `long-month-day-year-long-time-24` | `day-short-month-year` | `day-short-month-year-short-time` | `day-short-month-year-short-time-24` | `day-short-month-year-long-time` | `day-short-month-year-long-time-24` | `long-date` | `long-date-short-time` | `long-date-short-time-24` | `long-date-long-time` | `long-date-long-time-24` | `long-month-year` | `short-month-year` | year
+  ] = js.undefined
   /**
     * Used only with `Number` fields. A value of `true` indicates the number should have a digit (or thousands) separator when the value appears in popups. A value of `false` means that no separator will be used.
     *
@@ -62,12 +92,12 @@ trait FieldInfoFormatProperties extends js.Object {
 object FieldInfoFormatProperties {
   @scala.inline
   def apply(
-    dateFormat: String = null,
+    dateFormat: default | `short-date` | `short-date-short-time` | `short-date-long-time` | `short-date-long-time-24` | `short-date-le` | `short-date-le-short-time` | `short-date-le-short-time-24` | `short-date-le-long-time` | `short-date-le-long-time-24` | `long-month-day-year` | `long-month-day-year-short-time` | `long-month-day-year-short-time-24` | `long-month-day-year-long-time` | `long-month-day-year-long-time-24` | `day-short-month-year` | `day-short-month-year-short-time` | `day-short-month-year-short-time-24` | `day-short-month-year-long-time` | `day-short-month-year-long-time-24` | `long-date` | `long-date-short-time` | `long-date-short-time-24` | `long-date-long-time` | `long-date-long-time-24` | `long-month-year` | `short-month-year` | year = null,
     digitSeparator: js.UndefOr[Boolean] = js.undefined,
     places: Int | Double = null
   ): FieldInfoFormatProperties = {
     val __obj = js.Dynamic.literal()
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(digitSeparator)) __obj.updateDynamic("digitSeparator")(digitSeparator)
     if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfoFormatProperties]

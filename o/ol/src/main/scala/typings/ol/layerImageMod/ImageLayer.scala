@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 trait ImageLayer
   extends typings.ol.layerLayerMod.default {
   var `type`: LayerType = js.native
-  @JSName("getSource")
-  def getSource_default(): typings.ol.sourceSourceMod.default = js.native
 }
 

@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.all
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.top
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,7 +56,7 @@ trait IdentifyParametersProperties extends js.Object {
     *
     * @default top
     */
-  var layerOption: js.UndefOr[String] = js.undefined
+  var layerOption: js.UndefOr[top | visible | all] = js.undefined
   /**
     * The Extent or bounding box of the current map view. The `mapExtent` property is assumed to be in the spatial reference of the map unless [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#spatialReference) has been specified.  The values for [mapExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#mapExtent), [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#height), [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#width), and [dpi](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html#dpi) are used to determine the current map scale. Once the scale is known, the map service can exclude layers based on their scale dependency settings. The map service is not performing a spatial intersection based on the provided extent. These properties are also used to calculate the search distance on the map based on the tolerance in screen pixels.
     *
@@ -136,7 +139,7 @@ object IdentifyParametersProperties {
     geometryPrecision: Int | Double = null,
     height: Int | Double = null,
     layerIds: js.Array[Double] = null,
-    layerOption: String = null,
+    layerOption: top | visible | all = null,
     mapExtent: ExtentProperties = null,
     maxAllowableOffset: Int | Double = null,
     returnFieldName: js.UndefOr[Boolean] = js.undefined,
@@ -154,7 +157,7 @@ object IdentifyParametersProperties {
     if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds)
-    if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption)
+    if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption.asInstanceOf[js.Any])
     if (mapExtent != null) __obj.updateDynamic("mapExtent")(mapExtent)
     if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
     if (!js.isUndefined(returnFieldName)) __obj.updateDynamic("returnFieldName")(returnFieldName)

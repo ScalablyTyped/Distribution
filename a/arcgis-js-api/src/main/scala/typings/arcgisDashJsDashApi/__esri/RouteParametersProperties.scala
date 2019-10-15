@@ -55,7 +55,7 @@ trait RouteParametersProperties extends js.Object {
     */
   var directionsLanguage: js.UndefOr[String] = js.undefined
   /**
-    * The length units to use when computing directions. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).  **Possible Values:** centimeters | decimal-degrees | decimeters | feet | inches | kilometers | meters | miles | millimeters | nautical-miles | points | yards
+    * The length units to use when computing directions. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsLengthUnits)
     */
@@ -63,7 +63,7 @@ trait RouteParametersProperties extends js.Object {
     centimeters | `decimal-degrees` | decimeters | feet | inches | kilometers | meters | miles | millimeters | `nautical-miles` | points | yards
   ] = js.undefined
   /**
-    * Defines the amount of direction information returned.  **Possible Values:** complete | complete-no-events | instructions-only | standard | summary-only
+    * Defines the amount of direction information returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsOutputType)
     */
@@ -86,6 +86,8 @@ trait RouteParametersProperties extends js.Object {
     * If `true`, avoids network elements restricted by barriers or restrictions specified in [restrictionAttributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#restrictionAttributes).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#doNotLocateOnRestrictedElements)
+    *
+    * @default true
     */
   var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.undefined
   /**
@@ -127,7 +129,7 @@ trait RouteParametersProperties extends js.Object {
     */
   var outputGeometryPrecision: js.UndefOr[Double] = js.undefined
   /**
-    * The units of the output geometry precision.  **Possible Values:** centimeters | decimal-degrees | decimeters | feet | inches | kilometers | meters | miles | millimeters | nautical-miles | points | yards
+    * The units of the output geometry precision.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outputGeometryPrecisionUnits)
     */
@@ -179,7 +181,7 @@ trait RouteParametersProperties extends js.Object {
     */
   var preserveLastStop: js.UndefOr[Boolean] = js.undefined
   /**
-    * Specifies how U-Turns should be handled. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).  **Possible Values:**  allow-backtrack | at-dead-ends-only | no-backtrack | at-dead-ends-and-intersections
+    * Specifies how U-Turns should be handled. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#restrictUTurns)
     */
@@ -228,18 +230,24 @@ trait RouteParametersProperties extends js.Object {
     * If `true`, routes are generated and returned in the route property of each [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnRoutes)
+    *
+    * @default true
     */
   var returnRoutes: js.UndefOr[Boolean] = js.undefined
   /**
     * If `true`, stops are returned in the stops property of each [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnStops)
+    *
+    * @default false
     */
   var returnStops: js.UndefOr[Boolean] = js.undefined
   /**
     * If `true`, `z` values are returned in the [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnZ)
+    *
+    * @default true
     */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   /**
@@ -252,6 +260,8 @@ trait RouteParametersProperties extends js.Object {
     * If `true`, the start time will be in UTC format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#startTimeIsUTC)
+    *
+    * @default true
     */
   var startTimeIsUTC: js.UndefOr[Boolean] = js.undefined
   /**

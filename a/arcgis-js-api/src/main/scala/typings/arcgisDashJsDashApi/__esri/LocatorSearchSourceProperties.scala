@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,14 @@ trait LocatorSearchSourceProperties extends SearchSourceProperties {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#countryCode)
     */
   var countryCode: js.UndefOr[String] = js.undefined
+  /**
+    * Sets the scale of the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale) for the resulting search result. This is useful if the locator service doesn’t return an extent with a scale.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#defaultZoomScale)
+    *
+    * @default null
+    */
+  var defaultZoomScale: js.UndefOr[Double] = js.undefined
   /**
     * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).  **Possible Values:** rooftop | street | null
     *
@@ -57,7 +66,10 @@ object LocatorSearchSourceProperties {
     autoNavigate: js.UndefOr[Boolean] = js.undefined,
     categories: js.Array[String] = null,
     countryCode: String = null,
+    defaultZoomScale: Int | Double = null,
     filter: SearchSourceFilter = null,
+    getResults: /* params */ js.Any => IPromise[js.Array[SearchResult]] = null,
+    getSuggestions: /* params */ js.Any => IPromise[js.Array[SuggestResult]] = null,
     locationType: String = null,
     locator: LocatorProperties = null,
     maxResults: Int | Double = null,
@@ -82,7 +94,10 @@ object LocatorSearchSourceProperties {
     if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate)
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (defaultZoomScale != null) __obj.updateDynamic("defaultZoomScale")(defaultZoomScale.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (getResults != null) __obj.updateDynamic("getResults")(js.Any.fromFunction1(getResults))
+    if (getSuggestions != null) __obj.updateDynamic("getSuggestions")(js.Any.fromFunction1(getSuggestions))
     if (locationType != null) __obj.updateDynamic("locationType")(locationType)
     if (locator != null) __obj.updateDynamic("locator")(locator)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])

@@ -24,7 +24,7 @@ trait MeshCreateSphereParams extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
     */
-  var material: js.UndefOr[MeshCreateSphereParamsMaterial] = js.undefined
+  var material: js.UndefOr[MeshMaterial] = js.undefined
   /**
     * A uniform size value or an object containing individual values width, height and depth. The unit of the size values is derived from the spatial reference of the provided location, unless a unit is specified.
     *
@@ -47,7 +47,7 @@ object MeshCreateSphereParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     densificationFactor: Int | Double = null,
     geographic: js.UndefOr[Boolean] = js.undefined,
-    material: MeshCreateSphereParamsMaterial = null,
+    material: MeshMaterial = null,
     size: Double | MeshCreateSphereParamsSize = null,
     unit: String = null
   ): MeshCreateSphereParams = {

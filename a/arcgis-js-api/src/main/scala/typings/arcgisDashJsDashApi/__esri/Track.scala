@@ -1,6 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`track-error`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.track
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,14 +76,10 @@ trait Track
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#viewModel)
     */
   var viewModel: TrackViewModel = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_track(name: track, eventHandler: TrackTrackEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_trackerror(name: `track-error`, eventHandler: TrackTrackErrorEventHandler): IHandle = js.native
   /**
     * When executed, the widget will start [tracking](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#tracking) the user's location.
     *

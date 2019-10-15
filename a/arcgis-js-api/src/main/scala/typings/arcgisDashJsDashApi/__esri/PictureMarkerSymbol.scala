@@ -24,7 +24,7 @@ trait PictureMarkerSymbol
     */
   var height: Double = js.native
   /**
-    * For PictureMarkerSymbol the type is always `picture-marker`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#type)
     */
@@ -32,9 +32,9 @@ trait PictureMarkerSymbol
   val type_PictureMarkerSymbol: `picture-marker` = js.native
   /**
     * The URL to an image or SVG document. To avoid CORS issues with this symbol, do one of the following:
-    *   * Make certain that the [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#url) is hosted on a [CORS enabled server](https://enable-cors.org/server.html).
+    *   * Make certain that the [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#url) is hosted on a [CORS enabled server](https://developers.arcgis.com/javascript/latest/guide/cors/index.html).
     *   * Use an [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#url) hosted on the same domain as the application.
-    *   * Install a proxy.
+    *   * Install a [proxy](https://developers.arcgis.com/javascript/latest/guide/proxies/index.html).
     *
     *
     * > **Known Limitations**

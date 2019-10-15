@@ -1,6 +1,23 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a3-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a3-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a4-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a4-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`letter-ansi-a-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`letter-ansi-a-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-only`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`tabloid-ansi-b-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`tabloid-ansi-b-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.eps
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.pdf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svgz
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,13 +61,13 @@ trait TemplateOptions extends Accessor {
     */
   var forceFeatureAttributes: Boolean = js.native
   /**
-    * The output format for the printed map.  **Possible Values:** pdf | png32 | png8 | jpg | gif | eps | svg | svgz
+    * The output format for the printed map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format)
     *
     * @default pdf
     */
-  var format: String = js.native
+  var format: pdf | png32 | png8 | jpg | gif | eps | svg | svgz = js.native
   /**
     * Map height. This only applies when the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is `map-only`.
     *
@@ -77,7 +94,7 @@ trait TemplateOptions extends Accessor {
     *
     * @default letter-ansi-a-landscape
     */
-  var layout: String = js.native
+  var layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = js.native
   /**
     * When `false`, the legend is not displayed on the printout.
     *

@@ -1,6 +1,22 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-inches`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-kilometers`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-meters`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-us-feet`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`square-yards`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.acres
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ares
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hectares
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imperial
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.measured
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.measuring
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,19 +44,21 @@ trait AreaMeasurement3DViewModel extends Accessor {
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: disabled | ready | measuring | measured = js.native
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the area values.  **Possible Values:** metric | imperial | square-inches | square-feet | square-us-feet | square-yards | square-miles | square-meters | square-kilometers | acres | ares | hectares
+    * Unit system (imperial, metric) or specific unit used for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unit)
     */
-  var unit: String = js.native
+  var unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares = js.native
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the area values. By default, the following units are included: `metric`, `imperial`, `square-inches`, `square-feet`, `square-us-feet`, `square-yards`, `square-miles`, `square-meters`, `square-kilometers`, `acres`, `ares`, `hectares`.
+    * List of available units and unit systems (imperial, metric) for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unitOptions)
     */
-  var unitOptions: js.Array[String] = js.native
+  var unitOptions: js.Array[
+    metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+  ] = js.native
   /**
     * The view from which the widget will operate.
     *

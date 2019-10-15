@@ -397,7 +397,7 @@ object Gun extends js.Object {
     def set(data: AlwaysDisallowedType[ArrayOf[DataType]]): ChainReference[ArrayOf[DataType], _, `false`] = js.native
     def set(data: AlwaysDisallowedType[ArrayOf[DataType]], callback: AckCallback): ChainReference[ArrayOf[DataType], _, `false`] = js.native
     /**
-      * @param publicKey If you know a users publicKey you can get his user graph and see any unencrypted data he may have stored there.
+      * @param publicKey If you know a users publicKey you can get their user graph and see any unencrypted data they may have stored there.
       */
     def user(): ChainReference[_, _, `false`] = js.native
     def user(publicKey: String): ChainReference[_, _, `false`] = js.native

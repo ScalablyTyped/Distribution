@@ -2,6 +2,9 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-loaded`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.failed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +54,7 @@ trait WebMap
     *
     * @default not-loaded
     */
-  val loadStatus: String = js.native
+  val loadStatus: `not-loaded` | loading | failed | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loaded = js.native
   /**
     * Indicates whether the instance has loaded. When `true`, the properties of the object can be accessed. A WebMap is considered loaded when its [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#layers) and [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#basemap) are created, but not yet loaded.
     *

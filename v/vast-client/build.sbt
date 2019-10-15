@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vast-client"
-version := "2.1-dt-20191007Z-64ed39"
+version := "2.1-dt-20191014Z-f12885"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

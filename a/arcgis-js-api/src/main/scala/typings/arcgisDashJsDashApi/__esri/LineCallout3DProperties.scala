@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,12 +28,7 @@ trait LineCallout3DProperties extends Callout3DProperties {
     * @default 1px
     */
   var size: js.UndefOr[Double | String] = js.undefined
-  /**
-    * For LineCallout3D the type is always `line`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#type)
-    */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[line] = js.undefined
 }
 
 object LineCallout3DProperties {
@@ -41,7 +37,7 @@ object LineCallout3DProperties {
     border: LineCallout3DBorderProperties = null,
     color: Color | js.Array[Double] | String = null,
     size: Double | String = null,
-    `type`: String = null
+    `type`: line = null
   ): LineCallout3DProperties = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border)

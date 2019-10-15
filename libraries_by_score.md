@@ -1516,6 +1516,7 @@
 | 0.7437716910883074 | [hjson](./h/hjson) | A user interface for JSON.
 | 0.7437540922670189 | [lodash_dot_nth](./l/lodash_dot_nth) | The lodash method _.nth exported as a module.
 | 0.7437113451349626 | [d3-contour](./d/d3-contour) | Compute contour polygons using marching squares.
+| 0.7436911367515003 | [queue](./q/queue) | asynchronous function queue with adjustable concur
 | 0.7436539981495492 | [thrift](./t/thrift) | node.js bindings for the Apache Thrift RPC system
 | 0.743636366478456 | [js-joda](./j/js-joda) | a date and time library for javascript
 | 0.7434862054549867 | [microtime](./m/microtime) | Get the current time in microseconds
@@ -2280,6 +2281,7 @@
 | 0.705624109833249 | [tanem__svg-injector](./t/tanem__svg-injector) | Fast, caching, dynamic inline SVG DOM injection li
 | 0.7056112079614094 | [pupa](./p/pupa) | Simple micro templating
 | 0.7055911680618383 | [mitm](./m/mitm) | Intercept and mock outgoing network TCP connection
+| 0.7055794488359126 | [rate-limit-redis](./r/rate-limit-redis) | Provides a Redis store for the express-rate-limit 
 | 0.7054991929985783 | [is-integer](./i/is-integer) | ES2015 (ES6) Number.isInteger polyfill
 | 0.7054294388057518 | [telejson](./t/telejson) | A library for teleporting rich data to another pla
 | 0.7053828103443252 | [gulp-ng-annotate](./g/gulp-ng-annotate) | Add angularjs dependency injection annotations wit
@@ -3369,6 +3371,7 @@
 | 0.6608962122294928 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library
 | 0.6608908802597342 | [gulp-terser](./g/gulp-terser) | gulp plugin, compressed es6+ code.
 | 0.6606751298270572 | [caniuse-lite](./c/caniuse-lite) | A smaller version of caniuse-db, with only the ess
+| 0.6606733161807401 | [node-easy-cert](./n/node-easy-cert) | A tool for managing self-signed certifications
 | 0.6606086663099527 | [webpack-stream](./w/webpack-stream) | Run webpack as a stream
 | 0.6605856300965124 | [hapi__sntp](./h/hapi__sntp) | SNTP Client
 | 0.6605311670987146 | [is-admin](./i/is-admin) | Check if the process is running as Administrator o
@@ -3448,6 +3451,7 @@
 | 0.6575602746545854 | [ref-array-di](./r/ref-array-di) | Create C "array" instances on top of Buffers
 | 0.6575582119143555 | [hyper-aws4](./h/hyper-aws4) | AWS Signature Version 4 Signing Library for Hyper
 | 0.6575232187423508 | [carbon__motion](./c/carbon__motion) | Motion helpers for digital and software products u
+| 0.6574581557579582 | [wav](./w/wav) | Reader and Writer streams for Microsoft WAVE audio
 | 0.6574473902778372 | [jupyterlab__application](./j/jupyterlab__application) | JupyterLab - Application
 | 0.6574030872760876 | [hash-it](./h/hash-it) | Hash any object based on its value
 | 0.6573744523955221 | [d3-delaunay](./d/d3-delaunay) | Compute the Voronoi diagram of a set of two-dimens
@@ -3581,6 +3585,7 @@
 | 0.6510337631875223 | [npm-user-packages](./n/npm-user-packages) | Get packages by a npm user
 | 0.6509965214738849 | [fs-mock](./f/fs-mock) | -
 | 0.6509708181864424 | [rollup-plugin-node-global](./r/rollup-plugin-node-globals) | insert the same globals browserify does
+| 0.6508895118843286 | [ranjs](./r/ranjs) | Library for generating various random variables.
 | 0.6507634411443173 | [anybar](./a/anybar) | Control the AnyBar app
 | 0.6506790014499563 | [mongoose-geojson-schema](./m/mongoose-geojson-schema) | Schema definitions for GeoJSON types for use with 
 | 0.650565790626398 | [graphql-request](./g/graphql-request) | -
@@ -3707,6 +3712,7 @@
 | 0.6439470185343259 | [convict](./c/convict) | Featureful configuration management library for No
 | 0.643872435522937 | [redux-duck](./r/redux-duck) | Helper function to create Redux modules using the 
 | 0.6438722247239405 | [clone](./c/clone) | deep cloning of objects and arrays
+| 0.6438424978757162 | [tlf-log](./t/tlf-log) | A small logging library
 | 0.6438122905207182 | [hashtable](./h/hashtable) | Native HashTable and ES6 compatible Map for Node.j
 | 0.6437540190805977 | [power-assert](./p/power-assert) | Power Assert in JavaScript
 | 0.6437238867149928 | [macrotask](./m/macrotask) | A cross browser macrotask library
@@ -5453,6 +5459,7 @@
 | 0.43514013368451016 | [react-spinkit](./r/react-spinkit) | A collection of loading indicators animated with C
 | 0.43511616149471105 | [css-modules-loader-core](./c/css-modules-loader-core) | A loader-agnostic CSS Modules implementation, base
 | 0.43494977314710703 | [screeps](./s/screeps) | A standalone server for programming game Screeps
+| 0.43459215970625004 | [emoji-js](./e/emoji-js) | A JS Emoji conversion library
 | 0.4341705020268035 | [material-ui-pagination](./m/material-ui-pagination) | An easy to use and customizable pagination compone
 | 0.43368038992174474 | [passport-cognito](./p/passport-cognito) | Express passport module for Cognito User Pools
 | 0.43347707275340264 | [weak](./w/weak) | Make weak references to JavaScript Objects.
@@ -6769,6 +6776,7 @@
 | 0.23831689620550206 | [sammy](./s/sammy) | Sammy is a RESTful Evented JavaScript framework bu
 | 0.23827173693061537 | [aws-sdk__util-utf8-node](./a/aws-sdk__util-utf8-node) | A Node.JS UTF-8 string  UInt8Array converter
 | 0.23826116075404344 | [i18next-ko](./i/i18next-ko) | KnockoutJS bindings for i18next.
+| 0.23805196097082593 | [leaflet-groupedlayercontr](./l/leaflet-groupedlayercontrol) | A Leaflet layer control with support for grouping 
 | 0.2378301560674671 | [geojson2osm](./g/geojson2osm) | Convert geojson to osm
 | 0.23720061704120632 | [semantic-ui-sticky](./s/semantic-ui-sticky) | Single component release of sticky
 | 0.23714134507928097 | [promise-sftp](./p/promise-sftp) | a promise-based sftp client for node.js

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "durandal"
-version := "2.1.0-dt-20190322Z-2f11b6"
+version := "2.1.0-dt-20191014Z-2f11b6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-loadable-visibility"
-version := "3.0-dt-20190906Z-75b6a2"
+version := "3.0-dt-20190906Z-5431e8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-7f5e7d",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "loadable__component" % "5.10-dt-20190711Z-f90642",
+  "org.scalablytyped" %%% "loadable__component" % "5.10-dt-20190711Z-c7ec40",
   "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-965e98",
-  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-4a0764",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191014Z-d5b0ca",
+  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20191014Z-8818fb",
   "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-df1e9f",
   "org.scalablytyped" %%% "source-map" % "0.7.3-54a40f",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",

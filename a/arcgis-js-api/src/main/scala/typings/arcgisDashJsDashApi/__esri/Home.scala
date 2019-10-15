@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.go
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +54,8 @@ trait Home
     *
     */
   def go(): Unit = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_go(name: go, eventHandler: HomeGoEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.Home")

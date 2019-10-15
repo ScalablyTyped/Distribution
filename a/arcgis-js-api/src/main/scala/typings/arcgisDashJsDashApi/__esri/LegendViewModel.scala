@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +30,13 @@ trait LegendViewModel extends Accessor {
     */
   var layerInfos: js.Array[LegendViewModelLayerInfos] = js.native
   /**
-    * The view model's state.  **Possible Values:** ready | disabled
+    * The view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#state)
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: ready | disabled = js.native
   /**
     * The view from which the widget will operate.
     *

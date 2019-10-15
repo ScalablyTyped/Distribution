@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Filters extends Base {
+trait Filters extends BasePlugin {
   var actionBarComponent: ActionBarComponent | Unit = js.native
   var conditionCollection: ConditionCollection | Unit = js.native
   var conditionComponent: ConditionComponent | Unit = js.native

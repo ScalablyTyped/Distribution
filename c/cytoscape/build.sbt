@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cytoscape"
-version := "3.8-dt-20190903Z-2f2f14"
+version := "3.8-dt-20191014Z-471958"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

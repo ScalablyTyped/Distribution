@@ -1,7 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`backward-diagonal`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`diagonal-cross`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`forward-diagonal`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-fill`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.cross
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.solid
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,9 +43,9 @@ trait SimpleFillSymbol
     *
     * @default solid
     */
-  var style: String = js.native
+  var style: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none | solid | vertical = js.native
   /**
-    * For SimpleFillSymbol the type is always `simple-fill`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#type)
     */

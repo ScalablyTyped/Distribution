@@ -7,11 +7,12 @@ import typings.handsontable.handsontableMod.Handsontable.CellValue
 import typings.handsontable.handsontableMod.Handsontable.ColumnDataGetterSetterFunction
 import typings.handsontable.handsontableMod.Handsontable.GridSettings
 import typings.handsontable.handsontableMod.Handsontable.RowObject
-import typings.handsontable.handsontableMod.Handsontable._editors.Base
+import typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor
 import typings.handsontable.handsontableMod.Handsontable.comments.CommentObject
 import typings.handsontable.handsontableMod.Handsontable.plugins.AutoColumnSize
 import typings.handsontable.handsontableMod.Handsontable.plugins.AutoRowSize
 import typings.handsontable.handsontableMod.Handsontable.plugins.Autofill
+import typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin
 import typings.handsontable.handsontableMod.Handsontable.plugins.BindRowsWithHeaders
 import typings.handsontable.handsontableMod.Handsontable.plugins.CollapsibleColumns
 import typings.handsontable.handsontableMod.Handsontable.plugins.ColumnSorting
@@ -43,11 +44,14 @@ import typings.handsontable.handsontableMod.Handsontable.plugins.PersistenState
 import typings.handsontable.handsontableMod.Handsontable.plugins.Search
 import typings.handsontable.handsontableMod.Handsontable.plugins.TouchScroll
 import typings.handsontable.handsontableMod.Handsontable.plugins.TrimRows
+import typings.handsontable.handsontableMod.Handsontable.renderers.BaseRenderer
+import typings.handsontable.handsontableMod.Handsontable.validators.Base
 import typings.handsontable.handsontableMod.Handsontable.wot.CellCoords
 import typings.handsontable.handsontableMod.Handsontable.wot.CellRange
 import typings.handsontable.handsontableStrings.autoColumnSize
 import typings.handsontable.handsontableStrings.autoRowSize
 import typings.handsontable.handsontableStrings.autofill
+import typings.handsontable.handsontableStrings.basePlugin
 import typings.handsontable.handsontableStrings.bindRowsWithHeaders
 import typings.handsontable.handsontableStrings.collapsibleColumns
 import typings.handsontable.handsontableStrings.columnSorting
@@ -97,10 +101,13 @@ import typings.handsontable.handsontableStrings.touchScroll
 import typings.handsontable.handsontableStrings.trimRows
 import typings.handsontable.handsontableStrings.up
 import typings.handsontable.handsontableStrings.valid
+import typings.std.Document
 import typings.std.Element
+import typings.std.HTMLElement
 import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableElement
 import typings.std.RegExp
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,7 +118,14 @@ import scala.scalajs.js.annotation._
 object _Handsontable extends js.Object {
   @js.native
   trait Core extends js.Object {
+    var container: HTMLElement = js.native
+    var forceFullRender: Boolean = js.native
     var isDestroyed: Boolean = js.native
+    var renderCall: Boolean = js.native
+    var rootDocument: Document = js.native
+    var rootElement: HTMLElement = js.native
+    var rootWindow: Window = js.native
+    var table: HTMLTableElement = js.native
     def addHook[K /* <: String */](
       key: K,
       callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
@@ -249,17 +263,18 @@ object _Handsontable extends js.Object {
     def destroyEditor(revertOriginal: Boolean): Unit = js.native
     def destroyEditor(revertOriginal: Boolean, prepareEditorIfNeeded: Boolean): Unit = js.native
     def emptySelectedCells(): Unit = js.native
-    def getActiveEditor[T /* <: Base */](): js.UndefOr[T] = js.native
+    def getActiveEditor[T /* <: BaseEditor */](): js.UndefOr[T] = js.native
     def getCell(row: Double, col: Double): HTMLTableCellElement | Null = js.native
     def getCell(row: Double, col: Double, topmost: Boolean): HTMLTableCellElement | Null = js.native
-    def getCellEditor[T /* <: Base */](cellMeta: CellMeta): T = js.native
-    def getCellEditor[T /* <: Base */](row: Double, col: Double): T = js.native
+    def getCellEditor[T /* <: BaseEditor */](cellMeta: CellMeta): T = js.native
+    def getCellEditor[T /* <: BaseEditor */](row: Double, col: Double): T = js.native
     def getCellMeta(row: Double, col: Double): CellProperties = js.native
     def getCellMetaAtRow(row: Double): js.Array[CellProperties] = js.native
-    def getCellRenderer(cellMeta: CellMeta): typings.handsontable.handsontableMod.Handsontable.renderers.Base = js.native
-    def getCellRenderer(row: Double, col: Double): typings.handsontable.handsontableMod.Handsontable.renderers.Base = js.native
-    def getCellValidator(cellMeta: CellMeta): js.UndefOr[typings.handsontable.handsontableMod.Handsontable.validators.Base | RegExp] = js.native
-    def getCellValidator(row: Double, col: Double): js.UndefOr[typings.handsontable.handsontableMod.Handsontable.validators.Base | RegExp] = js.native
+    def getCellRenderer(cellMeta: CellMeta): BaseRenderer = js.native
+    def getCellRenderer(row: Double, col: Double): BaseRenderer = js.native
+    def getCellValidator(cellMeta: CellMeta): js.UndefOr[Base | RegExp] = js.native
+    def getCellValidator(row: Double, col: Double): js.UndefOr[Base | RegExp] = js.native
+    def getCellsMeta(): js.Array[CellProperties] = js.native
     def getColHeader(): js.Array[Double | String] = js.native
     def getColHeader(col: Double): Double | String = js.native
     def getColWidth(col: Double): Double = js.native
@@ -286,6 +301,8 @@ object _Handsontable extends js.Object {
     def getPlugin_autoRowSize(pluginName: autoRowSize): AutoRowSize = js.native
     @JSName("getPlugin")
     def getPlugin_autofill(pluginName: autofill): Autofill = js.native
+    @JSName("getPlugin")
+    def getPlugin_basePlugin(pluginName: basePlugin): BasePlugin = js.native
     @JSName("getPlugin")
     def getPlugin_bindRowsWithHeaders(pluginName: bindRowsWithHeaders): BindRowsWithHeaders = js.native
     @JSName("getPlugin")
@@ -375,6 +392,7 @@ object _Handsontable extends js.Object {
     def hasColHeaders(): Boolean = js.native
     def hasHook(key: String): Boolean = js.native
     def hasRowHeaders(): Boolean = js.native
+    def init(): js.Function0[Unit] = js.native
     def isColumnModificationAllowed(): Boolean = js.native
     def isEmptyCol(col: Double): Boolean = js.native
     def isEmptyRow(row: Double): Boolean = js.native
@@ -502,6 +520,12 @@ object _Handsontable extends js.Object {
     def unlisten(): Unit = js.native
     def updateSettings(settings: GridSettings): Unit = js.native
     def updateSettings(settings: GridSettings, init: Boolean): Unit = js.native
+    def validateCell(
+      value: js.Any,
+      cellProperties: CellProperties,
+      callback: js.Function1[/* valid */ Boolean, Unit],
+      source: String
+    ): Unit = js.native
     def validateCells(): Unit = js.native
     def validateCells(callback: js.Function1[/* valid */ Boolean, Unit]): Unit = js.native
     def validateColumns(columns: js.Array[Double]): Unit = js.native

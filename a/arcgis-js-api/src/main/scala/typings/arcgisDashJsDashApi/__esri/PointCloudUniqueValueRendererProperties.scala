@@ -1,5 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`absolute-value`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`high-four-bit`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`low-four-bit`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`modulo-ten`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,13 +23,13 @@ trait PointCloudUniqueValueRendererProperties extends PointCloudRendererProperti
     */
   var field: js.UndefOr[String] = js.undefined
   /**
-    * A transform that is applied to the field value before evaluating the renderer.  **Possible Values:** none | low-four-bit | high-four-bit | absolute-value | modulo-ten
+    * A transform that is applied to the field value before evaluating the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#fieldTransformType)
     *
     * @default null
     */
-  var fieldTransformType: js.UndefOr[String] = js.undefined
+  var fieldTransformType: js.UndefOr[none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.undefined
   /**
     * An object providing options for displaying the renderer in the Legend.
     *
@@ -39,7 +44,7 @@ object PointCloudUniqueValueRendererProperties {
     colorModulation: PointCloudRendererColorModulation = null,
     colorUniqueValueInfos: js.Array[PointCloudUniqueValueRendererColorUniqueValueInfos] = null,
     field: String = null,
-    fieldTransformType: String = null,
+    fieldTransformType: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = null,
     legendOptions: PointCloudUniqueValueRendererLegendOptions = null,
     pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
     pointsPerInch: Int | Double = null
@@ -48,7 +53,7 @@ object PointCloudUniqueValueRendererProperties {
     if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation)
     if (colorUniqueValueInfos != null) __obj.updateDynamic("colorUniqueValueInfos")(colorUniqueValueInfos)
     if (field != null) __obj.updateDynamic("field")(field)
-    if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType)
+    if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm)
     if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])

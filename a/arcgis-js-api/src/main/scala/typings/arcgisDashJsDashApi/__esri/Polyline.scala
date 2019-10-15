@@ -25,11 +25,6 @@ trait Polyline
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html#paths)
     */
   var paths: js.Array[js.Array[js.Array[Double]]] = js.native
-  /**
-    * For Polyline, the type is always `polyline`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html#type)
-    */
   @JSName("type")
   val type_Polyline: polyline = js.native
   /**

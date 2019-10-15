@@ -1,6 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`going-home`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.go
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,13 +16,13 @@ trait HomeViewModel
      with Evented
      with GoTo {
   /**
-    * The current state of the widget.  **Possible Values:** disabled | ready | going-home
+    * The current state of the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home-HomeViewModel.html#state)
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: disabled | ready | `going-home` = js.native
   /**
     * The view associated with the widget instance.
     *
@@ -51,6 +56,8 @@ trait HomeViewModel
     *
     */
   def go(): Unit = js.native
+  @JSName("on")
+  def on_go(name: go, eventHandler: HomeViewModelGoEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.HomeViewModel")

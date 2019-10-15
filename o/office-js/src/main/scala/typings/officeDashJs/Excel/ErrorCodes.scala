@@ -59,6 +59,9 @@ object ErrorCodes extends js.Object {
   sealed trait rangeExceedsLimit extends ErrorCodes
   
   @js.native
+  sealed trait requestAborted extends ErrorCodes
+  
+  @js.native
   sealed trait unsupportedOperation extends ErrorCodes
   
   /* "AccessDenied" */ val accessDenied: typings.officeDashJs.Excel.ErrorCodes.accessDenied with String = js.native
@@ -77,6 +80,7 @@ object ErrorCodes extends js.Object {
   /* "NonBlankCellOffSheet" */ val nonBlankCellOffSheet: typings.officeDashJs.Excel.ErrorCodes.nonBlankCellOffSheet with String = js.native
   /* "NotImplemented" */ val notImplemented: typings.officeDashJs.Excel.ErrorCodes.notImplemented with String = js.native
   /* "RangeExceedsLimit" */ val rangeExceedsLimit: typings.officeDashJs.Excel.ErrorCodes.rangeExceedsLimit with String = js.native
+  /* "RequestAborted" */ val requestAborted: typings.officeDashJs.Excel.ErrorCodes.requestAborted with String = js.native
   /* "UnsupportedOperation" */ val unsupportedOperation: typings.officeDashJs.Excel.ErrorCodes.unsupportedOperation with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ErrorCodes with String] = js.native

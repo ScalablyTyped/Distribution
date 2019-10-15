@@ -1,11 +1,22 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-line`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`dash-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-dash-dot-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-dash-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-dash`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-dash-dot-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-dash-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-dash`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-dot`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bevel
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.butt
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dash
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dot
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miter
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.round
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.solid
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -83,14 +94,7 @@ trait SimpleLineSymbol
     *
     * @default solid
     */
-  var style: String = js.native
-  /**
-    * For SimpleLineSymbol, the type is always `simple-line`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#type)
-    */
-  @JSName("type")
-  val type_SimpleLineSymbol: `simple-line` = js.native
+  var style: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid = js.native
 }
 
 @JSGlobal("__esri.SimpleLineSymbol")

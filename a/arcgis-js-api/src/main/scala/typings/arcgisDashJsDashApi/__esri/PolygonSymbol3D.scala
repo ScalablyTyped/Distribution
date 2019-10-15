@@ -14,7 +14,7 @@ trait PolygonSymbol3D
      with typings.arcgisDashJsDashApi.__esri.symbols.Symbol3D
      with symbolsSymbol3D {
   /**
-    * For PolygonSymbol3D the type is always `polygon-3d`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html#type)
     */

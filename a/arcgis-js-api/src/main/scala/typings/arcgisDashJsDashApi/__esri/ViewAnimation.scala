@@ -1,6 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`waiting-for-target`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.finished
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.running
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,13 +14,13 @@ trait ViewAnimation
   extends Accessor
      with corePromise {
   /**
-    * The state of the animation.  The animation terminates when the state is either `finished` or `stopped` and cannot transition again to `running`. The `finished` state indicates the animation has successfully ended, while the `stopped` state indicates that the animation was interrupted before it reached its final target.  **Possible Values:** running | finished | stopped | waiting-for-target
+    * The state of the animation.  The animation terminates when the state is either `finished` or `stopped` and cannot transition again to `running`. The `finished` state indicates the animation has successfully ended, while the `stopped` state indicates that the animation was interrupted before it reached its final target.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#state)
     *
     * @default running
     */
-  val state: String = js.native
+  val state: running | finished | stopped | `waiting-for-target` = js.native
   /**
     * The target of the animation.
     *

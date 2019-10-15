@@ -4,10 +4,6 @@ import typings.popperDotJs.popperDotJsMod.Popper.Modifiers
 import typings.popperDotJs.popperDotJsMod.Popper.Placement
 import typings.react.reactMod.ReactNode
 import typings.reactDashPopper.reactDashPopperMod.RefHandler
-import typings.reactDashPopperDashTooltip.reactDashPopperDashTooltipStrings.`right-click`
-import typings.reactDashPopperDashTooltip.reactDashPopperDashTooltipStrings.click
-import typings.reactDashPopperDashTooltip.reactDashPopperDashTooltipStrings.hover
-import typings.reactDashPopperDashTooltip.reactDashPopperDashTooltipStrings.none
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -71,7 +67,7 @@ trait TooltipTriggerProps extends js.Object {
     * Event that triggers the tooltip
     * @default hover
     */
-  var trigger: none | click | `right-click` | hover
+  var trigger: TriggerTypes
   /**
     * Whether to use React.createPortal for creating tooltip
     * @default true // for browser environments
@@ -105,14 +101,14 @@ object TooltipTriggerProps {
     placement: Placement,
     portalContainer: HTMLElement,
     tooltip: TooltipArg => ReactNode,
-    trigger: none | click | `right-click` | hover,
+    trigger: TriggerTypes,
     usePortal: Boolean,
     getTooltipRef: /* ref */ HTMLElement | Null => Unit = null,
     getTriggerRef: /* ref */ HTMLElement | Null => Unit = null,
     modifiers: Modifiers = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined
   ): TooltipTriggerProps = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries, defaultTooltipShown = defaultTooltipShown, delayHide = delayHide, delayShow = delayShow, followCursor = followCursor, onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement, portalContainer = portalContainer, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries, defaultTooltipShown = defaultTooltipShown, delayHide = delayHide, delayShow = delayShow, followCursor = followCursor, onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement, portalContainer = portalContainer, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger, usePortal = usePortal)
     if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(js.Any.fromFunction1(getTooltipRef))
     if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(js.Any.fromFunction1(getTriggerRef))
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)

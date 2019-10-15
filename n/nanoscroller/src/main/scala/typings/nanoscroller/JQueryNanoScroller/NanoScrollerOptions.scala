@@ -44,7 +44,7 @@ trait NanoScrollerOptions extends js.Object {
   var enabledClass: js.UndefOr[String] = js.undefined
   /**
     * To flash the scrollbar gadget for an amount of time defined in plugin settings (defaults to 1,5s).
-    * Useful if you want to show the user that there is more content waiting for him.
+    * Useful if you want to show the user that there is more content waiting for them.
     */
   var flash: js.UndefOr[Boolean] = js.undefined
   /**

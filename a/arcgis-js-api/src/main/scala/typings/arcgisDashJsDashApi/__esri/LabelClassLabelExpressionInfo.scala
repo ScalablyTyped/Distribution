@@ -14,7 +14,7 @@ trait LabelClassLabelExpressionInfo extends Object {
     */
   var expression: String
   /**
-    * The SQL expression defining the content of the label text.  **Deprecated as of v4.5. Use `expression` instead.**
+    * The SQL expression defining the content of the label text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo)
     */

@@ -121,12 +121,15 @@ class File protected () extends ServiceObject[File] {
   var userProject: js.UndefOr[String] = js.native
   def copy(destination: String): js.Promise[CopyResponse] = js.native
   def copy(destination: String, callback: CopyCallback): Unit = js.native
+  def copy(destination: String, options: CopyOptions): js.Promise[CopyResponse] = js.native
   def copy(destination: String, options: CopyOptions, callback: CopyCallback): Unit = js.native
   def copy(destination: Bucket): js.Promise[CopyResponse] = js.native
   def copy(destination: Bucket, callback: CopyCallback): Unit = js.native
+  def copy(destination: Bucket, options: CopyOptions): js.Promise[CopyResponse] = js.native
   def copy(destination: Bucket, options: CopyOptions, callback: CopyCallback): Unit = js.native
   def copy(destination: File): js.Promise[CopyResponse] = js.native
   def copy(destination: File, callback: CopyCallback): Unit = js.native
+  def copy(destination: File, options: CopyOptions): js.Promise[CopyResponse] = js.native
   def copy(destination: File, options: CopyOptions, callback: CopyCallback): Unit = js.native
   /**
     * @typedef {object} CreateReadStreamOptions Configuration options for File#createReadStream.
@@ -147,6 +150,10 @@ class File protected () extends ServiceObject[File] {
     *     NOTE: Byte ranges are inclusive; that is, `options.start = 0` and
     *     `options.end = 999` represent the first 1000 bytes in a file or object.
     *     NOTE: when specifying a byte range, data integrity is not available.
+    * @property {boolean} [decompress=true] Disable auto decompression of the
+    *     received data. By default this option is set to `true`.
+    *     Applicable in cases where the data was uploaded with
+    *     `gzip: true` option. See {@link File#createWriteStream}.
     */
   /**
     * Create a readable stream to read the contents of the remote file. It can be

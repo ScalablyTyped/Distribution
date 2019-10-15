@@ -124,6 +124,9 @@ object handsontableStrings {
   sealed trait average extends js.Object
   
   @js.native
+  sealed trait basePlugin extends js.Object
+  
+  @js.native
   sealed trait before extends js.Object
   
   @js.native
@@ -668,6 +671,8 @@ object handsontableStrings {
   def autofill: autofill = "autofill".asInstanceOf[autofill]
   @scala.inline
   def average: average = "average".asInstanceOf[average]
+  @scala.inline
+  def basePlugin: basePlugin = "basePlugin".asInstanceOf[basePlugin]
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   @scala.inline

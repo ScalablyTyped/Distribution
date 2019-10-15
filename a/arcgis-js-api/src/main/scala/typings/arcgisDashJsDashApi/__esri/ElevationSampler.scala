@@ -10,6 +10,24 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ElevationSampler extends js.Object {
   /**
+    * The minimum and maximum resolution of the data in the sampler.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#demResolution)
+    */
+  val demResolution: ElevationSamplerDemResolution = js.native
+  /**
+    * The extent within which the sampler can be queried.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#extent)
+    */
+  val extent: Extent = js.native
+  /**
+    * The value that is used to represent areas where there is no data available.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#noDataValue)
+    */
+  val noDataValue: Double = js.native
+  /**
     * Registers an event handler on the instance. Call this method to hook an event with a listener. See the [Events summary table](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#events-summary) for a list of listened events.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#on)

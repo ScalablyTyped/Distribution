@@ -1,6 +1,27 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`decimal-degrees`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`width-and-depth`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.all
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.area
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.centimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.depth
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.diameter
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.distance
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.height
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.radius
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.width
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +44,9 @@ trait SizeVariable extends VisualVariable {
     *
     * @default all
     */
-  var axis: String = js.native
+  var axis: width | depth | height | `width-and-depth` | all = js.native
   /**
-    * Deprecated. Use [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueExpression) instead**. The only supported expression is `view.scale`.
+    * The only supported expression is `view.scale`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#expression)
     */
@@ -79,7 +100,7 @@ trait SizeVariable extends VisualVariable {
     */
   var target: String = js.native
   /**
-    * The visual variable type. For SizeVariable, this value is always `size`.
+    * The visual variable type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#type)
     */
@@ -105,13 +126,21 @@ trait SizeVariable extends VisualVariable {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueRepresentation)
     */
-  var valueRepresentation: String = js.native
+  var valueRepresentation: radius | diameter | area | width | distance = js.native
   /**
-    * Indicates the unit of measurement used to interpret the value returned by [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#field) or [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueExpression). For 3D volumetric symbols the default is `meters`. This property should not be used if the data value represents a thematic quantity (e.g. traffic count, census data, etc.).  **Possible Values:** unknown | inches | feet | yards | miles | nautical-miles | millimeters | centimeters | decimeters | meters | kilometers | decimal-degrees
+    * Indicates the unit of measurement used to interpret the value returned by [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#field) or [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueExpression). For 3D volumetric symbols the default is `meters`. This property should not be used if the data value represents a thematic quantity (e.g. traffic count, census data, etc.).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueUnit)
     */
-  var valueUnit: String = js.native
+  var valueUnit: unknown | inches | feet | yards | miles | `nautical-miles` | millimeters | centimeters | decimeters | meters | kilometers | `decimal-degrees` = js.native
+  /**
+    * Modifies the SizeVariable in place by flipping the sizes in the [stops](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#stops). This is designed for scenarios where you want small numbers (such as rankings 1, 2, 3) to be rendered with larger icons. This function is particularly useful for flipping the sizes of a SizeVariable after it has been returned from a method in the [sizeRendererCreator](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html) module.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#flipSizes)
+    *
+    *
+    */
+  def flipSizes(): Unit = js.native
 }
 
 @JSGlobal("__esri.SizeVariable")

@@ -1,6 +1,12 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`default-curve-extension`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`keep-end-attributes`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`no-end-attributes`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`no-extend-at-from`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`no-extend-at-to`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`relocate-ends`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +28,9 @@ trait TrimExtendParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#extendHow)
     *
-    * @default default-curve-extension
+    * @default "default-curve-extension"
     */
-  var extendHow: String = js.native
+  var extendHow: `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to` = js.native
   /**
     * The array of polylines to trim or extend. The structure of each geometry in the array is the same as the structure of the JSON polyline objects returned by the ArcGIS REST API.
     *
@@ -38,7 +44,7 @@ trait TrimExtendParameters extends Accessor {
     */
   var trimExtendTo: Polyline = js.native
   /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#toJSON)
     *

@@ -1,6 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.sliced
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.slicing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +38,7 @@ trait SliceViewModel extends Accessor {
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: disabled | ready | slicing | sliced = js.native
   /**
     * Clears the current slice.
     *

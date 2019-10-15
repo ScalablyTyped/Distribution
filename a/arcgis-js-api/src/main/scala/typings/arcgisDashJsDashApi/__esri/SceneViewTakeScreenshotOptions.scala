@@ -34,7 +34,7 @@ trait SceneViewTakeScreenshotOptions extends Object {
     */
   var ignorePadding: js.UndefOr[Boolean] = js.undefined
   /**
-    * The quality (0 to 100) of the encoded image when encoding as `jpg`.
+    * The quality (0 to 100) of the encoded image when format is `jpg`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     *

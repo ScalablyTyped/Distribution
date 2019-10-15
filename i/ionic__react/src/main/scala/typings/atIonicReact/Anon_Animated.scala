@@ -28,7 +28,7 @@ trait Anon_Animated extends js.Object {
   var overlay: js.UndefOr[HTMLIonModalElement] = js.native
   val props: (Pick[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-    id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+    id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
   ]) with Anon_ChildrenReactNode with ReactOverlayProps with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native
   var state: js.Object = js.native
@@ -36,7 +36,7 @@ trait Anon_Animated extends js.Object {
   def componentDidUpdate(
     prevProps: (Pick[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-      id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+      id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
     ]) with Anon_ChildrenReactNode with ReactOverlayProps
   ): js.Promise[Unit] = js.native
   def componentWillUnmount(): Unit = js.native
@@ -46,7 +46,7 @@ trait Anon_Animated extends js.Object {
   def present(
     prevProps: (Pick[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-      id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+      id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
     ]) with Anon_ChildrenReactNode with ReactOverlayProps
   ): js.Promise[Unit] = js.native
   def render(): ReactPortal = js.native
@@ -56,7 +56,7 @@ trait Anon_Animated extends js.Object {
       /* prevState */ js.Object, 
       /* props */ (Pick[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-        id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+        id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
       ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
       js.Object | (Pick[js.Object, K]) | Null
     ]
@@ -66,7 +66,7 @@ trait Anon_Animated extends js.Object {
       /* prevState */ js.Object, 
       /* props */ (Pick[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-        id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+        id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
       ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
       js.Object | (Pick[js.Object, K]) | Null
     ],

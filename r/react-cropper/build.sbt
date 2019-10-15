@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-cropper"
-version := "0.10-dt-20190508Z-4fa317"
+version := "0.10-dt-20190508Z-ecf078"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cropperjs" % "1.1-dt-20190212Z-4868e8",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-965e98",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191014Z-d5b0ca",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

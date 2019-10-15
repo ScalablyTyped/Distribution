@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`data-received`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.connected
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disconnected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,11 +21,11 @@ trait StreamLayerView
     */
   val connectionError: Error = js.native
   /**
-    * The status of the Web Socket connection with the stream service. This property can be watched to see if the connection is lost unexpectedly.  **Possible Values:** connected | disconnected
+    * The status of the Web Socket connection with the stream service. This property can be watched to see if the connection is lost unexpectedly.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#connectionStatus)
     */
-  val connectionStatus: String = js.native
+  val connectionStatus: connected | disconnected = js.native
   /**
     * The geometry and attribute filter. Only the features that satisfy the filter are displayed.
     *
@@ -31,40 +33,134 @@ trait StreamLayerView
     */
   val filter: FeatureFilter = js.native
   /**
-    * Contains the collection of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) visible in the layer view for the live stream. Graphics may be removed from the layer view by calling the [removeAll()](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#removeAll) method from [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html).  **This property is deprecated. Use [queryFeatures](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#queryFeatures) method instead.**
+    * Highlights the given feature(s).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#graphics)
-    */
-  var graphics: Collection[Graphic] = js.native
-  /**
-    * Opens a web socket connection with the stream service to start receiving messages. This is called internally when the StreamLayer is added to a view.  **The layer will now automatically connect when it is added to a view.**
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#highlight)
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#connect)
-    *
+    * @param target The feature(s) to highlight. When passing a graphic or array of graphics, each feature must have a valid `objectID`. You may alternatively pass one or more objectIDs as a single number or an array.
     *
     */
-  def connect(): IPromise[_] = js.native
-  /**
-    * Closes the web socket connection with the stream service. This is called internally when the StreamLayer is removed from a view. To verify when the connection is closed, watch the [connectionStatus](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#connectionStatus) property.  **The layer will now automatically disconnect when it is removed a view.**
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#disconnect)
-    *
-    *
-    */
-  def disconnect(): Unit = js.native
+  def highlight(): Handle = js.native
+  def highlight(target: js.Array[Double | Graphic]): Handle = js.native
+  def highlight(target: Double): Handle = js.native
+  def highlight(target: Graphic): Handle = js.native
   @JSName("on")
   def on_datareceived(name: `data-received`, eventHandler: StreamLayerViewDataReceivedEventHandler): IHandle = js.native
   /**
-    * **This method is deprecated. Update [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#filter) directly instead.** Updates the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#filter) on the StreamLayerView. The filter is updated only on the layer view from which it is called. To update the filter on all layer views generated from a common layer, use the [StreamLayer.updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method. If the input `filter` object is `undefined` or `null`, the spatial and attribute filters are removed.  Filter changes only apply to incoming features. Features already displayed in the view will be removed automatically.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query. If query parameters are not provided, the extent and count of all features available for drawing are returned.
+    * > **Known Limitations**
+    *   * Queries on StreamLayerView are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#updateFilter)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#queryExtent)
     *
-    * @param filter Updates the spatial and attribute [filters](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#filter). If `null`, all filters are cleared.
-    * @param filter.geometry A spatial filter for filtering features. Only features that intersect the given geometry are displayed in the view. If `null`, the spatial filter is cleared.
-    * @param filter.where A SQL where clause used to filter features by attributes. If `null`, the attribute filter is cleared.
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
     *
     */
-  def updateFilter(filter: StreamLayerViewUpdateFilterFilter): IPromise[_] = js.native
+  def queryExtent(): IPromise[_] = js.native
+  def queryExtent(query: Query): IPromise[_] = js.native
+  def queryExtent(query: QueryProperties): IPromise[_] = js.native
+  def queryExtent(query: QueryProperties, options: StreamLayerViewQueryExtentOptions): IPromise[_] = js.native
+  def queryExtent(query: Query, options: StreamLayerViewQueryExtentOptions): IPromise[_] = js.native
+  /**
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the number of features that satisfy the query. If query parameters are not provided, the count of all features available for drawing is returned.
+    * > **Known Limitations**
+    *   * Queries on StreamLayerView are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#queryFeatureCount)
+    *
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def queryFeatureCount(): IPromise[Double] = js.native
+  def queryFeatureCount(query: Query): IPromise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties): IPromise[Double] = js.native
+  def queryFeatureCount(query: QueryProperties, options: StreamLayerViewQueryFeatureCountOptions): IPromise[Double] = js.native
+  def queryFeatureCount(query: Query, options: StreamLayerViewQueryFeatureCountOptions): IPromise[Double] = js.native
+  /**
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html). If query parameters are not provided, all features available for drawing are returned.
+    * > **Known Limitations**
+    *   * Queries on StreamLayerView are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#queryFeatures)
+    *
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def queryFeatures(): IPromise[FeatureSet] = js.native
+  def queryFeatures(query: Query): IPromise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties): IPromise[FeatureSet] = js.native
+  def queryFeatures(query: QueryProperties, options: StreamLayerViewQueryFeaturesOptions): IPromise[FeatureSet] = js.native
+  def queryFeatures(query: Query, options: StreamLayerViewQueryFeaturesOptions): IPromise[FeatureSet] = js.native
+  /**
+    * If a [trackIdField](https://enterprise.arcgis.com/en/geoevent/latest/get-started/essential-geoevent-server-vocabulary.htm#ESRI_SECTION1_F45BBCE9ADFA4E57AF38DD225921EFCD) is specified on the Stream Service, this method executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) of the latest observations for each [trackID](https://enterprise.arcgis.com/en/geoevent/latest/get-started/essential-geoevent-server-vocabulary.htm#ESRI_SECTION1_F45BBCE9ADFA4E57AF38DD225921EFCD) that satisfy the query. Otherwise, an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) will be thrown when the method is called.
+    * > **Known Limitations**
+    *   * Queries on StreamLayerView are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#queryLatestObservations)
+    *
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def queryLatestObservations(): IPromise[FeatureSet] = js.native
+  def queryLatestObservations(query: Query): IPromise[FeatureSet] = js.native
+  def queryLatestObservations(query: QueryProperties): IPromise[FeatureSet] = js.native
+  def queryLatestObservations(query: QueryProperties, options: StreamLayerViewQueryLatestObservationsOptions): IPromise[FeatureSet] = js.native
+  def queryLatestObservations(query: Query, options: StreamLayerViewQueryLatestObservationsOptions): IPromise[FeatureSet] = js.native
+  /**
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns array of the ObjectIDs of features that satisfy the input query. If query parameters are not provided, the ObjectIDs of all features available for drawing are returned.
+    * > **Known Limitations**
+    *   * Queries on StreamLayerView are currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *   * Spatial queries have the same limitations as those listed in the [projection engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html) documentation.
+    *   * Spatial queries are not currently supported if the layer view has any of the following [SpatialReferences](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html):
+    *   * GDM 2000 (4742) – Malaysia
+    *   * Gusterberg (Ferro) (8042) – Austria/Czech Republic
+    *   * ISN2016 (8086) - Iceland
+    *   * SVY21 (4757) - Singapore
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#queryObjectIds)
+    *
+    * @param query Specifies the attributes and spatial filter of the query. When no parameters are passed to this method, all features in the client are returned. To only return features visible in the view, set the `geometry` parameter in the query object to the view's extent.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def queryObjectIds(): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(query: QueryProperties, options: StreamLayerViewQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Query, options: StreamLayerViewQueryObjectIdsOptions): IPromise[js.Array[Double]] = js.native
 }
 
 @JSGlobal("__esri.StreamLayerView")

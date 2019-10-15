@@ -15,7 +15,7 @@ object ProgressBarStyle extends js.Object {
   				 */
   val BAR: Double = js.native
   /**
-  				 * he standard progress-view style. This is the default.
+  				 * The standard progress-view style. This is the default.
   				 */
   val DEFAULT: Double = js.native
   /**

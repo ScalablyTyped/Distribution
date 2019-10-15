@@ -3,9 +3,15 @@ package typings.arcgisDashJsDashApi.__esri
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.edits
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feature
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mesh
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipatch
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polygon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.stream
 import typings.std.Date
 import typings.std.FormData
 import typings.std.HTMLFormElement
@@ -93,11 +99,11 @@ trait FeatureLayer
     */
   val gdbVersion: String = js.native
   /**
-    * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from client-side features, this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.  **Possible Values:** point | multipoint | polyline | polygon | multipatch | mesh
+    * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from client-side features, this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType)
     */
-  var geometryType: String = js.native
+  var geometryType: point | multipoint | polyline | polygon | multipatch | mesh = js.native
   /**
     * Indicates whether the client-side features in the layer have `M` (measurement) values. Use the `supportsM` property in the FeatureLayer's [capabilities.data](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) object to verify if `M` values are supported on [feature service](https://developers.arcgis.com/rest/services-reference/feature-service.htm) features.
     *
@@ -237,6 +243,12 @@ trait FeatureLayer
     */
   var source: Collection[Graphic] = js.native
   /**
+    * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API. While most commonly used [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#properties-summary) are exposed on the FeatureLayer class directly, this property gives access to all information returned by the feature service. This property is useful if working in an application built using an older version of the API which requires access to feature service properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#sourceJSON)
+    */
+  var sourceJSON: js.Any = js.native
+  /**
     * The spatial reference of the layer. When creating the layer from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url), the spatial reference is read from the service.  When creating a FeatureLayer from client-side features, this property is inferred from the geometries of the features provided in the [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference)
@@ -253,7 +265,14 @@ trait FeatureLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#typeIdField)
     */
-  val typeIdField: String = js.native
+  var typeIdField: String = js.native
+  /**
+    * For [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) the type is `feature`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#type)
+    */
+  @JSName("type")
+  val type_FeatureLayer: feature | stream = js.native
   /**
     * An array of subtypes defined in the feature service exposed by ArcGIS REST API. Each item includes information about the type, such as the type ID, name, and definition expression.
     *
@@ -356,11 +375,7 @@ trait FeatureLayer
   def getFieldDomain(fieldName: String): Domain = js.native
   def getFieldDomain(fieldName: String, options: FeatureLayerGetFieldDomainOptions): Domain = js.native
   @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: FeatureLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: FeatureLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: FeatureLayerLayerviewDestroyEventHandler): IHandle = js.native
+  def on_edits(name: edits, eventHandler: FeatureLayerEditsEventHandler): IHandle = js.native
   /**
     * Query information about attachments associated with features. It will return an error if the layer's [capabilities.data.supportsAttachment](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property is `false`. Attachments for multiple features can be queried if the layer's [capabilities.operations.supportsQueryAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) is `true`.
     * > **Known Limitations**  When the layer's [capabilities.operations.supportsQueryAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property is `false`, [AttachmentQuery.objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#objectIds) property only accepts a single `objectId`.
@@ -409,7 +424,7 @@ trait FeatureLayer
   def queryFeatureCount(query: QueryProperties, options: FeatureLayerQueryFeatureCountOptions): IPromise[Double] = js.native
   def queryFeatureCount(query: Query, options: FeatureLayerQueryFeatureCountOptions): IPromise[Double] = js.native
   /**
-    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html), which can be accessed using the `.then()` method once the promise resolves. A [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) contains an array of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) features, which can be added to the [view's graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#graphics). This array will not be populated if zero results are found.
+    * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html), which can be accessed using the `.then()` method once the promise resolves. A [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) contains an array of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) features. See the [querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#querying) section for more information on how to query features from a layer.
     * > To query features/graphics available to or visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) on the client rather than making a server-side query, you must use the [FeatureLayerView.queryFeatures()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures) method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures)

@@ -1,6 +1,19 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`global-id`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`small-integer`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.blob
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.date
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.double
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.guid
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.integer
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.long
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.oid
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.raster
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.single
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.string
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,11 +33,11 @@ trait SearchLayerField extends Accessor {
     */
   var name: String = js.native
   /**
-    * The data type of the field.  **Possible Values:** small-integer | integer | single | double | long | string | date | oid | geometry | blob | raster | guid | global-id | xml
+    * The data type of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#type)
     */
-  var `type`: String = js.native
+  var `type`: `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geometry | blob | raster | guid | `global-id` | xml = js.native
 }
 
 @JSGlobal("__esri.SearchLayerField")

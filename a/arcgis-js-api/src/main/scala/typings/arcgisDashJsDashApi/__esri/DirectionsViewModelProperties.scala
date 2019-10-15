@@ -76,7 +76,7 @@ trait DirectionsViewModelProperties extends GoToProperties {
 object DirectionsViewModelProperties {
   @scala.inline
   def apply(
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     impedanceAttribute: String = null,
     maxStops: Int | Double = null,
     routeParameters: RouteParametersProperties = null,

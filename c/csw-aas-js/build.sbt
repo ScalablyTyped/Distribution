@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "csw-aas-js"
-version := "1.0.0-12600d"
+version := "1.0.0-ed1a3a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "keycloak-js" % "7.0.0-33d991",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-965e98",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191014Z-d5b0ca",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

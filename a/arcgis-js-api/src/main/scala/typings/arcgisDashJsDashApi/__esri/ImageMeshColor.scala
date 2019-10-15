@@ -25,11 +25,6 @@ trait ImageMeshColor extends Accessor {
     * @default undefined
     */
   var transparent: Boolean = js.native
-  /**
-    * For ImageMeshColor the type is always `image`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ImageMeshColor.html#type)
-    */
   val `type`: image = js.native
   /**
     * The url to the image resource. This can either be a remote url (absolute or relative) or a data url.  The url property is mutually exclusive with the data property, setting the url will clear the data (if there is one).

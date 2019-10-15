@@ -1,5 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,13 +42,13 @@ trait CircleProperties extends PolygonProperties {
     */
   var radius: js.UndefOr[Double] = js.undefined
   /**
-    * Unit of the radius.  **Possible Values:** feet | kilometers | meters | miles | nautical-miles | yards
+    * Unit of the radius.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#radiusUnit)
     *
     * @default meters
     */
-  var radiusUnit: js.UndefOr[String] = js.undefined
+  var radiusUnit: js.UndefOr[feet | kilometers | meters | miles | `nautical-miles` | yards] = js.undefined
 }
 
 object CircleProperties {
@@ -56,7 +62,7 @@ object CircleProperties {
     isSelfIntersecting: js.UndefOr[Boolean] = js.undefined,
     numberOfPoints: Int | Double = null,
     radius: Int | Double = null,
-    radiusUnit: String = null,
+    radiusUnit: feet | kilometers | meters | miles | `nautical-miles` | yards = null,
     rings: js.Array[js.Array[js.Array[Double]]] = null,
     spatialReference: SpatialReferenceProperties = null
   ): CircleProperties = {
@@ -69,7 +75,7 @@ object CircleProperties {
     if (!js.isUndefined(isSelfIntersecting)) __obj.updateDynamic("isSelfIntersecting")(isSelfIntersecting)
     if (numberOfPoints != null) __obj.updateDynamic("numberOfPoints")(numberOfPoints.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit)
+    if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit.asInstanceOf[js.Any])
     if (rings != null) __obj.updateDynamic("rings")(rings)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
     __obj.asInstanceOf[CircleProperties]

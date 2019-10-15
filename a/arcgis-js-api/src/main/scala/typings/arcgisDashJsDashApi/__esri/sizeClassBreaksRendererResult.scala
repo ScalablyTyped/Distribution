@@ -14,6 +14,12 @@ trait sizeClassBreaksRendererResult extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#ClassBreaksRendererResult)
+    */
+  var basemapTheme: String
+  /**
     * This object describes class breaks generated from data in a layer for a given field with a specified classification method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#ClassBreaksRendererResult)
@@ -43,6 +49,7 @@ object sizeClassBreaksRendererResult {
   @scala.inline
   def apply(
     basemapId: String,
+    basemapTheme: String,
     classBreaksResult: ClassBreaksResult,
     constructor: js.Function,
     defaultValuesUsed: Boolean,
@@ -51,7 +58,7 @@ object sizeClassBreaksRendererResult {
     renderer: ClassBreaksRenderer,
     sizeScheme: SizeScheme
   ): sizeClassBreaksRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaksResult = classBreaksResult, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, sizeScheme = sizeScheme)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, classBreaksResult = classBreaksResult, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, sizeScheme = sizeScheme)
   
     __obj.asInstanceOf[sizeClassBreaksRendererResult]
   }

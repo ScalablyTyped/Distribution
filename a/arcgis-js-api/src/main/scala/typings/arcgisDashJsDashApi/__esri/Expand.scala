@@ -114,14 +114,6 @@ trait Expand extends Widget {
     */
   def expand(): Unit = js.native
   /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
-  /**
     * Toggle the widget by expanding it if it's collapsed, or collapsing it if it's expanded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#toggle)

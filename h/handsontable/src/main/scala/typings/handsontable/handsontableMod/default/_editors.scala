@@ -21,8 +21,8 @@ object _editors extends js.Object {
     extends typings.handsontable.handsontableMod.Handsontable._editors.Autocomplete
   
   @js.native
-  abstract class Base protected ()
-    extends typings.handsontable.handsontableMod.Handsontable._editors.Base {
+  abstract class BaseEditor protected ()
+    extends typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor {
     def this(
       hotInstance: Core,
       row: Double,

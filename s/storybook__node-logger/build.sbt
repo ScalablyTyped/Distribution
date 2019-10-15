@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__node-logger"
-version := "5.2.3-6116e3"
+version := "5.2.4-70b1fc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

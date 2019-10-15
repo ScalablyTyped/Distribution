@@ -14,7 +14,7 @@ trait MeshSymbol3D
      with typings.arcgisDashJsDashApi.__esri.symbols.Symbol3D
      with symbolsSymbol3D {
   /**
-    * For MeshSymbol3D, the type is always `mesh-3d`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html#type)
     */

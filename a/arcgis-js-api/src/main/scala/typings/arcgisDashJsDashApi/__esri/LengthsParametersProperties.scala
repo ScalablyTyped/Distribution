@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`preserve-shape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geodesic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.planar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +20,7 @@ trait LengthsParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LengthsParameters.html#calculationType)
     */
-  var calculationType: js.UndefOr[String] = js.undefined
+  var calculationType: js.UndefOr[planar | geodesic | `preserve-shape`] = js.undefined
   /**
     * If polylines are in a geographic coordinate system, then geodesic needs to be set to `true` in order to calculate the ellipsoidal shortest path distance between each pair of the vertices in the polylines. If `lengthUnit` is not specified, the output is returned in meters.
     *
@@ -41,13 +44,13 @@ trait LengthsParametersProperties extends js.Object {
 object LengthsParametersProperties {
   @scala.inline
   def apply(
-    calculationType: String = null,
+    calculationType: planar | geodesic | `preserve-shape` = null,
     geodesic: js.UndefOr[Boolean] = js.undefined,
     lengthUnit: Double | String = null,
     polylines: js.Array[PolylineProperties] = null
   ): LengthsParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (calculationType != null) __obj.updateDynamic("calculationType")(calculationType)
+    if (calculationType != null) __obj.updateDynamic("calculationType")(calculationType.asInstanceOf[js.Any])
     if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
     if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
     if (polylines != null) __obj.updateDynamic("polylines")(polylines)

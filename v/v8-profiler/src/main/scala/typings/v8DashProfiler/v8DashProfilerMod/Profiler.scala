@@ -18,7 +18,7 @@ trait Profiler extends js.Object {
   def setSamplingInterval(ms: Double): Unit = js.native
   /**
     * start CPU profiling.
-    * name is optional argument, by default profile name will be constructed from his uid.
+    * name is optional argument, by default profile name will be constructed from its uid.
     * recsamples is true by default.
     */
   def startProfiling(): Unit = js.native
@@ -32,7 +32,7 @@ trait Profiler extends js.Object {
   def stopProfiling(name: String): Profile = js.native
   /**
     * returns new HEAP Snapshot instance.
-    * name is optional argument, by default snapshot name will be constructed from his uid.
+    * name is optional argument, by default snapshot name will be constructed from its uid.
     */
   def takeSnapshot(): Snapshot = js.native
   def takeSnapshot(name: String): Snapshot = js.native

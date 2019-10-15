@@ -1,11 +1,23 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`horizontal-reversed`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertical-reversed`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SliderProperties extends WidgetProperties {
+  /**
+    * When `true`, sets the slider to a disabled state so the user cannot interact with it.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
   /**
     * Indicates if the user can drag the segment between thumbs to update thumb positions.
     *
@@ -14,6 +26,18 @@ trait SliderProperties extends WidgetProperties {
     * @default true
     */
   var draggableSegmentsEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction)
+    */
+  var inputFormatFunction: js.UndefOr[SliderLabelFormatter] = js.undefined
+  /**
+    * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction). This property must be set if an `inputFormatFunction` is set. Otherwise the slider values will likely not update to their expected positions.  Overrides the default input parses, which is a parsed floating point number.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction)
+    */
+  var inputParseFunction: js.UndefOr[InputParser] = js.undefined
   /**
     * A function used to format labels. Overrides the default label formatter.  By default labels are formatted in the following way:
     *   * When the data range is less than `10` (`(max - min) < 10`), labels are rounded based on the value set in the [precision](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#precision) property.
@@ -42,13 +66,13 @@ trait SliderProperties extends WidgetProperties {
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
   /**
-    * Determines the layout/orientation of the Slider widget.  **Possible Values:** vertical | horizontal
+    * Determines the layout/orientation of the Slider widget. By default, the slider will render horizontally with the min value on the left side of the track. The possible values are described below.  **`horizontal`**  ![Slider horizontal not reversed](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-horizontal-not-reversed.png%20%22default%20horizontal%20slider%22)  **`horizontal-reversed`**  When the slider is set to `horizontal-reversed`, the max value will render on the left side and the min on the right.  ![Slider horizontal reversed](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-horizontal-reversed.png%20%22reversed%20horizontal%20slider%22)  **`vertical`**  When the slider is set to `vertical`, the max value will render on the top of the track and the min on the bottom.  ![Slider vertical not reversed](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-vertical-not-reversed.png%20%22default%20vertical%20slider%22)  **`vertical-reversed`**  When the slider is set to `vertical-reversed`, the max value will render on the bottom of the track and the min on the top.  ![Slider vertical reversed](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-vertical-reversed.png%20%22reversed%20vertical%20slider%22)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#layout)
     *
     * @default horizontal
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[horizontal | `horizontal-reversed` | vertical | `vertical-reversed`] = js.undefined
   /**
     * The maximum possible data/thumb value of the slider. In the constructor, if one of the values specified in [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#values) is greater than the `max` value specified in this property, then the `max` will update to the highest value in `values`.  To display the max value's label on the slider, then set [rangeLabelsVisible](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelsVisible) to `true`. To allow the end user to modify the max value, set [rangeLabelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled) to `true`.
     *
@@ -127,6 +151,14 @@ trait SliderProperties extends WidgetProperties {
     */
   var thumbCreatedFunction: js.UndefOr[ThumbCreatedFunction] = js.undefined
   /**
+    * When `false`, the user can freely move any slider thumb to any position along the track. By default, a thumb's position is constrained to the positions of neighboring thumbs so you cannot move one thumb past another. Set this property to `false` to disable this constraining behavior.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#thumbsConstrained)
+    *
+    * @default true
+    */
+  var thumbsConstrained: js.UndefOr[Boolean] = js.undefined
+  /**
     * When set, renders ticks along the slider track. See the [TickConfig](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig) documentation for more information on how to configure tick placement, style, and behavior.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#tickConfigs)
@@ -157,13 +189,16 @@ object SliderProperties {
   def apply(
     container: String | HTMLElement = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     draggableSegmentsEnabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
+    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => Double = null,
     label: String = null,
     labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
     labelInputsEnabled: js.UndefOr[Boolean] = js.undefined,
     labelsVisible: js.UndefOr[Boolean] = js.undefined,
-    layout: String = null,
+    layout: horizontal | `horizontal-reversed` | vertical | `vertical-reversed` = null,
     max: Int | Double = null,
     min: Int | Double = null,
     precision: Int | Double = null,
@@ -172,6 +207,7 @@ object SliderProperties {
     snapOnClickEnabled: js.UndefOr[Boolean] = js.undefined,
     steps: Double | js.Array[Double] = null,
     thumbCreatedFunction: (/* index */ Double, /* value */ Double, /* thumbElement */ HTMLElement, /* labelElement */ js.UndefOr[HTMLElement]) => Unit = null,
+    thumbsConstrained: js.UndefOr[Boolean] = js.undefined,
     tickConfigs: js.Array[TickConfig] = null,
     trackElement: HTMLElement = null,
     values: js.Array[Double] = null,
@@ -180,13 +216,16 @@ object SliderProperties {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(draggableSegmentsEnabled)) __obj.updateDynamic("draggableSegmentsEnabled")(draggableSegmentsEnabled)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (inputFormatFunction != null) __obj.updateDynamic("inputFormatFunction")(js.Any.fromFunction3(inputFormatFunction))
+    if (inputParseFunction != null) __obj.updateDynamic("inputParseFunction")(js.Any.fromFunction3(inputParseFunction))
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
     if (!js.isUndefined(labelInputsEnabled)) __obj.updateDynamic("labelInputsEnabled")(labelInputsEnabled)
     if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
@@ -195,6 +234,7 @@ object SliderProperties {
     if (!js.isUndefined(snapOnClickEnabled)) __obj.updateDynamic("snapOnClickEnabled")(snapOnClickEnabled)
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     if (thumbCreatedFunction != null) __obj.updateDynamic("thumbCreatedFunction")(js.Any.fromFunction4(thumbCreatedFunction))
+    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained)
     if (tickConfigs != null) __obj.updateDynamic("tickConfigs")(tickConfigs)
     if (trackElement != null) __obj.updateDynamic("trackElement")(trackElement)
     if (values != null) __obj.updateDynamic("values")(values)

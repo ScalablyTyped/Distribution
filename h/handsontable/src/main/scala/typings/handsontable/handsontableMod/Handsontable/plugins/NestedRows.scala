@@ -1,10 +1,11 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins
 
+import typings.handsontable.handsontableMod._Handsontable.Core
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NestedRows extends Base {
+trait NestedRows extends BasePlugin {
   var bindRowsWithHeadersPlugin: BindRowsWithHeaders | Unit
   var collapsingUI: js.Object | Unit
   var dataManager: DataManager | Unit
@@ -27,6 +28,7 @@ object NestedRows {
     enablePlugin: () => Unit,
     enabled: Boolean,
     headersUI: js.Object | Unit,
+    hot: Core,
     init: () => Unit,
     initialized: Boolean,
     isPluginsReady: Boolean,
@@ -34,9 +36,11 @@ object NestedRows {
     pluginsInitializedCallback: js.Array[_],
     removeHooks: String => Unit,
     sourceData: js.Object | Unit,
-    trimRowsPlugin: TrimRows | Unit
+    t: RecordTranslator,
+    trimRowsPlugin: TrimRows | Unit,
+    updatePlugin: () => Unit
   ): NestedRows = {
-    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), bindRowsWithHeadersPlugin = bindRowsWithHeadersPlugin.asInstanceOf[js.Any], callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), collapsingUI = collapsingUI.asInstanceOf[js.Any], dataManager = dataManager.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, headersUI = headersUI.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), sourceData = sourceData.asInstanceOf[js.Any], trimRowsPlugin = trimRowsPlugin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), bindRowsWithHeadersPlugin = bindRowsWithHeadersPlugin.asInstanceOf[js.Any], callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), collapsingUI = collapsingUI.asInstanceOf[js.Any], dataManager = dataManager.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, headersUI = headersUI.asInstanceOf[js.Any], hot = hot, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), sourceData = sourceData.asInstanceOf[js.Any], t = t, trimRowsPlugin = trimRowsPlugin.asInstanceOf[js.Any], updatePlugin = js.Any.fromFunction0(updatePlugin))
   
     __obj.asInstanceOf[NestedRows]
   }

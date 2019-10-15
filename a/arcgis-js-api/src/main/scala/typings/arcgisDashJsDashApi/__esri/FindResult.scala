@@ -44,7 +44,7 @@ trait FindResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html#value)
     */
-  var value: Unit = js.native
+  var value: String = js.native
 }
 
 @JSGlobal("__esri.FindResult")

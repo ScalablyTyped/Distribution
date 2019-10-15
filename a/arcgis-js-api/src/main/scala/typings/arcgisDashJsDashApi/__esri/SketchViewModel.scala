@@ -1,7 +1,24 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.active
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.circle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.create
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.move
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polygon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.rectangle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.redo
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.reshape
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.transform
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.undo
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +28,11 @@ trait SketchViewModel
   extends Accessor
      with Evented {
   /**
-    * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create) has been called), this property reflects the create tool being used. When updating graphics (for example after [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) has been called), this property reflects the update tool being used. If no create or update operation is in progress, this is `null`.  **Possible Values:** point | multipoint | polyline | polygon | circle | rectangle | move | transform | reshape
+    * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create) has been called), this property reflects the create tool being used. When updating graphics (for example after [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) has been called), this property reflects the update tool being used. If no create or update operation is in progress, this is `null`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool)
     */
-  val activeTool: String = js.native
+  val activeTool: point | multipoint | polyline | polygon | circle | rectangle | move | transform | reshape = js.native
   /**
     * The graphic that is being created.
     *
@@ -35,7 +52,7 @@ trait SketchViewModel
     */
   var layer: GraphicsLayer = js.native
   /**
-    * A simple marker symbol used for representing the point geometry that is being drawn.  The default value is the following:
+    * A  [SimpleMarkerSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html) or [PointSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html) used for representing the point geometry that is being drawn. [SimpleMarkerSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html) may also be used to symbolize point features in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). However, it is recommended you use [PointSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html) instead.  The default value is the following:
     * ```js
     * {
     *   type: "simple-marker",
@@ -53,7 +70,7 @@ trait SketchViewModel
     */
   var pointSymbol: SimpleMarkerSymbol | PointSymbol3D = js.native
   /**
-    * A simple fill symbol used for representing the polygon geometry that is being drawn.  The default value is the following:
+    * A  [SimpleFillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html) or [PolygonSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html) used for representing the polygon geometry that is being drawn. [SimpleFillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html) may also be used to symbolize point features in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). However, it is recommended you use [PolygonSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html) instead.  The default value is the following:
     * ```js
     * {
     *   type: "simple-fill",
@@ -69,7 +86,7 @@ trait SketchViewModel
     */
   var polygonSymbol: SimpleFillSymbol | PolygonSymbol3D = js.native
   /**
-    * A simple line symbol used for representing the polyline geometry that is being drawn.  The default value is the following:
+    * A  [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html) or [LineSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html) used for representing the polyline geometry that is being drawn. [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html) may also be used to symbolize polyline features in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). However, it is recommended you use [LineSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html) instead.  The default value is the following:
     * ```js
     * {
     *   type: "simple-line",
@@ -82,11 +99,11 @@ trait SketchViewModel
     */
   var polylineSymbol: SimpleLineSymbol | LineSymbol3D = js.native
   /**
-    * The sketch view model's state.  **Possible Values:** ready | disabled | active
+    * The sketch view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#state)
     */
-  val state: String = js.native
+  val state: ready | disabled | active = js.native
   /**
     * An array of graphics that are being updated by the SketchViewModel.
     *
@@ -140,6 +157,14 @@ trait SketchViewModel
     */
   def create(tool: String): Unit = js.native
   def create(tool: String, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
+  @JSName("on")
+  def on_create(name: create, eventHandler: SketchViewModelCreateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_redo(name: redo, eventHandler: SketchViewModelRedoEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_undo(name: undo, eventHandler: SketchViewModelUndoEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_update(name: update, eventHandler: SketchViewModelUpdateEventHandler): IHandle = js.native
   /**
     * Incrementally redo actions recorded in the stack. Calling this method will fire the [redo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-redo) event.
     *
@@ -148,14 +173,6 @@ trait SketchViewModel
     *
     */
   def redo(): Unit = js.native
-  /**
-    * Resets SketchViewModel to prepare for another create operation. Reset discards the current sketch, if called in middle of create operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#reset)
-    *
-    *
-    */
-  def reset(): Unit = js.native
   /**
     * Incrementally undo actions recorded in the stack. Calling this method will fire the [undo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-undo) event.
     *

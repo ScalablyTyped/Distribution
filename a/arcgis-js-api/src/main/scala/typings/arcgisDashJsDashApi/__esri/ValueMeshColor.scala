@@ -8,11 +8,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ValueMeshColor extends Accessor {
-  /**
-    * For ValueMeshColor the type is always `value`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ValueMeshColor.html#type)
-    */
   val `type`: value = js.native
   /**
     * The color value.

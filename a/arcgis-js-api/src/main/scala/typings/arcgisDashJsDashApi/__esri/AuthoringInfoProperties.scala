@@ -1,16 +1,37 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`class-breaks-color`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`class-breaks-size`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`classed-color`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`classed-size`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`decimal-degrees`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`equal-interval`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`natural-breaks`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`standard-deviation`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`univariate-color-size`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.centimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.decimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.manual
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.millimeters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.quantile
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AuthoringInfoProperties extends js.Object {
   /**
-    * Indicates which classification method was used if a classed color or classed size renderer was generated using one of the Smart Mapping functions.  **Possible Values:** equal-interval | manual | natural-breaks | quantile | standard-deviation
+    * Indicates which classification method was used if a classed color or classed size renderer was generated using one of the Smart Mapping functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#classificationMethod)
     */
-  var classificationMethod: js.UndefOr[String] = js.undefined
+  var classificationMethod: js.UndefOr[`equal-interval` | manual | `natural-breaks` | quantile | `standard-deviation`] = js.undefined
   /**
     * Indicates the color ramp was used to create the symbols for Unique Value or Class Breaks renderer for Imagery Layer.
     *
@@ -42,11 +63,13 @@ trait AuthoringInfoProperties extends js.Object {
     */
   var focus: js.UndefOr[String] = js.undefined
   /**
-    * **Only applicable to renderer used in web scenes.** Indicates the unit used in real-world sizes.  **Possible Values:** inches | feet | yards | miles | nautical-miles | millimeters | centimeters | decimeters | meters | kilometers | decimal-degrees
+    * **Only applicable to renderer used in web scenes.** Indicates the unit used in real-world sizes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#lengthUnit)
     */
-  var lengthUnit: js.UndefOr[String] = js.undefined
+  var lengthUnit: js.UndefOr[
+    inches | feet | yards | miles | `nautical-miles` | millimeters | centimeters | decimeters | meters | kilometers | `decimal-degrees`
+  ] = js.undefined
   /**
     * Indicates the value of the upper handle if a slider was used to generate the dot value for dot density renderer.
     *
@@ -72,11 +95,13 @@ trait AuthoringInfoProperties extends js.Object {
     */
   var standardDeviationInterval: js.UndefOr[Double] = js.undefined
   /**
-    * Indicates the renderer type generated from one of the Smart Mapping functions.  **Possible Values:** class-breaks-size | class-breaks-color | classed-color | classed-size | predominance | relationship | univariate-color-size
+    * Indicates the renderer type generated from one of the Smart Mapping functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#type)
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[
+    `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.predominance | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relationship | `univariate-color-size`
+  ] = js.undefined
   /**
     * Contains authoring properties of visual variables generated from one of the Smart Mapping methods or sliders.
     *
@@ -88,33 +113,33 @@ trait AuthoringInfoProperties extends js.Object {
 object AuthoringInfoProperties {
   @scala.inline
   def apply(
-    classificationMethod: String = null,
+    classificationMethod: `equal-interval` | manual | `natural-breaks` | quantile | `standard-deviation` = null,
     colorRamp: ColorRampProperties = null,
     field1: AuthoringInfoField1 = null,
     field2: AuthoringInfoField2 = null,
     fields: js.Array[String] = null,
     focus: String = null,
-    lengthUnit: String = null,
+    lengthUnit: inches | feet | yards | miles | `nautical-miles` | millimeters | centimeters | decimeters | meters | kilometers | `decimal-degrees` = null,
     maxSliderValue: Int | Double = null,
     minSliderValue: Int | Double = null,
     numClasses: Int | Double = null,
     standardDeviationInterval: Int | Double = null,
-    `type`: String = null,
+    `type`: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.predominance | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relationship | `univariate-color-size` = null,
     visualVariables: js.Array[AuthoringInfoVisualVariableProperties] = null
   ): AuthoringInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
+    if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod.asInstanceOf[js.Any])
     if (colorRamp != null) __obj.updateDynamic("colorRamp")(colorRamp)
     if (field1 != null) __obj.updateDynamic("field1")(field1)
     if (field2 != null) __obj.updateDynamic("field2")(field2)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (focus != null) __obj.updateDynamic("focus")(focus)
-    if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit)
+    if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
     if (maxSliderValue != null) __obj.updateDynamic("maxSliderValue")(maxSliderValue.asInstanceOf[js.Any])
     if (minSliderValue != null) __obj.updateDynamic("minSliderValue")(minSliderValue.asInstanceOf[js.Any])
     if (numClasses != null) __obj.updateDynamic("numClasses")(numClasses.asInstanceOf[js.Any])
     if (standardDeviationInterval != null) __obj.updateDynamic("standardDeviationInterval")(standardDeviationInterval.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)
     __obj.asInstanceOf[AuthoringInfoProperties]
   }

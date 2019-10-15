@@ -39,7 +39,7 @@ trait SignatureCaptureProps extends ViewProps {
     */
   var maxSize: js.UndefOr[Double] = js.undefined
   /**
-    * Triggered when user marks his signature on the canvas.
+    * Triggered when user marks their signature on the canvas.
     * This will not be called when the user does not perform any action on canvas.
     *
     * @param event - the event when a drag is performed

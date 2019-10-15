@@ -19,14 +19,6 @@ trait Slice extends Widget {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#viewModel)
     */
   var viewModel: SliceViewModel = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
 }
 
 @JSGlobal("__esri.Slice")

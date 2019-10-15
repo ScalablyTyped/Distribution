@@ -1,11 +1,5 @@
 package typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadMod
 
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.`private`
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.authenticatedRead
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.bucketOwnerFullControl
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.bucketOwnerRead
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.projectPrivate
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.publicRead
 import typings.googleDashAuthDashLibrary.buildSrcAuthGoogleauthMod.GoogleAuthOptions
 import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.GoogleAuth
 import typings.node.Buffer
@@ -73,11 +67,14 @@ trait UploadConfig extends js.Object {
     */
   var origin: js.UndefOr[String] = js.undefined
   /**
+    * Specify query parameters that go along with the initial upload request. See
+    * https://cloud.google.com/storage/docs/json_api/v1/objects/insert#parameters
+    */
+  var params: js.UndefOr[QueryParameters] = js.undefined
+  /**
     * Apply a predefined set of access controls to the created file.
     */
-  var predefinedAcl: js.UndefOr[
-    authenticatedRead | bucketOwnerFullControl | bucketOwnerRead | `private` | projectPrivate | publicRead
-  ] = js.undefined
+  var predefinedAcl: js.UndefOr[PredefinedAcl] = js.undefined
   /**
     * Make the uploaded file private. (Alias for config.predefinedAcl =
     * 'private')
@@ -115,7 +112,8 @@ object UploadConfig {
     metadata: ConfigMetadata = null,
     offset: Int | Double = null,
     origin: String = null,
-    predefinedAcl: authenticatedRead | bucketOwnerFullControl | bucketOwnerRead | `private` | projectPrivate | publicRead = null,
+    params: QueryParameters = null,
+    predefinedAcl: PredefinedAcl = null,
     `private`: js.UndefOr[Boolean] = js.undefined,
     public: js.UndefOr[Boolean] = js.undefined,
     uri: String = null,
@@ -132,7 +130,8 @@ object UploadConfig {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
     if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
     if (uri != null) __obj.updateDynamic("uri")(uri)

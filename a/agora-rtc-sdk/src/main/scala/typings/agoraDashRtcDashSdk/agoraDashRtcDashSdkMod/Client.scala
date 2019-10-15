@@ -637,7 +637,7 @@ trait Client extends js.Object {
   @JSName("on")
   def on_camerachanged(event: `camera-changed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
-    * This callback notifies the peer user that he/she is banned from the channel. Only the banned users receive this callback.
+    * This callback notifies the peer user that they are banned from the channel. Only the banned users receive this callback.
     * @example **Sample Code**
     * ``` javascript
     * client.on("client-banned", function (evt) {

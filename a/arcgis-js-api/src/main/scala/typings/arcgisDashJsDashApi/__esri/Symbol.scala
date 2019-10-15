@@ -17,7 +17,7 @@ trait Symbol
     */
   var color: Color = js.native
   /**
-    * The symbol type.  **Possible values:** simple-marker | picture-marker | simple-line | cartographic-line-symbol |  simple-fill | picture-fill | text | shield-label-symbol | point-3d | line-3d | polygon-3d | mesh-3d | label-3d
+    * The symbol type.  **Possible values:** simple-marker | picture-marker | simple-line | simple-fill | picture-fill | text | shield-label-symbol | point-3d | line-3d | polygon-3d | mesh-3d | label-3d | cim
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#type)
     */

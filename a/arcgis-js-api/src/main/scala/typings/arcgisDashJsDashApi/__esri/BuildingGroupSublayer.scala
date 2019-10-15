@@ -33,11 +33,6 @@ trait BuildingGroupSublayer extends BuildingSublayer {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html#sublayers)
     */
   val sublayers: Collection[BuildingGroupSublayer | BuildingComponentSublayer] = js.native
-  /**
-    * The type for this sublayer is always `building-group`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html#type)
-    */
   val `type`: `building-group` = js.native
   /**
     * Loads all contained sublayers.

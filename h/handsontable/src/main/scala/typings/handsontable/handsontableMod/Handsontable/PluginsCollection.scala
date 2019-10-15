@@ -3,6 +3,7 @@ package typings.handsontable.handsontableMod.Handsontable
 import typings.handsontable.handsontableMod.Handsontable.plugins.AutoColumnSize
 import typings.handsontable.handsontableMod.Handsontable.plugins.AutoRowSize
 import typings.handsontable.handsontableMod.Handsontable.plugins.Autofill
+import typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin
 import typings.handsontable.handsontableMod.Handsontable.plugins.BindRowsWithHeaders
 import typings.handsontable.handsontableMod.Handsontable.plugins.CollapsibleColumns
 import typings.handsontable.handsontableMod.Handsontable.plugins.ColumnSorting
@@ -43,6 +44,7 @@ trait PluginsCollection extends js.Object {
   var autoColumnSize: AutoColumnSize
   var autoRowSize: AutoRowSize
   var autofill: Autofill
+  var basePlugin: BasePlugin
   var bindRowsWithHeaders: BindRowsWithHeaders
   var collapsibleColumns: CollapsibleColumns
   var columnSorting: ColumnSorting
@@ -82,6 +84,7 @@ object PluginsCollection {
     autoColumnSize: AutoColumnSize,
     autoRowSize: AutoRowSize,
     autofill: Autofill,
+    basePlugin: BasePlugin,
     bindRowsWithHeaders: BindRowsWithHeaders,
     collapsibleColumns: CollapsibleColumns,
     columnSorting: ColumnSorting,
@@ -114,7 +117,7 @@ object PluginsCollection {
     touchScroll: TouchScroll,
     trimRows: TrimRows
   ): PluginsCollection = {
-    val __obj = js.Dynamic.literal(autoColumnSize = autoColumnSize, autoRowSize = autoRowSize, autofill = autofill, bindRowsWithHeaders = bindRowsWithHeaders, collapsibleColumns = collapsibleColumns, columnSorting = columnSorting, columnSummary = columnSummary, comments = comments, contextMenu = contextMenu, copyPaste = copyPaste, dragToScroll = dragToScroll, dropdownMenu = dropdownMenu, exportFile = exportFile, filters = filters, formulas = formulas, ganttChart = ganttChart, headerTooltips = headerTooltips, hiddenColumns = hiddenColumns, hiddenRows = hiddenRows, manualColumnFreeze = manualColumnFreeze, manualColumnMove = manualColumnMove, manualColumnResize = manualColumnResize, manualRowMove = manualRowMove, manualRowResize = manualRowResize, mergeCells = mergeCells, multiColumnSorting = multiColumnSorting, multipleSelectionHandles = multipleSelectionHandles, nestedHeaders = nestedHeaders, nestedRows = nestedRows, observeChanges = observeChanges, persistentState = persistentState, search = search, touchScroll = touchScroll, trimRows = trimRows)
+    val __obj = js.Dynamic.literal(autoColumnSize = autoColumnSize, autoRowSize = autoRowSize, autofill = autofill, basePlugin = basePlugin, bindRowsWithHeaders = bindRowsWithHeaders, collapsibleColumns = collapsibleColumns, columnSorting = columnSorting, columnSummary = columnSummary, comments = comments, contextMenu = contextMenu, copyPaste = copyPaste, dragToScroll = dragToScroll, dropdownMenu = dropdownMenu, exportFile = exportFile, filters = filters, formulas = formulas, ganttChart = ganttChart, headerTooltips = headerTooltips, hiddenColumns = hiddenColumns, hiddenRows = hiddenRows, manualColumnFreeze = manualColumnFreeze, manualColumnMove = manualColumnMove, manualColumnResize = manualColumnResize, manualRowMove = manualRowMove, manualRowResize = manualRowResize, mergeCells = mergeCells, multiColumnSorting = multiColumnSorting, multipleSelectionHandles = multipleSelectionHandles, nestedHeaders = nestedHeaders, nestedRows = nestedRows, observeChanges = observeChanges, persistentState = persistentState, search = search, touchScroll = touchScroll, trimRows = trimRows)
   
     __obj.asInstanceOf[PluginsCollection]
   }

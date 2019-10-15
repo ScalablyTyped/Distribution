@@ -1,7 +1,27 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`double-click`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`immediate-click`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`key-down`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`key-up`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`mouse-wheel`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`pointer-down`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`pointer-enter`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`pointer-leave`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`pointer-move`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`pointer-up`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.blur
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.click
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.drag
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.focus
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hold
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.resize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +44,12 @@ trait View
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#animation)
     */
   var animation: ViewAnimation = js.native
+  /**
+    * Represents the view for a single basemap after it has been added to the map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#basemapView)
+    */
+  var basemapView: BasemapView = js.native
   /**
     * A fatal [error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) returned when the view loses its WebGL context. Watch this property to properly handle the error and attempt to recover the WebGL context.
     *
@@ -141,6 +167,120 @@ trait View
     */
   val updating: Boolean = js.native
   /**
+    * Sets the focus on the view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#focus)
+    *
+    *
+    */
+  def focus(): Unit = js.native
+  /**
+    * Registers an event handler on the instance. Call this method to hook an event with a listener. See the [Events summary table](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#events-summary) for a list of listened events.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#on)
+    *
+    * @param type The name of the event or events to listen for.
+    * @param modifiersOrHandler Additional modifier keys to filter events. Please see [Key Values](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values) for possible values. All the standard key values are supported. Alternatively, if no modifiers are required, the function will call when the event fires.  The following events don't support modifier keys: `blur`, `focus`, `layerview-create`, `layerview-destroy`, `resize`.
+    * @param handler The function to call when the event is fired, if modifiers were specified.
+    *
+    */
+  def on(`type`: String, modifiersOrHandler: js.Array[String]): js.Any = js.native
+  def on(`type`: String, modifiersOrHandler: js.Array[String], handler: js.Function): js.Any = js.native
+  def on(`type`: String, modifiersOrHandler: js.Function): js.Any = js.native
+  def on(`type`: String, modifiersOrHandler: js.Function, handler: js.Function): js.Any = js.native
+  def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String]): js.Any = js.native
+  def on(`type`: js.Array[String], modifiersOrHandler: js.Array[String], handler: js.Function): js.Any = js.native
+  def on(`type`: js.Array[String], modifiersOrHandler: js.Function): js.Any = js.native
+  def on(`type`: js.Array[String], modifiersOrHandler: js.Function, handler: js.Function): js.Any = js.native
+  @JSName("on")
+  def on_blur(name: blur, eventHandler: ViewBlurEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_blur(name: blur, modifiers: js.Array[String], eventHandler: ViewBlurEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_click(name: click, eventHandler: ViewClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_click(name: click, modifiers: js.Array[String], eventHandler: ViewClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_doubleclick(name: `double-click`, eventHandler: ViewDoubleClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_doubleclick(name: `double-click`, modifiers: js.Array[String], eventHandler: ViewDoubleClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_drag(name: drag, eventHandler: ViewDragEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_drag(name: drag, modifiers: js.Array[String], eventHandler: ViewDragEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_focus(name: focus, eventHandler: ViewFocusEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_focus(name: focus, modifiers: js.Array[String], eventHandler: ViewFocusEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_hold(name: hold, eventHandler: ViewHoldEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_hold(name: hold, modifiers: js.Array[String], eventHandler: ViewHoldEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_immediateclick(name: `immediate-click`, eventHandler: ViewImmediateClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_immediateclick(name: `immediate-click`, modifiers: js.Array[String], eventHandler: ViewImmediateClickEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_keydown(name: `key-down`, eventHandler: ViewKeyDownEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_keydown(name: `key-down`, modifiers: js.Array[String], eventHandler: ViewKeyDownEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_keyup(name: `key-up`, eventHandler: ViewKeyUpEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_keyup(name: `key-up`, modifiers: js.Array[String], eventHandler: ViewKeyUpEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreate(name: `layerview-create`, eventHandler: ViewLayerviewCreateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreate(
+    name: `layerview-create`,
+    modifiers: js.Array[String],
+    eventHandler: ViewLayerviewCreateEventHandler
+  ): IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: ViewLayerviewCreateErrorEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(
+    name: `layerview-create-error`,
+    modifiers: js.Array[String],
+    eventHandler: ViewLayerviewCreateErrorEventHandler
+  ): IHandle = js.native
+  @JSName("on")
+  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: ViewLayerviewDestroyEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_layerviewdestroy(
+    name: `layerview-destroy`,
+    modifiers: js.Array[String],
+    eventHandler: ViewLayerviewDestroyEventHandler
+  ): IHandle = js.native
+  @JSName("on")
+  def on_mousewheel(name: `mouse-wheel`, eventHandler: ViewMouseWheelEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_mousewheel(name: `mouse-wheel`, modifiers: js.Array[String], eventHandler: ViewMouseWheelEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointerdown(name: `pointer-down`, eventHandler: ViewPointerDownEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointerdown(name: `pointer-down`, modifiers: js.Array[String], eventHandler: ViewPointerDownEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointerenter(name: `pointer-enter`, eventHandler: ViewPointerEnterEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointerenter(name: `pointer-enter`, modifiers: js.Array[String], eventHandler: ViewPointerEnterEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointerleave(name: `pointer-leave`, eventHandler: ViewPointerLeaveEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointerleave(name: `pointer-leave`, modifiers: js.Array[String], eventHandler: ViewPointerLeaveEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointermove(name: `pointer-move`, eventHandler: ViewPointerMoveEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointermove(name: `pointer-move`, modifiers: js.Array[String], eventHandler: ViewPointerMoveEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointerup(name: `pointer-up`, eventHandler: ViewPointerUpEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_pointerup(name: `pointer-up`, modifiers: js.Array[String], eventHandler: ViewPointerUpEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_resize(name: resize, eventHandler: ViewResizeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_resize(name: resize, modifiers: js.Array[String], eventHandler: ViewResizeEventHandler): IHandle = js.native
+  /**
     * Call this method to clear any [fatal errors](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#fatalError) resulting from a lost WebGL context.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#tryFatalErrorRecovery)
@@ -220,6 +360,15 @@ trait View
     *
     */
   def whenLayerView(layer: Layer): IPromise[LayerView] = js.native
+  /**
+    * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#whenLayerView)
+    *
+    * @param layer
+    *
+    */
+  def whenLayerView(layer: PointCloudLayer): IPromise[PointCloudLayerView] = js.native
   /**
     * Gets the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) created on the view for the given layer. The returned promise resolves when the layer view for the given layer has been created, or rejects with an error (for example if the layer is not part of the view, or if the layer type is not supported in this view).
     *

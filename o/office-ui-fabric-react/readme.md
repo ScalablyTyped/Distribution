@@ -1,7 +1,7 @@
 
 # Scala.js typings for office-ui-fabric-react
 
-Typings are for version 7.48.1
+Typings are for version 7.50.0
 
 ## Library description:
 Reusable React components for building experiences for Office 365.

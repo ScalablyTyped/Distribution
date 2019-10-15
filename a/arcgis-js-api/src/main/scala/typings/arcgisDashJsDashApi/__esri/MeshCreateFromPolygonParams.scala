@@ -12,7 +12,7 @@ trait MeshCreateFromPolygonParams extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromPolygon)
     */
-  var material: js.UndefOr[MeshCreateFromPolygonParamsMaterial] = js.undefined
+  var material: js.UndefOr[MeshMaterial] = js.undefined
 }
 
 object MeshCreateFromPolygonParams {
@@ -21,7 +21,7 @@ object MeshCreateFromPolygonParams {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    material: MeshCreateFromPolygonParamsMaterial = null
+    material: MeshMaterial = null
   ): MeshCreateFromPolygonParams = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (material != null) __obj.updateDynamic("material")(material)

@@ -1,5 +1,6 @@
 package typings.webpackDashManifestDashPlugin.webpackDashManifestDashPluginMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +23,12 @@ trait Options extends js.Object {
     * Create the manifest. It can return anything as long as it's serialisable by JSON.stringify.
     */
   var generate: js.UndefOr[
-    js.Function2[/* seed */ js.Object, /* files */ js.Array[FileDescriptor], js.Object]
+    js.Function3[
+      /* seed */ js.Object, 
+      /* files */ js.Array[FileDescriptor], 
+      /* entrypoints */ StringDictionary[js.Array[String]], 
+      js.Object
+    ]
   ] = js.undefined
   /**
     * Modify files details before the manifest is created.
@@ -61,7 +67,7 @@ object Options {
     basePath: String = null,
     fileName: String = null,
     filter: /* file */ FileDescriptor => Boolean = null,
-    generate: (/* seed */ js.Object, /* files */ js.Array[FileDescriptor]) => js.Object = null,
+    generate: (/* seed */ js.Object, /* files */ js.Array[FileDescriptor], /* entrypoints */ StringDictionary[js.Array[String]]) => js.Object = null,
     map: /* file */ FileDescriptor => FileDescriptor = null,
     publicPath: String = null,
     seed: js.Object = null,
@@ -73,7 +79,7 @@ object Options {
     if (basePath != null) __obj.updateDynamic("basePath")(basePath)
     if (fileName != null) __obj.updateDynamic("fileName")(fileName)
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (generate != null) __obj.updateDynamic("generate")(js.Any.fromFunction2(generate))
+    if (generate != null) __obj.updateDynamic("generate")(js.Any.fromFunction3(generate))
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
     if (seed != null) __obj.updateDynamic("seed")(seed)

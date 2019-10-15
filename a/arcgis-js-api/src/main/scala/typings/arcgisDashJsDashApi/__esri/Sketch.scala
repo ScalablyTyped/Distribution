@@ -1,7 +1,26 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.active
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.circle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.create
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.delete
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.move
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polygon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.rectangle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.redo
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.reshape
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.transform
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.undo
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.update
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +28,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Sketch extends Widget {
   /**
-    * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) has been called), this property reflects the create tool being used. When updating graphics (for example after [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) has been called), this property reflects the update tool being used. If no create or update operation is in progress, this is `null`.  **Possible Values:** point | polyline | polygon | circle | rectangle | move | transform | reshape
+    * When creating new graphics (for example after [create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) has been called), this property reflects the create tool being used. When updating graphics (for example after [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) has been called), this property reflects the update tool being used. If no create or update operation is in progress, this is `null`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#activeTool)
     */
-  val activeTool: String = js.native
+  val activeTool: point | polyline | polygon | circle | rectangle | move | transform | reshape = js.native
   /**
     * Property controlling the visibility and order of create tool buttons.
     *
@@ -33,7 +52,7 @@ trait Sketch extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
     */
-  val defaultUpdateOptions: SketchDefaultUpdateOptions = js.native
+  var defaultUpdateOptions: SketchDefaultUpdateOptions = js.native
   /**
     * The Sketch widget's default CSS icon class.
     *
@@ -47,19 +66,19 @@ trait Sketch extends Widget {
     */
   var layer: GraphicsLayer = js.native
   /**
-    * Determines the layout/orientation of the Sketch widget.  **Possible Values:** vertical | horizontal
+    * Determines the layout/orientation of the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layout)
     *
     * @default horizontal
     */
-  var layout: String = js.native
+  var layout: vertical | horizontal = js.native
   /**
-    * The Sketch widget's state.  **Possible Values:** ready | disabled | active
+    * The Sketch widget's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#state)
     */
-  val state: String = js.native
+  val state: ready | disabled | active = js.native
   /**
     * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) that are being updated by the Sketch widget.
     *
@@ -113,6 +132,16 @@ trait Sketch extends Widget {
     */
   def create(tool: String): Unit = js.native
   def create(tool: String, createOptions: SketchCreateCreateOptions): Unit = js.native
+  @JSName("on")
+  def on_create(name: create, eventHandler: SketchCreateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_delete(name: delete, eventHandler: SketchDeleteEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_redo(name: redo, eventHandler: SketchRedoEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_undo(name: undo, eventHandler: SketchUndoEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_update(name: update, eventHandler: SketchUpdateEventHandler): IHandle = js.native
   /**
     * Incrementally redo actions recorded in the stack. Calling this method will fire the [redo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-redo) event.
     *
@@ -121,22 +150,6 @@ trait Sketch extends Widget {
     *
     */
   def redo(): Unit = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
-  /**
-    * Resets the Sketch widget to prepare for another create operation. Reset discards the current sketch, if called in middle of create operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#reset)
-    *
-    *
-    */
-  def reset(): Unit = js.native
   /**
     * Incrementally undo actions recorded in the stack. Calling this method will fire the [undo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#event-undo) event.
     *

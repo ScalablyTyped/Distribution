@@ -1,6 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.fields
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,15 @@ trait FieldsContent
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#fieldInfos)
     */
   var fieldInfos: js.Array[FieldInfo] = js.native
+  /**
+    * The type of popup element displayed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#type)
+    *
+    * @default fields
+    */
+  @JSName("type")
+  val type_FieldsContent: fields = js.native
 }
 
 @JSGlobal("__esri.FieldsContent")

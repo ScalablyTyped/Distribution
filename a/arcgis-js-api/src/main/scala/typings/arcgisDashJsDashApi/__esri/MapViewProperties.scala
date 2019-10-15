@@ -1,5 +1,19 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bottom-left`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bottom-right`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`top-left`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`top-right`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bottom
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.center
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.large
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.left
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.medium
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.right
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.small
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.top
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xlarge
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xsmall
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,13 +49,15 @@ trait MapViewProperties
     */
   var highlightOptions: js.UndefOr[MapViewHighlightOptionsProperties] = js.undefined
   /**
-    * Defines which anchor stays still while resizing the browser window. The default, `center`, ensures the view's center point remains constantly visible as the window size changes. The other options allow  the respective portion of the view to remain visible when the window's size is changed.  **Possible values:** center | left | right | top | bottom | top-left | top-right | bottom-left | bottom-right
+    * Defines which anchor stays still while resizing the browser window. The default, `center`, ensures the view's center point remains constantly visible as the window size changes. The other options allow  the respective portion of the view to remain visible when the window's size is changed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#resizeAlign)
     *
     * @default center
     */
-  var resizeAlign: js.UndefOr[String] = js.undefined
+  var resizeAlign: js.UndefOr[
+    center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right`
+  ] = js.undefined
   /**
     * The clockwise rotation of due north in relation to the top of the view in degrees. The view may be rotated by directly setting the rotation or by using the following mouse event: `Right-click + Drag`. Map rotation may be disabled by setting the `rotationEnabled` property in [constraints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints) to `false`. See the code snippet below for an example of this.
     *
@@ -75,6 +91,7 @@ object MapViewProperties {
   def apply(
     allLayerViews: CollectionProperties[LayerViewProperties] = null,
     animation: ViewAnimationProperties = null,
+    basemapView: BasemapViewProperties = null,
     breakpoints: BreakpointsOwnerBreakpoints = null,
     center: PointProperties | js.Array[Double] = null,
     constraints: MapViewConstraints = null,
@@ -82,25 +99,26 @@ object MapViewProperties {
     extent: ExtentProperties = null,
     fatalError: Error = null,
     graphics: CollectionProperties[GraphicProperties] = null,
-    heightBreakpoint: String = null,
+    heightBreakpoint: xsmall | small | medium | large | xlarge = null,
     highlightOptions: MapViewHighlightOptionsProperties = null,
     layerViews: CollectionProperties[LayerViewProperties] = null,
     map: MapProperties = null,
     padding: ViewPadding = null,
     popup: PopupProperties = null,
-    resizeAlign: String = null,
+    resizeAlign: center | left | right | top | bottom | `top-left` | `top-right` | `bottom-left` | `bottom-right` = null,
     rotation: Int | Double = null,
     scale: Int | Double = null,
     spatialReference: SpatialReferenceProperties = null,
     timeExtent: TimeExtentProperties = null,
     ui: DefaultUIProperties = null,
     viewpoint: ViewpointProperties = null,
-    widthBreakpoint: String = null,
+    widthBreakpoint: xsmall | small | medium | large | xlarge = null,
     zoom: Int | Double = null
   ): MapViewProperties = {
     val __obj = js.Dynamic.literal()
     if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (basemapView != null) __obj.updateDynamic("basemapView")(basemapView)
     if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (constraints != null) __obj.updateDynamic("constraints")(constraints)
@@ -108,20 +126,20 @@ object MapViewProperties {
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError)
     if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
-    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
+    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint.asInstanceOf[js.Any])
     if (highlightOptions != null) __obj.updateDynamic("highlightOptions")(highlightOptions)
     if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map)
     if (padding != null) __obj.updateDynamic("padding")(padding)
     if (popup != null) __obj.updateDynamic("popup")(popup)
-    if (resizeAlign != null) __obj.updateDynamic("resizeAlign")(resizeAlign)
+    if (resizeAlign != null) __obj.updateDynamic("resizeAlign")(resizeAlign.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
     if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
     if (ui != null) __obj.updateDynamic("ui")(ui)
     if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
-    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint)
+    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapViewProperties]
   }

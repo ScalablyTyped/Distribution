@@ -28,7 +28,6 @@ trait meshUtils extends js.Object {
     * @param source The source from which to query the elevation data.
     * @param extent The extent from which to create the mesh.
     * @param options Additional options.
-    * @param options.material The material.
     * @param options.demResolution Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`). See [ElevationLayer.queryElevation](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation) for more details on the different settings.
     *
     */

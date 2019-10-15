@@ -2,6 +2,8 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mesh
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,11 +34,11 @@ trait SceneLayerProperties
     */
   var featureReduction: js.UndefOr[SceneLayerFeatureReduction] = js.undefined
   /**
-    * The geometry type of features in the layer.  **Possible Values:** point | mesh
+    * The geometry type of features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#geometryType)
     */
-  var geometryType: js.UndefOr[String] = js.undefined
+  var geometryType: js.UndefOr[point | mesh] = js.undefined
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.
     * > **Known Limitations**  This property is only relevant to SceneLayers with [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries. This property has no effect on SceneLayers with other geometry types.  Each point can have only one label. Multiple [Label classes](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) with different [where](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where) clauses can be used to have different label styles on different features that belong to the same layer (for example blue labels for lakes and green labels for parks).
@@ -113,7 +115,7 @@ object SceneLayerProperties {
     elevationInfo: SceneLayerElevationInfo = null,
     featureReduction: SceneLayerFeatureReduction = null,
     fullExtent: ExtentProperties = null,
-    geometryType: String = null,
+    geometryType: point | mesh = null,
     id: String = null,
     labelingInfo: js.Array[LabelClassProperties] = null,
     labelsVisible: js.UndefOr[Boolean] = js.undefined,
@@ -141,7 +143,7 @@ object SceneLayerProperties {
     if (elevationInfo != null) __obj.updateDynamic("elevationInfo")(elevationInfo)
     if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction)
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo)
     if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)

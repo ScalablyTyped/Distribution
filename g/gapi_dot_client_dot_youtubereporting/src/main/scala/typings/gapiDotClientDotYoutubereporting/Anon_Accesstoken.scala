@@ -26,7 +26,7 @@ trait Anon_Accesstoken extends js.Object {
   var oauth_token: js.UndefOr[String] = js.undefined
   /**
     * The content owner's external ID on which behalf the user is acting on. If
-    * not set, the user is acting for himself (his own channel).
+    * not set, the user is acting for themselves (their own channel).
     */
   var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   /** Pretty-print response. */

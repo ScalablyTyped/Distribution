@@ -1,5 +1,19 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dib
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.emf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.lerc
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mixed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.pdf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png24
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ps
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svgz
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tiff
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,11 +26,13 @@ trait TileInfoProperties extends js.Object {
     */
   var dpi: js.UndefOr[Double] = js.undefined
   /**
-    * Image format of the cached tiles.  **Possible Values:** png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc
+    * Image format of the cached tiles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#format)
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[
+    png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc
+  ] = js.undefined
   /**
     * Indicates if the tiling scheme supports wrap around.
     *
@@ -53,7 +69,7 @@ object TileInfoProperties {
   @scala.inline
   def apply(
     dpi: Int | Double = null,
-    format: String = null,
+    format: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc = null,
     isWrappable: js.UndefOr[Boolean] = js.undefined,
     lods: js.Array[LODProperties] = null,
     origin: PointProperties = null,
@@ -62,7 +78,7 @@ object TileInfoProperties {
   ): TileInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(isWrappable)) __obj.updateDynamic("isWrappable")(isWrappable)
     if (lods != null) __obj.updateDynamic("lods")(lods)
     if (origin != null) __obj.updateDynamic("origin")(origin)

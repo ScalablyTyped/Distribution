@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "socket_dot_io_dot_users"
-version := "0.0-unknown-dt-20190819Z-b2fc76"
+version := "0.0-unknown-dt-20191014Z-2cfafa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-e438a4",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-e44937",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-a3652a",
-  "org.scalablytyped" %%% "express-session" % "1.15-dt-20190819Z-279acd",
+  "org.scalablytyped" %%% "express-session" % "1.15-dt-20191014Z-c51fdb",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",

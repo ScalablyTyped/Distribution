@@ -10,12 +10,7 @@ trait ShallowRenderer extends js.Object {
   /**
     * After `shallowRenderer.render()` has been called, returns shallowly rendered output.
     */
-  def getRenderOutput(): ReactElement = js.native
-  /**
-    * After `shallowRenderer.render()` has been called, returns shallowly rendered output.
-    */
-  @JSName("getRenderOutput")
-  def getRenderOutput_E_ReactElement_E[E /* <: ReactElement */](): E = js.native
+  def getRenderOutput[E /* <: ReactElement */](): E = js.native
   /**
     * Similar to `ReactDOM.render` but it doesn't require DOM and only renders a single level deep.
     */

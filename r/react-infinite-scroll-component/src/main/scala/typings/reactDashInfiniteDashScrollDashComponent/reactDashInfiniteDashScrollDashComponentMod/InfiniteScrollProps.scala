@@ -19,7 +19,7 @@ trait InfiniteScrollProps extends js.Object {
     */
   var dataLength: Double
   /**
-    * This message is shown to the user when he has seen all the records which means he's at the bottom and hasMore is false
+    * This message is shown to the user when they have seen all the records, which means they are at the bottom and hasMore is false
     */
   var endMessage: js.UndefOr[ReactNode] = js.undefined
   /**

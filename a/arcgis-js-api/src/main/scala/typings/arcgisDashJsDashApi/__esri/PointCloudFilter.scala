@@ -19,7 +19,7 @@ trait PointCloudFilter
     */
   var field: String = js.native
   /**
-    * The type of filter.  **Possible values**: value | bitfield | return
+    * The type of filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudFilter.html#type)
     */

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "anydb-sql-migrations"
-version := "2.4.1-cc28ca"
+version := "2.4.1-3d6d10"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "anydb-sql" % "0.7.1-9cf912",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-347560",
+  "org.scalablytyped" %%% "anydb-sql" % "0.7.1-e67605",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191014Z-347560",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

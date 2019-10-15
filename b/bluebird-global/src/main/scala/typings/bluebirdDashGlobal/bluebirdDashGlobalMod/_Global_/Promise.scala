@@ -12,7 +12,6 @@ import typings.bluebird.bluebirdMod.Resolvable
 import typings.bluebird.bluebirdMod.ResolvableProps
 import typings.bluebird.bluebirdMod.SpreadOption
 import typings.bluebird.bluebirdMod.^
-import typings.bluebirdDashGlobal.Fn_Any
 import typings.bluebirdDashGlobal.Fn_Callback
 import typings.bluebirdDashGlobal.Fn_Error
 import typings.bluebirdDashGlobal.Fn_ErrorFilter1
@@ -95,7 +94,7 @@ trait Promise[T] extends js.Object {
   @JSName("reason")
   var reason_Original: js.Function0[_] = js.native
   @JSName("reflect")
-  var reflect_Original: Fn_Any[T] = js.native
+  var reflect_Original: js.Function0[Bluebird[Inspection[T]]] = js.native
   @JSName("return")
   var return_Original: Fn_Value = js.native
   @JSName("suppressUnhandledRejections")

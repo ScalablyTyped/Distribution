@@ -37,14 +37,6 @@ trait BasemapGallery extends Widget {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#viewModel)
     */
   var viewModel: BasemapGalleryViewModel = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
 }
 
 @JSGlobal("__esri.BasemapGallery")

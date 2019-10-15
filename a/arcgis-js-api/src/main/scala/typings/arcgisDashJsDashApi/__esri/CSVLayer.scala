@@ -1,11 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.csv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,6 +46,12 @@ trait CSVLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#delimiter)
     */
   var delimiter: String = js.native
+  /**
+    * The name of the layer's primary display field. The value of this property matches the name of one of the fields of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#displayField)
+    */
+  var displayField: String = js.native
   /**
     * Specifies how graphics are placed on the vertical axis (z). This property may only be used in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). See the [ElevationInfo sample](https://developers.arcgis.com/javascript/latest/sample-code/scene-elevationinfo/index.html) for an example of how this property may be used.
     *
@@ -152,6 +155,8 @@ trait CSVLayer
     * @default SpatialReference.WGS84
     */
   var spatialReference: SpatialReference = js.native
+  @JSName("type")
+  val type_CSVLayer: csv = js.native
   /**
     * The URL of the CSV file.
     *
@@ -178,12 +183,27 @@ trait CSVLayer
     *
     */
   def createQuery(): Query = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: CSVLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: CSVLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: CSVLayerLayerviewDestroyEventHandler): IHandle = js.native
+  /**
+    * Returns the [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) instance for a field name (case-insensitive).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#getField)
+    *
+    * @param fieldName Name of the field.
+    *
+    */
+  def getField(fieldName: String): Field = js.native
+  /**
+    * Returns the [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) associated with the given field name. The domain can be either a [CodedValueDomain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html) or [RangeDomain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#getFieldDomain)
+    *
+    * @param fieldName Name of the field.
+    * @param options An object specifying additional options. See the object specification table below for the required properties of this object.
+    * @param options.feature The feature to which the [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) is assigned.
+    *
+    */
+  def getFieldDomain(fieldName: String): Domain = js.native
+  def getFieldDomain(fieldName: String, options: CSVLayerGetFieldDomainOptions): Domain = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the CSV data and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query. If no parameters are specified, then the extent and count of all features satisfying the layer's configuration/filters are returned.
     * > **Known Limitations**

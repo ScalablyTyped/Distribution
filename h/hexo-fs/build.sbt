@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "hexo-fs"
-version := "0.2-dt-20190524Z-40e541"
+version := "0.2-dt-20190524Z-c8b554"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-347560",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191014Z-347560",
   "org.scalablytyped" %%% "chokidar" % "3.2.1-86328b",
   "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20190212Z-8a9b70",
   "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",

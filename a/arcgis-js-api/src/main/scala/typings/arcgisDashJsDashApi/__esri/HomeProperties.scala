@@ -42,7 +42,7 @@ object HomeProperties {
   def apply(
     container: String | HTMLElement = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     iconClass: String = null,
     id: String = null,
     label: String = null,

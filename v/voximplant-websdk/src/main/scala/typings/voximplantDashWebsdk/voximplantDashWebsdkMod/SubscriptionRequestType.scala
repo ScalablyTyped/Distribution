@@ -11,13 +11,13 @@ sealed trait SubscriptionRequestType extends js.Object
 @js.native
 object SubscriptionRequestType extends js.Object {
   /**
-  		*	User is asking for permission to add you into his roster
+  		*	User is asking for permission to add you into their roster
   		*/
   @js.native
   sealed trait Subscribe extends SubscriptionRequestType
   
   /**
-  		*	User removed you from his roster
+  		*	User removed you from their roster
   		*/
   @js.native
   sealed trait Unsubscribe extends SubscriptionRequestType

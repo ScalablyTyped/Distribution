@@ -73,7 +73,7 @@ object TrackProperties {
     destroyed: js.UndefOr[Boolean] = js.undefined,
     geolocationOptions: js.Any = null,
     goToLocationEnabled: js.UndefOr[Boolean] = js.undefined,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     graphic: GraphicProperties = null,
     iconClass: String = null,
     id: String = null,

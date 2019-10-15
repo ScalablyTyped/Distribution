@@ -1,11 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`building-scene`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,6 +43,8 @@ trait BuildingSceneLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#sublayers)
     */
   val sublayers: Collection[BuildingGroupSublayer | BuildingComponentSublayer] = js.native
+  @JSName("type")
+  val type_BuildingSceneLayer: `building-scene` = js.native
   /**
     * Loads the layer and all of its sublayers.
     *
@@ -54,12 +53,6 @@ trait BuildingSceneLayer
     *
     */
   def loadAll(): IPromise[BuildingSceneLayer] = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: BuildingSceneLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: BuildingSceneLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: BuildingSceneLayerLayerviewDestroyEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.BuildingSceneLayer")

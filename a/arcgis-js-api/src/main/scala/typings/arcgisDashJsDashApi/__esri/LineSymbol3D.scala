@@ -14,7 +14,7 @@ trait LineSymbol3D
      with typings.arcgisDashJsDashApi.__esri.symbols.Symbol3D
      with symbolsSymbol3D {
   /**
-    * For LineSymbol3D the type is always `line-3d`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html#type)
     */

@@ -1,5 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`rich-text`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`text-area`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`text-box`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`var`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.avg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.count
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.stddev
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.sum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,19 +42,19 @@ trait FieldInfoProperties extends js.Object {
     */
   var label: js.UndefOr[String] = js.undefined
   /**
-    * Used in a `one:many` or `many:many` relationship to compute the statistics on the field to show in the popup. If the property is present, must be one of the following values:  **Possible Values:** count | sum | min | max | avg | stddev | var
+    * Used in a `one:many` or `many:many` relationship to compute the statistics on the field to show in the popup. If the property is present, must be one of the following values:
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#statisticType)
     */
-  var statisticType: js.UndefOr[String] = js.undefined
+  var statisticType: js.UndefOr[count | sum | min | max | avg | stddev | `var`] = js.undefined
   /**
-    * A string determining what type of input box editors see when editing the field. Applies only to string fields. This is not applicable to Arcade expressions. If this property is present, it must be one of the following values:  **Possible Values:** rich-text | text-area | text-box
+    * A string determining what type of input box editors see when editing the field. Applies only to string fields. This is not applicable to Arcade expressions. If this property is present, it must be one of the following values:
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#stringFieldOption)
     *
     * @default text-box
     */
-  var stringFieldOption: js.UndefOr[String] = js.undefined
+  var stringFieldOption: js.UndefOr[`rich-text` | `text-area` | `text-box`] = js.undefined
   /**
     * A string providing an editing hint for editors of the field. This is not applicable to Arcade expressions.
     *
@@ -68,8 +78,8 @@ object FieldInfoProperties {
     format: FieldInfoFormatProperties = null,
     isEditable: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    statisticType: String = null,
-    stringFieldOption: String = null,
+    statisticType: count | sum | min | max | avg | stddev | `var` = null,
+    stringFieldOption: `rich-text` | `text-area` | `text-box` = null,
     tooltip: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): FieldInfoProperties = {
@@ -78,8 +88,8 @@ object FieldInfoProperties {
     if (format != null) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(isEditable)) __obj.updateDynamic("isEditable")(isEditable)
     if (label != null) __obj.updateDynamic("label")(label)
-    if (statisticType != null) __obj.updateDynamic("statisticType")(statisticType)
-    if (stringFieldOption != null) __obj.updateDynamic("stringFieldOption")(stringFieldOption)
+    if (statisticType != null) __obj.updateDynamic("statisticType")(statisticType.asInstanceOf[js.Any])
+    if (stringFieldOption != null) __obj.updateDynamic("stringFieldOption")(stringFieldOption.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     __obj.asInstanceOf[FieldInfoProperties]

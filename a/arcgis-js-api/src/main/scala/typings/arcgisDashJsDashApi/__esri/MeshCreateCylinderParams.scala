@@ -24,7 +24,7 @@ trait MeshCreateCylinderParams extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
     */
-  var material: js.UndefOr[MeshCreateCylinderParamsMaterial] = js.undefined
+  var material: js.UndefOr[MeshMaterial] = js.undefined
   /**
     * A uniform size value or an object containing individual values width, height and depth. The unit of the size values is derived from the spatial reference of the provided location, unless a specific unit is specified.
     *
@@ -47,7 +47,7 @@ object MeshCreateCylinderParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     densificationFactor: Int | Double = null,
     geographic: js.UndefOr[Boolean] = js.undefined,
-    material: MeshCreateCylinderParamsMaterial = null,
+    material: MeshMaterial = null,
     size: Double | MeshCreateCylinderParamsSize = null,
     unit: String = null
   ): MeshCreateCylinderParams = {

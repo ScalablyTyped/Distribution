@@ -1,6 +1,17 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-cancelled`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-cancelling`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-deleted`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-deleting`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-executing`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-failed`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-new`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-submitted`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-succeeded`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-timed-out`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`job-waiting`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +27,11 @@ trait JobInfo
     */
   var jobId: String = js.native
   /**
-    * The job status.  **Possible Values:** job-cancelled | job-cancelling | job-deleted | job-deleting | job-timed-out | job-executing | job-failed | job-new | job-submitted | job-succeeded | job-waiting
+    * The job status.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-JobInfo.html#jobStatus)
     */
-  var jobStatus: String = js.native
+  var jobStatus: `job-cancelled` | `job-cancelling` | `job-deleted` | `job-deleting` | `job-timed-out` | `job-executing` | `job-failed` | `job-new` | `job-submitted` | `job-succeeded` | `job-waiting` = js.native
   /**
     * An array of messages that include the message type and a description.
     *

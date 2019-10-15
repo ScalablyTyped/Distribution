@@ -37,7 +37,7 @@ trait AlgorithmicColorRamp extends ColorRamp {
     */
   var toColor: Color = js.native
   /**
-    * A string value representing the color ramp type. This value is always `algorithmic`.
+    * A string value representing the color ramp type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AlgorithmicColorRamp.html#type)
     *

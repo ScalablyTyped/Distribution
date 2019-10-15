@@ -14,7 +14,7 @@ class Table[T] protected () extends js.Object {
   var _criteriaDivider: CriteriaDivider[T] = js.native
   var _deleteQuery: DeleteQuery[T] = js.native
   /** Private keywords here are useless but I put them.
-    * If the developer wants to see the properties of the Table class, he/she just comes here.
+    * If the developer wants to see the properties of the Table class, they just come here.
     */
   var _name: String = js.native
   var _primaryKey: String = js.native

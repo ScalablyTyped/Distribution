@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-actions
 
-Typings are for version 5.2.3
+Typings are for version 5.2.4
 
 ## Library description:
 Action Logger addon for storybook

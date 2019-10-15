@@ -1,6 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,15 @@ trait TextContent
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#text)
     */
   var text: String = js.native
+  /**
+    * The type of popup element displayed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#type)
+    *
+    * @default text
+    */
+  @JSName("type")
+  val type_TextContent: text = js.native
 }
 
 @JSGlobal("__esri.TextContent")

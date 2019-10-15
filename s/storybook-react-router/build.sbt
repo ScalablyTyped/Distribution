@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook-react-router"
-version := "1.0-dt-20190524Z-3d82cf"
+version := "1.0-dt-20190524Z-c2c1d8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-2fbebe",
   "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-965e98",
-  "org.scalablytyped" %%% "react-router" % "5.1-dt-20190930Z-bac3bf",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191014Z-d5b0ca",
+  "org.scalablytyped" %%% "react-router" % "5.1-dt-20191014Z-5f36aa",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-b0944b")
+  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190605Z-4d05a2")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

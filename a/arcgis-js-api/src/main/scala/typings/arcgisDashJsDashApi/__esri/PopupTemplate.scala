@@ -88,7 +88,7 @@ trait PopupTemplate
     */
   var relatedRecordsInfo: RelatedRecordsInfo = js.native
   /**
-    * The template for defining how to format the title used in a popup. You can format the title by specifying either a string value or a function that returns a simple string.
+    * The template for defining how to format the title used in a popup. You can format the title by specifying either a string value or a JavaScript function that returns a simple string.  If using a function, the defined content returns a string value. When the feature is clicked, the feature is passed as an argument to the function and provides access to the feature's graphic and attributes. The function then executes and returns a value to display in the popup template's title.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#title)
     */

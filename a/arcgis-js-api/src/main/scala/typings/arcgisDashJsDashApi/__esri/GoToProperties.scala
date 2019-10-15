@@ -15,7 +15,7 @@ trait GoToProperties extends js.Object {
 
 object GoToProperties {
   @scala.inline
-  def apply(goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null): GoToProperties = {
+  def apply(goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null): GoToProperties = {
     val __obj = js.Dynamic.literal()
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
     __obj.asInstanceOf[GoToProperties]

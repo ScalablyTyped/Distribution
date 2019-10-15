@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FindTask extends Task {
   /**
-    * The geodatabase version.
+    * Specify the geodatabase version to search. Requires ArcGIS Server service 10.1 or greater.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-FindTask.html#gdbVersion)
     */
@@ -24,6 +24,8 @@ trait FindTask extends Task {
     *
     */
   def execute(params: FindParameters): IPromise[_] = js.native
+  def execute(params: FindParametersProperties): IPromise[_] = js.native
+  def execute(params: FindParametersProperties, requestOptions: js.Any): IPromise[_] = js.native
   def execute(params: FindParameters, requestOptions: js.Any): IPromise[_] = js.native
 }
 

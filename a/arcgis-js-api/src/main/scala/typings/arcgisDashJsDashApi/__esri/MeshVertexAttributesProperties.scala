@@ -30,6 +30,12 @@ trait MeshVertexAttributesProperties extends Object {
     */
   var position: js.UndefOr[Float64Array | js.Array[Double] | Float32Array] = js.undefined
   /**
+    * **Since: 4.11**    A flat array of the vertex tangents (4 elements per vertex ranging from -1 to 1. The 4th element is a sign value (-1 or +1) indicating handedness of the tangent basis). Vertex tangents are used for normal mapping, see [MeshMaterial.normalTexture](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#normalTexture).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
+    */
+  var tangent: js.UndefOr[Float32Array | js.Array[Double] | Float64Array] = js.undefined
+  /**
     * A flat array of vertex uv coordinates (2 elements per vertex).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
@@ -46,12 +52,14 @@ object MeshVertexAttributesProperties {
     color: Uint8Array | js.Array[Double] | Uint8ClampedArray = null,
     normal: Float32Array | js.Array[Double] | Float64Array = null,
     position: Float64Array | js.Array[Double] | Float32Array = null,
+    tangent: Float32Array | js.Array[Double] | Float64Array = null,
     uv: Float32Array | js.Array[Double] | Float64Array = null
   ): MeshVertexAttributesProperties = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (tangent != null) __obj.updateDynamic("tangent")(tangent.asInstanceOf[js.Any])
     if (uv != null) __obj.updateDynamic("uv")(uv.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshVertexAttributesProperties]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait FindTaskProperties extends TaskProperties {
   /**
-    * The geodatabase version.
+    * Specify the geodatabase version to search. Requires ArcGIS Server service 10.1 or greater.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-FindTask.html#gdbVersion)
     */

@@ -2,7 +2,6 @@ package typings.atIonicCliDashFramework
 
 import typings.atIonicCliDashFramework.definitionsMod.MetadataGroup
 import typings.atIonicCliDashFramework.libLoggerMod.LoggerLevel
-import typings.atIonicCliDashFramework.libPromptsMod.PromptTypeOther
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,13 +53,7 @@ object atIonicCliDashFrameworkStrings {
   sealed trait beta extends MetadataGroup
   
   @js.native
-  sealed trait checkbox extends js.Object
-  
-  @js.native
   sealed trait clear extends js.Object
-  
-  @js.native
-  sealed trait confirm extends js.Object
   
   @js.native
   sealed trait deprecated extends MetadataGroup
@@ -81,16 +74,10 @@ object atIonicCliDashFrameworkStrings {
   sealed trait hidden extends MetadataGroup
   
   @js.native
-  sealed trait input extends PromptTypeOther
-  
-  @js.native
   sealed trait json extends js.Object
   
   @js.native
   sealed trait link extends js.Object
-  
-  @js.native
-  sealed trait list extends PromptTypeOther
   
   @js.native
   sealed trait next extends js.Object
@@ -100,9 +87,6 @@ object atIonicCliDashFrameworkStrings {
   
   @js.native
   sealed trait paid extends MetadataGroup
-  
-  @js.native
-  sealed trait password extends PromptTypeOther
   
   @js.native
   sealed trait `rpc-request` extends js.Object
@@ -153,11 +137,7 @@ object atIonicCliDashFrameworkStrings {
   @scala.inline
   def beta: beta = "beta".asInstanceOf[beta]
   @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def confirm: confirm = "confirm".asInstanceOf[confirm]
   @scala.inline
   def deprecated: deprecated = "deprecated".asInstanceOf[deprecated]
   @scala.inline
@@ -171,21 +151,15 @@ object atIonicCliDashFrameworkStrings {
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
   @scala.inline
   def next: next = "next".asInstanceOf[next]
   @scala.inline
   def `operation-rpc`: `operation-rpc` = "operation-rpc".asInstanceOf[`operation-rpc`]
   @scala.inline
   def paid: paid = "paid".asInstanceOf[paid]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
   @scala.inline
   def `rpc-request`: `rpc-request` = "rpc-request".asInstanceOf[`rpc-request`]
   @scala.inline

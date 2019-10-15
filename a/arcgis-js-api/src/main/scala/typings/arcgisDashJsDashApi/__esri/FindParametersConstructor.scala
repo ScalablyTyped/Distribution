@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FindParametersConstructor
   extends Instantiable0[FindParameters]
-     with Instantiable1[/* properties */ FindParametersProperties, FindParameters]
+     with Instantiable1[/* properties */ FindParametersProperties, FindParameters] {
+  def fromJSON(json: js.Any): FindParameters = js.native
+}
 

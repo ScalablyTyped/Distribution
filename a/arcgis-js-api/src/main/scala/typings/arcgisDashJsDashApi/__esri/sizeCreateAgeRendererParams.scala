@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait sizeCreateAgeRendererParams extends Object {
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
+    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization. Determines optimal colors for the output renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createAgeRenderer)
     *
@@ -98,7 +98,7 @@ trait sizeCreateAgeRendererParams extends Object {
     */
   var unit: js.UndefOr[String] = js.undefined
   /**
-    * The view instance in which the visualization will be rendered.
+    * The view where the input layer is rendered. This method inspects the view's background (i.e. basemap, web map background, or view container) to determine optimal colors for the output renderer.
     *
     * [Read more...](global.html)
     */

@@ -1,5 +1,13 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`at-least`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`at-most`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`greater-than`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`less-than`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-between`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-equal`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.between
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.equal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +26,7 @@ trait HistogramRangeSliderViewModelProperties extends SliderViewModelProperties 
     */
   var bins: js.UndefOr[js.Array[Bin]] = js.undefined
   /**
-    * Determines the SQL where clause generated in [generateWhereClause()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#generateWhereClause) for filtering purposes. The value set here determines the number of [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#values) allowed on the slider.  **Possible Values:** equal | not-equal | less-than | greater-than | at-most | at-least | between | not-between  See the table below for a description and requirements of all possible values. `value1` refers to the value of the first thumb position. `value2` refers to the value of the final thumb position, if applicable.
+    * Determines the SQL where clause generated in [generateWhereClause()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#generateWhereClause) for filtering purposes. The value set here determines the number of [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#values) allowed on the slider.  See the table below for a description and requirements of all possible values. `value1` refers to the value of the first thumb position. `value2` refers to the value of the final thumb position, if applicable.
     *
     * Possible Value | Number of [Values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#values) | [Where clause](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#generateWhereClause)
     * ---------------|----------------------------|----------------------
@@ -36,7 +44,9 @@ trait HistogramRangeSliderViewModelProperties extends SliderViewModelProperties 
     *
     * @default equal
     */
-  var rangeType: js.UndefOr[js.Any] = js.undefined
+  var rangeType: js.UndefOr[
+    equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
+  ] = js.undefined
   /**
     * Indicates the standard deviation of the dataset above and below the `average`.
     *
@@ -50,23 +60,29 @@ object HistogramRangeSliderViewModelProperties {
   def apply(
     average: Int | Double = null,
     bins: js.Array[Bin] = null,
+    inputFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
+    inputParseFunction: (/* value */ String, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => Double = null,
     labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
     max: Int | Double = null,
     min: Int | Double = null,
     precision: Int | Double = null,
-    rangeType: js.Any = null,
+    rangeType: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between` = null,
     standardDeviation: Int | Double = null,
+    thumbsConstrained: js.UndefOr[Boolean] = js.undefined,
     values: js.Array[Double] = null
   ): HistogramRangeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
     if (bins != null) __obj.updateDynamic("bins")(bins)
+    if (inputFormatFunction != null) __obj.updateDynamic("inputFormatFunction")(js.Any.fromFunction3(inputFormatFunction))
+    if (inputParseFunction != null) __obj.updateDynamic("inputParseFunction")(js.Any.fromFunction3(inputParseFunction))
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType)
+    if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType.asInstanceOf[js.Any])
     if (standardDeviation != null) __obj.updateDynamic("standardDeviation")(standardDeviation.asInstanceOf[js.Any])
+    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained)
     if (values != null) __obj.updateDynamic("values")(values)
     __obj.asInstanceOf[HistogramRangeSliderViewModelProperties]
   }

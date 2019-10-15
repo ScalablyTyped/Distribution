@@ -25,7 +25,7 @@ trait Product extends js.Object {
     */
   var priceCurrencyCode: String
   /**
-    * he product's game-specified identifier
+    * The product's game-specified identifier
     */
   var productID: String
   /**

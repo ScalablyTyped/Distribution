@@ -29,6 +29,12 @@ trait MeshVertexAttributes extends AnonymousAccessor {
     */
   var position: Float64Array
   /**
+    * **Since: 4.11**    A flat array of the vertex tangents (4 elements per vertex ranging from -1 to 1. The 4th element is a sign value (-1 or +1) indicating handedness of the tangent basis). Vertex tangents are used for normal mapping, see [MeshMaterial.normalTexture](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#normalTexture).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
+    */
+  var tangent: js.UndefOr[Float32Array] = js.undefined
+  /**
     * A flat array of vertex uv coordinates (2 elements per vertex).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
@@ -47,6 +53,7 @@ object MeshVertexAttributes {
     get: /* propertyName */ String => _ = null,
     normal: Float32Array = null,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, MeshVertexAttributes]) with (js.Function1[/* props */ HashMap[_], MeshVertexAttributes]) = null,
+    tangent: Float32Array = null,
     uv: Float32Array = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
   ): MeshVertexAttributes = {
@@ -55,6 +62,7 @@ object MeshVertexAttributes {
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
     if (normal != null) __obj.updateDynamic("normal")(normal)
     if (set != null) __obj.updateDynamic("set")(set)
+    if (tangent != null) __obj.updateDynamic("tangent")(tangent)
     if (uv != null) __obj.updateDynamic("uv")(uv)
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
     __obj.asInstanceOf[MeshVertexAttributes]

@@ -1,12 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`percent-of-total`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.field
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.log
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClassBreaksRendererProperties
   extends RendererProperties
-     with VisualVariablesRendererProperties {
+     with VisualVariablesMixinProperties {
   /**
     * When symbolizing polygon features with graduated symbols, set a [FillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html) on this property to visualize the boundaries of each feature. Use a [FillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html) of varying sizes in the [classBreakInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#classBreakInfos) to indicate the quantity.
     *
@@ -69,7 +72,7 @@ trait ClassBreaksRendererProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#normalizationType)
     */
-  var normalizationType: js.UndefOr[String] = js.undefined
+  var normalizationType: js.UndefOr[field | log | `percent-of-total`] = js.undefined
   /**
     * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to a number. This expression can reference field values using the `$feature` global variable and perform mathematical calculations and logical evaluations at runtime.  This property is typically used as an alternative to [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#field) for data-driven visualizations.
     *
@@ -96,7 +99,7 @@ object ClassBreaksRendererProperties {
     legendOptions: ClassBreaksRendererLegendOptions = null,
     normalizationField: String = null,
     normalizationTotal: Int | Double = null,
-    normalizationType: String = null,
+    normalizationType: field | log | `percent-of-total` = null,
     valueExpression: String = null,
     valueExpressionTitle: String = null,
     visualVariables: js.Array[VisualVariableProperties] = null
@@ -111,7 +114,7 @@ object ClassBreaksRendererProperties {
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
     if (normalizationTotal != null) __obj.updateDynamic("normalizationTotal")(normalizationTotal.asInstanceOf[js.Any])
-    if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType)
+    if (normalizationType != null) __obj.updateDynamic("normalizationType")(normalizationType.asInstanceOf[js.Any])
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
     if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
     if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables)

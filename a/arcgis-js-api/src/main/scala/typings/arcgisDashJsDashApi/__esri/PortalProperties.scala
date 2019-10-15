@@ -1,16 +1,23 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`private`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.anonymous
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.english
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.immediate
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PortalProperties extends LoadableProperties {
   /**
-    * The access level of the organization. When public, anonymous users can access the organization. When private, access is restricted to only members of the organization.  **Possible Values:** public | private
+    * The access level of the organization. When public, anonymous users can access the organization. When private, access is restricted to only members of the organization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#access)
     */
-  var access: js.UndefOr[String] = js.undefined
+  var access: js.UndefOr[public | `private`] = js.undefined
   /**
     * When `true`, access to the organization's Portal resources must occur over SSL.
     *
@@ -31,7 +38,7 @@ trait PortalProperties extends LoadableProperties {
     *
     * @default auto
     */
-  var authMode: js.UndefOr[String] = js.undefined
+  var authMode: js.UndefOr[anonymous | auto | immediate] = js.undefined
   /**
     * Array of trusted servers to send credentials to when making Cross-Origin Resource Sharing (CORS) requests to access services secured with web-tier authentication.
     *
@@ -313,6 +320,12 @@ trait PortalProperties extends LoadableProperties {
     */
   var showHomePageDescription: js.UndefOr[Boolean] = js.undefined
   /**
+    * The JSON used to create the property values when the `Portal` is loaded. Although most commonly used properties are exposed on the `Portal` class directly, this provides access to all information returned by the portal. This property is useful if working in an application built using an older version of the API which requires access to portal properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#sourceJSON)
+    */
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  /**
     * Indicates whether hosted services are supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#supportsHostedServices)
@@ -333,11 +346,11 @@ trait PortalProperties extends LoadableProperties {
     */
   var templatesGroupQuery: js.UndefOr[String] = js.undefined
   /**
-    * Sets the units of measure for the organization's users. The user default is derived from the organization's [region](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#region).  **Possible Values:** english | metric
+    * Sets the units of measure for the organization's users. The user default is derived from the organization's [region](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#region).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#units)
     */
-  var units: js.UndefOr[String] = js.undefined
+  var units: js.UndefOr[english | metric] = js.undefined
   /**
     * The URL to the portal instance. Setting the location of the portal instance via [esriConfig.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) should be used in favor of setting it directly on this property.  If using an on-premise portal, the syntax should look similar to: `https://www.example.com/arcgis`
     *
@@ -381,9 +394,9 @@ trait PortalProperties extends LoadableProperties {
 object PortalProperties {
   @scala.inline
   def apply(
-    access: String = null,
+    access: public | `private` = null,
     allSSL: js.UndefOr[Boolean] = js.undefined,
-    authMode: String = null,
+    authMode: anonymous | auto | immediate = null,
     authorizedCrossOriginDomains: js.Array[String] = null,
     basemapGalleryGroupQuery: String = null,
     bingKey: String = null,
@@ -428,10 +441,11 @@ object PortalProperties {
     region: String = null,
     rotatorPanels: js.Array[_] = null,
     showHomePageDescription: js.UndefOr[Boolean] = js.undefined,
+    sourceJSON: js.Any = null,
     supportsHostedServices: js.UndefOr[Boolean] = js.undefined,
     symbolSetsGroupQuery: String = null,
     templatesGroupQuery: String = null,
-    units: String = null,
+    units: english | metric = null,
     url: String = null,
     urlKey: String = null,
     useStandardizedQuery: js.UndefOr[Boolean] = js.undefined,
@@ -440,9 +454,9 @@ object PortalProperties {
     vectorBasemapGalleryGroupQuery: String = null
   ): PortalProperties = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (!js.isUndefined(allSSL)) __obj.updateDynamic("allSSL")(allSSL)
-    if (authMode != null) __obj.updateDynamic("authMode")(authMode)
+    if (authMode != null) __obj.updateDynamic("authMode")(authMode.asInstanceOf[js.Any])
     if (authorizedCrossOriginDomains != null) __obj.updateDynamic("authorizedCrossOriginDomains")(authorizedCrossOriginDomains)
     if (basemapGalleryGroupQuery != null) __obj.updateDynamic("basemapGalleryGroupQuery")(basemapGalleryGroupQuery)
     if (bingKey != null) __obj.updateDynamic("bingKey")(bingKey)
@@ -487,10 +501,11 @@ object PortalProperties {
     if (region != null) __obj.updateDynamic("region")(region)
     if (rotatorPanels != null) __obj.updateDynamic("rotatorPanels")(rotatorPanels)
     if (!js.isUndefined(showHomePageDescription)) __obj.updateDynamic("showHomePageDescription")(showHomePageDescription)
+    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON)
     if (!js.isUndefined(supportsHostedServices)) __obj.updateDynamic("supportsHostedServices")(supportsHostedServices)
     if (symbolSetsGroupQuery != null) __obj.updateDynamic("symbolSetsGroupQuery")(symbolSetsGroupQuery)
     if (templatesGroupQuery != null) __obj.updateDynamic("templatesGroupQuery")(templatesGroupQuery)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
     if (urlKey != null) __obj.updateDynamic("urlKey")(urlKey)
     if (!js.isUndefined(useStandardizedQuery)) __obj.updateDynamic("useStandardizedQuery")(useStandardizedQuery)

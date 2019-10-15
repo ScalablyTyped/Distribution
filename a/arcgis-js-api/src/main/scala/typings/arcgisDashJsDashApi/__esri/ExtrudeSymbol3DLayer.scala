@@ -40,7 +40,7 @@ trait ExtrudeSymbol3DLayer
     */
   var size: Double = js.native
   /**
-    * For ExtrudeSymbol3DLayer the type is always `extrude`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#type)
     */

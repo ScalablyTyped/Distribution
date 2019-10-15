@@ -1,6 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,12 +30,7 @@ trait LineCallout3D extends Callout3D {
     * @default 1px
     */
   var size: Double = js.native
-  /**
-    * For LineCallout3D the type is always `line`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#type)
-    */
-  var `type`: String = js.native
+  var `type`: line = js.native
 }
 
 @JSGlobal("__esri.LineCallout3D")

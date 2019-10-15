@@ -2,6 +2,11 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.capture
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.live
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +40,7 @@ trait CoordinateConversionViewModel
     */
   var locationSymbol: SimpleMarkerSymbol | PictureMarkerSymbol = js.native
   /**
-    * Describes the current mode of the widget.  **Possible Values:** live | capture
+    * Describes the current mode of the widget.
     *   * While in `live` mode, the widget will update as the cursor moves.
     *   * While in `capture` mode, the widget will update on mouse click and display a graphic marking the current location.
     *
@@ -43,7 +48,7 @@ trait CoordinateConversionViewModel
     *
     * @default live
     */
-  var mode: String = js.native
+  var mode: live | capture = js.native
   /**
     * The number of milliseconds of delay before conversion requests will be sent to the [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html).  This only affects conversions that cannot be performed in the browser.
     *
@@ -53,13 +58,13 @@ trait CoordinateConversionViewModel
     */
   var requestDelay: Double = js.native
   /**
-    * The view model's state.  **Possible Values:** ready | loading | disabled
+    * The view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html#state)
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: ready | loading | disabled = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
     *

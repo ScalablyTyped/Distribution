@@ -1,7 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`credential-create`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`dialog-create`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,12 +85,12 @@ trait IdentityManager extends Evented {
   /**
     * Returns information about the server that is hosting the specified URL.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#findServerinfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#findServerInfo)
     *
     * @param url The URL to the server
     *
     */
-  def findServerinfo(url: String): ServerInfo = js.native
+  def findServerInfo(url: String): ServerInfo = js.native
   /**
     * Returns an object containing a token and its expiration time. It is necessary to provide the [ServerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html) object that contains a token service URL and a user info object containing username and password. This is a helper method typically called by sub-classes to generate tokens.
     *
@@ -134,6 +137,10 @@ trait IdentityManager extends Evented {
     *
     */
   def isBusy(): Boolean = js.native
+  @JSName("on")
+  def on_credentialcreate(name: `credential-create`, eventHandler: IdentityManagerCredentialCreateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_dialogcreate(name: `dialog-create`, eventHandler: IdentityManagerDialogCreateEventHandler): IHandle = js.native
   /**
     * Registers OAuth 2.0 configurations.
     *

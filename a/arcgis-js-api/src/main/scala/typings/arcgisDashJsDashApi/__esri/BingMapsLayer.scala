@@ -1,6 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bing-maps`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,6 +58,8 @@ trait BingMapsLayer extends BaseTileLayer {
     * @default "road"
     */
   var style: String = js.native
+  @JSName("type")
+  val type_BingMapsLayer: `bing-maps` = js.native
 }
 
 @JSGlobal("__esri.BingMapsLayer")

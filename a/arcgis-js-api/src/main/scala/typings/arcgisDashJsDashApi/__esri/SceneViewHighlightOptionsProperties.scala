@@ -24,6 +24,12 @@ trait SceneViewHighlightOptionsProperties extends Object {
     */
   var fillOpacity: js.UndefOr[Double] = js.undefined
   /**
+    * An optional color for the halo of the highlight. If unset, the `color` will be used for the halo.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
+    */
+  var haloColor: js.UndefOr[Color] = js.undefined
+  /**
     * The opacity of the highlight halo. This will be multiplied with the opacity specified in `color`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
@@ -41,11 +47,13 @@ object SceneViewHighlightOptionsProperties {
     propertyIsEnumerable: PropertyKey => Boolean,
     color: Color | js.Array[Double] | String = null,
     fillOpacity: Int | Double = null,
+    haloColor: Color = null,
     haloOpacity: Int | Double = null
   ): SceneViewHighlightOptionsProperties = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor)
     if (haloOpacity != null) __obj.updateDynamic("haloOpacity")(haloOpacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewHighlightOptionsProperties]
   }

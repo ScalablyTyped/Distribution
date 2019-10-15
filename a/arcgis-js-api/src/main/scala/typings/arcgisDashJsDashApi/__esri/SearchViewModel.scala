@@ -9,6 +9,10 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-start`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`select-result`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`suggest-complete`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`suggest-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.searching
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -210,13 +214,13 @@ trait SearchViewModel
     */
   var sources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
   /**
-    * The current state of the widget. This property was removed from [Search](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html) and should now be accessed within the [SearchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html).  **Possible Values:** ready | disabled | searching | loading
+    * The current state of the widget. This property was removed from [Search](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html) and should now be accessed within the [SearchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#state)
     *
     * @default ready
     */
-  val state: String = js.native
+  val state: ready | disabled | searching | loading = js.native
   /**
     * The millisecond delay after keyup and before making a [suggest](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#suggest) network request.
     *

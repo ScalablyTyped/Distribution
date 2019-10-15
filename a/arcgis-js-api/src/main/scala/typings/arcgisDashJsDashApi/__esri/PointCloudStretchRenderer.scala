@@ -1,7 +1,12 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`absolute-value`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`high-four-bit`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`low-four-bit`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`modulo-ten`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-cloud-stretch`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,13 +23,13 @@ trait PointCloudStretchRenderer
     */
   var field: String = js.native
   /**
-    * A transform that is applied to the field value before evaluating the renderer.  **Possible Values:** none | low-four-bit | high-four-bit | absolute-value | modulo-ten
+    * A transform that is applied to the field value before evaluating the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#fieldTransformType)
     *
     * @default null
     */
-  var fieldTransformType: String = js.native
+  var fieldTransformType: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = js.native
   /**
     * An object providing options for displaying the renderer in the Legend.
     *
@@ -38,7 +43,7 @@ trait PointCloudStretchRenderer
     */
   var stops: js.Array[PointCloudStretchRendererStops] = js.native
   /**
-    * The type of Renderer. For PointCloudStretchRenderer this value is always `point-cloud-stretch`.
+    * The type of Renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#type)
     */

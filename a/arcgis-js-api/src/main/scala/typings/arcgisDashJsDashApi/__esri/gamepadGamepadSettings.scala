@@ -36,7 +36,7 @@ trait gamepadGamepadSettings extends Accessor {
     */
   var mode: pan | zoom = js.native
   /**
-    * Determines whether pressing the tilt axis forwards make the view tilt down (towards the nadir), or up (towards the zenith). The default behavior is to tilt the view down when pressing the stick that controls tilt forwards.  **Possible Values:** forward-down | forward-up
+    * Determines whether pressing the tilt axis forwards make the view tilt down (towards the nadir), or up (towards the zenith). The default behavior is to tilt the view down when pressing the stick that controls tilt forwards.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-gamepad-GamepadSettings.html#tiltDirection)
     *

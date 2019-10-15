@@ -24,15 +24,10 @@ class Opa protected () extends js.Object {
     */
   var config: js.Any = js.native
   /**
-    * Calls the static emptyQueue function in the Opa namespace {@link sap.ui.test.Opa#.emptyQueue}
-    */
-  def emptyQueue(): Unit = js.native
-  /**
     * Waits until all waitFor calls are done.
     * @returns If the waiting was successful, the promise will be resolved. If not it will be rejected
     */
-  @JSName("emptyQueue")
-  def emptyQueue_Any(): js.Any = js.native
+  def emptyQueue(): js.Any = js.native
   /**
     * Calls the static extendConfig function in the Opa namespace {@link sap.ui.test.Opa#.extendConfig}
     */
@@ -52,9 +47,8 @@ class Opa protected () extends js.Object {
     */
   def extendConfig(options: js.Any): Unit = js.native
   /**
-    * Gives access to a singleton object you can save values in.This object will only be created once and
-    * it will never be destroyed.That means you can use it to save values you need in multiple separated
-    * tests.
+    * Gives access to a singleton object you can save values in.Same as {@link sap.ui.test.Opa#getContext}
+    * @since 1.29.0
     * @returns the context object
     */
   def getContext(): js.Any = js.native

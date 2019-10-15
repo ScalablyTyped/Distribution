@@ -21,8 +21,6 @@ trait VectorLayer
     /* p1 */ typings.ol.featureMod.default, 
     js.UndefOr[Double | Null]
   ] = js.native
-  @JSName("getSource")
-  def getSource_default(): typings.ol.sourceSourceMod.default = js.native
   def getStyle(): js.UndefOr[StyleLike | Null] = js.native
   def getStyleFunction(): js.UndefOr[StyleFunction] = js.native
   def getUpdateWhileAnimating(): Boolean = js.native

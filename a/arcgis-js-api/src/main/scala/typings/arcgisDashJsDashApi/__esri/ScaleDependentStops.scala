@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ScaleDependentStops extends Object {
   /**
-    * **Deprecated since version 4.2. Use `valueExpression` instead**. The only supported expression is `view.scale`.
+    * The only supported expression is `view.scale`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
     */

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait GamepadSettingsProperties extends js.Object {
   /**
-    * Determines what focus is required for gamepad events to be dispatched.  Possible values: document | view | none
+    * Determines what focus is required for gamepad events to be dispatched.
     *
     * Possible Value | Description
     * ---------------|------------

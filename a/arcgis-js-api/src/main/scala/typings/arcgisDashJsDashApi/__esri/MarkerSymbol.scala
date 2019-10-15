@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`picture-marker`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-marker`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +18,13 @@ trait MarkerSymbol extends Symbol {
     * @default 0
     */
   var angle: Double = js.native
+  /**
+    * The symbol type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#type)
+    */
+  @JSName("type")
+  var type_MarkerSymbol: `simple-marker` | `picture-marker` = js.native
   /**
     * The offset on the x-axis in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
     *

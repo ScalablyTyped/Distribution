@@ -1,5 +1,8 @@
 package typings.handsontable.handsontableMod.default
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import typings.handsontable.handsontableMod.Handsontable.plugins.RecordTranslator
 import typings.handsontable.handsontableMod._Handsontable.Core
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,11 +12,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object plugins extends js.Object {
   @js.native
-  class Base ()
-    extends typings.handsontable.handsontableMod.Handsontable.plugins.Base {
+  class BasePlugin ()
+    extends typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin
+       with Instantiable0[typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin]
+       with Instantiable1[
+          /* hotInstance */ Core, 
+          typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin
+        ] {
     def this(hotInstance: Core) = this()
     /* CompleteClass */
     override var enabled: Boolean = js.native
+    /* CompleteClass */
+    override var hot: Core = js.native
     /* CompleteClass */
     override var initialized: Boolean = js.native
     /* CompleteClass */
@@ -22,6 +32,8 @@ object plugins extends js.Object {
     override var pluginName: String = js.native
     /* CompleteClass */
     override var pluginsInitializedCallback: js.Array[_] = js.native
+    /* CompleteClass */
+    override var t: RecordTranslator = js.native
     /* CompleteClass */
     override def addHook(name: String, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
     /* CompleteClass */
@@ -38,6 +50,8 @@ object plugins extends js.Object {
     override def init(): Unit = js.native
     /* CompleteClass */
     override def removeHooks(name: String): Unit = js.native
+    /* CompleteClass */
+    override def updatePlugin(): Unit = js.native
   }
   
   // utils for Filters

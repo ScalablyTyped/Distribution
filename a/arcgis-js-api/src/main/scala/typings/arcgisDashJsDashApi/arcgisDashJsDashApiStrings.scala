@@ -1,12 +1,292 @@
 package typings.arcgisDashJsDashApi
 
+import typings.arcgisDashJsDashApi.__esri.SupportedRegion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object arcgisDashJsDashApiStrings {
   @js.native
+  sealed trait `150-kilometers` extends js.Object
+  
+  @js.native
+  sealed trait `2d` extends js.Object
+  
+  @js.native
+  sealed trait `50-kilometers` extends js.Object
+  
+  @js.native
+  sealed trait AE extends SupportedRegion
+  
+  @js.native
+  sealed trait AR extends SupportedRegion
+  
+  @js.native
+  sealed trait AT extends SupportedRegion
+  
+  @js.native
+  sealed trait AU extends SupportedRegion
+  
+  @js.native
+  sealed trait BE extends SupportedRegion
+  
+  @js.native
+  sealed trait BG extends SupportedRegion
+  
+  @js.native
+  sealed trait BO extends SupportedRegion
+  
+  @js.native
+  sealed trait BR extends SupportedRegion
+  
+  @js.native
+  sealed trait CA extends SupportedRegion
+  
+  @js.native
+  sealed trait CH extends SupportedRegion
+  
+  @js.native
+  sealed trait CI extends SupportedRegion
+  
+  @js.native
+  sealed trait CL extends SupportedRegion
+  
+  @js.native
+  sealed trait CN extends SupportedRegion
+  
+  @js.native
+  sealed trait CO extends SupportedRegion
+  
+  @js.native
+  sealed trait CR extends SupportedRegion
+  
+  @js.native
+  sealed trait CZ extends SupportedRegion
+  
+  @js.native
+  sealed trait DE extends SupportedRegion
+  
+  @js.native
+  sealed trait DK extends SupportedRegion
+  
+  @js.native
+  sealed trait EE extends SupportedRegion
+  
+  @js.native
+  sealed trait EG extends SupportedRegion
+  
+  @js.native
+  sealed trait ES extends SupportedRegion
+  
+  @js.native
+  sealed trait FI extends SupportedRegion
+  
+  @js.native
+  sealed trait FR extends SupportedRegion
+  
+  @js.native
+  sealed trait GB extends SupportedRegion
+  
+  @js.native
+  sealed trait GL extends SupportedRegion
+  
+  @js.native
+  sealed trait GR extends SupportedRegion
+  
+  @js.native
+  sealed trait GT extends SupportedRegion
+  
+  @js.native
+  sealed trait HK extends SupportedRegion
+  
+  @js.native
+  sealed trait ID extends SupportedRegion
+  
+  @js.native
+  sealed trait IE extends SupportedRegion
+  
+  @js.native
+  sealed trait IL extends SupportedRegion
+  
+  @js.native
+  sealed trait IN extends SupportedRegion
+  
+  @js.native
+  sealed trait IQ extends SupportedRegion
+  
+  @js.native
+  sealed trait IS extends SupportedRegion
+  
+  @js.native
+  sealed trait IT extends SupportedRegion
+  
+  @js.native
+  sealed trait JP extends SupportedRegion
+  
+  @js.native
+  sealed trait KE extends SupportedRegion
+  
+  @js.native
+  sealed trait KR extends SupportedRegion
+  
+  @js.native
+  sealed trait KVP extends js.Object
+  
+  @js.native
+  sealed trait KW extends SupportedRegion
+  
+  @js.native
+  sealed trait LI extends SupportedRegion
+  
+  @js.native
+  sealed trait LT extends SupportedRegion
+  
+  @js.native
+  sealed trait LU extends SupportedRegion
+  
+  @js.native
+  sealed trait LV extends SupportedRegion
+  
+  @js.native
+  sealed trait MA extends SupportedRegion
+  
+  @js.native
+  sealed trait MG extends SupportedRegion
+  
+  @js.native
+  sealed trait ML extends SupportedRegion
+  
+  @js.native
+  sealed trait MO extends SupportedRegion
+  
+  @js.native
+  sealed trait MX extends SupportedRegion
+  
+  @js.native
+  sealed trait MY extends SupportedRegion
+  
+  @js.native
+  sealed trait NI extends SupportedRegion
+  
+  @js.native
+  sealed trait NL extends SupportedRegion
+  
+  @js.native
+  sealed trait NO extends SupportedRegion
+  
+  @js.native
+  sealed trait NZ extends SupportedRegion
+  
+  @js.native
+  sealed trait PE extends SupportedRegion
+  
+  @js.native
+  sealed trait PL extends SupportedRegion
+  
+  @js.native
+  sealed trait PR extends SupportedRegion
+  
+  @js.native
+  sealed trait PT extends SupportedRegion
+  
+  @js.native
+  sealed trait RESTful extends js.Object
+  
+  @js.native
+  sealed trait RO extends SupportedRegion
+  
+  @js.native
+  sealed trait RU extends SupportedRegion
+  
+  @js.native
+  sealed trait RW extends SupportedRegion
+  
+  @js.native
+  sealed trait SE extends SupportedRegion
+  
+  @js.native
+  sealed trait SG extends SupportedRegion
+  
+  @js.native
+  sealed trait SK extends SupportedRegion
+  
+  @js.native
+  sealed trait SR extends SupportedRegion
+  
+  @js.native
+  sealed trait SV extends SupportedRegion
+  
+  @js.native
+  sealed trait TH extends SupportedRegion
+  
+  @js.native
+  sealed trait TN extends SupportedRegion
+  
+  @js.native
+  sealed trait TW extends SupportedRegion
+  
+  @js.native
+  sealed trait US extends SupportedRegion
+  
+  @js.native
+  sealed trait VE extends SupportedRegion
+  
+  @js.native
+  sealed trait VI extends SupportedRegion
+  
+  @js.native
+  sealed trait ZA extends SupportedRegion
+  
+  @js.native
+  sealed trait `a3-landscape` extends js.Object
+  
+  @js.native
+  sealed trait `a3-portrait` extends js.Object
+  
+  @js.native
+  sealed trait `a4-landscape` extends js.Object
+  
+  @js.native
+  sealed trait `a4-portrait` extends js.Object
+  
+  @js.native
+  sealed trait abort extends js.Object
+  
+  @js.native
+  sealed trait `above-after` extends js.Object
+  
+  @js.native
+  sealed trait `above-along` extends js.Object
+  
+  @js.native
+  sealed trait `above-and-below` extends js.Object
+  
+  @js.native
+  sealed trait `above-before` extends js.Object
+  
+  @js.native
+  sealed trait `above-center` extends js.Object
+  
+  @js.native
+  sealed trait `above-end` extends js.Object
+  
+  @js.native
+  sealed trait `above-left` extends js.Object
+  
+  @js.native
+  sealed trait `above-right` extends js.Object
+  
+  @js.native
+  sealed trait `above-start` extends js.Object
+  
+  @js.native
+  sealed trait `absolute-value` extends js.Object
+  
+  @js.native
   sealed trait acres extends js.Object
+  
+  @js.native
+  sealed trait active extends js.Object
   
   @js.native
   sealed trait `after-add` extends js.Object
@@ -27,7 +307,31 @@ object arcgisDashJsDashApiStrings {
   sealed trait `allow-backtrack` extends js.Object
   
   @js.native
+  sealed trait `always-horizontal` extends js.Object
+  
+  @js.native
+  sealed trait anonymous extends js.Object
+  
+  @js.native
+  sealed trait any extends js.Object
+  
+  @js.native
+  sealed trait area extends js.Object
+  
+  @js.native
   sealed trait ares extends js.Object
+  
+  @js.native
+  sealed trait arithmetic extends js.Object
+  
+  @js.native
+  sealed trait arrow extends js.Object
+  
+  @js.native
+  sealed trait asc extends js.Object
+  
+  @js.native
+  sealed trait async extends js.Object
   
   @js.native
   sealed trait `at-dead-ends-and-intersections` extends js.Object
@@ -36,10 +340,43 @@ object arcgisDashJsDashApiStrings {
   sealed trait `at-dead-ends-only` extends js.Object
   
   @js.native
+  sealed trait `at-least` extends js.Object
+  
+  @js.native
+  sealed trait `at-most` extends js.Object
+  
+  @js.native
+  sealed trait attachments extends js.Object
+  
+  @js.native
+  sealed trait attribute extends js.Object
+  
+  @js.native
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait `auto-complete-polygon` extends js.Object
+  
+  @js.native
   sealed trait avg extends js.Object
+  
+  @js.native
+  sealed trait `avg-rating` extends js.Object
+  
+  @js.native
+  sealed trait `backward-diagonal` extends js.Object
+  
+  @js.native
+  sealed trait `base-dynamic` extends js.Object
+  
+  @js.native
+  sealed trait `base-elevation` extends js.Object
+  
+  @js.native
+  sealed trait `base-tile` extends js.Object
+  
+  @js.native
+  sealed trait baseline extends js.Object
   
   @js.native
   sealed trait `before-add` extends js.Object
@@ -51,13 +388,52 @@ object arcgisDashJsDashApiStrings {
   sealed trait `before-remove` extends js.Object
   
   @js.native
+  sealed trait `below-after` extends js.Object
+  
+  @js.native
+  sealed trait `below-along` extends js.Object
+  
+  @js.native
+  sealed trait `below-before` extends js.Object
+  
+  @js.native
+  sealed trait `below-center` extends js.Object
+  
+  @js.native
+  sealed trait `below-end` extends js.Object
+  
+  @js.native
+  sealed trait `below-left` extends js.Object
+  
+  @js.native
+  sealed trait `below-right` extends js.Object
+  
+  @js.native
+  sealed trait `below-start` extends js.Object
+  
+  @js.native
+  sealed trait `benoit-1895-b-chains` extends js.Object
+  
+  @js.native
+  sealed trait between extends js.Object
+  
+  @js.native
   sealed trait bevel extends js.Object
+  
+  @js.native
+  sealed trait bilinear extends js.Object
   
   @js.native
   sealed trait binary extends js.Object
   
   @js.native
+  sealed trait `bing-maps` extends js.Object
+  
+  @js.native
   sealed trait bitfield extends js.Object
+  
+  @js.native
+  sealed trait blend extends js.Object
   
   @js.native
   sealed trait blob extends js.Object
@@ -66,13 +442,28 @@ object arcgisDashJsDashApiStrings {
   sealed trait blur extends js.Object
   
   @js.native
+  sealed trait bmp extends js.Object
+  
+  @js.native
   sealed trait bold extends js.Object
   
   @js.native
   sealed trait bolder extends js.Object
   
   @js.native
+  sealed trait boolean extends js.Object
+  
+  @js.native
   sealed trait bottom extends js.Object
+  
+  @js.native
+  sealed trait `bottom-center` extends js.Object
+  
+  @js.native
+  sealed trait `bottom-left` extends js.Object
+  
+  @js.native
+  sealed trait `bottom-right` extends js.Object
   
   @js.native
   sealed trait `building-component` extends js.Object
@@ -81,16 +472,58 @@ object arcgisDashJsDashApiStrings {
   sealed trait `building-group` extends js.Object
   
   @js.native
+  sealed trait `building-scene` extends js.Object
+  
+  @js.native
   sealed trait butt extends js.Object
+  
+  @js.native
+  sealed trait c128 extends js.Object
+  
+  @js.native
+  sealed trait c64 extends js.Object
   
   @js.native
   sealed trait calm extends js.Object
   
   @js.native
+  sealed trait capture extends js.Object
+  
+  @js.native
   sealed trait center extends js.Object
   
   @js.native
+  sealed trait `center-after` extends js.Object
+  
+  @js.native
+  sealed trait `center-along` extends js.Object
+  
+  @js.native
+  sealed trait `center-before` extends js.Object
+  
+  @js.native
+  sealed trait `center-center` extends js.Object
+  
+  @js.native
+  sealed trait `center-end` extends js.Object
+  
+  @js.native
+  sealed trait `center-left` extends js.Object
+  
+  @js.native
+  sealed trait `center-right` extends js.Object
+  
+  @js.native
+  sealed trait `center-start` extends js.Object
+  
+  @js.native
+  sealed trait `centered-on` extends js.Object
+  
+  @js.native
   sealed trait centimeters extends js.Object
+  
+  @js.native
+  sealed trait centuries extends js.Object
   
   @js.native
   sealed trait change extends js.Object
@@ -108,7 +541,31 @@ object arcgisDashJsDashApiStrings {
   sealed trait circle extends js.Object
   
   @js.native
+  sealed trait clamp extends js.Object
+  
+  @js.native
+  sealed trait `clarke-feet` extends js.Object
+  
+  @js.native
+  sealed trait `clarke-links` extends js.Object
+  
+  @js.native
+  sealed trait `clarke-yards` extends js.Object
+  
+  @js.native
   sealed trait `class-breaks` extends js.Object
+  
+  @js.native
+  sealed trait `class-breaks-color` extends js.Object
+  
+  @js.native
+  sealed trait `class-breaks-size` extends js.Object
+  
+  @js.native
+  sealed trait `classed-color` extends js.Object
+  
+  @js.native
+  sealed trait `classed-size` extends js.Object
   
   @js.native
   sealed trait click extends js.Object
@@ -120,10 +577,19 @@ object arcgisDashJsDashApiStrings {
   sealed trait color extends js.Object
   
   @js.native
+  sealed trait compass extends js.Object
+  
+  @js.native
   sealed trait complete extends js.Object
   
   @js.native
   sealed trait `complete-no-events` extends js.Object
+  
+  @js.native
+  sealed trait connected extends js.Object
+  
+  @js.native
+  sealed trait contains extends js.Object
   
   @js.native
   sealed trait coordinate extends js.Object
@@ -135,10 +601,43 @@ object arcgisDashJsDashApiStrings {
   sealed trait `count-or-amount` extends js.Object
   
   @js.native
+  sealed trait create extends js.Object
+  
+  @js.native
+  sealed trait created extends js.Object
+  
+  @js.native
+  sealed trait `credential-create` extends js.Object
+  
+  @js.native
+  sealed trait cross extends js.Object
+  
+  @js.native
+  sealed trait crosses extends js.Object
+  
+  @js.native
+  sealed trait csv extends js.Object
+  
+  @js.native
+  sealed trait cubic extends js.Object
+  
+  @js.native
   sealed trait `cumulative-from-end` extends js.Object
   
   @js.native
   sealed trait `cumulative-from-start` extends js.Object
+  
+  @js.native
+  sealed trait `cursor-update` extends js.Object
+  
+  @js.native
+  sealed trait dash extends js.Object
+  
+  @js.native
+  sealed trait `dash-dot` extends js.Object
+  
+  @js.native
+  sealed trait `data-file` extends js.Object
   
   @js.native
   sealed trait `data-received` extends js.Object
@@ -150,10 +649,46 @@ object arcgisDashJsDashApiStrings {
   sealed trait `date-and-time` extends js.Object
   
   @js.native
+  sealed trait `day-short-month-year` extends js.Object
+  
+  @js.native
+  sealed trait `day-short-month-year-long-time` extends js.Object
+  
+  @js.native
+  sealed trait `day-short-month-year-long-time-24` extends js.Object
+  
+  @js.native
+  sealed trait `day-short-month-year-short-time` extends js.Object
+  
+  @js.native
+  sealed trait `day-short-month-year-short-time-24` extends js.Object
+  
+  @js.native
+  sealed trait days extends js.Object
+  
+  @js.native
+  sealed trait decades extends js.Object
+  
+  @js.native
   sealed trait `decimal-degrees` extends js.Object
   
   @js.native
   sealed trait decimeters extends js.Object
+  
+  @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
+  sealed trait `default-curve-extension` extends js.Object
+  
+  @js.native
+  sealed trait delete extends js.Object
+  
+  @js.native
+  sealed trait depth extends js.Object
+  
+  @js.native
+  sealed trait desc extends js.Object
   
   @js.native
   sealed trait description extends js.Object
@@ -165,10 +700,43 @@ object arcgisDashJsDashApiStrings {
   sealed trait detailed extends js.Object
   
   @js.native
+  sealed trait `diagonal-cross` extends js.Object
+  
+  @js.native
+  sealed trait `dialog-create` extends js.Object
+  
+  @js.native
+  sealed trait diameter extends js.Object
+  
+  @js.native
+  sealed trait diamond extends js.Object
+  
+  @js.native
+  sealed trait dib extends js.Object
+  
+  @js.native
+  sealed trait dictionary extends js.Object
+  
+  @js.native
+  sealed trait `direct-line` extends js.Object
+  
+  @js.native
   sealed trait disabled extends js.Object
   
   @js.native
+  sealed trait disconnected extends js.Object
+  
+  @js.native
+  sealed trait disjoint extends js.Object
+  
+  @js.native
+  sealed trait distance extends js.Object
+  
+  @js.native
   sealed trait document extends js.Object
+  
+  @js.native
+  sealed trait dot extends js.Object
   
   @js.native
   sealed trait `dot-density` extends js.Object
@@ -180,19 +748,67 @@ object arcgisDashJsDashApiStrings {
   sealed trait `double-click` extends js.Object
   
   @js.native
+  sealed trait `down-arrow` extends js.Object
+  
+  @js.native
   sealed trait drag extends js.Object
+  
+  @js.native
+  sealed trait dragging extends js.Object
+  
+  @js.native
+  sealed trait `draw-complete` extends js.Object
+  
+  @js.native
+  sealed trait editing extends js.Object
   
   @js.native
   sealed trait edits extends js.Object
   
   @js.native
+  sealed trait elevation extends js.Object
+  
+  @js.native
+  sealed trait ellipse extends js.Object
+  
+  @js.native
+  sealed trait emf extends js.Object
+  
+  @js.native
+  sealed trait empty extends js.Object
+  
+  @js.native
   sealed trait end extends js.Object
+  
+  @js.native
+  sealed trait english extends js.Object
+  
+  @js.native
+  sealed trait `envelope-intersects` extends js.Object
+  
+  @js.native
+  sealed trait eps extends js.Object
+  
+  @js.native
+  sealed trait equal extends js.Object
+  
+  @js.native
+  sealed trait `equal-interval` extends js.Object
+  
+  @js.native
+  sealed trait error extends js.Object
   
   @js.native
   sealed trait exclude extends js.Object
   
   @js.native
+  sealed trait exclusive extends js.Object
+  
+  @js.native
   sealed trait extent extends js.Object
+  
+  @js.native
+  sealed trait extremes extends js.Object
   
   @js.native
   sealed trait extrude extends js.Object
@@ -204,10 +820,31 @@ object arcgisDashJsDashApiStrings {
   sealed trait f64 extends js.Object
   
   @js.native
+  sealed trait failed extends js.Object
+  
+  @js.native
+  sealed trait feature extends js.Object
+  
+  @js.native
+  sealed trait `feature-record-set-layer` extends js.Object
+  
+  @js.native
   sealed trait feet extends js.Object
   
   @js.native
+  sealed trait field extends js.Object
+  
+  @js.native
+  sealed trait fields extends js.Object
+  
+  @js.native
   sealed trait fill extends js.Object
+  
+  @js.native
+  sealed trait finished extends js.Object
+  
+  @js.native
+  sealed trait first extends js.Object
   
   @js.native
   sealed trait firstOfMany extends js.Object
@@ -216,25 +853,61 @@ object arcgisDashJsDashApiStrings {
   sealed trait focus extends js.Object
   
   @js.native
+  sealed trait `forward-diagonal` extends js.Object
+  
+  @js.native
   sealed trait `forward-down` extends js.Object
   
   @js.native
   sealed trait `forward-up` extends js.Object
   
   @js.native
+  sealed trait freehand extends js.Object
+  
+  @js.native
   sealed trait `from-facility` extends js.Object
+  
+  @js.native
+  sealed trait generic extends js.Object
+  
+  @js.native
+  sealed trait `geo-rss` extends js.Object
   
   @js.native
   sealed trait geodesic extends js.Object
   
   @js.native
+  sealed trait geographic extends js.Object
+  
+  @js.native
+  sealed trait geojson extends js.Object
+  
+  @js.native
   sealed trait geometry extends js.Object
+  
+  @js.native
+  sealed trait gif extends js.Object
   
   @js.native
   sealed trait `global-id` extends js.Object
   
   @js.native
+  sealed trait go extends js.Object
+  
+  @js.native
+  sealed trait `going-home` extends js.Object
+  
+  @js.native
+  sealed trait `gold-coast-feet` extends js.Object
+  
+  @js.native
   sealed trait graphics extends js.Object
+  
+  @js.native
+  sealed trait `greater-than` extends js.Object
+  
+  @js.native
+  sealed trait group extends js.Object
   
   @js.native
   sealed trait guid extends js.Object
@@ -249,16 +922,40 @@ object arcgisDashJsDashApiStrings {
   sealed trait hectares extends js.Object
   
   @js.native
+  sealed trait height extends js.Object
+  
+  @js.native
   sealed trait hide extends js.Object
   
   @js.native
   sealed trait `hide-children` extends js.Object
   
   @js.native
+  sealed trait `high-four-bit` extends js.Object
+  
+  @js.native
+  sealed trait `high-to-low` extends js.Object
+  
+  @js.native
+  sealed trait `histogram-equalization` extends js.Object
+  
+  @js.native
   sealed trait hold extends js.Object
   
   @js.native
+  sealed trait horizontal extends js.Object
+  
+  @js.native
+  sealed trait `horizontal-reversed` extends js.Object
+  
+  @js.native
+  sealed trait hours extends js.Object
+  
+  @js.native
   sealed trait hsv extends js.Object
+  
+  @js.native
+  sealed trait hybrid extends js.Object
   
   @js.native
   sealed trait icon extends js.Object
@@ -267,10 +964,19 @@ object arcgisDashJsDashApiStrings {
   sealed trait image extends js.Object
   
   @js.native
+  sealed trait imagery extends js.Object
+  
+  @js.native
+  sealed trait immediate extends js.Object
+  
+  @js.native
   sealed trait `immediate-click` extends js.Object
   
   @js.native
   sealed trait imperial extends js.Object
+  
+  @js.native
+  sealed trait in extends js.Object
   
   @js.native
   sealed trait inches extends js.Object
@@ -279,7 +985,25 @@ object arcgisDashJsDashApiStrings {
   sealed trait include extends js.Object
   
   @js.native
+  sealed trait independent extends js.Object
+  
+  @js.native
+  sealed trait `index-intersects` extends js.Object
+  
+  @js.native
+  sealed trait `indian-1937-yards` extends js.Object
+  
+  @js.native
+  sealed trait `indian-yards` extends js.Object
+  
+  @js.native
+  sealed trait informative extends js.Object
+  
+  @js.native
   sealed trait inherited extends js.Object
+  
+  @js.native
+  sealed trait initializing extends js.Object
   
   @js.native
   sealed trait instant extends js.Object
@@ -291,7 +1015,64 @@ object arcgisDashJsDashApiStrings {
   sealed trait integer extends js.Object
   
   @js.native
+  sealed trait `integrated-mesh` extends js.Object
+  
+  @js.native
+  sealed trait `interior-intersection` extends js.Object
+  
+  @js.native
+  sealed trait intersection extends js.Object
+  
+  @js.native
+  sealed trait intersects extends js.Object
+  
+  @js.native
   sealed trait italic extends js.Object
+  
+  @js.native
+  sealed trait `job-cancelled` extends js.Object
+  
+  @js.native
+  sealed trait `job-cancelling` extends js.Object
+  
+  @js.native
+  sealed trait `job-deleted` extends js.Object
+  
+  @js.native
+  sealed trait `job-deleting` extends js.Object
+  
+  @js.native
+  sealed trait `job-executing` extends js.Object
+  
+  @js.native
+  sealed trait `job-failed` extends js.Object
+  
+  @js.native
+  sealed trait `job-new` extends js.Object
+  
+  @js.native
+  sealed trait `job-submitted` extends js.Object
+  
+  @js.native
+  sealed trait `job-succeeded` extends js.Object
+  
+  @js.native
+  sealed trait `job-timed-out` extends js.Object
+  
+  @js.native
+  sealed trait `job-waiting` extends js.Object
+  
+  @js.native
+  sealed trait jpg extends js.Object
+  
+  @js.native
+  sealed trait jpgpng extends js.Object
+  
+  @js.native
+  sealed trait justify extends js.Object
+  
+  @js.native
+  sealed trait `keep-end-attributes` extends js.Object
   
   @js.native
   sealed trait `key-down` extends js.Object
@@ -303,10 +1084,16 @@ object arcgisDashJsDashApiStrings {
   sealed trait kilometers extends js.Object
   
   @js.native
+  sealed trait kml extends js.Object
+  
+  @js.native
   sealed trait `lab-lch` extends js.Object
   
   @js.native
   sealed trait `label-3d` extends js.Object
+  
+  @js.native
+  sealed trait landscape extends js.Object
   
   @js.native
   sealed trait large extends js.Object
@@ -318,6 +1105,9 @@ object arcgisDashJsDashApiStrings {
   sealed trait lastOfMany extends js.Object
   
   @js.native
+  sealed trait layer extends js.Object
+  
+  @js.native
   sealed trait `layerview-create` extends js.Object
   
   @js.native
@@ -325,6 +1115,24 @@ object arcgisDashJsDashApiStrings {
   
   @js.native
   sealed trait `layerview-destroy` extends js.Object
+  
+  @js.native
+  sealed trait left extends js.Object
+  
+  @js.native
+  sealed trait `left-arrow` extends js.Object
+  
+  @js.native
+  sealed trait lerc extends js.Object
+  
+  @js.native
+  sealed trait `less-than` extends js.Object
+  
+  @js.native
+  sealed trait `letter-ansi-a-landscape` extends js.Object
+  
+  @js.native
+  sealed trait `letter-ansi-a-portrait` extends js.Object
   
   @js.native
   sealed trait lighter extends js.Object
@@ -336,16 +1144,115 @@ object arcgisDashJsDashApiStrings {
   sealed trait `line-3d` extends js.Object
   
   @js.native
+  sealed trait `line-coincidence` extends js.Object
+  
+  @js.native
   sealed trait `line-through` extends js.Object
+  
+  @js.native
+  sealed trait `line-touch` extends js.Object
+  
+  @js.native
+  sealed trait `linear-unit` extends js.Object
   
   @js.native
   sealed trait list extends js.Object
   
   @js.native
+  sealed trait live extends js.Object
+  
+  @js.native
+  sealed trait loaded extends js.Object
+  
+  @js.native
+  sealed trait loading extends js.Object
+  
+  @js.native
+  sealed trait locate extends js.Object
+  
+  @js.native
+  sealed trait `locate-error` extends js.Object
+  
+  @js.native
+  sealed trait locating extends js.Object
+  
+  @js.native
   sealed trait `location-or-place-name` extends js.Object
   
   @js.native
+  sealed trait `lock-raster` extends js.Object
+  
+  @js.native
+  sealed trait log extends js.Object
+  
+  @js.native
   sealed trait long extends js.Object
+  
+  @js.native
+  sealed trait `long-dash` extends js.Object
+  
+  @js.native
+  sealed trait `long-dash-dot` extends js.Object
+  
+  @js.native
+  sealed trait `long-dash-dot-dot` extends js.Object
+  
+  @js.native
+  sealed trait `long-date` extends js.Object
+  
+  @js.native
+  sealed trait `long-date-long-time` extends js.Object
+  
+  @js.native
+  sealed trait `long-date-long-time-24` extends js.Object
+  
+  @js.native
+  sealed trait `long-date-short-time` extends js.Object
+  
+  @js.native
+  sealed trait `long-date-short-time-24` extends js.Object
+  
+  @js.native
+  sealed trait `long-month-day-year` extends js.Object
+  
+  @js.native
+  sealed trait `long-month-day-year-long-time` extends js.Object
+  
+  @js.native
+  sealed trait `long-month-day-year-long-time-24` extends js.Object
+  
+  @js.native
+  sealed trait `long-month-day-year-short-time` extends js.Object
+  
+  @js.native
+  sealed trait `long-month-day-year-short-time-24` extends js.Object
+  
+  @js.native
+  sealed trait `long-month-year` extends js.Object
+  
+  @js.native
+  sealed trait `low-four-bit` extends js.Object
+  
+  @js.native
+  sealed trait `lower-left` extends js.Object
+  
+  @js.native
+  sealed trait majority extends js.Object
+  
+  @js.native
+  sealed trait manual extends js.Object
+  
+  @js.native
+  sealed trait `map-image` extends js.Object
+  
+  @js.native
+  sealed trait `map-notes` extends js.Object
+  
+  @js.native
+  sealed trait `map-only` extends js.Object
+  
+  @js.native
+  sealed trait mask extends js.Object
   
   @js.native
   sealed trait max extends js.Object
@@ -354,7 +1261,19 @@ object arcgisDashJsDashApiStrings {
   sealed trait `max-change` extends js.Object
   
   @js.native
+  sealed trait mean extends js.Object
+  
+  @js.native
+  sealed trait measured extends js.Object
+  
+  @js.native
   sealed trait measurement extends js.Object
+  
+  @js.native
+  sealed trait measuring extends js.Object
+  
+  @js.native
+  sealed trait media extends js.Object
   
   @js.native
   sealed trait medium extends js.Object
@@ -372,10 +1291,16 @@ object arcgisDashJsDashApiStrings {
   sealed trait metric extends js.Object
   
   @js.native
+  sealed trait middle extends js.Object
+  
+  @js.native
   sealed trait miles extends js.Object
   
   @js.native
   sealed trait millimeters extends js.Object
+  
+  @js.native
+  sealed trait milliseconds extends js.Object
   
   @js.native
   sealed trait min extends js.Object
@@ -384,34 +1309,103 @@ object arcgisDashJsDashApiStrings {
   sealed trait `min-change` extends js.Object
   
   @js.native
+  sealed trait `min-max` extends js.Object
+  
+  @js.native
+  sealed trait minutes extends js.Object
+  
+  @js.native
   sealed trait miter extends js.Object
+  
+  @js.native
+  sealed trait mixed extends js.Object
   
   @js.native
   sealed trait moderate extends js.Object
   
   @js.native
+  sealed trait modified extends js.Object
+  
+  @js.native
+  sealed trait `modulo-ten` extends js.Object
+  
+  @js.native
+  sealed trait months extends js.Object
+  
+  @js.native
   sealed trait `mouse-wheel` extends js.Object
+  
+  @js.native
+  sealed trait move extends js.Object
+  
+  @js.native
+  sealed trait `multi-value` extends js.Object
   
   @js.native
   sealed trait multipart extends js.Object
   
   @js.native
+  sealed trait multipatch extends js.Object
+  
+  @js.native
   sealed trait multipoint extends js.Object
+  
+  @js.native
+  sealed trait nadir extends js.Object
   
   @js.native
   sealed trait `name-or-title` extends js.Object
   
   @js.native
+  sealed trait native extends js.Object
+  
+  @js.native
+  sealed trait `natural-breaks` extends js.Object
+  
+  @js.native
   sealed trait `nautical-miles` extends js.Object
   
   @js.native
+  sealed trait nearest extends js.Object
+  
+  @js.native
   sealed trait `no-backtrack` extends js.Object
+  
+  @js.native
+  sealed trait `no-end-attributes` extends js.Object
+  
+  @js.native
+  sealed trait `no-extend-at-from` extends js.Object
+  
+  @js.native
+  sealed trait `no-extend-at-to` extends js.Object
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
   sealed trait normal extends js.Object
+  
+  @js.native
+  sealed trait northwest extends js.Object
+  
+  @js.native
+  sealed trait `not-between` extends js.Object
+  
+  @js.native
+  sealed trait `not-equal` extends js.Object
+  
+  @js.native
+  sealed trait `not-loaded` extends js.Object
+  
+  @js.native
+  sealed trait `num-comments` extends js.Object
+  
+  @js.native
+  sealed trait `num-ratings` extends js.Object
+  
+  @js.native
+  sealed trait `num-views` extends js.Object
   
   @js.native
   sealed trait number extends js.Object
@@ -429,13 +1423,46 @@ object arcgisDashJsDashApiStrings {
   sealed trait opacity extends js.Object
   
   @js.native
+  sealed trait opaque extends js.Object
+  
+  @js.native
+  sealed trait `open-street-map` extends js.Object
+  
+  @js.native
   sealed trait `ordered-or-ranked` extends js.Object
+  
+  @js.native
+  sealed trait org extends js.Object
+  
+  @js.native
+  sealed trait origin extends js.Object
+  
+  @js.native
+  sealed trait overlap extends js.Object
+  
+  @js.native
+  sealed trait overlaps extends js.Object
+  
+  @js.native
+  sealed trait owner extends js.Object
   
   @js.native
   sealed trait pan extends js.Object
   
   @js.native
   sealed trait path extends js.Object
+  
+  @js.native
+  sealed trait pdf extends js.Object
+  
+  @js.native
+  sealed trait percent extends js.Object
+  
+  @js.native
+  sealed trait `percent-clip` extends js.Object
+  
+  @js.native
+  sealed trait `percent-of-total` extends js.Object
   
   @js.native
   sealed trait `percentage-or-ratio` extends js.Object
@@ -453,10 +1480,28 @@ object arcgisDashJsDashApiStrings {
   sealed trait playing extends js.Object
   
   @js.native
+  sealed trait png extends js.Object
+  
+  @js.native
+  sealed trait png24 extends js.Object
+  
+  @js.native
+  sealed trait png32 extends js.Object
+  
+  @js.native
+  sealed trait png8 extends js.Object
+  
+  @js.native
+  sealed trait pngjpg extends js.Object
+  
+  @js.native
   sealed trait point extends js.Object
   
   @js.native
   sealed trait `point-3d` extends js.Object
+  
+  @js.native
+  sealed trait `point-cloud` extends js.Object
   
   @js.native
   sealed trait `point-cloud-class-breaks` extends js.Object
@@ -469,6 +1514,9 @@ object arcgisDashJsDashApiStrings {
   
   @js.native
   sealed trait `point-cloud-unique-value` extends js.Object
+  
+  @js.native
+  sealed trait `point-touch` extends js.Object
   
   @js.native
   sealed trait `pointer-down` extends js.Object
@@ -498,10 +1546,49 @@ object arcgisDashJsDashApiStrings {
   sealed trait polyline extends js.Object
   
   @js.native
+  sealed trait portrait extends js.Object
+  
+  @js.native
+  sealed trait position extends js.Object
+  
+  @js.native
+  sealed trait predominance extends js.Object
+  
+  @js.native
+  sealed trait `preserve-shape` extends js.Object
+  
+  @js.native
   sealed trait preview extends js.Object
   
   @js.native
+  sealed trait `private` extends js.Object
+  
+  @js.native
+  sealed trait `process-definition` extends js.Object
+  
+  @js.native
+  sealed trait `process-start` extends js.Object
+  
+  @js.native
+  sealed trait `process-stop` extends js.Object
+  
+  @js.native
+  sealed trait processed extends js.Object
+  
+  @js.native
+  sealed trait ps extends js.Object
+  
+  @js.native
+  sealed trait public extends js.Object
+  
+  @js.native
   sealed trait quad extends js.Object
+  
+  @js.native
+  sealed trait quantile extends js.Object
+  
+  @js.native
+  sealed trait radius extends js.Object
   
   @js.native
   sealed trait range extends js.Object
@@ -510,10 +1597,46 @@ object arcgisDashJsDashApiStrings {
   sealed trait raster extends js.Object
   
   @js.native
+  sealed trait `raster-data` extends js.Object
+  
+  @js.native
+  sealed trait `raster-data-layer` extends js.Object
+  
+  @js.native
   sealed trait `raster-stretch` extends js.Object
   
   @js.native
+  sealed trait ratio extends js.Object
+  
+  @js.native
   sealed trait ready extends js.Object
+  
+  @js.native
+  sealed trait `record-set` extends js.Object
+  
+  @js.native
+  sealed trait rectangle extends js.Object
+  
+  @js.native
+  sealed trait redo extends js.Object
+  
+  @js.native
+  sealed trait relation extends js.Object
+  
+  @js.native
+  sealed trait relationship extends js.Object
+  
+  @js.native
+  sealed trait relative extends js.Object
+  
+  @js.native
+  sealed trait `relocate-ends` extends js.Object
+  
+  @js.native
+  sealed trait repeat extends js.Object
+  
+  @js.native
+  sealed trait reshape extends js.Object
   
   @js.native
   sealed trait resize extends js.Object
@@ -522,13 +1645,28 @@ object arcgisDashJsDashApiStrings {
   sealed trait `return` extends js.Object
   
   @js.native
+  sealed trait `rich-text` extends js.Object
+  
+  @js.native
+  sealed trait right extends js.Object
+  
+  @js.native
+  sealed trait `right-arrow` extends js.Object
+  
+  @js.native
   sealed trait rippled extends js.Object
+  
+  @js.native
+  sealed trait roll extends js.Object
   
   @js.native
   sealed trait rotation extends js.Object
   
   @js.native
   sealed trait round extends js.Object
+  
+  @js.native
+  sealed trait running extends js.Object
   
   @js.native
   sealed trait s16 extends js.Object
@@ -540,19 +1678,106 @@ object arcgisDashJsDashApiStrings {
   sealed trait s8 extends js.Object
   
   @js.native
+  sealed trait scene extends js.Object
+  
+  @js.native
+  sealed trait scientific extends js.Object
+  
+  @js.native
+  sealed trait seamline extends js.Object
+  
+  @js.native
+  sealed trait `search-blur` extends js.Object
+  
+  @js.native
   sealed trait `search-clear` extends js.Object
   
   @js.native
   sealed trait `search-complete` extends js.Object
   
   @js.native
+  sealed trait `search-focus` extends js.Object
+  
+  @js.native
   sealed trait `search-start` extends js.Object
+  
+  @js.native
+  sealed trait searching extends js.Object
+  
+  @js.native
+  sealed trait `sears-1922-truncated-chains` extends js.Object
+  
+  @js.native
+  sealed trait `sears-chains` extends js.Object
+  
+  @js.native
+  sealed trait `sears-feet` extends js.Object
+  
+  @js.native
+  sealed trait `sears-yards` extends js.Object
+  
+  @js.native
+  sealed trait seconds extends js.Object
+  
+  @js.native
+  sealed trait `segment-drag` extends js.Object
+  
+  @js.native
+  sealed trait select extends js.Object
+  
+  @js.native
+  sealed trait `select-bookmark` extends js.Object
   
   @js.native
   sealed trait `select-result` extends js.Object
   
   @js.native
+  sealed trait `short-dash` extends js.Object
+  
+  @js.native
+  sealed trait `short-dash-dot` extends js.Object
+  
+  @js.native
+  sealed trait `short-dash-dot-dot` extends js.Object
+  
+  @js.native
+  sealed trait `short-date` extends js.Object
+  
+  @js.native
+  sealed trait `short-date-le` extends js.Object
+  
+  @js.native
+  sealed trait `short-date-le-long-time` extends js.Object
+  
+  @js.native
+  sealed trait `short-date-le-long-time-24` extends js.Object
+  
+  @js.native
+  sealed trait `short-date-le-short-time` extends js.Object
+  
+  @js.native
+  sealed trait `short-date-le-short-time-24` extends js.Object
+  
+  @js.native
+  sealed trait `short-date-long-time` extends js.Object
+  
+  @js.native
+  sealed trait `short-date-long-time-24` extends js.Object
+  
+  @js.native
+  sealed trait `short-date-short-time` extends js.Object
+  
+  @js.native
+  sealed trait `short-dot` extends js.Object
+  
+  @js.native
+  sealed trait `short-month-year` extends js.Object
+  
+  @js.native
   sealed trait show extends js.Object
+  
+  @js.native
+  sealed trait sigmoid extends js.Object
   
   @js.native
   sealed trait simple extends js.Object
@@ -579,6 +1804,12 @@ object arcgisDashJsDashApiStrings {
   sealed trait sketch extends js.Object
   
   @js.native
+  sealed trait sliced extends js.Object
+  
+  @js.native
+  sealed trait slicing extends js.Object
+  
+  @js.native
   sealed trait slight extends js.Object
   
   @js.native
@@ -589,6 +1820,9 @@ object arcgisDashJsDashApiStrings {
   
   @js.native
   sealed trait solid extends js.Object
+  
+  @js.native
+  sealed trait source extends js.Object
   
   @js.native
   sealed trait square extends js.Object
@@ -618,16 +1852,31 @@ object arcgisDashJsDashApiStrings {
   sealed trait standard extends js.Object
   
   @js.native
+  sealed trait `standard-deviation` extends js.Object
+  
+  @js.native
   sealed trait start extends js.Object
   
   @js.native
   sealed trait stddev extends js.Object
   
   @js.native
+  sealed trait stop extends js.Object
+  
+  @js.native
+  sealed trait stopped extends js.Object
+  
+  @js.native
   sealed trait straight extends js.Object
   
   @js.native
+  sealed trait stream extends js.Object
+  
+  @js.native
   sealed trait string extends js.Object
+  
+  @js.native
+  sealed trait submit extends js.Object
   
   @js.native
   sealed trait `suggest-complete` extends js.Object
@@ -636,13 +1885,40 @@ object arcgisDashJsDashApiStrings {
   sealed trait `suggest-start` extends js.Object
   
   @js.native
+  sealed trait suggestion extends js.Object
+  
+  @js.native
   sealed trait sum extends js.Object
   
   @js.native
   sealed trait `summary-only` extends js.Object
   
   @js.native
+  sealed trait svg extends js.Object
+  
+  @js.native
+  sealed trait svgz extends js.Object
+  
+  @js.native
+  sealed trait sync extends js.Object
+  
+  @js.native
+  sealed trait `tabloid-ansi-b-landscape` extends js.Object
+  
+  @js.native
+  sealed trait `tabloid-ansi-b-portrait` extends js.Object
+  
+  @js.native
   sealed trait text extends js.Object
+  
+  @js.native
+  sealed trait `text-area` extends js.Object
+  
+  @js.native
+  sealed trait `text-box` extends js.Object
+  
+  @js.native
+  sealed trait thematic extends js.Object
   
   @js.native
   sealed trait `thumb-change` extends js.Object
@@ -651,16 +1927,61 @@ object arcgisDashJsDashApiStrings {
   sealed trait `thumb-drag` extends js.Object
   
   @js.native
+  sealed trait tiff extends js.Object
+  
+  @js.native
   sealed trait tile extends js.Object
+  
+  @js.native
+  sealed trait tilt extends js.Object
   
   @js.native
   sealed trait `time-window` extends js.Object
   
   @js.native
+  sealed trait title extends js.Object
+  
+  @js.native
   sealed trait `to-facility` extends js.Object
   
   @js.native
+  sealed trait toggle extends js.Object
+  
+  @js.native
   sealed trait `token-change` extends js.Object
+  
+  @js.native
+  sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait `top-center` extends js.Object
+  
+  @js.native
+  sealed trait `top-left` extends js.Object
+  
+  @js.native
+  sealed trait `top-right` extends js.Object
+  
+  @js.native
+  sealed trait touch extends js.Object
+  
+  @js.native
+  sealed trait touches extends js.Object
+  
+  @js.native
+  sealed trait track extends js.Object
+  
+  @js.native
+  sealed trait `track-error` extends js.Object
+  
+  @js.native
+  sealed trait tracking extends js.Object
+  
+  @js.native
+  sealed trait transform extends js.Object
+  
+  @js.native
+  sealed trait triangle extends js.Object
   
   @js.native
   sealed trait `trigger-action` extends js.Object
@@ -672,13 +1993,25 @@ object arcgisDashJsDashApiStrings {
   sealed trait `true-shape-with-measure` extends js.Object
   
   @js.native
+  sealed trait `type` extends js.Object
+  
+  @js.native
   sealed trait `type-or-category` extends js.Object
+  
+  @js.native
+  sealed trait u1 extends js.Object
   
   @js.native
   sealed trait u16 extends js.Object
   
   @js.native
+  sealed trait u2 extends js.Object
+  
+  @js.native
   sealed trait u32 extends js.Object
+  
+  @js.native
+  sealed trait u4 extends js.Object
   
   @js.native
   sealed trait u8 extends js.Object
@@ -687,13 +2020,43 @@ object arcgisDashJsDashApiStrings {
   sealed trait underline extends js.Object
   
   @js.native
+  sealed trait undo extends js.Object
+  
+  @js.native
   sealed trait `unique-identifier` extends js.Object
   
   @js.native
   sealed trait `unique-value` extends js.Object
   
   @js.native
+  sealed trait `univariate-color-size` extends js.Object
+  
+  @js.native
+  sealed trait unknown extends js.Object
+  
+  @js.native
+  sealed trait unsupported extends js.Object
+  
+  @js.native
+  sealed trait `up-arrow` extends js.Object
+  
+  @js.native
+  sealed trait update extends js.Object
+  
+  @js.native
+  sealed trait uploaded extends js.Object
+  
+  @js.native
+  sealed trait `upper-left` extends js.Object
+  
+  @js.native
   sealed trait `us-feet` extends js.Object
+  
+  @js.native
+  sealed trait `us-nautical-miles` extends js.Object
+  
+  @js.native
+  sealed trait username extends js.Object
   
   @js.native
   sealed trait value extends js.Object
@@ -702,10 +2065,49 @@ object arcgisDashJsDashApiStrings {
   sealed trait `value-change` extends js.Object
   
   @js.native
+  sealed trait `values-change` extends js.Object
+  
+  @js.native
   sealed trait `var` extends js.Object
   
   @js.native
+  sealed trait `vector-magdir` extends js.Object
+  
+  @js.native
+  sealed trait `vector-tile` extends js.Object
+  
+  @js.native
+  sealed trait `vector-uv` extends js.Object
+  
+  @js.native
+  sealed trait `vertex-add` extends js.Object
+  
+  @js.native
+  sealed trait `vertex-remove` extends js.Object
+  
+  @js.native
+  sealed trait vertical extends js.Object
+  
+  @js.native
+  sealed trait `vertical-reversed` extends js.Object
+  
+  @js.native
   sealed trait view extends js.Object
+  
+  @js.native
+  sealed trait viewpoint extends js.Object
+  
+  @js.native
+  sealed trait visible extends js.Object
+  
+  @js.native
+  sealed trait waiting extends js.Object
+  
+  @js.native
+  sealed trait `waiting-for-target` extends js.Object
+  
+  @js.native
+  sealed trait warning extends js.Object
   
   @js.native
   sealed trait water extends js.Object
@@ -717,16 +2119,235 @@ object arcgisDashJsDashApiStrings {
   sealed trait `web-tile` extends js.Object
   
   @js.native
+  sealed trait weeks extends js.Object
+  
+  @js.native
+  sealed trait width extends js.Object
+  
+  @js.native
+  sealed trait `width-and-depth` extends js.Object
+  
+  @js.native
+  sealed trait within extends js.Object
+  
+  @js.native
+  sealed trait wms extends js.Object
+  
+  @js.native
+  sealed trait wmts extends js.Object
+  
+  @js.native
+  sealed trait x extends js.Object
+  
+  @js.native
+  sealed trait xlarge extends js.Object
+  
+  @js.native
   sealed trait xml extends js.Object
+  
+  @js.native
+  sealed trait xsmall extends js.Object
   
   @js.native
   sealed trait yards extends js.Object
   
   @js.native
+  sealed trait year extends js.Object
+  
+  @js.native
+  sealed trait years extends js.Object
+  
+  @js.native
   sealed trait zoom extends js.Object
   
   @scala.inline
+  def `150-kilometers`: `150-kilometers` = "150-kilometers".asInstanceOf[`150-kilometers`]
+  @scala.inline
+  def `2d`: `2d` = "2d".asInstanceOf[`2d`]
+  @scala.inline
+  def `50-kilometers`: `50-kilometers` = "50-kilometers".asInstanceOf[`50-kilometers`]
+  @scala.inline
+  def AE: AE = "AE".asInstanceOf[AE]
+  @scala.inline
+  def AR: AR = "AR".asInstanceOf[AR]
+  @scala.inline
+  def AT: AT = "AT".asInstanceOf[AT]
+  @scala.inline
+  def AU: AU = "AU".asInstanceOf[AU]
+  @scala.inline
+  def BE: BE = "BE".asInstanceOf[BE]
+  @scala.inline
+  def BG: BG = "BG".asInstanceOf[BG]
+  @scala.inline
+  def BO: BO = "BO".asInstanceOf[BO]
+  @scala.inline
+  def BR: BR = "BR".asInstanceOf[BR]
+  @scala.inline
+  def CA: CA = "CA".asInstanceOf[CA]
+  @scala.inline
+  def CH: CH = "CH".asInstanceOf[CH]
+  @scala.inline
+  def CI: CI = "CI".asInstanceOf[CI]
+  @scala.inline
+  def CL: CL = "CL".asInstanceOf[CL]
+  @scala.inline
+  def CN: CN = "CN".asInstanceOf[CN]
+  @scala.inline
+  def CO: CO = "CO".asInstanceOf[CO]
+  @scala.inline
+  def CR: CR = "CR".asInstanceOf[CR]
+  @scala.inline
+  def CZ: CZ = "CZ".asInstanceOf[CZ]
+  @scala.inline
+  def DE: DE = "DE".asInstanceOf[DE]
+  @scala.inline
+  def DK: DK = "DK".asInstanceOf[DK]
+  @scala.inline
+  def EE: EE = "EE".asInstanceOf[EE]
+  @scala.inline
+  def EG: EG = "EG".asInstanceOf[EG]
+  @scala.inline
+  def ES: ES = "ES".asInstanceOf[ES]
+  @scala.inline
+  def FI: FI = "FI".asInstanceOf[FI]
+  @scala.inline
+  def FR: FR = "FR".asInstanceOf[FR]
+  @scala.inline
+  def GB: GB = "GB".asInstanceOf[GB]
+  @scala.inline
+  def GL: GL = "GL".asInstanceOf[GL]
+  @scala.inline
+  def GR: GR = "GR".asInstanceOf[GR]
+  @scala.inline
+  def GT: GT = "GT".asInstanceOf[GT]
+  @scala.inline
+  def HK: HK = "HK".asInstanceOf[HK]
+  @scala.inline
+  def ID: ID = "ID".asInstanceOf[ID]
+  @scala.inline
+  def IE: IE = "IE".asInstanceOf[IE]
+  @scala.inline
+  def IL: IL = "IL".asInstanceOf[IL]
+  @scala.inline
+  def IN: IN = "IN".asInstanceOf[IN]
+  @scala.inline
+  def IQ: IQ = "IQ".asInstanceOf[IQ]
+  @scala.inline
+  def IS: IS = "IS".asInstanceOf[IS]
+  @scala.inline
+  def IT: IT = "IT".asInstanceOf[IT]
+  @scala.inline
+  def JP: JP = "JP".asInstanceOf[JP]
+  @scala.inline
+  def KE: KE = "KE".asInstanceOf[KE]
+  @scala.inline
+  def KR: KR = "KR".asInstanceOf[KR]
+  @scala.inline
+  def KVP: KVP = "KVP".asInstanceOf[KVP]
+  @scala.inline
+  def KW: KW = "KW".asInstanceOf[KW]
+  @scala.inline
+  def LI: LI = "LI".asInstanceOf[LI]
+  @scala.inline
+  def LT: LT = "LT".asInstanceOf[LT]
+  @scala.inline
+  def LU: LU = "LU".asInstanceOf[LU]
+  @scala.inline
+  def LV: LV = "LV".asInstanceOf[LV]
+  @scala.inline
+  def MA: MA = "MA".asInstanceOf[MA]
+  @scala.inline
+  def MG: MG = "MG".asInstanceOf[MG]
+  @scala.inline
+  def ML: ML = "ML".asInstanceOf[ML]
+  @scala.inline
+  def MO: MO = "MO".asInstanceOf[MO]
+  @scala.inline
+  def MX: MX = "MX".asInstanceOf[MX]
+  @scala.inline
+  def MY: MY = "MY".asInstanceOf[MY]
+  @scala.inline
+  def NI: NI = "NI".asInstanceOf[NI]
+  @scala.inline
+  def NL: NL = "NL".asInstanceOf[NL]
+  @scala.inline
+  def NO: NO = "NO".asInstanceOf[NO]
+  @scala.inline
+  def NZ: NZ = "NZ".asInstanceOf[NZ]
+  @scala.inline
+  def PE: PE = "PE".asInstanceOf[PE]
+  @scala.inline
+  def PL: PL = "PL".asInstanceOf[PL]
+  @scala.inline
+  def PR: PR = "PR".asInstanceOf[PR]
+  @scala.inline
+  def PT: PT = "PT".asInstanceOf[PT]
+  @scala.inline
+  def RESTful: RESTful = "RESTful".asInstanceOf[RESTful]
+  @scala.inline
+  def RO: RO = "RO".asInstanceOf[RO]
+  @scala.inline
+  def RU: RU = "RU".asInstanceOf[RU]
+  @scala.inline
+  def RW: RW = "RW".asInstanceOf[RW]
+  @scala.inline
+  def SE: SE = "SE".asInstanceOf[SE]
+  @scala.inline
+  def SG: SG = "SG".asInstanceOf[SG]
+  @scala.inline
+  def SK: SK = "SK".asInstanceOf[SK]
+  @scala.inline
+  def SR: SR = "SR".asInstanceOf[SR]
+  @scala.inline
+  def SV: SV = "SV".asInstanceOf[SV]
+  @scala.inline
+  def TH: TH = "TH".asInstanceOf[TH]
+  @scala.inline
+  def TN: TN = "TN".asInstanceOf[TN]
+  @scala.inline
+  def TW: TW = "TW".asInstanceOf[TW]
+  @scala.inline
+  def US: US = "US".asInstanceOf[US]
+  @scala.inline
+  def VE: VE = "VE".asInstanceOf[VE]
+  @scala.inline
+  def VI: VI = "VI".asInstanceOf[VI]
+  @scala.inline
+  def ZA: ZA = "ZA".asInstanceOf[ZA]
+  @scala.inline
+  def `a3-landscape`: `a3-landscape` = "a3-landscape".asInstanceOf[`a3-landscape`]
+  @scala.inline
+  def `a3-portrait`: `a3-portrait` = "a3-portrait".asInstanceOf[`a3-portrait`]
+  @scala.inline
+  def `a4-landscape`: `a4-landscape` = "a4-landscape".asInstanceOf[`a4-landscape`]
+  @scala.inline
+  def `a4-portrait`: `a4-portrait` = "a4-portrait".asInstanceOf[`a4-portrait`]
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
+  @scala.inline
+  def `above-after`: `above-after` = "above-after".asInstanceOf[`above-after`]
+  @scala.inline
+  def `above-along`: `above-along` = "above-along".asInstanceOf[`above-along`]
+  @scala.inline
+  def `above-and-below`: `above-and-below` = "above-and-below".asInstanceOf[`above-and-below`]
+  @scala.inline
+  def `above-before`: `above-before` = "above-before".asInstanceOf[`above-before`]
+  @scala.inline
+  def `above-center`: `above-center` = "above-center".asInstanceOf[`above-center`]
+  @scala.inline
+  def `above-end`: `above-end` = "above-end".asInstanceOf[`above-end`]
+  @scala.inline
+  def `above-left`: `above-left` = "above-left".asInstanceOf[`above-left`]
+  @scala.inline
+  def `above-right`: `above-right` = "above-right".asInstanceOf[`above-right`]
+  @scala.inline
+  def `above-start`: `above-start` = "above-start".asInstanceOf[`above-start`]
+  @scala.inline
+  def `absolute-value`: `absolute-value` = "absolute-value".asInstanceOf[`absolute-value`]
+  @scala.inline
   def acres: acres = "acres".asInstanceOf[acres]
+  @scala.inline
+  def active: active = "active".asInstanceOf[active]
   @scala.inline
   def `after-add`: `after-add` = "after-add".asInstanceOf[`after-add`]
   @scala.inline
@@ -740,15 +2361,53 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def `allow-backtrack`: `allow-backtrack` = "allow-backtrack".asInstanceOf[`allow-backtrack`]
   @scala.inline
+  def `always-horizontal`: `always-horizontal` = "always-horizontal".asInstanceOf[`always-horizontal`]
+  @scala.inline
+  def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
+  def area: area = "area".asInstanceOf[area]
+  @scala.inline
   def ares: ares = "ares".asInstanceOf[ares]
+  @scala.inline
+  def arithmetic: arithmetic = "arithmetic".asInstanceOf[arithmetic]
+  @scala.inline
+  def arrow: arrow = "arrow".asInstanceOf[arrow]
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
+  def async: async = "async".asInstanceOf[async]
   @scala.inline
   def `at-dead-ends-and-intersections`: `at-dead-ends-and-intersections` = "at-dead-ends-and-intersections".asInstanceOf[`at-dead-ends-and-intersections`]
   @scala.inline
   def `at-dead-ends-only`: `at-dead-ends-only` = "at-dead-ends-only".asInstanceOf[`at-dead-ends-only`]
   @scala.inline
+  def `at-least`: `at-least` = "at-least".asInstanceOf[`at-least`]
+  @scala.inline
+  def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
+  @scala.inline
+  def attachments: attachments = "attachments".asInstanceOf[attachments]
+  @scala.inline
+  def attribute: attribute = "attribute".asInstanceOf[attribute]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
+  def `auto-complete-polygon`: `auto-complete-polygon` = "auto-complete-polygon".asInstanceOf[`auto-complete-polygon`]
+  @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
+  @scala.inline
+  def `avg-rating`: `avg-rating` = "avg-rating".asInstanceOf[`avg-rating`]
+  @scala.inline
+  def `backward-diagonal`: `backward-diagonal` = "backward-diagonal".asInstanceOf[`backward-diagonal`]
+  @scala.inline
+  def `base-dynamic`: `base-dynamic` = "base-dynamic".asInstanceOf[`base-dynamic`]
+  @scala.inline
+  def `base-elevation`: `base-elevation` = "base-elevation".asInstanceOf[`base-elevation`]
+  @scala.inline
+  def `base-tile`: `base-tile` = "base-tile".asInstanceOf[`base-tile`]
+  @scala.inline
+  def baseline: baseline = "baseline".asInstanceOf[baseline]
   @scala.inline
   def `before-add`: `before-add` = "before-add".asInstanceOf[`before-add`]
   @scala.inline
@@ -756,33 +2415,97 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def `before-remove`: `before-remove` = "before-remove".asInstanceOf[`before-remove`]
   @scala.inline
+  def `below-after`: `below-after` = "below-after".asInstanceOf[`below-after`]
+  @scala.inline
+  def `below-along`: `below-along` = "below-along".asInstanceOf[`below-along`]
+  @scala.inline
+  def `below-before`: `below-before` = "below-before".asInstanceOf[`below-before`]
+  @scala.inline
+  def `below-center`: `below-center` = "below-center".asInstanceOf[`below-center`]
+  @scala.inline
+  def `below-end`: `below-end` = "below-end".asInstanceOf[`below-end`]
+  @scala.inline
+  def `below-left`: `below-left` = "below-left".asInstanceOf[`below-left`]
+  @scala.inline
+  def `below-right`: `below-right` = "below-right".asInstanceOf[`below-right`]
+  @scala.inline
+  def `below-start`: `below-start` = "below-start".asInstanceOf[`below-start`]
+  @scala.inline
+  def `benoit-1895-b-chains`: `benoit-1895-b-chains` = "benoit-1895-b-chains".asInstanceOf[`benoit-1895-b-chains`]
+  @scala.inline
+  def between: between = "between".asInstanceOf[between]
+  @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
+  @scala.inline
+  def bilinear: bilinear = "bilinear".asInstanceOf[bilinear]
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   @scala.inline
+  def `bing-maps`: `bing-maps` = "bing-maps".asInstanceOf[`bing-maps`]
+  @scala.inline
   def bitfield: bitfield = "bitfield".asInstanceOf[bitfield]
+  @scala.inline
+  def blend: blend = "blend".asInstanceOf[blend]
   @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
+  def bmp: bmp = "bmp".asInstanceOf[bmp]
+  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
   def bolder: bolder = "bolder".asInstanceOf[bolder]
   @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
+  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
+  @scala.inline
+  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  @scala.inline
+  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   @scala.inline
   def `building-component`: `building-component` = "building-component".asInstanceOf[`building-component`]
   @scala.inline
   def `building-group`: `building-group` = "building-group".asInstanceOf[`building-group`]
   @scala.inline
+  def `building-scene`: `building-scene` = "building-scene".asInstanceOf[`building-scene`]
+  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
+  @scala.inline
+  def c128: c128 = "c128".asInstanceOf[c128]
+  @scala.inline
+  def c64: c64 = "c64".asInstanceOf[c64]
   @scala.inline
   def calm: calm = "calm".asInstanceOf[calm]
   @scala.inline
+  def capture: capture = "capture".asInstanceOf[capture]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
+  def `center-after`: `center-after` = "center-after".asInstanceOf[`center-after`]
+  @scala.inline
+  def `center-along`: `center-along` = "center-along".asInstanceOf[`center-along`]
+  @scala.inline
+  def `center-before`: `center-before` = "center-before".asInstanceOf[`center-before`]
+  @scala.inline
+  def `center-center`: `center-center` = "center-center".asInstanceOf[`center-center`]
+  @scala.inline
+  def `center-end`: `center-end` = "center-end".asInstanceOf[`center-end`]
+  @scala.inline
+  def `center-left`: `center-left` = "center-left".asInstanceOf[`center-left`]
+  @scala.inline
+  def `center-right`: `center-right` = "center-right".asInstanceOf[`center-right`]
+  @scala.inline
+  def `center-start`: `center-start` = "center-start".asInstanceOf[`center-start`]
+  @scala.inline
+  def `centered-on`: `centered-on` = "centered-on".asInstanceOf[`centered-on`]
+  @scala.inline
   def centimeters: centimeters = "centimeters".asInstanceOf[centimeters]
+  @scala.inline
+  def centuries: centuries = "centuries".asInstanceOf[centuries]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
@@ -794,7 +2517,23 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
+  def clamp: clamp = "clamp".asInstanceOf[clamp]
+  @scala.inline
+  def `clarke-feet`: `clarke-feet` = "clarke-feet".asInstanceOf[`clarke-feet`]
+  @scala.inline
+  def `clarke-links`: `clarke-links` = "clarke-links".asInstanceOf[`clarke-links`]
+  @scala.inline
+  def `clarke-yards`: `clarke-yards` = "clarke-yards".asInstanceOf[`clarke-yards`]
+  @scala.inline
   def `class-breaks`: `class-breaks` = "class-breaks".asInstanceOf[`class-breaks`]
+  @scala.inline
+  def `class-breaks-color`: `class-breaks-color` = "class-breaks-color".asInstanceOf[`class-breaks-color`]
+  @scala.inline
+  def `class-breaks-size`: `class-breaks-size` = "class-breaks-size".asInstanceOf[`class-breaks-size`]
+  @scala.inline
+  def `classed-color`: `classed-color` = "classed-color".asInstanceOf[`classed-color`]
+  @scala.inline
+  def `classed-size`: `classed-size` = "classed-size".asInstanceOf[`classed-size`]
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
@@ -802,9 +2541,15 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   @scala.inline
+  def compass: compass = "compass".asInstanceOf[compass]
+  @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   @scala.inline
   def `complete-no-events`: `complete-no-events` = "complete-no-events".asInstanceOf[`complete-no-events`]
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
+  @scala.inline
+  def contains: contains = "contains".asInstanceOf[contains]
   @scala.inline
   def coordinate: coordinate = "coordinate".asInstanceOf[coordinate]
   @scala.inline
@@ -812,9 +2557,31 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def `count-or-amount`: `count-or-amount` = "count-or-amount".asInstanceOf[`count-or-amount`]
   @scala.inline
+  def create: create = "create".asInstanceOf[create]
+  @scala.inline
+  def created: created = "created".asInstanceOf[created]
+  @scala.inline
+  def `credential-create`: `credential-create` = "credential-create".asInstanceOf[`credential-create`]
+  @scala.inline
+  def cross: cross = "cross".asInstanceOf[cross]
+  @scala.inline
+  def crosses: crosses = "crosses".asInstanceOf[crosses]
+  @scala.inline
+  def csv: csv = "csv".asInstanceOf[csv]
+  @scala.inline
+  def cubic: cubic = "cubic".asInstanceOf[cubic]
+  @scala.inline
   def `cumulative-from-end`: `cumulative-from-end` = "cumulative-from-end".asInstanceOf[`cumulative-from-end`]
   @scala.inline
   def `cumulative-from-start`: `cumulative-from-start` = "cumulative-from-start".asInstanceOf[`cumulative-from-start`]
+  @scala.inline
+  def `cursor-update`: `cursor-update` = "cursor-update".asInstanceOf[`cursor-update`]
+  @scala.inline
+  def dash: dash = "dash".asInstanceOf[dash]
+  @scala.inline
+  def `dash-dot`: `dash-dot` = "dash-dot".asInstanceOf[`dash-dot`]
+  @scala.inline
+  def `data-file`: `data-file` = "data-file".asInstanceOf[`data-file`]
   @scala.inline
   def `data-received`: `data-received` = "data-received".asInstanceOf[`data-received`]
   @scala.inline
@@ -822,9 +2589,33 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def `date-and-time`: `date-and-time` = "date-and-time".asInstanceOf[`date-and-time`]
   @scala.inline
+  def `day-short-month-year`: `day-short-month-year` = "day-short-month-year".asInstanceOf[`day-short-month-year`]
+  @scala.inline
+  def `day-short-month-year-long-time`: `day-short-month-year-long-time` = "day-short-month-year-long-time".asInstanceOf[`day-short-month-year-long-time`]
+  @scala.inline
+  def `day-short-month-year-long-time-24`: `day-short-month-year-long-time-24` = "day-short-month-year-long-time-24".asInstanceOf[`day-short-month-year-long-time-24`]
+  @scala.inline
+  def `day-short-month-year-short-time`: `day-short-month-year-short-time` = "day-short-month-year-short-time".asInstanceOf[`day-short-month-year-short-time`]
+  @scala.inline
+  def `day-short-month-year-short-time-24`: `day-short-month-year-short-time-24` = "day-short-month-year-short-time-24".asInstanceOf[`day-short-month-year-short-time-24`]
+  @scala.inline
+  def days: days = "days".asInstanceOf[days]
+  @scala.inline
+  def decades: decades = "decades".asInstanceOf[decades]
+  @scala.inline
   def `decimal-degrees`: `decimal-degrees` = "decimal-degrees".asInstanceOf[`decimal-degrees`]
   @scala.inline
   def decimeters: decimeters = "decimeters".asInstanceOf[decimeters]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
+  def `default-curve-extension`: `default-curve-extension` = "default-curve-extension".asInstanceOf[`default-curve-extension`]
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
+  def depth: depth = "depth".asInstanceOf[depth]
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
   def description: description = "description".asInstanceOf[description]
   @scala.inline
@@ -832,9 +2623,31 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def detailed: detailed = "detailed".asInstanceOf[detailed]
   @scala.inline
+  def `diagonal-cross`: `diagonal-cross` = "diagonal-cross".asInstanceOf[`diagonal-cross`]
+  @scala.inline
+  def `dialog-create`: `dialog-create` = "dialog-create".asInstanceOf[`dialog-create`]
+  @scala.inline
+  def diameter: diameter = "diameter".asInstanceOf[diameter]
+  @scala.inline
+  def diamond: diamond = "diamond".asInstanceOf[diamond]
+  @scala.inline
+  def dib: dib = "dib".asInstanceOf[dib]
+  @scala.inline
+  def dictionary: dictionary = "dictionary".asInstanceOf[dictionary]
+  @scala.inline
+  def `direct-line`: `direct-line` = "direct-line".asInstanceOf[`direct-line`]
+  @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  @scala.inline
+  def disjoint: disjoint = "disjoint".asInstanceOf[disjoint]
+  @scala.inline
+  def distance: distance = "distance".asInstanceOf[distance]
+  @scala.inline
   def document: document = "document".asInstanceOf[document]
+  @scala.inline
+  def dot: dot = "dot".asInstanceOf[dot]
   @scala.inline
   def `dot-density`: `dot-density` = "dot-density".asInstanceOf[`dot-density`]
   @scala.inline
@@ -842,15 +2655,47 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def `double-click`: `double-click` = "double-click".asInstanceOf[`double-click`]
   @scala.inline
+  def `down-arrow`: `down-arrow` = "down-arrow".asInstanceOf[`down-arrow`]
+  @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
+  @scala.inline
+  def dragging: dragging = "dragging".asInstanceOf[dragging]
+  @scala.inline
+  def `draw-complete`: `draw-complete` = "draw-complete".asInstanceOf[`draw-complete`]
+  @scala.inline
+  def editing: editing = "editing".asInstanceOf[editing]
   @scala.inline
   def edits: edits = "edits".asInstanceOf[edits]
   @scala.inline
+  def elevation: elevation = "elevation".asInstanceOf[elevation]
+  @scala.inline
+  def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
+  @scala.inline
+  def emf: emf = "emf".asInstanceOf[emf]
+  @scala.inline
+  def empty: empty = "empty".asInstanceOf[empty]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
+  def english: english = "english".asInstanceOf[english]
+  @scala.inline
+  def `envelope-intersects`: `envelope-intersects` = "envelope-intersects".asInstanceOf[`envelope-intersects`]
+  @scala.inline
+  def eps: eps = "eps".asInstanceOf[eps]
+  @scala.inline
+  def equal: equal = "equal".asInstanceOf[equal]
+  @scala.inline
+  def `equal-interval`: `equal-interval` = "equal-interval".asInstanceOf[`equal-interval`]
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
   @scala.inline
   def exclude: exclude = "exclude".asInstanceOf[exclude]
   @scala.inline
+  def exclusive: exclusive = "exclusive".asInstanceOf[exclusive]
+  @scala.inline
   def extent: extent = "extent".asInstanceOf[extent]
+  @scala.inline
+  def extremes: extremes = "extremes".asInstanceOf[extremes]
   @scala.inline
   def extrude: extrude = "extrude".asInstanceOf[extrude]
   @scala.inline
@@ -858,27 +2703,65 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def f64: f64 = "f64".asInstanceOf[f64]
   @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
+  def feature: feature = "feature".asInstanceOf[feature]
+  @scala.inline
+  def `feature-record-set-layer`: `feature-record-set-layer` = "feature-record-set-layer".asInstanceOf[`feature-record-set-layer`]
+  @scala.inline
   def feet: feet = "feet".asInstanceOf[feet]
   @scala.inline
+  def field: field = "field".asInstanceOf[field]
+  @scala.inline
+  def fields: fields = "fields".asInstanceOf[fields]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
+  def finished: finished = "finished".asInstanceOf[finished]
+  @scala.inline
+  def first: first = "first".asInstanceOf[first]
   @scala.inline
   def firstOfMany: firstOfMany = "firstOfMany".asInstanceOf[firstOfMany]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
+  def `forward-diagonal`: `forward-diagonal` = "forward-diagonal".asInstanceOf[`forward-diagonal`]
+  @scala.inline
   def `forward-down`: `forward-down` = "forward-down".asInstanceOf[`forward-down`]
   @scala.inline
   def `forward-up`: `forward-up` = "forward-up".asInstanceOf[`forward-up`]
   @scala.inline
+  def freehand: freehand = "freehand".asInstanceOf[freehand]
+  @scala.inline
   def `from-facility`: `from-facility` = "from-facility".asInstanceOf[`from-facility`]
+  @scala.inline
+  def generic: generic = "generic".asInstanceOf[generic]
+  @scala.inline
+  def `geo-rss`: `geo-rss` = "geo-rss".asInstanceOf[`geo-rss`]
   @scala.inline
   def geodesic: geodesic = "geodesic".asInstanceOf[geodesic]
   @scala.inline
+  def geographic: geographic = "geographic".asInstanceOf[geographic]
+  @scala.inline
+  def geojson: geojson = "geojson".asInstanceOf[geojson]
+  @scala.inline
   def geometry: geometry = "geometry".asInstanceOf[geometry]
+  @scala.inline
+  def gif: gif = "gif".asInstanceOf[gif]
   @scala.inline
   def `global-id`: `global-id` = "global-id".asInstanceOf[`global-id`]
   @scala.inline
+  def go: go = "go".asInstanceOf[go]
+  @scala.inline
+  def `going-home`: `going-home` = "going-home".asInstanceOf[`going-home`]
+  @scala.inline
+  def `gold-coast-feet`: `gold-coast-feet` = "gold-coast-feet".asInstanceOf[`gold-coast-feet`]
+  @scala.inline
   def graphics: graphics = "graphics".asInstanceOf[graphics]
+  @scala.inline
+  def `greater-than`: `greater-than` = "greater-than".asInstanceOf[`greater-than`]
+  @scala.inline
+  def group: group = "group".asInstanceOf[group]
   @scala.inline
   def guid: guid = "guid".asInstanceOf[guid]
   @scala.inline
@@ -888,27 +2771,61 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def hectares: hectares = "hectares".asInstanceOf[hectares]
   @scala.inline
+  def height: height = "height".asInstanceOf[height]
+  @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
   def `hide-children`: `hide-children` = "hide-children".asInstanceOf[`hide-children`]
   @scala.inline
+  def `high-four-bit`: `high-four-bit` = "high-four-bit".asInstanceOf[`high-four-bit`]
+  @scala.inline
+  def `high-to-low`: `high-to-low` = "high-to-low".asInstanceOf[`high-to-low`]
+  @scala.inline
+  def `histogram-equalization`: `histogram-equalization` = "histogram-equalization".asInstanceOf[`histogram-equalization`]
+  @scala.inline
   def hold: hold = "hold".asInstanceOf[hold]
   @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
+  def `horizontal-reversed`: `horizontal-reversed` = "horizontal-reversed".asInstanceOf[`horizontal-reversed`]
+  @scala.inline
+  def hours: hours = "hours".asInstanceOf[hours]
+  @scala.inline
   def hsv: hsv = "hsv".asInstanceOf[hsv]
+  @scala.inline
+  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
+  def imagery: imagery = "imagery".asInstanceOf[imagery]
+  @scala.inline
+  def immediate: immediate = "immediate".asInstanceOf[immediate]
+  @scala.inline
   def `immediate-click`: `immediate-click` = "immediate-click".asInstanceOf[`immediate-click`]
   @scala.inline
   def imperial: imperial = "imperial".asInstanceOf[imperial]
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
   @scala.inline
   def inches: inches = "inches".asInstanceOf[inches]
   @scala.inline
   def include: include = "include".asInstanceOf[include]
   @scala.inline
+  def independent: independent = "independent".asInstanceOf[independent]
+  @scala.inline
+  def `index-intersects`: `index-intersects` = "index-intersects".asInstanceOf[`index-intersects`]
+  @scala.inline
+  def `indian-1937-yards`: `indian-1937-yards` = "indian-1937-yards".asInstanceOf[`indian-1937-yards`]
+  @scala.inline
+  def `indian-yards`: `indian-yards` = "indian-yards".asInstanceOf[`indian-yards`]
+  @scala.inline
+  def informative: informative = "informative".asInstanceOf[informative]
+  @scala.inline
   def inherited: inherited = "inherited".asInstanceOf[inherited]
+  @scala.inline
+  def initializing: initializing = "initializing".asInstanceOf[initializing]
   @scala.inline
   def instant: instant = "instant".asInstanceOf[instant]
   @scala.inline
@@ -916,7 +2833,45 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
+  def `integrated-mesh`: `integrated-mesh` = "integrated-mesh".asInstanceOf[`integrated-mesh`]
+  @scala.inline
+  def `interior-intersection`: `interior-intersection` = "interior-intersection".asInstanceOf[`interior-intersection`]
+  @scala.inline
+  def intersection: intersection = "intersection".asInstanceOf[intersection]
+  @scala.inline
+  def intersects: intersects = "intersects".asInstanceOf[intersects]
+  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
+  @scala.inline
+  def `job-cancelled`: `job-cancelled` = "job-cancelled".asInstanceOf[`job-cancelled`]
+  @scala.inline
+  def `job-cancelling`: `job-cancelling` = "job-cancelling".asInstanceOf[`job-cancelling`]
+  @scala.inline
+  def `job-deleted`: `job-deleted` = "job-deleted".asInstanceOf[`job-deleted`]
+  @scala.inline
+  def `job-deleting`: `job-deleting` = "job-deleting".asInstanceOf[`job-deleting`]
+  @scala.inline
+  def `job-executing`: `job-executing` = "job-executing".asInstanceOf[`job-executing`]
+  @scala.inline
+  def `job-failed`: `job-failed` = "job-failed".asInstanceOf[`job-failed`]
+  @scala.inline
+  def `job-new`: `job-new` = "job-new".asInstanceOf[`job-new`]
+  @scala.inline
+  def `job-submitted`: `job-submitted` = "job-submitted".asInstanceOf[`job-submitted`]
+  @scala.inline
+  def `job-succeeded`: `job-succeeded` = "job-succeeded".asInstanceOf[`job-succeeded`]
+  @scala.inline
+  def `job-timed-out`: `job-timed-out` = "job-timed-out".asInstanceOf[`job-timed-out`]
+  @scala.inline
+  def `job-waiting`: `job-waiting` = "job-waiting".asInstanceOf[`job-waiting`]
+  @scala.inline
+  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  @scala.inline
+  def jpgpng: jpgpng = "jpgpng".asInstanceOf[jpgpng]
+  @scala.inline
+  def justify: justify = "justify".asInstanceOf[justify]
+  @scala.inline
+  def `keep-end-attributes`: `keep-end-attributes` = "keep-end-attributes".asInstanceOf[`keep-end-attributes`]
   @scala.inline
   def `key-down`: `key-down` = "key-down".asInstanceOf[`key-down`]
   @scala.inline
@@ -924,9 +2879,13 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def kilometers: kilometers = "kilometers".asInstanceOf[kilometers]
   @scala.inline
+  def kml: kml = "kml".asInstanceOf[kml]
+  @scala.inline
   def `lab-lch`: `lab-lch` = "lab-lch".asInstanceOf[`lab-lch`]
   @scala.inline
   def `label-3d`: `label-3d` = "label-3d".asInstanceOf[`label-3d`]
+  @scala.inline
+  def landscape: landscape = "landscape".asInstanceOf[landscape]
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   @scala.inline
@@ -934,11 +2893,25 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def lastOfMany: lastOfMany = "lastOfMany".asInstanceOf[lastOfMany]
   @scala.inline
+  def layer: layer = "layer".asInstanceOf[layer]
+  @scala.inline
   def `layerview-create`: `layerview-create` = "layerview-create".asInstanceOf[`layerview-create`]
   @scala.inline
   def `layerview-create-error`: `layerview-create-error` = "layerview-create-error".asInstanceOf[`layerview-create-error`]
   @scala.inline
   def `layerview-destroy`: `layerview-destroy` = "layerview-destroy".asInstanceOf[`layerview-destroy`]
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  @scala.inline
+  def `left-arrow`: `left-arrow` = "left-arrow".asInstanceOf[`left-arrow`]
+  @scala.inline
+  def lerc: lerc = "lerc".asInstanceOf[lerc]
+  @scala.inline
+  def `less-than`: `less-than` = "less-than".asInstanceOf[`less-than`]
+  @scala.inline
+  def `letter-ansi-a-landscape`: `letter-ansi-a-landscape` = "letter-ansi-a-landscape".asInstanceOf[`letter-ansi-a-landscape`]
+  @scala.inline
+  def `letter-ansi-a-portrait`: `letter-ansi-a-portrait` = "letter-ansi-a-portrait".asInstanceOf[`letter-ansi-a-portrait`]
   @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
   @scala.inline
@@ -946,19 +2919,93 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def `line-3d`: `line-3d` = "line-3d".asInstanceOf[`line-3d`]
   @scala.inline
+  def `line-coincidence`: `line-coincidence` = "line-coincidence".asInstanceOf[`line-coincidence`]
+  @scala.inline
   def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
+  @scala.inline
+  def `line-touch`: `line-touch` = "line-touch".asInstanceOf[`line-touch`]
+  @scala.inline
+  def `linear-unit`: `linear-unit` = "linear-unit".asInstanceOf[`linear-unit`]
   @scala.inline
   def list: list = "list".asInstanceOf[list]
   @scala.inline
+  def live: live = "live".asInstanceOf[live]
+  @scala.inline
+  def loaded: loaded = "loaded".asInstanceOf[loaded]
+  @scala.inline
+  def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
+  def locate: locate = "locate".asInstanceOf[locate]
+  @scala.inline
+  def `locate-error`: `locate-error` = "locate-error".asInstanceOf[`locate-error`]
+  @scala.inline
+  def locating: locating = "locating".asInstanceOf[locating]
+  @scala.inline
   def `location-or-place-name`: `location-or-place-name` = "location-or-place-name".asInstanceOf[`location-or-place-name`]
   @scala.inline
+  def `lock-raster`: `lock-raster` = "lock-raster".asInstanceOf[`lock-raster`]
+  @scala.inline
+  def log: log = "log".asInstanceOf[log]
+  @scala.inline
   def long: long = "long".asInstanceOf[long]
+  @scala.inline
+  def `long-dash`: `long-dash` = "long-dash".asInstanceOf[`long-dash`]
+  @scala.inline
+  def `long-dash-dot`: `long-dash-dot` = "long-dash-dot".asInstanceOf[`long-dash-dot`]
+  @scala.inline
+  def `long-dash-dot-dot`: `long-dash-dot-dot` = "long-dash-dot-dot".asInstanceOf[`long-dash-dot-dot`]
+  @scala.inline
+  def `long-date`: `long-date` = "long-date".asInstanceOf[`long-date`]
+  @scala.inline
+  def `long-date-long-time`: `long-date-long-time` = "long-date-long-time".asInstanceOf[`long-date-long-time`]
+  @scala.inline
+  def `long-date-long-time-24`: `long-date-long-time-24` = "long-date-long-time-24".asInstanceOf[`long-date-long-time-24`]
+  @scala.inline
+  def `long-date-short-time`: `long-date-short-time` = "long-date-short-time".asInstanceOf[`long-date-short-time`]
+  @scala.inline
+  def `long-date-short-time-24`: `long-date-short-time-24` = "long-date-short-time-24".asInstanceOf[`long-date-short-time-24`]
+  @scala.inline
+  def `long-month-day-year`: `long-month-day-year` = "long-month-day-year".asInstanceOf[`long-month-day-year`]
+  @scala.inline
+  def `long-month-day-year-long-time`: `long-month-day-year-long-time` = "long-month-day-year-long-time".asInstanceOf[`long-month-day-year-long-time`]
+  @scala.inline
+  def `long-month-day-year-long-time-24`: `long-month-day-year-long-time-24` = "long-month-day-year-long-time-24".asInstanceOf[`long-month-day-year-long-time-24`]
+  @scala.inline
+  def `long-month-day-year-short-time`: `long-month-day-year-short-time` = "long-month-day-year-short-time".asInstanceOf[`long-month-day-year-short-time`]
+  @scala.inline
+  def `long-month-day-year-short-time-24`: `long-month-day-year-short-time-24` = "long-month-day-year-short-time-24".asInstanceOf[`long-month-day-year-short-time-24`]
+  @scala.inline
+  def `long-month-year`: `long-month-year` = "long-month-year".asInstanceOf[`long-month-year`]
+  @scala.inline
+  def `low-four-bit`: `low-four-bit` = "low-four-bit".asInstanceOf[`low-four-bit`]
+  @scala.inline
+  def `lower-left`: `lower-left` = "lower-left".asInstanceOf[`lower-left`]
+  @scala.inline
+  def majority: majority = "majority".asInstanceOf[majority]
+  @scala.inline
+  def manual: manual = "manual".asInstanceOf[manual]
+  @scala.inline
+  def `map-image`: `map-image` = "map-image".asInstanceOf[`map-image`]
+  @scala.inline
+  def `map-notes`: `map-notes` = "map-notes".asInstanceOf[`map-notes`]
+  @scala.inline
+  def `map-only`: `map-only` = "map-only".asInstanceOf[`map-only`]
+  @scala.inline
+  def mask: mask = "mask".asInstanceOf[mask]
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
   def `max-change`: `max-change` = "max-change".asInstanceOf[`max-change`]
   @scala.inline
+  def mean: mean = "mean".asInstanceOf[mean]
+  @scala.inline
+  def measured: measured = "measured".asInstanceOf[measured]
+  @scala.inline
   def measurement: measurement = "measurement".asInstanceOf[measurement]
+  @scala.inline
+  def measuring: measuring = "measuring".asInstanceOf[measuring]
+  @scala.inline
+  def media: media = "media".asInstanceOf[media]
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   @scala.inline
@@ -970,33 +3017,83 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def metric: metric = "metric".asInstanceOf[metric]
   @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def miles: miles = "miles".asInstanceOf[miles]
   @scala.inline
   def millimeters: millimeters = "millimeters".asInstanceOf[millimeters]
+  @scala.inline
+  def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
   def `min-change`: `min-change` = "min-change".asInstanceOf[`min-change`]
   @scala.inline
+  def `min-max`: `min-max` = "min-max".asInstanceOf[`min-max`]
+  @scala.inline
+  def minutes: minutes = "minutes".asInstanceOf[minutes]
+  @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
   def moderate: moderate = "moderate".asInstanceOf[moderate]
   @scala.inline
+  def modified: modified = "modified".asInstanceOf[modified]
+  @scala.inline
+  def `modulo-ten`: `modulo-ten` = "modulo-ten".asInstanceOf[`modulo-ten`]
+  @scala.inline
+  def months: months = "months".asInstanceOf[months]
+  @scala.inline
   def `mouse-wheel`: `mouse-wheel` = "mouse-wheel".asInstanceOf[`mouse-wheel`]
+  @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  @scala.inline
+  def `multi-value`: `multi-value` = "multi-value".asInstanceOf[`multi-value`]
   @scala.inline
   def multipart: multipart = "multipart".asInstanceOf[multipart]
   @scala.inline
+  def multipatch: multipatch = "multipatch".asInstanceOf[multipatch]
+  @scala.inline
   def multipoint: multipoint = "multipoint".asInstanceOf[multipoint]
+  @scala.inline
+  def nadir: nadir = "nadir".asInstanceOf[nadir]
   @scala.inline
   def `name-or-title`: `name-or-title` = "name-or-title".asInstanceOf[`name-or-title`]
   @scala.inline
+  def native: native = "native".asInstanceOf[native]
+  @scala.inline
+  def `natural-breaks`: `natural-breaks` = "natural-breaks".asInstanceOf[`natural-breaks`]
+  @scala.inline
   def `nautical-miles`: `nautical-miles` = "nautical-miles".asInstanceOf[`nautical-miles`]
   @scala.inline
+  def nearest: nearest = "nearest".asInstanceOf[nearest]
+  @scala.inline
   def `no-backtrack`: `no-backtrack` = "no-backtrack".asInstanceOf[`no-backtrack`]
+  @scala.inline
+  def `no-end-attributes`: `no-end-attributes` = "no-end-attributes".asInstanceOf[`no-end-attributes`]
+  @scala.inline
+  def `no-extend-at-from`: `no-extend-at-from` = "no-extend-at-from".asInstanceOf[`no-extend-at-from`]
+  @scala.inline
+  def `no-extend-at-to`: `no-extend-at-to` = "no-extend-at-to".asInstanceOf[`no-extend-at-to`]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
+  def northwest: northwest = "northwest".asInstanceOf[northwest]
+  @scala.inline
+  def `not-between`: `not-between` = "not-between".asInstanceOf[`not-between`]
+  @scala.inline
+  def `not-equal`: `not-equal` = "not-equal".asInstanceOf[`not-equal`]
+  @scala.inline
+  def `not-loaded`: `not-loaded` = "not-loaded".asInstanceOf[`not-loaded`]
+  @scala.inline
+  def `num-comments`: `num-comments` = "num-comments".asInstanceOf[`num-comments`]
+  @scala.inline
+  def `num-ratings`: `num-ratings` = "num-ratings".asInstanceOf[`num-ratings`]
+  @scala.inline
+  def `num-views`: `num-views` = "num-views".asInstanceOf[`num-views`]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
@@ -1008,11 +3105,33 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
   @scala.inline
+  def opaque: opaque = "opaque".asInstanceOf[opaque]
+  @scala.inline
+  def `open-street-map`: `open-street-map` = "open-street-map".asInstanceOf[`open-street-map`]
+  @scala.inline
   def `ordered-or-ranked`: `ordered-or-ranked` = "ordered-or-ranked".asInstanceOf[`ordered-or-ranked`]
+  @scala.inline
+  def org: org = "org".asInstanceOf[org]
+  @scala.inline
+  def origin: origin = "origin".asInstanceOf[origin]
+  @scala.inline
+  def overlap: overlap = "overlap".asInstanceOf[overlap]
+  @scala.inline
+  def overlaps: overlaps = "overlaps".asInstanceOf[overlaps]
+  @scala.inline
+  def owner: owner = "owner".asInstanceOf[owner]
   @scala.inline
   def pan: pan = "pan".asInstanceOf[pan]
   @scala.inline
   def path: path = "path".asInstanceOf[path]
+  @scala.inline
+  def pdf: pdf = "pdf".asInstanceOf[pdf]
+  @scala.inline
+  def percent: percent = "percent".asInstanceOf[percent]
+  @scala.inline
+  def `percent-clip`: `percent-clip` = "percent-clip".asInstanceOf[`percent-clip`]
+  @scala.inline
+  def `percent-of-total`: `percent-of-total` = "percent-of-total".asInstanceOf[`percent-of-total`]
   @scala.inline
   def `percentage-or-ratio`: `percentage-or-ratio` = "percentage-or-ratio".asInstanceOf[`percentage-or-ratio`]
   @scala.inline
@@ -1024,9 +3143,21 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def playing: playing = "playing".asInstanceOf[playing]
   @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  @scala.inline
+  def png24: png24 = "png24".asInstanceOf[png24]
+  @scala.inline
+  def png32: png32 = "png32".asInstanceOf[png32]
+  @scala.inline
+  def png8: png8 = "png8".asInstanceOf[png8]
+  @scala.inline
+  def pngjpg: pngjpg = "pngjpg".asInstanceOf[pngjpg]
+  @scala.inline
   def point: point = "point".asInstanceOf[point]
   @scala.inline
   def `point-3d`: `point-3d` = "point-3d".asInstanceOf[`point-3d`]
+  @scala.inline
+  def `point-cloud`: `point-cloud` = "point-cloud".asInstanceOf[`point-cloud`]
   @scala.inline
   def `point-cloud-class-breaks`: `point-cloud-class-breaks` = "point-cloud-class-breaks".asInstanceOf[`point-cloud-class-breaks`]
   @scala.inline
@@ -1035,6 +3166,8 @@ object arcgisDashJsDashApiStrings {
   def `point-cloud-stretch`: `point-cloud-stretch` = "point-cloud-stretch".asInstanceOf[`point-cloud-stretch`]
   @scala.inline
   def `point-cloud-unique-value`: `point-cloud-unique-value` = "point-cloud-unique-value".asInstanceOf[`point-cloud-unique-value`]
+  @scala.inline
+  def `point-touch`: `point-touch` = "point-touch".asInstanceOf[`point-touch`]
   @scala.inline
   def `pointer-down`: `pointer-down` = "pointer-down".asInstanceOf[`pointer-down`]
   @scala.inline
@@ -1054,27 +3187,87 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def polyline: polyline = "polyline".asInstanceOf[polyline]
   @scala.inline
+  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
+  def position: position = "position".asInstanceOf[position]
+  @scala.inline
+  def predominance: predominance = "predominance".asInstanceOf[predominance]
+  @scala.inline
+  def `preserve-shape`: `preserve-shape` = "preserve-shape".asInstanceOf[`preserve-shape`]
+  @scala.inline
   def preview: preview = "preview".asInstanceOf[preview]
   @scala.inline
+  def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
+  def `process-definition`: `process-definition` = "process-definition".asInstanceOf[`process-definition`]
+  @scala.inline
+  def `process-start`: `process-start` = "process-start".asInstanceOf[`process-start`]
+  @scala.inline
+  def `process-stop`: `process-stop` = "process-stop".asInstanceOf[`process-stop`]
+  @scala.inline
+  def processed: processed = "processed".asInstanceOf[processed]
+  @scala.inline
+  def ps: ps = "ps".asInstanceOf[ps]
+  @scala.inline
+  def public: public = "public".asInstanceOf[public]
+  @scala.inline
   def quad: quad = "quad".asInstanceOf[quad]
+  @scala.inline
+  def quantile: quantile = "quantile".asInstanceOf[quantile]
+  @scala.inline
+  def radius: radius = "radius".asInstanceOf[radius]
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   @scala.inline
   def raster: raster = "raster".asInstanceOf[raster]
   @scala.inline
+  def `raster-data`: `raster-data` = "raster-data".asInstanceOf[`raster-data`]
+  @scala.inline
+  def `raster-data-layer`: `raster-data-layer` = "raster-data-layer".asInstanceOf[`raster-data-layer`]
+  @scala.inline
   def `raster-stretch`: `raster-stretch` = "raster-stretch".asInstanceOf[`raster-stretch`]
   @scala.inline
+  def ratio: ratio = "ratio".asInstanceOf[ratio]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
+  def `record-set`: `record-set` = "record-set".asInstanceOf[`record-set`]
+  @scala.inline
+  def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
+  @scala.inline
+  def redo: redo = "redo".asInstanceOf[redo]
+  @scala.inline
+  def relation: relation = "relation".asInstanceOf[relation]
+  @scala.inline
+  def relationship: relationship = "relationship".asInstanceOf[relationship]
+  @scala.inline
+  def relative: relative = "relative".asInstanceOf[relative]
+  @scala.inline
+  def `relocate-ends`: `relocate-ends` = "relocate-ends".asInstanceOf[`relocate-ends`]
+  @scala.inline
+  def repeat: repeat = "repeat".asInstanceOf[repeat]
+  @scala.inline
+  def reshape: reshape = "reshape".asInstanceOf[reshape]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
   def `return`: `return` = "return".asInstanceOf[`return`]
   @scala.inline
+  def `rich-text`: `rich-text` = "rich-text".asInstanceOf[`rich-text`]
+  @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def `right-arrow`: `right-arrow` = "right-arrow".asInstanceOf[`right-arrow`]
+  @scala.inline
   def rippled: rippled = "rippled".asInstanceOf[rippled]
+  @scala.inline
+  def roll: roll = "roll".asInstanceOf[roll]
   @scala.inline
   def rotation: rotation = "rotation".asInstanceOf[rotation]
   @scala.inline
   def round: round = "round".asInstanceOf[round]
+  @scala.inline
+  def running: running = "running".asInstanceOf[running]
   @scala.inline
   def s16: s16 = "s16".asInstanceOf[s16]
   @scala.inline
@@ -1082,15 +3275,73 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def s8: s8 = "s8".asInstanceOf[s8]
   @scala.inline
+  def scene: scene = "scene".asInstanceOf[scene]
+  @scala.inline
+  def scientific: scientific = "scientific".asInstanceOf[scientific]
+  @scala.inline
+  def seamline: seamline = "seamline".asInstanceOf[seamline]
+  @scala.inline
+  def `search-blur`: `search-blur` = "search-blur".asInstanceOf[`search-blur`]
+  @scala.inline
   def `search-clear`: `search-clear` = "search-clear".asInstanceOf[`search-clear`]
   @scala.inline
   def `search-complete`: `search-complete` = "search-complete".asInstanceOf[`search-complete`]
   @scala.inline
+  def `search-focus`: `search-focus` = "search-focus".asInstanceOf[`search-focus`]
+  @scala.inline
   def `search-start`: `search-start` = "search-start".asInstanceOf[`search-start`]
+  @scala.inline
+  def searching: searching = "searching".asInstanceOf[searching]
+  @scala.inline
+  def `sears-1922-truncated-chains`: `sears-1922-truncated-chains` = "sears-1922-truncated-chains".asInstanceOf[`sears-1922-truncated-chains`]
+  @scala.inline
+  def `sears-chains`: `sears-chains` = "sears-chains".asInstanceOf[`sears-chains`]
+  @scala.inline
+  def `sears-feet`: `sears-feet` = "sears-feet".asInstanceOf[`sears-feet`]
+  @scala.inline
+  def `sears-yards`: `sears-yards` = "sears-yards".asInstanceOf[`sears-yards`]
+  @scala.inline
+  def seconds: seconds = "seconds".asInstanceOf[seconds]
+  @scala.inline
+  def `segment-drag`: `segment-drag` = "segment-drag".asInstanceOf[`segment-drag`]
+  @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def `select-bookmark`: `select-bookmark` = "select-bookmark".asInstanceOf[`select-bookmark`]
   @scala.inline
   def `select-result`: `select-result` = "select-result".asInstanceOf[`select-result`]
   @scala.inline
+  def `short-dash`: `short-dash` = "short-dash".asInstanceOf[`short-dash`]
+  @scala.inline
+  def `short-dash-dot`: `short-dash-dot` = "short-dash-dot".asInstanceOf[`short-dash-dot`]
+  @scala.inline
+  def `short-dash-dot-dot`: `short-dash-dot-dot` = "short-dash-dot-dot".asInstanceOf[`short-dash-dot-dot`]
+  @scala.inline
+  def `short-date`: `short-date` = "short-date".asInstanceOf[`short-date`]
+  @scala.inline
+  def `short-date-le`: `short-date-le` = "short-date-le".asInstanceOf[`short-date-le`]
+  @scala.inline
+  def `short-date-le-long-time`: `short-date-le-long-time` = "short-date-le-long-time".asInstanceOf[`short-date-le-long-time`]
+  @scala.inline
+  def `short-date-le-long-time-24`: `short-date-le-long-time-24` = "short-date-le-long-time-24".asInstanceOf[`short-date-le-long-time-24`]
+  @scala.inline
+  def `short-date-le-short-time`: `short-date-le-short-time` = "short-date-le-short-time".asInstanceOf[`short-date-le-short-time`]
+  @scala.inline
+  def `short-date-le-short-time-24`: `short-date-le-short-time-24` = "short-date-le-short-time-24".asInstanceOf[`short-date-le-short-time-24`]
+  @scala.inline
+  def `short-date-long-time`: `short-date-long-time` = "short-date-long-time".asInstanceOf[`short-date-long-time`]
+  @scala.inline
+  def `short-date-long-time-24`: `short-date-long-time-24` = "short-date-long-time-24".asInstanceOf[`short-date-long-time-24`]
+  @scala.inline
+  def `short-date-short-time`: `short-date-short-time` = "short-date-short-time".asInstanceOf[`short-date-short-time`]
+  @scala.inline
+  def `short-dot`: `short-dot` = "short-dot".asInstanceOf[`short-dot`]
+  @scala.inline
+  def `short-month-year`: `short-month-year` = "short-month-year".asInstanceOf[`short-month-year`]
+  @scala.inline
   def show: show = "show".asInstanceOf[show]
+  @scala.inline
+  def sigmoid: sigmoid = "sigmoid".asInstanceOf[sigmoid]
   @scala.inline
   def simple: simple = "simple".asInstanceOf[simple]
   @scala.inline
@@ -1108,6 +3359,10 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def sketch: sketch = "sketch".asInstanceOf[sketch]
   @scala.inline
+  def sliced: sliced = "sliced".asInstanceOf[sliced]
+  @scala.inline
+  def slicing: slicing = "slicing".asInstanceOf[slicing]
+  @scala.inline
   def slight: slight = "slight".asInstanceOf[slight]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
@@ -1115,6 +3370,8 @@ object arcgisDashJsDashApiStrings {
   def `small-integer`: `small-integer` = "small-integer".asInstanceOf[`small-integer`]
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
+  @scala.inline
+  def source: source = "source".asInstanceOf[source]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   @scala.inline
@@ -1134,35 +3391,93 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
+  def `standard-deviation`: `standard-deviation` = "standard-deviation".asInstanceOf[`standard-deviation`]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
   def stddev: stddev = "stddev".asInstanceOf[stddev]
   @scala.inline
+  def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
+  def stopped: stopped = "stopped".asInstanceOf[stopped]
+  @scala.inline
   def straight: straight = "straight".asInstanceOf[straight]
   @scala.inline
+  def stream: stream = "stream".asInstanceOf[stream]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def `suggest-complete`: `suggest-complete` = "suggest-complete".asInstanceOf[`suggest-complete`]
   @scala.inline
   def `suggest-start`: `suggest-start` = "suggest-start".asInstanceOf[`suggest-start`]
   @scala.inline
+  def suggestion: suggestion = "suggestion".asInstanceOf[suggestion]
+  @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
   @scala.inline
   def `summary-only`: `summary-only` = "summary-only".asInstanceOf[`summary-only`]
   @scala.inline
+  def svg: svg = "svg".asInstanceOf[svg]
+  @scala.inline
+  def svgz: svgz = "svgz".asInstanceOf[svgz]
+  @scala.inline
+  def sync: sync = "sync".asInstanceOf[sync]
+  @scala.inline
+  def `tabloid-ansi-b-landscape`: `tabloid-ansi-b-landscape` = "tabloid-ansi-b-landscape".asInstanceOf[`tabloid-ansi-b-landscape`]
+  @scala.inline
+  def `tabloid-ansi-b-portrait`: `tabloid-ansi-b-portrait` = "tabloid-ansi-b-portrait".asInstanceOf[`tabloid-ansi-b-portrait`]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def `text-area`: `text-area` = "text-area".asInstanceOf[`text-area`]
+  @scala.inline
+  def `text-box`: `text-box` = "text-box".asInstanceOf[`text-box`]
+  @scala.inline
+  def thematic: thematic = "thematic".asInstanceOf[thematic]
   @scala.inline
   def `thumb-change`: `thumb-change` = "thumb-change".asInstanceOf[`thumb-change`]
   @scala.inline
   def `thumb-drag`: `thumb-drag` = "thumb-drag".asInstanceOf[`thumb-drag`]
   @scala.inline
+  def tiff: tiff = "tiff".asInstanceOf[tiff]
+  @scala.inline
   def tile: tile = "tile".asInstanceOf[tile]
+  @scala.inline
+  def tilt: tilt = "tilt".asInstanceOf[tilt]
   @scala.inline
   def `time-window`: `time-window` = "time-window".asInstanceOf[`time-window`]
   @scala.inline
+  def title: title = "title".asInstanceOf[title]
+  @scala.inline
   def `to-facility`: `to-facility` = "to-facility".asInstanceOf[`to-facility`]
   @scala.inline
+  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  @scala.inline
   def `token-change`: `token-change` = "token-change".asInstanceOf[`token-change`]
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
+  @scala.inline
+  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
+  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
+  def touch: touch = "touch".asInstanceOf[touch]
+  @scala.inline
+  def touches: touches = "touches".asInstanceOf[touches]
+  @scala.inline
+  def track: track = "track".asInstanceOf[track]
+  @scala.inline
+  def `track-error`: `track-error` = "track-error".asInstanceOf[`track-error`]
+  @scala.inline
+  def tracking: tracking = "tracking".asInstanceOf[tracking]
+  @scala.inline
+  def transform: transform = "transform".asInstanceOf[transform]
+  @scala.inline
+  def triangle: triangle = "triangle".asInstanceOf[triangle]
   @scala.inline
   def `trigger-action`: `trigger-action` = "trigger-action".asInstanceOf[`trigger-action`]
   @scala.inline
@@ -1170,29 +3485,83 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def `true-shape-with-measure`: `true-shape-with-measure` = "true-shape-with-measure".asInstanceOf[`true-shape-with-measure`]
   @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  @scala.inline
   def `type-or-category`: `type-or-category` = "type-or-category".asInstanceOf[`type-or-category`]
+  @scala.inline
+  def u1: u1 = "u1".asInstanceOf[u1]
   @scala.inline
   def u16: u16 = "u16".asInstanceOf[u16]
   @scala.inline
+  def u2: u2 = "u2".asInstanceOf[u2]
+  @scala.inline
   def u32: u32 = "u32".asInstanceOf[u32]
+  @scala.inline
+  def u4: u4 = "u4".asInstanceOf[u4]
   @scala.inline
   def u8: u8 = "u8".asInstanceOf[u8]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline
+  def undo: undo = "undo".asInstanceOf[undo]
+  @scala.inline
   def `unique-identifier`: `unique-identifier` = "unique-identifier".asInstanceOf[`unique-identifier`]
   @scala.inline
   def `unique-value`: `unique-value` = "unique-value".asInstanceOf[`unique-value`]
   @scala.inline
+  def `univariate-color-size`: `univariate-color-size` = "univariate-color-size".asInstanceOf[`univariate-color-size`]
+  @scala.inline
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
+  def unsupported: unsupported = "unsupported".asInstanceOf[unsupported]
+  @scala.inline
+  def `up-arrow`: `up-arrow` = "up-arrow".asInstanceOf[`up-arrow`]
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
+  @scala.inline
+  def uploaded: uploaded = "uploaded".asInstanceOf[uploaded]
+  @scala.inline
+  def `upper-left`: `upper-left` = "upper-left".asInstanceOf[`upper-left`]
+  @scala.inline
   def `us-feet`: `us-feet` = "us-feet".asInstanceOf[`us-feet`]
+  @scala.inline
+  def `us-nautical-miles`: `us-nautical-miles` = "us-nautical-miles".asInstanceOf[`us-nautical-miles`]
+  @scala.inline
+  def username: username = "username".asInstanceOf[username]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline
   def `value-change`: `value-change` = "value-change".asInstanceOf[`value-change`]
   @scala.inline
+  def `values-change`: `values-change` = "values-change".asInstanceOf[`values-change`]
+  @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
+  def `vector-magdir`: `vector-magdir` = "vector-magdir".asInstanceOf[`vector-magdir`]
+  @scala.inline
+  def `vector-tile`: `vector-tile` = "vector-tile".asInstanceOf[`vector-tile`]
+  @scala.inline
+  def `vector-uv`: `vector-uv` = "vector-uv".asInstanceOf[`vector-uv`]
+  @scala.inline
+  def `vertex-add`: `vertex-add` = "vertex-add".asInstanceOf[`vertex-add`]
+  @scala.inline
+  def `vertex-remove`: `vertex-remove` = "vertex-remove".asInstanceOf[`vertex-remove`]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
+  def `vertical-reversed`: `vertical-reversed` = "vertical-reversed".asInstanceOf[`vertical-reversed`]
+  @scala.inline
   def view: view = "view".asInstanceOf[view]
+  @scala.inline
+  def viewpoint: viewpoint = "viewpoint".asInstanceOf[viewpoint]
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
+  @scala.inline
+  def waiting: waiting = "waiting".asInstanceOf[waiting]
+  @scala.inline
+  def `waiting-for-target`: `waiting-for-target` = "waiting-for-target".asInstanceOf[`waiting-for-target`]
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline
   def water: water = "water".asInstanceOf[water]
   @scala.inline
@@ -1200,9 +3569,31 @@ object arcgisDashJsDashApiStrings {
   @scala.inline
   def `web-tile`: `web-tile` = "web-tile".asInstanceOf[`web-tile`]
   @scala.inline
+  def weeks: weeks = "weeks".asInstanceOf[weeks]
+  @scala.inline
+  def width: width = "width".asInstanceOf[width]
+  @scala.inline
+  def `width-and-depth`: `width-and-depth` = "width-and-depth".asInstanceOf[`width-and-depth`]
+  @scala.inline
+  def within: within = "within".asInstanceOf[within]
+  @scala.inline
+  def wms: wms = "wms".asInstanceOf[wms]
+  @scala.inline
+  def wmts: wmts = "wmts".asInstanceOf[wmts]
+  @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  @scala.inline
+  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  @scala.inline
   def xml: xml = "xml".asInstanceOf[xml]
   @scala.inline
+  def xsmall: xsmall = "xsmall".asInstanceOf[xsmall]
+  @scala.inline
   def yards: yards = "yards".asInstanceOf[yards]
+  @scala.inline
+  def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def years: years = "years".asInstanceOf[years]
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
 }

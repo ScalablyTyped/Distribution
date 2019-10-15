@@ -1,10 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`max-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`min-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`value-change`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +15,6 @@ trait ColorSliderViewModel extends SliderViewModel {
     * @default true
     */
   var handlesSyncedToPrimary: Boolean = js.native
-  /**
-    * A modified version of [SliderViewModel.labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction), which is a custom function used to format labels on the thumbs, min, max, and average values. Overrides the default label formatter. This function also supports date formatting.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider-ColorSliderViewModel.html#labelFormatFunction)
-    */
-  @JSName("labelFormatFunction")
-  var labelFormatFunction_Original_ColorSliderViewModel: SmartMappingSliderBaseLabelFormatter = js.native
   /**
     * When `true`, the slider will render a third handle between the two handles already provided by default. This is the primary handle. When [handlesSyncedToPrimary](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider-ColorSliderViewModel.html#handlesSyncedToPrimary) is `true`, then this handle will control the position of the others when moved.
     *
@@ -48,12 +37,6 @@ trait ColorSliderViewModel extends SliderViewModel {
     *
     */
   def getStopInfo(): js.Array[ColorSliderViewModelStopInfo] = js.native
-  @JSName("on")
-  def on_maxchange(name: `max-change`, eventHandler: ColorSliderViewModelMaxChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_minchange(name: `min-change`, eventHandler: ColorSliderViewModelMinChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_valuechange(name: `value-change`, eventHandler: ColorSliderViewModelValueChangeEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.ColorSliderViewModel")

@@ -1,7 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.exclusive
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.independent
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inherited
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +26,7 @@ trait GroupLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#visibilityMode)
     */
-  var visibilityMode: js.UndefOr[String] = js.undefined
+  var visibilityMode: js.UndefOr[independent | inherited | exclusive] = js.undefined
 }
 
 object GroupLayerProperties {
@@ -36,7 +39,7 @@ object GroupLayerProperties {
     opacity: Int | Double = null,
     portalItem: PortalItemProperties = null,
     title: String = null,
-    visibilityMode: String = null,
+    visibilityMode: independent | inherited | exclusive = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): GroupLayerProperties = {
     val __obj = js.Dynamic.literal()
@@ -47,7 +50,7 @@ object GroupLayerProperties {
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (title != null) __obj.updateDynamic("title")(title)
-    if (visibilityMode != null) __obj.updateDynamic("visibilityMode")(visibilityMode)
+    if (visibilityMode != null) __obj.updateDynamic("visibilityMode")(visibilityMode.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     __obj.asInstanceOf[GroupLayerProperties]
   }

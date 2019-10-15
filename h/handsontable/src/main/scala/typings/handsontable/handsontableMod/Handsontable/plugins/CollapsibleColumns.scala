@@ -1,11 +1,12 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins
 
+import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CollapsibleColumns extends Base {
+trait CollapsibleColumns extends BasePlugin {
   var buttonEnabledList: js.Object
   var collapsedSections: js.Object
   var columnHeaderLevelCount: Double
@@ -47,6 +48,7 @@ object CollapsibleColumns {
     expandSection: js.Object => Unit,
     generateIndicator: (Double, HTMLElement) => HTMLElement,
     hiddenColumnsPlugin: js.Object,
+    hot: Core,
     init: () => Unit,
     initialized: Boolean,
     isPluginsReady: Boolean,
@@ -58,10 +60,12 @@ object CollapsibleColumns {
     pluginsInitializedCallback: js.Array[_],
     removeHooks: String => Unit,
     settings: Boolean | js.Array[_],
+    t: RecordTranslator,
     toggleAllCollapsibleSections: String => Unit,
-    toggleCollapsibleSection: (js.Object, String) => Unit
+    toggleCollapsibleSection: (js.Object, String) => Unit,
+    updatePlugin: () => Unit
   ): CollapsibleColumns = {
-    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), buttonEnabledList = buttonEnabledList, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), checkDependencies = js.Any.fromFunction0(checkDependencies), clearHooks = js.Any.fromFunction0(clearHooks), collapseAll = js.Any.fromFunction0(collapseAll), collapseSection = js.Any.fromFunction1(collapseSection), collapsedSections = collapsedSections, columnHeaderLevelCount = columnHeaderLevelCount, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, expandAll = js.Any.fromFunction0(expandAll), expandSection = js.Any.fromFunction1(expandSection), generateIndicator = js.Any.fromFunction2(generateIndicator), hiddenColumnsPlugin = hiddenColumnsPlugin, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, markSectionAs = js.Any.fromFunction4(markSectionAs), meetsDependencies = js.Any.fromFunction0(meetsDependencies), nestedHeadersPlugin = nestedHeadersPlugin, parseSettings = js.Any.fromFunction0(parseSettings), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), settings = settings.asInstanceOf[js.Any], toggleAllCollapsibleSections = js.Any.fromFunction1(toggleAllCollapsibleSections), toggleCollapsibleSection = js.Any.fromFunction2(toggleCollapsibleSection))
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), buttonEnabledList = buttonEnabledList, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), checkDependencies = js.Any.fromFunction0(checkDependencies), clearHooks = js.Any.fromFunction0(clearHooks), collapseAll = js.Any.fromFunction0(collapseAll), collapseSection = js.Any.fromFunction1(collapseSection), collapsedSections = collapsedSections, columnHeaderLevelCount = columnHeaderLevelCount, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, expandAll = js.Any.fromFunction0(expandAll), expandSection = js.Any.fromFunction1(expandSection), generateIndicator = js.Any.fromFunction2(generateIndicator), hiddenColumnsPlugin = hiddenColumnsPlugin, hot = hot, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, markSectionAs = js.Any.fromFunction4(markSectionAs), meetsDependencies = js.Any.fromFunction0(meetsDependencies), nestedHeadersPlugin = nestedHeadersPlugin, parseSettings = js.Any.fromFunction0(parseSettings), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), settings = settings.asInstanceOf[js.Any], t = t, toggleAllCollapsibleSections = js.Any.fromFunction1(toggleAllCollapsibleSections), toggleCollapsibleSection = js.Any.fromFunction2(toggleCollapsibleSection), updatePlugin = js.Any.fromFunction0(updatePlugin))
   
     __obj.asInstanceOf[CollapsibleColumns]
   }

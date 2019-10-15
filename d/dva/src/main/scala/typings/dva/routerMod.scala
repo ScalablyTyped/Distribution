@@ -97,6 +97,12 @@ object routerMod extends js.Object {
     */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
   def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
+  def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
+  def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
     */ typings.dva.dvaStrings.matchPath with js.Any */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
   def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
@@ -114,6 +120,9 @@ object routerMod extends js.Object {
   def useRouteMatch[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.dva.dvaStrings.useRouteMatch with js.Any */](path: String): `match`[Params] | Null = js.native
+  def useRouteMatch[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.dva.dvaStrings.useRouteMatch with js.Any */](path: js.Array[String]): `match`[Params] | Null = js.native
   def useRouteMatch[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.dva.dvaStrings.useRouteMatch with js.Any */](path: RouteProps): `match`[Params] | Null = js.native

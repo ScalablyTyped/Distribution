@@ -19,12 +19,12 @@ trait QueryInterface extends js.Object {
   /**
     * Force to first search around a specific latitude longitude.
     * The option value must be provided as a string: latitude,longitude like 12.232,23.1.
-    * The default is to search around the location of the user determined via his IP address (geoip).
+    * The default is to search around the location of the user determined via their IP address (geoip).
     * https://community.algolia.com/places/api-clients.html#api-options-aroundLatLng
     */
   var aroundLatLng: js.UndefOr[String] = js.undefined
   /**
-    * Whether or not to first search around the geolocation of the user found via his IP address. This is true by default.
+    * Whether or not to first search around the geolocation of the user found via their IP address. This is true by default.
     * https://community.algolia.com/places/api-clients.html#api-options-aroundLatLngViaIP
     */
   var aroundLatLngViaIP: js.UndefOr[String] = js.undefined

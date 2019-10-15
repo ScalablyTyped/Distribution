@@ -14,5 +14,7 @@ trait WebTileLayerConstructor
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html)
   */
 Instantiable0[WebTileLayer]
-     with Instantiable1[/* properties */ WebTileLayerProperties, WebTileLayer]
+     with Instantiable1[/* properties */ WebTileLayerProperties, WebTileLayer] {
+  def fromJSON(json: js.Any): WebTileLayer = js.native
+}
 

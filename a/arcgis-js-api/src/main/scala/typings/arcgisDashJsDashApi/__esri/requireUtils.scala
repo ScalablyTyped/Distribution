@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait requireUtils extends js.Object {
   def when(moduleRequire: js.Any, moduleNames: String): IPromise[_] = js.native
   /**
-    * **Deprecated in favor of [promiseUtils.create()](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#create).** Dynamically requires one or more modules and returns a promise that resolves when all the specified modules have loaded.
+    * Dynamically requires one or more modules and returns a promise that resolves when all the specified modules have loaded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-requireUtils.html#when)
     *

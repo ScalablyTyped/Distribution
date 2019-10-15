@@ -12,6 +12,7 @@ import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.quad
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.round
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.square
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,15 +25,16 @@ trait PathSymbol3DLayerProperties extends Symbol3DLayerProperties {
     * ---------------|---------
     * center | ![anchor-center](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/anchor-center.png)
     * bottom | ![anchor-bottom](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/anchor-bottom.png)
+    * top | ![anchor-top](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/anchor-top.png)
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#anchor)
     *
     * @default "center"
     */
-  var anchor: js.UndefOr[center | bottom] = js.undefined
+  var anchor: js.UndefOr[center | bottom | top] = js.undefined
   /**
-    * Controls the shape at the start and end point of the path. See the table below for possible values.
+    * Controls the shape at the start and end point of the path. `none` will not render the faces that close the path. See the table below for possible values.
     *
     * Possible Value | Example
     * ---------------|---------
@@ -83,7 +85,7 @@ trait PathSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var material: js.UndefOr[PathSymbol3DLayerMaterialProperties] = js.undefined
   /**
-    * Cross-section profile of the path geometry. Setting it to `circle` creates a path with a pipe shape and setting it to `quad` gives the path a rectangular shape.  **Possible values:** circle | quad
+    * Cross-section profile of the path geometry. Setting it to `circle` creates a path with a pipe shape and setting it to `quad` gives the path a rectangular shape.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile)
     *
@@ -91,7 +93,7 @@ trait PathSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var profile: js.UndefOr[circle | quad] = js.undefined
   /**
-    * Defines how the [profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile) is rotated as it is extruded along the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry. The rotation axes (heading, tilt, roll) can be limited to constrain the orientation of the profile in the scene. Setting `profileOrientation` to `all` minimizes the twist along the line and ensures that the diameter of the resulting visualization corresponds to [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#width) and [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#height). Setting `profileOrientation` to `"heading"` ensures that the profile stays upright (no tilt or twist).  Typically, `all` is used for `circle` profiles and `heading` is used for `quad` profiles.  As an example, when setting `heading` on a path with a `quad` profile the path is oriented upright:  ![profileRotation-heading](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/profileRotation-heading.png)  The same path with `profileRotation` set to `all` will rotate in all three degrees of freedom:  ![profileRotation-all](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/profileRotation-all.png)  **Possible values:** heading | all
+    * Defines how the [profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile) is rotated as it is extruded along the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry. The rotation axes (heading, tilt, roll) can be limited to constrain the orientation of the profile in the scene. Setting `profileOrientation` to `all` minimizes the twist along the line and ensures that the diameter of the resulting visualization corresponds to [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#width) and [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#height). Setting `profileOrientation` to `"heading"` ensures that the profile stays upright (no tilt or twist).  Typically, `all` is used for `circle` profiles and `heading` is used for `quad` profiles.  As an example, when setting `heading` on a path with a `quad` profile the path is oriented upright:  ![profileRotation-heading](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/profileRotation-heading.png)  The same path with `profileRotation` set to `all` will rotate in all three degrees of freedom:  ![profileRotation-all](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/profileRotation-all.png)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profileRotation)
     *
@@ -99,7 +101,7 @@ trait PathSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var profileRotation: js.UndefOr[heading | all] = js.undefined
   /**
-    * Sets the width and height of the path in meters. Since this property is deprecated use [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#width) or [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#height) instead.
+    * Sets the width and height of the path in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#size)
     */
@@ -115,7 +117,7 @@ trait PathSymbol3DLayerProperties extends Symbol3DLayerProperties {
 object PathSymbol3DLayerProperties {
   @scala.inline
   def apply(
-    anchor: center | bottom = null,
+    anchor: center | bottom | top = null,
     cap: none | butt | square | round = null,
     castShadows: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,

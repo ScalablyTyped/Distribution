@@ -17,6 +17,7 @@ trait Value extends js.Object {
   var endY: js.UndefOr[Double | Null] = js.undefined
   var f: Double
   var focus: Boolean
+  var miniatureOpen: Boolean
   var mode: Mode
   var startX: js.UndefOr[Double | Null] = js.undefined
   var startY: js.UndefOr[Double | Null] = js.undefined
@@ -37,6 +38,7 @@ object Value {
     e: Double,
     f: Double,
     focus: Boolean,
+    miniatureOpen: Boolean,
     mode: Mode,
     version: `2`,
     viewerHeight: Double,
@@ -46,7 +48,7 @@ object Value {
     startX: Int | Double = null,
     startY: Int | Double = null
   ): Value = {
-    val __obj = js.Dynamic.literal(SVGHeight = SVGHeight, SVGWidth = SVGWidth, a = a, b = b, c = c, d = d, e = e, f = f, focus = focus, mode = mode, version = version, viewerHeight = viewerHeight, viewerWidth = viewerWidth)
+    val __obj = js.Dynamic.literal(SVGHeight = SVGHeight, SVGWidth = SVGWidth, a = a, b = b, c = c, d = d, e = e, f = f, focus = focus, miniatureOpen = miniatureOpen, mode = mode, version = version, viewerHeight = viewerHeight, viewerWidth = viewerWidth)
     if (endX != null) __obj.updateDynamic("endX")(endX.asInstanceOf[js.Any])
     if (endY != null) __obj.updateDynamic("endY")(endY.asInstanceOf[js.Any])
     if (startX != null) __obj.updateDynamic("startX")(startX.asInstanceOf[js.Any])

@@ -1,10 +1,42 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`base-dynamic`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`base-elevation`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`base-tile`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`bing-maps`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`building-scene`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`geo-rss`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`integrated-mesh`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-image`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-notes`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`open-street-map`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-cloud`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-tile`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`web-tile`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.csv
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.elevation
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feature
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geojson
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.graphics
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.group
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imagery
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kml
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.scene
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.stream
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tile
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unsupported
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.wms
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.wmts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,11 +97,11 @@ trait Layer
     */
   var title: String = js.native
   /**
-    * The layer type provides a convenient way to check the type of the layer without the need to import specific layer modules.  **Possible values:** base-dynamic | base-elevation | base-tile | bing-maps | elevation | feature | graphics | group | imagery | integrated-mesh | map-image | open-street-map | point-cloud | scene | stream | tile | unknown | unsupported | vector-tile | web-tile
+    * The layer type provides a convenient way to check the type of the layer without the need to import specific layer modules.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#type)
     */
-  val `type`: String = js.native
+  val `type`: `base-dynamic` | `base-elevation` | `base-tile` | `bing-maps` | `building-scene` | csv | elevation | feature | geojson | `geo-rss` | graphics | group | imagery | `integrated-mesh` | kml | `map-image` | `map-notes` | `open-street-map` | `point-cloud` | scene | stream | tile | unknown | unsupported | `vector-tile` | `web-tile` | wms | wmts = js.native
   /**
     * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). When `false`, the layer may still be added to a [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) instance that is referenced in a view, but its features will not be visible in the view.
     *
@@ -98,6 +130,12 @@ trait Layer
     *
     */
   def fetchAttributionData(): IPromise[_] = js.native
+  @JSName("on")
+  def on_layerviewcreate(name: `layerview-create`, eventHandler: LayerLayerviewCreateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: LayerLayerviewCreateErrorEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: LayerLayerviewDestroyEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.Layer")

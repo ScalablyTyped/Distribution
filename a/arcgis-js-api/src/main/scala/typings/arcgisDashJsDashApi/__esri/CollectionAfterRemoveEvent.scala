@@ -1,0 +1,19 @@
+package typings.arcgisDashJsDashApi.__esri
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CollectionAfterRemoveEvent extends js.Object {
+  var item: js.Any
+}
+
+object CollectionAfterRemoveEvent {
+  @scala.inline
+  def apply(item: js.Any): CollectionAfterRemoveEvent = {
+    val __obj = js.Dynamic.literal(item = item)
+  
+    __obj.asInstanceOf[CollectionAfterRemoveEvent]
+  }
+}
+

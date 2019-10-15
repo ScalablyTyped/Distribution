@@ -232,7 +232,7 @@ object amAngularGaugeMod extends js.Object {
     var startEffect: String = js.native
     /**
       * Charts will use SVG icons (some are loaded from images folder and some are drawn inline)
-      * if browser supports SVG. his makes icons look good on retina displays on all resolutions.
+      * if browser supports SVG. This makes icons look good on retina displays on all resolutions.
       * @default true
       */
     var svgIcons: Boolean = js.native
@@ -249,7 +249,7 @@ object amAngularGaugeMod extends js.Object {
     var tapToActivate: Boolean = js.native
     /**
       * If you set it to 200 (milliseconds) or so, the chart will fire clickGraphItem or clickSlice (AmSlicedChart)
-      * or clickMapObject only if user holds his/her finger for 0.2 seconds (200 ms) on the
+      * or clickMapObject only if user holds their finger for 0.2 seconds (200 ms) on the
       * column/bullet/slice/map object.
       * @default 0
       */

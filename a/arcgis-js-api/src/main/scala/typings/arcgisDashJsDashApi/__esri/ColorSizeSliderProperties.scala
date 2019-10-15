@@ -32,7 +32,8 @@ object ColorSizeSliderProperties {
     max: Int | Double = null,
     min: Int | Double = null,
     stops: js.Array[ColorSizeStop] = null,
-    viewModel: ColorSizeSliderViewModelProperties = null
+    viewModel: ColorSizeSliderViewModelProperties = null,
+    zoomOptions: SmartMappingSliderBaseZoomOptions = null
   ): ColorSizeSliderProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
@@ -45,6 +46,7 @@ object ColorSizeSliderProperties {
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops)
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions)
     __obj.asInstanceOf[ColorSizeSliderProperties]
   }
 }

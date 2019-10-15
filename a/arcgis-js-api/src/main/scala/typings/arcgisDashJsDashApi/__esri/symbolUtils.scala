@@ -25,6 +25,20 @@ trait symbolUtils extends js.Object {
   def getDisplayedSymbol(graphic: Graphic): IPromise[Symbol] = js.native
   def getDisplayedSymbol(graphic: Graphic, options: symbolUtilsGetDisplayedSymbolOptions): IPromise[Symbol] = js.native
   /**
+    * Generates a preview image of a color ramp to display in a custom widget or other DOM element.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
+    *
+    * @param colors An array of colors from which to construct the color ramp.
+    * @param options Formatting options for the color ramp.
+    * @param options.align Specifies the alignment of the color ramp.  **Possible Values:** horizontal | vertical
+    * @param options.width The width of the ramp in pixels.
+    * @param options.height The height of the ramp in pixels.
+    *
+    */
+  def renderColorRampPreviewHTML(colors: js.Array[Color]): HTMLElement = js.native
+  def renderColorRampPreviewHTML(colors: js.Array[Color], options: symbolUtilsRenderColorRampPreviewHTMLOptions): HTMLElement = js.native
+  /**
     * Generates a preview image of a given symbol that can be displayed in a custom widget or other DOM element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)

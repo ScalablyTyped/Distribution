@@ -38,7 +38,7 @@ trait FillSymbol3DLayer
     */
   var outline: FillSymbol3DLayerOutline = js.native
   /**
-    * For FillSymbol3DLayer the type is always `fill`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#type)
     */

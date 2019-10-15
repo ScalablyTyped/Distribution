@@ -14,6 +14,12 @@ trait relationshipRendererResult extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html#RendererResult)
+    */
+  var basemapTheme: String
+  /**
     * Describes each class break for both fields considered in the relationship visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html#RendererResult)
@@ -43,6 +49,7 @@ object relationshipRendererResult {
   @scala.inline
   def apply(
     basemapId: String,
+    basemapTheme: String,
     classBreaks: RendererResultClassBreaks,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -51,7 +58,7 @@ object relationshipRendererResult {
     renderer: UniqueValueRenderer,
     uniqueValueInfos: js.Array[typeUniqueValueInfo]
   ): relationshipRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaks = classBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipScheme = relationshipScheme, renderer = renderer, uniqueValueInfos = uniqueValueInfos)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, classBreaks = classBreaks, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipScheme = relationshipScheme, renderer = renderer, uniqueValueInfos = uniqueValueInfos)
   
     __obj.asInstanceOf[relationshipRendererResult]
   }

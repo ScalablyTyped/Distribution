@@ -1,11 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`open-street-map`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`web-tile`
 import typings.std.HTMLImageElement
 import scala.scalajs.js
@@ -16,7 +13,8 @@ import scala.scalajs.js.annotation._
 trait WebTileLayer
   extends Layer
      with ScaleRangeLayer
-     with RefreshableLayer {
+     with RefreshableLayer
+     with PortalLayer {
   /**
     * The attribution information for the layer.
     *
@@ -55,7 +53,7 @@ trait WebTileLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html#type)
     */
   @JSName("type")
-  val type_WebTileLayer: `web-tile` = js.native
+  val type_WebTileLayer: `web-tile` | `open-street-map` = js.native
   /**
     * URL template for the hosted tiles. The `urlTemplate` should contain a `{subDomain}` place holder if [subDomains](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html#subDomains) are specified.
     *
@@ -88,12 +86,6 @@ trait WebTileLayer
     *
     */
   def getTileUrl(level: Double, row: Double, column: Double): String = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: WebTileLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: WebTileLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: WebTileLayerLayerviewDestroyEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.WebTileLayer")

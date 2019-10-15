@@ -11,7 +11,7 @@ package object rebassMod {
 
   // tslint:disable-next-line no-empty-interface
   type LinkKnownProps = BoxKnownProps
-  type SxStyleProp = SystemStyleObject with (Record[
+  type SxStyleProp = SystemStyleObject | (Record[
     String, 
     SystemStyleObject | (ResponsiveStyleValue[Double | String]) | (Record[String, SystemStyleObject | (ResponsiveStyleValue[Double | String])])
   ])

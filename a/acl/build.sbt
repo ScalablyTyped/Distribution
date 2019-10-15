@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "acl"
-version := "0.4-dt-20190524Z-290938"
+version := "0.4-dt-20190524Z-fd1241"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-347560",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191014Z-347560",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-a83d81",
   "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-5fdfe6",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-e438a4",

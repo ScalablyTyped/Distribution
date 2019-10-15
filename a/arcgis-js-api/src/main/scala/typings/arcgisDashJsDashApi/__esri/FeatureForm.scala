@@ -1,6 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`value-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.submit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,14 +57,10 @@ trait FeatureForm extends Widget {
     *
     */
   def getValues(): js.Any = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_submit(name: submit, eventHandler: FeatureFormSubmitEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_valuechange(name: `value-change`, eventHandler: FeatureFormValueChangeEventHandler): IHandle = js.native
   /**
     * Fires the [submit](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#event-submit) event.
     *

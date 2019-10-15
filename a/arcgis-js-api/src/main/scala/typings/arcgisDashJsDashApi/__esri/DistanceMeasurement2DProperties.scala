@@ -31,11 +31,15 @@ trait DistanceMeasurement2DProperties extends WidgetProperties {
     metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
   ] = js.undefined
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the distance values. By default, the following units are included: `metric`, `imperial`, `inches`, `feet`, `us-feet`, `yards`, `miles`, `nautical-miles`, `meters`, `kilometers`.
+    * List of available units and unit systems (imperial, metric) for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#unitOptions)
     */
-  var unitOptions: js.UndefOr[js.Array[String]] = js.undefined
+  var unitOptions: js.UndefOr[
+    js.Array[
+      metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+    ]
+  ] = js.undefined
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
     *
@@ -59,7 +63,9 @@ object DistanceMeasurement2DProperties {
     id: String = null,
     label: String = null,
     unit: metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers = null,
-    unitOptions: js.Array[String] = null,
+    unitOptions: js.Array[
+      metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+    ] = null,
     view: MapViewProperties = null,
     viewModel: DistanceMeasurement2DViewModel = null
   ): DistanceMeasurement2DProperties = {

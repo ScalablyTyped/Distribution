@@ -30,7 +30,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
   var overlay: js.UndefOr[HTMLIonPopoverElement] = js.native
   val props: (Pick[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-    id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+    id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
   ]) with Anon_ChildrenReactNode with ReactOverlayProps with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native
   var state: js.Object = js.native
@@ -38,7 +38,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
   def componentDidUpdate(
     prevProps: (Pick[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-      id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+      id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
     ]) with Anon_ChildrenReactNode with ReactOverlayProps
   ): js.Promise[Unit] = js.native
   def componentWillUnmount(): Unit = js.native
@@ -48,7 +48,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
   def present(
     prevProps: (Pick[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-      id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+      id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
     ]) with Anon_ChildrenReactNode with ReactOverlayProps
   ): js.Promise[Unit] = js.native
   def render(): ReactPortal = js.native
@@ -58,7 +58,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
       /* prevState */ js.Object, 
       /* props */ (Pick[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-        id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+        id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
       ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
       js.Object | (Pick[js.Object, K]) | Null
     ]
@@ -68,7 +68,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
       /* prevState */ js.Object, 
       /* props */ (Pick[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-        id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+        id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
       ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
       js.Object | (Pick[js.Object, K]) | Null
     ],

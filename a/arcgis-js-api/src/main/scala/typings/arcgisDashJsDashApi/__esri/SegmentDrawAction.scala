@@ -1,6 +1,12 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`cursor-update`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`draw-complete`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertex-add`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.click
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.freehand
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +26,7 @@ trait SegmentDrawAction extends DrawAction {
     *
     * @default freehand
     */
-  var mode: String = js.native
+  var mode: freehand | click = js.native
   /**
     * Two-dimensional array of numbers representing the coordinates of each vertex comprising the geometry being drawn.
     *
@@ -35,6 +41,12 @@ trait SegmentDrawAction extends DrawAction {
     *
     */
   def complete(): Unit = js.native
+  @JSName("on")
+  def on_cursorupdate(name: `cursor-update`, eventHandler: SegmentDrawActionCursorUpdateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_drawcomplete(name: `draw-complete`, eventHandler: SegmentDrawActionDrawCompleteEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_vertexadd(name: `vertex-add`, eventHandler: SegmentDrawActionVertexAddEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.SegmentDrawAction")

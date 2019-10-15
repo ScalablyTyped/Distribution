@@ -41,7 +41,6 @@ import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuToggleElem
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNavElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNoteElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerColumnElement
-import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonProgressBarElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioGroupElement
@@ -371,12 +370,6 @@ object distTypesComponentsProxiesMod extends js.Object {
       HTMLAttributes[HTMLIonNoteElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonNoteElement]
-  ] = js.native
-  val IonPicker: ForwardRefExoticComponent[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPicker */ js.Any) with (Pick[
-      HTMLAttributes[HTMLIonPickerElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
-    ]) with IonicReactProps with RefAttributes[HTMLIonPickerElement]
   ] = js.native
   val IonPickerColumn: ForwardRefExoticComponent[
     (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPickerColumn */ js.Any) with (Pick[

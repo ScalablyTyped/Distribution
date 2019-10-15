@@ -1,11 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.elevation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +12,14 @@ trait ElevationLayer
   extends Layer
      with ArcGISCachedService
      with PortalLayer {
+  /**
+    * The [image service's metadata JSON](https://developers.arcgis.com/rest/services-reference/image-service.htm) exposed by the ArcGIS REST API. While most commonly used [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#properties-summary) are exposed on the ElevationLayer class directly, this property gives access to all information returned by the elevation image service. This property is useful if working in an application built using an older version of the API which requires access to elevation image service properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#sourceJSON)
+    */
+  var sourceJSON: js.Any = js.native
+  @JSName("type")
+  val type_ElevationLayer: elevation = js.native
   /**
     * URL pointing to the Elevation layer resource on an ArcGIS Image Server.
     *
@@ -68,12 +73,6 @@ trait ElevationLayer
     *
     */
   def getTileUrl(level: Double, row: Double, col: Double): String = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: ElevationLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: ElevationLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: ElevationLayerLayerviewDestroyEventHandler): IHandle = js.native
   def queryElevation(geometry: Multipoint): IPromise[ElevationLayerElevationQueryResult] = js.native
   def queryElevation(geometry: Multipoint, options: ElevationLayerQueryElevationOptions): IPromise[ElevationLayerElevationQueryResult] = js.native
   /**

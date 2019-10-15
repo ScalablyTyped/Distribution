@@ -2,16 +2,17 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`us-feet`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geodesic
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imperial
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inches
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.measured
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.measuring
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.planar
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation._
 class DistanceMeasurement2DViewModelCls () extends DistanceMeasurement2DViewModel {
   def this(properties: js.Any) = this()
   /**
-    * The threshold distance used by the "auto" mode to switch between planar and geodesic linear computations. The threshold is measured in meters.
+    * When the coordinate sustem is projected (other than web mercator) then distances less than this threshold will be computed planimetrically. Otherwise distances will be computed geodetically.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#geodesicDistanceThreshold)
     *
@@ -38,30 +39,14 @@ class DistanceMeasurement2DViewModelCls () extends DistanceMeasurement2DViewMode
   /* CompleteClass */
   override val measurement: DistanceMeasurement2DViewModelMeasurement = js.native
   /**
-    * This property returns the locale specific representation of the length. Lengths are rounded to two decimal places. Lengths are sourced from the [measurement](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#measurement) property (in meters) and converted to the user defined units or system and mode.
+    * This property returns the locale specific representation of the length. Lengths are rounded to two decimal places. Lengths are sourced from the [measurement](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#measurement) property (in meters) and converted to the user defined units or system.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#measurementLabel)
     */
   /* CompleteClass */
   override val measurementLabel: String = js.native
   /**
-    * The mode used to calculate the length of lines.  **Possible Values:** auto | planar | geodesic
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#mode)
-    *
-    * @default auto
-    */
-  /* CompleteClass */
-  override var mode: auto | planar | geodesic = js.native
-  /**
-    * An array of valid mode values. By default, the following units are included: `auto`, `planar`, `geodesic`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#modes)
-    */
-  /* CompleteClass */
-  override val modes: js.Array[String] = js.native
-  /**
-    * The view model's state.  **Possible Values:** disabled | ready | measuring | measured
+    * The view model's state.
     *
     *    Value    | Description
     * ------------|-------------
@@ -76,21 +61,23 @@ class DistanceMeasurement2DViewModelCls () extends DistanceMeasurement2DViewMode
     * @default disabled
     */
   /* CompleteClass */
-  override val state: String = js.native
+  override val state: disabled | ready | measuring | measured = js.native
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the distance values.  **Possible Values:** metric | imperial | inches | feet | us-feet | yards | miles | nautical-miles | meters | kilometers
+    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#unit)
     */
   /* CompleteClass */
   override var unit: metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers = js.native
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the distance values. By default, the following units are included: `metric`, `imperial`, `inches`, `feet`, `us-feet`, `yards`, `miles`, `nautical-miles`, `meters`, `kilometers`.
+    * List of available units and unit systems (imperial, metric) for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#unitOptions)
     */
   /* CompleteClass */
-  override var unitOptions: js.Array[String] = js.native
+  override var unitOptions: js.Array[
+    metric | imperial | inches | feet | `us-feet` | yards | miles | `nautical-miles` | meters | kilometers
+  ] = js.native
   /**
     * The view from which the widget will operate.
     *

@@ -1,6 +1,5 @@
 package typings.stripe.stripeMod.paymentIntents
 
-import typings.stripe.Anon_Card
 import typings.stripe.stripeMod.IList
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IResourceObject
@@ -56,7 +55,7 @@ trait IPaymentIntent extends IResourceObject {
   /**
     * User-given reason for cancellation of this PaymentIntent.
     */
-  var cancellation_reason: PaymentIntentCancellationReason | Null
+  var cancellation_reason: PaymentIntentUserProvidedCancellationReason | PaymentIntentStripeProvidedCancellationReason | Null
   /**
     * Capture method of this PaymentIntent.
     */
@@ -115,7 +114,7 @@ trait IPaymentIntent extends IResourceObject {
   /**
     * Payment-method-specific configuration for this PaymentIntent.
     */
-  var payment_method_options: js.UndefOr[Anon_Card] = js.undefined
+  var payment_method_options: js.UndefOr[IPaymentMethodOptions] = js.undefined
   /**
     * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use.
     */
@@ -180,13 +179,13 @@ object IPaymentIntent {
     application: String | IApplication = null,
     application_fee_amount: Int | Double = null,
     canceled_at: Int | Double = null,
-    cancellation_reason: PaymentIntentCancellationReason = null,
+    cancellation_reason: PaymentIntentUserProvidedCancellationReason | PaymentIntentStripeProvidedCancellationReason = null,
     customer: String | ICustomer = null,
     description: String = null,
     last_payment_error: IStripeError = null,
     on_behalf_of: String = null,
     payment_method: String = null,
-    payment_method_options: Anon_Card = null,
+    payment_method_options: IPaymentMethodOptions = null,
     receipt_email: String = null,
     review: String | IReview = null,
     setup_future_usage: PaymentIntentFutureUsageType = null,
@@ -201,7 +200,7 @@ object IPaymentIntent {
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
     if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
-    if (cancellation_reason != null) __obj.updateDynamic("cancellation_reason")(cancellation_reason)
+    if (cancellation_reason != null) __obj.updateDynamic("cancellation_reason")(cancellation_reason.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (last_payment_error != null) __obj.updateDynamic("last_payment_error")(last_payment_error)

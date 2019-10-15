@@ -1,6 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.blend
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mask
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.opaque
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +34,7 @@ trait MeshMaterial extends Accessor {
     *
     * @default "auto"
     */
-  var alphaMode: String = js.native
+  var alphaMode: auto | blend | opaque | mask = js.native
   /**
     * Allows to specify a single, uniform color for the mesh component. This can be autocast with a named string, hex string, array of rgb or rgba values, an object with `r`, `g`, `b`, and `a` properties, or a [Color](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html) object.
     *
@@ -52,7 +56,7 @@ trait MeshMaterial extends Accessor {
     */
   var doubleSided: Boolean = js.native
   /**
-    * Allows to specify a texture to get normal information from. The texture is accessed using the uv coordinate specified for each vertex in the mesh vertex attributes. Normal mapping requires also for tangents to be specified in the mesh vertex attributes.
+    * Allows to specify a texture to get normal information from. The texture is accessed using the uv coordinate specified for each vertex in the mesh vertex attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#normalTexture)
     */

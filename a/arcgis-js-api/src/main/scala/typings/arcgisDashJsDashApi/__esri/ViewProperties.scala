@@ -19,6 +19,12 @@ trait ViewProperties extends DOMContainerProperties {
     */
   var animation: js.UndefOr[ViewAnimationProperties] = js.undefined
   /**
+    * Represents the view for a single basemap after it has been added to the map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#basemapView)
+    */
+  var basemapView: js.UndefOr[BasemapViewProperties] = js.undefined
+  /**
     * A fatal [error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) returned when the view loses its WebGL context. Watch this property to properly handle the error and attempt to recover the WebGL context.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#fatalError)
@@ -81,6 +87,7 @@ object ViewProperties {
   def apply(
     allLayerViews: CollectionProperties[LayerViewProperties] = null,
     animation: ViewAnimationProperties = null,
+    basemapView: BasemapViewProperties = null,
     container: HTMLDivElement | String = null,
     fatalError: Error = null,
     graphics: CollectionProperties[GraphicProperties] = null,
@@ -95,6 +102,7 @@ object ViewProperties {
     val __obj = js.Dynamic.literal()
     if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (basemapView != null) __obj.updateDynamic("basemapView")(basemapView)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError)
     if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])

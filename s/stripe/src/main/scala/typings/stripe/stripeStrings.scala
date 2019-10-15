@@ -4,13 +4,14 @@ import typings.stripe.stripeMod.creditNotes.CreditNoteReason
 import typings.stripe.stripeMod.customerBalanceTransactions.CustomerBalanceTransactionType
 import typings.stripe.stripeMod.customerTaxIds.TaxIdType
 import typings.stripe.stripeMod.errors.RawType
-import typings.stripe.stripeMod.fileUploads.IPurpose
+import typings.stripe.stripeMod.files.IPurpose
 import typings.stripe.stripeMod.orders.OrderStatus
 import typings.stripe.stripeMod.paymentIntents.PaymentIntendDataFutureUsageOptions
-import typings.stripe.stripeMod.paymentIntents.PaymentIntentCancellationReason
 import typings.stripe.stripeMod.paymentIntents.PaymentIntentDataCaptureMethodOptions
 import typings.stripe.stripeMod.paymentIntents.PaymentIntentFutureUsageType
 import typings.stripe.stripeMod.paymentIntents.PaymentIntentPaymentMethodType
+import typings.stripe.stripeMod.paymentIntents.PaymentIntentStripeProvidedCancellationReason
+import typings.stripe.stripeMod.paymentIntents.PaymentIntentUserProvidedCancellationReason
 import typings.stripe.stripeMod.paymentMethods.CardBrand
 import typings.stripe.stripeMod.payouts.PayoutMethods
 import typings.stripe.stripeMod.payouts.PayoutTypes
@@ -78,7 +79,9 @@ object stripeStrings {
   sealed trait Visa extends js.Object
   
   @js.native
-  sealed trait abandoned extends SetupIntentCancelationReason
+  sealed trait abandoned
+    extends PaymentIntentUserProvidedCancellationReason
+       with SetupIntentCancelationReason
   
   @js.native
   sealed trait accepted extends js.Object
@@ -156,7 +159,9 @@ object stripeStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait automatic extends PaymentIntentDataCaptureMethodOptions
+  sealed trait automatic
+    extends PaymentIntentDataCaptureMethodOptions
+       with PaymentIntentStripeProvidedCancellationReason
   
   @js.native
   sealed trait available extends js.Object
@@ -313,7 +318,7 @@ object stripeStrings {
   @js.native
   sealed trait duplicate
     extends CreditNoteReason
-       with PaymentIntentCancellationReason
+       with PaymentIntentUserProvidedCancellationReason
        with SetupIntentCancelationReason
   
   @js.native
@@ -359,7 +364,7 @@ object stripeStrings {
   sealed trait failed extends Statuses
   
   @js.native
-  sealed trait failed_invoice extends PaymentIntentCancellationReason
+  sealed trait failed_invoice extends PaymentIntentStripeProvidedCancellationReason
   
   @js.native
   sealed trait female extends js.Object
@@ -368,7 +373,7 @@ object stripeStrings {
   sealed trait fi extends js.Object
   
   @js.native
-  sealed trait file_upload extends js.Object
+  sealed trait file extends js.Object
   
   @js.native
   sealed trait finite extends js.Object
@@ -385,7 +390,7 @@ object stripeStrings {
   @js.native
   sealed trait fraudulent
     extends CreditNoteReason
-       with PaymentIntentCancellationReason
+       with PaymentIntentUserProvidedCancellationReason
   
   @js.native
   sealed trait friday extends js.Object
@@ -757,7 +762,7 @@ object stripeStrings {
   
   @js.native
   sealed trait requested_by_customer
-    extends PaymentIntentCancellationReason
+    extends PaymentIntentUserProvidedCancellationReason
        with SetupIntentCancelationReason
   
   @js.native
@@ -998,6 +1003,9 @@ object stripeStrings {
   
   @js.native
   sealed trait void extends js.Object
+  
+  @js.native
+  sealed trait void_invoice extends PaymentIntentStripeProvidedCancellationReason
   
   @js.native
   sealed trait volume extends js.Object
@@ -1249,7 +1257,7 @@ object stripeStrings {
   @scala.inline
   def fi: fi = "fi".asInstanceOf[fi]
   @scala.inline
-  def file_upload: file_upload = "file_upload".asInstanceOf[file_upload]
+  def file: file = "file".asInstanceOf[file]
   @scala.inline
   def finite: finite = "finite".asInstanceOf[finite]
   @scala.inline
@@ -1660,6 +1668,8 @@ object stripeStrings {
   def visa_checkout: visa_checkout = "visa_checkout".asInstanceOf[visa_checkout]
   @scala.inline
   def void: void = "void".asInstanceOf[void]
+  @scala.inline
+  def void_invoice: void_invoice = "void_invoice".asInstanceOf[void_invoice]
   @scala.inline
   def volume: volume = "volume".asInstanceOf[volume]
   @scala.inline

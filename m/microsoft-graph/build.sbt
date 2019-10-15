@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microsoft-graph"
-version := "1.10-dt-20190722Z-644eac"
+version := "1.10-dt-20191014Z-e6256c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

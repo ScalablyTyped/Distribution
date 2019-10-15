@@ -95,9 +95,9 @@ trait Timeline extends js.Object {
     * "both" (default) : both
     *
     * axis: String
-    * "center" (default)      : the node is flipped around his center
-    * "shortside"             : the node is flipped around his "short" (in perspective) side
-    * "longside"              : the node is flipped around his "long" (in perspective) side
+    * "center" (default)      : the node is flipped around its center
+    * "shortside"             : the node is flipped around its "short" (in perspective) side
+    * "longside"              : the node is flipped around its "long" (in perspective) side
     * "cube"                  : the node flips around the central axis of the cube
     *
     * shift: Integer:

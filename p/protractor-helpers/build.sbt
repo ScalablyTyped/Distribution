@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "protractor-helpers"
-version := "v1.0.0-dt-20190329Z-f8e65d"
+version := "v1.0.0-dt-20190329Z-9684af"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20190924Z-89fa08",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20191014Z-db0333",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

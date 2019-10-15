@@ -2,6 +2,10 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`private`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.english
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PortalUser extends Accessor {
   /**
-    * Indicates the level of access of the user. If private, the user descriptive information will not be available to others nor will the username be searchable.  **Possible Values:** private | org | public
+    * Indicates the level of access of the user. If private, the user descriptive information will not be available to others nor will the username be searchable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#access)
     */
-  var access: String = js.native
+  var access: `private` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org | public = js.native
   /**
     * The date the user was created.
     *
@@ -88,17 +92,23 @@ trait PortalUser extends Accessor {
     */
   var roleId: String = js.native
   /**
+    * The JSON used to create the property values when the `PortalUser` is created. Although most commonly used properties are exposed on the `PortalUser` class directly, this provides access to all information returned for the portal user. This property is useful if working in an application built using an older version of the API which requires access to a portal's user properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#sourceJSON)
+    */
+  var sourceJSON: js.Any = js.native
+  /**
     * The URL to the thumbnail image for the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#thumbnailUrl)
     */
   val thumbnailUrl: String = js.native
   /**
-    * The user's personal units of measure setting.  **Possible Values:** english | metric
+    * The user's personal units of measure setting.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#units)
     */
-  var units: String = js.native
+  var units: english | metric = js.native
   /**
     * The URL for the user's content.
     *
@@ -165,6 +175,8 @@ trait PortalUser extends Accessor {
     * @param params See the object specifications table below for the parameters that may be passed as properties in this object.
     * @param params.folder The folder to retrieve items from.
     * @param params.num The maximum number of results to be included in the result set response. The maximum value allowed is 100. The start property combined with the num property can be used to paginate the search results.
+    * @param params.sortField A comma-delimited list of fields to sort by. Allowed values are `created`, `modified`, `size`, and `type`.
+    * @param params.sortOrder The order in which to sort the results. Allowed values are `asc` for ascending order and `desc` for descending order.
     * @param params.start The index of the first entry in the result set response. The index is 1-based.
     *
     */
@@ -185,7 +197,7 @@ trait PortalUser extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#queryFavorites)
     *
-    * @param queryParams The input query parameters defined in [PortalQueryParams](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html). This object may be [autocast](https://developers.arcgis.com/javascript/latest/guide/autocasting/).
+    * @param queryParams The input query parameters defined in [PortalQueryParams](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html). This object may be [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting).
     *
     */
   def queryFavorites(): IPromise[PortalQueryResult] = js.native

@@ -1,12 +1,6 @@
 package typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadMod
 
 import typings.gcsDashResumableDashUpload.Anon_Scopes
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.`private`
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.authenticatedRead
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.bucketOwnerFullControl
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.bucketOwnerRead
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.projectPrivate
-import typings.gcsDashResumableDashUpload.gcsDashResumableDashUploadStrings.publicRead
 import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.GoogleAuth
 import typings.node.Buffer
 import typings.pumpify.pumpifyMod.^
@@ -48,9 +42,8 @@ class Upload protected () extends ^ {
     */
   var onResponse: js.Any = js.native
   var origin: js.UndefOr[String] = js.native
-  var predefinedAcl: js.UndefOr[
-    authenticatedRead | bucketOwnerFullControl | bucketOwnerRead | `private` | projectPrivate | publicRead
-  ] = js.native
+  var params: QueryParameters = js.native
+  var predefinedAcl: js.UndefOr[PredefinedAcl] = js.native
   var `private`: js.UndefOr[Boolean] = js.native
   var public: js.UndefOr[Boolean] = js.native
   var restart: js.Any = js.native

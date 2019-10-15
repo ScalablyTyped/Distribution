@@ -1,6 +1,16 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`envelope-intersects`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`index-intersects`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.contains
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.crosses
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.intersects
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.layer
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.overlaps
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relation
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.touches
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.within
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,8 +49,8 @@ trait DataLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#spatialRelationship)
     */
-  var spatialRelationship: String = js.native
-  var `type`: Unit = js.native
+  var spatialRelationship: intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation = js.native
+  var `type`: layer = js.native
   /**
     * A where clause for the query. Any legal SQL where clause operating on the fields in the layer is allowed.
     *

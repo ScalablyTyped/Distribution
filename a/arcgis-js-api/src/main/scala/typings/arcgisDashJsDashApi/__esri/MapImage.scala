@@ -1,6 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bmp
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +26,11 @@ trait MapImage
     */
   var height: Double = js.native
   /**
-    * URL to the returned image. The image format must be of a type supported by the HTML `<img>` tag.  **Possible Values:** gif | jpg | png | bmp
+    * URL to the returned image. The image format must be of a type supported by the HTML `<img>` tag.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#href)
     */
-  var href: String = js.native
+  var href: gif | jpg | png | bmp = js.native
   /**
     * The opacity of the image. Value can be any number between `0` and `1` where `0` is 100% transparent, `0.5` is 50% transparent and `1` is fully opaque.
     *

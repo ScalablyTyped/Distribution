@@ -14,6 +14,12 @@ trait predominanceRendererResult extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-predominance.html#RendererResult)
+    */
+  var basemapTheme: String
+  /**
     * An array of objects describing the values or categories excluded from consideration in visualizing data from the given fields. The specification of each object matches that of the objects specified in the `predominantCategoryInfos` property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-predominance.html#RendererResult)
@@ -55,6 +61,7 @@ object predominanceRendererResult {
   @scala.inline
   def apply(
     basemapId: String,
+    basemapTheme: String,
     constructor: js.Function,
     excludedCategoryInfos: js.Array[_],
     hasOwnProperty: PropertyKey => Boolean,
@@ -65,7 +72,7 @@ object predominanceRendererResult {
     opacity: opacityVisualVariableResult = null,
     size: sizeVisualVariableResult = null
   ): predominanceRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, excludedCategoryInfos = excludedCategoryInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), predominanceScheme = predominanceScheme, predominantCategoryInfos = predominantCategoryInfos, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, excludedCategoryInfos = excludedCategoryInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), predominanceScheme = predominanceScheme, predominantCategoryInfos = predominantCategoryInfos, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity)
     if (size != null) __obj.updateDynamic("size")(size)
     __obj.asInstanceOf[predominanceRendererResult]

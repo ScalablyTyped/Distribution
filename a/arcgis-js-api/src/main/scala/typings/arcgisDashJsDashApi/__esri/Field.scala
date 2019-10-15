@@ -98,7 +98,7 @@ trait Field
     */
   var nullable: Boolean = js.native
   /**
-    * The data type of the field.  **Possible Values:** small-integer | integer | single | double | long | string | date | oid | geometry | blob | raster | guid | global-id | xml
+    * The data type of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
     *

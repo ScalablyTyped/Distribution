@@ -175,7 +175,7 @@ object SearchViewModelProperties {
     allPlaceholder: String = null,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
     defaultSymbol: SymbolProperties = null,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     includeDefaultSources: Boolean | js.Function = null,
     locationEnabled: js.UndefOr[Boolean] = js.undefined,
     maxInputLength: Int | Double = null,

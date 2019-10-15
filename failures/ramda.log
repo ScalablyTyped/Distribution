@@ -504,8 +504,6 @@
 [debug] PhaseRunner.scala:84 Success [id => ramda, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => ramda, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => ramda, phase => typescript] 
-[debug] PhaseRunner.scala:84 Success [id => ramda, phase => typescript] 
-[debug] PhaseRunner.scala:84 Success [id => ramda, phase => typescript] 
 [debug] PhaseRunner.scala:92 Ignored [id => ramda, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => ramda, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => ramda, phase => typescript] 
@@ -854,7 +852,6 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(invoker) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(is) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(is) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
-[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isArrayLike) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isEmpty) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isNil) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(join) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
@@ -898,6 +895,8 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mapAccumRight) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mapAccumRight) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mapAccumRight) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mapObjIndexed) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mapObjIndexed) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mapObjIndexed) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mapObjIndexed) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(mapObjIndexed) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
@@ -963,6 +962,9 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(nth) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(nth) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(nthArg) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(o) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(o) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(o) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(objOf) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(objOf) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(of) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
@@ -1247,7 +1249,6 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(whereEq) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(without) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(without) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
-[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(wrap) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(xprod) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(xprod) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(zip) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static))] 
@@ -1269,6 +1270,8 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(set) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(lensProp) / TsFunSig() / TsTypeObject())] 
 [info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(move) / TsFunSig() / TsTypeObject())] 
 [info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(move) / TsFunSig() / TsTypeObject())] 
+[info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(o) / TsFunSig() / TsTypeObject())] 
+[info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(o) / TsFunSig() / TsTypeObject())] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(or) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(or) / TsFunSig() / TsTypeParam() / TsTypeObject())] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(or) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(or) / TsFunSig() / TsTypeParam() / TsTypeObject())] 
 [info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(propEq) / TsFunSig() / TsTypeObject())] 
@@ -1296,6 +1299,7 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Fn_XsArray) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(dropLast) / TsFunSig() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Obj) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(lensProp) / TsFunSig() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Fn_List) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(move) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Fn_G) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(o) / TsFunSig() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AOr) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(or) / TsFunSig() / TsTypeParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AOr) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(or) / TsFunSig() / TsTypeParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Fn_Obj) [id => ramda, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ramda) / TsDeclInterface(Static) / TsMemberFunction(propEq) / TsFunSig() / TsTypeObject())] 
@@ -1324,25 +1328,25 @@
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter) [id => ramda, phase => scala.js, this => Name(typings) / Name(ramda) / Name(ramdaMod) / Name(Filter)] 
 [debug] PhaseRunner.scala:84 Success [id => ramda, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building ramda... [id => ramda, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E9] src/main/scala/typings/ramda/ramdaMod/Static.scala:2443:48
+[error] Phase3Compile.scala:240 [E] [E9] src/main/scala/typings/ramda/ramdaMod/Static.scala:2456:48
 [E]      not found: type UnNest
-[E]      L2443:   def unnest[T /* <: js.Array[_] */](list: T): UnNest[T] = js.native
+[E]      L2456:   def unnest[T /* <: js.Array[_] */](list: T): UnNest[T] = js.native
 [E]                                                            ^
-[E] [E8] src/main/scala/typings/ramda/ramdaMod/Static.scala:2270:75
+[E] [E8] src/main/scala/typings/ramda/ramdaMod/Static.scala:2283:75
 [E]      not found: type Curry
-[E]      L2270:   def thunkify[F /* <: js.Function1[/* repeated */ js.Any, _] */](fn: F): Curry[js.Function1[/* args */ Parameters[F], js.Function0[ReturnType[F]]]] = js.native
+[E]      L2283:   def thunkify[F /* <: js.Function1[/* repeated */ js.Any, _] */](fn: F): Curry[js.Function1[/* args */ Parameters[F], js.Function0[ReturnType[F]]]] = js.native
 [E]                                                                                       ^
-[E] [E7] src/main/scala/typings/ramda/ramdaMod/Static.scala:731:103
+[E] [E7] src/main/scala/typings/ramda/ramdaMod/Static.scala:732:103
 [E]      not found: type Curry
-[E]      L731:   def flip[F /* <: js.Function1[/* args */ js.Any, _] */, P /* <: typings.F.Parameters[F] */](fn: F): Curry[
+[E]      L732:   def flip[F /* <: js.Function1[/* args */ js.Any, _] */, P /* <: typings.F.Parameters[F] */](fn: F): Curry[
 [E]                                                                                                                  ^
-[E] [E6] src/main/scala/typings/ramda/ramdaMod/Static.scala:730:49
+[E] [E6] src/main/scala/typings/ramda/ramdaMod/Static.scala:731:49
 [E]      not found: type Flatten
-[E]      L730:   def flatten[T /* <: js.Array[_] */](list: T): Flatten[T] = js.native
+[E]      L731:   def flatten[T /* <: js.Array[_] */](list: T): Flatten[T] = js.native
 [E]                                                            ^
-[E] [E5] src/main/scala/typings/ramda/ramdaMod/Static.scala:546:67
+[E] [E5] src/main/scala/typings/ramda/ramdaMod/Static.scala:547:67
 [E]      not found: type Curry
-[E]      L546:   def curry[F /* <: js.Function1[/* args */ js.Any, _] */](f: F): Curry[F] = js.native
+[E]      L547:   def curry[F /* <: js.Function1[/* args */ js.Any, _] */](f: F): Curry[F] = js.native
 [E]                                                                              ^
 [E] [E4] src/main/scala/typings/ramda/ramdaMod/Static.scala:8:16
 [E]      object T is not a member of package typings
@@ -1360,7 +1364,7 @@
 [E]      object F is not a member of package typings
 [E]      L5: import typings.F.Curry
 [E]                         ^
-[E] src/main/scala/typings/ramda/ramdaMod/Static.scala: L5 [E1], L6 [E2], L7 [E3], L8 [E4], L546 [E5], L730 [E6], L731 [E7], L2270 [E8], L2443 [E9]
+[E] src/main/scala/typings/ramda/ramdaMod/Static.scala: L5 [E1], L6 [E2], L7 [E3], L8 [E4], L547 [E5], L731 [E6], L732 [E7], L2283 [E8], L2456 [E9]
 [E] Failed to compile 'ramda'
  [id => ramda, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [ramda => Compilation failed] [id => ramda, phase => build] 

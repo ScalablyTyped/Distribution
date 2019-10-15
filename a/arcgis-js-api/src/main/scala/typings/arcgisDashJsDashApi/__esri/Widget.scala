@@ -11,7 +11,7 @@ trait Widget
   extends Accessor
      with Evented {
   /**
-    * The ID or node representing the DOM element containing the widget. This property can only be set once.
+    * The ID or node representing the DOM element containing the widget. This property can only be set once. The following examples are all valid use cases when working with widgets.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#container)
     */
@@ -55,6 +55,14 @@ trait Widget
     *
     */
   def postInitialize(): Unit = js.native
+  /**
+    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#render)
+    *
+    *
+    */
+  def render(): js.Any = js.native
   /**
     * Renders widget to the DOM immediately.
     *

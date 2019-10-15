@@ -10,7 +10,7 @@ trait TypeofProgressBarStyle extends js.Object {
   				 */
   val BAR: Double
   /**
-  				 * he standard progress-view style. This is the default.
+  				 * The standard progress-view style. This is the default.
   				 */
   val DEFAULT: Double
   /**

@@ -82,7 +82,7 @@ object CoordinateConversionProperties {
     currentLocation: PointProperties = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
     formats: CollectionProperties[Format] = null,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     id: String = null,
     label: String = null,
     mode: String = null,

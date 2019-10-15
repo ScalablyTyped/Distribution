@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gatsby-link" : "2.2.20"
+      "gatsby-link" : "2.2.22"
     }
   ],
   "test-dependencies" : [
     {
-      "gatsby-link" : "2.2.20"
+      "gatsby-link" : "2.2.22"
     }
   ],
   "compile-devDependencies" : [

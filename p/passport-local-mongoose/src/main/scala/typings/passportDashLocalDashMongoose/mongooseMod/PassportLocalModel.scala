@@ -10,14 +10,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Model<T> * / any */ @js.native
 trait PassportLocalModel[T /* <: Document */] extends js.Object {
-  def authenticate(): js.Function3[
-    /* username */ String, 
-    /* password */ String, 
-    /* cb */ js.Function3[/* err */ js.Any, /* user */ T | Boolean, /* error */ js.Any, Unit], 
-    Unit
-  ] = js.native
-  @JSName("authenticate")
-  def authenticate_Function2(): js.Function2[/* username */ String, /* password */ String, js.Promise[AuthenticationResult]] = js.native
+  def authenticate(): AuthenticateMethod[T] = js.native
   def createStrategy(): Strategy = js.native
   def deserializeUser(): js.Function2[
     /* username */ String, 

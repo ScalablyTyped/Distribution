@@ -1,11 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-tile`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,6 +53,8 @@ trait VectorTileLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#tileInfo)
     */
   var tileInfo: TileInfo = js.native
+  @JSName("type")
+  val type_VectorTileLayer: `vector-tile` = js.native
   /**
     * The URL to the vector tile service, or the URL to the style resource of vector tiles that will be used to render the layer. If specifying a URL to a style, the tiles are fetched from the tile servers specified in the style object.
     *
@@ -103,12 +102,6 @@ trait VectorTileLayer
   def loadStyle(style: String, options: VectorTileLayerLoadStyleOptions): IPromise[_] = js.native
   def loadStyle(style: js.Any): IPromise[_] = js.native
   def loadStyle(style: js.Any, options: VectorTileLayerLoadStyleOptions): IPromise[_] = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: VectorTileLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: VectorTileLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: VectorTileLayerLayerviewDestroyEventHandler): IHandle = js.native
   /**
     * Assigns new [layout](https://www.mapbox.com/mapbox-gl-js/style-spec/#layer-layout) properties to the specified [style-layer](https://www.mapbox.com/mapbox-gl-js/style-spec/#layers).
     * > **Known Limitations**  This method is only supported in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).

@@ -2,6 +2,13 @@ package typings.arcgisDashJsDashApi.esriViewsBreakpointsOwnerMod
 
 import typings.arcgisDashJsDashApi.__esri.BreakpointsOwner
 import typings.arcgisDashJsDashApi.__esri.BreakpointsOwnerBreakpoints
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.landscape
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.large
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.medium
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.portrait
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.small
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xlarge
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xsmall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +40,7 @@ class Class () extends BreakpointsOwner {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#heightBreakpoint)
     */
   /* CompleteClass */
-  override var heightBreakpoint: String = js.native
+  override var heightBreakpoint: xsmall | small | medium | large | xlarge = js.native
   /**
     * A convenience property indicating the view's orientation. See the table below for a list of possible values.
     * > Please refer to the [styling guide](https://developers.arcgis.com/javascript/latest/guide/styling/index.html#view-size-css-classes) for additional information on working with this.
@@ -47,7 +54,7 @@ class Class () extends BreakpointsOwner {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#orientation)
     */
   /* CompleteClass */
-  override val orientation: String = js.native
+  override val orientation: landscape | portrait = js.native
   /**
     * A convenience property indicating the general size of the view's width. This value is determined based on where the view's [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#width) falls in the ranges defined in the [breakpoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#breakpoints) property. See the table below for a list of possible values. Use the [breakpoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#breakpoints) property to override the default thresholds.
     * > Please refer to the [styling guide](https://developers.arcgis.com/javascript/latest/guide/styling/index.html#view-size-css-classes) for additional information on working with this.
@@ -64,6 +71,6 @@ class Class () extends BreakpointsOwner {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#widthBreakpoint)
     */
   /* CompleteClass */
-  override var widthBreakpoint: String = js.native
+  override var widthBreakpoint: xsmall | small | medium | large | xlarge = js.native
 }
 

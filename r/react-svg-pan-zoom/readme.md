@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-svg-pan-zoom
 
-Typings are for version 2.5
+Typings are for version 3.3
 
 ## Library description:
 A React component that adds pan and zoom features to SVG

@@ -14,11 +14,6 @@ trait CodedValueDomain extends Domain {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
     */
   var codedValues: js.Array[CodedValueDomainCodedValues] = js.native
-  /**
-    * The domain type. This value is always `coded-value`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#type)
-    */
   @JSName("type")
   val type_CodedValueDomain: `coded-value` = js.native
   /**

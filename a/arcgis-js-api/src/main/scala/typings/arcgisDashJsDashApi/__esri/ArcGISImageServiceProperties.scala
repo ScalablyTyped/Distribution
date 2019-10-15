@@ -1,13 +1,28 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.all
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.any
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bilinear
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.cubic
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f32
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f64
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpgpng
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.lerc
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.majority
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.nearest
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png24
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png8
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s16
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s32
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tiff
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u16
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u32
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,17 +49,11 @@ trait ArcGISImageServiceProperties extends js.Object {
     */
   var copyright: js.UndefOr[String] = js.undefined
   /**
-    * The SQL where clause used to filter rasters on the client. Only the rasters that satisfy the definition expression are displayed in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+    * The SQL where clause used to filter rasters. Only the rasters that satisfy the definition expression are displayed in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). This property overrides the [mosaicRule's](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule) [where](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#where) property if both properties are set on the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#definitionExpression)
     */
   var definitionExpression: js.UndefOr[String] = js.undefined
-  /**
-    * An array of fields in the layer for which a [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) has been defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#domainFields)
-    */
-  var domainFields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   /**
     * An array of fields in the layer. Each field represents an attribute that may contain a value for each raster in the layer.
     *
@@ -52,23 +61,17 @@ trait ArcGISImageServiceProperties extends js.Object {
     */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   /**
-    * The format of the exported image.  **Possible Values:** png | png8 | png24 | png32 | jpg | bmp | jpgpng | lerc | tiff
+    * The format of the exported image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#format)
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[png | png8 | png24 | png32 | jpg | jpgpng | lerc | tiff] = js.undefined
   /**
     * Indicates if the layer has [multidimensionalInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions)
     */
   var hasMultidimensions: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Indicates if the Image Service has a [raster attribute table](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTable).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasRasterAttributeTable)
-    */
-  var hasRasterAttributeTable: js.UndefOr[Boolean] = js.undefined
   /**
     * Indicates the maximum height of the image exported by the service.
     *
@@ -86,11 +89,11 @@ trait ArcGISImageServiceProperties extends js.Object {
     */
   var imageMaxWidth: js.UndefOr[Double] = js.undefined
   /**
-    * Defines how to interpolate pixel values.  **Possible Values:**  nearest | bilinear | cubic | majority
+    * Defines how to interpolate pixel values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#interpolation)
     */
-  var interpolation: js.UndefOr[String] = js.undefined
+  var interpolation: js.UndefOr[nearest | bilinear | cubic | majority] = js.undefined
   /**
     * Defines how overlapping images should be mosaicked.
     *
@@ -112,7 +115,7 @@ trait ArcGISImageServiceProperties extends js.Object {
     */
   var noData: js.UndefOr[Double | js.Array[Double]] = js.undefined
   /**
-    * Interpretation of the [noData](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noData) setting.  **Possible values:**
+    * Interpretation of the [noData](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noData) setting.
     *
     * Value | Description |
     * ----- | ----------- |
@@ -122,7 +125,7 @@ trait ArcGISImageServiceProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#noDataInterpretation)
     */
-  var noDataInterpretation: js.UndefOr[String] = js.undefined
+  var noDataInterpretation: js.UndefOr[any | all] = js.undefined
   /**
     * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fields) containing a unique value or identifier for each raster in the layer.
     *
@@ -130,13 +133,13 @@ trait ArcGISImageServiceProperties extends js.Object {
     */
   var objectIdField: js.UndefOr[String] = js.undefined
   /**
-    * A function that processes [pixelData](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html#pixelData). The `pixelData` object contains a [pixelBlock](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html) property that gives you access to all of the pixels in the raster on the client.  Inside the `pixelFilter` you may loop through all the [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) found in the `pixelBlock` property of the `pixelData` object and process them. This function may be used to hide some pixels from the view, alter their values, and change their color.
+    * A function that processes [pixelData](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html#pixelData). The `pixelData` object contains a [pixelBlock](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html) property that gives you access to all of the pixels in the raster on the client.  Inside the `pixelFilter` you may loop through all the [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) found in the `pixelBlock` property of the `pixelData` object and process them. This function may be used to hide some pixels from the view, alter their values, and change their color. The pixelFilter should be used when the imagery layer's [format](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#format) is `lerc` or `tiff` as these formats return raw pixel data to the client.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelFilter)
     */
   var pixelFilter: js.UndefOr[js.Function] = js.undefined
   /**
-    * Raster source pixel type.  **Possible Values:**
+    * Raster source pixel type.
     *
     * Value | Range of values that each cell can contain |
     * ----- | ------------------------------------------- |
@@ -153,13 +156,7 @@ trait ArcGISImageServiceProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelType)
     */
-  var pixelType: js.UndefOr[s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.undefined
-  /**
-    * The raster attribute table associated with the service. To access the raster attribute table, the layer must be [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#loaded).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTable)
-    */
-  var rasterAttributeTable: js.UndefOr[js.Any] = js.undefined
+  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.undefined
   /**
     * Prefix used to define the fields from the raster attribute table. It's primarily used for [popups](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html)
     *
@@ -167,7 +164,7 @@ trait ArcGISImageServiceProperties extends js.Object {
     */
   var rasterAttributeTableFieldPrefix: js.UndefOr[String] = js.undefined
   /**
-    * The renderer assigned to the layer. The renderer defines how to visualize pixels in the layer. Depending on the renderer type, the pixels may be [stretched](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-StretchRenderer.html) across the color ramp, [classified](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html) or have [different symbols](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html) based on values.
+    * The renderer assigned to the layer. The renderer defines how to visualize pixels in the layer. Depending on the renderer type, the pixels may be [stretched](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html) across the color ramp, [classified](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html) or have [different symbols](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html) based on values.  If both renderer and [pixelFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#pixelFilter) is applied to an ImageryLayer then pixelFilter will override the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderer)
     */
@@ -178,6 +175,12 @@ trait ArcGISImageServiceProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderingRule)
     */
   var renderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
+  /**
+    * The [image service's metadata JSON](https://developers.arcgis.com/rest/services-reference/image-service.htm) exposed by the ArcGIS REST API. While most commonly used [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#properties-summary) are exposed on the ImageryLayer class directly, this property gives access to all information returned by the image service. This property is useful if working in an application built using an older version of the API which requires access to image service properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#sourceJSON)
+    */
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   /**
     * The URL to the REST endpoint of the layer. The URL may either point to a resource on ArcGIS Enterprise or ArcGIS Online.
     *
@@ -193,25 +196,23 @@ object ArcGISImageServiceProperties {
     compressionTolerance: Int | Double = null,
     copyright: String = null,
     definitionExpression: String = null,
-    domainFields: js.Array[FieldProperties] = null,
     fields: js.Array[FieldProperties] = null,
-    format: String = null,
+    format: png | png8 | png24 | png32 | jpg | jpgpng | lerc | tiff = null,
     hasMultidimensions: js.UndefOr[Boolean] = js.undefined,
-    hasRasterAttributeTable: js.UndefOr[Boolean] = js.undefined,
     imageMaxHeight: Int | Double = null,
     imageMaxWidth: Int | Double = null,
-    interpolation: String = null,
+    interpolation: nearest | bilinear | cubic | majority = null,
     mosaicRule: MosaicRuleProperties = null,
     multidimensionalInfo: js.Any = null,
     noData: Double | js.Array[Double] = null,
-    noDataInterpretation: String = null,
+    noDataInterpretation: any | all = null,
     objectIdField: String = null,
     pixelFilter: js.Function = null,
-    pixelType: s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = null,
-    rasterAttributeTable: js.Any = null,
+    pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = null,
     rasterAttributeTableFieldPrefix: String = null,
     renderer: RendererProperties = null,
     renderingRule: RasterFunctionProperties = null,
+    sourceJSON: js.Any = null,
     url: String = null
   ): ArcGISImageServiceProperties = {
     val __obj = js.Dynamic.literal()
@@ -219,25 +220,23 @@ object ArcGISImageServiceProperties {
     if (compressionTolerance != null) __obj.updateDynamic("compressionTolerance")(compressionTolerance.asInstanceOf[js.Any])
     if (copyright != null) __obj.updateDynamic("copyright")(copyright)
     if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
-    if (domainFields != null) __obj.updateDynamic("domainFields")(domainFields)
     if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(hasMultidimensions)) __obj.updateDynamic("hasMultidimensions")(hasMultidimensions)
-    if (!js.isUndefined(hasRasterAttributeTable)) __obj.updateDynamic("hasRasterAttributeTable")(hasRasterAttributeTable)
     if (imageMaxHeight != null) __obj.updateDynamic("imageMaxHeight")(imageMaxHeight.asInstanceOf[js.Any])
     if (imageMaxWidth != null) __obj.updateDynamic("imageMaxWidth")(imageMaxWidth.asInstanceOf[js.Any])
-    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
     if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule)
     if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo)
     if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
-    if (noDataInterpretation != null) __obj.updateDynamic("noDataInterpretation")(noDataInterpretation)
+    if (noDataInterpretation != null) __obj.updateDynamic("noDataInterpretation")(noDataInterpretation.asInstanceOf[js.Any])
     if (objectIdField != null) __obj.updateDynamic("objectIdField")(objectIdField)
     if (pixelFilter != null) __obj.updateDynamic("pixelFilter")(pixelFilter)
     if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType.asInstanceOf[js.Any])
-    if (rasterAttributeTable != null) __obj.updateDynamic("rasterAttributeTable")(rasterAttributeTable)
     if (rasterAttributeTableFieldPrefix != null) __obj.updateDynamic("rasterAttributeTableFieldPrefix")(rasterAttributeTableFieldPrefix)
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)
     if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
+    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[ArcGISImageServiceProperties]
   }

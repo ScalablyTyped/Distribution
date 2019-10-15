@@ -1,6 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`avg-rating`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`num-comments`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`num-ratings`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`num-views`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.asc
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.created
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.desc
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.modified
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.owner
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.title
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.uploaded
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.username
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,7 +71,7 @@ trait PortalQueryParams extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortField)
     */
-  var sortField: String = js.native
+  var sortField: title | uploaded | modified | username | created | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`type` | owner | `avg-rating` | `num-ratings` | `num-comments` | `num-views` = js.native
   /**
     * The order in which to sort the results.
     *
@@ -73,7 +85,7 @@ trait PortalQueryParams extends Accessor {
     *
     * @default asc
     */
-  var sortOrder: String = js.native
+  var sortOrder: asc | desc = js.native
   /**
     * The index of the first entry in the result set response. The index is 1-based. The [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#start) property, along with the [num](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#num) property can be used to paginate the search results.
     *

@@ -16,8 +16,6 @@ object imageCanvasMod extends js.Object {
   trait ImageCanvas
     extends typings.ol.imageBaseMod.default {
     def getError(): Error = js.native
-    @JSName("getImage")
-    def getImage_HTMLCanvasElement(): HTMLCanvasElement = js.native
   }
   
   @js.native

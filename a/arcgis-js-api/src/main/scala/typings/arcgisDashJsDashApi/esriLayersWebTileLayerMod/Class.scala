@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.esriLayersWebTileLayerMod
 
+import typings.arcgisDashJsDashApi.__esri.PortalItem
 import typings.arcgisDashJsDashApi.__esri.WebTileLayer
 import typings.arcgisDashJsDashApi.__esri.WebTileLayerProperties
 import scala.scalajs.js
@@ -33,6 +34,13 @@ class Class () extends WebTileLayer {
     */
   /* CompleteClass */
   override var minScale: Double = js.native
+  /**
+    * The portal item from which the layer is loaded. If the portal item references a Feature Service or Scene Service, then you can specify a single layer to load with the [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#layerId) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
+    */
+  /* CompleteClass */
+  override var portalItem: PortalItem = js.native
   /**
     * Refresh interval of the layer in minutes. Value of `0` indicates no refresh.
     *

@@ -20,7 +20,7 @@ trait OpacityVariable extends VisualVariable {
     */
   var stops: js.Array[OpacityStop] = js.native
   /**
-    * The visual variable type. For OpacityVariable, this value is always `opacity`.
+    * The visual variable type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html#type)
     */

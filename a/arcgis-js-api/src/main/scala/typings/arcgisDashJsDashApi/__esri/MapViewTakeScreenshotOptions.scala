@@ -28,9 +28,19 @@ trait MapViewTakeScreenshotOptions extends Object {
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
+    * Indicates whether to ignore the background color set in the [initial view properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#initialViewProperties) of the web map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+    *
+    * @default false
+    */
+  var ignoreBackground: js.UndefOr[Boolean] = js.undefined
+  /**
     * Indicates whether view padding should be ignored. Set this property to `true` to allow padded areas to be included in the screenshot.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+    *
+    * @default false
     */
   var ignorePadding: js.UndefOr[Boolean] = js.undefined
   /**
@@ -64,6 +74,7 @@ object MapViewTakeScreenshotOptions {
     area: MapViewTakeScreenshotOptionsArea = null,
     format: String = null,
     height: Int | Double = null,
+    ignoreBackground: js.UndefOr[Boolean] = js.undefined,
     ignorePadding: js.UndefOr[Boolean] = js.undefined,
     layers: js.Array[Layer] = null,
     quality: Int | Double = null,
@@ -73,6 +84,7 @@ object MapViewTakeScreenshotOptions {
     if (area != null) __obj.updateDynamic("area")(area)
     if (format != null) __obj.updateDynamic("format")(format)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBackground)) __obj.updateDynamic("ignoreBackground")(ignoreBackground)
     if (!js.isUndefined(ignorePadding)) __obj.updateDynamic("ignorePadding")(ignorePadding)
     if (layers != null) __obj.updateDynamic("layers")(layers)
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])

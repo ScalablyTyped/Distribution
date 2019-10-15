@@ -11,7 +11,7 @@ sealed trait PlayReadyITADataFormat extends js.Object
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyITADataFormat")
 @js.native
 object PlayReadyITADataFormat extends js.Object {
-  /** Returns he serialized IPropertySet as detailed in the remarks for the PlayReadyITADataGenerator.GenerateData method. */
+  /** Returns the serialized IPropertySet as detailed in the remarks for the PlayReadyITADataGenerator.GenerateData method. */
   @js.native
   sealed trait serializedProperties extends PlayReadyITADataFormat
   

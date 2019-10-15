@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UniqueValueRenderer
   extends Renderer
-     with VisualVariablesRenderer
-     with RasterRenderer
-     with typings.arcgisDashJsDashApi.__esri.renderers.RasterRenderer
+     with VisualVariablesMixin
      with RendererWithVisualVariables
      with typings.arcgisDashJsDashApi.__esri.renderers.RendererWithVisualVariables {
   /**
@@ -108,7 +106,7 @@ trait UniqueValueRenderer
     */
   var legendOptions: UniqueValueRendererLegendOptions = js.native
   /**
-    * The type of Renderer. For UniqueValueRenderer this value is always `unique-value`.
+    * The type of Renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#type)
     */

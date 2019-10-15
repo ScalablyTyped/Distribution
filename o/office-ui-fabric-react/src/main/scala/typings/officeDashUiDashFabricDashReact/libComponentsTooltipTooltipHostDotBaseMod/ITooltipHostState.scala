@@ -5,13 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITooltipHostState extends js.Object {
+  var isAriaPlaceholderRendered: Boolean
   var isTooltipVisible: Boolean
 }
 
 object ITooltipHostState {
   @scala.inline
-  def apply(isTooltipVisible: Boolean): ITooltipHostState = {
-    val __obj = js.Dynamic.literal(isTooltipVisible = isTooltipVisible)
+  def apply(isAriaPlaceholderRendered: Boolean, isTooltipVisible: Boolean): ITooltipHostState = {
+    val __obj = js.Dynamic.literal(isAriaPlaceholderRendered = isAriaPlaceholderRendered, isTooltipVisible = isTooltipVisible)
   
     __obj.asInstanceOf[ITooltipHostState]
   }

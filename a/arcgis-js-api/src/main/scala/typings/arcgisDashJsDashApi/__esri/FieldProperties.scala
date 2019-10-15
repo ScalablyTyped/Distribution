@@ -94,7 +94,7 @@ trait FieldProperties extends js.Object {
     */
   var nullable: js.UndefOr[Boolean] = js.undefined
   /**
-    * The data type of the field.  **Possible Values:** small-integer | integer | single | double | long | string | date | oid | geometry | blob | raster | guid | global-id | xml
+    * The data type of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
     *

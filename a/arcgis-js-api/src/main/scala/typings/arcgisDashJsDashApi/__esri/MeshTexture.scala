@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.clamp
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.repeat
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.ImageData
@@ -43,7 +45,7 @@ trait MeshTexture extends Accessor {
     *
     * @default "repeat"
     */
-  var wrap: String | js.Any = js.native
+  var wrap: clamp | repeat | SeparableWrapModes = js.native
 }
 
 @JSGlobal("__esri.MeshTexture")

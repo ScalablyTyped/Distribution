@@ -2,6 +2,9 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-loaded`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.failed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,7 +68,7 @@ trait WebScene
     *
     * @default not-loaded
     */
-  val loadStatus: String = js.native
+  val loadStatus: `not-loaded` | loading | failed | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loaded = js.native
   /**
     * Indicates whether the instance has loaded. When `true`, the properties of the object can be accessed. A WebScene is considered loaded when its [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#layers) and [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#basemap) are fully created, but not yet loaded.
     *
@@ -93,7 +96,7 @@ trait WebScene
     */
   val sourceVersion: WebSceneSourceVersion = js.native
   /**
-    * The URL to the thumbnail used for the web scene. The thumbnail will by default be the thumbnail URL from the portal item associated to the web scene. The thumbnail of the web scene may be updated by changing the thumbnail URL and saving the web scene. Use #updateFrom to update the thumbnail automatically from a specified view.
+    * The URL to the thumbnail used for the web scene. The thumbnail will by default be the thumbnail URL from the portal item associated to the web scene. The thumbnail of the web scene may be updated by changing the thumbnail URL and saving the web scene. Use [updateFrom](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom) to update the thumbnail automatically from a specified view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#thumbnailUrl)
     */
@@ -141,7 +144,7 @@ trait WebScene
   def saveAs(portalItem: PortalItemProperties, options: WebSceneSaveAsOptions): IPromise[PortalItem] = js.native
   def saveAs(portalItem: PortalItem, options: WebSceneSaveAsOptions): IPromise[PortalItem] = js.native
   /**
-    * Converts an instance of [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide and the [web scene specification](https://developers.arcgis.com/web-scene-specification/) for more information.
+    * Converts an instance of [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide and the [web scene specification](https://developers.arcgis.com/web-scene-specification/) for more information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#toJSON)
     *
@@ -153,12 +156,12 @@ trait WebScene
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     *
-    * @param view the view to update from.
-    * @param options update options.
-    * @param options.environmentExcluded do not update the initial environment from the view, defaults to false.
-    * @param options.viewpointExcluded do not update the initial viewpoint from the view, defaults to false.
-    * @param options.thumbnailExcluded do not update the thumbnail from the view, defaults to viewpointExcluded.
-    * @param options.thumbnailSize the size of the thumbnail. Defaults to 600x400 (ratio 1.5:1). Note that the thumbnail size may currently not be larger than the size of the view.
+    * @param view The view to update from.
+    * @param options Options for updating.
+    * @param options.environmentExcluded Do not update the initial environment from the view, defaults to false.
+    * @param options.viewpointExcluded Do not update the initial viewpoint from the view, defaults to false.
+    * @param options.thumbnailExcluded Do not update the thumbnail from the view. Defaults to true, unless viewpointExcluded is set to true.
+    * @param options.thumbnailSize The size of the thumbnail. Defaults to 600x400 (ratio 1.5:1). Note that the thumbnail size may currently not be larger than the size of the view.
     *
     */
   def updateFrom(view: SceneView): IPromise[_] = js.native

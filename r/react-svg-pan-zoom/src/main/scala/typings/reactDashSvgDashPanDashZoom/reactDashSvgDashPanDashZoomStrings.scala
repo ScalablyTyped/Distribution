@@ -15,6 +15,9 @@ object reactDashSvgDashPanDashZoomStrings {
   sealed trait bottom extends ToolbarPosition
   
   @js.native
+  sealed trait center extends js.Object
+  
+  @js.native
   sealed trait idle extends Mode
   
   @js.native
@@ -50,6 +53,8 @@ object reactDashSvgDashPanDashZoomStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
+  def center: center = "center".asInstanceOf[center]
   @scala.inline
   def idle: idle = "idle".asInstanceOf[idle]
   @scala.inline

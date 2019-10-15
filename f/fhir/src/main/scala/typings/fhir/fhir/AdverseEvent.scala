@@ -22,7 +22,8 @@ import scala.scalajs.js.annotation._
     */
   var _description: js.UndefOr[Element] = js.undefined
   /**
-    * AE | PAE An adverse event is an event that caused harm to a patient,  an adverse reaction is a something that is a subject-specific event that is a result of an exposure to a medication, food, device or environmental substance, a potential adverse event is something that occurred and that could have caused harm to a patient but did not
+    * AE | PAE
+    * An adverse event is an event that caused harm to a patient,  an adverse reaction is a something that is a subject-specific event that is a result of an exposure to a medication, food, device or environmental substance, a potential adverse event is something that occurred and that could have caused harm to a patient but did not
     */
   var category: js.UndefOr[code] = js.undefined
   /**

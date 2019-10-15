@@ -110,6 +110,7 @@ object atTestingDashLibraryDomMod extends js.Object {
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
   def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
   def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
+  def isInaccessible(element: Element): Boolean = js.native
   def logDOM(): Unit = js.native
   def logDOM(dom: Element): Unit = js.native
   def logDOM(dom: Element, maxLength: Double): Unit = js.native

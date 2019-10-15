@@ -1,5 +1,12 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.landscape
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.large
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.medium
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.portrait
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.small
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xlarge
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xsmall
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -61,7 +68,7 @@ class MapViewCls () extends MapView {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#heightBreakpoint)
     */
   /* CompleteClass */
-  override var heightBreakpoint: String = js.native
+  override var heightBreakpoint: xsmall | small | medium | large | xlarge = js.native
   /**
     * A convenience property indicating the view's orientation. See the table below for a list of possible values.
     * > Please refer to the [styling guide](https://developers.arcgis.com/javascript/latest/guide/styling/index.html#view-size-css-classes) for additional information on working with this.
@@ -75,9 +82,9 @@ class MapViewCls () extends MapView {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#orientation)
     */
   /* CompleteClass */
-  override val orientation: String = js.native
+  override val orientation: landscape | portrait = js.native
   /**
-    * A Popup object that displays general content or attributes from [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) in the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#map).  The view has a default instance of [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) with predefined styles and a template for defining content. The content in this default instance may be modified directly in the [popup's content](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#content) or in a layer's [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).  You may create a new [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) instance and set it to this property to customize the style, positioning, and content of the popup in favor of using the default popup instance on the view.  In addition, if wanting to prevent any popups from opening, use the syntax below:
+    * A Popup object that displays general content or attributes from [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) in the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#map).  The view has a default instance of [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) with predefined styles and a template for defining content. The content in this default instance may be modified directly in the [popup's content](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#content) or in a layer's [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).  You may create a new [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) instance and set it to this property to customize the style, positioning, and content of the popup in favor of using the default popup instance on the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#popup)
     */
@@ -140,6 +147,6 @@ class MapViewCls () extends MapView {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#widthBreakpoint)
     */
   /* CompleteClass */
-  override var widthBreakpoint: String = js.native
+  override var widthBreakpoint: xsmall | small | medium | large | xlarge = js.native
 }
 

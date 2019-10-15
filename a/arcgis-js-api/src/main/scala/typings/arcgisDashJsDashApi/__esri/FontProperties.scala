@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 trait FontProperties extends js.Object {
   /**
-    * The text decoration.  **Possible Values:** underline | line-through | none
+    * The text decoration.
     * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#decoration)
@@ -41,7 +41,7 @@ trait FontProperties extends js.Object {
     */
   var size: js.UndefOr[Double | String] = js.undefined
   /**
-    * The text style. Specifies whether a font should be styled: normal, italic, or oblique.  **Possible Values:** normal | italic | oblique
+    * The text style. Specifies whether a font should be styled: normal, italic, or oblique.
     * > **Known Limitations**  `oblique` is not supported in 2D [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), and [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) labels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#style)
@@ -50,7 +50,7 @@ trait FontProperties extends js.Object {
     */
   var style: js.UndefOr[normal | italic | oblique] = js.undefined
   /**
-    * The text weight. Specifies the level of boldness.  **Possible Values:** normal | bold | bolder | lighter
+    * The text weight. Specifies the level of boldness.
     * > **Known Limitations**  `bolder` and `lighter` are not supported in 2D [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), and [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) labels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#weight)

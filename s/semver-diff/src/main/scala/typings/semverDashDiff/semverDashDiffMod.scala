@@ -10,8 +10,11 @@ import scala.scalajs.js.annotation._
 object semverDashDiffMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - typings.semverDashDiff.semverDashDiffStrings.major
+    - typings.semverDashDiff.semverDashDiffStrings.premajor
     - typings.semverDashDiff.semverDashDiffStrings.minor
+    - typings.semverDashDiff.semverDashDiffStrings.preminor
     - typings.semverDashDiff.semverDashDiffStrings.patch
+    - typings.semverDashDiff.semverDashDiffStrings.prepatch
     - typings.semverDashDiff.semverDashDiffStrings.prerelease
     - typings.semverDashDiff.semverDashDiffStrings.build
   */
@@ -25,10 +28,16 @@ object semverDashDiffMod extends js.Object {
   import semverDiff = require('semver-diff');
   semverDiff('1.1.1', '1.1.2');
   //=> 'patch'
+  semverDiff('1.1.1-foo', '1.1.2');
+  //=> 'prepatch'
   semverDiff('0.0.1', '1.0.0');
   //=> 'major'
+  semverDiff('0.0.1-foo', '1.0.0');
+  //=> 'premajor'
   semverDiff('0.0.1', '0.1.0');
   //=> 'minor'
+  semverDiff('0.0.1-foo', '0.1.0');
+  //=> 'preminor'
   semverDiff('0.0.1-foo', '0.0.1-foo.bar');
   //=> 'prerelease'
   semverDiff('0.1.0', '0.1.0+foo');

@@ -14,7 +14,7 @@ trait AttachmentsContentProperties extends ContentProperties {
     */
   var attachmentInfos: js.UndefOr[AttachmentInfoProperties] = js.undefined
   /**
-    * A string value indicating how to display the attachment. Possible values are: preview | list  If `list` is specified, attachments show as links.
+    * A string value indicating how to display the attachment.  If `list` is specified, attachments show as links.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#displayType)
     */

@@ -25,7 +25,7 @@ trait StatisticDefinitionProperties extends js.Object {
     */
   var outStatisticFieldName: js.UndefOr[String] = js.undefined
   /**
-    * Defines the type of statistic.  **Possible Values:** count | sum | min | max | avg | stddev | var
+    * Defines the type of statistic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType)
     */

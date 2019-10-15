@@ -1,10 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.imagery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,6 +36,8 @@ trait ImageryLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupTemplate)
     */
   var popupTemplate: PopupTemplate = js.native
+  @JSName("type")
+  val type_ImageryLayer: imagery = js.native
   /**
     * Creates a default popup template for the layer, populated with all the fields of the layer.
     *
@@ -51,12 +50,6 @@ trait ImageryLayer
     */
   def createPopupTemplate(): PopupTemplate = js.native
   def createPopupTemplate(options: ImageryLayerCreatePopupTemplateOptions): PopupTemplate = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: ImageryLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: ImageryLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: ImageryLayerLayerviewDestroyEventHandler): IHandle = js.native
   /**
     * Executes the [pixelFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#pixelFilter) function and redraws the layer.
     *

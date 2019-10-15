@@ -1,6 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-drag`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +22,10 @@ trait HeatmapSlider extends Widget {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html#viewModel)
     */
   var viewModel: HeatmapSliderViewModel = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_thumbchange(name: `thumb-change`, eventHandler: HeatmapSliderThumbChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_thumbdrag(name: `thumb-drag`, eventHandler: HeatmapSliderThumbDragEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.HeatmapSlider")

@@ -14,6 +14,12 @@ trait locationRendererResult extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#RendererResult)
+    */
+  var basemapTheme: String
+  /**
     * The location scheme used by the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#RendererResult)
@@ -31,13 +37,14 @@ object locationRendererResult {
   @scala.inline
   def apply(
     basemapId: String,
+    basemapTheme: String,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     locationScheme: LocationScheme,
     propertyIsEnumerable: PropertyKey => Boolean,
     renderer: SimpleRenderer
   ): locationRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), locationScheme = locationScheme, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), locationScheme = locationScheme, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer)
   
     __obj.asInstanceOf[locationRendererResult]
   }

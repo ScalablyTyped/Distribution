@@ -13,7 +13,7 @@ object LocateViewModelProperties {
   def apply(
     geolocationOptions: js.Any = null,
     goToLocationEnabled: js.UndefOr[Boolean] = js.undefined,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     graphic: GraphicProperties = null,
     scale: Int | Double = null,
     view: MapViewProperties | SceneViewProperties = null

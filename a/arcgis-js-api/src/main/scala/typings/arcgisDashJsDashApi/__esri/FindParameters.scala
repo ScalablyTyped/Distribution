@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait FindParameters extends Accessor {
+trait FindParameters
+  extends Accessor
+     with JSONSupport {
   /**
     * Determines whether to look for an exact match of the search text or not. If `true`, searches for a value that contains the provided [searchText](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#searchText). This is a case-insensitive search. If `false`, searches for an exact match of the [searchText](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#searchText) string. The exact match is case-sensitive.
     *
@@ -59,14 +61,6 @@ trait FindParameters extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#searchText)
     */
   var searchText: String = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.FindParameters")

@@ -24,7 +24,7 @@ trait PictureFillSymbol
     */
   var height: Double = js.native
   /**
-    * For PictureFillSymbol the type is always `picture-fill`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#type)
     */

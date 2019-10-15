@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.asc
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.desc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +18,11 @@ trait RelatedRecordsInfoFieldOrder
     */
   var field: String = js.native
   /**
-    * Set the ascending or descending sort order of the returned related records.  **Possible Values**: asc | desc
+    * Set the ascending or descending sort order of the returned related records.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html#order)
     */
-  var order: String = js.native
+  var order: asc | desc = js.native
 }
 
 @JSGlobal("__esri.RelatedRecordsInfoFieldOrder")

@@ -14,6 +14,12 @@ trait HeatmapSchemes extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average basemap color is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-heatmap.html#HeatmapSchemes)
+    */
+  var basemapTheme: String
+  /**
     * The heatmap color scheme best suited for the given basemap and geometry type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-heatmap.html#HeatmapSchemes)
@@ -31,13 +37,14 @@ object HeatmapSchemes {
   @scala.inline
   def apply(
     basemapId: String,
+    basemapTheme: String,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     primaryScheme: HeatmapScheme,
     propertyIsEnumerable: PropertyKey => Boolean,
     secondarySchemes: js.Array[HeatmapScheme]
   ): HeatmapSchemes = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), primaryScheme = primaryScheme, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondarySchemes = secondarySchemes)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), primaryScheme = primaryScheme, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), secondarySchemes = secondarySchemes)
   
     __obj.asInstanceOf[HeatmapSchemes]
   }

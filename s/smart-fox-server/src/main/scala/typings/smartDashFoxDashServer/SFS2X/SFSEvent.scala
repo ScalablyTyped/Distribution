@@ -22,9 +22,9 @@ object SFSEvent extends js.Object {
   var EXTENSION_RESPONSE: String = js.native
   /** @type {string} The invitation event type, dispatched when the current user receives an invitation from another user. */
   var INVITATION: String = js.native
-  /** @type {string} The invitationReply event type, dispatched when the current user receives a reply to an invitation he sent previously. */
+  /** @type {string} The invitationReply event type, dispatched when the current user receives a reply to an invitation they sent previously. */
   var INVITATION_REPLY: String = js.native
-  /** @type {string} The invitationReplyError event type, dispatched when an error occurs while the current user is sending a reply to an invitation he received. */
+  /** @type {string} The invitationReplyError event type, dispatched when an error occurs while the current user is sending a reply to an invitation they received. */
   var INVITATION_REPLY_ERROR: String = js.native
   /** @type {string} The login event type, dispatched when the current user performs a successful login in a server Zone. */
   var LOGIN: String = js.native
@@ -94,7 +94,7 @@ object SFSEvent extends js.Object {
   var USER_COUNT_CHANGE: String = js.native
   /** @type {string} The userEnterRoom event type, dispatched when one of the Rooms joined by the current user is entered by another user. */
   var USER_ENTER_ROOM: String = js.native
-  /** @type {string} The userExitRoom event type, dispatched when one of the Rooms joined by the current user is left by another user, or by the current user himself. */
+  /** @type {string} The userExitRoom event type, dispatched when one of the Rooms joined by the current user is left by another user, or by the current user themselves. */
   var USER_EXIT_ROOM: String = js.native
   /** @type {string} The userFindResult event type, dispatched when a users search is completed. */
   var USER_FIND_RESULT: String = js.native

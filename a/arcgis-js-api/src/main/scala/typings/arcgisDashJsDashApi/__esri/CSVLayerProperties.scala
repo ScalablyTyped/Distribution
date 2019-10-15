@@ -40,6 +40,12 @@ trait CSVLayerProperties
     */
   var delimiter: js.UndefOr[String] = js.undefined
   /**
+    * The name of the layer's primary display field. The value of this property matches the name of one of the fields of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#displayField)
+    */
+  var displayField: js.UndefOr[String] = js.undefined
+  /**
     * Specifies how graphics are placed on the vertical axis (z). This property may only be used in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). See the [ElevationInfo sample](https://developers.arcgis.com/javascript/latest/sample-code/scene-elevationinfo/index.html) for an example of how this property may be used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#elevationInfo)
@@ -150,6 +156,7 @@ object CSVLayerProperties {
     copyright: String = null,
     definitionExpression: String = null,
     delimiter: String = null,
+    displayField: String = null,
     elevationInfo: CSVLayerElevationInfo = null,
     featureReduction: CSVLayerFeatureReduction = null,
     fields: js.Array[FieldProperties] = null,
@@ -180,6 +187,7 @@ object CSVLayerProperties {
     if (copyright != null) __obj.updateDynamic("copyright")(copyright)
     if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (displayField != null) __obj.updateDynamic("displayField")(displayField)
     if (elevationInfo != null) __obj.updateDynamic("elevationInfo")(elevationInfo)
     if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction)
     if (fields != null) __obj.updateDynamic("fields")(fields)

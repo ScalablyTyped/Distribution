@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,6 +60,8 @@ object LayerSearchSourceProperties {
     displayField: String = null,
     exactMatch: js.UndefOr[Boolean] = js.undefined,
     filter: SearchSourceFilter = null,
+    getResults: /* params */ js.Any => IPromise[js.Array[SearchResult]] = null,
+    getSuggestions: /* params */ js.Any => IPromise[js.Array[SuggestResult]] = null,
     layer: LayerProperties = null,
     maxResults: Int | Double = null,
     maxSuggestions: Int | Double = null,
@@ -84,6 +87,8 @@ object LayerSearchSourceProperties {
     if (displayField != null) __obj.updateDynamic("displayField")(displayField)
     if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch)
     if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (getResults != null) __obj.updateDynamic("getResults")(js.Any.fromFunction1(getResults))
+    if (getSuggestions != null) __obj.updateDynamic("getSuggestions")(js.Any.fromFunction1(getSuggestions))
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])

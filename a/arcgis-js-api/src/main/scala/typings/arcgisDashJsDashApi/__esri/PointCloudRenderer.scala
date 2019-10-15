@@ -1,6 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-cloud-class-breaks`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-cloud-rgb`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-cloud-stretch`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-cloud-unique-value`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,11 +34,11 @@ trait PointCloudRenderer
     */
   var pointsPerInch: Double = js.native
   /**
-    * The point cloud renderer type.  **Possible values:** point-cloud-class-breaks | point-cloud-rgb | point-cloud-stretch | point-cloud-unique-value
+    * The point cloud renderer type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#type)
     */
-  val `type`: String = js.native
+  val `type`: `point-cloud-class-breaks` | `point-cloud-rgb` | `point-cloud-stretch` | `point-cloud-unique-value` = js.native
 }
 
 @JSGlobal("__esri.PointCloudRenderer")

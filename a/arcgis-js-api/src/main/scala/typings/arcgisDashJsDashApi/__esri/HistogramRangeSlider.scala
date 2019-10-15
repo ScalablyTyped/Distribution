@@ -1,6 +1,14 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`max-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`min-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`segment-drag`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-drag`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`value-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`values-change`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -185,14 +193,20 @@ trait HistogramRangeSlider extends Widget {
   def labelFormatFunction(value: Double): String = js.native
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_maxchange(name: `max-change`, eventHandler: HistogramRangeSliderMaxChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_minchange(name: `min-change`, eventHandler: HistogramRangeSliderMinChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_segmentdrag(name: `segment-drag`, eventHandler: HistogramRangeSliderSegmentDragEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_thumbchange(name: `thumb-change`, eventHandler: HistogramRangeSliderThumbChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_thumbdrag(name: `thumb-drag`, eventHandler: HistogramRangeSliderThumbDragEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_valuechange(name: `value-change`, eventHandler: HistogramRangeSliderValueChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_valueschange(name: `values-change`, eventHandler: HistogramRangeSliderValuesChangeEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.HistogramRangeSlider")

@@ -133,14 +133,6 @@ trait TimeSlider extends Widget {
     */
   def previous(): Unit = js.native
   /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
-  /**
     * Stops the time slider's temporal playback.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#stop)

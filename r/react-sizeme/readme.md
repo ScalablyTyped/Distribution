@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-sizeme
 
-Typings are for version 2.6.7
+Typings are for version 2.6.8
 
 ## Library description:
 Make your React Components aware of their dimensions and position.

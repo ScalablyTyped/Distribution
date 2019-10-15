@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "teeny-request"
-version := "5.2.1-110027"
+version := "5.3.0-ed4dc1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

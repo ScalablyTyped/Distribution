@@ -24,6 +24,12 @@ trait SceneViewHighlightOptions extends AnonymousAccessor {
     */
   var fillOpacity: js.UndefOr[Double] = js.undefined
   /**
+    * An optional color for the halo of the highlight. If unset, the `color` will be used for the halo.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
+    */
+  var haloColor: js.UndefOr[Color] = js.undefined
+  /**
     * The opacity of the highlight halo. This will be multiplied with the opacity specified in `color`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
@@ -42,6 +48,7 @@ object SceneViewHighlightOptions {
     color: Color = null,
     fillOpacity: Int | Double = null,
     get: /* propertyName */ String => _ = null,
+    haloColor: Color = null,
     haloOpacity: Int | Double = null,
     set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewHighlightOptions]) with (js.Function1[/* props */ HashMap[_], SceneViewHighlightOptions]) = null,
     watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
@@ -50,6 +57,7 @@ object SceneViewHighlightOptions {
     if (color != null) __obj.updateDynamic("color")(color)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
+    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor)
     if (haloOpacity != null) __obj.updateDynamic("haloOpacity")(haloOpacity.asInstanceOf[js.Any])
     if (set != null) __obj.updateDynamic("set")(set)
     if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))

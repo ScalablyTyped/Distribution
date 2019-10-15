@@ -32,7 +32,8 @@ object ClassedSizeSliderProperties {
     labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
     max: Int | Double = null,
     min: Int | Double = null,
-    viewModel: ClassedSizeSliderViewModelProperties = null
+    viewModel: ClassedSizeSliderViewModelProperties = null,
+    zoomOptions: SmartMappingSliderBaseZoomOptions = null
   ): ClassedSizeSliderProperties = {
     val __obj = js.Dynamic.literal()
     if (breaks != null) __obj.updateDynamic("breaks")(breaks)
@@ -45,6 +46,7 @@ object ClassedSizeSliderProperties {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions)
     __obj.asInstanceOf[ClassedSizeSliderProperties]
   }
 }

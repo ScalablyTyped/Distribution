@@ -33,7 +33,7 @@ trait Point
     */
   var m: Double = js.native
   /**
-    * For Point, the type is always `point`.
+    * The string value representing the type of geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#type)
     */

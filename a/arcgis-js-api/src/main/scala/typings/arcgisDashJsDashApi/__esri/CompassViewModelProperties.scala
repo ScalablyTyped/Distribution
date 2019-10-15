@@ -24,7 +24,7 @@ trait CompassViewModelProperties extends GoToProperties {
 object CompassViewModelProperties {
   @scala.inline
   def apply(
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     orientation: js.Any = null,
     view: MapViewProperties | SceneViewProperties = null
   ): CompassViewModelProperties = {

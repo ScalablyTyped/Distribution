@@ -2,7 +2,7 @@ package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbData
 import typings.officeDashUiDashFabricDashReact.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbProps
-import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object libComponentsBreadcrumbBreadcrumbDotBaseMod extends js.Object {
   @js.native
   class BreadcrumbBase protected ()
-    extends BaseComponent[IBreadcrumbProps, js.Any] {
+    extends Component[IBreadcrumbProps, js.Any, js.Any] {
     def this(props: IBreadcrumbProps) = this()
     var _classNames: js.Any = js.native
     var _focusZone: js.Any = js.native

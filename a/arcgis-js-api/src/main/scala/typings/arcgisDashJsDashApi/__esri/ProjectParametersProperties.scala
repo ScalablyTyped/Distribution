@@ -12,7 +12,7 @@ trait ProjectParametersProperties extends js.Object {
     */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   /**
-    * The spatial reference to which you are projecting the geometries. Use [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#outSpatialReference) instead.
+    * The spatial reference to which you are projecting the geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#outSR)
     */

@@ -18,7 +18,7 @@ trait Mesh
     */
   var components: js.Array[MeshComponent] = js.native
   /**
-    * For Mesh, the type is always `mesh`.
+    * The string value representing the type of geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#type)
     */

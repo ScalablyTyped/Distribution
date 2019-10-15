@@ -16,7 +16,7 @@ class RoomEvents () extends js.Object {
   var allowUserEnter: Boolean = js.native
   /** @type {boolean} Sets whether the userExitRoom event should be dispatched whenever a user leaves the Room or not. */
   var allowUserExit: Boolean = js.native
-  /** @type {boolean} Sets whether or not the userVariablesUpdate event should be dispatched whenever a user in the Room updates his User Variables */
+  /** @type {boolean} Sets whether or not the userVariablesUpdate event should be dispatched whenever a user in the Room updates their User Variables */
   var allowUserVariablesUpdate: Boolean = js.native
 }
 

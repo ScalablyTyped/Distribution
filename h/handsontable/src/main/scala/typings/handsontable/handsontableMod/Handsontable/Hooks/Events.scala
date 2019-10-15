@@ -95,8 +95,12 @@ trait Events extends js.Object {
       Unit
     ]
   ] = js.undefined
-  var afterCreateCol: js.UndefOr[js.Function2[/* index */ Double, /* amount */ Double, Unit]] = js.undefined
-  var afterCreateRow: js.UndefOr[js.Function2[/* index */ Double, /* amount */ Double, Unit]] = js.undefined
+  var afterCreateCol: js.UndefOr[
+    js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+  ] = js.undefined
+  var afterCreateRow: js.UndefOr[
+    js.Function3[/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource], Unit]
+  ] = js.undefined
   var afterCut: js.UndefOr[
     js.Function2[/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType], Unit]
   ] = js.undefined
@@ -211,8 +215,24 @@ trait Events extends js.Object {
   var afterRemoveCellMeta: js.UndefOr[
     js.Function4[/* row */ Double, /* column */ Double, /* key */ String, /* value */ js.Any, Unit]
   ] = js.undefined
-  var afterRemoveCol: js.UndefOr[js.Function2[/* index */ Double, /* amount */ Double, Unit]] = js.undefined
-  var afterRemoveRow: js.UndefOr[js.Function2[/* index */ Double, /* amount */ Double, Unit]] = js.undefined
+  var afterRemoveCol: js.UndefOr[
+    js.Function4[
+      /* index */ Double, 
+      /* amount */ Double, 
+      /* physicalColumns */ js.Array[Double], 
+      /* source */ js.UndefOr[ChangeSource], 
+      Unit
+    ]
+  ] = js.undefined
+  var afterRemoveRow: js.UndefOr[
+    js.Function4[
+      /* index */ Double, 
+      /* amount */ Double, 
+      /* physicalColumns */ js.Array[Double], 
+      /* source */ js.UndefOr[ChangeSource], 
+      Unit
+    ]
+  ] = js.undefined
   var afterRender: js.UndefOr[js.Function1[/* isForced */ Boolean, Unit]] = js.undefined
   var afterRenderer: js.UndefOr[
     js.Function6[
@@ -660,8 +680,8 @@ object Events {
     afterContextMenuShow: /* context */ ContextMenu => Unit = null,
     afterCopy: (/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType]) => Unit = null,
     afterCopyLimit: (/* selectedRows */ Double, /* selectedColumnds */ Double, /* copyRowsLimit */ Double, /* copyColumnsLimit */ Double) => Unit = null,
-    afterCreateCol: (/* index */ Double, /* amount */ Double) => Unit = null,
-    afterCreateRow: (/* index */ Double, /* amount */ Double) => Unit = null,
+    afterCreateCol: (/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource]) => Unit = null,
+    afterCreateRow: (/* index */ Double, /* amount */ Double, /* source */ js.UndefOr[ChangeSource]) => Unit = null,
     afterCut: (/* data */ js.Array[js.Array[CellValue]], /* coords */ js.Array[RangeType]) => Unit = null,
     afterDeselect: () => Unit = null,
     afterDestroy: () => Unit = null,
@@ -699,8 +719,8 @@ object Events {
     afterRedo: /* action */ UndoRedoAction => Unit = null,
     afterRefreshDimensions: (/* previousDimensions */ js.Object, /* currentDimensions */ js.Object, /* stateChanged */ Boolean) => Unit = null,
     afterRemoveCellMeta: (/* row */ Double, /* column */ Double, /* key */ String, /* value */ js.Any) => Unit = null,
-    afterRemoveCol: (/* index */ Double, /* amount */ Double) => Unit = null,
-    afterRemoveRow: (/* index */ Double, /* amount */ Double) => Unit = null,
+    afterRemoveCol: (/* index */ Double, /* amount */ Double, /* physicalColumns */ js.Array[Double], /* source */ js.UndefOr[ChangeSource]) => Unit = null,
+    afterRemoveRow: (/* index */ Double, /* amount */ Double, /* physicalColumns */ js.Array[Double], /* source */ js.UndefOr[ChangeSource]) => Unit = null,
     afterRender: /* isForced */ Boolean => Unit = null,
     afterRenderer: (/* TD */ HTMLTableCellElement, /* row */ Double, /* col */ Double, /* prop */ String | Double, /* value */ String, /* cellProperties */ CellProperties) => Unit = null,
     afterRowMove: (/* startRow */ Double, /* endRow */ Double) => Unit = null,
@@ -823,8 +843,8 @@ object Events {
     if (afterContextMenuShow != null) __obj.updateDynamic("afterContextMenuShow")(js.Any.fromFunction1(afterContextMenuShow))
     if (afterCopy != null) __obj.updateDynamic("afterCopy")(js.Any.fromFunction2(afterCopy))
     if (afterCopyLimit != null) __obj.updateDynamic("afterCopyLimit")(js.Any.fromFunction4(afterCopyLimit))
-    if (afterCreateCol != null) __obj.updateDynamic("afterCreateCol")(js.Any.fromFunction2(afterCreateCol))
-    if (afterCreateRow != null) __obj.updateDynamic("afterCreateRow")(js.Any.fromFunction2(afterCreateRow))
+    if (afterCreateCol != null) __obj.updateDynamic("afterCreateCol")(js.Any.fromFunction3(afterCreateCol))
+    if (afterCreateRow != null) __obj.updateDynamic("afterCreateRow")(js.Any.fromFunction3(afterCreateRow))
     if (afterCut != null) __obj.updateDynamic("afterCut")(js.Any.fromFunction2(afterCut))
     if (afterDeselect != null) __obj.updateDynamic("afterDeselect")(js.Any.fromFunction0(afterDeselect))
     if (afterDestroy != null) __obj.updateDynamic("afterDestroy")(js.Any.fromFunction0(afterDestroy))
@@ -862,8 +882,8 @@ object Events {
     if (afterRedo != null) __obj.updateDynamic("afterRedo")(js.Any.fromFunction1(afterRedo))
     if (afterRefreshDimensions != null) __obj.updateDynamic("afterRefreshDimensions")(js.Any.fromFunction3(afterRefreshDimensions))
     if (afterRemoveCellMeta != null) __obj.updateDynamic("afterRemoveCellMeta")(js.Any.fromFunction4(afterRemoveCellMeta))
-    if (afterRemoveCol != null) __obj.updateDynamic("afterRemoveCol")(js.Any.fromFunction2(afterRemoveCol))
-    if (afterRemoveRow != null) __obj.updateDynamic("afterRemoveRow")(js.Any.fromFunction2(afterRemoveRow))
+    if (afterRemoveCol != null) __obj.updateDynamic("afterRemoveCol")(js.Any.fromFunction4(afterRemoveCol))
+    if (afterRemoveRow != null) __obj.updateDynamic("afterRemoveRow")(js.Any.fromFunction4(afterRemoveRow))
     if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction1(afterRender))
     if (afterRenderer != null) __obj.updateDynamic("afterRenderer")(js.Any.fromFunction6(afterRenderer))
     if (afterRowMove != null) __obj.updateDynamic("afterRowMove")(js.Any.fromFunction2(afterRowMove))

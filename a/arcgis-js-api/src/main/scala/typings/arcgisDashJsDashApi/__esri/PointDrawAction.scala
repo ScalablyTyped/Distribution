@@ -1,6 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`cursor-update`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`draw-complete`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +24,10 @@ trait PointDrawAction extends DrawAction {
     *
     */
   def complete(): Unit = js.native
+  @JSName("on")
+  def on_cursorupdate(name: `cursor-update`, eventHandler: PointDrawActionCursorUpdateEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_drawcomplete(name: `draw-complete`, eventHandler: PointDrawActionDrawCompleteEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.PointDrawAction")

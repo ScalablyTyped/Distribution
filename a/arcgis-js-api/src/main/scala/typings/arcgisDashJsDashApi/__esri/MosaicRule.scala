@@ -1,6 +1,21 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`lock-raster`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.attribute
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.blend
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.center
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.first
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.last
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mean
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.nadir
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.northwest
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.seamline
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.sum
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.viewpoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +45,7 @@ trait MosaicRule
     */
   var lockRasterIds: js.Array[Double] = js.native
   /**
-    * The mosaic method determines how the selected rasters are ordered. The mosaic method defines how the mosaicked image is created from these input rasters.  **Possible Values:**
+    * The mosaic method determines how the selected rasters are ordered. The mosaic method defines how the mosaicked image is created from these input rasters.
     *
     * Value | Description |
     * ----- | ----------- |
@@ -46,7 +61,7 @@ trait MosaicRule
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method)
     */
-  var method: String = js.native
+  var method: none | center | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline = js.native
   /**
     * A multiple dimensional service can have multiple dimensions for one or more variables. Use multiDimensionalDefinitions to filter data based on a slice or range of data. For example, a single ImageryLayer may have a `depth` dimension storing sea temperatures for the same pixel location at various depths. Another dimension could be `time`, where the same pixel stores multiple values based on a window of time.  This property can be used to filter and display ImageryLayer pixels for specific "slices" in those dimensions (e.g. display sea temperature at 1000m below sea level for a specific week in the year).
     *
@@ -75,7 +90,7 @@ trait MosaicRule
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#operation)
     */
-  var operation: String = js.native
+  var operation: first | last | min | max | mean | blend | sum = js.native
   /**
     * The name of the attribute field that is used with a constant sortValue to define the mosaicking order when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`. The ordering is defined by the absolute value of the difference between the specified sort field value and the sort base value. For example, if the sort field is `Month` and the sort value is `7 (July)`, then the ordering is defined by `ABS(Month -7)`.
     *
@@ -95,7 +110,7 @@ trait MosaicRule
     */
   var viewpoint: Point = js.native
   /**
-    * The where clause determines which rasters will participate in the mosaic. This property applies to all mosaic methods.
+    * The where clause determines which rasters will participate in the mosaic. This property applies to all mosaic methods. This property will be overridden by the ImageryLayer's [definitionExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#definitionExpression) property if both properties are set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#where)
     */

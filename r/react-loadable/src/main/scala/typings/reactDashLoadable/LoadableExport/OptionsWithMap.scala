@@ -44,7 +44,7 @@ object OptionsWithMap {
     delay: Double | `false` = null,
     modules: js.Array[String] = null,
     timeout: Double | `false` = null,
-    webpack: () => js.Array[Double] = null
+    webpack: () => js.Array[String | Double] = null
   ): OptionsWithMap[Props, Exports] = {
     val __obj = js.Dynamic.literal(loader = loader, loading = loading.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

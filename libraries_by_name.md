@@ -1676,6 +1676,7 @@
 | [emissary](./e/emissary) | Utility mixins for subscribing to and emitting eve | event-emitter, events, subscribe, subscriber |
 | [emittery](./e/emittery) | Simple and modern async event emitter | event, emitter, eventemitter, events, async, emit, on, once, off, listener, subscribe, unsubscribe, pubsub, tiny, addlistener, addeventlistener, dispatch, dispatcher, observer, trigger, await, promise |
 | [emoji-flags](./e/emoji-flags) | return emoji flag symbol for country code | emoji, countries, flag, country code, emoji flag, country flag, ISO 3166-1, ISO 3166-1-alpha-2 |
+| [emoji-js](./e/emoji-js) | A JS Emoji conversion library | emoji, emoticon, mobile, browser |
 | [emoji-mart](./e/emoji-mart) | Customizable Slack-like emoji picker for React | react, emoji, picker |
 | [emoji-regex](./e/emoji-regex) | A regular expression to match all Emoji-only symbo | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji |
 | [emojione](./e/emojione) | EmojiOne is a complete set of emojis designed for  | emojione, EmojiOne, emoji, emojis, emoticons, smileys, smilies, unicode, emoji set |
@@ -2952,6 +2953,7 @@
 | [ionic](./i/ionic) | A tool for creating and developing Ionic Framework | ionic, ionic framework, ionicframework, mobile, app, hybrid, cordova, native, phonegap |
 | [ionic__angular](./i/ionic__angular) | Angular specific wrappers for @ionic/core | ionic, framework, angular, mobile, app, webapp, capacitor, cordova, progressive web app, pwa |
 | [ionic__cli-framework](./i/ionic__cli-framework) | The foundation framework of the Ionic CLI | - |
+| [ionic__cli-framework-prom](./i/ionic__cli-framework-prompts) | - | - |
 | [ionic__core](./i/ionic__core) | Base components for Ionic | ionic, framework, stencil, mobile, app, webapp, capacitor, cordova, electron, progressive web app, pwa |
 | [ionic__discover](./i/ionic__discover) | Simple UDP based protocol for service discovery im | - |
 | [ionic__react](./i/ionic__react) | React specific wrapper for @ionic/core | ionic, framework, react, mobile, app, hybrid, webapp, cordova, progressive web app, pwa |
@@ -3727,6 +3729,7 @@
 | [leaflet-geocoder-mapzen](./l/leaflet-geocoder-mapzen) | Add Mapzen Search geocoding to your Leaflet map. | leaflet, plugin, search, geocoder, pelias, mapzen |
 | [leaflet-geosearch](./l/leaflet-geosearch) | Adds support for address lookup (a.k.a. geocoding  | geolocation, geocoding, plugins, leaflet, geo, map |
 | [leaflet-gpx](./l/leaflet-gpx) | npm for https://github.com/mpetazzoni/leaflet-gpx | leaflet, gpx |
+| [leaflet-groupedlayercontr](./l/leaflet-groupedlayercontrol) | A Leaflet layer control with support for grouping  | leaflet, overlay, groups, grouped, control, plugin |
 | [leaflet-imageoverlay-rota](./l/leaflet-imageoverlay-rotated) | Displays rotated/slanted image overlays in Leaflet | leaflet |
 | [leaflet-loading](./l/leaflet-loading) | A simple loading control for Leaflet | leaflet, map, maps, gis, geoweb, loading |
 | [leaflet-mouse-position](./l/leaflet-mouse-position) | An npm wrapper for Ardhi Lukianto’s Leaflet.MouseP | leaflet, leafletjs |
@@ -4658,6 +4661,7 @@
 | [node-dir](./n/node-dir) | asynchronous file and directory operations for Nod | node-dir, directory, dir, subdir, file, asynchronous, Node.js, fs |
 | [node-dogstatsd](./n/node-dogstatsd) | node client for extended StatsD server of Datadog | - |
 | [node-downloader-helper](./n/node-downloader-helper) | A simple http file downloader for node.js | node, nodejs, node.js, download, resumable, resume, http |
+| [node-easy-cert](./n/node-easy-cert) | A tool for managing self-signed certifications | certification, https |
 | [node-emoji](./n/node-emoji) | simple emoji support for node.js projects | emoji, simple, emoticons, emoticon, emojis, smiley, smileys, smilies, ideogram, ideograms |
 | [node-fetch](./n/node-fetch) | A light-weight module that brings window.fetch to  | fetch, http, promise |
 | [node-fibers](./n/node-fibers) | - | - |
@@ -5422,6 +5426,7 @@
 | [qtip2](./q/qtip2) | Introducing... qTip2. The second generation of the | tooltip, tooltips, jquery, jquery-plugin, qtip, qtip2, simpletip, craig thompson, craig michael thompson, craigsworks, craga89 |
 | [query-string](./q/query-string) | Parse and stringify URL query strings | browser, querystring, query, string, qs, param, parameter, url, parse, stringify, encode, decode, searchparams |
 | [querystringify](./q/querystringify) | Querystringify - Small, simple but powerful query  | query, string, query-string, querystring, qs, stringify, parse, decode, encode |
+| [queue](./q/queue) | asynchronous function queue with adjustable concur | queue, async, asynchronous, synchronous, job, task, concurrency, concurrent |
 | [quick-hash](./q/quick-hash) | Murmur hash optimized for performance, not collisi | hash, murmur, murmur hash, fast, performance, quick |
 | [quick-lru](./q/quick-lru) | Simple "Least Recently Used" (LRU) cache | lru, quick, cache, caching, least, recently, used, fast, map, hash, buffer |
 | [quill](./q/quill) | Your powerful, rich text editor | editor, rich text, wysiwyg |
@@ -5460,6 +5465,7 @@
 | [range-parser](./r/range-parser) | Range header field string parser | range, parser, http |
 | [rangy](./r/rangy) | A cross-browser DOM range and selection library | range, selection, caret, DOM |
 | [rangyinputs](./r/rangyinputs) | A small jQuery plug-in for selection and caret man | input, selection, caret, textarea, jquery |
+| [ranjs](./r/ranjs) | Library for generating various random variables. | random, generator, distributions, mcmc, statistics, test |
 | [raphael](./r/raphael) | JavaScript Vector Library | svg, vml, javascript |
 | [rasha](./r/rasha) | 💯 PEM-to-JWK and JWK-to-PEM for RSA keys in a lig | zero-dependency, PEM-to-JWK, JWK-to-PEM, RSA, 2048, 4096, asn1, x509, JWK-to-SSH, PEM-to-SSH |
 | [raspi](./r/raspi) | Provides access to Raspberry Pi peripherals from N | raspberry pi, robotics, nodebots |
@@ -5472,6 +5478,7 @@
 | [raspi-pwm](./r/raspi-pwm) | Provides access to PWM on the Raspberry Pi as part | nodebots, robotics, raspberry pi |
 | [raspi-serial](./r/raspi-serial) | Provides access to the serial port on the Raspberr | nodebots, robotics, raspberry pi |
 | [raspi-soft-pwm](./r/raspi-soft-pwm) | Provides access to Soft PWM on the Raspberry Pi as | nodebots, robotics, raspberry pi |
+| [rate-limit-redis](./r/rate-limit-redis) | Provides a Redis store for the express-rate-limit  | - |
 | [ratelimiter](./r/ratelimiter) | abstract rate limiter backed by redis | rate, ratelimit, limiter, limit |
 | [raty](./r/raty) | a node framework base koa@2 that can use full es20 | - |
 | [raven](./r/raven) | A standalone (Node.js) client for Sentry | debugging, errors, exceptions, logging, raven, sentry |
@@ -7122,6 +7129,7 @@
 | [title-case](./t/title-case) | Title case a string | title, case |
 | [tldjs](./t/tldjs) | JavaScript API to work against complex domain name | tld, sld, domain, browser, uri, url, domain name, subdomain, public suffix |
 | [tlds](./t/tlds) | List of TLDs | data, tld, tlds, top, level, domains |
+| [tlf-log](./t/tlf-log) | A small logging library | logging |
 | [tmi_dot_js](./t/tmi_dot_js) | Javascript library for the Twitch Messaging Interf | tmi, twitch, twitch.tv, stream, broadcast, message, messaging, interface, subscriber, websocket, ws, bot, robot |
 | [tmp](./t/tmp) | Temporary file and directory creator | temporary, tmp, temp, tempdir, tempfile, tmpdir, tmpfile |
 | [tmp-promise](./t/tmp-promise) | The tmp package with promises support and disposer | tmp, promise, tempfile, mkdtemp, mktemp |
@@ -7513,6 +7521,7 @@
 | [watchpack](./w/watchpack) | Wrapper library for directory and file watching. | - |
 | [waterline](./w/waterline) | An ORM for Node.js and the Sails framework | mvc, orm, mysql, postgresql, redis, mongodb, active-record, waterline, sails, sails.js |
 | [watson-developer-cloud](./w/watson-developer-cloud) | Client library to use the IBM Watson Services | assistant, compare comply, discovery, ibm, natural language classifier, natural language understanding, personality insights, speech to text, text to speech, tone analyzer, tone_analyzer, visual recognition, watson developer cloud, watson, wdc |
+| [wav](./w/wav) | Reader and Writer streams for Microsoft WAVE audio | - |
 | [wav-encoder](./w/wav-encoder) | promise-based wav encoder | encode, universal, wav |
 | [wavesurfer_dot_js](./w/wavesurfer_dot_js) | Interactive navigable audio visualization using We | waveform, audio, music, player, webaudio, microphone, visualization |
 | [waypoints](./w/waypoints) | Easily execute a function when you scroll to an el | scroll |

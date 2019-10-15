@@ -1,5 +1,14 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a3-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a3-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a4-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a4-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`letter-ansi-a-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`letter-ansi-a-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-only`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`tabloid-ansi-b-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`tabloid-ansi-b-portrait`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,7 +64,9 @@ trait PrintTemplateProperties extends js.Object {
     *
     * @default map-only
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[
+    `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`
+  ] = js.undefined
   /**
     * Defines the layout elements. It's an object with the following properties:
     *
@@ -95,7 +106,7 @@ object PrintTemplateProperties {
     exportOptions: PrintTemplateExportOptions = null,
     forceFeatureAttributes: js.UndefOr[Boolean] = js.undefined,
     format: String = null,
-    layout: String = null,
+    layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = null,
     layoutOptions: PrintTemplateLayoutOptions = null,
     outScale: Int | Double = null,
     preserveScale: js.UndefOr[Boolean] = js.undefined,
@@ -106,7 +117,7 @@ object PrintTemplateProperties {
     if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions)
     if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes)
     if (format != null) __obj.updateDynamic("format")(format)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions)
     if (outScale != null) __obj.updateDynamic("outScale")(outScale.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveScale)) __obj.updateDynamic("preserveScale")(preserveScale)

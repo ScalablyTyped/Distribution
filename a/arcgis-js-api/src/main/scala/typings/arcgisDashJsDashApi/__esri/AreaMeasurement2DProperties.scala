@@ -25,7 +25,7 @@ trait AreaMeasurement2DProperties extends WidgetProperties {
     */
   var iconClass: js.UndefOr[String] = js.undefined
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the area values.  **Possible Values:** metric | imperial | square-inches | square-feet | square-us-feet | square-yards | square-miles | square-meters | square-kilometers | acres | ares | hectares
+    * Unit system (imperial, metric) or specific unit used for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D.html#unit)
     */
@@ -33,11 +33,15 @@ trait AreaMeasurement2DProperties extends WidgetProperties {
     metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
   ] = js.undefined
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the area values. By default, the following units are included: `metric`, `imperial`, `square-inches`, `square-feet`, `square-us-feet`, `square-yards`, `square-miles`, `square-meters`, `square-kilometers`, `acres`, `ares`, `hectares`.
+    * List of available units and unit systems (imperial, metric) for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D.html#unitOptions)
     */
-  var unitOptions: js.UndefOr[js.Array[String]] = js.undefined
+  var unitOptions: js.UndefOr[
+    js.Array[
+      metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+    ]
+  ] = js.undefined
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
     *
@@ -61,7 +65,9 @@ object AreaMeasurement2DProperties {
     id: String = null,
     label: String = null,
     unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares = null,
-    unitOptions: js.Array[String] = null,
+    unitOptions: js.Array[
+      metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+    ] = null,
     view: MapViewProperties = null,
     viewModel: AreaMeasurement2DViewModel = null
   ): AreaMeasurement2DProperties = {

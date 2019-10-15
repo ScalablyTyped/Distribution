@@ -34,18 +34,6 @@ trait ImageServiceIdentifyParameters
     */
   var pixelSize: Point = js.native
   /**
-    * The pixel level being identified (or the resolution being looked at) on the x-axis. If not specified, it will default to the base resolution of the dataset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#pixelSizeX)
-    */
-  var pixelSizeX: Double = js.native
-  /**
-    * The pixel level being identified (or the resolution being looked at) on the y-axis. If not specified, it will default to the base resolution of the dataset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#pixelSizeY)
-    */
-  var pixelSizeY: Double = js.native
-  /**
     * Specifies the rendering rule for how the requested image should be rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#renderingRule)

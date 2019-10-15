@@ -1,5 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.source
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.suggestion
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.warning
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,13 +13,13 @@ trait widgetsSearchProperties
   extends WidgetProperties
      with GoToProperties {
   /**
-    * The current active menu of the Search widget.  **Possible Values:** none | suggestion | source | warning
+    * The current active menu of the Search widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeMenu)
     *
     * @default none
     */
-  var activeMenu: js.UndefOr[String] = js.undefined
+  var activeMenu: js.UndefOr[none | suggestion | source | warning] = js.undefined
   /**
     * The selected source's index. This value is `-1` when all sources are selected.
     *
@@ -166,13 +170,13 @@ trait widgetsSearchProperties
 object widgetsSearchProperties {
   @scala.inline
   def apply(
-    activeMenu: String = null,
+    activeMenu: none | suggestion | source | warning = null,
     activeSourceIndex: Int | Double = null,
     allPlaceholder: String = null,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
     container: String | HTMLElement = null,
     destroyed: js.UndefOr[Boolean] = js.undefined,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     iconClass: String = null,
     id: String = null,
     includeDefaultSources: Boolean | js.Function = null,
@@ -193,7 +197,7 @@ object widgetsSearchProperties {
     viewModel: SearchViewModelProperties = null
   ): widgetsSearchProperties = {
     val __obj = js.Dynamic.literal()
-    if (activeMenu != null) __obj.updateDynamic("activeMenu")(activeMenu)
+    if (activeMenu != null) __obj.updateDynamic("activeMenu")(activeMenu.asInstanceOf[js.Any])
     if (activeSourceIndex != null) __obj.updateDynamic("activeSourceIndex")(activeSourceIndex.asInstanceOf[js.Any])
     if (allPlaceholder != null) __obj.updateDynamic("allPlaceholder")(allPlaceholder)
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)

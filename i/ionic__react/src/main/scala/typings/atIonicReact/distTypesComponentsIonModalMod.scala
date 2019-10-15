@@ -28,7 +28,7 @@ object distTypesComponentsIonModalMod extends js.Object {
   class IonModal protected () extends Anon_Animated {
     def this(props: (Pick[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-            id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+            id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
           ]) with Anon_ChildrenReactNode with ReactOverlayProps) = this()
   }
   
@@ -37,7 +37,7 @@ object distTypesComponentsIonModalMod extends js.Object {
     extends Instantiable1[
           /* props */ (Pick[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-            id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+            id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
           ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
           Anon_Animated
         ] {

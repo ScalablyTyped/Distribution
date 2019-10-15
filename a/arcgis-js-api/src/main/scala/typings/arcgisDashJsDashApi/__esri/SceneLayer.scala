@@ -1,11 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mesh
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,11 +47,11 @@ trait SceneLayer
     */
   val fieldsIndex: FieldsIndex = js.native
   /**
-    * The geometry type of features in the layer.  **Possible Values:** point | mesh
+    * The geometry type of features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#geometryType)
     */
-  var geometryType: String = js.native
+  var geometryType: point | mesh = js.native
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.
     * > **Known Limitations**  This property is only relevant to SceneLayers with [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries. This property has no effect on SceneLayers with other geometry types.  Each point can have only one label. Multiple [Label classes](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) with different [where](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where) clauses can be used to have different label styles on different features that belong to the same layer (for example blue labels for lakes and green labels for parks).
@@ -119,6 +118,8 @@ trait SceneLayer
     * @default true
     */
   var screenSizePerspectiveEnabled: Boolean = js.native
+  @JSName("type")
+  val type_SceneLayer: scene = js.native
   /**
     * Creates a default popup template for the layer, populated with all the fields of the layer.
     *
@@ -174,12 +175,18 @@ trait SceneLayer
     *
     */
   def getFieldUsageInfo(fieldName: String): js.Any = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: SceneLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: SceneLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: SceneLayerLayerviewDestroyEventHandler): IHandle = js.native
+  /**
+    * Queries cached statistics from the service for a given field. Check for the response details the [I3S SceneLayer Specification](https://github.com/Esri/i3s-spec/blob/master/docs/1.7/statsInfo.cmn.md)
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#queryCachedStatistics)
+    *
+    * @param fieldName The name of the field to query statistics for.
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def queryCachedStatistics(fieldName: String): js.Any = js.native
+  def queryCachedStatistics(fieldName: String, options: SceneLayerQueryCachedStatisticsOptions): js.Any = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the service and returns the 2D [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query. At the moment the 3D Extent can be returned by using [SceneLayerView.queryExtent()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#queryExtent), but this will return the 3D extent only for features currently in the view. The query succeeds only if the layer's `supportsLayerQuery` capability is enabled. Use the [getFieldUsageInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#getFieldUsageInfo) method to check if the layer supports queries. If querying is not enabled, then an error with the name `scenelayer:query-not-available` is thrown. Read more about queries in the [Querying](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#querying) section of the class description above.
     *

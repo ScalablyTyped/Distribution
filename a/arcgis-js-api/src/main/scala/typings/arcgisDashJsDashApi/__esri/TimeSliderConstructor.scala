@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TimeSliderConstructor
   extends /**
-  * The TimeSlider widget simplifies time manipulation in your application.
+  * The TimeSlider widget simplifies visualization of temporal data in your application. Before adding the TimeSlider to your application, you first should understand how it can be configured to correctly display your temporal data.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html)
   */

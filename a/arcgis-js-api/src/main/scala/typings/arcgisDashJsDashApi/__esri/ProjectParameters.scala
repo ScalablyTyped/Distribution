@@ -14,7 +14,7 @@ trait ProjectParameters extends Accessor {
     */
   var geometries: js.Array[Geometry] = js.native
   /**
-    * The spatial reference to which you are projecting the geometries. Use [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#outSpatialReference) instead.
+    * The spatial reference to which you are projecting the geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#outSR)
     */
@@ -38,7 +38,7 @@ trait ProjectParameters extends Accessor {
     */
   var transformation: ProjectParametersTransformation = js.native
   /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#toJSON)
     *

@@ -38,7 +38,7 @@ trait Polygon
     */
   var rings: js.Array[js.Array[js.Array[Double]]] = js.native
   /**
-    * For Polygon, the type is always `polygon`.
+    * The string value representing the type of geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html#type)
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simmerjs"
-version := "0.5-dt-20190503Z-3eca35"
+version := "0.5-dt-20191014Z-7d983f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

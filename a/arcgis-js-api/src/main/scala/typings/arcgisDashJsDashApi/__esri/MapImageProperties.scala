@@ -1,5 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bmp
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,11 +22,11 @@ trait MapImageProperties extends js.Object {
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
-    * URL to the returned image. The image format must be of a type supported by the HTML `<img>` tag.  **Possible Values:** gif | jpg | png | bmp
+    * URL to the returned image. The image format must be of a type supported by the HTML `<img>` tag.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#href)
     */
-  var href: js.UndefOr[String] = js.undefined
+  var href: js.UndefOr[gif | jpg | png | bmp] = js.undefined
   /**
     * The opacity of the image. Value can be any number between `0` and `1` where `0` is 100% transparent, `0.5` is 50% transparent and `1` is fully opaque.
     *
@@ -58,7 +62,7 @@ object MapImageProperties {
   def apply(
     extent: ExtentProperties = null,
     height: Int | Double = null,
-    href: String = null,
+    href: gif | jpg | png | bmp = null,
     opacity: Int | Double = null,
     scale: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
@@ -67,7 +71,7 @@ object MapImageProperties {
     val __obj = js.Dynamic.literal()
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

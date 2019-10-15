@@ -1,7 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`select-bookmark`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +13,25 @@ trait Bookmarks
   extends Widget
      with GoTo {
   /**
+    * Specifies how new bookmarks will be created if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`. Can be used to enable or disable taking screenshots or creating an extent based on the current view when a bookmark is created. See [BookmarkCreationOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions) for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarkCreationOptions)
+    */
+  var bookmarkCreationOptions: BookmarkCreationOptions = js.native
+  /**
     * A collection of [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)s.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarks)
     */
   var bookmarks: Collection[Bookmark] = js.native
+  /**
+    * Indicates whether the widget is able to be edited. When `true`, allows bookmarks to be added, edited, reordered, or deleted from within the widget. Any edits made will only be shown locally and will not be saved.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
+    *
+    * @default false
+    */
+  var editingEnabled: Boolean = js.native
   /**
     * The widget's default CSS icon class.
     *
@@ -35,6 +51,12 @@ trait Bookmarks
     */
   var viewModel: BookmarksViewModel = js.native
   /**
+    * The visible elements that are displayed within the widget. This property provides the ability to turn individual elements of the widget's display on/off.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#visibleElements)
+    */
+  var visibleElements: VisibleElements = js.native
+  /**
     * Zoom to a specific bookmark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#goTo)
@@ -43,14 +65,8 @@ trait Bookmarks
     *
     */
   def goTo(Bookmark: Bookmark): IPromise[_] = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_selectbookmark(name: `select-bookmark`, eventHandler: BookmarksSelectBookmarkEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.Bookmarks")

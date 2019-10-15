@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SimpleRenderer
   extends Renderer
-     with VisualVariablesRenderer
+     with VisualVariablesMixin
      with RendererWithVisualVariables
      with typings.arcgisDashJsDashApi.__esri.renderers.RendererWithVisualVariables {
   /**
@@ -25,7 +25,7 @@ trait SimpleRenderer
     */
   var symbol: Symbol = js.native
   /**
-    * The type of renderer. For SimpleRenderer this value is always `simple`.
+    * The type of renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#type)
     */

@@ -350,7 +350,6 @@ trait Stream[R] extends EventEmitter {
   		 * @api public
   		 */
   def flatMap[U](f: js.Function1[/* x */ R, Stream[U] | U]): Stream[U] = js.native
-  def flatten(): Stream[R] = js.native
   /**
   		 * Recursively reads values from a Stream which may contain nested Streams
   		 * or Arrays. As values or errors are encountered, they are emitted on a
@@ -361,6 +360,7 @@ trait Stream[R] extends EventEmitter {
   		 * @name Stream.flatten()
   		 * @api public
   		 */
+  def flatten(): Stream[R] = js.native
   @JSName("flatten")
   def flatten_U[U](): Stream[U] = js.native
   /**

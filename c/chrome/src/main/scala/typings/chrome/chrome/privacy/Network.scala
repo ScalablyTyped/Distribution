@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 
 trait Network extends js.Object {
   var networkPredictionEnabled: ChromeSetting
-  /** @since Chrome 42. */
+  /** @since Chrome 48. */
+  var webRTCIPHandlingPolicy: ChromeSetting
+  /** @deprecated since Chrome 48. Please use privacy.network.webRTCIPHandlingPolicy. */
   var webRTCMultipleRoutesEnabled: ChromeSetting
-  /** @since Chrome 47. Warning: this is the current Dev channel. */
+  /** @deprecated since Chrome 48. Please use privacy.network.webRTCIPHandlingPolicy. */
   var webRTCNonProxiedUdpEnabled: ChromeSetting
 }
 
@@ -18,10 +20,11 @@ object Network {
   @scala.inline
   def apply(
     networkPredictionEnabled: ChromeSetting,
+    webRTCIPHandlingPolicy: ChromeSetting,
     webRTCMultipleRoutesEnabled: ChromeSetting,
     webRTCNonProxiedUdpEnabled: ChromeSetting
   ): Network = {
-    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled, webRTCMultipleRoutesEnabled = webRTCMultipleRoutesEnabled, webRTCNonProxiedUdpEnabled = webRTCNonProxiedUdpEnabled)
+    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled, webRTCIPHandlingPolicy = webRTCIPHandlingPolicy, webRTCMultipleRoutesEnabled = webRTCMultipleRoutesEnabled, webRTCNonProxiedUdpEnabled = webRTCNonProxiedUdpEnabled)
   
     __obj.asInstanceOf[Network]
   }

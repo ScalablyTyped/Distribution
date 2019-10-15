@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "rc-slider"
-version := "8.6-dt-20190815Z-cd2774"
+version := "8.6-dt-20190815Z-168638"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20190212Z-eefb74",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191003Z-965e98",
+  "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20190212Z-0a6a44",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191014Z-d5b0ca",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

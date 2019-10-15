@@ -2,6 +2,8 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`private`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PortalGroup extends Accessor {
   /**
-    * The access privileges on the group which determines who can see and access the group.  **Possible Values:** private | org | public
+    * The access privileges on the group which determines who can see and access the group.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#access)
     */
-  var access: String = js.native
+  var access: `private` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org | public = js.native
   /**
     * The date the group was created.
     *

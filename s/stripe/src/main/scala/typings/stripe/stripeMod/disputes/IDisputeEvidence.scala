@@ -16,7 +16,7 @@ trait IDisputeEvidence extends js.Object {
     */
   var billing_address: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) Your subscription cancellation policy, as shown to the customer. [Expandable]
+    * (ID of a file) Your subscription cancellation policy, as shown to the customer. [Expandable]
     */
   var cancellation_policy: js.UndefOr[String] = js.undefined
   /**
@@ -28,7 +28,7 @@ trait IDisputeEvidence extends js.Object {
     */
   var cancellation_rebuttal: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) Any communication with the customer that you feel is relevant to your case (for
+    * (ID of a file) Any communication with the customer that you feel is relevant to your case (for
     * example emails proving that they received the product or service, or demonstrating their use of or
     * satisfaction with the product or service).
     */
@@ -46,11 +46,11 @@ trait IDisputeEvidence extends js.Object {
     */
   var customer_purchase_ip: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) A relevant document or contract showing the customer's signature. [Expandable]
+    * (ID of a file) A relevant document or contract showing the customer's signature. [Expandable]
     */
   var customer_signature: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) Documentation for the prior charge that can uniquely identify the charge,
+    * (ID of a file) Documentation for the prior charge that can uniquely identify the charge,
     * such as a receipt, shipping label, work order, etc. This document should be paired with a similar
     * document from the disputed payment that proves the two payments are separate. [Expandable]
     */
@@ -68,11 +68,11 @@ trait IDisputeEvidence extends js.Object {
     */
   var product_description: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) Any receipt or message sent to the customer notifying them of the charge. [Expandable]
+    * (ID of a file) Any receipt or message sent to the customer notifying them of the charge. [Expandable]
     */
   var receipt: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) Your refund policy, as shown to the customer. [Expandable]
+    * (ID of a file) Your refund policy, as shown to the customer. [Expandable]
     */
   var refund_policy: js.UndefOr[String] = js.undefined
   /**
@@ -88,7 +88,7 @@ trait IDisputeEvidence extends js.Object {
     */
   var service_date: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) Documentation showing proof that a service was provided to the customer. This could
+    * (ID of a file) Documentation showing proof that a service was provided to the customer. This could
     * include a copy of a signed contract, work order, or other form of written agreement.
     */
   var service_documentation: js.UndefOr[String] = js.undefined
@@ -106,7 +106,7 @@ trait IDisputeEvidence extends js.Object {
     */
   var shipping_date: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) Documentation showing proof that a product was shipped to the customer at the same address
+    * (ID of a file) Documentation showing proof that a product was shipped to the customer at the same address
     * the customer provided to you. This could include a copy of the shipment receipt, shipping label, etc, and should
     * show the full shipping address of the customer, if possible. [Expandable]
     */
@@ -117,7 +117,7 @@ trait IDisputeEvidence extends js.Object {
     */
   var shipping_tracking_number: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) Any additional evidence or statements. [Expandable]
+    * (ID of a file) Any additional evidence or statements. [Expandable]
     */
   var uncategorized_file: js.UndefOr[String] = js.undefined
   /**

@@ -1,24 +1,30 @@
 package typings.reactDashPopperDashTooltip
 
+import typings.reactDashPopperDashTooltip.distTypesMod.TriggerTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashPopperDashTooltipStrings {
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click extends TriggerTypes
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait focus extends TriggerTypes
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait hover extends TriggerTypes
   
   @js.native
-  sealed trait `right-click` extends js.Object
+  sealed trait none extends TriggerTypes
+  
+  @js.native
+  sealed trait `right-click` extends TriggerTypes
   
   @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline

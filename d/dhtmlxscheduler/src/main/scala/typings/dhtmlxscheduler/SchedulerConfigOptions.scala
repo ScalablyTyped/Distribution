@@ -243,7 +243,7 @@ trait SchedulerConfigOptions extends js.Object {
   	*/
   var map_resolve_event_location: Boolean
   /**
-  	 * enables/disables prompts asking the user to share his location for displaying on the map
+  	 * enables/disables prompts asking the user to share their location for displaying on the map
   	*/
   var map_resolve_user_location: Boolean
   /**

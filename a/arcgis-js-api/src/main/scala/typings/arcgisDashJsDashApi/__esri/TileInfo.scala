@@ -1,6 +1,20 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dib
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.emf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.lerc
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mixed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.pdf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png24
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ps
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svgz
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tiff
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +30,11 @@ trait TileInfo
     */
   var dpi: Double = js.native
   /**
-    * Image format of the cached tiles.  **Possible Values:** png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc
+    * Image format of the cached tiles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#format)
     */
-  var format: String = js.native
+  var format: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc = js.native
   /**
     * Indicates if the tiling scheme supports wrap around.
     *

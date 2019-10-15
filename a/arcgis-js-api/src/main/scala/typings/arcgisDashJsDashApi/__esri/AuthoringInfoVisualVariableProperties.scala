@@ -1,5 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-and-below`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`centered-on`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`high-to-low`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`percent-of-total`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.days
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.extremes
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hours
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.minutes
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.months
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.percent
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ratio
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.seconds
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.years
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,29 +49,31 @@ trait AuthoringInfoVisualVariableProperties extends js.Object {
     */
   var startTime: js.UndefOr[String | Double] = js.undefined
   /**
-    * If the UI offers the option to display values based on a ratio or percentage, this indicates which selection was made.  **Possible Values:** percent | percent-of-total | ratio
+    * If the UI offers the option to display values based on a ratio or percentage, this indicates which selection was made.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#style)
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[percent | `percent-of-total` | ratio] = js.undefined
   /**
-    * Indicates the theme selected by the user when generating a renderer or visual variable with one of the Smart Mapping functions.  **Possible Values:** above-and-below | centered-on | extremes | high-to-low
+    * Indicates the theme selected by the user when generating a renderer or visual variable with one of the Smart Mapping functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#theme)
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[`above-and-below` | `centered-on` | extremes | `high-to-low`] = js.undefined
   /**
-    * The type of visual variable generated.  **Possible Values:** color | size | opacity
+    * The type of visual variable generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#type)
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[
+    typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.color | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.size | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.opacity
+  ] = js.undefined
   /**
-    * If an age or timeline renderer was generated, indicates the time units used.  **Possible Values:** seconds | minutes | hours | days | months | years
+    * If an age or timeline renderer was generated, indicates the time units used.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#units)
     */
-  var units: js.UndefOr[String] = js.undefined
+  var units: js.UndefOr[seconds | minutes | hours | days | months | years] = js.undefined
 }
 
 object AuthoringInfoVisualVariableProperties {
@@ -69,10 +84,10 @@ object AuthoringInfoVisualVariableProperties {
     maxSliderValue: Int | Double = null,
     minSliderValue: Int | Double = null,
     startTime: String | Double = null,
-    style: String = null,
-    theme: String = null,
-    `type`: String = null,
-    units: String = null
+    style: percent | `percent-of-total` | ratio = null,
+    theme: `above-and-below` | `centered-on` | extremes | `high-to-low` = null,
+    `type`: typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.color | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.size | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.opacity = null,
+    units: seconds | minutes | hours | days | months | years = null
   ): AuthoringInfoVisualVariableProperties = {
     val __obj = js.Dynamic.literal()
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
@@ -80,10 +95,10 @@ object AuthoringInfoVisualVariableProperties {
     if (maxSliderValue != null) __obj.updateDynamic("maxSliderValue")(maxSliderValue.asInstanceOf[js.Any])
     if (minSliderValue != null) __obj.updateDynamic("minSliderValue")(minSliderValue.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthoringInfoVisualVariableProperties]
   }
 }

@@ -48,7 +48,7 @@ trait Groups extends js.Object {
     * REPLY_TO_MANAGERS
     */
   var replyTo: js.UndefOr[String] = js.undefined
-  /** Should the member be notified if his message is denied by owner. */
+  /** Should the member be notified if their message is denied by owner. */
   var sendMessageDenyNotification: js.UndefOr[String] = js.undefined
   /** Is the group listed in groups directory */
   var showInGroupDirectory: js.UndefOr[String] = js.undefined

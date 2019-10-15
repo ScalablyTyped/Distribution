@@ -31,6 +31,7 @@ object distTypesContextsNavContextMod extends js.Object {
     @JSName("navigate")
     def navigate_none(path: String, direction: none): Unit = js.native
     def registerIonPage(page: HTMLElement): Unit = js.native
+    def tabNavigate(url: String): Unit = js.native
   }
   
   val NavContext: Context[NavContextState] = js.native

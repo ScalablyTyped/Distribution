@@ -14,9 +14,9 @@ trait location extends js.Object {
     *
     * @param params Input parameters for generating a location-based visualization. See the table below for details of each parameter.
     * @param params.layer The layer for which the visualization is generated.
-    * @param params.basemap The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
+    * @param params.view The view where the input layer is rendered. This method inspects the view's background (i.e. basemap, web map background, or view container) to determine optimal colors for the output renderer. This parameter should always be set in practice, but if not provided this method will assume the generated renderer will display on a light background.
+    * @param params.basemap The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization. Determines optimal colors for the output renderer.
     * @param params.locationScheme In authoring apps, the user may select a pre-defined location scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
-    * @param params.view The SceneView instance in which the visualization will be rendered. This parameter is required if `symbolType = "3d-volumetric"`, except for layers with a `mesh` geometryType.
     * @param params.outlineOptimizationEnabled For polygon layers only. Indicates whether the polygon outline width should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     * @param params.symbolType
     * The type of symbol to generate. This depends on the view in which you are working and the desired visualization. This parameter does not need to be specified for layers with a `mesh` geometry type. Possible values are described below.
@@ -31,7 +31,7 @@ trait location extends js.Object {
     *
     * Value | Description
     * ------|------------
-    * tint | Applies the symbol `color` to the desaturated geometry/texture color.
+    * tint | Applies the symbol `color` to the unsaturated geometry/texture color.
     * replace | Removes the geometry/texture color and applies the symbol `color`.
     * multiply | Multiplies geometry/texture color value with the symbol `color` value. The result is a darker color. Multiplying with white keeps the geometry color the same.
     *

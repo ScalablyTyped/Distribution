@@ -1,5 +1,17 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`interior-intersection`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`line-coincidence`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`line-touch`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-touch`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.cross
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disjoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.in
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.intersection
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.overlap
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relation
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.touch
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.within
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +50,9 @@ trait RelationParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationParameters.html#relation)
     */
-  var relation: js.UndefOr[String] = js.undefined
+  var relation: js.UndefOr[
+    cross | disjoint | in | `interior-intersection` | intersection | `line-coincidence` | `line-touch` | overlap | `point-touch` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relation | touch | within
+  ] = js.undefined
   /**
     * The string describes the spatial relationship to be tested when `RelationParameters.relation = 'relation'`. The [Relational functions for ST_Geometry](https://desktop.arcgis.com/en/arcmap/latest/manage-data/using-sql-with-gdbs/relational-functions-for-st-geometry.htm) topic has additional details. An example of a valid string is: `FFFTTT**`. Also see the description of [geometryEngine.relate()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#relate) for additional examples of valid strings.
     *
@@ -52,13 +66,13 @@ object RelationParametersProperties {
   def apply(
     geometries1: js.Array[GeometryProperties] = null,
     geometries2: js.Array[GeometryProperties] = null,
-    relation: String = null,
+    relation: cross | disjoint | in | `interior-intersection` | intersection | `line-coincidence` | `line-touch` | overlap | `point-touch` | relation | touch | within = null,
     relationParameter: String = null
   ): RelationParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (geometries1 != null) __obj.updateDynamic("geometries1")(geometries1)
     if (geometries2 != null) __obj.updateDynamic("geometries2")(geometries2)
-    if (relation != null) __obj.updateDynamic("relation")(relation)
+    if (relation != null) __obj.updateDynamic("relation")(relation.asInstanceOf[js.Any])
     if (relationParameter != null) __obj.updateDynamic("relationParameter")(relationParameter)
     __obj.asInstanceOf[RelationParametersProperties]
   }

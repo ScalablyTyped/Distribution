@@ -9,8 +9,6 @@ trait RegularShape
   extends typings.ol.styleImageMod.default {
   var atlasManager_ : typings.ol.styleAtlasManagerMod.default = js.native
   var radius_ : Double = js.native
-  @JSName("clone")
-  def clone_RegularShape(): RegularShape = js.native
   def getAngle(): Double = js.native
   def getChecksum(): String = js.native
   def getFill(): typings.ol.styleFillMod.default = js.native

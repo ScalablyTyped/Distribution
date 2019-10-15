@@ -1287,6 +1287,7 @@
 | 150 | [angular-mocks](./a/angular-mocks) | AngularJS mocks for testing
 | 150 | [cryptiles](./c/cryptiles) | General purpose crypto utilities
 | 150 | [google-libphonenumber](./g/google-libphonenumber) | The up-to-date and reliable Google's libphonenumbe
+| 150 | [queue](./q/queue) | asynchronous function queue with adjustable concur
 | 150 | [recharts](./r/recharts) | React charts
 | 150 | [tiny-emitter](./t/tiny-emitter) | A tiny (less than 1k) event emitter library
 | 150 | [unfetch](./u/unfetch) | Bare minimum fetch polyfill in 500 bytes
@@ -2721,6 +2722,7 @@
 | 41 | [upper-case](./u/upper-case) | Upper case a string
 | 41 | [webcomponents_dot_js](./w/webcomponents_dot_js) | webcomponents.js
 | 40 | [ajv-errors](./a/ajv-errors) | Custom error messages in JSON-Schema for Ajv valid
+| 40 | [emoji-js](./e/emoji-js) | A JS Emoji conversion library
 | 40 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati
 | 40 | [http-assert](./h/http-assert) | assert with status codes
 | 40 | [isomorphic-form-data](./i/isomorphic-form-data) | A library to create readable "multipart/form-data"
@@ -3172,6 +3174,7 @@
 | 28 | [scroll-into-view](./s/scroll-into-view) | -
 | 28 | [scrollparent](./s/scrollparent) | A function to get the scrolling parent of an html 
 | 28 | [swagger-express-mw](./s/swagger-express-mw) | Swagger loader and middleware for express
+| 28 | [wav](./w/wav) | Reader and Writer streams for Microsoft WAVE audio
 | 28 | [xmpp__xml](./x/xmpp__xml) | XMPP XML for JavaScript
 | 27 | [a-big-triangle](./a/a-big-triangle) | Draws a big triangle
 | 27 | [actioncable](./a/actioncable) | WebSocket framework for Ruby on Rails.
@@ -3891,6 +3894,7 @@
 | 15 | [metismenu](./m/metismenu) | A jQuery menu plugin
 | 15 | [mitm](./m/mitm) | Intercept and mock outgoing network TCP connection
 | 15 | [ng-dialog](./n/ng-dialog) | Modal dialogs and popups provider for Angular.js a
+| 15 | [node-easy-cert](./n/node-easy-cert) | A tool for managing self-signed certifications
 | 15 | [phosphor__datagrid](./p/phosphor__datagrid) | PhosphorJS - Tabular Data Grid
 | 15 | [pixi-spine](./p/pixi-spine) | Spine implementation for pixi v^3 and v^4
 | 15 | [pouchdb-node](./p/pouchdb-node) | PouchDB, the Node-only edition.
@@ -4614,6 +4618,7 @@
 | 8 | [prompt-sync-history](./p/prompt-sync-history) | History manager for prompt-sync
 | 8 | [ptomasroos__react-native-](./p/ptomasroos__react-native-multi-slider) | Android and iOS supported pure JS slider component
 | 8 | [raspi-peripheral](./r/raspi-peripheral) | Provides a base class and pin management functions
+| 8 | [rate-limit-redis](./r/rate-limit-redis) | Provides a Redis store for the express-rate-limit 
 | 8 | [rc-editor-core](./r/rc-editor-core) | editor-core ui component for react
 | 8 | [react-breadcrumbs](./r/react-breadcrumbs) | Automatic breadcrumbs for react-router
 | 8 | [react-css-transition-repl](./r/react-css-transition-replace) | A React component to animate replacing one element
@@ -6913,6 +6918,7 @@
 | 0 | [ldapjs-client](./l/ldapjs-client) | LDAP js client
 | 0 | [leaflet-curve](./l/leaflet-curve) | A Leaflet plugin for drawing Bézier curves and oth
 | 0 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
+| 0 | [leaflet-groupedlayercontr](./l/leaflet-groupedlayercontrol) | A Leaflet layer control with support for grouping 
 | 0 | [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d
 | 0 | [leaflet-responsive-popup](./l/leaflet-responsive-popup) | Removes the need to move the map to be able to see
 | 0 | [leaflet_dot_featuregroup_](./l/leaflet_dot_featuregroup_dot_subgroup) | Creates a Leaflet Feature Group that adds its chil
@@ -7053,6 +7059,7 @@
 | 0 | [pulumi__query](./p/pulumi__query) | An simple, relational SDK for querying TypeScript 
 | 0 | [qunit-dom](./q/qunit-dom) | High Level DOM Assertions for QUnit
 | 0 | [rangyinputs](./r/rangyinputs) | A small jQuery plug-in for selection and caret man
+| 0 | [ranjs](./r/ranjs) | Library for generating various random variables.
 | 0 | [raspi-onewire](./r/raspi-onewire) | Provides access to 1-Wire on the Raspberry Pi from
 | 0 | [raty](./r/raty) | a node framework base koa@2 that can use full es20
 | 0 | [rc-mentions](./r/rc-mentions) | React Mentions
@@ -7233,6 +7240,7 @@
 | 0 | [tinajs__tina-redux](./t/tinajs__tina-redux) | Tina.js bindings for Redux
 | 0 | [tiny-slider-react](./t/tiny-slider-react) | wrapper tiny-slider plugin for react
 | 0 | [tinycopy](./t/tinycopy) | Tiny library for clipboard copy.
+| 0 | [tlf-log](./t/tlf-log) | A small logging library
 | 0 | [touch-events](./t/touch-events) | Touch events using PEP
 | 0 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension
 | 0 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types

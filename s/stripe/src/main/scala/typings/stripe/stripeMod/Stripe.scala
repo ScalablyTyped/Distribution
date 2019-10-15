@@ -17,7 +17,7 @@ import typings.stripe.stripeMod.resources.Customers
 import typings.stripe.stripeMod.resources.Disputes
 import typings.stripe.stripeMod.resources.EphemeralKeys
 import typings.stripe.stripeMod.resources.Events
-import typings.stripe.stripeMod.resources.FileUploads
+import typings.stripe.stripeMod.resources.Files
 import typings.stripe.stripeMod.resources.InvoiceItems
 import typings.stripe.stripeMod.resources.Invoices
 import typings.stripe.stripeMod.resources.Orders
@@ -70,7 +70,7 @@ trait Stripe extends js.Object {
   var disputes: Disputes = js.native
   var ephemeralKeys: EphemeralKeys = js.native
   var events: Events = js.native
-  var fileUploads: FileUploads = js.native
+  var files: Files = js.native
   var invoiceItems: InvoiceItems = js.native
   var invoices: Invoices = js.native
   var orders: Orders = js.native

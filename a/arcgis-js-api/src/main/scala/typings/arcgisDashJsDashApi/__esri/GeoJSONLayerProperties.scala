@@ -2,6 +2,10 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polygon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,11 +52,11 @@ trait GeoJSONLayerProperties
     */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   /**
-    * The geometry type of features in the layer. All features must be of the same type.  **Possible Values:** point | multipoint | polyline | polygon
+    * The geometry type of features in the layer. All features must be of the same type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#geometryType)
     */
-  var geometryType: js.UndefOr[String] = js.undefined
+  var geometryType: js.UndefOr[point | polygon | polyline | multipoint] = js.undefined
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.  Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of features (for example blue labels for lakes and green labels for parks).
     * > **Known Limitations**
@@ -146,7 +150,7 @@ object GeoJSONLayerProperties {
     featureReduction: GeoJSONLayerFeatureReduction = null,
     fields: js.Array[FieldProperties] = null,
     fullExtent: ExtentProperties = null,
-    geometryType: String = null,
+    geometryType: point | polygon | polyline | multipoint = null,
     id: String = null,
     labelingInfo: js.Array[LabelClassProperties] = null,
     labelsVisible: js.UndefOr[Boolean] = js.undefined,
@@ -175,7 +179,7 @@ object GeoJSONLayerProperties {
     if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo)
     if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)

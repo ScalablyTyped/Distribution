@@ -13,6 +13,12 @@ trait SizeSliderProperties extends SmartMappingSliderBaseProperties {
     */
   var stops: js.UndefOr[js.Array[SizeStopProperties]] = js.undefined
   /**
+    * Exposes various properties of the widget that can be styled.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
+    */
+  var style: js.UndefOr[SizeSliderStyle] = js.undefined
+  /**
     * The view model for the SizeSlider widget. This class contains all the logic (properties and methods) that controls this widget's behavior. See the [SizeSliderViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html) class to access all properties and methods on the SizeSlider widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#viewModel)
@@ -32,7 +38,9 @@ object SizeSliderProperties {
     max: Int | Double = null,
     min: Int | Double = null,
     stops: js.Array[SizeStopProperties] = null,
-    viewModel: SizeSliderViewModelProperties = null
+    style: SizeSliderStyle = null,
+    viewModel: SizeSliderViewModelProperties = null,
+    zoomOptions: SmartMappingSliderBaseZoomOptions = null
   ): SizeSliderProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
@@ -44,7 +52,9 @@ object SizeSliderProperties {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (style != null) __obj.updateDynamic("style")(style)
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions)
     __obj.asInstanceOf[SizeSliderProperties]
   }
 }

@@ -1,6 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f64
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
 import typings.std.Float32Array
 import typings.std.Float64Array
 import typings.std.Int16Array
@@ -23,7 +32,7 @@ trait PixelBlock extends Accessor {
     */
   var height: Double = js.native
   /**
-    * Bit Mask. All pixels are valid when mask is null.
+    * An array of nodata mask. All pixels are valid when mask is null.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#mask)
     */
@@ -35,11 +44,11 @@ trait PixelBlock extends Accessor {
     */
   var maskIsAlpha: Boolean = js.native
   /**
-    * The pixel type.  **Possible Values:** s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64
+    * The pixel type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixelType)
     */
-  var pixelType: String = js.native
+  var pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = js.native
   /**
     * A two dimensional array representing the pixels from the Image Service displayed on the client. The length of the first dimension is the same as the number of bands in the layer. The length of the second dimension is [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#height) * [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#width). The length of each band is the same. The pixels in each band are arranged row by row in this format: `[p_00, p_10, p_20, ... p_10, p_11, ...]` where `p_xy` is the pixel value at the column `x` and row `y`.
     *

@@ -1,5 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`nautical-miles`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.feet
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.kilometers
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.meters
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miles
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,11 +48,11 @@ trait BufferParametersProperties extends js.Object {
     */
   var unionResults: js.UndefOr[Boolean] = js.undefined
   /**
-    * The units for calculating each buffer distance. If `unit` is not specified, the units are derived from `bufferSpatialReference`. If `bufferSpatialReference` is not specified, the units are derived from the features.  For a list of valid units, see [esriSRUnitType Constants](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnitType_Constants/000w00000042000000/) and [esriSRUnit2Type Constants](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnit2Type_Constants/000w00000041000000/).  **Possible Values:** feet | kilometers | meters | miles | nautical-miles | yards
+    * The units for calculating each buffer distance. If `unit` is not specified, the units are derived from `bufferSpatialReference`. If `bufferSpatialReference` is not specified, the units are derived from the features.  For a list of valid units, see [esriSRUnitType Constants](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnitType_Constants/000w00000042000000/) and [esriSRUnit2Type Constants](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnit2Type_Constants/000w00000041000000/).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#unit)
     */
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[feet | kilometers | meters | miles | `nautical-miles` | yards] = js.undefined
 }
 
 object BufferParametersProperties {
@@ -58,7 +64,7 @@ object BufferParametersProperties {
     geometries: js.Array[GeometryProperties] = null,
     outSpatialReference: SpatialReferenceProperties = null,
     unionResults: js.UndefOr[Boolean] = js.undefined,
-    unit: String = null
+    unit: feet | kilometers | meters | miles | `nautical-miles` | yards = null
   ): BufferParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (bufferSpatialReference != null) __obj.updateDynamic("bufferSpatialReference")(bufferSpatialReference)
@@ -67,7 +73,7 @@ object BufferParametersProperties {
     if (geometries != null) __obj.updateDynamic("geometries")(geometries)
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
     if (!js.isUndefined(unionResults)) __obj.updateDynamic("unionResults")(unionResults)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferParametersProperties]
   }
 }

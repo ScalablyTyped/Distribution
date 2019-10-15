@@ -3,9 +3,12 @@ package typings.arcgisDashJsDashApi.__esri
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.edits
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geojson
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polygon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,11 +67,11 @@ trait GeoJSONLayer
     */
   val fieldsIndex: FieldsIndex = js.native
   /**
-    * The geometry type of features in the layer. All features must be of the same type.  **Possible Values:** point | multipoint | polyline | polygon
+    * The geometry type of features in the layer. All features must be of the same type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#geometryType)
     */
-  var geometryType: String = js.native
+  var geometryType: point | polygon | polyline | multipoint = js.native
   /**
     * Indicates whether the client-side features in the layer have `Z` (elevation) values. Refer to [elevationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#elevationInfo) for details regarding placement and rendering of features with z-values in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Use the `supportsZ` property in the layer's [capabilities.data](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities) object to verify if `Z` values are supported on the features.
     *
@@ -152,6 +155,8 @@ trait GeoJSONLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#templates)
     */
   var templates: js.Array[FeatureTemplate] = js.native
+  @JSName("type")
+  val type_GeoJSONLayer: geojson = js.native
   /**
     * The URL of the GeoJSON file.
     *
@@ -212,11 +217,7 @@ trait GeoJSONLayer
   def getFieldDomain(fieldName: String): Domain = js.native
   def getFieldDomain(fieldName: String, options: GeoJSONLayerGetFieldDomainOptions): Domain = js.native
   @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: GeoJSONLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: GeoJSONLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: GeoJSONLayerLayerviewDestroyEventHandler): IHandle = js.native
+  def on_edits(name: edits, eventHandler: GeoJSONLayerEditsEventHandler): IHandle = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query. If no parameters are specified, then the extent and count of all features satisfying the layer's configuration/filters are returned.
     * > **Known Limitations**

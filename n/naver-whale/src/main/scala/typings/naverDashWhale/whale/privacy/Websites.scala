@@ -7,8 +7,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Websites extends js.Object {
+  /** @since Chrome 65. */
+  var doNotTrackEnabled: ChromeSetting
   var hyperlinkAuditingEnabled: ChromeSetting
-  /** @since Chrome 21. */
+  /** @since Chrome 21. Available on Windows and ChromeOS only. */
   var protectedContentEnabled: ChromeSetting
   var referrersEnabled: ChromeSetting
   var thirdPartyCookiesAllowed: ChromeSetting
@@ -17,12 +19,13 @@ trait Websites extends js.Object {
 object Websites {
   @scala.inline
   def apply(
+    doNotTrackEnabled: ChromeSetting,
     hyperlinkAuditingEnabled: ChromeSetting,
     protectedContentEnabled: ChromeSetting,
     referrersEnabled: ChromeSetting,
     thirdPartyCookiesAllowed: ChromeSetting
   ): Websites = {
-    val __obj = js.Dynamic.literal(hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, protectedContentEnabled = protectedContentEnabled, referrersEnabled = referrersEnabled, thirdPartyCookiesAllowed = thirdPartyCookiesAllowed)
+    val __obj = js.Dynamic.literal(doNotTrackEnabled = doNotTrackEnabled, hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, protectedContentEnabled = protectedContentEnabled, referrersEnabled = referrersEnabled, thirdPartyCookiesAllowed = thirdPartyCookiesAllowed)
   
     __obj.asInstanceOf[Websites]
   }

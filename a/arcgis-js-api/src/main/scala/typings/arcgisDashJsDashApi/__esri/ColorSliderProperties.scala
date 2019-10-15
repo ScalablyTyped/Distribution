@@ -50,7 +50,8 @@ object ColorSliderProperties {
     min: Int | Double = null,
     primaryHandleEnabled: js.UndefOr[Boolean] = js.undefined,
     stops: js.Array[ColorStopProperties] = null,
-    viewModel: ColorSliderViewModelProperties = null
+    viewModel: ColorSliderViewModelProperties = null,
+    zoomOptions: SmartMappingSliderBaseZoomOptions = null
   ): ColorSliderProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
@@ -65,6 +66,7 @@ object ColorSliderProperties {
     if (!js.isUndefined(primaryHandleEnabled)) __obj.updateDynamic("primaryHandleEnabled")(primaryHandleEnabled)
     if (stops != null) __obj.updateDynamic("stops")(stops)
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions)
     __obj.asInstanceOf[ColorSliderProperties]
   }
 }

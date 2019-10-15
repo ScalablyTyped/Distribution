@@ -1,6 +1,19 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bmp
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.exclude
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.include
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.pdf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png24
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,13 +35,13 @@ trait ImageParameters extends Accessor {
     */
   var extent: Extent = js.native
   /**
-    * Map image format.  **Possible Values:** png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg
+    * Map image format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#format)
     *
     * @default png8
     */
-  var format: String = js.native
+  var format: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg = js.native
   /**
     * Requested image height in pixels.
     *
@@ -54,11 +67,11 @@ trait ImageParameters extends Accessor {
     */
   var layerIds: js.Array[Double] = js.native
   /**
-    * The option for displaying or hiding the layer.  **Possible Values:** show | hide | include | exclude
+    * The option for displaying or hiding the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#layerOption)
     */
-  var layerOption: String = js.native
+  var layerOption: show | hide | include | exclude = js.native
   /**
     * Indicates whether or not the background of the dynamic image is transparent.
     *
@@ -74,7 +87,7 @@ trait ImageParameters extends Accessor {
     */
   var width: Double = js.native
   /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#toJSON)
     *

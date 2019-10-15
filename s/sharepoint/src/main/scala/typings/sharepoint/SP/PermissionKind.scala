@@ -79,7 +79,7 @@ object PermissionKind extends js.Object {
   @js.native
   sealed trait editListItems extends PermissionKind
   
-  /** Allows a user to change his or her user information, such as adding a picture. */
+  /** Allows a user to change their user information, such as adding a picture. */
   @js.native
   sealed trait editMyUserInfo extends PermissionKind
   

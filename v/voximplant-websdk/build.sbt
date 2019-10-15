@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "voximplant-websdk"
-version := "3.0.x-dt-20190322Z-9dab57"
+version := "3.0.x-dt-20191014Z-bfa4da"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

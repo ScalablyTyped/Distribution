@@ -1,13 +1,17 @@
 package typings.datDotGui.datDotGuiMod
 
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("dat.gui", "GUIController")
 @js.native
-class GUIController () extends js.Object {
-  def destroy(): Unit = js.native
+class GUIController protected () extends js.Object {
+  def this(`object`: js.Object, property: String) = this()
+  var domElement: HTMLElement = js.native
+  var `object`: js.Object = js.native
+  var property: String = js.native
   // FunctionController
   def fire(): GUIController = js.native
   def getValue(): js.Any = js.native
@@ -16,13 +20,9 @@ class GUIController () extends js.Object {
   def max(n: Double): GUIController = js.native
   // NumberController
   def min(n: Double): GUIController = js.native
-  def name(s: String): GUIController = js.native
-  // Controller
-  def onChange(): GUIController = js.native
-  def onChange(value: js.Any): GUIController = js.native
-  def onFinishChange(): GUIController = js.native
-  def onFinishChange(value: js.Any): GUIController = js.native
-  // augmentController in dat/gui/GUI.js
+  def name(name: String): GUIController = js.native
+  def onChange(fnc: js.Function1[/* value */ js.UndefOr[js.Any], Unit]): GUIController = js.native
+  def onFinishChange(fnc: js.Function1[/* value */ js.UndefOr[js.Any], Unit]): GUIController = js.native
   def options(option: js.Any): GUIController = js.native
   def remove(): GUIController = js.native
   def setValue(value: js.Any): GUIController = js.native

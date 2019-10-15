@@ -1,7 +1,7 @@
 
 # Scala.js typings for semver-diff
 
-Typings are for version 3.1.0
+Typings are for version 3.1.1
 
 ## Library description:
 Get the diff type of two semver versions: 0.0.1 0.0.2 → patch

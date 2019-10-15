@@ -155,6 +155,7 @@ object QueryParameters {
     disjunctiveFacets: js.Array[String] = null,
     disjunctiveFacetsRefinements: StringDictionary[FacetList] = null,
     distinct: Double | Boolean = null,
+    enableABTest: js.UndefOr[Boolean] = js.undefined,
     enableExactOnSingleWordQuery: js.UndefOr[Boolean] = js.undefined,
     exactOnSingleWordQuery: attribute | none | word = null,
     facetFilters: js.Array[String | js.Array[String]] = null,
@@ -224,6 +225,7 @@ object QueryParameters {
     if (disjunctiveFacets != null) __obj.updateDynamic("disjunctiveFacets")(disjunctiveFacets)
     if (disjunctiveFacetsRefinements != null) __obj.updateDynamic("disjunctiveFacetsRefinements")(disjunctiveFacetsRefinements)
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableABTest)) __obj.updateDynamic("enableABTest")(enableABTest)
     if (!js.isUndefined(enableExactOnSingleWordQuery)) __obj.updateDynamic("enableExactOnSingleWordQuery")(enableExactOnSingleWordQuery)
     if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
     if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters)

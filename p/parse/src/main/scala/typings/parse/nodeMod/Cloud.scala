@@ -12,6 +12,7 @@ import typings.parse.Parse.Cloud.HTTPOptions
 import typings.parse.Parse.Cloud.HttpResponse
 import typings.parse.Parse.Cloud.JobRequest
 import typings.parse.Parse.Cloud.RunOptions
+import typings.parse.Parse.Cloud.TriggerRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +49,8 @@ object Cloud extends js.Object {
       (js.Promise[typings.parse.Parse.Query[typings.parse.Parse.Object] | Unit]) | typings.parse.Parse.Query[typings.parse.Parse.Object] | Unit
     ]
   ): Unit = js.native
+  def beforeLogin(): Unit = js.native
+  def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Promise[_] | _]): Unit = js.native
   def beforeSave(arg1: js.Any): Unit = js.native
   def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
   def define(name: String): Unit = js.native

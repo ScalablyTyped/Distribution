@@ -14,7 +14,7 @@ trait Anon_Active extends js.Object {
     */
   var card_payments: js.UndefOr[active | inactive | pending] = js.undefined
   /**
-    * he status of the legacy payments capability of the account.
+    * The status of the legacy payments capability of the account.
     */
   var legacy_payments: js.UndefOr[active | inactive | pending] = js.undefined
   /**

@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,13 +22,13 @@ trait ZoomViewModel extends Accessor {
     */
   var canZoomOut: Boolean = js.native
   /**
-    * The current state of the widget.  **Possible Values:** disabled | ready
+    * The current state of the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html#state)
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: disabled | ready = js.native
   /**
     * The view from which to operate.
     *

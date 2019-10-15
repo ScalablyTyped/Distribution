@@ -2,11 +2,13 @@ package typings.handsontable.handsontableMod.Handsontable
 
 import org.scalablytyped.runtime.Instantiable6
 import typings.handsontable.handsontableMod.Handsontable.Hooks.Events
-import typings.handsontable.handsontableMod.Handsontable._editors.Base
+import typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor
 import typings.handsontable.handsontableMod.Handsontable.autoColumnSize.Settings
 import typings.handsontable.handsontableMod.Handsontable.comments.CommentConfig
 import typings.handsontable.handsontableMod.Handsontable.contextMenu.PredefinedMenuItemKey
 import typings.handsontable.handsontableMod.Handsontable.nestedHeaders.NestedHeader
+import typings.handsontable.handsontableMod.Handsontable.renderers.BaseRenderer
+import typings.handsontable.handsontableMod.Handsontable.validators.Base
 import typings.handsontable.handsontableMod.Handsontable.wot.CellCoords
 import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.handsontable.handsontableStrings.`non-commercial-and-evaluation`
@@ -87,7 +89,7 @@ trait GridSettings extends Events {
   var contextMenu: js.UndefOr[
     Boolean | js.Array[PredefinedMenuItemKey] | typings.handsontable.handsontableMod.Handsontable.contextMenu.Settings
   ] = js.undefined
-  var copyPaste: js.UndefOr[Boolean] = js.undefined
+  var copyPaste: js.UndefOr[Boolean | typings.handsontable.handsontableMod.Handsontable.copyPaste.Settings] = js.undefined
   var copyable: js.UndefOr[Boolean] = js.undefined
   var correctFormat: js.UndefOr[Boolean] = js.undefined
   var currentColClassName: js.UndefOr[String] = js.undefined
@@ -117,7 +119,7 @@ trait GridSettings extends Events {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      Base
+      BaseEditor
     ]) | Boolean | String
   ] = js.undefined
   var enterBeginsEditing: js.UndefOr[Boolean] = js.undefined
@@ -180,15 +182,13 @@ trait GridSettings extends Events {
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var readOnlyCellClassName: js.UndefOr[String] = js.undefined
   var renderAllRows: js.UndefOr[Boolean] = js.undefined
-  var renderer: js.UndefOr[
-    RendererType | String | typings.handsontable.handsontableMod.Handsontable.renderers.Base
-  ] = js.undefined
+  var renderer: js.UndefOr[RendererType | String | BaseRenderer] = js.undefined
   var rowHeaderWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var rowHeaders: js.UndefOr[Boolean | js.Array[String] | (js.Function1[/* index */ Double, String])] = js.undefined
   var rowHeights: js.UndefOr[
     Double | (js.Array[Double | String]) | String | (js.Function1[/* index */ Double, String | Double])
   ] = js.undefined
-  var search: js.UndefOr[Boolean] = js.undefined
+  var search: js.UndefOr[Boolean | typings.handsontable.handsontableMod.Handsontable.search.Settings] = js.undefined
   var selectOptions: js.UndefOr[js.Array[String]] = js.undefined
   var selectionMode: js.UndefOr[single | range | multiple] = js.undefined
   var skipColumnOnPaste: js.UndefOr[Boolean] = js.undefined
@@ -214,9 +214,7 @@ trait GridSettings extends Events {
   var `type`: js.UndefOr[CellType | String] = js.undefined
   var uncheckedTemplate: js.UndefOr[Boolean | String | Double] = js.undefined
   var undo: js.UndefOr[Boolean] = js.undefined
-  var validator: js.UndefOr[
-    typings.handsontable.handsontableMod.Handsontable.validators.Base | RegExp | ValidatorType | String
-  ] = js.undefined
+  var validator: js.UndefOr[Base | RegExp | ValidatorType | String] = js.undefined
   var viewportColumnRenderingOffset: js.UndefOr[Double | auto] = js.undefined
   var viewportRowRenderingOffset: js.UndefOr[Double | auto] = js.undefined
   var visibleRows: js.UndefOr[Double] = js.undefined
@@ -263,7 +261,7 @@ object GridSettings {
     commentedCellClassName: String = null,
     comments: Boolean | typings.handsontable.handsontableMod.Handsontable.comments.Settings | js.Array[CommentConfig] = null,
     contextMenu: Boolean | js.Array[PredefinedMenuItemKey] | typings.handsontable.handsontableMod.Handsontable.contextMenu.Settings = null,
-    copyPaste: js.UndefOr[Boolean] = js.undefined,
+    copyPaste: Boolean | typings.handsontable.handsontableMod.Handsontable.copyPaste.Settings = null,
     copyable: js.UndefOr[Boolean] = js.undefined,
     correctFormat: js.UndefOr[Boolean] = js.undefined,
     currentColClassName: String = null,
@@ -286,7 +284,7 @@ object GridSettings {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      Base
+      BaseEditor
     ]) | Boolean | String = null,
     enterBeginsEditing: js.UndefOr[Boolean] = js.undefined,
     enterMoves: CellCoords | (js.Function1[/* event */ KeyboardEvent, CellCoords]) = null,
@@ -338,11 +336,11 @@ object GridSettings {
     readOnly: js.UndefOr[Boolean] = js.undefined,
     readOnlyCellClassName: String = null,
     renderAllRows: js.UndefOr[Boolean] = js.undefined,
-    renderer: RendererType | String | typings.handsontable.handsontableMod.Handsontable.renderers.Base = null,
+    renderer: RendererType | String | BaseRenderer = null,
     rowHeaderWidth: Double | js.Array[Double] = null,
     rowHeaders: Boolean | js.Array[String] | (js.Function1[/* index */ Double, String]) = null,
     rowHeights: Double | (js.Array[Double | String]) | String | (js.Function1[/* index */ Double, String | Double]) = null,
-    search: js.UndefOr[Boolean] = js.undefined,
+    search: Boolean | typings.handsontable.handsontableMod.Handsontable.search.Settings = null,
     selectOptions: js.Array[String] = null,
     selectionMode: single | range | multiple = null,
     skipColumnOnPaste: js.UndefOr[Boolean] = js.undefined,
@@ -366,7 +364,7 @@ object GridSettings {
     `type`: CellType | String = null,
     uncheckedTemplate: Boolean | String | Double = null,
     undo: js.UndefOr[Boolean] = js.undefined,
-    validator: typings.handsontable.handsontableMod.Handsontable.validators.Base | RegExp | ValidatorType | String = null,
+    validator: Base | RegExp | ValidatorType | String = null,
     viewportColumnRenderingOffset: Double | auto = null,
     viewportRowRenderingOffset: Double | auto = null,
     visibleRows: Int | Double = null,
@@ -402,7 +400,7 @@ object GridSettings {
     if (commentedCellClassName != null) __obj.updateDynamic("commentedCellClassName")(commentedCellClassName)
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyPaste)) __obj.updateDynamic("copyPaste")(copyPaste)
+    if (copyPaste != null) __obj.updateDynamic("copyPaste")(copyPaste.asInstanceOf[js.Any])
     if (!js.isUndefined(copyable)) __obj.updateDynamic("copyable")(copyable)
     if (!js.isUndefined(correctFormat)) __obj.updateDynamic("correctFormat")(correctFormat)
     if (currentColClassName != null) __obj.updateDynamic("currentColClassName")(currentColClassName)
@@ -473,7 +471,7 @@ object GridSettings {
     if (rowHeaderWidth != null) __obj.updateDynamic("rowHeaderWidth")(rowHeaderWidth.asInstanceOf[js.Any])
     if (rowHeaders != null) __obj.updateDynamic("rowHeaders")(rowHeaders.asInstanceOf[js.Any])
     if (rowHeights != null) __obj.updateDynamic("rowHeights")(rowHeights.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (selectOptions != null) __obj.updateDynamic("selectOptions")(selectOptions)
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     if (!js.isUndefined(skipColumnOnPaste)) __obj.updateDynamic("skipColumnOnPaste")(skipColumnOnPaste)

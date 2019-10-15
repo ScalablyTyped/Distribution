@@ -1,16 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`private`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PortalGroupProperties extends js.Object {
   /**
-    * The access privileges on the group which determines who can see and access the group.  **Possible Values:** private | org | public
+    * The access privileges on the group which determines who can see and access the group.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html#access)
     */
-  var access: js.UndefOr[String] = js.undefined
+  var access: js.UndefOr[`private` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org | public] = js.undefined
   /**
     * The date the group was created.
     *
@@ -78,7 +80,7 @@ trait PortalGroupProperties extends js.Object {
 object PortalGroupProperties {
   @scala.inline
   def apply(
-    access: String = null,
+    access: `private` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org | public = null,
     created: DateProperties = null,
     description: String = null,
     id: String = null,
@@ -91,7 +93,7 @@ object PortalGroupProperties {
     title: String = null
   ): PortalGroupProperties = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (id != null) __obj.updateDynamic("id")(id)

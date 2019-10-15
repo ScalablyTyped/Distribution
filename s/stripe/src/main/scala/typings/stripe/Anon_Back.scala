@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Back extends js.Object {
   /**
-    * The back of an ID returned by a file upload with a purpose value of identity_document.
+    * The back of an ID returned by a file with a purpose value of identity_document.
     * This can be unset by updating the value to null and then saving.
     */
   var back: js.UndefOr[String] = js.undefined
   /**
-    * The front of an ID returned by a file upload with a purpose value of identity_document.
+    * The front of an ID returned by a file with a purpose value of identity_document.
     * This can be unset by updating the value to null and then saving.
     */
   var front: js.UndefOr[String] = js.undefined

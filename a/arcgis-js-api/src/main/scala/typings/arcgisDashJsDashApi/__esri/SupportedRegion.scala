@@ -1,0 +1,82 @@
+package typings.arcgisDashJsDashApi.__esri
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.AE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.AR
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.AT
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.AU
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.BE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.BG
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.BO
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.BR
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.CA
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.CH
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.CI
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.CL
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.CN
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.CO
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.CR
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.CZ
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.DE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.DK
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.EE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.EG
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ES
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.FI
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.FR
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.GB
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.GL
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.GR
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.GT
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.HK
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ID
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.IE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.IL
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.IN
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.IQ
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.IS
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.IT
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.JP
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.KE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.KR
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.KW
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.LI
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.LT
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.LU
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.LV
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.MA
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.MG
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ML
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.MO
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.MX
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.MY
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.NI
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.NL
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.NO
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.NZ
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.PE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.PL
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.PR
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.PT
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.RO
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.RU
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.RW
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.SE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.SG
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.SK
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.SR
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.SV
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.TH
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.TN
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.TW
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.US
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.VE
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.VI
+  - typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ZA
+*/
+trait SupportedRegion extends js.Object
+

@@ -12,25 +12,25 @@ trait PrintTemplateLayoutOptions extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var authorText: String
+  var authorText: js.UndefOr[String] = js.undefined
   /**
     * The text used for the copyright if the specified layout contains an copyright text element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var copyrightText: String
+  var copyrightText: js.UndefOr[String] = js.undefined
   /**
     * An array of name-value pairs. Use this property to update the text for custom text elements on the page layout. Values must be strings.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var customTextElements: js.Array[_]
+  var customTextElements: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html) containing the id's of the layers that will be included in the legend. If `legendLayers` is not specified, all operational layers (non-tiled layers) except [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) will be present in the legend. To specify that no layers will be included in the legend set `legendLayer = []`.
+    * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html) containing the ids of the layers that will be included in the legend. Tiled layers and GraphicsLayer will not appear in the legend. If `legendLayers` is not specified, all operational layers (non-tiled layers) except [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) will be present in the legend. To specify that no layers will be included in the legend set `legendLayer = []`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var legendLayers: js.Array[LegendLayer]
+  var legendLayers: js.UndefOr[js.Array[LegendLayer]] = js.undefined
   /**
     * The unit used for the scalebar.  **Possible Values:** `Miles` | `Kilometers` | `Meters` | `Feet`
     *
@@ -44,24 +44,29 @@ trait PrintTemplateLayoutOptions extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */
-  var titleText: String
+  var titleText: js.UndefOr[String] = js.undefined
 }
 
 object PrintTemplateLayoutOptions {
   @scala.inline
   def apply(
-    authorText: String,
     constructor: js.Function,
-    copyrightText: String,
-    customTextElements: js.Array[_],
     hasOwnProperty: PropertyKey => Boolean,
-    legendLayers: js.Array[LegendLayer],
     propertyIsEnumerable: PropertyKey => Boolean,
-    titleText: String,
-    scalebarUnit: String = null
+    authorText: String = null,
+    copyrightText: String = null,
+    customTextElements: js.Array[_] = null,
+    legendLayers: js.Array[LegendLayer] = null,
+    scalebarUnit: String = null,
+    titleText: String = null
   ): PrintTemplateLayoutOptions = {
-    val __obj = js.Dynamic.literal(authorText = authorText, constructor = constructor, copyrightText = copyrightText, customTextElements = customTextElements, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), legendLayers = legendLayers, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), titleText = titleText)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (authorText != null) __obj.updateDynamic("authorText")(authorText)
+    if (copyrightText != null) __obj.updateDynamic("copyrightText")(copyrightText)
+    if (customTextElements != null) __obj.updateDynamic("customTextElements")(customTextElements)
+    if (legendLayers != null) __obj.updateDynamic("legendLayers")(legendLayers)
     if (scalebarUnit != null) __obj.updateDynamic("scalebarUnit")(scalebarUnit)
+    if (titleText != null) __obj.updateDynamic("titleText")(titleText)
     __obj.asInstanceOf[PrintTemplateLayoutOptions]
   }
 }

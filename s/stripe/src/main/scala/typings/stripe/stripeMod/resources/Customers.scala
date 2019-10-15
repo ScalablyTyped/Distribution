@@ -1,6 +1,6 @@
 package typings.stripe.stripeMod.resources
 
-import typings.stripe.Anon_CardICardSourceCreationOptionsExtended
+import typings.stripe.Anon_Card
 import typings.stripe.stripeMod.HeaderOptions
 import typings.stripe.stripeMod.IDataOptions
 import typings.stripe.stripeMod.IDeleteConfirmation
@@ -111,7 +111,7 @@ class Customers () extends StripeResource {
     data: ICustomerBalanceTransactionCreationOptions,
     response: IResponseFn[ICustomerBalanceTransaction]
   ): js.Promise[ICustomerBalanceTransaction] = js.native
-  def createCard(customerId: String, data: Anon_CardICardSourceCreationOptionsExtended): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def createCard(customerId: String, data: Anon_Card): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
     * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -123,18 +123,14 @@ class Customers () extends StripeResource {
     *
     * @deprecated
     */
-  def createCard(customerId: String, data: Anon_CardICardSourceCreationOptionsExtended, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def createCard(customerId: String, data: Anon_Card, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
   def createCard(
     customerId: String,
-    data: Anon_CardICardSourceCreationOptionsExtended,
+    data: Anon_Card,
     options: HeaderOptions,
     response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
   ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def createCard(
-    customerId: String,
-    data: Anon_CardICardSourceCreationOptionsExtended,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def createCard(customerId: String, data: Anon_Card, response: IResponseFn[typings.stripe.stripeMod.cards.ICard]): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
   def createSource(customerId: String, data: ICustomerBankAccountSourceCreationOptions): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
   /**
     * When adding a bank account to a customer, the parameter name is source. When

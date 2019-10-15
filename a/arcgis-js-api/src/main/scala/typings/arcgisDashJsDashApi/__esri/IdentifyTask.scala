@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IdentifyTask extends Task {
   /**
-    * Specifies the geodatabase version to display.
+    * Specify the geodatabase version to search. Requires ArcGIS Server service 10.1 or greater.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-IdentifyTask.html#gdbVersion)
     */

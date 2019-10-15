@@ -18,7 +18,7 @@ trait Multipoint
     */
   var points: js.Array[js.Array[Double]] = js.native
   /**
-    * For Multipoint, the type is always `multipoint`.
+    * The string value representing the type of geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html#type)
     */

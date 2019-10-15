@@ -1,10 +1,11 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins
 
+import typings.handsontable.handsontableMod._Handsontable.Core
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Formulas extends Base {
+trait Formulas extends BasePlugin {
   var dataProvider: DataProvider
   var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
   var sheet: Sheet
@@ -33,6 +34,7 @@ object Formulas {
     getCellValue: (Double, Double) => js.Any,
     getVariable: String => js.Any,
     hasComputedCellValue: (Double, Double) => Boolean,
+    hot: Core,
     init: () => Unit,
     initialized: Boolean,
     isPluginsReady: Boolean,
@@ -44,9 +46,11 @@ object Formulas {
     removeHooks: String => Unit,
     setVariable: (String, js.Any) => Unit,
     sheet: Sheet,
-    undoRedoSnapshot: UndoRedoSnapshot
+    t: RecordTranslator,
+    undoRedoSnapshot: UndoRedoSnapshot,
+    updatePlugin: () => Unit
   ): Formulas = {
-    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), dataProvider = dataProvider, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, getCellValue = js.Any.fromFunction2(getCellValue), getVariable = js.Any.fromFunction1(getVariable), hasComputedCellValue = js.Any.fromFunction2(hasComputedCellValue), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, recalculate = js.Any.fromFunction0(recalculate), recalculateFull = js.Any.fromFunction0(recalculateFull), recalculateOptimized = js.Any.fromFunction0(recalculateOptimized), removeHooks = js.Any.fromFunction1(removeHooks), setVariable = js.Any.fromFunction2(setVariable), sheet = sheet, undoRedoSnapshot = undoRedoSnapshot)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), dataProvider = dataProvider, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, getCellValue = js.Any.fromFunction2(getCellValue), getVariable = js.Any.fromFunction1(getVariable), hasComputedCellValue = js.Any.fromFunction2(hasComputedCellValue), hot = hot, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, recalculate = js.Any.fromFunction0(recalculate), recalculateFull = js.Any.fromFunction0(recalculateFull), recalculateOptimized = js.Any.fromFunction0(recalculateOptimized), removeHooks = js.Any.fromFunction1(removeHooks), setVariable = js.Any.fromFunction2(setVariable), sheet = sheet, t = t, undoRedoSnapshot = undoRedoSnapshot, updatePlugin = js.Any.fromFunction0(updatePlugin))
   
     __obj.asInstanceOf[Formulas]
   }

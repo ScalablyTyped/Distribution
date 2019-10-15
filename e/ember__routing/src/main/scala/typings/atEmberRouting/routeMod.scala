@@ -198,7 +198,11 @@ object routeMod extends js.Object {
       * (indicated by an `{{outlet}}`). `render` is used both during the entry
       * phase of routing (via the `renderTemplate` hook) and later in response to
       * user interaction.
+      * Not all options need to be passed to render. Default values will be used
+      * based on the name of the route specified in the router or the Route's
+      * controllerName and templateName properties.
       */
+    def render(): Unit = js.native
     def render(name: String): Unit = js.native
     def render(name: String, options: RenderOptions): Unit = js.native
     /**

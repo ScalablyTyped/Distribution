@@ -1,11 +1,12 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins
 
+import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ContextMenu extends Base {
+trait ContextMenu extends BasePlugin {
   var commandExecutor: CommandExecutor
   var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
   var itemsFactory: ItemsFactory | Unit
@@ -29,6 +30,7 @@ object ContextMenu {
     enabled: Boolean,
     eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
     executeCommand: (String, /* repeated */ js.Any) => Unit,
+    hot: Core,
     init: () => Unit,
     initialized: Boolean,
     isPluginsReady: Boolean,
@@ -37,9 +39,11 @@ object ContextMenu {
     open: Event => Unit,
     pluginName: String,
     pluginsInitializedCallback: js.Array[_],
-    removeHooks: String => Unit
+    removeHooks: String => Unit,
+    t: RecordTranslator,
+    updatePlugin: () => Unit
   ): ContextMenu = {
-    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), close = js.Any.fromFunction0(close), commandExecutor = commandExecutor, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, executeCommand = js.Any.fromFunction2(executeCommand), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, itemsFactory = itemsFactory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks))
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), close = js.Any.fromFunction0(close), commandExecutor = commandExecutor, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, executeCommand = js.Any.fromFunction2(executeCommand), hot = hot, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, itemsFactory = itemsFactory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), t = t, updatePlugin = js.Any.fromFunction0(updatePlugin))
   
     __obj.asInstanceOf[ContextMenu]
   }

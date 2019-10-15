@@ -223,7 +223,7 @@ trait FullPageJsOptions extends js.Object {
     */ 
   var parallaxOptions: js.UndefOr[Anon_Cover] = js.undefined
   /**
-    * (default true) Defines whether to push the state of the site to the browser's history. When set to true each section/slide of the site will act as a new page and the back and forward buttons of the browser will scroll the sections/slides to reach the previous or next state of the site. When set to false, the URL will keep changing but will have no effect ont he browser's history. This option is automatically turned off when using autoScrolling:false.
+    * (default true) Defines whether to push the state of the site to the browser's history. When set to true each section/slide of the site will act as a new page and the back and forward buttons of the browser will scroll the sections/slides to reach the previous or next state of the site. When set to false, the URL will keep changing but will have no effect on the browser's history. This option is automatically turned off when using autoScrolling:false.
     */
   var recordHistory: js.UndefOr[Boolean] = js.undefined
   /** 
@@ -232,7 +232,7 @@ trait FullPageJsOptions extends js.Object {
   var resetSliders: js.UndefOr[Boolean] = js.undefined
   var resize: js.UndefOr[Boolean] = js.undefined
   /**
-    * (default 0) A normal scroll (autoScrolling:false) will be used under the defined height in pixels. A class fp-responsive is added to the body tag in case the user wants to use it for his own responsive CSS. For example, if set to 900, whenever the browser's height is less than 900 the plugin will scroll like a normal site.
+    * (default 0) A normal scroll (autoScrolling:false) will be used under the defined height in pixels. A class fp-responsive is added to the body tag in case the user wants to use it for their own responsive CSS. For example, if set to 900, whenever the browser's height is less than 900 the plugin will scroll like a normal site.
     */
   var responsiveHeight: js.UndefOr[Double] = js.undefined
   /** 
@@ -240,7 +240,7 @@ trait FullPageJsOptions extends js.Object {
     */ 
   var responsiveSlides: js.UndefOr[Boolean] = js.undefined
   /**
-    *  (default 0) A normal scroll (autoScrolling:false) will be used under the defined width in pixels. A class fp-responsive is added to the body tag in case the user wants to use it for his own responsive CSS. For example, if set to 900, whenever the browser's width is less than 900 the plugin will scroll like a normal site.
+    *  (default 0) A normal scroll (autoScrolling:false) will be used under the defined width in pixels. A class fp-responsive is added to the body tag in case the user wants to use it for their own responsive CSS. For example, if set to 900, whenever the browser's width is less than 900 the plugin will scroll like a normal site.
     */
   var responsiveWidth: js.UndefOr[Double] = js.undefined
   /**

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait PointCloudValueFilterProperties extends PointCloudFilterProperties {
   /**
-    * Whether points should be included or excluded from the filter.  **Possible values:** include | exclude
+    * Whether points should be included or excluded from the filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#mode)
     *

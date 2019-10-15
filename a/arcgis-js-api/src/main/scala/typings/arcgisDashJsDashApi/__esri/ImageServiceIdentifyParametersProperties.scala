@@ -30,18 +30,6 @@ trait ImageServiceIdentifyParametersProperties extends js.Object {
     */
   var pixelSize: js.UndefOr[PointProperties] = js.undefined
   /**
-    * The pixel level being identified (or the resolution being looked at) on the x-axis. If not specified, it will default to the base resolution of the dataset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#pixelSizeX)
-    */
-  var pixelSizeX: js.UndefOr[Double] = js.undefined
-  /**
-    * The pixel level being identified (or the resolution being looked at) on the y-axis. If not specified, it will default to the base resolution of the dataset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#pixelSizeY)
-    */
-  var pixelSizeY: js.UndefOr[Double] = js.undefined
-  /**
     * Specifies the rendering rule for how the requested image should be rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#renderingRule)
@@ -88,8 +76,6 @@ object ImageServiceIdentifyParametersProperties {
     maxItemCount: Int | Double = null,
     mosaicRule: MosaicRuleProperties = null,
     pixelSize: PointProperties = null,
-    pixelSizeX: Int | Double = null,
-    pixelSizeY: Int | Double = null,
     renderingRule: RasterFunctionProperties = null,
     renderingRules: RasterFunctionProperties = null,
     returnCatalogItems: js.UndefOr[Boolean] = js.undefined,
@@ -102,8 +88,6 @@ object ImageServiceIdentifyParametersProperties {
     if (maxItemCount != null) __obj.updateDynamic("maxItemCount")(maxItemCount.asInstanceOf[js.Any])
     if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule)
     if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize)
-    if (pixelSizeX != null) __obj.updateDynamic("pixelSizeX")(pixelSizeX.asInstanceOf[js.Any])
-    if (pixelSizeY != null) __obj.updateDynamic("pixelSizeY")(pixelSizeY.asInstanceOf[js.Any])
     if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
     if (renderingRules != null) __obj.updateDynamic("renderingRules")(renderingRules)
     if (!js.isUndefined(returnCatalogItems)) __obj.updateDynamic("returnCatalogItems")(returnCatalogItems)

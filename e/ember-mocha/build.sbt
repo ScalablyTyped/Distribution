@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ember-mocha"
-version := "0.14-dt-20191003Z-c81412"
+version := "0.14-dt-20191003Z-c0284e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember" % "3.1-dt-20191003Z-93a6a0",
-  "org.scalablytyped" %%% "ember-test-helpers" % "1.0-dt-20191003Z-b9d615",
-  "org.scalablytyped" %%% "ember__application" % "3.0-dt-20190301Z-25d807",
+  "org.scalablytyped" %%% "ember" % "3.1-dt-20191003Z-5780cb",
+  "org.scalablytyped" %%% "ember-test-helpers" % "1.0-dt-20191003Z-6eee41",
+  "org.scalablytyped" %%% "ember__application" % "3.0-dt-20190301Z-1892a0",
   "org.scalablytyped" %%% "ember__array" % "3.0-dt-20190923Z-b11e15",
   "org.scalablytyped" %%% "ember__component" % "3.0-dt-20190923Z-8d311d",
   "org.scalablytyped" %%% "ember__controller" % "3.0-dt-20190503Z-57446e",
@@ -16,11 +16,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ember__error" % "3.0-dt-20190213Z-6621fa",
   "org.scalablytyped" %%% "ember__object" % "3.1-dt-20190611Z-b613fb",
   "org.scalablytyped" %%% "ember__polyfills" % "3.0-dt-20191003Z-4c90d5",
-  "org.scalablytyped" %%% "ember__routing" % "3.0-dt-20190405Z-0d89c4",
+  "org.scalablytyped" %%% "ember__routing" % "3.0-dt-20191014Z-8f1128",
   "org.scalablytyped" %%% "ember__runloop" % "3.0-dt-20190724Z-76250d",
   "org.scalablytyped" %%% "ember__service" % "3.0-dt-20190503Z-d56c72",
   "org.scalablytyped" %%% "ember__template" % "3.0-dt-20191003Z-108c8f",
-  "org.scalablytyped" %%% "ember__test" % "3.0-dt-20190307Z-96c91c",
+  "org.scalablytyped" %%% "ember__test" % "3.0-dt-20190307Z-558256",
   "org.scalablytyped" %%% "ember__utils" % "3.0-dt-20191003Z-29aa86",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-4b5800",
   "org.scalablytyped" %%% "mocha" % "5.2-dt-20190530Z-2f56ec",

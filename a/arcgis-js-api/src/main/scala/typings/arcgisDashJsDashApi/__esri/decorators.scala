@@ -45,14 +45,14 @@ trait decorators extends js.Object {
     */
   def declared[T](baseClass: T, mixinClasses: js.Any*): T = js.native
   /**
-    * This convenience decorator is used to define an [Accessor](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html) property. Any property defined with this decorator can now be `get` and `set`. In addition, you can [watch for any property changes](https://developers.arcgis.com/javascript/latest/guide/working-with-props/index.html). Many times this decorator is used in conjunction with the [@renderable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#renderable) decorator.
+    * This convenience decorator is used to define an [Accessor](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html) property. Any property defined with this decorator can now be `get` and `set`. In addition, you can [watch for any property changes](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#properties). Many times this decorator is used in conjunction with the [@renderable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#renderable) decorator.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     *
     * @param propertyMetadata An object describing the property.
     * @param propertyMetadata.dependsOn Property names of dependencies.
-    * @param propertyMetadata.type The constructor used to [autocast](https://developers.arcgis.com/javascript/latest/guide/autocasting/index.html) the property.
-    * @param propertyMetadata.cast The function to use to [autocast](https://developers.arcgis.com/javascript/latest/guide/autocasting/index.html) the property. Alternative to define the `type`. The function is called with the value set by the user and should return the cast value.
+    * @param propertyMetadata.type The constructor used to [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting) the property.
+    * @param propertyMetadata.cast The function to use to [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting) the property. Alternative to define the `type`. The function is called with the value set by the user and should return the cast value.
     * @param propertyMetadata.readOnly Indicates whether the property is read-only.
     * @param propertyMetadata.constructOnly Indicates whether the property can be set during construction but is otherwise read-only.
     * @param propertyMetadata.aliasOf The property decorator that creates a two-way binding between the property it decorates and an inner property of one of its members.

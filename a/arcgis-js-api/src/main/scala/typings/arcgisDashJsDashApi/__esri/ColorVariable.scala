@@ -20,7 +20,7 @@ trait ColorVariable extends VisualVariable {
     */
   var stops: js.Array[ColorStop] = js.native
   /**
-    * The visual variable type. For ColorVariable, this value is always `color`.
+    * The visual variable type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html#type)
     */

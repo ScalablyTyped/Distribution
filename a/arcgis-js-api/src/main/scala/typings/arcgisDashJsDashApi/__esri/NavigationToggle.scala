@@ -40,14 +40,6 @@ trait NavigationToggle extends Widget {
     */
   var viewModel: NavigationToggleViewModel = js.native
   /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
-  /**
     * Toggles the navigation mode of the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#view) from `pan` to `rotate` or vice versa.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#toggle)

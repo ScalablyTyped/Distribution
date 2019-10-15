@@ -2,6 +2,12 @@ package typings.arcgisDashJsDashApi.__esri
 
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`hide-children`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mesh
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipatch
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polygon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,19 +15,13 @@ import scala.scalajs.js.annotation._
 
 trait StreamLayerProperties extends FeatureLayerProperties {
   /**
-    * Contains the attribute and spatial filters used to filter messages sent to the client by a Stream Service. This property can be set in the constructor but is `read-only` after the layer is created. To change the filter after the layer is created, use the [updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method.  **Use definitionExpression or geometryDefinition instead.**
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#filter)
-    */
-  var filter: js.UndefOr[StreamLayerFilter] = js.undefined
-  /**
     * An extent object used to filter features. Only features intersecting the extent are displayed in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryDefinition)
     */
   var geometryDefinition: js.UndefOr[ExtentProperties] = js.undefined
   /**
-    * Maximum number of features to show per [trackId](https://enterprise.arcgis.com/en/geoevent/latest/get-started/essential-geoevent-server-vocabulary.htm#ESRI_SECTION1_F45BBCE9ADFA4E57AF38DD225921EFCD).
+    * Maximum number of features to show per [trackId](https://enterprise.arcgis.com/en/geoevent/latest/get-started/essential-geoevent-server-vocabulary.htm#ESRI_SECTION1_F45BBCE9ADFA4E57AF38DD225921EFCD). If `trackId` is not configured on the GeoEvent Service, the `maximumTrackPoints` property will have no effect and an error will be logged in the console.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#maximumTrackPoints)
     */
@@ -44,10 +44,9 @@ object StreamLayerProperties {
     elevationInfo: FeatureLayerElevationInfo = null,
     featureReduction: FeatureLayerFeatureReduction = null,
     fields: js.Array[FieldProperties] = null,
-    filter: StreamLayerFilter = null,
     fullExtent: ExtentProperties = null,
     geometryDefinition: ExtentProperties = null,
-    geometryType: String = null,
+    geometryType: point | multipoint | polyline | polygon | multipatch | mesh = null,
     historicMoment: DateProperties = null,
     id: String = null,
     isTable: js.UndefOr[Boolean] = js.undefined,
@@ -72,10 +71,12 @@ object StreamLayerProperties {
     returnZ: js.UndefOr[Boolean] = js.undefined,
     screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined,
     source: CollectionProperties[GraphicProperties] = null,
+    sourceJSON: js.Any = null,
     spatialReference: SpatialReferenceProperties = null,
     templates: js.Array[FeatureTemplateProperties] = null,
     timeInfo: TimeInfoProperties = null,
     title: String = null,
+    typeIdField: String = null,
     types: js.Array[FeatureTypeProperties] = null,
     url: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
@@ -88,10 +89,9 @@ object StreamLayerProperties {
     if (elevationInfo != null) __obj.updateDynamic("elevationInfo")(elevationInfo)
     if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction)
     if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
     if (geometryDefinition != null) __obj.updateDynamic("geometryDefinition")(geometryDefinition)
-    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
     if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isTable)) __obj.updateDynamic("isTable")(isTable)
@@ -116,10 +116,12 @@ object StreamLayerProperties {
     if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ)
     if (!js.isUndefined(screenSizePerspectiveEnabled)) __obj.updateDynamic("screenSizePerspectiveEnabled")(screenSizePerspectiveEnabled)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
     if (templates != null) __obj.updateDynamic("templates")(templates)
     if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo)
     if (title != null) __obj.updateDynamic("title")(title)
+    if (typeIdField != null) __obj.updateDynamic("typeIdField")(typeIdField)
     if (types != null) __obj.updateDynamic("types")(types)
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

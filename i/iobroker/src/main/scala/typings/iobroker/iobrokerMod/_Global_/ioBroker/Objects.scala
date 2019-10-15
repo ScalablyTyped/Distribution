@@ -181,7 +181,7 @@ trait Objects extends js.Object {
   def getObjects(keys: js.Array[String], options: js.Any, callback: GetObjectsCallback2): Unit = js.native
   def getObjects(keys: js.Array[String], options: js.Any, callback: GetObjectsCallback2, dontModify: js.Any): Unit = js.native
   /**
-    * For a given user, returns the groups he belongs to, and his access rights
+    * For a given user, returns the groups they belong to, and their access rights
     * @param user Name of the user. Has to start with "system.user."
     * @param callback The callback function to be invoked with the return values
     */

@@ -35,8 +35,6 @@ object rendererCanvasTileLayerMod extends js.Object {
       gutter: Double,
       transition: Boolean
     ): Unit = js.native
-    @JSName("getLayer")
-    def getLayer_default(): typings.ol.layerLayerMod.default = js.native
     def getTile(
       z: Double,
       x: Double,

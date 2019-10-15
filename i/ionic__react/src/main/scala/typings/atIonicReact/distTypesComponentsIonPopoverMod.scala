@@ -30,7 +30,7 @@ object distTypesComponentsIonPopoverMod extends js.Object {
   class IonPopover protected () extends Anon_AnimatedBackdropDismiss {
     def this(props: (Pick[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-            id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+            id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
           ]) with Anon_ChildrenReactNode with ReactOverlayProps) = this()
   }
   
@@ -39,7 +39,7 @@ object distTypesComponentsIonPopoverMod extends js.Object {
     extends Instantiable1[
           /* props */ (Pick[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-            id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+            id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
           ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
           Anon_AnimatedBackdropDismiss
         ] {

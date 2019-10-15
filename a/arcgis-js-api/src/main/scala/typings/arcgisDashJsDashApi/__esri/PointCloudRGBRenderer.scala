@@ -18,7 +18,7 @@ trait PointCloudRGBRenderer
     */
   var field: String = js.native
   /**
-    * The type of Renderer. For PointCloudRGBRenderer this value is always `point-cloud-rgb`.
+    * The type of Renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html#type)
     */

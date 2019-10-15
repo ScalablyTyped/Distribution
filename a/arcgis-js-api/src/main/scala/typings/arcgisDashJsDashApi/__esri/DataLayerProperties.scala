@@ -1,5 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`envelope-intersects`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`index-intersects`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.contains
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.crosses
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.intersects
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.layer
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.overlaps
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relation
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.touches
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.within
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,8 +45,10 @@ trait DataLayerProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#spatialRelationship)
     */
-  var spatialRelationship: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[Unit] = js.undefined
+  var spatialRelationship: js.UndefOr[
+    intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
+  ] = js.undefined
+  var `type`: js.UndefOr[layer] = js.undefined
   /**
     * A where clause for the query. Any legal SQL where clause operating on the fields in the layer is allowed.
     *
@@ -50,15 +62,15 @@ object DataLayerProperties {
   def apply(
     geometry: GeometryProperties = null,
     name: String = null,
-    spatialRelationship: String = null,
-    `type`: js.UndefOr[Unit] = js.undefined,
+    spatialRelationship: intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation = null,
+    `type`: layer = null,
     where: String = null
   ): DataLayerProperties = {
     val __obj = js.Dynamic.literal()
     if (geometry != null) __obj.updateDynamic("geometry")(geometry)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (where != null) __obj.updateDynamic("where")(where)
     __obj.asInstanceOf[DataLayerProperties]
   }

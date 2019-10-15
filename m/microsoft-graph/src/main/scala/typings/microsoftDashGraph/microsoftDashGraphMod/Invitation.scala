@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Invitation extends Entity {
-  // The URL user can use to redeem his invitation. Read-Only
+  // The URL user can use to redeem their invitation. Read-Only
   var inviteRedeemUrl: js.UndefOr[String] = js.undefined
   // The URL user should be redirected to once the invitation is redeemed. Required.
   var inviteRedirectUrl: js.UndefOr[String] = js.undefined

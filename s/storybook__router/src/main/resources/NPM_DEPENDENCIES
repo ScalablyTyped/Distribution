@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/router" : "5.2.3"
+      "@storybook/router" : "5.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/router" : "5.2.3"
+      "@storybook/router" : "5.2.4"
     }
   ],
   "compile-devDependencies" : [

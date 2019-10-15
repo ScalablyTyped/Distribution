@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microsoft-ajax"
-version := "0.0-unknown-dt-20190620Z-c3a80d"
+version := "0.0-unknown-dt-20191014Z-8a760f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,6 +2,11 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`object`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bottom
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.center
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.origin
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relative
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,13 +23,13 @@ trait ObjectSymbol3DLayer
     *   * For `href` resources, the origin coincides with the origin of the 3D model.
     *
     *
-    * If `anchor` is set to `relative`, the anchor is defined by [`anchorPosition`](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition) as a fraction of the symbol's bounding box.  **Possible Values:** center | top | bottom | origin | relative
+    * If `anchor` is set to `relative`, the anchor is defined by [`anchorPosition`](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition) as a fraction of the symbol's bounding box.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor)
     *
     * @default origin
     */
-  var anchor: String = js.native
+  var anchor: center | top | bottom | origin | relative = js.native
   /**
     * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor) relative to the center of the [symbol layer resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource). It is specified as a ratio of the resource's bounding box dimensions. For example, a value of `{ x: 0, y: 0, z: 0 }` designates the center, while a value of `{ x: -0.5, y: -0.5, z: -0.5 }` places the symbol at the lower south-west corner of the symbol's bounding box.  This property only applies when [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor) is set to `relative`.
     *
@@ -68,7 +73,7 @@ trait ObjectSymbol3DLayer
     */
   var material: ObjectSymbol3DLayerMaterial = js.native
   /**
-    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in glTF format.
+    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in [glTF format](https://www.khronos.org/gltf/).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
     *
@@ -88,7 +93,7 @@ trait ObjectSymbol3DLayer
     */
   var tilt: Double = js.native
   /**
-    * For ObjectSymbol3DLayer the type is always `object`.
+    * The object type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#type)
     */

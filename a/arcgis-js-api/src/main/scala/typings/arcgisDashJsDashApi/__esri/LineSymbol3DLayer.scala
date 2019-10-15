@@ -61,7 +61,7 @@ trait LineSymbol3DLayer
     */
   var size: Double = js.native
   /**
-    * For LineSymbol3DLayer the type is always `line`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#type)
     */

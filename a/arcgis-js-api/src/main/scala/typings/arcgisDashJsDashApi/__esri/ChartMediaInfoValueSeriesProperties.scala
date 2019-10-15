@@ -8,9 +8,9 @@ trait ChartMediaInfoValueSeriesProperties extends js.Object {
   /**
     * String value indicating the tooltip for a series.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#tooltipField)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#tooltip)
     */
-  var tooltipField: js.UndefOr[String] = js.undefined
+  var tooltip: js.UndefOr[String] = js.undefined
   /**
     * Numerical value indicating the x-value for the chart series.
     *
@@ -27,9 +27,9 @@ trait ChartMediaInfoValueSeriesProperties extends js.Object {
 
 object ChartMediaInfoValueSeriesProperties {
   @scala.inline
-  def apply(tooltipField: String = null, x: Int | Double = null, y: Int | Double = null): ChartMediaInfoValueSeriesProperties = {
+  def apply(tooltip: String = null, x: Int | Double = null, y: Int | Double = null): ChartMediaInfoValueSeriesProperties = {
     val __obj = js.Dynamic.literal()
-    if (tooltipField != null) __obj.updateDynamic("tooltipField")(tooltipField)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMediaInfoValueSeriesProperties]

@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.click
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.freehand
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hybrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,14 +22,14 @@ trait PolylineDrawActionProperties extends DrawActionProperties {
     *
     * @default hybrid
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[hybrid | freehand | click] = js.undefined
 }
 
 object PolylineDrawActionProperties {
   @scala.inline
-  def apply(mode: String = null, view: MapViewProperties = null): PolylineDrawActionProperties = {
+  def apply(mode: hybrid | freehand | click = null, view: MapViewProperties = null): PolylineDrawActionProperties = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view)
     __obj.asInstanceOf[PolylineDrawActionProperties]
   }

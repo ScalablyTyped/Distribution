@@ -1,5 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +20,22 @@ trait SearchSourceProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
     */
   var filter: js.UndefOr[SearchSourceFilter] = js.undefined
+  /**
+    * Function used to get search results. See [GetResultsHandler](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#GetResultsHandler) for the function definition. When resolved, returns an object containing an array of [search results](esri-widgets-Search.html#SearchResult).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getResults)
+    *
+    * @default null
+    */
+  var getResults: js.UndefOr[GetResultsHandler] = js.undefined
+  /**
+    * Function used to get search suggestions. See [GetSuggestionsParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#GetSuggestionsParameters) for the function definition. When resolved, returns an object containing an array of [suggest results](esri-widgets-Search.html#SuggestResult).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getSuggestions)
+    *
+    * @default null
+    */
+  var getSuggestions: js.UndefOr[GetSuggestionsParameters] = js.undefined
   /**
     * Indicates the maximum number of search results to return.
     *
@@ -121,6 +138,8 @@ object SearchSourceProperties {
   def apply(
     autoNavigate: js.UndefOr[Boolean] = js.undefined,
     filter: SearchSourceFilter = null,
+    getResults: /* params */ js.Any => IPromise[js.Array[SearchResult]] = null,
+    getSuggestions: /* params */ js.Any => IPromise[js.Array[SuggestResult]] = null,
     maxResults: Int | Double = null,
     maxSuggestions: Int | Double = null,
     minSuggestCharacters: Int | Double = null,
@@ -139,6 +158,8 @@ object SearchSourceProperties {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoNavigate)) __obj.updateDynamic("autoNavigate")(autoNavigate)
     if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (getResults != null) __obj.updateDynamic("getResults")(js.Any.fromFunction1(getResults))
+    if (getSuggestions != null) __obj.updateDynamic("getSuggestions")(js.Any.fromFunction1(getSuggestions))
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
     if (minSuggestCharacters != null) __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters.asInstanceOf[js.Any])

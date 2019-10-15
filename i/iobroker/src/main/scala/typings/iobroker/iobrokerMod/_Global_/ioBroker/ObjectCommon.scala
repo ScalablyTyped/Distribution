@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 // Maybe this should extend Record<string, any>,
 // but the extra properties aren't defined anywhere,
 // so I'd rather force the user to explicitly state
-// he knows what he's doing by casting to any
+// they know what they're doing by casting to any
 trait ObjectCommon extends js.Object {
   // Icon and role aren't defined in SCHEMA.md,
   // but they are being used by some adapters

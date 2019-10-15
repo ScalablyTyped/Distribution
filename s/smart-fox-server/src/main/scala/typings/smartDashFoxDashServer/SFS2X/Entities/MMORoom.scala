@@ -24,7 +24,7 @@ class MMORoom protected () extends SFSRoom {
   /** @type {Requests.MMO.MapLimits} Returns the lower coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
   var lowerMapLimit: MapLimits = js.native
   /**
-    * Retrieves an MMOItem object from its id property. The item is available to the current user if it falls within his Area of Interest only.
+    * Retrieves an MMOItem object from its id property. The item is available to the current user if it falls within their Area of Interest only.
     * @param  {number}  id The id of the item to be retrieved.
     * @return {MMOItem}    Returns: An MMOItem object, or null if the item with the passed id is not in proximity of the current user.
     */

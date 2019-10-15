@@ -19,7 +19,7 @@ trait Domain
     */
   var name: String = js.native
   /**
-    * The domain type.  **Possible Values:** range | coded-value | inherited
+    * The domain type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
     */

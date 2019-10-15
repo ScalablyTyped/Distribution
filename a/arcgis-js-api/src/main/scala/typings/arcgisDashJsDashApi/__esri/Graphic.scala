@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 trait Graphic
   extends Accessor
      with JSONSupport
-     with IntersectItem {
+     with IntersectItem
+     with _GoToTarget2D
+     with _GoToTarget3D {
   /**
     * Name-value pairs of fields and field values associated with the graphic.
     *

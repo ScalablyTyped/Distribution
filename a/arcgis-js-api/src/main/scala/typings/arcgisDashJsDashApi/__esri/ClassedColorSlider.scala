@@ -1,11 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`max-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`min-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-change`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-drag`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,14 +19,6 @@ trait ClassedColorSlider extends SmartMappingSliderBase {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider.html#viewModel)
     */
   var viewModel: ClassedColorSliderViewModel = js.native
-  @JSName("on")
-  def on_maxchange(name: `max-change`, eventHandler: ClassedColorSliderMaxChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_minchange(name: `min-change`, eventHandler: ClassedColorSliderMinChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_thumbchange(name: `thumb-change`, eventHandler: ClassedColorSliderThumbChangeEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_thumbdrag(name: `thumb-drag`, eventHandler: ClassedColorSliderThumbDragEventHandler): IHandle = js.native
   /**
     * A convenience function used to update the [classBreakInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#classBreakInfos) of a [ClassBreaksRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html) associated with this slider.  The number of breaks from the renderer must match the number of breaks in the slider. Generally, the input breaks for this method should come from the same renderer as one used to create the slider with the [fromRendererResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider.html#fromRendererResult) method.
     *

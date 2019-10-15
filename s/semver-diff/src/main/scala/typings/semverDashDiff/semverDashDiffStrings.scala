@@ -19,6 +19,15 @@ object semverDashDiffStrings {
   sealed trait patch extends Result
   
   @js.native
+  sealed trait premajor extends Result
+  
+  @js.native
+  sealed trait preminor extends Result
+  
+  @js.native
+  sealed trait prepatch extends Result
+  
+  @js.native
   sealed trait prerelease extends Result
   
   @scala.inline
@@ -29,6 +38,12 @@ object semverDashDiffStrings {
   def minor: minor = "minor".asInstanceOf[minor]
   @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
+  @scala.inline
+  def premajor: premajor = "premajor".asInstanceOf[premajor]
+  @scala.inline
+  def preminor: preminor = "preminor".asInstanceOf[preminor]
+  @scala.inline
+  def prepatch: prepatch = "prepatch".asInstanceOf[prepatch]
   @scala.inline
   def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
 }

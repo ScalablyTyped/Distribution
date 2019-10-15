@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Icon extends js.Object {
   /**
-    * (ID of a file upload) An icon for the account. Must be square and at
+    * (ID of a file) An icon for the account. Must be square and at
     * least 128px x 128px.
     */
   var icon: js.UndefOr[String] = js.undefined
   /**
-    * (ID of a file upload) A logo for the account that will be used in
+    * (ID of a file) A logo for the account that will be used in
     * Checkout instead of the icon and without the account’s name next to it
     * if provided. Must be at least 128px x 128px. This can be unset by
     * updating the value to null and then saving.

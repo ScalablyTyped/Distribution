@@ -14,6 +14,12 @@ trait typeRendererResult extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#RendererResult)
+    */
+  var basemapTheme: String
+  /**
     * An array of objects describing the values or categories excluded from consideration in visualizing data from the given field. The specification of each object matches that of the objects specified in the `uniqueValueInfos` property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#RendererResult)
@@ -43,6 +49,7 @@ object typeRendererResult {
   @scala.inline
   def apply(
     basemapId: String,
+    basemapTheme: String,
     constructor: js.Function,
     excludedUniqueValueInfos: js.Array[_],
     hasOwnProperty: PropertyKey => Boolean,
@@ -51,7 +58,7 @@ object typeRendererResult {
     typeScheme: TypeScheme,
     uniqueValueInfos: js.Array[typeUniqueValueInfo]
   ): typeRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, excludedUniqueValueInfos = excludedUniqueValueInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, typeScheme = typeScheme, uniqueValueInfos = uniqueValueInfos)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, excludedUniqueValueInfos = excludedUniqueValueInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, typeScheme = typeScheme, uniqueValueInfos = uniqueValueInfos)
   
     __obj.asInstanceOf[typeRendererResult]
   }

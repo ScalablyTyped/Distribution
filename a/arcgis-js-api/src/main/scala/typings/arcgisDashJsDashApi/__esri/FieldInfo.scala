@@ -1,6 +1,16 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`rich-text`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`text-area`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`text-box`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`var`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.avg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.count
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.max
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.min
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.stddev
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.sum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,19 +46,19 @@ trait FieldInfo
     */
   var label: String = js.native
   /**
-    * Used in a `one:many` or `many:many` relationship to compute the statistics on the field to show in the popup. If the property is present, must be one of the following values:  **Possible Values:** count | sum | min | max | avg | stddev | var
+    * Used in a `one:many` or `many:many` relationship to compute the statistics on the field to show in the popup. If the property is present, must be one of the following values:
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#statisticType)
     */
-  var statisticType: String = js.native
+  var statisticType: count | sum | min | max | avg | stddev | `var` = js.native
   /**
-    * A string determining what type of input box editors see when editing the field. Applies only to string fields. This is not applicable to Arcade expressions. If this property is present, it must be one of the following values:  **Possible Values:** rich-text | text-area | text-box
+    * A string determining what type of input box editors see when editing the field. Applies only to string fields. This is not applicable to Arcade expressions. If this property is present, it must be one of the following values:
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#stringFieldOption)
     *
     * @default text-box
     */
-  var stringFieldOption: String = js.native
+  var stringFieldOption: `rich-text` | `text-area` | `text-box` = js.native
   /**
     * A string providing an editing hint for editors of the field. This is not applicable to Arcade expressions.
     *

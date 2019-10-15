@@ -1,6 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a3-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a3-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a4-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a4-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`letter-ansi-a-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`letter-ansi-a-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-only`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`tabloid-ansi-b-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`tabloid-ansi-b-portrait`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,7 +66,7 @@ trait PrintTemplate extends Accessor {
     *
     * @default map-only
     */
-  var layout: String = js.native
+  var layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = js.native
   /**
     * Defines the layout elements. It's an object with the following properties:
     *

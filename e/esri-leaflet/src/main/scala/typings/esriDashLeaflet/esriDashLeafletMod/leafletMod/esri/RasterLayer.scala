@@ -34,7 +34,7 @@ abstract class RasterLayer () extends ImageOverlay {
     */
   def redraw(): this.type = js.native
   /**
-    * Redraws the layer with he passed time range.
+    * Redraws the layer with the passed time range.
     */
   def setTimeRange(from: Date, to: Date): this.type = js.native
 }

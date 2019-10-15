@@ -1,6 +1,31 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-after`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-along`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-before`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-center`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-end`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-left`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-right`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`above-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`always-horizontal`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`below-after`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`below-along`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`below-before`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`below-center`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`below-end`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`below-left`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`below-right`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`below-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`center-after`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`center-along`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`center-before`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`center-center`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`center-end`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`center-left`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`center-right`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`center-start`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,17 +51,24 @@ trait LabelClass
     */
   var labelExpressionInfo: LabelClassLabelExpressionInfo = js.native
   /**
-    * The position of the label. Possible values are based on the feature type. This property requires a value.  **Possible Values (Points):** above-center | above-left | above-right | below-center | below-left | below-right | center-center | center-left | center-right  **Possible Values (Polylines):**  above-after | above-along | above-before | above-start | above-end | below-after | below-along | below-before | below-start | below-end | center-after | center-along | center-before | center-start | center-end  **Possible Values (Polygons):** always-horizontal
+    * The position of the label. Possible values are based on the feature type. This property requires a value.
+    *
+    * | Feature Type | Possible Values |
+    * |--------------|-----------------|
+    * | Points       | `above-center`, `above-left`, `above-right`, `below-center`, `below-left`, `below-right`, `center-center`, `center-left`, `center-right` |
+    * | Polylines    | `above-after`, `above-along`, `above-before`, `above-start`, `above-end`, `below-after`, `below-along`, `below-before`, `below-start`, `below-end`, `center-after`, `center-along`, `center-before`, `center-start`, `center-end`|
+    * | Polygons     | `always-horizontal`|
+    *
     * > **Known Limitations**
     *   * Currently, if the label has a [line callout](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html) in a 3D SceneView, then only `above-center` is supported.
     *   * Label placement only applies to [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) layers in 3D SceneViews.
-    *   * [Polylines](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) only support `center-along` label placement in 2D MapViews.
+    *   * FeatureLayer [Polylines](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) only support `center-along` label placement in 2D MapViews.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelPlacement)
     *
     * @default null
     */
-  var labelPlacement: String = js.native
+  var labelPlacement: `above-center` | `above-left` | `above-right` | `below-center` | `below-left` | `below-right` | `center-center` | `center-left` | `center-right` | `above-after` | `above-along` | `above-before` | `above-start` | `above-end` | `below-after` | `below-along` | `below-before` | `below-start` | `below-end` | `center-after` | `center-along` | `center-before` | `center-start` | `center-end` | `always-horizontal` = js.native
   /**
     * The maximum scale (most zoomed in) at which labels are visible in the view. A value of `0` means the label's visibility does not have a maximum scale. The maxScale value should always be smaller than the [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#minScale) value, and greater than or equal to the service specification.
     *

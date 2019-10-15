@@ -41,7 +41,6 @@ import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuToggleElem
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNavElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNoteElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerColumnElement
-import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonProgressBarElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioGroupElement
@@ -598,17 +597,6 @@ object atIonicReactComponents extends atIonicReactProps {
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNoteElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNoteElement]]]
-  @scala.inline
-  def IonPicker: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPicker */ js.Any) with (Pick[
-      HTMLAttributes[HTMLIonPickerElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
-    ]) with IonicReactProps with RefAttributes[HTMLIonPickerElement]
-  ] = typings.atIonicReact.atIonicReactMod.IonPicker.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPicker */ js.Any) with (typings.std.Pick[
-    typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerElement], 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
-  ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerElement]]]
   @scala.inline
   def IonPickerColumn: ComponentType[
     (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPickerColumn */ js.Any) with (Pick[

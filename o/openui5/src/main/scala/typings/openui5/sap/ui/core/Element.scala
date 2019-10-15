@@ -261,13 +261,6 @@ class Element () extends ManagedObject {
     */
   def getLayoutData(): LayoutData = js.native
   /**
-    * Returns the runtime metadata for this UI element.When using the defineClass method, this function is
-    * automatically created and returnsa runtime representation of the design time metadata.
-    * @returns runtime metadata
-    */
-  @JSName("getMetadata")
-  def getMetadata_Any(): js.Any = js.native
-  /**
     * Returns the tooltip for this element if any or an undefined value.The tooltip can either be a simple
     * string or a subclass of{@link sap.ui.core.TooltipBase}.Callers that are only interested in tooltips
     * of type string (e.g. to renderthem as a <code>title</code> attribute), should call the convenience

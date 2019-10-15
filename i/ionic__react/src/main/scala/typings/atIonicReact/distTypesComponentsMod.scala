@@ -43,7 +43,6 @@ import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuToggleElem
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNavElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNoteElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerColumnElement
-import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonProgressBarElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioGroupElement
@@ -171,7 +170,7 @@ object distTypesComponentsMod extends js.Object {
   class IonModal protected () extends Anon_Animated {
     def this(props: (Pick[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-            id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+            id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
           ]) with Anon_ChildrenReactNode with ReactOverlayProps) = this()
   }
   
@@ -182,10 +181,15 @@ object distTypesComponentsMod extends js.Object {
   }
   
   @js.native
+  class IonPicker protected () extends Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmount {
+    def this(props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerOptions */ js.Any) with ReactControllerProps) = this()
+  }
+  
+  @js.native
   class IonPopover protected () extends Anon_AnimatedBackdropDismiss {
     def this(props: (Pick[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-            id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+            id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
           ]) with Anon_ChildrenReactNode with ReactOverlayProps) = this()
   }
   
@@ -195,7 +199,7 @@ object distTypesComponentsMod extends js.Object {
   }
   
   @js.native
-  class IonToast protected () extends Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmount {
+  class IonToast protected () extends Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext {
     def this(props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastOptions */ js.Any) with ReactControllerProps) = this()
   }
   
@@ -460,12 +464,6 @@ object distTypesComponentsMod extends js.Object {
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonNoteElement]
   ] = js.native
-  val IonPicker: ForwardRefExoticComponent[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPicker */ js.Any) with (Pick[
-      HTMLAttributes[HTMLIonPickerElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
-    ]) with IonicReactProps with RefAttributes[HTMLIonPickerElement]
-  ] = js.native
   val IonPickerColumn: ForwardRefExoticComponent[
     (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPickerColumn */ js.Any) with (Pick[
       HTMLAttributes[HTMLIonPickerColumnElement], 
@@ -721,7 +719,7 @@ object distTypesComponentsMod extends js.Object {
     extends Instantiable1[
           /* props */ (Pick[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
-            id | mode | animated | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate
+            id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
           ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
           Anon_Animated
         ] {
@@ -745,11 +743,21 @@ object distTypesComponentsMod extends js.Object {
   }
   
   @js.native
+  object IonPicker
+    extends Instantiable1[
+          /* props */ (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerOptions */ js.Any) with ReactControllerProps, 
+          Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmount
+        ] {
+    var contextType: js.UndefOr[Context[_]] = js.native
+    val displayName: String = js.native
+  }
+  
+  @js.native
   object IonPopover
     extends Instantiable1[
           /* props */ (Pick[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
-            id | mode | animated | translucent | backdropDismiss | cssClass | enterAnimation | keyboardClose | leaveAnimation | showBackdrop | delegate | event
+            id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
           ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
           Anon_AnimatedBackdropDismiss
         ] {
@@ -771,7 +779,7 @@ object distTypesComponentsMod extends js.Object {
   object IonToast
     extends Instantiable1[
           /* props */ (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastOptions */ js.Any) with ReactControllerProps, 
-          Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmount
+          Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext
         ] {
     var contextType: js.UndefOr[Context[_]] = js.native
     val displayName: String = js.native

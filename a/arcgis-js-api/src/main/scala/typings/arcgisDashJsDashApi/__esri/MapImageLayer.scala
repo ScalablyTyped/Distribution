@@ -1,11 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-image`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bmp
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.pdf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png24
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.pngjpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svg
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,13 +59,13 @@ trait MapImageLayer
     */
   var gdbVersion: String = js.native
   /**
-    * The output image type.  **Possible Values:** png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg
+    * The output image type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageFormat)
     *
     * @default png24
     */
-  var imageFormat: String = js.native
+  var imageFormat: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg = js.native
   /**
     * Indicates the maximum height of the image exported by the service.
     *
@@ -98,17 +105,25 @@ trait MapImageLayer
     */
   var portalItem: PortalItem = js.native
   /**
+    * The [map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API. While most commonly used [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#properties-summary) are exposed on the MapImageLayer class directly, this property gives access to all information returned by the map service. This property is useful if working in an application built using an older version of the API which requires access to map service properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sourceJSON)
+    */
+  var sourceJSON: js.Any = js.native
+  /**
     * The spatial reference of the layer as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#spatialReference)
     */
   val spatialReference: SpatialReference = js.native
   /**
-    * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) objects that allow you to alter the properties of one or more sublayers of the MapImageLayer. If this property is not specified, all the sublayers from the service are displayed as defined in the service. If an empty array is passed to this property then none of the sublayers from the service are displayed in the layer.  All sublayers are referenced in the order in which they are drawn in the view (bottom to top). They may be [added](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#add), [removed](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#remove), or [reordered](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#reorder) using the [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) methods. Because [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) extends [Accessor](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html), its properties may be [watched](https://developers.arcgis.com/javascript/latest/guide/working-with-props/index.html#watchProperties).
+    * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) objects that allow you to alter the properties of one or more sublayers of the MapImageLayer. If this property is not specified, all the sublayers from the service are displayed as defined in the service. If an empty array is passed to this property then none of the sublayers from the service are displayed in the layer.  All sublayers are referenced in the order in which they are drawn in the view (bottom to top). They may be [added](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#add), [removed](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#remove), or [reordered](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#reorder) using the [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) methods. Because [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) extends [Accessor](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html), its properties may be [watched](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#watching-for-property-changes).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers)
     */
   var sublayers: Collection[Sublayer] = js.native
+  @JSName("type")
+  val type_MapImageLayer: `map-image` = js.native
   /**
     * The URL to the REST endpoint of the map service.
     *
@@ -174,12 +189,6 @@ trait MapImageLayer
     */
   def getImageUrl(extent: Extent, width: Double, height: Double): IPromise[String] | String = js.native
   def getImageUrl(extent: Extent, width: Double, height: Double, options: MapImageLayerGetImageUrlOptions): IPromise[String] | String = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: MapImageLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: MapImageLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: MapImageLayerLayerviewDestroyEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.MapImageLayer")

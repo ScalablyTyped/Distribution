@@ -31,7 +31,7 @@ trait dotDensity extends js.Object {
     * @param params.layer The **polygon** layer for which the visualization is generated.
     * @param params.view The MapView instance in which the visualization will be rendered.
     * @param params.attributes A set of complementary numeric fields/expressions used as the basis of the dot density visualization. For example, if creating an election map, you would indicate the names of each field representing the candidate or political party where total votes are stored.
-    * @param params.basemap The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
+    * @param params.basemap The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization. Determines optimal colors for the output renderer.
     * @param params.dotValueOptimizationEnabled Indicates whether to vary the value of each dot by the view's scale. This will set the [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) of the output renderer.
     * @param params.dotBlendingEnabled Indicates whether to enable color blending of different colored dots rendered at the same pixel. This is only visible in highly dense and highly diverse features.
     * @param params.outlineOptimizationEnabled Indicates whether the polygon outline width should vary based on view scale. When false, no outline will be used in the output renderer.

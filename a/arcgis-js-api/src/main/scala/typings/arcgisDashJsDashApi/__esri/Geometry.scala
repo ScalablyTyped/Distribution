@@ -1,6 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mesh
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.multipoint
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.point
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polygon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.polyline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +13,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Geometry
   extends Accessor
-     with JSONSupport {
+     with JSONSupport
+     with _GoToTarget2D
+     with _GoToTarget3D {
   /**
     * The cache is used to store values computed from geometries that need to cleared or recomputed upon mutation. An example is the extent of a polygon.
     *
@@ -43,11 +50,11 @@ trait Geometry
     */
   var spatialReference: SpatialReference = js.native
   /**
-    * The geometry type.  **Possible Values:** point | multipoint | polyline | polygon | extent | mesh
+    * The geometry type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#type)
     */
-  val `type`: String = js.native
+  val `type`: point | multipoint | polyline | polygon | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.extent | mesh = js.native
 }
 
 @JSGlobal("__esri.Geometry")

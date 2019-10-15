@@ -2,6 +2,13 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`private`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.anonymous
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.english
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.immediate
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,11 +19,11 @@ trait Portal
   extends Accessor
      with Loadable {
   /**
-    * The access level of the organization. When public, anonymous users can access the organization. When private, access is restricted to only members of the organization.  **Possible Values:** public | private
+    * The access level of the organization. When public, anonymous users can access the organization. When private, access is restricted to only members of the organization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#access)
     */
-  var access: String = js.native
+  var access: public | `private` = js.native
   /**
     * When `true`, access to the organization's Portal resources must occur over SSL.
     *
@@ -37,7 +44,7 @@ trait Portal
     *
     * @default auto
     */
-  var authMode: String = js.native
+  var authMode: anonymous | auto | immediate = js.native
   /**
     * Array of trusted servers to send credentials to when making Cross-Origin Resource Sharing (CORS) requests to access services secured with web-tier authentication.
     *
@@ -339,6 +346,12 @@ trait Portal
     */
   var showHomePageDescription: Boolean = js.native
   /**
+    * The JSON used to create the property values when the `Portal` is loaded. Although most commonly used properties are exposed on the `Portal` class directly, this provides access to all information returned by the portal. This property is useful if working in an application built using an older version of the API which requires access to portal properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#sourceJSON)
+    */
+  var sourceJSON: js.Any = js.native
+  /**
     * Indicates whether hosted services are supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#supportsHostedServices)
@@ -365,11 +378,11 @@ trait Portal
     */
   val thumbnailUrl: String = js.native
   /**
-    * Sets the units of measure for the organization's users. The user default is derived from the organization's [region](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#region).  **Possible Values:** english | metric
+    * Sets the units of measure for the organization's users. The user default is derived from the organization's [region](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#region).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#units)
     */
-  var units: String = js.native
+  var units: english | metric = js.native
   /**
     * The URL to the portal instance. Setting the location of the portal instance via [esriConfig.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) should be used in favor of setting it directly on this property.  If using an on-premise portal, the syntax should look similar to: `https://www.example.com/arcgis`
     *

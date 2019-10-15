@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amazon-cognito-auth-js"
-version := "1.2-dt-20190212Z-1902de"
+version := "1.2-dt-20191014Z-ced80f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

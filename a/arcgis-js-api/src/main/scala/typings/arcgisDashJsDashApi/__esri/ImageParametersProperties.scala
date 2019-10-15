@@ -1,5 +1,18 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bmp
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.exclude
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.hide
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.include
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.pdf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png24
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.show
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,13 +33,13 @@ trait ImageParametersProperties extends js.Object {
     */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
   /**
-    * Map image format.  **Possible Values:** png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg
+    * Map image format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#format)
     *
     * @default png8
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg] = js.undefined
   /**
     * Requested image height in pixels.
     *
@@ -52,11 +65,11 @@ trait ImageParametersProperties extends js.Object {
     */
   var layerIds: js.UndefOr[js.Array[Double]] = js.undefined
   /**
-    * The option for displaying or hiding the layer.  **Possible Values:** show | hide | include | exclude
+    * The option for displaying or hiding the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#layerOption)
     */
-  var layerOption: js.UndefOr[String] = js.undefined
+  var layerOption: js.UndefOr[show | hide | include | exclude] = js.undefined
   /**
     * Indicates whether or not the background of the dynamic image is transparent.
     *
@@ -78,24 +91,24 @@ object ImageParametersProperties {
   def apply(
     dpi: Int | Double = null,
     extent: ExtentProperties = null,
-    format: String = null,
+    format: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg = null,
     height: Int | Double = null,
     imageSpatialReference: SpatialReferenceProperties = null,
     layerDefinitions: js.Array[String] = null,
     layerIds: js.Array[Double] = null,
-    layerOption: String = null,
+    layerOption: show | hide | include | exclude = null,
     transparent: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null
   ): ImageParametersProperties = {
     val __obj = js.Dynamic.literal()
     if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (imageSpatialReference != null) __obj.updateDynamic("imageSpatialReference")(imageSpatialReference)
     if (layerDefinitions != null) __obj.updateDynamic("layerDefinitions")(layerDefinitions)
     if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds)
-    if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption)
+    if (layerOption != null) __obj.updateDynamic("layerOption")(layerOption.asInstanceOf[js.Any])
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageParametersProperties]

@@ -1,10 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`geo-rss`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,18 +28,14 @@ trait GeoRSSLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#polygonSymbol)
     */
   var polygonSymbol: SimpleFillSymbol = js.native
+  @JSName("type")
+  val type_GeoRSSLayer: `geo-rss` = js.native
   /**
     * The URL pointing to a GeoRSS file. This must be publicly available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#url)
     */
   var url: String = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: GeoRSSLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: GeoRSSLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: GeoRSSLayerLayerviewDestroyEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.GeoRSSLayer")

@@ -1,6 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`label-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`line-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`mesh-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-3d`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`polygon-3d`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +24,13 @@ trait Symbol3D extends Symbol {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#symbolLayers)
     */
   var symbolLayers: Collection[Symbol3DLayer] = js.native
+  /**
+    * The symbol type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#type)
+    */
+  @JSName("type")
+  val type_Symbol3D: `point-3d` | `line-3d` | `polygon-3d` | `mesh-3d` | `label-3d` = js.native
 }
 
 @JSGlobal("__esri.Symbol3D")

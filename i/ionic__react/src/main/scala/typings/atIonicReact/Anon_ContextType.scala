@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ContextType[OptionsType /* <: js.Object */, OverlayType /* <: OverlayBase */] extends Instantiable1[
       /* props */ OptionsType with ReactControllerProps, 
-      Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext[OverlayType, OptionsType]
+      Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContextForceUpdate[OverlayType, OptionsType]
     ] {
   var contextType: js.UndefOr[Context[_]] = js.native
   val displayName: String = js.native

@@ -58,6 +58,7 @@ object Parameters {
     disableExactOnAttributes: js.Array[String] = null,
     disableTypoToleranceOnAttributes: js.Array[String] = null,
     distinct: Double | Boolean = null,
+    enableABTest: js.UndefOr[Boolean] = js.undefined,
     exactOnSingleWordQuery: attribute | none | word = null,
     facetFilters: js.Array[String | js.Array[String]] = null,
     facetingAfterDistinct: js.UndefOr[Boolean] = js.undefined,
@@ -116,6 +117,7 @@ object Parameters {
     if (disableExactOnAttributes != null) __obj.updateDynamic("disableExactOnAttributes")(disableExactOnAttributes)
     if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes)
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableABTest)) __obj.updateDynamic("enableABTest")(enableABTest)
     if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
     if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters)
     if (!js.isUndefined(facetingAfterDistinct)) __obj.updateDynamic("facetingAfterDistinct")(facetingAfterDistinct)

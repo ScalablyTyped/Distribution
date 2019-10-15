@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__vue"
-version := "5.2.3-118048"
+version := "5.2.4-1fabe8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

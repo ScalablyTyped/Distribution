@@ -1,5 +1,21 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-magdir`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-uv`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.elevation
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f64
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.generic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.processed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.scientific
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.thematic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +25,7 @@ import scala.scalajs.js.annotation._
 class RasterInfoCls () extends RasterInfo {
   def this(properties: RasterInfoProperties) = this()
   /**
-    * The raster attribute table associated with an imagery layer. It returns categorical mapping of pixel values such as class, group, or category. or membership.
+    * The raster attribute table associated with an imagery layer. It returns categorical mapping of pixel values such as class, group, or category, or membership.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#attributeTable)
     */
@@ -30,7 +46,7 @@ class RasterInfoCls () extends RasterInfo {
   /* CompleteClass */
   override var colormap: js.Array[js.Array[Double]] = js.native
   /**
-    * Raster data type controls how the data is rendered by default.  **Possible Values:**
+    * Raster data type controls how the data is rendered by default.
     *
     * Value | Description |
     * ----- | ----------- |
@@ -46,7 +62,7 @@ class RasterInfoCls () extends RasterInfo {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#dataType)
     */
   /* CompleteClass */
-  override var dataType: String = js.native
+  override var dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir` = js.native
   /**
     * The minimum and maximum X and Y coordinates of a bounding box containing all the raster data.
     *
@@ -76,14 +92,14 @@ class RasterInfoCls () extends RasterInfo {
   /* CompleteClass */
   override var multidimensionalInfo: js.Any = js.native
   /**
-    * Raster pixel size.
+    * Raster pixel size. Specifies the pixel size being identified on the x and y axis. Defaults to the base resolution of the dataset when not specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
   /* CompleteClass */
   override var pixelSize: Point = js.native
   /**
-    * Pixel type for the raster data source.  **Possible Values:**
+    * Pixel type for the raster data source.
     *
     * Value | Range of values that each cell can contain |
     * ----- | ------------------------------------------- |
@@ -101,7 +117,7 @@ class RasterInfoCls () extends RasterInfo {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelType)
     */
   /* CompleteClass */
-  override var pixelType: String = js.native
+  override var pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = js.native
   /**
     * The spatial reference of the raster.
     *
@@ -117,7 +133,7 @@ class RasterInfoCls () extends RasterInfo {
   /* CompleteClass */
   override var statistics: js.Array[RasterInfoStatistics] = js.native
   /**
-    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
     *

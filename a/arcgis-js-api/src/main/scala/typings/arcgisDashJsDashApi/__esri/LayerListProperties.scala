@@ -19,7 +19,7 @@ trait LayerListProperties extends WidgetProperties {
     */
   var listItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.undefined
   /**
-    * Indicates whether list items may be selected by the user. When the user selects an item, it will become available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems) property.
+    * Indicates whether list items may be selected by the user. Selected items may be reordered in the list by dragging gestures with the mouse or touch screen, or with arrow keys on the keyboard.  Selected items are available in the [selectedItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectedItems) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled)
     *

@@ -104,10 +104,6 @@ class Object ()
   	 * @param to One of 'left', 'center', 'right'
   	 */
   def adjustPosition(to: String): Unit = js.native
-  /**
-  	 * Animates object's properties
-  	 */
-  def animate(): Object = js.native
   // functions from object stacking mixin
   // -----------------------------------------------------------------------------------------------------------------------------------
   /**

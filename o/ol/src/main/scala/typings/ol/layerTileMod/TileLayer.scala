@@ -14,8 +14,6 @@ trait TileLayer
   extends typings.ol.layerLayerMod.default {
   var `type`: LayerType = js.native
   def getPreload(): Double = js.native
-  @JSName("getSource")
-  def getSource_default(): typings.ol.sourceSourceMod.default = js.native
   def getUseInterimTilesOnError(): Boolean = js.native
   @JSName("on")
   def on_changepreload(`type`: `change:preload`, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native

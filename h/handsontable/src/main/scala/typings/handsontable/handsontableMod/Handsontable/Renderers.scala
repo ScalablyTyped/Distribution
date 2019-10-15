@@ -1,7 +1,7 @@
 package typings.handsontable.handsontableMod.Handsontable
 
 import typings.handsontable.handsontableMod.Handsontable.renderers.Autocomplete
-import typings.handsontable.handsontableMod.Handsontable.renderers.Base
+import typings.handsontable.handsontableMod.Handsontable.renderers.BaseRenderer
 import typings.handsontable.handsontableMod.Handsontable.renderers.Checkbox
 import typings.handsontable.handsontableMod.Handsontable.renderers.Html
 import typings.handsontable.handsontableMod.Handsontable.renderers.Numeric
@@ -18,7 +18,7 @@ trait Renderers extends js.Object {
   @JSName("AutocompleteRenderer")
   var AutocompleteRenderer_Original: Autocomplete = js.native
   @JSName("BaseRenderer")
-  var BaseRenderer_Original: Base = js.native
+  var BaseRenderer_Original: BaseRenderer = js.native
   @JSName("CheckboxRenderer")
   var CheckboxRenderer_Original: Checkbox = js.native
   @JSName("DateRenderer")
@@ -235,15 +235,15 @@ trait Renderers extends js.Object {
     value: CellValue,
     cellProperties: CellProperties
   ): HTMLTableCellElement | Unit = js.native
-  def getRenderer(name: String): Base = js.native
-  def registerRenderer(name: String, renderer: Base): Unit = js.native
+  def getRenderer(name: String): BaseRenderer = js.native
+  def registerRenderer(name: String, renderer: BaseRenderer): Unit = js.native
 }
 
 @JSImport("handsontable", "Handsontable.renderers")
 @js.native
 object renderers extends js.Object {
-  type Autocomplete = Base
-  type Base = js.Function7[
+  type Autocomplete = BaseRenderer
+  type BaseRenderer = js.Function7[
     /* instance */ Core, 
     /* TD */ HTMLTableCellElement, 
     /* row */ Double, 
@@ -253,10 +253,10 @@ object renderers extends js.Object {
     /* cellProperties */ CellProperties, 
     HTMLTableCellElement | Unit
   ]
-  type Checkbox = Base
-  type Html = Base
-  type Numeric = Base
-  type Password = Base
-  type Text = Base
+  type Checkbox = BaseRenderer
+  type Html = BaseRenderer
+  type Numeric = BaseRenderer
+  type Password = BaseRenderer
+  type Text = BaseRenderer
 }
 

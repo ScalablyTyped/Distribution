@@ -23,7 +23,7 @@ object BookmarksViewModelProperties {
   @scala.inline
   def apply(
     bookmarks: CollectionProperties[BookmarkProperties] = null,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ GoToParameters) => Unit = null,
+    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit = null,
     view: MapViewProperties = null
   ): BookmarksViewModelProperties = {
     val __obj = js.Dynamic.literal()

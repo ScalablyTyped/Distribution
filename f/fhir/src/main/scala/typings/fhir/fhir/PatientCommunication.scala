@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * A list of Languages which may be used to communicate with the patient about his or her health
+  * A list of Languages which may be used to communicate with the patient about their health
   */
 trait PatientCommunication extends BackboneElement {
   /**
@@ -13,7 +13,7 @@ trait PatientCommunication extends BackboneElement {
     */
   var _preferred: js.UndefOr[Element] = js.undefined
   /**
-    * The language which can be used to communicate with the patient about his or her health
+    * The language which can be used to communicate with the patient about their health
     */
   var language: CodeableConcept
   /**

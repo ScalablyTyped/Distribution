@@ -57,7 +57,7 @@ abstract class UserCertificateEnrollmentManager () extends js.Object {
   /**
     * Asynchronously imports a certificate from a Personal Information Exchange (PFX) message using the specified import parameters.
     * @param pfxData Base64-encoded PFX message.
-    * @param password he password used to decrypt and verify the PFX packet. The password must be exactly the same as the password that was used to encrypt the packet.
+    * @param password The password used to decrypt and verify the PFX packet. The password must be exactly the same as the password that was used to encrypt the packet.
     * @param pfxImportParameters The import parameters.
     * @return This method does not return a value.
     */

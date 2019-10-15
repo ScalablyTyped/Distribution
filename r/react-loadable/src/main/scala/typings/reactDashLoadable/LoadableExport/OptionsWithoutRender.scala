@@ -26,7 +26,7 @@ object OptionsWithoutRender {
     delay: Double | `false` = null,
     modules: js.Array[String] = null,
     timeout: Double | `false` = null,
-    webpack: () => js.Array[Double] = null
+    webpack: () => js.Array[String | Double] = null
   ): OptionsWithoutRender[Props] = {
     val __obj = js.Dynamic.literal(loader = js.Any.fromFunction0(loader), loading = loading.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

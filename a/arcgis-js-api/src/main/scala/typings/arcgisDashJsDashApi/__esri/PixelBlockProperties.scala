@@ -1,5 +1,14 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f64
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
 import typings.std.Float32Array
 import typings.std.Float64Array
 import typings.std.Int16Array
@@ -21,7 +30,7 @@ trait PixelBlockProperties extends js.Object {
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
-    * Bit Mask. All pixels are valid when mask is null.
+    * An array of nodata mask. All pixels are valid when mask is null.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#mask)
     */
@@ -33,11 +42,11 @@ trait PixelBlockProperties extends js.Object {
     */
   var maskIsAlpha: js.UndefOr[Boolean] = js.undefined
   /**
-    * The pixel type.  **Possible Values:** s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64
+    * The pixel type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixelType)
     */
-  var pixelType: js.UndefOr[String] = js.undefined
+  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.undefined
   /**
     * A two dimensional array representing the pixels from the Image Service displayed on the client. The length of the first dimension is the same as the number of bands in the layer. The length of the second dimension is [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#height) * [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#width). The length of each band is the same. The pixels in each band are arranged row by row in this format: `[p_00, p_10, p_20, ... p_10, p_11, ...]` where `p_xy` is the pixel value at the column `x` and row `y`.
     *
@@ -72,7 +81,7 @@ object PixelBlockProperties {
     height: Int | Double = null,
     mask: js.Array[Double] | Uint8Array = null,
     maskIsAlpha: js.UndefOr[Boolean] = js.undefined,
-    pixelType: String = null,
+    pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = null,
     pixels: js.Array[Double] | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array = null,
     statistics: js.Array[PixelBlockStatistics] = null,
     validPixelCount: Int | Double = null,
@@ -82,7 +91,7 @@ object PixelBlockProperties {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (!js.isUndefined(maskIsAlpha)) __obj.updateDynamic("maskIsAlpha")(maskIsAlpha)
-    if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType)
+    if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType.asInstanceOf[js.Any])
     if (pixels != null) __obj.updateDynamic("pixels")(pixels.asInstanceOf[js.Any])
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)
     if (validPixelCount != null) __obj.updateDynamic("validPixelCount")(validPixelCount.asInstanceOf[js.Any])

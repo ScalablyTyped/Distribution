@@ -15,7 +15,7 @@ trait DomainProperties extends js.Object {
     */
   var name: js.UndefOr[String] = js.undefined
   /**
-    * The domain type.  **Possible Values:** range | coded-value | inherited
+    * The domain type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
     */

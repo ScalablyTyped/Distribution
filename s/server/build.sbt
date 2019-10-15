@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "server"
-version := "1.0-dt-20190522Z-efbfc5"
+version := "1.0-dt-20190522Z-8f183d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csurf" % "1.9.0-dt-20190322Z-8fa2de",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-e44937",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190819Z-a3652a",
-  "org.scalablytyped" %%% "express-session" % "1.15-dt-20190819Z-279acd",
+  "org.scalablytyped" %%% "express-session" % "1.15-dt-20191014Z-c51fdb",
   "org.scalablytyped" %%% "formidable" % "1.0.16-dt-20190322Z-e5154d",
   "org.scalablytyped" %%% "helmet" % "0.0-unknown-dt-20190819Z-367d83",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",

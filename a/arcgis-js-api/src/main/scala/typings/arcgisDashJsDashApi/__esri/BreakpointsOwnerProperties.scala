@@ -1,5 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.large
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.medium
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.small
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xlarge
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xsmall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +32,7 @@ trait BreakpointsOwnerProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#heightBreakpoint)
     */
-  var heightBreakpoint: js.UndefOr[String] = js.undefined
+  var heightBreakpoint: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
   /**
     * A convenience property indicating the general size of the view's width. This value is determined based on where the view's [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#width) falls in the ranges defined in the [breakpoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#breakpoints) property. See the table below for a list of possible values. Use the [breakpoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#breakpoints) property to override the default thresholds.
     * > Please refer to the [styling guide](https://developers.arcgis.com/javascript/latest/guide/styling/index.html#view-size-css-classes) for additional information on working with this.
@@ -43,20 +48,20 @@ trait BreakpointsOwnerProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#widthBreakpoint)
     */
-  var widthBreakpoint: js.UndefOr[String] = js.undefined
+  var widthBreakpoint: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
 }
 
 object BreakpointsOwnerProperties {
   @scala.inline
   def apply(
     breakpoints: BreakpointsOwnerBreakpoints = null,
-    heightBreakpoint: String = null,
-    widthBreakpoint: String = null
+    heightBreakpoint: xsmall | small | medium | large | xlarge = null,
+    widthBreakpoint: xsmall | small | medium | large | xlarge = null
   ): BreakpointsOwnerProperties = {
     val __obj = js.Dynamic.literal()
     if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
-    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
-    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint)
+    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint.asInstanceOf[js.Any])
+    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakpointsOwnerProperties]
   }
 }

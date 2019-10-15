@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-manifest-plugin
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 webpack plugin for generating asset manifests

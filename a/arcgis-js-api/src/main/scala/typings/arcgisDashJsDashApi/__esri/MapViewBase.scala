@@ -21,30 +21,12 @@ trait MapViewBase extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#goTo)
     *
-    * @param target The target location/viewpoint to animate to. When using an object for `target`, use the properties in the table below.
-    * @param target.target The target of the animation.
-    * @param target.center The [MapView.center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#center) to go to.
-    * @param target.scale The [MapView.scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#scale) to go to.
-    * @param target.zoom The [MapView.zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#zoom) to go to.
-    * @param options Animation options. See properties below for object specifications.
-    * @param options.animate Indicates if the transition to the new view should be animated. If set to false, `duration` and `easing` properties are ignored.
-    * @param options.duration The duration of the animation in milliseconds.
-    * @param options.easing The easing function used for the animation. See [easing functions](https://easings.net/) for graphical representations of these functions.
-    * @param options.signal An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the animation. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).  **Possible Values:** linear | ease | ease-in | ease-out | ease-in-out
+    * @param target The target location/viewpoint to animate to. When using an object for `target`, use the properties in [GoToTarget2D](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GoToTarget2D).
+    * @param options Animation options for controlling the duration and easing of the animation. See the properties defined in [GoToOptions2D](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GoToOptions2D) for object specifications.
     *
     */
-  def goTo(target: js.Array[Double | Geometry | Graphic]): IPromise[_] = js.native
-  def goTo(target: js.Array[Double | Geometry | Graphic], options: MapViewBaseGoToOptions): IPromise[_] = js.native
-  def goTo(target: Collection[Geometry | Graphic]): IPromise[_] = js.native
-  def goTo(target: Collection[Geometry | Graphic], options: MapViewBaseGoToOptions): IPromise[_] = js.native
-  def goTo(target: Geometry): IPromise[_] = js.native
-  def goTo(target: Geometry, options: MapViewBaseGoToOptions): IPromise[_] = js.native
-  def goTo(target: Graphic): IPromise[_] = js.native
-  def goTo(target: Graphic, options: MapViewBaseGoToOptions): IPromise[_] = js.native
-  def goTo(target: MapViewBaseGoToTarget): IPromise[_] = js.native
-  def goTo(target: MapViewBaseGoToTarget, options: MapViewBaseGoToOptions): IPromise[_] = js.native
-  def goTo(target: Viewpoint): IPromise[_] = js.native
-  def goTo(target: Viewpoint, options: MapViewBaseGoToOptions): IPromise[_] = js.native
+  def goTo(target: GoToTarget2D): IPromise[_] = js.native
+  def goTo(target: GoToTarget2D, options: GoToOptions2D): IPromise[_] = js.native
 }
 
 @JSGlobal("__esri.MapViewBase")

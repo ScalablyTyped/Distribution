@@ -14,6 +14,7 @@ trait LazyLoadProps extends js.Object {
   var once: js.UndefOr[Boolean] = js.undefined
   var overflow: js.UndefOr[Boolean] = js.undefined
   var placeholder: js.UndefOr[ReactNode] = js.undefined
+  var preventLoading: js.UndefOr[Boolean] = js.undefined
   var resize: js.UndefOr[Boolean] = js.undefined
   var scroll: js.UndefOr[Boolean] = js.undefined
   var scrollContainer: js.UndefOr[String | Element] = js.undefined
@@ -31,6 +32,7 @@ object LazyLoadProps {
     once: js.UndefOr[Boolean] = js.undefined,
     overflow: js.UndefOr[Boolean] = js.undefined,
     placeholder: ReactNode = null,
+    preventLoading: js.UndefOr[Boolean] = js.undefined,
     resize: js.UndefOr[Boolean] = js.undefined,
     scroll: js.UndefOr[Boolean] = js.undefined,
     scrollContainer: String | Element = null,
@@ -45,6 +47,7 @@ object LazyLoadProps {
     if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
     if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventLoading)) __obj.updateDynamic("preventLoading")(preventLoading)
     if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
     if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
     if (scrollContainer != null) __obj.updateDynamic("scrollContainer")(scrollContainer.asInstanceOf[js.Any])

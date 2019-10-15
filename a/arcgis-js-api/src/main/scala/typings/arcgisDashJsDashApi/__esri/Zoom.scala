@@ -34,14 +34,6 @@ trait Zoom extends Widget {
     */
   var viewModel: ZoomViewModel = js.native
   /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
-  /**
     * Zooms the view in by an LOD factor of 0.5.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#zoomIn)

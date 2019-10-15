@@ -12,7 +12,13 @@ trait typeGetSchemeByNameParams extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#getSchemeByName)
     */
-  var basemap: String | Basemap
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
+  /**
+    * If you have a non-Esri basemap (e.g. a VectorTileLayer basemap with a custom style) or no basemap at all, use this parameter to indicate whether the background of the visualization is `light` or `dark`.  **Possible Values:** light | dark
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#getSchemeByName)
+    */
+  var basemapTheme: js.UndefOr[String] = js.undefined
   /**
     * The geometry type of the features to visualize.  **Possible Values:** point | multipoint | polyline | polygon | mesh
     *
@@ -50,17 +56,20 @@ trait typeGetSchemeByNameParams extends Object {
 object typeGetSchemeByNameParams {
   @scala.inline
   def apply(
-    basemap: String | Basemap,
     constructor: js.Function,
     geometryType: String,
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
     propertyIsEnumerable: PropertyKey => Boolean,
+    basemap: String | Basemap = null,
+    basemapTheme: String = null,
     theme: String = null,
     view: SceneView = null,
     worldScale: js.UndefOr[Boolean] = js.undefined
   ): typeGetSchemeByNameParams = {
-    val __obj = js.Dynamic.literal(basemap = basemap.asInstanceOf[js.Any], constructor = constructor, geometryType = geometryType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor, geometryType = geometryType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme)
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (view != null) __obj.updateDynamic("view")(view)
     if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale)

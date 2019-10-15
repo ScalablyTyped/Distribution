@@ -1,9 +1,22 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`dash-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-dash-dot-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-dash-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`long-dash`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-dash-dot-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-dash-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-dash`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`short-dot`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-line`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bevel
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.butt
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dash
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dot
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.miter
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.round
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.solid
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -75,7 +88,9 @@ trait SimpleLineSymbolProperties extends LineSymbolProperties {
     *
     * @default solid
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[
+    dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid
+  ] = js.undefined
 }
 
 object SimpleLineSymbolProperties {
@@ -85,7 +100,8 @@ object SimpleLineSymbolProperties {
     color: Color | js.Array[Double] | String = null,
     join: miter | round | bevel = null,
     miterLimit: Int | Double = null,
-    style: String = null,
+    style: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid = null,
+    `type`: `simple-line` = null,
     width: Double | String = null
   ): SimpleLineSymbolProperties = {
     val __obj = js.Dynamic.literal()
@@ -93,7 +109,8 @@ object SimpleLineSymbolProperties {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (join != null) __obj.updateDynamic("join")(join.asInstanceOf[js.Any])
     if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleLineSymbolProperties]
   }

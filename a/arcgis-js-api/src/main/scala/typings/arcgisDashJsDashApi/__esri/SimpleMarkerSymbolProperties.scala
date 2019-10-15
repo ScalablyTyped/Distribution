@@ -1,5 +1,14 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`picture-marker`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-marker`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.circle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.cross
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.diamond
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.path
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.square
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.triangle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.x
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +52,7 @@ trait SimpleMarkerSymbolProperties extends MarkerSymbolProperties {
     *
     * @default circle
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[circle | square | cross | x | diamond | triangle | path] = js.undefined
 }
 
 object SimpleMarkerSymbolProperties {
@@ -54,7 +63,8 @@ object SimpleMarkerSymbolProperties {
     outline: SimpleLineSymbolProperties = null,
     path: String = null,
     size: Double | String = null,
-    style: String = null,
+    style: circle | square | cross | x | diamond | triangle | path = null,
+    `type`: `simple-marker` | `picture-marker` = null,
     xoffset: Double | String = null,
     yoffset: Double | String = null
   ): SimpleMarkerSymbolProperties = {
@@ -64,7 +74,8 @@ object SimpleMarkerSymbolProperties {
     if (outline != null) __obj.updateDynamic("outline")(outline)
     if (path != null) __obj.updateDynamic("path")(path)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
     if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleMarkerSymbolProperties]

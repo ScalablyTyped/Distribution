@@ -1,6 +1,12 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`text-area`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`text-box`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.date
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.number
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.text
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,7 +44,7 @@ trait InputField extends Accessor {
     *
     * @default text-box
     */
-  val editorType: String = js.native
+  val editorType: `text-box` | `text-area` = js.native
   /**
     * If the input field's value is invalid, this property returns validation error code. Otherwise, it is `null`.
     *
@@ -100,7 +106,7 @@ trait InputField extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#type)
     */
-  val `type`: String = js.native
+  val `type`: number | text | date | unsupported = js.native
   /**
     * When `true`, the input value is valid. Otherwise, it is invalid.
     *

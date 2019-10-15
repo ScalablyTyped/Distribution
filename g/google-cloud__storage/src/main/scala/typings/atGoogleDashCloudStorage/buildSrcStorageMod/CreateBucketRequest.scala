@@ -13,6 +13,7 @@ trait CreateBucketRequest extends js.Object {
   var regional: js.UndefOr[Boolean] = js.undefined
   var requesterPays: js.UndefOr[Boolean] = js.undefined
   var retentionPolicy: js.UndefOr[js.Object] = js.undefined
+  var standard: js.UndefOr[Boolean] = js.undefined
   var userProject: js.UndefOr[String] = js.undefined
 }
 
@@ -27,6 +28,7 @@ object CreateBucketRequest {
     regional: js.UndefOr[Boolean] = js.undefined,
     requesterPays: js.UndefOr[Boolean] = js.undefined,
     retentionPolicy: js.Object = null,
+    standard: js.UndefOr[Boolean] = js.undefined,
     userProject: String = null
   ): CreateBucketRequest = {
     val __obj = js.Dynamic.literal()
@@ -38,6 +40,7 @@ object CreateBucketRequest {
     if (!js.isUndefined(regional)) __obj.updateDynamic("regional")(regional)
     if (!js.isUndefined(requesterPays)) __obj.updateDynamic("requesterPays")(requesterPays)
     if (retentionPolicy != null) __obj.updateDynamic("retentionPolicy")(retentionPolicy)
+    if (!js.isUndefined(standard)) __obj.updateDynamic("standard")(standard)
     if (userProject != null) __obj.updateDynamic("userProject")(userProject)
     __obj.asInstanceOf[CreateBucketRequest]
   }

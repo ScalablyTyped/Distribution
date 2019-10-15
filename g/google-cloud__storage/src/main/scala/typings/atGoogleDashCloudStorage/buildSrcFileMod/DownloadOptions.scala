@@ -15,6 +15,7 @@ trait DownloadOptions extends CreateReadStreamOptions {
 object DownloadOptions {
   @scala.inline
   def apply(
+    decompress: js.UndefOr[Boolean] = js.undefined,
     destination: String = null,
     end: Int | Double = null,
     start: Int | Double = null,
@@ -22,6 +23,7 @@ object DownloadOptions {
     validation: md5 | crc32c | `false` | `true` = null
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(decompress)) __obj.updateDynamic("decompress")(decompress)
     if (destination != null) __obj.updateDynamic("destination")(destination)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

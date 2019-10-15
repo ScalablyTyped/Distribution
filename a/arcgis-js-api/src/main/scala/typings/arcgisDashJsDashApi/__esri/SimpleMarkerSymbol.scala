@@ -2,6 +2,13 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-marker`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.circle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.cross
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.diamond
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.path
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.square
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.triangle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.x
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,9 +60,9 @@ trait SimpleMarkerSymbol
     *
     * @default circle
     */
-  var style: String = js.native
+  var style: circle | square | cross | x | diamond | triangle | path = js.native
   /**
-    * For SimpleMarkerSymbol the type is always `simple-marker`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#type)
     */

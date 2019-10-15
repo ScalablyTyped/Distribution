@@ -23,7 +23,7 @@ object SerialHandshake extends js.Object {
   @js.native
   sealed trait requestToSendXOnXOff extends SerialHandshake
   
-  /** The serial port sends an Xoff control to inform the sender to stop sending data. When ready, the port sends an Xon control to inform he sender that the port is now ready to receive data. */
+  /** The serial port sends an Xoff control to inform the sender to stop sending data. When ready, the port sends an Xon control to inform the sender that the port is now ready to receive data. */
   @js.native
   sealed trait xonXOff extends SerialHandshake
   

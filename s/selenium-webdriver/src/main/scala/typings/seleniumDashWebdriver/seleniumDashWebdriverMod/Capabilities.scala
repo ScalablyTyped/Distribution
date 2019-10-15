@@ -53,6 +53,20 @@ class Capabilities () extends CreateSessionCapabilities {
   def setAlertBehavior(): Capabilities = js.native
   def setAlertBehavior(behavior: String): Capabilities = js.native
   /**
+    * Sets the name of the target browser.
+    *
+    * @param {(Browser|string)} name the browser name.
+    * @return {!Capabilities} a self reference.
+    */
+  def setBrowserName(name: String): Capabilities = js.native
+  /**
+    * Sets the desired version of the target browser.
+    *
+    * @param {string} version the desired version.
+    * @return {!Capabilities} a self reference.
+    */
+  def setBrowserVersion(version: String): Capabilities = js.native
+  /**
     * Sets whether native events should be used.
     * @param {boolean} enabled Whether to enable native events.
     * @return {!Capabilities} A self reference.

@@ -1,5 +1,9 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.auto
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.blend
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.mask
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.opaque
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.ImageData
@@ -31,7 +35,7 @@ trait MeshMaterialProperties extends js.Object {
     *
     * @default "auto"
     */
-  var alphaMode: js.UndefOr[String] = js.undefined
+  var alphaMode: js.UndefOr[auto | blend | opaque | mask] = js.undefined
   /**
     * Allows to specify a single, uniform color for the mesh component. This can be autocast with a named string, hex string, array of rgb or rgba values, an object with `r`, `g`, `b`, and `a` properties, or a [Color](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html) object.
     *
@@ -55,7 +59,7 @@ trait MeshMaterialProperties extends js.Object {
     */
   var doubleSided: js.UndefOr[Boolean] = js.undefined
   /**
-    * Allows to specify a texture to get normal information from. The texture is accessed using the uv coordinate specified for each vertex in the mesh vertex attributes. Normal mapping requires also for tangents to be specified in the mesh vertex attributes.
+    * Allows to specify a texture to get normal information from. The texture is accessed using the uv coordinate specified for each vertex in the mesh vertex attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#normalTexture)
     */
@@ -68,7 +72,7 @@ object MeshMaterialProperties {
   @scala.inline
   def apply(
     alphaCutoff: Int | Double = null,
-    alphaMode: String = null,
+    alphaMode: auto | blend | opaque | mask = null,
     color: Color | js.Array[Double] | String = null,
     colorTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null,
     doubleSided: js.UndefOr[Boolean] = js.undefined,
@@ -76,7 +80,7 @@ object MeshMaterialProperties {
   ): MeshMaterialProperties = {
     val __obj = js.Dynamic.literal()
     if (alphaCutoff != null) __obj.updateDynamic("alphaCutoff")(alphaCutoff.asInstanceOf[js.Any])
-    if (alphaMode != null) __obj.updateDynamic("alphaMode")(alphaMode)
+    if (alphaMode != null) __obj.updateDynamic("alphaMode")(alphaMode.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorTexture != null) __obj.updateDynamic("colorTexture")(colorTexture.asInstanceOf[js.Any])
     if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided)

@@ -1,12 +1,28 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-magdir`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-uv`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.elevation
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f64
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.generic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.processed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.scientific
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.thematic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RasterInfoProperties extends js.Object {
   /**
-    * The raster attribute table associated with an imagery layer. It returns categorical mapping of pixel values such as class, group, or category. or membership.
+    * The raster attribute table associated with an imagery layer. It returns categorical mapping of pixel values such as class, group, or category, or membership.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#attributeTable)
     */
@@ -24,7 +40,7 @@ trait RasterInfoProperties extends js.Object {
     */
   var colormap: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   /**
-    * Raster data type controls how the data is rendered by default.  **Possible Values:**
+    * Raster data type controls how the data is rendered by default.
     *
     * Value | Description |
     * ----- | ----------- |
@@ -39,7 +55,9 @@ trait RasterInfoProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#dataType)
     */
-  var dataType: js.UndefOr[String] = js.undefined
+  var dataType: js.UndefOr[
+    generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`
+  ] = js.undefined
   /**
     * The minimum and maximum X and Y coordinates of a bounding box containing all the raster data.
     *
@@ -65,13 +83,13 @@ trait RasterInfoProperties extends js.Object {
     */
   var multidimensionalInfo: js.UndefOr[js.Any] = js.undefined
   /**
-    * Raster pixel size.
+    * Raster pixel size. Specifies the pixel size being identified on the x and y axis. Defaults to the base resolution of the dataset when not specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
   var pixelSize: js.UndefOr[PointProperties] = js.undefined
   /**
-    * Pixel type for the raster data source.  **Possible Values:**
+    * Pixel type for the raster data source.
     *
     * Value | Range of values that each cell can contain |
     * ----- | ------------------------------------------- |
@@ -88,7 +106,7 @@ trait RasterInfoProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelType)
     */
-  var pixelType: js.UndefOr[String] = js.undefined
+  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.undefined
   /**
     * The spatial reference of the raster.
     *
@@ -109,13 +127,13 @@ object RasterInfoProperties {
     attributeTable: FeatureSetProperties = null,
     bandCount: Int | Double = null,
     colormap: js.Array[js.Array[Double]] = null,
-    dataType: String = null,
+    dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir` = null,
     extent: ExtentProperties = null,
     histograms: js.Array[_] = null,
     keyProperties: js.Any = null,
     multidimensionalInfo: js.Any = null,
     pixelSize: PointProperties = null,
-    pixelType: String = null,
+    pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = null,
     spatialReference: SpatialReferenceProperties = null,
     statistics: js.Array[RasterInfoStatistics] = null
   ): RasterInfoProperties = {
@@ -123,13 +141,13 @@ object RasterInfoProperties {
     if (attributeTable != null) __obj.updateDynamic("attributeTable")(attributeTable)
     if (bandCount != null) __obj.updateDynamic("bandCount")(bandCount.asInstanceOf[js.Any])
     if (colormap != null) __obj.updateDynamic("colormap")(colormap)
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (histograms != null) __obj.updateDynamic("histograms")(histograms)
     if (keyProperties != null) __obj.updateDynamic("keyProperties")(keyProperties)
     if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo)
     if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize)
-    if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType)
+    if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
     if (statistics != null) __obj.updateDynamic("statistics")(statistics)
     __obj.asInstanceOf[RasterInfoProperties]

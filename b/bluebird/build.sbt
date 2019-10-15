@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bluebird"
-version := "3.5-dt-20190524Z-347560"
+version := "3.5-dt-20191014Z-347560"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

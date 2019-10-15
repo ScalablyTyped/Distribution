@@ -1,5 +1,7 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`picture-fill`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-fill`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,6 +69,7 @@ object PictureFillSymbolProperties {
     color: Color | js.Array[Double] | String = null,
     height: Double | String = null,
     outline: SimpleLineSymbolProperties = null,
+    `type`: `simple-fill` | `picture-fill` = null,
     url: String = null,
     width: Double | String = null,
     xoffset: Double | String = null,
@@ -78,6 +81,7 @@ object PictureFillSymbolProperties {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])

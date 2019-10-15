@@ -1,6 +1,22 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`horizontal-reversed`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`max-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`min-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`segment-drag`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`thumb-drag`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`value-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`values-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vertical-reversed`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.dragging
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.editing
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,6 +25,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Slider extends Widget {
   /**
+    * When `true`, sets the slider to a disabled state so the user cannot interact with it.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#disabled)
+    *
+    * @default false
+    */
+  var disabled: Boolean = js.native
+  /**
     * Indicates if the user can drag the segment between thumbs to update thumb positions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#draggableSegmentsEnabled)
@@ -16,6 +40,20 @@ trait Slider extends Widget {
     * @default true
     */
   var draggableSegmentsEnabled: Boolean = js.native
+  /**
+    * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction)
+    */
+  @JSName("inputFormatFunction")
+  var inputFormatFunction_Original: SliderLabelFormatter = js.native
+  /**
+    * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction). This property must be set if an `inputFormatFunction` is set. Otherwise the slider values will likely not update to their expected positions.  Overrides the default input parses, which is a parsed floating point number.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction)
+    */
+  @JSName("inputParseFunction")
+  var inputParseFunction_Original: InputParser = js.native
   /**
     * A function used to format labels. Overrides the default label formatter.  By default labels are formatted in the following way:
     *   * When the data range is less than `10` (`(max - min) < 10`), labels are rounded based on the value set in the [precision](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#precision) property.
@@ -51,13 +89,13 @@ trait Slider extends Widget {
     */
   var labelsVisible: Boolean = js.native
   /**
-    * Determines the layout/orientation of the Slider widget.  **Possible Values:** vertical | horizontal
+    * Determines the layout/orientation of the Slider widget. By default, the slider will render horizontally with the min value on the left side of the track. The possible values are described below.  **`horizontal`**  ![Slider horizontal not reversed](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-horizontal-not-reversed.png%20%22default%20horizontal%20slider%22)  **`horizontal-reversed`**  When the slider is set to `horizontal-reversed`, the max value will render on the left side and the min on the right.  ![Slider horizontal reversed](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-horizontal-reversed.png%20%22reversed%20horizontal%20slider%22)  **`vertical`**  When the slider is set to `vertical`, the max value will render on the top of the track and the min on the bottom.  ![Slider vertical not reversed](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-vertical-not-reversed.png%20%22default%20vertical%20slider%22)  **`vertical-reversed`**  When the slider is set to `vertical-reversed`, the max value will render on the bottom of the track and the min on the top.  ![Slider vertical reversed](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-vertical-reversed.png%20%22reversed%20vertical%20slider%22)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#layout)
     *
     * @default horizontal
     */
-  var layout: String = js.native
+  var layout: horizontal | `horizontal-reversed` | vertical | `vertical-reversed` = js.native
   /**
     * The maximum possible data/thumb value of the slider. In the constructor, if one of the values specified in [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#values) is greater than the `max` value specified in this property, then the `max` will update to the highest value in `values`.  To display the max value's label on the slider, then set [rangeLabelsVisible](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelsVisible) to `true`. To allow the end user to modify the max value, set [rangeLabelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled) to `true`.
     *
@@ -124,11 +162,11 @@ trait Slider extends Widget {
     */
   var snapOnClickEnabled: Boolean = js.native
   /**
-    * The current state of the widget.  **Possible Values:** ready | disabled | editing | dragging
+    * The current state of the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#state)
     */
-  val state: String = js.native
+  val state: ready | disabled | editing | dragging = js.native
   /**
     * Sets steps, or intervals, on the slider that restrict user input to specific values. If an array of numbers is passed to this property, the slider thumbs may only be moved to the positions specified in the array.  If a single number is set, then steps are set along the entire slider range at an interval of the provided value. In this scenario, the user may only slide the thumbs to values at the provided interval. For example, if a value of `0.5` is set here, and the slider [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#min) is `0` and the slider [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#max) is `10`, then the user will only be able to update the thumbs to values of 0, 0.5, 1.0, 1.5, 2.0, etc.
     *
@@ -142,6 +180,14 @@ trait Slider extends Widget {
     */
   @JSName("thumbCreatedFunction")
   var thumbCreatedFunction_Original: ThumbCreatedFunction = js.native
+  /**
+    * When `false`, the user can freely move any slider thumb to any position along the track. By default, a thumb's position is constrained to the positions of neighboring thumbs so you cannot move one thumb past another. Set this property to `false` to disable this constraining behavior.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#thumbsConstrained)
+    *
+    * @default true
+    */
+  var thumbsConstrained: Boolean = js.native
   /**
     * When set, renders ticks along the slider track. See the [TickConfig](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig) documentation for more information on how to configure tick placement, style, and behavior.
     *
@@ -167,6 +213,22 @@ trait Slider extends Widget {
     */
   var viewModel: SliderViewModel = js.native
   /**
+    * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction)
+    */
+  def inputFormatFunction(value: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: String): String = js.native
+  def inputFormatFunction(value: Double, `type`: String, index: Double): String = js.native
+  /**
+    * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction). This property must be set if an `inputFormatFunction` is set. Otherwise the slider values will likely not update to their expected positions.  Overrides the default input parses, which is a parsed floating point number.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction)
+    */
+  def inputParseFunction(value: String): Double = js.native
+  def inputParseFunction(value: String, `type`: String): Double = js.native
+  def inputParseFunction(value: String, `type`: String, index: Double): Double = js.native
+  /**
     * A function used to format labels. Overrides the default label formatter.  By default labels are formatted in the following way:
     *   * When the data range is less than `10` (`(max - min) < 10`), labels are rounded based on the value set in the [precision](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#precision) property.
     *   * When the data range is larger than `10`, [labels](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labels) display with a precision of no more than two decimal places, though actual slider thumb values will maintain the precision specified in [precision](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#precision).
@@ -179,14 +241,20 @@ trait Slider extends Widget {
   def labelFormatFunction(value: Double): String = js.native
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_maxchange(name: `max-change`, eventHandler: SliderMaxChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_minchange(name: `min-change`, eventHandler: SliderMinChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_segmentdrag(name: `segment-drag`, eventHandler: SliderSegmentDragEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_thumbchange(name: `thumb-change`, eventHandler: SliderThumbChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_thumbdrag(name: `thumb-drag`, eventHandler: SliderThumbDragEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_valuechange(name: `value-change`, eventHandler: SliderValueChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_valueschange(name: `values-change`, eventHandler: SliderValuesChangeEventHandler): IHandle = js.native
   /**
     * Function that executes each time a thumb is created on the slider. This can be used to add custom styling to each thumb or hook event listeners to specific thumbs.
     *

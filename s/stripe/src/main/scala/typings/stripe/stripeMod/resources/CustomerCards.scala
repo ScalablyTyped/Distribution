@@ -1,6 +1,6 @@
 package typings.stripe.stripeMod.resources
 
-import typings.stripe.Anon_CardICardSourceCreationOptionsExtended
+import typings.stripe.Anon_Card
 import typings.stripe.stripeMod.HeaderOptions
 import typings.stripe.stripeMod.IDeleteConfirmation
 import typings.stripe.stripeMod.IList
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("stripe", "resources.CustomerCards")
 @js.native
 class CustomerCards () extends StripeResource {
-  def create(data: Anon_CardICardSourceCreationOptionsExtended): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def create(data: Anon_Card): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
   /**
     * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
     * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -24,16 +24,13 @@ class CustomerCards () extends StripeResource {
     *
     * @returns Returns the card object.
     */
-  def create(data: Anon_CardICardSourceCreationOptionsExtended, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def create(data: Anon_Card, options: HeaderOptions): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
   def create(
-    data: Anon_CardICardSourceCreationOptionsExtended,
+    data: Anon_Card,
     options: HeaderOptions,
     response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
   ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
-  def create(
-    data: Anon_CardICardSourceCreationOptionsExtended,
-    response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
-  ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def create(data: Anon_Card, response: IResponseFn[typings.stripe.stripeMod.cards.ICard]): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
   def del(cardId: String): js.Promise[IDeleteConfirmation] = js.native
   /**
     * You can delete cards from a customer or recipient. If you delete a card that is currently the

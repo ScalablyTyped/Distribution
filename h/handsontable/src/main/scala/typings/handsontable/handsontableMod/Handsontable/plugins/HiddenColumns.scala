@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HiddenColumns extends Base {
+trait HiddenColumns extends BasePlugin {
   var hiddenColumns: Boolean | js.Array[_] = js.native
   var lastSelectedColumn: Double = js.native
   var settings: js.Object | Unit = js.native

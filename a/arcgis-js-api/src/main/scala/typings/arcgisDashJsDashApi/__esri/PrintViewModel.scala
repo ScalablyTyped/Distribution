@@ -2,6 +2,10 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.error
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.initializing
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,13 +27,13 @@ trait PrintViewModel extends Accessor {
     */
   var scaleEnabled: Boolean = js.native
   /**
-    * The view model's state.  **Possible Values:** disabled | ready | complete
+    * The view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#state)
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: disabled | initializing | ready | error = js.native
   /**
     * The service metadata that contains the layout/format information for the printout.
     *

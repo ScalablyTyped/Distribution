@@ -1,11 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.exclusive
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.group
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.independent
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.inherited
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,8 @@ trait GroupLayer
   extends Layer
      with LayersMixin
      with PortalLayer {
+  @JSName("type")
+  val type_GroupLayer: group = js.native
   /**
     * Indicates how to manage the visibility of the children layers. Possible values are described in the table below.
     *
@@ -27,7 +29,7 @@ trait GroupLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#visibilityMode)
     */
-  var visibilityMode: String = js.native
+  var visibilityMode: independent | inherited | exclusive = js.native
   /**
     * Loads all the externally loadable resources associated with the group layer. For the group layer this will load all the layers.
     *
@@ -36,12 +38,6 @@ trait GroupLayer
     *
     */
   def loadAll(): IPromise[GroupLayer] = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: GroupLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: GroupLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: GroupLayerLayerviewDestroyEventHandler): IHandle = js.native
 }
 
 @JSGlobal("__esri.GroupLayer")

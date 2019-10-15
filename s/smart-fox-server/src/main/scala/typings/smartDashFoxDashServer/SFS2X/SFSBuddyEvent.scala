@@ -22,7 +22,7 @@ object SFSBuddyEvent extends js.Object {
   var BUDDY_LIST_INIT: String = js.native
   /** @type {string} The buddyMessage event type, dispatched when a message from a buddy is received by the current user. */
   var BUDDY_MESSAGE: String = js.native
-  /** @type {string} The buddyOnlineStateChange event type, dispatched when a buddy in the current user's buddy list changes his online state in the Buddy List system. */
+  /** @type {string} The buddyOnlineStateChange event type, dispatched when a buddy in the current user's buddy list changes their online state in the Buddy List system. */
   var BUDDY_ONLINE_STATE_CHANGE: String = js.native
   /** @type {string} The buddyRemove event type, dispatched when a buddy is removed successfully from the current user's buddy list. */
   var BUDDY_REMOVE: String = js.native

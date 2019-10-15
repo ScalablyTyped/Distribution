@@ -1,5 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`backward-diagonal`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`diagonal-cross`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`forward-diagonal`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`picture-fill`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`simple-fill`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.cross
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.horizontal
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.solid
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +35,9 @@ trait SimpleFillSymbolProperties extends FillSymbolProperties {
     *
     * @default solid
     */
-  var style: js.UndefOr[String] = js.undefined
+  var style: js.UndefOr[
+    `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none | solid | vertical
+  ] = js.undefined
 }
 
 object SimpleFillSymbolProperties {
@@ -33,12 +45,14 @@ object SimpleFillSymbolProperties {
   def apply(
     color: Color | js.Array[Double] | String = null,
     outline: SimpleLineSymbolProperties = null,
-    style: String = null
+    style: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none | solid | vertical = null,
+    `type`: `simple-fill` | `picture-fill` = null
   ): SimpleFillSymbolProperties = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleFillSymbolProperties]
   }
 }

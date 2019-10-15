@@ -44,7 +44,7 @@ trait TextSymbol3DLayer
     */
   var text: String = js.native
   /**
-    * For TextSymbol3DLayer the type is always `text`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#type)
     */

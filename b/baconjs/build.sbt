@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "baconjs"
-version := "0.7.0-dt-20190729Z-121e67"
+version := "0.7.0-dt-20191014Z-e41af7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

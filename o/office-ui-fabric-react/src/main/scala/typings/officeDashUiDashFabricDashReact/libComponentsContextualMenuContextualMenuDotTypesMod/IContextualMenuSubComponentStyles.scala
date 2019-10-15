@@ -8,9 +8,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IContextualMenuSubComponentStyles extends js.Object {
-  /** Refers to the callout that hosts the ContextualMenu options */
+  /** Styles for the callout that hosts the ContextualMenu options. */
   var callout: IStyleFunctionOrObject[ICalloutContentStyleProps, _]
-  /** Refers to the item in the list */
+  /** Styles for each menu item. */
   var menuItem: IStyleFunctionOrObject[IContextualMenuItemStyleProps, _]
 }
 

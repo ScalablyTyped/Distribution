@@ -1,7 +1,12 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`absolute-value`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`high-four-bit`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`low-four-bit`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`modulo-ten`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`point-cloud-class-breaks`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,13 +29,13 @@ trait PointCloudClassBreaksRenderer
     */
   var field: String = js.native
   /**
-    * A transform that is applied to the field value before evaluating the renderer.  **Possible Values:** none | low-four-bit | high-four-bit | absolute-value | modulo-ten
+    * A transform that is applied to the field value before evaluating the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#fieldTransformType)
     *
     * @default null
     */
-  var fieldTransformType: String = js.native
+  var fieldTransformType: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = js.native
   /**
     * An object providing options for displaying the renderer in the Legend.
     *
@@ -38,7 +43,7 @@ trait PointCloudClassBreaksRenderer
     */
   var legendOptions: PointCloudClassBreaksRendererLegendOptions = js.native
   /**
-    * The type of renderer. For PointCloudClassBreaksRenderer this value is always `point-cloud-class-breaks`.
+    * The type of renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#type)
     */

@@ -60,7 +60,7 @@ trait PortalItemProperties extends LoadableProperties {
     */
   var groupCategories: js.UndefOr[js.Array[String]] = js.undefined
   /**
-    * The unique id for the item.
+    * The unique id for the item. You can typically find the id for an item in its url.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#id)
     */
@@ -114,7 +114,22 @@ trait PortalItemProperties extends LoadableProperties {
     */
   var ownerFolder: js.UndefOr[String] = js.undefined
   /**
-    * The portal that contains the item. Defaults to the value in [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) (e.g. https://www.arcgis.com). Suggested to use [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) instead of this property.
+    * The portal that contains the item. It uses Portal.getDefault(). This, in turn, obtains the URL from [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl). It's suggested to use [config.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl) instead of this property. If needing to work with multiple portal instances, either set the portal's [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#url) directly within the PortalItem or create separate portal instances before passing them into the PortalItem.portal property. Both examples are shown below.
+    * ```js
+    * Layer.fromPortalItem({
+    *   portalItem: {
+    *     id: "e691172598f04ea8881cd2a4adaa45ba",
+    *     // autocastable to Portal
+    *     portal: {
+    *       url: "https://thePortalUrl"
+    *     }
+    *   }
+    * });
+    * ```
+    *
+    * ```js
+    * let portalA = new Portal({ url: "https://www.exampleA.com/arcgis" // First instance });  let portalB = new Portal({ url: "https://www.exampleB.com/arcgis" // Second instance });  let item = new PortalItem({ id: "e691172598f04ea8881cd2a4adaa45ba", portal: portalA // This loads the first portal instance set above });  item.load();
+    * ```
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#portal)
     */
@@ -139,6 +154,12 @@ trait PortalItemProperties extends LoadableProperties {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#snippet)
     */
   var snippet: js.UndefOr[String] = js.undefined
+  /**
+    * The JSON used to create the property values when the `PortalItem` is loaded. Although most commonly used properties are exposed on the `PortalItem` class directly, this provides access to all information returned by the portal item. This property is useful if working in an application built using an older version of the API which requires access to a portal's item properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#sourceJSON)
+    */
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   /**
     * User defined tags that describe the item.
     *
@@ -196,6 +217,7 @@ object PortalItemProperties {
     screenshots: js.Array[String] = null,
     size: Int | Double = null,
     snippet: String = null,
+    sourceJSON: js.Any = null,
     tags: js.Array[String] = null,
     title: String = null,
     `type`: String = null,
@@ -225,6 +247,7 @@ object PortalItemProperties {
     if (screenshots != null) __obj.updateDynamic("screenshots")(screenshots)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (title != null) __obj.updateDynamic("title")(title)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

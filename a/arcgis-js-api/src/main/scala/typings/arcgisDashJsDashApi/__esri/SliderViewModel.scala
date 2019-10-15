@@ -1,6 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`max-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`min-change`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +14,20 @@ import scala.scalajs.js.annotation._
 trait SliderViewModel
   extends Accessor
      with Evented {
+  /**
+    * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction)
+    */
+  @JSName("inputFormatFunction")
+  var inputFormatFunction_Original: SliderLabelFormatter = js.native
+  /**
+    * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction). This property must be set if an `inputFormatFunction` is set. Otherwise the slider values will likely not update to their expected positions.  Overrides the default input parses, which is a parsed floating point number.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction)
+    */
+  @JSName("inputParseFunction")
+  var inputParseFunction_Original: InputParser = js.native
   /**
     * A function used to format labels. Overrides the default label formatter.  By default labels are formatted in the following way:
     *   * When the data range is less than `10` (`(max - min) < 10`), labels are rounded based on the value set in the [precision](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#precision) property.
@@ -68,17 +87,43 @@ trait SliderViewModel
     */
   var precision: Double = js.native
   /**
-    * The state of the view model.  **Possible Values:** ready | disabled
+    * The state of the view model.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#state)
     */
-  val state: String = js.native
+  val state: ready | disabled = js.native
+  /**
+    * When `false`, the user can freely move any slider thumb to any position along the track. By default, a thumb's position is constrained to the positions of neighboring thumbs so you cannot move one thumb past another. Set this property to `false` to disable this constraining behavior.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#thumbsConstrained)
+    *
+    * @default true
+    */
+  var thumbsConstrained: Boolean = js.native
   /**
     * An array of numbers representing absolute thumb positions on the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#values)
     */
   var values: js.Array[Double] = js.native
+  /**
+    * The default input format function available for use as a fallback in custom formatting implementations.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#defaultInputFormatFunction)
+    *
+    * @param value The input value to format.
+    *
+    */
+  def defaultInputFormatFunction(value: Double): String = js.native
+  /**
+    * The default input parsing function available for use as a fallback in custom parsing implementations.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#defaultInputParseFunction)
+    *
+    * @param value The thumb value to parse.
+    *
+    */
+  def defaultInputParseFunction(value: String): Double = js.native
   /**
     * The default label format function, available for use as a fallback in custom formatting implementations.
     *
@@ -88,6 +133,15 @@ trait SliderViewModel
     *
     */
   def defaultLabelFormatFunction(value: Double): String = js.native
+  /**
+    * Returns the min and max bounds for a 'value' at the provided index. Also used internally to provide accessibility information via HTMLElement properties
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#getBoundsForValueAtIndex)
+    *
+    * @param index The index of the associated value.
+    *
+    */
+  def getBoundsForValueAtIndex(index: Double): js.Any = js.native
   /**
     * Returns the formatted label for a provided value.
     *
@@ -102,6 +156,22 @@ trait SliderViewModel
   def getLabelForValue(value: Double, `type`: String): String = js.native
   def getLabelForValue(value: Double, `type`: String, index: Double): String = js.native
   /**
+    * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction)
+    */
+  def inputFormatFunction(value: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: String): String = js.native
+  def inputFormatFunction(value: Double, `type`: String, index: Double): String = js.native
+  /**
+    * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction). This property must be set if an `inputFormatFunction` is set. Otherwise the slider values will likely not update to their expected positions.  Overrides the default input parses, which is a parsed floating point number.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction)
+    */
+  def inputParseFunction(value: String): Double = js.native
+  def inputParseFunction(value: String, `type`: String): Double = js.native
+  def inputParseFunction(value: String, `type`: String, index: Double): Double = js.native
+  /**
     * A function used to format labels. Overrides the default label formatter.  By default labels are formatted in the following way:
     *   * When the data range is less than `10` (`(max - min) < 10`), labels are rounded based on the value set in the [precision](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#precision) property.
     *   * When the data range is larger than `10`, [labels](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labels) display with a precision of no more than two decimal places, though actual slider thumb values will maintain the precision specified in [precision](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#precision).
@@ -114,6 +184,10 @@ trait SliderViewModel
   def labelFormatFunction(value: Double): String = js.native
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
+  @JSName("on")
+  def on_maxchange(name: `max-change`, eventHandler: SliderViewModelMaxChangeEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_minchange(name: `min-change`, eventHandler: SliderViewModelMinChangeEventHandler): IHandle = js.native
   /**
     * Updates a thumb [value](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#values) based on the provided index. The provided value must differ from the previous value. The provided value must also be between the [min](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#min) and [max](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#max).
     *

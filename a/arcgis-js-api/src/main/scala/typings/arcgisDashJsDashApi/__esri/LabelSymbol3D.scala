@@ -20,7 +20,7 @@ trait LabelSymbol3D
     */
   var callout: Callout3D = js.native
   /**
-    * For LabelSymbol3D the type is always `label-3d`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#type)
     */

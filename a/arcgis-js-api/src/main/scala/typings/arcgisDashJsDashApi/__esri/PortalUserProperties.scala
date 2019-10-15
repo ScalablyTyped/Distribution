@@ -1,16 +1,20 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`private`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.english
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.metric
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PortalUserProperties extends js.Object {
   /**
-    * Indicates the level of access of the user. If private, the user descriptive information will not be available to others nor will the username be searchable.  **Possible Values:** private | org | public
+    * Indicates the level of access of the user. If private, the user descriptive information will not be available to others nor will the username be searchable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#access)
     */
-  var access: js.UndefOr[String] = js.undefined
+  var access: js.UndefOr[`private` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org | public] = js.undefined
   /**
     * The date the user was created.
     *
@@ -84,11 +88,17 @@ trait PortalUserProperties extends js.Object {
     */
   var roleId: js.UndefOr[String] = js.undefined
   /**
-    * The user's personal units of measure setting.  **Possible Values:** english | metric
+    * The JSON used to create the property values when the `PortalUser` is created. Although most commonly used properties are exposed on the `PortalUser` class directly, this provides access to all information returned for the portal user. This property is useful if working in an application built using an older version of the API which requires access to a portal's user properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#sourceJSON)
+    */
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  /**
+    * The user's personal units of measure setting.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#units)
     */
-  var units: js.UndefOr[String] = js.undefined
+  var units: js.UndefOr[english | metric] = js.undefined
   /**
     * The username of the user.
     *
@@ -100,7 +110,7 @@ trait PortalUserProperties extends js.Object {
 object PortalUserProperties {
   @scala.inline
   def apply(
-    access: String = null,
+    access: `private` | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.org | public = null,
     created: DateProperties = null,
     culture: String = null,
     description: String = null,
@@ -113,11 +123,12 @@ object PortalUserProperties {
     region: String = null,
     role: String = null,
     roleId: String = null,
-    units: String = null,
+    sourceJSON: js.Any = null,
+    units: english | metric = null,
     username: String = null
   ): PortalUserProperties = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (description != null) __obj.updateDynamic("description")(description)
@@ -130,7 +141,8 @@ object PortalUserProperties {
     if (region != null) __obj.updateDynamic("region")(region)
     if (role != null) __obj.updateDynamic("role")(role)
     if (roleId != null) __obj.updateDynamic("roleId")(roleId)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON)
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[PortalUserProperties]
   }

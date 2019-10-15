@@ -1,5 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.large
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.medium
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.small
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xlarge
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.xsmall
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +36,7 @@ trait SceneViewProperties
     */
   var center: js.UndefOr[PointProperties | js.Array[Double]] = js.undefined
   /**
-    * Represents an optional clipping area used to define the visible [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of a local scene. If defined, only data (including the basemap) within the area will be displayed.  The `clippingArea` property only applies to [local](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewingMode) scenes.  ![scene-clipping-area](https://developers.arcgis.com/javascript/assets/img/apiref/views/scene-clipping-area.png%20%22Local%20scene%20with%20clippingArea%22)  The clippingArea property contains an internal reference which may be modified in the future. To persist or modify the clippingArea, create a clone using [clippingArea.clone()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#clone).
+    * Represents an optional clipping area used to define the visible [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of a local scene. If defined, only features that intersect the area will be displayed. The clipping area applies to all layers types, including the ground and the basemap.  The `clippingArea` property only applies to [local](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewingMode) scenes.  ![scene-clipping-area](https://developers.arcgis.com/javascript/assets/img/apiref/views/scene-clipping-area.png%20%22Local%20scene%20with%20clippingArea%22)  The clippingArea property contains an internal reference which may be modified in the future. To persist or modify the clippingArea, create a clone using [clippingArea.clone()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#clone).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#clippingArea)
     */
@@ -99,7 +104,7 @@ trait SceneViewProperties
     *   * Anti-aliasing (edge smoothing)
     *
     *
-    * The high and medium quality profiles only differ in the maximum amount of memory which the view is allowed to use. A higher memory limit improves quality in complex web scenes with many layers, but can have a negative impact on drawing performance and stability.  The default value is based on the detected browser:
+    * The high and medium quality profiles differ in the maximum amount of memory which the view is allowed to use. A higher memory limit improves quality in complex web scenes with many layers, but can have a negative impact on drawing performance and stability.  [Physically based rendering](https://en.wikipedia.org/wiki/Physically_based_rendering) (PBR) materials are enabled on all 3D objects in a SceneView in "high" quality mode. However, if a [GLTF model](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource) or a 3D Object [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html) has PBR settings defined on the material, then these will be rendered in all quality modes.  In "high" quality mode, on a HiDPI display, graphics are rendered at a higher resolution depending on the browser's [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio) property.  The default value is based on the detected browser:
     *   * `low` for Internet Explorer 11 and certain mobile devices
     *   * `medium` for any other browser
     *
@@ -150,6 +155,7 @@ object SceneViewProperties {
     allLayerViews: CollectionProperties[LayerViewProperties] = null,
     alphaCompositingEnabled: js.UndefOr[Boolean] = js.undefined,
     animation: ViewAnimationProperties = null,
+    basemapView: BasemapViewProperties = null,
     breakpoints: BreakpointsOwnerBreakpoints = null,
     camera: CameraProperties = null,
     center: PointProperties | js.Array[Double] = null,
@@ -160,7 +166,7 @@ object SceneViewProperties {
     extent: ExtentProperties = null,
     fatalError: Error = null,
     graphics: CollectionProperties[GraphicProperties] = null,
-    heightBreakpoint: String = null,
+    heightBreakpoint: xsmall | small | medium | large | xlarge = null,
     highlightOptions: SceneViewHighlightOptionsProperties = null,
     layerViews: CollectionProperties[LayerViewProperties] = null,
     map: MapProperties = null,
@@ -173,13 +179,14 @@ object SceneViewProperties {
     ui: DefaultUIProperties = null,
     viewingMode: String = null,
     viewpoint: ViewpointProperties = null,
-    widthBreakpoint: String = null,
+    widthBreakpoint: xsmall | small | medium | large | xlarge = null,
     zoom: Int | Double = null
   ): SceneViewProperties = {
     val __obj = js.Dynamic.literal()
     if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
     if (!js.isUndefined(alphaCompositingEnabled)) __obj.updateDynamic("alphaCompositingEnabled")(alphaCompositingEnabled)
     if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (basemapView != null) __obj.updateDynamic("basemapView")(basemapView)
     if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
     if (camera != null) __obj.updateDynamic("camera")(camera)
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
@@ -190,7 +197,7 @@ object SceneViewProperties {
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError)
     if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
-    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
+    if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint.asInstanceOf[js.Any])
     if (highlightOptions != null) __obj.updateDynamic("highlightOptions")(highlightOptions)
     if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(map)
@@ -203,7 +210,7 @@ object SceneViewProperties {
     if (ui != null) __obj.updateDynamic("ui")(ui)
     if (viewingMode != null) __obj.updateDynamic("viewingMode")(viewingMode)
     if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint)
-    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint)
+    if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewProperties]
   }

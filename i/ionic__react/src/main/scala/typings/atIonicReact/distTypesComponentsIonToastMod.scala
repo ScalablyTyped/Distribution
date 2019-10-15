@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distTypesComponentsIonToastMod extends js.Object {
   @js.native
-  class IonToast protected () extends Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmount {
+  class IonToast protected () extends Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext {
     def this(props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastOptions */ js.Any) with ReactControllerProps) = this()
   }
   
@@ -19,7 +19,7 @@ object distTypesComponentsIonToastMod extends js.Object {
   object IonToast
     extends Instantiable1[
           /* props */ (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastOptions */ js.Any) with ReactControllerProps, 
-          Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmount
+          Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext
         ] {
     var contextType: js.UndefOr[Context[_]] = js.native
     val displayName: String = js.native

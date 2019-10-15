@@ -20,6 +20,12 @@ trait VisualVariablesResult extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#VisualVariablesResult)
+    */
+  var basemapTheme: String
+  /**
     * Object containing visual variable and scheme information for the color portion of the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#VisualVariablesResult)
@@ -50,6 +56,7 @@ object VisualVariablesResult {
   def apply(
     authoringInfo: AuthoringInfo,
     basemapId: String,
+    basemapTheme: String,
     color: VisualVariablesResultColor,
     constructor: js.Function,
     defaultValuesUsed: Boolean,
@@ -58,7 +65,7 @@ object VisualVariablesResult {
     size: VisualVariablesResultSize,
     statistics: SummaryStatisticsResult
   ): VisualVariablesResult = {
-    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, color = color, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size, statistics = statistics)
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, basemapTheme = basemapTheme, color = color, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), size = size, statistics = statistics)
   
     __obj.asInstanceOf[VisualVariablesResult]
   }

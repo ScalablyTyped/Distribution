@@ -60,11 +60,6 @@ trait BuildingComponentSublayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#renderer)
     */
   var renderer: Renderer = js.native
-  /**
-    * The type for this sublayer is always `building-component`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html#type)
-    */
   val `type`: `building-component` = js.native
   /**
     * Creates a default popup template for the layer, populated with all the fields of the layer.

@@ -21,7 +21,7 @@ trait RangeDomain extends Domain {
     */
   var minValue: Double = js.native
   /**
-    * The domain type. This value is always `range`.
+    * The domain type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html#type)
     */

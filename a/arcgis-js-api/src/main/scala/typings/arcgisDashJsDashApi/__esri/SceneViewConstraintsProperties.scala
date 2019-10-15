@@ -21,7 +21,7 @@ trait SceneViewConstraintsProperties extends Object {
     */
   var clipDistance: js.UndefOr[SceneViewConstraintsClipDistanceProperties] = js.undefined
   /**
-    * When enabled, prevents the user from navigating below the surface in a local SceneView. This property is deprecated, please use [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#navigationConstraint) instead.  **Deprecated since version 4.8**
+    * When enabled, prevents the user from navigating below the surface in a local SceneView.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */

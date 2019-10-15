@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ember__routing"
-version := "3.0-dt-20190405Z-0d89c4"
+version := "3.0-dt-20191014Z-8f1128"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

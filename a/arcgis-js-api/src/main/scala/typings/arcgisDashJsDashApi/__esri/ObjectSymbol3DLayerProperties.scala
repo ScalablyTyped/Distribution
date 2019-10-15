@@ -1,5 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bottom
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.center
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.origin
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.relative
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +17,13 @@ trait ObjectSymbol3DLayerProperties extends Symbol3DLayerProperties {
     *   * For `href` resources, the origin coincides with the origin of the 3D model.
     *
     *
-    * If `anchor` is set to `relative`, the anchor is defined by [`anchorPosition`](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition) as a fraction of the symbol's bounding box.  **Possible Values:** center | top | bottom | origin | relative
+    * If `anchor` is set to `relative`, the anchor is defined by [`anchorPosition`](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition) as a fraction of the symbol's bounding box.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor)
     *
     * @default origin
     */
-  var anchor: js.UndefOr[String] = js.undefined
+  var anchor: js.UndefOr[center | top | bottom | origin | relative] = js.undefined
   /**
     * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor) relative to the center of the [symbol layer resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource). It is specified as a ratio of the resource's bounding box dimensions. For example, a value of `{ x: 0, y: 0, z: 0 }` designates the center, while a value of `{ x: -0.5, y: -0.5, z: -0.5 }` places the symbol at the lower south-west corner of the symbol's bounding box.  This property only applies when [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor) is set to `relative`.
     *
@@ -62,7 +67,7 @@ trait ObjectSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var material: js.UndefOr[ObjectSymbol3DLayerMaterialProperties] = js.undefined
   /**
-    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in glTF format.
+    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in [glTF format](https://www.khronos.org/gltf/).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
     *
@@ -94,7 +99,7 @@ trait ObjectSymbol3DLayerProperties extends Symbol3DLayerProperties {
 object ObjectSymbol3DLayerProperties {
   @scala.inline
   def apply(
-    anchor: String = null,
+    anchor: center | top | bottom | origin | relative = null,
     anchorPosition: ObjectSymbol3DLayerAnchorPosition = null,
     castShadows: js.UndefOr[Boolean] = js.undefined,
     depth: Int | Double = null,
@@ -107,7 +112,7 @@ object ObjectSymbol3DLayerProperties {
     width: Int | Double = null
   ): ObjectSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition)
     if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])

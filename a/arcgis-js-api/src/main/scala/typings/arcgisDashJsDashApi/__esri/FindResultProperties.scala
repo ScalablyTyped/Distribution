@@ -40,7 +40,7 @@ trait FindResultProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html#value)
     */
-  var value: js.UndefOr[Unit] = js.undefined
+  var value: js.UndefOr[String] = js.undefined
 }
 
 object FindResultProperties {
@@ -51,7 +51,7 @@ object FindResultProperties {
     foundFieldName: String = null,
     layerId: Int | Double = null,
     layerName: String = null,
-    value: js.UndefOr[Unit] = js.undefined
+    value: String = null
   ): FindResultProperties = {
     val __obj = js.Dynamic.literal()
     if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
@@ -59,7 +59,7 @@ object FindResultProperties {
     if (foundFieldName != null) __obj.updateDynamic("foundFieldName")(foundFieldName)
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
     if (layerName != null) __obj.updateDynamic("layerName")(layerName)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[FindResultProperties]
   }
 }

@@ -1,5 +1,10 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.arithmetic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geographic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.heading
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.roll
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tilt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +24,7 @@ trait RotationVariableProperties extends VisualVariableProperties {
     *
     * @default heading
     */
-  var axis: js.UndefOr[String] = js.undefined
+  var axis: js.UndefOr[heading | tilt | roll] = js.undefined
   /**
     * Defines the origin and direction of rotation depending on how the angle of rotation was measured. See the table below for a list of possible values. This property only applies to rotations around the `heading` axis.
     *
@@ -33,24 +38,24 @@ trait RotationVariableProperties extends VisualVariableProperties {
     *
     * @default geographic
     */
-  var rotationType: js.UndefOr[String] = js.undefined
+  var rotationType: js.UndefOr[geographic | arithmetic] = js.undefined
 }
 
 object RotationVariableProperties {
   @scala.inline
   def apply(
-    axis: String = null,
+    axis: heading | tilt | roll = null,
     field: String = null,
     legendOptions: VisualVariableLegendOptions = null,
-    rotationType: String = null,
+    rotationType: geographic | arithmetic = null,
     valueExpression: String = null,
     valueExpressionTitle: String = null
   ): RotationVariableProperties = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (rotationType != null) __obj.updateDynamic("rotationType")(rotationType)
+    if (rotationType != null) __obj.updateDynamic("rotationType")(rotationType.asInstanceOf[js.Any])
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
     if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
     __obj.asInstanceOf[RotationVariableProperties]

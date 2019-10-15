@@ -48,6 +48,11 @@ trait RequireFunction extends js.Object {
   def ensure(
     paths: js.Array[String],
     callback: js.Function1[/* require */ NodeRequire, Unit],
+    chunkName: String
+  ): Unit = js.native
+  def ensure(
+    paths: js.Array[String],
+    callback: js.Function1[/* require */ NodeRequire, Unit],
     errorCallback: js.Function1[/* error */ js.Any, Unit]
   ): Unit = js.native
   def ensure(

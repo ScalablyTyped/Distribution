@@ -1,0 +1,20 @@
+package typings.arcgisDashJsDashApi.__esri
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait LayerLayerviewCreateErrorEvent extends js.Object {
+  var error: Error
+  var view: View
+}
+
+object LayerLayerviewCreateErrorEvent {
+  @scala.inline
+  def apply(error: Error, view: View): LayerLayerviewCreateErrorEvent = {
+    val __obj = js.Dynamic.literal(error = error, view = view)
+  
+    __obj.asInstanceOf[LayerLayerviewCreateErrorEvent]
+  }
+}
+

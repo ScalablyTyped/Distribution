@@ -51,9 +51,7 @@ trait WebPage extends js.Object {
   def childFramesName(): String = js.native
     // DEPRECATED
   def clearCookies(): Unit = js.native
-  def close(): js.Promise[Unit] = js.native
-  @JSName("close")
-  def close_Unit(): Unit = js.native
+  def close(): Unit = js.native
   // Callback triggers
   def closing(closingPage: WebPage): Unit = js.native
   def currentFrameName(): String = js.native

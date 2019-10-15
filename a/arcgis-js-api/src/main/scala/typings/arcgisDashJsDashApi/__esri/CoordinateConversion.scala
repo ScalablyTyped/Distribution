@@ -75,14 +75,6 @@ trait CoordinateConversion
     */
   var viewModel: CoordinateConversionViewModel = js.native
   /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
-  /**
     * Attempt to convert a string into a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).  The format of the string must be specified.  A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of available formats can be obtained from the [formats](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#formats) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#reverseConvert)

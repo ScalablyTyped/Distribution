@@ -1,6 +1,5 @@
 package typings.stripe.stripeMod.paymentIntents
 
-import typings.stripe.Anon_Card
 import typings.stripe.stripeMod.IShippingInformation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +21,7 @@ trait IPaymentIntentConfirmOptions extends js.Object {
   /**
     * Payment-method-specific configuration for this PaymentIntent.
     */
-  var payment_method_options: js.UndefOr[Anon_Card] = js.undefined
+  var payment_method_options: js.UndefOr[IPaymentMethodOptions] = js.undefined
   /**
     * The list of payment method types that this PaymentIntent is allowed to use.
     */
@@ -47,10 +46,6 @@ trait IPaymentIntentConfirmOptions extends js.Object {
     * Shipping information for this PaymentIntent.
     */
   var shipping: js.UndefOr[IShippingInformation | Null] = js.undefined
-  /**
-    * ID of the source used in this PaymentIntent.
-    */
-  var source: js.UndefOr[String] = js.undefined
 }
 
 object IPaymentIntentConfirmOptions {
@@ -59,14 +54,13 @@ object IPaymentIntentConfirmOptions {
     client_secret: String = null,
     off_session: js.UndefOr[Boolean] = js.undefined,
     payment_method: String = null,
-    payment_method_options: Anon_Card = null,
+    payment_method_options: IPaymentMethodOptions = null,
     payment_method_types: js.Array[PaymentIntentPaymentMethodType] = null,
     receipt_email: String = null,
     return_url: String = null,
     save_payment_method: js.UndefOr[Boolean] = js.undefined,
     setup_future_usage: PaymentIntentFutureUsageType = null,
-    shipping: IShippingInformation = null,
-    source: String = null
+    shipping: IShippingInformation = null
   ): IPaymentIntentConfirmOptions = {
     val __obj = js.Dynamic.literal()
     if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret)
@@ -79,7 +73,6 @@ object IPaymentIntentConfirmOptions {
     if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)
     if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
-    if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[IPaymentIntentConfirmOptions]
   }
 }

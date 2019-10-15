@@ -1,5 +1,17 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`avg-rating`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`num-comments`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`num-ratings`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`num-views`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.asc
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.created
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.desc
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.modified
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.owner
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.title
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.uploaded
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.username
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,7 +69,9 @@ trait PortalQueryParamsProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortField)
     */
-  var sortField: js.UndefOr[String] = js.undefined
+  var sortField: js.UndefOr[
+    title | uploaded | modified | username | created | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`type` | owner | `avg-rating` | `num-ratings` | `num-comments` | `num-views`
+  ] = js.undefined
   /**
     * The order in which to sort the results.
     *
@@ -71,7 +85,7 @@ trait PortalQueryParamsProperties extends js.Object {
     *
     * @default asc
     */
-  var sortOrder: js.UndefOr[String] = js.undefined
+  var sortOrder: js.UndefOr[asc | desc] = js.undefined
   /**
     * The index of the first entry in the result set response. The index is 1-based. The [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#start) property, along with the [num](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#num) property can be used to paginate the search results.
     *
@@ -89,8 +103,8 @@ object PortalQueryParamsProperties {
     extent: ExtentProperties = null,
     num: Int | Double = null,
     query: String = null,
-    sortField: String = null,
-    sortOrder: String = null,
+    sortField: title | uploaded | modified | username | created | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`type` | owner | `avg-rating` | `num-ratings` | `num-comments` | `num-views` = null,
+    sortOrder: asc | desc = null,
     start: Int | Double = null
   ): PortalQueryParamsProperties = {
     val __obj = js.Dynamic.literal()
@@ -98,8 +112,8 @@ object PortalQueryParamsProperties {
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
-    if (sortField != null) __obj.updateDynamic("sortField")(sortField)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalQueryParamsProperties]
   }

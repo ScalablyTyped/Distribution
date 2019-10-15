@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 trait WebTileLayerProperties
   extends LayerProperties
      with ScaleRangeLayerProperties
-     with RefreshableLayerProperties {
+     with RefreshableLayerProperties
+     with PortalLayerProperties {
   /**
     * The attribution information for the layer.
     *
@@ -47,6 +48,7 @@ object WebTileLayerProperties {
     maxScale: Int | Double = null,
     minScale: Int | Double = null,
     opacity: Int | Double = null,
+    portalItem: PortalItemProperties = null,
     refreshInterval: Int | Double = null,
     subDomains: js.Array[String] = null,
     tileInfo: TileInfoProperties = null,
@@ -62,6 +64,7 @@ object WebTileLayerProperties {
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
     if (subDomains != null) __obj.updateDynamic("subDomains")(subDomains)
     if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)

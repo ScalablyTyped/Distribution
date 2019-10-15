@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plotly_dot_js"
-version := "1.44-dt-20190925Z-06a8bb"
+version := "1.44-dt-20190925Z-bdad28"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-dispatch" % "1.0-dt-20190212Z-5bec99",
   "org.scalablytyped" %%% "d3-drag" % "1.2-dt-20190212Z-91e4e5",
   "org.scalablytyped" %%% "d3-dsv" % "1.0-dt-20190326Z-b650a8",
-  "org.scalablytyped" %%% "d3-ease" % "1.0-dt-20190212Z-0af37c",
+  "org.scalablytyped" %%% "d3-ease" % "1.0-dt-20191014Z-0af37c",
   "org.scalablytyped" %%% "d3-force" % "1.2-dt-20190212Z-f8f17f",
   "org.scalablytyped" %%% "d3-format" % "1.3-dt-20190212Z-03e320",
   "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20190212Z-7022c7",
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-random" % "1.1-dt-20190212Z-88af92",
   "org.scalablytyped" %%% "d3-scale" % "2.1-dt-20190212Z-c9c1d8",
   "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190710Z-6237a2",
-  "org.scalablytyped" %%% "d3-shape" % "1.3-dt-20190212Z-184aed",
+  "org.scalablytyped" %%% "d3-shape" % "1.3-dt-20191014Z-184aed",
   "org.scalablytyped" %%% "d3-time" % "1.0-dt-20190212Z-00ad12",
   "org.scalablytyped" %%% "d3-time-format" % "2.1-dt-20190212Z-67f000",
   "org.scalablytyped" %%% "d3-timer" % "1.0-dt-20190212Z-7eb029",

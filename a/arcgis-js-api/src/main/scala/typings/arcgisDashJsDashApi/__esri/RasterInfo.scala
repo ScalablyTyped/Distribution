@@ -1,13 +1,29 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-magdir`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`vector-uv`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.elevation
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.f64
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.generic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.processed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.s8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.scientific
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.thematic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u16
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.u8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RasterInfo extends JSONSupport {
   /**
-    * The raster attribute table associated with an imagery layer. It returns categorical mapping of pixel values such as class, group, or category. or membership.
+    * The raster attribute table associated with an imagery layer. It returns categorical mapping of pixel values such as class, group, or category, or membership.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#attributeTable)
     */
@@ -25,7 +41,7 @@ trait RasterInfo extends JSONSupport {
     */
   var colormap: js.Array[js.Array[Double]]
   /**
-    * Raster data type controls how the data is rendered by default.  **Possible Values:**
+    * Raster data type controls how the data is rendered by default.
     *
     * Value | Description |
     * ----- | ----------- |
@@ -40,7 +56,7 @@ trait RasterInfo extends JSONSupport {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#dataType)
     */
-  var dataType: String
+  var dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`
   /**
     * The minimum and maximum X and Y coordinates of a bounding box containing all the raster data.
     *
@@ -66,13 +82,13 @@ trait RasterInfo extends JSONSupport {
     */
   var multidimensionalInfo: js.Any
   /**
-    * Raster pixel size.
+    * Raster pixel size. Specifies the pixel size being identified on the x and y axis. Defaults to the base resolution of the dataset when not specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
   var pixelSize: Point
   /**
-    * Pixel type for the raster data source.  **Possible Values:**
+    * Pixel type for the raster data source.
     *
     * Value | Range of values that each cell can contain |
     * ----- | ------------------------------------------- |
@@ -89,7 +105,7 @@ trait RasterInfo extends JSONSupport {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelType)
     */
-  var pixelType: String
+  var pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64
   /**
     * The spatial reference of the raster.
     *

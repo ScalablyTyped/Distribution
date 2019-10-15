@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-switch"
-version := "0.0-unknown-dt-20190322Z-715221"
+version := "0.0-unknown-dt-20191014Z-715221"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

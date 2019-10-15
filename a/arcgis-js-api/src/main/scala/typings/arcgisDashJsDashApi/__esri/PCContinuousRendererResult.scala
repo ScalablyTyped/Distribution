@@ -14,6 +14,12 @@ trait PCContinuousRendererResult extends Object {
     */
   var basemapId: String
   /**
+    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#PCContinuousRendererResult)
+    */
+  var basemapTheme: String
+  /**
     * The color scheme used by the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#PCContinuousRendererResult)
@@ -43,6 +49,7 @@ object PCContinuousRendererResult {
   @scala.inline
   def apply(
     basemapId: String,
+    basemapTheme: String,
     colorScheme: ColorScheme,
     constructor: js.Function,
     defaultValuesUsed: Boolean,
@@ -51,7 +58,7 @@ object PCContinuousRendererResult {
     renderer: PointCloudStretchRenderer,
     statistics: SummaryStatisticsResult
   ): PCContinuousRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, statistics = statistics)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, statistics = statistics)
   
     __obj.asInstanceOf[PCContinuousRendererResult]
   }

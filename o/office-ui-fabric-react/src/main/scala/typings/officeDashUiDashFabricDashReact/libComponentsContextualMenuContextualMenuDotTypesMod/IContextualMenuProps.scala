@@ -36,8 +36,7 @@ trait IContextualMenuProps
     */
   var alignTargetEdge: js.UndefOr[Boolean] = js.undefined
   /**
-    * Aria label for accessibility for the ContextualMenu.
-    * If none specified no aria label will be applied to the ContextualMenu.
+    * Accessible label for the ContextualMenu's root element (inside the callout).
     */
   var ariaLabel: js.UndefOr[String] = js.undefined
   /**
@@ -46,7 +45,7 @@ trait IContextualMenuProps
     */
   var beakWidth: js.UndefOr[Double] = js.undefined
   /**
-    * The bounding rectangle (or callback that returns a rectangle) for which  the contextual menu can appear in.
+    * The bounding rectangle (or callback that returns a rectangle) which the contextual menu can appear in.
     */
   var bounds: js.UndefOr[
     IRectangle | (js.Function2[
@@ -56,12 +55,11 @@ trait IContextualMenuProps
     ])
   ] = js.undefined
   /**
-    * Pass in custom callout props
+    * Additional custom props for the Callout.
     */
   var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
   /**
-    * Additional css class to apply to the ContextualMenu
-    * @defaultvalue undefined
+    * Additional CSS class to apply to the ContextualMenu.
     */
   var className: js.UndefOr[String] = js.undefined
   /**
@@ -72,20 +70,19 @@ trait IContextualMenuProps
     (ComponentClass[IContextualMenuItemProps, ComponentState]) | StatelessComponent[IContextualMenuItemProps]
   ] = js.undefined
   /**
-    * If true the position returned will have the menu element cover the target.
-    * If false then it will position next to the target;
+    * If true, the menu will be positioned to cover the target.
+    * If false, it will be positioned next to the target.
     * @defaultvalue false
     */
   var coverTarget: js.UndefOr[Boolean] = js.undefined
   /**
-    * If true, the contextual menu will not be updated until
-    * focus enters the menu via other means. This will only result
-    * in different behavior when shouldFocusOnMount = false
+    * If true, the contextual menu will not be updated until focus enters the menu via other means.
+    * This will only result in different behavior when `shouldFocusOnMount = false`.
     * @defaultvalue null
     */
   var delayUpdateFocusOnHover: js.UndefOr[Boolean] = js.undefined
   /**
-    * How the element should be positioned
+    * How the menu should be positioned
     * @defaultvalue DirectionalHint.bottomAutoEdge
     */
   var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
@@ -96,8 +93,8 @@ trait IContextualMenuProps
     */
   var directionalHintFixed: js.UndefOr[Boolean] = js.undefined
   /**
-    * How the element should be positioned in RTL layouts.
-    * If not specified, a mirror of `directionalHint` will be used instead
+    * How the menu should be positioned in RTL layouts.
+    * If not specified, a mirror of `directionalHint` will be used.
     */
   var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
   /**
@@ -109,7 +106,7 @@ trait IContextualMenuProps
     * Props to pass down to the FocusZone.
     * NOTE: the default FocusZoneDirection will be used unless a direction
     * is specified in the focusZoneProps (even if other focusZoneProps are defined)
-    * @defaultvalue \{direction: FocusZoneDirection.vertical\}
+    * @defaultvalue \{ direction: FocusZoneDirection.vertical \}
     */
   var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.undefined
   /**
@@ -118,16 +115,14 @@ trait IContextualMenuProps
     */
   var gapSpace: js.UndefOr[Double] = js.undefined
   /**
-    * Method to provide the classnames to style the contextual menu. Default value is the getMenuClassnames func
-    * defined in ContextualMenu.classnames.
-    * Deprecated, use `styles` prop of `IContextualMenuProps` to leverage mergeStyles API.
-    * @deprecated Use `styles` prop of `IContextualMenuProps` to leverage mergeStyles API.
+    * Method to provide the classnames to style the contextual menu.
+    * @deprecated Use `styles` instead to leverage mergeStyles API.
     */
   var getMenuClassNames: js.UndefOr[
     js.Function2[/* theme */ ITheme, /* className */ js.UndefOr[String], IContextualMenuClassNames]
   ] = js.undefined
   /**
-    * If specified, renders the ContextualMenu in a hidden state.
+    * If true, renders the ContextualMenu in a hidden state.
     * Use this flag, rather than rendering a ContextualMenu conditionally based on visibility,
     * to improve rendering performance when it becomes visible.
     * Note: When ContextualMenu is hidden its content will not be rendered. It will only render
@@ -136,8 +131,8 @@ trait IContextualMenuProps
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
   /**
-    * DOM id to tag the ContextualMenu with, for reference.
-    * Should be used for 'aria-owns' and other such uses, rather than direct reference for programmatic purposes.
+    * ID for the ContextualMenu's root element (inside the callout).
+    * Should be used for `aria-owns` and other such uses, rather than direct reference for programmatic purposes.
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -145,30 +140,29 @@ trait IContextualMenuProps
     */
   var isBeakVisible: js.UndefOr[Boolean] = js.undefined
   /**
-    * Whether this menu is a submenu of another menu or not.
+    * Whether this menu is a submenu of another menu.
     */
   var isSubMenu: js.UndefOr[Boolean] = js.undefined
   /**
-    * Collection of menu items.
+    * Menu items to display.
     * @defaultvalue []
     */
   var items: js.Array[IContextualMenuItem]
   /**
-    * Aria Labelled by labelElementId
-    * @defaultvalue null
+    * Used as `aria-labelledby` for the the menu element inside the callout.
     */
   var labelElementId: js.UndefOr[String] = js.undefined
   /**
-    * Callback when the ContextualMenu tries to close. If dismissAll is true then all
+    * Callback when the ContextualMenu tries to close. If `dismissAll` is true then all
     * submenus will be dismissed.
     */
   var onDismiss: js.UndefOr[
     js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   /**
-    * Click handler which is invoked if onClick is not passed for individual contextual
+    * Click handler which is invoked if `onClick` is not passed for individual contextual
     * menu item.
-    * Returning true will dismiss the menu even if ev.preventDefault() was called.
+    * Returning true will dismiss the menu even if `ev.preventDefault()` was called.
     */
   var onItemClick: js.UndefOr[
     js.Function2[
@@ -178,22 +172,21 @@ trait IContextualMenuProps
     ]
   ] = js.undefined
   /**
-    * Callback for when the contextualmenu is being closed (removing from the DOM)
+    * Callback for when the menu is being closed (removing from the DOM).
     */
   var onMenuDismissed: js.UndefOr[js.Function1[/* contextualMenu */ js.UndefOr[IContextualMenuProps], Unit]] = js.undefined
   /**
-    * Callback for when the contextualmenu has been opened.
+    * Callback for when the menu has been opened.
     */
   var onMenuOpened: js.UndefOr[js.Function1[/* contextualMenu */ js.UndefOr[IContextualMenuProps], Unit]] = js.undefined
   /**
     * Method to override the render of the list of menu items.
     */
   var onRenderMenuList: js.UndefOr[IRenderFunction[IContextualMenuListProps]] = js.undefined
-  /** Method to call when trying to render a submenu. */
+  /** Custom render function for a submenu. */
   var onRenderSubMenu: js.UndefOr[IRenderFunction[IContextualMenuProps]] = js.undefined
   /**
     * Whether to focus on the contextual menu container (as opposed to the first menu item).
-    * @defaultvalue null
     */
   var shouldFocusOnContainer: js.UndefOr[Boolean] = js.undefined
   /**
@@ -202,11 +195,11 @@ trait IContextualMenuProps
     */
   var shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined
   /**
-    * If true, the component will be updated even when hidden=true.
+    * If true, the component will be updated even when `hidden=true`.
     * Note that this would consume resources to update even though
     * nothing is being shown to the user.
     * This might be helpful though if your updates are small and you want the
-    * contextual menu to be revealed fast to the user when hidden is set to false.
+    * contextual menu to be revealed fast to the user when `hidden` is set to false.
     */
   var shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined
   /**
@@ -219,12 +212,12 @@ trait IContextualMenuProps
   var subMenuHoverDelay: js.UndefOr[Double] = js.undefined
   /**
     * The target that the ContextualMenu should try to position itself based on.
-    * It can be either an Element a querySelector string of a valid Element
-    * or a MouseEvent. If MouseEvent is given then the origin point of the event will be used.
+    * It can be either an element, a query selector string resolving to a valid element,
+    * or a MouseEvent. If a MouseEvent is given, the origin point of the event will be used.
     */
   var target: js.UndefOr[Target] = js.undefined
   /**
-    * Theme provided by High-Order Component.
+    * Theme provided by higher-order component.
     */
   var theme: js.UndefOr[ITheme] = js.undefined
   /**

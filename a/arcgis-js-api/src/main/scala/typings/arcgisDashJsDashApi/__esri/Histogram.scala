@@ -101,14 +101,6 @@ trait Histogram extends Widget {
   def labelFormatFunction(value: Double): String = js.native
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
 }
 
 /**

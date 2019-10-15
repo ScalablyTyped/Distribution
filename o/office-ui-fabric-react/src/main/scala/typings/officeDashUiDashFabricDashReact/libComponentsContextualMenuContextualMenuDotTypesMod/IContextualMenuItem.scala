@@ -43,8 +43,7 @@ trait IContextualMenuItem
     */
   var checked: js.UndefOr[Boolean] = js.undefined
   /**
-    * Additional css class to apply to the menu item
-    * @defaultvalue undefined
+    * Additional CSS class to apply to the menu item.
     */
   var className: js.UndefOr[String] = js.undefined
   /**
@@ -52,7 +51,7 @@ trait IContextualMenuItem
     */
   var componentRef: js.UndefOr[IRefObject[IContextualMenuRenderItem]] = js.undefined
   /**
-    * When rendering a custom component that is passed in, the component might also be a list of
+    * When rendering a custom menu component that is passed in, the component might also be a list of
     * elements. We want to keep track of the correct index our menu is using based off of
     * the length of the custom list. It is up to the user to increment the count for their list.
     */
@@ -68,7 +67,6 @@ trait IContextualMenuItem
   var disabled: js.UndefOr[Boolean] = js.undefined
   /**
     * Method to provide the classnames to style the individual items inside a menu.
-    * Deprecated, use `styles` prop of `IContextualMenuItemProps` to leverage mergeStyles API.
     * @deprecated Use `styles` prop of `IContextualMenuItemProps` to leverage mergeStyles API.
     */
   var getItemClassNames: js.UndefOr[
@@ -89,16 +87,16 @@ trait IContextualMenuItem
   ] = js.undefined
   /**
     * Method to provide the classnames to style the Vertical Divider of a split button inside a menu.
-    * Default value is the getVerticalDividerClassnames func defined in ContextualMenu.classnames
+    * Default value is the `getSplitButtonVerticalDividerClassNames` func defined in `ContextualMenu.classnames.ts`.
     * @defaultvalue getSplitButtonVerticalDividerClassNames
     */
   var getSplitButtonVerticalDividerClassNames: js.UndefOr[js.Function1[/* theme */ ITheme, IVerticalDividerClassNames]] = js.undefined
   /**
-    * An optional URL to navigate to upon selection
+    * Navigate to this URL when the menu item is clicked.
     */
   var href: js.UndefOr[String] = js.undefined
   /**
-    * Props that go to the IconComponent
+    * Props for the Icon.
     */
   var iconProps: js.UndefOr[IIconProps] = js.undefined
   /**
@@ -121,13 +119,13 @@ trait IContextualMenuItem
   var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   /**
     * Text description for the menu item to display
-    * Deprecated, use `text` instead.
     * @deprecated Use `text` instead.
     */
   var name: js.UndefOr[String] = js.undefined
   /**
-    * Callback issued when the menu item is invoked. If ev.preventDefault() is called in onClick, click will not close menu.
-    * Returning true will dismiss the menu even if ev.preventDefault() was called.
+    * Callback for when the menu item is invoked. If `ev.preventDefault()` is called in `onClick`,
+    * the click will not close the menu.
+    * Returning true will dismiss the menu even if `ev.preventDefault()` was called.
     */
   var onClick: js.UndefOr[
     js.Function2[
@@ -137,7 +135,7 @@ trait IContextualMenuItem
     ]
   ] = js.undefined
   /**
-    * A function to be executed onMouseDown. This is executed before an onClick event and can
+    * A function to be executed on mouse down. This is executed before an `onClick` event and can
     * be used to interrupt native on click events as well. The click event should still handle
     * the commands. This should only be used in special cases when react and non-react are mixed.
     */
@@ -155,7 +153,6 @@ trait IContextualMenuItem
     *
     * The function receives a function that can be called to dismiss the menu as a second argument.
     *  This can be used to make sure that a custom menu item click dismisses the menu.
-    * @defaultvalue undefined
     */
   var onRender: js.UndefOr[
     js.Function2[
@@ -174,12 +171,11 @@ trait IContextualMenuItem
     */
   var primaryDisabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * An optional rel when using href. If target is _blank rel is defaulted to a value to prevent clickjacking.
+    * Link relation setting when using `href`. If `target` is `_blank`, `rel` is defaulted to a value to prevent clickjacking.
     */
   var rel: js.UndefOr[String] = js.undefined
   /**
-    * Optional override for the role attribute on the menu button. If one is not provided, it will
-    * have a value of menuitem or menuitemcheckbox.
+    * Optional override for the menu button's role. Defaults to `menuitem` or `menuitemcheckbox`.
     */
   var role: js.UndefOr[String] = js.undefined
   /**
@@ -187,12 +183,12 @@ trait IContextualMenuItem
     */
   var secondaryText: js.UndefOr[String] = js.undefined
   /**
-    *  Properties to apply to render this item as a section.
-    *  This prop is mutually exclusive with subMenuProps.
+    * Properties to apply to render this item as a section.
+    * This prop is mutually exclusive with `subMenuProps`.
     */
   var sectionProps: js.UndefOr[IContextualMenuSection] = js.undefined
   /**
-    * [TODO] Not Yet Implemented
+    * @deprecated Not used
     */
   var shortCut: js.UndefOr[String] = js.undefined
   /**
@@ -202,8 +198,6 @@ trait IContextualMenuItem
   var split: js.UndefOr[Boolean] = js.undefined
   /**
     * Additional styles to apply to the menu item
-    * Deprecated, use `styles` instead.
-    * @defaultvalue undefined
     * @deprecated in favor of the `styles` prop to leverage mergeStyles API.
     */
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -216,11 +210,11 @@ trait IContextualMenuItem
     */
   var subMenuProps: js.UndefOr[IContextualMenuProps] = js.undefined
   /**
-    * Props that go to the IconComponent used for the chevron.
+    * Props for the Icon used for the chevron.
     */
   var submenuIconProps: js.UndefOr[IIconProps] = js.undefined
   /**
-    * An optional target when using href
+    * Target window when using `href`.
     */
   var target: js.UndefOr[String] = js.undefined
   /**

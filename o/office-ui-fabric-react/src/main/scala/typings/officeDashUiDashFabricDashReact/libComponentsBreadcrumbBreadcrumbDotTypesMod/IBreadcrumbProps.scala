@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 
 trait IBreadcrumbProps extends HTMLAttributes[HTMLElement] {
   /**
-    * Aria label to place on the navigation landmark for breadcrumb
+    * Aria label for the root element of the breadcrumb (which is a navigation landmark).
     */
   var ariaLabel: js.UndefOr[String] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait IBreadcrumbProps extends HTMLAttributes[HTMLElement] {
     */
   var dividerAs: js.UndefOr[IComponentAs[IDividerAsProps]] = js.undefined
   /**
-    * Focuszone props that will get passed through to the root focus zone.
+    * Extra props for the root FocusZone.
     */
   var focusZoneProps: js.UndefOr[IFocusZoneProps] = js.undefined
   /**
@@ -43,18 +43,18 @@ trait IBreadcrumbProps extends HTMLAttributes[HTMLElement] {
     */
   var maxDisplayedItems: js.UndefOr[Double] = js.undefined
   /**
-    * Method to call when reducing the length of the breadcrumb.
-    * Return undefined to never reduce breadcrumb length
+    * Method that determines how to reduce the length of the breadcrumb.
+    * Return undefined to never reduce breadcrumb length.
     */
   var onReduceData: js.UndefOr[js.Function1[/* data */ IBreadcrumbData, js.UndefOr[IBreadcrumbData]]] = js.undefined
-  /** Method to call when trying to render an item. */
+  /** Custom render function for each breadcrumb item. */
   var onRenderItem: js.UndefOr[IRenderFunction[IBreadcrumbItem]] = js.undefined
   /**
     * Render a custom overflow icon in place of the default icon `...`
     */
   var onRenderOverflowIcon: js.UndefOr[IRenderFunction[IButtonProps]] = js.undefined
   /**
-    * Optional name to use for aria label on overflow button.
+    * Aria label for the overflow button.
     */
   var overflowAriaLabel: js.UndefOr[String] = js.undefined
   /**
@@ -64,7 +64,7 @@ trait IBreadcrumbProps extends HTMLAttributes[HTMLElement] {
   var styles: js.UndefOr[IStyleFunctionOrObject[IBreadcrumbStyleProps, IBreadcrumbStyles]] = js.undefined
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
-    * TooltipHost props that will get passed through to overflow tooltips.
+    * Extra props for the TooltipHost which wraps each breadcrumb item.
     */
   var tooltipHostProps: js.UndefOr[ITooltipHostProps] = js.undefined
 }

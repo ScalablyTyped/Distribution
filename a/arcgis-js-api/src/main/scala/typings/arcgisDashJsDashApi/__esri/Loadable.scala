@@ -2,6 +2,10 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`not-loaded`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.failed
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loaded
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
 import typings.std.AbortSignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +36,7 @@ trait Loadable extends js.Object {
     *
     * @default not-loaded
     */
-  val loadStatus: String = js.native
+  val loadStatus: `not-loaded` | loading | failed | loaded = js.native
   /**
     * A list of warnings which occurred while loading.
     *

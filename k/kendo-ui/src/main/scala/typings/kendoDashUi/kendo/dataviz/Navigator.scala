@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Navigator () extends Observable {
   var options: NavigatorOptions = js.native
-  def select(): Unit = js.native
-  @JSName("select")
-  def select_Any(): js.Any = js.native
+  def select(): js.Any = js.native
 }
 

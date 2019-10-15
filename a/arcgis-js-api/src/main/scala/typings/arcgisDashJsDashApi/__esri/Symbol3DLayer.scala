@@ -1,6 +1,14 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`object`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.extrude
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.fill
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.icon
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.line
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.path
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.text
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.water
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,13 +28,13 @@ trait Symbol3DLayer
     * path | ![s3d-path](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-path-tube.png)
     * fill | ![s3d-fill](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-fill-solid.png)
     * water | ![s3d-water](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-water-solid.png)
-    * extrusion | ![s3d-extrusion](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-extrude-solid.png)
+    * extrude | ![s3d-extrusion](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-extrude-solid.png)
     * text | ![s3d-text](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-label-text.png)
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html#type)
     */
-  val `type`: String = js.native
+  val `type`: icon | `object` | line | path | fill | water | extrude | text = js.native
 }
 
 @JSGlobal("__esri.Symbol3DLayer")

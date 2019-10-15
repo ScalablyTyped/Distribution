@@ -1,7 +1,12 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.arithmetic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geographic
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.heading
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.roll
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.rotation
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.tilt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +27,7 @@ trait RotationVariable extends VisualVariable {
     *
     * @default heading
     */
-  var axis: String = js.native
+  var axis: heading | tilt | roll = js.native
   /**
     * Defines the origin and direction of rotation depending on how the angle of rotation was measured. See the table below for a list of possible values. This property only applies to rotations around the `heading` axis.
     *
@@ -36,9 +41,9 @@ trait RotationVariable extends VisualVariable {
     *
     * @default geographic
     */
-  var rotationType: String = js.native
+  var rotationType: geographic | arithmetic = js.native
   /**
-    * The visual variable type. For RotationVariable, this value is always `rotation`.
+    * The visual variable type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html#type)
     */

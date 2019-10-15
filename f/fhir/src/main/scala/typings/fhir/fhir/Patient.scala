@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation._
     */
   var birthDate: js.UndefOr[date] = js.undefined
   /**
-    * A list of Languages which may be used to communicate with the patient about his or her health
+    * A list of Languages which may be used to communicate with the patient about their health
     */
   var communication: js.UndefOr[js.Array[PatientCommunication]] = js.undefined
   /**

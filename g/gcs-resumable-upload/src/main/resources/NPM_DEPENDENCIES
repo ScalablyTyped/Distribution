@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gcs-resumable-upload" : "2.2.5"
+      "gcs-resumable-upload" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gcs-resumable-upload" : "2.2.5"
+      "gcs-resumable-upload" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

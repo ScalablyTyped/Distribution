@@ -1,11 +1,12 @@
 package typings.handsontable.handsontableMod.Handsontable.plugins
 
+import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DropdownMenu extends Base {
+trait DropdownMenu extends BasePlugin {
   var SEPARATOR: SeparatorObject
   var commandExecutor: CommandExecutor
   var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
@@ -31,6 +32,7 @@ object DropdownMenu {
     enabled: Boolean,
     eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
     executeCommand: (String, /* repeated */ js.Any) => Unit,
+    hot: Core,
     init: () => Unit,
     initialized: Boolean,
     isPluginsReady: Boolean,
@@ -39,9 +41,11 @@ object DropdownMenu {
     open: Event => Unit,
     pluginName: String,
     pluginsInitializedCallback: js.Array[_],
-    removeHooks: String => Unit
+    removeHooks: String => Unit,
+    t: RecordTranslator,
+    updatePlugin: () => Unit
   ): DropdownMenu = {
-    val __obj = js.Dynamic.literal(SEPARATOR = SEPARATOR, addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), close = js.Any.fromFunction0(close), commandExecutor = commandExecutor, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, executeCommand = js.Any.fromFunction2(executeCommand), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, itemsFactory = itemsFactory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks))
+    val __obj = js.Dynamic.literal(SEPARATOR = SEPARATOR, addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), close = js.Any.fromFunction0(close), commandExecutor = commandExecutor, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, executeCommand = js.Any.fromFunction2(executeCommand), hot = hot, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, itemsFactory = itemsFactory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), t = t, updatePlugin = js.Any.fromFunction0(updatePlugin))
   
     __obj.asInstanceOf[DropdownMenu]
   }

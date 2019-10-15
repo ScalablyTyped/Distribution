@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__ui
 
-Typings are for version 5.2.3
+Typings are for version 5.2.4
 
 ## Library description:
 Core Storybook UI

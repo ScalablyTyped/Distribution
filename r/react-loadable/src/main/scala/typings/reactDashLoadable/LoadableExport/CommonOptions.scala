@@ -49,7 +49,7 @@ trait CommonOptions extends js.Object {
     * });
     * ```
     */
-  var webpack: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
+  var webpack: js.UndefOr[js.Function0[js.Array[String | Double]]] = js.undefined
 }
 
 object CommonOptions {
@@ -59,7 +59,7 @@ object CommonOptions {
     delay: Double | `false` = null,
     modules: js.Array[String] = null,
     timeout: Double | `false` = null,
-    webpack: () => js.Array[Double] = null
+    webpack: () => js.Array[String | Double] = null
   ): CommonOptions = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

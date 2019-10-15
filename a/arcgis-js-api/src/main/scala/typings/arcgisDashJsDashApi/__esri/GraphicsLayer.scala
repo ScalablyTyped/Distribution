@@ -1,10 +1,6 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
-import typings.arcgisDashJsDashApi.IHandle
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create-error`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-create`
-import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`layerview-destroy`
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.graphics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,11 +31,6 @@ trait GraphicsLayer
     * @default true
     */
   var screenSizePerspectiveEnabled: Boolean = js.native
-  /**
-    * For [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) the type is `graphics`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#type)
-    */
   @JSName("type")
   val type_GraphicsLayer: graphics = js.native
   /**
@@ -60,12 +51,6 @@ trait GraphicsLayer
     *
     */
   def addMany(graphics: js.Array[Graphic]): Unit = js.native
-  @JSName("on")
-  def on_layerviewcreate(name: `layerview-create`, eventHandler: GraphicsLayerLayerviewCreateEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewcreateerror(name: `layerview-create-error`, eventHandler: GraphicsLayerLayerviewCreateErrorEventHandler): IHandle = js.native
-  @JSName("on")
-  def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: GraphicsLayerLayerviewDestroyEventHandler): IHandle = js.native
   /**
     * Removes a graphic from the layer.
     *

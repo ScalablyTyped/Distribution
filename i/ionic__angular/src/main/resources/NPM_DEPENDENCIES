@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/angular" : "4.11.0"
+      "@ionic/angular" : "4.11.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/angular" : "4.11.0"
+      "@ionic/angular" : "4.11.1"
     }
   ],
   "compile-devDependencies" : [

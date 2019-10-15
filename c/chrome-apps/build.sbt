@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chrome-apps"
-version := "0.0-unknown-dt-20190926Z-b9dcb1"
+version := "0.0-unknown-dt-20191014Z-8e6631"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

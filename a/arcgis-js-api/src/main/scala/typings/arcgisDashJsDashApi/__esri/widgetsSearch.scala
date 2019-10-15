@@ -1,7 +1,20 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.IHandle
 import typings.arcgisDashJsDashApi.IPromise
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-blur`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-clear`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-complete`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-focus`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`search-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`select-result`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`suggest-complete`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`suggest-start`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.none
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.source
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.suggestion
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,15 +24,15 @@ trait widgetsSearch
   extends Widget
      with GoTo {
   /**
-    * The current active menu of the Search widget.  **Possible Values:** none | suggestion | source | warning
+    * The current active menu of the Search widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeMenu)
     *
     * @default none
     */
-  var activeMenu: String = js.native
+  var activeMenu: none | suggestion | source | warning = js.native
   /**
-    * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources) object currently selected. Can be either a [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) or a module:esri/widget/Search/LocatorSearchSource.
+    * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources) object currently selected. Can be either a [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) or a [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeSource)
     *
@@ -232,14 +245,22 @@ trait widgetsSearch
     *
     */
   def focus(): Unit = js.native
-  /**
-    * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#render)
-    *
-    *
-    */
-  def render(): js.Any = js.native
+  @JSName("on")
+  def on_searchblur(name: `search-blur`, eventHandler: SearchSearchBlurEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_searchclear(name: `search-clear`, eventHandler: SearchSearchClearEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_searchcomplete(name: `search-complete`, eventHandler: SearchSearchCompleteEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_searchfocus(name: `search-focus`, eventHandler: SearchSearchFocusEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_searchstart(name: `search-start`, eventHandler: SearchSearchStartEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_selectresult(name: `select-result`, eventHandler: SearchSelectResultEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_suggestcomplete(name: `suggest-complete`, eventHandler: SearchSuggestCompleteEventHandler): IHandle = js.native
+  @JSName("on")
+  def on_suggeststart(name: `suggest-start`, eventHandler: SearchSuggestStartEventHandler): IHandle = js.native
   /**
     * Depending on the sources specified, search() queries the feature layer(s) and/or performs address matching using any specified [Locator(s)](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html) and returns any applicable results.
     *

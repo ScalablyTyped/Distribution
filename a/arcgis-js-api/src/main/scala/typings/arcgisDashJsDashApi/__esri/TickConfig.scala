@@ -1,5 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.count
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.percent
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.position
 import typings.std.HTMLElement
 import typings.std.Object
 import typings.std.PropertyKey
@@ -32,7 +35,7 @@ trait TickConfig extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
     */
-  var mode: String
+  var mode: count | percent | position
   /**
     * Callback that fires for each tick. You can override default behaviors and styles with this property.
     *
@@ -52,14 +55,14 @@ object TickConfig {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    mode: String,
+    mode: count | percent | position,
     propertyIsEnumerable: PropertyKey => Boolean,
     values: Double | js.Array[Double],
     labelFormatFunction: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String = null,
     labelsVisible: js.UndefOr[Boolean] = js.undefined,
     tickCreatedFunction: (/* value */ Double, /* tickElement */ HTMLElement, /* labelElement */ js.UndefOr[HTMLElement]) => Unit = null
   ): TickConfig = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), values = values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), mode = mode.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), values = values.asInstanceOf[js.Any])
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
     if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)
     if (tickCreatedFunction != null) __obj.updateDynamic("tickCreatedFunction")(js.Any.fromFunction3(tickCreatedFunction))

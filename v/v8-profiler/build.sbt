@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "v8-profiler"
-version := "0.0-unknown-dt-20190322Z-4369f2"
+version := "0.0-unknown-dt-20191014Z-d8594d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

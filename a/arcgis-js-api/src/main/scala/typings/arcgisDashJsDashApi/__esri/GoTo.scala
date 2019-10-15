@@ -19,8 +19,8 @@ trait GoTo extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GoTo.html#goToOverride)
     */
-  def goToOverride(view: MapView, goToParameters: GoToParameters): Unit = js.native
-  def goToOverride(view: SceneView, goToParameters: GoToParameters): Unit = js.native
+  def goToOverride(view: MapView, goToParameters: js.Any): Unit = js.native
+  def goToOverride(view: SceneView, goToParameters: js.Any): Unit = js.native
 }
 
 @JSGlobal("__esri.GoTo")

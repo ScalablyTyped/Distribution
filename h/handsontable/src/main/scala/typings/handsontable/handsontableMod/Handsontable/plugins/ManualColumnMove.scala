@@ -2,11 +2,12 @@ package typings.handsontable.handsontableMod.Handsontable.plugins
 
 import typings.handsontable.handsontableMod.Handsontable.plugins.moveUI.BacklightUI
 import typings.handsontable.handsontableMod.Handsontable.plugins.moveUI.GuidelineUI
+import typings.handsontable.handsontableMod._Handsontable.Core
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ManualColumnMove extends Base {
+trait ManualColumnMove extends BasePlugin {
   var backlight: BacklightUI
   var columnsMapper: MoveColumnsMapper
   var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
@@ -32,6 +33,7 @@ object ManualColumnMove {
     enabled: Boolean,
     eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager,
     guideline: GuidelineUI,
+    hot: Core,
     init: () => Unit,
     initialized: Boolean,
     isPluginsReady: Boolean,
@@ -42,9 +44,11 @@ object ManualColumnMove {
     pluginName: String,
     pluginsInitializedCallback: js.Array[_],
     removeHooks: String => Unit,
-    removedColumns: js.Array[_]
+    removedColumns: js.Array[_],
+    t: RecordTranslator,
+    updatePlugin: () => Unit
   ): ManualColumnMove = {
-    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), backlight = backlight, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), columnsMapper = columnsMapper, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, guideline = guideline, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, moveColumn = js.Any.fromFunction2(moveColumn), moveColumns = js.Any.fromFunction2(moveColumns), persistentStateLoad = js.Any.fromFunction0(persistentStateLoad), persistentStateSave = js.Any.fromFunction0(persistentStateSave), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), removedColumns = removedColumns)
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), backlight = backlight, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), columnsMapper = columnsMapper, destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, guideline = guideline, hot = hot, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, moveColumn = js.Any.fromFunction2(moveColumn), moveColumns = js.Any.fromFunction2(moveColumns), persistentStateLoad = js.Any.fromFunction0(persistentStateLoad), persistentStateSave = js.Any.fromFunction0(persistentStateSave), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), removedColumns = removedColumns, t = t, updatePlugin = js.Any.fromFunction0(updatePlugin))
   
     __obj.asInstanceOf[ManualColumnMove]
   }

@@ -1,5 +1,22 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a3-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a3-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a4-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`a4-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`letter-ansi-a-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`letter-ansi-a-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`map-only`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`tabloid-ansi-b-landscape`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`tabloid-ansi-b-portrait`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.eps
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.gif
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.jpg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.pdf
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png32
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.png8
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svg
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.svgz
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,13 +59,13 @@ trait TemplateOptionsProperties extends js.Object {
     */
   var forceFeatureAttributes: js.UndefOr[Boolean] = js.undefined
   /**
-    * The output format for the printed map.  **Possible Values:** pdf | png32 | png8 | jpg | gif | eps | svg | svgz
+    * The output format for the printed map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format)
     *
     * @default pdf
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[pdf | png32 | png8 | jpg | gif | eps | svg | svgz] = js.undefined
   /**
     * Map height. This only applies when the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is `map-only`.
     *
@@ -75,7 +92,9 @@ trait TemplateOptionsProperties extends js.Object {
     *
     * @default letter-ansi-a-landscape
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[
+    `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`
+  ] = js.undefined
   /**
     * When `false`, the legend is not displayed on the printout.
     *
@@ -114,9 +133,9 @@ object TemplateOptionsProperties {
     copyright: String = null,
     dpi: String = null,
     forceFeatureAttributes: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
+    format: pdf | png32 | png8 | jpg | gif | eps | svg | svgz = null,
     height: Int | Double = null,
-    layout: String = null,
+    layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = null,
     legendEnabled: js.UndefOr[Boolean] = js.undefined,
     scaleEnabled: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
@@ -128,9 +147,9 @@ object TemplateOptionsProperties {
     if (copyright != null) __obj.updateDynamic("copyright")(copyright)
     if (dpi != null) __obj.updateDynamic("dpi")(dpi)
     if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
     if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled)
     if (title != null) __obj.updateDynamic("title")(title)

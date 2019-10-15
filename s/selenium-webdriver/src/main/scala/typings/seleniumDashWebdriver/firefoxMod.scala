@@ -17,15 +17,55 @@ object firefoxMod extends js.Object {
   @js.native
   class Driver () extends WebDriver {
     /**
+      * Installs a new addon with the current session. This function will return an
+      * ID that may later be used to {@linkplain #uninstallAddon uninstall} the
+      * addon.
+      *
+      *
+      * @param {string} path Path on the local filesystem to the web extension to
+      *     install.
+      * @param {boolean} temporary Flag indicating whether the extension should be
+      *     installed temporarily - gets removed on restart
+      * @return {!Promise<string>} A promise that will resolve to an ID for the
+      *     newly installed addon.
+      * @see #uninstallAddon
+      */
+    def installAddon(path: String, temporary: Boolean): js.Promise[String] = js.native
+    /**
       * This function is a no-op as file detectors are not supported by this
       * implementation.
       * @override
       */
     def setFileDetector(): Unit = js.native
+    /**
+      * Uninstalls an addon from the current browser session's profile.
+      *
+      * @param {(string|!Promise<string>)} id ID of the addon to uninstall.
+      * @return {!Promise} A promise that will resolve when the operation has
+      *     completed.
+      * @see #installAddon
+      */
+    def uninstallAddon(id: String): js.Promise[Unit] = js.native
+    def uninstallAddon(id: js.Promise[String]): js.Promise[Unit] = js.native
   }
   
   @js.native
   class Options () extends Capabilities {
+    /**
+      * Specify additional command line arguments that should be used when starting
+      * the Firefox browser.
+      *
+      * @param {...(string|!Array<string>)} args The arguments to include.
+      * @return {!Options} A self reference.
+      */
+    def addArguments(args: String*): Options = js.native
+    /**
+      * Add extensions that should be installed when starting Firefox.
+      *
+      * @param {...string} paths The paths to the extension XPI files to install.
+      * @return {!Options} A self reference.
+      */
+    def addExtensions(paths: String*): Options = js.native
     /**
       * Configures the geckodriver to start Firefox in headless mode.
       * @return {!Options} A self reference.
@@ -40,6 +80,15 @@ object firefoxMod extends js.Object {
       */
     def setBinary(binary: String): Options = js.native
     def setBinary(binary: js.Any): Options = js.native
+    /**
+      * @param {string} key the preference key.
+      * @param {(string|number|boolean)} value the preference value.
+      * @return {!Options} A self reference.
+      * @throws {TypeError} if either the key or value has an invalid type.
+      */
+    def setPreference(key: String, value: String): Options = js.native
+    def setPreference(key: String, value: Boolean): Options = js.native
+    def setPreference(key: String, value: Double): Options = js.native
     /**
       * Sets the profile to use. The profile may be specified as a
       * {@link Profile} object or as the path to an existing Firefox profile to use
@@ -57,6 +106,16 @@ object firefoxMod extends js.Object {
       * @see https://github.com/mozilla/geckodriver
       */
     def useGeckoDriver(enable: Boolean): Options = js.native
+    /**
+      * Sets the initial window size when running in
+      * {@linkplain #headless headless} mode.
+      *
+      * @param {{width: number, height: number}} size The desired window size.
+      * @return {!Options} A self reference.
+      * @throws {TypeError} if width or height is unspecified, not a number, or
+      *     less than or equal to 0.
+      */
+    def windowSize(size: Anon_Height): Options = js.native
   }
   
   @js.native

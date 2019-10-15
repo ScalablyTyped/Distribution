@@ -12,7 +12,13 @@ trait heatmapGetSchemesByTagParams extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-heatmap.html#getSchemesByTag)
     */
-  var basemap: String | Basemap
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
+  /**
+    * If you have a non-Esri basemap (e.g. a VectorTileLayer basemap with a custom style) or no basemap at all, use this parameter to indicate whether the background of the visualization is `light` or `dark`.  **Possible Values:** light | dark
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-heatmap.html#getSchemesByTag)
+    */
+  var basemapTheme: js.UndefOr[String] = js.undefined
   /**
     * When provided, only schemes missing all the provided tags will be returned.  **Known Tags:** light | dark | reds | yellows | oranges | greens | blues | purples | pinks | browns | grays | bright | subdued | deuteranopia | protanopia | tritanopia | grayscale | types | dot-density
     *
@@ -30,14 +36,17 @@ trait heatmapGetSchemesByTagParams extends Object {
 object heatmapGetSchemesByTagParams {
   @scala.inline
   def apply(
-    basemap: String | Basemap,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
+    basemap: String | Basemap = null,
+    basemapTheme: String = null,
     excludedTags: js.Array[String] = null,
     includedTags: js.Array[String] = null
   ): heatmapGetSchemesByTagParams = {
-    val __obj = js.Dynamic.literal(basemap = basemap.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
+    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme)
     if (excludedTags != null) __obj.updateDynamic("excludedTags")(excludedTags)
     if (includedTags != null) __obj.updateDynamic("includedTags")(includedTags)
     __obj.asInstanceOf[heatmapGetSchemesByTagParams]

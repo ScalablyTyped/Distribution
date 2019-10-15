@@ -15,7 +15,7 @@ trait CIMSymbol extends Symbol {
     */
   var data: js.Any = js.native
   /**
-    * For CIMSymbol, the type is always `cim`.
+    * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#type)
     */

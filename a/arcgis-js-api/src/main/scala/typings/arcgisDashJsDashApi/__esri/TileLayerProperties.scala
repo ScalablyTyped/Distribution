@@ -29,13 +29,19 @@ import scala.scalajs.js.annotation._
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). This means that tile images are resampled at a lower level of detail and displayed at levels where tiles may not be available. Setting this property to `true` disables this behavior. Instead, if a tile is not available, a transparent image is displayed.
+    * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). This means that tile images are resampled at a lower level of detail and displayed at levels where tiles may not be available. Setting this property to `false` disables this behavior. Instead, if a tile is not available, a transparent image is displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
     *
     * @default true
     */
   var resampling: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The [tiled map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API. While most commonly used [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#properties-summary) are exposed on the TileLayer class directly, this property gives access to all information returned by the tiled map service. This property is useful if working in an application built using an older version of the API which requires access to tiled map service properties from a more recent version.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#sourceJSON)
+    */
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   /**
     * Contains information about the tiling scheme for the layer.
     *
@@ -70,6 +76,7 @@ object TileLayerProperties {
     portalItem: PortalItemProperties = null,
     refreshInterval: Int | Double = null,
     resampling: js.UndefOr[Boolean] = js.undefined,
+    sourceJSON: js.Any = null,
     tileInfo: TileInfoProperties = null,
     tileServers: js.Array[String] = null,
     title: String = null,
@@ -88,6 +95,7 @@ object TileLayerProperties {
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
     if (!js.isUndefined(resampling)) __obj.updateDynamic("resampling")(resampling)
+    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON)
     if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
     if (tileServers != null) __obj.updateDynamic("tileServers")(tileServers)
     if (title != null) __obj.updateDynamic("title")(title)

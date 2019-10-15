@@ -1,7 +1,15 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.baseline
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.bottom
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.center
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.justify
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.left
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.middle
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.right
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.text
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +49,7 @@ trait TextSymbol
     */
   var borderLineSize: Double = js.native
   /**
-    * The font used to style the text.
+    * The [Font](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html) used to style the text. This property allows the developer to set the font's family, decoration, size, style, and weight properties.
     * > **Known Limitations**  This property is not fully supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#font)
@@ -65,14 +73,14 @@ trait TextSymbol
     */
   var haloSize: Double = js.native
   /**
-    * Adjusts the horizontal alignment of the text in multi-line labels.  **Possible Values:** left | right | center | justify
+    * Adjusts the horizontal alignment of the text in multi-line labels.
     * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#horizontalAlignment)
     *
     * @default center
     */
-  var horizontalAlignment: String = js.native
+  var horizontalAlignment: left | right | center | justify = js.native
   /**
     * Determines whether to adjust the spacing between characters in the text string.
     *
@@ -97,22 +105,17 @@ trait TextSymbol
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#text)
     */
   var text: String = js.native
-  /**
-    * For TextSymbol, the type is always `text`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#type)
-    */
   @JSName("type")
   val type_TextSymbol: text = js.native
   /**
-    * Adjusts the vertical alignment of the text.  **Possible Values:** baseline | top | middle | bottom
+    * Adjusts the vertical alignment of the text.
     * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#verticalAlignment)
     *
     * @default baseline
     */
-  var verticalAlignment: String = js.native
+  var verticalAlignment: baseline | top | middle | bottom = js.native
   /**
     * The offset on the x-axis in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
     * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

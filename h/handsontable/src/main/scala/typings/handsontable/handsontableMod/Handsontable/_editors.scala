@@ -1,7 +1,7 @@
 package typings.handsontable.handsontableMod.Handsontable
 
 import typings.handsontable.handsontableMod.Handsontable._editors.Autocomplete
-import typings.handsontable.handsontableMod.Handsontable._editors.Base
+import typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor
 import typings.handsontable.handsontableMod.Handsontable._editors.EditorState
 import typings.handsontable.handsontableMod.Handsontable._editors.Text
 import typings.handsontable.handsontableMod._Handsontable.Core
@@ -60,10 +60,11 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Base extends js.Object {
+  trait BaseEditor extends js.Object {
     var TD: HTMLTableCellElement = js.native
     var cellProperties: CellProperties = js.native
     var col: Double = js.native
+    var hot: Core = js.native
     var instance: Core = js.native
     var originalValue: js.Any = js.native
     var prop: String | Double = js.native
@@ -78,12 +79,14 @@ object _editors extends js.Object {
     def discardEditor(): Unit = js.native
     def discardEditor(validationResult: Boolean): Unit = js.native
     def enableFullEditMode(): Unit = js.native
-    def extend[T /* <: Base */](): T = js.native
+    def extend[T /* <: BaseEditor */](): T = js.native
     def finishEditing(): Unit = js.native
     def finishEditing(restoreOriginalValue: Boolean): Unit = js.native
     def finishEditing(restoreOriginalValue: Boolean, ctrlDown: Boolean): Unit = js.native
     def finishEditing(restoreOriginalValue: Boolean, ctrlDown: Boolean, callback: js.Function0[Unit]): Unit = js.native
     def focus(): Unit = js.native
+    def getEditedCell(): HTMLTableCellElement | Null = js.native
+    def getEditedCellsZIndex(): String = js.native
     def getValue(): js.Any = js.native
     def init(): Unit = js.native
     def isInFullEditMode(): Boolean = js.native
@@ -115,7 +118,7 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Checkbox extends Base
+  trait Checkbox extends BaseEditor
   
   @js.native
   trait Date extends Text {
@@ -140,7 +143,7 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Mobile extends Base {
+  trait Mobile extends BaseEditor {
     def hideCellPointer(): Unit = js.native
     def onBeforeKeyDown(): Unit = js.native
     def onBeforeKeyDown(event: KeyboardEvent): Unit = js.native
@@ -154,8 +157,7 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Select extends Base {
-    def getEditedCell(): js.UndefOr[HTMLTableCellElement] = js.native
+  trait Select extends BaseEditor {
     def prepareOptions(): Unit = js.native
     def prepareOptions(optionsToPrepare: js.Array[CellValue]): Unit = js.native
     def prepareOptions(optionsToPrepare: RowObject): Unit = js.native
@@ -165,14 +167,13 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Text extends Base {
+  trait Text extends BaseEditor {
     var TEXTAREA: HTMLInputElement = js.native
     var TEXTAREA_PARENT: HTMLElement = js.native
     var textareaStyle: CSSStyleDeclaration = js.native
     def bindEvents(): Unit = js.native
     def createElements(): Unit = js.native
     def destroy(): Unit = js.native
-    def getEditedCell(): js.UndefOr[HTMLTableCellElement] = js.native
     def hideEditableElement(): Unit = js.native
     def refreshDimensions(): Unit = js.native
     def refreshDimensions(force: Boolean): Unit = js.native

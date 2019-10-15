@@ -1,5 +1,11 @@
 package typings.arcgisDashJsDashApi.__esri
 
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`default-curve-extension`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`keep-end-attributes`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`no-end-attributes`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`no-extend-at-from`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`no-extend-at-to`
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.`relocate-ends`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +26,11 @@ trait TrimExtendParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#extendHow)
     *
-    * @default default-curve-extension
+    * @default "default-curve-extension"
     */
-  var extendHow: js.UndefOr[String] = js.undefined
+  var extendHow: js.UndefOr[
+    `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to`
+  ] = js.undefined
   /**
     * The array of polylines to trim or extend. The structure of each geometry in the array is the same as the structure of the JSON polyline objects returned by the ArcGIS REST API.
     *
@@ -40,12 +48,12 @@ trait TrimExtendParametersProperties extends js.Object {
 object TrimExtendParametersProperties {
   @scala.inline
   def apply(
-    extendHow: String = null,
+    extendHow: `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to` = null,
     polylines: js.Array[PolylineProperties] = null,
     trimExtendTo: PolylineProperties = null
   ): TrimExtendParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (extendHow != null) __obj.updateDynamic("extendHow")(extendHow)
+    if (extendHow != null) __obj.updateDynamic("extendHow")(extendHow.asInstanceOf[js.Any])
     if (polylines != null) __obj.updateDynamic("polylines")(polylines)
     if (trimExtendTo != null) __obj.updateDynamic("trimExtendTo")(trimExtendTo)
     __obj.asInstanceOf[TrimExtendParametersProperties]

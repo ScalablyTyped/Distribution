@@ -69,7 +69,7 @@ trait DotDensityRendererProperties extends RendererProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#visualVariables)
     */
-  var visualVariables: js.UndefOr[js.Array[ScaleDependentStops]] = js.undefined
+  var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.undefined
 }
 
 object DotDensityRendererProperties {
@@ -84,7 +84,7 @@ object DotDensityRendererProperties {
     outline: SimpleLineSymbolProperties = null,
     referenceScale: Int | Double = null,
     seed: Int | Double = null,
-    visualVariables: js.Array[ScaleDependentStops] = null
+    visualVariables: js.Array[VisualVariableProperties] = null
   ): DotDensityRendererProperties = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)

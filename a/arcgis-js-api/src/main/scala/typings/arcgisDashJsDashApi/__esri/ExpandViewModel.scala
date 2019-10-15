@@ -1,6 +1,8 @@
 package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,13 +32,13 @@ trait ExpandViewModel extends Accessor {
     */
   var group: String = js.native
   /**
-    * The view model's state.  **Possible Values:** ready | disabled
+    * The view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html#state)
     *
     * @default disabled
     */
-  val state: String = js.native
+  val state: ready | disabled = js.native
   /**
     * The view in which the Expand is used.
     *

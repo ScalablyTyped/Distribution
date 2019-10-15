@@ -1,5 +1,6 @@
 package typings.fabric.fabricDashImplMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,11 +10,11 @@ trait IObjectAnimation[T] extends js.Object {
   /**
   	 * Animates object's properties
   	 * object.animate({ left: ..., top: ... }, { duration: ... });
-  	 * @param properties Properties to animate
-  	 * @param value Options object
+  	 * @param properties Properties to animate with values to animate to
+  	 * @param options The animation options
   	 */
-  def animate(properties: js.Any): Object = js.native
-  def animate(properties: js.Any, options: IAnimationOptions): Object = js.native
+  def animate(properties: StringDictionary[Double | String]): Object = js.native
+  def animate(properties: StringDictionary[Double | String], options: IAnimationOptions): Object = js.native
   def animate(property: String, value: String): Object = js.native
   def animate(property: String, value: String, options: IAnimationOptions): Object = js.native
   /**

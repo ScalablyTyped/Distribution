@@ -2,6 +2,7 @@ package typings.arcgisDashJsDashApi.__esri
 
 import org.scalablytyped.runtime.TopLevel
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.disabled
+import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.loading
 import typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,13 +17,13 @@ trait AttributionViewModel extends Accessor {
     */
   val items: Collection[AttributionItem] = js.native
   /**
-    * The view model's state.  **Possible Values:** ready | disabled
+    * The view model's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution-AttributionViewModel.html#state)
     *
     * @default disabled
     */
-  val state: ready | disabled = js.native
+  val state: disabled | ready | loading = js.native
   /**
     * The view from which the view model will operate.
     *
