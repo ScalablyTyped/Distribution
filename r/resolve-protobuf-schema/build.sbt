@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "resolve-protobuf-schema"
-version := "2.1-dt-20190703Z-9ab685"
+version := "2.1-dt-20190703Z-0e7f6d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
-  "org.scalablytyped" %%% "protocol-buffers-schema" % "3.3-dt-20190311Z-e7b73e",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "protocol-buffers-schema" % "3.3-dt-20190311Z-8c6fad",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

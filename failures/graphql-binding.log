@@ -37,7 +37,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(graphql-binding, dist, utils, addFragmentToInfo)) [id => graphql-binding, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/graphql-binding/dist/utils/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/graphql-binding),TsIdentLibrarySimple(graphql-binding)),TsIdentModule(None,List(graphql-binding, dist, utils))) [id => graphql-binding, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(graphql-binding, dist, utils)) [id => graphql-binding, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(graphql-binding) [id => graphql-binding, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(graphql-binding) [id => graphql-binding, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(constructor) [id => graphql-binding, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(graphql-binding/dist/Binding) / TsDeclClass(Binding))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(buildMethods) [id => graphql-binding, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(graphql-binding/dist/Binding) / TsDeclClass(Binding))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(buildQueryMethods) [id => graphql-binding, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(graphql-binding/dist/Binding) / TsDeclClass(Binding))] 

@@ -33,6 +33,11 @@ trait IPaymentIntentCreationOptions extends IPaymentIntentUpdateOptions {
     * The URL to redirect your customer back to after they authenticate or cancel their payment on the payment method’s app or site. If you’d prefer to redirect to a mobile application, you can alternatively supply an application URI scheme. This param can only be used if `confirm=true`.
     */
   var return_url: js.UndefOr[String] = js.undefined
+  /**
+    * The parameters used to automatically create a Transfer when the payment succeeds.
+    */
+  @JSName("transfer_data")
+  var transfer_data_IPaymentIntentCreationOptions: js.UndefOr[IPaymentIntentTransferData] = js.undefined
 }
 
 object IPaymentIntentCreationOptions {
@@ -58,6 +63,7 @@ object IPaymentIntentCreationOptions {
     shipping: IShippingInformation = null,
     statement_descriptor: String = null,
     statement_descriptor_suffix: String = null,
+    transfer_data: IPaymentIntentTransferData = null,
     transfer_group: String = null
   ): IPaymentIntentCreationOptions = {
     val __obj = js.Dynamic.literal()
@@ -81,6 +87,7 @@ object IPaymentIntentCreationOptions {
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (statement_descriptor_suffix != null) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix)
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[IPaymentIntentCreationOptions]
   }

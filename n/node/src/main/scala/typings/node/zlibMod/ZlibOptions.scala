@@ -1,8 +1,7 @@
 package typings.node.zlibMod
 
-import typings.node.NodeJS.TypedArray
+import typings.node.NodeJS.ArrayBufferView
 import typings.std.ArrayBuffer
-import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ trait ZlibOptions extends js.Object {
     */
   var chunkSize: js.UndefOr[Double] = js.undefined
    // compression only
-  var dictionary: js.UndefOr[TypedArray | DataView | ArrayBuffer] = js.undefined
+  var dictionary: js.UndefOr[ArrayBufferView | ArrayBuffer] = js.undefined
   /**
     * @default constants.Z_FINISH
     */
@@ -34,7 +33,7 @@ object ZlibOptions {
   @scala.inline
   def apply(
     chunkSize: Int | Double = null,
-    dictionary: TypedArray | DataView | ArrayBuffer = null,
+    dictionary: ArrayBufferView | ArrayBuffer = null,
     finishFlush: Int | Double = null,
     flush: Int | Double = null,
     level: Int | Double = null,

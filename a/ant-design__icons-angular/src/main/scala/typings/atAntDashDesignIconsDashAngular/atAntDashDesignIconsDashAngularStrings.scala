@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object atAntDashDesignIconsDashAngularStrings {
   @js.native
-  sealed trait `[@ant-design/icons-angular]: ` extends js.Object
+  sealed trait `[@ant-design/icons-angular]:` extends js.Object
   
   @js.native
   sealed trait fill extends ThemeType
@@ -19,7 +19,7 @@ object atAntDashDesignIconsDashAngularStrings {
   sealed trait twotone extends ThemeType
   
   @scala.inline
-  def `[@ant-design/icons-angular]: `: `[@ant-design/icons-angular]: ` = "[@ant-design/icons-angular]: ".asInstanceOf[`[@ant-design/icons-angular]: `]
+  def `[@ant-design/icons-angular]:`: `[@ant-design/icons-angular]:` = "[@ant-design/icons-angular]:".asInstanceOf[`[@ant-design/icons-angular]:`]
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   @scala.inline

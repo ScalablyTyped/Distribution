@@ -4,7 +4,7 @@ import typings.antd.antdStrings.Empty
 import typings.antd.antdStrings.error
 import typings.antd.antdStrings.success
 import typings.antd.antdStrings.validating
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode

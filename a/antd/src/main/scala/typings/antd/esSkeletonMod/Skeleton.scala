@@ -1,6 +1,6 @@
 package typings.antd.esSkeletonMod
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`

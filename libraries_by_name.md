@@ -242,7 +242,6 @@
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antd-native-slinky-facade](./a/antd-native-slinky-facade) | - | - |
-| [antd-slinky-facade](./a/antd-slinky-facade) | - | - |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an | mysql, postgres, pg, sqlite, sqlite3 |
@@ -856,6 +855,7 @@
 | [carbon__icons-react](./c/carbon__icons-react) | React components for icons in digital and software | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
 | [carbon__layout](./c/carbon__layout) | Layout helpers for digital and software products u | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
 | [carbon__motion](./c/carbon__motion) | Motion helpers for digital and software products u | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
+| [carbon__pictograms-react](./c/carbon__pictograms-react) | - | - |
 | [carbon__themes](./c/carbon__themes) | Themes for applying color in the Carbon Design Sys | ibm, elements, carbon, carbon-elements, carbon-design-system |
 | [carbon__type](./c/carbon__type) | Typography for digital and software products using | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
 | [card-validator](./c/card-validator) | A library for validating credit card fields | - |
@@ -2740,6 +2740,7 @@
 | [hey-listen](./h/hey-listen) | Warning and invariant dev-ex messaging. | warning, invariant |
 | [hi-base32](./h/hi-base32) | A simple Base32 encode / decode function for JavaS | base32, encode, decode |
 | [hibp](./h/hibp) | A Promise-based API for querying the 'Have I been  | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords |
+| [hig__button](./h/hig__button) | HIG Button | - |
 | [highcharts](./h/highcharts) | JavaScript charting framework | charts, dataviz, graphs, visualization, data, browserify, webpack |
 | [highcharts-ng](./h/highcharts-ng) | highcharts-ng | angular |
 | [highcharts-react-official](./h/highcharts-react-official) | Official minimal  | highcharts, highstock, highmaps, react |
@@ -2858,8 +2859,10 @@
 | [ignite-ui](./i/ignite-ui) | Ignite UI by Infragistics | igniteui, ignite ui, infragistics, jquery controls, jquery widgets |
 | [ignore](./i/ignore) | Ignore is a manager and filter for .gitignore rule | ignore, .gitignore, gitignore, npmignore, rules, manager, filter, regexp, regex, fnmatch, glob, asterisks, regular-expression |
 | [ignore-styles](./i/ignore-styles) | Ignore imported style files when running in Node | webpack, css, testing |
+| [ignore-walk](./i/ignore-walk) | Nested/recursive .gitignore/.npmignore parsing and | ignorefile, ignore, file, .gitignore, .npmignore, glob |
 | [iltorb](./i/iltorb) | Brotli compression/decompression with native bindi | brotli, compression, decompression |
 | [image-size](./i/image-size) | get dimensions of any image file | image, size, dimensions, resolution, width, height, png, jpeg, bmp, gif, psd, tiff, webp, svg, icns, ico, cur |
+| [image-thumbnail](./i/image-thumbnail) | Generate an image thumbnail. | image, javascript, thumbnail, resize, sharp, percentage |
 | [image-type](./i/image-type) | Detect the image type of a Buffer/Uint8Array | image, img, pic, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array, png, jpg, jpeg, gif, webp, tif, bmp, jxr, psd, mime |
 | [imagemagick](./i/imagemagick) | A wrapper around the imagemagick cli | - |
 | [imagemagick-native](./i/imagemagick-native) | ImageMagick's Magick++ bindings for NodeJS | imagemagick, magick++, resize, convert |
@@ -3138,6 +3141,7 @@
 | [jest-image-snapshot](./j/jest-image-snapshot) | Jest matcher for image comparisons. Most commonly  | test, amex, visual testing, css, jest, browser testing |
 | [jest-in-case](./j/jest-in-case) | Jest utility for creating variations of the same t | jest, test, testing |
 | [jest-json-schema](./j/jest-json-schema) | JSON schema matcher for jest | jest, json, schema, matcher, test |
+| [jest-matcher-one-of](./j/jest-matcher-one-of) | A Jest matcher to test if a value is one of many ( | jest, matcher, test, tests, testing, tdd |
 | [jest-matcher-utils](./j/jest-matcher-utils) | A set of utility functions for expect and related  | - |
 | [jest-matchers](./j/jest-matchers) | - | - |
 | [jest-plugin-context](./j/jest-plugin-context) | Adds context as an alternative to describe to jest | context, jest, jest-plugin, plugin, test |
@@ -4529,6 +4533,7 @@
 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library. | spy, test, testing |
 | [mz](./m/mz) | modernize node.js to current ECMAScript standards | promisify, promise, thenify, then, es6 |
 | [n3](./n/n3) | Lightning fast, asynchronous, streaming Turtle / N | turtle, rdf, n3, streaming, asynchronous |
+| [naja](./n/naja) | Modern AJAX library for Nette Framework | nette, ajax, history |
 | [named-regexp-groups](./n/named-regexp-groups) | Regular expressions with named capture groups and  | backreference, capture, expression, group, named, regex, regexp, regular |
 | [named-routes](./n/named-routes) | Named routes for node.js. Works with express and i | named, routes, i18n, router, reversable, express, web |
 | [nano](./n/nano) | The official CouchDB client for Node.js | couchdb, data, request, json, nosql, micro, nano, database |
@@ -4739,6 +4744,7 @@
 | [nodemailer-smtp-pool](./n/nodemailer-smtp-pool) | SMTP transport for Nodemailer | SMTP, Nodemailer |
 | [nodemailer-smtp-transport](./n/nodemailer-smtp-transport) | SMTP transport for Nodemailer | SMTP, Nodemailer |
 | [nodemailer-stub-transport](./n/nodemailer-stub-transport) | Stub transport for Nodemailer | Stub, Nodemailer |
+| [nodemon](./n/nodemon) | Simple monitor script for use during development o | monitor, development, restart, autoload, reload, terminal |
 | [nodeunit](./n/nodeunit) | Easy unit testing for node.js and the browser. | - |
 | [noisejs](./n/noisejs) | Perlin noise implementation | perlin, noise, simplex |
 | [nomnom](./n/nomnom) | Option parser with generated usage and commands | arguments, option parser, command line, options, parser |
@@ -4924,6 +4930,7 @@
 | [p-each-series](./p/p-each-series) | Iterate over promises serially | promise, foreach, for-each, for, each, collection, iterable, iterator, fulfilled, async, await, promises, serial, serially, series, bluebird |
 | [p-event](./p/p-event) | Promisify an event by waiting for it to be emitted | promise, events, event, emitter, eventemitter, event-emitter, emit, emits, listener, promisify, addlistener, addeventlistener, wait, waits, on, browser, dom, async, await, promises, bluebird |
 | [p-every](./p/p-every) | Test whether all promises passes a testing functio | async, await, bluebird, collection, concurrency, concurrently, every, filter, fulfilled, iterable, iterator, parallel, promise, promises |
+| [p-fifo](./p/p-fifo) | Promised First-In-First-Out buffer. Await on push  | fifo, buffer, queue, promise, push, shift, array |
 | [p-filter](./p/p-filter) | Filter promises concurrently | promise, filter, collection, iterable, iterator, fulfilled, async, await, promises, concurrently, concurrency, parallel, bluebird |
 | [p-forever](./p/p-forever) | Run promise-returning & async functions repeatedly | promise, forever, infinitely, infinite, while, whilst, repeat, repeatedly, recursive, recursion, times, number, count, loop, iterate, serial, serially, async, await, promises, bluebird |
 | [p-is-promise](./p/p-is-promise) | Check if something is a promise | promise, is, detect, check, kind, type, thenable, es2015, async, await, promises, bluebird |
@@ -5497,6 +5504,7 @@
 | [rc-editor-core](./r/rc-editor-core) | editor-core ui component for react | react, react-component, react-editor-core, editor-core |
 | [rc-gesture](./r/rc-gesture) | Support gesture for react component | react, react-component, react-gesture, gesture, touch |
 | [rc-mentions](./r/rc-mentions) | React Mentions | react, react-component, react-mentions, mentions |
+| [rc-menu](./r/rc-menu) | menu ui component for react | react, react-component, menu, ui, react-menu |
 | [rc-pagination](./r/rc-pagination) | pagination ui component for react | react, react-component, react-pagination, pagination |
 | [rc-progress](./r/rc-progress) | progress ui component for react | react, react-component, react-progress, progress |
 | [rc-resize-observer](./r/rc-resize-observer) | - | - |
@@ -6908,6 +6916,7 @@
 | [styled-react-modal](./s/styled-react-modal) | A React modal built with styled-components. | react-modal, styled-components, modal, react |
 | [styled-system](./s/styled-system) | Responsive, theme-based style props for building d | react, css-in-js, styled-components, emotion |
 | [styled-system__css](./s/styled-system__css) | Styled System for the css prop | css, css-in-js, emotion, styled-components, style, react |
+| [styled-system__should-for](./s/styled-system__should-forward-prop) | Utility for filtering Styled System props with Emo | - |
 | [styled-theming](./s/styled-theming) | Create themes for your app using styled-components | - |
 | [stylefire](./s/stylefire) | Performant, simplified stylers for CSS, SVG, path  | css, svg, svg, path, scroll, animation |
 | [stylelint](./s/stylelint) | A mighty, modern CSS linter. | css, less, sass, scss, sugarss, lint, linter, stylelint |
@@ -7618,6 +7627,7 @@
 | [wif](./w/wif) | Bitcoin Wallet Import Format (WIF) decoding/encodi | bitcoin, base58, base58check, decode, decoding, encoding, encode, key, private, wif |
 | [wiiu](./w/wiiu) | - | - |
 | [wikidata-sdk](./w/wikidata-sdk) | A javascript tool-suite to query Wikidata and simp | wikidata, wikibase, sdk, api, wdq, sparql, wdk |
+| [wildstring](./w/wildstring) | Simple String Wildcard Handling | wildcard, string, interpolation |
 | [window-or-global](./w/window-or-global) | Use either the window object in the browser or the | window, global, isomorphic, universal |
 | [window-size](./w/window-size) | Reliable way to get the height and width of termin | columns, console, darwin, height, lines, redirected, resize, rows, size, term, term-size, terminal, tty, unix, width, win, window, windows |
 | [windows-1251](./w/windows-1251) | A robust windows-1251 encoder/decoder written in J | codec, decoder, decoding, encoder, encoding, legacy, legacy-encoding, cp1251, windows-1251, x-cp1251 |

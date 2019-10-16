@@ -1,17 +1,18 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.23.6-18e6eb"
+version := "3.24.0-cf142f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ant-design__create-react-context" % "0.2.4-0aaca3",
+  "org.scalablytyped" %%% "ant-design__create-react-context" % "0.2.4-499f05",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "moment" % "2.24.0-3909a2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "rc-mentions" % "0.4.0-db01c2",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191014Z-d5b0ca",
-  "org.scalablytyped" %%% "react-slick" % "0.23-dt-20190503Z-698c8d",
+  "org.scalablytyped" %%% "rc-mentions" % "0.4.1-53af38",
+  "org.scalablytyped" %%% "rc-menu" % "7.5.1-abf3a3",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191015Z-baf60f",
+  "org.scalablytyped" %%% "react-slick" % "0.23-dt-20190503Z-8fe868",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

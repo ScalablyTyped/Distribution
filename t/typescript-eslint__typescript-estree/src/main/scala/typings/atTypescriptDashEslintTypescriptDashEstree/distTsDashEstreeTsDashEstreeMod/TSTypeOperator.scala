@@ -13,7 +13,7 @@ trait TSTypeOperator
      with TypeNode {
   var operator: keyof | unique | readonly
   var `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeOperator
-  var typeAnnotation: js.UndefOr[TSTypeAnnotation] = js.undefined
+  var typeAnnotation: js.UndefOr[TypeNode] = js.undefined
 }
 
 object TSTypeOperator {
@@ -24,7 +24,7 @@ object TSTypeOperator {
     range: Range,
     `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeOperator,
     parent: Node = null,
-    typeAnnotation: TSTypeAnnotation = null
+    typeAnnotation: TypeNode = null
   ): TSTypeOperator = {
     val __obj = js.Dynamic.literal(loc = loc, operator = operator.asInstanceOf[js.Any], range = range)
     __obj.updateDynamic("type")(`type`)

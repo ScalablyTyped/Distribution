@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait ModalBaseProps extends js.Object {
   /**
-    * @deprecated Use animationType indead
+    * @deprecated Use animationType instead
     */
   var animated: js.UndefOr[Boolean] = js.undefined
   /**

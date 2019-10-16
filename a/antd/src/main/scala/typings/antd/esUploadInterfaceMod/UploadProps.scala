@@ -27,6 +27,7 @@ trait UploadProps extends js.Object {
   var multiple: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile], Unit]] = js.undefined
+  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile, Unit]] = js.undefined
   var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile, Unit]] = js.undefined
   var onRemove: js.UndefOr[
     js.Function1[/* file */ UploadFile, Unit | Boolean | (js.Promise[Unit | Boolean])]
@@ -62,6 +63,7 @@ object UploadProps {
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onChange: /* info */ UploadChangeParam[UploadFile] => Unit = null,
+    onDownload: /* file */ UploadFile => Unit = null,
     onPreview: /* file */ UploadFile => Unit = null,
     onRemove: /* file */ UploadFile => Unit | Boolean | (js.Promise[Unit | Boolean]) = null,
     openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined,
@@ -92,6 +94,7 @@ object UploadProps {
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction1(onDownload))
     if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1(onPreview))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick)

@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => d3-cloud, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/d3-cloud/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/d3-cloud),TsIdentLibrarySimple(d3-cloud)),TsIdentModule(None,List(d3-cloud))) [id => d3-cloud, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(d3-cloud)) [id => d3-cloud, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(d3-cloud) [id => d3-cloud, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(d3-cloud) [id => d3-cloud, phase => typescript] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => d3-cloud, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(d3-cloud))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => d3-cloud, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(d3-cloud))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(cloud) [id => d3-cloud, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(d3-cloud) / TsAugmentedModule(d3) / TsDeclNamespace(layout))] 

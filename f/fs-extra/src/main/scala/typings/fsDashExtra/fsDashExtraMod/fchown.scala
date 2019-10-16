@@ -1,6 +1,7 @@
 package typings.fsDashExtra.fsDashExtraMod
 
 import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,12 @@ object fchown extends js.Object {
     * Asynchronous fchown(2) - Change ownership of a file.
     * @param fd A file descriptor.
     */
-  def apply(fd: Double, uid: Double, gid: Double, callback: js.Function1[ErrnoException | Null, Unit]): Unit = js.native
+  def apply(
+    fd: Double,
+    uid: Double,
+    gid: Double,
+    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
+  ): Unit = js.native
   /**
     * Asynchronous fchown(2) - Change ownership of a file.
     * @param fd A file descriptor.

@@ -2,6 +2,7 @@ package typings.fsDashExtra.fsDashExtraMod
 
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -58,12 +59,16 @@ object writeFile extends js.Object {
     options: WriteFileOptions,
     callback: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = js.native
-  def apply(path: Double, data: js.Any, callback: js.Function1[ErrnoException | Null, Unit]): Unit = js.native
+  def apply(
+    path: Double,
+    data: js.Any,
+    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
+  ): Unit = js.native
   def apply(
     path: Double,
     data: js.Any,
     options: typings.node.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
+    callback: NoParamCallback
   ): Unit = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.
@@ -72,7 +77,7 @@ object writeFile extends js.Object {
     * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
     * @param data The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.
     */
-  def apply(path: PathLike, data: js.Any, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  def apply(path: PathLike, data: js.Any, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -89,7 +94,7 @@ object writeFile extends js.Object {
     path: PathLike,
     data: js.Any,
     options: typings.node.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
+    callback: NoParamCallback
   ): Unit = js.native
   def __promisify__(path: Double, data: js.Any): js.Promise[Unit] = js.native
   def __promisify__(path: Double, data: js.Any, options: typings.node.fsMod.WriteFileOptions): js.Promise[Unit] = js.native

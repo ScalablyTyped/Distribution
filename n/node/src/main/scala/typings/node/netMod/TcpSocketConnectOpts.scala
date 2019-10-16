@@ -6,7 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TcpSocketConnectOpts extends SocketConnectOpts {
+trait TcpSocketConnectOpts
+  extends ConnectOpts
+     with SocketConnectOpts {
   var family: js.UndefOr[Double] = js.undefined
   var hints: js.UndefOr[Double] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
@@ -30,7 +32,8 @@ object TcpSocketConnectOpts {
       /* address */ java.lang.String, 
       /* family */ Double, 
       Unit
-    ]) => Unit = null
+    ]) => Unit = null,
+    onread: OnReadOpts = null
   ): TcpSocketConnectOpts = {
     val __obj = js.Dynamic.literal(port = port)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
@@ -39,6 +42,7 @@ object TcpSocketConnectOpts {
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
+    if (onread != null) __obj.updateDynamic("onread")(onread)
     __obj.asInstanceOf[TcpSocketConnectOpts]
   }
 }

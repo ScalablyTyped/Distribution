@@ -5,7 +5,6 @@ import typings.node.streamMod.Duplex
 import typings.sharp.Anon_Brightness
 import typings.sharp.Anon_Data
 import typings.sharp.Anon_False
-import typings.sharp.Anon_Input
 import typings.sharp.Anon_Raw
 import typings.sharp.Anon_ResolveWithObject
 import typings.std.ArrayLike
@@ -57,7 +56,7 @@ trait Sharp extends Duplex {
     * @throws {Error} Invalid parameters
     * @returns A sharp instance that can be used to chain operations
     */
-  def composite(images: js.Array[Anon_Input with OverlayOptions]): Sharp = js.native
+  def composite(images: js.Array[OverlayOptions]): Sharp = js.native
   /**
     * Convolve the image with the specified kernel.
     * @param kernel the specified kernel

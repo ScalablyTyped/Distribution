@@ -532,7 +532,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(refractor, lang, xquery)) [id => refractor, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/refractor/lang/yaml.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/refractor),TsIdentLibrarySimple(refractor)),TsIdentModule(None,List(refractor, lang, yaml))) [id => refractor, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(refractor, lang, yaml)) [id => refractor, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(refractor) [id => refractor, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(refractor) [id => refractor, phase => typescript] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Prism)))) [id => refractor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(refractor/core) / TsExport() / TsExporteeTree() / TsDeclInterface(RefractorSyntax) / TsMemberCall() / TsFunSig() / TsFunParam() / TsTypeQuery())] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(register) [id => refractor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(refractor/core))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(highlight) [id => refractor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(refractor/core))] 

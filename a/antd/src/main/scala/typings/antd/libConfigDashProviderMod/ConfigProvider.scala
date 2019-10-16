@@ -1,5 +1,6 @@
 package typings.antd.libConfigDashProviderMod
 
+import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.libLocaleDashProviderMod.Locale
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element

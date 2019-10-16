@@ -51,8 +51,7 @@ trait Route extends js.Object {
     */
   var loadChildren: js.UndefOr[LoadChildren] = js.undefined
   /**
-    * A URL-matching function to use as a custom strategy for path matching.
-    * If present, supersedes `path` and `pathMatch`.
+    * A custom URL-matching function. Cannot be used together with `path`.
     */
   var matcher: js.UndefOr[UrlMatcher] = js.undefined
   /**
@@ -61,9 +60,11 @@ trait Route extends js.Object {
     */
   var outlet: js.UndefOr[String] = js.undefined
   /**
-    * The path to match against, a URL string that uses router matching notation.
+    * The path to match against. Cannot be used together with a custom `matcher` function.
+    * A URL string that uses router matching notation.
     * Can be a wild card (`**`) that matches any URL (see Usage Notes below).
     * Default is "/" (the root path).
+    *
     */
   var path: js.UndefOr[String] = js.undefined
   /**

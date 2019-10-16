@@ -109,6 +109,12 @@ object constants extends js.Object {
   val S_IXOTH: Double = js.native
   /** Constant for fs.Stats mode property for determining access permissions for a file. File mode indicating executable by owner. */
   val S_IXUSR: Double = js.native
+  /**
+    * When set, a memory file mapping is used to access the file. This flag
+    * is available on Windows operating systems only. On other operating systems,
+    * this flag is ignored.
+    */
+  val UV_FS_O_FILEMAP: Double = js.native
   /** Constant for fs.access(). File can be written by the calling process. */
   val W_OK: Double = js.native
   /** Constant for fs.access(). File can be executed by the calling process. */

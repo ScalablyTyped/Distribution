@@ -257,6 +257,8 @@ class Bucket protected ()
   def deleteLabels(labels: js.Array[String], callback: DeleteLabelsCallback): Unit = js.native
   def disableRequesterPays(): js.Promise[DisableRequesterPaysResponse] = js.native
   def disableRequesterPays(callback: DisableRequesterPaysCallback): Unit = js.native
+  def enableLogging(config: EnableLoggingOptions): js.Promise[SetBucketMetadataResponse] = js.native
+  def enableLogging(config: EnableLoggingOptions, callback: SetBucketMetadataCallback): Unit = js.native
   def enableRequesterPays(): js.Promise[EnableRequesterPaysResponse] = js.native
   def enableRequesterPays(callback: EnableRequesterPaysCallback): Unit = js.native
   /**

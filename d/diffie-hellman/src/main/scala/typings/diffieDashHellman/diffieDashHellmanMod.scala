@@ -1,6 +1,6 @@
 package typings.diffieDashHellman
 
-import typings.node.cryptoMod.Binary
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.cryptoMod.HexBase64Latin1Encoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ object diffieDashHellmanMod extends js.Object {
   
   def createDiffieHellman(prime_length: Double): typings.node.cryptoMod.DiffieHellman = js.native
   def createDiffieHellman(prime_length: Double, generator: Double): typings.node.cryptoMod.DiffieHellman = js.native
-  def createDiffieHellman(prime_length: Double, generator: Binary): typings.node.cryptoMod.DiffieHellman = js.native
+  def createDiffieHellman(prime_length: Double, generator: ArrayBufferView): typings.node.cryptoMod.DiffieHellman = js.native
   def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding): typings.node.cryptoMod.DiffieHellman = js.native
   def createDiffieHellman(
     prime: String,
@@ -24,8 +24,8 @@ object diffieDashHellmanMod extends js.Object {
     generator_encoding: HexBase64Latin1Encoding
   ): typings.node.cryptoMod.DiffieHellman = js.native
   def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: Double): typings.node.cryptoMod.DiffieHellman = js.native
-  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: Binary): typings.node.cryptoMod.DiffieHellman = js.native
-  def createDiffieHellman(prime: Binary): typings.node.cryptoMod.DiffieHellman = js.native
+  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: ArrayBufferView): typings.node.cryptoMod.DiffieHellman = js.native
+  def createDiffieHellman(prime: ArrayBufferView): typings.node.cryptoMod.DiffieHellman = js.native
   def getDiffieHellman(group_name: String): typings.node.cryptoMod.DiffieHellman = js.native
 }
 

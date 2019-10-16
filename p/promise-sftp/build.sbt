@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "promise-sftp"
-version := "1.3-dt-20190819Z-33fc12"
+version := "1.3-dt-20190819Z-1530e8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191014Z-347560",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
   "org.scalablytyped" %%% "promise-ftp-common" % "1.1-dt-20180709Z-bc5c06",
-  "org.scalablytyped" %%% "ssh2" % "v0.5.x-dt-20190903Z-541607",
-  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20190322Z-fbd0d5",
+  "org.scalablytyped" %%% "ssh2" % "v0.5.x-dt-20190903Z-ec652e",
+  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20190322Z-feacf9",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

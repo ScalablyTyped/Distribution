@@ -326,7 +326,7 @@ class Question protected ()
   override def getProcessedText(text: String): String = js.native
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): Unit = js.native
   def getQuestionFromArray(name: String, index: Double): IQuestion = js.native
-  /* protected */ def getQuestionTitleTemplate(): String = js.native
+  def getQuestionTitleTemplate(): String = js.native
   /* protected */ def getQuizQuestionCount(): Double = js.native
   /* protected */ def getRootCss(classes: js.Any): js.Any = js.native
   /**

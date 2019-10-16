@@ -1,7 +1,7 @@
 package typings.antd.esMentionsMod
 
 import typings.antd.Anon_Focused
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.esConfigDashProviderRenderEmptyMod.RenderEmptyHandler
 import typings.react.reactMod.Component
 import typings.react.reactMod.FocusEventHandler

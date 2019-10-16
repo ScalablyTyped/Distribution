@@ -1,6 +1,5 @@
 package typings.node.fsMod
 
-import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ object close extends js.Object {
     * Asynchronous close(2) - close a file descriptor.
     * @param fd A file descriptor.
     */
-  def apply(fd: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  def apply(fd: Double, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronous close(2) - close a file descriptor.
     * @param fd A file descriptor.

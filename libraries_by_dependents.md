@@ -219,6 +219,7 @@
 | 1295 | [eventemitter3](./e/eventemitter3) | EventEmitter3 focuses on performance while maintai
 | 1295 | [sinon](./s/sinon) | JavaScript test spies, stubs and mocks.
 | 1285 | [deep-equal](./d/deep-equal) | node's assert.deepEqual algorithm
+| 1283 | [nodemon](./n/nodemon) | Simple monitor script for use during development o
 | 1276 | [boom](./b/boom) | HTTP-friendly error objects
 | 1276 | [dateformat](./d/dateformat) | A node.js package for Steven Levithan's excellent 
 | 1274 | [browser-sync](./b/browser-sync) | Live CSS Reload & Browser Syncing
@@ -1065,6 +1066,7 @@
 | 198 | [webdriverio](./w/webdriverio) | Next-gen WebDriver test automation framework for N
 | 197 | [assets-webpack-plugin](./a/assets-webpack-plugin) | Emits a json file with assets paths
 | 197 | [lodash_dot_values](./l/lodash_dot_values) | The lodash method _.values exported as a module.
+| 197 | [rc-menu](./r/rc-menu) | menu ui component for react
 | 196 | [bitcore-lib](./b/bitcore-lib) | A pure and powerful JavaScript Bitcoin library.
 | 196 | [react-navigation](./r/react-navigation) | Routing and navigation for your React Native apps
 | 196 | [uws](./u/uws) | -
@@ -3111,6 +3113,7 @@
 | 29 | [gdal](./g/gdal) | Bindings to GDAL (Geospatial Data Abstraction Libr
 | 29 | [gulp-html-replace](./g/gulp-html-replace) | Replace build blocks in HTML. Like useref but done
 | 29 | [iban](./i/iban) | A javascript library to validate, format and conve
+| 29 | [ignore-walk](./i/ignore-walk) | Nested/recursive .gitignore/.npmignore parsing and
 | 29 | [intl-locales-supported](./i/intl-locales-supported) | Utility to help you polyfill the Node.js runtime w
 | 29 | [is-date-object](./i/is-date-object) | Is this value a JS Date object? This module works 
 | 29 | [lodash_dot_deburr](./l/lodash_dot_deburr) | The lodash method _.deburr exported as a module.
@@ -3860,6 +3863,7 @@
 | 16 | [type-fest](./t/type-fest) | A collection of essential TypeScript types
 | 16 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities.
 | 16 | [wavesurfer_dot_js](./w/wavesurfer_dot_js) | Interactive navigable audio visualization using We
+| 16 | [wildstring](./w/wildstring) | Simple String Wildcard Handling
 | 15 | [algoliasearch-helper](./a/algoliasearch-helper) | Helper for implementing advanced search features w
 | 15 | [angular-ui-sortable](./a/angular-ui-sortable) | This directive allows you to jQueryUI Sortable.
 | 15 | [body-parser-xml](./b/body-parser-xml) | XML parser middleware for express.js.
@@ -4959,6 +4963,7 @@
 | 6 | [storybook__channel-websoc](./s/storybook__channel-websocket) | Storybook Websocket Channel is a channel for Story
 | 6 | [stringify-attributes](./s/stringify-attributes) | Turn an object into a string of HTML attributes
 | 6 | [style-value-types](./s/style-value-types) | Parsers, transformers and tests for special value 
+| 6 | [styled-system__should-for](./s/styled-system__should-forward-prop) | Utility for filtering Styled System props with Emo
 | 6 | [styletron-standard](./s/styletron-standard) | Standard interfaces for Styletron
 | 6 | [survey-knockout](./s/survey-knockout) | survey.js is a JavaScript Survey Library. It is a 
 | 6 | [svg-path-bounding-box](./s/svg-path-bounding-box) | SVG path bounding box calculator
@@ -6223,10 +6228,12 @@
 | 1 | [hapi__sntp](./h/hapi__sntp) | SNTP Client
 | 1 | [hashset](./h/hashset) | A simple hash set in JavaScript
 | 1 | [hexo-bunyan](./h/hexo-bunyan) | a JSON logging library for node.js services(remove
+| 1 | [hig__button](./h/hig__button) | HIG Button
 | 1 | [highcharts-ng](./h/highcharts-ng) | highcharts-ng
 | 1 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 1 | [hookrouter](./h/hookrouter) | A hook based router for React
 | 1 | [hummus-recipe](./h/hummus-recipe) | A powerful PDF tool for NodeJS based on HummusJS
+| 1 | [image-thumbnail](./i/image-thumbnail) | Generate an image thumbnail.
 | 1 | [infobox-parser](./i/infobox-parser) | Parse Wikipedia Infobox Source
 | 1 | [ink-testing-library](./i/ink-testing-library) | Utilities for testing Ink apps
 | 1 | [integrate-adaptive-simpso](./i/integrate-adaptive-simpson) | Integrate a system of ODEs using the Second Order 
@@ -6404,6 +6411,7 @@
 | 1 | [openstack-wrapper](./o/openstack-wrapper) | A simple js wrapper for the Openstack APIs
 | 1 | [optics-agent](./o/optics-agent) | Apollo Optics Agent for GraphQL-js
 | 1 | [orderedmap](./o/orderedmap) | Persistent ordered mapping from strings
+| 1 | [p-fifo](./p/p-fifo) | Promised First-In-First-Out buffer. Await on push 
 | 1 | [parse-human-date-range](./p/parse-human-date-range) | Parse human-readable date to range of dates.
 | 1 | [passport-beam](./p/passport-beam) | Beam (OAuth) authentication strategies for Passpor
 | 1 | [passport-bnet](./p/passport-bnet) | Bnet authentication strategy for Passport.
@@ -6854,6 +6862,7 @@
 | 0 | [jasmine-data_driven_tests](./j/jasmine-data_driven_tests) | This plugin for Jasmine 2.x allows you to easily c
 | 0 | [jasmine-es6-promise-match](./j/jasmine-es6-promise-matchers) | Jasmine matchers for testing ES6 Promises
 | 0 | [jest-axe](./j/jest-axe) | Custom Jest matcher for aXe for testing accessibil
+| 0 | [jest-matcher-one-of](./j/jest-matcher-one-of) | A Jest matcher to test if a value is one of many (
 | 0 | [jfp](./j/jfp) | A language as a library borrowing concepts from Li
 | 0 | [jodata](./j/jodata) | Builds and manages a javascript object that repres
 | 0 | [joi-password-complexity](./j/joi-password-complexity) | Joi validation for password complexity requirement
@@ -6975,6 +6984,7 @@
 | 0 | [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework
 | 0 | [muibox](./m/muibox) | Promise-based dialog boxes (alert, confirm, prompt
 | 0 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library.
+| 0 | [naja](./n/naja) | Modern AJAX library for Nette Framework
 | 0 | [nanp](./n/nanp) | Test if a string is a North American Number Plan (
 | 0 | [neffos_dot_js](./n/neffos_dot_js) | javascript client for the modern neffos websocket 
 | 0 | [net-ticks](./n/net-ticks) | .NET DateTime ticks to JS Date conversion utility

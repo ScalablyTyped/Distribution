@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "forge-di"
-version := "v0.9.5-dt-20190322Z-e44f8e"
+version := "v0.9.5-dt-20191015Z-b0e280"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

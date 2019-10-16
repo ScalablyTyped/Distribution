@@ -10,6 +10,7 @@ package object libTableInterfaceMod {
   import typings.std.Event
   import typings.std.HTMLElement
 
+  type CheckboxPropsCache = StringDictionary[js.Any]
   type CompareFn[T] = js.Function3[/* a */ T, /* b */ T, /* sortOrder */ js.UndefOr[SortOrder], Double]
   type GetPopupContainer = js.Function1[/* triggerNode */ js.UndefOr[HTMLElement], HTMLElement]
   type PrepareParamsArgumentsReturn[T] = js.Tuple4[js.Any, js.Array[String], js.Object, Anon_CurrentDataSource[T]]

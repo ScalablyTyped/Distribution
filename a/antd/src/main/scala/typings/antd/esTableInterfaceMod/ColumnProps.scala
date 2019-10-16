@@ -18,6 +18,7 @@ trait ColumnProps[T] extends js.Object {
   var colSpan: js.UndefOr[Double] = js.undefined
   var dataIndex: js.UndefOr[String] = js.undefined
   var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
+  var ellipsis: js.UndefOr[Boolean] = js.undefined
   var filterDropdown: js.UndefOr[ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode])] = js.undefined
   var filterDropdownVisible: js.UndefOr[Boolean] = js.undefined
   var filterIcon: js.UndefOr[ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode])] = js.undefined
@@ -35,7 +36,7 @@ trait ColumnProps[T] extends js.Object {
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var sortOrder: js.UndefOr[SortOrder | Boolean] = js.undefined
   var sorter: js.UndefOr[Boolean | CompareFn[T]] = js.undefined
-  var title: js.UndefOr[ReactNode | (js.Function1[/* options */ Anon_Filters, ReactNode])] = js.undefined
+  var title: js.UndefOr[ReactNode | (js.Function1[/* options */ Anon_Filters[T], ReactNode])] = js.undefined
   var width: js.UndefOr[String | Double] = js.undefined
 }
 
@@ -48,6 +49,7 @@ object ColumnProps {
     colSpan: Int | Double = null,
     dataIndex: String = null,
     defaultSortOrder: SortOrder = null,
+    ellipsis: js.UndefOr[Boolean] = js.undefined,
     filterDropdown: ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode]) = null,
     filterDropdownVisible: js.UndefOr[Boolean] = js.undefined,
     filterIcon: ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode]) = null,
@@ -65,7 +67,7 @@ object ColumnProps {
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder | Boolean = null,
     sorter: Boolean | CompareFn[T] = null,
-    title: ReactNode | (js.Function1[/* options */ Anon_Filters, ReactNode]) = null,
+    title: ReactNode | (js.Function1[/* options */ Anon_Filters[T], ReactNode]) = null,
     width: String | Double = null
   ): ColumnProps[T] = {
     val __obj = js.Dynamic.literal()
@@ -75,6 +77,7 @@ object ColumnProps {
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex)
     if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder)
+    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis)
     if (filterDropdown != null) __obj.updateDynamic("filterDropdown")(filterDropdown.asInstanceOf[js.Any])
     if (!js.isUndefined(filterDropdownVisible)) __obj.updateDynamic("filterDropdownVisible")(filterDropdownVisible)
     if (filterIcon != null) __obj.updateDynamic("filterIcon")(filterIcon.asInstanceOf[js.Any])

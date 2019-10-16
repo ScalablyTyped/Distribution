@@ -9,9 +9,9 @@ trait ClassDeclarationBase extends BaseNode {
   var body: ClassBody
   var declare: js.UndefOr[Boolean] = js.undefined
   var decorators: js.UndefOr[js.Array[Decorator]] = js.undefined
-  var id: js.UndefOr[Identifier] = js.undefined
+  var id: Identifier | Null
   var implements: js.UndefOr[js.Array[ExpressionWithTypeArguments]] = js.undefined
-  var superClass: js.UndefOr[LeftHandSideExpression] = js.undefined
+  var superClass: LeftHandSideExpression | Null
   var superTypeParameters: js.UndefOr[TSTypeParameterInstantiation] = js.undefined
   var typeParameters: js.UndefOr[TSTypeParameterDeclaration] = js.undefined
 }

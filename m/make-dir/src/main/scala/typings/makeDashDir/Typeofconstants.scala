@@ -107,6 +107,12 @@ trait Typeofconstants extends js.Object {
   val S_IXOTH: Double
   /** Constant for fs.Stats mode property for determining access permissions for a file. File mode indicating executable by owner. */
   val S_IXUSR: Double
+  /**
+    * When set, a memory file mapping is used to access the file. This flag
+    * is available on Windows operating systems only. On other operating systems,
+    * this flag is ignored.
+    */
+  val UV_FS_O_FILEMAP: Double
   /** Constant for fs.access(). File can be written by the calling process. */
   val W_OK: Double
   /** Constant for fs.access(). File can be executed by the calling process. */
@@ -157,10 +163,11 @@ object Typeofconstants {
     S_IXGRP: Double,
     S_IXOTH: Double,
     S_IXUSR: Double,
+    UV_FS_O_FILEMAP: Double,
     W_OK: Double,
     X_OK: Double
   ): Typeofconstants = {
-    val __obj = js.Dynamic.literal(COPYFILE_EXCL = COPYFILE_EXCL, COPYFILE_FICLONE = COPYFILE_FICLONE, COPYFILE_FICLONE_FORCE = COPYFILE_FICLONE_FORCE, F_OK = F_OK, O_APPEND = O_APPEND, O_CREAT = O_CREAT, O_DIRECT = O_DIRECT, O_DIRECTORY = O_DIRECTORY, O_DSYNC = O_DSYNC, O_EXCL = O_EXCL, O_NOATIME = O_NOATIME, O_NOCTTY = O_NOCTTY, O_NOFOLLOW = O_NOFOLLOW, O_NONBLOCK = O_NONBLOCK, O_RDONLY = O_RDONLY, O_RDWR = O_RDWR, O_SYMLINK = O_SYMLINK, O_SYNC = O_SYNC, O_TRUNC = O_TRUNC, O_WRONLY = O_WRONLY, R_OK = R_OK, S_IFBLK = S_IFBLK, S_IFCHR = S_IFCHR, S_IFDIR = S_IFDIR, S_IFIFO = S_IFIFO, S_IFLNK = S_IFLNK, S_IFMT = S_IFMT, S_IFREG = S_IFREG, S_IFSOCK = S_IFSOCK, S_IRGRP = S_IRGRP, S_IROTH = S_IROTH, S_IRUSR = S_IRUSR, S_IRWXG = S_IRWXG, S_IRWXO = S_IRWXO, S_IRWXU = S_IRWXU, S_IWGRP = S_IWGRP, S_IWOTH = S_IWOTH, S_IWUSR = S_IWUSR, S_IXGRP = S_IXGRP, S_IXOTH = S_IXOTH, S_IXUSR = S_IXUSR, W_OK = W_OK, X_OK = X_OK)
+    val __obj = js.Dynamic.literal(COPYFILE_EXCL = COPYFILE_EXCL, COPYFILE_FICLONE = COPYFILE_FICLONE, COPYFILE_FICLONE_FORCE = COPYFILE_FICLONE_FORCE, F_OK = F_OK, O_APPEND = O_APPEND, O_CREAT = O_CREAT, O_DIRECT = O_DIRECT, O_DIRECTORY = O_DIRECTORY, O_DSYNC = O_DSYNC, O_EXCL = O_EXCL, O_NOATIME = O_NOATIME, O_NOCTTY = O_NOCTTY, O_NOFOLLOW = O_NOFOLLOW, O_NONBLOCK = O_NONBLOCK, O_RDONLY = O_RDONLY, O_RDWR = O_RDWR, O_SYMLINK = O_SYMLINK, O_SYNC = O_SYNC, O_TRUNC = O_TRUNC, O_WRONLY = O_WRONLY, R_OK = R_OK, S_IFBLK = S_IFBLK, S_IFCHR = S_IFCHR, S_IFDIR = S_IFDIR, S_IFIFO = S_IFIFO, S_IFLNK = S_IFLNK, S_IFMT = S_IFMT, S_IFREG = S_IFREG, S_IFSOCK = S_IFSOCK, S_IRGRP = S_IRGRP, S_IROTH = S_IROTH, S_IRUSR = S_IRUSR, S_IRWXG = S_IRWXG, S_IRWXO = S_IRWXO, S_IRWXU = S_IRWXU, S_IWGRP = S_IWGRP, S_IWOTH = S_IWOTH, S_IWUSR = S_IWUSR, S_IXGRP = S_IXGRP, S_IXOTH = S_IXOTH, S_IXUSR = S_IXUSR, UV_FS_O_FILEMAP = UV_FS_O_FILEMAP, W_OK = W_OK, X_OK = X_OK)
   
     __obj.asInstanceOf[Typeofconstants]
   }

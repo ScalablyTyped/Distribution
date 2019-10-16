@@ -1,7 +1,7 @@
 package typings.antd
 
 import typings.antd.esBreadcrumbBreadcrumbSeparatorMod.BreadcrumbSeparator
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js

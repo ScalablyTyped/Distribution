@@ -1,6 +1,6 @@
 package typings.antd.esInputInputMod
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.KeyboardEvent

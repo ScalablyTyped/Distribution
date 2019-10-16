@@ -156,7 +156,7 @@ trait SearchProps extends js.Object {
   var dir: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
-  var enterButton: js.UndefOr[Boolean | ReactNode] = js.undefined
+  var enterButton: js.UndefOr[ReactNode] = js.undefined
   var form: js.UndefOr[String] = js.undefined
   var formAction: js.UndefOr[String] = js.undefined
   var formEncType: js.UndefOr[String] = js.undefined
@@ -177,6 +177,7 @@ trait SearchProps extends js.Object {
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
   var list: js.UndefOr[String] = js.undefined
+  var loading: js.UndefOr[Boolean] = js.undefined
   var max: js.UndefOr[Double | String] = js.undefined
   var maxLength: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double | String] = js.undefined
@@ -462,7 +463,7 @@ object SearchProps {
     dir: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    enterButton: Boolean | ReactNode = null,
+    enterButton: ReactNode = null,
     form: String = null,
     formAction: String = null,
     formEncType: String = null,
@@ -483,6 +484,7 @@ object SearchProps {
     itemType: String = null,
     lang: String = null,
     list: String = null,
+    loading: js.UndefOr[Boolean] = js.undefined,
     max: Double | String = null,
     maxLength: Int | Double = null,
     min: Double | String = null,
@@ -699,6 +701,7 @@ object SearchProps {
     if (itemType != null) __obj.updateDynamic("itemType")(itemType)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     if (list != null) __obj.updateDynamic("list")(list)
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

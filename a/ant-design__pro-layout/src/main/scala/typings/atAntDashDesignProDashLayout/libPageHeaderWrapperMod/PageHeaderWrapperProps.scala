@@ -25,6 +25,7 @@ trait PageHeaderWrapperProps extends js.Object {
   var extra: js.UndefOr[ReactNode] = js.undefined
   var extraContent: js.UndefOr[ReactNode] = js.undefined
   var footer: js.UndefOr[ReactNode] = js.undefined
+  var ghost: js.UndefOr[Boolean] = js.undefined
   var onBack: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
   var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
   var pageHeaderRender: js.UndefOr[js.Function1[/* props */ PageHeaderWrapperProps, ReactNode]] = js.undefined
@@ -49,6 +50,7 @@ object PageHeaderWrapperProps {
     extra: ReactNode = null,
     extraContent: ReactNode = null,
     footer: ReactNode = null,
+    ghost: js.UndefOr[Boolean] = js.undefined,
     onBack: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onTabChange: /* activeKey */ String => Unit = null,
     pageHeaderRender: /* props */ PageHeaderWrapperProps => ReactNode = null,
@@ -70,6 +72,7 @@ object PageHeaderWrapperProps {
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (extraContent != null) __obj.updateDynamic("extraContent")(extraContent.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost)
     if (onBack != null) __obj.updateDynamic("onBack")(js.Any.fromFunction1(onBack))
     if (onTabChange != null) __obj.updateDynamic("onTabChange")(js.Any.fromFunction1(onTabChange))
     if (pageHeaderRender != null) __obj.updateDynamic("pageHeaderRender")(js.Any.fromFunction1(pageHeaderRender))

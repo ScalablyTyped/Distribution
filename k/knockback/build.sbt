@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockback"
-version := "0.0-unknown-dt-20190619Z-4471bc"
+version := "0.0-unknown-dt-20191015Z-c378a2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

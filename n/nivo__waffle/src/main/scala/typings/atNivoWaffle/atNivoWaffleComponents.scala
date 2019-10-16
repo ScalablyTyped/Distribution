@@ -1,9 +1,5 @@
 package typings.atNivoWaffle
 
-import typings.atNivoCore.atNivoCoreMod.Dimensions
-import typings.atNivoWaffle.atNivoWaffleMod.WaffleCanvasProps
-import typings.atNivoWaffle.atNivoWaffleMod.WaffleHtmlProps
-import typings.atNivoWaffle.atNivoWaffleMod.WaffleSvgProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,13 +13,10 @@ object atNivoWaffleComponents extends atNivoWaffleProps {
   @scala.inline
   def ResponsiveWaffleHtml: ComponentType[ResponsiveWaffleHtmlProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.ResponsiveWaffleHtml].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveWaffleHtmlProps]]
   @scala.inline
-  def Waffle: ComponentType[WaffleSvgProps with Dimensions] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.Waffle].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoWaffle.atNivoWaffleMod.WaffleSvgProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def Waffle: ComponentType[WaffleProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.Waffle].asInstanceOf[typings.react.reactMod.ComponentType[WaffleProps]]
   @scala.inline
-  def WaffleCanvas: ComponentType[WaffleCanvasProps with Dimensions] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.WaffleCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoWaffle.atNivoWaffleMod.WaffleCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def WaffleCanvas: ComponentType[WaffleCanvasProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.WaffleCanvas].asInstanceOf[typings.react.reactMod.ComponentType[WaffleCanvasProps]]
   @scala.inline
-  def WaffleHtml: ComponentType[WaffleHtmlProps with Dimensions] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.WaffleHtml].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoWaffle.atNivoWaffleMod.WaffleHtmlProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def WaffleHtml: ComponentType[WaffleHtmlProps] = js.constructorOf[typings.atNivoWaffle.atNivoWaffleMod.WaffleHtml].asInstanceOf[typings.react.reactMod.ComponentType[WaffleHtmlProps]]
 }
 

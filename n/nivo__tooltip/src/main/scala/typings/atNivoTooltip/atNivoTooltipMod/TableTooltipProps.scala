@@ -1,8 +1,7 @@
 package typings.atNivoTooltip.atNivoTooltipMod
 
-import typings.atNivoTooltip.atNivoTooltipStrings.tooltip
+import typings.atNivoTooltip.PickimportwarningQualifyReferencesresolveTypeRefma
 import typings.react.reactMod.ReactNode
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +9,7 @@ import scala.scalajs.js.annotation._
 trait TableTooltipProps extends js.Object {
   var renderContent: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   var rows: js.Array[js.Array[ReactNode]]
-  var theme: Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ _, 
-    tooltip
-  ]
+  var theme: PickimportwarningQualifyReferencesresolveTypeRefma
   var title: js.UndefOr[ReactNode] = js.undefined
 }
 
@@ -21,10 +17,7 @@ object TableTooltipProps {
   @scala.inline
   def apply(
     rows: js.Array[js.Array[ReactNode]],
-    theme: Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ _, 
-      tooltip
-    ],
+    theme: PickimportwarningQualifyReferencesresolveTypeRefma,
     renderContent: () => ReactNode = null,
     title: ReactNode = null
   ): TableTooltipProps = {

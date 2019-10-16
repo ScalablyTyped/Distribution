@@ -1,0 +1,19 @@
+package typings.naja.najaMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HistoryHandler extends js.Object {
+  var uiCache: Boolean
+}
+
+object HistoryHandler {
+  @scala.inline
+  def apply(uiCache: Boolean): HistoryHandler = {
+    val __obj = js.Dynamic.literal(uiCache = uiCache)
+  
+    __obj.asInstanceOf[HistoryHandler]
+  }
+}
+

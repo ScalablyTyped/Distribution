@@ -2,7 +2,7 @@ package typings.antd.libAnchorAnchorMod
 
 import typings.antd.Anon_ActiveLink
 import typings.antd.Anon_AntAnchor_1899638441
-import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLSpanElement
@@ -35,6 +35,7 @@ trait Anchor
   def handleScrollTo(link: String): Unit = js.native
   def renderAnchor(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   def saveInkNode(node: HTMLSpanElement): Unit = js.native
+  def setCurrentActiveLink(link: String): Unit = js.native
   def updateInk(): Unit = js.native
 }
 

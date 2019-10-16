@@ -1,7 +1,7 @@
 package typings.atNivoGeo.atNivoGeoMod
 
-import typings.atNivoCore.atNivoCoreMod.Box
-import typings.atNivoCore.atNivoCoreMod.Theme
+import typings.atNivoGeo.PartialBox
+import typings.atNivoGeo.PartialTheme
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,12 @@ trait CommonProps extends js.Object {
   var graticuleLineColor: js.UndefOr[String] = js.undefined
   var graticuleLineWidth: js.UndefOr[Double] = js.undefined
   var isInteractive: js.UndefOr[Boolean] = js.undefined
-  var margin: js.UndefOr[/* InlineNestedIdentityAlias: typings.std.Partial*/ Box] = js.undefined
+  var margin: js.UndefOr[PartialBox] = js.undefined
   var projectionRotation: js.UndefOr[js.Tuple3[Double, Double, Double]] = js.undefined
   var projectionScale: js.UndefOr[Double] = js.undefined
   var projectionTranslation: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   var projectionType: js.UndefOr[GeoProjectionType] = js.undefined
-  var theme: js.UndefOr[/* InlineNestedIdentityAlias: typings.std.Partial*/ Theme] = js.undefined
+  var theme: js.UndefOr[PartialTheme] = js.undefined
 }
 
 object CommonProps {
@@ -28,12 +28,12 @@ object CommonProps {
     graticuleLineColor: String = null,
     graticuleLineWidth: Int | Double = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
-    margin: /* InlineNestedIdentityAlias: typings.std.Partial*/ Box = null,
+    margin: PartialBox = null,
     projectionRotation: js.Tuple3[Double, Double, Double] = null,
     projectionScale: Int | Double = null,
     projectionTranslation: js.Tuple2[Double, Double] = null,
     projectionType: GeoProjectionType = null,
-    theme: /* InlineNestedIdentityAlias: typings.std.Partial*/ Theme = null
+    theme: PartialTheme = null
   ): CommonProps = {
     val __obj = js.Dynamic.literal(features = features)
     if (!js.isUndefined(enableGraticule)) __obj.updateDynamic("enableGraticule")(enableGraticule)

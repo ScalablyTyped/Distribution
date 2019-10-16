@@ -20,16 +20,16 @@ object ClassProperty {
     range: Range,
     static: Boolean,
     `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ClassProperty,
-    value: Expression,
     accessibility: Accessibility = null,
     decorators: js.Array[Decorator] = null,
     definite: js.UndefOr[Boolean] = js.undefined,
     optional: js.UndefOr[Boolean] = js.undefined,
     parent: Node = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
-    typeAnnotation: TSTypeAnnotation = null
+    typeAnnotation: TSTypeAnnotation = null,
+    value: Expression = null
   ): ClassProperty = {
-    val __obj = js.Dynamic.literal(computed = computed, key = key, loc = loc, range = range, static = static, value = value)
+    val __obj = js.Dynamic.literal(computed = computed, key = key, loc = loc, range = range, static = static)
     __obj.updateDynamic("type")(`type`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
@@ -38,6 +38,7 @@ object ClassProperty {
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ClassProperty]
   }
 }

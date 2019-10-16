@@ -2,6 +2,7 @@ package typings.fsDashExtraDashPromise.fsDashExtraDashPromiseMod
 
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,11 +17,7 @@ object link extends js.Object {
     * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def apply(
-    existingPath: PathLike,
-    newPath: PathLike,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
+  def apply(existingPath: PathLike, newPath: PathLike, callback: NoParamCallback): Unit = js.native
   def apply(srcpath: String, dstpath: String): js.Promise[Unit] = js.native
   def apply(srcpath: String, dstpath: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(srcpath: String, dstpath: Buffer): js.Promise[Unit] = js.native

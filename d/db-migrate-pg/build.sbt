@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "db-migrate-pg"
-version := "0.0-unknown-dt-20190524Z-ee56e5"
+version := "0.0-unknown-dt-20190524Z-83db9a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191014Z-347560",
   "org.scalablytyped" %%% "db-migrate-base" % "0.0-unknown-dt-20190524Z-c8b28e",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
-  "org.scalablytyped" %%% "pg" % "7.11-dt-20190926Z-11d65b",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "pg" % "7.11-dt-20190926Z-c9b140",
   "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-bacb55",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

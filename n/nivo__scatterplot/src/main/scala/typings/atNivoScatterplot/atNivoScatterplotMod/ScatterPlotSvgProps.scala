@@ -5,6 +5,7 @@ import typings.atNivoColors.atNivoColorsMod.OrdinalColorsInstruction
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.CartesianMarkerProps
 import typings.atNivoCore.atNivoCoreMod.CssMixBlendMode
+import typings.atNivoCore.atNivoCoreMod.MotionProps
 import typings.atNivoCore.atNivoCoreMod.Theme
 import typings.atNivoLegends.atNivoLegendsMod.LegendProps
 import typings.react.NativeMouseEvent
@@ -14,8 +15,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof @nivo/core.Anon_Animate ]:? @nivo/core.Anon_Animate[P]} */ trait ScatterPlotSvgProps extends ScatterPlotProps {
+trait ScatterPlotSvgProps
+  extends ScatterPlotProps
+     with MotionProps {
   var layers: js.UndefOr[js.Array[CustomLayerId | CustomSvgLayer]] = js.undefined
   var markers: js.UndefOr[js.Array[CartesianMarkerProps]] = js.undefined
   var renderNode: js.UndefOr[NodeComponent] = js.undefined
@@ -25,6 +27,7 @@ object ScatterPlotSvgProps {
   @scala.inline
   def apply(
     data: js.Array[Serie],
+    animate: js.UndefOr[Boolean] = js.undefined,
     axisBottom: AxisProps = null,
     axisLeft: AxisProps = null,
     axisRight: AxisProps = null,
@@ -39,6 +42,8 @@ object ScatterPlotSvgProps {
     legends: js.Array[LegendProps] = null,
     margin: Box = null,
     markers: js.Array[CartesianMarkerProps] = null,
+    motionDamping: Int | Double = null,
+    motionStiffness: Int | Double = null,
     nodeSize: Double | DerivedDatumProp[Double] | DynamicSizeSpec = null,
     onClick: (/* node */ Node, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     onMouseEnter: (/* node */ Node, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
@@ -54,6 +59,7 @@ object ScatterPlotSvgProps {
     yScale: /* value */ Value => Double = null
   ): ScatterPlotSvgProps = {
     val __obj = js.Dynamic.literal(data = data)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom)
     if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft)
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight)
@@ -68,6 +74,8 @@ object ScatterPlotSvgProps {
     if (legends != null) __obj.updateDynamic("legends")(legends)
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (markers != null) __obj.updateDynamic("markers")(markers)
+    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
+    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
     if (nodeSize != null) __obj.updateDynamic("nodeSize")(nodeSize.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2(onMouseEnter))

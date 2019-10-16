@@ -31,9 +31,13 @@ object componentIconDotServiceMod extends js.Object {
       */
     var _assetsUrlRoot: String = js.native
     var _document: js.Any = js.native
+    /** Record if a handler is registered. */
+    var _enableJsonpLoading: js.Any = js.native
     var _handler: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HttpBackend */ js.Any = js.native
     var _http: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HttpClient */ js.Any = js.native
     var _inProgressFetches: Map[String, Observable[IconDefinition | Null]] = js.native
+    @JSName("_jsonpIconLoad$")
+    var _jsonpIconLoad$: js.Any = js.native
     var _renderer: Renderer2 = js.native
     var _rendererFactory: RendererFactory2 = js.native
     /**
@@ -55,9 +59,10 @@ object componentIconDotServiceMod extends js.Object {
       * Get raw svg and assemble a `IconDefinition` object.
       * @param type
       */
-    /* protected */ def _getFromRemote(`type`: String): Observable[IconDefinition | Null] = js.native
+    /* protected */ def _loadIconDynamically(`type`: String): Observable[IconDefinition | Null] = js.native
+    /* protected */ def _loadIconDynamicallyWithJsonp(icon: IconDefinition, url: String): Observable[IconDefinition] = js.native
     /**
-      * Render a new `SVGElement` for given `IconDefinition`, or make a copy from cache.
+      * Render a new `SVGElement` for a given `IconDefinition`, or make a copy from cache.
       * @param icon
       * @param twoToneColor
       */
@@ -94,6 +99,10 @@ object componentIconDotServiceMod extends js.Object {
       */
     def getRenderedContent(icon: IconDefinition): Observable[SVGElement] = js.native
     def getRenderedContent(icon: IconDefinition, twoToneColor: String): Observable[SVGElement] = js.native
+    /**
+      * Call this method to switch to jsonp like loading.
+      */
+    def useJsonpLoading(): Unit = js.native
   }
   
 }

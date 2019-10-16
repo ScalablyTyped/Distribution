@@ -1,14 +1,15 @@
 package typings.antd.esTableInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.reactMod.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FilterMenuState[T] extends js.Object {
-  var keyPathOfSelectedItem: StringDictionary[String]
+  var keyPathOfSelectedItem: StringDictionary[js.Array[Key]]
   var prevProps: FilterMenuProps[T]
-  var selectedKeys: js.Array[String]
+  var selectedKeys: js.Array[Key]
   var valueKeys: StringDictionary[String]
   var visible: js.UndefOr[Boolean] = js.undefined
 }
@@ -16,9 +17,9 @@ trait FilterMenuState[T] extends js.Object {
 object FilterMenuState {
   @scala.inline
   def apply[T](
-    keyPathOfSelectedItem: StringDictionary[String],
+    keyPathOfSelectedItem: StringDictionary[js.Array[Key]],
     prevProps: FilterMenuProps[T],
-    selectedKeys: js.Array[String],
+    selectedKeys: js.Array[Key],
     valueKeys: StringDictionary[String],
     visible: js.UndefOr[Boolean] = js.undefined
   ): FilterMenuState[T] = {

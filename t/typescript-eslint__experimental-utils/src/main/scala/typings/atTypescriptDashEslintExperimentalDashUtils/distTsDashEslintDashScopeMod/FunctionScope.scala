@@ -16,7 +16,7 @@ object FunctionScope
       ScopeConstructor with (Instantiable4[
         /* scopeManager */ ScopeManager, 
         /* upperScope */ Scope, 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 158 */ js.Any, 
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 160 */ js.Any, 
         /* isMethodDefinition */ Boolean, 
         typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeScopeMod.FunctionScope
       ])

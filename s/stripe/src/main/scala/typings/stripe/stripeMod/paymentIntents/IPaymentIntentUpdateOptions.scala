@@ -1,5 +1,6 @@
 package typings.stripe.stripeMod.paymentIntents
 
+import typings.stripe.Anon_AmountNumber
 import typings.stripe.stripeMod.IOptionsMetadata
 import typings.stripe.stripeMod.IShippingInformation
 import scala.scalajs.js
@@ -67,6 +68,10 @@ trait IPaymentIntentUpdateOptions extends js.Object {
     */
   var statement_descriptor_suffix: js.UndefOr[String] = js.undefined
   /**
+    * The parameters used to automatically create a Transfer when the payment succeeds.
+    */
+  var transfer_data: js.UndefOr[Anon_AmountNumber] = js.undefined
+  /**
     * A string that identifies the resulting payment as part of a group.
     */
   var transfer_group: js.UndefOr[String] = js.undefined
@@ -89,6 +94,7 @@ object IPaymentIntentUpdateOptions {
     shipping: IShippingInformation = null,
     statement_descriptor: String = null,
     statement_descriptor_suffix: String = null,
+    transfer_data: Anon_AmountNumber = null,
     transfer_group: String = null
   ): IPaymentIntentUpdateOptions = {
     val __obj = js.Dynamic.literal()
@@ -106,6 +112,7 @@ object IPaymentIntentUpdateOptions {
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (statement_descriptor_suffix != null) __obj.updateDynamic("statement_descriptor_suffix")(statement_descriptor_suffix)
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[IPaymentIntentUpdateOptions]
   }

@@ -1,6 +1,6 @@
 package typings.antd.esTreeDirectoryTreeMod
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.esTreeTreeMod.AntTreeNode
 import typings.antd.esTreeTreeMod.AntTreeNodeExpandedEvent
 import typings.antd.esTreeTreeMod.AntTreeNodeSelectedEvent

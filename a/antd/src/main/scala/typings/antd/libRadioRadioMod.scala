@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.libRadioInterfaceMod.RadioChangeEvent
 import typings.antd.libRadioInterfaceMod.RadioGroupContext
 import typings.antd.libRadioInterfaceMod.RadioProps

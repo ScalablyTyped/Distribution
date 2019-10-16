@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.esRadioGroupMod.RadioGroup
 import typings.antd.esRadioInterfaceMod.RadioChangeEvent
 import typings.antd.esRadioInterfaceMod.RadioGroupProps

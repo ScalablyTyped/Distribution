@@ -66,12 +66,15 @@ trait VueI18n_ extends js.Object {
   ): Unit = js.native
   def missing(
     locale: typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale,
-    key: typings.vueDashI18n.vueDashI18nMod.VueI18n.Path
+    key: typings.vueDashI18n.vueDashI18nMod.VueI18n.Path,
+    vm: Null,
+    values: js.Any
   ): String | Unit = js.native
   def missing(
     locale: typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale,
     key: typings.vueDashI18n.vueDashI18nMod.VueI18n.Path,
-    vm: Vue
+    vm: Vue,
+    values: js.Any
   ): String | Unit = js.native
   def n(value: Double): typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, args: StringDictionary[String]): typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormatResult = js.native

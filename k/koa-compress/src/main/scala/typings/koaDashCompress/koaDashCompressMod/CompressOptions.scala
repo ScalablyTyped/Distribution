@@ -1,9 +1,8 @@
 package typings.koaDashCompress.koaDashCompressMod
 
-import typings.node.NodeJS.TypedArray
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.zlibMod.ZlibOptions
 import typings.std.ArrayBuffer
-import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,7 @@ object CompressOptions {
   @scala.inline
   def apply(
     chunkSize: Int | Double = null,
-    dictionary: TypedArray | DataView | ArrayBuffer = null,
+    dictionary: ArrayBufferView | ArrayBuffer = null,
     filter: /* content_type */ String => Boolean = null,
     finishFlush: Int | Double = null,
     flush: Int | Double = null,

@@ -1,6 +1,6 @@
 package typings.antd.esInputSearchMod
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.KeyboardEvent
@@ -22,6 +22,7 @@ trait Search
   def onSearch(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
   def onSearch(e: typings.react.reactMod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
   def renderAddonAfter(prefixCls: String): js.UndefOr[js.Object | Null] = js.native
+  def renderLoading(prefixCls: String): Element = js.native
   def renderSearch(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   def renderSuffix(prefixCls: String): js.UndefOr[js.Object | Null] = js.native
   def saveInput(node: typings.antd.esInputInputMod.default): Unit = js.native

@@ -1,6 +1,7 @@
 package typings.antd.esConfigDashProviderMod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass

@@ -1,8 +1,5 @@
 package typings.atNivoScatterplot
 
-import typings.atNivoCore.atNivoCoreMod.Dimensions
-import typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps
-import typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotSvgProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,10 +11,8 @@ object atNivoScatterplotComponents extends atNivoScatterplotProps {
   @scala.inline
   def ResponsiveScatterPlotCanvas: ComponentType[ResponsiveScatterPlotCanvasProps] = js.constructorOf[typings.atNivoScatterplot.atNivoScatterplotMod.ResponsiveScatterPlotCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveScatterPlotCanvasProps]]
   @scala.inline
-  def ScatterPlot: ComponentType[ScatterPlotSvgProps with Dimensions] = js.constructorOf[typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlot].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotSvgProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def ScatterPlot: ComponentType[ScatterPlotProps] = js.constructorOf[typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlot].asInstanceOf[typings.react.reactMod.ComponentType[ScatterPlotProps]]
   @scala.inline
-  def ScatterPlotCanvas: ComponentType[ScatterPlotCanvasProps with Dimensions] = js.constructorOf[typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def ScatterPlotCanvas: ComponentType[ScatterPlotCanvasProps] = js.constructorOf[typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ScatterPlotCanvasProps]]
 }
 

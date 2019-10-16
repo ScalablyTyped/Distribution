@@ -1,6 +1,7 @@
 package typings.node.cryptoMod
 
 import typings.node.Buffer
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +25,11 @@ class Cipher protected () extends Transform {
     input_encoding: Utf8AsciiBinaryEncoding,
     output_encoding: HexBase64BinaryEncoding
   ): java.lang.String = js.native
+  def update(
+    data: ArrayBufferView,
+    input_encoding: js.UndefOr[scala.Nothing],
+    output_encoding: HexBase64BinaryEncoding
+  ): java.lang.String = js.native
   def update(data: BinaryLike): Buffer = js.native
-  def update(data: Binary, input_encoding: js.UndefOr[scala.Nothing], output_encoding: HexBase64BinaryEncoding): java.lang.String = js.native
 }
 

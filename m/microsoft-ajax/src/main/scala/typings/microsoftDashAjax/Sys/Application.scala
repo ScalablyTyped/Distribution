@@ -1,5 +1,6 @@
 package typings.microsoftDashAjax.Sys
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.HTMLElement
@@ -15,10 +16,11 @@ import scala.scalajs.js.annotation._
   * @see {@link http://msdn.microsoft.com/en-us/library/bb384161(v=vs.100).aspx}
   */
 @js.native
-//#region Constructors
 trait Application
   extends Component
-     with IContainer {
+     with IContainer
+     with //#region Constructors
+Instantiable0[Unit] {
   //#endregion
   //#region Methods
   /**

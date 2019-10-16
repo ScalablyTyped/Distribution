@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "libnpmsearch"
-version := "2.0-dt-20190926Z-aceea2"
+version := "2.0-dt-20190926Z-299832"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
-  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190923Z-1bd3a3",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190923Z-a0de4a",
   "org.scalablytyped" %%% "npm-package-arg" % "6.1-dt-20181031Z-f2408b",
-  "org.scalablytyped" %%% "npm-registry-fetch" % "4.0-dt-20190925Z-a495f4",
-  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20190626Z-0abc57",
-  "org.scalablytyped" %%% "ssri" % "6.0-dt-20190422Z-585b6f",
+  "org.scalablytyped" %%% "npm-registry-fetch" % "4.0-dt-20190925Z-0a7455",
+  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20190626Z-6a28fc",
+  "org.scalablytyped" %%% "ssri" % "6.0-dt-20190422Z-a4eaac",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

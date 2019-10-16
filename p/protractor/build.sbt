@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "protractor"
-version := "5.4.2-916f46"
+version := "5.4.2-47fc4c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-455fed",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-92c30f",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
   "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-c879d1",
   "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20191014Z-db0333",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",

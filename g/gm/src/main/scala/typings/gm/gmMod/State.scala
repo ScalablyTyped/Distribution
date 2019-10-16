@@ -195,6 +195,7 @@ trait State extends js.Object {
   def modulate(b: Double, s: Double, h: Double): State = js.native
   def monitor(): State = js.native
   def monochrome(): State = js.native
+  def montage(otherImg: String): State = js.native
   def morph(otherImg: String, outName: String): State = js.native
   def morph(otherImg: String, outName: String, callback: WriteCallback): State = js.native
   def morph(otherImg: js.Array[String], outName: String): State = js.native

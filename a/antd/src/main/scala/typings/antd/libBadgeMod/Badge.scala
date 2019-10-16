@@ -1,6 +1,6 @@
 package typings.antd.libBadgeMod
 
-import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactElement

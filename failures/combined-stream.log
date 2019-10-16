@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => combined-stream, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/combined-stream/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/combined-stream),TsIdentLibrarySimple(combined-stream)),TsIdentModule(None,List(combined-stream))) [id => combined-stream, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(combined-stream)) [id => combined-stream, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(combined-stream) [id => combined-stream, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(combined-stream) [id => combined-stream, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(create) [id => combined-stream, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(combined-stream) / TsDeclClass(^))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(isStreamLike) [id => combined-stream, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(combined-stream) / TsDeclClass(^))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(append) [id => combined-stream, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(combined-stream) / TsDeclInterface(CombinedStream))] 

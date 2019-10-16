@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AutoClose extends js.Object {
   var autoClose: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default false
+    */
+  var emitClose: js.UndefOr[Boolean] = js.undefined
   var encoding: js.UndefOr[java.lang.String] = js.undefined
   var end: js.UndefOr[Double] = js.undefined
   var fd: js.UndefOr[Double] = js.undefined
@@ -19,6 +23,7 @@ object Anon_AutoClose {
   @scala.inline
   def apply(
     autoClose: js.UndefOr[Boolean] = js.undefined,
+    emitClose: js.UndefOr[Boolean] = js.undefined,
     encoding: java.lang.String = null,
     end: Int | Double = null,
     fd: Int | Double = null,
@@ -29,6 +34,7 @@ object Anon_AutoClose {
   ): Anon_AutoClose = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])

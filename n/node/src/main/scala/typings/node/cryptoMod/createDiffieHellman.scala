@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import typings.node.NodeJS.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object createDiffieHellman extends js.Object {
   def apply(prime_length: Double): DiffieHellman = js.native
   def apply(prime_length: Double, generator: Double): DiffieHellman = js.native
-  def apply(prime_length: Double, generator: Binary): DiffieHellman = js.native
+  def apply(prime_length: Double, generator: ArrayBufferView): DiffieHellman = js.native
   def apply(prime: java.lang.String, prime_encoding: HexBase64Latin1Encoding): DiffieHellman = js.native
   def apply(
     prime: java.lang.String,
@@ -18,7 +19,7 @@ object createDiffieHellman extends js.Object {
     generator_encoding: HexBase64Latin1Encoding
   ): DiffieHellman = js.native
   def apply(prime: java.lang.String, prime_encoding: HexBase64Latin1Encoding, generator: Double): DiffieHellman = js.native
-  def apply(prime: java.lang.String, prime_encoding: HexBase64Latin1Encoding, generator: Binary): DiffieHellman = js.native
-  def apply(prime: Binary): DiffieHellman = js.native
+  def apply(prime: java.lang.String, prime_encoding: HexBase64Latin1Encoding, generator: ArrayBufferView): DiffieHellman = js.native
+  def apply(prime: ArrayBufferView): DiffieHellman = js.native
 }
 

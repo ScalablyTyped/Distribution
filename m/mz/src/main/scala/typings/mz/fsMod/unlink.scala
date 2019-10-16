@@ -2,6 +2,7 @@ package typings.mz.fsMod
 
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +20,7 @@ object unlink extends js.Object {
     * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def apply(path: PathLike, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

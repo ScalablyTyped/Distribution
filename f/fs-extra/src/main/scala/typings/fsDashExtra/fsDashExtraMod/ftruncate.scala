@@ -1,6 +1,7 @@
 package typings.fsDashExtra.fsDashExtraMod
 
 import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,20 +15,20 @@ object ftruncate extends js.Object {
     * Asynchronous ftruncate(2) - Truncate a file to a specified length.
     * @param fd A file descriptor.
     */
-  def apply(fd: Double, callback: js.Function1[ErrnoException | Null, Unit]): Unit = js.native
-  def apply(
-    fd: Double,
-    len: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
+  def apply(fd: Double, callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback): Unit = js.native
+  def apply(fd: Double, len: js.UndefOr[scala.Nothing], callback: NoParamCallback): Unit = js.native
   def apply(fd: Double, len: Double): js.Promise[Unit] = js.native
   /**
     * Asynchronous ftruncate(2) - Truncate a file to a specified length.
     * @param fd A file descriptor.
     * @param len If not specified, defaults to `0`.
     */
-  def apply(fd: Double, len: Double, callback: js.Function1[ErrnoException | Null, Unit]): Unit = js.native
-  def apply(fd: Double, len: Null, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  def apply(
+    fd: Double,
+    len: Double,
+    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
+  ): Unit = js.native
+  def apply(fd: Double, len: Null, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronous ftruncate(2) - Truncate a file to a specified length.
     * @param fd A file descriptor.

@@ -1,7 +1,7 @@
 package typings.antd
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.antd.esTableInterfaceMod.TableProps
+import typings.react.reactMod.Component
+import typings.react.reactMod.ComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,19 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object esTableMod extends js.Object {
   @js.native
-  class default[T] protected ()
-    extends typings.antd.esTableTableMod.default[T] {
-    def this(props: TableProps[T]) = this()
+  class default protected ()
+    extends Component[PickTablePropsanyloadingfooterstyletitlescrollsize, js.Any, js.Any] {
+    def this(props: PickTablePropsanyloadingfooterstyletitlescrollsize) = this()
+    def this(props: PickTablePropsanyloadingfooterstyletitlescrollsize, context: js.Any) = this()
   }
   
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    var Column: Instantiable0[typings.antd.esTableColumnMod.default[js.Object]] = js.native
-    var ColumnGroup: TypeofClassColumnGroup = js.native
-    var defaultProps: Anon_BorderedChildrenColumnName = js.native
-    var propTypes: Anon_ArgsBordered = js.native
-  }
-  
+  val default: ComponentClass[PickTablePropsanyloadingfooterstyletitlescrollsize, js.Any] = js.native
 }
 

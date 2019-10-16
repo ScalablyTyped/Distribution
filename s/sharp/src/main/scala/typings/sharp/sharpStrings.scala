@@ -1,6 +1,7 @@
 package typings.sharp
 
 import typings.sharp.sharpMod.Blend
+import typings.sharp.sharpMod.TileLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,6 +56,9 @@ object sharpStrings {
   sealed trait difference extends Blend
   
   @js.native
+  sealed trait dz extends TileLayout
+  
+  @js.native
   sealed trait eor extends js.Object
   
   @js.native
@@ -62,6 +66,9 @@ object sharpStrings {
   
   @js.native
   sealed trait fill extends js.Object
+  
+  @js.native
+  sealed trait google extends TileLayout
   
   @js.native
   sealed trait `hard-light` extends Blend
@@ -120,6 +127,9 @@ object sharpStrings {
   @js.native
   sealed trait xor extends Blend
   
+  @js.native
+  sealed trait zoomify extends TileLayout
+  
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   @scala.inline
@@ -153,11 +163,15 @@ object sharpStrings {
   @scala.inline
   def difference: difference = "difference".asInstanceOf[difference]
   @scala.inline
+  def dz: dz = "dz".asInstanceOf[dz]
+  @scala.inline
   def eor: eor = "eor".asInstanceOf[eor]
   @scala.inline
   def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
+  def google: google = "google".asInstanceOf[google]
   @scala.inline
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
   @scala.inline
@@ -196,5 +210,7 @@ object sharpStrings {
   def source: source = "source".asInstanceOf[source]
   @scala.inline
   def xor: xor = "xor".asInstanceOf[xor]
+  @scala.inline
+  def zoomify: zoomify = "zoomify".asInstanceOf[zoomify]
 }
 

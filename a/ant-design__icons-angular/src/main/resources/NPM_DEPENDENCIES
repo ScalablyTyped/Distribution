@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/icons-angular" : "8.0.3"
+      "@ant-design/icons-angular" : "8.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/icons-angular" : "8.0.3"
+      "@ant-design/icons-angular" : "8.1.0"
     }
   ],
   "compile-devDependencies" : [

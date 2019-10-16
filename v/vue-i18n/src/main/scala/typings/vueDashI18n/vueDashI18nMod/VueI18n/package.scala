@@ -22,12 +22,14 @@ package object VueI18n {
   */
   type LocaleMessage = _LocaleMessage | String
   type LocaleMessages = StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessageObject]
-  type MissingHandler = js.Function3[
+  type MissingHandler = js.Function4[
     /* locale */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale, 
     /* key */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Path, 
-    /* vm */ js.UndefOr[Vue], 
+    /* vm */ Vue | Null, 
+    /* values */ js.Any, 
     String | Unit
   ]
+  type Modifiers = StringDictionary[js.Function1[/* str */ String, String]]
   type NumberFormat = StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormatOptions]
   /* Rewritten from type alias, can be one of: 
     - typings.std.Intl.NumberFormatOptions

@@ -1,7 +1,7 @@
 package typings.antd.esInputTextAreaMod
 
 import typings.antd.Anon_Resizing
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.KeyboardEvent

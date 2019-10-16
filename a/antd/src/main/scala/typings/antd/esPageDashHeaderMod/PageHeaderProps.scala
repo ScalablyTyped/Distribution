@@ -19,6 +19,7 @@ trait PageHeaderProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var extra: js.UndefOr[ReactNode] = js.undefined
   var footer: js.UndefOr[ReactNode] = js.undefined
+  var ghost: js.UndefOr[Boolean] = js.undefined
   var onBack: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -36,6 +37,7 @@ object PageHeaderProps {
     className: String = null,
     extra: ReactNode = null,
     footer: ReactNode = null,
+    ghost: js.UndefOr[Boolean] = js.undefined,
     onBack: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     prefixCls: String = null,
     style: CSSProperties = null,
@@ -50,6 +52,7 @@ object PageHeaderProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost)
     if (onBack != null) __obj.updateDynamic("onBack")(js.Any.fromFunction1(onBack))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)

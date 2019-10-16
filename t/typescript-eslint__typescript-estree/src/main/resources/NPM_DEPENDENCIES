@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@typescript-eslint/typescript-estree" : "1.13.0"
+      "@typescript-eslint/typescript-estree" : "2.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@typescript-eslint/typescript-estree" : "1.13.0"
+      "@typescript-eslint/typescript-estree" : "2.4.0"
     }
   ],
   "compile-devDependencies" : [

@@ -25,9 +25,6 @@ object atNivoTooltipStrings {
   sealed trait right extends CrosshairType
   
   @js.native
-  sealed trait tooltip extends js.Object
-  
-  @js.native
   sealed trait top extends CrosshairType
   
   @js.native
@@ -54,8 +51,6 @@ object atNivoTooltipStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

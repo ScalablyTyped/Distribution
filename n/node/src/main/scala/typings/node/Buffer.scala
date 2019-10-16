@@ -1,10 +1,9 @@
 package typings.node
 
-import typings.node.NodeJS.TypedArray
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.cryptoMod._KeyLike
 import typings.node.fsMod._PathLike
 import typings.std.ArrayBuffer
-import typings.std.DataView
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -221,14 +220,12 @@ object Buffer extends js.Object {
     */
   def byteLength(string: java.lang.String): Double = js.native
   def byteLength(string: java.lang.String, encoding: BufferEncoding): Double = js.native
-  def byteLength(string: TypedArray): Double = js.native
-  def byteLength(string: TypedArray, encoding: BufferEncoding): Double = js.native
+  def byteLength(string: ArrayBufferView): Double = js.native
+  def byteLength(string: ArrayBufferView, encoding: BufferEncoding): Double = js.native
   def byteLength(string: SharedArrayBuffer): Double = js.native
   def byteLength(string: SharedArrayBuffer, encoding: BufferEncoding): Double = js.native
   def byteLength(string: ArrayBuffer): Double = js.native
   def byteLength(string: ArrayBuffer, encoding: BufferEncoding): Double = js.native
-  def byteLength(string: DataView): Double = js.native
-  def byteLength(string: DataView, encoding: BufferEncoding): Double = js.native
   /**
     * The same as buf1.compare(buf2).
     */

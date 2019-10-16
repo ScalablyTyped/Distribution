@@ -58,6 +58,7 @@ trait PartialBaseMenuPropsAutoHideHeader extends js.Object {
     ]
   ] = js.undefined
   var mode: js.UndefOr[MenuMode] = js.undefined
+  var motion: js.UndefOr[js.Object] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var navTheme: js.UndefOr[MenuTheme] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* param */ ClickParam, Unit]] = js.undefined
@@ -66,9 +67,9 @@ trait PartialBaseMenuPropsAutoHideHeader extends js.Object {
   var onMouseEnter: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
   var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[String], Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* param */ SelectParam, Unit]] = js.undefined
-  var openAnimation: js.UndefOr[String | js.Object] = js.undefined
+  var openAnimation: js.UndefOr[String] = js.undefined
   var openKeys: js.UndefOr[WithFalse[js.Array[String]]] = js.undefined
-  var openTransitionName: js.UndefOr[String | js.Object] = js.undefined
+  var openTransitionName: js.UndefOr[String] = js.undefined
   var overflowedIndicator: js.UndefOr[ReactNode] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var route: js.UndefOr[Route] = js.undefined
@@ -115,6 +116,7 @@ object PartialBaseMenuPropsAutoHideHeader {
       js.Function2[/* item */ MenuDataItemisUrlbooleanAuthority, /* defaultDom */ ReactNode, ReactNode]
     ] = null,
     mode: MenuMode = null,
+    motion: js.Object = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     navTheme: MenuTheme = null,
     onClick: /* param */ ClickParam => Unit = null,
@@ -123,9 +125,9 @@ object PartialBaseMenuPropsAutoHideHeader {
     onMouseEnter: /* e */ MouseEvent => Unit = null,
     onOpenChange: /* openKeys */ js.Array[String] => Unit = null,
     onSelect: /* param */ SelectParam => Unit = null,
-    openAnimation: String | js.Object = null,
+    openAnimation: String = null,
     openKeys: WithFalse[js.Array[String]] = null,
-    openTransitionName: String | js.Object = null,
+    openTransitionName: String = null,
     overflowedIndicator: ReactNode = null,
     prefixCls: String = null,
     route: Route = null,
@@ -167,6 +169,7 @@ object PartialBaseMenuPropsAutoHideHeader {
     if (menuData != null) __obj.updateDynamic("menuData")(menuData)
     if (menuItemRender != null) __obj.updateDynamic("menuItemRender")(menuItemRender.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (motion != null) __obj.updateDynamic("motion")(motion)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
@@ -175,9 +178,9 @@ object PartialBaseMenuPropsAutoHideHeader {
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (openAnimation != null) __obj.updateDynamic("openAnimation")(openAnimation.asInstanceOf[js.Any])
+    if (openAnimation != null) __obj.updateDynamic("openAnimation")(openAnimation)
     if (openKeys != null) __obj.updateDynamic("openKeys")(openKeys.asInstanceOf[js.Any])
-    if (openTransitionName != null) __obj.updateDynamic("openTransitionName")(openTransitionName.asInstanceOf[js.Any])
+    if (openTransitionName != null) __obj.updateDynamic("openTransitionName")(openTransitionName)
     if (overflowedIndicator != null) __obj.updateDynamic("overflowedIndicator")(overflowedIndicator.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (route != null) __obj.updateDynamic("route")(route)

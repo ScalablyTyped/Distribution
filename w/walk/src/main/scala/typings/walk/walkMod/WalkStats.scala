@@ -1,7 +1,8 @@
 package typings.walk.walkMod
 
 import typings.node.NodeJS.ErrnoException
-import typings.node.fsMod.Stats
+import typings.node.fsMod.StatsBase
+import typings.std.Date
 import typings.walk.walkStrings.FIFO
 import typings.walk.walkStrings.blockDevice
 import typings.walk.walkStrings.characterDevice
@@ -13,10 +14,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait WalkStats extends Stats {
-  var error: js.UndefOr[ErrnoException] = js.native
-  var name: String = js.native
-  var `type`: file | directory | symbolicLink | blockDevice | characterDevice | FIFO | socket = js.native
+trait WalkStats extends StatsBase[Double] {
+  var error: js.UndefOr[ErrnoException] = js.undefined
+  var name: String
+  var `type`: file | directory | symbolicLink | blockDevice | characterDevice | FIFO | socket
+}
+
+object WalkStats {
+  @scala.inline
+  def apply(
+    atime: Date,
+    atimeMs: Double,
+    birthtime: Date,
+    birthtimeMs: Double,
+    blksize: Double,
+    blocks: Double,
+    ctime: Date,
+    ctimeMs: Double,
+    dev: Double,
+    gid: Double,
+    ino: Double,
+    isBlockDevice: () => Boolean,
+    isCharacterDevice: () => Boolean,
+    isDirectory: () => Boolean,
+    isFIFO: () => Boolean,
+    isFile: () => Boolean,
+    isSocket: () => Boolean,
+    isSymbolicLink: () => Boolean,
+    mode: Double,
+    mtime: Date,
+    mtimeMs: Double,
+    name: String,
+    nlink: Double,
+    rdev: Double,
+    size: Double,
+    `type`: file | directory | symbolicLink | blockDevice | characterDevice | FIFO | socket,
+    uid: Double,
+    error: ErrnoException = null
+  ): WalkStats = {
+    val __obj = js.Dynamic.literal(atime = atime, atimeMs = atimeMs, birthtime = birthtime, birthtimeMs = birthtimeMs, blksize = blksize, blocks = blocks, ctime = ctime, ctimeMs = ctimeMs, dev = dev, gid = gid, ino = ino, isBlockDevice = js.Any.fromFunction0(isBlockDevice), isCharacterDevice = js.Any.fromFunction0(isCharacterDevice), isDirectory = js.Any.fromFunction0(isDirectory), isFIFO = js.Any.fromFunction0(isFIFO), isFile = js.Any.fromFunction0(isFile), isSocket = js.Any.fromFunction0(isSocket), isSymbolicLink = js.Any.fromFunction0(isSymbolicLink), mode = mode, mtime = mtime, mtimeMs = mtimeMs, name = name, nlink = nlink, rdev = rdev, size = size, uid = uid)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[WalkStats]
+  }
 }
 

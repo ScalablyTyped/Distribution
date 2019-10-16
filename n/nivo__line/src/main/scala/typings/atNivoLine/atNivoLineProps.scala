@@ -1,6 +1,5 @@
 package typings.atNivoLine
 
-import typings.atNivoLine.atNivoLineMod.LineCanvasProps
 import typings.atNivoLine.atNivoLineMod.LineSvgProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,10 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait atNivoLineProps {
   @scala.inline
+  def LineProps: typings.atNivoLine.LineSvgPropsDimensions.type = typings.atNivoLine.LineSvgPropsDimensions
+  type LineProps = LineSvgPropsDimensions
+  @scala.inline
+  def LineCanvasProps: typings.atNivoLine.LineCanvasPropsDimensions.type = typings.atNivoLine.LineCanvasPropsDimensions
+  type LineCanvasProps = LineCanvasPropsDimensions
+  @scala.inline
   def ResponsiveLineProps: LineSvgProps.type = typings.atNivoLine.atNivoLineMod.LineSvgProps
   type ResponsiveLineProps = LineSvgProps
   @scala.inline
-  def ResponsiveLineCanvasProps: LineCanvasProps.type = typings.atNivoLine.atNivoLineMod.LineCanvasProps
-  type ResponsiveLineCanvasProps = LineCanvasProps
+  def ResponsiveLineCanvasProps: typings.atNivoLine.atNivoLineMod.LineCanvasProps.type = typings.atNivoLine.atNivoLineMod.LineCanvasProps
+  type ResponsiveLineCanvasProps = typings.atNivoLine.atNivoLineMod.LineCanvasProps
 }
 

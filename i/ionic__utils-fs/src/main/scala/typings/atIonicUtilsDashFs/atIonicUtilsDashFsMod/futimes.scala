@@ -1,6 +1,7 @@
 package typings.atIonicUtilsDashFs.atIonicUtilsDashFsMod
 
 import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,52 +17,27 @@ object futimes extends js.Object {
     * @param atime The last access time. If a string is provided, it will be coerced to number.
     * @param mtime The last modified time. If a string is provided, it will be coerced to number.
     */
-  def apply(
-    fd: Double,
-    atime: String,
-    mtime: String,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    atime: String,
-    mtime: Double,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    atime: String,
-    mtime: Date,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    atime: Double,
-    mtime: String,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
+  def apply(fd: Double, atime: String, mtime: String, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: String, mtime: Double, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: String, mtime: Date, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: Double, mtime: String, callback: NoParamCallback): Unit = js.native
   def apply(fd: Double, atime: Double, mtime: Double): js.Promise[Unit] = js.native
-  def apply(fd: Double, atime: Double, mtime: Double, callback: js.Function1[ErrnoException | Null, Unit]): Unit = js.native
   def apply(
     fd: Double,
     atime: Double,
-    mtime: Date,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    atime: Date,
-    mtime: String,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
-  def apply(
-    fd: Double,
-    atime: Date,
     mtime: Double,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
+    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
   ): Unit = js.native
+  def apply(fd: Double, atime: Double, mtime: Date, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: Date, mtime: String, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, atime: Date, mtime: Double, callback: NoParamCallback): Unit = js.native
   def apply(fd: Double, atime: Date, mtime: Date): js.Promise[Unit] = js.native
-  def apply(fd: Double, atime: Date, mtime: Date, callback: js.Function1[ErrnoException | Null, Unit]): Unit = js.native
+  def apply(
+    fd: Double,
+    atime: Date,
+    mtime: Date,
+    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
+  ): Unit = js.native
   /**
     * Asynchronously change file timestamps of the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.

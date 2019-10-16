@@ -17,6 +17,7 @@ object IpcNetConnectOpts {
     path: java.lang.String,
     allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
     fd: Int | Double = null,
+    onread: OnReadOpts = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
     writable: js.UndefOr[Boolean] = js.undefined
@@ -24,6 +25,7 @@ object IpcNetConnectOpts {
     val __obj = js.Dynamic.literal(path = path)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
+    if (onread != null) __obj.updateDynamic("onread")(onread)
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)

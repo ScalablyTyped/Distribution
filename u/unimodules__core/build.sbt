@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "unimodules__core"
-version := "4.0.0-71bbf3"
+version := "4.0.0-2e898c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191014Z-d5b0ca",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191007Z-cc9d0b",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191015Z-baf60f",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191015Z-97b793",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "unimodules__react-native-adapter" % "4.0.0-19fbea")
+  "org.scalablytyped" %%% "unimodules__react-native-adapter" % "4.0.0-916296")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

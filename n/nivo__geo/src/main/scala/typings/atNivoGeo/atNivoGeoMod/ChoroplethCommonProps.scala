@@ -1,7 +1,7 @@
 package typings.atNivoGeo.atNivoGeoMod
 
-import typings.atNivoCore.atNivoCoreMod.Box
-import typings.atNivoCore.atNivoCoreMod.Theme
+import typings.atNivoGeo.PartialBox
+import typings.atNivoGeo.PartialTheme
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
@@ -42,7 +42,7 @@ object ChoroplethCommonProps {
     graticuleLineWidth: Int | Double = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     label: String | (FeatureAccessor[_, String]) = null,
-    margin: /* InlineNestedIdentityAlias: typings.std.Partial*/ Box = null,
+    margin: PartialBox = null,
     `match`: String | DatumMatcher = null,
     onClick: (/* feature */ ChoroplethBoundFeature, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     onMouseEnter: (/* feature */ ChoroplethBoundFeature, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
@@ -52,7 +52,7 @@ object ChoroplethCommonProps {
     projectionScale: Int | Double = null,
     projectionTranslation: js.Tuple2[Double, Double] = null,
     projectionType: GeoProjectionType = null,
-    theme: /* InlineNestedIdentityAlias: typings.std.Partial*/ Theme = null,
+    theme: PartialTheme = null,
     tooltip: ChoroplethTooltip = null,
     unknownColor: String = null,
     value: String | (FeatureAccessor[_, Double]) = null,

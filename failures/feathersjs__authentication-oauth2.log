@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => @feathersjs/authentication-oauth2, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/feathersjs__authentication-oauth2/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/feathersjs__authentication-oauth2),TsIdentLibraryScoped(feathersjs,Some(authentication-oauth2))),TsIdentModule(Some(feathersjs),List(authentication-oauth2))) [id => @feathersjs/authentication-oauth2, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(feathersjs),List(authentication-oauth2)) [id => @feathersjs/authentication-oauth2, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibraryScoped(feathersjs,Some(authentication-oauth2)) [id => @feathersjs/authentication-oauth2, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibraryScoped(feathersjs,Some(authentication-oauth2)) [id => @feathersjs/authentication-oauth2, phase => typescript] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Verifier)))) [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsTypeParam() / TsTypeQuery())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(Strategy))) [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsMemberProperty(Strategy) / TsTypeUnion() / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:198 Couldn't resolve typeof Strategy [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsMemberProperty(Strategy) / TsTypeUnion() / TsTypeQuery())] 
@@ -136,12 +136,12 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile(TreeTransformation.scala:334)
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:330)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformations.scala:4)
-	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$13(Phase1ReadTypescript.scala:224)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$31(Phase1ReadTypescript.scala:186)
+	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$13(Phase1ReadTypescript.scala:225)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$31(Phase1ReadTypescript.scala:187)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$23(Phase1ReadTypescript.scala:186)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$23(Phase1ReadTypescript.scala:187)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)

@@ -14,8 +14,11 @@ trait DrawerProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var closable: js.UndefOr[Boolean] = js.undefined
   var destroyOnClose: js.UndefOr[Boolean] = js.undefined
+  /** wrapper dom node style of header and body */
+  var drawerStyle: js.UndefOr[CSSProperties] = js.undefined
   var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
   var handler: js.UndefOr[ReactNode] = js.undefined
+  var headerStyle: js.UndefOr[CSSProperties] = js.undefined
   var height: js.UndefOr[Double | String] = js.undefined
   var keyboard: js.UndefOr[Boolean] = js.undefined
   var mask: js.UndefOr[Boolean] = js.undefined
@@ -41,8 +44,10 @@ object DrawerProps {
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[Boolean] = js.undefined,
+    drawerStyle: CSSProperties = null,
     getContainer: String | HTMLElement | getContainerFunc | `false` = null,
     handler: ReactNode = null,
+    headerStyle: CSSProperties = null,
     height: Double | String = null,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     mask: js.UndefOr[Boolean] = js.undefined,
@@ -65,8 +70,10 @@ object DrawerProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
+    if (drawerStyle != null) __obj.updateDynamic("drawerStyle")(drawerStyle)
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)

@@ -41,7 +41,9 @@ trait Mentions
   def focus(): Unit = js.native
   def getOptions(): js.Array[OptionProps] = js.native
   def getOptions(measureText: String): js.Array[OptionProps] = js.native
+  def onBlur(): Unit = js.native
   def onBlur(event: FocusEvent[HTMLTextAreaElement]): Unit = js.native
+  def onDropdownBlur(): Unit = js.native
   def onDropdownFocus(): Unit = js.native
   def onFocus(): Unit = js.native
   def onFocus(event: FocusEvent[HTMLTextAreaElement]): Unit = js.native

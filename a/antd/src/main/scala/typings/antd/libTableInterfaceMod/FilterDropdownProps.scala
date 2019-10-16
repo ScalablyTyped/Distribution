@@ -1,5 +1,6 @@
 package typings.antd.libTableInterfaceMod
 
+import typings.react.reactMod.Key
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,8 +12,9 @@ trait FilterDropdownProps extends js.Object {
   var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
-  var selectedKeys: js.UndefOr[js.Array[String]] = js.undefined
+  var selectedKeys: js.UndefOr[js.Array[Key]] = js.undefined
   var setSelectedKeys: js.UndefOr[js.Function1[/* selectedKeys */ js.Array[String], Unit]] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 
 object FilterDropdownProps {
@@ -23,8 +25,9 @@ object FilterDropdownProps {
     filters: js.Array[ColumnFilterItem] = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     prefixCls: String = null,
-    selectedKeys: js.Array[String] = null,
-    setSelectedKeys: /* selectedKeys */ js.Array[String] => Unit = null
+    selectedKeys: js.Array[Key] = null,
+    setSelectedKeys: /* selectedKeys */ js.Array[String] => Unit = null,
+    visible: js.UndefOr[Boolean] = js.undefined
   ): FilterDropdownProps = {
     val __obj = js.Dynamic.literal()
     if (clearFilters != null) __obj.updateDynamic("clearFilters")(js.Any.fromFunction1(clearFilters))
@@ -34,6 +37,7 @@ object FilterDropdownProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)
     if (setSelectedKeys != null) __obj.updateDynamic("setSelectedKeys")(js.Any.fromFunction1(setSelectedKeys))
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     __obj.asInstanceOf[FilterDropdownProps]
   }
 }

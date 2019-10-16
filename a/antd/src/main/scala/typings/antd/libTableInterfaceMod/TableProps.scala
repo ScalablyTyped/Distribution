@@ -1,10 +1,12 @@
 package typings.antd.libTableInterfaceMod
 
-import typings.antd.Anon_X
+import typings.antd.Anon_ScrollToFirstRowOnChange
 import typings.antd.RecordkeyofTArraystring
 import typings.antd.antdNumbers.`false`
 import typings.antd.libPaginationPaginationMod.PaginationConfig
 import typings.antd.libSpinMod.SpinProps
+import typings.antd.libTableCreateStoreMod.Store
+import typings.csstype.csstypeMod.TableLayoutProperty
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.std.Event
@@ -13,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TableProps[T] extends js.Object {
+trait TableProps[T] extends WithStore {
   var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
   var bordered: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -63,11 +65,12 @@ trait TableProps[T] extends js.Object {
   var rowClassName: js.UndefOr[js.Function2[/* record */ T, /* index */ Double, String]] = js.undefined
   var rowKey: js.UndefOr[String | (js.Function2[/* record */ T, /* index */ Double, String])] = js.undefined
   var rowSelection: js.UndefOr[TableRowSelection[T]] = js.undefined
-  var scroll: js.UndefOr[Anon_X] = js.undefined
+  var scroll: js.UndefOr[Anon_ScrollToFirstRowOnChange] = js.undefined
   var showHeader: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[TableSize] = js.undefined
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
+  var tableLayout: js.UndefOr[TableLayoutProperty] = js.undefined
   var title: js.UndefOr[js.Function1[/* currentPageData */ js.Array[T], ReactNode]] = js.undefined
   var useFixedHeader: js.UndefOr[Boolean] = js.undefined
 }
@@ -75,6 +78,9 @@ trait TableProps[T] extends js.Object {
 object TableProps {
   @scala.inline
   def apply[T](
+    checkboxPropsCache: CheckboxPropsCache,
+    setCheckboxPropsCache: CheckboxPropsCache => Unit,
+    store: Store,
     bodyStyle: CSSProperties = null,
     bordered: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
@@ -108,15 +114,16 @@ object TableProps {
     rowClassName: (/* record */ T, /* index */ Double) => String = null,
     rowKey: String | (js.Function2[/* record */ T, /* index */ Double, String]) = null,
     rowSelection: TableRowSelection[T] = null,
-    scroll: Anon_X = null,
+    scroll: Anon_ScrollToFirstRowOnChange = null,
     showHeader: js.UndefOr[Boolean] = js.undefined,
     size: TableSize = null,
     sortDirections: js.Array[SortOrder] = null,
     style: CSSProperties = null,
+    tableLayout: TableLayoutProperty = null,
     title: /* currentPageData */ js.Array[T] => ReactNode = null,
     useFixedHeader: js.UndefOr[Boolean] = js.undefined
   ): TableProps[T] = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(checkboxPropsCache = checkboxPropsCache, setCheckboxPropsCache = js.Any.fromFunction1(setCheckboxPropsCache), store = store)
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -155,6 +162,7 @@ object TableProps {
     if (size != null) __obj.updateDynamic("size")(size)
     if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (tableLayout != null) __obj.updateDynamic("tableLayout")(tableLayout)
     if (title != null) __obj.updateDynamic("title")(js.Any.fromFunction1(title))
     if (!js.isUndefined(useFixedHeader)) __obj.updateDynamic("useFixedHeader")(useFixedHeader)
     __obj.asInstanceOf[TableProps[T]]

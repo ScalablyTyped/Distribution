@@ -4,7 +4,7 @@ import typings.rcDashResizeDashObserver.Anon_Height
 import typings.react.reactMod.Component
 import typings.resizeDashObserverDashPolyfill.resizeDashObserverDashPolyfillMod.ResizeObserver
 import typings.resizeDashObserverDashPolyfill.resizeDashObserverDashPolyfillMod._Global_.ResizeObserverCallback
-import typings.std.HTMLElement
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait ReactResizeObserver
   extends Component[ResizeObserverProps, ResizeObserverState, js.Any] {
   var childNode: RefNode = js.native
-  var currentElement: HTMLElement | Null = js.native
+  var currentElement: Element | Null = js.native
   var onResize: ResizeObserverCallback = js.native
   var resizeObserver: ResizeObserver | Null = js.native
   @JSName("state")

@@ -5,6 +5,7 @@ import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashS
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeOptionsMod.PatternVisitorOptions
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeOptionsMod.Visitor
 import typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintDashScopeScopeManagerMod.ScopeManager
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.BaseNode
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PatternVisitor extends Visitor {
-  var options: js.Any = js.native
+  var options: PatternVisitorOptions = js.native
   var parent: js.UndefOr[Node] = js.native
   var rightHandNodes: js.Array[Node] = js.native
   var scopeManager: ScopeManager = js.native
@@ -30,10 +31,9 @@ trait PatternVisitor extends Visitor {
 
 @JSImport("@typescript-eslint/experimental-utils/dist/ts-eslint-scope/PatternVisitor", "PatternVisitor")
 @js.native
-object PatternVisitor
-  extends Instantiable3[
+object PatternVisitor extends Instantiable3[
       /* options */ PatternVisitorOptions, 
-      /* rootPattern */ js.Any, 
+      /* rootPattern */ BaseNode, 
       /* callback */ PatternVisitorCallback, 
       PatternVisitor
     ] {

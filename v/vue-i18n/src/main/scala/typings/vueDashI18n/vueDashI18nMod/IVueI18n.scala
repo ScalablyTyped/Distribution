@@ -25,12 +25,15 @@ trait IVueI18n extends js.Object {
   var warnHtmlInMessage: typings.vueDashI18n.vueDashI18nMod.VueI18n.WarnHtmlInMessageLevel = js.native
   def missing(
     locale: typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale,
-    key: typings.vueDashI18n.vueDashI18nMod.VueI18n.Path
+    key: typings.vueDashI18n.vueDashI18nMod.VueI18n.Path,
+    vm: Null,
+    values: js.Any
   ): String | Unit = js.native
   def missing(
     locale: typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale,
     key: typings.vueDashI18n.vueDashI18nMod.VueI18n.Path,
-    vm: Vue
+    vm: Vue,
+    values: js.Any
   ): String | Unit = js.native
 }
 

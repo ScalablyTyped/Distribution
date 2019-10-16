@@ -21,15 +21,16 @@ trait RuleMetaDataDocs extends js.Object {
     */
   var description: String
   /**
-    * Extra information linking the rule to a tslint rule
-    */
-  var extraDescription: js.UndefOr[js.Array[String]] = js.undefined
-  /**
     * The recommendation level for the rule.
     * Used by the build tools to generate the recommended config.
     * Set to false to not include it as a recommendation
     */
   var recommended: error | warn | `false`
+  /**
+    * Does the rule require us to create a full TypeScript Program in order for it
+    * to type-check code. This is only used for documentation purposes.
+    */
+  var requiresTypeChecking: js.UndefOr[Boolean] = js.undefined
   /**
     * The URL of the rule's docs
     */
@@ -43,10 +44,10 @@ object RuleMetaDataDocs {
     description: String,
     recommended: error | warn | `false`,
     url: String,
-    extraDescription: js.Array[String] = null
+    requiresTypeChecking: js.UndefOr[Boolean] = js.undefined
   ): RuleMetaDataDocs = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], description = description, recommended = recommended.asInstanceOf[js.Any], url = url)
-    if (extraDescription != null) __obj.updateDynamic("extraDescription")(extraDescription)
+    if (!js.isUndefined(requiresTypeChecking)) __obj.updateDynamic("requiresTypeChecking")(requiresTypeChecking)
     __obj.asInstanceOf[RuleMetaDataDocs]
   }
 }

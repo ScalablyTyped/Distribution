@@ -13,6 +13,9 @@ object atTypescriptDashEslintExperimentalDashUtilsNumbers {
   sealed trait `1` extends Severity
   
   @js.native
+  sealed trait `10` extends js.Object
+  
+  @js.native
   sealed trait `2` extends Severity
   
   @js.native
@@ -26,6 +29,9 @@ object atTypescriptDashEslintExperimentalDashUtilsNumbers {
   
   @js.native
   sealed trait `2018` extends js.Object
+  
+  @js.native
+  sealed trait `2019` extends js.Object
   
   @js.native
   sealed trait `3` extends js.Object
@@ -56,6 +62,8 @@ object atTypescriptDashEslintExperimentalDashUtilsNumbers {
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline
+  def `10`: `10` = 10.asInstanceOf[`10`]
+  @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   @scala.inline
   def `2015`: `2015` = 2015.asInstanceOf[`2015`]
@@ -65,6 +73,8 @@ object atTypescriptDashEslintExperimentalDashUtilsNumbers {
   def `2017`: `2017` = 2017.asInstanceOf[`2017`]
   @scala.inline
   def `2018`: `2018` = 2018.asInstanceOf[`2018`]
+  @scala.inline
+  def `2019`: `2019` = 2019.asInstanceOf[`2019`]
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   @scala.inline

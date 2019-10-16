@@ -14,7 +14,7 @@ import typings.mz.mzStrings.rsa
 import typings.mz.mzStrings.uncompressed
 import typings.node.Anon_PrivateKey
 import typings.node.Buffer
-import typings.node.cryptoMod.Binary
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.cryptoMod.BinaryLike
 import typings.node.cryptoMod.CipherCCM
 import typings.node.cryptoMod.CipherCCMOptions
@@ -29,6 +29,7 @@ import typings.node.cryptoMod.DecipherCCM
 import typings.node.cryptoMod.DecipherGCM
 import typings.node.cryptoMod.ECKeyPairKeyObjectOptions
 import typings.node.cryptoMod.ECKeyPairOptions
+import typings.node.cryptoMod.HashOptions
 import typings.node.cryptoMod.HexBase64Latin1Encoding
 import typings.node.cryptoMod.KeyLike
 import typings.node.cryptoMod.KeyPairKeyObjectResult
@@ -144,7 +145,7 @@ object crypto extends js.Object {
   def createDecipheriv(algorithm: CipherGCMTypes, key: BinaryLike, iv: BinaryLike, options: CipherGCMOptions): DecipherGCM = js.native
   def createDiffieHellman(prime_length: Double): typings.node.cryptoMod.DiffieHellman = js.native
   def createDiffieHellman(prime_length: Double, generator: Double): typings.node.cryptoMod.DiffieHellman = js.native
-  def createDiffieHellman(prime_length: Double, generator: Binary): typings.node.cryptoMod.DiffieHellman = js.native
+  def createDiffieHellman(prime_length: Double, generator: ArrayBufferView): typings.node.cryptoMod.DiffieHellman = js.native
   def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding): typings.node.cryptoMod.DiffieHellman = js.native
   def createDiffieHellman(
     prime: String,
@@ -153,11 +154,11 @@ object crypto extends js.Object {
     generator_encoding: HexBase64Latin1Encoding
   ): typings.node.cryptoMod.DiffieHellman = js.native
   def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: Double): typings.node.cryptoMod.DiffieHellman = js.native
-  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: Binary): typings.node.cryptoMod.DiffieHellman = js.native
-  def createDiffieHellman(prime: Binary): typings.node.cryptoMod.DiffieHellman = js.native
+  def createDiffieHellman(prime: String, prime_encoding: HexBase64Latin1Encoding, generator: ArrayBufferView): typings.node.cryptoMod.DiffieHellman = js.native
+  def createDiffieHellman(prime: ArrayBufferView): typings.node.cryptoMod.DiffieHellman = js.native
   def createECDH(curve_name: String): typings.node.cryptoMod.ECDH = js.native
   def createHash(algorithm: String): typings.node.cryptoMod.Hash = js.native
-  def createHash(algorithm: String, options: TransformOptions): typings.node.cryptoMod.Hash = js.native
+  def createHash(algorithm: String, options: HashOptions): typings.node.cryptoMod.Hash = js.native
   def createHmac(algorithm: String, key: BinaryLike): typings.node.cryptoMod.Hmac = js.native
   def createHmac(algorithm: String, key: BinaryLike, options: TransformOptions): typings.node.cryptoMod.Hmac = js.native
   def createPrivateKey(key: String): typings.node.cryptoMod.KeyObject = js.native
@@ -234,10 +235,6 @@ object crypto extends js.Object {
     callback: js.Function2[/* err */ typings.node.Error | Null, /* derivedKey */ Buffer, _]
   ): Unit = js.native
   def pbkdf2Sync(password: BinaryLike, salt: BinaryLike, iterations: Double, keylen: Double, digest: String): Buffer = js.native
-  def privateDecrypt(private_key: KeyLike, buffer: Binary): Buffer = js.native
-  def privateDecrypt(private_key: RsaPrivateKey, buffer: Binary): Buffer = js.native
-  def privateEncrypt(private_key: KeyLike, buffer: Binary): Buffer = js.native
-  def privateEncrypt(private_key: RsaPrivateKey, buffer: Binary): Buffer = js.native
   def pseudoRandomBytes(size: Double): Buffer = js.native
   def pseudoRandomBytes(
     size: Double,
@@ -245,10 +242,12 @@ object crypto extends js.Object {
   ): Unit = js.native
   @JSName("pseudoRandomBytes")
   def pseudoRandomBytes_Promise(size: Double): js.Promise[Buffer] = js.native
-  def publicDecrypt(public_key: KeyLike, buffer: Binary): Buffer = js.native
-  def publicDecrypt(public_key: RsaPublicKey, buffer: Binary): Buffer = js.native
-  def publicEncrypt(public_key: KeyLike, buffer: Binary): Buffer = js.native
-  def publicEncrypt(public_key: RsaPublicKey, buffer: Binary): Buffer = js.native
+  def publicDecrypt(key: KeyLike, buffer: ArrayBufferView): Buffer = js.native
+  def publicDecrypt(key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = js.native
+  def publicDecrypt(key: RsaPublicKey, buffer: ArrayBufferView): Buffer = js.native
+  def publicEncrypt(key: KeyLike, buffer: ArrayBufferView): Buffer = js.native
+  def publicEncrypt(key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = js.native
+  def publicEncrypt(key: RsaPublicKey, buffer: ArrayBufferView): Buffer = js.native
   def randomBytes(size: Double): Buffer = js.native
   def randomBytes(
     size: Double,
@@ -451,8 +450,8 @@ object crypto extends js.Object {
   ): Unit = js.native
   def scryptSync(password: BinaryLike, salt: BinaryLike, keylen: Double): Buffer = js.native
   def scryptSync(password: BinaryLike, salt: BinaryLike, keylen: Double, options: ScryptOptions): Buffer = js.native
-  def sign(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: KeyLike): Buffer = js.native
-  def sign(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: SignPrivateKeyInput): Buffer = js.native
+  def sign(algorithm: js.UndefOr[scala.Nothing], data: ArrayBufferView, key: KeyLike): Buffer = js.native
+  def sign(algorithm: js.UndefOr[scala.Nothing], data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
     * algorithm. If `algorithm` is `null` or `undefined`, then the algorithm is
@@ -461,13 +460,23 @@ object crypto extends js.Object {
     * If `key` is not a [`KeyObject`][], this function behaves as if `key` had been
     * passed to [`crypto.createPrivateKey()`][].
     */
-  def sign(algorithm: String, data: Binary, key: KeyLike): Buffer = js.native
-  def sign(algorithm: String, data: Binary, key: SignPrivateKeyInput): Buffer = js.native
-  def sign(algorithm: Null, data: Binary, key: KeyLike): Buffer = js.native
-  def sign(algorithm: Null, data: Binary, key: SignPrivateKeyInput): Buffer = js.native
-  def timingSafeEqual(a: Binary, b: Binary): Boolean = js.native
-  def verify(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: KeyLike, signature: Binary): Buffer = js.native
-  def verify(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: VerifyKeyWithOptions, signature: Binary): Buffer = js.native
+  def sign(algorithm: String, data: ArrayBufferView, key: KeyLike): Buffer = js.native
+  def sign(algorithm: String, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
+  def sign(algorithm: Null, data: ArrayBufferView, key: KeyLike): Buffer = js.native
+  def sign(algorithm: Null, data: ArrayBufferView, key: SignPrivateKeyInput): Buffer = js.native
+  def timingSafeEqual(a: ArrayBufferView, b: ArrayBufferView): Boolean = js.native
+  def verify(
+    algorithm: js.UndefOr[scala.Nothing],
+    data: ArrayBufferView,
+    key: KeyLike,
+    signature: ArrayBufferView
+  ): Buffer = js.native
+  def verify(
+    algorithm: js.UndefOr[scala.Nothing],
+    data: ArrayBufferView,
+    key: VerifyKeyWithOptions,
+    signature: ArrayBufferView
+  ): Buffer = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
     * algorithm. If `algorithm` is `null` or `undefined`, then the algorithm is
@@ -476,10 +485,10 @@ object crypto extends js.Object {
     * If `key` is not a [`KeyObject`][], this function behaves as if `key` had been
     * passed to [`crypto.createPublicKey()`][].
     */
-  def verify(algorithm: String, data: Binary, key: KeyLike, signature: Binary): Buffer = js.native
-  def verify(algorithm: String, data: Binary, key: VerifyKeyWithOptions, signature: Binary): Buffer = js.native
-  def verify(algorithm: Null, data: Binary, key: KeyLike, signature: Binary): Buffer = js.native
-  def verify(algorithm: Null, data: Binary, key: VerifyKeyWithOptions, signature: Binary): Buffer = js.native
+  def verify(algorithm: String, data: ArrayBufferView, key: KeyLike, signature: ArrayBufferView): Buffer = js.native
+  def verify(algorithm: String, data: ArrayBufferView, key: VerifyKeyWithOptions, signature: ArrayBufferView): Buffer = js.native
+  def verify(algorithm: Null, data: ArrayBufferView, key: KeyLike, signature: ArrayBufferView): Buffer = js.native
+  def verify(algorithm: Null, data: ArrayBufferView, key: VerifyKeyWithOptions, signature: ArrayBufferView): Buffer = js.native
   @js.native
   object Certificate
     extends Instantiable0[typings.node.cryptoMod.Certificate] {

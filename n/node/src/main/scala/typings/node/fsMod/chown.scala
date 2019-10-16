@@ -1,6 +1,5 @@
 package typings.node.fsMod
 
-import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +12,7 @@ object chown extends js.Object {
     * Asynchronous chown(2) - Change ownership of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def apply(
-    path: PathLike,
-    uid: Double,
-    gid: Double,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
+  def apply(path: PathLike, uid: Double, gid: Double, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronous chown(2) - Change ownership of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

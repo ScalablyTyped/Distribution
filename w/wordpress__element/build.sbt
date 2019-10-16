@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "wordpress__element"
-version := "2.4-dt-20190605Z-f73b07"
+version := "2.4-dt-20190605Z-c3ff2a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191014Z-d5b0ca",
-  "org.scalablytyped" %%% "react-dom" % "16.9-dt-20191014Z-9a6e2b",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191015Z-baf60f",
+  "org.scalablytyped" %%% "react-dom" % "16.9-dt-20191014Z-5cd9c2",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

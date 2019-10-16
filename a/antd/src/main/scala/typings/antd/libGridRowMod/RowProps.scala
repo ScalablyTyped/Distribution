@@ -1,6 +1,5 @@
 package typings.antd.libGridRowMod
 
-import typings.antd.PartialRecordBreakpointnumber
 import typings.antd.antdStrings.`space-around`
 import typings.antd.antdStrings.`space-between`
 import typings.antd.antdStrings.bottom
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation._
 
 trait RowProps extends HTMLAttributes[HTMLDivElement] {
   var align: js.UndefOr[top | middle | bottom | stretch] = js.undefined
-  var gutter: js.UndefOr[Double | PartialRecordBreakpointnumber] = js.undefined
+  var gutter: js.UndefOr[Gutter | (js.Tuple2[Gutter, Gutter])] = js.undefined
   var justify: js.UndefOr[start | end | center | `space-around` | `space-between`] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[flex] = js.undefined
@@ -30,7 +29,7 @@ object RowProps {
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
     align: top | middle | bottom | stretch = null,
-    gutter: Double | PartialRecordBreakpointnumber = null,
+    gutter: Gutter | (js.Tuple2[Gutter, Gutter]) = null,
     justify: start | end | center | `space-around` | `space-between` = null,
     prefixCls: String = null,
     `type`: flex = null

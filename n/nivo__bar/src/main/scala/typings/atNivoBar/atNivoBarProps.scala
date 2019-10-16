@@ -1,13 +1,22 @@
 package typings.atNivoBar
 
-import typings.atNivoBar.atNivoBarMod.BarCanvasProps
 import typings.atNivoBar.atNivoBarMod.BarSvgProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait atNivoBarProps {
+  @scala.inline
+  def BarProps: typings.atNivoBar.BarSvgPropsDimensions.type = typings.atNivoBar.BarSvgPropsDimensions
+  type BarProps = BarSvgPropsDimensions
+  @scala.inline
+  def BarCanvasProps: typings.atNivoBar.BarCanvasPropsDimensions.type = typings.atNivoBar.BarCanvasPropsDimensions
+  type BarCanvasProps = BarCanvasPropsDimensions
+  @scala.inline
+  def ResponsiveBarProps: BarSvgProps.type = typings.atNivoBar.atNivoBarMod.BarSvgProps
   type ResponsiveBarProps = BarSvgProps
-  type ResponsiveBarCanvasProps = BarCanvasProps
+  @scala.inline
+  def ResponsiveBarCanvasProps: typings.atNivoBar.atNivoBarMod.BarCanvasProps.type = typings.atNivoBar.atNivoBarMod.BarCanvasProps
+  type ResponsiveBarCanvasProps = typings.atNivoBar.atNivoBarMod.BarCanvasProps
 }
 

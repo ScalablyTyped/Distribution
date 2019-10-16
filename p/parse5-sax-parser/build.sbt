@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "parse5-sax-parser"
-version := "5.0-dt-20180606Z-afd7ec"
+version := "5.0-dt-20180606Z-4b96f6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
   "org.scalablytyped" %%% "parse5" % "5.0-dt-20190719Z-bbd1ce",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

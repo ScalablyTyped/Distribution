@@ -1,5 +1,6 @@
 package typings.antd.libTableInterfaceMod
 
+import typings.react.reactMod.Key
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,14 +13,14 @@ trait FilterMenuProps[T] extends js.Object {
   var locale: TableLocale
   var prefixCls: String
   var selectedKeys: js.Array[String]
-  def confirmFilter(column: ColumnProps[T], selectedKeys: js.Array[String]): js.Any
+  def confirmFilter(column: ColumnProps[T], selectedKeys: js.Array[Key]): js.Any
 }
 
 object FilterMenuProps {
   @scala.inline
   def apply[T](
     column: ColumnProps[T],
-    confirmFilter: (ColumnProps[T], js.Array[String]) => js.Any,
+    confirmFilter: (ColumnProps[T], js.Array[Key]) => js.Any,
     dropdownPrefixCls: String,
     locale: TableLocale,
     prefixCls: String,

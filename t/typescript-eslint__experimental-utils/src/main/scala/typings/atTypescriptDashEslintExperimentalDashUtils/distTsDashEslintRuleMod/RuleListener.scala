@@ -7,6 +7,8 @@ import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDash
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.AssignmentExpression
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.AssignmentPattern
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.AwaitExpression
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.BigIntLiteral
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.BinaryExpression
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.BlockStatement
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.BreakStatement
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.CallExpression
@@ -30,6 +32,8 @@ import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDash
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.ForInStatement
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.ForOfStatement
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.ForStatement
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.FunctionDeclaration
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.FunctionExpression
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Identifier
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.IfStatement
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Import
@@ -52,6 +56,7 @@ import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDash
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.JSXSpreadChild
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.JSXText
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.LabeledStatement
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Literal
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.LogicalExpression
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.MemberExpression
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.MetaProperty
@@ -68,6 +73,7 @@ import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDash
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Super
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.SwitchCase
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.SwitchStatement
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSAbstractClassProperty
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSAbstractKeyword
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSAbstractMethodDefinition
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSAnyKeyword
@@ -77,15 +83,19 @@ import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDash
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSBigIntKeyword
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSBooleanKeyword
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSCallSignatureDeclaration
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSClassImplements
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSConditionalType
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSConstructSignatureDeclaration
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSConstructorType
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSDeclareFunction
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSDeclareKeyword
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSEmptyBodyFunctionExpression
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSEnumDeclaration
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSEnumMember
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSExportAssignment
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSExportKeyword
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSExternalModuleReference
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSFunctionType
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSImportEqualsDeclaration
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSImportType
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSIndexSignature
@@ -93,6 +103,7 @@ import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDash
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSInferType
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSInterfaceBody
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSInterfaceDeclaration
+import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSInterfaceHeritage
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSIntersectionType
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSLiteralType
 import typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSMappedType
@@ -183,6 +194,16 @@ trait RuleListener
   var AwaitExpression: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.AwaitExpression
+    ]
+  ] = js.undefined
+  var BigIntLiteral: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.BigIntLiteral
+    ]
+  ] = js.undefined
+  var BinaryExpression: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.BinaryExpression
     ]
   ] = js.undefined
   var BlockStatement: js.UndefOr[
@@ -300,6 +321,16 @@ trait RuleListener
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.ForStatement
     ]
   ] = js.undefined
+  var FunctionDeclaration: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.FunctionDeclaration
+    ]
+  ] = js.undefined
+  var FunctionExpression: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.FunctionExpression
+    ]
+  ] = js.undefined
   var Identifier: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Identifier
@@ -410,6 +441,11 @@ trait RuleListener
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.LabeledStatement
     ]
   ] = js.undefined
+  var Literal: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.Literal
+    ]
+  ] = js.undefined
   var LogicalExpression: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.LogicalExpression
@@ -490,6 +526,11 @@ trait RuleListener
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.SwitchStatement
     ]
   ] = js.undefined
+  var TSAbstractClassProperty: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSAbstractClassProperty
+    ]
+  ] = js.undefined
   var TSAbstractKeyword: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSAbstractKeyword
@@ -535,6 +576,11 @@ trait RuleListener
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSCallSignatureDeclaration
     ]
   ] = js.undefined
+  var TSClassImplements: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSClassImplements
+    ]
+  ] = js.undefined
   var TSConditionalType: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSConditionalType
@@ -545,6 +591,11 @@ trait RuleListener
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSConstructSignatureDeclaration
     ]
   ] = js.undefined
+  var TSConstructorType: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSConstructorType
+    ]
+  ] = js.undefined
   var TSDeclareFunction: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSDeclareFunction
@@ -553,6 +604,11 @@ trait RuleListener
   var TSDeclareKeyword: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSDeclareKeyword
+    ]
+  ] = js.undefined
+  var TSEmptyBodyFunctionExpression: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSEmptyBodyFunctionExpression
     ]
   ] = js.undefined
   var TSEnumDeclaration: js.UndefOr[
@@ -578,6 +634,11 @@ trait RuleListener
   var TSExternalModuleReference: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSExternalModuleReference
+    ]
+  ] = js.undefined
+  var TSFunctionType: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSFunctionType
     ]
   ] = js.undefined
   var TSImportEqualsDeclaration: js.UndefOr[
@@ -613,6 +674,11 @@ trait RuleListener
   var TSInterfaceDeclaration: js.UndefOr[
     RuleFunction[
       typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSInterfaceDeclaration
+    ]
+  ] = js.undefined
+  var TSInterfaceHeritage: js.UndefOr[
+    RuleFunction[
+      typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod.TSInterfaceHeritage
     ]
   ] = js.undefined
   var TSIntersectionType: js.UndefOr[
@@ -906,6 +972,8 @@ object RuleListener {
     AssignmentExpression: AssignmentExpression => Unit = null,
     AssignmentPattern: AssignmentPattern => Unit = null,
     AwaitExpression: AwaitExpression => Unit = null,
+    BigIntLiteral: BigIntLiteral => Unit = null,
+    BinaryExpression: BinaryExpression => Unit = null,
     BlockStatement: BlockStatement => Unit = null,
     BreakStatement: BreakStatement => Unit = null,
     CallExpression: CallExpression => Unit = null,
@@ -929,6 +997,8 @@ object RuleListener {
     ForInStatement: ForInStatement => Unit = null,
     ForOfStatement: ForOfStatement => Unit = null,
     ForStatement: ForStatement => Unit = null,
+    FunctionDeclaration: FunctionDeclaration => Unit = null,
+    FunctionExpression: FunctionExpression => Unit = null,
     Identifier: Identifier => Unit = null,
     IfStatement: IfStatement => Unit = null,
     Import: Import => Unit = null,
@@ -951,6 +1021,7 @@ object RuleListener {
     JSXSpreadChild: JSXSpreadChild => Unit = null,
     JSXText: JSXText => Unit = null,
     LabeledStatement: LabeledStatement => Unit = null,
+    Literal: Literal => Unit = null,
     LogicalExpression: LogicalExpression => Unit = null,
     MemberExpression: MemberExpression => Unit = null,
     MetaProperty: MetaProperty => Unit = null,
@@ -968,6 +1039,7 @@ object RuleListener {
     Super: Super => Unit = null,
     SwitchCase: SwitchCase => Unit = null,
     SwitchStatement: SwitchStatement => Unit = null,
+    TSAbstractClassProperty: TSAbstractClassProperty => Unit = null,
     TSAbstractKeyword: TSAbstractKeyword => Unit = null,
     TSAbstractMethodDefinition: TSAbstractMethodDefinition => Unit = null,
     TSAnyKeyword: TSAnyKeyword => Unit = null,
@@ -977,15 +1049,19 @@ object RuleListener {
     TSBigIntKeyword: TSBigIntKeyword => Unit = null,
     TSBooleanKeyword: TSBooleanKeyword => Unit = null,
     TSCallSignatureDeclaration: TSCallSignatureDeclaration => Unit = null,
+    TSClassImplements: TSClassImplements => Unit = null,
     TSConditionalType: TSConditionalType => Unit = null,
     TSConstructSignatureDeclaration: TSConstructSignatureDeclaration => Unit = null,
+    TSConstructorType: TSConstructorType => Unit = null,
     TSDeclareFunction: TSDeclareFunction => Unit = null,
     TSDeclareKeyword: TSDeclareKeyword => Unit = null,
+    TSEmptyBodyFunctionExpression: TSEmptyBodyFunctionExpression => Unit = null,
     TSEnumDeclaration: TSEnumDeclaration => Unit = null,
     TSEnumMember: TSEnumMember => Unit = null,
     TSExportAssignment: TSExportAssignment => Unit = null,
     TSExportKeyword: TSExportKeyword => Unit = null,
     TSExternalModuleReference: TSExternalModuleReference => Unit = null,
+    TSFunctionType: TSFunctionType => Unit = null,
     TSImportEqualsDeclaration: TSImportEqualsDeclaration => Unit = null,
     TSImportType: TSImportType => Unit = null,
     TSIndexSignature: TSIndexSignature => Unit = null,
@@ -993,6 +1069,7 @@ object RuleListener {
     TSInferType: TSInferType => Unit = null,
     TSInterfaceBody: TSInterfaceBody => Unit = null,
     TSInterfaceDeclaration: TSInterfaceDeclaration => Unit = null,
+    TSInterfaceHeritage: TSInterfaceHeritage => Unit = null,
     TSIntersectionType: TSIntersectionType => Unit = null,
     TSLiteralType: TSLiteralType => Unit = null,
     TSMappedType: TSMappedType => Unit = null,
@@ -1057,6 +1134,8 @@ object RuleListener {
     if (AssignmentExpression != null) __obj.updateDynamic("AssignmentExpression")(js.Any.fromFunction1(AssignmentExpression))
     if (AssignmentPattern != null) __obj.updateDynamic("AssignmentPattern")(js.Any.fromFunction1(AssignmentPattern))
     if (AwaitExpression != null) __obj.updateDynamic("AwaitExpression")(js.Any.fromFunction1(AwaitExpression))
+    if (BigIntLiteral != null) __obj.updateDynamic("BigIntLiteral")(js.Any.fromFunction1(BigIntLiteral))
+    if (BinaryExpression != null) __obj.updateDynamic("BinaryExpression")(js.Any.fromFunction1(BinaryExpression))
     if (BlockStatement != null) __obj.updateDynamic("BlockStatement")(js.Any.fromFunction1(BlockStatement))
     if (BreakStatement != null) __obj.updateDynamic("BreakStatement")(js.Any.fromFunction1(BreakStatement))
     if (CallExpression != null) __obj.updateDynamic("CallExpression")(js.Any.fromFunction1(CallExpression))
@@ -1080,6 +1159,8 @@ object RuleListener {
     if (ForInStatement != null) __obj.updateDynamic("ForInStatement")(js.Any.fromFunction1(ForInStatement))
     if (ForOfStatement != null) __obj.updateDynamic("ForOfStatement")(js.Any.fromFunction1(ForOfStatement))
     if (ForStatement != null) __obj.updateDynamic("ForStatement")(js.Any.fromFunction1(ForStatement))
+    if (FunctionDeclaration != null) __obj.updateDynamic("FunctionDeclaration")(js.Any.fromFunction1(FunctionDeclaration))
+    if (FunctionExpression != null) __obj.updateDynamic("FunctionExpression")(js.Any.fromFunction1(FunctionExpression))
     if (Identifier != null) __obj.updateDynamic("Identifier")(js.Any.fromFunction1(Identifier))
     if (IfStatement != null) __obj.updateDynamic("IfStatement")(js.Any.fromFunction1(IfStatement))
     if (Import != null) __obj.updateDynamic("Import")(js.Any.fromFunction1(Import))
@@ -1102,6 +1183,7 @@ object RuleListener {
     if (JSXSpreadChild != null) __obj.updateDynamic("JSXSpreadChild")(js.Any.fromFunction1(JSXSpreadChild))
     if (JSXText != null) __obj.updateDynamic("JSXText")(js.Any.fromFunction1(JSXText))
     if (LabeledStatement != null) __obj.updateDynamic("LabeledStatement")(js.Any.fromFunction1(LabeledStatement))
+    if (Literal != null) __obj.updateDynamic("Literal")(js.Any.fromFunction1(Literal))
     if (LogicalExpression != null) __obj.updateDynamic("LogicalExpression")(js.Any.fromFunction1(LogicalExpression))
     if (MemberExpression != null) __obj.updateDynamic("MemberExpression")(js.Any.fromFunction1(MemberExpression))
     if (MetaProperty != null) __obj.updateDynamic("MetaProperty")(js.Any.fromFunction1(MetaProperty))
@@ -1119,6 +1201,7 @@ object RuleListener {
     if (Super != null) __obj.updateDynamic("Super")(js.Any.fromFunction1(Super))
     if (SwitchCase != null) __obj.updateDynamic("SwitchCase")(js.Any.fromFunction1(SwitchCase))
     if (SwitchStatement != null) __obj.updateDynamic("SwitchStatement")(js.Any.fromFunction1(SwitchStatement))
+    if (TSAbstractClassProperty != null) __obj.updateDynamic("TSAbstractClassProperty")(js.Any.fromFunction1(TSAbstractClassProperty))
     if (TSAbstractKeyword != null) __obj.updateDynamic("TSAbstractKeyword")(js.Any.fromFunction1(TSAbstractKeyword))
     if (TSAbstractMethodDefinition != null) __obj.updateDynamic("TSAbstractMethodDefinition")(js.Any.fromFunction1(TSAbstractMethodDefinition))
     if (TSAnyKeyword != null) __obj.updateDynamic("TSAnyKeyword")(js.Any.fromFunction1(TSAnyKeyword))
@@ -1128,15 +1211,19 @@ object RuleListener {
     if (TSBigIntKeyword != null) __obj.updateDynamic("TSBigIntKeyword")(js.Any.fromFunction1(TSBigIntKeyword))
     if (TSBooleanKeyword != null) __obj.updateDynamic("TSBooleanKeyword")(js.Any.fromFunction1(TSBooleanKeyword))
     if (TSCallSignatureDeclaration != null) __obj.updateDynamic("TSCallSignatureDeclaration")(js.Any.fromFunction1(TSCallSignatureDeclaration))
+    if (TSClassImplements != null) __obj.updateDynamic("TSClassImplements")(js.Any.fromFunction1(TSClassImplements))
     if (TSConditionalType != null) __obj.updateDynamic("TSConditionalType")(js.Any.fromFunction1(TSConditionalType))
     if (TSConstructSignatureDeclaration != null) __obj.updateDynamic("TSConstructSignatureDeclaration")(js.Any.fromFunction1(TSConstructSignatureDeclaration))
+    if (TSConstructorType != null) __obj.updateDynamic("TSConstructorType")(js.Any.fromFunction1(TSConstructorType))
     if (TSDeclareFunction != null) __obj.updateDynamic("TSDeclareFunction")(js.Any.fromFunction1(TSDeclareFunction))
     if (TSDeclareKeyword != null) __obj.updateDynamic("TSDeclareKeyword")(js.Any.fromFunction1(TSDeclareKeyword))
+    if (TSEmptyBodyFunctionExpression != null) __obj.updateDynamic("TSEmptyBodyFunctionExpression")(js.Any.fromFunction1(TSEmptyBodyFunctionExpression))
     if (TSEnumDeclaration != null) __obj.updateDynamic("TSEnumDeclaration")(js.Any.fromFunction1(TSEnumDeclaration))
     if (TSEnumMember != null) __obj.updateDynamic("TSEnumMember")(js.Any.fromFunction1(TSEnumMember))
     if (TSExportAssignment != null) __obj.updateDynamic("TSExportAssignment")(js.Any.fromFunction1(TSExportAssignment))
     if (TSExportKeyword != null) __obj.updateDynamic("TSExportKeyword")(js.Any.fromFunction1(TSExportKeyword))
     if (TSExternalModuleReference != null) __obj.updateDynamic("TSExternalModuleReference")(js.Any.fromFunction1(TSExternalModuleReference))
+    if (TSFunctionType != null) __obj.updateDynamic("TSFunctionType")(js.Any.fromFunction1(TSFunctionType))
     if (TSImportEqualsDeclaration != null) __obj.updateDynamic("TSImportEqualsDeclaration")(js.Any.fromFunction1(TSImportEqualsDeclaration))
     if (TSImportType != null) __obj.updateDynamic("TSImportType")(js.Any.fromFunction1(TSImportType))
     if (TSIndexSignature != null) __obj.updateDynamic("TSIndexSignature")(js.Any.fromFunction1(TSIndexSignature))
@@ -1144,6 +1231,7 @@ object RuleListener {
     if (TSInferType != null) __obj.updateDynamic("TSInferType")(js.Any.fromFunction1(TSInferType))
     if (TSInterfaceBody != null) __obj.updateDynamic("TSInterfaceBody")(js.Any.fromFunction1(TSInterfaceBody))
     if (TSInterfaceDeclaration != null) __obj.updateDynamic("TSInterfaceDeclaration")(js.Any.fromFunction1(TSInterfaceDeclaration))
+    if (TSInterfaceHeritage != null) __obj.updateDynamic("TSInterfaceHeritage")(js.Any.fromFunction1(TSInterfaceHeritage))
     if (TSIntersectionType != null) __obj.updateDynamic("TSIntersectionType")(js.Any.fromFunction1(TSIntersectionType))
     if (TSLiteralType != null) __obj.updateDynamic("TSLiteralType")(js.Any.fromFunction1(TSLiteralType))
     if (TSMappedType != null) __obj.updateDynamic("TSMappedType")(js.Any.fromFunction1(TSMappedType))

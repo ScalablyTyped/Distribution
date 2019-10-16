@@ -1,14 +1,14 @@
 package typings.oja.ojaMod
 
-import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("oja", "EventContext")
 @js.native
-class EventContext ()
-  extends Instantiable1[(/* context */ EventContext) | (/* context */ js.Object), EventContext] {
+class EventContext protected () extends js.Object {
+  def this(context: js.Object) = this()
+  def this(context: EventContext) = this()
   def emit(name: String, value: js.Any): this.type = js.native
   def get(name: String): js.Any = js.native
   def on(`type`: String, handler: js.Function1[/* event */ js.Any, Unit]): this.type = js.native

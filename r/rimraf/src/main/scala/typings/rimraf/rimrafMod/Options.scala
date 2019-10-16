@@ -5,6 +5,7 @@ import typings.node.fsMod.PathLike
 import typings.node.fsMod.Stats
 import typings.rimraf.Fn_Buffer
 import typings.rimraf.Fn_Mode
+import typings.rimraf.Fn_Options
 import typings.rimraf.Typeofchmod
 import typings.rimraf.Typeoflstat
 import typings.rimraf.Typeofreaddir
@@ -28,7 +29,7 @@ trait Options extends js.Object {
   var readdir: js.UndefOr[Typeofreaddir] = js.undefined
   var readdirSync: js.UndefOr[Fn_Buffer] = js.undefined
   var rmdir: js.UndefOr[Typeofrmdir] = js.undefined
-  var rmdirSync: js.UndefOr[js.Function1[/* path */ PathLike, Unit]] = js.undefined
+  var rmdirSync: js.UndefOr[Fn_Options] = js.undefined
   var stat: js.UndefOr[Typeofstat] = js.undefined
   var statSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
   var unlink: js.UndefOr[Typeofunlink] = js.undefined
@@ -49,7 +50,7 @@ object Options {
     readdir: Typeofreaddir = null,
     readdirSync: Fn_Buffer = null,
     rmdir: Typeofrmdir = null,
-    rmdirSync: /* path */ PathLike => Unit = null,
+    rmdirSync: Fn_Options = null,
     stat: Typeofstat = null,
     statSync: /* path */ PathLike => Stats = null,
     unlink: Typeofunlink = null,
@@ -67,7 +68,7 @@ object Options {
     if (readdir != null) __obj.updateDynamic("readdir")(readdir)
     if (readdirSync != null) __obj.updateDynamic("readdirSync")(readdirSync)
     if (rmdir != null) __obj.updateDynamic("rmdir")(rmdir)
-    if (rmdirSync != null) __obj.updateDynamic("rmdirSync")(js.Any.fromFunction1(rmdirSync))
+    if (rmdirSync != null) __obj.updateDynamic("rmdirSync")(rmdirSync)
     if (stat != null) __obj.updateDynamic("stat")(stat)
     if (statSync != null) __obj.updateDynamic("statSync")(js.Any.fromFunction1(statSync))
     if (unlink != null) __obj.updateDynamic("unlink")(unlink)

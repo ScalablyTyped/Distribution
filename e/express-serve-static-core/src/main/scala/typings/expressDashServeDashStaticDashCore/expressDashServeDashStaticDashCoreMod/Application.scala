@@ -143,7 +143,7 @@ trait Application
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def delete[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
   /** Disable `setting`. */
-  def disable(setting: String): Application = js.native
+  def disable(setting: String): this.type = js.native
   /**
     * Check if `setting` is disabled.
     *
@@ -156,7 +156,7 @@ trait Application
     */
   def disabled(setting: String): Boolean = js.native
   /** Enable `setting`. */
-  def enable(setting: String): Application = js.native
+  def enable(setting: String): this.type = js.native
   /**
     * Check if `setting` is enabled (truthy).
     *
@@ -204,7 +204,7 @@ trait Application
       /* callback */ js.Function2[/* e */ js.Any, /* rendered */ String, Unit], 
       Unit
     ]
-  ): Application = js.native
+  ): this.type = js.native
   def get(name: String): js.Any = js.native
   def get(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
@@ -375,7 +375,7 @@ trait Application
     *
     * Mounted servers inherit their parent server's settings.
     */
-  def set(setting: String, `val`: js.Any): Application = js.native
+  def set(setting: String, `val`: js.Any): this.type = js.native
   def subscribe(path: PathParams, subApplication: Application): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
   def subscribe[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native

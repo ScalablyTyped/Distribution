@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "parquetjs"
-version := "0.10-dt-20190701Z-7b1399"
+version := "0.10-dt-20190701Z-2fad31"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.7-dt-20191008Z-c62b25",
-  "org.scalablytyped" %%% "node-int64" % "v0.4.0-dt-20190322Z-f87847",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "node-int64" % "v0.4.0-dt-20190322Z-8d60ba",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

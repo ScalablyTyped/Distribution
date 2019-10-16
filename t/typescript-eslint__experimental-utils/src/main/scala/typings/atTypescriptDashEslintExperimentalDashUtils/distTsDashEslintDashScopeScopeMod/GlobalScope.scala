@@ -13,7 +13,7 @@ object GlobalScope
   extends TopLevel[
       ScopeConstructor with (Instantiable2[
         /* scopeManager */ ScopeManager, 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 158 */ js.Any, 
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 160 */ js.Any, 
         GlobalScope
       ])
     ]

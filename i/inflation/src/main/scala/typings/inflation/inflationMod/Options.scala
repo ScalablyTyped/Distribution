@@ -3,10 +3,9 @@ package typings.inflation.inflationMod
 import typings.inflation.inflationStrings.deflate
 import typings.inflation.inflationStrings.gzip
 import typings.inflation.inflationStrings.identity
-import typings.node.NodeJS.TypedArray
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.zlibMod.ZlibOptions
 import typings.std.ArrayBuffer
-import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,7 @@ object Options {
   @scala.inline
   def apply(
     chunkSize: Int | Double = null,
-    dictionary: TypedArray | DataView | ArrayBuffer = null,
+    dictionary: ArrayBufferView | ArrayBuffer = null,
     finishFlush: Int | Double = null,
     flush: Int | Double = null,
     gzip: deflate | gzip | identity = null,

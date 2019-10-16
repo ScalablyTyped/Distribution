@@ -1,6 +1,7 @@
 package typings.stompit.libConnectMod
 
 import typings.node.netMod.IpcNetConnectOpts
+import typings.node.netMod.OnReadOpts
 import typings.node.netMod.Socket
 import typings.stompit.libOutgoingFrameStreamMod.^
 import typings.stompit.libSocketMod.CommandHandlers
@@ -30,6 +31,7 @@ object NetIpcConnectOptions {
     heartbeat: Heartbeat = null,
     heartbeatDelayMargin: Int | Double = null,
     heartbeatOutputMargin: Int | Double = null,
+    onread: OnReadOpts = null,
     outgoingFrameStream: ^ = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     resetDisconnect: js.UndefOr[Boolean] = js.undefined,
@@ -47,6 +49,7 @@ object NetIpcConnectOptions {
     if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat)
     if (heartbeatDelayMargin != null) __obj.updateDynamic("heartbeatDelayMargin")(heartbeatDelayMargin.asInstanceOf[js.Any])
     if (heartbeatOutputMargin != null) __obj.updateDynamic("heartbeatOutputMargin")(heartbeatOutputMargin.asInstanceOf[js.Any])
+    if (onread != null) __obj.updateDynamic("onread")(onread)
     if (outgoingFrameStream != null) __obj.updateDynamic("outgoingFrameStream")(outgoingFrameStream)
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
     if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect)

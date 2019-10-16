@@ -70,13 +70,12 @@ object antdComponents extends antdProps {
   @scala.inline
   def CollapsePanel: ComponentType[CollapsePanelProps] = js.constructorOf[typings.antd.esCollapseCollapsePanelMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CollapsePanelProps]]
   @scala.inline
-  def Column[T]: ComponentType[ColumnProps[T]] = js.constructorOf[typings.antd.esTableColumnMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[ColumnProps[T]]]
-  @scala.inline
-  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.antd.esTableColumnGroupMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ColumnGroupProps]]
-  @scala.inline
   def Comment: ComponentType[CommentProps] = js.constructorOf[typings.antd.esCommentMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CommentProps]]
   @scala.inline
-  def ConfigConsumer: ComponentType[ConfigConsumerProps[typings.antd.esConfigDashProviderMod.ConfigConsumerProps]] = js.constructorOf[typings.antd.esConfigDashProviderMod.ConfigConsumer].asInstanceOf[typings.react.reactMod.ComponentType[ConfigConsumerProps[typings.antd.esConfigDashProviderMod.ConfigConsumerProps]]]
+  def ConfigConsumer: ComponentType[
+    ConfigConsumerProps[typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps]
+  ] = js.constructorOf[typings.antd.esConfigDashProviderMod.ConfigConsumer].asInstanceOf[typings.react.reactMod.ComponentType[
+  ConfigConsumerProps[typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps]]]
   @scala.inline
   def ConfigDashProvider: ComponentType[ConfigDashProviderProps] = js.constructorOf[typings.antd.esConfigDashProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ConfigDashProviderProps]]
   @scala.inline
@@ -154,6 +153,8 @@ object antdComponents extends antdProps {
   @scala.inline
   def Menu: ComponentType[MenuProps] = js.constructorOf[typings.antd.esMenuMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MenuProps]]
   @scala.inline
+  def MenuDivider: ComponentType[MenuDividerProps] = typings.antd.esMod.Menu.Divider.asInstanceOf[typings.react.reactMod.ComponentType[MenuDividerProps]]
+  @scala.inline
   def MenuItem: ComponentType[MenuItemProps] = js.constructorOf[typings.antd.esMenuMenuItemMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MenuItemProps]]
   @scala.inline
   def Meta: ComponentType[MetaProps] = typings.antd.esCardMetaMod.default.asInstanceOf[typings.react.reactMod.ComponentType[MetaProps]]
@@ -218,7 +219,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.antd.esSwitchMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
   @scala.inline
-  def Table[T]: ComponentType[TableProps[T]] = js.constructorOf[typings.antd.esTableMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[TableProps[T]]]
+  def Table: ComponentType[TableProps] = js.constructorOf[typings.antd.esTableMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TableProps]]
   @scala.inline
   def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.antd.esTabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
   @scala.inline

@@ -1,6 +1,6 @@
 package typings.makeDashDir
 
-import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Typeoffdatasync extends js.Object {
     * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
     * @param fd A file descriptor.
     */
-  def apply(fd: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  def apply(fd: Double, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
     * @param fd A file descriptor.

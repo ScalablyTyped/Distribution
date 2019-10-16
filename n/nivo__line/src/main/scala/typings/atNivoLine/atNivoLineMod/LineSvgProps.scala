@@ -4,6 +4,7 @@ import typings.atNivoAxes.atNivoAxesMod.AxisProps
 import typings.atNivoColors.atNivoColorsMod.OrdinalColorsInstruction
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.CartesianMarkerProps
+import typings.atNivoCore.atNivoCoreMod.MotionProps
 import typings.atNivoCore.atNivoCoreMod.Theme
 import typings.atNivoLegends.atNivoLegendsMod.LegendProps
 import typings.atNivoLine.atNivoLineNumbers.`false`
@@ -23,8 +24,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof @nivo/core.Anon_Animate ]:? @nivo/core.Anon_Animate[P]} */ trait LineSvgProps extends LineProps {
+trait LineSvgProps
+  extends LineProps
+     with MotionProps {
   var areaBlendMode: js.UndefOr[String] = js.undefined
   var enablePointLabel: js.UndefOr[Boolean] = js.undefined
   var pointLabel: js.UndefOr[String] = js.undefined
@@ -36,6 +38,7 @@ object LineSvgProps {
   @scala.inline
   def apply(
     data: js.Array[LineSerieData],
+    animate: js.UndefOr[Boolean] = js.undefined,
     areaBaselineValue: LineValue = null,
     areaBlendMode: String = null,
     areaOpacity: Int | Double = null,
@@ -61,6 +64,8 @@ object LineSvgProps {
     lineWidth: Int | Double = null,
     margin: Box = null,
     markers: js.Array[CartesianMarkerProps] = null,
+    motionDamping: Int | Double = null,
+    motionStiffness: Int | Double = null,
     pointBorderColor: js.Any = null,
     pointBorderWidth: Int | Double = null,
     pointColor: js.Any = null,
@@ -78,6 +83,7 @@ object LineSvgProps {
     yScale: Scale = null
   ): LineSvgProps = {
     val __obj = js.Dynamic.literal(data = data)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (areaBaselineValue != null) __obj.updateDynamic("areaBaselineValue")(areaBaselineValue.asInstanceOf[js.Any])
     if (areaBlendMode != null) __obj.updateDynamic("areaBlendMode")(areaBlendMode)
     if (areaOpacity != null) __obj.updateDynamic("areaOpacity")(areaOpacity.asInstanceOf[js.Any])
@@ -103,6 +109,8 @@ object LineSvgProps {
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (markers != null) __obj.updateDynamic("markers")(markers)
+    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
+    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
     if (pointBorderColor != null) __obj.updateDynamic("pointBorderColor")(pointBorderColor)
     if (pointBorderWidth != null) __obj.updateDynamic("pointBorderWidth")(pointBorderWidth.asInstanceOf[js.Any])
     if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor)

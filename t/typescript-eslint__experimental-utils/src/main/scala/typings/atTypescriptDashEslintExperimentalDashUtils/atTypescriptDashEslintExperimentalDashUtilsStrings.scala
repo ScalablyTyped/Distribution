@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 
 object atTypescriptDashEslintExperimentalDashUtilsStrings {
   @js.native
-  sealed trait `@typescript-eslint/parser` extends js.Object
-  
-  @js.native
   sealed trait `Best Practices` extends js.Object
   
   @js.native
@@ -47,9 +44,6 @@ object atTypescriptDashEslintExperimentalDashUtilsStrings {
   sealed trait Variables extends js.Object
   
   @js.native
-  sealed trait `babel-eslint` extends js.Object
-  
-  @js.native
   sealed trait block extends ScopeType
   
   @js.native
@@ -72,12 +66,6 @@ object atTypescriptDashEslintExperimentalDashUtilsStrings {
   
   @js.native
   sealed trait error extends RuleLevel
-  
-  @js.native
-  sealed trait espree extends js.Object
-  
-  @js.native
-  sealed trait esprima extends js.Object
   
   @js.native
   sealed trait `for` extends ScopeType
@@ -125,8 +113,6 @@ object atTypescriptDashEslintExperimentalDashUtilsStrings {
   sealed trait `with` extends ScopeType
   
   @scala.inline
-  def `@typescript-eslint/parser`: `@typescript-eslint/parser` = "@typescript-eslint/parser".asInstanceOf[`@typescript-eslint/parser`]
-  @scala.inline
   def `Best Practices`: `Best Practices` = "Best Practices".asInstanceOf[`Best Practices`]
   @scala.inline
   def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
@@ -151,8 +137,6 @@ object atTypescriptDashEslintExperimentalDashUtilsStrings {
   @scala.inline
   def Variables: Variables = "Variables".asInstanceOf[Variables]
   @scala.inline
-  def `babel-eslint`: `babel-eslint` = "babel-eslint".asInstanceOf[`babel-eslint`]
-  @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline
   def `catch`: `catch` = "catch".asInstanceOf[`catch`]
@@ -168,10 +152,6 @@ object atTypescriptDashEslintExperimentalDashUtilsStrings {
   def enum: enum = "enum".asInstanceOf[enum]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def espree: espree = "espree".asInstanceOf[espree]
-  @scala.inline
-  def esprima: esprima = "esprima".asInstanceOf[esprima]
   @scala.inline
   def `for`: `for` = "for".asInstanceOf[`for`]
   @scala.inline

@@ -22,9 +22,9 @@ object StylesManager extends js.Object {
   var Styles: StringDictionary[String] = js.native
   var ThemeColors: StringDictionary[StringDictionary[String]] = js.native
   var ThemeCss: StringDictionary[String] = js.native
-  var bemThemeCss: StringDictionary[String] = js.native
   var bootstrapThemeCss: StringDictionary[String] = js.native
   var bootstrapmaterialThemeCss: StringDictionary[String] = js.native
+  var modernThemeCss: StringDictionary[String] = js.native
   def applyTheme(): Unit = js.native
   def applyTheme(themeName: String): Unit = js.native
   def applyTheme(themeName: String, themeSelector: String): Unit = js.native

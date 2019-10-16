@@ -1,6 +1,6 @@
 package typings.antd.esBadgeScrollNumberMod
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentElement
 import typings.react.reactMod.ReactElement

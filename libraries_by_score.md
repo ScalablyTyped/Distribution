@@ -90,6 +90,7 @@
 | 0.8745231534648821 | [morgan](./m/morgan) | HTTP request logger middleware for node.js
 | 0.8732744199048603 | [history](./h/history) | Manage session history with JavaScript
 | 0.8728791482835117 | [lodash_dot_keys](./l/lodash_dot_keys) | The lodash method _.keys exported as a module.
+| 0.8727609029501797 | [nodemon](./n/nodemon) | Simple monitor script for use during development o
 | 0.8719751298288498 | [ora](./o/ora) | Elegant terminal spinner
 | 0.8713673378924324 | [connect-history-api-fallb](./c/connect-history-api-fallback) | Provides a fallback for non-existing directories s
 | 0.87112358186792 | [through](./t/through) | simplified stream construction
@@ -588,6 +589,7 @@
 | 0.8018108065311162 | [eslint-scope](./e/eslint-scope) | ECMAScript scope analyzer for ESLint
 | 0.801790901463368 | [smart-buffer](./s/smart-buffer) | smart-buffer is a Buffer wrapper that adds automat
 | 0.801764989423809 | [mongoose](./m/mongoose) | Mongoose MongoDB ODM
+| 0.8016298352536124 | [ignore-walk](./i/ignore-walk) | Nested/recursive .gitignore/.npmignore parsing and
 | 0.8015940399995104 | [term-size](./t/term-size) | Reliably get the terminal window size (columns & r
 | 0.8015645865577572 | [serverless](./s/serverless) | Serverless Framework - Build web, mobile and IoT a
 | 0.8015414303934567 | [lodash_dot_partialright](./l/lodash_dot_partialright) | The lodash method _.partialRight exported as a mod
@@ -1135,6 +1137,7 @@
 | 0.7651559183581977 | [d3-timer](./d/d3-timer) | An efficient queue capable of managing thousands o
 | 0.7650614637544466 | [p-map-series](./p/p-map-series) | Map over promises serially
 | 0.7649956703481033 | [plur](./p/plur) | Pluralize a word
+| 0.7648664465658256 | [rc-menu](./r/rc-menu) | menu ui component for react
 | 0.764850498620284 | [dottie](./d/dottie) | Fast and safe nested object access and manipulatio
 | 0.7648302881450297 | [is-unc-path](./i/is-unc-path) | Returns true if a filepath is a windows UNC file p
 | 0.764813978584676 | [lodash_dot_topairsin](./l/lodash_dot_topairsin) | The lodash method _.toPairsIn exported as a module
@@ -2765,6 +2768,7 @@
 | 0.6849478578431111 | [streamtest](./s/streamtest) | Streams test library
 | 0.684946728223282 | [scroll](./s/scroll) | animates the scroll top/left position of an elemen
 | 0.6849454423744376 | [koa-pino-logger](./k/koa-pino-logger) | pino logging koa middleware
+| 0.6849226509392808 | [wildstring](./w/wildstring) | Simple String Wildcard Handling
 | 0.6848961418355215 | [formatjs__intl-relativeti](./f/formatjs__intl-relativetimeformat) | Formats JavaScript dates to relative time strings.
 | 0.6848477484431694 | [qs-middleware](./q/qs-middleware) | Connect querystring middleware
 | 0.6847216996884204 | [chmodr](./c/chmodr) | like chmod -R
@@ -3346,6 +3350,7 @@
 | 0.6621869997672357 | [cavy](./c/cavy) | An integration test framework for React Native.
 | 0.6621460670619517 | [fontfaceobserver](./f/fontfaceobserver) | Detect if web fonts are available
 | 0.6621112641366661 | [smpte-timecode](./s/smpte-timecode) | JavaScript implementation of SMPTE timecode type
+| 0.6619793523153089 | [p-fifo](./p/p-fifo) | Promised First-In-First-Out buffer. Await on push 
 | 0.6619365517345204 | [node-vagrant](./n/node-vagrant) | Node js wrapper for vagrant CLI - command line too
 | 0.6619225073110262 | [rc-time-picker](./r/rc-time-picker) | React TimePicker
 | 0.6618651436352434 | [json-to-ast](./j/json-to-ast) | JSON AST parser
@@ -3426,6 +3431,7 @@
 | 0.6587727643920451 | [aurelia-knockout](./a/aurelia-knockout) | A Knockout plugin for Aurelia.
 | 0.6586929646845797 | [passport-client-cert](./p/passport-client-cert) | Passport.js strategy for TLS client certificate au
 | 0.6585966552844653 | [multi-typeof](./m/multi-typeof) | Check something against an array of types.
+| 0.6585886690726008 | [jest-matcher-one-of](./j/jest-matcher-one-of) | A Jest matcher to test if a value is one of many (
 | 0.6585374320175941 | [angular-es](./a/angular-es) | Angular 1.x ES helper
 | 0.6585131702530544 | [leap-year](./l/leap-year) | Check if a year is a leap year
 | 0.6584293432348953 | [react-wow](./r/react-wow) | Using CSS animation in your react components.
@@ -3509,6 +3515,7 @@
 | 0.6551021949120913 | [radium](./r/radium) | A set of tools to manage inline styles on React el
 | 0.6550468739750486 | [env-to-object](./e/env-to-object) | Maps environment variables to a configuration obje
 | 0.6550278638259956 | [use-subscription](./u/use-subscription) | Reusable hooks
+| 0.6549994214974886 | [hig__button](./h/hig__button) | HIG Button
 | 0.6548985862117636 | [create-xpub](./c/create-xpub) | Create a BIP32 extended public key
 | 0.6548917720134584 | [jquery-slugify](./j/jquery-slugify) | Just another another (another) url slug plugin for
 | 0.6547780877199575 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s
@@ -3692,6 +3699,7 @@
 | 0.6453099175691255 | [centra](./c/centra) | The core lightweight HTTP client for Node
 | 0.6452223253753204 | [devtools-detect](./d/devtools-detect) | Detect if DevTools is open and its orientation
 | 0.6451790430399725 | [feather-route-matcher](./f/feather-route-matcher) | featherweight url to handler matching
+| 0.645044497668368 | [image-thumbnail](./i/image-thumbnail) | Generate an image thumbnail.
 | 0.6449809062851803 | [rmc-calendar](./r/rmc-calendar) | React Mobile Calendar Component(web and react-nati
 | 0.644940752408602 | [compressed-extensions](./c/compressed-extensions) | List of compressed file extensions
 | 0.6448658173961332 | [flushable](./f/flushable) | A flushable timeout function
@@ -4318,6 +4326,7 @@
 | 0.5969780572730958 | [react-motion](./r/react-motion) | A spring that solves your animation problems.
 | 0.5969282910825591 | [node-openload](./n/node-openload) | An openload.co API handler
 | 0.5969021990783835 | [koa-send](./k/koa-send) | Transfer static files
+| 0.5968619637824756 | [naja](./n/naja) | Modern AJAX library for Nette Framework
 | 0.596539980543354 | [maildev](./m/maildev) | SMTP Server and Web Interface for reading and test
 | 0.5962382363706545 | [react-native-safe-area](./r/react-native-safe-area) | React Native module to get Safe Area Insets for iO
 | 0.596079207980924 | [net-ticks](./n/net-ticks) | .NET DateTime ticks to JS Date conversion utility
@@ -5929,6 +5938,7 @@
 | 0.3769757680401652 | [detect-emoji-support](./d/detect-emoji-support) | Detect support for emoji character sets.
 | 0.376897331039334 | [weapp-api](./w/weapp-api) | wechat api
 | 0.37681863243955394 | [novnc-core](./n/novnc-core) | noVNC core files for using with node
+| 0.3766999463639908 | [styled-system__should-for](./s/styled-system__should-forward-prop) | Utility for filtering Styled System props with Emo
 | 0.3766044917916256 | [db_dot_js](./d/db_dot_js) | db.js is a wrapper for IndexedDB to make it easier
 | 0.37658735892892997 | [leaflet_dot_awesome-marke](./l/leaflet_dot_awesome-markers) | Leaflet Awesome Markers - allows you to display cu
 | 0.37653813677375286 | [redux-infinite-scroll](./r/redux-infinite-scroll) | React infinite scroll component designed for a Red

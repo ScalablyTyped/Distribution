@@ -8,7 +8,7 @@ trait TSTypeAssertion
   extends TSUnaryExpression
      with BaseNode
      with Node {
-  var expression: UnaryExpression
+  var expression: Expression
   var `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeAssertion
   var typeAnnotation: TypeNode
 }
@@ -16,7 +16,7 @@ trait TSTypeAssertion
 object TSTypeAssertion {
   @scala.inline
   def apply(
-    expression: UnaryExpression,
+    expression: Expression,
     loc: SourceLocation,
     range: Range,
     `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.TSTypeAssertion,

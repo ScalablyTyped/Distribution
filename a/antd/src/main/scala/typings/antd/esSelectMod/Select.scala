@@ -1,6 +1,6 @@
 package typings.antd.esSelectMod
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.esConfigDashProviderRenderEmptyMod.RenderEmptyHandler
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element

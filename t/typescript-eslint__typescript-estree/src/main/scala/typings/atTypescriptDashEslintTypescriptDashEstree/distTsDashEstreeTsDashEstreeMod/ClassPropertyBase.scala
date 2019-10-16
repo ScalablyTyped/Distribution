@@ -14,7 +14,7 @@ trait ClassPropertyBase extends BaseNode {
   var readonly: js.UndefOr[Boolean] = js.undefined
   var static: Boolean
   var typeAnnotation: js.UndefOr[TSTypeAnnotation] = js.undefined
-  var value: Expression
+  var value: Expression | Null
 }
 
 object ClassPropertyBase {
@@ -25,16 +25,16 @@ object ClassPropertyBase {
     loc: SourceLocation,
     range: Range,
     static: Boolean,
-    value: Expression,
     accessibility: Accessibility = null,
     decorators: js.Array[Decorator] = null,
     definite: js.UndefOr[Boolean] = js.undefined,
     optional: js.UndefOr[Boolean] = js.undefined,
     parent: Node = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
-    typeAnnotation: TSTypeAnnotation = null
+    typeAnnotation: TSTypeAnnotation = null,
+    value: Expression = null
   ): ClassPropertyBase = {
-    val __obj = js.Dynamic.literal(computed = computed, key = key, loc = loc, range = range, static = static, value = value)
+    val __obj = js.Dynamic.literal(computed = computed, key = key, loc = loc, range = range, static = static)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (!js.isUndefined(definite)) __obj.updateDynamic("definite")(definite)
@@ -42,6 +42,7 @@ object ClassPropertyBase {
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ClassPropertyBase]
   }
 }

@@ -7,31 +7,56 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fs", "Stats")
 @js.native
-class Stats () extends js.Object {
-  var atime: Date = js.native
-  var atimeMs: Double = js.native
-  var birthtime: Date = js.native
-  var birthtimeMs: Double = js.native
-  var blksize: Double = js.native
-  var blocks: Double = js.native
-  var ctime: Date = js.native
-  var ctimeMs: Double = js.native
-  var dev: Double = js.native
-  var gid: Double = js.native
-  var ino: Double = js.native
-  var mode: Double = js.native
-  var mtime: Date = js.native
-  var mtimeMs: Double = js.native
-  var nlink: Double = js.native
-  var rdev: Double = js.native
-  var size: Double = js.native
-  var uid: Double = js.native
-  def isBlockDevice(): Boolean = js.native
-  def isCharacterDevice(): Boolean = js.native
-  def isDirectory(): Boolean = js.native
-  def isFIFO(): Boolean = js.native
-  def isFile(): Boolean = js.native
-  def isSocket(): Boolean = js.native
-  def isSymbolicLink(): Boolean = js.native
+class Stats () extends StatsBase[Double] {
+  /* CompleteClass */
+  override var atime: Date = js.native
+  /* CompleteClass */
+  override var atimeMs: Double = js.native
+  /* CompleteClass */
+  override var birthtime: Date = js.native
+  /* CompleteClass */
+  override var birthtimeMs: Double = js.native
+  /* CompleteClass */
+  override var blksize: Double = js.native
+  /* CompleteClass */
+  override var blocks: Double = js.native
+  /* CompleteClass */
+  override var ctime: Date = js.native
+  /* CompleteClass */
+  override var ctimeMs: Double = js.native
+  /* CompleteClass */
+  override var dev: Double = js.native
+  /* CompleteClass */
+  override var gid: Double = js.native
+  /* CompleteClass */
+  override var ino: Double = js.native
+  /* CompleteClass */
+  override var mode: Double = js.native
+  /* CompleteClass */
+  override var mtime: Date = js.native
+  /* CompleteClass */
+  override var mtimeMs: Double = js.native
+  /* CompleteClass */
+  override var nlink: Double = js.native
+  /* CompleteClass */
+  override var rdev: Double = js.native
+  /* CompleteClass */
+  override var size: Double = js.native
+  /* CompleteClass */
+  override var uid: Double = js.native
+  /* CompleteClass */
+  override def isBlockDevice(): Boolean = js.native
+  /* CompleteClass */
+  override def isCharacterDevice(): Boolean = js.native
+  /* CompleteClass */
+  override def isDirectory(): Boolean = js.native
+  /* CompleteClass */
+  override def isFIFO(): Boolean = js.native
+  /* CompleteClass */
+  override def isFile(): Boolean = js.native
+  /* CompleteClass */
+  override def isSocket(): Boolean = js.native
+  /* CompleteClass */
+  override def isSymbolicLink(): Boolean = js.native
 }
 

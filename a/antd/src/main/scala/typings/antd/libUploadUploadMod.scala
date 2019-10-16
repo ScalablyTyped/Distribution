@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.libUploadInterfaceMod.RcFile
 import typings.antd.libUploadInterfaceMod.UploadChangeParam
 import typings.antd.libUploadInterfaceMod.UploadFile
@@ -32,7 +32,6 @@ object libUploadUploadMod extends js.Object {
     def clearProgressTimer(): Unit = js.native
     @JSName("componentWillUnmount")
     def componentWillUnmount_MUpload(): Unit = js.native
-    def handleManualRemove(file: UploadFile): Unit = js.native
     def handleRemove(file: UploadFile): Unit = js.native
     def onChange(info: UploadChangeParam[UploadFile]): Unit = js.native
     def onError(error: Error, response: js.Any, file: UploadFile): Unit = js.native

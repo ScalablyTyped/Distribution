@@ -1,10 +1,5 @@
 package typings.atNivoGeo
 
-import typings.atNivoCore.atNivoCoreMod.Dimensions
-import typings.atNivoGeo.atNivoGeoMod.ChoroplethCanvasProps
-import typings.atNivoGeo.atNivoGeoMod.ChoroplethProps
-import typings.atNivoGeo.atNivoGeoMod.GeoMapCanvasProps
-import typings.atNivoGeo.atNivoGeoMod.GeoMapProps
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,17 +7,13 @@ import scala.scalajs.js.annotation._
 
 object atNivoGeoComponents extends atNivoGeoProps {
   @scala.inline
-  def Choropleth: ComponentType[ChoroplethProps with Dimensions] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.Choropleth].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoGeo.atNivoGeoMod.ChoroplethProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def Choropleth: ComponentType[ChoroplethProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.Choropleth].asInstanceOf[typings.react.reactMod.ComponentType[ChoroplethProps]]
   @scala.inline
-  def ChoroplethCanvas: ComponentType[ChoroplethCanvasProps with Dimensions] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ChoroplethCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoGeo.atNivoGeoMod.ChoroplethCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def ChoroplethCanvas: ComponentType[ChoroplethCanvasProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ChoroplethCanvas].asInstanceOf[typings.react.reactMod.ComponentType[ChoroplethCanvasProps]]
   @scala.inline
-  def GeoMap: ComponentType[GeoMapProps with Dimensions] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.GeoMap].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoGeo.atNivoGeoMod.GeoMapProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def GeoMap: ComponentType[GeoMapProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.GeoMap].asInstanceOf[typings.react.reactMod.ComponentType[GeoMapProps]]
   @scala.inline
-  def GeoMapCanvas: ComponentType[GeoMapCanvasProps with Dimensions] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.GeoMapCanvas].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.atNivoGeo.atNivoGeoMod.GeoMapCanvasProps with typings.atNivoCore.atNivoCoreMod.Dimensions]]
+  def GeoMapCanvas: ComponentType[GeoMapCanvasProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.GeoMapCanvas].asInstanceOf[typings.react.reactMod.ComponentType[GeoMapCanvasProps]]
   @scala.inline
   def ResponsiveChoropleth: ComponentType[ResponsiveChoroplethProps] = js.constructorOf[typings.atNivoGeo.atNivoGeoMod.ResponsiveChoropleth].asInstanceOf[typings.react.reactMod.ComponentType[ResponsiveChoroplethProps]]
   @scala.inline

@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => child-process-promise, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/child-process-promise/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/child-process-promise),TsIdentLibrarySimple(child-process-promise)),TsIdentModule(None,List(child-process-promise))) [id => child-process-promise, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(child-process-promise)) [id => child-process-promise, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(child-process-promise) [id => child-process-promise, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(child-process-promise) [id => child-process-promise, phase => typescript] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(exec) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(exec) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(exec) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise))] 

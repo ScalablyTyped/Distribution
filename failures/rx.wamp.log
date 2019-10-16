@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp),TsIdentLibrarySimple(rx.wamp)),TsIdentModule(None,List(rx.wamp))) [id => rx.wamp, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rx.wamp)) [id => rx.wamp, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(fromConnection) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(fromPubSubPattern) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(subscriber) [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsDeclInterface(IObservableWampStatic))] 

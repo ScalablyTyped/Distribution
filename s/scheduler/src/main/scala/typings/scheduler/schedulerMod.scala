@@ -34,13 +34,14 @@ object schedulerMod extends js.Object {
   def unstable_continueExecution(): Unit = js.native
   def unstable_getCurrentPriorityLevel(): Double = js.native
   def unstable_getFirstCallbackNode(): CallbackNode | Null = js.native
+  def unstable_next[T](eventHandler: js.Function0[T]): T = js.native
   def unstable_now(): Double = js.native
   def unstable_pauseExecution(): Unit = js.native
-  def unstable_runWithPriority[T](priorityLevel: Double, eventHandler: js.Function0[T]): js.UndefOr[T] = js.native
+  def unstable_runWithPriority[T](priorityLevel: Double, eventHandler: js.Function0[T]): T = js.native
   def unstable_scheduleCallback(priorityLevel: Double, callback: FrameCallbackType): CallbackNode = js.native
   def unstable_scheduleCallback(priorityLevel: Double, callback: FrameCallbackType, options: Anon_Delay): CallbackNode = js.native
   def unstable_shouldYield(): Boolean = js.native
-  def unstable_wrapCallback(callback: FrameCallbackType): js.Function0[js.UndefOr[FrameCallbackType]] = js.native
+  def unstable_wrapCallback(callback: FrameCallbackType): js.Function0[FrameCallbackType] = js.native
   type FrameCallbackType = js.Function0[
     (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit
   ]

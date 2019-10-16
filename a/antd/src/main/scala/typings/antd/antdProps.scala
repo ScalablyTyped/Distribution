@@ -109,12 +109,6 @@ trait antdProps {
   def CollapsePanelProps: typings.antd.esCollapseCollapsePanelMod.CollapsePanelProps.type = typings.antd.esCollapseCollapsePanelMod.CollapsePanelProps
   type CollapsePanelProps = typings.antd.esCollapseCollapsePanelMod.CollapsePanelProps
   @scala.inline
-  def ColumnProps: typings.antd.esTableInterfaceMod.ColumnProps.type = typings.antd.esTableInterfaceMod.ColumnProps
-  type ColumnProps[T] = typings.antd.esTableInterfaceMod.ColumnProps[T]
-  @scala.inline
-  def ColumnGroupProps: typings.antd.esTableColumnGroupMod.ColumnGroupProps.type = typings.antd.esTableColumnGroupMod.ColumnGroupProps
-  type ColumnGroupProps = typings.antd.esTableColumnGroupMod.ColumnGroupProps
-  @scala.inline
   def CommentProps: typings.antd.esCommentMod.CommentProps.type = typings.antd.esCommentMod.CommentProps
   type CommentProps = typings.antd.esCommentMod.CommentProps
   @scala.inline
@@ -235,6 +229,9 @@ trait antdProps {
   def MenuProps: typings.antd.esMenuMod.MenuProps.type = typings.antd.esMenuMod.MenuProps
   type MenuProps = typings.antd.esMenuMod.MenuProps
   @scala.inline
+  def MenuDividerProps: typings.rcDashMenu.libDividerMod.DividerProps.type = typings.rcDashMenu.libDividerMod.DividerProps
+  type MenuDividerProps = typings.rcDashMenu.libDividerMod.DividerProps
+  @scala.inline
   def MenuItemProps: typings.antd.esMenuMenuItemMod.MenuItemProps.type = typings.antd.esMenuMenuItemMod.MenuItemProps
   type MenuItemProps = typings.antd.esMenuMenuItemMod.MenuItemProps
   @scala.inline
@@ -322,8 +319,8 @@ trait antdProps {
   def SwitchProps: typings.antd.esSwitchMod.SwitchProps.type = typings.antd.esSwitchMod.SwitchProps
   type SwitchProps = typings.antd.esSwitchMod.SwitchProps
   @scala.inline
-  def TableProps: typings.antd.esTableInterfaceMod.TableProps.type = typings.antd.esTableInterfaceMod.TableProps
-  type TableProps[T] = typings.antd.esTableInterfaceMod.TableProps[T]
+  def TableProps: typings.antd.PickTablePropsanyloadingfooterstyletitlescrollsize.type = typings.antd.PickTablePropsanyloadingfooterstyletitlescrollsize
+  type TableProps = PickTablePropsanyloadingfooterstyletitlescrollsize
   @scala.inline
   def TabsProps: typings.antd.esTabsMod.TabsProps.type = typings.antd.esTabsMod.TabsProps
   type TabsProps = typings.antd.esTabsMod.TabsProps

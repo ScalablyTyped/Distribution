@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ember-qunit"
-version := "3.4-dt-20191003Z-763a0b"
+version := "3.4-dt-20191003Z-30d2e0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember" % "3.1-dt-20191003Z-5780cb",
-  "org.scalablytyped" %%% "ember-test-helpers" % "1.0-dt-20191003Z-6eee41",
+  "org.scalablytyped" %%% "ember" % "3.1-dt-20191015Z-5780cb",
+  "org.scalablytyped" %%% "ember-test-helpers" % "1.0-dt-20191003Z-d95399",
   "org.scalablytyped" %%% "ember__application" % "3.0-dt-20190301Z-1892a0",
   "org.scalablytyped" %%% "ember__array" % "3.0-dt-20190923Z-b11e15",
   "org.scalablytyped" %%% "ember__component" % "3.0-dt-20190923Z-8d311d",

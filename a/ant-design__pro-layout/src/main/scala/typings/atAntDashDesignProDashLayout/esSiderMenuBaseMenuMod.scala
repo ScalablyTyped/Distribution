@@ -95,6 +95,7 @@ object esSiderMenuBaseMenuMod extends js.Object {
         ]
       ] = js.native
     var mode: js.UndefOr[MenuMode] = js.native
+    var motion: js.UndefOr[js.Object] = js.native
     var multiple: js.UndefOr[Boolean] = js.native
     var navTheme: js.UndefOr[MenuTheme] = js.native
     var onClick: js.UndefOr[js.Function1[/* param */ ClickParam, Unit]] = js.native
@@ -103,9 +104,9 @@ object esSiderMenuBaseMenuMod extends js.Object {
     var onMouseEnter: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.native
     var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[String], Unit]] = js.native
     var onSelect: js.UndefOr[js.Function1[/* param */ SelectParam, Unit]] = js.native
-    var openAnimation: js.UndefOr[String | js.Object] = js.native
+    var openAnimation: js.UndefOr[String] = js.native
     var openKeys: js.UndefOr[WithFalse[js.Array[String]]] = js.native
-    var openTransitionName: js.UndefOr[String | js.Object] = js.native
+    var openTransitionName: js.UndefOr[String] = js.native
     var overflowedIndicator: js.UndefOr[ReactNode] = js.native
     var prefixCls: js.UndefOr[String] = js.native
     var route: js.UndefOr[Route] = js.native

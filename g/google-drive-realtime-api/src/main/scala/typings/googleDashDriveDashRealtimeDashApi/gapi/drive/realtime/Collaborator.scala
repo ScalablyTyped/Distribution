@@ -1,23 +1,22 @@
 package typings.googleDashDriveDashRealtimeDashApi.gapi.drive.realtime
 
-import org.scalablytyped.runtime.Instantiable8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("gapi.drive.realtime.Collaborator")
 @js.native
-class Collaborator () extends Instantiable8[
-      /* sessionId */ String, 
-      /* userId */ String, 
-      /* displayName */ String, 
-      /* color */ String, 
-      /* isMe */ Boolean, 
-      /* isAnonymous */ Boolean, 
-      /* photoUrl */ String, 
-      /* permissionId */ String, 
-      Collaborator
-    ] {
+class Collaborator protected () extends js.Object {
+  def this(
+    sessionId: String,
+    userId: String,
+    displayName: String,
+    color: String,
+    isMe: Boolean,
+    isAnonymous: Boolean,
+    photoUrl: String,
+    permissionId: String
+  ) = this()
   // The HTML color associated with this collaborator. When possible, collaborators are assigned unique colors.
   var color: String = js.native
   // The display name for this collaborator.

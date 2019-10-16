@@ -1,22 +1,25 @@
 package typings.antd
 
+import typings.antd.esTableInterfaceMod.ColumnProps
 import typings.antd.esTableInterfaceMod.SortOrder
 import typings.antd.esTableInterfaceMod.TableStateFilters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Filters extends js.Object {
+trait Anon_Filters[T] extends js.Object {
   var filters: TableStateFilters
+  var sortColumn: js.UndefOr[ColumnProps[T] | Null] = js.undefined
   var sortOrder: js.UndefOr[SortOrder] = js.undefined
 }
 
 object Anon_Filters {
   @scala.inline
-  def apply(filters: TableStateFilters, sortOrder: SortOrder = null): Anon_Filters = {
+  def apply[T](filters: TableStateFilters, sortColumn: ColumnProps[T] = null, sortOrder: SortOrder = null): Anon_Filters[T] = {
     val __obj = js.Dynamic.literal(filters = filters)
+    if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn)
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
-    __obj.asInstanceOf[Anon_Filters]
+    __obj.asInstanceOf[Anon_Filters[T]]
   }
 }
 

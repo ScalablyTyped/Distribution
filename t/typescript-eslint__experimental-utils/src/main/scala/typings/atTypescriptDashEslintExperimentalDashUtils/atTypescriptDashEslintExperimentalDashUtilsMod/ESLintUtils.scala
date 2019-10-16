@@ -44,7 +44,7 @@ object ESLintUtils extends js.Object {
   def deepMerge(): Record[String, _] = js.native
   def deepMerge(first: ObjectLike[_]): Record[String, _] = js.native
   def deepMerge(first: ObjectLike[_], second: ObjectLike[_]): Record[String, _] = js.native
-  def isObjectNotArray[T /* <: js.Object */](obj: T): /* is T */ Boolean = js.native
-  def isObjectNotArray[T /* <: js.Object */](obj: js.Array[_]): /* is T */ Boolean = js.native
+  def isObjectNotArray[T /* <: ObjectLike[_] */](obj: js.Any): /* is T */ Boolean = js.native
+  def isObjectNotArray[T /* <: ObjectLike[_] */](obj: js.Array[_]): /* is T */ Boolean = js.native
 }
 

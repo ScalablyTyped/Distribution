@@ -1,7 +1,7 @@
 package typings.antd
 
 import typings.antd.esCheckboxCheckboxMod.AbstractCheckboxProps
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.esRadioInterfaceMod.RadioChangeEvent
 import typings.antd.esRadioRadioButtonMod.RadioButton
 import typings.antd.esRadioRadioButtonMod.RadioButtonProps

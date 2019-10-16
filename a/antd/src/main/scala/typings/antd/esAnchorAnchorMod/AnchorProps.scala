@@ -19,6 +19,8 @@ trait AnchorProps extends js.Object {
   /** Return customize highlight anchor */
   var getCurrentAnchor: js.UndefOr[js.Function0[String]] = js.undefined
   var offsetTop: js.UndefOr[Double] = js.undefined
+  /** Listening event when scrolling change active link */
+  var onChange: js.UndefOr[js.Function1[/* currentActiveLink */ String, Unit]] = js.undefined
   var onClick: js.UndefOr[
     js.Function2[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Anon_Href, Unit]
   ] = js.undefined
@@ -39,6 +41,7 @@ object AnchorProps {
     getContainer: () => AnchorContainer = null,
     getCurrentAnchor: () => String = null,
     offsetTop: Int | Double = null,
+    onChange: /* currentActiveLink */ String => Unit = null,
     onClick: (/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Anon_Href) => Unit = null,
     prefixCls: String = null,
     showInkInFixed: js.UndefOr[Boolean] = js.undefined,
@@ -53,6 +56,7 @@ object AnchorProps {
     if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))
     if (getCurrentAnchor != null) __obj.updateDynamic("getCurrentAnchor")(js.Any.fromFunction0(getCurrentAnchor))
     if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(showInkInFixed)) __obj.updateDynamic("showInkInFixed")(showInkInFixed)

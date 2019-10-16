@@ -2,7 +2,7 @@ package typings.antd.libListMod
 
 import typings.antd.Anon_CurrentTotal
 import typings.antd.Anon_GridHorizontalItemLayout
-import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element

@@ -1,5 +1,7 @@
 package typings.sharp.sharpMod
 
+import typings.node.Buffer
+import typings.sharp.Anon_Create
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait OverlayOptions extends js.Object {
   /** how to blend this image with the image below. (optional, default `'over'`) */
   var blend: js.UndefOr[Blend] = js.undefined
-  /** describes a blank overlay to be created. */
-  var create: js.UndefOr[Create] = js.undefined
-  /** set to true to apply only the alpha channel of the overlay image to the input image, giving the appearance of one image being cut out of another. (optional, default false) */
-  var cutout: js.UndefOr[Boolean] = js.undefined
   /** number representing the DPI for vector overlay image. (optional, default 72) */
   var density: js.UndefOr[Double] = js.undefined
   /** gravity at which to place the overlay. (optional, default 'centre') */
   var gravity: js.UndefOr[Gravity] = js.undefined
+  /** Buffer containing image data, String containing the path to an image file, or Create object  */
+  var input: js.UndefOr[String | Buffer | Anon_Create] = js.undefined
   /** the pixel offset from the left edge. */
   var left: js.UndefOr[Double] = js.undefined
+  /** Set to true to avoid premultipling the image below. Equivalent to the --premultiplied vips option. */
+  var premultiplied: js.UndefOr[Boolean] = js.undefined
   /** describes overlay when using raw pixel data. */
   var raw: js.UndefOr[Raw] = js.undefined
   /** set to true to repeat the overlay image across the entire image with the given  gravity. (optional, default false) */
@@ -29,22 +31,22 @@ object OverlayOptions {
   @scala.inline
   def apply(
     blend: Blend = null,
-    create: Create = null,
-    cutout: js.UndefOr[Boolean] = js.undefined,
     density: Int | Double = null,
     gravity: Gravity = null,
+    input: String | Buffer | Anon_Create = null,
     left: Int | Double = null,
+    premultiplied: js.UndefOr[Boolean] = js.undefined,
     raw: Raw = null,
     tile: js.UndefOr[Boolean] = js.undefined,
     top: Int | Double = null
   ): OverlayOptions = {
     val __obj = js.Dynamic.literal()
     if (blend != null) __obj.updateDynamic("blend")(blend)
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (!js.isUndefined(cutout)) __obj.updateDynamic("cutout")(cutout)
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(premultiplied)) __obj.updateDynamic("premultiplied")(premultiplied)
     if (raw != null) __obj.updateDynamic("raw")(raw)
     if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile)
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])

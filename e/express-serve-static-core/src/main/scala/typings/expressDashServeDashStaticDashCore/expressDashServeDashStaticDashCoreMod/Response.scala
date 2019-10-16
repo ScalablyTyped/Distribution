@@ -25,7 +25,7 @@ trait Response
     *     res.status(404).json('I dont have that');
     */
   @JSName("json")
-  var json_Original: Send = js.native
+  var json_Original: Send[this.type] = js.native
   /**
     * Send JSON response with JSONP callback support.
     *
@@ -37,7 +37,7 @@ trait Response
     *     res.status(404).jsonp('I dont have that');
     */
   @JSName("jsonp")
-  var jsonp_Original: Send = js.native
+  var jsonp_Original: Send[this.type] = js.native
   var locals: js.Any = js.native
   /**
     * After middleware.init executed, Response will contain req property
@@ -55,7 +55,7 @@ trait Response
     *     res.status(404).send('Sorry, cant find that');
     */
   @JSName("send")
-  var send_Original: Send = js.native
+  var send_Original: Send[this.type] = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
@@ -73,17 +73,17 @@ trait Response
     *
     * @since 4.11.0
     */
-  def append(field: String): Response = js.native
-  def append(field: String, value: String): Response = js.native
-  def append(field: String, value: js.Array[String]): Response = js.native
+  def append(field: String): this.type = js.native
+  def append(field: String, value: String): this.type = js.native
+  def append(field: String, value: js.Array[String]): this.type = js.native
   /**
     * Set _Content-Disposition_ header to _attachment_ with optional `filename`.
     */
-  def attachment(): Response = js.native
-  def attachment(filename: String): Response = js.native
+  def attachment(): this.type = js.native
+  def attachment(filename: String): this.type = js.native
   /** Clear cookie `name`. */
-  def clearCookie(name: String): Response = js.native
-  def clearCookie(name: String, options: js.Any): Response = js.native
+  def clearCookie(name: String): this.type = js.native
+  def clearCookie(name: String, options: js.Any): this.type = js.native
   /**
     * Set _Content-Type_ response header with `type` through `mime.lookup()`
     * when it does not contain "/", or set the Content-Type to `type` otherwise.
@@ -96,7 +96,7 @@ trait Response
     *     res.type('application/json');
     *     res.type('png');
     */
-  def contentType(`type`: String): Response = js.native
+  def contentType(`type`: String): this.type = js.native
   /**
     * Set cookie `name` to `val`, with the given `options`.
     *
@@ -114,9 +114,9 @@ trait Response
     *    // save as above
     *    res.cookie('rememberme', '1', { maxAge: 900000, httpOnly: true })
     */
-  def cookie(name: String, `val`: String, options: CookieOptions): Response = js.native
-  def cookie(name: String, `val`: js.Any): Response = js.native
-  def cookie(name: String, `val`: js.Any, options: CookieOptions): Response = js.native
+  def cookie(name: String, `val`: String, options: CookieOptions): this.type = js.native
+  def cookie(name: String, `val`: js.Any): this.type = js.native
+  def cookie(name: String, `val`: js.Any, options: CookieOptions): this.type = js.native
   /**
     * Transfer the file at the given `path` as an attachment.
     *
@@ -188,12 +188,13 @@ trait Response
     * a `.default` callback it will be invoked
     * instead.
     */
-  def format(obj: js.Any): Response = js.native
+  def format(obj: js.Any): this.type = js.native
   /** Get value for header `field`. */
   def get(field: String): String = js.native
-  def header(field: String): Response = js.native
-  def header(field: String, value: String): Response = js.native
-  def header(field: js.Any): Response = js.native
+  def header(field: String): this.type = js.native
+  def header(field: String, value: String): this.type = js.native
+  def header(field: String, value: js.Array[String]): this.type = js.native
+  def header(field: js.Any): this.type = js.native
   /**
     * Send JSON response.
     *
@@ -204,8 +205,8 @@ trait Response
     *     res.status(500).json('oh noes!');
     *     res.status(404).json('I dont have that');
     */
-  def json(): Response = js.native
-  def json(body: js.Any): Response = js.native
+  def json(): this.type = js.native
+  def json(body: js.Any): this.type = js.native
   /**
     * Send JSON response with JSONP callback support.
     *
@@ -216,8 +217,8 @@ trait Response
     *     res.status(500).jsonp('oh noes!');
     *     res.status(404).jsonp('I dont have that');
     */
-  def jsonp(): Response = js.native
-  def jsonp(body: js.Any): Response = js.native
+  def jsonp(): this.type = js.native
+  def jsonp(body: js.Any): this.type = js.native
   /**
     * Set Link header field with the given `links`.
     *
@@ -228,7 +229,7 @@ trait Response
     *      last: 'http://api.example.com/users?page=5'
     *    });
     */
-  def links(links: js.Any): Response = js.native
+  def links(links: js.Any): this.type = js.native
   /**
     * Set the location header to `url`.
     *
@@ -255,7 +256,7 @@ trait Response
     *
     *      res.location('/login');
     */
-  def location(url: String): Response = js.native
+  def location(url: String): this.type = js.native
   def redirect(status: Double, url: String): Unit = js.native
   /**
     * Redirect to the given `url` with optional response `status`
@@ -299,8 +300,8 @@ trait Response
     *     res.send('<p>some html</p>');
     *     res.status(404).send('Sorry, cant find that');
     */
-  def send(): Response = js.native
-  def send(body: js.Any): Response = js.native
+  def send(): this.type = js.native
+  def send(body: js.Any): this.type = js.native
   /**
     * Transfer the file at the given `path`.
     *
@@ -356,7 +357,7 @@ trait Response
     *    res.sendStatus(404); // equivalent to res.status(404).send('Not Found')
     *    res.sendStatus(500); // equivalent to res.status(500).send('Internal Server Error')
     */
-  def sendStatus(code: Double): Response = js.native
+  def sendStatus(code: Double): this.type = js.native
   /**
     * @deprecated Use sendFile instead.
     */
@@ -373,9 +374,9 @@ trait Response
     * @deprecated Use sendFile instead.
     */
   def sendfile(path: String, options: js.Any, fn: Errback): Unit = js.native
-  def set(field: String): Response = js.native
-  def set(field: String, value: String): Response = js.native
-  def set(field: String, value: js.Array[String]): Response = js.native
+  def set(field: String): this.type = js.native
+  def set(field: String, value: String): this.type = js.native
+  def set(field: String, value: js.Array[String]): this.type = js.native
   /**
     * Set header `field` to `val`, or pass
     * an object of header fields.
@@ -388,11 +389,11 @@ trait Response
     *
     * Aliased as `res.header()`.
     */
-  def set(field: js.Any): Response = js.native
+  def set(field: js.Any): this.type = js.native
   /**
     * Set status `code`.
     */
-  def status(code: Double): Response = js.native
+  def status(code: Double): this.type = js.native
   /**
     * Set _Content-Type_ response header with `type` through `mime.lookup()`
     * when it does not contain "/", or set the Content-Type to `type` otherwise.
@@ -405,7 +406,7 @@ trait Response
     *     res.type('application/json');
     *     res.type('png');
     */
-  def `type`(`type`: String): Response = js.native
+  def `type`(`type`: String): this.type = js.native
   /**
     * Adds the field to the Vary response header, if it is not there already.
     * Examples:
@@ -413,6 +414,6 @@ trait Response
     *     res.vary('User-Agent').render('docs');
     *
     */
-  def vary(field: String): Response = js.native
+  def vary(field: String): this.type = js.native
 }
 

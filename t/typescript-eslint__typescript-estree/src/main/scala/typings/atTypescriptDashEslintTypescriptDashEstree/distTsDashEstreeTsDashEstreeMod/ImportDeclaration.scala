@@ -8,7 +8,7 @@ trait ImportDeclaration
   extends BaseNode
      with Node
      with Statement {
-  var source: Expression
+  var source: Literal
   var specifiers: js.Array[ImportClause]
   var `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ImportDeclaration
 }
@@ -18,7 +18,7 @@ object ImportDeclaration {
   def apply(
     loc: SourceLocation,
     range: Range,
-    source: Expression,
+    source: Literal,
     specifiers: js.Array[ImportClause],
     `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.ImportDeclaration,
     parent: Node = null

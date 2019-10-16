@@ -3,6 +3,7 @@ package typings.fsDashExtra.fsDashExtraMod
 import typings.fsDashExtra.Anon_Encoding
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +23,11 @@ object appendFile extends js.Object {
     callback: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = js.native
   def apply(file: Double, data: js.Any): js.Promise[Unit] = js.native
-  def apply(file: Double, data: js.Any, callback: js.Function1[ErrnoException | Null, Unit]): Unit = js.native
+  def apply(
+    file: Double,
+    data: js.Any,
+    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
+  ): Unit = js.native
   def apply(file: Double, data: js.Any, options: Anon_Encoding): js.Promise[Unit] = js.native
   def apply(
     file: Double,
@@ -34,7 +39,7 @@ object appendFile extends js.Object {
     file: Double,
     data: js.Any,
     options: typings.node.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
+    callback: NoParamCallback
   ): Unit = js.native
   def apply(file: Buffer, data: js.Any): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
@@ -52,7 +57,7 @@ object appendFile extends js.Object {
     * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
     * @param data The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.
     */
-  def apply(file: PathLike, data: js.Any, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  def apply(file: PathLike, data: js.Any, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronously append data to a file, creating the file if it does not exist.
     * @param file A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -69,7 +74,7 @@ object appendFile extends js.Object {
     file: PathLike,
     data: js.Any,
     options: typings.node.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
+    callback: NoParamCallback
   ): Unit = js.native
   def __promisify__(file: Double, data: js.Any): js.Promise[Unit] = js.native
   def __promisify__(file: Double, data: js.Any, options: typings.node.fsMod.WriteFileOptions): js.Promise[Unit] = js.native

@@ -1,6 +1,6 @@
 package typings.electron.originalDashFsMod
 
-import typings.node.NodeJS.ErrnoException
+import typings.node.fsMod.NoParamCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +14,8 @@ object fchmod extends js.Object {
     * @param fd A file descriptor.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
-  def apply(fd: Double, mode: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
-  def apply(fd: Double, mode: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  def apply(fd: Double, mode: String, callback: NoParamCallback): Unit = js.native
+  def apply(fd: Double, mode: Double, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronous fchmod(2) - Change permissions of a file.
     * @param fd A file descriptor.

@@ -1,17 +1,17 @@
 package typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeTsDashEstreeMod
 
+import typings.atTypescriptDashEslintTypescriptDashEstree.atTypescriptDashEslintTypescriptDashEstreeNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CallExpression
   extends LeftHandSideExpression
-     with BaseNode
+     with CallExpressionBase
      with Node {
-  var arguments: js.Array[Expression]
-  var callee: LeftHandSideExpression
+  @JSName("optional")
+  var optional_CallExpression: `false`
   var `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.CallExpression
-  var typeParameters: js.UndefOr[TSTypeParameterInstantiation] = js.undefined
 }
 
 object CallExpression {
@@ -20,12 +20,13 @@ object CallExpression {
     arguments: js.Array[Expression],
     callee: LeftHandSideExpression,
     loc: SourceLocation,
+    optional: `false`,
     range: Range,
     `type`: typings.atTypescriptDashEslintTypescriptDashEstree.distTsDashEstreeAstDashNodeDashTypesMod.AST_NODE_TYPES.CallExpression,
     parent: Node = null,
     typeParameters: TSTypeParameterInstantiation = null
   ): CallExpression = {
-    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee, loc = loc, range = range)
+    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee, loc = loc, optional = optional, range = range)
     __obj.updateDynamic("type")(`type`)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)

@@ -15,6 +15,7 @@ trait Anon_ClearButtonImageItemItemChecked extends js.Object {
   var itemInline: String
   var itemText: String
   var label: String
+  var other: String
   var root: String
 }
 
@@ -31,9 +32,10 @@ object Anon_ClearButtonImageItemItemChecked {
     itemInline: String,
     itemText: String,
     label: String,
+    other: String,
     root: String
   ): Anon_ClearButtonImageItemItemChecked = {
-    val __obj = js.Dynamic.literal(clearButton = clearButton, image = image, item = item, itemChecked = itemChecked, itemControl = itemControl, itemDisabled = itemDisabled, itemHover = itemHover, itemInline = itemInline, itemText = itemText, label = label, root = root)
+    val __obj = js.Dynamic.literal(clearButton = clearButton, image = image, item = item, itemChecked = itemChecked, itemControl = itemControl, itemDisabled = itemDisabled, itemHover = itemHover, itemInline = itemInline, itemText = itemText, label = label, other = other, root = root)
   
     __obj.asInstanceOf[Anon_ClearButtonImageItemItemChecked]
   }

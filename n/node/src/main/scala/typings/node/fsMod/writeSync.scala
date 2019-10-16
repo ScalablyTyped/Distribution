@@ -1,5 +1,6 @@
 package typings.node.fsMod
 
+import typings.node.NodeJS.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,14 +15,14 @@ object writeSync extends js.Object {
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
-  def apply(fd: Double, buffer: BinaryData): Double = js.native
-  def apply(fd: Double, buffer: BinaryData, offset: Double): Double = js.native
-  def apply(fd: Double, buffer: BinaryData, offset: Double, length: Double): Double = js.native
-  def apply(fd: Double, buffer: BinaryData, offset: Double, length: Double, position: Double): Double = js.native
-  def apply(fd: Double, buffer: BinaryData, offset: Double, length: Null, position: Double): Double = js.native
-  def apply(fd: Double, buffer: BinaryData, offset: Null, length: Double): Double = js.native
-  def apply(fd: Double, buffer: BinaryData, offset: Null, length: Double, position: Double): Double = js.native
-  def apply(fd: Double, buffer: BinaryData, offset: Null, length: Null, position: Double): Double = js.native
+  def apply(fd: Double, buffer: ArrayBufferView): Double = js.native
+  def apply(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
+  def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
+  def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
+  def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
+  def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
+  def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
+  def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
   /**
     * Synchronously writes `string` to the file referenced by the supplied file descriptor, returning the number of bytes written.
     * @param fd A file descriptor.

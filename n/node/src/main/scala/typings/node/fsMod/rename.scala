@@ -1,6 +1,5 @@
 package typings.node.fsMod
 
-import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +15,7 @@ object rename extends js.Object {
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def apply(
-    oldPath: PathLike,
-    newPath: PathLike,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
+  def apply(oldPath: PathLike, newPath: PathLike, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronous rename(2) - Change the name or location of a file or directory.
     * @param oldPath A path to a file. If a URL is provided, it must use the `file:` protocol.

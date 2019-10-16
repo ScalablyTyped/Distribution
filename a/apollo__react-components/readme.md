@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo__react-components
 
-Typings are for version 3.1.2
+Typings are for version 3.1.3
 
 ## Library description:
 React Apollo Query, Mutation and Subscription components.

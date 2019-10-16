@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object streamDashMeterMod extends js.Object {
   @js.native
-  trait StreamMeter extends Transform {
+  class StreamMeter () extends Transform {
+    def this(maxBytes: Double) = this()
     var bytes: Double = js.native
     var maxBytes: Double = js.native
   }

@@ -1,7 +1,7 @@
 package typings.antd.esCalendarHeaderMod
 
 import typings.antd.Anon_MonthReactNode
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.esRadioInterfaceMod.RadioChangeEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode

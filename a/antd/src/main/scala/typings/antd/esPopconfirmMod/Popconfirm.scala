@@ -1,6 +1,6 @@
 package typings.antd.esPopconfirmMod
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element

@@ -33,6 +33,7 @@ object AnchorDefaultProps {
     className: String = null,
     getCurrentAnchor: () => String = null,
     offsetTop: Int | Double = null,
+    onChange: /* currentActiveLink */ String => Unit = null,
     onClick: (/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Anon_Href) => Unit = null,
     style: CSSProperties = null,
     targetOffset: Int | Double = null
@@ -43,6 +44,7 @@ object AnchorDefaultProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (getCurrentAnchor != null) __obj.updateDynamic("getCurrentAnchor")(js.Any.fromFunction0(getCurrentAnchor))
     if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (style != null) __obj.updateDynamic("style")(style)
     if (targetOffset != null) __obj.updateDynamic("targetOffset")(targetOffset.asInstanceOf[js.Any])

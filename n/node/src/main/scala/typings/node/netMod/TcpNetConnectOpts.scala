@@ -30,6 +30,7 @@ object TcpNetConnectOpts {
       /* family */ Double, 
       Unit
     ]) => Unit = null,
+    onread: OnReadOpts = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
     writable: js.UndefOr[Boolean] = js.undefined
@@ -43,6 +44,7 @@ object TcpNetConnectOpts {
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
+    if (onread != null) __obj.updateDynamic("onread")(onread)
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)

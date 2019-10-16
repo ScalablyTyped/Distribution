@@ -6,10 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object fsMod {
   import typings.node.Anon_EncodingFlagMode
-  import typings.node.NodeJS.TypedArray
-  import typings.std.DataView
+  import typings.node.NodeJS.ErrnoException
 
-  type BinaryData = DataView | TypedArray
+  type NoParamCallback = js.Function1[/* err */ ErrnoException | Null, Unit]
   /**
     * Valid types for path values in "fs".
     */

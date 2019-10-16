@@ -1,6 +1,5 @@
 package typings.atNivoScatterplot
 
-import typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps
 import typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotSvgProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +10,13 @@ trait atNivoScatterplotProps {
   def ResponsiveScatterPlotProps: ScatterPlotSvgProps.type = typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotSvgProps
   type ResponsiveScatterPlotProps = ScatterPlotSvgProps
   @scala.inline
-  def ResponsiveScatterPlotCanvasProps: ScatterPlotCanvasProps.type = typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps
-  type ResponsiveScatterPlotCanvasProps = ScatterPlotCanvasProps
+  def ResponsiveScatterPlotCanvasProps: typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps.type = typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps
+  type ResponsiveScatterPlotCanvasProps = typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps
+  @scala.inline
+  def ScatterPlotProps: typings.atNivoScatterplot.ScatterPlotSvgPropsDimensions.type = typings.atNivoScatterplot.ScatterPlotSvgPropsDimensions
+  type ScatterPlotProps = ScatterPlotSvgPropsDimensions
+  @scala.inline
+  def ScatterPlotCanvasProps: typings.atNivoScatterplot.ScatterPlotCanvasPropsDimensions.type = typings.atNivoScatterplot.ScatterPlotCanvasPropsDimensions
+  type ScatterPlotCanvasProps = ScatterPlotCanvasPropsDimensions
 }
 

@@ -1,6 +1,7 @@
 package typings.node.cryptoMod
 
 import typings.node.Buffer
+import typings.node.NodeJS.ArrayBufferView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,6 @@ class CertificateCls () extends Certificate {
   /* CompleteClass */
   override def exportPublicKey(spkac: BinaryLike): Buffer = js.native
   /* CompleteClass */
-  override def verifySpkac(spkac: Binary): Boolean = js.native
+  override def verifySpkac(spkac: ArrayBufferView): Boolean = js.native
 }
 

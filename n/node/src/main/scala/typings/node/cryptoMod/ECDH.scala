@@ -1,6 +1,7 @@
 package typings.node.cryptoMod
 
 import typings.node.Buffer
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.nodeStrings.base64
 import typings.node.nodeStrings.compressed
 import typings.node.nodeStrings.hex
@@ -20,8 +21,8 @@ class ECDH protected () extends js.Object {
     input_encoding: HexBase64Latin1Encoding,
     output_encoding: HexBase64Latin1Encoding
   ): java.lang.String = js.native
-  def computeSecret(other_public_key: Binary): Buffer = js.native
-  def computeSecret(other_public_key: Binary, output_encoding: HexBase64Latin1Encoding): java.lang.String = js.native
+  def computeSecret(other_public_key: ArrayBufferView): Buffer = js.native
+  def computeSecret(other_public_key: ArrayBufferView, output_encoding: HexBase64Latin1Encoding): java.lang.String = js.native
   def generateKeys(): Buffer = js.native
   def generateKeys(encoding: HexBase64Latin1Encoding): java.lang.String = js.native
   def generateKeys(encoding: HexBase64Latin1Encoding, format: ECDHKeyFormat): java.lang.String = js.native
@@ -31,7 +32,7 @@ class ECDH protected () extends js.Object {
   def getPublicKey(encoding: HexBase64Latin1Encoding): java.lang.String = js.native
   def getPublicKey(encoding: HexBase64Latin1Encoding, format: ECDHKeyFormat): java.lang.String = js.native
   def setPrivateKey(private_key: java.lang.String, encoding: HexBase64Latin1Encoding): Unit = js.native
-  def setPrivateKey(private_key: Binary): Unit = js.native
+  def setPrivateKey(private_key: ArrayBufferView): Unit = js.native
 }
 
 /* static members */

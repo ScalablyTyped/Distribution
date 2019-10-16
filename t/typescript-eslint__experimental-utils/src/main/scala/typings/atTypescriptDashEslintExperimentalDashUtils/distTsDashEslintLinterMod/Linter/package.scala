@@ -6,4 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object Linter {
   type ParserOptions = typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintParserOptionsMod.ParserOptions
+  type RuleLevelAndOptions = js.Array[RuleLevel | js.Any]
 }

@@ -5,11 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cryptoMod {
-  import typings.node.NodeJS.TypedArray
-  import typings.std.DataView
+  import typings.node.NodeJS.ArrayBufferView
 
-  type Binary = TypedArray | DataView
-  type BinaryLike = java.lang.String | Binary
+  type BinaryLike = java.lang.String | ArrayBufferView
   type CipherKey = BinaryLike | KeyObject
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

@@ -1,5 +1,7 @@
 package typings.antd.esConfigDashProviderMod
 
+import typings.antd.Anon_Ghost
+import typings.antd.esConfigDashProviderContextMod.CSPConfig
 import typings.antd.esConfigDashProviderRenderEmptyMod.RenderEmptyHandler
 import typings.antd.esLocaleDashProviderMod.Locale
 import typings.react.reactMod.ReactNode
@@ -14,6 +16,7 @@ trait ConfigProviderProps extends js.Object {
   var csp: js.UndefOr[CSPConfig] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var locale: js.UndefOr[Locale] = js.undefined
+  var pageHeader: js.UndefOr[Anon_Ghost] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var renderEmpty: js.UndefOr[RenderEmptyHandler] = js.undefined
 }
@@ -26,6 +29,7 @@ object ConfigProviderProps {
     csp: CSPConfig = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     locale: Locale = null,
+    pageHeader: Anon_Ghost = null,
     prefixCls: String = null,
     renderEmpty: /* componentName */ js.UndefOr[String] => ReactNode = null
   ): ConfigProviderProps = {
@@ -35,6 +39,7 @@ object ConfigProviderProps {
     if (csp != null) __obj.updateDynamic("csp")(csp)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (pageHeader != null) __obj.updateDynamic("pageHeader")(pageHeader)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (renderEmpty != null) __obj.updateDynamic("renderEmpty")(js.Any.fromFunction1(renderEmpty))
     __obj.asInstanceOf[ConfigProviderProps]

@@ -20,12 +20,13 @@ import typings.node.Anon_EncodingTrue
 import typings.node.Anon_Interval
 import typings.node.Buffer
 import typings.node.BufferEncoding
-import typings.node.fsMod.BinaryData
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.ReadStream
+import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.Stats
 import typings.node.fsMod.WriteFileOptions
 import typings.node.fsMod.WriteStream
@@ -114,6 +115,7 @@ trait Typeofnodefs extends js.Object {
   val write: Typeofwrite = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val writeFile: TypeofwriteFile = js.native
+  val writev: Typeofwritev = js.native
   /**
     * Synchronously tests a user's permissions for the file specified by path.
     * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
@@ -347,7 +349,7 @@ trait Typeofnodefs extends js.Object {
     */
   @JSName("readFileSync")
   def readFileSync_Union(path: PathLike): String | Buffer = js.native
-  def readSync(fd: Double, buffer: BinaryData, offset: Double, length: Double): Double = js.native
+  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
   /**
     * Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.
     * @param fd A file descriptor.
@@ -356,7 +358,7 @@ trait Typeofnodefs extends js.Object {
     * @param length The number of bytes to read.
     * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
     */
-  def readSync(fd: Double, buffer: BinaryData, offset: Double, length: Double, position: Double): Double = js.native
+  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -419,6 +421,7 @@ trait Typeofnodefs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def rmdirSync(path: PathLike): Unit = js.native
+  def rmdirSync(path: PathLike, options: RmDirOptions): Unit = js.native
   /**
     * Synchronous stat(2) - Get file status.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -586,14 +589,14 @@ trait Typeofnodefs extends js.Object {
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
-  def writeSync(fd: Double, buffer: BinaryData): Double = js.native
-  def writeSync(fd: Double, buffer: BinaryData, offset: Double): Double = js.native
-  def writeSync(fd: Double, buffer: BinaryData, offset: Double, length: Double): Double = js.native
-  def writeSync(fd: Double, buffer: BinaryData, offset: Double, length: Double, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: BinaryData, offset: Double, length: Null, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: BinaryData, offset: Null, length: Double): Double = js.native
-  def writeSync(fd: Double, buffer: BinaryData, offset: Null, length: Double, position: Double): Double = js.native
-  def writeSync(fd: Double, buffer: BinaryData, offset: Null, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
   /**
     * Synchronously writes `string` to the file referenced by the supplied file descriptor, returning the number of bytes written.
     * @param fd A file descriptor.
@@ -605,5 +608,10 @@ trait Typeofnodefs extends js.Object {
   def writeSync(fd: Double, string: js.Any, position: Double): Double = js.native
   def writeSync(fd: Double, string: js.Any, position: Double, encoding: String): Double = js.native
   def writeSync(fd: Double, string: js.Any, position: Null, encoding: String): Double = js.native
+  /**
+    * See `writev`.
+    */
+  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView]): Double = js.native
+  def writevSync(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): Double = js.native
 }
 

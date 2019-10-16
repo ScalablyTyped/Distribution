@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
 import typings.antd.esTreeDashSelectInterfaceMod.TreeSelectProps
 import typings.antd.esTreeDashSelectMod.TreeSelect

@@ -11,6 +11,10 @@ trait WebpOptions extends OutputOptions {
   var lossless: js.UndefOr[Boolean] = js.undefined
   /** Use near_lossless compression mode (optional, default false) */
   var nearLossless: js.UndefOr[Boolean] = js.undefined
+  /** Level of CPU effort to reduce file size, integer 0-6 (optional, default 4) */
+  var reductionEffort: js.UndefOr[Double] = js.undefined
+  /** Use high quality chroma subsampling (optional, default false) */
+  var smartSubsample: js.UndefOr[Boolean] = js.undefined
 }
 
 object WebpOptions {
@@ -20,7 +24,9 @@ object WebpOptions {
     force: js.UndefOr[Boolean] = js.undefined,
     lossless: js.UndefOr[Boolean] = js.undefined,
     nearLossless: js.UndefOr[Boolean] = js.undefined,
-    quality: Int | Double = null
+    quality: Int | Double = null,
+    reductionEffort: Int | Double = null,
+    smartSubsample: js.UndefOr[Boolean] = js.undefined
   ): WebpOptions = {
     val __obj = js.Dynamic.literal()
     if (alphaQuality != null) __obj.updateDynamic("alphaQuality")(alphaQuality.asInstanceOf[js.Any])
@@ -28,6 +34,8 @@ object WebpOptions {
     if (!js.isUndefined(lossless)) __obj.updateDynamic("lossless")(lossless)
     if (!js.isUndefined(nearLossless)) __obj.updateDynamic("nearLossless")(nearLossless)
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (reductionEffort != null) __obj.updateDynamic("reductionEffort")(reductionEffort.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartSubsample)) __obj.updateDynamic("smartSubsample")(smartSubsample)
     __obj.asInstanceOf[WebpOptions]
   }
 }

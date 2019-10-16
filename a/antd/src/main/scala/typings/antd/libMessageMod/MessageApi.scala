@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation._
 trait MessageApi extends js.Object {
   def config(options: ConfigOptions): Unit = js.native
   def destroy(): Unit = js.native
-  def error(content: ConfigContent): MessageType = js.native
-  def error(content: ConfigContent, duration: ConfigDuration): MessageType = js.native
-  def error(content: ConfigContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
-  def info(content: ConfigContent): MessageType = js.native
-  def info(content: ConfigContent, duration: ConfigDuration): MessageType = js.native
-  def info(content: ConfigContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
-  def loading(content: ConfigContent): MessageType = js.native
-  def loading(content: ConfigContent, duration: ConfigDuration): MessageType = js.native
-  def loading(content: ConfigContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
+  def error(content: JointContent): MessageType = js.native
+  def error(content: JointContent, duration: ConfigDuration): MessageType = js.native
+  def error(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
+  def info(content: JointContent): MessageType = js.native
+  def info(content: JointContent, duration: ConfigDuration): MessageType = js.native
+  def info(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
+  def loading(content: JointContent): MessageType = js.native
+  def loading(content: JointContent, duration: ConfigDuration): MessageType = js.native
+  def loading(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
   def open(args: ArgsProps): MessageType = js.native
-  def success(content: ConfigContent): MessageType = js.native
-  def success(content: ConfigContent, duration: ConfigDuration): MessageType = js.native
-  def success(content: ConfigContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
-  def warn(content: ConfigContent): MessageType = js.native
-  def warn(content: ConfigContent, duration: ConfigDuration): MessageType = js.native
-  def warn(content: ConfigContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
-  def warning(content: ConfigContent): MessageType = js.native
-  def warning(content: ConfigContent, duration: ConfigDuration): MessageType = js.native
-  def warning(content: ConfigContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
+  def success(content: JointContent): MessageType = js.native
+  def success(content: JointContent, duration: ConfigDuration): MessageType = js.native
+  def success(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
+  def warn(content: JointContent): MessageType = js.native
+  def warn(content: JointContent, duration: ConfigDuration): MessageType = js.native
+  def warn(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
+  def warning(content: JointContent): MessageType = js.native
+  def warning(content: JointContent, duration: ConfigDuration): MessageType = js.native
+  def warning(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
 }
 

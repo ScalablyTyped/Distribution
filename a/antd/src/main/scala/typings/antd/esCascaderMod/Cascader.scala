@@ -1,6 +1,6 @@
 package typings.antd.esCascaderMod
 
-import typings.antd.esConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.esConfigDashProviderRenderEmptyMod.RenderEmptyHandler
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component

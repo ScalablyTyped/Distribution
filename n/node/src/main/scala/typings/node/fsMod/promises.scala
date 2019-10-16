@@ -16,6 +16,7 @@ import typings.node.Anon_EncodingNull
 import typings.node.Anon_EncodingTrue
 import typings.node.Buffer
 import typings.node.BufferEncoding
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.fsMod.promises.FileHandle
 import typings.node.nodeStrings.buffer
 import typings.std.Date
@@ -169,6 +170,11 @@ object promises extends js.Object {
     def writeFile(data: js.Any): js.Promise[Unit] = js.native
     def writeFile(data: js.Any, options: java.lang.String): js.Promise[Unit] = js.native
     def writeFile(data: js.Any, options: Anon_EncodingFlagModeNull): js.Promise[Unit] = js.native
+    /**
+      * See `fs.writev` promisified version.
+      */
+    def writev(buffers: js.Array[ArrayBufferView]): js.Promise[WriteVResult] = js.native
+    def writev(buffers: js.Array[ArrayBufferView], position: Double): js.Promise[WriteVResult] = js.native
   }
   
   /**

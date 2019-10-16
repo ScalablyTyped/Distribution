@@ -1,7 +1,7 @@
 [info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(rethinkdb) [id => rethinkdb, phase => typescript, file => ../types/rethinkdb/index.d.ts] 
 [debug] PhaseRunner.scala:84 Success [id => rethinkdb, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rethinkdb/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rethinkdb),TsIdentLibrarySimple(rethinkdb)),TsIdentModule(None,List(rethinkdb))) [id => rethinkdb, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(rethinkdb) [id => rethinkdb, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(rethinkdb) [id => rethinkdb, phase => typescript] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(connect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(connect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(connect) [id => rethinkdb, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rethinkdb))] 

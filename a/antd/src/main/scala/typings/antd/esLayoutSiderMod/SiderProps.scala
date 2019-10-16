@@ -6,6 +6,7 @@ import typings.antd.antdStrings.sm
 import typings.antd.antdStrings.xl
 import typings.antd.antdStrings.xs
 import typings.antd.antdStrings.xxl
+import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
@@ -26,6 +27,7 @@ trait SiderProps extends HTMLAttributes[HTMLDivElement] {
   var theme: js.UndefOr[SiderTheme] = js.undefined
   var trigger: js.UndefOr[ReactNode] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
+  var zeroWidthTriggerStyle: js.UndefOr[CSSProperties] = js.undefined
 }
 
 object SiderProps {
@@ -43,7 +45,8 @@ object SiderProps {
     reverseArrow: js.UndefOr[Boolean] = js.undefined,
     theme: SiderTheme = null,
     trigger: ReactNode = null,
-    width: Double | String = null
+    width: Double | String = null,
+    zeroWidthTriggerStyle: CSSProperties = null
   ): SiderProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
@@ -59,6 +62,7 @@ object SiderProps {
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zeroWidthTriggerStyle != null) __obj.updateDynamic("zeroWidthTriggerStyle")(zeroWidthTriggerStyle)
     __obj.asInstanceOf[SiderProps]
   }
 }

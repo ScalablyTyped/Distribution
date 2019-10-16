@@ -1,7 +1,5 @@
 package typings.microsoftDashAjax.Sys
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.microsoftDashAjax.Sys.Services.ProfileService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -184,7 +182,7 @@ object Services extends js.Object {
     * @see {@link http://msdn.microsoft.com/en-us/library/bb383800(v=vs.100).aspx}
     */
   @js.native
-  class ProfileService () extends Instantiable0[ProfileService]
+  class ProfileService () extends js.Object
   
   /**
     * Provides the client proxy class for the role service.

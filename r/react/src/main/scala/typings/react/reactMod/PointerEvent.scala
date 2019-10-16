@@ -52,7 +52,6 @@ object PointerEvent {
     pointerType: mouse | pen | touch,
     pressure: Double,
     preventDefault: () => Unit,
-    relatedTarget: EventTarget,
     screenX: Double,
     screenY: Double,
     shiftKey: Boolean,
@@ -62,10 +61,12 @@ object PointerEvent {
     tiltY: Double,
     timeStamp: Double,
     `type`: String,
-    width: Double
+    width: Double,
+    relatedTarget: EventTarget = null
   ): PointerEvent[T] = {
-    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, button = button, buttons = buttons, cancelable = cancelable, clientX = clientX, clientY = clientY, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = js.Any.fromFunction1(getModifierState), height = height, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPrimary = isPrimary, isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted, metaKey = metaKey, movementX = movementX, movementY = movementY, nativeEvent = nativeEvent, pageX = pageX, pageY = pageY, persist = js.Any.fromFunction0(persist), pointerId = pointerId, pointerType = pointerType.asInstanceOf[js.Any], pressure = pressure, preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget, screenX = screenX, screenY = screenY, shiftKey = shiftKey, stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, tiltX = tiltX, tiltY = tiltY, timeStamp = timeStamp, width = width)
+    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, button = button, buttons = buttons, cancelable = cancelable, clientX = clientX, clientY = clientY, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = js.Any.fromFunction1(getModifierState), height = height, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPrimary = isPrimary, isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted, metaKey = metaKey, movementX = movementX, movementY = movementY, nativeEvent = nativeEvent, pageX = pageX, pageY = pageY, persist = js.Any.fromFunction0(persist), pointerId = pointerId, pointerType = pointerType.asInstanceOf[js.Any], pressure = pressure, preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX, screenY = screenY, shiftKey = shiftKey, stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, tiltX = tiltX, tiltY = tiltY, timeStamp = timeStamp, width = width)
     __obj.updateDynamic("type")(`type`)
+    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget)
     __obj.asInstanceOf[PointerEvent[T]]
   }
 }

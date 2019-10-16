@@ -38,5 +38,5 @@ package object expressDashServeDashStaticDashCoreMod {
   ]
   type RequestRanges = Ranges
   type Router = IRouter
-  type Send = js.Function1[/* body */ js.UndefOr[js.Any], Response]
+  type Send[T] = js.Function1[/* body */ js.UndefOr[js.Any], T]
 }

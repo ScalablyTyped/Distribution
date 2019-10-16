@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object NodeJS {
   import org.scalablytyped.runtime.StringDictionary
   import typings.node.Error
+  import typings.std.DataView
   import typings.std.Float32Array
   import typings.std.Float64Array
   import typings.std.Int16Array
@@ -17,9 +18,9 @@ package object NodeJS {
   import typings.std.Uint8Array
   import typings.std.Uint8ClampedArray
 
+  type ArrayBufferView = TypedArray | DataView
   type BeforeExitListener = js.Function1[/* code */ Double, Unit]
   type DisconnectListener = js.Function0[Unit]
-  type Events = EventEmitter
   type ExitListener = js.Function1[/* code */ Double, Unit]
   type HRTime = js.Function1[/* time */ js.UndefOr[js.Tuple2[Double, Double]], js.Tuple2[Double, Double]]
   type MessageListener = js.Function2[/* message */ js.Any, /* sendHandle */ js.Any, Unit]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript-eslint__parser
 
-Typings are for version 1.13.0
+Typings are for version 2.4.0
 
 ## Library description:
 An ESLint custom parser which leverages TypeScript ESTree

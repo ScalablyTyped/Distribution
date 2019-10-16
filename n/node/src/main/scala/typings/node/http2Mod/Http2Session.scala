@@ -2,7 +2,7 @@ package typings.node.http2Mod
 
 import typings.node.Buffer
 import typings.node.Error
-import typings.node.NodeJS.TypedArray
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import typings.node.nodeStrings.close
@@ -12,7 +12,6 @@ import typings.node.nodeStrings.goaway
 import typings.node.nodeStrings.ping
 import typings.node.nodeStrings.timeout
 import typings.node.tlsMod.TLSSocket
-import typings.std.DataView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -84,9 +83,7 @@ class Http2Session protected () extends EventEmitter {
   def goaway(): Unit = js.native
   def goaway(code: Double): Unit = js.native
   def goaway(code: Double, lastStreamID: Double): Unit = js.native
-  def goaway(code: Double, lastStreamID: Double, opaqueData: Buffer): Unit = js.native
-  def goaway(code: Double, lastStreamID: Double, opaqueData: TypedArray): Unit = js.native
-  def goaway(code: Double, lastStreamID: Double, opaqueData: DataView): Unit = js.native
+  def goaway(code: Double, lastStreamID: Double, opaqueData: ArrayBufferView): Unit = js.native
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -145,15 +142,7 @@ class Http2Session protected () extends EventEmitter {
   def once_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   def ping(callback: js.Function3[/* err */ Error | Null, /* duration */ Double, /* payload */ Buffer, Unit]): Boolean = js.native
   def ping(
-    payload: Buffer,
-    callback: js.Function3[/* err */ Error | Null, /* duration */ Double, /* payload */ Buffer, Unit]
-  ): Boolean = js.native
-  def ping(
-    payload: TypedArray,
-    callback: js.Function3[/* err */ Error | Null, /* duration */ Double, /* payload */ Buffer, Unit]
-  ): Boolean = js.native
-  def ping(
-    payload: DataView,
+    payload: ArrayBufferView,
     callback: js.Function3[/* err */ Error | Null, /* duration */ Double, /* payload */ Buffer, Unit]
   ): Boolean = js.native
   @JSName("prependListener")

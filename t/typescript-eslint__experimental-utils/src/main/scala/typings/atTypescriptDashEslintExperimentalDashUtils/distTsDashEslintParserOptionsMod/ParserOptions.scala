@@ -1,10 +1,12 @@
 package typings.atTypescriptDashEslintExperimentalDashUtils.distTsDashEslintParserOptionsMod
 
 import typings.atTypescriptDashEslintExperimentalDashUtils.Anon_GlobalReturn
+import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`10`
 import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`2015`
 import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`2016`
 import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`2017`
 import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`2018`
+import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`2019`
 import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`3`
 import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`5`
 import typings.atTypescriptDashEslintExperimentalDashUtils.atTypescriptDashEslintExperimentalDashUtilsNumbers.`6`
@@ -20,12 +22,15 @@ import scala.scalajs.js.annotation._
 trait ParserOptions extends js.Object {
   var comment: js.UndefOr[Boolean] = js.undefined
   var ecmaFeatures: js.UndefOr[Anon_GlobalReturn] = js.undefined
-  var ecmaVersion: js.UndefOr[`3` | `5` | `6` | `7` | `8` | `9` | `2015` | `2016` | `2017` | `2018`] = js.undefined
+  var ecmaVersion: js.UndefOr[
+    `3` | `5` | `6` | `7` | `8` | `9` | `10` | `2015` | `2016` | `2017` | `2018` | `2019`
+  ] = js.undefined
   var errorOnTypeScriptSyntacticAndSemanticIssues: js.UndefOr[Boolean] = js.undefined
   var errorOnUnknownASTType: js.UndefOr[Boolean] = js.undefined
   var extraFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
   var filePath: js.UndefOr[String] = js.undefined
   var loc: js.UndefOr[Boolean] = js.undefined
+  var noWatch: js.UndefOr[Boolean] = js.undefined
   var project: js.UndefOr[String | js.Array[String]] = js.undefined
   var range: js.UndefOr[Boolean] = js.undefined
   var sourceType: js.UndefOr[script | module] = js.undefined
@@ -40,12 +45,13 @@ object ParserOptions {
   def apply(
     comment: js.UndefOr[Boolean] = js.undefined,
     ecmaFeatures: Anon_GlobalReturn = null,
-    ecmaVersion: `3` | `5` | `6` | `7` | `8` | `9` | `2015` | `2016` | `2017` | `2018` = null,
+    ecmaVersion: `3` | `5` | `6` | `7` | `8` | `9` | `10` | `2015` | `2016` | `2017` | `2018` | `2019` = null,
     errorOnTypeScriptSyntacticAndSemanticIssues: js.UndefOr[Boolean] = js.undefined,
     errorOnUnknownASTType: js.UndefOr[Boolean] = js.undefined,
     extraFileExtensions: js.Array[String] = null,
     filePath: String = null,
     loc: js.UndefOr[Boolean] = js.undefined,
+    noWatch: js.UndefOr[Boolean] = js.undefined,
     project: String | js.Array[String] = null,
     range: js.UndefOr[Boolean] = js.undefined,
     sourceType: script | module = null,
@@ -63,6 +69,7 @@ object ParserOptions {
     if (extraFileExtensions != null) __obj.updateDynamic("extraFileExtensions")(extraFileExtensions)
     if (filePath != null) __obj.updateDynamic("filePath")(filePath)
     if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc)
+    if (!js.isUndefined(noWatch)) __obj.updateDynamic("noWatch")(noWatch)
     if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
     if (!js.isUndefined(range)) __obj.updateDynamic("range")(range)
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])

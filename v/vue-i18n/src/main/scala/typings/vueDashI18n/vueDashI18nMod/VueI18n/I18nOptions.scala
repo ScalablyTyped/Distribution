@@ -16,6 +16,7 @@ trait I18nOptions extends js.Object {
   var locale: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale] = js.undefined
   var messages: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessages] = js.undefined
   var missing: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.MissingHandler] = js.undefined
+  var modifiers: js.UndefOr[Modifiers] = js.undefined
   var numberFormats: js.UndefOr[typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormats] = js.undefined
   var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.undefined
   var preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +37,8 @@ object I18nOptions {
     formatter: typings.vueDashI18n.vueDashI18nMod.VueI18n.Formatter = null,
     locale: typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale = null,
     messages: typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessages = null,
-    missing: (/* locale */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale, /* key */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Path, /* vm */ js.UndefOr[Vue]) => String | Unit = null,
+    missing: (/* locale */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Locale, /* key */ typings.vueDashI18n.vueDashI18nMod.VueI18n.Path, /* vm */ Vue | Null, /* values */ js.Any) => String | Unit = null,
+    modifiers: Modifiers = null,
     numberFormats: typings.vueDashI18n.vueDashI18nMod.VueI18n.NumberFormats = null,
     pluralizationRules: PluralizationRulesMap = null,
     preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined,
@@ -54,7 +56,8 @@ object I18nOptions {
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (missing != null) __obj.updateDynamic("missing")(js.Any.fromFunction3(missing))
+    if (missing != null) __obj.updateDynamic("missing")(js.Any.fromFunction4(missing))
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats)
     if (pluralizationRules != null) __obj.updateDynamic("pluralizationRules")(pluralizationRules)
     if (!js.isUndefined(preserveDirectiveContent)) __obj.updateDynamic("preserveDirectiveContent")(preserveDirectiveContent)

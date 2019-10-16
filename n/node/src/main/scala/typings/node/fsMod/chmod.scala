@@ -1,6 +1,5 @@
 package typings.node.fsMod
 
-import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,12 +13,8 @@ object chmod extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
-  def apply(
-    path: PathLike,
-    mode: java.lang.String,
-    callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): Unit = js.native
-  def apply(path: PathLike, mode: Double, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
+  def apply(path: PathLike, mode: java.lang.String, callback: NoParamCallback): Unit = js.native
+  def apply(path: PathLike, mode: Double, callback: NoParamCallback): Unit = js.native
   /**
     * Asynchronous chmod(2) - Change permissions of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

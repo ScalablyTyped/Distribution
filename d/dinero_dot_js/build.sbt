@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dinero_dot_js"
-version := "1.6-dt-20191007Z-e7c27d"
+version := "1.6-dt-20191015Z-a1445c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

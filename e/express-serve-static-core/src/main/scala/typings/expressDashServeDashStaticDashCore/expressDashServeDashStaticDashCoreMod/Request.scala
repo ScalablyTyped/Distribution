@@ -196,9 +196,6 @@ trait Request[P /* <: Params */]
   def app(req: Request[ParamsDictionary], res: ServerResponse): js.Any = js.native
   def app(req: IncomingMessage, res: Response): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
-  /** Clear cookie `name`. */
-  def clearCookie(name: String): Response = js.native
-  def clearCookie(name: String, options: js.Any): Response = js.native
   def get(name: String): js.UndefOr[String] = js.native
   /**
     * Return request header.

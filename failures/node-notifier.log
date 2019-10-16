@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:92 Ignored [id => node-notifier, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-notifier/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-notifier),TsIdentLibrarySimple(node-notifier)),TsIdentModule(None,List(node-notifier))) [id => node-notifier, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:183 Processing TsIdentLibrarySimple(node-notifier) [id => node-notifier, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(node-notifier) [id => node-notifier, phase => typescript] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(NotificationCenter)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(NotificationCenter) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(NotifySend)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(NotifySend) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(WindowsToaster)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(WindowsToaster) / TsTypeQuery())] 

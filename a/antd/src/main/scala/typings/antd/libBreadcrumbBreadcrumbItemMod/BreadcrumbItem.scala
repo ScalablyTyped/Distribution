@@ -1,6 +1,6 @@
 package typings.antd.libBreadcrumbBreadcrumbItemMod
 
-import typings.antd.libConfigDashProviderMod.ConfigConsumerProps
+import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element

@@ -1,7 +1,7 @@
 package typings.atNivoGeo.atNivoGeoMod
 
-import typings.atNivoCore.atNivoCoreMod.Box
-import typings.atNivoCore.atNivoCoreMod.Theme
+import typings.atNivoGeo.PartialBox
+import typings.atNivoGeo.PartialTheme
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import scala.scalajs.js
@@ -23,7 +23,7 @@ object GeoMapCanvasProps {
     graticuleLineColor: String = null,
     graticuleLineWidth: Int | Double = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
-    margin: /* InlineNestedIdentityAlias: typings.std.Partial*/ Box = null,
+    margin: PartialBox = null,
     onClick: (/* feature */ js.Any, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     onMouseEnter: (/* feature */ js.Any, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
     onMouseLeave: (/* feature */ js.Any, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
@@ -33,7 +33,7 @@ object GeoMapCanvasProps {
     projectionScale: Int | Double = null,
     projectionTranslation: js.Tuple2[Double, Double] = null,
     projectionType: GeoProjectionType = null,
-    theme: /* InlineNestedIdentityAlias: typings.std.Partial*/ Theme = null,
+    theme: PartialTheme = null,
     tooltip: GeoMapTooltip = null
   ): GeoMapCanvasProps = {
     val __obj = js.Dynamic.literal(features = features)

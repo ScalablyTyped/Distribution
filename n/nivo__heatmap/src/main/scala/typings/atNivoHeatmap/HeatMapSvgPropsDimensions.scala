@@ -1,0 +1,145 @@
+package typings.atNivoHeatmap
+
+import typings.atNivoAxes.atNivoAxesMod.Axis
+import typings.atNivoColors.atNivoColorsMod.InheritedColorProp
+import typings.atNivoCore.atNivoCoreMod.Box
+import typings.atNivoCore.atNivoCoreMod.Colors
+import typings.atNivoCore.atNivoCoreMod.GetColor
+import typings.atNivoCore.atNivoCoreMod.Theme
+import typings.atNivoHeatmap.atNivoHeatmapMod.HeatMapDatum
+import typings.atNivoHeatmap.atNivoHeatmapMod.HeatMapDatumWithColor
+import typings.atNivoHeatmap.atNivoHeatmapMod.IndexByFunc
+import typings.atNivoHeatmap.atNivoHeatmapMod.NodeData
+import typings.atNivoHeatmap.atNivoHeatmapMod.ValueFormatter
+import typings.atNivoHeatmap.atNivoHeatmapStrings.auto
+import typings.atNivoHeatmap.atNivoHeatmapStrings.cell
+import typings.atNivoHeatmap.atNivoHeatmapStrings.circle
+import typings.atNivoHeatmap.atNivoHeatmapStrings.column
+import typings.atNivoHeatmap.atNivoHeatmapStrings.rect
+import typings.atNivoHeatmap.atNivoHeatmapStrings.row
+import typings.atNivoHeatmap.atNivoHeatmapStrings.rowColumn
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.StatelessComponent
+import typings.std.SVGGElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Inlined @nivo/heatmap.@nivo/heatmap.HeatMapSvgProps & @nivo/core.@nivo/core.Dimensions */
+trait HeatMapSvgPropsDimensions extends js.Object {
+  var animate: js.UndefOr[Boolean] = js.undefined
+  var axisBottom: js.UndefOr[Axis] = js.undefined
+  var axisLeft: js.UndefOr[Axis] = js.undefined
+  var axisRight: js.UndefOr[Axis] = js.undefined
+  var axisTop: js.UndefOr[Axis] = js.undefined
+  var cellBorderColor: js.UndefOr[InheritedColorProp[HeatMapDatumWithColor]] = js.undefined
+  var cellBorderWidth: js.UndefOr[Double] = js.undefined
+  var cellHoverOpacity: js.UndefOr[Double] = js.undefined
+  var cellHoverOthersOpacity: js.UndefOr[Double] = js.undefined
+  var cellOpacity: js.UndefOr[Double] = js.undefined
+  var cellShape: js.UndefOr[rect | circle | StatelessComponent[_]] = js.undefined
+  var colorBy: js.UndefOr[String | GetColor[HeatMapDatum]] = js.undefined
+  var colors: js.UndefOr[Colors] = js.undefined
+  var data: js.Array[HeatMapDatum]
+  var enableGridX: js.UndefOr[Boolean] = js.undefined
+  var enableGridY: js.UndefOr[Boolean] = js.undefined
+  var enableLabels: js.UndefOr[Boolean] = js.undefined
+  var forceSquare: js.UndefOr[Boolean] = js.undefined
+  var height: Double
+  var hoverTarget: js.UndefOr[cell | row | column | rowColumn] = js.undefined
+  var indexBy: js.UndefOr[String | IndexByFunc] = js.undefined
+  var isInteractive: js.UndefOr[Boolean] = js.undefined
+  var keys: js.UndefOr[js.Array[String]] = js.undefined
+  var labelTextColor: js.UndefOr[InheritedColorProp[HeatMapDatumWithColor]] = js.undefined
+  var margin: js.UndefOr[Box] = js.undefined
+  var maxValue: js.UndefOr[Double | auto] = js.undefined
+  var minValue: js.UndefOr[Double | auto] = js.undefined
+  var motionDamping: js.UndefOr[Double] = js.undefined
+  var motionStiffness: js.UndefOr[Double] = js.undefined
+  var onClick: js.UndefOr[
+    js.Function2[/* datum */ NodeData, /* event */ MouseEvent[SVGGElement, NativeMouseEvent], Unit]
+  ] = js.undefined
+  var padding: js.UndefOr[Double] = js.undefined
+  var sizeVariation: js.UndefOr[Double] = js.undefined
+  var theme: js.UndefOr[Theme] = js.undefined
+  var tooltipFormat: js.UndefOr[String | ValueFormatter] = js.undefined
+  var width: Double
+}
+
+object HeatMapSvgPropsDimensions {
+  @scala.inline
+  def apply(
+    data: js.Array[HeatMapDatum],
+    height: Double,
+    width: Double,
+    animate: js.UndefOr[Boolean] = js.undefined,
+    axisBottom: Axis = null,
+    axisLeft: Axis = null,
+    axisRight: Axis = null,
+    axisTop: Axis = null,
+    cellBorderColor: InheritedColorProp[HeatMapDatumWithColor] = null,
+    cellBorderWidth: Int | Double = null,
+    cellHoverOpacity: Int | Double = null,
+    cellHoverOthersOpacity: Int | Double = null,
+    cellOpacity: Int | Double = null,
+    cellShape: rect | circle | StatelessComponent[_] = null,
+    colorBy: String | GetColor[HeatMapDatum] = null,
+    colors: Colors = null,
+    enableGridX: js.UndefOr[Boolean] = js.undefined,
+    enableGridY: js.UndefOr[Boolean] = js.undefined,
+    enableLabels: js.UndefOr[Boolean] = js.undefined,
+    forceSquare: js.UndefOr[Boolean] = js.undefined,
+    hoverTarget: cell | row | column | rowColumn = null,
+    indexBy: String | IndexByFunc = null,
+    isInteractive: js.UndefOr[Boolean] = js.undefined,
+    keys: js.Array[String] = null,
+    labelTextColor: InheritedColorProp[HeatMapDatumWithColor] = null,
+    margin: Box = null,
+    maxValue: Double | auto = null,
+    minValue: Double | auto = null,
+    motionDamping: Int | Double = null,
+    motionStiffness: Int | Double = null,
+    onClick: (/* datum */ NodeData, /* event */ MouseEvent[SVGGElement, NativeMouseEvent]) => Unit = null,
+    padding: Int | Double = null,
+    sizeVariation: Int | Double = null,
+    theme: Theme = null,
+    tooltipFormat: String | ValueFormatter = null
+  ): HeatMapSvgPropsDimensions = {
+    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom)
+    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft)
+    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight)
+    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop)
+    if (cellBorderColor != null) __obj.updateDynamic("cellBorderColor")(cellBorderColor.asInstanceOf[js.Any])
+    if (cellBorderWidth != null) __obj.updateDynamic("cellBorderWidth")(cellBorderWidth.asInstanceOf[js.Any])
+    if (cellHoverOpacity != null) __obj.updateDynamic("cellHoverOpacity")(cellHoverOpacity.asInstanceOf[js.Any])
+    if (cellHoverOthersOpacity != null) __obj.updateDynamic("cellHoverOthersOpacity")(cellHoverOthersOpacity.asInstanceOf[js.Any])
+    if (cellOpacity != null) __obj.updateDynamic("cellOpacity")(cellOpacity.asInstanceOf[js.Any])
+    if (cellShape != null) __obj.updateDynamic("cellShape")(cellShape.asInstanceOf[js.Any])
+    if (colorBy != null) __obj.updateDynamic("colorBy")(colorBy.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX)
+    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY)
+    if (!js.isUndefined(enableLabels)) __obj.updateDynamic("enableLabels")(enableLabels)
+    if (!js.isUndefined(forceSquare)) __obj.updateDynamic("forceSquare")(forceSquare)
+    if (hoverTarget != null) __obj.updateDynamic("hoverTarget")(hoverTarget.asInstanceOf[js.Any])
+    if (indexBy != null) __obj.updateDynamic("indexBy")(indexBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
+    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (sizeVariation != null) __obj.updateDynamic("sizeVariation")(sizeVariation.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeatMapSvgPropsDimensions]
+  }
+}
+

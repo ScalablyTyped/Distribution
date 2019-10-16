@@ -7,6 +7,7 @@ import typings.atNivoCore.Anon_
 import typings.atNivoCore.Anon_Id
 import typings.atNivoCore.atNivoCoreMod.AreaCurve
 import typings.atNivoCore.atNivoCoreMod.Box
+import typings.atNivoCore.atNivoCoreMod.MotionProps
 import typings.atNivoCore.atNivoCoreMod.StackOffset
 import typings.atNivoCore.atNivoCoreMod.StackOrder
 import typings.atNivoCore.atNivoCoreMod.SvgDefsAndFill
@@ -21,8 +22,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof @nivo/core.Anon_Animate ]:? @nivo/core.Anon_Animate[P]} */ trait OptionalStreamProps[T] extends SvgDefsAndFill[T] {
+trait OptionalStreamProps[T]
+  extends SvgDefsAndFill[T]
+     with MotionProps {
   var axisBottom: AxisProps | Null
   var axisLeft: AxisProps | Null
   var axisRight: AxisProps | Null
@@ -84,20 +86,26 @@ object OptionalStreamProps {
     tooltipLabel: T => String,
     xScale: Scale,
     yScale: Scale,
+    animate: js.UndefOr[Boolean] = js.undefined,
     axisBottom: AxisProps = null,
     axisLeft: AxisProps = null,
     axisRight: AxisProps = null,
     axisTop: AxisProps = null,
     defs: js.Array[Anon_Id] = null,
-    fill: js.Array[Anon_[T]] = null
+    fill: js.Array[Anon_[T]] = null,
+    motionDamping: Int | Double = null,
+    motionStiffness: Int | Double = null
   ): OptionalStreamProps[T] = {
     val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth, colors = colors.asInstanceOf[js.Any], curve = curve, dotBorderColor = dotBorderColor.asInstanceOf[js.Any], dotBorderWidth = dotBorderWidth.asInstanceOf[js.Any], dotColor = dotColor.asInstanceOf[js.Any], dotPosition = dotPosition.asInstanceOf[js.Any], dotSize = dotSize.asInstanceOf[js.Any], enableDots = enableDots, enableGridX = enableGridX, enableGridY = enableGridY, enableStackTooltip = enableStackTooltip, fillOpacity = fillOpacity, isInteractive = isInteractive, legends = legends, margin = margin, offsetType = offsetType, order = order, renderDot = renderDot, stack = js.Any.fromFunction1(stack), theme = theme, tooltipFormat = tooltipFormat.asInstanceOf[js.Any], tooltipLabel = js.Any.fromFunction1(tooltipLabel), xScale = xScale, yScale = yScale)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom)
     if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft)
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight)
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop)
     if (defs != null) __obj.updateDynamic("defs")(defs)
     if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
+    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalStreamProps[T]]
   }
 }

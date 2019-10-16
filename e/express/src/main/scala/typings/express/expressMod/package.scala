@@ -24,5 +24,7 @@ package object expressMod {
   type RequestParamHandler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestParamHandler
   type Response = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
   type Router = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router
-  type Send = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Send
+  type Send = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Send[
+    typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
+  ]
 }
