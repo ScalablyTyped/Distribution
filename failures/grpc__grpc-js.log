@@ -496,4 +496,3 @@
 [E] Failed to compile 'grpc__grpc-js'
  [id => @grpc/grpc-js, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@grpc/grpc-js => Compilation failed] [id => @grpc/grpc-js, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [@grpc/grpc-js => Compilation failed] [id => @grpc/grpc-js, phase => publish] 

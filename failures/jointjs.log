@@ -1175,4 +1175,3 @@
 [E] Failed to compile 'jointjs'
  [id => jointjs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [jointjs => Compilation failed] [id => jointjs, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [jointjs => Compilation failed] [id => jointjs, phase => publish] 

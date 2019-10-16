@@ -2123,4 +2123,3 @@
 [E] Failed to compile 'rethinkdb'
  [id => rethinkdb, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rethinkdb => Compilation failed] [id => rethinkdb, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [rethinkdb => Compilation failed] [id => rethinkdb, phase => publish] 

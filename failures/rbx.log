@@ -1722,4 +1722,3 @@
 [E] Failed to compile 'rbx'
  [id => rbx, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rbx => Compilation failed] [id => rbx, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [rbx => Compilation failed] [id => rbx, phase => publish] 

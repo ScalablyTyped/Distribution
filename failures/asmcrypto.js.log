@@ -379,4 +379,3 @@
 [E] Failed to compile 'asmcrypto_dot_js'
  [id => asmcrypto.js, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [asmcrypto.js => Compilation failed] [id => asmcrypto.js, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [asmcrypto.js => Compilation failed] [id => asmcrypto.js, phase => publish] 

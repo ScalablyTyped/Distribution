@@ -170,4 +170,3 @@
 [debug] PhaseRunner.scala:84 Success [id => @wordpress/edit-post, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [@wordpress/components => Compilation failed] [id => @wordpress/edit-post, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@wordpress/components => Compilation failed] [id => @wordpress/edit-post, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [@wordpress/components => Compilation failed] [id => @wordpress/edit-post, phase => publish] 

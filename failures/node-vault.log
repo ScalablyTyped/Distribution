@@ -104,4 +104,3 @@
 [E] Failed to compile 'node-vault'
  [id => node-vault, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [node-vault => Compilation failed] [id => node-vault, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [node-vault => Compilation failed] [id => node-vault, phase => publish] 

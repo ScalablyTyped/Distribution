@@ -973,4 +973,3 @@
 [E] Failed to compile 'openfin'
  [id => openfin, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [openfin => Compilation failed] [id => openfin, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [openfin => Compilation failed] [id => openfin, phase => publish] 

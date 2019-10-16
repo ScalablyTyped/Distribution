@@ -119,4 +119,3 @@
 [E] Failed to compile 'rx_dot_wamp'
  [id => rx.wamp, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => publish] 

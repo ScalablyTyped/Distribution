@@ -1446,4 +1446,3 @@
 [debug] PhaseRunner.scala:84 Success [id => @google-cloud/pubsub, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [@grpc/grpc-js => Compilation failed] [id => @google-cloud/pubsub, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@grpc/grpc-js => Compilation failed] [id => @google-cloud/pubsub, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [@grpc/grpc-js => Compilation failed] [id => @google-cloud/pubsub, phase => publish] 

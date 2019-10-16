@@ -75,4 +75,3 @@
 [debug] PhaseRunner.scala:84 Success [id => @jupyterlab/documentsearch, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [@jupyterlab/notebook => Compilation failed] [id => @jupyterlab/documentsearch, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@jupyterlab/notebook => Compilation failed] [id => @jupyterlab/documentsearch, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [@jupyterlab/notebook => Compilation failed] [id => @jupyterlab/documentsearch, phase => publish] 
