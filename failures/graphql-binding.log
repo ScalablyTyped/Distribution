@@ -165,3 +165,4 @@
 [E] Failed to compile 'graphql-binding'
  [id => graphql-binding, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => publish] 

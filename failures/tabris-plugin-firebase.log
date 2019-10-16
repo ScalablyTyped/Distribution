@@ -22,3 +22,4 @@
 [debug] PhaseRunner.scala:84 Success [id => tabris-plugin-firebase, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [tabris => Compilation failed] [id => tabris-plugin-firebase, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tabris => Compilation failed] [id => tabris-plugin-firebase, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [tabris => Compilation failed] [id => tabris-plugin-firebase, phase => publish] 

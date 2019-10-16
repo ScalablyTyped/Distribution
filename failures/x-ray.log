@@ -29,3 +29,4 @@
 [E] Failed to compile 'x-ray'
  [id => x-ray, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [x-ray => Compilation failed] [id => x-ray, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [x-ray => Compilation failed] [id => x-ray, phase => publish] 

@@ -451,3 +451,4 @@
 [E] Failed to compile 'react-howler'
  [id => react-howler, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [react-howler => Compilation failed] [id => react-howler, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [react-howler => Compilation failed] [id => react-howler, phase => publish] 
