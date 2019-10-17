@@ -51,4 +51,3 @@
 [E] Failed to compile 'prismjs'
  [id => prismjs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [prismjs => Compilation failed] [id => prismjs, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [prismjs => Compilation failed] [id => prismjs, phase => publish] 

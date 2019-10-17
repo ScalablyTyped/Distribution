@@ -3,4 +3,3 @@
 [error] PhaseRunner.scala:88 Failure, [minapp-env => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/minapp-env/index.d.ts): Parse error at 21516.1 end of input expected] [id => minapp-env, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [minapp-env => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/minapp-env/index.d.ts): Parse error at 21516.1 end of input expected] [id => minapp-env, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [minapp-env => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/minapp-env/index.d.ts): Parse error at 21516.1 end of input expected] [id => minapp-env, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [minapp-env => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/minapp-env/index.d.ts): Parse error at 21516.1 end of input expected] [id => minapp-env, phase => publish] 

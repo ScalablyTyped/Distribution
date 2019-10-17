@@ -36,13 +36,6 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:54)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
-	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
-	at scala.Option.foreach(Option.scala:407)
-	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
-	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
-	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
 	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:215)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
@@ -61,4 +54,3 @@
 [error] PhaseRunner.scala:88 Failure, [csv-parse => java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/csv-parse/package.json: DecodingFailure(String, List(DownField(types)))] [id => csv-parse, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [csv-parse => java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/csv-parse/package.json: DecodingFailure(String, List(DownField(types)))] [id => csv-parse, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [csv-parse => java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/csv-parse/package.json: DecodingFailure(String, List(DownField(types)))] [id => csv-parse, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [csv-parse => java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/csv-parse/package.json: DecodingFailure(String, List(DownField(types)))] [id => csv-parse, phase => publish] 
