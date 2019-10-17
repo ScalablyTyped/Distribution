@@ -91,3 +91,4 @@
 [E] Failed to compile 'powerbi-visuals-tools'
  [id => powerbi-visuals-tools, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [powerbi-visuals-tools => Compilation failed] [id => powerbi-visuals-tools, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [powerbi-visuals-tools => Compilation failed] [id => powerbi-visuals-tools, phase => publish] 

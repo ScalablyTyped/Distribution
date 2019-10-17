@@ -605,3 +605,4 @@
 [E] Failed to compile 'monocle-ts'
  [id => monocle-ts, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [monocle-ts => Compilation failed] [id => monocle-ts, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [monocle-ts => Compilation failed] [id => monocle-ts, phase => publish] 

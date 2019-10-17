@@ -204,3 +204,4 @@
 [error] PhaseRunner.scala:88 Failure, [react-md => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-md/lib/SelectionControls/SelectionControl.d.ts): Parse error at 8.1 end of input expected] [id => react-md, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [react-md => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-md/lib/SelectionControls/SelectionControl.d.ts): Parse error at 8.1 end of input expected] [id => react-md, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [react-md => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-md/lib/SelectionControls/SelectionControl.d.ts): Parse error at 8.1 end of input expected] [id => react-md, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [react-md => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-md/lib/SelectionControls/SelectionControl.d.ts): Parse error at 8.1 end of input expected] [id => react-md, phase => publish] 

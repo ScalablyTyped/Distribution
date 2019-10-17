@@ -10604,3 +10604,4 @@
 [E] Failed to compile 'adone'
  [id => adone, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [adone => Compilation failed] [id => adone, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [adone => Compilation failed] [id => adone, phase => publish] 
