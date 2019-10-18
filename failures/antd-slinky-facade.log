@@ -33,3 +33,4 @@
 [E] Failed to compile 'antd-slinky-facade'
  [id => antd-slinky-facade, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [antd-slinky-facade => Compilation failed] [id => antd-slinky-facade, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [antd-slinky-facade => Compilation failed] [id => antd-slinky-facade, phase => publish] 

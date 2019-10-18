@@ -67,3 +67,4 @@
 [E] Failed to compile 'esfx__type-model'
  [id => @esfx/type-model, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@esfx/type-model => Compilation failed] [id => @esfx/type-model, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [@esfx/type-model => Compilation failed] [id => @esfx/type-model, phase => publish] 

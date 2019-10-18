@@ -3,3 +3,4 @@
 [error] PhaseRunner.scala:88 Failure, [samchon-library => Couldn't resolve DirectivePathRef(../samchon-framework/samchon-framework.d.ts)] [id => samchon-library, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [samchon-library => Couldn't resolve DirectivePathRef(../samchon-framework/samchon-framework.d.ts)] [id => samchon-library, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [samchon-library => Couldn't resolve DirectivePathRef(../samchon-framework/samchon-framework.d.ts)] [id => samchon-library, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [samchon-library => Couldn't resolve DirectivePathRef(../samchon-framework/samchon-framework.d.ts)] [id => samchon-library, phase => publish] 

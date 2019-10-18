@@ -16,3 +16,4 @@
 [E] Failed to compile 'mergerino'
  [id => mergerino, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [mergerino => Compilation failed] [id => mergerino, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [mergerino => Compilation failed] [id => mergerino, phase => publish] 
