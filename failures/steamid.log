@@ -3,4 +3,3 @@
 [error] PhaseRunner.scala:88 Failure, [steamid => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steamid/index.d.ts): Parse error at 60.1 end of input expected] [id => steamid, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [steamid => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steamid/index.d.ts): Parse error at 60.1 end of input expected] [id => steamid, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [steamid => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steamid/index.d.ts): Parse error at 60.1 end of input expected] [id => steamid, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [steamid => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steamid/index.d.ts): Parse error at 60.1 end of input expected] [id => steamid, phase => publish] 

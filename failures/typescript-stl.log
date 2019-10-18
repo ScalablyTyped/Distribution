@@ -844,4 +844,3 @@
 [E] Failed to compile 'typescript-stl'
  [id => typescript-stl, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [typescript-stl => Compilation failed] [id => typescript-stl, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [typescript-stl => Compilation failed] [id => typescript-stl, phase => publish] 

@@ -46,4 +46,3 @@
 [E] Failed to compile 'falcor-router'
  [id => falcor-router, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [falcor-router => Compilation failed] [id => falcor-router, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [falcor-router => Compilation failed] [id => falcor-router, phase => publish] 

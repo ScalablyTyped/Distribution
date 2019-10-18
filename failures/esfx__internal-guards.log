@@ -17,4 +17,3 @@
 [debug] PhaseRunner.scala:84 Success [id => @esfx/internal-guards, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [@esfx/type-model => Compilation failed] [id => @esfx/internal-guards, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@esfx/type-model => Compilation failed] [id => @esfx/internal-guards, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [@esfx/type-model => Compilation failed] [id => @esfx/internal-guards, phase => publish] 

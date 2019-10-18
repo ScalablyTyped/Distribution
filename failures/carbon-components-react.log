@@ -1249,4 +1249,3 @@
 [E] Failed to compile 'carbon-components-react'
  [id => carbon-components-react, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [carbon-components-react => Compilation failed] [id => carbon-components-react, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [carbon-components-react => Compilation failed] [id => carbon-components-react, phase => publish] 

@@ -86,4 +86,3 @@
 [E] Failed to compile 'leaflet-label'
  [id => leaflet-label, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [leaflet-label => Compilation failed] [id => leaflet-label, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [leaflet-label => Compilation failed] [id => leaflet-label, phase => publish] 

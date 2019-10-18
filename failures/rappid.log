@@ -17,4 +17,3 @@
 [debug] PhaseRunner.scala:84 Success [id => rappid, phase => scala.js] 
 [warn ] PhaseRunner.scala:70 Failed because of, [jointjs => Compilation failed] [id => rappid, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [jointjs => Compilation failed] [id => rappid, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [jointjs => Compilation failed] [id => rappid, phase => publish] 
