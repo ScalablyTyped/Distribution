@@ -7291,7 +7291,7 @@
 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components. | - |
 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set. | - |
 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities. | - |
-| [uifabric__react-hooks](./u/uifabric__react-hooks) | - | - |
+| [uifabric__react-hooks](./u/uifabric__react-hooks) | UI Fabric React hooks. | - |
 | [uifabric__set-version](./u/uifabric__set-version) | Non-Fabric specific package version setter | - |
 | [uifabric__styling](./u/uifabric__styling) | Defines the core Office UI Fabric styles through a | - |
 | [uifabric__utilities](./u/uifabric__utilities) | Office UI Fabric utilities for building React comp | - |

@@ -6023,6 +6023,7 @@
 | 2 | [twilio-common](./t/twilio-common) | Twilio Common JavaScript library
 | 2 | [typescript-compare](./t/typescript-compare) | TypeScript generics to compare types
 | 2 | [ui-box](./u/ui-box) | Blazing Fast React UI Primitive
+| 2 | [uifabric__react-hooks](./u/uifabric__react-hooks) | UI Fabric React hooks.
 | 2 | [uk_dot_co_dot_workingedge](./u/uk_dot_co_dot_workingedge_dot_phonegap_dot_plugin_dot_launchnavigator) | Cordova/Phonegap plugin to navigate to a destinati
 | 2 | [ultra-strftime](./u/ultra-strftime) | Ultra fast realization of javascript strftime func
 | 2 | [url-safe-base64](./u/url-safe-base64) | url safe base64 en- and decoding

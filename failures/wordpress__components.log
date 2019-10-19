@@ -707,3 +707,4 @@
 [E] Failed to compile 'wordpress__components'
  [id => @wordpress/components, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@wordpress/components => Compilation failed] [id => @wordpress/components, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [@wordpress/components => Compilation failed] [id => @wordpress/components, phase => publish] 

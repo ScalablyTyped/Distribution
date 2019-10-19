@@ -442,3 +442,4 @@
 [E] Failed to compile 'tablesorter'
  [id => tablesorter, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [tablesorter => Compilation failed] [id => tablesorter, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [tablesorter => Compilation failed] [id => tablesorter, phase => publish] 

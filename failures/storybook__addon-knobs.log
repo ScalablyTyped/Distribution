@@ -244,3 +244,4 @@
 [E] Failed to compile 'storybook__addon-knobs'
  [id => @storybook/addon-knobs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@storybook/addon-knobs => Compilation failed] [id => @storybook/addon-knobs, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [@storybook/addon-knobs => Compilation failed] [id => @storybook/addon-knobs, phase => publish] 

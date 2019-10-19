@@ -2260,6 +2260,7 @@
 | 0.7066909078051067 | [minio](./m/minio) | S3 Compatible Cloud Storage client
 | 0.7066364820643624 | [showdown](./s/showdown) | A Markdown to HTML converter written in Javascript
 | 0.7065977775847753 | [uuid-parse](./u/uuid-parse) | RFC4122 UUID parser
+| 0.7065935680056202 | [uifabric__react-hooks](./u/uifabric__react-hooks) | UI Fabric React hooks.
 | 0.706533652223856 | [content-disposition](./c/content-disposition) | Create and parse Content-Disposition header
 | 0.7064703836548936 | [streaming-json-stringify](./s/streaming-json-stringify) | Streaming JSON.stringify()
 | 0.7063942851955916 | [catbox](./c/catbox) | Multi-strategy object caching service

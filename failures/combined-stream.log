@@ -36,3 +36,4 @@
 [E] Failed to compile 'combined-stream'
  [id => combined-stream, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [combined-stream => Compilation failed] [id => combined-stream, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [combined-stream => Compilation failed] [id => combined-stream, phase => publish] 

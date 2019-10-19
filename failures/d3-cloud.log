@@ -64,3 +64,4 @@
 [E] Failed to compile 'd3-cloud'
  [id => d3-cloud, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [d3-cloud => Compilation failed] [id => d3-cloud, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [d3-cloud => Compilation failed] [id => d3-cloud, phase => publish] 

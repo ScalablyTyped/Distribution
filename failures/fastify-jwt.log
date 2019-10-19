@@ -5,3 +5,4 @@
 [error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-jwt, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-jwt, phase => scala.js] 
 [error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-jwt, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-jwt, phase => publish] 

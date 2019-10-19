@@ -277,3 +277,4 @@
 [E] Failed to compile 'multiplexjs'
  [id => multiplexjs, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => publish] 
