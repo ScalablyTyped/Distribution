@@ -389,4 +389,3 @@
 [E] Failed to compile 'redux-orm'
  [id => redux-orm, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [redux-orm => Compilation failed] [id => redux-orm, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [redux-orm => Compilation failed] [id => redux-orm, phase => publish] 

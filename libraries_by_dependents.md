@@ -5662,6 +5662,7 @@
 | 3 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript
 | 3 | [twilio-chat](./t/twilio-chat) | Twilio Chat service client library
 | 3 | [twilio-notifications](./t/twilio-notifications) | Client library for Twilio Notifications service
+| 3 | [uifabric__example-data](./u/uifabric__example-data) | Data generators for Office UI Fabric React example
 | 3 | [unimodules__core](./u/unimodules__core) | Universal modules core
 | 3 | [vanilla-modal](./v/vanilla-modal) | A dependency-free CSS-driven plain JavaScript moda
 | 3 | [vfile-message](./v/vfile-message) | Create a virtual message
@@ -7282,6 +7283,7 @@
 | 0 | [viewporter](./v/viewporter) | Tools for working with all sorts of browser viewpo
 | 0 | [vmap](./v/vmap) | Javascript VMAP Parser
 | 0 | [voximplant-websdk](./v/voximplant-websdk) | VoxImplant Web SDK for embedding voice and video c
+| 0 | [waitme](./w/waitme) | waitMe ======
 | 0 | [weapp-api](./w/weapp-api) | wechat api
 | 0 | [web-bluetooth](./w/web-bluetooth) | Library for interacting with Bluetooth 4.0 devices
 | 0 | [webcl](./w/webcl) | OpenCL bindings for Node.js

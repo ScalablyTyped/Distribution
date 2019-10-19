@@ -39,4 +39,3 @@
 [E] Failed to compile 'node-notifier'
  [id => node-notifier, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [node-notifier => Compilation failed] [id => node-notifier, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [node-notifier => Compilation failed] [id => node-notifier, phase => publish] 

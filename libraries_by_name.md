@@ -7287,7 +7287,7 @@
 | [uid-generator](./u/uid-generator) | Generates cryptographically strong pseudo-random U | uid, generator, random, token, unique, crypto, strong, base, encoding |
 | [uid-safe](./u/uid-safe) | URL and cookie safe UIDs | random, generator, uid, safe |
 | [uid2](./u/uid2) | strong uid | - |
-| [uifabric__example-data](./u/uifabric__example-data) | - | - |
+| [uifabric__example-data](./u/uifabric__example-data) | Data generators for Office UI Fabric React example | - |
 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components. | - |
 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set. | - |
 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities. | - |
@@ -7516,7 +7516,7 @@
 | [wait-for-localhost](./w/wait-for-localhost) | Wait for localhost to be ready | wait, localhost, server, port, delay, sleep, ready |
 | [wait-on](./w/wait-on) | wait-on is a cross platform command line utility a | wait, delay, cli, files, tcp, ports, sockets, http, exist, ready, available, portable, cross-platform, unix, linux, windows, win32, osx |
 | [wait-promise](./w/wait-promise) | Make a promise, waiting for a specified amount of  | promise, node, wait, before, after, every, and, until, till, async |
-| [waitme](./w/waitme) | - | - |
+| [waitme](./w/waitme) | waitMe ====== | waitMe, spinner |
 | [wake_on_lan](./w/wake_on_lan) | generate and send Wake-on-LAN magic packets | - |
 | [walk](./w/walk) | A node port of python's os.walk | util, os, sys, fs, walk, walkSync |
 | [walkdir](./w/walkdir) | Find files simply. Walks a directory tree emitting | find, walk, tree, files, fs |

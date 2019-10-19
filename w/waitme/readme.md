@@ -3,6 +3,24 @@
 
 Typings are for version 1.18
 
+## Library description:
+waitMe ======
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | waitme |
+| Keywords           | waitMe, spinner |
+| # releases         | 3 |
+| # dependents       | 0 |
+| # downloads        | 220 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/vadimsva/waitMe)
+- [Bugs](https://github.com/vadimsva/waitMe/issues)
+- [Repository](https://github.com/vadimsva/waitMe)
+- [Npm](https://www.npmjs.com/package/waitme)
+    
 
 
 ## Note

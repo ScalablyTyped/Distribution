@@ -2314,6 +2314,7 @@
 | 0.7044475089482004 | [pg-copy-streams](./p/pg-copy-streams) | Low-Level COPY TO and COPY FROM streams for Postgr
 | 0.704246111093685 | [rtl-detect](./r/rtl-detect) | Library will help you to detect if the locale is r
 | 0.7042202875443957 | [inversify-inject-decorato](./i/inversify-inject-decorators) | Lazy evaluated property injection decorators for I
+| 0.7041069893828558 | [uifabric__example-data](./u/uifabric__example-data) | Data generators for Office UI Fabric React example
 | 0.704087835183301 | [route-node](./r/route-node) | A package to create a tree of named routes
 | 0.7040858453386134 | [reflexbox](./r/reflexbox) | Responsive React grid system built with Styled Sys
 | 0.7040392530707753 | [koa-ratelimit](./k/koa-ratelimit) | Rate limiter middleware for koa
@@ -7078,6 +7079,7 @@
 | 0.17996810112969985 | [flipsnap](./f/flipsnap) | Provides UI of snap and slide
 | 0.1798018080430346 | [mta-h5-analysis](./m/mta-h5-analysis) | this is wechat-h5 data analysis js sdk from MTA pl
 | 0.17966872830899916 | [pouchdb-http](./p/pouchdb-http) | PouchDB as an HTTP-only package.
+| 0.1791877204440182 | [waitme](./w/waitme) | waitMe ======
 | 0.17899683826038726 | [jquery_dot_ui_dot_layout](./j/jquery_dot_ui_dot_layout) | Jquery UI Layout package
 | 0.17878865984264145 | [palx](./p/palx) | Automatic UI Color Palette Generator
 | 0.17839508694978123 | [json-rpc-random-id](./j/json-rpc-random-id) | Generates an id useable in json rpc payloads.

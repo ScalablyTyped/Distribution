@@ -103,4 +103,3 @@
 [E] Failed to compile 'leaflet-editable'
  [id => leaflet-editable, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [leaflet-editable => Compilation failed] [id => leaflet-editable, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [leaflet-editable => Compilation failed] [id => leaflet-editable, phase => publish] 

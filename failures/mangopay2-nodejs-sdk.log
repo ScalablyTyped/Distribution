@@ -334,4 +334,3 @@
 [E] Failed to compile 'mangopay2-nodejs-sdk'
  [id => mangopay2-nodejs-sdk, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [mangopay2-nodejs-sdk => Compilation failed] [id => mangopay2-nodejs-sdk, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [mangopay2-nodejs-sdk => Compilation failed] [id => mangopay2-nodejs-sdk, phase => publish] 

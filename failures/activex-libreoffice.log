@@ -6956,4 +6956,3 @@
 [E] Failed to compile 'activex-libreoffice'
  [id => activex-libreoffice, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [activex-libreoffice => Compilation failed] [id => activex-libreoffice, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [activex-libreoffice => Compilation failed] [id => activex-libreoffice, phase => publish] 
