@@ -12,8 +12,10 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositionin
 import typings.react.Event
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
+import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.InputHTMLAttributes
 import typings.react.reactMod.SyntheticEvent
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.Partial
@@ -21,7 +23,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ISpinButtonProps extends js.Object {
+trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
   /**
     * Optional prop to add a string id that can be referenced inside the aria-describedby attribute
     */
@@ -46,10 +48,6 @@ trait ISpinButtonProps extends js.Object {
   var ariaValueNow: js.UndefOr[Double] = js.undefined
   var ariaValueText: js.UndefOr[String] = js.undefined
   /**
-    * Optional className for SpinButton.
-    */
-  var className: js.UndefOr[String] = js.undefined
-  /**
     * Gets the component ref.
     */
   var componentRef: js.UndefOr[IRefObject[ISpinButton]] = js.undefined
@@ -66,7 +64,8 @@ trait ISpinButtonProps extends js.Object {
     * This value is mutually exclusive to value. Use one or the other.
     * @defaultvalue 0
     */
-  var defaultValue: js.UndefOr[String] = js.undefined
+  @JSName("defaultValue")
+  var defaultValue_ISpinButtonProps: js.UndefOr[String] = js.undefined
   /**
     * Whether or not the SpinButton is disabled.
     */
@@ -139,7 +138,8 @@ trait ISpinButtonProps extends js.Object {
   /**
     * A callback for when the user moves the focus away from the picker
     */
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+  @JSName("onBlur")
+  var onBlur_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   /**
     * This callback is triggered when the decrement button is pressed or if the user presses down arrow
     * with focus on the input of the spinButton
@@ -149,7 +149,8 @@ trait ISpinButtonProps extends js.Object {
   /**
     * A callback for when the user put focus on the picker
     */
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+  @JSName("onFocus")
+  var onFocus_ISpinButtonProps: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   /**
     * This callback is triggered when the increment button is pressed or if the user presses up arrow
     * with focus on the input of the spinButton
@@ -192,10 +193,6 @@ trait ISpinButtonProps extends js.Object {
     */
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
-    * A title for the SpinButton used for a more descriptive name that's also visible on its tooltip.
-    */
-  var title: js.UndefOr[String] = js.undefined
-  /**
     * Custom styles for the upArrow button.
     *
     * Note: The buttons are in a checked state when arrow keys are used to
@@ -213,6 +210,7 @@ trait ISpinButtonProps extends js.Object {
 object ISpinButtonProps {
   @scala.inline
   def apply(
+    HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
     ariaDescribedBy: String = null,
     ariaLabel: String = null,
     ariaPositionInSet: Int | Double = null,
@@ -251,6 +249,7 @@ object ISpinButtonProps {
     value: String = null
   ): ISpinButtonProps = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy)
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
     if (ariaPositionInSet != null) __obj.updateDynamic("ariaPositionInSet")(ariaPositionInSet.asInstanceOf[js.Any])

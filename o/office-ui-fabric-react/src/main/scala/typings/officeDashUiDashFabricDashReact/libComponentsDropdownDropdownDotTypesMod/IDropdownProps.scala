@@ -34,10 +34,6 @@ trait IDropdownProps extends ISelectableDroppableTextProps[IDropdown, HTMLDivEle
     */
   var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   /**
-    * Optional mode indicates if multi-choice selections is allowed.  Default to false
-    */
-  var multiSelect: js.UndefOr[Boolean] = js.undefined
-  /**
     * When multiple items are selected, this still will be used to separate values in
     * the dropdown title.
     *
@@ -65,10 +61,6 @@ trait IDropdownProps extends ISelectableDroppableTextProps[IDropdown, HTMLDivEle
     * @deprecated Use `onChange` instead.
     */
   var onChanged: js.UndefOr[js.Function2[/* option */ IDropdownOption, /* index */ js.UndefOr[Double], Unit]] = js.undefined
-  /**
-    * Callback issues when the options callout is dismissed
-    */
-  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
     * Optional custom renderer for chevron icon
     */
@@ -133,12 +125,10 @@ object IDropdownProps {
     dropdownWidth: Int | Double = null,
     isDisabled: js.UndefOr[Boolean] = js.undefined,
     keytipProps: IKeytipProps = null,
-    multiSelect: js.UndefOr[Boolean] = js.undefined,
     multiSelectDelimiter: String = null,
     notifyOnReselect: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* event */ FormEvent[HTMLDivElement], /* option */ js.UndefOr[IDropdownOption], /* index */ js.UndefOr[Double]) => Unit = null,
     onChanged: (/* option */ IDropdownOption, /* index */ js.UndefOr[Double]) => Unit = null,
-    onDismiss: () => Unit = null,
     onRenderCaretDown: (/* props */ js.UndefOr[IDropdownProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDropdownProps], Element | Null]]) => Element | Null = null,
     onRenderLabel: (/* props */ js.UndefOr[IDropdownProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDropdownProps], Element | Null]]) => Element | Null = null,
     onRenderPlaceHolder: (/* props */ js.UndefOr[IDropdownProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDropdownProps], Element | Null]]) => Element | Null = null,
@@ -156,12 +146,10 @@ object IDropdownProps {
     if (dropdownWidth != null) __obj.updateDynamic("dropdownWidth")(dropdownWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
     if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps)
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
     if (multiSelectDelimiter != null) __obj.updateDynamic("multiSelectDelimiter")(multiSelectDelimiter)
     if (!js.isUndefined(notifyOnReselect)) __obj.updateDynamic("notifyOnReselect")(notifyOnReselect)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))
     if (onChanged != null) __obj.updateDynamic("onChanged")(js.Any.fromFunction2(onChanged))
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
     if (onRenderCaretDown != null) __obj.updateDynamic("onRenderCaretDown")(js.Any.fromFunction2(onRenderCaretDown))
     if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction2(onRenderLabel))
     if (onRenderPlaceHolder != null) __obj.updateDynamic("onRenderPlaceHolder")(js.Any.fromFunction2(onRenderPlaceHolder))

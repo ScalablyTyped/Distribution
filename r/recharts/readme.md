@@ -1,7 +1,7 @@
 
 # Scala.js typings for recharts
 
-Typings are for version 1.1
+Typings are for version 1.7
 
 ## Library description:
 React charts

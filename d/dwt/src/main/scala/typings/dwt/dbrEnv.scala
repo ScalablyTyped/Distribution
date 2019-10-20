@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait dbrEnv extends js.Object {
   var bAutoConnectService: Boolean
+  var disableAutoDownloadModule: Boolean
+  var hideDWASInstallDialog: Boolean
   var logLevel: Double
   var productKey: String
   var resourcesPath: String
@@ -17,13 +19,15 @@ object dbrEnv {
   @scala.inline
   def apply(
     bAutoConnectService: Boolean,
+    disableAutoDownloadModule: Boolean,
+    hideDWASInstallDialog: Boolean,
     logLevel: Double,
     onAutoConnectServiceError: js.Any => Unit,
     onAutoConnectServiceSuccess: () => Unit,
     productKey: String,
     resourcesPath: String
   ): dbrEnv = {
-    val __obj = js.Dynamic.literal(bAutoConnectService = bAutoConnectService, logLevel = logLevel, onAutoConnectServiceError = js.Any.fromFunction1(onAutoConnectServiceError), onAutoConnectServiceSuccess = js.Any.fromFunction0(onAutoConnectServiceSuccess), productKey = productKey, resourcesPath = resourcesPath)
+    val __obj = js.Dynamic.literal(bAutoConnectService = bAutoConnectService, disableAutoDownloadModule = disableAutoDownloadModule, hideDWASInstallDialog = hideDWASInstallDialog, logLevel = logLevel, onAutoConnectServiceError = js.Any.fromFunction1(onAutoConnectServiceError), onAutoConnectServiceSuccess = js.Any.fromFunction0(onAutoConnectServiceSuccess), productKey = productKey, resourcesPath = resourcesPath)
   
     __obj.asInstanceOf[dbrEnv]
   }

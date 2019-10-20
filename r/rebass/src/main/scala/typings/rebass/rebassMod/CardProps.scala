@@ -39,7 +39,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLDivElement>, 'variant'> ]: react.react.HTMLProps<std.HTMLDivElement>[P]} */ trait CardProps extends BoxKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLDivElement>, 'variant' | 'tx'> ]: react.react.HTMLProps<std.HTMLDivElement>[P]} */ trait CardProps extends BoxKnownProps
 
 object CardProps {
   @scala.inline
@@ -95,6 +95,7 @@ object CardProps {
     ref: Ref[js.Any] = null,
     size: ResponsiveValue[HeightProperty[TLengthStyledSystem]] = null,
     sx: SxStyleProp = null,
+    tx: String = null,
     variant: ResponsiveValue[String] = null,
     verticalAlign: ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem]] = null,
     width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
@@ -151,6 +152,7 @@ object CardProps {
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (sx != null) __obj.updateDynamic("sx")(sx.asInstanceOf[js.Any])
+    if (tx != null) __obj.updateDynamic("tx")(tx)
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

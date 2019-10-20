@@ -19,10 +19,10 @@ object TrafficModel extends js.Object {
   @js.native
   sealed trait PESSIMISTIC extends TrafficModel
   
-  /* 0 */ val BEST_GUESS: typings.googlemaps.google.maps.TrafficModel.BEST_GUESS with Double = js.native
-  /* 1 */ val OPTIMISTIC: typings.googlemaps.google.maps.TrafficModel.OPTIMISTIC with Double = js.native
-  /* 2 */ val PESSIMISTIC: typings.googlemaps.google.maps.TrafficModel.PESSIMISTIC with Double = js.native
+  /* "bestguess" */ val BEST_GUESS: typings.googlemaps.google.maps.TrafficModel.BEST_GUESS with String = js.native
+  /* "optimistic" */ val OPTIMISTIC: typings.googlemaps.google.maps.TrafficModel.OPTIMISTIC with String = js.native
+  /* "pessimistic" */ val PESSIMISTIC: typings.googlemaps.google.maps.TrafficModel.PESSIMISTIC with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TrafficModel with Double] = js.native
+  def apply(value: String): js.UndefOr[TrafficModel with String] = js.native
 }
 

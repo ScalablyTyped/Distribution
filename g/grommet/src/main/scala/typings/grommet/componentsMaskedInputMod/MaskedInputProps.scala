@@ -6,6 +6,7 @@ import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.xlarge
 import typings.react.Element
+import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.FocusEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ trait MaskedInputProps extends js.Object {
   var mask: js.UndefOr[js.Array[Anon_Fixed]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[Element], _]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
   var value: js.UndefOr[String | Double] = js.undefined
@@ -29,7 +30,7 @@ object MaskedInputProps {
     mask: js.Array[Anon_Fixed] = null,
     name: String = null,
     onBlur: /* event */ FocusEvent[Element] => _ = null,
-    onChange: /* repeated */ js.Any => _ = null,
+    onChange: /* event */ ChangeEvent[Element] => Unit = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     size: small | medium | large | xlarge | String = null,
     value: String | Double = null

@@ -13,7 +13,9 @@ trait BrushProps extends js.Object {
   var dataKey: js.UndefOr[DataKey] = js.undefined
   var endIndex: js.UndefOr[Double] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
+  var gap: js.UndefOr[Double] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
+  var leaveTimeOut: js.UndefOr[Double] = js.undefined
   var onChange: js.UndefOr[RechartsFunction] = js.undefined
   var padding: js.UndefOr[Partial[Margin]] = js.undefined
   var startIndex: js.UndefOr[Double] = js.undefined
@@ -35,7 +37,9 @@ object BrushProps {
     dataKey: DataKey = null,
     endIndex: Int | Double = null,
     fill: String = null,
+    gap: Int | Double = null,
     height: Int | Double = null,
+    leaveTimeOut: Int | Double = null,
     onChange: /* repeated */ js.Any => Unit = null,
     padding: Partial[Margin] = null,
     startIndex: Int | Double = null,
@@ -54,7 +58,9 @@ object BrushProps {
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
     if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (leaveTimeOut != null) __obj.updateDynamic("leaveTimeOut")(leaveTimeOut.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (padding != null) __obj.updateDynamic("padding")(padding)
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])

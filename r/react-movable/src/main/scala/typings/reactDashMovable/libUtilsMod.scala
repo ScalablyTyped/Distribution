@@ -19,6 +19,7 @@ object libUtilsMod extends js.Object {
   def isTouchEvent(event: TouchEvent with MouseEvent): Double = js.native
   def schd(fn: js.Function): js.Function1[/* repeated */ js.Any, Unit] = js.native
   def setItemTransition(element: Element, duration: Double): Unit = js.native
+  def setItemTransition(element: Element, duration: Double, timing: String): Unit = js.native
   def transformItem(element: Element): Unit = js.native
   def transformItem(element: Element, offsetY: Double): Unit = js.native
   def transformItem(element: Element, offsetY: Double, offsetX: Double): Unit = js.native

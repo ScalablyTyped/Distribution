@@ -11,7 +11,7 @@ object addListener extends js.Object {
     config: RealmListenerConfiguration,
     eventName: RealmListenerEventName,
     changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[Unit] | Unit]
-  ): Unit = js.native
+  ): js.Promise[Unit] = js.native
   /**
     * @deprecated, to be removed in future versions
     */
@@ -21,6 +21,6 @@ object addListener extends js.Object {
     regex: String,
     name: RealmListenerEventName,
     changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[Unit] | Unit]
-  ): Unit = js.native
+  ): js.Promise[Unit] = js.native
 }
 

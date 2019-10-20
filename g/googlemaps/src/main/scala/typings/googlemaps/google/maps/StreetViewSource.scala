@@ -16,9 +16,9 @@ object StreetViewSource extends js.Object {
   @js.native
   sealed trait OUTDOOR extends StreetViewSource
   
-  /* 0 */ val DEFAULT: typings.googlemaps.google.maps.StreetViewSource.DEFAULT with Double = js.native
-  /* 1 */ val OUTDOOR: typings.googlemaps.google.maps.StreetViewSource.OUTDOOR with Double = js.native
+  /* "default" */ val DEFAULT: typings.googlemaps.google.maps.StreetViewSource.DEFAULT with String = js.native
+  /* "outdoor" */ val OUTDOOR: typings.googlemaps.google.maps.StreetViewSource.OUTDOOR with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StreetViewSource with Double] = js.native
+  def apply(value: String): js.UndefOr[StreetViewSource with String] = js.native
 }
 

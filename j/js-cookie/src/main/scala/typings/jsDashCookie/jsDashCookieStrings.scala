@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 object jsDashCookieStrings {
   @js.native
-  sealed trait Lax extends js.Object
+  sealed trait lax extends js.Object
   
   @js.native
-  sealed trait None extends js.Object
+  sealed trait none extends js.Object
   
   @js.native
-  sealed trait Strict extends js.Object
+  sealed trait strict extends js.Object
   
   @scala.inline
-  def Lax: Lax = "Lax".asInstanceOf[Lax]
+  def lax: lax = "lax".asInstanceOf[lax]
   @scala.inline
-  def None: None = "None".asInstanceOf[None]
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def Strict: Strict = "Strict".asInstanceOf[Strict]
+  def strict: strict = "strict".asInstanceOf[strict]
 }
 

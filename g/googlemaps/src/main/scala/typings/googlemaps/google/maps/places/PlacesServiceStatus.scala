@@ -11,9 +11,6 @@ sealed trait PlacesServiceStatus extends js.Object
 @js.native
 object PlacesServiceStatus extends js.Object {
   @js.native
-  sealed trait ERROR extends PlacesServiceStatus
-  
-  @js.native
   sealed trait INVALID_REQUEST extends PlacesServiceStatus
   
   @js.native
@@ -34,15 +31,14 @@ object PlacesServiceStatus extends js.Object {
   @js.native
   sealed trait ZERO_RESULTS extends PlacesServiceStatus
   
-  /* 0 */ val ERROR: typings.googlemaps.google.maps.places.PlacesServiceStatus.ERROR with Double = js.native
-  /* 1 */ val INVALID_REQUEST: typings.googlemaps.google.maps.places.PlacesServiceStatus.INVALID_REQUEST with Double = js.native
-  /* 4 */ val NOT_FOUND: typings.googlemaps.google.maps.places.PlacesServiceStatus.NOT_FOUND with Double = js.native
-  /* 2 */ val OK: typings.googlemaps.google.maps.places.PlacesServiceStatus.OK with Double = js.native
-  /* 3 */ val OVER_QUERY_LIMIT: typings.googlemaps.google.maps.places.PlacesServiceStatus.OVER_QUERY_LIMIT with Double = js.native
-  /* 5 */ val REQUEST_DENIED: typings.googlemaps.google.maps.places.PlacesServiceStatus.REQUEST_DENIED with Double = js.native
-  /* 6 */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.places.PlacesServiceStatus.UNKNOWN_ERROR with Double = js.native
-  /* 7 */ val ZERO_RESULTS: typings.googlemaps.google.maps.places.PlacesServiceStatus.ZERO_RESULTS with Double = js.native
+  /* "INVALID_REQUEST" */ val INVALID_REQUEST: typings.googlemaps.google.maps.places.PlacesServiceStatus.INVALID_REQUEST with String = js.native
+  /* "NOT_FOUND" */ val NOT_FOUND: typings.googlemaps.google.maps.places.PlacesServiceStatus.NOT_FOUND with String = js.native
+  /* "OK" */ val OK: typings.googlemaps.google.maps.places.PlacesServiceStatus.OK with String = js.native
+  /* "OVER_QUERY_LIMIT" */ val OVER_QUERY_LIMIT: typings.googlemaps.google.maps.places.PlacesServiceStatus.OVER_QUERY_LIMIT with String = js.native
+  /* "REQUEST_DENIED" */ val REQUEST_DENIED: typings.googlemaps.google.maps.places.PlacesServiceStatus.REQUEST_DENIED with String = js.native
+  /* "UNKNOWN_ERROR" */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.places.PlacesServiceStatus.UNKNOWN_ERROR with String = js.native
+  /* "ZERO_RESULTS" */ val ZERO_RESULTS: typings.googlemaps.google.maps.places.PlacesServiceStatus.ZERO_RESULTS with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PlacesServiceStatus with Double] = js.native
+  def apply(value: String): js.UndefOr[PlacesServiceStatus with String] = js.native
 }
 

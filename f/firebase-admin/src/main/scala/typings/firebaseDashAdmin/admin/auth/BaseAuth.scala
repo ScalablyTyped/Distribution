@@ -371,6 +371,7 @@ trait BaseAuth extends js.Object {
     *   tokens have been revoked.
     */
   def revokeRefreshTokens(uid: String): js.Promise[Unit] = js.native
+  def setCustomUserClaims(uid: String): js.Promise[Unit] = js.native
   /**
     * Sets additional developer claims on an existing user identified by the
     * provided `uid`, typically used to define user roles and levels of

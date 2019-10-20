@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-clone-referenced-element" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-clone-referenced-element" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

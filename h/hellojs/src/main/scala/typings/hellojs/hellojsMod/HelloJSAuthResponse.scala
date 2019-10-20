@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait HelloJSAuthResponse extends js.Object {
   var access_token: js.UndefOr[String] = js.undefined
+  var client_id: js.UndefOr[String] = js.undefined
   var display: js.UndefOr[HelloJSDisplayType] = js.undefined
   var expires: js.UndefOr[Double] = js.undefined
   var expires_in: js.UndefOr[Double] = js.undefined
@@ -22,6 +23,7 @@ object HelloJSAuthResponse {
   @scala.inline
   def apply(
     access_token: String = null,
+    client_id: String = null,
     display: HelloJSDisplayType = null,
     expires: Int | Double = null,
     expires_in: Int | Double = null,
@@ -35,6 +37,7 @@ object HelloJSAuthResponse {
   ): HelloJSAuthResponse = {
     val __obj = js.Dynamic.literal()
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
     if (display != null) __obj.updateDynamic("display")(display)
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])

@@ -59,7 +59,6 @@ object compatSrcMod extends js.Object {
   def cloneElement(vnode: Element): Element = js.native
   def cloneElement(vnode: Element, props: js.Any, children: ComponentChildren*): Element = js.native
   def createContext[T](defaultValue: T): Context[T] = js.native
-  def createFactory(): js.Function2[/* props */ js.UndefOr[js.Any], /* repeated */ ComponentChildren, VNode[_]] = js.native
   def createFactory(`type`: String): js.Function2[/* props */ js.UndefOr[js.Any], /* repeated */ ComponentChildren, VNode[_]] = js.native
   def createFactory(`type`: ComponentType[_]): js.Function2[/* props */ js.UndefOr[js.Any], /* repeated */ ComponentChildren, VNode[_]] = js.native
   def createPortal(vnode: VNode[js.Object], container: typings.std.Element): VNode[_] = js.native

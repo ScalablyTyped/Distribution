@@ -23,10 +23,13 @@ object libListMod extends js.Object {
   trait List[Value]
     extends Component[IProps[Value], js.Object, js.Any] {
     var afterIndex: Double = js.native
+    var dropTimeout: js.UndefOr[Double] = js.native
     var ghostRef: RefObject[HTMLElement] = js.native
     var initialYOffset: Double = js.native
     var itemTranslateOffsets: js.Array[Double] = js.native
+    var lastListYOffset: Double = js.native
     var lastScroll: Double = js.native
+    var lastYOffset: Double = js.native
     var listRef: RefObject[HTMLElement] = js.native
     var needle: Double = js.native
     @JSName("state")
@@ -43,6 +46,7 @@ object libListMod extends js.Object {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MList(): Unit = js.native
     def doScrolling(): Unit = js.native
+    def finishDrop(): Unit = js.native
     def getChildren(): js.Array[Element] = js.native
     def getTargetIndex(e: TEvent): Double = js.native
     def getYOffset(): Double = js.native

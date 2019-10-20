@@ -1,0 +1,29 @@
+package typings.watsonDashDeveloperDashCloud.visualDashRecognitionV3DashGeneratedMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Parameters for the `listClassifiers` operation. */
+trait ListClassifiersParams extends js.Object {
+  var headers: js.UndefOr[js.Object] = js.undefined
+  var return_response: js.UndefOr[Boolean] = js.undefined
+  /** Specify `true` to return details about the classifiers. Omit this parameter to return a brief list of classifiers. */
+  var verbose: js.UndefOr[Boolean] = js.undefined
+}
+
+object ListClassifiersParams {
+  @scala.inline
+  def apply(
+    headers: js.Object = null,
+    return_response: js.UndefOr[Boolean] = js.undefined,
+    verbose: js.UndefOr[Boolean] = js.undefined
+  ): ListClassifiersParams = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[ListClassifiersParams]
+  }
+}
+

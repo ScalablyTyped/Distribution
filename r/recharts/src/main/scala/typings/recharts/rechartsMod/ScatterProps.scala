@@ -21,7 +21,9 @@ import scala.scalajs.js.annotation._
   var activeIndex: js.UndefOr[Double] = js.undefined
   var activeShape: js.UndefOr[js.Object | RechartsFunction | ReactElement] = js.undefined
   var data: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var dataKey: js.UndefOr[DataKey] = js.undefined
   var hide: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
   var line: js.UndefOr[Boolean | js.Object | RechartsFunction | ReactElement] = js.undefined
   var lineJointType: js.UndefOr[LineType] = js.undefined
@@ -46,7 +48,9 @@ object ScatterProps {
     animationEasing: AnimationEasingType = null,
     animationId: Int | Double = null,
     data: js.Array[js.Object] = null,
+    dataKey: DataKey = null,
     hide: js.UndefOr[Boolean] = js.undefined,
+    id: String = null,
     isAnimationActive: js.UndefOr[Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined,
     legendType: LegendType = null,
@@ -82,7 +86,9 @@ object ScatterProps {
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
     if (animationId != null) __obj.updateDynamic("animationId")(animationId.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
+    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
     if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive)
     if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive)
     if (legendType != null) __obj.updateDynamic("legendType")(legendType)

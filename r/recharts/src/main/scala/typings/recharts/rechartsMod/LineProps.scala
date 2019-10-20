@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   var dot: js.UndefOr[js.Object | ReactElement | ContentRenderer[DotProps] | Boolean] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var hide: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
   var label: js.UndefOr[Boolean | js.Object | ReactElement | ContentRenderer[_]] = js.undefined
   var layout: js.UndefOr[LayoutType] = js.undefined
@@ -49,6 +50,7 @@ object LineProps {
     dot: js.Object | ReactElement | ContentRenderer[DotProps] | Boolean = null,
     height: Int | Double = null,
     hide: js.UndefOr[Boolean] = js.undefined,
+    id: String = null,
     isAnimationActive: js.UndefOr[Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined,
     label: Boolean | js.Object | ReactElement | ContentRenderer[_] = null,
@@ -92,6 +94,7 @@ object LineProps {
     if (dot != null) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive)
     if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

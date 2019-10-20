@@ -23,6 +23,8 @@ object primereactComponents extends primereactProps {
   @scala.inline
   def Card: ComponentType[CardProps] = js.constructorOf[typings.primereact.cardMod.Card].asInstanceOf[typings.react.reactMod.ComponentType[CardProps]]
   @scala.inline
+  def Carousel: ComponentType[CarouselProps] = js.constructorOf[typings.primereact.carouselMod.Carousel].asInstanceOf[typings.react.reactMod.ComponentType[CarouselProps]]
+  @scala.inline
   def Chart: ComponentType[ChartProps] = js.constructorOf[typings.primereact.chartMod.Chart].asInstanceOf[typings.react.reactMod.ComponentType[ChartProps]]
   @scala.inline
   def Checkbox: ComponentType[CheckboxProps] = js.constructorOf[typings.primereact.checkboxMod.Checkbox].asInstanceOf[typings.react.reactMod.ComponentType[CheckboxProps]]

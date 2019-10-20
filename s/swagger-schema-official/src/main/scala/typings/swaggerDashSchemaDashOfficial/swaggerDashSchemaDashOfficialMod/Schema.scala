@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Schema extends BaseSchema {
   @JSName("$ref")
   var $ref: js.UndefOr[String] = js.undefined
-  var additionalProperties: js.UndefOr[Schema] = js.undefined
+  var additionalProperties: js.UndefOr[Schema | Boolean] = js.undefined
   var allOf: js.UndefOr[js.Array[Schema]] = js.undefined
   var discriminator: js.UndefOr[String] = js.undefined
   var example: js.UndefOr[js.Any] = js.undefined
@@ -23,7 +23,7 @@ object Schema {
   @scala.inline
   def apply(
     $ref: String = null,
-    additionalProperties: Schema = null,
+    additionalProperties: Schema | Boolean = null,
     allOf: js.Array[Schema] = null,
     default: js.Any = null,
     description: String = null,
@@ -55,7 +55,7 @@ object Schema {
   ): Schema = {
     val __obj = js.Dynamic.literal()
     if ($ref != null) __obj.updateDynamic("$ref")($ref)
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties)
+    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
     if (allOf != null) __obj.updateDynamic("allOf")(allOf)
     if (default != null) __obj.updateDynamic("default")(default)
     if (description != null) __obj.updateDynamic("description")(description)

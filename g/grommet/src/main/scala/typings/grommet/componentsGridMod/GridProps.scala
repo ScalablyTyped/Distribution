@@ -16,18 +16,17 @@ import typings.grommet.grommetStrings.center
 import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.flex
 import typings.grommet.grommetStrings.full
-import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.start
 import typings.grommet.grommetStrings.stretch
-import typings.grommet.grommetStrings.vertical
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
@@ -48,7 +47,7 @@ trait GridProps extends js.Object {
       xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | Anon_12 | String
   ] = js.undefined
-  var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
+  var fill: js.UndefOr[FillType] = js.undefined
   var gap: js.UndefOr[GapType | Anon_Column] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var justify: js.UndefOr[start | center | end | stretch] = js.undefined
@@ -74,7 +73,7 @@ object GridProps {
     columns: (js.Array[
       xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | Anon_12 | String = null,
-    fill: horizontal | vertical | Boolean = null,
+    fill: FillType = null,
     gap: GapType | Anon_Column = null,
     gridArea: GridAreaType = null,
     justify: start | center | end | stretch = null,

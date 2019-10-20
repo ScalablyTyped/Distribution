@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 object libComponentsAnnouncedAnnouncedDotBaseMod extends js.Object {
   @js.native
   class AnnouncedBase ()
-    extends Component[IAnnouncedProps, js.Object, js.Any] {
-    var _classNames: js.Any = js.native
-  }
+    extends Component[IAnnouncedProps, js.Object, js.Any]
   
   /* static members */
   @js.native

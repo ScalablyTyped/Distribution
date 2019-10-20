@@ -219,6 +219,7 @@ class Compiler ()
     */
   /* InferMemberOverrides */
   override def applyPluginsWaterfall0(name: String, init: js.Any): js.Any = js.native
+  def getInfrastructureLogger(name: String): Logger = js.native
   def isChild(): Boolean = js.native
   /**
     * @deprecated Tapable.plugin is deprecated. Use new API on `.hooks` instead

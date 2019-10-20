@@ -5,53 +5,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RunTimeSetting extends js.Object {
-  var mAntiDamageLevel: Double
-  var mBarcodeFormatIds: Double
-  var mBarcodeInvertMode: Double
-  var mBinarizationBlockSize: Double
-  var mColourImageConvertMode: Double
-  var mDeblurLevel: Double
-  var mEnableFillBinaryVacancy: Double
-  var mExpectedBarcodesCount: Double
-  var mGrayEqualizationSensitivity: Double
-  var mLocalizationAlgorithmPriority: String
-  var mMaxAlgorithmThreadCount: Double
-  var mMaxBarcodesCount: Double
-  var mMaxDimOfFullImageAsBarcodeZone: Double
-  var mPDFRasterDPI: Double
-  var mRegionPredetectionMode: Double
-  var mReserved: String
-  var mScaleDownThreshold: Double
-  var mTextFilterMode: Double
-  var mTextureDetectionSensitivity: Double
-  var mTimeout: Double
+  var barcodeFormatIds: Double
+  var binarizationModes: js.Array[Double]
+  var deblurLevel: Double
+  var expectedBarcodesCount: Double
+  var localizationModes: js.Array[Double]
+  var minBarcodeTextLength: Double
+  var minResultConfidence: Double
+  var region: Region
+  var resultCoordinateType: Double
+  var scaleDownThreshold: Double
+  var textResultOrderModes: js.Array[Double]
+  var timeout: Double
 }
 
 object RunTimeSetting {
   @scala.inline
   def apply(
-    mAntiDamageLevel: Double,
-    mBarcodeFormatIds: Double,
-    mBarcodeInvertMode: Double,
-    mBinarizationBlockSize: Double,
-    mColourImageConvertMode: Double,
-    mDeblurLevel: Double,
-    mEnableFillBinaryVacancy: Double,
-    mExpectedBarcodesCount: Double,
-    mGrayEqualizationSensitivity: Double,
-    mLocalizationAlgorithmPriority: String,
-    mMaxAlgorithmThreadCount: Double,
-    mMaxBarcodesCount: Double,
-    mMaxDimOfFullImageAsBarcodeZone: Double,
-    mPDFRasterDPI: Double,
-    mRegionPredetectionMode: Double,
-    mReserved: String,
-    mScaleDownThreshold: Double,
-    mTextFilterMode: Double,
-    mTextureDetectionSensitivity: Double,
-    mTimeout: Double
+    barcodeFormatIds: Double,
+    binarizationModes: js.Array[Double],
+    deblurLevel: Double,
+    expectedBarcodesCount: Double,
+    localizationModes: js.Array[Double],
+    minBarcodeTextLength: Double,
+    minResultConfidence: Double,
+    region: Region,
+    resultCoordinateType: Double,
+    scaleDownThreshold: Double,
+    textResultOrderModes: js.Array[Double],
+    timeout: Double
   ): RunTimeSetting = {
-    val __obj = js.Dynamic.literal(mAntiDamageLevel = mAntiDamageLevel, mBarcodeFormatIds = mBarcodeFormatIds, mBarcodeInvertMode = mBarcodeInvertMode, mBinarizationBlockSize = mBinarizationBlockSize, mColourImageConvertMode = mColourImageConvertMode, mDeblurLevel = mDeblurLevel, mEnableFillBinaryVacancy = mEnableFillBinaryVacancy, mExpectedBarcodesCount = mExpectedBarcodesCount, mGrayEqualizationSensitivity = mGrayEqualizationSensitivity, mLocalizationAlgorithmPriority = mLocalizationAlgorithmPriority, mMaxAlgorithmThreadCount = mMaxAlgorithmThreadCount, mMaxBarcodesCount = mMaxBarcodesCount, mMaxDimOfFullImageAsBarcodeZone = mMaxDimOfFullImageAsBarcodeZone, mPDFRasterDPI = mPDFRasterDPI, mRegionPredetectionMode = mRegionPredetectionMode, mReserved = mReserved, mScaleDownThreshold = mScaleDownThreshold, mTextFilterMode = mTextFilterMode, mTextureDetectionSensitivity = mTextureDetectionSensitivity, mTimeout = mTimeout)
+    val __obj = js.Dynamic.literal(barcodeFormatIds = barcodeFormatIds, binarizationModes = binarizationModes, deblurLevel = deblurLevel, expectedBarcodesCount = expectedBarcodesCount, localizationModes = localizationModes, minBarcodeTextLength = minBarcodeTextLength, minResultConfidence = minResultConfidence, region = region, resultCoordinateType = resultCoordinateType, scaleDownThreshold = scaleDownThreshold, textResultOrderModes = textResultOrderModes, timeout = timeout)
   
     __obj.asInstanceOf[RunTimeSetting]
   }

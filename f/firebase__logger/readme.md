@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__logger
 
-Typings are for version 0.1.25
+Typings are for version 0.1.27
 
 ## Library description:
 A logger package for use in the Firebase JS SDK

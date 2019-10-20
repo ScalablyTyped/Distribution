@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rc-table" : "6.9.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rc-table" : "6.9.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,6 +2,7 @@ package typings.antd.antdMod
 
 import typings.antd.Anon_ChoiceTransitionNameClassName
 import typings.antd.Anon_ChoiceTransitionNameShowSearch
+import typings.antd.libSelectMod.ModeOption
 import typings.antd.libSelectMod.OptGroupProps
 import typings.antd.libSelectMod.OptionProps
 import typings.antd.libSelectMod.SelectProps
@@ -23,7 +24,7 @@ class Select[T] protected () extends default[T] {
 object Select extends js.Object {
   var OptGroup: ClassicComponentClass[OptGroupProps] = js.native
   var Option: ClassicComponentClass[OptionProps] = js.native
-  var SECRET_COMBOBOX_MODE_DO_NOT_USE: String = js.native
+  var SECRET_COMBOBOX_MODE_DO_NOT_USE: ModeOption = js.native
   var defaultProps: Anon_ChoiceTransitionNameShowSearch = js.native
   var propTypes: Anon_ChoiceTransitionNameClassName = js.native
 }

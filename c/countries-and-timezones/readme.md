@@ -1,7 +1,7 @@
 
 # Scala.js typings for countries-and-timezones
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Minimalistic library to work with countries and timezones data.

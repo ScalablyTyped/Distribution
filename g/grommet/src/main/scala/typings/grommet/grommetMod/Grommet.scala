@@ -2,6 +2,7 @@ package typings.grommet.grommetMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsGrommetMod.GrommetProps
+import typings.grommet.themesBaseMod.ThemeType
 import typings.react.HTMLDivElement
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
@@ -38,6 +39,5 @@ object Grommet extends TopLevel[
 
 @JSImport("grommet", "grommet")
 @js.native
-object grommet
-  extends TopLevel[js.Object]
+object grommet extends TopLevel[ThemeType]
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jimp__types"
-version := "0.8.4-60d41e"
+version := "0.8.5-fcf76c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

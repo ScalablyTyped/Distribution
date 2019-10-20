@@ -3,8 +3,16 @@ package typings.reactDashFoundation.componentsSwitchMod
 import typings.react.reactMod.AriaAttributes
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.DOMAttributes
+import typings.react.reactStrings.decimal
+import typings.react.reactStrings.email
+import typings.react.reactStrings.none
+import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
 import typings.react.reactStrings.on
+import typings.react.reactStrings.search
+import typings.react.reactStrings.tel
+import typings.react.reactStrings.text
+import typings.react.reactStrings.url
 import typings.reactDashFoundation.enumsMod.SwitchSizes
 import typings.reactDashFoundation.utilsMod.FlexboxPropTypes
 import typings.std.HTMLDivElement
@@ -40,8 +48,16 @@ import scala.scalajs.js.annotation._
   var inactive: js.UndefOr[SwitchInactiveProps] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
   var input: js.UndefOr[SwitchInputProps] = js.undefined
-  // Unknown
-  var inputMode: js.UndefOr[String] = js.undefined
+  // Living Standard
+  /**
+    * Hints at the type of data that might be entered by the user while editing the element or its contents
+    * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
+    */
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  /**
+    * Specify that a standard HTML element should behave like a defined custom built-in element
+    * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
+    */
   var is: js.UndefOr[String] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -53,6 +69,7 @@ import scala.scalajs.js.annotation._
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
+  // Unknown
   var radioGroup: js.UndefOr[String] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
   var results: js.UndefOr[Double] = js.undefined
@@ -98,7 +115,7 @@ object SwitchProps {
     inactive: SwitchInactiveProps = null,
     inlist: js.Any = null,
     input: SwitchInputProps = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -150,7 +167,7 @@ object SwitchProps {
     if (inactive != null) __obj.updateDynamic("inactive")(inactive)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
     if (input != null) __obj.updateDynamic("input")(input)
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)

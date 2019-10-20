@@ -1,5 +1,6 @@
 package typings.grommet.componentsGrommetMod
 
+import typings.grommet.themesBaseMod.ThemeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ trait GrommetProps extends js.Object {
   var cssVars: js.UndefOr[Boolean] = js.undefined
   var full: js.UndefOr[Boolean] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[js.Object] = js.undefined
+  var theme: js.UndefOr[ThemeType] = js.undefined
   var userAgent: js.UndefOr[String] = js.undefined
 }
 
@@ -18,7 +19,7 @@ object GrommetProps {
     cssVars: js.UndefOr[Boolean] = js.undefined,
     full: js.UndefOr[Boolean] = js.undefined,
     plain: js.UndefOr[Boolean] = js.undefined,
-    theme: js.Object = null,
+    theme: ThemeType = null,
     userAgent: String = null
   ): GrommetProps = {
     val __obj = js.Dynamic.literal()

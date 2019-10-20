@@ -126,6 +126,10 @@ trait IListProps[T] extends HTMLAttributes[List[T] | HTMLDivElement] {
     * @defaultvalue false
     */
   var usePageCache: js.UndefOr[Boolean] = js.undefined
+  /**
+    * An object which can be passed in as a fresh instance to 'force update' the list.
+    */
+  var version: js.UndefOr[js.Object] = js.undefined
 }
 
 object IListProps {
@@ -151,7 +155,8 @@ object IListProps {
     renderedWindowsBehind: Int | Double = null,
     role: String = null,
     startIndex: Int | Double = null,
-    usePageCache: js.UndefOr[Boolean] = js.undefined
+    usePageCache: js.UndefOr[Boolean] = js.undefined,
+    version: js.Object = null
   ): IListProps[T] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
@@ -175,6 +180,7 @@ object IListProps {
     if (role != null) __obj.updateDynamic("role")(role)
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(usePageCache)) __obj.updateDynamic("usePageCache")(usePageCache)
+    if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[IListProps[T]]
   }
 }

@@ -9,6 +9,7 @@ trait SidebarProps extends js.Object {
   var baseZIndex: js.UndefOr[Double] = js.undefined
   var blockScroll: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var closeOnEscape: js.UndefOr[Boolean] = js.undefined
   var dismissable: js.UndefOr[Boolean] = js.undefined
   var fullScreen: js.UndefOr[Boolean] = js.undefined
   var iconsTemplate: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.undefined
@@ -29,6 +30,7 @@ object SidebarProps {
     baseZIndex: Int | Double = null,
     blockScroll: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
+    closeOnEscape: js.UndefOr[Boolean] = js.undefined,
     dismissable: js.UndefOr[Boolean] = js.undefined,
     fullScreen: js.UndefOr[Boolean] = js.undefined,
     iconsTemplate: () => js.UndefOr[Element] = null,
@@ -44,6 +46,7 @@ object SidebarProps {
     if (baseZIndex != null) __obj.updateDynamic("baseZIndex")(baseZIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(blockScroll)) __obj.updateDynamic("blockScroll")(blockScroll)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
     if (!js.isUndefined(dismissable)) __obj.updateDynamic("dismissable")(dismissable)
     if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen)
     if (iconsTemplate != null) __obj.updateDynamic("iconsTemplate")(js.Any.fromFunction0(iconsTemplate))

@@ -1,6 +1,7 @@
 
 # Scala.js typings for websocket
 
+Typings are for version 1.0
 
 ## Library description:
 Websocket Client & Server Library implementing the WebSocket protocol as specified in RFC 6455.

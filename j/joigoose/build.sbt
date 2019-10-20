@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "joigoose"
-version := "2.0-dt-20191003Z-79965b"
+version := "2.0-dt-20191003Z-9abbb2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-000985",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-c7c4ce",
   "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-04ea06",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191015Z-71d936",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191018Z-3869f7",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

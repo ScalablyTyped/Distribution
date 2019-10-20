@@ -132,7 +132,7 @@ class Query_[T /* <: Object */] protected () extends BaseObject {
   def skip(n: Double): Query[T] = js.native
   def sortByTextScore(): this.type = js.native
   def startsWith(key: String, prefix: String): Query[T] = js.native
-  def subscribe(): LiveQuerySubscription = js.native
+  def subscribe(): js.Promise[LiveQuerySubscription] = js.native
   def withJSON(json: js.Any): this.type = js.native
   def withinGeoBox(key: String, southwest: GeoPoint, northeast: GeoPoint): Query[T] = js.native
   def withinKilometers(key: String, point: GeoPoint, maxDistance: Double): Query[T] = js.native

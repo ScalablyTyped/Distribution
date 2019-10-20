@@ -12,9 +12,11 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.assertive
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.both
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.copy
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.date
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.decimal
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.descending
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dialog
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.disabled
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.email
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.error
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.execute
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grammar
@@ -30,6 +32,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.on
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.other
@@ -37,12 +40,15 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.page
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.polite
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.popup
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.removals
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.search
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.small
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.spelling
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.step
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tel
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.text
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.react.Anon_Html
 import typings.react.Event
@@ -160,7 +166,7 @@ trait IconProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
-  var inputMode: js.UndefOr[String] = js.undefined
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   var is: js.UndefOr[String] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -422,7 +428,7 @@ object IconProps {
     id: String = null,
     inlist: js.Any = null,
     innerRef: Ref[_] | RefObject[_] = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -600,7 +606,7 @@ object IconProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)

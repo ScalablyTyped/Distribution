@@ -2,7 +2,6 @@ package typings.codemirror.codemirrorMod
 
 import typings.codemirror.Anon_Anchor
 import typings.codemirror.Anon_BgClass
-import typings.codemirror.Anon_Bias
 import typings.codemirror.Anon_Bottom
 import typings.codemirror.Anon_BottomLeft
 import typings.codemirror.Anon_BottomLeftRight
@@ -79,10 +78,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Methods prefixed with doc. can, unless otherwise specified, be called both on CodeMirror (editor) instances and
+  CodeMirror.Doc instances. Thus, the Editor interface extends Doc. **/
 @js.native
-trait Editor extends js.Object {
-  /** Expose the state object, so that the Editor.state.completionActive property is reachable*/
-  var state: js.Any = js.native
+trait Editor extends Doc {
   /** Attach an additional keymap to the editor.
     This is mostly useful for add - ons that need to register some key handlers without trampling on the extraKeys option.
     Maps added in this way have a higher precedence than the extraKeys and keyMap options, and between them,
@@ -98,12 +97,6 @@ trait Editor extends js.Object {
     or "wrap" (the wrapper node that wraps all of the line's elements, including gutter elements).
     class should be the name of the class to apply. */
   def addLineClass(line: js.Any, where: String, _class_ : String): LineHandle = js.native
-  /** Adds a line widget, an element shown below a line, spanning the whole of the editor's width, and moving the lines below it downwards.
-    line should be either an integer or a line handle, and node should be a DOM node, which will be displayed below the given line.
-    options, when given, should be an object that configures the behavior of the widget.
-    Note that the widget node will become a descendant of nodes with CodeMirror-specific CSS classes, and those classes might in some cases affect it. */
-  def addLineWidget(line: js.Any, node: HTMLElement): LineWidget = js.native
-  def addLineWidget(line: js.Any, node: HTMLElement, options: LineWidgetOptions): LineWidget = js.native
   /** Enable a highlighting overlay.This is a stateless mini - mode that can be used to add extra highlighting.
     For example, the search add - on uses it to highlight the term that's currently being searched.
     mode can be a mode spec or a mode object (an object with a token method). The options parameter is optional. If given, it should be an object.
@@ -171,11 +164,6 @@ trait Editor extends js.Object {
   def findWordAt(pos: Position): Range = js.native
   /** Give the editor focus. */
   def focus(): Unit = js.native
-  /** start is a an optional string indicating which end of the selection to return.
-    It may be "from", "to", "head" (the side of the selection that moves when you press shift+arrow),
-    or "anchor" (the fixed side of the selection).Omitting the argument is the same as passing "head". A {line, ch} object will be returned. **/
-  def getCursor(): Position = js.native
-  def getCursor(start: String): Position = js.native
   /** Retrieve the currently active document from an editor. */
   def getDoc(): Doc = js.native
   /** Fetches the DOM node that contains the editor gutters. */
@@ -301,9 +289,6 @@ trait Editor extends js.Object {
     and no other information. Will return null for unstyled tokens, and a string, potentially containing multiple
     space-separated style names, otherwise. */
   def getTokenTypeAt(pos: Position): String = js.native
-  /** Get the content of the current editor document. You can pass it an optional argument to specify the string to be used to separate lines (defaults to "\n"). */
-  def getValue(): String = js.native
-  def getValue(seperator: String): String = js.native
   /** Returns a { from , to } object indicating the start (inclusive) and end (exclusive) of the currently rendered part of the document.
     In big documents, when most content is scrolled out of view, CodeMirror will only render the visible part, and a margin around it.
     See also the viewportChange event. */
@@ -537,15 +522,6 @@ trait Editor extends js.Object {
   def scrollTo(x: Double): Unit = js.native
   def scrollTo(x: Double, y: Double): Unit = js.native
   def scrollTo(x: Null, y: Double): Unit = js.native
-  def setCursor(pos: Double): Unit = js.native
-  def setCursor(pos: Double, ch: Double): Unit = js.native
-  def setCursor(pos: Double, ch: Double, options: Anon_Bias): Unit = js.native
-  /** Set the cursor position. You can either pass a single {line, ch} object, or the line and the character as two separate parameters.
-    Will replace all selections with a single, empty selection at the given position.
-    The supported options are the same as for setSelection */
-  def setCursor(pos: Position): Unit = js.native
-  def setCursor(pos: Position, ch: Double): Unit = js.native
-  def setCursor(pos: Position, ch: Double, options: Anon_Bias): Unit = js.native
   def setGutterMarker(line: js.Any, gutterID: String): LineHandle = js.native
   /** Sets the gutter marker for the given gutter (identified by its CSS class, see the gutters option) to the given value.
     Value can be either null, to clear the marker, or a DOM element, to set it. The DOM element will be shown in the specified gutter next to the specified line. */
@@ -669,8 +645,6 @@ trait Editor extends js.Object {
     width and height height can be either numbers(interpreted as pixels) or CSS units ("100%", for example).
     You can pass null for either of them to indicate that that dimension should not be changed. */
   def setSize(width: js.Any, height: js.Any): Unit = js.native
-  /** Set the content of the current editor document. */
-  def setValue(content: String): Unit = js.native
   def showHint(options: ShowHintOptions): Unit = js.native
   /** In normal circumstances, use the above operation method. But if you want to buffer operations happening asynchronously, or that can't all be wrapped in a callback
     function, you can call startOperation to tell CodeMirror to start buffering changes, and endOperation to actually render all the updates. Be careful: if you use this

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ignore-walk", "sync")
 @js.native
 object sync extends js.Object {
-  def apply(): WalkerSync = js.native
-  def apply(options: WalkerOptions): WalkerSync = js.native
+  def apply(): js.Array[String] = js.native
+  def apply(options: WalkerOptions): js.Array[String] = js.native
 }
 

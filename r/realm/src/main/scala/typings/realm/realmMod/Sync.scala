@@ -118,7 +118,7 @@ object Sync extends js.Object {
     config: RealmListenerConfiguration,
     eventName: RealmListenerEventName,
     changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[Unit] | Unit]
-  ): Unit = js.native
+  ): js.Promise[Unit] = js.native
   /**
     * @deprecated, to be removed in future versions
     */
@@ -128,7 +128,7 @@ object Sync extends js.Object {
     regex: String,
     name: RealmListenerEventName,
     changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[Unit] | Unit]
-  ): Unit = js.native
+  ): js.Promise[Unit] = js.native
   def initiateClientReset(path: String): Unit = js.native
   def localListenerRealms(regex: String): js.Array[LocalRealm] = js.native
   def reconnect(): Unit = js.native

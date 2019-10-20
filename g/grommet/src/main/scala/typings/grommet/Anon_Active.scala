@@ -1,13 +1,14 @@
 package typings.grommet
 
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Active extends js.Object {
-  var active: Anon_ColorAnonDarkLightString
-  var color: Anon_DarkLightString
-  var hover: Anon_ColorAnonDarkLightString
+  var active: Anon_ColorColorType
+  var color: ColorType
+  var hover: Anon_ColorColorType
   var side: String
   var size: String
 }
@@ -15,13 +16,13 @@ trait Anon_Active extends js.Object {
 object Anon_Active {
   @scala.inline
   def apply(
-    active: Anon_ColorAnonDarkLightString,
-    color: Anon_DarkLightString,
-    hover: Anon_ColorAnonDarkLightString,
+    active: Anon_ColorColorType,
+    color: ColorType,
+    hover: Anon_ColorColorType,
     side: String,
     size: String
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal(active = active, color = color, hover = hover, side = side, size = size)
+    val __obj = js.Dynamic.literal(active = active, color = color.asInstanceOf[js.Any], hover = hover, side = side, size = size)
   
     __obj.asInstanceOf[Anon_Active]
   }

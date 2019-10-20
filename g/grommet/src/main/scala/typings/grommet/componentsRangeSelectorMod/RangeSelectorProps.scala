@@ -13,6 +13,8 @@ import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.utilsMod.ColorType
+import typings.react.Element
+import typings.react.reactMod.ChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +26,7 @@ trait RangeSelectorProps extends js.Object {
   var max: js.UndefOr[Double] = js.undefined
   var messages: js.UndefOr[Anon_Lower] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
   var opacity: js.UndefOr[weak | medium | strong | String | Boolean] = js.undefined
   var round: js.UndefOr[xsmall | small | medium | large | full | String] = js.undefined
   var size: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | String] = js.undefined
@@ -42,7 +44,7 @@ object RangeSelectorProps {
     max: Int | Double = null,
     messages: Anon_Lower = null,
     min: Int | Double = null,
-    onChange: /* repeated */ js.Any => _ = null,
+    onChange: /* event */ ChangeEvent[Element] => Unit = null,
     opacity: weak | medium | strong | String | Boolean = null,
     round: xsmall | small | medium | large | full | String = null,
     size: xxsmall | xsmall | small | medium | large | xlarge | full | String = null,

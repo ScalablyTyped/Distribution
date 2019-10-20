@@ -37,7 +37,7 @@ trait UserRecord extends js.Object {
     */
   var metadata: UserMetadata
   /**
-    * The user’s hashed password (base64-encoded), only if Firebase Auth hashing
+    * The user's hashed password (base64-encoded), only if Firebase Auth hashing
     * algorithm (SCRYPT) is used. If a different hashing algorithm had been used
     * when uploading this user, as is typical when migrating from another Auth
     * system, this will be an empty string. If no password is set, this is
@@ -47,7 +47,7 @@ trait UserRecord extends js.Object {
     */
   var passwordHash: js.UndefOr[String] = js.undefined
   /**
-    * The user’s password salt (base64-encoded), only if Firebase Auth hashing
+    * The user's password salt (base64-encoded), only if Firebase Auth hashing
     * algorithm (SCRYPT) is used. If a different hashing algorithm had been used to
     * upload this user, typical when migrating from another Auth system, this will
     * be an empty string. If no password is set, this is null. This is only

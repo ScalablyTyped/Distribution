@@ -50,12 +50,12 @@ object OverlayType extends js.Object {
   @js.native
   sealed trait RECTANGLE extends OverlayType
   
-  /* 0 */ val CIRCLE: typings.googlemaps.google.maps.drawing.OverlayType.CIRCLE with Double = js.native
-  /* 1 */ val MARKER: typings.googlemaps.google.maps.drawing.OverlayType.MARKER with Double = js.native
-  /* 2 */ val POLYGON: typings.googlemaps.google.maps.drawing.OverlayType.POLYGON with Double = js.native
-  /* 3 */ val POLYLINE: typings.googlemaps.google.maps.drawing.OverlayType.POLYLINE with Double = js.native
-  /* 4 */ val RECTANGLE: typings.googlemaps.google.maps.drawing.OverlayType.RECTANGLE with Double = js.native
+  /* "circle" */ val CIRCLE: typings.googlemaps.google.maps.drawing.OverlayType.CIRCLE with String = js.native
+  /* "marker" */ val MARKER: typings.googlemaps.google.maps.drawing.OverlayType.MARKER with String = js.native
+  /* "polygon" */ val POLYGON: typings.googlemaps.google.maps.drawing.OverlayType.POLYGON with String = js.native
+  /* "polyline" */ val POLYLINE: typings.googlemaps.google.maps.drawing.OverlayType.POLYLINE with String = js.native
+  /* "rectangle" */ val RECTANGLE: typings.googlemaps.google.maps.drawing.OverlayType.RECTANGLE with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OverlayType with Double] = js.native
+  def apply(value: String): js.UndefOr[OverlayType with String] = js.native
 }
 

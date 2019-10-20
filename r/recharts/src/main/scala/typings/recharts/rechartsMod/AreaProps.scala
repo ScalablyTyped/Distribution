@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   var dataKey: DataKey
   var dot: js.UndefOr[Boolean | js.Object | ReactElement | ContentRenderer[DotProps]] = js.undefined
   var hide: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   var isRange: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[Boolean | js.Object | ContentRenderer[_] | ReactElement] = js.undefined
   var layout: js.UndefOr[LayoutType] = js.undefined
@@ -46,6 +47,7 @@ object AreaProps {
     connectNulls: js.UndefOr[Boolean] = js.undefined,
     dot: Boolean | js.Object | ReactElement | ContentRenderer[DotProps] = null,
     hide: js.UndefOr[Boolean] = js.undefined,
+    id: String = null,
     isAnimationActive: js.UndefOr[Boolean] = js.undefined,
     isRange: js.UndefOr[Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined,
@@ -87,6 +89,7 @@ object AreaProps {
     if (!js.isUndefined(connectNulls)) __obj.updateDynamic("connectNulls")(connectNulls)
     if (dot != null) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
     if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive)
     if (!js.isUndefined(isRange)) __obj.updateDynamic("isRange")(isRange)
     if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive)

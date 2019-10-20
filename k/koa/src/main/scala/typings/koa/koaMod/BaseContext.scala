@@ -1,6 +1,5 @@
 package typings.koa.koaMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.koa.Anon_DeepEqual
 import typings.std.Error
 import scala.scalajs.js
@@ -10,11 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BaseContext
   extends ContextDelegatedRequest
-     with ContextDelegatedResponse
-     with /**
-  * Custom properties.
-  */
-/* key */ StringDictionary[js.Any] {
+     with ContextDelegatedResponse {
   /**
     * Similar to .throw(), adds assertion.
     *

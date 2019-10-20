@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-firebase/app" : "6.0.1"
+      "@react-native-firebase/app" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-firebase/app" : "6.0.1"
+      "@react-native-firebase/app" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

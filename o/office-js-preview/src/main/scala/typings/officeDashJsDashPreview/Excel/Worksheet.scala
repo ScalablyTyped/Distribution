@@ -197,6 +197,7 @@ class Worksheet () extends ClientObject {
     * Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in the following cases:
     * 
     - The user drags the mouse for multi-selection.
+    
     - The user selects a cell in the mode when cell arguments are selected for formula references.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -327,12 +328,13 @@ class Worksheet () extends ClientObject {
   def calculate(markAllDirty: Boolean): Unit = js.native
   /**
     *
-    * Copy a worksheet and place it at the specified position. Return the copied worksheet.
+    * Copies a worksheet and places it at the specified position. 
     *
     * [Api set: ExcelApi 1.7]
     *
-    * @param positionType Optional.
-    * @param relativeTo Optional.
+    * @param positionType The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
+    * @param relativeTo The existing worksheet which determines the newly created worksheet's position. This is only needed if `positionType` is "Before" or "After".
+    * @returns The newly created worksheet.
     */
   def copy(): Worksheet = js.native
   def copy(positionType: WorksheetPositionType): Worksheet = js.native

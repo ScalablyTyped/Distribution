@@ -32,6 +32,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/utils-fs", "write")
 @js.native
 object write extends js.Object {
+  def apply(fd: Double, buffer: Buffer): js.Promise[WriteResult] = js.native
+  def apply(fd: Double, buffer: Buffer, offset: Double): js.Promise[WriteResult] = js.native
   def apply(fd: Double, buffer: Buffer, offset: Double, length: Double): js.Promise[WriteResult] = js.native
   def apply(
     fd: Double,
@@ -1089,6 +1091,7 @@ object write extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  def apply(fd: Double, data: js.Any): js.Promise[WriteResult] = js.native
   def apply(fd: Double, data: js.Any, offset: Double): js.Promise[WriteResult] = js.native
   def apply(fd: Double, data: js.Any, offset: Double, encoding: String): js.Promise[WriteResult] = js.native
   /**

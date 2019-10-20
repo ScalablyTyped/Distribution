@@ -1,6 +1,5 @@
 package typings.domDashMediacaptureDashRecord
 
-import typings.std.Event
 import typings.std.EventListener
 import typings.std.EventTarget
 import typings.std.MediaStream
@@ -15,23 +14,15 @@ class MediaRecorder protected () extends EventTarget {
   def this(stream: MediaStream, options: MediaRecorderOptions) = this()
   val audioBitsPerSecond: Double = js.native
   val mimeType: String = js.native
-  @JSName("onpause")
-  var onpause_Original: EventListener = js.native
-  @JSName("onresume")
-  var onresume_Original: EventListener = js.native
-  @JSName("onstart")
-  var onstart_Original: EventListener = js.native
-  @JSName("onstop")
-  var onstop_Original: EventListener = js.native
+  var ondataavailable: (js.Function1[/* event */ BlobEvent, Unit]) | Null = js.native
+  var onerror: (js.Function1[/* event */ MediaRecorderErrorEvent, Unit]) | Null = js.native
+  var onpause: EventListener | Null = js.native
+  var onresume: EventListener | Null = js.native
+  var onstart: EventListener | Null = js.native
+  var onstop: EventListener | Null = js.native
   val state: RecordingState = js.native
   val stream: MediaStream = js.native
   val videoBitsPerSecond: Double = js.native
-  def ondataavailable(event: BlobEvent): Unit = js.native
-  def onerror(event: MediaRecorderErrorEvent): Unit = js.native
-  def onpause(evt: Event): Unit = js.native
-  def onresume(evt: Event): Unit = js.native
-  def onstart(evt: Event): Unit = js.native
-  def onstop(evt: Event): Unit = js.native
   def pause(): Unit = js.native
   def requestData(): Unit = js.native
   def resume(): Unit = js.native

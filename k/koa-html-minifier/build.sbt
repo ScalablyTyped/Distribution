@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-html-minifier"
-version := "1.0-dt-20180823Z-356de9"
+version := "1.0-dt-20180823Z-31bd76"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-cfcbef",
   "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-bad04f",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-1dd753",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190925Z-059d36",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20191016Z-7ab67d",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",

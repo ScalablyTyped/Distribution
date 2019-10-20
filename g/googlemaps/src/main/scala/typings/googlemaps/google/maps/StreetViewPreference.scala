@@ -16,9 +16,9 @@ object StreetViewPreference extends js.Object {
   @js.native
   sealed trait NEAREST extends StreetViewPreference
   
-  /* 0 */ val BEST: typings.googlemaps.google.maps.StreetViewPreference.BEST with Double = js.native
-  /* 1 */ val NEAREST: typings.googlemaps.google.maps.StreetViewPreference.NEAREST with Double = js.native
+  /* "best" */ val BEST: typings.googlemaps.google.maps.StreetViewPreference.BEST with String = js.native
+  /* "nearest" */ val NEAREST: typings.googlemaps.google.maps.StreetViewPreference.NEAREST with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StreetViewPreference with Double] = js.native
+  def apply(value: String): js.UndefOr[StreetViewPreference with String] = js.native
 }
 

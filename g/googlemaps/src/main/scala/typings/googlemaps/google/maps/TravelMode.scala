@@ -20,13 +20,17 @@ object TravelMode extends js.Object {
   sealed trait TRANSIT extends TravelMode
   
   @js.native
+  sealed trait TWO_WHEELER extends TravelMode
+  
+  @js.native
   sealed trait WALKING extends TravelMode
   
-  /* 0 */ val BICYCLING: typings.googlemaps.google.maps.TravelMode.BICYCLING with Double = js.native
-  /* 1 */ val DRIVING: typings.googlemaps.google.maps.TravelMode.DRIVING with Double = js.native
-  /* 2 */ val TRANSIT: typings.googlemaps.google.maps.TravelMode.TRANSIT with Double = js.native
-  /* 3 */ val WALKING: typings.googlemaps.google.maps.TravelMode.WALKING with Double = js.native
+  /* "BICYCLING" */ val BICYCLING: typings.googlemaps.google.maps.TravelMode.BICYCLING with String = js.native
+  /* "DRIVING" */ val DRIVING: typings.googlemaps.google.maps.TravelMode.DRIVING with String = js.native
+  /* "TRANSIT" */ val TRANSIT: typings.googlemaps.google.maps.TravelMode.TRANSIT with String = js.native
+  /* "TWO_WHEELER" */ val TWO_WHEELER: typings.googlemaps.google.maps.TravelMode.TWO_WHEELER with String = js.native
+  /* "WALKING" */ val WALKING: typings.googlemaps.google.maps.TravelMode.WALKING with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TravelMode with Double] = js.native
+  def apply(value: String): js.UndefOr[TravelMode with String] = js.native
 }
 

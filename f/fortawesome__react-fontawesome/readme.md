@@ -1,7 +1,7 @@
 
 # Scala.js typings for fortawesome__react-fontawesome
 
-Typings are for version 0.1.6
+Typings are for version 0.1.7
 
 ## Library description:
 Official React component for Font Awesome 5

@@ -6,6 +6,7 @@ import typings.grommet.Anon_Dark
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
@@ -17,6 +18,7 @@ trait WorldMapProps extends js.Object {
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var color: js.UndefOr[ColorType] = js.undefined
   var continents: js.UndefOr[js.Array[Anon_Africa]] = js.undefined
+  var fill: js.UndefOr[FillType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var hoverColor: js.UndefOr[String | Anon_Dark] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
@@ -31,6 +33,7 @@ object WorldMapProps {
     alignSelf: AlignSelfType = null,
     color: ColorType = null,
     continents: js.Array[Anon_Africa] = null,
+    fill: FillType = null,
     gridArea: GridAreaType = null,
     hoverColor: String | Anon_Dark = null,
     margin: MarginType = null,
@@ -42,6 +45,7 @@ object WorldMapProps {
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (continents != null) __obj.updateDynamic("continents")(continents)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

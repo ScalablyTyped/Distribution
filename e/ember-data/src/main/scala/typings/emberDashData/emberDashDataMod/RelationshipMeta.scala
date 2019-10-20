@@ -13,7 +13,7 @@ trait RelationshipMeta[Model /* <: Model */] extends js.Object {
   var key: RelationshipsFor[Model]
   var kind: belongsTo | hasMany
   var name: String
-  var options: js.Object
+  var options: RelationshipMetaOptions
   var parentType: Model
   var `type`: String
 }
@@ -25,7 +25,7 @@ object RelationshipMeta {
     key: RelationshipsFor[Model],
     kind: belongsTo | hasMany,
     name: String,
-    options: js.Object,
+    options: RelationshipMetaOptions,
     parentType: Model,
     `type`: String
   ): RelationshipMeta[Model] = {

@@ -6,6 +6,8 @@ import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.vertical
 import typings.grommet.grommetStrings.xlarge
+import typings.react.Element
+import typings.react.reactMod.ChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +17,7 @@ trait TextAreaProps extends js.Object {
   var focusIndicator: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
   var resize: js.UndefOr[vertical | horizontal | Boolean] = js.undefined
@@ -30,7 +32,7 @@ object TextAreaProps {
     focusIndicator: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     name: String = null,
-    onChange: /* repeated */ js.Any => _ = null,
+    onChange: /* event */ ChangeEvent[Element] => Unit = null,
     placeholder: String = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     resize: vertical | horizontal | Boolean = null,

@@ -16,8 +16,8 @@ object UnitSystem extends js.Object {
   @js.native
   sealed trait METRIC extends UnitSystem
   
-  /* 0 */ val IMPERIAL: typings.googlemaps.google.maps.UnitSystem.IMPERIAL with Double = js.native
-  /* 1 */ val METRIC: typings.googlemaps.google.maps.UnitSystem.METRIC with Double = js.native
+  /* 1 */ val IMPERIAL: typings.googlemaps.google.maps.UnitSystem.IMPERIAL with Double = js.native
+  /* 0 */ val METRIC: typings.googlemaps.google.maps.UnitSystem.METRIC with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnitSystem with Double] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.grommet
 
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait Anon_BorderCheck extends js.Object {
   var border: Anon_ColorWidth
   var check: Anon_Extend
-  var color: String | Anon_DarkLightString
+  var color: ColorType
   var extend: String
-  var hover: Anon_BorderAnonColorAnonDarkLightString
+  var hover: Anon_BorderAnonColorColorType
   var icon: Anon_ExtendSize
   var size: String
   var toggle: Anon_BackgroundColorKnob
@@ -20,9 +21,9 @@ object Anon_BorderCheck {
   def apply(
     border: Anon_ColorWidth,
     check: Anon_Extend,
-    color: String | Anon_DarkLightString,
+    color: ColorType,
     extend: String,
-    hover: Anon_BorderAnonColorAnonDarkLightString,
+    hover: Anon_BorderAnonColorColorType,
     icon: Anon_ExtendSize,
     size: String,
     toggle: Anon_BackgroundColorKnob

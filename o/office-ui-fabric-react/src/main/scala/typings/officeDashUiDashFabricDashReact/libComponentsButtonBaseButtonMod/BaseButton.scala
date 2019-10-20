@@ -33,6 +33,7 @@ class BaseButton protected ()
   var _menuShouldFocusOnContainer: js.Any = js.native
   var _menuShouldFocusOnMount: js.Any = js.native
   var _onClick: js.Any = js.native
+  var _onDismissMenu: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _onKeyPress: js.Any = js.native
   var _onKeyUp: js.Any = js.native

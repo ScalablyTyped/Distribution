@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("mixpanel-browser", "track_forms")
 @js.native
 object track_forms extends js.Object {
-  def apply(query: String, event_name: String): Unit = js.native
-  def apply(query: String, event_name: String, properties: js.Function0[Unit]): Unit = js.native
-  def apply(query: String, event_name: String, properties: Dict): Unit = js.native
+  def apply(query: Query, event_name: String): Unit = js.native
+  def apply(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = js.native
+  def apply(query: Query, event_name: String, properties: Dict): Unit = js.native
 }
 

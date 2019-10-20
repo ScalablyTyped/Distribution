@@ -8,10 +8,6 @@ package object koaMod {
   import typings.koa.Anon_State
 
   type Context = ParameterizedContext[DefaultState, DefaultContext]
-  /**
-    * This interface can be augmented by users to add types to Koa's default context
-    */
-  type DefaultContext = DefaultContextExtends
   type DefaultContextExtends = js.Object
   /**
     * This interface can be augmented by users to add types to Koa's default state

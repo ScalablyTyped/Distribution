@@ -37,14 +37,14 @@ trait UserImportRecord extends js.Object {
     */
   var metadata: UserMetadata
   /**
-    * The buffer of bytes representing the user’s hashed password.
+    * The buffer of bytes representing the user's hashed password.
     * When a user is to be imported with a password hash,
     * {@link admin.auth.UserImportOptions `UserImportOptions`} are required to be
     * specified to identify the hashing algorithm used to generate this hash.
     */
   var passwordHash: js.UndefOr[Buffer] = js.undefined
   /**
-    * The buffer of bytes representing the user’s password salt.
+    * The buffer of bytes representing the user's password salt.
     */
   var passwordSalt: js.UndefOr[Buffer] = js.undefined
   /**

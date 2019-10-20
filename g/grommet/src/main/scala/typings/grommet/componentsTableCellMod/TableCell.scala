@@ -1,6 +1,7 @@
 package typings.grommet.componentsTableCellMod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.grommet.componentsBoxMod.BoxTypes
 import typings.react.HTMLTableDataCellElement
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FC
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object TableCell extends TopLevel[
       FC[
-        TableCellProps with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
+        TableCellProps with BoxTypes with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
       ]
     ]
 

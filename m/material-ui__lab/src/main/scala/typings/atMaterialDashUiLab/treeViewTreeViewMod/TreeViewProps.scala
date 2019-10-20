@@ -10,8 +10,10 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.assertive
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.both
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.copy
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.date
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.decimal
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.descending
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.dialog
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.email
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.execute
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.grammar
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.grid
@@ -24,6 +26,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.menu
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mixed
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.move
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.none
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.numeric
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.off
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.on
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.other
@@ -31,11 +34,14 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.page
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.polite
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.popup
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.removals
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.search
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.spelling
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.step
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tel
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.text
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.time
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tree
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.url
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.vertical
 import typings.react.Anon_Html
 import typings.react.Event
@@ -170,7 +176,7 @@ trait TreeViewProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
-  var inputMode: js.UndefOr[String] = js.undefined
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   var is: js.UndefOr[String] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -442,7 +448,7 @@ object TreeViewProps {
     id: String = null,
     inlist: js.Any = null,
     innerRef: Ref[_] | RefObject[_] = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -624,7 +630,7 @@ object TreeViewProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)

@@ -40,8 +40,10 @@ class DropdownBase protected ()
   /** Flag for tracking whether focus is triggered by click (alternatively triggered by keyboard nav) */
   var _isFocusedByClick: js.Any = js.native
   var _isScrollIdle: js.Any = js.native
+  var _labelId: js.Any = js.native
   /** True if the most recent keydown event was for alt (option) or meta (command). */
   var _lastKeyDownWasAltOrMeta: js.Any = js.native
+  var _listId: js.Any = js.native
   /**
     * Finds the next valid Dropdown option and sets the selected index to it.
     * @param stepValue - Value of how many items the function should traverse.  Should be -1 or 1.
@@ -86,6 +88,7 @@ class DropdownBase protected ()
   var _onScroll: js.Any = js.native
   var _onZoneKeyDown: js.Any = js.native
   var _onZoneKeyUp: js.Any = js.native
+  var _optionId: js.Any = js.native
   /** Get either props.placeholder (new name) or props.placeHolder (old name) */
   val _placeholder: js.Any = js.native
   /** Wrap item list in a FocusZone */

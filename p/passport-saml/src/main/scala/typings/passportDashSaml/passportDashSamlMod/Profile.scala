@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Profile
   extends /* attributeName */ StringDictionary[js.Any] {
   var ID: js.UndefOr[String] = js.undefined
-    // InCommon Attribute urn:oid:0.9.2342.19200300.100.1.3
+   // InCommon Attribute urn:oid:0.9.2342.19200300.100.1.3
   var email: js.UndefOr[String] = js.undefined
   var issuer: js.UndefOr[String] = js.undefined
   var mail: js.UndefOr[String] = js.undefined
@@ -17,11 +17,11 @@ trait Profile
   var nameQualifier: js.UndefOr[String] = js.undefined
   var sessionIndex: js.UndefOr[String] = js.undefined
   var spNameQualifier: js.UndefOr[String] = js.undefined
-    // get the raw assertion XML
+   // get the raw assertion XML
   def getAssertion(): js.Object
-    // `mail` if not present in the assertion
+   // `mail` if not present in the assertion
   def getAssertionXml(): String
-    // get the assertion XML parsed as a JavaScript object
+   // get the assertion XML parsed as a JavaScript object
   def getSamlResponseXml(): String
 }
 

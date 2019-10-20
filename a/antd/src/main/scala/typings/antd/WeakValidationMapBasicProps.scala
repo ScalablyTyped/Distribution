@@ -9,8 +9,10 @@ import typings.antd.antdStrings.assertive
 import typings.antd.antdStrings.both
 import typings.antd.antdStrings.copy
 import typings.antd.antdStrings.date
+import typings.antd.antdStrings.decimal
 import typings.antd.antdStrings.descending
 import typings.antd.antdStrings.dialog
+import typings.antd.antdStrings.email
 import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
@@ -23,6 +25,7 @@ import typings.antd.antdStrings.menu
 import typings.antd.antdStrings.mixed
 import typings.antd.antdStrings.move
 import typings.antd.antdStrings.none
+import typings.antd.antdStrings.numeric
 import typings.antd.antdStrings.off
 import typings.antd.antdStrings.on
 import typings.antd.antdStrings.other
@@ -30,11 +33,14 @@ import typings.antd.antdStrings.page
 import typings.antd.antdStrings.polite
 import typings.antd.antdStrings.popup
 import typings.antd.antdStrings.removals
+import typings.antd.antdStrings.search
 import typings.antd.antdStrings.spelling
 import typings.antd.antdStrings.step
+import typings.antd.antdStrings.tel
 import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
+import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEventHandler
@@ -131,7 +137,9 @@ trait WeakValidationMapBasicProps extends js.Object {
   var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var inlist: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
-  var inputMode: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var inputMode: js.UndefOr[
+    Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
+  ] = js.undefined
   var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -391,7 +399,7 @@ object WeakValidationMapBasicProps {
     hidden: Validator[js.UndefOr[Boolean | Null]] = null,
     id: Validator[js.UndefOr[Null | String]] = null,
     inlist: Validator[js.UndefOr[_ | Null]] = null,
-    inputMode: Validator[js.UndefOr[Null | String]] = null,
+    inputMode: Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]] = null,
     is: Validator[js.UndefOr[Null | String]] = null,
     itemID: Validator[js.UndefOr[Null | String]] = null,
     itemProp: Validator[js.UndefOr[Null | String]] = null,

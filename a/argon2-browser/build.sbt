@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "argon2-browser"
-version := "1.6-dt-20190823Z-315324"
+version := "1.12-dt-20191018Z-8ebafa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

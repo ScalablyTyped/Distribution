@@ -93,10 +93,6 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
     */
   var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   /**
-    * Optional mode indicates if multi-choice selections is allowed.  Default to false
-    */
-  var multiSelect: js.UndefOr[Boolean] = js.undefined
-  /**
     * Callback issued when either:
     * 1) the selected option changes
     * 2) a manually edited value is submitted. In this case there may not be a matched option if allowFreeform is also true
@@ -227,7 +223,6 @@ object IComboBoxProps {
     iconButtonProps: IButtonProps = null,
     isButtonAriaHidden: js.UndefOr[Boolean] = js.undefined,
     keytipProps: IKeytipProps = null,
-    multiSelect: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* event */ FormEvent[IComboBox], /* option */ js.UndefOr[IComboBoxOption], /* index */ js.UndefOr[Double], /* value */ js.UndefOr[String]) => Unit = null,
     onItemClick: (/* event */ FormEvent[IComboBox], /* option */ js.UndefOr[IComboBoxOption], /* index */ js.UndefOr[Double]) => Unit = null,
     onMenuDismiss: () => Unit = null,
@@ -261,7 +256,6 @@ object IComboBoxProps {
     if (iconButtonProps != null) __obj.updateDynamic("iconButtonProps")(iconButtonProps)
     if (!js.isUndefined(isButtonAriaHidden)) __obj.updateDynamic("isButtonAriaHidden")(isButtonAriaHidden)
     if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps)
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))
     if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction3(onItemClick))
     if (onMenuDismiss != null) __obj.updateDynamic("onMenuDismiss")(js.Any.fromFunction0(onMenuDismiss))

@@ -64,25 +64,25 @@ object AdFormat extends js.Object {
   @js.native
   sealed trait X_LARGE_VERTICAL_LINK_UNIT extends AdFormat
   
-  /* 0 */ val BANNER: typings.googlemaps.google.maps.adsense.AdFormat.BANNER with Double = js.native
-  /* 1 */ val BUTTON: typings.googlemaps.google.maps.adsense.AdFormat.BUTTON with Double = js.native
-  /* 2 */ val HALF_BANNER: typings.googlemaps.google.maps.adsense.AdFormat.HALF_BANNER with Double = js.native
-  /* 3 */ val LARGE_HORIZONTAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_HORIZONTAL_LINK_UNIT with Double = js.native
-  /* 4 */ val LARGE_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_RECTANGLE with Double = js.native
-  /* 5 */ val LARGE_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_VERTICAL_LINK_UNIT with Double = js.native
-  /* 6 */ val LEADERBOARD: typings.googlemaps.google.maps.adsense.AdFormat.LEADERBOARD with Double = js.native
-  /* 7 */ val MEDIUM_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_RECTANGLE with Double = js.native
-  /* 8 */ val MEDIUM_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_VERTICAL_LINK_UNIT with Double = js.native
-  /* 9 */ val SKYSCRAPER: typings.googlemaps.google.maps.adsense.AdFormat.SKYSCRAPER with Double = js.native
-  /* 10 */ val SMALL_HORIZONTAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_HORIZONTAL_LINK_UNIT with Double = js.native
-  /* 11 */ val SMALL_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_RECTANGLE with Double = js.native
-  /* 12 */ val SMALL_SQUARE: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_SQUARE with Double = js.native
-  /* 13 */ val SMALL_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_VERTICAL_LINK_UNIT with Double = js.native
-  /* 14 */ val SQUARE: typings.googlemaps.google.maps.adsense.AdFormat.SQUARE with Double = js.native
-  /* 15 */ val VERTICAL_BANNER: typings.googlemaps.google.maps.adsense.AdFormat.VERTICAL_BANNER with Double = js.native
-  /* 16 */ val WIDE_SKYSCRAPER: typings.googlemaps.google.maps.adsense.AdFormat.WIDE_SKYSCRAPER with Double = js.native
-  /* 17 */ val X_LARGE_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.X_LARGE_VERTICAL_LINK_UNIT with Double = js.native
+  /* "468x60_as" */ val BANNER: typings.googlemaps.google.maps.adsense.AdFormat.BANNER with String = js.native
+  /* "125x125_as" */ val BUTTON: typings.googlemaps.google.maps.adsense.AdFormat.BUTTON with String = js.native
+  /* "234x60_as" */ val HALF_BANNER: typings.googlemaps.google.maps.adsense.AdFormat.HALF_BANNER with String = js.native
+  /* "728x15_0ads_al" */ val LARGE_HORIZONTAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_HORIZONTAL_LINK_UNIT with String = js.native
+  /* "336x280_as" */ val LARGE_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_RECTANGLE with String = js.native
+  /* "180x90_0ads_al" */ val LARGE_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_VERTICAL_LINK_UNIT with String = js.native
+  /* "728x90_as" */ val LEADERBOARD: typings.googlemaps.google.maps.adsense.AdFormat.LEADERBOARD with String = js.native
+  /* "300x250_as" */ val MEDIUM_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_RECTANGLE with String = js.native
+  /* "160x90_0ads_al" */ val MEDIUM_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_VERTICAL_LINK_UNIT with String = js.native
+  /* "120x600_as" */ val SKYSCRAPER: typings.googlemaps.google.maps.adsense.AdFormat.SKYSCRAPER with String = js.native
+  /* "468x15_0ads_al" */ val SMALL_HORIZONTAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_HORIZONTAL_LINK_UNIT with String = js.native
+  /* "180x150_as" */ val SMALL_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_RECTANGLE with String = js.native
+  /* "200x200_as" */ val SMALL_SQUARE: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_SQUARE with String = js.native
+  /* "120x90_0ads_al" */ val SMALL_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_VERTICAL_LINK_UNIT with String = js.native
+  /* "250x250_as" */ val SQUARE: typings.googlemaps.google.maps.adsense.AdFormat.SQUARE with String = js.native
+  /* "120x240_as" */ val VERTICAL_BANNER: typings.googlemaps.google.maps.adsense.AdFormat.VERTICAL_BANNER with String = js.native
+  /* "160x600_as" */ val WIDE_SKYSCRAPER: typings.googlemaps.google.maps.adsense.AdFormat.WIDE_SKYSCRAPER with String = js.native
+  /* "200x90_0ads_al" */ val X_LARGE_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.X_LARGE_VERTICAL_LINK_UNIT with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AdFormat with Double] = js.native
+  def apply(value: String): js.UndefOr[AdFormat with String] = js.native
 }
 

@@ -1,14 +1,14 @@
 package typings.grommet
 
-import typings.grommet.themesMod.Colors
+import typings.grommet.themesBaseMod.Colors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Animation extends js.Object {
   var animation: Anon_DurationJiggle
-  var borderSize: Anon_LargeMediumSmall
-  var breakpoints: Anon_LargeMediumSmallAnonBorderSize
+  var borderSize: Anon_LargeMedium
+  var breakpoints: Anon_LargeMediumSmall
   var colors: Colors
   var control: Anon_Border
   var debounceDelay: Double
@@ -16,12 +16,12 @@ trait Anon_Animation extends js.Object {
   var drop: Anon_BackgroundBorder
   var edgeSize: Anon_HairLarge
   var elevation: Anon_DarkLight
-  var focus: Anon_BorderAnonColorString
+  var focus: Anon_BorderAnonColorColorType
   var font: Anon_Height
   var hover: Anon_BackgroundColor
   var input: Anon_Padding
   var opacity: Anon_Medium
-  var selected: Anon_BackgroundColorString
+  var selected: Anon_BackgroundColor
   var size: Anon_FullLargeMedium
   var spacing: String
 }
@@ -30,8 +30,8 @@ object Anon_Animation {
   @scala.inline
   def apply(
     animation: Anon_DurationJiggle,
-    borderSize: Anon_LargeMediumSmall,
-    breakpoints: Anon_LargeMediumSmallAnonBorderSize,
+    borderSize: Anon_LargeMedium,
+    breakpoints: Anon_LargeMediumSmall,
     colors: Colors,
     control: Anon_Border,
     debounceDelay: Double,
@@ -39,12 +39,12 @@ object Anon_Animation {
     drop: Anon_BackgroundBorder,
     edgeSize: Anon_HairLarge,
     elevation: Anon_DarkLight,
-    focus: Anon_BorderAnonColorString,
+    focus: Anon_BorderAnonColorColorType,
     font: Anon_Height,
     hover: Anon_BackgroundColor,
     input: Anon_Padding,
     opacity: Anon_Medium,
-    selected: Anon_BackgroundColorString,
+    selected: Anon_BackgroundColor,
     size: Anon_FullLargeMedium,
     spacing: String
   ): Anon_Animation = {

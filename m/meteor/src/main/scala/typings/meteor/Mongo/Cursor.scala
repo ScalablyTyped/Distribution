@@ -21,8 +21,8 @@ trait Cursor[T] extends js.Object {
     callback: js.Function3[/* doc */ T, /* index */ Double, /* cursor */ Cursor[T], U],
     thisArg: js.Any
   ): js.Array[U] = js.native
-  def observe(callbacks: ObserveCallbacks): LiveQueryHandle = js.native
-  def observeChanges(callbacks: ObserveChangesCallbacks): LiveQueryHandle = js.native
+  def observe(callbacks: ObserveCallbacks[T]): LiveQueryHandle = js.native
+  def observeChanges(callbacks: ObserveChangesCallbacks[T]): LiveQueryHandle = js.native
 }
 
 @JSGlobal("Mongo.Cursor")

@@ -13,8 +13,10 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.center
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.char
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.copy
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.date
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.decimal
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.descending
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dialog
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.email
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.execute
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grammar
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grid
@@ -30,6 +32,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.middle
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.on
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.other
@@ -38,12 +41,15 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.polite
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.popup
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.removals
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.right
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.search
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.spelling
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.step
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tel
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.text
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.top
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.react.Anon_Html
 import typings.react.Event
@@ -296,8 +302,16 @@ trait TableCellBaseProps extends js.Object {
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
-  // Unknown
-  var inputMode: js.UndefOr[String] = js.undefined
+  // Living Standard
+  /**
+    * Hints at the type of data that might be entered by the user while editing the element or its contents
+    * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
+    */
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  /**
+    * Specify that a standard HTML element should behave like a defined custom built-in element
+    * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
+    */
   var is: js.UndefOr[String] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -485,6 +499,7 @@ trait TableCellBaseProps extends js.Object {
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
+  // Unknown
   var radioGroup: js.UndefOr[String] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
   var results: js.UndefOr[Double] = js.undefined
@@ -580,7 +595,7 @@ object TableCellBaseProps {
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -760,7 +775,7 @@ object TableCellBaseProps {
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)

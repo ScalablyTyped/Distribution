@@ -1,0 +1,20 @@
+package typings.atWebpackDashBlocksAssets.atWebpackDashBlocksAssetsMod.css
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ParseImportOptions extends js.Object {
+  var media: String
+  var url: String
+}
+
+object ParseImportOptions {
+  @scala.inline
+  def apply(media: String, url: String): ParseImportOptions = {
+    val __obj = js.Dynamic.literal(media = media, url = url)
+  
+    __obj.asInstanceOf[ParseImportOptions]
+  }
+}
+

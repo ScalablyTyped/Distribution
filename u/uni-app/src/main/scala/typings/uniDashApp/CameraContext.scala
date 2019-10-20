@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CameraContext extends js.Object {
   /**
+    * 结束录像，成功则返回封面与视频
+    */
+  def onCameraFrame(): Unit = js.native
+  def onCameraFrame(callback: js.Function1[/* result */ CameraFrame, Unit]): Unit = js.native
+  /**
     * 开始录像
     */
   def startRecord(): Unit = js.native

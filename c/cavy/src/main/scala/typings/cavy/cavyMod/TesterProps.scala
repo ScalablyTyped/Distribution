@@ -5,20 +5,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TesterProps extends js.Object {
+  var clearAsyncStorage: js.UndefOr[Boolean] = js.undefined
+  var reporter: js.UndefOr[js.Function1[/* report */ TestReport, Unit]] = js.undefined
+  // Deprecated
   var sendReport: js.UndefOr[Boolean] = js.undefined
   var specs: js.Array[js.Function1[/* spec */ TestScope, Unit]]
-  var waitTime: Double
+  var startDelay: js.UndefOr[Double] = js.undefined
+  var store: TestHookStore
+  var waitTime: js.UndefOr[Double] = js.undefined
 }
 
 object TesterProps {
   @scala.inline
   def apply(
     specs: js.Array[js.Function1[/* spec */ TestScope, Unit]],
-    waitTime: Double,
-    sendReport: js.UndefOr[Boolean] = js.undefined
+    store: TestHookStore,
+    clearAsyncStorage: js.UndefOr[Boolean] = js.undefined,
+    reporter: /* report */ TestReport => Unit = null,
+    sendReport: js.UndefOr[Boolean] = js.undefined,
+    startDelay: Int | Double = null,
+    waitTime: Int | Double = null
   ): TesterProps = {
-    val __obj = js.Dynamic.literal(specs = specs, waitTime = waitTime)
+    val __obj = js.Dynamic.literal(specs = specs, store = store)
+    if (!js.isUndefined(clearAsyncStorage)) __obj.updateDynamic("clearAsyncStorage")(clearAsyncStorage)
+    if (reporter != null) __obj.updateDynamic("reporter")(js.Any.fromFunction1(reporter))
     if (!js.isUndefined(sendReport)) __obj.updateDynamic("sendReport")(sendReport)
+    if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])
+    if (waitTime != null) __obj.updateDynamic("waitTime")(waitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TesterProps]
   }
 }

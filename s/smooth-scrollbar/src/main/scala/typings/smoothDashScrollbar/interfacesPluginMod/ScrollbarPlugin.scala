@@ -10,7 +10,7 @@ trait ScrollbarPlugin extends js.Object {
   val name: String
   val options: js.Any
   val scrollbar: Scrollbar
-  def onDestory(): Unit
+  def onDestroy(): Unit
   def onInit(): Unit
   def onRender(remainMomentum: Data2d): Unit
   def onUpdate(): Unit
@@ -21,7 +21,7 @@ object ScrollbarPlugin {
   @scala.inline
   def apply(
     name: String,
-    onDestory: () => Unit,
+    onDestroy: () => Unit,
     onInit: () => Unit,
     onRender: Data2d => Unit,
     onUpdate: () => Unit,
@@ -29,7 +29,7 @@ object ScrollbarPlugin {
     scrollbar: Scrollbar,
     transformDelta: (Data2d, js.Any) => Data2d
   ): ScrollbarPlugin = {
-    val __obj = js.Dynamic.literal(name = name, onDestory = js.Any.fromFunction0(onDestory), onInit = js.Any.fromFunction0(onInit), onRender = js.Any.fromFunction1(onRender), onUpdate = js.Any.fromFunction0(onUpdate), options = options, scrollbar = scrollbar, transformDelta = js.Any.fromFunction2(transformDelta))
+    val __obj = js.Dynamic.literal(name = name, onDestroy = js.Any.fromFunction0(onDestroy), onInit = js.Any.fromFunction0(onInit), onRender = js.Any.fromFunction1(onRender), onUpdate = js.Any.fromFunction0(onUpdate), options = options, scrollbar = scrollbar, transformDelta = js.Any.fromFunction2(transformDelta))
   
     __obj.asInstanceOf[ScrollbarPlugin]
   }

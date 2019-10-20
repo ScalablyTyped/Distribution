@@ -9,9 +9,11 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.assertive
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.both
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.copy
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.date
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.decimal
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dense
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.descending
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dialog
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.email
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.execute
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.filled
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grammar
@@ -25,6 +27,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.on
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.other
@@ -33,12 +36,15 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.page
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.polite
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.popup
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.removals
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.search
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.spelling
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.standard
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.step
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tel
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.text
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.atMaterialDashUiCore.inputBaseInputBaseMod.InputBaseComponentProps
 import typings.react.Anon_Html
@@ -174,7 +180,7 @@ trait PartialSelectProps extends js.Object {
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
   var input: js.UndefOr[ReactNode] = js.undefined
   var inputComponent: js.UndefOr[ReactType[InputBaseComponentProps]] = js.undefined
-  var inputMode: js.UndefOr[String] = js.undefined
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   var inputProps: js.UndefOr[InputBaseComponentProps] = js.undefined
   var inputRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
   var is: js.UndefOr[String] = js.undefined
@@ -480,7 +486,7 @@ object PartialSelectProps {
     innerRef: Ref[_] | RefObject[_] = null,
     input: ReactNode = null,
     inputComponent: ReactType[InputBaseComponentProps] = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     inputProps: InputBaseComponentProps = null,
     inputRef: Ref[_] | RefObject[_] = null,
     is: String = null,
@@ -693,7 +699,7 @@ object PartialSelectProps {
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (inputComponent != null) __obj.updateDynamic("inputComponent")(inputComponent.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)

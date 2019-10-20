@@ -10,8 +10,10 @@ import typings.antd.antdStrings.assertive
 import typings.antd.antdStrings.both
 import typings.antd.antdStrings.copy
 import typings.antd.antdStrings.date
+import typings.antd.antdStrings.decimal
 import typings.antd.antdStrings.descending
 import typings.antd.antdStrings.dialog
+import typings.antd.antdStrings.email
 import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
@@ -24,6 +26,7 @@ import typings.antd.antdStrings.menu
 import typings.antd.antdStrings.mixed
 import typings.antd.antdStrings.move
 import typings.antd.antdStrings.none
+import typings.antd.antdStrings.numeric
 import typings.antd.antdStrings.off
 import typings.antd.antdStrings.on
 import typings.antd.antdStrings.other
@@ -31,11 +34,14 @@ import typings.antd.antdStrings.page
 import typings.antd.antdStrings.polite
 import typings.antd.antdStrings.popup
 import typings.antd.antdStrings.removals
+import typings.antd.antdStrings.search
 import typings.antd.antdStrings.spelling
 import typings.antd.antdStrings.step
+import typings.antd.antdStrings.tel
 import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
+import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
 import typings.react.Anon_Html
 import typings.react.Event
@@ -159,7 +165,7 @@ trait ButtonProps extends js.Object {
   var icon: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
-  var inputMode: js.UndefOr[String] = js.undefined
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   var is: js.UndefOr[String] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -444,7 +450,7 @@ object ButtonProps {
     icon: String = null,
     id: String = null,
     inlist: js.Any = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -645,7 +651,7 @@ object ButtonProps {
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)

@@ -19,10 +19,10 @@ object DistanceMatrixElementStatus extends js.Object {
   @js.native
   sealed trait ZERO_RESULTS extends DistanceMatrixElementStatus
   
-  /* 0 */ val NOT_FOUND: typings.googlemaps.google.maps.DistanceMatrixElementStatus.NOT_FOUND with Double = js.native
-  /* 1 */ val OK: typings.googlemaps.google.maps.DistanceMatrixElementStatus.OK with Double = js.native
-  /* 2 */ val ZERO_RESULTS: typings.googlemaps.google.maps.DistanceMatrixElementStatus.ZERO_RESULTS with Double = js.native
+  /* "NOT_FOUND" */ val NOT_FOUND: typings.googlemaps.google.maps.DistanceMatrixElementStatus.NOT_FOUND with String = js.native
+  /* "OK" */ val OK: typings.googlemaps.google.maps.DistanceMatrixElementStatus.OK with String = js.native
+  /* "ZERO_RESULTS" */ val ZERO_RESULTS: typings.googlemaps.google.maps.DistanceMatrixElementStatus.ZERO_RESULTS with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DistanceMatrixElementStatus with Double] = js.native
+  def apply(value: String): js.UndefOr[DistanceMatrixElementStatus with String] = js.native
 }
 

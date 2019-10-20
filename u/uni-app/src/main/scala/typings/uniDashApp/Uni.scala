@@ -217,6 +217,12 @@ class Uni () extends js.Object {
   def createBLEConnection(): Unit = js.native
   def createBLEConnection(options: CreateBLEConnectionOptions): Unit = js.native
   /**
+    * 创建并返回 camera 组件的上下文 cameraContext 对象
+    *
+    * 参考: [http://uniapp.dcloud.io/api/media/camera-context](http://uniapp.dcloud.io/api/media/camera-context)
+    */
+  def createCameraContext(): CameraContext = js.native
+  /**
     * 创建 canvas 绘图上下文
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/canvas?id=createcanvascontext](http://uniapp.dcloud.io/api/ui/canvas?id=createcanvascontext)
@@ -359,6 +365,12 @@ class Uni () extends js.Object {
     */
   def getLocation(): Unit = js.native
   def getLocation(options: GetLocationOptions): Unit = js.native
+  /**
+    * 获取小程序下该菜单按钮的布局位置信息
+    *
+    * 参考: [http://uniapp.dcloud.io/api/ui/menuButton?id=getmenubuttonboundingclientrect](http://uniapp.dcloud.io/api/ui/menuButton?id=getmenubuttonboundingclientrect)
+    */
+  def getMenuButtonBoundingClientRect(): GetMenuButtonBoundingClientRectRes = js.native
   /**
     * 获取网络类型
     *
@@ -680,6 +692,13 @@ class Uni () extends js.Object {
     */
   def onSocketOpen(): Unit = js.native
   def onSocketOpen(options: js.Function1[/* result */ OnSocketOpenCallbackResult, Unit]): Unit = js.native
+  /**
+    * 监听中间按钮的点击事件
+    *
+    * 参考: [http://uniapp.dcloud.io/api/ui/tabbar?id=ontabbarmidbuttontap](http://uniapp.dcloud.io/api/ui/tabbar?id=ontabbarmidbuttontap)
+    */
+  def onTabBarMidButtonTap(): Unit = js.native
+  def onTabBarMidButtonTap(callback: js.Function0[Unit]): Unit = js.native
   /**
     * 监听窗口尺寸变化事件
     *

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-flip" : "0.8.4"
+      "@jimp/plugin-flip" : "0.8.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-flip" : "0.8.4"
+      "@jimp/plugin-flip" : "0.8.5"
     }
   ],
   "compile-devDependencies" : [

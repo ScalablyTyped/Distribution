@@ -20,6 +20,7 @@ trait DynamsoftLib extends js.Object {
   def NewOCRReadPara(): OCRReadPara
   def NewOCRZone(): OCRZone
   def NewRedaction(): Redaction
+  def getScript(url: String, bAsync: Boolean, callback: js.Function0[Unit]): Unit
   /*ignored
     error  escapeHtml  escapeRegExp  extend  filter  fireEvent  fromUnicode  get  getColor  getCss
     getElDimensions  getHex  getHexColor  getHttpUrl  getLogger  getOffset  getRandom  getRealPath  getScript
@@ -44,10 +45,11 @@ object DynamsoftLib {
     NewRedaction: () => Redaction,
     detect: Anon_Ssl,
     env: Anon_BChrome,
+    getScript: (String, Boolean, js.Function0[Unit]) => Unit,
     hideMask: () => Unit,
     showMask: () => Unit
   ): DynamsoftLib = {
-    val __obj = js.Dynamic.literal(NewOCRReadPara = js.Any.fromFunction0(NewOCRReadPara), NewOCRZone = js.Any.fromFunction0(NewOCRZone), NewRedaction = js.Any.fromFunction0(NewRedaction), detect = detect, env = env, hideMask = js.Any.fromFunction0(hideMask), showMask = js.Any.fromFunction0(showMask))
+    val __obj = js.Dynamic.literal(NewOCRReadPara = js.Any.fromFunction0(NewOCRReadPara), NewOCRZone = js.Any.fromFunction0(NewOCRZone), NewRedaction = js.Any.fromFunction0(NewRedaction), detect = detect, env = env, getScript = js.Any.fromFunction3(getScript), hideMask = js.Any.fromFunction0(hideMask), showMask = js.Any.fromFunction0(showMask))
   
     __obj.asInstanceOf[DynamsoftLib]
   }

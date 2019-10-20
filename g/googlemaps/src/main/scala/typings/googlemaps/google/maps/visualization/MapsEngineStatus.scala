@@ -19,10 +19,10 @@ object MapsEngineStatus extends js.Object {
   @js.native
   sealed trait UNKNOWN_ERROR extends MapsEngineStatus
   
-  /* 0 */ val INVALID_LAYER: typings.googlemaps.google.maps.visualization.MapsEngineStatus.INVALID_LAYER with Double = js.native
-  /* 1 */ val OK: typings.googlemaps.google.maps.visualization.MapsEngineStatus.OK with Double = js.native
-  /* 2 */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.visualization.MapsEngineStatus.UNKNOWN_ERROR with Double = js.native
+  /* "INVALID_LAYER" */ val INVALID_LAYER: typings.googlemaps.google.maps.visualization.MapsEngineStatus.INVALID_LAYER with String = js.native
+  /* "OK" */ val OK: typings.googlemaps.google.maps.visualization.MapsEngineStatus.OK with String = js.native
+  /* "UNKNOWN_ERROR" */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.visualization.MapsEngineStatus.UNKNOWN_ERROR with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MapsEngineStatus with Double] = js.native
+  def apply(value: String): js.UndefOr[MapsEngineStatus with String] = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for primereact
 
-Typings are for version 3.2.0
+Typings are for version 3.3.1
 
 ## Library description:
 [![Join the chat at https://gitter.im/primefaces/primereact](https://badges.gitter.im/primefaces/primereact.svg)](https://gitter.im/primefaces/primereact?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)

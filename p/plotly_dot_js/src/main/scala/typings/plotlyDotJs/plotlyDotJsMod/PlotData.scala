@@ -117,6 +117,7 @@ trait PlotData extends js.Object {
   var boxmean: Boolean | sd
   var colorscale: ColorScale
   var connectgaps: Boolean
+  var customdata: js.Array[Datum]
   var error_x: ErrorBar
   var error_y: ErrorBar
   var fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext
@@ -184,6 +185,7 @@ object PlotData {
     boxmean: Boolean | sd,
     colorscale: ColorScale,
     connectgaps: Boolean,
+    customdata: js.Array[Datum],
     error_x: ErrorBar,
     error_y: ErrorBar,
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext,
@@ -241,7 +243,7 @@ object PlotData {
     z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     zsmooth: fast | best | `false`
   ): PlotData = {
-    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, orientation = orientation.asInstanceOf[js.Any], r = r, rotation = rotation, stackgroup = stackgroup, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, values = values, visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, customdata = customdata, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, orientation = orientation.asInstanceOf[js.Any], r = r, rotation = rotation, stackgroup = stackgroup, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, values = values, visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
     __obj.updateDynamic("line.color")(`line.color`.asInstanceOf[js.Any])
     __obj.updateDynamic("line.dash")(`line.dash`)
     __obj.updateDynamic("line.shape")(`line.shape`.asInstanceOf[js.Any])

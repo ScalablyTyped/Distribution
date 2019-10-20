@@ -1,7 +1,11 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Instantiable0
+import typings.antd.esTableCreateStoreMod.Store
+import typings.antd.esTableInterfaceMod.CheckboxPropsCache
+import typings.antd.esTableInterfaceMod.TableProps
+import typings.antd.esTableTableMod.StoreTable
 import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +14,25 @@ import scala.scalajs.js.annotation._
 @js.native
 object esTableTableMod extends js.Object {
   @js.native
-  class default protected ()
-    extends Component[PickTablePropsanyloadingfooterstyletitlescrollsize, js.Any, js.Any] {
-    def this(props: PickTablePropsanyloadingfooterstyletitlescrollsize) = this()
-    def this(props: PickTablePropsanyloadingfooterstyletitlescrollsize, context: js.Any) = this()
+  trait StoreTable[T]
+    extends Component[OmitTablePropsTkeyofWithStore[T], js.Object, js.Any] {
+    var CheckboxPropsCache: typings.antd.esTableInterfaceMod.CheckboxPropsCache = js.native
+    var store: Store = js.native
+    def setCheckboxPropsCache(cache: CheckboxPropsCache): CheckboxPropsCache = js.native
   }
   
-  val default: ComponentClass[PickTablePropsanyloadingfooterstyletitlescrollsize, js.Any] = js.native
+  @js.native
+  class default[T] protected () extends StoreTable[T] {
+    def this(props: TableProps[T]) = this()
+  }
+  
+  /* static members */
+  @js.native
+  object default extends js.Object {
+    var Column: Instantiable0[typings.antd.esTableColumnMod.default[js.Object]] = js.native
+    var ColumnGroup: TypeofClassColumnGroup = js.native
+    var displayName: String = js.native
+  }
+  
 }
 

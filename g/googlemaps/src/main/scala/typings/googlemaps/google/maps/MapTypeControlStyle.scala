@@ -19,9 +19,17 @@ object MapTypeControlStyle extends js.Object {
   @js.native
   sealed trait HORIZONTAL_BAR extends MapTypeControlStyle
   
+  @js.native
+  sealed trait INSET extends MapTypeControlStyle
+  
+  @js.native
+  sealed trait INSET_LARGE extends MapTypeControlStyle
+  
   /* 0 */ val DEFAULT: typings.googlemaps.google.maps.MapTypeControlStyle.DEFAULT with Double = js.native
-  /* 1 */ val DROPDOWN_MENU: typings.googlemaps.google.maps.MapTypeControlStyle.DROPDOWN_MENU with Double = js.native
-  /* 2 */ val HORIZONTAL_BAR: typings.googlemaps.google.maps.MapTypeControlStyle.HORIZONTAL_BAR with Double = js.native
+  /* 2 */ val DROPDOWN_MENU: typings.googlemaps.google.maps.MapTypeControlStyle.DROPDOWN_MENU with Double = js.native
+  /* 1 */ val HORIZONTAL_BAR: typings.googlemaps.google.maps.MapTypeControlStyle.HORIZONTAL_BAR with Double = js.native
+  /* 3 */ val INSET: typings.googlemaps.google.maps.MapTypeControlStyle.INSET with Double = js.native
+  /* 4 */ val INSET_LARGE: typings.googlemaps.google.maps.MapTypeControlStyle.INSET_LARGE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MapTypeControlStyle with Double] = js.native
 }

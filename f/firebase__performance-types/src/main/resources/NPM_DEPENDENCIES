@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/performance-types" : "0.0.4"
+      "@firebase/performance-types" : "0.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/performance-types" : "0.0.4"
+      "@firebase/performance-types" : "0.0.5"
     }
   ],
   "compile-devDependencies" : [

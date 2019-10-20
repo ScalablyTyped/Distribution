@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mapbox__geojson-area"
-version := "0.2-dt-20180516Z-9ad435"
+version := "0.2-dt-20191017Z-96d019"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

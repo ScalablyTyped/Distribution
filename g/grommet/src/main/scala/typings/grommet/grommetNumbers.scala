@@ -1,5 +1,6 @@
 package typings.grommet
 
+import typings.grommet.utilsMod._OpacityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +27,12 @@ object grommetNumbers {
   @js.native
   sealed trait `6` extends js.Object
   
+  @js.native
+  sealed trait `false` extends _OpacityType
+  
+  @js.native
+  sealed trait `true` extends _OpacityType
+  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
@@ -40,5 +47,9 @@ object grommetNumbers {
   def `5`: `5` = 5.asInstanceOf[`5`]
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
+  @scala.inline
+  def `false`: `false` = false.asInstanceOf[`false`]
+  @scala.inline
+  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

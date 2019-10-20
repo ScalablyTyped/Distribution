@@ -154,6 +154,7 @@ trait Client extends js.Object {
   def isKeyboardShown(): Boolean = js.native
   def isLoading(): Boolean = js.native
   def isLocked(): Boolean = js.native
+  def jankinessCheck(): ProtocolCommandResponse = js.native
   def launchApp(): Unit = js.native
   def launchApp(id: String): Unit = js.native
   def lock(): Unit = js.native

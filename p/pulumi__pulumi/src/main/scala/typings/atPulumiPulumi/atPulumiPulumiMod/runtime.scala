@@ -64,6 +64,7 @@ object runtime extends js.Object {
   def hasMonitor(): Boolean = js.native
   def invoke(tok: String, props: Inputs): js.Promise[_] = js.native
   def invoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[_] = js.native
+  def invokeFallbackToAsync(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[_] = js.native
   def isDryRun(): Boolean = js.native
   def isLegacyApplyEnabled(): Boolean = js.native
   def isQueryMode(): Boolean = js.native

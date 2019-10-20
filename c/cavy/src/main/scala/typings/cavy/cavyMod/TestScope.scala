@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class TestScope () extends js.Object {
   var component: Tester = js.native
   def beforeEach(fn: js.Function0[Unit]): Unit = js.native
+  def containsText(identifier: String, text: String): js.Promise[Unit] = js.native
   def describe(label: String, fn: js.Function0[Unit]): Unit = js.native
   def exists(identifier: String): js.Promise[`true`] = js.native
   def fillIn(identifier: String, str: String): js.Promise[Unit] = js.native

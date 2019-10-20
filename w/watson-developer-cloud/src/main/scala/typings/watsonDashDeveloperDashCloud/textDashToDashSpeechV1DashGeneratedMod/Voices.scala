@@ -1,0 +1,21 @@
+package typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Voices. */
+trait Voices extends js.Object {
+  /** A list of available voices. */
+  var voices: js.Array[Voice]
+}
+
+object Voices {
+  @scala.inline
+  def apply(voices: js.Array[Voice]): Voices = {
+    val __obj = js.Dynamic.literal(voices = voices)
+  
+    __obj.asInstanceOf[Voices]
+  }
+}
+

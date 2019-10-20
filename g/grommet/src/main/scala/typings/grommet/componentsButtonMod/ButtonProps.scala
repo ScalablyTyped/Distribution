@@ -5,14 +5,13 @@ import typings.grommet.grommetStrings._parent
 import typings.grommet.grommetStrings._self
 import typings.grommet.grommetStrings._top
 import typings.grommet.grommetStrings.button
-import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.reset
 import typings.grommet.grommetStrings.submit
-import typings.grommet.grommetStrings.vertical
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
@@ -30,7 +29,7 @@ trait ButtonProps extends js.Object {
   var as: js.UndefOr[PolymorphicType] = js.undefined
   var color: js.UndefOr[ColorType] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
+  var fill: js.UndefOr[FillType] = js.undefined
   var focusIndicator: js.UndefOr[Boolean] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
@@ -56,7 +55,7 @@ object ButtonProps {
     as: PolymorphicType = null,
     color: ColorType = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    fill: horizontal | vertical | Boolean = null,
+    fill: FillType = null,
     focusIndicator: js.UndefOr[Boolean] = js.undefined,
     gap: GapType = null,
     gridArea: GridAreaType = null,

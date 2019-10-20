@@ -1,5 +1,7 @@
 package typings.grommet.componentsCheckBoxMod
 
+import typings.react.Element
+import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +14,7 @@ trait CheckBoxProps extends js.Object {
   var indeterminate: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[ReactNode] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
   var toggle: js.UndefOr[Boolean] = js.undefined
 }
@@ -26,7 +28,7 @@ object CheckBoxProps {
     indeterminate: js.UndefOr[Boolean] = js.undefined,
     label: ReactNode = null,
     name: String = null,
-    onChange: /* repeated */ js.Any => _ = null,
+    onChange: /* event */ ChangeEvent[Element] => Unit = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
     toggle: js.UndefOr[Boolean] = js.undefined
   ): CheckBoxProps = {

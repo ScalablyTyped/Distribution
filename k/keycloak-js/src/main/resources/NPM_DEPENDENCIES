@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "keycloak-js" : "7.0.0"
+      "keycloak-js" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "keycloak-js" : "7.0.0"
+      "keycloak-js" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

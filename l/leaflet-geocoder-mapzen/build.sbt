@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "leaflet-geocoder-mapzen"
-version := "1.6-dt-20180214Z-482ff4"
+version := "1.6-dt-20180214Z-7583be"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-714d92",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20191014Z-feabb9",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20191017Z-92adf9",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

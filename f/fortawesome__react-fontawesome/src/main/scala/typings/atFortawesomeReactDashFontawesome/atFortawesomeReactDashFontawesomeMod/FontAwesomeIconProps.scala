@@ -12,7 +12,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FontAwesomeIconProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.DOMAttributes<std.SVGSVGElement>, 'children' | 'mask'> ]: react.react.DOMAttributes<std.SVGSVGElement>[P]} */ trait FontAwesomeIconProps extends js.Object {
   var border: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined

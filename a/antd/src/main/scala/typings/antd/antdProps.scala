@@ -109,6 +109,12 @@ trait antdProps {
   def CollapsePanelProps: typings.antd.esCollapseCollapsePanelMod.CollapsePanelProps.type = typings.antd.esCollapseCollapsePanelMod.CollapsePanelProps
   type CollapsePanelProps = typings.antd.esCollapseCollapsePanelMod.CollapsePanelProps
   @scala.inline
+  def ColumnProps: typings.antd.esTableInterfaceMod.ColumnProps.type = typings.antd.esTableInterfaceMod.ColumnProps
+  type ColumnProps[T] = typings.antd.esTableInterfaceMod.ColumnProps[T]
+  @scala.inline
+  def ColumnGroupProps: typings.antd.esTableColumnGroupMod.ColumnGroupProps.type = typings.antd.esTableColumnGroupMod.ColumnGroupProps
+  type ColumnGroupProps = typings.antd.esTableColumnGroupMod.ColumnGroupProps
+  @scala.inline
   def CommentProps: typings.antd.esCommentMod.CommentProps.type = typings.antd.esCommentMod.CommentProps
   type CommentProps = typings.antd.esCommentMod.CommentProps
   @scala.inline
@@ -319,8 +325,8 @@ trait antdProps {
   def SwitchProps: typings.antd.esSwitchMod.SwitchProps.type = typings.antd.esSwitchMod.SwitchProps
   type SwitchProps = typings.antd.esSwitchMod.SwitchProps
   @scala.inline
-  def TableProps: typings.antd.PickTablePropsanyloadingfooterstyletitlescrollsize.type = typings.antd.PickTablePropsanyloadingfooterstyletitlescrollsize
-  type TableProps = PickTablePropsanyloadingfooterstyletitlescrollsize
+  def TableProps: typings.antd.OmitTablePropsTkeyofWithStore.type = typings.antd.OmitTablePropsTkeyofWithStore
+  type TableProps[T] = OmitTablePropsTkeyofWithStore[T]
   @scala.inline
   def TabsProps: typings.antd.esTabsMod.TabsProps.type = typings.antd.esTabsMod.TabsProps
   type TabsProps = typings.antd.esTabsMod.TabsProps

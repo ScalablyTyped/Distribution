@@ -16,7 +16,7 @@ trait VNode[P] extends js.Object {
   		 */
   var endTime: js.UndefOr[Double] = js.undefined
   var key: Key
-  var props: (P with Anon_Children) | String | Double | Null
+  var props: P with Anon_Children
   var ref: Ref[_] | Null
   /**
   		 * The time this `vnode` started rendering. Will only be set when
@@ -24,25 +24,24 @@ trait VNode[P] extends js.Object {
   		 * Default value: `0`
   		 */
   var startTime: js.UndefOr[Double] = js.undefined
-  var `type`: ComponentType[P] | String | Null
+  var `type`: ComponentType[P] | String
 }
 
 object VNode {
   @scala.inline
   def apply[P](
     key: Key,
+    props: P with Anon_Children,
+    `type`: ComponentType[P] | String,
     endTime: Int | Double = null,
-    props: (P with Anon_Children) | String | Double = null,
     ref: Ref[_] = null,
-    startTime: Int | Double = null,
-    `type`: ComponentType[P] | String = null
+    startTime: Int | Double = null
   ): VNode[P] = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode[P]]
   }
 }

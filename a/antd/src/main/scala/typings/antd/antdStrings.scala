@@ -18,6 +18,7 @@ import typings.antd.esMessageMod.NoticeType
 import typings.antd.esNotificationMod.IconType
 import typings.antd.esNotificationMod.NotificationPlacement
 import typings.antd.esRadioInterfaceMod.RadioGroupButtonStyle
+import typings.antd.esSelectMod.ModeOption
 import typings.antd.esStatisticUtilsMod._Formatter
 import typings.antd.esTooltipMod.TooltipPlacement
 import typings.antd.esTooltipMod.TooltipTrigger
@@ -153,7 +154,7 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT24DOT0` extends js.Object
+  sealed trait `3DOT24DOT2` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -169,6 +170,11 @@ object antdStrings {
   
   @js.native
   sealed trait PM extends js.Object
+  
+  @js.native
+  sealed trait SECRET_COMBOBOX_MODE_DO_NOT_USE
+    extends ModeOption
+       with typings.antd.libSelectMod.ModeOption
   
   @js.native
   sealed trait SHOW_ALL extends js.Object
@@ -480,7 +486,9 @@ object antdStrings {
   sealed trait `column-reverse` extends js.Object
   
   @js.native
-  sealed trait combobox extends js.Object
+  sealed trait combobox
+    extends ModeOption
+       with typings.antd.libSelectMod.ModeOption
   
   @js.native
   sealed trait contain extends js.Object
@@ -550,6 +558,9 @@ object antdStrings {
        with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
   
   @js.native
+  sealed trait decimal extends js.Object
+  
+  @js.native
   sealed trait default
     extends ButtonSize
        with typings.antd.esButtonButtonMod.ButtonSize
@@ -559,6 +570,8 @@ object antdStrings {
        with typings.antd.libCardMod.CardSize
        with ListSize
        with typings.antd.esListMod.ListSize
+       with ModeOption
+       with typings.antd.libSelectMod.ModeOption
        with ProgressSize
        with typings.antd.esProgressProgressMod.ProgressSize
        with SpinSize
@@ -627,6 +640,9 @@ object antdStrings {
   
   @js.native
   sealed trait element extends js.Object
+  
+  @js.native
+  sealed trait email extends js.Object
   
   @js.native
   sealed trait embed extends js.Object
@@ -1146,7 +1162,9 @@ object antdStrings {
   sealed trait move extends js.Object
   
   @js.native
-  sealed trait multiple extends js.Object
+  sealed trait multiple
+    extends ModeOption
+       with typings.antd.libSelectMod.ModeOption
   
   @js.native
   sealed trait multiply extends js.Object
@@ -1188,6 +1206,9 @@ object antdStrings {
   sealed trait number
     extends _Formatter
        with typings.antd.libStatisticUtilsMod._Formatter
+  
+  @js.native
+  sealed trait numeric extends js.Object
   
   @js.native
   sealed trait off extends js.Object
@@ -1542,6 +1563,9 @@ object antdStrings {
        with typings.antd.libCarouselMod.CarouselEffect
   
   @js.native
+  sealed trait search extends js.Object
+  
+  @js.native
   sealed trait searchfield extends js.Object
   
   @js.native
@@ -1768,13 +1792,18 @@ object antdStrings {
   sealed trait tabpanels extends js.Object
   
   @js.native
-  sealed trait tags extends js.Object
+  sealed trait tags
+    extends ModeOption
+       with typings.antd.libSelectMod.ModeOption
   
   @js.native
   sealed trait targetSelectedKeys extends js.Object
   
   @js.native
   sealed trait tb extends js.Object
+  
+  @js.native
+  sealed trait tel extends js.Object
   
   @js.native
   sealed trait text
@@ -1920,6 +1949,9 @@ object antdStrings {
   
   @js.native
   sealed trait upright extends js.Object
+  
+  @js.native
+  sealed trait url extends js.Object
   
   @js.native
   sealed trait `use-script` extends js.Object
@@ -2093,7 +2125,7 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT24DOT0`: `3DOT24DOT0` = "3.24.0".asInstanceOf[`3DOT24DOT0`]
+  def `3DOT24DOT2`: `3DOT24DOT2` = "3.24.2".asInstanceOf[`3DOT24DOT2`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -2104,6 +2136,8 @@ object antdStrings {
   def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
   @scala.inline
   def PM: PM = "PM".asInstanceOf[PM]
+  @scala.inline
+  def SECRET_COMBOBOX_MODE_DO_NOT_USE: SECRET_COMBOBOX_MODE_DO_NOT_USE = "SECRET_COMBOBOX_MODE_DO_NOT_USE".asInstanceOf[SECRET_COMBOBOX_MODE_DO_NOT_USE]
   @scala.inline
   def SHOW_ALL: SHOW_ALL = "SHOW_ALL".asInstanceOf[SHOW_ALL]
   @scala.inline
@@ -2305,6 +2339,8 @@ object antdStrings {
   @scala.inline
   def decade: decade = "decade".asInstanceOf[decade]
   @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def `default-button`: `default-button` = "default-button".asInstanceOf[`default-button`]
@@ -2338,6 +2374,8 @@ object antdStrings {
   def `editable-card`: `editable-card` = "editable-card".asInstanceOf[`editable-card`]
   @scala.inline
   def element: element = "element".asInstanceOf[element]
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
@@ -2649,6 +2687,8 @@ object antdStrings {
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
   def ok: ok = "ok".asInstanceOf[ok]
@@ -2849,6 +2889,8 @@ object antdStrings {
   @scala.inline
   def scrollx: scrollx = "scrollx".asInstanceOf[scrollx]
   @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  @scala.inline
   def searchfield: searchfield = "searchfield".asInstanceOf[searchfield]
   @scala.inline
   def `searchfield-cancel-button`: `searchfield-cancel-button` = "searchfield-cancel-button".asInstanceOf[`searchfield-cancel-button`]
@@ -2983,6 +3025,8 @@ object antdStrings {
   @scala.inline
   def tb: tb = "tb".asInstanceOf[tb]
   @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
@@ -3056,6 +3100,8 @@ object antdStrings {
   def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   @scala.inline
   def upright: upright = "upright".asInstanceOf[upright]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
   @scala.inline
   def `use-script`: `use-script` = "use-script".asInstanceOf[`use-script`]
   @scala.inline

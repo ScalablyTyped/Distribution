@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   var dataKey: DataKey
   var fill: js.UndefOr[String] = js.undefined
   var hide: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   // see label section at http://recharts.org/#/en-US/api/Bar
   var label: js.UndefOr[
     Boolean | Label | LabelProps | SFC[LabelProps] | ReactElement | ContentRenderer[_]
@@ -51,6 +52,7 @@ object BarProps {
     data: js.Array[BarData] = null,
     fill: String = null,
     hide: js.UndefOr[Boolean] = js.undefined,
+    id: String = null,
     isAnimationActive: js.UndefOr[Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined,
     label: Boolean | Label | LabelProps | SFC[LabelProps] | ReactElement | ContentRenderer[_] = null,
@@ -93,6 +95,7 @@ object BarProps {
     if (data != null) __obj.updateDynamic("data")(data)
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isAnimationActive)) __obj.updateDynamic("isAnimationActive")(isAnimationActive)
     if (!js.isUndefined(isUpdateAnimationActive)) __obj.updateDynamic("isUpdateAnimationActive")(isUpdateAnimationActive)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

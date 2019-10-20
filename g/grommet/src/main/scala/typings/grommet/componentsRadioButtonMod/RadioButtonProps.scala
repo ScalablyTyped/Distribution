@@ -1,5 +1,7 @@
 package typings.grommet.componentsRadioButtonMod
 
+import typings.react.Element
+import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +13,7 @@ trait RadioButtonProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[ReactNode] = js.undefined
   var name: String
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
 }
 
 object RadioButtonProps {
@@ -22,7 +24,7 @@ object RadioButtonProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     label: ReactNode = null,
-    onChange: /* repeated */ js.Any => _ = null
+    onChange: /* event */ ChangeEvent[Element] => Unit = null
   ): RadioButtonProps = {
     val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)

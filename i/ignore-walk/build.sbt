@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ignore-walk"
-version := "3.0-dt-20191015Z-6aac8f"
+version := "3.0-dt-20191016Z-79ceea"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

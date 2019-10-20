@@ -1,5 +1,6 @@
 package typings.mongoose.mongooseMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.mongoose.mongooseMod.Error.ValidationError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,6 +12,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait MongooseDocument extends MongooseDocumentOptionals {
+  /** Empty object that you can use for storing properties on the document */
+  @JSName("$locals")
+  var $locals: StringDictionary[js.Any] = js.native
   /** This documents _id. */
   var _id: js.Any = js.native
   /** Hash containing current validation errors. */

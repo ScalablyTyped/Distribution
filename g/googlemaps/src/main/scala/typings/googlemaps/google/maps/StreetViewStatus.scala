@@ -19,10 +19,10 @@ object StreetViewStatus extends js.Object {
   @js.native
   sealed trait ZERO_RESULTS extends StreetViewStatus
   
-  /* 0 */ val OK: typings.googlemaps.google.maps.StreetViewStatus.OK with Double = js.native
-  /* 1 */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.StreetViewStatus.UNKNOWN_ERROR with Double = js.native
-  /* 2 */ val ZERO_RESULTS: typings.googlemaps.google.maps.StreetViewStatus.ZERO_RESULTS with Double = js.native
+  /* "OK" */ val OK: typings.googlemaps.google.maps.StreetViewStatus.OK with String = js.native
+  /* "UNKNOWN_ERROR" */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.StreetViewStatus.UNKNOWN_ERROR with String = js.native
+  /* "ZERO_RESULTS" */ val ZERO_RESULTS: typings.googlemaps.google.maps.StreetViewStatus.ZERO_RESULTS with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StreetViewStatus with Double] = js.native
+  def apply(value: String): js.UndefOr[StreetViewStatus with String] = js.native
 }
 

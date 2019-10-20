@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "handsontable"
-version := "7.2.0-a9ce39"
+version := "7.2.1-9c75fe"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

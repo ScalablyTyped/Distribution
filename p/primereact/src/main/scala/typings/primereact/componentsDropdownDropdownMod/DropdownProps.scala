@@ -20,12 +20,14 @@ trait DropdownProps extends js.Object {
   var editable: js.UndefOr[Boolean] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterBy: js.UndefOr[String] = js.undefined
+  var filterInputAutoFocus: js.UndefOr[Boolean] = js.undefined
   var filterPlaceholder: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inputId: js.UndefOr[String] = js.undefined
   var itemTemplate: js.UndefOr[js.Function1[/* option */ js.Any, ReactNode]] = js.undefined
   var `lazy`: js.UndefOr[Boolean] = js.undefined
   var maxLength: js.UndefOr[Double] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ Anon_OriginalEventValue, Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onMouseDown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
@@ -58,12 +60,14 @@ object DropdownProps {
     editable: js.UndefOr[Boolean] = js.undefined,
     filter: js.UndefOr[Boolean] = js.undefined,
     filterBy: String = null,
+    filterInputAutoFocus: js.UndefOr[Boolean] = js.undefined,
     filterPlaceholder: String = null,
     id: String = null,
     inputId: String = null,
     itemTemplate: /* option */ js.Any => ReactNode = null,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
     maxLength: Int | Double = null,
+    name: String = null,
     onChange: /* e */ Anon_OriginalEventValue => Unit = null,
     onContextMenu: /* event */ Event => Unit = null,
     onMouseDown: /* event */ Event => Unit = null,
@@ -93,12 +97,14 @@ object DropdownProps {
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
     if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy)
+    if (!js.isUndefined(filterInputAutoFocus)) __obj.updateDynamic("filterInputAutoFocus")(filterInputAutoFocus)
     if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))

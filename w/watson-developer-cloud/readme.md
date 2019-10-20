@@ -1,7 +1,7 @@
 
 # Scala.js typings for watson-developer-cloud
 
-Typings are for version 2.40
+Typings are for version 4.0.1
 
 ## Library description:
 Client library to use the IBM Watson Services
@@ -24,7 +24,7 @@ Client library to use the IBM Watson Services
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

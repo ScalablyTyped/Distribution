@@ -17,6 +17,8 @@ import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
+import typings.react.Element
+import typings.react.reactMod.ChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +29,7 @@ trait ClockProps extends js.Object {
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var hourLimit: js.UndefOr[`12` | `24`] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
   var precision: js.UndefOr[hours | minutes | seconds] = js.undefined
   var run: js.UndefOr[Boolean | backward | forward] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
@@ -43,7 +45,7 @@ object ClockProps {
     gridArea: GridAreaType = null,
     hourLimit: `12` | `24` = null,
     margin: MarginType = null,
-    onChange: /* repeated */ js.Any => _ = null,
+    onChange: /* event */ ChangeEvent[Element] => Unit = null,
     precision: hours | minutes | seconds = null,
     run: Boolean | backward | forward = null,
     size: small | medium | large | xlarge | String = null,

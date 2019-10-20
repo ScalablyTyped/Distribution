@@ -29,7 +29,6 @@ import typings.grommet.grommetStrings.fadeOut
 import typings.grommet.grommetStrings.full
 import typings.grommet.grommetStrings.grow
 import typings.grommet.grommetStrings.hidden
-import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.jiggle
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
@@ -46,7 +45,6 @@ import typings.grommet.grommetStrings.slideUp
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.start
 import typings.grommet.grommetStrings.stretch
-import typings.grommet.grommetStrings.vertical
 import typings.grommet.grommetStrings.visible
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
@@ -58,6 +56,7 @@ import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BackgroundType
+import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
@@ -84,7 +83,7 @@ trait BoxProps extends js.Object {
   var border: js.UndefOr[Boolean | SideType | Anon_Color | js.Array[Anon_Color]] = js.undefined
   var direction: js.UndefOr[row | column | `row-responsive` | `row-reverse` | `column-reverse`] = js.undefined
   var elevation: js.UndefOr[none | xsmall | small | medium | large | xlarge | String] = js.undefined
-  var fill: js.UndefOr[horizontal | vertical | Boolean] = js.undefined
+  var fill: js.UndefOr[FillType] = js.undefined
   var flex: js.UndefOr[grow | shrink | Boolean | Anon_Grow] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
@@ -122,7 +121,7 @@ object BoxProps {
     border: Boolean | SideType | Anon_Color | js.Array[Anon_Color] = null,
     direction: row | column | `row-responsive` | `row-reverse` | `column-reverse` = null,
     elevation: none | xsmall | small | medium | large | xlarge | String = null,
-    fill: horizontal | vertical | Boolean = null,
+    fill: FillType = null,
     flex: grow | shrink | Boolean | Anon_Grow = null,
     gap: GapType = null,
     gridArea: GridAreaType = null,

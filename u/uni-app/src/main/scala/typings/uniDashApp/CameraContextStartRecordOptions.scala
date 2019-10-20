@@ -18,9 +18,9 @@ trait CameraContextStartRecordOptions extends js.Object {
     */
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
-    * 超过30s或页面onHide时会结束录像，res = { tempThumbPath, tempVideoPath }
+    * 超过30s或页面onHide时会结束录像
     */
-  var timeoutCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var timeoutCallback: js.UndefOr[js.Function1[/* result */ CameraContextStopRecordResult, Unit]] = js.undefined
 }
 
 object CameraContextStartRecordOptions {
@@ -29,13 +29,13 @@ object CameraContextStartRecordOptions {
     complete: () => Unit = null,
     fail: () => Unit = null,
     success: () => Unit = null,
-    timeoutCallback: () => Unit = null
+    timeoutCallback: /* result */ CameraContextStopRecordResult => Unit = null
   ): CameraContextStartRecordOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (timeoutCallback != null) __obj.updateDynamic("timeoutCallback")(js.Any.fromFunction0(timeoutCallback))
+    if (timeoutCallback != null) __obj.updateDynamic("timeoutCallback")(js.Any.fromFunction1(timeoutCallback))
     __obj.asInstanceOf[CameraContextStartRecordOptions]
   }
 }

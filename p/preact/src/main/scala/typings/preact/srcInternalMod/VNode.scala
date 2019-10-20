@@ -23,6 +23,8 @@ trait VNode[P]
   var _lastDomChild: PreactElement | Text | Null
   var _parent: VNode[js.Object] | Null
   var constructor: js.UndefOr[scala.Nothing] = js.undefined
+  @JSName("props")
+  var props_VNode: (P with Anon_Children) | String | Double | Null
   // Redefine type here using our internal ComponentFactory type
   @JSName("type")
   var type_VNode: String | ComponentFactory[P] | Null

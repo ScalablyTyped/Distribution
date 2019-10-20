@@ -4,8 +4,10 @@ import typings.grommet.utilsMod.DeepFreeze
 import typings.grommet.utilsMod.DeepMerge
 import typings.grommet.utilsMod.DeepReadonly
 import typings.grommet.utilsMod.NonUndefinedProps
+import typings.grommet.utilsMod._FillType
 import typings.grommet.utilsMod._GapType
 import typings.grommet.utilsMod._MarginType
+import typings.grommet.utilsMod._OpacityType
 import typings.grommet.utilsMod._PolymorphicType
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.KeyboardEvent
@@ -54,9 +56,13 @@ object utilsMod extends js.Object {
   */
   trait TextAlignType extends js.Object
   
+  trait _FillType extends js.Object
+  
   trait _GapType extends js.Object
   
   trait _MarginType extends js.Object
+  
+  trait _OpacityType extends js.Object
   
   trait _PolymorphicType extends js.Object
   
@@ -76,6 +82,12 @@ object utilsMod extends js.Object {
   type DeepReadonly[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}
     */ typings.grommet.grommetStrings.DeepReadonly with js.Any
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.horizontal
+    - typings.grommet.grommetStrings.vertical
+    - scala.Boolean
+  */
+  type FillType = _FillType | Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.none
     - typings.grommet.grommetStrings.xxsmall
@@ -106,6 +118,16 @@ object utilsMod extends js.Object {
   {[ K in keyof T ]:? grommet.grommet/utils.NonUndefined<T[K]>}
     */ typings.grommet.grommetStrings.NonUndefinedProps with T
   type Omit[T, K] = Pick[T, Exclude[String, K]]
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.weak
+    - typings.grommet.grommetStrings.medium
+    - typings.grommet.grommetStrings.strong
+    - java.lang.String
+    - typings.grommet.grommetNumbers.`true`
+    - typings.grommet.grommetNumbers.`false`
+    - scala.Double
+  */
+  type OpacityType = _OpacityType | String | Double
   type PlaceHolderType = String | Element | ReactNode
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.a

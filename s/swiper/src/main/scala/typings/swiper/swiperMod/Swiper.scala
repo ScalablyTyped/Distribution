@@ -87,7 +87,7 @@ trait Swiper extends js.Object {
   /**
     * Index number of last clicked slide
     */
-  var clickedIdex: Double = js.native
+  var clickedIndex: Double = js.native
   /**
     * Link to last clicked slide (HTMLElement)
     */

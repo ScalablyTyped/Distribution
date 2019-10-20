@@ -12,7 +12,14 @@ import scala.scalajs.js.annotation._
   */
 class BarcodeReader_ () extends js.Object {
   def this(dbrKey: String) = this()
-  // appendTplStringToRuntimeSettings(b, d):
+  /** 
+    * Append a new template string to current runtime settings.
+    * @method BarcodeReader#decode
+    * @param {string} content	A JSON string that represents the content of the settings.
+    * @param {number} emSettingPriority	The parameter setting mode, which decides to inherit parameters from previous template setting or overwrite previous settings and replace by new template.
+    * @return {void}
+    */
+  def appendTplStringToRuntimeSettings(content: String, emSettingPriority: Double): Unit = js.native
   /** 
     * Read barcode from the source image.
     * @method BarcodeReader#decode

@@ -4,6 +4,7 @@ import typings.koa.koaMod.BaseContext
 import typings.koa.koaMod.DefaultContext
 import typings.koa.koaMod.DefaultState
 import typings.koa.koaMod.Middleware
+import typings.koa.koaMod.ParameterizedContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,10 @@ object koaDashLogMod extends js.Object {
     def method(ctx: BaseContext): String = js.native
     def referrer(ctx: BaseContext): String = js.native
     def status(ctx: BaseContext): Double = js.native
-    def token(name: String, fn: js.Function1[/* ctx */ BaseContext, String]): Unit = js.native
+    def token(
+      name: String,
+      fn: js.Function1[/* ctx */ ParameterizedContext[DefaultState, DefaultContext], String]
+    ): Unit = js.native
     def url(ctx: BaseContext): String = js.native
   }
   

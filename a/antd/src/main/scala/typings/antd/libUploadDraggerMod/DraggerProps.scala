@@ -2,6 +2,7 @@ package typings.antd.libUploadDraggerMod
 
 import typings.antd.libUploadInterfaceMod.HttpRequestHeader
 import typings.antd.libUploadInterfaceMod.PreviewFileHandler
+import typings.antd.libUploadInterfaceMod.RcCustomRequestOptions
 import typings.antd.libUploadInterfaceMod.RcFile
 import typings.antd.libUploadInterfaceMod.ShowUploadListInterface
 import typings.antd.libUploadInterfaceMod.TransformFileHandler
@@ -25,7 +26,7 @@ trait DraggerProps extends js.Object {
     js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], Boolean | js.Thenable[Unit]]
   ] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var customRequest: js.UndefOr[js.Function1[/* option */ js.Object, Unit]] = js.undefined
+  var customRequest: js.UndefOr[js.Function1[/* options */ RcCustomRequestOptions, Unit]] = js.undefined
   var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile, js.Object])] = js.undefined
   var defaultFileList: js.UndefOr[js.Array[UploadFile]] = js.undefined
   var directory: js.UndefOr[Boolean] = js.undefined
@@ -62,7 +63,7 @@ object DraggerProps {
     action: String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]]) = null,
     beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => Boolean | js.Thenable[Unit] = null,
     className: String = null,
-    customRequest: /* option */ js.Object => Unit = null,
+    customRequest: /* options */ RcCustomRequestOptions => Unit = null,
     data: js.Object | (js.Function1[/* file */ UploadFile, js.Object]) = null,
     defaultFileList: js.Array[UploadFile] = null,
     directory: js.UndefOr[Boolean] = js.undefined,

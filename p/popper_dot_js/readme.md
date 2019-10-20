@@ -1,7 +1,7 @@
 
 # Scala.js typings for popper_dot_js
 
-Typings are for version 1.15.0
+Typings are for version 1.16.0
 
 ## Library description:
 A kickass library to manage your poppers

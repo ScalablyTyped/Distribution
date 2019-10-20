@@ -3,6 +3,7 @@ package typings.mixpanel
 import org.scalablytyped.runtime.StringDictionary
 import typings.mixpanel.Mixpanel.Config
 import typings.mixpanel.Mixpanel.People
+import typings.mixpanel.Mixpanel.Query
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -260,8 +261,8 @@ trait Mixpanel_ extends js.Object {
     * @param eventName The name of the event to track
     * @param properties This can be a set of properties, or a function that returns a set of properties after being passed a DOMElement
     */
-  def track_forms(querySelector: String, eventName: String): Unit = js.native
-  def track_forms(querySelector: String, eventName: String, properties: StringDictionary[js.Any]): Unit = js.native
+  def track_forms(querySelector: Query, eventName: String): Unit = js.native
+  def track_forms(querySelector: Query, eventName: String, properties: StringDictionary[js.Any]): Unit = js.native
   /**
     * Track clicks on a set of document elements. Selector must be a
     * valid query. Elements must exist on the page at the time `track_links` is called.
@@ -289,8 +290,8 @@ trait Mixpanel_ extends js.Object {
     * @param eventName The name of the event to track
     * @param properties A properties object or function that returns a dictionary of properties when passed a DOMElement
     */
-  def track_links(querySelector: String, eventName: String): Unit = js.native
-  def track_links(querySelector: String, eventName: String, properties: StringDictionary[js.Any]): Unit = js.native
+  def track_links(querySelector: Query, eventName: String): Unit = js.native
+  def track_links(querySelector: Query, eventName: String, properties: StringDictionary[js.Any]): Unit = js.native
   /**
     * Delete a super property stored with the current user.
     *

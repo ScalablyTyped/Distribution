@@ -12,7 +12,7 @@ package object najaMod {
   import typings.std.Event
   import typings.std.FormData
 
-  type NajaEventListener[T /* <: Event */] = js.Function1[/* event */ T, Unit | Anon_EventHandleEvent[T]]
+  type NajaEventListener[T /* <: Event */] = (js.Function1[/* event */ T, js.Promise[Unit] | Unit]) | Anon_EventHandleEvent[T]
   type RequestData = Null | String | Double | js.Array[js.Any] | js.Object | ArrayBuffer | Blob | FormData
-  type SnippetUpdateListener = js.Function1[/* event */ SnippetUpdateEvent, Unit | Anon_Event]
+  type SnippetUpdateListener = (js.Function1[/* event */ SnippetUpdateEvent, js.Promise[Unit] | Unit]) | Anon_Event
 }

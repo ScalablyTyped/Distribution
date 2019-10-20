@@ -9,12 +9,13 @@ trait Anon_LargeMedium extends js.Object {
   var medium: String
   var small: String
   var xlarge: String
+  var xsmall: String
 }
 
 object Anon_LargeMedium {
   @scala.inline
-  def apply(large: String, medium: String, small: String, xlarge: String): Anon_LargeMedium = {
-    val __obj = js.Dynamic.literal(large = large, medium = medium, small = small, xlarge = xlarge)
+  def apply(large: String, medium: String, small: String, xlarge: String, xsmall: String): Anon_LargeMedium = {
+    val __obj = js.Dynamic.literal(large = large, medium = medium, small = small, xlarge = xlarge, xsmall = xsmall)
   
     __obj.asInstanceOf[Anon_LargeMedium]
   }

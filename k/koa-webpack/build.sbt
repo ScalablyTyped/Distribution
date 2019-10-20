@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-webpack"
-version := "5.0-dt-20180605Z-bacb31"
+version := "5.0-dt-20180605Z-f75c8e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-af9a1f",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-cfcbef",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-1dd753",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190925Z-059d36",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20191016Z-7ab67d",
   "org.scalablytyped" %%% "loglevel" % "1.6.4-135c7b",
   "org.scalablytyped" %%% "memory-fs" % "0.3.0-dt-20190322Z-5913ee",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
@@ -25,9 +25,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-463316",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-2f0bcb",
-  "org.scalablytyped" %%% "webpack" % "4.39-dt-20191009Z-d4c5a7",
-  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20190624Z-9c7f80",
-  "org.scalablytyped" %%% "webpack-hot-client" % "4.0-dt-20180621Z-cc4e44",
+  "org.scalablytyped" %%% "webpack" % "4.39-dt-20191019Z-7c3ec2",
+  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20190624Z-f70360",
+  "org.scalablytyped" %%% "webpack-hot-client" % "4.0-dt-20180621Z-f6baa2",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-230cbc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -7,8 +7,10 @@ import typings.grommet.contextsAnnounceContextMod.AnnounceMode
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.TextAlignType
+import typings.grommet.utilsMod._FillType
 import typings.grommet.utilsMod._GapType
 import typings.grommet.utilsMod._MarginType
+import typings.grommet.utilsMod._OpacityType
 import typings.grommet.utilsMod._PolymorphicType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -496,7 +498,9 @@ object grommetStrings {
   sealed trait hidden extends StyleType
   
   @js.native
-  sealed trait horizontal extends SideType
+  sealed trait horizontal
+    extends SideType
+       with _FillType
   
   @js.native
   sealed trait hours extends js.Object
@@ -598,6 +602,7 @@ object grommetStrings {
   sealed trait medium
     extends _GapType
        with _MarginType
+       with _OpacityType
        with _SizeType
   
   @js.native
@@ -843,7 +848,9 @@ object grommetStrings {
        with AlignSelfType
   
   @js.native
-  sealed trait strong extends _PolymorphicType
+  sealed trait strong
+    extends _OpacityType
+       with _PolymorphicType
   
   @js.native
   sealed trait style extends _PolymorphicType
@@ -942,7 +949,9 @@ object grommetStrings {
   sealed trait `var` extends _PolymorphicType
   
   @js.native
-  sealed trait vertical extends SideType
+  sealed trait vertical
+    extends SideType
+       with _FillType
   
   @js.native
   sealed trait video extends _PolymorphicType
@@ -957,7 +966,7 @@ object grommetStrings {
   sealed trait wbr extends _PolymorphicType
   
   @js.native
-  sealed trait weak extends js.Object
+  sealed trait weak extends _OpacityType
   
   @js.native
   sealed trait webview extends _PolymorphicType

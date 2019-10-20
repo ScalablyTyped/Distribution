@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "optics-agent"
-version := "1.1-dt-20190826Z-919cdb"
+version := "1.1-dt-20190826Z-a2e86c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-aaea15",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-c7c4ce",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-1dd753",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190925Z-059d36",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20191016Z-7ab67d",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-7db5f5",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-1cc445",

@@ -70,6 +70,10 @@ object antdComponents extends antdProps {
   @scala.inline
   def CollapsePanel: ComponentType[CollapsePanelProps] = js.constructorOf[typings.antd.esCollapseCollapsePanelMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CollapsePanelProps]]
   @scala.inline
+  def Column[T]: ComponentType[ColumnProps[T]] = js.constructorOf[typings.antd.esTableColumnMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[ColumnProps[T]]]
+  @scala.inline
+  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.antd.esTableColumnGroupMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ColumnGroupProps]]
+  @scala.inline
   def Comment: ComponentType[CommentProps] = js.constructorOf[typings.antd.esCommentMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CommentProps]]
   @scala.inline
   def ConfigConsumer: ComponentType[
@@ -219,7 +223,7 @@ object antdComponents extends antdProps {
   @scala.inline
   def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.antd.esSwitchMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
   @scala.inline
-  def Table: ComponentType[TableProps] = js.constructorOf[typings.antd.esTableMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TableProps]]
+  def Table[T]: ComponentType[TableProps[T]] = js.constructorOf[typings.antd.esTableMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[TableProps[T]]]
   @scala.inline
   def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.antd.esTabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
   @scala.inline

@@ -1,10 +1,7 @@
 package typings.antd.esSelectMod
 
-import typings.antd.antdStrings.combobox
 import typings.antd.antdStrings.large
-import typings.antd.antdStrings.multiple
 import typings.antd.antdStrings.small
-import typings.antd.antdStrings.tags
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.KeyboardEvent
@@ -31,7 +28,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var maxTagPlaceholder: js.UndefOr[ReactNode | (js.Function1[/* omittedValues */ js.Array[T], ReactNode])] = js.undefined
   var maxTagTextLength: js.UndefOr[Double] = js.undefined
   var menuItemSelectedIcon: js.UndefOr[ReactNode] = js.undefined
-  var mode: js.UndefOr[typings.antd.antdStrings.default | multiple | tags | combobox | String] = js.undefined
+  var mode: js.UndefOr[ModeOption] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[/* value */ T, /* option */ ReactElement | js.Array[ReactElement], Unit]
@@ -80,7 +77,7 @@ object SelectProps {
     maxTagPlaceholder: ReactNode | (js.Function1[/* omittedValues */ js.Array[T], ReactNode]) = null,
     maxTagTextLength: Int | Double = null,
     menuItemSelectedIcon: ReactNode = null,
-    mode: typings.antd.antdStrings.default | multiple | tags | combobox | String = null,
+    mode: ModeOption = null,
     notFoundContent: ReactNode = null,
     onBlur: /* value */ T => Unit = null,
     onChange: (/* value */ T, /* option */ ReactElement | js.Array[ReactElement]) => Unit = null,
@@ -137,7 +134,7 @@ object SelectProps {
     if (maxTagPlaceholder != null) __obj.updateDynamic("maxTagPlaceholder")(maxTagPlaceholder.asInstanceOf[js.Any])
     if (maxTagTextLength != null) __obj.updateDynamic("maxTagTextLength")(maxTagTextLength.asInstanceOf[js.Any])
     if (menuItemSelectedIcon != null) __obj.updateDynamic("menuItemSelectedIcon")(menuItemSelectedIcon.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))

@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
 trait IBufferList extends EventEmitter {
   var encoding: String = js.native
   var length: Double = js.native
-  def addListener(event: String, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_advance(event: advance, cb: js.Function1[/* n */ Double, Unit]): this.type = js.native
   @JSName("addListener")
@@ -34,11 +33,11 @@ trait IBufferList extends EventEmitter {
   /** Join all the chunks to existing buffer */
   def joinInto(buf: Buffer, offset: Double, start: Double, end: Double): Buffer = js.native
   // Events
-  def on(event: String, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_advance(event: advance, cb: js.Function1[/* n */ Double, Unit]): this.type = js.native
   @JSName("on")
   def on_write(event: write, cb: js.Function1[/* buf */ Buffer, Unit]): this.type = js.native
+  def push(): Unit = js.native
   def take(): js.Any = js.native
   def take(encoding: String): js.Any = js.native
   /**

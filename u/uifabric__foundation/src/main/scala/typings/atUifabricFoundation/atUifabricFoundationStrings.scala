@@ -135,6 +135,9 @@ object atUifabricFoundationStrings {
   sealed trait dd extends js.Object
   
   @js.native
+  sealed trait decimal extends js.Object
+  
+  @js.native
   sealed trait defs extends js.Object
   
   @js.native
@@ -169,6 +172,9 @@ object atUifabricFoundationStrings {
   
   @js.native
   sealed trait em extends js.Object
+  
+  @js.native
+  sealed trait email extends js.Object
   
   @js.native
   sealed trait embed extends js.Object
@@ -423,6 +429,9 @@ object atUifabricFoundationStrings {
   sealed trait noscript extends js.Object
   
   @js.native
+  sealed trait numeric extends js.Object
+  
+  @js.native
   sealed trait `object` extends js.Object
   
   @js.native
@@ -513,6 +522,9 @@ object atUifabricFoundationStrings {
   sealed trait script extends js.Object
   
   @js.native
+  sealed trait search extends js.Object
+  
+  @js.native
   sealed trait section extends js.Object
   
   @js.native
@@ -570,6 +582,9 @@ object atUifabricFoundationStrings {
   sealed trait td extends js.Object
   
   @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
   sealed trait template extends js.Object
   
   @js.native
@@ -613,6 +628,9 @@ object atUifabricFoundationStrings {
   
   @js.native
   sealed trait ul extends js.Object
+  
+  @js.native
+  sealed trait url extends js.Object
   
   @js.native
   sealed trait use extends js.Object
@@ -722,6 +740,8 @@ object atUifabricFoundationStrings {
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
   def defs: defs = "defs".asInstanceOf[defs]
   @scala.inline
   def del: del = "del".asInstanceOf[del]
@@ -745,6 +765,8 @@ object atUifabricFoundationStrings {
   def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   @scala.inline
   def em: em = "em".asInstanceOf[em]
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
   @scala.inline
@@ -914,6 +936,8 @@ object atUifabricFoundationStrings {
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
@@ -974,6 +998,8 @@ object atUifabricFoundationStrings {
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  @scala.inline
   def section: section = "section".asInstanceOf[section]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
@@ -1012,6 +1038,8 @@ object atUifabricFoundationStrings {
   @scala.inline
   def td: td = "td".asInstanceOf[td]
   @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
   def template: template = "template".asInstanceOf[template]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
@@ -1041,6 +1069,8 @@ object atUifabricFoundationStrings {
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
   @scala.inline
   def use: use = "use".asInstanceOf[use]
   @scala.inline

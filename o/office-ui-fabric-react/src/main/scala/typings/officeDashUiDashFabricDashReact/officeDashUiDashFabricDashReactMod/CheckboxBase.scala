@@ -24,6 +24,6 @@ class CheckboxBase protected ()
 @js.native
 object CheckboxBase extends js.Object {
   var defaultProps: ICheckboxProps = js.native
-  def getDerivedStateFromProps(props: ICheckboxProps, state: ICheckboxState): ICheckboxState | Null = js.native
+  def getDerivedStateFromProps(nextProps: ICheckboxProps, prevState: ICheckboxState): ICheckboxState | Null = js.native
 }
 

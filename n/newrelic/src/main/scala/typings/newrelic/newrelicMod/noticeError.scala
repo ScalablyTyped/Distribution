@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object noticeError extends js.Object {
   def apply(error: Error): Unit = js.native
-  def apply(error: Error, customAttributes: StringDictionary[String]): Unit = js.native
+  def apply(error: Error, customAttributes: StringDictionary[String | Double | Boolean]): Unit = js.native
 }
 

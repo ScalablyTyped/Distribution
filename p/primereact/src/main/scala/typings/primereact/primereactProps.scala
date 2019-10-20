@@ -30,6 +30,9 @@ trait primereactProps {
   def CardProps: typings.primereact.componentsCardCardMod.CardProps.type = typings.primereact.componentsCardCardMod.CardProps
   type CardProps = typings.primereact.componentsCardCardMod.CardProps
   @scala.inline
+  def CarouselProps: typings.primereact.componentsCarouselCarouselMod.CarouselProps.type = typings.primereact.componentsCarouselCarouselMod.CarouselProps
+  type CarouselProps = typings.primereact.componentsCarouselCarouselMod.CarouselProps
+  @scala.inline
   def ChartProps: typings.primereact.componentsChartChartMod.ChartProps.type = typings.primereact.componentsChartChartMod.ChartProps
   type ChartProps = typings.primereact.componentsChartChartMod.ChartProps
   @scala.inline

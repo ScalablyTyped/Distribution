@@ -5,9 +5,11 @@ import typings.officeDashJsDashPreview.Excel.Interfaces.ChartSeriesData
 import typings.officeDashJsDashPreview.Excel.Interfaces.ChartSeriesLoadOptions
 import typings.officeDashJsDashPreview.Excel.Interfaces.ChartSeriesUpdateData
 import typings.officeDashJsDashPreview.OfficeExtension.ClientObject
+import typings.officeDashJsDashPreview.OfficeExtension.ClientResult
 import typings.officeDashJsDashPreview.OfficeExtension.UpdateOptions
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Automatic
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Banner
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Categories
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Circle
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Dash
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Diamond
@@ -31,7 +33,10 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Star
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.ThreePhaseColor
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Triangle
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TwoPhaseColor
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Values
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.X
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.XValues
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.YValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -379,6 +384,32 @@ class ChartSeries () extends ClientObject {
     * [Api set: ExcelApi 1.7]
     */
   def delete(): Unit = js.native
+  /**
+    *
+    * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param dimension the dimension of axis where the data from
+    */
+  def getDimensionValues(dimension: ChartSeriesDimension): ClientResult[js.Array[String]] = js.native
+  /**
+    *
+    * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @param dimension the dimension of axis where the data from
+    */
+  @JSName("getDimensionValues")
+  def getDimensionValues_Categories(dimension: Categories): ClientResult[js.Array[String]] = js.native
+  @JSName("getDimensionValues")
+  def getDimensionValues_Values(dimension: Values): ClientResult[js.Array[String]] = js.native
+  @JSName("getDimensionValues")
+  def getDimensionValues_XValues(dimension: XValues): ClientResult[js.Array[String]] = js.native
+  @JSName("getDimensionValues")
+  def getDimensionValues_YValues(dimension: YValues): ClientResult[js.Array[String]] = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *

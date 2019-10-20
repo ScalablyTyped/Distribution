@@ -16,9 +16,9 @@ object MaxZoomStatus extends js.Object {
   @js.native
   sealed trait OK extends MaxZoomStatus
   
-  /* 0 */ val ERROR: typings.googlemaps.google.maps.MaxZoomStatus.ERROR with Double = js.native
-  /* 1 */ val OK: typings.googlemaps.google.maps.MaxZoomStatus.OK with Double = js.native
+  /* "ERROR" */ val ERROR: typings.googlemaps.google.maps.MaxZoomStatus.ERROR with String = js.native
+  /* "OK" */ val OK: typings.googlemaps.google.maps.MaxZoomStatus.OK with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MaxZoomStatus with Double] = js.native
+  def apply(value: String): js.UndefOr[MaxZoomStatus with String] = js.native
 }
 

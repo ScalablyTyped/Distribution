@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dev-utils"
-version := "9.0-dt-20190925Z-f84c36"
+version := "9.0-dt-20190925Z-21f22e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-af9a1f",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-cfcbef",
   "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-bad04f",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20190712Z-48298a",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20190712Z-66c928",
   "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-11791f",
   "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190819Z-fc7687",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190717Z-94fac0",
@@ -29,8 +29,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-463316",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-2f0bcb",
-  "org.scalablytyped" %%% "webpack" % "4.39-dt-20191009Z-d4c5a7",
-  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190710Z-82e786",
+  "org.scalablytyped" %%% "webpack" % "4.39-dt-20191019Z-7c3ec2",
+  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190710Z-b8184b",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-230cbc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

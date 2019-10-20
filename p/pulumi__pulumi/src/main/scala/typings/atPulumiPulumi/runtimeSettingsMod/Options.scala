@@ -13,6 +13,10 @@ trait Options extends js.Object {
   val project: js.UndefOr[String] = js.undefined
   val queryMode: js.UndefOr[Boolean] = js.undefined
   val stack: js.UndefOr[String] = js.undefined
+  /**
+    * Directory containing the send/receive files for making synchronous invokes to the engine.
+    */
+  val syncDir: js.UndefOr[String] = js.undefined
   val testModeEnabled: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -27,6 +31,7 @@ object Options {
     project: String = null,
     queryMode: js.UndefOr[Boolean] = js.undefined,
     stack: String = null,
+    syncDir: String = null,
     testModeEnabled: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -38,6 +43,7 @@ object Options {
     if (project != null) __obj.updateDynamic("project")(project)
     if (!js.isUndefined(queryMode)) __obj.updateDynamic("queryMode")(queryMode)
     if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (syncDir != null) __obj.updateDynamic("syncDir")(syncDir)
     if (!js.isUndefined(testModeEnabled)) __obj.updateDynamic("testModeEnabled")(testModeEnabled)
     __obj.asInstanceOf[Options]
   }

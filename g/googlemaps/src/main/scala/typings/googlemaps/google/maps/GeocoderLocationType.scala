@@ -22,11 +22,11 @@ object GeocoderLocationType extends js.Object {
   @js.native
   sealed trait ROOFTOP extends GeocoderLocationType
   
-  /* 0 */ val APPROXIMATE: typings.googlemaps.google.maps.GeocoderLocationType.APPROXIMATE with Double = js.native
-  /* 1 */ val GEOMETRIC_CENTER: typings.googlemaps.google.maps.GeocoderLocationType.GEOMETRIC_CENTER with Double = js.native
-  /* 2 */ val RANGE_INTERPOLATED: typings.googlemaps.google.maps.GeocoderLocationType.RANGE_INTERPOLATED with Double = js.native
-  /* 3 */ val ROOFTOP: typings.googlemaps.google.maps.GeocoderLocationType.ROOFTOP with Double = js.native
+  /* "APPROXIMATE" */ val APPROXIMATE: typings.googlemaps.google.maps.GeocoderLocationType.APPROXIMATE with String = js.native
+  /* "GEOMETRIC_CENTER" */ val GEOMETRIC_CENTER: typings.googlemaps.google.maps.GeocoderLocationType.GEOMETRIC_CENTER with String = js.native
+  /* "RANGE_INTERPOLATED" */ val RANGE_INTERPOLATED: typings.googlemaps.google.maps.GeocoderLocationType.RANGE_INTERPOLATED with String = js.native
+  /* "ROOFTOP" */ val ROOFTOP: typings.googlemaps.google.maps.GeocoderLocationType.ROOFTOP with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GeocoderLocationType with Double] = js.native
+  def apply(value: String): js.UndefOr[GeocoderLocationType with String] = js.native
 }
 

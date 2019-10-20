@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 // these are all optional
 trait LanguageSettings extends js.Object {
   var aria: js.UndefOr[LanguageAriaSettings] = js.undefined
+  var decimal: js.UndefOr[String] = js.undefined
   var emptyTable: js.UndefOr[String] = js.undefined
   var info: js.UndefOr[String] = js.undefined
   var infoEmpty: js.UndefOr[String] = js.undefined
@@ -29,6 +30,7 @@ object LanguageSettings {
   @scala.inline
   def apply(
     aria: LanguageAriaSettings = null,
+    decimal: String = null,
     emptyTable: String = null,
     info: String = null,
     infoEmpty: String = null,
@@ -46,6 +48,7 @@ object LanguageSettings {
   ): LanguageSettings = {
     val __obj = js.Dynamic.literal()
     if (aria != null) __obj.updateDynamic("aria")(aria)
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
     if (emptyTable != null) __obj.updateDynamic("emptyTable")(emptyTable)
     if (info != null) __obj.updateDynamic("info")(info)
     if (infoEmpty != null) __obj.updateDynamic("infoEmpty")(infoEmpty)

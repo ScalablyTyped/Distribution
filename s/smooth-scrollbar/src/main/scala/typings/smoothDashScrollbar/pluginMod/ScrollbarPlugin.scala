@@ -22,7 +22,7 @@ class ScrollbarPlugin protected ()
   @JSName("scrollbar")
   val scrollbar_ScrollbarPlugin: Scrollbar = js.native
   /* CompleteClass */
-  override def onDestory(): Unit = js.native
+  override def onDestroy(): Unit = js.native
   /* CompleteClass */
   override def onInit(): Unit = js.native
   /* CompleteClass */

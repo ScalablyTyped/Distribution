@@ -23,3 +23,11 @@ abstract class ProviderResource protected ()
   def this(pkg: String, name: String, props: Inputs, opts: ResourceOptions) = this()
 }
 
+/* static members */
+@JSImport("@pulumi/pulumi", "ProviderResource")
+@js.native
+object ProviderResource extends js.Object {
+  def register(): js.Promise[js.UndefOr[String]] = js.native
+  def register(provider: typings.atPulumiPulumi.resourceMod.ProviderResource): js.Promise[js.UndefOr[String]] = js.native
+}
+

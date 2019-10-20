@@ -4,6 +4,7 @@ import typings.grommet.componentsAccordionMod.AccordionProps
 import typings.grommet.componentsAccordionPanelMod.AccordionPanelProps
 import typings.grommet.componentsAnchorMod.AnchorProps
 import typings.grommet.componentsBoxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxTypes
 import typings.grommet.componentsButtonMod.ButtonProps
 import typings.grommet.componentsCalendarMod.CalendarProps
 import typings.grommet.componentsCarouselMod.CarouselProps
@@ -96,7 +97,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Accordion: ComponentType[
     AccordionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Accordion].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Accordion.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsAccordionMod.AccordionProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLDivElement], 
     typings.react.HTMLDivElement
@@ -115,7 +116,7 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
       color
     ])
-  ] = js.constructorOf[typings.grommet.grommetMod.Anchor].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Anchor.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsAnchorMod.AnchorProps with (typings.grommet.utilsMod.Omit[
     typings.react.reactMod.DetailedHTMLProps[
       typings.react.reactMod.AnchorHTMLAttributes[typings.react.HTMLAnchorElement], 
@@ -126,7 +127,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Box: ComponentType[
     BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Box].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Box.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsBoxMod.BoxProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLDivElement], 
     typings.react.HTMLDivElement
@@ -137,7 +138,7 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       color
     ])
-  ] = js.constructorOf[typings.grommet.grommetMod.Button].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Button.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsButtonMod.ButtonProps with (typings.grommet.utilsMod.Omit[
     typings.react.reactMod.DetailedHTMLProps[
       typings.react.reactMod.ButtonHTMLAttributes[typings.react.HTMLButtonElement], 
@@ -166,7 +167,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def CheckBox: ComponentType[
     CheckBoxProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.CheckBox].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.CheckBox.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsCheckBoxMod.CheckBoxProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
     typings.react.HTMLInputElement
@@ -288,7 +289,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def InfiniteScroll: ComponentType[InfiniteScrollProps] = js.constructorOf[typings.grommet.grommetMod.InfiniteScroll].asInstanceOf[typings.react.reactMod.ComponentType[InfiniteScrollProps]]
   @scala.inline
-  def Keyboard: ComponentType[KeyboardProps] = js.constructorOf[typings.grommet.grommetMod.Keyboard].asInstanceOf[typings.react.reactMod.ComponentType[KeyboardProps]]
+  def Keyboard: ComponentType[KeyboardProps] = typings.grommet.grommetMod.Keyboard.asInstanceOf[typings.react.reactMod.ComponentType[KeyboardProps]]
   @scala.inline
   def Layer: ComponentType[
     LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
@@ -357,7 +358,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def RangeInput: ComponentType[
     RangeInputProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.RangeInput].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.RangeInput.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsRangeInputMod.RangeInputProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.InputHTMLAttributes[typings.react.HTMLInputElement], 
     typings.react.HTMLInputElement
@@ -389,11 +390,11 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def SkipLinkTarget: ComponentType[SkipLinkTargetProps] = typings.grommet.grommetMod.SkipLinkTarget.asInstanceOf[typings.react.reactMod.ComponentType[SkipLinkTargetProps]]
   @scala.inline
-  def SkipLinks: ComponentType[SkipLinksProps] = js.constructorOf[typings.grommet.grommetMod.SkipLinks].asInstanceOf[typings.react.reactMod.ComponentType[SkipLinksProps]]
+  def SkipLinks: ComponentType[SkipLinksProps] = typings.grommet.grommetMod.SkipLinks.asInstanceOf[typings.react.reactMod.ComponentType[SkipLinksProps]]
   @scala.inline
   def Stack: ComponentType[
     StackProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Stack].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Stack.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsStackMod.StackProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLDivElement], 
     typings.react.HTMLDivElement
@@ -430,9 +431,9 @@ object grommetComponents extends grommetProps {
   ])]]
   @scala.inline
   def TableCell: ComponentType[
-    TableCellProps with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
+    TableCellProps with BoxTypes with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
   ] = typings.grommet.grommetMod.TableCell.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTableCellMod.TableCellProps with (typings.react.reactMod.DetailedHTMLProps[
+  typings.grommet.componentsTableCellMod.TableCellProps with typings.grommet.componentsBoxMod.BoxTypes with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.TdHTMLAttributes[typings.react.HTMLTableDataCellElement], 
     typings.react.HTMLTableDataCellElement
   ])]]
@@ -463,7 +464,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Tabs: ComponentType[
     TabsProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Tabs].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.Tabs.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTabsMod.TabsProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.react.HTMLDivElement], 
     typings.react.HTMLDivElement
@@ -482,7 +483,7 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def TextArea: ComponentType[
     TextAreaProps with (DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.TextArea].asInstanceOf[typings.react.reactMod.ComponentType[
+  ] = typings.grommet.grommetMod.TextArea.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsTextAreaMod.TextAreaProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.TextareaHTMLAttributes[typings.react.HTMLTextAreaElement], 
     typings.react.HTMLTextAreaElement

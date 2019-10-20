@@ -1,17 +1,20 @@
 package typings.naja.najaMod
 
-import typings.naja.Anon_Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait SnippetListeners extends js.Object {
-  @JSName("afterUpdate")
-  var afterUpdate_Original: SnippetUpdateListener = js.native
-  @JSName("beforeUpdate")
-  var beforeUpdate_Original: SnippetUpdateListener = js.native
-  def afterUpdate(event: SnippetUpdateEvent): Unit | Anon_Event = js.native
-  def beforeUpdate(event: SnippetUpdateEvent): Unit | Anon_Event = js.native
+  var afterUpdate: SnippetUpdateListener
+  var beforeUpdate: SnippetUpdateListener
+}
+
+object SnippetListeners {
+  @scala.inline
+  def apply(afterUpdate: SnippetUpdateListener, beforeUpdate: SnippetUpdateListener): SnippetListeners = {
+    val __obj = js.Dynamic.literal(afterUpdate = afterUpdate.asInstanceOf[js.Any], beforeUpdate = beforeUpdate.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SnippetListeners]
+  }
 }
 

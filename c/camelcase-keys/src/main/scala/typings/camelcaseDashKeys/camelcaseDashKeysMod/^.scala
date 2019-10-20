@@ -22,6 +22,9 @@ object ^ extends js.Object {
   //=> [{fooBar: true}, {barFoo: false}]
   camelcaseKeys({'foo-bar': true, nested: {unicorn_rainbow: true}}, {deep: true});
   //=> {fooBar: true, nested: {unicornRainbow: true}}
+  // Convert object keys to pascal case
+  camelcaseKeys({'foo-bar': true, nested: {unicorn_rainbow: true}}, {deep: true, pascalCase: true});
+  //=> {FooBar: true, Nested: {UnicornRainbow: true}}
   import minimist = require('minimist');
   const argv = minimist(process.argv.slice(2));
   //=> {_: [], 'foo-bar': true}

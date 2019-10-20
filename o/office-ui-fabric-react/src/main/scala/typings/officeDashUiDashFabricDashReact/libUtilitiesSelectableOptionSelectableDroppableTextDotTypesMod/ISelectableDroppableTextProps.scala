@@ -42,6 +42,15 @@ trait ISelectableDroppableTextProps[TComponent, TListenerElement] extends HTMLAt
     */
   var label: js.UndefOr[String] = js.undefined
   /**
+    * Optional prop that indicates if multi-choice selections are allowed or not.
+    * @defaultvalue false
+    */
+  var multiSelect: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Callback that is issued when the options callout is dismissed
+    */
+  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
     * Optional custom renderer for the ISelectableDroppableText container
     */
   var onRenderContainer: js.UndefOr[IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]]] = js.undefined
@@ -95,6 +104,8 @@ object ISelectableDroppableTextProps {
     errorMessage: String = null,
     id: String = null,
     label: String = null,
+    multiSelect: js.UndefOr[Boolean] = js.undefined,
+    onDismiss: () => Unit = null,
     onRenderContainer: (/* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], /* defaultRender */ js.UndefOr[
       js.Function1[
         /* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], 
@@ -127,6 +138,8 @@ object ISelectableDroppableTextProps {
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
     if (onRenderContainer != null) __obj.updateDynamic("onRenderContainer")(js.Any.fromFunction2(onRenderContainer))
     if (onRenderItem != null) __obj.updateDynamic("onRenderItem")(js.Any.fromFunction2(onRenderItem))
     if (onRenderList != null) __obj.updateDynamic("onRenderList")(js.Any.fromFunction2(onRenderList))

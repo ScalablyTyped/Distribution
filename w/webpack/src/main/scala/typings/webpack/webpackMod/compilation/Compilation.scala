@@ -6,6 +6,7 @@ import typings.webpack.Anon_Basename
 import typings.webpack.Anon_Javascript
 import typings.webpack.TypeofClassDependency
 import typings.webpack.webpackMod.Compiler
+import typings.webpack.webpackMod.Logger
 import typings.webpack.webpackMod.SortableSet
 import typings.webpack.webpackMod.Stats
 import scala.scalajs.js
@@ -63,6 +64,7 @@ class Compilation () extends Tapable {
   // tslint:disable-next-line:ban-types
   def addEntry(context: js.Any, entry: js.Any, name: js.Any, callback: js.Function): Unit = js.native
   def addModule(module: CompilationModule, cacheGroup: js.Any): js.Any = js.native
+  def getLogger(pluginName: String): Logger = js.native
   def getPath(filename: String, data: Anon_Basename): String = js.native
   def getStats(): Stats = js.native
   def isChild(): Boolean = js.native

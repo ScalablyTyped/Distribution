@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/app-types" : "0.4.4"
+      "@firebase/app-types" : "0.4.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/app-types" : "0.4.4"
+      "@firebase/app-types" : "0.4.6"
     }
   ],
   "compile-devDependencies" : [

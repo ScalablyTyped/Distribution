@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "elastic-apm-node"
-version := "3.0.0-e7baab"
+version := "3.1.0-487822"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

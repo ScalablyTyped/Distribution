@@ -3,8 +3,16 @@ package typings.reactDashFoundation.componentsPaginationMod
 import typings.react.reactMod.AriaAttributes
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.DOMAttributes
+import typings.react.reactStrings.decimal
+import typings.react.reactStrings.email
+import typings.react.reactStrings.none
+import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
 import typings.react.reactStrings.on
+import typings.react.reactStrings.search
+import typings.react.reactStrings.tel
+import typings.react.reactStrings.text
+import typings.react.reactStrings.url
 import typings.reactDashFoundation.utilsMod.FlexboxPropTypes
 import typings.std.HTMLLIElement
 import scala.scalajs.js
@@ -36,8 +44,16 @@ import scala.scalajs.js.annotation._
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
-  // Unknown
-  var inputMode: js.UndefOr[String] = js.undefined
+  // Living Standard
+  /**
+    * Hints at the type of data that might be entered by the user while editing the element or its contents
+    * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
+    */
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  /**
+    * Specify that a standard HTML element should behave like a defined custom built-in element
+    * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
+    */
   var is: js.UndefOr[String] = js.undefined
   var isCurrent: js.UndefOr[Boolean] = js.undefined
   var isDisabled: js.UndefOr[Boolean] = js.undefined
@@ -50,6 +66,7 @@ import scala.scalajs.js.annotation._
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
+  // Unknown
   var radioGroup: js.UndefOr[String] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
   var results: js.UndefOr[Double] = js.undefined
@@ -91,7 +108,7 @@ object PaginationItemProps {
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     isCurrent: js.UndefOr[Boolean] = js.undefined,
     isDisabled: js.UndefOr[Boolean] = js.undefined,
@@ -140,7 +157,7 @@ object PaginationItemProps {
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (!js.isUndefined(isCurrent)) __obj.updateDynamic("isCurrent")(isCurrent)
     if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)

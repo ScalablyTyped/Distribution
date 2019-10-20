@@ -16,8 +16,10 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.bottom
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.center
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.copy
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.date
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.decimal
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.descending
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.dialog
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.email
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.execute
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.footer
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grammar
@@ -36,6 +38,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.middle
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.on
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.other
@@ -44,12 +47,15 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.polite
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.popup
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.removals
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.right
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.search
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.spelling
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.step
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tel
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.text
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.top
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
 import typings.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
@@ -165,7 +171,7 @@ trait TablePaginationProps extends js.Object {
   var id: js.UndefOr[String] = js.native
   var inlist: js.UndefOr[js.Any] = js.native
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
-  var inputMode: js.UndefOr[String] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
   var is: js.UndefOr[String] = js.native
   var itemID: js.UndefOr[String] = js.native
   var itemProp: js.UndefOr[String] = js.native

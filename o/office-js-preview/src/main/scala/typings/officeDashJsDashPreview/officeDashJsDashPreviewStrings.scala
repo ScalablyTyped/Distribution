@@ -423,6 +423,9 @@ object officeDashJsDashPreviewStrings {
   sealed trait Cardtext extends js.Object
   
   @js.native
+  sealed trait Categories extends js.Object
+  
+  @js.native
   sealed trait Category extends js.Object
   
   @js.native
@@ -3435,6 +3438,9 @@ object officeDashJsDashPreviewStrings {
   sealed trait X extends js.Object
   
   @js.native
+  sealed trait XValues extends js.Object
+  
+  @js.native
   sealed trait XYScatter extends js.Object
   
   @js.native
@@ -3448,6 +3454,9 @@ object officeDashJsDashPreviewStrings {
   
   @js.native
   sealed trait XYScatterSmoothNoMarkers extends js.Object
+  
+  @js.native
+  sealed trait YValues extends js.Object
   
   @js.native
   sealed trait Year extends js.Object
@@ -3775,6 +3784,8 @@ object officeDashJsDashPreviewStrings {
   def Caption: Caption = "Caption".asInstanceOf[Caption]
   @scala.inline
   def Cardtext: Cardtext = "Cardtext".asInstanceOf[Cardtext]
+  @scala.inline
+  def Categories: Categories = "Categories".asInstanceOf[Categories]
   @scala.inline
   def Category: Category = "Category".asInstanceOf[Category]
   @scala.inline
@@ -5784,6 +5795,8 @@ object officeDashJsDashPreviewStrings {
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   @scala.inline
+  def XValues: XValues = "XValues".asInstanceOf[XValues]
+  @scala.inline
   def XYScatter: XYScatter = "XYScatter".asInstanceOf[XYScatter]
   @scala.inline
   def XYScatterLines: XYScatterLines = "XYScatterLines".asInstanceOf[XYScatterLines]
@@ -5793,6 +5806,8 @@ object officeDashJsDashPreviewStrings {
   def XYScatterSmooth: XYScatterSmooth = "XYScatterSmooth".asInstanceOf[XYScatterSmooth]
   @scala.inline
   def XYScatterSmoothNoMarkers: XYScatterSmoothNoMarkers = "XYScatterSmoothNoMarkers".asInstanceOf[XYScatterSmoothNoMarkers]
+  @scala.inline
+  def YValues: YValues = "YValues".asInstanceOf[YValues]
   @scala.inline
   def Year: Year = "Year".asInstanceOf[Year]
   @scala.inline

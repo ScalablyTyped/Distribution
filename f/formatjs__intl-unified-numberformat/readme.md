@@ -3,6 +3,24 @@
 
 Typings are for version 1.0.1
 
+## Library description:
+Ponyfill for intl unified numberformat proposal
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @formatjs/intl-unified-numberformat |
+| Keywords           | polyfill, i18n, numberformat, unified |
+| # releases         | 17 |
+| # dependents       | 2 |
+| # downloads        | 283345 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/formatjs/formatjs)
+- [Bugs](https://github.com/formatjs/formatjs/issues)
+- [Repository](https://github.com/formatjs/formatjs)
+- [Npm](https://www.npmjs.com/package/%40formatjs%2Fintl-unified-numberformat)
+    
 
 
 ## Note

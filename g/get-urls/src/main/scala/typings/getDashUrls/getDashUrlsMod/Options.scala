@@ -17,6 +17,12 @@ trait Options
   		@default false
   		*/
   val extractFromQueryString: js.UndefOr[Boolean] = js.undefined
+  /**
+  		Require URLs to have a scheme or leading `www.` to be considered an URL. When `false`, matches against a list of valid TLDs, so it will match URLs like `unicorn.education`.
+  		Does not affect URLs in query parameters if using the `extractFromQueryString` option.
+  		@default true
+  		*/
+  val requireSchemeOrWww: js.UndefOr[Boolean] = js.undefined
 }
 
 object Options {
@@ -31,6 +37,7 @@ object Options {
     removeDirectoryIndex: js.Array[RegExp | String] = null,
     removeQueryParameters: js.Array[RegExp | String] = null,
     removeTrailingSlash: js.UndefOr[Boolean] = js.undefined,
+    requireSchemeOrWww: js.UndefOr[Boolean] = js.undefined,
     sortQueryParameters: js.UndefOr[Boolean] = js.undefined,
     stripAuthentication: js.UndefOr[Boolean] = js.undefined,
     stripHash: js.UndefOr[Boolean] = js.undefined,
@@ -47,6 +54,7 @@ object Options {
     if (removeDirectoryIndex != null) __obj.updateDynamic("removeDirectoryIndex")(removeDirectoryIndex)
     if (removeQueryParameters != null) __obj.updateDynamic("removeQueryParameters")(removeQueryParameters)
     if (!js.isUndefined(removeTrailingSlash)) __obj.updateDynamic("removeTrailingSlash")(removeTrailingSlash)
+    if (!js.isUndefined(requireSchemeOrWww)) __obj.updateDynamic("requireSchemeOrWww")(requireSchemeOrWww)
     if (!js.isUndefined(sortQueryParameters)) __obj.updateDynamic("sortQueryParameters")(sortQueryParameters)
     if (!js.isUndefined(stripAuthentication)) __obj.updateDynamic("stripAuthentication")(stripAuthentication)
     if (!js.isUndefined(stripHash)) __obj.updateDynamic("stripHash")(stripHash)

@@ -102,6 +102,9 @@ object atMaterialDashUiLabStrings {
   sealed trait down extends js.Object
   
   @js.native
+  sealed trait email extends js.Object
+  
+  @js.native
   sealed trait escapeKeyDown extends CloseReason
   
   @js.native
@@ -232,6 +235,9 @@ object atMaterialDashUiLabStrings {
   sealed trait none extends js.Object
   
   @js.native
+  sealed trait numeric extends js.Object
+  
+  @js.native
   sealed trait off extends js.Object
   
   @js.native
@@ -293,6 +299,9 @@ object atMaterialDashUiLabStrings {
   sealed trait round extends js.Object
   
   @js.native
+  sealed trait search extends js.Object
+  
+  @js.native
   sealed trait selected extends ToggleButtonClassKey
   
   @js.native
@@ -327,6 +336,9 @@ object atMaterialDashUiLabStrings {
   sealed trait submit extends js.Object
   
   @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
   sealed trait text extends SkeletonClassKey
   
   @js.native
@@ -354,6 +366,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait up extends js.Object
+  
+  @js.native
+  sealed trait url extends js.Object
   
   @js.native
   sealed trait vertical extends js.Object
@@ -417,6 +432,8 @@ object atMaterialDashUiLabStrings {
   def div: div = "div".asInstanceOf[div]
   @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
   def escapeKeyDown: escapeKeyDown = "escapeKeyDown".asInstanceOf[escapeKeyDown]
   @scala.inline
@@ -500,6 +517,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
   def on: on = "on".asInstanceOf[on]
@@ -536,6 +555,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
   def sizeLarge: sizeLarge = "sizeLarge".asInstanceOf[sizeLarge]
@@ -556,6 +577,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
@@ -573,6 +596,8 @@ object atMaterialDashUiLabStrings {
   def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline

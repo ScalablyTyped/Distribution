@@ -1,7 +1,7 @@
 
 # Scala.js typings for realm
 
-Typings are for version 3.2.0
+Typings are for version 3.3.0
 
 ## Library description:
 Realm is a mobile database: an alternative to SQLite and key-value stores

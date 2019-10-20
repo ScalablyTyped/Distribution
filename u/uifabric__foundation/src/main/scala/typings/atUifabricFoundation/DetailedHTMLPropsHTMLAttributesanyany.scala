@@ -9,8 +9,10 @@ import typings.atUifabricFoundation.atUifabricFoundationStrings.assertive
 import typings.atUifabricFoundation.atUifabricFoundationStrings.both
 import typings.atUifabricFoundation.atUifabricFoundationStrings.copy
 import typings.atUifabricFoundation.atUifabricFoundationStrings.date
+import typings.atUifabricFoundation.atUifabricFoundationStrings.decimal
 import typings.atUifabricFoundation.atUifabricFoundationStrings.descending
 import typings.atUifabricFoundation.atUifabricFoundationStrings.dialog
+import typings.atUifabricFoundation.atUifabricFoundationStrings.email
 import typings.atUifabricFoundation.atUifabricFoundationStrings.execute
 import typings.atUifabricFoundation.atUifabricFoundationStrings.grammar
 import typings.atUifabricFoundation.atUifabricFoundationStrings.grid
@@ -23,6 +25,7 @@ import typings.atUifabricFoundation.atUifabricFoundationStrings.menu
 import typings.atUifabricFoundation.atUifabricFoundationStrings.mixed
 import typings.atUifabricFoundation.atUifabricFoundationStrings.move
 import typings.atUifabricFoundation.atUifabricFoundationStrings.none
+import typings.atUifabricFoundation.atUifabricFoundationStrings.numeric
 import typings.atUifabricFoundation.atUifabricFoundationStrings.off
 import typings.atUifabricFoundation.atUifabricFoundationStrings.on
 import typings.atUifabricFoundation.atUifabricFoundationStrings.other
@@ -30,11 +33,14 @@ import typings.atUifabricFoundation.atUifabricFoundationStrings.page
 import typings.atUifabricFoundation.atUifabricFoundationStrings.polite
 import typings.atUifabricFoundation.atUifabricFoundationStrings.popup
 import typings.atUifabricFoundation.atUifabricFoundationStrings.removals
+import typings.atUifabricFoundation.atUifabricFoundationStrings.search
 import typings.atUifabricFoundation.atUifabricFoundationStrings.spelling
 import typings.atUifabricFoundation.atUifabricFoundationStrings.step
+import typings.atUifabricFoundation.atUifabricFoundationStrings.tel
 import typings.atUifabricFoundation.atUifabricFoundationStrings.text
 import typings.atUifabricFoundation.atUifabricFoundationStrings.time
 import typings.atUifabricFoundation.atUifabricFoundationStrings.tree
+import typings.atUifabricFoundation.atUifabricFoundationStrings.url
 import typings.atUifabricFoundation.atUifabricFoundationStrings.vertical
 import typings.react.Anon_Html
 import typings.react.Event
@@ -284,8 +290,16 @@ trait DetailedHTMLPropsHTMLAttributesanyany extends js.Object {
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
-  // Unknown
-  var inputMode: js.UndefOr[String] = js.undefined
+  // Living Standard
+  /**
+    * Hints at the type of data that might be entered by the user while editing the element or its contents
+    * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
+    */
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  /**
+    * Specify that a standard HTML element should behave like a defined custom built-in element
+    * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
+    */
   var is: js.UndefOr[String] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -474,6 +488,7 @@ trait DetailedHTMLPropsHTMLAttributesanyany extends js.Object {
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
+  // Unknown
   var radioGroup: js.UndefOr[String] = js.undefined
   var ref: js.UndefOr[LegacyRef[_]] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
@@ -564,7 +579,7 @@ object DetailedHTMLPropsHTMLAttributesanyany {
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -740,7 +755,7 @@ object DetailedHTMLPropsHTMLAttributesanyany {
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)

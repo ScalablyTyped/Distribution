@@ -1,0 +1,30 @@
+package typings.rcDashTable
+
+import typings.rcDashTable.libColumnManagerMod.default
+import typings.rcDashTable.libTableMod.TableProps
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_ColumnManagerComponents[ValueType] extends js.Object {
+  var columnManager: default
+  var components: js.Any
+  var props: TableProps[ValueType] with Anon_ChildrenReactNode
+  def saveRef(name: String): js.Function1[/* node */ HTMLElement, Unit]
+}
+
+object Anon_ColumnManagerComponents {
+  @scala.inline
+  def apply[ValueType](
+    columnManager: default,
+    components: js.Any,
+    props: TableProps[ValueType] with Anon_ChildrenReactNode,
+    saveRef: String => js.Function1[/* node */ HTMLElement, Unit]
+  ): Anon_ColumnManagerComponents[ValueType] = {
+    val __obj = js.Dynamic.literal(columnManager = columnManager, components = components, props = props, saveRef = js.Any.fromFunction1(saveRef))
+  
+    __obj.asInstanceOf[Anon_ColumnManagerComponents[ValueType]]
+  }
+}
+

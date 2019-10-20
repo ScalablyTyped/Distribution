@@ -17,8 +17,8 @@ trait Props extends js.Object {
   var aria: js.UndefOr[Aria] = js.undefined
   /* Boolean indicating if the appElement should be hidden. Defaults to true. */
   var ariaHideApp: js.UndefOr[Boolean] = js.undefined
-  /* String className to be applied to the document.body. */
-  var bodyOpenClassName: js.UndefOr[String] = js.undefined
+  /* String className to be applied to the document.body (must be a constant string). When set to null it doesn't add any class to document.body. */
+  var bodyOpenClassName: js.UndefOr[String | Null] = js.undefined
   /* String or object className to be applied to the modal content. */
   var className: js.UndefOr[String | Classes] = js.undefined
   /* Number indicating the milliseconds to wait before closing the modal. Defaults to zero (no timeout). */
@@ -29,8 +29,8 @@ trait Props extends js.Object {
   var contentRef: js.UndefOr[js.Function1[/* instance */ HTMLDivElement, Unit]] = js.undefined
   /* Additional data attributes to be applied to to the modal content in the form of "data-*" */
   var data: js.UndefOr[js.Any] = js.undefined
-  /* String className to be applied to the document.html. */
-  var htmlOpenClassName: js.UndefOr[String] = js.undefined
+  /* String className to be applied to the document.html (must be a constant string). Defaults to null. */
+  var htmlOpenClassName: js.UndefOr[String | Null] = js.undefined
   /* Boolean describing if the modal should be shown or not. Defaults to false. */
   var isOpen: Boolean
   /* Function that will be run after the modal has closed. */
@@ -49,8 +49,8 @@ trait Props extends js.Object {
   var parentSelector: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   /* String className to be applied to the portal. Defaults to "ReactModalPortal". */
   var portalClassName: js.UndefOr[String] = js.undefined
-  /* String indicating the role of the modal, allowing the 'dialog' role to be applied if desired. */
-  var role: js.UndefOr[String] = js.undefined
+  /* String indicating the role of the modal, allowing the 'dialog' role to be applied if desired. Defaults to "dialog". */
+  var role: js.UndefOr[String | Null] = js.undefined
   /* Boolean indicating if pressing the esc key should close the modal */
   var shouldCloseOnEsc: js.UndefOr[Boolean] = js.undefined
   /* Boolean indicating if the overlay should close the modal. Defaults to true. */

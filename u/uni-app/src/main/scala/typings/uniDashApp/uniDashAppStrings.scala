@@ -132,6 +132,9 @@ object uniDashAppStrings {
   sealed trait front extends js.Object
   
   @js.native
+  sealed trait high extends js.Object
+  
+  @js.native
   sealed trait igexin extends js.Object
   
   @js.native
@@ -145,6 +148,9 @@ object uniDashAppStrings {
   
   @js.native
   sealed trait loading extends js.Object
+  
+  @js.native
+  sealed trait low extends js.Object
   
   @js.native
   sealed trait menu extends js.Object
@@ -375,6 +381,8 @@ object uniDashAppStrings {
   @scala.inline
   def front: front = "front".asInstanceOf[front]
   @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  @scala.inline
   def igexin: igexin = "igexin".asInstanceOf[igexin]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
@@ -384,6 +392,8 @@ object uniDashAppStrings {
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
+  def low: low = "low".asInstanceOf[low]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline

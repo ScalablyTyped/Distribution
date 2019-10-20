@@ -1,35 +1,11 @@
 [debug] PhaseRunner.scala:84 Success [id => antd-slinky-facade, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => antd-slinky-facade, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building antd-slinky-facade... [id => antd-slinky-facade, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E7] src/main/scala/typings/antd/AntdFacade.scala:130:89
-[E]      method Table of type typings.react.reactMod.ComponentType[typings.antd.antdComponents.TableProps] does not take type parameters.
-[E]      L130:   @inline def Table[T]: ExternalComponentP[TableProps[T]] = importSTComponent(Antd.Table[T])
-[E]                                                                                                    ^
-[E] [E6] src/main/scala/typings/antd/AntdFacade.scala:130:44
-[E]      typings.antd.AntdFacade.TableProps does not take type parameters
-[E]      L130:   @inline def Table[T]: ExternalComponentP[TableProps[T]] = importSTComponent(Antd.Table[T])
-[E]                                                       ^
-[E] [E5] src/main/scala/typings/antd/AntdFacade.scala:60:107
+[error] Phase3Compile.scala:240 [E] [E1] src/main/scala/typings/antd/AntdFacade.scala:60:107
 [E]      type ConfigConsumerProps is not a member of package typings.antd.esConfigDashProviderMod
 [E]      L60:   @inline def ConfigConsumer: ExternalComponentP[ConfigConsumerProps[typings.antd.esConfigDashProviderMod.ConfigConsumerProps]] = importSTComponent(Antd.ConfigConsumer)
 [E]                                                                                                                     ^
-[E] [E4] src/main/scala/typings/antd/AntdFacade.scala:58:90
-[E]      value ColumnGroup is not a member of object typings.antd.antdComponents
-[E]      L58:   @inline def ColumnGroup: ExternalComponentP[ColumnGroupProps] = importSTComponent(Antd.ColumnGroup)
-[E]                                                                                                    ^
-[E] [E3] src/main/scala/typings/antd/AntdFacade.scala:58:47
-[E]      not found: type ColumnGroupProps
-[E]      L58:   @inline def ColumnGroup: ExternalComponentP[ColumnGroupProps] = importSTComponent(Antd.ColumnGroup)
-[E]                                                         ^
-[E] [E2] src/main/scala/typings/antd/AntdFacade.scala:57:86
-[E]      value Column is not a member of object typings.antd.antdComponents
-[E]      L57:   @inline def Column[T]: ExternalComponentP[ColumnProps[T]] = importSTComponent(Antd.Column[T])
-[E]                                                                                                ^
-[E] [E1] src/main/scala/typings/antd/AntdFacade.scala:57:45
-[E]      not found: type ColumnProps
-[E]      L57:   @inline def Column[T]: ExternalComponentP[ColumnProps[T]] = importSTComponent(Antd.Column[T])
-[E]                                                       ^
-[E] src/main/scala/typings/antd/AntdFacade.scala: L57 [E1], L57 [E2], L58 [E3], L58 [E4], L60 [E5], L130 [E6], L130 [E7]
+[E] src/main/scala/typings/antd/AntdFacade.scala: L60 [E1]
 [E] Failed to compile 'antd-slinky-facade'
  [id => antd-slinky-facade, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [antd-slinky-facade => Compilation failed] [id => antd-slinky-facade, phase => build] 

@@ -12,6 +12,7 @@ package object popperDotJsMod {
   type ModifierFn = typings.popperDotJs.popperDotJsMod.Popper.ModifierFn
   type Modifiers = typings.popperDotJs.popperDotJsMod.Popper.Modifiers
   type Offset = typings.popperDotJs.popperDotJsMod.Popper.Offset
+  type Padding = typings.popperDotJs.popperDotJsMod.Popper.Padding
   type Placement = typings.popperDotJs.popperDotJsMod.Popper.Placement
   type Popper = Popper_
   type PopperOptions = typings.popperDotJs.popperDotJsMod.Popper.PopperOptions

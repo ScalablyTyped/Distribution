@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jimp__plugin-crop"
-version := "0.8.4-b4e792"
+version := "0.8.5-89acf2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jimp__core" % "0.8.4-d61b10",
+  "org.scalablytyped" %%% "jimp__core" % "0.8.5-7592a3",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

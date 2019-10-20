@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zipkin"
-version := "0.19.0-24dbff"
+version := "0.19.1-a8a5e8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -25,12 +25,12 @@ object TransitMode extends js.Object {
   @js.native
   sealed trait TRAM extends TransitMode
   
-  /* 0 */ val BUS: typings.googlemaps.google.maps.TransitMode.BUS with Double = js.native
-  /* 1 */ val RAIL: typings.googlemaps.google.maps.TransitMode.RAIL with Double = js.native
-  /* 2 */ val SUBWAY: typings.googlemaps.google.maps.TransitMode.SUBWAY with Double = js.native
-  /* 3 */ val TRAIN: typings.googlemaps.google.maps.TransitMode.TRAIN with Double = js.native
-  /* 4 */ val TRAM: typings.googlemaps.google.maps.TransitMode.TRAM with Double = js.native
+  /* "BUS" */ val BUS: typings.googlemaps.google.maps.TransitMode.BUS with String = js.native
+  /* "RAIL" */ val RAIL: typings.googlemaps.google.maps.TransitMode.RAIL with String = js.native
+  /* "SUBWAY" */ val SUBWAY: typings.googlemaps.google.maps.TransitMode.SUBWAY with String = js.native
+  /* "TRAIN" */ val TRAIN: typings.googlemaps.google.maps.TransitMode.TRAIN with String = js.native
+  /* "TRAM" */ val TRAM: typings.googlemaps.google.maps.TransitMode.TRAM with String = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TransitMode with Double] = js.native
+  def apply(value: String): js.UndefOr[TransitMode with String] = js.native
 }
 

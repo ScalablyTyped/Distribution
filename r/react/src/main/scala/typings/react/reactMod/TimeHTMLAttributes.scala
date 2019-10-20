@@ -12,8 +12,10 @@ import typings.react.reactStrings.assertive
 import typings.react.reactStrings.both
 import typings.react.reactStrings.copy
 import typings.react.reactStrings.date
+import typings.react.reactStrings.decimal
 import typings.react.reactStrings.descending
 import typings.react.reactStrings.dialog
+import typings.react.reactStrings.email
 import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
@@ -26,6 +28,7 @@ import typings.react.reactStrings.menu
 import typings.react.reactStrings.mixed
 import typings.react.reactStrings.move
 import typings.react.reactStrings.none
+import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
 import typings.react.reactStrings.on
 import typings.react.reactStrings.other
@@ -33,11 +36,14 @@ import typings.react.reactStrings.page
 import typings.react.reactStrings.polite
 import typings.react.reactStrings.popup
 import typings.react.reactStrings.removals
+import typings.react.reactStrings.search
 import typings.react.reactStrings.spelling
 import typings.react.reactStrings.step
+import typings.react.reactStrings.tel
 import typings.react.reactStrings.text
 import typings.react.reactStrings.time
 import typings.react.reactStrings.tree
+import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -118,7 +124,7 @@ object TimeHTMLAttributes {
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
-    inputMode: String = null,
+    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -374,7 +380,7 @@ object TimeHTMLAttributes {
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)

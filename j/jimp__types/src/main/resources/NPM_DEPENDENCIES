@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/types" : "0.8.4"
+      "@jimp/types" : "0.8.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/types" : "0.8.4"
+      "@jimp/types" : "0.8.5"
     }
   ],
   "compile-devDependencies" : [

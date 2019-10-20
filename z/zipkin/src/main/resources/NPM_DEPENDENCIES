@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "zipkin" : "0.19.0"
+      "zipkin" : "0.19.1"
     }
   ],
   "test-dependencies" : [
     {
-      "zipkin" : "0.19.0"
+      "zipkin" : "0.19.1"
     }
   ],
   "compile-devDependencies" : [

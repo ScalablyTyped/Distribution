@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   var className: js.UndefOr[Double | String] = js.undefined
   var ifOverflow: js.UndefOr[IfOverflowType] = js.undefined
   var isFront: js.UndefOr[Boolean] = js.undefined
+  var label: String | Double | ReactElement | RechartsFunction
   var r: js.UndefOr[Double] = js.undefined
   var shape: js.UndefOr[
     (ContentRenderer[
@@ -30,6 +31,7 @@ import scala.scalajs.js.annotation._
 object ReferenceDotProps {
   @scala.inline
   def apply(
+    label: String | Double | ReactElement | RechartsFunction,
     alwaysShow: js.UndefOr[Boolean] = js.undefined,
     className: Double | String = null,
     ifOverflow: IfOverflowType = null,
@@ -57,7 +59,7 @@ object ReferenceDotProps {
     yAxis: ReferenceDotAxisConfiguration = null,
     yAxisId: String | Double = null
   ): ReferenceDotProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (ifOverflow != null) __obj.updateDynamic("ifOverflow")(ifOverflow)

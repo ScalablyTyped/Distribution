@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-saml"
-version := "1.1-dt-20190514Z-a62d0c"
+version := "1.1-dt-20191018Z-5d2535"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

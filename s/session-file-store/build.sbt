@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "session-file-store"
-version := "1.2-dt-20190819Z-94f3d1"
+version := "1.2-dt-20190819Z-18dba4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-409dd3",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-af9a1f",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-cfcbef",
-  "org.scalablytyped" %%% "express-session" % "1.15-dt-20191014Z-18b530",
+  "org.scalablytyped" %%% "express-session" % "1.15-dt-20191017Z-18b530",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",

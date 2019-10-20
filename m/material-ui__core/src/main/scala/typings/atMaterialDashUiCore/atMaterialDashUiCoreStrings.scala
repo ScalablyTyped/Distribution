@@ -545,6 +545,9 @@ object atMaterialDashUiCoreStrings {
   sealed trait date extends js.Object
   
   @js.native
+  sealed trait decimal extends js.Object
+  
+  @js.native
   sealed trait default
     extends Color
        with ListItemClassKey
@@ -753,6 +756,9 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait elevation9 extends PaperClassKey
+  
+  @js.native
+  sealed trait email extends js.Object
   
   @js.native
   sealed trait end extends js.Object
@@ -1675,6 +1681,9 @@ object atMaterialDashUiCoreStrings {
   sealed trait scroller extends TabsClassKey
   
   @js.native
+  sealed trait search extends js.Object
+  
+  @js.native
   sealed trait secondary
     extends Color
        with FabClassKey
@@ -1828,6 +1837,9 @@ object atMaterialDashUiCoreStrings {
   sealed trait switchBase extends SwitchClassKey
   
   @js.native
+  sealed trait tel extends js.Object
+  
+  @js.native
   sealed trait temporary extends js.Object
   
   @js.native
@@ -1951,6 +1963,9 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait up extends js.Object
+  
+  @js.native
+  sealed trait url extends js.Object
   
   @js.native
   sealed trait vertical
@@ -2232,6 +2247,8 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def deletable: deletable = "deletable".asInstanceOf[deletable]
@@ -2343,6 +2360,8 @@ object atMaterialDashUiCoreStrings {
   def elevation8: elevation8 = "elevation8".asInstanceOf[elevation8]
   @scala.inline
   def elevation9: elevation9 = "elevation9".asInstanceOf[elevation9]
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
@@ -2794,6 +2813,8 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def scroller: scroller = "scroller".asInstanceOf[scroller]
   @scala.inline
+  def search: search = "search".asInstanceOf[search]
+  @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   @scala.inline
   def secondaryAction: secondaryAction = "secondaryAction".asInstanceOf[secondaryAction]
@@ -2874,6 +2895,8 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def switchBase: switchBase = "switchBase".asInstanceOf[switchBase]
   @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
+  @scala.inline
   def temporary: temporary = "temporary".asInstanceOf[temporary]
   @scala.inline
   def terminal: terminal = "terminal".asInstanceOf[terminal]
@@ -2951,6 +2974,8 @@ object atMaterialDashUiCoreStrings {
   def unmountOnExit: unmountOnExit = "unmountOnExit".asInstanceOf[unmountOnExit]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline

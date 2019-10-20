@@ -1,5 +1,6 @@
 package typings.egg.eggMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.accepts.acceptsMod.Accepts
 import typings.eggDashCookies.eggDashCookiesMod.^
 import typings.eggDashLogger.eggDashLoggerMod.EggLogger
@@ -12,7 +13,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Context extends BaseContext {
+trait Context
+  extends BaseContext
+     with /* key */ StringDictionary[js.Any] {
   /**
     * @see Request#accept
     */

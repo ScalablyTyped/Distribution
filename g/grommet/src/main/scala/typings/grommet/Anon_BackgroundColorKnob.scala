@@ -1,12 +1,14 @@
 package typings.grommet
 
+import typings.grommet.utilsMod.BackgroundType
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BackgroundColorKnob extends js.Object {
-  var background: Anon_DarkLightString
-  var color: Anon_DarkLightString
+  var background: BackgroundType
+  var color: ColorType
   var knob: Anon_ExtendString
   var radius: String
   var size: String
@@ -15,13 +17,13 @@ trait Anon_BackgroundColorKnob extends js.Object {
 object Anon_BackgroundColorKnob {
   @scala.inline
   def apply(
-    background: Anon_DarkLightString,
-    color: Anon_DarkLightString,
+    background: BackgroundType,
+    color: ColorType,
     knob: Anon_ExtendString,
     radius: String,
     size: String
   ): Anon_BackgroundColorKnob = {
-    val __obj = js.Dynamic.literal(background = background, color = color, knob = knob, radius = radius, size = size)
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], knob = knob, radius = radius, size = size)
   
     __obj.asInstanceOf[Anon_BackgroundColorKnob]
   }

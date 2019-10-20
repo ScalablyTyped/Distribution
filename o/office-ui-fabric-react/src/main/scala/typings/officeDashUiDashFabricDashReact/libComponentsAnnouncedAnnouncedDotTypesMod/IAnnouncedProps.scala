@@ -5,6 +5,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedDo
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.assertive
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.off
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.polite
+import typings.react.reactMod.ElementType
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
@@ -21,6 +22,12 @@ import scala.scalajs.js.annotation._
     */
   @JSName("aria-live")
   var `aria-live_IAnnouncedProps`: js.UndefOr[off | polite | assertive] = js.undefined
+  /**
+    * Optionally render the root of this component as another component type or primitive.
+    * The custom type **must** preserve any children or native props passed in.
+    * @default 'div'
+    */
+  var as: js.UndefOr[ElementType[_]] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
   /**
     * The status message provided as screen reader output
@@ -36,6 +43,7 @@ object IAnnouncedProps {
   def apply(
     HTMLAttributes: HTMLAttributes[HTMLDivElement] = null,
     `aria-live`: off | polite | assertive = null,
+    as: ElementType[_] = null,
     key: Key = null,
     message: String = null,
     ref: LegacyRef[AnnouncedBase] = null,
@@ -44,6 +52,7 @@ object IAnnouncedProps {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
