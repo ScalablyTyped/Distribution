@@ -2036,8 +2036,8 @@
 | [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js | admin, database, Firebase, realtime, authentication |
 | [firebase-client](./f/firebase-client) | A simple Node.js client for Firebase | firebase, rest, api, client |
 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati | Firebase, JWT |
-| [firebase__analytics](./f/firebase__analytics) | - | - |
-| [firebase__analytics-types](./f/firebase__analytics-types) | - | - |
+| [firebase__analytics](./f/firebase__analytics) | A analytics package for new firebase packages | - |
+| [firebase__analytics-types](./f/firebase__analytics-types) | @firebase/analytics Types | - |
 | [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK | - |
 | [firebase__app-types](./f/firebase__app-types) | @firebase/app Types | - |
 | [firebase__auth](./f/firebase__auth) | Javascript library for Firebase Auth SDK | - |
@@ -2056,8 +2056,8 @@
 | [firebase__performance](./f/firebase__performance) | Firebase performance for web | - |
 | [firebase__performance-typ](./f/firebase__performance-types) | @firebase/performance Types | - |
 | [firebase__polyfill](./f/firebase__polyfill) | This is the a set of polyfills/shims used by the F | - |
-| [firebase__remote-config](./f/firebase__remote-config) | - | - |
-| [firebase__remote-config-t](./f/firebase__remote-config-types) | - | - |
+| [firebase__remote-config](./f/firebase__remote-config) | The Remote Config package of the Firebase JS SDK | - |
+| [firebase__remote-config-t](./f/firebase__remote-config-types) | @firebase/remote-config Types | - |
 | [firebase__storage](./f/firebase__storage) | This is the Cloud Storage component of the Firebas | - |
 | [firebase__storage-types](./f/firebase__storage-types) | @firebase/storage Types | - |
 | [firebase__util](./f/firebase__util) | _NOTE: This is specifically tailored for Firebase  | - |
@@ -5523,7 +5523,7 @@
 | [rc-menu](./r/rc-menu) | menu ui component for react | react, react-component, menu, ui, react-menu |
 | [rc-pagination](./r/rc-pagination) | pagination ui component for react | react, react-component, react-pagination, pagination |
 | [rc-progress](./r/rc-progress) | progress ui component for react | react, react-component, react-progress, progress |
-| [rc-resize-observer](./r/rc-resize-observer) | - | - |
+| [rc-resize-observer](./r/rc-resize-observer) | Resize observer for React | react, react-component, react-resize-observer, resize-observer |
 | [rc-select](./r/rc-select) | React Select | react, react-component, react-select, select |
 | [rc-slider](./r/rc-slider) | Slider UI component for React | react, react-component, react-slider, slider, input, range |
 | [rc-swipeout](./r/rc-swipeout) | swipe out ui component for react(web and react-nat | react, react-component, swipeout, rc-swipeout, swipe delete |

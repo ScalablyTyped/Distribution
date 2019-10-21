@@ -16,6 +16,7 @@ object typesDayPickerMod extends js.Object {
   trait DayPicker
     extends Component[DayPickerProps, js.Any, js.Any] {
     val dayPicker: HTMLDivElement = js.native
+    def focus(): Unit = js.native
     def showMonth(month: Date): Unit = js.native
     def showNextMonth(): Unit = js.native
     def showNextYear(): Unit = js.native
@@ -31,9 +32,9 @@ object typesDayPickerMod extends js.Object {
   object default extends js.Object {
     var DateUtils: Anon_AddDayToRange = js.native
     var DayModifiers: typings.reactDashDayDashPicker.typesCommonMod.DayModifiers = js.native
-    var LocaleUtils: Anon_Day = js.native
+    var LocaleUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = js.native
     var Modifiers: typings.reactDashDayDashPicker.typesCommonMod.Modifiers = js.native
-    var ModifiersUtils: Anon_DayDayMatchesModifier = js.native
+    var ModifiersUtils: Anon_Day = js.native
     var VERSION: String = js.native
   }
   

@@ -12,7 +12,6 @@ import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SFC
 import typings.react.reactMod.TouchEvent
-import typings.reactDashDayDashPicker.Anon_Day
 import typings.reactDashDayDashPicker.Anon_NextMonth
 import typings.reactDashDayDashPicker.typesCommonMod.ClassNames
 import typings.reactDashDayDashPicker.typesCommonMod.DayModifiers
@@ -43,7 +42,9 @@ trait DayPickerProps extends js.Object {
   var initialMonth: js.UndefOr[Date] = js.undefined
   var labels: js.UndefOr[Anon_NextMonth] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
-  var localeUtils: js.UndefOr[Anon_Day] = js.undefined
+  var localeUtils: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
+  ] = js.undefined
   var modifiers: js.UndefOr[Partial[Modifiers]] = js.undefined
   var modifiersStyles: js.UndefOr[js.Object] = js.undefined
   var month: js.UndefOr[Date] = js.undefined
@@ -166,7 +167,7 @@ object DayPickerProps {
     initialMonth: Date = null,
     labels: Anon_NextMonth = null,
     locale: String = null,
-    localeUtils: Anon_Day = null,
+    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
     modifiers: Partial[Modifiers] = null,
     modifiersStyles: js.Object = null,
     month: Date = null,

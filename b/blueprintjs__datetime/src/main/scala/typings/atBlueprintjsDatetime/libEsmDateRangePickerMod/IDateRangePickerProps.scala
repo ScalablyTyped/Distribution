@@ -2,7 +2,6 @@ package typings.atBlueprintjsDatetime.libEsmDateRangePickerMod
 
 import typings.atBlueprintjsCore.libEsmCommonBoundaryMod.Boundary
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
-import typings.atBlueprintjsDatetime.Anon_Day
 import typings.atBlueprintjsDatetime.libEsmCommonDateUtilsMod.DateRange
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerBaseProps
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerModifiers
@@ -112,7 +111,7 @@ object IDateRangePickerProps {
     defaultValue: DateRange = null,
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: Anon_Day = null,
+    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

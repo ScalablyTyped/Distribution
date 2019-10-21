@@ -2738,6 +2738,7 @@
 | 0.6868263987760098 | [react-frontload](./r/react-frontload) | Bind Async Data Dependencies to React Components
 | 0.6867828780542831 | [react-panelgroup](./r/react-panelgroup) | react-panelgroup React component
 | 0.6867239577908621 | [custom-error-generator](./c/custom-error-generator) | Custom errors and exceptions in Node.js
+| 0.6866924744649283 | [rc-resize-observer](./r/rc-resize-observer) | Resize observer for React
 | 0.6866638784171546 | [mapbox__tile-cover](./m/mapbox__tile-cover) | generate the minimum number of tiles to cover a ge
 | 0.6866011095625817 | [react-monaco-editor](./r/react-monaco-editor) | Monaco Editor for React
 | 0.6865467645348259 | [raspi-board](./r/raspi-board) | Pin mapping functionality for the Raspberry Pi in 
@@ -3297,6 +3298,8 @@
 | 0.6657252268538513 | [integrate-adaptive-simpso](./i/integrate-adaptive-simpson) | Integrate a system of ODEs using the Second Order 
 | 0.6657218995525797 | [react-native-version-chec](./r/react-native-version-check) | A version checker for react-native applications
 | 0.6656847563462427 | [logrocket-react](./l/logrocket-react) | React library for 
+| 0.6656180547965158 | [firebase__remote-config](./f/firebase__remote-config) | The Remote Config package of the Firebase JS SDK
+| 0.6656124941176109 | [firebase__remote-config-t](./f/firebase__remote-config-types) | @firebase/remote-config Types
 | 0.6655708436184947 | [react-scroll-into-view-if](./r/react-scroll-into-view-if-needed) | A thin component wrapper around scroll-into-view-i
 | 0.6654508928991723 | [any-db-transaction](./a/any-db-transaction) | Transaction object for Any-DB adapters
 | 0.6654204216694325 | [precise](./p/precise) | Precision timer for nanosecond differences
@@ -3398,6 +3401,8 @@
 | 0.660973769465206 | [discord-rpc](./d/discord-rpc) | A simple RPC client for Discord
 | 0.6608962122294928 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library
 | 0.6608908802597342 | [gulp-terser](./g/gulp-terser) | gulp plugin, compressed es6+ code.
+| 0.6606804576819586 | [firebase__analytics-types](./f/firebase__analytics-types) | @firebase/analytics Types
+| 0.6606792012980822 | [firebase__analytics](./f/firebase__analytics) | A analytics package for new firebase packages
 | 0.6606751298270572 | [caniuse-lite](./c/caniuse-lite) | A smaller version of caniuse-db, with only the ess
 | 0.6606733161807401 | [node-easy-cert](./n/node-easy-cert) | A tool for managing self-signed certifications
 | 0.6606086663099527 | [webpack-stream](./w/webpack-stream) | Run webpack as a stream

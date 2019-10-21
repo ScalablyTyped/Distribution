@@ -3,7 +3,6 @@ package typings.reactDashDayDashPicker.typesPropsMod
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
-import typings.reactDashDayDashPicker.Anon_Day
 import typings.reactDashDayDashPicker.typesCommonMod.ClassNames
 import typings.std.Date
 import typings.std.HTMLElement
@@ -15,7 +14,7 @@ trait CaptionElementProps extends js.Object {
   var classNames: ClassNames
   var date: Date
   var locale: String
-  var localeUtils: Anon_Day
+  var localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
   var months: js.UndefOr[js.Array[String]] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
 }
@@ -26,7 +25,7 @@ object CaptionElementProps {
     classNames: ClassNames,
     date: Date,
     locale: String,
-    localeUtils: Anon_Day,
+    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any,
     months: js.Array[String] = null,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null
   ): CaptionElementProps = {

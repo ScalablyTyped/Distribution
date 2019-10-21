@@ -4791,6 +4791,7 @@
 | 7 | [radius](./r/radius) | RADIUS packet encoding/decoding
 | 7 | [radix64](./r/radix64) | radix64, library to convert Unsigned Interger into
 | 7 | [raspi-board](./r/raspi-board) | Pin mapping functionality for the Raspberry Pi in 
+| 7 | [rc-resize-observer](./r/rc-resize-observer) | Resize observer for React
 | 7 | [rdf-data-model](./r/rdf-data-model) | A basic implementation of the RDFJS Data Model
 | 7 | [re2](./r/re2) | Bindings for RE2: fast, safe alternative to backtr
 | 7 | [react-async](./r/react-async) | React component for declarative promise resolution
@@ -6229,10 +6230,14 @@
 | 1 | [fhir-kit-client](./f/fhir-kit-client) | FHIR Client
 | 1 | [field](./f/field) | Easily set, get, stub values of a field in a JavaS
 | 1 | [filter-console](./f/filter-console) | Filter out unwanted console.log() output
+| 1 | [firebase__analytics](./f/firebase__analytics) | A analytics package for new firebase packages
+| 1 | [firebase__analytics-types](./f/firebase__analytics-types) | @firebase/analytics Types
 | 1 | [firebase__functions-types](./f/firebase__functions-types) | @firebase/functions Types
 | 1 | [firebase__installations](./f/firebase__installations) | -
 | 1 | [firebase__installations-t](./f/firebase__installations-types) | @firebase/installations Types
 | 1 | [firebase__performance-typ](./f/firebase__performance-types) | @firebase/performance Types
+| 1 | [firebase__remote-config](./f/firebase__remote-config) | The Remote Config package of the Firebase JS SDK
+| 1 | [firebase__remote-config-t](./f/firebase__remote-config-types) | @firebase/remote-config Types
 | 1 | [flipsnap](./f/flipsnap) | Provides UI of snap and slide
 | 1 | [float-regex](./f/float-regex) | regular expression to match floating point numbers
 | 1 | [fluxible-router](./f/fluxible-router) | Routing for Fluxible applications

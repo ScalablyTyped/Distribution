@@ -10,7 +10,6 @@ import typings.atBlueprintjsDatetime.libEsmDateRangeInputMod.IDateRangeInputProp
 import typings.atBlueprintjsDatetime.libEsmDateRangePickerMod.IDateRangePickerProps
 import typings.atBlueprintjsDatetime.libEsmDateTimePickerMod.IDateTimePickerProps
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.ITimePickerProps
-import typings.std.Date
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,22 +48,6 @@ object atBlueprintjsDatetimeMod extends js.Object {
     extends typings.atBlueprintjsDatetime.libEsmDateTimePickerMod.DateTimePicker {
     def this(props: IDateTimePickerProps) = this()
     def this(props: IDateTimePickerProps, context: js.Any) = this()
-  }
-  
-  @js.native
-  trait IDatePickerLocaleUtils extends js.Object {
-    def formatDay(day: Date): String = js.native
-    def formatDay(day: Date, locale: String): String = js.native
-    def formatMonthTitle(month: Date): String = js.native
-    def formatMonthTitle(month: Date, locale: String): String = js.native
-    def formatWeekdayLong(weekday: Double): String = js.native
-    def formatWeekdayLong(weekday: Double, locale: String): String = js.native
-    def formatWeekdayShort(weekday: Double): String = js.native
-    def formatWeekdayShort(weekday: Double, locale: String): String = js.native
-    def getFirstDayOfWeek(): Double = js.native
-    def getFirstDayOfWeek(locale: String): Double = js.native
-    def getMonths(): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
-    def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
   }
   
   @js.native
@@ -181,5 +164,6 @@ object atBlueprintjsDatetimeMod extends js.Object {
     var SECOND: second = js.native
   }
   
+  type IDatePickerLocaleUtils = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
 }
 

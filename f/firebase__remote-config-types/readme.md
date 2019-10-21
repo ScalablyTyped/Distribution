@@ -3,6 +3,24 @@
 
 Typings are for version 0.1.2
 
+## Library description:
+@firebase/remote-config Types
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @firebase/remote-config-types |
+| Keywords           | - |
+| # releases         | 43 |
+| # dependents       | 1 |
+| # downloads        | 219060 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/firebase/firebase-js-sdk#readme)
+- [Bugs](https://github.com/firebase/firebase-js-sdk/issues)
+- [Repository](https://github.com/firebase/firebase-js-sdk)
+- [Npm](https://www.npmjs.com/package/%40firebase%2Fremote-config-types)
+    
 
 
 ## Note

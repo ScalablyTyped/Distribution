@@ -3,6 +3,24 @@
 
 Typings are for version 0.1.2
 
+## Library description:
+Resize observer for React
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | rc-resize-observer |
+| Keywords           | react, react-component, react-resize-observer, resize-observer |
+| # releases         | 5 |
+| # dependents       | 7 |
+| # downloads        | 200091 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://react-component.github.io/resize-observer)
+- [Bugs](http://github.com/react-component/resize-observer/issues)
+- [Repository](https://github.com/react-component/resize-observer)
+- [Npm](https://www.npmjs.com/package/rc-resize-observer)
+    
 
 
 ## Note

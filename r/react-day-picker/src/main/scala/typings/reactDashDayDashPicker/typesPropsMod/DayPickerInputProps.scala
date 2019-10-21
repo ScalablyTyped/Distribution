@@ -16,7 +16,7 @@ trait DayPickerInputProps extends js.Object {
   // Not sure React.ComponentClass<any> is the right type for _propTypes2.default.any
   var component: js.UndefOr[js.Any] = js.undefined
   var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
-  var format: String | js.Array[String]
+  var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ String, String]] = js.undefined
   var hideOnDayClick: js.UndefOr[Boolean] = js.undefined
   var inputProps: js.UndefOr[js.Object] = js.undefined
@@ -48,11 +48,11 @@ trait DayPickerInputProps extends js.Object {
 object DayPickerInputProps {
   @scala.inline
   def apply(
-    format: String | js.Array[String],
     classNames: InputClassNames = null,
     clickUnselectsDay: js.UndefOr[Boolean] = js.undefined,
     component: js.Any = null,
     dayPickerProps: DayPickerProps = null,
+    format: String | js.Array[String] = null,
     formatDate: (/* date */ Date, /* format */ String, /* locale */ String) => String = null,
     hideOnDayClick: js.UndefOr[Boolean] = js.undefined,
     inputProps: js.Object = null,
@@ -71,11 +71,12 @@ object DayPickerInputProps {
     showOverlay: js.UndefOr[Boolean] = js.undefined,
     value: String | Date = null
   ): DayPickerInputProps = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (classNames != null) __obj.updateDynamic("classNames")(classNames)
     if (!js.isUndefined(clickUnselectsDay)) __obj.updateDynamic("clickUnselectsDay")(clickUnselectsDay)
     if (component != null) __obj.updateDynamic("component")(component)
     if (dayPickerProps != null) __obj.updateDynamic("dayPickerProps")(dayPickerProps)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (formatDate != null) __obj.updateDynamic("formatDate")(js.Any.fromFunction3(formatDate))
     if (!js.isUndefined(hideOnDayClick)) __obj.updateDynamic("hideOnDayClick")(hideOnDayClick)
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)

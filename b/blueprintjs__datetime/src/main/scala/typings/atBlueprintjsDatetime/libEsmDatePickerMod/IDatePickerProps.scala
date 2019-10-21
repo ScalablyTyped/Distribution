@@ -1,7 +1,6 @@
 package typings.atBlueprintjsDatetime.libEsmDatePickerMod
 
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
-import typings.atBlueprintjsDatetime.Anon_Day
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerBaseProps
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerModifiers
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.ITimePickerProps
@@ -79,7 +78,7 @@ object IDatePickerProps {
     highlightCurrentDay: js.UndefOr[Boolean] = js.undefined,
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: Anon_Day = null,
+    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

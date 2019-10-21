@@ -1,6 +1,5 @@
 package typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod
 
-import typings.atBlueprintjsDatetime.Anon_Day
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.ITimePickerProps
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.TimePrecision
 import typings.std.Date
@@ -21,7 +20,9 @@ trait IDatePickerBaseProps extends js.Object {
   /**
     * Collection of functions that provide internationalization support.
     */
-  var localeUtils: js.UndefOr[Anon_Day] = js.undefined
+  var localeUtils: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any
+  ] = js.undefined
   /**
     * The latest date the user can select.
     * @default Dec. 31st of this year.
@@ -69,7 +70,7 @@ object IDatePickerBaseProps {
   def apply(
     initialMonth: Date = null,
     locale: String = null,
-    localeUtils: Anon_Day = null,
+    localeUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = null,
     maxDate: Date = null,
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,

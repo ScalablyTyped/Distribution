@@ -1,11 +1,13 @@
 package typings.rollup.rollupMod
 
 import typings.rollup.Anon_Column
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RollupError extends RollupLogProps {
+  var parserError: js.UndefOr[Error] = js.undefined
   var stack: js.UndefOr[String] = js.undefined
   var watchFiles: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -20,6 +22,7 @@ object RollupError {
     id: String = null,
     loc: Anon_Column = null,
     name: String = null,
+    parserError: Error = null,
     plugin: String = null,
     pluginCode: String = null,
     pos: Int | Double = null,
@@ -34,6 +37,7 @@ object RollupError {
     if (id != null) __obj.updateDynamic("id")(id)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (parserError != null) __obj.updateDynamic("parserError")(parserError)
     if (plugin != null) __obj.updateDynamic("plugin")(plugin)
     if (pluginCode != null) __obj.updateDynamic("pluginCode")(pluginCode)
     if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])

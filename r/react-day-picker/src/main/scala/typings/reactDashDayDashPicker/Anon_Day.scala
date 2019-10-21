@@ -1,23 +1,17 @@
 package typings.reactDashDayDashPicker
 
+import typings.reactDashDayDashPicker.typesCommonMod.Modifier
 import typings.std.Date
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Day extends js.Object {
-  def formatDay(day: Date): String = js.native
-  def formatDay(day: Date, locale: String): String = js.native
-  def formatMonthTitle(month: Date): String = js.native
-  def formatMonthTitle(month: Date, locale: String): String = js.native
-  def formatWeekdayLong(weekday: Double): String = js.native
-  def formatWeekdayLong(weekday: Double, locale: String): String = js.native
-  def formatWeekdayShort(weekday: Double): String = js.native
-  def formatWeekdayShort(weekday: Double, locale: String): String = js.native
-  def getFirstDayOfWeek(): Double = js.native
-  def getFirstDayOfWeek(locale: String): Double = js.native
-  def getMonths(): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
-  def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
+  def dayMatchesModifier(day: Date): Boolean = js.native
+  def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = js.native
+  def dayMatchesModifier(day: Date, modifier: Modifier): Boolean = js.native
+  def getModifiersForDay(day: Date, modifiers: Record[String, Modifier | js.Array[Modifier]]): js.Array[String] = js.native
 }
 

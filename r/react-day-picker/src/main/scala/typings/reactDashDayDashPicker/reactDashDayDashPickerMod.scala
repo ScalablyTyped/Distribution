@@ -32,22 +32,6 @@ object reactDashDayDashPickerMod extends js.Object {
   }
   
   @js.native
-  object LocaleUtils extends js.Object {
-    def formatDay(day: Date): String = js.native
-    def formatDay(day: Date, locale: String): String = js.native
-    def formatMonthTitle(month: Date): String = js.native
-    def formatMonthTitle(month: Date, locale: String): String = js.native
-    def formatWeekdayLong(weekday: Double): String = js.native
-    def formatWeekdayLong(weekday: Double, locale: String): String = js.native
-    def formatWeekdayShort(weekday: Double): String = js.native
-    def formatWeekdayShort(weekday: Double, locale: String): String = js.native
-    def getFirstDayOfWeek(): Double = js.native
-    def getFirstDayOfWeek(locale: String): Double = js.native
-    def getMonths(): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
-    def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
-  }
-  
-  @js.native
   object ModifiersUtils extends js.Object {
     def dayMatchesModifier(day: Date): Boolean = js.native
     def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = js.native
@@ -60,9 +44,9 @@ object reactDashDayDashPickerMod extends js.Object {
   object default extends js.Object {
     var DateUtils: Anon_AddDayToRange = js.native
     var DayModifiers: typings.reactDashDayDashPicker.typesCommonMod.DayModifiers = js.native
-    var LocaleUtils: Anon_Day = js.native
+    var LocaleUtils: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ js.Any = js.native
     var Modifiers: typings.reactDashDayDashPicker.typesCommonMod.Modifiers = js.native
-    var ModifiersUtils: Anon_DayDayMatchesModifier = js.native
+    var ModifiersUtils: Anon_Day = js.native
     var VERSION: String = js.native
   }
   

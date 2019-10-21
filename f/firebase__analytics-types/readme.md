@@ -3,6 +3,24 @@
 
 Typings are for version 0.2.2
 
+## Library description:
+@firebase/analytics Types
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @firebase/analytics-types |
+| Keywords           | - |
+| # releases         | 46 |
+| # dependents       | 1 |
+| # downloads        | 139643 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/firebase/firebase-js-sdk#readme)
+- [Bugs](https://github.com/firebase/firebase-js-sdk/issues)
+- [Repository](https://github.com/firebase/firebase-js-sdk)
+- [Npm](https://www.npmjs.com/package/%40firebase%2Fanalytics-types)
+    
 
 
 ## Note
