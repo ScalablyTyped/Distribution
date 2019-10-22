@@ -8,6 +8,7 @@ import typings.grommet.utilsMod._FillType
 import typings.grommet.utilsMod._GapType
 import typings.grommet.utilsMod._MarginType
 import typings.grommet.utilsMod._OpacityType
+import typings.grommet.utilsMod._PadType
 import typings.grommet.utilsMod._PolymorphicType
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.KeyboardEvent
@@ -64,6 +65,8 @@ object utilsMod extends js.Object {
   
   trait _OpacityType extends js.Object
   
+  trait _PadType extends js.Object
+  
   trait _PolymorphicType extends js.Object
   
   val deepFreeze: DeepFreeze = js.native
@@ -109,7 +112,7 @@ object utilsMod extends js.Object {
     - typings.grommet.grommetStrings.medium
     - typings.grommet.grommetStrings.large
     - typings.grommet.grommetStrings.xlarge
-    - typings.grommet.Anon_Bottom
+    - typings.grommet.Anon_BottomHorizontal
     - java.lang.String
   */
   type MarginType = _MarginType | String
@@ -128,6 +131,18 @@ object utilsMod extends js.Object {
     - scala.Double
   */
   type OpacityType = _OpacityType | String | Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.none
+    - typings.grommet.grommetStrings.xxsmall
+    - typings.grommet.grommetStrings.xsmall
+    - typings.grommet.grommetStrings.small
+    - typings.grommet.grommetStrings.medium
+    - typings.grommet.grommetStrings.large
+    - typings.grommet.grommetStrings.xlarge
+    - typings.grommet.Anon_BottomHorizontal
+    - java.lang.String
+  */
+  type PadType = _PadType | String
   type PlaceHolderType = String | Element | ReactNode
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.a

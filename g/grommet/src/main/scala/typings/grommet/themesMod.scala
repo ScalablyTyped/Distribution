@@ -12,6 +12,8 @@ object themesMod extends js.Object {
   val base: DeepReadonly[ThemeType] = js.native
   val dark: ThemeType = js.native
   val grommet: ThemeType = js.native
+  def generate(): DeepReadonly[ThemeType] = js.native
+  def generate(baseSpacing: Double): DeepReadonly[ThemeType] = js.native
   def generate(baseSpacing: Double, scale: Double): DeepReadonly[ThemeType] = js.native
 }
 

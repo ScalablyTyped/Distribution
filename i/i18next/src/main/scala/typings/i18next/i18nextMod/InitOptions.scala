@@ -186,6 +186,11 @@ trait InitOptions extends js.Object {
     */
   var postProcess: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
   /**
+    * passthrough the resolved object including 'usedNS', 'usedLang' etc into options object of postprocessors as 'i18nResolved' property
+    * @default false
+    */
+  var postProcessPassResolved: js.UndefOr[Boolean] = js.undefined
+  /**
     * Array of languages to preload. Important on server-side to assert translations are loaded before rendering views.
     * @default false
     */
@@ -289,6 +294,7 @@ object InitOptions {
     partialBundledLanguages: js.UndefOr[Boolean] = js.undefined,
     pluralSeparator: String = null,
     postProcess: `false` | String | js.Array[String] = null,
+    postProcessPassResolved: js.UndefOr[Boolean] = js.undefined,
     preload: `false` | js.Array[String] = null,
     react: ReactOptions = null,
     resources: Resource = null,
@@ -334,6 +340,7 @@ object InitOptions {
     if (!js.isUndefined(partialBundledLanguages)) __obj.updateDynamic("partialBundledLanguages")(partialBundledLanguages)
     if (pluralSeparator != null) __obj.updateDynamic("pluralSeparator")(pluralSeparator)
     if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess.asInstanceOf[js.Any])
+    if (!js.isUndefined(postProcessPassResolved)) __obj.updateDynamic("postProcessPassResolved")(postProcessPassResolved)
     if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     if (react != null) __obj.updateDynamic("react")(react)
     if (resources != null) __obj.updateDynamic("resources")(resources)

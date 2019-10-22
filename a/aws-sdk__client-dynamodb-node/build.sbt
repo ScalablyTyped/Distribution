@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-dynamodb-node"
-version := "0.1.0-preview.2-35332b"
+version := "0.1.0-preview.2-93dcfd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "aws-sdk__middleware-stack" % "0.1.0-preview.2-2c2c5e",
   "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-22daf0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Height extends js.Object {
-  var height: Double | Null
-  var width: Double | Null
+  val height: Double | Null
+  val width: Double | Null
 }
 
 object Anon_Height {

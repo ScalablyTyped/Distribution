@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Spec extends js.Object {
+  var axeVersion: js.UndefOr[String] = js.undefined
   var branding: js.UndefOr[Anon_Application] = js.undefined
   var checks: js.UndefOr[js.Array[Check]] = js.undefined
   var locale: js.UndefOr[Locale] = js.undefined
@@ -16,6 +17,7 @@ trait Spec extends js.Object {
 object Spec {
   @scala.inline
   def apply(
+    axeVersion: String = null,
     branding: Anon_Application = null,
     checks: js.Array[Check] = null,
     locale: Locale = null,
@@ -23,6 +25,7 @@ object Spec {
     rules: js.Array[Rule] = null
   ): Spec = {
     val __obj = js.Dynamic.literal()
+    if (axeVersion != null) __obj.updateDynamic("axeVersion")(axeVersion)
     if (branding != null) __obj.updateDynamic("branding")(branding)
     if (checks != null) __obj.updateDynamic("checks")(checks)
     if (locale != null) __obj.updateDynamic("locale")(locale)

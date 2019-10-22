@@ -12,7 +12,7 @@ import typings.surveyDashKnockout.Anon_ClearButtonColumnControlLabel
 import typings.surveyDashKnockout.Anon_ClearButtonImageItemItemChecked
 import typings.surveyDashKnockout.Anon_ColumnControlLabelItemItemChecked
 import typings.surveyDashKnockout.Anon_Complete
-import typings.surveyDashKnockout.Anon_ContainerDescription
+import typings.surveyDashKnockout.Anon_ContainerContent
 import typings.surveyDashKnockout.Anon_Control
 import typings.surveyDashKnockout.Anon_ControlOnError
 import typings.surveyDashKnockout.Anon_Description
@@ -51,7 +51,7 @@ object modernCss extends js.Object {
   var page: Anon_Description = js.native
   var pageDescription: String = js.native
   var pageTitle: String = js.native
-  var panel: Anon_ContainerDescription = js.native
+  var panel: Anon_ContainerContent = js.native
   var paneldynamic: Anon_ButtonButtonAddButtonNextButtonPrev = js.native
   var progress: String = js.native
   var progressBar: String = js.native

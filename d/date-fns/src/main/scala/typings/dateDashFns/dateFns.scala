@@ -395,6 +395,9 @@ trait dateFns extends js.Object {
   ): Date = js.native
   def parseISO(argument: String): Date = js.native
   def parseISO(argument: String, options: Anon_012): Date = js.native
+  def parseJSON(argument: String): Date = js.native
+  def parseJSON(argument: Double): Date = js.native
+  def parseJSON(argument: Date): Date = js.native
   def roundToNearestMinutes(date: Double): Date = js.native
   def roundToNearestMinutes(date: Double, options: Anon_NearestTo): Date = js.native
   def roundToNearestMinutes(date: Date): Date = js.native
@@ -468,6 +471,8 @@ trait dateFns extends js.Object {
   def startOfYear(date: Double): Date = js.native
   def startOfYear(date: Date): Date = js.native
   def startOfYesterday(): Date = js.native
+  def subBusinessDays(date: Double, amount: Double): Date = js.native
+  def subBusinessDays(date: Date, amount: Double): Date = js.native
   def subDays(date: Double, amount: Double): Date = js.native
   def subDays(date: Date, amount: Double): Date = js.native
   def subHours(date: Double, amount: Double): Date = js.native

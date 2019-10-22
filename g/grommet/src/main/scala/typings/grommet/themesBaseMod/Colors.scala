@@ -1,118 +1,132 @@
 package typings.grommet.themesBaseMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Colors extends js.Object {
-  var `accent-1`: ColorType
-  var `accent-2`: ColorType
-  var `accent-3`: ColorType
-  var `accent-4`: ColorType
-  var active: ColorType
-  var black: ColorType
-  var border: ColorType
-  var brand: ColorType
-  var control: ColorType
-  var `dark-1`: ColorType
-  var `dark-2`: ColorType
-  var `dark-3`: ColorType
-  var `dark-4`: String
-  var `dark-5`: ColorType
-  var `dark-6`: ColorType
-  var focus: ColorType
-  var icon: ColorType
-  var `light-1`: ColorType
-  var `light-2`: ColorType
-  var `light-3`: ColorType
-  var `light-4`: ColorType
-  var `light-5`: ColorType
-  var `light-6`: ColorType
-  var `neutral-1`: ColorType
-  var `neutral-2`: ColorType
-  var `neutral-3`: ColorType
-  var `neutral-4`: ColorType
-  var placeholder: ColorType
-  var selected: ColorType
-  var `status-critical`: ColorType
-  var `status-disabled`: ColorType
-  var `status-error`: ColorType
-  var `status-ok`: ColorType
-  var `status-unknown`: ColorType
-  var `status-warning`: ColorType
-  var text: ColorType
-  var white: ColorType
+trait Colors extends /* x */ StringDictionary[ColorType] {
+  var `accent-1`: js.UndefOr[ColorType] = js.undefined
+  var `accent-2`: js.UndefOr[ColorType] = js.undefined
+  var `accent-3`: js.UndefOr[ColorType] = js.undefined
+  var `accent-4`: js.UndefOr[ColorType] = js.undefined
+  var active: js.UndefOr[ColorType] = js.undefined
+  var black: js.UndefOr[ColorType] = js.undefined
+  var border: js.UndefOr[ColorType] = js.undefined
+  var brand: js.UndefOr[ColorType] = js.undefined
+  var control: js.UndefOr[ColorType] = js.undefined
+  var `dark-1`: js.UndefOr[ColorType] = js.undefined
+  var `dark-2`: js.UndefOr[ColorType] = js.undefined
+  var `dark-3`: js.UndefOr[ColorType] = js.undefined
+  var `dark-4`: js.UndefOr[String] = js.undefined
+  var `dark-5`: js.UndefOr[ColorType] = js.undefined
+  var `dark-6`: js.UndefOr[ColorType] = js.undefined
+  var focus: js.UndefOr[ColorType] = js.undefined
+  var icon: js.UndefOr[ColorType] = js.undefined
+  var `light-1`: js.UndefOr[ColorType] = js.undefined
+  var `light-2`: js.UndefOr[ColorType] = js.undefined
+  var `light-3`: js.UndefOr[ColorType] = js.undefined
+  var `light-4`: js.UndefOr[ColorType] = js.undefined
+  var `light-5`: js.UndefOr[ColorType] = js.undefined
+  var `light-6`: js.UndefOr[ColorType] = js.undefined
+  var `neutral-1`: js.UndefOr[ColorType] = js.undefined
+  var `neutral-2`: js.UndefOr[ColorType] = js.undefined
+  var `neutral-3`: js.UndefOr[ColorType] = js.undefined
+  var `neutral-4`: js.UndefOr[ColorType] = js.undefined
+  var placeholder: js.UndefOr[ColorType] = js.undefined
+  var selected: js.UndefOr[ColorType] = js.undefined
+  var `status-critical`: js.UndefOr[ColorType] = js.undefined
+  var `status-disabled`: js.UndefOr[ColorType] = js.undefined
+  var `status-error`: js.UndefOr[ColorType] = js.undefined
+  var `status-ok`: js.UndefOr[ColorType] = js.undefined
+  var `status-unknown`: js.UndefOr[ColorType] = js.undefined
+  var `status-warning`: js.UndefOr[ColorType] = js.undefined
+  var text: js.UndefOr[ColorType] = js.undefined
+  var white: js.UndefOr[ColorType] = js.undefined
 }
 
 object Colors {
   @scala.inline
   def apply(
-    `accent-1`: ColorType,
-    `accent-2`: ColorType,
-    `accent-3`: ColorType,
-    `accent-4`: ColorType,
-    active: ColorType,
-    black: ColorType,
-    border: ColorType,
-    brand: ColorType,
-    control: ColorType,
-    `dark-1`: ColorType,
-    `dark-2`: ColorType,
-    `dark-3`: ColorType,
-    `dark-4`: String,
-    `dark-5`: ColorType,
-    `dark-6`: ColorType,
-    focus: ColorType,
-    icon: ColorType,
-    `light-1`: ColorType,
-    `light-2`: ColorType,
-    `light-3`: ColorType,
-    `light-4`: ColorType,
-    `light-5`: ColorType,
-    `light-6`: ColorType,
-    `neutral-1`: ColorType,
-    `neutral-2`: ColorType,
-    `neutral-3`: ColorType,
-    `neutral-4`: ColorType,
-    placeholder: ColorType,
-    selected: ColorType,
-    `status-critical`: ColorType,
-    `status-disabled`: ColorType,
-    `status-error`: ColorType,
-    `status-ok`: ColorType,
-    `status-unknown`: ColorType,
-    `status-warning`: ColorType,
-    text: ColorType,
-    white: ColorType
+    StringDictionary: /* x */ StringDictionary[ColorType] = null,
+    `accent-1`: ColorType = null,
+    `accent-2`: ColorType = null,
+    `accent-3`: ColorType = null,
+    `accent-4`: ColorType = null,
+    active: ColorType = null,
+    black: ColorType = null,
+    border: ColorType = null,
+    brand: ColorType = null,
+    control: ColorType = null,
+    `dark-1`: ColorType = null,
+    `dark-2`: ColorType = null,
+    `dark-3`: ColorType = null,
+    `dark-4`: String = null,
+    `dark-5`: ColorType = null,
+    `dark-6`: ColorType = null,
+    focus: ColorType = null,
+    icon: ColorType = null,
+    `light-1`: ColorType = null,
+    `light-2`: ColorType = null,
+    `light-3`: ColorType = null,
+    `light-4`: ColorType = null,
+    `light-5`: ColorType = null,
+    `light-6`: ColorType = null,
+    `neutral-1`: ColorType = null,
+    `neutral-2`: ColorType = null,
+    `neutral-3`: ColorType = null,
+    `neutral-4`: ColorType = null,
+    placeholder: ColorType = null,
+    selected: ColorType = null,
+    `status-critical`: ColorType = null,
+    `status-disabled`: ColorType = null,
+    `status-error`: ColorType = null,
+    `status-ok`: ColorType = null,
+    `status-unknown`: ColorType = null,
+    `status-warning`: ColorType = null,
+    text: ColorType = null,
+    white: ColorType = null
   ): Colors = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], black = black.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], brand = brand.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any])
-    __obj.updateDynamic("accent-1")(`accent-1`.asInstanceOf[js.Any])
-    __obj.updateDynamic("accent-2")(`accent-2`.asInstanceOf[js.Any])
-    __obj.updateDynamic("accent-3")(`accent-3`.asInstanceOf[js.Any])
-    __obj.updateDynamic("accent-4")(`accent-4`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dark-1")(`dark-1`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dark-2")(`dark-2`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dark-3")(`dark-3`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dark-4")(`dark-4`)
-    __obj.updateDynamic("dark-5")(`dark-5`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dark-6")(`dark-6`.asInstanceOf[js.Any])
-    __obj.updateDynamic("light-1")(`light-1`.asInstanceOf[js.Any])
-    __obj.updateDynamic("light-2")(`light-2`.asInstanceOf[js.Any])
-    __obj.updateDynamic("light-3")(`light-3`.asInstanceOf[js.Any])
-    __obj.updateDynamic("light-4")(`light-4`.asInstanceOf[js.Any])
-    __obj.updateDynamic("light-5")(`light-5`.asInstanceOf[js.Any])
-    __obj.updateDynamic("light-6")(`light-6`.asInstanceOf[js.Any])
-    __obj.updateDynamic("neutral-1")(`neutral-1`.asInstanceOf[js.Any])
-    __obj.updateDynamic("neutral-2")(`neutral-2`.asInstanceOf[js.Any])
-    __obj.updateDynamic("neutral-3")(`neutral-3`.asInstanceOf[js.Any])
-    __obj.updateDynamic("neutral-4")(`neutral-4`.asInstanceOf[js.Any])
-    __obj.updateDynamic("status-critical")(`status-critical`.asInstanceOf[js.Any])
-    __obj.updateDynamic("status-disabled")(`status-disabled`.asInstanceOf[js.Any])
-    __obj.updateDynamic("status-error")(`status-error`.asInstanceOf[js.Any])
-    __obj.updateDynamic("status-ok")(`status-ok`.asInstanceOf[js.Any])
-    __obj.updateDynamic("status-unknown")(`status-unknown`.asInstanceOf[js.Any])
-    __obj.updateDynamic("status-warning")(`status-warning`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`accent-1` != null) __obj.updateDynamic("accent-1")(`accent-1`.asInstanceOf[js.Any])
+    if (`accent-2` != null) __obj.updateDynamic("accent-2")(`accent-2`.asInstanceOf[js.Any])
+    if (`accent-3` != null) __obj.updateDynamic("accent-3")(`accent-3`.asInstanceOf[js.Any])
+    if (`accent-4` != null) __obj.updateDynamic("accent-4")(`accent-4`.asInstanceOf[js.Any])
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (black != null) __obj.updateDynamic("black")(black.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
+    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
+    if (`dark-1` != null) __obj.updateDynamic("dark-1")(`dark-1`.asInstanceOf[js.Any])
+    if (`dark-2` != null) __obj.updateDynamic("dark-2")(`dark-2`.asInstanceOf[js.Any])
+    if (`dark-3` != null) __obj.updateDynamic("dark-3")(`dark-3`.asInstanceOf[js.Any])
+    if (`dark-4` != null) __obj.updateDynamic("dark-4")(`dark-4`)
+    if (`dark-5` != null) __obj.updateDynamic("dark-5")(`dark-5`.asInstanceOf[js.Any])
+    if (`dark-6` != null) __obj.updateDynamic("dark-6")(`dark-6`.asInstanceOf[js.Any])
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (`light-1` != null) __obj.updateDynamic("light-1")(`light-1`.asInstanceOf[js.Any])
+    if (`light-2` != null) __obj.updateDynamic("light-2")(`light-2`.asInstanceOf[js.Any])
+    if (`light-3` != null) __obj.updateDynamic("light-3")(`light-3`.asInstanceOf[js.Any])
+    if (`light-4` != null) __obj.updateDynamic("light-4")(`light-4`.asInstanceOf[js.Any])
+    if (`light-5` != null) __obj.updateDynamic("light-5")(`light-5`.asInstanceOf[js.Any])
+    if (`light-6` != null) __obj.updateDynamic("light-6")(`light-6`.asInstanceOf[js.Any])
+    if (`neutral-1` != null) __obj.updateDynamic("neutral-1")(`neutral-1`.asInstanceOf[js.Any])
+    if (`neutral-2` != null) __obj.updateDynamic("neutral-2")(`neutral-2`.asInstanceOf[js.Any])
+    if (`neutral-3` != null) __obj.updateDynamic("neutral-3")(`neutral-3`.asInstanceOf[js.Any])
+    if (`neutral-4` != null) __obj.updateDynamic("neutral-4")(`neutral-4`.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (`status-critical` != null) __obj.updateDynamic("status-critical")(`status-critical`.asInstanceOf[js.Any])
+    if (`status-disabled` != null) __obj.updateDynamic("status-disabled")(`status-disabled`.asInstanceOf[js.Any])
+    if (`status-error` != null) __obj.updateDynamic("status-error")(`status-error`.asInstanceOf[js.Any])
+    if (`status-ok` != null) __obj.updateDynamic("status-ok")(`status-ok`.asInstanceOf[js.Any])
+    if (`status-unknown` != null) __obj.updateDynamic("status-unknown")(`status-unknown`.asInstanceOf[js.Any])
+    if (`status-warning` != null) __obj.updateDynamic("status-warning")(`status-warning`.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (white != null) __obj.updateDynamic("white")(white.asInstanceOf[js.Any])
     __obj.asInstanceOf[Colors]
   }
 }

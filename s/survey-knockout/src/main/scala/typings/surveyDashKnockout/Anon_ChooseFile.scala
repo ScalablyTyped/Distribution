@@ -19,6 +19,7 @@ trait Anon_ChooseFile extends js.Object {
   var removeFile: String
   var removeFileSvg: String
   var root: String
+  var wrapper: String
 }
 
 object Anon_ChooseFile {
@@ -37,9 +38,10 @@ object Anon_ChooseFile {
     removeButtonBottom: String,
     removeFile: String,
     removeFileSvg: String,
-    root: String
+    root: String,
+    wrapper: String
   ): Anon_ChooseFile = {
-    val __obj = js.Dynamic.literal(chooseFile = chooseFile, disabled = disabled, fileDecorator = fileDecorator, fileInput = fileInput, fileSign = fileSign, fileSignBottom = fileSignBottom, noFileChosen = noFileChosen, placeholderInput = placeholderInput, preview = preview, removeButton = removeButton, removeButtonBottom = removeButtonBottom, removeFile = removeFile, removeFileSvg = removeFileSvg, root = root)
+    val __obj = js.Dynamic.literal(chooseFile = chooseFile, disabled = disabled, fileDecorator = fileDecorator, fileInput = fileInput, fileSign = fileSign, fileSignBottom = fileSignBottom, noFileChosen = noFileChosen, placeholderInput = placeholderInput, preview = preview, removeButton = removeButton, removeButtonBottom = removeButtonBottom, removeFile = removeFile, removeFileSvg = removeFileSvg, root = root, wrapper = wrapper)
   
     __obj.asInstanceOf[Anon_ChooseFile]
   }

@@ -4,17 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait _RefType[T] extends js.Object {
+trait _RefType[Ref /* <: String */] extends js.Object {
   @JSName(" $refType")
-  var ` $refType`: T
+  var ` $refType`: Ref
 }
 
 object _RefType {
   @scala.inline
-  def apply[T](` $refType`: T): _RefType[T] = {
+  def apply[Ref /* <: String */](` $refType`: Ref): _RefType[Ref] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic(" $refType")(` $refType`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_RefType[T]]
+    __obj.asInstanceOf[_RefType[Ref]]
   }
 }
 

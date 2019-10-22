@@ -5,16 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Computer extends js.Object {
-  var computer: String
-  var phone: String
-  var tablet: String
+  var computer: js.UndefOr[String] = js.undefined
+  var phone: js.UndefOr[String] = js.undefined
+  var tablet: js.UndefOr[String] = js.undefined
 }
 
 object Anon_Computer {
   @scala.inline
-  def apply(computer: String, phone: String, tablet: String): Anon_Computer = {
-    val __obj = js.Dynamic.literal(computer = computer, phone = phone, tablet = tablet)
-  
+  def apply(computer: String = null, phone: String = null, tablet: String = null): Anon_Computer = {
+    val __obj = js.Dynamic.literal()
+    if (computer != null) __obj.updateDynamic("computer")(computer)
+    if (phone != null) __obj.updateDynamic("phone")(phone)
+    if (tablet != null) __obj.updateDynamic("tablet")(tablet)
     __obj.asInstanceOf[Anon_Computer]
   }
 }

@@ -16,6 +16,7 @@ class Suggestions[T] protected () extends BaseComponent[ISuggestionsProps[T], IS
   var _classNames: js.Any = js.native
   var _forceResolve: js.Any = js.native
   var _forceResolveButton: RefObject[IButton] = js.native
+  var _getAlertText: js.Any = js.native
   var _getMoreResults: js.Any = js.native
   var _onClickTypedSuggestionsItem: js.Any = js.native
   var _onRemoveTypedSuggestionsItem: js.Any = js.native

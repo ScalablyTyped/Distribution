@@ -11,6 +11,7 @@ import typings.grommet.utilsMod._FillType
 import typings.grommet.utilsMod._GapType
 import typings.grommet.utilsMod._MarginType
 import typings.grommet.utilsMod._OpacityType
+import typings.grommet.utilsMod._PadType
 import typings.grommet.utilsMod._PolymorphicType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -100,6 +101,9 @@ object grommetStrings {
   
   @js.native
   sealed trait abbr extends _PolymorphicType
+  
+  @js.native
+  sealed trait `accent-1` extends js.Object
   
   @js.native
   sealed trait address extends _PolymorphicType
@@ -548,6 +552,9 @@ object grommetStrings {
   sealed trait `keep-all` extends js.Object
   
   @js.native
+  sealed trait key extends js.Object
+  
+  @js.native
   sealed trait keygen extends _PolymorphicType
   
   @js.native
@@ -557,6 +564,7 @@ object grommetStrings {
   sealed trait large
     extends _GapType
        with _MarginType
+       with _PadType
        with _SizeType
   
   @js.native
@@ -603,6 +611,7 @@ object grommetStrings {
     extends _GapType
        with _MarginType
        with _OpacityType
+       with _PadType
        with _SizeType
   
   @js.native
@@ -648,6 +657,7 @@ object grommetStrings {
   sealed trait none
     extends _GapType
        with _MarginType
+       with _PadType
   
   @js.native
   sealed trait normal extends js.Object
@@ -737,6 +747,9 @@ object grommetStrings {
   sealed trait rectilinear extends js.Object
   
   @js.native
+  sealed trait ref extends js.Object
+  
+  @js.native
   sealed trait repeat extends js.Object
   
   @js.native
@@ -821,6 +834,7 @@ object grommetStrings {
   sealed trait small
     extends _GapType
        with _MarginType
+       with _PadType
        with _PolymorphicType
        with _SizeType
   
@@ -978,12 +992,14 @@ object grommetStrings {
   sealed trait xlarge
     extends _GapType
        with _MarginType
+       with _PadType
        with _SizeType
   
   @js.native
   sealed trait xsmall
     extends _GapType
        with _MarginType
+       with _PadType
        with _SizeType
   
   @js.native
@@ -993,6 +1009,7 @@ object grommetStrings {
   sealed trait xxsmall
     extends _GapType
        with _MarginType
+       with _PadType
   
   @js.native
   sealed trait zoomIn extends js.Object
@@ -1056,6 +1073,8 @@ object grommetStrings {
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
+  @scala.inline
+  def `accent-1`: `accent-1` = "accent-1".asInstanceOf[`accent-1`]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
   @scala.inline
@@ -1349,6 +1368,8 @@ object grommetStrings {
   @scala.inline
   def `keep-all`: `keep-all` = "keep-all".asInstanceOf[`keep-all`]
   @scala.inline
+  def key: key = "key".asInstanceOf[key]
+  @scala.inline
   def keygen: keygen = "keygen".asInstanceOf[keygen]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
@@ -1468,6 +1489,8 @@ object grommetStrings {
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
   def rectilinear: rectilinear = "rectilinear".asInstanceOf[rectilinear]
+  @scala.inline
+  def ref: ref = "ref".asInstanceOf[ref]
   @scala.inline
   def repeat: repeat = "repeat".asInstanceOf[repeat]
   @scala.inline

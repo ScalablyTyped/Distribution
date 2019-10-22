@@ -194,7 +194,8 @@ object distTypesComponentsMod extends js.Object {
   }
   
   @js.native
-  class IonTabs protected () extends Anon_CallbackContext {
+  class IonTabs protected ()
+    extends typings.atIonicReact.distTypesComponentsNavigationIonTabsMod.IonTabs {
     def this(props: typings.atIonicReact.distTypesComponentsNavigationIonTabsMod.Props) = this()
   }
   
@@ -765,14 +766,10 @@ object distTypesComponentsMod extends js.Object {
     val displayName: String = js.native
   }
   
+  /* static members */
   @js.native
-  object IonTabs
-    extends Instantiable1[
-          /* props */ typings.atIonicReact.distTypesComponentsNavigationIonTabsMod.Props, 
-          Anon_CallbackContext
-        ] {
+  object IonTabs extends js.Object {
     val contextType: Context[NavContextState] = js.native
-    val displayName: String = js.native
   }
   
   @js.native

@@ -5,32 +5,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_HairLarge extends js.Object {
-  var hair: String
-  var large: String
-  var medium: String
-  var none: String
-  var responsiveBreakpoint: String
-  var small: String
-  var xlarge: String
-  var xsmall: String
-  var xxsmall: String
+  var hair: js.UndefOr[String] = js.undefined
+  var large: js.UndefOr[String] = js.undefined
+  var medium: js.UndefOr[String] = js.undefined
+  var none: js.UndefOr[String] = js.undefined
+  var responsiveBreakpoint: js.UndefOr[String] = js.undefined
+  var small: js.UndefOr[String] = js.undefined
+  var xlarge: js.UndefOr[String] = js.undefined
+  var xsmall: js.UndefOr[String] = js.undefined
+  var xxsmall: js.UndefOr[String] = js.undefined
 }
 
 object Anon_HairLarge {
   @scala.inline
   def apply(
-    hair: String,
-    large: String,
-    medium: String,
-    none: String,
-    responsiveBreakpoint: String,
-    small: String,
-    xlarge: String,
-    xsmall: String,
-    xxsmall: String
+    hair: String = null,
+    large: String = null,
+    medium: String = null,
+    none: String = null,
+    responsiveBreakpoint: String = null,
+    small: String = null,
+    xlarge: String = null,
+    xsmall: String = null,
+    xxsmall: String = null
   ): Anon_HairLarge = {
-    val __obj = js.Dynamic.literal(hair = hair, large = large, medium = medium, none = none, responsiveBreakpoint = responsiveBreakpoint, small = small, xlarge = xlarge, xsmall = xsmall, xxsmall = xxsmall)
-  
+    val __obj = js.Dynamic.literal()
+    if (hair != null) __obj.updateDynamic("hair")(hair)
+    if (large != null) __obj.updateDynamic("large")(large)
+    if (medium != null) __obj.updateDynamic("medium")(medium)
+    if (none != null) __obj.updateDynamic("none")(none)
+    if (responsiveBreakpoint != null) __obj.updateDynamic("responsiveBreakpoint")(responsiveBreakpoint)
+    if (small != null) __obj.updateDynamic("small")(small)
+    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge)
+    if (xsmall != null) __obj.updateDynamic("xsmall")(xsmall)
+    if (xxsmall != null) __obj.updateDynamic("xxsmall")(xxsmall)
     __obj.asInstanceOf[Anon_HairLarge]
   }
 }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mongorito"
-version := "3.0-dt-20191003Z-734695"
+version := "3.0-dt-20191003Z-38c9a3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-000985",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-04ea06",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-65e60f",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-dd98ca",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

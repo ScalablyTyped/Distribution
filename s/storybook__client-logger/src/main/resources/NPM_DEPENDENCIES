@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/client-logger" : "5.2.4"
+      "@storybook/client-logger" : "5.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/client-logger" : "5.2.4"
+      "@storybook/client-logger" : "5.2.5"
     }
   ],
   "compile-devDependencies" : [

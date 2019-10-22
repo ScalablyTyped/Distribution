@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sizeme"
-version := "2.6.8-80666f"
+version := "2.6.10-861a15"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

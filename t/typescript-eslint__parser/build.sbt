@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typescript-eslint__parser"
-version := "2.4.0-159d2b"
+version := "2.5.0-806b57"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190717Z-94fac0",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "typescript" % "3.6.4-42c38b",
-  "org.scalablytyped" %%% "typescript-eslint__experimental-utils" % "2.4.0-2fb60e",
-  "org.scalablytyped" %%% "typescript-eslint__typescript-estree" % "2.4.0-831c2c")
+  "org.scalablytyped" %%% "typescript-eslint__experimental-utils" % "2.5.0-ff69a0",
+  "org.scalablytyped" %%% "typescript-eslint__typescript-estree" % "2.5.0-ef76a0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SizeMeProps extends js.Object {
-  var size: Anon_Height
+  val size: Anon_Height
 }
 
 object SizeMeProps {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-centered"
-version := "5.2.4-1f72f2"
+version := "5.2.5-0d3791"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

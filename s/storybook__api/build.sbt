@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__api"
-version := "5.2.4-3d5cd8"
+version := "5.2.5-cb8130"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,9 +17,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-fffe4e",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "storybook__channels" % "5.2.4-24df06",
-  "org.scalablytyped" %%% "storybook__router" % "5.2.4-ecfe0c",
-  "org.scalablytyped" %%% "storybook__theming" % "5.2.4-a6d77f")
+  "org.scalablytyped" %%% "storybook__channels" % "5.2.5-6a808a",
+  "org.scalablytyped" %%% "storybook__router" % "5.2.5-012707",
+  "org.scalablytyped" %%% "storybook__theming" % "5.2.5-ac19e8")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

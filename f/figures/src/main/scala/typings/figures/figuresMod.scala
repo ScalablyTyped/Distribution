@@ -35,6 +35,7 @@ object figuresMod extends js.Object {
   val info: String = js.native
   val line: String = js.native
   val mustache: String = js.native
+  val nodejs: String = js.native
   val oneEighth: String = js.native
   val oneFifth: String = js.native
   val oneHalf: String = js.native

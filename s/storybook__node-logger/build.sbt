@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "storybook__node-logger"
-version := "5.2.4-7af4e9"
+version := "5.2.5-ff88ff"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "chalk" % "2.4.2-0dac4f",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
-  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20190626Z-6a28fc",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
+  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20190626Z-c8b5c8",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "commercetools__enzyme-extensions"
-version := "3.0-dt-20190219Z-05a1a2"
+version := "3.0-dt-20190219Z-d1116d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-ac18a1",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-15b381",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-95449e",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-fb63eb",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")

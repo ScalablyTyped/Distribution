@@ -31,24 +31,24 @@ object componentIconDotServiceMod extends js.Object {
       */
     var _assetsUrlRoot: String = js.native
     var _document: js.Any = js.native
-    /** Record if a handler is registered. */
+    /** A flag indicates whether jsonp loading is enabled. */
     var _enableJsonpLoading: js.Any = js.native
     var _handler: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HttpBackend */ js.Any = js.native
     var _http: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HttpClient */ js.Any = js.native
     var _inProgressFetches: Map[String, Observable[IconDefinition | Null]] = js.native
     @JSName("_jsonpIconLoad$")
-    var _jsonpIconLoad$: js.Any = js.native
+    val _jsonpIconLoad$: js.Any = js.native
     var _renderer: Renderer2 = js.native
     var _rendererFactory: RendererFactory2 = js.native
     /**
       * All icon definitions would be registered here.
       */
-    var _svgDefinitions: Map[String, IconDefinition] = js.native
+    val _svgDefinitions: Map[String, IconDefinition] = js.native
     /**
       * Cache all rendered icons. Icons are identified by name, theme,
       * and for twotone icons, primary color and secondary color.
       */
-    var _svgRenderedDefinitions: Map[String, CachedIconDefinition] = js.native
+    val _svgRenderedDefinitions: Map[String, CachedIconDefinition] = js.native
     var _twoToneColorPalette: TwoToneColorPalette = js.native
     var defaultTheme: ThemeType = js.native
     var sanitizer: DomSanitizer = js.native

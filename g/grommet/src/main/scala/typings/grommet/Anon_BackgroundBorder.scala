@@ -6,17 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BackgroundBorder extends js.Object {
-  var background: BackgroundType
-  var border: Anon_Radius
-  var shadowSize: String
-  var zIndex: String
+  var background: js.UndefOr[BackgroundType] = js.undefined
+  var border: js.UndefOr[Anon_Radius] = js.undefined
+  var shadowSize: js.UndefOr[String] = js.undefined
+  var zIndex: js.UndefOr[String] = js.undefined
 }
 
 object Anon_BackgroundBorder {
   @scala.inline
-  def apply(background: BackgroundType, border: Anon_Radius, shadowSize: String, zIndex: String): Anon_BackgroundBorder = {
-    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], border = border, shadowSize = shadowSize, zIndex = zIndex)
-  
+  def apply(
+    background: BackgroundType = null,
+    border: Anon_Radius = null,
+    shadowSize: String = null,
+    zIndex: String = null
+  ): Anon_BackgroundBorder = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (shadowSize != null) __obj.updateDynamic("shadowSize")(shadowSize)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
     __obj.asInstanceOf[Anon_BackgroundBorder]
   }
 }

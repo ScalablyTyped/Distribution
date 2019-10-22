@@ -1,19 +1,23 @@
 package typings.grommet
 
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Collapse extends js.Object {
-  var collapse: js.Any
-  var expand: js.Any
+  var collapse: js.UndefOr[js.Any] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
+  var expand: js.UndefOr[js.Any] = js.undefined
 }
 
 object Anon_Collapse {
   @scala.inline
-  def apply(collapse: js.Any, expand: js.Any): Anon_Collapse = {
-    val __obj = js.Dynamic.literal(collapse = collapse, expand = expand)
-  
+  def apply(collapse: js.Any = null, color: ColorType = null, expand: js.Any = null): Anon_Collapse = {
+    val __obj = js.Dynamic.literal()
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand)
     __obj.asInstanceOf[Anon_Collapse]
   }
 }

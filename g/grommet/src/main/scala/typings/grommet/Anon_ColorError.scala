@@ -6,17 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ColorError extends js.Object {
-  var color: ColorType
-  var error: Anon_ColorColorType
-  var position: String
-  var side: String
+  var color: js.UndefOr[ColorType] = js.undefined
+  var error: js.UndefOr[Anon_ColorColorType] = js.undefined
+  var position: js.UndefOr[String] = js.undefined
+  var side: js.UndefOr[String] = js.undefined
 }
 
 object Anon_ColorError {
   @scala.inline
-  def apply(color: ColorType, error: Anon_ColorColorType, position: String, side: String): Anon_ColorError = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], error = error, position = position, side = side)
-  
+  def apply(
+    color: ColorType = null,
+    error: Anon_ColorColorType = null,
+    position: String = null,
+    side: String = null
+  ): Anon_ColorError = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (side != null) __obj.updateDynamic("side")(side)
     __obj.asInstanceOf[Anon_ColorError]
   }
 }

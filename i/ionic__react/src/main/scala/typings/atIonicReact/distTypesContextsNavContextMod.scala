@@ -4,8 +4,6 @@ import typings.atIonicReact.atIonicReactStrings.none
 import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
 import typings.react.reactMod.Context
 import typings.std.HTMLElement
-import typings.std.History
-import typings.std.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +14,6 @@ object distTypesContextsNavContextMod extends js.Object {
   @js.native
   trait NavContextState extends js.Object {
     var currentPath: js.UndefOr[String] = js.native
-    def getHistory(): History = js.native
-    def getLocation(): Location = js.native
     def getPageManager(): js.Any = js.native
     def getStackManager(): js.Any = js.native
     def goBack(): Unit = js.native

@@ -33,6 +33,9 @@ object relayDashRuntimeStrings {
   sealed trait Fragment extends js.Object
   
   @js.native
+  sealed trait FragmentRefs extends js.Object
+  
+  @js.native
   sealed trait FragmentSpread extends js.Object
   
   @js.native
@@ -189,6 +192,8 @@ object relayDashRuntimeStrings {
   def EXISTENT: EXISTENT = "EXISTENT".asInstanceOf[EXISTENT]
   @scala.inline
   def Fragment: Fragment = "Fragment".asInstanceOf[Fragment]
+  @scala.inline
+  def FragmentRefs: FragmentRefs = "FragmentRefs".asInstanceOf[FragmentRefs]
   @scala.inline
   def FragmentSpread: FragmentSpread = "FragmentSpread".asInstanceOf[FragmentSpread]
   @scala.inline

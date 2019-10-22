@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-datepicker"
-version := "2.9-dt-20191008Z-8541af"
+version := "2.9-dt-20191008Z-583bf5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "date-fns" % "2.5.1-b92f77",
+  "org.scalablytyped" %%% "date-fns" % "2.6.0-0ece73",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-91a4b3",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",

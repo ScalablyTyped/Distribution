@@ -14,7 +14,7 @@ class QuestionExpressionModel protected () extends Question {
     */
   var currency: String = js.native
   /**
-    * You may set this property to "decimal", "currency" or "percent". If you set it to "currency", you may use the currency property to display the value in currency different from USD.
+    * You may set this property to "decimal", "currency", "percent" or "date". If you set it to "currency", you may use the currency property to display the value in currency different from USD.
     * @see currency
     */
   var displayStyle: String = js.native

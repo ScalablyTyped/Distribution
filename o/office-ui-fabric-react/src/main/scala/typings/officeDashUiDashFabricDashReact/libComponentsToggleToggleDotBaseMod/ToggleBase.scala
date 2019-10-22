@@ -3,6 +3,7 @@ package typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleDotBase
 import typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleDotTypesMod.IToggle
 import typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleDotTypesMod.IToggleProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,6 +30,6 @@ class ToggleBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/Toggle/Toggle.base", "ToggleBase")
 @js.native
 object ToggleBase extends js.Object {
-  def getDerivedStateFromProps(props: IToggleProps, state: IToggleState): IToggleState = js.native
+  def getDerivedStateFromProps(nextProps: IToggleProps, prevState: IToggleState): Partial[IToggleState] | Null = js.native
 }
 

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "i18next-xhr-backend"
-version := "3.2.0-25fd43"
+version := "3.2.0-2d90f6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "i18next" % "17.2.0-e5d68f",
+  "org.scalablytyped" %%% "i18next" % "17.3.0-778b7e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

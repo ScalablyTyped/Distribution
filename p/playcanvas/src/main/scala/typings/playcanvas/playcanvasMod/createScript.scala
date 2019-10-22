@@ -11,7 +11,7 @@ object createScript extends js.Object {
     * @static
     * @function
     * @name pc.createScript
-    * @description Method to create named {@link ScriptType}.
+    * @description Method to create named {@link pc.ScriptType}.
     * It returns new function (class) "Script Type", which is auto-registered to {@link pc.ScriptRegistry} using it's name.
     * This is the main interface to create Script Types, to define custom logic using JavaScript, that is used to create interaction for entities.
     * @param {String} name unique Name of a Script Type.
@@ -21,7 +21,7 @@ object createScript extends js.Object {
     * system, entity, create, destroy, swap, move, scripts, onEnable, onDisable, onPostStateChange, has, on, off, fire, once, hasEvent
     * @param {pc.Application} [app] Optional application handler, to choose which {@link pc.ScriptRegistry} to add a script to.
     * By default it will use `pc.Application.getApplication()` to get current {@link pc.Application}.
-    * @returns {Function} The constructor of a {@link ScriptType}, which the developer is meant to extend by adding attributes and prototype methods.
+    * @returns {pc.ScriptType} The constructor of a {@link pc.ScriptType}, which the developer is meant to extend by adding attributes and prototype methods.
     * @example
     * var Turning = pc.createScript('turn');
     *
@@ -37,7 +37,7 @@ object createScript extends js.Object {
     *     this.entity.rotate(0, this.speed * dt, 0);
     * };
     */
-  def apply(name: String): js.Function1[/* repeated */ js.Any, _] = js.native
-  def apply(name: String, app: typings.playcanvas.pc.Application): js.Function1[/* repeated */ js.Any, _] = js.native
+  def apply(name: String): typings.playcanvas.pc.ScriptType = js.native
+  def apply(name: String, app: typings.playcanvas.pc.Application): typings.playcanvas.pc.ScriptType = js.native
 }
 

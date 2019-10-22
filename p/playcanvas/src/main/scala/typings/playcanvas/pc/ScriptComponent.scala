@@ -1,7 +1,6 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.Anon_AttributesEnabled
-import typings.playcanvas.ScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation._
   * to be executed with access to the Entity. For more details on scripting see <a href="//developer.playcanvas.com/user-manual/scripting/">Scripting</a>.
   * @param {pc.ScriptComponentSystem} system The ComponentSystem that created this Component
   * @param {pc.Entity} entity The Entity that this Component is attached to.
-  * @property {ScriptType[]} scripts An array of all script instances attached to an entity. This Array shall not be modified by developer.
+  * @property {pc.ScriptType[]} scripts An array of all script instances attached to an entity. This Array shall not be modified by developer.
   */
 @JSGlobal("pc.ScriptComponent")
 @js.native
@@ -28,14 +27,14 @@ class ScriptComponent protected () extends Component {
   /**
     * @function
     * @name pc.ScriptComponent#create
-    * @description Create a script instance using name of a {@link ScriptType} and attach to an entity script component.
-    * @param {String} name The name of the Script Type
+    * @description Create a script instance using name of a {@link pc.ScriptType} and attach to an entity script component.
+    * @param {String|pc.ScriptType} name The name of the Script Type (or alternatively the {@link pc.ScriptType} to instantiate)
     * @param {Object} [args] Object with arguments for a script
     * @param {Boolean} [args.enabled] if script instance is enabled after creation
     * @param {Object} [args.attributes] Object with values for attributes, where key is name of an attribute
-    * @returns {ScriptType} Returns an instance of a {@link ScriptType} if successfully attached to an entity,
+    * @returns {pc.ScriptType} Returns an instance of a {@link pc.ScriptType} if successfully attached to an entity,
     * or null if it failed because a script with a same name has already been added
-    * or if the {@link ScriptType} cannot be found by name in the {@link pc.ScriptRegistry}.
+    * or if the {@link pc.ScriptType} cannot be found by name in the {@link pc.ScriptRegistry}.
     * @example
     * entity.script.create('playerController', {
     *     attributes: {
@@ -45,6 +44,8 @@ class ScriptComponent protected () extends Component {
     */
   def create(name: String): ScriptType = js.native
   def create(name: String, args: Anon_AttributesEnabled): ScriptType = js.native
+  def create(name: ScriptType): ScriptType = js.native
+  def create(name: ScriptType, args: Anon_AttributesEnabled): ScriptType = js.native
   /**
     * @function
     * @name pc.ScriptComponent#destroy
@@ -58,7 +59,7 @@ class ScriptComponent protected () extends Component {
   /**
     * @function
     * @name pc.ScriptComponent#has
-    * @description Detect if script is attached to an entity using name of {@link ScriptType}.
+    * @description Detect if script is attached to an entity using name of {@link pc.ScriptType}.
     * @param {String} name The name of the Script Type
     * @returns {Boolean} If script is attached to an entity
     * @example

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-actions"
-version := "5.2.4-cf3ec8"
+version := "5.2.5-807b2b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

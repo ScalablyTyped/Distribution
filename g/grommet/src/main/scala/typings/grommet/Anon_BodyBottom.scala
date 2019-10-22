@@ -12,10 +12,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BodyBottom extends js.Object {
-  var body: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom] = js.undefined
+  var body: js.UndefOr[
+    none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BottomHorizontal
+  ] = js.undefined
   var bottom: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
-  var footer: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom] = js.undefined
-  var header: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom] = js.undefined
+  var footer: js.UndefOr[
+    none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BottomHorizontal
+  ] = js.undefined
+  var header: js.UndefOr[
+    none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BottomHorizontal
+  ] = js.undefined
   var horizontal: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
   var left: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
   var right: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | String] = js.undefined
@@ -26,10 +32,10 @@ trait Anon_BodyBottom extends js.Object {
 object Anon_BodyBottom {
   @scala.inline
   def apply(
-    body: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom = null,
+    body: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BottomHorizontal = null,
     bottom: xxsmall | xsmall | small | medium | large | xlarge | String = null,
-    footer: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom = null,
-    header: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom = null,
+    footer: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BottomHorizontal = null,
+    header: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BottomHorizontal = null,
     horizontal: xxsmall | xsmall | small | medium | large | xlarge | String = null,
     left: xxsmall | xsmall | small | medium | large | xlarge | String = null,
     right: xxsmall | xsmall | small | medium | large | xlarge | String = null,

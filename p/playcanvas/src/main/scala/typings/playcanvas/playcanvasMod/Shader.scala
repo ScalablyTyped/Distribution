@@ -22,8 +22,7 @@ import scala.scalajs.js.annotation._
   * shader.
   * @param {String} definition.vshader Vertex shader source (GLSL code).
   * @param {String} definition.fshader Fragment shader source (GLSL code).
-  * @param {Boolean} definition.useTransformFeedback Specifies that this shader outputs post-VS data to a buffer
-  * @param {Object} precache Triggers imediate link.
+  * @param {Boolean} definition.useTransformFeedback Specifies that this shader outputs post-VS data to a buffer.
   * @example
   * // Create a shader that renders primitives with a solid red color
   * var shaderDefinition = {
@@ -54,10 +53,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Shader protected ()
   extends typings.playcanvas.pc.Shader {
-  def this(
-    graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
-    definition: Anon_Attributes,
-    precache: js.Any
-  ) = this()
+  def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, definition: Anon_Attributes) = this()
 }
 

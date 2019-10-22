@@ -2,7 +2,6 @@ package typings.grommet.componentsBoxMod
 
 import typings.grommet.Anon_Auto
 import typings.grommet.Anon_Bottom
-import typings.grommet.Anon_BottomBottomleft
 import typings.grommet.Anon_Color
 import typings.grommet.Anon_Delay
 import typings.grommet.Anon_Grow
@@ -60,6 +59,7 @@ import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
+import typings.grommet.utilsMod.PadType
 import typings.grommet.utilsMod.PolymorphicType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -93,11 +93,9 @@ trait BoxProps extends js.Object {
   var justify: js.UndefOr[around | between | center | end | evenly | start | stretch] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var overflow: js.UndefOr[auto | hidden | scroll | visible | Anon_Auto | String] = js.undefined
-  var pad: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String] = js.undefined
+  var pad: js.UndefOr[PadType] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
-  var round: js.UndefOr[
-    Boolean | xsmall | small | medium | large | xlarge | full | String | Anon_BottomBottomleft
-  ] = js.undefined
+  var round: js.UndefOr[Boolean | xsmall | small | medium | large | xlarge | full | String | Anon_Bottom] = js.undefined
   var tag: js.UndefOr[PolymorphicType] = js.undefined
   var width: js.UndefOr[
     xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large
@@ -129,9 +127,9 @@ object BoxProps {
     justify: around | between | center | end | evenly | start | stretch = null,
     margin: MarginType = null,
     overflow: auto | hidden | scroll | visible | Anon_Auto | String = null,
-    pad: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_Bottom | String = null,
+    pad: PadType = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
-    round: Boolean | xsmall | small | medium | large | xlarge | full | String | Anon_BottomBottomleft = null,
+    round: Boolean | xsmall | small | medium | large | xlarge | full | String | Anon_Bottom = null,
     tag: PolymorphicType = null,
     width: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large = null,
     wrap: Boolean | reverse = null

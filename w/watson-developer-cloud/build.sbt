@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "watson-developer-cloud"
-version := "4.0.1-6d442a"
+version := "4.0.1-a7e237"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "axios" % "0.19.0-c1d62b",
-  "org.scalablytyped" %%% "ibm-cloud-sdk-core" % "0.1.2-6833ac",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "ibm-cloud-sdk-core" % "0.1.2-f0888c",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

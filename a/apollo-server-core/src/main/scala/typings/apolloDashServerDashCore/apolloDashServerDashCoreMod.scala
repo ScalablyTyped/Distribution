@@ -30,7 +30,7 @@ object apolloDashServerDashCoreMod extends js.Object {
     extends typings.apolloDashServerDashErrors.apolloDashServerDashErrorsMod.ApolloError {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
-    def this(message: String, code: String, properties: Record[String, _]) = this()
+    def this(message: String, code: String, extensions: Record[String, _]) = this()
   }
   
   @js.native

@@ -902,6 +902,8 @@ object atIonicReactComponents extends atIonicReactProps {
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabButtonElement]]]
   @scala.inline
+  def IonTabs: ComponentType[IonTabsProps] = js.constructorOf[typings.atIonicReact.atIonicReactMod.IonTabs].asInstanceOf[typings.react.reactMod.ComponentType[IonTabsProps]]
+  @scala.inline
   def IonText: ComponentType[
     (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonText */ js.Any) with (Pick[
       HTMLAttributes[HTMLIonTextElement], 

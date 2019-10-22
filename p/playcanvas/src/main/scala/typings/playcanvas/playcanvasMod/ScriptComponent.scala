@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * to be executed with access to the Entity. For more details on scripting see <a href="//developer.playcanvas.com/user-manual/scripting/">Scripting</a>.
   * @param {pc.ScriptComponentSystem} system The ComponentSystem that created this Component
   * @param {pc.Entity} entity The Entity that this Component is attached to.
-  * @property {ScriptType[]} scripts An array of all script instances attached to an entity. This Array shall not be modified by developer.
+  * @property {pc.ScriptType[]} scripts An array of all script instances attached to an entity. This Array shall not be modified by developer.
   */
 @JSImport("playcanvas", "ScriptComponent")
 @js.native

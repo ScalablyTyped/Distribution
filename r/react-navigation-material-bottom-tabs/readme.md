@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation-material-bottom-tabs
 
-Typings are for version 0.3
+Typings are for version 2.1.3
 
 ## Library description:
 Material Bottom Tab Navigation component for React Navigation
@@ -24,7 +24,7 @@ Material Bottom Tab Navigation component for React Navigation
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "primereact" : "3.3.1"
+      "primereact" : "3.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "primereact" : "3.3.1"
+      "primereact" : "3.3.2"
     }
   ],
   "compile-devDependencies" : [

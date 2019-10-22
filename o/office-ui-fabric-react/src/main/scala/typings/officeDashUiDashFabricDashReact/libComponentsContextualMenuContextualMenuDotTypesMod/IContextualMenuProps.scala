@@ -14,13 +14,13 @@ import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContex
 import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.IFocusZoneProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.IWithResponsiveModeState
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
+import typings.react.Element
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.StatelessComponent
-import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js
@@ -157,7 +157,11 @@ trait IContextualMenuProps
     * submenus will be dismissed.
     */
   var onDismiss: js.UndefOr[
-    js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit]
+    js.Function2[
+      /* ev */ js.UndefOr[(MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element]], 
+      /* dismissAll */ js.UndefOr[Boolean], 
+      Unit
+    ]
   ] = js.undefined
   /**
     * Click handler which is invoked if `onClick` is not passed for individual contextual
@@ -266,12 +270,22 @@ object IContextualMenuProps {
     isBeakVisible: js.UndefOr[Boolean] = js.undefined,
     isSubMenu: js.UndefOr[Boolean] = js.undefined,
     labelElementId: String = null,
-    onDismiss: (/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean]) => Unit = null,
+    onDismiss: (/* ev */ js.UndefOr[(MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element]], /* dismissAll */ js.UndefOr[Boolean]) => Unit = null,
     onItemClick: (/* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], /* item */ js.UndefOr[IContextualMenuItem]) => Boolean | Unit = null,
     onMenuDismissed: /* contextualMenu */ js.UndefOr[IContextualMenuProps] => Unit = null,
     onMenuOpened: /* contextualMenu */ js.UndefOr[IContextualMenuProps] => Unit = null,
-    onRenderMenuList: (/* props */ js.UndefOr[IContextualMenuListProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IContextualMenuListProps], Element | Null]]) => Element | Null = null,
-    onRenderSubMenu: (/* props */ js.UndefOr[IContextualMenuProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IContextualMenuProps], Element | Null]]) => Element | Null = null,
+    onRenderMenuList: (/* props */ js.UndefOr[IContextualMenuListProps], /* defaultRender */ js.UndefOr[
+      js.Function1[
+        /* props */ js.UndefOr[IContextualMenuListProps], 
+        typings.react.reactMod._Global_.JSX.Element | Null
+      ]
+    ]) => typings.react.reactMod._Global_.JSX.Element | Null = null,
+    onRenderSubMenu: (/* props */ js.UndefOr[IContextualMenuProps], /* defaultRender */ js.UndefOr[
+      js.Function1[
+        /* props */ js.UndefOr[IContextualMenuProps], 
+        typings.react.reactMod._Global_.JSX.Element | Null
+      ]
+    ]) => typings.react.reactMod._Global_.JSX.Element | Null = null,
     responsiveMode: ResponsiveMode = null,
     shouldFocusOnContainer: js.UndefOr[Boolean] = js.undefined,
     shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined,

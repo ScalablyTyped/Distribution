@@ -1,7 +1,6 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.Anon_Array
-import typings.playcanvas.ScriptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   * @name pc.ScriptAttributes
-  * @classdesc Container of Script Attribute definitions. Implements an interface to add/remove attributes and store their definition for a {@link ScriptType}.
-  * Note: An instance of pc.ScriptAttributes is created automatically by each {@link ScriptType}.
-  * @param {ScriptType} scriptType Script Type that attributes relate to.
+  * @classdesc Container of Script Attribute definitions. Implements an interface to add/remove attributes and store their definition for a {@link pc.ScriptType}.
+  * Note: An instance of pc.ScriptAttributes is created automatically by each {@link pc.ScriptType}.
+  * @param {pc.ScriptType} scriptType Script Type that attributes relate to.
   */
 @JSGlobal("pc.ScriptAttributes")
 @js.native

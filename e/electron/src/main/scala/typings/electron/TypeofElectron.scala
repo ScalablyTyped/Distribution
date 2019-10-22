@@ -9,6 +9,7 @@ import typings.electron.Electron.BrowserWindowProxy
 import typings.electron.Electron.ClientRequest
 import typings.electron.Electron.Clipboard
 import typings.electron.Electron.ContentTracing
+import typings.electron.Electron.ContextBridge
 import typings.electron.Electron.Cookies
 import typings.electron.Electron.CrashReporter
 import typings.electron.Electron.Debugger
@@ -133,6 +134,7 @@ trait TypeofElectron extends js.Object {
   val autoUpdater: AutoUpdater
   val clipboard: Clipboard
   val contentTracing: ContentTracing
+  val contextBridge: ContextBridge
   val crashReporter: CrashReporter
   val desktopCapturer: DesktopCapturer
   val dialog: Dialog
@@ -191,6 +193,7 @@ object TypeofElectron {
     autoUpdater: AutoUpdater,
     clipboard: Clipboard,
     contentTracing: ContentTracing,
+    contextBridge: ContextBridge,
     crashReporter: CrashReporter,
     desktopCapturer: DesktopCapturer,
     dialog: Dialog,
@@ -210,7 +213,7 @@ object TypeofElectron {
     webFrame: WebFrame,
     webviewTag: WebviewTag
   ): TypeofElectron = {
-    val __obj = js.Dynamic.literal(Accelerator = Accelerator, BrowserView = BrowserView, BrowserWindow = BrowserWindow, BrowserWindowProxy = BrowserWindowProxy, ClientRequest = ClientRequest, Cookies = Cookies, Debugger = Debugger, DownloadItem = DownloadItem, EventEmitter = EventEmitter, IncomingMessage = IncomingMessage, Menu = Menu, MenuItem = MenuItem, NativeImage = NativeImage, Notification = Notification, Session = Session, TouchBar = TouchBar, TouchBarButton = TouchBarButton, TouchBarColorPicker = TouchBarColorPicker, TouchBarGroup = TouchBarGroup, TouchBarLabel = TouchBarLabel, TouchBarPopover = TouchBarPopover, TouchBarScrubber = TouchBarScrubber, TouchBarSegmentedControl = TouchBarSegmentedControl, TouchBarSlider = TouchBarSlider, TouchBarSpacer = TouchBarSpacer, Tray = Tray, WebContents = WebContents, WebRequest = WebRequest, app = app, autoUpdater = autoUpdater, clipboard = clipboard, contentTracing = contentTracing, crashReporter = crashReporter, desktopCapturer = desktopCapturer, dialog = dialog, globalShortcut = globalShortcut, inAppPurchase = inAppPurchase, ipcMain = ipcMain, ipcRenderer = ipcRenderer, net = net, netLog = netLog, powerMonitor = powerMonitor, powerSaveBlocker = powerSaveBlocker, protocol = protocol, remote = remote, screen = screen, shell = shell, systemPreferences = systemPreferences, webFrame = webFrame, webviewTag = webviewTag)
+    val __obj = js.Dynamic.literal(Accelerator = Accelerator, BrowserView = BrowserView, BrowserWindow = BrowserWindow, BrowserWindowProxy = BrowserWindowProxy, ClientRequest = ClientRequest, Cookies = Cookies, Debugger = Debugger, DownloadItem = DownloadItem, EventEmitter = EventEmitter, IncomingMessage = IncomingMessage, Menu = Menu, MenuItem = MenuItem, NativeImage = NativeImage, Notification = Notification, Session = Session, TouchBar = TouchBar, TouchBarButton = TouchBarButton, TouchBarColorPicker = TouchBarColorPicker, TouchBarGroup = TouchBarGroup, TouchBarLabel = TouchBarLabel, TouchBarPopover = TouchBarPopover, TouchBarScrubber = TouchBarScrubber, TouchBarSegmentedControl = TouchBarSegmentedControl, TouchBarSlider = TouchBarSlider, TouchBarSpacer = TouchBarSpacer, Tray = Tray, WebContents = WebContents, WebRequest = WebRequest, app = app, autoUpdater = autoUpdater, clipboard = clipboard, contentTracing = contentTracing, contextBridge = contextBridge, crashReporter = crashReporter, desktopCapturer = desktopCapturer, dialog = dialog, globalShortcut = globalShortcut, inAppPurchase = inAppPurchase, ipcMain = ipcMain, ipcRenderer = ipcRenderer, net = net, netLog = netLog, powerMonitor = powerMonitor, powerSaveBlocker = powerSaveBlocker, protocol = protocol, remote = remote, screen = screen, shell = shell, systemPreferences = systemPreferences, webFrame = webFrame, webviewTag = webviewTag)
   
     __obj.asInstanceOf[TypeofElectron]
   }

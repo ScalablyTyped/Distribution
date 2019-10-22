@@ -5,26 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_LargeMediumSmallXlargeXsmall extends js.Object {
-  var large: Anon_Height
-  var medium: Anon_Height
-  var small: Anon_Height
-  var xlarge: Anon_Height
-  var xsmall: Anon_Height
-  var xxlarge: Anon_Height
+  var large: js.UndefOr[Anon_HeightMaxWidth] = js.undefined
+  var medium: js.UndefOr[Anon_HeightMaxWidth] = js.undefined
+  var small: js.UndefOr[Anon_HeightMaxWidth] = js.undefined
+  var xlarge: js.UndefOr[Anon_HeightMaxWidth] = js.undefined
+  var xsmall: js.UndefOr[Anon_HeightMaxWidth] = js.undefined
+  var xxlarge: js.UndefOr[Anon_HeightMaxWidth] = js.undefined
 }
 
 object Anon_LargeMediumSmallXlargeXsmall {
   @scala.inline
   def apply(
-    large: Anon_Height,
-    medium: Anon_Height,
-    small: Anon_Height,
-    xlarge: Anon_Height,
-    xsmall: Anon_Height,
-    xxlarge: Anon_Height
+    large: Anon_HeightMaxWidth = null,
+    medium: Anon_HeightMaxWidth = null,
+    small: Anon_HeightMaxWidth = null,
+    xlarge: Anon_HeightMaxWidth = null,
+    xsmall: Anon_HeightMaxWidth = null,
+    xxlarge: Anon_HeightMaxWidth = null
   ): Anon_LargeMediumSmallXlargeXsmall = {
-    val __obj = js.Dynamic.literal(large = large, medium = medium, small = small, xlarge = xlarge, xsmall = xsmall, xxlarge = xxlarge)
-  
+    val __obj = js.Dynamic.literal()
+    if (large != null) __obj.updateDynamic("large")(large)
+    if (medium != null) __obj.updateDynamic("medium")(medium)
+    if (small != null) __obj.updateDynamic("small")(small)
+    if (xlarge != null) __obj.updateDynamic("xlarge")(xlarge)
+    if (xsmall != null) __obj.updateDynamic("xsmall")(xsmall)
+    if (xxlarge != null) __obj.updateDynamic("xxlarge")(xxlarge)
     __obj.asInstanceOf[Anon_LargeMediumSmallXlargeXsmall]
   }
 }

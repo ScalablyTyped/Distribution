@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-sizeme" : "2.6.8"
+      "react-sizeme" : "2.6.10"
     }
   ],
   "test-dependencies" : [
     {
-      "react-sizeme" : "2.6.8"
+      "react-sizeme" : "2.6.10"
     }
   ],
   "compile-devDependencies" : [

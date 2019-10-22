@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pulumi__cloud"
-version := "0.18.1-025240"
+version := "0.18.1-fb0fc1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
   "org.scalablytyped" %%% "pulumi__pulumi" % "1.3.4-5400a5",
   "org.scalablytyped" %%% "pulumi__query" % "0.3.0-48aa33",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")

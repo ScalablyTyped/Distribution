@@ -5,16 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BodyFooter extends js.Object {
-  var body: Anon_AlignPad
-  var footer: Anon_Align
-  var header: Anon_Align
+  var body: js.UndefOr[Anon_AlignBackgroundBorder] = js.undefined
+  var footer: js.UndefOr[Anon_AlignBackgroundBorderExtend] = js.undefined
+  var header: js.UndefOr[Anon_AlignBackground] = js.undefined
+  var row: js.UndefOr[Anon_Hover] = js.undefined
 }
 
 object Anon_BodyFooter {
   @scala.inline
-  def apply(body: Anon_AlignPad, footer: Anon_Align, header: Anon_Align): Anon_BodyFooter = {
-    val __obj = js.Dynamic.literal(body = body, footer = footer, header = header)
-  
+  def apply(
+    body: Anon_AlignBackgroundBorder = null,
+    footer: Anon_AlignBackgroundBorderExtend = null,
+    header: Anon_AlignBackground = null,
+    row: Anon_Hover = null
+  ): Anon_BodyFooter = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (row != null) __obj.updateDynamic("row")(row)
     __obj.asInstanceOf[Anon_BodyFooter]
   }
 }

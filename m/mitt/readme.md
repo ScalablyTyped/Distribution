@@ -1,7 +1,7 @@
 
 # Scala.js typings for mitt
 
-Typings are for version 1.1.3
+Typings are for version 1.2.0
 
 ## Library description:
 Tiny 200b functional Event Emitter / pubsub.

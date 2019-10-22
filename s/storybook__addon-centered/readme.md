@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-centered
 
-Typings are for version 5.2.4
+Typings are for version 5.2.5
 
 ## Library description:
 Storybook decorator to center components

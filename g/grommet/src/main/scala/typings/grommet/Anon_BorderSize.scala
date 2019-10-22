@@ -5,17 +5,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BorderSize extends js.Object {
-  var borderSize: Anon_LargeMedium
-  var edgeSize: Anon_Hair
-  var size: Anon_FullLarge
-  var value: Double
+  var borderSize: js.UndefOr[Anon_LargeMedium] = js.undefined
+  var edgeSize: js.UndefOr[Anon_Hair] = js.undefined
+  var size: js.UndefOr[Anon_FullLarge] = js.undefined
+  var value: js.UndefOr[Double] = js.undefined
 }
 
 object Anon_BorderSize {
   @scala.inline
-  def apply(borderSize: Anon_LargeMedium, edgeSize: Anon_Hair, size: Anon_FullLarge, value: Double): Anon_BorderSize = {
-    val __obj = js.Dynamic.literal(borderSize = borderSize, edgeSize = edgeSize, size = size, value = value)
-  
+  def apply(
+    borderSize: Anon_LargeMedium = null,
+    edgeSize: Anon_Hair = null,
+    size: Anon_FullLarge = null,
+    value: Int | Double = null
+  ): Anon_BorderSize = {
+    val __obj = js.Dynamic.literal()
+    if (borderSize != null) __obj.updateDynamic("borderSize")(borderSize)
+    if (edgeSize != null) __obj.updateDynamic("edgeSize")(edgeSize)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderSize]
   }
 }

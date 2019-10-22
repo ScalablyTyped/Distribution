@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Icons extends js.Object {
-  var icons: Anon_Collapse
+  var icons: js.UndefOr[Anon_ColorColorType] = js.undefined
 }
 
 object Anon_Icons {
   @scala.inline
-  def apply(icons: Anon_Collapse): Anon_Icons = {
-    val __obj = js.Dynamic.literal(icons = icons)
-  
+  def apply(icons: Anon_ColorColorType = null): Anon_Icons = {
+    val __obj = js.Dynamic.literal()
+    if (icons != null) __obj.updateDynamic("icons")(icons)
     __obj.asInstanceOf[Anon_Icons]
   }
 }

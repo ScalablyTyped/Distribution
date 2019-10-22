@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server-errors
 
-Typings are for version 2.3.3
+Typings are for version 2.3.4
 
 
 

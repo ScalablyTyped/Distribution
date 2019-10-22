@@ -12,7 +12,7 @@ trait ErrorOptions extends js.Object {
     Instantiable3[
       /* message */ String, 
       js.UndefOr[/* code */ String], 
-      js.UndefOr[/* properties */ Record[String, js.Any]], 
+      js.UndefOr[/* extensions */ Record[String, js.Any]], 
       ApolloError
     ]
   ] = js.undefined
@@ -25,7 +25,7 @@ object ErrorOptions {
     errorClass: Instantiable3[
       /* message */ String, 
       js.UndefOr[/* code */ String], 
-      js.UndefOr[/* properties */ Record[String, js.Any]], 
+      js.UndefOr[/* extensions */ Record[String, js.Any]], 
       ApolloError
     ] = null
   ): ErrorOptions = {

@@ -15,7 +15,6 @@ trait TSESTreeOptions extends js.Object {
   var jsx: js.UndefOr[Boolean] = js.undefined
   var loc: js.UndefOr[Boolean] = js.undefined
   var loggerFn: js.UndefOr[js.Function | `false`] = js.undefined
-  var noWatch: js.UndefOr[Boolean] = js.undefined
   var preserveNodeMaps: js.UndefOr[Boolean] = js.undefined
   var project: js.UndefOr[String | js.Array[String]] = js.undefined
   var range: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +35,6 @@ object TSESTreeOptions {
     jsx: js.UndefOr[Boolean] = js.undefined,
     loc: js.UndefOr[Boolean] = js.undefined,
     loggerFn: js.Function | `false` = null,
-    noWatch: js.UndefOr[Boolean] = js.undefined,
     preserveNodeMaps: js.UndefOr[Boolean] = js.undefined,
     project: String | js.Array[String] = null,
     range: js.UndefOr[Boolean] = js.undefined,
@@ -54,7 +52,6 @@ object TSESTreeOptions {
     if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx)
     if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc)
     if (loggerFn != null) __obj.updateDynamic("loggerFn")(loggerFn.asInstanceOf[js.Any])
-    if (!js.isUndefined(noWatch)) __obj.updateDynamic("noWatch")(noWatch)
     if (!js.isUndefined(preserveNodeMaps)) __obj.updateDynamic("preserveNodeMaps")(preserveNodeMaps)
     if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
     if (!js.isUndefined(range)) __obj.updateDynamic("range")(range)

@@ -2838,7 +2838,6 @@
 | 0.6831406253506326 | [notyf](./n/notyf) | A dead simple, responsive, a11y, dependency-free, 
 | 0.6831274498193085 | [restore-cursor](./r/restore-cursor) | Gracefully restore the CLI cursor on exit
 | 0.6830463041492446 | [bump-regex](./b/bump-regex) | bump RegEx with semver
-| 0.6830409120136585 | [ui-box](./u/ui-box) | Blazing Fast React UI Primitive
 | 0.6829970603185114 | [cachefactory](./c/cachefactory) | CacheFactory is a very simple and useful cache for
 | 0.6829812955627166 | [react-currency-formatter](./r/react-currency-formatter) | react currency formatter Component
 | 0.682947426737269 | [rfc2047](./r/rfc2047) | Encode and decode rfc2047 (MIME encoded words)

@@ -12,6 +12,9 @@ import scala.scalajs.js.annotation._
 
 object atUifabricMergeDashStylesStrings {
   @js.native
+  sealed trait `-ms-autohiding-scrollbar` extends js.Object
+  
+  @js.native
   sealed trait `100` extends IFontWeight
   
   @js.native
@@ -368,6 +371,9 @@ object atUifabricMergeDashStylesStrings {
   sealed trait scroll extends js.Object
   
   @js.native
+  sealed trait scrollbar extends js.Object
+  
+  @js.native
   sealed trait `self-end` extends ICSSOverflowAndSelfPositionRule
   
   @js.native
@@ -511,6 +517,8 @@ object atUifabricMergeDashStylesStrings {
   @js.native
   sealed trait `xx-small` extends js.Object
   
+  @scala.inline
+  def `-ms-autohiding-scrollbar`: `-ms-autohiding-scrollbar` = "-ms-autohiding-scrollbar".asInstanceOf[`-ms-autohiding-scrollbar`]
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
   @scala.inline
@@ -747,6 +755,8 @@ object atUifabricMergeDashStylesStrings {
   def screen: screen = "screen".asInstanceOf[screen]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
+  def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
   @scala.inline
   def `self-end`: `self-end` = "self-end".asInstanceOf[`self-end`]
   @scala.inline

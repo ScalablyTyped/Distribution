@@ -1,6 +1,7 @@
 package typings.atUifabricMergeDashStyles.libIRawStyleBaseMod
 
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesNumbers.`0`
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`-ms-autohiding-scrollbar`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`border-box`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`break-word`
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.`column-reverse`
@@ -48,6 +49,7 @@ import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.right
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.round
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.row
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.scroll
+import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.scrollbar
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.square
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.static
 import typings.atUifabricMergeDashStyles.atUifabricMergeDashStylesStrings.sticky
@@ -70,6 +72,10 @@ trait IRawStyleBase extends IRawFontStyle {
     * (Ms specific) constrast adjust rule.
     */
   var MsHighContrastAdjust: js.UndefOr[ICSSRule | String] = js.undefined
+  /**
+    * (Ms specific) scrollbar behavior adjust rule.
+    */
+  var MsOverflowStyle: js.UndefOr[auto | none | scrollbar | `-ms-autohiding-scrollbar`] = js.undefined
   /**
     * Edge requires the -webkit prefix backdrop-filter.
     */
@@ -1597,6 +1603,7 @@ object IRawStyleBase {
     IRawFontStyle: IRawFontStyle = null,
     MozOsxFontSmoothing: none | antialiased | grayscale | `subpixel-antialiased` = null,
     MsHighContrastAdjust: ICSSRule | String = null,
+    MsOverflowStyle: auto | none | scrollbar | `-ms-autohiding-scrollbar` = null,
     WebkitBackdropFilter: ICSSRule | String = null,
     WebkitFontSmoothing: none | antialiased | grayscale | `subpixel-antialiased` = null,
     WebkitOverflowScrolling: auto | touch = null,
@@ -1846,13 +1853,13 @@ object IRawStyleBase {
     voiceFamily: ICSSRule | String = null,
     voicePitch: ICSSRule | String = null,
     voiceRange: ICSSRule | String = null,
-    voiceRate: ICSSRule | String = null,
-    voiceStress: ICSSRule | String = null
+    voiceRate: ICSSRule | String = null
   ): IRawStyleBase = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IRawFontStyle)
     if (MozOsxFontSmoothing != null) __obj.updateDynamic("MozOsxFontSmoothing")(MozOsxFontSmoothing.asInstanceOf[js.Any])
     if (MsHighContrastAdjust != null) __obj.updateDynamic("MsHighContrastAdjust")(MsHighContrastAdjust.asInstanceOf[js.Any])
+    if (MsOverflowStyle != null) __obj.updateDynamic("MsOverflowStyle")(MsOverflowStyle.asInstanceOf[js.Any])
     if (WebkitBackdropFilter != null) __obj.updateDynamic("WebkitBackdropFilter")(WebkitBackdropFilter.asInstanceOf[js.Any])
     if (WebkitFontSmoothing != null) __obj.updateDynamic("WebkitFontSmoothing")(WebkitFontSmoothing.asInstanceOf[js.Any])
     if (WebkitOverflowScrolling != null) __obj.updateDynamic("WebkitOverflowScrolling")(WebkitOverflowScrolling.asInstanceOf[js.Any])
@@ -2103,7 +2110,6 @@ object IRawStyleBase {
     if (voicePitch != null) __obj.updateDynamic("voicePitch")(voicePitch.asInstanceOf[js.Any])
     if (voiceRange != null) __obj.updateDynamic("voiceRange")(voiceRange.asInstanceOf[js.Any])
     if (voiceRate != null) __obj.updateDynamic("voiceRate")(voiceRate.asInstanceOf[js.Any])
-    if (voiceStress != null) __obj.updateDynamic("voiceStress")(voiceStress.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRawStyleBase]
   }
 }

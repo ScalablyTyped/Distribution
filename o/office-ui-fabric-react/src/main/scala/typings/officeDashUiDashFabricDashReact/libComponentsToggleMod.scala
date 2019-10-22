@@ -3,6 +3,7 @@ package typings.officeDashUiDashFabricDashReact
 import typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleDotBaseMod.IToggleState
 import typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleDotTypesMod.IToggleProps
 import typings.react.reactMod.StatelessComponent
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +21,7 @@ object libComponentsToggleMod extends js.Object {
   /* static members */
   @js.native
   object ToggleBase extends js.Object {
-    def getDerivedStateFromProps(props: IToggleProps, state: IToggleState): IToggleState = js.native
+    def getDerivedStateFromProps(nextProps: IToggleProps, prevState: IToggleState): Partial[IToggleState] | Null = js.native
   }
   
 }

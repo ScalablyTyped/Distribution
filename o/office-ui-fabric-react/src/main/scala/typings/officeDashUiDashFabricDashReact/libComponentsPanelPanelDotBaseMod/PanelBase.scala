@@ -6,6 +6,7 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent
 import typings.react.reactMod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +49,6 @@ class PanelBase protected ()
 @js.native
 object PanelBase extends js.Object {
   var defaultProps: IPanelProps = js.native
-  def getDerivedStateFromProps(props: IPanelProps, state: IPanelState): IPanelState = js.native
+  def getDerivedStateFromProps(nextProps: IPanelProps, prevState: IPanelState): Partial[IPanelState] | Null = js.native
 }
 

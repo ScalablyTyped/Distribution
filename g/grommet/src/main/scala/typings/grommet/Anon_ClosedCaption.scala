@@ -1,32 +1,42 @@
 package typings.grommet
 
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ClosedCaption extends js.Object {
-  var closedCaption: js.Any
-  var configure: js.Any
-  var fullScreen: js.Any
-  var pause: js.Any
-  var play: js.Any
-  var reduceVolume: js.Any
-  var volume: js.Any
+  var closedCaption: js.UndefOr[js.Any] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
+  var configure: js.UndefOr[js.Any] = js.undefined
+  var fullScreen: js.UndefOr[js.Any] = js.undefined
+  var pause: js.UndefOr[js.Any] = js.undefined
+  var play: js.UndefOr[js.Any] = js.undefined
+  var reduceVolume: js.UndefOr[js.Any] = js.undefined
+  var volume: js.UndefOr[js.Any] = js.undefined
 }
 
 object Anon_ClosedCaption {
   @scala.inline
   def apply(
-    closedCaption: js.Any,
-    configure: js.Any,
-    fullScreen: js.Any,
-    pause: js.Any,
-    play: js.Any,
-    reduceVolume: js.Any,
-    volume: js.Any
+    closedCaption: js.Any = null,
+    color: ColorType = null,
+    configure: js.Any = null,
+    fullScreen: js.Any = null,
+    pause: js.Any = null,
+    play: js.Any = null,
+    reduceVolume: js.Any = null,
+    volume: js.Any = null
   ): Anon_ClosedCaption = {
-    val __obj = js.Dynamic.literal(closedCaption = closedCaption, configure = configure, fullScreen = fullScreen, pause = pause, play = play, reduceVolume = reduceVolume, volume = volume)
-  
+    val __obj = js.Dynamic.literal()
+    if (closedCaption != null) __obj.updateDynamic("closedCaption")(closedCaption)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (configure != null) __obj.updateDynamic("configure")(configure)
+    if (fullScreen != null) __obj.updateDynamic("fullScreen")(fullScreen)
+    if (pause != null) __obj.updateDynamic("pause")(pause)
+    if (play != null) __obj.updateDynamic("play")(play)
+    if (reduceVolume != null) __obj.updateDynamic("reduceVolume")(reduceVolume)
+    if (volume != null) __obj.updateDynamic("volume")(volume)
     __obj.asInstanceOf[Anon_ClosedCaption]
   }
 }

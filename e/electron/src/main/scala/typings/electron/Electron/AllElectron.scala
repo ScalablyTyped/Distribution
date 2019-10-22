@@ -25,8 +25,9 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.electron.Electron.CommonInterface because Already inherited
-- typings.electron.Electron.RendererInterface because var conflicts: clipboard, crashReporter, nativeImage, shell. Inlined BrowserWindowProxy, desktopCapturer, ipcRenderer, remote, webFrame, webviewTag */ trait AllElectron extends MainInterface {
+- typings.electron.Electron.RendererInterface because var conflicts: clipboard, crashReporter, nativeImage, shell. Inlined BrowserWindowProxy, contextBridge, desktopCapturer, ipcRenderer, remote, webFrame, webviewTag */ trait AllElectron extends MainInterface {
   var BrowserWindowProxy: Instantiable0[typings.electron.Electron.BrowserWindowProxy]
+  var contextBridge: ContextBridge
   var desktopCapturer: DesktopCapturer
   var ipcRenderer: IpcRenderer
   var remote: Remote
@@ -58,6 +59,7 @@ object AllElectron {
     autoUpdater: AutoUpdater,
     clipboard: Clipboard,
     contentTracing: ContentTracing,
+    contextBridge: ContextBridge,
     crashReporter: CrashReporter,
     desktopCapturer: DesktopCapturer,
     dialog: Dialog,
@@ -80,7 +82,7 @@ object AllElectron {
     webFrame: WebFrame,
     webviewTag: WebviewTag
   ): AllElectron = {
-    val __obj = js.Dynamic.literal(BrowserView = BrowserView, BrowserWindow = BrowserWindow, BrowserWindowProxy = BrowserWindowProxy, ClientRequest = ClientRequest, Cookies = Cookies, Debugger = Debugger, DownloadItem = DownloadItem, IncomingMessage = IncomingMessage, Menu = Menu, MenuItem = MenuItem, Notification = Notification, TouchBar = TouchBar, Tray = Tray, WebRequest = WebRequest, app = app, autoUpdater = autoUpdater, clipboard = clipboard, contentTracing = contentTracing, crashReporter = crashReporter, desktopCapturer = desktopCapturer, dialog = dialog, globalShortcut = globalShortcut, inAppPurchase = inAppPurchase, ipcMain = ipcMain, ipcRenderer = ipcRenderer, nativeImage = nativeImage, net = net, netLog = netLog, powerMonitor = powerMonitor, powerSaveBlocker = powerSaveBlocker, protocol = protocol, remote = remote, screen = screen, session = session, shell = shell, systemPreferences = systemPreferences, webContents = webContents, webFrame = webFrame, webviewTag = webviewTag)
+    val __obj = js.Dynamic.literal(BrowserView = BrowserView, BrowserWindow = BrowserWindow, BrowserWindowProxy = BrowserWindowProxy, ClientRequest = ClientRequest, Cookies = Cookies, Debugger = Debugger, DownloadItem = DownloadItem, IncomingMessage = IncomingMessage, Menu = Menu, MenuItem = MenuItem, Notification = Notification, TouchBar = TouchBar, Tray = Tray, WebRequest = WebRequest, app = app, autoUpdater = autoUpdater, clipboard = clipboard, contentTracing = contentTracing, contextBridge = contextBridge, crashReporter = crashReporter, desktopCapturer = desktopCapturer, dialog = dialog, globalShortcut = globalShortcut, inAppPurchase = inAppPurchase, ipcMain = ipcMain, ipcRenderer = ipcRenderer, nativeImage = nativeImage, net = net, netLog = netLog, powerMonitor = powerMonitor, powerSaveBlocker = powerSaveBlocker, protocol = protocol, remote = remote, screen = screen, session = session, shell = shell, systemPreferences = systemPreferences, webContents = webContents, webFrame = webFrame, webviewTag = webviewTag)
   
     __obj.asInstanceOf[AllElectron]
   }

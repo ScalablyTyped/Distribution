@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ledgerhq__hw-transport-u2f"
-version := "4.21-dt-20190213Z-8cd3a5"
+version := "4.21-dt-20190213Z-0ae770"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20190905Z-47a052",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191015Z-4f243e",
+  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20190905Z-2f848e",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

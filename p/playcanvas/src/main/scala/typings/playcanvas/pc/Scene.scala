@@ -42,6 +42,7 @@ import scala.scalajs.js.annotation._
   *     <li>pc.TONEMAP_ACES</li>
   * </ul>
   * Defaults to pc.TONEMAP_LINEAR.
+  * @property {Number} exposure The exposure value tweaks the overall brightness of the scene. Defaults to 1.
   * @property {pc.Texture} skybox A cube map texture used as the scene's skybox. Defaults to null.
   * @property {Number} skyboxIntensity Multiplier for skybox intensity. Defaults to 1.
   * @property {Number} skyboxMip The mip level of the skybox to be displayed. Only valid for prefiltered
@@ -57,6 +58,7 @@ import scala.scalajs.js.annotation._
   * pc.BAKE_COLORDIR.
   * @property {pc.LayerComposition} layers A {@link pc.LayerComposition} that defines rendering order of this scene.
   * @property {pc.StandardMaterial} defaultMaterial The default material used in case no other material is available.
+  * @property {pc.Entity} root The root entity of the scene, which is usually the only child to the Application root entity.
   */
 @JSGlobal("pc.Scene")
 @js.native
@@ -69,6 +71,10 @@ class Scene () extends EventHandler {
     * The default material used in case no other material is available.
     */
   var defaultMaterial: StandardMaterial = js.native
+  /**
+    * The exposure value tweaks the overall brightness of the scene. Defaults to 1.
+    */
+  var exposure: Double = js.native
   /**
     * The type of fog used by the scene. Can be:
     * <ul>
@@ -130,6 +136,10 @@ class Scene () extends EventHandler {
     * The lightmap resolution multiplier. Defaults to 1.
     */
   var lightmapSizeMultiplier: Double = js.native
+  /**
+    * The root entity of the scene, which is usually the only child to the Application root entity.
+    */
+  var root: Entity = js.native
   /**
     * A cube map texture used as the scene's skybox. Defaults to null.
     */

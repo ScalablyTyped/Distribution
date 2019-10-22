@@ -1,7 +1,7 @@
 
 # Scala.js typings for spin_dot_js
 
-Typings are for version 4.0.0
+Typings are for version 4.1.0
 
 ## Library description:
 A spinning activity indicator

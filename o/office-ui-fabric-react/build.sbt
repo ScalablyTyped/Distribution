@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "office-ui-fabric-react"
-version := "7.53.0-e4ae71"
+version := "7.54.0-5656d9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,11 +10,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "uifabric__example-data" % "7.0.1-3771ca",
-  "org.scalablytyped" %%% "uifabric__foundation" % "7.4.4-763d96",
-  "org.scalablytyped" %%% "uifabric__icons" % "7.3.0-0de733",
-  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.7.0-3f6f92",
-  "org.scalablytyped" %%% "uifabric__styling" % "7.7.2-4f8e34",
-  "org.scalablytyped" %%% "uifabric__utilities" % "7.4.0-bc1595")
+  "org.scalablytyped" %%% "uifabric__foundation" % "7.4.4-d30535",
+  "org.scalablytyped" %%% "uifabric__icons" % "7.3.0-797055",
+  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.8.0-a0196d",
+  "org.scalablytyped" %%% "uifabric__styling" % "7.7.2-971c1b",
+  "org.scalablytyped" %%% "uifabric__utilities" % "7.4.0-7c53f0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
