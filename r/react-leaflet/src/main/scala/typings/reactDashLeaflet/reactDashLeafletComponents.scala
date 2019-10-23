@@ -34,6 +34,7 @@ import typings.reactDashLeaflet.reactDashLeafletMod.PolygonProps
 import typings.reactDashLeaflet.reactDashLeafletMod.PolylineProps
 import typings.reactDashLeaflet.reactDashLeafletMod.PopupProps
 import typings.reactDashLeaflet.reactDashLeafletMod.RectangleProps
+import typings.reactDashLeaflet.reactDashLeafletMod.SVGOverlayProps
 import typings.reactDashLeaflet.reactDashLeafletMod.ScaleControlProps
 import typings.reactDashLeaflet.reactDashLeafletMod.TileLayerProps
 import typings.reactDashLeaflet.reactDashLeafletMod.TooltipProps
@@ -99,6 +100,8 @@ object reactDashLeafletComponents extends reactDashLeafletProps {
   def Popup[P /* <: PopupProps */, E /* <: typings.leaflet.leafletMod.Popup */]: ComponentType[P] = js.constructorOf[typings.reactDashLeaflet.reactDashLeafletMod.Popup[P, E]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
   @scala.inline
   def Rectangle[P /* <: RectangleProps */, E /* <: typings.leaflet.leafletMod.Rectangle[_] */]: ComponentType[P] = js.constructorOf[typings.reactDashLeaflet.reactDashLeafletMod.Rectangle[P, E]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  @scala.inline
+  def SVGOverlay[P /* <: SVGOverlayProps */, E /* <: typings.leaflet.leafletMod.SVGOverlay */]: ComponentType[P] = js.constructorOf[typings.reactDashLeaflet.reactDashLeafletMod.SVGOverlay[P, E]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
   @scala.inline
   def ScaleControl[P /* <: ScaleControlProps */, E /* <: Scale */]: ComponentType[P] = js.constructorOf[typings.reactDashLeaflet.reactDashLeafletMod.ScaleControl[P, E]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
   @scala.inline

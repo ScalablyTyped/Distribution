@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-scrollbar
 
-Typings are for version 0.4.1
+Typings are for version 0.5.6
 
 ## Library description:
 ScrollArea component for react

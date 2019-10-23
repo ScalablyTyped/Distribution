@@ -14,6 +14,9 @@ class RequestContext ()
   def this(url: String) = this()
   def this(url: Session) = this()
   val application: Application = js.native
+  /**
+    * [Api set: ExcelApi 1.5]
+    */
   val runtime: Runtime = js.native
   val workbook: Workbook = js.native
 }

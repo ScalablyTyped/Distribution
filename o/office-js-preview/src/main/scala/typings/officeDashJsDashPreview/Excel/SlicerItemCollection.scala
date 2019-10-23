@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of all the slicer item objects on the slicer.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerItemCollection")
 @js.native
@@ -29,16 +28,14 @@ class SlicerItemCollection () extends ClientObject {
     *
     * Returns the number of slicer items in the slicer.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
     * Gets a slicer item object using its key or name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param key The key or name of the slicer item.
     */
@@ -47,8 +44,7 @@ class SlicerItemCollection () extends ClientObject {
     *
     * Gets a slicer item based on its position in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
     */
@@ -57,8 +53,7 @@ class SlicerItemCollection () extends ClientObject {
     *
     * Gets a slicer item using its key or name. If the slicer item does not exist, will return a null object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param key Key or name of the slicer to be retrieved.
     */

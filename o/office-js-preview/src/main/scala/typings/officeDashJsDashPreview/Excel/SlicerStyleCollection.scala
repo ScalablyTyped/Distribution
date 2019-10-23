@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of SlicerStyle objects.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerStyleCollection")
 @js.native
@@ -29,8 +28,7 @@ class SlicerStyleCollection () extends ClientObject {
     *
     * Creates a blank SlicerStyle with the specified name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name The unique name for the new SlicerStyle. Will throw an invalid argument exception if the name is already in use.
     * @param makeUniqueName Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.
@@ -42,16 +40,14 @@ class SlicerStyleCollection () extends ClientObject {
     *
     * Gets the number of slicer styles in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
     * Gets the default SlicerStyle for the parent object's scope.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     * @returns The SlicerStyle object that is the current default SlicerStyle.
     */
   def getDefault(): SlicerStyle = js.native
@@ -59,8 +55,7 @@ class SlicerStyleCollection () extends ClientObject {
     *
     * Gets a SlicerStyle by name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name Name of the SlicerStyle to be retrieved.
     * @returns The SlicerStyle object whose name matches the input.
@@ -70,8 +65,7 @@ class SlicerStyleCollection () extends ClientObject {
     *
     * Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name Name of the SlicerStyle to be retrieved.
     * @returns The SlicerStyle object whose name matches the input.
@@ -92,8 +86,7 @@ class SlicerStyleCollection () extends ClientObject {
     *
     * Sets the default SlicerStyle for use in the parent object's scope.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param newDefaultStyle The SlicerStyle object or name of the SlicerStyle object that should be the new default.
     */

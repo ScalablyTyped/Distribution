@@ -1,10 +1,10 @@
 package typings.jqueryui.JQueryUI
 
+import typings.jquery.JQuery.Event
 import typings.jqueryui.Anon_Selected
 import typings.jqueryui.Anon_Selecting
 import typings.jqueryui.Anon_Unselected
 import typings.jqueryui.Anon_Unselecting
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

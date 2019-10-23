@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a Timeline style, which defines style elements by region in the Timeline.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 trait TimelineStyleLoadOptions extends js.Object {
   /**
@@ -21,16 +20,14 @@ trait TimelineStyleLoadOptions extends js.Object {
     *
     * Gets the name of the TimelineStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Specifies whether this TimelineStyle object is read-only. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined
 }

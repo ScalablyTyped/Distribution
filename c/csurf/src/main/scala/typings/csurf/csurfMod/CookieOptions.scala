@@ -7,28 +7,29 @@ import scala.scalajs.js.annotation._
 
 trait CookieOptions
   extends typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.CookieOptions {
-  var key: String
+  var key: js.UndefOr[String] = js.undefined
 }
 
 object CookieOptions {
   @scala.inline
   def apply(
-    key: String,
     domain: String = null,
     encode: /* val */ String => String = null,
     expires: Date = null,
     httpOnly: js.UndefOr[Boolean] = js.undefined,
+    key: String = null,
     maxAge: Int | Double = null,
     path: String = null,
     sameSite: Boolean | String = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     signed: js.UndefOr[Boolean] = js.undefined
   ): CookieOptions = {
-    val __obj = js.Dynamic.literal(key = key)
+    val __obj = js.Dynamic.literal()
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction1(encode))
     if (expires != null) __obj.updateDynamic("expires")(expires)
     if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
+    if (key != null) __obj.updateDynamic("key")(key)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path)
     if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])

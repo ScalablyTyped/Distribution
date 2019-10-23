@@ -22,7 +22,7 @@ trait UriOptions extends js.Object {
   /**
     * Validate the domain component using the options specified in `string.domain()`.
     */
-  var domain: js.UndefOr[Boolean] = js.undefined
+  var domain: js.UndefOr[DomainOptions] = js.undefined
   /**
     * Restrict only relative URIs.
     *
@@ -41,14 +41,14 @@ object UriOptions {
   def apply(
     allowQuerySquareBrackets: js.UndefOr[Boolean] = js.undefined,
     allowRelative: js.UndefOr[Boolean] = js.undefined,
-    domain: js.UndefOr[Boolean] = js.undefined,
+    domain: DomainOptions = null,
     relativeOnly: js.UndefOr[Boolean] = js.undefined,
     scheme: String | RegExp | (js.Array[String | RegExp]) = null
   ): UriOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowQuerySquareBrackets)) __obj.updateDynamic("allowQuerySquareBrackets")(allowQuerySquareBrackets)
     if (!js.isUndefined(allowRelative)) __obj.updateDynamic("allowRelative")(allowRelative)
-    if (!js.isUndefined(domain)) __obj.updateDynamic("domain")(domain)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
     if (!js.isUndefined(relativeOnly)) __obj.updateDynamic("relativeOnly")(relativeOnly)
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[UriOptions]

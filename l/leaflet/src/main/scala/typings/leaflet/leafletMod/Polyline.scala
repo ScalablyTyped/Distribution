@@ -18,6 +18,7 @@ class Polyline[T /* <: GeometryObject */, P] protected () extends Path {
   var options_Polyline: PolylineOptions = js.native
   def addLatLng(latlng: js.Array[LatLngExpression]): this.type = js.native
   def addLatLng(latlng: LatLngExpression): this.type = js.native
+  def closestLayerPoint(p: Point): Point = js.native
   def getBounds(): LatLngBounds = js.native
   def getCenter(): LatLng = js.native
   def getLatLngs(): js.Array[(js.Array[js.Array[LatLng] | LatLng]) | LatLng] = js.native

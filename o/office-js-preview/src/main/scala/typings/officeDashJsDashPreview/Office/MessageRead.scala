@@ -96,22 +96,6 @@ trait MessageRead extends Message {
     */
   var from: EmailAddressDetails = js.native
   /**
-    * Gets or sets the custom internet headers of a message.
-    * 
-    * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message.
-    *
-    * [Api set: Mailbox Preview]
-    *
-    * @remarks
-    *
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
-    * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
-    * 
-    * @beta
-    */
-  var internetHeaders: InternetHeaders = js.native
-  /**
     * Gets the Internet message identifier for an email message.
     *
     * [Api set: Mailbox 1.0]
@@ -382,6 +366,30 @@ trait MessageRead extends Message {
   def displayReplyForm(formData: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def displayReplyForm(formData: ReplyFormData): Unit = js.native
   def displayReplyForm(formData: ReplyFormData, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  /**
+    * Gets all the internet headers for the message as a string.
+    * 
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
+    * 
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object.
+    *                On success, the internet headers data is provided in the asyncResult.value property as a string. 
+    *                Refer to {@link https://tools.ietf.org/html/rfc2183 | RFC 2183} for the formatting information of the returned string value. 
+    *                If the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
+    *
+    * @beta
+    */
+  def getAllInternetHeadersAsync(): Unit = js.native
+  def getAllInternetHeadersAsync(options: AsyncContextOptions): Unit = js.native
+  def getAllInternetHeadersAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   /**
     * Gets the entities found in the selected item's body.
     *

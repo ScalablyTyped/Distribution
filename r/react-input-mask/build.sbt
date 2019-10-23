@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-input-mask"
-version := "2.0-dt-20190724Z-2d0825"
+version := "2.0-dt-20191022Z-2d0825"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

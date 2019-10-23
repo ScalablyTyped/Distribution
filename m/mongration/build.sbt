@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mongration"
-version := "1.0-dt-20191003Z-a0a9a7"
+version := "1.0-dt-20191003Z-868ada"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-65e60f",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-dd98ca",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-0c1519",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-e5f952",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -21,7 +21,7 @@ trait WorksheetCalculatedEventArgs extends js.Object {
   var `type`: WorksheetCalculated
   /**
     *
-    * Gets the id of the worksheet that is calculated.
+    * Gets the id of the worksheet in which the calculation occurred.
     *
     * [Api set: ExcelApi 1.8]
     */

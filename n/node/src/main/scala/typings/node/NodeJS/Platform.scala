@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   - typings.node.nodeStrings.sunos
   - typings.node.nodeStrings.win32
   - typings.node.nodeStrings.cygwin
+  - typings.node.nodeStrings.netbsd
 */
 trait Platform extends js.Object
 

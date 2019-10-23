@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of TableStyles.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.TableStyleCollection")
 @js.native
@@ -29,8 +28,7 @@ class TableStyleCollection () extends ClientObject {
     *
     * Creates a blank TableStyle with the specified name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name The unique name for the new TableStyle. Will throw an invalid argument exception if the name is already in use.
     * @param makeUniqueName Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.
@@ -42,16 +40,14 @@ class TableStyleCollection () extends ClientObject {
     *
     * Gets the number of table styles in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
     * Gets the default TableStyle for the parent object's scope.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     * @returns The TableStyle object that is the current default TableStyle.
     */
   def getDefault(): TableStyle = js.native
@@ -59,8 +55,7 @@ class TableStyleCollection () extends ClientObject {
     *
     * Gets a TableStyle by name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name Name of the TableStyle to be retrieved.
     * @returns The TableStyle object whose name matches the input.
@@ -70,8 +65,7 @@ class TableStyleCollection () extends ClientObject {
     *
     * Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name Name of the TableStyle to be retrieved.
     * @returns The TableStyle object whose name matches the input.
@@ -92,8 +86,7 @@ class TableStyleCollection () extends ClientObject {
     *
     * Sets the default TableStyle for use in the parent object's scope.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param newDefaultStyle The TableStyle object or name of the TableStyle object that should be the new default.
     */

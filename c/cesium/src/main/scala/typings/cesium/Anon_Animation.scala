@@ -12,6 +12,7 @@ import typings.cesium.cesiumMod.ShadowMode
 import typings.cesium.cesiumMod.SkyAtmosphere
 import typings.cesium.cesiumMod.SkyBox
 import typings.cesium.cesiumMod.TerrainProvider
+import typings.cesium.cesiumNumbers.`false`
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,9 +30,9 @@ trait Anon_Animation extends js.Object {
   var fullscreenButton: js.UndefOr[Boolean] = js.undefined
   var fullscreenElement: js.UndefOr[Element | String] = js.undefined
   var geocoder: js.UndefOr[Boolean] = js.undefined
-  var globe: js.UndefOr[Globe] = js.undefined
+  var globe: js.UndefOr[Globe | `false`] = js.undefined
   var homeButton: js.UndefOr[Boolean] = js.undefined
-  var imageryProvider: js.UndefOr[ImageryProvider] = js.undefined
+  var imageryProvider: js.UndefOr[ImageryProvider | `false`] = js.undefined
   var imageryProviderViewModels: js.UndefOr[js.Array[ProviderViewModel]] = js.undefined
   var infoBox: js.UndefOr[Boolean] = js.undefined
   var mapMode2D: js.UndefOr[MapMode2D] = js.undefined
@@ -51,8 +52,8 @@ trait Anon_Animation extends js.Object {
   var shadows: js.UndefOr[Boolean] = js.undefined
   var shouldAnimate: js.UndefOr[Boolean] = js.undefined
   var showRenderLoopErrors: js.UndefOr[Boolean] = js.undefined
-  var skyAtmosphere: js.UndefOr[SkyAtmosphere] = js.undefined
-  var skyBox: js.UndefOr[SkyBox] = js.undefined
+  var skyAtmosphere: js.UndefOr[SkyAtmosphere | `false`] = js.undefined
+  var skyBox: js.UndefOr[SkyBox | `false`] = js.undefined
   var targetFrameRate: js.UndefOr[Double] = js.undefined
   var terrainExaggeration: js.UndefOr[Double] = js.undefined
   var terrainProvider: js.UndefOr[TerrainProvider] = js.undefined
@@ -77,9 +78,9 @@ object Anon_Animation {
     fullscreenButton: js.UndefOr[Boolean] = js.undefined,
     fullscreenElement: Element | String = null,
     geocoder: js.UndefOr[Boolean] = js.undefined,
-    globe: Globe = null,
+    globe: Globe | `false` = null,
     homeButton: js.UndefOr[Boolean] = js.undefined,
-    imageryProvider: ImageryProvider = null,
+    imageryProvider: ImageryProvider | `false` = null,
     imageryProviderViewModels: js.Array[ProviderViewModel] = null,
     infoBox: js.UndefOr[Boolean] = js.undefined,
     mapMode2D: MapMode2D = null,
@@ -99,8 +100,8 @@ object Anon_Animation {
     shadows: js.UndefOr[Boolean] = js.undefined,
     shouldAnimate: js.UndefOr[Boolean] = js.undefined,
     showRenderLoopErrors: js.UndefOr[Boolean] = js.undefined,
-    skyAtmosphere: SkyAtmosphere = null,
-    skyBox: SkyBox = null,
+    skyAtmosphere: SkyAtmosphere | `false` = null,
+    skyBox: SkyBox | `false` = null,
     targetFrameRate: Int | Double = null,
     terrainExaggeration: Int | Double = null,
     terrainProvider: TerrainProvider = null,
@@ -122,9 +123,9 @@ object Anon_Animation {
     if (!js.isUndefined(fullscreenButton)) __obj.updateDynamic("fullscreenButton")(fullscreenButton)
     if (fullscreenElement != null) __obj.updateDynamic("fullscreenElement")(fullscreenElement.asInstanceOf[js.Any])
     if (!js.isUndefined(geocoder)) __obj.updateDynamic("geocoder")(geocoder)
-    if (globe != null) __obj.updateDynamic("globe")(globe)
+    if (globe != null) __obj.updateDynamic("globe")(globe.asInstanceOf[js.Any])
     if (!js.isUndefined(homeButton)) __obj.updateDynamic("homeButton")(homeButton)
-    if (imageryProvider != null) __obj.updateDynamic("imageryProvider")(imageryProvider)
+    if (imageryProvider != null) __obj.updateDynamic("imageryProvider")(imageryProvider.asInstanceOf[js.Any])
     if (imageryProviderViewModels != null) __obj.updateDynamic("imageryProviderViewModels")(imageryProviderViewModels)
     if (!js.isUndefined(infoBox)) __obj.updateDynamic("infoBox")(infoBox)
     if (mapMode2D != null) __obj.updateDynamic("mapMode2D")(mapMode2D)
@@ -144,8 +145,8 @@ object Anon_Animation {
     if (!js.isUndefined(shadows)) __obj.updateDynamic("shadows")(shadows)
     if (!js.isUndefined(shouldAnimate)) __obj.updateDynamic("shouldAnimate")(shouldAnimate)
     if (!js.isUndefined(showRenderLoopErrors)) __obj.updateDynamic("showRenderLoopErrors")(showRenderLoopErrors)
-    if (skyAtmosphere != null) __obj.updateDynamic("skyAtmosphere")(skyAtmosphere)
-    if (skyBox != null) __obj.updateDynamic("skyBox")(skyBox)
+    if (skyAtmosphere != null) __obj.updateDynamic("skyAtmosphere")(skyAtmosphere.asInstanceOf[js.Any])
+    if (skyBox != null) __obj.updateDynamic("skyBox")(skyBox.asInstanceOf[js.Any])
     if (targetFrameRate != null) __obj.updateDynamic("targetFrameRate")(targetFrameRate.asInstanceOf[js.Any])
     if (terrainExaggeration != null) __obj.updateDynamic("terrainExaggeration")(terrainExaggeration.asInstanceOf[js.Any])
     if (terrainProvider != null) __obj.updateDynamic("terrainProvider")(terrainProvider)

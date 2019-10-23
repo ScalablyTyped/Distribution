@@ -5,15 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArraySqlTokenType extends _SqlTokenType {
-  var memberType: String
+  var memberType: TypeNameIdentifierType | SqlTokenType
   var `type`: js.Symbol
-  var values: js.Array[PrimitiveValueExpressionType]
+  var values: PositionalParameterValuesType
 }
 
 object ArraySqlTokenType {
   @scala.inline
-  def apply(memberType: String, `type`: js.Symbol, values: js.Array[PrimitiveValueExpressionType]): ArraySqlTokenType = {
-    val __obj = js.Dynamic.literal(memberType = memberType, values = values)
+  def apply(
+    memberType: TypeNameIdentifierType | SqlTokenType,
+    `type`: js.Symbol,
+    values: PositionalParameterValuesType
+  ): ArraySqlTokenType = {
+    val __obj = js.Dynamic.literal(memberType = memberType.asInstanceOf[js.Any], values = values)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArraySqlTokenType]
   }

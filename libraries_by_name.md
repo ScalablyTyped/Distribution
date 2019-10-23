@@ -1684,6 +1684,7 @@
 | [emoji-js](./e/emoji-js) | A JS Emoji conversion library | emoji, emoticon, mobile, browser |
 | [emoji-mart](./e/emoji-mart) | Customizable Slack-like emoji picker for React | react, emoji, picker |
 | [emoji-regex](./e/emoji-regex) | A regular expression to match all Emoji-only symbo | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji |
+| [emoji-strip](./e/emoji-strip) | Strip emoji from a string in Node.js and browsers. | emoji, strip, remove, emoticons |
 | [emojione](./e/emojione) | EmojiOne is a complete set of emojis designed for  | emojione, EmojiOne, emoji, emojis, emoticons, smileys, smilies, unicode, emoji set |
 | [emotion](./e/emotion) | The Next Generation of CSS-in-JS. | styles, emotion, react, css, css-in-js |
 | [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-c | react, theme, theming, emotion, cssinjs, css-in-js |
@@ -2464,6 +2465,7 @@
 | [google-cloud__storage](./g/google-cloud__storage) | Cloud Storage Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google storage, storage |
 | [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google cloud-tasks, cloud-tasks, Cloud Tasks API |
 | [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
+| [google-ddns](./g/google-ddns) | Google Dynamic DNS client update tool. Updates the | google, ddns, dynamic, dns, domain, domains, client, dynamic dns, google dynamic dns, google dynamic dns client, google ddns, google ddns client, google-dynamic-dns |
 | [google-drive-realtime-api](./g/google-drive-realtime-api) | - | - |
 | [google-earth](./g/google-earth) | - | - |
 | [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts  | google, fonts, webfonts, inline, embed, append |
@@ -2788,6 +2790,7 @@
 | [html-validator](./h/html-validator) | Validate html using validator.w3.org/nu | html-validator, validation |
 | [html-void-elements](./h/html-void-elements) | List of known void HTML elements | html, void, tag, name, element, tagname, w3c, whatwg |
 | [html-webpack-plugin](./h/html-webpack-plugin) | Simplifies creation of HTML files to serve your we | webpack, plugin, html, html-webpack-plugin |
+| [html-webpack-tags-plugin](./h/html-webpack-tags-plugin) | lets you define html tags to inject with html-webp | webpack, plugin, html-webpack-plugin, html, tags, inject, include, assets |
 | [html-webpack-template](./h/html-webpack-template) | A template with more features than the default htm | webpack, template, html-webpack-plugin, index.html, index.ejs |
 | [html2canvas](./h/html2canvas) | Screenshots with JavaScript | - |
 | [html5-history](./h/html5-history) | A npm friendly version of history.js | - |
@@ -2851,6 +2854,7 @@
 | [ibm-cloud-sdk-core](./i/ibm-cloud-sdk-core) | Core functionality to support SDKs generated with  | ibm, sdk, openapi, core |
 | [ibm-mobilefirst](./i/ibm-mobilefirst) | - | - |
 | [ibm_db](./i/ibm_db) | IBM DB2 and IBM Informix bindings for node | node, odbc, db2, driver |
+| [ical](./i/ical) | A tolerant, minimal icalendar parser | ical, ics, calendar |
 | [icepick](./i/icepick) | Utilities for treating frozen JavaScript objects a | freeze, frozen, immutable, immutability, persistent, collections, structural, sharing, update, redux, flux, store, react, mori, clojure |
 | [icheck](./i/icheck) | Highly customizable checkboxes and radio buttons ( | - |
 | [icon-gen](./i/icon-gen) | Generate an icon files from the SVG or PNG files | Icon, Generator, SVG, CLI |
@@ -2885,6 +2889,7 @@
 | [imagemin-optipng](./i/imagemin-optipng) | OptiPNG imagemin plugin | compress, image, imageminplugin, img, minify, optimize, optipng, png |
 | [imagemin-pngquant](./i/imagemin-pngquant) | Imagemin plugin for pngquant | compress, image, imageminplugin, img, minify, optimize, png, pngquant |
 | [imagemin-svgo](./i/imagemin-svgo) | SVGO imagemin plugin | compress, image, imageminplugin, img, minify, optimize, svg, svgo |
+| [imagemin-webp](./i/imagemin-webp) | WebP imagemin plugin | compress, cwebp, image, imageminplugin, img, jpg, minify, optimize, png, tif, webp |
 | [images](./i/images) | Cross-platform image decoder(webp/png/jpeg/gif) an | image, decoder, encoder, webp, png, jpeg, gif, cross-platform, images |
 | [imagesloaded](./i/imagesloaded) | JavaScript is all like _You images done yet or wha | images, loaded, ui, dom, jquery-plugin |
 | [imap](./i/imap) | An IMAP module for node.js that makes communicatin | imap, mail, email, reader, client |
@@ -3562,6 +3567,7 @@
 | [jwt-then](./j/jwt-then) | jwt as promised | jwt, then, promise |
 | [k6](./k/k6) | Dummy package for autocompleting k6 scripts. | - |
 | [kafka-node](./k/kafka-node) | Client for Apache Kafka v0.9.x, v0.10.x and v0.11. | kafka, consumer, producer, broker |
+| [kafka-node-avro](./k/kafka-node-avro) | kafka avro serialization | kafka, node, avro, kafka-node, avsc |
 | [kafkajs](./k/kafkajs) | A modern Apache Kafka client for node.js | kafka, sasl, scram |
 | [kamailio-kemi](./k/kamailio-kemi) | - | - |
 | [karma](./k/karma) | Spectacular Test Runner for JavaScript. | karma, spectacular, runner, karma, js, javascript, testing, test, remote, execution |
@@ -3799,6 +3805,7 @@
 | [libxslt](./l/libxslt) | Node.js bindings for libxslt compatible with libxm | xml, xsl, xslt, libxslt, bindings |
 | [license-checker](./l/license-checker) | Check license info for a package | license, cli, checker, oss |
 | [license-checker-webpack-p](./l/license-checker-webpack-plugin) | Verifies licenses of all external dependencies in  | license, webpack |
+| [lifeomic__axios-fetch](./l/lifeomic__axios-fetch) | A WebAPI Fetch implementation backed by an Axios c | fetch, axios |
 | [liftoff](./l/liftoff) | Launch your command line tool with ease. | command line |
 | [lightpick](./l/lightpick) | Javascript date range picker - lightweight, no jQu | datepicker, date, daterange, date, picker, range |
 | [lightship](./l/lightship) | Abstracts readiness/ liveness checks and graceful  | kubernetes |
@@ -5006,6 +5013,7 @@
 | [park-miller](./p/park-miller) | Park-Miller pseudorandom number generator (PRNG) | park-miller, park, miller, pseudorandom, number, generator, algorithm, random, lcg, congruential, integer, int, float, boolean, seed, seeded, prng, rng, lehmer |
 | [parquetjs](./p/parquetjs) | fully asynchronous, pure JavaScript implementation | dremel, parquet |
 | [parse](./p/parse) | The Parse JavaScript SDK | cloud, mobile, api |
+| [parse-author](./p/parse-author) | Parse an author, contributor, maintainer or other  | author, authors, contributor, exec, expression, extract, maintainer, maintainers, match, package, parse, person, pkg, re, regex, regexp, regular, somebody |
 | [parse-color](./p/parse-color) | parse a css color string (plus hsv and cmyk) into  | rgb, rgba, hsl, hsla, hsv, hsva, cmyk, cmyka, color, css, alpha |
 | [parse-columns](./p/parse-columns) | Parse text columns, like the output of unix comman | parse, parser, columns, column, col, row, text, string, str, unix, command, cmd, output, csv, shell, sh, term, table |
 | [parse-domain](./p/parse-domain) | Splits an url into sub-domain, domain and effectiv | domain, url, sub-domain, tld, parse, extract, sanitize, country, top-level |
@@ -5639,6 +5647,7 @@
 | [react-day-picker](./r/react-day-picker) | Flexible date picker component for React | react, react-component, component, calendar, date-picker, datepicker, date, picker, moment, momentjs |
 | [react-dev-utils](./r/react-dev-utils) | Webpack utilities used by Create React App | - |
 | [react-devtools](./r/react-devtools) | Use react-devtools outside of the browser | - |
+| [react-div-100vh](./r/react-div-100vh) | A React component that aims to solve '100vh' issue | - |
 | [react-dnd](./r/react-dnd) | Drag and Drop for React | - |
 | [react-dnd-html5-backend](./r/react-dnd-html5-backend) | HTML5 backend for React DnD | - |
 | [react-dnd-multi-backend](./r/react-dnd-multi-backend) | Multi Backend system compatible with React DnD | react, dnd, drag, drop, html5, touch, react-dnd |
@@ -5800,6 +5809,7 @@
 | [react-native-audio](./r/react-native-audio) | React Native extension for recording audio | react-native, audio, record |
 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API | react-native, react, auth0, jwt, authentication, lock, auth0-lock, login, sdk, api |
 | [react-native-autocomplete](./r/react-native-autocomplete-input) | Pure javascript autocomplete input for react-nativ | react-native, iOS, input, Android, autocomplete |
+| [react-native-awesome-card](./r/react-native-awesome-card-io) | A complete and cross-platform React Native compone | react-native, react-component, card.io, credit card, scan, android, ios |
 | [react-native-background-t](./r/react-native-background-timer) | Emit event periodically (even when app is in the b | android, ios, react-component, react-native, timer |
 | [react-native-bluetooth-se](./r/react-native-bluetooth-serial) | 'Bluetooth serial for react native' | bluetooth, react-native |
 | [react-native-calendars](./r/react-native-calendars) | React Native Calendar Components | - |
@@ -6623,6 +6633,7 @@
 | [simple-mock](./s/simple-mock) | Super simple stubs and spies with 1-step sandbox r | test, simplemock, simple, mock, stub, spy, fake |
 | [simple-oauth2](./s/simple-oauth2) | Node.js client for OAuth2 | oauth2, authorization, password, client, credentials |
 | [simple-peer](./s/simple-peer) | Simple one-to-one WebRTC video/voice and data chan | data, data channel, data channel stream, data channels, p2p, peer, peer, peer-to-peer, stream, video, voice, webrtc, webrtc stream |
+| [simple-query-string](./s/simple-query-string) | Fast and simple way to parse and stringify URL que | decode, encode, stringify, parse, uri, url, parameter, param, qs, query, querystring, query-string, simple-helpers |
 | [simple-url-cache](./s/simple-url-cache) | A simple cache engine used to store html document  | node.js, cache, file caching, url caching, file cache, url cache, Redis, FileStorage |
 | [simple-websocket](./s/simple-websocket) | Simple, EventEmitter API for WebSockets (browser) | simple, simple websocket, simple-websocket, socket, websocket, ws |
 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs | xml, parser, builder, libxml |
@@ -6733,6 +6744,7 @@
 | [sort-array](./s/sort-array) | Sort an array of objects by any property value, at | sort, by, array, recordset, objects, sorted, asc, desc |
 | [sort-object-keys](./s/sort-object-keys) | Sort an object's keys, including an optional key l | keys, object, sort |
 | [sortablejs](./s/sortablejs) | JavaScript library for reorderable drag-and-drop l | sortable, reorder, drag, meteor, angular, ng-sortable, react, vue, mixin |
+| [sortobject](./s/sortobject) | Returns a copy of an object, sorted deeply by its  | sort, object, keys, comparator, array, deep, deeply |
 | [soundjs](./s/soundjs) | A JavaScript library that provides a simple API, a | createjs, soundjs, gskinner, javascript, audio, webaudio, html5, flash |
 | [soundmanager2](./s/soundmanager2) | A JavaScript Sound API supporting MP3, MPEG4 and H | soundmanager2, soundmanager 2, browser, audio, sound, mp3, mpeg4, html5 |
 | [soupbintcp](./s/soupbintcp) | NASDAQ SoupBinTCP 3.00 client and server | finance, nasdaq, trading |
@@ -6824,6 +6836,7 @@
 | [std](./s/std) | TypeScript is a language for application scale Jav | TypeScript, Microsoft, compiler, language, javascript |
 | [std-mocks](./s/std-mocks) | Mock node stdout and stderr without pain. | - |
 | [stdin](./s/stdin) | Because stdin with node is annoying | - |
+| [stdout-stream](./s/stdout-stream) | Non-blocking stdout stream | - |
 | [steam](./s/steam) | Lets you interface with Steam without running an a | - |
 | [steam-client](./s/steam-client) | SteamClient from node-steam with proper versioning | steam, steam client |
 | [steam-login](./s/steam-login) | Simple Connect / Express Steam authentication libr | authentication, login, steam, user |
@@ -7735,6 +7748,7 @@
 | [wrap-ansi](./w/wrap-ansi) | Wordwrap a string with ANSI escape codes | wrap, break, wordwrap, wordbreak, linewrap, ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
 | [wreck](./w/wreck) | HTTP Client Utilities | utilities, http, client |
 | [wrench](./w/wrench) | Recursive filesystem (and other) operations that N | - |
+| [write](./w/write) | Write data to a file, replacing the file if it alr | async, file path, file system, file, filepath, files, filesystem, folder, fs, fs.writeFile, fs.writeFileSync, path, promise, streams, write file, write-file, writefile, write |
 | [write-file-atomic](./w/write-file-atomic) | Write files in an atomic fashion w/configurable ow | writeFile, atomic |
 | [write-file-atomically](./w/write-file-atomically) | Promisified version of write-file-atomic | write, output, create, fs, file, atomic, atomically, files, async, asynchronous, asynchronously, promise, then |
 | [write-json-file](./w/write-json-file) | Stringify and write JSON to a file atomically | write, json, stringify, file, fs, graceful, stable, sort, newline, indent, atomic, atomically |

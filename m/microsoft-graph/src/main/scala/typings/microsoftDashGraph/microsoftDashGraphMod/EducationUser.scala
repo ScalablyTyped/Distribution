@@ -75,7 +75,7 @@ trait EducationUser extends Entity {
   var student: js.UndefOr[EducationStudent] = js.undefined
   // The user's surname (family name or last name). Supports $filter.
   var surname: js.UndefOr[String] = js.undefined
-  // If the primary role is teacher, this block will conatin teacher specific data.
+  // If the primary role is teacher, this block will contain teacher specific data.
   var teacher: js.UndefOr[EducationTeacher] = js.undefined
   /**
     * A two-letter country code (ISO standard 3166). Required for users who will be assigned licenses due to a legal

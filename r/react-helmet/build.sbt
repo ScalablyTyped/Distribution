@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-helmet"
-version := "5.0-dt-20191015Z-3ff613"
+version := "5.0-dt-20191022Z-6c3010"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

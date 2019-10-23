@@ -105,8 +105,7 @@ trait ShapeData extends js.Object {
     *
     * Represents how the object is attached to the cells below it.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.undefined
   /**

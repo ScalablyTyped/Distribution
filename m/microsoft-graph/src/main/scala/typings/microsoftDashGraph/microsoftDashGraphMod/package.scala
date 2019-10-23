@@ -20,8 +20,12 @@ package object microsoftDashGraphMod {
   type MacOSDeviceFeaturesConfiguration = DeviceConfiguration
   type MacOSOfficeSuiteApp = MobileApp
   type MdmWindowsInformationProtectionPolicy = WindowsInformationProtection
+  type MuteParticipantOperation = CommsOperation
+  type PlayPromptOperation = CommsOperation
   type ReferenceAttachment = Attachment
   type ReportRoot = Entity
+  type SubscribeToToneOperation = CommsOperation
+  type UnmuteParticipantOperation = CommsOperation
   type WindowsInformationProtectionStoreApp = WindowsInformationProtectionApp
   type WorkbookChartFill = Entity
   type WorkbookFunctions = Entity

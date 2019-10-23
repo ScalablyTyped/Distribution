@@ -23,6 +23,13 @@ trait PivotLayoutData extends js.Object {
   var autoFormat: js.UndefOr[Boolean] = js.undefined
   /**
     *
+    * Specifies whether the field list can be shown in the UI.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var enableFieldList: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
     * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
     *
     * [Api set: ExcelApi 1.8]
@@ -62,6 +69,7 @@ object PivotLayoutData {
   @scala.inline
   def apply(
     autoFormat: js.UndefOr[Boolean] = js.undefined,
+    enableFieldList: js.UndefOr[Boolean] = js.undefined,
     layoutType: PivotLayoutType | Compact | Tabular | Outline = null,
     preserveFormatting: js.UndefOr[Boolean] = js.undefined,
     showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined,
@@ -70,6 +78,7 @@ object PivotLayoutData {
   ): PivotLayoutData = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat)
+    if (!js.isUndefined(enableFieldList)) __obj.updateDynamic("enableFieldList")(enableFieldList)
     if (layoutType != null) __obj.updateDynamic("layoutType")(layoutType.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveFormatting)) __obj.updateDynamic("preserveFormatting")(preserveFormatting)
     if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "formatjs__intl-relativetimeformat"
-version := "4.2.0-6fd796"
+version := "4.2.1-397221"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

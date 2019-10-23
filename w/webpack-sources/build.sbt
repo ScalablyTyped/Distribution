@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "webpack-sources"
-version := "0.1-dt-20180625Z-d0a6ac"
+version := "0.1-dt-20180625Z-9b93fa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
   "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-df1e9f",
   "org.scalablytyped" %%% "source-map" % "0.7.3-54a40f",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")

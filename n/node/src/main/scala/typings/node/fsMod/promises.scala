@@ -455,6 +455,7 @@ object promises extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
   def rmdir(path: PathLike): js.Promise[Unit] = js.native
+  def rmdir(path: PathLike, options: RmDirAsyncOptions): js.Promise[Unit] = js.native
   /**
     * Asynchronous stat(2) - Get file status.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

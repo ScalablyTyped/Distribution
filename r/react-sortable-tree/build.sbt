@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sortable-tree"
-version := "0.3-dt-20191001Z-4f20b7"
+version := "0.3-dt-20191001Z-054b71"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
   "org.scalablytyped" %%% "react-dnd" % "9.4.0-424731",
-  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20190930Z-799349",
+  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20191022Z-df9946",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -12,40 +12,35 @@ trait CommentData extends js.Object {
     *
     * Gets the email of the comment's author.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var authorEmail: js.UndefOr[String] = js.undefined
   /**
     *
     * Gets the name of the comment's author.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var authorName: js.UndefOr[String] = js.undefined
   /**
     *
     * Gets or sets the comment's content. The string is plain text.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[String] = js.undefined
   /**
     *
     * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var creationDate: js.UndefOr[Date] = js.undefined
   /**
     *
     * Represents the comment identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var id: js.UndefOr[String] = js.undefined
   /**
@@ -60,8 +55,7 @@ trait CommentData extends js.Object {
     *
     * Represents a collection of reply objects associated with the comment. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var replies: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
   /**

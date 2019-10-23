@@ -63,7 +63,7 @@ object Options {
     replyTo: String | Address = null,
     sender: String | Address = null,
     sendingRate: Int | Double = null,
-    ses: js.Object = null,
+    ses: MailSesOptions = null,
     subject: String = null,
     text: String | Buffer | Readable | AttachmentLike = null,
     textEncoding: TextEncoding = null,

@@ -137,6 +137,15 @@ object intlDashMessageformatMod extends js.Object {
     formatters: Formatters,
     formats: Formats,
     values: Record[String, _],
+    currentPluralValue: Double
+  ): js.Array[MessageFormatPart] = js.native
+  def formatToParts(
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[String, _],
+    currentPluralValue: Double,
     originalMessage: String
   ): js.Array[MessageFormatPart] = js.native
   def formatToParts(
@@ -158,6 +167,15 @@ object intlDashMessageformatMod extends js.Object {
     formatters: Formatters,
     formats: Formats,
     values: Record[String, _],
+    currentPluralValue: Double
+  ): js.Array[MessageFormatPart] = js.native
+  def formatToParts(
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[String, _],
+    currentPluralValue: Double,
     originalMessage: String
   ): js.Array[MessageFormatPart] = js.native
   def formatToString(els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): String = js.native

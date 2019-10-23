@@ -171,7 +171,7 @@ trait Group extends DirectoryObject {
     */
   var unseenCount: js.UndefOr[Double] = js.undefined
   /**
-    * Specifies the visibility of an Office 365 group. Possible values are: private, public, or hiddenmembership; blank
+    * Specifies the visibility of an Office 365 group. Possible values are: Private, Public, or Hiddenmembership; blank
     * values are treated as public. See group visibility options to learn more.Visibility can be set only when a group is
     * created; it is not editable.Visibility is supported only for unified groups; it is not supported for security groups.
     * Returned by default.

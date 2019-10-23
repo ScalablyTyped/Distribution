@@ -9,7 +9,7 @@ trait WorkbookTableColumn extends Entity {
   var filter: js.UndefOr[WorkbookFilter] = js.undefined
   // Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
   var index: js.UndefOr[Double] = js.undefined
-  // Returns the name of the table column. Read-only.
+  // Returns the name of the table column.
   var name: js.UndefOr[String] = js.undefined
   /**
     * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell

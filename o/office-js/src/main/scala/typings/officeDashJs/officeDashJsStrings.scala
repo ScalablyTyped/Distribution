@@ -60,6 +60,9 @@ object officeDashJsStrings {
   sealed trait AboveAverage extends js.Object
   
   @js.native
+  sealed trait Absolute extends js.Object
+  
+  @js.native
   sealed trait AccentBorderCallout1 extends js.Object
   
   @js.native
@@ -376,6 +379,12 @@ object officeDashJsStrings {
   
   @js.native
   sealed trait Bullet extends js.Object
+  
+  @js.native
+  sealed trait ByColumns extends js.Object
+  
+  @js.native
+  sealed trait ByRows extends js.Object
   
   @js.native
   sealed trait Calculating extends js.Object
@@ -736,6 +745,9 @@ object officeDashJsStrings {
   
   @js.native
   sealed trait DataOnly extends js.Object
+  
+  @js.native
+  sealed trait DataSourceOrder extends js.Object
   
   @js.native
   sealed trait DataValidations extends js.Object
@@ -2076,6 +2088,9 @@ object officeDashJsStrings {
   sealed trait Medium extends js.Object
   
   @js.native
+  sealed trait Mention extends js.Object
+  
+  @js.native
   sealed trait Mercator extends js.Object
   
   @js.native
@@ -2250,6 +2265,9 @@ object officeDashJsStrings {
   sealed trait Off extends js.Object
   
   @js.native
+  sealed trait OneCell extends js.Object
+  
+  @js.native
   sealed trait OneColumn extends js.Object
   
   @js.native
@@ -2386,6 +2404,9 @@ object officeDashJsStrings {
   
   @js.native
   sealed trait PinYin extends js.Object
+  
+  @js.native
+  sealed trait Plain extends js.Object
   
   @js.native
   sealed trait PlainTable1 extends js.Object
@@ -3123,6 +3144,9 @@ object officeDashJsStrings {
   sealed trait Triple extends js.Object
   
   @js.native
+  sealed trait TwoCell extends js.Object
+  
+  @js.native
   sealed trait TwoColumns extends js.Object
   
   @js.native
@@ -3294,6 +3318,9 @@ object officeDashJsStrings {
   sealed trait WorksheetChanged extends js.Object
   
   @js.native
+  sealed trait WorksheetColumnSorted extends js.Object
+  
+  @js.native
   sealed trait WorksheetDeactivated extends js.Object
   
   @js.native
@@ -3303,7 +3330,13 @@ object officeDashJsStrings {
   sealed trait WorksheetFormatChanged extends js.Object
   
   @js.native
+  sealed trait WorksheetRowSorted extends js.Object
+  
+  @js.native
   sealed trait WorksheetSelectionChanged extends js.Object
+  
+  @js.native
+  sealed trait WorksheetSingleClicked extends js.Object
   
   @js.native
   sealed trait World extends js.Object
@@ -3398,6 +3431,8 @@ object officeDashJsStrings {
   def A5: A5 = "A5".asInstanceOf[A5]
   @scala.inline
   def AboveAverage: AboveAverage = "AboveAverage".asInstanceOf[AboveAverage]
+  @scala.inline
+  def Absolute: Absolute = "Absolute".asInstanceOf[Absolute]
   @scala.inline
   def AccentBorderCallout1: AccentBorderCallout1 = "AccentBorderCallout1".asInstanceOf[AccentBorderCallout1]
   @scala.inline
@@ -3610,6 +3645,10 @@ object officeDashJsStrings {
   def BuildingBlockGallery: BuildingBlockGallery = "BuildingBlockGallery".asInstanceOf[BuildingBlockGallery]
   @scala.inline
   def Bullet: Bullet = "Bullet".asInstanceOf[Bullet]
+  @scala.inline
+  def ByColumns: ByColumns = "ByColumns".asInstanceOf[ByColumns]
+  @scala.inline
+  def ByRows: ByRows = "ByRows".asInstanceOf[ByRows]
   @scala.inline
   def Calculating: Calculating = "Calculating".asInstanceOf[Calculating]
   @scala.inline
@@ -3850,6 +3889,8 @@ object officeDashJsStrings {
   def DataBar: DataBar = "DataBar".asInstanceOf[DataBar]
   @scala.inline
   def DataOnly: DataOnly = "DataOnly".asInstanceOf[DataOnly]
+  @scala.inline
+  def DataSourceOrder: DataSourceOrder = "DataSourceOrder".asInstanceOf[DataSourceOrder]
   @scala.inline
   def DataValidations: DataValidations = "DataValidations".asInstanceOf[DataValidations]
   @scala.inline
@@ -4743,6 +4784,8 @@ object officeDashJsStrings {
   @scala.inline
   def Medium: Medium = "Medium".asInstanceOf[Medium]
   @scala.inline
+  def Mention: Mention = "Mention".asInstanceOf[Mention]
+  @scala.inline
   def Mercator: Mercator = "Mercator".asInstanceOf[Mercator]
   @scala.inline
   def Middle: Middle = "Middle".asInstanceOf[Middle]
@@ -4859,6 +4902,8 @@ object officeDashJsStrings {
   @scala.inline
   def Off: Off = "Off".asInstanceOf[Off]
   @scala.inline
+  def OneCell: OneCell = "OneCell".asInstanceOf[OneCell]
+  @scala.inline
   def OneColumn: OneColumn = "OneColumn".asInstanceOf[OneColumn]
   @scala.inline
   def OneStdDevAboveAverage: OneStdDevAboveAverage = "OneStdDevAboveAverage".asInstanceOf[OneStdDevAboveAverage]
@@ -4950,6 +4995,8 @@ object officeDashJsStrings {
   def PieWedge: PieWedge = "PieWedge".asInstanceOf[PieWedge]
   @scala.inline
   def PinYin: PinYin = "PinYin".asInstanceOf[PinYin]
+  @scala.inline
+  def Plain: Plain = "Plain".asInstanceOf[Plain]
   @scala.inline
   def PlainTable1: PlainTable1 = "PlainTable1".asInstanceOf[PlainTable1]
   @scala.inline
@@ -5441,6 +5488,8 @@ object officeDashJsStrings {
   @scala.inline
   def Triple: Triple = "Triple".asInstanceOf[Triple]
   @scala.inline
+  def TwoCell: TwoCell = "TwoCell".asInstanceOf[TwoCell]
+  @scala.inline
   def TwoColumns: TwoColumns = "TwoColumns".asInstanceOf[TwoColumns]
   @scala.inline
   def TwoDotDashLine: TwoDotDashLine = "TwoDotDashLine".asInstanceOf[TwoDotDashLine]
@@ -5555,13 +5604,19 @@ object officeDashJsStrings {
   @scala.inline
   def WorksheetChanged: WorksheetChanged = "WorksheetChanged".asInstanceOf[WorksheetChanged]
   @scala.inline
+  def WorksheetColumnSorted: WorksheetColumnSorted = "WorksheetColumnSorted".asInstanceOf[WorksheetColumnSorted]
+  @scala.inline
   def WorksheetDeactivated: WorksheetDeactivated = "WorksheetDeactivated".asInstanceOf[WorksheetDeactivated]
   @scala.inline
   def WorksheetDeleted: WorksheetDeleted = "WorksheetDeleted".asInstanceOf[WorksheetDeleted]
   @scala.inline
   def WorksheetFormatChanged: WorksheetFormatChanged = "WorksheetFormatChanged".asInstanceOf[WorksheetFormatChanged]
   @scala.inline
+  def WorksheetRowSorted: WorksheetRowSorted = "WorksheetRowSorted".asInstanceOf[WorksheetRowSorted]
+  @scala.inline
   def WorksheetSelectionChanged: WorksheetSelectionChanged = "WorksheetSelectionChanged".asInstanceOf[WorksheetSelectionChanged]
+  @scala.inline
+  def WorksheetSingleClicked: WorksheetSingleClicked = "WorksheetSingleClicked".asInstanceOf[WorksheetSingleClicked]
   @scala.inline
   def World: World = "World".asInstanceOf[World]
   @scala.inline

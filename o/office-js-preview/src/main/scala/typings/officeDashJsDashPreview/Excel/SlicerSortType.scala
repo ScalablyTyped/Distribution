@@ -11,8 +11,7 @@ sealed trait SlicerSortType extends js.Object
   *
   * Specifies the slicer sort behavior for Slicer.sortBy API.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerSortType")
 @js.native

@@ -10,8 +10,7 @@ trait TimelineStyleUpdateData extends js.Object {
     *
     * Gets the name of the TimelineStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[String] = js.undefined
 }

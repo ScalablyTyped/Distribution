@@ -1,0 +1,71 @@
+package typings.microsoftDashGraph.microsoftDashGraphMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Call extends Entity {
+  var callbackUri: js.UndefOr[String] = js.undefined
+  var chatInfo: js.UndefOr[ChatInfo] = js.undefined
+  var direction: js.UndefOr[CallDirection] = js.undefined
+  var mediaConfig: js.UndefOr[MediaConfig] = js.undefined
+  var mediaState: js.UndefOr[CallMediaState] = js.undefined
+  var meetingInfo: js.UndefOr[MeetingInfo] = js.undefined
+  var myParticipantId: js.UndefOr[String] = js.undefined
+  var operations: js.UndefOr[js.Array[CommsOperation]] = js.undefined
+  var participants: js.UndefOr[js.Array[Participant]] = js.undefined
+  var requestedModalities: js.UndefOr[js.Array[Modality]] = js.undefined
+  var resultInfo: js.UndefOr[ResultInfo] = js.undefined
+  var source: js.UndefOr[ParticipantInfo] = js.undefined
+  var state: js.UndefOr[CallState] = js.undefined
+  var subject: js.UndefOr[String] = js.undefined
+  var targets: js.UndefOr[js.Array[ParticipantInfo]] = js.undefined
+  var tenantId: js.UndefOr[String] = js.undefined
+  var toneInfo: js.UndefOr[ToneInfo] = js.undefined
+}
+
+object Call {
+  @scala.inline
+  def apply(
+    callbackUri: String = null,
+    chatInfo: ChatInfo = null,
+    direction: CallDirection = null,
+    id: String = null,
+    mediaConfig: MediaConfig = null,
+    mediaState: CallMediaState = null,
+    meetingInfo: MeetingInfo = null,
+    myParticipantId: String = null,
+    operations: js.Array[CommsOperation] = null,
+    participants: js.Array[Participant] = null,
+    requestedModalities: js.Array[Modality] = null,
+    resultInfo: ResultInfo = null,
+    source: ParticipantInfo = null,
+    state: CallState = null,
+    subject: String = null,
+    targets: js.Array[ParticipantInfo] = null,
+    tenantId: String = null,
+    toneInfo: ToneInfo = null
+  ): Call = {
+    val __obj = js.Dynamic.literal()
+    if (callbackUri != null) __obj.updateDynamic("callbackUri")(callbackUri)
+    if (chatInfo != null) __obj.updateDynamic("chatInfo")(chatInfo)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (mediaConfig != null) __obj.updateDynamic("mediaConfig")(mediaConfig)
+    if (mediaState != null) __obj.updateDynamic("mediaState")(mediaState)
+    if (meetingInfo != null) __obj.updateDynamic("meetingInfo")(meetingInfo)
+    if (myParticipantId != null) __obj.updateDynamic("myParticipantId")(myParticipantId)
+    if (operations != null) __obj.updateDynamic("operations")(operations)
+    if (participants != null) __obj.updateDynamic("participants")(participants)
+    if (requestedModalities != null) __obj.updateDynamic("requestedModalities")(requestedModalities)
+    if (resultInfo != null) __obj.updateDynamic("resultInfo")(resultInfo)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
+    if (toneInfo != null) __obj.updateDynamic("toneInfo")(toneInfo)
+    __obj.asInstanceOf[Call]
+  }
+}
+

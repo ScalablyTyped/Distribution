@@ -25,7 +25,6 @@ object assertMod extends js.Object {
   def apply(value: js.Any): Unit = js.native
   def apply(value: js.Any, message: java.lang.String): Unit = js.native
   def apply(value: js.Any, message: Error): Unit = js.native
-  /** @deprecated since v9.9.0 - use deepStrictEqual() instead. */
   def deepEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
@@ -59,7 +58,6 @@ object assertMod extends js.Object {
   def doesNotThrow(block: js.Function0[_], error: RegExp, message: Error): Unit = js.native
   def doesNotThrow(block: js.Function0[_], message: java.lang.String): Unit = js.native
   def doesNotThrow(block: js.Function0[_], message: Error): Unit = js.native
-  /** @deprecated since v9.9.0 - use strictEqual() instead. */
   def equal(actual: js.Any, expected: js.Any): Unit = js.native
   def equal(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def equal(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
@@ -87,14 +85,12 @@ object assertMod extends js.Object {
   def fail(message: java.lang.String): scala.Nothing = js.native
   def fail(message: Error): scala.Nothing = js.native
   def ifError(value: js.Any): Unit = js.native
-  /** @deprecated since v9.9.0 - use notDeepStrictEqual() instead. */
   def notDeepEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def notDeepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def notDeepEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
-  /** @deprecated since v9.9.0 - use notStrictEqual() instead. */
   def notEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def notEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def notEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native

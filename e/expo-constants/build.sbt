@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-constants"
-version := "7.0.0-a83f77"
+version := "7.0.1-f32946"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

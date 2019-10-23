@@ -20,9 +20,14 @@ trait CropperProps extends js.Object {
   var maxZoom: js.UndefOr[Double] = js.undefined
   var minZoom: js.UndefOr[Double] = js.undefined
   var onCropComplete: js.UndefOr[js.Function2[/* croppedArea */ Area, /* croppedAreaPixels */ Area, Unit]] = js.undefined
+  var onImageLoaded: js.UndefOr[js.Function1[/* imageSize */ ImageSize, Unit]] = js.undefined
   var onImgError: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onInteractionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onInteractionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onRotationChange: js.UndefOr[js.Function1[/* rotation */ Double, Unit]] = js.undefined
   var onZoomChange: js.UndefOr[js.Function1[/* zoom */ Double, Unit]] = js.undefined
   var restrictPosition: js.UndefOr[Boolean] = js.undefined
+  var rotation: js.UndefOr[Double] = js.undefined
   var showGrid: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[Anon_ContainerStyle] = js.undefined
   var zoom: js.UndefOr[Double] = js.undefined
@@ -45,9 +50,14 @@ object CropperProps {
     maxZoom: Int | Double = null,
     minZoom: Int | Double = null,
     onCropComplete: (/* croppedArea */ Area, /* croppedAreaPixels */ Area) => Unit = null,
+    onImageLoaded: /* imageSize */ ImageSize => Unit = null,
     onImgError: () => Unit = null,
+    onInteractionEnd: () => Unit = null,
+    onInteractionStart: () => Unit = null,
+    onRotationChange: /* rotation */ Double => Unit = null,
     onZoomChange: /* zoom */ Double => Unit = null,
     restrictPosition: js.UndefOr[Boolean] = js.undefined,
+    rotation: Int | Double = null,
     showGrid: js.UndefOr[Boolean] = js.undefined,
     style: Anon_ContainerStyle = null,
     zoom: Int | Double = null,
@@ -63,9 +73,14 @@ object CropperProps {
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (onCropComplete != null) __obj.updateDynamic("onCropComplete")(js.Any.fromFunction2(onCropComplete))
+    if (onImageLoaded != null) __obj.updateDynamic("onImageLoaded")(js.Any.fromFunction1(onImageLoaded))
     if (onImgError != null) __obj.updateDynamic("onImgError")(js.Any.fromFunction0(onImgError))
+    if (onInteractionEnd != null) __obj.updateDynamic("onInteractionEnd")(js.Any.fromFunction0(onInteractionEnd))
+    if (onInteractionStart != null) __obj.updateDynamic("onInteractionStart")(js.Any.fromFunction0(onInteractionStart))
+    if (onRotationChange != null) __obj.updateDynamic("onRotationChange")(js.Any.fromFunction1(onRotationChange))
     if (onZoomChange != null) __obj.updateDynamic("onZoomChange")(js.Any.fromFunction1(onZoomChange))
     if (!js.isUndefined(restrictPosition)) __obj.updateDynamic("restrictPosition")(restrictPosition)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid)
     if (style != null) __obj.updateDynamic("style")(style)
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])

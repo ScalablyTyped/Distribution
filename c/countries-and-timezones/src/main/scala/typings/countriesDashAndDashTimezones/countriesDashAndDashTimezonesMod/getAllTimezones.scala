@@ -1,5 +1,6 @@
 package typings.countriesDashAndDashTimezones.countriesDashAndDashTimezonesMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("countries-and-timezones", "getAllTimezones")
 @js.native
 object getAllTimezones extends js.Object {
-  def apply(): js.Array[Timezone] = js.native
+  def apply(): StringDictionary[Timezone] = js.native
 }
 

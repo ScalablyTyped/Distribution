@@ -38,6 +38,10 @@ trait ISubscriptionCustCreationOptions extends IDataOptionsWithMetadata {
   var days_until_due: js.UndefOr[Double] = js.undefined
   var default_source: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
   /**
+    * The tax rates that will apply to the subscription.
+    */
+  var default_tax_rates: js.UndefOr[js.Array[String]] = js.undefined
+  /**
     * List of subscription items, each with an attached plan.
     */
   var items: js.UndefOr[js.Array[ISubscriptionCreationItem]] = js.undefined
@@ -97,6 +101,7 @@ object ISubscriptionCustCreationOptions {
     coupon: String = null,
     days_until_due: Int | Double = null,
     default_source: String | ICardSourceCreationOptions = null,
+    default_tax_rates: js.Array[String] = null,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     items: js.Array[ISubscriptionCreationItem] = null,
@@ -117,6 +122,7 @@ object ISubscriptionCustCreationOptions {
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
     if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
     if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
+    if (default_tax_rates != null) __obj.updateDynamic("default_tax_rates")(default_tax_rates)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (items != null) __obj.updateDynamic("items")(items)

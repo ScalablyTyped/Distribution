@@ -20,11 +20,13 @@ object CodeAuthorizeOptions {
     scope: AuthorizeScope,
     interactive: AuthorizeInteractiveOption = null,
     popup: js.UndefOr[Boolean] = js.undefined,
+    scope_data: AuthorizeScopeData = null,
     state: String = null
   ): CodeAuthorizeOptions = {
     val __obj = js.Dynamic.literal(response_type = response_type, scope = scope.asInstanceOf[js.Any])
     if (interactive != null) __obj.updateDynamic("interactive")(interactive)
     if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
+    if (scope_data != null) __obj.updateDynamic("scope_data")(scope_data)
     if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[CodeAuthorizeOptions]
   }

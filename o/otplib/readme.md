@@ -1,7 +1,7 @@
 
 # Scala.js typings for otplib
 
-Typings are for version 7.0
+Typings are for version 11.0.1
 
 ## Library description:
 HMAC-based (HOTP) and Time-based (TOTP) One-Time Password library
@@ -24,7 +24,7 @@ HMAC-based (HOTP) and Time-based (TOTP) One-Time Password library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

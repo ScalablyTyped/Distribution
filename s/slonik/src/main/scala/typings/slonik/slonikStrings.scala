@@ -3,6 +3,7 @@ package typings.slonik
 import typings.slonik.slonikMod.ComparisonOperatorType
 import typings.slonik.slonikMod.ConnectionTypeType
 import typings.slonik.slonikMod.LogicalBooleanOperatorType
+import typings.slonik.slonikMod.TypeNameIdentifierType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,6 +60,33 @@ object slonikStrings {
   @js.native
   sealed trait UPDATE extends js.Object
   
+  @js.native
+  sealed trait bool extends TypeNameIdentifierType
+  
+  @js.native
+  sealed trait bytea extends TypeNameIdentifierType
+  
+  @js.native
+  sealed trait float4 extends TypeNameIdentifierType
+  
+  @js.native
+  sealed trait float8 extends TypeNameIdentifierType
+  
+  @js.native
+  sealed trait int2 extends TypeNameIdentifierType
+  
+  @js.native
+  sealed trait int4 extends TypeNameIdentifierType
+  
+  @js.native
+  sealed trait json extends TypeNameIdentifierType
+  
+  @js.native
+  sealed trait text extends TypeNameIdentifierType
+  
+  @js.native
+  sealed trait timestamptz extends TypeNameIdentifierType
+  
   @scala.inline
   def `!=`: `!=` = "!=".asInstanceOf[`!=`]
   @scala.inline
@@ -93,5 +121,23 @@ object slonikStrings {
   def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   @scala.inline
   def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
+  @scala.inline
+  def bool: bool = "bool".asInstanceOf[bool]
+  @scala.inline
+  def bytea: bytea = "bytea".asInstanceOf[bytea]
+  @scala.inline
+  def float4: float4 = "float4".asInstanceOf[float4]
+  @scala.inline
+  def float8: float8 = "float8".asInstanceOf[float8]
+  @scala.inline
+  def int2: int2 = "int2".asInstanceOf[int2]
+  @scala.inline
+  def int4: int4 = "int4".asInstanceOf[int4]
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def timestamptz: timestamptz = "timestamptz".asInstanceOf[timestamptz]
 }
 

@@ -34,7 +34,7 @@ trait ChartOptions extends js.Object {
   var responsiveAnimationDuration: js.UndefOr[Double] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
   var scale: js.UndefOr[RadialLinearScale] = js.undefined
-  var scales: js.UndefOr[ChartScales] = js.undefined
+  var scales: js.UndefOr[ChartScales | LinearScale | LogarithmicScale | TimeScale] = js.undefined
   var showLines: js.UndefOr[Boolean] = js.undefined
   var spanGaps: js.UndefOr[Boolean] = js.undefined
   var title: js.UndefOr[ChartTitleOptions] = js.undefined
@@ -64,7 +64,7 @@ object ChartOptions {
     responsiveAnimationDuration: Int | Double = null,
     rotation: Int | Double = null,
     scale: RadialLinearScale = null,
-    scales: ChartScales = null,
+    scales: ChartScales | LinearScale | LogarithmicScale | TimeScale = null,
     showLines: js.UndefOr[Boolean] = js.undefined,
     spanGaps: js.UndefOr[Boolean] = js.undefined,
     title: ChartTitleOptions = null,
@@ -91,7 +91,7 @@ object ChartOptions {
     if (responsiveAnimationDuration != null) __obj.updateDynamic("responsiveAnimationDuration")(responsiveAnimationDuration.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale)
-    if (scales != null) __obj.updateDynamic("scales")(scales)
+    if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
     if (!js.isUndefined(showLines)) __obj.updateDynamic("showLines")(showLines)
     if (!js.isUndefined(spanGaps)) __obj.updateDynamic("spanGaps")(spanGaps)
     if (title != null) __obj.updateDynamic("title")(title)

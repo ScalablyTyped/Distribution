@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "dirty-chai"
-version := "2.0-dt-20190819Z-1bffca"
+version := "2.0-dt-20190819Z-ae77b7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chai" % "4.2-dt-20190917Z-987c67",
-  "org.scalablytyped" %%% "chai-as-promised" % "7.1.0-dt-20190808Z-608f0b",
+  "org.scalablytyped" %%% "chai" % "4.2-dt-20191022Z-a94ee8",
+  "org.scalablytyped" %%% "chai-as-promised" % "7.1.0-dt-20190808Z-838798",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

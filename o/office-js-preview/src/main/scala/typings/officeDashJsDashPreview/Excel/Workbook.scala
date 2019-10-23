@@ -65,8 +65,7 @@ class Workbook () extends ClientObject {
     *
     * Represents a collection of Comments associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val comments: CommentCollection = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -137,8 +136,7 @@ class Workbook () extends ClientObject {
     *
     * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val pivotTableStyles: PivotTableStyleCollection = js.native
   /**
@@ -187,16 +185,14 @@ class Workbook () extends ClientObject {
     *
     * Represents a collection of SlicerStyles associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val slicerStyles: SlicerStyleCollection = js.native
   /**
     *
     * Represents a collection of Slicers associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val slicers: SlicerCollection = js.native
   /**
@@ -210,8 +206,7 @@ class Workbook () extends ClientObject {
     *
     * Represents a collection of TableStyles associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val tableStyles: TableStyleCollection = js.native
   /**
@@ -225,8 +220,7 @@ class Workbook () extends ClientObject {
     *
     * Represents a collection of TimelineStyles associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val timelineStyles: TimelineStyleCollection = js.native
   /**
@@ -292,16 +286,14 @@ class Workbook () extends ClientObject {
     *
     * Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is thrown.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getActiveSlicer(): Slicer = js.native
   /**
     *
     * Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getActiveSlicerOrNullObject(): Slicer = js.native
   /**

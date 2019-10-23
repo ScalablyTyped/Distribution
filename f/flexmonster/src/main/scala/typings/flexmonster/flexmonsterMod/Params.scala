@@ -12,6 +12,7 @@ trait Params extends js.Object {
   var beforetoolbarcreated: js.UndefOr[js.Function1[/* toolbar */ Toolbar, Unit]] = js.undefined
   var cellclick: js.UndefOr[js.Function1[/* cell */ CellData, Unit]] = js.undefined
   var celldoubleclick: js.UndefOr[js.Function1[/* cell */ CellData, Unit]] = js.undefined
+  var chartclick: js.UndefOr[js.Function1[/* data */ ChartData, Unit]] = js.undefined
   var componentFolder: js.UndefOr[String] = js.undefined
   // other
   var container: js.UndefOr[String] = js.undefined
@@ -56,6 +57,7 @@ trait Params extends js.Object {
   var reportcomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   var reportfilecancelled: js.UndefOr[js.Function0[Unit]] = js.undefined
   var reportfileerror: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var reportfileloaded: js.UndefOr[js.Function0[Unit]] = js.undefined
   var runningquery: js.UndefOr[js.Function0[Unit]] = js.undefined
   // params
   var toolbar: js.UndefOr[Boolean] = js.undefined
@@ -72,6 +74,7 @@ object Params {
     beforetoolbarcreated: /* toolbar */ Toolbar => Unit = null,
     cellclick: /* cell */ CellData => Unit = null,
     celldoubleclick: /* cell */ CellData => Unit = null,
+    chartclick: /* data */ ChartData => Unit = null,
     componentFolder: String = null,
     container: String = null,
     customizeCell: (/* cell */ CellBuilder, /* data */ CellData) => Unit = null,
@@ -108,6 +111,7 @@ object Params {
     reportcomplete: () => Unit = null,
     reportfilecancelled: () => Unit = null,
     reportfileerror: () => Unit = null,
+    reportfileloaded: () => Unit = null,
     runningquery: () => Unit = null,
     toolbar: js.UndefOr[Boolean] = js.undefined,
     update: () => Unit = null,
@@ -120,6 +124,7 @@ object Params {
     if (beforetoolbarcreated != null) __obj.updateDynamic("beforetoolbarcreated")(js.Any.fromFunction1(beforetoolbarcreated))
     if (cellclick != null) __obj.updateDynamic("cellclick")(js.Any.fromFunction1(cellclick))
     if (celldoubleclick != null) __obj.updateDynamic("celldoubleclick")(js.Any.fromFunction1(celldoubleclick))
+    if (chartclick != null) __obj.updateDynamic("chartclick")(js.Any.fromFunction1(chartclick))
     if (componentFolder != null) __obj.updateDynamic("componentFolder")(componentFolder)
     if (container != null) __obj.updateDynamic("container")(container)
     if (customizeCell != null) __obj.updateDynamic("customizeCell")(js.Any.fromFunction2(customizeCell))
@@ -156,6 +161,7 @@ object Params {
     if (reportcomplete != null) __obj.updateDynamic("reportcomplete")(js.Any.fromFunction0(reportcomplete))
     if (reportfilecancelled != null) __obj.updateDynamic("reportfilecancelled")(js.Any.fromFunction0(reportfilecancelled))
     if (reportfileerror != null) __obj.updateDynamic("reportfileerror")(js.Any.fromFunction0(reportfileerror))
+    if (reportfileloaded != null) __obj.updateDynamic("reportfileloaded")(js.Any.fromFunction0(reportfileloaded))
     if (runningquery != null) __obj.updateDynamic("runningquery")(js.Any.fromFunction0(runningquery))
     if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar)
     if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction0(update))

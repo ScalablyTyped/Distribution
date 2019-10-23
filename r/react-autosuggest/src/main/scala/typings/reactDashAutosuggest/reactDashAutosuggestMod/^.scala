@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-autosuggest", JSImport.Namespace)
 @js.native
-class ^[T] () extends Autosuggest[T]
+class ^[T, T2] () extends Autosuggest[T, T2]
 

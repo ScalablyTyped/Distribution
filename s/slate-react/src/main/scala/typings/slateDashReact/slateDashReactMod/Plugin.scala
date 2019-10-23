@@ -1,6 +1,17 @@
 package typings.slateDashReact.slateDashReactMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.Element
+import typings.react.Event
+import typings.react.NativeMouseEvent
+import typings.react.reactMod.ClipboardEvent
+import typings.react.reactMod.CompositionEvent
+import typings.react.reactMod.DragEvent
+import typings.react.reactMod.FocusEvent
+import typings.react.reactMod.FormEvent
+import typings.react.reactMod.KeyboardEvent
+import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.SyntheticEvent
 import typings.slate.slateMod.Command
 import typings.slate.slateMod.CommandFunc
 import typings.slate.slateMod.Node
@@ -8,7 +19,6 @@ import typings.slate.slateMod.Query
 import typings.slate.slateMod.QueryFunc
 import typings.slate.slateMod.SchemaProperties
 import typings.slate.slateMod.SlateError
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,25 +34,25 @@ trait Plugin
       _
     ]
   ] = js.undefined
-  var onBeforeInput: js.UndefOr[EventHook] = js.undefined
-  var onBlur: js.UndefOr[EventHook] = js.undefined
-  var onClick: js.UndefOr[EventHook] = js.undefined
-  var onCompositionEnd: js.UndefOr[EventHook] = js.undefined
-  var onCompositionStart: js.UndefOr[EventHook] = js.undefined
-  var onCopy: js.UndefOr[EventHook] = js.undefined
-  var onCut: js.UndefOr[EventHook] = js.undefined
-  var onDragEnd: js.UndefOr[EventHook] = js.undefined
-  var onDragEnter: js.UndefOr[EventHook] = js.undefined
-  var onDragExit: js.UndefOr[EventHook] = js.undefined
-  var onDragLeave: js.UndefOr[EventHook] = js.undefined
-  var onDragOver: js.UndefOr[EventHook] = js.undefined
-  var onDragStart: js.UndefOr[EventHook] = js.undefined
-  var onDrop: js.UndefOr[EventHook] = js.undefined
-  var onFocus: js.UndefOr[EventHook] = js.undefined
-  var onInput: js.UndefOr[EventHook] = js.undefined
-  var onKeyDown: js.UndefOr[EventHook] = js.undefined
-  var onPaste: js.UndefOr[EventHook] = js.undefined
-  var onSelect: js.UndefOr[EventHook] = js.undefined
+  var onBeforeInput: js.UndefOr[EventHook[FormEvent[Element]]] = js.undefined
+  var onBlur: js.UndefOr[EventHook[FocusEvent[Element]]] = js.undefined
+  var onClick: js.UndefOr[EventHook[MouseEvent[Element, NativeMouseEvent]]] = js.undefined
+  var onCompositionEnd: js.UndefOr[EventHook[CompositionEvent[Element]]] = js.undefined
+  var onCompositionStart: js.UndefOr[EventHook[CompositionEvent[Element]]] = js.undefined
+  var onCopy: js.UndefOr[EventHook[ClipboardEvent[Element]]] = js.undefined
+  var onCut: js.UndefOr[EventHook[ClipboardEvent[Element]]] = js.undefined
+  var onDragEnd: js.UndefOr[EventHook[DragEvent[Element]]] = js.undefined
+  var onDragEnter: js.UndefOr[EventHook[DragEvent[Element]]] = js.undefined
+  var onDragExit: js.UndefOr[EventHook[DragEvent[Element]]] = js.undefined
+  var onDragLeave: js.UndefOr[EventHook[DragEvent[Element]]] = js.undefined
+  var onDragOver: js.UndefOr[EventHook[DragEvent[Element]]] = js.undefined
+  var onDragStart: js.UndefOr[EventHook[DragEvent[Element]]] = js.undefined
+  var onDrop: js.UndefOr[EventHook[DragEvent[Element]]] = js.undefined
+  var onFocus: js.UndefOr[EventHook[FocusEvent[Element]]] = js.undefined
+  var onInput: js.UndefOr[EventHook[FormEvent[Element]]] = js.undefined
+  var onKeyDown: js.UndefOr[EventHook[KeyboardEvent[Element]]] = js.undefined
+  var onPaste: js.UndefOr[EventHook[ClipboardEvent[Element]]] = js.undefined
+  var onSelect: js.UndefOr[EventHook[SyntheticEvent[Element, Event]]] = js.undefined
   var renderAnnotation: js.UndefOr[
     js.Function3[
       /* props */ RenderAnnotationProps, 
@@ -116,29 +126,29 @@ object Plugin {
     commands: StringDictionary[CommandFunc] = null,
     decorateNode: (/* node */ Node, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     normalizeNode: (/* node */ Node, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => (js.Function1[/* editor */ typings.slate.slateMod.Editor, Unit]) | Unit = null,
-    onBeforeInput: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onBlur: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onBeforeInput: (FormEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onBlur: (FocusEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onChange: (/* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
-    onClick: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onClick: (MouseEvent[Element, NativeMouseEvent], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onCommand: (/* command */ Command, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
-    onCompositionEnd: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onCompositionStart: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onCompositionEnd: (CompositionEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onCompositionStart: (CompositionEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onConstruct: (/* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
-    onCopy: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onCut: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onDragEnd: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onDragEnter: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onDragExit: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onDragLeave: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onDragOver: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onDragStart: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onDrop: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onFocus: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onInput: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onKeyDown: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onPaste: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onCopy: (ClipboardEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onCut: (ClipboardEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragEnd: (DragEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragEnter: (DragEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragExit: (DragEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragLeave: (DragEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragOver: (DragEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDragStart: (DragEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onDrop: (DragEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onFocus: (FocusEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onInput: (FormEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onKeyDown: (KeyboardEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onPaste: (ClipboardEvent[Element], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onQuery: (/* query */ Query, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
-    onSelect: (/* event */ Event, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
+    onSelect: (SyntheticEvent[Element, Event], /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     queries: StringDictionary[QueryFunc] = null,
     renderAnnotation: (/* props */ RenderAnnotationProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     renderBlock: (/* props */ RenderBlockProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,

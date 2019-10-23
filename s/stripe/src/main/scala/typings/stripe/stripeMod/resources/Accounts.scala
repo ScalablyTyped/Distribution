@@ -16,6 +16,9 @@ import typings.stripe.stripeMod.accounts.ICardListOptions
 import typings.stripe.stripeMod.accounts.IExternalAccountCreationOptions
 import typings.stripe.stripeMod.accounts.IExternalAccountUpdateOptions
 import typings.stripe.stripeMod.accounts.ILoginLink
+import typings.stripe.stripeMod.accounts.IPerson
+import typings.stripe.stripeMod.accounts.IPersonCreateUpdateOptions
+import typings.stripe.stripeMod.accounts.IPersonListOptions
 import typings.stripe.stripeMod.accounts.IRejectReason
 import typings.stripe.stripeMod.cards.ICardUpdateOptions
 import scala.scalajs.js
@@ -77,6 +80,18 @@ class Accounts () extends StripeResource {
   def createLoginLink(accId: String, redirectUrl: String): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, redirectUrl: String, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
+  def createPerson(accId: String, data: IPersonCreateUpdateOptions): js.Promise[IPerson] = js.native
+  /**
+    * Creates a new person.
+    */
+  def createPerson(accId: String, data: IPersonCreateUpdateOptions, options: HeaderOptions): js.Promise[IPerson] = js.native
+  def createPerson(
+    accId: String,
+    data: IPersonCreateUpdateOptions,
+    options: HeaderOptions,
+    response: IResponseFn[IPerson]
+  ): js.Promise[IPerson] = js.native
+  def createPerson(accId: String, data: IPersonCreateUpdateOptions, response: IResponseFn[IPerson]): js.Promise[IPerson] = js.native
   def del(): js.Promise[IDeleteConfirmation] = js.native
   def del(id: String): js.Promise[IDeleteConfirmation] = js.native
   /**
@@ -103,6 +118,15 @@ class Accounts () extends StripeResource {
   def deleteExternalAccount(accId: String, id: String, options: HeaderOptions): js.Promise[IDeleteConfirmation] = js.native
   def deleteExternalAccount(accId: String, id: String, options: HeaderOptions, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
   def deleteExternalAccount(accId: String, id: String, response: IResponseFn[IDeleteConfirmation]): js.Promise[IDeleteConfirmation] = js.native
+  def deletePerson(accId: String, personId: String): js.Promise[IPerson] = js.native
+  /**
+    * Deletes an existing person’s relationship to the account’s legal entity. Any person with a relationship for an account
+    * can be deleted through the API, except if the person is the account_opener.
+    * If your integration is using the executive parameter, you cannot delete the only verified executive on file.
+    */
+  def deletePerson(accId: String, personId: String, options: HeaderOptions): js.Promise[IPerson] = js.native
+  def deletePerson(accId: String, personId: String, options: HeaderOptions, response: IResponseFn[IPerson]): js.Promise[IPerson] = js.native
+  def deletePerson(accId: String, personId: String, response: IResponseFn[IPerson]): js.Promise[IPerson] = js.native
   def list(): IListPromise[IAccount] = js.native
   def list(data: IListOptions): IListPromise[IAccount] = js.native
   /**
@@ -150,6 +174,18 @@ class Accounts () extends StripeResource {
     data: ICardListOptions,
     response: IResponseFn[IList[typings.stripe.stripeMod.cards.ICard]]
   ): IListPromise[typings.stripe.stripeMod.cards.ICard] = js.native
+  def listPersons(accId: String): IListPromise[IPerson] = js.native
+  def listPersons(accId: String, data: IPersonListOptions): IListPromise[IPerson] = js.native
+  /**
+    * Returns a list of people associated with the account’s legal entity.
+    * The people are returned sorted by creation date, with the most recent people appearing first.
+    */
+  def listPersons(accId: String, data: IPersonListOptions, options: HeaderOptions): IListPromise[IPerson] = js.native
+  def listPersons(accId: String, data: IPersonListOptions, options: HeaderOptions, response: IResponseFn[IPerson]): IListPromise[IPerson] = js.native
+  def listPersons(accId: String, data: IPersonListOptions, response: IResponseFn[IPerson]): IListPromise[IPerson] = js.native
+  def listPersons(accId: String, options: HeaderOptions): IListPromise[IPerson] = js.native
+  def listPersons(accId: String, options: HeaderOptions, response: IResponseFn[IPerson]): IListPromise[IPerson] = js.native
+  def listPersons(accId: String, response: IResponseFn[IPerson]): IListPromise[IPerson] = js.native
   def reject(id: String, data: IRejectReason): js.Promise[IAccount] = js.native
   /**
     * With Connect, you may flag managed accounts as suspicious.
@@ -205,6 +241,23 @@ class Accounts () extends StripeResource {
     bankAccId: String,
     response: IResponseFn[typings.stripe.stripeMod.bankAccounts.IBankAccount]
   ): js.Promise[typings.stripe.stripeMod.bankAccounts.IBankAccount] = js.native
+  def retrievePerson(accId: String, personId: String): js.Promise[IPerson] = js.native
+  def retrievePerson(accId: String, personId: String, data: IDataOptions): js.Promise[IPerson] = js.native
+  /**
+    * Retrieves an existing person.
+    */
+  def retrievePerson(accId: String, personId: String, data: IDataOptions, options: HeaderOptions): js.Promise[IPerson] = js.native
+  def retrievePerson(
+    accId: String,
+    personId: String,
+    data: IDataOptions,
+    options: HeaderOptions,
+    response: IResponseFn[IPerson]
+  ): js.Promise[IPerson] = js.native
+  def retrievePerson(accId: String, personId: String, data: IDataOptions, response: IResponseFn[IPerson]): js.Promise[IPerson] = js.native
+  def retrievePerson(accId: String, personId: String, options: HeaderOptions): js.Promise[IPerson] = js.native
+  def retrievePerson(accId: String, personId: String, options: HeaderOptions, response: IResponseFn[IPerson]): js.Promise[IPerson] = js.native
+  def retrievePerson(accId: String, personId: String, response: IResponseFn[IPerson]): js.Promise[IPerson] = js.native
   def update(id: String, data: IAccountUpdateOptions): js.Promise[IAccount] = js.native
   /**
     * Updates an account by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
@@ -256,5 +309,18 @@ class Accounts () extends StripeResource {
     data: ICardUpdateOptions,
     response: IResponseFn[typings.stripe.stripeMod.cards.ICard]
   ): js.Promise[typings.stripe.stripeMod.cards.ICard] = js.native
+  /**
+    * Updates an existing person.
+    */
+  def updatePerson(accId: String, personId: String, data: IPersonCreateUpdateOptions): js.Promise[IPerson] = js.native
+  def updatePerson(accId: String, personId: String, data: IPersonCreateUpdateOptions, options: HeaderOptions): js.Promise[IPerson] = js.native
+  def updatePerson(
+    accId: String,
+    personId: String,
+    data: IPersonCreateUpdateOptions,
+    options: HeaderOptions,
+    response: IResponseFn[IPerson]
+  ): js.Promise[IPerson] = js.native
+  def updatePerson(accId: String, personId: String, data: IPersonCreateUpdateOptions, response: IResponseFn[IPerson]): js.Promise[IPerson] = js.native
 }
 

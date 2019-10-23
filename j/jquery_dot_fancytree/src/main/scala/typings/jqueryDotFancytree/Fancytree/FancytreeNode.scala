@@ -39,6 +39,9 @@ trait FancytreeNode extends js.Object {
   //#region Properties
   /** The tree instance */
   var tree: typings.jqueryDotFancytree.Fancytree.Fancytree = js.native
+  var unselectable: js.UndefOr[Boolean] = js.native
+  var unselectableIgnore: js.UndefOr[Boolean] = js.native
+  var unselectableStatus: js.UndefOr[Boolean] = js.native
   //#endregion
   //#region Methods
   /**

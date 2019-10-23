@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("libsodium-wrappers", "crypto_box_seed_keypair")
 @js.native
 object crypto_box_seed_keypair extends js.Object {
-  def apply(seed: Uint8Array): StringKeyPair = js.native
+  def apply(seed: Uint8Array): KeyPair = js.native
   def apply(seed: Uint8Array, outputFormat: StringOutputFormat): StringKeyPair = js.native
   def apply(seed: Uint8Array, outputFormat: Uint8ArrayOutputFormat): KeyPair = js.native
 }

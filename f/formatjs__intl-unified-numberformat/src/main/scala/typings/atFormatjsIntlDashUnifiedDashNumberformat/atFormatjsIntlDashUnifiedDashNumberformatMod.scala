@@ -1,10 +1,11 @@
 package typings.atFormatjsIntlDashUnifiedDashNumberformat
 
+import typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatStrings.localeMatcher
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormatOptions
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
 import typings.atFormatjsIntlDashUtils.distUnifiedDashNumberformatDashTypesMod.UnifiedNumberFormatLocaleData
-import typings.std.Intl.NumberFormatOptions
-import typings.std.Parameters
+import typings.atFormatjsIntlDashUtils.distUnifiedDashNumberformatDashTypesMod.UnitData
+import typings.std.Pick
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,26 +19,28 @@ object atFormatjsIntlDashUnifiedDashNumberformatMod extends js.Object {
     extends typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormat {
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
-    def this(locales: String, hasStyleUnitUnitDisplayOptions: UnifiedNumberFormatOptions) = this()
-    def this(locales: js.Array[String], hasStyleUnitUnitDisplayOptions: UnifiedNumberFormatOptions) = this()
+    def this(locales: String, options: UnifiedNumberFormatOptions) = this()
+    def this(locales: js.Array[String], options: UnifiedNumberFormatOptions) = this()
   }
   
   def isUnitSupported(unit: Unit): Boolean = js.native
   /* static members */
   @js.native
   object UnifiedNumberFormat extends js.Object {
-    var __unitLocaleData__ : Record[String, UnifiedNumberFormatLocaleData] = js.native
+    val __INTERNAL_SLOT_MAP__ : js.Any = js.native
+    var __defaultLocale: js.Any = js.native
+    var availableLocales: js.Any = js.native
+    var getDefaultLocale: js.Any = js.native
+    var localeData: Record[String, Record[String, UnitData]] = js.native
     var polyfilled: Boolean = js.native
-    def __addUnitLocaleData(data: js.Array[UnifiedNumberFormatLocaleData]): scala.Unit = js.native
-    def supportedLocalesOf(
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<typeof NativeNumberFormat.supportedLocalesOf> is not an array type */ args: Parameters[
-          js.Function2[
-            /* locales */ String | js.Array[String], 
-            /* options */ js.UndefOr[NumberFormatOptions], 
-            js.Array[String]
-          ]
-        ]
-    ): js.Array[js.UndefOr[String]] = js.native
+    var relevantExtensionKeys: js.Any = js.native
+    def __addLocaleData(data: UnifiedNumberFormatLocaleData*): scala.Unit = js.native
+    def supportedLocalesOf(locales: String): js.Array[String] = js.native
+    def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
+    @JSName("supportedLocalesOf")
+    def supportedLocalesOf_localeMatcher(locales: String, options: Pick[UnifiedNumberFormatOptions, localeMatcher]): js.Array[String] = js.native
+    @JSName("supportedLocalesOf")
+    def supportedLocalesOf_localeMatcher(locales: js.Array[String], options: Pick[UnifiedNumberFormatOptions, localeMatcher]): js.Array[String] = js.native
   }
   
 }

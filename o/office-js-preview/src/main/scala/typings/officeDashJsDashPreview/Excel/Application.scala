@@ -54,6 +54,22 @@ class Application () extends ClientObject {
   var context_Application: RequestContext = js.native
   /**
     *
+    * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val cultureInfo: CultureInfo = js.native
+  /**
+    *
+    * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val decimalSeparator: String = js.native
+  /**
+    *
     * Returns the Iterative Calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.
@@ -61,6 +77,23 @@ class Application () extends ClientObject {
     * [Api set: ExcelApi 1.9]
     */
   val iterativeCalculation: IterativeCalculation = js.native
+  /**
+    *
+    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val thousandsSeparator: String = js.native
+  /**
+    *
+    * Specifies whether the system separators of Microsoft Excel are enabled.
+    System separators include the decimal separator and thousands separator.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val useSystemSeparators: Boolean = js.native
   /**
     *
     * Recalculate all currently opened workbooks in Excel.

@@ -14,8 +14,7 @@ trait SlicerUpdateData extends js.Object {
     *
     * Represents the caption of slicer.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var caption: js.UndefOr[String] = js.undefined
   /**
@@ -23,8 +22,7 @@ trait SlicerUpdateData extends js.Object {
     * Represents the height, in points, of the slicer.
     Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
@@ -32,16 +30,14 @@ trait SlicerUpdateData extends js.Object {
     * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
     Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var left: js.UndefOr[Double] = js.undefined
   /**
     *
     * Represents the name of slicer.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -56,16 +52,14 @@ trait SlicerUpdateData extends js.Object {
     *
     * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var sortBy: js.UndefOr[SlicerSortType | DataSourceOrder | Ascending | Descending] = js.undefined
   /**
     *
     * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var style: js.UndefOr[String] = js.undefined
   /**
@@ -73,8 +67,7 @@ trait SlicerUpdateData extends js.Object {
     * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
     Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var top: js.UndefOr[Double] = js.undefined
   /**
@@ -82,16 +75,14 @@ trait SlicerUpdateData extends js.Object {
     * Represents the width, in points, of the slicer.
     Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var width: js.UndefOr[Double] = js.undefined
   /**
     *
     * Represents the worksheet containing the slicer.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var worksheet: js.UndefOr[WorksheetUpdateData] = js.undefined
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PasswordProfile extends js.Object {
-  // true if the user must change their password on the next login; otherwise false.
+  // true if the user must change her password on the next login; otherwise false.
   var forceChangePasswordNextSignIn: js.UndefOr[Boolean] = js.undefined
   /**
     * If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their

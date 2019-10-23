@@ -98,7 +98,7 @@ trait Windows10EndpointProtectionConfiguration extends DeviceConfiguration {
   var firewallProfilePrivate: js.UndefOr[WindowsFirewallNetworkProfile] = js.undefined
   // Configures the firewall profile settings for public networks
   var firewallProfilePublic: js.UndefOr[WindowsFirewallNetworkProfile] = js.undefined
-  // Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
+  // Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.
   var smartScreenBlockOverrideForFiles: js.UndefOr[Boolean] = js.undefined
   // Allows IT Admins to configure SmartScreen for Windows.
   var smartScreenEnableInShell: js.UndefOr[Boolean] = js.undefined

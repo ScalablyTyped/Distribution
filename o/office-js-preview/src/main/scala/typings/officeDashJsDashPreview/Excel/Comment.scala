@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a comment in the workbook.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.Comment")
 @js.native
@@ -25,24 +24,21 @@ class Comment () extends ClientObject {
     *
     * Gets the email of the comment's author.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val authorEmail: String = js.native
   /**
     *
     * Gets the name of the comment's author.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val authorName: String = js.native
   /**
     *
     * Gets or sets the comment's content. The string is plain text.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var content: String = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -52,16 +48,14 @@ class Comment () extends ClientObject {
     *
     * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val creationDate: Date = js.native
   /**
     *
     * Represents the comment identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val id: String = js.native
   /**
@@ -76,8 +70,7 @@ class Comment () extends ClientObject {
     *
     * Represents a collection of reply objects associated with the comment. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val replies: CommentReplyCollection = js.native
   /**
@@ -100,16 +93,14 @@ class Comment () extends ClientObject {
     *
     * Deletes the comment and all the connected replies.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
     *
     * Gets the cell where this comment is located.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getLocation(): Range = js.native
   /**

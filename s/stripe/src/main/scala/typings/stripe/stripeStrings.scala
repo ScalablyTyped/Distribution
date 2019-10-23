@@ -686,6 +686,9 @@ object stripeStrings {
   sealed trait per_unit extends js.Object
   
   @js.native
+  sealed trait person extends js.Object
+  
+  @js.native
   sealed trait pl extends js.Object
   
   @js.native
@@ -1458,6 +1461,8 @@ object stripeStrings {
   def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline
   def per_unit: per_unit = "per_unit".asInstanceOf[per_unit]
+  @scala.inline
+  def person: person = "person".asInstanceOf[person]
   @scala.inline
   def pl: pl = "pl".asInstanceOf[pl]
   @scala.inline

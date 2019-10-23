@@ -39,8 +39,7 @@ trait WorkbookData extends js.Object {
     *
     * Represents a collection of Comments associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   /**
@@ -76,8 +75,7 @@ trait WorkbookData extends js.Object {
     *
     * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var pivotTableStyles: js.UndefOr[js.Array[PivotTableStyleData]] = js.undefined
   /**
@@ -126,16 +124,14 @@ trait WorkbookData extends js.Object {
     *
     * Represents a collection of SlicerStyles associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var slicerStyles: js.UndefOr[js.Array[SlicerStyleData]] = js.undefined
   /**
     *
     * Represents a collection of Slicers associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
   /**
@@ -149,8 +145,7 @@ trait WorkbookData extends js.Object {
     *
     * Represents a collection of TableStyles associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var tableStyles: js.UndefOr[js.Array[TableStyleData]] = js.undefined
   /**
@@ -164,8 +159,7 @@ trait WorkbookData extends js.Object {
     *
     * Represents a collection of TimelineStyles associated with the workbook. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var timelineStyles: js.UndefOr[js.Array[TimelineStyleData]] = js.undefined
   /**

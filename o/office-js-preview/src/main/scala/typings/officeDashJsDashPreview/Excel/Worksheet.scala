@@ -39,7 +39,7 @@ class Worksheet () extends ClientObject {
   val autoFilter: AutoFilter = js.native
   /**
     *
-    * Returns collection of charts that are part of the worksheet. Read-only.
+    * Returns a collection of charts that are part of the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -48,8 +48,7 @@ class Worksheet () extends ClientObject {
     *
     * Returns a collection of all the Comments objects on the worksheet. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val comments: CommentCollection = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -129,10 +128,9 @@ class Worksheet () extends ClientObject {
     *
     * Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @eventproperty
-    * @beta
     */
   val onColumnSorted: EventHandlers[WorksheetColumnSortedEventArgs] = js.native
   /**
@@ -177,10 +175,9 @@ class Worksheet () extends ClientObject {
     *
     * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @eventproperty
-    * @beta
     */
   val onRowSorted: EventHandlers[WorksheetRowSortedEventArgs] = js.native
   /**
@@ -194,16 +191,13 @@ class Worksheet () extends ClientObject {
   val onSelectionChanged: EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
   /**
     *
-    * Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in the following cases:
-    * 
+    * Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in the following cases:
     - The user drags the mouse for multi-selection.
-    
     - The user selects a cell in the mode when cell arguments are selected for formula references.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @eventproperty
-    * @beta
     */
   val onSingleClicked: EventHandlers[WorksheetSingleClickedEventArgs] = js.native
   /**
@@ -259,10 +253,9 @@ class Worksheet () extends ClientObject {
   var showHeadings: Boolean = js.native
   /**
     *
-    * Returns collection of slicers that are part of the worksheet. Read-only.
+    * Returns a collection of slicers that are part of the worksheet. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val slicers: SlicerCollection = js.native
   /**
@@ -328,7 +321,7 @@ class Worksheet () extends ClientObject {
   def calculate(markAllDirty: Boolean): Unit = js.native
   /**
     *
-    * Copies a worksheet and places it at the specified position. 
+    * Copies a worksheet and places it at the specified position.
     *
     * [Api set: ExcelApi 1.7]
     *
@@ -535,8 +528,7 @@ class Worksheet () extends ClientObject {
     The acceptable argument range is between 0 and 8.
     A value of 0 does not change the current display. A value greater than the current number of levels displays all the levels.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param rowLevels The number of row levels of an outline to display.
     * @param columnLevels The number of column levels of an outline to display.

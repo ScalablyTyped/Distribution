@@ -5,9 +5,11 @@ import typings.connectDashHistoryDashApiDashFallback.connectDashHistoryDashApiDa
 import typings.express.expressMod.Application
 import typings.node.httpsMod.ServerOptions
 import typings.serveDashStatic.serveDashStaticMod.ServeStaticOptions
+import typings.webpack.webpackMod.Compiler
 import typings.webpack.webpackMod.Options.Stats
 import typings.webpack.webpackMod.WatchOptions
 import typings.webpackDashDevDashServer.Anon_Errors
+import typings.webpackDashDevDashServer.Anon_TypeMap
 import typings.webpackDashDevDashServer.webpackDashDevDashServerStrings.error
 import typings.webpackDashDevDashServer.webpackDashDevDashServerStrings.info
 import typings.webpackDashDevDashServer.webpackDashDevDashServerStrings.none
@@ -18,11 +20,15 @@ import scala.scalajs.js.annotation._
 
 trait Configuration extends js.Object {
   /** Provides the ability to execute custom middleware after all other middleware internally within the server. */
-  var after: js.UndefOr[js.Function2[/* app */ Application, /* server */ WebpackDevServer, Unit]] = js.undefined
+  var after: js.UndefOr[
+    js.Function3[/* app */ Application, /* server */ WebpackDevServer, /* compiler */ Compiler, Unit]
+  ] = js.undefined
   /** This option allows you to whitelist services that are allowed to access the dev server. */
   var allowedHosts: js.UndefOr[js.Array[String]] = js.undefined
   /** Provides the ability to execute custom middleware prior to all other middleware internally within the server. */
-  var before: js.UndefOr[js.Function2[/* app */ Application, /* server */ WebpackDevServer, Unit]] = js.undefined
+  var before: js.UndefOr[
+    js.Function3[/* app */ Application, /* server */ WebpackDevServer, /* compiler */ Compiler, Unit]
+  ] = js.undefined
   /** This option broadcasts the server via ZeroConf networking on start. */
   var bonjour: js.UndefOr[Boolean] = js.undefined
   /**
@@ -58,10 +64,27 @@ trait Configuration extends js.Object {
   var hot: js.UndefOr[Boolean] = js.undefined
   /** Enables Hot Module Replacement (see devServer.hot) without page refresh as fallback in case of build failures. */
   var hotOnly: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Serve over HTTP/2 using spdy. This option is ignored for Node 10.0.0 and above,
+    * as spdy is broken for those versions. The dev server will migrate over to Node's
+    * built-in HTTP/2 once Express supports it.
+    */
+  var http2: js.UndefOr[Boolean] = js.undefined
   /** By default dev-server will be served over HTTP. It can optionally be served over HTTP/2 with HTTPS. */
   var https: js.UndefOr[Boolean | ServerOptions] = js.undefined
   /** The filename that is considered the index file. */
   var index: js.UndefOr[String] = js.undefined
+  /**
+    * Tells devServer to inject a client. Setting devServer.injectClient to true will result
+    * in always injecting a client. It is possible to provide a function to inject conditionally
+    */
+  var injectClient: js.UndefOr[Boolean | (js.Function1[/* compilerConfig */ Compiler, Boolean])] = js.undefined
+  /**
+    * Tells devServer to inject a Hot Module Replacement. Setting devServer.injectHot
+    * to true will result in always injecting. It is possible to provide a function to
+    * inject conditionally
+    */
+  var injectHot: js.UndefOr[Boolean | (js.Function1[/* compilerConfig */ Compiler, Boolean])] = js.undefined
   /**
     * Toggle between the dev-server's two different modes.
     * By default the application will be served with inline mode enabled.
@@ -74,6 +97,14 @@ trait Configuration extends js.Object {
     * This means that webpack will not watch any file changes.
     */
   var `lazy`: js.UndefOr[Boolean] = js.undefined
+  /**
+    * By default, the dev-server will reload/refresh the page when file changes are detected.
+    */
+  var liveReload: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Allows dev-server to register custom mime types.
+    */
+  var mimeTypes: js.UndefOr[StringDictionary[js.Array[String]] | Anon_TypeMap] = js.undefined
   /**
     * With noInfo enabled, messages like the webpack bundle information that is shown
     * when starting up and after each save,will be hidden.
@@ -110,8 +141,16 @@ trait Configuration extends js.Object {
     * This also means that errors or warnings from webpack are not visible.
     */
   var quiet: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Tells dev-server to use serveIndex middleware when enabled.
+    */
+  var serveIndex: js.UndefOr[Boolean] = js.undefined
   /** @deprecated Here you can access the Express app object and add your own custom middleware to it. */
   var setup: js.UndefOr[js.Function2[/* app */ Application, /* server */ WebpackDevServer, Unit]] = js.undefined
+  /**
+    * Tells clients connected to devServer to use provided socket host.
+    */
+  var sockHost: js.UndefOr[String] = js.undefined
   /** The path at which to connect to the reloading socket. */
   var sockPath: js.UndefOr[String] = js.undefined
   /** The Unix socket to listen to (instead of a host). */
@@ -136,9 +175,9 @@ trait Configuration extends js.Object {
 object Configuration {
   @scala.inline
   def apply(
-    after: (/* app */ Application, /* server */ WebpackDevServer) => Unit = null,
+    after: (/* app */ Application, /* server */ WebpackDevServer, /* compiler */ Compiler) => Unit = null,
     allowedHosts: js.Array[String] = null,
-    before: (/* app */ Application, /* server */ WebpackDevServer) => Unit = null,
+    before: (/* app */ Application, /* server */ WebpackDevServer, /* compiler */ Compiler) => Unit = null,
     bonjour: js.UndefOr[Boolean] = js.undefined,
     clientLogLevel: none | error | warning | info = null,
     compress: js.UndefOr[Boolean] = js.undefined,
@@ -150,10 +189,15 @@ object Configuration {
     host: String = null,
     hot: js.UndefOr[Boolean] = js.undefined,
     hotOnly: js.UndefOr[Boolean] = js.undefined,
+    http2: js.UndefOr[Boolean] = js.undefined,
     https: Boolean | ServerOptions = null,
     index: String = null,
+    injectClient: Boolean | (js.Function1[/* compilerConfig */ Compiler, Boolean]) = null,
+    injectHot: Boolean | (js.Function1[/* compilerConfig */ Compiler, Boolean]) = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
+    liveReload: js.UndefOr[Boolean] = js.undefined,
+    mimeTypes: StringDictionary[js.Array[String]] | Anon_TypeMap = null,
     noInfo: js.UndefOr[Boolean] = js.undefined,
     open: js.UndefOr[Boolean] = js.undefined,
     openPage: String = null,
@@ -165,7 +209,9 @@ object Configuration {
     public: String = null,
     publicPath: String = null,
     quiet: js.UndefOr[Boolean] = js.undefined,
+    serveIndex: js.UndefOr[Boolean] = js.undefined,
     setup: (/* app */ Application, /* server */ WebpackDevServer) => Unit = null,
+    sockHost: String = null,
     sockPath: String = null,
     socket: String = null,
     staticOptions: ServeStaticOptions = null,
@@ -176,9 +222,9 @@ object Configuration {
     writeToDisk: Boolean | (js.Function1[/* filePath */ String, Boolean]) = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction2(after))
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction3(after))
     if (allowedHosts != null) __obj.updateDynamic("allowedHosts")(allowedHosts)
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction3(before))
     if (!js.isUndefined(bonjour)) __obj.updateDynamic("bonjour")(bonjour)
     if (clientLogLevel != null) __obj.updateDynamic("clientLogLevel")(clientLogLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
@@ -190,10 +236,15 @@ object Configuration {
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(hot)) __obj.updateDynamic("hot")(hot)
     if (!js.isUndefined(hotOnly)) __obj.updateDynamic("hotOnly")(hotOnly)
+    if (!js.isUndefined(http2)) __obj.updateDynamic("http2")(http2)
     if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index)
+    if (injectClient != null) __obj.updateDynamic("injectClient")(injectClient.asInstanceOf[js.Any])
+    if (injectHot != null) __obj.updateDynamic("injectHot")(injectHot.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (!js.isUndefined(liveReload)) __obj.updateDynamic("liveReload")(liveReload)
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
     if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo)
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (openPage != null) __obj.updateDynamic("openPage")(openPage)
@@ -205,7 +256,9 @@ object Configuration {
     if (public != null) __obj.updateDynamic("public")(public)
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (!js.isUndefined(serveIndex)) __obj.updateDynamic("serveIndex")(serveIndex)
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2(setup))
+    if (sockHost != null) __obj.updateDynamic("sockHost")(sockHost)
     if (sockPath != null) __obj.updateDynamic("sockPath")(sockPath)
     if (socket != null) __obj.updateDynamic("socket")(socket)
     if (staticOptions != null) __obj.updateDynamic("staticOptions")(staticOptions)

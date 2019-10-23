@@ -17,7 +17,7 @@ trait Options extends js.Object {
   ] = js.undefined
   var maxItems: js.UndefOr[Double] = js.undefined
   var minChars: js.UndefOr[Double] = js.undefined
-  var replace: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
+  var replace: js.UndefOr[js.Function1[/* suggestion */ String | Suggestion, Unit]] = js.undefined
   var sort: js.UndefOr[Boolean | SortFunction] = js.undefined
 }
 
@@ -31,7 +31,7 @@ object Options {
     list: String | (js.Array[Anon_LabelValue | String | (js.Tuple2[String, String])]) | Element = null,
     maxItems: Int | Double = null,
     minChars: Int | Double = null,
-    replace: /* text */ String => Unit = null,
+    replace: /* suggestion */ String | Suggestion => Unit = null,
     sort: Boolean | SortFunction = null
   ): Options = {
     val __obj = js.Dynamic.literal()

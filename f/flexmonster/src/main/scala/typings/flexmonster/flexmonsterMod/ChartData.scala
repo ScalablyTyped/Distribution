@@ -5,30 +5,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartData extends js.Object {
-  var columnTuple: js.UndefOr[js.Array[Double]] = js.undefined
+  var columns: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var element: js.Any
   var id: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var measure: js.UndefOr[MeasureObject] = js.undefined
-  var rawTuple: js.UndefOr[js.Array[Double]] = js.undefined
+  var rows: js.UndefOr[js.Array[js.Object]] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
 }
 
 object ChartData {
   @scala.inline
   def apply(
-    columnTuple: js.Array[Double] = null,
+    element: js.Any,
+    columns: js.Array[js.Object] = null,
     id: String = null,
     label: String = null,
     measure: MeasureObject = null,
-    rawTuple: js.Array[Double] = null,
+    rows: js.Array[js.Object] = null,
     value: Int | Double = null
   ): ChartData = {
-    val __obj = js.Dynamic.literal()
-    if (columnTuple != null) __obj.updateDynamic("columnTuple")(columnTuple)
+    val __obj = js.Dynamic.literal(element = element)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
     if (measure != null) __obj.updateDynamic("measure")(measure)
-    if (rawTuple != null) __obj.updateDynamic("rawTuple")(rawTuple)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartData]
   }

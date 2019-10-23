@@ -235,6 +235,10 @@ object cryptoMod extends js.Object {
     callback: js.Function2[/* err */ typings.node.Error | Null, /* derivedKey */ Buffer, _]
   ): Unit = js.native
   def pbkdf2Sync(password: BinaryLike, salt: BinaryLike, iterations: Double, keylen: Double, digest: String): Buffer = js.native
+  def privateDecrypt(private_key: KeyLike, buffer: ArrayBufferView): Buffer = js.native
+  def privateDecrypt(private_key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = js.native
+  def privateEncrypt(private_key: KeyLike, buffer: ArrayBufferView): Buffer = js.native
+  def privateEncrypt(private_key: RsaPrivateKey, buffer: ArrayBufferView): Buffer = js.native
   def pseudoRandomBytes(size: Double): Buffer = js.native
   def pseudoRandomBytes(
     size: Double,

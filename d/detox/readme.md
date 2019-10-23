@@ -1,7 +1,7 @@
 
 # Scala.js typings for detox
 
-Typings are for version 12.8
+Typings are for version 14.5
 
 ## Library description:
 E2E tests and automation for mobile

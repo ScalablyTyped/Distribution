@@ -13,6 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Sessions () extends StripeResource {
   def create(data: ICheckoutCreationOptions): js.Promise[ICheckoutSession] = js.native
+  def create(data: ICheckoutCreationOptions, options: HeaderOptions): js.Promise[ICheckoutSession] = js.native
+  def create(data: ICheckoutCreationOptions, options: HeaderOptions, response: IResponseFn[ICheckoutSession]): js.Promise[ICheckoutSession] = js.native
   def create(data: ICheckoutCreationOptions, response: IResponseFn[ICheckoutSession]): js.Promise[ICheckoutSession] = js.native
   def retrieve(data: String): js.Promise[ICheckoutSession] = js.native
   def retrieve(data: String, options: HeaderOptions): js.Promise[ICheckoutSession] = js.native

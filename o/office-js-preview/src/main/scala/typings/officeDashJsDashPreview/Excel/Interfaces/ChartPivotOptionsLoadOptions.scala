@@ -25,7 +25,7 @@ trait ChartPivotOptionsLoadOptions extends js.Object {
   var showAxisFieldButtons: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not to display the legend field buttons on a PivotChart
+    * Specifies whether or not to display the legend field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -39,7 +39,7 @@ trait ChartPivotOptionsLoadOptions extends js.Object {
   var showReportFilterFieldButtons: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Specifies whether or not to display the show value field buttons on a PivotChart
+    * Specifies whether or not to display the show value field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.9]
     */

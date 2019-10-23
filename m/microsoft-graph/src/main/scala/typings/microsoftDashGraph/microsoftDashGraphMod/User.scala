@@ -203,6 +203,7 @@ trait User extends DirectoryObject {
   var onPremisesUserPrincipalName: js.UndefOr[String] = js.undefined
   // Read-only.
   var onenote: js.UndefOr[Onenote] = js.undefined
+  var onlineMeetings: js.UndefOr[js.Array[OnlineMeeting]] = js.undefined
   /**
     * A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com']. Supports
     * $filter.
@@ -371,6 +372,7 @@ object User {
     onPremisesSyncEnabled: js.UndefOr[Boolean] = js.undefined,
     onPremisesUserPrincipalName: String = null,
     onenote: Onenote = null,
+    onlineMeetings: js.Array[OnlineMeeting] = null,
     otherMails: js.Array[String] = null,
     outlook: OutlookUser = null,
     ownedDevices: js.Array[DirectoryObject] = null,
@@ -470,6 +472,7 @@ object User {
     if (!js.isUndefined(onPremisesSyncEnabled)) __obj.updateDynamic("onPremisesSyncEnabled")(onPremisesSyncEnabled)
     if (onPremisesUserPrincipalName != null) __obj.updateDynamic("onPremisesUserPrincipalName")(onPremisesUserPrincipalName)
     if (onenote != null) __obj.updateDynamic("onenote")(onenote)
+    if (onlineMeetings != null) __obj.updateDynamic("onlineMeetings")(onlineMeetings)
     if (otherMails != null) __obj.updateDynamic("otherMails")(otherMails)
     if (outlook != null) __obj.updateDynamic("outlook")(outlook)
     if (ownedDevices != null) __obj.updateDynamic("ownedDevices")(ownedDevices)

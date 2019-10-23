@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-vertical-timeline-component
 
-Typings are for version 2.3
+Typings are for version 2.5
 
 ## Library description:
 Vertical timeline for React.js

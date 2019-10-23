@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScoredEmailAddress extends js.Object {
-  var ItemId: js.UndefOr[String] = js.undefined
   // The email address.
   var address: js.UndefOr[String] = js.undefined
+  var itemId: js.UndefOr[String] = js.undefined
   /**
     * The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned
     * results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s
@@ -20,14 +20,14 @@ trait ScoredEmailAddress extends js.Object {
 object ScoredEmailAddress {
   @scala.inline
   def apply(
-    ItemId: String = null,
     address: String = null,
+    itemId: String = null,
     relevanceScore: Int | Double = null,
     selectionLikelihood: SelectionLikelihoodInfo = null
   ): ScoredEmailAddress = {
     val __obj = js.Dynamic.literal()
-    if (ItemId != null) __obj.updateDynamic("ItemId")(ItemId)
     if (address != null) __obj.updateDynamic("address")(address)
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
     if (relevanceScore != null) __obj.updateDynamic("relevanceScore")(relevanceScore.asInstanceOf[js.Any])
     if (selectionLikelihood != null) __obj.updateDynamic("selectionLikelihood")(selectionLikelihood)
     __obj.asInstanceOf[ScoredEmailAddress]

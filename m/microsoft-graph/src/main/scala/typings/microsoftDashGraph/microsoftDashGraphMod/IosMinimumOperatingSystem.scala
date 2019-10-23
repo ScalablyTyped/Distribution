@@ -11,6 +11,8 @@ trait IosMinimumOperatingSystem extends js.Object {
   var v11_0: js.UndefOr[Boolean] = js.undefined
   // Version 12.0 or later.
   var v12_0: js.UndefOr[Boolean] = js.undefined
+  // Version 13.0 or later.
+  var v13_0: js.UndefOr[Boolean] = js.undefined
   // Version 8.0 or later.
   var v8_0: js.UndefOr[Boolean] = js.undefined
   // Version 9.0 or later.
@@ -23,6 +25,7 @@ object IosMinimumOperatingSystem {
     v10_0: js.UndefOr[Boolean] = js.undefined,
     v11_0: js.UndefOr[Boolean] = js.undefined,
     v12_0: js.UndefOr[Boolean] = js.undefined,
+    v13_0: js.UndefOr[Boolean] = js.undefined,
     v8_0: js.UndefOr[Boolean] = js.undefined,
     v9_0: js.UndefOr[Boolean] = js.undefined
   ): IosMinimumOperatingSystem = {
@@ -30,6 +33,7 @@ object IosMinimumOperatingSystem {
     if (!js.isUndefined(v10_0)) __obj.updateDynamic("v10_0")(v10_0)
     if (!js.isUndefined(v11_0)) __obj.updateDynamic("v11_0")(v11_0)
     if (!js.isUndefined(v12_0)) __obj.updateDynamic("v12_0")(v12_0)
+    if (!js.isUndefined(v13_0)) __obj.updateDynamic("v13_0")(v13_0)
     if (!js.isUndefined(v8_0)) __obj.updateDynamic("v8_0")(v8_0)
     if (!js.isUndefined(v9_0)) __obj.updateDynamic("v9_0")(v9_0)
     __obj.asInstanceOf[IosMinimumOperatingSystem]

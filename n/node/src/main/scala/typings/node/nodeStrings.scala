@@ -740,6 +740,9 @@ object nodeStrings {
   sealed trait multipleResolves extends js.Object
   
   @js.native
+  sealed trait netbsd extends Platform
+  
+  @js.native
   sealed trait newListener extends js.Object
   
   @js.native
@@ -1389,6 +1392,8 @@ object nodeStrings {
   def message: message = "message".asInstanceOf[message]
   @scala.inline
   def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
+  @scala.inline
+  def netbsd: netbsd = "netbsd".asInstanceOf[netbsd]
   @scala.inline
   def newListener: newListener = "newListener".asInstanceOf[newListener]
   @scala.inline

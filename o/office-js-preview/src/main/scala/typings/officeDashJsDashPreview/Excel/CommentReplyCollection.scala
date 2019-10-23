@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of comment reply objects that are part of the comment.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.CommentReplyCollection")
 @js.native
@@ -33,10 +32,9 @@ class CommentReplyCollection () extends ClientObject {
     *
     * Creates a comment reply for comment.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
-    * @param content The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with mentions). [Api set: ExcelApi BETA (PREVIEW ONLY) for string, ExcelApi Preview for CommentRichContent object]
+    * @param content The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with mentions). [Api set: ExcelApi 1.10 for string, ExcelApi Preview for CommentRichContent object]
     * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.plain`.
     */
   def add(content: CommentRichContent): CommentReply = js.native
@@ -53,16 +51,14 @@ class CommentReplyCollection () extends ClientObject {
     *
     * Gets the number of comment replies in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
     * Returns a comment reply identified by its ID. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param commentReplyId The identifier for the comment reply.
     */
@@ -71,8 +67,7 @@ class CommentReplyCollection () extends ClientObject {
     *
     * Gets a comment reply based on its position in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param index The index value of the comment reply to be retrieved. The collection uses zero-based indexing.
     */

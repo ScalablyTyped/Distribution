@@ -39,6 +39,22 @@ trait ApplicationLoadOptions extends js.Object {
   var calculationState: js.UndefOr[Boolean] = js.undefined
   /**
     *
+    * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var cultureInfo: js.UndefOr[CultureInfoLoadOptions] = js.undefined
+  /**
+    *
+    * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var decimalSeparator: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
     * Returns the Iterative Calculation settings.
     In Excel on Windows and Mac, the settings will apply to the Excel Application.
     In Excel on the web and other platforms, the settings will apply to the active workbook.
@@ -46,6 +62,23 @@ trait ApplicationLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var iterativeCalculation: js.UndefOr[IterativeCalculationLoadOptions] = js.undefined
+  /**
+    *
+    * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var thousandsSeparator: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether the system separators of Microsoft Excel are enabled.
+    System separators include the decimal separator and thousands separator.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var useSystemSeparators: js.UndefOr[Boolean] = js.undefined
 }
 
 object ApplicationLoadOptions {
@@ -55,14 +88,22 @@ object ApplicationLoadOptions {
     calculationEngineVersion: js.UndefOr[Boolean] = js.undefined,
     calculationMode: js.UndefOr[Boolean] = js.undefined,
     calculationState: js.UndefOr[Boolean] = js.undefined,
-    iterativeCalculation: IterativeCalculationLoadOptions = null
+    cultureInfo: CultureInfoLoadOptions = null,
+    decimalSeparator: js.UndefOr[Boolean] = js.undefined,
+    iterativeCalculation: IterativeCalculationLoadOptions = null,
+    thousandsSeparator: js.UndefOr[Boolean] = js.undefined,
+    useSystemSeparators: js.UndefOr[Boolean] = js.undefined
   ): ApplicationLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
     if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion)
     if (!js.isUndefined(calculationMode)) __obj.updateDynamic("calculationMode")(calculationMode)
     if (!js.isUndefined(calculationState)) __obj.updateDynamic("calculationState")(calculationState)
+    if (cultureInfo != null) __obj.updateDynamic("cultureInfo")(cultureInfo)
+    if (!js.isUndefined(decimalSeparator)) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
     if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation)
+    if (!js.isUndefined(thousandsSeparator)) __obj.updateDynamic("thousandsSeparator")(thousandsSeparator)
+    if (!js.isUndefined(useSystemSeparators)) __obj.updateDynamic("useSystemSeparators")(useSystemSeparators)
     __obj.asInstanceOf[ApplicationLoadOptions]
   }
 }

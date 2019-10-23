@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "unfetch"
-version := "3.1.2-ce5670"
+version := "3.1.2-189610"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
-  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190923Z-9512dd",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
+  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190923Z-674c61",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

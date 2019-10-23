@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a comment in the workbook.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 trait CommentLoadOptions extends js.Object {
   /**
@@ -21,40 +20,35 @@ trait CommentLoadOptions extends js.Object {
     *
     * Gets the email of the comment's author.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var authorEmail: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the name of the comment's author.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var authorName: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets or sets the comment's content. The string is plain text.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var creationDate: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the comment identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   /**

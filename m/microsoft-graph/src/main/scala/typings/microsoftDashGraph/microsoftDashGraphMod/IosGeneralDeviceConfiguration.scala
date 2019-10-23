@@ -141,7 +141,7 @@ trait IosGeneralDeviceConfiguration extends DeviceConfiguration {
   // Indicates whether or not to block the user from using the iBooks Store when the device is in supervised mode.
   var iBooksStoreBlocked: js.UndefOr[Boolean] = js.undefined
   /**
-    * Indicates whether or not to block the the user from continuing work they started on iOS device to another iOS or macOS
+    * Indicates whether or not to block the user from continuing work they started on iOS device to another iOS or macOS
     * device.
     */
   var iCloudBlockActivityContinuation: js.UndefOr[Boolean] = js.undefined

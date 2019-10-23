@@ -5,8 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WorkbookComment extends Entity {
+  // The content of comment.
   var content: js.UndefOr[String] = js.undefined
+  // Indicates the type for the comment.
   var contentType: js.UndefOr[String] = js.undefined
+  // Read-only. Nullable.
   var replies: js.UndefOr[js.Array[WorkbookCommentReply]] = js.undefined
 }
 

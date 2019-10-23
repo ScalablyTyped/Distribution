@@ -1,8 +1,8 @@
 package typings.jqueryui.JQueryUI
 
+import typings.jquery.JQuery.Event
 import typings.jqueryui.JQuery
 import typings.std.Element
-import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-easy-crop"
-version := "1.13-dt-20190620Z-fd9e76"
+version := "1.16-dt-20191022Z-6dc147"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

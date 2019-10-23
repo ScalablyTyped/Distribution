@@ -58,6 +58,13 @@ class Workbook () extends ClientObject {
     * [Api set: ExcelApi 1.9]
     */
   var chartDataPointTrack: Boolean = js.native
+  /**
+    *
+    * Represents a collection of Comments associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val comments: CommentCollection = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Workbook: RequestContext = js.native
@@ -124,6 +131,13 @@ class Workbook () extends ClientObject {
   val onSelectionChanged: EventHandlers[SelectionChangedEventArgs] = js.native
   /**
     *
+    * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val pivotTableStyles: PivotTableStyleCollection = js.native
+  /**
+    *
     * Represents a collection of PivotTables associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.3]
@@ -166,6 +180,20 @@ class Workbook () extends ClientObject {
   val settings: SettingCollection = js.native
   /**
     *
+    * Represents a collection of SlicerStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val slicerStyles: SlicerStyleCollection = js.native
+  /**
+    *
+    * Represents a collection of Slicers associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val slicers: SlicerCollection = js.native
+  /**
+    *
     * Represents a collection of styles associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.7]
@@ -173,11 +201,25 @@ class Workbook () extends ClientObject {
   val styles: StyleCollection = js.native
   /**
     *
+    * Represents a collection of TableStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val tableStyles: TableStyleCollection = js.native
+  /**
+    *
     * Represents a collection of tables associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
   val tables: TableCollection = js.native
+  /**
+    *
+    * Represents a collection of TimelineStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val timelineStyles: TimelineStyleCollection = js.native
   /**
     *
     * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
@@ -214,6 +256,20 @@ class Workbook () extends ClientObject {
     * [Api set: ExcelApi 1.9]
     */
   def getActiveChartOrNullObject(): Chart = js.native
+  /**
+    *
+    * Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is thrown.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  def getActiveSlicer(): Slicer = js.native
+  /**
+    *
+    * Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  def getActiveSlicerOrNullObject(): Slicer = js.native
   /**
     *
     * True if the workbook is being edited by multiple users (co-authoring).

@@ -1,7 +1,11 @@
 package typings.officeDashJs.Excel.Interfaces
 
+import typings.officeDashJs.Excel.Placement
 import typings.officeDashJs.Excel.ShapeType
+import typings.officeDashJs.officeDashJsStrings.Absolute
 import typings.officeDashJs.officeDashJsStrings.Group
+import typings.officeDashJs.officeDashJsStrings.OneCell
+import typings.officeDashJs.officeDashJsStrings.TwoCell
 import typings.officeDashJs.officeDashJsStrings.Unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -99,6 +103,13 @@ trait ShapeData extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /**
     *
+    * Represents how the object is attached to the cells below it.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.undefined
+  /**
+    *
     * Represents the rotation, in degrees, of the shape.
     *
     * [Api set: ExcelApi 1.9]
@@ -160,6 +171,7 @@ object ShapeData {
     lineFormat: ShapeLineFormatData = null,
     lockAspectRatio: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
+    placement: Placement | TwoCell | OneCell | Absolute = null,
     rotation: Int | Double = null,
     top: Int | Double = null,
     `type`: ShapeType | Unsupported | typings.officeDashJs.officeDashJsStrings.Image | typings.officeDashJs.officeDashJsStrings.GeometricShape | Group | typings.officeDashJs.officeDashJsStrings.Line = null,
@@ -180,6 +192,7 @@ object ShapeData {
     if (lineFormat != null) __obj.updateDynamic("lineFormat")(lineFormat)
     if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

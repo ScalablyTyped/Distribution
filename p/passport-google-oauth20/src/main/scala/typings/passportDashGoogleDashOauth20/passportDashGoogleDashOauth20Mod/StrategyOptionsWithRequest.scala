@@ -1,8 +1,6 @@
 package typings.passportDashGoogleDashOauth20.passportDashGoogleDashOauth20Mod
 
 import typings.passportDashGoogleDashOauth20.passportDashGoogleDashOauth20Numbers.`true`
-import typings.passportDashGoogleDashOauth20.passportDashGoogleDashOauth20Strings.offline
-import typings.passportDashGoogleDashOauth20.passportDashGoogleDashOauth20Strings.online
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +15,6 @@ object StrategyOptionsWithRequest {
     clientID: String,
     clientSecret: String,
     passReqToCallback: `true`,
-    accessType: offline | online = null,
     authorizationURL: String = null,
     callbackURL: String = null,
     scope: String | js.Array[String] = null,
@@ -25,7 +22,6 @@ object StrategyOptionsWithRequest {
     userProfileURL: String = null
   ): StrategyOptionsWithRequest = {
     val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
-    if (accessType != null) __obj.updateDynamic("accessType")(accessType.asInstanceOf[js.Any])
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
     if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])

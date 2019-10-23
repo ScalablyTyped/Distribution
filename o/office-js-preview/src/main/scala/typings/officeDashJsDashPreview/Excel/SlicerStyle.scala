@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a Slicer Style, which defines style elements by region of the slicer.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerStyle")
 @js.native
@@ -27,32 +26,28 @@ class SlicerStyle () extends ClientObject {
     *
     * Gets the name of the SlicerStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: String = js.native
   /**
     *
     * Specifies whether this SlicerStyle object is read-only. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val readOnly: Boolean = js.native
   /**
     *
     * Deletes the SlicerStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
     *
     * Creates a duplicate of this SlicerStyle with copies of all the style elements.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     * @returns The new SlicerStyle object that has been duplicated from this SlicerStyle.
     */
   def duplicate(): SlicerStyle = js.native

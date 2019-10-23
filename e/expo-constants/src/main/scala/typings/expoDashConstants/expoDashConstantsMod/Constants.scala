@@ -20,8 +20,6 @@ object Constants {
     appOwnership: AppOwnership,
     debugMode: Boolean,
     experienceUrl: String,
-    expoRuntimeVersion: String,
-    expoVersion: String,
     getWebViewUserAgentAsync: () => js.Promise[String | Null],
     installationId: String,
     isDevice: Boolean,
@@ -35,6 +33,8 @@ object Constants {
     deviceId: String = null,
     deviceName: String = null,
     deviceYearClass: Int | Double = null,
+    expoRuntimeVersion: String = null,
+    expoVersion: String = null,
     intentUri: String = null,
     isDetached: js.UndefOr[Boolean] = js.undefined,
     linkingUrl: String = null,
@@ -43,10 +43,12 @@ object Constants {
     platform: PlatformManifest = null,
     systemVersion: Int | Double = null
   ): Constants = {
-    val __obj = js.Dynamic.literal(appOwnership = appOwnership, debugMode = debugMode, experienceUrl = experienceUrl, expoRuntimeVersion = expoRuntimeVersion, expoVersion = expoVersion, getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId, isDevice = isDevice, isHeadless = isHeadless, linkingUri = linkingUri, manifest = manifest, name = name, sessionId = sessionId, statusBarHeight = statusBarHeight, systemFonts = systemFonts)
+    val __obj = js.Dynamic.literal(appOwnership = appOwnership, debugMode = debugMode, experienceUrl = experienceUrl, getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId, isDevice = isDevice, isHeadless = isHeadless, linkingUri = linkingUri, manifest = manifest, name = name, sessionId = sessionId, statusBarHeight = statusBarHeight, systemFonts = systemFonts)
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
     if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
     if (deviceYearClass != null) __obj.updateDynamic("deviceYearClass")(deviceYearClass.asInstanceOf[js.Any])
+    if (expoRuntimeVersion != null) __obj.updateDynamic("expoRuntimeVersion")(expoRuntimeVersion)
+    if (expoVersion != null) __obj.updateDynamic("expoVersion")(expoVersion)
     if (intentUri != null) __obj.updateDynamic("intentUri")(intentUri)
     if (!js.isUndefined(isDetached)) __obj.updateDynamic("isDetached")(isDetached)
     if (linkingUrl != null) __obj.updateDynamic("linkingUrl")(linkingUrl)

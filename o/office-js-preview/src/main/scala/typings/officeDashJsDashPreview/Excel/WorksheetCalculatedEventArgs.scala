@@ -14,6 +14,14 @@ import scala.scalajs.js.annotation._
 trait WorksheetCalculatedEventArgs extends js.Object {
   /**
     *
+    * The address of the ranges that completed calculation.
+    If multiple ranges completed calculation, the string is a comma-separated list of those range addresses.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
+  var address: String
+  /**
+    *
     * Gets the type of the event. See Excel.EventType for details.
     *
     * [Api set: ExcelApi 1.8]
@@ -21,7 +29,7 @@ trait WorksheetCalculatedEventArgs extends js.Object {
   var `type`: WorksheetCalculated
   /**
     *
-    * Gets the id of the worksheet that is calculated.
+    * Gets the id of the worksheet in which the calculation occurred.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -30,8 +38,8 @@ trait WorksheetCalculatedEventArgs extends js.Object {
 
 object WorksheetCalculatedEventArgs {
   @scala.inline
-  def apply(`type`: WorksheetCalculated, worksheetId: String): WorksheetCalculatedEventArgs = {
-    val __obj = js.Dynamic.literal(worksheetId = worksheetId)
+  def apply(address: String, `type`: WorksheetCalculated, worksheetId: String): WorksheetCalculatedEventArgs = {
+    val __obj = js.Dynamic.literal(address = address, worksheetId = worksheetId)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorksheetCalculatedEventArgs]
   }

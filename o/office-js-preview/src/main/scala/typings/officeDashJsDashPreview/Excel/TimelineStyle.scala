@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a Timeline style, which defines style elements by region in the Timeline.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.TimelineStyle")
 @js.native
@@ -27,32 +26,28 @@ class TimelineStyle () extends ClientObject {
     *
     * Gets the name of the TimelineStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: String = js.native
   /**
     *
     * Specifies whether this TimelineStyle object is read-only. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val readOnly: Boolean = js.native
   /**
     *
     * Deletes the TableStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
     *
     * Creates a duplicate of this TimelineStyle with copies of all the style elements.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     * @returns The new TimelineStyle object that has been duplicated from this TimelineStyle.
     */
   def duplicate(): TimelineStyle = js.native

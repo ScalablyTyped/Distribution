@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object loginDashWithDashAmazonDashSdkDashBrowserStrings {
   @js.native
+  sealed trait AuthorizeScopeData extends js.Object
+  
+  @js.native
   sealed trait access_denied extends AuthorizeRequestErrorType
   
   @js.native
@@ -62,6 +65,8 @@ object loginDashWithDashAmazonDashSdkDashBrowserStrings {
   @js.native
   sealed trait unauthorized_client extends AuthorizeRequestErrorType
   
+  @scala.inline
+  def AuthorizeScopeData: AuthorizeScopeData = "AuthorizeScopeData".asInstanceOf[AuthorizeScopeData]
   @scala.inline
   def access_denied: access_denied = "access_denied".asInstanceOf[access_denied]
   @scala.inline

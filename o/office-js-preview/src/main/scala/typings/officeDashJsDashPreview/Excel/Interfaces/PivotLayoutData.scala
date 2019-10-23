@@ -25,8 +25,7 @@ trait PivotLayoutData extends js.Object {
     *
     * Specifies whether the field list can be shown in the UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var enableFieldList: js.UndefOr[Boolean] = js.undefined
   /**

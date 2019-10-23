@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "expo"
-version := "35.0.0-90a3b3"
+version := "35.0.0-be9c8c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "expo-asset" % "7.0.0-cb4f00",
-  "org.scalablytyped" %%% "expo-constants" % "7.0.0-a83f77",
+  "org.scalablytyped" %%% "expo-constants" % "7.0.1-f32946",
   "org.scalablytyped" %%% "fbemitter" % "2.0.0-dt-20190503Z-c3cabf",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",

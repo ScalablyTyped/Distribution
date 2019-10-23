@@ -1,6 +1,6 @@
 package typings.plotlyDotJs.plotlyDotJsMod
 
-import typings.plotlyDotJs.Anon_Color
+import typings.plotlyDotJs.Anon_ColorColorsrc
 import typings.plotlyDotJs.plotlyDotJsStrings.area
 import typings.plotlyDotJs.plotlyDotJsStrings.diameter
 import typings.std.Partial
@@ -18,7 +18,7 @@ trait PlotMarker extends js.Object {
   var colorbar: Partial[ColorBar]
   var colors: js.Array[Color]
   var colorscale: ColorScale
-  var gradient: Anon_Color
+  var gradient: Anon_ColorColorsrc
   var line: Partial[ScatterMarkerLine]
   var maxdisplayed: Double
   var opacity: Double | js.Array[Double]
@@ -44,7 +44,7 @@ object PlotMarker {
     colorbar: Partial[ColorBar],
     colors: js.Array[Color],
     colorscale: ColorScale,
-    gradient: Anon_Color,
+    gradient: Anon_ColorColorsrc,
     line: Partial[ScatterMarkerLine],
     maxdisplayed: Double,
     opacity: Double | js.Array[Double],

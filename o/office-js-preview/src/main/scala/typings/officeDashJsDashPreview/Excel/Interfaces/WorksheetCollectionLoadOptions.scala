@@ -25,7 +25,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
   var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
+    * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */

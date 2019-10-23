@@ -1,10 +1,16 @@
 package typings.plotlyDotJs.plotlyDotJsMod
 
+import typings.plotlyDotJs.Anon_Angular
+import typings.plotlyDotJs.Anon_Bottom
 import typings.plotlyDotJs.Anon_End
+import typings.plotlyDotJs.Anon_Font
 import typings.plotlyDotJs.plotlyDotJsNumbers.`false`
 import typings.plotlyDotJs.plotlyDotJsStrings.`bottom center`
 import typings.plotlyDotJs.plotlyDotJsStrings.`bottom left`
 import typings.plotlyDotJs.plotlyDotJsStrings.`bottom right`
+import typings.plotlyDotJs.plotlyDotJsStrings.`gauge+delta`
+import typings.plotlyDotJs.plotlyDotJsStrings.`gauge+number+delta`
+import typings.plotlyDotJs.plotlyDotJsStrings.`gauge+number`
 import typings.plotlyDotJs.plotlyDotJsStrings.`label+percent`
 import typings.plotlyDotJs.plotlyDotJsStrings.`label+text+percent`
 import typings.plotlyDotJs.plotlyDotJsStrings.`label+text+value`
@@ -15,6 +21,7 @@ import typings.plotlyDotJs.plotlyDotJsStrings.`lines+markers`
 import typings.plotlyDotJs.plotlyDotJsStrings.`middle center`
 import typings.plotlyDotJs.plotlyDotJsStrings.`middle left`
 import typings.plotlyDotJs.plotlyDotJsStrings.`middle right`
+import typings.plotlyDotJs.plotlyDotJsStrings.`number+delta`
 import typings.plotlyDotJs.plotlyDotJsStrings.`text+lines+markers`
 import typings.plotlyDotJs.plotlyDotJsStrings.`text+lines`
 import typings.plotlyDotJs.plotlyDotJsStrings.`text+markers`
@@ -61,14 +68,17 @@ import typings.plotlyDotJs.plotlyDotJsStrings.box
 import typings.plotlyDotJs.plotlyDotJsStrings.candlestick
 import typings.plotlyDotJs.plotlyDotJsStrings.choropleth
 import typings.plotlyDotJs.plotlyDotJsStrings.contour
+import typings.plotlyDotJs.plotlyDotJsStrings.delta
 import typings.plotlyDotJs.plotlyDotJsStrings.diameter
 import typings.plotlyDotJs.plotlyDotJsStrings.fast
 import typings.plotlyDotJs.plotlyDotJsStrings.fills
+import typings.plotlyDotJs.plotlyDotJsStrings.gauge
 import typings.plotlyDotJs.plotlyDotJsStrings.h
 import typings.plotlyDotJs.plotlyDotJsStrings.heatmap
 import typings.plotlyDotJs.plotlyDotJsStrings.histogram
 import typings.plotlyDotJs.plotlyDotJsStrings.hv
 import typings.plotlyDotJs.plotlyDotJsStrings.hvh
+import typings.plotlyDotJs.plotlyDotJsStrings.indicator
 import typings.plotlyDotJs.plotlyDotJsStrings.inside
 import typings.plotlyDotJs.plotlyDotJsStrings.label
 import typings.plotlyDotJs.plotlyDotJsStrings.legendonly
@@ -78,6 +88,7 @@ import typings.plotlyDotJs.plotlyDotJsStrings.markers
 import typings.plotlyDotJs.plotlyDotJsStrings.mesh3d
 import typings.plotlyDotJs.plotlyDotJsStrings.name
 import typings.plotlyDotJs.plotlyDotJsStrings.none
+import typings.plotlyDotJs.plotlyDotJsStrings.number
 import typings.plotlyDotJs.plotlyDotJsStrings.ohlc
 import typings.plotlyDotJs.plotlyDotJsStrings.parcoords
 import typings.plotlyDotJs.plotlyDotJsStrings.percent
@@ -118,10 +129,12 @@ trait PlotData extends js.Object {
   var colorscale: ColorScale
   var connectgaps: Boolean
   var customdata: js.Array[Datum]
+  var delta: Anon_Bottom
   var error_x: ErrorBar
   var error_y: ErrorBar
   var fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext
   var fillcolor: String
+  var gauge: Anon_Angular
   var hole: Double
   var hoverinfo: all | name | none | skip | text | x | `x+text` | `x+name` | `x+y` | `x+y+text` | `x+y+name` | `x+y+z` | `x+y+z+text` | `x+y+z+name` | `y+name` | `y+x` | `y+text` | `y+x+text` | `y+x+name` | `y+z` | `y+z+text` | `y+z+name` | `y+x+z` | `y+x+z+text` | `y+x+z+name` | `z+x` | `z+x+text` | `z+x+name` | `z+y+x` | `z+y+x+text` | `z+y+x+name` | `z+x+y` | `z+x+y+text` | `z+x+y+name`
   var hoverlabel: Partial[HoverLabel]
@@ -150,8 +163,9 @@ trait PlotData extends js.Object {
   var `marker.sizeref`: Double
   var `marker.symbol`: String | js.Array[String]
    // TODO
-  var mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none
+  var mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none | gauge | number | delta | `number+delta` | `gauge+number` | `gauge+number+delta` | `gauge+delta`
   var name: String
+  var number: Anon_Font
   var orientation: v | h
   var r: js.Array[Datum]
   var rotation: Double
@@ -162,7 +176,8 @@ trait PlotData extends js.Object {
   var theta: js.Array[Datum]
   var transforms: js.Array[DataTransform]
   var transpose: Boolean
-  var `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface
+  var `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface
+  var value: Double
   var values: js.Array[Datum]
   var visible: Boolean | legendonly
   var width: Double | js.Array[Double]
@@ -186,10 +201,12 @@ object PlotData {
     colorscale: ColorScale,
     connectgaps: Boolean,
     customdata: js.Array[Datum],
+    delta: Anon_Bottom,
     error_x: ErrorBar,
     error_y: ErrorBar,
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext,
     fillcolor: String,
+    gauge: Anon_Angular,
     hole: Double,
     hoverinfo: all | name | none | skip | text | x | `x+text` | `x+name` | `x+y` | `x+y+text` | `x+y+name` | `x+y+z` | `x+y+z+text` | `x+y+z+name` | `y+name` | `y+x` | `y+text` | `y+x+text` | `y+x+name` | `y+z` | `y+z+text` | `y+z+name` | `y+x+z` | `y+x+z+text` | `y+x+z+name` | `z+x` | `z+x+text` | `z+x+name` | `z+y+x` | `z+y+x+text` | `z+y+x+name` | `z+x+y` | `z+x+y+text` | `z+x+y+name`,
     hoverlabel: Partial[HoverLabel],
@@ -216,8 +233,9 @@ object PlotData {
     `marker.sizemode`: diameter | area,
     `marker.sizeref`: Double,
     `marker.symbol`: String | js.Array[String],
-    mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none,
+    mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none | gauge | number | delta | `number+delta` | `gauge+number` | `gauge+number+delta` | `gauge+delta`,
     name: String,
+    number: Anon_Font,
     orientation: v | h,
     r: js.Array[Datum],
     rotation: Double,
@@ -228,7 +246,8 @@ object PlotData {
     theta: js.Array[Datum],
     transforms: js.Array[DataTransform],
     transpose: Boolean,
-    `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface,
+    `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface,
+    value: Double,
     values: js.Array[Datum],
     visible: Boolean | legendonly,
     width: Double | js.Array[Double],
@@ -243,7 +262,7 @@ object PlotData {
     z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     zsmooth: fast | best | `false`
   ): PlotData = {
-    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, customdata = customdata, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, orientation = orientation.asInstanceOf[js.Any], r = r, rotation = rotation, stackgroup = stackgroup, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, values = values, visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, customdata = customdata, delta = delta, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, gauge = gauge, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, number = number, orientation = orientation.asInstanceOf[js.Any], r = r, rotation = rotation, stackgroup = stackgroup, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, value = value, values = values, visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
     __obj.updateDynamic("line.color")(`line.color`.asInstanceOf[js.Any])
     __obj.updateDynamic("line.dash")(`line.dash`)
     __obj.updateDynamic("line.shape")(`line.shape`.asInstanceOf[js.Any])

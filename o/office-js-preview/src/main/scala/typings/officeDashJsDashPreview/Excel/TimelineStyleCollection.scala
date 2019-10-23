@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of TimelineStyles.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.TimelineStyleCollection")
 @js.native
@@ -29,8 +28,7 @@ class TimelineStyleCollection () extends ClientObject {
     *
     * Creates a blank TimelineStyle with the specified name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name The unique name for the new TimelineStyle. Will throw an invalid argument exception if the name is already in use.
     * @param makeUniqueName Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.
@@ -42,16 +40,14 @@ class TimelineStyleCollection () extends ClientObject {
     *
     * Gets the number of timeline styles in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
     * Gets the default TimelineStyle for the parent object's scope.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     * @returns The TimelineStyle object that is the current default TimelineStyle.
     */
   def getDefault(): TimelineStyle = js.native
@@ -59,8 +55,7 @@ class TimelineStyleCollection () extends ClientObject {
     *
     * Gets a TimelineStyle by name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name Name of the TimelineStyle to be retrieved.
     * @returns The TimelineStyle object whose name matches the input.
@@ -70,8 +65,7 @@ class TimelineStyleCollection () extends ClientObject {
     *
     * Gets a TimelineStyle by name. If the TimelineStyle does not exist, will return a null object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name Name of the TimelineStyle to be retrieved.
     * @returns The TimelineStyle object whose name matches the input.
@@ -92,8 +86,7 @@ class TimelineStyleCollection () extends ClientObject {
     *
     * Sets the default TimelineStyle for use in the parent object's scope.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param newDefaultStyle The TimelineStyle object or name of the TimelineStyle object that should be the new default.
     */

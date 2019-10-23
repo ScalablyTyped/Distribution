@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
 
 trait MailOptions
   extends typings.nodemailer.libMailerMod.Options {
-  /** All keys are added to the SendRawEmail method options */
-  var ses: js.UndefOr[js.Object] = js.undefined
+  /** list of keys that SendRawEmail method can take */
+  var ses: js.UndefOr[MailSesOptions] = js.undefined
 }
 
 object MailOptions {
@@ -52,7 +52,7 @@ object MailOptions {
     references: String | js.Array[String] = null,
     replyTo: String | Address = null,
     sender: String | Address = null,
-    ses: js.Object = null,
+    ses: MailSesOptions = null,
     subject: String = null,
     text: String | Buffer | Readable | AttachmentLike = null,
     textEncoding: TextEncoding = null,

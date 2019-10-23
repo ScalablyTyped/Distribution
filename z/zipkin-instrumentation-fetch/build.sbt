@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "zipkin-instrumentation-fetch"
-version := "0.11-dt-20181119Z-ae34c8"
+version := "0.11-dt-20181119Z-76147f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
-  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190923Z-9512dd",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
+  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20190923Z-674c61",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "zipkin" % "0.19.1-a8a5e8")
 publishArtifact in packageDoc := false

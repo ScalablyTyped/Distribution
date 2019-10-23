@@ -17,7 +17,7 @@ trait FileEncryptionInfo extends js.Object {
   var mac: js.UndefOr[Double] = js.undefined
   // The key used to get mac.
   var macKey: js.UndefOr[Double] = js.undefined
-  // The the profile identifier.
+  // The profile identifier.
   var profileIdentifier: js.UndefOr[String] = js.undefined
 }
 

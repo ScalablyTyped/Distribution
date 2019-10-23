@@ -1,0 +1,32 @@
+package typings.otplib
+
+import typings.node.Buffer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HotpOptionsInterface extends HmacOptions {
+  var createHmacSecret: js.UndefOr[typings.otplib.createHmacSecret] = js.undefined
+  var crypto: js.UndefOr[js.Any] = js.undefined
+  var digits: js.UndefOr[Double] = js.undefined
+}
+
+object HotpOptionsInterface {
+  @scala.inline
+  def apply(
+    algorithm: String = null,
+    createHmacSecret: (/* secret */ String, /* options */ HmacOptions) => Buffer = null,
+    crypto: js.Any = null,
+    digits: Int | Double = null,
+    encoding: String = null
+  ): HotpOptionsInterface = {
+    val __obj = js.Dynamic.literal()
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (createHmacSecret != null) __obj.updateDynamic("createHmacSecret")(js.Any.fromFunction2(createHmacSecret))
+    if (crypto != null) __obj.updateDynamic("crypto")(crypto)
+    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    __obj.asInstanceOf[HotpOptionsInterface]
+  }
+}
+

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "otplib" : "11.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "otplib" : "11.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

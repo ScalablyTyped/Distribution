@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-material-textfield"
-version := "0.12-dt-20190326Z-e5b777"
+version := "0.15-dt-20191022Z-18867a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

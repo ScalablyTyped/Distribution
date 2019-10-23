@@ -36,6 +36,13 @@ trait Anon_CoordItemStyle extends js.Object {
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
+    * Name of the marker, which will display as a label.
+    *
+    *
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea.data.1.name
+    */
+  var name: js.UndefOr[String] = js.undefined
+  /**
     * Specify this item is on min or max or average value.
     *
     * **Options:**
@@ -105,6 +112,7 @@ object Anon_CoordItemStyle {
     coord: js.Array[_] = null,
     itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    name: String = null,
     `type`: String = null,
     value: Int | Double = null,
     valueDim: String = null,
@@ -116,6 +124,7 @@ object Anon_CoordItemStyle {
     if (coord != null) __obj.updateDynamic("coord")(coord)
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueDim != null) __obj.updateDynamic("valueDim")(valueDim)

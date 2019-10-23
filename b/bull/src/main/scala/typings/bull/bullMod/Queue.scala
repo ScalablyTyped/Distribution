@@ -75,6 +75,7 @@ trait Queue[T] extends EventEmitter {
     * if called from within a job handler the queue won't close until after the job has been processed
     */
   def close(): js.Promise[Unit] = js.native
+  def close(doNotWaitJobs: Boolean): js.Promise[Unit] = js.native
   /**
     * Returns a promise that returns the number of jobs in the queue, waiting or paused.
     * Since there may be other processes adding or processing jobs, this value may be true only for a very small amount of time.

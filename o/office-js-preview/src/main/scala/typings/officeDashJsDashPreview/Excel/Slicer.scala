@@ -18,8 +18,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a slicer object in the workbook.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.Slicer")
 @js.native
@@ -28,8 +27,7 @@ class Slicer () extends ClientObject {
     *
     * Represents the caption of slicer.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var caption: String = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -40,24 +38,21 @@ class Slicer () extends ClientObject {
     * Represents the height, in points, of the slicer.
     Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var height: Double = js.native
   /**
     *
     * Represents the unique id of slicer. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val id: String = js.native
   /**
     *
     * True if all filters currently applied on the slicer are cleared.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val isFilterCleared: Boolean = js.native
   /**
@@ -65,16 +60,14 @@ class Slicer () extends ClientObject {
     * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
     Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var left: Double = js.native
   /**
     *
     * Represents the name of slicer.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: String = js.native
   /**
@@ -89,24 +82,21 @@ class Slicer () extends ClientObject {
     *
     * Represents the collection of SlicerItems that are part of the slicer. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val slicerItems: SlicerItemCollection = js.native
   /**
     *
     * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var sortBy: SlicerSortType | DataSourceOrder | Ascending | Descending = js.native
   /**
     *
     * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var style: String = js.native
   /**
@@ -114,8 +104,7 @@ class Slicer () extends ClientObject {
     * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
     Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var top: Double = js.native
   /**
@@ -123,40 +112,35 @@ class Slicer () extends ClientObject {
     * Represents the width, in points, of the slicer.
     Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var width: Double = js.native
   /**
     *
     * Represents the worksheet containing the slicer. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val worksheet: Worksheet = js.native
   /**
     *
     * Clears all the filters currently applied on the slicer.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def clearFilters(): Unit = js.native
   /**
     *
     * Deletes the slicer.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
     *
     * Returns an array of selected items' keys. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getSelectedItems(): ClientResult[js.Array[String]] = js.native
   /**
@@ -174,8 +158,7 @@ class Slicer () extends ClientObject {
     * Selects slicer items based on their keys. The previous selections are cleared.
     All items will be selected by default if the array is empty.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param items Optional. The specified slicer item names to be selected.
     */

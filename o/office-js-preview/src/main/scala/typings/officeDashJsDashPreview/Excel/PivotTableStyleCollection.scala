@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of PivotTable styles.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.PivotTableStyleCollection")
 @js.native
@@ -29,8 +28,7 @@ class PivotTableStyleCollection () extends ClientObject {
     *
     * Creates a blank PivotTableStyle with the specified name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name The unique name for the new PivotTableStyle. Will throw an invalid argument exception if the name is already in use.
     * @param makeUniqueName Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.
@@ -42,16 +40,14 @@ class PivotTableStyleCollection () extends ClientObject {
     *
     * Gets the number of PivotTable styles in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
     * Gets the default PivotTableStyle for the parent object's scope.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     * @returns The PivotTableStyle object that is the current default PivotTableStyle.
     */
   def getDefault(): PivotTableStyle = js.native
@@ -59,8 +55,7 @@ class PivotTableStyleCollection () extends ClientObject {
     *
     * Gets a PivotTableStyle by name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name Name of the PivotTableStyle to be retrieved.
     * @returns The PivotTableStyle object whose name matches the input.
@@ -70,8 +65,7 @@ class PivotTableStyleCollection () extends ClientObject {
     *
     * Gets a PivotTableStyle by name. If the PivotTableStyle does not exist, will return a null object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param name Name of the PivotTableStyle to be retrieved.
     * @returns The PivotTableStyle object whose name matches the input.
@@ -92,8 +86,7 @@ class PivotTableStyleCollection () extends ClientObject {
     *
     * Sets the default PivotTableStyle for use in the parent object's scope.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param newDefaultStyle The PivotTableStyle object or name of the PivotTableStyle object that should be the new default.
     */

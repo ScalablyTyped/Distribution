@@ -50,6 +50,9 @@ object plotlyDotJsStrings {
   sealed trait allticks extends js.Object
   
   @js.native
+  sealed trait angular extends js.Object
+  
+  @js.native
   sealed trait animate extends js.Object
   
   @js.native
@@ -168,6 +171,9 @@ object plotlyDotJsStrings {
   
   @js.native
   sealed trait br extends js.Object
+  
+  @js.native
+  sealed trait bullet extends js.Object
   
   @js.native
   sealed trait button extends js.Object
@@ -293,6 +299,9 @@ object plotlyDotJsStrings {
   sealed trait del extends js.Object
   
   @js.native
+  sealed trait delta extends js.Object
+  
+  @js.native
   sealed trait descending extends js.Object
   
   @js.native
@@ -413,6 +422,18 @@ object plotlyDotJsStrings {
   sealed trait free extends js.Object
   
   @js.native
+  sealed trait gauge extends js.Object
+  
+  @js.native
+  sealed trait `gauge+delta` extends js.Object
+  
+  @js.native
+  sealed trait `gauge+number` extends js.Object
+  
+  @js.native
+  sealed trait `gauge+number+delta` extends js.Object
+  
+  @js.native
   sealed trait gregorian extends Calendar
   
   @js.native
@@ -513,6 +534,9 @@ object plotlyDotJsStrings {
   
   @js.native
   sealed trait `implicit` extends js.Object
+  
+  @js.native
+  sealed trait indicator extends js.Object
   
   @js.native
   sealed trait input extends js.Object
@@ -699,6 +723,12 @@ object plotlyDotJsStrings {
   
   @js.native
   sealed trait noscript extends js.Object
+  
+  @js.native
+  sealed trait number extends js.Object
+  
+  @js.native
+  sealed trait `number+delta` extends js.Object
   
   @js.native
   sealed trait `object` extends js.Object
@@ -1432,6 +1462,8 @@ object plotlyDotJsStrings {
   @scala.inline
   def allticks: allticks = "allticks".asInstanceOf[allticks]
   @scala.inline
+  def angular: angular = "angular".asInstanceOf[angular]
+  @scala.inline
   def animate: animate = "animate".asInstanceOf[animate]
   @scala.inline
   def any: any = "any".asInstanceOf[any]
@@ -1511,6 +1543,8 @@ object plotlyDotJsStrings {
   def box: box = "box".asInstanceOf[box]
   @scala.inline
   def br: br = "br".asInstanceOf[br]
+  @scala.inline
+  def bullet: bullet = "bullet".asInstanceOf[bullet]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
@@ -1594,6 +1628,8 @@ object plotlyDotJsStrings {
   @scala.inline
   def del: del = "del".asInstanceOf[del]
   @scala.inline
+  def delta: delta = "delta".asInstanceOf[delta]
+  @scala.inline
   def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
   def details: details = "details".asInstanceOf[details]
@@ -1674,6 +1710,14 @@ object plotlyDotJsStrings {
   @scala.inline
   def free: free = "free".asInstanceOf[free]
   @scala.inline
+  def gauge: gauge = "gauge".asInstanceOf[gauge]
+  @scala.inline
+  def `gauge+delta`: `gauge+delta` = "gauge+delta".asInstanceOf[`gauge+delta`]
+  @scala.inline
+  def `gauge+number`: `gauge+number` = "gauge+number".asInstanceOf[`gauge+number`]
+  @scala.inline
+  def `gauge+number+delta`: `gauge+number+delta` = "gauge+number+delta".asInstanceOf[`gauge+number+delta`]
+  @scala.inline
   def gregorian: gregorian = "gregorian".asInstanceOf[gregorian]
   @scala.inline
   def group: group = "group".asInstanceOf[group]
@@ -1741,6 +1785,8 @@ object plotlyDotJsStrings {
   def img: img = "img".asInstanceOf[img]
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
+  @scala.inline
+  def indicator: indicator = "indicator".asInstanceOf[indicator]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
@@ -1865,6 +1911,10 @@ object plotlyDotJsStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  @scala.inline
+  def `number+delta`: `number+delta` = "number+delta".asInstanceOf[`number+delta`]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline

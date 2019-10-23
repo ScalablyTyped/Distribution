@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a PivotTable Style, which defines style elements by PivotTable region.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 trait PivotTableStyleLoadOptions extends js.Object {
   /**
@@ -21,16 +20,14 @@ trait PivotTableStyleLoadOptions extends js.Object {
     *
     * Gets the name of the PivotTableStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Specifies whether this PivotTableStyle object is read-only. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined
 }

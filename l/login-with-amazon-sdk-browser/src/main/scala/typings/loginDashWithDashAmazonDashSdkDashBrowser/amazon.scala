@@ -12,6 +12,9 @@ object amazon extends js.Object {
     def authorize(options: AccessTokenAuthorizeOptions): AccessTokenRequest = js.native
     def authorize(options: AccessTokenAuthorizeOptions, next: String): AccessTokenRequest = js.native
     def authorize(options: AccessTokenAuthorizeOptions, next: NextCallback[AccessTokenRequest]): AccessTokenRequest = js.native
+    def authorize(options: AuthorizeOptions): AuthorizeRequest = js.native
+    def authorize(options: AuthorizeOptions, next: String): AuthorizeRequest = js.native
+    def authorize(options: AuthorizeOptions, next: NextCallback[AuthorizeRequest]): AuthorizeRequest = js.native
     def authorize(options: CodeAuthorizeOptions): CodeRequest = js.native
     def authorize(options: CodeAuthorizeOptions, next: String): CodeRequest = js.native
     def authorize(options: CodeAuthorizeOptions, next: NextCallback[CodeRequest]): CodeRequest = js.native

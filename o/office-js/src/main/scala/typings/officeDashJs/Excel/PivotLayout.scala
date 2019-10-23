@@ -44,6 +44,13 @@ class PivotLayout () extends ClientObject {
   var context_PivotLayout: RequestContext = js.native
   /**
     *
+    * Specifies whether the field list can be shown in the UI.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var enableFieldList: Boolean = js.native
+  /**
+    *
     * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
     *
     * [Api set: ExcelApi 1.8]

@@ -65,6 +65,13 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     */
   var lineStyle: js.UndefOr[Anon_ColorCurvenessEmphasis] = js.undefined
   /**
+    * Name of the marker, which will display as a label.
+    *
+    *
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.name
+    */
+  var name: js.UndefOr[String] = js.undefined
+  /**
     * Symbol of ending point.
     *
     * Icon types provided by ECharts includes `'circle'`,
@@ -215,6 +222,7 @@ object Anon_CoordLabelLineStyle {
     coord: js.Array[_] = null,
     label: Anon_Emphasis = null,
     lineStyle: Anon_ColorCurvenessEmphasis = null,
+    name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
@@ -230,6 +238,7 @@ object Anon_CoordLabelLineStyle {
     if (coord != null) __obj.updateDynamic("coord")(coord)
     if (label != null) __obj.updateDynamic("label")(label)
     if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (symbol != null) __obj.updateDynamic("symbol")(symbol)
     if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)

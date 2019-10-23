@@ -10,8 +10,7 @@ trait CommentReplyUpdateData extends js.Object {
     *
     * Gets or sets the comment reply's content. The string is plain text.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[String] = js.undefined
 }

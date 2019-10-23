@@ -21,7 +21,10 @@ import typings.microsoftDashGraph.microsoftDashGraphMod.AutomaticUpdateMode
 import typings.microsoftDashGraph.microsoftDashGraphMod.BitLockerEncryptionMethod
 import typings.microsoftDashGraph.microsoftDashGraphMod.BodyType
 import typings.microsoftDashGraph.microsoftDashGraphMod.CalendarColor
+import typings.microsoftDashGraph.microsoftDashGraphMod.CallDirection
+import typings.microsoftDashGraph.microsoftDashGraphMod.CallState
 import typings.microsoftDashGraph.microsoftDashGraphMod.CategoryColor
+import typings.microsoftDashGraph.microsoftDashGraphMod.ChangeType
 import typings.microsoftDashGraph.microsoftDashGraphMod.ClonableTeamParts
 import typings.microsoftDashGraph.microsoftDashGraphMod.ComplianceState
 import typings.microsoftDashGraph.microsoftDashGraphMod.ComplianceStatus
@@ -58,6 +61,7 @@ import typings.microsoftDashGraph.microsoftDashGraphMod.EducationUserRole
 import typings.microsoftDashGraph.microsoftDashGraphMod.EmailRole
 import typings.microsoftDashGraph.microsoftDashGraphMod.Enablement
 import typings.microsoftDashGraph.microsoftDashGraphMod.EventType
+import typings.microsoftDashGraph.microsoftDashGraphMod.ExchangeIdFormat
 import typings.microsoftDashGraph.microsoftDashGraphMod.ExternalAudienceScope
 import typings.microsoftDashGraph.microsoftDashGraphMod.FileHashType
 import typings.microsoftDashGraph.microsoftDashGraphMod.FirewallCertificateRevocationListCheckMethodType
@@ -90,6 +94,8 @@ import typings.microsoftDashGraph.microsoftDashGraphMod.ManagedDevicePartnerRepo
 import typings.microsoftDashGraph.microsoftDashGraphMod.ManagementAgentType
 import typings.microsoftDashGraph.microsoftDashGraphMod.MdmAppConfigKeyType
 import typings.microsoftDashGraph.microsoftDashGraphMod.MdmAuthority
+import typings.microsoftDashGraph.microsoftDashGraphMod.MediaDirection
+import typings.microsoftDashGraph.microsoftDashGraphMod.MediaState
 import typings.microsoftDashGraph.microsoftDashGraphMod.MeetingMessageType
 import typings.microsoftDashGraph.microsoftDashGraphMod.MessageActionFlag
 import typings.microsoftDashGraph.microsoftDashGraphMod.MicrosoftStoreForBusinessLicenseType
@@ -97,6 +103,7 @@ import typings.microsoftDashGraph.microsoftDashGraphMod.MiracastChannel
 import typings.microsoftDashGraph.microsoftDashGraphMod.MobileAppContentFileUploadState
 import typings.microsoftDashGraph.microsoftDashGraphMod.MobileAppPublishingState
 import typings.microsoftDashGraph.microsoftDashGraphMod.MobileThreatPartnerTenantState
+import typings.microsoftDashGraph.microsoftDashGraphMod.Modality
 import typings.microsoftDashGraph.microsoftDashGraphMod.NotificationTemplateBrandingOptions
 import typings.microsoftDashGraph.microsoftDashGraphMod.OnenotePatchActionType
 import typings.microsoftDashGraph.microsoftDashGraphMod.OnenotePatchInsertPosition
@@ -135,6 +142,7 @@ import typings.microsoftDashGraph.microsoftDashGraphMod.RecurrenceRangeType
 import typings.microsoftDashGraph.microsoftDashGraphMod.RegistryHive
 import typings.microsoftDashGraph.microsoftDashGraphMod.RegistryOperation
 import typings.microsoftDashGraph.microsoftDashGraphMod.RegistryValueType
+import typings.microsoftDashGraph.microsoftDashGraphMod.RejectReason
 import typings.microsoftDashGraph.microsoftDashGraphMod.RemoteAssistanceOnboardingStatus
 import typings.microsoftDashGraph.microsoftDashGraphMod.RequiredPasswordType
 import typings.microsoftDashGraph.microsoftDashGraphMod.ResponseType
@@ -143,6 +151,7 @@ import typings.microsoftDashGraph.microsoftDashGraphMod.RiskEventType
 import typings.microsoftDashGraph.microsoftDashGraphMod.RiskLevel
 import typings.microsoftDashGraph.microsoftDashGraphMod.RiskState
 import typings.microsoftDashGraph.microsoftDashGraphMod.SafeSearchFilterType
+import typings.microsoftDashGraph.microsoftDashGraphMod.ScreenSharingRole
 import typings.microsoftDashGraph.microsoftDashGraphMod.SecurityNetworkProtocol
 import typings.microsoftDashGraph.microsoftDashGraphMod.SelectionLikelihoodInfo
 import typings.microsoftDashGraph.microsoftDashGraphMod.Sensitivity
@@ -156,6 +165,7 @@ import typings.microsoftDashGraph.microsoftDashGraphMod.TeamsAppDistributionMeth
 import typings.microsoftDashGraph.microsoftDashGraphMod.TeamsAsyncOperationStatus
 import typings.microsoftDashGraph.microsoftDashGraphMod.TeamsAsyncOperationType
 import typings.microsoftDashGraph.microsoftDashGraphMod.TimeZoneStandard
+import typings.microsoftDashGraph.microsoftDashGraphMod.Tone
 import typings.microsoftDashGraph.microsoftDashGraphMod.UserAccountSecurityType
 import typings.microsoftDashGraph.microsoftDashGraphMod.VisibilitySetting
 import typings.microsoftDashGraph.microsoftDashGraphMod.VppTokenAccountType
@@ -241,6 +251,9 @@ object microsoftDashGraphStrings {
   sealed trait Unknown extends OnenoteSourceService
   
   @js.native
+  sealed trait a extends Tone
+  
+  @js.native
   sealed trait absoluteMonthly extends RecurrencePatternType
   
   @js.native
@@ -259,6 +272,7 @@ object microsoftDashGraphStrings {
   sealed trait active
     extends ActionState
        with DeviceManagementSubscriptionState
+       with MediaState
        with Status
   
   @js.native
@@ -546,6 +560,9 @@ object microsoftDashGraphStrings {
   sealed trait attempted extends ConnectionStatus
   
   @js.native
+  sealed trait audio extends Modality
+  
+  @js.native
   sealed trait auditComponentsAndStoreApps extends AppLockerApplicationControlType
   
   @js.native
@@ -625,6 +642,9 @@ object microsoftDashGraphStrings {
   
   @js.native
   sealed trait azureStorageUriRequestTimedOut extends MobileAppContentFileUploadState
+  
+  @js.native
+  sealed trait b extends Tone
   
   @js.native
   sealed trait badRequest extends DeviceEnrollmentFailureReason
@@ -719,10 +739,15 @@ object microsoftDashGraphStrings {
   sealed trait businessReadyOnly extends WindowsUpdateType
   
   @js.native
-  sealed trait busy extends FreeBusyStatus
+  sealed trait busy
+    extends FreeBusyStatus
+       with RejectReason
   
   @js.native
   sealed trait bypassMode extends WindowsDeliveryOptimizationMode
+  
+  @js.native
+  sealed trait c extends Tone
   
   @js.native
   sealed trait call extends MessageActionFlag
@@ -852,6 +877,9 @@ object microsoftDashGraphStrings {
   sealed trait createTeam extends TeamsAsyncOperationType
   
   @js.native
+  sealed trait created extends ChangeType
+  
+  @js.native
   sealed trait ctph extends FileHashType
   
   @js.native
@@ -864,7 +892,13 @@ object microsoftDashGraphStrings {
   sealed trait customMailTip extends MailTipsType
   
   @js.native
+  sealed trait d extends Tone
+  
+  @js.native
   sealed trait daily extends RecurrencePatternType
+  
+  @js.native
+  sealed trait data extends Modality
   
   @js.native
   sealed trait deactivated extends ManagedDevicePartnerReportedHealthState
@@ -885,7 +919,8 @@ object microsoftDashGraphStrings {
   
   @js.native
   sealed trait deleted
-    extends DeviceManagementSubscriptionState
+    extends ChangeType
+       with DeviceManagementSubscriptionState
        with Status
   
   @js.native
@@ -1045,13 +1080,25 @@ object microsoftDashGraphStrings {
   sealed trait enrollmentRestrictionsEnforced extends DeviceEnrollmentFailureReason
   
   @js.native
+  sealed trait entryId extends ExchangeIdFormat
+  
+  @js.native
   sealed trait error
     extends ComplianceState
        with ComplianceStatus
        with MobileAppContentFileUploadState
   
   @js.native
+  sealed trait established extends CallState
+  
+  @js.native
+  sealed trait establishing extends CallState
+  
+  @js.native
   sealed trait everyday extends WeeklySchedule
+  
+  @js.native
+  sealed trait ewsId extends ExchangeIdFormat
   
   @js.native
   sealed trait exception extends EventType
@@ -1126,10 +1173,16 @@ object microsoftDashGraphStrings {
   sealed trait flagged extends FollowupFlagStatus
   
   @js.native
+  sealed trait flash extends Tone
+  
+  @js.native
   sealed trait focused extends InferenceClassificationType
   
   @js.native
   sealed trait followUp extends MessageActionFlag
+  
+  @js.native
+  sealed trait forbidden extends RejectReason
   
   @js.native
   sealed trait forty extends MiracastChannel
@@ -1236,6 +1289,9 @@ object microsoftDashGraphStrings {
   sealed trait highSeverity extends ManagedDevicePartnerReportedHealthState
   
   @js.native
+  sealed trait hold extends CallState
+  
+  @js.native
   sealed trait holographic extends WindowsDeviceType
   
   @js.native
@@ -1299,6 +1355,9 @@ object microsoftDashGraphStrings {
   sealed trait immediate extends SharedPCAccountDeletionPolicyType
   
   @js.native
+  sealed trait immutableEntryId extends ExchangeIdFormat
+  
+  @js.native
   sealed trait inGracePeriod extends ComplianceState
   
   @js.native
@@ -1311,6 +1370,11 @@ object microsoftDashGraphStrings {
        with VppTokenSyncStatus
   
   @js.native
+  sealed trait inactive
+    extends MediaDirection
+       with MediaState
+  
+  @js.native
   sealed trait inbound extends ConnectionDirection
   
   @js.native
@@ -1321,6 +1385,11 @@ object microsoftDashGraphStrings {
   
   @js.native
   sealed trait includeContactInformation extends NotificationTemplateBrandingOptions
+  
+  @js.native
+  sealed trait incoming
+    extends CallDirection
+       with CallState
   
   @js.native
   sealed trait informational extends AlertSeverity
@@ -1697,6 +1766,7 @@ object microsoftDashGraphStrings {
        with NotificationTemplateBrandingOptions
        with RecipientScopeType
        with RegistryValueType
+       with RejectReason
        with ResponseType
        with RiskDetail
        with RiskLevel
@@ -1883,6 +1953,9 @@ object microsoftDashGraphStrings {
   sealed trait outbound extends ConnectionDirection
   
   @js.native
+  sealed trait outgoing extends CallDirection
+  
+  @js.native
   sealed trait pager extends PhoneType
   
   @js.native
@@ -1918,6 +1991,9 @@ object microsoftDashGraphStrings {
   
   @js.native
   sealed trait postalAddress extends LocationType
+  
+  @js.native
+  sealed trait pound extends Tone
   
   @js.native
   sealed trait power extends UserAccountSecurityType
@@ -2073,6 +2149,9 @@ object microsoftDashGraphStrings {
   sealed trait realType extends MdmAppConfigKeyType
   
   @js.native
+  sealed trait receiveOnly extends MediaDirection
+  
+  @js.native
   sealed trait recipient extends EmailRole
   
   @js.native
@@ -2080,6 +2159,9 @@ object microsoftDashGraphStrings {
   
   @js.native
   sealed trait recipientSuggestions extends MailTipsType
+  
+  @js.native
+  sealed trait redirecting extends CallState
   
   @js.native
   sealed trait reference extends PlannerPreviewType
@@ -2138,6 +2220,12 @@ object microsoftDashGraphStrings {
   sealed trait resource extends AttendeeType
   
   @js.native
+  sealed trait restId extends ExchangeIdFormat
+  
+  @js.native
+  sealed trait restImmutableEntryId extends ExchangeIdFormat
+  
+  @js.native
   sealed trait restaurant extends LocationType
   
   @js.native
@@ -2184,6 +2272,12 @@ object microsoftDashGraphStrings {
   sealed trait sendAllDataWithoutPrompting extends DefenderPromptForSampleSubmission
   
   @js.native
+  sealed trait sendOnly extends MediaDirection
+  
+  @js.native
+  sealed trait sendReceive extends MediaDirection
+  
+  @js.native
   sealed trait sender extends EmailRole
   
   @js.native
@@ -2220,6 +2314,9 @@ object microsoftDashGraphStrings {
   sealed trait sharedDeviceUserLoggedInError extends IosUpdatesInstallStatus
   
   @js.native
+  sealed trait sharer extends ScreenSharingRole
+  
+  @js.native
   sealed trait show extends VisibilitySetting
   
   @js.native
@@ -2254,6 +2351,9 @@ object microsoftDashGraphStrings {
   
   @js.native
   sealed trait standard extends UserAccountSecurityType
+  
+  @js.native
+  sealed trait star extends Tone
   
   @js.native
   sealed trait store extends TeamsAppDistributionMethod
@@ -2321,7 +2421,12 @@ object microsoftDashGraphStrings {
   sealed trait tentativelyAccepted extends ResponseType
   
   @js.native
-  sealed trait terminated extends DeviceManagementPartnerTenantState
+  sealed trait terminated
+    extends CallState
+       with DeviceManagementPartnerTenantState
+  
+  @js.native
+  sealed trait terminating extends CallState
   
   @js.native
   sealed trait text extends BodyType
@@ -2347,7 +2452,43 @@ object microsoftDashGraphStrings {
   sealed trait tokenType extends MdmAppConfigKeyType
   
   @js.native
+  sealed trait tone0 extends Tone
+  
+  @js.native
+  sealed trait tone1 extends Tone
+  
+  @js.native
+  sealed trait tone2 extends Tone
+  
+  @js.native
+  sealed trait tone3 extends Tone
+  
+  @js.native
+  sealed trait tone4 extends Tone
+  
+  @js.native
+  sealed trait tone5 extends Tone
+  
+  @js.native
+  sealed trait tone6 extends Tone
+  
+  @js.native
+  sealed trait tone7 extends Tone
+  
+  @js.native
+  sealed trait tone8 extends Tone
+  
+  @js.native
+  sealed trait tone9 extends Tone
+  
+  @js.native
   sealed trait totalMemberCount extends MailTipsType
+  
+  @js.native
+  sealed trait transferAccepted extends CallState
+  
+  @js.native
+  sealed trait transferring extends CallState
   
   @js.native
   sealed trait transientError extends MobileAppContentFileUploadState
@@ -2438,6 +2579,7 @@ object microsoftDashGraphStrings {
        with AlertSeverity
        with AlertStatus
        with AppliedConditionalAccessPolicyResult
+       with CallState
        with ConditionalAccessStatus
        with ConnectionDirection
        with ConnectionStatus
@@ -2450,11 +2592,14 @@ object microsoftDashGraphStrings {
        with GiphyRatingType
        with GroupType
        with LogonType
+       with MediaState
+       with Modality
        with OperationResult
        with ProcessIntegrityLevel
        with RegistryHive
        with RegistryOperation
        with RegistryValueType
+       with RejectReason
        with RiskDetail
        with RiskEventType
        with RiskLevel
@@ -2486,7 +2631,9 @@ object microsoftDashGraphStrings {
   sealed trait untrusted extends ProcessIntegrityLevel
   
   @js.native
-  sealed trait updated extends Status
+  sealed trait updated
+    extends ChangeType
+       with Status
   
   @js.native
   sealed trait useDeviceSettings extends ManagedAppDataEncryptionType
@@ -2539,6 +2686,15 @@ object microsoftDashGraphStrings {
   
   @js.native
   sealed trait valid extends VppTokenState
+  
+  @js.native
+  sealed trait video extends Modality
+  
+  @js.native
+  sealed trait videoBasedScreenSharing extends Modality
+  
+  @js.native
+  sealed trait viewer extends ScreenSharingRole
   
   @js.native
   sealed trait warning extends DeviceManagementSubscriptionState
@@ -2697,6 +2853,8 @@ object microsoftDashGraphStrings {
   @scala.inline
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   @scala.inline
+  def a: a = "a".asInstanceOf[a]
+  @scala.inline
   def absoluteMonthly: absoluteMonthly = "absoluteMonthly".asInstanceOf[absoluteMonthly]
   @scala.inline
   def absoluteYearly: absoluteYearly = "absoluteYearly".asInstanceOf[absoluteYearly]
@@ -2835,6 +2993,8 @@ object microsoftDashGraphStrings {
   @scala.inline
   def attempted: attempted = "attempted".asInstanceOf[attempted]
   @scala.inline
+  def audio: audio = "audio".asInstanceOf[audio]
+  @scala.inline
   def auditComponentsAndStoreApps: auditComponentsAndStoreApps = "auditComponentsAndStoreApps".asInstanceOf[auditComponentsAndStoreApps]
   @scala.inline
   def auditComponentsStoreAppsAndSmartlocker: auditComponentsStoreAppsAndSmartlocker = "auditComponentsStoreAppsAndSmartlocker".asInstanceOf[auditComponentsStoreAppsAndSmartlocker]
@@ -2886,6 +3046,8 @@ object microsoftDashGraphStrings {
   def azureStorageUriRequestSuccess: azureStorageUriRequestSuccess = "azureStorageUriRequestSuccess".asInstanceOf[azureStorageUriRequestSuccess]
   @scala.inline
   def azureStorageUriRequestTimedOut: azureStorageUriRequestTimedOut = "azureStorageUriRequestTimedOut".asInstanceOf[azureStorageUriRequestTimedOut]
+  @scala.inline
+  def b: b = "b".asInstanceOf[b]
   @scala.inline
   def badRequest: badRequest = "badRequest".asInstanceOf[badRequest]
   @scala.inline
@@ -2942,6 +3104,8 @@ object microsoftDashGraphStrings {
   def busy: busy = "busy".asInstanceOf[busy]
   @scala.inline
   def bypassMode: bypassMode = "bypassMode".asInstanceOf[bypassMode]
+  @scala.inline
+  def c: c = "c".asInstanceOf[c]
   @scala.inline
   def call: call = "call".asInstanceOf[call]
   @scala.inline
@@ -3021,6 +3185,8 @@ object microsoftDashGraphStrings {
   @scala.inline
   def createTeam: createTeam = "createTeam".asInstanceOf[createTeam]
   @scala.inline
+  def created: created = "created".asInstanceOf[created]
+  @scala.inline
   def ctph: ctph = "ctph".asInstanceOf[ctph]
   @scala.inline
   def currentConfig: currentConfig = "currentConfig".asInstanceOf[currentConfig]
@@ -3029,7 +3195,11 @@ object microsoftDashGraphStrings {
   @scala.inline
   def customMailTip: customMailTip = "customMailTip".asInstanceOf[customMailTip]
   @scala.inline
+  def d: d = "d".asInstanceOf[d]
+  @scala.inline
   def daily: daily = "daily".asInstanceOf[daily]
+  @scala.inline
+  def data: data = "data".asInstanceOf[data]
   @scala.inline
   def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
   @scala.inline
@@ -3131,9 +3301,17 @@ object microsoftDashGraphStrings {
   @scala.inline
   def enrollmentRestrictionsEnforced: enrollmentRestrictionsEnforced = "enrollmentRestrictionsEnforced".asInstanceOf[enrollmentRestrictionsEnforced]
   @scala.inline
+  def entryId: entryId = "entryId".asInstanceOf[entryId]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def established: established = "established".asInstanceOf[established]
+  @scala.inline
+  def establishing: establishing = "establishing".asInstanceOf[establishing]
+  @scala.inline
   def everyday: everyday = "everyday".asInstanceOf[everyday]
+  @scala.inline
+  def ewsId: ewsId = "ewsId".asInstanceOf[ewsId]
   @scala.inline
   def exception: exception = "exception".asInstanceOf[exception]
   @scala.inline
@@ -3177,9 +3355,13 @@ object microsoftDashGraphStrings {
   @scala.inline
   def flagged: flagged = "flagged".asInstanceOf[flagged]
   @scala.inline
+  def flash: flash = "flash".asInstanceOf[flash]
+  @scala.inline
   def focused: focused = "focused".asInstanceOf[focused]
   @scala.inline
   def followUp: followUp = "followUp".asInstanceOf[followUp]
+  @scala.inline
+  def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
   @scala.inline
   def forty: forty = "forty".asInstanceOf[forty]
   @scala.inline
@@ -3231,6 +3413,8 @@ object microsoftDashGraphStrings {
   @scala.inline
   def highSeverity: highSeverity = "highSeverity".asInstanceOf[highSeverity]
   @scala.inline
+  def hold: hold = "hold".asInstanceOf[hold]
+  @scala.inline
   def holographic: holographic = "holographic".asInstanceOf[holographic]
   @scala.inline
   def home: home = "home".asInstanceOf[home]
@@ -3271,11 +3455,15 @@ object microsoftDashGraphStrings {
   @scala.inline
   def immediate: immediate = "immediate".asInstanceOf[immediate]
   @scala.inline
+  def immutableEntryId: immutableEntryId = "immutableEntryId".asInstanceOf[immutableEntryId]
+  @scala.inline
   def inGracePeriod: inGracePeriod = "inGracePeriod".asInstanceOf[inGracePeriod]
   @scala.inline
   def inMaintenance: inMaintenance = "inMaintenance".asInstanceOf[inMaintenance]
   @scala.inline
   def inProgress: inProgress = "inProgress".asInstanceOf[inProgress]
+  @scala.inline
+  def inactive: inactive = "inactive".asInstanceOf[inactive]
   @scala.inline
   def inbound: inbound = "inbound".asInstanceOf[inbound]
   @scala.inline
@@ -3284,6 +3472,8 @@ object microsoftDashGraphStrings {
   def includeCompanyName: includeCompanyName = "includeCompanyName".asInstanceOf[includeCompanyName]
   @scala.inline
   def includeContactInformation: includeContactInformation = "includeContactInformation".asInstanceOf[includeContactInformation]
+  @scala.inline
+  def incoming: incoming = "incoming".asInstanceOf[incoming]
   @scala.inline
   def informational: informational = "informational".asInstanceOf[informational]
   @scala.inline
@@ -3603,6 +3793,8 @@ object microsoftDashGraphStrings {
   @scala.inline
   def outbound: outbound = "outbound".asInstanceOf[outbound]
   @scala.inline
+  def outgoing: outgoing = "outgoing".asInstanceOf[outgoing]
+  @scala.inline
   def pager: pager = "pager".asInstanceOf[pager]
   @scala.inline
   def parentalGuidance: parentalGuidance = "parentalGuidance".asInstanceOf[parentalGuidance]
@@ -3616,6 +3808,8 @@ object microsoftDashGraphStrings {
   def personal: personal = "personal".asInstanceOf[personal]
   @scala.inline
   def postalAddress: postalAddress = "postalAddress".asInstanceOf[postalAddress]
+  @scala.inline
+  def pound: pound = "pound".asInstanceOf[pound]
   @scala.inline
   def power: power = "power".asInstanceOf[power]
   @scala.inline
@@ -3717,11 +3911,15 @@ object microsoftDashGraphStrings {
   @scala.inline
   def realType: realType = "realType".asInstanceOf[realType]
   @scala.inline
+  def receiveOnly: receiveOnly = "receiveOnly".asInstanceOf[receiveOnly]
+  @scala.inline
   def recipient: recipient = "recipient".asInstanceOf[recipient]
   @scala.inline
   def recipientScope: recipientScope = "recipientScope".asInstanceOf[recipientScope]
   @scala.inline
   def recipientSuggestions: recipientSuggestions = "recipientSuggestions".asInstanceOf[recipientSuggestions]
+  @scala.inline
+  def redirecting: redirecting = "redirecting".asInstanceOf[redirecting]
   @scala.inline
   def reference: reference = "reference".asInstanceOf[reference]
   @scala.inline
@@ -3755,6 +3953,10 @@ object microsoftDashGraphStrings {
   @scala.inline
   def resource: resource = "resource".asInstanceOf[resource]
   @scala.inline
+  def restId: restId = "restId".asInstanceOf[restId]
+  @scala.inline
+  def restImmutableEntryId: restImmutableEntryId = "restImmutableEntryId".asInstanceOf[restImmutableEntryId]
+  @scala.inline
   def restaurant: restaurant = "restaurant".asInstanceOf[restaurant]
   @scala.inline
   def restricted: restricted = "restricted".asInstanceOf[restricted]
@@ -3781,6 +3983,10 @@ object microsoftDashGraphStrings {
   @scala.inline
   def sendAllDataWithoutPrompting: sendAllDataWithoutPrompting = "sendAllDataWithoutPrompting".asInstanceOf[sendAllDataWithoutPrompting]
   @scala.inline
+  def sendOnly: sendOnly = "sendOnly".asInstanceOf[sendOnly]
+  @scala.inline
+  def sendReceive: sendReceive = "sendReceive".asInstanceOf[sendReceive]
+  @scala.inline
   def sender: sender = "sender".asInstanceOf[sender]
   @scala.inline
   def seriesMaster: seriesMaster = "seriesMaster".asInstanceOf[seriesMaster]
@@ -3805,6 +4011,8 @@ object microsoftDashGraphStrings {
   @scala.inline
   def sharedDeviceUserLoggedInError: sharedDeviceUserLoggedInError = "sharedDeviceUserLoggedInError".asInstanceOf[sharedDeviceUserLoggedInError]
   @scala.inline
+  def sharer: sharer = "sharer".asInstanceOf[sharer]
+  @scala.inline
   def show: show = "show".asInstanceOf[show]
   @scala.inline
   def showOrganizerAndTimeAndSubject: showOrganizerAndTimeAndSubject = "showOrganizerAndTimeAndSubject".asInstanceOf[showOrganizerAndTimeAndSubject]
@@ -3828,6 +4036,8 @@ object microsoftDashGraphStrings {
   def spxII: spxII = "spxII".asInstanceOf[spxII]
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
+  @scala.inline
+  def star: star = "star".asInstanceOf[star]
   @scala.inline
   def store: store = "store".asInstanceOf[store]
   @scala.inline
@@ -3867,6 +4077,8 @@ object microsoftDashGraphStrings {
   @scala.inline
   def terminated: terminated = "terminated".asInstanceOf[terminated]
   @scala.inline
+  def terminating: terminating = "terminating".asInstanceOf[terminating]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def third: third = "third".asInstanceOf[third]
@@ -3881,7 +4093,31 @@ object microsoftDashGraphStrings {
   @scala.inline
   def tokenType: tokenType = "tokenType".asInstanceOf[tokenType]
   @scala.inline
+  def tone0: tone0 = "tone0".asInstanceOf[tone0]
+  @scala.inline
+  def tone1: tone1 = "tone1".asInstanceOf[tone1]
+  @scala.inline
+  def tone2: tone2 = "tone2".asInstanceOf[tone2]
+  @scala.inline
+  def tone3: tone3 = "tone3".asInstanceOf[tone3]
+  @scala.inline
+  def tone4: tone4 = "tone4".asInstanceOf[tone4]
+  @scala.inline
+  def tone5: tone5 = "tone5".asInstanceOf[tone5]
+  @scala.inline
+  def tone6: tone6 = "tone6".asInstanceOf[tone6]
+  @scala.inline
+  def tone7: tone7 = "tone7".asInstanceOf[tone7]
+  @scala.inline
+  def tone8: tone8 = "tone8".asInstanceOf[tone8]
+  @scala.inline
+  def tone9: tone9 = "tone9".asInstanceOf[tone9]
+  @scala.inline
   def totalMemberCount: totalMemberCount = "totalMemberCount".asInstanceOf[totalMemberCount]
+  @scala.inline
+  def transferAccepted: transferAccepted = "transferAccepted".asInstanceOf[transferAccepted]
+  @scala.inline
+  def transferring: transferring = "transferring".asInstanceOf[transferring]
   @scala.inline
   def transientError: transientError = "transientError".asInstanceOf[transientError]
   @scala.inline
@@ -3946,6 +4182,12 @@ object microsoftDashGraphStrings {
   def utF8: utF8 = "utF8".asInstanceOf[utF8]
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
+  @scala.inline
+  def video: video = "video".asInstanceOf[video]
+  @scala.inline
+  def videoBasedScreenSharing: videoBasedScreenSharing = "videoBasedScreenSharing".asInstanceOf[videoBasedScreenSharing]
+  @scala.inline
+  def viewer: viewer = "viewer".asInstanceOf[viewer]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline

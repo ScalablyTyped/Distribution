@@ -63,6 +63,15 @@ class WorksheetCollection () extends ClientObject {
   val onChanged: EventHandlers[WorksheetChangedEventArgs] = js.native
   /**
     *
+    * Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @eventproperty
+    */
+  val onColumnSorted: EventHandlers[WorksheetColumnSortedEventArgs] = js.native
+  /**
+    *
     * Occurs when any worksheet in the workbook is deactivated.
     *
     * [Api set: ExcelApi 1.7]
@@ -90,6 +99,15 @@ class WorksheetCollection () extends ClientObject {
   val onFormatChanged: EventHandlers[WorksheetFormatChangedEventArgs] = js.native
   /**
     *
+    * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @eventproperty
+    */
+  val onRowSorted: EventHandlers[WorksheetRowSortedEventArgs] = js.native
+  /**
+    *
     * Occurs when the selection changes on any worksheet.
     *
     * [Api set: ExcelApi 1.9]
@@ -97,6 +115,17 @@ class WorksheetCollection () extends ClientObject {
     * @eventproperty
     */
   val onSelectionChanged: EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when clicking in the following cases:
+    - The user drags the mouse for multi-selection.
+    - The user selects a cell in the mode when cell arguments are selected for formula references.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @eventproperty
+    */
+  val onSingleClicked: EventHandlers[WorksheetSingleClickedEventArgs] = js.native
   /**
     *
     * Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.

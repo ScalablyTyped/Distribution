@@ -140,6 +140,13 @@ trait ShapeLoadOptions extends js.Object {
   var parentGroup: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
+    * Represents how the object is attached to the cells below it.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var placement: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
     * Represents the rotation, in degrees, of the shape.
     *
     * [Api set: ExcelApi 1.9]
@@ -212,6 +219,7 @@ object ShapeLoadOptions {
     lockAspectRatio: js.UndefOr[Boolean] = js.undefined,
     name: js.UndefOr[Boolean] = js.undefined,
     parentGroup: ShapeLoadOptions = null,
+    placement: js.UndefOr[Boolean] = js.undefined,
     rotation: js.UndefOr[Boolean] = js.undefined,
     textFrame: TextFrameLoadOptions = null,
     top: js.UndefOr[Boolean] = js.undefined,
@@ -239,6 +247,7 @@ object ShapeLoadOptions {
     if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
     if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
     if (parentGroup != null) __obj.updateDynamic("parentGroup")(parentGroup)
+    if (!js.isUndefined(placement)) __obj.updateDynamic("placement")(placement)
     if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation)
     if (textFrame != null) __obj.updateDynamic("textFrame")(textFrame)
     if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)

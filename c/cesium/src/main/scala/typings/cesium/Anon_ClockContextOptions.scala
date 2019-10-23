@@ -10,6 +10,7 @@ import typings.cesium.cesiumMod.ShadowMode
 import typings.cesium.cesiumMod.SkyAtmosphere
 import typings.cesium.cesiumMod.SkyBox
 import typings.cesium.cesiumMod.TerrainProvider
+import typings.cesium.cesiumNumbers.`false`
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,8 +21,8 @@ trait Anon_ClockContextOptions extends js.Object {
   var contextOptions: js.UndefOr[js.Any] = js.undefined
   var creditContainer: js.UndefOr[Element | String] = js.undefined
   var creditViewport: js.UndefOr[Element | String] = js.undefined
-  var globe: js.UndefOr[Globe] = js.undefined
-  var imageryProvider: js.UndefOr[ImageryProvider] = js.undefined
+  var globe: js.UndefOr[Globe | `false`] = js.undefined
+  var imageryProvider: js.UndefOr[ImageryProvider | `false`] = js.undefined
   var mapMode2D: js.UndefOr[MapMode2D] = js.undefined
   var mapProjection: js.UndefOr[MapProjection] = js.undefined
   var maximumRenderTimeChange: js.UndefOr[Double] = js.undefined
@@ -31,8 +32,8 @@ trait Anon_ClockContextOptions extends js.Object {
   var sceneMode: js.UndefOr[SceneMode] = js.undefined
   var shadows: js.UndefOr[Boolean] = js.undefined
   var showRenderLoopErrors: js.UndefOr[Boolean] = js.undefined
-  var skyAtmosphere: js.UndefOr[SkyAtmosphere] = js.undefined
-  var skyBox: js.UndefOr[SkyBox] = js.undefined
+  var skyAtmosphere: js.UndefOr[SkyAtmosphere | `false`] = js.undefined
+  var skyBox: js.UndefOr[SkyBox | `false`] = js.undefined
   var targetFrameRate: js.UndefOr[Double] = js.undefined
   var terrainExaggeration: js.UndefOr[Double] = js.undefined
   var terrainProvider: js.UndefOr[TerrainProvider] = js.undefined
@@ -47,8 +48,8 @@ object Anon_ClockContextOptions {
     contextOptions: js.Any = null,
     creditContainer: Element | String = null,
     creditViewport: Element | String = null,
-    globe: Globe = null,
-    imageryProvider: ImageryProvider = null,
+    globe: Globe | `false` = null,
+    imageryProvider: ImageryProvider | `false` = null,
     mapMode2D: MapMode2D = null,
     mapProjection: MapProjection = null,
     maximumRenderTimeChange: Int | Double = null,
@@ -58,8 +59,8 @@ object Anon_ClockContextOptions {
     sceneMode: SceneMode = null,
     shadows: js.UndefOr[Boolean] = js.undefined,
     showRenderLoopErrors: js.UndefOr[Boolean] = js.undefined,
-    skyAtmosphere: SkyAtmosphere = null,
-    skyBox: SkyBox = null,
+    skyAtmosphere: SkyAtmosphere | `false` = null,
+    skyBox: SkyBox | `false` = null,
     targetFrameRate: Int | Double = null,
     terrainExaggeration: Int | Double = null,
     terrainProvider: TerrainProvider = null,
@@ -71,8 +72,8 @@ object Anon_ClockContextOptions {
     if (contextOptions != null) __obj.updateDynamic("contextOptions")(contextOptions)
     if (creditContainer != null) __obj.updateDynamic("creditContainer")(creditContainer.asInstanceOf[js.Any])
     if (creditViewport != null) __obj.updateDynamic("creditViewport")(creditViewport.asInstanceOf[js.Any])
-    if (globe != null) __obj.updateDynamic("globe")(globe)
-    if (imageryProvider != null) __obj.updateDynamic("imageryProvider")(imageryProvider)
+    if (globe != null) __obj.updateDynamic("globe")(globe.asInstanceOf[js.Any])
+    if (imageryProvider != null) __obj.updateDynamic("imageryProvider")(imageryProvider.asInstanceOf[js.Any])
     if (mapMode2D != null) __obj.updateDynamic("mapMode2D")(mapMode2D)
     if (mapProjection != null) __obj.updateDynamic("mapProjection")(mapProjection)
     if (maximumRenderTimeChange != null) __obj.updateDynamic("maximumRenderTimeChange")(maximumRenderTimeChange.asInstanceOf[js.Any])
@@ -82,8 +83,8 @@ object Anon_ClockContextOptions {
     if (sceneMode != null) __obj.updateDynamic("sceneMode")(sceneMode)
     if (!js.isUndefined(shadows)) __obj.updateDynamic("shadows")(shadows)
     if (!js.isUndefined(showRenderLoopErrors)) __obj.updateDynamic("showRenderLoopErrors")(showRenderLoopErrors)
-    if (skyAtmosphere != null) __obj.updateDynamic("skyAtmosphere")(skyAtmosphere)
-    if (skyBox != null) __obj.updateDynamic("skyBox")(skyBox)
+    if (skyAtmosphere != null) __obj.updateDynamic("skyAtmosphere")(skyAtmosphere.asInstanceOf[js.Any])
+    if (skyBox != null) __obj.updateDynamic("skyBox")(skyBox.asInstanceOf[js.Any])
     if (targetFrameRate != null) __obj.updateDynamic("targetFrameRate")(targetFrameRate.asInstanceOf[js.Any])
     if (terrainExaggeration != null) __obj.updateDynamic("terrainExaggeration")(terrainExaggeration.asInstanceOf[js.Any])
     if (terrainProvider != null) __obj.updateDynamic("terrainProvider")(terrainProvider)

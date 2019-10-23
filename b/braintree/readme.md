@@ -1,7 +1,7 @@
 
 # Scala.js typings for braintree
 
-Typings are for version 2.16
+Typings are for version 2.20
 
 ## Library description:
 A library for integrating with Braintree.

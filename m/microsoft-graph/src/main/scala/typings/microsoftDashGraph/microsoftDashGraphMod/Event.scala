@@ -18,7 +18,7 @@ trait Event extends OutlookItem {
   var bodyPreview: js.UndefOr[String] = js.undefined
   // The calendar that contains the event. Navigation property. Read-only.
   var calendar: js.UndefOr[Calendar] = js.undefined
-  // The date, time, and time zone that the event ends.
+  // The date, time, and time zone that the event ends. By default, the end time is in UTC.
   var end: js.UndefOr[DateTimeTimeZone] = js.undefined
   // The collection of open extensions defined for the event. Read-only. Nullable.
   var extensions: js.UndefOr[js.Array[Extension]] = js.undefined
@@ -86,16 +86,15 @@ trait Event extends OutlookItem {
   var showAs: js.UndefOr[FreeBusyStatus] = js.undefined
   // The collection of single-value extended properties defined for the event. Read-only. Nullable.
   var singleValueExtendedProperties: js.UndefOr[js.Array[SingleValueLegacyExtendedProperty]] = js.undefined
-  // The date, time, and time zone that the event starts.
+  // The date, time, and time zone that the event starts. By default, the start time is in UTC.
   var start: js.UndefOr[DateTimeTimeZone] = js.undefined
   // The text of the event's subject line.
   var subject: js.UndefOr[String] = js.undefined
   // The event type. The possible values are: singleInstance, occurrence, exception, seriesMaster. Read-only.
   var `type`: js.UndefOr[EventType] = js.undefined
   /**
-    * The URL to open the event in Outlook Web App.The event will open in the browser if you are logged in to your mailbox
-    * via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.This URL can be
-    * accessed from within an iFrame.
+    * The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in
+    * to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL can be accessed from within an iFrame.
     */
   var webLink: js.UndefOr[String] = js.undefined
 }

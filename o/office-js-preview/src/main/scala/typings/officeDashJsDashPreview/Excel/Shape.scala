@@ -188,8 +188,7 @@ class Shape () extends ClientObject {
     *
     * Represents how the object is attached to the cells below it.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var placement: Placement | TwoCell | OneCell | Absolute = js.native
   /**
@@ -248,8 +247,7 @@ class Shape () extends ClientObject {
     * Copies and pastes a Shape object.
     The pasted shape is copied to the same pixel location as this shape.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param destinationSheet The sheet to which the shape object will be pasted. The default value is the copied Shape's worksheet.
     */

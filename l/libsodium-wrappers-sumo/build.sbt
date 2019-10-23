@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "libsodium-wrappers-sumo"
-version := "0.7-dt-20190110Z-bf76a8"
+version := "0.7-dt-20191022Z-755c2a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "libsodium-wrappers" % "0.7-dt-20190110Z-51fe68",
+  "org.scalablytyped" %%% "libsodium-wrappers" % "0.7-dt-20191022Z-ca949e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

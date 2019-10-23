@@ -19,11 +19,18 @@ trait WorksheetData extends js.Object {
   var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
   /**
     *
-    * Returns collection of charts that are part of the worksheet. Read-only.
+    * Returns a collection of charts that are part of the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
   var charts: js.UndefOr[js.Array[ChartData]] = js.undefined
+  /**
+    *
+    * Returns a collection of all the Comments objects on the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   /**
     *
     * Gets or sets the enableCalculation property of the worksheet.
@@ -113,6 +120,13 @@ trait WorksheetData extends js.Object {
   var showHeadings: js.UndefOr[Boolean] = js.undefined
   /**
     *
+    * Returns a collection of slicers that are part of the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
+  /**
+    *
     * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
     *
     * [Api set: ExcelApi 1.7]
@@ -163,6 +177,7 @@ object WorksheetData {
   def apply(
     autoFilter: AutoFilterData = null,
     charts: js.Array[ChartData] = null,
+    comments: js.Array[CommentData] = null,
     enableCalculation: js.UndefOr[Boolean] = js.undefined,
     horizontalPageBreaks: js.Array[PageBreakData] = null,
     id: String = null,
@@ -175,6 +190,7 @@ object WorksheetData {
     shapes: js.Array[ShapeData] = null,
     showGridlines: js.UndefOr[Boolean] = js.undefined,
     showHeadings: js.UndefOr[Boolean] = js.undefined,
+    slicers: js.Array[SlicerData] = null,
     standardHeight: Int | Double = null,
     standardWidth: Int | Double = null,
     tabColor: String = null,
@@ -185,6 +201,7 @@ object WorksheetData {
     val __obj = js.Dynamic.literal()
     if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter)
     if (charts != null) __obj.updateDynamic("charts")(charts)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation)
     if (horizontalPageBreaks != null) __obj.updateDynamic("horizontalPageBreaks")(horizontalPageBreaks)
     if (id != null) __obj.updateDynamic("id")(id)
@@ -197,6 +214,7 @@ object WorksheetData {
     if (shapes != null) __obj.updateDynamic("shapes")(shapes)
     if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
     if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
+    if (slicers != null) __obj.updateDynamic("slicers")(slicers)
     if (standardHeight != null) __obj.updateDynamic("standardHeight")(standardHeight.asInstanceOf[js.Any])
     if (standardWidth != null) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
     if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)

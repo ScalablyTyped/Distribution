@@ -721,8 +721,9 @@ Instantiable0[T]
     replacement: js.Any,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
+  def syncIndexes(): js.Promise[Unit] = js.native
+  def syncIndexes(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   def syncIndexes(options: js.Object): js.Promise[Unit] = js.native
-  def syncIndexes(options: js.Object, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   /**
     * Makes the indexes in MongoDB match the indexes defined in this model's
     * schema. This function will drop any indexes that are not defined in
@@ -732,8 +733,8 @@ Instantiable0[T]
     * @param callback optional callback
     * @return Returns `undefined` if callback is specified, returns a promise if no callback.
     */
-  @JSName("syncIndexes")
-  def syncIndexes_Unit(options: js.Object): Unit = js.native
+  def syncIndexes(options: js.Object, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def syncIndexes(options: Null, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   /**
     * Translate any aliases fields/conditions so the final query or document object is pure
     * @param raw fields/conditions that may contain aliased keys

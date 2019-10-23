@@ -110,8 +110,7 @@ trait RangeData extends js.Object {
     *
     * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var height: js.UndefOr[Double] = js.undefined
   /**
@@ -146,8 +145,7 @@ trait RangeData extends js.Object {
     *
     * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var left: js.UndefOr[Double] = js.undefined
   /**
@@ -227,8 +225,7 @@ trait RangeData extends js.Object {
     *
     * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var top: js.UndefOr[Double] = js.undefined
   /**
@@ -250,8 +247,7 @@ trait RangeData extends js.Object {
     *
     * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var width: js.UndefOr[Double] = js.undefined
 }

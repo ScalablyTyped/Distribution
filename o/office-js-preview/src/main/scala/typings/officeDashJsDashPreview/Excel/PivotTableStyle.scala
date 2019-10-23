@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a PivotTable Style, which defines style elements by PivotTable region.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.PivotTableStyle")
 @js.native
@@ -27,32 +26,28 @@ class PivotTableStyle () extends ClientObject {
     *
     * Gets the name of the PivotTableStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: String = js.native
   /**
     *
     * Specifies whether this PivotTableStyle object is read-only. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val readOnly: Boolean = js.native
   /**
     *
     * Deletes the PivotTableStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
     *
     * Creates a duplicate of this PivotTableStyle with copies of all the style elements.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     * @returns The new PivotTableStyle object that has been duplicated from this PivotTableStyle.
     */
   def duplicate(): PivotTableStyle = js.native

@@ -10,7 +10,7 @@ trait DateTimeTimeZone extends js.Object {
     * 2017-08-29T04:00:00.0000000).
     */
   var dateTime: js.UndefOr[String] = js.undefined
-  // One of the following time zone names.
+  // Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
   var timeZone: js.UndefOr[String] = js.undefined
 }
 

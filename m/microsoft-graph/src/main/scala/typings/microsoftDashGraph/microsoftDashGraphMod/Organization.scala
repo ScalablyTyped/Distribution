@@ -12,11 +12,12 @@ trait Organization extends DirectoryObject {
     * property.
     */
   var businessPhones: js.UndefOr[js.Array[String]] = js.undefined
-  // City name of the address for the organization
+  var certificateBasedAuthConfiguration: js.UndefOr[js.Array[CertificateBasedAuthConfiguration]] = js.undefined
+  // City name of the address for the organization.
   var city: js.UndefOr[String] = js.undefined
-  // Country/region name of the address for the organization
+  // Country/region name of the address for the organization.
   var country: js.UndefOr[String] = js.undefined
-  // Country/region abbreviation for the organization
+  // Country/region abbreviation for the organization.
   var countryLetterCode: js.UndefOr[String] = js.undefined
   /**
     * Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the
@@ -44,7 +45,7 @@ trait Organization extends DirectoryObject {
     * (default).
     */
   var onPremisesSyncEnabled: js.UndefOr[Boolean] = js.undefined
-  // Postal code of the address for the organization
+  // Postal code of the address for the organization.
   var postalCode: js.UndefOr[String] = js.undefined
   // The preferred language for the organization. Should follow ISO 639-1 Code; for example 'en'.
   var preferredLanguage: js.UndefOr[String] = js.undefined
@@ -54,9 +55,9 @@ trait Organization extends DirectoryObject {
   var provisionedPlans: js.UndefOr[js.Array[ProvisionedPlan]] = js.undefined
   var securityComplianceNotificationMails: js.UndefOr[js.Array[String]] = js.undefined
   var securityComplianceNotificationPhones: js.UndefOr[js.Array[String]] = js.undefined
-  // State name of the address for the organization
+  // State name of the address for the organization.
   var state: js.UndefOr[String] = js.undefined
-  // Street name of the address for organization
+  // Street name of the address for organization.
   var street: js.UndefOr[String] = js.undefined
   // Not nullable.
   var technicalNotificationMails: js.UndefOr[js.Array[String]] = js.undefined
@@ -69,6 +70,7 @@ object Organization {
   def apply(
     assignedPlans: js.Array[AssignedPlan] = null,
     businessPhones: js.Array[String] = null,
+    certificateBasedAuthConfiguration: js.Array[CertificateBasedAuthConfiguration] = null,
     city: String = null,
     country: String = null,
     countryLetterCode: String = null,
@@ -95,6 +97,7 @@ object Organization {
     val __obj = js.Dynamic.literal()
     if (assignedPlans != null) __obj.updateDynamic("assignedPlans")(assignedPlans)
     if (businessPhones != null) __obj.updateDynamic("businessPhones")(businessPhones)
+    if (certificateBasedAuthConfiguration != null) __obj.updateDynamic("certificateBasedAuthConfiguration")(certificateBasedAuthConfiguration)
     if (city != null) __obj.updateDynamic("city")(city)
     if (country != null) __obj.updateDynamic("country")(country)
     if (countryLetterCode != null) __obj.updateDynamic("countryLetterCode")(countryLetterCode)

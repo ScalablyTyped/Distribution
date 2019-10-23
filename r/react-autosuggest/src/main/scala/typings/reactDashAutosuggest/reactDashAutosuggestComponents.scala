@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashAutosuggestComponents extends reactDashAutosuggestProps {
   @scala.inline
-  def ReactDashAutosuggest[T]: ComponentType[ReactDashAutosuggestProps[T]] = js.constructorOf[typings.reactDashAutosuggest.reactDashAutosuggestMod.^[T]].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashAutosuggestProps[T]]]
+  def ReactDashAutosuggest[T, T2]: ComponentType[ReactDashAutosuggestProps[T, T2]] = js.constructorOf[typings.reactDashAutosuggest.reactDashAutosuggestMod.^[T, T2]].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashAutosuggestProps[T, T2]]]
 }
 

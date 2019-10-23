@@ -106,17 +106,15 @@ trait TextFieldProps extends TextInputProps {
   var baseColor: js.UndefOr[String] = js.undefined
   var characterRestriction: js.UndefOr[Double] = js.undefined
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var contentInset: js.UndefOr[ContentInset] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var disabledLineWidth: js.UndefOr[Double] = js.undefined
   var error: js.UndefOr[String] = js.undefined
   var errorColor: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[Double] = js.undefined
-  var inputContainerPadding: js.UndefOr[Double] = js.undefined
   var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var labelFontSize: js.UndefOr[Double] = js.undefined
-  var labelHeight: js.UndefOr[Double] = js.undefined
-  var labelPadding: js.UndefOr[Double] = js.undefined
   var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
   var onPress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
@@ -128,7 +126,6 @@ trait TextFieldProps extends TextInputProps {
   var textColor: js.UndefOr[String] = js.undefined
   var tintColor: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
-  var titleFontSize: js.UndefOr[Double] = js.undefined
   var titleTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 
@@ -164,6 +161,7 @@ object TextFieldProps {
     clearTextOnFocus: js.UndefOr[Boolean] = js.undefined,
     collapsable: js.UndefOr[Boolean] = js.undefined,
     containerStyle: StyleProp[ViewStyle] = null,
+    contentInset: ContentInset = null,
     contextMenuHidden: js.UndefOr[Boolean] = js.undefined,
     dataDetectorTypes: DataDetectorTypes | js.Array[DataDetectorTypes] = null,
     defaultValue: String = null,
@@ -181,15 +179,12 @@ object TextFieldProps {
     inlineImageLeft: String = null,
     inlineImagePadding: Int | Double = null,
     inputAccessoryViewID: String = null,
-    inputContainerPadding: Int | Double = null,
     inputContainerStyle: StyleProp[ViewStyle] = null,
     isTVSelectable: js.UndefOr[Boolean] = js.undefined,
     keyboardAppearance: default | light | dark = null,
     keyboardType: KeyboardTypeOptions = null,
     label: String = null,
     labelFontSize: Int | Double = null,
-    labelHeight: Int | Double = null,
-    labelPadding: Int | Double = null,
     labelTextStyle: StyleProp[TextStyle] = null,
     lineWidth: Int | Double = null,
     maxFontSizeMultiplier: Int | Double = null,
@@ -257,7 +252,6 @@ object TextFieldProps {
     textContentType: none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode = null,
     tintColor: String = null,
     title: String = null,
-    titleFontSize: Int | Double = null,
     titleTextStyle: StyleProp[TextStyle] = null,
     tvParallaxMagnification: Int | Double = null,
     tvParallaxProperties: TVParallaxProperties = null,
@@ -297,6 +291,7 @@ object TextFieldProps {
     if (!js.isUndefined(clearTextOnFocus)) __obj.updateDynamic("clearTextOnFocus")(clearTextOnFocus)
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
     if (!js.isUndefined(contextMenuHidden)) __obj.updateDynamic("contextMenuHidden")(contextMenuHidden)
     if (dataDetectorTypes != null) __obj.updateDynamic("dataDetectorTypes")(dataDetectorTypes.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
@@ -314,15 +309,12 @@ object TextFieldProps {
     if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft)
     if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])
     if (inputAccessoryViewID != null) __obj.updateDynamic("inputAccessoryViewID")(inputAccessoryViewID)
-    if (inputContainerPadding != null) __obj.updateDynamic("inputContainerPadding")(inputContainerPadding.asInstanceOf[js.Any])
     if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (keyboardAppearance != null) __obj.updateDynamic("keyboardAppearance")(keyboardAppearance.asInstanceOf[js.Any])
     if (keyboardType != null) __obj.updateDynamic("keyboardType")(keyboardType.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
-    if (labelHeight != null) __obj.updateDynamic("labelHeight")(labelHeight.asInstanceOf[js.Any])
-    if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
     if (labelTextStyle != null) __obj.updateDynamic("labelTextStyle")(labelTextStyle.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
@@ -390,7 +382,6 @@ object TextFieldProps {
     if (textContentType != null) __obj.updateDynamic("textContentType")(textContentType.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
     if (title != null) __obj.updateDynamic("title")(title)
-    if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
     if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
     if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
     if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)

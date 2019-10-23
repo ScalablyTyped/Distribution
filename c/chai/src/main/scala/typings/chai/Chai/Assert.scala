@@ -640,7 +640,7 @@ trait Assert extends js.Object {
   def isAtLeast(valueToCheck: Double, valueToBeAtLeast: Double): Unit = js.native
   def isAtLeast(valueToCheck: Double, valueToBeAtLeast: Double, message: String): Unit = js.native
   /**
-    * Asserts valueToCheck is greater than or equal to (>=) valueToBeAtMost.
+    * Asserts valueToCheck is less than or equal to (<=) valueToBeAtMost.
     *
     * @param valueToCheck   Actual value.
     * @param valueToBeAtMost   Minimum Potential expected value.

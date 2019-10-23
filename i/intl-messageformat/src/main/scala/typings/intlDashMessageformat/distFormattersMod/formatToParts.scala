@@ -23,6 +23,15 @@ object formatToParts extends js.Object {
     formatters: Formatters,
     formats: Formats,
     values: Record[String, _],
+    currentPluralValue: Double
+  ): js.Array[MessageFormatPart] = js.native
+  def apply(
+    els: js.Array[MessageFormatElement],
+    locales: String,
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[String, _],
+    currentPluralValue: Double,
     originalMessage: String
   ): js.Array[MessageFormatPart] = js.native
   def apply(
@@ -44,6 +53,15 @@ object formatToParts extends js.Object {
     formatters: Formatters,
     formats: Formats,
     values: Record[String, _],
+    currentPluralValue: Double
+  ): js.Array[MessageFormatPart] = js.native
+  def apply(
+    els: js.Array[MessageFormatElement],
+    locales: js.Array[String],
+    formatters: Formatters,
+    formats: Formats,
+    values: Record[String, _],
+    currentPluralValue: Double,
     originalMessage: String
   ): js.Array[MessageFormatPart] = js.native
 }

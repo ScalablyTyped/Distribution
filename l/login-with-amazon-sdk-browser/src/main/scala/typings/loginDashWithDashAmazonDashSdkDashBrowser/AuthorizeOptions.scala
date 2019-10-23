@@ -28,6 +28,7 @@ trait AuthorizeOptions extends js.Object {
     * The access scope requested.
     */
   var scope: AuthorizeScope
+  var scope_data: js.UndefOr[AuthorizeScopeData] = js.undefined
   /**
     * An opaque value used by the client to maintain state between this request and the response. The Login with Amazon authorization service will include this value when redirecting the user back
     * to the client. It is also used to prevent cross-site request forgery.
@@ -44,12 +45,14 @@ object AuthorizeOptions {
     interactive: AuthorizeInteractiveOption = null,
     popup: js.UndefOr[Boolean] = js.undefined,
     response_type: AuthorizeResponseType = null,
+    scope_data: AuthorizeScopeData = null,
     state: String = null
   ): AuthorizeOptions = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     if (interactive != null) __obj.updateDynamic("interactive")(interactive)
     if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
     if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (scope_data != null) __obj.updateDynamic("scope_data")(scope_data)
     if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[AuthorizeOptions]
   }

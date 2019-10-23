@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 sealed trait ContentType extends js.Object
 
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.ContentType")
 @js.native

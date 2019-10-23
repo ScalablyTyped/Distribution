@@ -31,6 +31,7 @@
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(not) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(or) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(and) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators))] 
+[info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators) / TsDeclInterface(ValidationRule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple($params) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators) / TsDeclInterface(ValidationRule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple($pending) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators) / TsDeclInterface(ValidationRule))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(withParams) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators) / TsDeclInterface(Helpers))] 

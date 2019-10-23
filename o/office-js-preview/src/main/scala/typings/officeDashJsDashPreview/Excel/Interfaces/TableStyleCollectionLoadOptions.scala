@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of TableStyles.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 trait TableStyleCollectionLoadOptions extends js.Object {
   /**
@@ -21,16 +20,14 @@ trait TableStyleCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Gets the name of the TableStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Specifies whether this TableStyle object is read-only. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined
 }

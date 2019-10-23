@@ -1178,6 +1178,7 @@
 | 172 | [get-value](./g/get-value) | Use property paths like 'a.b.c' to get a nested va
 | 172 | [unorm](./u/unorm) | JavaScript Unicode 8.0 Normalization - NFC, NFD, N
 | 172 | [wrap-ansi](./w/wrap-ansi) | Wordwrap a string with ANSI escape codes
+| 172 | [write](./w/write) | Write data to a file, replacing the file if it alr
 | 171 | [connect-livereload](./c/connect-livereload) | connect middleware for adding the livereload scrip
 | 171 | [passport-github](./p/passport-github) | GitHub authentication strategy for Passport.
 | 171 | [random-js](./r/random-js) | A mathematically correct random number generator l
@@ -1645,6 +1646,7 @@
 | 104 | [git-rev-sync](./g/git-rev-sync) | Synchronously get the current git commit hash, tag
 | 104 | [github-url-from-git](./g/github-url-from-git) | Parse a github git url and return the github repo 
 | 104 | [io-ts](./i/io-ts) | TypeScript compatible runtime type system for IO v
+| 104 | [parse-author](./p/parse-author) | Parse an author, contributor, maintainer or other 
 | 103 | [concat-map](./c/concat-map) | concatenative mapdashery
 | 103 | [cordova](./c/cordova) | Cordova command line interface tool
 | 103 | [d3-dsv](./d/d3-dsv) | A parser and formatter for delimiter-separated val
@@ -2175,6 +2177,7 @@
 | 63 | [focus-trap](./f/focus-trap) | Trap focus within a DOM node.
 | 63 | [get-caller-file](./g/get-caller-file) | -
 | 63 | [git-branch](./g/git-branch) | Get the current branch from the local git reposito
+| 63 | [imagemin-webp](./i/imagemin-webp) | WebP imagemin plugin
 | 63 | [koa-webpack](./k/koa-webpack) | Development and Hot Reload Middleware for Koa2
 | 63 | [libsodium-wrappers](./l/libsodium-wrappers) | The Sodium cryptographic library compiled to pure 
 | 63 | [lodash_dot_escape](./l/lodash_dot_escape) | The lodash method _.escape exported as a module.
@@ -2279,6 +2282,7 @@
 | 58 | [react-inspector](./r/react-inspector) | Power of Browser DevTools inspectors right inside 
 | 58 | [react-native-swiper](./r/react-native-swiper) | Swiper component for React Native.
 | 58 | [react-tether](./r/react-tether) | Drop content anywhere on the page.
+| 58 | [stdout-stream](./s/stdout-stream) | Non-blocking stdout stream
 | 58 | [swagger-jsdoc](./s/swagger-jsdoc) | Generates swagger doc based on JSDoc
 | 58 | [validatorjs](./v/validatorjs) | Validation library inspired by Laravel's Validator
 | 58 | [vue-moment](./v/vue-moment) | Handy Moment.js filters for your Vue.js project
@@ -2926,6 +2930,7 @@
 | 34 | [gzip-js](./g/gzip-js) | GZIP in pure JavaScript (works in the browser)
 | 34 | [harmony-proxy](./h/harmony-proxy) | Small shim providing new Proxy(target, handler)
 | 34 | [humanize-string](./h/humanize-string) | Convert a camelized/dasherized/underscored string 
+| 34 | [ical](./i/ical) | A tolerant, minimal icalendar parser
 | 34 | [is-git-url](./i/is-git-url) | Regex to validate that a URL is a git url.
 | 34 | [is-touch-device](./i/is-touch-device) | Is the current JS environment a touch device?
 | 34 | [jake](./j/jake) | JavaScript build tool, similar to Make or Rake
@@ -3890,6 +3895,7 @@
 | 15 | [hash-stream](./h/hash-stream) | Get a hash of a file or a stream
 | 15 | [hi-base32](./h/hi-base32) | A simple Base32 encode / decode function for JavaS
 | 15 | [hirestime](./h/hirestime) | thin wrapper around process.hrtime
+| 15 | [html-webpack-tags-plugin](./h/html-webpack-tags-plugin) | lets you define html tags to inject with html-webp
 | 15 | [jasminewd2](./j/jasminewd2) | WebDriverJS adapter for Jasmine2.
 | 15 | [js-data-adapter](./j/js-data-adapter) | Base adapter class that all other js-data adapters
 | 15 | [json-merge-patch](./j/json-merge-patch) | Implementation of JSON Merge Patch (RFC 7396)
@@ -4120,6 +4126,7 @@
 | 12 | [distributions](./d/distributions) | A collection of probability distribution functions
 | 12 | [document-ready](./d/document-ready) | Document ready listener for modern browsers
 | 12 | [electron-util](./e/electron-util) | Useful utilities for developing Electron apps and 
+| 12 | [emoji-strip](./e/emoji-strip) | Strip emoji from a string in Node.js and browsers.
 | 12 | [emotion__cache](./e/emotion__cache) | emotion's cache
 | 12 | [escpos](./e/escpos) | ESC/POS Printer driver for nodejs
 | 12 | [ethjs-signer](./e/ethjs-signer) | A simple module for signing Ethereum transactions.
@@ -4658,6 +4665,7 @@
 | 8 | [single-spa-react](./s/single-spa-react) | A single spa plugin for React apps
 | 8 | [slonik](./s/slonik) | A PostgreSQL client with strict types, detail logg
 | 8 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for 
+| 8 | [sortobject](./s/sortobject) | Returns a copy of an object, sorted deeply by its 
 | 8 | [sparql-http-client](./s/sparql-http-client) | Simplified SPARQL HTTP request client
 | 8 | [styled-system__css](./s/styled-system__css) | Styled System for the css prop
 | 8 | [stylefire](./s/stylefire) | Performant, simplified stylers for CSS, SVG, path 
@@ -5972,10 +5980,12 @@
 | 2 | [react-animate-on-scroll](./r/react-animate-on-scroll) | React component to animate elements on scroll with
 | 2 | [react-breadcrumbs-dynamic](./r/react-breadcrumbs-dynamic) | React dynamic breadcrumbs extremely flexible and e
 | 2 | [react-credit-cards](./r/react-credit-cards) | Beautiful credit cards for your payment forms
+| 2 | [react-div-100vh](./r/react-div-100vh) | A React component that aims to solve '100vh' issue
 | 2 | [react-flag-icon-css](./r/react-flag-icon-css) | React SVG country flags component
 | 2 | [react-fns](./r/react-fns) | Modern React components, hoc's, and utilities func
 | 2 | [react-mosaic-component](./r/react-mosaic-component) | A React Tiling Window Manager
 | 2 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API
+| 2 | [react-native-awesome-card](./r/react-native-awesome-card-io) | A complete and cross-platform React Native compone
 | 2 | [react-native-draggable-fl](./r/react-native-draggable-flatlist) | A drag-and-drop-enabled FlatList component for Rea
 | 2 | [react-native-google-analy](./r/react-native-google-analytics-bridge) | React Native bridge for using native Google Analyt
 | 2 | [react-native-material-kit](./r/react-native-material-kit) | Bringing Material Design to React Native
@@ -6021,6 +6031,7 @@
 | 2 | [service-worker-mock](./s/service-worker-mock) | Service Worker Mock ========================= A mo
 | 2 | [shopify-prime](./s/shopify-prime) | Shopify Prime is a NodeJS library built to help de
 | 2 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
+| 2 | [simple-query-string](./s/simple-query-string) | Fast and simple way to parse and stringify URL que
 | 2 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs
 | 2 | [simplesignal](./s/simplesignal) | Super-simple signals class
 | 2 | [solution-center-communica](./s/solution-center-communicator) | Tool for facilitating communication between the Za
@@ -6858,6 +6869,7 @@
 | 0 | [gl-react-headless](./g/gl-react-headless) | headless-gl implementation of gl-react, an univers
 | 0 | [glidejs](./g/glidejs) | Glide is a responsive and touch-friendly jQuery sl
 | 0 | [google-apps-script](./g/google-apps-script) | gas, the complete CLI for Google Apps Script
+| 0 | [google-ddns](./g/google-ddns) | Google Dynamic DNS client update tool. Updates the
 | 0 | [greasemonkey](./g/greasemonkey) | -
 | 0 | [grecaptcha](./g/grecaptcha) | reCAPTCHA v3 / v2 client for Node
 | 0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
@@ -6947,6 +6959,7 @@
 | 0 | [jwplayer](./j/jwplayer) | 'jwplayer node js module to make request to jwplay
 | 0 | [jwt-then](./j/jwt-then) | jwt as promised
 | 0 | [k6](./k/k6) | Dummy package for autocompleting k6 scripts.
+| 0 | [kafka-node-avro](./k/kafka-node-avro) | kafka avro serialization
 | 0 | [kissfft-js](./k/kissfft-js) | Javascript port of KissFFT via Emscripten
 | 0 | [kms-json](./k/kms-json) | Encrypting and decrypting JSON objects using AWS K
 | 0 | [knockout-paging](./k/knockout-paging) | Adds an extender to Knockout to add paging functio
@@ -6974,6 +6987,7 @@
 | 0 | [leaflet_dot_utm](./l/leaflet_dot_utm) | Converts LatLng to UTM WGS84 in Leaflet
 | 0 | [lerna-get-packages](./l/lerna-get-packages) | > Get an array of packages from a lerna monorepo.
 | 0 | [libra-core](./l/libra-core) | Library for Crypto
+| 0 | [lifeomic__axios-fetch](./l/lifeomic__axios-fetch) | A WebAPI Fetch implementation backed by an Axios c
 | 0 | [lightpick](./l/lightpick) | Javascript date range picker - lightweight, no jQu
 | 0 | [linear-gradient](./l/linear-gradient) | Calculates the color representing a number based o
 | 0 | [linq4js](./l/linq4js) | Linq methods for JavaScript/TypeScript to work wit

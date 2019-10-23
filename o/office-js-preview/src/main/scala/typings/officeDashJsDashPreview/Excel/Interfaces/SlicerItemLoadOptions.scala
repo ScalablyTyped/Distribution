@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a slicer item in a slicer.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 trait SlicerItemLoadOptions extends js.Object {
   /**
@@ -21,8 +20,7 @@ trait SlicerItemLoadOptions extends js.Object {
     *
     * True if the slicer item has data.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var hasData: js.UndefOr[Boolean] = js.undefined
   /**
@@ -31,24 +29,21 @@ trait SlicerItemLoadOptions extends js.Object {
     Setting this value will not clear other SlicerItems' selected state.
     By default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var isSelected: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the unique value representing the slicer item.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var key: js.UndefOr[Boolean] = js.undefined
   /**
     *
     * Represents the title displayed in the UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
 }

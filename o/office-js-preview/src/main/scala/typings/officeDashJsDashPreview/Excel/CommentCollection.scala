@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of comment objects that are part of the workbook.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.CommentCollection")
 @js.native
@@ -37,11 +36,10 @@ class CommentCollection () extends ClientObject {
     *
     * Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param cellAddress The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
-    * @param content The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi BETA (PREVIEW ONLY) for string, ExcelApi Preview for CommentRichContent object]
+    * @param content The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, ExcelApi Preview for CommentRichContent object]
     * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.plain`.
     */
   def add(cellAddress: Range, content: CommentRichContent): Comment = js.native
@@ -66,16 +64,14 @@ class CommentCollection () extends ClientObject {
     *
     * Gets the number of comments in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
     * Gets a comment from the collection based on its ID. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param commentId The identifier for the comment.
     */
@@ -84,8 +80,7 @@ class CommentCollection () extends ClientObject {
     *
     * Gets a comment from the collection based on its position.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
     */
@@ -95,8 +90,7 @@ class CommentCollection () extends ClientObject {
     *
     * Gets the comment from the specified cell.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param cellAddress The cell which the comment is on. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
     */
@@ -105,8 +99,7 @@ class CommentCollection () extends ClientObject {
     *
     * Gets the comment to which the given reply is connected.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param replyId The identifier of comment reply.
     */

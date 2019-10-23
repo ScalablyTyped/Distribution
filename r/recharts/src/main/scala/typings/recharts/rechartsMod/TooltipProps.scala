@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait TooltipProps extends Animatable {
   var active: js.UndefOr[Boolean] = js.undefined
+  var allowEscapeViewBox: js.UndefOr[AllowEscapeViewBox] = js.undefined
   var content: js.UndefOr[ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps]] = js.undefined
   var contentStyle: js.UndefOr[js.Object] = js.undefined
   var coordinate: js.UndefOr[Coordinate] = js.undefined
@@ -33,6 +34,7 @@ object TooltipProps {
   @scala.inline
   def apply(
     active: js.UndefOr[Boolean] = js.undefined,
+    allowEscapeViewBox: AllowEscapeViewBox = null,
     animationBegin: Int | Double = null,
     animationDuration: Int | Double = null,
     animationEasing: AnimationEasingType = null,
@@ -62,6 +64,7 @@ object TooltipProps {
   ): TooltipProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (allowEscapeViewBox != null) __obj.updateDynamic("allowEscapeViewBox")(allowEscapeViewBox)
     if (animationBegin != null) __obj.updateDynamic("animationBegin")(animationBegin.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)

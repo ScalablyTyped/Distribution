@@ -689,6 +689,17 @@ trait Document extends js.Object {
     *   </tr>
     * </table>
     * 
+    * **Type-specific behaviors**
+    * 
+    * <table>
+    *   <tr>
+    *     <td>`Office.CoercionType.XmlSvg`</td>
+    *     <td>There is a 64KB size limitation for SVG insertions.</td>
+    *   </tr>
+    * </table>
+    * 
+    * **Hosts**
+    * 
     * The possible values for the {@link Office.CoercionType} parameter vary by the host. 
     * 
     * <table>

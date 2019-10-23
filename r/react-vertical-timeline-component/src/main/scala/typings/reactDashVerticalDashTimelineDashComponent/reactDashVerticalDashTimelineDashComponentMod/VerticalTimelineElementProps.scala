@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait VerticalTimelineElementProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
+  var contentArrowStyle: js.UndefOr[CSSProperties] = js.undefined
+  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   var date: js.UndefOr[String] = js.undefined
   var icon: js.UndefOr[ReactNode] = js.undefined
   var iconOnClick: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -22,6 +24,8 @@ object VerticalTimelineElementProps {
   @scala.inline
   def apply(
     className: String = null,
+    contentArrowStyle: CSSProperties = null,
+    contentStyle: CSSProperties = null,
     date: String = null,
     icon: ReactNode = null,
     iconOnClick: () => Unit = null,
@@ -33,6 +37,8 @@ object VerticalTimelineElementProps {
   ): VerticalTimelineElementProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
+    if (contentArrowStyle != null) __obj.updateDynamic("contentArrowStyle")(contentArrowStyle)
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
     if (date != null) __obj.updateDynamic("date")(date)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (iconOnClick != null) __obj.updateDynamic("iconOnClick")(js.Any.fromFunction0(iconOnClick))

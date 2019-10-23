@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jqueryui"
-version := "1.12-dt-20190322Z-f42fc7"
+version := "1.12-dt-20191022Z-f796d2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

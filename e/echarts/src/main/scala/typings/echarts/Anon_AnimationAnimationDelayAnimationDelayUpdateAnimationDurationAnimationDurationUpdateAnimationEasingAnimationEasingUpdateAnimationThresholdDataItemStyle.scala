@@ -134,7 +134,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markArea.data
     */
-  var data: js.UndefOr[Anon_01AnonCoordItemStyleLabelValue] = js.undefined
+  var data: js.UndefOr[Anon_01AnonCoordItemStyleLabelName] = js.undefined
   /**
     * Style of the mark area.
     *
@@ -171,7 +171,7 @@ object Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimatio
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
-    data: Anon_01AnonCoordItemStyleLabelValue = null,
+    data: Anon_01AnonCoordItemStyleLabelName = null,
     itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
     label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
     silent: js.UndefOr[Boolean] = js.undefined

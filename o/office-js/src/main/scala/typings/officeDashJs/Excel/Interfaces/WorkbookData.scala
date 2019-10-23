@@ -37,6 +37,13 @@ trait WorkbookData extends js.Object {
   var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
   /**
     *
+    * Represents a collection of Comments associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
+  /**
+    *
     * Represents the collection of custom XML parts contained by this workbook. Read-only.
     *
     * [Api set: ExcelApi 1.5]
@@ -64,6 +71,13 @@ trait WorkbookData extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var names: js.UndefOr[js.Array[NamedItemData]] = js.undefined
+  /**
+    *
+    * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var pivotTableStyles: js.UndefOr[js.Array[PivotTableStyleData]] = js.undefined
   /**
     *
     * Represents a collection of PivotTables associated with the workbook. Read-only.
@@ -108,6 +122,20 @@ trait WorkbookData extends js.Object {
   var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
   /**
     *
+    * Represents a collection of SlicerStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var slicerStyles: js.UndefOr[js.Array[SlicerStyleData]] = js.undefined
+  /**
+    *
+    * Represents a collection of Slicers associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
+  /**
+    *
     * Represents a collection of styles associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.7]
@@ -115,11 +143,25 @@ trait WorkbookData extends js.Object {
   var styles: js.UndefOr[js.Array[StyleData]] = js.undefined
   /**
     *
+    * Represents a collection of TableStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var tableStyles: js.UndefOr[js.Array[TableStyleData]] = js.undefined
+  /**
+    *
     * Represents a collection of tables associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
   var tables: js.UndefOr[js.Array[TableData]] = js.undefined
+  /**
+    *
+    * Represents a collection of TimelineStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var timelineStyles: js.UndefOr[js.Array[TimelineStyleData]] = js.undefined
   /**
     *
     * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
@@ -144,18 +186,24 @@ object WorkbookData {
     bindings: js.Array[BindingData] = null,
     calculationEngineVersion: Int | Double = null,
     chartDataPointTrack: js.UndefOr[Boolean] = js.undefined,
+    comments: js.Array[CommentData] = null,
     customXmlParts: js.Array[CustomXmlPartData] = null,
     isDirty: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     names: js.Array[NamedItemData] = null,
+    pivotTableStyles: js.Array[PivotTableStyleData] = null,
     pivotTables: js.Array[PivotTableData] = null,
     previouslySaved: js.UndefOr[Boolean] = js.undefined,
     properties: DocumentPropertiesData = null,
     protection: WorkbookProtectionData = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     settings: js.Array[SettingData] = null,
+    slicerStyles: js.Array[SlicerStyleData] = null,
+    slicers: js.Array[SlicerData] = null,
     styles: js.Array[StyleData] = null,
+    tableStyles: js.Array[TableStyleData] = null,
     tables: js.Array[TableData] = null,
+    timelineStyles: js.Array[TimelineStyleData] = null,
     usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined,
     worksheets: js.Array[WorksheetData] = null
   ): WorkbookData = {
@@ -164,18 +212,24 @@ object WorkbookData {
     if (bindings != null) __obj.updateDynamic("bindings")(bindings)
     if (calculationEngineVersion != null) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
     if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
     if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts)
     if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty)
     if (name != null) __obj.updateDynamic("name")(name)
     if (names != null) __obj.updateDynamic("names")(names)
+    if (pivotTableStyles != null) __obj.updateDynamic("pivotTableStyles")(pivotTableStyles)
     if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables)
     if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (protection != null) __obj.updateDynamic("protection")(protection)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (slicerStyles != null) __obj.updateDynamic("slicerStyles")(slicerStyles)
+    if (slicers != null) __obj.updateDynamic("slicers")(slicers)
     if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tableStyles != null) __obj.updateDynamic("tableStyles")(tableStyles)
     if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (timelineStyles != null) __obj.updateDynamic("timelineStyles")(timelineStyles)
     if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed)
     if (worksheets != null) __obj.updateDynamic("worksheets")(worksheets)
     __obj.asInstanceOf[WorkbookData]

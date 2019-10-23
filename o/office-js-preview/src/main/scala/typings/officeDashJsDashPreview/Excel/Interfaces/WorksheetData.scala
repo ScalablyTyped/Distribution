@@ -19,7 +19,7 @@ trait WorksheetData extends js.Object {
   var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
   /**
     *
-    * Returns collection of charts that are part of the worksheet. Read-only.
+    * Returns a collection of charts that are part of the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -28,8 +28,7 @@ trait WorksheetData extends js.Object {
     *
     * Returns a collection of all the Comments objects on the worksheet. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   /**
@@ -121,10 +120,9 @@ trait WorksheetData extends js.Object {
   var showHeadings: js.UndefOr[Boolean] = js.undefined
   /**
     *
-    * Returns collection of slicers that are part of the worksheet. Read-only.
+    * Returns a collection of slicers that are part of the worksheet. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
   /**

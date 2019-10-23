@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of all the slicer objects on the workbook or a worksheet.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerCollection")
 @js.native
@@ -29,8 +28,7 @@ class SlicerCollection () extends ClientObject {
     *
     * Adds a new slicer to the workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param slicerSource The data source that the new slicer will be based on. It can be a PivotTable object, a Table object or a string. When a PivotTable object is passed, the data source is the source of the PivotTable object. When a Table object is passed, the data source is the Table object. When a string is passed, it is interpreted as the name/id of a PivotTable/Table.
     * @param sourceField The field in the data source to filter by. It can be a PivotField object, a TableColumn object, the id of a PivotField or the id/name of TableColumn.
@@ -47,16 +45,14 @@ class SlicerCollection () extends ClientObject {
     *
     * Returns the number of slicers in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
     *
     * Gets a slicer object using its name or id.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param key The name or id of the slicer.
     */
@@ -65,8 +61,7 @@ class SlicerCollection () extends ClientObject {
     *
     * Gets a slicer based on its position in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
     */
@@ -75,8 +70,7 @@ class SlicerCollection () extends ClientObject {
     *
     * Gets a slicer using its name or id. If the slicer does not exist, will return a null object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param key Name or Id of the slicer to be retrieved.
     */

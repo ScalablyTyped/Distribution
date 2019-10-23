@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "twilio-chat"
-version := "3.3.2-8a348f"
+version := "3.3.2-8600c0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "loglevel" % "1.6.4-135c7b",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "twilio-mcs-client" % "0.3.1-30ad0d",
-  "org.scalablytyped" %%% "twilio-notifications" % "0.5.8-eb35d0",
-  "org.scalablytyped" %%% "twilio-sync" % "0.11.4-a4d446",
-  "org.scalablytyped" %%% "twilsock" % "0.5.11-318590")
+  "org.scalablytyped" %%% "twilio-mcs-client" % "0.3.1-da6752",
+  "org.scalablytyped" %%% "twilio-notifications" % "0.5.8-a83387",
+  "org.scalablytyped" %%% "twilio-sync" % "0.11.4-58d775",
+  "org.scalablytyped" %%% "twilsock" % "0.5.11-adfead")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -39,11 +39,18 @@ class Worksheet () extends ClientObject {
   val autoFilter: AutoFilter = js.native
   /**
     *
-    * Returns collection of charts that are part of the worksheet. Read-only.
+    * Returns a collection of charts that are part of the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
   val charts: ChartCollection = js.native
+  /**
+    *
+    * Returns a collection of all the Comments objects on the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val comments: CommentCollection = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Worksheet: RequestContext = js.native
@@ -119,6 +126,15 @@ class Worksheet () extends ClientObject {
   val onChanged: EventHandlers[WorksheetChangedEventArgs] = js.native
   /**
     *
+    * Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @eventproperty
+    */
+  val onColumnSorted: EventHandlers[WorksheetColumnSortedEventArgs] = js.native
+  /**
+    *
     * Occurs when the worksheet is deactivated.
     *
     * [Api set: ExcelApi 1.7]
@@ -137,6 +153,15 @@ class Worksheet () extends ClientObject {
   val onFormatChanged: EventHandlers[WorksheetFormatChangedEventArgs] = js.native
   /**
     *
+    * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @eventproperty
+    */
+  val onRowSorted: EventHandlers[WorksheetRowSortedEventArgs] = js.native
+  /**
+    *
     * Occurs when the selection changes on a specific worksheet.
     *
     * [Api set: ExcelApi 1.7]
@@ -144,6 +169,17 @@ class Worksheet () extends ClientObject {
     * @eventproperty
     */
   val onSelectionChanged: EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in the following cases:
+    - The user drags the mouse for multi-selection.
+    - The user selects a cell in the mode when cell arguments are selected for formula references.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @eventproperty
+    */
+  val onSingleClicked: EventHandlers[WorksheetSingleClickedEventArgs] = js.native
   /**
     *
     * Gets the PageLayout object of the worksheet.
@@ -195,6 +231,13 @@ class Worksheet () extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   var showHeadings: Boolean = js.native
+  /**
+    *
+    * Returns a collection of slicers that are part of the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val slicers: SlicerCollection = js.native
   /**
     *
     * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
@@ -258,8 +301,8 @@ class Worksheet () extends ClientObject {
   def calculate(markAllDirty: Boolean): Unit = js.native
   /**
     *
-    * Copies a worksheet and places it at the specified position. 
-    * 
+    * Copies a worksheet and places it at the specified position.
+    *
     * [Api set: ExcelApi 1.7]
     *
     * @param positionType The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
@@ -457,6 +500,20 @@ class Worksheet () extends ClientObject {
   def set(properties: WorksheetUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Worksheet): Unit = js.native
+  /**
+    *
+    * Shows row or column groups by their outline levels.
+    Outlines group and summarize a list of data in the worksheet.
+    The `rowLevels` and `columnLevels` parameters specify how many levels of the outline will be displayed.
+    The acceptable argument range is between 0 and 8.
+    A value of 0 does not change the current display. A value greater than the current number of levels displays all the levels.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param rowLevels The number of row levels of an outline to display.
+    * @param columnLevels The number of column levels of an outline to display.
+    */
+  def showOutlineLevels(rowLevels: Double, columnLevels: Double): Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.

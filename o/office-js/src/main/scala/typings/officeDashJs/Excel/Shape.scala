@@ -8,6 +8,7 @@ import typings.officeDashJs.OfficeExtension.ClientObject
 import typings.officeDashJs.OfficeExtension.ClientResult
 import typings.officeDashJs.OfficeExtension.EventHandlers
 import typings.officeDashJs.OfficeExtension.UpdateOptions
+import typings.officeDashJs.officeDashJsStrings.Absolute
 import typings.officeDashJs.officeDashJsStrings.BMP
 import typings.officeDashJs.officeDashJsStrings.BringForward
 import typings.officeDashJs.officeDashJsStrings.BringToFront
@@ -15,6 +16,7 @@ import typings.officeDashJs.officeDashJsStrings.CurrentSize
 import typings.officeDashJs.officeDashJsStrings.GIF
 import typings.officeDashJs.officeDashJsStrings.Group
 import typings.officeDashJs.officeDashJsStrings.JPEG
+import typings.officeDashJs.officeDashJsStrings.OneCell
 import typings.officeDashJs.officeDashJsStrings.OriginalSize
 import typings.officeDashJs.officeDashJsStrings.PNG
 import typings.officeDashJs.officeDashJsStrings.SVG
@@ -23,6 +25,7 @@ import typings.officeDashJs.officeDashJsStrings.ScaleFromMiddle
 import typings.officeDashJs.officeDashJsStrings.ScaleFromTopLeft
 import typings.officeDashJs.officeDashJsStrings.SendBackward
 import typings.officeDashJs.officeDashJsStrings.SendToBack
+import typings.officeDashJs.officeDashJsStrings.TwoCell
 import typings.officeDashJs.officeDashJsStrings.UNKNOWN
 import typings.officeDashJs.officeDashJsStrings.Unsupported
 import scala.scalajs.js
@@ -183,6 +186,13 @@ class Shape () extends ClientObject {
   val parentGroup: Shape = js.native
   /**
     *
+    * Represents how the object is attached to the cells below it.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  var placement: Placement | TwoCell | OneCell | Absolute = js.native
+  /**
+    *
     * Represents the rotation, in degrees, of the shape.
     *
     * [Api set: ExcelApi 1.9]
@@ -232,6 +242,18 @@ class Shape () extends ClientObject {
     * [Api set: ExcelApi 1.9]
     */
   val zOrderPosition: Double = js.native
+  /**
+    *
+    * Copies and pastes a Shape object.
+    The pasted shape is copied to the same pixel location as this shape.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param destinationSheet The sheet to which the shape object will be pasted. The default value is the copied Shape's worksheet.
+    */
+  def copyTo(): Shape = js.native
+  def copyTo(destinationSheet: String): Shape = js.native
+  def copyTo(destinationSheet: Worksheet): Shape = js.native
   /**
     *
     * Removes the shape from the worksheet.

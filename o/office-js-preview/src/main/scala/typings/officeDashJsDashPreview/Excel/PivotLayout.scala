@@ -46,8 +46,7 @@ class PivotLayout () extends ClientObject {
     *
     * Specifies whether the field list can be shown in the UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var enableFieldList: Boolean = js.native
   /**

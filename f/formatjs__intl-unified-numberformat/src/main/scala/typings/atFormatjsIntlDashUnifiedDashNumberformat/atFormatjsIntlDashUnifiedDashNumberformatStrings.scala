@@ -7,7 +7,16 @@ import scala.scalajs.js.annotation._
 
 object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
+  sealed trait accounting extends js.Object
+  
+  @js.native
   sealed trait acre extends Unit
+  
+  @js.native
+  sealed trait always extends js.Object
+  
+  @js.native
+  sealed trait auto extends js.Object
   
   @js.native
   sealed trait bit extends Unit
@@ -22,10 +31,22 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait centimeter extends Unit
   
   @js.native
+  sealed trait code extends js.Object
+  
+  @js.native
+  sealed trait compact extends js.Object
+  
+  @js.native
   sealed trait day extends Unit
   
   @js.native
   sealed trait degree extends Unit
+  
+  @js.native
+  sealed trait engineering extends js.Object
+  
+  @js.native
+  sealed trait exceptZero extends js.Object
   
   @js.native
   sealed trait fahrenheit extends Unit
@@ -73,6 +94,9 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait liter extends Unit
   
   @js.native
+  sealed trait localeMatcher extends js.Object
+  
+  @js.native
   sealed trait long extends js.Object
   
   @js.native
@@ -106,7 +130,16 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait month extends Unit
   
   @js.native
+  sealed trait name extends js.Object
+  
+  @js.native
   sealed trait narrow extends js.Object
+  
+  @js.native
+  sealed trait narrowSymbol extends js.Object
+  
+  @js.native
+  sealed trait never extends js.Object
   
   @js.native
   sealed trait ounce extends Unit
@@ -121,13 +154,22 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait pound extends Unit
   
   @js.native
+  sealed trait scientific extends js.Object
+  
+  @js.native
   sealed trait second extends Unit
   
   @js.native
   sealed trait short extends js.Object
   
   @js.native
+  sealed trait standard extends js.Object
+  
+  @js.native
   sealed trait stone extends Unit
+  
+  @js.native
+  sealed trait symbol extends js.Object
   
   @js.native
   sealed trait terabit extends Unit
@@ -145,7 +187,13 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   sealed trait year extends Unit
   
   @scala.inline
+  def accounting: accounting = "accounting".asInstanceOf[accounting]
+  @scala.inline
   def acre: acre = "acre".asInstanceOf[acre]
+  @scala.inline
+  def always: always = "always".asInstanceOf[always]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def bit: bit = "bit".asInstanceOf[bit]
   @scala.inline
@@ -155,9 +203,17 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @scala.inline
   def centimeter: centimeter = "centimeter".asInstanceOf[centimeter]
   @scala.inline
+  def code: code = "code".asInstanceOf[code]
+  @scala.inline
+  def compact: compact = "compact".asInstanceOf[compact]
+  @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
   def degree: degree = "degree".asInstanceOf[degree]
+  @scala.inline
+  def engineering: engineering = "engineering".asInstanceOf[engineering]
+  @scala.inline
+  def exceptZero: exceptZero = "exceptZero".asInstanceOf[exceptZero]
   @scala.inline
   def fahrenheit: fahrenheit = "fahrenheit".asInstanceOf[fahrenheit]
   @scala.inline
@@ -189,6 +245,8 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @scala.inline
   def liter: liter = "liter".asInstanceOf[liter]
   @scala.inline
+  def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
+  @scala.inline
   def long: long = "long".asInstanceOf[long]
   @scala.inline
   def megabit: megabit = "megabit".asInstanceOf[megabit]
@@ -211,7 +269,13 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def narrow: narrow = "narrow".asInstanceOf[narrow]
+  @scala.inline
+  def narrowSymbol: narrowSymbol = "narrowSymbol".asInstanceOf[narrowSymbol]
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
   @scala.inline
   def ounce: ounce = "ounce".asInstanceOf[ounce]
   @scala.inline
@@ -221,11 +285,17 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @scala.inline
   def pound: pound = "pound".asInstanceOf[pound]
   @scala.inline
+  def scientific: scientific = "scientific".asInstanceOf[scientific]
+  @scala.inline
   def second: second = "second".asInstanceOf[second]
   @scala.inline
   def short: short = "short".asInstanceOf[short]
   @scala.inline
+  def standard: standard = "standard".asInstanceOf[standard]
+  @scala.inline
   def stone: stone = "stone".asInstanceOf[stone]
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
   def terabit: terabit = "terabit".asInstanceOf[terabit]
   @scala.inline

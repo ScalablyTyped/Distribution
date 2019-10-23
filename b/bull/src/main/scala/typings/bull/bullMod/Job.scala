@@ -106,6 +106,7 @@ trait Job[T] extends js.Object {
   def moveToCompleted(): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   def moveToCompleted(returnValue: String): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   def moveToCompleted(returnValue: String, ignoreLock: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
+  def moveToCompleted(returnValue: String, ignoreLock: Boolean, notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   /**
     * Moves a job to the `failed` queue. Pulls a job from 'waiting' to 'active'
     * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.

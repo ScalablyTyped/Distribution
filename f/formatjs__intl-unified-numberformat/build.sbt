@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "formatjs__intl-unified-numberformat"
-version := "1.0.1-2a3ece"
+version := "2.1.0-cc75e3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

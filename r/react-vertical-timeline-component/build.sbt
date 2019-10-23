@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-vertical-timeline-component"
-version := "2.3-dt-20190212Z-70e9b5"
+version := "2.5-dt-20191022Z-8cb88f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

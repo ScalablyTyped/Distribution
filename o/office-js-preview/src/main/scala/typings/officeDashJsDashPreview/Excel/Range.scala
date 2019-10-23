@@ -172,8 +172,7 @@ class Range () extends ClientObject {
     *
     * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val height: Double = js.native
   /**
@@ -208,8 +207,7 @@ class Range () extends ClientObject {
     *
     * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val left: Double = js.native
   /**
@@ -296,8 +294,7 @@ class Range () extends ClientObject {
     *
     * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val top: Double = js.native
   /**
@@ -319,8 +316,7 @@ class Range () extends ClientObject {
     *
     * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val width: Double = js.native
   /**
@@ -335,11 +331,12 @@ class Range () extends ClientObject {
     * Fills range from the current range to the destination range using the specified AutoFill logic.
     The destination range can be null, or can extend the source either horizontally or vertically.
     Discontiguous ranges are not supported.
+    
     For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
     *
-    * [Api set: ExcelApi 1.9, ExcelApi BETA (PREVIEW ONLY) for null `destinationRange`]
+    * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
     *
-    * @param destinationRange The destination range to autofill. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle). 
+    * @param destinationRange The destination range to autofill. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
     * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
     */
   def autoFill(): Unit = js.native
@@ -970,8 +967,7 @@ class Range () extends ClientObject {
     *
     * Groups columns and rows for an outline.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param groupOption Specifies how the range can be grouped by rows or columns.
     An `InvalidArgument` error is thrown when the group option differs from the range's
@@ -985,7 +981,7 @@ class Range () extends ClientObject {
     *
     * Groups columns and rows for an outline.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @param groupOption Specifies how the range can be grouped by rows or columns.
     An `InvalidArgument` error is thrown when the group option differs from the range's
@@ -998,8 +994,7 @@ class Range () extends ClientObject {
     *
     * Hide details of the row or column group.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param groupOption Specifies whether to hide details of grouped rows or grouped columns.
     */
@@ -1010,7 +1005,7 @@ class Range () extends ClientObject {
     *
     * Hide details of the row or column group.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @param groupOption Specifies whether to hide details of grouped rows or grouped columns.
     */
@@ -1057,6 +1052,18 @@ class Range () extends ClientObject {
     */
   def merge(): Unit = js.native
   def merge(across: Boolean): Unit = js.native
+  def moveTo(destinationRange: String): Unit = js.native
+  /**
+    *
+    * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
+    The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param destinationRange destinationRange Specifies the range to where the information in this range will be moved.
+    */
+  def moveTo(destinationRange: Range): Unit = js.native
   /**
     *
     * Removes duplicate values from the range specified by the columns.
@@ -1147,8 +1154,7 @@ class Range () extends ClientObject {
     *
     * Show details of the row or column group.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param groupOption Specifies whether to show details of grouped rows or grouped columns.
     */
@@ -1159,7 +1165,7 @@ class Range () extends ClientObject {
     *
     * Show details of the row or column group.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @param groupOption Specifies whether to show details of grouped rows or grouped columns.
     */
@@ -1178,8 +1184,7 @@ class Range () extends ClientObject {
     *
     * Ungroups columns and rows for an outline.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     *
     * @param groupOption Specifies how the range can be ungrouped by rows or columns.
     */
@@ -1190,7 +1195,7 @@ class Range () extends ClientObject {
     *
     * Ungroups columns and rows for an outline.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @param groupOption Specifies how the range can be ungrouped by rows or columns.
     */

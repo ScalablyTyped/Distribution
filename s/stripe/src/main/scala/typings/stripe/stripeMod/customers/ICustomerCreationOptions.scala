@@ -91,7 +91,7 @@ trait ICustomerCreationOptions extends IDataOptionsWithMetadata {
   /**
     * The customer’s tax IDs.
     */
-  var tax_id_data: js.UndefOr[Anon_Type] = js.undefined
+  var tax_id_data: js.UndefOr[js.Array[Anon_Type]] = js.undefined
   /**
     * @deprecated
     */
@@ -135,7 +135,7 @@ object ICustomerCreationOptions {
     shipping: IShippingInformation = null,
     source: String | ICardSourceCreationOptionsExtended = null,
     tax_exempt: none | exempt | reverse = null,
-    tax_id_data: Anon_Type = null,
+    tax_id_data: js.Array[Anon_Type] = null,
     tax_info: js.Any = null,
     tax_percent: Int | Double = null,
     trial_end: Double | now = null

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 trait HelmetProps extends js.Object {
   var async: js.UndefOr[Boolean] = js.undefined
   var base: js.UndefOr[js.Any] = js.undefined
-  var bodyAttributes: js.UndefOr[js.Object] = js.undefined
+  var bodyAttributes: js.UndefOr[BodyProps] = js.undefined
   var defaultTitle: js.UndefOr[String] = js.undefined
   var defer: js.UndefOr[Boolean] = js.undefined
   var encodeSpecialCharacters: js.UndefOr[Boolean] = js.undefined
-  var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+  var htmlAttributes: js.UndefOr[HtmlProps] = js.undefined
   var link: js.UndefOr[js.Array[LinkProps]] = js.undefined
   var meta: js.UndefOr[js.Array[MetaProps]] = js.undefined
   var noscript: js.UndefOr[js.Array[_]] = js.undefined
@@ -30,11 +30,11 @@ object HelmetProps {
   def apply(
     async: js.UndefOr[Boolean] = js.undefined,
     base: js.Any = null,
-    bodyAttributes: js.Object = null,
+    bodyAttributes: BodyProps = null,
     defaultTitle: String = null,
     defer: js.UndefOr[Boolean] = js.undefined,
     encodeSpecialCharacters: js.UndefOr[Boolean] = js.undefined,
-    htmlAttributes: js.Any = null,
+    htmlAttributes: HtmlProps = null,
     link: js.Array[LinkProps] = null,
     meta: js.Array[MetaProps] = null,
     noscript: js.Array[_] = null,

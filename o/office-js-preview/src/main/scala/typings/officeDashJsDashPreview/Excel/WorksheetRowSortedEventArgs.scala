@@ -11,40 +11,35 @@ import scala.scalajs.js.annotation._
   *
   * Provides information about the row-sorted event and its related worksheet.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 trait WorksheetRowSortedEventArgs extends js.Object {
   /**
     *
     * Gets the range address that represents the sorted areas of a specific worksheet. Only rows changed as a result of the sort operation are returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var address: String
   /**
     *
     * Gets the source of the event. See Excel.EventSource for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var source: EventSource | Local | Remote
   /**
     *
     * Gets the type of the event. See Excel.EventType for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var `type`: WorksheetRowSorted
   /**
     *
     * Gets the id of the worksheet where the sorting happened.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var worksheetId: String
 }

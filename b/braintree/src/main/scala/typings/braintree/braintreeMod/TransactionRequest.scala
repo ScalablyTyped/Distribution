@@ -5,7 +5,7 @@ import typings.braintree.Anon_CardholderName
 import typings.braintree.Anon_Cavv
 import typings.braintree.Anon_Company
 import typings.braintree.Anon_CompanyCountryCodeAlpha2CountryCodeAlpha3CountryCodeNumeric
-import typings.braintree.Anon_CompanyCustomFields
+import typings.braintree.Anon_CompanyCustomFieldsEmail
 import typings.braintree.Anon_PreviousNetworkTransactionId
 import typings.std.Record
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait TransactionRequest extends js.Object {
   var channel: js.UndefOr[String] = js.undefined
   var creditCard: js.UndefOr[Anon_CardholderName] = js.undefined
   var customFields: js.UndefOr[Record[String, _]] = js.undefined
-  var customer: js.UndefOr[Anon_CompanyCustomFields] = js.undefined
+  var customer: js.UndefOr[Anon_CompanyCustomFieldsEmail] = js.undefined
   var customerId: js.UndefOr[String] = js.undefined
   var descriptor: js.UndefOr[Descriptor] = js.undefined
   var deviceData: js.UndefOr[String] = js.undefined
@@ -61,7 +61,7 @@ object TransactionRequest {
     channel: String = null,
     creditCard: Anon_CardholderName = null,
     customFields: Record[String, _] = null,
-    customer: Anon_CompanyCustomFields = null,
+    customer: Anon_CompanyCustomFieldsEmail = null,
     customerId: String = null,
     descriptor: Descriptor = null,
     deviceData: String = null,

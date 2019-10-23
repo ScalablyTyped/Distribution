@@ -17,9 +17,7 @@ trait Layer extends js.Object {
   var filter: js.UndefOr[js.Array[_]] = js.undefined
   var id: String
   var interactive: js.UndefOr[Boolean] = js.undefined
-  var layout: js.UndefOr[
-    BackgroundLayout | FillLayout | FillExtrusionLayout | LineLayout | SymbolLayout | RasterLayout | CircleLayout | HeatmapLayout | HillshadeLayout
-  ] = js.undefined
+  var layout: js.UndefOr[AnyLayout] = js.undefined
   var maxzoom: js.UndefOr[Double] = js.undefined
   var metadata: js.UndefOr[js.Any] = js.undefined
   var minzoom: js.UndefOr[Double] = js.undefined
@@ -40,7 +38,7 @@ object Layer {
     id: String,
     filter: js.Array[_] = null,
     interactive: js.UndefOr[Boolean] = js.undefined,
-    layout: BackgroundLayout | FillLayout | FillExtrusionLayout | LineLayout | SymbolLayout | RasterLayout | CircleLayout | HeatmapLayout | HillshadeLayout = null,
+    layout: AnyLayout = null,
     maxzoom: Int | Double = null,
     metadata: js.Any = null,
     minzoom: Int | Double = null,

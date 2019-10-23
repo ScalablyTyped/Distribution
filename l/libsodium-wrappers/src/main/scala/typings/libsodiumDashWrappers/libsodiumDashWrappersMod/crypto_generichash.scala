@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("libsodium-wrappers", "crypto_generichash")
 @js.native
 object crypto_generichash extends js.Object {
-  def apply(): Uint8Array = js.native
-  def apply(hash_length: Double): Uint8Array = js.native
   def apply(hash_length: Double, message: String): Uint8Array = js.native
   def apply(hash_length: Double, message: String, key: String): Uint8Array = js.native
   def apply(hash_length: Double, message: String, key: String, outputFormat: StringOutputFormat): String = js.native

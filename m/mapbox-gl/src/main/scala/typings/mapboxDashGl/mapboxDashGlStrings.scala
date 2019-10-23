@@ -3,6 +3,7 @@ package typings.mapboxDashGl
 import typings.mapboxDashGl.mapboxDashGlMod.Anchor
 import typings.mapboxDashGl.mapboxDashGlMod.ExpressionName
 import typings.mapboxDashGl.mapboxDashGlMod.ResourceType
+import typings.mapboxDashGl.mapboxDashGlMod.Visibility
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -399,7 +400,7 @@ object mapboxDashGlStrings {
   sealed trait nearest extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none extends Visibility
   
   @js.native
   sealed trait number extends ExpressionName
@@ -573,7 +574,7 @@ object mapboxDashGlStrings {
   sealed trait `viewport-y` extends js.Object
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait visible extends Visibility
   
   @js.native
   sealed trait webglcontextlost extends js.Object

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait MapboxOptions extends js.Object {
   /**
-    * If  true, the gl context will be created with MSA antialiasing, which can be useful for antialiasing custom layers. 
+    * If  true, the gl context will be created with MSA antialiasing, which can be useful for antialiasing custom layers.
     * This is false by default as a performance optimization.
     */
   var antialias: js.UndefOr[Boolean] = js.undefined

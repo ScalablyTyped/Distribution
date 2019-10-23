@@ -1,7 +1,7 @@
 
 # Scala.js typings for mock-fs
 
-Typings are for version 3.6.0
+Typings are for version 4.10
 
 ## Library description:
 A configurable mock file system.  You know, for testing.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addons"
-version := "5.2.5-10534f"
+version := "5.2.5-2d1bc0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "emotion__styled-base" % "10.0.19-3153ad",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.2-204041",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-2fbebe",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191021Z-a8dc6e",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-fffe4e",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",

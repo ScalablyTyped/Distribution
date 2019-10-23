@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.connectDashHistoryDashApiDashFallback.connectDashHistoryDashApiDashFallbackMod.Options
 import typings.express.expressMod.Application
 import typings.node.httpsMod.ServerOptions
+import typings.webpack.webpackMod.Compiler
 import typings.webpackDashDevDashServer.webpackDashDevDashServerMod.ProxyConfigArray
 import typings.webpackDashDevDashServer.webpackDashDevDashServerMod.ProxyConfigMap
 import typings.webpackDashDevDashServer.webpackDashDevDashServerMod.WebpackDevServer
@@ -12,8 +13,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DevServer extends js.Object {
-  var after: js.UndefOr[js.Function2[/* app */ Application, /* server */ WebpackDevServer, Unit]] = js.undefined
-  var before: js.UndefOr[js.Function2[/* app */ Application, /* server */ WebpackDevServer, Unit]] = js.undefined
+  var after: js.UndefOr[
+    js.Function3[/* app */ Application, /* server */ WebpackDevServer, /* compiler */ Compiler, Unit]
+  ] = js.undefined
+  var before: js.UndefOr[
+    js.Function3[/* app */ Application, /* server */ WebpackDevServer, /* compiler */ Compiler, Unit]
+  ] = js.undefined
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   var historyApiFallback: js.UndefOr[Boolean | Options] = js.undefined
   var host: js.UndefOr[String] = js.undefined
@@ -29,8 +34,8 @@ trait DevServer extends js.Object {
 object DevServer {
   @scala.inline
   def apply(
-    after: (/* app */ Application, /* server */ WebpackDevServer) => Unit = null,
-    before: (/* app */ Application, /* server */ WebpackDevServer) => Unit = null,
+    after: (/* app */ Application, /* server */ WebpackDevServer, /* compiler */ Compiler) => Unit = null,
+    before: (/* app */ Application, /* server */ WebpackDevServer, /* compiler */ Compiler) => Unit = null,
     headers: StringDictionary[String] = null,
     historyApiFallback: Boolean | Options = null,
     host: String = null,
@@ -43,8 +48,8 @@ object DevServer {
     proxy: String | ProxyConfigMap | ProxyConfigArray = null
   ): DevServer = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction2(after))
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
+    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction3(after))
+    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction3(before))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (historyApiFallback != null) __obj.updateDynamic("historyApiFallback")(historyApiFallback.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)

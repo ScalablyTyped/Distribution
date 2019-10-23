@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-axe
 
-Typings are for version 2.2
+Typings are for version 3.2
 
 ## Library description:
 Custom Jest matcher for aXe for testing accessibility

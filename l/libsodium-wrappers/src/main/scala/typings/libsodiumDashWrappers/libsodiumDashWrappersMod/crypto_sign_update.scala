@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("libsodium-wrappers", "crypto_sign_update")
 @js.native
 object crypto_sign_update extends js.Object {
-  def apply(state_address: sign_state_address, message_chunk: String): Unit = js.native
-  def apply(state_address: sign_state_address, message_chunk: Uint8Array): Unit = js.native
+  def apply(state_address: StateAddress, message_chunk: String): Unit = js.native
+  def apply(state_address: StateAddress, message_chunk: Uint8Array): Unit = js.native
 }
 

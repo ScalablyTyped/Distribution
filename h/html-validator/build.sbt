@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html-validator"
-version := "4.1-dt-20190814Z-e109b0"
+version := "4.1-dt-20191022Z-d7bd9d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

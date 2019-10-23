@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a TableStyle, which defines the style elements by region of the Table.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.TableStyle")
 @js.native
@@ -27,32 +26,28 @@ class TableStyle () extends ClientObject {
     *
     * Gets the name of the TableStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var name: String = js.native
   /**
     *
     * Specifies whether this TableStyle object is read-only. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val readOnly: Boolean = js.native
   /**
     *
     * Deletes the TableStyle.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
     *
     * Creates a duplicate of this TableStyle with copies of all the style elements.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     * @returns The new TableStyle object that has been duplicated from this TableStyle.
     */
   def duplicate(): TableStyle = js.native

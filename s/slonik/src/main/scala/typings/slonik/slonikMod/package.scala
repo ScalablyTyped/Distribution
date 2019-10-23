@@ -24,7 +24,9 @@ package object slonikMod {
   type LoggerType = js.Function1[/* repeated */ String, scala.Nothing]
   type MaybePromiseType[T] = T | js.Promise[T]
   type NamedAssignmentType = Record[String, ValueExpressionType]
-  type PrimitiveValueExpressionType = String | Double | Boolean | Null
+  type NamedParameterValuesType = Record[String, ValueExpressionType]
+  type PositionalParameterValuesType = js.Array[ValueExpressionType]
+  type PrimitiveValueExpressionType = String | Double | Boolean | Null | PrimitiveValueExpressionTypeArray
   type QueryAnyFirstFunctionType = js.Function1[
     /* args */ QueryMethodParams[js.Any], 
     js.Promise[
@@ -75,9 +77,10 @@ package object slonikMod {
   type SqlSqlTokenType[T] = TaggedTemplateLiteralInvocationType[T]
   /* Rewritten from type alias, can be one of: 
     - typings.slonik.slonikMod.ArraySqlTokenType
-    - typings.slonik.slonikMod.IdentifierTokenType
+    - typings.slonik.slonikMod.BinarySqlTokenType
+    - typings.slonik.slonikMod.IdentifierSqlTokenType
     - typings.slonik.slonikMod.JsonSqlTokenType
-    - typings.slonik.slonikMod.RawSqlTokenType
+    - typings.slonik.slonikMod.ListSqlTokenType
     - typings.slonik.slonikMod.SqlSqlTokenType[js.Any]
     - typings.slonik.slonikMod.UnnestSqlTokenType
   */

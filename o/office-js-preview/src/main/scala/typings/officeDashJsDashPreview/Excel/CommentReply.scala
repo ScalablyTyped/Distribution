@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a comment reply in the workbook.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.CommentReply")
 @js.native
@@ -25,24 +24,21 @@ class CommentReply () extends ClientObject {
     *
     * Gets the email of the comment reply's author.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val authorEmail: String = js.native
   /**
     *
     * Gets the name of the comment reply's author.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val authorName: String = js.native
   /**
     *
     * Gets or sets the comment reply's content. The string is plain text.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   var content: String = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -52,16 +48,14 @@ class CommentReply () extends ClientObject {
     *
     * Gets the creation time of the comment reply.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val creationDate: Date = js.native
   /**
     *
     * Represents the comment reply identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   val id: String = js.native
   /**
@@ -92,24 +86,21 @@ class CommentReply () extends ClientObject {
     *
     * Deletes the comment reply.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
     *
     * Gets the cell where this comment reply is located.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getLocation(): Range = js.native
   /**
     *
     * Gets the parent comment of this reply.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.10]
     */
   def getParentComment(): Comment = js.native
   /**

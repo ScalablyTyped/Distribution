@@ -1,6 +1,7 @@
 package typings.reactDashVirtualized.distEsGridMod
 
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellMeasurerCache
 import typings.reactDashVirtualized.distEsCellMeasurerMod.MeasuredCellParent
@@ -18,7 +19,8 @@ trait GridCellRangeProps extends js.Object {
   var deferredMeasurementCache: CellMeasurerCache
   var horizontalOffsetAdjustment: Double
   var isScrolling: Boolean
-  var parent: MeasuredCellParent
+  var isScrollingOptOut: Boolean
+  var parent: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent
   var rowSizeAndPositionManager: CellSizeAndPositionManager
   var rowStartIndex: Double
   var rowStopIndex: Double
@@ -41,7 +43,8 @@ object GridCellRangeProps {
     deferredMeasurementCache: CellMeasurerCache,
     horizontalOffsetAdjustment: Double,
     isScrolling: Boolean,
-    parent: MeasuredCellParent,
+    isScrollingOptOut: Boolean,
+    parent: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent,
     rowSizeAndPositionManager: CellSizeAndPositionManager,
     rowStartIndex: Double,
     rowStopIndex: Double,
@@ -52,7 +55,7 @@ object GridCellRangeProps {
     visibleColumnIndices: VisibleCellRange,
     visibleRowIndices: VisibleCellRange
   ): GridCellRangeProps = {
-    val __obj = js.Dynamic.literal(cellCache = cellCache, cellRenderer = js.Any.fromFunction1(cellRenderer), columnSizeAndPositionManager = columnSizeAndPositionManager, columnStartIndex = columnStartIndex, columnStopIndex = columnStopIndex, deferredMeasurementCache = deferredMeasurementCache, horizontalOffsetAdjustment = horizontalOffsetAdjustment, isScrolling = isScrolling, parent = parent, rowSizeAndPositionManager = rowSizeAndPositionManager, rowStartIndex = rowStartIndex, rowStopIndex = rowStopIndex, scrollLeft = scrollLeft, scrollTop = scrollTop, styleCache = styleCache, verticalOffsetAdjustment = verticalOffsetAdjustment, visibleColumnIndices = visibleColumnIndices, visibleRowIndices = visibleRowIndices)
+    val __obj = js.Dynamic.literal(cellCache = cellCache, cellRenderer = js.Any.fromFunction1(cellRenderer), columnSizeAndPositionManager = columnSizeAndPositionManager, columnStartIndex = columnStartIndex, columnStopIndex = columnStopIndex, deferredMeasurementCache = deferredMeasurementCache, horizontalOffsetAdjustment = horizontalOffsetAdjustment, isScrolling = isScrolling, isScrollingOptOut = isScrollingOptOut, parent = parent, rowSizeAndPositionManager = rowSizeAndPositionManager, rowStartIndex = rowStartIndex, rowStopIndex = rowStopIndex, scrollLeft = scrollLeft, scrollTop = scrollTop, styleCache = styleCache, verticalOffsetAdjustment = verticalOffsetAdjustment, visibleColumnIndices = visibleColumnIndices, visibleRowIndices = visibleRowIndices)
   
     __obj.asInstanceOf[GridCellRangeProps]
   }

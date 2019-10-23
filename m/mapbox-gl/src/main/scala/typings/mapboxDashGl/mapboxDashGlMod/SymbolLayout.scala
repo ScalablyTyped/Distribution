@@ -16,13 +16,14 @@ import typings.mapboxDashGl.mapboxDashGlStrings.right
 import typings.mapboxDashGl.mapboxDashGlStrings.source
 import typings.mapboxDashGl.mapboxDashGlStrings.uppercase
 import typings.mapboxDashGl.mapboxDashGlStrings.viewport
-import typings.mapboxDashGl.mapboxDashGlStrings.visible
 import typings.mapboxDashGl.mapboxDashGlStrings.width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SymbolLayout extends js.Object {
+trait SymbolLayout
+  extends Layout
+     with _AnyLayout {
   var `icon-allow-overlap`: js.UndefOr[Boolean | StyleFunction | Expression] = js.undefined
   var `icon-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
   var `icon-ignore-placement`: js.UndefOr[Boolean] = js.undefined
@@ -60,7 +61,6 @@ trait SymbolLayout extends js.Object {
   var `text-rotation-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
   var `text-size`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   var `text-transform`: js.UndefOr[none | uppercase | lowercase | StyleFunction | Expression] = js.undefined
-  var visibility: js.UndefOr[visible | none] = js.undefined
 }
 
 object SymbolLayout {
@@ -103,7 +103,7 @@ object SymbolLayout {
     `text-rotation-alignment`: map | viewport | auto = null,
     `text-size`: Double | StyleFunction | Expression = null,
     `text-transform`: none | uppercase | lowercase | StyleFunction | Expression = null,
-    visibility: visible | none = null
+    visibility: Visibility = null
   ): SymbolLayout = {
     val __obj = js.Dynamic.literal()
     if (`icon-allow-overlap` != null) __obj.updateDynamic("icon-allow-overlap")(`icon-allow-overlap`.asInstanceOf[js.Any])
@@ -143,7 +143,7 @@ object SymbolLayout {
     if (`text-rotation-alignment` != null) __obj.updateDynamic("text-rotation-alignment")(`text-rotation-alignment`.asInstanceOf[js.Any])
     if (`text-size` != null) __obj.updateDynamic("text-size")(`text-size`.asInstanceOf[js.Any])
     if (`text-transform` != null) __obj.updateDynamic("text-transform")(`text-transform`.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
     __obj.asInstanceOf[SymbolLayout]
   }
 }

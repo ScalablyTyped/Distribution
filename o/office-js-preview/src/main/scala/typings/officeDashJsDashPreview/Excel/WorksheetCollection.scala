@@ -70,10 +70,9 @@ class WorksheetCollection () extends ClientObject {
     *
     * Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @eventproperty
-    * @beta
     */
   val onColumnSorted: EventHandlers[WorksheetColumnSortedEventArgs] = js.native
   /**
@@ -127,10 +126,9 @@ class WorksheetCollection () extends ClientObject {
     *
     * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @eventproperty
-    * @beta
     */
   val onRowSorted: EventHandlers[WorksheetRowSortedEventArgs] = js.native
   /**
@@ -145,14 +143,12 @@ class WorksheetCollection () extends ClientObject {
   /**
     *
     * Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when clicking in the following cases:
-    * 
     - The user drags the mouse for multi-selection.
     - The user selects a cell in the mode when cell arguments are selected for formula references.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.10]
     *
     * @eventproperty
-    * @beta
     */
   val onSingleClicked: EventHandlers[WorksheetSingleClickedEventArgs] = js.native
   /**
@@ -168,6 +164,8 @@ class WorksheetCollection () extends ClientObject {
   /**
     *
     * Inserts the specified worksheets of a workbook into the current workbook.
+    * 
+    * **Note**: This API is currently only supported for Office on Windows and Mac.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

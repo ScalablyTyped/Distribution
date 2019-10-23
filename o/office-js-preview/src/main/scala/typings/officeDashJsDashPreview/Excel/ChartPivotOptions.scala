@@ -31,7 +31,7 @@ class ChartPivotOptions () extends ClientObject {
   var showAxisFieldButtons: Boolean = js.native
   /**
     *
-    * Specifies whether or not to display the legend field buttons on a PivotChart
+    * Specifies whether or not to display the legend field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -45,7 +45,7 @@ class ChartPivotOptions () extends ClientObject {
   var showReportFilterFieldButtons: Boolean = js.native
   /**
     *
-    * Specifies whether or not to display the show value field buttons on a PivotChart
+    * Specifies whether or not to display the show value field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.9]
     */

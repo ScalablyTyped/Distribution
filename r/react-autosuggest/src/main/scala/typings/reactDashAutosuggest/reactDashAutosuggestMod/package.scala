@@ -13,7 +13,7 @@ package object reactDashAutosuggestMod {
   import typings.std.Record
 
   // types for functions - allowing reuse externally - e.g. as props and bound in the constructor
-  type GetSectionSuggestions[TSuggestion] = js.Function1[/* section */ js.Any, js.Array[TSuggestion]]
+  type GetSectionSuggestions[TSuggestion, TSection] = js.Function1[/* section */ TSection, js.Array[TSuggestion]]
   type GetSuggestionValue[TSuggestion] = js.Function1[/* suggestion */ TSuggestion, String]
   /**
     * Utilies types based on:

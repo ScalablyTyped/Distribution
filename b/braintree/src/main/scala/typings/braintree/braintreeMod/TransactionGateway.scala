@@ -1,6 +1,7 @@
 package typings.braintree.braintreeMod
 
 import typings.braintree.Anon_AmountOptions
+import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ trait TransactionGateway extends js.Object {
   def refund(transactionId: String, amount: String): js.Promise[ValidatedResponse[Transaction]] = js.native
   def releaseFromEscrow(transactionId: String): js.Promise[Transaction] = js.native
   def sale(request: TransactionRequest): js.Promise[ValidatedResponse[Transaction]] = js.native
-  def search(searchFn: js.Any): js.Promise[js.Array[Transaction]] = js.native
+  def search(searchFn: js.Any): Readable = js.native
   def submitForPartialSettlement(authorizedTransactionId: String, amount: String): js.Promise[ValidatedResponse[Transaction]] = js.native
   def submitForSettlement(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
   def submitForSettlement(transactionId: String, amount: String): js.Promise[ValidatedResponse[Transaction]] = js.native

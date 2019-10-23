@@ -9,6 +9,8 @@ import typings.officeDashJs.OfficeExtension.ClientResult
 import typings.officeDashJs.OfficeExtension.UpdateOptions
 import typings.officeDashJs.officeDashJsStrings.All
 import typings.officeDashJs.officeDashJsStrings.Blanks
+import typings.officeDashJs.officeDashJsStrings.ByColumns
+import typings.officeDashJs.officeDashJsStrings.ByRows
 import typings.officeDashJs.officeDashJsStrings.ConditionalFormats
 import typings.officeDashJs.officeDashJsStrings.Constants
 import typings.officeDashJs.officeDashJsStrings.Contents
@@ -158,6 +160,13 @@ class Range () extends ClientObject {
   var formulasR1C1: js.Array[js.Array[_]] = js.native
   /**
     *
+    * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val height: Double = js.native
+  /**
+    *
     * Represents if all cells of the current range are hidden. Read-only.
     *
     * [Api set: ExcelApi 1.2]
@@ -184,6 +193,13 @@ class Range () extends ClientObject {
     * [Api set: ExcelApi 1.7]
     */
   val isEntireRow: Boolean = js.native
+  /**
+    *
+    * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val left: Double = js.native
   /**
     *
     * Represents the data type state of each cell. Read-only.
@@ -256,6 +272,13 @@ class Range () extends ClientObject {
   val text: js.Array[js.Array[String]] = js.native
   /**
     *
+    * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val top: Double = js.native
+  /**
+    *
     * Represents the type of data of each cell. Read-only.
     *
     * [Api set: ExcelApi 1.1]
@@ -271,6 +294,13 @@ class Range () extends ClientObject {
   var values: js.Array[js.Array[_]] = js.native
   /**
     *
+    * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi 1.10]
+    */
+  val width: Double = js.native
+  /**
+    *
     * The worksheet containing the current range. Read-only.
     *
     * [Api set: ExcelApi 1.1]
@@ -279,12 +309,14 @@ class Range () extends ClientObject {
   /**
     *
     * Fills range from the current range to the destination range using the specified AutoFill logic.
-    The destination range can be null, or can extend the source either horizontally or vertically. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
+    The destination range can be null, or can extend the source either horizontally or vertically.
+    Discontiguous ranges are not supported.
+    
     For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
     *
     * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
     *
-    * @param destinationRange The destination range to autofill. Discontiguous ranges are not supported.
+    * @param destinationRange The destination range to autofill. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
     * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
     */
   def autoFill(): Unit = js.native
@@ -879,6 +911,54 @@ class Range () extends ClientObject {
   def getVisibleView(): RangeView = js.native
   /**
     *
+    * Groups columns and rows for an outline.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param groupOption Specifies how the range can be grouped by rows or columns.
+    An `InvalidArgument` error is thrown when the group option differs from the range's
+    `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
+    or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+    */
+  def group(groupOption: GroupOption): Unit = js.native
+  @JSName("group")
+  def group_ByColumns(groupOption: ByColumns): Unit = js.native
+  /**
+    *
+    * Groups columns and rows for an outline.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param groupOption Specifies how the range can be grouped by rows or columns.
+    An `InvalidArgument` error is thrown when the group option differs from the range's
+    `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
+    or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+    */
+  @JSName("group")
+  def group_ByRows(groupOption: ByRows): Unit = js.native
+  /**
+    *
+    * Hide details of the row or column group.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param groupOption Specifies whether to hide details of grouped rows or grouped columns.
+    */
+  def hideGroupDetails(groupOption: GroupOption): Unit = js.native
+  @JSName("hideGroupDetails")
+  def hideGroupDetails_ByColumns(groupOption: ByColumns): Unit = js.native
+  /**
+    *
+    * Hide details of the row or column group.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param groupOption Specifies whether to hide details of grouped rows or grouped columns.
+    */
+  @JSName("hideGroupDetails")
+  def hideGroupDetails_ByRows(groupOption: ByRows): Unit = js.native
+  /**
+    *
     * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
     *
     * [Api set: ExcelApi 1.1]
@@ -1005,6 +1085,27 @@ class Range () extends ClientObject {
     */
   def showCard(): Unit = js.native
   /**
+    *
+    * Show details of the row or column group.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param groupOption Specifies whether to show details of grouped rows or grouped columns.
+    */
+  def showGroupDetails(groupOption: GroupOption): Unit = js.native
+  @JSName("showGroupDetails")
+  def showGroupDetails_ByColumns(groupOption: ByColumns): Unit = js.native
+  /**
+    *
+    * Show details of the row or column group.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param groupOption Specifies whether to show details of grouped rows or grouped columns.
+    */
+  @JSName("showGroupDetails")
+  def showGroupDetails_ByRows(groupOption: ByRows): Unit = js.native
+  /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
     */
@@ -1013,6 +1114,27 @@ class Range () extends ClientObject {
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
     */
   def track(): Range = js.native
+  /**
+    *
+    * Ungroups columns and rows for an outline.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param groupOption Specifies how the range can be ungrouped by rows or columns.
+    */
+  def ungroup(groupOption: GroupOption): Unit = js.native
+  @JSName("ungroup")
+  def ungroup_ByColumns(groupOption: ByColumns): Unit = js.native
+  /**
+    *
+    * Ungroups columns and rows for an outline.
+    *
+    * [Api set: ExcelApi 1.10]
+    *
+    * @param groupOption Specifies how the range can be ungrouped by rows or columns.
+    */
+  @JSName("ungroup")
+  def ungroup_ByRows(groupOption: ByRows): Unit = js.native
   /**
     *
     * Unmerge the range cells into separate cells.
