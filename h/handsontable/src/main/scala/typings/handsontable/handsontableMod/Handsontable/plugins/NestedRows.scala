@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NestedRows extends BasePlugin {
+trait NestedRows extends Base {
   var bindRowsWithHeadersPlugin: BindRowsWithHeaders | Unit
   var collapsingUI: js.Object | Unit
   var dataManager: DataManager | Unit

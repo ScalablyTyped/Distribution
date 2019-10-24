@@ -17,9 +17,12 @@ import typings.atOctokitRest.atOctokitRestMod.GitGetBlobResponse
 import typings.atOctokitRest.atOctokitRestMod.GitGetCommitParams
 import typings.atOctokitRest.atOctokitRestMod.GitGetCommitResponse
 import typings.atOctokitRest.atOctokitRestMod.GitGetRefParams
+import typings.atOctokitRest.atOctokitRestMod.GitGetRefResponse
 import typings.atOctokitRest.atOctokitRestMod.GitGetTagParams
 import typings.atOctokitRest.atOctokitRestMod.GitGetTagResponse
 import typings.atOctokitRest.atOctokitRestMod.GitGetTreeParams
+import typings.atOctokitRest.atOctokitRestMod.GitListMatchingRefsParams
+import typings.atOctokitRest.atOctokitRestMod.GitListMatchingRefsResponse
 import typings.atOctokitRest.atOctokitRestMod.GitListRefsParams
 import typings.atOctokitRest.atOctokitRestMod.GitUpdateRefParams
 import typings.atOctokitRest.atOctokitRestMod.GitUpdateRefResponse
@@ -97,7 +100,9 @@ trait Anon_CreateBlob extends js.Object {
   @JSName("createTag")
   var createTag_Original: Anon_EndpointParamsGitCreateTagParams = js.native
   /**
-    * The tree creation API will take nested entries as well. If both a tree and a nested path modifying that tree are specified, it will overwrite the contents of that tree with the new path contents and write a new tree out.
+    * The tree creation API accepts nested entries. If you specify both a tree and a nested path modifying that tree, this endpoint will overwrite the contents of the tree with the new path contents, and create a new tree structure.
+    *
+    * If you use this endpoint to add, delete, or modify the file contents in a tree, you will need to commit the tree and then update a branch to point to the commit. For more information see "[Create a commit](https://developer.github.com/v3/git/commits/#create-a-commit)" and "[Update a reference](https://developer.github.com/v3/git/refs/#update-a-reference)."
     */
   @JSName("createTree")
   var createTree_Original: Anon_EndpointParamsGitCreateTreeParams = js.native
@@ -147,10 +152,14 @@ trait Anon_CreateBlob extends js.Object {
   @JSName("getCommit")
   var getCommit_Original: Anon_EndpointParamsGitGetCommitParams = js.native
   /**
-    * Returns a branch or tag reference. Other than the [REST API](https://developer.github.com/v3/git/refs/#get-a-reference) it always returns a single reference. If the REST API returns with an array then the method responds with an error.
+    * Returns a single reference from your Git database. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't match an existing ref, a `404` is returned.
+    *
+    * **Note:** You need to explicitly [request a pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) to trigger a test merge commit, which checks the mergeability of pull requests. For more information, see "[Checking mergeability of pull requests](https://developer.github.com/v3/git/#checking-mergeability-of-pull-requests)".
+    *
+    * To get the reference for a branch named `skunkworkz/featureA`, the endpoint route is:
     */
   @JSName("getRef")
-  var getRef_Original: Anon_EndpointParamsAnyResponseGitGetRefParams = js.native
+  var getRef_Original: Anon_EndpointParamsGitGetRefParams = js.native
   /**
     * **Signature verification object**
     *
@@ -181,6 +190,17 @@ trait Anon_CreateBlob extends js.Object {
     */
   @JSName("getTree")
   var getTree_Original: Anon_EndpointParamsAnyResponseGitGetTreeParams = js.native
+  /**
+    * Returns an array of references from your Git database that match the supplied name. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't exist in the repository, but existing refs start with `:ref`, they will be returned as an array.
+    *
+    * When you use this endpoint without providing a `:ref`, it will return an array of all the references from your Git database, including notes and stashes if they exist on the server. Anything in the namespace is returned, not just `heads` and `tags`.
+    *
+    * **Note:** You need to explicitly [request a pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) to trigger a test merge commit, which checks the mergeability of pull requests. For more information, see "[Checking mergeability of pull requests](https://developer.github.com/v3/git/#checking-mergeability-of-pull-requests)".
+    *
+    * If you request matching references for a branch named `feature` but the branch `feature` doesn't exist, the response can still include other matching head refs that start with the word `feature`, such as `featureA` and `featureB`.
+    */
+  @JSName("listMatchingRefs")
+  var listMatchingRefs_Original: Anon_EndpointParamsGitListMatchingRefsParams = js.native
   /**
     * Returns an array of all the references from your Git database, including notes and stashes if they exist on the server. Anything in the namespace is returned, not just `heads` and `tags`. If there are no references to list, a `404` is returned.
     */
@@ -254,7 +274,9 @@ trait Anon_CreateBlob extends js.Object {
   def createTag(): js.Promise[Response[GitCreateTagResponse]] = js.native
   def createTag(params: RequestOptions with GitCreateTagParams): js.Promise[Response[GitCreateTagResponse]] = js.native
   /**
-    * The tree creation API will take nested entries as well. If both a tree and a nested path modifying that tree are specified, it will overwrite the contents of that tree with the new path contents and write a new tree out.
+    * The tree creation API accepts nested entries. If you specify both a tree and a nested path modifying that tree, this endpoint will overwrite the contents of the tree with the new path contents, and create a new tree structure.
+    *
+    * If you use this endpoint to add, delete, or modify the file contents in a tree, you will need to commit the tree and then update a branch to point to the commit. For more information see "[Create a commit](https://developer.github.com/v3/git/commits/#create-a-commit)" and "[Update a reference](https://developer.github.com/v3/git/refs/#update-a-reference)."
     */
   def createTree(): js.Promise[Response[GitCreateTreeResponse]] = js.native
   def createTree(params: RequestOptions with GitCreateTreeParams): js.Promise[Response[GitCreateTreeResponse]] = js.native
@@ -304,10 +326,14 @@ trait Anon_CreateBlob extends js.Object {
   def getCommit(): js.Promise[Response[GitGetCommitResponse]] = js.native
   def getCommit(params: RequestOptions with GitGetCommitParams): js.Promise[Response[GitGetCommitResponse]] = js.native
   /**
-    * Returns a branch or tag reference. Other than the [REST API](https://developer.github.com/v3/git/refs/#get-a-reference) it always returns a single reference. If the REST API returns with an array then the method responds with an error.
+    * Returns a single reference from your Git database. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't match an existing ref, a `404` is returned.
+    *
+    * **Note:** You need to explicitly [request a pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) to trigger a test merge commit, which checks the mergeability of pull requests. For more information, see "[Checking mergeability of pull requests](https://developer.github.com/v3/git/#checking-mergeability-of-pull-requests)".
+    *
+    * To get the reference for a branch named `skunkworkz/featureA`, the endpoint route is:
     */
-  def getRef(): js.Promise[AnyResponse] = js.native
-  def getRef(params: RequestOptions with GitGetRefParams): js.Promise[AnyResponse] = js.native
+  def getRef(): js.Promise[Response[GitGetRefResponse]] = js.native
+  def getRef(params: RequestOptions with GitGetRefParams): js.Promise[Response[GitGetRefResponse]] = js.native
   /**
     * **Signature verification object**
     *
@@ -338,6 +364,17 @@ trait Anon_CreateBlob extends js.Object {
     */
   def getTree(): js.Promise[AnyResponse] = js.native
   def getTree(params: RequestOptions with GitGetTreeParams): js.Promise[AnyResponse] = js.native
+  /**
+    * Returns an array of references from your Git database that match the supplied name. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't exist in the repository, but existing refs start with `:ref`, they will be returned as an array.
+    *
+    * When you use this endpoint without providing a `:ref`, it will return an array of all the references from your Git database, including notes and stashes if they exist on the server. Anything in the namespace is returned, not just `heads` and `tags`.
+    *
+    * **Note:** You need to explicitly [request a pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) to trigger a test merge commit, which checks the mergeability of pull requests. For more information, see "[Checking mergeability of pull requests](https://developer.github.com/v3/git/#checking-mergeability-of-pull-requests)".
+    *
+    * If you request matching references for a branch named `feature` but the branch `feature` doesn't exist, the response can still include other matching head refs that start with the word `feature`, such as `featureA` and `featureB`.
+    */
+  def listMatchingRefs(): js.Promise[Response[GitListMatchingRefsResponse]] = js.native
+  def listMatchingRefs(params: RequestOptions with GitListMatchingRefsParams): js.Promise[Response[GitListMatchingRefsResponse]] = js.native
   /**
     * Returns an array of all the references from your Git database, including notes and stashes if they exist on the server. Anything in the namespace is returned, not just `heads` and `tags`. If there are no references to list, a `404` is returned.
     */

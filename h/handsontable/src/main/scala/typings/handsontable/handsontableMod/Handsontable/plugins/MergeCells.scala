@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MergeCells extends BasePlugin {
+trait MergeCells extends Base {
   var autofillCalculations: AutofillCalculations
   var mergedCellsCollection: MergedCellsCollection
   var selectionCalculations: SelectionCalculations

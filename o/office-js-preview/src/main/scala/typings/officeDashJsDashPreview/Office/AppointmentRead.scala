@@ -93,7 +93,7 @@ trait AppointmentRead extends ItemRead {
     * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
     *
     * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each optional attendee to 
-    * the meeting.
+    * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -140,7 +140,7 @@ trait AppointmentRead extends ItemRead {
     * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
     *
     * The requiredAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each required attendee to 
-    * the meeting.
+    * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
     * [Api set: Mailbox 1.0]
     *

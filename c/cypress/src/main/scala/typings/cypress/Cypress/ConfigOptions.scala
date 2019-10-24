@@ -1,6 +1,8 @@
 package typings.cypress.Cypress
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.cypress.cypressStrings.bundled
+import typings.cypress.cypressStrings.system
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,6 +59,11 @@ trait ConfigOptions extends js.Object {
     */
   var integrationFolder: String
   /**
+    * If set to `system`, Cypress will try to find a `node` executable on your path to use when executing your plugins. Otherwise, Cypress will use the Node version bundled with Cypress.
+    * @default "bundled"
+    */
+  var nodeVersion: system | bundled
+  /**
     * The number of tests for which snapshots and command data are kept in memory. Reduce this number if you are experiencing high memory consumption in your browser during a test run.
     * @default 50
     */
@@ -86,6 +93,16 @@ trait ConfigOptions extends js.Object {
     * @default 5000
     */
   var requestTimeout: Double
+  /**
+    * If `nodeVersion === 'system'` and a `node` executable is found, this will be the full filesystem path to that executable.
+    * @default null
+    */
+  var resolvedNodePath: String
+  /**
+    * The version of `node` that is being used to execute plugins.
+    * @example 1.2.3
+    */
+  var resolvedNodeVersion: String
   /**
     * Time, in milliseconds, to wait until a response in a [cy.request()](https://on.cypress.io/request), [cy.wait()](https://on.cypress.io/wait), [cy.fixture()](https://on.cypress.io/fixture), [cy.getCookie()](https://on.cypress.io/getcookie), [cy.getCookies()](https://on.cypress.io/getcookies), [cy.setCookie()](https://on.cypress.io/setcookie), [cy.clearCookie()](https://on.cypress.io/clearcookie), [cy.clearCookies()](https://on.cypress.io/clearcookies), and [cy.screenshot()](https://on.cypress.io/screenshot) commands
     * @default 30000
@@ -160,11 +177,14 @@ object ConfigOptions {
     fixturesFolder: String,
     ignoreTestFiles: String | js.Array[String],
     integrationFolder: String,
+    nodeVersion: system | bundled,
     numTestsKeptInMemory: Double,
     pageLoadTimeout: Double,
     pluginsFile: String,
     reporter: String,
     requestTimeout: Double,
+    resolvedNodePath: String,
+    resolvedNodeVersion: String,
     responseTimeout: Double,
     screenshotsFolder: String,
     supportFile: String,
@@ -180,7 +200,7 @@ object ConfigOptions {
     baseUrl: String = null,
     port: Int | Double = null
   ): ConfigOptions = {
-    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold, chromeWebSecurity = chromeWebSecurity, defaultCommandTimeout = defaultCommandTimeout, env = env, execTimeout = execTimeout, fileServerFolder = fileServerFolder, fixturesFolder = fixturesFolder, ignoreTestFiles = ignoreTestFiles.asInstanceOf[js.Any], integrationFolder = integrationFolder, numTestsKeptInMemory = numTestsKeptInMemory, pageLoadTimeout = pageLoadTimeout, pluginsFile = pluginsFile, reporter = reporter, requestTimeout = requestTimeout, responseTimeout = responseTimeout, screenshotsFolder = screenshotsFolder, supportFile = supportFile, trashAssetsBeforeRuns = trashAssetsBeforeRuns, video = video, videoCompression = videoCompression, videoUploadOnPasses = videoUploadOnPasses, videosFolder = videosFolder, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForAnimations = waitForAnimations, watchForFileChanges = watchForFileChanges)
+    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold, chromeWebSecurity = chromeWebSecurity, defaultCommandTimeout = defaultCommandTimeout, env = env, execTimeout = execTimeout, fileServerFolder = fileServerFolder, fixturesFolder = fixturesFolder, ignoreTestFiles = ignoreTestFiles.asInstanceOf[js.Any], integrationFolder = integrationFolder, nodeVersion = nodeVersion.asInstanceOf[js.Any], numTestsKeptInMemory = numTestsKeptInMemory, pageLoadTimeout = pageLoadTimeout, pluginsFile = pluginsFile, reporter = reporter, requestTimeout = requestTimeout, resolvedNodePath = resolvedNodePath, resolvedNodeVersion = resolvedNodeVersion, responseTimeout = responseTimeout, screenshotsFolder = screenshotsFolder, supportFile = supportFile, trashAssetsBeforeRuns = trashAssetsBeforeRuns, video = video, videoCompression = videoCompression, videoUploadOnPasses = videoUploadOnPasses, videosFolder = videosFolder, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForAnimations = waitForAnimations, watchForFileChanges = watchForFileChanges)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]

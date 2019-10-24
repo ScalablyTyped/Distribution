@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "download"
-version := "6.2-dt-20181231Z-d811d6"
+version := "6.2-dt-20181231Z-e89530"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "decompress" % "4.2-dt-20180610Z-7c6166",
-  "org.scalablytyped" %%% "got" % "9.6-dt-20190815Z-bc93a7",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
+  "org.scalablytyped" %%% "decompress" % "4.2-dt-20180610Z-f81a95",
+  "org.scalablytyped" %%% "got" % "9.6-dt-20190815Z-85b726",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-b1eaaa")
 publishArtifact in packageDoc := false

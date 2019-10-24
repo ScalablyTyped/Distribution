@@ -81,10 +81,15 @@ trait AppointmentForm extends js.Object {
     * *Read mode*
     *
     * The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting.
+    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
     * *Compose mode*
     *
     * The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting.
+    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    *
+    * - Get 500 members maximum.
+    * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -94,17 +99,22 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var optionalAttendees: js.Array[EmailAddressDetails | String]
+  var optionalAttendees: js.Array[EmailAddressDetails | Recipients]
   /**
     * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
     *
     * *Read mode*
     *
     * The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting.
+    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
     * *Compose mode*
     *
     * The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting.
+    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    *
+    * - Get 500 members maximum.
+    * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -114,7 +124,7 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var requiredAttendees: js.Array[EmailAddressDetails | String]
+  var requiredAttendees: js.Array[EmailAddressDetails | Recipients]
   /**
     * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
     *
@@ -183,8 +193,8 @@ object AppointmentForm {
     body: String,
     end: Date,
     location: String,
-    optionalAttendees: js.Array[EmailAddressDetails | String],
-    requiredAttendees: js.Array[EmailAddressDetails | String],
+    optionalAttendees: js.Array[EmailAddressDetails | Recipients],
+    requiredAttendees: js.Array[EmailAddressDetails | Recipients],
     resources: js.Array[String],
     start: Date,
     subject: String

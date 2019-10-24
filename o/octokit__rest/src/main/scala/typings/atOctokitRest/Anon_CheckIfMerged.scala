@@ -89,25 +89,61 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("checkIfMerged")
   var checkIfMerged_Original: Anon_EndpointParamsAnyResponsePromise = js.native
   /**
-    * Creates a review comment for a pull request.
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
+    * Creates a review comment in the pull request diff. To add a regular comment to a pull request timeline, see "[Comments](https://developer.github.com/v3/issues/comments/#create-a-comment)." We recommend creating a review comment using `line`, `side`, and optionally `start_line` and `start_side` if your comment applies to more than one line in the pull request diff.
+    *
+    * You can still create a review comment using the `position` parameter. When you use `position`, the `line`, `side`, `start_line`, and `start_side` parameters are not required. For more information, see [Multi-line comment summary](https://developer.github.com/v3/pulls/comments/#multi-line-comment-summary-3).
+    *
+    * **Note:** The position value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
-    * **Note:** To comment on a specific line in a file, you need to first determine the _position_ of that line in the diff. The GitHub REST API v3 offers the `application/vnd.github.v3.diff` [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests). To see a pull request diff, add this media type to the `Accept` header of a call to the [single pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) endpoint.
+    * **Multi-line comment summary**
     *
-    * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     * @deprecated octokit.pulls.createCommentReply() has been renamed to octokit.pulls.createComment() (2019-09-09)
     */
   @JSName("createCommentReply")
   var createCommentReply_Original: Anon_EndpointParamsPromisePullsCreateCommentReplyParams = js.native
   /**
-    * Creates a review comment for a pull request.
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
+    * Creates a review comment in the pull request diff. To add a regular comment to a pull request timeline, see "[Comments](https://developer.github.com/v3/issues/comments/#create-a-comment)." We recommend creating a review comment using `line`, `side`, and optionally `start_line` and `start_side` if your comment applies to more than one line in the pull request diff.
+    *
+    * You can still create a review comment using the `position` parameter. When you use `position`, the `line`, `side`, `start_line`, and `start_side` parameters are not required. For more information, see [Multi-line comment summary](https://developer.github.com/v3/pulls/comments/#multi-line-comment-summary-3).
+    *
+    * **Note:** The position value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
-    * **Note:** To comment on a specific line in a file, you need to first determine the _position_ of that line in the diff. The GitHub REST API v3 offers the `application/vnd.github.v3.diff` [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests). To see a pull request diff, add this media type to the `Accept` header of a call to the [single pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) endpoint.
+    * **Multi-line comment summary**
     *
-    * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   @JSName("createComment")
   var createComment_Original: Anon_EndpointParamsPromisePullsCreateCommentParams = js.native
@@ -160,7 +196,27 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("dismissReview")
   var dismissReview_Original: Anon_EndpointParamsPromisePullsDismissReviewParams = js.native
   /**
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
     * Provides details for a review comment.
+    *
+    * **Multi-line comment summary**
+    *
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
+    *
+    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("getComment")
   var getComment_Original: Anon_EndpointParamsPromisePullsGetCommentParams = js.native
@@ -188,12 +244,52 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("get")
   var get_Original: Anon_EndpointParamsPromisePullsGetParams = js.native
   /**
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
     * Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID.
+    *
+    * **Multi-line comment summary**
+    *
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
+    *
+    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("listCommentsForRepo")
   var listCommentsForRepo_Original: Anon_EndpointParamsPromisePullsListCommentsForRepoParams = js.native
   /**
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
     * Lists review comments for a pull request. By default, review comments are in ascending order by ID.
+    *
+    * **Multi-line comment summary**
+    *
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
+    *
+    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("listComments")
   var listComments_Original: Anon_EndpointParamsPromisePullsListCommentsParams = js.native
@@ -232,7 +328,25 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("updateBranch")
   var updateBranch_Original: Anon_EndpointParamsPromisePullsUpdateBranchParams = js.native
   /**
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
     * Enables you to edit a review comment.
+    *
+    * **Multi-line comment summary**
+    *
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   @JSName("updateComment")
   var updateComment_Original: Anon_EndpointParamsPromisePullsUpdateCommentParams = js.native
@@ -262,26 +376,62 @@ trait Anon_CheckIfMerged extends js.Object {
   def create(): js.Promise[Response[PullsCreateResponse]] = js.native
   def create(params: RequestOptions with PullsCreateParams): js.Promise[Response[PullsCreateResponse]] = js.native
   /**
-    * Creates a review comment for a pull request.
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
+    * Creates a review comment in the pull request diff. To add a regular comment to a pull request timeline, see "[Comments](https://developer.github.com/v3/issues/comments/#create-a-comment)." We recommend creating a review comment using `line`, `side`, and optionally `start_line` and `start_side` if your comment applies to more than one line in the pull request diff.
+    *
+    * You can still create a review comment using the `position` parameter. When you use `position`, the `line`, `side`, `start_line`, and `start_side` parameters are not required. For more information, see [Multi-line comment summary](https://developer.github.com/v3/pulls/comments/#multi-line-comment-summary-3).
+    *
+    * **Note:** The position value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
-    * **Note:** To comment on a specific line in a file, you need to first determine the _position_ of that line in the diff. The GitHub REST API v3 offers the `application/vnd.github.v3.diff` [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests). To see a pull request diff, add this media type to the `Accept` header of a call to the [single pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) endpoint.
+    * **Multi-line comment summary**
     *
-    * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   def createComment(): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def createComment(
     params: RequestOptions with (PullsCreateCommentParams | PullsCreateCommentParamsDeprecatedInReplyTo | PullsCreateCommentParamsDeprecatedNumber)
   ): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   /**
-    * Creates a review comment for a pull request.
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
+    * Creates a review comment in the pull request diff. To add a regular comment to a pull request timeline, see "[Comments](https://developer.github.com/v3/issues/comments/#create-a-comment)." We recommend creating a review comment using `line`, `side`, and optionally `start_line` and `start_side` if your comment applies to more than one line in the pull request diff.
+    *
+    * You can still create a review comment using the `position` parameter. When you use `position`, the `line`, `side`, `start_line`, and `start_side` parameters are not required. For more information, see [Multi-line comment summary](https://developer.github.com/v3/pulls/comments/#multi-line-comment-summary-3).
+    *
+    * **Note:** The position value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
-    * **Note:** To comment on a specific line in a file, you need to first determine the _position_ of that line in the diff. The GitHub REST API v3 offers the `application/vnd.github.v3.diff` [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests). To see a pull request diff, add this media type to the `Accept` header of a call to the [single pull request](https://developer.github.com/v3/pulls/#get-a-single-pull-request) endpoint.
+    * **Multi-line comment summary**
     *
-    * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     * @deprecated octokit.pulls.createCommentReply() has been renamed to octokit.pulls.createComment() (2019-09-09)
     */
   def createCommentReply(): js.Promise[Response[PullsCreateCommentReplyResponse]] = js.native
@@ -351,7 +501,27 @@ trait Anon_CheckIfMerged extends js.Object {
   def get(): js.Promise[Response[PullsGetResponse]] = js.native
   def get(params: RequestOptions with (PullsGetParams | PullsGetParamsDeprecatedNumber)): js.Promise[Response[PullsGetResponse]] = js.native
   /**
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
     * Provides details for a review comment.
+    *
+    * **Multi-line comment summary**
+    *
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
+    *
+    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   def getComment(): js.Promise[Response[PullsGetCommentResponse]] = js.native
   def getComment(params: RequestOptions with PullsGetCommentParams): js.Promise[Response[PullsGetCommentResponse]] = js.native
@@ -367,12 +537,52 @@ trait Anon_CheckIfMerged extends js.Object {
   def list(): js.Promise[Response[PullsListResponse]] = js.native
   def list(params: RequestOptions with PullsListParams): js.Promise[Response[PullsListResponse]] = js.native
   /**
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
     * Lists review comments for a pull request. By default, review comments are in ascending order by ID.
+    *
+    * **Multi-line comment summary**
+    *
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
+    *
+    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   def listComments(): js.Promise[Response[PullsListCommentsResponse]] = js.native
   def listComments(params: RequestOptions with (PullsListCommentsParams | PullsListCommentsParamsDeprecatedNumber)): js.Promise[Response[PullsListCommentsResponse]] = js.native
   /**
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
     * Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID.
+    *
+    * **Multi-line comment summary**
+    *
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
+    *
+    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   def listCommentsForRepo(): js.Promise[Response[PullsListCommentsForRepoResponse]] = js.native
   def listCommentsForRepo(params: RequestOptions with PullsListCommentsForRepoParams): js.Promise[Response[PullsListCommentsForRepoResponse]] = js.native
@@ -415,7 +625,25 @@ trait Anon_CheckIfMerged extends js.Object {
   def updateBranch(): js.Promise[Response[PullsUpdateBranchResponse]] = js.native
   def updateBranch(params: RequestOptions with PullsUpdateBranchParams): js.Promise[Response[PullsUpdateBranchResponse]] = js.native
   /**
+    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+    *
     * Enables you to edit a review comment.
+    *
+    * **Multi-line comment summary**
+    *
+    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+    *
+    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+    *
+    * If you use the `comfort-fade` preview header, your response will show:
+    *
+    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+    *
+    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+    *
+    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
+    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   def updateComment(): js.Promise[Response[PullsUpdateCommentResponse]] = js.native
   def updateComment(params: RequestOptions with PullsUpdateCommentParams): js.Promise[Response[PullsUpdateCommentResponse]] = js.native

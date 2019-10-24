@@ -1,7 +1,7 @@
 package typings.handsontable.handsontableMod.Handsontable
 
 import typings.handsontable.handsontableMod.Handsontable._editors.Autocomplete
-import typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor
+import typings.handsontable.handsontableMod.Handsontable._editors.Base
 import typings.handsontable.handsontableMod.Handsontable._editors.EditorState
 import typings.handsontable.handsontableMod.Handsontable._editors.Text
 import typings.handsontable.handsontableMod._Handsontable.Core
@@ -60,7 +60,7 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait BaseEditor extends js.Object {
+  trait Base extends js.Object {
     var TD: HTMLTableCellElement = js.native
     var cellProperties: CellProperties = js.native
     var col: Double = js.native
@@ -79,7 +79,7 @@ object _editors extends js.Object {
     def discardEditor(): Unit = js.native
     def discardEditor(validationResult: Boolean): Unit = js.native
     def enableFullEditMode(): Unit = js.native
-    def extend[T /* <: BaseEditor */](): T = js.native
+    def extend[T /* <: Base */](): T = js.native
     def finishEditing(): Unit = js.native
     def finishEditing(restoreOriginalValue: Boolean): Unit = js.native
     def finishEditing(restoreOriginalValue: Boolean, ctrlDown: Boolean): Unit = js.native
@@ -118,7 +118,7 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Checkbox extends BaseEditor
+  trait Checkbox extends Base
   
   @js.native
   trait Date extends Text {
@@ -143,7 +143,7 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Mobile extends BaseEditor {
+  trait Mobile extends Base {
     def hideCellPointer(): Unit = js.native
     def onBeforeKeyDown(): Unit = js.native
     def onBeforeKeyDown(event: KeyboardEvent): Unit = js.native
@@ -157,7 +157,7 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Select extends BaseEditor {
+  trait Select extends Base {
     def prepareOptions(): Unit = js.native
     def prepareOptions(optionsToPrepare: js.Array[CellValue]): Unit = js.native
     def prepareOptions(optionsToPrepare: RowObject): Unit = js.native
@@ -167,7 +167,7 @@ object _editors extends js.Object {
   }
   
   @js.native
-  trait Text extends BaseEditor {
+  trait Text extends Base {
     var TEXTAREA: HTMLInputElement = js.native
     var TEXTAREA_PARENT: HTMLElement = js.native
     var textareaStyle: CSSStyleDeclaration = js.native

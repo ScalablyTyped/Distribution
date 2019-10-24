@@ -13,25 +13,36 @@ trait AbstractEventObject extends js.Object {
   /** the event namespace string (e.g. "foo" for "foo.tap") */
   var namespace: String
   /** indicates the element or core that first caused the event */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.Any
   /** Unix epoch time of event in milliseconds */
   var timeStamp: Double
   /** the event type string (e.g. "tap") */
   var `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
+  def isDefaultPrevented(): Boolean
+  def isImmediatePropagationStopped(): Boolean
+  def isPropagationStopped(): Boolean
+  def preventDefault(): Unit
+  def stopImmediatePropagation(): Unit
+  def stopPropagation(): Unit
 }
 
 object AbstractEventObject {
   @scala.inline
   def apply(
     cy: Core,
+    isDefaultPrevented: () => Boolean,
+    isImmediatePropagationStopped: () => Boolean,
+    isPropagationStopped: () => Boolean,
     namespace: String,
+    preventDefault: () => Unit,
+    stopImmediatePropagation: () => Unit,
+    stopPropagation: () => Unit,
+    target: js.Any,
     timeStamp: Double,
-    `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt,
-    target: js.Any = null
+    `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
   ): AbstractEventObject = {
-    val __obj = js.Dynamic.literal(cy = cy, namespace = namespace, timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(cy = cy, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), namespace = namespace, preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timeStamp = timeStamp)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[AbstractEventObject]
   }
 }

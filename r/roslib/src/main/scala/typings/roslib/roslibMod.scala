@@ -170,9 +170,12 @@ object roslibMod extends js.Object {
     		 *
     		 * @constructor
     		 * @param options - possible keys include:
-    		 *   * url (optional) - the WebSocket URL for rosbridge (can be specified later with `connect`)
+    		 *   * url (optional) - (can be specified later with `connect`) the WebSocket URL for rosbridge or the node server url to connect using socket.io (if socket.io exists in the page) <br>
+    		 *   * groovyCompatibility - don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools (defaults to true)
+    		 *   * transportLibrary (optional) - one of 'websocket' (default), 'socket.io' or RTCPeerConnection instance controlling how the connection is created in `connect`.
+    		 *   * transportOptions (optional) - the options to use use when creating a connection. Currently only used if `transportLibrary` is RTCPeerConnection.
     		 */
-    def this(options: Anon_Url) = this()
+    def this(options: Anon_GroovyCompatibility) = this()
     /**
     		 * Sends an authorization request to the server.
     		 *

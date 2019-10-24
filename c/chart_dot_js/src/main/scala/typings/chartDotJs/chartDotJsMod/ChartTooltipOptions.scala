@@ -18,7 +18,7 @@ trait ChartTooltipOptions extends js.Object {
   var caretPadding: js.UndefOr[Double] = js.undefined
   var caretSize: js.UndefOr[Double] = js.undefined
   var cornerRadius: js.UndefOr[Double] = js.undefined
-  var custom: js.UndefOr[js.Function1[/* a */ js.Any, Unit]] = js.undefined
+  var custom: js.UndefOr[js.Function1[/* tooltipModel */ ChartTooltipModel, Unit]] = js.undefined
   var displayColors: js.UndefOr[Boolean] = js.undefined
   var enabled: js.UndefOr[Boolean] = js.undefined
   var filter: js.UndefOr[js.Function2[/* item */ ChartTooltipItem, /* data */ ChartData, Boolean]] = js.undefined
@@ -68,7 +68,7 @@ object ChartTooltipOptions {
     caretPadding: Int | Double = null,
     caretSize: Int | Double = null,
     cornerRadius: Int | Double = null,
-    custom: /* a */ js.Any => Unit = null,
+    custom: /* tooltipModel */ ChartTooltipModel => Unit = null,
     displayColors: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     filter: (/* item */ ChartTooltipItem, /* data */ ChartData) => Boolean = null,

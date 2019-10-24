@@ -859,7 +859,7 @@
 | [carbon__icons-react](./c/carbon__icons-react) | React components for icons in digital and software | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
 | [carbon__layout](./c/carbon__layout) | Layout helpers for digital and software products u | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
 | [carbon__motion](./c/carbon__motion) | Motion helpers for digital and software products u | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
-| [carbon__pictograms-react](./c/carbon__pictograms-react) | - | - |
+| [carbon__pictograms-react](./c/carbon__pictograms-react) | React components for pictograms in digital and sof | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
 | [carbon__themes](./c/carbon__themes) | Themes for applying color in the Carbon Design Sys | ibm, elements, carbon, carbon-elements, carbon-design-system |
 | [carbon__type](./c/carbon__type) | Typography for digital and software products using | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
 | [card-validator](./c/card-validator) | A library for validating credit card fields | - |
@@ -1589,6 +1589,7 @@
 | [easystarjs](./e/easystarjs) | Asynchronous A* Pathfinding API | A*, pathfinding, grid, easystar |
 | [ebml](./e/ebml) | ebml parser | ebml, webm, mkv, matroska, format |
 | [ebongarde-root](./e/ebongarde-root) | Utilize your package root directory from anywhere  | application, root, ebongarde |
+| [eccrypto](./e/eccrypto) | JavaScript Elliptic curve cryptography library | ecc, ecdsa, ecdh, ecies, crypto, cryptography, secp256k1, K-256, elliptic, curve |
 | [ecdsa-sig-formatter](./e/ecdsa-sig-formatter) | Translate ECDSA signatures between ASN.1/DER and J | ecdsa, der, asn.1, jwt, jwa, jsonwebtoken, jose |
 | [echarts](./e/echarts) | A powerful charting and visualization library for  | visualization, canvas |
 | [ecma-proposal-math-extens](./e/ecma-proposal-math-extensions) | Tests and a polyfill for the ES2017 Math Extension | ecmascript, math, test262, Math.map, Math.remap, Math.scale, Math.clamp, Math.constrain, Math.radians, Math.degrees |
@@ -3565,6 +3566,7 @@
 | [jwt-express](./j/jwt-express) | Climb aboard the JWT Express and use JWTs in your  | jwt, json, token, express, session |
 | [jwt-simple](./j/jwt-simple) | JWT(JSON Web Token) encode and decode module | jwt, encode, decode |
 | [jwt-then](./j/jwt-then) | jwt as promised | jwt, then, promise |
+| [jxon](./j/jxon) | A complete, bidirectional, JXON library | jxon, bidirectional, loseless, badgerfish, parker convention, xml to js, xml2js, xml to json, xml2json, js to xml, js2xml, json to xml, json2xml |
 | [k6](./k/k6) | Dummy package for autocompleting k6 scripts. | - |
 | [kafka-node](./k/kafka-node) | Client for Apache Kafka v0.9.x, v0.10.x and v0.11. | kafka, consumer, producer, broker |
 | [kafka-node-avro](./k/kafka-node-avro) | kafka avro serialization | kafka, node, avro, kafka-node, avsc |
@@ -6425,6 +6427,7 @@
 | [safe-regex](./s/safe-regex) | detect possibly catastrophic, exponential-time reg | catastrophic, exponential, regex, safe, sandbox |
 | [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns | - |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
+| [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API | - |
 | [samchon](./s/samchon) | Samchon, a OON (Object Oriented Network) Framework | samchon, framework, OON, object oriented network, interaction, cloud system, distributed processing system, parallel processing system, C++, TypeScript, Entity |
 | [samchon-framework](./s/samchon-framework) | Samchon, a OON (Object Oriented Network) Framework | samchon framework, OON, object oriented network, interaction, cloud system, distributed processing system, parallel processing system, C++, TypeScript, XML, Entity |
 | [saml](./s/saml) | Create SAML assertions. | saml, authentication |
@@ -6782,6 +6785,7 @@
 | [splunk-bunyan-logger](./s/splunk-bunyan-logger) | Splunk HTTP Event Collector Stream for Bunyan | splunk, HTTP, event, collector, logging, stream, bunyan |
 | [splunk-logging](./s/splunk-logging) | Splunk HTTP Event Collector logging interface | splunk, HTTP, event, collector, logging, stream |
 | [spotify-api](./s/spotify-api) | API for the new "Spotify Web API" | spotify, web, api, rest |
+| [spotify-node-applescript](./s/spotify-node-applescript) | Control Spotify on Mac OSX with NodeJS and AppleSc | spotify, node, applescript, mac, osx |
 | [spotify-web-api-js](./s/spotify-web-api-js) | A client-side JS wrapper for the Spotify Web API | spotify |
 | [spotify-web-api-node](./s/spotify-web-api-node) | A Node.js wrapper for Spotify's Web API | spotify, echonest, music, api, wrapper, client, web api |
 | [spotify-web-playback-sdk](./s/spotify-web-playback-sdk) | - | - |

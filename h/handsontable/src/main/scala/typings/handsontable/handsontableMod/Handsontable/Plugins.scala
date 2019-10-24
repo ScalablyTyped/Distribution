@@ -4,7 +4,7 @@ import typings.handsontable.Anon_HotInstance
 import typings.handsontable.handsontableMod.Handsontable.plugins.AutoColumnSize
 import typings.handsontable.handsontableMod.Handsontable.plugins.AutoRowSize
 import typings.handsontable.handsontableMod.Handsontable.plugins.Autofill
-import typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin
+import typings.handsontable.handsontableMod.Handsontable.plugins.Base
 import typings.handsontable.handsontableMod.Handsontable.plugins.BindRowsWithHeaders
 import typings.handsontable.handsontableMod.Handsontable.plugins.CollapsibleColumns
 import typings.handsontable.handsontableMod.Handsontable.plugins.ColumnSorting
@@ -43,7 +43,7 @@ trait Plugins extends js.Object {
   var AutoColumnSize: typings.handsontable.handsontableMod.Handsontable.plugins.AutoColumnSize
   var AutoRowSize: typings.handsontable.handsontableMod.Handsontable.plugins.AutoRowSize
   var Autofill: typings.handsontable.handsontableMod.Handsontable.plugins.Autofill
-  var BasePlugin: typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin
+  var BasePlugin: Base
   var BindRowsWithHeaders: typings.handsontable.handsontableMod.Handsontable.plugins.BindRowsWithHeaders
   var CollapsibleColumns: typings.handsontable.handsontableMod.Handsontable.plugins.CollapsibleColumns
   var ColumnSorting: typings.handsontable.handsontableMod.Handsontable.plugins.ColumnSorting
@@ -83,7 +83,7 @@ object Plugins {
     AutoColumnSize: AutoColumnSize,
     AutoRowSize: AutoRowSize,
     Autofill: Autofill,
-    BasePlugin: BasePlugin,
+    BasePlugin: Base,
     BindRowsWithHeaders: BindRowsWithHeaders,
     CollapsibleColumns: CollapsibleColumns,
     ColumnSorting: ColumnSorting,

@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait ReposCreateDispatchEventParams extends js.Object {
   /**
+    * JSON payload with extra information about the webhook event that your action or worklow may use.
+    */
+  var client_payload: js.UndefOr[ReposCreateDispatchEventParamsClientPayload] = js.undefined
+  /**
     * **Required:** A custom webhook event name.
     */
   var event_type: js.UndefOr[String] = js.undefined
@@ -15,8 +19,14 @@ trait ReposCreateDispatchEventParams extends js.Object {
 
 object ReposCreateDispatchEventParams {
   @scala.inline
-  def apply(owner: String, repo: String, event_type: String = null): ReposCreateDispatchEventParams = {
+  def apply(
+    owner: String,
+    repo: String,
+    client_payload: ReposCreateDispatchEventParamsClientPayload = null,
+    event_type: String = null
+  ): ReposCreateDispatchEventParams = {
     val __obj = js.Dynamic.literal(owner = owner, repo = repo)
+    if (client_payload != null) __obj.updateDynamic("client_payload")(client_payload)
     if (event_type != null) __obj.updateDynamic("event_type")(event_type)
     __obj.asInstanceOf[ReposCreateDispatchEventParams]
   }

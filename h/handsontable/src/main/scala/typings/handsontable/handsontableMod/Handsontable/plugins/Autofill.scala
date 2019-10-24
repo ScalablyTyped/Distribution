@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Autofill extends BasePlugin {
+trait Autofill extends Base {
   var addingStarted: Boolean
   var autoInsertRow: Boolean
   var directions: js.Array[String]

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ManualRowResize extends BasePlugin {
+trait ManualRowResize extends Base {
   var autoresizeTimeout: js.Function0[Unit] | Unit
   var currentRow: Double | Unit
   var currentTH: HTMLElement | Unit

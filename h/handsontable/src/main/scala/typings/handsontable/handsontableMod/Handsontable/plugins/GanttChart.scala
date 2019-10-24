@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait GanttChart extends BasePlugin {
+trait GanttChart extends Base {
   var colorData: js.Object = js.native
   var currentYear: Double | Unit = js.native
   var dataFeed: js.Object | Unit = js.native

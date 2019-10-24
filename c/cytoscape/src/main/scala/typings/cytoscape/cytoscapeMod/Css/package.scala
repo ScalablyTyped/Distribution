@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object Css {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.cytoscape.cytoscapeMod.EdgeSingular
+  import typings.cytoscape.cytoscapeMod.NodeSingular
 
   type Colour = String
   type Dictionary = StringDictionary[js.Any]
@@ -18,6 +20,18 @@ package object Css {
     - typings.cytoscape.cytoscapeStrings.bolder
   */
   type FontWeight = _FontWeight | Double
+  /**
+    * In addition to specifying the value of a property outright, the developer may also use a mapper to dynamically specify the property value.
+    * - data()
+    * - mapData()
+    * - function( ele ){ ... }
+    * https://js.cytoscape.org/#style/mappers
+    */
+  type MapperFunction[Element, Type] = js.Function1[/* ele */ Element, Type]
+  type PropertyValue[SingularType /* <: NodeSingular | EdgeSingular | typings.cytoscape.cytoscapeMod.Css.Core */, Type] = Type | (MapperFunction[SingularType, Type])
+  type PropertyValueCore[Type] = PropertyValue[typings.cytoscape.cytoscapeMod.Css.Core, Type]
+  type PropertyValueEdge[Type] = PropertyValue[EdgeSingular, Type]
+  type PropertyValueNode[Type] = PropertyValue[NodeSingular, Type]
   /**
     * A space-separated list of numbers ranging on [-1, 1],
     * representing alternating x and y values (i.e. x1 y1 x2 y2, x3 y3 ...).

@@ -1,7 +1,7 @@
 package typings.cytoscape.cytoscapeMod
 
 import typings.cytoscape.Anon_H
-import typings.std.Element
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,7 +85,7 @@ trait CoreViewportManipulation extends js.Object {
     * Get the HTML DOM element in which the graph is visualised.
     * A null value is returned if the Core is headless.
     */
-  def container(): Element | Null = js.native
+  def container(): HTMLElement | Null = js.native
   /**
     * Get the extent of the viewport, a bounding box in model
     * coordinates that lets you know what model

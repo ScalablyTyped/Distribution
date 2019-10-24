@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HeaderTooltips extends BasePlugin {
+trait HeaderTooltips extends Base {
   var settings: Boolean | js.Object
   def parseSettings(): Unit
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AutoRowSize extends BasePlugin {
+trait AutoRowSize extends Base {
   var firstCalculation: Boolean = js.native
   var ghostTable: GhostTable = js.native
   var heights: js.Array[_] = js.native

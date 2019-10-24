@@ -35,6 +35,9 @@ package object NodeJS {
     /* listener */ js.Function1[/* repeated */ js.Any, Unit], 
     Unit
   ]
+  // The value type here is a "poor man's `unknown`". When these types support TypeScript
+  // 3.0+, we can replace this with `unknown`.
+  type PoorMansUnknown = js.UndefOr[js.Object | Null]
   type ProcessEnv = StringDictionary[js.UndefOr[java.lang.String]]
   type RejectionHandledListener = js.Function1[/* promise */ js.Promise[js.Any], Unit]
   type RemoveListenerListener = js.Function2[

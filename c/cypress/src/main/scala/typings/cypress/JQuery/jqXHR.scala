@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @see \`{@link http://api.jquery.com/jquery.ajax/#jqXHR }\`
+  * @see \`{@link https://api.jquery.com/jquery.ajax/#jqXHR }\`
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in 'abort' | 'getAllResponseHeaders' | 'getResponseHeader' | 'overrideMimeType' | 'readyState' | 'responseText' | 'setRequestHeader' | 'status' | 'statusText' ]: std.XMLHttpRequest[P]}
@@ -31,6 +31,8 @@ trait jqXHR[TResolve]
       scala.Nothing
     ] {
   var responseJSON: js.UndefOr[js.Any] = js.native
+  def abort(): Unit = js.native
+  def abort(statusText: String): Unit = js.native
   def statusCode(map: StatusCodeCallbacks[_]): Unit = js.native
 }
 

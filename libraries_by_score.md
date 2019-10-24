@@ -2309,6 +2309,7 @@
 | 0.7050323216817425 | [timezone-support](./t/timezone-support) | Lightweight time zone support for your application
 | 0.7050318168125207 | [x2js](./x/x2js) | Transforms between XML string and JavaScript objec
 | 0.7050210178360012 | [react-request](./r/react-request) | Declarative HTTP requests with React.
+| 0.7050048127630313 | [eccrypto](./e/eccrypto) | JavaScript Elliptic curve cryptography library
 | 0.704941961340109 | [receptacle](./r/receptacle) | In memory cache lru cache with ttl support.
 | 0.7048708209239718 | [natural-compare-lite](./n/natural-compare-lite) | Compare strings containing a mix of letters and nu
 | 0.704857905480174 | [listr](./l/listr) | Terminal task list
@@ -2469,6 +2470,7 @@
 | 0.6976568802396889 | [react-timeout](./r/react-timeout) | HOC for React and React Native providing versions 
 | 0.6976088260167985 | [egg-view](./e/egg-view) | Base view plugin for egg
 | 0.697574006262992 | [color](./c/color) | Color conversion and manipulation with CSS string 
+| 0.6975142444641307 | [jxon](./j/jxon) | A complete, bidirectional, JXON library
 | 0.6974333375218427 | [hapi__iron](./h/hapi__iron) | Encapsulated tokens (encrypted and mac'ed objects)
 | 0.697363752831971 | [svg-sprite](./s/svg-sprite) | SVG sprites & stacks galore — A low-level Node.js 
 | 0.6973416871971453 | [gsap](./g/gsap) | GSAP is a JavaScript library for creating high-per
@@ -3790,6 +3792,7 @@
 | 0.642483076338188 | [walkdir](./w/walkdir) | Find files simply. Walks a directory tree emitting
 | 0.6424448350955685 | [photoswipe](./p/photoswipe) | JavaScript gallery
 | 0.6424186224325145 | [iopipe__iopipe](./i/iopipe__iopipe) | The IOpipe agent and plugins
+| 0.6423000996698308 | [carbon__pictograms-react](./c/carbon__pictograms-react) | React components for pictograms in digital and sof
 | 0.6422894693725065 | [passport-bnet](./p/passport-bnet) | Bnet authentication strategy for Passport.
 | 0.6422714609516335 | [ronomon__crypto-async](./r/ronomon__crypto-async) | Fast, reliable cipher, hash and hmac methods execu
 | 0.6421632469219486 | [axios-case-converter](./a/axios-case-converter) | Axios transformer/interceptor that converts snake_
@@ -4003,6 +4006,7 @@
 | 0.6288166840984128 | [xmpp__jid](./x/xmpp__jid) | XMPP identifiers (JID) for JavaScript
 | 0.6287376313275548 | [socketcluster](./s/socketcluster) | SocketCluster - A Highly parallelized WebSocket se
 | 0.6287358955402416 | [graphql-query-complexity](./g/graphql-query-complexity) | Validation rule for GraphQL query complexity analy
+| 0.6286903813120899 | [spotify-node-applescript](./s/spotify-node-applescript) | Control Spotify on Mac OSX with NodeJS and AppleSc
 | 0.6286794770823723 | [mixpanel-browser](./m/mixpanel-browser) | The official Mixpanel JavaScript browser client li
 | 0.6284329722824474 | [koa-router](./k/koa-router) | Router middleware for koa. Provides RESTful resour
 | 0.6284325931397711 | [hummus-recipe](./h/hummus-recipe) | A powerful PDF tool for NodeJS based on HummusJS
@@ -4302,6 +4306,7 @@
 | 0.6043052796161676 | [valiant](./v/valiant) | JavaScript interval arithmetic library
 | 0.6042464615149371 | [react-native-svg](./r/react-native-svg) | SVG library for react-native
 | 0.6042447342508326 | [htmlhint](./h/htmlhint) | The Static Code Analysis Tool for your HTML
+| 0.6039583765597609 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 0.6038564950642846 | [koa-ratelimit-lru](./k/koa-ratelimit-lru) | Rate limiter middleware backed by lru-cache
 | 0.6038352026381298 | [mmmagic](./m/mmmagic) | An async libmagic binding for node.js for detectin
 | 0.6037898479607022 | [jupyterlab__ui-components](./j/jupyterlab__ui-components-extension) | JupyterLab - UI component plugins

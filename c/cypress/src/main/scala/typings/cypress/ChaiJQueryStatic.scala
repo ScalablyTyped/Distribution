@@ -1,10 +1,8 @@
 package typings.cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.JQuery.EventLike
 import typings.std.Document
 import typings.std.Element
-import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.Node
 import typings.std.XMLDocument
@@ -111,11 +109,31 @@ trait ChaiJQueryStatic extends js.Object {
     */
   def Deferred[T](): JQueryDeferred[T] = js.native
   def Deferred[T](beforeStart: js.Function1[/* deferred */ JQueryDeferred[T], _]): JQueryDeferred[T] = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
-  def Event[T /* <: js.Object */, TTarget /* <: EventTarget */](event: String, properties: T): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: EventLike */, TTarget /* <: EventTarget */](properties: T): (typings.cypress.JQuery.Event[TTarget, Null]) with T = js.native
+  /**
+    * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
+    *
+    * Check \`{@link https://api.jquery.com/trigger/ trigger}\`'s documentation to see how to combine it with your own event object.
+    * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
+    * @since 1.6
+    * @example
+  ```javascript
+  //Create a new jQuery.Event object without the "new" operator.
+  var e = jQuery.Event( "click" );
+  ​
+  // trigger an artificial click event
+  jQuery( "body" ).trigger( e );
+  ```
+    * @example
+  ```javascript
+  // Create a new jQuery.Event object with specified event properties.
+  var e = jQuery.Event( "keydown", { keyCode: 64 } );
+  ​
+  // trigger an artificial keydown event with keyCode 64
+  jQuery( "body" ).trigger( e );
+  ```
+    */
+  def Event[T /* <: js.Object */](event: String): typings.cypress.JQuery.Event with T = js.native
+  def Event[T /* <: js.Object */](event: String, properties: T): typings.cypress.JQuery.Event with T = js.native
   /**
     * Perform an asynchronous HTTP (Ajax) request.
     *

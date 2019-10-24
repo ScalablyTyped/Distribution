@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__react-native"
-version := "5.2.5-a4c3ec"
+version := "5.2.5-bdb9c0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,16 +15,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "eventemitter3" % "4.0.0-dd73fa",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-2fbebe",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20191009Z-45ddf4",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-fffe4e",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
   "org.scalablytyped" %%% "react-native" % "0.60-dt-20191015Z-f406b4",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "storybook__addons" % "5.2.5-2d1bc0",
+  "org.scalablytyped" %%% "storybook__addons" % "5.2.5-f8cf6a",
   "org.scalablytyped" %%% "storybook__api" % "5.2.5-cb8130",
   "org.scalablytyped" %%% "storybook__channels" % "5.2.5-6a808a",
-  "org.scalablytyped" %%% "storybook__client-api" % "5.2.5-4eeb9e",
+  "org.scalablytyped" %%% "storybook__client-api" % "5.2.5-da6b7c",
   "org.scalablytyped" %%% "storybook__router" % "5.2.5-012707",
   "org.scalablytyped" %%% "storybook__theming" % "5.2.5-ac19e8")
 publishArtifact in packageDoc := false

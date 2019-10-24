@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ManualColumnMove extends BasePlugin {
+trait ManualColumnMove extends Base {
   var backlight: BacklightUI
   var columnsMapper: MoveColumnsMapper
   var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager

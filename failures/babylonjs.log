@@ -138,12 +138,6 @@
 	at com.olvind.tso.ts.TsTreeScope.lookupTypeIncludeScope$(TsTreeScope.scala:61)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupTypeIncludeScope(TsTreeScope.scala:280)
 	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:7)
-	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
-	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
-	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
-	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
-	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
-	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:9)
 	at com.olvind.tso.ts.FollowAliases$.$anonfun$apply$3(FollowAliases.scala:14)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
 	at scala.collection.immutable.List.foreach(List.scala:392)
@@ -1096,6 +1090,12 @@
 	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:9)
 	at com.olvind.tso.ts.FollowAliases$.$anonfun$apply$3(FollowAliases.scala:14)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
+	at scala.collection.immutable.List.map(List.scala:298)
+	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:14)
+	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
 
 [error] PhaseRunner.scala:88 Failure, [babylonjs => java.lang.StackOverflowError] [id => babylonjs, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [babylonjs => java.lang.StackOverflowError] [id => babylonjs, phase => scala.js] 

@@ -27,33 +27,35 @@ trait EdgeLine extends js.Object {
     * Smaller node shapes, like triangle, will not be as aesthetically pleasing.
     * Also note that edge arrows are unsupported for haystack edges.
     */
-  var `curve-style`: js.UndefOr[haystack | straight | bezier | `unbundled-bezier` | segments | taxi] = js.undefined
+  var `curve-style`: js.UndefOr[
+    PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi]
+  ] = js.undefined
   /**
     * The colour of the edge’s line.
     */
-  var `line-color`: js.UndefOr[Colour] = js.undefined
+  var `line-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   /**
     * The style of the edge’s line.
     */
-  var `line-style`: js.UndefOr[LineStyle] = js.undefined
+  var `line-style`: js.UndefOr[PropertyValueEdge[LineStyle]] = js.undefined
   /**
     * The width of an edge’s line.
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
 }
 
 object EdgeLine {
   @scala.inline
   def apply(
-    `curve-style`: haystack | straight | bezier | `unbundled-bezier` | segments | taxi = null,
-    `line-color`: Colour = null,
-    `line-style`: LineStyle = null,
-    width: Double | String = null
+    `curve-style`: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi] = null,
+    `line-color`: PropertyValueEdge[Colour] = null,
+    `line-style`: PropertyValueEdge[LineStyle] = null,
+    width: PropertyValueEdge[Double | String] = null
   ): EdgeLine = {
     val __obj = js.Dynamic.literal()
     if (`curve-style` != null) __obj.updateDynamic("curve-style")(`curve-style`.asInstanceOf[js.Any])
-    if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`)
-    if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`)
+    if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`.asInstanceOf[js.Any])
+    if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeLine]
   }

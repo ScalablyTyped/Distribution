@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Comments extends BasePlugin {
+trait Comments extends Base {
   var contextMenuEvent: Boolean = js.native
   var displayDelay: Double = js.native
   var editor: CommentEditor = js.native

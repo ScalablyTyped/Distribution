@@ -36,6 +36,7 @@ package object atOctokitRestMod {
   type GistsListPublicResponse = js.Array[GistsListPublicResponseItem]
   type GistsListResponse = js.Array[GistsListResponseItem]
   type GistsListStarredResponse = js.Array[GistsListStarredResponseItem]
+  type GitListMatchingRefsResponse = js.Array[GitListMatchingRefsResponseItem]
   type GitignoreListTemplatesResponse = js.Array[String]
   type HookError = Error with Anon_Documentationurl
   type IssuesAddLabelsResponse = js.Array[IssuesAddLabelsResponseItem]
@@ -104,6 +105,7 @@ package object atOctokitRestMod {
   type ReposAddProtectedBranchRequiredStatusChecksContextsResponse = js.Array[String]
   type ReposAddProtectedBranchTeamRestrictionsResponse = js.Array[ReposAddProtectedBranchTeamRestrictionsResponseItem]
   type ReposAddProtectedBranchUserRestrictionsResponse = js.Array[ReposAddProtectedBranchUserRestrictionsResponseItem]
+  type ReposCreateDispatchEventParamsClientPayload = js.Object
   type ReposGetAppsWithAccessToProtectedBranchResponse = js.Array[ReposGetAppsWithAccessToProtectedBranchResponseItem]
   type ReposGetCodeFrequencyStatsResponse = js.Array[js.Array[Double]]
   type ReposGetCommitActivityStatsResponse = js.Array[ReposGetCommitActivityStatsResponseItem]

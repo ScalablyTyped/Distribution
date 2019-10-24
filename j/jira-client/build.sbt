@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jira-client"
-version := "6.4-dt-20191003Z-676a3c"
+version := "6.4-dt-20191003Z-fadaa9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-e2b4ac",
-  "org.scalablytyped" %%% "form-data" % "2.5.1-da09fa",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-b225d0",
+  "org.scalablytyped" %%% "form-data" % "2.5.1-8d179e",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-6e05db",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-b1eaaa")
 publishArtifact in packageDoc := false

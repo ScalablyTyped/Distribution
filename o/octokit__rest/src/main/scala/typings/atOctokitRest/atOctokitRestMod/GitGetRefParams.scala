@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait GitGetRefParams extends js.Object {
   var owner: String
-  /**
-    * Must be formatted as `heads/branch`, not just `branch`
-    */
   var ref: String
   var repo: String
 }

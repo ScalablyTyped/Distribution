@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "swagger-node-runner"
-version := "0.6-dt-20190212Z-e8472f"
+version := "0.6-dt-20190212Z-9c49e4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-d915df",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-6b1423",
   "org.scalablytyped" %%% "boom" % "7.3-dt-20190805Z-210d99",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-b3f0a0",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-3c8911",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-b970ae",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-6c5fc3",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-84e4a5",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-847ee7",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20191014Z-6ba473",
-  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-5a366f",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-5c770f",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-64180e",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-8fd375",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20191014Z-9dc2d5",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-8d9620",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-c7c4ce",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-7db5f5",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-1cc445",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-281e7e",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",
-  "org.scalablytyped" %%% "restify" % "8.4-dt-20190826Z-f0c491",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-0ea21e",
-  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-9a02eb",
-  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-cdfcc5",
+  "org.scalablytyped" %%% "restify" % "8.4-dt-20190826Z-a0707e",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-827e1a",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-1b376d",
+  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-a556f3",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20191016Z-573f87")
 publishArtifact in packageDoc := false

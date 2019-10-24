@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ContextMenu extends BasePlugin {
+trait ContextMenu extends Base {
   var commandExecutor: CommandExecutor
   var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
   var itemsFactory: ItemsFactory | Unit

@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait _Promise[T] extends js.Object {
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  val toStringTag: typings.cypress.cypressStrings.Promise = js.native
   /**
     * Attaches a callback for only the rejection of the Promise.
     * @param onrejected The callback to execute when the Promise is rejected.

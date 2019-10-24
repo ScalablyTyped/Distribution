@@ -14,14 +14,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AstProps extends SvgProps {
-  var ast: AST | Null
+  var ast: JsxAST | Null
   var `override`: js.UndefOr[SvgProps] = js.undefined
 }
 
 object AstProps {
   @scala.inline
   def apply(
-    ast: AST = null,
+    ast: JsxAST = null,
     clipPath: String = null,
     clipRule: FillRule = null,
     color: Color = null,

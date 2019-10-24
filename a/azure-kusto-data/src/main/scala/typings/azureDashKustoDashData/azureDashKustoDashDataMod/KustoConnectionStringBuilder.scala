@@ -31,7 +31,14 @@ object KustoConnectionStringBuilder extends js.Object {
   ): KustoConnectionStringBuilder = js.native
   def withAadApplicationKeyAuthentication(connectionString: String, aadAppId: String, appKey: String, authorityId: String): KustoConnectionStringBuilder = js.native
   def withAadDeviceAuthentication(connectionString: String, authorityId: String): KustoConnectionStringBuilder = js.native
-  def withAadDeviceAuthentication(connectionString: String, authorityId: String, authCallback: js.Any): KustoConnectionStringBuilder = js.native
+  def withAadDeviceAuthentication(
+    connectionString: String,
+    authorityId: String,
+    authCallback: js.Function1[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserCodeInfo */ /* tokenReponse */ js.Any, 
+      Unit
+    ]
+  ): KustoConnectionStringBuilder = js.native
   def withAadManagedIdentities(connectionString: String): KustoConnectionStringBuilder = js.native
   def withAadManagedIdentities(connectionString: String, msiEndpoint: String): KustoConnectionStringBuilder = js.native
   def withAadManagedIdentities(connectionString: String, msiEndpoint: String, clientId: String): KustoConnectionStringBuilder = js.native

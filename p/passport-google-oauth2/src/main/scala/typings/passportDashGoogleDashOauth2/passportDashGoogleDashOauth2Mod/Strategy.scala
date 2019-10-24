@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Strategy protected () extends js.Object {
   def this(verify: VerifyFunction) = this()
   def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
+  def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequestAndParams) = this()
   def this(options: StrategyOptions, verify: VerifyFunction) = this()
   var name: String = js.native
   def authenticate(req: Request): Unit = js.native

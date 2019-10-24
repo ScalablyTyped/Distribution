@@ -11,25 +11,25 @@ import scala.scalajs.js.annotation._
   * or it can be used to add spacing between a compound node parent and its children.
   */
 trait PaddingNode extends js.Object {
-  var `padding-bottom`: js.UndefOr[String] = js.undefined
-  var `padding-left`: js.UndefOr[String] = js.undefined
-  var `padding-right`: js.UndefOr[String] = js.undefined
-  var `padding-top`: js.UndefOr[String] = js.undefined
+  var `padding-bottom`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  var `padding-left`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  var `padding-right`: js.UndefOr[PropertyValueNode[String]] = js.undefined
+  var `padding-top`: js.UndefOr[PropertyValueNode[String]] = js.undefined
 }
 
 object PaddingNode {
   @scala.inline
   def apply(
-    `padding-bottom`: String = null,
-    `padding-left`: String = null,
-    `padding-right`: String = null,
-    `padding-top`: String = null
+    `padding-bottom`: PropertyValueNode[String] = null,
+    `padding-left`: PropertyValueNode[String] = null,
+    `padding-right`: PropertyValueNode[String] = null,
+    `padding-top`: PropertyValueNode[String] = null
   ): PaddingNode = {
     val __obj = js.Dynamic.literal()
-    if (`padding-bottom` != null) __obj.updateDynamic("padding-bottom")(`padding-bottom`)
-    if (`padding-left` != null) __obj.updateDynamic("padding-left")(`padding-left`)
-    if (`padding-right` != null) __obj.updateDynamic("padding-right")(`padding-right`)
-    if (`padding-top` != null) __obj.updateDynamic("padding-top")(`padding-top`)
+    if (`padding-bottom` != null) __obj.updateDynamic("padding-bottom")(`padding-bottom`.asInstanceOf[js.Any])
+    if (`padding-left` != null) __obj.updateDynamic("padding-left")(`padding-left`.asInstanceOf[js.Any])
+    if (`padding-right` != null) __obj.updateDynamic("padding-right")(`padding-right`.asInstanceOf[js.Any])
+    if (`padding-top` != null) __obj.updateDynamic("padding-top")(`padding-top`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingNode]
   }
 }

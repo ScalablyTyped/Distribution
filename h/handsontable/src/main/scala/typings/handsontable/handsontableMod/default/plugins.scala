@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object plugins extends js.Object {
   @js.native
-  class BasePlugin ()
-    extends typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin
-       with Instantiable0[typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin]
+  class Base ()
+    extends typings.handsontable.handsontableMod.Handsontable.plugins.Base
+       with Instantiable0[typings.handsontable.handsontableMod.Handsontable.plugins.Base]
        with Instantiable1[
           /* hotInstance */ Core, 
-          typings.handsontable.handsontableMod.Handsontable.plugins.BasePlugin
+          typings.handsontable.handsontableMod.Handsontable.plugins.Base
         ] {
     def this(hotInstance: Core) = this()
     /* CompleteClass */

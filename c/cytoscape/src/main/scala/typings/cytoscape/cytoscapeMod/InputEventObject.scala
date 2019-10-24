@@ -1,12 +1,13 @@
 package typings.cytoscape.cytoscapeMod
 
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InputEventObject extends AbstractEventObject {
   /** originalEvent : the original user input device event object */
-  var originalEvent: EventObject
+  var originalEvent: MouseEvent
   /** position : indicates the model position of the event */
   var position: Position
   /** renderedPosition : indicates the rendered position of the event */
@@ -17,17 +18,22 @@ object InputEventObject {
   @scala.inline
   def apply(
     cy: Core,
+    isDefaultPrevented: () => Boolean,
+    isImmediatePropagationStopped: () => Boolean,
+    isPropagationStopped: () => Boolean,
     namespace: String,
-    originalEvent: EventObject,
+    originalEvent: MouseEvent,
     position: Position,
+    preventDefault: () => Unit,
     renderedPosition: Position,
+    stopImmediatePropagation: () => Unit,
+    stopPropagation: () => Unit,
+    target: js.Any,
     timeStamp: Double,
-    `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt,
-    target: js.Any = null
+    `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
   ): InputEventObject = {
-    val __obj = js.Dynamic.literal(cy = cy, namespace = namespace, originalEvent = originalEvent, position = position, renderedPosition = renderedPosition, timeStamp = timeStamp)
+    val __obj = js.Dynamic.literal(cy = cy, isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), namespace = namespace, originalEvent = originalEvent, position = position, preventDefault = js.Any.fromFunction0(preventDefault), renderedPosition = renderedPosition, stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target, timeStamp = timeStamp)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[InputEventObject]
   }
 }

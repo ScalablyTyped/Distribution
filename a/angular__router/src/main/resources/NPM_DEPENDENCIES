@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/router" : "8.2.11"
+      "@angular/router" : "8.2.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/router" : "8.2.11"
+      "@angular/router" : "8.2.12"
     }
   ],
   "compile-devDependencies" : [

@@ -21,23 +21,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // region Ajax
+// #region Ajax
 trait AjaxSettings[TContext] extends AjaxSettingsBase[TContext] {
-  /**
-    * A pre-request callback function that can be used to modify the jqXHR (in jQuery 1.4.x,
-    * XMLHTTPRequest) object before it is sent. Use this to set custom headers, etc. The jqXHR and
-    * settings objects are passed as arguments. This is an Ajax Event. Returning false in the beforeSend
-    * function will cancel the request. As of jQuery 1.5, the beforeSend option will be called regardless
-    * of the type of request.
-    */
-  @JSName("beforeSend")
-  var beforeSend_AjaxSettings: js.UndefOr[
-    js.ThisFunction2[
-      /* this */ TContext, 
-      /* jqXHR */ jqXHR[_], 
-      /* settings */ AjaxSettings[TContext], 
-      `false` | Unit
-    ]
-  ] = js.undefined
   /**
     * A string containing the URL to which the request is sent.
     */
@@ -49,12 +34,7 @@ object AjaxSettings {
   def apply[TContext](
     accepts: PlainObject[String] = null,
     async: js.UndefOr[Boolean] = js.undefined,
-    beforeSend: js.ThisFunction2[
-      /* this */ TContext, 
-      /* jqXHR */ jqXHR[_], 
-      /* settings */ AjaxSettings[TContext], 
-      `false` | Unit
-    ] = null,
+    beforeSend: js.ThisFunction2[TContext, /* jqXHR */ jqXHR[_], AjaxSettings[TContext], `false` | Unit] = null,
     cache: js.UndefOr[Boolean] = js.undefined,
     complete: TypeOrArray[CompleteCallback[TContext]] = null,
     contentType: String | `false` = null,

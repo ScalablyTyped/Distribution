@@ -1,7 +1,6 @@
 package typings.cytoscape.cytoscapeMod.Css
 
 import typings.cytoscape.cytoscapeStrings.`node-position`
-import typings.cytoscape.cytoscapeStrings.`segment-weights`
 import typings.cytoscape.cytoscapeStrings.intersection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,30 +21,30 @@ trait SegmentsEdges extends js.Object {
     * — but it should be used carefully because you can create
     * invalid points that intersection would have automatically corrected.
     */
-  var `edge-distances`: intersection | `segment-weights` | `node-position`
+  var `edge-distances`: PropertyValueEdge[intersection | `node-position`]
   /**
     * A series of values that specify for each segment point the distance perpendicular to a line formed from source to target, e.g. -20 20 - 20.
     */
-  var `segment-distances`: String
+  var `segment-distances`: PropertyValueEdge[String]
   /**
     * A series of values that weights segment points along a line from source to target,
     * e.g. 0.25 0.5 0.75.A value usually ranges on [0, 1],
     * with 0 towards the source node and 1 towards the target node — but larger or smaller values can also be used.
     */
-  var `segment-weights`: String
+  var `segment-weights`: PropertyValueEdge[String]
 }
 
 object SegmentsEdges {
   @scala.inline
   def apply(
-    `edge-distances`: intersection | `segment-weights` | `node-position`,
-    `segment-distances`: String,
-    `segment-weights`: String
+    `edge-distances`: PropertyValueEdge[intersection | `node-position`],
+    `segment-distances`: PropertyValueEdge[String],
+    `segment-weights`: PropertyValueEdge[String]
   ): SegmentsEdges = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("edge-distances")(`edge-distances`.asInstanceOf[js.Any])
-    __obj.updateDynamic("segment-distances")(`segment-distances`)
-    __obj.updateDynamic("segment-weights")(`segment-weights`)
+    __obj.updateDynamic("segment-distances")(`segment-distances`.asInstanceOf[js.Any])
+    __obj.updateDynamic("segment-weights")(`segment-weights`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentsEdges]
   }
 }

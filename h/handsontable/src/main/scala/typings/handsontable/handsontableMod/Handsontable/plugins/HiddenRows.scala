@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HiddenRows extends BasePlugin {
+trait HiddenRows extends Base {
   var hiddenRows: Boolean | js.Array[_] = js.native
   var lastSelectedRow: Double = js.native
   var settings: js.Object | Unit = js.native

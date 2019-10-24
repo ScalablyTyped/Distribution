@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ColumnSummary extends BasePlugin {
+trait ColumnSummary extends Base {
   var endpoints: Endpoints | Unit
   def calculate(endpoint: Endpoints): Unit
   def calculateAverage(endpoint: Endpoints): Double

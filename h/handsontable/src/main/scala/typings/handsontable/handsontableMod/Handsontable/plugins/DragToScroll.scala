@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DragToScroll extends BasePlugin {
+trait DragToScroll extends Base {
   var boundaries: js.Object | Unit
   var callback: js.Function0[Unit] | Unit
   def check(x: Double, y: Double): Unit

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TouchScroll extends BasePlugin {
+trait TouchScroll extends Base {
   var clones: js.Array[_]
   var lockedCollection: Boolean
   var scrollbars: js.Array[_]

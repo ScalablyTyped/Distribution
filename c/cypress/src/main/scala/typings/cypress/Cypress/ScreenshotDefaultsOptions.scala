@@ -21,10 +21,11 @@ object ScreenshotDefaultsOptions {
     capture: runner | viewport | fullPage,
     clip: Dimensions,
     disableTimersAndAnimations: Boolean,
+    padding: Padding,
     scale: Boolean,
     screenshotOnRunFailure: Boolean
   ): ScreenshotDefaultsOptions = {
-    val __obj = js.Dynamic.literal(afterScreenshot = js.Any.fromFunction1(afterScreenshot), beforeScreenshot = js.Any.fromFunction1(beforeScreenshot), blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, scale = scale, screenshotOnRunFailure = screenshotOnRunFailure)
+    val __obj = js.Dynamic.literal(afterScreenshot = js.Any.fromFunction1(afterScreenshot), beforeScreenshot = js.Any.fromFunction1(beforeScreenshot), blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, padding = padding.asInstanceOf[js.Any], scale = scale, screenshotOnRunFailure = screenshotOnRunFailure)
   
     __obj.asInstanceOf[ScreenshotDefaultsOptions]
   }

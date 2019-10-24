@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CopyPaste extends BasePlugin {
+trait CopyPaste extends Base {
   var columnsLimit: Double = js.native
   var copyableRanges: js.Array[_] = js.native
   var focusableElement: FocusableWrapper = js.native

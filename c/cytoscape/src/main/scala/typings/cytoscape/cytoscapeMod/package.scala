@@ -69,7 +69,7 @@ package object cytoscapeMod {
     * @param ix The index of the element when iterating over the elements in the collection.
     */
   type ElementPositionFunction = js.Function2[/* ele */ NodeSingular, /* ix */ Double, Position]
-  type EventHandler = js.Function1[/* event */ EventObject, Unit]
+  type EventHandler = js.Function2[/* event */ EventObject, /* extraParams */ js.UndefOr[js.Any], Unit]
   /**
     * A space separated list of event names.
     * http://js.cytoscape.org/#cy.promiseOn

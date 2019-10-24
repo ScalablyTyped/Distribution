@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Formulas extends BasePlugin {
+trait Formulas extends Base {
   var dataProvider: DataProvider
   var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager
   var sheet: Sheet

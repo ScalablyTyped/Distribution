@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashSvgMod {
+  import org.scalablytyped.runtime.StringDictionary
+
   /* Rewritten from type alias, can be one of: 
     - typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.sub
     - typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`super`
@@ -32,8 +34,10 @@ package object reactDashNativeDashSvgMod {
     - typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.`900`
   */
   type FontWeight = _FontWeight | NumberProp
+  type Middleware = js.Function1[/* ast */ XmlAST, XmlAST]
   type NumberArray = js.Array[NumberProp] | NumberProp
   type NumberProp = String | Double
+  type Styles = StringDictionary[String]
   type int32ARGBColor = Double
   type rgbaArray = js.Array[Double]
 }

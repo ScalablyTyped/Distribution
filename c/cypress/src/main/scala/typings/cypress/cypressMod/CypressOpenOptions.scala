@@ -1,5 +1,6 @@
 package typings.cypress.cypressMod
 
+import typings.cypress.cypressNumbers.`false`
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,23 +21,15 @@ import scala.scalajs.js.annotation._
   })
   ```
   */
-trait CypressOpenOptions extends js.Object {
+trait CypressOpenOptions extends CypressCommonOptions {
   /**
     * Specify a filesystem path to a custom browser
     */
   var browser: String
   /**
-    * Specify configuration
-    */
-  var config: Partial[CypressConfiguration]
-  /**
     * Open Cypress in detached mode
     */
   var detached: Boolean
-  /**
-    * Specify environment variables
-    */
-  var env: js.Object
   /**
     * Run in global mode
     */
@@ -45,10 +38,6 @@ trait CypressOpenOptions extends js.Object {
     * Override default port
     */
   var port: Double
-  /**
-    * Path to a specific project
-    */
-  var project: String
 }
 
 object CypressOpenOptions {
@@ -56,13 +45,14 @@ object CypressOpenOptions {
   def apply(
     browser: String,
     config: Partial[CypressConfiguration],
+    configFile: String | `false`,
     detached: Boolean,
     env: js.Object,
     global: Boolean,
     port: Double,
     project: String
   ): CypressOpenOptions = {
-    val __obj = js.Dynamic.literal(browser = browser, config = config, detached = detached, env = env, global = global, port = port, project = project)
+    val __obj = js.Dynamic.literal(browser = browser, config = config, configFile = configFile.asInstanceOf[js.Any], detached = detached, env = env, global = global, port = port, project = project)
   
     __obj.asInstanceOf[CypressOpenOptions]
   }

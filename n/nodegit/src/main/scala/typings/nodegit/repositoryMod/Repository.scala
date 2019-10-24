@@ -216,8 +216,8 @@ class Repository () extends js.Object {
   /**
     * Lists out the remotes in the given repository.
     */
-  def getRemotes(): js.Promise[js.Array[String]] = js.native
-  def getRemotes(callback: js.Function): js.Promise[js.Array[String]] = js.native
+  def getRemotes(): js.Promise[js.Array[Remote]] = js.native
+  def getRemotes(callback: js.Function): js.Promise[js.Array[Remote]] = js.native
   /**
     * Get the status of a repo to it's working directory
     */

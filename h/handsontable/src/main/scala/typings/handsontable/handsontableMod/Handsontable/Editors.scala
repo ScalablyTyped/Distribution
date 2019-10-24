@@ -3,7 +3,7 @@ package typings.handsontable.handsontableMod.Handsontable
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable6
 import typings.handsontable.handsontableMod.Handsontable._editors.Autocomplete
-import typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor
+import typings.handsontable.handsontableMod.Handsontable._editors.Base
 import typings.handsontable.handsontableMod.Handsontable._editors.Checkbox
 import typings.handsontable.handsontableMod.Handsontable._editors.Date
 import typings.handsontable.handsontableMod.Handsontable._editors.Dropdown
@@ -27,7 +27,7 @@ trait Editors extends js.Object {
     /* prop */ String | Double, 
     /* TD */ HTMLTableCellElement, 
     /* cellProperties */ CellProperties, 
-    typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor
+    Base
   ]
   var CheckboxEditor: Instantiable0[Checkbox]
   var DateEditor: Instantiable0[Date]
@@ -46,7 +46,7 @@ trait Editors extends js.Object {
     /* prop */ String | Double, 
     /* TD */ HTMLTableCellElement, 
     /* cellProperties */ CellProperties, 
-    BaseEditor
+    Base
   ]
   def registerEditor(
     editorName: String,
@@ -57,7 +57,7 @@ trait Editors extends js.Object {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      BaseEditor
+      Base
     ]
   ): Unit
 }
@@ -73,7 +73,7 @@ object Editors {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      BaseEditor
+      Base
     ],
     CheckboxEditor: Instantiable0[Checkbox],
     DateEditor: Instantiable0[Date],
@@ -92,7 +92,7 @@ object Editors {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      BaseEditor
+      Base
     ],
     registerEditor: (String, Instantiable6[
       /* hotInstance */ Core, 
@@ -101,7 +101,7 @@ object Editors {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      BaseEditor
+      Base
     ]) => Unit
   ): Editors = {
     val __obj = js.Dynamic.literal(AutocompleteEditor = AutocompleteEditor, BaseEditor = BaseEditor, CheckboxEditor = CheckboxEditor, DateEditor = DateEditor, DropdownEditor = DropdownEditor, HandsontableEditor = HandsontableEditor, MobileEditor = MobileEditor, NumericEditor = NumericEditor, PasswordEditor = PasswordEditor, SelectEditor = SelectEditor, TextEditor = TextEditor, TimeEditor = TimeEditor, getEditor = js.Any.fromFunction1(getEditor), registerEditor = js.Any.fromFunction2(registerEditor))

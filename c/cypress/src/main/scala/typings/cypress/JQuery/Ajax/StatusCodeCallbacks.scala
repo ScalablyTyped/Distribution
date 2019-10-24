@@ -5,9 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// region StatusCodeCallbacks
+// #region StatusCodeCallbacks
 trait StatusCodeCallbacks[TContext] extends // Status codes not listed require type annotations when defining the callback
 /* index */ NumberDictionary[SuccessCallback[TContext] | ErrorCallback[TContext]] {
   // region Success Status Codes
+  // #region Success Status Codes
   // jQuery treats 2xx and 304 status codes as a success
   var `200`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
   var `201`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
@@ -109,8 +112,9 @@ trait StatusCodeCallbacks[TContext] extends // Status codes not listed require t
   var `297`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
   var `298`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
   var `299`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
-  // endregion
+  // #endregion
   // region Error Status Codes
+  // #region Error Status Codes
   var `300`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
   var `301`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
   var `302`: js.UndefOr[ErrorCallback[TContext]] = js.undefined

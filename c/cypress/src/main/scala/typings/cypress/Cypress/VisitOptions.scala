@@ -64,6 +64,10 @@ trait VisitOptions
     */
   var method: GET | POST
   /**
+    * Query parameters to append to the `url` of the request.
+    */
+  var qs: js.Object
+  /**
     * The URL to visit. Behaves the same as the `url` argument.
     */
   var url: String
@@ -92,12 +96,13 @@ object VisitOptions {
     method: GET | POST,
     onBeforeLoad: Window => Unit,
     onLoad: Window => Unit,
+    qs: js.Object,
     retryOnNetworkFailure: Boolean,
     retryOnStatusCodeFailure: Boolean,
     timeout: Double,
     url: String
   ): VisitOptions = {
-    val __obj = js.Dynamic.literal(auth = auth, body = body.asInstanceOf[js.Any], failOnStatusCode = failOnStatusCode, headers = headers, log = log, method = method.asInstanceOf[js.Any], onBeforeLoad = js.Any.fromFunction1(onBeforeLoad), onLoad = js.Any.fromFunction1(onLoad), retryOnNetworkFailure = retryOnNetworkFailure, retryOnStatusCodeFailure = retryOnStatusCodeFailure, timeout = timeout, url = url)
+    val __obj = js.Dynamic.literal(auth = auth, body = body.asInstanceOf[js.Any], failOnStatusCode = failOnStatusCode, headers = headers, log = log, method = method.asInstanceOf[js.Any], onBeforeLoad = js.Any.fromFunction1(onBeforeLoad), onLoad = js.Any.fromFunction1(onLoad), qs = qs, retryOnNetworkFailure = retryOnNetworkFailure, retryOnStatusCodeFailure = retryOnStatusCodeFailure, timeout = timeout, url = url)
   
     __obj.asInstanceOf[VisitOptions]
   }

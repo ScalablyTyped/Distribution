@@ -60,9 +60,13 @@ trait AppointmentCompose extends ItemCompose {
     */
   var location: Location = js.native
   /**
-    * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item. 
+    * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
+    *
     * The optionalAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the optional attendees 
-    * for a meeting.
+    * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    *
+    * - Get 500 members maximum.
+    * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -109,8 +113,12 @@ trait AppointmentCompose extends ItemCompose {
   var recurrence: Recurrence = js.native
   /**
     * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item. 
+    *
     * The requiredAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the required attendees 
-    * for a meeting.
+    * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    *
+    * - Get 500 members maximum.
+    * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.0]
     *

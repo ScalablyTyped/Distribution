@@ -1,5 +1,7 @@
 package typings.cytoscape.cytoscapeMod.Css
 
+import typings.cytoscape.cytoscapeStrings.`node-position`
+import typings.cytoscape.cytoscapeStrings.intersection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +18,7 @@ trait UnbundledBezierEdges extends js.Object {
     * distance perpendicular to a line formed
     * from source to target, e.g. -20 20 - 20.
     */
-  var `control-point-distances`: String
+  var `control-point-distances`: PropertyValueEdge[String]
   /**
     * A series of values that weights control points along
     * a line from source to target, e.g. 0.25 0.5 0.75.
@@ -25,7 +27,7 @@ trait UnbundledBezierEdges extends js.Object {
     * 1 towards the target node
     * — but larger or smaller values can also be used.
     */
-  var `control-point-weights`: String
+  var `control-point-weights`: PropertyValueEdge[String]
   /**
     * With value intersection (default),
     * the line from source to target for "control-point-weights"
@@ -37,16 +39,20 @@ trait UnbundledBezierEdges extends js.Object {
     * — but it should be used carefully because you can create
     * invalid points that intersection would have automatically corrected.
     */
-  var `edge-distances`: Double
+  var `edge-distances`: PropertyValueEdge[intersection | `node-position`]
 }
 
 object UnbundledBezierEdges {
   @scala.inline
-  def apply(`control-point-distances`: String, `control-point-weights`: String, `edge-distances`: Double): UnbundledBezierEdges = {
+  def apply(
+    `control-point-distances`: PropertyValueEdge[String],
+    `control-point-weights`: PropertyValueEdge[String],
+    `edge-distances`: PropertyValueEdge[intersection | `node-position`]
+  ): UnbundledBezierEdges = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("control-point-distances")(`control-point-distances`)
-    __obj.updateDynamic("control-point-weights")(`control-point-weights`)
-    __obj.updateDynamic("edge-distances")(`edge-distances`)
+    __obj.updateDynamic("control-point-distances")(`control-point-distances`.asInstanceOf[js.Any])
+    __obj.updateDynamic("control-point-weights")(`control-point-weights`.asInstanceOf[js.Any])
+    __obj.updateDynamic("edge-distances")(`edge-distances`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnbundledBezierEdges]
   }
 }

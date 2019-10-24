@@ -45,11 +45,19 @@ object reactDashNativeDashSvgComponents extends reactDashNativeDashSvgProps {
   @scala.inline
   def SvgAst: ComponentType[SvgAstProps] = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgAst.asInstanceOf[typings.react.reactMod.ComponentType[SvgAstProps]]
   @scala.inline
+  def SvgCss: ComponentType[SvgCssProps] = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgCss.asInstanceOf[typings.react.reactMod.ComponentType[SvgCssProps]]
+  @scala.inline
+  def SvgCssUri: ComponentType[SvgCssUriProps] = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgCssUri.asInstanceOf[typings.react.reactMod.ComponentType[SvgCssUriProps]]
+  @scala.inline
   def SvgFromUri: ComponentType[SvgFromUriProps] = js.constructorOf[typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgFromUri].asInstanceOf[typings.react.reactMod.ComponentType[SvgFromUriProps]]
   @scala.inline
   def SvgFromXml: ComponentType[SvgFromXmlProps] = js.constructorOf[typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgFromXml].asInstanceOf[typings.react.reactMod.ComponentType[SvgFromXmlProps]]
   @scala.inline
   def SvgUri: ComponentType[SvgUriProps] = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgUri.asInstanceOf[typings.react.reactMod.ComponentType[SvgUriProps]]
+  @scala.inline
+  def SvgWithCss: ComponentType[SvgWithCssProps] = js.constructorOf[typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgWithCss].asInstanceOf[typings.react.reactMod.ComponentType[SvgWithCssProps]]
+  @scala.inline
+  def SvgWithCssUri: ComponentType[SvgWithCssUriProps] = js.constructorOf[typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgWithCssUri].asInstanceOf[typings.react.reactMod.ComponentType[SvgWithCssUriProps]]
   @scala.inline
   def SvgXml: ComponentType[SvgXmlProps] = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.SvgXml.asInstanceOf[typings.react.reactMod.ComponentType[SvgXmlProps]]
   @scala.inline

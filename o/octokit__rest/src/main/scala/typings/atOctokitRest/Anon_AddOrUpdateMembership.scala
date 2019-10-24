@@ -31,6 +31,8 @@ import typings.atOctokitRest.atOctokitRestMod.OrgsListForUserParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsListForUserResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsListHooksParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsListHooksResponse
+import typings.atOctokitRest.atOctokitRestMod.OrgsListInstallationsParams
+import typings.atOctokitRest.atOctokitRestMod.OrgsListInstallationsResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsListInvitationTeamsParams
 import typings.atOctokitRest.atOctokitRestMod.OrgsListInvitationTeamsResponse
 import typings.atOctokitRest.atOctokitRestMod.OrgsListMembersParams
@@ -155,6 +157,11 @@ trait Anon_AddOrUpdateMembership extends js.Object {
   var listForUser_Original: Anon_EndpointParamsOrgsListForUserParams = js.native
   @JSName("listHooks")
   var listHooks_Original: Anon_EndpointParamsOrgsListHooksParams = js.native
+  /**
+    * Lists all GitHub Apps in an organization. The installation count includes all GitHub Apps installed on repositories in the organization. You must be an organization owner with `admin:read` scope to use this endpoint.
+    */
+  @JSName("listInstallations")
+  var listInstallations_Original: Anon_EndpointParamsOrgsListInstallationsParams = js.native
   /**
     * List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner.
     */
@@ -331,6 +338,11 @@ trait Anon_AddOrUpdateMembership extends js.Object {
   def listForUser(params: RequestOptions with OrgsListForUserParams): js.Promise[Response[OrgsListForUserResponse]] = js.native
   def listHooks(): js.Promise[Response[OrgsListHooksResponse]] = js.native
   def listHooks(params: RequestOptions with OrgsListHooksParams): js.Promise[Response[OrgsListHooksResponse]] = js.native
+  /**
+    * Lists all GitHub Apps in an organization. The installation count includes all GitHub Apps installed on repositories in the organization. You must be an organization owner with `admin:read` scope to use this endpoint.
+    */
+  def listInstallations(): js.Promise[Response[OrgsListInstallationsResponse]] = js.native
+  def listInstallations(params: RequestOptions with OrgsListInstallationsParams): js.Promise[Response[OrgsListInstallationsResponse]] = js.native
   /**
     * List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner.
     */

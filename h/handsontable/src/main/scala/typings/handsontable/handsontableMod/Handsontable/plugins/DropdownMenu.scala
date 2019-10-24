@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DropdownMenu extends BasePlugin {
+trait DropdownMenu extends Base {
   var SEPARATOR: SeparatorObject
   var commandExecutor: CommandExecutor
   var eventManager: typings.handsontable.handsontableMod.Handsontable.plugins.EventManager

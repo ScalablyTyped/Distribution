@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ManualColumnFreeze extends BasePlugin {
+trait ManualColumnFreeze extends Base {
   var frozenColumnsBasePositions: js.Array[_]
   var manualColumnMovePlugin: ManualColumnMove
   def freezeColumn(column: Double): Unit

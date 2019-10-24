@@ -1,0 +1,14 @@
+package typings.config
+
+import typings.config.deferMod.DeferFunction
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("config/defer", JSImport.Namespace)
+@js.native
+object deferMod extends js.Object {
+  def deferConfig[T, R](func: DeferFunction[T, R]): R = js.native
+  type DeferFunction[T, R] = js.ThisFunction1[/* this */ js.Any, /* origValue */ T, R]
+}
+

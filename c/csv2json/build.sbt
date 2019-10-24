@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "csv2json"
-version := "1.4-dt-20190813Z-404627"
+version := "1.4-dt-20190813Z-aee48d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20181030Z-e137b4",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
-  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20181017Z-a28bc1",
+  "org.scalablytyped" %%% "duplexify" % "3.6-dt-20181030Z-a2b7bf",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
+  "org.scalablytyped" %%% "pumpify" % "1.4-dt-20181017Z-f14176",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

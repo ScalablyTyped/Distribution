@@ -2,13 +2,11 @@ package typings.handsontable.handsontableMod.Handsontable
 
 import org.scalablytyped.runtime.Instantiable6
 import typings.handsontable.handsontableMod.Handsontable.Hooks.Events
-import typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor
+import typings.handsontable.handsontableMod.Handsontable._editors.Base
 import typings.handsontable.handsontableMod.Handsontable.autoColumnSize.Settings
 import typings.handsontable.handsontableMod.Handsontable.comments.CommentConfig
 import typings.handsontable.handsontableMod.Handsontable.contextMenu.PredefinedMenuItemKey
 import typings.handsontable.handsontableMod.Handsontable.nestedHeaders.NestedHeader
-import typings.handsontable.handsontableMod.Handsontable.renderers.BaseRenderer
-import typings.handsontable.handsontableMod.Handsontable.validators.Base
 import typings.handsontable.handsontableMod.Handsontable.wot.CellCoords
 import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.handsontable.handsontableStrings.`non-commercial-and-evaluation`
@@ -119,7 +117,7 @@ trait GridSettings extends Events {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      BaseEditor
+      Base
     ]) | Boolean | String
   ] = js.undefined
   var enterBeginsEditing: js.UndefOr[Boolean] = js.undefined
@@ -182,7 +180,9 @@ trait GridSettings extends Events {
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var readOnlyCellClassName: js.UndefOr[String] = js.undefined
   var renderAllRows: js.UndefOr[Boolean] = js.undefined
-  var renderer: js.UndefOr[RendererType | String | BaseRenderer] = js.undefined
+  var renderer: js.UndefOr[
+    RendererType | String | typings.handsontable.handsontableMod.Handsontable.renderers.Base
+  ] = js.undefined
   var rowHeaderWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var rowHeaders: js.UndefOr[Boolean | js.Array[String] | (js.Function1[/* index */ Double, String])] = js.undefined
   var rowHeights: js.UndefOr[
@@ -214,7 +214,9 @@ trait GridSettings extends Events {
   var `type`: js.UndefOr[CellType | String] = js.undefined
   var uncheckedTemplate: js.UndefOr[Boolean | String | Double] = js.undefined
   var undo: js.UndefOr[Boolean] = js.undefined
-  var validator: js.UndefOr[Base | RegExp | ValidatorType | String] = js.undefined
+  var validator: js.UndefOr[
+    typings.handsontable.handsontableMod.Handsontable.validators.Base | RegExp | ValidatorType | String
+  ] = js.undefined
   var viewportColumnRenderingOffset: js.UndefOr[Double | auto] = js.undefined
   var viewportRowRenderingOffset: js.UndefOr[Double | auto] = js.undefined
   var visibleRows: js.UndefOr[Double] = js.undefined
@@ -284,7 +286,7 @@ object GridSettings {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      BaseEditor
+      Base
     ]) | Boolean | String = null,
     enterBeginsEditing: js.UndefOr[Boolean] = js.undefined,
     enterMoves: CellCoords | (js.Function1[/* event */ KeyboardEvent, CellCoords]) = null,
@@ -336,7 +338,7 @@ object GridSettings {
     readOnly: js.UndefOr[Boolean] = js.undefined,
     readOnlyCellClassName: String = null,
     renderAllRows: js.UndefOr[Boolean] = js.undefined,
-    renderer: RendererType | String | BaseRenderer = null,
+    renderer: RendererType | String | typings.handsontable.handsontableMod.Handsontable.renderers.Base = null,
     rowHeaderWidth: Double | js.Array[Double] = null,
     rowHeaders: Boolean | js.Array[String] | (js.Function1[/* index */ Double, String]) = null,
     rowHeights: Double | (js.Array[Double | String]) | String | (js.Function1[/* index */ Double, String | Double]) = null,
@@ -364,7 +366,7 @@ object GridSettings {
     `type`: CellType | String = null,
     uncheckedTemplate: Boolean | String | Double = null,
     undo: js.UndefOr[Boolean] = js.undefined,
-    validator: Base | RegExp | ValidatorType | String = null,
+    validator: typings.handsontable.handsontableMod.Handsontable.validators.Base | RegExp | ValidatorType | String = null,
     viewportColumnRenderingOffset: Double | auto = null,
     viewportRowRenderingOffset: Double | auto = null,
     visibleRows: Int | Double = null,

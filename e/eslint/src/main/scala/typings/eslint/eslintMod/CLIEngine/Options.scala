@@ -30,6 +30,7 @@ class Options () extends js.Object {
   var parserOptions: js.UndefOr[ParserOptions] = js.native
   var plugins: js.UndefOr[js.Array[String]] = js.native
   var reportUnusedDisableDirectives: js.UndefOr[Boolean] = js.native
+  var resolvePluginsRelativeTo: js.UndefOr[String] = js.native
   var rulePaths: js.UndefOr[js.Array[String]] = js.native
   var rules: js.UndefOr[StringDictionary[RuleLevel | RuleLevelAndOptions]] = js.native
   var useEslintrc: js.UndefOr[Boolean] = js.native

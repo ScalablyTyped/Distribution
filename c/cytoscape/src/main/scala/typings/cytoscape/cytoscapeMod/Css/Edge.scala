@@ -11,46 +11,52 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof cytoscape.cytoscape.Css.Overlay ]:? cytoscape.cytoscape.Css.Overlay[P]} */ trait Edge
+- Dropped {[ P in keyof cytoscape.cytoscape.Css.Overlay ]:? cytoscape.cytoscape.Css.Overlay[P]}
+- Dropped {[ P in keyof cytoscape.cytoscape.Css.BezierEdges ]:? cytoscape.cytoscape.Css.BezierEdges[P]}
+- Dropped {[ P in keyof cytoscape.cytoscape.Css.UnbundledBezierEdges ]:? cytoscape.cytoscape.Css.UnbundledBezierEdges[P]}
+- Dropped {[ P in keyof cytoscape.cytoscape.Css.HaystackEdges ]:? cytoscape.cytoscape.Css.HaystackEdges[P]}
+- Dropped {[ P in keyof cytoscape.cytoscape.Css.SegmentsEdges ]:? cytoscape.cytoscape.Css.SegmentsEdges[P]}
+- Dropped {[ P in keyof cytoscape.cytoscape.Css.Visibility<cytoscape.cytoscape.EdgeSingular> ]:? cytoscape.cytoscape.Css.Visibility<cytoscape.cytoscape.EdgeSingular>[P]}
+- Dropped {[ P in keyof cytoscape.cytoscape.Css.Labels<cytoscape.cytoscape.EdgeSingular> ]:? cytoscape.cytoscape.Css.Labels<cytoscape.cytoscape.EdgeSingular>[P]} */ trait Edge
   extends EdgeLine
-     with EdgeArror
+     with EdgeArrow
 
 object Edge {
   @scala.inline
   def apply(
-    `curve-style`: haystack | straight | bezier | `unbundled-bezier` | segments | taxi = null,
-    `line-color`: Colour = null,
-    `line-style`: LineStyle = null,
-    `mid-source-arrow-color`: Colour = null,
-    `mid-source-arrow-fill`: ArrowFill = null,
-    `mid-source-arrow-shape`: ArrowShape = null,
-    `mid-target-arrow-color`: Colour = null,
-    `mid-target-arrow-fill`: ArrowFill = null,
-    `mid-target-arrow-shape`: ArrowShape = null,
-    `source-arrow-color`: Colour = null,
-    `source-arrow-fill`: ArrowFill = null,
-    `source-arrow-shape`: ArrowShape = null,
-    `target-arrow-color`: Colour = null,
-    `target-arrow-fill`: ArrowFill = null,
-    `target-arrow-shape`: ArrowShape = null,
-    width: Double | String = null
+    `curve-style`: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi] = null,
+    `line-color`: PropertyValueEdge[Colour] = null,
+    `line-style`: PropertyValueEdge[LineStyle] = null,
+    `mid-source-arrow-color`: PropertyValueEdge[Colour] = null,
+    `mid-source-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
+    `mid-source-arrow-shape`: PropertyValueEdge[ArrowShape] = null,
+    `mid-target-arrow-color`: PropertyValueEdge[Colour] = null,
+    `mid-target-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
+    `mid-target-arrow-shape`: PropertyValueEdge[ArrowShape] = null,
+    `source-arrow-color`: PropertyValueEdge[Colour] = null,
+    `source-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
+    `source-arrow-shape`: PropertyValueEdge[ArrowShape] = null,
+    `target-arrow-color`: PropertyValueEdge[Colour] = null,
+    `target-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
+    `target-arrow-shape`: PropertyValueEdge[ArrowShape] = null,
+    width: PropertyValueEdge[Double | String] = null
   ): Edge = {
     val __obj = js.Dynamic.literal()
     if (`curve-style` != null) __obj.updateDynamic("curve-style")(`curve-style`.asInstanceOf[js.Any])
-    if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`)
-    if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`)
-    if (`mid-source-arrow-color` != null) __obj.updateDynamic("mid-source-arrow-color")(`mid-source-arrow-color`)
-    if (`mid-source-arrow-fill` != null) __obj.updateDynamic("mid-source-arrow-fill")(`mid-source-arrow-fill`)
-    if (`mid-source-arrow-shape` != null) __obj.updateDynamic("mid-source-arrow-shape")(`mid-source-arrow-shape`)
-    if (`mid-target-arrow-color` != null) __obj.updateDynamic("mid-target-arrow-color")(`mid-target-arrow-color`)
-    if (`mid-target-arrow-fill` != null) __obj.updateDynamic("mid-target-arrow-fill")(`mid-target-arrow-fill`)
-    if (`mid-target-arrow-shape` != null) __obj.updateDynamic("mid-target-arrow-shape")(`mid-target-arrow-shape`)
-    if (`source-arrow-color` != null) __obj.updateDynamic("source-arrow-color")(`source-arrow-color`)
-    if (`source-arrow-fill` != null) __obj.updateDynamic("source-arrow-fill")(`source-arrow-fill`)
-    if (`source-arrow-shape` != null) __obj.updateDynamic("source-arrow-shape")(`source-arrow-shape`)
-    if (`target-arrow-color` != null) __obj.updateDynamic("target-arrow-color")(`target-arrow-color`)
-    if (`target-arrow-fill` != null) __obj.updateDynamic("target-arrow-fill")(`target-arrow-fill`)
-    if (`target-arrow-shape` != null) __obj.updateDynamic("target-arrow-shape")(`target-arrow-shape`)
+    if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`.asInstanceOf[js.Any])
+    if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`.asInstanceOf[js.Any])
+    if (`mid-source-arrow-color` != null) __obj.updateDynamic("mid-source-arrow-color")(`mid-source-arrow-color`.asInstanceOf[js.Any])
+    if (`mid-source-arrow-fill` != null) __obj.updateDynamic("mid-source-arrow-fill")(`mid-source-arrow-fill`.asInstanceOf[js.Any])
+    if (`mid-source-arrow-shape` != null) __obj.updateDynamic("mid-source-arrow-shape")(`mid-source-arrow-shape`.asInstanceOf[js.Any])
+    if (`mid-target-arrow-color` != null) __obj.updateDynamic("mid-target-arrow-color")(`mid-target-arrow-color`.asInstanceOf[js.Any])
+    if (`mid-target-arrow-fill` != null) __obj.updateDynamic("mid-target-arrow-fill")(`mid-target-arrow-fill`.asInstanceOf[js.Any])
+    if (`mid-target-arrow-shape` != null) __obj.updateDynamic("mid-target-arrow-shape")(`mid-target-arrow-shape`.asInstanceOf[js.Any])
+    if (`source-arrow-color` != null) __obj.updateDynamic("source-arrow-color")(`source-arrow-color`.asInstanceOf[js.Any])
+    if (`source-arrow-fill` != null) __obj.updateDynamic("source-arrow-fill")(`source-arrow-fill`.asInstanceOf[js.Any])
+    if (`source-arrow-shape` != null) __obj.updateDynamic("source-arrow-shape")(`source-arrow-shape`.asInstanceOf[js.Any])
+    if (`target-arrow-color` != null) __obj.updateDynamic("target-arrow-color")(`target-arrow-color`.asInstanceOf[js.Any])
+    if (`target-arrow-fill` != null) __obj.updateDynamic("target-arrow-fill")(`target-arrow-fill`.asInstanceOf[js.Any])
+    if (`target-arrow-shape` != null) __obj.updateDynamic("target-arrow-shape")(`target-arrow-shape`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Edge]
   }

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mongoose-deep-populate"
-version := "2.0.3-dt-20191003Z-3388f9"
+version := "2.0.3-dt-20191003Z-6baccf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-0c1519",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-e5f952",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191022Z-d42c01",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191022Z-f18ffd",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-d32bb8",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-853c2a",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191022Z-d886df",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

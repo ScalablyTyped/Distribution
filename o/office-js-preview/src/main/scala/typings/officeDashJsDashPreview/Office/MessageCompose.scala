@@ -19,6 +19,11 @@ trait MessageCompose extends Message {
   /**
     * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
     *
+    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    *
+    * - Get 500 members maximum.
+    * - Set a maximum of 100 members per call, up to 500 members total.
+    *
     * [Api set: Mailbox 1.1]
     *
     * @remarks
@@ -33,7 +38,10 @@ trait MessageCompose extends Message {
     * current item.
     *
     * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
-    * the message.
+    * the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    *
+    * - Get 500 members maximum.
+    * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -98,6 +106,10 @@ trait MessageCompose extends Message {
     * current item.
     *
     * The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message.
+    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+    *
+    * - Get 500 members maximum.
+    * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.0]
     *

@@ -58,6 +58,9 @@ object atOctokitRestStrings {
   sealed trait HEAD extends RequestMethod
   
   @js.native
+  sealed trait LEFT extends js.Object
+  
+  @js.native
   sealed trait PATCH extends RequestMethod
   
   @js.native
@@ -68,6 +71,9 @@ object atOctokitRestStrings {
   
   @js.native
   sealed trait REQUEST_CHANGES extends js.Object
+  
+  @js.native
+  sealed trait RIGHT extends js.Object
   
   @js.native
   sealed trait action_required extends js.Object
@@ -358,6 +364,9 @@ object atOctokitRestStrings {
   sealed trait secret extends js.Object
   
   @js.native
+  sealed trait side extends js.Object
+  
+  @js.native
   sealed trait sources extends js.Object
   
   @js.native
@@ -446,6 +455,8 @@ object atOctokitRestStrings {
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   @scala.inline
+  def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
+  @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
@@ -453,6 +464,8 @@ object atOctokitRestStrings {
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
   def REQUEST_CHANGES: REQUEST_CHANGES = "REQUEST_CHANGES".asInstanceOf[REQUEST_CHANGES]
+  @scala.inline
+  def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   @scala.inline
   def action_required: action_required = "action_required".asInstanceOf[action_required]
   @scala.inline
@@ -645,6 +658,8 @@ object atOctokitRestStrings {
   def rocket: rocket = "rocket".asInstanceOf[rocket]
   @scala.inline
   def secret: secret = "secret".asInstanceOf[secret]
+  @scala.inline
+  def side: side = "side".asInstanceOf[side]
   @scala.inline
   def sources: sources = "sources".asInstanceOf[sources]
   @scala.inline

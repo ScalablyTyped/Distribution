@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/platform-browser" : "8.2.11"
+      "@angular/platform-browser" : "8.2.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/platform-browser" : "8.2.11"
+      "@angular/platform-browser" : "8.2.12"
     }
   ],
   "compile-devDependencies" : [

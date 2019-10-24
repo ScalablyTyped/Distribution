@@ -2862,6 +2862,7 @@
 | 36 | [date-now](./d/date-now) | A requirable version of Date.now()
 | 36 | [draggabilly](./d/draggabilly) | make that shiz draggable
 | 36 | [dts-bundle](./d/dts-bundle) | Export TypeScript .d.ts files as an external modul
+| 36 | [eccrypto](./e/eccrypto) | JavaScript Elliptic curve cryptography library
 | 36 | [elasticlunr](./e/elasticlunr) | Lightweight full-text search engine in Javascript 
 | 36 | [emotion__is-prop-valid](./e/emotion__is-prop-valid) | A function to check whether a prop is valid for HT
 | 36 | [expo__vector-icons](./e/expo__vector-icons) | Built-in support for popular icon fonts and the to
@@ -3312,6 +3313,7 @@
 | 25 | [iron](./i/iron) | Encapsulated tokens (encrypted and mac'ed objects)
 | 25 | [jest-docblock](./j/jest-docblock) | jest-docblock is a package that can extract and pa
 | 25 | [json-file-plus](./j/json-file-plus) | Read from and write to a JSON file, minimizing dif
+| 25 | [jxon](./j/jxon) | A complete, bidirectional, JXON library
 | 25 | [koa-graphql](./k/koa-graphql) | Production ready GraphQL Koa middleware.
 | 25 | [lodash_dot_maxby](./l/lodash_dot_maxby) | The lodash method _.maxBy exported as a module.
 | 25 | [mdast](./m/mdast) | Markdown Abstract Syntax Tree format
@@ -3931,6 +3933,7 @@
 | 15 | [rx-lite-aggregates](./r/rx-lite-aggregates) | Lightweight library with aggregate functions for c
 | 15 | [sandboxed-module](./s/sandboxed-module) | A sandboxed Node.js module loader that lets you in
 | 15 | [splunk-logging](./s/splunk-logging) | Splunk HTTP Event Collector logging interface
+| 15 | [spotify-node-applescript](./s/spotify-node-applescript) | Control Spotify on Mac OSX with NodeJS and AppleSc
 | 15 | [ssh2-streams](./s/ssh2-streams) | SSH2 and SFTP(v3) client/server protocol streams f
 | 15 | [storybook__addon-a11y](./s/storybook__addon-a11y) | a11y addon for storybook
 | 15 | [storybook__addon-centered](./s/storybook__addon-centered) | Storybook decorator to center components
@@ -6019,6 +6022,7 @@
 | 2 | [rsocket-websocket-server](./r/rsocket-websocket-server) | RSocket WebSocket server
 | 2 | [rx-core](./r/rx-core) | Core library for composing asynchronous and event-
 | 2 | [s3-uploader](./s/s3-uploader) | Resize, rename, and upload images to AWS S3
+| 2 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API
 | 2 | [saml20](./s/saml20) | SAML 2.0 and 1.1 token parser for Node.js
 | 2 | [samlp](./s/samlp) | SAML Protocol server middleware
 | 2 | [sane-email-validation](./s/sane-email-validation) | Sanely validate email addresses, based on HTML5's 
@@ -6741,6 +6745,7 @@
 | 0 | [calq](./c/calq) | The simplest crypto calculator out there. Convert 
 | 0 | [camljs](./c/camljs) | Library for creating SharePoint CAML queries clien
 | 0 | [canvas-confetti](./c/canvas-confetti) | canvas-confetti
+| 0 | [carbon__pictograms-react](./c/carbon__pictograms-react) | React components for pictograms in digital and sof
 | 0 | [chai-almost](./c/chai-almost) | Extends chai with assertions that allow for floati
 | 0 | [chai-oequal](./c/chai-oequal) | Chai oequal() that uses object's equality method.
 | 0 | [chai-roughly](./c/chai-roughly) | deep equals assertions with tolerance for chai

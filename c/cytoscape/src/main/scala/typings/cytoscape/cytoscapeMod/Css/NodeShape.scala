@@ -26,6 +26,14 @@ import scala.scalajs.js.annotation._
   - typings.cytoscape.cytoscapeStrings.vee
   - typings.cytoscape.cytoscapeStrings.rhomboid
   - typings.cytoscape.cytoscapeStrings.polygon
+  - typings.cytoscape.cytoscapeStrings.`round-rectangle`
+  - typings.cytoscape.cytoscapeStrings.`round-triangle`
+  - typings.cytoscape.cytoscapeStrings.`round-diamond`
+  - typings.cytoscape.cytoscapeStrings.`round-pentagon`
+  - typings.cytoscape.cytoscapeStrings.`round-hexagon`
+  - typings.cytoscape.cytoscapeStrings.`round-heptagon`
+  - typings.cytoscape.cytoscapeStrings.`round-octagon`
+  - typings.cytoscape.cytoscapeStrings.`round-tag`
 */
 trait NodeShape extends js.Object
 

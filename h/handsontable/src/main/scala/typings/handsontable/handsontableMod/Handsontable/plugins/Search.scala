@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Search extends BasePlugin {
+trait Search extends Base {
   @JSName("callback")
   var callback_Original: SearchCallback = js.native
   @JSName("queryMethod")

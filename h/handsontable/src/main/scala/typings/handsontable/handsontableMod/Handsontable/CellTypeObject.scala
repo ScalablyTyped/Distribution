@@ -2,9 +2,7 @@ package typings.handsontable.handsontableMod.Handsontable
 
 import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.StringDictionary
-import typings.handsontable.handsontableMod.Handsontable._editors.BaseEditor
-import typings.handsontable.handsontableMod.Handsontable.renderers.BaseRenderer
-import typings.handsontable.handsontableMod.Handsontable.validators.Base
+import typings.handsontable.handsontableMod.Handsontable._editors.Base
 import typings.handsontable.handsontableMod._Handsontable.Core
 import typings.std.HTMLTableCellElement
 import scala.scalajs.js
@@ -26,13 +24,13 @@ trait CellTypeObject
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      BaseEditor
+      Base
     ]
   ] = js.undefined
   @JSName("renderer")
-  var renderer_CellTypeObject: js.UndefOr[BaseRenderer] = js.undefined
+  var renderer_CellTypeObject: js.UndefOr[typings.handsontable.handsontableMod.Handsontable.renderers.Base] = js.undefined
   @JSName("validator")
-  var validator_CellTypeObject: js.UndefOr[Base] = js.undefined
+  var validator_CellTypeObject: js.UndefOr[typings.handsontable.handsontableMod.Handsontable.validators.Base] = js.undefined
 }
 
 object CellTypeObject {
@@ -50,10 +48,10 @@ object CellTypeObject {
       /* prop */ String | Double, 
       /* TD */ HTMLTableCellElement, 
       /* cellProperties */ CellProperties, 
-      BaseEditor
+      Base
     ] = null,
     renderer: (/* instance */ Core, /* TD */ HTMLTableCellElement, /* row */ Double, /* col */ Double, /* prop */ String | Double, /* value */ CellValue, /* cellProperties */ CellProperties) => HTMLTableCellElement | Unit = null,
-    validator: Base = null
+    validator: typings.handsontable.handsontableMod.Handsontable.validators.Base = null
   ): CellTypeObject = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, GridSettings)

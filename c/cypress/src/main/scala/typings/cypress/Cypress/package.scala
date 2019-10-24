@@ -17,6 +17,7 @@ package object Cypress {
   type HttpMethod = String
   type ObjectLike = StringDictionary[js.Any]
   type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
+  type Padding = Double | js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
   type RequestBody = String | js.Object
   /**
     * Public interface for the global "cy" object. If you want to add

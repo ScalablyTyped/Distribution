@@ -42,7 +42,7 @@ object dotDashPropMod extends js.Object {
   	//=> 'unicorn'
   	```
   	*/
-  def get[T](`object`: StringDictionary[js.Any], path: String): T = js.native
+  def get[T](`object`: StringDictionary[js.Any], path: String): js.UndefOr[T] = js.native
   def get[T](`object`: StringDictionary[js.Any], path: String, defaultValue: T): T = js.native
   /**
   	@param object - Object to test the `path` value.

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object passportDashGoogleDashOauth2Mod {
   import typings.express.expressMod.Request
+  import typings.passportDashGoogleDashOauth2.Anon_Accesstoken
 
   type VerifyCallback = js.Function3[
     /* error */ js.Any, 
@@ -24,6 +25,15 @@ package object passportDashGoogleDashOauth2Mod {
     /* req */ Request, 
     /* accessToken */ String, 
     /* refreshToken */ String, 
+    /* profile */ js.Any, 
+    /* done */ VerifyCallback, 
+    Unit
+  ]
+  type VerifyFunctionWithRequestAndParams = js.Function6[
+    /* req */ Request, 
+    /* accessToken */ String, 
+    /* refreshToken */ String, 
+    /* params */ Anon_Accesstoken, 
     /* profile */ js.Any, 
     /* done */ VerifyCallback, 
     Unit

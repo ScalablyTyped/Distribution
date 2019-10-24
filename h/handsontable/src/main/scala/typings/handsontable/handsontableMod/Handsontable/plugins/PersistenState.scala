@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PersistenState extends BasePlugin {
+trait PersistenState extends Base {
   var storage: Storage
   def loadValue(key: String, saveTo: js.Object): Unit
   def resetValue(key: String): Unit

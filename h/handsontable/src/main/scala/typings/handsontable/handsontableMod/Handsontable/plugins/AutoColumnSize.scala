@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AutoColumnSize extends BasePlugin {
+trait AutoColumnSize extends Base {
   var firstCalculation: Boolean = js.native
   var ghostTable: GhostTable = js.native
   var inProgress: Boolean = js.native

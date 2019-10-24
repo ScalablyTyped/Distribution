@@ -17,14 +17,14 @@ trait HaystackEdges extends js.Object {
     * A value between 0 and 1 inclusive that indicates the relative radius used to position haystack edges on their connected nodes.
     * The outside of the node is at 1, and the centre of the node is at 0.
     */
-  var `haystack-radius`: Double
+  var `haystack-radius`: PropertyValueEdge[Double]
 }
 
 object HaystackEdges {
   @scala.inline
-  def apply(`haystack-radius`: Double): HaystackEdges = {
+  def apply(`haystack-radius`: PropertyValueEdge[Double]): HaystackEdges = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("haystack-radius")(`haystack-radius`)
+    __obj.updateDynamic("haystack-radius")(`haystack-radius`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HaystackEdges]
   }
 }

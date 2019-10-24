@@ -10,11 +10,15 @@ import scala.scalajs.js.annotation._
   - typings.cypress.cypressStrings.`macbook-11`
   - typings.cypress.cypressStrings.`ipad-2`
   - typings.cypress.cypressStrings.`ipad-mini`
+  - typings.cypress.cypressStrings.`iphone-xr`
+  - typings.cypress.cypressStrings.`iphone-x`
   - typings.cypress.cypressStrings.`iphone-6+`
   - typings.cypress.cypressStrings.`iphone-6`
   - typings.cypress.cypressStrings.`iphone-5`
   - typings.cypress.cypressStrings.`iphone-4`
   - typings.cypress.cypressStrings.`iphone-3`
+  - typings.cypress.cypressStrings.`samsung-s10`
+  - typings.cypress.cypressStrings.`samsung-note9`
 */
 trait ViewportPreset extends js.Object
 

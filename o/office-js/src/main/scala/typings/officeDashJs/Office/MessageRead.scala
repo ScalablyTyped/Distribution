@@ -39,7 +39,7 @@ trait MessageRead extends Message {
     * current item.
     *
     * The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. 
-    * The collection is limited to a maximum of 100 members.
+    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -241,7 +241,7 @@ trait MessageRead extends Message {
     * current item.
     *
     * The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. 
-    * The collection is limited to a maximum of 100 members.
+    * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
     * [Api set: Mailbox 1.0]
     *

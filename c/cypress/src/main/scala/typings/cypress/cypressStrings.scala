@@ -9,6 +9,7 @@ import typings.cypress.Cypress.ViewportPreset
 import typings.cypress.JQuery.Ajax.ErrorTextStatus
 import typings.cypress.JQuery.Ajax.SuccessTextStatus
 import typings.cypress.JQuery._Duration
+import typings.cypress.JQuery.__Falsy
 import typings.cypress.Mocha.Interface
 import typings.cypress.Mocha.Reporter
 import scala.scalajs.js
@@ -39,6 +40,9 @@ object cypressStrings {
   
   @js.native
   sealed trait Electron extends js.Object
+  
+  @js.native
+  sealed trait Empty extends __Falsy
   
   @js.native
   sealed trait FireFox extends js.Object
@@ -77,6 +81,9 @@ object cypressStrings {
   sealed trait Progress extends Reporter
   
   @js.native
+  sealed trait Promise extends js.Object
+  
+  @js.native
   sealed trait ResolvableProps extends js.Object
   
   @js.native
@@ -90,6 +97,9 @@ object cypressStrings {
   
   @js.native
   sealed trait XUnit extends Reporter
+  
+  @js.native
+  sealed trait _TypeEventHandlers extends js.Object
   
   @js.native
   sealed trait a extends js.Object
@@ -336,6 +346,9 @@ object cypressStrings {
   
   @js.native
   sealed trait br extends js.Object
+  
+  @js.native
+  sealed trait bundled extends js.Object
   
   @js.native
   sealed trait button extends js.Object
@@ -629,6 +642,9 @@ object cypressStrings {
   sealed trait function extends js.Object
   
   @js.native
+  sealed trait get extends js.Object
+  
+  @js.native
   sealed trait gotpointercapture extends js.Object
   
   @js.native
@@ -824,6 +840,12 @@ object cypressStrings {
   sealed trait `iphone-6+` extends ViewportPreset
   
   @js.native
+  sealed trait `iphone-x` extends ViewportPreset
+  
+  @js.native
+  sealed trait `iphone-xr` extends ViewportPreset
+  
+  @js.native
   sealed trait json extends Reporter
   
   @js.native
@@ -972,6 +994,9 @@ object cypressStrings {
   
   @js.native
   sealed trait nocontent extends SuccessTextStatus
+  
+  @js.native
+  sealed trait nodeVersion extends js.Object
   
   @js.native
   sealed trait noscript extends js.Object
@@ -1403,6 +1428,12 @@ object cypressStrings {
   sealed trait resolved extends js.Object
   
   @js.native
+  sealed trait resolvedNodePath extends js.Object
+  
+  @js.native
+  sealed trait resolvedNodeVersion extends js.Object
+  
+  @js.native
   sealed trait respondTo extends js.Object
   
   @js.native
@@ -1434,6 +1465,12 @@ object cypressStrings {
   
   @js.native
   sealed trait samp extends js.Object
+  
+  @js.native
+  sealed trait `samsung-note9` extends ViewportPreset
+  
+  @js.native
+  sealed trait `samsung-s10` extends ViewportPreset
   
   @js.native
   sealed trait satisfy extends js.Object
@@ -1470,6 +1507,9 @@ object cypressStrings {
   
   @js.native
   sealed trait selectstart extends js.Object
+  
+  @js.native
+  sealed trait set extends js.Object
   
   @js.native
   sealed trait setInterval extends js.Object
@@ -1542,6 +1582,9 @@ object cypressStrings {
   
   @js.native
   sealed trait symbol extends js.Object
+  
+  @js.native
+  sealed trait system extends js.Object
   
   @js.native
   sealed trait table extends js.Object
@@ -1776,6 +1819,8 @@ object cypressStrings {
   @scala.inline
   def Electron: Electron = "Electron".asInstanceOf[Electron]
   @scala.inline
+  def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def FireFox: FireFox = "FireFox".asInstanceOf[FireFox]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
@@ -1800,6 +1845,8 @@ object cypressStrings {
   @scala.inline
   def Progress: Progress = "Progress".asInstanceOf[Progress]
   @scala.inline
+  def Promise: Promise = "Promise".asInstanceOf[Promise]
+  @scala.inline
   def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
   @scala.inline
   def SinonStubbedInstance: SinonStubbedInstance = "SinonStubbedInstance".asInstanceOf[SinonStubbedInstance]
@@ -1809,6 +1856,8 @@ object cypressStrings {
   def TAP: TAP = "TAP".asInstanceOf[TAP]
   @scala.inline
   def XUnit: XUnit = "XUnit".asInstanceOf[XUnit]
+  @scala.inline
+  def _TypeEventHandlers: _TypeEventHandlers = "_TypeEventHandlers".asInstanceOf[_TypeEventHandlers]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
@@ -1973,6 +2022,8 @@ object cypressStrings {
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   @scala.inline
   def br: br = "br".asInstanceOf[br]
+  @scala.inline
+  def bundled: bundled = "bundled".asInstanceOf[bundled]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
@@ -2168,6 +2219,8 @@ object cypressStrings {
   @scala.inline
   def function: function = "function".asInstanceOf[function]
   @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
@@ -2298,6 +2351,10 @@ object cypressStrings {
   @scala.inline
   def `iphone-6+`: `iphone-6+` = "iphone-6+".asInstanceOf[`iphone-6+`]
   @scala.inline
+  def `iphone-x`: `iphone-x` = "iphone-x".asInstanceOf[`iphone-x`]
+  @scala.inline
+  def `iphone-xr`: `iphone-xr` = "iphone-xr".asInstanceOf[`iphone-xr`]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
   def `json-stream`: `json-stream` = "json-stream".asInstanceOf[`json-stream`]
@@ -2397,6 +2454,8 @@ object cypressStrings {
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline
   def nocontent: nocontent = "nocontent".asInstanceOf[nocontent]
+  @scala.inline
+  def nodeVersion: nodeVersion = "nodeVersion".asInstanceOf[nodeVersion]
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
@@ -2684,6 +2743,10 @@ object cypressStrings {
   @scala.inline
   def resolved: resolved = "resolved".asInstanceOf[resolved]
   @scala.inline
+  def resolvedNodePath: resolvedNodePath = "resolvedNodePath".asInstanceOf[resolvedNodePath]
+  @scala.inline
+  def resolvedNodeVersion: resolvedNodeVersion = "resolvedNodeVersion".asInstanceOf[resolvedNodeVersion]
+  @scala.inline
   def respondTo: respondTo = "respondTo".asInstanceOf[respondTo]
   @scala.inline
   def responseTimeout: responseTimeout = "responseTimeout".asInstanceOf[responseTimeout]
@@ -2705,6 +2768,10 @@ object cypressStrings {
   def s: s = "s".asInstanceOf[s]
   @scala.inline
   def samp: samp = "samp".asInstanceOf[samp]
+  @scala.inline
+  def `samsung-note9`: `samsung-note9` = "samsung-note9".asInstanceOf[`samsung-note9`]
+  @scala.inline
+  def `samsung-s10`: `samsung-s10` = "samsung-s10".asInstanceOf[`samsung-s10`]
   @scala.inline
   def satisfy: satisfy = "satisfy".asInstanceOf[satisfy]
   @scala.inline
@@ -2729,6 +2796,8 @@ object cypressStrings {
   def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
   @scala.inline
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
   @scala.inline
   def setInterval: setInterval = "setInterval".asInstanceOf[setInterval]
   @scala.inline
@@ -2777,6 +2846,8 @@ object cypressStrings {
   def swing: swing = "swing".asInstanceOf[swing]
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
+  def system: system = "system".asInstanceOf[system]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline

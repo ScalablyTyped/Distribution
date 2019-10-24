@@ -25,34 +25,34 @@ trait PieChartBackground extends js.Object {
   /**
     * The colour of the node’s ith pie chart slice.
     */
-  var `pie-i-background-color`: Colour
+  var `pie-i-background-color`: PropertyValueNode[Colour]
   /**
     * The opacity of the node’s ith pie chart slice.
     */
-  var `pie-i-background-opacity`: Double
+  var `pie-i-background-opacity`: PropertyValueNode[Double]
   /**
     * The size of the node’s ith pie chart slice, measured in percent (e.g. 25% or 25).
     */
-  var `pie-i-background-size`: Double
+  var `pie-i-background-size`: PropertyValueNode[Double]
   /**
     * The diameter of the pie, measured as a percent of node size (e.g. 100%) or an absolute length (e.g. 25px).
     */
-  var `pie-size`: String
+  var `pie-size`: PropertyValueNode[String]
 }
 
 object PieChartBackground {
   @scala.inline
   def apply(
-    `pie-i-background-color`: Colour,
-    `pie-i-background-opacity`: Double,
-    `pie-i-background-size`: Double,
-    `pie-size`: String
+    `pie-i-background-color`: PropertyValueNode[Colour],
+    `pie-i-background-opacity`: PropertyValueNode[Double],
+    `pie-i-background-size`: PropertyValueNode[Double],
+    `pie-size`: PropertyValueNode[String]
   ): PieChartBackground = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pie-i-background-color")(`pie-i-background-color`)
-    __obj.updateDynamic("pie-i-background-opacity")(`pie-i-background-opacity`)
-    __obj.updateDynamic("pie-i-background-size")(`pie-i-background-size`)
-    __obj.updateDynamic("pie-size")(`pie-size`)
+    __obj.updateDynamic("pie-i-background-color")(`pie-i-background-color`.asInstanceOf[js.Any])
+    __obj.updateDynamic("pie-i-background-opacity")(`pie-i-background-opacity`.asInstanceOf[js.Any])
+    __obj.updateDynamic("pie-i-background-size")(`pie-i-background-size`.asInstanceOf[js.Any])
+    __obj.updateDynamic("pie-size")(`pie-size`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieChartBackground]
   }
 }

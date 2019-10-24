@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "eslint-scope"
-version := "3.7-dt-20180217Z-90952b"
+version := "3.7-dt-20180217Z-34193e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "eslint" % "6.1-dt-20191002Z-33ba94",
+  "org.scalablytyped" %%% "eslint" % "6.1-dt-20191023Z-03936c",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-3c0f0e",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190717Z-94fac0",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")

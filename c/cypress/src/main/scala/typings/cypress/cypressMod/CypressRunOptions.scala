@@ -1,5 +1,6 @@
 package typings.cypress.cypressMod
 
+import typings.cypress.cypressNumbers.`false`
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation._
   })
   ```
   */
-trait CypressRunOptions extends js.Object {
+trait CypressRunOptions extends CypressCommonOptions {
   /**
     * Specify different browser to run tests in, either by name or by filesystem path
     */
@@ -34,14 +35,6 @@ trait CypressRunOptions extends js.Object {
     * Specify a unique identifier for a run to enable grouping or parallelization
     */
   var ciBuildId: String
-  /**
-    * Specify configuration
-    */
-  var config: Partial[CypressConfiguration]
-  /**
-    * Specify environment variables
-    */
-  var env: js.Object
   /**
     * Group recorded tests together under a single run name
     */
@@ -67,10 +60,6 @@ trait CypressRunOptions extends js.Object {
     */
   var port: Double
   /**
-    * Path to a specific project
-    */
-  var project: String
-  /**
     * Whether to record the test run
     */
   var record: Boolean
@@ -94,6 +83,7 @@ object CypressRunOptions {
     browser: String,
     ciBuildId: String,
     config: Partial[CypressConfiguration],
+    configFile: String | `false`,
     env: js.Object,
     group: String,
     headed: Boolean,
@@ -107,7 +97,7 @@ object CypressRunOptions {
     reporterOptions: js.Any,
     spec: String
   ): CypressRunOptions = {
-    val __obj = js.Dynamic.literal(browser = browser, ciBuildId = ciBuildId, config = config, env = env, group = group, headed = headed, key = key, noExit = noExit, parallel = parallel, port = port, project = project, record = record, reporter = reporter, reporterOptions = reporterOptions, spec = spec)
+    val __obj = js.Dynamic.literal(browser = browser, ciBuildId = ciBuildId, config = config, configFile = configFile.asInstanceOf[js.Any], env = env, group = group, headed = headed, key = key, noExit = noExit, parallel = parallel, port = port, project = project, record = record, reporter = reporter, reporterOptions = reporterOptions, spec = spec)
   
     __obj.asInstanceOf[CypressRunOptions]
   }

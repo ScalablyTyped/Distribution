@@ -384,13 +384,34 @@ object cytoscapeStrings {
   sealed trait right extends js.Object
   
   @js.native
+  sealed trait `round-diamond` extends NodeShape
+  
+  @js.native
+  sealed trait `round-heptagon` extends NodeShape
+  
+  @js.native
+  sealed trait `round-hexagon` extends NodeShape
+  
+  @js.native
+  sealed trait `round-octagon` extends NodeShape
+  
+  @js.native
+  sealed trait `round-pentagon` extends NodeShape
+  
+  @js.native
+  sealed trait `round-rectangle` extends NodeShape
+  
+  @js.native
+  sealed trait `round-tag` extends NodeShape
+  
+  @js.native
+  sealed trait `round-triangle` extends NodeShape
+  
+  @js.native
   sealed trait roundrectangle extends NodeShape
   
   @js.native
   sealed trait scratch extends CollectionEventName
-  
-  @js.native
-  sealed trait `segment-weights` extends js.Object
   
   @js.native
   sealed trait segments extends js.Object
@@ -758,11 +779,25 @@ object cytoscapeStrings {
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
+  def `round-diamond`: `round-diamond` = "round-diamond".asInstanceOf[`round-diamond`]
+  @scala.inline
+  def `round-heptagon`: `round-heptagon` = "round-heptagon".asInstanceOf[`round-heptagon`]
+  @scala.inline
+  def `round-hexagon`: `round-hexagon` = "round-hexagon".asInstanceOf[`round-hexagon`]
+  @scala.inline
+  def `round-octagon`: `round-octagon` = "round-octagon".asInstanceOf[`round-octagon`]
+  @scala.inline
+  def `round-pentagon`: `round-pentagon` = "round-pentagon".asInstanceOf[`round-pentagon`]
+  @scala.inline
+  def `round-rectangle`: `round-rectangle` = "round-rectangle".asInstanceOf[`round-rectangle`]
+  @scala.inline
+  def `round-tag`: `round-tag` = "round-tag".asInstanceOf[`round-tag`]
+  @scala.inline
+  def `round-triangle`: `round-triangle` = "round-triangle".asInstanceOf[`round-triangle`]
+  @scala.inline
   def roundrectangle: roundrectangle = "roundrectangle".asInstanceOf[roundrectangle]
   @scala.inline
   def scratch: scratch = "scratch".asInstanceOf[scratch]
-  @scala.inline
-  def `segment-weights`: `segment-weights` = "segment-weights".asInstanceOf[`segment-weights`]
   @scala.inline
   def segments: segments = "segments".asInstanceOf[segments]
   @scala.inline

@@ -1,10 +1,16 @@
 package typings.cypress.JQuery
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SpeedSettings[TElement] extends js.Object {
+// #endregion
+// region Speed
+// #region Speed
+// Workaround for TypeScript 2.3 which does not have support for weak types handling.
+trait SpeedSettings[TElement]
+  extends /* key */ StringDictionary[scala.Nothing] {
   /**
     * A function to call once the animation is complete.
     */
@@ -22,11 +28,13 @@ trait SpeedSettings[TElement] extends js.Object {
 object SpeedSettings {
   @scala.inline
   def apply[TElement](
+    StringDictionary: /* key */ StringDictionary[scala.Nothing] = null,
     complete: js.ThisFunction0[/* this */ TElement, Unit] = null,
     duration: Duration = null,
     easing: String = null
   ): SpeedSettings[TElement] = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)
