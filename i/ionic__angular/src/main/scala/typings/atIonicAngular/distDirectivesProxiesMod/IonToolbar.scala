@@ -8,10 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonToolbar * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonToolbar")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonToolbar")
 @js.native
-class IonToolbar protected () extends js.Object {
+class IonToolbar protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonToolbar {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var z: NgZone = js.native

@@ -51,20 +51,20 @@ trait QuickPick[T /* <: QuickPickItem */] extends QuickInput {
   /**
   		 * An event signaling when the active items have changed.
   		 */
-  def onDidChangeActive(listener: js.Function1[/* e */ js.Array[js.Array[T]], _]): Disposable = js.native
-  def onDidChangeActive(listener: js.Function1[/* e */ js.Array[js.Array[T]], _], thisArgs: js.Any): Disposable = js.native
+  def onDidChangeActive(listener: js.Function1[/* e */ js.Array[T], _]): Disposable = js.native
+  def onDidChangeActive(listener: js.Function1[/* e */ js.Array[T], _], thisArgs: js.Any): Disposable = js.native
   def onDidChangeActive(
-    listener: js.Function1[/* e */ js.Array[js.Array[T]], _],
+    listener: js.Function1[/* e */ js.Array[T], _],
     thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
   /**
   		 * An event signaling when the selected items have changed.
   		 */
-  def onDidChangeSelection(listener: js.Function1[/* e */ js.Array[js.Array[T]], _]): Disposable = js.native
-  def onDidChangeSelection(listener: js.Function1[/* e */ js.Array[js.Array[T]], _], thisArgs: js.Any): Disposable = js.native
+  def onDidChangeSelection(listener: js.Function1[/* e */ js.Array[T], _]): Disposable = js.native
+  def onDidChangeSelection(listener: js.Function1[/* e */ js.Array[T], _], thisArgs: js.Any): Disposable = js.native
   def onDidChangeSelection(
-    listener: js.Function1[/* e */ js.Array[js.Array[T]], _],
+    listener: js.Function1[/* e */ js.Array[T], _],
     thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native

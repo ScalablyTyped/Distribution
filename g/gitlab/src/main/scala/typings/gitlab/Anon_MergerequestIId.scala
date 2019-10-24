@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.distServicesMod.MergeRequestId
+import typings.gitlab.distSrcCoreServicesMod.MergeRequestId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

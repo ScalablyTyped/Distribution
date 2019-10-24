@@ -1,6 +1,9 @@
 package typings.atStorybookHtml.distClientPreviewMod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookAddons.distTypesMod.DecoratorFunction
+import typings.atStorybookAddons.distTypesMod.StoryApi
+import typings.atStorybookHtml.distClientPreviewTypesMod.StoryFnHtmlReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +12,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object addDecorator
   extends TopLevel[
-      /* import warning: ImportType.apply Failed type conversion: @storybook/html.@storybook/html/dist/client/preview.ClientApi['addDecorator'] */ js.Any
+      js.Function1[
+        /* decorator */ DecoratorFunction[StoryFnHtmlReturnType], 
+        StoryApi[StoryFnHtmlReturnType]
+      ]
     ]
 

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonCheckbox
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCheckbox */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCheckbox with (Pick[
           HTMLAttributes[HTMLIonCheckboxElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonCheckboxElement]

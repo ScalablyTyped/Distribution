@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonItemGroup
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemGroup */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemGroup with (Pick[
           HTMLAttributes[HTMLIonItemGroupElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonItemGroupElement]

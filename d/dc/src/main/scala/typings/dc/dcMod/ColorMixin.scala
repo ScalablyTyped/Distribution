@@ -18,17 +18,17 @@ trait ColorMixin[T] extends js.Object {
   var colors_Original: IGetSet[js.Array[String] | (Scale[String | Color]) | String, T] = js.native
   def calculateColorDomain(): Unit = js.native
   def colorAccessor(): Accessor[_, Double] = js.native
-  def colorAccessor(t: Accessor[_, Double]): Accessor[_, Double] = js.native
+  def colorAccessor(t: Accessor[_, Double]): T = js.native
   def colorCalculator(): Accessor[_, String] = js.native
-  def colorCalculator(t: Accessor[_, String]): Accessor[_, String] = js.native
+  def colorCalculator(t: Accessor[_, String]): T = js.native
   def colorDomain(): js.Array[_] = js.native
-  def colorDomain(t: js.Array[_]): js.Array[_] = js.native
+  def colorDomain(t: js.Array[_]): T = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.colorMixin.html
   def colors(): js.Array[String] | (Scale[String | Color]) | String = js.native
-  def colors(t: String): js.Array[String] | (Scale[String | Color]) | String = js.native
+  def colors(t: String): T = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.colorMixin.html
-  def colors(t: js.Array[String]): js.Array[String] | (Scale[String | Color]) | String = js.native
-  def colors(t: Scale[String | Color]): js.Array[String] | (Scale[String | Color]) | String = js.native
+  def colors(t: js.Array[String]): T = js.native
+  def colors(t: Scale[String | Color]): T = js.native
   def getColor(datum: js.Any): String = js.native
   def getColor(datum: js.Any, index: Double): String = js.native
   def linearColors(r: js.Array[String]): T = js.native

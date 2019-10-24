@@ -1,6 +1,7 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
 import typings.atIonicReact.distTypesComponentsCreateControllerComponentMod.ReactControllerProps
 import typings.react.reactMod.Context
 import scala.scalajs.js
@@ -12,13 +13,12 @@ import scala.scalajs.js.annotation._
 object distTypesComponentsIonToastMod extends js.Object {
   @js.native
   class IonToast protected () extends Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext {
-    def this(props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastOptions */ js.Any) with ReactControllerProps) = this()
+    def this(props: ToastOptions with ReactControllerProps) = this()
   }
   
   @js.native
-  object IonToast
-    extends Instantiable1[
-          /* props */ (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastOptions */ js.Any) with ReactControllerProps, 
+  object IonToast extends Instantiable1[
+          /* props */ ToastOptions with ReactControllerProps, 
           Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext
         ] {
     var contextType: js.UndefOr[Context[_]] = js.native

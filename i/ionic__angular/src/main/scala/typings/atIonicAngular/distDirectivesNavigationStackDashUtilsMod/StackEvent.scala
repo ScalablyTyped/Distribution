@@ -1,14 +1,14 @@
 package typings.atIonicAngular.distDirectivesNavigationStackDashUtilsMod
 
+import typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod.NavDirection
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StackEvent extends js.Object {
-  var animation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavDirection */ js.Any
-  ] = js.undefined
-  var direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
+  var animation: js.UndefOr[NavDirection] = js.undefined
+  var direction: RouterDirection
   var enteringView: RouteView
   var tabSwitch: Boolean
 }
@@ -16,10 +16,10 @@ trait StackEvent extends js.Object {
 object StackEvent {
   @scala.inline
   def apply(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any,
+    direction: RouterDirection,
     enteringView: RouteView,
     tabSwitch: Boolean,
-    animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavDirection */ js.Any = null
+    animation: NavDirection = null
   ): StackEvent = {
     val __obj = js.Dynamic.literal(direction = direction, enteringView = enteringView, tabSwitch = tabSwitch)
     if (animation != null) __obj.updateDynamic("animation")(animation)

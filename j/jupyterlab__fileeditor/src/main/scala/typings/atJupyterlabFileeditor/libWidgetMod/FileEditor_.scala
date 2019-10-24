@@ -1,8 +1,5 @@
 package typings.atJupyterlabFileeditor.libWidgetMod
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IModel
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabFileeditor.libWidgetMod.FileEditor.IOptions
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import typings.std.Event
@@ -17,7 +14,7 @@ class FileEditor_ protected () extends Widget {
     * Construct a new editor widget.
     */
   def this(options: IOptions) = this()
-  var _context: Context = js.native
+  var _context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * Ensure that the widget has focus.
     */
@@ -30,10 +27,10 @@ class FileEditor_ protected () extends Widget {
   /**
     * Get the context for the editor widget.
     */
-  val context: Context = js.native
-  var editor: IEditor = js.native
+  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
+  var editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any = js.native
   var editorWidget: js.Any = js.native
-  var model: IModel = js.native
+  var model: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IModel */ js.Any = js.native
   /**
     * A promise that resolves when the file editor is ready.
     */

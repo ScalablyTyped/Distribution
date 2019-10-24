@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tcomb"
-version := "3.2.29-838784"
+version := "3.2.29-b265b3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

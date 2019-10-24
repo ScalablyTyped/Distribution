@@ -1,6 +1,5 @@
 package typings.atJupyterlabInspector.libHandlerMod
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabInspector.libHandlerMod.InspectionHandler.IOptions
 import typings.atJupyterlabInspector.libTokensMod.IInspector.IInspectorUpdate
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
@@ -42,7 +41,7 @@ class InspectionHandler_ protected () extends IDisposable {
   /**
     * The editor widget used by the inspection handler.
     */
-  var editor: IEditor | Null = js.native
+  var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null = js.native
   /**
     * A signal emitted when an inspector value is generated.
     */

@@ -8,10 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonCol * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonCol")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonCol")
 @js.native
-class IonCol protected () extends js.Object {
+class IonCol protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonCol {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var z: NgZone = js.native

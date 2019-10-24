@@ -58,7 +58,7 @@ trait ParseRule extends js.Object {
     * this function is used.
     */
   var getContent: js.UndefOr[
-    (js.Function2[/* p */ typings.std.Node, /* schema */ Schema[_, _], Fragment[Schema[_, _]]]) | Null
+    (js.Function2[/* p */ typings.std.Node, /* schema */ js.Any, Fragment[_]]) | Null
   ] = js.undefined
   /**
     * When true, ignore content that matches this rule.
@@ -127,7 +127,7 @@ object ParseRule {
     contentElement: String | (js.Function1[/* p */ typings.std.Node, typings.std.Node]) = null,
     context: String = null,
     getAttrs: /* p */ typings.std.Node | String => js.UndefOr[StringDictionary[_] | `false` | Null] = null,
-    getContent: (/* p */ typings.std.Node, /* schema */ Schema[_, _]) => Fragment[Schema[_, _]] = null,
+    getContent: (/* p */ typings.std.Node, /* schema */ js.Any) => Fragment[_] = null,
     ignore: js.UndefOr[Boolean] = js.undefined,
     mark: String = null,
     namespace: String = null,

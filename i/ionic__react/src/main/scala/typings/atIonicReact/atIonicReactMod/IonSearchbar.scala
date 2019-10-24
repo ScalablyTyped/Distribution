@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonSearchbar
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSearchbar */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSearchbar with (Pick[
           HTMLAttributes[HTMLIonSearchbarElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonSearchbarElement]

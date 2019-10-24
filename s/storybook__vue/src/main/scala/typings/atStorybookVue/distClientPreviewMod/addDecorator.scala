@@ -1,6 +1,9 @@
 package typings.atStorybookVue.distClientPreviewMod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookAddons.distTypesMod.DecoratorFunction
+import typings.atStorybookAddons.distTypesMod.StoryApi
+import typings.atStorybookVue.distClientPreviewTypesMod.StoryFnVueReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +12,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object addDecorator
   extends TopLevel[
-      /* import warning: ImportType.apply Failed type conversion: @storybook/vue.@storybook/vue/dist/client/preview.ClientApi['addDecorator'] */ js.Any
+      js.Function1[
+        /* decorator */ DecoratorFunction[StoryFnVueReturnType], 
+        StoryApi[StoryFnVueReturnType]
+      ]
     ]
 

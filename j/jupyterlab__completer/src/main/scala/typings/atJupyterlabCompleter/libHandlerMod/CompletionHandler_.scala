@@ -1,7 +1,5 @@
 package typings.atJupyterlabCompleter.libHandlerMod
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IPosition
 import typings.atJupyterlabCompleter.libHandlerMod.CompletionHandler.IOptions
 import typings.atJupyterlabCompleter.libHandlerMod.CompletionHandler.IReply
 import typings.atJupyterlabCompleter.libHandlerMod.CompletionHandler.IRequest
@@ -54,7 +52,7 @@ class CompletionHandler_ protected () extends IDisposable {
   /**
     * The editor used by the completion handler.
     */
-  var editor: IEditor | Null = js.native
+  var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null = js.native
   /**
     * Test whether the object has been disposed.
     *
@@ -79,7 +77,10 @@ class CompletionHandler_ protected () extends IDisposable {
   /**
     * Get the state of the text editor at the given position.
     */
-  /* protected */ def getState(editor: IEditor, position: IPosition): ITextState = js.native
+  /* protected */ def getState(
+    editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any,
+    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IPosition */ js.Any
+  ): ITextState = js.native
   /**
     * Invoke the handler and launch a completer.
     */

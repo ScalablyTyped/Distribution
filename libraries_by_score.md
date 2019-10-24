@@ -7071,6 +7071,7 @@
 | 0.2017824197657338 | [material__icon-toggle](./m/material__icon-toggle) | The Material Components for the web icon toggle co
 | 0.20134707995081297 | [react-native-draggable-fl](./r/react-native-draggable-flatlist) | A drag-and-drop-enabled FlatList component for Rea
 | 0.20080922345309998 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer) | JupyterLab - Markdown viewer Widget
+| 0.20080708367936934 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search
 | 0.2007227286225471 | [aws-crypto__sha256-univer](./a/aws-crypto__sha256-universal) | A consistent interface for SHA256 across browsers 
 | 0.20066961829356728 | [swfobject](./s/swfobject) | SWFObject is an easy-to-use and standards-friendly
 | 0.2004926436806096 | [jupyterlab__vdom](./j/jupyterlab__vdom) | A viewer for VDOM documents.
@@ -7084,6 +7085,7 @@
 | 0.19843611538085618 | [aws-crypto__sha256-js](./a/aws-crypto__sha256-js) | A pure JS implementation SHA256.
 | 0.1984100919680944 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object.
 | 0.19775049523529142 | [lodash_dot_unescape](./l/lodash_dot_unescape) | The lodash method _.unescape exported as a module.
+| 0.1976327036199682 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types
 | 0.1972438591092262 | [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer 
 | 0.19697897963657768 | [lodash_dot_union](./l/lodash_dot_union) | The lodash method _.union exported as a module.
 | 0.19671182392319322 | [operation-retrier](./o/operation-retrier) | -

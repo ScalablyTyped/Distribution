@@ -10,10 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonItemSliding * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonItemSliding")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonItemSliding")
 @js.native
-class IonItemSliding protected () extends js.Object {
+class IonItemSliding protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonItemSliding {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var ionDrag: EventEmitter[CustomEvent[_]] = js.native

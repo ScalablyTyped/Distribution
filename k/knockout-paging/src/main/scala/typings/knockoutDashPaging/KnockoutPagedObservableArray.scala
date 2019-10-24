@@ -46,8 +46,8 @@ trait KnockoutPagedObservableArray[T] extends KnockoutObservableArray[T] {
   def lastItemOnPage(value: Double): Unit = js.native
   def pageCount(): Double = js.native
   def pageCount(value: Double): Unit = js.native
-  def pageItems(): js.Array[js.Array[js.Array[js.Array[T]]]] = js.native
-  def pageItems(value: js.Array[js.Array[js.Array[js.Array[T]]]]): Unit = js.native
+  def pageItems(): js.Array[T] = js.native
+  def pageItems(value: js.Array[T]): Unit = js.native
   def pageNumber(): Double = js.native
   def pageNumber(value: Double): Unit = js.native
   def pageSize(): Double = js.native

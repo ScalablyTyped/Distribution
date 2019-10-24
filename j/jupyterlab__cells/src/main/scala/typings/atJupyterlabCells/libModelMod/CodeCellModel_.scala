@@ -9,10 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable because Already inherited
-- typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IModel because Already inherited
 - typings.atJupyterlabCells.libModelMod.ICellModel because Already inherited
-- typings.atJupyterlabCells.libModelMod.ICodeCellModel because var conflicts: mimeType, mimeTypeChanged, trusted. Inlined executionCount, outputs */ @JSImport("@jupyterlab/cells/lib/model", "CodeCellModel")
+- typings.atJupyterlabCells.libModelMod.ICodeCellModel because var conflicts: trusted. Inlined executionCount, outputs */ @JSImport("@jupyterlab/cells/lib/model", "CodeCellModel")
 @js.native
 class CodeCellModel_ protected () extends CellModel {
   /**
@@ -37,5 +35,9 @@ class CodeCellModel_ protected () extends CellModel {
     */
   @JSName("type")
   val type_CodeCellModel_ : code = js.native
+  /**
+    * Dispose of the resources held by the model.
+    */
+  def dispose(): Unit = js.native
 }
 

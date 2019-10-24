@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-hapi"
-version := "0.7-dt-20181022Z-cbe687"
+version := "0.7-dt-20181022Z-79469a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,9 +12,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-5c770f",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-64180e",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-8fd375",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20191014Z-9dc2d5",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20191014Z-6a198a",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-8d9620",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-c7c4ce",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-c14a93",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-7db5f5",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-1cc445",
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-1b376d",
   "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-a556f3",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "swagger-node-runner" % "0.6-dt-20190212Z-9c49e4",
+  "org.scalablytyped" %%% "swagger-node-runner" % "0.6-dt-20190212Z-47d1e4",
   "org.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20191016Z-573f87")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

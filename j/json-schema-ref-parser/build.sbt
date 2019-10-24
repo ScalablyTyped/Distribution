@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-schema-ref-parser"
-version := "7.1.1-60f050"
+version := "7.1.2-7a7a4a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

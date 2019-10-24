@@ -5,6 +5,7 @@ import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularRouter.atAngularRouterMod.Router
 import typings.atAngularRouter.atAngularRouterMod.RouterLink
 import typings.atIonicAngular.distProvidersNavDashControllerMod.NavController
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +33,7 @@ object distDirectivesNavigationRouterDashLinkDashDelegateMod extends js.Object {
     var locationStrategy: js.Any = js.native
     var navCtrl: js.Any = js.native
     var router: js.Any = js.native
-    var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = js.native
+    var routerDirection: RouterDirection = js.native
     var routerLink: js.UndefOr[js.Any] = js.native
     var subscription: js.UndefOr[js.Any] = js.native
     var updateTargetUrlAndHref: js.Any = js.native

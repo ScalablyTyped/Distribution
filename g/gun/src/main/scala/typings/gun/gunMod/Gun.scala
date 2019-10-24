@@ -12,6 +12,7 @@ import typings.gun.Anon_Data
 import typings.gun.Anon_Err
 import typings.gun.Anon_ErrOk
 import typings.gun.Anon_ErrString
+import typings.gun.Anon_False
 import typings.gun.Anon_File
 import typings.gun.Anon_SessionStorage
 import typings.gun.Anon_Wait
@@ -145,8 +146,13 @@ object Gun extends js.Object {
       */
     var promise: js.UndefOr[
         js.Function1[
-          /* onfulfilled */ js.UndefOr[js.Function1[/* value */ js.Any, _ | js.Thenable[_]]], 
-          js.Promise[_]
+          /* onfulfilled */ js.UndefOr[
+            js.Function1[
+              /* value */ Anon_False[DataType, ReferenceKey], 
+              (Anon_False[DataType, ReferenceKey]) | (js.Thenable[Anon_False[DataType, ReferenceKey]])
+            ]
+          ], 
+          js.Promise[Anon_False[DataType, ReferenceKey]]
         ]
       ] = js.native
     /**
@@ -157,8 +163,13 @@ object Gun extends js.Object {
       */
     var `then`: js.UndefOr[
         js.Function1[
-          /* onfulfilled */ js.UndefOr[js.Function1[/* value */ js.Any, _ | js.Thenable[_]]], 
-          js.Promise[_]
+          /* onfulfilled */ js.UndefOr[
+            js.Function1[
+              /* value */ ArrayAsRecord[DataType], 
+              ArrayAsRecord[DataType] | js.Thenable[ArrayAsRecord[DataType]]
+            ]
+          ], 
+          js.Promise[ArrayAsRecord[DataType]]
         ]
       ] = js.native
     /**

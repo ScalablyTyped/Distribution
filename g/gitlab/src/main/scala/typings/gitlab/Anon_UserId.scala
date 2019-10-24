@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.distServicesMod.UserId
+import typings.gitlab.distSrcCoreServicesMod.UserId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

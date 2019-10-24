@@ -9,6 +9,7 @@ import typings.atIonicAngular.atIonicAngularStrings.back
 import typings.atIonicAngular.atIonicAngularStrings.forward
 import typings.atIonicAngular.distDirectivesNavigationIonDashRouterDashOutletMod.IonRouterOutlet
 import typings.atIonicAngular.distProvidersPlatformMod.Platform
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -120,25 +121,12 @@ class NavController protected () extends js.Object {
     *
     * It's recommended to use `navigateForward()`, `navigateBack()` and `navigateRoot()` instead of `setDirection()`.
     */
-  def setDirection(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
-  ): Unit = js.native
-  def setDirection(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any,
-    animated: Boolean
-  ): Unit = js.native
+  def setDirection(direction: RouterDirection): Unit = js.native
+  def setDirection(direction: RouterDirection, animated: Boolean): Unit = js.native
   @JSName("setDirection")
-  def setDirection_back(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any,
-    animated: Boolean,
-    animationDirection: back
-  ): Unit = js.native
+  def setDirection_back(direction: RouterDirection, animated: Boolean, animationDirection: back): Unit = js.native
   @JSName("setDirection")
-  def setDirection_forward(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any,
-    animated: Boolean,
-    animationDirection: forward
-  ): Unit = js.native
+  def setDirection_forward(direction: RouterDirection, animated: Boolean, animationDirection: forward): Unit = js.native
   /**
     * @internal
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-elements"
-version := "1.2.6-62bb44"
+version := "1.2.6-c49ba9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

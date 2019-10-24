@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "redux-batched-actions"
-version := "0.4.1-9d1a1e"
+version := "0.4.1-17c867"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.4-8412ae",
+  "org.scalablytyped" %%% "redux" % "4.0.4-783f8a",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

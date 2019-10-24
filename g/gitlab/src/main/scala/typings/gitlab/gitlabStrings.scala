@@ -1,10 +1,10 @@
 package typings.gitlab
 
-import typings.gitlab.distServicesMod.ImpersonationTokenScope
-import typings.gitlab.distServicesMod.JobScope
-import typings.gitlab.distServicesMod.NotificationSettingLevel
-import typings.gitlab.distServicesMod.SnippetVisibility
-import typings.gitlab.distServicesMod.SupportedService
+import typings.gitlab.distSrcCoreServicesMod.ImpersonationTokenScope
+import typings.gitlab.distSrcCoreServicesMod.JobScope
+import typings.gitlab.distSrcCoreServicesMod.NotificationSettingLevel
+import typings.gitlab.distSrcCoreServicesMod.SnippetVisibility
+import typings.gitlab.distSrcCoreServicesMod.SupportedService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -75,6 +75,9 @@ object gitlabStrings {
   
   @js.native
   sealed trait GroupIssueBoards extends js.Object
+  
+  @js.native
+  sealed trait GroupLabels extends js.Object
   
   @js.native
   sealed trait GroupMembers extends js.Object
@@ -332,6 +335,9 @@ object gitlabStrings {
   sealed trait `emails-on-push` extends SupportedService
   
   @js.native
+  sealed trait execution extends js.Object
+  
+  @js.native
   sealed trait expired extends js.Object
   
   @js.native
@@ -387,6 +393,9 @@ object gitlabStrings {
   
   @js.native
   sealed trait `mattermost-slash-commands` extends SupportedService
+  
+  @js.native
+  sealed trait memory extends js.Object
   
   @js.native
   sealed trait mention extends NotificationSettingLevel
@@ -537,6 +546,8 @@ object gitlabStrings {
   def GroupCustomAttributes: GroupCustomAttributes = "GroupCustomAttributes".asInstanceOf[GroupCustomAttributes]
   @scala.inline
   def GroupIssueBoards: GroupIssueBoards = "GroupIssueBoards".asInstanceOf[GroupIssueBoards]
+  @scala.inline
+  def GroupLabels: GroupLabels = "GroupLabels".asInstanceOf[GroupLabels]
   @scala.inline
   def GroupMembers: GroupMembers = "GroupMembers".asInstanceOf[GroupMembers]
   @scala.inline
@@ -708,6 +719,8 @@ object gitlabStrings {
   @scala.inline
   def `emails-on-push`: `emails-on-push` = "emails-on-push".asInstanceOf[`emails-on-push`]
   @scala.inline
+  def execution: execution = "execution".asInstanceOf[execution]
+  @scala.inline
   def expired: expired = "expired".asInstanceOf[expired]
   @scala.inline
   def `external-wiki`: `external-wiki` = "external-wiki".asInstanceOf[`external-wiki`]
@@ -745,6 +758,8 @@ object gitlabStrings {
   def mattermost: mattermost = "mattermost".asInstanceOf[mattermost]
   @scala.inline
   def `mattermost-slash-commands`: `mattermost-slash-commands` = "mattermost-slash-commands".asInstanceOf[`mattermost-slash-commands`]
+  @scala.inline
+  def memory: memory = "memory".asInstanceOf[memory]
   @scala.inline
   def mention: mention = "mention".asInstanceOf[mention]
   @scala.inline

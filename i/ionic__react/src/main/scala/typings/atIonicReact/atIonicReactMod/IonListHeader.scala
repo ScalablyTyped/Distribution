@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonListHeader
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonListHeader */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonListHeader with (Pick[
           HTMLAttributes[HTMLIonListHeaderElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonListHeaderElement]

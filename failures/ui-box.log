@@ -99,8 +99,8 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Clearfix) [id => ui-box, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ui-box/dist/types/enhancers) / TsDeclTypeAlias(EnhancerProps) / TsTypeIntersect() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => ui-box, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing ui-box [id => ui-box, phase => scala.js] 
-[info ] ImportType.scala:245 Failed type conversion: T['prototype'] [id => ui-box, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ui-box/dist/types/box-types) / TsDeclTypeAlias(RefType) / TsTypeUnion() / TsTypeLookup())] 
-[info ] ImportType.scala:245 Failed type conversion: ui-box.ui-box/dist/types/dom-nodes.DomNodes[T] [id => ui-box, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ui-box/dist/types/box-types) / TsDeclTypeAlias(RefType) / TsTypeUnion() / TsTypeLookup())] 
+[info ] ImportType.scala:235 Failed type conversion: T['prototype'] [id => ui-box, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ui-box/dist/types/box-types) / TsDeclTypeAlias(RefType) / TsTypeUnion() / TsTypeLookup())] 
+[info ] ImportType.scala:235 Failed type conversion: ui-box.ui-box/dist/types/dom-nodes.DomNodes[T] [id => ui-box, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(ui-box/dist/types/box-types) / TsDeclTypeAlias(RefType) / TsTypeUnion() / TsTypeLookup())] 
 [debug] PhaseRunner.scala:84 Success [id => ui-box, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building ui-box... [id => ui-box, phase => build] 
 [error] Phase3Compile.scala:240 [E] [E3] src/main/scala/typings/uiDashBox/distTypesBoxDashTypesMod.scala:38:8

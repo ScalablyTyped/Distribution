@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "next-redux-wrapper"
-version := "2.0-dt-20181207Z-21276d"
+version := "2.0-dt-20181207Z-ca71c9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
-  "org.scalablytyped" %%% "redux" % "4.0.4-8412ae",
+  "org.scalablytyped" %%% "redux" % "4.0.4-783f8a",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

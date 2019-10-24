@@ -70,7 +70,7 @@ trait CoordinateGridMixin[T]
   @JSName("zoomScale")
   var zoomScale_Original: IGetSet[js.Array[_], T] = js.native
   def brushOn(): Boolean = js.native
-  def brushOn(t: Boolean): Boolean = js.native
+  def brushOn(t: Boolean): T = js.native
   def chartBodyG(): Selection[
     _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
@@ -78,11 +78,11 @@ trait CoordinateGridMixin[T]
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
   ] = js.native
   def clipPadding(): Double = js.native
-  def clipPadding(t: Double): Double = js.native
+  def clipPadding(t: Double): T = js.native
   def elasticX(): Boolean = js.native
-  def elasticX(t: Boolean): Boolean = js.native
+  def elasticX(t: Boolean): T = js.native
   def elasticY(): Boolean = js.native
-  def elasticY(t: Boolean): Boolean = js.native
+  def elasticY(t: Boolean): T = js.native
   def focus(): Unit = js.native
   def focus(range: js.Array[_]): Unit = js.native
   def g(): Selection[
@@ -98,53 +98,48 @@ trait CoordinateGridMixin[T]
       BaseType, 
       /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ]
-  ): Selection[
-    _, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
-  ] = js.native
+  ): T = js.native
   def isOrdinal(): Boolean = js.native
   def mouseZoomable(): Boolean = js.native
-  def mouseZoomable(t: Boolean): Boolean = js.native
+  def mouseZoomable(t: Boolean): T = js.native
   def rangeChart(): BaseMixin[_] = js.native
-  def rangeChart(t: BaseMixin[_]): BaseMixin[_] = js.native
+  def rangeChart(t: BaseMixin[_]): T = js.native
   def renderHorizontalGridLines(): Boolean = js.native
-  def renderHorizontalGridLines(t: Boolean): Boolean = js.native
+  def renderHorizontalGridLines(t: Boolean): T = js.native
   def renderVerticalGridLines(): Boolean = js.native
-  def renderVerticalGridLines(t: Boolean): Boolean = js.native
+  def renderVerticalGridLines(t: Boolean): T = js.native
   def round(): js.Function1[/* value */ js.Any, _] = js.native
-  def round(t: js.Function1[/* value */ js.Any, _]): js.Function1[/* value */ js.Any, _] = js.native
+  def round(t: js.Function1[/* value */ js.Any, _]): T = js.native
   def useRightYAxis(): Boolean = js.native
-  def useRightYAxis(t: Boolean): Boolean = js.native
+  def useRightYAxis(t: Boolean): T = js.native
   def x(): js.Function1[/* n */ js.Any, _] = js.native
-  def x(t: js.Function1[/* n */ js.Any, _]): js.Function1[/* n */ js.Any, _] = js.native
+  def x(t: js.Function1[/* n */ js.Any, _]): T = js.native
   def xAxis(): js.Any = js.native
-  def xAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): js.Any = js.native
+  def xAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): T = js.native
   def xAxisLabel(): String = js.native
-  def xAxisLabel(t: String): String = js.native
-  def xAxisLabel(t: String, r: Double): String = js.native
+  def xAxisLabel(t: String): T = js.native
+  def xAxisLabel(t: String, r: Double): T = js.native
   def xAxisMax(): js.Any = js.native
   def xAxisMin(): js.Any = js.native
   def xAxisPadding(): Double = js.native
-  def xAxisPadding(t: Double): Double = js.native
+  def xAxisPadding(t: Double): T = js.native
   def xUnitCount(): Double = js.native
   def xUnits(): UnitFunction = js.native
-  def xUnits(t: UnitFunction): UnitFunction = js.native
+  def xUnits(t: UnitFunction): T = js.native
   def y(): Scale[Double] = js.native
-  def y(t: Scale[Double]): Scale[Double] = js.native
+  def y(t: Scale[Double]): T = js.native
   def yAxis(): js.Any = js.native
-  def yAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): js.Any = js.native
+  def yAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): T = js.native
   def yAxisLabel(): String = js.native
-  def yAxisLabel(t: String): String = js.native
-  def yAxisLabel(t: String, r: Double): String = js.native
+  def yAxisLabel(t: String): T = js.native
+  def yAxisLabel(t: String, r: Double): T = js.native
   def yAxisMax(): js.Any = js.native
   def yAxisMin(): js.Any = js.native
   def yAxisPadding(): Double = js.native
-  def yAxisPadding(t: Double): Double = js.native
+  def yAxisPadding(t: Double): T = js.native
   def zoomOutRestrict(): Boolean = js.native
-  def zoomOutRestrict(t: Boolean): Boolean = js.native
+  def zoomOutRestrict(t: Boolean): T = js.native
   def zoomScale(): js.Array[_] = js.native
-  def zoomScale(t: js.Array[_]): js.Array[_] = js.native
+  def zoomScale(t: js.Array[_]): T = js.native
 }
 

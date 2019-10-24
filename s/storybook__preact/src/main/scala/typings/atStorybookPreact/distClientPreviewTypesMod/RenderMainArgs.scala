@@ -1,5 +1,6 @@
 package typings.atStorybookPreact.distClientPreviewTypesMod
 
+import typings.atStorybookAddons.distTypesMod.StoryFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ trait RenderMainArgs extends js.Object {
   var selectedStory: String
   def showError(args: ShowErrorArgs): Unit
   def showMain(): Unit
-  def storyFn(): js.Any
+  def storyFn(): StoryFn[StoryFnPreactReturnType]
 }
 
 object RenderMainArgs {
@@ -21,7 +22,7 @@ object RenderMainArgs {
     selectedStory: String,
     showError: ShowErrorArgs => Unit,
     showMain: () => Unit,
-    storyFn: () => js.Any
+    storyFn: () => StoryFn[StoryFnPreactReturnType]
   ): RenderMainArgs = {
     val __obj = js.Dynamic.literal(forceRender = forceRender, selectedKind = selectedKind, selectedStory = selectedStory, showError = js.Any.fromFunction1(showError), showMain = js.Any.fromFunction0(showMain), storyFn = js.Any.fromFunction0(storyFn))
   

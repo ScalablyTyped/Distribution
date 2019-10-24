@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var checkSyntacticErrors: Boolean
   var colors: Boolean
   var compilerOptions: js.Object
-  var eslint: js.UndefOr[`true`] = js.undefined
+  var eslint: Boolean
   /** Options to supply to eslint https://eslint.org/docs/1.0.0/developer-guide/nodejs-api#cliengine */
   var eslintOptions: js.Object
   var formatter: default | codeframe | Formatter
@@ -44,6 +44,7 @@ object Options {
     checkSyntacticErrors: Boolean,
     colors: Boolean,
     compilerOptions: js.Object,
+    eslint: Boolean,
     eslintOptions: js.Object,
     formatter: default | codeframe | Formatter,
     formatterOptions: js.Any,
@@ -64,11 +65,9 @@ object Options {
     vue: Boolean,
     watch: String | js.Array[String],
     workers: Double,
-    eslint: `true` = null,
     tslint: String | `true` = null
   ): Options = {
-    val __obj = js.Dynamic.literal(async = async, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilerOptions = compilerOptions, eslintOptions = eslintOptions, formatter = formatter.asInstanceOf[js.Any], formatterOptions = formatterOptions, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, logger = logger, measureCompilationTime = measureCompilationTime, memoryLimit = memoryLimit, reportFiles = reportFiles, resolveModuleNameModule = resolveModuleNameModule, resolveTypeReferenceDirectiveModule = resolveTypeReferenceDirectiveModule, silent = silent, tsconfig = tsconfig, tslintAutoFix = tslintAutoFix, typescript = typescript, useTypescriptIncrementalApi = useTypescriptIncrementalApi, vue = vue, watch = watch.asInstanceOf[js.Any], workers = workers)
-    if (eslint != null) __obj.updateDynamic("eslint")(eslint)
+    val __obj = js.Dynamic.literal(async = async, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilerOptions = compilerOptions, eslint = eslint, eslintOptions = eslintOptions, formatter = formatter.asInstanceOf[js.Any], formatterOptions = formatterOptions, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, logger = logger, measureCompilationTime = measureCompilationTime, memoryLimit = memoryLimit, reportFiles = reportFiles, resolveModuleNameModule = resolveModuleNameModule, resolveTypeReferenceDirectiveModule = resolveTypeReferenceDirectiveModule, silent = silent, tsconfig = tsconfig, tslintAutoFix = tslintAutoFix, typescript = typescript, useTypescriptIncrementalApi = useTypescriptIncrementalApi, vue = vue, watch = watch.asInstanceOf[js.Any], workers = workers)
     if (tslint != null) __obj.updateDynamic("tslint")(tslint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

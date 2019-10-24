@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ical"
-version := "0.6-dt-20191022Z-b7b0c5"
+version := "0.6-dt-20191022Z-7063d5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,6 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "form-data" % "2.5.1-8d179e",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-6e05db",
-  "org.scalablytyped" %%% "rrule" % "2.6.2-576cdf",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-b1eaaa")
 publishArtifact in packageDoc := false

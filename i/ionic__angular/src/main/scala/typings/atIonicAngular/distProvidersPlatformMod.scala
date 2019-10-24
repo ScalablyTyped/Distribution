@@ -2,6 +2,7 @@ package typings.atIonicAngular
 
 import typings.atAngularCore.atAngularCoreMod.NgZone
 import typings.atIonicAngular.distProvidersPlatformMod.BackButtonEmitter
+import typings.atIonicCore.distTypesInterfaceMod.BackButtonEventDetail
 import typings.atIonicCore.distTypesUtilsPlatformMod.Platforms
 import typings.rxjs.rxjsMod.Subject
 import typings.rxjs.rxjsMod.Subscription
@@ -13,10 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distProvidersPlatformMod extends js.Object {
   @js.native
-  trait BackButtonEmitter
-    extends Subject[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BackButtonEventDetail */ js.Any
-        ] {
+  trait BackButtonEmitter extends Subject[BackButtonEventDetail] {
     def subscribeWithPriority(priority: Double, callback: js.Function0[js.Promise[_] | Unit]): Subscription = js.native
   }
   

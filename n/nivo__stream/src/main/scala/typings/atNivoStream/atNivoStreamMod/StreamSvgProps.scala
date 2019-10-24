@@ -43,13 +43,7 @@ trait StreamSvgProps[T] extends js.Object {
   var enableGridX: js.UndefOr[Boolean] = js.undefined
   var enableGridY: js.UndefOr[Boolean] = js.undefined
   var enableStackTooltip: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[
-    js.Array[
-      Anon_[
-        OptionalStreamProps[OptionalStreamProps[OptionalStreamProps[OptionalStreamProps[T]]]]
-      ]
-    ]
-  ] = js.undefined
+  var fill: js.UndefOr[js.Array[Anon_[T]]] = js.undefined
   var fillOpacity: js.UndefOr[Double] = js.undefined
   var isInteractive: js.UndefOr[Boolean] = js.undefined
   var keys: js.Array[String]
@@ -60,10 +54,10 @@ trait StreamSvgProps[T] extends js.Object {
   var offsetType: js.UndefOr[StackOffset] = js.undefined
   var order: js.UndefOr[StackOrder] = js.undefined
   var renderDot: js.UndefOr[StreamDotsItem] = js.undefined
-  var stack: js.UndefOr[StackFunc[OptionalStreamProps[OptionalStreamProps[T]]]] = js.undefined
+  var stack: js.UndefOr[StackFunc[T]] = js.undefined
   var theme: js.UndefOr[Theme] = js.undefined
-  var tooltipFormat: js.UndefOr[TooltipFormatter[OptionalStreamProps[OptionalStreamProps[T]]] | String] = js.undefined
-  var tooltipLabel: js.UndefOr[TooltipLabel[OptionalStreamProps[OptionalStreamProps[T]]]] = js.undefined
+  var tooltipFormat: js.UndefOr[TooltipFormatter[T] | String] = js.undefined
+  var tooltipLabel: js.UndefOr[TooltipLabel[T]] = js.undefined
   var xScale: js.UndefOr[Scale] = js.undefined
   var yScale: js.UndefOr[Scale] = js.undefined
 }
@@ -92,11 +86,7 @@ object StreamSvgProps {
     enableGridX: js.UndefOr[Boolean] = js.undefined,
     enableGridY: js.UndefOr[Boolean] = js.undefined,
     enableStackTooltip: js.UndefOr[Boolean] = js.undefined,
-    fill: js.Array[
-      Anon_[
-        OptionalStreamProps[OptionalStreamProps[OptionalStreamProps[OptionalStreamProps[T]]]]
-      ]
-    ] = null,
+    fill: js.Array[Anon_[T]] = null,
     fillOpacity: Int | Double = null,
     isInteractive: js.UndefOr[Boolean] = js.undefined,
     legends: js.Array[LegendProps] = null,
@@ -106,10 +96,10 @@ object StreamSvgProps {
     offsetType: StackOffset = null,
     order: StackOrder = null,
     renderDot: StreamDotsItem = null,
-    stack: /* data */ js.Array[OptionalStreamProps[OptionalStreamProps[T]]] => js.Array[js.Array[Anon_0[OptionalStreamProps[OptionalStreamProps[T]]]]] = null,
+    stack: /* data */ js.Array[T] => js.Array[js.Array[Anon_0[T]]] = null,
     theme: Theme = null,
-    tooltipFormat: TooltipFormatter[OptionalStreamProps[OptionalStreamProps[T]]] | String = null,
-    tooltipLabel: OptionalStreamProps[OptionalStreamProps[T]] => String = null,
+    tooltipFormat: TooltipFormatter[T] | String = null,
+    tooltipLabel: T => String = null,
     xScale: Scale = null,
     yScale: Scale = null
   ): StreamSvgProps[T] = {

@@ -1,7 +1,6 @@
 package typings.atJupyterlabConsole.libPanelMod.ConsolePanel
 
 import typings.atJupyterlabApputils.libClientsessionMod.IClientSession.IKernelPreference
-import typings.atJupyterlabCodeeditor.libMimetypeMod.IEditorMimeTypeService
 import typings.atJupyterlabConsole.libWidgetMod.CodeConsole.IModelFactory
 import typings.atJupyterlabRendermime.libTokensMod.IRenderMimeRegistry
 import typings.atJupyterlabServices.libManagerMod.ServiceManager.IManager
@@ -33,7 +32,7 @@ trait IOptions extends js.Object {
   /**
     * The service used to look up mime types.
     */
-  var mimeTypeService: IEditorMimeTypeService
+  var mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any
   /**
     * The model factory for the console widget.
     */
@@ -61,7 +60,7 @@ object IOptions {
   def apply(
     contentFactory: IContentFactory,
     manager: IManager,
-    mimeTypeService: IEditorMimeTypeService,
+    mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any,
     rendermime: IRenderMimeRegistry,
     basePath: String = null,
     kernelPreference: IKernelPreference = null,

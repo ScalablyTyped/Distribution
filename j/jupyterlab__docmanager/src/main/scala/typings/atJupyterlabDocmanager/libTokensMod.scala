@@ -1,11 +1,7 @@
 package typings.atJupyterlabDocmanager
 
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IOpenOptions
-import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
 import typings.atJupyterlabServices.libContentsMod.Contents.ICreateOptions
+import typings.atJupyterlabServices.libContentsMod.Contents.IModel
 import typings.atJupyterlabServices.libManagerMod.ServiceManager.IManager
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
@@ -36,7 +32,7 @@ object libTokensMod extends js.Object {
     /**
       * The registry used by the manager.
       */
-    val registry: DocumentRegistry = js.native
+    val registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any = js.native
     /**
       * The service manager used by the manager.
       */
@@ -52,7 +48,9 @@ object libTokensMod extends js.Object {
       *  Uses the same widget factory and context as the source, or returns
       *  `undefined` if the source widget is not managed by this manager.
       */
-    def cloneWidget(widget: Widget): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def cloneWidget(widget: Widget): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
     /**
       * Close all of the open documents.
       *
@@ -75,7 +73,9 @@ object libTokensMod extends js.Object {
       * @returns The context associated with the widget, or `undefined` if no such
       * context exists.
       */
-    def contextForWidget(widget: Widget): js.UndefOr[Context] = js.native
+    def contextForWidget(widget: Widget): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+      ] = js.native
     /**
       * Copy a file.
       *
@@ -85,7 +85,7 @@ object libTokensMod extends js.Object {
       *
       * @returns A promise which resolves to the contents of the file.
       */
-    def copy(fromFile: String, toDir: String): js.Promise[typings.atJupyterlabServices.libContentsMod.Contents.IModel] = js.native
+    def copy(fromFile: String, toDir: String): js.Promise[IModel] = js.native
     /**
       * Create a new file and return the widget used to view it.
       *
@@ -133,14 +133,18 @@ object libTokensMod extends js.Object {
       * This can be used to find an existing widget instead of opening
       * a new widget.
       */
-    def findWidget(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def findWidget(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def findWidget(path: String): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
+    def findWidget(path: String, widgetName: String): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
     /**
       * Create a new untitled file.
       *
       * @param options - The file content creation options.
       */
-    def newUntitled(options: ICreateOptions): js.Promise[typings.atJupyterlabServices.libContentsMod.Contents.IModel] = js.native
+    def newUntitled(options: ICreateOptions): js.Promise[IModel] = js.native
     /**
       * Open a file and return the widget used to view it.
       *
@@ -156,19 +160,27 @@ object libTokensMod extends js.Object {
       * This function will return `undefined` if a valid widget factory
       * cannot be found.
       */
-    def open(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def open(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def open(path: String): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
+    def open(path: String, widgetName: String): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
     def open(
       path: String,
       widgetName: String,
       kernel: Partial[typings.atJupyterlabServices.libKernelKernelMod.Kernel.IModel]
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    ): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
     def open(
       path: String,
       widgetName: String,
       kernel: Partial[typings.atJupyterlabServices.libKernelKernelMod.Kernel.IModel],
-      options: IOpenOptions
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
+    ): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
     /**
       * Open a file and return the widget used to view it.
       * Reveals an already existing editor.
@@ -185,19 +197,27 @@ object libTokensMod extends js.Object {
       * This function will return `undefined` if a valid widget factory
       * cannot be found.
       */
-    def openOrReveal(path: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
-    def openOrReveal(path: String, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    def openOrReveal(path: String): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
+    def openOrReveal(path: String, widgetName: String): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
     def openOrReveal(
       path: String,
       widgetName: String,
       kernel: Partial[typings.atJupyterlabServices.libKernelKernelMod.Kernel.IModel]
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+    ): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
     def openOrReveal(
       path: String,
       widgetName: String,
       kernel: Partial[typings.atJupyterlabServices.libKernelKernelMod.Kernel.IModel],
-      options: IOpenOptions
-    ): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
+      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
+    ): js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
+      ] = js.native
     /**
       * Overwrite a file.
       *
@@ -207,7 +227,7 @@ object libTokensMod extends js.Object {
       *
       * @returns A promise containing the new file contents model.
       */
-    def overwrite(oldPath: String, newPath: String): js.Promise[typings.atJupyterlabServices.libContentsMod.Contents.IModel] = js.native
+    def overwrite(oldPath: String, newPath: String): js.Promise[IModel] = js.native
     /**
       * Rename a file or directory.
       *
@@ -219,7 +239,7 @@ object libTokensMod extends js.Object {
       * will reject if the newPath already exists.  Use [[overwrite]] to overwrite
       * a file.
       */
-    def rename(oldPath: String, newPath: String): js.Promise[typings.atJupyterlabServices.libContentsMod.Contents.IModel] = js.native
+    def rename(oldPath: String, newPath: String): js.Promise[IModel] = js.native
   }
   
   val IDocumentManager: Token[typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager] = js.native

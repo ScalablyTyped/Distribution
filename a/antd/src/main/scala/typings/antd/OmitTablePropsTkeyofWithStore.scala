@@ -11,7 +11,6 @@ import typings.antd.esTableInterfaceMod.TableComponents
 import typings.antd.esTableInterfaceMod.TableCurrentDataSource
 import typings.antd.esTableInterfaceMod.TableEventListeners
 import typings.antd.esTableInterfaceMod.TableLocale
-import typings.antd.esTableInterfaceMod.TableProps
 import typings.antd.esTableInterfaceMod.TableRowSelection
 import typings.antd.esTableInterfaceMod.TableSize
 import typings.csstype.csstypeMod.TableLayoutProperty
@@ -19,6 +18,7 @@ import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,43 +30,27 @@ trait OmitTablePropsTkeyofWithStore[T] extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var childrenColumnName: js.UndefOr[String] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var columns: js.UndefOr[
-    js.Array[
-      ColumnProps[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]]
-    ]
-  ] = js.undefined
+  var columns: js.UndefOr[js.Array[ColumnProps[T]]] = js.undefined
   var components: js.UndefOr[TableComponents] = js.undefined
-  var dataSource: js.UndefOr[
-    js.Array[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]]
-  ] = js.undefined
+  var dataSource: js.UndefOr[js.Array[T]] = js.undefined
   var defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined
   var defaultExpandedRowKeys: js.UndefOr[js.Array[Double | String]] = js.undefined
   var dropdownPrefixCls: js.UndefOr[String] = js.undefined
-  var expandIcon: js.UndefOr[
-    js.Function1[
-      /* props */ ExpandIconProps[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]], 
-      ReactNode
-    ]
-  ] = js.undefined
+  var expandIcon: js.UndefOr[js.Function1[/* props */ ExpandIconProps[T], ReactNode]] = js.undefined
   var expandIconAsCell: js.UndefOr[Boolean] = js.undefined
   var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
   var expandRowByClick: js.UndefOr[Boolean] = js.undefined
   var expandedRowKeys: js.UndefOr[js.Array[Double | String]] = js.undefined
   var expandedRowRender: js.UndefOr[
     js.Function4[
-      /* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], 
+      /* record */ T, 
       /* index */ Double, 
       /* indent */ Double, 
       /* expanded */ Boolean, 
       ReactNode
     ]
   ] = js.undefined
-  var footer: js.UndefOr[
-    js.Function1[
-      /* currentPageData */ js.Array[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]], 
-      ReactNode
-    ]
-  ] = js.undefined
+  var footer: js.UndefOr[js.Function1[/* currentPageData */ js.Array[T], ReactNode]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
   var indentSize: js.UndefOr[Double] = js.undefined
   var loading: js.UndefOr[Boolean | SpinProps] = js.undefined
@@ -74,74 +58,29 @@ trait OmitTablePropsTkeyofWithStore[T] extends js.Object {
   var onChange: js.UndefOr[
     js.Function4[
       /* pagination */ PaginationConfig, 
-      /* filters */ RecordkeyofTablePropsTablePropsTablePropsTableProp, 
-      /* sorter */ SorterResult[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]], 
-      /* extra */ TableCurrentDataSource[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]], 
+      /* filters */ Record[String, js.Array[String]], 
+      /* sorter */ SorterResult[T], 
+      /* extra */ TableCurrentDataSource[T], 
       Unit
     ]
   ] = js.undefined
-  var onExpand: js.UndefOr[
-    js.Function2[
-      /* expanded */ Boolean, 
-      /* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], 
-      Unit
-    ]
-  ] = js.undefined
+  var onExpand: js.UndefOr[js.Function2[/* expanded */ Boolean, /* record */ T, Unit]] = js.undefined
   var onExpandedRowsChange: js.UndefOr[js.Function1[/* expandedRowKeys */ js.Array[Double | String], Unit]] = js.undefined
-  var onHeaderRow: js.UndefOr[
-    js.Function1[
-      /* columns */ js.Array[
-        ColumnProps[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]]
-      ], 
-      TableEventListeners
-    ]
-  ] = js.undefined
-  var onRow: js.UndefOr[
-    js.Function2[
-      /* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], 
-      /* index */ Double, 
-      TableEventListeners
-    ]
-  ] = js.undefined
-  var onRowClick: js.UndefOr[
-    js.Function3[
-      /* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], 
-      /* index */ Double, 
-      /* event */ Event, 
-      Unit
-    ]
-  ] = js.undefined
+  var onHeaderRow: js.UndefOr[js.Function1[/* columns */ js.Array[ColumnProps[T]], TableEventListeners]] = js.undefined
+  var onRow: js.UndefOr[js.Function2[/* record */ T, /* index */ Double, TableEventListeners]] = js.undefined
+  var onRowClick: js.UndefOr[js.Function3[/* record */ T, /* index */ Double, /* event */ Event, Unit]] = js.undefined
   var pagination: js.UndefOr[PaginationConfig | `false`] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
-  var rowClassName: js.UndefOr[
-    js.Function2[
-      /* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], 
-      /* index */ Double, 
-      String
-    ]
-  ] = js.undefined
-  var rowKey: js.UndefOr[
-    String | (js.Function2[
-      /* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], 
-      /* index */ Double, 
-      String
-    ])
-  ] = js.undefined
-  var rowSelection: js.UndefOr[
-    TableRowSelection[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]]
-  ] = js.undefined
+  var rowClassName: js.UndefOr[js.Function2[/* record */ T, /* index */ Double, String]] = js.undefined
+  var rowKey: js.UndefOr[String | (js.Function2[/* record */ T, /* index */ Double, String])] = js.undefined
+  var rowSelection: js.UndefOr[TableRowSelection[T]] = js.undefined
   var scroll: js.UndefOr[Anon_ScrollToFirstRowOnChange] = js.undefined
   var showHeader: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[TableSize] = js.undefined
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var tableLayout: js.UndefOr[TableLayoutProperty] = js.undefined
-  var title: js.UndefOr[
-    js.Function1[
-      /* currentPageData */ js.Array[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]], 
-      ReactNode
-    ]
-  ] = js.undefined
+  var title: js.UndefOr[js.Function1[/* currentPageData */ js.Array[T], ReactNode]] = js.undefined
   var useFixedHeader: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -153,49 +92,41 @@ object OmitTablePropsTkeyofWithStore {
     children: ReactNode = null,
     childrenColumnName: String = null,
     className: String = null,
-    columns: js.Array[
-      ColumnProps[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]]
-    ] = null,
+    columns: js.Array[ColumnProps[T]] = null,
     components: TableComponents = null,
-    dataSource: js.Array[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]] = null,
+    dataSource: js.Array[T] = null,
     defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined,
     defaultExpandedRowKeys: js.Array[Double | String] = null,
     dropdownPrefixCls: String = null,
-    expandIcon: /* props */ ExpandIconProps[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]] => ReactNode = null,
+    expandIcon: /* props */ ExpandIconProps[T] => ReactNode = null,
     expandIconAsCell: js.UndefOr[Boolean] = js.undefined,
     expandIconColumnIndex: Int | Double = null,
     expandRowByClick: js.UndefOr[Boolean] = js.undefined,
     expandedRowKeys: js.Array[Double | String] = null,
-    expandedRowRender: (/* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode = null,
-    footer: /* currentPageData */ js.Array[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]] => ReactNode = null,
+    expandedRowRender: (/* record */ T, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode = null,
+    footer: /* currentPageData */ js.Array[T] => ReactNode = null,
     getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
     indentSize: Int | Double = null,
     loading: Boolean | SpinProps = null,
     locale: TableLocale = null,
-    onChange: (/* pagination */ PaginationConfig, /* filters */ RecordkeyofTablePropsTablePropsTablePropsTableProp, /* sorter */ SorterResult[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]], /* extra */ TableCurrentDataSource[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]]) => Unit = null,
-    onExpand: (/* expanded */ Boolean, /* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]) => Unit = null,
+    onChange: (/* pagination */ PaginationConfig, /* filters */ Record[String, js.Array[String]], /* sorter */ SorterResult[T], /* extra */ TableCurrentDataSource[T]) => Unit = null,
+    onExpand: (/* expanded */ Boolean, /* record */ T) => Unit = null,
     onExpandedRowsChange: /* expandedRowKeys */ js.Array[Double | String] => Unit = null,
-    onHeaderRow: /* columns */ js.Array[
-      ColumnProps[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]]
-    ] => TableEventListeners = null,
-    onRow: (/* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], /* index */ Double) => TableEventListeners = null,
-    onRowClick: (/* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], /* index */ Double, /* event */ Event) => Unit = null,
+    onHeaderRow: /* columns */ js.Array[ColumnProps[T]] => TableEventListeners = null,
+    onRow: (/* record */ T, /* index */ Double) => TableEventListeners = null,
+    onRowClick: (/* record */ T, /* index */ Double, /* event */ Event) => Unit = null,
     pagination: PaginationConfig | `false` = null,
     prefixCls: String = null,
-    rowClassName: (/* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], /* index */ Double) => String = null,
-    rowKey: String | (js.Function2[
-      /* record */ TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]], 
-      /* index */ Double, 
-      String
-    ]) = null,
-    rowSelection: TableRowSelection[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]] = null,
+    rowClassName: (/* record */ T, /* index */ Double) => String = null,
+    rowKey: String | (js.Function2[/* record */ T, /* index */ Double, String]) = null,
+    rowSelection: TableRowSelection[T] = null,
     scroll: Anon_ScrollToFirstRowOnChange = null,
     showHeader: js.UndefOr[Boolean] = js.undefined,
     size: TableSize = null,
     sortDirections: js.Array[SortOrder] = null,
     style: CSSProperties = null,
     tableLayout: TableLayoutProperty = null,
-    title: /* currentPageData */ js.Array[TableProps[TableProps[TableProps[TableProps[TableProps[TableProps[T]]]]]]] => ReactNode = null,
+    title: /* currentPageData */ js.Array[T] => ReactNode = null,
     useFixedHeader: js.UndefOr[Boolean] = js.undefined
   ): OmitTablePropsTkeyofWithStore[T] = {
     val __obj = js.Dynamic.literal()

@@ -4,7 +4,6 @@ import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
 import typings.atJupyterlabApplication.libShellMod.ILabShell.Area
 import typings.atJupyterlabApplication.libShellMod.ILabShell.IChangedArgs
 import typings.atJupyterlabApplication.libShellMod.ILabShell.ILayout
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IOpenOptions
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
@@ -150,7 +149,11 @@ class LabShell () extends IShell {
   def activateNextTab(): Unit = js.native
   def activatePreviousTab(): Unit = js.native
   def add(widget: Widget, area: Area): Unit = js.native
-  def add(widget: Widget, area: Area, options: IOpenOptions): Unit = js.native
+  def add(
+    widget: Widget,
+    area: Area,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
+  ): Unit = js.native
   /**
     * Close all widgets in the main area.
     */

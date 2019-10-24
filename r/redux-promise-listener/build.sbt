@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "redux-promise-listener"
-version := "1.1-dt-20191002Z-05c3b8"
+version := "1.1-dt-20191002Z-88003a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.4-8412ae",
+  "org.scalablytyped" %%% "redux" % "4.0.4-783f8a",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

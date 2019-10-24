@@ -30,7 +30,7 @@ object IonItem
   extends TopLevel[
       ForwardRefExoticComponent[
         (Pick[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItem */ _, 
+          typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItem, 
           disabled | button | color | lines | mode | href | download | rel | target | `type` | detail | detailIcon
         ]) with Anon_Back with (Pick[
           HTMLAttributes[HTMLIonItemElement], 

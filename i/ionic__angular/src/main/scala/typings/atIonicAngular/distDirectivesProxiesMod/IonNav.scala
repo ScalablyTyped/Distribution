@@ -10,10 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonNav * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonNav")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonNav")
 @js.native
-class IonNav protected () extends js.Object {
+class IonNav protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonNav {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var ionNavDidChange: EventEmitter[CustomEvent[_]] = js.native

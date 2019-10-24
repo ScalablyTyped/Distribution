@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__react"
-version := "4.11.2-a1f5b1"
+version := "4.11.2-84cf3a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

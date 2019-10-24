@@ -1,6 +1,5 @@
 package typings.atJupyterlabSettingeditor.libSettingeditorMod
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistry
 import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistry.ISettings
 import typings.atJupyterlabCoreutils.libTokensMod.IStateDB
@@ -74,7 +73,7 @@ class SettingEditor_ protected () extends Widget {
   /**
     * The inspectable raw user editor source for the currently loaded settings.
     */
-  val source: IEditor = js.native
+  val source: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any = js.native
   /**
     * The state database used to store layout.
     */

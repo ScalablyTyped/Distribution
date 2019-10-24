@@ -27,7 +27,7 @@ object IonItemOption
   extends TopLevel[
       ForwardRefExoticComponent[
         (Pick[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOption */ _, 
+          typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemOption, 
           disabled | color | mode | href | download | rel | target | `type` | expandable
         ]) with Anon_Back with (Pick[
           HTMLAttributes[HTMLIonItemOptionElement], 

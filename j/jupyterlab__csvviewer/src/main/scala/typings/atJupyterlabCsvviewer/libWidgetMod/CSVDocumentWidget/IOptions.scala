@@ -1,36 +1,19 @@
 package typings.atJupyterlabCsvviewer.libWidgetMod.CSVDocumentWidget
 
-import typings.atJupyterlabApputils.libToolbarMod.Toolbar
-import typings.atJupyterlabCsvviewer.libWidgetMod.CSVViewer
-import typings.atJupyterlabDocregistry.libDefaultMod.DocumentWidget.IOptionsOptionalContent
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IContext
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
-import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IOptions extends IOptionsOptionalContent[CSVViewer, IModel] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentWidget.IOptionsOptionalContent<CSVViewer> * / any */ trait IOptions extends js.Object {
   var delimiter: js.UndefOr[String] = js.undefined
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    context: IContext[IModel],
-    content: CSVViewer = null,
-    delimiter: String = null,
-    node: HTMLElement = null,
-    reveal: js.Promise[_] = null,
-    toolbar: Toolbar[Widget] = null
-  ): IOptions = {
-    val __obj = js.Dynamic.literal(context = context)
-    if (content != null) __obj.updateDynamic("content")(content)
+  def apply(delimiter: String = null): IOptions = {
+    val __obj = js.Dynamic.literal()
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (reveal != null) __obj.updateDynamic("reveal")(reveal)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -3,7 +3,6 @@ package typings.atJupyterlabApplication.libFrontendMod
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IOptions
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.CommandLinker
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
 import typings.atJupyterlabServices.atJupyterlabServicesMod.ServiceManager
 import typings.atPhosphorApplication.atPhosphorApplicationMod.Application
 import typings.std.HTMLElement
@@ -26,7 +25,7 @@ abstract class JupyterFrontEnd_[T /* <: IShell */] protected () extends Applicat
   /**
     * The document registry instance used by the application.
     */
-  val docRegistry: DocumentRegistry = js.native
+  val docRegistry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any = js.native
   /**
     * The name of this Jupyter front-end application.
     */

@@ -10,10 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonImg * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonImg")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonImg")
 @js.native
-class IonImg protected () extends js.Object {
+class IonImg protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonImg {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var ionError: EventEmitter[CustomEvent[_]] = js.native

@@ -3,7 +3,6 @@ package typings.atJupyterlabCells.libWidgetMod.Cell
 import typings.atJupyterlabCells.libHeaderfooterMod.ICellFooter
 import typings.atJupyterlabCells.libHeaderfooterMod.ICellHeader
 import typings.atJupyterlabCells.libInputareaMod.IInputPrompt
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
 import typings.atJupyterlabOutputarea.libWidgetMod.IOutputPrompt
 import typings.atJupyterlabOutputarea.libWidgetMod.IStdin
 import scala.scalajs.js
@@ -30,7 +29,7 @@ class ContentFactory_ () extends IContentFactory {
     * to pass it around.
     */
   /* CompleteClass */
-  override val editorFactory: Factory = js.native
+  override val editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any = js.native
   /**
     * Create a new cell header for the parent widget.
     */

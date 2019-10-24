@@ -1,7 +1,6 @@
 package typings.atJupyterlabCells.libModelMod
 
 import typings.atJupyterlabCells.libModelMod.CellModel.IOptions
-import typings.atJupyterlabCodeeditor.libMod.CodeEditor.Model
 import typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs
 import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.CellType
 import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.ICell
@@ -13,43 +12,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable because Already inherited
-- typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IModel because Already inherited
-- typings.atJupyterlabCells.libModelMod.ICellModel because var conflicts: mimeType, mimeTypeChanged. Inlined `type`, id, contentChanged, stateChanged, trusted, metadata, toJSON */ @JSImport("@jupyterlab/cells/lib/model", "CellModel")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Model * / any */ @JSImport("@jupyterlab/cells/lib/model", "CellModel")
 @js.native
-class CellModel_ protected () extends Model {
+class CellModel_ protected () extends ICellModel {
   /**
     * Construct a cell model from optional cell content.
     */
   def this(options: IOptions) = this()
   /**
+    * A signal emitted when the content of the model changes.
+    */
+  /* CompleteClass */
+  override val contentChanged: ISignal[ICellModel, Unit] = js.native
+  /**
     * A signal emitted when the state of the model changes.
     */
-  val contentChanged: (ISignal[ICellModel, Unit]) | (Signal[this.type, Unit]) = js.native
+  @JSName("contentChanged")
+  val contentChanged_CellModel_ : Signal[this.type, Unit] = js.native
   /**
-    * The id for the cell.
+    * A unique identifier for the cell.
     */
-  val id: String = js.native
+  /* CompleteClass */
+  override val id: String = js.native
   /**
     * The metadata associated with the cell.
     */
-  val metadata: IObservableJSON = js.native
+  /* CompleteClass */
+  override val metadata: IObservableJSON = js.native
   /**
     * A signal emitted when a model state changes.
     */
-  val stateChanged: (ISignal[ICellModel, IChangedArgs[_]]) | (Signal[this.type, IChangedArgs[_]]) = js.native
+  /* CompleteClass */
+  override val stateChanged: ISignal[ICellModel, IChangedArgs[_]] = js.native
   /**
-    * Get the trusted state of the model.
+    * A signal emitted when a model state changes.
     */
+  @JSName("stateChanged")
+  val stateChanged_CellModel_ : Signal[this.type, IChangedArgs[_]] = js.native
   /**
-    * Set the trusted state of the model.
+    * Whether the cell is trusted.
     */
-  var trusted: Boolean = js.native
+  /* CompleteClass */
+  override var trusted: Boolean = js.native
   /**
-    * The type of cell.
+    * The type of the cell.
     */
-  val `type`: CellType = js.native
+  /* CompleteClass */
+  override val `type`: CellType = js.native
   /**
     * Handle a change to the observable value.
     */
@@ -66,6 +76,7 @@ class CellModel_ protected () extends Model {
   /**
     * Serialize the model to JSON.
     */
-  def toJSON(): ICell = js.native
+  /* CompleteClass */
+  override def toJSON(): ICell = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.atIonicAngular
 
 import typings.atIonicAngular.distUtilOverlayMod.OverlayBaseController
+import typings.atIonicCore.distTypesComponentsLoadingLoadingDashInterfaceMod.LoadingOptions
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonLoadingElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distProvidersLoadingDashControllerMod extends js.Object {
   @js.native
-  class LoadingController ()
-    extends OverlayBaseController[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LoadingOptions */ js.Any, 
-          HTMLIonLoadingElement
-        ]
+  class LoadingController () extends OverlayBaseController[LoadingOptions, HTMLIonLoadingElement]
   
 }
 

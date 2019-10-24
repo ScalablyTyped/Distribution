@@ -1,6 +1,8 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.atIonicCore.distTypesComponentsModalModalDashInterfaceMod.ModalOptions
+import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicReact.atIonicReactStrings.animated
 import typings.atIonicReact.atIonicReactStrings.backdropDismiss
 import typings.atIonicReact.atIonicReactStrings.component
@@ -27,16 +29,15 @@ object distTypesComponentsIonModalMod extends js.Object {
   @js.native
   class IonModal protected () extends Anon_Animated {
     def this(props: (Pick[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
+            ModalOptions[ComponentRef], 
             id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
           ]) with Anon_ChildrenReactNode with ReactOverlayProps) = this()
   }
   
   @js.native
-  object IonModal
-    extends Instantiable1[
+  object IonModal extends Instantiable1[
           /* props */ (Pick[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<imported_core.ComponentRef> */ _, 
+            ModalOptions[ComponentRef], 
             id | mode | animated | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation
           ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
           Anon_Animated
@@ -45,9 +46,6 @@ object distTypesComponentsIonModalMod extends js.Object {
     val displayName: String = js.native
   }
   
-  type ReactModalOptions = (Omit[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions */ _, 
-    component | componentProps
-  ]) with Anon_ChildrenReactNode
+  type ReactModalOptions = (Omit[ModalOptions[ComponentRef], component | componentProps]) with Anon_ChildrenReactNode
 }
 

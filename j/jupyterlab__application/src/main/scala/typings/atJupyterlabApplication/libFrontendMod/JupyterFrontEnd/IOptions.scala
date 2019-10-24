@@ -1,7 +1,6 @@
 package typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.CommandLinker
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
 import typings.atJupyterlabServices.atJupyterlabServicesMod.ServiceManager
 import typings.atPhosphorWidgets.libMenuMod.Menu.IRenderer
 import scala.scalajs.js
@@ -20,7 +19,9 @@ trait IOptions[T /* <: IShell */, U]
   /**
     * The document registry instance used by the application.
     */
-  var docRegistry: js.UndefOr[DocumentRegistry] = js.undefined
+  var docRegistry: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any
+  ] = js.undefined
   /**
     * Promise that resolves when state is first restored, returning layout
     * description.
@@ -38,7 +39,7 @@ object IOptions {
     shell: T,
     commandLinker: CommandLinker = null,
     contextMenuRenderer: IRenderer = null,
-    docRegistry: DocumentRegistry = null,
+    docRegistry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any = null,
     restored: js.Promise[U] = null,
     serviceManager: ServiceManager = null
   ): IOptions[T, U] = {

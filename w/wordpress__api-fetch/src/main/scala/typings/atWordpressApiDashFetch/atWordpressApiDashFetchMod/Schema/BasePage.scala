@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<T>>>>, 'categories' | 'format' | 'sticky' | 'tags'> ]: @wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<T>>>>[P]} */ trait BasePage[T /* <: Context */] extends js.Object {
+- Dropped {[ P in std.Exclude<keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<T>, 'categories' | 'format' | 'sticky' | 'tags'> ]: @wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePost<T>[P]} */ trait BasePage[T /* <: Context */] extends js.Object {
   var menu_order: Double
   var parent: Double
 }

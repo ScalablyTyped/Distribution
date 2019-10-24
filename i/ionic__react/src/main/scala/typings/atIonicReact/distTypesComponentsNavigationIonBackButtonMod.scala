@@ -29,9 +29,6 @@ object distTypesComponentsNavigationIonBackButtonMod extends js.Object {
     val displayName: String = js.native
   }
   
-  type Props = (Omit[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocalJSX.IonBackButton */ _, 
-    icon
-  ]) with IonicReactProps with Anon_Icon
+  type Props = (Omit[typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonBackButton, icon]) with IonicReactProps with Anon_Icon
 }
 

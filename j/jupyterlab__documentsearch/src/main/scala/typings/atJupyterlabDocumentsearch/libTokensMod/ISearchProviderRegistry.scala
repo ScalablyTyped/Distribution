@@ -1,7 +1,9 @@
 package typings.atJupyterlabDocumentsearch.libTokensMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atJupyterlabDocumentsearch.libInterfacesMod.ISearchProvider
 import typings.atJupyterlabDocumentsearch.libInterfacesMod.ISearchProviderConstructor
+import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
@@ -30,16 +32,7 @@ trait ISearchProviderRegistry extends js.Object {
   def register(key: String, provider: ISearchProviderConstructor[_]): IDisposable
 }
 
-object ISearchProviderRegistry {
-  @scala.inline
-  def apply(
-    changed: ISignal[ISearchProviderRegistry, Unit],
-    getProviderForWidget: js.Any => js.UndefOr[ISearchProvider[_]],
-    register: (String, ISearchProviderConstructor[_]) => IDisposable
-  ): ISearchProviderRegistry = {
-    val __obj = js.Dynamic.literal(changed = changed, getProviderForWidget = js.Any.fromFunction1(getProviderForWidget), register = js.Any.fromFunction2(register))
-  
-    __obj.asInstanceOf[ISearchProviderRegistry]
-  }
-}
+@JSImport("@jupyterlab/documentsearch/lib/tokens", "ISearchProviderRegistry")
+@js.native
+object ISearchProviderRegistry extends TopLevel[Token[ISearchProviderRegistry]]
 

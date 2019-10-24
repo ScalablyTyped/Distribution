@@ -21,12 +21,12 @@ trait BubbleChart extends CoordinateGridMixin[BubbleChart] {
   def elasticRadius(): Boolean = js.native
   def elasticRadius(t: Boolean): BubbleChart = js.native
   def maxBubbleRelativeSize(): Double = js.native
-  def maxBubbleRelativeSize(t: Double): Double = js.native
+  def maxBubbleRelativeSize(t: Double): BubbleChart = js.native
   def minRadiusWithLabel(): Double = js.native
-  def minRadiusWithLabel(t: Double): Double = js.native
+  def minRadiusWithLabel(t: Double): BubbleChart = js.native
   def r(): Scale[Double] = js.native
-  def r(t: Scale[Double]): Scale[Double] = js.native
+  def r(t: Scale[Double]): BubbleChart = js.native
   def radiusValueAccessor(): Accessor[_, Double] = js.native
-  def radiusValueAccessor(t: Accessor[_, Double]): Accessor[_, Double] = js.native
+  def radiusValueAccessor(t: Accessor[_, Double]): BubbleChart = js.native
 }
 

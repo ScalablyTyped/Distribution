@@ -1,10 +1,5 @@
 package typings.atJupyterlabFileeditor.libWidgetMod.FileEditorFactory
 
-import typings.atJupyterlabCodeeditor.libTokensMod.IEditorServices
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IWidgetFactoryOptions
-import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
-import typings.atJupyterlabFileeditor.libWidgetMod.FileEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,18 +11,18 @@ trait IOptions extends js.Object {
   /**
     * The editor services used by the factory.
     */
-  var editorServices: IEditorServices
+  var editorServices: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorServices */ js.Any
   /**
     * The factory options associated with the factory.
     */
-  var factoryOptions: IWidgetFactoryOptions[IDocumentWidget[FileEditor, IModel]]
+  var factoryOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IWidgetFactoryOptions<IDocumentWidget<FileEditor>> */ js.Any
 }
 
 object IOptions {
   @scala.inline
   def apply(
-    editorServices: IEditorServices,
-    factoryOptions: IWidgetFactoryOptions[IDocumentWidget[FileEditor, IModel]]
+    editorServices: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorServices */ js.Any,
+    factoryOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IWidgetFactoryOptions<IDocumentWidget<FileEditor>> */ js.Any
   ): IOptions = {
     val __obj = js.Dynamic.literal(editorServices = editorServices, factoryOptions = factoryOptions)
   

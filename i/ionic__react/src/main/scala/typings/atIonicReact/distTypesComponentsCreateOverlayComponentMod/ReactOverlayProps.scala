@@ -1,5 +1,6 @@
 package typings.atIonicReact.distTypesComponentsCreateOverlayComponentMod
 
+import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import typings.react.reactMod.ReactNode
 import typings.std.CustomEvent
 import scala.scalajs.js
@@ -9,14 +10,7 @@ import scala.scalajs.js.annotation._
 trait ReactOverlayProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var isOpen: Boolean
-  var onDidDismiss: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
 }
 
 object ReactOverlayProps {
@@ -24,9 +18,7 @@ object ReactOverlayProps {
   def apply(
     isOpen: Boolean,
     children: ReactNode = null,
-    onDidDismiss: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-    ] => Unit = null
+    onDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null
   ): ReactOverlayProps = {
     val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

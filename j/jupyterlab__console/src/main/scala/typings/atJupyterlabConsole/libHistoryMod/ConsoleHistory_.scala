@@ -1,8 +1,6 @@
 package typings.atJupyterlabConsole.libHistoryMod
 
 import typings.atJupyterlabApputils.libClientsessionMod.IClientSession
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.EdgeLocation
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabConsole.libHistoryMod.ConsoleHistory.IOptions
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IHistoryReplyMsg
 import scala.scalajs.js
@@ -32,7 +30,7 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
     * The current editor used by the history widget.
     */
   /* CompleteClass */
-  override var editor: IEditor | Null = js.native
+  override var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null = js.native
   /**
     * Test whether the object has been disposed.
     *
@@ -89,7 +87,10 @@ class ConsoleHistory_ protected () extends IConsoleHistory {
   /**
     * Handle an edge requested signal.
     */
-  /* protected */ def onEdgeRequest(editor: IEditor, location: EdgeLocation): Unit = js.native
+  /* protected */ def onEdgeRequest(
+    editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any,
+    location: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.EdgeLocation */ js.Any
+  ): Unit = js.native
   /**
     * Populate the history collection on history reply from a kernel.
     *

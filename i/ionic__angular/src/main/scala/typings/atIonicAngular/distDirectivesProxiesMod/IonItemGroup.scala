@@ -8,10 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonItemGroup * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonItemGroup")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonItemGroup")
 @js.native
-class IonItemGroup protected () extends js.Object {
+class IonItemGroup protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonItemGroup {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var z: NgZone = js.native

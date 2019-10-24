@@ -1,7 +1,6 @@
 package typings.atJupyterlabCells.libWidgetMod.Cell
 
 import typings.atJupyterlabCells.libModelMod.ICellModel
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IConfig
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +17,11 @@ trait IOptions extends js.Object {
   /**
     * The configuration options for the text editor widget.
     */
-  var editorConfig: js.UndefOr[Partial[IConfig]] = js.undefined
+  var editorConfig: js.UndefOr[
+    Partial[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IConfig */ _
+    ]
+  ] = js.undefined
   /**
     * The model used by the cell.
     */
@@ -34,7 +37,9 @@ object IOptions {
   def apply(
     model: ICellModel,
     contentFactory: IContentFactory = null,
-    editorConfig: Partial[IConfig] = null,
+    editorConfig: Partial[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IConfig */ _
+    ] = null,
     updateEditorOnShow: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal(model = model)

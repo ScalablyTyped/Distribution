@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__client-api"
-version := "5.2.5-da6b7c"
+version := "5.2.5-ddc0b7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "emotion__styled" % "10.0.17-a785ac",
   "org.scalablytyped" %%% "emotion__styled-base" % "10.0.19-3153ad",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.2-204041",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-dd73fa",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-22646c",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-2fbebe",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20191009Z-45ddf4",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",

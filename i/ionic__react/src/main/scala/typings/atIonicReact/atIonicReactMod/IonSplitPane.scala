@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonSplitPane
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSplitPane */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSplitPane with (Pick[
           HTMLAttributes[HTMLIonSplitPaneElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonSplitPaneElement]

@@ -1,7 +1,7 @@
 package typings.atJupyterlabDocumentsearchDashExtension
 
 import typings.atJupyterlabApplication.atJupyterlabApplicationMod.JupyterFrontEnd
-import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndNs.IShell
+import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
 import typings.atPhosphorApplication.atPhosphorApplicationMod.IPlugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`

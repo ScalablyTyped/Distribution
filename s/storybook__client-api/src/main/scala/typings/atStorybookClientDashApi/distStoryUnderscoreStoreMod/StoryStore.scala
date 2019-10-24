@@ -2,8 +2,8 @@ package typings.atStorybookClientDashApi.distStoryUnderscoreStoreMod
 
 import typings.atStorybookChannels.atStorybookChannelsMod.Channel
 import typings.atStorybookClientDashApi.Anon_ApplyDecorators
-import typings.atStorybookClientDashApi.Anon_Args
 import typings.atStorybookClientDashApi.Anon_Kind
+import typings.atStorybookClientDashApi.Anon_KindStories
 import typings.atStorybookClientDashApi.Anon_Parameters
 import typings.atStorybookClientDashApi.distTypesMod.AddStoryArgs
 import typings.atStorybookClientDashApi.distTypesMod.ErrorLike
@@ -27,7 +27,7 @@ trait StoryStore
   var _revision: Double = js.native
   var _selection: Selection = js.native
   var pushToManager: js.Function0[Unit] with Cancelable = js.native
-  def addLegacyStory(hasKindNameStoryFnParameters: Anon_Args): Unit = js.native
+  def addLegacyStory(hasKindNameStoryFnParameters: Anon_Kind): Unit = js.native
   def addStory(
     hasIdKindNameStoryFnParameters: AddStoryArgs,
     hasGetDecoratorsApplyDecorators: Anon_ApplyDecorators
@@ -35,7 +35,7 @@ trait StoryStore
   def clean(): Unit = js.native
   def cleanHooks(id: String): Unit = js.native
   def cleanHooksForKind(kind: String): Unit = js.native
-  def dumpStoryBook(): js.Array[Anon_Kind] = js.native
+  def dumpStoryBook(): js.Array[Anon_KindStories] = js.native
   def extract(): js.Object = js.native
   def extract(options: StoryOptions): js.Object = js.native
   def fromId(id: String): StoreItem = js.native

@@ -1,6 +1,5 @@
 package typings.atJupyterlabCodemirror
 
-import typings.atJupyterlabCodeeditor.libMimetypeMod.IEditorMimeTypeService
 import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.ILanguageInfoMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,32 +8,23 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/codemirror/lib/mimetype", JSImport.Namespace)
 @js.native
 object libMimetypeMod extends js.Object {
-  @js.native
-  class CodeMirrorMimeTypeService () extends IEditorMimeTypeService {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService * / any */ @js.native
+  class CodeMirrorMimeTypeService () extends js.Object {
     /**
-      * Get a mime type for the given file path.
+      * Returns a mime type for the given file path.
       *
-      * @param filePath - The full path to the file.
-      *
-      * @returns A valid mimetype.
+      * #### Notes
+      * If a mime type cannot be found returns the default mime type `text/plain`, never `null`.
+      */
+    def getMimeTypeByFilePath(path: String): String = js.native
+    /**
+      * Returns a mime type for the given language info.
       *
       * #### Notes
       * If a mime type cannot be found returns the defaul mime type `text/plain`, never `null`.
       */
-    /* CompleteClass */
-    override def getMimeTypeByFilePath(filePath: String): String = js.native
-    /**
-      * Get a mime type for the given language info.
-      *
-      * @param info - The language information.
-      *
-      * @returns A valid mimetype.
-      *
-      * #### Notes
-      * If a mime type cannot be found returns the defaul mime type `text/plain`, never `null`.
-      */
-    /* CompleteClass */
-    override def getMimeTypeByLanguage(info: ILanguageInfoMetadata): String = js.native
+    def getMimeTypeByLanguage(info: ILanguageInfoMetadata): String = js.native
   }
   
 }

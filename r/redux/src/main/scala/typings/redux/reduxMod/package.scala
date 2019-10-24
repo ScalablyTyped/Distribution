@@ -31,9 +31,9 @@ package object reduxMod {
     StoreEnhancerStoreCreator[Ext, StateExt]
   ]
   type StoreEnhancerStoreCreator[Ext, StateExt] = js.Function2[
-    /* reducer */ Reducer[js.Any, Action[js.Any]], 
+    /* reducer */ Reducer[js.Any, AnyAction], 
     /* preloadedState */ js.UndefOr[DeepPartial[js.Any]], 
-    (Store[js.Any with StateExt, Action[_]]) with Ext
+    (Store[js.Any with StateExt, AnyAction]) with Ext
   ]
   type Unsubscribe = js.Function0[Unit]
 }

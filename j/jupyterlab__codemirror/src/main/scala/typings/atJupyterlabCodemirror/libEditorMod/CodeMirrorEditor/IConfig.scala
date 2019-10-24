@@ -1,9 +1,5 @@
 package typings.atJupyterlabCodemirror.libEditorMod.CodeMirrorEditor
 
-import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.bounded
-import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.off
-import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.on
-import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.wordWrapColumn
 import typings.atJupyterlabCodemirror.libModeMod.Mode.IMode
 import typings.codemirror.codemirrorMod.StyleActiveLine
 import scala.scalajs.js
@@ -13,8 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * The configuration options for a codemirror editor.
   */
-trait IConfig
-  extends typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IConfig {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IConfig * / any */ trait IConfig extends js.Object {
   /**
     * When fixedGutter is on, and there is a horizontal scrollbar, by default
     * the gutter will be visible to the left of this scrollbar. If this
@@ -134,30 +130,17 @@ trait IConfig
 object IConfig {
   @scala.inline
   def apply(
-    autoClosingBrackets: Boolean,
-    codeFolding: Boolean,
-    insertSpaces: Boolean,
-    lineNumbers: Boolean,
-    lineWrap: off | on | wordWrapColumn | bounded,
-    matchBrackets: Boolean,
-    readOnly: Boolean,
-    rulers: js.Array[Double],
     selectionPointer: Boolean | String,
     styleActiveLine: Boolean | StyleActiveLine,
     styleSelectedText: Boolean,
-    tabSize: Double,
-    wordWrapColumn: Double,
     coverGutterNextToScrollbar: js.UndefOr[Boolean] = js.undefined,
     dragDrop: js.UndefOr[Boolean] = js.undefined,
     electricChars: js.UndefOr[Boolean] = js.undefined,
     extraKeys: js.Any = null,
     fixedGutter: js.UndefOr[Boolean] = js.undefined,
     foldGutter: js.UndefOr[Boolean] = js.undefined,
-    fontFamily: String = null,
-    fontSize: Int | Double = null,
     gutters: js.Array[String] = null,
     keyMap: String = null,
-    lineHeight: Int | Double = null,
     lineSeparator: String = null,
     lineWiseCopyCut: js.UndefOr[Boolean] = js.undefined,
     mode: String | IMode = null,
@@ -167,18 +150,15 @@ object IConfig {
     smartIndent: js.UndefOr[Boolean] = js.undefined,
     theme: String = null
   ): IConfig = {
-    val __obj = js.Dynamic.literal(autoClosingBrackets = autoClosingBrackets, codeFolding = codeFolding, insertSpaces = insertSpaces, lineNumbers = lineNumbers, lineWrap = lineWrap.asInstanceOf[js.Any], matchBrackets = matchBrackets, readOnly = readOnly, rulers = rulers, selectionPointer = selectionPointer.asInstanceOf[js.Any], styleActiveLine = styleActiveLine.asInstanceOf[js.Any], styleSelectedText = styleSelectedText, tabSize = tabSize, wordWrapColumn = wordWrapColumn)
+    val __obj = js.Dynamic.literal(selectionPointer = selectionPointer.asInstanceOf[js.Any], styleActiveLine = styleActiveLine.asInstanceOf[js.Any], styleSelectedText = styleSelectedText)
     if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar)
     if (!js.isUndefined(dragDrop)) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(electricChars)) __obj.updateDynamic("electricChars")(electricChars)
     if (extraKeys != null) __obj.updateDynamic("extraKeys")(extraKeys)
     if (!js.isUndefined(fixedGutter)) __obj.updateDynamic("fixedGutter")(fixedGutter)
     if (!js.isUndefined(foldGutter)) __obj.updateDynamic("foldGutter")(foldGutter)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (gutters != null) __obj.updateDynamic("gutters")(gutters)
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap)
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
     if (lineSeparator != null) __obj.updateDynamic("lineSeparator")(lineSeparator)
     if (!js.isUndefined(lineWiseCopyCut)) __obj.updateDynamic("lineWiseCopyCut")(lineWiseCopyCut)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])

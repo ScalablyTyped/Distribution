@@ -3,7 +3,6 @@ package typings.atJupyterlabCells.libWidgetMod.Cell
 import typings.atJupyterlabCells.libHeaderfooterMod.ICellFooter
 import typings.atJupyterlabCells.libHeaderfooterMod.ICellHeader
 import typings.atJupyterlabCells.libInputareaMod.IInputPrompt
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabOutputarea.libWidgetMod.IOutputPrompt
 import typings.atJupyterlabOutputarea.libWidgetMod.IStdin
 import scala.scalajs.js
@@ -40,9 +39,9 @@ object IContentFactory {
     createInputPrompt: () => IInputPrompt,
     createOutputPrompt: () => IOutputPrompt,
     createStdin: typings.atJupyterlabOutputarea.libWidgetMod.Stdin.IOptions => IStdin,
-    editorFactory: /* options */ typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions => IEditor
+    editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
   ): IContentFactory = {
-    val __obj = js.Dynamic.literal(createCellFooter = js.Any.fromFunction0(createCellFooter), createCellHeader = js.Any.fromFunction0(createCellHeader), createInputPrompt = js.Any.fromFunction0(createInputPrompt), createOutputPrompt = js.Any.fromFunction0(createOutputPrompt), createStdin = js.Any.fromFunction1(createStdin), editorFactory = js.Any.fromFunction1(editorFactory))
+    val __obj = js.Dynamic.literal(createCellFooter = js.Any.fromFunction0(createCellFooter), createCellHeader = js.Any.fromFunction0(createCellHeader), createInputPrompt = js.Any.fromFunction0(createInputPrompt), createOutputPrompt = js.Any.fromFunction0(createOutputPrompt), createStdin = js.Any.fromFunction1(createStdin), editorFactory = editorFactory)
   
     __obj.asInstanceOf[IContentFactory]
   }

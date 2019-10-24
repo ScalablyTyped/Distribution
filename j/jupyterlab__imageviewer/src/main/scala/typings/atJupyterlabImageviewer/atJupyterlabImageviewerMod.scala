@@ -1,6 +1,5 @@
 package typings.atJupyterlabImageviewer
 
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +14,7 @@ object atJupyterlabImageviewerMod extends js.Object {
     /**
       * Construct a new image widget.
       */
-    def this(context: Context) = this()
+    def this(context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any) = this()
   }
   
   @js.native

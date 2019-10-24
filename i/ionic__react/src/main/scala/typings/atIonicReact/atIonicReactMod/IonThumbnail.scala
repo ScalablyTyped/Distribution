@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonThumbnail
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonThumbnail */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonThumbnail with (Pick[
           HTMLAttributes[HTMLIonThumbnailElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonThumbnailElement]

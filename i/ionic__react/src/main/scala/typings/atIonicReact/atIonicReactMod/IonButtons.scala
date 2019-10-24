@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonButtons
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButtons */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonButtons with (Pick[
           HTMLAttributes[HTMLIonButtonsElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonButtonsElement]

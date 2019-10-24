@@ -1,6 +1,5 @@
 package typings.atJupyterlabFilebrowser.libModelMod
 
-import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
 import typings.atJupyterlabFilebrowser.libModelMod.FileBrowserModel.IOptions
 import typings.atJupyterlabServices.libContentsMod.Contents.IChangedArgs
 import typings.atJupyterlabServices.libContentsMod.Contents.IModel
@@ -90,7 +89,7 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * The document manager instance used by the file browser model.
     */
-  val manager: IDocumentManager = js.native
+  val manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any = js.native
   /**
     * Get the current path.
     */

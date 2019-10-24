@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__console"
-version := "1.1.3-5da512"
+version := "1.1.3-3b68e6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "jupyterlab__apputils" % "1.1.3-d4b9f4",
   "org.scalablytyped" %%% "jupyterlab__attachments" % "1.1.3-bc6257",
-  "org.scalablytyped" %%% "jupyterlab__cells" % "1.1.3-f9361f",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.1.0-3c5686",
+  "org.scalablytyped" %%% "jupyterlab__cells" % "1.1.3-8f8422",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.1.0-9e98ec",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.3.0-d904b1",
   "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.1.3-416976",

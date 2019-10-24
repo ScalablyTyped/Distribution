@@ -1,7 +1,6 @@
 package typings.atJupyterlabCells.libInputareaMod.InputArea
 
 import typings.atJupyterlabCells.libInputareaMod.IInputPrompt
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +25,7 @@ class ContentFactory_ () extends IContentFactory {
     * to pass it around.
     */
   /* CompleteClass */
-  override val editorFactory: Factory = js.native
+  override val editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any = js.native
   /**
     * Create an input prompt.
     */

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonAvatar
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonAvatar */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonAvatar with (Pick[
           HTMLAttributes[HTMLIonAvatarElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonAvatarElement]

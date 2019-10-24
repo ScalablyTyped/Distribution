@@ -1,5 +1,6 @@
 package typings.atIonicReact
 
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import typings.atIonicReact.atIonicReactStrings.none
 import typings.atIonicReact.distTypesContextsNavContextMod.NavContextState
 import typings.react.reactMod.Context
@@ -20,10 +21,7 @@ object distTypesContextsNavContextMod extends js.Object {
     def goBack(defaultHref: String): Unit = js.native
     def hasIonicRouter(): Boolean = js.native
     def navigate(path: String): Unit = js.native
-    def navigate(
-      path: String,
-      direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
-    ): Unit = js.native
+    def navigate(path: String, direction: RouterDirection): Unit = js.native
     @JSName("navigate")
     def navigate_none(path: String, direction: none): Unit = js.native
     def registerIonPage(page: HTMLElement): Unit = js.native

@@ -30,9 +30,9 @@ object typesafeDashActionsMod extends js.Object {
     `type`: T,
     createHandler: js.Function1[
       /* actionCallback */ js.Function2[
-        /* payload */ js.UndefOr[js.Any], 
-        /* meta */ js.UndefOr[js.Any], 
-        PayloadMetaAction[T, _, _]
+        /* payload */ js.UndefOr[scala.Nothing], 
+        /* meta */ js.UndefOr[scala.Nothing], 
+        PayloadMetaAction[T, js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]
       ], 
       AC
     ]

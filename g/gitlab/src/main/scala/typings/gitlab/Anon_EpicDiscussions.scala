@@ -2,44 +2,67 @@ package typings.gitlab
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.gitlab.distInfrastructureMod.BaseServiceOptions
-import typings.gitlab.distServicesMod.EpicDiscussions
-import typings.gitlab.distServicesMod.EpicIssues
-import typings.gitlab.distServicesMod.EpicNotes
-import typings.gitlab.distServicesMod.Epics
-import typings.gitlab.distServicesMod.GroupAccessRequests
-import typings.gitlab.distServicesMod.GroupBadges
-import typings.gitlab.distServicesMod.GroupCustomAttributes
-import typings.gitlab.distServicesMod.GroupIssueBoards
-import typings.gitlab.distServicesMod.GroupMembers
-import typings.gitlab.distServicesMod.GroupMilestones
-import typings.gitlab.distServicesMod.GroupProjects
-import typings.gitlab.distServicesMod.GroupVariables
-import typings.gitlab.distServicesMod.Groups
+import typings.gitlab.distSrcCoreInfrastructureMod.BaseServiceOptions
+import typings.gitlab.distSrcCoreServicesMod.EpicDiscussions
+import typings.gitlab.distSrcCoreServicesMod.EpicIssues
+import typings.gitlab.distSrcCoreServicesMod.EpicNotes
+import typings.gitlab.distSrcCoreServicesMod.Epics
+import typings.gitlab.distSrcCoreServicesMod.GroupAccessRequests
+import typings.gitlab.distSrcCoreServicesMod.GroupBadges
+import typings.gitlab.distSrcCoreServicesMod.GroupCustomAttributes
+import typings.gitlab.distSrcCoreServicesMod.GroupIssueBoards
+import typings.gitlab.distSrcCoreServicesMod.GroupLabels
+import typings.gitlab.distSrcCoreServicesMod.GroupMembers
+import typings.gitlab.distSrcCoreServicesMod.GroupMilestones
+import typings.gitlab.distSrcCoreServicesMod.GroupProjects
+import typings.gitlab.distSrcCoreServicesMod.GroupVariables
+import typings.gitlab.distSrcCoreServicesMod.Groups
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EpicDiscussions extends js.Object {
-  var EpicDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.EpicDiscussions]
-  var EpicIssues: Instantiable0[typings.gitlab.distServicesMod.EpicIssues]
-  var EpicNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.EpicNotes]
-  var Epics: Instantiable0[typings.gitlab.distServicesMod.Epics]
+  var EpicDiscussions: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.EpicDiscussions
+  ]
+  var EpicIssues: Instantiable0[typings.gitlab.distSrcCoreServicesMod.EpicIssues]
+  var EpicNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distSrcCoreServicesMod.EpicNotes]
+  var Epics: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Epics]
   var GroupAccessRequests: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.GroupAccessRequests
+    typings.gitlab.distSrcCoreServicesMod.GroupAccessRequests
   ]
-  var GroupBadges: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupBadges]
+  var GroupBadges: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupBadges
+  ]
   var GroupCustomAttributes: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.GroupCustomAttributes
+    typings.gitlab.distSrcCoreServicesMod.GroupCustomAttributes
   ]
-  var GroupIssueBoards: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupIssueBoards]
-  var GroupMembers: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupMembers]
-  var GroupMilestones: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupMilestones]
-  var GroupProjects: Instantiable0[typings.gitlab.distServicesMod.GroupProjects]
-  var GroupVariables: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupVariables]
-  var Groups: Instantiable0[typings.gitlab.distServicesMod.Groups]
+  var GroupIssueBoards: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupIssueBoards
+  ]
+  var GroupLabels: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupLabels
+  ]
+  var GroupMembers: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupMembers
+  ]
+  var GroupMilestones: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupMilestones
+  ]
+  var GroupProjects: Instantiable0[typings.gitlab.distSrcCoreServicesMod.GroupProjects]
+  var GroupVariables: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupVariables
+  ]
+  var Groups: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Groups]
 }
 
 object Anon_EpicDiscussions {
@@ -53,13 +76,14 @@ object Anon_EpicDiscussions {
     GroupBadges: Instantiable1[/* options */ BaseServiceOptions, GroupBadges],
     GroupCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, GroupCustomAttributes],
     GroupIssueBoards: Instantiable1[/* options */ BaseServiceOptions, GroupIssueBoards],
+    GroupLabels: Instantiable1[/* options */ BaseServiceOptions, GroupLabels],
     GroupMembers: Instantiable1[/* options */ BaseServiceOptions, GroupMembers],
     GroupMilestones: Instantiable1[/* options */ BaseServiceOptions, GroupMilestones],
     GroupProjects: Instantiable0[GroupProjects],
     GroupVariables: Instantiable1[/* options */ BaseServiceOptions, GroupVariables],
     Groups: Instantiable0[Groups]
   ): Anon_EpicDiscussions = {
-    val __obj = js.Dynamic.literal(EpicDiscussions = EpicDiscussions, EpicIssues = EpicIssues, EpicNotes = EpicNotes, Epics = Epics, GroupAccessRequests = GroupAccessRequests, GroupBadges = GroupBadges, GroupCustomAttributes = GroupCustomAttributes, GroupIssueBoards = GroupIssueBoards, GroupMembers = GroupMembers, GroupMilestones = GroupMilestones, GroupProjects = GroupProjects, GroupVariables = GroupVariables, Groups = Groups)
+    val __obj = js.Dynamic.literal(EpicDiscussions = EpicDiscussions, EpicIssues = EpicIssues, EpicNotes = EpicNotes, Epics = Epics, GroupAccessRequests = GroupAccessRequests, GroupBadges = GroupBadges, GroupCustomAttributes = GroupCustomAttributes, GroupIssueBoards = GroupIssueBoards, GroupLabels = GroupLabels, GroupMembers = GroupMembers, GroupMilestones = GroupMilestones, GroupProjects = GroupProjects, GroupVariables = GroupVariables, Groups = Groups)
   
     __obj.asInstanceOf[Anon_EpicDiscussions]
   }

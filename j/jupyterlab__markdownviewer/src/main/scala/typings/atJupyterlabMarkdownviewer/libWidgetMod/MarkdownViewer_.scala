@@ -1,6 +1,5 @@
 package typings.atJupyterlabMarkdownviewer.libWidgetMod
 
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabMarkdownviewer.atJupyterlabMarkdownviewerStrings.fontFamily
 import typings.atJupyterlabMarkdownviewer.atJupyterlabMarkdownviewerStrings.fontSize
 import typings.atJupyterlabMarkdownviewer.atJupyterlabMarkdownviewerStrings.hideFrontMatter
@@ -31,7 +30,7 @@ class MarkdownViewer_ protected () extends Widget {
     */
   var _render: js.Any = js.native
   var _renderRequested: js.Any = js.native
-  val context: Context = js.native
+  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * A promise that resolves when the markdown viewer is ready.
     */

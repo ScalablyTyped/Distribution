@@ -8,12 +8,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonIcon * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonIcon")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonIcon")
 @js.native
-class IonIcon protected () extends js.Object {
+class IonIcon protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonIcon {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
+  /**
+    * If enabled, ion-icon will be loaded lazily when it's visible in the viewport. Default, `false`.
+    */
+  /* CompleteClass */
+  override var `lazy`: Boolean = js.native
   var z: NgZone = js.native
 }
 

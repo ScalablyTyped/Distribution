@@ -1,13 +1,7 @@
 package typings.reactDashSortableDashTree.reactDashSortableDashTreeMod
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ReactElement
 import typings.react.reactMod._Global_.JSX.Element
-import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragPreview
-import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragSource
-import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement
-import typings.reactDashDnd.libInterfacesOptionsMod.DragPreviewOptions
-import typings.reactDashDnd.libInterfacesOptionsMod.DragSourceOptions
 import typings.reactDashSortableDashTree.NumberOrStringArray
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.ltr
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.rtl
@@ -20,8 +14,8 @@ trait NodeRendererProps extends js.Object {
   var canDrag: Boolean
   var canDrop: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
-  var connectDragPreview: ConnectDragPreview
-  var connectDragSource: ConnectDragSource
+  var connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any
+  var connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any
   var didDrop: Boolean
   var draggedNode: js.UndefOr[TreeItem] = js.undefined
   var endDrag: js.Any
@@ -53,8 +47,8 @@ object NodeRendererProps {
   @scala.inline
   def apply(
     canDrag: Boolean,
-    connectDragPreview: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null,
-    connectDragSource: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragSourceOptions]) => ReactElement | Null,
+    connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any,
+    connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any,
     didDrop: Boolean,
     endDrag: js.Any,
     isDragging: Boolean,
@@ -84,7 +78,7 @@ object NodeRendererProps {
     title: /* data */ NodeData => Element = null,
     toggleChildrenVisibility: /* data */ NodeData => Unit = null
   ): NodeRendererProps = {
-    val __obj = js.Dynamic.literal(canDrag = canDrag, connectDragPreview = js.Any.fromFunction2(connectDragPreview), connectDragSource = js.Any.fromFunction2(connectDragSource), didDrop = didDrop, endDrag = endDrag, isDragging = isDragging, isOver = isOver, isSearchFocus = isSearchFocus, isSearchMatch = isSearchMatch, listIndex = listIndex, lowerSiblingCounts = lowerSiblingCounts, node = node, path = path, scaffoldBlockPxWidth = scaffoldBlockPxWidth, startDrag = startDrag, treeId = treeId, treeIndex = treeIndex)
+    val __obj = js.Dynamic.literal(canDrag = canDrag, connectDragPreview = connectDragPreview, connectDragSource = connectDragSource, didDrop = didDrop, endDrag = endDrag, isDragging = isDragging, isOver = isOver, isSearchFocus = isSearchFocus, isSearchMatch = isSearchMatch, listIndex = listIndex, lowerSiblingCounts = lowerSiblingCounts, node = node, path = path, scaffoldBlockPxWidth = scaffoldBlockPxWidth, startDrag = startDrag, treeId = treeId, treeIndex = treeIndex)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (!js.isUndefined(canDrop)) __obj.updateDynamic("canDrop")(canDrop)
     if (className != null) __obj.updateDynamic("className")(className)

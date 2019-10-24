@@ -1,5 +1,6 @@
 package typings.reactDashI18next.reactDashI18nextMod
 
+import typings.i18next.i18nextMod.TFunction
 import typings.i18next.i18nextMod.i18n
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
@@ -16,6 +17,7 @@ import scala.scalajs.js.annotation._
   var i18nKey: js.UndefOr[String] = js.undefined
   var ns: js.UndefOr[Namespace] = js.undefined
   var parent: js.UndefOr[ReactNode] = js.undefined
+  var t: js.UndefOr[TFunction] = js.undefined
   var tOptions: js.UndefOr[js.Object] = js.undefined
   var values: js.UndefOr[js.Object] = js.undefined
 }
@@ -31,6 +33,7 @@ object TransProps {
     i18nKey: String = null,
     ns: Namespace = null,
     parent: ReactNode = null,
+    t: TFunction = null,
     tOptions: js.Object = null,
     values: js.Object = null
   ): TransProps = {
@@ -43,6 +46,7 @@ object TransProps {
     if (i18nKey != null) __obj.updateDynamic("i18nKey")(i18nKey)
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (t != null) __obj.updateDynamic("t")(t)
     if (tOptions != null) __obj.updateDynamic("tOptions")(tOptions)
     if (values != null) __obj.updateDynamic("values")(values)
     __obj.asInstanceOf[TransProps]

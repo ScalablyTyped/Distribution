@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonSelect
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelect */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSelect with (Pick[
           HTMLAttributes[HTMLIonSelectElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonSelectElement]

@@ -19,7 +19,7 @@ object IonRouterOutlet
       ForwardRefExoticComponent[
         (Pick[
           IonicReactExternalProps[
-            (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocalJSX.IonRouterOutlet */ js.Any) with Anon_Ref with IonicReactProps, 
+            typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterOutlet with Anon_Ref with IonicReactProps, 
             HTMLIonRouterOutletElement
           ], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 257 */ js.Any

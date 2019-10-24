@@ -1,6 +1,7 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.atIonicCore.distTypesComponentsLoadingLoadingDashInterfaceMod.LoadingOptions
 import typings.atIonicReact.distTypesComponentsCreateControllerComponentMod.ReactControllerProps
 import typings.react.reactMod.Context
 import scala.scalajs.js
@@ -12,13 +13,12 @@ import scala.scalajs.js.annotation._
 object distTypesComponentsIonLoadingMod extends js.Object {
   @js.native
   class IonLoading protected () extends Anon_CallbackComponentDidMountComponentDidUpdate {
-    def this(props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LoadingOptions */ js.Any) with ReactControllerProps) = this()
+    def this(props: LoadingOptions with ReactControllerProps) = this()
   }
   
   @js.native
-  object IonLoading
-    extends Instantiable1[
-          /* props */ (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LoadingOptions */ js.Any) with ReactControllerProps, 
+  object IonLoading extends Instantiable1[
+          /* props */ LoadingOptions with ReactControllerProps, 
           Anon_CallbackComponentDidMountComponentDidUpdate
         ] {
     var contextType: js.UndefOr[Context[_]] = js.native

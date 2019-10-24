@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-parser"
-version := "8.0.2-954891"
+version := "8.0.3-d1e063"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,7 +15,7 @@ trait Dict[T] extends Type[StringDictionary[T]] {
   var meta_Dict: Anon_Codomain[T] = js.native
   @JSName("update")
   var update_Original: Update[StringDictionary[T]] = js.native
-  def update(instance: StringDictionary[StringDictionary[T]], spec: UpdatePatch): StringDictionary[StringDictionary[T]] = js.native
+  def update(instance: StringDictionary[T], spec: UpdatePatch): StringDictionary[T] = js.native
 }
 
 @JSImport("tcomb", "dict")

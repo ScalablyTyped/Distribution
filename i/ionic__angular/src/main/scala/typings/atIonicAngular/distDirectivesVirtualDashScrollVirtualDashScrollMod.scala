@@ -8,6 +8,10 @@ import typings.atAngularCore.atAngularCoreMod.TrackByFunction
 import typings.atIonicAngular.distDirectivesVirtualDashScrollVirtualDashFooterMod.VirtualFooter
 import typings.atIonicAngular.distDirectivesVirtualDashScrollVirtualDashHeaderMod.VirtualHeader
 import typings.atIonicAngular.distDirectivesVirtualDashScrollVirtualDashItemMod.VirtualItem
+import typings.atIonicCore.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.FooterHeightFn
+import typings.atIonicCore.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.HeaderFn
+import typings.atIonicCore.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.HeaderHeightFn
+import typings.atIonicCore.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.ItemHeightFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,15 +63,11 @@ object distDirectivesVirtualDashScrollVirtualDashScrollMod extends js.Object {
       * should be used, and what data to give to the footer template. The function
       * must return `null` if a footer cell shouldn't be created.
       */
-    var footerFn: js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderFn */ js.Any
-      ] = js.native
+    var footerFn: js.UndefOr[HeaderFn] = js.native
     /**
       * An optional function that maps each item footer within their height.
       */
-    var footerHeight: js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FooterHeightFn */ js.Any
-      ] = js.native
+    var footerHeight: js.UndefOr[FooterHeightFn] = js.native
     var ftrTmp: VirtualFooter = js.native
     var getComponent: js.Any = js.native
     var hdrTmp: VirtualHeader = js.native
@@ -81,15 +81,11 @@ object distDirectivesVirtualDashScrollVirtualDashScrollMod extends js.Object {
       * and what data to give to the header template. The function must return
       * `null` if a header cell shouldn't be created.
       */
-    var headerFn: js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderFn */ js.Any
-      ] = js.native
+    var headerFn: js.UndefOr[HeaderFn] = js.native
     /**
       * An optional function that maps each item header within their height.
       */
-    var headerHeight: js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderHeightFn */ js.Any
-      ] = js.native
+    var headerHeight: js.UndefOr[HeaderHeightFn] = js.native
     /**
       * An optional function that maps each item within their height.
       * When this function is provided, heavy optimizations and fast path can be taked by
@@ -98,9 +94,7 @@ object distDirectivesVirtualDashScrollVirtualDashScrollMod extends js.Object {
       * This function allows to skip all DOM reads, which can be Doing so leads
       * to massive performance
       */
-    var itemHeight: js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ItemHeightFn */ js.Any
-      ] = js.native
+    var itemHeight: js.UndefOr[ItemHeightFn] = js.native
     /**
       * The data that builds the templates within the virtual scroll.
       * It's important to note that when this data has changed, then the

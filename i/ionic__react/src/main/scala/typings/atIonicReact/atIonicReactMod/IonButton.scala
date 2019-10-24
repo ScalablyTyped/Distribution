@@ -34,7 +34,7 @@ object IonButton
   extends TopLevel[
       ForwardRefExoticComponent[
         (Pick[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButton */ _, 
+          typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonButton, 
           disabled | strong | color | size | fill | mode | href | download | rel | target | buttonType | expand | onIonBlur | onIonFocus | shape | `type`
         ]) with Anon_Back with (Pick[
           HTMLAttributes[HTMLIonButtonElement], 

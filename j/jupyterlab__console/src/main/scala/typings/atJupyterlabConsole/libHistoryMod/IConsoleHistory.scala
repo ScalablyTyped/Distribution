@@ -1,7 +1,6 @@
 package typings.atJupyterlabConsole.libHistoryMod
 
 import typings.atJupyterlabApputils.libClientsessionMod.IClientSession
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +10,7 @@ trait IConsoleHistory extends IDisposable {
   /**
     * The current editor used by the history widget.
     */
-  var editor: IEditor | Null
+  var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null
   /**
     * The placeholder text that a history session began with.
     */
@@ -68,7 +67,7 @@ object IConsoleHistory {
     push: String => Unit,
     reset: () => Unit,
     session: IClientSession,
-    editor: IEditor = null
+    editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any = null
   ): IConsoleHistory = {
     val __obj = js.Dynamic.literal(back = js.Any.fromFunction1(back), dispose = js.Any.fromFunction0(dispose), forward = js.Any.fromFunction1(forward), isDisposed = isDisposed, placeholder = placeholder, push = js.Any.fromFunction1(push), reset = js.Any.fromFunction0(reset), session = session)
     if (editor != null) __obj.updateDynamic("editor")(editor)

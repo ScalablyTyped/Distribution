@@ -13,10 +13,10 @@ trait CapMixin[T] extends js.Object {
   @JSName("othersLabel")
   var othersLabel_Original: IGetSet[String, T] = js.native
   def cap(): Double = js.native
-  def cap(t: Double): Double = js.native
+  def cap(t: Double): T = js.native
   def othersGrouper(): js.Function1[/* data */ js.Array[_], js.Array[_]] = js.native
-  def othersGrouper(t: js.Function1[/* data */ js.Array[_], js.Array[_]]): js.Function1[/* data */ js.Array[_], js.Array[_]] = js.native
+  def othersGrouper(t: js.Function1[/* data */ js.Array[_], js.Array[_]]): T = js.native
   def othersLabel(): String = js.native
-  def othersLabel(t: String): String = js.native
+  def othersLabel(t: String): T = js.native
 }
 

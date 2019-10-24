@@ -1,6 +1,5 @@
 package typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd
 
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IOpenOptions
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
@@ -39,7 +38,11 @@ trait IShell extends Widget {
     */
   def add(widget: Widget): Unit = js.native
   def add(widget: Widget, area: String): Unit = js.native
-  def add(widget: Widget, area: String, options: IOpenOptions): Unit = js.native
+  def add(
+    widget: Widget,
+    area: String,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
+  ): Unit = js.native
   /**
     * Returns an iterator for the widgets inside the application shell.
     *

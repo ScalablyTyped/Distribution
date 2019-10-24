@@ -1,15 +1,9 @@
 package typings.atJupyterlabHtmlviewer
 
-import typings.atJupyterlabApputils.atJupyterlabApputilsMod.IFrame
 import typings.atJupyterlabApputils.libWidgettrackerMod.IWidgetTracker
-import typings.atJupyterlabDocregistry.libDefaultMod.DocumentWidget.IOptionsOptionalContent
-import typings.atJupyterlabDocregistry.libMod.ABCWidgetFactory
-import typings.atJupyterlabDocregistry.libMod.DocumentWidget
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabHtmlviewer.atJupyterlabHtmlviewerMod.HTMLViewer
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
-import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,18 +11,14 @@ import scala.scalajs.js.annotation._
 @JSImport("@jupyterlab/htmlviewer", JSImport.Namespace)
 @js.native
 object atJupyterlabHtmlviewerMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable because Already inherited
-  - typings.atPhosphorMessaging.atPhosphorMessagingMod.IMessageHandler because Already inherited
-  - typings.atPhosphorDisposable.atPhosphorDisposableMod.IObservableDisposable because Already inherited
-  - typings.atPhosphorWidgets.libWidgetMod.Widget because Already inherited
-  - typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget because Already inherited
-  - typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget because var conflicts: _disposed, _flags, _layout, _parent, id, layout, parent. Inlined  */ @js.native
-  class HTMLViewer protected () extends DocumentWidget[IFrame, IModel] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentWidget<IFrame> * / any
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget<IFrame> * / any */ @js.native
+  class HTMLViewer protected () extends js.Object {
     /**
       * Create a new widget for rendering HTML.
       */
-    def this(options: IOptionsOptionalContent[Widget, IModel]) = this()
+    def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentWidget.IOptionsOptionalContent */ js.Any) = this()
     var _monitor: js.Any = js.native
     var _objectUrl: js.Any = js.native
     var _parser: js.Any = js.native
@@ -53,13 +43,25 @@ object atJupyterlabHtmlviewerMod extends js.Object {
       */
     val trustedChanged: ISignal[this.type, Boolean] = js.native
     /**
+      * Dispose of resources held by the html viewer.
+      */
+    def dispose(): Unit = js.native
+    /**
       * Handle and update request.
       */
     /* protected */ def onUpdateRequest(): Unit = js.native
   }
   
-  @js.native
-  class HTMLViewerFactory () extends ABCWidgetFactory[HTMLViewer, IModel]
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ABCWidgetFactory<HTMLViewer> * / any */ @js.native
+  class HTMLViewerFactory () extends js.Object {
+    /**
+      * Create a new widget given a context.
+      */
+    /* protected */ def createNewWidget(
+      context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+    ): HTMLViewer = js.native
+  }
   
   val IHTMLViewerTracker: Token[typings.atJupyterlabHtmlviewer.atJupyterlabHtmlviewerMod.IHTMLViewerTracker] = js.native
   type IHTMLViewerTracker = IWidgetTracker[HTMLViewer]

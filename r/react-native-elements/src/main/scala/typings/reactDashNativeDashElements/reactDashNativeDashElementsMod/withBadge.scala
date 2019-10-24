@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "withBadge")
 @js.native
 object withBadge extends js.Object {
-  def apply(): js.Function1[/* WrappedComponent */ ComponentType[_], ComponentType[_]] = js.native
+  def apply(): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
   def apply(/**
     * Text value to be displayed by badge
     */
-  value: js.Function0[ReactNode]): js.Function1[/* WrappedComponent */ ComponentType[_], ComponentType[_]] = js.native
+  value: js.Function0[ReactNode]): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
   def apply(
     /**
     * Text value to be displayed by badge
@@ -24,11 +24,11 @@ object withBadge extends js.Object {
     * Options to configure the badge
     */
   options: Anon_Bottom with BadgeProps
-  ): js.Function1[/* WrappedComponent */ ComponentType[_], ComponentType[_]] = js.native
+  ): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
   def apply(/**
     * Text value to be displayed by badge
     */
-  value: ReactNode): js.Function1[/* WrappedComponent */ ComponentType[_], ComponentType[_]] = js.native
+  value: ReactNode): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
   def apply(
     /**
     * Text value to be displayed by badge
@@ -38,6 +38,6 @@ object withBadge extends js.Object {
     * Options to configure the badge
     */
   options: Anon_Bottom with BadgeProps
-  ): js.Function1[/* WrappedComponent */ ComponentType[_], ComponentType[_]] = js.native
+  ): js.Function1[/* WrappedComponent */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
 }
 

@@ -12,8 +12,8 @@ trait GuardPredicate[TContext, TEvent /* <: EventObject */] extends js.Object {
   var `type`: DefaultGuardType = js.native
   def predicate(
     context: TContext,
-    event: OmniEventObject[OmniEventObject[TEvent]],
-    meta: GuardMeta[TContext, OmniEventObject[OmniEventObject[TEvent]]]
+    event: OmniEventObject[TEvent],
+    meta: GuardMeta[TContext, OmniEventObject[TEvent]]
   ): Boolean = js.native
 }
 

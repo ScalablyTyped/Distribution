@@ -5539,6 +5539,7 @@
 | 3 | [jsonnet](./j/jsonnet) | jsonnet wrapper for Node.js
 | 3 | [jsonrpc-serializer](./j/jsonrpc-serializer) | A simple library to serialize/deserialize JSON-RPC
 | 3 | [jsreport-phantom-pdf](./j/jsreport-phantom-pdf) | jsreport recipe which is rendering pdf from html u
+| 3 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search
 | 3 | [jupyterlab__fileeditor-ex](./j/jupyterlab__fileeditor-extension) | JupyterLab - Editor Widget Extension
 | 3 | [jupyterlab__imageviewer](./j/jupyterlab__imageviewer) | JupyterLab - Image Widget
 | 3 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer) | JupyterLab - Markdown viewer Widget
@@ -6350,6 +6351,7 @@
 | 1 | [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension
 | 1 | [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension
 | 1 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension
+| 1 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types
 | 1 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension
 | 1 | [jupyterlab__htmlviewer-ex](./j/jupyterlab__htmlviewer-extension) | JupyterLab extension to render HTML files
 | 1 | [jupyterlab__imageviewer-e](./j/jupyterlab__imageviewer-extension) | JupyterLab - Image Widget Extension

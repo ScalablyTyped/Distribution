@@ -1,6 +1,5 @@
 package typings.atJupyterlabDocregistry.libDefaultMod
 
-import typings.atJupyterlabCodeeditor.libMod.CodeEditor.Model
 import typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabObservables.libModeldbMod.IModelDB
@@ -10,14 +9,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@jupyterlab/docregistry/lib/default", "DocumentModel")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Model * / any
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IModel * / any */ @JSImport("@jupyterlab/docregistry/lib/default", "DocumentModel")
 @js.native
 /**
   * Construct a new document model.
   */
-class DocumentModel ()
-  extends Model
-     with IModel {
+class DocumentModel () extends IModel {
   def this(languagePreference: String) = this()
   def this(languagePreference: String, modelDB: IModelDB) = this()
   var _contentChanged: js.Any = js.native
@@ -55,7 +54,7 @@ class DocumentModel ()
     * #### Notes
     * This property is always safe to access.
     */
-  /* InferMemberOverrides */
+  /* CompleteClass */
   override val isDisposed: Boolean = js.native
   /**
     * The underlying `IModelDB` instance in which model
@@ -65,7 +64,7 @@ class DocumentModel ()
     * Making direct edits to the values stored in the`IModelDB`
     * is not recommended, and may produce unpredictable results.
     */
-  /* InferMemberOverrides */
+  /* CompleteClass */
   override val modelDB: IModelDB = js.native
   /**
     * The read-only state of the model.
@@ -89,7 +88,6 @@ class DocumentModel ()
     * after it has been disposed unless otherwise explicitly noted.
     */
   /* CompleteClass */
-  /* InferMemberOverrides */
   override def dispose(): Unit = js.native
   /**
     * Deserialize the model from JSON.

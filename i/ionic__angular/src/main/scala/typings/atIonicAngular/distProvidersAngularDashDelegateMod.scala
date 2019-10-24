@@ -6,6 +6,7 @@ import typings.atAngularCore.atAngularCoreMod.Injector
 import typings.atAngularCore.atAngularCoreMod.NgZone
 import typings.atAngularCore.atAngularCoreMod.ViewContainerRef
 import typings.atIonicAngular.distProvidersAngularDashDelegateMod.AngularFrameworkDelegate
+import typings.atIonicCore.distTypesInterfaceMod.FrameworkDelegate
 import typings.std.HTMLElement
 import typings.std.WeakMap
 import scala.scalajs.js
@@ -24,9 +25,8 @@ object distProvidersAngularDashDelegateMod extends js.Object {
     def create(resolver: ComponentFactoryResolver, injector: Injector, location: ViewContainerRef): AngularFrameworkDelegate = js.native
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate * / any */ @js.native
-  class AngularFrameworkDelegate protected () extends js.Object {
+  @js.native
+  class AngularFrameworkDelegate protected () extends FrameworkDelegate {
     def this(
       resolver: ComponentFactoryResolver,
       injector: Injector,
@@ -48,10 +48,6 @@ object distProvidersAngularDashDelegateMod extends js.Object {
     var location: js.Any = js.native
     var resolver: js.Any = js.native
     var zone: js.Any = js.native
-    def attachViewToDom(container: js.Any, component: js.Any): js.Promise[_] = js.native
-    def attachViewToDom(container: js.Any, component: js.Any, params: js.Any): js.Promise[_] = js.native
-    def attachViewToDom(container: js.Any, component: js.Any, params: js.Any, cssClasses: js.Array[String]): js.Promise[_] = js.native
-    def removeViewFromDom(_container: js.Any, component: js.Any): js.Promise[Unit] = js.native
   }
   
   def attachView(

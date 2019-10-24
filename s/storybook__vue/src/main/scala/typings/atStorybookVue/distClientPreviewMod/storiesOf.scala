@@ -1,6 +1,9 @@
 package typings.atStorybookVue.distClientPreviewMod
 
 import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookAddons.distTypesMod.StoryApi
+import typings.atStorybookVue.distClientPreviewTypesMod.StoryFnVueReturnType
+import typings.node.NodeModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object storiesOf
   extends TopLevel[
-      /* import warning: ImportType.apply Failed type conversion: @storybook/vue.@storybook/vue/dist/client/preview.ClientApi['storiesOf'] */ js.Any
+      js.Function2[/* kind */ String, /* module */ NodeModule, StoryApi[StoryFnVueReturnType]]
     ]
 

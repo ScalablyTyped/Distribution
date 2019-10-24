@@ -1,7 +1,6 @@
 package typings.atJupyterlabCells.libInputareaMod.InputArea
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,5 +10,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("@jupyterlab/cells/lib/inputarea", "InputArea.defaultEditorFactory")
 @js.native
-object defaultEditorFactory extends TopLevel[Factory]
+object defaultEditorFactory
+  extends TopLevel[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
+    ]
 

@@ -26,23 +26,21 @@ trait ICompositeChart[T] extends CoordinateGridMixin[T] {
   @JSName("useRightAxisGridLines")
   var useRightAxisGridLines_Original: IGetSet[Boolean, ICompositeChart[T]] = js.native
   def childOptions(): js.Any = js.native
-  def childOptions(t: js.Any): ICompositeChart[_] = js.native
+  def childOptions(t: js.Any): ICompositeChart[T] = js.native
   def children(): js.Array[BaseMixin[_]] = js.native
   def compose(): js.Array[BaseMixin[_]] = js.native
-  def compose(t: js.Array[BaseMixin[_]]): ICompositeChart[js.Array[BaseMixin[_]]] = js.native
+  def compose(t: js.Array[BaseMixin[_]]): ICompositeChart[T] = js.native
   def rightY(): js.Function1[/* n */ js.Any, _] = js.native
-  def rightY(t: js.Function1[/* n */ js.Any, _]): ICompositeChart[js.Function1[/* n */ _, _]] = js.native
+  def rightY(t: js.Function1[/* n */ js.Any, _]): ICompositeChart[T] = js.native
   def rightYAxis(): js.Any = js.native
-  def rightYAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): ICompositeChart[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ _
-  ] = js.native
+  def rightYAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): ICompositeChart[T] = js.native
   def rightYAxisLabel(): String = js.native
-  def rightYAxisLabel(t: String): ICompositeChart[String] = js.native
+  def rightYAxisLabel(t: String): ICompositeChart[T] = js.native
   def shareColors(): Boolean = js.native
-  def shareColors(t: Boolean): ICompositeChart[Boolean] = js.native
+  def shareColors(t: Boolean): ICompositeChart[T] = js.native
   def shareTitle(): Boolean = js.native
-  def shareTitle(t: Boolean): ICompositeChart[Boolean] = js.native
+  def shareTitle(t: Boolean): ICompositeChart[T] = js.native
   def useRightAxisGridLines(): Boolean = js.native
-  def useRightAxisGridLines(t: Boolean): ICompositeChart[Boolean] = js.native
+  def useRightAxisGridLines(t: Boolean): ICompositeChart[T] = js.native
 }
 

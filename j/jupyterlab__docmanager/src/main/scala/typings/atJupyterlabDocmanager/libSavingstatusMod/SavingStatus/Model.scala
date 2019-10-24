@@ -2,7 +2,6 @@ package typings.atJupyterlabDocmanager.libSavingstatusMod.SavingStatus
 
 import typings.atJupyterlabApputils.libVdomMod.VDomModel
 import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.SaveState
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +27,7 @@ class Model protected () extends VDomModel {
   /**
     * The current status of the model.
     */
-  val status: SaveState | Null = js.native
+  val status: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.SaveState */ js.Any) | Null = js.native
   /**
     * The current widget for the model. Any widget can be assigned,
     * but it only has any effect if the widget is an IDocument widget

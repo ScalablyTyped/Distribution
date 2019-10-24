@@ -85,7 +85,7 @@ trait BaseMixin[T] extends js.Object {
   @JSName("width")
   var width_Original: IGetSet[Double, T] = js.native
   def addFilterHandler(): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
-  def addFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
+  def addFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): T = js.native
   def anchor(anchor: String): Selection[
     _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
@@ -139,43 +139,43 @@ trait BaseMixin[T] extends js.Object {
   ] = js.native
   def anchorName(): String = js.native
   def chartGroup(): String = js.native
-  def chartGroup(t: String): String = js.native
+  def chartGroup(t: String): T = js.native
   def controlsUseVisibility(): Boolean = js.native
-  def controlsUseVisibility(t: Boolean): Boolean = js.native
+  def controlsUseVisibility(t: Boolean): T = js.native
   def data(): js.Array[_] = js.native
-  def data(t: js.Function1[/* group */ js.Any, js.Array[_]]): js.Function1[/* group */ js.Any, js.Array[_]] = js.native
+  def data(t: js.Function1[/* group */ js.Any, js.Array[_]]): T = js.native
   def dimension(): js.Any = js.native
-  def dimension(t: js.Any): js.Any = js.native
+  def dimension(t: js.Any): T = js.native
   def expireCache(): T = js.native
   def filter(): js.Any = js.native
-  def filter(t: js.Any): js.Any = js.native
+  def filter(t: js.Any): T = js.native
   def filterAll(): Unit = js.native
   def filterHandler(): js.Function2[/* dimension */ js.Any, /* filter */ js.Any, _] = js.native
-  def filterHandler(t: js.Function2[/* dimension */ js.Any, /* filter */ js.Any, _]): js.Function2[/* dimension */ js.Any, /* filter */ js.Any, _] = js.native
+  def filterHandler(t: js.Function2[/* dimension */ js.Any, /* filter */ js.Any, _]): T = js.native
   def filterPrinter(): js.Function1[/* filters */ js.Array[_], String] = js.native
-  def filterPrinter(t: js.Function1[/* filters */ js.Array[_], String]): js.Function1[/* filters */ js.Array[_], String] = js.native
+  def filterPrinter(t: js.Function1[/* filters */ js.Array[_], String]): T = js.native
   def filters(): js.Array[_] = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.baseMixin.html#group__anchor
   def group(): js.Any = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.baseMixin.html#group__anchor
-  def group(t: js.Any): js.Any = js.native
-  def group(t: js.Any, r: String): js.Any = js.native
+  def group(t: js.Any): T = js.native
+  def group(t: js.Any, r: String): T = js.native
   def hasFilter(): Boolean = js.native
   def hasFilter(filter: js.Any): Boolean = js.native
   def hasFilterHandler(): js.Function2[/* filters */ js.Array[_], /* filter */ js.Any, Boolean] = js.native
-  def hasFilterHandler(t: js.Function2[/* filters */ js.Array[_], /* filter */ js.Any, Boolean]): js.Function2[/* filters */ js.Array[_], /* filter */ js.Any, Boolean] = js.native
+  def hasFilterHandler(t: js.Function2[/* filters */ js.Array[_], /* filter */ js.Any, Boolean]): T = js.native
   def height(): Double = js.native
-  def height(t: Double): Double = js.native
+  def height(t: Double): T = js.native
   def keyAccessor(): Accessor[_, _] = js.native
-  def keyAccessor(t: Accessor[_, _]): Accessor[_, _] = js.native
+  def keyAccessor(t: Accessor[_, _]): T = js.native
   def label(): Accessor[_, String] = js.native
-  def label(t: Accessor[_, String]): Accessor[_, String] = js.native
+  def label(t: Accessor[_, String]): T = js.native
   def legend(): Legend = js.native
-  def legend(t: Legend): Legend = js.native
+  def legend(t: Legend): T = js.native
   def minHeight(): Double = js.native
-  def minHeight(t: Double): Double = js.native
+  def minHeight(t: Double): T = js.native
   def minWidth(): Double = js.native
-  def minWidth(t: Double): Double = js.native
+  def minWidth(t: Double): T = js.native
   def on(event: String, fn: js.Function2[/* chart */ T, /* repeated */ js.Any, _]): T = js.native
   def onClick(datum: js.Any): Unit = js.native
   @JSName("on")
@@ -196,19 +196,19 @@ trait BaseMixin[T] extends js.Object {
   def on_zoomed(event: zoomed, fn: js.Function2[/* chart */ T, /* filter */ js.Any, _]): T = js.native
   def options(optionsObject: js.Any): T = js.native
   def ordering(): Accessor[_, _] = js.native
-  def ordering(t: Accessor[_, _]): Accessor[_, _] = js.native
+  def ordering(t: Accessor[_, _]): T = js.native
   def redraw(): Unit = js.native
   def redrawGroup(): Unit = js.native
   def removeFilterHandler(): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
-  def removeFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
+  def removeFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): T = js.native
   def render(): Unit = js.native
   def renderLabel(): Boolean = js.native
-  def renderLabel(t: Boolean): Boolean = js.native
+  def renderLabel(t: Boolean): T = js.native
   def renderTitle(): Boolean = js.native
-  def renderTitle(t: Boolean): Boolean = js.native
+  def renderTitle(t: Boolean): T = js.native
   def renderlet(fn: js.Function1[/* chart */ T, _]): T = js.native
   def resetFilterHandler(): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
-  def resetFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
+  def resetFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): T = js.native
   def resetSvg(): Unit = js.native
   def select(selector: String): Selection[
     _, 
@@ -268,16 +268,16 @@ trait BaseMixin[T] extends js.Object {
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
   ] = js.native
   def title(): Accessor[_, String] = js.native
-  def title(t: Accessor[_, String]): Accessor[_, String] = js.native
+  def title(t: Accessor[_, String]): T = js.native
   def transitionDuration(): Double = js.native
-  def transitionDuration(t: Double): Double = js.native
+  def transitionDuration(t: Double): T = js.native
   def turnOffControls(): Unit = js.native
   def turnOnControls(): Unit = js.native
   def useViewBoxResizing(): Boolean = js.native
-  def useViewBoxResizing(t: Boolean): Boolean = js.native
+  def useViewBoxResizing(t: Boolean): T = js.native
   def valueAccessor(): Accessor[_, _] = js.native
-  def valueAccessor(t: Accessor[_, _]): Accessor[_, _] = js.native
+  def valueAccessor(t: Accessor[_, _]): T = js.native
   def width(): Double = js.native
-  def width(t: Double): Double = js.native
+  def width(t: Double): T = js.native
 }
 

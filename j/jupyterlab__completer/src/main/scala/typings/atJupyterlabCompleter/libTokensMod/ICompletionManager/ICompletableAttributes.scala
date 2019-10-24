@@ -1,6 +1,5 @@
 package typings.atJupyterlabCompleter.libTokensMod.ICompletionManager
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabCompleter.libHandlerMod.CompletionHandler.IReply
 import typings.atJupyterlabCompleter.libHandlerMod.CompletionHandler.IRequest
 import typings.atJupyterlabCoreutils.libInterfacesMod.IDataConnector
@@ -19,12 +18,15 @@ trait ICompletableAttributes extends js.Object {
   /**
     * The host editor for the completer.
     */
-  var editor: IEditor | Null
+  var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null
 }
 
 object ICompletableAttributes {
   @scala.inline
-  def apply(connector: IDataConnector[IReply, Unit, IRequest], editor: IEditor = null): ICompletableAttributes = {
+  def apply(
+    connector: IDataConnector[IReply, Unit, IRequest],
+    editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any = null
+  ): ICompletableAttributes = {
     val __obj = js.Dynamic.literal(connector = connector)
     if (editor != null) __obj.updateDynamic("editor")(editor)
     __obj.asInstanceOf[ICompletableAttributes]

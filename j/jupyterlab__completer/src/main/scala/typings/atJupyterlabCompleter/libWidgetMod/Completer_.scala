@@ -1,6 +1,5 @@
 package typings.atJupyterlabCompleter.libWidgetMod
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabCompleter.libWidgetMod.Completer.IModel
 import typings.atJupyterlabCompleter.libWidgetMod.Completer.IOptions
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
@@ -58,7 +57,7 @@ class Completer_ protected () extends Widget {
   /**
     * The editor used by the completion widget.
     */
-  var editor: IEditor | Null = js.native
+  var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null = js.native
   /**
     * The model used by the completer widget.
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-frontload"
-version := "1.0-dt-20181222Z-ba407d"
+version := "1.0-dt-20181222Z-79ff48"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

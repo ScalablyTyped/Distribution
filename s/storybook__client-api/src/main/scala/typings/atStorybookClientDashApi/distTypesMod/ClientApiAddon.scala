@@ -4,6 +4,7 @@ import typings.atStorybookAddons.distMod.Addon
 import typings.atStorybookAddons.distMod.MatchOptions
 import typings.atStorybookAddons.distMod.RenderOptions
 import typings.atStorybookAddons.distMod.RouteOptions
+import typings.atStorybookAddons.distTypesMod.StoryApi
 import typings.atStorybookAddons.distTypesMod.Types
 import typings.react.reactMod.ReactElement
 import scala.scalajs.js
@@ -12,16 +13,13 @@ import scala.scalajs.js.annotation._
 
 trait ClientApiAddon[StoryFnReturnType] extends Addon {
   @JSName("apply")
-  def apply(
-    a: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryApi<StoryFnReturnType> */ js.Any,
-    b: js.Array[_]
-  ): js.Any
+  def apply(a: StoryApi[StoryFnReturnType], b: js.Array[_]): js.Any
 }
 
 object ClientApiAddon {
   @scala.inline
   def apply[StoryFnReturnType](
-    apply: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryApi<StoryFnReturnType> */ js.Any, js.Array[_]) => js.Any,
+    apply: (StoryApi[StoryFnReturnType], js.Array[_]) => js.Any,
     render: RenderOptions => ReactElement,
     title: String,
     id: String = null,

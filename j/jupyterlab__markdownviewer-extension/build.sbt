@@ -1,17 +1,15 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__markdownviewer-extension"
-version := "1.1.3-08eb5e"
+version := "1.1.3-6cca88"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "jupyterlab__application" % "1.1.3-7f852e",
+  "org.scalablytyped" %%% "jupyterlab__application" % "1.1.3-dc2fcb",
   "org.scalablytyped" %%% "jupyterlab__apputils" % "1.1.3-d4b9f4",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.1.0-3c5686",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.1.0-9e98ec",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.1.3-e3b487",
-  "org.scalablytyped" %%% "jupyterlab__markdownviewer" % "1.1.3-129d17",
+  "org.scalablytyped" %%% "jupyterlab__markdownviewer" % "1.1.3-1717da",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.3.0-d904b1",
   "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.1.3-eeb4b6",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.4.0-2d1a5d",

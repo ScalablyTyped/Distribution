@@ -14,7 +14,7 @@ trait Maybe[T] extends Type[Unit | T] {
   var meta_Maybe: Anon_IdentityKindNameType[T] = js.native
   @JSName("update")
   var update_Original: Update[Unit | T] = js.native
-  def update(instance: Unit | T, spec: UpdatePatch): Unit | T = js.native
+  def update(instance: T, spec: UpdatePatch): Unit | T = js.native
   def update(instance: Unit, spec: UpdatePatch): Unit | T = js.native
 }
 

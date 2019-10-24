@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server"
-version := "2.9.7-2f4495"
+version := "2.9.7-53622c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,10 +12,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.4.1-b49b3e",
   "org.scalablytyped" %%% "apollo-link" % "1.2.13-05736d",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.5.0-d1718e",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.9.7-d20d3d",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.9.7-936d2e",
   "org.scalablytyped" %%% "apollo-server-env" % "2.4.3-9e8874",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.3.4-984ae3",
-  "org.scalablytyped" %%% "apollo-server-express" % "2.9.7-a68517",
+  "org.scalablytyped" %%% "apollo-server-express" % "2.9.7-71ee27",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.6.5-eb26bb",
   "org.scalablytyped" %%% "apollo-server-types" % "0.2.5-9e1101",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.4.0-11a727",
@@ -24,14 +24,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-5c770f",
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-3e9383",
   "org.scalablytyped" %%% "cors" % "2.8-dt-20190819Z-52c9ae",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-dd73fa",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.0-22646c",
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-64180e",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-8fd375",
   "org.scalablytyped" %%% "fs-capacitor" % "2.0-dt-20190509Z-2a689c",
   "org.scalablytyped" %%% "graphql" % "14.5.8-9a82b3",
   "org.scalablytyped" %%% "graphql-extensions" % "0.10.4-524609",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-a6254d",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.5-93dc69",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.6-0f879c",
   "org.scalablytyped" %%% "graphql-upload" % "8.0-dt-20190826Z-f8b4a9",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-1dd753",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20191016Z-d12bfa",
@@ -41,7 +41,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-827e1a",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-dcaabf",
+  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-ab3aa4",
   "org.scalablytyped" %%% "ws" % "6.0-dt-20190823Z-8f6b1c",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-fe506f")
 publishArtifact in packageDoc := false

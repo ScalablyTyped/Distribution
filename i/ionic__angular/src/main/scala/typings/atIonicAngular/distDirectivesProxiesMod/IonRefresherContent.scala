@@ -8,10 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonRefresherContent * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonRefresherContent")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonRefresherContent")
 @js.native
-class IonRefresherContent protected () extends js.Object {
+class IonRefresherContent protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonRefresherContent {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var z: NgZone = js.native

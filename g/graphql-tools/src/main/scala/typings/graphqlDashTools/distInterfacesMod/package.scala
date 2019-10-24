@@ -9,6 +9,7 @@ package object distInterfacesMod {
   import typings.graphql.executionExecuteMod.ExecutionResult
   import typings.graphql.executionExecuteMod.ExecutionResultDataDefault
   import typings.graphql.graphqlMod.GraphQLScalarType
+  import typings.graphql.languageAstMod.ASTNode
   import typings.graphql.languageAstMod.DocumentNode
   import typings.graphql.typeDefinitionMod.GraphQLField
   import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
@@ -63,7 +64,7 @@ package object distInterfacesMod {
     js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias graphql-tools.graphql-tools/dist/Interfaces.ITypedef */ js.Object
     ]
-  ]) | String | DocumentNode
+  ]) | String | DocumentNode | ASTNode
   type NextResolverFn = js.Function0[js.Promise[js.Any]]
   type ResolveType[T /* <: GraphQLType */] = js.Function1[/* type */ T, T]
   type Result = ExecutionResult[ExecutionResultDataDefault] with Anon_Extensions

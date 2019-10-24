@@ -1,20 +1,19 @@
 package typings.atJupyterlabFileeditor.libWidgetMod
 
-import typings.atJupyterlabCodeeditor.libMod.CodeEditorWrapper
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabFileeditor.libWidgetMod.FileEditor.IOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@jupyterlab/fileeditor/lib/widget", "FileEditorCodeWrapper")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditorWrapper * / any */ @JSImport("@jupyterlab/fileeditor/lib/widget", "FileEditorCodeWrapper")
 @js.native
-class FileEditorCodeWrapper protected () extends CodeEditorWrapper {
+class FileEditorCodeWrapper protected () extends js.Object {
   /**
     * Construct a new editor widget.
     */
   def this(options: IOptions) = this()
-  var _context: Context = js.native
+  var _context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * Handle a change to the collaborators on the model
     * by updating UI elements associated with them.
@@ -32,7 +31,7 @@ class FileEditorCodeWrapper protected () extends CodeEditorWrapper {
   /**
     * Get the context for the editor widget.
     */
-  val context: Context = js.native
+  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * A promise that resolves when the file editor is ready.
     */

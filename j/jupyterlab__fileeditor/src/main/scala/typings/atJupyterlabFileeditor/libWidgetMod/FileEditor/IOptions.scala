@@ -1,9 +1,5 @@
 package typings.atJupyterlabFileeditor.libWidgetMod.FileEditor
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
-import typings.atJupyterlabCodeeditor.libMimetypeMod.IEditorMimeTypeService
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.CodeContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,25 +11,25 @@ trait IOptions extends js.Object {
   /**
     * The document context associated with the editor.
     */
-  var context: CodeContext
+  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.CodeContext */ js.Any
   /**
     * A code editor factory.
     */
-  var factory: Factory
+  var factory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
   /**
     * The mime type service for the editor.
     */
-  var mimeTypeService: IEditorMimeTypeService
+  var mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any
 }
 
 object IOptions {
   @scala.inline
   def apply(
-    context: CodeContext,
-    factory: /* options */ typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions => IEditor,
-    mimeTypeService: IEditorMimeTypeService
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.CodeContext */ js.Any,
+    factory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any,
+    mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any
   ): IOptions = {
-    val __obj = js.Dynamic.literal(context = context, factory = js.Any.fromFunction1(factory), mimeTypeService = mimeTypeService)
+    val __obj = js.Dynamic.literal(context = context, factory = factory, mimeTypeService = mimeTypeService)
   
     __obj.asInstanceOf[IOptions]
   }

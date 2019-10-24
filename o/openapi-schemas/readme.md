@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-schemas
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 ## Library description:
 JSON Schemas for every version of the OpenAPI Specification

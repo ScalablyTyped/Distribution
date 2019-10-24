@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonRippleEffect
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRippleEffect */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRippleEffect with (Pick[
           HTMLAttributes[HTMLIonRippleEffectElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonRippleEffectElement]

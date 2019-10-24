@@ -1,6 +1,8 @@
 package typings.atIonicReact.atIonicReactMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
+import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicReact.Anon_AnimatedBackdropDismiss
 import typings.atIonicReact.Anon_ChildrenReactNode
 import typings.atIonicReact.atIonicReactStrings.animated
@@ -26,17 +28,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class IonPopover protected () extends Anon_AnimatedBackdropDismiss {
   def this(props: (Pick[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+        PopoverOptions[ComponentRef], 
         id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
       ]) with Anon_ChildrenReactNode with ReactOverlayProps) = this()
 }
 
 @JSImport("@ionic/react", "IonPopover")
 @js.native
-object IonPopover
-  extends Instantiable1[
+object IonPopover extends Instantiable1[
       /* props */ (Pick[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+        PopoverOptions[ComponentRef], 
         id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
       ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
       Anon_AnimatedBackdropDismiss

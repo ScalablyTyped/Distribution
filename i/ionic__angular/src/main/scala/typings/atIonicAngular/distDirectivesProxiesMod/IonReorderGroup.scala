@@ -10,10 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonReorderGroup * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonReorderGroup")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonReorderGroup")
 @js.native
-class IonReorderGroup protected () extends js.Object {
+class IonReorderGroup protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonReorderGroup {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var ionItemReorder: EventEmitter[CustomEvent[_]] = js.native

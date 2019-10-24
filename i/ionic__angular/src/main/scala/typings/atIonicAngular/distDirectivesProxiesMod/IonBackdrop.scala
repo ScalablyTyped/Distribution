@@ -10,13 +10,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonBackdrop * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonBackdrop")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonBackdrop")
 @js.native
-class IonBackdrop protected () extends js.Object {
+class IonBackdrop protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonBackdrop {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var ionBackdropTap: EventEmitter[CustomEvent[_]] = js.native
+  /**
+    * If `true`, the backdrop will stop propagation on tap.
+    */
+  /* CompleteClass */
+  override var stopPropagation: Boolean = js.native
+  /**
+    * If `true`, the backdrop will can be clicked and will emit the `ionBackdropTap` event.
+    */
+  /* CompleteClass */
+  override var tappable: Boolean = js.native
+  /**
+    * If `true`, the backdrop will be visible.
+    */
+  /* CompleteClass */
+  override var visible: Boolean = js.native
   var z: NgZone = js.native
 }
 

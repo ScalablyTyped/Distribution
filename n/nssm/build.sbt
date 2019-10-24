@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nssm"
-version := "0.1-dt-20190214Z-4a1d7f"
+version := "0.1-dt-20190214Z-2a1577"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

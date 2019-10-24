@@ -1,11 +1,6 @@
 package typings.atJupyterlabImageviewer
 
 import typings.atJupyterlabApputils.libPrintingMod.Printing.IPrintable
-import typings.atJupyterlabDocregistry.libMod.ABCWidgetFactory
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
-import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
-import typings.atJupyterlabImageviewer.libWidgetMod.ImageViewer
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorMessaging.atPhosphorMessagingMod.Message
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
@@ -26,7 +21,7 @@ object libWidgetMod extends js.Object {
     /**
       * Construct a new image widget.
       */
-    def this(context: Context) = this()
+    def this(context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any) = this()
     var _colorinversion: js.Any = js.native
     var _format: js.Any = js.native
     var _img: js.Any = js.native
@@ -53,7 +48,7 @@ object libWidgetMod extends js.Object {
     /**
       * The image widget's context.
       */
-    val context: Context = js.native
+    val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
     /**
       * A promise that resolves when the image viewer is ready.
       */
@@ -396,8 +391,16 @@ object libWidgetMod extends js.Object {
     override def update(): Unit = js.native
   }
   
-  @js.native
-  class ImageViewerFactory () extends ABCWidgetFactory[IDocumentWidget[ImageViewer, IModel], IModel]
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ABCWidgetFactory<IDocumentWidget<ImageViewer>> * / any */ @js.native
+  class ImageViewerFactory () extends js.Object {
+    /**
+      * Create a new widget given a context.
+      */
+    /* protected */ def createNewWidget(
+      context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<DocumentRegistry.IModel> */ js.Any
+    ): js.Any = js.native
+  }
   
 }
 

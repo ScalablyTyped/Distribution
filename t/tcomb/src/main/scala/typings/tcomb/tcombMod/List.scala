@@ -15,7 +15,7 @@ trait List[T]
   var meta_List: Anon_IdentityKindNameType[T] = js.native
   @JSName("update")
   var update_Original: Update[js.Array[T]] = js.native
-  def update(instance: js.Array[js.Array[T]], spec: UpdatePatch): js.Array[js.Array[T]] = js.native
+  def update(instance: js.Array[T], spec: UpdatePatch): js.Array[T] = js.native
 }
 
 @JSImport("tcomb", "list")

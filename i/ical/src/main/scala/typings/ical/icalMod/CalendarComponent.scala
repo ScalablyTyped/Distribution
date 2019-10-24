@@ -1,7 +1,6 @@
 package typings.ical.icalMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rrule.distEsmSrcMod.RRule
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +23,9 @@ trait CalendarComponent
   var location: js.UndefOr[String] = js.undefined
   var recurrenceid: js.UndefOr[Date] = js.undefined
   var recurrences: js.UndefOr[js.Array[CalendarComponent]] = js.undefined
-  var rrule: js.UndefOr[RRule] = js.undefined
+  var rrule: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RRule */ js.Any
+  ] = js.undefined
   var start: js.UndefOr[Date] = js.undefined
   var summary: js.UndefOr[String] = js.undefined
   var transparency: js.UndefOr[String] = js.undefined
@@ -53,7 +54,7 @@ object CalendarComponent {
     location: String = null,
     recurrenceid: Date = null,
     recurrences: js.Array[CalendarComponent] = null,
-    rrule: RRule = null,
+    rrule: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RRule */ js.Any = null,
     start: Date = null,
     summary: String = null,
     transparency: String = null,

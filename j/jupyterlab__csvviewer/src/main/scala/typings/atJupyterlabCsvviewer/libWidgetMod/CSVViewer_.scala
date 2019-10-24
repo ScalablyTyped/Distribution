@@ -1,7 +1,6 @@
 package typings.atJupyterlabCsvviewer.libWidgetMod
 
 import typings.atJupyterlabCsvviewer.libWidgetMod.CSVViewer.IOptions
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atPhosphorDatagrid.libDatagridMod.DataGrid.IStyle
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
@@ -28,7 +27,7 @@ class CSVViewer_ protected () extends Widget {
   /**
     * The CSV widget's context.
     */
-  val context: Context = js.native
+  val context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any = js.native
   /**
     * The delimiter for the file.
     */

@@ -8,10 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonNavPop * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonNavPop")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonNavPop")
 @js.native
-class IonNavPop protected () extends js.Object {
+class IonNavPop protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonNavPop {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var z: NgZone = js.native

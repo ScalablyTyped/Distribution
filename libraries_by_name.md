@@ -3498,6 +3498,8 @@
 | [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager | - |
 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension | - |
 | [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry | - |
+| [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search | - |
+| [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types | - |
 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager | - |
 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension | - |
 | [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget | - |

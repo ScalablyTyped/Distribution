@@ -1,7 +1,6 @@
 package typings.atJupyterlabFilebrowser.libModelMod.FileBrowserModel
 
 import typings.atJupyterlabCoreutils.libTokensMod.IStateDB
-import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
 import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IIconRegistry
 import typings.atPhosphorCoreutils.libJsonMod.ReadonlyJSONValue
 import scala.scalajs.js
@@ -25,7 +24,7 @@ trait IOptions extends js.Object {
   /**
     * A document manager instance.
     */
-  var manager: IDocumentManager
+  var manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any
   /**
     * The time interval for browser refreshing, in ms.
     */
@@ -41,7 +40,7 @@ object IOptions {
   @scala.inline
   def apply(
     iconRegistry: IIconRegistry,
-    manager: IDocumentManager,
+    manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any,
     driveName: String = null,
     refreshInterval: Int | Double = null,
     state: IStateDB[ReadonlyJSONValue] = null

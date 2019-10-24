@@ -2,6 +2,8 @@ package typings.atIonicReact
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPopoverElement
+import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
+import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicReact.atIonicReactStrings.animated
 import typings.atIonicReact.atIonicReactStrings.backdropDismiss
 import typings.atIonicReact.atIonicReactStrings.cssClass
@@ -29,7 +31,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
   var el: HTMLDivElement = js.native
   var overlay: js.UndefOr[HTMLIonPopoverElement] = js.native
   val props: (Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+    PopoverOptions[ComponentRef], 
     id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
   ]) with Anon_ChildrenReactNode with ReactOverlayProps with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native
@@ -37,7 +39,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
   def componentDidMount(): Unit = js.native
   def componentDidUpdate(
     prevProps: (Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+      PopoverOptions[ComponentRef], 
       id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
     ]) with Anon_ChildrenReactNode with ReactOverlayProps
   ): js.Promise[Unit] = js.native
@@ -47,7 +49,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
   def present(): js.Promise[Unit] = js.native
   def present(
     prevProps: (Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+      PopoverOptions[ComponentRef], 
       id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
     ]) with Anon_ChildrenReactNode with ReactOverlayProps
   ): js.Promise[Unit] = js.native
@@ -57,7 +59,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
     state: js.Function2[
       /* prevState */ js.Object, 
       /* props */ (Pick[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+        PopoverOptions[ComponentRef], 
         id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
       ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
       js.Object | (Pick[js.Object, K]) | Null
@@ -67,7 +69,7 @@ trait Anon_AnimatedBackdropDismiss extends js.Object {
     state: js.Function2[
       /* prevState */ js.Object, 
       /* props */ (Pick[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<imported_core.ComponentRef> */ _, 
+        PopoverOptions[ComponentRef], 
         id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
       ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
       js.Object | (Pick[js.Object, K]) | Null

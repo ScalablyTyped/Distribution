@@ -419,13 +419,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   @JSName("distinct")
   def distinct_ColNameUT_StringTResult2[ColNameUT /* <: String */, TResult2](columnNames: js.Array[ColNameUT]): QueryBuilder[TRecord, TResult2] = js.native
   // Others
-  def first(): QueryBuilder[
-    TRecord, 
-    AddUnionMember[
-      UnwrapArrayMember[AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]], 
-      js.UndefOr[scala.Nothing]
-    ]
-  ] = js.native
+  def first(): QueryBuilder[TRecord, AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]] = js.native
   // When all columns are known to be keys of original record,
   // we can extend our selection by these columns
   // Others
@@ -439,44 +433,12 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   // specify result type and if not widen the result to entire record type with any omissions permitted
   // Others
   def first[TResult2](
-    columnNames: (ColumnDescriptor[
-      TRecord, 
-      AddUnionMember[
-        UnwrapArrayMember[
-          AddUnionMember[
-            UnwrapArrayMember[
-              AddUnionMember[
-                UnwrapArrayMember[AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]], 
-                js.UndefOr[scala.Nothing]
-              ]
-            ], 
-            js.UndefOr[scala.Nothing]
-          ]
-        ], 
-        js.UndefOr[scala.Nothing]
-      ]
-    ])*
+    columnNames: (ColumnDescriptor[TRecord, AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]])*
   ): QueryBuilder[TRecord, TResult2] = js.native
   // Others
   def first[TResult2](
     columnNames: js.Array[
-      ColumnDescriptor[
-        TRecord, 
-        AddUnionMember[
-          UnwrapArrayMember[
-            AddUnionMember[
-              UnwrapArrayMember[
-                AddUnionMember[
-                  UnwrapArrayMember[AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]], 
-                  js.UndefOr[scala.Nothing]
-                ]
-              ], 
-              js.UndefOr[scala.Nothing]
-            ]
-          ], 
-          js.UndefOr[scala.Nothing]
-        ]
-      ]
+      ColumnDescriptor[TRecord, AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]]
     ]
   ): QueryBuilder[TRecord, TResult2] = js.native
   // Others

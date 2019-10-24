@@ -1,7 +1,5 @@
 package typings.atJupyterlabSettingeditor.libSettingeditorMod.SettingEditor
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistry
 import typings.atJupyterlabCoreutils.libTokensMod.IStateDB
 import typings.atJupyterlabRendermime.libTokensMod.IRenderMimeRegistry
@@ -22,7 +20,7 @@ trait IOptions extends js.Object {
   /**
     * The editor factory used by the setting editor.
     */
-  var editorFactory: Factory
+  var editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
   /**
     * The state database key for the editor's state management.
     */
@@ -49,14 +47,14 @@ object IOptions {
   @scala.inline
   def apply(
     commands: Anon_Registry,
-    editorFactory: /* options */ typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions => IEditor,
+    editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any,
     key: String,
     registry: ISettingRegistry,
     state: IStateDB[ReadonlyJSONValue],
     rendermime: IRenderMimeRegistry = null,
     when: js.Promise[_] | js.Array[js.Promise[_]] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(commands = commands, editorFactory = js.Any.fromFunction1(editorFactory), key = key, registry = registry, state = state)
+    val __obj = js.Dynamic.literal(commands = commands, editorFactory = editorFactory, key = key, registry = registry, state = state)
     if (rendermime != null) __obj.updateDynamic("rendermime")(rendermime)
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

@@ -22,7 +22,7 @@ object IonRouterLink
   extends TopLevel[
       ForwardRefExoticComponent[
         (Pick[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRouterLink */ _, 
+          typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterLink, 
           color | href | rel | target
         ]) with Anon_Back with (Pick[
           HTMLAttributes[HTMLIonRouterLinkElement], 

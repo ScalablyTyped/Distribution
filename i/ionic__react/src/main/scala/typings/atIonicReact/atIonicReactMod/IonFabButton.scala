@@ -32,7 +32,7 @@ object IonFabButton
   extends TopLevel[
       ForwardRefExoticComponent[
         (Pick[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabButton */ _, 
+          typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFabButton, 
           show | disabled | activated | color | size | mode | href | download | rel | target | onIonBlur | onIonFocus | `type` | translucent
         ]) with Anon_Back with (Pick[
           HTMLAttributes[HTMLIonFabButtonElement], 

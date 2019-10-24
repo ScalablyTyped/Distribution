@@ -1,7 +1,6 @@
 package typings.atJupyterlabConsole.libWidgetMod.CodeConsole
 
 import typings.atJupyterlabApputils.libClientsessionMod.IClientSession
-import typings.atJupyterlabCodeeditor.libMimetypeMod.IEditorMimeTypeService
 import typings.atJupyterlabRendermime.libTokensMod.IRenderMimeRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +17,7 @@ trait IOptions extends js.Object {
   /**
     * The service used to look up mime types.
     */
-  var mimeTypeService: IEditorMimeTypeService
+  var mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any
   /**
     * The model factory for the console widget.
     */
@@ -37,7 +36,7 @@ object IOptions {
   @scala.inline
   def apply(
     contentFactory: IContentFactory,
-    mimeTypeService: IEditorMimeTypeService,
+    mimeTypeService: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorMimeTypeService */ js.Any,
     rendermime: IRenderMimeRegistry,
     session: IClientSession,
     modelFactory: IModelFactory = null

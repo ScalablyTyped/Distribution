@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {readonly [ P in keyof tstl.tstl/iterator/IReverseIterator.IReversableIterator<tstl.tstl/iterator/IReverseIterator.IReversableIterator<T, IteratorT, ReverseIteratorT>, IteratorT, ReverseIteratorT> ]: tstl.tstl/iterator/IReverseIterator.IReversableIterator<tstl.tstl/iterator/IReverseIterator.IReversableIterator<T, IteratorT, ReverseIteratorT>, IteratorT, ReverseIteratorT>[P]} */ trait Iterator[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: IReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] extends js.Object {
+- Dropped {readonly [ P in keyof tstl.tstl/iterator/IReverseIterator.IReversableIterator<T, IteratorT, ReverseIteratorT> ]: tstl.tstl/iterator/IReverseIterator.IReversableIterator<T, IteratorT, ReverseIteratorT>[P]} */ trait Iterator[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: IReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] extends js.Object {
   /**
     * @inheritDoc
     */

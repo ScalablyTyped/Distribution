@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-bootstrap-typeahead"
-version := "3.4-dt-20190426Z-efbaa3"
+version := "3.4-dt-20190426Z-696289"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

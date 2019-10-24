@@ -1,7 +1,6 @@
 package typings.atJupyterlabCodemirror.libSyntaxstatusMod.EditorSyntaxStatus
 
 import typings.atJupyterlabApputils.libVdomMod.VDomModel
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +24,7 @@ class Model () extends VDomModel {
   /**
     * The current editor for the application editor tracker.
     */
-  var editor: IEditor | Null = js.native
+  var editor: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null = js.native
   /**
     * The current mode for the editor. If no editor is present,
     * returns the empty string.

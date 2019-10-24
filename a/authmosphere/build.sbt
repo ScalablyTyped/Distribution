@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "authmosphere"
-version := "2.3.0-f1d5e3"
+version := "2.3.0-e5a1ff"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-64180e",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-8fd375",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
-  "org.scalablytyped" %%% "nock" % "11.5.0-5ce70c",
+  "org.scalablytyped" %%% "nock" % "11.6.0-37bd85",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-827e1a",

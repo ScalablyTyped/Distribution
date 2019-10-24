@@ -6,9 +6,6 @@ import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEndPlugin
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.MainAreaWidget
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.WidgetTracker
 import typings.atJupyterlabCoreutils.libTokensMod.ISettingRegistry
-import typings.atJupyterlabTerminal.libTokensMod.ITerminal.IOptions
-import typings.atJupyterlabTerminal.libTokensMod.ITerminal.ITerminal
-import typings.atJupyterlabTerminal.libTokensMod.ITerminalTracker
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,12 +17,20 @@ object atJupyterlabTerminalDashExtensionMod extends js.Object {
   /**
     * The default terminal extension.
     */
-  val default: JupyterFrontEndPlugin[ITerminalTracker] = js.native
+  val default: JupyterFrontEndPlugin[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ITerminalTracker */ js.Any
+  ] = js.native
   def addCommands(
     app: JupyterFrontEnd[IShell],
-    tracker: WidgetTracker[MainAreaWidget[ITerminal]],
+    tracker: WidgetTracker[
+      MainAreaWidget[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ITerminal.ITerminal */ _
+      ]
+    ],
     settingRegistry: ISettingRegistry,
-    options: Partial[IOptions]
+    options: Partial[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ITerminal.IOptions */ _
+    ]
   ): Unit = js.native
 }
 

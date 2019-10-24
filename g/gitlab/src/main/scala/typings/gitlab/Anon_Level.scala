@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.distServicesMod.NotificationSettingLevel
+import typings.gitlab.distSrcCoreServicesMod.NotificationSettingLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

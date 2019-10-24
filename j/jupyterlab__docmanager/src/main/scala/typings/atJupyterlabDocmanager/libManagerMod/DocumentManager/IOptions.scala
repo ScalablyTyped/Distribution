@@ -1,6 +1,5 @@
 package typings.atJupyterlabDocmanager.libManagerMod.DocumentManager
 
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
 import typings.atJupyterlabServices.libManagerMod.ServiceManager.IManager
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import scala.scalajs.js
@@ -22,7 +21,7 @@ trait IOptions extends js.Object {
   /**
     * A document registry instance.
     */
-  var registry: DocumentRegistry
+  var registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any
   /**
     * A function called when a kernel is busy.
     */
@@ -38,7 +37,7 @@ object IOptions {
   def apply(
     manager: IManager,
     opener: IWidgetOpener,
-    registry: DocumentRegistry,
+    registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any,
     setBusy: () => IDisposable = null,
     when: js.Promise[Unit] = null
   ): IOptions = {

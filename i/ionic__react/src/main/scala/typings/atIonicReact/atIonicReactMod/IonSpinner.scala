@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonSpinner
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSpinner */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSpinner with (Pick[
           HTMLAttributes[HTMLIonSpinnerElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonSpinnerElement]

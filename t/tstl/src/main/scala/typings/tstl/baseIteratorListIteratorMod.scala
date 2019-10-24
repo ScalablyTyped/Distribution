@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object baseIteratorListIteratorMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {readonly [ P in keyof tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/base/iterator/Iterator.Iterator<T, SourceT, IteratorT, ReverseIteratorT, Elem>, SourceT, IteratorT, ReverseIteratorT, Elem> ]: tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/base/iterator/Iterator.Iterator<T, SourceT, IteratorT, ReverseIteratorT, Elem>, SourceT, IteratorT, ReverseIteratorT, Elem>[P]} */ @js.native
+  - Dropped {readonly [ P in keyof tstl.tstl/base/iterator/Iterator.Iterator<T, SourceT, IteratorT, ReverseIteratorT, Elem> ]: tstl.tstl/base/iterator/Iterator.Iterator<T, SourceT, IteratorT, ReverseIteratorT, Elem>[P]} */ @js.native
   abstract class ListIterator[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: ListIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] protected () extends js.Object {
     /**
       * @hidden

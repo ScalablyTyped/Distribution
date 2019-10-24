@@ -15,7 +15,7 @@ trait StackMixin[T] extends js.Object {
     T
   ] = js.native
   def hidableStacks(): Boolean = js.native
-  def hidableStacks(t: Boolean): Boolean = js.native
+  def hidableStacks(t: Boolean): T = js.native
   def hideStack(name: String): Unit = js.native
   def showStack(name: String): Unit = js.native
   def stack(group: js.Any): Unit = js.native
@@ -26,6 +26,6 @@ trait StackMixin[T] extends js.Object {
   // title(stackName: string, titleFn: Accessor<any, T>);
   def stackLayout(
     t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ js.Any
-  ): js.Any = js.native
+  ): T = js.native
 }
 

@@ -2,13 +2,13 @@ package typings.gitlab
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.gitlab.distInfrastructureMod.BaseServiceOptions
-import typings.gitlab.distServicesMod.UserCustomAttributes
-import typings.gitlab.distServicesMod.UserEmails
-import typings.gitlab.distServicesMod.UserGPGKeys
-import typings.gitlab.distServicesMod.UserImpersonationTokens
-import typings.gitlab.distServicesMod.UserKeys
-import typings.gitlab.distServicesMod.Users
+import typings.gitlab.distSrcCoreInfrastructureMod.BaseServiceOptions
+import typings.gitlab.distSrcCoreServicesMod.UserCustomAttributes
+import typings.gitlab.distSrcCoreServicesMod.UserEmails
+import typings.gitlab.distSrcCoreServicesMod.UserGPGKeys
+import typings.gitlab.distSrcCoreServicesMod.UserImpersonationTokens
+import typings.gitlab.distSrcCoreServicesMod.UserKeys
+import typings.gitlab.distSrcCoreServicesMod.Users
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,13 +16,13 @@ import scala.scalajs.js.annotation._
 trait Anon_Options extends js.Object {
   var UserCustomAttributes: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.UserCustomAttributes
+    typings.gitlab.distSrcCoreServicesMod.UserCustomAttributes
   ]
-  var UserEmails: Instantiable0[typings.gitlab.distServicesMod.UserEmails]
-  var UserGPGKeys: Instantiable0[typings.gitlab.distServicesMod.UserGPGKeys]
-  var UserImpersonationTokens: Instantiable0[typings.gitlab.distServicesMod.UserImpersonationTokens]
-  var UserKeys: Instantiable0[typings.gitlab.distServicesMod.UserKeys]
-  var Users: Instantiable0[typings.gitlab.distServicesMod.Users]
+  var UserEmails: Instantiable0[typings.gitlab.distSrcCoreServicesMod.UserEmails]
+  var UserGPGKeys: Instantiable0[typings.gitlab.distSrcCoreServicesMod.UserGPGKeys]
+  var UserImpersonationTokens: Instantiable0[typings.gitlab.distSrcCoreServicesMod.UserImpersonationTokens]
+  var UserKeys: Instantiable0[typings.gitlab.distSrcCoreServicesMod.UserKeys]
+  var Users: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Users]
 }
 
 object Anon_Options {

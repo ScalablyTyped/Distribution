@@ -2,225 +2,275 @@ package typings.gitlab
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.gitlab.distInfrastructureMod.BaseServiceOptions
-import typings.gitlab.distServicesMod.ApplicationSettings
-import typings.gitlab.distServicesMod.Branches
-import typings.gitlab.distServicesMod.BroadcastMessages
-import typings.gitlab.distServicesMod.CommitDiscussions
-import typings.gitlab.distServicesMod.Commits
-import typings.gitlab.distServicesMod.ContainerRegistry
-import typings.gitlab.distServicesMod.DeployKeys
-import typings.gitlab.distServicesMod.Deployments
-import typings.gitlab.distServicesMod.Environments
-import typings.gitlab.distServicesMod.EpicDiscussions
-import typings.gitlab.distServicesMod.EpicIssues
-import typings.gitlab.distServicesMod.EpicNotes
-import typings.gitlab.distServicesMod.Epics
-import typings.gitlab.distServicesMod.Events
-import typings.gitlab.distServicesMod.FeatureFlags
-import typings.gitlab.distServicesMod.GeoNodes
-import typings.gitlab.distServicesMod.GitLabCIYMLTemplates
-import typings.gitlab.distServicesMod.GitignoreTemplates
-import typings.gitlab.distServicesMod.GroupAccessRequests
-import typings.gitlab.distServicesMod.GroupBadges
-import typings.gitlab.distServicesMod.GroupCustomAttributes
-import typings.gitlab.distServicesMod.GroupIssueBoards
-import typings.gitlab.distServicesMod.GroupMembers
-import typings.gitlab.distServicesMod.GroupMilestones
-import typings.gitlab.distServicesMod.GroupProjects
-import typings.gitlab.distServicesMod.GroupVariables
-import typings.gitlab.distServicesMod.Groups
-import typings.gitlab.distServicesMod.IssueAwardEmojis
-import typings.gitlab.distServicesMod.IssueDiscussions
-import typings.gitlab.distServicesMod.IssueNotes
-import typings.gitlab.distServicesMod.Issues
-import typings.gitlab.distServicesMod.Jobs
-import typings.gitlab.distServicesMod.Keys
-import typings.gitlab.distServicesMod.Labels
-import typings.gitlab.distServicesMod.Licence
-import typings.gitlab.distServicesMod.LicenceTemplates
-import typings.gitlab.distServicesMod.Lint
-import typings.gitlab.distServicesMod.Markdown
-import typings.gitlab.distServicesMod.MergeRequestAwardEmojis
-import typings.gitlab.distServicesMod.MergeRequestDiscussions
-import typings.gitlab.distServicesMod.MergeRequestNotes
-import typings.gitlab.distServicesMod.MergeRequests
-import typings.gitlab.distServicesMod.Namespaces
-import typings.gitlab.distServicesMod.NotificationSettings
-import typings.gitlab.distServicesMod.Packages
-import typings.gitlab.distServicesMod.PagesDomains
-import typings.gitlab.distServicesMod.PipelineScheduleVariables
-import typings.gitlab.distServicesMod.PipelineSchedules
-import typings.gitlab.distServicesMod.Pipelines
-import typings.gitlab.distServicesMod.ProjectAccessRequests
-import typings.gitlab.distServicesMod.ProjectBadges
-import typings.gitlab.distServicesMod.ProjectCustomAttributes
-import typings.gitlab.distServicesMod.ProjectHooks
-import typings.gitlab.distServicesMod.ProjectImportExport
-import typings.gitlab.distServicesMod.ProjectIssueBoards
-import typings.gitlab.distServicesMod.ProjectMembers
-import typings.gitlab.distServicesMod.ProjectMilestones
-import typings.gitlab.distServicesMod.ProjectSnippetAwardEmojis
-import typings.gitlab.distServicesMod.ProjectSnippetDiscussions
-import typings.gitlab.distServicesMod.ProjectSnippetNotes
-import typings.gitlab.distServicesMod.ProjectSnippets
-import typings.gitlab.distServicesMod.ProjectVariables
-import typings.gitlab.distServicesMod.Projects
-import typings.gitlab.distServicesMod.ProtectedBranches
-import typings.gitlab.distServicesMod.ProtectedTags
-import typings.gitlab.distServicesMod.PushRules
-import typings.gitlab.distServicesMod.ReleaseLinks
-import typings.gitlab.distServicesMod.Releases
-import typings.gitlab.distServicesMod.Repositories
-import typings.gitlab.distServicesMod.RepositoryFiles
-import typings.gitlab.distServicesMod.Runners
-import typings.gitlab.distServicesMod.Search
-import typings.gitlab.distServicesMod.Services
-import typings.gitlab.distServicesMod.SidekiqMetrics
-import typings.gitlab.distServicesMod.Snippets
-import typings.gitlab.distServicesMod.SystemHooks
-import typings.gitlab.distServicesMod.Tags
-import typings.gitlab.distServicesMod.Todos
-import typings.gitlab.distServicesMod.Triggers
-import typings.gitlab.distServicesMod.UserCustomAttributes
-import typings.gitlab.distServicesMod.UserEmails
-import typings.gitlab.distServicesMod.UserGPGKeys
-import typings.gitlab.distServicesMod.UserImpersonationTokens
-import typings.gitlab.distServicesMod.UserKeys
-import typings.gitlab.distServicesMod.Users
-import typings.gitlab.distServicesMod.Version
-import typings.gitlab.distServicesMod.Wikis
+import typings.gitlab.distSrcCoreInfrastructureMod.BaseServiceOptions
+import typings.gitlab.distSrcCoreServicesMod.ApplicationSettings
+import typings.gitlab.distSrcCoreServicesMod.Branches
+import typings.gitlab.distSrcCoreServicesMod.BroadcastMessages
+import typings.gitlab.distSrcCoreServicesMod.CommitDiscussions
+import typings.gitlab.distSrcCoreServicesMod.Commits
+import typings.gitlab.distSrcCoreServicesMod.ContainerRegistry
+import typings.gitlab.distSrcCoreServicesMod.DeployKeys
+import typings.gitlab.distSrcCoreServicesMod.Deployments
+import typings.gitlab.distSrcCoreServicesMod.Environments
+import typings.gitlab.distSrcCoreServicesMod.EpicDiscussions
+import typings.gitlab.distSrcCoreServicesMod.EpicIssues
+import typings.gitlab.distSrcCoreServicesMod.EpicNotes
+import typings.gitlab.distSrcCoreServicesMod.Epics
+import typings.gitlab.distSrcCoreServicesMod.Events
+import typings.gitlab.distSrcCoreServicesMod.FeatureFlags
+import typings.gitlab.distSrcCoreServicesMod.GeoNodes
+import typings.gitlab.distSrcCoreServicesMod.GitLabCIYMLTemplates
+import typings.gitlab.distSrcCoreServicesMod.GitignoreTemplates
+import typings.gitlab.distSrcCoreServicesMod.GroupAccessRequests
+import typings.gitlab.distSrcCoreServicesMod.GroupBadges
+import typings.gitlab.distSrcCoreServicesMod.GroupCustomAttributes
+import typings.gitlab.distSrcCoreServicesMod.GroupIssueBoards
+import typings.gitlab.distSrcCoreServicesMod.GroupLabels
+import typings.gitlab.distSrcCoreServicesMod.GroupMembers
+import typings.gitlab.distSrcCoreServicesMod.GroupMilestones
+import typings.gitlab.distSrcCoreServicesMod.GroupProjects
+import typings.gitlab.distSrcCoreServicesMod.GroupVariables
+import typings.gitlab.distSrcCoreServicesMod.Groups
+import typings.gitlab.distSrcCoreServicesMod.IssueAwardEmojis
+import typings.gitlab.distSrcCoreServicesMod.IssueDiscussions
+import typings.gitlab.distSrcCoreServicesMod.IssueNotes
+import typings.gitlab.distSrcCoreServicesMod.Issues
+import typings.gitlab.distSrcCoreServicesMod.Jobs
+import typings.gitlab.distSrcCoreServicesMod.Keys
+import typings.gitlab.distSrcCoreServicesMod.Labels
+import typings.gitlab.distSrcCoreServicesMod.Licence
+import typings.gitlab.distSrcCoreServicesMod.LicenceTemplates
+import typings.gitlab.distSrcCoreServicesMod.Lint
+import typings.gitlab.distSrcCoreServicesMod.Markdown
+import typings.gitlab.distSrcCoreServicesMod.MergeRequestAwardEmojis
+import typings.gitlab.distSrcCoreServicesMod.MergeRequestDiscussions
+import typings.gitlab.distSrcCoreServicesMod.MergeRequestNotes
+import typings.gitlab.distSrcCoreServicesMod.MergeRequests
+import typings.gitlab.distSrcCoreServicesMod.Namespaces
+import typings.gitlab.distSrcCoreServicesMod.NotificationSettings
+import typings.gitlab.distSrcCoreServicesMod.Packages
+import typings.gitlab.distSrcCoreServicesMod.PagesDomains
+import typings.gitlab.distSrcCoreServicesMod.PipelineScheduleVariables
+import typings.gitlab.distSrcCoreServicesMod.PipelineSchedules
+import typings.gitlab.distSrcCoreServicesMod.Pipelines
+import typings.gitlab.distSrcCoreServicesMod.ProjectAccessRequests
+import typings.gitlab.distSrcCoreServicesMod.ProjectBadges
+import typings.gitlab.distSrcCoreServicesMod.ProjectCustomAttributes
+import typings.gitlab.distSrcCoreServicesMod.ProjectHooks
+import typings.gitlab.distSrcCoreServicesMod.ProjectImportExport
+import typings.gitlab.distSrcCoreServicesMod.ProjectIssueBoards
+import typings.gitlab.distSrcCoreServicesMod.ProjectMembers
+import typings.gitlab.distSrcCoreServicesMod.ProjectMilestones
+import typings.gitlab.distSrcCoreServicesMod.ProjectSnippetAwardEmojis
+import typings.gitlab.distSrcCoreServicesMod.ProjectSnippetDiscussions
+import typings.gitlab.distSrcCoreServicesMod.ProjectSnippetNotes
+import typings.gitlab.distSrcCoreServicesMod.ProjectSnippets
+import typings.gitlab.distSrcCoreServicesMod.ProjectVariables
+import typings.gitlab.distSrcCoreServicesMod.Projects
+import typings.gitlab.distSrcCoreServicesMod.ProtectedBranches
+import typings.gitlab.distSrcCoreServicesMod.ProtectedTags
+import typings.gitlab.distSrcCoreServicesMod.PushRules
+import typings.gitlab.distSrcCoreServicesMod.ReleaseLinks
+import typings.gitlab.distSrcCoreServicesMod.Releases
+import typings.gitlab.distSrcCoreServicesMod.Repositories
+import typings.gitlab.distSrcCoreServicesMod.RepositoryFiles
+import typings.gitlab.distSrcCoreServicesMod.Runners
+import typings.gitlab.distSrcCoreServicesMod.Search
+import typings.gitlab.distSrcCoreServicesMod.Services
+import typings.gitlab.distSrcCoreServicesMod.SidekiqMetrics
+import typings.gitlab.distSrcCoreServicesMod.Snippets
+import typings.gitlab.distSrcCoreServicesMod.SystemHooks
+import typings.gitlab.distSrcCoreServicesMod.Tags
+import typings.gitlab.distSrcCoreServicesMod.Todos
+import typings.gitlab.distSrcCoreServicesMod.Triggers
+import typings.gitlab.distSrcCoreServicesMod.UserCustomAttributes
+import typings.gitlab.distSrcCoreServicesMod.UserEmails
+import typings.gitlab.distSrcCoreServicesMod.UserGPGKeys
+import typings.gitlab.distSrcCoreServicesMod.UserImpersonationTokens
+import typings.gitlab.distSrcCoreServicesMod.UserKeys
+import typings.gitlab.distSrcCoreServicesMod.Users
+import typings.gitlab.distSrcCoreServicesMod.Version
+import typings.gitlab.distSrcCoreServicesMod.Wikis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofAPIServices extends js.Object {
-  var ApplicationSettings: Instantiable0[typings.gitlab.distServicesMod.ApplicationSettings]
-  var Branches: Instantiable0[typings.gitlab.distServicesMod.Branches]
-  var BroadcastMessages: Instantiable0[typings.gitlab.distServicesMod.BroadcastMessages]
-  var CommitDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.CommitDiscussions]
-  var Commits: Instantiable0[typings.gitlab.distServicesMod.Commits]
-  var ContainerRegistry: Instantiable0[typings.gitlab.distServicesMod.ContainerRegistry]
-  var DeployKeys: Instantiable0[typings.gitlab.distServicesMod.DeployKeys]
-  var Deployments: Instantiable0[typings.gitlab.distServicesMod.Deployments]
-  var Environments: Instantiable0[typings.gitlab.distServicesMod.Environments]
-  var EpicDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.EpicDiscussions]
-  var EpicIssues: Instantiable0[typings.gitlab.distServicesMod.EpicIssues]
-  var EpicNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.EpicNotes]
-  var Epics: Instantiable0[typings.gitlab.distServicesMod.Epics]
-  var Events: Instantiable0[typings.gitlab.distServicesMod.Events]
-  var FeatureFlags: Instantiable0[typings.gitlab.distServicesMod.FeatureFlags]
-  var GeoNodes: Instantiable0[typings.gitlab.distServicesMod.GeoNodes]
+  var ApplicationSettings: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ApplicationSettings]
+  var Branches: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Branches]
+  var BroadcastMessages: Instantiable0[typings.gitlab.distSrcCoreServicesMod.BroadcastMessages]
+  var CommitDiscussions: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.CommitDiscussions
+  ]
+  var Commits: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Commits]
+  var ContainerRegistry: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ContainerRegistry]
+  var DeployKeys: Instantiable0[typings.gitlab.distSrcCoreServicesMod.DeployKeys]
+  var Deployments: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Deployments]
+  var Environments: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Environments]
+  var EpicDiscussions: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.EpicDiscussions
+  ]
+  var EpicIssues: Instantiable0[typings.gitlab.distSrcCoreServicesMod.EpicIssues]
+  var EpicNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distSrcCoreServicesMod.EpicNotes]
+  var Epics: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Epics]
+  var Events: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Events]
+  var FeatureFlags: Instantiable0[typings.gitlab.distSrcCoreServicesMod.FeatureFlags]
+  var GeoNodes: Instantiable0[typings.gitlab.distSrcCoreServicesMod.GeoNodes]
   var GitLabCIYMLTemplates: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.GitLabCIYMLTemplates
+    typings.gitlab.distSrcCoreServicesMod.GitLabCIYMLTemplates
   ]
   var GitignoreTemplates: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.GitignoreTemplates
+    typings.gitlab.distSrcCoreServicesMod.GitignoreTemplates
   ]
   var GroupAccessRequests: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.GroupAccessRequests
+    typings.gitlab.distSrcCoreServicesMod.GroupAccessRequests
   ]
-  var GroupBadges: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupBadges]
+  var GroupBadges: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupBadges
+  ]
   var GroupCustomAttributes: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.GroupCustomAttributes
+    typings.gitlab.distSrcCoreServicesMod.GroupCustomAttributes
   ]
-  var GroupIssueBoards: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupIssueBoards]
-  var GroupMembers: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupMembers]
-  var GroupMilestones: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupMilestones]
-  var GroupProjects: Instantiable0[typings.gitlab.distServicesMod.GroupProjects]
-  var GroupVariables: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.GroupVariables]
-  var Groups: Instantiable0[typings.gitlab.distServicesMod.Groups]
-  var IssueAwardEmojis: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.IssueAwardEmojis]
-  var IssueDiscussions: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.IssueDiscussions]
-  var IssueNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.IssueNotes]
-  var Issues: Instantiable0[typings.gitlab.distServicesMod.Issues]
-  var Jobs: Instantiable0[typings.gitlab.distServicesMod.Jobs]
-  var Keys: Instantiable0[typings.gitlab.distServicesMod.Keys]
-  var Labels: Instantiable0[typings.gitlab.distServicesMod.Labels]
-  var Licence: Instantiable0[typings.gitlab.distServicesMod.Licence]
-  var LicenceTemplates: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.LicenceTemplates]
-  var Lint: Instantiable0[typings.gitlab.distServicesMod.Lint]
-  var Markdown: Instantiable0[typings.gitlab.distServicesMod.Markdown]
+  var GroupIssueBoards: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupIssueBoards
+  ]
+  var GroupLabels: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupLabels
+  ]
+  var GroupMembers: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupMembers
+  ]
+  var GroupMilestones: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupMilestones
+  ]
+  var GroupProjects: Instantiable0[typings.gitlab.distSrcCoreServicesMod.GroupProjects]
+  var GroupVariables: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.GroupVariables
+  ]
+  var Groups: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Groups]
+  var IssueAwardEmojis: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.IssueAwardEmojis
+  ]
+  var IssueDiscussions: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.IssueDiscussions
+  ]
+  var IssueNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distSrcCoreServicesMod.IssueNotes]
+  var Issues: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Issues]
+  var Jobs: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Jobs]
+  var Keys: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Keys]
+  var Labels: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distSrcCoreServicesMod.Labels]
+  var Licence: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Licence]
+  var LicenceTemplates: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.LicenceTemplates
+  ]
+  var Lint: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Lint]
+  var Markdown: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Markdown]
   var MergeRequestAwardEmojis: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.MergeRequestAwardEmojis
+    typings.gitlab.distSrcCoreServicesMod.MergeRequestAwardEmojis
   ]
   var MergeRequestDiscussions: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.MergeRequestDiscussions
+    typings.gitlab.distSrcCoreServicesMod.MergeRequestDiscussions
   ]
-  var MergeRequestNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.MergeRequestNotes]
-  var MergeRequests: Instantiable0[typings.gitlab.distServicesMod.MergeRequests]
-  var Namespaces: Instantiable0[typings.gitlab.distServicesMod.Namespaces]
-  var NotificationSettings: Instantiable0[typings.gitlab.distServicesMod.NotificationSettings]
-  var Packages: Instantiable0[typings.gitlab.distServicesMod.Packages]
-  var PagesDomains: Instantiable0[typings.gitlab.distServicesMod.PagesDomains]
-  var PipelineScheduleVariables: Instantiable0[typings.gitlab.distServicesMod.PipelineScheduleVariables]
-  var PipelineSchedules: Instantiable0[typings.gitlab.distServicesMod.PipelineSchedules]
-  var Pipelines: Instantiable0[typings.gitlab.distServicesMod.Pipelines]
+  var MergeRequestNotes: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.MergeRequestNotes
+  ]
+  var MergeRequests: Instantiable0[typings.gitlab.distSrcCoreServicesMod.MergeRequests]
+  var Namespaces: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Namespaces]
+  var NotificationSettings: Instantiable0[typings.gitlab.distSrcCoreServicesMod.NotificationSettings]
+  var Packages: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Packages]
+  var PagesDomains: Instantiable0[typings.gitlab.distSrcCoreServicesMod.PagesDomains]
+  var PipelineScheduleVariables: Instantiable0[typings.gitlab.distSrcCoreServicesMod.PipelineScheduleVariables]
+  var PipelineSchedules: Instantiable0[typings.gitlab.distSrcCoreServicesMod.PipelineSchedules]
+  var Pipelines: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Pipelines]
   var ProjectAccessRequests: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.ProjectAccessRequests
+    typings.gitlab.distSrcCoreServicesMod.ProjectAccessRequests
   ]
-  var ProjectBadges: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.ProjectBadges]
+  var ProjectBadges: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.ProjectBadges
+  ]
   var ProjectCustomAttributes: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.ProjectCustomAttributes
+    typings.gitlab.distSrcCoreServicesMod.ProjectCustomAttributes
   ]
-  var ProjectHooks: Instantiable0[typings.gitlab.distServicesMod.ProjectHooks]
-  var ProjectImportExport: Instantiable0[typings.gitlab.distServicesMod.ProjectImportExport]
+  var ProjectHooks: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProjectHooks]
+  var ProjectImportExport: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProjectImportExport]
   var ProjectIssueBoards: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.ProjectIssueBoards
+    typings.gitlab.distSrcCoreServicesMod.ProjectIssueBoards
   ]
-  var ProjectMembers: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.ProjectMembers]
-  var ProjectMilestones: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.ProjectMilestones]
+  var ProjectMembers: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.ProjectMembers
+  ]
+  var ProjectMilestones: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.ProjectMilestones
+  ]
   var ProjectSnippetAwardEmojis: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.ProjectSnippetAwardEmojis
+    typings.gitlab.distSrcCoreServicesMod.ProjectSnippetAwardEmojis
   ]
   var ProjectSnippetDiscussions: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.ProjectSnippetDiscussions
+    typings.gitlab.distSrcCoreServicesMod.ProjectSnippetDiscussions
   ]
   var ProjectSnippetNotes: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.ProjectSnippetNotes
+    typings.gitlab.distSrcCoreServicesMod.ProjectSnippetNotes
   ]
-  var ProjectSnippets: Instantiable0[typings.gitlab.distServicesMod.ProjectSnippets]
-  var ProjectVariables: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distServicesMod.ProjectVariables]
-  var Projects: Instantiable0[typings.gitlab.distServicesMod.Projects]
-  var ProtectedBranches: Instantiable0[typings.gitlab.distServicesMod.ProtectedBranches]
-  var ProtectedTags: Instantiable0[typings.gitlab.distServicesMod.ProtectedTags]
-  var PushRules: Instantiable0[typings.gitlab.distServicesMod.PushRules]
-  var ReleaseLinks: Instantiable0[typings.gitlab.distServicesMod.ReleaseLinks]
-  var Releases: Instantiable0[typings.gitlab.distServicesMod.Releases]
-  var Repositories: Instantiable0[typings.gitlab.distServicesMod.Repositories]
-  var RepositoryFiles: Instantiable0[typings.gitlab.distServicesMod.RepositoryFiles]
-  var Runners: Instantiable0[typings.gitlab.distServicesMod.Runners]
-  var Search: Instantiable0[typings.gitlab.distServicesMod.Search]
-  var Services: Instantiable0[typings.gitlab.distServicesMod.Services]
-  var SidekiqMetrics: Instantiable0[typings.gitlab.distServicesMod.SidekiqMetrics]
-  var Snippets: Instantiable0[typings.gitlab.distServicesMod.Snippets]
-  var SystemHooks: Instantiable0[typings.gitlab.distServicesMod.SystemHooks]
-  var Tags: Instantiable0[typings.gitlab.distServicesMod.Tags]
-  var Todos: Instantiable0[typings.gitlab.distServicesMod.Todos]
-  var Triggers: Instantiable0[typings.gitlab.distServicesMod.Triggers]
+  var ProjectSnippets: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProjectSnippets]
+  var ProjectVariables: Instantiable1[
+    /* options */ BaseServiceOptions, 
+    typings.gitlab.distSrcCoreServicesMod.ProjectVariables
+  ]
+  var Projects: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Projects]
+  var ProtectedBranches: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProtectedBranches]
+  var ProtectedTags: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProtectedTags]
+  var PushRules: Instantiable0[typings.gitlab.distSrcCoreServicesMod.PushRules]
+  var ReleaseLinks: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ReleaseLinks]
+  var Releases: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Releases]
+  var Repositories: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Repositories]
+  var RepositoryFiles: Instantiable0[typings.gitlab.distSrcCoreServicesMod.RepositoryFiles]
+  var Runners: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Runners]
+  var Search: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Search]
+  var Services: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Services]
+  var SidekiqMetrics: Instantiable0[typings.gitlab.distSrcCoreServicesMod.SidekiqMetrics]
+  var Snippets: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Snippets]
+  var SystemHooks: Instantiable0[typings.gitlab.distSrcCoreServicesMod.SystemHooks]
+  var Tags: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Tags]
+  var Todos: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Todos]
+  var Triggers: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Triggers]
   var UserCustomAttributes: Instantiable1[
     /* options */ BaseServiceOptions, 
-    typings.gitlab.distServicesMod.UserCustomAttributes
+    typings.gitlab.distSrcCoreServicesMod.UserCustomAttributes
   ]
-  var UserEmails: Instantiable0[typings.gitlab.distServicesMod.UserEmails]
-  var UserGPGKeys: Instantiable0[typings.gitlab.distServicesMod.UserGPGKeys]
-  var UserImpersonationTokens: Instantiable0[typings.gitlab.distServicesMod.UserImpersonationTokens]
-  var UserKeys: Instantiable0[typings.gitlab.distServicesMod.UserKeys]
-  var Users: Instantiable0[typings.gitlab.distServicesMod.Users]
-  var Version: Instantiable0[typings.gitlab.distServicesMod.Version]
-  var Wikis: Instantiable0[typings.gitlab.distServicesMod.Wikis]
+  var UserEmails: Instantiable0[typings.gitlab.distSrcCoreServicesMod.UserEmails]
+  var UserGPGKeys: Instantiable0[typings.gitlab.distSrcCoreServicesMod.UserGPGKeys]
+  var UserImpersonationTokens: Instantiable0[typings.gitlab.distSrcCoreServicesMod.UserImpersonationTokens]
+  var UserKeys: Instantiable0[typings.gitlab.distSrcCoreServicesMod.UserKeys]
+  var Users: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Users]
+  var Version: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Version]
+  var Wikis: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Wikis]
 }
 
 object TypeofAPIServices {
@@ -248,6 +298,7 @@ object TypeofAPIServices {
     GroupBadges: Instantiable1[/* options */ BaseServiceOptions, GroupBadges],
     GroupCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, GroupCustomAttributes],
     GroupIssueBoards: Instantiable1[/* options */ BaseServiceOptions, GroupIssueBoards],
+    GroupLabels: Instantiable1[/* options */ BaseServiceOptions, GroupLabels],
     GroupMembers: Instantiable1[/* options */ BaseServiceOptions, GroupMembers],
     GroupMilestones: Instantiable1[/* options */ BaseServiceOptions, GroupMilestones],
     GroupProjects: Instantiable0[GroupProjects],
@@ -259,7 +310,7 @@ object TypeofAPIServices {
     Issues: Instantiable0[Issues],
     Jobs: Instantiable0[Jobs],
     Keys: Instantiable0[Keys],
-    Labels: Instantiable0[Labels],
+    Labels: Instantiable1[/* options */ BaseServiceOptions, Labels],
     Licence: Instantiable0[Licence],
     LicenceTemplates: Instantiable1[/* options */ BaseServiceOptions, LicenceTemplates],
     Lint: Instantiable0[Lint],
@@ -314,7 +365,7 @@ object TypeofAPIServices {
     Version: Instantiable0[Version],
     Wikis: Instantiable0[Wikis]
   ): TypeofAPIServices = {
-    val __obj = js.Dynamic.literal(ApplicationSettings = ApplicationSettings, Branches = Branches, BroadcastMessages = BroadcastMessages, CommitDiscussions = CommitDiscussions, Commits = Commits, ContainerRegistry = ContainerRegistry, DeployKeys = DeployKeys, Deployments = Deployments, Environments = Environments, EpicDiscussions = EpicDiscussions, EpicIssues = EpicIssues, EpicNotes = EpicNotes, Epics = Epics, Events = Events, FeatureFlags = FeatureFlags, GeoNodes = GeoNodes, GitLabCIYMLTemplates = GitLabCIYMLTemplates, GitignoreTemplates = GitignoreTemplates, GroupAccessRequests = GroupAccessRequests, GroupBadges = GroupBadges, GroupCustomAttributes = GroupCustomAttributes, GroupIssueBoards = GroupIssueBoards, GroupMembers = GroupMembers, GroupMilestones = GroupMilestones, GroupProjects = GroupProjects, GroupVariables = GroupVariables, Groups = Groups, IssueAwardEmojis = IssueAwardEmojis, IssueDiscussions = IssueDiscussions, IssueNotes = IssueNotes, Issues = Issues, Jobs = Jobs, Keys = Keys, Labels = Labels, Licence = Licence, LicenceTemplates = LicenceTemplates, Lint = Lint, Markdown = Markdown, MergeRequestAwardEmojis = MergeRequestAwardEmojis, MergeRequestDiscussions = MergeRequestDiscussions, MergeRequestNotes = MergeRequestNotes, MergeRequests = MergeRequests, Namespaces = Namespaces, NotificationSettings = NotificationSettings, Packages = Packages, PagesDomains = PagesDomains, PipelineScheduleVariables = PipelineScheduleVariables, PipelineSchedules = PipelineSchedules, Pipelines = Pipelines, ProjectAccessRequests = ProjectAccessRequests, ProjectBadges = ProjectBadges, ProjectCustomAttributes = ProjectCustomAttributes, ProjectHooks = ProjectHooks, ProjectImportExport = ProjectImportExport, ProjectIssueBoards = ProjectIssueBoards, ProjectMembers = ProjectMembers, ProjectMilestones = ProjectMilestones, ProjectSnippetAwardEmojis = ProjectSnippetAwardEmojis, ProjectSnippetDiscussions = ProjectSnippetDiscussions, ProjectSnippetNotes = ProjectSnippetNotes, ProjectSnippets = ProjectSnippets, ProjectVariables = ProjectVariables, Projects = Projects, ProtectedBranches = ProtectedBranches, ProtectedTags = ProtectedTags, PushRules = PushRules, ReleaseLinks = ReleaseLinks, Releases = Releases, Repositories = Repositories, RepositoryFiles = RepositoryFiles, Runners = Runners, Search = Search, Services = Services, SidekiqMetrics = SidekiqMetrics, Snippets = Snippets, SystemHooks = SystemHooks, Tags = Tags, Todos = Todos, Triggers = Triggers, UserCustomAttributes = UserCustomAttributes, UserEmails = UserEmails, UserGPGKeys = UserGPGKeys, UserImpersonationTokens = UserImpersonationTokens, UserKeys = UserKeys, Users = Users, Version = Version, Wikis = Wikis)
+    val __obj = js.Dynamic.literal(ApplicationSettings = ApplicationSettings, Branches = Branches, BroadcastMessages = BroadcastMessages, CommitDiscussions = CommitDiscussions, Commits = Commits, ContainerRegistry = ContainerRegistry, DeployKeys = DeployKeys, Deployments = Deployments, Environments = Environments, EpicDiscussions = EpicDiscussions, EpicIssues = EpicIssues, EpicNotes = EpicNotes, Epics = Epics, Events = Events, FeatureFlags = FeatureFlags, GeoNodes = GeoNodes, GitLabCIYMLTemplates = GitLabCIYMLTemplates, GitignoreTemplates = GitignoreTemplates, GroupAccessRequests = GroupAccessRequests, GroupBadges = GroupBadges, GroupCustomAttributes = GroupCustomAttributes, GroupIssueBoards = GroupIssueBoards, GroupLabels = GroupLabels, GroupMembers = GroupMembers, GroupMilestones = GroupMilestones, GroupProjects = GroupProjects, GroupVariables = GroupVariables, Groups = Groups, IssueAwardEmojis = IssueAwardEmojis, IssueDiscussions = IssueDiscussions, IssueNotes = IssueNotes, Issues = Issues, Jobs = Jobs, Keys = Keys, Labels = Labels, Licence = Licence, LicenceTemplates = LicenceTemplates, Lint = Lint, Markdown = Markdown, MergeRequestAwardEmojis = MergeRequestAwardEmojis, MergeRequestDiscussions = MergeRequestDiscussions, MergeRequestNotes = MergeRequestNotes, MergeRequests = MergeRequests, Namespaces = Namespaces, NotificationSettings = NotificationSettings, Packages = Packages, PagesDomains = PagesDomains, PipelineScheduleVariables = PipelineScheduleVariables, PipelineSchedules = PipelineSchedules, Pipelines = Pipelines, ProjectAccessRequests = ProjectAccessRequests, ProjectBadges = ProjectBadges, ProjectCustomAttributes = ProjectCustomAttributes, ProjectHooks = ProjectHooks, ProjectImportExport = ProjectImportExport, ProjectIssueBoards = ProjectIssueBoards, ProjectMembers = ProjectMembers, ProjectMilestones = ProjectMilestones, ProjectSnippetAwardEmojis = ProjectSnippetAwardEmojis, ProjectSnippetDiscussions = ProjectSnippetDiscussions, ProjectSnippetNotes = ProjectSnippetNotes, ProjectSnippets = ProjectSnippets, ProjectVariables = ProjectVariables, Projects = Projects, ProtectedBranches = ProtectedBranches, ProtectedTags = ProtectedTags, PushRules = PushRules, ReleaseLinks = ReleaseLinks, Releases = Releases, Repositories = Repositories, RepositoryFiles = RepositoryFiles, Runners = Runners, Search = Search, Services = Services, SidekiqMetrics = SidekiqMetrics, Snippets = Snippets, SystemHooks = SystemHooks, Tags = Tags, Todos = Todos, Triggers = Triggers, UserCustomAttributes = UserCustomAttributes, UserEmails = UserEmails, UserGPGKeys = UserGPGKeys, UserImpersonationTokens = UserImpersonationTokens, UserKeys = UserKeys, Users = Users, Version = Version, Wikis = Wikis)
   
     __obj.asInstanceOf[TypeofAPIServices]
   }

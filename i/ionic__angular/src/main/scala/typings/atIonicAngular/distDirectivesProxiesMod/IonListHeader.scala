@@ -8,10 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonListHeader * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonListHeader")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonListHeader")
 @js.native
-class IonListHeader protected () extends js.Object {
+class IonListHeader protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonListHeader {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var z: NgZone = js.native

@@ -1,7 +1,5 @@
 package typings.atJupyterlabMarkdownviewer.libWidgetMod.MarkdownViewer
 
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IContext
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +12,7 @@ trait IOptions extends js.Object {
   /**
     * Context
     */
-  var context: IContext[IModel]
+  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<DocumentRegistry.IModel> */ js.Any
   /**
     * The renderer instance.
     */
@@ -23,7 +21,10 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(context: IContext[IModel], renderer: IRenderer): IOptions = {
+  def apply(
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<DocumentRegistry.IModel> */ js.Any,
+    renderer: IRenderer
+  ): IOptions = {
     val __obj = js.Dynamic.literal(context = context, renderer = renderer)
   
     __obj.asInstanceOf[IOptions]

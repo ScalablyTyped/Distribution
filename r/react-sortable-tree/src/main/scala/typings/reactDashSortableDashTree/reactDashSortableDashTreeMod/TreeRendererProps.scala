@@ -1,10 +1,7 @@
 package typings.reactDashSortableDashTree.reactDashSortableDashTreeMod
 
 import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ReactElement
 import typings.react.reactMod._Global_.JSX.Element
-import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDropTarget
-import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement
 import typings.reactDashSortableDashTree.NumberOrStringArray
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.ltr
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.rtl
@@ -16,7 +13,7 @@ trait TreeRendererProps extends js.Object {
   var canDrop: js.UndefOr[Boolean] = js.undefined
   var children: js.Array[Element]
   // Drop target
-  var connectDropTarget: ConnectDropTarget
+  var connectDropTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDropTarget */ js.Any
   var draggedNode: js.UndefOr[TreeItem] = js.undefined
   var isOver: Boolean
   var listIndex: Double
@@ -39,7 +36,7 @@ object TreeRendererProps {
   @scala.inline
   def apply(
     children: js.Array[Element],
-    connectDropTarget: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[js.Any]) => ReactElement | Null,
+    connectDropTarget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDropTarget */ js.Any,
     getPrevRow: () => FlatDataItem | Null,
     isOver: Boolean,
     listIndex: Double,
@@ -57,7 +54,7 @@ object TreeRendererProps {
     swapFrom: Int | Double = null,
     swapLength: Int | Double = null
   ): TreeRendererProps = {
-    val __obj = js.Dynamic.literal(children = children, connectDropTarget = js.Any.fromFunction2(connectDropTarget), getPrevRow = js.Any.fromFunction0(getPrevRow), isOver = isOver, listIndex = listIndex, lowerSiblingCounts = lowerSiblingCounts, node = node, path = path, scaffoldBlockPxWidth = scaffoldBlockPxWidth, treeId = treeId, treeIndex = treeIndex)
+    val __obj = js.Dynamic.literal(children = children, connectDropTarget = connectDropTarget, getPrevRow = js.Any.fromFunction0(getPrevRow), isOver = isOver, listIndex = listIndex, lowerSiblingCounts = lowerSiblingCounts, node = node, path = path, scaffoldBlockPxWidth = scaffoldBlockPxWidth, treeId = treeId, treeIndex = treeIndex)
     if (!js.isUndefined(canDrop)) __obj.updateDynamic("canDrop")(canDrop)
     if (draggedNode != null) __obj.updateDynamic("draggedNode")(draggedNode)
     if (rowDirection != null) __obj.updateDynamic("rowDirection")(rowDirection.asInstanceOf[js.Any])

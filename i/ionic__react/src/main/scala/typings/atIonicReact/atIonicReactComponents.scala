@@ -111,52 +111,52 @@ import scala.scalajs.js.annotation._
 object atIonicReactComponents extends atIonicReactProps {
   @scala.inline
   def IonApp: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonApp */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonApp with (Pick[
       HTMLAttributes[HTMLIonAppElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonAppElement]
   ] = typings.atIonicReact.atIonicReactMod.IonApp.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonApp */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonApp with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAppElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAppElement]]]
   @scala.inline
   def IonAvatar: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonAvatar */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonAvatar with (Pick[
       HTMLAttributes[HTMLIonAvatarElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonAvatarElement]
   ] = typings.atIonicReact.atIonicReactMod.IonAvatar.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonAvatar */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonAvatar with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAvatarElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAvatarElement]]]
   @scala.inline
   def IonBackdrop: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBackdrop */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonBackdrop with (Pick[
       HTMLAttributes[HTMLIonBackdropElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonBackdropElement]
   ] = typings.atIonicReact.atIonicReactMod.IonBackdrop.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBackdrop */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonBackdrop with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBackdropElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBackdropElement]]]
   @scala.inline
   def IonBadge: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBadge */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonBadge with (Pick[
       HTMLAttributes[HTMLIonBadgeElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonBadgeElement]
   ] = typings.atIonicReact.atIonicReactMod.IonBadge.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonBadge */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonBadge with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBadgeElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBadgeElement]]]
   @scala.inline
   def IonButton: ComponentType[
     (Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButton */ _, 
+      typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonButton, 
       disabled | strong | color | size | fill | mode | href | download | rel | target | buttonType | expand | onIonBlur | onIonFocus | shape | `type`
     ]) with Anon_Back with (Pick[
       HTMLAttributes[HTMLIonButtonElement], 
@@ -164,7 +164,7 @@ object atIonicReactComponents extends atIonicReactProps {
     ]) with IonicReactProps with RefAttributes[HTMLIonButtonElement]
   ] = typings.atIonicReact.atIonicReactMod.IonButton.asInstanceOf[typings.react.reactMod.ComponentType[
   (typings.std.Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButton */ _, 
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonButton, 
     typings.atIonicReact.atIonicReactStrings.disabled | typings.atIonicReact.atIonicReactStrings.strong | typings.atIonicReact.atIonicReactStrings.color | typings.atIonicReact.atIonicReactStrings.size | typings.atIonicReact.atIonicReactStrings.fill | typings.atIonicReact.atIonicReactStrings.mode | typings.atIonicReact.atIonicReactStrings.href | typings.atIonicReact.atIonicReactStrings.download | typings.atIonicReact.atIonicReactStrings.rel | typings.atIonicReact.atIonicReactStrings.target | typings.atIonicReact.atIonicReactStrings.buttonType | typings.atIonicReact.atIonicReactStrings.expand | typings.atIonicReact.atIonicReactStrings.onIonBlur | typings.atIonicReact.atIonicReactStrings.onIonFocus | typings.atIonicReact.atIonicReactStrings.shape | typings.atIonicReact.atIonicReactStrings.`type`
   ]) with typings.atIonicReact.Anon_Back with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonButtonElement], 
@@ -172,19 +172,19 @@ object atIonicReactComponents extends atIonicReactProps {
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonButtonElement]]]
   @scala.inline
   def IonButtons: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButtons */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonButtons with (Pick[
       HTMLAttributes[HTMLIonButtonsElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonButtonsElement]
   ] = typings.atIonicReact.atIonicReactMod.IonButtons.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonButtons */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonButtons with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonButtonsElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonButtonsElement]]]
   @scala.inline
   def IonCard: ComponentType[
     (Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCard */ _, 
+      typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCard, 
       disabled | button | color | mode | href | download | rel | target | `type`
     ]) with Anon_Back with (Pick[
       HTMLAttributes[HTMLIonCardElement], 
@@ -192,7 +192,7 @@ object atIonicReactComponents extends atIonicReactProps {
     ]) with IonicReactProps with RefAttributes[HTMLIonCardElement]
   ] = typings.atIonicReact.atIonicReactMod.IonCard.asInstanceOf[typings.react.reactMod.ComponentType[
   (typings.std.Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCard */ _, 
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCard, 
     typings.atIonicReact.atIonicReactStrings.disabled | typings.atIonicReact.atIonicReactStrings.button | typings.atIonicReact.atIonicReactStrings.color | typings.atIonicReact.atIonicReactStrings.mode | typings.atIonicReact.atIonicReactStrings.href | typings.atIonicReact.atIonicReactStrings.download | typings.atIonicReact.atIonicReactStrings.rel | typings.atIonicReact.atIonicReactStrings.target | typings.atIonicReact.atIonicReactStrings.`type`
   ]) with typings.atIonicReact.Anon_Back with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardElement], 
@@ -200,118 +200,118 @@ object atIonicReactComponents extends atIonicReactProps {
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardElement]]]
   @scala.inline
   def IonCardContent: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardContent */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCardContent with (Pick[
       HTMLAttributes[HTMLIonCardContentElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonCardContentElement]
   ] = typings.atIonicReact.atIonicReactMod.IonCardContent.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardContent */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCardContent with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardContentElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardContentElement]]]
   @scala.inline
   def IonCardHeader: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardHeader */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCardHeader with (Pick[
       HTMLAttributes[HTMLIonCardHeaderElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonCardHeaderElement]
   ] = typings.atIonicReact.atIonicReactMod.IonCardHeader.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardHeader */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCardHeader with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardHeaderElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardHeaderElement]]]
   @scala.inline
   def IonCardSubtitle: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardSubtitle */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCardSubtitle with (Pick[
       HTMLAttributes[HTMLIonCardSubtitleElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonCardSubtitleElement]
   ] = typings.atIonicReact.atIonicReactMod.IonCardSubtitle.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardSubtitle */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCardSubtitle with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardSubtitleElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardSubtitleElement]]]
   @scala.inline
   def IonCardTitle: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardTitle */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCardTitle with (Pick[
       HTMLAttributes[HTMLIonCardTitleElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonCardTitleElement]
   ] = typings.atIonicReact.atIonicReactMod.IonCardTitle.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCardTitle */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCardTitle with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardTitleElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCardTitleElement]]]
   @scala.inline
   def IonCheckbox: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCheckbox */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCheckbox with (Pick[
       HTMLAttributes[HTMLIonCheckboxElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonCheckboxElement]
   ] = typings.atIonicReact.atIonicReactMod.IonCheckbox.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCheckbox */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCheckbox with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCheckboxElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonCheckboxElement]]]
   @scala.inline
   def IonChip: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonChip */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonChip with (Pick[
       HTMLAttributes[HTMLIonChipElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonChipElement]
   ] = typings.atIonicReact.atIonicReactMod.IonChip.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonChip */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonChip with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonChipElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonChipElement]]]
   @scala.inline
   def IonCol: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCol */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCol with (Pick[
       HTMLAttributes[HTMLIonColElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonColElement]
   ] = typings.atIonicReact.atIonicReactMod.IonCol.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCol */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCol with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonColElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonColElement]]]
   @scala.inline
   def IonContent: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonContent */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonContent with (Pick[
       HTMLAttributes[HTMLIonContentElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonContentElement]
   ] = typings.atIonicReact.atIonicReactMod.IonContent.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonContent */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonContent with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonContentElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonContentElement]]]
   @scala.inline
   def IonDatetime: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonDatetime */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonDatetime with (Pick[
       HTMLAttributes[HTMLIonDatetimeElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonDatetimeElement]
   ] = typings.atIonicReact.atIonicReactMod.IonDatetime.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonDatetime */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonDatetime with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonDatetimeElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonDatetimeElement]]]
   @scala.inline
   def IonFab: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFab */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFab with (Pick[
       HTMLAttributes[HTMLIonFabElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonFabElement]
   ] = typings.atIonicReact.atIonicReactMod.IonFab.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFab */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFab with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonFabElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonFabElement]]]
   @scala.inline
   def IonFabButton: ComponentType[
     (Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabButton */ _, 
+      typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFabButton, 
       show | disabled | activated | color | size | mode | href | download | rel | target | onIonBlur | onIonFocus | `type` | translucent
     ]) with Anon_Back with (Pick[
       HTMLAttributes[HTMLIonFabButtonElement], 
@@ -319,7 +319,7 @@ object atIonicReactComponents extends atIonicReactProps {
     ]) with IonicReactProps with RefAttributes[HTMLIonFabButtonElement]
   ] = typings.atIonicReact.atIonicReactMod.IonFabButton.asInstanceOf[typings.react.reactMod.ComponentType[
   (typings.std.Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabButton */ _, 
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFabButton, 
     typings.atIonicReact.atIonicReactStrings.show | typings.atIonicReact.atIonicReactStrings.disabled | typings.atIonicReact.atIonicReactStrings.activated | typings.atIonicReact.atIonicReactStrings.color | typings.atIonicReact.atIonicReactStrings.size | typings.atIonicReact.atIonicReactStrings.mode | typings.atIonicReact.atIonicReactStrings.href | typings.atIonicReact.atIonicReactStrings.download | typings.atIonicReact.atIonicReactStrings.rel | typings.atIonicReact.atIonicReactStrings.target | typings.atIonicReact.atIonicReactStrings.onIonBlur | typings.atIonicReact.atIonicReactStrings.onIonFocus | typings.atIonicReact.atIonicReactStrings.`type` | typings.atIonicReact.atIonicReactStrings.translucent
   ]) with typings.atIonicReact.Anon_Back with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonFabButtonElement], 
@@ -327,45 +327,45 @@ object atIonicReactComponents extends atIonicReactProps {
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonFabButtonElement]]]
   @scala.inline
   def IonFabList: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabList */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFabList with (Pick[
       HTMLAttributes[HTMLIonFabListElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonFabListElement]
   ] = typings.atIonicReact.atIonicReactMod.IonFabList.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFabList */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFabList with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonFabListElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonFabListElement]]]
   @scala.inline
   def IonFooter: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFooter */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFooter with (Pick[
       HTMLAttributes[HTMLIonFooterElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonFooterElement]
   ] = typings.atIonicReact.atIonicReactMod.IonFooter.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonFooter */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonFooter with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonFooterElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonFooterElement]]]
   @scala.inline
   def IonGrid: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonGrid */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonGrid with (Pick[
       HTMLAttributes[HTMLIonGridElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonGridElement]
   ] = typings.atIonicReact.atIonicReactMod.IonGrid.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonGrid */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonGrid with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonGridElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonGridElement]]]
   @scala.inline
   def IonHeader: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonHeader */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonHeader with (Pick[
       HTMLAttributes[HTMLIonHeaderElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonHeaderElement]
   ] = typings.atIonicReact.atIonicReactMod.IonHeader.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonHeader */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonHeader with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonHeaderElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonHeaderElement]]]
@@ -385,34 +385,34 @@ object atIonicReactComponents extends atIonicReactProps {
   ]) with typings.react.reactMod.RefAttributes[typings.ionicons.distTypesComponentsMod._Global_.HTMLIonIconElement]]]
   @scala.inline
   def IonImg: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonImg */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonImg with (Pick[
       HTMLAttributes[HTMLIonImgElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonImgElement]
   ] = typings.atIonicReact.atIonicReactMod.IonImg.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonImg */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonImg with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonImgElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonImgElement]]]
   @scala.inline
   def IonInfiniteScroll: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInfiniteScroll */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonInfiniteScroll with (Pick[
       HTMLAttributes[HTMLIonInfiniteScrollElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonInfiniteScrollElement]
   ] = typings.atIonicReact.atIonicReactMod.IonInfiniteScroll.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInfiniteScroll */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonInfiniteScroll with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonInfiniteScrollElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonInfiniteScrollElement]]]
   @scala.inline
   def IonInfiniteScrollContent: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInfiniteScrollContent */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonInfiniteScrollContent with (Pick[
       HTMLAttributes[HTMLIonInfiniteScrollContentElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonInfiniteScrollContentElement]
   ] = typings.atIonicReact.atIonicReactMod.IonInfiniteScrollContent.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInfiniteScrollContent */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonInfiniteScrollContent with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[
       typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonInfiniteScrollContentElement
     ], 
@@ -422,19 +422,19 @@ object atIonicReactComponents extends atIonicReactProps {
   ])]]
   @scala.inline
   def IonInput: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInput */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonInput with (Pick[
       HTMLAttributes[HTMLIonInputElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonInputElement]
   ] = typings.atIonicReact.atIonicReactMod.IonInput.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonInput */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonInput with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonInputElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonInputElement]]]
   @scala.inline
   def IonItem: ComponentType[
     (Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItem */ _, 
+      typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItem, 
       disabled | button | color | lines | mode | href | download | rel | target | `type` | detail | detailIcon
     ]) with Anon_Back with (Pick[
       HTMLAttributes[HTMLIonItemElement], 
@@ -442,7 +442,7 @@ object atIonicReactComponents extends atIonicReactProps {
     ]) with IonicReactProps with RefAttributes[HTMLIonItemElement]
   ] = typings.atIonicReact.atIonicReactMod.IonItem.asInstanceOf[typings.react.reactMod.ComponentType[
   (typings.std.Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItem */ _, 
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItem, 
     typings.atIonicReact.atIonicReactStrings.disabled | typings.atIonicReact.atIonicReactStrings.button | typings.atIonicReact.atIonicReactStrings.color | typings.atIonicReact.atIonicReactStrings.lines | typings.atIonicReact.atIonicReactStrings.mode | typings.atIonicReact.atIonicReactStrings.href | typings.atIonicReact.atIonicReactStrings.download | typings.atIonicReact.atIonicReactStrings.rel | typings.atIonicReact.atIonicReactStrings.target | typings.atIonicReact.atIonicReactStrings.`type` | typings.atIonicReact.atIonicReactStrings.detail | typings.atIonicReact.atIonicReactStrings.detailIcon
   ]) with typings.atIonicReact.Anon_Back with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemElement], 
@@ -450,30 +450,30 @@ object atIonicReactComponents extends atIonicReactProps {
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemElement]]]
   @scala.inline
   def IonItemDivider: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemDivider */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemDivider with (Pick[
       HTMLAttributes[HTMLIonItemDividerElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonItemDividerElement]
   ] = typings.atIonicReact.atIonicReactMod.IonItemDivider.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemDivider */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemDivider with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemDividerElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemDividerElement]]]
   @scala.inline
   def IonItemGroup: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemGroup */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemGroup with (Pick[
       HTMLAttributes[HTMLIonItemGroupElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonItemGroupElement]
   ] = typings.atIonicReact.atIonicReactMod.IonItemGroup.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemGroup */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemGroup with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemGroupElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemGroupElement]]]
   @scala.inline
   def IonItemOption: ComponentType[
     (Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOption */ _, 
+      typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemOption, 
       disabled | color | mode | href | download | rel | target | `type` | expandable
     ]) with Anon_Back with (Pick[
       HTMLAttributes[HTMLIonItemOptionElement], 
@@ -481,7 +481,7 @@ object atIonicReactComponents extends atIonicReactProps {
     ]) with IonicReactProps with RefAttributes[HTMLIonItemOptionElement]
   ] = typings.atIonicReact.atIonicReactMod.IonItemOption.asInstanceOf[typings.react.reactMod.ComponentType[
   (typings.std.Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOption */ _, 
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemOption, 
     typings.atIonicReact.atIonicReactStrings.disabled | typings.atIonicReact.atIonicReactStrings.color | typings.atIonicReact.atIonicReactStrings.mode | typings.atIonicReact.atIonicReactStrings.href | typings.atIonicReact.atIonicReactStrings.download | typings.atIonicReact.atIonicReactStrings.rel | typings.atIonicReact.atIonicReactStrings.target | typings.atIonicReact.atIonicReactStrings.`type` | typings.atIonicReact.atIonicReactStrings.expandable
   ]) with typings.atIonicReact.Anon_Back with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemOptionElement], 
@@ -489,188 +489,188 @@ object atIonicReactComponents extends atIonicReactProps {
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemOptionElement]]]
   @scala.inline
   def IonItemOptions: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOptions */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemOptions with (Pick[
       HTMLAttributes[HTMLIonItemOptionsElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonItemOptionsElement]
   ] = typings.atIonicReact.atIonicReactMod.IonItemOptions.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemOptions */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemOptions with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemOptionsElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemOptionsElement]]]
   @scala.inline
   def IonItemSliding: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemSliding */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemSliding with (Pick[
       HTMLAttributes[HTMLIonItemSlidingElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonItemSlidingElement]
   ] = typings.atIonicReact.atIonicReactMod.IonItemSliding.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonItemSliding */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonItemSliding with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemSlidingElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonItemSlidingElement]]]
   @scala.inline
   def IonLabel: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonLabel */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonLabel with (Pick[
       HTMLAttributes[HTMLIonLabelElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonLabelElement]
   ] = typings.atIonicReact.atIonicReactMod.IonLabel.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonLabel */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonLabel with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonLabelElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonLabelElement]]]
   @scala.inline
   def IonList: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonList */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonList with (Pick[
       HTMLAttributes[HTMLIonListElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonListElement]
   ] = typings.atIonicReact.atIonicReactMod.IonList.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonList */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonList with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonListElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonListElement]]]
   @scala.inline
   def IonListHeader: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonListHeader */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonListHeader with (Pick[
       HTMLAttributes[HTMLIonListHeaderElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonListHeaderElement]
   ] = typings.atIonicReact.atIonicReactMod.IonListHeader.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonListHeader */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonListHeader with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonListHeaderElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonListHeaderElement]]]
   @scala.inline
   def IonMenu: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenu */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonMenu with (Pick[
       HTMLAttributes[HTMLIonMenuElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonMenuElement]
   ] = typings.atIonicReact.atIonicReactMod.IonMenu.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenu */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonMenu with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuElement]]]
   @scala.inline
   def IonMenuButton: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenuButton */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonMenuButton with (Pick[
       HTMLAttributes[HTMLIonMenuButtonElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonMenuButtonElement]
   ] = typings.atIonicReact.atIonicReactMod.IonMenuButton.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenuButton */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonMenuButton with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuButtonElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuButtonElement]]]
   @scala.inline
   def IonMenuToggle: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenuToggle */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonMenuToggle with (Pick[
       HTMLAttributes[HTMLIonMenuToggleElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonMenuToggleElement]
   ] = typings.atIonicReact.atIonicReactMod.IonMenuToggle.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonMenuToggle */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonMenuToggle with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuToggleElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuToggleElement]]]
   @scala.inline
   def IonNav: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonNav */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonNav with (Pick[
       HTMLAttributes[HTMLIonNavElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonNavElement]
   ] = typings.atIonicReact.atIonicReactMod.IonNav.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonNav */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonNav with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNavElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNavElement]]]
   @scala.inline
   def IonNote: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonNote */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonNote with (Pick[
       HTMLAttributes[HTMLIonNoteElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonNoteElement]
   ] = typings.atIonicReact.atIonicReactMod.IonNote.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonNote */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonNote with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNoteElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonNoteElement]]]
   @scala.inline
   def IonPickerColumn: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPickerColumn */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonPickerColumn with (Pick[
       HTMLAttributes[HTMLIonPickerColumnElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonPickerColumnElement]
   ] = typings.atIonicReact.atIonicReactMod.IonPickerColumn.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonPickerColumn */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonPickerColumn with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerColumnElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerColumnElement]]]
   @scala.inline
   def IonProgressBar: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonProgressBar */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonProgressBar with (Pick[
       HTMLAttributes[HTMLIonProgressBarElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonProgressBarElement]
   ] = typings.atIonicReact.atIonicReactMod.IonProgressBar.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonProgressBar */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonProgressBar with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonProgressBarElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonProgressBarElement]]]
   @scala.inline
   def IonRadio: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadio */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRadio with (Pick[
       HTMLAttributes[HTMLIonRadioElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonRadioElement]
   ] = typings.atIonicReact.atIonicReactMod.IonRadio.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadio */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRadio with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioElement]]]
   @scala.inline
   def IonRadioGroup: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadioGroup */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRadioGroup with (Pick[
       HTMLAttributes[HTMLIonRadioGroupElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonRadioGroupElement]
   ] = typings.atIonicReact.atIonicReactMod.IonRadioGroup.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadioGroup */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRadioGroup with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioGroupElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRadioGroupElement]]]
   @scala.inline
   def IonRange: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRange */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRange with (Pick[
       HTMLAttributes[HTMLIonRangeElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonRangeElement]
   ] = typings.atIonicReact.atIonicReactMod.IonRange.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRange */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRange with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRangeElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRangeElement]]]
   @scala.inline
   def IonRefresher: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRefresher */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRefresher with (Pick[
       HTMLAttributes[HTMLIonRefresherElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonRefresherElement]
   ] = typings.atIonicReact.atIonicReactMod.IonRefresher.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRefresher */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRefresher with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRefresherElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRefresherElement]]]
   @scala.inline
   def IonRefresherContent: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRefresherContent */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRefresherContent with (Pick[
       HTMLAttributes[HTMLIonRefresherContentElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonRefresherContentElement]
   ] = typings.atIonicReact.atIonicReactMod.IonRefresherContent.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRefresherContent */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRefresherContent with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[
       typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRefresherContentElement
     ], 
@@ -680,41 +680,41 @@ object atIonicReactComponents extends atIonicReactProps {
   ])]]
   @scala.inline
   def IonReorder: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonReorder */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonReorder with (Pick[
       HTMLAttributes[HTMLIonReorderElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonReorderElement]
   ] = typings.atIonicReact.atIonicReactMod.IonReorder.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonReorder */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonReorder with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonReorderElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonReorderElement]]]
   @scala.inline
   def IonReorderGroup: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonReorderGroup */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonReorderGroup with (Pick[
       HTMLAttributes[HTMLIonReorderGroupElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonReorderGroupElement]
   ] = typings.atIonicReact.atIonicReactMod.IonReorderGroup.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonReorderGroup */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonReorderGroup with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonReorderGroupElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonReorderGroupElement]]]
   @scala.inline
   def IonRippleEffect: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRippleEffect */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRippleEffect with (Pick[
       HTMLAttributes[HTMLIonRippleEffectElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonRippleEffectElement]
   ] = typings.atIonicReact.atIonicReactMod.IonRippleEffect.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRippleEffect */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRippleEffect with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRippleEffectElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRippleEffectElement]]]
   @scala.inline
   def IonRouterLink: ComponentType[
     (Pick[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRouterLink */ _, 
+      typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterLink, 
       color | href | rel | target
     ]) with Anon_Back with (Pick[
       HTMLAttributes[HTMLIonRouterLinkElement], 
@@ -722,7 +722,7 @@ object atIonicReactComponents extends atIonicReactProps {
     ]) with IonicReactProps with RefAttributes[HTMLIonRouterLinkElement]
   ] = typings.atIonicReact.atIonicReactMod.IonRouterLink.asInstanceOf[typings.react.reactMod.ComponentType[
   (typings.std.Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRouterLink */ _, 
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterLink, 
     typings.atIonicReact.atIonicReactStrings.color | typings.atIonicReact.atIonicReactStrings.href | typings.atIonicReact.atIonicReactStrings.rel | typings.atIonicReact.atIonicReactStrings.target
   ]) with typings.atIonicReact.Anon_Back with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRouterLinkElement], 
@@ -732,7 +732,7 @@ object atIonicReactComponents extends atIonicReactProps {
   def IonRouterOutlet: ComponentType[
     (Pick[
       IonicReactExternalProps[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocalJSX.IonRouterOutlet */ js.Any) with Anon_Ref with IonicReactProps, 
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterOutlet with Anon_Ref with IonicReactProps, 
         HTMLIonRouterOutletElement
       ], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 257 */ js.Any
@@ -740,151 +740,151 @@ object atIonicReactComponents extends atIonicReactProps {
   ] = typings.atIonicReact.atIonicReactMod.IonRouterOutlet.asInstanceOf[typings.react.reactMod.ComponentType[
   (typings.std.Pick[
     typings.atIonicReact.distTypesComponentsUtilsMod.IonicReactExternalProps[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LocalJSX.IonRouterOutlet */ js.Any) with typings.atIonicReact.Anon_Ref with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps, 
+      typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterOutlet with typings.atIonicReact.Anon_Ref with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps, 
       typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRouterOutletElement
     ], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 257 */ js.Any
   ]) with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRouterOutletElement]]]
   @scala.inline
   def IonRow: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRow */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRow with (Pick[
       HTMLAttributes[HTMLIonRowElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonRowElement]
   ] = typings.atIonicReact.atIonicReactMod.IonRow.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRow */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRow with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRowElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRowElement]]]
   @scala.inline
   def IonSearchbar: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSearchbar */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSearchbar with (Pick[
       HTMLAttributes[HTMLIonSearchbarElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSearchbarElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSearchbar.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSearchbar */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSearchbar with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSearchbarElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSearchbarElement]]]
   @scala.inline
   def IonSegment: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSegment */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSegment with (Pick[
       HTMLAttributes[HTMLIonSegmentElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSegmentElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSegment.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSegment */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSegment with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSegmentElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSegmentElement]]]
   @scala.inline
   def IonSegmentButton: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSegmentButton */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSegmentButton with (Pick[
       HTMLAttributes[HTMLIonSegmentButtonElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSegmentButtonElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSegmentButton.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSegmentButton */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSegmentButton with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSegmentButtonElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSegmentButtonElement]]]
   @scala.inline
   def IonSelect: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelect */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSelect with (Pick[
       HTMLAttributes[HTMLIonSelectElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSelectElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSelect.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelect */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSelect with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSelectElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSelectElement]]]
   @scala.inline
   def IonSelectOption: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelectOption */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSelectOption with (Pick[
       HTMLAttributes[HTMLIonSelectOptionElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSelectOptionElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSelectOption.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelectOption */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSelectOption with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSelectOptionElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSelectOptionElement]]]
   @scala.inline
   def IonSelectPopover: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelectPopover */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSelectPopover with (Pick[
       HTMLAttributes[HTMLIonSelectPopoverElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSelectPopoverElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSelectPopover.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSelectPopover */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSelectPopover with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSelectPopoverElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSelectPopoverElement]]]
   @scala.inline
   def IonSkeletonText: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSkeletonText */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSkeletonText with (Pick[
       HTMLAttributes[HTMLIonSkeletonTextElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSkeletonTextElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSkeletonText.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSkeletonText */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSkeletonText with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSkeletonTextElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSkeletonTextElement]]]
   @scala.inline
   def IonSlide: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSlide */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSlide with (Pick[
       HTMLAttributes[HTMLIonSlideElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSlideElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSlide.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSlide */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSlide with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSlideElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSlideElement]]]
   @scala.inline
   def IonSlides: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSlides */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSlides with (Pick[
       HTMLAttributes[HTMLIonSlidesElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSlidesElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSlides.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSlides */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSlides with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSlidesElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSlidesElement]]]
   @scala.inline
   def IonSpinner: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSpinner */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSpinner with (Pick[
       HTMLAttributes[HTMLIonSpinnerElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSpinnerElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSpinner.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSpinner */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSpinner with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSpinnerElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSpinnerElement]]]
   @scala.inline
   def IonSplitPane: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSplitPane */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSplitPane with (Pick[
       HTMLAttributes[HTMLIonSplitPaneElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonSplitPaneElement]
   ] = typings.atIonicReact.atIonicReactMod.IonSplitPane.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonSplitPane */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonSplitPane with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSplitPaneElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSplitPaneElement]]]
   @scala.inline
   def IonTab: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTab */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTab with (Pick[
       HTMLAttributes[HTMLIonTabElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonTabElement]
   ] = typings.atIonicReact.atIonicReactMod.IonTab.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTab */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTab with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabElement]]]
@@ -892,12 +892,12 @@ object atIonicReactComponents extends atIonicReactProps {
   def IonTabBar: ComponentType[IonTabBarProps] = typings.atIonicReact.atIonicReactMod.IonTabBar.asInstanceOf[typings.react.reactMod.ComponentType[IonTabBarProps]]
   @scala.inline
   def IonTabButton: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTabButton */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTabButton with (Pick[
       HTMLAttributes[HTMLIonTabButtonElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonTabButtonElement]
   ] = typings.atIonicReact.atIonicReactMod.IonTabButton.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTabButton */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTabButton with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabButtonElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabButtonElement]]]
@@ -905,78 +905,78 @@ object atIonicReactComponents extends atIonicReactProps {
   def IonTabs: ComponentType[IonTabsProps] = js.constructorOf[typings.atIonicReact.atIonicReactMod.IonTabs].asInstanceOf[typings.react.reactMod.ComponentType[IonTabsProps]]
   @scala.inline
   def IonText: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonText */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonText with (Pick[
       HTMLAttributes[HTMLIonTextElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonTextElement]
   ] = typings.atIonicReact.atIonicReactMod.IonText.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonText */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonText with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTextElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTextElement]]]
   @scala.inline
   def IonTextarea: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTextarea */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTextarea with (Pick[
       HTMLAttributes[HTMLIonTextareaElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonTextareaElement]
   ] = typings.atIonicReact.atIonicReactMod.IonTextarea.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTextarea */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTextarea with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTextareaElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTextareaElement]]]
   @scala.inline
   def IonThumbnail: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonThumbnail */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonThumbnail with (Pick[
       HTMLAttributes[HTMLIonThumbnailElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonThumbnailElement]
   ] = typings.atIonicReact.atIonicReactMod.IonThumbnail.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonThumbnail */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonThumbnail with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonThumbnailElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonThumbnailElement]]]
   @scala.inline
   def IonTitle: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTitle */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTitle with (Pick[
       HTMLAttributes[HTMLIonTitleElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonTitleElement]
   ] = typings.atIonicReact.atIonicReactMod.IonTitle.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonTitle */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTitle with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTitleElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTitleElement]]]
   @scala.inline
   def IonToggle: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonToggle */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonToggle with (Pick[
       HTMLAttributes[HTMLIonToggleElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonToggleElement]
   ] = typings.atIonicReact.atIonicReactMod.IonToggle.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonToggle */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonToggle with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToggleElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToggleElement]]]
   @scala.inline
   def IonToolbar: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonToolbar */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonToolbar with (Pick[
       HTMLAttributes[HTMLIonToolbarElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonToolbarElement]
   ] = typings.atIonicReact.atIonicReactMod.IonToolbar.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonToolbar */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonToolbar with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToolbarElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToolbarElement]]]
   @scala.inline
   def IonVirtualScroll: ComponentType[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonVirtualScroll */ js.Any) with (Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonVirtualScroll with (Pick[
       HTMLAttributes[HTMLIonVirtualScrollElement], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonVirtualScrollElement]
   ] = typings.atIonicReact.atIonicReactMod.IonVirtualScroll.asInstanceOf[typings.react.reactMod.ComponentType[
-  (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonVirtualScroll */ js.Any) with (typings.std.Pick[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonVirtualScroll with (typings.std.Pick[
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonVirtualScrollElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonVirtualScrollElement]]]

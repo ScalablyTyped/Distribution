@@ -2,7 +2,6 @@ package typings.styledDashComponents.styledDashComponentsMod
 
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
-import typings.react.reactMod.ForwardRefExoticComponent
 import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.WeakValidationMap
@@ -191,17 +190,9 @@ import scala.scalajs.js.annotation._
 trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] extends js.Object {
   @JSName("$$typeof")
   var $$typeof: js.Symbol = js.native
-  var defaultProps: js.UndefOr[
-    Partial[
-      StyledComponentProps[C, ForwardRefExoticComponent[StyledComponentProps[C, T, O, A]], O, A]
-    ]
-  ] = js.native
+  var defaultProps: js.UndefOr[Partial[StyledComponentProps[C, T, O, A]]] = js.native
   var displayName: js.UndefOr[String] = js.native
-  var propTypes: js.UndefOr[
-    WeakValidationMap[
-      StyledComponentProps[C, ForwardRefExoticComponent[StyledComponentProps[C, T, O, A]], O, A]
-    ]
-  ] = js.native
+  var propTypes: js.UndefOr[WeakValidationMap[StyledComponentProps[C, T, O, A]]] = js.native
   // add our own fake call signature to implement the polymorphic 'as' prop
   // NOTE: TS <3.2 will refuse to infer the generic and this component becomes impossible to use in JSX
   // just the presence of the overload is enough to break JSX

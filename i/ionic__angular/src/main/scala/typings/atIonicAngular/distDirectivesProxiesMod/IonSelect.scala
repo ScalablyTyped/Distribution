@@ -10,10 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Components.IonSelect * / any */ @JSImport("@ionic/angular/dist/directives/proxies", "IonSelect")
+@JSImport("@ionic/angular/dist/directives/proxies", "IonSelect")
 @js.native
-class IonSelect protected () extends js.Object {
+class IonSelect protected ()
+  extends typings.atIonicCore.distTypesComponentsMod.Components.IonSelect {
   def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
   var el: HTMLElement = js.native
   var ionBlur: EventEmitter[CustomEvent[_]] = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-broadcast"
-version := "0.6-dt-20190329Z-b77767"
+version := "0.6-dt-20190329Z-22de1f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

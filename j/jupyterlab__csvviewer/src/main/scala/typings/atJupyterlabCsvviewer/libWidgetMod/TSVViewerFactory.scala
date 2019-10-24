@@ -1,13 +1,18 @@
 package typings.atJupyterlabCsvviewer.libWidgetMod
 
-import typings.atJupyterlabDocregistry.libMod.ABCWidgetFactory
-import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
-import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@jupyterlab/csvviewer/lib/widget", "TSVViewerFactory")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ABCWidgetFactory<IDocumentWidget<CSVViewer>> * / any */ @JSImport("@jupyterlab/csvviewer/lib/widget", "TSVViewerFactory")
 @js.native
-class TSVViewerFactory () extends ABCWidgetFactory[IDocumentWidget[CSVViewer, IModel], IModel]
+class TSVViewerFactory () extends js.Object {
+  /**
+    * Create a new widget given a context.
+    */
+  /* protected */ def createNewWidget(
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+  ): js.Any = js.native
+}
 

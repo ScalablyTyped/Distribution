@@ -27,7 +27,7 @@ object IonCard
   extends TopLevel[
       ForwardRefExoticComponent[
         (Pick[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonCard */ _, 
+          typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonCard, 
           disabled | button | color | mode | href | download | rel | target | `type`
         ]) with Anon_Back with (Pick[
           HTMLAttributes[HTMLIonCardElement], 

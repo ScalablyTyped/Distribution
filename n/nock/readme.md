@@ -1,7 +1,7 @@
 
 # Scala.js typings for nock
 
-Typings are for version 11.5.0
+Typings are for version 11.6.0
 
 ## Library description:
 HTTP server mocking and expectations library for Node.js

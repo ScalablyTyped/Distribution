@@ -1,18 +1,15 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__filebrowser-extension"
-version := "1.1.3-1fe111"
+version := "1.1.3-c43c02"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "jupyterlab__application" % "1.1.3-7f852e",
+  "org.scalablytyped" %%% "jupyterlab__application" % "1.1.3-dc2fcb",
   "org.scalablytyped" %%% "jupyterlab__apputils" % "1.1.3-d4b9f4",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.1.0-3c5686",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.1.0-9e98ec",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.1.3-e3b487",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.3.0-d904b1",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.1.3-eeb4b6",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.4.0-2d1a5d",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.1.1-781d39",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-16d154",

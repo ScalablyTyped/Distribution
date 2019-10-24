@@ -37,6 +37,11 @@ trait InitOptions extends js.Object {
     */
   var cache: js.UndefOr[js.Object] = js.undefined
   /**
+    * Language will be lowercased EN --> en while leaving full locales like en-US
+    * @default false
+    */
+  var cleanCode: js.UndefOr[Boolean] = js.undefined
+  /**
     * Compatibility JSON version
     * @default 'v3'
     */
@@ -261,6 +266,7 @@ object InitOptions {
     appendNamespaceToMissingKey: js.UndefOr[Boolean] = js.undefined,
     backend: js.Object = null,
     cache: js.Object = null,
+    cleanCode: js.UndefOr[Boolean] = js.undefined,
     compatibilityJSON: v1 | v2 | v3 = null,
     contextSeparator: String = null,
     debug: js.UndefOr[Boolean] = js.undefined,
@@ -313,6 +319,7 @@ object InitOptions {
     if (!js.isUndefined(appendNamespaceToMissingKey)) __obj.updateDynamic("appendNamespaceToMissingKey")(appendNamespaceToMissingKey)
     if (backend != null) __obj.updateDynamic("backend")(backend)
     if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(cleanCode)) __obj.updateDynamic("cleanCode")(cleanCode)
     if (compatibilityJSON != null) __obj.updateDynamic("compatibilityJSON")(compatibilityJSON.asInstanceOf[js.Any])
     if (contextSeparator != null) __obj.updateDynamic("contextSeparator")(contextSeparator)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)

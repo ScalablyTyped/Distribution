@@ -35,7 +35,7 @@ class QueryBuilder[TRecord /* <: js.Object */, TResult] ()
 object QueryBuilder extends js.Object {
   def extend(
     methodName: String,
-    fn: js.ThisFunction1[/* this */ Knex[js.Object, _], /* repeated */ js.Any, QueryBuilder[js.Object, _]]
+    fn: js.ThisFunction1[/* this */ Knex[_, js.Array[_]], /* repeated */ js.Any, QueryBuilder[_, js.Array[_]]]
   ): Unit = js.native
 }
 

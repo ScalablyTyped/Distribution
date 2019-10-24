@@ -1,7 +1,7 @@
 package typings.gitlab
 
-import typings.gitlab.distServicesMod.GroupId
-import typings.gitlab.distServicesMod.ProjectId
+import typings.gitlab.distSrcCoreServicesMod.GroupId
+import typings.gitlab.distSrcCoreServicesMod.ProjectId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

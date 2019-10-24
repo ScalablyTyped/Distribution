@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object IonRadioGroup
   extends TopLevel[
       ForwardRefExoticComponent[
-        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSX.IonRadioGroup */ js.Any) with (Pick[
+        typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRadioGroup with (Pick[
           HTMLAttributes[HTMLIonRadioGroupElement], 
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
         ]) with IonicReactProps with RefAttributes[HTMLIonRadioGroupElement]

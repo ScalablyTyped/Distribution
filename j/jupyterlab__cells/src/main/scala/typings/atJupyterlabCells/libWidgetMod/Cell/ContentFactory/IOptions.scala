@@ -1,7 +1,5 @@
 package typings.atJupyterlabCells.libWidgetMod.Cell.ContentFactory
 
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
-import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,16 +14,18 @@ trait IOptions extends js.Object {
     * If this is not passed, a default CodeMirror editor factory
     * will be used.
     */
-  var editorFactory: js.UndefOr[Factory] = js.undefined
+  var editorFactory: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
+  ] = js.undefined
 }
 
 object IOptions {
   @scala.inline
   def apply(
-    editorFactory: /* options */ typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions => IEditor = null
+    editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (editorFactory != null) __obj.updateDynamic("editorFactory")(js.Any.fromFunction1(editorFactory))
+    if (editorFactory != null) __obj.updateDynamic("editorFactory")(editorFactory)
     __obj.asInstanceOf[IOptions]
   }
 }
