@@ -306,6 +306,15 @@ object distGenTextsMod extends js.Object {
       def createInCallNanoflowClientActionUnderProgressMessage(container: CallNanoflowClientAction): Text = js.native
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
+        * The new Text will be automatically stored in the 'fallback' property
+        * of the parent pages.ClientTemplate element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  8.3.0 and higher
+        */
+      def createInClientTemplateUnderFallback(container: ClientTemplate): Text = js.native
+      /**
+        * Creates and returns a new Text instance in the SDK and on the server.
         * The new Text will be automatically stored in the 'template' property
         * of the parent pages.ClientTemplate element passed as argument.
         */

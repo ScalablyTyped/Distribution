@@ -107,6 +107,15 @@ object SaveChangesClientAction extends js.Object {
   def createInBottomBarItemUnderAction(container: BottomBarItem): SaveChangesClientAction = js.native
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
+    * The new SaveChangesClientAction will be automatically stored in the 'onClickAction' property
+    * of the parent DivContainer element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.3.0 and higher
+    */
+  def createInDivContainerUnderOnClickAction(container: DivContainer): SaveChangesClientAction = js.native
+  /**
+    * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
     * The new SaveChangesClientAction will be automatically stored in the 'clickAction' property
     * of the parent DynamicImageViewer element passed as argument.
     *

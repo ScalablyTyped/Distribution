@@ -21,7 +21,7 @@ trait Options extends js.Object {
   var chmod: js.UndefOr[Typeofchmod] = js.undefined
   var chmodSync: js.UndefOr[Fn_Mode] = js.undefined
   var disableGlob: js.UndefOr[Boolean] = js.undefined
-  var emfileWait: js.UndefOr[Boolean] = js.undefined
+  var emfileWait: js.UndefOr[Double] = js.undefined
   var glob: js.UndefOr[IOptions | `false`] = js.undefined
   var lstat: js.UndefOr[Typeoflstat] = js.undefined
   var lstatSync: js.UndefOr[js.Function1[/* path */ PathLike, Stats]] = js.undefined
@@ -42,7 +42,7 @@ object Options {
     chmod: Typeofchmod = null,
     chmodSync: Fn_Mode = null,
     disableGlob: js.UndefOr[Boolean] = js.undefined,
-    emfileWait: js.UndefOr[Boolean] = js.undefined,
+    emfileWait: Int | Double = null,
     glob: IOptions | `false` = null,
     lstat: Typeoflstat = null,
     lstatSync: /* path */ PathLike => Stats = null,
@@ -60,7 +60,7 @@ object Options {
     if (chmod != null) __obj.updateDynamic("chmod")(chmod)
     if (chmodSync != null) __obj.updateDynamic("chmodSync")(chmodSync)
     if (!js.isUndefined(disableGlob)) __obj.updateDynamic("disableGlob")(disableGlob)
-    if (!js.isUndefined(emfileWait)) __obj.updateDynamic("emfileWait")(emfileWait)
+    if (emfileWait != null) __obj.updateDynamic("emfileWait")(emfileWait.asInstanceOf[js.Any])
     if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
     if (lstat != null) __obj.updateDynamic("lstat")(lstat)
     if (lstatSync != null) __obj.updateDynamic("lstatSync")(js.Any.fromFunction1(lstatSync))

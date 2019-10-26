@@ -1,13 +1,12 @@
 package typings.react.reactMod
 
-import typings.react.EventTarget
 import typings.react.NativeWheelEvent
+import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WheelEvent[T]
-  extends typings.react.reactMod.MouseEvent[T, NativeWheelEvent] {
+trait WheelEvent[T] extends MouseEvent[T, NativeWheelEvent] {
   var deltaMode: Double
   var deltaX: Double
   var deltaY: Double

@@ -9,12 +9,12 @@ import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypes
 import typings.officeDashUiDashFabricDashReact.libComponentsSpinButtonSpinButtonDotClassNamesMod.ISpinButtonClassNames
 import typings.officeDashUiDashFabricDashReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection
 import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position
-import typings.react.Event
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.InputHTMLAttributes
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement

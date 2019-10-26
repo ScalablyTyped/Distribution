@@ -1,10 +1,10 @@
 package typings.gestalt
 
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

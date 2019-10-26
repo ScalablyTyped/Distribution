@@ -1,6 +1,6 @@
 package typings.atAntDashDesignProDashLayout.esPageHeaderWrapperMod
 
-import typings.atAntDashDesignProDashLayout.Anon_Key
+import typings.antd.esTabsMod.TabPaneProps
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait PageHeaderTabConfig extends js.Object {
   var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
   var tabActiveKey: js.UndefOr[String] = js.undefined
   var tabBarExtraContent: js.UndefOr[ReactNode | Null] = js.undefined
-  var tabList: js.UndefOr[js.Array[Anon_Key]] = js.undefined
+  var tabList: js.UndefOr[js.Array[TabPaneProps]] = js.undefined
 }
 
 object PageHeaderTabConfig {
@@ -19,7 +19,7 @@ object PageHeaderTabConfig {
     onTabChange: /* activeKey */ String => Unit = null,
     tabActiveKey: String = null,
     tabBarExtraContent: ReactNode = null,
-    tabList: js.Array[Anon_Key] = null
+    tabList: js.Array[TabPaneProps] = null
   ): PageHeaderTabConfig = {
     val __obj = js.Dynamic.literal()
     if (onTabChange != null) __obj.updateDynamic("onTabChange")(js.Any.fromFunction1(onTabChange))

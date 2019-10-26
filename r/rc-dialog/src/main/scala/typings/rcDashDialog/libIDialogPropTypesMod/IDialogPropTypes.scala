@@ -2,10 +2,10 @@ package typings.rcDashDialog.libIDialogPropTypesMod
 
 import typings.rcDashDialog.Anon_X
 import typings.rcDashDialog.rcDashDialogNumbers.`false`
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

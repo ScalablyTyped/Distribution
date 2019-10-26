@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-relay", "QueryRenderer")
 @js.native
 class QueryRenderer[TOperation /* <: OperationType */] ()
-  extends Component[Anon_CacheConfig[TOperation], js.Object, js.Any]
+  extends Component[Anon_CacheConfig with QueryRendererProps[TOperation], js.Object, js.Any]
 

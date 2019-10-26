@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "multer-gridfs-storage"
-version := "3.1-dt-20191003Z-1eaf64"
+version := "3.1-dt-20191003Z-103eb0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-6b1423",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-d32bb8",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-5c770f",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-64180e",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-8fd375",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-673836",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-f9f540",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-9a66bf",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190819Z-534eff",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-5bc067",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-853c2a",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191022Z-d886df",
-  "org.scalablytyped" %%% "multer" % "1.3-dt-20190925Z-a90861",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191007Z-c0909c",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191022Z-b5b816",
+  "org.scalablytyped" %%% "multer" % "1.3-dt-20190925Z-a6e3ba",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-827e1a",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-532a00",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

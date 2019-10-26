@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "async-busboy"
-version := "0.7-dt-20181220Z-64eabf"
+version := "0.7-dt-20181220Z-ee7be7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "busboy" % "v0.2.13-dt-20190322Z-47936d",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
+  "org.scalablytyped" %%% "busboy" % "v0.2.13-dt-20190322Z-0c0a0f",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

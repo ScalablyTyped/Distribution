@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mali-compose"
-version := "1.1-dt-20181120Z-4e995b"
+version := "1.1-dt-20181120Z-01f7e4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "grpc" % "1.21.1-22a242",
-  "org.scalablytyped" %%% "mali" % "0.19.0-1c6eaf",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
+  "org.scalablytyped" %%% "grpc" % "1.21.1-336847",
+  "org.scalablytyped" %%% "mali" % "0.19.0-01657a",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
   "org.scalablytyped" %%% "protobufjs" % "6.8.8-b8febd",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

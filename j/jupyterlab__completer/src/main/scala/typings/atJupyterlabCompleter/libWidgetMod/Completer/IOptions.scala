@@ -1,5 +1,6 @@
 package typings.atJupyterlabCompleter.libWidgetMod.Completer
 
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +12,7 @@ trait IOptions extends js.Object {
   /**
     * The semantic parent of the completer widget, its referent editor.
     */
-  var editor: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any) | Null
-  ] = js.undefined
+  var editor: js.UndefOr[IEditor | Null] = js.undefined
   /**
     * The model for the completer widget.
     */
@@ -26,11 +25,7 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(
-    editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any = null,
-    model: IModel = null,
-    renderer: IRenderer = null
-  ): IOptions = {
+  def apply(editor: IEditor = null, model: IModel = null, renderer: IRenderer = null): IOptions = {
     val __obj = js.Dynamic.literal()
     if (editor != null) __obj.updateDynamic("editor")(editor)
     if (model != null) __obj.updateDynamic("model")(model)

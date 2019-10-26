@@ -55,7 +55,6 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.atMaterialDashUiCore.buttonBaseTouchRippleMod.TouchRippleProps
 import typings.react.Anon_Html
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
@@ -90,6 +89,7 @@ import typings.react.reactMod.UIEvent
 import typings.react.reactMod.UIEventHandler
 import typings.react.reactMod.WheelEvent
 import typings.react.reactMod.WheelEventHandler
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js

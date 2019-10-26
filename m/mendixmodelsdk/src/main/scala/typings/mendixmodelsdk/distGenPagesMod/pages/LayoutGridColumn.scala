@@ -34,9 +34,21 @@ class LayoutGridColumn protected () extends Element {
   @JSName("model")
   var model_LayoutGridColumn: IModel = js.native
   /**
+    * In version 8.3.0: introduced
+    */
+  var phoneWeight: Double = js.native
+  /**
     * In version 8.0.0: deleted
     */
   var style: String = js.native
+  /**
+    * In version 8.3.0: introduced
+    */
+  var tabletWeight: Double = js.native
+  /**
+    * In version 8.3.0: introduced
+    */
+  var verticalAlignment: LayoutGridAlignment = js.native
   var weight: Double = js.native
   /**
     * In version 7.15.0: deleted

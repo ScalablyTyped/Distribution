@@ -29,6 +29,10 @@ class DivContainer protected () extends ConditionallyVisibleWidget {
     container: AbstractElement
   ) = this()
   /**
+    * In version 8.3.0: introduced
+    */
+  var onClickAction: ClientAction = js.native
+  /**
     * In version 7.23.0: introduced
     */
   var renderMode: ContainerRenderMode = js.native

@@ -1,11 +1,11 @@
 package typings.grommet.componentsFormMod
 
 import typings.grommet.Anon_Invalid
-import typings.react.Element
-import typings.react.Event
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.FormEvent
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

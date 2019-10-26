@@ -31,7 +31,7 @@ trait QueueOptions extends js.Object {
   /**
     * Options passed directly to the `ioredis` constructor
     */
-  var redis: js.UndefOr[RedisOptions] = js.undefined
+  var redis: js.UndefOr[RedisOptions | String] = js.undefined
   var settings: js.UndefOr[AdvancedSettings] = js.undefined
 }
 
@@ -42,7 +42,7 @@ object QueueOptions {
     defaultJobOptions: JobOptions = null,
     limiter: RateLimiter = null,
     prefix: String = null,
-    redis: RedisOptions = null,
+    redis: RedisOptions | String = null,
     settings: AdvancedSettings = null
   ): QueueOptions = {
     val __obj = js.Dynamic.literal()
@@ -50,7 +50,7 @@ object QueueOptions {
     if (defaultJobOptions != null) __obj.updateDynamic("defaultJobOptions")(defaultJobOptions)
     if (limiter != null) __obj.updateDynamic("limiter")(limiter)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (redis != null) __obj.updateDynamic("redis")(redis)
+    if (redis != null) __obj.updateDynamic("redis")(redis.asInstanceOf[js.Any])
     if (settings != null) __obj.updateDynamic("settings")(settings)
     __obj.asInstanceOf[QueueOptions]
   }

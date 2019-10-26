@@ -35,14 +35,6 @@ trait YouTubePlayerOptions extends js.Object {
   /** This parameter indicates the height of the player. */
   var height: js.UndefOr[Double] = js.undefined
   /**
-    * This parameter indicates whether the player should display information
-    * like the video title and uploader before the video starts playing. The
-    * default value is true.
-    * @deprecated Ignored after September 25, 2018
-    * @see https://developers.google.com/youtube/player_parameters#release_notes_08_23_2018
-    */
-  var info: js.UndefOr[Boolean] = js.undefined
-  /**
     * This parameter indicates whether the player will respond to keyboard
     * shortcuts. The default value is true.
     */
@@ -82,7 +74,6 @@ object YouTubePlayerOptions {
     controls: js.UndefOr[Boolean] = js.undefined,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
-    info: js.UndefOr[Boolean] = js.undefined,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     modestBranding: js.UndefOr[Boolean] = js.undefined,
     playsInline: js.UndefOr[Boolean] = js.undefined,
@@ -97,7 +88,6 @@ object YouTubePlayerOptions {
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (!js.isUndefined(modestBranding)) __obj.updateDynamic("modestBranding")(modestBranding)
     if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline)

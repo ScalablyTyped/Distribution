@@ -22,7 +22,7 @@ object utilsTreeDashDataDashUtilsMod extends js.Object {
   def getDescendantCount(data: TreeNode with Anon_IgnoreCollapsed): Double = js.native
   def getFlatDataFromTree(data: FullTree with Anon_GetNodeKeyIgnoreCollapsedBoolean): js.Array[FlatDataItem] = js.native
   def getNodeAtPath(data: FullTree with TreePath with Anon_GetNodeKeyIgnoreCollapsedBoolean): (TreeNode with TreeIndex) | Null = js.native
-  def getTreeFromFlatData(data: Anon_FlatData): js.Array[TreeItem] = js.native
+  def getTreeFromFlatData[T, K /* <: String */, P /* <: String */, I /* <: String | Double */](data: Anon_FlatData[T, I, K, P]): js.Array[TreeItem] = js.native
   def getVisibleNodeCount(data: FullTree): Double = js.native
   def getVisibleNodeInfoAtIndex(data: FullTree with Anon_GetNodeKey): (TreeNode with TreePath with Anon_LowerSiblingsCounts) | Null = js.native
   def insertNode(data: FullTree with Anon_Depth): FullTree with TreeIndex with TreePath with Anon_ParentNode = js.native
@@ -32,7 +32,6 @@ object utilsTreeDashDataDashUtilsMod extends js.Object {
   def removeNodeAtPath(data: FullTree with TreePath with Anon_GetNodeKeyIgnoreCollapsedBoolean): js.Array[TreeItem] = js.native
   def toggleExpandedForAll(data: FullTree with Anon_Expanded): js.Array[TreeItem] = js.native
   def walk(data: WalkAndMapFunctionParameters): Unit = js.native
-  type FlattenedData = js.Array[TreeNode with TreePath with Anon_LowerSiblingsCounts]
   type GetNodeKeyFunction = js.Function1[/* data */ TreeIndex with TreeNode, String | Double]
   type WalkAndMapFunctionParameters = FullTree with Anon_Callback
 }

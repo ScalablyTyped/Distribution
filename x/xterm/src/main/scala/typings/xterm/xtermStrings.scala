@@ -39,6 +39,9 @@ object xtermStrings {
   sealed trait allowTransparency extends js.Object
   
   @js.native
+  sealed trait alt extends js.Object
+  
+  @js.native
   sealed trait bar extends js.Object
   
   @js.native
@@ -70,6 +73,9 @@ object xtermStrings {
   
   @js.native
   sealed trait convertEol extends js.Object
+  
+  @js.native
+  sealed trait ctrl extends js.Object
   
   @js.native
   sealed trait cursorBlink extends js.Object
@@ -147,6 +153,9 @@ object xtermStrings {
   sealed trait scrollback extends js.Object
   
   @js.native
+  sealed trait shift extends js.Object
+  
+  @js.native
   sealed trait sound extends js.Object
   
   @js.native
@@ -200,6 +209,8 @@ object xtermStrings {
   @scala.inline
   def allowTransparency: allowTransparency = "allowTransparency".asInstanceOf[allowTransparency]
   @scala.inline
+  def alt: alt = "alt".asInstanceOf[alt]
+  @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
   @scala.inline
   def bellSound: bellSound = "bellSound".asInstanceOf[bellSound]
@@ -221,6 +232,8 @@ object xtermStrings {
   def cols: cols = "cols".asInstanceOf[cols]
   @scala.inline
   def convertEol: convertEol = "convertEol".asInstanceOf[convertEol]
+  @scala.inline
+  def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
   @scala.inline
   def cursorBlink: cursorBlink = "cursorBlink".asInstanceOf[cursorBlink]
   @scala.inline
@@ -271,6 +284,8 @@ object xtermStrings {
   def screenKeys: screenKeys = "screenKeys".asInstanceOf[screenKeys]
   @scala.inline
   def scrollback: scrollback = "scrollback".asInstanceOf[scrollback]
+  @scala.inline
+  def shift: shift = "shift".asInstanceOf[shift]
   @scala.inline
   def sound: sound = "sound".asInstanceOf[sound]
   @scala.inline

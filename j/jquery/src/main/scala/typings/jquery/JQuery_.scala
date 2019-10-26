@@ -50,6 +50,7 @@ import typings.std.Document
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.HTMLElement
+import typings.std.Iterable
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`

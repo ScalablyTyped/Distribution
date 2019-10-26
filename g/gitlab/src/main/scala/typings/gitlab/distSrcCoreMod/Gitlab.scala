@@ -13,7 +13,7 @@ object Gitlab
   extends TopLevel[
       Bundle[
         TypeofAPIServices, 
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 89 */ js.Any
       ]
     ]
 

@@ -18,10 +18,10 @@ import typings.atNivoSankey.atNivoSankeyStrings.justify
 import typings.atNivoSankey.atNivoSankeyStrings.outside
 import typings.atNivoSankey.atNivoSankeyStrings.start
 import typings.atNivoSankey.atNivoSankeyStrings.vertical
-import typings.react.Element
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

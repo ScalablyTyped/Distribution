@@ -13,7 +13,6 @@ package object miniprogramDashWxs {
     * Obtain the parameters of a constructor function type in a tuple
     */
   type ConstructorParameters[T /* <: Instantiable1[/* args */ js.Any, js.Any] */] = js.Any
-  type EvalError = Error
   /**
     * Exclude from T those types that are assignable to U
     */
@@ -77,7 +76,6 @@ package object miniprogramDashWxs {
   type PropertyDecorator = js.Function2[/* target */ Object, /* propertyKey */ java.lang.String | js.Symbol, Unit]
   type PropertyDescriptorMap = StringDictionary[PropertyDescriptor]
   type PropertyKey = java.lang.String | Double | js.Symbol
-  type RangeError = Error
   /**
     * Make all properties in T readonly
     */
@@ -88,7 +86,6 @@ package object miniprogramDashWxs {
     * Construct a type with a set of properties K of type T
     */
   type Record[K /* <: java.lang.String */, T] = StringDictionary[K]
-  type ReferenceError = Error
   /**
     * Make all properties in T required
     */
@@ -99,12 +96,9 @@ package object miniprogramDashWxs {
     * Obtain the return type of a function type
     */
   type ReturnType[T /* <: js.Function1[/* args */ js.Any, _] */] = js.Any
-  type SyntaxError = Error
   // declare var Function: FunctionConstructor;
   /**
     * Extracts the type of the 'this' parameter of a function type, or 'unknown' if the function type has no 'this' parameter.
     */
   type ThisParameterType[T] = js.Any
-  type TypeError = Error
-  type URIError = Error
 }

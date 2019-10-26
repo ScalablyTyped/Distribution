@@ -1,12 +1,12 @@
 package typings.materialDashUi.__MaterialUI
 
 import typings.materialDashUi.__MaterialUI.Menus.DropDownMenuProps
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

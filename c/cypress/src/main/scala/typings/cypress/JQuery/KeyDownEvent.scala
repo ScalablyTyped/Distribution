@@ -1,8 +1,8 @@
 package typings.cypress.JQuery
 
-import typings.cypress.Window
 import typings.cypress._KeyboardEvent
 import typings.cypress.cypressStrings.keydown
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

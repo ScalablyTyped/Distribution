@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jui"
-version := "2.0-dt-20180214Z-8a005d"
+version := "2.0-dt-20180214Z-5ce96d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-4b5800",
-  "org.scalablytyped" %%% "jui-core" % "2.0-dt-20180822Z-85107a",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-cc3e42",
+  "org.scalablytyped" %%% "jui-core" % "2.0-dt-20180822Z-bb2ee6",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-8ec6f6",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

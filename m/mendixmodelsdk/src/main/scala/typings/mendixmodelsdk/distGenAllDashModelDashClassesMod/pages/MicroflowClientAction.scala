@@ -105,6 +105,15 @@ object MicroflowClientAction extends js.Object {
   def createInDataViewActionButtonUnderAction(container: typings.mendixmodelsdk.distGenPagesMod.pages.DataViewActionButton): typings.mendixmodelsdk.distGenPagesMod.pages.MicroflowClientAction = js.native
   /**
     * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
+    * The new MicroflowClientAction will be automatically stored in the 'onClickAction' property
+    * of the parent DivContainer element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.3.0 and higher
+    */
+  def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.distGenPagesMod.pages.DivContainer): typings.mendixmodelsdk.distGenPagesMod.pages.MicroflowClientAction = js.native
+  /**
+    * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
     * The new MicroflowClientAction will be automatically stored in the 'clickAction' property
     * of the parent DynamicImageViewer element passed as argument.
     *

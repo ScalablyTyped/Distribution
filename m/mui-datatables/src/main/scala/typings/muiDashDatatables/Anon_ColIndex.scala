@@ -1,8 +1,8 @@
 package typings.muiDashDatatables
 
-import typings.react.Element
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

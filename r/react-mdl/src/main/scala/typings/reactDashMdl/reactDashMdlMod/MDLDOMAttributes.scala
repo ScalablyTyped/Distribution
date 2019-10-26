@@ -1,6 +1,5 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
@@ -26,6 +25,7 @@ import typings.react.reactMod.UIEventHandler
 import typings.react.reactMod.WheelEvent
 import typings.react.reactMod.WheelEventHandler
 import typings.reactDashMdl.Anon_Html
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

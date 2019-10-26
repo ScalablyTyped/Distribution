@@ -1,5 +1,6 @@
 package typings.cheerio
 
+import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

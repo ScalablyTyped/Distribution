@@ -3,12 +3,8 @@ package typings.node.NodeJS
 import typings.node.Console
 import typings.node.Fn_Radix
 import typings.node.Fn_UriComponent
-import typings.node.MapConstructor
-import typings.node.SetConstructor
 import typings.node.TypeofClassBuffer
 import typings.node.TypeofIntl
-import typings.node.WeakMapConstructor
-import typings.node.WeakSetConstructor
 import typings.std.ArrayBufferConstructor
 import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
@@ -21,11 +17,13 @@ import typings.std.FunctionConstructor
 import typings.std.Int16ArrayConstructor
 import typings.std.Int32ArrayConstructor
 import typings.std.Int8ArrayConstructor
+import typings.std.MapConstructor
 import typings.std.NumberConstructor
 import typings.std.ObjectConstructor
 import typings.std.RangeErrorConstructor
 import typings.std.ReferenceErrorConstructor
 import typings.std.RegExpConstructor
+import typings.std.SetConstructor
 import typings.std.StringConstructor
 import typings.std.SyntaxErrorConstructor
 import typings.std.TypeErrorConstructor
@@ -33,6 +31,8 @@ import typings.std.URIErrorConstructor
 import typings.std.Uint16ArrayConstructor
 import typings.std.Uint32ArrayConstructor
 import typings.std.Uint8ArrayConstructor
+import typings.std.WeakMapConstructor
+import typings.std.WeakSetConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

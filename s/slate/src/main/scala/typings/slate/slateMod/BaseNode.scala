@@ -63,6 +63,8 @@ trait BaseNode extends js.Object {
   def descendants(options: IterableOptions): Iterable[js.Tuple2[Node, List[Double]]] = js.native
   def filterDescendants(): List[Node] = js.native
   def filterDescendants(predicate: js.Function2[/* node */ Node, /* path */ List[Double], Boolean]): List[Node] = js.native
+  def findDescendant(): Node | Null = js.native
+  def findDescendant(predicate: js.Function2[/* node */ Node, /* path */ List[Double], Boolean]): Node | Null = js.native
   def findDescendantAndPath(iterator: js.Function3[/* node */ Node, /* path */ List[Double], /* nodes */ List[Node], Boolean]): (js.Tuple2[Node, List[Double]]) | Null = js.native
   def findDescendantAndPath(
     iterator: js.Function3[/* node */ Node, /* path */ List[Double], /* nodes */ List[Node], Boolean],
@@ -73,8 +75,6 @@ trait BaseNode extends js.Object {
     path: List[Double],
     findLast: Boolean
   ): (js.Tuple2[Node, List[Double]]) | Null = js.native
-  def findDescendants(): Node | Null = js.native
-  def findDescendants(predicate: js.Function2[/* node */ Node, /* path */ List[Double], Boolean]): Node | Null = js.native
   def findFirstDescendantAndPath(
     iterator: js.Function3[/* node */ Node, /* path */ List[Double], /* nodes */ List[Node], Boolean],
     pathToThisNode: List[Double]

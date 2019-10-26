@@ -1,0 +1,22 @@
+package typings.atTensorflowTfjsDashCore.distKernelUnderscoreRegistryMod
+
+import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TensorInfo extends js.Object {
+  var dataId: DataId
+  var dtype: DataType
+  var shape: js.Array[Double]
+}
+
+object TensorInfo {
+  @scala.inline
+  def apply(dataId: DataId, dtype: DataType, shape: js.Array[Double]): TensorInfo = {
+    val __obj = js.Dynamic.literal(dataId = dataId, dtype = dtype, shape = shape)
+  
+    __obj.asInstanceOf[TensorInfo]
+  }
+}
+

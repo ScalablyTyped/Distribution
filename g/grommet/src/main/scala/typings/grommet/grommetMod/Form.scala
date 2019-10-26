@@ -2,12 +2,12 @@ package typings.grommet.grommetMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsFormMod.FormProps
-import typings.react.HTMLFormElement
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FormHTMLAttributes
+import typings.std.HTMLFormElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

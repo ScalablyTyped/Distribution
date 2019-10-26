@@ -7,5 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLVertexArrayObject")
 @js.native
-object WebGLVertexArrayObject extends Instantiable0[WebGLVertexArrayObject]
+class WebGLVertexArrayObject ()
+  extends typings.std.WebGLVertexArrayObject
+
+@JSGlobal("WebGLVertexArrayObject")
+@js.native
+object WebGLVertexArrayObject
+  extends Instantiable0[typings.std.WebGLVertexArrayObject]
 

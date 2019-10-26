@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ink-text-input"
-version := "2.0-dt-20190215Z-1c8e75"
+version := "2.0-dt-20190215Z-22a46a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ink" % "0.5-dt-20190826Z-348c92",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
+  "org.scalablytyped" %%% "ink" % "0.5-dt-20190826Z-bb70b8",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

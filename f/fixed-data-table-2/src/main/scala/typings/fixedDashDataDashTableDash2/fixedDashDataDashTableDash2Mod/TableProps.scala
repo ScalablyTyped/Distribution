@@ -2,11 +2,11 @@ package typings.fixedDashDataDashTableDash2.fixedDashDataDashTableDash2Mod
 
 import typings.fixedDashDataDashTableDash2.fixedDashDataDashTableDash2Strings.auto
 import typings.fixedDashDataDashTableDash2.fixedDashDataDashTableDash2Strings.hidden
-import typings.react.Event
 import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

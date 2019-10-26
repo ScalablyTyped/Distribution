@@ -7,22 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// should be R extends void|Promise<void> but getting dtslint error
 @js.native
-trait Matchers[R] extends js.Object {
-  /**
-    * If you know how to test something, `.not` lets you test its opposite.
-    */
-  var not: Matchers[R] = js.native
-  /**
-    * Unwraps the reason of a rejected promise so any other matcher can be chained.
-    * If the promise is fulfilled the assertion fails.
-    */
-  var rejects: Matchers[js.Promise[R]] = js.native
-  /**
-    * Use resolves to unwrap the value of a fulfilled promise so any other
-    * matcher can be chained. If the promise is rejected the assertion fails.
-    */
-  var resolves: Matchers[js.Promise[R]] = js.native
+trait Matchers[R, T] extends js.Object {
   /**
     * Ensures the last call to a mock function was provided specific args.
     */
@@ -213,12 +200,12 @@ trait Matchers[R] extends js.Object {
     * Instead of writing the snapshot value to a .snap file, it will be written into the source code automatically.
     * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.
     */
-  def toMatchInlineSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof R ]: any}
-    */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[T]): R = js.native
-  def toMatchInlineSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof R ]: any}
-    */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[T], snapshot: String): R = js.native
+  def toMatchInlineSnapshot[U /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: any}
+    */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[U]): R = js.native
+  def toMatchInlineSnapshot[U /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: any}
+    */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[U], snapshot: String): R = js.native
   /**
     * Used to check that a JavaScript object matches a subset of the properties of an object
     *
@@ -250,12 +237,12 @@ trait Matchers[R] extends js.Object {
     * This ensures that a value matches the most recent snapshot with property matchers.
     * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.
     */
-  def toMatchSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof R ]: any}
-    */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[T]): R = js.native
-  def toMatchSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof R ]: any}
-    */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[T], snapshotName: String): R = js.native
+  def toMatchSnapshot[U /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: any}
+    */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[U]): R = js.native
+  def toMatchSnapshot[U /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: any}
+    */ typings.jest.jestStrings.Matchers with js.Any */](propertyMatchers: Partial[U], snapshotName: String): R = js.native
   /**
     * Ensure that a mock function has returned (as opposed to thrown) at least once.
     */

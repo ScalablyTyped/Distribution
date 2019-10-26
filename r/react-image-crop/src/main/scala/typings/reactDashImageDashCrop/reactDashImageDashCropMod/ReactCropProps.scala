@@ -1,11 +1,11 @@
 package typings.reactDashImageDashCrop.reactDashImageDashCropMod
 
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashImageDashCrop.reactDashImageDashCropStrings.`use-credentials`
 import typings.reactDashImageDashCrop.reactDashImageDashCropStrings.anonymous
+import typings.std.Event
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

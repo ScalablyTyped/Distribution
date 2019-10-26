@@ -22,6 +22,10 @@ trait IFacepileProps extends ClassAttributes[FacepileBase] {
   /** ARIA label for persona list */
   var ariaDescription: js.UndefOr[String] = js.undefined
   /**
+    * Defines the aria label that the screen readers use when focus goes on a list of personas.
+    */
+  var ariaLabel: js.UndefOr[String] = js.undefined
+  /**
     * Deprecated at v0.70, use `overflowButtonProps` instead.
     * @deprecated Use `overflowButtonProps` instead.
     */
@@ -76,6 +80,7 @@ object IFacepileProps {
     personas: js.Array[IFacepilePersona],
     addButtonProps: IButtonProps = null,
     ariaDescription: String = null,
+    ariaLabel: String = null,
     chevronButtonProps: IButtonProps = null,
     className: String = null,
     componentRef: IRefObject[IFacepile] = null,
@@ -96,6 +101,7 @@ object IFacepileProps {
     val __obj = js.Dynamic.literal(personas = personas)
     if (addButtonProps != null) __obj.updateDynamic("addButtonProps")(addButtonProps)
     if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
     if (chevronButtonProps != null) __obj.updateDynamic("chevronButtonProps")(chevronButtonProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])

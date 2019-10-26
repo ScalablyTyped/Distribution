@@ -1,6 +1,7 @@
 package typings.reactDashNative
 
 import typings.std.ArrayBuffer
+import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

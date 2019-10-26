@@ -8,7 +8,7 @@ trait KernelProfile extends js.Object {
   var bytesAdded: Double
   var inputShapes: js.Array[js.Array[Double]]
   var name: String
-  var outputShape: js.Array[js.Array[Double] | Double]
+  var outputShapes: js.Array[js.Array[Double]]
   var tensorsAdded: Double
   var totalBytesSnapshot: Double
   var totalTensorsSnapshot: Double
@@ -20,12 +20,12 @@ object KernelProfile {
     bytesAdded: Double,
     inputShapes: js.Array[js.Array[Double]],
     name: String,
-    outputShape: js.Array[js.Array[Double] | Double],
+    outputShapes: js.Array[js.Array[Double]],
     tensorsAdded: Double,
     totalBytesSnapshot: Double,
     totalTensorsSnapshot: Double
   ): KernelProfile = {
-    val __obj = js.Dynamic.literal(bytesAdded = bytesAdded, inputShapes = inputShapes, name = name, outputShape = outputShape, tensorsAdded = tensorsAdded, totalBytesSnapshot = totalBytesSnapshot, totalTensorsSnapshot = totalTensorsSnapshot)
+    val __obj = js.Dynamic.literal(bytesAdded = bytesAdded, inputShapes = inputShapes, name = name, outputShapes = outputShapes, tensorsAdded = tensorsAdded, totalBytesSnapshot = totalBytesSnapshot, totalTensorsSnapshot = totalTensorsSnapshot)
   
     __obj.asInstanceOf[KernelProfile]
   }

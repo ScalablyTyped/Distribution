@@ -1,6 +1,7 @@
 package typings.atJupyterlabFilebrowser.libModelMod.FilterFileBrowserModel
 
 import typings.atJupyterlabCoreutils.libTokensMod.IStateDB
+import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
 import typings.atJupyterlabServices.libContentsMod.Contents.IModel
 import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IIconRegistry
 import typings.atPhosphorCoreutils.libJsonMod.ReadonlyJSONValue
@@ -23,7 +24,7 @@ object IOptions {
   @scala.inline
   def apply(
     iconRegistry: IIconRegistry,
-    manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any,
+    manager: IDocumentManager,
     driveName: String = null,
     filter: /* value */ IModel => Boolean = null,
     refreshInterval: Int | Double = null,

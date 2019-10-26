@@ -1,6 +1,8 @@
 package typings.atJupyterlabCells.libInputareaMod.InputArea
 
 import typings.atJupyterlabCells.libInputareaMod.IInputPrompt
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +20,7 @@ trait IContentFactory extends js.Object {
     * This is a separate readonly attribute rather than a factory method as we need
     * to pass it around.
     */
-  val editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
+  val editorFactory: Factory
   /**
     * Create an input prompt.
     */
@@ -29,9 +31,9 @@ object IContentFactory {
   @scala.inline
   def apply(
     createInputPrompt: () => IInputPrompt,
-    editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
+    editorFactory: /* options */ typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions => IEditor
   ): IContentFactory = {
-    val __obj = js.Dynamic.literal(createInputPrompt = js.Any.fromFunction0(createInputPrompt), editorFactory = editorFactory)
+    val __obj = js.Dynamic.literal(createInputPrompt = js.Any.fromFunction0(createInputPrompt), editorFactory = js.Any.fromFunction1(editorFactory))
   
     __obj.asInstanceOf[IContentFactory]
   }

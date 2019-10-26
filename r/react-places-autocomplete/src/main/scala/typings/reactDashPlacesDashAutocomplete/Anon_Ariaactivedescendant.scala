@@ -1,6 +1,5 @@
 package typings.reactDashPlacesDashAutocomplete
 
-import typings.react.Element
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.KeyboardEvent
@@ -9,6 +8,7 @@ import typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteSt
 import typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteStrings.list
 import typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteStrings.off
 import typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteStrings.text
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

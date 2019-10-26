@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object atEmberDebugMod extends js.Object {
   def assert(desc: String): Unit | scala.Nothing = js.native
-  def assert(desc: String, test: Boolean): Unit | scala.Nothing = js.native
+  def assert(desc: String, test: js.Any): Unit | scala.Nothing = js.native
   def debug(message: String): Unit = js.native
   def deprecate(message: String, test: Boolean, options: Anon_IdUntil): Unit = js.native
   def inspect(obj: js.Any): String = js.native

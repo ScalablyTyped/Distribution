@@ -5,22 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CardDetails extends js.Object {
-   // Localized card type.
+  /**  Card number. */
   var cardNumber: String
+  /**  Localized card type. */
   var cardType: String
-   // - Was the card number scanned (as opposed to entered manually)?
+  /**  Card holder name. */
   var cardholderName: String
-   // Expiry year (may be 0 if expiry information was not requested).
+  /**  Security code. */
   var cvv: String
-   // Card number with all but the last four digits obfuscated.
+  /**  Expiry month with january as 1 (may be 0 if expiry information was not requested). */
   var expiryMonth: Double
-   // Expiry month with january as 1 (may be 0 if expiry information was not requested).
+  /**  Expiry year (may be 0 if expiry information was not requested). */
   var expiryYear: Double
-   // Security code.
+  /**  Postal code. Format is country dependent. */
   var postalCode: String
-   // Card number.
+  /**  Card number with all but the last four digits obfuscated. */
   var redactedCardNumber: String
-   // Postal code. Format is country dependent.
+  /**  - Was the card number scanned (as opposed to entered manually)? */
   var scanned: js.UndefOr[Boolean] = js.undefined
 }
 

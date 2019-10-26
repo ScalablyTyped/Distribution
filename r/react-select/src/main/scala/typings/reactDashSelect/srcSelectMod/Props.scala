@@ -1,6 +1,5 @@
 package typings.reactDashSelect.srcSelectMod
 
-import typings.react.Event
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.ReactNode
@@ -22,6 +21,7 @@ import typings.reactDashSelect.srcTypesMod.MenuPosition
 import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import typings.reactDashSelect.srcTypesMod.OptionsType
 import typings.reactDashSelect.srcTypesMod.ValueType
+import typings.std.Event
 import typings.std.EventListener
 import typings.std.HTMLElement
 import scala.scalajs.js

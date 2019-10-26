@@ -1,6 +1,7 @@
 package typings.atJupyterlabCells.atJupyterlabCellsMod
 
 import typings.atJupyterlabCells.libInputareaMod.InputArea.IOptions
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +40,7 @@ object InputArea extends js.Object {
   /**
     * The default editor factory singleton based on CodeMirror.
     */
-  val defaultEditorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any = js.native
+  val defaultEditorFactory: Factory = js.native
   /**
     * A namespace for the input area content factory.
     */

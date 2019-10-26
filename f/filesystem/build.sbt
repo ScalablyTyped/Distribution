@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "filesystem"
-version := "0.0-unknown-dt-20190322Z-0e06e5"
+version := "0.0-unknown-dt-20190322Z-c11499"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

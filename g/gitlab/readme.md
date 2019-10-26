@@ -1,7 +1,7 @@
 
 # Scala.js typings for gitlab
 
-Typings are for version 11.3.2
+Typings are for version 11.4.0
 
 ## Library description:
 Full NodeJS implementation of the GitLab API. Supports Promises, Async/Await.

@@ -6,20 +6,15 @@ import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NCW
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NHWC
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NWC
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.avg
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.bool
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.ceil
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.complex64
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.euclidean
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.float32
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.floor
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.fro
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.int32
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.max
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.round
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.string
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid
-import typings.atTensorflowTfjsDashCore.distTypesMod.BackendValues
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R2
@@ -39,27 +34,11 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core/dist/tensor", "Tensor")
 @js.native
 class Tensor[R /* <: Rank */] protected () extends js.Object {
-  protected def this(
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    dtype: DataType
-  ) = this()
-  protected def this(
+  def this(
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: DataType,
-    values: BackendValues
-  ) = this()
-  protected def this(
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    dtype: DataType,
-    values: BackendValues,
-    dataId: DataId
-  ) = this()
-  protected def this(
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    dtype: DataType,
-    values: BackendValues,
     dataId: DataId,
-    backend: Backend
+    id: Double
   ) = this()
   /**
     * Id of the bucket holding the data for this tensor. Multiple arrays can
@@ -238,7 +217,9 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
     offset: Tensor[R] | Tensor1D | TensorLike
   ): Tensor[R] = js.native
   def batchToSpaceND[T /* <: Tensor[Rank] */](`this`: T, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
-  /** Returns a promise of `tf.TensorBuffer` that holds the underlying data. */
+  /**
+    * Returns a promise of `tf.TensorBuffer` that holds the underlying data.
+    */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
   def buffer(): js.Promise[TensorBuffer[R, float32]] = js.native
   /** Returns a `tf.TensorBuffer` that holds the underlying data. */
@@ -338,9 +319,9 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
     *
     * @param axis The axis along which to sum. Optional. Defaults to 0.
     * @param exclusive Whether to perform exclusive cumulative sum. Defaults to
-    *    false. If set to true then the sum of each tensor entry does not include
-    *    its own value, but only the values previous to it along the specified
-    *    axis.
+    *    false. If set to true then the sum of each tensor entry does not
+    * include its own value, but only the values previous to it along the
+    * specified axis.
     * @param reverse Whether to sum in the opposite direction. Defaults to
     *    false.
     */
@@ -350,15 +331,15 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
   def cumsum[T /* <: Tensor[Rank] */](axis: Double, exclusive: Boolean): T = js.native
   def cumsum[T /* <: Tensor[Rank] */](axis: Double, exclusive: Boolean, reverse: Boolean): T = js.native
   /**
-    * Asynchronously downloads the values from the `tf.Tensor`. Returns a promise
-    * of `TypedArray` that resolves when the computation has finished.
+    * Asynchronously downloads the values from the `tf.Tensor`. Returns a
+    * promise of `TypedArray` that resolves when the computation has finished.
     */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
   def data(): js.Promise[Float32Array] = js.native
   def dataSync(): js.Array[String] = js.native
   /**
-    * Synchronously downloads the values from the `tf.Tensor`. This blocks the UI
-    * thread until the values are ready, which can cause performance issues.
+    * Synchronously downloads the values from the `tf.Tensor`. This blocks the
+    * UI thread until the values are ready, which can cause performance issues.
     */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
   @JSName("dataSync")
@@ -424,7 +405,7 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
     * into the tensor's shape. See `tf.expandDims` for details.
     *
     * @param axis The dimension index at which to insert shape of 1. Defaults to
-    *    0 (the first dimension).
+    *     0 (the first dimension).
     */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
   def expandDims[R2 /* <: Rank */](): Tensor[R2] = js.native
@@ -794,105 +775,5 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
   def where(condition: TensorLike, x: Tensor[Rank]): Tensor[Rank] = js.native
   def where(condition: TensorLike, x: TensorLike): Tensor[Rank] = js.native
   def zerosLike[T /* <: Tensor[Rank] */](`this`: T): T = js.native
-}
-
-/* static members */
-@JSImport("@tensorflow/tfjs-core/dist/tensor", "Tensor")
-@js.native
-object Tensor extends js.Object {
-  @JSName("make")
-  def make_bool[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[bool]
-  ): T = js.native
-  @JSName("make")
-  def make_bool[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[bool],
-    dtype: bool
-  ): T = js.native
-  @JSName("make")
-  def make_bool[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[bool],
-    dtype: bool,
-    backend: Backend
-  ): T = js.native
-  @JSName("make")
-  def make_complex64[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[complex64]
-  ): T = js.native
-  @JSName("make")
-  def make_complex64[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[complex64],
-    dtype: complex64
-  ): T = js.native
-  @JSName("make")
-  def make_complex64[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[complex64],
-    dtype: complex64,
-    backend: Backend
-  ): T = js.native
-  /**
-    * Makes a new tensor with the provided shape and values. Values should be in
-    * a flat array.
-    */
-  @JSName("make")
-  def make_float32[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[float32]
-  ): T = js.native
-  @JSName("make")
-  def make_float32[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[float32],
-    dtype: float32
-  ): T = js.native
-  @JSName("make")
-  def make_float32[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[float32],
-    dtype: float32,
-    backend: Backend
-  ): T = js.native
-  @JSName("make")
-  def make_int32[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[int32]
-  ): T = js.native
-  @JSName("make")
-  def make_int32[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[int32],
-    dtype: int32
-  ): T = js.native
-  @JSName("make")
-  def make_int32[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[int32],
-    dtype: int32,
-    backend: Backend
-  ): T = js.native
-  @JSName("make")
-  def make_string[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[string]
-  ): T = js.native
-  @JSName("make")
-  def make_string[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[string],
-    dtype: string
-  ): T = js.native
-  @JSName("make")
-  def make_string[T /* <: Tensor[R] */, R /* <: Rank */](
-    shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    data: TensorData[string],
-    dtype: string,
-    backend: Backend
-  ): T = js.native
 }
 

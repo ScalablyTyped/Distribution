@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo__react-common"
-version := "3.1.3-3db1ec"
+version := "3.1.3-534807"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "graphql" % "14.5.8-9a82b3",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-64c4b6",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-fe506f")

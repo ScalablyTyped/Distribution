@@ -40,6 +40,11 @@ trait TracerOptions extends js.Object {
     */
   var experimental: js.UndefOr[Boolean | Anon_Agentexporter] = js.undefined
   /**
+    * Interval in milliseconds at which the tracer will submit traces to the agent.
+    * @default 2000
+    */
+  var flushInterval: js.UndefOr[Double] = js.undefined
+  /**
     * The address of the trace agent that the tracer will submit to.
     * @default 'localhost'
     */
@@ -66,6 +71,11 @@ trait TracerOptions extends js.Object {
     * @default 8126
     */
   var port: js.UndefOr[Double | String] = js.undefined
+  /**
+    * Whether to report the hostname of the service host. This is used when the agent is deployed on a different host and cannot determine the hostname automatically.
+    * @default false
+    */
+  var reportHostname: js.UndefOr[Boolean] = js.undefined
   /**
     * Whether to enable runtime metrics.
     * @default false
@@ -107,11 +117,13 @@ object TracerOptions {
     enabled: js.UndefOr[Boolean] = js.undefined,
     env: String = null,
     experimental: Boolean | Anon_Agentexporter = null,
+    flushInterval: Int | Double = null,
     hostname: String = null,
     logInjection: js.UndefOr[Boolean] = js.undefined,
     logger: Anon_Debug = null,
     plugins: js.UndefOr[Boolean] = js.undefined,
     port: Double | String = null,
+    reportHostname: js.UndefOr[Boolean] = js.undefined,
     runtimeMetrics: js.UndefOr[Boolean] = js.undefined,
     sampleRate: Int | Double = null,
     scope: async_hooks | noop = null,
@@ -126,11 +138,13 @@ object TracerOptions {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (env != null) __obj.updateDynamic("env")(env)
     if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (!js.isUndefined(logInjection)) __obj.updateDynamic("logInjection")(logInjection)
     if (logger != null) __obj.updateDynamic("logger")(logger)
     if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportHostname)) __obj.updateDynamic("reportHostname")(reportHostname)
     if (!js.isUndefined(runtimeMetrics)) __obj.updateDynamic("runtimeMetrics")(runtimeMetrics)
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])

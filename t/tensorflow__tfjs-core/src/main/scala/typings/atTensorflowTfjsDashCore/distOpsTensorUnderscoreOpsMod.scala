@@ -10,6 +10,7 @@ import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor5D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor6D
+import typings.atTensorflowTfjsDashCore.distTensorMod.Variable
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
@@ -317,6 +318,25 @@ object distOpsTensorUnderscoreOpsMod extends js.Object {
     shape: js.Tuple6[Double, Double, Double, Double, Double, Double],
     dtype: DataType
   ): Tensor6D = js.native
+  /**
+    * Creates a new variable with the provided initial value.
+    * ```js
+    * const x = tf.variable(tf.tensor([1, 2, 3]));
+    * x.assign(tf.tensor([4, 5, 6]));
+    *
+    * x.print();
+    * ```
+    *
+    * @param initialValue Initial value for the tensor.
+    * @param trainable If true, optimizers are allowed to update it.
+    * @param name Name of the variable. Defaults to a unique id.
+    * @param dtype If set, initialValue will be converted to the given type.
+    */
+  /** @doc {heading: 'Tensors', subheading: 'Creation'} */
+  def variable[R /* <: Rank */](initialValue: Tensor[R]): Variable[R] = js.native
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean): Variable[R] = js.native
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: String): Variable[R] = js.native
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: String, dtype: DataType): Variable[R] = js.native
   /**
     * Creates a `tf.Tensor` with all elements set to 0.
     *

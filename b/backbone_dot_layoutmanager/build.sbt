@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "backbone_dot_layoutmanager"
-version := "0.9-dt-20190619Z-80fb8f"
+version := "0.9-dt-20190619Z-d815ec"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "backbone" % "1.4-dt-20190619Z-314b99",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-4b5800",
+  "org.scalablytyped" %%% "backbone" % "1.4-dt-20190619Z-9486ba",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-cc3e42",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-8ec6f6",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "underscore" % "1.9-dt-20190918Z-7ec297")

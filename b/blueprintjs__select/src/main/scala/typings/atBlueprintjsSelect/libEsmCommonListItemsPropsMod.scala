@@ -8,12 +8,12 @@ import typings.atBlueprintjsSelect.libEsmCommonListItemsPropsMod.ItemsEqualProp
 import typings.atBlueprintjsSelect.libEsmCommonListItemsUtilsMod.ICreateNewItem
 import typings.atBlueprintjsSelect.libEsmCommonPredicateMod.ItemListPredicate
 import typings.atBlueprintjsSelect.libEsmCommonPredicateMod.ItemPredicate
-import typings.react.Event
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
 import typings.react.reactMod._Global_.JSX.Element
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js

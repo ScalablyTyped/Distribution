@@ -1,12 +1,12 @@
 package typings.reactDashPlacesDashAutocomplete
 
-import typings.react.Element
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
 import typings.reactDashPlacesDashAutocomplete.reactDashPlacesDashAutocompleteStrings.option
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

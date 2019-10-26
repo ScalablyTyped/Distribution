@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
@@ -25,6 +26,7 @@ abstract class DataSource protected () extends Element {
     container: AbstractElement
   ) = this()
   val containerAsEntityWidget: EntityWidget = js.native
+  val containerAsWidgetValue: WidgetValue = js.native
   @JSName("model")
   var model_DataSource: IModel = js.native
 }

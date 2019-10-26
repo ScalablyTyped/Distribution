@@ -6,9 +6,12 @@ import typings.lightpick.lightpickMod.Options.Field
 import typings.lightpick.lightpickMod.Options.Locale
 import typings.lightpick.lightpickMod.Options.OnCloseFn
 import typings.lightpick.lightpickMod.Options.OnErrorFn
+import typings.lightpick.lightpickMod.Options.OnMonthsChangeFn
 import typings.lightpick.lightpickMod.Options.OnOpenFn
 import typings.lightpick.lightpickMod.Options.OnSelectFn
+import typings.lightpick.lightpickMod.Options.OnYearsChangeFn
 import typings.lightpick.lightpickMod.Options.Orientation
+import typings.lightpick.lightpickMod.Options.WeekdayStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -96,6 +99,10 @@ trait Options_ extends js.Object {
   var onClose: js.UndefOr[OnCloseFn] = js.undefined
   var onError: js.UndefOr[OnErrorFn] = js.undefined
   /**
+    * Triggered when the months select is changed.
+    */
+  var onMonthsChange: js.UndefOr[OnMonthsChangeFn] = js.undefined
+  /**
     * Triggered when calendar has been opened.
     */
   var onOpen: js.UndefOr[OnOpenFn] = js.undefined
@@ -103,6 +110,10 @@ trait Options_ extends js.Object {
     * Triggered when either date / start date or end date has been changed.
     */
   var onSelect: js.UndefOr[OnSelectFn] = js.undefined
+  /**
+    * Triggered when the years select is changed.
+    */
+  var onYearsChange: js.UndefOr[OnYearsChangeFn] = js.undefined
   var orientation: js.UndefOr[Orientation] = js.undefined
   /**
     * Selector of the parent element that the date range picker will be added to, if not provided this will be 'body'.
@@ -137,6 +148,11 @@ trait Options_ extends js.Object {
     * Calc date range in nights. (For hotels when last date doesn't include to range.)
     */
   var tooltipNights: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Determines the weekday display style.
+    * Two weekdays may have the same narrow style for some locales (e.g. Tuesday's narrow style is also T).
+    */
+  var weekdayStyle: js.UndefOr[WeekdayStyle] = js.undefined
 }
 
 object Options_ {
@@ -165,8 +181,10 @@ object Options_ {
     numberOfMonths: Int | Double = null,
     onClose: OnCloseFn = null,
     onError: OnErrorFn = null,
+    onMonthsChange: OnMonthsChangeFn = null,
     onOpen: OnOpenFn = null,
     onSelect: OnSelectFn = null,
+    onYearsChange: OnYearsChangeFn = null,
     orientation: Orientation = null,
     parentEl: String = null,
     repick: js.UndefOr[Boolean] = js.undefined,
@@ -176,7 +194,8 @@ object Options_ {
     separator: String = null,
     singleDate: js.UndefOr[Boolean] = js.undefined,
     startDate: InputDate = null,
-    tooltipNights: js.UndefOr[Boolean] = js.undefined
+    tooltipNights: js.UndefOr[Boolean] = js.undefined,
+    weekdayStyle: WeekdayStyle = null
   ): Options_ = {
     val __obj = js.Dynamic.literal(field = field)
     if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose)
@@ -201,8 +220,10 @@ object Options_ {
     if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(onClose)
     if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onMonthsChange != null) __obj.updateDynamic("onMonthsChange")(onMonthsChange)
     if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onYearsChange != null) __obj.updateDynamic("onYearsChange")(onYearsChange)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl)
     if (!js.isUndefined(repick)) __obj.updateDynamic("repick")(repick)
@@ -213,6 +234,7 @@ object Options_ {
     if (!js.isUndefined(singleDate)) __obj.updateDynamic("singleDate")(singleDate)
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     if (!js.isUndefined(tooltipNights)) __obj.updateDynamic("tooltipNights")(tooltipNights)
+    if (weekdayStyle != null) __obj.updateDynamic("weekdayStyle")(weekdayStyle)
     __obj.asInstanceOf[Options_]
   }
 }

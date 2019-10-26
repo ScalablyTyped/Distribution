@@ -36,6 +36,10 @@ class RestOperationParameter protected () extends Element {
     */
   var dataType: String = js.native
   /**
+    * In version 8.3.0: introduced
+    */
+  var description: String = js.native
+  /**
     * In version 7.17.0: introduced
     */
   var microflowParameter: IMicroflowParameter | Null = js.native

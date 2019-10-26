@@ -2,11 +2,11 @@ package typings.antd.esTransferMod
 
 import typings.antd.esTransferListMod.TransferListProps
 import typings.antd.esTransferRenderListBodyMod.TransferListBodyProps
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js

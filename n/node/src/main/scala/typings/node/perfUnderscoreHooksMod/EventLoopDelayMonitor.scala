@@ -1,6 +1,6 @@
 package typings.node.perfUnderscoreHooksMod
 
-import typings.node.Map
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -55,6 +55,8 @@ trait Options extends js.Object {
   var strictImports: js.UndefOr[Boolean] = js.undefined
   /** Without this option, Less attempts to guess at the output unit when it does maths. */
   var strictUnits: js.UndefOr[Boolean] = js.undefined
+  /** Read files synchronously in Node.js */
+  var syncImport: js.UndefOr[Boolean] = js.undefined
 }
 
 object Options {
@@ -79,7 +81,8 @@ object Options {
     silent: js.UndefOr[Boolean] = js.undefined,
     sourceMap: SourceMapOption = null,
     strictImports: js.UndefOr[Boolean] = js.undefined,
-    strictUnits: js.UndefOr[Boolean] = js.undefined
+    strictUnits: js.UndefOr[Boolean] = js.undefined,
+    syncImport: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
@@ -102,6 +105,7 @@ object Options {
     if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
     if (!js.isUndefined(strictImports)) __obj.updateDynamic("strictImports")(strictImports)
     if (!js.isUndefined(strictUnits)) __obj.updateDynamic("strictUnits")(strictUnits)
+    if (!js.isUndefined(syncImport)) __obj.updateDynamic("syncImport")(syncImport)
     __obj.asInstanceOf[Options]
   }
 }

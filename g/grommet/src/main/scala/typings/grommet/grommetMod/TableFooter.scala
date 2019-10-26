@@ -2,10 +2,10 @@ package typings.grommet.grommetMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsTableFooterMod.TableFooterProps
-import typings.react.HTMLTableSectionElement
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FC
 import typings.react.reactMod.HTMLAttributes
+import typings.std.HTMLTableSectionElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

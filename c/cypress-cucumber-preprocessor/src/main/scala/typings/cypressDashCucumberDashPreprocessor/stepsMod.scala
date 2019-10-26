@@ -8,8 +8,22 @@ import scala.scalajs.js.annotation._
 @JSImport("cypress-cucumber-preprocessor/steps", JSImport.Namespace)
 @js.native
 object stepsMod extends js.Object {
+  def After(optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def After(
+    optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit],
+    implementation: js.Function1[/* repeated */ js.Any, Unit]
+  ): Unit = js.native
+  def After(optionsOrImplementation: js.Object): Unit = js.native
+  def After(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def And(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def And(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def Before(optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def Before(
+    optionsOrImplementation: js.Function1[/* repeated */ js.Any, Unit],
+    implementation: js.Function1[/* repeated */ js.Any, Unit]
+  ): Unit = js.native
+  def Before(optionsOrImplementation: js.Object): Unit = js.native
+  def Before(optionsOrImplementation: js.Object, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def But(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def But(expression: RegExp, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def Given(expression: String, implementation: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native

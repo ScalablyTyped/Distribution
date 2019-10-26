@@ -107,7 +107,7 @@ object formikMod extends js.Object {
   def insert(array: js.Array[_], index: Double, value: js.Any): js.Array[_] = js.native
   def isEmptyChildren(children: js.Any): Boolean = js.native
   def isFunction(obj: js.Any): /* is std.Function */ Boolean = js.native
-  def isInputEvent(value: js.Any): /* is react.react.SyntheticEvent<any, react.Event> */ Boolean = js.native
+  def isInputEvent(value: js.Any): /* is react.react.SyntheticEvent<any, std.Event> */ Boolean = js.native
   def isInteger(obj: js.Any): Boolean = js.native
   def isNaN(obj: js.Any): Boolean = js.native
   def isObject(obj: js.Any): Boolean = js.native

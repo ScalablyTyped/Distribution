@@ -5,9 +5,9 @@ import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsCore.libEsmComponentsOverlayOverlayMod.IOverlayLifecycleProps
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

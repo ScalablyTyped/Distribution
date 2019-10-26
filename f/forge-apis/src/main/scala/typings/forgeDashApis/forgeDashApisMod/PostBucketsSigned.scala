@@ -1,0 +1,19 @@
+package typings.forgeDashApis.forgeDashApisMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PostBucketsSigned extends js.Object {
+  var minutesExpiration: Double
+}
+
+object PostBucketsSigned {
+  @scala.inline
+  def apply(minutesExpiration: Double): PostBucketsSigned = {
+    val __obj = js.Dynamic.literal(minutesExpiration = minutesExpiration)
+  
+    __obj.asInstanceOf[PostBucketsSigned]
+  }
+}
+

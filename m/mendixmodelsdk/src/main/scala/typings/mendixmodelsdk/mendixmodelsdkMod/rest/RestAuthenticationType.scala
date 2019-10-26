@@ -14,6 +14,7 @@ class RestAuthenticationType ()
 @js.native
 object RestAuthenticationType extends js.Object {
   var Basic: typings.mendixmodelsdk.distGenRestMod.rest.RestAuthenticationType = js.native
+  var Guest: typings.mendixmodelsdk.distGenRestMod.rest.RestAuthenticationType = js.native
   var Microflow: typings.mendixmodelsdk.distGenRestMod.rest.RestAuthenticationType = js.native
   var None: typings.mendixmodelsdk.distGenRestMod.rest.RestAuthenticationType = js.native
   var Session: typings.mendixmodelsdk.distGenRestMod.rest.RestAuthenticationType = js.native

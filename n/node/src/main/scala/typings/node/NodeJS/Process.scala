@@ -5,7 +5,6 @@ import typings.node.Anon_SwallowErrors
 import typings.node.Anon_Targetdefaults
 import typings.node.Error
 import typings.node.NodeModule
-import typings.node.ReadonlySet
 import typings.node.nodeStrings.beforeExit
 import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.exit
@@ -19,6 +18,7 @@ import typings.node.nodeStrings.unhandledRejection
 import typings.node.nodeStrings.warning
 import typings.node.processMod._Global_.NodeJS.ReadStream
 import typings.node.processMod._Global_.NodeJS.WriteStream
+import typings.std.ReadonlySet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

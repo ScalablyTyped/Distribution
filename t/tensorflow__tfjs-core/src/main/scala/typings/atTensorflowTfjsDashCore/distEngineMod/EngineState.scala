@@ -18,6 +18,11 @@ trait EngineState extends js.Object {
   var nextTapeNodeId: Double
   var numBytes: Double
   var numDataBuffers: Double
+  /**
+    * Keeps track of the number of data moves during a kernel execution. We
+    * maintain a stack since kernels can call other kernels, recursively.
+    */
+  var numDataMovesStack: js.Array[Double]
   var numStringTensors: Double
   var numTensors: Double
   var profiling: Boolean
@@ -40,6 +45,7 @@ object EngineState {
     nextTapeNodeId: Double,
     numBytes: Double,
     numDataBuffers: Double,
+    numDataMovesStack: js.Array[Double],
     numStringTensors: Double,
     numTensors: Double,
     profiling: Boolean,
@@ -47,7 +53,7 @@ object EngineState {
     scopeStack: js.Array[ScopeState],
     tensorInfo: WeakMap[js.Object, Anon_Backend]
   ): EngineState = {
-    val __obj = js.Dynamic.literal(activeProfile = activeProfile, activeScope = activeScope, activeTape = activeTape, dispose = js.Any.fromFunction0(dispose), gradientDepth = gradientDepth, kernelDepth = kernelDepth, nextScopeId = nextScopeId, nextTapeNodeId = nextTapeNodeId, numBytes = numBytes, numDataBuffers = numDataBuffers, numStringTensors = numStringTensors, numTensors = numTensors, profiling = profiling, registeredVariables = registeredVariables, scopeStack = scopeStack, tensorInfo = tensorInfo)
+    val __obj = js.Dynamic.literal(activeProfile = activeProfile, activeScope = activeScope, activeTape = activeTape, dispose = js.Any.fromFunction0(dispose), gradientDepth = gradientDepth, kernelDepth = kernelDepth, nextScopeId = nextScopeId, nextTapeNodeId = nextTapeNodeId, numBytes = numBytes, numDataBuffers = numDataBuffers, numDataMovesStack = numDataMovesStack, numStringTensors = numStringTensors, numTensors = numTensors, profiling = profiling, registeredVariables = registeredVariables, scopeStack = scopeStack, tensorInfo = tensorInfo)
   
     __obj.asInstanceOf[EngineState]
   }

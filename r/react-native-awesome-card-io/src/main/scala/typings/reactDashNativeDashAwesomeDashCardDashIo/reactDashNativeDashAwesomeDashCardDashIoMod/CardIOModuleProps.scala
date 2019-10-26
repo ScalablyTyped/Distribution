@@ -5,32 +5,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CardIOModuleProps extends CardIOCommonProps {
-   // false - Set to true if you need to collect the cardholder name.
-  // iOS Only
+  /**  iOS Only */
+  /**  false - Disable the blur of the screen when the app is backgrounded. */
   var disableBlurWhenBackgrounding: js.UndefOr[Boolean] = js.undefined
-   // false - Disable the blur of the screen when the app is backgrounded.
+  /**  false - If true, the status bar's style will be kept as whatever your app has set it to. */
   var keepStatusBarStyle: js.UndefOr[Boolean] = js.undefined
-   // false - If true, instead of displaying the image of the scanned card, present the manual entry screen with the scanned card number prefilled.
-  // Android Only
+  /**  Android Only */
+  /**  false If set, the card will not be scanned with the camera. */
   var noCamera: js.UndefOr[Boolean] = js.undefined
-   // true - Set to false if you don't need to collect the card expiration.
+  /**  true - Set to false if you don't need to collect the CVV from the user. */
   var requireCVV: js.UndefOr[Boolean] = js.undefined
-   // false - Set to true if the postal code should only collect numeric input.
+  /**  false - Set to true if you need to collect the cardholder name. */
   var requireCardholderName: js.UndefOr[Boolean] = js.undefined
-   // false - If true, don't have the user confirm the scanned card, just return the results immediately.
+  /**  true - Set to false if you don't need to collect the card expiration. */
   var requireExpiry: js.UndefOr[Boolean] = js.undefined
-   // true - Set to false if you don't need to collect the CVV from the user.
+  /**  false - Set to false if you need to collect the billing postal code. */
   var requirePostalCode: js.UndefOr[Boolean] = js.undefined
-   // false - Set to false if you need to collect the billing postal code.
+  /**  false - Set to true if the postal code should only collect numeric input. */
   var restrictPostalCodeToNumericOnly: js.UndefOr[Boolean] = js.undefined
-   // false - Set to true to prevent card.io from showing its "Enter Manually" button.
+  /**  false - If true, don't have the user confirm the scanned card, just return the results immediately. */
   var suppressConfirmation: js.UndefOr[Boolean] = js.undefined
+  /**  false - Set to true to prevent card.io from showing its "Enter Manually" button. */
   var suppressManualEntry: js.UndefOr[Boolean] = js.undefined
-   // false - If true, the status bar's style will be kept as whatever your app has set it to.
+  /**  false - If true, instead of displaying the image of the scanned card, present the manual entry screen with the scanned card number prefilled. */
   var suppressScannedCardImage: js.UndefOr[Boolean] = js.undefined
-   // false If set, the card will not be scanned with the camera.
+  /**  -1 Privacy feature. How many of the Card number digits NOT to blur on the resulting image. Setting it to 4 will blur all digits except the last four. */
   var unblurDigits: js.UndefOr[Double] = js.undefined
-   // -1 Privacy feature. How many of the Card number digits NOT to blur on the resulting image. Setting it to 4 will blur all digits except the last four.
+  /**   Default false; Use the PayPal icon in the ActionBar. */
   var usePaypalActionbarIcon: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -40,7 +41,7 @@ object CardIOModuleProps {
     allowFreelyRotatingCardGuide: js.UndefOr[Boolean] = js.undefined,
     detectionMode: CardIODetectionMode = null,
     disableBlurWhenBackgrounding: js.UndefOr[Boolean] = js.undefined,
-    guideColor: String = null,
+    guideColor: String | Double = null,
     hideCardIOLogo: js.UndefOr[Boolean] = js.undefined,
     keepStatusBarStyle: js.UndefOr[Boolean] = js.undefined,
     languageOrLocale: String = null,
@@ -64,7 +65,7 @@ object CardIOModuleProps {
     if (!js.isUndefined(allowFreelyRotatingCardGuide)) __obj.updateDynamic("allowFreelyRotatingCardGuide")(allowFreelyRotatingCardGuide)
     if (detectionMode != null) __obj.updateDynamic("detectionMode")(detectionMode)
     if (!js.isUndefined(disableBlurWhenBackgrounding)) __obj.updateDynamic("disableBlurWhenBackgrounding")(disableBlurWhenBackgrounding)
-    if (guideColor != null) __obj.updateDynamic("guideColor")(guideColor)
+    if (guideColor != null) __obj.updateDynamic("guideColor")(guideColor.asInstanceOf[js.Any])
     if (!js.isUndefined(hideCardIOLogo)) __obj.updateDynamic("hideCardIOLogo")(hideCardIOLogo)
     if (!js.isUndefined(keepStatusBarStyle)) __obj.updateDynamic("keepStatusBarStyle")(keepStatusBarStyle)
     if (languageOrLocale != null) __obj.updateDynamic("languageOrLocale")(languageOrLocale)

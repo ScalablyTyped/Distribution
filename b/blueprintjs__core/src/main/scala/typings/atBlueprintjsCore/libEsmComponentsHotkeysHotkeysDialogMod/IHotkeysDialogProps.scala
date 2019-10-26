@@ -3,11 +3,11 @@ package typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeysDialogMod
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsCore.libEsmComponentsDialogDialogMod.IDialogProps
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.HTMLProps
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

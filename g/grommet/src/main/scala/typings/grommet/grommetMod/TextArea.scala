@@ -2,10 +2,10 @@ package typings.grommet.grommetMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsTextAreaMod.TextAreaProps
-import typings.react.HTMLTextAreaElement
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FC
 import typings.react.reactMod.TextareaHTMLAttributes
+import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

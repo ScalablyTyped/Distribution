@@ -1,7 +1,7 @@
 package typings.react.reactMod
 
-import typings.react.Document
-import typings.react.StyleMedia
+import typings.std.Document
+import typings.std.StyleMedia
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

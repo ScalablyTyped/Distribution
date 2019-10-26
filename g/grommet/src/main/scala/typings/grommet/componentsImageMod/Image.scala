@@ -1,10 +1,10 @@
 package typings.grommet.componentsImageMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.react.HTMLImageElement
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FC
 import typings.react.reactMod.ImgHTMLAttributes
+import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

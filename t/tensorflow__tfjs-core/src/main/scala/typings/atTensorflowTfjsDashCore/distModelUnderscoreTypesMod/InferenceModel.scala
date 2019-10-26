@@ -2,7 +2,6 @@ package typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod
 
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensorMap
-import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorInfo
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,11 +12,11 @@ trait InferenceModel extends js.Object {
   /**
     * Return the array of input tensor info.
     */
-  val inputs: js.Array[TensorInfo] = js.native
+  val inputs: js.Array[ModelTensorInfo] = js.native
   /**
     * Return the array of output tensor info.
     */
-  val outputs: js.Array[TensorInfo] = js.native
+  val outputs: js.Array[ModelTensorInfo] = js.native
   def execute(inputs: js.Array[Tensor[Rank]], outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def execute(inputs: js.Array[Tensor[Rank]], outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**

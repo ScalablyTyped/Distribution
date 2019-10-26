@@ -13,8 +13,8 @@ import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.utilsMod.ColorType
-import typings.react.Element
 import typings.react.reactMod.ChangeEvent
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

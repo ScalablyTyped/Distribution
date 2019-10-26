@@ -1,7 +1,7 @@
 
 # Scala.js typings for email-addresses
 
-Typings are for version 3.0.3
+Typings are for version 3.1.0
 
 ## Library description:
 An email address parser based on rfc5322

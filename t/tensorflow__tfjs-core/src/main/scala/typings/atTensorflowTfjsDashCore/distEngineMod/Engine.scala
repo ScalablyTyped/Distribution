@@ -7,16 +7,17 @@ import typings.atTensorflowTfjsDashCore.Anon_Grads
 import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.DataMover
 import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.distEnvironmentMod.Environment
+import typings.atTensorflowTfjsDashCore.distKernelUnderscoreRegistryMod.NamedAttrMap
 import typings.atTensorflowTfjsDashCore.distTensorMod.DataId
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.TensorTracker
-import typings.atTensorflowTfjsDashCore.distTensorMod.Variable
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.GradSaveFunc
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensorMap
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedVariableMap
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorContainer
-import typings.atTensorflowTfjsDashCore.distTypesMod.BackendValues
+import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
+import typings.atTensorflowTfjsDashCore.distTypesMod.DataValues
 import typings.atTensorflowTfjsDashCore.distTypesMod.PixelData
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.std.HTMLCanvasElement
@@ -30,8 +31,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core/dist/engine", "Engine")
 @js.native
 class Engine protected ()
-  extends TensorManager
-     with TensorTracker
+  extends TensorTracker
      with DataMover {
   def this(ENV: Environment) = this()
   var ENV: Environment = js.native
@@ -39,14 +39,19 @@ class Engine protected ()
   val backend: KernelBackend = js.native
   var backendInstance: js.Any = js.native
   var backendName: String = js.native
+  var checkKernelForMemLeak: js.Any = js.native
   /**
     * This method is called instead of the public-facing tensor.clone() when
     * saving a tensor for backwards pass. It makes sure to add the clone
     * operation to the tape regardless of being called inside a kernel
     * execution.
+    *
+    * This method will go away once all kernels are modularized since we won't
+    * need to turn off the tape inside runKernel().
     */
   @JSName("clone")
   var clone_FEngine: js.Any = js.native
+  var disposeRegisteredKernels: js.Any = js.native
   var endTape: js.Any = js.native
   var getSortedBackends: js.Any = js.native
   /**
@@ -57,6 +62,8 @@ class Engine protected ()
     */
   var initializeBackend: js.Any = js.native
   var initializeBackendsAndReturnBest: js.Any = js.native
+  var nextTensorId: js.Any = js.native
+  var nextVariableId: js.Any = js.native
   var pendingBackendInit: js.Any = js.native
   var pendingBackendInitId: js.Any = js.native
   var profiler: js.Any = js.native
@@ -64,6 +71,8 @@ class Engine protected ()
   var registry: StringDictionary[KernelBackend] = js.native
   var registryFactory: StringDictionary[Anon_Factory] = js.native
   var scopedRun: js.Any = js.native
+  var setupRegisteredKernels: js.Any = js.native
+  var shouldCheckForMemLeaks: js.Any = js.native
   var startTape: js.Any = js.native
   var state: EngineState = js.native
   /**
@@ -75,8 +84,6 @@ class Engine protected ()
   var track: js.Any = js.native
   def backendNames(): js.Array[String] = js.native
   def customGrad[T /* <: Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[Rank] | GradSaveFunc, T] = js.native
-  /* InferMemberOverrides */
-  override def disposeTensor(a: Tensor[Rank]): Unit = js.native
   def disposeVariables(): Unit = js.native
   /**
     * End a scope. Use this with startScope() to achieve the same functionality
@@ -100,8 +107,18 @@ class Engine protected ()
   def gradients[T /* <: Tensor[Rank] */](f: js.Function0[T], xs: js.Array[Tensor[Rank]]): Anon_Grads[T] = js.native
   def gradients[T /* <: Tensor[Rank] */](f: js.Function0[T], xs: js.Array[Tensor[Rank]], dy: T): Anon_Grads[T] = js.native
   def gradients[T /* <: Tensor[Rank] */](f: js.Function0[T], xs: js.Array[Tensor[Rank]], dy: T, allowNoGradients: Boolean): Anon_Grads[T] = js.native
+  def incRef(a: Tensor[Rank], backend: KernelBackend): Unit = js.native
   def isTapeOn(): Boolean = js.native
   def keep[T /* <: Tensor[Rank] */](result: T): T = js.native
+  def makeTensor(values: DataValues, shape: js.Array[Double], dtype: DataType, backend: KernelBackend): Tensor[Rank] = js.native
+  /**
+    * Internal method used by backends. Makes a new tensor
+    * that is a wrapper around an existing data id. It doesn't create
+    * a new data id, only increments the ref count used in memory tracking.
+    */
+  def makeTensorFromDataId(dataId: DataId, shape: js.Array[Double], dtype: DataType): Tensor[Rank] = js.native
+  def makeTensorFromDataId(dataId: DataId, shape: js.Array[Double], dtype: DataType, backend: KernelBackend): Tensor[Rank] = js.native
+  def memory(): MemoryInfo = js.native
   /**
     * To be called by backends whenever they see a dataId that they don't own.
     * Upon calling this method, the mover will fetch the tensor from another
@@ -117,20 +134,45 @@ class Engine protected ()
     factory: js.Function0[KernelBackend | js.Promise[KernelBackend]],
     priority: Double
   ): Boolean = js.native
-  /* InferMemberOverrides */
-  override def registerTensor(a: Tensor[Rank]): Unit = js.native
-  def registerTensor(a: Variable[Rank]): Unit = js.native
-  def registerTensor(a: Variable[Rank], backend: KernelBackend): Unit = js.native
-  /* InferMemberOverrides */
-  override def registerVariable(v: Variable[Rank]): Unit = js.native
   def removeBackend(backendName: String): Unit = js.native
   /**
     * Resets the engine state. Removes all backends but does not remove
     * registered backend factories.
     */
   def reset(): Unit = js.native
-  def runKernel[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](forwardFunc: ForwardFunc[T], inputs: I): T = js.native
-  def runKernel[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+  /**
+    * Execute a kernel with the given name and return the output tensor.
+    *
+    * @param kernelName The name of the kernel to execute.
+    * @param inputs A map of input names to tensors.
+    * @param attrs A map of attribute names to their values. An attribute is a
+    *     primitive (non-tensor) input to the kernel.
+    * @param inputsToSave A list of tensors, inputs to save for the backprop
+    *     computation.
+    * @param outputsToSave A list of booleans, specifying which output to save
+    *     for the backprop computation. These are booleans since the output
+    * tensors are not visible to the user.
+    */
+  def runKernel(kernelName: String, inputs: NamedTensorMap, attrs: NamedAttrMap): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def runKernel(
+    kernelName: String,
+    inputs: NamedTensorMap,
+    attrs: NamedAttrMap,
+    inputsToSave: js.Array[Tensor[Rank]]
+  ): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def runKernel(
+    kernelName: String,
+    inputs: NamedTensorMap,
+    attrs: NamedAttrMap,
+    inputsToSave: js.Array[Tensor[Rank]],
+    outputsToSave: js.Array[Boolean]
+  ): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  /**
+    * @deprecated Use `runKernel` for newly added kernels. Keep using this method
+    *     only for kernels that are not yet fully modularized.
+    */
+  def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](forwardFunc: ForwardFunc[T], inputs: I): T = js.native
+  def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
     forwardFunc: ForwardFunc[T],
     inputs: I,
     backwardsFunc: js.Function2[
@@ -140,6 +182,60 @@ class Engine protected ()
   {[ P in keyof I ]: (): I[P]}
     */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
     ]
+  ): T = js.native
+  def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+    forwardFunc: ForwardFunc[T],
+    inputs: I,
+    backwardsFunc: js.Function2[
+      /* dy */ T, 
+      /* saved */ js.Array[Tensor[Rank]], 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof I ]: (): I[P]}
+    */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
+    ],
+    kernelName: String
+  ): T = js.native
+  def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+    forwardFunc: ForwardFunc[T],
+    inputs: I,
+    backwardsFunc: js.Function2[
+      /* dy */ T, 
+      /* saved */ js.Array[Tensor[Rank]], 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof I ]: (): I[P]}
+    */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
+    ],
+    kernelName: String,
+    attrs: NamedAttrMap
+  ): T = js.native
+  def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+    forwardFunc: ForwardFunc[T],
+    inputs: I,
+    backwardsFunc: js.Function2[
+      /* dy */ T, 
+      /* saved */ js.Array[Tensor[Rank]], 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof I ]: (): I[P]}
+    */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
+    ],
+    kernelName: String,
+    attrs: NamedAttrMap,
+    inputsToSave: js.Array[Tensor[Rank]]
+  ): T = js.native
+  def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+    forwardFunc: ForwardFunc[T],
+    inputs: I,
+    backwardsFunc: js.Function2[
+      /* dy */ T, 
+      /* saved */ js.Array[Tensor[Rank]], 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof I ]: (): I[P]}
+    */ typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.Engine with I
+    ],
+    kernelName: String,
+    attrs: NamedAttrMap,
+    inputsToSave: js.Array[Tensor[Rank]],
+    outputsToSave: js.Array[Boolean]
   ): T = js.native
   def setBackend(backendName: String): js.Promise[Boolean] = js.native
   /**
@@ -153,7 +249,6 @@ class Engine protected ()
   def tidy[T /* <: TensorContainer */](nameOrFn: ScopeFn[T]): T = js.native
   def tidy[T /* <: TensorContainer */](nameOrFn: ScopeFn[T], fn: ScopeFn[T]): T = js.native
   def time(query: js.Function0[Unit]): js.Promise[TimingInfo] = js.native
-  def write(destBackend: KernelBackend, dataId: DataId, values: BackendValues): Unit = js.native
 }
 
 @JSImport("@tensorflow/tfjs-core/dist/engine", "ENGINE")

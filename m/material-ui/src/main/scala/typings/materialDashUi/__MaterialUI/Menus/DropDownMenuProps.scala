@@ -2,12 +2,12 @@ package typings.materialDashUi.__MaterialUI.Menus
 
 import typings.materialDashUi.__MaterialUI.Popover.PopoverAnimationProps
 import typings.materialDashUi.__MaterialUI.propTypes.origin
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

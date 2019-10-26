@@ -8,7 +8,7 @@ package object libTextareaDashItemMod {
   import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.onBlur
   import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.onChange
   import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.onFocus
-  import typings.std.Omit
+  import typings.utilityDashTypes.distMappedDashTypesMod.Omit
 
   type TextInputProps = Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ js.Any, 

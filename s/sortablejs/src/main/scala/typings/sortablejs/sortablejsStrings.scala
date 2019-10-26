@@ -1,5 +1,6 @@
 package typings.sortablejs
 
+import typings.sortablejs.sortablejsMod.Direction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -201,6 +202,9 @@ object sortablejsStrings {
   sealed trait breakInside extends js.Object
   
   @js.native
+  sealed trait bubbleScroll extends js.Object
+  
+  @js.native
   sealed trait captionSide extends js.Object
   
   @js.native
@@ -264,6 +268,9 @@ object sortablejsStrings {
   sealed trait content extends js.Object
   
   @js.native
+  sealed trait continue extends js.Object
+  
+  @js.native
   sealed trait counterIncrement extends js.Object
   
   @js.native
@@ -283,6 +290,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait delay extends js.Object
+  
+  @js.native
+  sealed trait delayOnTouchOnly extends js.Object
   
   @js.native
   sealed trait direction extends js.Object
@@ -309,7 +319,13 @@ object sortablejsStrings {
   sealed trait dropBubble extends js.Object
   
   @js.native
+  sealed trait easing extends js.Object
+  
+  @js.native
   sealed trait emptyCells extends js.Object
+  
+  @js.native
+  sealed trait emptyInsertThreshold extends js.Object
   
   @js.native
   sealed trait enableBackground extends js.Object
@@ -492,6 +508,9 @@ object sortablejsStrings {
   sealed trait height extends js.Object
   
   @js.native
+  sealed trait horizontal extends Direction
+  
+  @js.native
   sealed trait hyphens extends js.Object
   
   @js.native
@@ -505,6 +524,12 @@ object sortablejsStrings {
   
   @js.native
   sealed trait imeMode extends js.Object
+  
+  @js.native
+  sealed trait invertSwap extends js.Object
+  
+  @js.native
+  sealed trait invertedSwapThreshold extends js.Object
   
   @js.native
   sealed trait justifyContent extends js.Object
@@ -765,6 +790,12 @@ object sortablejsStrings {
   sealed trait msWrapThrough extends js.Object
   
   @js.native
+  sealed trait multiDrag extends js.Object
+  
+  @js.native
+  sealed trait multiDragKey extends js.Object
+  
+  @js.native
   sealed trait objectFit extends js.Object
   
   @js.native
@@ -867,7 +898,16 @@ object sortablejsStrings {
   sealed trait quotes extends js.Object
   
   @js.native
+  sealed trait removeCloneOnHide extends js.Object
+  
+  @js.native
+  sealed trait removeOnSpill extends js.Object
+  
+  @js.native
   sealed trait resize extends js.Object
+  
+  @js.native
+  sealed trait revertOnSpill extends js.Object
   
   @js.native
   sealed trait right extends js.Object
@@ -901,6 +941,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait scrollSpeed extends js.Object
+  
+  @js.native
+  sealed trait selectedClass extends js.Object
   
   @js.native
   sealed trait sort extends js.Object
@@ -937,6 +980,15 @@ object sortablejsStrings {
   
   @js.native
   sealed trait strokeWidth extends js.Object
+  
+  @js.native
+  sealed trait swap extends js.Object
+  
+  @js.native
+  sealed trait swapClass extends js.Object
+  
+  @js.native
+  sealed trait swapThreshold extends js.Object
   
   @js.native
   sealed trait tabSize extends js.Object
@@ -1014,6 +1066,9 @@ object sortablejsStrings {
   sealed trait touchAction extends js.Object
   
   @js.native
+  sealed trait touchStartThreshold extends js.Object
+  
+  @js.native
   sealed trait transform extends js.Object
   
   @js.native
@@ -1048,6 +1103,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait userSelect extends js.Object
+  
+  @js.native
+  sealed trait vertical extends Direction
   
   @js.native
   sealed trait verticalAlign extends js.Object
@@ -1477,6 +1535,8 @@ object sortablejsStrings {
   @scala.inline
   def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
   @scala.inline
+  def bubbleScroll: bubbleScroll = "bubbleScroll".asInstanceOf[bubbleScroll]
+  @scala.inline
   def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
   @scala.inline
   def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
@@ -1517,6 +1577,8 @@ object sortablejsStrings {
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline
+  def continue: continue = "continue".asInstanceOf[continue]
+  @scala.inline
   def counterIncrement: counterIncrement = "counterIncrement".asInstanceOf[counterIncrement]
   @scala.inline
   def counterReset: counterReset = "counterReset".asInstanceOf[counterReset]
@@ -1530,6 +1592,8 @@ object sortablejsStrings {
   def dataIdAttr: dataIdAttr = "dataIdAttr".asInstanceOf[dataIdAttr]
   @scala.inline
   def delay: delay = "delay".asInstanceOf[delay]
+  @scala.inline
+  def delayOnTouchOnly: delayOnTouchOnly = "delayOnTouchOnly".asInstanceOf[delayOnTouchOnly]
   @scala.inline
   def direction: direction = "direction".asInstanceOf[direction]
   @scala.inline
@@ -1547,7 +1611,11 @@ object sortablejsStrings {
   @scala.inline
   def dropBubble: dropBubble = "dropBubble".asInstanceOf[dropBubble]
   @scala.inline
+  def easing: easing = "easing".asInstanceOf[easing]
+  @scala.inline
   def emptyCells: emptyCells = "emptyCells".asInstanceOf[emptyCells]
+  @scala.inline
+  def emptyInsertThreshold: emptyInsertThreshold = "emptyInsertThreshold".asInstanceOf[emptyInsertThreshold]
   @scala.inline
   def enableBackground: enableBackground = "enableBackground".asInstanceOf[enableBackground]
   @scala.inline
@@ -1669,6 +1737,8 @@ object sortablejsStrings {
   @scala.inline
   def height: height = "height".asInstanceOf[height]
   @scala.inline
+  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def hyphens: hyphens = "hyphens".asInstanceOf[hyphens]
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
@@ -1678,6 +1748,10 @@ object sortablejsStrings {
   def imageRendering: imageRendering = "imageRendering".asInstanceOf[imageRendering]
   @scala.inline
   def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
+  @scala.inline
+  def invertSwap: invertSwap = "invertSwap".asInstanceOf[invertSwap]
+  @scala.inline
+  def invertedSwapThreshold: invertedSwapThreshold = "invertedSwapThreshold".asInstanceOf[invertedSwapThreshold]
   @scala.inline
   def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
   @scala.inline
@@ -1851,6 +1925,10 @@ object sortablejsStrings {
   @scala.inline
   def msWrapThrough: msWrapThrough = "msWrapThrough".asInstanceOf[msWrapThrough]
   @scala.inline
+  def multiDrag: multiDrag = "multiDrag".asInstanceOf[multiDrag]
+  @scala.inline
+  def multiDragKey: multiDragKey = "multiDragKey".asInstanceOf[multiDragKey]
+  @scala.inline
   def objectFit: objectFit = "objectFit".asInstanceOf[objectFit]
   @scala.inline
   def objectPosition: objectPosition = "objectPosition".asInstanceOf[objectPosition]
@@ -1919,7 +1997,13 @@ object sortablejsStrings {
   @scala.inline
   def quotes: quotes = "quotes".asInstanceOf[quotes]
   @scala.inline
+  def removeCloneOnHide: removeCloneOnHide = "removeCloneOnHide".asInstanceOf[removeCloneOnHide]
+  @scala.inline
+  def removeOnSpill: removeOnSpill = "removeOnSpill".asInstanceOf[removeOnSpill]
+  @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
+  @scala.inline
+  def revertOnSpill: revertOnSpill = "revertOnSpill".asInstanceOf[revertOnSpill]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
@@ -1942,6 +2026,8 @@ object sortablejsStrings {
   def scrollSensitivity: scrollSensitivity = "scrollSensitivity".asInstanceOf[scrollSensitivity]
   @scala.inline
   def scrollSpeed: scrollSpeed = "scrollSpeed".asInstanceOf[scrollSpeed]
+  @scala.inline
+  def selectedClass: selectedClass = "selectedClass".asInstanceOf[selectedClass]
   @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   @scala.inline
@@ -1966,6 +2052,12 @@ object sortablejsStrings {
   def strokeOpacity: strokeOpacity = "strokeOpacity".asInstanceOf[strokeOpacity]
   @scala.inline
   def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
+  @scala.inline
+  def swap: swap = "swap".asInstanceOf[swap]
+  @scala.inline
+  def swapClass: swapClass = "swapClass".asInstanceOf[swapClass]
+  @scala.inline
+  def swapThreshold: swapThreshold = "swapThreshold".asInstanceOf[swapThreshold]
   @scala.inline
   def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
   @scala.inline
@@ -2017,6 +2109,8 @@ object sortablejsStrings {
   @scala.inline
   def touchAction: touchAction = "touchAction".asInstanceOf[touchAction]
   @scala.inline
+  def touchStartThreshold: touchStartThreshold = "touchStartThreshold".asInstanceOf[touchStartThreshold]
+  @scala.inline
   def transform: transform = "transform".asInstanceOf[transform]
   @scala.inline
   def transformBox: transformBox = "transformBox".asInstanceOf[transformBox]
@@ -2040,6 +2134,8 @@ object sortablejsStrings {
   def unicodeBidi: unicodeBidi = "unicodeBidi".asInstanceOf[unicodeBidi]
   @scala.inline
   def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
+  @scala.inline
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def verticalAlign: verticalAlign = "verticalAlign".asInstanceOf[verticalAlign]
   @scala.inline

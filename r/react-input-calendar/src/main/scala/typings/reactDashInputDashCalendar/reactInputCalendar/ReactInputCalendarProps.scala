@@ -1,8 +1,8 @@
 package typings.reactDashInputDashCalendar.reactInputCalendar
 
-import typings.react.Event
 import typings.react.reactMod.SyntheticEvent
 import typings.std.Date
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

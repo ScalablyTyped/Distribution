@@ -1,0 +1,96 @@
+package typings.sloc.slocMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.sloc.slocStrings.asm
+  - typings.sloc.slocStrings.brs
+  - typings.sloc.slocStrings.c
+  - typings.sloc.slocStrings.cc
+  - typings.sloc.slocStrings.clj
+  - typings.sloc.slocStrings.cljs
+  - typings.sloc.slocStrings.cls
+  - typings.sloc.slocStrings.coffee
+  - typings.sloc.slocStrings.cpp
+  - typings.sloc.slocStrings.cr
+  - typings.sloc.slocStrings.cs
+  - typings.sloc.slocStrings.css
+  - typings.sloc.slocStrings.cxx
+  - typings.sloc.slocStrings.erl
+  - typings.sloc.slocStrings.f90
+  - typings.sloc.slocStrings.f95
+  - typings.sloc.slocStrings.f03
+  - typings.sloc.slocStrings.f08
+  - typings.sloc.slocStrings.f18
+  - typings.sloc.slocStrings.fs
+  - typings.sloc.slocStrings.fsi
+  - typings.sloc.slocStrings.fsx
+  - typings.sloc.slocStrings.go
+  - typings.sloc.slocStrings.groovy
+  - typings.sloc.slocStrings.gs
+  - typings.sloc.slocStrings.h
+  - typings.sloc.slocStrings.handlebars
+  - typings.sloc.slocStrings.hbs
+  - typings.sloc.slocStrings.hpp
+  - typings.sloc.slocStrings.hr
+  - typings.sloc.slocStrings.hs
+  - typings.sloc.slocStrings.html
+  - typings.sloc.slocStrings.htm
+  - typings.sloc.slocStrings.hx
+  - typings.sloc.slocStrings.hxx
+  - typings.sloc.slocStrings.hy
+  - typings.sloc.slocStrings.iced
+  - typings.sloc.slocStrings.ily
+  - typings.sloc.slocStrings.ino
+  - typings.sloc.slocStrings.jade
+  - typings.sloc.slocStrings.java
+  - typings.sloc.slocStrings.jl
+  - typings.sloc.slocStrings.JS
+  - typings.sloc.slocStrings.jsx
+  - typings.sloc.slocStrings.mjs
+  - typings.sloc.slocStrings.kt
+  - typings.sloc.slocStrings.kts
+  - typings.sloc.slocStrings.latex
+  - typings.sloc.slocStrings.less
+  - typings.sloc.slocStrings.ly
+  - typings.sloc.slocStrings.lua
+  - typings.sloc.slocStrings.ls
+  - typings.sloc.slocStrings.ml
+  - typings.sloc.slocStrings.mli
+  - typings.sloc.slocStrings.mochi
+  - typings.sloc.slocStrings.monkey
+  - typings.sloc.slocStrings.mustache
+  - typings.sloc.slocStrings.nix
+  - typings.sloc.slocStrings.nim
+  - typings.sloc.slocStrings.nut
+  - typings.sloc.slocStrings.php
+  - typings.sloc.slocStrings.php5
+  - typings.sloc.slocStrings.pl
+  - typings.sloc.slocStrings.py
+  - typings.sloc.slocStrings.r
+  - typings.sloc.slocStrings.rb
+  - typings.sloc.slocStrings.rkt
+  - typings.sloc.slocStrings.rs
+  - typings.sloc.slocStrings.sass
+  - typings.sloc.slocStrings.SCALA
+  - typings.sloc.slocStrings.scss
+  - typings.sloc.slocStrings.sty
+  - typings.sloc.slocStrings.styl
+  - typings.sloc.slocStrings.svg
+  - typings.sloc.slocStrings.sql
+  - typings.sloc.slocStrings.swift
+  - typings.sloc.slocStrings.tex
+  - typings.sloc.slocStrings.ts
+  - typings.sloc.slocStrings.tsx
+  - typings.sloc.slocStrings.vb
+  - typings.sloc.slocStrings.vue
+  - typings.sloc.slocStrings.xml
+  - typings.sloc.slocStrings.yaml
+  - typings.sloc.slocStrings.m
+  - typings.sloc.slocStrings.mm
+  - typings.sloc.slocStrings.bsl
+*/
+trait Extension extends js.Object
+

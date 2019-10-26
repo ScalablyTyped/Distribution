@@ -4,10 +4,10 @@ import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrOb
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
-import typings.react.Event
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

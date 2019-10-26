@@ -3,12 +3,12 @@ package typings.grommet.componentsVideoMod
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.grommetStrings.controls
 import typings.grommet.utilsMod.Omit
-import typings.react.HTMLVideoElement
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.VideoHTMLAttributes
+import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

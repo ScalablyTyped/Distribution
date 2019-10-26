@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "feathersjs__socketio"
-version := "3.0-dt-20190715Z-8b12bc"
+version := "3.0-dt-20190715Z-1853ca"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
-  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20191008Z-db8cff",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20191008Z-6e400b",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

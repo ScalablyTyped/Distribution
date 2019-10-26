@@ -34,6 +34,10 @@ class BuildingBlock protected () extends TemplateFormBase {
     container: IFolderBase
   ) = this()
   /**
+    * In version 8.3.0: introduced
+    */
+  var platform: SnippetType = js.native
+  /**
     * In version 7.15.0: deleted
     */
   var widget: Widget | Null = js.native

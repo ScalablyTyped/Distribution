@@ -19,6 +19,10 @@ package object Options {
   type OnCloseFn = js.ThisFunction0[/* this */ Lightpick, Unit]
   type OnErrorFn = js.ThisFunction1[/* this */ Lightpick, /* message */ String, Unit]
   /**
+    * Callback function for when the months select is changed.
+    */
+  type OnMonthsChangeFn = js.ThisFunction1[/* this */ Lightpick, /* month */ Double, Unit]
+  /**
     * Callback function for when the picker becomes visible.
     */
   type OnOpenFn = js.ThisFunction0[/* this */ Lightpick, Unit]
@@ -26,4 +30,8 @@ package object Options {
     * Callback function for when a date is selected.
     */
   type OnSelectFn = js.ThisFunction2[/* this */ Lightpick, /* startDate */ OutputDate, /* endDate */ OutputDate, Unit]
+  /**
+    * Callback function for when the years select is changed.
+    */
+  type OnYearsChangeFn = js.ThisFunction1[/* this */ Lightpick, /* year */ Double, Unit]
 }

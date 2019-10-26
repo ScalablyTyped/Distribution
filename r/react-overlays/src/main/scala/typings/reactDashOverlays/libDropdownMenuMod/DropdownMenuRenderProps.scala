@@ -1,11 +1,11 @@
 package typings.reactDashOverlays.libDropdownMenuMod
 
-import typings.react.Event
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashOverlays.Anon_Arialabelledby
 import typings.reactDashOverlays.Anon_Key
 import typings.reactDashOverlays.libOverlayMod.OverlayRenderProps
 import typings.reactDashOverlays.libOverlayMod.Placements
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

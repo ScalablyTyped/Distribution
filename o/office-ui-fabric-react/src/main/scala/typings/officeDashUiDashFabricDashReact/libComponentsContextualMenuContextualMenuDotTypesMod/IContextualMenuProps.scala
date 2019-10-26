@@ -14,13 +14,13 @@ import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContex
 import typings.officeDashUiDashFabricDashReact.libComponentsFocusZoneFocusZoneDotTypesMod.IFocusZoneProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.IWithResponsiveModeState
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
-import typings.react.Element
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.StatelessComponent
+import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Window
 import scala.scalajs.js

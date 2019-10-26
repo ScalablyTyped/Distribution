@@ -1,21 +1,27 @@
 package typings.reactDashMosaicDashComponent.libMosaicWindowMod
 
+import typings.react.reactMod.ReactElement
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragPreview
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragSource
+import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement
+import typings.reactDashDnd.libInterfacesOptionsMod.DragPreviewOptions
+import typings.reactDashDnd.libInterfacesOptionsMod.DragSourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InternalDragSourceProps extends js.Object {
-  var connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any
-  var connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any
+  var connectDragPreview: ConnectDragPreview
+  var connectDragSource: ConnectDragSource
 }
 
 object InternalDragSourceProps {
   @scala.inline
   def apply(
-    connectDragPreview: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragPreview */ js.Any,
-    connectDragSource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConnectDragSource */ js.Any
+    connectDragPreview: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null,
+    connectDragSource: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragSourceOptions]) => ReactElement | Null
   ): InternalDragSourceProps = {
-    val __obj = js.Dynamic.literal(connectDragPreview = connectDragPreview, connectDragSource = connectDragSource)
+    val __obj = js.Dynamic.literal(connectDragPreview = js.Any.fromFunction2(connectDragPreview), connectDragSource = js.Any.fromFunction2(connectDragSource))
   
     __obj.asInstanceOf[InternalDragSourceProps]
   }

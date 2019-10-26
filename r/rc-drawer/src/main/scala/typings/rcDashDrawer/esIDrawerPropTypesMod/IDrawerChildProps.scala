@@ -2,12 +2,12 @@ package typings.rcDashDrawer.esIDrawerPropTypesMod
 
 import typings.rcDashDrawer.Anon_OpenTarget
 import typings.rcDashDrawer.rcDashDrawerNumbers.`false`
-import typings.react.Element
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactElement
+import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

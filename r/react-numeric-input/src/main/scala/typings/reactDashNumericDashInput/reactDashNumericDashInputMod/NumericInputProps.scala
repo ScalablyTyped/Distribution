@@ -1,7 +1,6 @@
 package typings.reactDashNumericDashInput.reactDashNumericDashInputMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
@@ -12,6 +11,7 @@ import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashNumericDashInput.reactDashNumericDashInputStrings.auto
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js

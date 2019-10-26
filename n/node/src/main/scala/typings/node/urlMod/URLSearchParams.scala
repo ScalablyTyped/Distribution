@@ -1,8 +1,8 @@
 package typings.node.urlMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Iterable
-import typings.node.IterableIterator
+import typings.std.Iterable
+import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,10 +14,10 @@ class URLSearchParams ()
   def this(init: java.lang.String) = this()
   def this(init: js.Array[js.Tuple2[java.lang.String, java.lang.String]]) = this()
   def this(init: StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]]) = this()
-  def this(init: Iterable[js.Tuple2[java.lang.String, java.lang.String]]) = this()
   def this(init: URLSearchParams) = this()
+  def this(init: Iterable[js.Tuple2[java.lang.String, java.lang.String]]) = this()
   @JSName(scala.scalajs.js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
+  var iterator_URLSearchParams: js.Function0[IterableIterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
   def append(name: java.lang.String, value: java.lang.String): Unit = js.native
   def delete(name: java.lang.String): Unit = js.native
   def entries(): IterableIterator[js.Tuple2[java.lang.String, java.lang.String]] = js.native

@@ -1,5 +1,6 @@
 package typings.atJupyterlabTooltip.libWidgetMod.Tooltip
 
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
 import typings.atJupyterlabRendermime.libTokensMod.IRenderMimeRegistry
 import typings.atPhosphorCoreutils.libJsonMod.JSONObject
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
@@ -22,7 +23,7 @@ trait IOptions extends js.Object {
   /**
     * The editor referent of the tooltip model.
     */
-  var editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any
+  var editor: IEditor
   /**
     * The rendermime instance used by the tooltip model.
     */
@@ -31,12 +32,7 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(
-    anchor: Widget,
-    bundle: JSONObject,
-    editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any,
-    rendermime: IRenderMimeRegistry
-  ): IOptions = {
+  def apply(anchor: Widget, bundle: JSONObject, editor: IEditor, rendermime: IRenderMimeRegistry): IOptions = {
     val __obj = js.Dynamic.literal(anchor = anchor, bundle = bundle, editor = editor, rendermime = rendermime)
   
     __obj.asInstanceOf[IOptions]

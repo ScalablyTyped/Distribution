@@ -1,0 +1,21 @@
+package typings.pubnub.pubnubMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+// signal
+trait SignalParameters extends js.Object {
+  var channel: String
+  var message: js.Any
+}
+
+object SignalParameters {
+  @scala.inline
+  def apply(channel: String, message: js.Any): SignalParameters = {
+    val __obj = js.Dynamic.literal(channel = channel, message = message)
+  
+    __obj.asInstanceOf[SignalParameters]
+  }
+}
+

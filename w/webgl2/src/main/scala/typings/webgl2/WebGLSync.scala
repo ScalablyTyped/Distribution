@@ -7,5 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLSync")
 @js.native
-object WebGLSync extends Instantiable0[WebGLSync]
+class WebGLSync ()
+  extends typings.std.WebGLSync
+
+@JSGlobal("WebGLSync")
+@js.native
+object WebGLSync
+  extends Instantiable0[typings.std.WebGLSync]
 

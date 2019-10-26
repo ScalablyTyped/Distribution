@@ -1,8 +1,6 @@
 package typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod
 
 import typings.moment.momentMod.Moment
-import typings.react.Element
-import typings.react.Event
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref
 import typings.react.reactMod.SyntheticEvent
@@ -14,6 +12,8 @@ import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineString
 import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineStrings.resize
 import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineStrings.right
 import typings.std.Date
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

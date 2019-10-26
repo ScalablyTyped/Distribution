@@ -1,5 +1,6 @@
 package typings.reactDashMosaicDashComponent
 
+import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
 import typings.reactDashMosaicDashComponent.libButtonsMosaicButtonMod.MosaicButtonProps
 import typings.reactDashMosaicDashComponent.libTypesMod.MosaicKey
 import scala.scalajs.js
@@ -25,6 +26,8 @@ trait reactDashMosaicDashComponentProps {
   @scala.inline
   def ReplaceButtonProps: MosaicButtonProps.type = typings.reactDashMosaicDashComponent.libButtonsMosaicButtonMod.MosaicButtonProps
   type ReplaceButtonProps = MosaicButtonProps
+  type SourceConnectedInternalMosaicWindowProps[C, P] = LibraryManagedAttributes[C, P]
+  type SourceDropConnectedInternalMosaicWindowProps[C, P] = LibraryManagedAttributes[C, P]
   @scala.inline
   def SplitButtonProps: MosaicButtonProps.type = typings.reactDashMosaicDashComponent.libButtonsMosaicButtonMod.MosaicButtonProps
   type SplitButtonProps = MosaicButtonProps

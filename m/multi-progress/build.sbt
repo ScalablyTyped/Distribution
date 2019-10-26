@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "multi-progress"
-version := "2.0-dt-20181215Z-1b8067"
+version := "2.0-dt-20181215Z-35ea1c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
-  "org.scalablytyped" %%% "progress" % "2.0-dt-20190322Z-3dfd74",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "progress" % "2.0-dt-20190322Z-a1b78d",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

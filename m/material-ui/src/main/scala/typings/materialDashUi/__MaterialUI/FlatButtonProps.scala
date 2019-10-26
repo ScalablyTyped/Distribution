@@ -3,7 +3,6 @@ package typings.materialDashUi.__MaterialUI
 import typings.materialDashUi.materialDashUiStrings.after
 import typings.materialDashUi.materialDashUiStrings.before
 import typings.react.Anon_Html
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.CSSProperties
@@ -22,6 +21,7 @@ import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TransitionEvent
 import typings.react.reactMod.UIEvent
 import typings.react.reactMod.WheelEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

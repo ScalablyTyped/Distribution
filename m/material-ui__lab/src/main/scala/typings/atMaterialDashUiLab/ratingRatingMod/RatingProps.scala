@@ -47,7 +47,6 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tree
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.url
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.vertical
 import typings.react.Anon_Html
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
@@ -84,6 +83,7 @@ import typings.react.reactMod.UIEvent
 import typings.react.reactMod.UIEventHandler
 import typings.react.reactMod.WheelEvent
 import typings.react.reactMod.WheelEventHandler
+import typings.std.Event
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

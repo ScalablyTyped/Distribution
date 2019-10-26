@@ -1,7 +1,7 @@
 package typings.react.reactMod
 
-import typings.react.HTMLInputElement
 import typings.react.reactStrings.input
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

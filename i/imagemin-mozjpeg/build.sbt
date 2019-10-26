@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "imagemin-mozjpeg"
-version := "8.0-dt-20190924Z-6d1137"
+version := "8.0-dt-20190924Z-e4d2c5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "imagemin" % "7.0-dt-20190909Z-60a1f3",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
+  "org.scalablytyped" %%% "imagemin" % "7.0-dt-20190909Z-475c86",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

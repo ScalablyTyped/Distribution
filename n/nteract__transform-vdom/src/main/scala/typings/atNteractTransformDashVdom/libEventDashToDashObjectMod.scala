@@ -1,7 +1,6 @@
 package typings.atNteractTransformDashVdom
 
 import typings.atNteractTransformDashVdom.libEventDashToDashObjectMod.SerializedEvent
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.ChangeEvent
@@ -15,6 +14,7 @@ import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TransitionEvent
 import typings.react.reactMod.UIEvent
 import typings.react.reactMod.WheelEvent
+import typings.std.Event
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

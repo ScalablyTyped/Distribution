@@ -1,18 +1,19 @@
 package typings.forgeDashApis.forgeDashApisMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApiResponse extends js.Object {
   var body: js.Any
-  var headers: js.Any
+  var headers: StringDictionary[String]
   var statusCode: Double
 }
 
 object ApiResponse {
   @scala.inline
-  def apply(body: js.Any, headers: js.Any, statusCode: Double): ApiResponse = {
+  def apply(body: js.Any, headers: StringDictionary[String], statusCode: Double): ApiResponse = {
     val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode)
   
     __obj.asInstanceOf[ApiResponse]

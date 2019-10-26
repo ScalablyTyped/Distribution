@@ -30,6 +30,10 @@ class CustomWidgetType protected () extends Element {
     */
   var experimentalApi: Boolean = js.native
   /**
+    * In version 8.3.0: introduced
+    */
+  var helpUrl: String = js.native
+  /**
     * In version 8.0.0: deleted
     * In version 7.23.0: introduced
     */

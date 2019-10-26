@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress-cucumber-preprocessor"
-version := "1.12-dt-20190627Z-18728b"
+version := "1.14-dt-20191025Z-8d3b32"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

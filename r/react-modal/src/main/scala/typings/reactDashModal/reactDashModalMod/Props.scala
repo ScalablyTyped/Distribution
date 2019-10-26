@@ -1,9 +1,9 @@
 package typings.reactDashModal.reactDashModalMod
 
-import typings.react.Element
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

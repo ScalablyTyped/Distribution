@@ -1,5 +1,6 @@
 package typings.webrtc
 
+import typings.std.MediaStreamError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

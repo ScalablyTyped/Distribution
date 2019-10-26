@@ -16,5 +16,7 @@ object reactComponents extends reactProps {
   def StrictMode: ComponentType[StrictModeProps] = typings.react.reactMod.StrictMode.asInstanceOf[typings.react.reactMod.ComponentType[StrictModeProps]]
   @scala.inline
   def Suspense: ComponentType[SuspenseProps] = typings.react.reactMod.Suspense.asInstanceOf[typings.react.reactMod.ComponentType[SuspenseProps]]
+  @scala.inline
+  def SuspenseList: ComponentType[SuspenseListProps] = typings.react.reactMod.SuspenseList.asInstanceOf[typings.react.reactMod.ComponentType[SuspenseListProps]]
 }
 

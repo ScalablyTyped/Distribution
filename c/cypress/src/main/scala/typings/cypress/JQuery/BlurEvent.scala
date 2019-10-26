@@ -1,9 +1,9 @@
 package typings.cypress.JQuery
 
-import typings.cypress.Window
 import typings.cypress._FocusEvent
 import typings.cypress.cypressStrings.blur
 import typings.std.EventTarget
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

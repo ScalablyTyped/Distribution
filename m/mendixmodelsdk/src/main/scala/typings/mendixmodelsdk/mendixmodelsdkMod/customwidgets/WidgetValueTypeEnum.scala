@@ -16,6 +16,7 @@ object WidgetValueTypeEnum extends js.Object {
   var Action: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
   var Attribute: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
   var Boolean: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
+  var DataSource: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
   var Entity: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
   var EntityConstraint: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
   var Enumeration: typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native

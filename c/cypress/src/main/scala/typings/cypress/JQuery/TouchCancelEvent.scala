@@ -1,9 +1,9 @@
 package typings.cypress.JQuery
 
-import typings.cypress.Window
 import typings.cypress._TouchEvent
 import typings.cypress.cypressStrings.touchcancel
 import typings.std.TouchList
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

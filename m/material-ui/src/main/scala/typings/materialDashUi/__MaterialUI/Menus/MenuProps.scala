@@ -1,11 +1,11 @@
 package typings.materialDashUi.__MaterialUI.Menus
 
 import typings.materialDashUi.__MaterialUI.ReactLink
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

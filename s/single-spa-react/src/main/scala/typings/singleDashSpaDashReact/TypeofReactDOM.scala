@@ -10,9 +10,6 @@ import typings.react.reactMod.ReactInstance
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactPortal
 import typings.reactDashDom.reactDashDomMod.Renderer
-import typings.reactDashDom.reactDashDomMod.Root
-import typings.reactDashDom.reactDashDomMod.RootOptions
-import typings.reactDashDom.reactDashDomMod.SyncRoot
 import typings.std.Element
 import typings.std.Text
 import scala.scalajs.js
@@ -32,10 +29,6 @@ trait TypeofReactDOM extends js.Object {
   def unstable_batchedUpdates(callback: js.Function0[_]): Unit = js.native
   def unstable_batchedUpdates[A](callback: js.Function1[/* a */ A, _], a: A): Unit = js.native
   def unstable_batchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, _], a: A, b: B): Unit = js.native
-  def unstable_createRoot(container: Element): Root = js.native
-  def unstable_createRoot(container: Element, options: RootOptions): Root = js.native
-  def unstable_createSyncRoot(container: Element): SyncRoot = js.native
-  def unstable_createSyncRoot(container: Element, options: RootOptions): SyncRoot = js.native
   def unstable_renderSubtreeIntoContainer[T /* <: Element */](
     parentComponent: Component[_, js.Object, _],
     element: DOMElement[DOMAttributes[T], T],

@@ -1,7 +1,7 @@
 
 # Scala.js typings for webdriver
 
-Typings are for version 5.15.1
+Typings are for version 5.15.4
 
 ## Library description:
 A Node.js bindings implementation for the W3C WebDriver and Mobile JSONWire Protocol

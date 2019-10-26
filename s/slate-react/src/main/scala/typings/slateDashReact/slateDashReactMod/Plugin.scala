@@ -1,8 +1,6 @@
 package typings.slateDashReact.slateDashReactMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.Element
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.CompositionEvent
@@ -19,6 +17,8 @@ import typings.slate.slateMod.Query
 import typings.slate.slateMod.QueryFunc
 import typings.slate.slateMod.SchemaProperties
 import typings.slate.slateMod.SlateError
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

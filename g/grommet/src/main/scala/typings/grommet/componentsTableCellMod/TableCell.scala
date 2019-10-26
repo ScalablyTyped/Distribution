@@ -2,10 +2,10 @@ package typings.grommet.componentsTableCellMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsBoxMod.BoxTypes
-import typings.react.HTMLTableDataCellElement
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FC
 import typings.react.reactMod.TdHTMLAttributes
+import typings.std.HTMLTableDataCellElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

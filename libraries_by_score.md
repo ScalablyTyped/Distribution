@@ -1488,6 +1488,7 @@
 | 0.7451783675432313 | [lodash_dot_spread](./l/lodash_dot_spread) | The lodash method _.spread exported as a module.
 | 0.7451659042769178 | [parse-git-config](./p/parse-git-config) | Parse .git/config into a JavaScript object. sync o
 | 0.7451430824865911 | [is-odd](./i/is-odd) | Returns true if the given number is odd, and is an
+| 0.7451382516661272 | [googleapis-common](./g/googleapis-common) | A common tooling library used by the googleapis np
 | 0.7451200351036451 | [protocol-buffers-schema](./p/protocol-buffers-schema) | No nonsense protocol buffers schema parser written
 | 0.7450814257171557 | [netmask](./n/netmask) | Parse and lookup IP network blocks
 | 0.7450291950147951 | [d3-random](./d/d3-random) | Generate random numbers from various distributions
@@ -1878,6 +1879,7 @@
 | 0.7262383727919799 | [react-countup](./r/react-countup) | A React component wrapper around CountUp.js
 | 0.726185718202645 | [is-function](./i/is-function) | is that thing a function? Use this module to find 
 | 0.7260327996712366 | [apollo-datasource](./a/apollo-datasource) | -
+| 0.7260294355791336 | [retry-axios](./r/retry-axios) | Retry HTTP requests with Axios.
 | 0.7260041464238085 | [pangu](./p/pangu) | Paranoid text spacing for good readability, to aut
 | 0.725985673186939 | [xml-js](./x/xml-js) | A convertor between XML text and Javascript object
 | 0.7259663408854888 | [lodash_dot_flatmapdepth](./l/lodash_dot_flatmapdepth) | The lodash method _.flatMapDepth exported as a mod
@@ -2602,6 +2604,7 @@
 | 0.6919373413376014 | [npm-paths](./n/npm-paths) | Returns an array of NPM directory paths based on t
 | 0.6919357408781694 | [webpack-blocks__dev-serve](./w/webpack-blocks__dev-server) | Webpack block for the webpack dev server.
 | 0.6918849876090329 | [twilio](./t/twilio) | A Twilio helper library
+| 0.6918442139794054 | [typescript-collections](./t/typescript-collections) | A complete, fully tested data structure library wr
 | 0.6918401203615754 | [jexl](./j/jexl) | Javascript Expression Language: Powerful context-b
 | 0.6918289471010046 | [ngeohash](./n/ngeohash) | geohash library for nodejs
 | 0.6917882341355738 | [ast-types](./a/ast-types) | Esprima-compatible implementation of the Mozilla J
@@ -2648,9 +2651,11 @@
 | 0.6902034386593299 | [simple-websocket](./s/simple-websocket) | Simple, EventEmitter API for WebSockets (browser)
 | 0.6901750546414356 | [gulp-jasmine](./g/gulp-jasmine) | Run Jasmine tests
 | 0.6901625416397066 | [joigoose](./j/joigoose) | Joi validation for your Mongoose models without th
+| 0.6901588243725418 | [vcf](./v/vcf) | Parse and construct vCards, jCards
 | 0.6901527227429336 | [giphy-api](./g/giphy-api) | JavaScript module for the giphy.com API that suppo
 | 0.6900986941416991 | [koa-useragent](./k/koa-useragent) | Koa.js middleware for useragent detection
 | 0.6900797567325658 | [is-in-browser](./i/is-in-browser) | Simple check to see if current app is running in b
+| 0.690020399920264 | [promise-sequential](./p/promise-sequential) | Simple like Promise.all(), but sequentially
 | 0.689987726746687 | [koa-qs](./k/koa-qs) | qs for koa
 | 0.6899625126482175 | [koa-websocket](./k/koa-websocket) | Light wrapper around Koa providing a websocket mid
 | 0.6899396184385282 | [focus-within](./f/focus-within) | Style elements when they are focused or contain a 
@@ -2722,6 +2727,7 @@
 | 0.6877002146645677 | [dropkickjs](./d/dropkickjs) | A JavaScript plugin for creating beautiful, gracef
 | 0.687689615556914 | [subtitle](./s/subtitle) | Parse and manipulate SRT (SubRip)
 | 0.6876539283967558 | [scrypt-js](./s/scrypt-js) | The scrypt password-based key derivation function 
+| 0.6876037005386891 | [passport-oauth2-refresh](./p/passport-oauth2-refresh) | A passport.js add-on to provide automatic OAuth 2.
 | 0.6875753830171509 | [spectacle](./s/spectacle) | ReactJS Powered Presentation Framework
 | 0.6875556147173592 | [date-arithmetic](./d/date-arithmetic) | simple date math util
 | 0.6875517913448345 | [relay-config](./r/relay-config) | Config parser for Relay applications.
@@ -3397,6 +3403,7 @@
 | 0.6614070738083362 | [roads](./r/roads) | An isomophic http framework
 | 0.6613019679489541 | [random-normal](./r/random-normal) | Return a normally-distributed random variate.
 | 0.6612982730920407 | [get-range](./g/get-range) | Lazy number range generator
+| 0.6612833994859801 | [filesize-parser](./f/filesize-parser) | Takes human readable filesystem size strings and g
 | 0.6612760915829452 | [keyv__postgres](./k/keyv__postgres) | PostgreSQL storage adapter for Keyv
 | 0.6612536426900159 | [freshy](./f/freshy) | A node module (unre)loader.
 | 0.6612517995580206 | [graphql-config](./g/graphql-config) | The easiest way to configure your development envi
@@ -3459,6 +3466,7 @@
 | 0.6590186662482513 | [infobox-parser](./i/infobox-parser) | Parse Wikipedia Infobox Source
 | 0.6589873365432188 | [heapdump](./h/heapdump) | Make a dump of the V8 heap for later inspection.
 | 0.6589735596213417 | [seamless-immutable](./s/seamless-immutable) | Immutable data structures for JavaScript which are
+| 0.6589686166511685 | [node-os-utils](./n/node-os-utils) | An operating system utility library.
 | 0.6589459864728375 | [rollup-typescript](./r/rollup-typescript) | Seamless integration between Rollup and TypeScript
 | 0.6589355328633345 | [co](./c/co) | generator async control flow goodness
 | 0.6589213468894064 | [accurate-interval](./a/accurate-interval) | Create an accurate interval that does not skew ove
@@ -3505,6 +3513,7 @@
 | 0.657231409002632 | [react-native-view-pdf](./r/react-native-view-pdf) | React native Pdf viewer implementation
 | 0.6571938325089809 | [month-days](./m/month-days) | Get the number of days in a month
 | 0.6571475964945721 | [random](./r/random) | Seedable random number generator supporting many c
+| 0.657106554423158 | [connect-azuretables](./c/connect-azuretables) | Azure Table Storage session store for express-sess
 | 0.6570356351863963 | [jquery-formatdatetime](./j/jquery-formatdatetime) | A jQuery plugin that converts a date object to a s
 | 0.657001033295361 | [chartmogul-node](./c/chartmogul-node) | Official Chartmogul API Node.js Client
 | 0.6569807288969871 | [authmosphere](./a/authmosphere) | authmosphere is a library to support OAuth2 workfl
@@ -3522,6 +3531,7 @@
 | 0.65667468759535 | [axios-mock-adapter](./a/axios-mock-adapter) | Axios adapter that allows to easily mock requests
 | 0.6565926340694068 | [jsreport-html-embedded-in](./j/jsreport-html-embedded-in-docx) | jsreport recipe embedding output html into the doc
 | 0.65656281188973 | [keyv__mysql](./k/keyv__mysql) | MySQL/MariaDB storage adapter for Keyv
+| 0.6565567239832507 | [sodiumjs](./s/sodiumjs) | A Functional Reactive Programming (FRP) library fo
 | 0.6565372262642293 | [connect-history-api-fallb](./c/connect-history-api-fallback-exclusions) | Provides a fallback for non-existing directories s
 | 0.6564817303096301 | [emoji-strip](./e/emoji-strip) | Strip emoji from a string in Node.js and browsers.
 | 0.656381028205276 | [i18n-js](./i/i18n-js) | A javascript library similar to Ruby on Rails i18n
@@ -3714,6 +3724,7 @@
 | 0.6467061753881551 | [plugapi](./p/plugapi) | Generic API for building plug.dj bots
 | 0.6466929619037012 | [graphql-resolve-batch](./g/graphql-resolve-batch) | A GraphQL batching model which groups execution by
 | 0.6466469787896179 | [new-github-release-url](./n/new-github-release-url) | Generate a URL for opening a new GitHub release wi
+| 0.6466132065015544 | [internal-slot](./i/internal-slot) | ES spec-like internal slots
 | 0.6465217003813428 | [react-window-size](./r/react-window-size) | React HOC that passes browser window size to wrapp
 | 0.6464365174340374 | [long](./l/long) | A Long class for representing a 64-bit two's-compl
 | 0.6463643755832371 | [gulp-json-validator](./g/gulp-json-validator) | A json validator that has an option to check for d
@@ -3811,6 +3822,7 @@
 | 0.6416615007026163 | [react-tooltip](./r/react-tooltip) | react tooltip component
 | 0.6416380718295711 | [pouch-redux-middleware](./p/pouch-redux-middleware) | PouchDB Redux Middleware
 | 0.6415728654731903 | [parse5-serializer-stream](./p/parse5-serializer-stream) | Streaming HTML serializer.
+| 0.6414102694666576 | [mini-create-react-context](./m/mini-create-react-context) | Smaller Polyfill for the proposed React context AP
 | 0.6412148511666416 | [elo-rank](./e/elo-rank) | elo ranking system
 | 0.6412027870739436 | [parse5-plain-text-convers](./p/parse5-plain-text-conversion-stream) | Stream that converts plain text files into HTML do
 | 0.6410978973830165 | [vue-datetime](./v/vue-datetime) | Mobile friendly datetime picker for Vue. Supports 
@@ -4010,6 +4022,7 @@
 | 0.6286794770823723 | [mixpanel-browser](./m/mixpanel-browser) | The official Mixpanel JavaScript browser client li
 | 0.6284329722824474 | [koa-router](./k/koa-router) | Router middleware for koa. Provides RESTful resour
 | 0.6284325931397711 | [hummus-recipe](./h/hummus-recipe) | A powerful PDF tool for NodeJS based on HummusJS
+| 0.6283381305873987 | [json-schema-merge-allof](./j/json-schema-merge-allof) | Simplify your schema by combining allOf into the r
 | 0.6281403184523695 | [kiwicom__orbit-design-tok](./k/kiwicom__orbit-design-tokens) | Design tokens for Kiwi.com.
 | 0.6280722579913214 | [redux-async-queue](./r/redux-async-queue) | Async queue middleware for Redux.
 | 0.6280657051488716 | [project-oxford](./p/project-oxford) | Vision, and Face Intelligence with Project Oxford
@@ -4161,6 +4174,7 @@
 | 0.6173968744251768 | [passport-google-oauth20](./p/passport-google-oauth20) | Google (OAuth 2.0) authentication strategy for Pas
 | 0.6173388835186787 | [joi-password-complexity](./j/joi-password-complexity) | Joi validation for password complexity requirement
 | 0.6172304269389637 | [react-tag-input](./r/react-tag-input) | React tags is a fantastically simple tagging compo
+| 0.6167468796667133 | [intersperse](./i/intersperse) | Add an object to an array between each element
 | 0.6167163196443997 | [insight](./i/insight) | Understand how your tool is being used by anonymou
 | 0.6166127904295116 | [gulp-watch](./g/gulp-watch) | Watch, that actually is an endless stream
 | 0.6165764038743571 | [rword](./r/rword) | A cryptographically secure random generator for re
@@ -4182,6 +4196,7 @@
 | 0.6148028375865355 | [redux-devtools-log-monito](./r/redux-devtools-log-monitor) | The default tree view monitor for Redux DevTools
 | 0.6145963899982427 | [http-server](./h/http-server) | A simple zero-configuration command-line http serv
 | 0.6145662008803219 | [license-checker](./l/license-checker) | Check license info for a package
+| 0.6144925523479955 | [beanstalkd](./b/beanstalkd) | A beanstalkd client for Node.js with promises
 | 0.6144827454837136 | [lightpick](./l/lightpick) | Javascript date range picker - lightweight, no jQu
 | 0.6142700276326081 | [redux-devtools-dock-monit](./r/redux-devtools-dock-monitor) | A resizable and movable dock for Redux DevTools mo
 | 0.6142306903790018 | [vega-typings](./v/vega-typings) | Typings for Vega.
@@ -4711,6 +4726,7 @@
 | 0.5539324699518929 | [p-progress](./p/p-progress) | Create a promise that reports progress
 | 0.5538751698270286 | [remote-redux-devtools](./r/remote-redux-devtools) | Relay Redux actions to remote Redux DevTools.
 | 0.5531525107394681 | [ionic__storage](./i/ionic__storage) | Ionic Storage utility
+| 0.5530292666336037 | [react-count-to](./r/react-count-to) | Animated counter component for React.js
 | 0.5529801320032361 | [google-maps-react](./g/google-maps-react) | Google maps container
 | 0.5529782954160052 | [react-navigation-material](./r/react-navigation-material-bottom-tabs) | Material Bottom Tab Navigation component for React
 | 0.552382741785092 | [react-plaid-link](./r/react-plaid-link) | A React component for Plaid Link
@@ -4820,6 +4836,7 @@
 | 0.5354490951502703 | [jsonschema](./j/jsonschema) | A fast and easy to use JSON Schema validator
 | 0.5354236093043434 | [hpp](./h/hpp) | Express middleware to protect against HTTP Paramet
 | 0.535352812761377 | [jsmediatags](./j/jsmediatags) | Media Tags Reader (ID3, MP4)
+| 0.5353395517270019 | [columnify](./c/columnify) | Render data in text columns. Supports in-column te
 | 0.535337279583047 | [terminal-image](./t/terminal-image) | Display images in the terminal
 | 0.5350255089370897 | [jsum](./j/jsum) | Consistent checksum calculation of JSON objects.
 | 0.5347699008511098 | [cli-table](./c/cli-table) | Pretty unicode tables for the CLI
@@ -5258,6 +5275,7 @@
 | 0.4692250627805992 | [react-native-sortable-lis](./r/react-native-sortable-list) | React Native Sortable List component
 | 0.4691574841962214 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native.
 | 0.4691260243156069 | [mockery](./m/mockery) | Simplifying the use of mocks with Node.js
+| 0.4690002939966308 | [sloc](./s/sloc) | sloc is a simple tool to count SLOC (source lines 
 | 0.4687738108024164 | [dbus](./d/dbus) | A D-Bus binding for Node
 | 0.4687132228648571 | [vitalsigns](./v/vitalsigns) | Powerful and customizable application health monit
 | 0.46865562755765044 | [cordova-plugin-device-nam](./c/cordova-plugin-device-name) | Cordova Device Name Plugin
@@ -6466,6 +6484,7 @@
 | 0.3121213230796004 | [mem-cache](./m/mem-cache) | simple in memory key/value cache with autoclean by
 | 0.3119955869884978 | [jschannel](./j/jschannel) | Mozilla's Channel mechanism built on top of post-m
 | 0.3118488480144524 | [nivo__bar](./n/nivo__bar) | -
+| 0.3115702759189778 | [wanakana](./w/wanakana) | Utility library for converting between Kanji, Hira
 | 0.31144513106103444 | [connect-trim-body](./c/connect-trim-body) | Connect/Express middleware to trim all parameters 
 | 0.31141804165290077 | [bootstrap-3-typeahead](./b/bootstrap-3-typeahead) | Bootstrap 3 Typeahead: The typeahead autocomplete 
 | 0.3111824753007225 | [gulp-minify-html](./g/gulp-minify-html) | Minify html with minimize.
@@ -6561,6 +6580,7 @@
 | 0.29581603049247035 | [leaflet_dot_gridlayer_dot](./l/leaflet_dot_gridlayer_dot_googlemutant) | A plugin for LeafletJS to use Google maps basemaps
 | 0.29552956135005876 | [seen](./s/seen) | seen.js is a library for drawing simple 3D scenes 
 | 0.29542600231281835 | [simple-lru](./s/simple-lru) | minimal Least Recently Used Cache
+| 0.29524769050290106 | [os-utils](./o/os-utils) | an operating-system utility library
 | 0.29512249736202656 | [react-native-read-more-te](./r/react-native-read-more-text) | Add a 'Read More' and optionally a 'Read Less' but
 | 0.29496924781487827 | [react-gravatar](./r/react-gravatar) | React component for rendering a gravatar profile i
 | 0.2946528305506124 | [knockout-postbox](./k/knockout-postbox) | knockout-postbox ================ *knockout-postbo
@@ -7071,7 +7091,6 @@
 | 0.2017824197657338 | [material__icon-toggle](./m/material__icon-toggle) | The Material Components for the web icon toggle co
 | 0.20134707995081297 | [react-native-draggable-fl](./r/react-native-draggable-flatlist) | A drag-and-drop-enabled FlatList component for Rea
 | 0.20080922345309998 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer) | JupyterLab - Markdown viewer Widget
-| 0.20080708367936934 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search
 | 0.2007227286225471 | [aws-crypto__sha256-univer](./a/aws-crypto__sha256-universal) | A consistent interface for SHA256 across browsers 
 | 0.20066961829356728 | [swfobject](./s/swfobject) | SWFObject is an easy-to-use and standards-friendly
 | 0.2004926436806096 | [jupyterlab__vdom](./j/jupyterlab__vdom) | A viewer for VDOM documents.
@@ -7085,7 +7104,6 @@
 | 0.19843611538085618 | [aws-crypto__sha256-js](./a/aws-crypto__sha256-js) | A pure JS implementation SHA256.
 | 0.1984100919680944 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object.
 | 0.19775049523529142 | [lodash_dot_unescape](./l/lodash_dot_unescape) | The lodash method _.unescape exported as a module.
-| 0.1976327036199682 | [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types
 | 0.1972438591092262 | [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer 
 | 0.19697897963657768 | [lodash_dot_union](./l/lodash_dot_union) | The lodash method _.union exported as a module.
 | 0.19671182392319322 | [operation-retrier](./o/operation-retrier) | -

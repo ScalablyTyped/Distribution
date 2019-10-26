@@ -1,7 +1,7 @@
 package typings.victory
 
-import typings.react.Event
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.victory.victoryMod.EventCallbackInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`

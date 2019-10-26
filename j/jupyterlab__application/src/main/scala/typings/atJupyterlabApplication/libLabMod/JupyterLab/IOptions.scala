@@ -3,6 +3,7 @@ package typings.atJupyterlabApplication.libLabMod.JupyterLab
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IPaths
 import typings.atJupyterlabApplication.libShellMod.LabShell
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.CommandLinker
+import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
 import typings.atJupyterlabServices.atJupyterlabServicesMod.ServiceManager
 import typings.atPhosphorWidgets.libMenuMod.Menu.IRenderer
 import typings.std.Partial
@@ -25,7 +26,7 @@ object IOptions {
     shell: LabShell,
     commandLinker: CommandLinker = null,
     contextMenuRenderer: IRenderer = null,
-    docRegistry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry */ js.Any = null,
+    docRegistry: DocumentRegistry = null,
     paths: Partial[IPaths] = null,
     restored: js.Promise[js.Any] = null,
     serviceManager: ServiceManager = null

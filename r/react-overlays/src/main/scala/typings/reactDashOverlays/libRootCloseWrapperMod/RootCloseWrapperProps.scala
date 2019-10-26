@@ -1,10 +1,10 @@
 package typings.reactDashOverlays.libRootCloseWrapperMod
 
-import typings.react.Event
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashOverlays.reactDashOverlaysStrings.click
 import typings.reactDashOverlays.reactDashOverlaysStrings.mousedown
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

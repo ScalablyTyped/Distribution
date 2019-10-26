@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-datepicker"
-version := "2.9-dt-20191008Z-583bf5"
+version := "2.9-dt-20191008Z-9565ea"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "date-fns" % "2.6.0-0ece73",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-91a4b3",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

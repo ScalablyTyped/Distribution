@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "orchestrator"
-version := "0.3-dt-20190322Z-5d383e"
+version := "0.3-dt-20190322Z-f859c2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191023Z-ebe9d8",
+  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
   "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-c879d1",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

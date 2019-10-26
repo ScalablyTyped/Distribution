@@ -22,6 +22,5 @@ package object websql {
   type SQLTransactionSyncCallback = js.Function1[/* transaction */ SQLTransactionSync, Unit]
   //[Callback = FunctionOnly, NoInterfaceObject]
   type SQLVoidCallback = js.Function0[Unit]
-  type Window = WindowDatabase
   type WorkerUtils = WorkerUtilsDatabase
 }

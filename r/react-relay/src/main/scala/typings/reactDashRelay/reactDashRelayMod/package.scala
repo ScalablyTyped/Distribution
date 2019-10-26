@@ -24,5 +24,6 @@ package object reactDashRelayMod {
   {[ K in keyof T ]: react-relay.react-relay.FragmentOrRegularProp<T[K]>}
     */ typings.reactDashRelay.reactDashRelayStrings.MappedFragmentProps with T
   type ObserverOrCallback = Observer[Unit] | (js.Function1[/* error */ js.UndefOr[Error | Null], Unit])
-  type ReactRelayQueryRenderer[TOperation /* <: OperationType */] = Component[Anon_CacheConfig[TOperation], js.Object, js.Any]
+  type ReactRelayLocalQueryRenderer[TOperation /* <: OperationType */] = Component[QueryRendererProps[TOperation], js.Object, js.Any]
+  type ReactRelayQueryRenderer[TOperation /* <: OperationType */] = Component[Anon_CacheConfig with QueryRendererProps[TOperation], js.Object, js.Any]
 }

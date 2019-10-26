@@ -3,7 +3,6 @@ package typings.cypress.Cypress
 import typings.cypress.JQuery
 import typings.cypress.Mocha.IRunnable
 import typings.cypress.Mocha.ITest
-import typings.cypress.Window
 import typings.cypress.cypressNumbers.`false`
 import typings.cypress.cypressStrings.`command:end`
 import typings.cypress.cypressStrings.`command:enqueued`
@@ -30,6 +29,7 @@ import typings.std.BeforeUnloadEvent
 import typings.std.Error
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

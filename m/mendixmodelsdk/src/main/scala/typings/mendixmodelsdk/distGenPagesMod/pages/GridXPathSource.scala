@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenPagesMod.pages
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IEntity
 import typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
@@ -57,7 +58,25 @@ object GridXPathSource extends js.Object {
     * Creates and returns a new GridXPathSource instance in the SDK and on the server.
     * The new GridXPathSource will be automatically stored in the 'dataSource' property
     * of the parent EntityWidget element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 8.2.0
     */
   def createIn(container: EntityWidget): GridXPathSource = js.native
+  /**
+    * Creates and returns a new GridXPathSource instance in the SDK and on the server.
+    * The new GridXPathSource will be automatically stored in the 'dataSource' property
+    * of the parent EntityWidget element passed as argument.
+    */
+  def createInEntityWidgetUnderDataSource(container: EntityWidget): GridXPathSource = js.native
+  /**
+    * Creates and returns a new GridXPathSource instance in the SDK and on the server.
+    * The new GridXPathSource will be automatically stored in the 'dataSource' property
+    * of the parent customwidgets.WidgetValue element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.3.0 and higher
+    */
+  def createInWidgetValueUnderDataSource(container: WidgetValue): GridXPathSource = js.native
 }
 

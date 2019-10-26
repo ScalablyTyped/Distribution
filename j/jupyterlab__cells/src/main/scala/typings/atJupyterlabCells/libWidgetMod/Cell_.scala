@@ -4,6 +4,8 @@ import typings.atJupyterlabCells.libInputareaMod.InputArea
 import typings.atJupyterlabCells.libModelMod.ICellModel
 import typings.atJupyterlabCells.libWidgetMod.Cell.IContentFactory
 import typings.atJupyterlabCells.libWidgetMod.Cell.IOptions
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
+import typings.atJupyterlabCodeeditor.libMod.CodeEditorWrapper
 import typings.atJupyterlabObservables.libObservablemapMod.IObservableMap
 import typings.atJupyterlabObservables.libObservablemapMod.IObservableMap.IChangedArgs
 import typings.atPhosphorCoreutils.libJsonMod.JSONValue
@@ -35,11 +37,11 @@ class Cell_ protected () extends Widget {
   /**
     * Get the CodeEditor used by the cell.
     */
-  val editor: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IEditor */ js.Any = js.native
+  val editor: IEditor = js.native
   /**
     * Get the CodeEditorWrapper used by the cell.
     */
-  val editorWidget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditorWrapper */ js.Any = js.native
+  val editorWidget: CodeEditorWrapper = js.native
   /**
     * Get the input area for the cell.
     */

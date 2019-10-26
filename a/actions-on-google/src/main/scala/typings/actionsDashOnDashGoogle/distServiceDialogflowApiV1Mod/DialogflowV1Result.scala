@@ -1,0 +1,48 @@
+package typings.actionsDashOnDashGoogle.distServiceDialogflowApiV1Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DialogflowV1Result extends js.Object {
+  var action: js.UndefOr[String] = js.undefined
+  var actionIncomplete: js.UndefOr[Boolean] = js.undefined
+  var contexts: js.UndefOr[js.Array[DialogflowV1Context]] = js.undefined
+  var fulfillment: js.UndefOr[DialogflowV1Fulfillment] = js.undefined
+  var metadata: js.UndefOr[DialogflowV1Metadata] = js.undefined
+  var parameters: js.UndefOr[DialogflowV1Parameters] = js.undefined
+  var resolvedQuery: js.UndefOr[String] = js.undefined
+  var score: js.UndefOr[Double] = js.undefined
+  var source: js.UndefOr[String] = js.undefined
+  var speech: js.UndefOr[String] = js.undefined
+}
+
+object DialogflowV1Result {
+  @scala.inline
+  def apply(
+    action: String = null,
+    actionIncomplete: js.UndefOr[Boolean] = js.undefined,
+    contexts: js.Array[DialogflowV1Context] = null,
+    fulfillment: DialogflowV1Fulfillment = null,
+    metadata: DialogflowV1Metadata = null,
+    parameters: DialogflowV1Parameters = null,
+    resolvedQuery: String = null,
+    score: Int | Double = null,
+    source: String = null,
+    speech: String = null
+  ): DialogflowV1Result = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (!js.isUndefined(actionIncomplete)) __obj.updateDynamic("actionIncomplete")(actionIncomplete)
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
+    if (fulfillment != null) __obj.updateDynamic("fulfillment")(fulfillment)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (resolvedQuery != null) __obj.updateDynamic("resolvedQuery")(resolvedQuery)
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (speech != null) __obj.updateDynamic("speech")(speech)
+    __obj.asInstanceOf[DialogflowV1Result]
+  }
+}
+

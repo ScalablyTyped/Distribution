@@ -3,7 +3,6 @@ package typings.reactDashDatepicker
 import org.scalablytyped.runtime.StringDictionary
 import typings.dateDashFns.dateDashFnsMod.Locale
 import typings.popperDotJs.popperDotJsMod.Modifiers
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.FocusEvent
@@ -17,6 +16,7 @@ import typings.reactDashDatepicker.reactDashDatepickerMod.ReactDatePickerProps
 import typings.reactDashDatepicker.reactDashDatepickerStrings.scroll
 import typings.reactDashDatepicker.reactDashDatepickerStrings.select
 import typings.std.Date
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js

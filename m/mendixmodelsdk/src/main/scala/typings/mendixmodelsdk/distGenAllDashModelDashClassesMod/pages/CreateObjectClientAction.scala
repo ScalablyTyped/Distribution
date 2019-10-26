@@ -105,6 +105,15 @@ object CreateObjectClientAction extends js.Object {
   def createInBottomBarItemUnderAction(container: BottomBarItem): typings.mendixmodelsdk.distGenPagesMod.pages.CreateObjectClientAction = js.native
   /**
     * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
+    * The new CreateObjectClientAction will be automatically stored in the 'onClickAction' property
+    * of the parent DivContainer element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.3.0 and higher
+    */
+  def createInDivContainerUnderOnClickAction(container: typings.mendixmodelsdk.distGenPagesMod.pages.DivContainer): typings.mendixmodelsdk.distGenPagesMod.pages.CreateObjectClientAction = js.native
+  /**
+    * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
     * The new CreateObjectClientAction will be automatically stored in the 'clickAction' property
     * of the parent DynamicImageViewer element passed as argument.
     *

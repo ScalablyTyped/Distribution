@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociationBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.ICrossAssociation because var conflicts: id, isLoaded, model, name, owner, parent, structureTypeName, `type`, unit. Inlined child, childQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CrossAssociation")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.ICrossAssociation because var conflicts: id, isLoaded, model, name, owner, parent, remoteSourceDocument, structureTypeName, `type`, unit. Inlined child, childQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CrossAssociation")
 @js.native
 class CrossAssociation protected () extends AssociationBase {
   def this(

@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.fluxxor.fluxxorStrings.input
 import typings.react.Anon_Children
 import typings.react.Anon_Default
-import typings.react.Element
-import typings.react.HTMLElement
-import typings.react.HTMLInputElement
-import typings.react.SVGElement
+import typings.react.experimentalMod.reactMod.SuspenseConfig
+import typings.react.experimentalMod.reactMod.SuspenseListProps
+import typings.react.experimentalMod.reactMod.TimeoutConfig
+import typings.react.experimentalMod.reactMod.TransitionStartFunction
 import typings.react.reactMod.Attributes
 import typings.react.reactMod.CElement
 import typings.react.reactMod.CFactory
@@ -61,7 +61,11 @@ import typings.react.reactMod.SVGAttributes
 import typings.react.reactMod.SVGFactory
 import typings.react.reactMod.SetStateAction
 import typings.react.reactMod.SuspenseProps
+import typings.std.Element
+import typings.std.HTMLElement
+import typings.std.HTMLInputElement
 import typings.std.Partial
+import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,6 +85,7 @@ trait TypeofReact extends js.Object {
     * Suspense support will be added in a later release.
     */
   val Suspense: ExoticComponent[SuspenseProps] = js.native
+  val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
   val version: String = js.native
   // Custom components
   def cloneElement[P](element: FunctionComponentElement[P]): FunctionComponentElement[P] = js.native
@@ -92,20 +97,29 @@ trait TypeofReact extends js.Object {
   // DOM Element (has to be the last, because type checking stops at first overload that fits)
   def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T]): DOMElement[P, T] = js.native
   def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: DOMAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-  // ReactHTMLElement, less specific
-  def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T]): ReactHTMLElement[T] = js.native
-  def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
+  // DOM Elements
+  // ReactHTMLElement
+  def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T]): DetailedReactHTMLElement[P, T] = js.native
+  def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
   // SVGElement
   def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement): ReactSVGElement = js.native
   def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: P, children: ReactNode*): ReactSVGElement = js.native
-  // DOM Elements
-  // ReactHTMLElement
+  // ReactHTMLElement, less specific
   @JSName("cloneElement")
-  def cloneElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T]): DetailedReactHTMLElement[P, T] = js.native
+  def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T]): ReactHTMLElement[T] = js.native
   @JSName("cloneElement")
-  def cloneElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
-  def createContext[T](defaultValue: T): Context[T] = js.native
-  def createContext[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]): Context[T] = js.native
+  def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
+  def createContext[T](
+    // If you thought this should be optional, see
+  // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
+  defaultValue: T
+  ): Context[T] = js.native
+  def createContext[T](
+    // If you thought this should be optional, see
+  // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
+  defaultValue: T,
+    calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]
+  ): Context[T] = js.native
   def createElement[P /* <: js.Object */](`type`: String): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, children: ReactNode*): ReactElement = js.native
   def createElement[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
@@ -203,6 +217,8 @@ trait TypeofReact extends js.Object {
     Component: SFC[P],
     propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
   ): NamedExoticComponent[P] = js.native
+  def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]]): Unit = js.native
+  def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: SuspenseConfig): Unit = js.native
   // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
   // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
   /**
@@ -236,6 +252,8 @@ trait TypeofReact extends js.Object {
   // it's just the function name without the "use" prefix.
   def useDebugValue[T](value: T): Unit = js.native
   def useDebugValue[T](value: T, format: js.Function1[/* value */ T, _]): Unit = js.native
+  def useDeferredValue[T](value: T): T = js.native
+  def useDeferredValue[T](value: T, config: TimeoutConfig): T = js.native
   /**
     * Accepts a function that contains imperative, possibly effectful code.
     *
@@ -393,5 +411,7 @@ trait TypeofReact extends js.Object {
     */
   def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
   def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+  def useTransition(): js.Tuple2[TransitionStartFunction, Boolean] = js.native
+  def useTransition(config: SuspenseConfig): js.Tuple2[TransitionStartFunction, Boolean] = js.native
 }
 

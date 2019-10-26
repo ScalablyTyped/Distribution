@@ -1,8 +1,6 @@
 package typings.slateDashReact.slateDashReactMod
 
 import typings.immutable.immutableMod.List
-import typings.react.Element
-import typings.react.Event
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
@@ -100,6 +98,8 @@ import typings.slateDashReact.Fn_Query
 import typings.slateDashReact.Fn_Range
 import typings.slateDashReact.Fn_RangeText
 import typings.slateDashReact.Fn_Text
+import typings.std.Element
+import typings.std.Event
 import typings.std.Range
 import typings.std.Selection
 import scala.scalajs.js
@@ -540,10 +540,10 @@ class Editor ()
   def findDOMRange(range: RangeTypeJSON): Range | Null = js.native
   def findDOMRange(range: RangeTypeProperties): Range | Null = js.native
   def findEventRange(event: SyntheticEvent[Element, Event]): typings.slate.slateMod.Range | Null = js.native
-  def findEventRange(event: typings.std.Event): typings.slate.slateMod.Range | Null = js.native
-  def findNode(element: typings.std.Element): Node | Null = js.native
-  def findPath(element: typings.std.Element): List[Double] | Null = js.native
-  def findPoint(nativeNode: typings.std.Element, nativeOffset: Double): Point | Null = js.native
+  def findEventRange(event: Event): typings.slate.slateMod.Range | Null = js.native
+  def findNode(element: Element): Node | Null = js.native
+  def findPath(element: Element): List[Double] | Null = js.native
+  def findPoint(nativeNode: Element, nativeOffset: Double): Point | Null = js.native
   def findRange(domRange: Range): typings.slate.slateMod.Range | Null = js.native
   def findRange(domRange: Selection): typings.slate.slateMod.Range | Null = js.native
   def findSelection(domSelection: Selection): typings.slate.slateMod.Selection | Null = js.native

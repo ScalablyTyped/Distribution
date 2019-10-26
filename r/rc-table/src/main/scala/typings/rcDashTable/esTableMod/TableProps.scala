@@ -8,14 +8,14 @@ import typings.rcDashTable.esInterfaceMod.GetRowKey
 import typings.rcDashTable.esInterfaceMod.LegacyFunction
 import typings.rcDashTable.esInterfaceMod.TableComponents
 import typings.rcDashTable.rcDashTableStrings.fixed
-import typings.react.Element
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Element
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,5 +1,6 @@
 package typings.jest.jestMod.jest
 
+import typings.std.Record
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ trait Expect extends js.Object {
     *
     * @param actual The value to apply matchers against.
     */
-  def apply[T](actual: T): Matchers[T] = js.native
+  def apply[T](actual: T): JestMatchers[T] = js.native
   /**
     * Adds a module to format application-specific data structures for serialization.
     */
@@ -70,6 +71,7 @@ trait Expect extends js.Object {
     * You can use `expect.extend` to add your own matchers to Jest.
     */
   def extend(obj: ExpectExtendMap): Unit = js.native
+  def getState(): MatcherState with (Record[String, _]) = js.native
   /**
     * Verifies that at least one assertion is called during a test.
     * This is often useful when testing asynchronous code, in order to
@@ -81,6 +83,7 @@ trait Expect extends js.Object {
     * This is often handy in conjunction with other asymmetric matchers.
     */
   def objectContaining(obj: js.Object): js.Any = js.native
+  def setState(state: js.Object): Unit = js.native
   /**
     * Matches any received string that contains the exact expected string
     */

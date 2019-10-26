@@ -1,6 +1,5 @@
 package typings.sortablejs.sortablejsMod
 
-import typings.sortablejs.sortablejsStrings.clone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,13 +12,11 @@ trait GroupOptions extends js.Object {
   /**
     * ability to move from the list. clone — copy the item, rather than move.
     */
-  var pull: js.UndefOr[
-    Boolean | clone | (js.Function2[/* to */ Sortable, /* from */ Sortable, Boolean | String])
-  ] = js.undefined
+  var pull: js.UndefOr[PullResult | (js.Function2[/* to */ Sortable, /* from */ Sortable, PullResult])] = js.undefined
   /**
     * whether elements can be added from other lists, or an array of group names from which elements can be taken.
     */
-  var put: js.UndefOr[Boolean | String | js.Array[String] | (js.Function1[/* to */ Sortable, Boolean])] = js.undefined
+  var put: js.UndefOr[(js.Function1[/* to */ Sortable, PutResult]) | PutResult] = js.undefined
   /**
     * revert cloned element to initial position after moving to a another list.
     */
@@ -30,8 +27,8 @@ object GroupOptions {
   @scala.inline
   def apply(
     name: String,
-    pull: Boolean | clone | (js.Function2[/* to */ Sortable, /* from */ Sortable, Boolean | String]) = null,
-    put: Boolean | String | js.Array[String] | (js.Function1[/* to */ Sortable, Boolean]) = null,
+    pull: PullResult | (js.Function2[/* to */ Sortable, /* from */ Sortable, PullResult]) = null,
+    put: (js.Function1[/* to */ Sortable, PutResult]) | PutResult = null,
     revertClone: js.UndefOr[Boolean] = js.undefined
   ): GroupOptions = {
     val __obj = js.Dynamic.literal(name = name)

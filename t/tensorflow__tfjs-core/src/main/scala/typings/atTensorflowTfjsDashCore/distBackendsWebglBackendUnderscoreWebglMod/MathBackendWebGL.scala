@@ -1,16 +1,18 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglBackendUnderscoreWebglMod
 
-import typings.atTensorflowTfjsDashCore.Anon_DataId
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NCHW
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.NHWC
+import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.DataStorage
 import typings.atTensorflowTfjsDashCore.distBackendsBackendMod.KernelBackend
 import typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreContextMod.GPGPUContext
 import typings.atTensorflowTfjsDashCore.distBackendsWebglGpgpuUnderscoreMathMod.GPGPUProgram
 import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureData
 import typings.atTensorflowTfjsDashCore.distBackendsWebglTextureUnderscoreManagerMod.TextureManager
+import typings.atTensorflowTfjsDashCore.distKernelUnderscoreRegistryMod.TensorInfo
 import typings.atTensorflowTfjsDashCore.distTensorMod.DataId
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
+import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.std.WebGLProgram
 import typings.std.WebGLTexture
@@ -29,6 +31,7 @@ class MathBackendWebGL () extends KernelBackend {
   var argReducePacked: js.Any = js.native
   var binaryCache: js.Any = js.native
   var canvas: js.Any = js.native
+  var checkNumericalProblems: js.Any = js.native
   /**
     * Computes a complex binary operation that can be decomposed into a simple
     * binary operation on both the real and imagary parts.
@@ -53,10 +56,9 @@ class MathBackendWebGL () extends KernelBackend {
   var getValuesFromTexture: js.Any = js.native
   var gpgpu: js.UndefOr[js.Any] = js.native
   var gpgpuCreatedLocally: js.Any = js.native
-  var makeComplexComponentTensorHandle: js.Any = js.native
-  var makeOutputArray: js.Any = js.native
-  var makePackedTensor: js.Any = js.native
-  var makeTensorHandle: js.Any = js.native
+  var makeComplexComponentTensorInfo: js.Any = js.native
+  var makeOutput: js.Any = js.native
+  var makeTensorInfo: js.Any = js.native
   var numBytesInGPU: js.Any = js.native
   var numMBBeforeWarning: js.Any = js.native
   var packTensor: js.Any = js.native
@@ -72,24 +74,24 @@ class MathBackendWebGL () extends KernelBackend {
   var shallowSlice: js.Any = js.native
   var shouldExecuteOnCPU: js.Any = js.native
   var startTimer: js.Any = js.native
-  var texData: js.Any = js.native
+  var texData: DataStorage[TextureData] = js.native
   var textureManager: js.Any = js.native
   var unpackTensor: js.Any = js.native
   var uploadToGPU: js.Any = js.native
   var uploadWaitMs: js.Any = js.native
   var warnedAboutMemory: js.Any = js.native
-  def compileAndRun[K /* <: Anon_DataId */](program: GPGPUProgram, inputs: js.Array[TensorHandle]): K = js.native
-  def compileAndRun[K /* <: Anon_DataId */](program: GPGPUProgram, inputs: js.Array[TensorHandle], output: K): K = js.native
-  def compileAndRun[K /* <: Anon_DataId */](
+  def compileAndRun[K /* <: TensorInfo */](program: GPGPUProgram, inputs: js.Array[TensorInfo]): K = js.native
+  def compileAndRun[K /* <: TensorInfo */](program: GPGPUProgram, inputs: js.Array[TensorInfo], outputDtype: DataType): K = js.native
+  def compileAndRun[K /* <: TensorInfo */](
     program: GPGPUProgram,
-    inputs: js.Array[TensorHandle],
-    output: K,
+    inputs: js.Array[TensorInfo],
+    outputDtype: DataType,
     customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
   ): K = js.native
-  def compileAndRun[K /* <: Anon_DataId */](
+  def compileAndRun[K /* <: TensorInfo */](
     program: GPGPUProgram,
-    inputs: js.Array[TensorHandle],
-    output: K,
+    inputs: js.Array[TensorInfo],
+    outputDtype: DataType,
     customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
     preventEagerUnpackingOfOutput: Boolean
   ): K = js.native
@@ -109,5 +111,19 @@ class MathBackendWebGL () extends KernelBackend {
     x: Tensor[Rank],
     shape: /* import warning: ImportType.apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = js.native
+  def runWebGLProgram(program: GPGPUProgram, inputs: js.Array[TensorInfo], outputDtype: DataType): TensorInfo = js.native
+  def runWebGLProgram(
+    program: GPGPUProgram,
+    inputs: js.Array[TensorInfo],
+    outputDtype: DataType,
+    customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit]
+  ): TensorInfo = js.native
+  def runWebGLProgram(
+    program: GPGPUProgram,
+    inputs: js.Array[TensorInfo],
+    outputDtype: DataType,
+    customSetup: js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit],
+    preventEagerUnpackingOfOutput: Boolean
+  ): TensorInfo = js.native
 }
 

@@ -1,6 +1,9 @@
 package typings.atJupyterlabVdom
 
 import typings.atJupyterlabApputils.libWidgettrackerMod.IWidgetTracker
+import typings.atJupyterlabDocregistry.libMod.MimeDocument
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IContext
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IRenderer
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IRendererOptions
 import typings.atNteractTransformDashVdom.libEventDashToDashObjectMod.SerializedEvent
@@ -18,10 +21,7 @@ object atJupyterlabVdomMod extends js.Object {
       * Create a new widget for rendering DOM.
       */
     def this(options: IRendererOptions) = this()
-    def this(
-      options: IRendererOptions,
-      context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IContext<DocumentRegistry.IModel> */ js.Any
-    ) = this()
+    def this(options: IRendererOptions, context: IContext[IModel]) = this()
     var _comms: js.Any = js.native
     var _mimeType: js.Any = js.native
     var _session: js.UndefOr[js.Any] = js.native
@@ -33,8 +33,6 @@ object atJupyterlabVdomMod extends js.Object {
   }
   
   val IVDOMTracker: Token[typings.atJupyterlabVdom.atJupyterlabVdomMod.IVDOMTracker] = js.native
-  type IVDOMTracker = IWidgetTracker[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MimeDocument */ js.Any
-  ]
+  type IVDOMTracker = IWidgetTracker[MimeDocument]
 }
 

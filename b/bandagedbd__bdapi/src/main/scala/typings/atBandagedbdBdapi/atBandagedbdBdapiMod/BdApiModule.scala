@@ -5,9 +5,10 @@ import typings.atBandagedbdBdapi.TypeofClassComponent
 import typings.atBandagedbdBdapi.atBandagedbdBdapiStrings.input
 import typings.react.Anon_Children
 import typings.react.Anon_Default
-import typings.react.Element
-import typings.react.HTMLInputElement
-import typings.react.SVGElement
+import typings.react.experimentalMod.reactMod.SuspenseConfig
+import typings.react.experimentalMod.reactMod.SuspenseListProps
+import typings.react.experimentalMod.reactMod.TimeoutConfig
+import typings.react.experimentalMod.reactMod.TransitionStartFunction
 import typings.react.reactMod.Attributes
 import typings.react.reactMod.CElement
 import typings.react.reactMod.CFactory
@@ -64,11 +65,11 @@ import typings.react.reactMod.SVGFactory
 import typings.react.reactMod.SetStateAction
 import typings.react.reactMod.SuspenseProps
 import typings.reactDashDom.reactDashDomMod.Renderer
-import typings.reactDashDom.reactDashDomMod.Root
-import typings.reactDashDom.reactDashDomMod.RootOptions
-import typings.reactDashDom.reactDashDomMod.SyncRoot
+import typings.std.Element
 import typings.std.HTMLElement
+import typings.std.HTMLInputElement
 import typings.std.Partial
+import typings.std.SVGElement
 import typings.std.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -191,6 +192,7 @@ object BdApiModule extends js.Object {
       * Suspense support will be added in a later release.
       */
     val Suspense: ExoticComponent[SuspenseProps] = js.native
+    val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
     val version: String = js.native
     // Custom components
     def cloneElement[P](element: FunctionComponentElement[P]): FunctionComponentElement[P] = js.native
@@ -202,20 +204,29 @@ object BdApiModule extends js.Object {
     // DOM Element (has to be the last, because type checking stops at first overload that fits)
     def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T]): DOMElement[P, T] = js.native
     def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: DOMAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-    // ReactHTMLElement, less specific
-    def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: typings.react.HTMLElement */](element: ReactHTMLElement[T]): ReactHTMLElement[T] = js.native
-    def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: typings.react.HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
+    // DOM Elements
+    // ReactHTMLElement
+    def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T]): DetailedReactHTMLElement[P, T] = js.native
+    def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
     // SVGElement
     def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement): ReactSVGElement = js.native
     def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: P, children: ReactNode*): ReactSVGElement = js.native
-    // DOM Elements
-    // ReactHTMLElement
+    // ReactHTMLElement, less specific
     @JSName("cloneElement")
-    def cloneElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: typings.react.HTMLElement */](element: DetailedReactHTMLElement[P, T]): DetailedReactHTMLElement[P, T] = js.native
+    def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T]): ReactHTMLElement[T] = js.native
     @JSName("cloneElement")
-    def cloneElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: typings.react.HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
-    def createContext[T](defaultValue: T): Context[T] = js.native
-    def createContext[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]): Context[T] = js.native
+    def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
+    def createContext[T](
+      // If you thought this should be optional, see
+    // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
+    defaultValue: T
+    ): Context[T] = js.native
+    def createContext[T](
+      // If you thought this should be optional, see
+    // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
+    defaultValue: T,
+      calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]
+    ): Context[T] = js.native
     def createElement[P /* <: js.Object */](`type`: String): ReactElement = js.native
     def createElement[P /* <: js.Object */](`type`: String, children: ReactNode*): ReactElement = js.native
     def createElement[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
@@ -255,14 +266,14 @@ object BdApiModule extends js.Object {
     @JSName("createElement")
     def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, children: ReactNode*): DOMElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: typings.react.HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any): DetailedReactHTMLElement[P, T] = js.native
+    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any): DetailedReactHTMLElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: typings.react.HTMLElement */](
+    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
       `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: typings.react.HTMLElement */](
+    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
       `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any,
       props: ClassAttributes[T] with P,
       children: ReactNode*
@@ -297,7 +308,7 @@ object BdApiModule extends js.Object {
     // ----------------------------------------------------------------------
     // DOM Elements
     @JSName("createFactory")
-    def createFactory_T_HTMLElement_HTMLFactory[T /* <: typings.react.HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any): HTMLFactory[T] = js.native
+    def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any): HTMLFactory[T] = js.native
     def createRef[T](): RefObject[T] = js.native
     def forwardRef[T, P](Component: RefForwardingComponent[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
     def isValidElement[P](): /* is react.react.ReactElement */ Boolean = js.native
@@ -313,6 +324,8 @@ object BdApiModule extends js.Object {
       Component: SFC[P],
       propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
     ): NamedExoticComponent[P] = js.native
+    def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]]): Unit = js.native
+    def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: SuspenseConfig): Unit = js.native
     // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
     // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
     /**
@@ -346,6 +359,8 @@ object BdApiModule extends js.Object {
     // it's just the function name without the "use" prefix.
     def useDebugValue[T](value: T): Unit = js.native
     def useDebugValue[T](value: T, format: js.Function1[/* value */ T, _]): Unit = js.native
+    def useDeferredValue[T](value: T): T = js.native
+    def useDeferredValue[T](value: T, config: TimeoutConfig): T = js.native
     /**
       * Accepts a function that contains imperative, possibly effectful code.
       *
@@ -503,6 +518,8 @@ object BdApiModule extends js.Object {
       */
     def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
     def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+    def useTransition(): js.Tuple2[TransitionStartFunction, Boolean] = js.native
+    def useTransition(config: SuspenseConfig): js.Tuple2[TransitionStartFunction, Boolean] = js.native
   }
   
   /**
@@ -513,48 +530,37 @@ object BdApiModule extends js.Object {
     val hydrate: Renderer = js.native
     val render: Renderer = js.native
     val version: String = js.native
-    def createPortal(children: ReactNode, container: typings.std.Element): ReactPortal = js.native
-    def createPortal(children: ReactNode, container: typings.std.Element, key: String): ReactPortal = js.native
-    def findDOMNode(): typings.std.Element | Null | Text = js.native
-    def findDOMNode(instance: ReactInstance): typings.std.Element | Null | Text = js.native
-    def unmountComponentAtNode(container: typings.std.Element): Boolean = js.native
+    def createPortal(children: ReactNode, container: Element): ReactPortal = js.native
+    def createPortal(children: ReactNode, container: Element, key: String): ReactPortal = js.native
+    def findDOMNode(): Element | Null | Text = js.native
+    def findDOMNode(instance: ReactInstance): Element | Null | Text = js.native
+    def unmountComponentAtNode(container: Element): Boolean = js.native
     def unstable_batchedUpdates(callback: js.Function0[_]): Unit = js.native
     def unstable_batchedUpdates[A](callback: js.Function1[/* a */ A, _], a: A): Unit = js.native
     def unstable_batchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, _], a: A, b: B): Unit = js.native
-    def unstable_createRoot(container: typings.std.Element): Root = js.native
-    def unstable_createRoot(container: typings.std.Element, options: RootOptions): Root = js.native
-    def unstable_createSyncRoot(container: typings.std.Element): SyncRoot = js.native
-    def unstable_createSyncRoot(container: typings.std.Element, options: RootOptions): SyncRoot = js.native
-    def unstable_renderSubtreeIntoContainer[T /* <: typings.std.Element */](
+    def unstable_renderSubtreeIntoContainer[T /* <: Element */](
       parentComponent: Component[_, js.Object, _],
       element: DOMElement[DOMAttributes[T], T],
-      container: typings.std.Element
+      container: Element
     ): T = js.native
-    def unstable_renderSubtreeIntoContainer[T /* <: typings.std.Element */](
+    def unstable_renderSubtreeIntoContainer[T /* <: Element */](
       parentComponent: Component[_, js.Object, _],
       element: DOMElement[DOMAttributes[T], T],
-      container: typings.std.Element,
+      container: Element,
       callback: js.Function1[/* element */ T, _]
     ): T = js.native
-    def unstable_renderSubtreeIntoContainer[P](parentComponent: Component[_, js.Object, _], element: ReactElement, container: typings.std.Element): (Component[P, ComponentState, _]) | typings.std.Element | Unit = js.native
+    def unstable_renderSubtreeIntoContainer[P](parentComponent: Component[_, js.Object, _], element: ReactElement, container: Element): (Component[P, ComponentState, _]) | Element | Unit = js.native
     def unstable_renderSubtreeIntoContainer[P](
       parentComponent: Component[_, js.Object, _],
       element: ReactElement,
-      container: typings.std.Element,
-      callback: js.Function1[
-          /* component */ js.UndefOr[(Component[P, ComponentState, _]) | typings.std.Element], 
-          _
-        ]
-    ): (Component[P, ComponentState, _]) | typings.std.Element | Unit = js.native
+      container: Element,
+      callback: js.Function1[/* component */ js.UndefOr[(Component[P, ComponentState, _]) | Element], _]
+    ): (Component[P, ComponentState, _]) | Element | Unit = js.native
+    def unstable_renderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, _] */](parentComponent: Component[_, js.Object, _], element: CElement[P, T], container: Element): T = js.native
     def unstable_renderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, _] */](
       parentComponent: Component[_, js.Object, _],
       element: CElement[P, T],
-      container: typings.std.Element
-    ): T = js.native
-    def unstable_renderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, _] */](
-      parentComponent: Component[_, js.Object, _],
-      element: CElement[P, T],
-      container: typings.std.Element,
+      container: Element,
       callback: js.Function1[/* component */ T, _]
     ): T = js.native
   }

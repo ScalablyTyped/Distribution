@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lightpick"
-version := "1.3-dt-20190906Z-c6e482"
+version := "1.4-dt-20191025Z-6c8e4b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

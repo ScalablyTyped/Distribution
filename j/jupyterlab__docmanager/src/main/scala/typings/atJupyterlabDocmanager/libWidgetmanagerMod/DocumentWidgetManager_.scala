@@ -1,6 +1,10 @@
 package typings.atJupyterlabDocmanager.libWidgetmanagerMod
 
 import typings.atJupyterlabDocmanager.libWidgetmanagerMod.DocumentWidgetManager.IOptions
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.WidgetFactory
+import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorMessaging.atPhosphorMessagingMod.IMessageHandler
 import typings.atPhosphorMessaging.atPhosphorMessagingMod.Message
@@ -67,10 +71,7 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     *
     * @param widget - The widget to adopt.
     */
-  def adoptWidget(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any,
-    widget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
-  ): Unit = js.native
+  def adoptWidget(context: Context, widget: IDocumentWidget[Widget, IModel]): Unit = js.native
   /**
     * Clone a widget.
     *
@@ -82,17 +83,13 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     *  Uses the same widget factory and context as the source, or throws
     *  if the source widget is not managed by this manager.
     */
-  def cloneWidget(widget: Widget): js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
-  ] = js.native
+  def cloneWidget(widget: Widget): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
   /**
     * Close the widgets associated with a given context.
     *
     * @param context - The document context object.
     */
-  def closeWidgets(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
-  ): js.Promise[Unit] = js.native
+  def closeWidgets(context: Context): js.Promise[Unit] = js.native
   /**
     * Get the document context for a widget.
     *
@@ -100,9 +97,7 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     *
     * @returns The context associated with the widget, or `undefined`.
     */
-  def contextForWidget(widget: Widget): js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
-  ] = js.native
+  def contextForWidget(widget: Widget): js.UndefOr[Context] = js.native
   /**
     * Create a widget for a document and handle its lifecycle.
     *
@@ -114,19 +109,14 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     *
     * @throws If the factory is not registered.
     */
-  def createWidget(
-    factory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.WidgetFactory */ js.Any,
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
-  ): js.Any = js.native
+  def createWidget(factory: WidgetFactory, context: Context): IDocumentWidget[Widget, IModel] = js.native
   /**
     * Dispose of the widgets associated with a given context
     * regardless of the widget's dirty state.
     *
     * @param context - The document context object.
     */
-  def deleteWidgets(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
-  ): js.Promise[Unit] = js.native
+  def deleteWidgets(context: Context): js.Promise[Unit] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -151,12 +141,7 @@ class DocumentWidgetManager_ protected () extends IDisposable {
     * This can be used to use an existing widget instead of opening
     * a new widget.
     */
-  def findWidget(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any,
-    widgetName: String
-  ): js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
-  ] = js.native
+  def findWidget(context: Context, widgetName: String): js.UndefOr[IDocumentWidget[Widget, IModel]] = js.native
   /**
     * Filter a message sent to a message handler.
     *

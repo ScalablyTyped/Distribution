@@ -1,10 +1,10 @@
 package typings.reactDashBootstrap.reactDashBootstrapMod
 
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.EventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

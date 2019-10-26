@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociationBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, `type`, owner, parent */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociationBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, `type`, owner, parent, remoteSourceDocument, remoteSourceDocumentQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase")
 @js.native
 abstract class AssociationBase protected ()
   extends Element
@@ -48,6 +48,13 @@ abstract class AssociationBase protected ()
     */
   /* CompleteClass */
   override val qualifiedName: String | Null = js.native
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 8.3.0: introduced
+    */
+  var remoteSourceDocument: IRemoteEntitySourceDocument | Null = js.native
+  val remoteSourceDocumentQualifiedName: Null | String = js.native
   var `type`: AssociationType = js.native
 }
 

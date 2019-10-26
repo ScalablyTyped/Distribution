@@ -3,12 +3,12 @@ package typings.grommet.grommetMod
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsGrommetMod.GrommetProps
 import typings.grommet.themesBaseMod.ThemeType
-import typings.react.HTMLDivElement
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.HTMLAttributes
+import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

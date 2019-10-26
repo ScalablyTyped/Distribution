@@ -218,131 +218,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(item) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclInterface(TouchList))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(identifiedTouch) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclInterface(TouchList))] 
 [warn ] SimplifyRecursiveTypeAlias.scala:14 Simplified recursive type alias react-howler.react-howler/react.NativeMouseEvent [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclTypeAlias(NativeMouseEvent) / TsTypeRef() / TsTypeRef())] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(AnimationEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(ClipboardEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(CompositionEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(DragEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(FocusEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(KeyboardEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(MouseEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(TouchEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(PointerEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(TransitionEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(UIEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(WheelEvent))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLAnchorElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLAreaElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLAudioElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLBaseElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLBodyElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLBRElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLButtonElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLCanvasElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDataElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDataListElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDialogElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDivElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLDListElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLEmbedElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLFieldSetElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLFormElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLHeadingElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLHeadElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLHRElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLHtmlElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLIFrameElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLImageElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLInputElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLModElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLLabelElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLLegendElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLLIElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLLinkElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLMapElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLMetaElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLObjectElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLOListElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLOptGroupElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLOptionElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLParagraphElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLParamElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLPreElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLProgressElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLQuoteElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLScriptElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLSelectElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLSourceElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLSpanElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLStyleElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTableElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTableColElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTableDataCellElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTableHeaderCellElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTableRowElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTableSectionElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTemplateElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTextAreaElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTitleElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLTrackElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLUListElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLVideoElement))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(HTMLWebViewElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGSVGElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGCircleElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGClipPathElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGDefsElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGDescElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGEllipseElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEBlendElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEColorMatrixElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEComponentTransferElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFECompositeElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEConvolveMatrixElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEDiffuseLightingElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEDisplacementMapElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEDistantLightElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEDropShadowElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEFloodElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEFuncAElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEFuncBElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEFuncGElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEFuncRElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEGaussianBlurElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEImageElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEMergeElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEMergeNodeElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEMorphologyElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEOffsetElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEPointLightElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFESpecularLightingElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFESpotLightElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFETileElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFETurbulenceElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFilterElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGForeignObjectElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGGElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGImageElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGLineElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGLinearGradientElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGMarkerElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGMaskElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGMetadataElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGPathElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGPatternElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGPolygonElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGPolylineElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGRadialGradientElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGRectElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGStopElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGSwitchElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGSymbolElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGTextElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGTextPathElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGTSpanElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGUseElement))] 
-[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGViewElement))] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ConeInnerAngle) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Howl) / TsMemberFunction(pannerAttr) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Ref) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclInterface(FunctionComponentElement) / TsMemberProperty(ref) / TsTypeConditional() / TsTypeConditional() / TsTypeExtends() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclVar(Fragment) / TsTypeRef() / TsTypeObject())] 
@@ -393,10 +269,10 @@
 [info ] CombineOverloads.scala:82 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(typings) / Name(reactDashHowler) / Name(reactMod) / Name(cloneElement) [id => react-howler, phase => scala.js, this => Name(typings) / Name(reactDashHowler) / Name(reactMod) / Name(cloneElement)] 
 [debug] PhaseRunner.scala:84 Success [id => react-howler, phase => scala.js] 
 [warn ] Phase3Compile.scala:214 Building react-howler... [id => react-howler, phase => build] 
-[error] Phase3Compile.scala:240 [E] [E11] src/main/scala/typings/reactDashHowler/reactMod/WheelEvent.scala:9:58
+[error] Phase3Compile.scala:240 [E] [E11] src/main/scala/typings/reactDashHowler/reactMod/WheelEvent.scala:8:43
 [E]       illegal cyclic reference involving trait WheelEvent
-[E]       L9:   extends typings.reactDashHowler.reactMod.MouseEvent[T, NativeWheelEvent] {
-[E]                                                                    ^
+[E]       L8: trait WheelEvent[T] extends MouseEvent[T, NativeWheelEvent] {
+[E]                                                     ^
 [E] [E10] src/main/scala/typings/reactDashHowler/reactMod/TransitionEvent.scala:8:53
 [E]       illegal cyclic reference involving trait TransitionEvent
 [E]       L8: trait TransitionEvent[T] extends BaseSyntheticEvent[NativeTransitionEvent, EventTarget with T, EventTarget] {
@@ -413,14 +289,14 @@
 [E]      illegal cyclic reference involving trait KeyboardEvent
 [E]      L8: trait KeyboardEvent[T] extends BaseSyntheticEvent[NativeKeyboardEvent, EventTarget with T, EventTarget] {
 [E]                                                            ^
-[E] [E6] src/main/scala/typings/reactDashHowler/reactMod/PointerEvent.scala:12:58
+[E] [E6] src/main/scala/typings/reactDashHowler/reactMod/PointerEvent.scala:11:45
 [E]      illegal cyclic reference involving trait PointerEvent
-[E]      L12:   extends typings.reactDashHowler.reactMod.MouseEvent[T, NativePointerEvent] {
-[E]                                                                    ^
-[E] [E5] src/main/scala/typings/reactDashHowler/reactMod/DragEvent.scala:10:58
+[E]      L11: trait PointerEvent[T] extends MouseEvent[T, NativePointerEvent] {
+[E]                                                       ^
+[E] [E5] src/main/scala/typings/reactDashHowler/reactMod/DragEvent.scala:9:42
 [E]      illegal cyclic reference involving trait DragEvent
-[E]      L10:   extends typings.reactDashHowler.reactMod.MouseEvent[T, NativeDragEvent] {
-[E]                                                                    ^
+[E]      L9: trait DragEvent[T] extends MouseEvent[T, NativeDragEvent] {
+[E]                                                   ^
 [E] [E4] src/main/scala/typings/reactDashHowler/reactMod/ClipboardEvent.scala:9:52
 [E]      illegal cyclic reference involving trait ClipboardEvent
 [E]      L9: trait ClipboardEvent[T] extends BaseSyntheticEvent[NativeClipboardEvent, EventTarget with T, EventTarget] {
@@ -437,15 +313,15 @@
 [E]      illegal cyclic reference involving trait AnimationEvent
 [E]      L8: trait AnimationEvent[T] extends BaseSyntheticEvent[NativeAnimationEvent, EventTarget with T, EventTarget] {
 [E]                                                             ^
-[E] src/main/scala/typings/reactDashHowler/reactMod/PointerEvent.scala: L12 [E6]
+[E] src/main/scala/typings/reactDashHowler/reactMod/PointerEvent.scala: L11 [E6]
 [E] src/main/scala/typings/reactDashHowler/reactMod/AnimationEvent.scala: L8 [E1]
 [E] src/main/scala/typings/reactDashHowler/reactMod/KeyboardEvent.scala: L8 [E7]
 [E] src/main/scala/typings/reactDashHowler/reactMod/TransitionEvent.scala: L8 [E10]
 [E] src/main/scala/typings/reactDashHowler/reactMod/TouchEvent.scala: L8 [E9]
 [E] src/main/scala/typings/reactDashHowler/reactMod/CompositionEvent.scala: L8 [E3]
 [E] src/main/scala/typings/reactDashHowler/reactMod/FocusEvent.scala: L8 [E2]
-[E] src/main/scala/typings/reactDashHowler/reactMod/WheelEvent.scala: L9 [E11]
-[E] src/main/scala/typings/reactDashHowler/reactMod/DragEvent.scala: L10 [E5]
+[E] src/main/scala/typings/reactDashHowler/reactMod/WheelEvent.scala: L8 [E11]
+[E] src/main/scala/typings/reactDashHowler/reactMod/DragEvent.scala: L9 [E5]
 [E] src/main/scala/typings/reactDashHowler/reactMod/UIEvent.scala: L8 [E8]
 [E] src/main/scala/typings/reactDashHowler/reactMod/ClipboardEvent.scala: L9 [E4]
 [E] Failed to compile 'react-howler'

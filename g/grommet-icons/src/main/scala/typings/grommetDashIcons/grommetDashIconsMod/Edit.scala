@@ -3,10 +3,10 @@ package typings.grommetDashIcons.grommetDashIconsMod
 import org.scalablytyped.runtime.TopLevel
 import typings.grommetDashIcons.iconsMod.Icon
 import typings.grommetDashIcons.iconsMod.IconProps
-import typings.react.SVGSVGElement
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.SVGProps
+import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

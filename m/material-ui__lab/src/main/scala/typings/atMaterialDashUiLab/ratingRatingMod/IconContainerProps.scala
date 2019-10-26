@@ -1,7 +1,6 @@
 package typings.atMaterialDashUiLab.ratingRatingMod
 
 import typings.react.Anon_Html
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.CSSProperties
@@ -62,6 +61,7 @@ import typings.react.reactStrings.time
 import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
+import typings.std.Event
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

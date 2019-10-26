@@ -105,6 +105,15 @@ object SignOutClientAction extends js.Object {
   def createInBottomBarItemUnderAction(container: BottomBarItem): SignOutClientAction = js.native
   /**
     * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
+    * The new SignOutClientAction will be automatically stored in the 'onClickAction' property
+    * of the parent DivContainer element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.3.0 and higher
+    */
+  def createInDivContainerUnderOnClickAction(container: DivContainer): SignOutClientAction = js.native
+  /**
+    * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
     * The new SignOutClientAction will be automatically stored in the 'clickAction' property
     * of the parent DynamicImageViewer element passed as argument.
     *

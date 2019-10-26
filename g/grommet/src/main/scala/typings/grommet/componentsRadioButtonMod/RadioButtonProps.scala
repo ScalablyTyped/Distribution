@@ -1,8 +1,8 @@
 package typings.grommet.componentsRadioButtonMod
 
-import typings.react.Element
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

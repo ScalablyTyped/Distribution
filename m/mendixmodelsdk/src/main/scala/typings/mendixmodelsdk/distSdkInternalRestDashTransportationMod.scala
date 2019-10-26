@@ -30,7 +30,7 @@ object distSdkInternalRestDashTransportationMod extends js.Object {
     /* CompleteClass */
     override def request[T](options: IRequestOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit = js.native
     /* CompleteClass */
-    override def requestFileDownload[T](options: IRequestFileDownloadOptions, success: ICallback[T], failure: IErrorCallback): Unit = js.native
+    override def requestFileDownload[T](options: IRequestFileDownloadOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit = js.native
     /* CompleteClass */
     override def requestMultipartBinaryFileUpload[T](options: IRequestMultipartBinaryFileUploadOptions, success: ICallback[T], failure: IErrorCallback): Unit = js.native
     /**

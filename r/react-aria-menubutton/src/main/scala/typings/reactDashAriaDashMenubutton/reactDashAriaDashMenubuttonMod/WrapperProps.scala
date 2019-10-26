@@ -1,9 +1,9 @@
 package typings.reactDashAriaDashMenubutton.reactDashAriaDashMenubuttonMod
 
-import typings.react.Event
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

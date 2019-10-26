@@ -8,7 +8,6 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.down
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.left
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.right
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.up
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ReactNode
@@ -17,6 +16,7 @@ import typings.react.reactMod.RefObject
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashTransitionDashGroup.Anon_Appear
 import typings.reactDashTransitionDashGroup.transitionMod.TransitionProps
+import typings.std.Event
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

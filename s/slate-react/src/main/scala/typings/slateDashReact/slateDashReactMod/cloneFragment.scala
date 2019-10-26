@@ -1,8 +1,8 @@
 package typings.slateDashReact.slateDashReactMod
 
-import typings.react.Element
-import typings.react.Event
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object cloneFragment extends js.Object {
     editor: typings.slate.slateMod.Editor,
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def apply(event: typings.std.Event, editor: typings.slate.slateMod.Editor): Unit = js.native
-  def apply(event: typings.std.Event, editor: typings.slate.slateMod.Editor, callback: js.Function0[Unit]): Unit = js.native
+  def apply(event: Event, editor: typings.slate.slateMod.Editor): Unit = js.native
+  def apply(event: Event, editor: typings.slate.slateMod.Editor, callback: js.Function0[Unit]): Unit = js.native
 }
 

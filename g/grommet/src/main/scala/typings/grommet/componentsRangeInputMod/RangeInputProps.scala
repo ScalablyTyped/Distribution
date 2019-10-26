@@ -1,7 +1,7 @@
 package typings.grommet.componentsRangeInputMod
 
-import typings.react.Element
 import typings.react.reactMod.ChangeEvent
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

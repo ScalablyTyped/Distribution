@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.distSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociationBase because Already inherited
-- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociation because var conflicts: id, isLoaded, model, name, owner, parent, structureTypeName, `type`, unit. Inlined child */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association")
+- typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IAssociation because var conflicts: id, isLoaded, model, name, owner, parent, remoteSourceDocument, structureTypeName, `type`, unit. Inlined child */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association")
 @js.native
 class Association protected () extends AssociationBase {
   def this(

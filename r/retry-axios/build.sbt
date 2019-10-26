@@ -1,17 +1,15 @@
 organization := "org.scalablytyped"
 name := "retry-axios"
-version := "0.3.2-71bb10"
-scalaVersion := "2.12.8"
+version := "0.3.2-45e973"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "axios" % "0.18.0-d183be",
-  "org.scalablytyped" %%% "is-buffer" % "2.0-dt-20181210Z-c6150f",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "axios" % "0.19.0-c1d62b",
+  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

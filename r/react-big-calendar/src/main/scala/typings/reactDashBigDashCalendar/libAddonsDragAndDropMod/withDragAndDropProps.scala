@@ -1,6 +1,5 @@
 package typings.reactDashBigDashCalendar.libAddonsDragAndDropMod
 
-import typings.react.Element
 import typings.react.reactMod.DragEvent
 import typings.react.reactMod.HTMLAttributes
 import typings.reactDashBigDashCalendar.Anon_ActionDOWN
@@ -11,6 +10,7 @@ import typings.reactDashBigDashCalendar.reactDashBigDashCalendarNumbers.`false`
 import typings.reactDashBigDashCalendar.reactDashBigDashCalendarNumbers.`true`
 import typings.reactDashBigDashCalendar.reactDashBigDashCalendarStrings.ignoreEvents
 import typings.std.Date
+import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

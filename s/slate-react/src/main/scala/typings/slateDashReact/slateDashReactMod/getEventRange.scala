@@ -1,9 +1,9 @@
 package typings.slateDashReact.slateDashReactMod
 
-import typings.react.Element
-import typings.react.Event
 import typings.react.reactMod.SyntheticEvent
 import typings.slate.slateMod.Range
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object getEventRange extends js.Object {
   def apply(event: SyntheticEvent[Element, Event], editor: typings.slate.slateMod.Editor): Range | Null = js.native
-  def apply(event: typings.std.Event, editor: typings.slate.slateMod.Editor): Range | Null = js.native
+  def apply(event: Event, editor: typings.slate.slateMod.Editor): Range | Null = js.native
 }
 

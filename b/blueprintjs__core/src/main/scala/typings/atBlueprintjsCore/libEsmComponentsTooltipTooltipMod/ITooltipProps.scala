@@ -8,10 +8,10 @@ import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.IP
 import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
 import typings.popperDotJs.popperDotJsMod.Boundary
 import typings.popperDotJs.popperDotJsMod.Modifiers
-import typings.react.Event
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.SyntheticEvent
 import typings.react.reactMod._Global_.JSX.Element
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

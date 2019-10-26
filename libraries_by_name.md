@@ -643,6 +643,7 @@
 | [bcrypt-nodejs](./b/bcrypt-nodejs) | A native JS bcrypt library for NodeJS. | bcrypt, javascript, js, hash, password, auth, authentication, encryption, crypt, crypto |
 | [bcryptjs](./b/bcryptjs) | Optimized bcrypt in plain JavaScript with zero dep | bcrypt, password, auth, authentication, encryption, crypt, crypto |
 | [bdfjs](./b/bdfjs) | Simple library for reading Adobe Glyph Bitmap Dist | adobe, bdf, font, bitmap |
+| [beanstalkd](./b/beanstalkd) | A beanstalkd client for Node.js with promises | beanstalkd |
 | [beats](./b/beats) | A naive but generic beat-detection module. | - |
 | [bech32](./b/bech32) | Bech32 encoding / decoding | base32, bech32, bitcoin, crypto, crytography, decode, decoding, encode, encoding |
 | [beeper](./b/beeper) | Make your terminal beep | beep, beeper, boop, terminal, term, cli, console, ding, ping, alert, gulpfriendly |
@@ -1034,6 +1035,7 @@
 | [colornames](./c/colornames) | Map color names to HEX color values. | color, colour, names, css, hex, rgb, convert |
 | [colors](./c/colors) | get colors in your node.js console | ansi, terminal, colors |
 | [colresizable](./c/colresizable) | jQuery plugin to resize table columns | resize table, resize columns, resize, resizable, columns, jquery-plugin, table, range slider, colresizable, resize table columns, jquery |
+| [columnify](./c/columnify) | Render data in text columns. Supports in-column te | column, text, ansi, console, terminal, wrap, table |
 | [com_dot_darktalker_dot_co](./c/com_dot_darktalker_dot_cordova_dot_screenshot) | screenshot PhoneGap Plugin for Android | cordova, screenshot, ecosystem:cordova, cordova-android, cordova-ios, cordova-osx |
 | [com_dot_wikitude_dot_phon](./c/com_dot_wikitude_dot_phonegap_dot_wikitudeplugin) | Augmented Reality Wikitude SDK Plugin  | AR, augmented reality, Wikitude, image recognition, markerless tracking, cloud recognition, ecosystem:cordova, cordova-android, cordova-ios |
 | [combine-reducers](./c/combine-reducers) | A stand-alone, Redux compatible implementation of  | Redux, flux, combineReducers |
@@ -1088,6 +1090,7 @@
 | [confirmdialog](./c/confirmdialog) | - | - |
 | [confit](./c/confit) | Environment-aware configuration. | application, config, configuration |
 | [connect](./c/connect) | High performance middleware framework | framework, web, middleware, connect, rack |
+| [connect-azuretables](./c/connect-azuretables) | Azure Table Storage session store for express-sess | - |
 | [connect-busboy](./c/connect-busboy) | Connect middleware for busboy | connect, middleware, uploads, forms, multipart, form-data |
 | [connect-datadog](./c/connect-datadog) | Datadog middleware for Connect JS / Express | datadog, middleware |
 | [connect-ensure-login](./c/connect-ensure-login) | Login session ensuring middleware for Connect. | connect, express, auth, authn, authentication, login, session, passport |
@@ -2009,6 +2012,7 @@
 | [filenamify](./f/filenamify) | Convert a string to a valid safe filename | filename, safe, sanitize, file, name, string, path, filepath, convert, valid, dirname |
 | [filenamify-url](./f/filenamify-url) | Convert a URL to a valid filename | filename, file, name, string, path, convert, valid, url, uri |
 | [filesize](./f/filesize) | JavaScript library to generate a human readable St | file, filesize, size, readable, file system, bytes, diff |
+| [filesize-parser](./f/filesize-parser) | Takes human readable filesystem size strings and g | - |
 | [filesystem](./f/filesystem) | - | - |
 | [filewriter](./f/filewriter) | - | - |
 | [fill-pdf](./f/fill-pdf) | Fill out pdf forms | pdf, fdf, utf8, pdftk |
@@ -2486,6 +2490,7 @@
 | [google_dot_picker](./g/google_dot_picker) | - | - |
 | [google_dot_script_dot_cli](./g/google_dot_script_dot_client-side) | - | - |
 | [google_dot_visualization](./g/google_dot_visualization) | - | - |
+| [googleapis-common](./g/googleapis-common) | A common tooling library used by the googleapis np | - |
 | [googlemaps](./g/googlemaps) | A simple way to query the Google Maps API from Nod | map, geo, google, api, googlemaps, google maps, google-maps, node google maps |
 | [googlemaps_dot_infobubble](./g/googlemaps_dot_infobubble) | - | - |
 | [googlepay](./g/googlepay) | - | - |
@@ -2947,8 +2952,10 @@
 | [intercom-web](./i/intercom-web) | - | - |
 | [intercomjs](./i/intercomjs) | - | - |
 | [internal-ip](./i/internal-ip) | Get your internal IP address | ip, ipv6, ipv4, address, internal, local, machine, system, net, gateway |
+| [internal-slot](./i/internal-slot) | ES spec-like internal slots | internal, slot, internal slot, ecmascript, es, spec, private, data, private data, weakmap |
 | [interpret](./i/interpret) | A dictionary of file extensions and associated mod | cirru-script, cjsx, co, coco, coffee, coffee-script, coffee.md, coffeescript, csv, earlgrey, es, es6, iced, iced.md, iced-coffee-script, ini, js, json, json5, jsx, react, litcoffee, liticed, ls, livescript, toml, ts, typescript, wisp, xml, yaml, yml |
 | [intersects](./i/intersects) | a simple collection of 2d collision/intersects fun | - |
+| [intersperse](./i/intersperse) | Add an object to an array between each element | array, util, utility |
 | [intl](./i/intl) | Polyfill the ECMA-402 Intl API (except collation) | intl, i18n, internationalization, ecma402, polyfill |
 | [intl-format-cache](./i/intl-format-cache) | A memoizer factory for Intl format constructors. | intl, i18n |
 | [intl-locales-supported](./i/intl-locales-supported) | Utility to help you polyfill the Node.js runtime w | i18n, intl, internationalization, localization, globalization |
@@ -3409,6 +3416,7 @@
 | [json-rpc-ws](./j/json-rpc-ws) | json-rpc websocket transport | json-rpc, websocket |
 | [json-rules-engine](./j/json-rules-engine) | Rules Engine expressed in simple json | rules, engine, rules engine |
 | [json-schema](./j/json-schema) | JSON Schema validation and specifications | json, schema |
+| [json-schema-merge-allof](./j/json-schema-merge-allof) | Simplify your schema by combining allOf into the r | json, schema, jsonschema |
 | [json-schema-ref-parser](./j/json-schema-ref-parser) | Parse, Resolve, and Dereference JSON Schema $ref p | json, schema, jsonschema, json-schema, json-pointer, $ref, dereference, resolve |
 | [json-server](./j/json-server) | Serves JSON files through REST routes. | JSON, server, fake, REST, API, prototyping, mock, mocking, test, testing, rest, data, dummy, sandbox |
 | [json-socket](./j/json-socket) | An easy way to send JSON over TCP using sockets. | - |
@@ -3498,8 +3506,6 @@
 | [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager | - |
 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension | - |
 | [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry | - |
-| [jupyterlab__documentsearc](./j/jupyterlab__documentsearch) | Document Search | - |
-| [jupyterlab__documentsearc](./j/jupyterlab__documentsearch-extension) | Search document types | - |
 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager | - |
 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension | - |
 | [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget | - |
@@ -4397,6 +4403,7 @@
 | [minecraft-scripting-types](./m/minecraft-scripting-types-client) | Client-side TypeScript definitions for Minecraft B | - |
 | [minecraft-scripting-types](./m/minecraft-scripting-types-server) | Server-side TypeScript definitions for Minecraft B | - |
 | [minecraft-scripting-types](./m/minecraft-scripting-types-shared) | Shared TypeScript definitions for Minecraft Bedroc | - |
+| [mini-create-react-context](./m/mini-create-react-context) | Smaller Polyfill for the proposed React context AP | react, context, contextTypes, polyfill, ponyfill |
 | [mini-css-extract-plugin](./m/mini-css-extract-plugin) | extracts CSS into separate files | webpack, css, extract, hmr |
 | [minilog](./m/minilog) | Lightweight client & server-side logging with Stre | logging, sysadmin, tools |
 | [minimal-bit-array](./m/minimal-bit-array) | Minimal bit array implementation that is compatibl | bitarray, bit, set, ndarray |
@@ -4715,6 +4722,7 @@
 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and | - |
 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m | node-mysql-wrapper, node-mysql, mysql, mysql-wrapper |
 | [node-openload](./n/node-openload) | An openload.co API handler | openload, api, file, upload, request |
+| [node-os-utils](./n/node-os-utils) | An operating system utility library. | os, operating system, server, netstat, memory, cpu, monitor, stats, processes, openfiles, harddrive |
 | [node-persist](./n/node-persist) | Super-easy (and fast) persistent data structures i | node, persist, storage |
 | [node-pg-migrate](./n/node-pg-migrate) | Postgresql database migration management tool for  | db, database, migrate, migration, migrations, migrator, db-migrate, sql, pg, postgre, postgres, postgresql, extensible, expandable, programatic, programable, api |
 | [node-polyglot](./n/node-polyglot) | Give your JavaScript the ability to speak many lan | i18n, internationalization, internationalisation, translation, interpolation, translate, polyglot |
@@ -4934,6 +4942,7 @@
 | [os-locale](./o/os-locale) | Get the system locale | locale, lang, language, system, os, string, str, user, country, id, identifier, region |
 | [os-name](./o/os-name) | Get the name of the current operating system. Exam | os, operating, system, platform, name, title, release, version, macos, windows, linux |
 | [os-tmpdir](./o/os-tmpdir) | Node.js os.tmpdir() ponyfill | built-in, core, ponyfill, polyfill, shim, os, tmpdir, tempdir, tmp, temp, dir, directory, env, environment |
+| [os-utils](./o/os-utils) | an operating-system utility library | os, operating system, server, memory, cpu, monitor, stats, harddrive |
 | [osenv](./o/osenv) | Look up environment settings specific to different | environment, variable, home, tmpdir, path, prompt, ps1 |
 | [osmosis](./o/osmosis) | Web scraper for NodeJS | web, scraper, crawler, html, xml, dom, parser |
 | [osmtogeojson](./o/osmtogeojson) | convert OSM to geojson | openstreetmap, geojson |
@@ -5074,6 +5083,7 @@
 | [passport-naver](./p/passport-naver) | Naver authentication strategy for Passport | passport, naver, auth, oauth, authentication, oauth2 |
 | [passport-oauth2](./p/passport-oauth2) | OAuth 2.0 authentication strategy for Passport. | passport, auth, authn, authentication, authz, authorization, oauth, oauth2 |
 | [passport-oauth2-client-pa](./p/passport-oauth2-client-password) | OAuth 2.0 client password authentication strategy  | passport, oauth, oauth2, authn, authentication, authz, authorization, api |
+| [passport-oauth2-refresh](./p/passport-oauth2-refresh) | A passport.js add-on to provide automatic OAuth 2. | passport, oauth, oauth2, auth, authentication |
 | [passport-remember-me-exte](./p/passport-remember-me-extended) | Remember Me cookie authentication strategy for Pas | passport, cookie, persistent, rememberme, auth, authn, authentication |
 | [passport-saml](./p/passport-saml) | SAML 2.0 authentication strategy for Passport | saml, adfs, sso, shibboleth |
 | [passport-steam](./p/passport-steam) | Steam (OpenID) authentication strategy for Passpor | passport, steam, auth, authn, authentication, identity |
@@ -5353,6 +5363,7 @@
 | [promise-pool](./p/promise-pool) | just another simple task pool based on promise (Q) | task, pool, promise, concurrency |
 | [promise-queue](./p/promise-queue) | Promise-based queue | - |
 | [promise-retry](./p/promise-retry) | Retries a function that returns a promise, leverag | retry, promise, backoff, repeat, replay |
+| [promise-sequential](./p/promise-sequential) | Simple like Promise.all(), but sequentially | promise, queue, seq, sequence, sequential |
 | [promise-sftp](./p/promise-sftp) | a promise-based sftp client for node.js | sftp, client, promise, node |
 | [promise-timeout](./p/promise-timeout) | Simple timeouts for promises | promise, timeout |
 | [promise_dot_allsettled](./p/promise_dot_allsettled) | ES Proposal spec-compliant shim for Promise.allSet | Promise, promises, allsettled, settled, fulfilled, resolved, rejected, promise.allsettled, shim, polyfill, es-shim, API |
@@ -5631,6 +5642,7 @@
 | [react-content-loader](./r/react-content-loader) | SVG component to create placeholder loading, like  | react, facebook-style, loader, loading, content, svg |
 | [react-copy-to-clipboard](./r/react-copy-to-clipboard) | Copy-to-clipboard React component | component, react-component, react, copy to clipboard, clipboard |
 | [react-copy-write](./r/react-copy-write) |  react-copy-write | - |
+| [react-count-to](./r/react-count-to) | Animated counter component for React.js | React.js, react-component |
 | [react-countup](./r/react-countup) | A React component wrapper around CountUp.js | react-component, react, react.js, countup, countup.js, counter, animation |
 | [react-credit-cards](./r/react-credit-cards) | Beautiful credit cards for your payment forms | react, react-component, credit card, payment |
 | [react-cropper](./r/react-cropper) | Cropper as React components | react, react-component, cropper, image |
@@ -6288,6 +6300,7 @@
 | [retinajs](./r/retinajs) | - | retina, images, @2x, @3x, retina.js |
 | [retry](./r/retry) | Abstraction for exponential and custom retry strat | - |
 | [retry-as-promised](./r/retry-as-promised) | Retry a failed promise | retry, promise, bluebird |
+| [retry-axios](./r/retry-axios) | Retry HTTP requests with Axios. | axios, retry |
 | [retry-request](./r/retry-request) | Retry a request. | request, retry, stream |
 | [rev-hash](./r/rev-hash) | Create a hash for file revving | hash, crypto, md5, rev, revving, web, buffer, string, file, cache, caching |
 | [revalidate](./r/revalidate) | Elegant and composable validations | functional, validation, validate, form |
@@ -6697,6 +6710,7 @@
 | [slickgrid](./s/slickgrid) | A lightning fast JavaScript grid/spreadsheet | slickgrid, grid |
 | [slideout](./s/slideout) | A touch slideout navigation menu for your mobile w | slideout, offcanvas, menu, touch |
 | [slimerjs](./s/slimerjs) | A scriptable browser like PhantomJS, based on Fire | - |
+| [sloc](./s/sloc) | sloc is a simple tool to count SLOC (source lines  | - |
 | [slocket](./s/slocket) | A locking socket alternative to file-system mutex  | mutex, lock, socket, file system, lockfile |
 | [slonik](./s/slonik) | A PostgreSQL client with strict types, detail logg | postgresql, promise, types |
 | [slug](./s/slug) | slugifies even utf-8 chars | slugify, slug, string, utf8, utf-8, unicode, url |
@@ -6740,6 +6754,7 @@
 | [sockjs](./s/sockjs) | SockJS-node is a server counterpart of SockJS-clie | websockets, websocket |
 | [sockjs-client](./s/sockjs-client) | SockJS-client is a browser JavaScript library that | websockets, websocket |
 | [socks](./s/socks) | Fully featured SOCKS proxy client supporting SOCKS | socks, proxy, tor, socks 4, socks 5, socks4, socks5 |
+| [sodiumjs](./s/sodiumjs) | A Functional Reactive Programming (FRP) library fo | frp, functional, reactive, typescript, sodium |
 | [solid-auth-client](./s/solid-auth-client) | Opaquely authenticates solid clients | - |
 | [solid__react](./s/solid__react) | Efficiently build Solid apps and components with R | - |
 | [solidity-parser-antlr](./s/solidity-parser-antlr) | A Solidity parser built from a robust ANTLR 4 gram | - |
@@ -7295,6 +7310,7 @@
 | [typeof](./t/typeof) | Node module. typeOf('a string') == 'string', typeO | typeof, type |
 | [typesafe-actions](./t/typesafe-actions) | Typesafe Action Creators for Redux / Flux Architec | typescript, typesafe, actions, action-creator, redux, flux, redux-actions, static-typing |
 | [typescript](./t/typescript) | TypeScript is a language for application scale Jav | TypeScript, Microsoft, compiler, language, javascript |
+| [typescript-collections](./t/typescript-collections) | A complete, fully tested data structure library wr | typescript, generics, data, structures, collections, linked, list, dictionary, default, dictionary, multi, dictionary, binary, search, tree, key, value, stack, queue, set, bag, binary, heap, priority, queue, array |
 | [typescript-compare](./t/typescript-compare) | TypeScript generics to compare types | compare, generic, typescript, types |
 | [typescript-deferred](./t/typescript-deferred) | A tiny Promises/A+ promise implementation written  | promise, deferred, typescript, promises-aplus |
 | [typescript-eslint__experi](./t/typescript-eslint__experimental-utils) | (Experimental) Utilities for working with TypeScri | eslint, typescript, estree |
@@ -7459,6 +7475,7 @@
 | [varuint-bitcoin](./v/varuint-bitcoin) | encode/decode number as bitcoin variable length in | - |
 | [vary](./v/vary) | Manipulate the HTTP Vary header | http, res, vary |
 | [vast-client](./v/vast-client) | JavaScript VAST Client | vast, ad, advertising, iab, in-stream, video |
+| [vcf](./v/vcf) | Parse and construct vCards, jCards | vcard, hcard, jcard, vcf |
 | [vec2](./v/vec2) | manipulate vectors in 2d | 2d, vec, vector, geometry |
 | [vec3](./v/vec3) | 3d vector math with good unit tests | point |
 | [vectorious](./v/vectorious) | A high performance linear algebra library. | matrix, vector, linear, algebra |
@@ -7562,6 +7579,7 @@
 | [wallop](./w/wallop) | wallop is a minimal 4kb library for showing & hidi | slider, css, js, minimal, responsive, wallop |
 | [wallpaper](./w/wallpaper) | Manage the desktop wallpaper | macos, linux, windows, wallpaper, desktop, background, image, picture, photo |
 | [wampy](./w/wampy) | Simple WAMP (WebSocket Application Messaging Proto | websocket, wamp, pubsub, rpc |
+| [wanakana](./w/wanakana) | Utility library for converting between Kanji, Hira | english, japanese, hiragana, katakana, kana, romaji, conversion, transliteration, input, ime, wanikani |
 | [warning](./w/warning) | A mirror of Facebook's Warning | warning, facebook, react, invariant |
 | [watch](./w/watch) | Utilities for watching file trees. | util, utility, fs, files |
 | [watchify](./w/watchify) | watch mode for browserify builds | browserify, browserify-tool, watch, bundle, build, browser |

@@ -1,8 +1,8 @@
 package typings.reactDashForm.reactDashFormMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.Event
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

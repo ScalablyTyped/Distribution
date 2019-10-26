@@ -1,6 +1,7 @@
 package typings.atJupyterlabFileeditor.libTabspacestatusMod.TabSpaceStatus
 
 import typings.atJupyterlabApputils.libVdomMod.VDomModel
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,6 @@ class Model () extends VDomModel {
   /**
     * The editor config from the settings system.
     */
-  var config: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IConfig */ js.Any) | Null = js.native
+  var config: IConfig | Null = js.native
 }
 

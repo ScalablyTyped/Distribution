@@ -1,5 +1,6 @@
 package typings.atJupyterlabCodemirror
 
+import typings.atJupyterlabCodeeditor.libTokensMod.IEditorServices
 import typings.atJupyterlabCodemirror.libEditorMod.CodeMirrorEditor.IConfig
 import typings.atJupyterlabCodemirror.libEditorMod.CodeMirrorEditor.IOptions
 import typings.atJupyterlabCodemirror.libModeMod.Mode.ISpec
@@ -45,7 +46,7 @@ object atJupyterlabCodemirrorMod extends js.Object {
     def this(opts: typings.atJupyterlabCodemirror.libSyntaxstatusMod.EditorSyntaxStatus.IOptions) = this()
   }
   
-  val editorServices: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEditorServices */ js.Any = js.native
+  val editorServices: IEditorServices = js.native
   @js.native
   object CodeMirrorEditor extends js.Object {
     /**

@@ -1,10 +1,10 @@
 package typings.cypress.JQuery
 
-import typings.cypress.Window
 import typings.cypress._MouseEvent
 import typings.cypress.cypressStrings.mouseout
 import typings.std.Element
 import typings.std.EventTarget
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

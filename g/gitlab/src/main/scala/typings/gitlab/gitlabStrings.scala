@@ -107,6 +107,9 @@ object gitlabStrings {
   sealed trait Issues extends js.Object
   
   @js.native
+  sealed trait IssuesStatistics extends js.Object
+  
+  @js.native
   sealed trait Jobs extends js.Object
   
   @js.native
@@ -566,6 +569,8 @@ object gitlabStrings {
   def IssueNotes: IssueNotes = "IssueNotes".asInstanceOf[IssueNotes]
   @scala.inline
   def Issues: Issues = "Issues".asInstanceOf[Issues]
+  @scala.inline
+  def IssuesStatistics: IssuesStatistics = "IssuesStatistics".asInstanceOf[IssuesStatistics]
   @scala.inline
   def Jobs: Jobs = "Jobs".asInstanceOf[Jobs]
   @scala.inline

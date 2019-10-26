@@ -65,7 +65,12 @@ trait IModelServerClient extends js.Object {
     callback: IVoidCallback,
     errorCallback: IErrorCallback
   ): Unit = js.native
-  def exportMpk(workingCopyId: String, outFilePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
+  def exportMpk(
+    workingCopyId: String,
+    outFilePath: String,
+    callback: ICallback[Double],
+    errorCallback: IErrorCallback
+  ): Unit = js.native
   /**
     * Returns a list of unitIds that contains a specific custom widget
     */

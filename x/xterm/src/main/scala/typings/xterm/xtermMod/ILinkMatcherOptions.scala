@@ -25,7 +25,14 @@ trait ILinkMatcherOptions extends js.Object {
   /**
     * A callback that fires when the mouse hovers over a link for a moment.
     */
-  var tooltipCallback: js.UndefOr[js.Function2[/* event */ MouseEvent, /* uri */ String, Boolean | Unit]] = js.undefined
+  var tooltipCallback: js.UndefOr[
+    js.Function3[
+      /* event */ MouseEvent, 
+      /* uri */ String, 
+      /* location */ IViewportRange, 
+      Boolean | Unit
+    ]
+  ] = js.undefined
   /**
     * A callback that validates whether to create an individual link, pass
     * whether the link is valid to the callback.
@@ -48,7 +55,7 @@ object ILinkMatcherOptions {
     leaveCallback: () => Unit = null,
     matchIndex: Int | Double = null,
     priority: Int | Double = null,
-    tooltipCallback: (/* event */ MouseEvent, /* uri */ String) => Boolean | Unit = null,
+    tooltipCallback: (/* event */ MouseEvent, /* uri */ String, /* location */ IViewportRange) => Boolean | Unit = null,
     validationCallback: (/* uri */ String, /* callback */ js.Function1[/* isValid */ Boolean, Unit]) => Unit = null,
     willLinkActivate: (/* event */ MouseEvent, /* uri */ String) => Boolean = null
   ): ILinkMatcherOptions = {
@@ -56,7 +63,7 @@ object ILinkMatcherOptions {
     if (leaveCallback != null) __obj.updateDynamic("leaveCallback")(js.Any.fromFunction0(leaveCallback))
     if (matchIndex != null) __obj.updateDynamic("matchIndex")(matchIndex.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (tooltipCallback != null) __obj.updateDynamic("tooltipCallback")(js.Any.fromFunction2(tooltipCallback))
+    if (tooltipCallback != null) __obj.updateDynamic("tooltipCallback")(js.Any.fromFunction3(tooltipCallback))
     if (validationCallback != null) __obj.updateDynamic("validationCallback")(js.Any.fromFunction2(validationCallback))
     if (willLinkActivate != null) __obj.updateDynamic("willLinkActivate")(js.Any.fromFunction2(willLinkActivate))
     __obj.asInstanceOf[ILinkMatcherOptions]

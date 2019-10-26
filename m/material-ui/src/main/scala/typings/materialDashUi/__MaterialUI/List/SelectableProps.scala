@@ -1,8 +1,8 @@
 package typings.materialDashUi.__MaterialUI.List
 
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

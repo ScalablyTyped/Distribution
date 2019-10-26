@@ -1,0 +1,33 @@
+package typings.actionsDashOnDashGoogle.distServiceDialogflowApiV1Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DialogflowV1Metadata extends js.Object {
+  var intentId: js.UndefOr[String] = js.undefined
+  var intentName: js.UndefOr[String] = js.undefined
+  var nluResponseTime: js.UndefOr[Double] = js.undefined
+  var webhookForSlotFillingUsed: js.UndefOr[String] = js.undefined
+  var webhookUsed: js.UndefOr[String] = js.undefined
+}
+
+object DialogflowV1Metadata {
+  @scala.inline
+  def apply(
+    intentId: String = null,
+    intentName: String = null,
+    nluResponseTime: Int | Double = null,
+    webhookForSlotFillingUsed: String = null,
+    webhookUsed: String = null
+  ): DialogflowV1Metadata = {
+    val __obj = js.Dynamic.literal()
+    if (intentId != null) __obj.updateDynamic("intentId")(intentId)
+    if (intentName != null) __obj.updateDynamic("intentName")(intentName)
+    if (nluResponseTime != null) __obj.updateDynamic("nluResponseTime")(nluResponseTime.asInstanceOf[js.Any])
+    if (webhookForSlotFillingUsed != null) __obj.updateDynamic("webhookForSlotFillingUsed")(webhookForSlotFillingUsed)
+    if (webhookUsed != null) __obj.updateDynamic("webhookUsed")(webhookUsed)
+    __obj.asInstanceOf[DialogflowV1Metadata]
+  }
+}
+

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mobx"
-version := "5.14.0-9e42e6"
+version := "5.14.2-284895"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

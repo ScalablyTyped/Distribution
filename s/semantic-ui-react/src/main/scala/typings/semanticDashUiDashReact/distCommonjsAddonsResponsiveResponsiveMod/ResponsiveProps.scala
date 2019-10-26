@@ -1,9 +1,9 @@
 package typings.semanticDashUiDashReact.distCommonjsAddonsResponsiveResponsiveMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.Event
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

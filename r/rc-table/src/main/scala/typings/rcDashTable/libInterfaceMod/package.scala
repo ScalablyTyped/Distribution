@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object libInterfaceMod {
   import typings.rcDashTable.Anon_ExpandableExpanded
-  import typings.react.Element
-  import typings.react.Event
   import typings.react.NativeMouseEvent
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.FC
@@ -16,6 +14,8 @@ package object libInterfaceMod {
   import typings.react.reactMod.ReactElement
   import typings.react.reactMod.ReactNode
   import typings.react.reactMod.SyntheticEvent
+  import typings.std.Element
+  import typings.std.Event
   import typings.std.HTMLElement
   import typings.std.Record
 

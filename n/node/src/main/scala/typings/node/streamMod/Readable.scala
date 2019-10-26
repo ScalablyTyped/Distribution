@@ -1,10 +1,8 @@
 package typings.node.streamMod
 
 import typings.node.Anon_End
-import typings.node.AsyncIterable
 import typings.node.BufferEncoding
 import typings.node.Error
-import typings.node.Iterable
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.node.nodeStrings.close
@@ -12,6 +10,8 @@ import typings.node.nodeStrings.data
 import typings.node.nodeStrings.end
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.readable
+import typings.std.AsyncIterable
+import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

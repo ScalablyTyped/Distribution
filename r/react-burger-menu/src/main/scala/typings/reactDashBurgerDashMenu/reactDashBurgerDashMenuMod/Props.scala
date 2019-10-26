@@ -16,7 +16,7 @@ trait Props extends js.Object {
   var crossClassName: js.UndefOr[String] = js.undefined
   var customBurgerIcon: js.UndefOr[Element | `false`] = js.undefined
   var customCrossIcon: js.UndefOr[Element | `false`] = js.undefined
-  var customOnKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[typings.react.Element], Unit]] = js.undefined
+  var customOnKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[typings.std.Element], Unit]] = js.undefined
   var disableAutoFocus: js.UndefOr[Boolean] = js.undefined
   var disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined
   var disableOverlayClick: js.UndefOr[Boolean] = js.undefined
@@ -52,7 +52,7 @@ object Props {
     crossClassName: String = null,
     customBurgerIcon: Element | `false` = null,
     customCrossIcon: Element | `false` = null,
-    customOnKeyDown: /* event */ KeyboardEvent[typings.react.Element] => Unit = null,
+    customOnKeyDown: /* event */ KeyboardEvent[typings.std.Element] => Unit = null,
     disableAutoFocus: js.UndefOr[Boolean] = js.undefined,
     disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
     disableOverlayClick: js.UndefOr[Boolean] = js.undefined,

@@ -48,7 +48,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var messages: js.UndefOr[Messages] = js.undefined
   var min: js.UndefOr[stringOrDate] = js.undefined
   var onDoubleClickEvent: js.UndefOr[
-    js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.react.Event], Unit]
+    js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
   ] = js.undefined
   var onDrillDown: js.UndefOr[js.Function2[/* date */ Date, /* view */ View, Unit]] = js.undefined
   var onNavigate: js.UndefOr[
@@ -56,7 +56,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   ] = js.undefined
   var onRangeChange: js.UndefOr[js.Function1[/* range */ js.Array[Date] | Anon_EndStart, Unit]] = js.undefined
   var onSelectEvent: js.UndefOr[
-    js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.react.Event], Unit]
+    js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
   ] = js.undefined
   var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ Anon_Action, Unit]] = js.undefined
   var onSelecting: js.UndefOr[js.Function1[/* range */ Anon_EndStart, js.UndefOr[Boolean | Null]]] = js.undefined
@@ -111,11 +111,11 @@ object CalendarProps {
     max: stringOrDate = null,
     messages: Messages = null,
     min: stringOrDate = null,
-    onDoubleClickEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.react.Event]) => Unit = null,
+    onDoubleClickEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit = null,
     onDrillDown: (/* date */ Date, /* view */ View) => Unit = null,
     onNavigate: (/* newDate */ Date, /* view */ View, /* action */ NavigateAction) => Unit = null,
     onRangeChange: /* range */ js.Array[Date] | Anon_EndStart => Unit = null,
-    onSelectEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.react.Event]) => Unit = null,
+    onSelectEvent: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit = null,
     onSelectSlot: /* slotInfo */ Anon_Action => Unit = null,
     onSelecting: /* range */ Anon_EndStart => js.UndefOr[Boolean | Null] = null,
     onShowMore: (/* events */ js.Array[TEvent], /* date */ Date) => Unit = null,

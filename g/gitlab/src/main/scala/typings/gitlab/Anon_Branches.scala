@@ -14,6 +14,7 @@ import typings.gitlab.distSrcCoreServicesMod.IssueAwardEmojis
 import typings.gitlab.distSrcCoreServicesMod.IssueDiscussions
 import typings.gitlab.distSrcCoreServicesMod.IssueNotes
 import typings.gitlab.distSrcCoreServicesMod.Issues
+import typings.gitlab.distSrcCoreServicesMod.IssuesStatistics
 import typings.gitlab.distSrcCoreServicesMod.Jobs
 import typings.gitlab.distSrcCoreServicesMod.Labels
 import typings.gitlab.distSrcCoreServicesMod.MergeRequestAwardEmojis
@@ -74,6 +75,7 @@ trait Anon_Branches extends js.Object {
   ]
   var IssueNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distSrcCoreServicesMod.IssueNotes]
   var Issues: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Issues]
+  var IssuesStatistics: Instantiable0[typings.gitlab.distSrcCoreServicesMod.IssuesStatistics]
   var Jobs: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Jobs]
   var Labels: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distSrcCoreServicesMod.Labels]
   var MergeRequestAwardEmojis: Instantiable1[
@@ -164,6 +166,7 @@ object Anon_Branches {
     IssueDiscussions: Instantiable1[/* options */ BaseServiceOptions, IssueDiscussions],
     IssueNotes: Instantiable1[/* options */ BaseServiceOptions, IssueNotes],
     Issues: Instantiable0[Issues],
+    IssuesStatistics: Instantiable0[IssuesStatistics],
     Jobs: Instantiable0[Jobs],
     Labels: Instantiable1[/* options */ BaseServiceOptions, Labels],
     MergeRequestAwardEmojis: Instantiable1[/* options */ BaseServiceOptions, MergeRequestAwardEmojis],
@@ -200,7 +203,7 @@ object Anon_Branches {
     Tags: Instantiable0[Tags],
     Triggers: Instantiable0[Triggers]
   ): Anon_Branches = {
-    val __obj = js.Dynamic.literal(Branches = Branches, CommitDiscussions = CommitDiscussions, Commits = Commits, ContainerRegistry = ContainerRegistry, DeployKeys = DeployKeys, Deployments = Deployments, Environments = Environments, IssueAwardEmojis = IssueAwardEmojis, IssueDiscussions = IssueDiscussions, IssueNotes = IssueNotes, Issues = Issues, Jobs = Jobs, Labels = Labels, MergeRequestAwardEmojis = MergeRequestAwardEmojis, MergeRequestDiscussions = MergeRequestDiscussions, MergeRequestNotes = MergeRequestNotes, MergeRequests = MergeRequests, Packages = Packages, PipelineScheduleVariables = PipelineScheduleVariables, PipelineSchedules = PipelineSchedules, Pipelines = Pipelines, ProjectAccessRequests = ProjectAccessRequests, ProjectBadges = ProjectBadges, ProjectCustomAttributes = ProjectCustomAttributes, ProjectHooks = ProjectHooks, ProjectImportExport = ProjectImportExport, ProjectIssueBoards = ProjectIssueBoards, ProjectMembers = ProjectMembers, ProjectMilestones = ProjectMilestones, ProjectSnippetAwardEmojis = ProjectSnippetAwardEmojis, ProjectSnippetDiscussions = ProjectSnippetDiscussions, ProjectSnippetNotes = ProjectSnippetNotes, ProjectSnippets = ProjectSnippets, ProjectVariables = ProjectVariables, Projects = Projects, ProtectedBranches = ProtectedBranches, ProtectedTags = ProtectedTags, PushRules = PushRules, ReleaseLinks = ReleaseLinks, Releases = Releases, Repositories = Repositories, RepositoryFiles = RepositoryFiles, Runners = Runners, Services = Services, Tags = Tags, Triggers = Triggers)
+    val __obj = js.Dynamic.literal(Branches = Branches, CommitDiscussions = CommitDiscussions, Commits = Commits, ContainerRegistry = ContainerRegistry, DeployKeys = DeployKeys, Deployments = Deployments, Environments = Environments, IssueAwardEmojis = IssueAwardEmojis, IssueDiscussions = IssueDiscussions, IssueNotes = IssueNotes, Issues = Issues, IssuesStatistics = IssuesStatistics, Jobs = Jobs, Labels = Labels, MergeRequestAwardEmojis = MergeRequestAwardEmojis, MergeRequestDiscussions = MergeRequestDiscussions, MergeRequestNotes = MergeRequestNotes, MergeRequests = MergeRequests, Packages = Packages, PipelineScheduleVariables = PipelineScheduleVariables, PipelineSchedules = PipelineSchedules, Pipelines = Pipelines, ProjectAccessRequests = ProjectAccessRequests, ProjectBadges = ProjectBadges, ProjectCustomAttributes = ProjectCustomAttributes, ProjectHooks = ProjectHooks, ProjectImportExport = ProjectImportExport, ProjectIssueBoards = ProjectIssueBoards, ProjectMembers = ProjectMembers, ProjectMilestones = ProjectMilestones, ProjectSnippetAwardEmojis = ProjectSnippetAwardEmojis, ProjectSnippetDiscussions = ProjectSnippetDiscussions, ProjectSnippetNotes = ProjectSnippetNotes, ProjectSnippets = ProjectSnippets, ProjectVariables = ProjectVariables, Projects = Projects, ProtectedBranches = ProtectedBranches, ProtectedTags = ProtectedTags, PushRules = PushRules, ReleaseLinks = ReleaseLinks, Releases = Releases, Repositories = Repositories, RepositoryFiles = RepositoryFiles, Runners = Runners, Services = Services, Tags = Tags, Triggers = Triggers)
   
     __obj.asInstanceOf[Anon_Branches]
   }

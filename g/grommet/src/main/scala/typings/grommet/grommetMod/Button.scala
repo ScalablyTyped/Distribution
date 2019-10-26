@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsButtonMod.ButtonProps
 import typings.grommet.grommetStrings.color
 import typings.grommet.utilsMod.Omit
-import typings.react.HTMLButtonElement
 import typings.react.reactMod.ButtonHTMLAttributes
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FC
+import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

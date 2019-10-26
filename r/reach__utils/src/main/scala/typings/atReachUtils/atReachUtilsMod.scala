@@ -1,9 +1,9 @@
 package typings.atReachUtils
 
-import typings.react.Element
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,0 +1,20 @@
+package typings.forgeDashApis.forgeDashApisMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CreateItemRelationshipsStorageData extends js.Object {
+  var id: String
+  var `type`: String
+}
+
+object CreateItemRelationshipsStorageData {
+  @scala.inline
+  def apply(id: String, `type`: String): CreateItemRelationshipsStorageData = {
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CreateItemRelationshipsStorageData]
+  }
+}
+

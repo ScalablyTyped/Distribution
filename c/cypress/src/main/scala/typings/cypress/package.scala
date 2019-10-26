@@ -17,7 +17,6 @@ package object cypress {
   import typings.cypress.JQuery.TypeOrArray
   import typings.cypress.JQuery.jqXHR
   import typings.cypress.Mocha.Done
-  import typings.cypress.Mocha.MochaGlobals
   import typings.std.DragEvent
   import typings.std.Element
   import typings.std.Event
@@ -76,9 +75,6 @@ package object cypress {
   type MochaDone = Done
   /** @deprecated use `Mocha.ReporterConstructor` instead. */
   type ReporterConstructor = typings.cypress.Mocha.ReporterConstructor
-  // Augments the DOM `Window` object when lib.dom.d.ts is loaded.
-  // tslint:disable-next-line no-empty-interface
-  type Window = MochaGlobals
   type _DragEvent = DragEvent
   type _Event = Event
   type _FocusEvent = FocusEvent

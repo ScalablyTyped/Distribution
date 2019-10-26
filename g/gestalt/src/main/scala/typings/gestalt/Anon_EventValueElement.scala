@@ -1,9 +1,9 @@
 package typings.gestalt
 
-import typings.react.Element
-import typings.react.Event
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

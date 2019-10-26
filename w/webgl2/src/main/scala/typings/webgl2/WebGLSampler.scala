@@ -7,5 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLSampler")
 @js.native
-object WebGLSampler extends Instantiable0[WebGLSampler]
+class WebGLSampler ()
+  extends typings.std.WebGLSampler
+
+@JSGlobal("WebGLSampler")
+@js.native
+object WebGLSampler
+  extends Instantiable0[typings.std.WebGLSampler]
 

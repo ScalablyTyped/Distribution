@@ -1,12 +1,12 @@
 package typings.reactDashMentions.reactDashMentionsMod
 
-import typings.react.Element
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.RefObject
 import typings.react.reactMod.UIEvent
 import typings.reactDashMentions.Anon_Target
+import typings.std.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
     */
   var singleLine: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
-  var suggestionsPortalHost: js.UndefOr[typings.std.Element] = js.undefined
+  var suggestionsPortalHost: js.UndefOr[Element] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
 
@@ -61,7 +61,7 @@ object MentionsInputProps {
     placeholder: String = null,
     singleLine: js.UndefOr[Boolean] = js.undefined,
     style: js.Any = null,
-    suggestionsPortalHost: typings.std.Element = null,
+    suggestionsPortalHost: Element = null,
     value: String = null
   ): MentionsInputProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])

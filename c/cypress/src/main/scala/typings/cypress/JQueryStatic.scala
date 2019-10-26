@@ -50,6 +50,7 @@ import typings.std.Error
 import typings.std.HTMLElement
 import typings.std.HTMLSelectElement
 import typings.std.Node
+import typings.std.Window
 import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -452,12 +453,6 @@ trait JQueryStatic extends js.Object {
   def data(element: PlainObject[_], key: String, value: js.Symbol): js.Symbol = js.native
   def data(element: PlainObject[_], key: String, value: Boolean): Boolean = js.native
   def data(element: PlainObject[_], key: String, value: Double): Double = js.native
-  def data(element: Window): js.Any = js.native
-  def data(element: Window, key: String): Null = js.native
-  def data(element: Window, key: String, value: String): String = js.native
-  def data(element: Window, key: String, value: js.Symbol): js.Symbol = js.native
-  def data(element: Window, key: String, value: Boolean): Boolean = js.native
-  def data(element: Window, key: String, value: Double): Double = js.native
   def data(element: Document): js.Any = js.native
   def data(element: Document, key: String): Null = js.native
   def data(element: Document, key: String, value: String): String = js.native
@@ -588,14 +583,18 @@ trait JQueryStatic extends js.Object {
   def data(element: Element, key: String, value: js.Symbol): js.Symbol = js.native
   def data(element: Element, key: String, value: Boolean): Boolean = js.native
   def data(element: Element, key: String, value: Double): Double = js.native
+  def data(element: Window): js.Any = js.native
+  def data(element: Window, key: String): Null = js.native
+  def data(element: Window, key: String, value: String): String = js.native
+  def data(element: Window, key: String, value: js.Symbol): js.Symbol = js.native
+  def data(element: Window, key: String, value: Boolean): Boolean = js.native
+  def data(element: Window, key: String, value: Double): Double = js.native
   def data[T /* <: js.Object */](element: PlainObject[_], key: String, value: T): T = js.native
-  def data[T /* <: js.Object */](element: Window, key: String, value: T): T = js.native
   def data[T /* <: js.Object */](element: Document, key: String, value: T): T = js.native
   def data[T /* <: js.Object */](element: Element, key: String, value: T): T = js.native
+  def data[T /* <: js.Object */](element: Window, key: String, value: T): T = js.native
   @JSName("data")
   def data_Any(element: PlainObject[_], key: String): js.Any = js.native
-  @JSName("data")
-  def data_Any(element: Window, key: String): js.Any = js.native
   @JSName("data")
   def data_Any(element: Document, key: String): js.Any = js.native
   /**
@@ -612,6 +611,8 @@ trait JQueryStatic extends js.Object {
   // tslint:disable-next-line:unified-signatures
   @JSName("data")
   def data_Any(element: Element, key: String): js.Any = js.native
+  @JSName("data")
+  def data_Any(element: Window, key: String): js.Any = js.native
   /**
     * Execute the next function on the queue for the matched element.
     * @param element A DOM element from which to remove and execute a queued function.
@@ -2029,7 +2030,6 @@ trait JQueryStatic extends js.Object {
     invert: Boolean
   ): js.Array[T] = js.native
   def hasData(element: PlainObject[_]): Boolean = js.native
-  def hasData(element: Window): Boolean = js.native
   def hasData(element: Document): Boolean = js.native
   /**
     * Determine whether an element has any jQuery data associated with it.
@@ -2071,6 +2071,7 @@ trait JQueryStatic extends js.Object {
   ```
     */
   def hasData(element: Element): Boolean = js.native
+  def hasData(element: Window): Boolean = js.native
   /**
     * Holds or releases the execution of jQuery's ready event.
     * @param hold Indicates whether the ready hold is being requested or released
@@ -2317,7 +2318,7 @@ trait JQueryStatic extends js.Object {
   </html>
   ```
     */
-  def isWindow(obj: js.Any): /* is cypress.Window */ Boolean = js.native
+  def isWindow(obj: js.Any): /* is std.Window */ Boolean = js.native
   /**
     * Check to see if a DOM node is within an XML document (or is an XML document).
     * @param node The DOM node that will be checked to see if it's in an XML document.
@@ -15086,8 +15087,6 @@ trait JQueryStatic extends js.Object {
   def readyException(error: Error): js.Any = js.native
   def removeData(element: PlainObject[_]): Unit = js.native
   def removeData(element: PlainObject[_], name: String): Unit = js.native
-  def removeData(element: Window): Unit = js.native
-  def removeData(element: Window, name: String): Unit = js.native
   def removeData(element: Document): Unit = js.native
   def removeData(element: Document, name: String): Unit = js.native
   /**
@@ -15138,6 +15137,8 @@ trait JQueryStatic extends js.Object {
     */
   def removeData(element: Element): Unit = js.native
   def removeData(element: Element, name: String): Unit = js.native
+  def removeData(element: Window): Unit = js.native
+  def removeData(element: Window, name: String): Unit = js.native
   /**
     * Creates an object containing a set of properties ready to be used in the definition of custom animations.
     * @param duration_complete_settings _&#x40;param_ `duration_complete_settings`

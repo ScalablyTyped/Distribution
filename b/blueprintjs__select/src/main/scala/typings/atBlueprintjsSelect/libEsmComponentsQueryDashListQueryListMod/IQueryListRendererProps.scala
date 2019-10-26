@@ -1,11 +1,11 @@
 package typings.atBlueprintjsSelect.libEsmComponentsQueryDashListQueryListMod
 
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
-import typings.react.Event
 import typings.react.reactMod.ChangeEventHandler
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js

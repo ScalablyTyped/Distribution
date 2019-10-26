@@ -85,7 +85,7 @@ class Terminal () extends IDisposable {
   /**
     * The element containing the terminal.
     */
-  val element: HTMLElement = js.native
+  val element: js.UndefOr[HTMLElement] = js.native
   /**
     * (EXPERIMENTAL) Get all markers registered against the buffer. If the alt
     * buffer is active this will always return [].
@@ -136,7 +136,7 @@ class Terminal () extends IDisposable {
   @JSName("onResize")
   var onResize_Original: IEvent[Anon_Cols] = js.native
   /**
-    * Adds an event listener for when a scroll occurs. The  event value is the
+    * Adds an event listener for when a scroll occurs. The event value is the
     * new position of the viewport.
     * @returns an `IDisposable` to stop listening.
     */
@@ -169,7 +169,7 @@ class Terminal () extends IDisposable {
   /**
     * The textarea that accepts input for the terminal.
     */
-  val textarea: HTMLTextAreaElement = js.native
+  val textarea: js.UndefOr[HTMLTextAreaElement] = js.native
   /**
     * (EXPERIMENTAL) Adds a marker to the normal buffer and returns it. If the
     * alt buffer is active, undefined is returned.
@@ -322,7 +322,7 @@ class Terminal () extends IDisposable {
     */
   def onResize(listener: js.Function1[/* e */ Anon_Cols, _]): IDisposable = js.native
   /**
-    * Adds an event listener for when a scroll occurs. The  event value is the
+    * Adds an event listener for when a scroll occurs. The event value is the
     * new position of the viewport.
     * @returns an `IDisposable` to stop listening.
     */

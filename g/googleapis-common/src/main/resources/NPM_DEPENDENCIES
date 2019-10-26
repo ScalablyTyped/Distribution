@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "googleapis-common" : "0.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "googleapis-common" : "0.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,7 @@
 package typings.videoDotJs.videoDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Partial
 import typings.videoDotJs.videoDotJsMod.videojs.Child
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
 import typings.videoDotJs.videoDotJsMod.videojs.ControlBarOptions
@@ -31,7 +32,7 @@ trait VideoJsPlayerOptions extends ComponentOptions {
   var nativeControlsForTouch: js.UndefOr[Boolean] = js.undefined
   var notSupportedMessage: js.UndefOr[String] = js.undefined
   var playbackRates: js.UndefOr[js.Array[Double]] = js.undefined
-  var plugins: js.UndefOr[VideoJsPlayerPluginOptions] = js.undefined
+  var plugins: js.UndefOr[Partial[VideoJsPlayerPluginOptions]] = js.undefined
   var poster: js.UndefOr[String] = js.undefined
   var preload: js.UndefOr[String] = js.undefined
   var sourceOrder: js.UndefOr[Boolean] = js.undefined
@@ -64,7 +65,7 @@ object VideoJsPlayerOptions {
     nativeControlsForTouch: js.UndefOr[Boolean] = js.undefined,
     notSupportedMessage: String = null,
     playbackRates: js.Array[Double] = null,
-    plugins: VideoJsPlayerPluginOptions = null,
+    plugins: Partial[VideoJsPlayerPluginOptions] = null,
     poster: String = null,
     preload: String = null,
     sourceOrder: js.UndefOr[Boolean] = js.undefined,

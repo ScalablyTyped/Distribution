@@ -1,5 +1,6 @@
 package typings.sortablejs.sortablejsMod
 
+import typings.sortablejs.pluginsMod.SortablePlugin
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,6 +27,16 @@ object ^ extends js.Object {
     * @param element Any variety of HTMLElement.
     * @param options Sortable options object.
     */
+  def create(element: HTMLElement): Sortable = js.native
   def create(element: HTMLElement, options: Options): Sortable = js.native
+  /**
+    * Mounts a plugin to Sortable
+    * @param sortablePlugin a sortable plugin.
+    * 
+    * @example
+    * 
+    * Sortable.mount(new MultiDrag(), new AutoScroll())
+    */
+  def mount(sortablePlugins: SortablePlugin*): Unit = js.native
 }
 

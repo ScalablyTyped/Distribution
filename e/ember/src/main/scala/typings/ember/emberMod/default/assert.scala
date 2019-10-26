@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object assert extends js.Object {
   def apply(desc: String): Unit | scala.Nothing = js.native
-  def apply(desc: String, test: Boolean): Unit | scala.Nothing = js.native
+  def apply(desc: String, test: js.Any): Unit | scala.Nothing = js.native
 }
 

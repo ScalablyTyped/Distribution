@@ -1,7 +1,7 @@
 
 # Scala.js typings for rbush
 
-Typings are for version 2.0.1
+Typings are for version 3.0
 
 ## Library description:
 High-performance 2D spatial index for rectangles (based on R*-tree with bulk loading and bulk insertion algorithms)

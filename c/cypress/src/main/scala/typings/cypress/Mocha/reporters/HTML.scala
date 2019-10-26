@@ -2,9 +2,9 @@ package typings.cypress.Mocha.reporters
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.TopLevel
-import typings.cypress.HTMLLIElement
 import typings.cypress.Mocha.Suite
 import typings.cypress.Mocha.Test
+import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

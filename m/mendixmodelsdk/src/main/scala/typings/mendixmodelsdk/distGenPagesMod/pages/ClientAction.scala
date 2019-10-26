@@ -30,6 +30,7 @@ abstract class ClientAction protected () extends Element {
   val containerAsAttributeWidget: AttributeWidget = js.native
   val containerAsBottomBarItem: BottomBarItem = js.native
   val containerAsDataViewActionButton: DataViewActionButton = js.native
+  val containerAsDivContainer: DivContainer = js.native
   val containerAsDynamicImageViewer: DynamicImageViewer = js.native
   val containerAsGridActionButton: GridActionButton = js.native
   val containerAsListView: ListView = js.native

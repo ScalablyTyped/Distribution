@@ -25,12 +25,15 @@ trait LessStatic extends js.Object {
   def refresh(reload: Boolean, modifyVars: StringDictionary[String], clearFileCache: Boolean): js.Promise[RefreshOutput] = js.native
   def refreshStyles(): Unit = js.native
   def render(input: String): js.Promise[RenderOutput] = js.native
-  def render(input: String, callback: js.Function2[/* error */ RenderError, /* output */ RenderOutput, Unit]): Unit = js.native
+  def render(
+    input: String,
+    callback: js.Function2[/* error */ RenderError, /* output */ js.UndefOr[RenderOutput], Unit]
+  ): Unit = js.native
   def render(input: String, options: Options): js.Promise[RenderOutput] = js.native
   def render(
     input: String,
     options: Options,
-    callback: js.Function2[/* error */ RenderError, /* output */ RenderOutput, Unit]
+    callback: js.Function2[/* error */ RenderError, /* output */ js.UndefOr[RenderOutput], Unit]
   ): Unit = js.native
   def watch(): Unit = js.native
 }

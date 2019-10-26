@@ -1,8 +1,8 @@
 package typings.reactDashMaterialDashUiDashFormDashValidator.reactDashMaterialDashUiDashFormDashValidatorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.Element
 import typings.react.reactMod.FormEvent
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

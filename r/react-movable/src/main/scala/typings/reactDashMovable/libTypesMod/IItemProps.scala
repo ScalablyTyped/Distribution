@@ -1,10 +1,10 @@
 package typings.reactDashMovable.libTypesMod
 
-import typings.react.Element
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.RefObject
 import typings.react.reactMod.WheelEvent
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

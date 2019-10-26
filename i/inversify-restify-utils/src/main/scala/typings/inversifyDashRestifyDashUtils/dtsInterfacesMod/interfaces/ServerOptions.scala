@@ -30,6 +30,7 @@ object ServerOptions {
     ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined,
     key: String | Buffer | (js.Array[String | Buffer]) = null,
     log: ^ = null,
+    maxParamLength: Int | Double = null,
     name: String = null,
     noWriteContinue: js.UndefOr[Boolean] = js.undefined,
     onceNext: js.UndefOr[Boolean] = js.undefined,
@@ -59,6 +60,7 @@ object ServerOptions {
     if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log)
+    if (maxParamLength != null) __obj.updateDynamic("maxParamLength")(maxParamLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(noWriteContinue)) __obj.updateDynamic("noWriteContinue")(noWriteContinue)
     if (!js.isUndefined(onceNext)) __obj.updateDynamic("onceNext")(onceNext)

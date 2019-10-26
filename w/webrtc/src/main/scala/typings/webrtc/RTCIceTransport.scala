@@ -3,6 +3,7 @@ package typings.webrtc
 import typings.std.RTCIceCandidate
 import typings.std.RTCIceCandidatePair
 import typings.std.RTCIceGatheringState
+import typings.std.RTCIceParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

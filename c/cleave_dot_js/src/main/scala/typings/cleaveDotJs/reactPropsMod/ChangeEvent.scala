@@ -1,8 +1,8 @@
 package typings.cleaveDotJs.reactPropsMod
 
 import typings.cleaveDotJs.Anon_RawValue
-import typings.react.Event
-import typings.react.EventTarget
+import typings.std.Event
+import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object ChangeEvent {
     persist: () => Unit,
     preventDefault: () => Unit,
     stopPropagation: () => Unit,
-    target: Anon_RawValue with typings.std.EventTarget with T,
+    target: Anon_RawValue with EventTarget with T,
     target_ChangeEvent: EventTarget with T,
     timeStamp: Double,
     `type`: String

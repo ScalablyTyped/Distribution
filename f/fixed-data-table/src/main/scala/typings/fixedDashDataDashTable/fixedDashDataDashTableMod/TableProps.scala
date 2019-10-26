@@ -1,11 +1,11 @@
 package typings.fixedDashDataDashTable.fixedDashDataDashTableMod
 
-import typings.react.Event
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.Props
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

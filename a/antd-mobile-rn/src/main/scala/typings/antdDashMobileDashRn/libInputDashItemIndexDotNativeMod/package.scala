@@ -8,7 +8,7 @@ package object libInputDashItemIndexDotNativeMod {
   import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.onBlur
   import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.onChange
   import typings.antdDashMobileDashRn.antdDashMobileDashRnStrings.onFocus
-  import typings.std.Omit
+  import typings.utilityDashTypes.distMappedDashTypesMod.Omit
 
   type TextInputProps = Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ js.Any, 

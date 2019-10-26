@@ -1,9 +1,9 @@
 package typings.atBlueprintjsCore.libEsmComponentsOverlayOverlayMod
 
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
-import typings.react.Event
 import typings.react.reactMod.HTMLProps
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

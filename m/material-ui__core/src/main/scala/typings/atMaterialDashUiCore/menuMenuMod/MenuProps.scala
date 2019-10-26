@@ -57,7 +57,6 @@ import typings.atMaterialDashUiCore.popoverPopoverMod.PopoverPosition
 import typings.atMaterialDashUiCore.popoverPopoverMod.PopoverReference
 import typings.atMaterialDashUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.Anon_Html
-import typings.react.Event
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
@@ -97,6 +96,7 @@ import typings.react.reactMod.WheelEventHandler
 import typings.reactDashTransitionDashGroup.Anon_Appear
 import typings.reactDashTransitionDashGroup.transitionMod.EnterHandler
 import typings.reactDashTransitionDashGroup.transitionMod.ExitHandler
+import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js

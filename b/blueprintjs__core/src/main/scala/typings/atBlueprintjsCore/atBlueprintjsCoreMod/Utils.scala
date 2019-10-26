@@ -120,11 +120,9 @@ object Utils extends js.Object {
   def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyWhitelist[T]): Boolean = js.native
   def throttle[T /* <: js.Function */](method: T): T = js.native
   def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = js.native
+  def throttleReactEventCallback(callback: js.Function2[/* event */ SyntheticEvent[_, Event], /* repeated */ js.Any, _]): js.Function1[/* event2 */ SyntheticEvent[_, Event], Unit] = js.native
   def throttleReactEventCallback(
-    callback: js.Function2[/* event */ SyntheticEvent[_, typings.react.Event], /* repeated */ js.Any, _]
-  ): js.Function1[/* event2 */ SyntheticEvent[_, Event], Unit] = js.native
-  def throttleReactEventCallback(
-    callback: js.Function2[/* event */ SyntheticEvent[_, typings.react.Event], /* repeated */ js.Any, _],
+    callback: js.Function2[/* event */ SyntheticEvent[_, Event], /* repeated */ js.Any, _],
     options: IThrottledReactEventOptions
   ): js.Function1[/* event2 */ SyntheticEvent[_, Event], Unit] = js.native
 }

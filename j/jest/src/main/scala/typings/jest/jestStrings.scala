@@ -9,6 +9,15 @@ import scala.scalajs.js.annotation._
 
 object jestStrings {
   @js.native
+  sealed trait CustomAsyncMatchers extends js.Object
+  
+  @js.native
+  sealed trait ExpectProperties extends js.Object
+  
+  @js.native
+  sealed trait ExtendedMatchers extends js.Object
+  
+  @js.native
   sealed trait Matchers extends js.Object
   
   @js.native
@@ -45,6 +54,9 @@ object jestStrings {
   sealed trait none extends SnapshotUpdateState
   
   @js.native
+  sealed trait not extends js.Object
+  
+  @js.native
   sealed trait passed extends Status
   
   @js.native
@@ -52,6 +64,12 @@ object jestStrings {
   
   @js.native
   sealed trait real extends js.Object
+  
+  @js.native
+  sealed trait rejects extends js.Object
+  
+  @js.native
+  sealed trait resolves extends js.Object
   
   @js.native
   sealed trait `return` extends js.Object
@@ -68,6 +86,12 @@ object jestStrings {
   @js.native
   sealed trait warn extends LogType
   
+  @scala.inline
+  def CustomAsyncMatchers: CustomAsyncMatchers = "CustomAsyncMatchers".asInstanceOf[CustomAsyncMatchers]
+  @scala.inline
+  def ExpectProperties: ExpectProperties = "ExpectProperties".asInstanceOf[ExpectProperties]
+  @scala.inline
+  def ExtendedMatchers: ExtendedMatchers = "ExtendedMatchers".asInstanceOf[ExtendedMatchers]
   @scala.inline
   def Matchers: Matchers = "Matchers".asInstanceOf[Matchers]
   @scala.inline
@@ -93,11 +117,17 @@ object jestStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def not: not = "not".asInstanceOf[not]
+  @scala.inline
   def passed: passed = "passed".asInstanceOf[passed]
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline
   def real: real = "real".asInstanceOf[real]
+  @scala.inline
+  def rejects: rejects = "rejects".asInstanceOf[rejects]
+  @scala.inline
+  def resolves: resolves = "resolves".asInstanceOf[resolves]
   @scala.inline
   def `return`: `return` = "return".asInstanceOf[`return`]
   @scala.inline

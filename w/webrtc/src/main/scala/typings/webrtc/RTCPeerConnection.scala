@@ -2,6 +2,7 @@ package typings.webrtc
 
 import typings.std.Event
 import typings.std.EventTarget
+import typings.std.RTCAnswerOptions
 import typings.std.RTCIceCandidate
 import typings.std.RTCIceCandidateInit
 import typings.std.RTCPeerConnectionErrorCallback

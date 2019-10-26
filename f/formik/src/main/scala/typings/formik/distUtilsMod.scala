@@ -19,7 +19,7 @@ object distUtilsMod extends js.Object {
   def getIn(obj: js.Any, key: js.Array[String], `def`: js.Any, p: Double): js.Any = js.native
   def isEmptyChildren(children: js.Any): Boolean = js.native
   def isFunction(obj: js.Any): /* is std.Function */ Boolean = js.native
-  def isInputEvent(value: js.Any): /* is react.react.SyntheticEvent<any, react.Event> */ Boolean = js.native
+  def isInputEvent(value: js.Any): /* is react.react.SyntheticEvent<any, std.Event> */ Boolean = js.native
   def isInteger(obj: js.Any): Boolean = js.native
   def isNaN(obj: js.Any): Boolean = js.native
   def isObject(obj: js.Any): Boolean = js.native

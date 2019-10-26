@@ -2,7 +2,7 @@ package typings.atAntDashDesignProDashLayout.esPageHeaderWrapperMod
 
 import typings.antd.esAvatarMod.AvatarProps
 import typings.antd.esBreadcrumbBreadcrumbMod.BreadcrumbProps
-import typings.atAntDashDesignProDashLayout.Anon_Key
+import typings.antd.esTabsMod.TabPaneProps
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
@@ -34,7 +34,7 @@ trait PageHeaderWrapperProps extends js.Object {
   var subTitle: js.UndefOr[ReactNode] = js.undefined
   var tabActiveKey: js.UndefOr[String] = js.undefined
   var tabBarExtraContent: js.UndefOr[ReactNode | Null] = js.undefined
-  var tabList: js.UndefOr[js.Array[Anon_Key]] = js.undefined
+  var tabList: js.UndefOr[js.Array[TabPaneProps]] = js.undefined
   var tags: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
   var title: js.UndefOr[ReactNode | `false`] = js.undefined
 }
@@ -59,7 +59,7 @@ object PageHeaderWrapperProps {
     subTitle: ReactNode = null,
     tabActiveKey: String = null,
     tabBarExtraContent: ReactNode = null,
-    tabList: js.Array[Anon_Key] = null,
+    tabList: js.Array[TabPaneProps] = null,
     tags: ReactElement | js.Array[ReactElement] = null,
     title: ReactNode | `false` = null
   ): PageHeaderWrapperProps = {

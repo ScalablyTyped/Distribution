@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Matchers[R] extends js.Object {
+trait Matchers[R, T] extends js.Object {
   /**
     * Ensure that `console.error` function was called.
     */
@@ -41,7 +41,7 @@ trait Matchers[R] extends js.Object {
 
 object Matchers {
   @scala.inline
-  def apply[R](
+  def apply[R, T](
     toHaveErrored: () => R,
     toHaveErroredWith: /* repeated */ js.Any => R,
     toHaveInformed: () => R,
@@ -50,10 +50,10 @@ object Matchers {
     toHaveLoggedWith: /* repeated */ js.Any => R,
     toHaveWarned: () => R,
     toHaveWarnedWith: /* repeated */ js.Any => R
-  ): Matchers[R] = {
+  ): Matchers[R, T] = {
     val __obj = js.Dynamic.literal(toHaveErrored = js.Any.fromFunction0(toHaveErrored), toHaveErroredWith = js.Any.fromFunction1(toHaveErroredWith), toHaveInformed = js.Any.fromFunction0(toHaveInformed), toHaveInformedWith = js.Any.fromFunction1(toHaveInformedWith), toHaveLogged = js.Any.fromFunction0(toHaveLogged), toHaveLoggedWith = js.Any.fromFunction1(toHaveLoggedWith), toHaveWarned = js.Any.fromFunction0(toHaveWarned), toHaveWarnedWith = js.Any.fromFunction1(toHaveWarnedWith))
   
-    __obj.asInstanceOf[Matchers[R]]
+    __obj.asInstanceOf[Matchers[R, T]]
   }
 }
 

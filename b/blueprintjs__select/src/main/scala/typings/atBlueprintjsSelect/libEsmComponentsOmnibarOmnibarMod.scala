@@ -7,9 +7,9 @@ import typings.atBlueprintjsCore.libEsmComponentsOverlayOverlayMod.IOverlayProps
 import typings.atBlueprintjsSelect.libEsmCommonListItemsPropsMod.IListItemsProps
 import typings.atBlueprintjsSelect.libEsmComponentsOmnibarOmnibarMod.IOmnibarProps
 import typings.atBlueprintjsSelect.libEsmComponentsOmnibarOmnibarMod.Omnibar
-import typings.react.Event
 import typings.react.reactMod.Component
 import typings.react.reactMod.SyntheticEvent
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js

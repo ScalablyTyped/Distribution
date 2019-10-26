@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.INanoflow
 import typings.mendixmodelsdk.distGenPagesMod.pages.ClientAction
 import typings.mendixmodelsdk.distGenPagesMod.pages.ClientTemplate
+import typings.mendixmodelsdk.distGenPagesMod.pages.DataSource
 import typings.mendixmodelsdk.distGenPagesMod.pages.IPage
 import typings.mendixmodelsdk.distGenPagesMod.pages.Icon
 import typings.mendixmodelsdk.distGenPagesMod.pages.Widget
@@ -48,6 +49,10 @@ class WidgetValue protected () extends Element {
     */
   var attributeRef: AttributeRef | Null = js.native
   val containerAsWidgetProperty: WidgetProperty = js.native
+  /**
+    * In version 8.3.0: introduced
+    */
+  var dataSource: DataSource | Null = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyEntityPath.
     *

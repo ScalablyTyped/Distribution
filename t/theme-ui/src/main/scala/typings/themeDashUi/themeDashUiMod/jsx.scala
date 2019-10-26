@@ -1,8 +1,5 @@
 package typings.themeDashUi.themeDashUiMod
 
-import typings.react.Element
-import typings.react.HTMLInputElement
-import typings.react.SVGElement
 import typings.react.reactMod.Attributes
 import typings.react.reactMod.CElement
 import typings.react.reactMod.ClassAttributes
@@ -22,6 +19,9 @@ import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactSVGElement
 import typings.react.reactMod.SVGAttributes
+import typings.std.Element
+import typings.std.HTMLInputElement
+import typings.std.SVGElement
 import typings.themeDashUi.themeDashUiStrings.input
 import scala.scalajs.js
 import scala.scalajs.js.`|`

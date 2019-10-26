@@ -1,5 +1,6 @@
 package typings.atJupyterlabFilebrowser.libOpendialogMod.FileDialog
 
+import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
 import typings.atJupyterlabServices.libContentsMod.Contents.IModel
 import typings.atJupyterlabUiDashComponents.libIconInterfacesMod.IIconRegistry
 import scala.scalajs.js
@@ -20,7 +21,7 @@ object IFileOptions {
   @scala.inline
   def apply(
     iconRegistry: IIconRegistry,
-    manager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentManager */ js.Any,
+    manager: IDocumentManager,
     filter: /* value */ IModel => Boolean = null
   ): IFileOptions = {
     val __obj = js.Dynamic.literal(iconRegistry = iconRegistry, manager = manager)

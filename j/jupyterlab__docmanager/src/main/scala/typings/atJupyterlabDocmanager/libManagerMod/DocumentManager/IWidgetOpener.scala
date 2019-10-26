@@ -1,5 +1,9 @@
 package typings.atJupyterlabDocmanager.libManagerMod.DocumentManager
 
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IOpenOptions
+import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
+import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +16,7 @@ trait IWidgetOpener extends js.Object {
   /**
     * Open the given widget.
     */
-  def open(
-    widget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any
-  ): Unit = js.native
-  def open(
-    widget: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IDocumentWidget */ js.Any,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.IOpenOptions */ js.Any
-  ): Unit = js.native
+  def open(widget: IDocumentWidget[Widget, IModel]): Unit = js.native
+  def open(widget: IDocumentWidget[Widget, IModel], options: IOpenOptions): Unit = js.native
 }
 

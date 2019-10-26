@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "chrome-apps"
-version := "0.0-unknown-dt-20191014Z-8e6631"
+version := "0.0-unknown-dt-20191014Z-1c8b91"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-0e06e5",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-c11499",
   "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-dce26a",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

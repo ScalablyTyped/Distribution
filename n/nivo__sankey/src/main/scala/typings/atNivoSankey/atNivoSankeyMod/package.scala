@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atNivoSankeyMod {
-  import typings.react.Element
   import typings.react.NativeMouseEvent
   import typings.react.reactMod.MouseEvent
   import typings.react.reactMod.ReactNode
+  import typings.std.Element
 
   type AccessorFunc = js.Function1[/* datum */ SankeyNodeDatum, String]
   type LabelFormatter = js.Function1[/* label */ String | Double, String | Double]

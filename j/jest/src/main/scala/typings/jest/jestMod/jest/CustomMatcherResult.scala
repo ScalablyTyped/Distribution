@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomMatcherResult extends js.Object {
-  var message: String | js.Function0[String]
   var pass: Boolean
+  def message(): String
 }
 
 object CustomMatcherResult {
   @scala.inline
-  def apply(message: String | js.Function0[String], pass: Boolean): CustomMatcherResult = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], pass = pass)
+  def apply(message: () => String, pass: Boolean): CustomMatcherResult = {
+    val __obj = js.Dynamic.literal(message = js.Any.fromFunction0(message), pass = pass)
   
     __obj.asInstanceOf[CustomMatcherResult]
   }

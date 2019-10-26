@@ -8,7 +8,6 @@ import typings.cypress.JQuery.htmlString
 import typings.cypress.JQueryStatic
 import typings.cypress.Mocha.IRunnable
 import typings.cypress.Mocha.ITest
-import typings.cypress.Window
 import typings.cypress.cypressNumbers.`false`
 import typings.cypress.cypressStrings.`command:end`
 import typings.cypress.cypressStrings.`command:enqueued`
@@ -474,6 +473,7 @@ import typings.std.HTMLHtmlElement
 import typings.std.HTMLIFrameElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
 import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
@@ -528,6 +528,7 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -4205,9 +4206,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("children")
   def children_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("children")
-  def children_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def children_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("children")
-  def children_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def children_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("children")
   def children_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("children")
@@ -4837,9 +4838,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("closest")
   def closest_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("closest")
-  def closest_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def closest_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("closest")
-  def closest_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def closest_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("closest")
   def closest_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("closest")
@@ -5877,17 +5878,17 @@ trait Chainable[Subject] extends js.Object {
   @JSName("contains")
   def contains_legend(selector: legend, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: String): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: String): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: Double): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: Double): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: Double, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: RegExp): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: RegExp): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("contains")
-  def contains_li(selector: li, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def contains_li(selector: li, text: RegExp, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("contains")
   def contains_link(selector: link, text: String): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("contains")
@@ -6882,9 +6883,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("filter")
   def filter_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("filter")
-  def filter_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def filter_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("filter")
-  def filter_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def filter_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("filter")
   def filter_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("filter")
@@ -7375,9 +7376,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("find")
   def find_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("find")
-  def find_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def find_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("find")
-  def find_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def find_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("find")
   def find_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("find")
@@ -7945,9 +7946,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("get")
   def get_legend(selector: legend, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("get")
-  def get_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def get_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("get")
-  def get_li(selector: li, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def get_li(selector: li, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("get")
   def get_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("get")
@@ -8530,9 +8531,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextAll")
   def nextAll_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("nextAll")
-  def nextAll_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def nextAll_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("nextAll")
-  def nextAll_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def nextAll_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("nextAll")
   def nextAll_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("nextAll")
@@ -9025,9 +9026,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("nextUntil")
   def nextUntil_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def nextUntil_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def nextUntil_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("nextUntil")
@@ -9506,9 +9507,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("next")
   def next_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("next")
-  def next_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def next_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("next")
-  def next_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def next_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("next")
   def next_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("next")
@@ -10719,9 +10720,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parent")
   def parent_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("parent")
-  def parent_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def parent_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("parent")
-  def parent_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def parent_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("parent")
   def parent_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("parent")
@@ -11359,11 +11360,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parentsUntil")
   def parentsUntil_legend(selector: legend, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def parentsUntil_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_li(selector: li, filter: String): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def parentsUntil_li(selector: li, filter: String): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("parentsUntil")
-  def parentsUntil_li(selector: li, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def parentsUntil_li(selector: li, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("parentsUntil")
   def parentsUntil_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("parentsUntil")
@@ -11952,9 +11953,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parents")
   def parents_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("parents")
-  def parents_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def parents_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("parents")
-  def parents_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def parents_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("parents")
   def parents_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("parents")
@@ -12476,9 +12477,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevAll")
   def prevAll_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("prevAll")
-  def prevAll_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def prevAll_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("prevAll")
-  def prevAll_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def prevAll_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("prevAll")
   def prevAll_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("prevAll")
@@ -13105,11 +13106,11 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevUntil")
   def prevUntil_legend(selector: legend, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def prevUntil_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_li(selector: li, filter: String): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def prevUntil_li(selector: li, filter: String): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("prevUntil")
-  def prevUntil_li(selector: li, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def prevUntil_li(selector: li, filter: String, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("prevUntil")
   def prevUntil_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("prevUntil")
@@ -13700,9 +13701,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prev")
   def prev_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("prev")
-  def prev_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def prev_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("prev")
-  def prev_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def prev_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("prev")
   def prev_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("prev")
@@ -17897,9 +17898,9 @@ trait Chainable[Subject] extends js.Object {
   @JSName("siblings")
   def siblings_legend(selector: legend, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("siblings")
-  def siblings_li(selector: li): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def siblings_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("siblings")
-  def siblings_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[typings.std.HTMLLIElement]] = js.native
+  def siblings_li(selector: li, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("siblings")
   def siblings_link(selector: link): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("siblings")

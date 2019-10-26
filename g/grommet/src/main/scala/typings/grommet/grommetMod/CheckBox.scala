@@ -2,10 +2,10 @@ package typings.grommet.grommetMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsCheckBoxMod.CheckBoxProps
-import typings.react.HTMLInputElement
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.FC
 import typings.react.reactMod.InputHTMLAttributes
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

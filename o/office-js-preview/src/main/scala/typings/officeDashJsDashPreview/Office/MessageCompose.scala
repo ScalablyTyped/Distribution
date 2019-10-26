@@ -22,6 +22,7 @@ trait MessageCompose extends Message {
     * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
     *
     * - Get 500 members maximum.
+    *
     * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.1]
@@ -41,6 +42,7 @@ trait MessageCompose extends Message {
     * the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
     *
     * - Get 500 members maximum.
+    *
     * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.0]
@@ -109,6 +111,7 @@ trait MessageCompose extends Message {
     * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
     *
     * - Get 500 members maximum.
+    *
     * - Set a maximum of 100 members per call, up to 500 members total.
     *
     * [Api set: Mailbox 1.0]

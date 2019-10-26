@@ -35,6 +35,10 @@ class ClientTemplate protected () extends Element {
   val containerAsInputWidget: InputWidget = js.native
   val containerAsWidgetObject: WidgetObject = js.native
   val containerAsWidgetValue: WidgetValue = js.native
+  /**
+    * In version 8.3.0: introduced
+    */
+  var fallback: Text = js.native
   @JSName("model")
   var model_ClientTemplate: IModel = js.native
   val parameters: IList[ClientTemplateParameter] = js.native

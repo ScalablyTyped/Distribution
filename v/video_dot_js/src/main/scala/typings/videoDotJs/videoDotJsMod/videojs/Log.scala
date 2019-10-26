@@ -39,6 +39,13 @@ trait Log extends js.Object {
   		 */
   def apply(args: js.Any*): Unit = js.native
   /**
+  		 * Make a new module or plugin and log messages with a label.
+  		 * It takes a name and gives you back a log object like videojs.log
+  		 *
+  		 * @param label
+  		 */
+  def createLogger(label: String): Log = js.native
+  /**
   		 * Logs debug messages. Similar to `console.debug`, but may also act as a comparable
   		 * log if `console.debug` is not available
   		 *

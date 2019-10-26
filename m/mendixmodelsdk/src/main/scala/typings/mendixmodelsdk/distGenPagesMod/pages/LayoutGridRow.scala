@@ -33,12 +33,24 @@ class LayoutGridRow protected () extends Element {
   val columns: IList[LayoutGridColumn] = js.native
   var conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
   val containerAsLayoutGrid: LayoutGrid = js.native
+  /**
+    * In version 8.3.0: introduced
+    */
+  var horizontalAlignment: LayoutGridAlignment = js.native
   @JSName("model")
   var model_LayoutGridRow: IModel = js.native
+  /**
+    * In version 8.3.0: introduced
+    */
+  var spacingBetweenColumns: Boolean = js.native
   /**
     * In version 8.0.0: deleted
     */
   var style: String = js.native
+  /**
+    * In version 8.3.0: introduced
+    */
+  var verticalAlignment: LayoutGridAlignment = js.native
 }
 
 /* static members */

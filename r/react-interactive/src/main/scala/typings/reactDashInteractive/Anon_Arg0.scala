@@ -1,11 +1,11 @@
 package typings.reactDashInteractive
 
-import typings.react.Element
-import typings.react.Event
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashInteractive.reactDashInteractiveMod.ClickType
 import typings.reactDashInteractive.reactDashInteractiveMod.State
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +26,11 @@ trait Anon_Arg0 extends js.Object {
   var onClick: js.UndefOr[
     js.Function2[/* event */ SyntheticEvent[Element, Event], /* clickType */ ClickType, Unit]
   ] = js.undefined
-  var onLongPress: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.undefined
+  var onLongPress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onStateChange: js.UndefOr[js.Function1[/* arg0 */ Anon_Event, Unit]] = js.undefined
-  var onTapFour: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.undefined
-  var onTapThree: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.undefined
-  var onTapTwo: js.UndefOr[js.Function1[/* event */ typings.std.Event, Unit]] = js.undefined
+  var onTapFour: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onTapThree: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
+  var onTapTwo: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var refDOMNode: js.UndefOr[js.Function1[/* node */ js.Any, _]] = js.undefined
   var setStateCallback: js.UndefOr[js.Function1[/* arg0 */ Anon_NextState, Unit]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -55,11 +55,11 @@ object Anon_Arg0 {
     mutableProps: js.UndefOr[Boolean] = js.undefined,
     nonContainedChild: js.UndefOr[Boolean] = js.undefined,
     onClick: (/* event */ SyntheticEvent[Element, Event], /* clickType */ ClickType) => Unit = null,
-    onLongPress: /* event */ typings.std.Event => Unit = null,
+    onLongPress: /* event */ Event => Unit = null,
     onStateChange: /* arg0 */ Anon_Event => Unit = null,
-    onTapFour: /* event */ typings.std.Event => Unit = null,
-    onTapThree: /* event */ typings.std.Event => Unit = null,
-    onTapTwo: /* event */ typings.std.Event => Unit = null,
+    onTapFour: /* event */ Event => Unit = null,
+    onTapThree: /* event */ Event => Unit = null,
+    onTapTwo: /* event */ Event => Unit = null,
     refDOMNode: /* node */ js.Any => _ = null,
     setStateCallback: /* arg0 */ Anon_NextState => Unit = null,
     style: CSSProperties = null,

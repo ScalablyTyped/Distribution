@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("FormData")
 @js.native
-class FormData () extends _BodyInit_ {
+class FormData () extends js.Object {
   def append(name: String, value: js.Any): Unit = js.native
 }
 

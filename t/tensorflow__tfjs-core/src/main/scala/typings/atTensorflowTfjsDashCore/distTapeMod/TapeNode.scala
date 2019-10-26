@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TapeNode extends js.Object {
-  var gradient: js.UndefOr[js.Function1[/* dy */ Tensor[Rank] | js.Array[Tensor[Rank]], NamedGradientMap]] = js.undefined
+  var gradient: js.UndefOr[js.Function1[/* dys */ js.Array[Tensor[Rank]], NamedGradientMap]] = js.undefined
   var id: Double
   var inputs: NamedTensorMap
   var name: String
@@ -23,7 +23,7 @@ object TapeNode {
     inputs: NamedTensorMap,
     name: String,
     outputs: js.Array[Tensor[Rank]],
-    gradient: /* dy */ Tensor[Rank] | js.Array[Tensor[Rank]] => NamedGradientMap = null,
+    gradient: /* dys */ js.Array[Tensor[Rank]] => NamedGradientMap = null,
     saved: js.Array[Tensor[Rank]] = null
   ): TapeNode = {
     val __obj = js.Dynamic.literal(id = id, inputs = inputs, name = name, outputs = outputs)

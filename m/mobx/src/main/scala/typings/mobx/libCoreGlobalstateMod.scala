@@ -43,7 +43,6 @@ object libCoreGlobalstateMod extends js.Object {
       * Warn if computed values are accessed outside a reactive context
       */
     var computedRequiresReaction: Boolean = js.native
-    var currentActionId: Double = js.native
     var disableErrorBoundaries: Boolean = js.native
     /**
       * If strict mode is enabled, state changes are by default not allowed
@@ -65,7 +64,6 @@ object libCoreGlobalstateMod extends js.Object {
       * 'guid' for general purpose. Will be persisted amongst resets.
       */
     var mobxGuid: Double = js.native
-    var nextActionId: Double = js.native
     /**
       * (Experimental)
       * Warn if observables are accessed outside a reactive context

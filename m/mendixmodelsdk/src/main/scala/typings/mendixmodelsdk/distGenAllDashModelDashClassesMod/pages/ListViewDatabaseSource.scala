@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod.pages
 
 import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
+import typings.mendixmodelsdk.distGenCustomwidgetsMod.customwidgets.WidgetValue
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
@@ -38,7 +39,25 @@ object ListViewDatabaseSource extends js.Object {
     * Creates and returns a new ListViewDatabaseSource instance in the SDK and on the server.
     * The new ListViewDatabaseSource will be automatically stored in the 'dataSource' property
     * of the parent EntityWidget element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 8.2.0
     */
   def createIn(container: typings.mendixmodelsdk.distGenPagesMod.pages.EntityWidget): typings.mendixmodelsdk.distGenPagesMod.pages.ListViewDatabaseSource = js.native
+  /**
+    * Creates and returns a new ListViewDatabaseSource instance in the SDK and on the server.
+    * The new ListViewDatabaseSource will be automatically stored in the 'dataSource' property
+    * of the parent EntityWidget element passed as argument.
+    */
+  def createInEntityWidgetUnderDataSource(container: typings.mendixmodelsdk.distGenPagesMod.pages.EntityWidget): typings.mendixmodelsdk.distGenPagesMod.pages.ListViewDatabaseSource = js.native
+  /**
+    * Creates and returns a new ListViewDatabaseSource instance in the SDK and on the server.
+    * The new ListViewDatabaseSource will be automatically stored in the 'dataSource' property
+    * of the parent customwidgets.WidgetValue element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.3.0 and higher
+    */
+  def createInWidgetValueUnderDataSource(container: WidgetValue): typings.mendixmodelsdk.distGenPagesMod.pages.ListViewDatabaseSource = js.native
 }
 

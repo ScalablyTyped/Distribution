@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sodiumjs" : "3.0.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sodiumjs" : "3.0.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

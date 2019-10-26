@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__radar"
-version := "0.59.1-30e6ea"
+version := "0.59.1-ff5db5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "nivo__colors" % "0.59.0-b79ff2",
   "org.scalablytyped" %%% "nivo__core" % "0.59.1-d3305a",
-  "org.scalablytyped" %%% "nivo__legends" % "0.59.1-e01607",
+  "org.scalablytyped" %%% "nivo__legends" % "0.59.1-e06303",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191016Z-462cf8",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

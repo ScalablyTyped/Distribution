@@ -561,7 +561,7 @@ trait WebGL2RenderingContext
                              // 0x911C
   val WAIT_FAILED: Double = js.native
    //[WebGLHandlesContextLoss]
-  def beginQuery(target: Double, query: WebGLQuery): Unit = js.native
+  def beginQuery(target: Double, query: typings.std.WebGLQuery): Unit = js.native
   def beginTransformFeedback(primitiveMode: Double): Unit = js.native
   def bindBufferBase(target: Double, index: Double): Unit = js.native
   /* Uniform Buffer Objects and Transform Feedback Buffers */
@@ -570,13 +570,13 @@ trait WebGL2RenderingContext
   def bindBufferRange(target: Double, index: Double, buffer: WebGLBuffer, offset: Double, size: Double): Unit = js.native
   def bindSampler(unit: Double): Unit = js.native
    //[WebGLHandlesContextLoss]
-  def bindSampler(unit: Double, sampler: WebGLSampler): Unit = js.native
+  def bindSampler(unit: Double, sampler: typings.std.WebGLSampler): Unit = js.native
   def bindTransformFeedback(target: Double): Unit = js.native
    //[WebGLHandlesContextLoss]
-  def bindTransformFeedback(target: Double, tf: WebGLTransformFeedback): Unit = js.native
+  def bindTransformFeedback(target: Double, tf: typings.std.WebGLTransformFeedback): Unit = js.native
   def bindVertexArray(): Unit = js.native
    //[WebGLHandlesContextLoss]
-  def bindVertexArray(array: WebGLVertexArrayObject): Unit = js.native
+  def bindVertexArray(array: typings.std.WebGLVertexArrayObject): Unit = js.native
   /* Framebuffer objects */
   def blitFramebuffer(
     srcX0: Double,
@@ -636,7 +636,7 @@ trait WebGL2RenderingContext
   def clearBufferuiv(buffer: Double, drawbuffer: Double, values: ArrayLike[Double], srcOffset: Double): Unit = js.native
   def clearBufferuiv(buffer: Double, drawbuffer: Double, values: Uint32Array): Unit = js.native
   def clearBufferuiv(buffer: Double, drawbuffer: Double, values: Uint32Array, srcOffset: Double): Unit = js.native
-  def clientWaitSync(sync: WebGLSync, flags: Double, timeout: Double): Double = js.native
+  def clientWaitSync(sync: typings.std.WebGLSync, flags: Double, timeout: Double): Double = js.native
   def compressedTexImage2D(
     target: Double,
     level: Double,
@@ -914,24 +914,24 @@ trait WebGL2RenderingContext
     height: Double
   ): Unit = js.native
   /* Query Objects */
-  def createQuery(): WebGLQuery | Null = js.native
+  def createQuery(): typings.std.WebGLQuery | Null = js.native
   /* Sampler Objects */
-  def createSampler(): WebGLSampler | Null = js.native
+  def createSampler(): typings.std.WebGLSampler | Null = js.native
   /* Transform Feedback */
-  def createTransformFeedback(): WebGLTransformFeedback | Null = js.native
+  def createTransformFeedback(): typings.std.WebGLTransformFeedback | Null = js.native
   /* Vertex Array Objects */
-  def createVertexArray(): WebGLVertexArrayObject | Null = js.native
+  def createVertexArray(): typings.std.WebGLVertexArrayObject | Null = js.native
   def deleteQuery(): Unit = js.native
-  def deleteQuery(query: WebGLQuery): Unit = js.native
+  def deleteQuery(query: typings.std.WebGLQuery): Unit = js.native
   def deleteSampler(): Unit = js.native
-  def deleteSampler(sampler: WebGLSampler): Unit = js.native
+  def deleteSampler(sampler: typings.std.WebGLSampler): Unit = js.native
   def deleteSync(): Unit = js.native
    //[WebGLHandlesContextLoss]
-  def deleteSync(sync: WebGLSync): Unit = js.native
+  def deleteSync(sync: typings.std.WebGLSync): Unit = js.native
   def deleteTransformFeedback(): Unit = js.native
-  def deleteTransformFeedback(tf: WebGLTransformFeedback): Unit = js.native
+  def deleteTransformFeedback(tf: typings.std.WebGLTransformFeedback): Unit = js.native
   def deleteVertexArray(): Unit = js.native
-  def deleteVertexArray(vertexArray: WebGLVertexArrayObject): Unit = js.native
+  def deleteVertexArray(vertexArray: typings.std.WebGLVertexArrayObject): Unit = js.native
   def drawArraysInstanced(mode: Double, first: Double, count: Double, instanceCount: Double): Unit = js.native
   /* Multiple Render Targets */
   def drawBuffers(buffers: js.Array[Double]): Unit = js.native
@@ -940,7 +940,7 @@ trait WebGL2RenderingContext
   def endQuery(target: Double): Unit = js.native
   def endTransformFeedback(): Unit = js.native
   /* Sync objects */
-  def fenceSync(condition: Double, flags: Double): WebGLSync | Null = js.native
+  def fenceSync(condition: Double, flags: Double): typings.std.WebGLSync | Null = js.native
   def framebufferTextureLayer(target: Double, attachment: Double, texture: Null, level: Double, layer: Double): Unit = js.native
   def framebufferTextureLayer(target: Double, attachment: Double, texture: WebGLTexture, level: Double, layer: Double): Unit = js.native
   def getActiveUniformBlockName(program: WebGLProgram, uniformBlockIndex: Double): String | Null = js.native
@@ -963,25 +963,25 @@ trait WebGL2RenderingContext
   def getIndexedParameter(target: Double, index: Double): js.Any = js.native
   /* Renderbuffer objects */
   def getInternalformatParameter(target: Double, internalformat: Double, pname: Double): js.Any = js.native
-  def getQuery(target: Double, pname: Double): WebGLQuery | Null = js.native
-  def getQueryParameter(query: WebGLQuery, pname: Double): js.Any = js.native
-  def getSamplerParameter(sampler: WebGLSampler, pname: Double): js.Any = js.native
-  def getSyncParameter(sync: WebGLSync, pname: Double): js.Any = js.native
+  def getQuery(target: Double, pname: Double): typings.std.WebGLQuery | Null = js.native
+  def getQueryParameter(query: typings.std.WebGLQuery, pname: Double): js.Any = js.native
+  def getSamplerParameter(sampler: typings.std.WebGLSampler, pname: Double): js.Any = js.native
+  def getSyncParameter(sync: typings.std.WebGLSync, pname: Double): js.Any = js.native
   def getTransformFeedbackVarying(program: WebGLProgram, index: Double): WebGLActiveInfo | Null = js.native
   def getUniformBlockIndex(program: WebGLProgram, uniformBlockName: String): Double = js.native
   def getUniformIndices(program: WebGLProgram, uniformNames: js.Array[String]): js.Array[Double] | Null = js.native
   def invalidateFramebuffer(target: Double, attachments: js.Array[Double]): Unit = js.native
   def invalidateSubFramebuffer(target: Double, attachments: js.Array[Double], x: Double, y: Double, width: Double, height: Double): Unit = js.native
   def isQuery(): Boolean = js.native
-  def isQuery(query: WebGLQuery): Boolean = js.native
+  def isQuery(query: typings.std.WebGLQuery): Boolean = js.native
   def isSampler(): Boolean = js.native
-  def isSampler(sampler: WebGLSampler): Boolean = js.native
+  def isSampler(sampler: typings.std.WebGLSampler): Boolean = js.native
   def isSync(): Boolean = js.native
-  def isSync(sync: WebGLSync): Boolean = js.native
+  def isSync(sync: typings.std.WebGLSync): Boolean = js.native
   def isTransformFeedback(): Boolean = js.native
-  def isTransformFeedback(tf: WebGLTransformFeedback): Boolean = js.native
+  def isTransformFeedback(tf: typings.std.WebGLTransformFeedback): Boolean = js.native
   def isVertexArray(): Boolean = js.native
-  def isVertexArray(vertexArray: WebGLVertexArrayObject): Boolean = js.native
+  def isVertexArray(vertexArray: typings.std.WebGLVertexArrayObject): Boolean = js.native
   def pauseTransformFeedback(): Unit = js.native
   def readBuffer(src: Double): Unit = js.native
   def readPixels(
@@ -1015,8 +1015,8 @@ trait WebGL2RenderingContext
   ): Unit = js.native
   def renderbufferStorageMultisample(target: Double, samples: Double, internalformat: Double, width: Double, height: Double): Unit = js.native
   def resumeTransformFeedback(): Unit = js.native
-  def samplerParameterf(sampler: WebGLSampler, pname: Double, param: Double): Unit = js.native
-  def samplerParameteri(sampler: WebGLSampler, pname: Double, param: Double): Unit = js.native
+  def samplerParameterf(sampler: typings.std.WebGLSampler, pname: Double, param: Double): Unit = js.native
+  def samplerParameteri(sampler: typings.std.WebGLSampler, pname: Double, param: Double): Unit = js.native
   def texImage2D(
     target: Double,
     level: Double,
@@ -1896,7 +1896,7 @@ trait WebGL2RenderingContext
   def vertexAttribI4uiv(index: Double, values: ArrayLike[Double]): Unit = js.native
   def vertexAttribI4uiv(index: Double, values: Uint32Array): Unit = js.native
   def vertexAttribIPointer(index: Double, size: Double, `type`: Double, stride: Double, offset: Double): Unit = js.native
-  def waitSync(sync: WebGLSync, flags: Double, timeout: Double): Unit = js.native
+  def waitSync(sync: typings.std.WebGLSync, flags: Double, timeout: Double): Unit = js.native
 }
 
 @JSGlobal("WebGL2RenderingContext")

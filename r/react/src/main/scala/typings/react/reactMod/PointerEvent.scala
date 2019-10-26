@@ -1,16 +1,15 @@
 package typings.react.reactMod
 
-import typings.react.EventTarget
 import typings.react.NativePointerEvent
 import typings.react.reactStrings.mouse
 import typings.react.reactStrings.pen
 import typings.react.reactStrings.touch
+import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PointerEvent[T]
-  extends typings.react.reactMod.MouseEvent[T, NativePointerEvent] {
+trait PointerEvent[T] extends MouseEvent[T, NativePointerEvent] {
   var height: Double
   var isPrimary: Boolean
   var pointerId: Double

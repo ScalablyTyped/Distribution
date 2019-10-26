@@ -15,7 +15,7 @@ object _Global_ extends js.Object {
   object jest extends js.Object {
     // tslint:disable-next-line no-empty-interface
     @js.native
-    trait Matchers[R] extends js.Object {
+    trait Matchers[R, T] extends js.Object {
       // These must all match the ExpectPuppeteer interface above.
       // We can't extend from it directly because some method names conflict in type-incompatible ways.
       def toClick(selector: String): js.Promise[Unit] = js.native

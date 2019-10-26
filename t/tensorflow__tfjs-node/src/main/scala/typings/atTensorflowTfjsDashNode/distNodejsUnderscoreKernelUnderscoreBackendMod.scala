@@ -8,6 +8,7 @@ import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor1D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor2D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
+import typings.atTensorflowTfjsDashCore.distTypesMod.BackendValues
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R0
@@ -223,6 +224,7 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
     def pow[T /* <: Tensor[Rank] */](a: T, b: Tensor[Rank]): T = js.native
     def prod(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
     def realDivide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+    def register(dataId: js.Object, shape: js.Array[Double], dtype: DataType): Unit = js.native
     def scatterND[R /* <: Rank */](
       indices: Tensor[Rank],
       updates: Tensor[Rank],
@@ -245,6 +247,7 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
     def topk[T /* <: Tensor[Rank] */](x: T, k: Double): js.Tuple2[T, T] = js.native
     def unstack(x: Tensor[Rank], axis: Double): js.Array[Tensor[Rank]] = js.native
     def where(condition: Tensor[Rank]): Tensor2D = js.native
+    def write(dataId: js.Object, values: BackendValues): Unit = js.native
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Double): Unit = js.native
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Scalar): Unit = js.native
     def zerosLike[R /* <: Rank */](x: Tensor[R]): Tensor[R] = js.native

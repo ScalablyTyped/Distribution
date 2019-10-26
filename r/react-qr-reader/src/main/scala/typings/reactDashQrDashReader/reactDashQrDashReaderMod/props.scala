@@ -1,10 +1,10 @@
 package typings.reactDashQrDashReader.reactDashQrDashReaderMod
 
-import typings.react.Event
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashQrDashReader.reactDashQrDashReaderNumbers.`false`
 import typings.reactDashQrDashReader.reactDashQrDashReaderStrings.environment
 import typings.reactDashQrDashReader.reactDashQrDashReaderStrings.user
+import typings.std.Event
 import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

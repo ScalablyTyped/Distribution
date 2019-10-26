@@ -2,12 +2,12 @@ package typings.grommet.grommetMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.componentsDataTableMod.DataTableProps
-import typings.react.HTMLTableElement
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
 import typings.react.reactMod.TableHTMLAttributes
+import typings.std.HTMLTableElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

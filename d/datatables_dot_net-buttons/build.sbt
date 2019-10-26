@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-buttons"
-version := "1.4-dt-20190416Z-7c906c"
+version := "1.4-dt-20190416Z-b5ccff"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20191018Z-749f7f",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-4b5800",
+  "org.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20191018Z-c94e8f",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-cc3e42",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-8ec6f6",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sortablejs
 
-Typings are for version 1.7
+Typings are for version 1.10
 
 ## Library description:
 JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery required. Supports Meteor, AngularJS, React, Polymer, Vue, Knockout and any CSS library, e.g. Bootstrap.

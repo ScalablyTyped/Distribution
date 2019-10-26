@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 object distSdkInternalDeltasDeltaDashSenderMod extends js.Object {
   @js.native
   class DeltaSender protected () extends js.Object {
-    def this(model: AbstractModel, closeCallback: IVoidCallback, errorCallback: IErrorCallback) = this()
-    var closeCallback: js.Any = js.native
+    def this(model: AbstractModel, flushCallback: IVoidCallback, errorCallback: IErrorCallback) = this()
     var errorCallback: js.Any = js.native
+    var flushCallback: js.Any = js.native
     var hasError: js.Any = js.native
     var isClosing: Boolean = js.native
     var model: js.Any = js.native
@@ -24,6 +24,7 @@ object distSdkInternalDeltasDeltaDashSenderMod extends js.Object {
     var queue: js.Any = js.native
     var sendDeltas: js.Any = js.native
     def closeConnection(): Unit = js.native
+    def flush(): Unit = js.native
     def scheduleDeltas(deltas: js.Array[Delta]): Unit = js.native
   }
   

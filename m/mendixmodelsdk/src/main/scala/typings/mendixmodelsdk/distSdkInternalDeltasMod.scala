@@ -25,7 +25,7 @@ object distSdkInternalDeltasMod extends js.Object {
   @js.native
   class DeltaSender protected ()
     extends typings.mendixmodelsdk.distSdkInternalDeltasDeltaDashSenderMod.DeltaSender {
-    def this(model: AbstractModel, closeCallback: IVoidCallback, errorCallback: IErrorCallback) = this()
+    def this(model: AbstractModel, flushCallback: IVoidCallback, errorCallback: IErrorCallback) = this()
   }
   
 }

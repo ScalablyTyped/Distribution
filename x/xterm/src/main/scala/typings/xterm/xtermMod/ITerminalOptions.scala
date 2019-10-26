@@ -1,8 +1,11 @@
 package typings.xterm.xtermMod
 
+import typings.xterm.xtermStrings.alt
 import typings.xterm.xtermStrings.bar
 import typings.xterm.xtermStrings.block
+import typings.xterm.xtermStrings.ctrl
 import typings.xterm.xtermStrings.none
+import typings.xterm.xtermStrings.shift
 import typings.xterm.xtermStrings.sound
 import typings.xterm.xtermStrings.underline
 import scala.scalajs.js
@@ -54,6 +57,14 @@ trait ITerminalOptions extends js.Object {
     * Whether to draw bold text in bright colors. The default is true.
     */
   var drawBoldTextInBrightColors: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The modifier key hold to multiply scroll speed.
+    */
+  var fastScrollModifier: js.UndefOr[alt | ctrl | shift] = js.undefined
+  /**
+    * The scroll speed multiplier used for fast scrolling.
+    */
+  var fastScrollSensitivity: js.UndefOr[Double] = js.undefined
   /**
     * The font family used to render text.
     */
@@ -126,6 +137,10 @@ trait ITerminalOptions extends js.Object {
     */
   var screenReaderMode: js.UndefOr[Boolean] = js.undefined
   /**
+    * The scrolling speed multiplier used for adjusting normal scrolling speed.
+    */
+  var scrollSensitivity: js.UndefOr[Double] = js.undefined
+  /**
     * The amount of scrollback in the terminal. Scrollback is the amount of
     * rows that are retained when lines are scrolled beyond the initial
     * viewport.
@@ -169,6 +184,8 @@ object ITerminalOptions {
     cursorStyle: block | underline | bar = null,
     disableStdin: js.UndefOr[Boolean] = js.undefined,
     drawBoldTextInBrightColors: js.UndefOr[Boolean] = js.undefined,
+    fastScrollModifier: alt | ctrl | shift = null,
+    fastScrollSensitivity: Int | Double = null,
     fontFamily: String = null,
     fontSize: Int | Double = null,
     fontWeight: FontWeight = null,
@@ -182,6 +199,7 @@ object ITerminalOptions {
     rightClickSelectsWord: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
     screenReaderMode: js.UndefOr[Boolean] = js.undefined,
+    scrollSensitivity: Int | Double = null,
     scrollback: Int | Double = null,
     tabStopWidth: Int | Double = null,
     theme: ITheme = null,
@@ -198,6 +216,8 @@ object ITerminalOptions {
     if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(disableStdin)) __obj.updateDynamic("disableStdin")(disableStdin)
     if (!js.isUndefined(drawBoldTextInBrightColors)) __obj.updateDynamic("drawBoldTextInBrightColors")(drawBoldTextInBrightColors)
+    if (fastScrollModifier != null) __obj.updateDynamic("fastScrollModifier")(fastScrollModifier.asInstanceOf[js.Any])
+    if (fastScrollSensitivity != null) __obj.updateDynamic("fastScrollSensitivity")(fastScrollSensitivity.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
@@ -211,6 +231,7 @@ object ITerminalOptions {
     if (!js.isUndefined(rightClickSelectsWord)) __obj.updateDynamic("rightClickSelectsWord")(rightClickSelectsWord)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (!js.isUndefined(screenReaderMode)) __obj.updateDynamic("screenReaderMode")(screenReaderMode)
+    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
     if (scrollback != null) __obj.updateDynamic("scrollback")(scrollback.asInstanceOf[js.Any])
     if (tabStopWidth != null) __obj.updateDynamic("tabStopWidth")(tabStopWidth.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

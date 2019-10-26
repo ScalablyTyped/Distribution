@@ -1,10 +1,10 @@
 package typings.reactDashForm.reactDashFormMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.Event
 import typings.react.reactMod.ReactType
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashForm.Anon_FormApi
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

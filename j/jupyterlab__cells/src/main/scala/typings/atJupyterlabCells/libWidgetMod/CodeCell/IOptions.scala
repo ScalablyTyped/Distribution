@@ -2,6 +2,7 @@ package typings.atJupyterlabCells.libWidgetMod.CodeCell
 
 import typings.atJupyterlabCells.libModelMod.ICodeCellModel
 import typings.atJupyterlabCells.libWidgetMod.Cell.IContentFactory
+import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IConfig
 import typings.atJupyterlabRendermime.libTokensMod.IRenderMimeRegistry
 import typings.std.Partial
 import scala.scalajs.js
@@ -30,9 +31,7 @@ object IOptions {
     model: ICodeCellModel,
     rendermime: IRenderMimeRegistry,
     contentFactory: IContentFactory = null,
-    editorConfig: Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.IConfig */ _
-    ] = null,
+    editorConfig: Partial[IConfig] = null,
     updateEditorOnShow: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal(model = model, rendermime = rendermime)

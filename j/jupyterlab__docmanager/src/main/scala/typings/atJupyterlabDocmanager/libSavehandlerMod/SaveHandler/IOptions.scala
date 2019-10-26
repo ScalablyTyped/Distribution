@@ -1,5 +1,6 @@
 package typings.atJupyterlabDocmanager.libSavehandlerMod.SaveHandler
 
+import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ trait IOptions extends js.Object {
   /**
     * The context asssociated with the file.
     */
-  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any
+  var context: Context
   /**
     * The minimum save interval in seconds (default is two minutes).
     */
@@ -20,10 +21,7 @@ trait IOptions extends js.Object {
 
 object IOptions {
   @scala.inline
-  def apply(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DocumentRegistry.Context */ js.Any,
-    saveInterval: Int | Double = null
-  ): IOptions = {
+  def apply(context: Context, saveInterval: Int | Double = null): IOptions = {
     val __obj = js.Dynamic.literal(context = context)
     if (saveInterval != null) __obj.updateDynamic("saveInterval")(saveInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

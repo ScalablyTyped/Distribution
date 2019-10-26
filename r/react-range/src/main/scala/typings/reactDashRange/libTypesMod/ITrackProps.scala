@@ -1,11 +1,11 @@
 package typings.reactDashRange.libTypesMod
 
-import typings.react.Element
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.RefObject
 import typings.react.reactMod.TouchEvent
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

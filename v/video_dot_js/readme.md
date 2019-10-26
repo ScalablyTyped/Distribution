@@ -1,7 +1,7 @@
 
 # Scala.js typings for video_dot_js
 
-Typings are for version 7.2
+Typings are for version 7.3
 
 ## Library description:
 An HTML5 and Flash video player with a common API and skin for both.

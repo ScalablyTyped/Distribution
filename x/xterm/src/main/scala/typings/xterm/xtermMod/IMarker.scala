@@ -14,7 +14,8 @@ trait IMarker extends IDisposable {
     */
   val isDisposed: Boolean
   /**
-    * The actual line index in the buffer at this point in time.
+    * The actual line index in the buffer at this point in time. This is set to
+    * -1 if the marker has been disposed.
     */
   val line: Double
 }
