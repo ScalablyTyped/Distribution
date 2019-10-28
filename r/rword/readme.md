@@ -1,7 +1,7 @@
 
 # Scala.js typings for rword
 
-Typings are for version 2.2
+Typings are for version 3.1.1
 
 ## Library description:
 A cryptographically secure random generator for real English words. Contains ~130,000 English words between 3 and 10 characters long.
@@ -24,7 +24,7 @@ A cryptographically secure random generator for real English words. Contains ~13
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait WatchOptions extends js.Object {
   /**
-    * If relying upon the [`fs.Stats`](http://nodejs.org/api/fs.html#fs_class_fs_stats) object that
+    * If relying upon the [`fs.Stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object that
     * may get passed with `add`, `addDir`, and `change` events, set this to `true` to ensure it is
     * provided even in cases where it wasn't already available from the underlying watch events.
     */
@@ -59,11 +59,11 @@ trait WatchOptions extends js.Object {
     */
   var ignorePermissionErrors: js.UndefOr[Boolean] = js.undefined
   /**
-    * ([anymatch](https://github.com/es128/anymatch)-compatible definition) Defines files/paths to
+    * ([anymatch](https://github.com/micromatch/anymatch)-compatible definition) Defines files/paths to
     * be ignored. The whole relative or absolute path is tested, not just filename. If a function
     * with two arguments is provided, it gets called twice per path - once with a single argument
     * (the path), second time with two arguments (the path and the
-    * [`fs.Stats`](http://nodejs.org/api/fs.html#fs_class_fs_stats) object of that path).
+    * [`fs.Stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object of that path).
     */
   var ignored: js.UndefOr[js.Any] = js.undefined
   /**

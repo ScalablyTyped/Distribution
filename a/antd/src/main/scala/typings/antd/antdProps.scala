@@ -325,8 +325,8 @@ trait antdProps {
   def SwitchProps: typings.antd.esSwitchMod.SwitchProps.type = typings.antd.esSwitchMod.SwitchProps
   type SwitchProps = typings.antd.esSwitchMod.SwitchProps
   @scala.inline
-  def TableProps: typings.antd.OmitTablePropsTkeyofWithStore.type = typings.antd.OmitTablePropsTkeyofWithStore
-  type TableProps[T] = OmitTablePropsTkeyofWithStore[T]
+  def TableProps: typings.antd.esTableInterfaceMod.TableProps.type = typings.antd.esTableInterfaceMod.TableProps
+  type TableProps[T] = typings.antd.esTableInterfaceMod.TableProps[T]
   @scala.inline
   def TabsProps: typings.antd.esTabsMod.TabsProps.type = typings.antd.esTabsMod.TabsProps
   type TabsProps = typings.antd.esTabsMod.TabsProps

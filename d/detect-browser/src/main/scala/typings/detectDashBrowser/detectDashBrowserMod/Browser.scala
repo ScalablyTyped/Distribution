@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.detectDashBrowser.detectDashBrowserStrings.aol
   - typings.detectDashBrowser.detectDashBrowserStrings.edge
+  - typings.detectDashBrowser.detectDashBrowserStrings.`edge-ios`
   - typings.detectDashBrowser.detectDashBrowserStrings.yandexbrowser
   - typings.detectDashBrowser.detectDashBrowserStrings.vivaldi
   - typings.detectDashBrowser.detectDashBrowserStrings.kakaotalk

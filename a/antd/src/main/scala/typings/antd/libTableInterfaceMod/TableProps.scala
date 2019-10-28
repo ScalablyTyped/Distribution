@@ -4,7 +4,6 @@ import typings.antd.Anon_ScrollToFirstRowOnChange
 import typings.antd.antdNumbers.`false`
 import typings.antd.libPaginationPaginationMod.PaginationConfig
 import typings.antd.libSpinMod.SpinProps
-import typings.antd.libTableCreateStoreMod.Store
 import typings.csstype.csstypeMod.TableLayoutProperty
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
@@ -15,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TableProps[T] extends WithStore {
+trait TableProps[T] extends js.Object {
   var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
   var bordered: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -78,9 +77,6 @@ trait TableProps[T] extends WithStore {
 object TableProps {
   @scala.inline
   def apply[T](
-    checkboxPropsCache: CheckboxPropsCache,
-    setCheckboxPropsCache: CheckboxPropsCache => Unit,
-    store: Store,
     bodyStyle: CSSProperties = null,
     bordered: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
@@ -123,7 +119,7 @@ object TableProps {
     title: /* currentPageData */ js.Array[T] => ReactNode = null,
     useFixedHeader: js.UndefOr[Boolean] = js.undefined
   ): TableProps[T] = {
-    val __obj = js.Dynamic.literal(checkboxPropsCache = checkboxPropsCache, setCheckboxPropsCache = js.Any.fromFunction1(setCheckboxPropsCache), store = store)
+    val __obj = js.Dynamic.literal()
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

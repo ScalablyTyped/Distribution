@@ -1,50 +1,61 @@
 package typings.mockingoose
 
-import typings.mockingoose.mockingooseMod.Op
+import typings.mockingoose.mockingooseMod.Ops
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object mockingooseStrings {
   @js.native
-  sealed trait count extends Op
+  sealed trait aggregate extends Ops
   
   @js.native
-  sealed trait countDocuments extends Op
+  sealed trait count extends Ops
   
   @js.native
-  sealed trait deleteMany extends Op
+  sealed trait countDocuments extends Ops
   
   @js.native
-  sealed trait deleteOne extends Op
+  sealed trait deleteMany extends Ops
   
   @js.native
-  sealed trait distinct extends Op
+  sealed trait deleteOne extends Ops
   
   @js.native
-  sealed trait estimatedDocumentCount extends Op
+  sealed trait distinct extends Ops
   
   @js.native
-  sealed trait find extends Op
+  sealed trait estimatedDocumentCount extends Ops
   
   @js.native
-  sealed trait findOne extends Op
+  sealed trait find extends Ops
   
   @js.native
-  sealed trait findOneAndRemove extends Op
+  sealed trait findOne extends Ops
   
   @js.native
-  sealed trait findOneAndUpdate extends Op
+  sealed trait findOneAndDelete extends Ops
   
   @js.native
-  sealed trait remove extends Op
+  sealed trait findOneAndRemove extends Ops
   
   @js.native
-  sealed trait save extends Op
+  sealed trait findOneAndReplace extends Ops
   
   @js.native
-  sealed trait update extends Op
+  sealed trait findOneAndUpdate extends Ops
   
+  @js.native
+  sealed trait remove extends Ops
+  
+  @js.native
+  sealed trait save extends Ops
+  
+  @js.native
+  sealed trait update extends Ops
+  
+  @scala.inline
+  def aggregate: aggregate = "aggregate".asInstanceOf[aggregate]
   @scala.inline
   def count: count = "count".asInstanceOf[count]
   @scala.inline
@@ -62,7 +73,11 @@ object mockingooseStrings {
   @scala.inline
   def findOne: findOne = "findOne".asInstanceOf[findOne]
   @scala.inline
+  def findOneAndDelete: findOneAndDelete = "findOneAndDelete".asInstanceOf[findOneAndDelete]
+  @scala.inline
   def findOneAndRemove: findOneAndRemove = "findOneAndRemove".asInstanceOf[findOneAndRemove]
+  @scala.inline
+  def findOneAndReplace: findOneAndReplace = "findOneAndReplace".asInstanceOf[findOneAndReplace]
   @scala.inline
   def findOneAndUpdate: findOneAndUpdate = "findOneAndUpdate".asInstanceOf[findOneAndUpdate]
   @scala.inline

@@ -20,7 +20,7 @@ object libUploadMod extends js.Object {
   object default extends js.Object {
     var Dragger: Instantiable0[typings.antd.libUploadDraggerMod.default] = js.native
     var defaultProps: Anon_AcceptAction = js.native
-    def getDerivedStateFromProps(nextProps: UploadProps): Anon_FileListArray | Null = js.native
+    def getDerivedStateFromProps(nextProps: UploadProps): Anon_FileListAny | Null = js.native
   }
   
 }

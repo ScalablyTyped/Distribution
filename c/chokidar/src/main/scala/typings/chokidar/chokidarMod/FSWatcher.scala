@@ -54,7 +54,7 @@ class FSWatcher ()
   @JSName("on")
   def on_change(event: change, listener: js.Function2[/* path */ String, /* stats */ js.UndefOr[Stats], Unit]): this.type = js.native
   /**
-    * Error occured
+    * Error occurred
     */
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native

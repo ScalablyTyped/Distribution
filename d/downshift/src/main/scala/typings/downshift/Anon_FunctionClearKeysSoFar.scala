@@ -17,6 +17,7 @@ import typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuKeyDownEnd
 import typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuKeyDownEnter
 import typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuKeyDownEscape
 import typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuKeyDownHome
+import typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuMouseLeave
 import typings.downshift.downshiftMod.UseSelectStateChangeTypes.ToggleButtonClick
 import typings.downshift.downshiftMod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowDown
 import typings.downshift.downshiftMod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowUp
@@ -43,6 +44,7 @@ trait Anon_FunctionClearKeysSoFar extends js.Object {
   var MenuKeyDownEnter: typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuKeyDownEnter
   var MenuKeyDownEscape: typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuKeyDownEscape
   var MenuKeyDownHome: typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuKeyDownHome
+  var MenuMouseLeave: typings.downshift.downshiftMod.UseSelectStateChangeTypes.MenuMouseLeave
   var ToggleButtonClick: typings.downshift.downshiftMod.UseSelectStateChangeTypes.ToggleButtonClick
   var ToggleButtonKeyDownArrowDown: typings.downshift.downshiftMod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowDown
   var ToggleButtonKeyDownArrowUp: typings.downshift.downshiftMod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowUp
@@ -69,12 +71,13 @@ object Anon_FunctionClearKeysSoFar {
     MenuKeyDownEnter: MenuKeyDownEnter,
     MenuKeyDownEscape: MenuKeyDownEscape,
     MenuKeyDownHome: MenuKeyDownHome,
+    MenuMouseLeave: MenuMouseLeave,
     ToggleButtonClick: ToggleButtonClick,
     ToggleButtonKeyDownArrowDown: ToggleButtonKeyDownArrowDown,
     ToggleButtonKeyDownArrowUp: ToggleButtonKeyDownArrowUp,
     ToggleButtonKeyDownCharacter: ToggleButtonKeyDownCharacter
   ): Anon_FunctionClearKeysSoFar = {
-    val __obj = js.Dynamic.literal(FunctionClearKeysSoFar = FunctionClearKeysSoFar, FunctionCloseMenu = FunctionCloseMenu, FunctionOpenMenu = FunctionOpenMenu, FunctionReset = FunctionReset, FunctionSelectItem = FunctionSelectItem, FunctionSetHighlightedIndex = FunctionSetHighlightedIndex, FunctionToggleMenu = FunctionToggleMenu, ItemClick = ItemClick, ItemMouseMove = ItemMouseMove, MenuBlur = MenuBlur, MenuKeyDownArrowDown = MenuKeyDownArrowDown, MenuKeyDownArrowUp = MenuKeyDownArrowUp, MenuKeyDownCharacter = MenuKeyDownCharacter, MenuKeyDownEnd = MenuKeyDownEnd, MenuKeyDownEnter = MenuKeyDownEnter, MenuKeyDownEscape = MenuKeyDownEscape, MenuKeyDownHome = MenuKeyDownHome, ToggleButtonClick = ToggleButtonClick, ToggleButtonKeyDownArrowDown = ToggleButtonKeyDownArrowDown, ToggleButtonKeyDownArrowUp = ToggleButtonKeyDownArrowUp, ToggleButtonKeyDownCharacter = ToggleButtonKeyDownCharacter)
+    val __obj = js.Dynamic.literal(FunctionClearKeysSoFar = FunctionClearKeysSoFar, FunctionCloseMenu = FunctionCloseMenu, FunctionOpenMenu = FunctionOpenMenu, FunctionReset = FunctionReset, FunctionSelectItem = FunctionSelectItem, FunctionSetHighlightedIndex = FunctionSetHighlightedIndex, FunctionToggleMenu = FunctionToggleMenu, ItemClick = ItemClick, ItemMouseMove = ItemMouseMove, MenuBlur = MenuBlur, MenuKeyDownArrowDown = MenuKeyDownArrowDown, MenuKeyDownArrowUp = MenuKeyDownArrowUp, MenuKeyDownCharacter = MenuKeyDownCharacter, MenuKeyDownEnd = MenuKeyDownEnd, MenuKeyDownEnter = MenuKeyDownEnter, MenuKeyDownEscape = MenuKeyDownEscape, MenuKeyDownHome = MenuKeyDownHome, MenuMouseLeave = MenuMouseLeave, ToggleButtonClick = ToggleButtonClick, ToggleButtonKeyDownArrowDown = ToggleButtonKeyDownArrowDown, ToggleButtonKeyDownArrowUp = ToggleButtonKeyDownArrowUp, ToggleButtonKeyDownCharacter = ToggleButtonKeyDownCharacter)
   
     __obj.asInstanceOf[Anon_FunctionClearKeysSoFar]
   }

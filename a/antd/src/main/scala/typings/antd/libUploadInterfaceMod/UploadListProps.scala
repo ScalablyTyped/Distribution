@@ -7,12 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UploadListProps extends js.Object {
-  var items: js.UndefOr[js.Array[UploadFile]] = js.undefined
+  var items: js.UndefOr[js.Array[UploadFile[_]]] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
   var locale: UploadLocale
-  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile, Unit]] = js.undefined
-  var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile, Unit]] = js.undefined
-  var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile, Unit | Boolean]] = js.undefined
+  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit]] = js.undefined
+  var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit]] = js.undefined
+  var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit | Boolean]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var previewFile: js.UndefOr[PreviewFileHandler] = js.undefined
   var progressAttr: js.UndefOr[js.Object] = js.undefined
@@ -25,11 +25,11 @@ object UploadListProps {
   @scala.inline
   def apply(
     locale: UploadLocale,
-    items: js.Array[UploadFile] = null,
+    items: js.Array[UploadFile[_]] = null,
     listType: UploadListType = null,
-    onDownload: /* file */ UploadFile => Unit = null,
-    onPreview: /* file */ UploadFile => Unit = null,
-    onRemove: /* file */ UploadFile => Unit | Boolean = null,
+    onDownload: /* file */ UploadFile[_] => Unit = null,
+    onPreview: /* file */ UploadFile[_] => Unit = null,
+    onRemove: /* file */ UploadFile[_] => Unit | Boolean = null,
     prefixCls: String = null,
     previewFile: /* file */ File | Blob => js.Thenable[String] = null,
     progressAttr: js.Object = null,

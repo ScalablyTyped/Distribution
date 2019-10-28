@@ -10,25 +10,30 @@ import scala.scalajs.js.annotation._
 
 trait GenerateOptions extends js.Object {
   /**
-    * Changes the capitalization of the words returned.
+    * Sets the capitalization of the randomly chosen words
     */
-  var capitalize: js.UndefOr[none | all | first] = js.undefined
+  var capitalize: js.UndefOr[none | first | all] = js.undefined
   /**
-    * Words that don't match the regexp will not be returned.
+    * Regex words must match to have a chance of being randomly chosen
+    * @example "word"
+    * @example /ing$/
     */
-  var contains: js.UndefOr[String | RegExp] = js.undefined
+  var contains: js.UndefOr[RegExp | String] = js.undefined
   /**
-    * Allows you to set an exact length or range of lengths for words to return.
+    * A length or range of lengths that a word must match for it to have a
+    *  chance of being randomly chosen
+    * @example 5
+    * @example "3-10"
     */
-  var length: js.UndefOr[Double | String] = js.undefined
+  var length: js.UndefOr[String | Double] = js.undefined
 }
 
 object GenerateOptions {
   @scala.inline
   def apply(
-    capitalize: none | all | first = null,
-    contains: String | RegExp = null,
-    length: Double | String = null
+    capitalize: none | first | all = null,
+    contains: RegExp | String = null,
+    length: String | Double = null
   ): GenerateOptions = {
     val __obj = js.Dynamic.literal()
     if (capitalize != null) __obj.updateDynamic("capitalize")(capitalize.asInstanceOf[js.Any])

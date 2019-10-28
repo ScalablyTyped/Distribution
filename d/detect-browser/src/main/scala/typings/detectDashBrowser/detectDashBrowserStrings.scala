@@ -113,6 +113,9 @@ object detectDashBrowserStrings {
   sealed trait `edge-chromium` extends Browser
   
   @js.native
+  sealed trait `edge-ios` extends Browser
+  
+  @js.native
   sealed trait facebook extends Browser
   
   @js.native
@@ -242,6 +245,8 @@ object detectDashBrowserStrings {
   def edge: edge = "edge".asInstanceOf[edge]
   @scala.inline
   def `edge-chromium`: `edge-chromium` = "edge-chromium".asInstanceOf[`edge-chromium`]
+  @scala.inline
+  def `edge-ios`: `edge-ios` = "edge-ios".asInstanceOf[`edge-ios`]
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   @scala.inline

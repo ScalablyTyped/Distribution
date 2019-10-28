@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object esTableTableMod extends js.Object {
   @js.native
   trait StoreTable[T]
-    extends Component[OmitTablePropsTkeyofWithStore[T], js.Object, js.Any] {
+    extends Component[TableProps[T], js.Object, js.Any] {
     var CheckboxPropsCache: typings.antd.esTableInterfaceMod.CheckboxPropsCache = js.native
     var store: Store = js.native
     def setCheckboxPropsCache(cache: CheckboxPropsCache): CheckboxPropsCache = js.native

@@ -6,7 +6,13 @@ import scala.scalajs.js.annotation._
 
 trait Target extends js.Object {
   var __mocks: js.Any
+  /**
+    * Resets all mocks.
+    */
   def resetAll(): Unit
+  /**
+    * Returns an object of mocks for all models. Only serializable if all mock results are primitives, not functions.
+    */
   def toJSON(): js.Any
 }
 

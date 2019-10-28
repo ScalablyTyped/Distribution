@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UploadFile extends js.Object {
+trait UploadFile[T] extends js.Object {
   var error: js.UndefOr[js.Any] = js.undefined
   var fileName: js.UndefOr[String] = js.undefined
   var lastModified: js.UndefOr[Double] = js.undefined
@@ -16,7 +16,7 @@ trait UploadFile extends js.Object {
   var name: String
   var originFileObj: js.UndefOr[File | Blob] = js.undefined
   var percent: js.UndefOr[Double] = js.undefined
-  var response: js.UndefOr[js.Any] = js.undefined
+  var response: js.UndefOr[T] = js.undefined
   var size: Double
   var status: js.UndefOr[UploadFileStatus] = js.undefined
   var thumbUrl: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ trait UploadFile extends js.Object {
 
 object UploadFile {
   @scala.inline
-  def apply(
+  def apply[T](
     name: String,
     size: Double,
     `type`: String,
@@ -39,11 +39,11 @@ object UploadFile {
     linkProps: js.Any = null,
     originFileObj: File | Blob = null,
     percent: Int | Double = null,
-    response: js.Any = null,
+    response: T = null,
     status: UploadFileStatus = null,
     thumbUrl: String = null,
     url: String = null
-  ): UploadFile = {
+  ): UploadFile[T] = {
     val __obj = js.Dynamic.literal(name = name, size = size, uid = uid)
     __obj.updateDynamic("type")(`type`)
     if (error != null) __obj.updateDynamic("error")(error)
@@ -53,11 +53,11 @@ object UploadFile {
     if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps)
     if (originFileObj != null) __obj.updateDynamic("originFileObj")(originFileObj.asInstanceOf[js.Any])
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status)
     if (thumbUrl != null) __obj.updateDynamic("thumbUrl")(thumbUrl)
     if (url != null) __obj.updateDynamic("url")(url)
-    __obj.asInstanceOf[UploadFile]
+    __obj.asInstanceOf[UploadFile[T]]
   }
 }
 

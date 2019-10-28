@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "browser-sync-webpack-plugin"
-version := "2.2-dt-20190722Z-990664"
+version := "2.2-dt-20190722Z-eeb2de"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-7f5e7d",
-  "org.scalablytyped" %%% "browser-sync" % "2.26-dt-20190819Z-7201a3",
-  "org.scalablytyped" %%% "chokidar" % "3.2.2-61099a",
+  "org.scalablytyped" %%% "browser-sync" % "2.26-dt-20190819Z-88deb9",
+  "org.scalablytyped" %%% "chokidar" % "3.2.3-242928",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191015Z-5bc067",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",

@@ -115,6 +115,7 @@ object httpDashStatusDashCodesMod extends js.Object {
   val UNPROCESSABLE_ENTITY: `422` = js.native
   val UNSUPPORTED_MEDIA_TYPE: `415` = js.native
   val USE_PROXY: `305` = js.native
+  def getStatusCode(reasonPhrase: String): Double = js.native
   def getStatusText(statusCode: Double): String = js.native
 }
 

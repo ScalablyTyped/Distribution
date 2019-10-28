@@ -37,7 +37,7 @@ trait TreeSelectProps[T /* <: TreeNodeValue */] extends AbstractSelectProps {
   var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   @JSName("onSearch")
   var onSearch_TreeSelectProps: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function3[/* value */ js.Any, /* node */ js.Any, /* extra */ js.Any, Unit]] = js.undefined
   var onTreeExpand: js.UndefOr[js.Function1[/* keys */ js.Array[String], Unit]] = js.undefined
   var removeIcon: js.UndefOr[ReactNode] = js.undefined
   var searchPlaceholder: js.UndefOr[String] = js.undefined
@@ -91,7 +91,7 @@ object TreeSelectProps {
     onDropdownVisibleChange: /* open */ Boolean => Unit = null,
     onFocus: FocusEvent[HTMLInputElement] => Unit = null,
     onSearch: /* value */ js.Any => Unit = null,
-    onSelect: /* value */ js.Any => Unit = null,
+    onSelect: (/* value */ js.Any, /* node */ js.Any, /* extra */ js.Any) => Unit = null,
     onTreeExpand: /* keys */ js.Array[String] => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     placeholder: String | ReactNode = null,
@@ -152,7 +152,7 @@ object TreeSelectProps {
     if (onDropdownVisibleChange != null) __obj.updateDynamic("onDropdownVisibleChange")(js.Any.fromFunction1(onDropdownVisibleChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction3(onSelect))
     if (onTreeExpand != null) __obj.updateDynamic("onTreeExpand")(js.Any.fromFunction1(onTreeExpand))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])

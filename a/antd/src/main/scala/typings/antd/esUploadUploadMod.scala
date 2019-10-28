@@ -27,18 +27,18 @@ object esUploadUploadMod extends js.Object {
     var progressTimer: js.Any = js.native
     var recentUploadStatus: Boolean | js.Thenable[_] = js.native
     var upload: js.Any = js.native
-    def autoUpdateProgress(`_`: js.Any, file: UploadFile): Unit = js.native
+    def autoUpdateProgress(`_`: js.Any, file: UploadFile[_]): Unit = js.native
     def beforeUpload(file: RcFile, fileList: js.Array[RcFile]): Boolean | js.Thenable[Unit] = js.native
     def clearProgressTimer(): Unit = js.native
     @JSName("componentWillUnmount")
     def componentWillUnmount_MUpload(): Unit = js.native
-    def handleRemove(file: UploadFile): Unit = js.native
-    def onChange(info: UploadChangeParam[UploadFile]): Unit = js.native
-    def onError(error: Error, response: js.Any, file: UploadFile): Unit = js.native
+    def handleRemove(file: UploadFile[_]): Unit = js.native
+    def onChange(info: UploadChangeParam[UploadFile[_]]): Unit = js.native
+    def onError(error: Error, response: js.Any, file: UploadFile[_]): Unit = js.native
     def onFileDrop(e: DragEvent[HTMLDivElement]): Unit = js.native
-    def onProgress(e: Anon_Percent, file: UploadFile): Unit = js.native
+    def onProgress(e: Anon_Percent, file: UploadFile[_]): Unit = js.native
     def onStart(file: RcFile): Unit = js.native
-    def onSuccess(response: js.Any, file: UploadFile): Unit = js.native
+    def onSuccess(response: js.Any, file: UploadFile[_]): Unit = js.native
     def renderUpload(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
     def renderUploadList(locale: UploadLocale): Element = js.native
     def saveUpload(node: js.Any): Unit = js.native

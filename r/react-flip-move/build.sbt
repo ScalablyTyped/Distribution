@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-flip-move"
-version := "3.0.3-ad6750"
+version := "3.0.4-ba7df5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-menu
 
-Typings are for version 7.5.2
+Typings are for version 7.5.3
 
 ## Library description:
 menu ui component for react

@@ -27,11 +27,11 @@ trait DraggerProps extends js.Object {
   ] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var customRequest: js.UndefOr[js.Function1[/* options */ RcCustomRequestOptions, Unit]] = js.undefined
-  var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile, js.Object])] = js.undefined
-  var defaultFileList: js.UndefOr[js.Array[UploadFile]] = js.undefined
+  var data: js.UndefOr[js.Object | (js.Function1[/* file */ UploadFile[_], js.Object])] = js.undefined
+  var defaultFileList: js.UndefOr[js.Array[UploadFile[_]]] = js.undefined
   var directory: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var fileList: js.UndefOr[js.Array[UploadFile]] = js.undefined
+  var fileList: js.UndefOr[js.Array[UploadFile[_]]] = js.undefined
   var headers: js.UndefOr[HttpRequestHeader] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -39,11 +39,11 @@ trait DraggerProps extends js.Object {
   var locale: js.UndefOr[UploadLocale] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile], Unit]] = js.undefined
-  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile, Unit]] = js.undefined
-  var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile[_]], Unit]] = js.undefined
+  var onDownload: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit]] = js.undefined
+  var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile[_], Unit]] = js.undefined
   var onRemove: js.UndefOr[
-    js.Function1[/* file */ UploadFile, Unit | Boolean | (js.Promise[Unit | Boolean])]
+    js.Function1[/* file */ UploadFile[_], Unit | Boolean | (js.Promise[Unit | Boolean])]
   ] = js.undefined
   var openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -64,11 +64,11 @@ object DraggerProps {
     beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => Boolean | js.Thenable[Unit] = null,
     className: String = null,
     customRequest: /* options */ RcCustomRequestOptions => Unit = null,
-    data: js.Object | (js.Function1[/* file */ UploadFile, js.Object]) = null,
-    defaultFileList: js.Array[UploadFile] = null,
+    data: js.Object | (js.Function1[/* file */ UploadFile[_], js.Object]) = null,
+    defaultFileList: js.Array[UploadFile[_]] = null,
     directory: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    fileList: js.Array[UploadFile] = null,
+    fileList: js.Array[UploadFile[_]] = null,
     headers: HttpRequestHeader = null,
     height: Int | Double = null,
     id: String = null,
@@ -76,10 +76,10 @@ object DraggerProps {
     locale: UploadLocale = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onChange: /* info */ UploadChangeParam[UploadFile] => Unit = null,
-    onDownload: /* file */ UploadFile => Unit = null,
-    onPreview: /* file */ UploadFile => Unit = null,
-    onRemove: /* file */ UploadFile => Unit | Boolean | (js.Promise[Unit | Boolean]) = null,
+    onChange: /* info */ UploadChangeParam[UploadFile[_]] => Unit = null,
+    onDownload: /* file */ UploadFile[_] => Unit = null,
+    onPreview: /* file */ UploadFile[_] => Unit = null,
+    onRemove: /* file */ UploadFile[_] => Unit | Boolean | (js.Promise[Unit | Boolean]) = null,
     openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     previewFile: /* file */ File | Blob => js.Thenable[String] = null,

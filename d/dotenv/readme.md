@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv
 
-Typings are for version 6.1
+Typings are for version 8.2.0
 
 ## Library description:
 Loads environment variables from .env file
@@ -24,7 +24,7 @@ Loads environment variables from .env file
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
