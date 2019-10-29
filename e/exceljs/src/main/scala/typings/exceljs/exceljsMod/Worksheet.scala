@@ -1,6 +1,9 @@
 package typings.exceljs.exceljsMod
 
+import typings.exceljs.Anon_EditAs
+import typings.exceljs.Anon_Image
 import typings.exceljs.Anon_IncludeEmpty
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,15 +32,24 @@ trait Worksheet extends js.Object {
   	 * Note: these column structures are a workbook-building convenience only,
   	 * apart from the column width, they will not be fully persisted.
   	 */
-  var columns: js.UndefOr[js.Array[Column]] = js.native
+  var columns: js.Array[Partial[Column]] = js.native
+  val dimensions: Range = js.native
+  val hasMerges: Boolean = js.native
+  /**
+  	 * Worksheet Header and Footer
+  	 */
+  var headerFooter: HeaderFooter = js.native
+  val id: Double = js.native
   /**
   	 * Get the last editable row in a worksheet (or undefined if there are none)
   	 */
   val lastRow: js.UndefOr[Row] = js.native
+  var model: WorksheetModel = js.native
+  var name: String = js.native
   /**
   	 * Contains information related to how a worksheet is printed
   	 */
-  var pageSetup: PageSetup = js.native
+  var pageSetup: Partial[PageSetup] = js.native
   /**
   	 * Worksheet Properties
   	 */
@@ -47,19 +59,24 @@ trait Worksheet extends js.Object {
   	 */
   val rowCount: Double = js.native
   /**
+  	 * Worksheet State
+  	 */
+  var state: WorksheetState = js.native
+  /**
   	 * Open panes representing the sheet
   	 */
-  var views: js.Array[WorksheetView] = js.native
+  var views: js.Array[Partial[WorksheetView]] = js.native
+  val workbook: Workbook = js.native
   /**
   	 * Using the image id from `Workbook.addImage`, set the background to the worksheet
   	 */
-  def addBackgroundImage(imageId: String): Unit = js.native
+  def addBackgroundImage(imageId: Double): Unit = js.native
+  def addImage(imageId: Double, range: Anon_EditAs with (ImagePosition | ImageRange)): Unit = js.native
   /**
   	 * Using the image id from `Workbook.addImage`,
   	 * embed an image within the worksheet to cover a range
   	 */
-  def addImage(imageId: String, range: String): Unit = js.native
-  def addImage(imageId: String, range: ImageRange): Unit = js.native
+  def addImage(imageId: Double, range: String): Unit = js.native
   def addRow(data: js.Any): Row = js.native
   /**
   	 * Add a couple of Rows by key-value, after the last current row, using the column keys,
@@ -71,9 +88,13 @@ trait Worksheet extends js.Object {
   	 */
   def addRows(rows: js.Array[_]): Unit = js.native
   /**
-  	 * Commit a completed worksheet to stream
+  	 * Add a new table and return a reference to it
   	 */
+  def addTable(tableProperties: TableProperties): Table = js.native
   def commit(): Unit = js.native
+  def deleteColumnKey(key: String): Unit = js.native
+  def destroy(): Unit = js.native
+  def eachColumnKey(callback: js.Function2[/* col */ Partial[Column], /* index */ Double, Unit]): Unit = js.native
   /**
   	 * Iterate over all rows that have values in a worksheet
   	 */
@@ -82,26 +103,64 @@ trait Worksheet extends js.Object {
   	 * Iterate over all rows (including empty rows) in a worksheet
   	 */
   def eachRow(opt: Anon_IncludeEmpty, callback: js.Function2[/* row */ Row, /* rowNumber */ Double, Unit]): Unit = js.native
+  def fillFormula(range: String, formula: String): Unit = js.native
+  def fillFormula(range: String, formula: String, results: js.Array[js.Array[Double] | Double]): Unit = js.native
+  def fillFormula(
+    range: String,
+    formula: String,
+    results: js.Function2[/* r */ Double, /* c */ Double, String | Double]
+  ): Unit = js.native
+  def fillFormula(range: Location, formula: String): Unit = js.native
+  def fillFormula(range: Location, formula: String, results: js.Array[js.Array[Double] | Double]): Unit = js.native
+  def fillFormula(
+    range: Location,
+    formula: String,
+    results: js.Function2[/* r */ Double, /* c */ Double, String | Double]
+  ): Unit = js.native
+  def fillFormula(range: Range, formula: String): Unit = js.native
+  def fillFormula(range: Range, formula: String, results: js.Array[js.Array[Double] | Double]): Unit = js.native
+  def fillFormula(
+    range: Range,
+    formula: String,
+    results: js.Function2[/* r */ Double, /* c */ Double, String | Double]
+  ): Unit = js.native
+  def findCell(r: String, c: String): js.UndefOr[Cell] = js.native
+  def findCell(r: String, c: Double): js.UndefOr[Cell] = js.native
+  def findCell(r: Double, c: String): js.UndefOr[Cell] = js.native
+  /**
+  	 * returns the cell at [r,c] or address given by r. If not found, return undefined
+  	 */
+  def findCell(r: Double, c: Double): js.UndefOr[Cell] = js.native
+  def findRow(row: Double): js.UndefOr[Row] = js.native
+  def getBackgroundImageId(): String = js.native
+  def getCell(r: String): Cell = js.native
+  def getCell(r: String, c: String): Cell = js.native
+  def getCell(r: String, c: Double): Cell = js.native
   /**
   	 * Get or create cell
   	 */
-  def getCell(ref: String): Cell = js.native
-  def getColumn(indexOrKey: String): Column with ColumnExtension = js.native
+  def getCell(r: Double): Cell = js.native
+  def getCell(r: Double, c: String): Cell = js.native
+  def getCell(r: Double, c: Double): Cell = js.native
+  def getColumn(indexOrKey: String): Partial[Column] with ColumnExtension = js.native
   /**
   	 * Access an individual columns by key, letter and 1-based column number
   	 */
-  def getColumn(indexOrKey: Double): Column with ColumnExtension = js.native
+  def getColumn(indexOrKey: Double): Partial[Column] with ColumnExtension = js.native
+  def getColumnKey(key: String): Partial[Column] = js.native
+  def getImages(): js.Array[Anon_Image] = js.native
   /**
-  	 * Get or create row by 0-based index
+  	 * Get or create row by 1-based index
   	 */
   def getRow(index: Double): Row = js.native
-  def mergeCells(a: String): Unit = js.native
-  def mergeCells(a: String, b: String): Unit = js.native
-  def mergeCells(a: String, b: String, c: Double): Unit = js.native
-  def mergeCells(a: String, b: String, c: Double, d: Double): Unit = js.native
-  def mergeCells(a: String, b: Double): Unit = js.native
-  def mergeCells(a: String, b: Double, c: Double): Unit = js.native
-  def mergeCells(a: String, b: Double, c: Double, d: Double): Unit = js.native
+  /**
+  	 * return all rows as sparse array
+  	 */
+  def getSheetValues(): js.Array[Row] = js.native
+  /**
+  	 * fetch table by name or id
+  	 */
+  def getTable(name: String): Table = js.native
   /**
   	 * Merge cells, either:
   	 *
@@ -111,13 +170,23 @@ trait Worksheet extends js.Object {
   	 *
   	 * t, l, b, r numbers, e.g. `10,11,12,13`
   	 */
-  def mergeCells(a: Double): Unit = js.native
-  def mergeCells(a: Double, b: String): Unit = js.native
-  def mergeCells(a: Double, b: String, c: Double): Unit = js.native
-  def mergeCells(a: Double, b: String, c: Double, d: Double): Unit = js.native
-  def mergeCells(a: Double, b: Double): Unit = js.native
-  def mergeCells(a: Double, b: Double, c: Double): Unit = js.native
-  def mergeCells(a: Double, b: Double, c: Double, d: Double): Unit = js.native
+  def mergeCells(): Unit = js.native
+  def mergeCells(tl: String, br: String): Unit = js.native
+  def mergeCells(tl: String, br: String, sheetName: String): Unit = js.native
+  def mergeCells(top: Double, left: Double, bottom: Double, right: Double): Unit = js.native
+  def mergeCells(top: Double, left: Double, bottom: Double, right: Double, sheetName: String): Unit = js.native
+  def mergeCells(v: String): Unit = js.native
+  def mergeCells(v: js.Tuple2[String, String]): Unit = js.native
+  def mergeCells(v: js.Tuple3[String, String, String]): Unit = js.native
+  def mergeCells(v: js.Tuple4[Double, Double, Double, Double]): Unit = js.native
+  def mergeCells(v: js.Tuple5[Double, Double, Double, Double, String]): Unit = js.native
+  def mergeCells(v: Location): Unit = js.native
+  def mergeCells(v: Range): Unit = js.native
+  /**
+  	 * Worksheet protection
+  	 */
+  def protect(password: String, options: Partial[WorksheetProtection]): js.Promise[Unit] = js.native
+  def setColumnKey(key: String, value: Partial[Column]): Unit = js.native
   /**
   	 * Cut one or more columns (columns to the right are shifted left)
   	 * and optionally insert more
@@ -140,6 +209,18 @@ trait Worksheet extends js.Object {
   /**
   	 * unmerging the cells breaks the style links
   	 */
-  def unMergeCells(cell: String): Unit = js.native
+  def unMergeCells(): Unit = js.native
+  def unMergeCells(tl: String, br: String): Unit = js.native
+  def unMergeCells(tl: String, br: String, sheetName: String): Unit = js.native
+  def unMergeCells(top: Double, left: Double, bottom: Double, right: Double): Unit = js.native
+  def unMergeCells(top: Double, left: Double, bottom: Double, right: Double, sheetName: String): Unit = js.native
+  def unMergeCells(v: String): Unit = js.native
+  def unMergeCells(v: js.Tuple2[String, String]): Unit = js.native
+  def unMergeCells(v: js.Tuple3[String, String, String]): Unit = js.native
+  def unMergeCells(v: js.Tuple4[Double, Double, Double, Double]): Unit = js.native
+  def unMergeCells(v: js.Tuple5[Double, Double, Double, Double, String]): Unit = js.native
+  def unMergeCells(v: Location): Unit = js.native
+  def unMergeCells(v: Range): Unit = js.native
+  def unprotect(): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "logform"
-version := "1.2-dt-20180214Z-35e927"
+version := "2.1.2-8f8356"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

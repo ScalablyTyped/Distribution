@@ -1,0 +1,21 @@
+package typings.web3DashEth.web3DashEthMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait StorageProof extends js.Object {
+  var key: String
+  var proof: js.Array[String]
+  var value: String
+}
+
+object StorageProof {
+  @scala.inline
+  def apply(key: String, proof: js.Array[String], value: String): StorageProof = {
+    val __obj = js.Dynamic.literal(key = key, proof = proof, value = value)
+  
+    __obj.asInstanceOf[StorageProof]
+  }
+}
+

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "consola"
-version := "1.x-dt-20181022Z-a33a31"
+version := "2.10.1-3ccdda"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

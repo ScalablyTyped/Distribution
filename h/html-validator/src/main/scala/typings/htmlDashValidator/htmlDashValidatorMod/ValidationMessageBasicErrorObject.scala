@@ -1,0 +1,23 @@
+package typings.htmlDashValidator.htmlDashValidatorMod
+
+import typings.htmlDashValidator.htmlDashValidatorStrings.error
+import typings.htmlDashValidator.htmlDashValidatorStrings.fatal
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ValidationMessageBasicErrorObject extends js.Object {
+  var subType: js.UndefOr[fatal] = js.undefined
+  var `type`: error
+}
+
+object ValidationMessageBasicErrorObject {
+  @scala.inline
+  def apply(`type`: error, subType: fatal = null): ValidationMessageBasicErrorObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
+    if (subType != null) __obj.updateDynamic("subType")(subType)
+    __obj.asInstanceOf[ValidationMessageBasicErrorObject]
+  }
+}
+

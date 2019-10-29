@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CsvWriteOptions extends js.Object {
-  var dateFormat: js.UndefOr[String] = js.undefined
+  var dateFormat: String
+  var dateUTC: Boolean
 }
 
 object CsvWriteOptions {
   @scala.inline
-  def apply(dateFormat: String = null): CsvWriteOptions = {
-    val __obj = js.Dynamic.literal()
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+  def apply(dateFormat: String, dateUTC: Boolean): CsvWriteOptions = {
+    val __obj = js.Dynamic.literal(dateFormat = dateFormat, dateUTC = dateUTC)
+  
     __obj.asInstanceOf[CsvWriteOptions]
   }
 }

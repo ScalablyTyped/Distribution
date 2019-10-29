@@ -1,7 +1,7 @@
 
 # Scala.js typings for reduce-reducers
 
-Typings are for version 0.3
+Typings are for version 1.0.4
 
 ## Library description:
 Reduce multiple reducers into a single reducer
@@ -24,7 +24,7 @@ Reduce multiple reducers into a single reducer
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

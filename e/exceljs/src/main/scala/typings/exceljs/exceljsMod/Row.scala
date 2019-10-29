@@ -1,6 +1,8 @@
 package typings.exceljs.exceljsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.exceljs.Anon_IncludeEmpty
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +21,8 @@ trait Row extends Style {
   	 * Indicate the collapsed state based on outlineLevel
   	 */
   val collapsed: Boolean = js.native
+  val dimensions: Double = js.native
+  val hasValues: Boolean = js.native
   /**
   	 * Set a specific row height
   	 */
@@ -27,6 +31,7 @@ trait Row extends Style {
   	 * Make row hidden
   	 */
   var hidden: Boolean = js.native
+  var model: Partial[RowModel] | Null = js.native
   /**
   	 * The row number
   	 */
@@ -38,11 +43,17 @@ trait Row extends Style {
   /**
   	 * Get a row as a sparse array
   	 */
-  var values: js.Array[_] | js.Any = js.native
+  // readonly values: CellValue[];
+  var values: js.Array[CellValue] | StringDictionary[CellValue] = js.native
+  val worksheet: Worksheet = js.native
+  def addPageBreak(): Unit = js.native
+  def addPageBreak(lft: Double): Unit = js.native
+  def addPageBreak(lft: Double, rght: Double): Unit = js.native
   /**
   	 * Commit a completed row to stream
   	 */
   def commit(): Unit = js.native
+  def destroy(): Unit = js.native
   /**
   	 * Iterate over all non-null cells in a row
   	 */
@@ -51,11 +62,13 @@ trait Row extends Style {
   	 * Iterate over all cells in a row (including empty cells)
   	 */
   def eachCell(opt: Anon_IncludeEmpty, callback: js.Function2[/* cell */ Cell, /* colNumber */ Double, Unit]): Unit = js.native
+  def findCell(colNumber: Double): js.UndefOr[Cell] = js.native
   def getCell(indexOrKey: String): Cell = js.native
   /**
   	 * Get cell by number, column letter or column key
   	 */
   def getCell(indexOrKey: Double): Cell = js.native
+  def getCellEx(address: Address): Cell = js.native
   /**
   	 * Cut one or more cells (cells to the right are shifted left)
   	 *

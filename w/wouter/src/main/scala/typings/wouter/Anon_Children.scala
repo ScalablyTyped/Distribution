@@ -1,19 +1,19 @@
 package typings.wouter
 
-import typings.react.reactMod.ReactElement
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Children extends js.Object {
-  var children: ReactElement | js.Array[ReactElement]
+  var children: ReactNode
 }
 
 object Anon_Children {
   @scala.inline
-  def apply(children: ReactElement | js.Array[ReactElement]): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-  
+  def apply(children: ReactNode = null): Anon_Children = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

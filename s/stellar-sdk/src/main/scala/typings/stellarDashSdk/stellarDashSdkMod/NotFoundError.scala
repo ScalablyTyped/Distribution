@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stellar-sdk", "NotFoundError")
 @js.native
-class NotFoundError () extends NetworkError
+class NotFoundError protected ()
+  extends typings.stellarDashSdk.libErrorsMod.NotFoundError {
+  def this(message: String, response: js.Any) = this()
+}
 

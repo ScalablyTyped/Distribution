@@ -6,10 +6,10 @@ import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.Props
 import typings.react.reactMod.ReactNode
-import typings.reactDashTether.Anon_AppendChild
+import typings.react.reactMod.RefObject
 import typings.reactDashTether.reactDashTetherMod.TetherComponent
+import typings.std.Element
 import typings.std.HTMLElement
-import typings.tether.tetherMod.ITetherConstraint
 import typings.tether.tetherMod.ITetherOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,11 +19,15 @@ trait TetherComponentProps
   extends Props[TetherComponent]
      with ITetherOptions {
   var className: js.UndefOr[String] = js.undefined
+  @JSName("constraints")
+  var constraints_TetherComponentProps: js.UndefOr[js.Array[Constraints]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var onRepositioned: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onUpdate: js.UndefOr[js.Function1[/* data */ UpdateEventData, Unit]] = js.undefined
+  var renderElement: js.UndefOr[RenderProp] = js.undefined
   var renderElementTag: js.UndefOr[String] = js.undefined
-  var renderElementTo: js.UndefOr[String | Anon_AppendChild] = js.undefined
+  var renderElementTo: js.UndefOr[Element | String] = js.undefined
+  var renderTarget: js.UndefOr[RenderProp] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
 
@@ -36,18 +40,20 @@ object TetherComponentProps {
     className: String = null,
     classPrefix: String = null,
     classes: StringDictionary[Boolean | String] = null,
-    constraints: js.Array[ITetherConstraint] = null,
+    constraints: js.Array[Constraints] = null,
     element: HTMLElement | String | js.Any = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     key: Key = null,
     offset: String = null,
     onRepositioned: () => Unit = null,
-    onUpdate: () => Unit = null,
+    onUpdate: /* data */ UpdateEventData => Unit = null,
     optimizations: js.Any = null,
     ref: LegacyRef[TetherComponent] = null,
+    renderElement: /* ref */ RefObject[HTMLElement] => ReactNode = null,
     renderElementTag: String = null,
-    renderElementTo: String | Anon_AppendChild = null,
+    renderElementTo: Element | String = null,
+    renderTarget: /* ref */ RefObject[HTMLElement] => ReactNode = null,
     style: CSSProperties = null,
     target: HTMLElement | String | js.Any = null,
     targetAttachment: String = null,
@@ -67,11 +73,13 @@ object TetherComponentProps {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset)
     if (onRepositioned != null) __obj.updateDynamic("onRepositioned")(js.Any.fromFunction0(onRepositioned))
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction0(onUpdate))
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
     if (optimizations != null) __obj.updateDynamic("optimizations")(optimizations)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (renderElement != null) __obj.updateDynamic("renderElement")(js.Any.fromFunction1(renderElement))
     if (renderElementTag != null) __obj.updateDynamic("renderElementTag")(renderElementTag)
     if (renderElementTo != null) __obj.updateDynamic("renderElementTo")(renderElementTo.asInstanceOf[js.Any])
+    if (renderTarget != null) __obj.updateDynamic("renderTarget")(js.Any.fromFunction1(renderTarget))
     if (style != null) __obj.updateDynamic("style")(style)
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (targetAttachment != null) __obj.updateDynamic("targetAttachment")(targetAttachment)

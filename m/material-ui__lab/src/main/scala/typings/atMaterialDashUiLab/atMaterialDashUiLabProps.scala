@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait atMaterialDashUiLabProps {
   @scala.inline
+  def AutocompleteProps: typings.atMaterialDashUiLab.autocompleteAutocompleteMod.AutocompleteProps.type = typings.atMaterialDashUiLab.autocompleteAutocompleteMod.AutocompleteProps
+  type AutocompleteProps = typings.atMaterialDashUiLab.autocompleteAutocompleteMod.AutocompleteProps
+  @scala.inline
   def RatingProps: typings.atMaterialDashUiLab.ratingRatingMod.RatingProps.type = typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
   type RatingProps = typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
   @scala.inline

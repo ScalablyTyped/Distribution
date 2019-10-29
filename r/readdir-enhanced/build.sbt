@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "readdir-enhanced"
-version := "2.2-dt-20190419Z-dcf9f2"
+version := "4.0.3-d0c09c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-promise-router"
-version := "2.0-dt-20190212Z-bfcabc"
+version := "3.0.3-b6c3a2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

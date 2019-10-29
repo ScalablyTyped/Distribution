@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rot-js" : "2.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rot-js" : "2.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

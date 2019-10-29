@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mini-signals" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mini-signals" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

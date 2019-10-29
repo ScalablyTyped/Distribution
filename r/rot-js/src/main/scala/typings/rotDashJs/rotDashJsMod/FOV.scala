@@ -1,37 +1,27 @@
 package typings.rotDashJs.rotDashJsMod
 
-import typings.rotDashJs.rotDashJsMod._Global_.Array
+import org.scalablytyped.runtime.Instantiable0
+import typings.rotDashJs.libFovDiscreteDashShadowcastingMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rot-js", "FOV")
 @js.native
-class FOV protected () extends js.Object {
-  def this(lightPassesCallback: LightPassesCallback) = this()
-  def this(lightPassesCallback: LightPassesCallback, options: FOVOptions) = this()
-  def compute(x: Double, y: Double, R: Double, callback: FOVCallback): Unit = js.native
-}
-
-@JSImport("rot-js", "FOV")
-@js.native
 object FOV extends js.Object {
   @js.native
-  class DiscreteShadowcasting () extends FOV
+  class DiscreteShadowcasting () extends default
   
   @js.native
-  class PreciseShadowcasting () extends FOV
+  class PreciseShadowcasting ()
+    extends typings.rotDashJs.libFovPreciseDashShadowcastingMod.default
   
   @js.native
-  class RecursiveShadowcasting () extends FOV {
-    def compute180(x: Double, y: Double, R: Double, dir: Double, callback: FOVCallback): Unit = js.native
-    def compute90(x: Double, y: Double, R: Double, dir: Double, callback: FOVCallback): Unit = js.native
-  }
+  class RecursiveShadowcasting ()
+    extends typings.rotDashJs.libFovRecursiveDashShadowcastingMod.default
   
-  @js.native
-  object RecursiveShadowcasting extends js.Object {
-    val OCTANTS: Array[js.Tuple4[Double, Double, Double, Double]] = js.native
-  }
-  
+  var DiscreteShadowcasting: Instantiable0[default] = js.native
+  var PreciseShadowcasting: Instantiable0[typings.rotDashJs.libFovPreciseDashShadowcastingMod.default] = js.native
+  var RecursiveShadowcasting: Instantiable0[typings.rotDashJs.libFovRecursiveDashShadowcastingMod.default] = js.native
 }
 

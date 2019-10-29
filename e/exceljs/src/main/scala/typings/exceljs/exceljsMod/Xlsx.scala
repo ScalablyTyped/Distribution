@@ -1,41 +1,44 @@
 package typings.exceljs.exceljsMod
 
-import typings.node.streamMod.Stream
-import typings.node.streamMod.Writable
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Xlsx extends js.Object {
   /**
   	 * Create input stream for reading
   	 */
-  def createInputStream(): Writable
+  def createInputStream(): Writable = js.native
+  /**
+  	 * load from an array buffer
+  	 * @param buffer
+  	 */
+  def load(buffer: Buffer): js.Promise[Workbook] = js.native
+  /**
+  	 * read from a stream
+  	 * @param stream
+  	 */
+  def read(stream: Stream): js.Promise[Workbook] = js.native
   /**
   	 * read from a file
   	 */
-  def readFile(path: String): js.Promise[Unit]
+  def readFile(path: String): js.Promise[Workbook] = js.native
   /**
   	 * write to a stream
   	 */
-  def write(stream: Stream): js.Promise[Unit]
+  def write(stream: Stream): js.Promise[Unit] = js.native
+  def write(stream: Stream, options: Partial[XlsxWriteOptions]): js.Promise[Unit] = js.native
+  /**
+  	 * write to a buffer
+  	 */
+  def writeBuffer(): js.Promise[Buffer] = js.native
+  def writeBuffer(options: Partial[XlsxWriteOptions]): js.Promise[Buffer] = js.native
   /**
   	 * write to a file
   	 */
-  def writeFile(path: String): js.Promise[Unit]
-}
-
-object Xlsx {
-  @scala.inline
-  def apply(
-    createInputStream: () => Writable,
-    readFile: String => js.Promise[Unit],
-    write: Stream => js.Promise[Unit],
-    writeFile: String => js.Promise[Unit]
-  ): Xlsx = {
-    val __obj = js.Dynamic.literal(createInputStream = js.Any.fromFunction0(createInputStream), readFile = js.Any.fromFunction1(readFile), write = js.Any.fromFunction1(write), writeFile = js.Any.fromFunction1(writeFile))
-  
-    __obj.asInstanceOf[Xlsx]
-  }
+  def writeFile(path: String): js.Promise[Unit] = js.native
+  def writeFile(path: String, options: Partial[XlsxWriteOptions]): js.Promise[Unit] = js.native
 }
 

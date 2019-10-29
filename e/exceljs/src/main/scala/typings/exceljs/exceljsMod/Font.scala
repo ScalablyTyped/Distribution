@@ -7,51 +7,46 @@ import typings.exceljs.exceljsStrings.minor
 import typings.exceljs.exceljsStrings.none
 import typings.exceljs.exceljsStrings.single
 import typings.exceljs.exceljsStrings.singleAccounting
+import typings.exceljs.exceljsStrings.subscript
+import typings.exceljs.exceljsStrings.superscript
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Font extends js.Object {
-  var bold: js.UndefOr[Boolean] = js.undefined
-  var charset: js.UndefOr[Double] = js.undefined
-  var color: js.UndefOr[Color] = js.undefined
-  var family: js.UndefOr[Double] = js.undefined
-  var italic: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var outline: js.UndefOr[Boolean] = js.undefined
-  var scheme: js.UndefOr[minor | major | none] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var strike: js.UndefOr[Boolean] = js.undefined
-  var underline: js.UndefOr[Boolean | none | single | double | singleAccounting | doubleAccounting] = js.undefined
+  var bold: Boolean
+  var charset: Double
+  var color: Partial[Color]
+  var family: Double
+  var italic: Boolean
+  var name: String
+  var outline: Boolean
+  var scheme: minor | major | none
+  var size: Double
+  var strike: Boolean
+  var underline: Boolean | none | single | double | singleAccounting | doubleAccounting
+  var vertAlign: superscript | subscript
 }
 
 object Font {
   @scala.inline
   def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    charset: Int | Double = null,
-    color: Color = null,
-    family: Int | Double = null,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    outline: js.UndefOr[Boolean] = js.undefined,
-    scheme: minor | major | none = null,
-    size: Int | Double = null,
-    strike: js.UndefOr[Boolean] = js.undefined,
-    underline: Boolean | none | single | double | singleAccounting | doubleAccounting = null
+    bold: Boolean,
+    charset: Double,
+    color: Partial[Color],
+    family: Double,
+    italic: Boolean,
+    name: String,
+    outline: Boolean,
+    scheme: minor | major | none,
+    size: Double,
+    strike: Boolean,
+    underline: Boolean | none | single | double | singleAccounting | doubleAccounting,
+    vertAlign: superscript | subscript
   ): Font = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strike)) __obj.updateDynamic("strike")(strike)
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bold = bold, charset = charset, color = color, family = family, italic = italic, name = name, outline = outline, scheme = scheme.asInstanceOf[js.Any], size = size, strike = strike, underline = underline.asInstanceOf[js.Any], vertAlign = vertAlign.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Font]
   }
 }

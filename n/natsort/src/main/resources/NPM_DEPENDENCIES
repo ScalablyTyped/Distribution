@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "natsort" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "natsort" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

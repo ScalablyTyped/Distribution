@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.distSrcCoreServicesMod.AccessLevel
+import typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

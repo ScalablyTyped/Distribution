@@ -1,7 +1,9 @@
 package typings.jestDashEnvironmentDashPuppeteer.jestDashEnvironmentDashPuppeteerMod
 
+import typings.atJestFakeDashTimers.atJestFakeDashTimersMod.JestFakeTimers
 import typings.atJestTypes.buildCircusMod.Event
 import typings.atJestTypes.buildCircusMod.State
+import typings.jestDashMock.jestDashMockMod.ModuleMocker
 import typings.node.vmMod.Context
 import typings.node.vmMod.Script
 import scala.scalajs.js
@@ -12,10 +14,10 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JestEnvironment * / any */ trait PuppeteerEnvironment extends js.Object {
   var context: Context | Null
-  var fakeTimers: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FakeTimers<Timer> */ js.Any) | Null
+  var fakeTimers: JestFakeTimers[Timer] | Null
   var global: Global
   var handleTestEvent: js.UndefOr[js.Function2[/* event */ Event, /* state */ State, Unit]] = js.undefined
-  var moduleMocker: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModuleMocker */ js.Any) | Null
+  var moduleMocker: ModuleMocker | Null
   def runScript(script: Script): js.Any
   /**
     * Setup runs when the environment is being spun up, generally before each test suite
@@ -37,9 +39,9 @@ object PuppeteerEnvironment {
     setup: () => js.Promise[Unit],
     teardown: () => js.Promise[Unit],
     context: Context = null,
-    fakeTimers: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FakeTimers<Timer> */ js.Any = null,
+    fakeTimers: JestFakeTimers[Timer] = null,
     handleTestEvent: (/* event */ Event, /* state */ State) => Unit = null,
-    moduleMocker: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModuleMocker */ js.Any = null
+    moduleMocker: ModuleMocker = null
   ): PuppeteerEnvironment = {
     val __obj = js.Dynamic.literal(global = global, runScript = js.Any.fromFunction1(runScript), setup = js.Any.fromFunction0(setup), teardown = js.Any.fromFunction0(teardown))
     if (context != null) __obj.updateDynamic("context")(context)

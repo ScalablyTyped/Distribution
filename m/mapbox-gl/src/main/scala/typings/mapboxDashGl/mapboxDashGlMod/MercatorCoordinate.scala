@@ -19,6 +19,13 @@ class MercatorCoordinate protected () extends js.Object {
     * @default 0
     */
   var z: js.UndefOr[Double] = js.native
+  /**
+    * Returns the distance of 1 meter in MercatorCoordinate units at this latitude.
+    *
+    * For coordinates in real world units using meters, this naturally provides the
+    * scale to transform into MercatorCoordinates.
+    */
+  def meterInMercatorCoordinateUnits(): Double = js.native
   /** Returns the altitude in meters of the coordinate. */
   def toAltitude(): Double = js.native
   /** Returns the LngLat for the coordinate. */

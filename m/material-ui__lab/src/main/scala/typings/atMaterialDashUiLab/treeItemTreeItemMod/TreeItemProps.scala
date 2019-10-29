@@ -1,6 +1,5 @@
 package typings.atMaterialDashUiLab.treeItemTreeItemMod
 
-import typings.atMaterialDashUiCore.transitionsTransitionMod.TransitionProps
 import typings.atMaterialDashUiLab.PartialClassNameMapTreeItemClassKey
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`additions text`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`inline`
@@ -90,7 +89,11 @@ trait TreeItemProps extends js.Object {
   /**
     * The component used for the transition.
     */
-  var TransitionComponent: js.UndefOr[ComponentType[TransitionProps]] = js.undefined
+  var TransitionComponent: js.UndefOr[
+    ComponentType[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionProps */ _
+    ]
+  ] = js.undefined
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -376,7 +379,9 @@ object TreeItemProps {
   @scala.inline
   def apply(
     nodeId: String,
-    TransitionComponent: ComponentType[TransitionProps] = null,
+    TransitionComponent: ComponentType[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionProps */ _
+    ] = null,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,

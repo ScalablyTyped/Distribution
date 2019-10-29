@@ -1,0 +1,27 @@
+package typings.mdnDashBrowserDashCompatDashData.typesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.chrome
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.chrome_android
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.edge
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.edge_mobile
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.firefox
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.firefox_android
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.ie
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.nodejs
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.opera
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.opera_android
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.qq_android
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.safari
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.safari_ios
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.samsunginternet_android
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.uc_android
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.uc_chinese_android
+  - typings.mdnDashBrowserDashCompatDashData.mdnDashBrowserDashCompatDashDataStrings.webview_android
+*/
+trait BrowserNames extends js.Object
+

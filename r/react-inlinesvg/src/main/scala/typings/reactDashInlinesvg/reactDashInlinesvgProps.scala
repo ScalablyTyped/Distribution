@@ -1,13 +1,13 @@
 package typings.reactDashInlinesvg
 
-import typings.reactDashInlinesvg.reactDashInlinesvgMod.Props
+import typings.reactDashInlinesvg.reactDashInlinesvgMod.IProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashInlinesvgProps {
   @scala.inline
-  def ReactDashInlinesvgProps: Props.type = typings.reactDashInlinesvg.reactDashInlinesvgMod.Props
-  type ReactDashInlinesvgProps = Props
+  def ReactDashInlinesvgProps: IProps.type = typings.reactDashInlinesvg.reactDashInlinesvgMod.IProps
+  type ReactDashInlinesvgProps = IProps
 }
 

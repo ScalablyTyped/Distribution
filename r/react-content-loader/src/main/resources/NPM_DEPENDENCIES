@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-content-loader" : "4.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-content-loader" : "4.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

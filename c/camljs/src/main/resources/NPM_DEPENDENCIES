@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "camljs" : "2.12.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "camljs" : "2.12.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

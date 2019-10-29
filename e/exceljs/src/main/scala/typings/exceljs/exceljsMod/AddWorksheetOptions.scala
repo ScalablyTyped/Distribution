@@ -1,26 +1,27 @@
 package typings.exceljs.exceljsMod
 
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AddWorksheetOptions extends js.Object {
-  var pageSetup: js.UndefOr[PageSetup] = js.undefined
-  var properties: js.UndefOr[WorksheetProperties] = js.undefined
-  var views: js.UndefOr[js.Array[WorksheetView]] = js.undefined
+  var pageSetup: Partial[PageSetup]
+  var properties: Partial[WorksheetProperties]
+  var state: WorksheetState
+  var views: js.Array[Partial[WorksheetView]]
 }
 
 object AddWorksheetOptions {
   @scala.inline
   def apply(
-    pageSetup: PageSetup = null,
-    properties: WorksheetProperties = null,
-    views: js.Array[WorksheetView] = null
+    pageSetup: Partial[PageSetup],
+    properties: Partial[WorksheetProperties],
+    state: WorksheetState,
+    views: js.Array[Partial[WorksheetView]]
   ): AddWorksheetOptions = {
-    val __obj = js.Dynamic.literal()
-    if (pageSetup != null) __obj.updateDynamic("pageSetup")(pageSetup)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (views != null) __obj.updateDynamic("views")(views)
+    val __obj = js.Dynamic.literal(pageSetup = pageSetup, properties = properties, state = state, views = views)
+  
     __obj.asInstanceOf[AddWorksheetOptions]
   }
 }

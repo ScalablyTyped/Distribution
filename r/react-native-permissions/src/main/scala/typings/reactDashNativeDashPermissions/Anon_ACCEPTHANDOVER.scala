@@ -1,0 +1,106 @@
+package typings.reactDashNativeDashPermissions
+
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTACCEPT_HANDOVER
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTACCESS_BACKGROUND_LOCATION
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTACCESS_COARSE_LOCATION
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTACCESS_FINE_LOCATION
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTACTIVITY_RECOGNITION
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTANSWER_PHONE_CALLS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTBODY_SENSORS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTCALL_PHONE
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTCAMERA
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTGET_ACCOUNTS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTPROCESS_OUTGOING_CALLS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTREAD_CALENDAR
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTREAD_CALL_LOG
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTREAD_CONTACTS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTREAD_EXTERNAL_STORAGE
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTREAD_PHONE_NUMBERS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTREAD_PHONE_STATE
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTREAD_SMS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTRECEIVE_MMS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTRECEIVE_SMS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTRECEIVE_WAP_PUSH
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTRECORD_AUDIO
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTSEND_SMS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTUSE_SIP
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTWRITE_CALENDAR
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTWRITE_CALL_LOG
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTWRITE_CONTACTS
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE
+import typings.reactDashNativeDashPermissions.reactDashNativeDashPermissionsStrings.comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_ACCEPTHANDOVER extends js.Object {
+  var ACCEPT_HANDOVER: androidDOTpermissionDOTACCEPT_HANDOVER
+  var ACCESS_BACKGROUND_LOCATION: androidDOTpermissionDOTACCESS_BACKGROUND_LOCATION
+  var ACCESS_COARSE_LOCATION: androidDOTpermissionDOTACCESS_COARSE_LOCATION
+  var ACCESS_FINE_LOCATION: androidDOTpermissionDOTACCESS_FINE_LOCATION
+  var ACTIVITY_RECOGNITION: androidDOTpermissionDOTACTIVITY_RECOGNITION
+  var ADD_VOICEMAIL: comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL
+  var ANSWER_PHONE_CALLS: androidDOTpermissionDOTANSWER_PHONE_CALLS
+  var BODY_SENSORS: androidDOTpermissionDOTBODY_SENSORS
+  var CALL_PHONE: androidDOTpermissionDOTCALL_PHONE
+  var CAMERA: androidDOTpermissionDOTCAMERA
+  var GET_ACCOUNTS: androidDOTpermissionDOTGET_ACCOUNTS
+  var PROCESS_OUTGOING_CALLS: androidDOTpermissionDOTPROCESS_OUTGOING_CALLS
+  var READ_CALENDAR: androidDOTpermissionDOTREAD_CALENDAR
+  var READ_CALL_LOG: androidDOTpermissionDOTREAD_CALL_LOG
+  var READ_CONTACTS: androidDOTpermissionDOTREAD_CONTACTS
+  var READ_EXTERNAL_STORAGE: androidDOTpermissionDOTREAD_EXTERNAL_STORAGE
+  var READ_PHONE_NUMBERS: androidDOTpermissionDOTREAD_PHONE_NUMBERS
+  var READ_PHONE_STATE: androidDOTpermissionDOTREAD_PHONE_STATE
+  var READ_SMS: androidDOTpermissionDOTREAD_SMS
+  var RECEIVE_MMS: androidDOTpermissionDOTRECEIVE_MMS
+  var RECEIVE_SMS: androidDOTpermissionDOTRECEIVE_SMS
+  var RECEIVE_WAP_PUSH: androidDOTpermissionDOTRECEIVE_WAP_PUSH
+  var RECORD_AUDIO: androidDOTpermissionDOTRECORD_AUDIO
+  var SEND_SMS: androidDOTpermissionDOTSEND_SMS
+  var USE_SIP: androidDOTpermissionDOTUSE_SIP
+  var WRITE_CALENDAR: androidDOTpermissionDOTWRITE_CALENDAR
+  var WRITE_CALL_LOG: androidDOTpermissionDOTWRITE_CALL_LOG
+  var WRITE_CONTACTS: androidDOTpermissionDOTWRITE_CONTACTS
+  var WRITE_EXTERNAL_STORAGE: androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE
+}
+
+object Anon_ACCEPTHANDOVER {
+  @scala.inline
+  def apply(
+    ACCEPT_HANDOVER: androidDOTpermissionDOTACCEPT_HANDOVER,
+    ACCESS_BACKGROUND_LOCATION: androidDOTpermissionDOTACCESS_BACKGROUND_LOCATION,
+    ACCESS_COARSE_LOCATION: androidDOTpermissionDOTACCESS_COARSE_LOCATION,
+    ACCESS_FINE_LOCATION: androidDOTpermissionDOTACCESS_FINE_LOCATION,
+    ACTIVITY_RECOGNITION: androidDOTpermissionDOTACTIVITY_RECOGNITION,
+    ADD_VOICEMAIL: comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL,
+    ANSWER_PHONE_CALLS: androidDOTpermissionDOTANSWER_PHONE_CALLS,
+    BODY_SENSORS: androidDOTpermissionDOTBODY_SENSORS,
+    CALL_PHONE: androidDOTpermissionDOTCALL_PHONE,
+    CAMERA: androidDOTpermissionDOTCAMERA,
+    GET_ACCOUNTS: androidDOTpermissionDOTGET_ACCOUNTS,
+    PROCESS_OUTGOING_CALLS: androidDOTpermissionDOTPROCESS_OUTGOING_CALLS,
+    READ_CALENDAR: androidDOTpermissionDOTREAD_CALENDAR,
+    READ_CALL_LOG: androidDOTpermissionDOTREAD_CALL_LOG,
+    READ_CONTACTS: androidDOTpermissionDOTREAD_CONTACTS,
+    READ_EXTERNAL_STORAGE: androidDOTpermissionDOTREAD_EXTERNAL_STORAGE,
+    READ_PHONE_NUMBERS: androidDOTpermissionDOTREAD_PHONE_NUMBERS,
+    READ_PHONE_STATE: androidDOTpermissionDOTREAD_PHONE_STATE,
+    READ_SMS: androidDOTpermissionDOTREAD_SMS,
+    RECEIVE_MMS: androidDOTpermissionDOTRECEIVE_MMS,
+    RECEIVE_SMS: androidDOTpermissionDOTRECEIVE_SMS,
+    RECEIVE_WAP_PUSH: androidDOTpermissionDOTRECEIVE_WAP_PUSH,
+    RECORD_AUDIO: androidDOTpermissionDOTRECORD_AUDIO,
+    SEND_SMS: androidDOTpermissionDOTSEND_SMS,
+    USE_SIP: androidDOTpermissionDOTUSE_SIP,
+    WRITE_CALENDAR: androidDOTpermissionDOTWRITE_CALENDAR,
+    WRITE_CALL_LOG: androidDOTpermissionDOTWRITE_CALL_LOG,
+    WRITE_CONTACTS: androidDOTpermissionDOTWRITE_CONTACTS,
+    WRITE_EXTERNAL_STORAGE: androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE
+  ): Anon_ACCEPTHANDOVER = {
+    val __obj = js.Dynamic.literal(ACCEPT_HANDOVER = ACCEPT_HANDOVER, ACCESS_BACKGROUND_LOCATION = ACCESS_BACKGROUND_LOCATION, ACCESS_COARSE_LOCATION = ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION = ACCESS_FINE_LOCATION, ACTIVITY_RECOGNITION = ACTIVITY_RECOGNITION, ADD_VOICEMAIL = ADD_VOICEMAIL, ANSWER_PHONE_CALLS = ANSWER_PHONE_CALLS, BODY_SENSORS = BODY_SENSORS, CALL_PHONE = CALL_PHONE, CAMERA = CAMERA, GET_ACCOUNTS = GET_ACCOUNTS, PROCESS_OUTGOING_CALLS = PROCESS_OUTGOING_CALLS, READ_CALENDAR = READ_CALENDAR, READ_CALL_LOG = READ_CALL_LOG, READ_CONTACTS = READ_CONTACTS, READ_EXTERNAL_STORAGE = READ_EXTERNAL_STORAGE, READ_PHONE_NUMBERS = READ_PHONE_NUMBERS, READ_PHONE_STATE = READ_PHONE_STATE, READ_SMS = READ_SMS, RECEIVE_MMS = RECEIVE_MMS, RECEIVE_SMS = RECEIVE_SMS, RECEIVE_WAP_PUSH = RECEIVE_WAP_PUSH, RECORD_AUDIO = RECORD_AUDIO, SEND_SMS = SEND_SMS, USE_SIP = USE_SIP, WRITE_CALENDAR = WRITE_CALENDAR, WRITE_CALL_LOG = WRITE_CALL_LOG, WRITE_CONTACTS = WRITE_CONTACTS, WRITE_EXTERNAL_STORAGE = WRITE_EXTERNAL_STORAGE)
+  
+    __obj.asInstanceOf[Anon_ACCEPTHANDOVER]
+  }
+}
+

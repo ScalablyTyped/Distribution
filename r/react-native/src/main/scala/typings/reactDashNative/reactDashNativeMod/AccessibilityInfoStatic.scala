@@ -28,7 +28,7 @@ trait AccessibilityInfoStatic extends js.Object {
     *
     * @deprecated use isScreenReaderChanged instead
     */
-  def fetch(): js.Function0[js.Promise[Boolean]]
+  def fetch(): js.Promise[Boolean]
   /**
     * Query whether bold text is currently enabled.
     *
@@ -78,7 +78,7 @@ object AccessibilityInfoStatic {
   def apply(
     addEventListener: (AccessibilityEventName, js.Function1[/* event */ AccessibilityEvent, Unit]) => Unit,
     announceForAccessibility: String => Unit,
-    fetch: () => js.Function0[js.Promise[Boolean]],
+    fetch: () => js.Promise[Boolean],
     isBoldTextEnabled: () => js.Promise[Boolean],
     isGrayscaleEnabled: () => js.Promise[Boolean],
     isInvertColorsEnabled: () => js.Promise[Boolean],

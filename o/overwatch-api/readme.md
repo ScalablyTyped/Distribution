@@ -1,7 +1,7 @@
 
 # Scala.js typings for overwatch-api
 
-Typings are for version 0.5
+Typings are for version 0.8.0
 
 ## Library description:
 An Unoffical Overwatch API.
@@ -21,7 +21,7 @@ An Unoffical Overwatch API.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

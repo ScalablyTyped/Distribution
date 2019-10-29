@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "class-validator" : "0.9.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "class-validator" : "0.9.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

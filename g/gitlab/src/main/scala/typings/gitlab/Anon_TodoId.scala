@@ -1,12 +1,11 @@
 package typings.gitlab
 
-import typings.gitlab.distSrcCoreServicesMod.TodoId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_TodoId extends js.Object {
-  var todoId: js.UndefOr[TodoId] = js.undefined
+  var todoId: js.UndefOr[Double] = js.undefined
 }
 
 object Anon_TodoId {

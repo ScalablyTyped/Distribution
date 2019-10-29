@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "getopts"
-version := "2.0-dt-20190212Z-efaf41"
+version := "2.2.5-ad5157"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fast-csv" : "3.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fast-csv" : "3.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

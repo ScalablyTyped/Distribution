@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "chai-webdriverio" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "chai-webdriverio" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

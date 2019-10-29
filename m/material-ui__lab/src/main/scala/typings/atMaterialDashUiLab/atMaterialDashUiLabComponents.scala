@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiLabComponents extends atMaterialDashUiLabProps {
   @scala.inline
+  def Autocomplete: ComponentType[AutocompleteProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("Autocomplete").asInstanceOf[typings.react.reactMod.ComponentType[AutocompleteProps]]
+  @scala.inline
   def Rating: ComponentType[RatingProps] = js.constructorOf[typings.atMaterialDashUiLab.ratingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RatingProps]]
   @scala.inline
   def SpeedDial: ComponentType[SpeedDialProps] = typings.atMaterialDashUiLab.atMaterialDashUiLabMod.asInstanceOf[js.Dynamic].selectDynamic("SpeedDial").asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialProps]]

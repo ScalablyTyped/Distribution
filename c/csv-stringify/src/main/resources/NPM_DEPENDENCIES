@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "csv-stringify" : "5.3.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "csv-stringify" : "5.3.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

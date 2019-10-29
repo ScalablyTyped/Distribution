@@ -5,16 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CsvReadOptions extends js.Object {
-  var dateFormats: js.UndefOr[js.Array[String]] = js.undefined
-  var map: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, _]] = js.undefined
+  var dateFormats: js.Array[String]
+  def map(value: js.Any, index: Double): js.Any
 }
 
 object CsvReadOptions {
   @scala.inline
-  def apply(dateFormats: js.Array[String] = null, map: (/* value */ js.Any, /* index */ Double) => _ = null): CsvReadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (dateFormats != null) __obj.updateDynamic("dateFormats")(dateFormats)
-    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction2(map))
+  def apply(dateFormats: js.Array[String], map: (js.Any, Double) => js.Any): CsvReadOptions = {
+    val __obj = js.Dynamic.literal(dateFormats = dateFormats, map = js.Any.fromFunction2(map))
+  
     __obj.asInstanceOf[CsvReadOptions]
   }
 }

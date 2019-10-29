@@ -9,12 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object koaMod extends js.Object {
   @js.native
-  trait Context extends js.Object {
-    def render(viewPath: String): Unit = js.native
-    def render(viewPath: String, locals: PugLocals): Unit = js.native
-    def render(viewPath: String, locals: PugLocals, overrideOpts: Boolean): Unit = js.native
-    def render(viewPath: String, locals: PugLocals, overrideOpts: PugCtxOptions): Unit = js.native
-    def render(viewPath: String, locals: PugLocals, overrideOpts: PugCtxOptions, noCache: Boolean): Unit = js.native
+  trait BaseContext extends js.Object {
+    def render(tpl: String): Unit = js.native
+    def render(tpl: String, locals: js.Any): Unit = js.native
+    def render(tpl: String, locals: js.Any, options: RenderOptions): Unit = js.native
+    def render(tpl: String, locals: js.Any, options: RenderOptions, noCache: Boolean): Unit = js.native
   }
   
 }

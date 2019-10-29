@@ -1,5 +1,6 @@
 package typings.overwatchDashApi.overwatchDashApiMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object getProfile extends js.Object {
   def apply(
-    platform: OverwatchPlatform,
-    region: OverwatchServerRegion,
+    platform: PLATFORM,
+    region: REGION,
     tag: String,
-    callback: callbackFunc[ProfileApiResponse]
+    callback: js.Function2[/* err */ Error, /* data */ Profile, Unit]
   ): Unit = js.native
 }
 

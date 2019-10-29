@@ -1,7 +1,7 @@
 
 # Scala.js typings for forge-di
 
-Typings are for version v0.9.5
+Typings are for version 12.0.6
 
 ## Library description:
 a dependency injector for node.js
@@ -24,7 +24,7 @@ a dependency injector for node.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

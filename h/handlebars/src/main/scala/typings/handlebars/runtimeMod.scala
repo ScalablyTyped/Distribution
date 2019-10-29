@@ -6,6 +6,7 @@ import typings.handlebars.Handlebars.HelperDelegate
 import typings.handlebars.Handlebars.ParseOptions
 import typings.handlebars.Handlebars.ResolvePartialOptions
 import typings.handlebars.Handlebars.Template
+import typings.handlebars.hbs.AST.Node
 import typings.handlebars.hbs.AST.Program
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +15,13 @@ import scala.scalajs.js.annotation._
 @JSImport("handlebars/runtime", JSImport.Namespace)
 @js.native
 object runtimeMod extends js.Object {
+  @js.native
+  class Exception protected ()
+    extends typings.handlebars.Handlebars.Exception {
+    def this(message: String) = this()
+    def this(message: String, node: Node) = this()
+  }
+  
   @js.native
   class SafeString protected ()
     extends typings.handlebars.Handlebars.SafeString {
@@ -27,7 +35,6 @@ object runtimeMod extends js.Object {
   val escapeExpression: js.Function1[/* str */ String, String] = js.native
   val logger: Logger = js.native
   val templates: HandlebarsTemplates = js.native
-  def Exception(message: String): Unit = js.native
   def K(): Unit = js.native
   def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_] = js.native
   def compile[T](input: js.Any): HandlebarsTemplateDelegate[T] = js.native
@@ -38,6 +45,8 @@ object runtimeMod extends js.Object {
   def noConflict(): TypeofHandlebars = js.native
   def parse(input: String): Program = js.native
   def parse(input: String, options: ParseOptions): Program = js.native
+  def parseWithoutProcessing(input: String): Program = js.native
+  def parseWithoutProcessing(input: String, options: ParseOptions): Program = js.native
   def precompile(input: js.Any): TemplateSpecification = js.native
   def precompile(input: js.Any, options: PrecompileOptions): TemplateSpecification = js.native
   def registerDecorator(name: String, fn: js.Function): Unit = js.native

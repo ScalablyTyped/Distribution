@@ -1,11 +1,10 @@
 organization := "org.scalablytyped"
 name := "chai-webdriverio"
-version := "0.4-dt-20190808Z-c5d025"
+version := "1.0.0-97912d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chai" % "4.2-dt-20191022Z-a94ee8",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

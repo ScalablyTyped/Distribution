@@ -1,0 +1,64 @@
+package typings.classDashValidator.validationValidatorOptionsMod
+
+import typings.classDashValidator.Anon_Target
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ValidatorOptions extends js.Object {
+  /**
+    * If set to true, the validation will not use default messages.
+    * Error message always will be undefined if its not explicitly set.
+    */
+  var dismissDefaultMessages: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If set to true, instead of stripping non-whitelisted properties validator will throw an error
+    */
+  var forbidNonWhitelisted: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Settings true will cause fail validation of unknown objects.
+    */
+  var forbidUnknownValues: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Groups to be used during validation of the object.
+    */
+  var groups: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * If set to true than validator will skip validation of all properties that are missing in the validating object.
+    */
+  var skipMissingProperties: js.UndefOr[Boolean] = js.undefined
+  /**
+    * ValidationError special options.
+    */
+  var validationError: js.UndefOr[Anon_Target] = js.undefined
+  /**
+    * If set to true validator will strip validated object of any properties that do not have any decorators.
+    *
+    * Tip: if no other decorator is suitable for your property use @Allow decorator.
+    */
+  var whitelist: js.UndefOr[Boolean] = js.undefined
+}
+
+object ValidatorOptions {
+  @scala.inline
+  def apply(
+    dismissDefaultMessages: js.UndefOr[Boolean] = js.undefined,
+    forbidNonWhitelisted: js.UndefOr[Boolean] = js.undefined,
+    forbidUnknownValues: js.UndefOr[Boolean] = js.undefined,
+    groups: js.Array[String] = null,
+    skipMissingProperties: js.UndefOr[Boolean] = js.undefined,
+    validationError: Anon_Target = null,
+    whitelist: js.UndefOr[Boolean] = js.undefined
+  ): ValidatorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dismissDefaultMessages)) __obj.updateDynamic("dismissDefaultMessages")(dismissDefaultMessages)
+    if (!js.isUndefined(forbidNonWhitelisted)) __obj.updateDynamic("forbidNonWhitelisted")(forbidNonWhitelisted)
+    if (!js.isUndefined(forbidUnknownValues)) __obj.updateDynamic("forbidUnknownValues")(forbidUnknownValues)
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (!js.isUndefined(skipMissingProperties)) __obj.updateDynamic("skipMissingProperties")(skipMissingProperties)
+    if (validationError != null) __obj.updateDynamic("validationError")(validationError)
+    if (!js.isUndefined(whitelist)) __obj.updateDynamic("whitelist")(whitelist)
+    __obj.asInstanceOf[ValidatorOptions]
+  }
+}
+

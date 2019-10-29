@@ -2,7 +2,6 @@ package typings.pino.pinoMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pino.Anon_AsObject
-import typings.pino.pinoNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,7 +85,7 @@ trait LoggerOptions extends js.Object {
     * See stdTimeFunctions for a set of available functions for passing in as a value for this option.
     * Caution: any sort of formatted time will significantly slow down Pino's performance.
     */
-  var timestamp: js.UndefOr[TimeFn | `false`] = js.undefined
+  var timestamp: js.UndefOr[TimeFn | Boolean] = js.undefined
   /**
     * Outputs the level as a string instead of integer. Default: `false`.
     */
@@ -116,7 +115,7 @@ object LoggerOptions {
     redact: js.Array[String] | redactOptions = null,
     safe: js.UndefOr[Boolean] = js.undefined,
     serializers: StringDictionary[SerializerFn] = null,
-    timestamp: TimeFn | `false` = null,
+    timestamp: TimeFn | Boolean = null,
     useLevelLabels: js.UndefOr[Boolean] = js.undefined,
     useOnlyCustomLevels: js.UndefOr[Boolean] = js.undefined
   ): LoggerOptions = {

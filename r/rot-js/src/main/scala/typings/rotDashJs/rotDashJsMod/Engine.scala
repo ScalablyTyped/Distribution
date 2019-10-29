@@ -1,15 +1,13 @@
 package typings.rotDashJs.rotDashJsMod
 
+import typings.rotDashJs.libEngineMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rot-js", "Engine")
 @js.native
-class Engine protected () extends js.Object {
-  def this(scheduler: Scheduler) = this()
-  def lock(): Engine = js.native
-  def start(): Engine = js.native
-  def unlock(): Engine = js.native
+class Engine protected () extends default {
+  def this(scheduler: typings.rotDashJs.libSchedulerSchedulerMod.default[_]) = this()
 }
 

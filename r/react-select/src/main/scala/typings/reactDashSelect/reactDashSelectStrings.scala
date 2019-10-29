@@ -13,6 +13,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashSelectStrings {
   @js.native
+  sealed trait DeepNonNullable extends js.Object
+  
+  @js.native
   sealed trait SelectComponentsProps extends js.Object
   
   @js.native
@@ -134,6 +137,8 @@ object reactDashSelectStrings {
   @js.native
   sealed trait value extends FormatOptionLabelContext
   
+  @scala.inline
+  def DeepNonNullable: DeepNonNullable = "DeepNonNullable".asInstanceOf[DeepNonNullable]
   @scala.inline
   def SelectComponentsProps: SelectComponentsProps = "SelectComponentsProps".asInstanceOf[SelectComponentsProps]
   @scala.inline

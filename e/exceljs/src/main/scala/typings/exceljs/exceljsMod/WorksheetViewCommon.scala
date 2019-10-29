@@ -8,54 +8,48 @@ trait WorksheetViewCommon extends js.Object {
   /**
   	 * The currently selected cell
   	 */
-  var activeCell: js.UndefOr[String] = js.undefined
+  var activeCell: String
   /**
   	 * Sets the worksheet view's orientation to right-to-left, `false` by default
   	 */
-  var rightToLeft: js.UndefOr[Boolean] = js.undefined
+  var rightToLeft: Boolean
   /**
   	 * Shows or hides the gridlines (shown for cells where borders have not been defined),
   	 * `true` by default
   	 */
-  var showGridLines: js.UndefOr[Boolean] = js.undefined
+  var showGridLines: Boolean
   /**
   	 * Shows or hides the row and column headers (e.g. A1, B1 at the top and 1,2,3 on the left,
   	 * `true` by default
   	 */
-  var showRowColHeaders: js.UndefOr[Boolean] = js.undefined
+  var showRowColHeaders: Boolean
   /**
   	 * Shows or hides the ruler in Page Layout, `true` by default
   	 */
-  var showRuler: js.UndefOr[Boolean] = js.undefined
+  var showRuler: Boolean
   /**
   	 * 	Percentage zoom to use for the view, `100` by default
   	 */
-  var zoomScale: js.UndefOr[Double] = js.undefined
+  var zoomScale: Double
   /**
   	 * 	Normal zoom for the view, `100` by default
   	 */
-  var zoomScaleNormal: js.UndefOr[Double] = js.undefined
+  var zoomScaleNormal: Double
 }
 
 object WorksheetViewCommon {
   @scala.inline
   def apply(
-    activeCell: String = null,
-    rightToLeft: js.UndefOr[Boolean] = js.undefined,
-    showGridLines: js.UndefOr[Boolean] = js.undefined,
-    showRowColHeaders: js.UndefOr[Boolean] = js.undefined,
-    showRuler: js.UndefOr[Boolean] = js.undefined,
-    zoomScale: Int | Double = null,
-    zoomScaleNormal: Int | Double = null
+    activeCell: String,
+    rightToLeft: Boolean,
+    showGridLines: Boolean,
+    showRowColHeaders: Boolean,
+    showRuler: Boolean,
+    zoomScale: Double,
+    zoomScaleNormal: Double
   ): WorksheetViewCommon = {
-    val __obj = js.Dynamic.literal()
-    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
-    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft)
-    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines)
-    if (!js.isUndefined(showRowColHeaders)) __obj.updateDynamic("showRowColHeaders")(showRowColHeaders)
-    if (!js.isUndefined(showRuler)) __obj.updateDynamic("showRuler")(showRuler)
-    if (zoomScale != null) __obj.updateDynamic("zoomScale")(zoomScale.asInstanceOf[js.Any])
-    if (zoomScaleNormal != null) __obj.updateDynamic("zoomScaleNormal")(zoomScaleNormal.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeCell = activeCell, rightToLeft = rightToLeft, showGridLines = showGridLines, showRowColHeaders = showRowColHeaders, showRuler = showRuler, zoomScale = zoomScale, zoomScaleNormal = zoomScaleNormal)
+  
     __obj.asInstanceOf[WorksheetViewCommon]
   }
 }

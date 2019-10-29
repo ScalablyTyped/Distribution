@@ -19,6 +19,9 @@ object nodeDashSqlDashParserStrings {
   sealed trait DISTINCT extends js.Object
   
   @js.native
+  sealed trait alter extends js.Object
+  
+  @js.native
   sealed trait column extends WhilteListCheckMode
   
   @js.native
@@ -56,6 +59,8 @@ object nodeDashSqlDashParserStrings {
   def DESC: DESC = "DESC".asInstanceOf[DESC]
   @scala.inline
   def DISTINCT: DISTINCT = "DISTINCT".asInstanceOf[DISTINCT]
+  @scala.inline
+  def alter: alter = "alter".asInstanceOf[alter]
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   @scala.inline

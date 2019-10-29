@@ -1,7 +1,7 @@
 
 # Scala.js typings for menubar
 
-Typings are for version 5.1.0
+Typings are for version 7.0.0
 
 ## Library description:
 high level way to create menubar desktop applications with electron
@@ -24,7 +24,7 @@ high level way to create menubar desktop applications with electron
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

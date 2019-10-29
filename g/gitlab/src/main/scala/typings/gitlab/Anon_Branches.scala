@@ -2,194 +2,200 @@ package typings.gitlab
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.gitlab.distSrcCoreInfrastructureMod.BaseServiceOptions
-import typings.gitlab.distSrcCoreServicesMod.Branches
-import typings.gitlab.distSrcCoreServicesMod.CommitDiscussions
-import typings.gitlab.distSrcCoreServicesMod.Commits
-import typings.gitlab.distSrcCoreServicesMod.ContainerRegistry
-import typings.gitlab.distSrcCoreServicesMod.DeployKeys
-import typings.gitlab.distSrcCoreServicesMod.Deployments
-import typings.gitlab.distSrcCoreServicesMod.Environments
-import typings.gitlab.distSrcCoreServicesMod.IssueAwardEmojis
-import typings.gitlab.distSrcCoreServicesMod.IssueDiscussions
-import typings.gitlab.distSrcCoreServicesMod.IssueNotes
-import typings.gitlab.distSrcCoreServicesMod.Issues
-import typings.gitlab.distSrcCoreServicesMod.IssuesStatistics
-import typings.gitlab.distSrcCoreServicesMod.Jobs
-import typings.gitlab.distSrcCoreServicesMod.Labels
-import typings.gitlab.distSrcCoreServicesMod.MergeRequestAwardEmojis
-import typings.gitlab.distSrcCoreServicesMod.MergeRequestDiscussions
-import typings.gitlab.distSrcCoreServicesMod.MergeRequestNotes
-import typings.gitlab.distSrcCoreServicesMod.MergeRequests
-import typings.gitlab.distSrcCoreServicesMod.Packages
-import typings.gitlab.distSrcCoreServicesMod.PipelineScheduleVariables
-import typings.gitlab.distSrcCoreServicesMod.PipelineSchedules
-import typings.gitlab.distSrcCoreServicesMod.Pipelines
-import typings.gitlab.distSrcCoreServicesMod.ProjectAccessRequests
-import typings.gitlab.distSrcCoreServicesMod.ProjectBadges
-import typings.gitlab.distSrcCoreServicesMod.ProjectCustomAttributes
-import typings.gitlab.distSrcCoreServicesMod.ProjectHooks
-import typings.gitlab.distSrcCoreServicesMod.ProjectImportExport
-import typings.gitlab.distSrcCoreServicesMod.ProjectIssueBoards
-import typings.gitlab.distSrcCoreServicesMod.ProjectMembers
-import typings.gitlab.distSrcCoreServicesMod.ProjectMilestones
-import typings.gitlab.distSrcCoreServicesMod.ProjectSnippetAwardEmojis
-import typings.gitlab.distSrcCoreServicesMod.ProjectSnippetDiscussions
-import typings.gitlab.distSrcCoreServicesMod.ProjectSnippetNotes
-import typings.gitlab.distSrcCoreServicesMod.ProjectSnippets
-import typings.gitlab.distSrcCoreServicesMod.ProjectVariables
-import typings.gitlab.distSrcCoreServicesMod.Projects
-import typings.gitlab.distSrcCoreServicesMod.ProtectedBranches
-import typings.gitlab.distSrcCoreServicesMod.ProtectedTags
-import typings.gitlab.distSrcCoreServicesMod.PushRules
-import typings.gitlab.distSrcCoreServicesMod.ReleaseLinks
-import typings.gitlab.distSrcCoreServicesMod.Releases
-import typings.gitlab.distSrcCoreServicesMod.Repositories
-import typings.gitlab.distSrcCoreServicesMod.RepositoryFiles
-import typings.gitlab.distSrcCoreServicesMod.Runners
-import typings.gitlab.distSrcCoreServicesMod.Services
-import typings.gitlab.distSrcCoreServicesMod.Tags
-import typings.gitlab.distSrcCoreServicesMod.Triggers
+import typings.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import typings.gitlab.distTypesCoreServicesMod.Branches
+import typings.gitlab.distTypesCoreServicesMod.CommitDiscussions
+import typings.gitlab.distTypesCoreServicesMod.Commits
+import typings.gitlab.distTypesCoreServicesMod.ContainerRegistry
+import typings.gitlab.distTypesCoreServicesMod.DeployKeys
+import typings.gitlab.distTypesCoreServicesMod.Deployments
+import typings.gitlab.distTypesCoreServicesMod.Environments
+import typings.gitlab.distTypesCoreServicesMod.IssueAwardEmojis
+import typings.gitlab.distTypesCoreServicesMod.IssueDiscussions
+import typings.gitlab.distTypesCoreServicesMod.IssueNotes
+import typings.gitlab.distTypesCoreServicesMod.Issues
+import typings.gitlab.distTypesCoreServicesMod.IssuesStatistics
+import typings.gitlab.distTypesCoreServicesMod.Jobs
+import typings.gitlab.distTypesCoreServicesMod.Labels
+import typings.gitlab.distTypesCoreServicesMod.MergeRequestAwardEmojis
+import typings.gitlab.distTypesCoreServicesMod.MergeRequestDiscussions
+import typings.gitlab.distTypesCoreServicesMod.MergeRequestNotes
+import typings.gitlab.distTypesCoreServicesMod.MergeRequests
+import typings.gitlab.distTypesCoreServicesMod.Packages
+import typings.gitlab.distTypesCoreServicesMod.PipelineScheduleVariables
+import typings.gitlab.distTypesCoreServicesMod.PipelineSchedules
+import typings.gitlab.distTypesCoreServicesMod.Pipelines
+import typings.gitlab.distTypesCoreServicesMod.ProjectAccessRequests
+import typings.gitlab.distTypesCoreServicesMod.ProjectBadges
+import typings.gitlab.distTypesCoreServicesMod.ProjectCustomAttributes
+import typings.gitlab.distTypesCoreServicesMod.ProjectHooks
+import typings.gitlab.distTypesCoreServicesMod.ProjectImportExport
+import typings.gitlab.distTypesCoreServicesMod.ProjectIssueBoards
+import typings.gitlab.distTypesCoreServicesMod.ProjectMembers
+import typings.gitlab.distTypesCoreServicesMod.ProjectMilestones
+import typings.gitlab.distTypesCoreServicesMod.ProjectSnippetAwardEmojis
+import typings.gitlab.distTypesCoreServicesMod.ProjectSnippetDiscussions
+import typings.gitlab.distTypesCoreServicesMod.ProjectSnippetNotes
+import typings.gitlab.distTypesCoreServicesMod.ProjectSnippets
+import typings.gitlab.distTypesCoreServicesMod.ProjectVariables
+import typings.gitlab.distTypesCoreServicesMod.Projects
+import typings.gitlab.distTypesCoreServicesMod.ProtectedBranches
+import typings.gitlab.distTypesCoreServicesMod.ProtectedTags
+import typings.gitlab.distTypesCoreServicesMod.PushRules
+import typings.gitlab.distTypesCoreServicesMod.ReleaseLinks
+import typings.gitlab.distTypesCoreServicesMod.Releases
+import typings.gitlab.distTypesCoreServicesMod.Repositories
+import typings.gitlab.distTypesCoreServicesMod.RepositoryFiles
+import typings.gitlab.distTypesCoreServicesMod.Runners
+import typings.gitlab.distTypesCoreServicesMod.Services
+import typings.gitlab.distTypesCoreServicesMod.Tags
+import typings.gitlab.distTypesCoreServicesMod.Triggers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Branches extends js.Object {
-  var Branches: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Branches]
+  var Branches: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Branches]
   var CommitDiscussions: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.CommitDiscussions
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.CommitDiscussions
   ]
-  var Commits: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Commits]
-  var ContainerRegistry: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ContainerRegistry]
-  var DeployKeys: Instantiable0[typings.gitlab.distSrcCoreServicesMod.DeployKeys]
-  var Deployments: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Deployments]
-  var Environments: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Environments]
+  var Commits: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Commits]
+  var ContainerRegistry: Instantiable0[typings.gitlab.distTypesCoreServicesMod.ContainerRegistry]
+  var DeployKeys: Instantiable0[typings.gitlab.distTypesCoreServicesMod.DeployKeys]
+  var Deployments: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Deployments]
+  var Environments: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Environments]
   var IssueAwardEmojis: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.IssueAwardEmojis
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.IssueAwardEmojis
   ]
   var IssueDiscussions: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.IssueDiscussions
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.IssueDiscussions
   ]
-  var IssueNotes: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distSrcCoreServicesMod.IssueNotes]
-  var Issues: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Issues]
-  var IssuesStatistics: Instantiable0[typings.gitlab.distSrcCoreServicesMod.IssuesStatistics]
-  var Jobs: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Jobs]
-  var Labels: Instantiable1[/* options */ BaseServiceOptions, typings.gitlab.distSrcCoreServicesMod.Labels]
+  var IssueNotes: Instantiable1[
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.IssueNotes
+  ]
+  var Issues: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Issues]
+  var IssuesStatistics: Instantiable0[typings.gitlab.distTypesCoreServicesMod.IssuesStatistics]
+  var Jobs: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Jobs]
+  var Labels: Instantiable1[
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.Labels
+  ]
   var MergeRequestAwardEmojis: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.MergeRequestAwardEmojis
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.MergeRequestAwardEmojis
   ]
   var MergeRequestDiscussions: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.MergeRequestDiscussions
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.MergeRequestDiscussions
   ]
   var MergeRequestNotes: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.MergeRequestNotes
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.MergeRequestNotes
   ]
-  var MergeRequests: Instantiable0[typings.gitlab.distSrcCoreServicesMod.MergeRequests]
-  var Packages: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Packages]
-  var PipelineScheduleVariables: Instantiable0[typings.gitlab.distSrcCoreServicesMod.PipelineScheduleVariables]
-  var PipelineSchedules: Instantiable0[typings.gitlab.distSrcCoreServicesMod.PipelineSchedules]
-  var Pipelines: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Pipelines]
+  var MergeRequests: Instantiable0[typings.gitlab.distTypesCoreServicesMod.MergeRequests]
+  var Packages: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Packages]
+  var PipelineScheduleVariables: Instantiable0[typings.gitlab.distTypesCoreServicesMod.PipelineScheduleVariables]
+  var PipelineSchedules: Instantiable0[typings.gitlab.distTypesCoreServicesMod.PipelineSchedules]
+  var Pipelines: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Pipelines]
   var ProjectAccessRequests: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectAccessRequests
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectAccessRequests
   ]
   var ProjectBadges: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectBadges
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectBadges
   ]
   var ProjectCustomAttributes: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectCustomAttributes
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectCustomAttributes
   ]
-  var ProjectHooks: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProjectHooks]
-  var ProjectImportExport: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProjectImportExport]
+  var ProjectHooks: Instantiable0[typings.gitlab.distTypesCoreServicesMod.ProjectHooks]
+  var ProjectImportExport: Instantiable0[typings.gitlab.distTypesCoreServicesMod.ProjectImportExport]
   var ProjectIssueBoards: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectIssueBoards
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectIssueBoards
   ]
   var ProjectMembers: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectMembers
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectMembers
   ]
   var ProjectMilestones: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectMilestones
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectMilestones
   ]
   var ProjectSnippetAwardEmojis: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectSnippetAwardEmojis
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectSnippetAwardEmojis
   ]
   var ProjectSnippetDiscussions: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectSnippetDiscussions
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectSnippetDiscussions
   ]
   var ProjectSnippetNotes: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectSnippetNotes
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectSnippetNotes
   ]
-  var ProjectSnippets: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProjectSnippets]
+  var ProjectSnippets: Instantiable0[typings.gitlab.distTypesCoreServicesMod.ProjectSnippets]
   var ProjectVariables: Instantiable1[
-    /* options */ BaseServiceOptions, 
-    typings.gitlab.distSrcCoreServicesMod.ProjectVariables
+    js.UndefOr[/* options */ BaseServiceOptions], 
+    typings.gitlab.distTypesCoreServicesMod.ProjectVariables
   ]
-  var Projects: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Projects]
-  var ProtectedBranches: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProtectedBranches]
-  var ProtectedTags: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ProtectedTags]
-  var PushRules: Instantiable0[typings.gitlab.distSrcCoreServicesMod.PushRules]
-  var ReleaseLinks: Instantiable0[typings.gitlab.distSrcCoreServicesMod.ReleaseLinks]
-  var Releases: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Releases]
-  var Repositories: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Repositories]
-  var RepositoryFiles: Instantiable0[typings.gitlab.distSrcCoreServicesMod.RepositoryFiles]
-  var Runners: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Runners]
-  var Services: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Services]
-  var Tags: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Tags]
-  var Triggers: Instantiable0[typings.gitlab.distSrcCoreServicesMod.Triggers]
+  var Projects: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Projects]
+  var ProtectedBranches: Instantiable0[typings.gitlab.distTypesCoreServicesMod.ProtectedBranches]
+  var ProtectedTags: Instantiable0[typings.gitlab.distTypesCoreServicesMod.ProtectedTags]
+  var PushRules: Instantiable0[typings.gitlab.distTypesCoreServicesMod.PushRules]
+  var ReleaseLinks: Instantiable0[typings.gitlab.distTypesCoreServicesMod.ReleaseLinks]
+  var Releases: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Releases]
+  var Repositories: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Repositories]
+  var RepositoryFiles: Instantiable0[typings.gitlab.distTypesCoreServicesMod.RepositoryFiles]
+  var Runners: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Runners]
+  var Services: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Services]
+  var Tags: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Tags]
+  var Triggers: Instantiable0[typings.gitlab.distTypesCoreServicesMod.Triggers]
 }
 
 object Anon_Branches {
   @scala.inline
   def apply(
     Branches: Instantiable0[Branches],
-    CommitDiscussions: Instantiable1[/* options */ BaseServiceOptions, CommitDiscussions],
+    CommitDiscussions: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], CommitDiscussions],
     Commits: Instantiable0[Commits],
     ContainerRegistry: Instantiable0[ContainerRegistry],
     DeployKeys: Instantiable0[DeployKeys],
     Deployments: Instantiable0[Deployments],
     Environments: Instantiable0[Environments],
-    IssueAwardEmojis: Instantiable1[/* options */ BaseServiceOptions, IssueAwardEmojis],
-    IssueDiscussions: Instantiable1[/* options */ BaseServiceOptions, IssueDiscussions],
-    IssueNotes: Instantiable1[/* options */ BaseServiceOptions, IssueNotes],
+    IssueAwardEmojis: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], IssueAwardEmojis],
+    IssueDiscussions: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], IssueDiscussions],
+    IssueNotes: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], IssueNotes],
     Issues: Instantiable0[Issues],
     IssuesStatistics: Instantiable0[IssuesStatistics],
     Jobs: Instantiable0[Jobs],
-    Labels: Instantiable1[/* options */ BaseServiceOptions, Labels],
-    MergeRequestAwardEmojis: Instantiable1[/* options */ BaseServiceOptions, MergeRequestAwardEmojis],
-    MergeRequestDiscussions: Instantiable1[/* options */ BaseServiceOptions, MergeRequestDiscussions],
-    MergeRequestNotes: Instantiable1[/* options */ BaseServiceOptions, MergeRequestNotes],
+    Labels: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], Labels],
+    MergeRequestAwardEmojis: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], MergeRequestAwardEmojis],
+    MergeRequestDiscussions: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], MergeRequestDiscussions],
+    MergeRequestNotes: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], MergeRequestNotes],
     MergeRequests: Instantiable0[MergeRequests],
     Packages: Instantiable0[Packages],
     PipelineScheduleVariables: Instantiable0[PipelineScheduleVariables],
     PipelineSchedules: Instantiable0[PipelineSchedules],
     Pipelines: Instantiable0[Pipelines],
-    ProjectAccessRequests: Instantiable1[/* options */ BaseServiceOptions, ProjectAccessRequests],
-    ProjectBadges: Instantiable1[/* options */ BaseServiceOptions, ProjectBadges],
-    ProjectCustomAttributes: Instantiable1[/* options */ BaseServiceOptions, ProjectCustomAttributes],
+    ProjectAccessRequests: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectAccessRequests],
+    ProjectBadges: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectBadges],
+    ProjectCustomAttributes: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectCustomAttributes],
     ProjectHooks: Instantiable0[ProjectHooks],
     ProjectImportExport: Instantiable0[ProjectImportExport],
-    ProjectIssueBoards: Instantiable1[/* options */ BaseServiceOptions, ProjectIssueBoards],
-    ProjectMembers: Instantiable1[/* options */ BaseServiceOptions, ProjectMembers],
-    ProjectMilestones: Instantiable1[/* options */ BaseServiceOptions, ProjectMilestones],
-    ProjectSnippetAwardEmojis: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetAwardEmojis],
-    ProjectSnippetDiscussions: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetDiscussions],
-    ProjectSnippetNotes: Instantiable1[/* options */ BaseServiceOptions, ProjectSnippetNotes],
+    ProjectIssueBoards: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectIssueBoards],
+    ProjectMembers: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectMembers],
+    ProjectMilestones: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectMilestones],
+    ProjectSnippetAwardEmojis: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectSnippetAwardEmojis],
+    ProjectSnippetDiscussions: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectSnippetDiscussions],
+    ProjectSnippetNotes: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectSnippetNotes],
     ProjectSnippets: Instantiable0[ProjectSnippets],
-    ProjectVariables: Instantiable1[/* options */ BaseServiceOptions, ProjectVariables],
+    ProjectVariables: Instantiable1[js.UndefOr[/* options */ BaseServiceOptions], ProjectVariables],
     Projects: Instantiable0[Projects],
     ProtectedBranches: Instantiable0[ProtectedBranches],
     ProtectedTags: Instantiable0[ProtectedTags],

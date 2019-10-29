@@ -1,6 +1,7 @@
 package typings.memoizeDashOne
 
 import typings.memoizeDashOne.memoizeDashOneMod.EqualityFn
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("memoize-one", JSImport.Namespace)
 @js.native
 object memoizeDashOneMod extends js.Object {
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](resultFn: T): T = js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](resultFn: T, isEqual: EqualityFn): T = js.native
-  type EqualityFn = js.Function3[/* a */ js.Any, /* b */ js.Any, /* index */ Double, Boolean]
+  def default[ResultFn /* <: js.ThisFunction1[/* this */ js.Any, /* repeated */ js.Any, ReturnType[ResultFn]] */](resultFn: ResultFn): ResultFn = js.native
+  def default[ResultFn /* <: js.ThisFunction1[/* this */ js.Any, /* repeated */ js.Any, ReturnType[ResultFn]] */](resultFn: ResultFn, isEqual: EqualityFn): ResultFn = js.native
+  type EqualityFn = js.Function2[/* newArgs */ js.Array[js.Any], /* lastArgs */ js.Array[js.Any], Boolean]
 }
 

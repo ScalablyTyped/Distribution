@@ -21,72 +21,72 @@ trait PageSetup extends js.Object {
   	 *
   	 * false by default
   	 */
-  var blackAndWhite: js.UndefOr[Boolean] = js.undefined
+  var blackAndWhite: Boolean
   /**
   	 * Where to place comments
   	 *
   	 * Default is `None`
   	 */
-  var cellComments: js.UndefOr[atEnd | asDisplayed | None] = js.undefined
+  var cellComments: atEnd | asDisplayed | None
   /**
   	 * Print with less quality (and ink)
   	 *
   	 * false by default
   	 */
-  var draft: js.UndefOr[Boolean] = js.undefined
+  var draft: Boolean
   /**
   	 * Where to show errors
   	 *
   	 * Default is `displayed`
   	 */
-  var errors: js.UndefOr[dash | blank | NA | displayed] = js.undefined
+  var errors: dash | blank | NA | displayed
   /**
   	 * Which number to use for the first page
   	 */
-  var firstPageNumber: js.UndefOr[Double] = js.undefined
+  var firstPageNumber: Double
   /**
   	 * How many pages high the sheet should print on to. Active when fitToPage is true
   	 *
   	 * Default is 1
   	 */
-  var fitToHeight: js.UndefOr[Double] = js.undefined
+  var fitToHeight: Double
   /**
   	 * Whether to use fitToWidth and fitToHeight or scale settings.
   	 *
   	 * Default is based on presence of these settings in the pageSetup object - if both are present,
   	 * scale wins (i.e. default will be false)
   	 */
-  var fitToPage: js.UndefOr[Boolean] = js.undefined
+  var fitToPage: Boolean
   /**
   	 * How many pages wide the sheet should print on to. Active when fitToPage is true
   	 *
   	 * Default is 1
   	 */
-  var fitToWidth: js.UndefOr[Double] = js.undefined
+  var fitToWidth: Double
   /**
   	 * 	Whether to center the sheet data horizontally, `false` by default
   	 */
-  var horizontalCentered: js.UndefOr[Boolean] = js.undefined
+  var horizontalCentered: Boolean
   /**
   	 * Horizontal Dots per Inch. Default value is 4294967295
   	 */
-  var horizontalDpi: js.UndefOr[Double] = js.undefined
+  var horizontalDpi: Double
   /**
   	 * Whitespace on the borders of the page. Units are inches.
   	 */
-  var margins: js.UndefOr[Margins] = js.undefined
+  var margins: Margins
   /**
   	 * Orientation of the page - i.e. taller (`'portrait'`) or wider (`'landscape'`).
   	 *
   	 * `'portrait'` by default
   	 */
-  var orientation: js.UndefOr[portrait | landscape] = js.undefined
+  var orientation: portrait | landscape
   /**
   	 * Which order to print the pages.
   	 *
   	 * Default is `downThenOver`
   	 */
-  var pageOrder: js.UndefOr[downThenOver | overThenDown] = js.undefined
+  var pageOrder: downThenOver | overThenDown
   /**
   	 * 	What paper size to use (see below)
   	 *
@@ -106,86 +106,71 @@ trait PageSetup extends js.Object {
   	 * | Double Japan Postcard Rotated |  `82`       |
   	 * | 16K 197x273 mm                |  `119`      |
   	 */
-  var paperSize: js.UndefOr[PaperSize] = js.undefined
+  var paperSize: PaperSize
   /**
   	 * Set Print Area for a sheet, e.g. `'A1:G20'`
   	 */
-  var printArea: js.UndefOr[String] = js.undefined
+  var printArea: String
+  /**
+  	 * Repeat specific columns on every printed page, e.g. `'A:C'`
+  	 */
+  var printTitlesColumn: String
   /**
   	 * Repeat specific rows on every printed page, e.g. `'1:3'`
   	 */
-  var printTitlesRow: js.UndefOr[String] = js.undefined
+  var printTitlesRow: String
   /**
   	 * Percentage value to increase or reduce the size of the print. Active when fitToPage is false
   	 *
   	 * Default is 100
   	 */
-  var scale: js.UndefOr[Double] = js.undefined
+  var scale: Double
   /**
   	 * Whether to show grid lines, `false` by default
   	 */
-  var showGridLines: js.UndefOr[Boolean] = js.undefined
+  var showGridLines: Boolean
   /**
   	 * Whether to show the row numbers and column letters, `false` by default
   	 */
-  var showRowColHeaders: js.UndefOr[Boolean] = js.undefined
+  var showRowColHeaders: Boolean
   /**
   	 * 	Whether to center the sheet data vertically, `false` by default
   	 */
-  var verticalCentered: js.UndefOr[Boolean] = js.undefined
+  var verticalCentered: Boolean
   /**
   	 * Vertical Dots per Inch. Default value is 4294967295
   	 */
-  var verticalDpi: js.UndefOr[Double] = js.undefined
+  var verticalDpi: Double
 }
 
 object PageSetup {
   @scala.inline
   def apply(
-    blackAndWhite: js.UndefOr[Boolean] = js.undefined,
-    cellComments: atEnd | asDisplayed | None = null,
-    draft: js.UndefOr[Boolean] = js.undefined,
-    errors: dash | blank | NA | displayed = null,
-    firstPageNumber: Int | Double = null,
-    fitToHeight: Int | Double = null,
-    fitToPage: js.UndefOr[Boolean] = js.undefined,
-    fitToWidth: Int | Double = null,
-    horizontalCentered: js.UndefOr[Boolean] = js.undefined,
-    horizontalDpi: Int | Double = null,
-    margins: Margins = null,
-    orientation: portrait | landscape = null,
-    pageOrder: downThenOver | overThenDown = null,
-    paperSize: PaperSize = null,
-    printArea: String = null,
-    printTitlesRow: String = null,
-    scale: Int | Double = null,
-    showGridLines: js.UndefOr[Boolean] = js.undefined,
-    showRowColHeaders: js.UndefOr[Boolean] = js.undefined,
-    verticalCentered: js.UndefOr[Boolean] = js.undefined,
-    verticalDpi: Int | Double = null
+    blackAndWhite: Boolean,
+    cellComments: atEnd | asDisplayed | None,
+    draft: Boolean,
+    errors: dash | blank | NA | displayed,
+    firstPageNumber: Double,
+    fitToHeight: Double,
+    fitToPage: Boolean,
+    fitToWidth: Double,
+    horizontalCentered: Boolean,
+    horizontalDpi: Double,
+    margins: Margins,
+    orientation: portrait | landscape,
+    pageOrder: downThenOver | overThenDown,
+    paperSize: PaperSize,
+    printArea: String,
+    printTitlesColumn: String,
+    printTitlesRow: String,
+    scale: Double,
+    showGridLines: Boolean,
+    showRowColHeaders: Boolean,
+    verticalCentered: Boolean,
+    verticalDpi: Double
   ): PageSetup = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blackAndWhite)) __obj.updateDynamic("blackAndWhite")(blackAndWhite)
-    if (cellComments != null) __obj.updateDynamic("cellComments")(cellComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(draft)) __obj.updateDynamic("draft")(draft)
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (firstPageNumber != null) __obj.updateDynamic("firstPageNumber")(firstPageNumber.asInstanceOf[js.Any])
-    if (fitToHeight != null) __obj.updateDynamic("fitToHeight")(fitToHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitToPage)) __obj.updateDynamic("fitToPage")(fitToPage)
-    if (fitToWidth != null) __obj.updateDynamic("fitToWidth")(fitToWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalCentered)) __obj.updateDynamic("horizontalCentered")(horizontalCentered)
-    if (horizontalDpi != null) __obj.updateDynamic("horizontalDpi")(horizontalDpi.asInstanceOf[js.Any])
-    if (margins != null) __obj.updateDynamic("margins")(margins)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (pageOrder != null) __obj.updateDynamic("pageOrder")(pageOrder.asInstanceOf[js.Any])
-    if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize)
-    if (printArea != null) __obj.updateDynamic("printArea")(printArea)
-    if (printTitlesRow != null) __obj.updateDynamic("printTitlesRow")(printTitlesRow)
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines)
-    if (!js.isUndefined(showRowColHeaders)) __obj.updateDynamic("showRowColHeaders")(showRowColHeaders)
-    if (!js.isUndefined(verticalCentered)) __obj.updateDynamic("verticalCentered")(verticalCentered)
-    if (verticalDpi != null) __obj.updateDynamic("verticalDpi")(verticalDpi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blackAndWhite = blackAndWhite, cellComments = cellComments.asInstanceOf[js.Any], draft = draft, errors = errors.asInstanceOf[js.Any], firstPageNumber = firstPageNumber, fitToHeight = fitToHeight, fitToPage = fitToPage, fitToWidth = fitToWidth, horizontalCentered = horizontalCentered, horizontalDpi = horizontalDpi, margins = margins, orientation = orientation.asInstanceOf[js.Any], pageOrder = pageOrder.asInstanceOf[js.Any], paperSize = paperSize, printArea = printArea, printTitlesColumn = printTitlesColumn, printTitlesRow = printTitlesRow, scale = scale, showGridLines = showGridLines, showRowColHeaders = showRowColHeaders, verticalCentered = verticalCentered, verticalDpi = verticalDpi)
+  
     __obj.asInstanceOf[PageSetup]
   }
 }

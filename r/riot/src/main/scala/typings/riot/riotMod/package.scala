@@ -5,11 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object riotMod {
-  import org.scalablytyped.runtime.StringDictionary
-  import typings.std.Element
+  import typings.std.Map
+  import typings.std.Set
 
-  type NestedTags = StringDictionary[TagInstance | js.Array[TagInstance]]
-  type ObservableCallback = js.Function1[/* repeated */ js.Any, js.Any]
-  type TagOpts = StringDictionary[js.Any]
-  type TagRefs = StringDictionary[TagInstance | Element]
+  type ComponentEnhancer = js.Function1[/* component */ RiotComponent[js.Any, js.Any], RiotComponent[js.Any, js.Any]]
+  type InstalledPluginsSet = Set[ComponentEnhancer]
+  type RegisteredComponentsMap = Map[String, js.Function0[RiotComponent[js.Object, js.Object]]]
 }

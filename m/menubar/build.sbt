@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "menubar"
-version := "5.1.0-dt-20190322Z-59d66f"
+version := "7.0.0-60211b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

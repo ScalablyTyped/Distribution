@@ -1,7 +1,7 @@
 
 # Scala.js typings for which-pm
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Detects what package manager was used for installation
@@ -24,7 +24,7 @@ Detects what package manager was used for installation
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,32 +1,31 @@
 package typings.exceljs.exceljsMod
 
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Style extends js.Object {
-  var alignment: js.UndefOr[Alignment] = js.undefined
-  var border: js.UndefOr[Borders] = js.undefined
-  var fill: js.UndefOr[Fill] = js.undefined
-  var font: js.UndefOr[Font] = js.undefined
-  var numFmt: js.UndefOr[String] = js.undefined
+  var alignment: Partial[Alignment]
+  var border: Partial[Borders]
+  var fill: Fill
+  var font: Partial[Font]
+  var numFmt: String
+  var protection: Partial[Protection]
 }
 
 object Style {
   @scala.inline
   def apply(
-    alignment: Alignment = null,
-    border: Borders = null,
-    fill: Fill = null,
-    font: Font = null,
-    numFmt: String = null
+    alignment: Partial[Alignment],
+    border: Partial[Borders],
+    fill: Fill,
+    font: Partial[Font],
+    numFmt: String,
+    protection: Partial[Protection]
   ): Style = {
-    val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (numFmt != null) __obj.updateDynamic("numFmt")(numFmt)
+    val __obj = js.Dynamic.literal(alignment = alignment, border = border, fill = fill, font = font, numFmt = numFmt, protection = protection)
+  
     __obj.asInstanceOf[Style]
   }
 }

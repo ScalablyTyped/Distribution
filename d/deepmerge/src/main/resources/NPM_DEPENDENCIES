@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "deepmerge" : "4.2.1"
+      "deepmerge" : "4.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "deepmerge" : "4.2.1"
+      "deepmerge" : "4.2.2"
     }
   ],
   "compile-devDependencies" : [

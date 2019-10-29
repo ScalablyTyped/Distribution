@@ -1,7 +1,7 @@
 
 # Scala.js typings for morphdom
 
-Typings are for version 2.3
+Typings are for version 2.5.10
 
 ## Library description:
 Morph a DOM tree to another DOM tree (no virtual DOM needed)
@@ -24,7 +24,7 @@ Morph a DOM tree to another DOM tree (no virtual DOM needed)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

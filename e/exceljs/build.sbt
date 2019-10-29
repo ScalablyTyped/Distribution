@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "exceljs"
-version := "0.5-dt-20190212Z-3e686d"
+version := "3.3.0-05f0f5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

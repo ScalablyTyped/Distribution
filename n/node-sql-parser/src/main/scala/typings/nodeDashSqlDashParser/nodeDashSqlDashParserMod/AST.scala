@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod.Insert_Replace
   - typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod.Update
   - typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod.Delete
+  - typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod.Alter
 */
 trait AST extends js.Object
 

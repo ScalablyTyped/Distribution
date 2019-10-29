@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-select/src/components", "components")
 @js.native
 object components
-  extends TopLevel[Required[SelectComponents[js.Any]]]
+  extends TopLevel[Required[DeepNonNullable[SelectComponents[js.Any]]]]
 

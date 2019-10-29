@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "delegated-events" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "delegated-events" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

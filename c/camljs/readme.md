@@ -1,6 +1,7 @@
 
 # Scala.js typings for camljs
 
+Typings are for version 2.12.0
 
 ## Library description:
 Library for creating SharePoint CAML queries client-side. For JSOM, REST or SPServices.
@@ -23,7 +24,7 @@ Library for creating SharePoint CAML queries client-side. For JSOM, REST or SPSe
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

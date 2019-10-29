@@ -1,0 +1,21 @@
+package typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Flags extends js.Object {
+  var auth_immutable: Boolean
+  var auth_required: Boolean
+  var auth_revocable: Boolean
+}
+
+object Flags {
+  @scala.inline
+  def apply(auth_immutable: Boolean, auth_required: Boolean, auth_revocable: Boolean): Flags = {
+    val __obj = js.Dynamic.literal(auth_immutable = auth_immutable, auth_required = auth_required, auth_revocable = auth_revocable)
+  
+    __obj.asInstanceOf[Flags]
+  }
+}
+

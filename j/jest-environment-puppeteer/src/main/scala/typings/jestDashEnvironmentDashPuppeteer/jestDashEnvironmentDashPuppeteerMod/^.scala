@@ -1,6 +1,8 @@
 package typings.jestDashEnvironmentDashPuppeteer.jestDashEnvironmentDashPuppeteerMod
 
+import typings.atJestFakeDashTimers.atJestFakeDashTimersMod.JestFakeTimers
 import typings.atJestTypes.buildConfigMod.ProjectConfig
+import typings.jestDashMock.jestDashMockMod.ModuleMocker
 import typings.node.vmMod.Context
 import typings.node.vmMod.Script
 import scala.scalajs.js
@@ -15,11 +17,11 @@ class ^ protected () extends PuppeteerEnvironment {
   /* CompleteClass */
   override var context: Context | Null = js.native
   /* CompleteClass */
-  override var fakeTimers: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FakeTimers<Timer> */ js.Any) | Null = js.native
+  override var fakeTimers: JestFakeTimers[Timer] | Null = js.native
   /* CompleteClass */
   override var global: Global = js.native
   /* CompleteClass */
-  override var moduleMocker: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModuleMocker */ js.Any) | Null = js.native
+  override var moduleMocker: ModuleMocker | Null = js.native
   /* CompleteClass */
   override def runScript(script: Script): js.Any = js.native
   /**

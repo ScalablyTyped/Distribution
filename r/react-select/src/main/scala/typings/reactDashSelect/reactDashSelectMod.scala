@@ -1,5 +1,6 @@
 package typings.reactDashSelect
 
+import typings.reactDashSelect.srcComponentsMod.DeepNonNullable
 import typings.reactDashSelect.srcComponentsMod.SelectComponents
 import typings.reactDashSelect.srcFiltersMod.Config
 import typings.reactDashSelect.srcFiltersMod.Option
@@ -18,7 +19,7 @@ object reactDashSelectMod extends js.Object {
   @js.native
   class default[OptionType /* <: OptionTypeBase */, T /* <: typings.reactDashSelect.srcSelectMod.default[OptionType] */] () extends StateManager[OptionType, T]
   
-  val components: Required[SelectComponents[js.Any]] = js.native
+  val components: Required[DeepNonNullable[SelectComponents[js.Any]]] = js.native
   def createFilter(): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = js.native
   def createFilter(config: Config): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = js.native
   def mergeStyles(source: StylesConfig, target: StylesConfig): StylesConfig = js.native

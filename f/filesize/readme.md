@@ -1,7 +1,7 @@
 
 # Scala.js typings for filesize
 
-Typings are for version 4.2
+Typings are for version 5.0.3
 
 ## Library description:
 JavaScript library to generate a human readable String describing the file size
@@ -24,7 +24,7 @@ JavaScript library to generate a human readable String describing the file size
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

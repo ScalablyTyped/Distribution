@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jest-each" : "24.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jest-each" : "24.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

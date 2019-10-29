@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xhr2-cookies" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xhr2-cookies" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

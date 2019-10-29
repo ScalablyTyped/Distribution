@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "getopts" : "2.2.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "getopts" : "2.2.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

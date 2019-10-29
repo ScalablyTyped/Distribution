@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-pug"
-version := "3.0-dt-20180723Z-e9647c"
+version := "4.0.2-46e68c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,6 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "koa" % "2.x-dt-20191016Z-1ebbb7",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "pug" % "2.0-dt-20190322Z-63fae4",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-532a00",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")

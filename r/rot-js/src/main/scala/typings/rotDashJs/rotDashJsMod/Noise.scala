@@ -1,22 +1,22 @@
 package typings.rotDashJs.rotDashJsMod
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.rotDashJs.libNoiseSimplexMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
-
-trait Noise extends js.Object {
-  def get(x: Double, y: Double): Double
-}
 
 @JSImport("rot-js", "Noise")
 @js.native
 object Noise extends js.Object {
   @js.native
-  class Simplex () extends Noise {
+  /**
+    * @param gradients Random gradients
+    */
+  class Simplex () extends default {
     def this(gradients: Double) = this()
-    /* CompleteClass */
-    override def get(x: Double, y: Double): Double = js.native
   }
   
+  var Simplex: Instantiable1[js.UndefOr[/* gradients */ Double], default] = js.native
 }
 

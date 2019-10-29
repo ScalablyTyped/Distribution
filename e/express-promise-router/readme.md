@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-promise-router
 
-Typings are for version 2.0
+Typings are for version 3.0.3
 
 ## Library description:
 A lightweight wrapper for Express 4's Router that allows middleware to return promises
@@ -24,7 +24,7 @@ A lightweight wrapper for Express 4's Router that allows middleware to return pr
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

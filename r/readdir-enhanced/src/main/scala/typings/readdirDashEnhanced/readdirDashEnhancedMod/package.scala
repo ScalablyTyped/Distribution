@@ -8,7 +8,7 @@ package object readdirDashEnhancedMod {
   import typings.node.NodeJS.ErrnoException
 
   type Callback[T] = js.Function2[/* err */ ErrnoException | Null, /* result */ T, Unit]
-  type CallbackEntry = Callback[js.Array[Entry]]
-  type CallbackString = Callback[js.Array[String]]
-  type FilterFunction = js.Function1[/* stat */ Entry, Boolean]
+  type FilterFunction = js.Function1[/* stat */ Stats, js.Any]
+  type PathsArrayCallback = Callback[js.Array[String]]
+  type StatsArrayCallback = Callback[js.Array[Stats]]
 }

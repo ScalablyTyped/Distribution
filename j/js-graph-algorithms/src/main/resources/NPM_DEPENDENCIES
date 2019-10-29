@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "js-graph-algorithms" : "1.0.18"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "js-graph-algorithms" : "1.0.18"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

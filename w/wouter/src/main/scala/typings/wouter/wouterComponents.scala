@@ -13,8 +13,6 @@ object wouterComponents extends wouterProps {
   @scala.inline
   def Redirect: ComponentType[RedirectProps] = typings.wouter.wouterMod.Redirect.asInstanceOf[typings.react.reactMod.ComponentType[RedirectProps]]
   @scala.inline
-  def Route: ComponentType[RouteProps] = typings.wouter.wouterMod.Route.asInstanceOf[typings.react.reactMod.ComponentType[RouteProps]]
-  @scala.inline
   def Router: ComponentType[Partial[RouterProps] with Anon_Children] = typings.wouter.wouterMod.Router.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.std.Partial[typings.wouter.wouterMod.RouterProps] with typings.wouter.Anon_Children]]
   @scala.inline

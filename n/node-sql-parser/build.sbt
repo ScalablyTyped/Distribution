@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-sql-parser"
-version := "1.0-dt-20190128Z-2530f7"
+version := "1.6.6-3081a0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

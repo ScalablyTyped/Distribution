@@ -1,27 +1,40 @@
 package typings.reactDashSortableDashPane
 
+import typings.reactDashSortableDashPane.reactDashSortableDashPaneMod.PaneDirection
+import typings.reactDashSortableDashPane.reactDashSortableDashPaneMod.PaneMode
+import typings.reactDashSortableDashPane.reactDashSortableDashPaneMod.PaneResizeDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashSortableDashPaneStrings {
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait add extends PaneMode
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait horizontal extends PaneDirection
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait remove extends PaneMode
   
   @js.native
-  sealed trait xy extends js.Object
+  sealed trait vertical extends PaneDirection
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait x extends PaneResizeDirection
+  
+  @js.native
+  sealed trait xy extends PaneResizeDirection
+  
+  @js.native
+  sealed trait y extends PaneResizeDirection
   
   @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
+  def remove: remove = "remove".asInstanceOf[remove]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline

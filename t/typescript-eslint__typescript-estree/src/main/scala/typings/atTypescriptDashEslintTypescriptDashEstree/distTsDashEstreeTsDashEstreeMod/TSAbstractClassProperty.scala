@@ -15,6 +15,7 @@ object TSAbstractClassProperty {
   @scala.inline
   def apply(
     computed: Boolean,
+    declare: Boolean,
     key: PropertyName,
     loc: SourceLocation,
     range: Range,
@@ -29,7 +30,7 @@ object TSAbstractClassProperty {
     typeAnnotation: TSTypeAnnotation = null,
     value: Expression = null
   ): TSAbstractClassProperty = {
-    val __obj = js.Dynamic.literal(computed = computed, key = key, loc = loc, range = range, static = static)
+    val __obj = js.Dynamic.literal(computed = computed, declare = declare, key = key, loc = loc, range = range, static = static)
     __obj.updateDynamic("type")(`type`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)

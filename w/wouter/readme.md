@@ -1,7 +1,7 @@
 
 # Scala.js typings for wouter
 
-Typings are for version 2.0
+Typings are for version 2.3.1
 
 ## Library description:
 A minimalistic routing for React. Nothing extra, just HOOKS.
@@ -24,7 +24,7 @@ A minimalistic routing for React. Nothing extra, just HOOKS.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

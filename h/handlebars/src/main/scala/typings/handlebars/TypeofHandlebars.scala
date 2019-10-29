@@ -2,11 +2,13 @@ package typings.handlebars
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.handlebars.Handlebars.HelperDeclareSpec
 import typings.handlebars.Handlebars.HelperDelegate
 import typings.handlebars.Handlebars.ParseOptions
 import typings.handlebars.Handlebars.Template
+import typings.handlebars.hbs.AST.Node
 import typings.handlebars.hbs.AST.Program
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +17,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeofHandlebars extends js.Object {
   val AST: TypeofAST = js.native
+  var Exception: Instantiable2[
+    /* message */ String, 
+    js.UndefOr[/* node */ Node], 
+    typings.handlebars.Handlebars.Exception
+  ] = js.native
   var SafeString: Instantiable1[/* str */ String, typings.handlebars.Handlebars.SafeString] = js.native
   val Utils: TypeofUtils = js.native
   val VM: TypeofVM = js.native
@@ -24,7 +31,6 @@ trait TypeofHandlebars extends js.Object {
   val logger: Logger = js.native
   val partials: StringDictionary[js.Any] = js.native
   val templates: HandlebarsTemplates = js.native
-  def Exception(message: String): Unit = js.native
   def K(): Unit = js.native
   def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_] = js.native
   def compile[T](input: js.Any): HandlebarsTemplateDelegate[T] = js.native
@@ -35,6 +41,8 @@ trait TypeofHandlebars extends js.Object {
   def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof Handlebars */ js.Any = js.native
   def parse(input: String): Program = js.native
   def parse(input: String, options: ParseOptions): Program = js.native
+  def parseWithoutProcessing(input: String): Program = js.native
+  def parseWithoutProcessing(input: String, options: ParseOptions): Program = js.native
   def precompile(input: js.Any): TemplateSpecification = js.native
   def precompile(input: js.Any, options: PrecompileOptions): TemplateSpecification = js.native
   def registerDecorator(name: String, fn: js.Function): Unit = js.native

@@ -1,5 +1,6 @@
 package typings.exceljs.exceljsMod
 
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,40 +9,38 @@ trait WorksheetProperties extends js.Object {
   /**
   	 * Default row height (default: 15)
   	 */
-  var defaultRowHeight: js.UndefOr[Double] = js.undefined
+  var defaultRowHeight: Double
   /**
   	 * default: 55
   	 */
-  var dyDescent: js.UndefOr[Double] = js.undefined
+  var dyDescent: Double
   /**
   	 * The worksheet column outline level (default: 0)
   	 */
-  var outlineLevelCol: js.UndefOr[Double] = js.undefined
+  var outlineLevelCol: Double
   /**
   	 * The worksheet row outline level (default: 0)
   	 */
-  var outlineLevelRow: js.UndefOr[Double] = js.undefined
+  var outlineLevelRow: Double
+  var showGridLines: Boolean
   /**
   	 * Color of the tab
   	 */
-  var tabColor: js.UndefOr[Color] = js.undefined
+  var tabColor: Partial[Color]
 }
 
 object WorksheetProperties {
   @scala.inline
   def apply(
-    defaultRowHeight: Int | Double = null,
-    dyDescent: Int | Double = null,
-    outlineLevelCol: Int | Double = null,
-    outlineLevelRow: Int | Double = null,
-    tabColor: Color = null
+    defaultRowHeight: Double,
+    dyDescent: Double,
+    outlineLevelCol: Double,
+    outlineLevelRow: Double,
+    showGridLines: Boolean,
+    tabColor: Partial[Color]
   ): WorksheetProperties = {
-    val __obj = js.Dynamic.literal()
-    if (defaultRowHeight != null) __obj.updateDynamic("defaultRowHeight")(defaultRowHeight.asInstanceOf[js.Any])
-    if (dyDescent != null) __obj.updateDynamic("dyDescent")(dyDescent.asInstanceOf[js.Any])
-    if (outlineLevelCol != null) __obj.updateDynamic("outlineLevelCol")(outlineLevelCol.asInstanceOf[js.Any])
-    if (outlineLevelRow != null) __obj.updateDynamic("outlineLevelRow")(outlineLevelRow.asInstanceOf[js.Any])
-    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
+    val __obj = js.Dynamic.literal(defaultRowHeight = defaultRowHeight, dyDescent = dyDescent, outlineLevelCol = outlineLevelCol, outlineLevelRow = outlineLevelRow, showGridLines = showGridLines, tabColor = tabColor)
+  
     __obj.asInstanceOf[WorksheetProperties]
   }
 }

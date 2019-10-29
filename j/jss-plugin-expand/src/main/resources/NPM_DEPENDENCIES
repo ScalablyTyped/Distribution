@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jss-plugin-expand" : "10.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jss-plugin-expand" : "10.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

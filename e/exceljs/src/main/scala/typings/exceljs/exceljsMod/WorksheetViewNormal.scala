@@ -11,19 +11,18 @@ trait WorksheetViewNormal extends js.Object {
   /**
   	 * Controls the view state
   	 */
-  var state: js.UndefOr[normal] = js.undefined
+  var state: normal
   /**
   	 * Presentation style
   	 */
-  var style: js.UndefOr[pageBreakPreview | pageLayout] = js.undefined
+  var style: pageBreakPreview | pageLayout
 }
 
 object WorksheetViewNormal {
   @scala.inline
-  def apply(state: normal = null, style: pageBreakPreview | pageLayout = null): WorksheetViewNormal = {
-    val __obj = js.Dynamic.literal()
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+  def apply(state: normal, style: pageBreakPreview | pageLayout): WorksheetViewNormal = {
+    val __obj = js.Dynamic.literal(state = state, style = style.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[WorksheetViewNormal]
   }
 }

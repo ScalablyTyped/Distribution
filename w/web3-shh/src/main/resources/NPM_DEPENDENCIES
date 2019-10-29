@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "web3-shh" : "1.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "web3-shh" : "1.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fs-tree-diff" : "0.5.9"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fs-tree-diff" : "0.5.9"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

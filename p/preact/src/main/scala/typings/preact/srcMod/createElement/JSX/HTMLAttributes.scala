@@ -105,6 +105,7 @@ trait HTMLAttributes
   var muted: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var noValidate: js.UndefOr[Boolean] = js.undefined
+  var nonce: js.UndefOr[String] = js.undefined
   var open: js.UndefOr[Boolean] = js.undefined
   var optimum: js.UndefOr[Double] = js.undefined
   var pattern: js.UndefOr[String] = js.undefined
@@ -255,6 +256,7 @@ object HTMLAttributes {
     muted: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     noValidate: js.UndefOr[Boolean] = js.undefined,
+    nonce: String = null,
     open: js.UndefOr[Boolean] = js.undefined,
     optimum: Int | Double = null,
     pattern: String = null,
@@ -402,6 +404,7 @@ object HTMLAttributes {
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (optimum != null) __obj.updateDynamic("optimum")(optimum.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)

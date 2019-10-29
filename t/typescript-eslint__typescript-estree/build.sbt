@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typescript-eslint__typescript-estree"
-version := "2.5.0-ef76a0"
+version := "2.6.0-f8d266"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

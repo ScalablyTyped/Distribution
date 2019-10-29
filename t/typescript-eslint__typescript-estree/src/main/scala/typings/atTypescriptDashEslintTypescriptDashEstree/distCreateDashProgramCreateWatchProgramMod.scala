@@ -20,11 +20,11 @@ object distCreateDashProgramCreateWatchProgramMod extends js.Object {
   /**
     * Calculate project environments using options provided by consumer and paths from config
     * @param code The code being linted
-    * @param filePath The path of the file being parsed
+    * @param filePathIn The path of the file being parsed
     * @param extra.tsconfigRootDir The root directory for relative tsconfig paths
     * @param extra.projects Provided tsconfig paths
     * @returns The programs corresponding to the supplied tsconfig paths
     */
-  def getProgramsForProjects(code: String, filePath: String, extra: Extra): js.Array[Program] = js.native
+  def getProgramsForProjects(code: String, filePathIn: String, extra: Extra): js.Array[Program] = js.native
 }
 

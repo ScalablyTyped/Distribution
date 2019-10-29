@@ -1,7 +1,7 @@
 
 # Scala.js typings for bem-cn
 
-Typings are for version 2.1
+Typings are for version 3.0.1
 
 ## Library description:
 Friendly BEM class names generator, greate for React
@@ -24,7 +24,7 @@ Friendly BEM class names generator, greate for React
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

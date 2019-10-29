@@ -1,25 +1,35 @@
 package typings.gitlab
 
-import typings.gitlab.distSrcCoreServicesMod.AccessLevel
+import typings.gitlab.distTypesCoreServicesMod.AccessLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object gitlabNumbers {
   @js.native
-  sealed trait `10` extends AccessLevel
+  sealed trait `10`
+    extends AccessLevel
+       with typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
   
   @js.native
-  sealed trait `20` extends AccessLevel
+  sealed trait `20`
+    extends AccessLevel
+       with typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
   
   @js.native
-  sealed trait `30` extends AccessLevel
+  sealed trait `30`
+    extends AccessLevel
+       with typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
   
   @js.native
-  sealed trait `40` extends AccessLevel
+  sealed trait `40`
+    extends AccessLevel
+       with typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
   
   @js.native
-  sealed trait `50` extends AccessLevel
+  sealed trait `50`
+    extends AccessLevel
+       with typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
   
   @js.native
   sealed trait `true` extends js.Object

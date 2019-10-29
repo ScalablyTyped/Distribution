@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-webpack-tags-plugin
 
-Typings are for version 2.0
+Typings are for version 2.0.17
 
 ## Library description:
 lets you define html tags to inject with html-webpack-plugin
@@ -24,7 +24,7 @@ lets you define html tags to inject with html-webpack-plugin
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

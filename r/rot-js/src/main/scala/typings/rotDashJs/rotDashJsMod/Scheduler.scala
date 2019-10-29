@@ -1,35 +1,28 @@
 package typings.rotDashJs.rotDashJsMod
 
-import typings.rotDashJs.rotDashJsMod.Scheduler.Action
+import org.scalablytyped.runtime.Instantiable0
+import typings.rotDashJs.libSchedulerActionMod.default
+import typings.rotDashJs.libSchedulerSpeedMod.SpeedActor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rot-js", "Scheduler")
 @js.native
-class Scheduler () extends js.Object {
-  def add(item: js.Any, repeat: Boolean): Scheduler = js.native
-  def add(item: js.Any, repeat: Boolean, time: Double): Scheduler = js.native
-  def clear(): Scheduler = js.native
-  def getTime(): Double = js.native
-  def getTimeOf(item: js.Any): Double = js.native
-  def next(): js.Any = js.native
-  def remove(item: js.Any): js.Any = js.native
-}
-
-@JSImport("rot-js", "Scheduler")
-@js.native
 object Scheduler extends js.Object {
   @js.native
-  class Action () extends Scheduler {
-    def setDuration(time: Double): Action = js.native
-  }
+  class Action[T] () extends default[T]
   
   @js.native
-  class Simple () extends Scheduler
+  class Simple[T] ()
+    extends typings.rotDashJs.libSchedulerSimpleMod.default[T]
   
   @js.native
-  class Speed () extends Scheduler
+  class Speed[T /* <: SpeedActor */] ()
+    extends typings.rotDashJs.libSchedulerSpeedMod.default[T]
   
+  var Action: Instantiable0[default[js.Object]] = js.native
+  var Simple: Instantiable0[typings.rotDashJs.libSchedulerSimpleMod.default[js.Object]] = js.native
+  var Speed: Instantiable0[typings.rotDashJs.libSchedulerSpeedMod.default[SpeedActor]] = js.native
 }
 

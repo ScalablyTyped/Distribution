@@ -1,27 +1,20 @@
 package typings.exceljs.exceljsMod
 
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BorderDiagonal extends Border {
-  var down: js.UndefOr[Boolean] = js.undefined
-  var up: js.UndefOr[Boolean] = js.undefined
+  var down: Boolean
+  var up: Boolean
 }
 
 object BorderDiagonal {
   @scala.inline
-  def apply(
-    color: Color = null,
-    down: js.UndefOr[Boolean] = js.undefined,
-    style: BorderStyle = null,
-    up: js.UndefOr[Boolean] = js.undefined
-  ): BorderDiagonal = {
-    val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(down)) __obj.updateDynamic("down")(down)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(up)) __obj.updateDynamic("up")(up)
+  def apply(color: Partial[Color], down: Boolean, style: BorderStyle, up: Boolean): BorderDiagonal = {
+    val __obj = js.Dynamic.literal(color = color, down = down, style = style, up = up)
+  
     __obj.asInstanceOf[BorderDiagonal]
   }
 }

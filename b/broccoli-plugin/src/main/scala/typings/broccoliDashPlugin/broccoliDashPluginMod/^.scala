@@ -1,42 +1,28 @@
 package typings.broccoliDashPlugin.broccoliDashPluginMod
 
-import typings.broccoliDashPlugin.Anon_Build
+import typings.broccoliDashNodeDashApi.broccoliDashNodeDashApiMod.FeatureSet
+import typings.broccoliDashNodeDashApi.broccoliDashNodeDashApiMod.InputNode
+import typings.broccoliDashNodeDashApi.broccoliDashNodeDashApiMod.TransformNodeInfo
+import typings.broccoliDashPlugin.distInterfacesMod.PluginOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("broccoli-plugin", JSImport.Namespace)
 @js.native
-class ^ protected () extends BroccoliPlugin {
-  def this(inputNodes: js.Array[BroccoliNode]) = this()
-  def this(inputNodes: js.Array[BroccoliNode], options: BroccoliPluginOptions) = this()
+class ^ protected () extends Plugin {
+  def this(inputNodes: js.Array[InputNode]) = this()
+  def this(inputNodes: js.Array[InputNode], options: PluginOptions) = this()
   /**
-    * An array of paths on disk corresponding to each node in `inputNodes`.
-    * Your plugin will read files from these paths.
+    The node's feature set, indicating the API version
     */
   /* CompleteClass */
-  override val inputPaths: js.Array[String] = js.native
+  override var __broccoliFeatures__ : FeatureSet = js.native
   /**
-    * The path on disk corresponding to this plugin instance (this node).
-    * Your plugin will write files to this path. This directory is emptied by
-    * Broccoli before each build, unless the `persistentOutput` options is
-    * `true`.
+    A function to be called by the Builder, taking the Builder's feature set as
+    an argument and returning a `NodeInfo` object
     */
   /* CompleteClass */
-  override val outputPath: String = js.native
-  /**
-    * Override this method in your subclass. It will be called on each
-    * (re-)build. All paths stay the same between builds.
-    * To perform asynchronous work, return a promise.
-    */
-  /* CompleteClass */
-  override def build(): Unit | js.Promise[_] = js.native
-  /**
-    * Advanced usage only.
-    * Return the object on which Broccoli will call `obj.build()`. Called
-    * once after instantiation. By default, returns `this`.
-    */
-  /* CompleteClass */
-  override def getCallbackObject(): Anon_Build = js.native
+  override def __broccoliGetInfo__(builderFeatures: FeatureSet): TransformNodeInfo = js.native
 }
 

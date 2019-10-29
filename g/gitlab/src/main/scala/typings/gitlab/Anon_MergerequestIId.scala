@@ -1,12 +1,11 @@
 package typings.gitlab
 
-import typings.gitlab.distSrcCoreServicesMod.MergeRequestId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_MergerequestIId extends js.Object {
-  var mergerequestIId: js.UndefOr[MergeRequestId] = js.undefined
+  var mergerequestIId: js.UndefOr[Double] = js.undefined
 }
 
 object Anon_MergerequestIId {

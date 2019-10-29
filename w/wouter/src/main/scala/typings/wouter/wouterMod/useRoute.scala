@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("wouter", "useRoute")
 @js.native
 object useRoute extends js.Object {
-  def apply(pattern: String): Match = js.native
+  def apply[T /* <: DefaultParams */](pattern: Path): Match[T] = js.native
 }
 

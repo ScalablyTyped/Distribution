@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stellar-sdk", "BadResponseError")
 @js.native
-class BadResponseError () extends NetworkError
+class BadResponseError protected ()
+  extends typings.stellarDashSdk.libErrorsMod.BadResponseError {
+  def this(message: String, response: js.Any) = this()
+}
 

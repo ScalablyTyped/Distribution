@@ -1,18 +1,18 @@
 package typings.connectDashMongo.connectDashMongoMod
 
-import typings.mongodb.mongodbMod.Db
+import typings.mongodb.mongodbMod.MongoClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NativeMongoPromiseOptions extends DefaultOptions {
-  var dbPromise: js.Promise[Db]
+  var clientPromise: js.Promise[MongoClient]
 }
 
 object NativeMongoPromiseOptions {
   @scala.inline
   def apply(
-    dbPromise: js.Promise[Db],
+    clientPromise: js.Promise[MongoClient],
     autoReconnect: js.UndefOr[Boolean] = js.undefined,
     autoRemove: String = null,
     autoRemoveInterval: Int | Double = null,
@@ -26,7 +26,7 @@ object NativeMongoPromiseOptions {
     ttl: Int | Double = null,
     w: Int | Double = null
   ): NativeMongoPromiseOptions = {
-    val __obj = js.Dynamic.literal(dbPromise = dbPromise)
+    val __obj = js.Dynamic.literal(clientPromise = clientPromise)
     if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect)
     if (autoRemove != null) __obj.updateDynamic("autoRemove")(autoRemove)
     if (autoRemoveInterval != null) __obj.updateDynamic("autoRemoveInterval")(autoRemoveInterval.asInstanceOf[js.Any])

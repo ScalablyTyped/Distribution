@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic"
-version := "5.4.4-c08de1"
+version := "5.4.4-abd162"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rxjs" % "6.5.3-06bc12",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "string-width" % "4.1.0-c153b0",
-  "org.scalablytyped" %%% "superagent" % "4.1-dt-20190708Z-417745",
+  "org.scalablytyped" %%% "superagent" % "4.1-dt-20191028Z-0505a2",
   "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-a21bf3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

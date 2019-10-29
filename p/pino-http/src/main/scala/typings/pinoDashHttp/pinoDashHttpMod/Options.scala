@@ -13,7 +13,6 @@ import typings.pino.pinoMod.PrettyOptions
 import typings.pino.pinoMod.SerializerFn
 import typings.pino.pinoMod.TimeFn
 import typings.pino.pinoMod.redactOptions
-import typings.pino.pinoNumbers.`false`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -55,7 +54,7 @@ object Options {
     safe: js.UndefOr[Boolean] = js.undefined,
     serializers: StringDictionary[SerializerFn] = null,
     stream: DestinationStream = null,
-    timestamp: TimeFn | `false` = null,
+    timestamp: TimeFn | Boolean = null,
     useLevel: Level = null,
     useLevelLabels: js.UndefOr[Boolean] = js.undefined,
     useOnlyCustomLevels: js.UndefOr[Boolean] = js.undefined

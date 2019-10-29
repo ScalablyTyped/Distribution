@@ -1,0 +1,33 @@
+package typings.ethers.distTypesUtilsTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait FunctionFragment extends js.Object {
+  var constant: Boolean
+  var inputs: js.Array[ParamType]
+  var name: String
+  var outputs: js.Array[ParamType]
+  var payable: Boolean
+  var stateMutability: String
+  var `type`: String
+}
+
+object FunctionFragment {
+  @scala.inline
+  def apply(
+    constant: Boolean,
+    inputs: js.Array[ParamType],
+    name: String,
+    outputs: js.Array[ParamType],
+    payable: Boolean,
+    stateMutability: String,
+    `type`: String
+  ): FunctionFragment = {
+    val __obj = js.Dynamic.literal(constant = constant, inputs = inputs, name = name, outputs = outputs, payable = payable, stateMutability = stateMutability)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[FunctionFragment]
+  }
+}
+

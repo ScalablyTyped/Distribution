@@ -1,7 +1,7 @@
 package typings.preact
 
-import typings.preact.compatSrcInternalMod.ForwardFn
 import typings.preact.compatSrcMod.Component
+import typings.preact.compatSrcMod.ForwardFn
 import typings.preact.srcJsxMod.JSXInternal.Element
 import typings.preact.srcJsxMod.JSXInternal.HTMLAttributes
 import typings.preact.srcJsxMod.JSXInternal.SVGAttributes
@@ -31,6 +31,15 @@ object compatSrcMod extends js.Object {
     extends typings.preact.srcMod.Component[P, S] {
     def this(props: P) = this()
     def this(props: P, context: js.Any) = this()
+  }
+  
+  @js.native
+  trait ForwardFn[P, T] extends js.Object {
+    var displayName: js.UndefOr[String] = js.native
+    def apply(
+      props: P,
+      ref: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Ref<T> */ js.Any
+    ): ComponentChild = js.native
   }
   
   @js.native

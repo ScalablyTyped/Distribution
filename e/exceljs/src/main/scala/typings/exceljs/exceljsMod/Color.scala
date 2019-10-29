@@ -8,19 +8,18 @@ trait Color extends js.Object {
   /**
   	 * Hex string for alpha-red-green-blue e.g. FF00FF00
   	 */
-  var argb: js.UndefOr[String] = js.undefined
+  var argb: String
   /**
   	 * Choose a theme by index
   	 */
-  var theme: js.UndefOr[Double] = js.undefined
+  var theme: Double
 }
 
 object Color {
   @scala.inline
-  def apply(argb: String = null, theme: Int | Double = null): Color = {
-    val __obj = js.Dynamic.literal()
-    if (argb != null) __obj.updateDynamic("argb")(argb)
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+  def apply(argb: String, theme: Double): Color = {
+    val __obj = js.Dynamic.literal(argb = argb, theme = theme)
+  
     __obj.asInstanceOf[Color]
   }
 }

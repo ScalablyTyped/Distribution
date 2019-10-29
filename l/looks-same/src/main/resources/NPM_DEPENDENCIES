@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "looks-same" : "7.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "looks-same" : "7.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bunyan-bugsnag
 
-Typings are for version 1.0
+Typings are for version 3.0.0
 
 ## Library description:
 A Bunyan stream for logging errors and warnings to Bugsnag
@@ -24,7 +24,7 @@ A Bunyan stream for logging errors and warnings to Bugsnag
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

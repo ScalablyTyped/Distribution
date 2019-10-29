@@ -1,6 +1,7 @@
 package typings.ably
 
 import typings.ably.ablyMod.Types.DevicePushState
+import typings.ably.ablyMod.Types.Transport
 import typings.ably.ablyMod.Types.capabilityOp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,6 +51,9 @@ object ablyStrings {
   sealed trait closing extends js.Object
   
   @js.native
+  sealed trait comet extends Transport
+  
+  @js.native
   sealed trait connected extends js.Object
   
   @js.native
@@ -90,6 +94,9 @@ object ablyStrings {
   
   @js.native
   sealed trait ios extends js.Object
+  
+  @js.native
+  sealed trait jsonp extends Transport
   
   @js.native
   sealed trait leave extends js.Object
@@ -142,6 +149,15 @@ object ablyStrings {
   @js.native
   sealed trait watch extends js.Object
   
+  @js.native
+  sealed trait web_socket extends Transport
+  
+  @js.native
+  sealed trait xhr_polling extends Transport
+  
+  @js.native
+  sealed trait xhr_streaming extends Transport
+  
   @scala.inline
   def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
   @scala.inline
@@ -171,6 +187,8 @@ object ablyStrings {
   @scala.inline
   def closing: closing = "closing".asInstanceOf[closing]
   @scala.inline
+  def comet: comet = "comet".asInstanceOf[comet]
+  @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
@@ -198,6 +216,8 @@ object ablyStrings {
   def initialized: initialized = "initialized".asInstanceOf[initialized]
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
+  @scala.inline
+  def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
   @scala.inline
   def leave: leave = "leave".asInstanceOf[leave]
   @scala.inline
@@ -232,5 +252,11 @@ object ablyStrings {
   def update: update = "update".asInstanceOf[update]
   @scala.inline
   def watch: watch = "watch".asInstanceOf[watch]
+  @scala.inline
+  def web_socket: web_socket = "web_socket".asInstanceOf[web_socket]
+  @scala.inline
+  def xhr_polling: xhr_polling = "xhr_polling".asInstanceOf[xhr_polling]
+  @scala.inline
+  def xhr_streaming: xhr_streaming = "xhr_streaming".asInstanceOf[xhr_streaming]
 }
 

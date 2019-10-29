@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashSortableDashPaneMod {
-  type PaneId = String | Double
+  type PaneKey = String | Double | Null
 }

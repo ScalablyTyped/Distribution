@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-mock"
-version := "3.x-dt-20190327Z-d8d491"
+version := "3.x-dt-20190327Z-af21b4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-9a66bf",
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-818708",
   "org.scalablytyped" %%% "depd" % "1.1-dt-20181116Z-7e13c6",
-  "org.scalablytyped" %%% "egg" % "2.24.0-8e09e3",
+  "org.scalablytyped" %%% "egg" % "2.25.0-febf3e",
   "org.scalablytyped" %%% "egg-cookies" % "2.2.7-3fa2ff",
   "org.scalablytyped" %%% "egg-core" % "4.17.3-ae6a5d",
   "org.scalablytyped" %%% "egg-logger" % "2.4.1-c0d78e",

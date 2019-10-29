@@ -925,11 +925,43 @@ class Map () extends Evented {
   def panTo(lnglat: LngLatLike, options: AnimationOptions): this.type = js.native
   def panTo(lnglat: LngLatLike, options: AnimationOptions, eventdata: EventData): this.type = js.native
   def project(lnglat: LngLatLike): Point = js.native
+  /**
+    * Returns an array of GeoJSON Feature objects representing visible features that satisfy the query parameters.
+    *
+    * The properties value of each returned feature object contains the properties of its source feature. For GeoJSON sources, only string and numeric property values are supported (i.e. null, Array, and Object values are not supported).
+    *
+    * Each feature includes top-level layer, source, and sourceLayer properties. The layer property is an object representing the style layer to which the feature belongs. Layout and paint properties in this object contain values which are fully evaluated for the given zoom level and feature.
+    *
+    * Only features that are currently rendered are included. Some features will not be included, like:
+    *
+    * - Features from layers whose visibility property is "none".
+    * - Features from layers whose zoom range excludes the current zoom level.
+    * - Symbol features that have been hidden due to text or icon collision.
+    *
+    * Features from all other layers are included, including features that may have no visible contribution to the rendered result; for example, because the layer's opacity or color alpha component is set to 0.
+    *
+    * The topmost rendered feature appears first in the returned array, and subsequent features are sorted by descending z-order. Features that are rendered multiple times (due to wrapping across the antimeridian at low zoom levels) are returned only once (though subject to the following caveat).
+    *
+    * Because features come from tiled vector data or GeoJSON data that is converted to tiles internally, feature geometries may be split or duplicated across tile boundaries and, as a result, features may appear multiple times in query results. For example, suppose there is a highway running through the bounding rectangle of a query. The results of the query will be those parts of the highway that lie within the map tiles covering the bounding rectangle, even if the highway extends into other tiles, and the portion of the highway within each map tile will be returned as a separate feature. Similarly, a point feature near a tile boundary may appear in multiple tiles due to tile buffering.
+    *
+    * @param pointOrBox The geometry of the query region: either a single point or southwest and northeast points describing a bounding box. Omitting this parameter (i.e. calling Map#queryRenderedFeatures with zero arguments, or with only a  options argument) is equivalent to passing a bounding box encompassing the entire map viewport.
+    * @param options
+    */
   def queryRenderedFeatures(): js.Array[MapboxGeoJSONFeature] = js.native
   def queryRenderedFeatures(pointOrBox: js.Tuple2[PointLike, PointLike]): js.Array[MapboxGeoJSONFeature] = js.native
-  def queryRenderedFeatures(pointOrBox: js.Tuple2[PointLike, PointLike], parameters: Anon_Filter): js.Array[MapboxGeoJSONFeature] = js.native
+  def queryRenderedFeatures(pointOrBox: js.Tuple2[PointLike, PointLike], options: Anon_Filter): js.Array[MapboxGeoJSONFeature] = js.native
   def queryRenderedFeatures(pointOrBox: PointLike): js.Array[MapboxGeoJSONFeature] = js.native
-  def queryRenderedFeatures(pointOrBox: PointLike, parameters: Anon_Filter): js.Array[MapboxGeoJSONFeature] = js.native
+  def queryRenderedFeatures(pointOrBox: PointLike, options: Anon_Filter): js.Array[MapboxGeoJSONFeature] = js.native
+  /**
+    * Returns an array of GeoJSON Feature objects representing features within the specified vector tile or GeoJSON source that satisfy the query parameters.
+    *
+    * In contrast to Map#queryRenderedFeatures, this function returns all features matching the query parameters, whether or not they are rendered by the current style (i.e. visible). The domain of the query includes all currently-loaded vector tiles and GeoJSON source tiles: this function does not check tiles outside the currently visible viewport.
+    *
+    * Because features come from tiled vector data or GeoJSON data that is converted to tiles internally, feature geometries may be split or duplicated across tile boundaries and, as a result, features may appear multiple times in query results. For example, suppose there is a highway running through the bounding rectangle of a query. The results of the query will be those parts of the highway that lie within the map tiles covering the bounding rectangle, even if the highway extends into other tiles, and the portion of the highway within each map tile will be returned as a separate feature. Similarly, a point feature near a tile boundary may appear in multiple tiles due to tile buffering.
+    *
+    * @param sourceID The ID of the vector tile or GeoJSON source to query.
+    * @param parameters
+    */
   def querySourceFeatures(sourceID: String): js.Array[MapboxGeoJSONFeature] = js.native
   def querySourceFeatures(sourceID: String, parameters: Anon_FilterSourceLayer): js.Array[MapboxGeoJSONFeature] = js.native
   def remove(): Unit = js.native

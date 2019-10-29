@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ethereum-bloom-filters" : "1.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ethereum-bloom-filters" : "1.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

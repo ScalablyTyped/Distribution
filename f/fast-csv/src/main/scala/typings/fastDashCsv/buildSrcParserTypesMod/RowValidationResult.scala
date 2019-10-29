@@ -1,0 +1,22 @@
+package typings.fastDashCsv.buildSrcParserTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RowValidationResult extends js.Object {
+  var isValid: Boolean
+  var reason: js.UndefOr[String] = js.undefined
+  var row: Row | Null
+}
+
+object RowValidationResult {
+  @scala.inline
+  def apply(isValid: Boolean, reason: String = null, row: Row = null): RowValidationResult = {
+    val __obj = js.Dynamic.literal(isValid = isValid)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RowValidationResult]
+  }
+}
+

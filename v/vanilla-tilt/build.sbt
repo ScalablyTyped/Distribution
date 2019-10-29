@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vanilla-tilt"
-version := "1.4-dt-20180829Z-a7ab01"
+version := "1.7.0-e294f9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -17,14 +17,17 @@ trait BaseLoggerOptions extends js.Object {
   var dynamicMeta: js.UndefOr[DynamicMetaFunction] = js.undefined
   var expressFormat: js.UndefOr[Boolean] = js.undefined
   var format: js.UndefOr[Format] = js.undefined
+  var headerBlacklist: js.UndefOr[js.Array[String]] = js.undefined
   var ignoreRoute: js.UndefOr[RouteFilter] = js.undefined
   var ignoredRoutes: js.UndefOr[js.Array[String]] = js.undefined
   var level: js.UndefOr[String | DynamicLevelFunction] = js.undefined
   var meta: js.UndefOr[Boolean] = js.undefined
   var metaField: js.UndefOr[String] = js.undefined
   var msg: js.UndefOr[MessageTemplate] = js.undefined
+  var requestField: js.UndefOr[String] = js.undefined
   var requestFilter: js.UndefOr[RequestFilter] = js.undefined
   var requestWhitelist: js.UndefOr[js.Array[String]] = js.undefined
+  var responseField: js.UndefOr[String] = js.undefined
   var responseFilter: js.UndefOr[ResponseFilter] = js.undefined
   var responseWhitelist: js.UndefOr[js.Array[String]] = js.undefined
   var skip: js.UndefOr[RouteFilter] = js.undefined
@@ -41,14 +44,17 @@ object BaseLoggerOptions {
     dynamicMeta: (/* req */ Request, /* res */ Response, /* err */ Error) => js.Object = null,
     expressFormat: js.UndefOr[Boolean] = js.undefined,
     format: Format = null,
+    headerBlacklist: js.Array[String] = null,
     ignoreRoute: (/* req */ Request, /* res */ Response) => Boolean = null,
     ignoredRoutes: js.Array[String] = null,
     level: String | DynamicLevelFunction = null,
     meta: js.UndefOr[Boolean] = js.undefined,
     metaField: String = null,
     msg: MessageTemplate = null,
+    requestField: String = null,
     requestFilter: (/* req */ FilterRequest, /* propName */ String) => js.Any = null,
     requestWhitelist: js.Array[String] = null,
+    responseField: String = null,
     responseFilter: (/* res */ FilterResponse, /* propName */ String) => js.Any = null,
     responseWhitelist: js.Array[String] = null,
     skip: (/* req */ Request, /* res */ Response) => Boolean = null,
@@ -62,14 +68,17 @@ object BaseLoggerOptions {
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(js.Any.fromFunction3(dynamicMeta))
     if (!js.isUndefined(expressFormat)) __obj.updateDynamic("expressFormat")(expressFormat)
     if (format != null) __obj.updateDynamic("format")(format)
+    if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist)
     if (ignoreRoute != null) __obj.updateDynamic("ignoreRoute")(js.Any.fromFunction2(ignoreRoute))
     if (ignoredRoutes != null) __obj.updateDynamic("ignoredRoutes")(ignoredRoutes)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta)
     if (metaField != null) __obj.updateDynamic("metaField")(metaField)
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
+    if (requestField != null) __obj.updateDynamic("requestField")(requestField)
     if (requestFilter != null) __obj.updateDynamic("requestFilter")(js.Any.fromFunction2(requestFilter))
     if (requestWhitelist != null) __obj.updateDynamic("requestWhitelist")(requestWhitelist)
+    if (responseField != null) __obj.updateDynamic("responseField")(responseField)
     if (responseFilter != null) __obj.updateDynamic("responseFilter")(js.Any.fromFunction2(responseFilter))
     if (responseWhitelist != null) __obj.updateDynamic("responseWhitelist")(responseWhitelist)
     if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))

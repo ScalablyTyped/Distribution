@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var basePath: js.UndefOr[String] = js.undefined
-  var deep: js.UndefOr[Boolean | Double | RegExp | FilterFunction] = js.undefined
+  var deep: js.UndefOr[Boolean | Double | String | RegExp | FilterFunction] = js.undefined
   var filter: js.UndefOr[String | RegExp | FilterFunction] = js.undefined
   var fs: js.UndefOr[FileSystem] = js.undefined
   var sep: js.UndefOr[String] = js.undefined
@@ -17,7 +17,7 @@ object Options {
   @scala.inline
   def apply(
     basePath: String = null,
-    deep: Boolean | Double | RegExp | FilterFunction = null,
+    deep: Boolean | Double | String | RegExp | FilterFunction = null,
     filter: String | RegExp | FilterFunction = null,
     fs: FileSystem = null,
     sep: String = null

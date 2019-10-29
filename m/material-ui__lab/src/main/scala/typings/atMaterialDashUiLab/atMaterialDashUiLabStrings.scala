@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiLab
 
+import typings.atMaterialDashUiLab.autocompleteAutocompleteMod.AutocompleteClassKey
 import typings.atMaterialDashUiLab.ratingRatingMod.RatingClassKey
 import typings.atMaterialDashUiLab.skeletonSkeletonMod.SkeletonClassKey
 import typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
@@ -34,6 +35,9 @@ object atMaterialDashUiLabStrings {
   sealed trait animate extends SkeletonClassKey
   
   @js.native
+  sealed trait any extends js.Object
+  
+  @js.native
   sealed trait ascending extends js.Object
   
   @js.native
@@ -59,6 +63,12 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait circle extends SkeletonClassKey
+  
+  @js.native
+  sealed trait clearIndicator extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait clearIndicatorDirty extends AutocompleteClassKey
   
   @js.native
   sealed trait content extends TreeItemClassKey
@@ -131,6 +141,9 @@ object atMaterialDashUiLabStrings {
   sealed trait focusVisible extends RatingClassKey
   
   @js.native
+  sealed trait focused extends AutocompleteClassKey
+  
+  @js.native
   sealed trait grammar extends js.Object
   
   @js.native
@@ -138,6 +151,12 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait group extends TreeItemClassKey
+  
+  @js.native
+  sealed trait groupLabel extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait groupUl extends AutocompleteClassKey
   
   @js.native
   sealed trait grouped extends ToggleButtonGroupClassKey
@@ -184,6 +203,21 @@ object atMaterialDashUiLabStrings {
   sealed trait `inline` extends js.Object
   
   @js.native
+  sealed trait input extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait inputFocused extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait inputRoot extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait inputRootFilled extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait inputRootOutlined extends AutocompleteClassKey
+  
+  @js.native
   sealed trait label
     extends RatingClassKey
        with ToggleButtonClassKey
@@ -208,7 +242,10 @@ object atMaterialDashUiLabStrings {
   sealed trait list extends js.Object
   
   @js.native
-  sealed trait listbox extends js.Object
+  sealed trait listbox extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait loading extends AutocompleteClassKey
   
   @js.native
   sealed trait location extends js.Object
@@ -232,6 +269,9 @@ object atMaterialDashUiLabStrings {
   sealed trait move extends js.Object
   
   @js.native
+  sealed trait noOptions extends AutocompleteClassKey
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -250,16 +290,28 @@ object atMaterialDashUiLabStrings {
   sealed trait openIconOpen extends SpeedDialIconClassKey
   
   @js.native
+  sealed trait option extends AutocompleteClassKey
+  
+  @js.native
   sealed trait other extends js.Object
   
   @js.native
   sealed trait page extends js.Object
   
   @js.native
+  sealed trait paper extends AutocompleteClassKey
+  
+  @js.native
   sealed trait polite extends js.Object
   
   @js.native
-  sealed trait popup extends js.Object
+  sealed trait popup extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait popupIndicator extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait popupIndicatorOpen extends AutocompleteClassKey
   
   @js.native
   sealed trait pristine extends RatingClassKey
@@ -287,7 +339,8 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait root
-    extends RatingClassKey
+    extends AutocompleteClassKey
+       with RatingClassKey
        with SkeletonClassKey
        with SpeedDialClassKey
        with SpeedDialIconClassKey
@@ -321,6 +374,9 @@ object atMaterialDashUiLabStrings {
   sealed trait spelling extends js.Object
   
   @js.native
+  sealed trait start extends js.Object
+  
+  @js.native
   sealed trait staticTooltip extends SpeedDialActionClassKey
   
   @js.native
@@ -334,6 +390,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait submit extends js.Object
+  
+  @js.native
+  sealed trait tag extends AutocompleteClassKey
   
   @js.native
   sealed trait tel extends js.Object
@@ -389,6 +448,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def animate: animate = "animate".asInstanceOf[animate]
   @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
@@ -406,6 +467,10 @@ object atMaterialDashUiLabStrings {
   def button: button = "button".asInstanceOf[button]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
+  @scala.inline
+  def clearIndicator: clearIndicator = "clearIndicator".asInstanceOf[clearIndicator]
+  @scala.inline
+  def clearIndicatorDirty: clearIndicatorDirty = "clearIndicatorDirty".asInstanceOf[clearIndicatorDirty]
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline
@@ -451,11 +516,17 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def focusVisible: focusVisible = "focusVisible".asInstanceOf[focusVisible]
   @scala.inline
+  def focused: focused = "focused".asInstanceOf[focused]
+  @scala.inline
   def grammar: grammar = "grammar".asInstanceOf[grammar]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def group: group = "group".asInstanceOf[group]
+  @scala.inline
+  def groupLabel: groupLabel = "groupLabel".asInstanceOf[groupLabel]
+  @scala.inline
+  def groupUl: groupUl = "groupUl".asInstanceOf[groupUl]
   @scala.inline
   def grouped: grouped = "grouped".asInstanceOf[grouped]
   @scala.inline
@@ -485,6 +556,16 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  @scala.inline
+  def inputFocused: inputFocused = "inputFocused".asInstanceOf[inputFocused]
+  @scala.inline
+  def inputRoot: inputRoot = "inputRoot".asInstanceOf[inputRoot]
+  @scala.inline
+  def inputRootFilled: inputRootFilled = "inputRootFilled".asInstanceOf[inputRootFilled]
+  @scala.inline
+  def inputRootOutlined: inputRootOutlined = "inputRootOutlined".asInstanceOf[inputRootOutlined]
+  @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
   def large: large = "large".asInstanceOf[large]
@@ -501,6 +582,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   @scala.inline
+  def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def location: location = "location".asInstanceOf[location]
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
@@ -515,6 +598,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   @scala.inline
+  def noOptions: noOptions = "noOptions".asInstanceOf[noOptions]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
@@ -527,13 +612,21 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def openIconOpen: openIconOpen = "openIconOpen".asInstanceOf[openIconOpen]
   @scala.inline
+  def option: option = "option".asInstanceOf[option]
+  @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
   def page: page = "page".asInstanceOf[page]
   @scala.inline
+  def paper: paper = "paper".asInstanceOf[paper]
+  @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
+  @scala.inline
+  def popupIndicator: popupIndicator = "popupIndicator".asInstanceOf[popupIndicator]
+  @scala.inline
+  def popupIndicatorOpen: popupIndicatorOpen = "popupIndicatorOpen".asInstanceOf[popupIndicatorOpen]
   @scala.inline
   def pristine: pristine = "pristine".asInstanceOf[pristine]
   @scala.inline
@@ -567,6 +660,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   @scala.inline
+  def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def staticTooltip: staticTooltip = "staticTooltip".asInstanceOf[staticTooltip]
   @scala.inline
   def staticTooltipClosed: staticTooltipClosed = "staticTooltipClosed".asInstanceOf[staticTooltipClosed]
@@ -576,6 +671,8 @@ object atMaterialDashUiLabStrings {
   def step: step = "step".asInstanceOf[step]
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
+  @scala.inline
+  def tag: tag = "tag".asInstanceOf[tag]
   @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   @scala.inline

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-sticky-box" : "0.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-sticky-box" : "0.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait ColumnExtension extends Style {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof exceljs.exceljs.Style ]:? exceljs.exceljs.Style[P]} */ @js.native
+trait ColumnExtension extends js.Object {
   /**
   	 * indicate the collapsed state based on outlineLevel
   	 */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for karma-viewport
 
-Typings are for version 0.4
+Typings are for version 1.0.4
 
 ## Library description:
 A Karma plugin for testing responsive features and layout
@@ -24,7 +24,7 @@ A Karma plugin for testing responsive features and layout
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

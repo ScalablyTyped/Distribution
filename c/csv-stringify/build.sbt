@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "csv-stringify"
-version := "1.4-dt-20190717Z-d01738"
+version := "5.3.3-5f0f01"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

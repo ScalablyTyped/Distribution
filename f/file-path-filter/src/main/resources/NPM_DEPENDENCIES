@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "file-path-filter" : "2.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "file-path-filter" : "2.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

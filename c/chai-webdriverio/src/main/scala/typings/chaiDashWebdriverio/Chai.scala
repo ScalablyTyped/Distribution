@@ -13,6 +13,8 @@ object Chai extends js.Object {
   trait Assertion extends js.Object {
     var immediately: Assertion = js.native
     def count(count: Double): Unit = js.native
+    def displayed(): Unit = js.native
+    def enabled(): Unit = js.native
     def focus(): Unit = js.native
     def text(expected: String): Unit = js.native
     def text(expected: Double): Unit = js.native
@@ -21,7 +23,6 @@ object Chai extends js.Object {
     def value(expected: String): Unit = js.native
     def value(expected: Double): Unit = js.native
     def value(expected: RegExp): Unit = js.native
-    def visible(): Unit = js.native
   }
   
 }

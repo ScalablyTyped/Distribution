@@ -1,7 +1,7 @@
 
 # Scala.js typings for memoize-one
 
-Typings are for version 4.1
+Typings are for version 5.1.1
 
 ## Library description:
 A memoization library which only remembers the latest invocation
@@ -24,7 +24,7 @@ A memoization library which only remembers the latest invocation
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

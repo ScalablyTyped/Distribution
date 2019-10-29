@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-circular-progressbar" : "2.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-circular-progressbar" : "2.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

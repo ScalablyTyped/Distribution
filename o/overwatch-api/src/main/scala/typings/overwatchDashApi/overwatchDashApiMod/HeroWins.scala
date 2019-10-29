@@ -1,0 +1,19 @@
+package typings.overwatchDashApi.overwatchDashApiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HeroWins extends Hero {
+  var games_won: String
+}
+
+object HeroWins {
+  @scala.inline
+  def apply(games_won: String, hero: String, img: String): HeroWins = {
+    val __obj = js.Dynamic.literal(games_won = games_won, hero = hero, img = img)
+  
+    __obj.asInstanceOf[HeroWins]
+  }
+}
+

@@ -1,6 +1,7 @@
 
 # Scala.js typings for fibers
 
+Typings are for version 3.1
 
 ## Library description:
 Cooperative multi-tasking for Javascript

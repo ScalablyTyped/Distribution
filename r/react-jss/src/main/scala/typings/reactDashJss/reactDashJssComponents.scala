@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object reactDashJssComponents extends reactDashJssProps {
   @scala.inline
-  def JssProvider: ComponentType[JssProviderProps] = js.constructorOf[typings.reactDashJss.libJssProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[JssProviderProps]]
+  def JssProvider: ComponentType[JssProviderProps] = js.constructorOf[typings.reactDashJss.reactDashJssMod.JssProvider].asInstanceOf[typings.react.reactMod.ComponentType[JssProviderProps]]
   @scala.inline
   def ThemeProvider: ComponentType[ThemeProviderProps] = js.constructorOf[typings.reactDashJss.reactDashJssMod.ThemeProvider].asInstanceOf[typings.react.reactMod.ComponentType[ThemeProviderProps]]
 }

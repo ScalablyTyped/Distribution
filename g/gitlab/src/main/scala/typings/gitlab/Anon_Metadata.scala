@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.distSrcCoreServicesMod.UploadMetadata
+import typings.gitlab.distTypesCoreServicesProjectImportExportMod.UploadMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

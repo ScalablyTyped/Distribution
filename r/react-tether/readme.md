@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tether
 
-Typings are for version 0.5
+Typings are for version 2.0.4
 
 ## Library description:
 Drop content anywhere on the page.
@@ -24,7 +24,7 @@ Drop content anywhere on the page.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "qunit-dom" : "0.9.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "qunit-dom" : "0.9.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

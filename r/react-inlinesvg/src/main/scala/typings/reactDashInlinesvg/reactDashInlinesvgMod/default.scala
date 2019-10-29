@@ -1,22 +1,20 @@
 package typings.reactDashInlinesvg.reactDashInlinesvgMod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.ComponentType
+import typings.reactDashInlinesvg.Anon_CacheRequests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-inlinesvg", JSImport.Default)
 @js.native
-class default protected ()
-  extends Component[Props, ComponentState, js.Any] {
-  def this(props: Props) = this()
-  def this(props: Props, context: js.Any) = this()
+class default protected () extends InlineSVG {
+  def this(props: IProps) = this()
 }
 
+/* static members */
 @JSImport("react-inlinesvg", JSImport.Default)
 @js.native
-object default extends TopLevel[ComponentType[Props]]
+object default extends js.Object {
+  var defaultProps: Anon_CacheRequests = js.native
+}
 

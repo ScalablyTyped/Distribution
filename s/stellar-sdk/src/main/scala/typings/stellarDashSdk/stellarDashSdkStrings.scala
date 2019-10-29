@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation._
 
 object stellarDashSdkStrings {
   @js.native
-  sealed trait AccountResponse extends js.Object
+  sealed trait BaseResponse extends js.Object
   
   @js.native
-  sealed trait BaseResponse extends js.Object
+  sealed trait `Internal Server Error` extends js.Object
+  
+  @js.native
+  sealed trait `Rate Limit Exceeded` extends js.Object
+  
+  @js.native
+  sealed trait `Transaction Failed` extends js.Object
   
   @js.native
   sealed trait account extends js.Object
@@ -33,6 +39,9 @@ object stellarDashSdkStrings {
   sealed trait effects extends js.Object
   
   @js.native
+  sealed trait error extends js.Object
+  
+  @js.native
   sealed trait hash extends js.Object
   
   @js.native
@@ -42,10 +51,16 @@ object stellarDashSdkStrings {
   sealed trait ledger extends js.Object
   
   @js.native
+  sealed trait message extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
   sealed trait offers extends js.Object
+  
+  @js.native
+  sealed trait open extends js.Object
   
   @js.native
   sealed trait operations extends js.Object
@@ -75,9 +90,13 @@ object stellarDashSdkStrings {
   sealed trait transactions extends js.Object
   
   @scala.inline
-  def AccountResponse: AccountResponse = "AccountResponse".asInstanceOf[AccountResponse]
-  @scala.inline
   def BaseResponse: BaseResponse = "BaseResponse".asInstanceOf[BaseResponse]
+  @scala.inline
+  def `Internal Server Error`: `Internal Server Error` = "Internal Server Error".asInstanceOf[`Internal Server Error`]
+  @scala.inline
+  def `Rate Limit Exceeded`: `Rate Limit Exceeded` = "Rate Limit Exceeded".asInstanceOf[`Rate Limit Exceeded`]
+  @scala.inline
+  def `Transaction Failed`: `Transaction Failed` = "Transaction Failed".asInstanceOf[`Transaction Failed`]
   @scala.inline
   def account: account = "account".asInstanceOf[account]
   @scala.inline
@@ -93,15 +112,21 @@ object stellarDashSdkStrings {
   @scala.inline
   def effects: effects = "effects".asInstanceOf[effects]
   @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def hash: hash = "hash".asInstanceOf[hash]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   @scala.inline
   def ledger: ledger = "ledger".asInstanceOf[ledger]
   @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def offers: offers = "offers".asInstanceOf[offers]
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
   @scala.inline
   def operations: operations = "operations".asInstanceOf[operations]
   @scala.inline

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "karma-viewport" : "1.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "karma-viewport" : "1.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

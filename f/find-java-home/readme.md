@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-java-home
 
-Typings are for version 0.2
+Typings are for version 1.1.0
 
 ## Library description:
 Find JAVA_HOME on any system
@@ -24,7 +24,7 @@ Find JAVA_HOME on any system
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -6,26 +6,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RouteProps extends js.Object {
-  var children: js.UndefOr[(js.Function1[/* params */ Params, ReactNode]) | ReactNode] = js.undefined
-  var component: js.UndefOr[ComponentType[_]] = js.undefined
-  var `match`: js.UndefOr[Boolean] = js.undefined
+trait RouteProps[T /* <: DefaultParams */] extends js.Object {
+  var children: js.UndefOr[(js.Function1[/* params */ Params[T], ReactNode]) | ReactNode] = js.undefined
+  var component: js.UndefOr[ComponentType[RouteComponentProps[T]]] = js.undefined
   var path: Path
 }
 
 object RouteProps {
   @scala.inline
-  def apply(
+  def apply[T /* <: DefaultParams */](
     path: Path,
-    children: (js.Function1[/* params */ Params, ReactNode]) | ReactNode = null,
-    component: ComponentType[_] = null,
-    `match`: js.UndefOr[Boolean] = js.undefined
-  ): RouteProps = {
+    children: (js.Function1[/* params */ Params[T], ReactNode]) | ReactNode = null,
+    component: ComponentType[RouteComponentProps[T]] = null
+  ): RouteProps[T] = {
     val __obj = js.Dynamic.literal(path = path)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(`match`)) __obj.updateDynamic("match")(`match`)
-    __obj.asInstanceOf[RouteProps]
+    __obj.asInstanceOf[RouteProps[T]]
   }
 }
 

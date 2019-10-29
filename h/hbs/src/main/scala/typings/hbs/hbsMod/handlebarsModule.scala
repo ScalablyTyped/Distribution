@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait handlebarsModule extends js.Object {
   val AST: TypeofAST = js.native
+  var Exception: Instantiable1[/* message */ String, typings.handlebars.handlebarsMod.Exception] = js.native
   var SafeString: Instantiable1[/* str */ String, typings.handlebars.handlebarsMod.SafeString] = js.native
   val Utils: TypeofUtils = js.native
   val VM: TypeofVM = js.native
@@ -34,7 +35,6 @@ trait handlebarsModule extends js.Object {
   val logger: Logger = js.native
   val partials: StringDictionary[js.Any] = js.native
   val templates: HandlebarsTemplates = js.native
-  def Exception(message: String): Unit = js.native
   def K(): Unit = js.native
   def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_] = js.native
   def compile[T](input: js.Any): HandlebarsTemplateDelegate[T] = js.native
@@ -46,6 +46,8 @@ trait handlebarsModule extends js.Object {
   def noConflict(): TypeofHandlebars = js.native
   def parse(input: String): Program = js.native
   def parse(input: String, options: ParseOptions): Program = js.native
+  def parseWithoutProcessing(input: String): Program = js.native
+  def parseWithoutProcessing(input: String, options: ParseOptions): Program = js.native
   def precompile(input: js.Any): TemplateSpecification = js.native
   def precompile(input: js.Any, options: PrecompileOptions): TemplateSpecification = js.native
   def registerDecorator(name: String, fn: js.Function): Unit = js.native

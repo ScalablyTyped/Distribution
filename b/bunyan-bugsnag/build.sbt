@@ -1,11 +1,10 @@
 organization := "org.scalablytyped"
 name := "bunyan-bugsnag"
-version := "1.0-dt-20180214Z-8e8357"
+version := "3.0.0-b99773"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-82f58f",
   "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false

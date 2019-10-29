@@ -1,7 +1,7 @@
 
 # Scala.js typings for riot
 
-Typings are for version 3.6
+Typings are for version 4.6.6
 
 ## Library description:
 Simple and elegant component-based UI library
@@ -24,7 +24,7 @@ Simple and elegant component-based UI library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

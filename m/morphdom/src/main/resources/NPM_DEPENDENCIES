@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "morphdom" : "2.5.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "morphdom" : "2.5.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

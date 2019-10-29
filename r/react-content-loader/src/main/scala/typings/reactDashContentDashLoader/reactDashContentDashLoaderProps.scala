@@ -1,28 +1,25 @@
 package typings.reactDashContentDashLoader
 
-import typings.reactDashContentDashLoader.reactDashContentDashLoaderMod.ContentLoaderProps
+import typings.reactDashContentDashLoader.nativeMod.IContentLoaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashContentDashLoaderProps {
   @scala.inline
-  def BulletListProps: ContentLoaderProps.type = typings.reactDashContentDashLoader.reactDashContentDashLoaderMod.ContentLoaderProps
-  type BulletListProps = ContentLoaderProps
+  def BulletListProps: IContentLoaderProps.type = typings.reactDashContentDashLoader.nativeMod.IContentLoaderProps
+  type BulletListProps = IContentLoaderProps
   @scala.inline
-  def CodeProps: ContentLoaderProps.type = typings.reactDashContentDashLoader.reactDashContentDashLoaderMod.ContentLoaderProps
-  type CodeProps = ContentLoaderProps
+  def CodeProps: IContentLoaderProps.type = typings.reactDashContentDashLoader.nativeMod.IContentLoaderProps
+  type CodeProps = IContentLoaderProps
   @scala.inline
-  def FacebookProps: ContentLoaderProps.type = typings.reactDashContentDashLoader.reactDashContentDashLoaderMod.ContentLoaderProps
-  type FacebookProps = ContentLoaderProps
+  def FacebookProps: IContentLoaderProps.type = typings.reactDashContentDashLoader.nativeMod.IContentLoaderProps
+  type FacebookProps = IContentLoaderProps
   @scala.inline
-  def InstagramProps: ContentLoaderProps.type = typings.reactDashContentDashLoader.reactDashContentDashLoaderMod.ContentLoaderProps
-  type InstagramProps = ContentLoaderProps
+  def InstagramProps: IContentLoaderProps.type = typings.reactDashContentDashLoader.nativeMod.IContentLoaderProps
+  type InstagramProps = IContentLoaderProps
   @scala.inline
-  def ListProps: ContentLoaderProps.type = typings.reactDashContentDashLoader.reactDashContentDashLoaderMod.ContentLoaderProps
-  type ListProps = ContentLoaderProps
-  @scala.inline
-  def ReactDashContentDashLoaderProps: ContentLoaderProps.type = typings.reactDashContentDashLoader.reactDashContentDashLoaderMod.ContentLoaderProps
-  type ReactDashContentDashLoaderProps = ContentLoaderProps
+  def ListProps: IContentLoaderProps.type = typings.reactDashContentDashLoader.nativeMod.IContentLoaderProps
+  type ListProps = IContentLoaderProps
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jest/fake-timers" : "24.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jest/fake-timers" : "24.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,22 +1,29 @@
 package typings.reactDashJss
 
-import typings.reactDashJss.libInjectSheetMod.ClassNameMap
-import typings.reactDashJss.libInjectSheetMod.StyleCreator
-import typings.reactDashJss.libInjectSheetMod.Styles
+import typings.reactDashJss.reactDashJssMod.WithStyles
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Classes[S /* <: String | (Styles[String, js.Object]) | (StyleCreator[String, _, js.Object]) */, Props] extends js.Object {
-  var classes: ClassNameMap[_ | S]
+trait Anon_Classes[Props /* <: WithStyles[S] */] extends js.Object {
+  var classes: js.UndefOr[
+    Partial[
+      /* import warning: ImportType.apply Failed type conversion: Props['classes'] */ js.Any
+    ]
+  ] = js.undefined
 }
 
 object Anon_Classes {
   @scala.inline
-  def apply[S /* <: String | (Styles[String, js.Object]) | (StyleCreator[String, _, js.Object]) */, Props](classes: ClassNameMap[_ | S]): Anon_Classes[S, Props] = {
-    val __obj = js.Dynamic.literal(classes = classes)
-  
-    __obj.asInstanceOf[Anon_Classes[S, Props]]
+  def apply[Props /* <: WithStyles[S] */](
+    classes: Partial[
+      /* import warning: ImportType.apply Failed type conversion: Props['classes'] */ js.Any
+    ] = null
+  ): Anon_Classes[Props] = {
+    val __obj = js.Dynamic.literal()
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    __obj.asInstanceOf[Anon_Classes[Props]]
   }
 }
 

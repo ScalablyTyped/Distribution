@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "antd-native-slinky-facade"
-version := "201909200330-b9cd99"
+version := "201909200330-71cf0a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "me.shadaj" %%% "slinky-native" % "0.6.2",
-  "org.scalablytyped" %%% "ant-design__icons-react-native" % "1.0.2-029663",
-  "org.scalablytyped" %%% "ant-design__react-native" % "3.2.0-13b51a",
-  "org.scalablytyped" %%% "bang88__react-native-drawer-layout" % "2.0.3-2a1d3a",
+  "org.scalablytyped" %%% "ant-design__icons-react-native" % "1.0.2-788fb6",
+  "org.scalablytyped" %%% "ant-design__react-native" % "3.2.0-d7f0cd",
+  "org.scalablytyped" %%% "bang88__react-native-drawer-layout" % "2.0.3-0bea0c",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191015Z-4f281b",
-  "org.scalablytyped" %%% "react-native-community__viewpager" % "1.1.7-da0739",
-  "org.scalablytyped" %%% "react-native-modal-popover" % "0.0.12-8557b5",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191028Z-de58ef",
+  "org.scalablytyped" %%% "react-native-community__viewpager" % "1.1.7-e9b54e",
+  "org.scalablytyped" %%% "react-native-modal-popover" % "0.0.12-48e29b",
   "org.scalablytyped" %%% "react-native-swipeout" % "2.3.6-20031e",
   "org.scalablytyped" %%% "react-slinky-facade" % "201907271058-1c546a",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",

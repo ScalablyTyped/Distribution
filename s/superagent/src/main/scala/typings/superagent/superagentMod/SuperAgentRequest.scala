@@ -1,6 +1,6 @@
 package typings.superagent.superagentMod
 
-import typings.node.httpsMod.Agent
+import typings.node.httpMod.Agent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

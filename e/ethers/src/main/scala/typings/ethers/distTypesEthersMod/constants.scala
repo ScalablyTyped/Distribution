@@ -1,0 +1,19 @@
+package typings.ethers.distTypesEthersMod
+
+import typings.ethers.distTypesUtilsMod.types.BigNumber
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("ethers/dist/types/ethers", "constants")
+@js.native
+object constants extends js.Object {
+  var AddressZero: String = js.native
+  var HashZero: String = js.native
+  var NegativeOne: BigNumber = js.native
+  var One: BigNumber = js.native
+  var Two: BigNumber = js.native
+  var WeiPerEther: BigNumber = js.native
+  var Zero: BigNumber = js.native
+}
+

@@ -1,141 +1,93 @@
 package typings.rotDashJs.rotDashJsMod
 
-import typings.rotDashJs.rotDashJsMod.Map.Dungeon
-import typings.rotDashJs.rotDashJsMod.Map.Feature
-import typings.rotDashJs.rotDashJsMod.Map.Feature.Corridor
-import typings.rotDashJs.rotDashJsMod.Map.Feature.Room
-import typings.rotDashJs.rotDashJsMod._Global_.Array
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable3
+import typings.rotDashJs.libMapArenaMod.default
+import typings.rotDashJs.libMapCellularMod.Options
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rot-js", "Map")
 @js.native
-class Map protected () extends js.Object {
-  def this(width: Double, height: Double) = this()
-  def create(): Map = js.native
-  def create(callback: DigCallback): Map = js.native
-}
-
-@JSImport("rot-js", "Map")
-@js.native
 object Map extends js.Object {
   @js.native
-  class Arena () extends Map
+  class Arena () extends default
   
   @js.native
-  class Cellular () extends Map {
-    def this(width: Double) = this()
+  class Cellular protected ()
+    extends typings.rotDashJs.libMapCellularMod.default {
     def this(width: Double, height: Double) = this()
-    def this(width: Double, height: Double, options: CellularOptions) = this()
-    def connect(callback: DigCallback): Unit = js.native
-    def connect(callback: DigCallback, value: Double): Unit = js.native
-    def connect(callback: DigCallback, value: Double, connectionCallback: DoorCallback): Unit = js.native
-    def randomize(probability: Double): this.type = js.native
-    def serviceCallback(callback: DigCallback): Unit = js.native
-    def set(x: Double, y: Double, value: js.Any): Unit = js.native
-    def setOptions(options: CellularOptions): Unit = js.native
+    def this(width: Double, height: Double, options: Partial[Options]) = this()
   }
   
   @js.native
-  class Digger () extends Dungeon {
-    def this(width: Double) = this()
+  class Digger protected ()
+    extends typings.rotDashJs.libMapDiggerMod.default {
     def this(width: Double, height: Double) = this()
-    def this(width: Double, height: Double, options: DiggerOptions) = this()
+    def this(width: Double, height: Double, options: Partial[typings.rotDashJs.libMapDiggerMod.Options]) = this()
   }
   
   @js.native
-  class DividedMaze () extends Map
+  class DividedMaze ()
+    extends typings.rotDashJs.libMapDividedmazeMod.default
   
   @js.native
-  class Dungeon () extends Map {
-    def getCorridors(): Array[Corridor] = js.native
-    def getRooms(): Array[Room] = js.native
-  }
+  class EllerMaze ()
+    extends typings.rotDashJs.libMapEllermazeMod.default
   
   @js.native
-  class EllerMaze () extends Map
-  
-  @js.native
-  class Feature () extends js.Object {
-    def create(digCallback: DigCallback): Unit = js.native
-    def debug(): Unit = js.native
-    def isValid(canBeDugCallback: CanBeDugCallback): Boolean = js.native
-  }
-  
-  @js.native
-  class IceyMaze () extends Map {
-    def this(width: Double) = this()
+  class IceyMaze protected ()
+    extends typings.rotDashJs.libMapIceymazeMod.default {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, regularity: Double) = this()
   }
   
   @js.native
-  class Rogue () extends Map {
-    def this(width: Double) = this()
-    def this(width: Double, height: Double) = this()
-    def this(width: Double, height: Double, options: RogueOptions) = this()
+  class Rogue protected ()
+    extends typings.rotDashJs.libMapRogueMod.default {
+    def this(width: Double, height: Double, options: Partial[typings.rotDashJs.libMapRogueMod.Options]) = this()
   }
   
   @js.native
-  class Uniform () extends Dungeon {
-    def this(width: Double) = this()
-    def this(width: Double, height: Double) = this()
-    def this(width: Double, height: Double, options: UniformOptions) = this()
+  class Uniform protected ()
+    extends typings.rotDashJs.libMapUniformMod.default {
+    def this(width: Double, height: Double, options: Partial[typings.rotDashJs.libMapUniformMod.Options]) = this()
   }
   
-  /* static members */
-  @js.native
-  object Feature extends js.Object {
-    @js.native
-    class Corridor protected () extends js.Object {
-      def this(startX: Double, startY: Double, endX: Double, endY: Double) = this()
-      def create(digCallback: DigCallback): Boolean = js.native
-      def createPriorityWalls(priorityWallCallback: DoorCallback): Unit = js.native
-      def debug(): Unit = js.native
-      def isValid(isWallCallback: IsWallCallback, canBeDugCallback: CanBeDugCallback): Boolean = js.native
-    }
-    
-    @js.native
-    class Room protected () extends js.Object {
-      def this(x1: Double, y1: Double, x2: Double, y2: Double) = this()
-      def this(x1: Double, y1: Double, x2: Double, y2: Double, doorX: Double) = this()
-      def this(x1: Double, y1: Double, x2: Double, y2: Double, doorX: Double, doorY: Double) = this()
-      def addDoor(x: Double, y: Double): this.type = js.native
-      def addDoors(isWallCallback: IsWallCallback): this.type = js.native
-      def clearDoors(): this.type = js.native
-      def create(digCallback: DigCallback): Unit = js.native
-      def debug(): Unit = js.native
-      def getBottom(): Double = js.native
-      def getCenter(): js.Tuple2[Double, Double] = js.native
-      def getDoors(callback: DoorCallback): this.type = js.native
-      def getLeft(): Double = js.native
-      def getRight(): Double = js.native
-      def getTop(): Double = js.native
-      def isValid(isWallCallback: IsWallCallback, canBeDugCallback: CanBeDugCallback): Boolean = js.native
-    }
-    
-    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double): Feature = js.native
-    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: FeatureOptions): Feature = js.native
-    /* static members */
-    @js.native
-    object Corridor extends js.Object {
-      def createRandomAt(x: Double, y: Double, dx: Double, dy: Double): Corridor = js.native
-      def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: CorridorOptions): Corridor = js.native
-    }
-    
-    /* static members */
-    @js.native
-    object Room extends js.Object {
-      def createRandom(availWidth: Double, availHeight: Double): Room = js.native
-      def createRandom(availWidth: Double, availHeight: Double, options: RoomOptions): Room = js.native
-      def createRandomAt(x: Double, y: Double, dx: Double, dy: Double): Room = js.native
-      def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: RoomOptions): Room = js.native
-      def createRandomCenter(cx: Double, cy: Double): Room = js.native
-      def createRandomCenter(cx: Double, cy: Double, options: RoomOptions): Room = js.native
-    }
-    
-  }
-  
+  var Arena: Instantiable0[default] = js.native
+  var Cellular: Instantiable3[
+    /* width */ Double, 
+    /* height */ Double, 
+    js.UndefOr[/* options */ Partial[Options]], 
+    typings.rotDashJs.libMapCellularMod.default
+  ] = js.native
+  var Digger: Instantiable3[
+    /* width */ Double, 
+    /* height */ Double, 
+    js.UndefOr[/* options */ Partial[typings.rotDashJs.libMapDiggerMod.Options]], 
+    typings.rotDashJs.libMapDiggerMod.default
+  ] = js.native
+  var DividedMaze: Instantiable0[typings.rotDashJs.libMapDividedmazeMod.default] = js.native
+  var EllerMaze: Instantiable0[typings.rotDashJs.libMapEllermazeMod.default] = js.native
+  var IceyMaze: Instantiable3[
+    /* width */ Double, 
+    /* height */ Double, 
+    js.UndefOr[/* regularity */ Double], 
+    typings.rotDashJs.libMapIceymazeMod.default
+  ] = js.native
+  var Rogue: Instantiable3[
+    /* width */ Double, 
+    /* height */ Double, 
+    /* options */ Partial[typings.rotDashJs.libMapRogueMod.Options], 
+    typings.rotDashJs.libMapRogueMod.default
+  ] = js.native
+  var Uniform: Instantiable3[
+    /* width */ Double, 
+    /* height */ Double, 
+    /* options */ Partial[typings.rotDashJs.libMapUniformMod.Options], 
+    typings.rotDashJs.libMapUniformMod.default
+  ] = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for mongodb-memory-server
 
-Typings are for version 1.8
+Typings are for version 6.0.1
 
 ## Library description:
 MongoDB Server for testing (auto-download latest version). The server will allow you to connect your favourite ODM or client library to the MongoDB Server and run parallel integration tests isolated from each other.
@@ -24,7 +24,7 @@ MongoDB Server for testing (auto-download latest version). The server will allow
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

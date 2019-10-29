@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "reduce-reducers" : "1.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "reduce-reducers" : "1.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

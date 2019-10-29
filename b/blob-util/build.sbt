@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blob-util"
-version := "1.3-dt-20180214Z-d97468"
+version := "2.0.2-965ead"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

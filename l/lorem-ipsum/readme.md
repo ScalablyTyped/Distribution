@@ -1,7 +1,7 @@
 
 # Scala.js typings for lorem-ipsum
 
-Typings are for version 1.0
+Typings are for version 2.0.3
 
 ## Library description:
 Generates passages of lorem ipsum text suitable for use as placeholder copy in web pages, graphics, and more. Works in the browser, NodeJS, and React Native.
@@ -24,7 +24,7 @@ Generates passages of lorem ipsum text suitable for use as placeholder copy in w
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

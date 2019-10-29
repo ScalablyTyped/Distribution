@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-validator
 
-Typings are for version 4.1
+Typings are for version 5.0
 
 ## Library description:
 Validate html using validator.w3.org/nu

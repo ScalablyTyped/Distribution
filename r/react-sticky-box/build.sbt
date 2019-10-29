@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sticky-box"
-version := "0.7-dt-20190212Z-dabec8"
+version := "0.8.0-edf955"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

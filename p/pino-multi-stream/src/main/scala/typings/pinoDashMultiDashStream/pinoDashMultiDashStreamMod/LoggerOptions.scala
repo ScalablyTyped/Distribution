@@ -7,7 +7,6 @@ import typings.pino.pinoMod.PrettyOptions
 import typings.pino.pinoMod.SerializerFn
 import typings.pino.pinoMod.TimeFn
 import typings.pino.pinoMod.redactOptions
-import typings.pino.pinoNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +34,7 @@ object LoggerOptions {
     safe: js.UndefOr[Boolean] = js.undefined,
     serializers: StringDictionary[SerializerFn] = null,
     streams: Streams = null,
-    timestamp: TimeFn | `false` = null,
+    timestamp: TimeFn | Boolean = null,
     useLevelLabels: js.UndefOr[Boolean] = js.undefined,
     useOnlyCustomLevels: js.UndefOr[Boolean] = js.undefined
   ): LoggerOptions = {

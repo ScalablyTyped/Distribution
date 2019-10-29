@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait ClassPropertyBase extends BaseNode {
   var accessibility: js.UndefOr[Accessibility] = js.undefined
   var computed: Boolean
+  var declare: Boolean
   var decorators: js.UndefOr[js.Array[Decorator]] = js.undefined
   var definite: js.UndefOr[Boolean] = js.undefined
   var key: PropertyName
@@ -21,6 +22,7 @@ object ClassPropertyBase {
   @scala.inline
   def apply(
     computed: Boolean,
+    declare: Boolean,
     key: PropertyName,
     loc: SourceLocation,
     range: Range,
@@ -34,7 +36,7 @@ object ClassPropertyBase {
     typeAnnotation: TSTypeAnnotation = null,
     value: Expression = null
   ): ClassPropertyBase = {
-    val __obj = js.Dynamic.literal(computed = computed, key = key, loc = loc, range = range, static = static)
+    val __obj = js.Dynamic.literal(computed = computed, declare = declare, key = key, loc = loc, range = range, static = static)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (!js.isUndefined(definite)) __obj.updateDynamic("definite")(definite)
