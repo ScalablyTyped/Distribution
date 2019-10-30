@@ -4,7 +4,7 @@ import slinky.core.TagMod
 import slinky.core.facade.ReactElement
 import typings.antd.esFormFormMod.default.{create => createForm}
 import typings.antd.esFormFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
-import typings.antd.{antdComponents => Antd}
+import typings.antd.{antdProps, antdComponents => Antd}
 import typings.react.ScalableSlinky._
 import typings.react.reactMod.ComponentType
 
@@ -57,7 +57,7 @@ object AntdFacade extends antdProps {
   @inline def Column[T]: ExternalComponentP[ColumnProps[T]] = importSTComponent(Antd.Column[T])
   @inline def ColumnGroup: ExternalComponentP[ColumnGroupProps] = importSTComponent(Antd.ColumnGroup)
   @inline def Comment: ExternalComponentP[CommentProps] = importSTComponent(Antd.Comment)
-  @inline def ConfigConsumer: ExternalComponentP[ConfigConsumerProps[typings.antd.esConfigDashProviderMod.ConfigConsumerProps]] = importSTComponent(Antd.ConfigConsumer)
+//  @inline def ConfigConsumer: ExternalComponentP[ConfigConsumerProps[typings.antd.esConfigDashProviderMod.ConfigConsumerProps]] = importSTComponent(Antd.ConfigConsumer)
   @inline def ConfigDashProvider: ExternalComponentP[ConfigProviderProps] = importSTComponent(Antd.ConfigDashProvider)
   @inline def ConfigProvider: ExternalComponentP[ConfigProviderProps] = importSTComponent(Antd.ConfigProvider)
   @inline def Countdown: ExternalComponentP[CountdownProps] = importSTComponent(Antd.Countdown)
