@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-plotly_dot_js"
-version := "2.2-dt-20190925Z-c81d2b"
+version := "2.2-dt-20190925Z-6c58d1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -31,11 +31,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-time" % "1.0-dt-20190212Z-00ad12",
   "org.scalablytyped" %%% "d3-time-format" % "2.1-dt-20190212Z-67f000",
   "org.scalablytyped" %%% "d3-timer" % "1.0-dt-20190212Z-7eb029",
-  "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20190212Z-4c3557",
+  "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20191029Z-a75830",
   "org.scalablytyped" %%% "d3-voronoi" % "1.1-dt-20190212Z-6d4930",
   "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20190212Z-699389",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-714d92",
-  "org.scalablytyped" %%% "plotly_dot_js" % "1.44-dt-20191022Z-29080f",
+  "org.scalablytyped" %%% "plotly_dot_js" % "1.44-dt-20191030Z-02d1e7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")

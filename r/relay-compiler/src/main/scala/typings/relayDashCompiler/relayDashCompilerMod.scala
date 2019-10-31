@@ -1,15 +1,18 @@
 package typings.relayDashCompiler
 
 import typings.graphql.graphqlMod.GraphQLSchema
+import typings.graphql.languageAstMod.ASTNode
 import typings.graphql.languageAstMod.DefinitionNode
 import typings.graphql.typeDefinitionMod.GraphQLType
 import typings.relayDashCompiler.libBinRelayCompilerMainMod.Config
 import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.CompilerContextDocument
 import typings.relayDashCompiler.libCoreGraphQLCompilerContextMod.IRTransform
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Fragment
+import typings.relayDashCompiler.libCoreGraphQLIRMod.Location
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Root
 import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.NodeVisitor
 import typings.relayDashCompiler.libCoreGraphQLIRVisitorMod.VisitNode
+import typings.relayDashCompiler.libCoreRelayCompilerErrorMod.UserError
 import typings.relayDashCompiler.libReportersGraphQLConsoleReporterMod.GraphQLMultiReporter
 import typings.std.Error
 import scala.scalajs.js
@@ -48,6 +51,9 @@ object relayDashCompilerMod extends js.Object {
   }
   
   var transformASTSchema: js.Function2[/* schema */ GraphQLSchema, /* transforms */ js.Array[String], GraphQLSchema] = js.native
+  def createUserError(message: String): UserError = js.native
+  def createUserError(message: String, locations: js.Array[Location]): UserError = js.native
+  def createUserError(message: String, locations: js.Array[Location], nodes: js.Array[ASTNode]): UserError = js.native
   def relayCompiler(config: Config): js.Promise[Unit] = js.native
   @js.native
   object ASTConvert extends js.Object {

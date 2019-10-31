@@ -99,6 +99,7 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
       dctMethod: String
     ): Tensor3D = js.native
     def decodePng(contents: Uint8Array, channels: Double): Tensor3D = js.native
+    def deleteSavedModel(id: Double): Unit = js.native
     def depthToSpace(x: Tensor[R4], blockSize: Double, dataFormat: String): Tensor[R4] = js.native
     def diag(x: Tensor[Rank]): Tensor[Rank] = js.native
     def divide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
@@ -210,6 +211,7 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
     def greaterEqual(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     def less(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     def lessEqual(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+    def loadSavedModelMetaGraph(path: String, tags: String): Double = js.native
     def logicalAnd(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     def logicalOr(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     def max(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native

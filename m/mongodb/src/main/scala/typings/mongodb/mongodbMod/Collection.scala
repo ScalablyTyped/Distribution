@@ -114,8 +114,10 @@ trait Collection[TSchema] extends js.Object {
     options: CommonOptions with Anon_BypassDocumentValidation,
     callback: MongoCallback[DeleteWriteOpResultObject]
   ): Unit = js.native
-  def distinct(key: String, query: FilterQuery[TSchema]): js.Promise[_] = js.native
+  def distinct(key: String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#distinct */
+  def distinct(key: String, callback: MongoCallback[_]): Unit = js.native
+  def distinct(key: String, query: FilterQuery[TSchema]): js.Promise[_] = js.native
   def distinct(key: String, query: FilterQuery[TSchema], callback: MongoCallback[_]): Unit = js.native
   def distinct(key: String, query: FilterQuery[TSchema], options: Anon_MaxTimeMSReadPreference): js.Promise[_] = js.native
   def distinct(

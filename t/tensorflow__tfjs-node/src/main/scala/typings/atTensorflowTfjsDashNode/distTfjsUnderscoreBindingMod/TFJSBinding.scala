@@ -29,9 +29,11 @@ trait TFJSBinding extends js.Object {
   var TF_Version: String
   var TensorMetadata: Instantiable0[typings.atTensorflowTfjsDashNode.distTfjsUnderscoreBindingMod.TensorMetadata]
   def createTensor(shape: js.Array[Double], dtype: Double, buffer: BackendValues): Double
+  def deleteSavedModel(savedModelId: Double): Unit
   def deleteTensor(tensorId: Double): Unit
   def executeOp(opName: String, opAttrs: js.Array[TFEOpAttr], inputTensorIds: js.Array[Double], numOutputs: Double): js.Array[TensorMetadata]
   def isUsingGpuDevice(): Boolean
+  def loadSavedModel(exportDir: String, tags: String): Double
   def tensorDataSync(tensorId: Double): Float32Array | Int32Array | Uint8Array
 }
 
@@ -57,12 +59,14 @@ object TFJSBinding {
     TF_Version: String,
     TensorMetadata: Instantiable0[TensorMetadata],
     createTensor: (js.Array[Double], Double, BackendValues) => Double,
+    deleteSavedModel: Double => Unit,
     deleteTensor: Double => Unit,
     executeOp: (String, js.Array[TFEOpAttr], js.Array[Double], Double) => js.Array[TensorMetadata],
     isUsingGpuDevice: () => Boolean,
+    loadSavedModel: (String, String) => Double,
     tensorDataSync: Double => Float32Array | Int32Array | Uint8Array
   ): TFJSBinding = {
-    val __obj = js.Dynamic.literal(TFEOpAttr = TFEOpAttr, TF_ATTR_BOOL = TF_ATTR_BOOL, TF_ATTR_FLOAT = TF_ATTR_FLOAT, TF_ATTR_INT = TF_ATTR_INT, TF_ATTR_RESOURCE = TF_ATTR_RESOURCE, TF_ATTR_SHAPE = TF_ATTR_SHAPE, TF_ATTR_STRING = TF_ATTR_STRING, TF_ATTR_TYPE = TF_ATTR_TYPE, TF_BOOL = TF_BOOL, TF_COMPLEX64 = TF_COMPLEX64, TF_FLOAT = TF_FLOAT, TF_INT32 = TF_INT32, TF_INT64 = TF_INT64, TF_RESOURCE = TF_RESOURCE, TF_STRING = TF_STRING, TF_UINT8 = TF_UINT8, TF_Version = TF_Version, TensorMetadata = TensorMetadata, createTensor = js.Any.fromFunction3(createTensor), deleteTensor = js.Any.fromFunction1(deleteTensor), executeOp = js.Any.fromFunction4(executeOp), isUsingGpuDevice = js.Any.fromFunction0(isUsingGpuDevice), tensorDataSync = js.Any.fromFunction1(tensorDataSync))
+    val __obj = js.Dynamic.literal(TFEOpAttr = TFEOpAttr, TF_ATTR_BOOL = TF_ATTR_BOOL, TF_ATTR_FLOAT = TF_ATTR_FLOAT, TF_ATTR_INT = TF_ATTR_INT, TF_ATTR_RESOURCE = TF_ATTR_RESOURCE, TF_ATTR_SHAPE = TF_ATTR_SHAPE, TF_ATTR_STRING = TF_ATTR_STRING, TF_ATTR_TYPE = TF_ATTR_TYPE, TF_BOOL = TF_BOOL, TF_COMPLEX64 = TF_COMPLEX64, TF_FLOAT = TF_FLOAT, TF_INT32 = TF_INT32, TF_INT64 = TF_INT64, TF_RESOURCE = TF_RESOURCE, TF_STRING = TF_STRING, TF_UINT8 = TF_UINT8, TF_Version = TF_Version, TensorMetadata = TensorMetadata, createTensor = js.Any.fromFunction3(createTensor), deleteSavedModel = js.Any.fromFunction1(deleteSavedModel), deleteTensor = js.Any.fromFunction1(deleteTensor), executeOp = js.Any.fromFunction4(executeOp), isUsingGpuDevice = js.Any.fromFunction0(isUsingGpuDevice), loadSavedModel = js.Any.fromFunction2(loadSavedModel), tensorDataSync = js.Any.fromFunction1(tensorDataSync))
   
     __obj.asInstanceOf[TFJSBinding]
   }

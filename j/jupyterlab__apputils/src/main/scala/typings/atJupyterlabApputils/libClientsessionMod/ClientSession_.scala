@@ -5,7 +5,9 @@ import typings.atJupyterlabApputils.libClientsessionMod.IClientSession.IKernelPr
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IKernelConnection
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IModel
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.Status
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IIOPubMessage
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IMessage
+import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOPubMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.MessageType
 import typings.atJupyterlabServices.libSessionSessionMod.Session.IKernelChangedArgs
 import typings.atJupyterlabServices.libSessionSessionMod.Session.IManager
@@ -96,6 +98,11 @@ class ClientSession_ protected () extends IClientSession {
     */
   /* CompleteClass */
   override val iopubMessage: ISignal[this.type, IMessage[MessageType]] = js.native
+  /**
+    * A signal emitted for iopub kernel messages.
+    */
+  @JSName("iopubMessage")
+  val iopubMessage_ClientSession_ : ISignal[this.type, IIOPubMessage[IOPubMessageType]] = js.native
   /**
     * Test whether the object has been disposed.
     *

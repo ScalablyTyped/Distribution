@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
   - typings.muiDashDatatables.muiDashDatatablesStrings.multiselect
   - typings.muiDashDatatables.muiDashDatatablesStrings.textField
   - typings.muiDashDatatables.muiDashDatatablesStrings.custom
+  - typings.muiDashDatatables.muiDashDatatablesStrings.chip
+  - typings.muiDashDatatables.muiDashDatatablesStrings.reset
 */
 trait FilterType extends js.Object
 

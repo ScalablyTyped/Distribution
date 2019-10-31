@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "word-wrap" : "1.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "word-wrap" : "1.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

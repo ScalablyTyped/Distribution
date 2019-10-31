@@ -16,6 +16,7 @@ import typings.stripe.stripeMod.accounts.ICardListOptions
 import typings.stripe.stripeMod.accounts.IExternalAccountCreationOptions
 import typings.stripe.stripeMod.accounts.IExternalAccountUpdateOptions
 import typings.stripe.stripeMod.accounts.ILoginLink
+import typings.stripe.stripeMod.accounts.ILoginLinkOptions
 import typings.stripe.stripeMod.accounts.IPerson
 import typings.stripe.stripeMod.accounts.IPersonCreateUpdateOptions
 import typings.stripe.stripeMod.accounts.IPersonListOptions
@@ -77,8 +78,8 @@ class Accounts () extends StripeResource {
     * Returns a login link object if the call succeeded.
     */
   def createLoginLink(accId: String): js.Promise[ILoginLink] = js.native
-  def createLoginLink(accId: String, redirectUrl: String): js.Promise[ILoginLink] = js.native
-  def createLoginLink(accId: String, redirectUrl: String, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
+  def createLoginLink(accId: String, options: ILoginLinkOptions): js.Promise[ILoginLink] = js.native
+  def createLoginLink(accId: String, options: ILoginLinkOptions, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
   def createLoginLink(accId: String, response: IResponseFn[ILoginLink]): js.Promise[ILoginLink] = js.native
   def createPerson(accId: String, data: IPersonCreateUpdateOptions): js.Promise[IPerson] = js.native
   /**

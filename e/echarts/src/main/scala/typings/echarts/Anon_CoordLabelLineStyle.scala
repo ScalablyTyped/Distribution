@@ -42,10 +42,10 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markLine.data.1)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine.data.1)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.coord
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.coord
     */
   var coord: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -53,7 +53,7 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     * `label` of starting point and ending point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.label
     */
   var label: js.UndefOr[Anon_Emphasis] = js.undefined
   /**
@@ -61,14 +61,14 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     * with `lineStyle` of starting point and ending point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.lineStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorCurvenessEmphasis] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorCurvenessEmphasisOpacityShadowBlur] = js.undefined
   /**
     * Name of the marker, which will display as a label.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.name
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.name
     */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markLine.data.1)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine.data.1)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -107,10 +107,10 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markLine.data.1)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine.data.1)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.symbol
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   /**
@@ -118,7 +118,7 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     * `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.symbolKeepAspect
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   /**
@@ -141,7 +141,7 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.symbolOffset
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
@@ -151,7 +151,7 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     * and compulsively use tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.symbolRotate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   /**
@@ -162,14 +162,28 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     * and height is`10`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.symbolSize
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
+  /**
+    * Special label types, are used to label maximum value,
+    * minimum value and so on.
+    *
+    * **Options are:**
+    *
+    * + `'min'` maximum value.
+    * + `'max'` minimum value.
+    * + `'average'` average value.
+    *
+    *
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.type
+    */
+  var `type`: js.UndefOr[String] = js.undefined
   /**
     * Label value, which can be ignored.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.value
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.value
     */
   var value: js.UndefOr[Double] = js.undefined
   /**
@@ -183,7 +197,7 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     * for candlestick charts.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.valueDim
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.valueDim
     */
   var valueDim: js.UndefOr[String] = js.undefined
   /**
@@ -197,21 +211,21 @@ trait Anon_CoordLabelLineStyle extends js.Object {
     * Dimension of the first numeric axis is used by default.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.valueIndex
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.valueIndex
     */
   var valueIndex: js.UndefOr[Double] = js.undefined
   /**
     * X position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.x
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.x
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
     * Y position according to container, in pixel.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine.data.1.y
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.1.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }
@@ -221,13 +235,14 @@ object Anon_CoordLabelLineStyle {
   def apply(
     coord: js.Array[_] = null,
     label: Anon_Emphasis = null,
-    lineStyle: Anon_ColorCurvenessEmphasis = null,
+    lineStyle: Anon_ColorCurvenessEmphasisOpacityShadowBlur = null,
     name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | Double = null,
+    `type`: String = null,
     value: Int | Double = null,
     valueDim: String = null,
     valueIndex: Int | Double = null,
@@ -244,6 +259,7 @@ object Anon_CoordLabelLineStyle {
     if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
     if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueDim != null) __obj.updateDynamic("valueDim")(valueDim)
     if (valueIndex != null) __obj.updateDynamic("valueIndex")(valueIndex.asInstanceOf[js.Any])

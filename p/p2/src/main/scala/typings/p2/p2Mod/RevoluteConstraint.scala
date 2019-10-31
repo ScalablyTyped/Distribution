@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("p2", "RevoluteConstraint")
 @js.native
 class RevoluteConstraint protected () extends Constraint {
-  def this(bodyA: Body, bodyB: Body, `type`: Double) = this()
-  def this(bodyA: Body, bodyB: Body, `type`: Double, options: RevoluteConstraintOptions) = this()
+  def this(bodyA: Body, bodyB: Body) = this()
+  def this(bodyA: Body, bodyB: Body, options: RevoluteConstraintOptions) = this()
   var angle: Double = js.native
   var lowerLimit: Double = js.native
   var lowerLimitEnabled: Boolean = js.native

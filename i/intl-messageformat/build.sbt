@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "intl-messageformat"
-version := "7.3.3-34976b"
+version := "7.5.0-b21103"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

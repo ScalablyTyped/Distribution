@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssemblySwitch
-  extends BaseASTNode
-     with ASTNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ASTNode because Already inherited */ trait AssemblySwitch
+  extends AssemblyItem
+     with BaseASTNode {
   @JSName("type")
   var type_AssemblySwitch: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblySwitch
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "document-promises" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "document-promises" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

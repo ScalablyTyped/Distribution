@@ -204,6 +204,9 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait change extends js.Object
   
   @js.native
+  sealed trait checkbox extends js.Object
+  
+  @js.native
   sealed trait checked extends js.Object
   
   @js.native
@@ -693,6 +696,9 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait suggestionsItemClassName extends js.Object
   
   @js.native
+  sealed trait switch extends js.Object
+  
+  @js.native
   sealed trait teal extends js.Object
   
   @js.native
@@ -906,6 +912,8 @@ object officeDashUiDashFabricDashReactStrings {
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
+  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
   def checked: checked = "checked".asInstanceOf[checked]
   @scala.inline
@@ -1232,6 +1240,8 @@ object officeDashUiDashFabricDashReactStrings {
   def suggestionsHeaderText: suggestionsHeaderText = "suggestionsHeaderText".asInstanceOf[suggestionsHeaderText]
   @scala.inline
   def suggestionsItemClassName: suggestionsItemClassName = "suggestionsItemClassName".asInstanceOf[suggestionsItemClassName]
+  @scala.inline
+  def switch: switch = "switch".asInstanceOf[switch]
   @scala.inline
   def teal: teal = "teal".asInstanceOf[teal]
   @scala.inline

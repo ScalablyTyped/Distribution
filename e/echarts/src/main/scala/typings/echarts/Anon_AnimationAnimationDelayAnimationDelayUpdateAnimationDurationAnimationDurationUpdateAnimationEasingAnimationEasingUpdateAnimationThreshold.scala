@@ -11,7 +11,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.animation
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   /**
@@ -21,14 +21,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine)
     *
     * See
     * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.animationDelay
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -37,40 +37,38 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine)
     *
     * See
     * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
     * for more information.
     *
-    * prefix
     *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.animationDelayUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.animationDuration
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.animationDurationUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   /**
@@ -82,7 +80,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.animationEasing
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   /**
@@ -91,7 +89,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.animationEasingUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   /**
@@ -102,165 +100,112 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.animationThreshold
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   /**
-    * Data array for mark points, each of which is an object.
-    * Here are some ways to assign mark point position.
+    * Data array of marking line.
+    * Every array item can be an array of one or two values, representing
+    * starting and ending point of the line, and every item is
+    * an object.
+    * Here are several ways to assign the positions of starting
+    * and ending point.
     *
     * 1. Assign coordinate according to container with
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.x)
+    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.0.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.y)
+    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.0.y)
     * attribute, in which pixel values and percentage are supported.
     *
     * 2. Assign coordinate position with
-    * [coord](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data.coord)
+    * [coord](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.0.coord)
     * attribute, in which `'min'`, `'max'`, `'average'` are supported
     * for each dimension.
+    *
+    * 3. Use
+    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.0.type)
+    * attribute to mark the maximum and minimum values in the series,
+    * in which
+    * [valueIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.0.valueIndex)
+    * or
+    * [valueDim](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.0.valueDim)
+    * can be used to assign the dimension.
+    *
+    * 4.
+    * You may also create a mark line in Cartesian coordinate at
+    * a specific position in X or Y axis by assigning `xAxis` or
+    * `yAxis`. See
+    * [scatter-weight](https://ecomfe.github.io/echarts-examples/public/editor.html?c=scatter-weight)
+    * for example.
     *
     * When multiple attributes exist, priority is as the above
     * order.
     *
-    * **For example:**
+    * You may also set the type of mark line through `type`, stating
+    * whether it is for the maximum value or average value.
+    * Likewise, dimensions can be assigned through `valueIndex`.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.line.markLine)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.data
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data
     */
-  var data: js.UndefOr[Anon_CoordItemStyleLabel] = js.undefined
+  var data: js.UndefOr[Anon_01AnonCoordLabelLineStyle] = js.undefined
   /**
-    * Mark point style.
+    * Mark line text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.label
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidth] = js.undefined
+  var label: js.UndefOr[Anon_Emphasis] = js.undefined
   /**
-    * Label of mark point.
+    * Mark line style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.lineStyle
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadius] = js.undefined
+  var lineStyle: js.UndefOr[Anon_ColorCurvenessEmphasisOpacity] = js.undefined
+  /**
+    * Precison of marking line value, which is useful when displaying
+    * average value mark line.
+    *
+    *
+    * @default
+    * 2
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.precision
+    */
+  var precision: js.UndefOr[Double] = js.undefined
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to
     * mouse events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.silent
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   /**
-    * Symbol of .
-    *
-    * Icon types provided by ECharts includes `'circle'`, `'rect'`,
-    * `'roundRect'`, `'triangle'`, `'diamond'`, `'pin'`, `'arrow'`,
-    * `'none'`
-    *
-    * It can be set to an image with `'image://url'` , in which
-    * URL is the link to an image, or `dataURI` of an image.
-    *
-    * An image URL example:
-    *
-    * ```
-    * 'image://http://xxx.xxx.xxx/a/b.png'
-    *
-    * ```
-    *
-    * A `dataURI` example:
-    *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint)
-    *
-    * Icons can be set to arbitrary vector path via `'path://'`
-    * in ECharts.
-    * As compared with raster image, vector paths prevent from
-    * jagging and blurring when scaled, and have a better control
-    * over changing colors.
-    * Size of vectoer icon will be adapted automatically.
-    * Refer to
-    * [SVG PathData](http://www.w3.org/TR/SVG/paths.html#PathData)
-    * for more information about format of path.
-    * You may export vector paths from tools like Adobe Illustrator.
-    *
-    * For example:
-    *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.map.markPoint)
+    * Symbol type at the two ends of the mark line.
+    * It can be an array for two ends, or assigned seperately.
+    * See
+    * [data.symbol](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.data.0.symbol)
+    * for more format information.
     *
     *
-    * @default
-    * "pin"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.symbol
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.symbol
     */
-  var symbol: js.UndefOr[String] = js.undefined
+  var symbol: js.UndefOr[js.Array[_] | String] = js.undefined
   /**
-    * Whether to keep aspect for symbols in the form of `path://`.
+    * Symbol size at the two ends of the mark line.
+    * It can be an array for two ends, or assigned seperately.
+    *
+    * **Attention:** You cannot assgin width and height seperately
+    * as normal `symbolSize`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.symbolKeepAspect
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine.symbolSize
     */
-  var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Offset of symbol relative to original position.
-    * By default, symbol will be put in the center position of
-    * data.
-    * But if symbol is from user-defined vector path or image,
-    * you may not expect symbol to be in center.
-    * In this case, you may use this attribute to set offset to
-    * default position.
-    * It can be in absolute pixel value, or in relative percentage
-    * value.
-    *
-    * For example, `[0, '50%']` means to move upside side position
-    * of symbol height.
-    * It can be used to make the arrow in the bottom to be at data
-    * position when symbol is pin.
-    *
-    *
-    * @default
-    * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.symbolOffset
-    */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
-  /**
-    * Rotate degree of symbol.
-    * Note that when `symbol` is set to be `'arrow'` in `markLine`,
-    * `symbolRotate` value will be ignored, and compulsively use
-    * tangent angle.
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.symbolRotate
-    */
-  var symbolRotate: js.UndefOr[Double] = js.undefined
-  /**
-    * symbol size.
-    * It can be set to single numbers like `10`, or use an array
-    * to represent width and height.
-    * For example, `[20, 10]` means symbol width is `20`, and height
-    * is`10`.
-    *
-    * If size of symbols needs to be different, you can set with
-    * callback function in the following format:
-    *
-    * ```
-    * (value: Array|number, params: Object) => number|Array
-    *
-    * ```
-    *
-    * The first parameter `value` is the value in
-    * [data](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-.data)
-    * , and the second parameter `params` is the rest parameters
-    * of data item.
-    *
-    *
-    * @default
-    * 50
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint.symbolSize
-    */
-  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
 }
 
 object Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold {
@@ -274,15 +219,13 @@ object Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimatio
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
-    data: Anon_CoordItemStyleLabel = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidth = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadius = null,
+    data: Anon_01AnonCoordLabelLineStyle = null,
+    label: Anon_Emphasis = null,
+    lineStyle: Anon_ColorCurvenessEmphasisOpacity = null,
+    precision: Int | Double = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    symbol: String = null,
-    symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
-    symbolOffset: js.Array[_] = null,
-    symbolRotate: Int | Double = null,
-    symbolSize: js.Array[_] | js.Function | Double = null
+    symbol: js.Array[_] | String = null,
+    symbolSize: js.Array[_] | Double = null
   ): Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
@@ -294,13 +237,11 @@ object Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimatio
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
     if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (label != null) __obj.updateDynamic("label")(label)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
-    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
-    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold]
   }

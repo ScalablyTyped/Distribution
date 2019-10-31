@@ -1,6 +1,6 @@
 package typings.redom.redomMod
 
-import typings.std.HTMLElement
+import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("redom", "h")
 @js.native
 object h extends js.Object {
-  def apply(query: RedomQuery, args: RedomQueryArgument*): HTMLElement = js.native
+  def apply(query: String, args: RedomQueryArgument*): HTMLElementOfRedomQuery[String] = js.native
+  def apply(query: RedomComponent, args: RedomQueryArgument*): HTMLElementOfRedomQuery[RedomComponent] = js.native
+  def apply(query: Node, args: RedomQueryArgument*): HTMLElementOfRedomQuery[Node] = js.native
 }
 

@@ -25,6 +25,15 @@ object appendFile extends js.Object {
   def apply(file: String, data: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(file: String, data: String, options: String): js.Promise[Unit] = js.native
   def apply(file: String, data: String, options: Anon_EncodingFlag): js.Promise[Unit] = js.native
+  def apply(file: String, data: js.Any): js.Promise[Unit] = js.native
+  def apply(file: String, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  def apply(file: String, data: js.Any, options: typings.fsDashExtra.Anon_Encoding): js.Promise[Unit] = js.native
+  def apply(
+    file: String,
+    data: js.Any,
+    options: typings.fsDashExtra.Anon_Encoding,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
   def apply(file: String, data: Buffer): js.Promise[Unit] = js.native
   def apply(file: String, data: Buffer, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(file: String, data: Buffer, options: String): js.Promise[Unit] = js.native
@@ -33,7 +42,19 @@ object appendFile extends js.Object {
   def apply(file: Double, data: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(file: Double, data: String, options: String): js.Promise[Unit] = js.native
   def apply(file: Double, data: String, options: Anon_EncodingFlag): js.Promise[Unit] = js.native
-  def apply(file: Double, data: js.Any, callback: NoParamCallback): Unit = js.native
+  def apply(file: Double, data: js.Any): js.Promise[Unit] = js.native
+  def apply(
+    file: Double,
+    data: js.Any,
+    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
+  ): Unit = js.native
+  def apply(file: Double, data: js.Any, options: typings.fsDashExtra.Anon_Encoding): js.Promise[Unit] = js.native
+  def apply(
+    file: Double,
+    data: js.Any,
+    options: typings.fsDashExtra.Anon_Encoding,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
   def apply(file: Double, data: js.Any, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
   def apply(file: Double, data: Buffer): js.Promise[Unit] = js.native
   def apply(file: Double, data: Buffer, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
@@ -43,6 +64,15 @@ object appendFile extends js.Object {
   def apply(file: Buffer, data: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(file: Buffer, data: String, options: String): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: String, options: Anon_EncodingFlag): js.Promise[Unit] = js.native
+  def apply(file: Buffer, data: js.Any): js.Promise[Unit] = js.native
+  def apply(file: Buffer, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  def apply(file: Buffer, data: js.Any, options: typings.fsDashExtra.Anon_Encoding): js.Promise[Unit] = js.native
+  def apply(
+    file: Buffer,
+    data: js.Any,
+    options: typings.fsDashExtra.Anon_Encoding,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
   def apply(file: Buffer, data: Buffer): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: Buffer, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(file: Buffer, data: Buffer, options: String): js.Promise[Unit] = js.native

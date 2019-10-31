@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "browserify"
-version := "12.0-dt-20190322Z-60b49c"
+version := "12.0-dt-20190322Z-98a858"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "insert-module-globals" % "7.0-dt-20190212Z-a90b07",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "insert-module-globals" % "7.0-dt-20190212Z-5d0a2a",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

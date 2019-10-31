@@ -37,6 +37,15 @@ class OutputArea_ protected () extends Widget {
   var _insertOutput: js.Any = js.native
   var _minHeightTimeout: js.Any = js.native
   /**
+    * Update indices in _displayIdMap in response to element remove from model items
+    * *
+    * @param startIndex - The index of first element removed
+    *
+    * @param count - The number of elements removed from model items
+    *
+    */
+  var _moveDisplayIdIndices: js.Any = js.native
+  /**
     * Handle an execute reply message.
     */
   var _onExecuteReply: js.Any = js.native
@@ -44,6 +53,7 @@ class OutputArea_ protected () extends Widget {
     * Handle an iopub message.
     */
   var _onIOPub: js.Any = js.native
+  var _preventHeightChangeJitter: js.Any = js.native
   /**
     * Update an output in the layout in place.
     */
@@ -78,6 +88,9 @@ class OutputArea_ protected () extends Widget {
   val widgets: js.Array[Widget] = js.native
   /**
     * Create an output item with a prompt and actual output
+    *
+    * @returns a rendered widget, or null if we cannot render
+    * #### Notes
     */
   /* protected */ def createOutputItem(model: IOutputModel): Widget | Null = js.native
   /**

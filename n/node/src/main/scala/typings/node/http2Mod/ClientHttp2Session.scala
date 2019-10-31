@@ -11,9 +11,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("http2", "ClientHttp2Session")
 @js.native
-class ClientHttp2Session protected () extends Http2Session {
+trait ClientHttp2Session extends Http2Session {
   @JSName("addListener")
   def addListener_altsvc(
     event: altsvc,

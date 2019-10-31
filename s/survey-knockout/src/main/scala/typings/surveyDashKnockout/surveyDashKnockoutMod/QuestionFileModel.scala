@@ -22,7 +22,13 @@ class QuestionFileModel protected () extends Question {
     * Set it to true, to allow select multiple files.
     */
   var allowMultiple: Boolean = js.native
+  /**
+    * The choose files value button caption for modern theme
+    */
   val chooseButtonCaption: String = js.native
+  /**
+    * The clean files value button caption.
+    */
   val cleanButtonCaption: String = js.native
   var currentState: String = js.native
   /**
@@ -42,7 +48,7 @@ class QuestionFileModel protected () extends Question {
     */
   var maxSize: Double = js.native
   /**
-    * The clean files value button caption.
+    * The no file chosen caption for modern theme
     */
   val noFileChosenCaption: String = js.native
   /**

@@ -40,7 +40,7 @@ trait IModel extends IDisposable {
   /**
     * A signal emitted when a property changes.
     */
-  var mimeTypeChanged: ISignal[IModel, IChangedArgs[String]]
+  var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String]]
   /**
     * The underlying `IModelDB` instance in which model
     * data is stored.
@@ -62,7 +62,7 @@ object IModel {
     dispose: () => Unit,
     isDisposed: Boolean,
     mimeType: String,
-    mimeTypeChanged: ISignal[IModel, IChangedArgs[String]],
+    mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String]],
     modelDB: IModelDB,
     selections: IObservableMap[js.Array[ITextSelection]],
     value: IObservableString

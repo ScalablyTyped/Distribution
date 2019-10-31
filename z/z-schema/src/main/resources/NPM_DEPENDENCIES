@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "z-schema" : "4.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "z-schema" : "4.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

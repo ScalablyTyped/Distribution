@@ -23,7 +23,9 @@ import typings.gestalt.gestaltStrings.pine
 import typings.gestalt.gestaltStrings.purple
 import typings.gestalt.gestaltStrings.red
 import typings.gestalt.gestaltStrings.right
+import typings.gestalt.gestaltStrings.short
 import typings.gestalt.gestaltStrings.sm
+import typings.gestalt.gestaltStrings.tall
 import typings.gestalt.gestaltStrings.watermelon
 import typings.gestalt.gestaltStrings.white
 import typings.gestalt.gestaltStrings.xl
@@ -42,6 +44,7 @@ trait TextProps extends js.Object {
   ] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var italic: js.UndefOr[Boolean] = js.undefined
+  var leading: js.UndefOr[short | tall] = js.undefined
   var lgSize: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
   var mdSize: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
   var overflow: js.UndefOr[normal | breakWord] = js.undefined
@@ -59,6 +62,7 @@ object TextProps {
     color: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     italic: js.UndefOr[Boolean] = js.undefined,
+    leading: short | tall = null,
     lgSize: xs | sm | md | lg | xl = null,
     mdSize: xs | sm | md | lg | xl = null,
     overflow: normal | breakWord = null,
@@ -73,6 +77,7 @@ object TextProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (leading != null) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
     if (lgSize != null) __obj.updateDynamic("lgSize")(lgSize.asInstanceOf[js.Any])
     if (mdSize != null) __obj.updateDynamic("mdSize")(mdSize.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])

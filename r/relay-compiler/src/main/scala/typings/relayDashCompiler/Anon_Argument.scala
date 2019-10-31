@@ -3,6 +3,7 @@ package typings.relayDashCompiler
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Argument
 import typings.relayDashCompiler.libCoreGraphQLIRMod.ClientExtension
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Condition
+import typings.relayDashCompiler.libCoreGraphQLIRMod.Connection
 import typings.relayDashCompiler.libCoreGraphQLIRMod.ConnectionField
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Defer
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Directive
@@ -30,6 +31,7 @@ trait Anon_Argument extends js.Object {
   var Argument: js.UndefOr[VisitFn[typings.relayDashCompiler.libCoreGraphQLIRMod.Argument]] = js.undefined
   var ClientExtension: js.UndefOr[VisitFn[typings.relayDashCompiler.libCoreGraphQLIRMod.ClientExtension]] = js.undefined
   var Condition: js.UndefOr[VisitFn[typings.relayDashCompiler.libCoreGraphQLIRMod.Condition]] = js.undefined
+  var Connection: js.UndefOr[VisitFn[typings.relayDashCompiler.libCoreGraphQLIRMod.Connection]] = js.undefined
   var ConnectionField: js.UndefOr[VisitFn[typings.relayDashCompiler.libCoreGraphQLIRMod.ConnectionField]] = js.undefined
   var Defer: js.UndefOr[VisitFn[typings.relayDashCompiler.libCoreGraphQLIRMod.Defer]] = js.undefined
   var Directive: js.UndefOr[VisitFn[typings.relayDashCompiler.libCoreGraphQLIRMod.Directive]] = js.undefined
@@ -59,6 +61,9 @@ object Anon_Argument {
   // These correspond to array indices in `path`.
   js.Any = null,
     Condition: (Condition, /* key */ js.UndefOr[js.Any], /* parent */ js.UndefOr[Null | VisitNode | js.Array[VisitNode]], /* path */ js.UndefOr[js.Array[js.Any]], /* ancestors */ js.UndefOr[js.Array[VisitNode | js.Array[VisitNode]]]) => // Note: ancestors includes arrays which contain the visited node
+  // These correspond to array indices in `path`.
+  js.Any = null,
+    Connection: (Connection, /* key */ js.UndefOr[js.Any], /* parent */ js.UndefOr[Null | VisitNode | js.Array[VisitNode]], /* path */ js.UndefOr[js.Array[js.Any]], /* ancestors */ js.UndefOr[js.Array[VisitNode | js.Array[VisitNode]]]) => // Note: ancestors includes arrays which contain the visited node
   // These correspond to array indices in `path`.
   js.Any = null,
     ConnectionField: (ConnectionField, /* key */ js.UndefOr[js.Any], /* parent */ js.UndefOr[Null | VisitNode | js.Array[VisitNode]], /* path */ js.UndefOr[js.Array[js.Any]], /* ancestors */ js.UndefOr[js.Array[VisitNode | js.Array[VisitNode]]]) => // Note: ancestors includes arrays which contain the visited node
@@ -117,6 +122,7 @@ object Anon_Argument {
     if (Argument != null) __obj.updateDynamic("Argument")(js.Any.fromFunction5(Argument))
     if (ClientExtension != null) __obj.updateDynamic("ClientExtension")(js.Any.fromFunction5(ClientExtension))
     if (Condition != null) __obj.updateDynamic("Condition")(js.Any.fromFunction5(Condition))
+    if (Connection != null) __obj.updateDynamic("Connection")(js.Any.fromFunction5(Connection))
     if (ConnectionField != null) __obj.updateDynamic("ConnectionField")(js.Any.fromFunction5(ConnectionField))
     if (Defer != null) __obj.updateDynamic("Defer")(js.Any.fromFunction5(Defer))
     if (Directive != null) __obj.updateDynamic("Directive")(js.Any.fromFunction5(Directive))

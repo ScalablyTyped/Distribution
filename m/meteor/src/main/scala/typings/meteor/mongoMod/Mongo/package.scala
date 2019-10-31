@@ -8,6 +8,8 @@ package object Mongo {
   import org.scalablytyped.runtime.StringDictionary
   import typings.meteor.Anon_01
   import typings.meteor.Anon_And
+  import typings.meteor.Anon_Id
+  import typings.meteor.meteorStrings._id
   import typings.std.Number
   import typings.std.Partial
   import typings.std.Record
@@ -24,6 +26,7 @@ package object Mongo {
   type Modifier[T] = T | Anon_01[T]
   type OnlyArrays[T] = T
   type OnlyElementsOfArrays[T] = Partial[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any]
+  type OptionalId[TSchema] = (typings.meteor.mongoMod.UnionOmit[TSchema, _id]) with Anon_Id
   type PartialMapTo[T, M] = Partial[Record[String, M]]
   type PushModifier[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? meteor.meteor/mongo.Mongo.OnlyElementsOfArrays<T[P]> | {  $each? :T[P],   $position? :number,   $slice? :number,   $sort? :1 | -1 | meteor.meteor/mongo.Mongo.Dictionary<number>}}

@@ -9,68 +9,48 @@ import scala.scalajs.js.annotation._
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.PragmaDirective
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.PragmaName
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.PragmaValue
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Version
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.VersionOperator
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.VersionConstraint
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ImportDeclaration
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ImportDirective
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ContractDefinition
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.InheritanceSpecifier
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ContractPart
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.StateVariableDeclaration
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.UsingForDeclaration
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.StructDefinition
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ModifierDefinition
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ModifierInvocation
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.FunctionDefinition
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ReturnParameters
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ModifierList
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.EventDefinition
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.EnumValue
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.EnumDefinition
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ParameterList
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Parameter
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.EventParameterList
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.EventParameter
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.FunctionTypeParameterList
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.FunctionTypeParameter
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.VariableDeclaration
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.TypeName
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.UserDefinedTypeName
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Mapping
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ArrayTypeName
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.FunctionTypeName
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.StorageLocation
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.StateMutability
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Block
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Statement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ExpressionStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.IfStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.WhileStatement
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.SimpleStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ForStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.InlineAssemblyStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.DoWhileStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ContinueStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Break
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Continue
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.BreakStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ReturnStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.EmitStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ThrowStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.VariableDeclarationStatement
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.IdentifierList
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ElementaryTypeName
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Expression
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.PrimaryExpression
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ExpressionList
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.NameValueList
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.NameValue
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.FunctionCallArguments
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.FunctionCall
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyBlock
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyItem
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyExpression
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyCall
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyLocalDefinition
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyAssignment
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyIdentifierOrList
-  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyIdentifierList
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyStackAssignment
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.LabelDefinition
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblySwitch
@@ -83,10 +63,17 @@ import scala.scalajs.js.annotation._
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.SubAssembly
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.TupleExpression
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ElementaryTypeNameExpression
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.BooleanLiteral
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.NumberLiteral
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Identifier
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.BinaryOperation
   - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Conditional
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.StringLiteral
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.HexLiteral
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.HexNumber
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.DecimalNumber
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.MemberAccess
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.IndexAccess
 */
 trait ASTNodeTypeString extends js.Object
 

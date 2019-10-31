@@ -12,11 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object rename extends js.Object {
   def apply(oldPath: String, newPath: String): js.Promise[Unit] = js.native
-  def apply(
-    oldPath: String,
-    newPath: String,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  def apply(oldPath: String, newPath: String, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   /**
     * Asynchronous rename(2) - Change the name or location of a file or directory.
     * @param oldPath A path to a file. If a URL is provided, it must use the `file:` protocol.

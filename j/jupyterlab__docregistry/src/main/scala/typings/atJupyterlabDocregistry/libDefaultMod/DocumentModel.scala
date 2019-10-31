@@ -76,7 +76,7 @@ class DocumentModel ()
     * A signal emitted when the model state changes.
     */
   /* CompleteClass */
-  override var stateChanged: ISignal[this.type, IChangedArgs[_]] = js.native
+  override var stateChanged: ISignal[this.type, IChangedArgs[_, String]] = js.native
   /**
     * Dispose of the resources held by the object.
     *
@@ -135,6 +135,6 @@ class DocumentModel ()
   /**
     * Trigger a state change signal.
     */
-  /* protected */ def triggerStateChange(args: IChangedArgs[_]): Unit = js.native
+  /* protected */ def triggerStateChange(args: IChangedArgs[_, String]): Unit = js.native
 }
 

@@ -55,6 +55,7 @@ object defaultBootstrapMaterialCss extends js.Object {
   var paneldynamic: Anon_ButtonButtonAddButtonNext = js.native
   var progress: String = js.native
   var progressBar: String = js.native
+  var progressTextUnderBar: String = js.native
   var question: Anon_CommentContentContentLeft = js.native
   var radiogroup: Anon_ClearButton = js.native
   var rating: Anon_Disabled = js.native

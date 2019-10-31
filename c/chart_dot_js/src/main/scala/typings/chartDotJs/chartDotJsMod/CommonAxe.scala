@@ -22,7 +22,7 @@ trait CommonAxe extends js.Object {
   var beforeTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   var beforeUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   var bounds: js.UndefOr[String] = js.undefined
-  var display: js.UndefOr[Boolean] = js.undefined
+  var display: js.UndefOr[Boolean | String] = js.undefined
   var gridLines: js.UndefOr[GridLineOptions] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var maxBarThickness: js.UndefOr[Double] = js.undefined
@@ -55,7 +55,7 @@ object CommonAxe {
     beforeTickToLabelConversion: /* scale */ js.UndefOr[js.Any] => Unit = null,
     beforeUpdate: /* scale */ js.UndefOr[js.Any] => Unit = null,
     bounds: String = null,
-    display: js.UndefOr[Boolean] = js.undefined,
+    display: Boolean | String = null,
     gridLines: GridLineOptions = null,
     id: String = null,
     maxBarThickness: Int | Double = null,
@@ -85,7 +85,7 @@ object CommonAxe {
     if (beforeTickToLabelConversion != null) __obj.updateDynamic("beforeTickToLabelConversion")(js.Any.fromFunction1(beforeTickToLabelConversion))
     if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction1(beforeUpdate))
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines)
     if (id != null) __obj.updateDynamic("id")(id)
     if (maxBarThickness != null) __obj.updateDynamic("maxBarThickness")(maxBarThickness.asInstanceOf[js.Any])

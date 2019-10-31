@@ -69,6 +69,7 @@
 | [agentkeepalive](./a/agentkeepalive) | Missing keepalive http.Agent | http, https, agent, keepalive, agentkeepalive, HttpAgent, HttpsAgent |
 | [aggregate-error](./a/aggregate-error) | Create an error from multiple errors | aggregate, error, err, combine, multiple, many, collection, iterable, iterator |
 | [agiledigital__mule-previe](./a/agiledigital__mule-preview) | Renders Mule XML files as HTML. | - |
+| [agilite](./a/agilite) | A NodeJS module that provides seamless interaction | agilit-e, agilite, keywords, numbering, connectors, data mapping, templates, bpm, roles, botbuilder, tier structures |
 | [agora-rtc-sdk](./a/agora-rtc-sdk) | AgoraRTC SDK for web | Agora, Webrtc, Javascript |
 | [airbnb-prop-types](./a/airbnb-prop-types) | Custom React PropType validators that we use at Ai | react, propTypes, airbnb, prop, types, validator, validation |
 | [airtable](./a/airtable) | The official Airtable JavaScript library. | airtable, productivity, database, spreadsheet |
@@ -243,6 +244,7 @@
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antd-native-slinky-facade](./a/antd-native-slinky-facade) | - | - |
+| [antd-slinky-facade](./a/antd-slinky-facade) | - | - |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an | mysql, postgres, pg, sqlite, sqlite3 |
@@ -678,6 +680,7 @@
 | [bindings](./b/bindings) | Helper module for loading your native module's .no | native, addon, bindings, gyp, waf, c, c++ |
 | [bingmaps](./b/bingmaps) | These are the official TypeScript definitions for  | Microsoft, Bing Maps, Maps, GIS, TypeScript, V8, Web, Map, Geospatial, JavaScript |
 | [bintrees](./b/bintrees) | Binary Search Trees | binary tree, red black tree, red-black tree, redblack tree |
+| [bip174](./b/bip174) | - | - |
 | [bip21](./b/bip21) | A BIP21 compatible URL encoding utility library | bip21, bitcoin |
 | [bip32](./b/bip32) | A BIP32 compatible library | bip32, bitcoinjs, bitcoin, secp256k1 |
 | [bip38](./b/bip38) | BIP38 is a standard process to encrypt Bitcoin and | bitcoin, crypto, cryptography, litecoin |
@@ -3493,7 +3496,7 @@
 | [jss-plugin-expand](./j/jss-plugin-expand) | JSS plugin that gives you a better syntax than CSS | cssinjs, css-in-js, css in js, jss, plugin, expand |
 | [jss-plugin-extend](./j/jss-plugin-extend) | JSS plugin that enables mixing in styles. | jss, plugin, extend, css-in-js, cssinjs, css in js |
 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS | cssinjs, css-in-js, css in js, jss, plugin, global, unscoped |
-| [jss-plugin-nested](./j/jss-plugin-nested) | - | - |
+| [jss-plugin-nested](./j/jss-plugin-nested) | JSS plugin that enables support for nested selecto | cssinjs, css-in-js, css in js, jss, plugin, nested, nesting |
 | [jss-plugin-props-sort](./j/jss-plugin-props-sort) | JSS plugin that ensures style properties extend ea | cssinjs, css-in-js, css in js, jss, plugin, sort, props |
 | [jss-plugin-rule-value-fun](./j/jss-plugin-rule-value-function) | JSS plugin for function value and rule syntax | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js, dynamic, function, reactive, animation |
 | [jss-plugin-rule-value-obs](./j/jss-plugin-rule-value-observable) | JSS plugin for TC39 Observables support | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js, observable, reactive, rxjs |
@@ -3556,6 +3559,8 @@
 | [jupyterlab__json-extensio](./j/jupyterlab__json-extension) | JupyterLab - JSON Renderer | - |
 | [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel | - |
 | [jupyterlab__launcher-exte](./j/jupyterlab__launcher-extension) | JupyterLab - Launcher Page Extension | - |
+| [jupyterlab__logconsole](./j/jupyterlab__logconsole) | JupyterLab - Log Console | - |
+| [jupyterlab__logconsole-ex](./j/jupyterlab__logconsole-extension) | JupyterLab - Log Console Extension | - |
 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu | - |
 | [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension | - |
 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer) | JupyterLab - Markdown viewer Widget | - |
@@ -3848,6 +3853,7 @@
 | [license-checker-webpack-p](./l/license-checker-webpack-plugin) | Verifies licenses of all external dependencies in  | license, webpack |
 | [lifeomic__axios-fetch](./l/lifeomic__axios-fetch) | A WebAPI Fetch implementation backed by an Axios c | fetch, axios |
 | [liftoff](./l/liftoff) | Launch your command line tool with ease. | command line |
+| [light-sdk](./l/light-sdk) | > light-sdk 用于开发者开发 LightApp 时调用原生 API，实现与原生系统的交互。 | - |
 | [lightpick](./l/lightpick) | Javascript date range picker - lightweight, no jQu | datepicker, date, daterange, date, picker, range |
 | [lightship](./l/lightship) | Abstracts readiness/ liveness checks and graceful  | kubernetes |
 | [lil-uri](./l/lil-uri) | Tiny URI parser and builder with chainable API | lil, tiny, micro, uri, url, parse, schema, host, parser, builder |
@@ -4351,7 +4357,6 @@
 | [md5-file](./m/md5-file) | return an md5sum of a given file | md5, md5sum, checksum |
 | [md5-hex](./m/md5-hex) | Create a MD5 hash with hex encoding | hash, crypto, md5, hex, buffer, browser |
 | [mdast](./m/mdast) | Markdown Abstract Syntax Tree format | - |
-| [mdn-browser-compat-data](./m/mdn-browser-compat-data) | - | - |
 | [mdns](./m/mdns) | multicast DNS service discovery | zeroconf, bonjour, dns_sd, mDNSResponder |
 | [mdurl](./m/mdurl) | URL utilities for markdown-it | - |
 | [media-typer](./m/media-typer) | Simple RFC 6838 media type parser and formatter | - |
@@ -4517,7 +4522,7 @@
 | [mongo-sanitize](./m/mongo-sanitize) | Helper to sanitize mongodb queries against query s | mongodb, sanitize, query, selector, injection, Petko |
 | [mongodb](./m/mongodb) | The official MongoDB driver for Node.js | mongodb, driver, official |
 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
-| [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | - | - |
+| [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without  | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
 | [mongoose](./m/mongoose) | Mongoose MongoDB ODM | mongodb, document, model, schema, database, odm, data, datastore, query, nosql, orm, db |
 | [mongoose-auto-increment](./m/mongoose-auto-increment) | This plugin allows you to auto-increment any field | mongoose, plugin, auto-increment, auto, increment, automatic, autoincrement, auto_increment, autoinc, auto-inc, auto_inc, pureautoinc, mongoose-pureautoinc |
@@ -5697,7 +5702,7 @@
 | [react-day-picker](./r/react-day-picker) | Flexible date picker component for React | react, react-component, component, calendar, date-picker, datepicker, date, picker, moment, momentjs |
 | [react-dev-utils](./r/react-dev-utils) | Webpack utilities used by Create React App | - |
 | [react-devtools](./r/react-devtools) | Use react-devtools outside of the browser | - |
-| [react-display-name](./r/react-display-name) | - | - |
+| [react-display-name](./r/react-display-name) | utility to return a react components display name | react, redux, getDisplayName |
 | [react-div-100vh](./r/react-div-100vh) | A React component that aims to solve '100vh' issue | - |
 | [react-dnd](./r/react-dnd) | Drag and Drop for React | - |
 | [react-dnd-html5-backend](./r/react-dnd-html5-backend) | HTML5 backend for React DnD | - |
@@ -7378,7 +7383,6 @@
 | [uid-generator](./u/uid-generator) | Generates cryptographically strong pseudo-random U | uid, generator, random, token, unique, crypto, strong, base, encoding |
 | [uid-safe](./u/uid-safe) | URL and cookie safe UIDs | random, generator, uid, safe |
 | [uid2](./u/uid2) | strong uid | - |
-| [uifabric__example-data](./u/uifabric__example-data) | Data generators for Office UI Fabric React example | - |
 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components. | - |
 | [uifabric__icons](./u/uifabric__icons) | Office UI Fabric icon set. | - |
 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities. | - |
@@ -7462,12 +7466,14 @@
 | [urlsafe-base64](./u/urlsafe-base64) | URL Safe Base64 encoding | base64, encoding, url, util |
 | [usage](./u/usage) | simple way to lookup linux process usage | usage, ps, cpu, ram, memory |
 | [usb](./u/usb) | Library to access USB devices | usb, hardware |
+| [use-callback-ref](./u/use-callback-ref) | The same useRef, but with callback | react, hoot, useRef, createRef |
 | [use-combined-reducers](./u/use-combined-reducers) | - | - |
 | [use-dark-mode](./u/use-dark-mode) | A custom React Hook to help you implement a "dark  | react-hooks, hooks, react, utils, lib, dark-mode |
 | [use-global-hook](./u/use-global-hook) | Easy state management for react using hooks in les | - |
 | [use-persisted-state](./u/use-persisted-state) | A custom React Hook that provides a multi-instance | react-hooks, hooks, react, utils, lib, persistent, localstorage |
 | [use-set-interval](./u/use-set-interval) | A React Hook (using useEffect) which uses window.s | react, hook, hooks, react-hook, react-hooks |
 | [use-set-timeout](./u/use-set-timeout) | A React Hook (using useEffect) which uses window.s | react, hook, hooks, react-hook, react-hooks |
+| [use-sidecar](./u/use-sidecar) | Sidecar code splitting utils | code spliting, react, sidecar |
 | [use-subscription](./u/use-subscription) | Reusable hooks | - |
 | [user-event](./u/user-event) | Simulate user events for react-testing-library | react-testing-library, dom-testing-library, react, testing |
 | [user-home](./u/user-home) | Get the path to the user home directory | user, home, homedir, os-homedir, dir, directory, folder, path, env, vars, environment, variables, userprofile |

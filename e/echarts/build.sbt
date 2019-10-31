@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "echarts"
-version := "4.4.0-dt-20191022Z-5b16c7"
+version := "4.4.0-dt-20191030Z-50a8b5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

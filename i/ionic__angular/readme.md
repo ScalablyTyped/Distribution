@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__angular
 
-Typings are for version 4.11.2
+Typings are for version 4.11.3
 
 ## Library description:
 Angular specific wrappers for @ionic/core

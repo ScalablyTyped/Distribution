@@ -38,7 +38,7 @@ class CellModel_ protected () extends Model {
   /**
     * A signal emitted when a model state changes.
     */
-  val stateChanged: (ISignal[ICellModel, IChangedArgs[_]]) | (Signal[this.type, IChangedArgs[_]]) = js.native
+  val stateChanged: (ISignal[ICellModel, IChangedArgs[_, String]]) | (Signal[this.type, IChangedArgs[_, String]]) = js.native
   /**
     * Get the trusted state of the model.
     */

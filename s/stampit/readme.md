@@ -1,7 +1,7 @@
 
 # Scala.js typings for stampit
 
-Typings are for version 3.0
+Typings are for version 4.3
 
 ## Library description:
 Create objects from reusable, composable behaviors.

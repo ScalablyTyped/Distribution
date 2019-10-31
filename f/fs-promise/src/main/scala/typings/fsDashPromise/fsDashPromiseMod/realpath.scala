@@ -1,5 +1,6 @@
 package typings.fsDashPromise.fsDashPromiseMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.fsDashPromise.fsDashPromiseStrings.buffer
 import typings.node.Anon_BufferEncoding
 import typings.node.Anon_EncodingBufferEncoding
@@ -17,8 +18,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object realpath extends js.Object {
   def apply(path: String): js.Promise[String] = js.native
+  def apply(path: String, cache: StringDictionary[String]): js.Promise[String] = js.native
+  def apply(
+    path: String,
+    cache: StringDictionary[String],
+    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
+  ): Unit = js.native
   def apply(path: String, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
   def apply(path: Buffer): js.Promise[String] = js.native
+  def apply(path: Buffer, cache: StringDictionary[String]): js.Promise[String] = js.native
+  def apply(
+    path: Buffer,
+    cache: StringDictionary[String],
+    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
+  ): Unit = js.native
   def apply(path: Buffer, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
   /**
     * Asynchronous realpath(3) - return the canonicalized absolute pathname.

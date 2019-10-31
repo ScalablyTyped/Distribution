@@ -54,6 +54,7 @@ object defaultBootstrapCss extends js.Object {
   var paneldynamic: Anon_ButtonButtonAddButtonNext = js.native
   var progress: String = js.native
   var progressBar: String = js.native
+  var progressTextUnderBar: String = js.native
   var question: Anon_CommentContent = js.native
   var radiogroup: Anon_ClearButtonColumn = js.native
   var rating: Anon_Disabled = js.native

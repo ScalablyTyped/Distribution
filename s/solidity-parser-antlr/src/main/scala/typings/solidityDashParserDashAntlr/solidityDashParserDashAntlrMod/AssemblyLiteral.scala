@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssemblyLiteral
-  extends BaseASTNode
-     with ASTNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ASTNode because Already inherited */ trait AssemblyLiteral
+  extends AssemblyExpression
+     with BaseASTNode {
   @JSName("type")
   var type_AssemblyLiteral: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyLiteral
 }

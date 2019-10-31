@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/rest" : "16.34.0"
+      "@octokit/rest" : "16.34.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/rest" : "16.34.0"
+      "@octokit/rest" : "16.34.1"
     }
   ],
   "compile-devDependencies" : [

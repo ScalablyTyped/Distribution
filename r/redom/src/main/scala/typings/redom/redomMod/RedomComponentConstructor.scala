@@ -1,10 +1,12 @@
 package typings.redom.redomMod
 
-import org.scalablytyped.runtime.Instantiable0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait RedomComponentConstructor extends Instantiable0[RedomComponent]
+/* Rewritten from type alias, can be one of: 
+  - typings.redom.redomMod.RedomComponentClass
+  - typings.redom.redomMod.RedomComponentFunction
+*/
+trait RedomComponentConstructor extends js.Object
 

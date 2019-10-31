@@ -2,6 +2,7 @@ package typings.atJupyterlabApputils.atJupyterlabApputilsMod
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsStrings.copy
 import typings.atJupyterlabApputils.atJupyterlabApputilsStrings.cut
+import typings.atJupyterlabApputils.libClipboardMod.ClipboardData
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.MimeData
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -17,7 +18,7 @@ object Clipboard extends js.Object {
     * #### Notes
     * This can only be called in response to a user input event.
     */
-  def copyToSystem(text: String): Unit = js.native
+  def copyToSystem(clipboardData: ClipboardData): Unit = js.native
   /**
     * Generate a clipboard event on a node.
     *

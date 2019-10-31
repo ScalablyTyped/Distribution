@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssemblyIf
-  extends BaseASTNode
-     with ASTNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ASTNode because Already inherited */ trait AssemblyIf
+  extends AssemblyItem
+     with BaseASTNode {
   @JSName("type")
   var type_AssemblyIf: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.AssemblyIf
 }

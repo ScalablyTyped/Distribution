@@ -15,7 +15,7 @@ object jqueryDotFancytreeStrings {
   sealed trait filter extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait hide extends js.Object
   
   @js.native
   sealed trait table extends js.Object
@@ -27,7 +27,7 @@ object jqueryDotFancytreeStrings {
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
 }

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// from `TypeDefinition.js`
 trait SafeAreaInsets extends js.Object {
   var bottom: Double
   var left: Double

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/metapackage" : "1.1.4"
+      "@jupyterlab/metapackage" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/metapackage" : "1.1.4"
+      "@jupyterlab/metapackage" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

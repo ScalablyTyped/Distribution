@@ -1,7 +1,7 @@
 
 # Scala.js typings for linq4js
 
-Typings are for version 2.2.2
+Typings are for version 2.2.3
 
 ## Library description:
 Linq methods for JavaScript/TypeScript to work with Arrays

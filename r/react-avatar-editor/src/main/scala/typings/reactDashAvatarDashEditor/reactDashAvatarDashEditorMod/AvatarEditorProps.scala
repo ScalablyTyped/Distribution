@@ -13,6 +13,7 @@ trait AvatarEditorProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[js.Array[Double]] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
+  var disableBoundaryChecks: js.UndefOr[Boolean] = js.undefined
   var disableDrop: js.UndefOr[Boolean] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var image: String | File
@@ -40,6 +41,7 @@ object AvatarEditorProps {
     className: String = null,
     color: js.Array[Double] = null,
     crossOrigin: String = null,
+    disableBoundaryChecks: js.UndefOr[Boolean] = js.undefined,
     disableDrop: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
     onDropFile: /* event */ DragEvent => Unit = null,
@@ -62,6 +64,7 @@ object AvatarEditorProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color)
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (!js.isUndefined(disableBoundaryChecks)) __obj.updateDynamic("disableBoundaryChecks")(disableBoundaryChecks)
     if (!js.isUndefined(disableDrop)) __obj.updateDynamic("disableDrop")(disableDrop)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (onDropFile != null) __obj.updateDynamic("onDropFile")(js.Any.fromFunction1(onDropFile))

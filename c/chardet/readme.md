@@ -1,7 +1,7 @@
 
 # Scala.js typings for chardet
 
-Typings are for version 0.5
+Typings are for version 0.8
 
 ## Library description:
 Character detector

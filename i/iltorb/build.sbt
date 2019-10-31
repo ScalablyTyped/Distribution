@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "iltorb"
-version := "2.3-dt-20181017Z-e1f156"
+version := "2.3-dt-20181017Z-8f98bb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

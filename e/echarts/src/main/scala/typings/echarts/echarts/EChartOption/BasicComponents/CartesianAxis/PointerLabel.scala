@@ -27,7 +27,7 @@ trait PointerLabel extends js.Object {
   var formatter: js.UndefOr[String | js.Function] = js.undefined
   var height: js.UndefOr[Double | String] = js.undefined
   var lineHeight: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[Boolean] = js.undefined
+  var margin: js.UndefOr[Double] = js.undefined
   var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var precision: js.UndefOr[Double | String] = js.undefined
   var shadowBlur: js.UndefOr[Double] = js.undefined
@@ -59,7 +59,7 @@ object PointerLabel {
     formatter: String | js.Function = null,
     height: Double | String = null,
     lineHeight: Int | Double = null,
-    margin: js.UndefOr[Boolean] = js.undefined,
+    margin: Int | Double = null,
     padding: Double | js.Array[Double] = null,
     precision: Double | String = null,
     shadowBlur: Int | Double = null,
@@ -88,7 +88,7 @@ object PointerLabel {
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])

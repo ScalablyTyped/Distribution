@@ -29,6 +29,13 @@ trait IChargeUpdateOptions extends IDataOptionsWithMetadata {
     * physical goods.
     */
   var shipping: js.UndefOr[IShippingInformation] = js.undefined
+  /**
+    * A string that identifies this transaction as part of a group.
+    * See the Connect documentation for details.
+    *
+    * Connect only.
+    */
+  var transfer_group: js.UndefOr[String] = js.undefined
 }
 
 object IChargeUpdateOptions {
@@ -40,7 +47,8 @@ object IChargeUpdateOptions {
     include: js.Array[String] = null,
     metadata: IOptionsMetadata = null,
     receipt_email: String = null,
-    shipping: IShippingInformation = null
+    shipping: IShippingInformation = null,
+    transfer_group: String = null
   ): IChargeUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description)
@@ -50,6 +58,7 @@ object IChargeUpdateOptions {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[IChargeUpdateOptions]
   }
 }

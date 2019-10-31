@@ -52,6 +52,9 @@ object reactDashNativeDashSafeDashAreaStrings {
   sealed trait right extends Direction
   
   @js.native
+  sealed trait safeAreaInsetsForRootViewDidChange extends js.Object
+  
+  @js.native
   sealed trait top extends Direction
   
   @js.native
@@ -105,6 +108,8 @@ object reactDashNativeDashSafeDashAreaStrings {
   def padding: padding = "padding".asInstanceOf[padding]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def safeAreaInsetsForRootViewDidChange: safeAreaInsetsForRootViewDidChange = "safeAreaInsetsForRootViewDidChange".asInstanceOf[safeAreaInsetsForRootViewDidChange]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

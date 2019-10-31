@@ -16,9 +16,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("http2", "Http2Session")
 @js.native
-class Http2Session protected () extends EventEmitter {
+trait Http2Session extends EventEmitter {
   val alpnProtocol: js.UndefOr[java.lang.String] = js.native
   val closed: Boolean = js.native
   val connecting: Boolean = js.native

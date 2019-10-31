@@ -131,40 +131,75 @@ object constantsMod extends js.Object {
   val RSA_SSLV23_PADDING: Double = js.native
   val RSA_X931_PADDING: Double = js.native
   val R_OK: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGABRT` instead. */
   val SIGABRT: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGALRM` instead. */
   val SIGALRM: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGBREAK` instead. */
   val SIGBREAK: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGBUS` instead. */
   val SIGBUS: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGCHLD` instead. */
   val SIGCHLD: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGCONT` instead. */
   val SIGCONT: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGFPE` instead. */
   val SIGFPE: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGHUP` instead. */
   val SIGHUP: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGILL` instead. */
   val SIGILL: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGINT` instead. */
   val SIGINT: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGIO` instead. */
   val SIGIO: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGIOT` instead. */
   val SIGIOT: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGKILL` instead. */
   val SIGKILL: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGPIPE` instead. */
   val SIGPIPE: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGPOLL` instead. */
   val SIGPOLL: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGPROF` instead. */
   val SIGPROF: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGPWR` instead. */
   val SIGPWR: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGQUIT` instead. */
   val SIGQUIT: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGSEGV` instead. */
   val SIGSEGV: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGSTKFLT` instead. */
   val SIGSTKFLT: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGSTOP` instead. */
   val SIGSTOP: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGSYS` instead. */
   val SIGSYS: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGTERM` instead. */
   val SIGTERM: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGTRAP` instead. */
   val SIGTRAP: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGTSTP` instead. */
   val SIGTSTP: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGTTIN` instead. */
   val SIGTTIN: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGTTOU` instead. */
   val SIGTTOU: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGUNUSED` instead. */
   val SIGUNUSED: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGURG` instead. */
   val SIGURG: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGUSR1` instead. */
   val SIGUSR1: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGUSR2` instead. */
   val SIGUSR2: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGVTALRM` instead. */
   val SIGVTALRM: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGWINCH` instead. */
   val SIGWINCH: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGXCPU` instead. */
   val SIGXCPU: Double = js.native
+  /** @deprecated since v6.3.0 - use `os.constants.signals.SIGXFSZ` instead. */
   val SIGXFSZ: Double = js.native
   val SSL_OP_ALL: Double = js.native
   val SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: Double = js.native

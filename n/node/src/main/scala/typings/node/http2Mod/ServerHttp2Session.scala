@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("http2", "ServerHttp2Session")
 @js.native
-class ServerHttp2Session protected () extends Http2Session {
+trait ServerHttp2Session extends Http2Session {
   val server: Http2Server | Http2SecureServer = js.native
   @JSName("addListener")
   def addListener_connect(

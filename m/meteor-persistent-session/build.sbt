@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "meteor-persistent-session"
-version := "0.0-unknown-dt-20190322Z-714540"
+version := "0.0-unknown-dt-20190322Z-89df6f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-9a66bf",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-183255",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "meteor" % "1.4-dt-20191017Z-c5662b",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "meteor" % "1.4-dt-20191030Z-bcf3ec",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",

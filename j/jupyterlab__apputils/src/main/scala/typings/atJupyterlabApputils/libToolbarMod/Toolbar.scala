@@ -32,6 +32,10 @@ class Toolbar[T /* <: Widget */] () extends Widget {
     */
   def addItem(name: String, widget: T): Boolean = js.native
   /**
+    * Handle a DOM click event.
+    */
+  /* protected */ def handleClick(event: Event): Unit = js.native
+  /**
     * Handle the DOM events for the widget.
     *
     * @param event - The DOM event sent to the widget.

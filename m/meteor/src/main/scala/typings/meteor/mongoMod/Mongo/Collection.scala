@@ -36,8 +36,8 @@ trait Collection[T] extends js.Object {
   def findOne(selector: ObjectID, options: Anon_FieldsReactiveSkip): js.UndefOr[T] = js.native
   def findOne(selector: Selector[T]): js.UndefOr[T] = js.native
   def findOne(selector: Selector[T], options: Anon_FieldsReactiveSkip): js.UndefOr[T] = js.native
-  def insert(doc: T): String = js.native
-  def insert(doc: T, callback: js.Function): String = js.native
+  def insert(doc: OptionalId[T]): String = js.native
+  def insert(doc: OptionalId[T], callback: js.Function): String = js.native
   def rawCollection(): js.Any = js.native
   def rawDatabase(): js.Any = js.native
   def remove(selector: String): Double = js.native

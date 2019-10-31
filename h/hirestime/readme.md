@@ -1,7 +1,7 @@
 
 # Scala.js typings for hirestime
 
-Typings are for version 3.2
+Typings are for version 4.0
 
 ## Library description:
 thin wrapper around process.hrtime

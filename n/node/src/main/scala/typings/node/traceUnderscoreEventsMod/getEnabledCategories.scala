@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("trace_events", "getEnabledCategories")
 @js.native
 object getEnabledCategories extends js.Object {
-  def apply(): java.lang.String = js.native
+  /**
+    * Returns a comma-separated list of all currently-enabled trace event
+    * categories. The current set of enabled trace event categories is
+    * determined by the union of all currently-enabled `Tracing` objects and
+    * any categories enabled using the `--trace-event-categories` flag.
+    */
+  def apply(): js.UndefOr[java.lang.String] = js.native
 }
 

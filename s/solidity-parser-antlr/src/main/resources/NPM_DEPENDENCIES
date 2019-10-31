@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "solidity-parser-antlr" : "0.4.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "solidity-parser-antlr" : "0.4.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

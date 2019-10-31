@@ -1,11 +1,13 @@
 package typings.gestalt.gestaltMod
 
 import typings.gestalt.gestaltStrings.blue
+import typings.gestalt.gestaltStrings.darkGray
 import typings.gestalt.gestaltStrings.down
 import typings.gestalt.gestaltStrings.left
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.orange
+import typings.gestalt.gestaltStrings.red
 import typings.gestalt.gestaltStrings.right
 import typings.gestalt.gestaltStrings.sm
 import typings.gestalt.gestaltStrings.up
@@ -21,7 +23,7 @@ import scala.scalajs.js.annotation._
 trait FlyoutProps extends js.Object {
   var anchor: RefObject[_]
   var children: js.UndefOr[ReactNode] = js.undefined
-  var color: js.UndefOr[blue | orange | white] = js.undefined
+  var color: js.UndefOr[blue | orange | red | white | darkGray] = js.undefined
   var idealDirection: js.UndefOr[up | right | down | left] = js.undefined
   var positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[xs | sm | md | lg | xl | Double] = js.undefined
@@ -34,7 +36,7 @@ object FlyoutProps {
     anchor: RefObject[_],
     onDismiss: () => Unit,
     children: ReactNode = null,
-    color: blue | orange | white = null,
+    color: blue | orange | red | white | darkGray = null,
     idealDirection: up | right | down | left = null,
     positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined,
     size: xs | sm | md | lg | xl | Double = null

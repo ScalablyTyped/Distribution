@@ -63,6 +63,33 @@ object libPageconfigMod extends js.Object {
       * @returns The last config value or an empty string if it doesn't exist.
       */
     def setOption(name: String, value: String): String = js.native
+    /**
+      * The namespace for page config `Extension` functions.
+      */
+    @js.native
+    object Extension extends js.Object {
+      /**
+        * The collection of deferred extensions in page config.
+        */
+      val deferred: js.Array[Anon_Raw] = js.native
+      /**
+        * The collection of disabled extensions in page config.
+        */
+      val disabled: js.Array[Anon_Raw] = js.native
+      /**
+        * Returns whether a plugin is deferred.
+        *
+        * @param id - The plugin ID.
+        */
+      def isDeferred(id: String): Boolean = js.native
+      /**
+        * Returns whether a plugin is disabled.
+        *
+        * @param id - The plugin ID.
+        */
+      def isDisabled(id: String): Boolean = js.native
+    }
+    
   }
   
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "i18next-node-fs-backend"
-version := "2.1-dt-20190819Z-6d5de1"
+version := "2.1-dt-20191029Z-6d5de1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

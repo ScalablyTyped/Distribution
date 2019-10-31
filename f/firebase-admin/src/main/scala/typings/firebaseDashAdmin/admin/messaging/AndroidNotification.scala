@@ -1,5 +1,14 @@
 package typings.firebaseDashAdmin.admin.messaging
 
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.`private`
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.default
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.high
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.low
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.max
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.min
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.public
+import typings.firebaseDashAdmin.firebaseDashAdminStrings.secret
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,6 +53,31 @@ trait AndroidNotification extends js.Object {
     */
   var color: js.UndefOr[String] = js.undefined
   /**
+    * If set to `true`, use the Android framework's default LED light settings 
+    * for the notification. Default values are specified in [`config.xml`](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml). 
+    * If `default_light_settings` is set to `true` and `light_settings` is also set, 
+    * the user-specified `light_settings` is used instead of the default value.
+    */
+  var defaultLightSettings: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If set to `true`, use the Android framework's default sound for the notification. 
+    * Default values are specified in [`config.xml`](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml).
+    */
+  var defaultSound: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If set to `true`, use the Android framework's default vibrate pattern for the 
+    * notification. Default values are specified in [`config.xml`](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml). 
+    * If `default_vibrate_timings` is set to `true` and `vibrate_timings` is also set, 
+    * the default value is used instead of the user-specified `vibrate_timings`.
+    */
+  var defaultVibrateTimings: js.UndefOr[Boolean] = js.undefined
+  /**
+    * For notifications that inform users about events with an absolute time reference, sets
+    * the time that the event in the notification occurred. Notifications
+    * in the panel are sorted by this time.
+    */
+  var eventTimestamp: js.UndefOr[Date] = js.undefined
+  /**
     * Icon resource for the Android notification.
     */
   var icon: js.UndefOr[String] = js.undefined
@@ -52,16 +86,58 @@ trait AndroidNotification extends js.Object {
     */
   var imageUrl: js.UndefOr[String] = js.undefined
   /**
+    * Settings to control the notification's LED blinking rate and color if LED is 
+    * available on the device. The total blinking time is controlled by the OS.
+    */
+  var lightSettings: js.UndefOr[LightSettings] = js.undefined
+  /**
+    * Sets whether or not this notification is relevant only to the current device. 
+    * Some notifications can be bridged to other devices for remote display, such as 
+    * a Wear OS watch. This hint can be set to recommend this notification not be bridged. 
+    * See [Wear OS guides](https://developer.android.com/training/wearables/notifications/bridger#existing-method-of-preventing-bridging)
+    */
+  var localOnly: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Sets the number of items this notification represents. May be displayed as a 
+    * badge count for Launchers that support badging. See [`NotificationBadge`(https://developer.android.com/training/notify-user/badges). 
+    * For example, this might be useful if you're using just one notification to
+    * represent multiple new messages but you want the count here to represent
+    * the number of total new messages. If zero or unspecified, systems 
+    * that support badging use the default, which is to increment a number 
+    * displayed on the long-press menu each time a new notification arrives.
+    */
+  var notificationCount: js.UndefOr[Double] = js.undefined
+  /**
+    * Sets the relative priority for this notification. Low-priority notifications 
+    * may be hidden from the user in certain situations. Note this priority differs 
+    * from `AndroidMessagePriority`. This priority is processed by the client after 
+    * the message has been delivered. Whereas `AndroidMessagePriority` is an FCM concept 
+    * that controls when the message is delivered.
+    */
+  var priority: js.UndefOr[min | low | default | high | max] = js.undefined
+  /**
     * File name of the sound to be played when the device receives the
     * notification.
     */
   var sound: js.UndefOr[String] = js.undefined
+  /**
+    * When set to `false` or unset, the notification is automatically dismissed when 
+    * the user clicks it in the panel. When set to `true`, the notification persists 
+    * even when the user clicks it.
+    */
+  var sticky: js.UndefOr[Boolean] = js.undefined
   /**
     * Notification tag. This is an identifier used to replace existing
     * notifications in the notification drawer. If not specified, each request
     * creates a new notification.
     */
   var tag: js.UndefOr[String] = js.undefined
+  /**
+    * Sets the "ticker" text, which is sent to accessibility services. Prior to 
+    * API level 21 (Lollipop), sets the text that is displayed in the status bar 
+    * when the notification first arrives.
+    */
+  var ticker: js.UndefOr[String] = js.undefined
   /**
     * Title of the Android notification. When provided, overrides the title set via
     * `admin.messaging.Notification`.
@@ -77,6 +153,20 @@ trait AndroidNotification extends js.Object {
     * title text.
     */
   var titleLocKey: js.UndefOr[String] = js.undefined
+  /**
+    * Sets the vibration pattern to use. Pass in an array of milliseconds to 
+    * turn the vibrator on or off. The first value indicates the duration to wait before 
+    * turning the vibrator on. The next value indicates the duration to keep the 
+    * vibrator on. Subsequent values alternate between duration to turn the vibrator 
+    * off and to turn the vibrator on. If `vibrate_timings` is set and `default_vibrate_timings` 
+    * is set to `true`, the default value is used instead of the user-specified `vibrate_timings`.
+    */
+  var vibrateTimingsMillis: js.UndefOr[js.Array[Double]] = js.undefined
+  /**
+    * Sets the visibility of the notification. Must be either `private`, `public`, 
+    * or `secret`. If unspecified, defaults to `private`.
+    */
+  var visibility: js.UndefOr[`private` | public | secret] = js.undefined
 }
 
 object AndroidNotification {
@@ -88,13 +178,25 @@ object AndroidNotification {
     channelId: String = null,
     clickAction: String = null,
     color: String = null,
+    defaultLightSettings: js.UndefOr[Boolean] = js.undefined,
+    defaultSound: js.UndefOr[Boolean] = js.undefined,
+    defaultVibrateTimings: js.UndefOr[Boolean] = js.undefined,
+    eventTimestamp: Date = null,
     icon: String = null,
     imageUrl: String = null,
+    lightSettings: LightSettings = null,
+    localOnly: js.UndefOr[Boolean] = js.undefined,
+    notificationCount: Int | Double = null,
+    priority: min | low | default | high | max = null,
     sound: String = null,
+    sticky: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
+    ticker: String = null,
     title: String = null,
     titleLocArgs: js.Array[String] = null,
-    titleLocKey: String = null
+    titleLocKey: String = null,
+    vibrateTimingsMillis: js.Array[Double] = null,
+    visibility: `private` | public | secret = null
   ): AndroidNotification = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body)
@@ -103,13 +205,25 @@ object AndroidNotification {
     if (channelId != null) __obj.updateDynamic("channelId")(channelId)
     if (clickAction != null) __obj.updateDynamic("clickAction")(clickAction)
     if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(defaultLightSettings)) __obj.updateDynamic("defaultLightSettings")(defaultLightSettings)
+    if (!js.isUndefined(defaultSound)) __obj.updateDynamic("defaultSound")(defaultSound)
+    if (!js.isUndefined(defaultVibrateTimings)) __obj.updateDynamic("defaultVibrateTimings")(defaultVibrateTimings)
+    if (eventTimestamp != null) __obj.updateDynamic("eventTimestamp")(eventTimestamp)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (lightSettings != null) __obj.updateDynamic("lightSettings")(lightSettings)
+    if (!js.isUndefined(localOnly)) __obj.updateDynamic("localOnly")(localOnly)
+    if (notificationCount != null) __obj.updateDynamic("notificationCount")(notificationCount.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound)
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
     if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (ticker != null) __obj.updateDynamic("ticker")(ticker)
     if (title != null) __obj.updateDynamic("title")(title)
     if (titleLocArgs != null) __obj.updateDynamic("titleLocArgs")(titleLocArgs)
     if (titleLocKey != null) __obj.updateDynamic("titleLocKey")(titleLocKey)
+    if (vibrateTimingsMillis != null) __obj.updateDynamic("vibrateTimingsMillis")(vibrateTimingsMillis)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidNotification]
   }
 }

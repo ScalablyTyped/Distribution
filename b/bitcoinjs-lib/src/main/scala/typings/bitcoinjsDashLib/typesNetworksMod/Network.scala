@@ -1,0 +1,31 @@
+package typings.bitcoinjsDashLib.typesNetworksMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Network extends js.Object {
+  var bech32: String
+  var bip32: Bip32
+  var messagePrefix: String
+  var pubKeyHash: Double
+  var scriptHash: Double
+  var wif: Double
+}
+
+object Network {
+  @scala.inline
+  def apply(
+    bech32: String,
+    bip32: Bip32,
+    messagePrefix: String,
+    pubKeyHash: Double,
+    scriptHash: Double,
+    wif: Double
+  ): Network = {
+    val __obj = js.Dynamic.literal(bech32 = bech32, bip32 = bip32, messagePrefix = messagePrefix, pubKeyHash = pubKeyHash, scriptHash = scriptHash, wif = wif)
+  
+    __obj.asInstanceOf[Network]
+  }
+}
+

@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BinaryOperation
-  extends BaseASTNode
-     with ASTNode {
-  var left: ASTNode
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ASTNode because Already inherited */ trait BinaryOperation
+  extends Expression
+     with BaseASTNode {
+  var left: Expression
   var operator: BinOp
-  var right: ASTNode
+  var right: Expression
   @JSName("type")
   var type_BinaryOperation: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.BinaryOperation
 }
@@ -17,9 +18,9 @@ trait BinaryOperation
 object BinaryOperation {
   @scala.inline
   def apply(
-    left: ASTNode,
+    left: Expression,
     operator: BinOp,
-    right: ASTNode,
+    right: Expression,
     `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.BinaryOperation,
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait StateVariableDeclaration
   extends BaseASTNode
      with ASTNode {
+  var initialValue: js.UndefOr[Expression] = js.undefined
   @JSName("type")
   var type_StateVariableDeclaration: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.StateVariableDeclaration
   var variables: js.Array[VariableDeclaration]
@@ -17,11 +18,13 @@ object StateVariableDeclaration {
   def apply(
     `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.StateVariableDeclaration,
     variables: js.Array[VariableDeclaration],
+    initialValue: Expression = null,
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null
   ): StateVariableDeclaration = {
     val __obj = js.Dynamic.literal(variables = variables)
     __obj.updateDynamic("type")(`type`)
+    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[StateVariableDeclaration]

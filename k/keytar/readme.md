@@ -1,7 +1,7 @@
 
 # Scala.js typings for keytar
 
-Typings are for version 4.4.1
+Typings are for version 5.0.0-beta.4
 
 ## Library description:
 Bindings to native Mac/Linux/Windows password APIs
@@ -24,7 +24,7 @@ Bindings to native Mac/Linux/Windows password APIs
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -51,6 +51,7 @@ import typings.gestalt.gestaltStrings.start
 import typings.gestalt.gestaltStrings.static
 import typings.gestalt.gestaltStrings.stretch
 import typings.gestalt.gestaltStrings.transparent
+import typings.gestalt.gestaltStrings.transparentDarkGray
 import typings.gestalt.gestaltStrings.visible
 import typings.gestalt.gestaltStrings.visuallyHidden
 import typings.gestalt.gestaltStrings.watermelon
@@ -67,7 +68,7 @@ trait BoxProps extends js.Object {
   var bottom: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var color: js.UndefOr[
-    blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | watermelon | white
+    blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white
   ] = js.undefined
   var column: js.UndefOr[UnsignedUpTo12] = js.undefined
   var dangerouslySetInlineStyle: js.UndefOr[Anon_Key] = js.undefined
@@ -150,7 +151,7 @@ object BoxProps {
     alignSelf: auto | start | end | center | baseline | stretch = null,
     bottom: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
-    color: blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | watermelon | white = null,
+    color: blue | darkGray | darkWash | eggplant | gray | green | lightGray | lightWash | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | transparent | transparentDarkGray | watermelon | white = null,
     column: UnsignedUpTo12 = null,
     dangerouslySetInlineStyle: Anon_Key = null,
     direction: row | column = null,

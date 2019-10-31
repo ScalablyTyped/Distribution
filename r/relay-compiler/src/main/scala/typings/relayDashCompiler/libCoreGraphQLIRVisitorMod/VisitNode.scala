@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.relayDashCompiler.libCoreGraphQLIRMod.Condition
   - typings.relayDashCompiler.libCoreGraphQLIRMod.Defer
   - typings.relayDashCompiler.libCoreGraphQLIRMod.ConnectionField
+  - typings.relayDashCompiler.libCoreGraphQLIRMod.Connection
   - typings.relayDashCompiler.libCoreGraphQLIRMod.Directive
   - typings.relayDashCompiler.libCoreGraphQLIRMod.Fragment
   - typings.relayDashCompiler.libCoreGraphQLIRMod.FragmentSpread

@@ -1,7 +1,7 @@
 
 # Scala.js typings for redom
 
-Typings are for version 3.12
+Typings are for version 3.24.1
 
 ## Library description:
 Tiny turboboosted JavaScript library for creating user interfaces. 100 % test coverage!
@@ -24,7 +24,7 @@ Tiny turboboosted JavaScript library for creating user interfaces. 100 % test co
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

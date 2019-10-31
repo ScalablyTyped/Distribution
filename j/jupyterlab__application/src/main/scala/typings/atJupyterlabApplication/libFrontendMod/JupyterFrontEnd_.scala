@@ -49,8 +49,8 @@ abstract class JupyterFrontEnd_[T /* <: IShell */] protected () extends Applicat
   val version: String = js.native
   /**
     * Walks up the DOM hierarchy of the target of the active `contextmenu`
-    * event, testing the nodes for a user-supplied funcion. This can
-    * be used to find a node on which to operate, given a context menu click.
+    * event, testing each HTMLElement ancestor for a user-supplied funcion. This can
+    * be used to find an HTMLElement on which to operate, given a context menu click.
     *
     * @param test - a function that takes an `HTMLElement` and returns a
     *   boolean for whether it is the element the requester is seeking.

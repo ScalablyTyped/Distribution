@@ -7,6 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientSessionOptions extends SessionOptions {
+  @JSName("createConnection")
+  var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL, /* option */ SessionOptions, Duplex]] = js.undefined
   var maxReservedRemoteStreams: js.UndefOr[Double] = js.undefined
 }
 

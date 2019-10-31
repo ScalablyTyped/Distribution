@@ -1441,6 +1441,7 @@
 | 128 | [copy-to-clipboard](./c/copy-to-clipboard) | Copy stuff into clipboard using JS with fallbacks
 | 128 | [engine_dot_io](./e/engine_dot_io) | The realtime engine behind Socket.IO. Provides the
 | 128 | [lodash-webpack-plugin](./l/lodash-webpack-plugin) | Smaller modular Lodash builds.
+| 128 | [react-display-name](./r/react-display-name) | utility to return a react components display name
 | 128 | [reflux](./r/reflux) | A simple library for uni-directional dataflow appl
 | 128 | [stylelint-webpack-plugin](./s/stylelint-webpack-plugin) | A stylelint plugin for webpack
 | 128 | [zen-observable](./z/zen-observable) | An Implementation of ES Observables
@@ -4013,6 +4014,7 @@
 | 14 | [jdenticon](./j/jdenticon) | Javascript identicon generator
 | 14 | [json-editor](./j/json-editor) | JSON Schema based editor
 | 14 | [json-schema-merge-allof](./j/json-schema-merge-allof) | Simplify your schema by combining allOf into the r
+| 14 | [jss-plugin-nested](./j/jss-plugin-nested) | JSS plugin that enables support for nested selecto
 | 14 | [jupyterlab__statusbar](./j/jupyterlab__statusbar) | JupyterLab statusbar package.
 | 14 | [koa-hbs](./k/koa-hbs) | Handlebars Templates via Generators for Koa
 | 14 | [leaflet-fullscreen](./l/leaflet-fullscreen) | A fullscreen control for Leaflet
@@ -5464,6 +5466,7 @@
 | 4 | [twilio-sync](./t/twilio-sync) | Twilio Sync client library
 | 4 | [unimodules__react-native-](./u/unimodules__react-native-adapter) | The adapter to use universal modules with the Reac
 | 4 | [url-metadata](./u/url-metadata) | Request an http(s) url and scrape its metadata.
+| 4 | [use-callback-ref](./u/use-callback-ref) | The same useRef, but with callback
 | 4 | [utm](./u/utm) | Bidirectional UTM-WGS84 converter
 | 4 | [vectorious](./v/vectorious) | A high performance linear algebra library.
 | 4 | [vitalsigns](./v/vitalsigns) | Powerful and customizable application health monit
@@ -5758,8 +5761,8 @@
 | 3 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript
 | 3 | [twilio-chat](./t/twilio-chat) | Twilio Chat service client library
 | 3 | [twilio-notifications](./t/twilio-notifications) | Client library for Twilio Notifications service
-| 3 | [uifabric__example-data](./u/uifabric__example-data) | Data generators for Office UI Fabric React example
 | 3 | [unimodules__core](./u/unimodules__core) | Universal modules core
+| 3 | [use-sidecar](./u/use-sidecar) | Sidecar code splitting utils
 | 3 | [vanilla-modal](./v/vanilla-modal) | A dependency-free CSS-driven plain JavaScript moda
 | 3 | [vfile-message](./v/vfile-message) | Create a virtual message
 | 3 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue
@@ -5938,6 +5941,7 @@
 | 2 | [jupyterlab__help-extensio](./j/jupyterlab__help-extension) | JupyterLab - Help Extension
 | 2 | [jupyterlab__htmlviewer](./j/jupyterlab__htmlviewer) | A viewer for HTML documents.
 | 2 | [jupyterlab__hub-extension](./j/jupyterlab__hub-extension) | JupyterLab integration for JupyterHub
+| 2 | [jupyterlab__logconsole](./j/jupyterlab__logconsole) | JupyterLab - Log Console
 | 2 | [jupyterlab__notebook-exte](./j/jupyterlab__notebook-extension) | JupyterLab - Notebook Extension
 | 2 | [jupyterlab__settingeditor](./j/jupyterlab__settingeditor) | The JupyterLab default setting editor interface
 | 2 | [jupyterlab__tabmanager-ex](./j/jupyterlab__tabmanager-extension) | JupyterLab - Tab Manager Extension
@@ -6161,6 +6165,7 @@
 | 2 | [zui](./z/zui) | 一个基于 Bootstrap 深度定制开源前端实践方案，帮助你快速构建现代跨屏应用。
 | 1 | [7zip-min](./7/7zip-min) | Standalone cross-platform zip/unzip with 7za
 | 1 | [activedirectory2](./a/activedirectory2) | ActiveDirectory is an ldapjs client for authN (aut
+| 1 | [agilite](./a/agilite) | A NodeJS module that provides seamless interaction
 | 1 | [alexa-voice-service](./a/alexa-voice-service) | Alexa Voice Service wrapper for the browser.
 | 1 | [alks-node](./a/alks-node) | Node client for ALKS
 | 1 | [all-keys](./a/all-keys) | Get all property keys of an object including non-e
@@ -6213,6 +6218,7 @@
 | 1 | [bazinga-translator](./b/bazinga-translator) | A pretty nice way to use your translation messages
 | 1 | [bdfjs](./b/bdfjs) | Simple library for reading Adobe Glyph Bitmap Dist
 | 1 | [bidirectional-map](./b/bidirectional-map) | Create 'key/value' collections of one-to-one corre
+| 1 | [bip174](./b/bip174) | -
 | 1 | [bootpag](./b/bootpag) | bootpag - dynamic pagination jQuery plugin. Works 
 | 1 | [bootstrap-treeview](./b/bootstrap-treeview) | Tree View for Twitter Bootstrap
 | 1 | [bounce_dot_js](./b/bounce_dot_js) | Generate beautiful CSS3 powered animations
@@ -6425,6 +6431,7 @@
 | 1 | [jupyterlab__javascript-ex](./j/jupyterlab__javascript-extension) | JupyterLab - Javascript Renderer
 | 1 | [jupyterlab__json-extensio](./j/jupyterlab__json-extension) | JupyterLab - JSON Renderer
 | 1 | [jupyterlab__launcher-exte](./j/jupyterlab__launcher-extension) | JupyterLab - Launcher Page Extension
+| 1 | [jupyterlab__logconsole-ex](./j/jupyterlab__logconsole-extension) | JupyterLab - Log Console Extension
 | 1 | [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension
 | 1 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer-extension) | JupyterLab - Markdown Renderer Extension
 | 1 | [jupyterlab__mathjax2-exte](./j/jupyterlab__mathjax2-extension) | A JupyterLab extension providing MathJax 2 Typeset
@@ -6501,6 +6508,7 @@
 | 1 | [mobx-apollo](./m/mobx-apollo) | A MobX and Apollo Client integration utility.
 | 1 | [mochaccino](./m/mochaccino) | United js test tools
 | 1 | [mock-raf](./m/mock-raf) | A simple mock for requestAnimationFrame testing wi
+| 1 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
 | 1 | [mongoose-mock](./m/mongoose-mock) | A replacement for mongoose in tests returning mode
 | 1 | [moonjs](./m/moonjs) | A minimal, blazing fast user interface library.
 | 1 | [multy](./m/multy) | Koa(v2)/Express middleware for handle multipart fo
@@ -7065,6 +7073,7 @@
 | 0 | [lerna-get-packages](./l/lerna-get-packages) | > Get an array of packages from a lerna monorepo.
 | 0 | [libra-core](./l/libra-core) | Library for Crypto
 | 0 | [lifeomic__axios-fetch](./l/lifeomic__axios-fetch) | A WebAPI Fetch implementation backed by an Axios c
+| 0 | [light-sdk](./l/light-sdk) | > light-sdk 用于开发者开发 LightApp 时调用原生 API，实现与原生系统的交互。
 | 0 | [lightpick](./l/lightpick) | Javascript date range picker - lightweight, no jQu
 | 0 | [linear-gradient](./l/linear-gradient) | Calculates the color representing a number based o
 | 0 | [linq4js](./l/linq4js) | Linq methods for JavaScript/TypeScript to work wit

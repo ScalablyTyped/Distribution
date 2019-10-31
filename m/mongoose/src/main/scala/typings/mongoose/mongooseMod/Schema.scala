@@ -186,6 +186,8 @@ trait Schema[T] extends EventEmitter {
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: String, fn: HookSyncCallback[T], errorCb: HookErrorCallback): this.type = js.native
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: String, parallel: Boolean, fn: HookAsyncCallback[T]): this.type = js.native
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: String, parallel: Boolean, fn: HookAsyncCallback[T], errorCb: HookErrorCallback): this.type = js.native
+  def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: RegExp, fn: HookSyncCallback[T]): this.type = js.native
+  def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: RegExp, fn: HookSyncCallback[T], errorCb: HookErrorCallback): this.type = js.native
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: RegExp, parallel: Boolean, fn: HookAsyncCallback[T]): this.type = js.native
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: RegExp, parallel: Boolean, fn: HookAsyncCallback[T], errorCb: HookErrorCallback): this.type = js.native
   @JSName("pre")

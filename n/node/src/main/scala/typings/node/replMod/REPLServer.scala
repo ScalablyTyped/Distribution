@@ -30,8 +30,19 @@ import scala.scalajs.js.annotation._
   *
   * @see https://nodejs.org/dist/latest-v10.x/docs/api/repl.html#repl_repl
   */
+@JSImport("repl", "REPLServer")
 @js.native
-trait REPLServer extends Interface {
+/**
+  * NOTE: According to the documentation:
+  *
+  * > Instances of `repl.REPLServer` are created using the `repl.start()` method and
+  * > _should not_ be created directly using the JavaScript `new` keyword.
+  *
+  * `REPLServer` cannot be subclassed due to implementation specifics in NodeJS.
+  *
+  * @see https://nodejs.org/dist/latest-v10.x/docs/api/repl.html#repl_class_replserver
+  */
+class REPLServer protected () extends Interface {
   /**
     * The commands registered via `replServer.defineCommand()`.
     */

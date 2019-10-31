@@ -10,6 +10,7 @@ package object videojs {
   import typings.std.Error
   import typings.std.Node
   import typings.videoDotJs.Anon_Children
+  import typings.videoDotJs.videoDotJsMod.VideoJsPlayer
   import typings.videoDotJs.videoDotJsMod.VideoJsPlayerOptions
 
   type Child = String | Anon_Children
@@ -17,7 +18,7 @@ package object videojs {
   type Content = String | Element | Node | (js.Function0[String | Element | Node])
   type Dom = Dom_
   type LanguageTranslations = StringDictionary[String]
-  type Player = typings.videoDotJs.videoDotJsMod.VideoJsPlayer
+  type Player = VideoJsPlayer
   type PlayerOptions = VideoJsPlayerOptions
   type Plugin = Plugin_
   type Tech = Tech_

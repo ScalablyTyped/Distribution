@@ -30,7 +30,7 @@ trait ICellModel extends IModel {
   /**
     * A signal emitted when a model state changes.
     */
-  val stateChanged: ISignal[ICellModel, IChangedArgs[_]]
+  val stateChanged: ISignal[ICellModel, IChangedArgs[_, String]]
   /**
     * Whether the cell is trusted.
     */
@@ -54,10 +54,10 @@ object ICellModel {
     isDisposed: Boolean,
     metadata: IObservableJSON,
     mimeType: String,
-    mimeTypeChanged: ISignal[IModel, IChangedArgs[String]],
+    mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String]],
     modelDB: IModelDB,
     selections: IObservableMap[js.Array[ITextSelection]],
-    stateChanged: ISignal[ICellModel, IChangedArgs[_]],
+    stateChanged: ISignal[ICellModel, IChangedArgs[_, String]],
     toJSON: () => ICell,
     trusted: Boolean,
     `type`: CellType,

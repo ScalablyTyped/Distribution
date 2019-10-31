@@ -18,7 +18,7 @@ object utimes extends js.Object {
     path: String,
     atime: Double,
     mtime: Double,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
+    callback: js.Function1[js.UndefOr[ErrnoException], Unit]
   ): Unit = js.native
   def apply(path: String, atime: Double, mtime: Date): js.Promise[Unit] = js.native
   def apply(
@@ -35,18 +35,13 @@ object utimes extends js.Object {
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
   ): Unit = js.native
   def apply(path: String, atime: Date, mtime: Date): js.Promise[Unit] = js.native
-  def apply(
-    path: String,
-    atime: Date,
-    mtime: Date,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  def apply(path: String, atime: Date, mtime: Date, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def apply(path: Buffer, atime: Double, mtime: Double): js.Promise[Unit] = js.native
   def apply(
     path: Buffer,
     atime: Double,
     mtime: Double,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
+    callback: js.Function1[js.UndefOr[ErrnoException], Unit]
   ): Unit = js.native
   def apply(path: Buffer, atime: Double, mtime: Date): js.Promise[Unit] = js.native
   def apply(
@@ -63,12 +58,7 @@ object utimes extends js.Object {
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
   ): Unit = js.native
   def apply(path: Buffer, atime: Date, mtime: Date): js.Promise[Unit] = js.native
-  def apply(
-    path: Buffer,
-    atime: Date,
-    mtime: Date,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  def apply(path: Buffer, atime: Date, mtime: Date, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   /**
     * Asynchronously change file timestamps of the file referenced by the supplied path.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

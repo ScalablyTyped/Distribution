@@ -1,5 +1,6 @@
 package typings.atTensorflowTfjsDashNode
 
+import typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod.MetaGraphInfo
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.Empty
@@ -9,6 +10,7 @@ import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.in
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.rgb
 import typings.atTensorflowTfjsDashNode.distCallbacksMod.TensorBoardCallback
 import typings.atTensorflowTfjsDashNode.distCallbacksMod.TensorBoardCallbackArgs
+import typings.atTensorflowTfjsDashNode.distSavedUnderscoreModelMod.TFSavedModel
 import typings.atTensorflowTfjsDashNode.distTensorboardMod.SummaryFileWriter
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -66,6 +68,15 @@ object distNodeMod extends js.Object {
       ] = js.native
     @JSName("encodePng")
     var encodePng_Original: js.Function2[/* image */ Tensor3D, /* compression */ js.UndefOr[Double], js.Promise[Uint8Array]] = js.native
+    @JSName("getMetaGraphsFromSavedModel")
+    var getMetaGraphsFromSavedModel_Original: js.Function1[/* path */ String, js.Promise[js.Array[MetaGraphInfo]]] = js.native
+    @JSName("loadSavedModel")
+    var loadSavedModel_Original: js.Function3[
+        /* path */ String, 
+        /* tags */ js.UndefOr[js.Array[String]], 
+        /* signature */ js.UndefOr[String], 
+        js.Promise[TFSavedModel]
+      ] = js.native
     @JSName("summaryFileWriter")
     var summaryFileWriter_Original: js.Function4[
         /* logdir */ String, 
@@ -139,6 +150,10 @@ object distNodeMod extends js.Object {
     ): js.Promise[Uint8Array] = js.native
     def encodePng(image: Tensor3D): js.Promise[Uint8Array] = js.native
     def encodePng(image: Tensor3D, compression: Double): js.Promise[Uint8Array] = js.native
+    def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraphInfo]] = js.native
+    def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
+    def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
+    def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native
     def summaryFileWriter(logdir: String): SummaryFileWriter = js.native
     def summaryFileWriter(logdir: String, maxQueue: Double): SummaryFileWriter = js.native
     def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double): SummaryFileWriter = js.native

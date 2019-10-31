@@ -4,8 +4,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// from `SafeArea.[ios|android].js`
-@JSImport("react-native-safe-area", "SafeArea")
-@js.native
-object SafeArea extends js.Object
+trait SafeArea extends js.Object
 

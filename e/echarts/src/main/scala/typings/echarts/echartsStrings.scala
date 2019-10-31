@@ -150,6 +150,9 @@ object echartsStrings {
   sealed trait multiple extends js.Object
   
   @js.native
+  sealed trait `no-repeat` extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -187,6 +190,15 @@ object echartsStrings {
   
   @js.native
   sealed trait radius extends js.Object
+  
+  @js.native
+  sealed trait repeat extends js.Object
+  
+  @js.native
+  sealed trait `repeat-x` extends js.Object
+  
+  @js.native
+  sealed trait `repeat-y` extends js.Object
   
   @js.native
   sealed trait right extends Str
@@ -343,6 +355,8 @@ object echartsStrings {
   @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline
+  def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
@@ -368,6 +382,12 @@ object echartsStrings {
   def radial: radial = "radial".asInstanceOf[radial]
   @scala.inline
   def radius: radius = "radius".asInstanceOf[radius]
+  @scala.inline
+  def repeat: repeat = "repeat".asInstanceOf[repeat]
+  @scala.inline
+  def `repeat-x`: `repeat-x` = "repeat-x".asInstanceOf[`repeat-x`]
+  @scala.inline
+  def `repeat-y`: `repeat-y` = "repeat-y".asInstanceOf[`repeat-y`]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline

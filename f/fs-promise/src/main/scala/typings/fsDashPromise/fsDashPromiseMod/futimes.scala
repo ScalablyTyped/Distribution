@@ -26,7 +26,7 @@ object futimes extends js.Object {
     fd: Double,
     atime: Double,
     mtime: Double,
-    callback: (js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]) | NoParamCallback
+    callback: (js.Function1[js.UndefOr[ErrnoException], Unit]) | NoParamCallback
   ): Unit = js.native
   def apply(fd: Double, atime: Double, mtime: Date): js.Promise[Unit] = js.native
   def apply(
@@ -48,7 +48,7 @@ object futimes extends js.Object {
     fd: Double,
     atime: Date,
     mtime: Date,
-    callback: (js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]) | NoParamCallback
+    callback: (js.Function1[js.UndefOr[ErrnoException], Unit]) | NoParamCallback
   ): Unit = js.native
   /**
     * Asynchronously change file timestamps of the file referenced by the supplied file descriptor.

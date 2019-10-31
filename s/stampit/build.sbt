@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stampit"
-version := "3.0-dt-20190228Z-c7abb1"
+version := "4.3-dt-20191030Z-222cab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

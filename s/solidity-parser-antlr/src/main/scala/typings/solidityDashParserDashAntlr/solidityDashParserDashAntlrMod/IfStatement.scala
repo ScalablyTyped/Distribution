@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait IfStatement
   extends BaseASTNode
-     with ASTNode {
-  var falseBody: ASTNode
-  var trueBody: ASTNode
+     with ASTNode
+     with Statement {
+  var condition: Expression
+  var falseBody: js.UndefOr[Statement] = js.undefined
+  var trueBody: Statement
   @JSName("type")
   var type_IfStatement: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.IfStatement
 }
@@ -16,14 +18,16 @@ trait IfStatement
 object IfStatement {
   @scala.inline
   def apply(
-    falseBody: ASTNode,
-    trueBody: ASTNode,
+    condition: Expression,
+    trueBody: Statement,
     `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.IfStatement,
+    falseBody: Statement = null,
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null
   ): IfStatement = {
-    val __obj = js.Dynamic.literal(falseBody = falseBody, trueBody = trueBody)
+    val __obj = js.Dynamic.literal(condition = condition, trueBody = trueBody)
     __obj.updateDynamic("type")(`type`)
+    if (falseBody != null) __obj.updateDynamic("falseBody")(falseBody)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[IfStatement]

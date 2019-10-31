@@ -4,25 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Expression
-  extends BaseASTNode
-     with ASTNode {
-  @JSName("type")
-  var type_Expression: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Expression
-}
-
-object Expression {
-  @scala.inline
-  def apply(
-    `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Expression,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): Expression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
-    __obj.asInstanceOf[Expression]
-  }
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.IndexAccess
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.TupleExpression
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.BinaryOperation
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Conditional
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.MemberAccess
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.FunctionCall
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.PrimaryExpression
+*/
+trait Expression extends ASTNode
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/animations" : "8.2.12"
+      "@angular/animations" : "8.2.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/animations" : "8.2.12"
+      "@angular/animations" : "8.2.13"
     }
   ],
   "compile-devDependencies" : [

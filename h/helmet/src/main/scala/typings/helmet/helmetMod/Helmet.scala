@@ -35,6 +35,12 @@ trait Helmet extends js.Object {
   def expectCt(): RequestHandler = js.native
   def expectCt(options: IHelmetExpectCtConfiguration): RequestHandler = js.native
   /**
+    * @summary Restrict which browser features can be used
+    * @param {IFeaturePolicyOptions} options The options
+    * @return {RequestHandler} The Request handler
+    */
+  def featurePolicy(options: IFeaturePolicyOptions): RequestHandler = js.native
+  /**
     * @summary Prevent clickjacking.
     * @param {IHelmetFrameguardConfiguration} options The options
     * @return {RequestHandler} The Request handler

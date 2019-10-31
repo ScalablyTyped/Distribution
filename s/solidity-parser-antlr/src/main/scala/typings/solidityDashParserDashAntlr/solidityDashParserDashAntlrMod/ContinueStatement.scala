@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait ContinueStatement
   extends BaseASTNode
-     with ASTNode {
+     with ASTNode
+     with Statement {
   @JSName("type")
   var type_ContinueStatement: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ContinueStatement
 }

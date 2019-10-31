@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@phosphor/commands" : "1.7.1"
+      "@phosphor/commands" : "1.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@phosphor/commands" : "1.7.1"
+      "@phosphor/commands" : "1.7.2"
     }
   ],
   "compile-devDependencies" : [

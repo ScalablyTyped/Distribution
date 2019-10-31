@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testing-library__react-hooks"
-version := "2.0-dt-20191002Z-ae377e"
+version := "3.1-dt-20191029Z-0fbbb7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

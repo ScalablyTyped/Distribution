@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "web3-eth-personal"
-version := "1.2.2-a4b558"
+version := "1.2.2-ac74b8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-c45db0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-cefcac",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "web3-core" % "1.2.2-57a04e",
-  "org.scalablytyped" %%% "web3-core-helpers" % "1.2.2-828324",
+  "org.scalablytyped" %%% "web3-core" % "1.2.2-279dac",
+  "org.scalablytyped" %%% "web3-core-helpers" % "1.2.2-8a35df",
   "org.scalablytyped" %%% "web3-core-method" % "1.2.2-e8b753")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

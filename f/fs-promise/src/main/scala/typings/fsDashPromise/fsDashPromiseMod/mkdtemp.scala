@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fs-promise", "mkdtemp")
 @js.native
 object mkdtemp extends js.Object {
+  def apply(prefix: String): js.Promise[String] = js.native
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.

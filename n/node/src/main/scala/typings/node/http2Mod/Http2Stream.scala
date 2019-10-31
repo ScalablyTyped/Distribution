@@ -13,9 +13,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("http2", "Http2Stream")
 @js.native
-class Http2Stream protected () extends Duplex {
+trait Http2Stream extends Duplex {
   val aborted: Boolean = js.native
   val bufferSize: Double = js.native
   val closed: Boolean = js.native

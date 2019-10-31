@@ -30,7 +30,7 @@ abstract class ServeRunner[T /* <: ServeOptions */] () extends Runner[T, ServeDe
   def getPkgManagerServeCLI(): PkgManagerServeCLI = js.native
   def getSupportedDevAppPlugins(): js.Promise[Set[String]] = js.native
   def getUsedPorts(options: T, details: ServeDetails): js.Array[Double] = js.native
-  def modifyOpenURL(url: String, options: T): String = js.native
+  def modifyOpenUrl(url: String, options: T): String = js.native
   def publishDevApp(options: T, details: DevAppDetails): js.Promise[js.UndefOr[String]] = js.native
   /* CompleteClass */
   override def run(options: T): js.Promise[ServeDetails] = js.native

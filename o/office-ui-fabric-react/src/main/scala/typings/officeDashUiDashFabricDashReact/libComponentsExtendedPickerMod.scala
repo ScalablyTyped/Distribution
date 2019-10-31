@@ -1,6 +1,5 @@
 package typings.officeDashUiDashFabricDashReact
 
-import typings.atUifabricExampleDashData.IExampleExtendedPersonaPropskeystringnumber
 import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerBaseExtendedPickerDotTypesMod.IBaseExtendedPickerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerPeoplePickerExtendedPeoplePickerMod.IExtendedPeoplePickerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
@@ -25,9 +24,5 @@ object libComponentsExtendedPickerMod extends js.Object {
   class ExtendedPeoplePicker ()
     extends typings.officeDashUiDashFabricDashReact.libComponentsExtendedPickerBaseExtendedPickerMod.BaseExtendedPicker[IPersonaProps, IExtendedPeoplePickerProps]
   
-  val groupOne: js.Array[IExampleExtendedPersonaPropskeystringnumber] = js.native
-  val groupTwo: js.Array[IExampleExtendedPersonaPropskeystringnumber] = js.native
-  val mru: js.Array[IExampleExtendedPersonaPropskeystringnumber] = js.native
-  val people: js.Array[IExampleExtendedPersonaPropskeystringnumber] = js.native
 }
 

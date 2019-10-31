@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stacktrace-js"
-version := "0.0-unknown-dt-20191015Z-6f6e91"
+version := "2.0.1-9c1e6c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

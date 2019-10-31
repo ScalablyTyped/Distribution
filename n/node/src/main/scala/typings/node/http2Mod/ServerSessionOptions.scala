@@ -42,7 +42,7 @@ object ServerSessionOptions {
       Http2ServerRequest
     ] = null,
     Http2ServerResponse: Instantiable1[/* stream */ ServerHttp2Stream, Http2ServerResponse] = null,
-    createConnection: (/* authority */ URL, /* option */ SessionOptions) => Duplex = null,
+    createConnection: (/* authority */ URL, ServerSessionOptions) => Duplex = null,
     maxDeflateDynamicTableSize: Int | Double = null,
     maxHeaderListPairs: Int | Double = null,
     maxOutstandingPings: Int | Double = null,

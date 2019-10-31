@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object chmod extends js.Object {
   def apply(path: String, mode: String): js.Promise[Unit] = js.native
-  def apply(path: String, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  def apply(path: String, mode: String, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def apply(path: String, mode: Double): js.Promise[Unit] = js.native
-  def apply(path: String, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  def apply(path: String, mode: Double, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def apply(path: Buffer, mode: String): js.Promise[Unit] = js.native
-  def apply(path: Buffer, mode: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  def apply(path: Buffer, mode: String, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def apply(path: Buffer, mode: Double): js.Promise[Unit] = js.native
-  def apply(path: Buffer, mode: Double, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  def apply(path: Buffer, mode: Double, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   /**
     * Asynchronous chmod(2) - Change permissions of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

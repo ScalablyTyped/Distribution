@@ -3,6 +3,24 @@
 
 Typings are for version 0.2.4
 
+## Library description:
+utility to return a react components display name
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | react-display-name |
+| Keywords           | react, redux, getDisplayName |
+| # releases         | 2 |
+| # dependents       | 128 |
+| # downloads        | 4392469 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/jurassix/react-display-name#readme)
+- [Bugs](https://github.com/jurassix/react-display-name/issues)
+- [Repository](https://github.com/jurassix/react-display-name)
+- [Npm](https://www.npmjs.com/package/react-display-name)
+    
 
 
 ## Note

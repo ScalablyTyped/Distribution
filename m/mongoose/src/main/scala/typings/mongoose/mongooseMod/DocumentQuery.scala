@@ -632,5 +632,7 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   def within(): this.type = js.native
   def within(coordinate: js.Array[Double], coordinatePairs: js.Array[Double]*): this.type = js.native
   def within(`val`: js.Any): this.type = js.native
+  def wtimeout(): this.type = js.native
+  def wtimeout(ms: Double): this.type = js.native
 }
 

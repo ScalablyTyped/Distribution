@@ -36,6 +36,8 @@ trait IOutputAreaModel_ extends IDisposable {
   /**
     * Add an output, which may be combined with previous output.
     *
+    * @returns The total number of outputs.
+    *
     * #### Notes
     * The output bundle is copied.
     * Contiguous stream outputs of the same `name` are combined.

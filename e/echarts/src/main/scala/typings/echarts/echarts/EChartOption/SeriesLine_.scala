@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
 import typings.echarts.Anon_AlignBackgroundColorBorderColor
-import typings.echarts.Anon_AnimationAnimationDelay
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdate
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration
+import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold
 import typings.echarts.Anon_BackgroundColorBorderColor
 import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacity
 import typings.echarts.Anon_ColorOpacityOrigin
@@ -506,7 +506,9 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine
     */
-  var markLine: js.UndefOr[Anon_AnimationAnimationDelay] = js.undefined
+  var markLine: js.UndefOr[
+    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold
+  ] = js.undefined
   /**
     * Mark point in a chart.
     *
@@ -902,7 +904,7 @@ object SeriesLine_ {
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     lineStyle: Anon_ColorOpacityShadowBlur = null,
     markArea: Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
-    markLine: Anon_AnimationAnimationDelay = null,
+    markLine: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold = null,
     markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
     name: String = null,
     polarIndex: Int | Double = null,

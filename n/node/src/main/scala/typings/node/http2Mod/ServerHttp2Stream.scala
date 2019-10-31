@@ -1,14 +1,14 @@
 package typings.node.http2Mod
 
 import typings.node.Error
+import typings.node.fsMod.promises.FileHandle
 import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("http2", "ServerHttp2Stream")
 @js.native
-class ServerHttp2Stream protected () extends Http2Stream {
+trait ServerHttp2Stream extends Http2Stream {
   val headersSent: Boolean = js.native
   val pushAllowed: Boolean = js.native
   def additionalHeaders(headers: OutgoingHttpHeaders): Unit = js.native
@@ -39,6 +39,9 @@ class ServerHttp2Stream protected () extends Http2Stream {
   def respondWithFD(fd: Double): Unit = js.native
   def respondWithFD(fd: Double, headers: OutgoingHttpHeaders): Unit = js.native
   def respondWithFD(fd: Double, headers: OutgoingHttpHeaders, options: ServerStreamFileResponseOptions): Unit = js.native
+  def respondWithFD(fd: FileHandle): Unit = js.native
+  def respondWithFD(fd: FileHandle, headers: OutgoingHttpHeaders): Unit = js.native
+  def respondWithFD(fd: FileHandle, headers: OutgoingHttpHeaders, options: ServerStreamFileResponseOptions): Unit = js.native
   def respondWithFile(path: java.lang.String): Unit = js.native
   def respondWithFile(path: java.lang.String, headers: OutgoingHttpHeaders): Unit = js.native
   def respondWithFile(

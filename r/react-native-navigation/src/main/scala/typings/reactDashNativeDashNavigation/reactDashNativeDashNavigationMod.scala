@@ -17,7 +17,6 @@ object reactDashNativeDashNavigationMod extends js.Object {
   /* static members */
   @js.native
   object Constants extends js.Object {
-    var instance: js.Any = js.native
     def get(): js.Promise[NavigationConstants] = js.native
   }
   

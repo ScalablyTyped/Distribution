@@ -1,7 +1,7 @@
 
 # Scala.js typings for word-wrap
 
-Typings are for version 1.2
+Typings are for version 1.2.3
 
 ## Library description:
 Wrap words to a specified length.
@@ -24,7 +24,7 @@ Wrap words to a specified length.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

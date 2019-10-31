@@ -4,25 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Statement
-  extends BaseASTNode
-     with ASTNode {
-  @JSName("type")
-  var type_Statement: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Statement
-}
-
-object Statement {
-  @scala.inline
-  def apply(
-    `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.Statement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): Statement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
-    __obj.asInstanceOf[Statement]
-  }
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.IfStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.WhileStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ForStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Block
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.InlineAssemblyStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.DoWhileStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ContinueStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.BreakStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ReturnStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.EmitStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ThrowStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.SimpleStatement
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.VariableDeclarationStatement
+*/
+trait Statement extends js.Object
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// from `withSafeArea.js`
 /* Rewritten from type alias, can be one of: 
   - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.top
   - typings.reactDashNativeDashSafeDashArea.reactDashNativeDashSafeDashAreaStrings.bottom

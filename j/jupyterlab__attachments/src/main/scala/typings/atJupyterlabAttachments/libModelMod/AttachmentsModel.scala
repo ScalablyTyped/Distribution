@@ -118,6 +118,11 @@ class AttachmentsModel () extends IAttachmentsModel {
   /* CompleteClass */
   override def has(key: String): Boolean = js.native
   /**
+    * Remove the attachment whose name is the specified key
+    */
+  @JSName("remove")
+  def remove_MAttachmentsModel(key: String): Unit = js.native
+  /**
     * Set the value of the specified key.
     */
   /* CompleteClass */

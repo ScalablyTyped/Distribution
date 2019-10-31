@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("http2", "ClientHttp2Stream")
 @js.native
-class ClientHttp2Stream protected () extends Http2Stream {
+trait ClientHttp2Stream extends Http2Stream {
   @JSName("addListener")
   def addListener_continue(event: continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("addListener")

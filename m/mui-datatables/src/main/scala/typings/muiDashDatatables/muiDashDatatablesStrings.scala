@@ -17,6 +17,9 @@ object muiDashDatatablesStrings {
   sealed trait checkbox extends FilterType
   
   @js.native
+  sealed trait chip extends FilterType
+  
+  @js.native
   sealed trait custom extends FilterType
   
   @js.native
@@ -41,6 +44,9 @@ object muiDashDatatablesStrings {
   sealed trait none extends SelectableRows
   
   @js.native
+  sealed trait reset extends FilterType
+  
+  @js.native
   sealed trait scrollFullHeight extends Responsive
   
   @js.native
@@ -63,6 +69,8 @@ object muiDashDatatablesStrings {
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
+  def chip: chip = "chip".asInstanceOf[chip]
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
@@ -78,6 +86,8 @@ object muiDashDatatablesStrings {
   def multiselect: multiselect = "multiselect".asInstanceOf[multiselect]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def scrollFullHeight: scrollFullHeight = "scrollFullHeight".asInstanceOf[scrollFullHeight]
   @scala.inline

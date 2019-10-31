@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 class OutputAreaModel () extends IOutputAreaModel {
   def this(options: IOptions) = this()
   /**
-    * Add an item to the list.
+    * Add a copy of the item to the list.
     */
   var _add: js.Any = js.native
   var _changed: js.Any = js.native

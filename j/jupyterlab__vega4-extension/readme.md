@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__vega4-extension
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 JupyterLab - Vega 4 and Vega-Lite 2 Mime Renderer Extension

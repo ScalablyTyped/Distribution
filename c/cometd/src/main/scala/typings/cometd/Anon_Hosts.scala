@@ -1,0 +1,34 @@
+package typings.cometd
+
+import typings.cometd.cometdMod.ReconnectAdvice
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Hosts extends js.Object {
+  var hosts: js.UndefOr[js.Array[String]] = js.undefined
+  var interval: js.UndefOr[Double] = js.undefined
+  var `multiple-clients`: js.UndefOr[Boolean] = js.undefined
+  var reconnect: js.UndefOr[ReconnectAdvice] = js.undefined
+  var timeout: js.UndefOr[Double] = js.undefined
+}
+
+object Anon_Hosts {
+  @scala.inline
+  def apply(
+    hosts: js.Array[String] = null,
+    interval: Int | Double = null,
+    `multiple-clients`: js.UndefOr[Boolean] = js.undefined,
+    reconnect: ReconnectAdvice = null,
+    timeout: Int | Double = null
+  ): Anon_Hosts = {
+    val __obj = js.Dynamic.literal()
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(`multiple-clients`)) __obj.updateDynamic("multiple-clients")(`multiple-clients`)
+    if (reconnect != null) __obj.updateDynamic("reconnect")(reconnect)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Hosts]
+  }
+}
+

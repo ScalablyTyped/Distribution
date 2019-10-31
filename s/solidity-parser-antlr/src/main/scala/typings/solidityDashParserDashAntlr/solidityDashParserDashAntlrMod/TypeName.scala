@@ -4,25 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TypeName
-  extends BaseASTNode
-     with ASTNode {
-  @JSName("type")
-  var type_TypeName: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.TypeName
-}
-
-object TypeName {
-  @scala.inline
-  def apply(
-    `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.TypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): TypeName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
-    __obj.asInstanceOf[TypeName]
-  }
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ElementaryTypeName
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.UserDefinedTypeName
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.Mapping
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.ArrayTypeName
+  - typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod.FunctionTypeName
+*/
+trait TypeName extends ASTNode
 

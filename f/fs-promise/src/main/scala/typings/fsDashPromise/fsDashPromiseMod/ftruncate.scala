@@ -15,7 +15,7 @@ object ftruncate extends js.Object {
     * Asynchronous ftruncate(2) - Truncate a file to a specified length.
     * @param fd A file descriptor.
     */
-  def apply(fd: Double, callback: (js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]) | NoParamCallback): Unit = js.native
+  def apply(fd: Double, callback: (js.Function1[js.UndefOr[ErrnoException], Unit]) | NoParamCallback): Unit = js.native
   def apply(fd: Double, len: js.UndefOr[scala.Nothing], callback: NoParamCallback): Unit = js.native
   def apply(fd: Double, len: Double): js.Promise[Unit] = js.native
   /**
@@ -26,7 +26,7 @@ object ftruncate extends js.Object {
   def apply(
     fd: Double,
     len: Double,
-    callback: (js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]) | NoParamCallback
+    callback: (js.Function1[js.UndefOr[ErrnoException], Unit]) | NoParamCallback
   ): Unit = js.native
   def apply(fd: Double, len: Null, callback: NoParamCallback): Unit = js.native
   /**

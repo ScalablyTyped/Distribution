@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "msgpack5"
-version := "v3.4.0-dt-20190322Z-2ebf93"
+version := "v3.4.0-dt-20190322Z-7039a2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bl" % "v2.1.0-dt-20190322Z-691c8a",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "bl" % "v2.1.0-dt-20190322Z-81b905",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

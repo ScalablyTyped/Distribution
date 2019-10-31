@@ -173,6 +173,10 @@ trait Transition[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, 
     */
   def empty(): Boolean = js.native
   /**
+    * Returns a promise that resolves when every selected element finishes transitioning. If any element’s transition is cancelled or interrupted, the promise rejects.
+    */
+  def end(): js.Promise[Unit] = js.native
+  /**
     * For each selected element, selects only the elements that match the specified filter, and returns a transition on the resulting selection.
     *
     * The new transition has the same id, name and timing as this transition; however, if a transition with the same id already exists on a selected element,

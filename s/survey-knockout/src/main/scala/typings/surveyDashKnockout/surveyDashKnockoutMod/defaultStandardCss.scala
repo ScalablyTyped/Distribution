@@ -54,6 +54,7 @@ object defaultStandardCss extends js.Object {
   var paneldynamic: Anon_ButtonButtonAdd = js.native
   var progress: String = js.native
   var progressBar: String = js.native
+  var progressTextInBar: String = js.native
   var question: Anon_Comment = js.native
   var radiogroup: Anon_ClearButton = js.native
   var rating: Anon_Disabled = js.native

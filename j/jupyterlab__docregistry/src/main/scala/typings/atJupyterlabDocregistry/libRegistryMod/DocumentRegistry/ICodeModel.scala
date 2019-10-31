@@ -39,12 +39,12 @@ object ICodeModel {
     mimeType: String,
     mimeTypeChanged: ISignal[
       typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IModel, 
-      typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[String]
+      typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[String, String]
     ],
     modelDB: IModelDB,
     readOnly: Boolean,
     selections: IObservableMap[js.Array[ITextSelection]],
-    stateChanged: ISignal[ICodeModel, typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[_]],
+    stateChanged: ISignal[ICodeModel, typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[_, String]],
     toJSON: () => JSONValue,
     toString: () => String,
     value: IObservableString

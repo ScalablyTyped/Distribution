@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-avatar-editor"
-version := "10.3-dt-20190220Z-00dda6"
+version := "10.3-dt-20191030Z-bb8ddc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "faker"
-version := "4.1-dt-20191003Z-a57816"
+version := "4.1-dt-20191029Z-a57816"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

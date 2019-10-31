@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "expect-puppeteer"
-version := "3.3-dt-20191025Z-32373b"
+version := "3.3-dt-20191025Z-55f9c9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
-  "org.scalablytyped" %%% "puppeteer" % "1.20-dt-20191010Z-b16b60",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
+  "org.scalablytyped" %%% "puppeteer" % "1.20-dt-20191010Z-328b67",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "open-graph"
-version := "0.2-dt-20190305Z-c78da4"
+version := "0.2-dt-20190305Z-1ec6ed"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-70ae3d",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-750fb3",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

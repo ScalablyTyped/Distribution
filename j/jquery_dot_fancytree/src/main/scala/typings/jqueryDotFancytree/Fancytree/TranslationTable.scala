@@ -8,26 +8,29 @@ trait TranslationTable extends js.Object {
   /**
     * "Load error!"
     */
-  var loadError: String
+  var loadError: js.UndefOr[String] = js.undefined
   /**
     * "Loading..."  // &#8230; would be escaped when escapeTitles is true
     */
-  var loading: String
+  var loading: js.UndefOr[String] = js.undefined
   /**
     * "More..."
     */
-  var moreData: String
+  var moreData: js.UndefOr[String] = js.undefined
   /**
     * "No data."
     */
-  var noData: String
+  var noData: js.UndefOr[String] = js.undefined
 }
 
 object TranslationTable {
   @scala.inline
-  def apply(loadError: String, loading: String, moreData: String, noData: String): TranslationTable = {
-    val __obj = js.Dynamic.literal(loadError = loadError, loading = loading, moreData = moreData, noData = noData)
-  
+  def apply(loadError: String = null, loading: String = null, moreData: String = null, noData: String = null): TranslationTable = {
+    val __obj = js.Dynamic.literal()
+    if (loadError != null) __obj.updateDynamic("loadError")(loadError)
+    if (loading != null) __obj.updateDynamic("loading")(loading)
+    if (moreData != null) __obj.updateDynamic("moreData")(moreData)
+    if (noData != null) __obj.updateDynamic("noData")(noData)
     __obj.asInstanceOf[TranslationTable]
   }
 }

@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExpressionStatement
-  extends BaseASTNode
+  extends SimpleStatement
+     with BaseASTNode
      with ASTNode {
-  var expression: ASTNode
+  var expression: Expression
   @JSName("type")
   var type_ExpressionStatement: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ExpressionStatement
 }
@@ -15,7 +16,7 @@ trait ExpressionStatement
 object ExpressionStatement {
   @scala.inline
   def apply(
-    expression: ASTNode,
+    expression: Expression,
     `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ExpressionStatement,
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null

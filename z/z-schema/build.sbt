@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "z-schema"
-version := "v3.16.0-dt-20190705Z-694cab"
+version := "4.2.1-b1e74e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

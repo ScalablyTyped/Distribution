@@ -13,6 +13,7 @@ object constants extends js.Object {
   var UV_UDP_REUSEADDR: Double = js.native
   var errno: Anon_E2BIG = js.native
   var priority: Anon_PRIORITYABOVENORMAL = js.native
+  // signals: { [key in NodeJS.Signals]: number; }; @todo: change after migration to typescript 2.1
   var signals: Anon_SIGABRT = js.native
 }
 

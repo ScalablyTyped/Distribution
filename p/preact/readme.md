@@ -1,7 +1,7 @@
 
 # Scala.js typings for preact
 
-Typings are for version 10.0.2
+Typings are for version 10.0.4
 
 ## Library description:
 Fast 3kb React alternative with the same modern API. Components & Virtual DOM.

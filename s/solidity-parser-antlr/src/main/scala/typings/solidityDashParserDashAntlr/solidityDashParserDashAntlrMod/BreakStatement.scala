@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait BreakStatement
   extends BaseASTNode
-     with ASTNode {
+     with ASTNode
+     with Statement {
   @JSName("type")
   var type_BreakStatement: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.BreakStatement
 }

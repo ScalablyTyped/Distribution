@@ -99,7 +99,9 @@ trait MUIDataTableOptions extends js.Object {
       BlobPart
     ]
   ] = js.undefined
-  var onFilterChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* filterList */ js.Array[_], Unit]] = js.undefined
+  var onFilterChange: js.UndefOr[
+    js.Function3[/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType, Unit]
+  ] = js.undefined
   var onFilterDialogClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onRowClick: js.UndefOr[
@@ -175,7 +177,7 @@ object MUIDataTableOptions {
     onColumnSortChange: (/* changedColumn */ String, /* direction */ String) => Unit = null,
     onColumnViewChange: (/* changedColumn */ String, /* action */ String) => Unit = null,
     onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => BlobPart = null,
-    onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_]) => Unit = null,
+    onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType) => Unit = null,
     onFilterDialogClose: () => Unit = null,
     onFilterDialogOpen: () => Unit = null,
     onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ Anon_DataIndexRowIndex) => Unit = null,
@@ -240,7 +242,7 @@ object MUIDataTableOptions {
     if (onColumnSortChange != null) __obj.updateDynamic("onColumnSortChange")(js.Any.fromFunction2(onColumnSortChange))
     if (onColumnViewChange != null) __obj.updateDynamic("onColumnViewChange")(js.Any.fromFunction2(onColumnViewChange))
     if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction4(onDownload))
-    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction2(onFilterChange))
+    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction3(onFilterChange))
     if (onFilterDialogClose != null) __obj.updateDynamic("onFilterDialogClose")(js.Any.fromFunction0(onFilterDialogClose))
     if (onFilterDialogOpen != null) __obj.updateDynamic("onFilterDialogOpen")(js.Any.fromFunction0(onFilterDialogOpen))
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2(onRowClick))

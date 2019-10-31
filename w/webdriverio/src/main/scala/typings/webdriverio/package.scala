@@ -13,6 +13,7 @@ package object webdriverio {
   import typings.webdriverio.webdriverioStrings.ELEMENT
   import typings.webdriverio.webdriverioStrings.`element-6066-11e4-a52e-4f735466cecf`
   import typings.webdriverio.webdriverioStrings.addCommand
+  import typings.webdriverio.webdriverioStrings.config
   import typings.webdriverio.webdriverioStrings.dragAndDrop
   import typings.webdriverio.webdriverioStrings.element
   import typings.webdriverio.webdriverioStrings.elementId
@@ -28,12 +29,12 @@ package object webdriverio {
   // Browser commands that should be wrapper with Promise
   type BrowserPromise = Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
-    addCommand | overwriteCommand | options | DOLLAR | DOLLARDOLLAR | touchAction
+    addCommand | overwriteCommand | options | config | DOLLAR | DOLLARDOLLAR | touchAction
   ]
   // Browser commands that should not be wrapper with promise
   type BrowserStatic = Pick[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
-    addCommand | overwriteCommand | options
+    addCommand | overwriteCommand | options | config
   ]
   // Element commands wrapper with Promise
   type ElementAsync = typings.webdriverio.webdriverioStrings.ElementAsync with js.Any with AsyncSelectors

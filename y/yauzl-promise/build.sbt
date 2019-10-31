@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "yauzl-promise"
-version := "2.1-dt-20180601Z-8fe809"
+version := "2.1-dt-20180601Z-fec530"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.11-dt-20191024Z-c10572",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "yauzl" % "2.9-dt-20181229Z-3e2cff")
+  "org.scalablytyped" %%% "yauzl" % "2.9-dt-20181229Z-62629c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

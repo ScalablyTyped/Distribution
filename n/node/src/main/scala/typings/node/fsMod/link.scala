@@ -19,6 +19,6 @@ object link extends js.Object {
     * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
+  def __promisify__(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
 }
 

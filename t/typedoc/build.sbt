@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "typedoc"
-version := "0.15.0-7e09c7"
+version := "0.15.0-4cf037"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "handlebars" % "4.5.0-785df8",
+  "org.scalablytyped" %%% "handlebars" % "4.5.1-2f12b0",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-4b5d2e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "typescript" % "3.6.4-42c38b")

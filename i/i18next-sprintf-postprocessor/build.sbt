@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "i18next-sprintf-postprocessor"
-version := "0.2-dt-20190819Z-c4851a"
+version := "0.2-dt-20191029Z-c4851a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

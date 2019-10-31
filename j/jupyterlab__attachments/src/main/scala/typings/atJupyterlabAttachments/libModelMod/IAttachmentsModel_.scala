@@ -30,6 +30,11 @@ trait IAttachmentsModel_ extends IDisposable {
     */
   val length: Double
   /**
+    * Remove the attachment whose name is the specified key.
+    * Note that this is optional only until Jupyterlab 2.0 release.
+    */
+  var remove: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
+  /**
     * A signal emitted when the model state changes.
     */
   val stateChanged: ISignal[IAttachmentsModel, Unit]
@@ -77,10 +82,11 @@ object IAttachmentsModel_ {
     length: Double,
     set: (String, IMimeBundle) => Unit,
     stateChanged: ISignal[IAttachmentsModel, Unit],
-    toJSON: () => IAttachments
+    toJSON: () => IAttachments,
+    remove: /* key */ String => Unit = null
   ): IAttachmentsModel_ = {
     val __obj = js.Dynamic.literal(changed = changed, clear = js.Any.fromFunction0(clear), contentFactory = contentFactory, dispose = js.Any.fromFunction0(dispose), fromJSON = js.Any.fromFunction1(fromJSON), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), isDisposed = isDisposed, keys = keys, length = length, set = js.Any.fromFunction2(set), stateChanged = stateChanged, toJSON = js.Any.fromFunction0(toJSON))
-  
+    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     __obj.asInstanceOf[IAttachmentsModel_]
   }
 }

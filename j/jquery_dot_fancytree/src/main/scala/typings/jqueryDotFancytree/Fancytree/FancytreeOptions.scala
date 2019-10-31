@@ -96,7 +96,7 @@ trait FancytreeOptions
   /** Add tabindex='0' to node title span, so it can receive keyboard focus */
   var titlesTabbable: js.UndefOr[Boolean] = js.undefined
   /** Animation options, false:off (default: { effect: "blind", options: {direction: "vertical", scale: "box"}, duration: 200 }) */
-  var toggleEffect: js.UndefOr[EffectOptions] = js.undefined
+  var toggleEffect: js.UndefOr[`false` | EffectOptions] = js.undefined
   /** Tooltips */
   var tooltip: js.UndefOr[Boolean] = js.undefined
   /** (dynamic Option)Prevent (de-)selection using mouse or keyboard. */
@@ -179,7 +179,7 @@ object FancytreeOptions {
     tabbable: js.UndefOr[Boolean] = js.undefined,
     table: Table = null,
     titlesTabbable: js.UndefOr[Boolean] = js.undefined,
-    toggleEffect: EffectOptions = null,
+    toggleEffect: `false` | EffectOptions = null,
     tooltip: js.UndefOr[Boolean] = js.undefined,
     unselectable: Boolean | (js.Function2[/* event */ JQueryEventObject, /* data */ EventData, js.UndefOr[Boolean]]) = null,
     unselectableIgnore: Boolean | (js.Function2[/* event */ JQueryEventObject, /* data */ EventData, js.UndefOr[Boolean]]) = null,
@@ -248,7 +248,7 @@ object FancytreeOptions {
     if (!js.isUndefined(tabbable)) __obj.updateDynamic("tabbable")(tabbable)
     if (table != null) __obj.updateDynamic("table")(table)
     if (!js.isUndefined(titlesTabbable)) __obj.updateDynamic("titlesTabbable")(titlesTabbable)
-    if (toggleEffect != null) __obj.updateDynamic("toggleEffect")(toggleEffect)
+    if (toggleEffect != null) __obj.updateDynamic("toggleEffect")(toggleEffect.asInstanceOf[js.Any])
     if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (unselectableIgnore != null) __obj.updateDynamic("unselectableIgnore")(unselectableIgnore.asInstanceOf[js.Any])

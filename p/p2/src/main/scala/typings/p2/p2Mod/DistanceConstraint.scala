@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 @JSImport("p2", "DistanceConstraint")
 @js.native
 class DistanceConstraint protected () extends Constraint {
-  def this(bodyA: Body, bodyB: Body, `type`: Double) = this()
-  def this(bodyA: Body, bodyB: Body, `type`: Double, options: DistanceConstraintOptions) = this()
+  def this(bodyA: Body, bodyB: Body) = this()
+  def this(bodyA: Body, bodyB: Body, options: DistanceConstraintOptions) = this()
   var distance: Double = js.native
   var localAnchorA: js.Tuple2[Double, Double] = js.native
   var localAnchorB: js.Tuple2[Double, Double] = js.native

@@ -2,7 +2,6 @@ package typings.reactDashNativeDashGestureDashHandler.swipeableMod
 
 import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
-import typings.reactDashNative.reactDashNativeMod.Animated.Value
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js
@@ -25,16 +24,36 @@ trait SwipeableProperties extends js.Object {
   var overshootFriction: js.UndefOr[Double] = js.undefined
   var overshootLeft: js.UndefOr[Boolean] = js.undefined
   var overshootRight: js.UndefOr[Boolean] = js.undefined
+  /**
+    * 
+    * This map describes the values to use as inputRange for extra interpolation:
+    * AnimatedValue: [startValue, endValue]
+    * 
+    * progressAnimatedValue: [0, 1]
+    * dragAnimatedValue: [0, +]
+    * 
+    * To support `rtl` flexbox layouts use `flexDirection` styling.
+    * */
   var renderLeftActions: js.UndefOr[
     js.Function2[
-      /* progressAnimatedValue */ Value | AnimatedInterpolation, 
+      /* progressAnimatedValue */ AnimatedInterpolation, 
       /* dragAnimatedValue */ AnimatedInterpolation, 
       ReactNode
     ]
   ] = js.undefined
+  /**
+    * 
+    * This map describes the values to use as inputRange for extra interpolation:
+    * AnimatedValue: [startValue, endValue]
+    * 
+    * progressAnimatedValue: [0, 1]
+    * dragAnimatedValue: [0, -]
+    * 
+    * To support `rtl` flexbox layouts use `flexDirection` styling.
+    * */
   var renderRightActions: js.UndefOr[
     js.Function2[
-      /* progressAnimatedValue */ Value | AnimatedInterpolation, 
+      /* progressAnimatedValue */ AnimatedInterpolation, 
       /* dragAnimatedValue */ AnimatedInterpolation, 
       ReactNode
     ]
@@ -61,8 +80,8 @@ object SwipeableProperties {
     overshootFriction: Int | Double = null,
     overshootLeft: js.UndefOr[Boolean] = js.undefined,
     overshootRight: js.UndefOr[Boolean] = js.undefined,
-    renderLeftActions: (/* progressAnimatedValue */ Value | AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => ReactNode = null,
-    renderRightActions: (/* progressAnimatedValue */ Value | AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => ReactNode = null,
+    renderLeftActions: (/* progressAnimatedValue */ AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => ReactNode = null,
+    renderRightActions: (/* progressAnimatedValue */ AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => ReactNode = null,
     rightThreshold: Int | Double = null,
     useNativeAnimations: js.UndefOr[Boolean] = js.undefined
   ): SwipeableProperties = {

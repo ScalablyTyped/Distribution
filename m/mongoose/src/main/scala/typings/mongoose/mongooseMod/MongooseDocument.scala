@@ -1,6 +1,7 @@
 package typings.mongoose.mongooseMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mongoose.Anon_Getters
 import typings.mongoose.mongooseMod.Error.ValidationError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -55,9 +56,13 @@ trait MongooseDocument extends MongooseDocumentOptionals {
   /**
     * Returns the value of a path.
     * @param type optionally specify a type for on-the-fly attributes
+    * @param options
+    * @param options.virtuals apply virtuals before getting this path
+    * @param options.getters if false, skip applying getters and just get the raw value
     */
   def get(path: String): js.Any = js.native
   def get(path: String, `type`: js.Any): js.Any = js.native
+  def get(path: String, `type`: js.Any, options: Anon_Getters): js.Any = js.native
   /**
     * Initializes the document without setters or marking anything modified.
     * Called internally after a document is returned from mongodb.
@@ -204,8 +209,8 @@ trait MongooseDocument extends MongooseDocumentOptionals {
     * @param pathsToValidate only validate the given paths
     * @returns ValidationError if there are errors during validation, or undefined if there is no error.
     */
-  def validateSync(): ValidationError = js.native
-  def validateSync(pathsToValidate: String): ValidationError = js.native
-  def validateSync(pathsToValidate: js.Array[String]): ValidationError = js.native
+  def validateSync(): js.UndefOr[ValidationError] = js.native
+  def validateSync(pathsToValidate: String): js.UndefOr[ValidationError] = js.native
+  def validateSync(pathsToValidate: js.Array[String]): js.UndefOr[ValidationError] = js.native
 }
 

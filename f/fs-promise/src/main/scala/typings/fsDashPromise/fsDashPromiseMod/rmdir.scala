@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object rmdir extends js.Object {
   def apply(path: String): js.Promise[Unit] = js.native
-  def apply(path: String, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  def apply(path: String, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def apply(path: Buffer): js.Promise[Unit] = js.native
-  def apply(path: Buffer, callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]): Unit = js.native
+  def apply(path: Buffer, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   /**
     * Asynchronous rmdir(2) - delete a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

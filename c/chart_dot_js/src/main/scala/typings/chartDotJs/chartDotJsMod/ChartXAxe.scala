@@ -34,7 +34,7 @@ object ChartXAxe {
     beforeUpdate: /* scale */ js.UndefOr[js.Any] => Unit = null,
     bounds: String = null,
     categoryPercentage: Int | Double = null,
-    display: js.UndefOr[Boolean] = js.undefined,
+    display: Boolean | String = null,
     distribution: linear | series = null,
     gridLines: GridLineOptions = null,
     id: String = null,
@@ -67,7 +67,7 @@ object ChartXAxe {
     if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction1(beforeUpdate))
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (categoryPercentage != null) __obj.updateDynamic("categoryPercentage")(categoryPercentage.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines)
     if (id != null) __obj.updateDynamic("id")(id)

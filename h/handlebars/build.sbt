@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "handlebars"
-version := "4.5.0-785df8"
+version := "4.5.1-2f12b0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

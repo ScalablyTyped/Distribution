@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gestalt"
-version := "0.75-dt-20190514Z-42388c"
+version := "0.75-dt-20191030Z-d704d3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

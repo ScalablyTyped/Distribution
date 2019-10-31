@@ -25,6 +25,7 @@ trait OptionsBottomTab extends js.Object {
     * #### (iOS specific)
     */
   var disableSelectedIconTint: js.UndefOr[Boolean] = js.undefined
+  var dotIndicator: js.UndefOr[DotIndicatorOptions] = js.undefined
   /**
     * Set the text font family
     */
@@ -90,6 +91,7 @@ object OptionsBottomTab {
     badgeColor: String = null,
     disableIconTint: js.UndefOr[Boolean] = js.undefined,
     disableSelectedIconTint: js.UndefOr[Boolean] = js.undefined,
+    dotIndicator: DotIndicatorOptions = null,
     fontFamily: FontFamily = null,
     fontSize: Int | Double = null,
     fontWeight: FontWeight = null,
@@ -109,6 +111,7 @@ object OptionsBottomTab {
     if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor)
     if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint)
     if (!js.isUndefined(disableSelectedIconTint)) __obj.updateDynamic("disableSelectedIconTint")(disableSelectedIconTint)
+    if (dotIndicator != null) __obj.updateDynamic("dotIndicator")(dotIndicator)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)

@@ -132,7 +132,7 @@ class CometD () extends js.Object {
     *
     * @param handshakeCallback a function to be invoked when the handshake is acknowledged
     */
-  def handshake(handshakeCallback: Listener): Unit = js.native
+  def handshake(handshakeCallback: HandshakeListener): Unit = js.native
   /**
     * Establishes the Bayeux communication with the Bayeux server via a handshake and a subsequent
     * connect.
@@ -140,7 +140,7 @@ class CometD () extends js.Object {
     * @param handshakeProps an object to be merged with the handshake message
     * @param handshakeCallback a function to be invoked when the handshake is acknowledged
     */
-  def handshake(handshakeProps: js.Object, handshakeCallback: Listener): Unit = js.native
+  def handshake(handshakeProps: js.Object, handshakeCallback: HandshakeListener): Unit = js.native
   /**
     * Increases the backoff period up to the maximum value configured.
     *
@@ -327,7 +327,7 @@ class CometD () extends js.Object {
     * @return the subscription handle to be passed to `unsubscribe`
     */
   def subscribe(channel: String, callback: Callback): SubscriptionHandle = js.native
-  def subscribe(channel: String, callback: Callback, subscribeCallback: Listener): SubscriptionHandle = js.native
+  def subscribe(channel: String, callback: Callback, subscribeCallback: SubscribeListener): SubscriptionHandle = js.native
   /**
     * Subscribes to the given channel, performing the given callback in the given scope when a
     * message for the channel arrives.
@@ -348,7 +348,12 @@ class CometD () extends js.Object {
     * @return the subscription handle to be passed to `unsubscribe`
     */
   def subscribe(channel: String, callback: Callback, subscribeProps: js.Object): SubscriptionHandle = js.native
-  def subscribe(channel: String, callback: Callback, subscribeProps: js.Object, subscribeCallback: Listener): SubscriptionHandle = js.native
+  def subscribe(
+    channel: String,
+    callback: Callback,
+    subscribeProps: js.Object,
+    subscribeCallback: SubscribeListener
+  ): SubscriptionHandle = js.native
   /**
     * Unregister an extension previously registered with `registerExtension`.
     *
@@ -375,7 +380,7 @@ class CometD () extends js.Object {
     * @param unsubscribeCallback a function to be invoked when the unsubscription is acknowledged
     */
   def unsubscribe(subscription: SubscriptionHandle): Unit = js.native
-  def unsubscribe(subscription: SubscriptionHandle, unsubscribeCallback: Listener): Unit = js.native
+  def unsubscribe(subscription: SubscriptionHandle, unsubscribeCallback: SubscribeListener): Unit = js.native
   /**
     * Unsubscribes the subscription obtained with a call to `subscribe`.
     *
@@ -384,6 +389,10 @@ class CometD () extends js.Object {
     * @param unsubscribeCallback a function to be invoked when the unsubscription is acknowledged
     */
   def unsubscribe(subscription: SubscriptionHandle, unsubscribeProps: js.Object): Unit = js.native
-  def unsubscribe(subscription: SubscriptionHandle, unsubscribeProps: js.Object, unsubscribeCallback: Listener): Unit = js.native
+  def unsubscribe(
+    subscription: SubscriptionHandle,
+    unsubscribeProps: js.Object,
+    unsubscribeCallback: SubscribeListener
+  ): Unit = js.native
 }
 

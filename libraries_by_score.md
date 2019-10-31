@@ -979,6 +979,7 @@
 | 0.7749310129740181 | [lodash_dot_initial](./l/lodash_dot_initial) | The lodash method _.initial exported as a module.
 | 0.774892909117195 | [react-event-listener](./r/react-event-listener) | A React component that allow to bind events on the
 | 0.7748869424832399 | [jss](./j/jss) | A lib for generating Style Sheets with JavaScript.
+| 0.774857750594583 | [jss-plugin-nested](./j/jss-plugin-nested) | JSS plugin that enables support for nested selecto
 | 0.7747773291027601 | [react-stripe-elements](./r/react-stripe-elements) | React components for Stripe.js and Stripe Elements
 | 0.7746763307958237 | [portscanner](./p/portscanner) | Asynchronous port scanner for Node.js
 | 0.7746717311544045 | [cleave_dot_js](./c/cleave_dot_js) | JavaScript library for formatting input text conte
@@ -1609,6 +1610,7 @@
 | 0.740970641222999 | [script-ext-html-webpack-p](./s/script-ext-html-webpack-plugin) | Enhances html-webpack-plugin functionality with as
 | 0.7409544873061711 | [gulp-cached](./g/gulp-cached) | A simple in-memory file cache for gulp
 | 0.7409470426124631 | [focus-trap-react](./f/focus-trap-react) | A React component that traps focus.
+| 0.740932756355412 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
 | 0.7409215799066168 | [gitconfiglocal](./g/gitconfiglocal) | parse the .git/config file into a useful data stru
 | 0.7408918332473269 | [iarna__toml](./i/iarna__toml) | Better TOML parsing and stringifying all in that f
 | 0.740861200782061 | [cordova](./c/cordova) | Cordova command line interface tool
@@ -2355,7 +2357,6 @@
 | 0.7044475089482004 | [pg-copy-streams](./p/pg-copy-streams) | Low-Level COPY TO and COPY FROM streams for Postgr
 | 0.704246111093685 | [rtl-detect](./r/rtl-detect) | Library will help you to detect if the locale is r
 | 0.7042202875443957 | [inversify-inject-decorato](./i/inversify-inject-decorators) | Lazy evaluated property injection decorators for I
-| 0.7041069893828558 | [uifabric__example-data](./u/uifabric__example-data) | Data generators for Office UI Fabric React example
 | 0.704087835183301 | [route-node](./r/route-node) | A package to create a tree of named routes
 | 0.7040858453386134 | [reflexbox](./r/reflexbox) | Responsive React grid system built with Styled Sys
 | 0.7040392530707753 | [koa-ratelimit](./k/koa-ratelimit) | Rate limiter middleware for koa
@@ -2880,6 +2881,7 @@
 | 0.6830463041492446 | [bump-regex](./b/bump-regex) | bump RegEx with semver
 | 0.6829970603185114 | [cachefactory](./c/cachefactory) | CacheFactory is a very simple and useful cache for
 | 0.6829812955627166 | [react-currency-formatter](./r/react-currency-formatter) | react currency formatter Component
+| 0.6829711545044639 | [bip174](./b/bip174) | -
 | 0.682947426737269 | [rfc2047](./r/rfc2047) | Encode and decode rfc2047 (MIME encoded words)
 | 0.6828912779977467 | [aphrodite](./a/aphrodite) | Framework-agnostic CSS-in-JS with support for serv
 | 0.682823683627821 | [modernizr](./m/modernizr) | Modernizr is a JavaScript library that detects HTM
@@ -3140,6 +3142,7 @@
 | 0.6737611424802985 | [prosemirror-history](./p/prosemirror-history) | Undo history for ProseMirror
 | 0.673735532522605 | [each](./e/each) | Chained and parallel async iterator in one elegant
 | 0.673636163544906 | [cordova-plugin-device-ori](./c/cordova-plugin-device-orientation) | -
+| 0.6735882173167342 | [use-callback-ref](./u/use-callback-ref) | The same useRef, but with callback
 | 0.6735372938417963 | [webpack-blocks__assets](./w/webpack-blocks__assets) | Webpack block for style loader, file loader, url l
 | 0.6734517388923135 | [easydate](./e/easydate) | get date and/or time by pattern
 | 0.6734499815369102 | [dom-helpers](./d/dom-helpers) | tiny modular DOM lib for ie8+
@@ -4176,6 +4179,7 @@
 | 0.6199243804367737 | [ffi](./f/ffi) | A foreign function interface (FFI) for Node.js
 | 0.6198596602008837 | [frecency](./f/frecency) | Frecency sorting for search results.
 | 0.6198384853004341 | [mobx-cookie](./m/mobx-cookie) | Syncs a cookie's value with a MobX observable, all
+| 0.6197548756569553 | [agilite](./a/agilite) | A NodeJS module that provides seamless interaction
 | 0.6196941175562479 | [component-emitter](./c/component-emitter) | Event emitter
 | 0.6192562708304471 | [algoliasearch-helper](./a/algoliasearch-helper) | Helper for implementing advanced search features w
 | 0.6192322933584788 | [slackify-html](./s/slackify-html) | convert simple html to slack markdown
@@ -4842,6 +4846,7 @@
 | 0.539298621239261 | [broccoli-node-api](./b/broccoli-node-api) | Broccoli Plugin API Types
 | 0.5392374235512452 | [sockjs](./s/sockjs) | SockJS-node is a server counterpart of SockJS-clie
 | 0.5388998890162258 | [react-daum-postcode](./r/react-daum-postcode) | React daum-postcode component
+| 0.5387878944069966 | [react-display-name](./r/react-display-name) | utility to return a react components display name
 | 0.5387215941233046 | [enzyme-redux](./e/enzyme-redux) | Test utils to simplify testing of containers in re
 | 0.5386764176762392 | [launchpad](./l/launchpad) | You can launch browsers
 | 0.5385156224291963 | [matter-js](./m/matter-js) | a 2D rigid body physics engine for the web
@@ -6266,6 +6271,7 @@
 | 0.3493544385255717 | [q-retry](./q/q-retry) | A shell for Q to enable retries.
 | 0.34927155918050967 | [react-native-scaled-image](./r/react-native-scaled-image) | Image component to add images without defining bot
 | 0.34921485706016625 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app
+| 0.34901214589605273 | [jupyterlab__logconsole](./j/jupyterlab__logconsole) | JupyterLab - Log Console
 | 0.3487730746978246 | [istanbul-middleware](./i/istanbul-middleware) | Connect middleware for Istanbul to handle server-s
 | 0.34871561485202146 | [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area
 | 0.3486700901248488 | [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio
@@ -6275,6 +6281,7 @@
 | 0.3484357407848645 | [superagent-prefix](./s/superagent-prefix) | A plugin for superagent that prefixes absolute URL
 | 0.3483415998343428 | [blazy](./b/blazy) | A fast lightweight pure JavaScript script for lazy
 | 0.348231163072952 | [browser-sync-webpack-plug](./b/browser-sync-webpack-plugin) | BrowserSync and Webpack integration
+| 0.34821053684919906 | [use-sidecar](./u/use-sidecar) | Sidecar code splitting utils
 | 0.34816347626225 | [keypress_dot_js](./k/keypress_dot_js) | a robust keyboard input capturing Javascript utili
 | 0.3481364294406394 | [cloud-env](./c/cloud-env) | Consistent naming for cloud-provided server config
 | 0.3479622304582965 | [windows-service](./w/windows-service) | Run Node.JS programs as native Windows Services.
@@ -6709,6 +6716,7 @@
 | 0.27919377529196776 | [favico_dot_js](./f/favico_dot_js) | Favico.js is a library to manipulate the favicon, 
 | 0.27915239365323474 | [srp](./s/srp) | Secure Remote Password (SRP)
 | 0.27907636279898174 | [rangyinputs](./r/rangyinputs) | A small jQuery plug-in for selection and caret man
+| 0.2789937650084434 | [light-sdk](./l/light-sdk) | > light-sdk 用于开发者开发 LightApp 时调用原生 API，实现与原生系统的交互。
 | 0.2789020551741177 | [svg-parser](./s/svg-parser) | Create a JSON-friendly object from an SVG string
 | 0.2788109475541525 | [nivo__stream](./n/nivo__stream) | -
 | 0.27813663152690266 | [cordova-plugin-keyboard](./c/cordova-plugin-keyboard) | Cordova Keyboard Plugin
@@ -7185,6 +7193,7 @@
 | 0.1925467716286241 | [jupyterlab__completer-ext](./j/jupyterlab__completer-extension) | JupyterLab - Completer Extension
 | 0.19252053122259552 | [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension
 | 0.19242692575877557 | [jupyterlab__theme-dark-ex](./j/jupyterlab__theme-dark-extension) | JupyterLab - Default Dark Theme
+| 0.19130272685676955 | [jupyterlab__logconsole-ex](./j/jupyterlab__logconsole-extension) | JupyterLab - Log Console Extension
 | 0.18955733217736703 | [ngprogress](./n/ngprogress) | slim, site-wide progressbar for AngularJS
 | 0.1889061911506119 | [nsqjs](./n/nsqjs) | NodeJS client for NSQ
 | 0.18797426208194468 | [react-addons-transition-g](./r/react-addons-transition-group) | The code in this package has moved. We recommend y

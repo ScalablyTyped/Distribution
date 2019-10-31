@@ -1,14 +1,12 @@
 package typings.sparqlDashHttpDashClient.sparqlDashHttpDashClientMod
 
-import typings.nodeDashFetch.nodeDashFetchMod.Response
+import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sparql-http-client", "SparqlHttp")
 @js.native
-class SparqlHttp[TResponse /* <: Response */] () extends js.Object {
-  def this(options: SparqlHttpOptions) = this()
+trait SparqlHttp[TResponse /* <: Response */] extends js.Object {
   def constructQuery(query: String): js.Promise[TResponse] = js.native
   def constructQuery(query: String, options: QueryRequestInit): js.Promise[TResponse] = js.native
   def selectQuery(query: String): js.Promise[SelectResponse with TResponse] = js.native

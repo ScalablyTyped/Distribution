@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-safe-area
 
-Typings are for version 0.5
+Typings are for version 0.5.1
 
 ## Library description:
 React Native module to get Safe Area Insets for iOS 11 or later
@@ -24,7 +24,7 @@ React Native module to get Safe Area Insets for iOS 11 or later
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

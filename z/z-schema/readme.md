@@ -1,7 +1,7 @@
 
 # Scala.js typings for z-schema
 
-Typings are for version v3.16.0
+Typings are for version 4.2.1
 
 ## Library description:
 JSON schema validator
@@ -24,7 +24,7 @@ JSON schema validator
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

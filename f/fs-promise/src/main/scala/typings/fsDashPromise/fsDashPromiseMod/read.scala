@@ -1,5 +1,6 @@
 package typings.fsDashPromise.fsDashPromiseMod
 
+import typings.fsDashExtra.fsDashExtraMod.ReadResult
 import typings.node.Anon_BufferBytesRead
 import typings.node.Anon_BufferBytesReadDataView
 import typings.node.Anon_BufferBytesReadFloat32Array
@@ -30,6 +31,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fs-promise", "read")
 @js.native
 object read extends js.Object {
+  def apply(fd: Double, buffer: Buffer, offset: Double, length: Double): js.Promise[ReadResult] = js.native
   def apply(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): js.Promise[js.Tuple2[Double, Buffer]] = js.native
   def apply(
     fd: Double,
@@ -37,6 +39,14 @@ object read extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
+    callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Buffer, Unit]
+  ): Unit = js.native
+  def apply(
+    fd: Double,
+    buffer: Buffer,
+    offset: Double,
+    length: Double,
+    position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* bytesRead */ Double, /* buffer */ Buffer, Unit]
   ): Unit = js.native
   def apply(

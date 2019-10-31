@@ -1,5 +1,6 @@
 package typings.fsDashPromise.fsDashPromiseMod
 
+import typings.fsDashExtra.fsDashExtraMod.WriteResult
 import typings.node.Anon_BufferBytesWritten
 import typings.node.Anon_BufferBytesWrittenDataView
 import typings.node.Anon_BufferBytesWrittenFloat32Array
@@ -31,6 +32,8 @@ import scala.scalajs.js.annotation._
 @JSImport("fs-promise", "write")
 @js.native
 object write extends js.Object {
+  def apply(fd: Double, buffer: Buffer): js.Promise[WriteResult] = js.native
+  def apply(fd: Double, buffer: Buffer, offset: Double): js.Promise[WriteResult] = js.native
   def apply(fd: Double, buffer: Buffer, offset: Double, length: Double): js.Promise[js.Tuple2[Double, Buffer]] = js.native
   def apply(
     fd: Double,
@@ -46,6 +49,14 @@ object write extends js.Object {
     offset: Double,
     length: Double,
     position: Double,
+    callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Buffer, Unit]
+  ): Unit = js.native
+  def apply(
+    fd: Double,
+    buffer: Buffer,
+    offset: Double,
+    length: Double,
+    position: Null,
     callback: js.Function3[/* err */ ErrnoException, /* written */ Double, /* buffer */ Buffer, Unit]
   ): Unit = js.native
   def apply(
@@ -1083,6 +1094,9 @@ object write extends js.Object {
   def apply(fd: Double, data: String): js.Promise[js.Tuple2[Double, String]] = js.native
   def apply(fd: Double, data: String, position: Double): js.Promise[js.Tuple2[Double, String]] = js.native
   def apply(fd: Double, data: String, position: Double, encoding: String): js.Promise[js.Tuple2[Double, String]] = js.native
+  def apply(fd: Double, data: js.Any): js.Promise[WriteResult] = js.native
+  def apply(fd: Double, data: js.Any, offset: Double): js.Promise[WriteResult] = js.native
+  def apply(fd: Double, data: js.Any, offset: Double, encoding: String): js.Promise[WriteResult] = js.native
   /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.

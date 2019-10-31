@@ -5,6 +5,8 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIComponentAsMod.IComponentAs
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.checkbox
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.switch
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.MouseEvent
@@ -84,6 +86,12 @@ trait IToggleProps extends HTMLAttributes[HTMLElement] {
     */
   var onText: js.UndefOr[String] = js.undefined
   /**
+    * (Optional) Specify whether to use the "switch" role (ARIA 1.1) or the checkbox role (ARIA 1.0).
+    * If unspecified, defaults to "switch".
+    */
+  @JSName("role")
+  var role_IToggleProps: js.UndefOr[checkbox | switch] = js.undefined
+  /**
     * Optional styles for the component.
     */
   var styles: js.UndefOr[IStyleFunctionOrObject[IToggleStyleProps, IToggleStyles]] = js.undefined
@@ -112,6 +120,7 @@ object IToggleProps {
     onChange: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* checked */ js.UndefOr[Boolean]) => Unit = null,
     onChanged: /* checked */ Boolean => Unit = null,
     onText: String = null,
+    role: checkbox | switch = null,
     styles: IStyleFunctionOrObject[IToggleStyleProps, IToggleStyles] = null,
     theme: ITheme = null
   ): IToggleProps = {
@@ -132,6 +141,7 @@ object IToggleProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onChanged != null) __obj.updateDynamic("onChanged")(js.Any.fromFunction1(onChanged))
     if (onText != null) __obj.updateDynamic("onText")(onText)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)
     __obj.asInstanceOf[IToggleProps]

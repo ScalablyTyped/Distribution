@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateMixin
-  extends /* key */ StringDictionary[js.Function] {
+  extends /* key */ StringDictionary[js.Any] {
   var connected: js.UndefOr[js.Function0[Unit]] = js.undefined
   var disconnected: js.UndefOr[js.Function0[Unit]] = js.undefined
   var received: js.UndefOr[js.Function1[/* obj */ js.Any, Unit]] = js.undefined
@@ -15,7 +15,7 @@ trait CreateMixin
 object CreateMixin {
   @scala.inline
   def apply(
-    StringDictionary: /* key */ StringDictionary[js.Function] = null,
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
     connected: () => Unit = null,
     disconnected: () => Unit = null,
     received: /* obj */ js.Any => Unit = null

@@ -15,7 +15,7 @@ object fsync extends js.Object {
     * Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
     * @param fd A file descriptor.
     */
-  def apply(fd: Double, callback: (js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]) | NoParamCallback): Unit = js.native
+  def apply(fd: Double, callback: (js.Function1[js.UndefOr[ErrnoException], Unit]) | NoParamCallback): Unit = js.native
   /**
     * Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
     * @param fd A file descriptor.

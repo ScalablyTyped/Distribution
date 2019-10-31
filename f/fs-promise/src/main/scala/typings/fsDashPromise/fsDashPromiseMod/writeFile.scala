@@ -1,11 +1,11 @@
 package typings.fsDashPromise.fsDashPromiseMod
 
+import typings.fsDashExtra.fsDashExtraMod.WriteFileOptions
 import typings.mz.Anon_Encoding
 import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
-import typings.node.fsMod.WriteFileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,22 @@ object writeFile extends js.Object {
   def apply(file: String, data: String): js.Promise[Unit] = js.native
   def apply(file: String, data: String, options: String): js.Promise[Unit] = js.native
   def apply(file: String, data: String, options: Anon_Encoding): js.Promise[Unit] = js.native
+  def apply(file: String, data: js.Any): js.Promise[Unit] = js.native
+  def apply(file: String, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  def apply(file: String, data: js.Any, options: String): js.Promise[Unit] = js.native
+  def apply(
+    file: String,
+    data: js.Any,
+    options: String,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
+  def apply(file: String, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
+  def apply(
+    file: String,
+    data: js.Any,
+    options: WriteFileOptions,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
   def apply(file: String, data: Buffer): js.Promise[Unit] = js.native
   def apply(file: String, data: Buffer, options: String): js.Promise[Unit] = js.native
   def apply(file: String, data: Buffer, options: Anon_Encoding): js.Promise[Unit] = js.native
@@ -35,17 +51,57 @@ object writeFile extends js.Object {
   def apply(file: Double, data: String): js.Promise[Unit] = js.native
   def apply(file: Double, data: String, options: String): js.Promise[Unit] = js.native
   def apply(file: Double, data: String, options: Anon_Encoding): js.Promise[Unit] = js.native
+  def apply(file: Double, data: js.Any): js.Promise[Unit] = js.native
+  def apply(file: Double, data: js.Any, options: String): js.Promise[Unit] = js.native
+  def apply(
+    file: Double,
+    data: js.Any,
+    options: String,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
+  def apply(file: Double, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
+  def apply(
+    file: Double,
+    data: js.Any,
+    options: WriteFileOptions,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
   def apply(file: Double, data: Buffer): js.Promise[Unit] = js.native
   def apply(file: Double, data: Buffer, options: String): js.Promise[Unit] = js.native
   def apply(file: Double, data: Buffer, options: Anon_Encoding): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: String): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: String, options: String): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: String, options: Anon_Encoding): js.Promise[Unit] = js.native
+  def apply(file: Buffer, data: js.Any): js.Promise[Unit] = js.native
+  def apply(file: Buffer, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  def apply(file: Buffer, data: js.Any, options: String): js.Promise[Unit] = js.native
+  def apply(
+    file: Buffer,
+    data: js.Any,
+    options: String,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
+  def apply(file: Buffer, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
+  def apply(
+    file: Buffer,
+    data: js.Any,
+    options: WriteFileOptions,
+    callback: js.Function1[/* err */ ErrnoException, Unit]
+  ): Unit = js.native
   def apply(file: Buffer, data: Buffer): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: Buffer, options: String): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: Buffer, options: Anon_Encoding): js.Promise[Unit] = js.native
-  def apply(path: Double, data: js.Any, callback: NoParamCallback): Unit = js.native
-  def apply(path: Double, data: js.Any, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
+  def apply(
+    path: Double,
+    data: js.Any,
+    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
+  ): Unit = js.native
+  def apply(
+    path: Double,
+    data: js.Any,
+    options: typings.node.fsMod.WriteFileOptions,
+    callback: NoParamCallback
+  ): Unit = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -66,9 +122,14 @@ object writeFile extends js.Object {
     * If `mode` is a string, it is parsed as an octal integer.
     * If `flag` is not supplied, the default of `'w'` is used.
     */
-  def apply(path: PathLike, data: js.Any, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
+  def apply(
+    path: PathLike,
+    data: js.Any,
+    options: typings.node.fsMod.WriteFileOptions,
+    callback: NoParamCallback
+  ): Unit = js.native
   def __promisify__(path: Double, data: js.Any): js.Promise[Unit] = js.native
-  def __promisify__(path: Double, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
+  def __promisify__(path: Double, data: js.Any, options: typings.node.fsMod.WriteFileOptions): js.Promise[Unit] = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -82,6 +143,6 @@ object writeFile extends js.Object {
     * If `flag` is not supplied, the default of `'w'` is used.
     */
   def __promisify__(path: PathLike, data: js.Any): js.Promise[Unit] = js.native
-  def __promisify__(path: PathLike, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
+  def __promisify__(path: PathLike, data: js.Any, options: typings.node.fsMod.WriteFileOptions): js.Promise[Unit] = js.native
 }
 

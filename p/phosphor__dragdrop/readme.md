@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__dragdrop
 
-Typings are for version 1.4.0
+Typings are for version 1.4.1
 
 ## Library description:
 PhosphorJS - Drag and Drop

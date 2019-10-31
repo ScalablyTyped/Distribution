@@ -3,13 +3,14 @@ package typings.gestalt.gestaltMod
 import typings.gestalt.gestaltStrings.`arrow-circle-forward`
 import typings.gestalt.gestaltStrings.darkGray
 import typings.gestalt.gestaltStrings.orange
+import typings.gestalt.gestaltStrings.red
 import typings.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ToastProps extends js.Object {
-  var color: js.UndefOr[darkGray | orange] = js.undefined
+  var color: js.UndefOr[darkGray | orange | red] = js.undefined
   var icon: js.UndefOr[`arrow-circle-forward`] = js.undefined
   var text: js.UndefOr[String | js.Array[String]] = js.undefined
   var thumbnail: js.UndefOr[ReactElement] = js.undefined
@@ -18,7 +19,7 @@ trait ToastProps extends js.Object {
 object ToastProps {
   @scala.inline
   def apply(
-    color: darkGray | orange = null,
+    color: darkGray | orange | red = null,
     icon: `arrow-circle-forward` = null,
     text: String | js.Array[String] = null,
     thumbnail: ReactElement = null

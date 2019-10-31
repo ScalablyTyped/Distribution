@@ -14,9 +14,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("http2", "Http2SecureServer")
 @js.native
-class Http2SecureServer protected () extends Server {
+trait Http2SecureServer extends Server {
   @JSName("addListener")
   def addListener_checkContinue(
     event: checkContinue,

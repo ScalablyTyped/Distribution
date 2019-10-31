@@ -65,6 +65,7 @@ class MathBackendWebGL () extends KernelBackend {
   var packedBinaryOp: js.Any = js.native
   var packedReshape: js.Any = js.native
   var packedUnaryOp: js.Any = js.native
+  var pendingDeletes: js.Any = js.native
   var pendingDisposal: js.Any = js.native
   var pendingRead: js.Any = js.native
   var programTimersStack: js.Any = js.native

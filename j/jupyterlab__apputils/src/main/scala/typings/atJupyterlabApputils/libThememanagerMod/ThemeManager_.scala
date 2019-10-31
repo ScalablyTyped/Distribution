@@ -62,7 +62,7 @@ class ThemeManager_ protected () extends IThemeManager {
     * A signal fired when the application theme changes.
     */
   /* CompleteClass */
-  override val themeChanged: ISignal[this.type, IChangedArgs[String]] = js.native
+  override val themeChanged: ISignal[this.type, IChangedArgs[String, String]] = js.native
   /**
     * The names of the registered themes.
     */

@@ -44,7 +44,7 @@ trait ISpinButtonStyles extends js.Object {
     */
   var labelDisabled: IStyle
   /**
-    * Style for the label wrapper element of the component
+    * Style for the label wrapper element of the component.
     * The label wrapper contains the icon and the label.
     */
   var labelWrapper: IStyle

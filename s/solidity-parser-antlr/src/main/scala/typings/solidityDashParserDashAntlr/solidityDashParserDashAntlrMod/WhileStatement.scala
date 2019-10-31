@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait WhileStatement
   extends BaseASTNode
-     with ASTNode {
+     with ASTNode
+     with Statement {
   @JSName("type")
   var type_WhileStatement: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.WhileStatement
 }

@@ -1,9 +1,6 @@
 package typings.hirestime
 
-import typings.hirestime.hirestimeMod.returnedFunction
-import typings.hirestime.hirestimeStrings.ms
-import typings.hirestime.hirestimeStrings.ns
-import typings.hirestime.hirestimeStrings.s
+import typings.hirestime.hirestimeMod.getElapsed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("hirestime", JSImport.Namespace)
 @js.native
 object hirestimeMod extends js.Object {
-  val MS: ms = js.native
-  val NS: ns = js.native
-  val S: s = js.native
-  def apply(): returnedFunction = js.native
-  type returnedFunction = js.Function1[/* unit */ js.UndefOr[s | ms | ns], Double]
+  @js.native
+  trait getElapsed extends js.Object {
+    def apply(): Double = js.native
+    def milliseconds(): Double = js.native
+    def ms(): Double = js.native
+    def nanoseconds(): Double = js.native
+    def ns(): Double = js.native
+    def s(): Double = js.native
+    def seconds(): Double = js.native
+  }
+  
+  def apply(): getElapsed = js.native
 }
 

@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Schema extends js.Object {
+  def assertEnumType(`type`: TypeID): EnumTypeID
+  def assertInputObjectType(`type`: TypeID): InputObjectTypeID
   def expectStringType(): ScalarTypeID
   def getEnumValues(`type`: EnumTypeID): js.Array[String]
   def getFieldName(field: FieldID): String
@@ -27,6 +29,8 @@ trait Schema extends js.Object {
 object Schema {
   @scala.inline
   def apply(
+    assertEnumType: TypeID => EnumTypeID,
+    assertInputObjectType: TypeID => InputObjectTypeID,
     expectStringType: () => ScalarTypeID,
     getEnumValues: EnumTypeID => js.Array[String],
     getFieldName: FieldID => String,
@@ -45,7 +49,7 @@ object Schema {
     isScalar: TypeID => Boolean,
     isUnion: TypeID => Boolean
   ): Schema = {
-    val __obj = js.Dynamic.literal(expectStringType = js.Any.fromFunction0(expectStringType), getEnumValues = js.Any.fromFunction1(getEnumValues), getFieldName = js.Any.fromFunction1(getFieldName), getFieldType = js.Any.fromFunction1(getFieldType), getFields = js.Any.fromFunction1(getFields), getListItemType = js.Any.fromFunction1(getListItemType), getNullableType = js.Any.fromFunction1(getNullableType), getTypeString = js.Any.fromFunction1(getTypeString), isAbstractType = js.Any.fromFunction1(isAbstractType), isEnum = js.Any.fromFunction1(isEnum), isInputObject = js.Any.fromFunction1(isInputObject), isInterface = js.Any.fromFunction1(isInterface), isList = js.Any.fromFunction1(isList), isNonNull = js.Any.fromFunction1(isNonNull), isObject = js.Any.fromFunction1(isObject), isScalar = js.Any.fromFunction1(isScalar), isUnion = js.Any.fromFunction1(isUnion))
+    val __obj = js.Dynamic.literal(assertEnumType = js.Any.fromFunction1(assertEnumType), assertInputObjectType = js.Any.fromFunction1(assertInputObjectType), expectStringType = js.Any.fromFunction0(expectStringType), getEnumValues = js.Any.fromFunction1(getEnumValues), getFieldName = js.Any.fromFunction1(getFieldName), getFieldType = js.Any.fromFunction1(getFieldType), getFields = js.Any.fromFunction1(getFields), getListItemType = js.Any.fromFunction1(getListItemType), getNullableType = js.Any.fromFunction1(getNullableType), getTypeString = js.Any.fromFunction1(getTypeString), isAbstractType = js.Any.fromFunction1(isAbstractType), isEnum = js.Any.fromFunction1(isEnum), isInputObject = js.Any.fromFunction1(isInputObject), isInterface = js.Any.fromFunction1(isInterface), isList = js.Any.fromFunction1(isList), isNonNull = js.Any.fromFunction1(isNonNull), isObject = js.Any.fromFunction1(isObject), isScalar = js.Any.fromFunction1(isScalar), isUnion = js.Any.fromFunction1(isUnion))
   
     __obj.asInstanceOf[Schema]
   }

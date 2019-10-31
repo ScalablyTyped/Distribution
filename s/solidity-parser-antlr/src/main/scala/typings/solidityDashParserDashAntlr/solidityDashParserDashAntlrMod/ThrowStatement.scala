@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait ThrowStatement
   extends BaseASTNode
-     with ASTNode {
+     with ASTNode
+     with Statement {
   @JSName("type")
   var type_ThrowStatement: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ThrowStatement
 }

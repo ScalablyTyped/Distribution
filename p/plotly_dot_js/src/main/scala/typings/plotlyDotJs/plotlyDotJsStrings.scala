@@ -1229,6 +1229,9 @@ object plotlyDotJsStrings {
   sealed trait transparent extends js.Object
   
   @js.native
+  sealed trait treemap extends js.Object
+  
+  @js.native
   sealed trait turntable extends js.Object
   
   @js.native
@@ -2247,6 +2250,8 @@ object plotlyDotJsStrings {
   def track: track = "track".asInstanceOf[track]
   @scala.inline
   def transparent: transparent = "transparent".asInstanceOf[transparent]
+  @scala.inline
+  def treemap: treemap = "treemap".asInstanceOf[treemap]
   @scala.inline
   def turntable: turntable = "turntable".asInstanceOf[turntable]
   @scala.inline

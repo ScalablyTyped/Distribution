@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DrawerLayoutProperties extends js.Object {
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var drawerBackgroundColor: js.UndefOr[String] = js.undefined
   var drawerLockMode: js.UndefOr[DrawerLockMode] = js.undefined
   var drawerPosition: js.UndefOr[DrawerPosition] = js.undefined
@@ -33,7 +33,7 @@ object DrawerLayoutProperties {
   @scala.inline
   def apply(
     renderNavigationView: Value => ReactNode,
-    containerStyle: StyleProp[ViewStyle] = null,
+    contentContainerStyle: StyleProp[ViewStyle] = null,
     drawerBackgroundColor: String = null,
     drawerLockMode: DrawerLockMode = null,
     drawerPosition: DrawerPosition = null,
@@ -51,7 +51,7 @@ object DrawerLayoutProperties {
     useNativeAnimations: js.UndefOr[Boolean] = js.undefined
   ): DrawerLayoutProperties = {
     val __obj = js.Dynamic.literal(renderNavigationView = js.Any.fromFunction1(renderNavigationView))
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
     if (drawerBackgroundColor != null) __obj.updateDynamic("drawerBackgroundColor")(drawerBackgroundColor)
     if (drawerLockMode != null) __obj.updateDynamic("drawerLockMode")(drawerLockMode)
     if (drawerPosition != null) __obj.updateDynamic("drawerPosition")(drawerPosition)

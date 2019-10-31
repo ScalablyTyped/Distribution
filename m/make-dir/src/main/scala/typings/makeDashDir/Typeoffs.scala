@@ -24,6 +24,7 @@ import typings.node.NodeJS.ArrayBufferView
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.MakeDirectoryOptions
+import typings.node.fsMod.OpenDirOptions
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.ReadStream
 import typings.node.fsMod.RmDirOptions
@@ -38,6 +39,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeoffs extends js.Object {
+  /**
+    * A class representing a directory stream.
+    */
+  var Dir: Instantiable0[typings.node.fsMod.Dir] = js.native
   var Dirent: Instantiable0[typings.node.fsMod.Dirent] = js.native
   var ReadStream: Instantiable0[typings.node.fsMod.ReadStream] = js.native
   var Stats: Instantiable0[typings.node.fsMod.Stats] = js.native
@@ -85,6 +90,7 @@ trait Typeoffs extends js.Object {
   val mkdtemp: Typeofmkdtemp = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val open: Typeofopen = js.native
+  val opendir: Typeofopendir = js.native
   val promises: Typeofpromises = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val read: Typeofread = js.native
@@ -308,6 +314,8 @@ trait Typeoffs extends js.Object {
   def openSync(path: PathLike, flags: Double): Double = js.native
   def openSync(path: PathLike, flags: Double, mode: String): Double = js.native
   def openSync(path: PathLike, flags: Double, mode: Double): Double = js.native
+  def opendirSync(path: String): Dirent = js.native
+  def opendirSync(path: String, options: OpenDirOptions): Dirent = js.native
   def readFileSync(path: Double): Buffer = js.native
   def readFileSync(path: Double, options: String): String | Buffer = js.native
   def readFileSync(path: Double, options: Anon_EncodingFlag): Buffer = js.native

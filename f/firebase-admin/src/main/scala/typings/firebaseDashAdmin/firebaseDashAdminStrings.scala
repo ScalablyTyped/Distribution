@@ -62,10 +62,22 @@ object firebaseDashAdminStrings {
   sealed trait child_removed extends EventType
   
   @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
   sealed trait high extends js.Object
   
   @js.native
+  sealed trait low extends js.Object
+  
+  @js.native
   sealed trait ltr extends js.Object
+  
+  @js.native
+  sealed trait max extends js.Object
+  
+  @js.native
+  sealed trait min extends js.Object
   
   @js.native
   sealed trait normal extends js.Object
@@ -74,10 +86,19 @@ object firebaseDashAdminStrings {
   sealed trait oidc extends js.Object
   
   @js.native
+  sealed trait `private` extends js.Object
+  
+  @js.native
+  sealed trait public extends js.Object
+  
+  @js.native
   sealed trait rtl extends js.Object
   
   @js.native
   sealed trait saml extends js.Object
+  
+  @js.native
+  sealed trait secret extends js.Object
   
   @js.native
   sealed trait sha1 extends js.Object
@@ -125,17 +146,31 @@ object firebaseDashAdminStrings {
   @scala.inline
   def child_removed: child_removed = "child_removed".asInstanceOf[child_removed]
   @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def high: high = "high".asInstanceOf[high]
   @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def oidc: oidc = "oidc".asInstanceOf[oidc]
   @scala.inline
+  def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
+  def public: public = "public".asInstanceOf[public]
+  @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def saml: saml = "saml".asInstanceOf[saml]
+  @scala.inline
+  def secret: secret = "secret".asInstanceOf[secret]
   @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   @scala.inline

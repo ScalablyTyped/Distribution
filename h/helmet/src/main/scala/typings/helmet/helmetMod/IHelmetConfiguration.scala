@@ -8,6 +8,7 @@ trait IHelmetConfiguration extends js.Object {
   var contentSecurityPolicy: js.UndefOr[Boolean | IHelmetContentSecurityPolicyConfiguration] = js.undefined
   var dnsPrefetchControl: js.UndefOr[Boolean | IHelmetDnsPrefetchControlConfiguration] = js.undefined
   var expectCt: js.UndefOr[Boolean | IHelmetExpectCtConfiguration] = js.undefined
+  var featurePolicy: js.UndefOr[IFeaturePolicyOptions] = js.undefined
   var frameguard: js.UndefOr[Boolean | IHelmetFrameguardConfiguration] = js.undefined
   var hidePoweredBy: js.UndefOr[Boolean | IHelmetHidePoweredByConfiguration] = js.undefined
   var hpkp: js.UndefOr[Boolean | IHelmetHpkpConfiguration] = js.undefined
@@ -26,6 +27,7 @@ object IHelmetConfiguration {
     contentSecurityPolicy: Boolean | IHelmetContentSecurityPolicyConfiguration = null,
     dnsPrefetchControl: Boolean | IHelmetDnsPrefetchControlConfiguration = null,
     expectCt: Boolean | IHelmetExpectCtConfiguration = null,
+    featurePolicy: IFeaturePolicyOptions = null,
     frameguard: Boolean | IHelmetFrameguardConfiguration = null,
     hidePoweredBy: Boolean | IHelmetHidePoweredByConfiguration = null,
     hpkp: Boolean | IHelmetHpkpConfiguration = null,
@@ -41,6 +43,7 @@ object IHelmetConfiguration {
     if (contentSecurityPolicy != null) __obj.updateDynamic("contentSecurityPolicy")(contentSecurityPolicy.asInstanceOf[js.Any])
     if (dnsPrefetchControl != null) __obj.updateDynamic("dnsPrefetchControl")(dnsPrefetchControl.asInstanceOf[js.Any])
     if (expectCt != null) __obj.updateDynamic("expectCt")(expectCt.asInstanceOf[js.Any])
+    if (featurePolicy != null) __obj.updateDynamic("featurePolicy")(featurePolicy)
     if (frameguard != null) __obj.updateDynamic("frameguard")(frameguard.asInstanceOf[js.Any])
     if (hidePoweredBy != null) __obj.updateDynamic("hidePoweredBy")(hidePoweredBy.asInstanceOf[js.Any])
     if (hpkp != null) __obj.updateDynamic("hpkp")(hpkp.asInstanceOf[js.Any])

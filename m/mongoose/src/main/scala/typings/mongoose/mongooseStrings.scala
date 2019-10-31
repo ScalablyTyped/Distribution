@@ -45,6 +45,9 @@ object mongooseStrings {
   sealed trait aggregate extends js.Object
   
   @js.native
+  sealed trait autoCreate extends js.Object
+  
+  @js.native
   sealed trait autoIndex extends js.Object
   
   @js.native
@@ -150,6 +153,12 @@ object mongooseStrings {
   sealed trait updateOne extends js.Object
   
   @js.native
+  sealed trait useCreateIndex extends js.Object
+  
+  @js.native
+  sealed trait useFindAndModify extends js.Object
+  
+  @js.native
   sealed trait useNestedStrict extends js.Object
   
   @js.native
@@ -193,6 +202,8 @@ object mongooseStrings {
   def _id: _id = "_id".asInstanceOf[_id]
   @scala.inline
   def aggregate: aggregate = "aggregate".asInstanceOf[aggregate]
+  @scala.inline
+  def autoCreate: autoCreate = "autoCreate".asInstanceOf[autoCreate]
   @scala.inline
   def autoIndex: autoIndex = "autoIndex".asInstanceOf[autoIndex]
   @scala.inline
@@ -263,6 +274,10 @@ object mongooseStrings {
   def updateMany: updateMany = "updateMany".asInstanceOf[updateMany]
   @scala.inline
   def updateOne: updateOne = "updateOne".asInstanceOf[updateOne]
+  @scala.inline
+  def useCreateIndex: useCreateIndex = "useCreateIndex".asInstanceOf[useCreateIndex]
+  @scala.inline
+  def useFindAndModify: useFindAndModify = "useFindAndModify".asInstanceOf[useFindAndModify]
   @scala.inline
   def useNestedStrict: useNestedStrict = "useNestedStrict".asInstanceOf[useNestedStrict]
   @scala.inline

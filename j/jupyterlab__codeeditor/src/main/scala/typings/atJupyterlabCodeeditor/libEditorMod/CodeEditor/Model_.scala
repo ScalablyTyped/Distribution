@@ -42,12 +42,12 @@ class Model_ () extends IModel {
     * A signal emitted when a property changes.
     */
   /* CompleteClass */
-  override var mimeTypeChanged: ISignal[IModel, IChangedArgs[String]] = js.native
+  override var mimeTypeChanged: ISignal[IModel, IChangedArgs[String, String]] = js.native
   /**
     * A signal emitted when a mimetype changes.
     */
   @JSName("mimeTypeChanged")
-  val mimeTypeChanged_Model_ : ISignal[this.type, IChangedArgs[String]] = js.native
+  val mimeTypeChanged_Model_ : ISignal[this.type, IChangedArgs[String, String]] = js.native
   /**
     * The underlying `IModelDB` instance in which model
     * data is stored.

@@ -151,7 +151,7 @@ trait Device extends js.Object {
     *
     * > NOTE: At the moment, taking screenshots on-demand in --take-screenshots failing mode is not yet implemented.
     */
-  def takeScreenShot(name: String): js.Promise[Unit] = js.native
+  def takeScreenshot(name: String): js.Promise[Unit] = js.native
   /**
     * By default, terminateApp() with no params will terminate the app
     * To terminate another app, specify its bundle id

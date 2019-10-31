@@ -48,7 +48,7 @@ trait IModel extends IDisposable {
   /**
     * A signal emitted when the model state changes.
     */
-  var stateChanged: ISignal[this.type, typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[_]]
+  var stateChanged: ISignal[this.type, typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[_, String]]
   /**
     * Deserialize the model from JSON.
     *
@@ -91,7 +91,7 @@ object IModel {
     isDisposed: Boolean,
     modelDB: IModelDB,
     readOnly: Boolean,
-    stateChanged: ISignal[IModel, typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[_]],
+    stateChanged: ISignal[IModel, typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[_, String]],
     toJSON: () => JSONValue,
     toString: () => String
   ): IModel = {

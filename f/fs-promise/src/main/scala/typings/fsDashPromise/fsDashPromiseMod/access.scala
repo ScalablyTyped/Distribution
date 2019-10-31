@@ -16,7 +16,9 @@ object access extends js.Object {
   def apply(path: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(path: String, mode: Double): js.Promise[Unit] = js.native
   def apply(path: String, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  def apply(path: Buffer): js.Promise[Unit] = js.native
   def apply(path: Buffer, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  def apply(path: Buffer, mode: Double): js.Promise[Unit] = js.native
   def apply(path: Buffer, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   /**
     * Asynchronously tests a user's permissions for the file specified by path.

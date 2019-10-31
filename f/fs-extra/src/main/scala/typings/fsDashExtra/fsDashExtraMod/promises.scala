@@ -18,6 +18,7 @@ import typings.node.Anon_EncodingTrue
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.fsMod.MakeDirectoryOptions
+import typings.node.fsMod.OpenDirOptions
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.RmDirAsyncOptions
 import typings.node.fsMod.promises.FileHandle
@@ -192,6 +193,8 @@ object promises extends js.Object {
   def open(path: PathLike, flags: Double): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: Double, mode: String): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: Double, mode: Double): js.Promise[FileHandle] = js.native
+  def opendir(path: String): js.Promise[typings.node.fsMod.Dirent] = js.native
+  def opendir(path: String, options: OpenDirOptions): js.Promise[typings.node.fsMod.Dirent] = js.native
   /**
     * Asynchronously reads data from the file referenced by the supplied `FileHandle`.
     * @param handle A `FileHandle`.

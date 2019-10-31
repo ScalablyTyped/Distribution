@@ -98,7 +98,10 @@ class FileBrowserModel_ protected () extends IDisposable {
   /**
     * A signal emitted when the path changes.
     */
-  val pathChanged: ISignal[this.type, typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[String]] = js.native
+  val pathChanged: ISignal[
+    this.type, 
+    typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[String, String]
+  ] = js.native
   /**
     * A signal emitted when the directory listing is refreshed.
     */
@@ -116,7 +119,7 @@ class FileBrowserModel_ protected () extends IDisposable {
     */
   val uploadChanged: ISignal[
     this.type, 
-    typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[IUploadModel]
+    typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs[IUploadModel, String]
   ] = js.native
   /**
     * Change directory.

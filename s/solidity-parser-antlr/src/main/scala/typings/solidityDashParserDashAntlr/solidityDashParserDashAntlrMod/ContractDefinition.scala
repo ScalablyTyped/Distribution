@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 trait ContractDefinition
   extends BaseASTNode
      with ASTNode {
+  var baseContracts: js.Array[InheritanceSpecifier]
+  var kind: String
   var name: String
   var subNodes: js.Array[ASTNode]
   @JSName("type")
@@ -16,13 +18,15 @@ trait ContractDefinition
 object ContractDefinition {
   @scala.inline
   def apply(
+    baseContracts: js.Array[InheritanceSpecifier],
+    kind: String,
     name: String,
     subNodes: js.Array[ASTNode],
     `type`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.ContractDefinition,
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null
   ): ContractDefinition = {
-    val __obj = js.Dynamic.literal(name = name, subNodes = subNodes)
+    val __obj = js.Dynamic.literal(baseContracts = baseContracts, kind = kind, name = name, subNodes = subNodes)
     __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

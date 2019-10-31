@@ -112,6 +112,7 @@ import typings.plotlyDotJs.plotlyDotJsStrings.tonexty
 import typings.plotlyDotJs.plotlyDotJsStrings.toself
 import typings.plotlyDotJs.plotlyDotJsStrings.tozerox
 import typings.plotlyDotJs.plotlyDotJsStrings.tozeroy
+import typings.plotlyDotJs.plotlyDotJsStrings.treemap
 import typings.plotlyDotJs.plotlyDotJsStrings.v
 import typings.plotlyDotJs.plotlyDotJsStrings.value
 import typings.plotlyDotJs.plotlyDotJsStrings.vh
@@ -155,6 +156,11 @@ trait PlotData extends js.Object {
   var `marker.line`: Partial[ScatterMarkerLine]
   var `marker.maxdisplayed`: Double
   var `marker.opacity`: Double | js.Array[Double]
+  var `marker.pad.b`: Double
+  var `marker.pad.l`: Double
+  var `marker.pad.r`: Double
+   // TODO
+  var `marker.pad.t`: Double
   var `marker.showscale`: Boolean
   var `marker.size`: Double | js.Array[Double]
   var `marker.sizemax`: Double
@@ -162,11 +168,11 @@ trait PlotData extends js.Object {
   var `marker.sizemode`: diameter | area
   var `marker.sizeref`: Double
   var `marker.symbol`: String | js.Array[String]
-   // TODO
   var mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none | gauge | number | delta | `number+delta` | `gauge+number` | `gauge+number+delta` | `gauge+delta`
   var name: String
   var number: Anon_Font
   var orientation: v | h
+  var parents: js.Array[String]
   var r: js.Array[Datum]
   var rotation: Double
   var stackgroup: String
@@ -176,7 +182,7 @@ trait PlotData extends js.Object {
   var theta: js.Array[Datum]
   var transforms: js.Array[DataTransform]
   var transpose: Boolean
-  var `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface
+  var `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap
   var value: Double
   var values: js.Array[Datum]
   var visible: Boolean | legendonly
@@ -226,6 +232,10 @@ object PlotData {
     `marker.line`: Partial[ScatterMarkerLine],
     `marker.maxdisplayed`: Double,
     `marker.opacity`: Double | js.Array[Double],
+    `marker.pad.b`: Double,
+    `marker.pad.l`: Double,
+    `marker.pad.r`: Double,
+    `marker.pad.t`: Double,
     `marker.showscale`: Boolean,
     `marker.size`: Double | js.Array[Double],
     `marker.sizemax`: Double,
@@ -237,6 +247,7 @@ object PlotData {
     name: String,
     number: Anon_Font,
     orientation: v | h,
+    parents: js.Array[String],
     r: js.Array[Datum],
     rotation: Double,
     stackgroup: String,
@@ -246,7 +257,7 @@ object PlotData {
     theta: js.Array[Datum],
     transforms: js.Array[DataTransform],
     transpose: Boolean,
-    `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface,
+    `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap,
     value: Double,
     values: js.Array[Datum],
     visible: Boolean | legendonly,
@@ -262,7 +273,7 @@ object PlotData {
     z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     zsmooth: fast | best | `false`
   ): PlotData = {
-    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, customdata = customdata, delta = delta, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, gauge = gauge, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, number = number, orientation = orientation.asInstanceOf[js.Any], r = r, rotation = rotation, stackgroup = stackgroup, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, value = value, values = values, visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, customdata = customdata, delta = delta, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, gauge = gauge, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, number = number, orientation = orientation.asInstanceOf[js.Any], parents = parents, r = r, rotation = rotation, stackgroup = stackgroup, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, value = value, values = values, visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
     __obj.updateDynamic("line.color")(`line.color`.asInstanceOf[js.Any])
     __obj.updateDynamic("line.dash")(`line.dash`)
     __obj.updateDynamic("line.shape")(`line.shape`.asInstanceOf[js.Any])
@@ -273,6 +284,10 @@ object PlotData {
     __obj.updateDynamic("marker.line")(`marker.line`)
     __obj.updateDynamic("marker.maxdisplayed")(`marker.maxdisplayed`)
     __obj.updateDynamic("marker.opacity")(`marker.opacity`.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.pad.b")(`marker.pad.b`)
+    __obj.updateDynamic("marker.pad.l")(`marker.pad.l`)
+    __obj.updateDynamic("marker.pad.r")(`marker.pad.r`)
+    __obj.updateDynamic("marker.pad.t")(`marker.pad.t`)
     __obj.updateDynamic("marker.showscale")(`marker.showscale`)
     __obj.updateDynamic("marker.size")(`marker.size`.asInstanceOf[js.Any])
     __obj.updateDynamic("marker.sizemax")(`marker.sizemax`)

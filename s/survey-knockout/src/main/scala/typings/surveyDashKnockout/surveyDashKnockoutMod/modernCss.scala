@@ -56,6 +56,7 @@ object modernCss extends js.Object {
   var progress: String = js.native
   var progressBar: String = js.native
   var progressText: String = js.native
+  var progressTextInBar: String = js.native
   var question: Anon_AsCell = js.native
   var radiogroup: Anon_ClearButtonColumnControlLabel = js.native
   var rating: Anon_Disabled = js.native

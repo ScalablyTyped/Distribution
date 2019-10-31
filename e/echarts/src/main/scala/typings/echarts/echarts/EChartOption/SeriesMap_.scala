@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
 import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadius
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData
 import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataItemStyle
+import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataLabel
 import typings.echarts.Anon_AreaColorEmphasis
 import typings.echarts.Anon_BackgroundColorBorderColor
 import typings.echarts.Anon_MaxMin
@@ -315,7 +315,7 @@ trait SeriesMap_ extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markLine
     */
   var markLine: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData
+    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataLabel
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -324,7 +324,7 @@ trait SeriesMap_ extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.markPoint
     */
   var markPoint: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold
+    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData
   ] = js.undefined
   /**
     * Series name used for displaying in
@@ -526,8 +526,8 @@ object SeriesMap_ {
     map: String = null,
     mapValueCalculation: String = null,
     markArea: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataItemStyle = null,
-    markLine: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData = null,
-    markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold = null,
+    markLine: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdDataLabel = null,
+    markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData = null,
     name: String = null,
     nameMap: js.Object = null,
     right: Double | String = null,

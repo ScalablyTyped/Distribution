@@ -45,7 +45,7 @@ object SecureServerOptions {
     cert: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
     ciphers: java.lang.String = null,
     clientCertEngine: java.lang.String = null,
-    createConnection: (/* authority */ URL, /* option */ SessionOptions) => Duplex = null,
+    createConnection: (/* authority */ URL, SecureServerOptions) => Duplex = null,
     crl: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
     dhparam: java.lang.String | Buffer = null,
     ecdhCurve: java.lang.String = null,

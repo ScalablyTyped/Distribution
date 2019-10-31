@@ -5,7 +5,13 @@ import typings.mongodb.Default
 import typings.mongodb.mongodbMod.CollectionCreateOptions
 import typings.mongodb.mongodbMod.Db
 import typings.mongoose.Anon_Catch
+import typings.mongoose.mongooseStrings.autoCreate
+import typings.mongoose.mongooseStrings.autoIndex
+import typings.mongoose.mongooseStrings.bufferCommands
+import typings.mongoose.mongooseStrings.useCreateIndex
+import typings.mongoose.mongooseStrings.useFindAndModify
 import typings.node.eventsMod.EventEmitter
+import typings.std.Pick
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +32,10 @@ trait ConnectionBase extends EventEmitter {
   /** A hash of the collections associated with this connection */
   var collections: StringDictionary[Collection] = js.native
   /** A hash of the global options that are associated with this connection */
-  var config: js.Any = js.native
+  var config: Pick[
+    ConnectionOptions, 
+    autoIndex | autoCreate | useCreateIndex | useFindAndModify | bufferCommands
+  ] = js.native
   /** The mongodb.Db instance, set when the connection is opened */
   var db: Db = js.native
   /** A hash of models registered with this connection */

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@phosphor/dragdrop" : "1.4.0"
+      "@phosphor/dragdrop" : "1.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@phosphor/dragdrop" : "1.4.0"
+      "@phosphor/dragdrop" : "1.4.1"
     }
   ],
   "compile-devDependencies" : [

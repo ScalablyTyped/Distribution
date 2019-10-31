@@ -27,6 +27,7 @@ class Writable ()
     ]
   ] = js.native
   var destroyed: Boolean = js.native
+  val writableEnded: Boolean = js.native
   val writableFinished: Boolean = js.native
   val writableHighWaterMark: Double = js.native
   val writableLength: Double = js.native

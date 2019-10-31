@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plottable"
-version := "3.8.6-5145ec"
+version := "3.8.6-cfdc7f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190710Z-6237a2",
   "org.scalablytyped" %%% "d3-shape" % "1.3-dt-20191014Z-184aed",
   "org.scalablytyped" %%% "d3-time" % "1.0-dt-20190212Z-00ad12",
-  "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20190212Z-4c3557",
+  "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20191029Z-a75830",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20191009Z-45ddf4",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "typesettable" % "4.1.0-829b25")

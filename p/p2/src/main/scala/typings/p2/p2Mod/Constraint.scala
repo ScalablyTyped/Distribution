@@ -12,7 +12,7 @@ class Constraint protected () extends js.Object {
   var bodyA: Body = js.native
   var bodyB: Body = js.native
   var collideConnected: Boolean = js.native
-  var equeations: js.Array[Equation] = js.native
+  var equations: js.Array[Equation] = js.native
   var `type`: Double = js.native
   def setRelaxation(relaxation: Double): Unit = js.native
   def setStiffness(stiffness: Double): Unit = js.native

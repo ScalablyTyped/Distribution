@@ -19,13 +19,13 @@ object fchmod extends js.Object {
   def apply(
     fd: Double,
     mode: String,
-    callback: (js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]) | NoParamCallback
+    callback: (js.Function1[js.UndefOr[ErrnoException], Unit]) | NoParamCallback
   ): Unit = js.native
   def apply(fd: Double, mode: Double): js.Promise[Unit] = js.native
   def apply(
     fd: Double,
     mode: Double,
-    callback: (js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]) | NoParamCallback
+    callback: (js.Function1[js.UndefOr[ErrnoException], Unit]) | NoParamCallback
   ): Unit = js.native
   /**
     * Asynchronous fchmod(2) - Change permissions of a file.

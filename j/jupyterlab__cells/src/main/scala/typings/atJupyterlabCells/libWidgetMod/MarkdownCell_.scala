@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@jupyterlab/cells/lib/widget", "MarkdownCell")
 @js.native
-class MarkdownCell_ protected () extends Cell {
+class MarkdownCell_ protected () extends AttachmentsCell {
   /**
     * Construct a Markdown cell widget.
     */

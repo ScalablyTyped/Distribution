@@ -1,7 +1,7 @@
 
 # Scala.js typings for phosphor__disposable
 
-Typings are for version 1.3.0
+Typings are for version 1.3.1
 
 ## Library description:
 PhosphorJS - Disposable

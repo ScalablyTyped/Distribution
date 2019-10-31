@@ -568,6 +568,9 @@ object gestaltStrings {
   sealed trait `shopping-bag` extends Icons
   
   @js.native
+  sealed trait short extends js.Object
+  
+  @js.native
   sealed trait shrink extends js.Object
   
   @js.native
@@ -619,6 +622,9 @@ object gestaltStrings {
   sealed trait tag extends Icons
   
   @js.native
+  sealed trait tall extends js.Object
+  
+  @js.native
   sealed trait terms extends Icons
   
   @js.native
@@ -662,6 +668,9 @@ object gestaltStrings {
   
   @js.native
   sealed trait transparent extends js.Object
+  
+  @js.native
+  sealed trait transparentDarkGray extends js.Object
   
   @js.native
   sealed trait `trash-can` extends Icons
@@ -1098,6 +1107,8 @@ object gestaltStrings {
   @scala.inline
   def `shopping-bag`: `shopping-bag` = "shopping-bag".asInstanceOf[`shopping-bag`]
   @scala.inline
+  def short: short = "short".asInstanceOf[short]
+  @scala.inline
   def shrink: shrink = "shrink".asInstanceOf[shrink]
   @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
@@ -1132,6 +1143,8 @@ object gestaltStrings {
   @scala.inline
   def tag: tag = "tag".asInstanceOf[tag]
   @scala.inline
+  def tall: tall = "tall".asInstanceOf[tall]
+  @scala.inline
   def terms: terms = "terms".asInstanceOf[terms]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
@@ -1161,6 +1174,8 @@ object gestaltStrings {
   def `text-spacing`: `text-spacing` = "text-spacing".asInstanceOf[`text-spacing`]
   @scala.inline
   def transparent: transparent = "transparent".asInstanceOf[transparent]
+  @scala.inline
+  def transparentDarkGray: transparentDarkGray = "transparentDarkGray".asInstanceOf[transparentDarkGray]
   @scala.inline
   def `trash-can`: `trash-can` = "trash-can".asInstanceOf[`trash-can`]
   @scala.inline

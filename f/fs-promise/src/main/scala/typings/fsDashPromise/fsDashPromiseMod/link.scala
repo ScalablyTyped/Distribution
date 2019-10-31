@@ -19,34 +19,18 @@ object link extends js.Object {
     */
   def apply(existingPath: PathLike, newPath: PathLike, callback: NoParamCallback): Unit = js.native
   def apply(srcpath: String, dstpath: String): js.Promise[Unit] = js.native
-  def apply(
-    srcpath: String,
-    dstpath: String,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  def apply(srcpath: String, dstpath: String, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def apply(srcpath: String, dstpath: Buffer): js.Promise[Unit] = js.native
-  def apply(
-    srcpath: String,
-    dstpath: Buffer,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  def apply(srcpath: String, dstpath: Buffer, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def apply(srcpath: Buffer, dstpath: String): js.Promise[Unit] = js.native
-  def apply(
-    srcpath: Buffer,
-    dstpath: String,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  def apply(srcpath: Buffer, dstpath: String, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   def apply(srcpath: Buffer, dstpath: Buffer): js.Promise[Unit] = js.native
-  def apply(
-    srcpath: Buffer,
-    dstpath: Buffer,
-    callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-  ): Unit = js.native
+  def apply(srcpath: Buffer, dstpath: Buffer, callback: js.Function1[js.UndefOr[ErrnoException], Unit]): Unit = js.native
   /**
     * Asynchronous link(2) - Create a new link (also known as a hard link) to an existing file.
     * @param existingPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def link(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
+  def __promisify__(existingPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
 }
 

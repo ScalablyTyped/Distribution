@@ -20,6 +20,9 @@ object meteorStrings {
   sealed trait Query extends js.Object
   
   @js.native
+  sealed trait _id extends js.Object
+  
+  @js.native
   sealed trait array
     extends BsonType
        with typings.meteor.Mongo.BsonType
@@ -165,6 +168,8 @@ object meteorStrings {
   def PushModifier: PushModifier = "PushModifier".asInstanceOf[PushModifier]
   @scala.inline
   def Query: Query = "Query".asInstanceOf[Query]
+  @scala.inline
+  def _id: _id = "_id".asInstanceOf[_id]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   @scala.inline

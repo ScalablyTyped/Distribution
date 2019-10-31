@@ -19,7 +19,7 @@ object fchown extends js.Object {
     fd: Double,
     uid: Double,
     gid: Double,
-    callback: (js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]) | NoParamCallback
+    callback: (js.Function1[js.UndefOr[ErrnoException], Unit]) | NoParamCallback
   ): Unit = js.native
   /**
     * Asynchronous fchown(2) - Change ownership of a file.

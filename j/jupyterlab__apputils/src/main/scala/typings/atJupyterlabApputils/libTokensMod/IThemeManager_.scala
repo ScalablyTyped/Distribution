@@ -17,7 +17,7 @@ trait IThemeManager_ extends js.Object {
   /**
     * A signal fired when the application theme changes.
     */
-  val themeChanged: ISignal[this.type, IChangedArgs[String]]
+  val themeChanged: ISignal[this.type, IChangedArgs[String, String]]
   /**
     * The names of the registered themes.
     */
@@ -58,7 +58,7 @@ object IThemeManager_ {
     loadCSS: String => js.Promise[Unit],
     register: ITheme => IDisposable,
     setTheme: String => js.Promise[Unit],
-    themeChanged: ISignal[IThemeManager_, IChangedArgs[String]],
+    themeChanged: ISignal[IThemeManager_, IChangedArgs[String, String]],
     themeScrollbars: String => Boolean,
     themes: js.Array[String],
     theme: String = null

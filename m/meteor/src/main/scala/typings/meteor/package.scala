@@ -8,6 +8,8 @@ package object meteor {
   import org.scalablytyped.runtime.StringDictionary
   import typings.std.Date
   import typings.std.Error
+  import typings.std.Exclude
+  import typings.std.Pick
   import typings.std.Uint8Array
 
   type EJSON = EJSONable
@@ -21,5 +23,6 @@ package object meteor {
       Double | String | Boolean | js.Object | (js.Array[Double | js.Object | String]) | Null
     ]
   ]
+  type UnionOmit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
   type global_Error = Error
 }

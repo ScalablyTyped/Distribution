@@ -3,6 +3,7 @@ package typings.relayDashCompiler
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Argument
 import typings.relayDashCompiler.libCoreGraphQLIRMod.ClientExtension
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Condition
+import typings.relayDashCompiler.libCoreGraphQLIRMod.Connection
 import typings.relayDashCompiler.libCoreGraphQLIRMod.ConnectionField
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Defer
 import typings.relayDashCompiler.libCoreGraphQLIRMod.Directive
@@ -32,6 +33,7 @@ trait Anon_ArgumentClientExtension extends js.Object {
   var Argument: js.UndefOr[NodeVisitorObject[typings.relayDashCompiler.libCoreGraphQLIRMod.Argument]] = js.undefined
   var ClientExtension: js.UndefOr[VisitFn[typings.relayDashCompiler.libCoreGraphQLIRMod.ClientExtension]] = js.undefined
   var Condition: js.UndefOr[NodeVisitorObject[typings.relayDashCompiler.libCoreGraphQLIRMod.Condition]] = js.undefined
+  var Connection: js.UndefOr[NodeVisitorObject[typings.relayDashCompiler.libCoreGraphQLIRMod.Connection]] = js.undefined
   var ConnectionField: js.UndefOr[NodeVisitorObject[typings.relayDashCompiler.libCoreGraphQLIRMod.ConnectionField]] = js.undefined
   var Defer: js.UndefOr[NodeVisitorObject[typings.relayDashCompiler.libCoreGraphQLIRMod.Defer]] = js.undefined
   var Directive: js.UndefOr[NodeVisitorObject[typings.relayDashCompiler.libCoreGraphQLIRMod.Directive]] = js.undefined
@@ -66,6 +68,7 @@ object Anon_ArgumentClientExtension {
   // These correspond to array indices in `path`.
   js.Any = null,
     Condition: NodeVisitorObject[Condition] = null,
+    Connection: NodeVisitorObject[Connection] = null,
     ConnectionField: NodeVisitorObject[ConnectionField] = null,
     Defer: NodeVisitorObject[Defer] = null,
     Directive: NodeVisitorObject[Directive] = null,
@@ -89,6 +92,7 @@ object Anon_ArgumentClientExtension {
     if (Argument != null) __obj.updateDynamic("Argument")(Argument.asInstanceOf[js.Any])
     if (ClientExtension != null) __obj.updateDynamic("ClientExtension")(js.Any.fromFunction5(ClientExtension))
     if (Condition != null) __obj.updateDynamic("Condition")(Condition.asInstanceOf[js.Any])
+    if (Connection != null) __obj.updateDynamic("Connection")(Connection.asInstanceOf[js.Any])
     if (ConnectionField != null) __obj.updateDynamic("ConnectionField")(ConnectionField.asInstanceOf[js.Any])
     if (Defer != null) __obj.updateDynamic("Defer")(Defer.asInstanceOf[js.Any])
     if (Directive != null) __obj.updateDynamic("Directive")(Directive.asInstanceOf[js.Any])

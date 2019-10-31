@@ -30,6 +30,10 @@ trait ISpecModel extends JSONObject {
     */
   val language: String
   /**
+    * A dictionary of additional attributes about this kernel; used by clients to aid in kernel selection.
+    */
+  val metadata: js.UndefOr[JSONObject] = js.undefined
+  /**
     * The name of the kernel spec.
     */
   val name: String
@@ -47,10 +51,12 @@ object ISpecModel {
     language: String,
     name: String,
     resources: StringDictionary[String],
-    env: JSONObject = null
+    env: JSONObject = null,
+    metadata: JSONObject = null
   ): ISpecModel = {
     val __obj = js.Dynamic.literal(argv = argv, display_name = display_name, language = language, name = name, resources = resources)
     if (env != null) __obj.updateDynamic("env")(env)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     __obj.asInstanceOf[ISpecModel]
   }
 }

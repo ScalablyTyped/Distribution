@@ -49,6 +49,10 @@ trait Fancytree extends js.Object {
     * @returns {boolean} previous status
     * @since 2.19 */
   def enableUpdate(enabled: Boolean): Unit = js.native
+  /** Expand (or collapse) all parent nodes. */
+  def expandAll(): Unit = js.native
+  def expandAll(flag: Boolean): Unit = js.native
+  def expandAll(flag: Boolean, options: js.Object): Unit = js.native
   /** [ext-filter] Dimm or hide whole branches.
     * @returns {integer} count
     */

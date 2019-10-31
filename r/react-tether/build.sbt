@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-tether"
-version := "2.0.4-46588e"
+version := "2.0.5-19e28c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -68,13 +68,16 @@ trait Octokit extends js.Object {
   def authenticate(auth: AuthOAuthToken): Unit = js.native
   def authenticate(auth: AuthUserToken): Unit = js.native
   def paginate(EndpointOptions: EndpointOptions): js.Promise[js.Array[_]] = js.native
-  def paginate(EndpointOptions: EndpointOptions, callback: js.Function1[/* response */ AnyResponse, _]): js.Promise[js.Array[_]] = js.native
+  def paginate(
+    EndpointOptions: EndpointOptions,
+    callback: js.Function2[/* response */ AnyResponse, /* done */ js.Function0[Unit], _]
+  ): js.Promise[js.Array[_]] = js.native
   def paginate(Route: String): js.Promise[js.Array[_]] = js.native
   def paginate(Route: String, EndpointOptions: EndpointOptions): js.Promise[js.Array[_]] = js.native
   def paginate(
     Route: String,
     EndpointOptions: EndpointOptions,
-    callback: js.Function1[/* response */ AnyResponse, _]
+    callback: js.Function2[/* response */ AnyResponse, /* done */ js.Function0[Unit], _]
   ): js.Promise[js.Array[_]] = js.native
   def registerEndpoints(endpoints: StringDictionary[EndpointOptions]): Unit = js.native
   def request(EndpointOptions: EndpointOptions): js.Promise[AnyResponse] = js.native

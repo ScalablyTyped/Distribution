@@ -2,6 +2,7 @@ package typings.fsDashPromise.fsDashPromiseMod
 
 import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +11,10 @@ import scala.scalajs.js.annotation._
 @JSImport("fs-promise", "copyFile")
 @js.native
 object copyFile extends js.Object {
+  def apply(src: String, dest: String): js.Promise[Unit] = js.native
+  def apply(src: String, dest: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def apply(src: String, dest: String, flags: Double): js.Promise[Unit] = js.native
+  def apply(src: String, dest: String, flags: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   /**
     * Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
     * No arguments other than a possible exception are given to the callback function.

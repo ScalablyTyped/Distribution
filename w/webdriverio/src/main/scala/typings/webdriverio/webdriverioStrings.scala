@@ -24,6 +24,9 @@ object webdriverioStrings {
   sealed trait addCommand extends js.Object
   
   @js.native
+  sealed trait config extends js.Object
+  
+  @js.native
   sealed trait dragAndDrop extends js.Object
   
   @js.native
@@ -59,6 +62,8 @@ object webdriverioStrings {
   def ElementAsync: ElementAsync = "ElementAsync".asInstanceOf[ElementAsync]
   @scala.inline
   def addCommand: addCommand = "addCommand".asInstanceOf[addCommand]
+  @scala.inline
+  def config: config = "config".asInstanceOf[config]
   @scala.inline
   def dragAndDrop: dragAndDrop = "dragAndDrop".asInstanceOf[dragAndDrop]
   @scala.inline

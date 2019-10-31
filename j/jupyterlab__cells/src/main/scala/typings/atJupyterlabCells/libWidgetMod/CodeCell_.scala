@@ -60,7 +60,7 @@ class CodeCell_ protected () extends Cell {
   /**
     * Handle changes in the model.
     */
-  /* protected */ def onStateChanged(model: ICellModel, args: IChangedArgs[_]): Unit = js.native
+  /* protected */ def onStateChanged(model: ICellModel, args: IChangedArgs[_, String]): Unit = js.native
   /**
     * Save view collapse state to model
     */

@@ -8,6 +8,7 @@ package object interfacesMod {
   import typings.node.Buffer
   import typings.std.ArrayLike
 
+  type InputBuffer = ArrayLike[Double] | Buffer
   type OutputBuffer = ArrayLike[Double] | Buffer
   type v1 = v1Buffer with v1String
   type v1Buffer = js.Function3[
@@ -27,15 +28,11 @@ package object interfacesMod {
   type v4String = js.Function1[/* options */ js.UndefOr[V4Options], String]
   type v5 = v5Buffer with v5String
   type v5Buffer = js.Function4[
-    /* name */ String | js.Array[Double], 
-    /* namespace */ String | js.Array[Double], 
+    /* name */ String | InputBuffer, 
+    /* namespace */ String | InputBuffer, 
     /* buffer */ OutputBuffer, 
     /* offset */ js.UndefOr[Double], 
     OutputBuffer
   ]
-  type v5String = js.Function2[
-    /* name */ String | js.Array[Double], 
-    /* namespace */ String | js.Array[Double], 
-    String
-  ]
+  type v5String = js.Function2[/* name */ String | InputBuffer, /* namespace */ String | InputBuffer, String]
 }
