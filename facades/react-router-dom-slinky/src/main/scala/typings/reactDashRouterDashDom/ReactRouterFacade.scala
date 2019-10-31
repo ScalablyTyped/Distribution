@@ -3,7 +3,7 @@ package typings.reactDashRouterDashDom
 import slinky.core.facade.ReactElement
 import slinky.core.{BuildingComponent, ReactComponentClass}
 import typings.history.historyMod.{Location, LocationState}
-import typings.reactDashRouterDashDom.{reactDashRouterDashDomComponents => RRD}
+import typings.reactDashRouterDashDom.{reactDashRouterDashDomProps, reactDashRouterDashDomComponents => RRD}
 import typings.reactDashRouter.reactDashRouterMod.{
   RouteChildrenProps,
   RouteComponentProps,
