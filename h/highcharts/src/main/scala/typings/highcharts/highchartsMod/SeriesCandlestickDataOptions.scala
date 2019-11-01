@@ -40,14 +40,12 @@ trait SeriesCandlestickDataOptions extends js.Object {
   ] = js.undefined
   /**
     * (Highstock) A description of the point to add to the screen reader
-    * information about the point. Requires the Accessibility module.
+    * information about the point.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) Point specific options for the draggable-points module.
     * Overrides options on `series.dragDrop`.
-    *
-    * Requires the `draggable-points` module.
     */
   var dragDrop: js.UndefOr[SeriesCandlestickDataDragDropOptions] = js.undefined
   /**

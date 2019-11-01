@@ -34,14 +34,12 @@ trait SeriesBubbleDataOptions extends js.Object {
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
   /**
     * (Highcharts) A description of the point to add to the screen reader
-    * information about the point. Requires the Accessibility module.
+    * information about the point.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts) Point specific options for the draggable-points module.
     * Overrides options on `series.dragDrop`.
-    *
-    * Requires the `draggable-points` module.
     */
   var dragDrop: js.UndefOr[SeriesBubbleDataDragDropOptions] = js.undefined
   /**
@@ -65,6 +63,16 @@ trait SeriesBubbleDataOptions extends js.Object {
     * `labelrank` will be drawn.
     */
   var labelrank: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts) Options for the point markers of line-like series.
+    * Properties like `fillColor`, `lineColor` and `lineWidth` define the
+    * visual appearance of the markers. Other series types, like column series,
+    * don't have markers, but have visual options on the series level instead.
+    *
+    * In styled mode, the markers can be styled with the `.highcharts-point`,
+    * `.highcharts-point-hover` and `.highcharts-point-select` class names.
+    */
+  var marker: js.UndefOr[SeriesBubbleDataMarkerOptions] = js.undefined
   /**
     * (Highcharts) The name of the point as shown in the legend, tooltip,
     * dataLabels etc.
@@ -106,6 +114,7 @@ object SeriesBubbleDataOptions {
     events: SeriesBubbleDataEventsOptions = null,
     id: String = null,
     labelrank: Int | Double = null,
+    marker: SeriesBubbleDataMarkerOptions = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     x: Int | Double = null,
@@ -124,6 +133,7 @@ object SeriesBubbleDataOptions {
     if (events != null) __obj.updateDynamic("events")(events)
     if (id != null) __obj.updateDynamic("id")(id)
     if (labelrank != null) __obj.updateDynamic("labelrank")(labelrank.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

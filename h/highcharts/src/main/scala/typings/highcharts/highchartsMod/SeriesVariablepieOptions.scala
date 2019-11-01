@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.highchartsMod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesVariablepieOptions
+- typings.highcharts.highchartsMod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesVariablepieOptions
   extends PlotVariablepieOptions
      with SeriesOptionsType {
   /**
@@ -65,6 +65,7 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var stack: js.UndefOr[Double | String] = js.undefined
+  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -154,6 +155,7 @@ object SeriesVariablepieOptions {
     states: PlotVariablepieStatesOptions = null,
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     tooltip: PlotVariablepieTooltipOptions = null,
+    treemap: SeriesTreemapOptions = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: js.UndefOr[scala.Nothing] = js.undefined,
@@ -233,6 +235,7 @@ object SeriesVariablepieOptions {
     if (states != null) __obj.updateDynamic("states")(states)
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (treemap != null) __obj.updateDynamic("treemap")(treemap)
     if (!js.isUndefined(useOhlcData)) __obj.updateDynamic("useOhlcData")(useOhlcData)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (!js.isUndefined(xAxis)) __obj.updateDynamic("xAxis")(xAxis)

@@ -151,8 +151,6 @@ trait ChartParallelAxesOptions extends js.Object {
   /**
     * (Highstock) Maximal size of a resizable axis. Could be set as a percent
     * of plot area or pixel size.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var maxLength: js.UndefOr[Double | String] = js.undefined
   /**
@@ -188,8 +186,6 @@ trait ChartParallelAxesOptions extends js.Object {
   /**
     * (Highstock) Minimal size of a resizable axis. Could be set as a percent
     * of plot area or pixel size.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var minLength: js.UndefOr[Double | String] = js.undefined
   /**
@@ -301,9 +297,8 @@ trait ChartParallelAxesOptions extends js.Object {
     */
   var range: js.UndefOr[Double] = js.undefined
   /**
-    * (Highstock) Options for axis resizing. This feature requires the
-    * drag-panes.js module. It adds a thick line between panes which the user
-    * can drag in order to resize the panes.
+    * (Highstock) Options for axis resizing. It adds a thick line between panes
+    * which the user can drag in order to resize the panes.
     */
   var resize: js.UndefOr[ChartParallelAxesResizeOptions] = js.undefined
   /**

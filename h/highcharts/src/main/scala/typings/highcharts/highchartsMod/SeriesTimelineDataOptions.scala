@@ -40,8 +40,6 @@ trait SeriesTimelineDataOptions extends js.Object {
   /**
     * (Highcharts) Point specific options for the draggable-points module.
     * Overrides options on `series.dragDrop`.
-    *
-    * Requires the `draggable-points` module.
     */
   var dragDrop: js.UndefOr[SeriesTimelineDataDragDropOptions] = js.undefined
   /**

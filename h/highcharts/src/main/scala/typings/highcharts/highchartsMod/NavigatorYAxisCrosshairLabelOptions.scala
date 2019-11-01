@@ -29,6 +29,10 @@ trait NavigatorYAxisCrosshairLabelOptions extends js.Object {
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   /**
+    * (Highstock) Flag to enable crosshair's label.
+    */
+  var enabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * (Highstock) A format string for the crosshair label. Defaults to
     * `{value}` for numeric axes and `{value:%b %d, %Y}` for datetime axes.
     */
@@ -59,6 +63,7 @@ object NavigatorYAxisCrosshairLabelOptions {
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
     borderWidth: Int | Double = null,
+    enabled: js.UndefOr[Boolean] = js.undefined,
     format: String = null,
     formatter: XAxisCrosshairLabelFormatterCallbackFunction = null,
     padding: Int | Double = null,
@@ -71,6 +76,7 @@ object NavigatorYAxisCrosshairLabelOptions {
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (format != null) __obj.updateDynamic("format")(format)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

@@ -9,7 +9,7 @@ trait ResponsiveRulesConditionOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function to gain
     * complete control on when the responsive rule applies. Return `true` if it
     * applies. This opens for checking against other metrics than the chart
-    * size, or example the document size or other elements.
+    * size, for example the document size or other elements.
     */
   var callback: js.UndefOr[ResponsiveCallbackFunction] = js.undefined
   /**

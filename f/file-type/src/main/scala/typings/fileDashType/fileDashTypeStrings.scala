@@ -98,6 +98,9 @@ object fileDashTypeStrings {
   sealed trait `application/x-7z-compressed` extends MimeType
   
   @js.native
+  sealed trait `application/x-apache-arrow` extends MimeType
+  
+  @js.native
   sealed trait `application/x-apple-diskimage` extends MimeType
   
   @js.native
@@ -111,6 +114,9 @@ object fileDashTypeStrings {
   
   @js.native
   sealed trait `application/x-deb` extends MimeType
+  
+  @js.native
+  sealed trait `application/x-esri-shape` extends MimeType
   
   @js.native
   sealed trait `application/x-google-chrome-extension` extends MimeType
@@ -171,6 +177,9 @@ object fileDashTypeStrings {
   
   @js.native
   sealed trait ar extends FileType
+  
+  @js.native
+  sealed trait arrow extends FileType
   
   @js.native
   sealed trait arw extends FileType
@@ -578,6 +587,9 @@ object fileDashTypeStrings {
   sealed trait rw2 extends FileType
   
   @js.native
+  sealed trait shp extends FileType
+  
+  @js.native
   sealed trait spx extends FileType
   
   @js.native
@@ -743,6 +755,8 @@ object fileDashTypeStrings {
   @scala.inline
   def `application/x-7z-compressed`: `application/x-7z-compressed` = "application/x-7z-compressed".asInstanceOf[`application/x-7z-compressed`]
   @scala.inline
+  def `application/x-apache-arrow`: `application/x-apache-arrow` = "application/x-apache-arrow".asInstanceOf[`application/x-apache-arrow`]
+  @scala.inline
   def `application/x-apple-diskimage`: `application/x-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[`application/x-apple-diskimage`]
   @scala.inline
   def `application/x-blender`: `application/x-blender` = "application/x-blender".asInstanceOf[`application/x-blender`]
@@ -752,6 +766,8 @@ object fileDashTypeStrings {
   def `application/x-compress`: `application/x-compress` = "application/x-compress".asInstanceOf[`application/x-compress`]
   @scala.inline
   def `application/x-deb`: `application/x-deb` = "application/x-deb".asInstanceOf[`application/x-deb`]
+  @scala.inline
+  def `application/x-esri-shape`: `application/x-esri-shape` = "application/x-esri-shape".asInstanceOf[`application/x-esri-shape`]
   @scala.inline
   def `application/x-google-chrome-extension`: `application/x-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`application/x-google-chrome-extension`]
   @scala.inline
@@ -792,6 +808,8 @@ object fileDashTypeStrings {
   def `application/zip`: `application/zip` = "application/zip".asInstanceOf[`application/zip`]
   @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
+  @scala.inline
+  def arrow: arrow = "arrow".asInstanceOf[arrow]
   @scala.inline
   def arw: arw = "arw".asInstanceOf[arw]
   @scala.inline
@@ -1062,6 +1080,8 @@ object fileDashTypeStrings {
   def rtf: rtf = "rtf".asInstanceOf[rtf]
   @scala.inline
   def rw2: rw2 = "rw2".asInstanceOf[rw2]
+  @scala.inline
+  def shp: shp = "shp".asInstanceOf[shp]
   @scala.inline
   def spx: spx = "spx".asInstanceOf[spx]
   @scala.inline

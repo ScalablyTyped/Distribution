@@ -14,7 +14,11 @@ trait PublishQueue extends js.Object {
     * Schedule applying a payload to the store on the next `run()`.
     */
   def commitPayload(operation: OperationDescriptor, payload: RelayResponsePayload): Unit = js.native
-  def commitPayload(operation: OperationDescriptor, payload: RelayResponsePayload, updater: SelectorStoreUpdater): Unit = js.native
+  def commitPayload(
+    operation: OperationDescriptor,
+    payload: RelayResponsePayload,
+    updater: SelectorStoreUpdater[js.Object]
+  ): Unit = js.native
   /**
     * Schedule a publish to the store from the provided source on the next
     * `run()`. As an example, to update the store with substituted fields that

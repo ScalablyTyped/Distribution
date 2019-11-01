@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/functions" : "0.4.22"
+      "@firebase/functions" : "0.4.23"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/functions" : "0.4.22"
+      "@firebase/functions" : "0.4.23"
     }
   ],
   "compile-devDependencies" : [

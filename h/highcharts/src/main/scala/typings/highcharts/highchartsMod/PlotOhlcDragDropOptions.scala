@@ -44,23 +44,19 @@ trait PlotOhlcDragDropOptions extends js.Object {
     */
   var dragSensitivity: js.UndefOr[Double] = js.undefined
   /**
-    * (Highstock) Allow close value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highstock) Allow close value to be dragged individually.
     */
   var draggableClose: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highstock) Allow high value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highstock) Allow high value to be dragged individually.
     */
   var draggableHigh: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highstock) Allow low value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highstock) Allow low value to be dragged individually.
     */
   var draggableLow: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highstock) Allow open value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highstock) Allow open value to be dragged individually.
     */
   var draggableOpen: js.UndefOr[Boolean] = js.undefined
   /**

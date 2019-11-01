@@ -15,7 +15,7 @@ trait PlotTreemapLevelsOptions extends js.Object {
     * on the level. See (see online documentation for example) for possible
     * options.
     */
-  var borderDashStyle: js.UndefOr[String] = js.undefined
+  var borderDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**
     * (Highcharts) Can set the borderWidth on all points which lies on the same
     * level.
@@ -40,7 +40,7 @@ trait PlotTreemapLevelsOptions extends js.Object {
     * (Highcharts) Can set the options of dataLabels on each point which lies
     * on the level. plotOptions.treemap.dataLabels for possible values.
     */
-  var dataLabels: js.UndefOr[js.Object] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptionsObject] = js.undefined
   /**
     * (Highcharts) Can set the layoutAlgorithm option on a specific level.
     */
@@ -61,11 +61,11 @@ object PlotTreemapLevelsOptions {
   @scala.inline
   def apply(
     borderColor: ColorString = null,
-    borderDashStyle: String = null,
+    borderDashStyle: DashStyleValue = null,
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorVariation: PlotTreemapLevelsColorVariationOptions = null,
-    dataLabels: js.Object = null,
+    dataLabels: DataLabelsOptionsObject = null,
     layoutAlgorithm: OptionsLayoutAlgorithmValue = null,
     layoutStartingDirection: OptionsLayoutStartingDirectionValue = null,
     level: Int | Double = null

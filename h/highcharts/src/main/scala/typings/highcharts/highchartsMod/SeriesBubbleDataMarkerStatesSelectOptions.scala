@@ -4,32 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SeriesWindbarbDataMarkerStatesSelectOptions extends js.Object {
+trait SeriesBubbleDataMarkerStatesSelectOptions extends js.Object {
   /**
-    * (Highcharts, Highstock) Enable or disable visible feedback for selection.
+    * (Highcharts) Enable or disable visible feedback for selection.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highstock) The fill color of the point marker.
+    * (Highcharts) The fill color of the point marker.
     */
   var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highcharts, Highstock) The color of the point marker's outline. When
-    * `undefined`, the series' or point's color is used.
+    * (Highcharts) The color of the point marker's outline. When `undefined`,
+    * the series' or point's color is used.
     */
   var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highcharts, Highstock) The width of the point marker's outline.
+    * (Highcharts) The width of the point marker's outline.
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock) The radius of the point marker. In hover state,
-    * it defaults to the normal state's radius + 2.
+    * (Highcharts) The radius of the point marker. In hover state, it defaults
+    * to the normal state's radius + 2.
     */
   var radius: js.UndefOr[Double] = js.undefined
 }
 
-object SeriesWindbarbDataMarkerStatesSelectOptions {
+object SeriesBubbleDataMarkerStatesSelectOptions {
   @scala.inline
   def apply(
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -37,14 +37,14 @@ object SeriesWindbarbDataMarkerStatesSelectOptions {
     lineColor: ColorString | GradientColorObject | PatternObject = null,
     lineWidth: Int | Double = null,
     radius: Int | Double = null
-  ): SeriesWindbarbDataMarkerStatesSelectOptions = {
+  ): SeriesBubbleDataMarkerStatesSelectOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SeriesWindbarbDataMarkerStatesSelectOptions]
+    __obj.asInstanceOf[SeriesBubbleDataMarkerStatesSelectOptions]
   }
 }
 

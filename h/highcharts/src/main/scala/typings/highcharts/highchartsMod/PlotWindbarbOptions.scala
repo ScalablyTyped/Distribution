@@ -213,15 +213,12 @@ trait PlotWindbarbOptions extends js.Object {
     */
   var dataLabels: js.UndefOr[js.Any] = js.undefined
   /**
-    * (Highcharts) Depth of the columns in a 3D column chart. Requires
-    * `highcharts-3d.js`.
+    * (Highcharts) Depth of the columns in a 3D column chart.
     */
   var depth: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock) Requires the Accessibility module.
-    *
-    * A description of the series to add to the screen reader information about
-    * the series.
+    * (Highcharts, Highstock) A description of the series to add to the screen
+    * reader information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -270,7 +267,6 @@ trait PlotWindbarbOptions extends js.Object {
   var groupPadding: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts) The spacing between columns on the Z Axis in a 3D chart.
-    * Requires `highcharts-3d.js`.
     */
   var groupZPadding: js.UndefOr[Double] = js.undefined
   /**
@@ -280,9 +276,8 @@ trait PlotWindbarbOptions extends js.Object {
     */
   var grouping: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highstock) Export-data module required. When set to `false`
-    * will prevent the series data from being included in any form of data
-    * export.
+    * (Highcharts, Highstock) When set to `false` will prevent the series data
+    * from being included in any form of data export.
     *
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
@@ -319,8 +314,6 @@ trait PlotWindbarbOptions extends js.Object {
     *
     * The series labels currently work with series types having a `graph` or an
     * `area`.
-    *
-    * Requires the `series-label.js` module.
     */
   var label: js.UndefOr[PlotWindbarbLabelOptions] = js.undefined
   /**
@@ -521,6 +514,9 @@ trait PlotWindbarbOptions extends js.Object {
     * When `stickyTracking` is false and `tooltip.shared` is false, the tooltip
     * will be hidden when moving the mouse between series. Defaults to true for
     * line and area type series, but to false for columns, pies etc.
+    *
+    * **Note:** The boost module will force this option because of technical
+    * limitations.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
   /**
@@ -542,6 +538,9 @@ trait PlotWindbarbOptions extends js.Object {
     * point is tested, and the rest are assumed to be the same format. This
     * saves expensive data checking and indexing in long series. Set it to `0`
     * disable.
+    *
+    * Note: In boost mode turbo threshold is forced. Only array of numbers or
+    * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
   /**

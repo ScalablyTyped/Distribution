@@ -29,8 +29,7 @@ trait LangOptions extends js.Object {
     */
   var decimalPoint: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Export-data module only. The
-    * text for the menu item.
+    * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
     */
   var downloadCSV: js.UndefOr[String] = js.undefined
   /**
@@ -54,8 +53,7 @@ trait LangOptions extends js.Object {
     */
   var downloadSVG: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Export-data module only. The
-    * text for the menu item.
+    * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
     */
   var downloadXLS: js.UndefOr[String] = js.undefined
   /**
@@ -88,7 +86,7 @@ trait LangOptions extends js.Object {
   var navigation: js.UndefOr[js.Object | LangNavigationOptions] = js.undefined
   /**
     * (Highcharts, Highstock) The text to display when the chart contains no
-    * data. Requires the no-data module, see noData.
+    * data.
     */
   var noData: js.UndefOr[String] = js.undefined
   /**
@@ -105,8 +103,7 @@ trait LangOptions extends js.Object {
     */
   var numericSymbols: js.UndefOr[js.Array[String]] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Export-data module only. The
-    * text for the menu item.
+    * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
     */
   var openInCloud: js.UndefOr[String] = js.undefined
   /**
@@ -164,8 +161,7 @@ trait LangOptions extends js.Object {
     */
   var thousandsSep: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Export-data module only. The
-    * text for the menu item.
+    * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
     */
   var viewData: js.UndefOr[String] = js.undefined
   /**

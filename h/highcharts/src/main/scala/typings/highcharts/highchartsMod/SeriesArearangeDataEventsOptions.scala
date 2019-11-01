@@ -23,8 +23,6 @@ trait SeriesArearangeDataEventsOptions extends js.Object {
     * be accessed from `e.newPoint` for simplicity, and its ID can be accessed
     * from `e.newPointId`. The `this` context is the point being dragged. To
     * stop the default drag action, return false. See drag and drop options.
-    *
-    * Requires the `draggable-points` module.
     */
   var drag: js.UndefOr[PointDragCallbackFunction] = js.undefined
   /**
@@ -32,16 +30,12 @@ trait SeriesArearangeDataEventsOptions extends js.Object {
     * a point. The mouse event object is passed in as an argument. If a drag
     * handle is used, `e.updateProp` is set to the data property being dragged.
     * The `this` context is the point. See drag and drop options.
-    *
-    * Requires the `draggable-points` module.
     */
   var dragStart: js.UndefOr[PointDragStartCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Callback that fires when the point is
     * dropped. The parameters passed are the same as for drag. To stop the
     * default drop action, return false. See drag and drop options.
-    *
-    * Requires the `draggable-points` module.
     */
   var drop: js.UndefOr[PointDropCallbackFunction] = js.undefined
   /**

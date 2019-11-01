@@ -130,9 +130,9 @@ trait CypressConfiguration extends js.Object {
     */
   var taskTimeout: Double
   /**
-    * A String glob pattern of the test files to load.
+    * A String or Array of string glob pattern of the test files to load.
     */
-  var testFiles: String
+  var testFiles: String | js.Array[String]
   //
   // screenshots
   //
@@ -215,7 +215,7 @@ object CypressConfiguration {
     screenshotsFolder: String,
     supportFile: String | `false`,
     taskTimeout: Double,
-    testFiles: String,
+    testFiles: String | js.Array[String],
     trashAssetsBeforeRuns: Boolean,
     userAgent: String,
     video: Boolean,
@@ -226,7 +226,7 @@ object CypressConfiguration {
     viewportWidth: Double,
     waitForAnimations: Boolean
   ): CypressConfiguration = {
-    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold, baseUrl = baseUrl, blacklistHosts = blacklistHosts.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity, defaultCommandTimeout = defaultCommandTimeout, env = env, execTimeout = execTimeout, fileServerFolder = fileServerFolder, fixturesFolder = fixturesFolder.asInstanceOf[js.Any], ignoreTestFiles = ignoreTestFiles.asInstanceOf[js.Any], integrationFolder = integrationFolder, modifyObstructiveCode = modifyObstructiveCode, numTestsKeptInMemory = numTestsKeptInMemory, pageLoadTimeout = pageLoadTimeout, pluginsFile = pluginsFile.asInstanceOf[js.Any], port = port, reporter = reporter, requestTimeout = requestTimeout, responseTimeout = responseTimeout, screenshotsFolder = screenshotsFolder, supportFile = supportFile.asInstanceOf[js.Any], taskTimeout = taskTimeout, testFiles = testFiles, trashAssetsBeforeRuns = trashAssetsBeforeRuns, userAgent = userAgent, video = video, videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses, videosFolder = videosFolder, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForAnimations = waitForAnimations)
+    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold, baseUrl = baseUrl, blacklistHosts = blacklistHosts.asInstanceOf[js.Any], chromeWebSecurity = chromeWebSecurity, defaultCommandTimeout = defaultCommandTimeout, env = env, execTimeout = execTimeout, fileServerFolder = fileServerFolder, fixturesFolder = fixturesFolder.asInstanceOf[js.Any], ignoreTestFiles = ignoreTestFiles.asInstanceOf[js.Any], integrationFolder = integrationFolder, modifyObstructiveCode = modifyObstructiveCode, numTestsKeptInMemory = numTestsKeptInMemory, pageLoadTimeout = pageLoadTimeout, pluginsFile = pluginsFile.asInstanceOf[js.Any], port = port, reporter = reporter, requestTimeout = requestTimeout, responseTimeout = responseTimeout, screenshotsFolder = screenshotsFolder, supportFile = supportFile.asInstanceOf[js.Any], taskTimeout = taskTimeout, testFiles = testFiles.asInstanceOf[js.Any], trashAssetsBeforeRuns = trashAssetsBeforeRuns, userAgent = userAgent, video = video, videoCompression = videoCompression.asInstanceOf[js.Any], videoUploadOnPasses = videoUploadOnPasses, videosFolder = videosFolder, viewportHeight = viewportHeight, viewportWidth = viewportWidth, waitForAnimations = waitForAnimations)
   
     __obj.asInstanceOf[CypressConfiguration]
   }

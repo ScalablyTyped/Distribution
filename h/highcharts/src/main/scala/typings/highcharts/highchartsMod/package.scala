@@ -112,6 +112,10 @@ package object highchartsMod {
   ]
   type SeriesShowCallbackFunction = js.ThisFunction1[/* this */ Series, /* event */ Event, Unit]
   type TimeFormatCallbackFunction = js.Function1[/* timestamp */ Double, String]
+  type TimelineDataLabelsFormatterCallbackFunction = js.ThisFunction0[
+    /* this */ DataLabelsFormatterContextObject | TimelineDataLabelsFormatterContextObject, 
+    js.UndefOr[Double | String | Null]
+  ]
   type TooltipFormatterCallbackFunction = js.ThisFunction1[
     /* this */ TooltipFormatterContextObject, 
     /* tooltip */ Tooltip, 

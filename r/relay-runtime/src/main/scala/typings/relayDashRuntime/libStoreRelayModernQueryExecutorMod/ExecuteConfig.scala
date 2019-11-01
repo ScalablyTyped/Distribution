@@ -27,7 +27,7 @@ trait ExecuteConfig extends js.Object {
   var scheduler: js.UndefOr[TaskScheduler] = js.native
   var sink: Sink[GraphQLResponse] = js.native
   var source: RelayObservable[GraphQLResponse] = js.native
-  var updater: js.UndefOr[SelectorStoreUpdater] = js.native
+  var updater: js.UndefOr[SelectorStoreUpdater[js.Object]] = js.native
   def getDataID(fieldValue: StringDictionary[js.Any], typeName: String): js.Any = js.native
 }
 

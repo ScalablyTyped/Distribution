@@ -6,11 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait PlotFlagsTooltipOptions extends js.Object {
   /**
-    * (Highstock) A CSS class name to apply to the tooltip's container div,
-    * allowing unique CSS styling for each chart.
-    */
-  var className: js.UndefOr[String] = js.undefined
-  /**
     * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
     * format in the tooltip's header will by default be guessed based on the
     * closest data points. This member gives the default string representations
@@ -18,6 +13,9 @@ trait PlotFlagsTooltipOptions extends js.Object {
     * dateFormat.
     */
   var dateTimeLabelFormats: js.UndefOr[PlotFlagsTooltipDateTimeLabelFormatsOptions | Dictionary[String]] = js.undefined
+  /**
+    * (Highstock) Distance from point to tooltip in pixels.
+    */
   var distance: js.UndefOr[Double] = js.undefined
   /**
     * (Highstock) Whether the tooltip should follow the mouse as it moves
@@ -56,20 +54,6 @@ trait PlotFlagsTooltipOptions extends js.Object {
     */
   var headerFormat: js.UndefOr[String] = js.undefined
   /**
-    * (Highstock) The name of a symbol to use for the border around the tooltip
-    * header. Applies only when tooltip.split is enabled.
-    *
-    * Custom callbacks for symbol path generation can also be added to
-    * `Highcharts.SVGRenderer.prototype.symbols` the same way as for
-    * series.marker.symbol.
-    */
-  var headerShape: js.UndefOr[OptionsHeaderShapeValue] = js.undefined
-  /**
-    * (Highstock) The number of milliseconds to wait until the tooltip is
-    * hidden when mouse out from a point or chart.
-    */
-  var hideDelay: js.UndefOr[Double] = js.undefined
-  /**
     * (Highstock) The HTML of the null point's line in the tooltip. Works
     * analogously to pointFormat.
     */
@@ -79,22 +63,6 @@ trait PlotFlagsTooltipOptions extends js.Object {
     * visible null points. Works analogously to formatter.
     */
   var nullFormatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.undefined
-  /**
-    * (Highstock) Whether to allow the tooltip to render outside the chart's
-    * SVG element box. By default (`false`), the tooltip is rendered within the
-    * chart's SVG element, which results in the tooltip being aligned inside
-    * the chart area. For small charts, this may result in clipping or
-    * overlapping. When `true`, a separate SVG element is created and overlaid
-    * on the page, allowing the tooltip to be aligned inside the page itself.
-    *
-    * Defaults to `true` if `chart.scrollablePlotArea` is activated, otherwise
-    * `false`.
-    */
-  var outside: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highstock) Padding inside the tooltip, in pixels.
-    */
-  var padding: js.UndefOr[Double] = js.undefined
   /**
     * (Highstock) The HTML of the point's line in the tooltip. Variables are
     * enclosed by curly brackets. Available variables are point.x, point.y,
@@ -114,13 +82,6 @@ trait PlotFlagsTooltipOptions extends js.Object {
     */
   var pointFormatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.undefined
   /**
-    * (Highcharts, Highstock) Split the tooltip into one label per series, with
-    * the header close to the axis. This is recommended over shared tooltips
-    * for charts with multiple line series, generally making them easier to
-    * read. This option takes precedence over `tooltip.shared`.
-    */
-  var split: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts, Highstock, Gantt) The format for the date in the tooltip
     * header if the X axis is a datetime axis. The default is a best guess
     * based on the smallest distance between points in the chart.
@@ -131,41 +92,29 @@ trait PlotFlagsTooltipOptions extends js.Object {
 object PlotFlagsTooltipOptions {
   @scala.inline
   def apply(
-    className: String = null,
     dateTimeLabelFormats: PlotFlagsTooltipDateTimeLabelFormatsOptions | Dictionary[String] = null,
     distance: Int | Double = null,
     followPointer: js.UndefOr[Boolean] = js.undefined,
     followTouchMove: js.UndefOr[Boolean] = js.undefined,
     footerFormat: String = null,
     headerFormat: String = null,
-    headerShape: OptionsHeaderShapeValue = null,
-    hideDelay: Int | Double = null,
     nullFormat: String = null,
     nullFormatter: TooltipFormatterCallbackFunction = null,
-    outside: js.UndefOr[Boolean] = js.undefined,
-    padding: Int | Double = null,
     pointFormat: String = null,
     pointFormatter: FormatterCallbackFunction[Point] = null,
-    split: js.UndefOr[Boolean] = js.undefined,
     xDateFormat: String = null
   ): PlotFlagsTooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer)
     if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove)
     if (footerFormat != null) __obj.updateDynamic("footerFormat")(footerFormat)
     if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
-    if (headerShape != null) __obj.updateDynamic("headerShape")(headerShape)
-    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
     if (nullFormat != null) __obj.updateDynamic("nullFormat")(nullFormat)
     if (nullFormatter != null) __obj.updateDynamic("nullFormatter")(nullFormatter)
-    if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside)
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat)
     if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter)
-    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)
     if (xDateFormat != null) __obj.updateDynamic("xDateFormat")(xDateFormat)
     __obj.asInstanceOf[PlotFlagsTooltipOptions]
   }

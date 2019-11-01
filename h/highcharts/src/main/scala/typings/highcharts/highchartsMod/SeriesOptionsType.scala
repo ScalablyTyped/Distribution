@@ -87,7 +87,6 @@ import scala.scalajs.js.annotation._
   - typings.highcharts.highchartsMod.SeriesTemaOptions
   - typings.highcharts.highchartsMod.SeriesTilemapOptions
   - typings.highcharts.highchartsMod.SeriesTimelineOptions
-  - typings.highcharts.highchartsMod.SeriesTreemapOptions
   - typings.highcharts.highchartsMod.SeriesTrendlineOptions
   - typings.highcharts.highchartsMod.SeriesTrixOptions
   - typings.highcharts.highchartsMod.SeriesVariablepieOptions
@@ -98,7 +97,6 @@ import scala.scalajs.js.annotation._
   - typings.highcharts.highchartsMod.SeriesVwapOptions
   - typings.highcharts.highchartsMod.SeriesWaterfallOptions
   - typings.highcharts.highchartsMod.SeriesWilliamsrOptions
-  - typings.highcharts.highchartsMod.SeriesWindbarbOptions
   - typings.highcharts.highchartsMod.SeriesWmaOptions
   - typings.highcharts.highchartsMod.SeriesWordcloudOptions
   - typings.highcharts.highchartsMod.SeriesXrangeOptions

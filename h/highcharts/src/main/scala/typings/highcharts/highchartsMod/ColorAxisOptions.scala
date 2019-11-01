@@ -11,21 +11,6 @@ trait ColorAxisOptions extends js.Object {
     */
   var accessibility: js.UndefOr[js.Object | ColorAxisAccessibilityOptions] = js.undefined
   /**
-    * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
-    * or more opposite axes will automatically be aligned by adding ticks to
-    * the axis or axes with the least ticks, as if `tickAmount` were specified.
-    *
-    * This can be prevented by setting `alignTicks` to false. If the grid lines
-    * look messy, it's a good idea to hide them for the secondary axis by
-    * setting `gridLineWidth` to 0.
-    *
-    * If `startOnTick` or `endOnTick` in an Axis options are set to false, then
-    * the `alignTicks ` will be disabled for the Axis.
-    *
-    * Disabled for logarithmic axes.
-    */
-  var alignTicks: js.UndefOr[Boolean] = js.undefined
-  /**
     * (Highcharts, Highstock, Highmaps) Whether to allow decimals on the color
     * axis.
     */
@@ -272,12 +257,6 @@ trait ColorAxisOptions extends js.Object {
     */
   var overscroll: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts) Refers to the index in the panes array. Used for circular
-    * gauges and polar charts. When the option is not set then first pane will
-    * be used.
-    */
-  var pane: js.UndefOr[Double] = js.undefined
-  /**
     * (Highstock) The zoomed range to display when only defining one or none of
     * `min` or `max`. For example, to show the latest month, a range of one
     * month can be set.
@@ -290,13 +269,6 @@ trait ColorAxisOptions extends js.Object {
     * value starts on top.
     */
   var reversed: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts, Highstock) This option determines how stacks should be
-    * ordered within a group. For example reversed xAxis also reverses stacks,
-    * so first series comes last in a group. To keep order like for
-    * non-reversed xAxis enable this option.
-    */
-  var reversedStacks: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highstock) An optional scrollbar to display on the X axis in response to
     * limiting the minimum and maximum of the axis values.
@@ -449,19 +421,12 @@ trait ColorAxisOptions extends js.Object {
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /**
-    * (Highcharts, Highstock, Highmaps) Whether to zoom axis. If
-    * `chart.zoomType` is set, the option allows to disable zooming on an
-    * individual axis.
-    */
-  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 
 object ColorAxisOptions {
   @scala.inline
   def apply(
     accessibility: js.Object | ColorAxisAccessibilityOptions = null,
-    alignTicks: js.UndefOr[Boolean] = js.undefined,
     allowDecimals: js.UndefOr[Boolean] = js.undefined,
     ceiling: Int | Double = null,
     className: String = null,
@@ -500,10 +465,8 @@ object ColorAxisOptions {
     minorTicks: js.UndefOr[Boolean] = js.undefined,
     ordinal: js.UndefOr[Boolean] = js.undefined,
     overscroll: Int | Double = null,
-    pane: Int | Double = null,
     range: Int | Double = null,
     reversed: js.UndefOr[Boolean] = js.undefined,
-    reversedStacks: js.UndefOr[Boolean] = js.undefined,
     scrollbar: ColorAxisScrollbarOptions = null,
     showFirstLabel: js.UndefOr[Boolean] = js.undefined,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
@@ -526,12 +489,10 @@ object ColorAxisOptions {
     `type`: ColorAxisTypeValue = null,
     uniqueNames: js.UndefOr[Boolean] = js.undefined,
     units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zoomEnabled: js.UndefOr[Boolean] = js.undefined
+    visible: js.UndefOr[Boolean] = js.undefined
   ): ColorAxisOptions = {
     val __obj = js.Dynamic.literal()
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks)
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals)
     if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -570,10 +531,8 @@ object ColorAxisOptions {
     if (!js.isUndefined(minorTicks)) __obj.updateDynamic("minorTicks")(minorTicks)
     if (!js.isUndefined(ordinal)) __obj.updateDynamic("ordinal")(ordinal)
     if (overscroll != null) __obj.updateDynamic("overscroll")(overscroll.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
-    if (!js.isUndefined(reversedStacks)) __obj.updateDynamic("reversedStacks")(reversedStacks)
     if (scrollbar != null) __obj.updateDynamic("scrollbar")(scrollbar)
     if (!js.isUndefined(showFirstLabel)) __obj.updateDynamic("showFirstLabel")(showFirstLabel)
     if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend)
@@ -597,7 +556,6 @@ object ColorAxisOptions {
     if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames)
     if (units != null) __obj.updateDynamic("units")(units)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
-    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled)
     __obj.asInstanceOf[ColorAxisOptions]
   }
 }

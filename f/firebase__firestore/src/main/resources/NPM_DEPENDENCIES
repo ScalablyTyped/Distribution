@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/firestore" : "1.6.3"
+      "@firebase/firestore" : "1.6.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/firestore" : "1.6.3"
+      "@firebase/firestore" : "1.6.4"
     }
   ],
   "compile-devDependencies" : [

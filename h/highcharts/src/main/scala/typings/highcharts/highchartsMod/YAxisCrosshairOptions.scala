@@ -19,7 +19,7 @@ trait YAxisCrosshairOptions extends AxisCrosshairOptions {
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The dash style for the
-    * crosshair. See series.dashStyle for possible values.
+    * crosshair. See plotOptions.series.dashStyle for possible values.
     */
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**

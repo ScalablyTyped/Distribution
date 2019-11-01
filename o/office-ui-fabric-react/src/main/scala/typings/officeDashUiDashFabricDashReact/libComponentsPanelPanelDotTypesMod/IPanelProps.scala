@@ -176,7 +176,7 @@ trait IPanelProps extends HTMLAttributes[PanelBase] {
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
     * Type of the panel.
-    * @defaultvalue PanelType.smallFixedRight
+    * @defaultvalue PanelType.smallFixedFar
     */
   var `type`: js.UndefOr[PanelType] = js.undefined
 }

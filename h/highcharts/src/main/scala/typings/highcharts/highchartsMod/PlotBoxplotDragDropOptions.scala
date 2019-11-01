@@ -44,23 +44,19 @@ trait PlotBoxplotDragDropOptions extends js.Object {
     */
   var dragSensitivity: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts) Allow high value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highcharts) Allow high value to be dragged individually.
     */
   var draggableHigh: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) Allow low value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highcharts) Allow low value to be dragged individually.
     */
   var draggableLow: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) Allow Q1 value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highcharts) Allow Q1 value to be dragged individually.
     */
   var draggableQ1: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) Allow Q3 value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highcharts) Allow Q3 value to be dragged individually.
     */
   var draggableQ3: js.UndefOr[Boolean] = js.undefined
   /**

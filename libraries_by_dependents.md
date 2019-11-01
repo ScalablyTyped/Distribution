@@ -2469,7 +2469,6 @@
 | 51 | [openid-client](./o/openid-client) | OpenID Connect Relying Party (RP, Client) implemen
 | 51 | [p-map-series](./p/p-map-series) | Map over promises serially
 | 51 | [react-autocomplete](./r/react-autocomplete) | Accessible, extensible, Autocomplete for React.js
-| 51 | [react-container-query](./r/react-container-query) | Container Query for React Component
 | 51 | [react-data-grid](./r/react-data-grid) | Excel-like grid component built with React, with e
 | 51 | [s3-upload-stream](./s/s3-upload-stream) | Writeable stream for uploading content of unknown 
 | 51 | [semver-diff](./s/semver-diff) | Get the diff type of two semver versions: 0.0.1 0.
@@ -5288,7 +5287,6 @@
 | 4 | [camaro](./c/camaro) | Transforming XML to JSON using Node.js binding to 
 | 4 | [catalog](./c/catalog) | Create living style guides using Markdown or React
 | 4 | [concaveman](./c/concaveman) | Fast 2D concave hull algorithm in JavaScript (gene
-| 4 | [container-query-toolkit](./c/container-query-toolkit) | Basic utilities to work with container query.
 | 4 | [cordova-plugin-ble-centra](./c/cordova-plugin-ble-central) | Bluetooth Low Energy (BLE) Central Plugin
 | 4 | [cordova-plugin-vibration](./c/cordova-plugin-vibration) | Cordova Vibration Plugin
 | 4 | [createjs](./c/createjs) | A suite of modular libraries and tools which work 
@@ -5419,7 +5417,6 @@
 | 4 | [react-frontload](./r/react-frontload) | Bind Async Data Dependencies to React Components
 | 4 | [react-image-magnify](./r/react-image-magnify) | A responsive image zoom component designed for sho
 | 4 | [react-input-calendar](./r/react-input-calendar) | Datepicker widget react component
-| 4 | [react-media-hook2](./r/react-media-hook2) | -
 | 4 | [react-native-multi-slider](./r/react-native-multi-slider) | Pure JS slider component with multiple markers for
 | 4 | [react-native-restart](./r/react-native-restart) | React Native Restart Component
 | 4 | [react-native-signature-ca](./r/react-native-signature-capture) | Lets users sign their signatures
@@ -5710,7 +5707,6 @@
 | 3 | [redis-errors](./r/redis-errors) | Error classes used in node_redis
 | 3 | [redux-saga__core](./r/redux-saga__core) | Saga middleware for Redux to handle Side Effects
 | 3 | [ref-struct-di](./r/ref-struct-di) | Create ABI-compliant "struct" instances on top of 
-| 3 | [resize-observer-lite](./r/resize-observer-lite) | A ResizeObserver polyfill that has limited functio
 | 3 | [resolve-options](./r/resolve-options) | Resolve an options object based on configuration.
 | 3 | [resourcejs](./r/resourcejs) | A simple Express library to reflect Mongoose model
 | 3 | [revalidate](./r/revalidate) | Elegant and composable validations

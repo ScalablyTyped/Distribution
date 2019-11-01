@@ -1120,7 +1120,6 @@
 | [constant-case](./c/constant-case) | Constant case a string | constant, case, upper |
 | [constantinople](./c/constantinople) | Determine whether a JavaScript expression evaluate | constant, ast, tooling |
 | [consul](./c/consul) | Consul client | consul |
-| [container-query-toolkit](./c/container-query-toolkit) | Basic utilities to work with container query. | - |
 | [contains-path](./c/contains-path) | Return true if a file path contains the given path | contains, directory, dirname, exec, ext, extname, file, filepath, fp, has, match, matches, path, regex, test |
 | [content-disposition](./c/content-disposition) | Create and parse Content-Disposition header | content-disposition, http, rfc6266, res |
 | [content-range](./c/content-range) | Content-range header formatter. | content-range, header, formatter, parser |
@@ -5677,7 +5676,6 @@
 | [react-collapsible](./r/react-collapsible) | React component to wrap content in Collapsible ele | react-component, react, collapse, collapsible, accordion |
 | [react-color](./r/react-color) | A Collection of Color Pickers from Sketch, Photosh | react, color picker, react-component, colorpicker, picker, sketch, chrome, photoshop, material design, popup |
 | [react-confirm](./r/react-confirm) | Small library which makes your Dialog component ca | react, reactjs, confirm |
-| [react-container-query](./r/react-container-query) | Container Query for React Component | reactjs, react, react-component, container-query, element-query, responsive |
 | [react-content-loader](./r/react-content-loader) | SVG component to create placeholder loading, like  | react, facebook-style, loader, loading, content, svg |
 | [react-copy-to-clipboard](./r/react-copy-to-clipboard) | Copy-to-clipboard React component | component, react-component, react, copy to clipboard, clipboard |
 | [react-copy-write](./r/react-copy-write) |  react-copy-write | - |
@@ -5843,7 +5841,6 @@
 | [react-mdl](./r/react-mdl) | React Components for Material Design Lite | react, react-component, mdl, material-design, badge, button, card, checkbox, data-table, fab-button, icon, icon-button, icon-toggle, radio, radio-group, switch, textfield, progress, progress-bar, spinner, slider, tooltip, menu, dropdown, Layout, Drawer, Grid, Tabs |
 | [react-measure](./r/react-measure) | Compute measurements of React components. | react, component, measure, measurements, dimensions, element-queries, container-queries, size |
 | [react-media](./r/react-media) | CSS media queries for React | react, media, media query, query, css, responsive |
-| [react-media-hook2](./r/react-media-hook2) | - | react, hook, hooks, media, use |
 | [react-medium-image-zoom](./r/react-medium-image-zoom) | Medium.com style image zoom for React | react, react-component, medium, zoom, modal |
 | [react-mentions](./r/react-mentions) | React mentions input | react, mentions, react-component |
 | [react-mixin](./r/react-mixin) | - | react, mixin, es6, class, smart-mixin |
@@ -6313,7 +6310,6 @@
 | [reservoir](./r/reservoir) | Fast random sampling using reservoir sampling | reservoir, sampling, iterator |
 | [resize-img](./r/resize-img) | Resize images in memory | bmp, fast, image, jpeg, jpg, memory, png, resize |
 | [resize-observer-browser](./r/resize-observer-browser) | - | - |
-| [resize-observer-lite](./r/resize-observer-lite) | A ResizeObserver polyfill that has limited functio | - |
 | [resize-observer-polyfill](./r/resize-observer-polyfill) | A polyfill for the Resize Observer API | ResizeObserver, resize, observer, util, client, browser, polyfill, ponyfill |
 | [resolve](./r/resolve) | resolve like require.resolve() on behalf of files  | resolve, require, node, module |
 | [resolve-cwd](./r/resolve-cwd) | Resolve the path of a module like require.resolve( | require, resolve, path, module, from, like, cwd, current, working, directory, import |

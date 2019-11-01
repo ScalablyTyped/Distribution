@@ -15,10 +15,10 @@ class Annotation protected () extends js.Object {
     * @param chart
     *        a chart instance
     *
-    * @param options
+    * @param userOptions
     *        the options object
     */
-  def this(chart: Chart, options: AnnotationsOptions) = this()
+  def this(chart: Chart, userOptions: AnnotationsOptions) = this()
   /**
     * The chart that the annotation belongs to.
     */

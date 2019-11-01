@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.highchartsMod.SeriesOptions because var conflicts: name, zIndex. Inlined id, index, legendIndex, mapData, stack, `type`, xAxis, yAxis */ trait SeriesCciOptions
+- typings.highcharts.highchartsMod.SeriesOptions because var conflicts: name, zIndex. Inlined id, index, legendIndex, mapData, stack, treemap, `type`, xAxis, yAxis */ trait SeriesCciOptions
   extends PlotCciOptions
      with SeriesOptionsType {
   /**
@@ -49,6 +49,7 @@ import scala.scalajs.js.annotation._
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
+  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -139,6 +140,7 @@ object SeriesCciOptions {
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     threshold: Int | Double = null,
     tooltip: PlotCciTooltipOptions = null,
+    treemap: SeriesTreemapOptions = null,
     turboThreshold: Int | Double = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
@@ -213,6 +215,7 @@ object SeriesCciOptions {
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking)
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (treemap != null) __obj.updateDynamic("treemap")(treemap)
     if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

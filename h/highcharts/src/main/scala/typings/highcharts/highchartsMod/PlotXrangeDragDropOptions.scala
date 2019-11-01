@@ -53,12 +53,10 @@ trait PlotXrangeDragDropOptions extends js.Object {
   var draggableX: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Allow x value to be dragged individually.
-    * Requires `draggable-points` module.
     */
   var draggableX1: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Allow x2 value to be dragged individually.
-    * Requires `draggable-points` module.
     */
   var draggableX2: js.UndefOr[Boolean] = js.undefined
   /**

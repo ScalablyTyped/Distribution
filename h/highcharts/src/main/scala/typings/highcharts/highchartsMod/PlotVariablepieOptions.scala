@@ -198,14 +198,12 @@ trait PlotVariablepieOptions extends js.Object {
     */
   var dataLabels: js.UndefOr[SeriesPieDataLabelsOptionsObject] = js.undefined
   /**
-    * (Highcharts) The thickness of a 3D pie. Requires `highcharts-3d.js`
+    * (Highcharts) The thickness of a 3D pie.
     */
   var depth: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts) Requires the Accessibility module.
-    *
-    * A description of the series to add to the screen reader information about
-    * the series.
+    * (Highcharts) A description of the series to add to the screen reader
+    * information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -268,8 +266,8 @@ trait PlotVariablepieOptions extends js.Object {
     */
   var ignoreHiddenPoint: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) Export-data module required. When set to `false` will
-    * prevent the series data from being included in any form of data export.
+    * (Highcharts) When set to `false` will prevent the series data from being
+    * included in any form of data export.
     *
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.

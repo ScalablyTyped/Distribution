@@ -21,7 +21,6 @@ trait OptionsLayout extends js.Object {
     * only works with DefaultOptions
     */
   var direction: js.UndefOr[rtl | ltr] = js.undefined
-  var fitSystemWindows: js.UndefOr[Boolean] = js.undefined
   /**
     * Set the allowed orientations
     */
@@ -39,7 +38,6 @@ object OptionsLayout {
     backgroundColor: Color = null,
     componentBackgroundColor: Color = null,
     direction: rtl | ltr = null,
-    fitSystemWindows: js.UndefOr[Boolean] = js.undefined,
     orientation: js.Array[LayoutOrientation] = null,
     topMargin: Int | Double = null
   ): OptionsLayout = {
@@ -47,7 +45,6 @@ object OptionsLayout {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (componentBackgroundColor != null) __obj.updateDynamic("componentBackgroundColor")(componentBackgroundColor)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitSystemWindows)) __obj.updateDynamic("fitSystemWindows")(fitSystemWindows)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsLayout]

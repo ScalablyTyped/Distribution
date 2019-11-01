@@ -32,14 +32,12 @@ trait SeriesTilemapDataOptions extends js.Object {
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highmaps) A description of the point to add to the screen
-    * reader information about the point. Requires the Accessibility module.
+    * reader information about the point.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highmaps) Point specific options for the draggable-points
     * module. Overrides options on `series.dragDrop`.
-    *
-    * Requires the `draggable-points` module.
     */
   var dragDrop: js.UndefOr[SeriesTilemapDataDragDropOptions] = js.undefined
   /**

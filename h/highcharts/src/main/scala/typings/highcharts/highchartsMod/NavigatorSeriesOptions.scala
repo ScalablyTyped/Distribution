@@ -23,7 +23,7 @@ trait NavigatorSeriesOptions extends js.Object {
     * (Highstock, Gantt) Data label options for the navigator series. Data
     * labels are disabled by default on the navigator series.
     */
-  var dataLabels: js.UndefOr[js.Any] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
   /**
     * (Highstock, Gantt) The fill opacity of the navigator series.
     */
@@ -39,7 +39,13 @@ trait NavigatorSeriesOptions extends js.Object {
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
   var marker: js.UndefOr[NavigatorSeriesMarkerOptions] = js.undefined
-  var pointRange: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highstock) Since Highstock v8, default value is the same as default
+    * `pointRange` defined for a specific type (e.g. `null` for column type).
+    *
+    * In Highstock version < 8, defaults to 0.
+    */
+  var pointRange: js.UndefOr[Double | Null] = js.undefined
   /**
     * (Highstock, Gantt) The threshold option. Setting it to 0 will make the
     * default navigator area series draw its area from the 0 value and up.
@@ -48,6 +54,9 @@ trait NavigatorSeriesOptions extends js.Object {
   /**
     * (Highstock, Gantt) The type of the navigator series. Defaults to
     * `areaspline` if defined, otherwise `line`.
+    *
+    * Heads up: In column-type navigator, zooming is limited to at least one
+    * point with its `pointRange`.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -59,7 +68,7 @@ object NavigatorSeriesOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     data: js.Array[Double | (js.Array[Double | String | Null]) | js.Object | Null] = null,
     dataGrouping: NavigatorSeriesDataGroupingOptions = null,
-    dataLabels: js.Any = null,
+    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
     fillOpacity: Int | Double = null,
     id: String = null,
     lineColor: ColorString = null,
@@ -74,7 +83,7 @@ object NavigatorSeriesOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)

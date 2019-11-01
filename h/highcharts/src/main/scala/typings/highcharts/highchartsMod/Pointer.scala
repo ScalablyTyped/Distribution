@@ -44,6 +44,14 @@ class Pointer protected () extends js.Object {
     */
   def findNearestKDPoints(series: js.Array[Series], shared: Boolean, e: PointerEventObject): js.UndefOr[Point] = js.native
   /**
+    * Return the cached chartPosition if it is available on the Pointer,
+    * otherwise find it. Running offset is quite expensive, so it should be
+    * avoided when we know the chart hasn't moved.
+    *
+    * @return The offset of the chart container within the page
+    */
+  def getChartPosition(): OffsetObject = js.native
+  /**
     * Get the click position in terms of axis values.
     *
     * @param e

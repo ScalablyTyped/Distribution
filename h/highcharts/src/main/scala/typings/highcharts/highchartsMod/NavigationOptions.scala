@@ -51,7 +51,7 @@ trait NavigationOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Path where Highcharts will look
     * for icons. Change this to use icons from a different server.
     */
-  var iconsURL: js.UndefOr[js.Any] = js.undefined
+  var iconsURL: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the hover state
     * of the individual items within the popup menu appearing by default when
@@ -81,7 +81,7 @@ object NavigationOptions {
     bindingsClassName: String = null,
     buttonOptions: NavigationButtonOptions = null,
     events: NavigationEventsOptions = null,
-    iconsURL: js.Any = null,
+    iconsURL: String = null,
     menuItemHoverStyle: CSSObject = null,
     menuItemStyle: CSSObject = null,
     menuStyle: CSSObject = null

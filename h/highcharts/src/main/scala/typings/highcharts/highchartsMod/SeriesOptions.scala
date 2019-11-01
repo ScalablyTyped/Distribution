@@ -40,6 +40,7 @@ trait SeriesOptions extends js.Object {
     * string.
     */
   var stack: js.UndefOr[Double | String] = js.undefined
+  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The type of series, for example
     * `line` or `column`. By default, the series type is inherited from
@@ -77,6 +78,7 @@ object SeriesOptions {
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
     name: String = null,
     stack: Double | String = null,
+    treemap: SeriesTreemapOptions = null,
     xAxis: Double | String = null,
     yAxis: Double | String = null,
     zIndex: Int | Double = null
@@ -89,6 +91,7 @@ object SeriesOptions {
     if (mapData != null) __obj.updateDynamic("mapData")(mapData.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (treemap != null) __obj.updateDynamic("treemap")(treemap)
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

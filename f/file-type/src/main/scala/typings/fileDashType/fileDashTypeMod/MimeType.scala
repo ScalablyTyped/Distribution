@@ -78,6 +78,7 @@ import scala.scalajs.js.annotation._
   - typings.fileDashType.fileDashTypeStrings.`application/x-lzip`
   - typings.fileDashType.fileDashTypeStrings.`application/x-msi`
   - typings.fileDashType.fileDashTypeStrings.`application/x-mie`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-apache-arrow`
   - typings.fileDashType.fileDashTypeStrings.`application/mxf`
   - typings.fileDashType.fileDashTypeStrings.`video/mp2t`
   - typings.fileDashType.fileDashTypeStrings.`application/x-blender`
@@ -114,6 +115,7 @@ import scala.scalajs.js.annotation._
   - typings.fileDashType.fileDashTypeStrings.`image/x-fujifilm-raf`
   - typings.fileDashType.fileDashTypeStrings.`video/x-m4v`
   - typings.fileDashType.fileDashTypeStrings.`video/3gpp2`
+  - typings.fileDashType.fileDashTypeStrings.`application/x-esri-shape`
 */
 trait MimeType extends js.Object
 

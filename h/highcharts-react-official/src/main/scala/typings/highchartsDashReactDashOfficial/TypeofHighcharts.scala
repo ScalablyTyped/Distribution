@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
 trait TypeofHighcharts extends js.Object {
   var Annotation: Instantiable2[
     /* chart */ Chart, 
-    /* options */ AnnotationsOptions, 
+    /* userOptions */ AnnotationsOptions, 
     typings.highcharts.highchartsMod.Annotation
   ] = js.native
   var Axis: Instantiable2[/* chart */ Chart, /* options */ AxisOptions, typings.highcharts.highchartsMod.Axis] = js.native
@@ -71,6 +71,7 @@ trait TypeofHighcharts extends js.Object {
     typings.highcharts.highchartsMod.SVGRenderer
   ] = js.native
   var Series: Instantiable2[/* chart */ Chart, /* options */ js.Object, typings.highcharts.highchartsMod.Series] = js.native
+  var Tick: Instantiable2[/* axis */ Axis, /* pos */ Double, typings.highcharts.highchartsMod.Tick] = js.native
   var Time: Instantiable1[/* options */ TimeOptions, typings.highcharts.highchartsMod.Time] = js.native
   var Tooltip: Instantiable2[
     /* chart */ Chart, 
@@ -151,9 +152,11 @@ trait TypeofHighcharts extends js.Object {
   def error(code: String): Unit = js.native
   def error(code: String, stop: Boolean): Unit = js.native
   def error(code: String, stop: Boolean, chart: Chart): Unit = js.native
+  def error(code: String, stop: Boolean, chart: Chart, params: Dictionary[String]): Unit = js.native
   def error(code: Double): Unit = js.native
   def error(code: Double, stop: Boolean): Unit = js.native
   def error(code: Double, stop: Boolean, chart: Chart): Unit = js.native
+  def error(code: Double, stop: Boolean, chart: Chart, params: Dictionary[String]): Unit = js.native
   def extend[T](a: T, b: js.Object): T = js.native
   def extend[T](a: js.UndefOr[scala.Nothing], b: js.Object): T = js.native
   def extendClass[T](parent: Class[T], members: Dictionary[_]): Class[T] = js.native
@@ -247,9 +250,8 @@ trait TypeofHighcharts extends js.Object {
   def stableSort(arr: js.Array[_], sortFunction: js.Function): Unit = js.native
   def stop(el: SVGElement): Unit = js.native
   def stop(el: SVGElement, prop: String): Unit = js.native
-  def syncTimeout(fn: js.Function): js.UndefOr[Double] = js.native
-  def syncTimeout(fn: js.Function, delay: Double): js.UndefOr[Double] = js.native
-  def syncTimeout(fn: js.Function, delay: Double, context: js.Any): js.UndefOr[Double] = js.native
+  def syncTimeout(fn: js.Function, delay: Double): Double = js.native
+  def syncTimeout(fn: js.Function, delay: Double, context: js.Any): Double = js.native
   def uniqueKey(): String = js.native
   def wrap(obj: js.Any, method: String, func: WrapProceedFunction): Unit = js.native
 }

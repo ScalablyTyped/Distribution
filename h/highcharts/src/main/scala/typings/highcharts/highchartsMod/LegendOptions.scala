@@ -52,7 +52,7 @@ trait LegendOptions extends js.Object {
     * element in legend which presents the scale of the bubble series.
     * Individual bubble ranges can be defined by user or calculated from
     * series. In the case of automatically calculated ranges, a 1px margin of
-    * error is permitted. Requires `highcharts-more.js`.
+    * error is permitted.
     */
   var bubbleLegend: js.UndefOr[LegendBubbleLegendOptions] = js.undefined
   /**

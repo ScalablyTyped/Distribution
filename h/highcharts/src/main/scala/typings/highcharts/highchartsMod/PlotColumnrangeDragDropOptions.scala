@@ -49,12 +49,10 @@ trait PlotColumnrangeDragDropOptions extends js.Object {
   var dragSensitivity: js.UndefOr[Double] = js.undefined
   /**
     * (Highcharts, Highstock) Allow high value to be dragged individually.
-    * Requires `draggable-points` module.
     */
   var draggableHigh: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highcharts, Highstock) Allow low value to be dragged individually.
-    * Requires `draggable-points` module.
     */
   var draggableLow: js.UndefOr[Boolean] = js.undefined
   /**

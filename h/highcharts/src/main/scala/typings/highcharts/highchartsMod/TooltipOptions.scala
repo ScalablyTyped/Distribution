@@ -57,6 +57,11 @@ trait TooltipOptions extends js.Object {
     */
   var dateTimeLabelFormats: js.UndefOr[TooltipDateTimeLabelFormatsOptions | Dictionary[String]] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Distance from point to tooltip
+    * in pixels.
+    */
+  var distance: js.UndefOr[Double] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the tooltip.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
@@ -299,6 +304,7 @@ object TooltipOptions {
     changeDecimals: Int | Double = null,
     className: String = null,
     dateTimeLabelFormats: TooltipDateTimeLabelFormatsOptions | Dictionary[String] = null,
+    distance: Int | Double = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     followPointer: js.UndefOr[Boolean] = js.undefined,
     followTouchMove: js.UndefOr[Boolean] = js.undefined,
@@ -335,6 +341,7 @@ object TooltipOptions {
     if (changeDecimals != null) __obj.updateDynamic("changeDecimals")(changeDecimals.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer)
     if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove)

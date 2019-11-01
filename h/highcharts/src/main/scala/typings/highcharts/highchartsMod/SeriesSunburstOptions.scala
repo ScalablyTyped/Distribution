@@ -6,22 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.highcharts.highchartsMod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesSunburstOptions
+- typings.highcharts.highchartsMod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, treemap, `type`, xAxis, yAxis */ trait SeriesSunburstOptions
   extends PlotSunburstOptions
      with SeriesOptionsType {
-  /**
-    * (Highcharts) An array of data points for the series. For the `treemap`
-    * series type, points can be given in the following ways:
-    *
-    * 1. An array of numerical values. In this case, the numerical values will
-    * be interpreted as `value` options. Example: (see online documentation for
-    * example)
-    *
-    * 2. An array of objects with named values. The following snippet shows
-    * only a few settings, see the complete options set below. If the total
-    * number of data points exceeds the series' turboThreshold, this option is
-    * not available. (see online documentation for example)
-    */
   var data: js.UndefOr[js.Array[Double | Null | SeriesSunburstDataOptions]] = js.undefined
   /**
     * Not available
@@ -63,6 +50,7 @@ import scala.scalajs.js.annotation._
     * Not available
     */
   var stack: js.UndefOr[Double | String] = js.undefined
+  var treemap: js.UndefOr[SeriesTreemapOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
@@ -144,6 +132,7 @@ object SeriesSunburstOptions {
     stickyTracking: js.UndefOr[Boolean] = js.undefined,
     tooltip: PlotSunburstTooltipOptions = null,
     traverseUpButton: PlotSunburstTraverseUpButtonOptions = null,
+    treemap: SeriesTreemapOptions = null,
     useOhlcData: js.UndefOr[Boolean] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     xAxis: Double | String = null,
@@ -207,6 +196,7 @@ object SeriesSunburstOptions {
     if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     if (traverseUpButton != null) __obj.updateDynamic("traverseUpButton")(traverseUpButton)
+    if (treemap != null) __obj.updateDynamic("treemap")(treemap)
     if (!js.isUndefined(useOhlcData)) __obj.updateDynamic("useOhlcData")(useOhlcData)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

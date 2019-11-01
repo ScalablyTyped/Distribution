@@ -12,6 +12,10 @@ trait PatternOptionsObject extends js.Object {
     */
   var aspectRatio: Double
   /**
+    * Background color for the pattern if a `path` is set (not images).
+    */
+  var backgroundColor: ColorString
+  /**
     * Pattern color, used as default path stroke.
     */
   var color: ColorString
@@ -62,6 +66,7 @@ object PatternOptionsObject {
   @scala.inline
   def apply(
     aspectRatio: Double,
+    backgroundColor: ColorString,
     color: ColorString,
     height: Double,
     id: String,
@@ -72,7 +77,7 @@ object PatternOptionsObject {
     x: Int | Double = null,
     y: Int | Double = null
   ): PatternOptionsObject = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, color = color, height = height, id = id, image = image, opacity = opacity, path = path.asInstanceOf[js.Any], width = width)
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, backgroundColor = backgroundColor, color = color, height = height, id = id, image = image, opacity = opacity, path = path.asInstanceOf[js.Any], width = width)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternOptionsObject]

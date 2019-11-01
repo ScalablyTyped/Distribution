@@ -409,7 +409,7 @@ trait NavigatorYAxisOptions extends js.Object {
     * For solid gauges, the Y axis also inherits the concept of data classes
     * from the Highmaps color axis.
     */
-  var stops: js.UndefOr[js.Array[js.Tuple2[Double, ColorString]]] = js.undefined
+  var stops: js.UndefOr[js.Array[GradientColorStopObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) The amount of ticks to draw on the axis.
     * This opens up for aligning the ticks of multiple charts or panes within a
@@ -601,7 +601,7 @@ object NavigatorYAxisOptions {
     startOfWeek: Int | Double = null,
     startOnTick: js.UndefOr[Boolean] = js.undefined,
     staticScale: Int | Double = null,
-    stops: js.Array[js.Tuple2[Double, ColorString]] = null,
+    stops: js.Array[GradientColorStopObject] = null,
     tickAmount: Int | Double = null,
     tickColor: ColorString | GradientColorObject | PatternObject = null,
     tickInterval: Int | Double = null,

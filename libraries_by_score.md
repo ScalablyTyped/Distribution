@@ -3307,7 +3307,6 @@
 | 0.6671370272279166 | [purl](./p/purl) | A minuscule library to parse URLs
 | 0.6671182003010283 | [graphql-depth-limit](./g/graphql-depth-limit) | Limit the complexity of your GraphQL queries based
 | 0.6670766089512127 | [jquery-easy-loading](./j/jquery-easy-loading) | Easily add and manipulate loading states of any el
-| 0.6670363751541988 | [react-media-hook2](./r/react-media-hook2) | -
 | 0.6670152380249497 | [react-window-infinite-loa](./r/react-window-infinite-loader) | InfiniteLoader component inspired by react-virtual
 | 0.6669998890970079 | [standard-error](./s/standard-error) | Tiny library that simplifies subclassing and inher
 | 0.6668979514298998 | [jquery-focusable](./j/jquery-focusable) | Gets all focusable descendant elements for the fir
@@ -5331,7 +5330,6 @@
 | 0.4659385283697234 | [prosemirror-menu](./p/prosemirror-menu) | Simple menu elements for ProseMirror
 | 0.4657834860234863 | [semver-sort](./s/semver-sort) | Sort array of semver string even which is exist in
 | 0.4657293436057488 | [vanilla-masker](./v/vanilla-masker) | VanillaMasker is a pure javascript input mask.
-| 0.4656739254100659 | [react-container-query](./r/react-container-query) | Container Query for React Component
 | 0.46547981668732563 | [dygraphs](./d/dygraphs) | dygraphs is a fast, flexible open source JavaScrip
 | 0.46522444469638113 | [colorbrewer](./c/colorbrewer) | A shim module of colorbrewer2 by Cythina Brewer fo
 | 0.46517011150689114 | [collectionsjs](./c/collectionsjs) | A Collection class for working with JavaScript arr
@@ -6454,7 +6452,6 @@
 | 0.32560064610066997 | [semantic-ui-search](./s/semantic-ui-search) | Single component release of search
 | 0.325554328365 | [koa2-session-redis](./k/koa2-session-redis) | A simple redis store of koa-session
 | 0.3254547377409477 | [lifeomic__axios-fetch](./l/lifeomic__axios-fetch) | A WebAPI Fetch implementation backed by an Axios c
-| 0.3252954807633398 | [container-query-toolkit](./c/container-query-toolkit) | Basic utilities to work with container query.
 | 0.3250367870077711 | [gettext_dot_js](./g/gettext_dot_js) | gettext.js is a lightweight (3k minified
 | 0.3249112555341388 | [recompose](./r/recompose) | A React utility belt for function components and h
 | 0.3248545202876425 | [switchery](./s/switchery) | Browserify version of Switchery
@@ -7113,7 +7110,6 @@
 | 0.20998938740061798 | [react-file-input](./r/react-file-input) | Simple file input component for React
 | 0.2098809235816862 | [aws-sdk__util-base64-univ](./a/aws-sdk__util-base64-universal) | A cross-platform Base64  UInt8Array converter
 | 0.20967319974710624 | [wordpress__a11y](./w/wordpress__a11y) | Accessibility (a11y) utilities for WordPress.
-| 0.20960724643597625 | [resize-observer-lite](./r/resize-observer-lite) | A ResizeObserver polyfill that has limited functio
 | 0.20940494901711554 | [expo-keep-awake](./e/expo-keep-awake) | Provides a React component that prevents the scree
 | 0.20923552086478237 | [lodash_dot_noop](./l/lodash_dot_noop) | The lodash method _.noop exported as a module.
 | 0.20911796049660814 | [steam-login](./s/steam-login) | Simple Connect / Express Steam authentication libr

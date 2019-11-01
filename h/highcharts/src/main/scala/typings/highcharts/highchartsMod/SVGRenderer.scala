@@ -197,6 +197,10 @@ class SVGRenderer protected () extends js.Object {
     *
     * @return A clipping rectangle.
     */
+  def clipRect(): ClipRectElement = js.native
+  def clipRect(x: Double): ClipRectElement = js.native
+  def clipRect(x: Double, y: Double): ClipRectElement = js.native
+  def clipRect(x: Double, y: Double, width: Double): ClipRectElement = js.native
   def clipRect(x: Double, y: Double, width: Double, height: Double): ClipRectElement = js.native
   /**
     * Create a wrapper for an SVG element. Serves as a factory for SVGElement,
@@ -548,6 +552,9 @@ class SVGRenderer protected () extends js.Object {
     *
     * @return The text object.
     */
+  def text(): SVGElement = js.native
+  def text(str: String): SVGElement = js.native
+  def text(str: String, x: Double): SVGElement = js.native
   def text(str: String, x: Double, y: Double): SVGElement = js.native
   def text(str: String, x: Double, y: Double, useHTML: Boolean): SVGElement = js.native
 }

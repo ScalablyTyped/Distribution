@@ -211,8 +211,6 @@ trait YAxisOptions extends AxisOptions {
   /**
     * (Highstock) Maximal size of a resizable axis. Could be set as a percent
     * of plot area or pixel size.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var maxLength: js.UndefOr[Double | String] = js.undefined
   /**
@@ -253,8 +251,6 @@ trait YAxisOptions extends AxisOptions {
   /**
     * (Highstock) Minimal size of a resizable axis. Could be set as a percent
     * of plot area or pixel size.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var minLength: js.UndefOr[Double | String] = js.undefined
   /**
@@ -401,9 +397,8 @@ trait YAxisOptions extends AxisOptions {
     */
   var range: js.UndefOr[Double] = js.undefined
   /**
-    * (Highstock) Options for axis resizing. This feature requires the
-    * drag-panes.js module. It adds a thick line between panes which the user
-    * can drag in order to resize the panes.
+    * (Highstock) Options for axis resizing. It adds a thick line between panes
+    * which the user can drag in order to resize the panes.
     */
   var resize: js.UndefOr[YAxisResizeOptions] = js.undefined
   /**
@@ -499,7 +494,7 @@ trait YAxisOptions extends AxisOptions {
     * For solid gauges, the Y axis also inherits the concept of data classes
     * from the Highmaps color axis.
     */
-  var stops: js.UndefOr[js.Array[js.Tuple2[Double, ColorString]]] = js.undefined
+  var stops: js.UndefOr[js.Array[GradientColorStopObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) The amount of ticks to draw on the axis.
     * This opens up for aligning the ticks of multiple charts or panes within a
@@ -721,7 +716,7 @@ object YAxisOptions {
     startOfWeek: Int | Double = null,
     startOnTick: js.UndefOr[Boolean] = js.undefined,
     staticScale: Int | Double = null,
-    stops: js.Array[js.Tuple2[Double, ColorString]] = null,
+    stops: js.Array[GradientColorStopObject] = null,
     tickAmount: Int | Double = null,
     tickColor: ColorString | GradientColorObject | PatternObject = null,
     tickInterval: Int | Double = null,

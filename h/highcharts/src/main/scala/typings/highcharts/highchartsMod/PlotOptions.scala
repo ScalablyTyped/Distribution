@@ -95,7 +95,7 @@ trait PlotOptions extends js.Object {
   /**
     * (Highcharts, Highstock) The area range series is a carteseian series with
     * higher and lower values for each point along an X axis, where the area
-    * between the values is shaded. Requires `highcharts-more.js`.
+    * between the values is shaded.
     *
     * In TypeScript the type option must always be set.
     *
@@ -133,7 +133,6 @@ trait PlotOptions extends js.Object {
     * (Highcharts, Highstock) The area spline range is a cartesian series type
     * with higher and lower Y values along an X axis. The area inside the range
     * is colored, and the graph outlining the area is a smoothed spline.
-    * Requires `highcharts-more.js`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -280,8 +279,7 @@ trait PlotOptions extends js.Object {
     * (Highcharts, Highstock) A bubble series is a three dimensional series
     * type where each point renders an X, Y and Z value. Each points is drawn
     * as a bubble where the position along the X and Y axes mark the X and Y
-    * values, and the size of the bubble relates to the Z value. Requires
-    * `highcharts-more.js`.
+    * values, and the size of the bubble relates to the Z value.
     *
     * In TypeScript the type option must always be set.
     *
@@ -403,8 +401,8 @@ trait PlotOptions extends js.Object {
   var column: js.UndefOr[PlotColumnOptions] = js.undefined
   /**
     * (Highcharts, Highstock) Column pyramid series display one pyramid per
-    * value along an X axis. Requires `highcharts-more.js`. To display
-    * horizontal pyramids, set chart.inverted to `true`.
+    * value along an X axis. To display horizontal pyramids, set chart.inverted
+    * to `true`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -422,8 +420,8 @@ trait PlotOptions extends js.Object {
   var columnpyramid: js.UndefOr[PlotColumnpyramidOptions] = js.undefined
   /**
     * (Highcharts, Highstock) The column range is a cartesian series type with
-    * higher and lower Y values along an X axis. Requires `highcharts-more.js`.
-    * To display horizontal bars, set chart.inverted to `true`.
+    * higher and lower Y values along an X axis. To display horizontal bars,
+    * set chart.inverted to `true`.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1022,7 +1020,7 @@ trait PlotOptions extends js.Object {
     * (Highcharts) A packed bubble series is a two dimensional series type,
     * where each point renders a value in X, Y position. Each point is drawn as
     * a bubble where the bubbles don't overlap with each other and the radius
-    * of the bubble relates to the value. Requires `highcharts-more.js`.
+    * of the bubble relates to the value.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1114,7 +1112,7 @@ trait PlotOptions extends js.Object {
     * (Highcharts, Highstock) A polygon series can be used to draw any freeform
     * shape in the cartesian coordinate system. A fill is applied with the
     * `color` option, and stroke is applied through `lineWidth` and `lineColor`
-    * options. Requires the `highcharts-more.js` file.
+    * options.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1185,7 +1183,7 @@ trait PlotOptions extends js.Object {
   var psar: js.UndefOr[PlotPsarOptions] = js.undefined
   /**
     * (Highcharts) A pyramid series is a special type of funnel, without neck
-    * and reversed by default. Requires the funnel module.
+    * and reversed by default.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1204,9 +1202,6 @@ trait PlotOptions extends js.Object {
     * (Highcharts) A pyramid3d is a 3d version of pyramid series type. Pyramid
     * charts are a type of chart often used to visualize stages in a sales
     * project, where the top are the initial stages with the most clients.
-    *
-    * It requires that the `highcharts-3d.js`, `cylinder.js`, `funnel3d.js` and
-    * `pyramid3d` modules are loaded.
     *
     * In TypeScript the type option must always be set.
     *
@@ -1469,8 +1464,6 @@ trait PlotOptions extends js.Object {
     * series requires `linkedTo` option to be set and should be loaded after
     * the `stock/indicators/indicators.js` and `stock/indicators/ema.js`.
     *
-    * Requires `https://code.highcharts.com/stock/indicators/ema.js`.
-    *
     * In TypeScript the type option must always be set.
     *
     * Configuration options for the series are given in three levels:
@@ -1579,8 +1572,7 @@ trait PlotOptions extends js.Object {
     * (Highcharts) A variable pie series is a two dimensional series type,
     * where each point renders an Y and Z value. Each point is drawn as a pie
     * slice where the size (arc) of the slice relates to the Y value and the
-    * radius of pie slice relates to the Z value. Requires
-    * `highcharts-more.js`.
+    * radius of pie slice relates to the Z value.
     *
     * In TypeScript the type option must always be set.
     *

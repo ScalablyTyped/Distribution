@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-retry
 
-Typings are for version 4.1.0
+Typings are for version 4.2.0
 
 ## Library description:
 Retry a promise-returning or async function

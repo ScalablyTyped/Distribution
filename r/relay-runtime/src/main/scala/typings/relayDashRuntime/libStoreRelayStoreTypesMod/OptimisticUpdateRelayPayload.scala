@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait OptimisticUpdateRelayPayload extends OptimisticUpdate {
   val operation: OperationDescriptor
   val payload: RelayResponsePayload
-  val updater: js.UndefOr[SelectorStoreUpdater | Null] = js.undefined
+  val updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
 }
 
 object OptimisticUpdateRelayPayload {
@@ -15,7 +15,7 @@ object OptimisticUpdateRelayPayload {
   def apply(
     operation: OperationDescriptor,
     payload: RelayResponsePayload,
-    updater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null
+    updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
   ): OptimisticUpdateRelayPayload = {
     val __obj = js.Dynamic.literal(operation = operation, payload = payload)
     if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))

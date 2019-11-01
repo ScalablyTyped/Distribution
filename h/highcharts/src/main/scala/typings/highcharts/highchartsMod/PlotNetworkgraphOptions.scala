@@ -164,10 +164,8 @@ trait PlotNetworkgraphOptions extends js.Object {
     SeriesNetworkgraphDataLabelsOptionsObject | js.Array[SeriesNetworkgraphDataLabelsOptionsObject]
   ] = js.undefined
   /**
-    * (Highcharts) Requires the Accessibility module.
-    *
-    * A description of the series to add to the screen reader information about
-    * the series.
+    * (Highcharts) A description of the series to add to the screen reader
+    * information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -227,8 +225,8 @@ trait PlotNetworkgraphOptions extends js.Object {
     */
   var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   /**
-    * (Highcharts) Export-data module required. When set to `false` will
-    * prevent the series data from being included in any form of data export.
+    * (Highcharts) When set to `false` will prevent the series data from being
+    * included in any form of data export.
     *
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
@@ -368,6 +366,9 @@ trait PlotNetworkgraphOptions extends js.Object {
     * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
     * be hidden when moving the mouse between series. Defaults to true for line
     * and area type series, but to false for columns, pies etc.
+    *
+    * **Note:** The boost module will force this option because of technical
+    * limitations.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
   /**
@@ -383,6 +384,9 @@ trait PlotNetworkgraphOptions extends js.Object {
     * point is tested, and the rest are assumed to be the same format. This
     * saves expensive data checking and indexing in long series. Set it to `0`
     * disable.
+    *
+    * Note: In boost mode turbo threshold is forced. Only array of numbers or
+    * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
   /**

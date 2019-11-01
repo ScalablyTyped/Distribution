@@ -8,58 +8,42 @@ trait ChartParallelAxesResizeOptions extends js.Object {
   /**
     * (Highstock) Contains two arrays of axes that are controlled by control
     * line of the axis.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var controlledAxis: js.UndefOr[ChartParallelAxesResizeControlledAxisOptions] = js.undefined
   /**
     * (Highstock) Cursor style for the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var cursor: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) Enable or disable resize by drag for the axis.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
     * (Highstock) Color of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var lineColor: js.UndefOr[ColorString] = js.undefined
   /**
     * (Highstock) Dash style of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var lineDashStyle: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) Width of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
   /**
     * (Highstock) Horizontal offset of the control line.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var x: js.UndefOr[Double] = js.undefined
   /**
     * (Highstock) Vertical offset of the control line.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var y: js.UndefOr[Double] = js.undefined
 }

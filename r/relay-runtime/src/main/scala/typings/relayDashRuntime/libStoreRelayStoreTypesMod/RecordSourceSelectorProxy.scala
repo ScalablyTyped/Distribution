@@ -1,32 +1,19 @@
 package typings.relayDashRuntime.libStoreRelayStoreTypesMod
 
 import typings.relayDashRuntime.libStoreRelayConnectionMod.ConnectionID
-import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.DataID
 import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.Variables
+import typings.std.NonNullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RecordSourceSelectorProxy extends RecordSourceProxy {
-  def getPluralRootField(fieldName: String): js.UndefOr[(js.Array[js.UndefOr[RecordProxy | Null]]) | Null]
-  def getRootField(fieldName: String): js.UndefOr[RecordProxy | Null]
-  def insertConnectionEdge_UNSTABLE(connectionID: ConnectionID, args: Variables, edge: RecordProxy): Unit
-}
-
-object RecordSourceSelectorProxy {
-  @scala.inline
-  def apply(
-    create: (DataID, String) => RecordProxy,
-    delete: DataID => Unit,
-    get: DataID => js.UndefOr[RecordProxy | Null],
-    getPluralRootField: String => js.UndefOr[(js.Array[js.UndefOr[RecordProxy | Null]]) | Null],
-    getRoot: () => RecordProxy,
-    getRootField: String => js.UndefOr[RecordProxy | Null],
-    insertConnectionEdge_UNSTABLE: (ConnectionID, Variables, RecordProxy) => Unit
-  ): RecordSourceSelectorProxy = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), getPluralRootField = js.Any.fromFunction1(getPluralRootField), getRoot = js.Any.fromFunction0(getRoot), getRootField = js.Any.fromFunction1(getRootField), insertConnectionEdge_UNSTABLE = js.Any.fromFunction3(insertConnectionEdge_UNSTABLE))
-  
-    __obj.asInstanceOf[RecordSourceSelectorProxy]
-  }
+@js.native
+trait RecordSourceSelectorProxy[T] extends RecordSourceProxy {
+  def getPluralRootField(fieldName: String): (js.Array[RecordProxy[T] | Null]) | Null = js.native
+  def getRootField(fieldName: String): RecordProxy[js.Object] | Null = js.native
+  def getRootField[K /* <: String */](fieldName: K): RecordProxy[
+    NonNullable[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+  ] = js.native
+  def insertConnectionEdge_UNSTABLE(connectionID: ConnectionID, args: Variables, edge: RecordProxy[js.Object]): Unit = js.native
 }
 

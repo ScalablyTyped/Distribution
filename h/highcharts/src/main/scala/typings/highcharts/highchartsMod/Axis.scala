@@ -72,6 +72,10 @@ class Axis protected () extends js.Object {
     */
   var min: Double | Null = js.native
   /**
+    * List of minor ticks mapped by position on the axis.
+    */
+  var minorTicks: Dictionary[Tick] = js.native
+  /**
     * Current options for the axis after merge of defaults and user's options.
     */
   var options: AxisOptions = js.native
@@ -101,6 +105,10 @@ class Axis protected () extends js.Object {
     * instead.
     */
   var tickPositions: js.UndefOr[js.Array[Double]] = js.native
+  /**
+    * List of major ticks mapped by postition on axis.
+    */
+  var ticks: Dictionary[Tick] = js.native
   /**
     * User's options for this axis without defaults.
     */
@@ -133,6 +141,14 @@ class Axis protected () extends js.Object {
     */
   def addTitle(): Unit = js.native
   def addTitle(display: Boolean): Unit = js.native
+  /**
+    * The default label formatter. The context is a special config object for
+    * the label. In apps, use the labels.formatter instead, except when a
+    * modification is needed.
+    *
+    * @return The formatted label content.
+    */
+  def defaultLabelFormatter(`this`: AxisLabelsFormatterContextObject): String = js.native
   /**
     * Internal function to draw a crosshair.
     *

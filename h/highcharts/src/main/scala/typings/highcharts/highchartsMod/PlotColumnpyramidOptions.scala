@@ -219,10 +219,8 @@ trait PlotColumnpyramidOptions extends js.Object {
     */
   var dataLabels: js.UndefOr[js.Any] = js.undefined
   /**
-    * (Highcharts, Highstock) Requires the Accessibility module.
-    *
-    * A description of the series to add to the screen reader information about
-    * the series.
+    * (Highcharts, Highstock) A description of the series to add to the screen
+    * reader information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -230,8 +228,6 @@ trait PlotColumnpyramidOptions extends js.Object {
     * moved around or modified in the chart. In addition to the options
     * mentioned under the `dragDrop` API structure, the module fires three
     * events, point.dragStart, point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
     */
   var dragDrop: js.UndefOr[PlotColumnpyramidDragDropOptions] = js.undefined
   /**
@@ -276,9 +272,8 @@ trait PlotColumnpyramidOptions extends js.Object {
     */
   var grouping: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highstock) Export-data module required. When set to `false`
-    * will prevent the series data from being included in any form of data
-    * export.
+    * (Highcharts, Highstock) When set to `false` will prevent the series data
+    * from being included in any form of data export.
     *
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
@@ -315,8 +310,6 @@ trait PlotColumnpyramidOptions extends js.Object {
     *
     * The series labels currently work with series types having a `graph` or an
     * `area`.
-    *
-    * Requires the `series-label.js` module.
     */
   var label: js.UndefOr[PlotColumnpyramidLabelOptions] = js.undefined
   /**
@@ -507,6 +500,9 @@ trait PlotColumnpyramidOptions extends js.Object {
     * When `stickyTracking` is false and `tooltip.shared` is false, the tooltip
     * will be hidden when moving the mouse between series. Defaults to true for
     * line and area type series, but to false for columns, pies etc.
+    *
+    * **Note:** The boost module will force this option because of technical
+    * limitations.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
   /**
@@ -522,6 +518,9 @@ trait PlotColumnpyramidOptions extends js.Object {
     * point is tested, and the rest are assumed to be the same format. This
     * saves expensive data checking and indexing in long series. Set it to `0`
     * disable.
+    *
+    * Note: In boost mode turbo threshold is forced. Only array of numbers or
+    * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
   /**

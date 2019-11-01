@@ -44,9 +44,10 @@ trait ExportingOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for exporting data to
     * CSV or ExCel, or displaying the data in a HTML table or a JavaScript
-    * structure. Requires the `export-data.js` module. This module adds data
-    * export options to the export menu and provides functions like
-    * `Chart.getCSV`, `Chart.getTable`, `Chart.getDataRows` and
+    * structure.
+    *
+    * This module adds data export options to the export menu and provides
+    * functions like `Chart.getCSV`, `Chart.getTable`, `Chart.getDataRows` and
     * `Chart.viewData`.
     *
     * The XLS converter is limited and only creates a HTML string that is
@@ -132,8 +133,8 @@ trait ExportingOptions extends js.Object {
     */
   var scale: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Export-data module required.
-    * Show a HTML table below the chart with the chart's current data.
+    * (Highcharts, Highstock, Highmaps, Gantt) Show a HTML table below the
+    * chart with the chart's current data.
     */
   var showTable: js.UndefOr[Boolean] = js.undefined
   /**
@@ -148,9 +149,8 @@ trait ExportingOptions extends js.Object {
     */
   var sourceWidth: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Export-data module required.
-    * Caption for the data table. Same as chart title by default. Set to
-    * `false` to disable.
+    * (Highcharts, Highstock, Highmaps, Gantt) Caption for the data table. Same
+    * as chart title by default. Set to `false` to disable.
     */
   var tableCaption: js.UndefOr[Boolean | String] = js.undefined
   /**
@@ -167,16 +167,14 @@ trait ExportingOptions extends js.Object {
     */
   var url: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Export-data module required. Use
-    * multi level headers in data table. If csv.columnHeaderFormatter is
-    * defined, it has to return objects in order for multi level headers to
-    * work.
+    * (Highcharts, Highstock, Highmaps, Gantt) Use multi level headers in data
+    * table. If csv.columnHeaderFormatter is defined, it has to return objects
+    * in order for multi level headers to work.
     */
   var useMultiLevelHeaders: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Export-data module required. If
-    * using multi level table headers, use rowspans for headers that have only
-    * one level.
+    * (Highcharts, Highstock, Highmaps, Gantt) If using multi level table
+    * headers, use rowspans for headers that have only one level.
     */
   var useRowspanHeaders: js.UndefOr[Boolean] = js.undefined
   /**

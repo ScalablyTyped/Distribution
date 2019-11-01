@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_OptimisticUpdater extends js.Object {
   @JSName("optimisticUpdater")
-  var optimisticUpdater_Original: SelectorStoreUpdater = js.native
+  var optimisticUpdater_Original: SelectorStoreUpdater[js.Object] = js.native
   @JSName("updater")
-  var updater_Original: SelectorStoreUpdater = js.native
+  var updater_Original: SelectorStoreUpdater[js.Object] = js.native
   def optimisticUpdater(
-    store: RecordSourceSelectorProxy,
+    store: RecordSourceSelectorProxy[js.Object],
     // Actually SelectorData, but mixed is inconvenient to access deeply in
   // product code.
-  data: js.Any
+  data: js.Object
   ): Unit = js.native
   def updater(
-    store: RecordSourceSelectorProxy,
+    store: RecordSourceSelectorProxy[js.Object],
     // Actually SelectorData, but mixed is inconvenient to access deeply in
   // product code.
-  data: js.Any
+  data: js.Object
   ): Unit = js.native
 }
 

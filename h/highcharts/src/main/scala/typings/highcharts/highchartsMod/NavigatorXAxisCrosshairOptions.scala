@@ -17,8 +17,8 @@ trait NavigatorXAxisCrosshairOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highstock, Gantt) The dash style for the crosshair. See series.dashStyle
-    * for possible values.
+    * (Highstock, Gantt) The dash style for the crosshair. See
+    * plotOptions.series.dashStyle for possible values.
     */
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**

@@ -8,15 +8,11 @@ trait YAxisResizeControlledAxisOptions extends js.Object {
   /**
     * (Highstock) Array of axes that should move out of the way of resizing
     * being done for the current axis. If not set, the next axis will be used.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var next: js.UndefOr[js.Array[Double | String]] = js.undefined
   /**
     * (Highstock) Array of axes that should move with the current axis while
     * resizing.
-    *
-    * This feature requires the `drag-panes.js` module.
     */
   var prev: js.UndefOr[js.Array[Double | String]] = js.undefined
 }

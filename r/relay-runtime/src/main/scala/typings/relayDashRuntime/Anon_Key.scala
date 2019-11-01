@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 trait Anon_Key extends js.Object {
   var operation: OperationDescriptor
   var optimisticResponse: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
-  var optimisticUpdater: js.UndefOr[SelectorStoreUpdater | Null] = js.undefined
-  var updater: js.UndefOr[SelectorStoreUpdater | Null] = js.undefined
+  var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
+  var updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
   var uploadables: js.UndefOr[UploadableMap | Null] = js.undefined
 }
 
@@ -22,8 +22,8 @@ object Anon_Key {
   def apply(
     operation: OperationDescriptor,
     optimisticResponse: StringDictionary[js.Any] = null,
-    optimisticUpdater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null,
-    updater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null,
+    optimisticUpdater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null,
+    updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null,
     uploadables: UploadableMap = null
   ): Anon_Key = {
     val __obj = js.Dynamic.literal(operation = operation)

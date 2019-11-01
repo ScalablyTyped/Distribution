@@ -112,6 +112,13 @@ class Point () extends js.Object {
     */
   def haloPath(size: Double): SVGElement = js.native
   /**
+    * Utility to check if point has new shape type. Used in column series and
+    * all others that are based on column series.
+    *
+    * @return boolean|undefined
+    */
+  def hasNewShapeType(): Unit = js.native
+  /**
     * Initialize the point. Called internally based on the `series.data`
     * option.
     *

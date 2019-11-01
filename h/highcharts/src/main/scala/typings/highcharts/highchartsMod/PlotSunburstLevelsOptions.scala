@@ -14,7 +14,7 @@ trait PlotSunburstLevelsOptions extends js.Object {
     * (Highcharts) Can set a `borderDashStyle` on all points which lies on the
     * same level.
     */
-  var borderDashStyle: js.UndefOr[String] = js.undefined
+  var borderDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**
     * (Highcharts) Can set a `borderWidth` on all points which lies on the same
     * level.
@@ -34,7 +34,7 @@ trait PlotSunburstLevelsOptions extends js.Object {
     * (Highcharts) Can set `dataLabels` on all points which lies on the same
     * level.
     */
-  var dataLabels: js.UndefOr[js.Object] = js.undefined
+  var dataLabels: js.UndefOr[SeriesSunburstDataLabelsOptionsObject] = js.undefined
   /**
     * (Highcharts) Can set a `levelSize` on all points which lies on the same
     * level.
@@ -56,11 +56,11 @@ object PlotSunburstLevelsOptions {
   @scala.inline
   def apply(
     borderColor: ColorString = null,
-    borderDashStyle: String = null,
+    borderDashStyle: DashStyleValue = null,
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorVariation: PlotSunburstLevelsColorVariationOptions = null,
-    dataLabels: js.Object = null,
+    dataLabels: SeriesSunburstDataLabelsOptionsObject = null,
     levelSize: js.Object = null,
     rotation: Int | Double = null,
     rotationMode: String = null

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Back extends js.Object {
+  var currentMode: BackMode = js.native
   var fixtures: String = js.native
   def apply(fixtureName: String): js.Promise[Anon_Context] = js.native
   def apply(fixtureName: String, nockedFn: js.Function1[/* nockDone */ js.Function0[Unit], Unit]): Unit = js.native

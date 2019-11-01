@@ -971,9 +971,6 @@ object highchartsStrings {
   sealed trait treegrid extends AxisTypeValue
   
   @js.native
-  sealed trait treemap extends js.Object
-  
-  @js.native
   sealed trait trendline extends js.Object
   
   @js.native
@@ -1043,9 +1040,6 @@ object highchartsStrings {
   
   @js.native
   sealed trait williamsr extends js.Object
-  
-  @js.native
-  sealed trait windbarb extends js.Object
   
   @js.native
   sealed trait wma extends js.Object
@@ -1647,8 +1641,6 @@ object highchartsStrings {
   @scala.inline
   def treegrid: treegrid = "treegrid".asInstanceOf[treegrid]
   @scala.inline
-  def treemap: treemap = "treemap".asInstanceOf[treemap]
-  @scala.inline
   def trendline: trendline = "trendline".asInstanceOf[trendline]
   @scala.inline
   def triangle: triangle = "triangle".asInstanceOf[triangle]
@@ -1692,8 +1684,6 @@ object highchartsStrings {
   def width: width = "width".asInstanceOf[width]
   @scala.inline
   def williamsr: williamsr = "williamsr".asInstanceOf[williamsr]
-  @scala.inline
-  def windbarb: windbarb = "windbarb".asInstanceOf[windbarb]
   @scala.inline
   def wma: wma = "wma".asInstanceOf[wma]
   @scala.inline

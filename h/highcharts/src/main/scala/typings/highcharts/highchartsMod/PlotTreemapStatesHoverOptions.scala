@@ -42,7 +42,7 @@ trait PlotTreemapStatesHoverOptions extends js.Object {
     * In styled mode, the halo is styled with the `.highcharts-halo` class,
     * with colors inherited from `.highcharts-color-{n}`.
     */
-  var halo: js.UndefOr[Boolean | PlotTreemapStatesHoverHaloOptions] = js.undefined
+  var halo: js.UndefOr[PlotTreemapStatesHoverHaloOptions | Null] = js.undefined
   /**
     * (Highcharts, Highstock) Pixel width of the graph line. By default this
     * property is undefined, and the `lineWidthPlus` property dictates how much
@@ -74,7 +74,7 @@ object PlotTreemapStatesHoverOptions {
     brightness: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    halo: Boolean | PlotTreemapStatesHoverHaloOptions = null,
+    halo: PlotTreemapStatesHoverHaloOptions = null,
     lineWidth: Int | Double = null,
     lineWidthPlus: Int | Double = null,
     opacity: Int | Double = null,
@@ -87,7 +87,7 @@ object PlotTreemapStatesHoverOptions {
     if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (halo != null) __obj.updateDynamic("halo")(halo.asInstanceOf[js.Any])
+    if (halo != null) __obj.updateDynamic("halo")(halo)
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (lineWidthPlus != null) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

@@ -17,8 +17,8 @@ trait ChartParallelAxesCrosshairOptions extends js.Object {
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highcharts) The dash style for the crosshair. See series.dashStyle for
-    * possible values.
+    * (Highcharts) The dash style for the crosshair. See
+    * plotOptions.series.dashStyle for possible values.
     */
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   /**

@@ -16,7 +16,7 @@ trait GraphQLSubscriptionConfig[TSubscriptionPayload] extends js.Object {
   var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
   var onNext: js.UndefOr[js.Function1[/* response */ js.UndefOr[TSubscriptionPayload | Null], Unit]] = js.undefined
   var subscription: GraphQLTaggedNode
-  var updater: js.UndefOr[SelectorStoreUpdater] = js.undefined
+  var updater: js.UndefOr[SelectorStoreUpdater[TSubscriptionPayload]] = js.undefined
   var variables: Variables
 }
 
@@ -29,7 +29,7 @@ object GraphQLSubscriptionConfig {
     onCompleted: () => Unit = null,
     onError: /* error */ Error => Unit = null,
     onNext: /* response */ js.UndefOr[TSubscriptionPayload | Null] => Unit = null,
-    updater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null
+    updater: (/* store */ RecordSourceSelectorProxy[TSubscriptionPayload], TSubscriptionPayload) => Unit = null
   ): GraphQLSubscriptionConfig[TSubscriptionPayload] = {
     val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any], variables = variables)
     if (configs != null) __obj.updateDynamic("configs")(configs)

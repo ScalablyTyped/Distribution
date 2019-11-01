@@ -14,13 +14,13 @@ object convert extends js.Object {
   def apply(
     configs: js.Array[DeclarativeMutationConfig],
     request: ConcreteRequest,
-    optimisticUpdater: SelectorStoreUpdater
+    optimisticUpdater: SelectorStoreUpdater[js.Object]
   ): Anon_OptimisticUpdater = js.native
   def apply(
     configs: js.Array[DeclarativeMutationConfig],
     request: ConcreteRequest,
-    optimisticUpdater: SelectorStoreUpdater,
-    updater: SelectorStoreUpdater
+    optimisticUpdater: SelectorStoreUpdater[js.Object],
+    updater: SelectorStoreUpdater[js.Object]
   ): Anon_OptimisticUpdater = js.native
 }
 

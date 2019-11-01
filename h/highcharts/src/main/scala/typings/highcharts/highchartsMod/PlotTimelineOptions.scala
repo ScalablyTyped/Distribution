@@ -177,12 +177,12 @@ trait PlotTimelineOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[PlotTimelineDataLabelsOptions] = js.undefined
+  var dataLabels: js.UndefOr[
+    PlotTimelineDataLabelsOptions | TimelineDataLabelsOptionsObject | js.Array[TimelineDataLabelsOptionsObject]
+  ] = js.undefined
   /**
-    * (Highcharts) Requires the Accessibility module.
-    *
-    * A description of the series to add to the screen reader information about
-    * the series.
+    * (Highcharts) A description of the series to add to the screen reader
+    * information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -190,8 +190,6 @@ trait PlotTimelineOptions extends js.Object {
     * or modified in the chart. In addition to the options mentioned under the
     * `dragDrop` API structure, the module fires three events, point.dragStart,
     * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
     */
   var dragDrop: js.UndefOr[PlotTimelineDragDropOptions] = js.undefined
   /**
@@ -237,8 +235,8 @@ trait PlotTimelineOptions extends js.Object {
   var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   var ignoreHiddenPoint: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highcharts) Export-data module required. When set to `false` will
-    * prevent the series data from being included in any form of data export.
+    * (Highcharts) When set to `false` will prevent the series data from being
+    * included in any form of data export.
     *
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
@@ -275,8 +273,6 @@ trait PlotTimelineOptions extends js.Object {
     *
     * The series labels currently work with series types having a `graph` or an
     * `area`.
-    *
-    * Requires the `series-label.js` module.
     */
   var label: js.UndefOr[PlotTimelineLabelOptions] = js.undefined
   /**
@@ -389,6 +385,9 @@ trait PlotTimelineOptions extends js.Object {
     * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
     * be hidden when moving the mouse between series. Defaults to true for line
     * and area type series, but to false for columns, pies etc.
+    *
+    * **Note:** The boost module will force this option because of technical
+    * limitations.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
   /**
@@ -435,7 +434,7 @@ object PlotTimelineOptions {
     connectors: PlotTimelineConnectorsOptions = null,
     cursor: String | CursorValue = null,
     dataGrouping: PlotTimelineDataGroupingOptions = null,
-    dataLabels: PlotTimelineDataLabelsOptions = null,
+    dataLabels: PlotTimelineDataLabelsOptions | TimelineDataLabelsOptionsObject | js.Array[TimelineDataLabelsOptionsObject] = null,
     description: String = null,
     dragDrop: PlotTimelineDragDropOptions = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
@@ -493,7 +492,7 @@ object PlotTimelineOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)

@@ -44,8 +44,7 @@ trait PlotBulletDragDropOptions extends js.Object {
     */
   var dragSensitivity: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts) Allow target value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Highcharts) Allow target value to be dragged individually.
     */
   var draggableTarget: js.UndefOr[Boolean] = js.undefined
   /**

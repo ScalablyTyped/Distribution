@@ -68,21 +68,23 @@ trait NavigatorOptions extends js.Object {
     *
     *  (see online documentation for example)
     */
-  var series: js.UndefOr[NavigatorSeriesOptions | SeriesOptionsType] = js.undefined
+  var series: js.UndefOr[
+    NavigatorSeriesOptions | SeriesOptionsType | (js.Array[NavigatorSeriesOptions | SeriesOptionsType])
+  ] = js.undefined
   /**
     * (Highstock, Gantt) Options for the navigator X axis. Default series
     * options for the navigator xAxis are:
     *
     *  (see online documentation for example)
     */
-  var xAxis: js.UndefOr[NavigatorXAxisOptions] = js.undefined
+  var xAxis: js.UndefOr[NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions]] = js.undefined
   /**
     * (Highstock, Gantt) Options for the navigator Y axis. Default series
     * options for the navigator yAxis are:
     *
     *  (see online documentation for example)
     */
-  var yAxis: js.UndefOr[NavigatorYAxisOptions] = js.undefined
+  var yAxis: js.UndefOr[NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions]] = js.undefined
 }
 
 object NavigatorOptions {
@@ -98,9 +100,9 @@ object NavigatorOptions {
     opposite: js.UndefOr[Boolean] = js.undefined,
     outlineColor: ColorString | GradientColorObject | PatternObject = null,
     outlineWidth: Int | Double = null,
-    series: NavigatorSeriesOptions | SeriesOptionsType = null,
-    xAxis: NavigatorXAxisOptions = null,
-    yAxis: NavigatorYAxisOptions = null
+    series: NavigatorSeriesOptions | SeriesOptionsType | (js.Array[NavigatorSeriesOptions | SeriesOptionsType]) = null,
+    xAxis: NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions] = null,
+    yAxis: NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions] = null
   ): NavigatorOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(adaptToUpdatedData)) __obj.updateDynamic("adaptToUpdatedData")(adaptToUpdatedData)
@@ -114,8 +116,8 @@ object NavigatorOptions {
     if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis)
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis)
+    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
+    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorOptions]
   }
 }

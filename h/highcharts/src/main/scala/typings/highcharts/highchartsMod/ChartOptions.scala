@@ -71,8 +71,6 @@ trait ChartOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to display errors on the
     * chart. When `false`, the errors will be shown only in the console.
-    *
-    * Requires `debugger.js` module.
     */
   var displayErrors: js.UndefOr[Boolean] = js.undefined
   /**
@@ -187,7 +185,7 @@ trait ChartOptions extends js.Object {
     *
     * The default options are: (see online documentation for example)
     */
-  var parallelAxes: js.UndefOr[ChartParallelAxesOptions] = js.undefined
+  var parallelAxes: js.UndefOr[ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions]] = js.undefined
   /**
     * (Highcharts) Flag to render charts as a parallel coordinates plot. In a
     * parallel coordinates plot (||-coords) by default all required yAxes are
@@ -237,8 +235,7 @@ trait ChartOptions extends js.Object {
   /**
     * (Highcharts) When true, cartesian charts like line, spline, area and
     * column are transformed into the polar coordinate system. This produces
-    * _polar charts_, also known as _radar charts_. Requires
-    * `highcharts-more.js`.
+    * _polar charts_, also known as _radar charts_.
     */
   var polar: js.UndefOr[Boolean] = js.undefined
   /**
@@ -355,9 +352,8 @@ trait ChartOptions extends js.Object {
   var width: js.UndefOr[Double | String | Null] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set a key to hold when dragging
-    * to zoom the chart. Requires the draggable-points module. This is useful
-    * to avoid zooming while moving points. Should be set different than
-    * chart.panKey.
+    * to zoom the chart. This is useful to avoid zooming while moving points.
+    * Should be set different than chart.panKey.
     */
   var zoomKey: js.UndefOr[OptionsZoomKeyValue] = js.undefined
   /**
@@ -393,7 +389,7 @@ object ChartOptions {
     options3d: Chart3dOptions = null,
     panKey: OptionsPanKeyValue = null,
     panning: js.UndefOr[Boolean] = js.undefined,
-    parallelAxes: ChartParallelAxesOptions = null,
+    parallelAxes: ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions] = null,
     parallelCoordinates: js.UndefOr[Boolean] = js.undefined,
     pinchType: OptionsPinchTypeValue = null,
     plotBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
@@ -445,7 +441,7 @@ object ChartOptions {
     if (options3d != null) __obj.updateDynamic("options3d")(options3d)
     if (panKey != null) __obj.updateDynamic("panKey")(panKey)
     if (!js.isUndefined(panning)) __obj.updateDynamic("panning")(panning)
-    if (parallelAxes != null) __obj.updateDynamic("parallelAxes")(parallelAxes)
+    if (parallelAxes != null) __obj.updateDynamic("parallelAxes")(parallelAxes.asInstanceOf[js.Any])
     if (!js.isUndefined(parallelCoordinates)) __obj.updateDynamic("parallelCoordinates")(parallelCoordinates)
     if (pinchType != null) __obj.updateDynamic("pinchType")(pinchType)
     if (plotBackgroundColor != null) __obj.updateDynamic("plotBackgroundColor")(plotBackgroundColor.asInstanceOf[js.Any])

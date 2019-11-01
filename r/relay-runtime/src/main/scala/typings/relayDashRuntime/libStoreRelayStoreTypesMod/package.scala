@@ -14,14 +14,16 @@ package object libStoreRelayStoreTypesMod {
   type FragmentReference = js.Any
   type FragmentSpecResults = StringDictionary[js.Any]
   type OperationTracker = RelayOperationTracker
+  type Primitive = js.UndefOr[String | Double | Boolean | Null]
   type Props = StringDictionary[js.Any]
   type Record = StringDictionary[js.Any]
   type RecordMap = // theoretically, this should be `[dataID: DataID]`, but `DataID` is a string.
   StringDictionary[js.UndefOr[Record | Null]]
   type Scheduler = js.Function1[/* callback */ js.Function0[Unit], Unit]
   type SelectorData = StringDictionary[js.Any]
-  type SelectorStoreUpdater = js.Function2[/* store */ RecordSourceSelectorProxy, /* data */ js.Any, Unit]
+  type SelectorStoreUpdater[T] = js.Function2[/* store */ RecordSourceSelectorProxy[T], /* data */ T, Unit]
   type Snapshot = TypedSnapshot[SelectorData]
   type StoreUpdater = js.Function1[/* store */ RecordSourceProxy, Unit]
+  type Unarray[T] = T
   type UpdatedRecords = StringDictionary[Boolean]
 }

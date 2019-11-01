@@ -25,8 +25,16 @@ trait MutationConfig[TOperation /* <: MutationParameters */] extends js.Object {
   var optimisticResponse: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ js.Any
   ] = js.undefined
-  var optimisticUpdater: js.UndefOr[SelectorStoreUpdater | Null] = js.undefined
-  var updater: js.UndefOr[SelectorStoreUpdater | Null] = js.undefined
+  var optimisticUpdater: js.UndefOr[
+    (SelectorStoreUpdater[
+      /* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ js.Any
+    ]) | Null
+  ] = js.undefined
+  var updater: js.UndefOr[
+    (SelectorStoreUpdater[
+      /* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ js.Any
+    ]) | Null
+  ] = js.undefined
   var uploadables: js.UndefOr[UploadableMap | Null] = js.undefined
   var variables: /* import warning: ImportType.apply Failed type conversion: TOperation['variables'] */ js.Any
 }
@@ -40,8 +48,12 @@ object MutationConfig {
     onCompleted: (/* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ /* response */ js.Any, /* errors */ js.UndefOr[js.Array[PayloadError] | Null]) => Unit = null,
     onError: /* error */ Error => Unit = null,
     optimisticResponse: /* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ js.Any = null,
-    optimisticUpdater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null,
-    updater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null,
+    optimisticUpdater: (/* store */ RecordSourceSelectorProxy[
+      /* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ js.Any
+    ], /* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ js.Any) => Unit = null,
+    updater: (/* store */ RecordSourceSelectorProxy[
+      /* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ js.Any
+    ], /* import warning: ImportType.apply Failed type conversion: TOperation['response'] */ js.Any) => Unit = null,
     uploadables: UploadableMap = null
   ): MutationConfig[TOperation] = {
     val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables)

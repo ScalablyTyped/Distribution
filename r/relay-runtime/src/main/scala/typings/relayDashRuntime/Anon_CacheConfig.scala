@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait Anon_CacheConfig extends js.Object {
   var cacheConfig: js.UndefOr[CacheConfig | Null] = js.undefined
   var operation: OperationDescriptor
-  var updater: js.UndefOr[SelectorStoreUpdater | Null] = js.undefined
+  var updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
 }
 
 object Anon_CacheConfig {
@@ -19,7 +19,7 @@ object Anon_CacheConfig {
   def apply(
     operation: OperationDescriptor,
     cacheConfig: CacheConfig = null,
-    updater: (/* store */ RecordSourceSelectorProxy, /* data */ js.Any) => Unit = null
+    updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
   ): Anon_CacheConfig = {
     val __obj = js.Dynamic.literal(operation = operation)
     if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)

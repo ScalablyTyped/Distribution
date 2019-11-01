@@ -44,13 +44,11 @@ trait PlotGanttDragDropOptions extends js.Object {
     */
   var dragSensitivity: js.UndefOr[Double] = js.undefined
   /**
-    * (Gantt) Allow end value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Gantt) Allow end value to be dragged individually.
     */
   var draggableEnd: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Gantt) Allow start value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Gantt) Allow start value to be dragged individually.
     */
   var draggableStart: js.UndefOr[Boolean] = js.undefined
   /**
@@ -58,13 +56,11 @@ trait PlotGanttDragDropOptions extends js.Object {
     */
   var draggableX: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Gantt) Allow x value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Gantt) Allow x value to be dragged individually.
     */
   var draggableX1: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Gantt) Allow x2 value to be dragged individually. Requires
-    * `draggable-points` module.
+    * (Gantt) Allow x2 value to be dragged individually.
     */
   var draggableX2: js.UndefOr[Boolean] = js.undefined
   /**

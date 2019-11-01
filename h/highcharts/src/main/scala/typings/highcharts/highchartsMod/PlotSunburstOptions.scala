@@ -140,10 +140,8 @@ trait PlotSunburstOptions extends js.Object {
     SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject]
   ] = js.undefined
   /**
-    * (Highcharts) Requires the Accessibility module.
-    *
-    * A description of the series to add to the screen reader information about
-    * the series.
+    * (Highcharts) A description of the series to add to the screen reader
+    * information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -165,8 +163,8 @@ trait PlotSunburstOptions extends js.Object {
     */
   var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
-    * (Highcharts) Export-data module required. When set to `false` will
-    * prevent the series data from being included in any form of data export.
+    * (Highcharts) When set to `false` will prevent the series data from being
+    * included in any form of data export.
     *
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.

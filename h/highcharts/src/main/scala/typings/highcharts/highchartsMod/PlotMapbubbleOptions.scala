@@ -69,8 +69,6 @@ trait PlotMapbubbleOptions extends js.Object {
     * a series that has fewer points than the `cropThreshold`, all points are
     * rendered although outside the visible plot area, and the `boostThreshold`
     * won't take effect.
-    *
-    * Requires `modules/boost.js`.
     */
   var boostThreshold: js.UndefOr[Double] = js.undefined
   /**
@@ -224,10 +222,8 @@ trait PlotMapbubbleOptions extends js.Object {
     */
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
   /**
-    * (Highmaps) Requires the Accessibility module.
-    *
-    * A description of the series to add to the screen reader information about
-    * the series.
+    * (Highmaps) A description of the series to add to the screen reader
+    * information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
@@ -241,8 +237,6 @@ trait PlotMapbubbleOptions extends js.Object {
     * or modified in the chart. In addition to the options mentioned under the
     * `dragDrop` API structure, the module fires three events, point.dragStart,
     * point.drag and point.drop.
-    *
-    * It requires the `modules/draggable-points.js` file to be loaded.
     */
   var dragDrop: js.UndefOr[PlotMapbubbleDragDropOptions] = js.undefined
   /**
@@ -305,8 +299,8 @@ trait PlotMapbubbleOptions extends js.Object {
     */
   var getExtremesFromAll: js.UndefOr[Boolean] = js.undefined
   /**
-    * (Highmaps) Export-data module required. When set to `false` will prevent
-    * the series data from being included in any form of data export.
+    * (Highmaps) When set to `false` will prevent the series data from being
+    * included in any form of data export.
     *
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
@@ -358,8 +352,6 @@ trait PlotMapbubbleOptions extends js.Object {
     *
     * The series labels currently work with series types having a `graph` or an
     * `area`.
-    *
-    * Requires the `series-label.js` module.
     */
   var label: js.UndefOr[PlotMapbubbleLabelOptions] = js.undefined
   /**
@@ -580,6 +572,9 @@ trait PlotMapbubbleOptions extends js.Object {
     * point is tested, and the rest are assumed to be the same format. This
     * saves expensive data checking and indexing in long series. Set it to `0`
     * disable.
+    *
+    * Note: In boost mode turbo threshold is forced. Only array of numbers or
+    * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
   /**

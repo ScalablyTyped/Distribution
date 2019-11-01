@@ -17,14 +17,12 @@ trait ChartEventsOptions extends js.Object {
   var addSeries: js.UndefOr[ChartAddSeriesCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires after a chart is printed
-    * through the context menu item or the `Chart.print` method. Requires the
-    * exporting module.
+    * through the context menu item or the `Chart.print` method.
     */
   var afterPrint: js.UndefOr[ExportingAfterPrintCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires before a chart is printed
-    * through the context menu item or the `Chart.print` method. Requires the
-    * exporting module.
+    * through the context menu item or the `Chart.print` method.
     */
   var beforePrint: js.UndefOr[ExportingBeforePrintCallbackFunction] = js.undefined
   /**
@@ -76,8 +74,6 @@ trait ChartEventsOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Callback that fires while
     * exporting data. This allows the modification of data rows before
     * processed into the final format.
-    *
-    * Requires the `export-data` module.
     */
   var exportData: js.UndefOr[ExportDataCallbackFunction] = js.undefined
   /**

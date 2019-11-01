@@ -28,10 +28,9 @@ trait SeriesXrangeDataOptions extends js.Object {
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   /**
-    * (Gantt) Connect to a point. Requires Highcharts Gantt to be loaded. This
-    * option can be either a string, referring to the ID of another point, or
-    * an object, or an array of either. If the option is an array, each element
-    * defines a connection.
+    * (Gantt) Connect to a point. This option can be either a string, referring
+    * to the ID of another point, or an object, or an array of either. If the
+    * option is an array, each element defines a connection.
     */
   var connect: js.UndefOr[
     String | SeriesXrangeDataConnectOptions | (js.Array[String | SeriesXrangeDataConnectOptions])
@@ -43,15 +42,12 @@ trait SeriesXrangeDataOptions extends js.Object {
   var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) A description of the point to add to the
-    * screen reader information about the point. Requires the Accessibility
-    * module.
+    * screen reader information about the point.
     */
   var description: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) Point specific options for the
     * draggable-points module. Overrides options on `series.dragDrop`.
-    *
-    * Requires the `draggable-points` module.
     */
   var dragDrop: js.UndefOr[SeriesXrangeDataDragDropOptions] = js.undefined
   /**

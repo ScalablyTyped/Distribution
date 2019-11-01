@@ -1,6 +1,7 @@
 package typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod
 
 import typings.reactDashNative.reactDashNativeMod.ImageRequireSource
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -92,6 +93,10 @@ trait Options extends js.Object {
     */
   var overlay: js.UndefOr[OverlayOptions] = js.undefined
   /**
+    * Props to pass to a component
+    */
+  var passProps: js.UndefOr[Record[String, _]] = js.undefined
+  /**
     * Enable or disable swipe back to pop gesture
     * #### (iOS specific)
     * @default true
@@ -139,6 +144,7 @@ object Options {
     modalPresentationStyle: OptionsModalPresentationStyle = null,
     modalTransitionStyle: OptionsModalTransitionStyle = null,
     overlay: OverlayOptions = null,
+    passProps: Record[String, _] = null,
     popGesture: js.UndefOr[Boolean] = js.undefined,
     preview: OptionsPreview = null,
     rootBackgroundImage: Int | Double = null,
@@ -159,6 +165,7 @@ object Options {
     if (modalPresentationStyle != null) __obj.updateDynamic("modalPresentationStyle")(modalPresentationStyle)
     if (modalTransitionStyle != null) __obj.updateDynamic("modalTransitionStyle")(modalTransitionStyle)
     if (overlay != null) __obj.updateDynamic("overlay")(overlay)
+    if (passProps != null) __obj.updateDynamic("passProps")(passProps)
     if (!js.isUndefined(popGesture)) __obj.updateDynamic("popGesture")(popGesture)
     if (preview != null) __obj.updateDynamic("preview")(preview)
     if (rootBackgroundImage != null) __obj.updateDynamic("rootBackgroundImage")(rootBackgroundImage.asInstanceOf[js.Any])
