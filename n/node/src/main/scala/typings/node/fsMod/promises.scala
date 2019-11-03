@@ -339,8 +339,8 @@ object promises extends js.Object {
   def open(path: PathLike, flags: Double): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: Double, mode: java.lang.String): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: Double, mode: Double): js.Promise[FileHandle] = js.native
-  def opendir(path: java.lang.String): js.Promise[Dirent] = js.native
-  def opendir(path: java.lang.String, options: OpenDirOptions): js.Promise[Dirent] = js.native
+  def opendir(path: java.lang.String): js.Promise[Dir] = js.native
+  def opendir(path: java.lang.String, options: OpenDirOptions): js.Promise[Dir] = js.native
   /**
     * Asynchronously reads data from the file referenced by the supplied `FileHandle`.
     * @param handle A `FileHandle`.

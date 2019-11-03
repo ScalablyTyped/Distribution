@@ -1,9 +1,9 @@
 package typings.sauronjs
 
-import typings.sauronjs.coreComponentMod.ComponentParameters
-import typings.sauronjs.coreComponentMod.^
-import typings.sauronjs.coreSauronMod.SauronComponentMap
-import typings.sauronjs.coreSauronMod.SauronInstance
+import typings.sauronjs.srcCoreComponentMod.ComponentParameters
+import typings.sauronjs.srcCoreComponentMod.^
+import typings.sauronjs.srcCoreSauronMod.SauronComponentMap
+import typings.sauronjs.srcCoreSauronMod.SauronInstance
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +19,7 @@ object sauronjsMod extends js.Object {
   
   @js.native
   class Service protected ()
-    extends typings.sauronjs.coreServiceMod.^ {
+    extends typings.sauronjs.srcCoreServiceMod.^ {
     def this(pubs: js.Array[String], subs: js.Array[String]) = this()
   }
   

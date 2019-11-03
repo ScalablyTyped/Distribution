@@ -1,6 +1,7 @@
 package typings.passportDashJwt
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.jsonwebtoken.jsonwebtokenMod.VerifyOptions
 import typings.node.Buffer
 import typings.passportDashJwt.passportDashJwtMod.JwtFromRequestFunction
@@ -34,7 +35,7 @@ object passportDashJwtMod extends js.Object {
     var passReqToCallback: js.UndefOr[Boolean] = js.native
     var secretOrKey: js.UndefOr[String | Buffer] = js.native
     var secretOrKeyProvider: js.UndefOr[js.Any] = js.native
-    def jwtFromRequest(req: Request): String | Null = js.native
+    def jwtFromRequest(req: Request[ParamsDictionary]): String | Null = js.native
   }
   
   @js.native
@@ -48,9 +49,14 @@ object passportDashJwtMod extends js.Object {
     def fromUrlQueryParameter(param_name: String): JwtFromRequestFunction = js.native
   }
   
-  type JwtFromRequestFunction = js.Function1[/* req */ Request, String | Null]
+  type JwtFromRequestFunction = js.Function1[/* req */ Request[ParamsDictionary], String | Null]
   type VerifiedCallback = js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit]
   type VerifyCallback = js.Function2[/* payload */ js.Any, /* done */ VerifiedCallback, Unit]
-  type VerifyCallbackWithRequest = js.Function3[/* req */ Request, /* payload */ js.Any, /* done */ VerifiedCallback, Unit]
+  type VerifyCallbackWithRequest = js.Function3[
+    /* req */ Request[ParamsDictionary], 
+    /* payload */ js.Any, 
+    /* done */ VerifiedCallback, 
+    Unit
+  ]
 }
 

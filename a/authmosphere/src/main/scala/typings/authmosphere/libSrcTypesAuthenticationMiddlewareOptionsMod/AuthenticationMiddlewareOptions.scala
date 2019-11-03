@@ -6,6 +6,7 @@ import typings.authmosphere.libSrcTypesTokenMod.Token
 import typings.express.expressMod.NextFunction
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +27,7 @@ object AuthenticationMiddlewareOptions {
     tokenInfoEndpoint: String,
     getTokenInfo: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[js.Object]] = null,
     logger: Logger = null,
-    onNotAuthenticatedHandler: (/* request */ Request, /* resonse */ Response, /* next */ NextFunction, /* logger */ Logger) => Unit = null,
+    onNotAuthenticatedHandler: (/* request */ Request[ParamsDictionary], /* resonse */ Response, /* next */ NextFunction, /* logger */ Logger) => Unit = null,
     publicEndpoints: js.Array[String] = null
   ): AuthenticationMiddlewareOptions = {
     val __obj = js.Dynamic.literal(tokenInfoEndpoint = tokenInfoEndpoint)

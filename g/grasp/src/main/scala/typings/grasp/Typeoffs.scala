@@ -21,6 +21,7 @@ import typings.node.Anon_Interval
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
+import typings.node.fsMod.Dir
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.FSWatcher
 import typings.node.fsMod.MakeDirectoryOptions
@@ -314,8 +315,8 @@ trait Typeoffs extends js.Object {
   def openSync(path: PathLike, flags: Double): Double = js.native
   def openSync(path: PathLike, flags: Double, mode: String): Double = js.native
   def openSync(path: PathLike, flags: Double, mode: Double): Double = js.native
-  def opendirSync(path: String): Dirent = js.native
-  def opendirSync(path: String, options: OpenDirOptions): Dirent = js.native
+  def opendirSync(path: String): Dir = js.native
+  def opendirSync(path: String, options: OpenDirOptions): Dir = js.native
   def readFileSync(path: Double): Buffer = js.native
   def readFileSync(path: Double, options: String): String | Buffer = js.native
   def readFileSync(path: Double, options: Anon_EncodingFlag): Buffer = js.native

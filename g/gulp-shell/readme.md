@@ -1,6 +1,7 @@
 
 # Scala.js typings for gulp-shell
 
+Typings are for version 0.7.1
 
 ## Library description:
 A handy command line interface for gulp
@@ -23,7 +24,7 @@ A handy command line interface for gulp
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

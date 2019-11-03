@@ -1,6 +1,7 @@
 package typings.loopback.loopbackMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,6 @@ object rest extends js.Object {
     * For more information, see [Exposing models over a REST API](docs.strongloop.com/display/DOC/Exposing+models+over+a+REST+API).
     * @header loopback.rest(
     */
-  def apply(): RequestHandler = js.native
+  def apply(): RequestHandler[ParamsDictionary] = js.native
 }
 

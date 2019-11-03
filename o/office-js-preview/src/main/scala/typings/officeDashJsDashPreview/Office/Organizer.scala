@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Organizer extends js.Object {
   /**
-    * Gets the organizer value of an appointment as an {@link Office.EmailAddressDetails} in the asyncResult.value property.
+    * Gets the organizer value of an appointment as an {@link Office.EmailAddressDetails | EmailAddressDetails} object in the asyncResult.value property.
     * 
     * [Api set: Mailbox 1.7]
     * 
@@ -35,7 +35,7 @@ trait Organizer extends js.Object {
   def getAsync(): Unit = js.native
   def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[EmailAddressDetails], Unit]): Unit = js.native
   /**
-    * Gets the organizer value of an appointment as an {@link Office.EmailAddressDetails} in the asyncResult.value property.
+    * Gets the organizer value of an appointment as an {@link Office.EmailAddressDetails | EmailAddressDetails} object in the asyncResult.value property.
     * 
     * [Api set: Mailbox 1.7]
     * 

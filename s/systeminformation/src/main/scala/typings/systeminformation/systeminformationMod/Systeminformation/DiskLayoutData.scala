@@ -6,12 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait DiskLayoutData extends js.Object {
   var bytesPerSector: Double
+  var device: String
   var firmwareRevision: String
   var interfaceType: String
   var name: String
   var sectorsPerTrack: Double
   var serialNum: String
   var size: Double
+  var smartStatus: String
   var totalCylinders: Double
   var totalHeads: Double
   var totalSectors: Double
@@ -25,12 +27,14 @@ object DiskLayoutData {
   @scala.inline
   def apply(
     bytesPerSector: Double,
+    device: String,
     firmwareRevision: String,
     interfaceType: String,
     name: String,
     sectorsPerTrack: Double,
     serialNum: String,
     size: Double,
+    smartStatus: String,
     totalCylinders: Double,
     totalHeads: Double,
     totalSectors: Double,
@@ -39,7 +43,7 @@ object DiskLayoutData {
     `type`: String,
     vendor: String
   ): DiskLayoutData = {
-    val __obj = js.Dynamic.literal(bytesPerSector = bytesPerSector, firmwareRevision = firmwareRevision, interfaceType = interfaceType, name = name, sectorsPerTrack = sectorsPerTrack, serialNum = serialNum, size = size, totalCylinders = totalCylinders, totalHeads = totalHeads, totalSectors = totalSectors, totalTracks = totalTracks, tracksPerCylinder = tracksPerCylinder, vendor = vendor)
+    val __obj = js.Dynamic.literal(bytesPerSector = bytesPerSector, device = device, firmwareRevision = firmwareRevision, interfaceType = interfaceType, name = name, sectorsPerTrack = sectorsPerTrack, serialNum = serialNum, size = size, smartStatus = smartStatus, totalCylinders = totalCylinders, totalHeads = totalHeads, totalSectors = totalSectors, totalTracks = totalTracks, tracksPerCylinder = tracksPerCylinder, vendor = vendor)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DiskLayoutData]
   }

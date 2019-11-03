@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HoneyBadgerInstance extends EventEmitter {
   @JSName("errorHandler")
-  var errorHandler_Original: ErrorRequestHandler = js.native
+  var errorHandler_Original: ErrorRequestHandler[ParamsDictionary] = js.native
   @JSName("requestHandler")
-  var requestHandler_Original: RequestHandler = js.native
+  var requestHandler_Original: RequestHandler[ParamsDictionary] = js.native
   def configure(options: ConfigureOptions): Unit = js.native
   def errorHandler(err: js.Any, req: Request[ParamsDictionary], res: Response, next: NextFunction): js.Any = js.native
   def factory(): HoneyBadgerInstance = js.native

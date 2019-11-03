@@ -1,6 +1,7 @@
 package typings.commonDashErrors.commonDashErrorsMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +23,7 @@ class HttpStatusError protected () extends ErrorConstructor {
     * @param message     any message
     */
   def this(status_code: Double) = this()
-  def this(err: Error, req: Request) = this()
+  def this(err: Error, req: Request[ParamsDictionary]) = this()
   def this(status_code: Double, message: String) = this()
   /**
     * Status code for this error.

@@ -81,11 +81,26 @@ trait Mailbox extends js.Object {
     */
   var ewsUrl: String = js.native
   /**
-    * The mailbox item.  Depending on the context in which the add-in opened, the item may be of any number of types.
-    * If you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
-    * `ItemCompose`, `ItemRead`, `MessageCompose`, `MessageRead`, `AppointmentCompose`, `AppointmentRead`
+    * The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types.
+    * If you want to see IntelliSense for only a specific type, cast this item to one of the following:
+    *
+    * {@link Office.ItemCompose | ItemCompose}, {@link Office.ItemRead | ItemRead},
+    * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
+    * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
     */
   var item: Item with ItemCompose with ItemRead with MessageRead with MessageCompose with AppointmentRead with AppointmentCompose = js.native
+  /**
+    * Gets an object that provides methods to manage the categories master list associated with a mailbox.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteMailbox
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    */
+  var masterCategories: MasterCategories = js.native
   /**
     * Gets the URL of the REST endpoint for this email account.
     *
@@ -127,7 +142,7 @@ trait Mailbox extends js.Object {
   /**
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     *
-    * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+    * To see which event types are supported, see `Office.EventType` for details.
     *
     * [Api set: Mailbox 1.5]
     *
@@ -347,13 +362,13 @@ trait Mailbox extends js.Object {
     *
     * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
     * 
-    *        toRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails} object 
+    *        toRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
     *        for each of the recipients on the To line. The array is limited to a maximum of 100 entries.
     * 
-    *        ccRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails} object 
+    *        ccRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
     *        for each of the recipients on the Cc line. The array is limited to a maximum of 100 entries.
     * 
-    *        bccRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails} object 
+    *        bccRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
     *        for each of the recipients on the Bcc line. The array is limited to a maximum of 100 entries.
     * 
     *        subject: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
@@ -585,7 +600,7 @@ trait Mailbox extends js.Object {
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     *
-    * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+    * To see which event types are supported, see `Office.EventType` for details.
     *
     * [Api set: Mailbox 1.5]
     *

@@ -4,6 +4,7 @@ import typings.atFeathersjsAuthenticationDashLocal.Anon_Message
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.Application
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.Paginated
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,7 @@ class LocalVerifier protected () extends js.Object {
   def _normalizeResult[T](results: Paginated[T]): js.Promise[T] = js.native
    // normalizes result from service to account for pagination
   def verify(
-    req: Request,
+    req: Request[ParamsDictionary],
     username: String,
     password: String,
     done: js.Function3[

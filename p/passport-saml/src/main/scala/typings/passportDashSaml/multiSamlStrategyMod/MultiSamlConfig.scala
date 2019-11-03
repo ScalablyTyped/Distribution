@@ -1,6 +1,7 @@
 package typings.passportDashSaml.multiSamlStrategyMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passportDashSaml.passportDashSamlMod.CacheProvider
 import typings.passportDashSaml.passportDashSamlMod.CertCallback
 import typings.passportDashSaml.passportDashSamlMod.SamlConfig
@@ -16,13 +17,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MultiSamlConfig extends SamlConfig {
-  def getSamlOptions(req: Request, callback: SamlOptionsCallback): Unit
+  def getSamlOptions(req: Request[ParamsDictionary], callback: SamlOptionsCallback): Unit
 }
 
 object MultiSamlConfig {
   @scala.inline
   def apply(
-    getSamlOptions: (Request, SamlOptionsCallback) => Unit,
+    getSamlOptions: (Request[ParamsDictionary], SamlOptionsCallback) => Unit,
     RACComparison: exact | minimum | maximum | better = null,
     acceptedClockSkewMs: Int | Double = null,
     additionalAuthorizeParams: js.Any = null,

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/cells" : "1.2.0"
+      "@jupyterlab/cells" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/cells" : "1.2.0"
+      "@jupyterlab/cells" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

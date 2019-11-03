@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-cache
 
-Typings are for version 4.1
+Typings are for version 5.0.1
 
 ## Library description:
 Simple and fast NodeJS internal caching. Node internal in memory cache like memcached.
@@ -24,7 +24,7 @@ Simple and fast NodeJS internal caching. Node internal in memory cache like memc
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ledgerhq__hw-transport-webusb"
-version := "4.70-dt-20191002Z-708cc8"
+version := "4.70-dt-20191002Z-d0fcd4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20190905Z-62013f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
+  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20190905Z-8b4938",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

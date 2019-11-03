@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__completer-extension"
-version := "1.2.0-d81020"
+version := "1.2.1-d6c9de"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

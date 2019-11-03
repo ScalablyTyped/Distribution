@@ -1,0 +1,28 @@
+package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
+
+import typings.std.Uint8Array
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Properties of a RestoreAgentRequest. */
+trait IRestoreAgentRequest extends js.Object {
+  /** RestoreAgentRequest agentContent */
+  var agentContent: js.UndefOr[Uint8Array | Null] = js.undefined
+  /** RestoreAgentRequest agentUri */
+  var agentUri: js.UndefOr[String | Null] = js.undefined
+  /** RestoreAgentRequest parent */
+  var parent: js.UndefOr[String | Null] = js.undefined
+}
+
+object IRestoreAgentRequest {
+  @scala.inline
+  def apply(agentContent: Uint8Array = null, agentUri: String = null, parent: String = null): IRestoreAgentRequest = {
+    val __obj = js.Dynamic.literal()
+    if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent)
+    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[IRestoreAgentRequest]
+  }
+}
+

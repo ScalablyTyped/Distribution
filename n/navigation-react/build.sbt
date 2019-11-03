@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "navigation-react"
-version := "2.0-dt-20180803Z-03c927"
+version := "4.1.1-b6b882"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "navigation" % "4.0-dt-20180214Z-b4faac",
+  "org.scalablytyped" %%% "navigation" % "5.2.0-1927b5",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")

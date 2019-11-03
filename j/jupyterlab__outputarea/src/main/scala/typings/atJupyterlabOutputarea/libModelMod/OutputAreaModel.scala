@@ -1,6 +1,7 @@
 package typings.atJupyterlabOutputarea.libModelMod
 
 import typings.atJupyterlabObservables.libObservablelistMod.IObservableList
+import typings.atJupyterlabOutputarea.Anon_LastModel
 import typings.atJupyterlabOutputarea.libModelMod.IOutputAreaModel.ChangedArgs
 import typings.atJupyterlabOutputarea.libModelMod.IOutputAreaModel.IContentFactory
 import typings.atJupyterlabOutputarea.libModelMod.IOutputAreaModel.IOptions
@@ -76,6 +77,13 @@ class OutputAreaModel () extends IOutputAreaModel {
     */
   /* CompleteClass */
   override def dispose(): Unit = js.native
+  /**
+    * Whether a new value should be consolidated with the previous output.
+    *
+    * This will only be called if the minimal criteria of both being stream
+    * messages of the same type.
+    */
+  /* protected */ def shouldCombine(options: Anon_LastModel): Boolean = js.native
 }
 
 @JSImport("@jupyterlab/outputarea/lib/model", "OutputAreaModel")

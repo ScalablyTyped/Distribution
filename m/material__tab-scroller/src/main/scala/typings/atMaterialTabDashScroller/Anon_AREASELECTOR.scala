@@ -1,0 +1,20 @@
+package typings.atMaterialTabDashScroller
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_AREASELECTOR extends js.Object {
+  var AREA_SELECTOR: String
+  var CONTENT_SELECTOR: String
+}
+
+object Anon_AREASELECTOR {
+  @scala.inline
+  def apply(AREA_SELECTOR: String, CONTENT_SELECTOR: String): Anon_AREASELECTOR = {
+    val __obj = js.Dynamic.literal(AREA_SELECTOR = AREA_SELECTOR, CONTENT_SELECTOR = CONTENT_SELECTOR)
+  
+    __obj.asInstanceOf[Anon_AREASELECTOR]
+  }
+}
+

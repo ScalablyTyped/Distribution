@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-animatable
 
-Typings are for version 1.3.2
+Typings are for version 1.3.3
 
 ## Library description:
 Easy to use declarative transitions and animations for React Native

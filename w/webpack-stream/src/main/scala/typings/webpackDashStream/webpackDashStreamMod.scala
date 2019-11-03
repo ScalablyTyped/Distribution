@@ -19,7 +19,7 @@ object webpackDashStreamMod extends js.Object {
     */
   def apply(): ReadWriteStream = js.native
   def apply(config: Configuration): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: Anon_Args): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: Anon_Args, callback: Handler): ReadWriteStream = js.native
+  def apply(config: Configuration, wp: Anon_BannerPlugin): ReadWriteStream = js.native
+  def apply(config: Configuration, wp: Anon_BannerPlugin, callback: Handler): ReadWriteStream = js.native
 }
 

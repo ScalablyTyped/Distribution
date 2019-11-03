@@ -9,19 +9,20 @@ package object swaggerDashExpressDashMiddlewareMod {
   import typings.express.expressMod.Application
   import typings.express.expressMod.RequestHandler
   import typings.express.expressMod.Router
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
   import typings.swaggerDashParser.swaggerDashParserMod.^
 
-  type CORSSignature = js.Function0[RequestHandler]
+  type CORSSignature = js.Function0[RequestHandler[ParamsDictionary]]
   type DefinitionsObject = StringDictionary[SchemaObject]
   type ExampleObject = StringDictionary[js.Any]
   type HeaderObject = ItemsObject
   type HeadersObject = StringDictionary[HeaderObject]
-  type MetadataSignature = js.Function1[/* router */ js.UndefOr[Application | Router], RequestHandler]
+  type MetadataSignature = js.Function1[/* router */ js.UndefOr[Application | Router], RequestHandler[ParamsDictionary]]
   type MimeTypes = js.Array[String]
   type MockSignature = js.Function2[
     /* router */ js.UndefOr[Application | Router], 
     /* datastore */ js.UndefOr[js.Any], 
-    RequestHandler
+    RequestHandler[ParamsDictionary]
   ]
   type Parameters = js.Array[ParameterObject | ReferenceObject]
   type ParametersDefinitionsObject = StringDictionary[ParameterObject]

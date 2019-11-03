@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-query-complexity"
-version := "0.1-dt-20190826Z-58ad1e"
+version := "0.4.1-91d426"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

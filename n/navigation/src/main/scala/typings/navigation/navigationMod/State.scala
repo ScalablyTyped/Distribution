@@ -102,8 +102,10 @@ class State () extends StateInfo {
     * @param key The key of the navigation data item
     * @param val The Url value of the navigation data item
     * @param queryString A value indicating the Url value's location
+    * @param index The index of the navigation data array item
     */
   def urlEncode(state: State, key: String, `val`: String, queryString: Boolean): String = js.native
+  def urlEncode(state: State, key: String, `val`: String, queryString: Boolean, index: Double): String = js.native
   /**
     * Validates the NavigationData before navigating to the new State
     * @param data The new NavigationData

@@ -4,7 +4,7 @@ import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDas
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.HeadlessTaskEventName
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.LogLevel
-import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Provider
+import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.NativeProvider
 import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.iOSActivityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -83,10 +83,13 @@ object reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings {
   sealed trait foreground extends Event
   
   @js.native
-  sealed trait fused extends Provider
+  sealed trait fused extends NativeProvider
   
   @js.native
-  sealed trait gps extends Provider
+  sealed trait gps extends NativeProvider
+  
+  @js.native
+  sealed trait http_authorization extends Event
   
   @js.native
   sealed trait location
@@ -94,10 +97,10 @@ object reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings {
        with HeadlessTaskEventName
   
   @js.native
-  sealed trait network extends Provider
+  sealed trait network extends NativeProvider
   
   @js.native
-  sealed trait passive extends Provider
+  sealed trait passive extends NativeProvider
   
   @js.native
   sealed trait start extends Event
@@ -160,6 +163,8 @@ object reactDashNativeDashMauron85DashBackgroundDashGeolocationStrings {
   def fused: fused = "fused".asInstanceOf[fused]
   @scala.inline
   def gps: gps = "gps".asInstanceOf[gps]
+  @scala.inline
+  def http_authorization: http_authorization = "http_authorization".asInstanceOf[http_authorization]
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   @scala.inline

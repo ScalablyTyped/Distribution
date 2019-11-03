@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-base", "AuthFlag")
 @js.native
 object AuthFlag extends js.Object {
+  type immutable = `4`
   type required = `1`
   type revocable = `2`
-  type rmmutable = `4`
 }
 

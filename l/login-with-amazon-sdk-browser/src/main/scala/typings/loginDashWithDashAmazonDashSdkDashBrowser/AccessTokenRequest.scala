@@ -18,10 +18,6 @@ trait AccessTokenRequest
     */
   var expires_in: Double = js.native
   /**
-    * The scope granted by the authorization server for the access token.
-    */
-  var scope: AuthorizationScopeOptions | js.Array[AuthorizationScopeOptions] = js.native
-  /**
     * The type of token issued. Must be `"bearer"`.
     */
   var token_type: bearer = js.native

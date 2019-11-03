@@ -6,14 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait CpuCurrentSpeedData extends js.Object {
   var avg: String
+  var cores: js.Array[Double]
   var max: String
   var min: String
 }
 
 object CpuCurrentSpeedData {
   @scala.inline
-  def apply(avg: String, max: String, min: String): CpuCurrentSpeedData = {
-    val __obj = js.Dynamic.literal(avg = avg, max = max, min = min)
+  def apply(avg: String, cores: js.Array[Double], max: String, min: String): CpuCurrentSpeedData = {
+    val __obj = js.Dynamic.literal(avg = avg, cores = cores, max = max, min = min)
   
     __obj.asInstanceOf[CpuCurrentSpeedData]
   }

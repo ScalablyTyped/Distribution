@@ -1,0 +1,29 @@
+package typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait Label extends js.Object
+
+/** Label enum. */
+@JSImport("dialogflow/protos/protos", "google.protobuf.FieldDescriptorProto.Label")
+@js.native
+object Label extends js.Object {
+  @js.native
+  sealed trait LABEL_OPTIONAL extends Label
+  
+  @js.native
+  sealed trait LABEL_REPEATED extends Label
+  
+  @js.native
+  sealed trait LABEL_REQUIRED extends Label
+  
+  /* 1 */ val LABEL_OPTIONAL: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Label.LABEL_OPTIONAL with Double = js.native
+  /* 3 */ val LABEL_REPEATED: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REPEATED with Double = js.native
+  /* 2 */ val LABEL_REQUIRED: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Label.LABEL_REQUIRED with Double = js.native
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[Label with Double] = js.native
+}
+

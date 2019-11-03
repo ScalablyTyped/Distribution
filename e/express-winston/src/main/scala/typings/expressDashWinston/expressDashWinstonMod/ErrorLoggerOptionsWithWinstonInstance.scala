@@ -2,6 +2,7 @@ package typings.expressDashWinston.expressDashWinstonMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.logform.logformMod.Format
 import typings.std.Error
 import typings.winston.winstonMod.Logger
@@ -20,7 +21,7 @@ object ErrorLoggerOptionsWithWinstonInstance {
   def apply(
     winstonInstance: Logger,
     baseMeta: js.Object = null,
-    dynamicMeta: (/* req */ Request, /* res */ Response, /* err */ Error) => js.Object = null,
+    dynamicMeta: (/* req */ Request[ParamsDictionary], /* res */ Response, /* err */ Error) => js.Object = null,
     format: Format = null,
     level: String | DynamicLevelFunction = null,
     meta: js.UndefOr[Boolean] = js.undefined,

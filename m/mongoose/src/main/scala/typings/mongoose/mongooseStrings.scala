@@ -102,6 +102,15 @@ object mongooseStrings {
   sealed trait minimize extends js.Object
   
   @js.native
+  sealed trait nearest extends js.Object
+  
+  @js.native
+  sealed trait primary extends js.Object
+  
+  @js.native
+  sealed trait primaryPreferred extends js.Object
+  
+  @js.native
   sealed trait read extends js.Object
   
   @js.native
@@ -112,6 +121,12 @@ object mongooseStrings {
   
   @js.native
   sealed trait save extends js.Object
+  
+  @js.native
+  sealed trait secondary extends js.Object
+  
+  @js.native
+  sealed trait secondaryPreferred extends js.Object
   
   @js.native
   sealed trait selectPopulatedPaths extends js.Object
@@ -241,6 +256,12 @@ object mongooseStrings {
   @scala.inline
   def minimize: minimize = "minimize".asInstanceOf[minimize]
   @scala.inline
+  def nearest: nearest = "nearest".asInstanceOf[nearest]
+  @scala.inline
+  def primary: primary = "primary".asInstanceOf[primary]
+  @scala.inline
+  def primaryPreferred: primaryPreferred = "primaryPreferred".asInstanceOf[primaryPreferred]
+  @scala.inline
   def read: read = "read".asInstanceOf[read]
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
@@ -248,6 +269,10 @@ object mongooseStrings {
   def safe: safe = "safe".asInstanceOf[safe]
   @scala.inline
   def save: save = "save".asInstanceOf[save]
+  @scala.inline
+  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  @scala.inline
+  def secondaryPreferred: secondaryPreferred = "secondaryPreferred".asInstanceOf[secondaryPreferred]
   @scala.inline
   def selectPopulatedPaths: selectPopulatedPaths = "selectPopulatedPaths".asInstanceOf[selectPopulatedPaths]
   @scala.inline

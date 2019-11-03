@@ -2,6 +2,7 @@ package typings.expressDashSlowDashDown.expressDashSlowDashDownMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +25,7 @@ trait Options extends js.Object {
     * Function used to generate keys. By default user IP address (`req.ip`) is used.
     * Default: `(req, res) => req.ip`
     */
-  var keyGenerator: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, String]] = js.undefined
+  var keyGenerator: js.UndefOr[js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, String]] = js.undefined
   /**
     * Function to execute the first time the limit is reached within `windowMs`.
     * Default: `(req, res, opts) => {}`
@@ -36,7 +37,7 @@ trait Options extends js.Object {
     * Function used to skip requests. Returning `true` from the function will skip delaying for that request.
     * Default: `(req, res) => false`
     */
-  var skip: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, Boolean]] = js.undefined
+  var skip: js.UndefOr[js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Boolean]] = js.undefined
   /**
     * When `true` failed requests (response status >= 400) won't be counted. Defaults to `false`.
     */
@@ -60,9 +61,9 @@ object Options {
   def apply(
     delayAfter: Int | Double = null,
     delayMs: Int | Double = null,
-    keyGenerator: (/* req */ Request, /* res */ Response) => String = null,
+    keyGenerator: (/* req */ Request[ParamsDictionary], /* res */ Response) => String = null,
     onLimitReached: (/* req */ RequestWithSlowDown, /* res */ Response, Options) => Unit = null,
-    skip: (/* req */ Request, /* res */ Response) => Boolean = null,
+    skip: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null,
     skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined,
     store: Store = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__statusbar-extension"
-version := "1.2.0-524e9f"
+version := "1.2.1-ce68d5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,6 +2,7 @@ package typings.morgan.morganMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +26,7 @@ trait Options extends js.Object {
     * Function to determine if logging is skipped, defaults to false. This
     * function will be called as skip(req, res).
     */
-  var skip: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, Boolean]] = js.undefined
+  var skip: js.UndefOr[js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Boolean]] = js.undefined
   /***
     * Output stream for writing log lines, defaults to process.stdout.
     * @param str
@@ -38,7 +39,7 @@ object Options {
   def apply(
     buffer: js.UndefOr[Boolean] = js.undefined,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    skip: (/* req */ Request, /* res */ Response) => Boolean = null,
+    skip: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null,
     stream: StreamOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal()

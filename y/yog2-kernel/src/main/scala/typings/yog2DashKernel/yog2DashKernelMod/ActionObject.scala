@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation._
 
 trait ActionObject
   extends /* key */ StringDictionary[js.Any] {
-  var copy: js.UndefOr[RequestHandler] = js.undefined
-  var del: js.UndefOr[RequestHandler] = js.undefined
-  var delete: js.UndefOr[RequestHandler] = js.undefined
-  var get: js.UndefOr[RequestHandler] = js.undefined
-  var head: js.UndefOr[RequestHandler] = js.undefined
-  var link: js.UndefOr[RequestHandler] = js.undefined
-  var lock: js.UndefOr[RequestHandler] = js.undefined
-  var options: js.UndefOr[RequestHandler] = js.undefined
-  var patch: js.UndefOr[RequestHandler] = js.undefined
-  var post: js.UndefOr[RequestHandler] = js.undefined
-  var propfind: js.UndefOr[RequestHandler] = js.undefined
-  var purge: js.UndefOr[RequestHandler] = js.undefined
-  var put: js.UndefOr[RequestHandler] = js.undefined
-  var unlick: js.UndefOr[RequestHandler] = js.undefined
-  var unlock: js.UndefOr[RequestHandler] = js.undefined
-  var view: js.UndefOr[RequestHandler] = js.undefined
+  var copy: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var del: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var delete: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var get: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var head: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var link: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var lock: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var options: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var patch: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var post: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var propfind: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var purge: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var put: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var unlick: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var unlock: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
+  var view: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
 }
 
 object ActionObject {

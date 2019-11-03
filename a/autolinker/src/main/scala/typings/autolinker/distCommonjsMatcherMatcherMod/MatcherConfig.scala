@@ -1,0 +1,20 @@
+package typings.autolinker.distCommonjsMatcherMatcherMod
+
+import typings.autolinker.distCommonjsAnchorDashTagDashBuilderMod.AnchorTagBuilder
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MatcherConfig extends js.Object {
+  var tagBuilder: AnchorTagBuilder
+}
+
+object MatcherConfig {
+  @scala.inline
+  def apply(tagBuilder: AnchorTagBuilder): MatcherConfig = {
+    val __obj = js.Dynamic.literal(tagBuilder = tagBuilder)
+  
+    __obj.asInstanceOf[MatcherConfig]
+  }
+}
+

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nblas
 
-Typings are for version 1.2
+Typings are for version 2.1.7
 
 ## Library description:
 C++ bindings for all single- and double-precision CBLAS (Basic Linear Algebra Subprograms) routines.
@@ -21,7 +21,7 @@ C++ bindings for all single- and double-precision CBLAS (Basic Linear Algebra Su
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

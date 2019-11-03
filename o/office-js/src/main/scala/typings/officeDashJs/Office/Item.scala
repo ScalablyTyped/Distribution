@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
   * The item namespace is used to access the currently selected message, meeting request, or appointment. 
   * You can determine the type of the item by using the `itemType` property.
   *
+  * If you want to see IntelliSense for only a specific type, cast this item to one of the following:
+  *
+  * {@link Office.ItemCompose | ItemCompose}, {@link Office.ItemRead | ItemRead},
+  * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
+  * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
+  *
   * [Api set: Mailbox 1.0]
   *
   * @remarks
@@ -31,6 +37,18 @@ trait Item extends js.Object {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var body: Body = js.native
+  /**
+    * Gets an object that provides methods for managing the item's categories.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    */
+  var categories: Categories = js.native
   /**
     * Gets the type of item that an instance represents.
     *
@@ -97,8 +115,7 @@ trait Item extends js.Object {
   /**
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     * 
-    * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-    * `Office.EventType.RecurrenceChanged`.
+    * To see which event types are supported, see `Office.EventType` for details.
     * 
     * [Api set: Mailbox 1.7]
     *
@@ -128,6 +145,82 @@ trait Item extends js.Object {
     handler: js.Any,
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  /**
+    * Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
+    * 
+    * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
+    * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
+    * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+    * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
+    * continue in a separate window.
+    * 
+    * [Api set: Mailbox 1.8]
+    * 
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    * 
+    * **Errors**:
+    * 
+    * - InvalidAttachmentId: The attachment identifier does not exist.
+    * 
+    * @param attachmentId - The identifier of the attachment you want to get. 
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error property will contain and error code 
+    *                 with the reason for the failure.
+    */
+  def getAttachmentContentAsync(attachmentId: String): Unit = js.native
+  def getAttachmentContentAsync(
+    attachmentId: String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
+  ): Unit = js.native
+  def getAttachmentContentAsync(attachmentId: String, options: AsyncContextOptions): Unit = js.native
+  def getAttachmentContentAsync(
+    attachmentId: String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
+  ): Unit = js.native
+  /**
+    * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    * 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult.
+    *                 The `value` property of the result is the properties of the shared item.
+    */
+  def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]): Unit = js.native
+  /**
+    * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    * 
+    * @param options - An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult.
+    *                 The `value` property of the result is the properties of the shared item.
+    */
+  def getSharedPropertiesAsync(
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]
   ): Unit = js.native
   /**
     * Asynchronously loads custom properties for this add-in on the selected item.
@@ -166,8 +259,7 @@ trait Item extends js.Object {
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     * 
-    * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-    * `Office.EventType.RecurrenceChanged`.
+    * To see which event types are supported, see `Office.EventType` for details.
     * 
     * [Api set: Mailbox 1.7]
     *

@@ -1,7 +1,7 @@
 
 # Scala.js typings for postmark
 
-Typings are for version 1.4
+Typings are for version 2.3.0
 
 ## Library description:
 Official Node.js client library for the Postmark HTTP API - http://www.postmarkapp.com
@@ -24,7 +24,7 @@ Official Node.js client library for the Postmark HTTP API - http://www.postmarka
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

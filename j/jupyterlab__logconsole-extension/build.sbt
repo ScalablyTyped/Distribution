@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__logconsole-extension"
-version := "1.0.0-7db224"
+version := "1.0.1-de3e1f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,9 +11,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-967511",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-30b104",
   "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.0-011e3e",
-  "org.scalablytyped" %%% "jupyterlab__logconsole" % "1.0.0-c74ace",
+  "org.scalablytyped" %%% "jupyterlab__logconsole" % "1.0.1-f4d873",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-4c2162",
-  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.2.0-e2afbf",
+  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.2.1-d88f21",
   "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.0-18822b",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-a07a34",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-5f1f82",

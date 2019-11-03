@@ -8,8 +8,9 @@ package object expressDashRedisDashCacheMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.express.expressMod.Request
   import typings.express.expressMod.Response
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
   type ExpirationConfig = StringDictionary[Double]
-  type ExpirationPolicy = js.Function2[/* req */ Request, /* res */ Response, Double]
+  type ExpirationPolicy = js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Double]
   type ExpireOption = Double | ExpirationConfig
 }

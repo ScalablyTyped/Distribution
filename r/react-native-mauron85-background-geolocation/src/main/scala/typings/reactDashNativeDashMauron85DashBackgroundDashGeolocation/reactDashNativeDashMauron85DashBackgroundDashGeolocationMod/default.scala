@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-native-mauron85-background-geolocation", JSImport.Default)
 @js.native
-object default extends TopLevel[BackgroundGeolocationStatic]
+object default extends TopLevel[BackgroundGeolocationPlugin]
 

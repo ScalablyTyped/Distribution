@@ -1,6 +1,7 @@
 package typings.istanbulDashMiddleware
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.istanbulDashMiddleware.istanbulDashMiddlewareMod.ClientMatcher
 import typings.istanbulDashMiddleware.istanbulDashMiddlewareMod.PathTransformer
 import scala.scalajs.js
@@ -16,8 +17,8 @@ trait Anon_Matcher extends js.Object {
 object Anon_Matcher {
   @scala.inline
   def apply(
-    matcher: /* req */ Request => Boolean = null,
-    pathTransformer: /* req */ Request => String = null,
+    matcher: /* req */ Request[ParamsDictionary] => Boolean = null,
+    pathTransformer: /* req */ Request[ParamsDictionary] => String = null,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Anon_Matcher = {
     val __obj = js.Dynamic.literal()

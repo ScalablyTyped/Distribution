@@ -5,6 +5,7 @@ import typings.authmosphere.libSrcTypesPrecedenceMod.PrecedenceOptions
 import typings.express.expressMod.NextFunction
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +22,7 @@ object ScopeMiddlewareOptions {
   @scala.inline
   def apply(
     logger: Logger = null,
-    onAuthorizationFailedHandler: (/* request */ Request, /* resonse */ Response, /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit = null,
+    onAuthorizationFailedHandler: (/* request */ Request[ParamsDictionary], /* resonse */ Response, /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit = null,
     precedenceOptions: PrecedenceOptions = null
   ): ScopeMiddlewareOptions = {
     val __obj = js.Dynamic.literal()

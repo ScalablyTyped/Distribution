@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
   * 
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
   * You should treat this as a mode of Office.context.mailbox.item. Refer to the
-  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item | Object Model} page for more information.
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.officeDashJs.Office.Item because Already inherited
-- typings.officeDashJs.Office.ItemCompose because var conflicts: body, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getSelectedDataAsync, getSelectedDataAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
+- typings.officeDashJs.Office.ItemCompose because var conflicts: body, categories, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getSelectedDataAsync, getSelectedDataAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
 trait MessageCompose extends Message {
   /**
     * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
@@ -38,7 +38,7 @@ trait MessageCompose extends Message {
     * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
     * current item.
     *
-    * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
+    * The cc property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the Cc line of 
     * the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
     * 
     * - Get 500 members maximum.
@@ -71,6 +71,20 @@ trait MessageCompose extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
     */
   var from: From = js.native
+  /**
+    * Gets or sets the custom internet headers of a message.
+    * 
+    * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var internetHeaders: InternetHeaders = js.native
   /**
     * Gets or sets the description that appears in the subject field of an item.
     *
@@ -184,6 +198,91 @@ trait MessageCompose extends Message {
   def addFileAttachmentAsync(uri: String, attachmentName: String, options: AsyncContextOptions with Anon_IsInline): Unit = js.native
   def addFileAttachmentAsync(
     uri: String,
+    attachmentName: String,
+    options: AsyncContextOptions with Anon_IsInline,
+    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
+  ): Unit = js.native
+  /**
+    * Adds a file to a message or appointment as an attachment.
+    *
+    * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form.
+    * This method returns the attachment identifier in the asyncResult.value object.
+    *
+    * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+    * 
+    * **Note**: If you're using a data URL API (e.g., readAsDataURL), you need to strip out the data URL prefix then send the rest of the string to this API.
+    * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**:
+    * 
+    * - AttachmentSizeExceeded: The attachment is larger than allowed.
+    * 
+    * - FileTypeNotSupported: The attachment has an extension that is not allowed.
+    * 
+    * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
+    * 
+    * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    *        isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    *                  On success, the attachment identifier will be provided in the asyncResult.value property. 
+    *                  If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+    */
+  /**
+    * Adds a file to a message or appointment as an attachment.
+    *
+    * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form.
+    * This method returns the attachment identifier in the asyncResult.value object.
+    *
+    * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+    * 
+    * **Note**: If you're using a data URL API (e.g., readAsDataURL), you need to strip out the data URL prefix then send the rest of the string to this API.
+    * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Errors**:
+    * 
+    * - AttachmentSizeExceeded: The attachment is larger than allowed.
+    * 
+    * - FileTypeNotSupported: The attachment has an extension that is not allowed.
+    * 
+    * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
+    * 
+    * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    *        isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    *                  On success, the attachment identifier will be provided in the asyncResult.value property. 
+    *                  If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+    */
+  def addFileAttachmentFromBase64Async(base64File: String, attachmentName: String): Unit = js.native
+  def addFileAttachmentFromBase64Async(
+    base64File: String,
+    attachmentName: String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
+  ): Unit = js.native
+  def addFileAttachmentFromBase64Async(base64File: String, attachmentName: String, options: AsyncContextOptions with Anon_IsInline): Unit = js.native
+  def addFileAttachmentFromBase64Async(
+    base64File: String,
     attachmentName: String,
     options: AsyncContextOptions with Anon_IsInline,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
@@ -308,6 +407,97 @@ trait MessageCompose extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
     */
   def close(): Unit = js.native
+  /**
+    * Gets the item's attachments as an array.
+    * 
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and error code with the reason for 
+    *                 the failure.
+    */
+  /**
+    * Gets the item's attachments as an array.
+    * 
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and error code with the reason for 
+    *                 the failure.
+    */
+  def getAttachmentsAsync(): Unit = js.native
+  def getAttachmentsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetails]], Unit]): Unit = js.native
+  def getAttachmentsAsync(options: AsyncContextOptions): Unit = js.native
+  def getAttachmentsAsync(
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetails]], Unit]
+  ): Unit = js.native
+  /**
+    * Asynchronously gets the ID of a saved item.
+    *
+    * When invoked, this method returns the item ID via the callback method.
+    * 
+    * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API),
+    * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
+    * Until the item is synced, the `itemId` is not recognized and using it returns an error.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**:
+    * 
+    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+    * 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    */
+  def getItemIdAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  /**
+    * Asynchronously gets the ID of a saved item.
+    *
+    * When invoked, this method returns the item ID via the callback method.
+    * 
+    * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API),
+    * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
+    * Until the item is synced, the `itemId` is not recognized and using it returns an error.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
+    * 
+    * **Errors**:
+    * 
+    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+    * 
+    * @param options - An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    */
+  def getItemIdAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getSelectedDataAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native
   def getSelectedDataAsync(
     coercionType: String,

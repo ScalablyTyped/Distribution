@@ -1,6 +1,7 @@
 package typings.samlp.samlpMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,7 @@ trait IdPOptions extends js.Object {
   var encryptionAlgorithm: js.UndefOr[String] = js.undefined
   var encryptionCert: js.UndefOr[String | Buffer] = js.undefined
   var encryptionPublicKey: js.UndefOr[String | Buffer] = js.undefined
-  var getUserFromRequest: js.UndefOr[js.Function1[/* req */ Request, _]] = js.undefined
+  var getUserFromRequest: js.UndefOr[js.Function1[/* req */ Request[ParamsDictionary], _]] = js.undefined
   var inResponseTo: js.UndefOr[String] = js.undefined
   var issuer: String
   var key: String | Buffer
@@ -29,7 +30,7 @@ trait IdPOptions extends js.Object {
   def getPostURL(
     audience: String,
     authnRequestDom: js.Any,
-    req: Request,
+    req: Request[ParamsDictionary],
     callback: js.Function2[/* err */ js.Any, /* url */ String, Unit]
   ): Unit
 }
@@ -38,7 +39,7 @@ object IdPOptions {
   @scala.inline
   def apply(
     cert: String | Buffer,
-    getPostURL: (String, js.Any, Request, js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit,
+    getPostURL: (String, js.Any, Request[ParamsDictionary], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit,
     issuer: String,
     key: String | Buffer,
     RelayState: String = null,
@@ -49,7 +50,7 @@ object IdPOptions {
     encryptionAlgorithm: String = null,
     encryptionCert: String | Buffer = null,
     encryptionPublicKey: String | Buffer = null,
-    getUserFromRequest: /* req */ Request => _ = null,
+    getUserFromRequest: /* req */ Request[ParamsDictionary] => _ = null,
     inResponseTo: String = null,
     keyEncryptionAlgorighm: String = null,
     lifetimeInSeconds: Int | Double = null,

@@ -2,6 +2,7 @@ package typings.expressDashWinston.expressDashWinstonMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.expressDashWinston.Anon_Error
 import typings.logform.logformMod.Format
 import typings.std.Error
@@ -24,11 +25,11 @@ object LoggerOptionsWithWinstonInstance {
     bodyBlacklist: js.Array[String] = null,
     bodyWhitelist: js.Array[String] = null,
     colorize: js.UndefOr[Boolean] = js.undefined,
-    dynamicMeta: (/* req */ Request, /* res */ Response, /* err */ Error) => js.Object = null,
+    dynamicMeta: (/* req */ Request[ParamsDictionary], /* res */ Response, /* err */ Error) => js.Object = null,
     expressFormat: js.UndefOr[Boolean] = js.undefined,
     format: Format = null,
     headerBlacklist: js.Array[String] = null,
-    ignoreRoute: (/* req */ Request, /* res */ Response) => Boolean = null,
+    ignoreRoute: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null,
     ignoredRoutes: js.Array[String] = null,
     level: String | DynamicLevelFunction = null,
     meta: js.UndefOr[Boolean] = js.undefined,
@@ -40,7 +41,7 @@ object LoggerOptionsWithWinstonInstance {
     responseField: String = null,
     responseFilter: (/* res */ FilterResponse, /* propName */ String) => js.Any = null,
     responseWhitelist: js.Array[String] = null,
-    skip: (/* req */ Request, /* res */ Response) => Boolean = null,
+    skip: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null,
     statusLevels: Anon_Error = null
   ): LoggerOptionsWithWinstonInstance = {
     val __obj = js.Dynamic.literal(winstonInstance = winstonInstance)

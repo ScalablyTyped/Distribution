@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-redux-toastr
 
-Typings are for version 7.4
+Typings are for version 7.6
 
 ## Library description:
 react-redux-toastr is a React toastr message implemented with Redux

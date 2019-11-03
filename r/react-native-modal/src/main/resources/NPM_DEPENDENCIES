@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-modal" : "11.4.0"
+      "react-native-modal" : "11.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-modal" : "11.4.0"
+      "react-native-modal" : "11.5.1"
     }
   ],
   "compile-devDependencies" : [

@@ -59,7 +59,7 @@ trait DbCreateOptions extends CommonOptions {
   /**
     * the prefered read preference. use 'ReadPreference' class.
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   /**
     * Serialize functions on any object.
     */
@@ -82,7 +82,7 @@ object DbCreateOptions {
     promoteValues: js.UndefOr[Boolean] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
     readConcern: ReadConcern | String = null,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     serializeFunctions: js.UndefOr[Boolean] = js.undefined,
     session: ClientSession = null,
     w: scala.Double | majority | String = null,
@@ -102,7 +102,7 @@ object DbCreateOptions {
     if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
     if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
     if (session != null) __obj.updateDynamic("session")(session)
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])

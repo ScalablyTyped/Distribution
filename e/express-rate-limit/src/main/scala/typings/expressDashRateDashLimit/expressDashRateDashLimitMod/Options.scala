@@ -3,6 +3,7 @@ package typings.expressDashRateDashLimit.expressDashRateDashLimitMod
 import typings.express.expressMod.NextFunction
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +17,9 @@ trait Options extends js.Object {
     * Date object.
     * Default: `(req, res, next) => res.status(options.statusCode).send(options.message)`
     */
-  var handler: js.UndefOr[js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, _]] = js.undefined
+  var handler: js.UndefOr[
+    js.Function3[/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction, _]
+  ] = js.undefined
   /**
     * Enable headers for request limit (`X-RateLimit-Limit`) and current usage (`X-RateLimit-Remaining`) on all
     * responses andtime to wait before retrying (`Retry-After`) when `max` is exceeded. Defaults to `true`.
@@ -26,7 +29,7 @@ trait Options extends js.Object {
     * Function used to generate keys. Defaults to using `req.ip`.
     * Default: `(req, res) => req.ip`
     */
-  var keyGenerator: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, String]] = js.undefined
+  var keyGenerator: js.UndefOr[js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, String]] = js.undefined
   /**
     * Max number of connections during `windowMs` before sending a 429 response. May be a `number` or
     * a function that returns a `number` or a `Promise<number>`. Defaults to `5`. Set to `0` to disable.
@@ -44,14 +47,19 @@ trait Options extends js.Object {
     * Default: `(req, res, opts) => {}`
     */
   var onLimitReached: js.UndefOr[
-    js.Function3[/* req */ Request, /* res */ Response, /* optionsUsed */ this.type, Unit]
+    js.Function3[
+      /* req */ Request[ParamsDictionary], 
+      /* res */ Response, 
+      /* optionsUsed */ this.type, 
+      Unit
+    ]
   ] = js.undefined
   /**
     * Function used to skip requests. Returning `true` from the function will skip limiting for that request. Defaults to
     * always `false` (count all requests).
     * Default: `(req, res) => false`
     */
-  var skip: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, Boolean]] = js.undefined
+  var skip: js.UndefOr[js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Boolean]] = js.undefined
   /**
     * When set to `true`, failed requests (status >= 400, request canceled or errored) won't be counted. Defaults to `false`.
     */
@@ -77,13 +85,13 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    handler: (/* req */ Request, /* res */ Response, /* next */ NextFunction) => _ = null,
+    handler: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => _ = null,
     headers: js.UndefOr[Boolean] = js.undefined,
-    keyGenerator: (/* req */ Request, /* res */ Response) => String = null,
+    keyGenerator: (/* req */ Request[ParamsDictionary], /* res */ Response) => String = null,
     max: Double | MaxValueFn = null,
     message: String | Buffer | Message = null,
-    onLimitReached: (/* req */ Request, /* res */ Response, Options) => Unit = null,
-    skip: (/* req */ Request, /* res */ Response) => Boolean = null,
+    onLimitReached: (/* req */ Request[ParamsDictionary], /* res */ Response, Options) => Unit = null,
+    skip: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null,
     skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined,
     statusCode: Int | Double = null,

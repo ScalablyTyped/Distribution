@@ -77,8 +77,7 @@ class Cursor[T] () extends Readable {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#setCursorOption */
   def setCursorOption(field: String, value: js.Object): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#setReadPreference */
-  def setReadPreference(readPreference: String): Cursor[T] = js.native
-  def setReadPreference(readPreference: ReadPreference): Cursor[T] = js.native
+  def setReadPreference(readPreference: ReadPreferenceOrMode): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#showRecordId */
   def showRecordId(showRecordId: js.Object): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#skip */

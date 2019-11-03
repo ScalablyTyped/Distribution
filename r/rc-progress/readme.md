@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-progress
 
-Typings are for version 2.2
+Typings are for version 2.5.2
 
 ## Library description:
 progress ui component for react
@@ -24,7 +24,7 @@ progress ui component for react
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

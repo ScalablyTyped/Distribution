@@ -1,0 +1,26 @@
+package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message
+
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.IBrowseCarouselCardItem
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Properties of a BrowseCarouselCard. */
+trait IBrowseCarouselCard extends js.Object {
+  /** BrowseCarouselCard imageDisplayOptions */
+  var imageDisplayOptions: js.UndefOr[ImageDisplayOptions | Null] = js.undefined
+  /** BrowseCarouselCard items */
+  var items: js.UndefOr[js.Array[IBrowseCarouselCardItem] | Null] = js.undefined
+}
+
+object IBrowseCarouselCard {
+  @scala.inline
+  def apply(imageDisplayOptions: ImageDisplayOptions = null, items: js.Array[IBrowseCarouselCardItem] = null): IBrowseCarouselCard = {
+    val __obj = js.Dynamic.literal()
+    if (imageDisplayOptions != null) __obj.updateDynamic("imageDisplayOptions")(imageDisplayOptions)
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[IBrowseCarouselCard]
+  }
+}
+

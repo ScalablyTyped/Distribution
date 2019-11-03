@@ -1,30 +1,46 @@
 package typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation
 
+import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.AuthorizationStatus
+import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.LocationErrorCode
+import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.LocationProvider
+import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ServiceMode
+import typings.reactDashNativeDashMauron85DashBackgroundDashGeolocation.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod._AccuracyLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNativeDashMauron85DashBackgroundDashGeolocationNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends AuthorizationStatus
+       with LocationProvider
+       with ServiceMode
+       with _AccuracyLevel
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends AuthorizationStatus
+       with LocationErrorCode
+       with LocationProvider
+       with ServiceMode
   
   @js.native
-  sealed trait `100` extends js.Object
+  sealed trait `100` extends _AccuracyLevel
   
   @js.native
-  sealed trait `1000` extends js.Object
+  sealed trait `1000` extends _AccuracyLevel
   
   @js.native
-  sealed trait `10000` extends js.Object
+  sealed trait `10000` extends _AccuracyLevel
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends AuthorizationStatus
+       with LocationErrorCode
+       with LocationProvider
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3` extends LocationErrorCode
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

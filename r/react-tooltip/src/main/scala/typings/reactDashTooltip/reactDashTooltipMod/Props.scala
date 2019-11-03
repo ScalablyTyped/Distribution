@@ -1,8 +1,11 @@
 package typings.reactDashTooltip.reactDashTooltipMod
 
 import typings.react.reactMod.ReactNode
+import typings.reactDashTooltip.Anon_Left
 import typings.reactDashTooltip.reactDashTooltipStrings.div
 import typings.reactDashTooltip.reactDashTooltipStrings.span
+import typings.std.Element
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,6 +33,19 @@ trait Props extends js.Object {
   var isCapture: js.UndefOr[Boolean] = js.undefined
   var multiline: js.UndefOr[Boolean] = js.undefined
   var offset: js.UndefOr[Offset] = js.undefined
+  var overridePosition: js.UndefOr[
+    js.Function8[
+      /* position */ Anon_Left, 
+      /* currentEvent */ Event, 
+      /* currentTarget */ Element, 
+      /* node */ js.Any, 
+      /* place */ Place, 
+      /* desiredPlace */ Place, 
+      /* effect */ Effect, 
+      /* offset */ Offset, 
+      Anon_Left
+    ]
+  ] = js.undefined
   var place: js.UndefOr[Place] = js.undefined
   var resizeHide: js.UndefOr[Boolean] = js.undefined
   var role: js.UndefOr[String] = js.undefined
@@ -65,6 +81,7 @@ object Props {
     isCapture: js.UndefOr[Boolean] = js.undefined,
     multiline: js.UndefOr[Boolean] = js.undefined,
     offset: Offset = null,
+    overridePosition: (/* position */ Anon_Left, /* currentEvent */ Event, /* currentTarget */ Element, /* node */ js.Any, /* place */ Place, /* desiredPlace */ Place, /* effect */ Effect, /* offset */ Offset) => Anon_Left = null,
     place: Place = null,
     resizeHide: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
@@ -97,6 +114,7 @@ object Props {
     if (!js.isUndefined(isCapture)) __obj.updateDynamic("isCapture")(isCapture)
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
     if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (overridePosition != null) __obj.updateDynamic("overridePosition")(js.Any.fromFunction8(overridePosition))
     if (place != null) __obj.updateDynamic("place")(place)
     if (!js.isUndefined(resizeHide)) __obj.updateDynamic("resizeHide")(resizeHide)
     if (role != null) __obj.updateDynamic("role")(role)

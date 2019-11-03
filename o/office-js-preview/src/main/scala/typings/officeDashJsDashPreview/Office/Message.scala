@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * A subclass of {@link Office.Item} for messages.
+  * A subclass of {@link Office.Item | Item} for messages.
   * 
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
   * You should treat this as a mode of Office.context.mailbox.item. Refer to the

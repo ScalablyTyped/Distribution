@@ -1,7 +1,7 @@
 
 # Scala.js typings for material-components-web
 
-Typings are for version 0.43
+Typings are for version 3.2.0
 
 ## Library description:
 Modular and customizable Material Design UI components for the web
@@ -24,7 +24,7 @@ Modular and customizable Material Design UI components for the web
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

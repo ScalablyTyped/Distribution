@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object passportDashClientDashCertMod {
   import typings.express.expressMod.Request
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
   type VerifyCallback = js.Function3[
     /* error */ js.Any, 
@@ -14,5 +15,10 @@ package object passportDashClientDashCertMod {
     Unit
   ]
   type VerifyFunction = js.Function2[/* clientCert */ PeerCertificate, /* done */ VerifyCallback, Unit]
-  type VerifyFunctionWithRequest = js.Function3[/* clientCert */ PeerCertificate, /* req */ Request, /* done */ VerifyCallback, Unit]
+  type VerifyFunctionWithRequest = js.Function3[
+    /* clientCert */ PeerCertificate, 
+    /* req */ Request[ParamsDictionary], 
+    /* done */ VerifyCallback, 
+    Unit
+  ]
 }

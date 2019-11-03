@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-schema-typed
 
-Typings are for version 7.0.0
+Typings are for version 7.0.2
 
 ## Library description:
 JSONSchema TypeScript definitions.

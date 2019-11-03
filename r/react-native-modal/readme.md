@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-modal
 
-Typings are for version 11.4.0
+Typings are for version 11.5.1
 
 ## Library description:
 An enhanced React-Native modal

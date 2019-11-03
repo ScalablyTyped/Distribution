@@ -10,6 +10,9 @@ trait ProcessesProcessData extends js.Object {
   var mem_vsz: Double
   var name: String
   var nice: Double
+  var params: String
+  var parentPid: Double
+  var path: String
   var pcpu: Double
   var pcpus: Double
   var pcpuu: Double
@@ -30,6 +33,9 @@ object ProcessesProcessData {
     mem_vsz: Double,
     name: String,
     nice: Double,
+    params: String,
+    parentPid: Double,
+    path: String,
     pcpu: Double,
     pcpus: Double,
     pcpuu: Double,
@@ -41,7 +47,7 @@ object ProcessesProcessData {
     tty: String,
     user: String
   ): ProcessesProcessData = {
-    val __obj = js.Dynamic.literal(command = command, mem_rss = mem_rss, mem_vsz = mem_vsz, name = name, nice = nice, pcpu = pcpu, pcpus = pcpus, pcpuu = pcpuu, pid = pid, pmem = pmem, priority = priority, started = started, state = state, tty = tty, user = user)
+    val __obj = js.Dynamic.literal(command = command, mem_rss = mem_rss, mem_vsz = mem_vsz, name = name, nice = nice, params = params, parentPid = parentPid, path = path, pcpu = pcpu, pcpus = pcpus, pcpuu = pcpuu, pid = pid, pmem = pmem, priority = priority, started = started, state = state, tty = tty, user = user)
   
     __obj.asInstanceOf[ProcessesProcessData]
   }

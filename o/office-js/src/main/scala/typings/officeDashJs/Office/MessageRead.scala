@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
   * 
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
   * You should treat this as a mode of Office.context.mailbox.item. Refer to the
-  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item | Object Model} page for more information.
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.officeDashJs.Office.Item because Already inherited
-- typings.officeDashJs.Office.ItemRead because var conflicts: body, itemType, notificationMessages, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, displayReplyForm, displayReplyForm, getEntities, getEntitiesByType, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
+- typings.officeDashJs.Office.ItemRead because var conflicts: body, categories, itemType, notificationMessages, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, displayReplyForm, displayReplyForm, getEntities, getEntitiesByType, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
 trait MessageRead extends Message {
   /**
     * Gets the item's attachments as an array.
@@ -275,7 +275,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -302,7 +302,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -332,7 +332,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -358,7 +358,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -366,6 +366,29 @@ trait MessageRead extends Message {
   def displayReplyForm(formData: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def displayReplyForm(formData: ReplyFormData): Unit = js.native
   def displayReplyForm(formData: ReplyFormData, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  /**
+    * Gets all the internet headers for the message as a string.
+    * 
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
+    * 
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object.
+    *                On success, the internet headers data is provided in the asyncResult.value property as a string. 
+    *                Refer to {@link https://tools.ietf.org/html/rfc2183 | RFC 2183} for the formatting information of the returned string value. 
+    *                If the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
+    */
+  def getAllInternetHeadersAsync(): Unit = js.native
+  def getAllInternetHeadersAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  def getAllInternetHeadersAsync(options: AsyncContextOptions): Unit = js.native
+  def getAllInternetHeadersAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   /**
     * Gets the entities found in the selected item's body.
     *

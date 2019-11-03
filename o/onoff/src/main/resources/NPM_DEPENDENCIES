@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "onoff" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "onoff" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

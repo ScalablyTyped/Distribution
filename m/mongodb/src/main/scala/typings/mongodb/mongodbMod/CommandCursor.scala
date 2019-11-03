@@ -30,8 +30,7 @@ class CommandCursor () extends Readable {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#rewind */
   def rewind(): CommandCursor = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#setReadPreference */
-  def setReadPreference(readPreference: String): CommandCursor = js.native
-  def setReadPreference(readPreference: ReadPreference): CommandCursor = js.native
+  def setReadPreference(readPreference: ReadPreferenceOrMode): CommandCursor = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#toArray */
   def toArray(): js.Promise[js.Array[_]] = js.native
   def toArray(callback: MongoCallback[js.Array[_]]): Unit = js.native

@@ -1,6 +1,7 @@
 package typings.lessDashMiddleware
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +52,13 @@ trait Anon_CacheFile extends js.Object {
     * Function that is in charge of storing the css in the filesystem.
     */
   var storeCss: js.UndefOr[
-    js.Function4[/* pathname */ String, /* css */ String, /* req */ Request, /* next */ js.Function, Unit]
+    js.Function4[
+      /* pathname */ String, 
+      /* css */ String, 
+      /* req */ Request[ParamsDictionary], 
+      /* next */ js.Function, 
+      Unit
+    ]
   ] = js.undefined
 }
 
@@ -67,7 +74,7 @@ object Anon_CacheFile {
     postprocess: Anon_Css = null,
     preprocess: Anon_CssImportPaths = null,
     render: Anon_Compress = null,
-    storeCss: (/* pathname */ String, /* css */ String, /* req */ Request, /* next */ js.Function) => Unit = null
+    storeCss: (/* pathname */ String, /* css */ String, /* req */ Request[ParamsDictionary], /* next */ js.Function) => Unit = null
   ): Anon_CacheFile = {
     val __obj = js.Dynamic.literal()
     if (cacheFile != null) __obj.updateDynamic("cacheFile")(cacheFile)

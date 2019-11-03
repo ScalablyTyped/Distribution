@@ -13,13 +13,11 @@ sealed trait CategoryColor extends js.Object
   * **Note**: The actual color depends on how the Outlook client renders it.
   * In this case, the colors noted on each preset are for the Outlook desktop client.
   * 
-  * [Api set: Mailbox Preview]
+  * [Api set: Mailbox 1.8]
   * 
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-  * 
-  * @beta
   */
 @JSGlobal("Office.MailboxEnums.CategoryColor")
 @js.native

@@ -10,6 +10,7 @@ trait BasicToastrOptions extends js.Object {
   var attention: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var component: js.UndefOr[(Component[js.Object, js.Object, _]) | Element] = js.undefined
+  var getState: js.UndefOr[js.Function1[/* state */ ToastrState, ToastrState]] = js.undefined
   var icon: js.UndefOr[Element] = js.undefined
   var onCloseButtonClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onHideComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -29,6 +30,7 @@ object BasicToastrOptions {
     attention: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     component: (Component[js.Object, js.Object, _]) | Element = null,
+    getState: /* state */ ToastrState => ToastrState = null,
     icon: Element = null,
     onCloseButtonClick: () => Unit = null,
     onHideComplete: () => Unit = null,
@@ -45,6 +47,7 @@ object BasicToastrOptions {
     if (!js.isUndefined(attention)) __obj.updateDynamic("attention")(attention)
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction1(getState))
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (onCloseButtonClick != null) __obj.updateDynamic("onCloseButtonClick")(js.Any.fromFunction0(onCloseButtonClick))
     if (onHideComplete != null) __obj.updateDynamic("onHideComplete")(js.Any.fromFunction0(onHideComplete))

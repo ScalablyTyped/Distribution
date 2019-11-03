@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 class Account protected ()
   extends typings.stellarDashBase.stellarDashBaseMod.Account {
   def this(accountId: String, sequence: String) = this()
-  def this(accountId: String, sequence: Double) = this()
 }
 

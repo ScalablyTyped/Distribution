@@ -3,6 +3,7 @@ package typings.expressDashBunyanDashLogger.expressDashBunyanDashLoggerMod
 import typings.bunyan.bunyanMod.^
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,9 +28,9 @@ object Options {
   def apply(
     excludes: js.Array[String] = null,
     format: String | FormatFunction = null,
-    genReqId: /* req */ Request => String = null,
+    genReqId: /* req */ Request[ParamsDictionary] => String = null,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    includesFn: (/* req */ Request, /* res */ Response) => js.Any = null,
+    includesFn: (/* req */ Request[ParamsDictionary], /* res */ Response) => js.Any = null,
     levelFn: (/* status */ Double, /* err */ Error | Null, /* meta */ js.Any) => String = null,
     logger: ^ = null,
     obfuscate: js.Array[String] = null,

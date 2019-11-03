@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-scrollbar"
-version := "0.5.6-dt-20191022Z-477eb4"
+version := "0.5.6-dt-20191101Z-c18f18"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

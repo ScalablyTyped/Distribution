@@ -1,6 +1,7 @@
 package typings.passportDashGoogleDashOauth2.passportDashGoogleDashOauth2Mod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ class Strategy protected () extends js.Object {
   def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequestAndParams) = this()
   def this(options: StrategyOptions, verify: VerifyFunction) = this()
   var name: String = js.native
-  def authenticate(req: Request): Unit = js.native
-  def authenticate(req: Request, options: js.Object): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

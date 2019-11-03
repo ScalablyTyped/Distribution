@@ -3,6 +3,7 @@ package typings.mongodb
 import typings.mongodb.mongodbMod.BSONTypeAlias
 import typings.mongodb.mongodbMod.ProfilingLevel
 import typings.mongodb.mongodbMod.ReadConcernLevel
+import typings.mongodb.mongodbMod.ReadPreferenceMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -123,6 +124,9 @@ object mongodbStrings {
   sealed trait moderate extends js.Object
   
   @js.native
+  sealed trait nearest extends ReadPreferenceMode
+  
+  @js.native
   sealed trait `null` extends BSONTypeAlias
   
   @js.native
@@ -138,7 +142,19 @@ object mongodbStrings {
   sealed trait off extends ProfilingLevel
   
   @js.native
+  sealed trait primary extends ReadPreferenceMode
+  
+  @js.native
+  sealed trait primaryPreferred extends ReadPreferenceMode
+  
+  @js.native
   sealed trait regex extends BSONTypeAlias
+  
+  @js.native
+  sealed trait secondary extends ReadPreferenceMode
+  
+  @js.native
+  sealed trait secondaryPreferred extends ReadPreferenceMode
   
   @js.native
   sealed trait slow_only extends ProfilingLevel
@@ -241,6 +257,8 @@ object mongodbStrings {
   @scala.inline
   def moderate: moderate = "moderate".asInstanceOf[moderate]
   @scala.inline
+  def nearest: nearest = "nearest".asInstanceOf[nearest]
+  @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
@@ -251,7 +269,15 @@ object mongodbStrings {
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
+  def primary: primary = "primary".asInstanceOf[primary]
+  @scala.inline
+  def primaryPreferred: primaryPreferred = "primaryPreferred".asInstanceOf[primaryPreferred]
+  @scala.inline
   def regex: regex = "regex".asInstanceOf[regex]
+  @scala.inline
+  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  @scala.inline
+  def secondaryPreferred: secondaryPreferred = "secondaryPreferred".asInstanceOf[secondaryPreferred]
   @scala.inline
   def slow_only: slow_only = "slow_only".asInstanceOf[slow_only]
   @scala.inline

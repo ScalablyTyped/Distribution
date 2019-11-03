@@ -15,7 +15,6 @@ trait EducationSchool extends EducationOrganization {
   var externalId: js.UndefOr[String] = js.undefined
   // ID of principal in syncing system.
   var externalPrincipalId: js.UndefOr[String] = js.undefined
-  // Fax number of school.
   var fax: js.UndefOr[String] = js.undefined
   // Highest grade taught.
   var highestGrade: js.UndefOr[String] = js.undefined

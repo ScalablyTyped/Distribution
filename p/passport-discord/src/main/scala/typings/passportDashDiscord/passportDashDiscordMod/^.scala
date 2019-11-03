@@ -1,6 +1,7 @@
 package typings.passportDashDiscord.passportDashDiscordMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passportDashOauth2.passportDashOauth2Mod.VerifyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +25,7 @@ class ^ protected () extends Strategy {
   def this(
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify discord.StrategyOptions */ /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ js.Any,
     verify: js.Function5[
-        (/* req */ Request) | (/* accessToken */ String), 
+        (/* req */ Request[ParamsDictionary]) | (/* accessToken */ String), 
         /* refreshToken */ /* accessToken */ String, 
         (/* params */ js.Any) | (/* refreshToken */ String), 
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify discord.Profile */ /* profile */ js.Any, 
@@ -37,7 +38,7 @@ class ^ protected () extends Strategy {
   def this(
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify discord.StrategyOptionsWithRequest */ js.Any,
     verify: js.Function6[
-        /* req */ Request, 
+        /* req */ Request[ParamsDictionary], 
         /* accessToken */ String, 
         /* params */ js.Any, 
         /* refreshToken */ String, 

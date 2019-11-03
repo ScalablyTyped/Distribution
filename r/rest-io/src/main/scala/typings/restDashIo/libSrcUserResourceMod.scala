@@ -2,6 +2,7 @@ package typings.restDashIo
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.restDashIo.libSrcUserResourceMod.UserResource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,8 +16,8 @@ object libSrcUserResourceMod extends js.Object {
     extends typings.restDashIo.libSrcAuthorizedResourceMod.default {
     def createRoleModel(): Unit = js.native
     def ensureBaseUserModel(model: js.Any): Unit = js.native
-    def isSelf(req: Request): Boolean = js.native
-    def login(req: Request, res: Response): Unit = js.native
+    def isSelf(req: Request[ParamsDictionary]): Boolean = js.native
+    def login(req: Request[ParamsDictionary], res: Response): Unit = js.native
   }
   
   @js.native

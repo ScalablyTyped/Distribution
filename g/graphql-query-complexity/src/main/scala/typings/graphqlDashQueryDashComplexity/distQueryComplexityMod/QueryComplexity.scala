@@ -19,10 +19,9 @@ trait QueryComplexity extends js.Object {
   var OperationDefinition: js.Object = js.native
   var complexity: Double = js.native
   var context: ValidationContext = js.native
-  var fragments: StringDictionary[FragmentDefinitionNode] = js.native
+  var estimators: js.Array[ComplexityEstimator] = js.native
   var options: QueryComplexityOptions = js.native
   def createError(): GraphQLError = js.native
-  def getDefaultComplexity(args: js.Object, childScore: Double): Double = js.native
   def nodeComplexity(node: FieldNode, typeDef: GraphQLInterfaceType): Double = js.native
   def nodeComplexity(node: FieldNode, typeDef: GraphQLInterfaceType, complexity: Double): Double = js.native
   def nodeComplexity(node: FieldNode, typeDef: GraphQLObjectType[_, _, StringDictionary[_]]): Double = js.native

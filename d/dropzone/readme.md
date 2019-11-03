@@ -1,7 +1,7 @@
 
 # Scala.js typings for dropzone
 
-Typings are for version 5.0.0
+Typings are for version 5.5.0
 
 ## Library description:
 Handles drag and drop of files for you.

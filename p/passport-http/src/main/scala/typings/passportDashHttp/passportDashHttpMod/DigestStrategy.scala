@@ -1,6 +1,7 @@
 package typings.passportDashHttp.passportDashHttpMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passport.passportMod.Strategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +16,7 @@ class DigestStrategy protected () extends Strategy {
   def this(options: DigestStrategyOptions, secret: DigestSecretFunction, validate: DigestValidateFunction) = this()
   @JSName("name")
   var name_DigestStrategy: String = js.native
-  def authenticate(req: Request): Unit = js.native
-  def authenticate(req: Request, options: js.Object): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

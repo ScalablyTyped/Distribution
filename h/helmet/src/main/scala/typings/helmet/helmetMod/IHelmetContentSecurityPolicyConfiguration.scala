@@ -2,6 +2,7 @@ package typings.helmet.helmetMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,9 @@ trait IHelmetContentSecurityPolicyConfiguration extends js.Object {
   var directives: js.UndefOr[IHelmetContentSecurityPolicyDirectives] = js.undefined
   var disableAndroid: js.UndefOr[Boolean] = js.undefined
   var loose: js.UndefOr[Boolean] = js.undefined
-  var reportOnly: js.UndefOr[Boolean | (js.Function2[/* req */ Request, /* res */ Response, Boolean])] = js.undefined
+  var reportOnly: js.UndefOr[
+    Boolean | (js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Boolean])
+  ] = js.undefined
   var setAllHeaders: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -22,7 +25,7 @@ object IHelmetContentSecurityPolicyConfiguration {
     directives: IHelmetContentSecurityPolicyDirectives = null,
     disableAndroid: js.UndefOr[Boolean] = js.undefined,
     loose: js.UndefOr[Boolean] = js.undefined,
-    reportOnly: Boolean | (js.Function2[/* req */ Request, /* res */ Response, Boolean]) = null,
+    reportOnly: Boolean | (js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Boolean]) = null,
     setAllHeaders: js.UndefOr[Boolean] = js.undefined
   ): IHelmetContentSecurityPolicyConfiguration = {
     val __obj = js.Dynamic.literal()

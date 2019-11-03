@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "uuidv4" : "5.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "uuidv4" : "5.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

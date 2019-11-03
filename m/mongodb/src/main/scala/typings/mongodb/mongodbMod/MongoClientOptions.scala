@@ -136,7 +136,7 @@ object MongoClientOptions {
     promoteValues: js.UndefOr[Boolean] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
     readConcern: ReadConcern | String = null,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     readPreferenceTags: js.Array[String] = null,
     reconnectInterval: Int | scala.Double = null,
     reconnectTries: Int | scala.Double = null,
@@ -200,7 +200,7 @@ object MongoClientOptions {
     if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
     if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (readPreferenceTags != null) __obj.updateDynamic("readPreferenceTags")(readPreferenceTags)
     if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
     if (reconnectTries != null) __obj.updateDynamic("reconnectTries")(reconnectTries.asInstanceOf[js.Any])

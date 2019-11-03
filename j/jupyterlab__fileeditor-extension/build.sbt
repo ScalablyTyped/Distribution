@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__fileeditor-extension"
-version := "1.2.0-0bd670"
+version := "1.2.1-75019e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jupyterlab__application" % "1.2.0-c21fab",
   "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.0-8766a0",
   "org.scalablytyped" %%% "jupyterlab__attachments" % "1.2.0-8d14fe",
-  "org.scalablytyped" %%% "jupyterlab__cells" % "1.2.0-cb728d",
+  "org.scalablytyped" %%% "jupyterlab__cells" % "1.2.1-fc1bd7",
   "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-967511",
-  "org.scalablytyped" %%% "jupyterlab__console" % "1.2.0-f006dd",
+  "org.scalablytyped" %%% "jupyterlab__console" % "1.2.1-b3e138",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-30b104",
   "org.scalablytyped" %%% "jupyterlab__docmanager" % "1.2.0-d6e45f",
   "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.0-011e3e",
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jupyterlab__launcher" % "1.2.0-b36b94",
   "org.scalablytyped" %%% "jupyterlab__mainmenu" % "1.2.0-cd3eb5",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-4c2162",
-  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.2.0-e2afbf",
+  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.2.1-d88f21",
   "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.0-18822b",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-a07a34",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-5f1f82",

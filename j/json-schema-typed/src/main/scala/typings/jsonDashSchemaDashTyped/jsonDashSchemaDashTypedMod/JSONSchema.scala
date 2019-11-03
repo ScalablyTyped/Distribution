@@ -131,7 +131,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var additionalItems: js.UndefOr[JSONSchema] = js.undefined
+  var additionalItems: js.UndefOr[JSONSchema | Boolean] = js.undefined
   /**
     * The value of "additionalProperties" MUST be a valid JSON Schema.
     *
@@ -147,7 +147,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var additionalProperties: js.UndefOr[JSONSchema] = js.undefined
+  var additionalProperties: js.UndefOr[JSONSchema | Boolean] = js.undefined
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
     * be a valid JSON Schema.
@@ -155,7 +155,7 @@ trait JSONSchema extends js.Object {
     * An instance validates successfully against this keyword if it validates
     * successfully against all schemas defined by this keyword's value.
     */
-  var allOf: js.UndefOr[js.Array[JSONSchema]] = js.undefined
+  var allOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.undefined
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
     * be a valid JSON Schema.
@@ -163,7 +163,7 @@ trait JSONSchema extends js.Object {
     * An instance validates successfully against this keyword if it validates
     * successfully against at least one schema defined by this keyword's value.
     */
-  var anyOf: js.UndefOr[js.Array[JSONSchema]] = js.undefined
+  var anyOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.undefined
   /**
     * The value of this keyword MAY be of any type, including null.
     *
@@ -177,7 +177,7 @@ trait JSONSchema extends js.Object {
     * An array instance is valid against "contains" if at least one of its
     * elements is valid against the given schema.
     */
-  var contains: js.UndefOr[JSONSchema] = js.undefined
+  var contains: js.UndefOr[JSONSchema | Boolean] = js.undefined
   /**
     * If the instance value is a string, this property defines that the string
     * SHOULD be interpreted as binary data and decoded using the encoding named
@@ -224,7 +224,7 @@ trait JSONSchema extends js.Object {
     * This keyword's value MUST be an object. Each member value of this object
     * MUST be a valid JSON Schema.
     */
-  var definitions: js.UndefOr[StringDictionary[JSONSchema]] = js.undefined
+  var definitions: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
   /**
     * This keyword specifies rules that are evaluated if the instance is an
     * object and contains a certain property.
@@ -243,7 +243,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var dependencies: js.UndefOr[(StringDictionary[JSONSchema | js.Array[String]]) | js.Array[String]] = js.undefined
+  var dependencies: js.UndefOr[(StringDictionary[JSONSchema | Boolean | js.Array[String]]) | js.Array[String]] = js.undefined
   /**
     * Can be used to decorate a user interface with explanation or information
     * about the data produced.
@@ -261,7 +261,7 @@ trait JSONSchema extends js.Object {
     * evaluate the instance against this keyword, for either validation or
     * annotation collection purposes, in such cases.
     */
-  var `else`: js.UndefOr[JSONSchema] = js.undefined
+  var `else`: js.UndefOr[JSONSchema | Boolean] = js.undefined
   /**
     * The value of this keyword MUST be an array. This array SHOULD have at least
     * one element. Elements in the array SHOULD be unique.
@@ -345,7 +345,7 @@ trait JSONSchema extends js.Object {
     *
     * [annotations]: http://json-schema.org/latest/json-schema-validation.html#annotations
     */
-  var `if`: js.UndefOr[JSONSchema] = js.undefined
+  var `if`: js.UndefOr[JSONSchema | Boolean] = js.undefined
   /**
     * The value of "items" MUST be either a valid JSON Schema or an array of
     * valid JSON Schemas.
@@ -361,7 +361,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var items: js.UndefOr[JSONSchema | js.Array[JSONSchema]] = js.undefined
+  var items: js.UndefOr[JSONSchema | Boolean | (js.Array[JSONSchema | Boolean])] = js.undefined
   /**
     * The value of this keyword MUST be a non-negative integer.
     *
@@ -449,7 +449,7 @@ trait JSONSchema extends js.Object {
     * An instance is valid against this keyword if it fails to validate
     * successfully against the schema defined by this keyword.
     */
-  var not: js.UndefOr[JSONSchema] = js.undefined
+  var not: js.UndefOr[JSONSchema | Boolean] = js.undefined
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
     * be a valid JSON Schema.
@@ -457,7 +457,7 @@ trait JSONSchema extends js.Object {
     * An instance validates successfully against this keyword if it validates
     * successfully against exactly one schema defined by this keyword's value.
     */
-  var oneOf: js.UndefOr[js.Array[JSONSchema]] = js.undefined
+  var oneOf: js.UndefOr[JSONSchema | js.Array[Boolean]] = js.undefined
   /**
     * The value of this keyword MUST be a string. This string SHOULD be a valid
     * regular expression, according to the ECMA 262 regular expression dialect.
@@ -484,7 +484,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var patternProperties: js.UndefOr[StringDictionary[JSONSchema]] = js.undefined
+  var patternProperties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
   /**
     * The value of "properties" MUST be an object. Each value of this object MUST
     * be a valid JSON Schema.
@@ -498,7 +498,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var properties: js.UndefOr[StringDictionary[JSONSchema]] = js.undefined
+  var properties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
   /**
     * The value of "propertyNames" MUST be a valid JSON Schema.
     *
@@ -508,7 +508,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var propertyNames: js.UndefOr[JSONSchema] = js.undefined
+  var propertyNames: js.UndefOr[JSONSchema | Boolean] = js.undefined
   /**
     * The value of this keywords MUST be a boolean. When multiple occurrences of
     * this keyword are applicable to a single sub-instance, the resulting value
@@ -556,7 +556,7 @@ trait JSONSchema extends js.Object {
     * instance against this keyword, for either validation or annotation
     * collection purposes, in such cases.
     */
-  var `then`: js.UndefOr[JSONSchema] = js.undefined
+  var `then`: js.UndefOr[JSONSchema | Boolean] = js.undefined
   /**
     * Can be used to decorate a user interface with a short label about the data
     * produced.
@@ -623,26 +623,26 @@ object JSONSchema {
     $id: String = null,
     $ref: String = null,
     $schema: String = null,
-    additionalItems: JSONSchema = null,
-    additionalProperties: JSONSchema = null,
-    allOf: js.Array[JSONSchema] = null,
-    anyOf: js.Array[JSONSchema] = null,
+    additionalItems: JSONSchema | Boolean = null,
+    additionalProperties: JSONSchema | Boolean = null,
+    allOf: js.Array[JSONSchema | Boolean] = null,
+    anyOf: js.Array[JSONSchema | Boolean] = null,
     const: js.Any = null,
-    contains: JSONSchema = null,
+    contains: JSONSchema | Boolean = null,
     contentEncoding: JSONSchemaContentEncodingName | JSONSchemaContentEncoding = null,
     contentMediaType: String = null,
     default: js.Any = null,
-    definitions: StringDictionary[JSONSchema] = null,
-    dependencies: (StringDictionary[JSONSchema | js.Array[String]]) | js.Array[String] = null,
+    definitions: StringDictionary[JSONSchema | Boolean] = null,
+    dependencies: (StringDictionary[JSONSchema | Boolean | js.Array[String]]) | js.Array[String] = null,
     description: String = null,
-    `else`: JSONSchema = null,
+    `else`: JSONSchema | Boolean = null,
     enum: js.Array[_] = null,
     examples: js.Array[_] = null,
     exclusiveMaximum: Int | Double = null,
     exclusiveMinimum: Int | Double = null,
     format: JSONSchemaFormat | date | `date-time` | email | `full-date` | `full-time` | hostname | `idn-email` | `idn-hostname` | ipv4 | ipv6 | iri | `iri-reference` | `json-pointer` | `json-pointer-uri-fragment` | regex | `relative-json-pointer` | time | uri | `uri-reference` | `uri-template` | uuid = null,
-    `if`: JSONSchema = null,
-    items: JSONSchema | js.Array[JSONSchema] = null,
+    `if`: JSONSchema | Boolean = null,
+    items: JSONSchema | Boolean | (js.Array[JSONSchema | Boolean]) = null,
     maxItems: Int | Double = null,
     maxLength: Int | Double = null,
     maxProperties: Int | Double = null,
@@ -652,15 +652,15 @@ object JSONSchema {
     minProperties: Int | Double = null,
     minimum: Int | Double = null,
     multipleOf: Int | Double = null,
-    not: JSONSchema = null,
-    oneOf: js.Array[JSONSchema] = null,
+    not: JSONSchema | Boolean = null,
+    oneOf: JSONSchema | js.Array[Boolean] = null,
     pattern: String = null,
-    patternProperties: StringDictionary[JSONSchema] = null,
-    properties: StringDictionary[JSONSchema] = null,
-    propertyNames: JSONSchema = null,
+    patternProperties: StringDictionary[JSONSchema | Boolean] = null,
+    properties: StringDictionary[JSONSchema | Boolean] = null,
+    propertyNames: JSONSchema | Boolean = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     required: js.Array[String] = null,
-    `then`: JSONSchema = null,
+    `then`: JSONSchema | Boolean = null,
     title: String = null,
     `type`: JSONSchemaType | JSONSchemaTypeName | (js.Array[JSONSchemaType | JSONSchemaTypeName]) = null,
     uniqueItems: js.UndefOr[Boolean] = js.undefined,
@@ -671,25 +671,25 @@ object JSONSchema {
     if ($id != null) __obj.updateDynamic("$id")($id)
     if ($ref != null) __obj.updateDynamic("$ref")($ref)
     if ($schema != null) __obj.updateDynamic("$schema")($schema)
-    if (additionalItems != null) __obj.updateDynamic("additionalItems")(additionalItems)
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties)
+    if (additionalItems != null) __obj.updateDynamic("additionalItems")(additionalItems.asInstanceOf[js.Any])
+    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
     if (allOf != null) __obj.updateDynamic("allOf")(allOf)
     if (anyOf != null) __obj.updateDynamic("anyOf")(anyOf)
     if (const != null) __obj.updateDynamic("const")(const)
-    if (contains != null) __obj.updateDynamic("contains")(contains)
+    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
     if (contentMediaType != null) __obj.updateDynamic("contentMediaType")(contentMediaType)
     if (default != null) __obj.updateDynamic("default")(default)
     if (definitions != null) __obj.updateDynamic("definitions")(definitions)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
-    if (`else` != null) __obj.updateDynamic("else")(`else`)
+    if (`else` != null) __obj.updateDynamic("else")(`else`.asInstanceOf[js.Any])
     if (enum != null) __obj.updateDynamic("enum")(enum)
     if (examples != null) __obj.updateDynamic("examples")(examples)
     if (exclusiveMaximum != null) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.asInstanceOf[js.Any])
     if (exclusiveMinimum != null) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (`if` != null) __obj.updateDynamic("if")(`if`)
+    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
@@ -700,15 +700,15 @@ object JSONSchema {
     if (minProperties != null) __obj.updateDynamic("minProperties")(minProperties.asInstanceOf[js.Any])
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
     if (multipleOf != null) __obj.updateDynamic("multipleOf")(multipleOf.asInstanceOf[js.Any])
-    if (not != null) __obj.updateDynamic("not")(not)
-    if (oneOf != null) __obj.updateDynamic("oneOf")(oneOf)
+    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
+    if (oneOf != null) __obj.updateDynamic("oneOf")(oneOf.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (patternProperties != null) __obj.updateDynamic("patternProperties")(patternProperties)
     if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames)
+    if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (required != null) __obj.updateDynamic("required")(required)
-    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems)

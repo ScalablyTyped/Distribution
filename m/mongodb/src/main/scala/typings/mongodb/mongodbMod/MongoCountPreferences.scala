@@ -17,7 +17,7 @@ trait MongoCountPreferences extends js.Object {
   /**
     * The preferred read preference
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   var session: js.UndefOr[ClientSession] = js.undefined
   /**
     * The number of documents to skip for the count.
@@ -31,7 +31,7 @@ object MongoCountPreferences {
     hint: String = null,
     limit: Int | scala.Double = null,
     maxTimeMS: Int | scala.Double = null,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     session: ClientSession = null,
     skip: Int | scala.Double = null
   ): MongoCountPreferences = {
@@ -39,7 +39,7 @@ object MongoCountPreferences {
     if (hint != null) __obj.updateDynamic("hint")(hint)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (session != null) __obj.updateDynamic("session")(session)
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoCountPreferences]

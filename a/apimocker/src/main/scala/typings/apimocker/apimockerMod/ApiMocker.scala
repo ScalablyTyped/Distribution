@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait ApiMocker extends js.Object {
   @JSName("express")
   var express_Original: Application = js.native
-  var middlewares: js.Array[RequestHandler] = js.native
+  var middlewares: js.Array[RequestHandler[ParamsDictionary]] = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without
     * third argument.

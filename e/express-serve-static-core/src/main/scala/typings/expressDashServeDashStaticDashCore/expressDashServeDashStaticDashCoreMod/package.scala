@@ -24,7 +24,7 @@ package object expressDashServeDashStaticDashCoreMod {
   type NextFunction = js.Function1[/* err */ js.UndefOr[js.Any], Unit]
   type Params = ParamsDictionary | ParamsArray
   type ParamsArray = js.Array[String]
-  type ParamsDictionary = Dictionary[String]
+  type ParamsDictionary = StringDictionary[String]
   type PathParams = String | RegExp | (js.Array[String | RegExp])
   type RequestHandler[P /* <: Params */] = js.Function3[/* req */ Request[P], /* res */ Response, /* next */ NextFunction, js.Any]
   type RequestHandlerParams[P /* <: Params */] = RequestHandler[P] | ErrorRequestHandler[P] | (js.Array[RequestHandler[P] | ErrorRequestHandler[P]])

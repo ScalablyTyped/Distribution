@@ -35,7 +35,8 @@ trait Props extends js.Object {
     js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, Unit]
   ] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, _]] = js.undefined
-  var onDrag: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
+  var onDrag: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
+  var onDragEnd: js.UndefOr[js.Function1[/* map */ js.Any, Unit]] = js.undefined
   var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ Anon_Map, Unit]] = js.undefined
   var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
   var onTilesLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -43,6 +44,7 @@ trait Props extends js.Object {
   var onZoomAnimationStart: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
   var options: js.UndefOr[MapOptions | (js.Function1[/* maps */ Maps, MapOptions])] = js.undefined
   var resetBoundsOnResize: js.UndefOr[Boolean] = js.undefined
+  var shouldUnregisterMapOnUnmount: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
   var yesIWantToUseGoogleMapApiInternals: js.UndefOr[Boolean] = js.undefined
   var zoom: js.UndefOr[Double] = js.undefined
@@ -70,7 +72,8 @@ object Props {
     onChildMouseMove: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit = null,
     onChildMouseUp: (/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any) => Unit = null,
     onClick: /* value */ ClickEventValue => _ = null,
-    onDrag: /* args */ js.Any => Unit = null,
+    onDrag: /* map */ js.Any => Unit = null,
+    onDragEnd: /* map */ js.Any => Unit = null,
     onGoogleApiLoaded: /* maps */ Anon_Map => Unit = null,
     onMapTypeIdChange: /* args */ js.Any => Unit = null,
     onTilesLoaded: () => Unit = null,
@@ -78,6 +81,7 @@ object Props {
     onZoomAnimationStart: /* args */ js.Any => Unit = null,
     options: MapOptions | (js.Function1[/* maps */ Maps, MapOptions]) = null,
     resetBoundsOnResize: js.UndefOr[Boolean] = js.undefined,
+    shouldUnregisterMapOnUnmount: js.UndefOr[Boolean] = js.undefined,
     style: HTMLProps[HTMLDivElement] = null,
     yesIWantToUseGoogleMapApiInternals: js.UndefOr[Boolean] = js.undefined,
     zoom: Int | Double = null
@@ -103,6 +107,7 @@ object Props {
     if (onChildMouseUp != null) __obj.updateDynamic("onChildMouseUp")(js.Any.fromFunction3(onChildMouseUp))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
     if (onGoogleApiLoaded != null) __obj.updateDynamic("onGoogleApiLoaded")(js.Any.fromFunction1(onGoogleApiLoaded))
     if (onMapTypeIdChange != null) __obj.updateDynamic("onMapTypeIdChange")(js.Any.fromFunction1(onMapTypeIdChange))
     if (onTilesLoaded != null) __obj.updateDynamic("onTilesLoaded")(js.Any.fromFunction0(onTilesLoaded))
@@ -110,6 +115,7 @@ object Props {
     if (onZoomAnimationStart != null) __obj.updateDynamic("onZoomAnimationStart")(js.Any.fromFunction1(onZoomAnimationStart))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (!js.isUndefined(resetBoundsOnResize)) __obj.updateDynamic("resetBoundsOnResize")(resetBoundsOnResize)
+    if (!js.isUndefined(shouldUnregisterMapOnUnmount)) __obj.updateDynamic("shouldUnregisterMapOnUnmount")(shouldUnregisterMapOnUnmount)
     if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(yesIWantToUseGoogleMapApiInternals)) __obj.updateDynamic("yesIWantToUseGoogleMapApiInternals")(yesIWantToUseGoogleMapApiInternals)
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])

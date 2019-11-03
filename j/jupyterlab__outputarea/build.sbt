@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__outputarea"
-version := "1.2.0-e2afbf"
+version := "1.2.1-d88f21"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -24,6 +24,7 @@ object Keypair extends js.Object {
   def fromRawEd25519Seed(secretSeed: Buffer): typings.stellarDashBase.stellarDashBaseMod.Keypair = js.native
   def fromSecret(secretKey: String): typings.stellarDashBase.stellarDashBaseMod.Keypair = js.native
   def master(): typings.stellarDashBase.stellarDashBaseMod.Keypair = js.native
+  def master(networkPassphrase: String): typings.stellarDashBase.stellarDashBaseMod.Keypair = js.native
   def random(): typings.stellarDashBase.stellarDashBaseMod.Keypair = js.native
 }
 

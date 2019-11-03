@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object passportDashOauth2Mod {
   import typings.express.expressMod.Request
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
   import typings.std.Error
 
   type StateStoreStoreCallback = js.Function2[/* err */ Error | Null, /* state */ js.Any, Unit]
@@ -32,14 +33,14 @@ package object passportDashOauth2Mod {
     Unit
   ])
   type VerifyFunctionWithRequest = (js.Function5[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* profile */ js.Any, 
     /* verified */ VerifyCallback, 
     Unit
   ]) | (js.Function6[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* results */ js.Any, 

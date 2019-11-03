@@ -1,7 +1,7 @@
 
 # Scala.js typings for compare-versions
 
-Typings are for version 3.0
+Typings are for version 3.5.1
 
 ## Library description:
 Compare semver version strings to find greater, equal or lesser.
@@ -24,7 +24,7 @@ Compare semver version strings to find greater, equal or lesser.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

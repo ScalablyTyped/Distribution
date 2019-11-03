@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__csvviewer-extension"
-version := "1.2.0-02aa2e"
+version := "1.2.1-13a55c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

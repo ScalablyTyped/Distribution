@@ -1,6 +1,7 @@
 package typings.swaggerDashExpressDashMiddleware.swaggerDashExpressDashMiddlewareMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,12 +28,18 @@ trait TextParserOptionItem extends js.Object {
     * If a string, type option is passed directly to the type-is library and this can be an extension name (like txt), a mime type (like text/plain), or a mime type * with a wildcard (like * / * or text/ *).
     * If a function, the type option is called as fn(req) and the request is parsed if it returns a truthy value. Defaults to text/plain.
     */
-  var `type`: js.UndefOr[(js.Function1[/* req */ Request, String]) | String] = js.undefined
+  var `type`: js.UndefOr[(js.Function1[/* req */ Request[ParamsDictionary], String]) | String] = js.undefined
   /**
     * function to verify body content, the parsing can be aborted by throwing an error.
     */
   var verify: js.UndefOr[
-    js.Function4[/* req */ Request, /* res */ Response, /* buf */ Buffer, /* encoding */ String, Unit]
+    js.Function4[
+      /* req */ Request[ParamsDictionary], 
+      /* res */ Response, 
+      /* buf */ Buffer, 
+      /* encoding */ String, 
+      Unit
+    ]
   ] = js.undefined
 }
 
@@ -42,8 +49,8 @@ object TextParserOptionItem {
     defaultCharset: String = null,
     inflate: js.UndefOr[Boolean] = js.undefined,
     limit: String | Double = null,
-    `type`: (js.Function1[/* req */ Request, String]) | String = null,
-    verify: (/* req */ Request, /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit = null
+    `type`: (js.Function1[/* req */ Request[ParamsDictionary], String]) | String = null,
+    verify: (/* req */ Request[ParamsDictionary], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit = null
   ): TextParserOptionItem = {
     val __obj = js.Dynamic.literal()
     if (defaultCharset != null) __obj.updateDynamic("defaultCharset")(defaultCharset)

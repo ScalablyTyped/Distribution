@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ganache-core" : "2.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ganache-core" : "2.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

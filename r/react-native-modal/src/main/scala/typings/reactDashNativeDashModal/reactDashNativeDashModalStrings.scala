@@ -1,7 +1,8 @@
 package typings.reactDashNativeDashModal
 
-import typings.reactDashNativeDashModal.reactDashNativeDashModalMod.Direction
-import typings.reactDashNativeDashModal.reactDashNativeDashModalMod.Orientation
+import typings.reactDashNativeDashModal.distTypesMod.Direction
+import typings.reactDashNativeDashModal.distTypesMod.Orientation
+import typings.reactDashNativeDashModal.distTypesMod.PresentationStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +12,10 @@ object reactDashNativeDashModalStrings {
   sealed trait down extends Direction
   
   @js.native
-  sealed trait formSheet extends js.Object
+  sealed trait formSheet extends PresentationStyle
   
   @js.native
-  sealed trait fullScreen extends js.Object
+  sealed trait fullScreen extends PresentationStyle
   
   @js.native
   sealed trait landscape extends Orientation
@@ -29,10 +30,10 @@ object reactDashNativeDashModalStrings {
   sealed trait left extends Direction
   
   @js.native
-  sealed trait overFullScreen extends js.Object
+  sealed trait overFullScreen extends PresentationStyle
   
   @js.native
-  sealed trait pageSheet extends js.Object
+  sealed trait pageSheet extends PresentationStyle
   
   @js.native
   sealed trait portrait extends Orientation

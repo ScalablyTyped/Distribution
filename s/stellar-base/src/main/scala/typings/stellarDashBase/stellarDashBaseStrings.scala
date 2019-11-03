@@ -21,7 +21,7 @@ object stellarDashBaseStrings {
   sealed trait createAccount extends js.Object
   
   @js.native
-  sealed trait createPassiveOffer extends js.Object
+  sealed trait createPassiveSellOffer extends js.Object
   
   @js.native
   sealed trait credit_alphanum12 extends js.Object
@@ -42,10 +42,13 @@ object stellarDashBaseStrings {
   sealed trait inflation extends js.Object
   
   @js.native
+  sealed trait manageBuyOffer extends js.Object
+  
+  @js.native
   sealed trait manageData extends js.Object
   
   @js.native
-  sealed trait manageOffer extends js.Object
+  sealed trait manageSellOffer extends js.Object
   
   @js.native
   sealed trait native extends js.Object
@@ -54,7 +57,10 @@ object stellarDashBaseStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait pathPayment extends js.Object
+  sealed trait pathPaymentStrictReceive extends js.Object
+  
+  @js.native
+  sealed trait pathPaymentStrictSend extends js.Object
   
   @js.native
   sealed trait payment extends js.Object
@@ -79,7 +85,7 @@ object stellarDashBaseStrings {
   @scala.inline
   def createAccount: createAccount = "createAccount".asInstanceOf[createAccount]
   @scala.inline
-  def createPassiveOffer: createPassiveOffer = "createPassiveOffer".asInstanceOf[createPassiveOffer]
+  def createPassiveSellOffer: createPassiveSellOffer = "createPassiveSellOffer".asInstanceOf[createPassiveSellOffer]
   @scala.inline
   def credit_alphanum12: credit_alphanum12 = "credit_alphanum12".asInstanceOf[credit_alphanum12]
   @scala.inline
@@ -93,15 +99,19 @@ object stellarDashBaseStrings {
   @scala.inline
   def inflation: inflation = "inflation".asInstanceOf[inflation]
   @scala.inline
+  def manageBuyOffer: manageBuyOffer = "manageBuyOffer".asInstanceOf[manageBuyOffer]
+  @scala.inline
   def manageData: manageData = "manageData".asInstanceOf[manageData]
   @scala.inline
-  def manageOffer: manageOffer = "manageOffer".asInstanceOf[manageOffer]
+  def manageSellOffer: manageSellOffer = "manageSellOffer".asInstanceOf[manageSellOffer]
   @scala.inline
   def native: native = "native".asInstanceOf[native]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def pathPayment: pathPayment = "pathPayment".asInstanceOf[pathPayment]
+  def pathPaymentStrictReceive: pathPaymentStrictReceive = "pathPaymentStrictReceive".asInstanceOf[pathPaymentStrictReceive]
+  @scala.inline
+  def pathPaymentStrictSend: pathPaymentStrictSend = "pathPaymentStrictSend".asInstanceOf[pathPaymentStrictSend]
   @scala.inline
   def payment: payment = "payment".asInstanceOf[payment]
   @scala.inline

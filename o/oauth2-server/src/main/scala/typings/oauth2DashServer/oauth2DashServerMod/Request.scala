@@ -1,6 +1,7 @@
 package typings.oauth2DashServer.oauth2DashServerMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.oauth2DashServer.oauth2DashServerNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 class Request () extends js.Object {
   def this(options: StringDictionary[js.Any]) = this()
-  def this(options: typings.express.expressMod.Request) = this()
+  def this(options: typings.express.expressMod.Request[ParamsDictionary]) = this()
   var body: js.UndefOr[js.Any] = js.native
   var headers: js.UndefOr[StringDictionary[String]] = js.native
   var method: js.UndefOr[String] = js.native

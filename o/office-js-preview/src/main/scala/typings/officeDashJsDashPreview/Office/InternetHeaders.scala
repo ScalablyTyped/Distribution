@@ -12,15 +12,13 @@ import scala.scalajs.js.annotation._
   * 
   * **Note**: This object is intended for you to set and get your custom headers on a message item.
   *
-  * [Api set: Mailbox Preview]
+  * [Api set: Mailbox 1.8]
   *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
-  * 
-  * @beta
   */
 @js.native
 trait InternetHeaders extends js.Object {
@@ -30,7 +28,7 @@ trait InternetHeaders extends js.Object {
     * 
     * **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -43,8 +41,6 @@ trait InternetHeaders extends js.Object {
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
-    * 
-    * @beta
     */
   def getAsync(names: js.Array[String]): Unit = js.native
   def getAsync(names: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
@@ -59,7 +55,7 @@ trait InternetHeaders extends js.Object {
     * 
     * **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -72,8 +68,6 @@ trait InternetHeaders extends js.Object {
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
-    * 
-    * @beta
     */
   def removeAsync(names: js.Array[String]): Unit = js.native
   def removeAsync(names: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
@@ -91,7 +85,7 @@ trait InternetHeaders extends js.Object {
     *
     * **Note**: This method is intended to set the values of your custom headers.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -105,8 +99,6 @@ trait InternetHeaders extends js.Object {
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  Any errors encountered will be provided in the asyncResult.error property.
-    * 
-    * @beta
     */
   def setAsync(headers: js.Object): Unit = js.native
   def setAsync(headers: js.Object, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native

@@ -1,6 +1,7 @@
 package typings.stellarDashBase.stellarDashBaseMod
 
 import typings.node.Buffer
+import typings.stellarDashBase.Anon_MaxTime
 import typings.stellarDashBase.stellarDashBaseMod.xdr.DecoratedSignature
 import typings.stellarDashBase.stellarDashBaseMod.xdr.TransactionEnvelope
 import scala.scalajs.js
@@ -12,12 +13,18 @@ import scala.scalajs.js.annotation._
 class Transaction[TMemo /* <: Memo[MemoType] */, TOps /* <: js.Array[Operation] */] protected () extends js.Object {
   def this(envelope: String) = this()
   def this(envelope: TransactionEnvelope) = this()
+  def this(envelope: String, networkPassphrase: String) = this()
+  def this(envelope: TransactionEnvelope, networkPassphrase: String) = this()
   var fee: Double = js.native
   var memo: TMemo = js.native
+  var networkPassphrase: String = js.native
   var operations: TOps = js.native
-  var sequence: Double = js.native
+  var sequence: String = js.native
   var signatures: js.Array[DecoratedSignature] = js.native
   var source: String = js.native
+  var timeBounds: js.UndefOr[Anon_MaxTime] = js.native
+  def addSignature(publicKey: String, signature: String): Unit = js.native
+  def getKeypairSignature(keypair: Keypair): String = js.native
   def hash(): Buffer = js.native
   def sign(keypairs: Keypair*): Unit = js.native
   def signHashX(preimage: String): Unit = js.native

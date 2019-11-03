@@ -6,10 +6,11 @@ import scala.scalajs.js.annotation._
 
 package object corsMod {
   import typings.express.expressMod.Request
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
   import typings.std.Error
 
   type CorsOptionsDelegate = js.Function2[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* callback */ js.Function2[/* err */ Error | Null, /* options */ js.UndefOr[CorsOptions], Unit], 
     Unit
   ]

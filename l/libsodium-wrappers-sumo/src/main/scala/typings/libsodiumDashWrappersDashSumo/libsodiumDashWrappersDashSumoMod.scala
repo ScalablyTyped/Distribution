@@ -142,8 +142,6 @@ object libsodiumDashWrappersDashSumoMod extends js.Object {
   val crypto_secretstream_xchacha20poly1305_HEADERBYTES: Double = js.native
   val crypto_secretstream_xchacha20poly1305_KEYBYTES: Double = js.native
   val crypto_secretstream_xchacha20poly1305_MESSAGEBYTES_MAX: Double = js.native
-  val crypto_secretstream_xchacha20poly1305_MESSAGESBYTES_MAX: Double = js.native
-  val crypto_secretstream_xchacha20poly1305_NPUBBYTES: Double = js.native
   val crypto_secretstream_xchacha20poly1305_TAG_FINAL: Double = js.native
   val crypto_secretstream_xchacha20poly1305_TAG_MESSAGE: Double = js.native
   val crypto_secretstream_xchacha20poly1305_TAG_PUSH: Double = js.native
@@ -6314,6 +6312,7 @@ object libsodiumDashWrappersDashSumoMod extends js.Object {
   def is_zero(bytes: Uint8Array): Boolean = js.native
   def memcmp(b1: Uint8Array, b2: Uint8Array): Boolean = js.native
   def memzero(bytes: Uint8Array): Unit = js.native
+  def output_formats(): js.Array[Uint8ArrayOutputFormat | StringOutputFormat] = js.native
   def pad(buf: Uint8Array, blocksize: Double): Uint8Array = js.native
   def randombytes_buf(length: Double): Uint8Array = js.native
   def randombytes_buf(length: Double, outputFormat: StringOutputFormat): String = js.native
@@ -6323,7 +6322,6 @@ object libsodiumDashWrappersDashSumoMod extends js.Object {
   def randombytes_buf_deterministic(length: Double, seed: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = js.native
   def randombytes_close(): Unit = js.native
   def randombytes_random(): Double = js.native
-  def randombytes_set_implementation(implementation: Uint8Array): Unit = js.native
   def randombytes_stir(): Unit = js.native
   def randombytes_uniform(upper_bound: Double): Double = js.native
   def sodium_version_string(): String = js.native

@@ -13,17 +13,39 @@ trait Location extends js.Object {
   var bearing: Double
   /** ID of location as stored in DB (or null) */
   var id: Double
-  /** True if location was recorded by mock provider. (ANDROID ONLY) */
+  /**
+    * True if location was recorded by mock provider. (ANDROID ONLY)
+    *
+    * Note: this property is not enabled by default!
+    * You can enable it "postTemplate" configure option.
+    */
   var isFromMockProvider: js.UndefOr[Boolean] = js.undefined
   /** Latitude, in degrees. */
   var latitude: Double
+  /** Configured location provider. */
   var locationProvider: Double
   /** Longitude, in degrees. */
   var longitude: Double
-  /** True if device has mock locations enabled. (ANDROID ONLY) */
+  /**
+    * True if device has mock locations enabled. (ANDROID ONLY)
+    *
+    * Note: this property is not enabled by default!
+    * You can enable it "postTemplate" configure option.
+    */
   var mockLocationsEnabled: js.UndefOr[Boolean] = js.undefined
-  var provider: Provider
-  /** Speed if it is available, in meters/second over ground. */
+  /**
+    * Native provider reponsible for location.
+    *
+    * Possible values:
+    * "gps", "network", "passive" or "fused"
+    */
+  var provider: NativeProvider
+  /**
+    * Speed if it is available, in meters/second over ground.
+    *
+    * Note: Not all providers are capable of providing speed.
+    * Typically network providers are not able to do so.
+    */
   var speed: Double
   /** UTC time of this fix, in milliseconds since January 1, 1970. */
   var time: Double
@@ -39,7 +61,7 @@ object Location {
     latitude: Double,
     locationProvider: Double,
     longitude: Double,
-    provider: Provider,
+    provider: NativeProvider,
     speed: Double,
     time: Double,
     isFromMockProvider: js.UndefOr[Boolean] = js.undefined,

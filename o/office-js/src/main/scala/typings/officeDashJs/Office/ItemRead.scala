@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * 
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
   * You should treat this as a mode of Office.context.mailbox.item. Refer to the
-  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item | Object Model} page for more information.
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
   */
 @js.native
 trait ItemRead extends Item {
@@ -143,7 +143,7 @@ trait ItemRead extends Item {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -173,7 +173,7 @@ trait ItemRead extends Item {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */

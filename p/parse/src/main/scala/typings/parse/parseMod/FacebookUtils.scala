@@ -1,5 +1,6 @@
 package typings.parse.parseMod
 
+import typings.parse.Parse.FullOptions
 import typings.parse.Parse.SuccessFailureOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +20,7 @@ object FacebookUtils extends js.Object {
   def link(user: typings.parse.Parse.User, permissions: js.Any): Unit = js.native
   def link(user: typings.parse.Parse.User, permissions: js.Any, options: SuccessFailureOptions): Unit = js.native
   def logIn(permissions: js.Any): Unit = js.native
-  def logIn(permissions: js.Any, options: SuccessFailureOptions): Unit = js.native
+  def logIn(permissions: js.Any, options: FullOptions): Unit = js.native
   def unlink(user: typings.parse.Parse.User): Unit = js.native
   def unlink(user: typings.parse.Parse.User, options: SuccessFailureOptions): Unit = js.native
 }

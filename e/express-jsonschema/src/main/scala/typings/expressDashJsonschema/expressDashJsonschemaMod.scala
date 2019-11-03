@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.expressMod.NextFunction
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.jsonDashSchema.jsonDashSchemaMod.JSONSchema4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +39,7 @@ object expressDashJsonschemaMod extends js.Object {
       ]
     ]
   ): Unit = js.native
-  def validate(schemas: StringDictionary[JSONSchema4]): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit] = js.native
-  def validate(schemas: StringDictionary[JSONSchema4], schemaDependencies: js.Array[JSONSchema4]): js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit] = js.native
+  def validate(schemas: StringDictionary[JSONSchema4]): js.Function3[/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction, Unit] = js.native
+  def validate(schemas: StringDictionary[JSONSchema4], schemaDependencies: js.Array[JSONSchema4]): js.Function3[/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction, Unit] = js.native
 }
 

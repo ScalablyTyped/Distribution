@@ -10,13 +10,11 @@ sealed trait DelegatePermissions extends js.Object
 /**
   * This bit mask represents a delegate's permissions on a shared folder.
   *
-  * [Api set: Mailbox Preview]
+  * [Api set: Mailbox 1.8]
   *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-  * 
-  * @beta
   */
 @JSGlobal("Office.MailboxEnums.DelegatePermissions")
 @js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object Office {
   /**
-    * The subclass of {@link Office.Item} dealing with appointments.
+    * The subclass of {@link Office.Item | Item} dealing with appointments.
     * 
     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
     * You should treat this as a mode of Office.context.mailbox.item. Refer to the

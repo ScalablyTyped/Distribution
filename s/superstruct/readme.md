@@ -1,7 +1,7 @@
 
 # Scala.js typings for superstruct
 
-Typings are for version 0.5
+Typings are for version 0.8.2
 
 ## Library description:
 A simple, expressive way to validate data in JavaScript.
@@ -24,7 +24,7 @@ A simple, expressive way to validate data in JavaScript.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

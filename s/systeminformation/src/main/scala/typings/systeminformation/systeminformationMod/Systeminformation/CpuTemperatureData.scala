@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CpuTemperatureData extends js.Object {
-  var cores: String
-  var main: String
-  var max: String
+  var cores: js.Array[Double]
+  var main: Double
+  var max: Double
 }
 
 object CpuTemperatureData {
   @scala.inline
-  def apply(cores: String, main: String, max: String): CpuTemperatureData = {
+  def apply(cores: js.Array[Double], main: Double, max: Double): CpuTemperatureData = {
     val __obj = js.Dynamic.literal(cores = cores, main = main, max = max)
   
     __obj.asInstanceOf[CpuTemperatureData]

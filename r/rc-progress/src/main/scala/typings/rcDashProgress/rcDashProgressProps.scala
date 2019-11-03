@@ -1,15 +1,16 @@
 package typings.rcDashProgress
 
+import typings.rcDashProgress.rcDashProgressMod.RCProgressProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait rcDashProgressProps {
   @scala.inline
-  def CircleProps: typings.rcDashProgress.rcDashProgressMod.CircleProps.type = typings.rcDashProgress.rcDashProgressMod.CircleProps
-  type CircleProps = typings.rcDashProgress.rcDashProgressMod.CircleProps
+  def CircleProps: RCProgressProps.type = typings.rcDashProgress.rcDashProgressMod.RCProgressProps
+  type CircleProps = RCProgressProps
   @scala.inline
-  def LineProps: typings.rcDashProgress.rcDashProgressMod.LineProps.type = typings.rcDashProgress.rcDashProgressMod.LineProps
-  type LineProps = typings.rcDashProgress.rcDashProgressMod.LineProps
+  def LineProps: RCProgressProps.type = typings.rcDashProgress.rcDashProgressMod.RCProgressProps
+  type LineProps = RCProgressProps
 }
 

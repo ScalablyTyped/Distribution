@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "i18next-xhr-backend" : "3.2.1"
+      "i18next-xhr-backend" : "3.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "i18next-xhr-backend" : "3.2.1"
+      "i18next-xhr-backend" : "3.2.2"
     }
   ],
   "compile-devDependencies" : [

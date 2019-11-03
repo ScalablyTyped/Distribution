@@ -1,12 +1,13 @@
 package typings.reactDashDevDashUtils.webpackDevServerUtilsMod
 
-import typings.reactDashDevDashUtils.Anon_Args
-import typings.std.Record
+import typings.reactDashDevDashUtils.Anon_BannerPlugin
 import typings.webpack.webpackMod.Compiler
+import typings.webpack.webpackMod.Compiler.Handler
 import typings.webpack.webpackMod.Compiler.Watching
 import typings.webpack.webpackMod.Configuration
+import typings.webpack.webpackMod.ConfigurationFactory
 import typings.webpack.webpackMod.MultiCompiler
-import typings.webpack.webpackMod.MultiCompiler.Handler
+import typings.webpack.webpackMod.MultiConfigurationFactory
 import typings.webpack.webpackMod.MultiWatching
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +35,7 @@ trait CreateCompilerOptions extends js.Object {
     * Takes the `require('webpack')` entry point.
     */
   @JSName("webpack")
-  var webpack_Original: Anon_Args = js.native
+  var webpack_Original: Anon_BannerPlugin = js.native
   /**
     * Takes the `require('webpack')` entry point.
     */
@@ -42,22 +43,18 @@ trait CreateCompilerOptions extends js.Object {
   /**
     * Takes the `require('webpack')` entry point.
     */
+  def webpack(
+    options: ConfigurationFactory | MultiConfigurationFactory,
+    handler: Handler | typings.webpack.webpackMod.MultiCompiler.Handler
+  ): MultiWatching | MultiCompiler = js.native
+  /**
+    * Takes the `require('webpack')` entry point.
+    */
   def webpack(options: js.Array[Configuration]): MultiCompiler = js.native
   /**
     * Takes the `require('webpack')` entry point.
     */
-  def webpack(options: js.Array[Configuration], handler: Handler): MultiWatching | MultiCompiler = js.native
-  /**
-    * Takes the `require('webpack')` entry point.
-    */
-  def webpack(
-    options: js.Function2[
-      (Record[String, Boolean | Double | String]) | String, 
-      /* args */ Record[String, String], 
-      js.Array[Configuration] | Configuration | (js.Promise[js.Array[Configuration] | Configuration])
-    ],
-    handler: typings.webpack.webpackMod.Compiler.Handler | Handler
-  ): MultiWatching | MultiCompiler = js.native
+  def webpack(options: js.Array[Configuration], handler: typings.webpack.webpackMod.MultiCompiler.Handler): MultiWatching | MultiCompiler = js.native
   /**
     * Takes the `require('webpack')` entry point.
     */
@@ -65,6 +62,6 @@ trait CreateCompilerOptions extends js.Object {
   /**
     * Takes the `require('webpack')` entry point.
     */
-  def webpack(options: Configuration, handler: typings.webpack.webpackMod.Compiler.Handler): Watching | Compiler = js.native
+  def webpack(options: Configuration, handler: Handler): Watching | Compiler = js.native
 }
 

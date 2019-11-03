@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gatsby"
-version := "2.17.7-bdc529"
+version := "2.17.7-c52cda"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
   "org.scalablytyped" %%% "gatsby-link" % "2.2.22-453980",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-2fbebe",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-6c6f24",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",

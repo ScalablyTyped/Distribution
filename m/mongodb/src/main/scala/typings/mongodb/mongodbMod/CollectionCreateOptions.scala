@@ -20,7 +20,7 @@ trait CollectionCreateOptions extends CommonOptions {
   var pipeline: js.UndefOr[js.Array[_]] = js.undefined
   var pkFactory: js.UndefOr[js.Object] = js.undefined
   var raw: js.UndefOr[Boolean] = js.undefined
-  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var storageEngine: js.UndefOr[js.Object] = js.undefined
@@ -44,7 +44,7 @@ object CollectionCreateOptions {
     pipeline: js.Array[_] = null,
     pkFactory: js.Object = null,
     raw: js.UndefOr[Boolean] = js.undefined,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     serializeFunctions: js.UndefOr[Boolean] = js.undefined,
     session: ClientSession = null,
     size: Int | scala.Double = null,
@@ -68,7 +68,7 @@ object CollectionCreateOptions {
     if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline)
     if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
     if (session != null) __obj.updateDynamic("session")(session)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

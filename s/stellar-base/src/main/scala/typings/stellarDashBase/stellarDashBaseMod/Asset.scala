@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-base", "Asset")
 @js.native
 class Asset protected () extends js.Object {
+  def this(code: String) = this()
   def this(code: String, issuer: String) = this()
   var code: String = js.native
   var issuer: String = js.native

@@ -5,11 +5,13 @@ import typings.stellarDashBase.stellarDashBaseStrings.allowTrust
 import typings.stellarDashBase.stellarDashBaseStrings.bumpSequence
 import typings.stellarDashBase.stellarDashBaseStrings.changeTrust
 import typings.stellarDashBase.stellarDashBaseStrings.createAccount
-import typings.stellarDashBase.stellarDashBaseStrings.createPassiveOffer
+import typings.stellarDashBase.stellarDashBaseStrings.createPassiveSellOffer
 import typings.stellarDashBase.stellarDashBaseStrings.inflation
+import typings.stellarDashBase.stellarDashBaseStrings.manageBuyOffer
 import typings.stellarDashBase.stellarDashBaseStrings.manageData
-import typings.stellarDashBase.stellarDashBaseStrings.manageOffer
-import typings.stellarDashBase.stellarDashBaseStrings.pathPayment
+import typings.stellarDashBase.stellarDashBaseStrings.manageSellOffer
+import typings.stellarDashBase.stellarDashBaseStrings.pathPaymentStrictReceive
+import typings.stellarDashBase.stellarDashBaseStrings.pathPaymentStrictSend
 import typings.stellarDashBase.stellarDashBaseStrings.payment
 import typings.stellarDashBase.stellarDashBaseStrings.setOptions
 import scala.scalajs.js
@@ -24,11 +26,13 @@ object OperationType extends js.Object {
   type BumpSequence = bumpSequence
   type ChangeTrust = changeTrust
   type CreateAccount = createAccount
-  type CreatePassiveOffer = createPassiveOffer
+  type CreatePassiveSellOffer = createPassiveSellOffer
   type Inflation = inflation
+  type ManageBuyOffer = manageBuyOffer
   type ManageData = manageData
-  type ManageOffer = manageOffer
-  type PathPayment = pathPayment
+  type ManageSellOffer = manageSellOffer
+  type PathPaymentStrictReceive = pathPaymentStrictReceive
+  type PathPaymentStrictSend = pathPaymentStrictSend
   type Payment = payment
   type SetOptions = setOptions
 }

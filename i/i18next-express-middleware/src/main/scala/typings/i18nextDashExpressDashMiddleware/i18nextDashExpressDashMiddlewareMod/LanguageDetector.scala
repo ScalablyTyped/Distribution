@@ -2,6 +2,7 @@ package typings.i18nextDashExpressDashMiddleware.i18nextDashExpressDashMiddlewar
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.i18next.i18nextMod.Module
 import typings.i18next.i18nextStrings.`3rdParty`
 import typings.i18next.i18nextStrings.backend
@@ -30,8 +31,8 @@ class LanguageDetector () extends Module {
   @JSName("type")
   var type_LanguageDetector: typings.i18nextDashExpressDashMiddleware.i18nextDashExpressDashMiddlewareStrings.languageDetector = js.native
   def addDetector(detector: LanguageDetectorInterface): Unit = js.native
-  def cacheUserLanguage(req: Request, res: Response, lng: String, caches: LanguageDetectorCaches): Unit = js.native
-  def detect(req: Request, res: Response, detectionOrder: LanguageDetectorOrder): Unit = js.native
+  def cacheUserLanguage(req: Request[ParamsDictionary], res: Response, lng: String, caches: LanguageDetectorCaches): Unit = js.native
+  def detect(req: Request[ParamsDictionary], res: Response, detectionOrder: LanguageDetectorOrder): Unit = js.native
   def init(): Unit = js.native
   def init(options: LanguageDetectorOptions): Unit = js.native
   def init(options: LanguageDetectorOptions, allOptions: LanguageDetectorAllOptions): Unit = js.native

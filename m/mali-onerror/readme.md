@@ -1,7 +1,7 @@
 
 # Scala.js typings for mali-onerror
 
-Typings are for version 0.1
+Typings are for version 0.2.0
 
 ## Library description:
 On error middleware for Mali
@@ -24,7 +24,7 @@ On error middleware for Mali
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

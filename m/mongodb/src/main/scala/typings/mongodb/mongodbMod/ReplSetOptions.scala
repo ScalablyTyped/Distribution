@@ -39,7 +39,7 @@ object ReplSetOptions {
     maxStalenessSeconds: Int | scala.Double = null,
     minSize: Int | scala.Double = null,
     poolSize: Int | scala.Double = null,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     readPreferenceTags: js.Array[String] = null,
     replicaSet: String = null,
     secondaryAcceptableLatencyMS: Int | scala.Double = null,
@@ -64,7 +64,7 @@ object ReplSetOptions {
     if (maxStalenessSeconds != null) __obj.updateDynamic("maxStalenessSeconds")(maxStalenessSeconds.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (readPreferenceTags != null) __obj.updateDynamic("readPreferenceTags")(readPreferenceTags)
     if (replicaSet != null) __obj.updateDynamic("replicaSet")(replicaSet)
     if (secondaryAcceptableLatencyMS != null) __obj.updateDynamic("secondaryAcceptableLatencyMS")(secondaryAcceptableLatencyMS.asInstanceOf[js.Any])

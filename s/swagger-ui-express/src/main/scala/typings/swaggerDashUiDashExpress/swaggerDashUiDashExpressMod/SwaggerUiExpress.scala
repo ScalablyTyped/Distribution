@@ -1,6 +1,7 @@
 package typings.swaggerDashUiDashExpress.swaggerDashUiDashExpressMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.serveDashStatic.serveDashStaticMod.ServeStaticOptions
 import typings.swaggerDashUiDashExpress.swaggerDashUiDashExpressNumbers.`false`
 import scala.scalajs.js
@@ -15,7 +16,7 @@ trait SwaggerUiExpress extends js.Object {
     *
     * @returns Express handlers that process requests and return files for Swagger UI.
     */
-  var serve: js.Array[RequestHandler] = js.native
+  var serve: js.Array[RequestHandler[ParamsDictionary]] = js.native
   /**
     * Generates the custom html page for the UI API.
     *
@@ -47,9 +48,9 @@ trait SwaggerUiExpress extends js.Object {
     * @param opts options to pass to Swagger UI.
     * @returns Express handlers that process requests and return files for Swagger UI.
     */
-  def serveFiles(): js.Array[RequestHandler] = js.native
-  def serveFiles(swaggerDoc: JsonObject): js.Array[RequestHandler] = js.native
-  def serveFiles(swaggerDoc: JsonObject, opts: SwaggerUiOptions): js.Array[RequestHandler] = js.native
+  def serveFiles(): js.Array[RequestHandler[ParamsDictionary]] = js.native
+  def serveFiles(swaggerDoc: JsonObject): js.Array[RequestHandler[ParamsDictionary]] = js.native
+  def serveFiles(swaggerDoc: JsonObject, opts: SwaggerUiOptions): js.Array[RequestHandler[ParamsDictionary]] = js.native
   /**
     * Returns handlers for serving Swagger UI files.
     * This includes custom initialization js file and static files of Swagger UI.
@@ -58,7 +59,7 @@ trait SwaggerUiExpress extends js.Object {
     * @param options options object that is passed to the express.static middleware.
     * @returns Express handlers that process requests and return files for Swagger UI.
     */
-  def serveWithOptions(options: ServeStaticOptions): js.Array[RequestHandler] = js.native
+  def serveWithOptions(options: ServeStaticOptions): js.Array[RequestHandler[ParamsDictionary]] = js.native
   /**
     * Creates a middleware function that returns the pre-generated html file for the Swagger UI page.
     *
@@ -80,6 +81,6 @@ trait SwaggerUiExpress extends js.Object {
     customfavIcon: js.UndefOr[String | `false` | Null],
     swaggerUrl: js.UndefOr[String | `false` | Null],
     customeSiteTitle: js.UndefOr[String | `false` | Null]
-  ): RequestHandler = js.native
+  ): RequestHandler[ParamsDictionary] = js.native
 }
 

@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
   * 
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
   * You should treat this as a mode of Office.context.mailbox.item. Refer to the
-  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item | Object Model} page for more information.
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
   */
 @js.native
 trait AppointmentCompose extends ItemCompose {
   /**
     * Gets or sets the date and time that the appointment is to end.
     *
-    * The end property is an {@link Office.Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
+    * The end property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
     * You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
     *
     * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
@@ -32,7 +32,20 @@ trait AppointmentCompose extends ItemCompose {
     */
   var end: Time = js.native
   /**
-    * Gets or sets the {@link Office.Location} of an appointment. The location property returns a Location object that provides methods that are 
+    * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link Office.EnhancedLocation | EnhancedLocation}
+    * object that provides methods to get, remove, or add locations on an item.
+    * 
+    * [Api set: Mailbox 1.8]
+    * 
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    */
+  var enhancedLocation: EnhancedLocation = js.native
+  /**
+    * Gets or sets the location of an appointment. The location property returns a {@link Office.Location | Location} object that provides methods that are 
     * used to get and set the location of the appointment.
     *
     * [Api set: Mailbox 1.0]
@@ -45,8 +58,9 @@ trait AppointmentCompose extends ItemCompose {
     */
   var location: Location = js.native
   /**
-    * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item. 
-    * The optionalAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the optional attendees 
+    * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
+    * 
+    * The optionalAttendees property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the optional attendees 
     * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
     * 
     * - Get 500 members maximum.
@@ -99,7 +113,7 @@ trait AppointmentCompose extends ItemCompose {
   /**
     * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
     *
-    * The requiredAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the required attendees 
+    * The requiredAttendees property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the required attendees 
     * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
     *
     * - Get 500 members maximum.
@@ -118,7 +132,7 @@ trait AppointmentCompose extends ItemCompose {
   /**
     * Gets or sets the date and time that the appointment is to begin.
     *
-    * The start property is an {@link Office.Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
+    * The start property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
     * You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
     *
     * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on 
@@ -133,5 +147,55 @@ trait AppointmentCompose extends ItemCompose {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var start: Time = js.native
+  /**
+    * Asynchronously gets the ID of a saved item.
+    *
+    * When invoked, this method returns the item ID via the callback method.
+    * 
+    * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API),
+    * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
+    * Until the item is synced, the `itemId` is not recognized and using it returns an error.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * 
+    * **Errors**:
+    * 
+    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+    * 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    */
+  def getItemIdAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  /**
+    * Asynchronously gets the ID of a saved item.
+    *
+    * When invoked, this method returns the item ID via the callback method.
+    * 
+    * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API),
+    * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
+    * Until the item is synced, the `itemId` is not recognized and using it returns an error.
+    *
+    * [Api set: Mailbox 1.8]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * 
+    * **Errors**:
+    * 
+    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+    * 
+    * @param options - An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    */
+  def getItemIdAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
 }
 

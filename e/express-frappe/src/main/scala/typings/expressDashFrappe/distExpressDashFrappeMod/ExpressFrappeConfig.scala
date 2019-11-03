@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation._
 trait ExpressFrappeConfig extends js.Object {
   var bodyParser: js.UndefOr[Boolean | Anon_Json] = js.undefined
   var cors: js.UndefOr[Boolean | CorsOptions] = js.undefined
-  var errorHandler: js.UndefOr[ErrorRequestHandler] = js.undefined
+  var errorHandler: js.UndefOr[ErrorRequestHandler[ParamsDictionary]] = js.undefined
   var io: js.UndefOr[ExpressFrappeSocketIOConfig] = js.undefined
-  var middleware: js.UndefOr[js.Array[RequestHandler]] = js.undefined
+  var middleware: js.UndefOr[js.Array[RequestHandler[ParamsDictionary]]] = js.undefined
   var morgan: js.UndefOr[Boolean] = js.undefined
   var routes: js.UndefOr[js.Array[RouteConfig] | RouteConfigAlternative] = js.undefined
   var static: js.UndefOr[String | Anon_Options] = js.undefined
@@ -33,7 +33,7 @@ object ExpressFrappeConfig {
     cors: Boolean | CorsOptions = null,
     errorHandler: (/* err */ js.Any, /* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null,
     io: ExpressFrappeSocketIOConfig = null,
-    middleware: js.Array[RequestHandler] = null,
+    middleware: js.Array[RequestHandler[ParamsDictionary]] = null,
     morgan: js.UndefOr[Boolean] = js.undefined,
     routes: js.Array[RouteConfig] | RouteConfigAlternative = null,
     static: String | Anon_Options = null

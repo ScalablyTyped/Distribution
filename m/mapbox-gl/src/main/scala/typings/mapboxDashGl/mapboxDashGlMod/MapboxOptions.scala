@@ -72,8 +72,13 @@ trait MapboxOptions extends js.Object {
   var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
   /** A fitBounds options object to use only when setting the bounds option. */
   var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.undefined
-  /** If true, the map will track and update the page URL according to map position */
-  var hash: js.UndefOr[Boolean] = js.undefined
+  /** If `true`, the map's position (zoom, center latitude, center longitude, bearing, and pitch) will be synced with the hash fragment of the page's URL.
+    * For example, `http://path/to/my/page.html#2.59/39.26/53.07/-24.1/60`.
+    * An additional string may optionally be provided to indicate a parameter-styled hash,
+    * e.g. http://path/to/my/page.html#map=2.59/39.26/53.07/-24.1/60&foo=bar, where foo
+    * is a custom parameter and bar is an arbitrary hash distinct from the map hash.
+    * */
+  var hash: js.UndefOr[Boolean | String] = js.undefined
   /** If false, no mouse, touch, or keyboard listeners are attached to the map, so it will not respond to input */
   var interactive: js.UndefOr[Boolean] = js.undefined
   /** If true, enable keyboard shortcuts (see KeyboardHandler). */
@@ -174,7 +179,7 @@ object MapboxOptions {
     fadeDuration: Int | Double = null,
     failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined,
     fitBoundsOptions: FitBoundsOptions = null,
-    hash: js.UndefOr[Boolean] = js.undefined,
+    hash: Boolean | String = null,
     interactive: js.UndefOr[Boolean] = js.undefined,
     keyboard: js.UndefOr[Boolean] = js.undefined,
     localIdeographFontFamily: String = null,
@@ -213,7 +218,7 @@ object MapboxOptions {
     if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat)
     if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions)
-    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
     if (localIdeographFontFamily != null) __obj.updateDynamic("localIdeographFontFamily")(localIdeographFontFamily)

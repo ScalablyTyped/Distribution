@@ -13,5 +13,7 @@ class Transaction[TMemo /* <: typings.stellarDashBase.stellarDashBaseMod.Memo[Me
   extends typings.stellarDashBase.stellarDashBaseMod.Transaction[TMemo, TOps] {
   def this(envelope: String) = this()
   def this(envelope: TransactionEnvelope) = this()
+  def this(envelope: String, networkPassphrase: String) = this()
+  def this(envelope: TransactionEnvelope, networkPassphrase: String) = this()
 }
 

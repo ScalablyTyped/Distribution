@@ -58,7 +58,7 @@ trait Recipients extends js.Object {
   /**
     * Gets a recipient list for an appointment or message.
     *
-    * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects.
+    * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
     *
     * [Api set: Mailbox 1.1]
     *
@@ -76,7 +76,7 @@ trait Recipients extends js.Object {
   /**
     * Gets a recipient list for an appointment or message.
     *
-    * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects.
+    * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
     *
     * [Api set: Mailbox 1.1]
     *
@@ -105,9 +105,9 @@ trait Recipients extends js.Object {
     *
     * - Strings containing SMTP email addresses
     *
-    * - {@link Office.EmailUser} objects
+    * - {@link Office.EmailUser | EmailUser} objects
     *
-    * - {@link Office.EmailAddressDetails} objects
+    * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
     *
     * [Api set: Mailbox 1.1]
     *
@@ -140,9 +140,9 @@ trait Recipients extends js.Object {
     *
     * - Strings containing SMTP email addresses
     *
-    * - {@link Office.EmailUser} objects
+    * - {@link Office.EmailUser | EmailUser} objects
     *
-    * - {@link Office.EmailAddressDetails} objects
+    * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
     *
     * [Api set: Mailbox 1.1]
     *

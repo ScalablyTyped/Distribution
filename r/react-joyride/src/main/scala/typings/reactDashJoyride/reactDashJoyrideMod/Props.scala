@@ -1,43 +1,19 @@
 package typings.reactDashJoyride.reactDashJoyrideMod
 
-import typings.react.reactMod.ReactNode
+import typings.react.reactMod.ElementType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Props extends OverridableProps {
-  /**
-    * It will be called when Joyride's state changes. It returns a single parameter with the state.
-    */
-  var callback: js.UndefOr[js.Function1[/* data */ State, _]] = js.undefined
-  /**
-    * The tour is played sequentially with the Next button. Defaults to false.
-    */
+trait Props extends CommonProps {
+  var callback: js.UndefOr[js.Function1[/* data */ CallBackProps, Unit]] = js.undefined
   var continuous: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Log Joyride's actions to the console. Defaults to false.
-    */
   var debug: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Run/stop the tour. Defaults to true.
-    */
+  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, _]] = js.undefined
   var run: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The scroll distance from the element scrollTop value. Defaults to 20.
-    */
   var scrollOffset: js.UndefOr[Double] = js.undefined
-  /**
-    * Scroll the page for the first step. Defaults to false
-    */
   var scrollToFirstStep: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Setting a number here will turn Joyride into controlled mode.
-    * You will receive the state events in the callback and you'll have to update this prop by yourself.
-    */
   var stepIndex: js.UndefOr[Double] = js.undefined
-  /**
-    * The tour's steps. Defaults to []
-    */
   var steps: js.Array[Step]
 }
 
@@ -45,15 +21,17 @@ object Props {
   @scala.inline
   def apply(
     steps: js.Array[Step],
-    beaconComponent: ReactNode = null,
-    callback: /* data */ State => _ = null,
+    beaconComponent: ElementType[BeaconRenderProps] = null,
+    callback: /* data */ CallBackProps => Unit = null,
     continuous: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
     disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
     disableOverlay: js.UndefOr[Boolean] = js.undefined,
     disableOverlayClose: js.UndefOr[Boolean] = js.undefined,
+    disableScrollParentFix: js.UndefOr[Boolean] = js.undefined,
     disableScrolling: js.UndefOr[Boolean] = js.undefined,
-    floaterProps: js.Object = null,
+    floaterProps: FloaterProps = null,
+    getHelpers: /* helpers */ StoreHelpers => _ = null,
     hideBackButton: js.UndefOr[Boolean] = js.undefined,
     locale: Locale = null,
     run: js.UndefOr[Boolean] = js.undefined,
@@ -64,8 +42,8 @@ object Props {
     spotlightClicks: js.UndefOr[Boolean] = js.undefined,
     spotlightPadding: Int | Double = null,
     stepIndex: Int | Double = null,
-    styles: StepStyles = null,
-    tooltipComponent: ReactNode = null
+    styles: Styles = null,
+    tooltipComponent: ElementType[TooltipRenderProps] = null
   ): Props = {
     val __obj = js.Dynamic.literal(steps = steps)
     if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
@@ -75,8 +53,10 @@ object Props {
     if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc)
     if (!js.isUndefined(disableOverlay)) __obj.updateDynamic("disableOverlay")(disableOverlay)
     if (!js.isUndefined(disableOverlayClose)) __obj.updateDynamic("disableOverlayClose")(disableOverlayClose)
+    if (!js.isUndefined(disableScrollParentFix)) __obj.updateDynamic("disableScrollParentFix")(disableScrollParentFix)
     if (!js.isUndefined(disableScrolling)) __obj.updateDynamic("disableScrolling")(disableScrolling)
     if (floaterProps != null) __obj.updateDynamic("floaterProps")(floaterProps)
+    if (getHelpers != null) __obj.updateDynamic("getHelpers")(js.Any.fromFunction1(getHelpers))
     if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (!js.isUndefined(run)) __obj.updateDynamic("run")(run)

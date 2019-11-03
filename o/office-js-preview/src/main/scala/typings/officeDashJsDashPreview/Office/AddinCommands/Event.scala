@@ -45,7 +45,7 @@ trait Event extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
-    * Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter.
+    * The `options` parameter was introduced in Mailbox 1.8.
     * 
     * @param options Optional. An object that specifies behavior options for when the event is completed.
     */

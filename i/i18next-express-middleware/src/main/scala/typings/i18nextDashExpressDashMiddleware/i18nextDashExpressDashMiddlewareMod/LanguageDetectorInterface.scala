@@ -2,6 +2,7 @@ package typings.i18nextDashExpressDashMiddleware.i18nextDashExpressDashMiddlewar
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait LanguageDetectorInterface extends js.Object {
   var cacheUserLanguage: js.UndefOr[
     js.Function4[
-      /* req */ Request, 
+      /* req */ Request[ParamsDictionary], 
       /* res */ Response, 
       /* lng */ String, 
       /* options */ js.UndefOr[js.Object], 
@@ -18,7 +19,7 @@ trait LanguageDetectorInterface extends js.Object {
     ]
   ] = js.native
   var name: String = js.native
-  def lookup(req: Request, res: Response): String | js.Array[String] = js.native
-  def lookup(req: Request, res: Response, options: LanguageDetectorInterfaceOptions): String | js.Array[String] = js.native
+  def lookup(req: Request[ParamsDictionary], res: Response): String | js.Array[String] = js.native
+  def lookup(req: Request[ParamsDictionary], res: Response, options: LanguageDetectorInterfaceOptions): String | js.Array[String] = js.native
 }
 

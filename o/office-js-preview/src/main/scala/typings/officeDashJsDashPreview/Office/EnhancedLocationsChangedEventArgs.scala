@@ -9,13 +9,13 @@ trait EnhancedLocationsChangedEventArgs extends js.Object {
   /**
     * Gets the set of enhanced locations.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     */
   var enhancedLocations: js.Array[LocationDetails]
   /**
     * Gets the type of the event. See `Office.EventType` for details.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     */
   var `type`: olkEnhancedLocationsChanged
 }

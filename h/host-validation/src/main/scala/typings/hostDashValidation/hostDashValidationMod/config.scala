@@ -3,6 +3,7 @@ package typings.hostDashValidation.hostDashValidationMod
 import typings.express.expressMod.NextFunction
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.hostDashValidation.hostDashValidationStrings.both
 import typings.hostDashValidation.hostDashValidationStrings.either
 import typings.std.RegExp
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 trait config extends js.Object {
   var fail: js.UndefOr[
-    js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit]
+    js.Function3[/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction, Unit]
   ] = js.undefined
   var hosts: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   var mode: js.UndefOr[both | either] = js.undefined
@@ -22,7 +23,7 @@ trait config extends js.Object {
 object config {
   @scala.inline
   def apply(
-    fail: (/* req */ Request, /* res */ Response, /* next */ NextFunction) => Unit = null,
+    fail: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => Unit = null,
     hosts: js.Array[String | RegExp] = null,
     mode: both | either = null,
     referers: js.Array[String | RegExp] = null

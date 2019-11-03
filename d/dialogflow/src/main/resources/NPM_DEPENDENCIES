@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dialogflow" : "0.12.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dialogflow" : "0.12.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

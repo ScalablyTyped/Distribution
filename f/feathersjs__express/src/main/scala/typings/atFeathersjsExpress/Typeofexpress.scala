@@ -37,7 +37,7 @@ trait Typeofexpress extends js.Object {
     */
   @JSName("raw")
   var raw_Original: Fn_OptionsNextHandleFunction_719916182 = js.native
-  var request: Request = js.native
+  var request: Request[ParamsDictionary] = js.native
   var response: Response = js.native
   /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.

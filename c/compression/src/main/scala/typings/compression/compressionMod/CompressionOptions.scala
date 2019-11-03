@@ -2,6 +2,7 @@ package typings.compression.compressionMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -110,7 +111,7 @@ object CompressionOptions {
   @scala.inline
   def apply(
     chunkSize: Int | Double = null,
-    filter: (/* req */ Request, /* res */ Response) => Boolean = null,
+    filter: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null,
     finishFlush: Int | Double = null,
     flush: Int | Double = null,
     level: Int | Double = null,

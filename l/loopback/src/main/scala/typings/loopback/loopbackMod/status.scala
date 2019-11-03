@@ -1,6 +1,7 @@
 package typings.loopback.loopbackMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +19,6 @@ object status extends js.Object {
     * }
     * ```
     */
-  def apply(): RequestHandler = js.native
+  def apply(): RequestHandler[ParamsDictionary] = js.native
 }
 

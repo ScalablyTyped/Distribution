@@ -11,19 +11,19 @@ trait AttachmentsChangedEventArgs extends js.Object {
     * Represents the set of attachments that were added or removed. 
     * For each such attachment, gets a subset of {@link Office.AttachmentDetails | AttachmentDetails} properties: `id`, `name`, `size`, and `attachmentType`.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     */
   var attachmentDetails: js.Array[js.Object]
   /**
     * Gets whether the attachments were added or removed. See {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus} for details.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     */ 
   var attachmentStatus: AttachmentStatus | String
   /**
     * Gets the type of the event. See `Office.EventType` for details.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     */
   var `type`: olkAttachmentsChanged
 }

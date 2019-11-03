@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "nookies" : "2.0.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "nookies" : "2.0.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

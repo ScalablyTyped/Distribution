@@ -1,6 +1,7 @@
 package typings.passportDashGithub2.passportDashGithub2Mod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passport.passportMod.AuthenticateOptions
 import typings.passportDashOauth2.passportDashOauth2Mod.VerifyFunction
 import typings.passportDashOauth2.passportDashOauth2Mod.VerifyFunctionWithRequest
@@ -14,6 +15,6 @@ class Strategy protected ()
   extends typings.passportDashOauth2.passportDashOauth2Mod.Strategy {
   def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
   def this(options: StrategyOptions, verify: VerifyFunction) = this()
-  def authenticate(req: Request, options: AuthenticateOptions): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary], options: AuthenticateOptions): Unit = js.native
 }
 

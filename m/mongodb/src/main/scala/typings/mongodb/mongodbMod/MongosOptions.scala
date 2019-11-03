@@ -32,7 +32,7 @@ object MongosOptions {
     haInterval: Int | scala.Double = null,
     minSize: Int | scala.Double = null,
     poolSize: Int | scala.Double = null,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     readPreferenceTags: js.Array[String] = null,
     servername: String = null,
     socketOptions: SocketOptions = null,
@@ -54,7 +54,7 @@ object MongosOptions {
     if (haInterval != null) __obj.updateDynamic("haInterval")(haInterval.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
     if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (readPreferenceTags != null) __obj.updateDynamic("readPreferenceTags")(readPreferenceTags)
     if (servername != null) __obj.updateDynamic("servername")(servername)
     if (socketOptions != null) __obj.updateDynamic("socketOptions")(socketOptions)

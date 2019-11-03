@@ -1,6 +1,7 @@
 package typings.passportDashBeam.passportDashBeamMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passportDashBeam.passportDashBeamMod.Strategy.IStrategyOption
 import typings.passportDashBeam.passportDashBeamMod.Strategy.Profile
 import scala.scalajs.js
@@ -23,7 +24,7 @@ class Strategy_ protected ()
   ) = this()
   @JSName("name")
   var name_Strategy_ : String = js.native
-  def authenticate(req: Request): Unit = js.native
-  def authenticate(req: Request, options: js.Object): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

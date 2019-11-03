@@ -1,6 +1,7 @@
 package typings.passportDashTwitter.passportDashTwitterMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ class Strategy protected ()
   def this(
     options: IStrategyOptionWithRequest,
     verify: js.Function5[
-        /* req */ Request, 
+        /* req */ Request[ParamsDictionary], 
         /* accessToken */ String, 
         /* refreshToken */ String, 
         /* profile */ Profile, 
@@ -32,7 +33,7 @@ class Strategy protected ()
   ) = this()
   @JSName("name")
   var name_Strategy: String = js.native
-  def authenticate(req: Request): Unit = js.native
-  def authenticate(req: Request, options: js.Object): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

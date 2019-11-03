@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__console-extension"
-version := "1.2.0-4b0565"
+version := "1.2.1-e5cc47"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

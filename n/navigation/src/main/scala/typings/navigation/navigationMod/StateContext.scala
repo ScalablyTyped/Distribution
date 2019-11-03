@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class StateContext () extends js.Object {
   /**
+    * Gets the current asynchronous data
+    */
+  var asyncData: js.Any = js.native
+  /**
     * Gets a Crumb collection representing the crumb trail, ordered oldest
     * Crumb first
     */
@@ -16,6 +20,10 @@ class StateContext () extends js.Object {
     * Gets the NavigationData for the current State
     */
   var data: js.Any = js.native
+  /**
+    * Gets a value indicating whether browser history was used
+    */
+  var history: Boolean = js.native
   /**
     * Gets the next crumb
     */

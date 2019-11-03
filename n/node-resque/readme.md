@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-resque
 
-Typings are for version 5.4
+Typings are for version 5.5
 
 ## Library description:
 an opinionated implementation of resque in node

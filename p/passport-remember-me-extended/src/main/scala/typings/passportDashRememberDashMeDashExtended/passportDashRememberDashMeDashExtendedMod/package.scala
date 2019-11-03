@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object passportDashRememberDashMeDashExtendedMod {
   import typings.express.expressMod.Request
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
   type IssueFunction = js.Function2[
     /* user */ js.Any, 
@@ -13,7 +14,7 @@ package object passportDashRememberDashMeDashExtendedMod {
     Unit
   ]
   type IssueFunctionWithRequest = js.Function3[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* user */ js.Any, 
     /* done */ js.Function2[/* err */ js.Any, /* token */ js.UndefOr[js.Any], Unit], 
     Unit
@@ -24,7 +25,7 @@ package object passportDashRememberDashMeDashExtendedMod {
     Unit
   ]
   type VerifyFunctionWithRequest = js.Function3[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* token */ js.Any, 
     /* done */ js.Function3[/* err */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit], 
     Unit

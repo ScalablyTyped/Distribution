@@ -19,6 +19,11 @@ package object webpackMod {
     * @deprecated Use RuleSetCondition instead
     */
   type Condition = RuleSetCondition
+  type ConfigurationFactory = js.Function2[
+    /* env */ String | (Record[String, Boolean | Double | String]), 
+    /* args */ Record[String, String], 
+    Configuration | js.Promise[Configuration]
+  ]
   type DllPlugin = DllPlugin_
   type DllReferencePlugin = DllReferencePlugin_
   type Entry = StringDictionary[String | js.Array[String]]
@@ -40,6 +45,11 @@ package object webpackMod {
   ]
   type ICompiler = ICompiler_
   type Loader = String | NewLoader
+  type MultiConfigurationFactory = js.Function2[
+    /* env */ String | (Record[String, Boolean | Double | String]), 
+    /* args */ Record[String, String], 
+    js.Array[Configuration] | js.Promise[js.Array[Configuration]]
+  ]
   /** @deprecated use webpack.Options.Performance */
   type PerformanceOptions = Performance
   /**

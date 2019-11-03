@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "depcheck"
-version := "0.8-dt-20190711Z-f5ef9e"
+version := "0.8-dt-20191101Z-d6590c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

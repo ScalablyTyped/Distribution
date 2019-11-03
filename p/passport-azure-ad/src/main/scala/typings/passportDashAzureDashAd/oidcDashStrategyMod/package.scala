@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object oidcDashStrategyMod {
   import typings.express.expressMod.Request
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
   import typings.passportDashAzureDashAd.commonMod.VerifyCallback
 
   type VerifyOIDCFunction = (js.Function2[/* profile */ IProfile, /* done */ VerifyCallback, Unit]) | (js.Function3[/* iss */ String, /* sub */ String, /* done */ VerifyCallback, Unit]) | (js.Function4[
@@ -42,15 +43,26 @@ package object oidcDashStrategyMod {
     /* done */ VerifyCallback, 
     Unit
   ])
-  type VerifyOIDCFunctionWithReq = (js.Function3[/* req */ Request, /* profile */ IProfile, /* done */ VerifyCallback, Unit]) | (js.Function4[/* req */ Request, /* iss */ String, /* sub */ String, /* done */ VerifyCallback, Unit]) | (js.Function5[
-    /* req */ Request, 
+  type VerifyOIDCFunctionWithReq = (js.Function3[
+    /* req */ Request[ParamsDictionary], 
+    /* profile */ IProfile, 
+    /* done */ VerifyCallback, 
+    Unit
+  ]) | (js.Function4[
+    /* req */ Request[ParamsDictionary], 
+    /* iss */ String, 
+    /* sub */ String, 
+    /* done */ VerifyCallback, 
+    Unit
+  ]) | (js.Function5[
+    /* req */ Request[ParamsDictionary], 
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function7[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 
@@ -59,7 +71,7 @@ package object oidcDashStrategyMod {
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function8[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 
@@ -69,7 +81,7 @@ package object oidcDashStrategyMod {
     /* done */ VerifyCallback, 
     Unit
   ]) | (js.Function9[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* iss */ String, 
     /* sub */ String, 
     /* profile */ IProfile, 

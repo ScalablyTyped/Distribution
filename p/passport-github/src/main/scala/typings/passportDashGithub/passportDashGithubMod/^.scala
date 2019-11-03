@@ -1,6 +1,7 @@
 package typings.passportDashGithub.passportDashGithubMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passportDashOauth2.passportDashOauth2Mod.VerifyCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +26,7 @@ class ^ protected ()
   def this(
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify github.StrategyOptions */ /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify github.StrategyOptionsWithRequest */ js.Any,
     verify: js.Function5[
-        (/* req */ Request) | (/* accessToken */ String), 
+        (/* req */ Request[ParamsDictionary]) | (/* accessToken */ String), 
         /* refreshToken */ /* accessToken */ String, 
         (/* params */ js.Any) | (/* refreshToken */ String), 
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify github.Profile */ /* profile */ js.Any, 
@@ -38,7 +39,7 @@ class ^ protected ()
   def this(
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify github.StrategyOptionsWithRequest */ js.Any,
     verify: js.Function6[
-        /* req */ Request, 
+        /* req */ Request[ParamsDictionary], 
         /* accessToken */ String, 
         /* params */ js.Any, 
         /* refreshToken */ String, 

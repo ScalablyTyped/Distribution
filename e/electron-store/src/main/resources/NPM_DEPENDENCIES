@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-store" : "5.0.0"
+      "electron-store" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-store" : "5.0.0"
+      "electron-store" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

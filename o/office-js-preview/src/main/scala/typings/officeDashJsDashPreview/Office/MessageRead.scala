@@ -275,7 +275,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -302,7 +302,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -332,7 +332,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -358,7 +358,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -369,7 +369,7 @@ trait MessageRead extends Message {
   /**
     * Gets all the internet headers for the message as a string.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     *
@@ -384,10 +384,9 @@ trait MessageRead extends Message {
     *                On success, the internet headers data is provided in the asyncResult.value property as a string. 
     *                Refer to {@link https://tools.ietf.org/html/rfc2183 | RFC 2183} for the formatting information of the returned string value. 
     *                If the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
-    *
-    * @beta
     */
   def getAllInternetHeadersAsync(): Unit = js.native
+  def getAllInternetHeadersAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getAllInternetHeadersAsync(options: AsyncContextOptions): Unit = js.native
   def getAllInternetHeadersAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   /**

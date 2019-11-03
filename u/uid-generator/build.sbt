@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uid-generator"
-version := "2.0-dt-20190809Z-f2166c"
+version := "2.0-dt-20191101Z-0c31f4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

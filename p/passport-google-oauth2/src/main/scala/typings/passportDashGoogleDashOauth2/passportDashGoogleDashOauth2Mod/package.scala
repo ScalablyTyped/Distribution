@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object passportDashGoogleDashOauth2Mod {
   import typings.express.expressMod.Request
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
   import typings.passportDashGoogleDashOauth2.Anon_Accesstoken
 
   type VerifyCallback = js.Function3[
@@ -22,7 +23,7 @@ package object passportDashGoogleDashOauth2Mod {
     Unit
   ]
   type VerifyFunctionWithRequest = js.Function5[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* profile */ js.Any, 
@@ -30,7 +31,7 @@ package object passportDashGoogleDashOauth2Mod {
     Unit
   ]
   type VerifyFunctionWithRequestAndParams = js.Function6[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* params */ Anon_Accesstoken, 

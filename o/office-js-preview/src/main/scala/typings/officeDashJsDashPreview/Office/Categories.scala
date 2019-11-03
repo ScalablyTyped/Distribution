@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation._
   * The user defines {@link Office.MasterCategories | categories in a master list} on their mailbox.
   * They can then apply one or more categories to an item.
   *
-  * [Api set: Mailbox Preview]
+  * [Api set: Mailbox 1.8]
   *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-  * 
-  * @beta
   */
 @js.native
 trait Categories extends js.Object {
@@ -33,7 +31,7 @@ trait Categories extends js.Object {
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -44,8 +42,6 @@ trait Categories extends js.Object {
     * **Errors**:
     * 
     * - InvalidCategory: Invalid categories were provided.
-    * 
-    * @beta
     */
   def addAsync(categories: js.Array[String]): Unit = js.native
   /**
@@ -56,7 +52,7 @@ trait Categories extends js.Object {
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error code.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -67,8 +63,6 @@ trait Categories extends js.Object {
     * **Errors**:
     * 
     * - InvalidCategory: Invalid categories were provided.
-    * 
-    * @beta
     */
   def addAsync(categories: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def addAsync(categories: js.Array[String], options: AsyncContextOptions): Unit = js.native
@@ -83,15 +77,13 @@ trait Categories extends js.Object {
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
-    * @beta
     */
   def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[CategoryDetails]], Unit]): Unit = js.native
   /**
@@ -102,15 +94,13 @@ trait Categories extends js.Object {
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error code.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
-    * @beta
     */
   def getAsync(
     options: AsyncContextOptions,
@@ -125,15 +115,13 @@ trait Categories extends js.Object {
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If removing categories fails, the asyncResult.error property will contain an error code.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
-    * @beta
     */
   def removeAsync(categories: js.Array[String]): Unit = js.native
   /**
@@ -143,15 +131,13 @@ trait Categories extends js.Object {
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If removing categories fails, the asyncResult.error property will contain an error code.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
-    * @beta
     */
   def removeAsync(categories: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def removeAsync(categories: js.Array[String], options: AsyncContextOptions): Unit = js.native

@@ -60,6 +60,14 @@ class Body () extends js.Object {
     */
   var bounds: Bounds = js.native
   /**
+    * A `Number` that is set to the radius of the object if the body was constructed using `Bodies.circle`.
+    * May have a value of `null` if the body is no longer a circle (i.e. was scaled with a scaleX != scaleY).
+    *
+    * @property circleRadius
+    * @default 0
+    */
+  var circleRadius: js.UndefOr[Double] = js.native
+  /**
     * An `Object` that specifies the collision filtering properties of this body.
     *
     * Collisions between two bodies will obey the following rules:
@@ -248,6 +256,12 @@ class Body () extends js.Object {
     */
   var parts: js.Array[Body] = js.native
   /**
+    * An object reserved for storing plugin-specific properties.
+    *
+    * @property plugin
+    */
+  var plugin: js.Any = js.native
+  /**
     * A `Vector` that specifies the current world-space position of the body.
     *
     * @property position
@@ -431,6 +445,19 @@ object Body extends js.Object {
     * @param {number} velocity
     */
   def setAngularVelocity(body: Body, velocity: Double): Unit = js.native
+  /**
+    * Set the centre of mass of the body.
+    * The `centre` is a vector in world-space unless `relative` is set, in which case it is a translation.
+    * The centre of mass is the point the body rotates about and can be used to simulate non-uniform density.
+    * This is equal to moving `body.position` but not the `body.vertices`.
+    * Invalid if the `centre` falls outside the body's convex hull.
+    * @method setCentre
+    * @param body
+    * @param centre
+    * @param relative
+    */
+  def setCentre(body: Body, centre: Vector): Unit = js.native
+  def setCentre(body: Body, centre: Vector, relative: Boolean): Unit = js.native
   /**
     * Sets the density of the body. Mass is automatically updated to reflect the change.
     * @method setDensity

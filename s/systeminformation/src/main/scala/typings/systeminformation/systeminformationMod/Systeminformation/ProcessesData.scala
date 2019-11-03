@@ -10,6 +10,7 @@ trait ProcessesData extends js.Object {
   var list: js.Array[ProcessesProcessData]
   var running: Double
   var sleeping: Double
+  var unknown: Double
 }
 
 object ProcessesData {
@@ -19,9 +20,10 @@ object ProcessesData {
     blocked: Double,
     list: js.Array[ProcessesProcessData],
     running: Double,
-    sleeping: Double
+    sleeping: Double,
+    unknown: Double
   ): ProcessesData = {
-    val __obj = js.Dynamic.literal(all = all, blocked = blocked, list = list, running = running, sleeping = sleeping)
+    val __obj = js.Dynamic.literal(all = all, blocked = blocked, list = list, running = running, sleeping = sleeping, unknown = unknown)
   
     __obj.asInstanceOf[ProcessesData]
   }

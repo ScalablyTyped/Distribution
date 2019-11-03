@@ -16,6 +16,8 @@ class Network protected ()
 @js.native
 object Network extends js.Object {
   def current(): typings.stellarDashBase.stellarDashBaseMod.Network = js.native
+  def networkId(): String = js.native
+  def networkPassphrase(): String = js.native
   def use(network: typings.stellarDashBase.stellarDashBaseMod.Network): Unit = js.native
   def usePublicNetwork(): Unit = js.native
   def useTestNetwork(): Unit = js.native

@@ -1,6 +1,7 @@
 package typings.swaggerDashExpressDashMiddleware.swaggerDashExpressDashMiddlewareMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,13 +32,19 @@ trait JsonParseOptionItem extends js.Object {
     * If a string, type option is passed directly to the type-is library and this can be an extension name (like json), a mime type (like application/json), or a mime * type with a wildcard (like * / * or * /json).
     * If a function, the type option is called as fn(req) and the request is parsed if it returns a truthy value. Defaults to application/json
     */
-  var `type`: js.UndefOr[(js.Function1[/* req */ Request, String]) | String] = js.undefined
+  var `type`: js.UndefOr[(js.Function1[/* req */ Request[ParamsDictionary], String]) | String] = js.undefined
   /**
     * The verify option, if supplied, is called as verify(req, res, buf, encoding), where buf is a Buffer of the raw request body and encoding is the encoding of the request.
     * The parsing can be aborted by throwing an error.
     */
   var verify: js.UndefOr[
-    js.Function4[/* req */ Request, /* res */ Response, /* buf */ Buffer, /* encoding */ String, Unit]
+    js.Function4[
+      /* req */ Request[ParamsDictionary], 
+      /* res */ Response, 
+      /* buf */ Buffer, 
+      /* encoding */ String, 
+      Unit
+    ]
   ] = js.undefined
 }
 
@@ -48,8 +55,8 @@ object JsonParseOptionItem {
     limit: String | Double = null,
     receiver: (/* key */ String, /* value */ js.Any) => _ = null,
     strict: js.UndefOr[Boolean] = js.undefined,
-    `type`: (js.Function1[/* req */ Request, String]) | String = null,
-    verify: (/* req */ Request, /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit = null
+    `type`: (js.Function1[/* req */ Request[ParamsDictionary], String]) | String = null,
+    verify: (/* req */ Request[ParamsDictionary], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit = null
   ): JsonParseOptionItem = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate)

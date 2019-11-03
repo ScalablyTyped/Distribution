@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "navigation"
-version := "4.0-dt-20180214Z-b4faac"
+version := "5.2.0-1927b5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

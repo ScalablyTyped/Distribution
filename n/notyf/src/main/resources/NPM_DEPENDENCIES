@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "notyf" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "notyf" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

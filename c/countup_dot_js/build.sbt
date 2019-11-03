@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "countup_dot_js"
-version := "1.9-dt-20180928Z-903949"
+version := "2.0.4-399ec9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

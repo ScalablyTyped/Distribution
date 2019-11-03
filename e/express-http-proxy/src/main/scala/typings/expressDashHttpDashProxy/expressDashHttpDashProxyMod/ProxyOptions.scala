@@ -3,6 +3,7 @@ package typings.expressDashHttpDashProxy.expressDashHttpDashProxyMod
 import typings.express.expressMod.NextFunction
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.node.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.OutgoingHttpHeaders
@@ -12,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ProxyOptions extends js.Object {
-  var filter: js.UndefOr[js.Function2[/* req */ Request, /* res */ Response, Boolean]] = js.undefined
+  var filter: js.UndefOr[js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Boolean]] = js.undefined
   var https: js.UndefOr[Boolean] = js.undefined
   /**
     * The byte limit of the body. This is the number of bytes or any string
@@ -24,15 +25,17 @@ trait ProxyOptions extends js.Object {
   var parseReqBody: js.UndefOr[Boolean] = js.undefined
   var preserveHostHdr: js.UndefOr[Boolean] = js.undefined
   var proxyErrorHandler: js.UndefOr[js.Function3[/* err */ js.Any, /* res */ Response, /* next */ NextFunction, _]] = js.undefined
-  var proxyReqBodyDecorator: js.UndefOr[js.Function2[/* bodyContent */ js.Any, /* srcReq */ Request, _]] = js.undefined
+  var proxyReqBodyDecorator: js.UndefOr[
+    js.Function2[/* bodyContent */ js.Any, /* srcReq */ Request[ParamsDictionary], _]
+  ] = js.undefined
   var proxyReqOptDecorator: js.UndefOr[
     js.Function2[
       /* proxyReqOpts */ RequestOptions, 
-      /* srcReq */ Request, 
+      /* srcReq */ Request[ParamsDictionary], 
       RequestOptions | js.Promise[RequestOptions]
     ]
   ] = js.undefined
-  var proxyReqPathResolver: js.UndefOr[js.Function1[/* req */ Request, String]] = js.undefined
+  var proxyReqPathResolver: js.UndefOr[js.Function1[/* req */ Request[ParamsDictionary], String]] = js.undefined
   var reqAsBuffer: js.UndefOr[Boolean] = js.undefined
   var reqBodyEncoding: js.UndefOr[String | Null] = js.undefined
   var skipToNextHandlerFilter: js.UndefOr[js.Function1[/* proxyRes */ Response, Boolean]] = js.undefined
@@ -41,7 +44,7 @@ trait ProxyOptions extends js.Object {
     js.Function4[
       /* proxyRes */ Response, 
       /* proxyResData */ js.Any, 
-      /* userReq */ Request, 
+      /* userReq */ Request[ParamsDictionary], 
       /* userRes */ Response, 
       Buffer | String | (js.Promise[Buffer | String])
     ]
@@ -49,9 +52,9 @@ trait ProxyOptions extends js.Object {
   var userResHeaderDecorator: js.UndefOr[
     js.Function5[
       /* headers */ IncomingHttpHeaders, 
-      /* userReq */ Request, 
+      /* userReq */ Request[ParamsDictionary], 
       /* userRes */ Response, 
-      /* proxyReq */ Request, 
+      /* proxyReq */ Request[ParamsDictionary], 
       /* proxyRes */ Response, 
       OutgoingHttpHeaders
     ]
@@ -61,22 +64,22 @@ trait ProxyOptions extends js.Object {
 object ProxyOptions {
   @scala.inline
   def apply(
-    filter: (/* req */ Request, /* res */ Response) => Boolean = null,
+    filter: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null,
     https: js.UndefOr[Boolean] = js.undefined,
     limit: Double | String = null,
     memoizeHost: js.UndefOr[Boolean] = js.undefined,
     parseReqBody: js.UndefOr[Boolean] = js.undefined,
     preserveHostHdr: js.UndefOr[Boolean] = js.undefined,
     proxyErrorHandler: (/* err */ js.Any, /* res */ Response, /* next */ NextFunction) => _ = null,
-    proxyReqBodyDecorator: (/* bodyContent */ js.Any, /* srcReq */ Request) => _ = null,
-    proxyReqOptDecorator: (/* proxyReqOpts */ RequestOptions, /* srcReq */ Request) => RequestOptions | js.Promise[RequestOptions] = null,
-    proxyReqPathResolver: /* req */ Request => String = null,
+    proxyReqBodyDecorator: (/* bodyContent */ js.Any, /* srcReq */ Request[ParamsDictionary]) => _ = null,
+    proxyReqOptDecorator: (/* proxyReqOpts */ RequestOptions, /* srcReq */ Request[ParamsDictionary]) => RequestOptions | js.Promise[RequestOptions] = null,
+    proxyReqPathResolver: /* req */ Request[ParamsDictionary] => String = null,
     reqAsBuffer: js.UndefOr[Boolean] = js.undefined,
     reqBodyEncoding: String = null,
     skipToNextHandlerFilter: /* proxyRes */ Response => Boolean = null,
     timeout: Int | Double = null,
-    userResDecorator: (/* proxyRes */ Response, /* proxyResData */ js.Any, /* userReq */ Request, /* userRes */ Response) => Buffer | String | (js.Promise[Buffer | String]) = null,
-    userResHeaderDecorator: (/* headers */ IncomingHttpHeaders, /* userReq */ Request, /* userRes */ Response, /* proxyReq */ Request, /* proxyRes */ Response) => OutgoingHttpHeaders = null
+    userResDecorator: (/* proxyRes */ Response, /* proxyResData */ js.Any, /* userReq */ Request[ParamsDictionary], /* userRes */ Response) => Buffer | String | (js.Promise[Buffer | String]) = null,
+    userResHeaderDecorator: (/* headers */ IncomingHttpHeaders, /* userReq */ Request[ParamsDictionary], /* userRes */ Response, /* proxyReq */ Request[ParamsDictionary], /* proxyRes */ Response) => OutgoingHttpHeaders = null
   ): ProxyOptions = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))

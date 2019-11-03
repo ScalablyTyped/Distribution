@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * 
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
   * You should treat this as a mode of Office.context.mailbox.item. Refer to the
-  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item | Object Model} page for more information.
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
   */
 @js.native
 trait AppointmentRead extends ItemRead {
@@ -59,6 +59,21 @@ trait AppointmentRead extends ItemRead {
     */
   var end: Date = js.native
   /**
+    * Gets the locations of an appointment.
+    *
+    * The enhancedLocation property returns an {@link Office.EnhancedLocation | EnhancedLocation} object that allows you to get the set of locations
+    * (each represented by a {@link Office.LocationDetails | LocationDetails} object) associated with the appointment.
+    * 
+    * [Api set: Mailbox 1.8]
+    * 
+    * @remarks
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
+    */
+  var enhancedLocation: EnhancedLocation = js.native
+  /**
     * Gets the location of an appointment.
     *
     * The location property returns a string that contains the location of the appointment.
@@ -75,7 +90,7 @@ trait AppointmentRead extends ItemRead {
   /**
     * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
     *
-    * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each optional attendee to 
+    * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each optional attendee to 
     * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
     * [Api set: Mailbox 1.0]
@@ -122,7 +137,7 @@ trait AppointmentRead extends ItemRead {
   /**
     * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
     *
-    * The requiredAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each required attendee to 
+    * The requiredAttendees property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each required attendee to 
     * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
     * [Api set: Mailbox 1.0]

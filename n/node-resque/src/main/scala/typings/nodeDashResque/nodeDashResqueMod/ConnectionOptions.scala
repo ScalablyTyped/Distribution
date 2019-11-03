@@ -12,6 +12,7 @@ trait ConnectionOptions extends js.Object {
   var options: js.UndefOr[js.Any] = js.undefined
   var pkg: js.UndefOr[String] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
+  var redis: js.UndefOr[js.Any] = js.undefined
 }
 
 object ConnectionOptions {
@@ -23,7 +24,8 @@ object ConnectionOptions {
     namespace: String = null,
     options: js.Any = null,
     pkg: String = null,
-    port: Int | Double = null
+    port: Int | Double = null,
+    redis: js.Any = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
@@ -33,6 +35,7 @@ object ConnectionOptions {
     if (options != null) __obj.updateDynamic("options")(options)
     if (pkg != null) __obj.updateDynamic("pkg")(pkg)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (redis != null) __obj.updateDynamic("redis")(redis)
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

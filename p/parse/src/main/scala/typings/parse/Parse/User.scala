@@ -26,7 +26,7 @@ class User () extends Object {
   def isCurrent(): Boolean = js.native
   def linkWith(user: User, authData: AuthData, options: FullOptions): js.Promise[User] = js.native
   def logIn(): js.Promise[this.type] = js.native
-  def logIn(options: SuccessFailureOptions): js.Promise[this.type] = js.native
+  def logIn(options: FullOptions): js.Promise[this.type] = js.native
   def setEmail(email: String): Boolean = js.native
   def setEmail(email: String, options: SuccessFailureOptions): Boolean = js.native
   def setPassword(password: String): Boolean = js.native
@@ -53,7 +53,7 @@ object User extends js.Object {
   def extend(protoProps: js.Any, classProps: js.Any): js.Any = js.native
   def hydrate(userJSON: js.Any): js.Promise[User] = js.native
   def logIn(username: String, password: String): js.Promise[User] = js.native
-  def logIn(username: String, password: String, options: SuccessFailureOptions): js.Promise[User] = js.native
+  def logIn(username: String, password: String, options: FullOptions): js.Promise[User] = js.native
   def logOut(): js.Promise[User] = js.native
   def requestPasswordReset(email: String): js.Promise[User] = js.native
   def requestPasswordReset(email: String, options: SuccessFailureOptions): js.Promise[User] = js.native

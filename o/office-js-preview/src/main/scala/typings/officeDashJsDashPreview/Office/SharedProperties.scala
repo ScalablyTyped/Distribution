@@ -8,15 +8,13 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
   *
-  * [Api set: Mailbox Preview]
+  * [Api set: Mailbox 1.8]
   *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-  * 
-  * @beta
   */
 trait SharedProperties extends js.Object {
   /**
@@ -31,9 +29,6 @@ trait SharedProperties extends js.Object {
     * The target/owner's mailbox. Use with targetRestUrl to construct REST operation's URL.
     * 
     * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
-    * 
-    * **Note**: The URL property name is being transitioned from `restUrl` to `targetRestUrl`.
-    * For Outlook on the web, use `targetRestUrl`. For Windows and Mac, use `restUrl`.
     */
   var targetMailbox: String
   /**
@@ -41,9 +36,6 @@ trait SharedProperties extends js.Object {
     * Use with targetMailbox to construct REST operation's URL.
     * 
     * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
-    * 
-    * **Note**: This property name is being transitioned from `restUrl` to `targetRestUrl`.
-    * For Outlook on the web, use `targetRestUrl`. For Windows and Mac, use `restUrl`.
     */
   var targetRestUrl: String
 }

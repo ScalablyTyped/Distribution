@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pg-types"
-version := "1.11-dt-20180214Z-bacb55"
+version := "1.11-dt-20191101Z-bacb55"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

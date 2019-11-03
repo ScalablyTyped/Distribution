@@ -1,42 +1,44 @@
 package typings.reactDashToastify
 
+import typings.reactDashToastify.reactDashToastifyMod.PositionOptions
+import typings.reactDashToastify.reactDashToastifyMod.TypeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashToastifyStrings {
   @js.native
-  sealed trait `bottom-center` extends js.Object
+  sealed trait `bottom-center` extends PositionOptions
   
   @js.native
-  sealed trait `bottom-left` extends js.Object
+  sealed trait `bottom-left` extends PositionOptions
   
   @js.native
-  sealed trait `bottom-right` extends js.Object
+  sealed trait `bottom-right` extends PositionOptions
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default extends TypeOptions
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends TypeOptions
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info extends TypeOptions
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success extends TypeOptions
   
   @js.native
-  sealed trait `top-center` extends js.Object
+  sealed trait `top-center` extends PositionOptions
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `top-left` extends PositionOptions
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `top-right` extends PositionOptions
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning extends TypeOptions
   
   @scala.inline
   def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]

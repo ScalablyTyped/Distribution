@@ -19,11 +19,14 @@ object parser extends js.Object {
   var sass_Original: Parser = js.native
   @JSName("typescript")
   var typescript_Original: Parser = js.native
+  @JSName("vue")
+  var vue_Original: Parser = js.native
   def coffee(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def es6(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def es7(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def jsx(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def sass(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def typescript(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
+  def vue(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gulp-shell" : "0.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gulp-shell" : "0.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

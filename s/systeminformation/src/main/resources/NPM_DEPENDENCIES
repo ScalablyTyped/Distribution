@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "systeminformation" : "4.14.17"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "systeminformation" : "4.14.17"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

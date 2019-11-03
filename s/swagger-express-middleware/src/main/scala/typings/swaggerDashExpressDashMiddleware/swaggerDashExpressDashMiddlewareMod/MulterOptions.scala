@@ -1,6 +1,7 @@
 package typings.swaggerDashExpressDashMiddleware.swaggerDashExpressDashMiddlewareMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.std.Error
 import typings.swaggerDashExpressDashMiddleware.Anon_FieldNameSize
 import scala.scalajs.js
@@ -13,7 +14,7 @@ trait MulterOptions extends js.Object {
   /** A function to control which files to upload and which to skip. */
   var fileFilter: js.UndefOr[
     js.Function3[
-      /* req */ Request, 
+      /* req */ Request[ParamsDictionary], 
       /* file */ File, 
       /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit], 
       Unit
@@ -29,7 +30,7 @@ object MulterOptions {
   @scala.inline
   def apply(
     dest: String = null,
-    fileFilter: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit]) => Unit = null,
+    fileFilter: (/* req */ Request[ParamsDictionary], /* file */ File, /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit]) => Unit = null,
     limits: Anon_FieldNameSize = null,
     storage: StorageEngine = null
   ): MulterOptions = {

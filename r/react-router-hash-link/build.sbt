@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-hash-link"
-version := "1.2-dt-20190212Z-edca3a"
+version := "1.2-dt-20190212Z-0737b2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
   "org.scalablytyped" %%% "react-router" % "5.1-dt-20191014Z-f90d50",
-  "org.scalablytyped" %%% "react-router-dom" % "5.1-dt-20191030Z-209d0f",
+  "org.scalablytyped" %%% "react-router-dom" % "5.1-dt-20191101Z-09e18d",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

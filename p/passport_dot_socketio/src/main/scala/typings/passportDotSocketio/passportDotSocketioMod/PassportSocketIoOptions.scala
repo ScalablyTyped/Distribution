@@ -15,7 +15,7 @@ trait PassportSocketIoOptions extends js.Object {
   /**
     * the same middleware you registrer in express.
     */
-  var cookieParser: js.UndefOr[RequestHandler] = js.undefined
+  var cookieParser: js.UndefOr[RequestHandler[ParamsDictionary]] = js.undefined
   /**
     * callback on fail/error.
     */

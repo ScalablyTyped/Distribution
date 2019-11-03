@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "zipkin-instrumentation-express" : "0.19.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "zipkin-instrumentation-express" : "0.19.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

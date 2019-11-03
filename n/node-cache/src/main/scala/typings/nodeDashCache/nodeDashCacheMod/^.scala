@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("node-cache", JSImport.Namespace)
 @js.native
-class ^ () extends js.Object {
+/** constructor */
+class ^ () extends NodeCache {
   def this(options: Options) = this()
 }
 

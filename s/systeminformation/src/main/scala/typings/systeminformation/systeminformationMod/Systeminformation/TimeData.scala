@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// 1. General
 trait TimeData extends js.Object {
   var current: String
   var timezone: String

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object shrinkDashRayMod {
   import typings.express.expressMod.Request
   import typings.express.expressMod.Response
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
-  type FilterFunction = js.Function2[/* req */ Request, /* res */ Response, Boolean]
+  type FilterFunction = js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Boolean]
 }

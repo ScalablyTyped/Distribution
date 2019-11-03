@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// 5. File System
 trait FsSizeData extends js.Object {
   var fs: String
   var mount: String

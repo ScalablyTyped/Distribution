@@ -3,6 +3,7 @@ package typings.opticsDashAgent.opticsDashAgentMod.default
 import org.scalablytyped.runtime.Instantiable1
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.graphql.graphqlMod.GraphQLSchema
 import typings.hapi.hapiMod.Server
 import typings.koa.koaMod.Context
@@ -19,7 +20,7 @@ object ^ extends js.Object {
   @JSName("configureAgent")
   var configureAgent_Original: js.Function1[/* options */ Options, Agent] = js.native
   @JSName("context")
-  var context_Original: js.Function1[/* req */ Request, _] = js.native
+  var context_Original: js.Function1[/* req */ Request[ParamsDictionary], _] = js.native
   @JSName("instrumentHapiServer")
   var instrumentHapiServer_Original: js.Function1[/* server */ Server, Unit] = js.native
   @JSName("instrumentSchema")
@@ -30,13 +31,23 @@ object ^ extends js.Object {
   ] = js.native
   @JSName("middleware")
   var middleware_Original: js.Function0[
-    js.Function3[/* req */ Request, /* res */ Response, /* next */ js.UndefOr[_], Unit]
+    js.Function3[
+      /* req */ Request[ParamsDictionary], 
+      /* res */ Response, 
+      /* next */ js.UndefOr[_], 
+      Unit
+    ]
   ] = js.native
   def configureAgent(options: Options): Agent = js.native
-  def context(req: Request): js.Any = js.native
+  def context(req: Request[ParamsDictionary]): js.Any = js.native
   def instrumentHapiServer(server: Server): Unit = js.native
   def instrumentSchema(schema: GraphQLSchema): Unit = js.native
   def koaMiddleware(): js.Function2[/* context */ Context, /* next */ js.Function0[js.Promise[_]], Unit] = js.native
-  def middleware(): js.Function3[/* req */ Request, /* res */ Response, /* next */ js.UndefOr[js.Any], Unit] = js.native
+  def middleware(): js.Function3[
+    /* req */ Request[ParamsDictionary], 
+    /* res */ Response, 
+    /* next */ js.UndefOr[js.Any], 
+    Unit
+  ] = js.native
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vuex-i18n" : "1.13.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vuex-i18n" : "1.13.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

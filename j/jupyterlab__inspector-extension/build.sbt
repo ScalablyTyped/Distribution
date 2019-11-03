@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__inspector-extension"
-version := "1.2.0-859ad1"
+version := "1.2.1-e2f4e8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

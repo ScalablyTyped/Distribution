@@ -1,6 +1,7 @@
 package typings.passportDashRememberDashMeDashExtended.passportDashRememberDashMeDashExtendedMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passport.passportMod.AuthenticateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,7 @@ class Strategy protected ()
     issue: IssueFunctionWithRequest
   ) = this()
   def this(options: StrategyOption, verify: VerifyFunction, issue: IssueFunction) = this()
-  def authenticate(req: Request): Unit = js.native
-  def authenticate(req: Request, options: AuthenticateOptions): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary], options: AuthenticateOptions): Unit = js.native
 }
 

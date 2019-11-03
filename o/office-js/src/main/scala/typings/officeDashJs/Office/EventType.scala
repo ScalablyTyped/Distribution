@@ -44,6 +44,16 @@ object EventType extends js.Object {
   sealed trait AppointmentTimeChanged extends EventType
   
   /**
+    * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+    * 
+    * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.
+    * 
+    * [Api set: Mailbox 1.8]
+    */
+  @js.native
+  sealed trait AttachmentsChanged extends EventType
+  
+  /**
     * Occurs when data within the binding is changed. 
     * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
     * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
@@ -87,6 +97,16 @@ object EventType extends js.Object {
     */
   @js.native
   sealed trait DocumentSelectionChanged extends EventType
+  
+  /**
+    * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
+    * 
+    * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.
+    * 
+    * [Api set: Mailbox 1.8]
+    */
+  @js.native
+  sealed trait EnhancedLocationsChanged extends EventType
   
   /**
     * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.
@@ -164,21 +184,23 @@ object EventType extends js.Object {
   
   /* 0 */ val ActiveViewChanged: typings.officeDashJs.Office.EventType.ActiveViewChanged with Double = js.native
   /* 1 */ val AppointmentTimeChanged: typings.officeDashJs.Office.EventType.AppointmentTimeChanged with Double = js.native
-  /* 2 */ val BindingDataChanged: typings.officeDashJs.Office.EventType.BindingDataChanged with Double = js.native
-  /* 3 */ val BindingSelectionChanged: typings.officeDashJs.Office.EventType.BindingSelectionChanged with Double = js.native
-  /* 4 */ val DialogEventReceived: typings.officeDashJs.Office.EventType.DialogEventReceived with Double = js.native
-  /* 5 */ val DialogMessageReceived: typings.officeDashJs.Office.EventType.DialogMessageReceived with Double = js.native
-  /* 6 */ val DocumentSelectionChanged: typings.officeDashJs.Office.EventType.DocumentSelectionChanged with Double = js.native
-  /* 7 */ val ItemChanged: typings.officeDashJs.Office.EventType.ItemChanged with Double = js.native
-  /* 8 */ val NodeDeleted: typings.officeDashJs.Office.EventType.NodeDeleted with Double = js.native
-  /* 9 */ val NodeInserted: typings.officeDashJs.Office.EventType.NodeInserted with Double = js.native
-  /* 10 */ val NodeReplaced: typings.officeDashJs.Office.EventType.NodeReplaced with Double = js.native
-  /* 11 */ val RecipientsChanged: typings.officeDashJs.Office.EventType.RecipientsChanged with Double = js.native
-  /* 12 */ val RecurrenceChanged: typings.officeDashJs.Office.EventType.RecurrenceChanged with Double = js.native
-  /* 13 */ val ResourceSelectionChanged: typings.officeDashJs.Office.EventType.ResourceSelectionChanged with Double = js.native
-  /* 14 */ val SettingsChanged: typings.officeDashJs.Office.EventType.SettingsChanged with Double = js.native
-  /* 15 */ val TaskSelectionChanged: typings.officeDashJs.Office.EventType.TaskSelectionChanged with Double = js.native
-  /* 16 */ val ViewSelectionChanged: typings.officeDashJs.Office.EventType.ViewSelectionChanged with Double = js.native
+  /* 2 */ val AttachmentsChanged: typings.officeDashJs.Office.EventType.AttachmentsChanged with Double = js.native
+  /* 3 */ val BindingDataChanged: typings.officeDashJs.Office.EventType.BindingDataChanged with Double = js.native
+  /* 4 */ val BindingSelectionChanged: typings.officeDashJs.Office.EventType.BindingSelectionChanged with Double = js.native
+  /* 5 */ val DialogEventReceived: typings.officeDashJs.Office.EventType.DialogEventReceived with Double = js.native
+  /* 6 */ val DialogMessageReceived: typings.officeDashJs.Office.EventType.DialogMessageReceived with Double = js.native
+  /* 7 */ val DocumentSelectionChanged: typings.officeDashJs.Office.EventType.DocumentSelectionChanged with Double = js.native
+  /* 8 */ val EnhancedLocationsChanged: typings.officeDashJs.Office.EventType.EnhancedLocationsChanged with Double = js.native
+  /* 9 */ val ItemChanged: typings.officeDashJs.Office.EventType.ItemChanged with Double = js.native
+  /* 10 */ val NodeDeleted: typings.officeDashJs.Office.EventType.NodeDeleted with Double = js.native
+  /* 11 */ val NodeInserted: typings.officeDashJs.Office.EventType.NodeInserted with Double = js.native
+  /* 12 */ val NodeReplaced: typings.officeDashJs.Office.EventType.NodeReplaced with Double = js.native
+  /* 13 */ val RecipientsChanged: typings.officeDashJs.Office.EventType.RecipientsChanged with Double = js.native
+  /* 14 */ val RecurrenceChanged: typings.officeDashJs.Office.EventType.RecurrenceChanged with Double = js.native
+  /* 15 */ val ResourceSelectionChanged: typings.officeDashJs.Office.EventType.ResourceSelectionChanged with Double = js.native
+  /* 16 */ val SettingsChanged: typings.officeDashJs.Office.EventType.SettingsChanged with Double = js.native
+  /* 17 */ val TaskSelectionChanged: typings.officeDashJs.Office.EventType.TaskSelectionChanged with Double = js.native
+  /* 18 */ val ViewSelectionChanged: typings.officeDashJs.Office.EventType.ViewSelectionChanged with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EventType with Double] = js.native
 }

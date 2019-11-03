@@ -76,6 +76,7 @@
 | [ajv](./a/ajv) | Another JSON Schema Validator | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation |
 | [ajv-async](./a/ajv-async) | Configure async validation mode in Ajv - JSON-Sche | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation, async, asynchronous, asynchronous validation, ajv, generators, async-function, co, nodent, regenerator |
 | [ajv-errors](./a/ajv-errors) | Custom error messages in JSON-Schema for Ajv valid | ajv, json-schema, validator, error, messages |
+| [ajv-keywords](./a/ajv-keywords) | Custom JSON-Schema keywords for Ajv validator | JSON-Schema, ajv, keywords |
 | [ajv-merge-patch](./a/ajv-merge-patch) | $merge and $patch keywords for Ajv JSON-Schema val | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation, $merge, $patch, keyword |
 | [ajv-pack](./a/ajv-pack) | Produces a compact module exporting JSON-schema va | Ajv, JSON-Schema |
 | [akumina-core](./a/akumina-core) | Adjusted Cache.Get return type Started SiteContex | - |
@@ -568,6 +569,7 @@
 | [axios-token-interceptor](./a/axios-token-interceptor) | An interceptor which makes it easier to work with  | - |
 | [axon](./a/axon) | High-level messaging & socket patterns implemented | zmq, zeromq, pubsub, socket, emitter, ipc, rpc |
 | [azure](./a/azure) | Microsoft Azure Client Library for node | node, azure |
+| [azure-arm-resource](./a/azure-arm-resource) | Microsoft Azure Resource Management Client Library | node, azure |
 | [azure-kusto-data](./a/azure-kusto-data) | Azure Data Explorer Query SDK | node, azure, kusto |
 | [azure-mobile-services-cli](./a/azure-mobile-services-client) | - | - |
 | [azure-sb](./a/azure-sb) | Microsoft Azure Service Bus Service Library for no | node, azure |
@@ -1462,6 +1464,7 @@
 | [diagnostic-channel](./d/diagnostic-channel) | Provides a context-saving pub/sub channel to conne | - |
 | [diagnostic-channel-publis](./d/diagnostic-channel-publishers) | A collection of pre-built module patches that enab | - |
 | [dialog-polyfill](./d/dialog-polyfill) | Polyfill for the dialog element | - |
+| [dialogflow](./d/dialogflow) | Dialogflow API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google dialogflow, dialogflow, Dialogflow API |
 | [dicer](./d/dicer) | A very fast streaming multipart parser for node.js | parser, parse, parsing, multipart, form-data, streaming |
 | [didyoumean](./d/didyoumean) | Match human-quality input to potential matches by  | didyoumean, mean, edit, distance, levenshtein |
 | [diff](./d/diff) | A javascript text diff implementation. | diff, javascript |
@@ -1609,6 +1612,7 @@
 | [ecurve](./e/ecurve) | Elliptic curve cryptography | cryptography, crypto, bitcoin, litecoin, elliptic, curve |
 | [ed25519](./e/ed25519) | An Ed25519 implementation for node.js | Ed25519, elliptic, curve, crypto, Curve25519, EdDSA |
 | [ed2curve](./e/ed2curve) | Convert Ed25519 signing keys into Curve25519 Diffi | ed25519, curve25519, djb, crypto, public, keys, edwards, montgomery, elliptic |
+| [edge-js](./e/edge-js) | Edge.js: run .NET and Node.js in-process on Window | owin, edge, net, clr, coreclr, c#, mono, managed, .net |
 | [edmonds-blossom](./e/edmonds-blossom) | Edmond's weighted maximum matching algorithm (Blos | graph, directional graph, edmonds, maximum matching, blossom |
 | [ee-first](./e/ee-first) | return the first event in a set of ee/event pairs | - |
 | [egg](./e/egg) | A web framework's framework for Node.js | web, app, http, application, framework, middleware, koa, egg |
@@ -2867,6 +2871,7 @@
 | [i18next-sprintf-postproce](./i/i18next-sprintf-postprocessor) | backend layer for i18next using browsers xhr | i18next, i18next-postProcessor, i18next-sprintf |
 | [i18next-xhr-backend](./i/i18next-xhr-backend) | backend layer for i18next using browsers xhr | i18next, i18next-backend |
 | [i2c-bus](./i/i2c-bus) | I2C serial bus access with Node.js | i2c, raspberry, raspi, rpi, pi, edison, beaglebone, smbus, linux |
+| [iab-vpaid](./i/iab-vpaid) | - | - |
 | [iarna__toml](./i/iarna__toml) | Better TOML parsing and stringifying all in that f | toml, toml-parser, toml-stringifier, parser, stringifer, emitter, ini, tomlify, encoder, decoder |
 | [iban](./i/iban) | A javascript library to validate, format and conve | - |
 | [ibm-cloud-sdk-core](./i/ibm-cloud-sdk-core) | Core functionality to support SDKs generated with  | ibm, sdk, openapi, core |
@@ -3054,6 +3059,7 @@
 | [is-integer](./i/is-integer) | ES2015 (ES6) Number.isInteger polyfill | es2015, es6, Number, isInteger, polyfill |
 | [is-interactive](./i/is-interactive) | Check if stdout or stderr is interactive | interactive, stdout, stderr, detect, is, terminal, shell, tty |
 | [is-ip](./i/is-ip) | Check if a string is an IP address | ip, ipv6, ipv4, regex, regexp, match, test, find, text, pattern, internet, protocol, address, validate, detect, check, is, string |
+| [is-lite](./i/is-lite) | A tiny javascript type testing tool | type, test |
 | [is-lower-case](./i/is-lower-case) | Check if a string is lower cased | cases, lower, lowercase, check |
 | [is-mobile](./i/is-mobile) | Check if mobile browser. | mobile, desktop, check, browser |
 | [is-my-json-valid](./i/is-my-json-valid) | A JSONSchema validator that uses code generation t | json, schema, orderly, jsonschema |
@@ -3439,6 +3445,7 @@
 | [json-schema](./j/json-schema) | JSON Schema validation and specifications | json, schema |
 | [json-schema-merge-allof](./j/json-schema-merge-allof) | Simplify your schema by combining allOf into the r | json, schema, jsonschema |
 | [json-schema-ref-parser](./j/json-schema-ref-parser) | Parse, Resolve, and Dereference JSON Schema $ref p | json, schema, jsonschema, json-schema, json-pointer, $ref, dereference, resolve |
+| [json-schema-typed](./j/json-schema-typed) | JSONSchema TypeScript definitions. | jsonschema, typescript |
 | [json-server](./j/json-server) | Serves JSON files through REST routes. | JSON, server, fake, REST, API, prototyping, mock, mocking, test, testing, rest, data, dummy, sandbox |
 | [json-socket](./j/json-socket) | An easy way to send JSON over TCP using sockets. | - |
 | [json-stable-stringify](./j/json-stable-stringify) | deterministic JSON.stringify() with custom sorting | json, stringify, deterministic, hash, sort, stable |
@@ -3595,6 +3602,7 @@
 | [jupyterlab__vdom-extensio](./j/jupyterlab__vdom-extension) | JupyterLab - VDOM Renderer | - |
 | [jupyterlab__vega4-extensi](./j/jupyterlab__vega4-extension) | JupyterLab - Vega 4 and Vega-Lite 2 Mime Renderer  | - |
 | [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer  | - |
+| [just-clone](./j/just-clone) | deep copies objects and arrays | object, clone, copy, deep-copy, extend, no-dependencies, just |
 | [just-debounce-it](./j/just-debounce-it) | return a debounced function | function, debounce, no-dependencies, just |
 | [just-extend](./j/just-extend) | extend an object | object, assign, clone, copy, merge, deep-copy, extend, no-dependencies, just |
 | [just-pick](./j/just-pick) | copy an object but with only the specified keys | object, pick, keys, no-dependencies, just |
@@ -3685,7 +3693,6 @@
 | [ko_dot_plus](./k/ko_dot_plus) | Awesome extensions to KnockoutJS | - |
 | [koa](./k/koa) | Koa web app framework | web, app, http, application, framework, middleware, rack |
 | [koa-basic-auth](./k/koa-basic-auth) | Blanket basic auth middleware for koa | koa, auth, authentication, basicauth, basic auth |
-| [koa-better-body](./k/koa-better-body) | Full-featured  | api, awesome, better, body, body-parser, buffer, csp, csp-report, error, error-handling, extendable, feature, features, flexible, form, forms, full, full-feature, handling, json, json-api, json-patch, json-strict, jsonstrict, koa, koa-better-body, multipart, parse, parser, patch, report, rfc, standard, strict, text, unopinionated, urlencoded |
 | [koa-bodyparser](./k/koa-bodyparser) | a body parser for koa | bodyParser, json, urlencoded, koa, body |
 | [koa-bouncer](./k/koa-bouncer) | A parameter validation library for Koa routes | validation, koa |
 | [koa-bunyan-logger](./k/koa-bunyan-logger) | Koa middleware for logging requests using bunyan | koa, bunyan, logging, middleware |
@@ -4319,17 +4326,20 @@
 | [material__base](./m/material__base) | The set of base classes for Material Components fo | - |
 | [material__checkbox](./m/material__checkbox) | The Material Components for the web checkbox compo | material components, material design, checkbox |
 | [material__chips](./m/material__chips) | The Material Components for the Web chips componen | material components, material design, chips |
+| [material__data-table](./m/material__data-table) | The Material Components Web data table component | material components, material design, data table |
 | [material__dialog](./m/material__dialog) | The Material Components Web dialog component | material components, material design, dialog, modal |
 | [material__dom](./m/material__dom) | DOM manipulation utilities for Material Components | - |
 | [material__drawer](./m/material__drawer) | The Material Components Web drawer component | material components, material design, navigation, drawer |
 | [material__floating-label](./m/material__floating-label) | The Material Components for the web floating-label | material components, material design, floatinglabel, floating label |
 | [material__form-field](./m/material__form-field) | Material Components for the web wrapper for laying | material components, material design, form |
 | [material__grid-list](./m/material__grid-list) | The Material Components for the web grid list comp | material components, material design, grid list |
+| [material__icon-button](./m/material__icon-button) | The Material Components for the web icon button co | material components, material design, button, icon button, icon toggle |
 | [material__icon-toggle](./m/material__icon-toggle) | The Material Components for the web icon toggle co | material components, material design, icon toggle |
 | [material__line-ripple](./m/material__line-ripple) | The Material Components for the web line-ripple co | material components, material design, lineripple, line-ripple |
 | [material__linear-progress](./m/material__linear-progress) | The Material Components for the web linear progres | material components, material design, linear progress |
 | [material__list](./m/material__list) | The Material Components for the web list component | material components, material design, list |
 | [material__menu](./m/material__menu) | The Material Components for the web menu component | material components, material design, menu |
+| [material__menu-surface](./m/material__menu-surface) | The Material Components for the web menu surface c | material components, material design, menu surface |
 | [material__notched-outline](./m/material__notched-outline) | The Material Components for the web notched-outlin | material components, material design, notchedoutline, notched outline |
 | [material__radio](./m/material__radio) | The Material Components for the web radio componen | material components, material design, radio |
 | [material__ripple](./m/material__ripple) | The Material Components for the web Ink Ripple eff | material components, material design, ripple |
@@ -4337,7 +4347,11 @@
 | [material__selection-contr](./m/material__selection-control) | The set of base classes for Material selection con | - |
 | [material__slider](./m/material__slider) | The Material Components for the web slider compone | material components, material design, slider |
 | [material__snackbar](./m/material__snackbar) | The Material Components for the web snackbar compo | material components, material design, snackbar |
+| [material__switch](./m/material__switch) | The Material Components for the web switch compone | material components, material design, switch |
 | [material__tab](./m/material__tab) | The Material Components for the web tab component | material components, material design, tab |
+| [material__tab-bar](./m/material__tab-bar) | The Material Components for the web tab bar compon | material components, material design, tab, bar |
+| [material__tab-indicator](./m/material__tab-indicator) | The Material Components for the web tab indicator  | material components, material design, tab, indicator |
+| [material__tab-scroller](./m/material__tab-scroller) | The Material Components for the web tab scroller c | material components, material design, tab, scroller |
 | [material__tabs](./m/material__tabs) | The Material Components for the web tabs component | material components, material design, tabs |
 | [material__textfield](./m/material__textfield) | The Material Components for the web text field com | material components, material design, textfield, text field |
 | [material__toolbar](./m/material__toolbar) | The Material Components for the web toolbar compon | material components, material design, toolbar |
@@ -4562,11 +4576,12 @@
 | [mri](./m/mri) | Quickly scan for CLI flags and arguments | argv, arguments, cli, minimist, options, optimist, parser, args |
 | [mrmlnc__readdir-enhanced](./m/mrmlnc__readdir-enhanced) | fs.readdir with sync, async, and streaming APIs +  | fs, readdir, stream, event, recursive, deep, filter, absolute |
 | [ms](./m/ms) | Tiny millisecond conversion utility | - |
+| [ms-rest](./m/ms-rest) | Client Runtime for Node.js client libraries genera | node, microsoft, autorest, clientruntime |
+| [ms-rest-azure](./m/ms-rest-azure) | Client Runtime for Node.js Azure client libraries  | node, microsoft, autorest, azure, clientruntime |
 | [msgpack](./m/msgpack) | A space-efficient object serialization library for | - |
 | [msgpack-lite](./m/msgpack-lite) | Fast Pure JavaScript MessagePack Encoder and Decod | arraybuffer, buffer, fluentd, messagepack, msgpack, serialize, stream, typedarray, uint8array |
 | [msgpack5](./m/msgpack5) | A msgpack v5 implementation for node.js and the br | msgpack, extension, v5, MessagePack, ext |
 | [msnodesql](./m/msnodesql) | Microsoft Driver for Node.js for SQL Server | sql, database, mssql, azure, sqlserver, tds, microsoft, msnodesql, node-sqlserver |
-| [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework | Azure Portal, test framework, testing, test, selenium, webdriver |
 | [mssql](./m/mssql) | Microsoft SQL Server client for Node.js. | database, mssql, sql, server, msnodesql, sqlserver, tds, node-tds, tedious, node-sqlserver, sqlserver, msnodesqlv8, azure, node-mssql |
 | [mta-h5-analysis](./m/mta-h5-analysis) | this is wechat-h5 data analysis js sdk from MTA pl | - |
 | [mu2](./m/mu2) | A Mustache template engine for Node.js | template, mustache |
@@ -5390,6 +5405,7 @@
 | [prometheus-gc-stats](./p/prometheus-gc-stats) | Report Garbage Collection stats using Prometheus | garbage-collection, gc, metrics, prometheus, prom, statsd |
 | [promise](./p/promise) | Bare bones Promises/A+ implementation | - |
 | [promise-dag](./p/promise-dag) | Chain promises declaratively using high-level grap | promise, async, graph, dag |
+| [promise-fs](./p/promise-fs) | Wraps FS methods using Promise | promise, promisify, fs |
 | [promise-ftp](./p/promise-ftp) | a promise-based ftp client for node.js | ftp, client, promise, node |
 | [promise-ftp-common](./p/promise-ftp-common) | error classes and other common code used in promis | - |
 | [promise-map-limit](./p/promise-map-limit) | Map an array n items at a time with promises | promise, limit, limited, concurrency, throttle, rate, batch, ratelimit, queue, async, await, promises |
@@ -5739,6 +5755,7 @@
 | [react-flex](./r/react-flex) | - | - |
 | [react-flexr](./r/react-flexr) | React flexbox grid made simple. | react, grid, flex, flexbox, react-component |
 | [react-flip-move](./r/react-flip-move) | Effortless animation between DOM changes (eg. list | react, react-dom, animation, magic-move, component, react-component, flip, web-animations |
+| [react-floater](./r/react-floater) | Floaters everywhere | react, react-component, component, tooltip, modal, popup, alert, notification |
 | [react-fns](./r/react-fns) | Modern React components, hoc's, and utilities func | react, react-fns, render-props, hoc |
 | [react-focus-lock](./r/react-focus-lock) | It is a trap | react, focus, lock, trap, tabbable |
 | [react-fontawesome](./r/react-fontawesome) | A React component for the font-awesome icon librar | react, font-awesome, fontawesome, bootstrap, icons, fonts, icon, danawoodman, big, style, jsx, react-component, component |
@@ -6228,7 +6245,6 @@
 | [redux-persist-transform-f](./r/redux-persist-transform-filter) | Filter transformator for redux-persist | react, redux, redux-persist, redux-persist-transform, transform, filter |
 | [redux-promise](./r/redux-promise) | FSA-compliant promise middleware for Redux. | redux, promise, middleware, redux-middleware, fsa, flux |
 | [redux-promise-listener](./r/redux-promise-listener) | A Redux middleware that allows actions to be conve | - |
-| [redux-promise-middleware](./r/redux-promise-middleware) | Enables simple, yet robust handling of async actio | redux, middleware, middlewares, promise, promises, optimistic update, optimistic updates, async, async functions |
 | [redux-recycle](./r/redux-recycle) | higher-order reducer to reset the redux state on c | redux, flux, recycle, state, higher-order reducer, hor |
 | [redux-router](./r/redux-router) | Redux bindings for React Router — keep your router | redux, react-router, react, router |
 | [redux-saga](./r/redux-saga) | Saga middleware for Redux to handle Side Effects | javascript, redux, middleware, saga, effects, side effects |
@@ -6630,6 +6646,7 @@
 | [set-interval-async](./s/set-interval-async) | Modern version of setInterval for promises and asy | setInterval, setTimeout, clearInterval, clearTimeout, interval, timeout, milliseconds, seconds, promise, promises, async, asynchronous, await, recurrent, concurrency, reentrancy |
 | [set-value](./s/set-value) | Create nested values and any intermediaries using  | bury, deep-get-set, deep-object, deep-property, deep-set, deep-set-in, deephas, dot-prop, dot2val, es5-dot-prop, get, getsetdeep, has, hasown, key, keys, lodash.set, nested, notation, object, object-path, object-path-set, object-set, prop, properties, property, props, set, set-deep, set-deep-prop, set-nested-prop, setvalue, value, values |
 | [setasap](./s/setasap) | setImmediate polyfill for the browser and node | setImmediate, task, setAsap, setTimeout, process.nextTick |
+| [setimmediate](./s/setimmediate) | A shim for the setImmediate efficient script yield | - |
 | [setprototypeof](./s/setprototypeof) | A small polyfill for Object.setprototypeof | polyfill, object, setprototypeof |
 | [settings](./s/settings) | Simple environment-based application settings | - |
 | [setup-polly-jest](./s/setup-polly-jest) | Setup helper for PollyJS when using in jest/jasmin | polly, pollyjs, jest, jasmine, test, testing, mock, helper |
@@ -7044,6 +7061,7 @@
 | [supports-color](./s/supports-color) | Detect whether a terminal supports color | color, colour, colors, terminal, console, cli, ansi, styles, tty, rgb, 256, shell, xterm, command-line, support, supports, capability, detect, truecolor, 16m |
 | [survey-knockout](./s/survey-knockout) | survey.js is a JavaScript Survey Library. It is a  | Survey, JavaScript, Bootstrap, Library, knockout |
 | [svg-injector](./s/svg-injector) | Fast, caching, dynamic inline SVG DOM injection li | SVG, Scalable Vector Graphics, SVG injector, images, img, html, DOM |
+| [svg-intersections](./s/svg-intersections) | A library of intersection algorithms covering all  | intersection, bezier, circle, ellipse, line, polygon, rectangle, path |
 | [svg-pan-zoom](./s/svg-pan-zoom) | JavaScript library for panning and zooming an SVG  | svg, pan, zoom |
 | [svg-parser](./s/svg-parser) | Create a JSON-friendly object from an SVG string | SVG, parser, JSON, object |
 | [svg-path-bounding-box](./s/svg-path-bounding-box) | SVG path bounding box calculator | - |

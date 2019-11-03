@@ -2,6 +2,7 @@ package typings.mapboxDashGl
 
 import typings.mapboxDashGl.mapboxDashGlMod.Anchor
 import typings.mapboxDashGl.mapboxDashGlMod.ExpressionName
+import typings.mapboxDashGl.mapboxDashGlMod.PluginStatus
 import typings.mapboxDashGl.mapboxDashGlMod.ResourceType
 import typings.mapboxDashGl.mapboxDashGlMod.Visibility
 import scala.scalajs.js
@@ -217,7 +218,7 @@ object mapboxDashGlStrings {
   sealed trait e extends ExpressionName
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends PluginStatus
   
   @js.native
   sealed trait exponential extends js.Object
@@ -329,6 +330,12 @@ object mapboxDashGlStrings {
   
   @js.native
   sealed trait load extends js.Object
+  
+  @js.native
+  sealed trait loaded extends PluginStatus
+  
+  @js.native
+  sealed trait loading extends PluginStatus
   
   @js.native
   sealed trait log10 extends ExpressionName
@@ -551,6 +558,9 @@ object mapboxDashGlStrings {
   
   @js.native
   sealed trait typeof extends ExpressionName
+  
+  @js.native
+  sealed trait unavailable extends PluginStatus
   
   @js.native
   sealed trait upcase extends ExpressionName
@@ -815,6 +825,10 @@ object mapboxDashGlStrings {
   @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
+  def loaded: loaded = "loaded".asInstanceOf[loaded]
+  @scala.inline
+  def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def log10: log10 = "log10".asInstanceOf[log10]
   @scala.inline
   def log2: log2 = "log2".asInstanceOf[log2]
@@ -962,6 +976,8 @@ object mapboxDashGlStrings {
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   @scala.inline
   def typeof: typeof = "typeof".asInstanceOf[typeof]
+  @scala.inline
+  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
   @scala.inline
   def upcase: upcase = "upcase".asInstanceOf[upcase]
   @scala.inline

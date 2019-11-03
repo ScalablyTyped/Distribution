@@ -1,18 +1,17 @@
 package typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod
 
-import typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.`alternate-reverse`
-import typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.alternate
+import typings.reactDashNative.reactDashNativeMod.ImageStyle
+import typings.reactDashNative.reactDashNativeMod.TextStyle
+import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.infinite
-import typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.normal
-import typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.reverse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
-  var animation: js.UndefOr[Animation | String] = js.undefined
+  var animation: js.UndefOr[Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])] = js.undefined
   var delay: js.UndefOr[Double] = js.undefined
-  var direction: js.UndefOr[normal | reverse | alternate | `alternate-reverse`] = js.undefined
+  var direction: js.UndefOr[Direction] = js.undefined
   var duration: js.UndefOr[Double] = js.undefined
   var easing: js.UndefOr[Easing] = js.undefined
   var iterationCount: js.UndefOr[Double | infinite] = js.undefined
@@ -28,9 +27,9 @@ trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
 object AnimatableProperties {
   @scala.inline
   def apply[S /* <: js.Object */](
-    animation: Animation | String = null,
+    animation: Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]) = null,
     delay: Int | Double = null,
-    direction: normal | reverse | alternate | `alternate-reverse` = null,
+    direction: Direction = null,
     duration: Int | Double = null,
     easing: Easing = null,
     iterationCount: Double | infinite = null,
@@ -45,7 +44,7 @@ object AnimatableProperties {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (iterationCount != null) __obj.updateDynamic("iterationCount")(iterationCount.asInstanceOf[js.Any])

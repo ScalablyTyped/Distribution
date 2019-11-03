@@ -41,21 +41,36 @@ class Resource protected () extends js.Object {
   def app(req: Request[ParamsDictionary], res: ServerResponse): js.Any = js.native
   def app(req: IncomingMessage, res: Response): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
-  def buildParentSearch(req: typings.express.expressMod.Request, query: js.Any): js.Any = js.native
-  def buildPopulateQuery(req: typings.express.expressMod.Request): js.Any = js.native
-  def buildSearchQuery(req: typings.express.expressMod.Request): js.Object = js.native
-  def create(req: typings.express.expressMod.Request, res: typings.express.expressMod.Response): Unit = js.native
+  def buildParentSearch(req: typings.express.expressMod.Request[ParamsDictionary], query: js.Any): js.Any = js.native
+  def buildPopulateQuery(req: typings.express.expressMod.Request[ParamsDictionary]): js.Any = js.native
+  def buildSearchQuery(req: typings.express.expressMod.Request[ParamsDictionary]): js.Object = js.native
+  def create(
+    req: typings.express.expressMod.Request[ParamsDictionary],
+    res: typings.express.expressMod.Response
+  ): Unit = js.native
   def createModel(resDef: IResource): Model[Document, js.Object] = js.native
   def createQuery(query: String): js.Any = js.native
   def createRegex(query: String): RegExp = js.native
-  def del(req: typings.express.expressMod.Request, res: typings.express.expressMod.Response): Unit = js.native
+  def del(
+    req: typings.express.expressMod.Request[ParamsDictionary],
+    res: typings.express.expressMod.Response
+  ): Unit = js.native
   def errorHandler(err: Error, res: typings.express.expressMod.Response): Unit = js.native
-  def getAll(req: typings.express.expressMod.Request, res: typings.express.expressMod.Response): Unit = js.native
-  def getById(req: typings.express.expressMod.Request, res: typings.express.expressMod.Response): Unit = js.native
+  def getAll(
+    req: typings.express.expressMod.Request[ParamsDictionary],
+    res: typings.express.expressMod.Response
+  ): Unit = js.native
+  def getById(
+    req: typings.express.expressMod.Request[ParamsDictionary],
+    res: typings.express.expressMod.Response
+  ): Unit = js.native
   def setupRecursiveRoutes(): Unit = js.native
   def setupRoutes(): Unit = js.native
   def toClassName(name: String): String = js.native
-  def update(req: typings.express.expressMod.Request, res: typings.express.expressMod.Response): Unit = js.native
+  def update(
+    req: typings.express.expressMod.Request[ParamsDictionary],
+    res: typings.express.expressMod.Response
+  ): Unit = js.native
 }
 
 /* static members */

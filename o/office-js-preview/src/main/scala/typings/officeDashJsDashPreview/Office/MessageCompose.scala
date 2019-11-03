@@ -38,7 +38,7 @@ trait MessageCompose extends Message {
     * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
     * current item.
     *
-    * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
+    * The cc property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the Cc line of 
     * the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
     *
     * - Get 500 members maximum.
@@ -76,15 +76,13 @@ trait MessageCompose extends Message {
     * 
     * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
-    * 
-    * @beta
     */
   var internetHeaders: InternetHeaders = js.native
   /**
@@ -215,7 +213,7 @@ trait MessageCompose extends Message {
     * **Note**: If you're using a data URL API (e.g., readAsDataURL), you need to strip out the data URL prefix then send the rest of the string to this API.
     * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -239,8 +237,6 @@ trait MessageCompose extends Message {
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
     *                  On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                  If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
-    * 
-    * @beta
     */
   /**
     * Adds a file to a message or appointment as an attachment.
@@ -253,7 +249,7 @@ trait MessageCompose extends Message {
     * **Note**: If you're using a data URL API (e.g., readAsDataURL), you need to strip out the data URL prefix then send the rest of the string to this API.
     * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -277,8 +273,6 @@ trait MessageCompose extends Message {
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
     *                  On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                  If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
-    * 
-    * @beta
     */
   def addFileAttachmentFromBase64Async(base64File: String, attachmentName: String): Unit = js.native
   def addFileAttachmentFromBase64Async(
@@ -416,7 +410,7 @@ trait MessageCompose extends Message {
   /**
     * Gets the item's attachments as an array.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     *
@@ -429,13 +423,11 @@ trait MessageCompose extends Message {
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and error code with the reason for 
     *                 the failure.
-    * 
-    * @beta
     */
   /**
     * Gets the item's attachments as an array.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     *
@@ -448,8 +440,6 @@ trait MessageCompose extends Message {
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and error code with the reason for 
     *                 the failure.
-    * 
-    * @beta
     */
   def getAttachmentsAsync(): Unit = js.native
   def getAttachmentsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetails]], Unit]): Unit = js.native
@@ -467,7 +457,7 @@ trait MessageCompose extends Message {
     * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
     * Until the item is synced, the `itemId` is not recognized and using it returns an error.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     *
@@ -480,8 +470,6 @@ trait MessageCompose extends Message {
     * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
     * 
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
-    * 
-    * @beta
     */
   def getItemIdAsync(callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   /**
@@ -493,7 +481,7 @@ trait MessageCompose extends Message {
     * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
     * Until the item is synced, the `itemId` is not recognized and using it returns an error.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     *
@@ -508,8 +496,6 @@ trait MessageCompose extends Message {
     * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
-    * 
-    * @beta
     */
   def getItemIdAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getSelectedDataAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native

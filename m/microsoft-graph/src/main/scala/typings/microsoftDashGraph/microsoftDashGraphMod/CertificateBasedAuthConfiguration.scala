@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CertificateBasedAuthConfiguration extends Entity {
+  // Collection of certificate authorities which creates a trusted certificate chain.
   var certificateAuthorities: js.UndefOr[js.Array[CertificateAuthority]] = js.undefined
 }
 

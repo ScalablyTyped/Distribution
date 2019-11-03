@@ -1,7 +1,7 @@
 
 # Scala.js typings for i18next-xhr-backend
 
-Typings are for version 3.2.1
+Typings are for version 3.2.2
 
 ## Library description:
 backend layer for i18next using browsers xhr

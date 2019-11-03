@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "linkifyjs"
-version := "2.1-dt-20190524Z-b885f8"
+version := "2.1-dt-20191101Z-93b37b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

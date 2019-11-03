@@ -3,6 +3,7 @@ package typings.expressDashBrute.expressDashBruteMod
 import typings.express.expressMod.Request
 import typings.express.expressMod.RequestHandler
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +27,7 @@ class ^ protected () extends ExpressBrute {
     * @param {Object} options The options.
     */
   /* CompleteClass */
-  override def getMiddleware(options: Middleware): RequestHandler = js.native
+  override def getMiddleware(options: Middleware): RequestHandler[ParamsDictionary] = js.native
   /**
     * @summary Middleware that will bounce requests that happen faster than the current wait time by calling failCallback.
     * @param {Request}     request     The HTTP request.
@@ -35,7 +36,7 @@ class ^ protected () extends ExpressBrute {
     * @return {RequestHandler} The Request handler.
     */
   /* CompleteClass */
-  override def prevent(request: Request, response: Response, next: js.Function): RequestHandler = js.native
+  override def prevent(request: Request[ParamsDictionary], response: Response, next: js.Function): RequestHandler[ParamsDictionary] = js.native
   /**
     * @summary Resets the wait time between requests back to its initial value.
     * @param {string}      ip      The IP address.
@@ -44,6 +45,6 @@ class ^ protected () extends ExpressBrute {
     * @return {RequestHandler} The Request handler.
     */
   /* CompleteClass */
-  override def reset(ip: String, key: String, next: js.Function): RequestHandler = js.native
+  override def reset(ip: String, key: String, next: js.Function): RequestHandler[ParamsDictionary] = js.native
 }
 

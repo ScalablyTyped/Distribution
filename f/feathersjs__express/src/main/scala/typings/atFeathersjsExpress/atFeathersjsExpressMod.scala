@@ -51,9 +51,9 @@ object atFeathersjsExpressMod extends js.Object {
   val original: js.Function0[Express] with Typeofexpress = js.native
   def Router(): typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router = js.native
   def Router(options: RouterOptions): typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router = js.native
-  def errorHandler(): ErrorRequestHandler = js.native
-  def errorHandler(options: Anon_Html): ErrorRequestHandler = js.native
-  def notFound(): typings.express.expressMod.RequestHandler = js.native
+  def errorHandler(): ErrorRequestHandler[ParamsDictionary] = js.native
+  def errorHandler(options: Anon_Html): ErrorRequestHandler[ParamsDictionary] = js.native
+  def notFound(): typings.express.expressMod.RequestHandler[ParamsDictionary] = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
     * @since 4.16.0
@@ -67,9 +67,9 @@ object atFeathersjsExpressMod extends js.Object {
   @js.native
   object rest extends js.Object {
     @JSName("formatter")
-    var formatter_Original: typings.express.expressMod.RequestHandler = js.native
+    var formatter_Original: typings.express.expressMod.RequestHandler[ParamsDictionary] = js.native
     def apply(): js.Function0[Unit] = js.native
-    def apply(handler: typings.express.expressMod.RequestHandler): js.Function0[Unit] = js.native
+    def apply(handler: typings.express.expressMod.RequestHandler[ParamsDictionary]): js.Function0[Unit] = js.native
     def formatter(req: Request[ParamsDictionary], res: Response, next: NextFunction): js.Any = js.native
   }
   

@@ -17,6 +17,7 @@ import typings.node.Anon_EncodingNull
 import typings.node.Anon_EncodingTrue
 import typings.node.Buffer
 import typings.node.BufferEncoding
+import typings.node.fsMod.Dir
 import typings.node.fsMod.Dirent
 import typings.node.fsMod.MakeDirectoryOptions
 import typings.node.fsMod.OpenDirOptions
@@ -194,8 +195,8 @@ trait Typeofpromises extends js.Object {
   def open(path: PathLike, flags: Double): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: Double, mode: String): js.Promise[FileHandle] = js.native
   def open(path: PathLike, flags: Double, mode: Double): js.Promise[FileHandle] = js.native
-  def opendir(path: String): js.Promise[Dirent] = js.native
-  def opendir(path: String, options: OpenDirOptions): js.Promise[Dirent] = js.native
+  def opendir(path: String): js.Promise[Dir] = js.native
+  def opendir(path: String, options: OpenDirOptions): js.Promise[Dir] = js.native
   /**
     * Asynchronously reads data from the file referenced by the supplied `FileHandle`.
     * @param handle A `FileHandle`.

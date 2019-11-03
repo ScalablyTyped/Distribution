@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   var plugin: PluginObject[Ii18n] = js.native
+  var store: js.Object = js.native
 }
 

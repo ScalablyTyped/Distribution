@@ -1,32 +1,36 @@
 package typings.reactDashJoyride.reactDashJoyrideMod
 
+import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Locale extends js.Object {
-  var back: js.UndefOr[String] = js.undefined
-  var close: js.UndefOr[String] = js.undefined
-  var last: js.UndefOr[String] = js.undefined
-  var next: js.UndefOr[String] = js.undefined
-  var skip: js.UndefOr[String] = js.undefined
+  var back: js.UndefOr[ReactNode] = js.undefined
+  var close: js.UndefOr[ReactNode] = js.undefined
+  var last: js.UndefOr[ReactNode] = js.undefined
+  var next: js.UndefOr[ReactNode] = js.undefined
+  var open: js.UndefOr[ReactNode] = js.undefined
+  var skip: js.UndefOr[ReactNode] = js.undefined
 }
 
 object Locale {
   @scala.inline
   def apply(
-    back: String = null,
-    close: String = null,
-    last: String = null,
-    next: String = null,
-    skip: String = null
+    back: ReactNode = null,
+    close: ReactNode = null,
+    last: ReactNode = null,
+    next: ReactNode = null,
+    open: ReactNode = null,
+    skip: ReactNode = null
   ): Locale = {
     val __obj = js.Dynamic.literal()
-    if (back != null) __obj.updateDynamic("back")(back)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (last != null) __obj.updateDynamic("last")(last)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (skip != null) __obj.updateDynamic("skip")(skip)
+    if (back != null) __obj.updateDynamic("back")(back.asInstanceOf[js.Any])
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
 }

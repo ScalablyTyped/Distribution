@@ -1,13 +1,18 @@
 package typings.reactDashNativeDashModal
 
-import typings.reactDashNativeDashModal.reactDashNativeDashModalMod.ModalProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashNativeDashModalProps {
   @scala.inline
-  def ReactDashNativeDashModalProps: ModalProps.type = typings.reactDashNativeDashModal.reactDashNativeDashModalMod.ModalProps
-  type ReactDashNativeDashModalProps = ModalProps
+  def ModalProps: typings.reactDashNativeDashModal.distModalMod.ModalProps.type = typings.reactDashNativeDashModal.distModalMod.ModalProps
+  type ModalProps = typings.reactDashNativeDashModal.distModalMod.ModalProps
+  @scala.inline
+  def ReactDashNativeDashModalProps: typings.reactDashNativeDashModal.distModalMod.ModalProps.type = typings.reactDashNativeDashModal.distModalMod.ModalProps
+  type ReactDashNativeDashModalProps = typings.reactDashNativeDashModal.distModalMod.ModalProps
+  @scala.inline
+  def ReactNativeModalProps: typings.reactDashNativeDashModal.distModalMod.ModalProps.type = typings.reactDashNativeDashModal.distModalMod.ModalProps
+  type ReactNativeModalProps = typings.reactDashNativeDashModal.distModalMod.ModalProps
 }
 

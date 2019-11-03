@@ -4,6 +4,7 @@ import typings.acl.Fn_AclSets
 import typings.acl.Fn_Cb
 import typings.bluebird.bluebirdMod.^
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,12 +32,12 @@ trait Acl extends js.Object {
   def hasRole(userId: Value, role: String, cb: js.Function2[/* err */ Error, /* isInRole */ Boolean, _]): ^[Boolean] = js.native
   def isAllowed(userId: Value, resources: strings, permissions: strings): ^[Boolean] = js.native
   def isAllowed(userId: Value, resources: strings, permissions: strings, cb: AllowedCallback): ^[Boolean] = js.native
-  def middleware(): RequestHandler = js.native
-  def middleware(numPathComponents: Double): RequestHandler = js.native
-  def middleware(numPathComponents: Double, userId: GetUserId): RequestHandler = js.native
-  def middleware(numPathComponents: Double, userId: GetUserId, actions: strings): RequestHandler = js.native
-  def middleware(numPathComponents: Double, userId: Value): RequestHandler = js.native
-  def middleware(numPathComponents: Double, userId: Value, actions: strings): RequestHandler = js.native
+  def middleware(): RequestHandler[ParamsDictionary] = js.native
+  def middleware(numPathComponents: Double): RequestHandler[ParamsDictionary] = js.native
+  def middleware(numPathComponents: Double, userId: GetUserId): RequestHandler[ParamsDictionary] = js.native
+  def middleware(numPathComponents: Double, userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary] = js.native
+  def middleware(numPathComponents: Double, userId: Value): RequestHandler[ParamsDictionary] = js.native
+  def middleware(numPathComponents: Double, userId: Value, actions: strings): RequestHandler[ParamsDictionary] = js.native
   def permittedResources(roles: strings, permissions: strings): ^[Unit] = js.native
   def permittedResources(roles: strings, permissions: strings, cb: Callback): ^[Unit] = js.native
   def removeAllow(role: String, resources: strings, permissions: strings): ^[Unit] = js.native

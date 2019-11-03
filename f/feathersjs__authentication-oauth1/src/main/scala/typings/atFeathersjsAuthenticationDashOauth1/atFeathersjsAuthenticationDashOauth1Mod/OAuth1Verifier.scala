@@ -4,6 +4,7 @@ import typings.atFeathersjsAuthenticationDashOauth1.Anon_AccessToken
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.Application
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.Paginated
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +22,7 @@ class OAuth1Verifier protected () extends js.Object {
   def _updateEntity(entity: js.Any, data: Anon_AccessToken): js.Promise[_] = js.native
    // normalizes result from service to account for pagination
   def verify(
-    req: Request,
+    req: Request[ParamsDictionary],
     accessToken: String,
     refreshToken: String,
     profile: js.Any,

@@ -12,6 +12,10 @@ trait Organization extends DirectoryObject {
     * property.
     */
   var businessPhones: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * Navigation property to manage certificate-based authentication configuration. Only a single instance of
+    * certificateBasedAuthConfiguration can be created in the collection.
+    */
   var certificateBasedAuthConfiguration: js.UndefOr[js.Array[CertificateBasedAuthConfiguration]] = js.undefined
   // City name of the address for the organization.
   var city: js.UndefOr[String] = js.undefined

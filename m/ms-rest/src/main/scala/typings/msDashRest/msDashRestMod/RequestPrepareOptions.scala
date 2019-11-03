@@ -1,0 +1,52 @@
+package typings.msDashRest.msDashRestMod
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RequestPrepareOptions extends js.Object {
+  var baseUrl: js.UndefOr[String] = js.undefined
+  var body: js.UndefOr[js.Any] = js.undefined
+  var bodyIsStream: js.UndefOr[Boolean] = js.undefined
+  var deserializationMapper: Mapper
+  var disableClientRequestId: js.UndefOr[Boolean] = js.undefined
+  var disableJsonStringifyOnBody: js.UndefOr[Boolean] = js.undefined
+  var formData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var method: String
+  var pathParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.undefined
+  var queryParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.undefined
+  var serializationMapper: Mapper
+}
+
+object RequestPrepareOptions {
+  @scala.inline
+  def apply(
+    deserializationMapper: Mapper,
+    method: String,
+    serializationMapper: Mapper,
+    baseUrl: String = null,
+    body: js.Any = null,
+    bodyIsStream: js.UndefOr[Boolean] = js.undefined,
+    disableClientRequestId: js.UndefOr[Boolean] = js.undefined,
+    disableJsonStringifyOnBody: js.UndefOr[Boolean] = js.undefined,
+    formData: StringDictionary[js.Any] = null,
+    headers: StringDictionary[js.Any] = null,
+    pathParameters: StringDictionary[js.Any | UrlParameterValue] = null,
+    queryParameters: StringDictionary[js.Any | UrlParameterValue] = null
+  ): RequestPrepareOptions = {
+    val __obj = js.Dynamic.literal(deserializationMapper = deserializationMapper, method = method, serializationMapper = serializationMapper)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (!js.isUndefined(bodyIsStream)) __obj.updateDynamic("bodyIsStream")(bodyIsStream)
+    if (!js.isUndefined(disableClientRequestId)) __obj.updateDynamic("disableClientRequestId")(disableClientRequestId)
+    if (!js.isUndefined(disableJsonStringifyOnBody)) __obj.updateDynamic("disableJsonStringifyOnBody")(disableJsonStringifyOnBody)
+    if (formData != null) __obj.updateDynamic("formData")(formData)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters)
+    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters)
+    __obj.asInstanceOf[RequestPrepareOptions]
+  }
+}
+

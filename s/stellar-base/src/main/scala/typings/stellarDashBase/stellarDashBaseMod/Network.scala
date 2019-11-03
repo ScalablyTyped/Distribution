@@ -17,6 +17,8 @@ class Network protected () extends js.Object {
 @js.native
 object Network extends js.Object {
   def current(): Network = js.native
+  def networkId(): String = js.native
+  def networkPassphrase(): String = js.native
   def use(network: Network): Unit = js.native
   def usePublicNetwork(): Unit = js.native
   def useTestNetwork(): Unit = js.native

@@ -9,7 +9,7 @@ trait ChangeStreamOptions extends js.Object {
   var collation: js.UndefOr[CollationDocument] = js.undefined
   var fullDocument: js.UndefOr[String] = js.undefined
   var maxAwaitTimeMS: js.UndefOr[scala.Double] = js.undefined
-  var readPreference: js.UndefOr[ReadPreference] = js.undefined
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   var resumeAfter: js.UndefOr[js.Object] = js.undefined
   var startAfter: js.UndefOr[js.Object] = js.undefined
 }
@@ -21,7 +21,7 @@ object ChangeStreamOptions {
     collation: CollationDocument = null,
     fullDocument: String = null,
     maxAwaitTimeMS: Int | scala.Double = null,
-    readPreference: ReadPreference = null,
+    readPreference: ReadPreferenceOrMode = null,
     resumeAfter: js.Object = null,
     startAfter: js.Object = null
   ): ChangeStreamOptions = {

@@ -2,6 +2,7 @@ package typings.yogDashLog.yogDashLogMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.node.Buffer
 import typings.std.Error
 import typings.yogDashLog.yogDashLogNumbers.`-1`
@@ -13,14 +14,14 @@ import scala.scalajs.js.annotation._
 @JSImport("yog-log", "Logger")
 @js.native
 class Logger protected () extends js.Object {
-  def this(opts: LogConfig, req: Request) = this()
+  def this(opts: LogConfig, req: Request[ParamsDictionary]) = this()
   def debug(info: LogInput): Unit | `false` = js.native
   def extend(destination: js.Object, source: js.Object): js.Object = js.native
   def fatal(info: LogInput): Unit | `false` = js.native
   def getCookie(name: String): String | `false` = js.native
   def getLogFile(intLevel: LevelInt): String = js.native
   def getLogFormat(level: LevelName): String | `false` = js.native
-  def getLogID(req: Request, logIDName: String): String = js.native
+  def getLogID(req: Request[ParamsDictionary], logIDName: String): String = js.native
   def getLogLevelInt(level: LevelName): LevelInt | `-1` = js.native
   def getLogPrefix(): String = js.native
   def getLogString(format: String): String = js.native
@@ -33,7 +34,7 @@ class Logger protected () extends js.Object {
   def parseCustomLog(obj: js.Object): Unit = js.native
   // 解析日志配置，生成相应的模板函数的字符串内容
   def parseFormat(format: String): String = js.native
-  def parseReqParams(req: Request, res: Response): Unit | `false` = js.native
+  def parseReqParams(req: Request[ParamsDictionary], res: Response): Unit | `false` = js.native
   def parseStackInfo(info: Error): Unit = js.native
   def parseStackInfo(info: LogInfo): Unit = js.native
   def setParams(name: String, value: js.Any): Unit = js.native

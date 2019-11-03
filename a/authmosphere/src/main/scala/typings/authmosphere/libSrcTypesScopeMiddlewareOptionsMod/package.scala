@@ -9,9 +9,10 @@ package object libSrcTypesScopeMiddlewareOptionsMod {
   import typings.express.expressMod.NextFunction
   import typings.express.expressMod.Request
   import typings.express.expressMod.Response
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
   type onAuthorizationFailedHandler = js.Function5[
-    /* request */ Request, 
+    /* request */ Request[ParamsDictionary], 
     /* resonse */ Response, 
     /* next */ NextFunction, 
     /* scopes */ js.Array[String], 

@@ -36,6 +36,7 @@ object IChamferableBodyDefinition {
     motion: Int | Double = null,
     parent: Body = null,
     parts: js.Array[Body] = null,
+    plugin: js.Any = null,
     position: Vector = null,
     render: IBodyRenderOptions = null,
     restitution: Int | Double = null,
@@ -74,6 +75,7 @@ object IChamferableBodyDefinition {
     if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (parts != null) __obj.updateDynamic("parts")(parts)
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin)
     if (position != null) __obj.updateDynamic("position")(position)
     if (render != null) __obj.updateDynamic("render")(render)
     if (restitution != null) __obj.updateDynamic("restitution")(restitution.asInstanceOf[js.Any])

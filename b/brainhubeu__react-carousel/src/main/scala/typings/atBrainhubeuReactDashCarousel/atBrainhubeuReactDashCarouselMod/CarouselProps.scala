@@ -12,6 +12,7 @@ trait CarouselProps extends js.Object {
   var arrowRight: js.UndefOr[Element] = js.undefined
   var arrows: js.UndefOr[Boolean] = js.undefined
   var autoPlay: js.UndefOr[Double] = js.undefined
+  var breakpoints: js.UndefOr[js.Any] = js.undefined
   var centered: js.UndefOr[Boolean] = js.undefined
   var clickToChange: js.UndefOr[Boolean] = js.undefined
   var dots: js.UndefOr[Boolean] = js.undefined
@@ -37,6 +38,7 @@ object CarouselProps {
     arrowRight: Element = null,
     arrows: js.UndefOr[Boolean] = js.undefined,
     autoPlay: Int | Double = null,
+    breakpoints: js.Any = null,
     centered: js.UndefOr[Boolean] = js.undefined,
     clickToChange: js.UndefOr[Boolean] = js.undefined,
     dots: js.UndefOr[Boolean] = js.undefined,
@@ -59,6 +61,7 @@ object CarouselProps {
     if (arrowRight != null) __obj.updateDynamic("arrowRight")(arrowRight)
     if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows)
     if (autoPlay != null) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (!js.isUndefined(clickToChange)) __obj.updateDynamic("clickToChange")(clickToChange)
     if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots)

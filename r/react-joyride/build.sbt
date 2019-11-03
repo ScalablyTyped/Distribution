@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-joyride"
-version := "2.0-dt-20190212Z-fc31f2"
+version := "2.1.1-554d29"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

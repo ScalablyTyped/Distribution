@@ -13,7 +13,7 @@ trait MapReduceOptions extends js.Object {
   var limit: js.UndefOr[scala.Double] = js.undefined
   var out: js.UndefOr[js.Object] = js.undefined
   var query: js.UndefOr[js.Object] = js.undefined
-  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   var scope: js.UndefOr[js.Object] = js.undefined
   var session: js.UndefOr[ClientSession] = js.undefined
   var sort: js.UndefOr[js.Object] = js.undefined
@@ -30,7 +30,7 @@ object MapReduceOptions {
     limit: Int | scala.Double = null,
     out: js.Object = null,
     query: js.Object = null,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     scope: js.Object = null,
     session: ClientSession = null,
     sort: js.Object = null,
@@ -44,7 +44,7 @@ object MapReduceOptions {
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (out != null) __obj.updateDynamic("out")(out)
     if (query != null) __obj.updateDynamic("query")(query)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (session != null) __obj.updateDynamic("session")(session)
     if (sort != null) __obj.updateDynamic("sort")(sort)

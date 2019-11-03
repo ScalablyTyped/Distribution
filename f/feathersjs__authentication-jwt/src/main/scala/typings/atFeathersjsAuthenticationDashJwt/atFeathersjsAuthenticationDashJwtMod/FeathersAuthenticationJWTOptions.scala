@@ -3,6 +3,7 @@ package typings.atFeathersjsAuthenticationDashJwt.atFeathersjsAuthenticationDash
 import org.scalablytyped.runtime.Instantiable2
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.Application
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,6 +50,6 @@ trait FeathersAuthenticationJWTOptions extends js.Object {
   /**
     * a passport-jwt option determining where to parse the JWT
     */
-  def jwtFromRequest(req: Request): String | Null = js.native
+  def jwtFromRequest(req: Request[ParamsDictionary]): String | Null = js.native
 }
 

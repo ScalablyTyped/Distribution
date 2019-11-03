@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object passportDashHttpDashBearerMod {
   import typings.express.expressMod.Request
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
   type VerifyFunction = js.Function2[
     /* token */ String, 
@@ -18,7 +19,7 @@ package object passportDashHttpDashBearerMod {
     Unit
   ]
   type VerifyFunctionWithRequest = js.Function3[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* token */ String, 
     /* done */ js.Function3[
       /* error */ js.Any, 

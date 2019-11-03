@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__statusbar-extension
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 JupyterLab - Statusbar Extension

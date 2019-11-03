@@ -36,7 +36,7 @@ trait CollectionAggregationOptions extends js.Object {
   var promoteLongs: js.UndefOr[Boolean] = js.undefined
   var promoteValues: js.UndefOr[Boolean] = js.undefined
   var raw: js.UndefOr[Boolean] = js.undefined
-  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   var session: js.UndefOr[ClientSession] = js.undefined
 }
 
@@ -55,7 +55,7 @@ object CollectionAggregationOptions {
     promoteLongs: js.UndefOr[Boolean] = js.undefined,
     promoteValues: js.UndefOr[Boolean] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     session: ClientSession = null
   ): CollectionAggregationOptions = {
     val __obj = js.Dynamic.literal()
@@ -71,7 +71,7 @@ object CollectionAggregationOptions {
     if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
     if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (session != null) __obj.updateDynamic("session")(session)
     __obj.asInstanceOf[CollectionAggregationOptions]
   }

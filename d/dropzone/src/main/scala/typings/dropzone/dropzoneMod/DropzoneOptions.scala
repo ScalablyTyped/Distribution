@@ -1,6 +1,8 @@
 package typings.dropzone.dropzoneMod
 
 import typings.dropzone.dropzoneMod._Global_.HTMLElement
+import typings.dropzone.dropzoneStrings.contain
+import typings.dropzone.dropzoneStrings.crop
 import typings.std.Blob
 import typings.std.DragEvent
 import typings.std.Error
@@ -83,7 +85,7 @@ trait DropzoneOptions extends js.Object {
   var maxThumbnailFilesize: js.UndefOr[Double] = js.undefined
   var maxfilesexceeded: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
   var maxfilesreached: js.UndefOr[js.Function1[/* files */ js.Array[DropzoneFile], Unit]] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[(js.Function1[/* files */ js.Array[DropzoneFile], String]) | String] = js.undefined
   var parallelChunkUploads: js.UndefOr[Boolean] = js.undefined
   var parallelUploads: js.UndefOr[Double] = js.undefined
   var paramName: js.UndefOr[String] = js.undefined
@@ -107,7 +109,7 @@ trait DropzoneOptions extends js.Object {
     ]
   ] = js.undefined
   var resizeHeight: js.UndefOr[Double] = js.undefined
-  var resizeMethod: js.UndefOr[String] = js.undefined
+  var resizeMethod: js.UndefOr[contain | crop] = js.undefined
   var resizeMimeType: js.UndefOr[String] = js.undefined
   var resizeQuality: js.UndefOr[Double] = js.undefined
   var resizeWidth: js.UndefOr[Double] = js.undefined
@@ -130,7 +132,7 @@ trait DropzoneOptions extends js.Object {
   ] = js.undefined
   var thumbnail: js.UndefOr[js.Function2[/* file */ DropzoneFile, /* dataUrl */ String, Unit]] = js.undefined
   var thumbnailHeight: js.UndefOr[Double] = js.undefined
-  var thumbnailMethod: js.UndefOr[String] = js.undefined
+  var thumbnailMethod: js.UndefOr[contain | crop] = js.undefined
   var thumbnailWidth: js.UndefOr[Double] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined
   var totaluploadprogress: js.UndefOr[
@@ -147,7 +149,7 @@ trait DropzoneOptions extends js.Object {
   var uploadprogress: js.UndefOr[
     js.Function3[/* file */ DropzoneFile, /* progress */ Double, /* bytesSent */ Double, Unit]
   ] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[(js.Function1[/* files */ js.Array[DropzoneFile], String]) | String] = js.undefined
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -205,7 +207,7 @@ object DropzoneOptions {
     maxThumbnailFilesize: Int | Double = null,
     maxfilesexceeded: /* file */ DropzoneFile => Unit = null,
     maxfilesreached: /* files */ js.Array[DropzoneFile] => Unit = null,
-    method: String = null,
+    method: (js.Function1[/* files */ js.Array[DropzoneFile], String]) | String = null,
     parallelChunkUploads: js.UndefOr[Boolean] = js.undefined,
     parallelUploads: Int | Double = null,
     paramName: String = null,
@@ -221,7 +223,7 @@ object DropzoneOptions {
     reset: () => Unit = null,
     resize: (/* file */ DropzoneFile, /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], /* resizeMethod */ js.UndefOr[String]) => DropzoneResizeInfo = null,
     resizeHeight: Int | Double = null,
-    resizeMethod: String = null,
+    resizeMethod: contain | crop = null,
     resizeMimeType: String = null,
     resizeQuality: Int | Double = null,
     resizeWidth: Int | Double = null,
@@ -233,14 +235,14 @@ object DropzoneOptions {
     successmultiple: (/* files */ js.Array[DropzoneFile], /* responseText */ String) => Unit = null,
     thumbnail: (/* file */ DropzoneFile, /* dataUrl */ String) => Unit = null,
     thumbnailHeight: Int | Double = null,
-    thumbnailMethod: String = null,
+    thumbnailMethod: contain | crop = null,
     thumbnailWidth: Int | Double = null,
     timeout: Int | Double = null,
     totaluploadprogress: (/* totalProgress */ Double, /* totalBytes */ Double, /* totalBytesSent */ Double) => Unit = null,
     transformFile: (/* file */ DropzoneFile, /* done */ js.Function1[/* file */ String | Blob, Unit]) => Unit = null,
     uploadMultiple: js.UndefOr[Boolean] = js.undefined,
     uploadprogress: (/* file */ DropzoneFile, /* progress */ Double, /* bytesSent */ Double) => Unit = null,
-    url: String = null,
+    url: (js.Function1[/* files */ js.Array[DropzoneFile], String]) | String = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): DropzoneOptions = {
     val __obj = js.Dynamic.literal()
@@ -295,7 +297,7 @@ object DropzoneOptions {
     if (maxThumbnailFilesize != null) __obj.updateDynamic("maxThumbnailFilesize")(maxThumbnailFilesize.asInstanceOf[js.Any])
     if (maxfilesexceeded != null) __obj.updateDynamic("maxfilesexceeded")(js.Any.fromFunction1(maxfilesexceeded))
     if (maxfilesreached != null) __obj.updateDynamic("maxfilesreached")(js.Any.fromFunction1(maxfilesreached))
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (!js.isUndefined(parallelChunkUploads)) __obj.updateDynamic("parallelChunkUploads")(parallelChunkUploads)
     if (parallelUploads != null) __obj.updateDynamic("parallelUploads")(parallelUploads.asInstanceOf[js.Any])
     if (paramName != null) __obj.updateDynamic("paramName")(paramName)
@@ -311,7 +313,7 @@ object DropzoneOptions {
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction4(resize))
     if (resizeHeight != null) __obj.updateDynamic("resizeHeight")(resizeHeight.asInstanceOf[js.Any])
-    if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod)
+    if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod.asInstanceOf[js.Any])
     if (resizeMimeType != null) __obj.updateDynamic("resizeMimeType")(resizeMimeType)
     if (resizeQuality != null) __obj.updateDynamic("resizeQuality")(resizeQuality.asInstanceOf[js.Any])
     if (resizeWidth != null) __obj.updateDynamic("resizeWidth")(resizeWidth.asInstanceOf[js.Any])
@@ -323,14 +325,14 @@ object DropzoneOptions {
     if (successmultiple != null) __obj.updateDynamic("successmultiple")(js.Any.fromFunction2(successmultiple))
     if (thumbnail != null) __obj.updateDynamic("thumbnail")(js.Any.fromFunction2(thumbnail))
     if (thumbnailHeight != null) __obj.updateDynamic("thumbnailHeight")(thumbnailHeight.asInstanceOf[js.Any])
-    if (thumbnailMethod != null) __obj.updateDynamic("thumbnailMethod")(thumbnailMethod)
+    if (thumbnailMethod != null) __obj.updateDynamic("thumbnailMethod")(thumbnailMethod.asInstanceOf[js.Any])
     if (thumbnailWidth != null) __obj.updateDynamic("thumbnailWidth")(thumbnailWidth.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (totaluploadprogress != null) __obj.updateDynamic("totaluploadprogress")(js.Any.fromFunction3(totaluploadprogress))
     if (transformFile != null) __obj.updateDynamic("transformFile")(js.Any.fromFunction2(transformFile))
     if (!js.isUndefined(uploadMultiple)) __obj.updateDynamic("uploadMultiple")(uploadMultiple)
     if (uploadprogress != null) __obj.updateDynamic("uploadprogress")(js.Any.fromFunction3(uploadprogress))
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     __obj.asInstanceOf[DropzoneOptions]
   }

@@ -1,6 +1,7 @@
 package typings.compression.compressionMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ object ^ extends js.Object {
     *
     * @see {@link https://github.com/expressjs/compression#compressionoptions|`compression([options]) documentation`}
     */
-  def apply(): RequestHandler = js.native
-  def apply(options: CompressionOptions): RequestHandler = js.native
+  def apply(): RequestHandler[ParamsDictionary] = js.native
+  def apply(options: CompressionOptions): RequestHandler[ParamsDictionary] = js.native
 }
 

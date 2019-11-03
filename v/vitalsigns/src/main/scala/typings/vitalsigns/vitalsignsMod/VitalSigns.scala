@@ -23,7 +23,7 @@ trait VitalSigns extends js.Object {
     * @type {RequestHandler}
     */
   @JSName("express")
-  var express_Original: RequestHandler = js.native
+  var express_Original: RequestHandler[ParamsDictionary] = js.native
   /**
     * Pushes a health constraint onto this instance's constraint array.
     * Health constraints define scenarios in which VitalSigns will consider the application to be in an unhealthy state.

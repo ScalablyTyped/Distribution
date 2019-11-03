@@ -25,6 +25,12 @@ trait ExecOptions
   	 */
   var encoding: js.UndefOr[String] = js.undefined
   /**
+  	 * Exit when command return code is non-zero.
+  	 *
+  	 * @default false
+  	 */
+  var fatal: js.UndefOr[Boolean] = js.undefined
+  /**
   	 * Do not echo program output to the console.
   	 *
   	 * @default false
@@ -39,6 +45,7 @@ object ExecOptions {
     cwd: String = null,
     encoding: String = null,
     env: ProcessEnv = null,
+    fatal: js.UndefOr[Boolean] = js.undefined,
     gid: Int | Double = null,
     killSignal: String = null,
     maxBuffer: Int | Double = null,
@@ -53,6 +60,7 @@ object ExecOptions {
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (env != null) __obj.updateDynamic("env")(env)
+    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal)
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
     if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal)
     if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])

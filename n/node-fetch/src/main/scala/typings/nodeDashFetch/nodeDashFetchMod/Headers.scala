@@ -18,7 +18,6 @@ class Headers ()
   def entries(): Iterator[js.Tuple2[String, String], _, js.UndefOr[scala.Nothing]] = js.native
   def forEach(callback: js.Function2[/* value */ String, /* name */ String, Unit]): Unit = js.native
   def get(name: String): String | Null = js.native
-  def getAll(name: String): js.Array[String] = js.native
   def has(name: String): Boolean = js.native
   def keys(): Iterator[String, _, js.UndefOr[scala.Nothing]] = js.native
   def raw(): StringDictionary[js.Array[String]] = js.native

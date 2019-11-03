@@ -33,26 +33,29 @@ trait ICommandBarItemProps extends IContextualMenuItem {
     */
   var buttonStyles: js.UndefOr[IButtonStyles] = js.undefined
   /**
-    * A custom cache key to be used for this item. If cacheKey is changed, the cache will invalidate. Defaults to key value;
+    * A custom cache key to be used for this item. If `cacheKey` is changed, the cache will invalidate.
+    * Defaults to `key` value.
     */
   var cacheKey: js.UndefOr[String] = js.undefined
   /**
-    * Method to override the render of the individual command bar button. Note, is not used when rendered in overflow
+    * Method to override the render of the individual command bar button.
+    * Not used when item is rendered in overflow.
     * @defaultvalue CommandBarButton
     */
   var commandBarButtonAs: js.UndefOr[IComponentAs[ICommandBarItemProps]] = js.undefined
   /**
-    * Remove text when button is not in the overflow
+    * Show only an icon for this item, not text.
+    * Does not apply if item is in the overflow.
     * @defaultvalue false
     */
   var iconOnly: js.UndefOr[Boolean] = js.undefined
   /**
-    * Context under which the item is being rendered
-    * This value is controlled by the component and useful for adjusting onRender function
+    * Context under which the item is being rendered.
+    * This value is mutated by the CommandBar and is useful for adjusting the `onRender` function.
     */
   var renderedInOverflow: js.UndefOr[Boolean] = js.undefined
   /**
-    * Props to pass into tooltip during iconOnly
+    * Props for the tooltip when in `iconOnly` mode.
     */
   var tooltipHostProps: js.UndefOr[ITooltipHostProps] = js.undefined
 }

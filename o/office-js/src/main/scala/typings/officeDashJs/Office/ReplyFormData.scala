@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 trait ReplyFormData extends js.Object {
   /**
-    * An array of {@link Office.ReplyFormAttachment} that are either file or item attachments.
+    * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are either file or item attachments.
     */
   var attachments: js.UndefOr[js.Array[ReplyFormAttachment]] = js.undefined
   /**

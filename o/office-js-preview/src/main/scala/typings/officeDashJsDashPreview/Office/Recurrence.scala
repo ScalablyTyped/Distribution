@@ -97,7 +97,7 @@ trait Recurrence extends js.Object {
     */
   var recurrenceType: RecurrenceType | String = js.native
   /**
-    * The {@link Office.SeriesTime} object enables you to manage the start and end dates of the recurring appointment series and the usual start 
+    * The {@link Office.SeriesTime | SeriesTime} object enables you to manage the start and end dates of the recurring appointment series and the usual start 
     * and end times of instances. **This object is not in UTC time.** 
     * Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone.
     * 

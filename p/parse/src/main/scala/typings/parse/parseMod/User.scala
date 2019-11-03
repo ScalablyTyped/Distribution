@@ -1,5 +1,6 @@
 package typings.parse.parseMod
 
+import typings.parse.Parse.FullOptions
 import typings.parse.Parse.SignUpOptions
 import typings.parse.Parse.SuccessFailureOptions
 import typings.parse.Parse.UseMasterKeyOption
@@ -36,7 +37,7 @@ object User extends js.Object {
   def extend(protoProps: js.Any, classProps: js.Any): js.Any = js.native
   def hydrate(userJSON: js.Any): js.Promise[typings.parse.Parse.User] = js.native
   def logIn(username: String, password: String): js.Promise[typings.parse.Parse.User] = js.native
-  def logIn(username: String, password: String, options: SuccessFailureOptions): js.Promise[typings.parse.Parse.User] = js.native
+  def logIn(username: String, password: String, options: FullOptions): js.Promise[typings.parse.Parse.User] = js.native
   def logOut(): js.Promise[typings.parse.Parse.User] = js.native
   def requestPasswordReset(email: String): js.Promise[typings.parse.Parse.User] = js.native
   def requestPasswordReset(email: String, options: SuccessFailureOptions): js.Promise[typings.parse.Parse.User] = js.native

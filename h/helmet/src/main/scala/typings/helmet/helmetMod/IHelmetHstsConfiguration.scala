@@ -2,6 +2,7 @@ package typings.helmet.helmetMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +27,7 @@ object IHelmetHstsConfiguration {
     includeSubdomains: js.UndefOr[Boolean] = js.undefined,
     maxAge: Int | Double = null,
     preload: js.UndefOr[Boolean] = js.undefined,
-    setIf: (/* req */ Request, /* res */ Response) => Boolean = null
+    setIf: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null
   ): IHelmetHstsConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)

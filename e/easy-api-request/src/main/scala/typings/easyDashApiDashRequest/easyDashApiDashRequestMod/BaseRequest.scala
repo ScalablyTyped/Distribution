@@ -2,6 +2,7 @@ package typings.easyDashApiDashRequest.easyDashApiDashRequestMod
 
 import typings.bunyan.bunyanMod.^
 import typings.easyDashApiDashRequest.Anon_Cb
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.request.requestMod.Request
 import typings.std.IArguments
 import scala.scalajs.js
@@ -14,7 +15,7 @@ trait BaseRequest extends js.Object {
   var jSend: Boolean = js.native
   var log: ^ = js.native
   var replyCookies: js.Array[String] = js.native
-  var req: typings.express.expressMod.Request = js.native
+  var req: typings.express.expressMod.Request[ParamsDictionary] = js.native
   def _do(args: IArguments): js.Any = js.native
   def _do(args: IArguments, `type`: String): js.Any = js.native
   def _parseOptions(args: IArguments, `type`: String): Anon_Cb = js.native

@@ -1,6 +1,7 @@
 package typings.loopback.loopbackMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,6 @@ object favicon extends js.Object {
     * Serve the LoopBack favicon.
     * @header loopback.favicon(
     */
-  def apply(): RequestHandler = js.native
+  def apply(): RequestHandler[ParamsDictionary] = js.native
 }
 

@@ -2,6 +2,7 @@ package typings.expressDashBrute.expressDashBruteMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ trait Options extends js.Object {
     */
   var failCallback: js.UndefOr[
     js.Function4[
-      /* req */ Request, 
+      /* req */ Request[ParamsDictionary], 
       /* res */ Response, 
       /* next */ js.Function, 
       /* nextValidRequestDate */ js.Any, 
@@ -53,7 +54,7 @@ object Options {
   @scala.inline
   def apply(
     attachResetToRequest: js.UndefOr[Boolean] = js.undefined,
-    failCallback: (/* req */ Request, /* res */ Response, /* next */ js.Function, /* nextValidRequestDate */ js.Any) => Unit = null,
+    failCallback: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ js.Function, /* nextValidRequestDate */ js.Any) => Unit = null,
     freeRetries: Int | Double = null,
     handleStoreError: js.Any = null,
     lifetime: Int | Double = null,

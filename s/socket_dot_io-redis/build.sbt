@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "socket_dot_io-redis"
-version := "1.0.0-dt-20190322Z-c0c16d"
+version := "1.0.0-dt-20190322Z-4dac54"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
-  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20191008Z-0db75e",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
+  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20191008Z-392039",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

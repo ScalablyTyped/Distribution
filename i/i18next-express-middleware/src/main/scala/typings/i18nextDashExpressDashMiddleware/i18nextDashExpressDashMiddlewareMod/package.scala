@@ -10,12 +10,13 @@ package object i18nextDashExpressDashMiddlewareMod {
   import typings.express.expressMod.Request
   import typings.express.expressMod.Response
   import typings.express.expressMod.Router
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
   import typings.i18next.i18nextMod.i18n
 
   type App = Application | Router
   type I18next = i18n
   type IgnoreRoutesFunction = js.Function4[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* res */ Response, 
     /* options */ HandleOptions, 
     /* i18next */ I18next, 

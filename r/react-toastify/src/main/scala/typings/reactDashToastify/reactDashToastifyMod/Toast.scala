@@ -1,60 +1,75 @@
 package typings.reactDashToastify.reactDashToastifyMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.react.reactMod.ReactNode
-import typings.reactDashToastify.Anon_BOTTOMCENTER
-import typings.reactDashToastify.Anon_CloseToast
-import typings.reactDashToastify.Anon_DEFAULT
-import typings.reactDashToastify.Anon_Render
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Toast extends js.Object {
-  var POSITION: Anon_BOTTOMCENTER = js.native
-  var TYPE: Anon_DEFAULT = js.native
-  def apply(content: js.Function1[/* props */ Anon_CloseToast, ReactNode]): String = js.native
-  def apply(content: js.Function1[/* props */ Anon_CloseToast, ReactNode], options: ToastOptions): String = js.native
   /**
-    * @return The ID of the toast, for future reference.
+    * Helper to set position
     */
-  def apply(content: ReactNode): String = js.native
-  def apply(content: ReactNode, options: ToastOptions): String = js.native
+  var POSITION: Position = js.native
   /**
-    * Dismiss the toast with the given ID, or all toasts if no ID is given.
+    * Helper to set notification type
+    */
+  var TYPE: Type = js.native
+  /**
+    * Display a toast without a specific type.
+    */
+  def apply(content: ToastContent): ToastId = js.native
+  def apply(content: ToastContent, options: ToastOptions): ToastId = js.native
+  /**
+    * Let you define `ToastContainer` props when lazy mounted.
+    * When called enable lazy mounted container
+    */
+  def configure(): Unit = js.native
+  def configure(config: ToastContainerProps): Unit = js.native
+  /**
+    * Remove a toast. If no `toastId` is used, all the active toast
+    * will be removed.
     */
   def dismiss(): Unit = js.native
-  def dismiss(toastId: String): Unit = js.native
+  def dismiss(toastId: ToastId): Unit = js.native
   /**
-    * Shorthand for a toast with `type: toast.TYPE.ERROR`.
+    * Set a controlled progress bar value to 100% then close the toast
     */
-  def error(content: ReactNode): String = js.native
-  def error(content: ReactNode, options: ToastOptions): String = js.native
+  def done(toastId: ToastId): Unit = js.native
   /**
-    * Shorthand for a toast with `type: toast.TYPE.INFO`.
+    * Shorthand to display toast of type 'error'.
     */
-  def info(content: ReactNode): String = js.native
-  def info(content: ReactNode, options: ToastOptions): String = js.native
+  def error(content: ToastContent): ToastId = js.native
+  def error(content: ToastContent, options: ToastOptions): ToastId = js.native
   /**
-    * Test if the toast with the given ID is active.
+    * Shorthand to display toast of type 'info'.
     */
-  def isActive(): Boolean = js.native
-  def isActive(toastId: String): Boolean = js.native
+  def info(content: ToastContent): ToastId = js.native
+  def info(content: ToastContent, options: ToastOptions): ToastId = js.native
   /**
-    * Shorthand for a toast with `type: toast.TYPE.SUCCESS`.
+    * Check if a toast is active by passing the `toastId`.
+    * Each time you display a toast you receive a `toastId`.
     */
-  def success(content: ReactNode): String = js.native
-  def success(content: ReactNode, options: ToastOptions): String = js.native
+  def isActive(toastId: ToastId): Boolean = js.native
   /**
-    * Update an existing toast by ID.
+    * Listen for change when a toast is added or removed. The number of toast displayed is passed as paran to the callback
     */
-  def update(id: String, options: ToastOptions with Anon_Render): Unit = js.native
+  def onChange(callback: js.Function1[/* count */ js.UndefOr[Double], Unit]): Unit = js.native
   /**
-    * Shorthand for a toast with `type: toast.TYPE.WARNING`.
+    * Shorthand to display toast of type 'success'.
     */
-  def warning(content: ReactNode): String = js.native
-  def warning(content: ReactNode, options: ToastOptions): String = js.native
+  def success(content: ToastContent): ToastId = js.native
+  def success(content: ToastContent, options: ToastOptions): ToastId = js.native
+  /**
+    * Update an existing toast. By default, we keep the initial content and options of the toast.
+    */
+  def update(toastId: ToastId): Unit = js.native
+  def update(toastId: ToastId, options: UpdateOptions): Unit = js.native
+  /**
+    * Shorthand to display toast of type 'warning'.
+    */
+  def warn(content: ToastContent): ToastId = js.native
+  def warn(content: ToastContent, options: ToastOptions): ToastId = js.native
 }
 
 @JSImport("react-toastify", "toast")

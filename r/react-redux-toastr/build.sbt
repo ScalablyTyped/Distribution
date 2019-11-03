@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-redux-toastr"
-version := "7.4-dt-20190322Z-09edb3"
+version := "7.6-dt-20191101Z-2a2b64"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

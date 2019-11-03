@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Account protected () extends js.Object {
   def this(accountId: String, sequence: String) = this()
-  def this(accountId: String, sequence: Double) = this()
   def accountId(): String = js.native
   def incrementSequenceNumber(): Unit = js.native
   def sequenceNumber(): String = js.native

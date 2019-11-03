@@ -1,7 +1,7 @@
 
 # Scala.js typings for nookies
 
-Typings are for version 1.1
+Typings are for version 2.0.8
 
 ## Library description:
 A set of cookie helpers for Next.js
@@ -24,7 +24,7 @@ A set of cookie helpers for Next.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -143,7 +143,7 @@ trait ItemRead extends Item {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */
@@ -173,7 +173,7 @@ trait ItemRead extends Item {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
     */

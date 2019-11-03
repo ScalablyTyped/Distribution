@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__tooltip-extension"
-version := "1.2.0-4a07bb"
+version := "1.2.1-516475"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

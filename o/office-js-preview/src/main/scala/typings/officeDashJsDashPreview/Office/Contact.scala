@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a contact stored on the server. Read mode only.
   *
-  * The list of contacts associated with an email message or appointment is returned in the contacts property of the {@link Office.Entities} object 
+  * The list of contacts associated with an email message or appointment is returned in the contacts property of the {@link Office.Entities | Entities} object 
   * that is returned by the getEntities or getEntitiesByType method of the active item.
   *
   * [Api set: Mailbox 1.0]

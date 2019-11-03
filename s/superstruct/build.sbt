@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "superstruct"
-version := "0.5-dt-20180723Z-3eaadb"
+version := "0.8.2-ea7c19"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

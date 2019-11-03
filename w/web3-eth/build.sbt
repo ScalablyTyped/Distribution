@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "web3-eth"
-version := "1.2.2-4c7668"
+version := "1.2.2-40919a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-cefcac",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
+  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-b8b382",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "web3-core" % "1.2.2-279dac",
-  "org.scalablytyped" %%% "web3-core-helpers" % "1.2.2-8a35df",
+  "org.scalablytyped" %%% "web3-core" % "1.2.2-6b4a21",
+  "org.scalablytyped" %%% "web3-core-helpers" % "1.2.2-e188c5",
   "org.scalablytyped" %%% "web3-core-method" % "1.2.2-e8b753",
   "org.scalablytyped" %%% "web3-core-subscriptions" % "1.2.2-f81d70",
-  "org.scalablytyped" %%% "web3-eth-accounts" % "1.2.2-5940c2",
-  "org.scalablytyped" %%% "web3-eth-contract" % "1.2.2-c3538c",
-  "org.scalablytyped" %%% "web3-eth-ens" % "1.2.2-cd460f",
+  "org.scalablytyped" %%% "web3-eth-accounts" % "1.2.2-1c1e52",
+  "org.scalablytyped" %%% "web3-eth-contract" % "1.2.2-795607",
+  "org.scalablytyped" %%% "web3-eth-ens" % "1.2.2-9eec80",
   "org.scalablytyped" %%% "web3-eth-iban" % "1.2.2-cb4ca5",
-  "org.scalablytyped" %%% "web3-eth-personal" % "1.2.2-ac74b8",
-  "org.scalablytyped" %%% "web3-net" % "1.2.2-0ab507",
-  "org.scalablytyped" %%% "web3-utils" % "1.2.2-ebc7d1")
+  "org.scalablytyped" %%% "web3-eth-personal" % "1.2.2-3b1785",
+  "org.scalablytyped" %%% "web3-net" % "1.2.2-818706",
+  "org.scalablytyped" %%% "web3-utils" % "1.2.2-ec03ad")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,13 +1,14 @@
 package typings.passportDashWindowsauth.passportDashWindowsauthMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passportDashWindowsauth.Anon_Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var getUserNameFromHeader: js.UndefOr[js.Function1[/* req */ Request, String]] = js.undefined
+  var getUserNameFromHeader: js.UndefOr[js.Function1[/* req */ Request[ParamsDictionary], String]] = js.undefined
   var integrated: js.UndefOr[Boolean] = js.undefined
   var ldap: js.UndefOr[Anon_Base] = js.undefined
   var passReqToCallback: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +19,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    getUserNameFromHeader: /* req */ Request => String = null,
+    getUserNameFromHeader: /* req */ Request[ParamsDictionary] => String = null,
     integrated: js.UndefOr[Boolean] = js.undefined,
     ldap: Anon_Base = null,
     passReqToCallback: js.UndefOr[Boolean] = js.undefined,

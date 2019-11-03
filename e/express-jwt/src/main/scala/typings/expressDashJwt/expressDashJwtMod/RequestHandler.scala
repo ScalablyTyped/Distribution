@@ -12,7 +12,7 @@ trait RequestHandler
   extends typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler[ParamsDictionary] {
   @JSName("unless")
   var unless_Original: Fn_Options = js.native
-  def unless(options: js.Function1[/* req */ Request, Boolean]): typings.express.expressMod.RequestHandler = js.native
-  def unless(options: typings.expressDashUnless.expressDashUnlessMod.Options): typings.express.expressMod.RequestHandler = js.native
+  def unless(options: js.Function1[/* req */ Request[ParamsDictionary], Boolean]): typings.express.expressMod.RequestHandler[ParamsDictionary] = js.native
+  def unless(options: typings.expressDashUnless.expressDashUnlessMod.Options): typings.express.expressMod.RequestHandler[ParamsDictionary] = js.native
 }
 

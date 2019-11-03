@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__notebook-extension"
-version := "1.2.0-89a74f"
+version := "1.2.1-390b3a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-floater" : "0.6.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-floater" : "0.6.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

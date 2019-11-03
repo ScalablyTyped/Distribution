@@ -1,6 +1,7 @@
 package typings.reactDashNativeDashAnimatable
 
 import typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.Animation
+import typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.Direction
 import typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableMod.Easing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,10 +12,10 @@ object reactDashNativeDashAnimatableStrings {
   sealed trait AnimatableAnimationMethods extends js.Object
   
   @js.native
-  sealed trait alternate extends js.Object
+  sealed trait alternate extends Direction
   
   @js.native
-  sealed trait `alternate-reverse` extends js.Object
+  sealed trait `alternate-reverse` extends Direction
   
   @js.native
   sealed trait bounce extends Animation
@@ -218,13 +219,13 @@ object reactDashNativeDashAnimatableStrings {
   sealed trait linear extends Easing
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal extends Direction
   
   @js.native
   sealed trait pulse extends Animation
   
   @js.native
-  sealed trait reverse extends js.Object
+  sealed trait reverse extends Direction
   
   @js.native
   sealed trait rotate extends Animation

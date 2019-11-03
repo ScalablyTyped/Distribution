@@ -36,7 +36,7 @@ trait HistoryManager extends js.Object {
     * Registers browser history event listeners
     * @param navigateHistory The history navigation event handler
     */
-  def init(navigateHistory: js.Function0[Unit]): Unit = js.native
+  def init(navigateHistory: js.Function1[/* url */ js.UndefOr[String], Unit]): Unit = js.native
   /**
     * Removes browser history event listeners
     */

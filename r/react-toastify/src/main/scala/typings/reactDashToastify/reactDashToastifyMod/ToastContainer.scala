@@ -1,12 +1,12 @@
 package typings.reactDashToastify.reactDashToastifyMod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.react.reactMod.StatelessComponent
+import typings.react.reactMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-toastify", "ToastContainer")
 @js.native
-object ToastContainer extends TopLevel[StatelessComponent[ToastContainerProps]]
+class ToastContainer ()
+  extends Component[ToastContainerProps, js.Any, js.Any]
 

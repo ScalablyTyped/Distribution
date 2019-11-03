@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-mauron85-background-geolocation"
-version := "0.5-dt-20180903Z-dc06a8"
+version := "0.5.2-576efd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

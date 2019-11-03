@@ -1,5 +1,6 @@
 package typings.loginDashWithDashAmazonDashSdkDashBrowser
 
+import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,9 @@ import scala.scalajs.js.annotation._
 object amazon extends js.Object {
   @js.native
   object Login extends js.Object {
+    @js.native
+    sealed trait Region extends js.Object
+    
     def authorize(options: AccessTokenAuthorizeOptions): AccessTokenRequest = js.native
     def authorize(options: AccessTokenAuthorizeOptions, next: String): AccessTokenRequest = js.native
     def authorize(options: AccessTokenAuthorizeOptions, next: NextCallback[AccessTokenRequest]): AccessTokenRequest = js.native
@@ -48,6 +52,14 @@ object amazon extends js.Object {
       */
     def setClientId(clientId: String): Unit = js.native
     /**
+      * Login With Amazon has multiple authorization and resource endpoints.
+      * This API determines the region of the authorization and resource
+      * endpoints Login with Amazon SDK should talk to. This needs to be
+      * called before the authorize and retreiveProfile APIs.
+      * When not set, it defaults to “NorthAmerica”
+      */
+    def setRegion(region: Region): Unit = js.native
+    /**
       * Determines whether or not Login with Amazon should use the
       * Amazon Pay sandbox for requests. To use the Amazon Pay sandbox,
       * call `setSandboxMode(true)` before calling `authorize`.
@@ -74,6 +86,24 @@ object amazon extends js.Object {
       * tokens in that cookie.
       */
     def setUseCookie(useCookie: Boolean): Unit = js.native
+    @js.native
+    object Region extends js.Object {
+      @js.native
+      sealed trait AsiaPacific extends Region
+      
+      @js.native
+      sealed trait Europe extends Region
+      
+      @js.native
+      sealed trait NorthAmerica extends Region
+      
+      /* 2 */ val AsiaPacific: typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.AsiaPacific with Double = js.native
+      /* 1 */ val Europe: typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.Europe with Double = js.native
+      /* 0 */ val NorthAmerica: typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.NorthAmerica with Double = js.native
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[Region with Double] = js.native
+    }
+    
   }
   
 }

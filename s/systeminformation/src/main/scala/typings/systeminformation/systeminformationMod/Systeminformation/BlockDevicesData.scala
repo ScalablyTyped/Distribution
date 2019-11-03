@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait BlockDevicesData extends js.Object {
   var fstype: String
+  var identifier: String
   var label: String
   var model: String
   var mount: String
@@ -23,6 +24,7 @@ object BlockDevicesData {
   @scala.inline
   def apply(
     fstype: String,
+    identifier: String,
     label: String,
     model: String,
     mount: String,
@@ -35,7 +37,7 @@ object BlockDevicesData {
     `type`: String,
     uuid: String
   ): BlockDevicesData = {
-    val __obj = js.Dynamic.literal(fstype = fstype, label = label, model = model, mount = mount, name = name, physical = physical, protocol = protocol, removable = removable, serial = serial, size = size, uuid = uuid)
+    val __obj = js.Dynamic.literal(fstype = fstype, identifier = identifier, label = label, model = model, mount = mount, name = name, physical = physical, protocol = protocol, removable = removable, serial = serial, size = size, uuid = uuid)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BlockDevicesData]
   }

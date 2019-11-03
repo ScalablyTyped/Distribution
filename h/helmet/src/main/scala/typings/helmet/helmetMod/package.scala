@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object helmetMod {
   import typings.express.expressMod.Request
   import typings.express.expressMod.Response
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
   type HelmetCspDirectiveValue = String | IHelmetContentSecurityPolicyDirectiveFunction
   /* Rewritten from type alias, can be one of: 
@@ -29,6 +30,6 @@ package object helmetMod {
     - typings.helmet.helmetStrings.`allow-top-navigation`
   */
   type HelmetCspSandboxDirective = _HelmetCspSandboxDirective | String
-  type IHelmetContentSecurityPolicyDirectiveFunction = js.Function2[/* req */ Request, /* res */ Response, String]
-  type IHelmetSetIfFunction = js.Function2[/* req */ Request, /* res */ Response, Boolean]
+  type IHelmetContentSecurityPolicyDirectiveFunction = js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, String]
+  type IHelmetSetIfFunction = js.Function2[/* req */ Request[ParamsDictionary], /* res */ Response, Boolean]
 }

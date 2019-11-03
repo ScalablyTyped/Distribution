@@ -1,7 +1,7 @@
 
 # Scala.js typings for ganache-core
 
-Typings are for version 2.1
+Typings are for version 2.8.0
 
 ## Library description:
 [![npm](https://img.shields.io/npm/v/ganache-core.svg)]() [![npm](https://img.shields.io/npm/dm/ganache-core.svg)]() [![Build Status](https://travis-ci.org/trufflesuite/ganache-core.svg?branch=master)](https://travis-ci.org/trufflesuite/ganache-core) [![C
@@ -24,7 +24,7 @@ Typings are for version 2.1
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

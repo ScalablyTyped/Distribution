@@ -48,9 +48,7 @@ object EventType extends js.Object {
     * 
     * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.
     * 
-    * [Api set: Mailbox Preview]
-    * 
-    * @beta
+    * [Api set: Mailbox 1.8]
     */
   @js.native
   sealed trait AttachmentsChanged extends EventType
@@ -105,9 +103,7 @@ object EventType extends js.Object {
     * 
     * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.
     * 
-    * [Api set: Mailbox Preview]
-    * 
-    * @beta
+    * [Api set: Mailbox 1.8]
     */
   @js.native
   sealed trait EnhancedLocationsChanged extends EventType

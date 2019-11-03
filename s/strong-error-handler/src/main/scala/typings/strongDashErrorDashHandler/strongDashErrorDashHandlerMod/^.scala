@@ -1,6 +1,7 @@
 package typings.strongDashErrorDashHandler.strongDashErrorDashHandlerMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.strongDashErrorDashHandler.strongDashErrorDashHandlerMod.StrongErrorHandler.options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ object ^ extends js.Object {
     * Create a new strong error middleware funciton using the given options.
     * @param options
     */
-  def apply(): RequestHandler = js.native
-  def apply(options: options): RequestHandler = js.native
+  def apply(): RequestHandler[ParamsDictionary] = js.native
+  def apply(options: options): RequestHandler[ParamsDictionary] = js.native
 }
 

@@ -3,7 +3,7 @@ package typings.mongoose.mongooseMod
 import typings.mongodb.Anon_Password
 import typings.mongodb.mongodbMod.MongoClientOptions
 import typings.mongodb.mongodbMod.ReadConcern
-import typings.mongodb.mongodbMod.ReadPreference
+import typings.mongodb.mongodbMod.ReadPreferenceOrMode
 import typings.mongodb.mongodbMod.SocketOptions
 import typings.mongodb.mongodbMod.log
 import typings.mongodb.mongodbNumbers.`4`
@@ -122,7 +122,7 @@ object ConnectionOptions {
     promoteValues: js.UndefOr[Boolean] = js.undefined,
     raw: js.UndefOr[Boolean] = js.undefined,
     readConcern: ReadConcern | String = null,
-    readPreference: ReadPreference | String = null,
+    readPreference: ReadPreferenceOrMode = null,
     readPreferenceTags: js.Array[String] = null,
     reconnectInterval: Int | Double = null,
     reconnectTries: Int | Double = null,
@@ -204,7 +204,7 @@ object ConnectionOptions {
     if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
     if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (readPreferenceTags != null) __obj.updateDynamic("readPreferenceTags")(readPreferenceTags)
     if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
     if (reconnectTries != null) __obj.updateDynamic("reconnectTries")(reconnectTries.asInstanceOf[js.Any])

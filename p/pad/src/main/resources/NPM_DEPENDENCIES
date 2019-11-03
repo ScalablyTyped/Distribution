@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "pad" : "3.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "pad" : "3.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

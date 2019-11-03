@@ -1,6 +1,7 @@
 package typings.redisDashRateDashLimiter.redisDashRateDashLimiterMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.redis.redisMod.RedisClient
 import typings.redisDashRateDashLimiter.redisDashRateDashLimiterStrings.ip
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var deleteImmediatelyIfRaceCondition: js.UndefOr[Boolean] = js.undefined
-  var key: ip | (js.Function1[/* req */ Request, String])
+  var key: ip | (js.Function1[/* req */ Request[ParamsDictionary], String])
   var limit: js.UndefOr[Double] = js.undefined
   var onPossibleRaceCondition: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
   var rate: js.UndefOr[String] = js.undefined
@@ -20,7 +21,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    key: ip | (js.Function1[/* req */ Request, String]),
+    key: ip | (js.Function1[/* req */ Request[ParamsDictionary], String]),
     redis: RedisClient,
     deleteImmediatelyIfRaceCondition: js.UndefOr[Boolean] = js.undefined,
     limit: Int | Double = null,

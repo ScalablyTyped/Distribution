@@ -13,6 +13,7 @@ class TransactionBuilder_ protected () extends js.Object {
   def addMemo(memo: Memo[MemoType]): this.type = js.native
   def addOperation(operation: typings.stellarDashBase.stellarDashBaseMod.xdr.Operation[Operation]): this.type = js.native
   def build(): Transaction[Memo[MemoType], js.Array[Operation]] = js.native
+  def setNetworkPassphrase(networkPassphrase: String): this.type = js.native
   def setTimeout(timeoutInSeconds: Double): this.type = js.native
 }
 

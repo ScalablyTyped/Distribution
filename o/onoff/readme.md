@@ -1,7 +1,7 @@
 
 # Scala.js typings for onoff
 
-Typings are for version v3.2
+Typings are for version 5.0.0
 
 ## Library description:
 GPIO access and interrupt detection with Node.js
@@ -24,7 +24,7 @@ GPIO access and interrupt detection with Node.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

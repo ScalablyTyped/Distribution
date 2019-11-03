@@ -1,0 +1,6 @@
+[debug] PhaseRunner.scala:84 Success [id => msportalfx-test, phase => typescript] 
+[warn ] PhaseRunner.scala:70 Failed because of, [msportalfx-mock => Couldn't resolve DirectivePathRef(../node/node.d.ts), msportalfx-mock => Couldn't resolve DirectivePathRef(../serve-static/serve-static.d.ts)] [id => msportalfx-test, phase => typescript] 
+[error] PhaseRunner.scala:88 Failure, [msportalfx-mock => Couldn't resolve DirectivePathRef(../node/node.d.ts), msportalfx-mock => Couldn't resolve DirectivePathRef(../serve-static/serve-static.d.ts)] [id => msportalfx-test, phase => typescript] 
+[error] PhaseRunner.scala:88 Failure, [msportalfx-mock => Couldn't resolve DirectivePathRef(../node/node.d.ts), msportalfx-mock => Couldn't resolve DirectivePathRef(../serve-static/serve-static.d.ts)] [id => msportalfx-test, phase => scala.js] 
+[error] PhaseRunner.scala:88 Failure, [msportalfx-mock => Couldn't resolve DirectivePathRef(../node/node.d.ts), msportalfx-mock => Couldn't resolve DirectivePathRef(../serve-static/serve-static.d.ts)] [id => msportalfx-test, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [msportalfx-mock => Couldn't resolve DirectivePathRef(../node/node.d.ts), msportalfx-mock => Couldn't resolve DirectivePathRef(../serve-static/serve-static.d.ts)] [id => msportalfx-test, phase => publish] 

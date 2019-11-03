@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-material-ui-form-validator"
-version := "2.0-dt-20191003Z-b2a3f3"
+version := "2.0-dt-20191101Z-f21b11"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

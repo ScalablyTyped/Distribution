@@ -16,12 +16,11 @@ trait ICommandBarProps extends HTMLAttributes[HTMLDivElement] {
   /**
     * Accessibility text to be read by the screen reader when the user's
     * focus enters the command bar. The screen reader will read this text
-    * after reading information about the first focusable item in the command
-    * bar.
+    * after reading information about the first focusable item in the command bar.
     */
   var ariaLabel: js.UndefOr[String] = js.undefined
   /**
-    * Custom button to be used as near and far items
+    * Custom component for the near and far item buttons. Not used for overflow menu items.
     */
   var buttonAs: js.UndefOr[IComponentAs[IButtonProps]] = js.undefined
   /**
@@ -31,25 +30,25 @@ trait ICommandBarProps extends HTMLAttributes[HTMLDivElement] {
   var componentRef: js.UndefOr[IRefObject[ICommandBar]] = js.undefined
   /**
     * Function to be called every time data is rendered. It provides the data that was actually rendered.
-    * A use case would be adding telemetry when a particular control is shown in an overflow well or
-    * dropped as a result of onReduceData or to count the number of renders that an implementation of
-    * onReduceData triggers.
+    * A use case would be adding telemetry when a particular control is shown in an overflow or dropped
+    * as a result of `onReduceData`, or to count the number of renders that an implementation of
+    * `onReduceData` triggers.
     */
   var dataDidRender: js.UndefOr[js.Function1[/* renderedData */ js.Any, Unit]] = js.undefined
   /**
-    * Items to render on the right side (or left, in RTL). ICommandBarItemProps extend IContextualMenuItem
+    * Items to render on the right side (or left, in RTL). ICommandBarItemProps extends IContextualMenuItem.
     */
   var farItems: js.UndefOr[js.Array[ICommandBarItemProps]] = js.undefined
   /**
-    * Items to render. ICommandBarItemProps extend IContextualMenuItem
+    * Items to render. ICommandBarItemProps extends IContextualMenuItem.
     */
   var items: js.Array[ICommandBarItemProps]
   /**
-    * Function callback invoked when data has been grown.
+    * Callback invoked when data has been grown.
     */
   var onDataGrown: js.UndefOr[js.Function1[/* movedItem */ ICommandBarItemProps, Unit]] = js.undefined
   /**
-    * Function callback invoked when data has been reduced.
+    * Callback invoked when data has been reduced.
     */
   var onDataReduced: js.UndefOr[js.Function1[/* movedItem */ ICommandBarItemProps, Unit]] = js.undefined
   /**
@@ -58,29 +57,30 @@ trait ICommandBarProps extends HTMLAttributes[HTMLDivElement] {
     */
   var onGrowData: js.UndefOr[js.Function1[/* data */ ICommandBarData, js.UndefOr[ICommandBarData]]] = js.undefined
   /**
-    * Custom function to reduce data if items do not fit in given space. Return `undefined`
-    * if no more steps can be taken to avoid infinate loop.
+    * Custom function to reduce data if items do not fit in given space.
+    * Return `undefined` if no more steps can be taken to avoid infinate loop.
     */
   var onReduceData: js.UndefOr[js.Function1[/* data */ ICommandBarData, js.UndefOr[ICommandBarData]]] = js.undefined
   /**
-    * Custom button to be used as oveflow button
+    * Custom component for the overflow button.
     */
   var overflowButtonAs: js.UndefOr[IComponentAs[IButtonProps]] = js.undefined
   /**
     * Props to be passed to overflow button.
-    * If menuProps are passed through this prop, any items provided will be prepended to the top of the existing menu.
+    * If `menuProps` are passed through this prop, any items provided will be prepended to any
+    * computed overflow items.
     */
   var overflowButtonProps: js.UndefOr[IButtonProps] = js.undefined
   /**
-    * Default items to have in the overflow menu. ICommandBarItemProps extend IContextualMenuItem
+    * Default items to have in the overflow menu. ICommandBarItemProps extends IContextualMenuItem.
     */
   var overflowItems: js.UndefOr[js.Array[ICommandBarItemProps]] = js.undefined
   /**
-    * When true, items will be 'shifted' off the front of the array when reduced, and unshifted during grow
+    * When true, items will be 'shifted' off the front of the array when reduced, and unshifted during grow.
     */
   var shiftOnReduce: js.UndefOr[Boolean] = js.undefined
   /**
-    * Call to provide customized styling that will layer on top of the variant rules
+    * Customized styling that will layer on top of the variant rules.
     */
   var styles: js.UndefOr[IStyleFunctionOrObject[ICommandBarStyleProps, ICommandBarStyles]] = js.undefined
   /**

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ErrorPayload extends js.Object {
-  var backtrace: js.Array[String]
+  var backtrace: js.Array[String] | Null
   var error: String
   var exception: String
   var failed_at: String
@@ -17,16 +17,16 @@ trait ErrorPayload extends js.Object {
 object ErrorPayload {
   @scala.inline
   def apply(
-    backtrace: js.Array[String],
     error: String,
     exception: String,
     failed_at: String,
     payload: js.Any,
     queue: String,
-    worker: String
+    worker: String,
+    backtrace: js.Array[String] = null
   ): ErrorPayload = {
-    val __obj = js.Dynamic.literal(backtrace = backtrace, error = error, exception = exception, failed_at = failed_at, payload = payload, queue = queue, worker = worker)
-  
+    val __obj = js.Dynamic.literal(error = error, exception = exception, failed_at = failed_at, payload = payload, queue = queue, worker = worker)
+    if (backtrace != null) __obj.updateDynamic("backtrace")(backtrace)
     __obj.asInstanceOf[ErrorPayload]
   }
 }

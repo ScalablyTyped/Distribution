@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Asset protected ()
   extends typings.stellarDashBase.stellarDashBaseMod.Asset {
+  def this(code: String) = this()
   def this(code: String, issuer: String) = this()
 }
 

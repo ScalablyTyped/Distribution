@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
   // force num of rows in the grid
   var rows: js.UndefOr[Double] = js.undefined
   // returns { row, col } for element
-  def position(nodeid: String): Anon_Col
+  def position(node: NodeSingular): Anon_Col
 }
 
 object GridLayoutOptions {
@@ -32,7 +32,7 @@ object GridLayoutOptions {
     fit: Boolean,
     name: grid,
     nodeDimensionsIncludeLabels: Boolean,
-    position: String => Anon_Col,
+    position: NodeSingular => Anon_Col,
     animate: js.UndefOr[Boolean] = js.undefined,
     animationDuration: Int | Double = null,
     animationEasing: js.UndefOr[Boolean] = js.undefined,

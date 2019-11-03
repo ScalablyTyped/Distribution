@@ -1,6 +1,7 @@
 package typings.istanbulDashMiddleware
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.istanbulDashMiddleware.istanbulDashMiddlewareMod.Matcher
 import typings.istanbulDashMiddleware.istanbulDashMiddlewareMod.PostLoadHookFn
 import scala.scalajs.js
@@ -18,9 +19,9 @@ object istanbulDashMiddlewareMod extends js.Object {
   def hookLoader(matcherOrRoot: String, opts: Anon_PostLoadHook): Unit = js.native
   def hookLoader(matcherOrRoot: Matcher): Unit = js.native
   def hookLoader(matcherOrRoot: Matcher, opts: Anon_PostLoadHook): Unit = js.native
-  type ClientMatcher = js.Function1[/* req */ Request, Boolean]
+  type ClientMatcher = js.Function1[/* req */ Request[ParamsDictionary], Boolean]
   type Matcher = js.Function1[/* file */ String, Boolean]
-  type PathTransformer = js.Function1[/* req */ Request, String]
+  type PathTransformer = js.Function1[/* req */ Request[ParamsDictionary], String]
   type PostLoadHook = js.Function3[
     /* matcherfn */ Matcher, 
     /* transformer */ js.Any, 

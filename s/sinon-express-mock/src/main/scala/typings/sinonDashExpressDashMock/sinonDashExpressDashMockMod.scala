@@ -2,6 +2,7 @@ package typings.sinonDashExpressDashMock
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.sinon.sinonMod.SinonStub
 import typings.sinonDashExpressDashMock.sinonDashExpressDashMockMod.mockReq.MockReq
 import typings.sinonDashExpressDashMock.sinonDashExpressDashMockMod.mockRes.MockRes
@@ -50,8 +51,8 @@ object sinonDashExpressDashMockMod extends js.Object {
       def is(args: js.Any*): js.Any = js.native
     }
     
-    def apply[T /* <: js.Object */](): MockReq with T with Request = js.native
-    def apply[T /* <: js.Object */](options: T): MockReq with T with Request = js.native
+    def apply[T /* <: js.Object */](): MockReq with T with Request[ParamsDictionary] = js.native
+    def apply[T /* <: js.Object */](options: T): MockReq with T with Request[ParamsDictionary] = js.native
   }
   
   @js.native

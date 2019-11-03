@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-requestid
 
-Typings are for version 2.0
+Typings are for version 2.1.0
 
 ## Library description:
 A middleware that adds a request id to a koa application
@@ -24,7 +24,7 @@ A middleware that adds a request id to a koa application
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

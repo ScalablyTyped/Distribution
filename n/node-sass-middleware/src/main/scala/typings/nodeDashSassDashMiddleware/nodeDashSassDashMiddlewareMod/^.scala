@@ -1,6 +1,7 @@
 package typings.nodeDashSassDashMiddleware.nodeDashSassDashMiddlewareMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,6 @@ object ^ extends js.Object {
     * 
     *
     */
-  def apply(options: Options): RequestHandler = js.native
+  def apply(options: Options): RequestHandler[ParamsDictionary] = js.native
 }
 

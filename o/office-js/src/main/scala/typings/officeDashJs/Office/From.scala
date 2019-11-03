@@ -22,7 +22,7 @@ trait From extends js.Object {
     * 
     * The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
     * 
-    * The from value of the item is provided as an {@link Office.EmailAddressDetails} in the asyncResult.value property.
+    * The from value of the item is provided as an {@link Office.EmailAddressDetails | EmailAddressDetails} in the asyncResult.value property.
     * 
     * [Api set: Mailbox 1.7]
     * 
@@ -43,7 +43,7 @@ trait From extends js.Object {
     * 
     * The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
     * 
-    * The from value of the item is provided as an {@link Office.EmailAddressDetails} in the asyncResult.value property.
+    * The from value of the item is provided as an {@link Office.EmailAddressDetails | EmailAddressDetails} in the asyncResult.value property.
     * 
     * [Api set: Mailbox 1.7]
     * 

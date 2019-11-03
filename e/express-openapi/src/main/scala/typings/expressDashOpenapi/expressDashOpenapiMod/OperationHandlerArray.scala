@@ -3,12 +3,13 @@ package typings.expressDashOpenapi.expressDashOpenapiMod
 import org.scalablytyped.runtime.NumberDictionary
 import typings.express.expressMod.RequestHandler
 import typings.expressDashOpenapi.expressDashOpenapiMod.OpenApi.OperationObject
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OperationHandlerArray
-  extends /* index */ NumberDictionary[RequestHandler]
+  extends /* index */ NumberDictionary[RequestHandler[ParamsDictionary]]
      with Operation {
   var apiDoc: js.UndefOr[OperationObject] = js.undefined
 }
@@ -16,7 +17,7 @@ trait OperationHandlerArray
 object OperationHandlerArray {
   @scala.inline
   def apply(
-    NumberDictionary: /* index */ NumberDictionary[RequestHandler] = null,
+    NumberDictionary: /* index */ NumberDictionary[RequestHandler[ParamsDictionary]] = null,
     apiDoc: OperationObject = null
   ): OperationHandlerArray = {
     val __obj = js.Dynamic.literal()

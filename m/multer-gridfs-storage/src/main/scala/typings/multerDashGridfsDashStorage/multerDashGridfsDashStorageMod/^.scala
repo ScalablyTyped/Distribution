@@ -1,6 +1,7 @@
 package typings.multerDashGridfsDashStorage.multerDashGridfsDashStorageMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.multer.multerMod._Global_.Express.Multer.File
 import typings.std.Error
 import typings.std.Partial
@@ -15,12 +16,12 @@ class ^ protected () extends MulterGridfsStorage {
   def this(configuration: UrlStorageOptions) = this()
   /* CompleteClass */
   override def _handleFile(
-    req: Request,
+    req: Request[ParamsDictionary],
     file: File,
     callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[Partial[File]], Unit]
   ): Unit = js.native
   /* CompleteClass */
-  override def _removeFile(req: Request, file: File, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  override def _removeFile(req: Request[ParamsDictionary], file: File, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
 }
 
 @JSImport("multer-gridfs-storage", JSImport.Namespace)

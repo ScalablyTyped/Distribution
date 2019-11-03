@@ -1,159 +1,148 @@
 package typings.reactDashJoyride
 
-import typings.reactDashJoyride.reactDashJoyrideMod.Action
-import typings.reactDashJoyride.reactDashJoyrideMod.EventType
-import typings.reactDashJoyride.reactDashJoyrideMod.Lifecycle
-import typings.reactDashJoyride.reactDashJoyrideMod.Status
+import typings.reactDashJoyride.reactDashJoyrideMod.Placement
+import typings.reactDashJoyride.reactDashJoyrideMod.PlacementBeacon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashJoyrideStrings {
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends Placement
   
   @js.native
-  sealed trait beacon
-    extends EventType
-       with Lifecycle
+  sealed trait beacon extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends Placement
+       with PlacementBeacon
   
   @js.native
-  sealed trait `bottom-end` extends js.Object
+  sealed trait `bottom-end` extends Placement
   
   @js.native
-  sealed trait `bottom-start` extends js.Object
+  sealed trait `bottom-start` extends Placement
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center extends Placement
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait close extends js.Object
   
   @js.native
-  sealed trait close extends Action
+  sealed trait complete extends js.Object
   
   @js.native
-  sealed trait complete extends Lifecycle
+  sealed trait error extends js.Object
   
   @js.native
-  sealed trait error
-    extends EventType
-       with Lifecycle
-       with Status
+  sealed trait `error:target_not_found` extends js.Object
   
   @js.native
-  sealed trait `error:target_not_found` extends EventType
+  sealed trait finished extends js.Object
   
   @js.native
-  sealed trait finished extends Status
+  sealed trait go extends js.Object
   
   @js.native
-  sealed trait go extends Action
+  sealed trait idle extends js.Object
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait index extends js.Object
   
   @js.native
-  sealed trait idle extends Status
+  sealed trait init extends js.Object
   
   @js.native
-  sealed trait index extends Action
+  sealed trait left
+    extends Placement
+       with PlacementBeacon
   
   @js.native
-  sealed trait init
-    extends Action
-       with Lifecycle
+  sealed trait `left-end` extends Placement
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait `left-start` extends Placement
   
   @js.native
-  sealed trait `left-end` extends js.Object
+  sealed trait next extends js.Object
   
   @js.native
-  sealed trait `left-start` extends js.Object
+  sealed trait paused extends js.Object
   
   @js.native
-  sealed trait next extends Action
+  sealed trait prev extends js.Object
   
   @js.native
-  sealed trait paused extends Status
+  sealed trait ready extends js.Object
   
   @js.native
-  sealed trait prev extends Action
+  sealed trait reset extends js.Object
   
   @js.native
-  sealed trait ready
-    extends Lifecycle
-       with Status
+  sealed trait restart extends js.Object
   
   @js.native
-  sealed trait reset extends Action
+  sealed trait right
+    extends Placement
+       with PlacementBeacon
   
   @js.native
-  sealed trait restart extends Action
+  sealed trait `right-end` extends Placement
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait `right-start` extends Placement
   
   @js.native
-  sealed trait `right-end` extends js.Object
+  sealed trait running extends js.Object
   
   @js.native
-  sealed trait `right-start` extends js.Object
+  sealed trait skip extends js.Object
   
   @js.native
-  sealed trait running extends Status
+  sealed trait skipped extends js.Object
   
   @js.native
-  sealed trait skip extends Action
+  sealed trait start extends js.Object
   
   @js.native
-  sealed trait skipped extends Status
+  sealed trait `step:after` extends js.Object
   
   @js.native
-  sealed trait start extends Action
+  sealed trait `step:before` extends js.Object
   
   @js.native
-  sealed trait `step:after` extends EventType
+  sealed trait stop extends js.Object
   
   @js.native
-  sealed trait `step:before` extends EventType
+  sealed trait tooltip extends js.Object
   
   @js.native
-  sealed trait stop extends Action
+  sealed trait top
+    extends Placement
+       with PlacementBeacon
   
   @js.native
-  sealed trait tooltip
-    extends EventType
-       with Lifecycle
+  sealed trait `top-end` extends Placement
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait `top-start` extends Placement
   
   @js.native
-  sealed trait `top-end` extends js.Object
+  sealed trait `tour:end` extends js.Object
   
   @js.native
-  sealed trait `top-start` extends js.Object
+  sealed trait `tour:start` extends js.Object
   
   @js.native
-  sealed trait `tour:end` extends EventType
+  sealed trait `tour:status` extends js.Object
   
   @js.native
-  sealed trait `tour:start` extends EventType
+  sealed trait update extends js.Object
   
   @js.native
-  sealed trait `tour:status` extends EventType
-  
-  @js.native
-  sealed trait update extends Action
-  
-  @js.native
-  sealed trait waiting extends Status
+  sealed trait waiting extends js.Object
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
@@ -168,8 +157,6 @@ object reactDashJoyrideStrings {
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
@@ -181,8 +168,6 @@ object reactDashJoyrideStrings {
   def finished: finished = "finished".asInstanceOf[finished]
   @scala.inline
   def go: go = "go".asInstanceOf[go]
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
   def idle: idle = "idle".asInstanceOf[idle]
   @scala.inline

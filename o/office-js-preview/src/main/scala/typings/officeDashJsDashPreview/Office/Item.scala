@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
   * The item namespace is used to access the currently selected message, meeting request, or appointment. 
   * You can determine the type of the item by using the `itemType` property.
   *
+  * If you want to see IntelliSense for only a specific type, cast this item to one of the following:
+  *
+  * {@link Office.ItemCompose | ItemCompose}, {@link Office.ItemRead | ItemRead},
+  * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
+  * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
+  *
   * [Api set: Mailbox 1.0]
   *
   * @remarks
@@ -34,15 +40,13 @@ trait Item extends js.Object {
   /**
     * Gets an object that provides methods for managing the item's categories.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-    * 
-    * @beta
     */
   var categories: Categories = js.native
   /**
@@ -111,9 +115,7 @@ trait Item extends js.Object {
   /**
     * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
     * 
-    * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-    * `Office.EventType.RecurrenceChanged`.
-    * In Preview, `Office.EventType.AttachmentsChanged` and `Office.EventType.EnhancedLocationsChanged` are also supported.
+    * To see which event types are supported, see `Office.EventType` for details.
     * 
     * [Api set: Mailbox 1.7]
     *
@@ -153,7 +155,7 @@ trait Item extends js.Object {
     * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
     * continue in a separate window.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     * 
     * @remarks
     * 
@@ -171,8 +173,6 @@ trait Item extends js.Object {
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error property will contain and error code 
     *                 with the reason for the failure.
-    * 
-    * @beta
     */
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
@@ -216,7 +216,7 @@ trait Item extends js.Object {
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -227,14 +227,12 @@ trait Item extends js.Object {
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 The `value` property of the result is the properties of the shared item.
-    * 
-    * @beta
     */
   def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]): Unit = js.native
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     *
     * @remarks
     * 
@@ -247,8 +245,6 @@ trait Item extends js.Object {
     * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 The `value` property of the result is the properties of the shared item.
-    * 
-    * @beta
     */
   def getSharedPropertiesAsync(
     options: AsyncContextOptions,
@@ -291,9 +287,7 @@ trait Item extends js.Object {
   /**
     * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
     * 
-    * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-    * `Office.EventType.RecurrenceChanged`.
-    * In Preview, `Office.EventType.AttachmentsChanged` and `Office.EventType.EnhancedLocationsChanged` are also supported.
+    * To see which event types are supported, see `Office.EventType` for details.
     * 
     * [Api set: Mailbox 1.7]
     *

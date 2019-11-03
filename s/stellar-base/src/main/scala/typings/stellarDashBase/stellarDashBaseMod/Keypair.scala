@@ -36,6 +36,7 @@ object Keypair extends js.Object {
   def fromRawEd25519Seed(secretSeed: Buffer): Keypair = js.native
   def fromSecret(secretKey: String): Keypair = js.native
   def master(): Keypair = js.native
+  def master(networkPassphrase: String): Keypair = js.native
   def random(): Keypair = js.native
 }
 

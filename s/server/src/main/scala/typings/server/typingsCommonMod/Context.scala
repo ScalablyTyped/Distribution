@@ -3,6 +3,7 @@ package typings.server.typingsCommonMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.formidable.formidableMod.Files
 import typings.server.typingsOptionsMod.Options
 import typings.std.Error
@@ -26,7 +27,7 @@ trait Context extends js.Object {
   var params: StringDictionary[String]
   var path: String
   var query: StringDictionary[String | js.Array[String]]
-  var req: Request
+  var req: Request[ParamsDictionary]
   var res: Response
   var secure: Boolean
   var session: js.Object
@@ -51,7 +52,7 @@ object Context {
     params: StringDictionary[String],
     path: String,
     query: StringDictionary[String | js.Array[String]],
-    req: Request,
+    req: Request[ParamsDictionary],
     res: Response,
     secure: Boolean,
     session: js.Object,

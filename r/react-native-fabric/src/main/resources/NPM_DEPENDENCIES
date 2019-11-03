@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-fabric" : "0.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-fabric" : "0.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

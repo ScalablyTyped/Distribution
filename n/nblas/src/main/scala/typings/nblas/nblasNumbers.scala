@@ -1,40 +1,40 @@
 package typings.nblas
 
-import typings.nblas.nblasMod.DIAG
-import typings.nblas.nblasMod.SIDE
-import typings.nblas.nblasMod.TRANS
-import typings.nblas.nblasMod.UPLO
+import typings.nblas.builtTypesMod.MatrixLeftRight
+import typings.nblas.builtTypesMod.MatrixTrans
+import typings.nblas.builtTypesMod.MatrixUnit
+import typings.nblas.builtTypesMod.MatrixUpperLower
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object nblasNumbers {
   @js.native
-  sealed trait `111` extends TRANS
+  sealed trait `111` extends MatrixTrans
   
   @js.native
-  sealed trait `112` extends TRANS
+  sealed trait `112` extends MatrixTrans
   
   @js.native
-  sealed trait `113` extends TRANS
+  sealed trait `113` extends MatrixTrans
   
   @js.native
-  sealed trait `121` extends UPLO
+  sealed trait `121` extends MatrixUpperLower
   
   @js.native
-  sealed trait `122` extends UPLO
+  sealed trait `122` extends MatrixUpperLower
   
   @js.native
-  sealed trait `131` extends DIAG
+  sealed trait `131` extends MatrixUnit
   
   @js.native
-  sealed trait `132` extends DIAG
+  sealed trait `132` extends MatrixUnit
   
   @js.native
-  sealed trait `141` extends SIDE
+  sealed trait `141` extends MatrixLeftRight
   
   @js.native
-  sealed trait `142` extends SIDE
+  sealed trait `142` extends MatrixLeftRight
   
   @scala.inline
   def `111`: `111` = 111.asInstanceOf[`111`]

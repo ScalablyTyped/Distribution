@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "website-scraper"
-version := "v1.2.x-dt-20190322Z-080f4d"
+version := "v1.2.x-dt-20190322Z-30edfd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-e2b4ac",
-  "org.scalablytyped" %%% "form-data" % "2.5.1-6b579b",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-0c81d0",
+  "org.scalablytyped" %%% "form-data" % "2.5.1-563381",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-06cdd0",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-b1eaaa")
 publishArtifact in packageDoc := false

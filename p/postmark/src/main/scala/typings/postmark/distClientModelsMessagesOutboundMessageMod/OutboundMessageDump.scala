@@ -1,0 +1,19 @@
+package typings.postmark.distClientModelsMessagesOutboundMessageMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait OutboundMessageDump extends js.Object {
+  var Body: String
+}
+
+object OutboundMessageDump {
+  @scala.inline
+  def apply(Body: String): OutboundMessageDump = {
+    val __obj = js.Dynamic.literal(Body = Body)
+  
+    __obj.asInstanceOf[OutboundMessageDump]
+  }
+}
+

@@ -1,0 +1,22 @@
+package typings.azureDashArmDashResource
+
+import org.scalablytyped.runtime.StringDictionary
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_CustomHeadersHeaderNameTop extends js.Object {
+  var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
+  var top: js.UndefOr[Double] = js.undefined
+}
+
+object Anon_CustomHeadersHeaderNameTop {
+  @scala.inline
+  def apply(customHeaders: StringDictionary[String] = null, top: Int | Double = null): Anon_CustomHeadersHeaderNameTop = {
+    val __obj = js.Dynamic.literal()
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CustomHeadersHeaderNameTop]
+  }
+}
+

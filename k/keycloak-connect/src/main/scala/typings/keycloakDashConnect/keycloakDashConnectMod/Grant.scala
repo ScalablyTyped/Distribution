@@ -2,6 +2,7 @@ package typings.keycloakDashConnect.keycloakDashConnectMod
 
 import typings.express.expressMod.Request
 import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ trait Grant extends js.Object {
   var refresh_token: Token
   var token_type: String
   def isExpired(): Boolean
-  def store(request: Request, response: Response): Unit
+  def store(request: Request[ParamsDictionary], response: Response): Unit
   def update(grant: Grant): Unit
 }
 
@@ -27,7 +28,7 @@ object Grant {
     id_token: Token,
     isExpired: () => Boolean,
     refresh_token: Token,
-    store: (Request, Response) => Unit,
+    store: (Request[ParamsDictionary], Response) => Unit,
     toString: () => String,
     token_type: String,
     update: Grant => Unit

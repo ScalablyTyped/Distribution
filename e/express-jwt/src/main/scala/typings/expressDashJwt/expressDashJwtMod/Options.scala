@@ -2,6 +2,7 @@ package typings.expressDashJwt.expressDashJwtMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +23,8 @@ object Options {
     secret: secretType | SecretCallback | SecretCallbackLong,
     StringDictionary: /* property */ StringDictionary[js.Any] = null,
     credentialsRequired: js.UndefOr[Boolean] = js.undefined,
-    getToken: /* req */ Request => js.Any = null,
-    isRevoked: (/* req */ Request, /* payload */ js.Any, /* done */ js.Function2[/* err */ js.Any, /* revoked */ js.UndefOr[Boolean], Unit]) => Unit = null,
+    getToken: /* req */ Request[ParamsDictionary] => js.Any = null,
+    isRevoked: (/* req */ Request[ParamsDictionary], /* payload */ js.Any, /* done */ js.Function2[/* err */ js.Any, /* revoked */ js.UndefOr[Boolean], Unit]) => Unit = null,
     requestProperty: String = null,
     userProperty: String = null
   ): Options = {

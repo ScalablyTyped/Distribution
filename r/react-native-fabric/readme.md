@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-fabric
 
-Typings are for version 0.5
+Typings are for version 0.5.2
 
 ## Library description:
 A React Native library for Fabric, Crashlytics and Answers
@@ -24,7 +24,7 @@ A React Native library for Fabric, Crashlytics and Answers
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,6 +1,7 @@
 package typings.passportDashGoogleDashOauth20.passportDashGoogleDashOauth20Mod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ class Strategy protected ()
   def this(
     options: StrategyOptionsWithRequest,
     verify: js.Function5[
-        /* req */ Request, 
+        /* req */ Request[ParamsDictionary], 
         /* accessToken */ String, 
         /* refreshToken */ String, 
         /* profile */ Profile, 

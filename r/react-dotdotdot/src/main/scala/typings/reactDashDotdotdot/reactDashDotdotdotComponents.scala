@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashDotdotdotComponents extends reactDashDotdotdotProps {
   @scala.inline
-  def ReactDashDotdotdot: ComponentType[ReactDashDotdotdotProps] = js.constructorOf[typings.reactDashDotdotdot.reactDashDotdotdotMod.^].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashDotdotdotProps]]
+  def ReactDashDotdotdot: ComponentType[ReactDashDotdotdotProps] = js.constructorOf[typings.reactDashDotdotdot.reactDashDotdotdotMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashDotdotdotProps]]
 }
 

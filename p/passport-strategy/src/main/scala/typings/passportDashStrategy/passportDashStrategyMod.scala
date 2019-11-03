@@ -1,6 +1,7 @@
 package typings.passportDashStrategy
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,8 +19,8 @@ object passportDashStrategyMod extends js.Object {
       * @param req The request to authenticate.
       * @param options Options passed to the strategy.
       */
-    def authenticate(req: Request): Unit = js.native
-    def authenticate(req: Request, options: js.Any): Unit = js.native
+    def authenticate(req: Request[ParamsDictionary]): Unit = js.native
+    def authenticate(req: Request[ParamsDictionary], options: js.Any): Unit = js.native
     /**
       * Internal error while performing authentication.
       *

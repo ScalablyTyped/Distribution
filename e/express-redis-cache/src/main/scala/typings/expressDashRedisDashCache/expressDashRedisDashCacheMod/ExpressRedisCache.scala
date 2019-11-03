@@ -1,6 +1,7 @@
 package typings.expressDashRedisDashCache.expressDashRedisDashCacheMod
 
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.redis.redisMod.RedisClient
 import scala.scalajs.js
@@ -30,12 +31,12 @@ class ExpressRedisCache () extends EventEmitter {
   def del(name: String, callback: js.Function2[/* error */ js.Any, /* deleted */ Double, Unit]): Unit = js.native
   def get(callback: js.Function2[/* error */ js.Any, /* entries */ js.Array[Entry], Unit]): Unit = js.native
   def get(name: String, callback: js.Function2[/* error */ js.Any, /* entries */ js.Array[Entry], Unit]): Unit = js.native
-  def route(): RequestHandler = js.native
-  def route(expire: Double): RequestHandler = js.native
-  def route(nameOrOptions: String): RequestHandler = js.native
-  def route(nameOrOptions: String, expire: ExpireOption): RequestHandler = js.native
-  def route(nameOrOptions: RouteOptions): RequestHandler = js.native
-  def route(nameOrOptions: RouteOptions, expire: ExpireOption): RequestHandler = js.native
+  def route(): RequestHandler[ParamsDictionary] = js.native
+  def route(expire: Double): RequestHandler[ParamsDictionary] = js.native
+  def route(nameOrOptions: String): RequestHandler[ParamsDictionary] = js.native
+  def route(nameOrOptions: String, expire: ExpireOption): RequestHandler[ParamsDictionary] = js.native
+  def route(nameOrOptions: RouteOptions): RequestHandler[ParamsDictionary] = js.native
+  def route(nameOrOptions: RouteOptions, expire: ExpireOption): RequestHandler[ParamsDictionary] = js.native
   def size(callback: js.Function2[/* error */ js.Any, /* bytes */ Double, Unit]): Unit = js.native
 }
 

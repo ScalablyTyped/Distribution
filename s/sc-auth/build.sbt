@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sc-auth"
-version := "5.0-dt-20181130Z-2008dc"
+version := "5.0-dt-20181130Z-889775"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20191015Z-b0ba63",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191030Z-4bf573",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20191015Z-fc767f",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-query-complexity
 
-Typings are for version 0.1
+Typings are for version 0.4.1
 
 ## Library description:
 Validation rule for GraphQL query complexity analysis
@@ -24,7 +24,7 @@ Validation rule for GraphQL query complexity analysis
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

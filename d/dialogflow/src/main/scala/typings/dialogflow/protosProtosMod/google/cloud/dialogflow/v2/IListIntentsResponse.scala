@@ -1,0 +1,24 @@
+package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Properties of a ListIntentsResponse. */
+trait IListIntentsResponse extends js.Object {
+  /** ListIntentsResponse intents */
+  var intents: js.UndefOr[js.Array[IIntent] | Null] = js.undefined
+  /** ListIntentsResponse nextPageToken */
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
+}
+
+object IListIntentsResponse {
+  @scala.inline
+  def apply(intents: js.Array[IIntent] = null, nextPageToken: String = null): IListIntentsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (intents != null) __obj.updateDynamic("intents")(intents)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[IListIntentsResponse]
+  }
+}
+

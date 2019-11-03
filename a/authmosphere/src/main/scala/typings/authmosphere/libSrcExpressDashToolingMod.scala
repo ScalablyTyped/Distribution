@@ -3,6 +3,7 @@ package typings.authmosphere
 import typings.authmosphere.libSrcTypesAuthenticationMiddlewareOptionsMod.AuthenticationMiddlewareOptions
 import typings.authmosphere.libSrcTypesScopeMiddlewareOptionsMod.ScopeMiddlewareOptions
 import typings.express.expressMod.RequestHandler
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +34,7 @@ object libSrcExpressDashToolingMod extends js.Object {
     * @param options: AuthenticationMiddlewareOptions
     * @returns express middleware
     */
-  type authenticationMiddleware = js.Function1[/* options */ AuthenticationMiddlewareOptions, RequestHandler]
+  type authenticationMiddleware = js.Function1[/* options */ AuthenticationMiddlewareOptions, RequestHandler[ParamsDictionary]]
   /**
     * A factory that returns a middleware that compares scopes attached to `express.Request` object with a given list (`scopes` parameter).
     * If all required scopes are matched, the middleware calls `next`. Otherwise, it rejects the request with _403 FORBIDDEN_.
@@ -95,7 +96,7 @@ object libSrcExpressDashToolingMod extends js.Object {
   type requireScopesMiddleware = js.Function2[
     /* scopes */ js.Array[String], 
     /* options */ js.UndefOr[ScopeMiddlewareOptions], 
-    RequestHandler
+    RequestHandler[ParamsDictionary]
   ]
 }
 

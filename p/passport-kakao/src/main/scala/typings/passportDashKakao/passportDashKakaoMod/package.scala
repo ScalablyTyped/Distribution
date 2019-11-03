@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object passportDashKakaoMod {
   import typings.express.expressMod.Request
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
   type VerifyFunction = js.Function4[
     /* accessToken */ String, 
@@ -15,7 +16,7 @@ package object passportDashKakaoMod {
     Unit
   ]
   type VerifyFunctionWithRequest = js.Function5[
-    /* req */ Request, 
+    /* req */ Request[ParamsDictionary], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* profile */ Profile, 

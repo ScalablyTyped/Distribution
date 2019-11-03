@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__vdom-extension"
-version := "1.2.0-6dceb0"
+version := "1.2.1-c4fbf6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

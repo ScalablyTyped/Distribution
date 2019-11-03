@@ -406,7 +406,7 @@ object prosemirrorDashTransformMod extends js.Object {
   def canJoin(doc: Node[_], pos: Double): Boolean = js.native
   def canSplit[S /* <: Schema[_, _] */](doc: Node[S], pos: Double): Boolean = js.native
   def canSplit[S /* <: Schema[_, _] */](doc: Node[S], pos: Double, depth: Double): Boolean = js.native
-  def canSplit[S /* <: Schema[_, _] */](doc: Node[S], pos: Double, depth: Double, typesAfter: js.Array[Anon_Attrs[S]]): Boolean = js.native
+  def canSplit[S /* <: Schema[_, _] */](doc: Node[S], pos: Double, depth: Double, typesAfter: js.Array[js.UndefOr[Anon_Attrs[S] | Null]]): Boolean = js.native
   def dropPoint[S /* <: Schema[_, _] */](doc: Node[S], pos: Double, slice: Slice[S]): js.UndefOr[Double | Null] = js.native
   def findWrapping[S /* <: Schema[_, _] */](range: NodeRange[S], nodeType: NodeType[S]): js.UndefOr[js.Array[Anon_Attrs[S]] | Null] = js.native
   def findWrapping[S /* <: Schema[_, _] */](range: NodeRange[S], nodeType: NodeType[S], attrs: StringDictionary[js.Any]): js.UndefOr[js.Array[Anon_Attrs[S]] | Null] = js.native

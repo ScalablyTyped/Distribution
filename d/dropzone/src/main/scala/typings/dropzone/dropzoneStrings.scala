@@ -24,6 +24,12 @@ object dropzoneStrings {
   sealed trait completemultiple extends js.Object
   
   @js.native
+  sealed trait contain extends js.Object
+  
+  @js.native
+  sealed trait crop extends js.Object
+  
+  @js.native
   sealed trait dragend extends js.Object
   
   @js.native
@@ -104,6 +110,10 @@ object dropzoneStrings {
   def complete: complete = "complete".asInstanceOf[complete]
   @scala.inline
   def completemultiple: completemultiple = "completemultiple".asInstanceOf[completemultiple]
+  @scala.inline
+  def contain: contain = "contain".asInstanceOf[contain]
+  @scala.inline
+  def crop: crop = "crop".asInstanceOf[crop]
   @scala.inline
   def dragend: dragend = "dragend".asInstanceOf[dragend]
   @scala.inline

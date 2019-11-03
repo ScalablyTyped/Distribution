@@ -1,6 +1,7 @@
 package typings.passportDashAzureDashAd.oidcDashStrategyMod
 
 import typings.express.expressMod.Request
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.passport.passportMod.Strategy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ class OIDCStrategy protected () extends Strategy {
   def this(options: IOIDCStrategyOptionWithoutRequest, verify: VerifyOIDCFunction) = this()
   @JSName("name")
   var name_OIDCStrategy: String = js.native
-  def authenticate(req: Request): Unit = js.native
-  def authenticate(req: Request, options: js.Object): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary]): Unit = js.native
+  def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }
 

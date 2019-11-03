@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ms-rest-azure" : "2.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ms-rest-azure" : "2.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

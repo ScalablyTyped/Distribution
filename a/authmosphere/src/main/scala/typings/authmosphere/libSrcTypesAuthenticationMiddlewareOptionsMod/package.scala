@@ -9,9 +9,10 @@ package object libSrcTypesAuthenticationMiddlewareOptionsMod {
   import typings.express.expressMod.NextFunction
   import typings.express.expressMod.Request
   import typings.express.expressMod.Response
+  import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 
   type onNotAuthenticatedHandler = js.Function4[
-    /* request */ Request, 
+    /* request */ Request[ParamsDictionary], 
     /* resonse */ Response, 
     /* next */ NextFunction, 
     /* logger */ Logger, 

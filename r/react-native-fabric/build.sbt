@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-fabric"
-version := "0.5-dt-20180214Z-9c9569"
+version := "0.5.2-d724d5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

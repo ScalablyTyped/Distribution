@@ -9,7 +9,7 @@ trait EnhancedLocation extends js.Object {
   /**
     * Adds to the set of locations associated with the appointment.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     * 
     * @remarks
     * 
@@ -26,8 +26,6 @@ trait EnhancedLocation extends js.Object {
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
-    * 
-    * @beta
     */
   def addAsync(locationIdentifiers: js.Array[LocationIdentifier]): Unit = js.native
   def addAsync(
@@ -43,7 +41,7 @@ trait EnhancedLocation extends js.Object {
   /**
     * Gets the set of locations associated with the appointment.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     * 
     * @remarks
     * 
@@ -55,8 +53,6 @@ trait EnhancedLocation extends js.Object {
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object.
-    * 
-    * @beta
     */
   def getAsync(): Unit = js.native
   def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[LocationDetails]], Unit]): Unit = js.native
@@ -70,7 +66,7 @@ trait EnhancedLocation extends js.Object {
     * 
     * If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in locationIdentifiers.
     * 
-    * [Api set: Mailbox Preview]
+    * [Api set: Mailbox 1.8]
     * 
     * @remarks
     * 
@@ -83,8 +79,6 @@ trait EnhancedLocation extends js.Object {
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
-    * 
-    * @beta
     */
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier]): Unit = js.native
   def removeAsync(
