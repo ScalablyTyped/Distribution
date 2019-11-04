@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-typedoc
 
-Typings are for version 2.2.2
+Typings are for version 2.2.3
 
 ## Library description:
 Gulp plugin for the TypeDoc typescript documentation tool.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-typedoc"
-version := "2.2.2-a169f1"
+version := "2.2.3-1945ca"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

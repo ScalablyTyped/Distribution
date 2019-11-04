@@ -18,6 +18,8 @@ trait ChatMember extends js.Object {
   var can_send_media_messages: js.UndefOr[Boolean] = js.undefined
   var can_send_messages: js.UndefOr[Boolean] = js.undefined
   var can_send_other_messages: js.UndefOr[Boolean] = js.undefined
+  var can_send_polls: Boolean
+  var is_member: js.UndefOr[Boolean] = js.undefined
   var status: ChatMemberStatus
   var until_date: js.UndefOr[Double] = js.undefined
   var user: User
@@ -26,6 +28,7 @@ trait ChatMember extends js.Object {
 object ChatMember {
   @scala.inline
   def apply(
+    can_send_polls: Boolean,
     status: ChatMemberStatus,
     user: User,
     can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined,
@@ -41,9 +44,10 @@ object ChatMember {
     can_send_media_messages: js.UndefOr[Boolean] = js.undefined,
     can_send_messages: js.UndefOr[Boolean] = js.undefined,
     can_send_other_messages: js.UndefOr[Boolean] = js.undefined,
+    is_member: js.UndefOr[Boolean] = js.undefined,
     until_date: Int | Double = null
   ): ChatMember = {
-    val __obj = js.Dynamic.literal(status = status, user = user)
+    val __obj = js.Dynamic.literal(can_send_polls = can_send_polls, status = status, user = user)
     if (!js.isUndefined(can_add_web_page_previews)) __obj.updateDynamic("can_add_web_page_previews")(can_add_web_page_previews)
     if (!js.isUndefined(can_be_edited)) __obj.updateDynamic("can_be_edited")(can_be_edited)
     if (!js.isUndefined(can_change_info)) __obj.updateDynamic("can_change_info")(can_change_info)
@@ -57,6 +61,7 @@ object ChatMember {
     if (!js.isUndefined(can_send_media_messages)) __obj.updateDynamic("can_send_media_messages")(can_send_media_messages)
     if (!js.isUndefined(can_send_messages)) __obj.updateDynamic("can_send_messages")(can_send_messages)
     if (!js.isUndefined(can_send_other_messages)) __obj.updateDynamic("can_send_other_messages")(can_send_other_messages)
+    if (!js.isUndefined(is_member)) __obj.updateDynamic("is_member")(is_member)
     if (until_date != null) __obj.updateDynamic("until_date")(until_date.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatMember]
   }
