@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Priority extends js.Object
 
+/**
+  * An enum for contact priority.
+  */
 @JSGlobal("GoogleAppsScript.Contacts.Priority")
 @js.native
 object Priority extends js.Object {

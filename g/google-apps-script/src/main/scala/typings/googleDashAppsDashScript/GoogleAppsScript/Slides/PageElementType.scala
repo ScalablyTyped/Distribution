@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait PageElementType extends js.Object
 
+/**
+  * The page element type.
+  */
 @JSGlobal("GoogleAppsScript.Slides.PageElementType")
 @js.native
 object PageElementType extends js.Object {

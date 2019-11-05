@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 class InlineLexer protected () extends js.Object {
   def this(links: js.Array[String]) = this()
   def this(links: js.Array[String], options: MarkedOptions) = this()
+  var links: js.Array[String] = js.native
+  var options: MarkedOptions = js.native
+  var renderer: Renderer = js.native
+  var rules: Rules = js.native
   def mangle(text: String): String = js.native
   def output(src: String): String = js.native
   def outputLink(cap: js.Array[String], link: String): String = js.native

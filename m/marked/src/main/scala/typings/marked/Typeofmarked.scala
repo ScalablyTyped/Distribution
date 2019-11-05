@@ -17,6 +17,7 @@ trait Typeofmarked extends js.Object {
   var Slugger: Instantiable0[typings.marked.markedMod.Slugger] = js.native
   var TextRenderer: Instantiable0[typings.marked.markedMod.TextRenderer] = js.native
   val Tokens: js.Any = js.native
+  val defaults: MarkedOptions = js.native
   /**
     * Compiles markdown to HTML.
     *
@@ -44,6 +45,10 @@ trait Typeofmarked extends js.Object {
     callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
   ): String = js.native
   /**
+    * Gets the original marked default options.
+    */
+  def getDefaults(): MarkedOptions = js.native
+  /**
     * @param src String of markdown source to be compiled
     * @param links Array of links
     * @param options Hash of options
@@ -57,6 +62,12 @@ trait Typeofmarked extends js.Object {
     */
   def lexer(src: String): TokensList = js.native
   def lexer(src: String, options: MarkedOptions): TokensList = js.native
+  /**
+    * Sets the default options.
+    *
+    * @param options Hash of options
+    */
+  def options(options: MarkedOptions): /* import warning: ImportType.apply Failed type conversion: typeof marked */ js.Any = js.native
   /**
     * Compiles markdown to HTML.
     *

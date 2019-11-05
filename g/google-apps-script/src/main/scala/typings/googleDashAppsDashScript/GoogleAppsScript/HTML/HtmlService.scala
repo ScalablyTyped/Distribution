@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Service for returning HTML and other text content from a script.
+  *
+  * Due to security considerations, scripts cannot directly return content to a browser. Instead,
+  * they must sanitize the HTML so that it cannot perform malicious actions. See the description of
+  * HtmlOutput for what limitations this implies on what can be returned.
+  */
 @js.native
 trait HtmlService extends js.Object {
   var SandboxMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SandboxMode */ js.Any = js.native

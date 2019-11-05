@@ -1,7 +1,7 @@
 
 # Scala.js typings for ractive
 
-Typings are for version 0.7.1
+Typings are for version 1.3.8
 
 ## Library description:
 Next-generation DOM manipulation
@@ -24,7 +24,7 @@ Next-generation DOM manipulation
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

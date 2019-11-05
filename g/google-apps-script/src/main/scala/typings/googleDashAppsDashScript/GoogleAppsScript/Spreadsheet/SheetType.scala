@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait SheetType extends js.Object
 
+/**
+  * The different types of sheets that can exist in a spreadsheet.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.SheetType")
 @js.native
 object SheetType extends js.Object {

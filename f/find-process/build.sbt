@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "find-process"
-version := "1.1-dt-20180917Z-907aac"
+version := "1.4.2-e5779a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

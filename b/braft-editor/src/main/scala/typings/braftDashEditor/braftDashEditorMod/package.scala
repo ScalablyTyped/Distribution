@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object braftDashEditorMod {
-  import typings.react.reactMod.Component
+  import typings.braftDashEditor.Anon_IsEmpty
 
-  type BraftEditor = Component[editorProps, js.Object, js.Any]
+  type EditorState = typings.draftDashJs.draftDashJsMod.EditorState with Anon_IsEmpty
+  type HookFunc = js.Function1[/* any */ js.Any, js.Any]
 }

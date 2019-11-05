@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Status extends js.Object
 
+/**
+  * Status of the solution. Before solving a problem the status will be NOT_SOLVED;
+  * afterwards it will take any of the other values depending if it successfully found a solution and
+  * if the solution is optimal.
+  */
 @JSGlobal("GoogleAppsScript.Optimization.Status")
 @js.native
 object Status extends js.Object {

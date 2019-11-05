@@ -25,6 +25,7 @@ import typings.codemirror.codemirrorStrings.cursorHeight
 import typings.codemirror.codemirrorStrings.cursorScrollMargin
 import typings.codemirror.codemirrorStrings.dragDrop
 import typings.codemirror.codemirrorStrings.electricChars
+import typings.codemirror.codemirrorStrings.electricInput
 import typings.codemirror.codemirrorStrings.extraKeys
 import typings.codemirror.codemirrorStrings.firstLineNumber
 import typings.codemirror.codemirrorStrings.fixedGutter
@@ -32,13 +33,16 @@ import typings.codemirror.codemirrorStrings.flattenSpans
 import typings.codemirror.codemirrorStrings.focus
 import typings.codemirror.codemirrorStrings.foldGutter
 import typings.codemirror.codemirrorStrings.gutterClick
+import typings.codemirror.codemirrorStrings.gutterContextMenu
 import typings.codemirror.codemirrorStrings.gutters
 import typings.codemirror.codemirrorStrings.highlightSelectionMatches
 import typings.codemirror.codemirrorStrings.hintOptions
 import typings.codemirror.codemirrorStrings.historyEventDelay
 import typings.codemirror.codemirrorStrings.indentUnit
 import typings.codemirror.codemirrorStrings.indentWithTabs
+import typings.codemirror.codemirrorStrings.inputRead
 import typings.codemirror.codemirrorStrings.inputStyle
+import typings.codemirror.codemirrorStrings.keyHandled
 import typings.codemirror.codemirrorStrings.keyMap
 import typings.codemirror.codemirrorStrings.lineNumbers
 import typings.codemirror.codemirrorStrings.lineWiseCopyCut
@@ -48,19 +52,23 @@ import typings.codemirror.codemirrorStrings.matchBrackets
 import typings.codemirror.codemirrorStrings.matchTags
 import typings.codemirror.codemirrorStrings.maxHighlightLength
 import typings.codemirror.codemirrorStrings.mode
+import typings.codemirror.codemirrorStrings.optionChange
 import typings.codemirror.codemirrorStrings.overwriteToggle
 import typings.codemirror.codemirrorStrings.placeholder
 import typings.codemirror.codemirrorStrings.pollInterval
 import typings.codemirror.codemirrorStrings.readOnly
+import typings.codemirror.codemirrorStrings.refresh
 import typings.codemirror.codemirrorStrings.renderLine
 import typings.codemirror.codemirrorStrings.rtlMoveVisually
 import typings.codemirror.codemirrorStrings.scroll
+import typings.codemirror.codemirrorStrings.scrollCursorIntoView
 import typings.codemirror.codemirrorStrings.scrollPastEnd
 import typings.codemirror.codemirrorStrings.scrollbarStyle
 import typings.codemirror.codemirrorStrings.showCursorWhenSelecting
 import typings.codemirror.codemirrorStrings.showHint
 import typings.codemirror.codemirrorStrings.smartIndent
 import typings.codemirror.codemirrorStrings.styleActiveLine
+import typings.codemirror.codemirrorStrings.swapDoc
 import typings.codemirror.codemirrorStrings.tabSize
 import typings.codemirror.codemirrorStrings.tabindex
 import typings.codemirror.codemirrorStrings.theme
@@ -72,8 +80,11 @@ import typings.codemirror.codemirrorStrings.viewportMargin
 import typings.codemirror.codemirrorStrings.workDelay
 import typings.codemirror.codemirrorStrings.workTime
 import typings.std.Event
+import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
+import typings.std.KeyboardEvent
+import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -336,7 +347,7 @@ trait Editor extends Doc {
   @JSName("off")
   def off_beforeChange(
     eventName: beforeChange,
-    handler: js.Function2[/* instance */ this.type, /* change */ EditorChangeCancellable, Unit]
+    handler: js.Function2[/* instance */ this.type, /* changeObj */ EditorChangeCancellable, Unit]
   ): Unit = js.native
   @JSName("off")
   def off_beforeSelectionChange(
@@ -344,21 +355,23 @@ trait Editor extends Doc {
     handler: js.Function2[/* instance */ this.type, /* selection */ Anon_Anchor, Unit]
   ): Unit = js.native
   @JSName("off")
-  def off_blur(eventName: blur, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  def off_blur(eventName: blur, handler: js.Function2[/* instance */ this.type, /* event */ FocusEvent, Unit]): Unit = js.native
   @JSName("off")
   def off_change(
     eventName: change,
-    handler: js.Function2[/* instance */ this.type, /* change */ EditorChangeLinkedList, Unit]
+    handler: js.Function2[/* instance */ this.type, /* changeObj */ EditorChangeLinkedList, Unit]
   ): Unit = js.native
   @JSName("off")
   def off_changes(
     eventName: changes,
-    handler: js.Function2[/* instance */ this.type, /* change */ js.Array[EditorChangeLinkedList], Unit]
+    handler: js.Function2[/* instance */ this.type, /* changes */ js.Array[EditorChangeLinkedList], Unit]
   ): Unit = js.native
   @JSName("off")
   def off_cursorActivity(eventName: cursorActivity, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   @JSName("off")
-  def off_focus(eventName: focus, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  def off_electricInput(eventName: electricInput, handler: js.Function2[/* instance */ this.type, /* line */ Double, Unit]): Unit = js.native
+  @JSName("off")
+  def off_focus(eventName: focus, handler: js.Function2[/* instance */ this.type, /* event */ FocusEvent, Unit]): Unit = js.native
   @JSName("off")
   def off_gutterClick(
     eventName: gutterClick,
@@ -366,10 +379,38 @@ trait Editor extends Doc {
       /* instance */ this.type, 
       /* line */ Double, 
       /* gutter */ String, 
-      /* clickEvent */ Event, 
+      /* clickEvent */ MouseEvent, 
       Unit
     ]
   ): Unit = js.native
+  @JSName("off")
+  def off_gutterContextMenu(
+    eventName: gutterContextMenu,
+    handler: js.Function4[
+      /* instance */ this.type, 
+      /* line */ Double, 
+      /* gutter */ String, 
+      /* contextMenu */ MouseEvent, 
+      Unit
+    ]
+  ): Unit = js.native
+  @JSName("off")
+  def off_inputRead(
+    eventName: inputRead,
+    handler: js.Function2[/* instance */ this.type, /* changeObj */ EditorChange, Unit]
+  ): Unit = js.native
+  @JSName("off")
+  def off_keyHandled(
+    eventName: keyHandled,
+    handler: js.Function3[/* instance */ this.type, /* name */ String, /* event */ KeyboardEvent, Unit]
+  ): Unit = js.native
+  @JSName("off")
+  def off_optionChange(
+    eventName: optionChange,
+    handler: js.Function2[/* instance */ this.type, /* option */ String, Unit]
+  ): Unit = js.native
+  @JSName("off")
+  def off_refresh(eventName: refresh, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   @JSName("off")
   def off_renderLine(
     eventName: renderLine,
@@ -377,6 +418,13 @@ trait Editor extends Doc {
   ): Unit = js.native
   @JSName("off")
   def off_scroll(eventName: scroll, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  @JSName("off")
+  def off_scrollCursorIntoView(
+    eventName: scrollCursorIntoView,
+    handler: js.Function2[/* instance */ this.type, /* event */ Event, Unit]
+  ): Unit = js.native
+  @JSName("off")
+  def off_swapDoc(eventName: swapDoc, handler: js.Function2[/* instance */ this.type, /* oldDoc */ Doc, Unit]): Unit = js.native
   @JSName("off")
   def off_update(eventName: update, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   @JSName("off")
@@ -407,7 +455,7 @@ trait Editor extends Doc {
   @JSName("on")
   def on_beforeChange(
     eventName: beforeChange,
-    handler: js.Function2[/* instance */ this.type, /* change */ EditorChangeCancellable, Unit]
+    handler: js.Function2[/* instance */ this.type, /* changeObj */ EditorChangeCancellable, Unit]
   ): Unit = js.native
   /** This event is fired before the selection is moved. Its handler may modify the resulting selection head and anchor.
     Handlers for this event have the same restriction as "beforeChange" handlers they should not do anything to directly update the state of the editor. */
@@ -418,12 +466,12 @@ trait Editor extends Doc {
   ): Unit = js.native
   /** Fires whenever the editor is unfocused. */
   @JSName("on")
-  def on_blur(eventName: blur, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  def on_blur(eventName: blur, handler: js.Function2[/* instance */ this.type, /* event */ FocusEvent, Unit]): Unit = js.native
   /** Fires every time the content of the editor is changed. */
   @JSName("on")
   def on_change(
     eventName: change,
-    handler: js.Function2[/* instance */ this.type, /* change */ EditorChangeLinkedList, Unit]
+    handler: js.Function2[/* instance */ this.type, /* changeObj */ EditorChangeLinkedList, Unit]
   ): Unit = js.native
   /** Like the "change" event, but batched per operation, passing an
     * array containing all the changes that happened in the operation.
@@ -432,14 +480,17 @@ trait Editor extends Doc {
   @JSName("on")
   def on_changes(
     eventName: changes,
-    handler: js.Function2[/* instance */ this.type, /* change */ js.Array[EditorChangeLinkedList], Unit]
+    handler: js.Function2[/* instance */ this.type, /* changes */ js.Array[EditorChangeLinkedList], Unit]
   ): Unit = js.native
   /** Will be fired when the cursor or selection moves, or any change is made to the editor content. */
   @JSName("on")
   def on_cursorActivity(eventName: cursorActivity, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  /** Fired if text input matched the mode's electric patterns, and this caused the line's indentation to change. */
+  @JSName("on")
+  def on_electricInput(eventName: electricInput, handler: js.Function2[/* instance */ this.type, /* line */ Double, Unit]): Unit = js.native
   /** Fires whenever the editor is focused. */
   @JSName("on")
-  def on_focus(eventName: focus, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  def on_focus(eventName: focus, handler: js.Function2[/* instance */ this.type, /* event */ FocusEvent, Unit]): Unit = js.native
   /** Fires when the editor gutter (the line-number area) is clicked. Will pass the editor instance as first argument,
     the (zero-based) number of the line that was clicked as second argument, the CSS class of the gutter that was clicked as third argument,
     and the raw mousedown event object as fourth argument. */
@@ -450,9 +501,42 @@ trait Editor extends Doc {
       /* instance */ this.type, 
       /* line */ Double, 
       /* gutter */ String, 
-      /* clickEvent */ Event, 
+      /* clickEvent */ MouseEvent, 
       Unit
     ]
+  ): Unit = js.native
+  /** Fires when the editor gutter (the line-number area) receives a contextmenu event. Will pass the editor instance as first argument,
+    the (zero-based) number of the line that was clicked as second argument, the CSS class of the gutter that was clicked as third argument,
+    and the raw contextmenu mouse event object as fourth argument. You can preventDefault the event, to signal that CodeMirror should do no
+    further handling. */
+  @JSName("on")
+  def on_gutterContextMenu(
+    eventName: gutterContextMenu,
+    handler: js.Function4[
+      /* instance */ this.type, 
+      /* line */ Double, 
+      /* gutter */ String, 
+      /* contextMenu */ MouseEvent, 
+      Unit
+    ]
+  ): Unit = js.native
+  /** Fired whenever new input is read from the hidden textarea (typed or pasted by the user). */
+  @JSName("on")
+  def on_inputRead(
+    eventName: inputRead,
+    handler: js.Function2[/* instance */ this.type, /* changeObj */ EditorChange, Unit]
+  ): Unit = js.native
+  /** Fired after a key is handled through a key map. name is the name of the handled key (for example "Ctrl-X" or "'q'"), and event is the DOM keydown or keypress event. */
+  @JSName("on")
+  def on_keyHandled(
+    eventName: keyHandled,
+    handler: js.Function3[/* instance */ this.type, /* name */ String, /* event */ KeyboardEvent, Unit]
+  ): Unit = js.native
+  /** Dispatched every time an option is changed with setOption. */
+  @JSName("on")
+  def on_optionChange(
+    eventName: optionChange,
+    handler: js.Function2[/* instance */ this.type, /* option */ String, Unit]
   ): Unit = js.native
   /** Fires when the overwrite flag is flipped. */
   @JSName("on")
@@ -460,6 +544,9 @@ trait Editor extends Doc {
     eventName: overwriteToggle,
     handler: js.Function2[/* instance */ this.type, /* overwrite */ Boolean, Unit]
   ): Unit = js.native
+  /** Fires when the editor is refreshed or resized. Mostly useful to invalidate cached values that depend on the editor or character size. */
+  @JSName("on")
+  def on_refresh(eventName: refresh, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
   /** Fired whenever a line is (re-)rendered to the DOM. Fired right after the DOM element is built, before it is added to the document.
     The handler may mess with the style of the resulting element, or add event handlers, but should not try to change the state of the editor. */
   @JSName("on")
@@ -470,6 +557,15 @@ trait Editor extends Doc {
   /** Fires when the editor is scrolled. */
   @JSName("on")
   def on_scroll(eventName: scroll, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  /** Fires when the editor tries to scroll its cursor into view. Can be hooked into to take care of additional scrollable containers around the editor. When the event object has its preventDefault method called, CodeMirror will not itself try to scroll the window. */
+  @JSName("on")
+  def on_scrollCursorIntoView(
+    eventName: scrollCursorIntoView,
+    handler: js.Function2[/* instance */ this.type, /* event */ Event, Unit]
+  ): Unit = js.native
+  /** This is signalled when the editor's document is replaced using the swapDoc method. */
+  @JSName("on")
+  def on_swapDoc(eventName: swapDoc, handler: js.Function2[/* instance */ this.type, /* oldDoc */ Doc, Unit]): Unit = js.native
   /** Will be fired whenever CodeMirror updates its DOM display. */
   @JSName("on")
   def on_update(eventName: update, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native

@@ -1,10 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorPickerDotBaseMod
 
-import typings.officeDashUiDashFabricDashReact.Anon_AlphaLabel
 import typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorPickerDotTypesMod.IColorPicker
 import typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesColorInterfacesMod.IColor
 import typings.react.reactMod.Component
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,13 @@ class ColorPickerBase protected ()
   var _onHChanged: js.Any = js.native
   var _onSVChanged: js.Any = js.native
   var _onTextChange: js.Any = js.native
+  /** Strings besides red/green/blue/alpha/hex */
+  var _strings: js.Any = js.native
   var _textChangeHandlers: js.Any = js.native
+  /**
+    * Strings displayed in the UI as text field labels (these are in a separate object for convenient
+    * indexing by short color component name).
+    */
   var _textLabels: js.Any = js.native
   /**
     * Update the displayed color and call change handlers if appropriate.
@@ -32,14 +38,14 @@ class ColorPickerBase protected ()
   /** The currently selected color. */
   /* CompleteClass */
   override var color: IColor = js.native
-  @JSName("UNSAFE_componentWillReceiveProps")
-  def UNSAFE_componentWillReceiveProps_MColorPickerBase(newProps: IColorPickerProps): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MColorPickerBase(prevProps: IColorPickerProps, prevState: IColorPickerState): Unit = js.native
 }
 
 /* static members */
 @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.base", "ColorPickerBase")
 @js.native
 object ColorPickerBase extends js.Object {
-  var defaultProps: Anon_AlphaLabel = js.native
+  var defaultProps: Partial[IColorPickerProps] = js.native
 }
 

@@ -7,6 +7,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A master in a presentation.
+  *
+  * Masters contains all common page elements and the common properties for a set of layouts. They
+  * serve three purposes:
+  *
+  * Placeholder shapes on a master contain the default text styles and shape properties of all
+  *       placeholder shapes on pages that use that master.
+  *
+  * The properties of a master page define the common page properties inherited by its layouts.
+  *
+  * Any other shapes on the master slide appear on all slides using that master, regardless of
+  *       their layout.
+  */
 @js.native
 trait Master extends js.Object {
   def getBackground(): PageBackground = js.native

@@ -7,6 +7,33 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait FontFamily extends js.Object
 
+/**
+  *
+  * Deprecated. The methods getFontFamily() and setFontFamily(String) now use string
+  *     names for fonts instead of this enum. Although this enum is deprecated, it will remain
+  *     available for compatibility with older scripts.
+  * An enumeration of the supported fonts.
+  *
+  * Use the FontFamily enumeration to set the font for a range of text, element or
+  * document.
+  *
+  *     var body = DocumentApp.getActiveDocument().getBody();
+  *
+  *     // Insert a paragraph at the start of the document.
+  *     body.insertParagraph(0, "Hello, Apps Script!");
+  *
+  *     // Set the document font to Calibri.
+  *     body.editAsText().setFontFamily(DocumentApp.FontFamily.CALIBRI);
+  *
+  *     // Set the first paragraph font to Arial.
+  *     body.getParagraphs()[0].setFontFamily(DocumentApp.FontFamily.ARIAL);
+  *
+  *     // Set "Apps Script" to Comic Sans MS.
+  *     var text = 'Apps Script';
+  *     var a = body.getText().indexOf(text);
+  *     var b = a + text.length - 1;
+  *     body.editAsText().setFontFamily(a, b, DocumentApp.FontFamily.COMIC_SANS_MS);
+  */
 @JSGlobal("GoogleAppsScript.Document.FontFamily")
 @js.native
 object FontFamily extends js.Object {

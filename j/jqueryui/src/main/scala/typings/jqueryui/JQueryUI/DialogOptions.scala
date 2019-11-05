@@ -1,6 +1,7 @@
 package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jquery.JQueryEventObject
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,20 +43,20 @@ object DialogOptions {
   def apply(
     appendTo: String = null,
     autoOpen: js.UndefOr[Boolean] = js.undefined,
-    beforeClose: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
+    beforeClose: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
     buttons: (StringDictionary[js.Function1[/* event */ js.UndefOr[Event], Unit]]) | js.Array[DialogButtonOptions] = null,
     classes: DialogClasses = null,
-    close: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
+    close: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
     closeOnEscape: js.UndefOr[Boolean] = js.undefined,
     closeText: String = null,
-    create: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
     dialogClass: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    drag: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
-    dragStart: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
-    dragStop: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
+    drag: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    dragStart: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    dragStop: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    focus: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
+    focus: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
     height: Double | String = null,
     hide: Boolean | Double | String | DialogShowHideOptions = null,
     maxHeight: Int | Double = null,
@@ -63,12 +64,12 @@ object DialogOptions {
     minHeight: Int | Double = null,
     minWidth: Int | Double = null,
     modal: js.UndefOr[Boolean] = js.undefined,
-    open: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
+    open: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
     position: js.Any = null,
     resizable: js.UndefOr[Boolean] = js.undefined,
-    resize: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
-    resizeStart: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
-    resizeStop: (/* event */ typings.jquery.JQuery.Event, /* ui */ DialogUIParams) => Unit = null,
+    resize: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    resizeStart: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    resizeStop: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
     show: Boolean | Double | String | DialogShowHideOptions = null,
     stack: js.UndefOr[Boolean] = js.undefined,
     title: String = null,

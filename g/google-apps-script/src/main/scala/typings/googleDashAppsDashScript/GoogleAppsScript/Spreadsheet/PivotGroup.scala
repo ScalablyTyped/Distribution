@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify pivot table breakout groups.
+  */
 trait PivotGroup extends js.Object {
   def addManualGroupingRule(groupName: String, groupMembers: js.Array[_]): PivotGroup
   def areLabelsRepeated(): Boolean

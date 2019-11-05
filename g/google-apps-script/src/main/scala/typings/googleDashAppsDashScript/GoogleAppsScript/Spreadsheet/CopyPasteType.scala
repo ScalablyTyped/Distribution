@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait CopyPasteType extends js.Object
 
+/**
+  * An enumeration of possible special paste types.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.CopyPasteType")
 @js.native
 object CopyPasteType extends js.Object {

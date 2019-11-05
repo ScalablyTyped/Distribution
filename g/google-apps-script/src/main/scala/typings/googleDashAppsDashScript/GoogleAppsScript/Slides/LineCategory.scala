@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait LineCategory extends js.Object
 
+/**
+  * The line category.
+  *
+  * The exact LineType created is determined based on the category and how it's routed to
+  * connect to other page elements.
+  */
 @JSGlobal("GoogleAppsScript.Slides.LineCategory")
 @js.native
 object LineCategory extends js.Object {

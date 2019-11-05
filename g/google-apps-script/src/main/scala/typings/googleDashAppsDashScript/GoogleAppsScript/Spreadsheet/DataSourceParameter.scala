@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access existing data source parameters.
+  */
 trait DataSourceParameter extends js.Object {
   def getName(): String
   def getSourceCell(): String | Null

@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The connection site on a PageElement that can connect to a connector.
+  */
 trait ConnectionSite extends js.Object {
   def getIndex(): Integer
   def getPageElement(): PageElement

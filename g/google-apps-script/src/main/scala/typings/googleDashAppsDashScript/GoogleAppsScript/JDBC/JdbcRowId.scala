@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC RowId. For documentation of this class, see java.sql.RowId
+  * .
+  */
 trait JdbcRowId extends js.Object {
   def getBytes(): js.Array[Byte]
 }

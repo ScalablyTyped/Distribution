@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify existing filters. To create a new filter, use Range.createFilter().
+  */
 @js.native
 trait Filter extends js.Object {
   def getColumnFilterCriteria(columnPosition: Integer): FilterCriteria | Null = js.native

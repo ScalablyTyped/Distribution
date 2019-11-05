@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a footnote section. A FootnoteSection contains the text that
+  * corresponds to a Footnote. The FootnoteSection may contain ListItem or
+  * Paragraph elements. For more information on document structure, see the guide to extending Google Docs.
+  */
 @js.native
 trait FootnoteSection extends js.Object {
   def appendParagraph(paragraph: Paragraph): Paragraph = js.native

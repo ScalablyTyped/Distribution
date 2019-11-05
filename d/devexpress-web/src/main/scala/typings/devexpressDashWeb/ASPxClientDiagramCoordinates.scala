@@ -47,6 +47,8 @@ class ASPxClientDiagramCoordinates () extends js.Object {
     * Gets the argument of the data point as a text string.
     */
   var qualitativeArgument: String = js.native
+  var timeSpanArgument: js.Any = js.native
+  var timeSpanValue: js.Any = js.native
   /**
     * Gets the type of the value scale.
     */

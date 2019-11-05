@@ -7,6 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A layout in a presentation.
+  *
+  * Each layout serves as a template for slides that inherit from it, determining how content on
+  * those slides is arranged and styled.
+  */
 @js.native
 trait Layout extends js.Object {
   def getBackground(): PageBackground = js.native

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait VideoSourceType extends js.Object
 
+/**
+  * The video source types.
+  */
 @JSGlobal("GoogleAppsScript.Slides.VideoSourceType")
 @js.native
 object VideoSourceType extends js.Object {

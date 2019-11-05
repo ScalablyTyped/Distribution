@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for Card objects.
+  */
 trait CardBuilder extends js.Object {
   def addCardAction(cardAction: CardAction): CardBuilder
   def addSection(section: CardSection): CardBuilder

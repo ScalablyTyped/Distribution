@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for form triggers.
+  */
 trait FormTriggerBuilder extends js.Object {
   def create(): Trigger
   def onFormSubmit(): FormTriggerBuilder

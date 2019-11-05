@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import typings.jqueryui.Anon_Selected
 import typings.jqueryui.Anon_Selecting
 import typings.jqueryui.Anon_Unselected
@@ -29,13 +29,13 @@ object SelectableOptions {
     disabled: js.UndefOr[Boolean] = js.undefined,
     distance: Int | Double = null,
     filter: String = null,
-    selected: (/* event */ Event, /* ui */ Anon_Selected) => Unit = null,
-    selecting: (/* event */ Event, /* ui */ Anon_Selecting) => Unit = null,
-    start: (/* event */ Event, /* ui */ js.Any) => Unit = null,
-    stop: (/* event */ Event, /* ui */ js.Any) => Unit = null,
+    selected: (/* event */ JQueryEventObject, /* ui */ Anon_Selected) => Unit = null,
+    selecting: (/* event */ JQueryEventObject, /* ui */ Anon_Selecting) => Unit = null,
+    start: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
+    stop: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
     tolerance: String = null,
-    unselected: (/* event */ Event, /* ui */ Anon_Unselected) => Unit = null,
-    unselecting: (/* event */ Event, /* ui */ Anon_Unselecting) => Unit = null
+    unselected: (/* event */ JQueryEventObject, /* ui */ Anon_Unselected) => Unit = null,
+    unselecting: (/* event */ JQueryEventObject, /* ui */ Anon_Unselecting) => Unit = null
   ): SelectableOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh)

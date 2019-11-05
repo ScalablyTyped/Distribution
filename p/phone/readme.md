@@ -1,7 +1,7 @@
 
 # Scala.js typings for phone
 
-Typings are for version 1.0.8
+Typings are for version 2.4.0
 
 ## Library description:
 With a given country and phone number, validate and format the phone number to E.164 standard

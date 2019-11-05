@@ -26,7 +26,7 @@ trait Anon_Alternatives extends js.Object {
   var function: FunctionSchema
   var link: LinkSchema
   var number: NumberSchema
-  var `object`: ObjectSchema
+  var `object`: ObjectSchema[_]
   var string: StringSchema
   var symbol: SymbolSchema
 }
@@ -43,7 +43,7 @@ object Anon_Alternatives {
     function: FunctionSchema,
     link: LinkSchema,
     number: NumberSchema,
-    `object`: ObjectSchema,
+    `object`: ObjectSchema[_],
     string: StringSchema,
     symbol: SymbolSchema
   ): Anon_Alternatives = {

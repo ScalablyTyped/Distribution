@@ -5,6 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to indicate a length of time. Items can be accessed or
+  * created from a Form. When used in a quiz, these items are graded.
+  *
+  *     // Open a form by ID and add a new duration item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addDurationItem();
+  *     item.setTitle('How long can you hold your breath?');
+  */
 trait DurationItem extends js.Object {
   def createResponse(hours: Integer, minutes: Integer, seconds: Integer): ItemResponse
   def duplicate(): DurationItem

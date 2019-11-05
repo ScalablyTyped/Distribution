@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for FilterCriteria.
+  */
 @js.native
 trait FilterCriteriaBuilder extends js.Object {
   def build(): FilterCriteria = js.native

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait GuestStatus extends js.Object
 
+/**
+  * An enum representing the statuses a guest can have for an event.
+  */
 @JSGlobal("GoogleAppsScript.Calendar.GuestStatus")
 @js.native
 object GuestStatus extends js.Object {

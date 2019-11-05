@@ -4,6 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for AffineTransform objects. Defaults to the identity transform.
+  *
+  * Call AffineTransformBuilder#build() to get the AffineTransform object.
+  *
+  *     var transform =
+  *         SlidesApp.newAffineTransformBuilder().setScaleX(2.0).setShearY(1.1).build();
+  *
+  *     The resulting transform matrix is
+  *       [ 2.0   0.0   0.0 ]
+  *       [ 1.1   1.0   0.0 ]
+  *       [  0     0     1  ]
+  */
 trait AffineTransformBuilder extends js.Object {
   def build(): AffineTransform
   def setScaleX(scaleX: Double): AffineTransformBuilder

@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a region that is unknown or cannot be affected by a script, such as a
+  * page number.
+  */
 trait UnsupportedElement extends js.Object {
   def copy(): UnsupportedElement
   def getAttributes(): js.Any

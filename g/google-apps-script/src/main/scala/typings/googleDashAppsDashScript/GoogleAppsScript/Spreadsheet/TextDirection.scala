@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait TextDirection extends js.Object
 
+/**
+  * An enumerations of text directions.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.TextDirection")
 @js.native
 object TextDirection extends js.Object {

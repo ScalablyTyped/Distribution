@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-openapi
 
-Typings are for version 0.11.x
+Typings are for version 5.0.0
 
 ## Library description:
 An unopinionated OpenAPI framework for express
@@ -24,7 +24,7 @@ An unopinionated OpenAPI framework for express
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

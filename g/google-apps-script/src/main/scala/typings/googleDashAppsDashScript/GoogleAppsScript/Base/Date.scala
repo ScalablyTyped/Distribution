@@ -5,6 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Apps Script has a non-standard Date Class
+  *
+  * @see https://github.com/microsoft/TypeScript/blob/master/lib/lib.es5.d.ts
+  * Enables basic storage and retrieval of dates and times.
+  */
 @js.native
 trait Date extends js.Object {
   /** Gets the day-of-the-month, using local time. */

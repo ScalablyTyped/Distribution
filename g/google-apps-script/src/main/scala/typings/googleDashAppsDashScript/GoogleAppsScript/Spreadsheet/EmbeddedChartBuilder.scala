@@ -8,6 +8,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder used to edit an EmbeddedChart. Changes made to the chart are not saved until
+  * Sheet.updateChart(chart) is called on the rebuilt chart.
+  *
+  *     var sheet = SpreadsheetApp.getActiveSheet();
+  *     var range = sheet.getRange("A1:B8");
+  *     var chart = sheet.getCharts()[0];
+  *     chart = chart.modify()
+  *         .addRange(range)
+  *         .setOption('title', 'Updated!')
+  *         .setOption('animation.duration', 500)
+  *         .setPosition(2,2,0,0)
+  *         .build();
+  *     sheet.updateChart(chart);
+  */
 trait EmbeddedChartBuilder extends js.Object {
   def addRange(range: Range): EmbeddedChartBuilder
   def asAreaChart(): EmbeddedAreaChartBuilder

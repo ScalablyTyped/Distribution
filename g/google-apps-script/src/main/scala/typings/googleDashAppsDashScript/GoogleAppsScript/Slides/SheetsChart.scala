@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A PageElement representing a linked chart embedded from Google Sheets.
+  */
 @js.native
 trait SheetsChart extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): SheetsChart = js.native

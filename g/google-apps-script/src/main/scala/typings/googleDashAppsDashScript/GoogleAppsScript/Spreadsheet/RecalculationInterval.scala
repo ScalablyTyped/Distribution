@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait RecalculationInterval extends js.Object
 
+/**
+  * An enumeration representing the possible intervals used in spreadsheet recalculation.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.RecalculationInterval")
 @js.native
 object RecalculationInterval extends js.Object {

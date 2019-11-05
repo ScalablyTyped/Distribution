@@ -18,17 +18,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactImageGalleryProps extends js.Object {
+  var additionalClass: js.UndefOr[String] = js.undefined
   var autoPlay: js.UndefOr[Boolean] = js.undefined
-  var defaultImage: js.UndefOr[String] = js.undefined
   var disableArrowKeys: js.UndefOr[Boolean] = js.undefined
   var disableSwipe: js.UndefOr[Boolean] = js.undefined
   var disableThumbnailScroll: js.UndefOr[Boolean] = js.undefined
   var flickThreshold: js.UndefOr[Double] = js.undefined
   var indexSeparator: js.UndefOr[String] = js.undefined
   var infinite: js.UndefOr[Boolean] = js.undefined
+  var isRTL: js.UndefOr[Boolean] = js.undefined
   var items: js.Array[ReactImageGalleryItem]
   var lazyLoad: js.UndefOr[Boolean] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
+  var onErrorImage: js.UndefOr[String] = js.undefined
   var onImageError: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
   var onImageLoad: js.UndefOr[js.Function1[/* event */ ReactEventHandler[HTMLImageElement], Unit]] = js.undefined
   var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEventHandler[HTMLDivElement], Unit]] = js.undefined
@@ -59,7 +61,6 @@ trait ReactImageGalleryProps extends js.Object {
   var renderRightNav: js.UndefOr[
     js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean, ReactNode]
   ] = js.undefined
-  var renderThumbInner: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.undefined
   var showBullets: js.UndefOr[Boolean] = js.undefined
   var showFullscreenButton: js.UndefOr[Boolean] = js.undefined
   var showIndex: js.UndefOr[Boolean] = js.undefined
@@ -75,22 +76,25 @@ trait ReactImageGalleryProps extends js.Object {
   var swipingTransitionDuration: js.UndefOr[Double] = js.undefined
   var thumbnailPosition: js.UndefOr[top | right | bottom | left] = js.undefined
   var useBrowserFullscreen: js.UndefOr[Boolean] = js.undefined
+  var useTranslate3D: js.UndefOr[Boolean] = js.undefined
 }
 
 object ReactImageGalleryProps {
   @scala.inline
   def apply(
     items: js.Array[ReactImageGalleryItem],
+    additionalClass: String = null,
     autoPlay: js.UndefOr[Boolean] = js.undefined,
-    defaultImage: String = null,
     disableArrowKeys: js.UndefOr[Boolean] = js.undefined,
     disableSwipe: js.UndefOr[Boolean] = js.undefined,
     disableThumbnailScroll: js.UndefOr[Boolean] = js.undefined,
     flickThreshold: Int | Double = null,
     indexSeparator: String = null,
     infinite: js.UndefOr[Boolean] = js.undefined,
+    isRTL: js.UndefOr[Boolean] = js.undefined,
     lazyLoad: js.UndefOr[Boolean] = js.undefined,
     onClick: /* event */ MouseEventHandler[HTMLDivElement] => Unit = null,
+    onErrorImage: String = null,
     onImageError: /* event */ ReactEventHandler[HTMLImageElement] => Unit = null,
     onImageLoad: /* event */ ReactEventHandler[HTMLImageElement] => Unit = null,
     onMouseLeave: /* event */ MouseEventHandler[HTMLDivElement] => Unit = null,
@@ -111,7 +115,6 @@ object ReactImageGalleryProps {
     renderLeftNav: (/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean) => ReactNode = null,
     renderPlayPauseButton: (/* onClick */ MouseEventHandler[HTMLElement], /* isPlaying */ Boolean) => ReactNode = null,
     renderRightNav: (/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean) => ReactNode = null,
-    renderThumbInner: /* item */ ReactImageGalleryItem => ReactNode = null,
     showBullets: js.UndefOr[Boolean] = js.undefined,
     showFullscreenButton: js.UndefOr[Boolean] = js.undefined,
     showIndex: js.UndefOr[Boolean] = js.undefined,
@@ -126,19 +129,22 @@ object ReactImageGalleryProps {
     swipeThreshold: Int | Double = null,
     swipingTransitionDuration: Int | Double = null,
     thumbnailPosition: top | right | bottom | left = null,
-    useBrowserFullscreen: js.UndefOr[Boolean] = js.undefined
+    useBrowserFullscreen: js.UndefOr[Boolean] = js.undefined,
+    useTranslate3D: js.UndefOr[Boolean] = js.undefined
   ): ReactImageGalleryProps = {
     val __obj = js.Dynamic.literal(items = items)
+    if (additionalClass != null) __obj.updateDynamic("additionalClass")(additionalClass)
     if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
-    if (defaultImage != null) __obj.updateDynamic("defaultImage")(defaultImage)
     if (!js.isUndefined(disableArrowKeys)) __obj.updateDynamic("disableArrowKeys")(disableArrowKeys)
     if (!js.isUndefined(disableSwipe)) __obj.updateDynamic("disableSwipe")(disableSwipe)
     if (!js.isUndefined(disableThumbnailScroll)) __obj.updateDynamic("disableThumbnailScroll")(disableThumbnailScroll)
     if (flickThreshold != null) __obj.updateDynamic("flickThreshold")(flickThreshold.asInstanceOf[js.Any])
     if (indexSeparator != null) __obj.updateDynamic("indexSeparator")(indexSeparator)
     if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
+    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL)
     if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (onErrorImage != null) __obj.updateDynamic("onErrorImage")(onErrorImage)
     if (onImageError != null) __obj.updateDynamic("onImageError")(js.Any.fromFunction1(onImageError))
     if (onImageLoad != null) __obj.updateDynamic("onImageLoad")(js.Any.fromFunction1(onImageLoad))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
@@ -159,7 +165,6 @@ object ReactImageGalleryProps {
     if (renderLeftNav != null) __obj.updateDynamic("renderLeftNav")(js.Any.fromFunction2(renderLeftNav))
     if (renderPlayPauseButton != null) __obj.updateDynamic("renderPlayPauseButton")(js.Any.fromFunction2(renderPlayPauseButton))
     if (renderRightNav != null) __obj.updateDynamic("renderRightNav")(js.Any.fromFunction2(renderRightNav))
-    if (renderThumbInner != null) __obj.updateDynamic("renderThumbInner")(js.Any.fromFunction1(renderThumbInner))
     if (!js.isUndefined(showBullets)) __obj.updateDynamic("showBullets")(showBullets)
     if (!js.isUndefined(showFullscreenButton)) __obj.updateDynamic("showFullscreenButton")(showFullscreenButton)
     if (!js.isUndefined(showIndex)) __obj.updateDynamic("showIndex")(showIndex)
@@ -175,6 +180,7 @@ object ReactImageGalleryProps {
     if (swipingTransitionDuration != null) __obj.updateDynamic("swipingTransitionDuration")(swipingTransitionDuration.asInstanceOf[js.Any])
     if (thumbnailPosition != null) __obj.updateDynamic("thumbnailPosition")(thumbnailPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(useBrowserFullscreen)) __obj.updateDynamic("useBrowserFullscreen")(useBrowserFullscreen)
+    if (!js.isUndefined(useTranslate3D)) __obj.updateDynamic("useTranslate3D")(useTranslate3D)
     __obj.asInstanceOf[ReactImageGalleryProps]
   }
 }

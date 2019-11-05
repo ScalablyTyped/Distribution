@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "peerjs-js-binarypack" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "peerjs-js-binarypack" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

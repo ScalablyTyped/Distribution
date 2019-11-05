@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The builder for BigQueryDataSourceSpecBuilder.
+  */
 trait BigQueryDataSourceSpecBuilder extends js.Object {
   def build(): DataSourceSpec
   def copy(): DataSourceSpecBuilder

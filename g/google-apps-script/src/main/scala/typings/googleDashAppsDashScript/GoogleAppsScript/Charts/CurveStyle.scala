@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait CurveStyle extends js.Object
 
+/**
+  * An enumeration of the styles for curves in a chart.
+  */
 @JSGlobal("GoogleAppsScript.Charts.CurveStyle")
 @js.native
 object CurveStyle extends js.Object {

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait PivotTableSummarizeFunction extends js.Object
 
+/**
+  * An enumeration of functions that summarize pivot table data.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction")
 @js.native
 object PivotTableSummarizeFunction extends js.Object {

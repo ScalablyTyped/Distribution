@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +16,11 @@ trait TabsEvents extends js.Object {
 object TabsEvents {
   @scala.inline
   def apply(
-    activate: (/* event */ Event, TabsActivationUIParams) => Unit = null,
-    beforeActivate: (/* event */ Event, TabsActivationUIParams) => Unit = null,
-    beforeLoad: (/* event */ Event, TabsBeforeLoadUIParams) => Unit = null,
-    create: (/* event */ Event, TabsCreateOrLoadUIParams) => Unit = null,
-    load: (/* event */ Event, TabsCreateOrLoadUIParams) => Unit = null
+    activate: (/* event */ JQueryEventObject, TabsActivationUIParams) => Unit = null,
+    beforeActivate: (/* event */ JQueryEventObject, TabsActivationUIParams) => Unit = null,
+    beforeLoad: (/* event */ JQueryEventObject, TabsBeforeLoadUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, TabsCreateOrLoadUIParams) => Unit = null,
+    load: (/* event */ JQueryEventObject, TabsCreateOrLoadUIParams) => Unit = null
   ): TabsEvents = {
     val __obj = js.Dynamic.literal()
     if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))

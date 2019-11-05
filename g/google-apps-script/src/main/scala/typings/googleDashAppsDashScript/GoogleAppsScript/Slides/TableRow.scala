@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A row in a table. A row consists of a list of table cells. A row is identified by the row index.
+  */
 trait TableRow extends js.Object {
   def getCell(cellIndex: Integer): TableCell
   def getIndex(): Integer

@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Type extends js.Object
 
+/**
+  * An enum representing the type of map to render.
+  * See also
+  *
+  * Google Static Maps API
+  */
 @JSGlobal("GoogleAppsScript.Maps.Type")
 @js.native
 object Type extends js.Object {

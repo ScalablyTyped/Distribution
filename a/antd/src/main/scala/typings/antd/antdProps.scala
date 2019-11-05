@@ -2,6 +2,7 @@ package typings.antd
 
 import typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps
 import typings.antd.esDropdownDropdownMod.DropDownProps
+import typings.antd.esInputClearableLabeledInputMod.ClearableInputProps
 import typings.antd.esLayoutLayoutMod.BasicProps
 import typings.antd.esLayoutSiderMod.SiderProps
 import typings.antd.esListItemMod.ListItemMetaProps
@@ -99,6 +100,9 @@ trait antdProps {
   @scala.inline
   def CheckboxProps: typings.antd.esCheckboxCheckboxMod.CheckboxProps.type = typings.antd.esCheckboxCheckboxMod.CheckboxProps
   type CheckboxProps = typings.antd.esCheckboxCheckboxMod.CheckboxProps
+  @scala.inline
+  def ClearableLabeledInputProps: ClearableInputProps.type = typings.antd.esInputClearableLabeledInputMod.ClearableInputProps
+  type ClearableLabeledInputProps = ClearableInputProps
   @scala.inline
   def ColProps: typings.antd.esGridColMod.ColProps.type = typings.antd.esGridColMod.ColProps
   type ColProps = typings.antd.esGridColMod.ColProps
@@ -282,6 +286,9 @@ trait antdProps {
   @scala.inline
   def RateProps: typings.antd.esRateMod.RateProps.type = typings.antd.esRateMod.RateProps
   type RateProps = typings.antd.esRateMod.RateProps
+  @scala.inline
+  def ResizableTextAreaProps: typings.antd.esInputTextAreaMod.TextAreaProps.type = typings.antd.esInputTextAreaMod.TextAreaProps
+  type ResizableTextAreaProps = typings.antd.esInputTextAreaMod.TextAreaProps
   @scala.inline
   def ResultProps: typings.antd.esResultMod.ResultProps.type = typings.antd.esResultMod.ResultProps
   type ResultProps = typings.antd.esResultMod.ResultProps

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait VariableType extends js.Object
 
+/**
+  * Type of variables created by the engine.
+  */
 @JSGlobal("GoogleAppsScript.Optimization.VariableType")
 @js.native
 object VariableType extends js.Object {

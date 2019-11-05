@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phone"
-version := "1.0.8-dt-20190322Z-ceecd3"
+version := "2.4.0-dt-20191104Z-ad17ff"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

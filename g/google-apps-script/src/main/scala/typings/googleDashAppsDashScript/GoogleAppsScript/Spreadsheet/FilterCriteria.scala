@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access filter criteria. To create a new criteria, use SpreadsheetApp.newFilterCriteria() and FilterCriteriaBuilder.
+  */
 trait FilterCriteria extends js.Object {
   def copy(): FilterCriteriaBuilder
   def getCriteriaType(): BooleanCriteria

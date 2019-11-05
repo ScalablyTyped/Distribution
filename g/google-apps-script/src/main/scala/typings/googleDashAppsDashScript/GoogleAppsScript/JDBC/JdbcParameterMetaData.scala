@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC ParameterMetaData. For documentation of this class, see
+  * java.sql.ParameterMetaData.
+  */
 trait JdbcParameterMetaData extends js.Object {
   def getParameterClassName(param: Integer): String
   def getParameterCount(): Integer

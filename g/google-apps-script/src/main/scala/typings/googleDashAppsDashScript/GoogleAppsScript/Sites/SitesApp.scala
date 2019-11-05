@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Create and access Google Sites.
+  * A rebuilt
+  * version of Sites was launched on November 22, 2016. Apps Script cannot currently access or
+  * modify Sites made with this version, but script can still access
+  * classic Sites.
+  */
 @js.native
 trait SitesApp extends js.Object {
   var AttachmentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AttachmentType */ js.Any = js.native

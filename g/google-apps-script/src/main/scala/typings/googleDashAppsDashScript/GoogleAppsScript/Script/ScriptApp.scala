@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and manipulate script publishing and triggers. This class allows users to create script
+  * triggers and control publishing the script as a service.
+  */
 @js.native
 trait ScriptApp extends js.Object {
   var AuthMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthMode */ js.Any = js.native

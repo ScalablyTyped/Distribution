@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The Session class provides access to session information, such as the user's email address (in
+  * some circumstances) and language setting.
+  */
 trait Session extends js.Object {
   def getActiveUser(): User
   def getActiveUserLocale(): String

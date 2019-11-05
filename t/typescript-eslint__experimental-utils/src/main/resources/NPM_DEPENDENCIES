@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@typescript-eslint/experimental-utils" : "2.6.0"
+      "@typescript-eslint/experimental-utils" : "2.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@typescript-eslint/experimental-utils" : "2.6.0"
+      "@typescript-eslint/experimental-utils" : "2.6.1"
     }
   ],
   "compile-devDependencies" : [

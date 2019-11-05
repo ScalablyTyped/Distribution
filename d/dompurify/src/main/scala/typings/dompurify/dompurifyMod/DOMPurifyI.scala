@@ -3,12 +3,14 @@ package typings.dompurify.dompurifyMod
 import typings.dompurify.Anon_False
 import typings.dompurify.Anon_RETURNDOM
 import typings.dompurify.Anon_RETURNDOMFRAGMENT
+import typings.dompurify.Anon_RETURNTRUSTEDTYPE
 import typings.dompurify.dompurifyStrings.uponSanitizeAttribute
 import typings.dompurify.dompurifyStrings.uponSanitizeElement
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Node
+import typings.trustedDashTypes.trustedDashTypesMod._Global_.TrustedHTML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,9 +50,13 @@ trait DOMPurifyI extends js.Object {
   def removeHook(entryPoint: HookName): Unit = js.native
   def removeHooks(entryPoint: HookName): Unit = js.native
   def sanitize(source: String): String = js.native
-  def sanitize(source: String, config: Config with Anon_RETURNDOMFRAGMENT): DocumentFragment = js.native
+  def sanitize(source: String, config: Config with Anon_RETURNTRUSTEDTYPE): TrustedHTML = js.native
   def sanitize(source: Node): String = js.native
-  def sanitize(source: Node, config: Config with Anon_RETURNDOMFRAGMENT): DocumentFragment = js.native
+  def sanitize(source: Node, config: Config with Anon_RETURNTRUSTEDTYPE): TrustedHTML = js.native
+  @JSName("sanitize")
+  def sanitize_DocumentFragment(source: String, config: Config with Anon_RETURNDOMFRAGMENT): DocumentFragment = js.native
+  @JSName("sanitize")
+  def sanitize_DocumentFragment(source: Node, config: Config with Anon_RETURNDOMFRAGMENT): DocumentFragment = js.native
   @JSName("sanitize")
   def sanitize_HTMLElement(source: String, config: Config with Anon_RETURNDOM): HTMLElement = js.native
   @JSName("sanitize")

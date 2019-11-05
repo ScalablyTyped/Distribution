@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cavy", "hook")
 @js.native
 object hook extends js.Object {
-  def apply[T /* <: js.Object */](component: ComponentClass[WithTestHook[T], ComponentState]): ComponentClass[T, ComponentState] = js.native
+  def apply[P /* <: js.Object */](WrappedComponent: ComponentClass[WithTestHook[P], ComponentState]): ComponentClass[P, ComponentState] = js.native
 }
 

@@ -6,6 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a document body. The Body may contain ListItem, Paragraph, Table, and TableOfContents elements. For more information on document
+  * structure, see the guide to extending
+  * Google Docs.
+  *
+  * The Body typically contains the full document contents except for the HeaderSection, FooterSection, and any FootnoteSection elements.
+  *
+  *     var doc = DocumentApp.getActiveDocument();
+  *     var body = doc.getBody();
+  *
+  *     // Append a paragraph and a page break to the document body section directly.
+  *     body.appendParagraph("A paragraph.");
+  *     body.appendPageBreak();
+  */
 @js.native
 trait Body extends js.Object {
   def appendHorizontalRule(): HorizontalRule = js.native

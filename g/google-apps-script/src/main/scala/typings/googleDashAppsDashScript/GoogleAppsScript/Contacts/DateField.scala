@@ -6,6 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A date field in a Contact.
+  *
+  * This class is only used by the Contacts service, and dates used elsewhere in App Script use
+  * JavaScript's standard
+  * Date object.
+  */
 @js.native
 trait DateField extends js.Object {
   def deleteDateField(): Unit = js.native

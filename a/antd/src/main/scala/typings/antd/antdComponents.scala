@@ -64,6 +64,8 @@ object antdComponents extends antdProps {
   @scala.inline
   def Checkbox: ComponentType[CheckboxProps] = js.constructorOf[typings.antd.esCheckboxMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CheckboxProps]]
   @scala.inline
+  def ClearableLabeledInput: ComponentType[ClearableLabeledInputProps] = js.constructorOf[typings.antd.esInputClearableLabeledInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ClearableLabeledInputProps]]
+  @scala.inline
   def Col: ComponentType[ColProps] = js.constructorOf[typings.antd.esColMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ColProps]]
   @scala.inline
   def Collapse: ComponentType[CollapseProps] = js.constructorOf[typings.antd.esCollapseMod.default].asInstanceOf[typings.react.reactMod.ComponentType[CollapseProps]]
@@ -192,6 +194,8 @@ object antdComponents extends antdProps {
   def RadioButton: ComponentType[RadioButtonProps] = js.constructorOf[typings.antd.esRadioRadioButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RadioButtonProps]]
   @scala.inline
   def Rate: ComponentType[RateProps] = js.constructorOf[typings.antd.esRateMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RateProps]]
+  @scala.inline
+  def ResizableTextArea: ComponentType[ResizableTextAreaProps] = js.constructorOf[typings.antd.esInputResizableTextAreaMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ResizableTextAreaProps]]
   @scala.inline
   def Result: ComponentType[ResultProps] = typings.antd.esResultMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ResultProps]]
   @scala.inline

@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,12 +24,12 @@ trait TooltipOptions extends TooltipEvents {
 object TooltipOptions {
   @scala.inline
   def apply(
-    close: (/* event */ Event, /* ui */ TooltipUIParams) => Unit = null,
+    close: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit = null,
     content: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hide: js.Any = null,
     items: String = null,
-    open: (/* event */ Event, /* ui */ TooltipUIParams) => Unit = null,
+    open: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit = null,
     position: js.Any = null,
     show: js.Any = null,
     tooltipClass: String = null,

@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A helper object that controls card navigation. See the card navigation guide for more details.
+  */
 trait Navigation extends js.Object {
   def popCard(): Navigation
   def popToNamedCard(cardName: String): Navigation

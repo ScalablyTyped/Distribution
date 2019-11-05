@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Field extends js.Object
 
+/**
+  * An enum for contacts fields.
+  */
 @JSGlobal("GoogleAppsScript.Contacts.Field")
 @js.native
 object Field extends js.Object {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cacache"
-version := "12.0-dt-20190823Z-8fe19b"
+version := "12.0-dt-20191105Z-34e0f0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

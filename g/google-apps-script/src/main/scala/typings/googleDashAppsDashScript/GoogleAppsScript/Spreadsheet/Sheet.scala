@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify spreadsheet sheets. Common operations are renaming a sheet and accessing range
+  * objects from the sheet.
+  */
 @js.native
 trait Sheet extends js.Object {
   def activate(): Sheet = js.native

@@ -4,6 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A clickable menu item that is added to the card header menu.
+  *
+  *     var action = CardService.newAction();
+  *     // Finish building the action...
+  *
+  *     var cardAction = CardService.newCardAction()
+  *         .setText("Card action")
+  *         .setOnClickAction(action);
+  */
 trait CardAction extends js.Object {
   def setAuthorizationAction(action: AuthorizationAction): CardAction
   def setComposeAction(action: Action, composedEmailType: ComposedEmailType): CardAction

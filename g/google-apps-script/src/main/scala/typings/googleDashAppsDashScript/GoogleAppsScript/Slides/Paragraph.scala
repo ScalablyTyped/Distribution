@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A segment of text terminated by a newline character.
+  */
 trait Paragraph extends js.Object {
   def getIndex(): Integer
   def getRange(): TextRange

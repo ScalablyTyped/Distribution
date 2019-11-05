@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A representation of an XML DocumentType node.
+  */
 trait DocType extends js.Object {
   def detach(): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content
   def getElementName(): String

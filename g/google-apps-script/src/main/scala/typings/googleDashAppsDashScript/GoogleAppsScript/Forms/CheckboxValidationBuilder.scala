@@ -5,6 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A DataValidationBuilder for a CheckboxValidation.
+  *
+  *     // Add a checkBox item to a form and require exactly two selections.
+  *     var checkBoxItem = form.addCheckboxItem();
+  *     checkBoxItem.setTitle('What two condiments would you like on your hot dog?');
+  *     checkBoxItem.setChoices([
+  *       checkBoxItem.createChoice('Ketchup'),
+  *       checkBoxItem.createChoice('Mustard'),
+  *       checkBoxItem.createChoice('Relish')
+  *     ]);
+  *     var checkBoxValidation = FormApp.createCheckboxValidation()
+  *       .setHelpText(“Select two condiments.”)
+  *       .requireSelectExactly(2)
+  *       .build();
+  *     checkBoxItem.setValidation(checkBoxValidation);
+  */
 trait CheckboxValidationBuilder extends js.Object {
   def requireSelectAtLeast(number: Integer): CheckboxValidationBuilder
   def requireSelectAtMost(number: Integer): CheckboxValidationBuilder

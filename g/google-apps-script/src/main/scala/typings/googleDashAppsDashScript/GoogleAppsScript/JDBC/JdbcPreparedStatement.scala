@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC PreparedStatement. For documentation of this class, see
+  * java.sql.PreparedStatement.
+  */
 @js.native
 trait JdbcPreparedStatement extends js.Object {
   def addBatch(): Unit = js.native

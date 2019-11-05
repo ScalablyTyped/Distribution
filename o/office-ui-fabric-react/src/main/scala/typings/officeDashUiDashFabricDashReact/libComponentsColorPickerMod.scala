@@ -2,6 +2,7 @@ package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps
 import typings.react.reactMod.StatelessComponent
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ object libComponentsColorPickerMod extends js.Object {
   /* static members */
   @js.native
   object ColorPickerBase extends js.Object {
-    var defaultProps: Anon_AlphaLabel = js.native
+    var defaultProps: Partial[IColorPickerProps] = js.native
   }
   
 }

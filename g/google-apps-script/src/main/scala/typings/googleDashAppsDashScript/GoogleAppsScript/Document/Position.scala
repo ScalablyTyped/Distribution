@@ -6,6 +6,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A reference to a location in the document, relative to a specific element. The user's cursor is
+  * represented as a Position, among other uses. Scripts can only access the cursor of the
+  * user who is running the script, and only if the script is bound to the document.
+  *
+  *     // Insert some text at the cursor position and make it bold.
+  *     var cursor = DocumentApp.getActiveDocument().getCursor();
+  *     if (cursor) {
+  *       // Attempt to insert text at the cursor position. If the insertion returns null, the cursor's
+  *       // containing element doesn't allow insertions, so show the user an error message.
+  *       var element = cursor.insertText('ಠ‿ಠ');
+  *       if (element) {
+  *         element.setBold(true);
+  *       } else {
+  *         DocumentApp.getUi().alert('Cannot insert text here.');
+  *       }
+  *     } else {
+  *       DocumentApp.getUi().alert('Cannot find a cursor.');
+  *     }
+  */
 trait Position extends js.Object {
   def getElement(): Element
   def getOffset(): Integer

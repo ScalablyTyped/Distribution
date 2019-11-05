@@ -554,15 +554,20 @@ object Schema extends js.Object {
         * Adds a discriminator type.
         * @param name discriminator model name
         * @param schema discriminator model schema
+        * @param value the string stored in the `discriminatorKey` property
         */
       def discriminator[U /* <: Document */](name: java.lang.String, schema: Schema[_]): Model[U, js.Object] = js.native
+      def discriminator[U /* <: Document */](name: java.lang.String, schema: Schema[_], value: java.lang.String): Model[U, js.Object] = js.native
       /**
         * Adds a discriminator type.
         * @param name discriminator model name
         * @param schema discriminator model schema
+        * @param value the string stored in the `discriminatorKey` property
         */
       @JSName("discriminator")
       def discriminator_U_DocumentM_ModelUObject_M[U /* <: Document */, M /* <: Model[U, js.Object] */](name: java.lang.String, schema: Schema[_]): M = js.native
+      @JSName("discriminator")
+      def discriminator_U_DocumentM_ModelUObject_M[U /* <: Document */, M /* <: Model[U, js.Object] */](name: java.lang.String, schema: Schema[_], value: java.lang.String): M = js.native
     }
     
     /*

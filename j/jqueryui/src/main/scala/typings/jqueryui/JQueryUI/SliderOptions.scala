@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,19 +26,19 @@ object SliderOptions {
   @scala.inline
   def apply(
     animate: js.Any = null,
-    change: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
+    change: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
     classes: SliderClasses = null,
-    create: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     highlight: js.UndefOr[Boolean] = js.undefined,
     max: Int | Double = null,
     min: Int | Double = null,
     orientation: String = null,
     range: js.Any = null,
-    slide: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
-    start: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
+    slide: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
+    start: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
     step: Int | Double = null,
-    stop: (/* event */ Event, /* ui */ SliderUIParams) => Unit = null,
+    stop: (/* event */ JQueryEventObject, /* ui */ SliderUIParams) => Unit = null,
     value: Int | Double = null,
     values: js.Array[Double] = null
   ): SliderOptions = {

@@ -5,6 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  *
+  * Deprecated. This class is deprecated and should not be used in new scripts.
+  * Script Properties are key-value pairs stored by a script in a persistent store. Script Properties
+  * are scoped per script, regardless of which user runs the script.
+  */
 @js.native
 trait ScriptProperties extends js.Object {
   def deleteAllProperties(): ScriptProperties = js.native

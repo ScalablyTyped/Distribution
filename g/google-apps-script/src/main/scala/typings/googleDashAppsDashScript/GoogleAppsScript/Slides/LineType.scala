@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait LineType extends js.Object
 
+/**
+  * The line types.
+  *
+  * Derived from a subset of the values of the "ST_ShapeType" simple type in section 20.1.10.55 of
+  * "Office Open XML File Formats - Fundamentals and Markup Language Reference", part 1 of ECMA-376 4th
+  * edition.
+  */
 @JSGlobal("GoogleAppsScript.Slides.LineType")
 @js.native
 object LineType extends js.Object {

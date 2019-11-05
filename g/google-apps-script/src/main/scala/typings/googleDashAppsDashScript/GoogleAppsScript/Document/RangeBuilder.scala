@@ -5,6 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder used to construct Range objects from document elements.
+  *
+  *     // Change the user's selection to a range that includes every table in the document.
+  *     var doc = DocumentApp.getActiveDocument();
+  *     var rangeBuilder = doc.newRange();
+  *     var tables = doc.getBody().getTables();
+  *     for (var i = 0; i < tables.length; i++) {
+  *       rangeBuilder.addElement(tables[i]);
+  *     }
+  *     doc.setSelection(rangeBuilder.build());
+  */
 @js.native
 trait RangeBuilder extends js.Object {
   def addElement(element: Element): RangeBuilder = js.native

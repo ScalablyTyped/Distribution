@@ -67,5 +67,5 @@ package object atHapiHapiMod {
   type ServerMethod = js.Function1[/* repeated */ js.Any, js.Any]
   type StartEventHandler = js.Function0[Unit]
   type StopEventHandler = js.Function0[Unit]
-  type ValidationObject = SchemaMap
+  type ValidationObject = SchemaMap[js.Any]
 }

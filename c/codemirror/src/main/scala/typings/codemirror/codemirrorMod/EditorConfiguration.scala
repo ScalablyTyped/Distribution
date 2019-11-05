@@ -1,6 +1,7 @@
 package typings.codemirror.codemirrorMod
 
-import typings.std.Event
+import typings.std.DragEvent
+import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,7 +113,7 @@ trait EditorConfiguration extends js.Object {
   /** When given , this will be called when the editor is handling a dragenter , dragover , or drop event.
     It will be passed the editor instance and the event object as arguments.
     The callback can choose to handle the event itself , in which case it should return true to indicate that CodeMirror should not do anything further. */
-  var onDragEvent: js.UndefOr[js.Function2[/* instance */ Editor, /* event */ Event, Boolean]] = js.undefined
+  var onDragEvent: js.UndefOr[js.Function2[/* instance */ Editor, /* event */ DragEvent, Boolean]] = js.undefined
   /** This provides a rather low - level hook into CodeMirror's key handling.
     If provided, this function will be called on every keydown, keyup, and keypress event that CodeMirror captures.
     It will be passed two arguments, the editor instance and the key event.
@@ -123,7 +124,7 @@ trait EditorConfiguration extends js.Object {
     Be wary that, on some browsers, stopping a keydown does not stop the keypress from firing, whereas on others it does.
     If you respond to an event, you should probably inspect its type property and only do something when it is keydown
     (or keypress for actions that need character data). */
-  var onKeyEvent: js.UndefOr[js.Function2[/* instance */ Editor, /* event */ Event, Boolean]] = js.undefined
+  var onKeyEvent: js.UndefOr[js.Function2[/* instance */ Editor, /* event */ KeyboardEvent, Boolean]] = js.undefined
   /** Optional value to be used in conjunction with CodeMirror’s placeholder add-on. */
   var placeholder: js.UndefOr[String] = js.undefined
   /** Indicates how quickly CodeMirror should poll its input textarea for changes(when focused).
@@ -214,8 +215,8 @@ object EditorConfiguration {
     matchTags: MatchTags | Boolean = null,
     maxHighlightLength: Int | Double = null,
     mode: js.Any = null,
-    onDragEvent: (/* instance */ Editor, /* event */ Event) => Boolean = null,
-    onKeyEvent: (/* instance */ Editor, /* event */ Event) => Boolean = null,
+    onDragEvent: (/* instance */ Editor, /* event */ DragEvent) => Boolean = null,
+    onKeyEvent: (/* instance */ Editor, /* event */ KeyboardEvent) => Boolean = null,
     placeholder: String = null,
     pollInterval: Int | Double = null,
     readOnly: js.Any = null,

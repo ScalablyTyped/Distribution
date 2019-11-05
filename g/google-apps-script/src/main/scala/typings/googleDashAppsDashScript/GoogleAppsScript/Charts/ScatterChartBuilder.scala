@@ -5,6 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for scatter charts. For more details, see the Google Charts documentation.
+  *
+  * Here is an example that shows how to build a scatter chart. The data is imported from a Google spreadsheet.
+  *
+  *     // Get sample data from a spreadsheet.
+  *     var dataSourceUrl = 'https://docs.google.com/spreadsheet/tq?range=C1%3AD' +
+  *         '&key=0Aq4s9w_HxMs7dHpfX05JdmVSb1FpT21sbXd4NVE3UEE&gid=4&headers=-1';
+  *
+  *     var chartBuilder = Charts.newScatterChart()
+  *         .setTitle('Adjusted GDP & U.S. Population')
+  *         .setXAxisTitle('U.S. Population (millions)')
+  *         .setYAxisTitle('Adjusted GDP ($ billions)')
+  *         .setDimensions(600, 500)
+  *         .setLegendPosition(Charts.Position.NONE)
+  *         .setDataSourceUrl(dataSourceUrl);
+  *
+  *     var chart = chartBuilder.build();
+  */
 @js.native
 trait ScatterChartBuilder extends js.Object {
   def build(): Chart = js.native

@@ -1,5 +1,6 @@
 package typings.marked.markedMod
 
+import typings.marked.markedNumbers.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser () extends js.Object {
   def this(options: MarkedOptions) = this()
+  var options: MarkedOptions = js.native
+  var renderer: Renderer = js.native
+  var slugger: Slugger = js.native
+  var token: Token | Null = js.native
+  var tokens: TokensList = js.native
   def next(): Token = js.native
   def parse(src: TokensList): String = js.native
   def parseText(): String = js.native
-  def peek(): Token | Double = js.native
+  def peek(): Token | `0` = js.native
   def tok(): String = js.native
 }
 

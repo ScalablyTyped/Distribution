@@ -5,6 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to choose one option from a numbered sequence of radio
+  * buttons. Items can be accessed or created from a Form. When used in a quiz, these items
+  * are graded.
+  *
+  *     // Open a form by ID and add a new scale item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addScaleItem();
+  *     item.setTitle('Pick a number between 1 and 10')
+  *         .setBounds(1, 10);
+  */
 trait ScaleItem extends js.Object {
   def createResponse(response: Integer): ItemResponse
   def duplicate(): ScaleItem

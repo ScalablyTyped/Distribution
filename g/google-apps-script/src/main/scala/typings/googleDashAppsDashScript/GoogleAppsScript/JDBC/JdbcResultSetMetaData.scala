@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC ResultSetMetaData. For documentation of this class, see
+  * java.sql.ResultSetMetaData.
+  */
 trait JdbcResultSetMetaData extends js.Object {
   def getCatalogName(column: Integer): String
   def getColumnClassName(column: Integer): String

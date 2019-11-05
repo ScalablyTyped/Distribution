@@ -23,6 +23,7 @@ trait Config extends js.Object {
   var RETURN_DOM: js.UndefOr[Boolean] = js.undefined
   var RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] = js.undefined
   var RETURN_DOM_IMPORT: js.UndefOr[Boolean] = js.undefined
+  var RETURN_TRUSTED_TYPE: js.UndefOr[Boolean] = js.undefined
   var SAFE_FOR_JQUERY: js.UndefOr[Boolean] = js.undefined
   var SAFE_FOR_TEMPLATES: js.UndefOr[Boolean] = js.undefined
   var SANITIZE_DOM: js.UndefOr[Boolean] = js.undefined
@@ -48,6 +49,7 @@ object Config {
     RETURN_DOM: js.UndefOr[Boolean] = js.undefined,
     RETURN_DOM_FRAGMENT: js.UndefOr[Boolean] = js.undefined,
     RETURN_DOM_IMPORT: js.UndefOr[Boolean] = js.undefined,
+    RETURN_TRUSTED_TYPE: js.UndefOr[Boolean] = js.undefined,
     SAFE_FOR_JQUERY: js.UndefOr[Boolean] = js.undefined,
     SAFE_FOR_TEMPLATES: js.UndefOr[Boolean] = js.undefined,
     SANITIZE_DOM: js.UndefOr[Boolean] = js.undefined,
@@ -70,6 +72,7 @@ object Config {
     if (!js.isUndefined(RETURN_DOM)) __obj.updateDynamic("RETURN_DOM")(RETURN_DOM)
     if (!js.isUndefined(RETURN_DOM_FRAGMENT)) __obj.updateDynamic("RETURN_DOM_FRAGMENT")(RETURN_DOM_FRAGMENT)
     if (!js.isUndefined(RETURN_DOM_IMPORT)) __obj.updateDynamic("RETURN_DOM_IMPORT")(RETURN_DOM_IMPORT)
+    if (!js.isUndefined(RETURN_TRUSTED_TYPE)) __obj.updateDynamic("RETURN_TRUSTED_TYPE")(RETURN_TRUSTED_TYPE)
     if (!js.isUndefined(SAFE_FOR_JQUERY)) __obj.updateDynamic("SAFE_FOR_JQUERY")(SAFE_FOR_JQUERY)
     if (!js.isUndefined(SAFE_FOR_TEMPLATES)) __obj.updateDynamic("SAFE_FOR_TEMPLATES")(SAFE_FOR_TEMPLATES)
     if (!js.isUndefined(SANITIZE_DOM)) __obj.updateDynamic("SANITIZE_DOM")(SANITIZE_DOM)

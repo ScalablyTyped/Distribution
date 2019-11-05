@@ -4,6 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A representation of a generic XML node.
+  * Implementing classes
+  *
+  * NameBrief description
+  *
+  * CdataA representation of an XML CDATASection node.
+  *
+  * CommentA representation of an XML Comment node.
+  *
+  * DocTypeA representation of an XML DocumentType node.
+  *
+  * ElementA representation of an XML Element node.
+  *
+  * EntityRefA representation of an XML EntityReference node.
+  *
+  * ProcessingInstructionA representation of an XML ProcessingInstruction node.
+  *
+  * TextA representation of an XML Text node.
+  */
 trait Content extends js.Object {
   def asCdata(): Cdata
   def asComment(): Comment

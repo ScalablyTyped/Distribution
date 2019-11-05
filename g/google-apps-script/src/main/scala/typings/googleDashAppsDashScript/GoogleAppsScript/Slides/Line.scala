@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A PageElement representing a line.
+  */
 @js.native
 trait Line extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): Line = js.native

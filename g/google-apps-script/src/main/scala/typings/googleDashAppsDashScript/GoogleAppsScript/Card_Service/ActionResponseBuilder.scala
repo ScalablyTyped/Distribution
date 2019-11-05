@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for ActionResponse objects.
+  */
 trait ActionResponseBuilder extends js.Object {
   def build(): ActionResponse
   def setNavigation(navigation: Navigation): ActionResponseBuilder

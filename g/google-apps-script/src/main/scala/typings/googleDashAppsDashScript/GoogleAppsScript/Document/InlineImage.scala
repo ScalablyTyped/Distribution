@@ -6,6 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing an embedded image. An InlineImage can be contained within a
+  * ListItem or Paragraph, unless the ListItem or Paragraph is within
+  * a FootnoteSection. An InlineImage cannot itself contain any other element. For
+  * more information on document structure, see the guide to extending Google Docs.
+  */
 trait InlineImage extends js.Object {
   def copy(): InlineImage
   def getAltDescription(): String

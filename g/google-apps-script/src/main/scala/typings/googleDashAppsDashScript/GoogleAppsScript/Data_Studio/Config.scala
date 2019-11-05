@@ -4,6 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Contains the configuration entries for a connector. These configuration entries define what
+  * questions are asked when adding a new connector.
+  *
+  *     var cc = DataStudioApp.createCommunityConnector();
+  *     var config = cc.getConfig();
+  *
+  *     var info_entry = config.newInfo()
+  *       .setId("info_id")
+  *       .setHelpText("This connector can connect to multiple data endpoints.");
+  */
 trait Config extends js.Object {
   def build(): Config
   def newCheckbox(): Checkbox

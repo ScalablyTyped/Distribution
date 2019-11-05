@@ -9,6 +9,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for pie charts. For more details, see the Gviz
+  * documentation.
+  */
 trait EmbeddedPieChartBuilder extends js.Object {
   def addRange(range: Range): EmbeddedChartBuilder
   def asAreaChart(): EmbeddedAreaChartBuilder

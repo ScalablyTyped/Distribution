@@ -41,7 +41,7 @@ trait TextareaAutosizeProps
     * Try to cache DOM measurements performed by component so that we don't
     * touch DOM when it's not needed.
     *
-    * This optimization doesn't work if we dynamically style <textarea />
+    * This optimization doesn't work if we dynamically style `<textarea />`
     * component.
     * @default false
     */

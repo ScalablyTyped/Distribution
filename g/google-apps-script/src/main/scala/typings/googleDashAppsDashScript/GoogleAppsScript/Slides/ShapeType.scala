@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ShapeType extends js.Object
 
+/**
+  * The shape types. Many of these shapes correspond to predefined shapes from the ECMA-376 standard.
+  * More information on those shapes can be found in the description of the "ST_ShapeType" simple
+  * type in section 20.1.10.55 of "Office Open XML File Formats - Fundamentals and Markup Language
+  * Reference", part 1 of ECMA-376 4th
+  * edition.
+  */
 @JSGlobal("GoogleAppsScript.Slides.ShapeType")
 @js.native
 object ShapeType extends js.Object {

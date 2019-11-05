@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Representation of a user, suitable for scripting.
+  */
 trait User extends js.Object {
   def getEmail(): String
   /** @deprecated DO NOT USE */

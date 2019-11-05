@@ -1,11 +1,14 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Gmail
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A thread in a user's Gmail account.
+  */
 @js.native
 trait GmailThread extends js.Object {
   def addLabel(label: GmailLabel): GmailThread = js.native

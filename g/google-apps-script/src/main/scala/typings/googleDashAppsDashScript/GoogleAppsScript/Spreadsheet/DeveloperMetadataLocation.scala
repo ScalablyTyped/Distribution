@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access developer metadata location information.
+  */
 trait DeveloperMetadataLocation extends js.Object {
   def getColumn(): Range | Null
   def getLocationType(): DeveloperMetadataLocationType

@@ -4,6 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The styles of text that apply to entire paragraphs.
+  *
+  * Read methods in this class return null if the corresponding TextRange spans
+  * multiple paragraphs, and those paragraphs have different values for the read method being called.
+  * To avoid this, query for paragraph styles using the TextRange returned by the Paragraph.getRange() method.
+  */
 trait ParagraphStyle extends js.Object {
   def getIndentEnd(): Double
   def getIndentFirstLine(): Double

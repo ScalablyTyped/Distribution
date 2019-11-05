@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ncp"
-version := "v2.0.0-dt-20191009Z-cc26f8"
+version := "2.0-dt-20191104Z-661bd4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

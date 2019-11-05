@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// TODO: Is there a `user` attribute?
 trait CalendarEventUpdated extends AppsScriptEvent {
   var calendarId: String
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "openapi-framework" : "0.25.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "openapi-framework" : "0.25.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

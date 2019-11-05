@@ -9,6 +9,9 @@ object kafkaDashNodeStrings {
   sealed trait brokersChanged extends js.Object
   
   @js.native
+  sealed trait buffer extends js.Object
+  
+  @js.native
   sealed trait close extends js.Object
   
   @js.native
@@ -54,10 +57,15 @@ object kafkaDashNodeStrings {
   sealed trait socket_error extends js.Object
   
   @js.native
+  sealed trait utf8 extends js.Object
+  
+  @js.native
   sealed trait zkReconnect extends js.Object
   
   @scala.inline
   def brokersChanged: brokersChanged = "brokersChanged".asInstanceOf[brokersChanged]
+  @scala.inline
+  def buffer: buffer = "buffer".asInstanceOf[buffer]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
@@ -88,6 +96,8 @@ object kafkaDashNodeStrings {
   def roundrobin: roundrobin = "roundrobin".asInstanceOf[roundrobin]
   @scala.inline
   def socket_error: socket_error = "socket_error".asInstanceOf[socket_error]
+  @scala.inline
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
   @scala.inline
   def zkReconnect: zkReconnect = "zkReconnect".asInstanceOf[zkReconnect]
 }

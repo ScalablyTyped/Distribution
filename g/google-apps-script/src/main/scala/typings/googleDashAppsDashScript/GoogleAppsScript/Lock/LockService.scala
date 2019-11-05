@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Prevents concurrent access to sections of code. This can be useful when you have multiple users
+  * or processes modifying a shared resource and want to prevent collisions.
+  */
 trait LockService extends js.Object {
   def getDocumentLock(): typings.googleDashAppsDashScript.GoogleAppsScript.Lock.Lock
   def getScriptLock(): typings.googleDashAppsDashScript.GoogleAppsScript.Lock.Lock

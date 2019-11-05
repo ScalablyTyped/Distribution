@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-rnd
 
-Typings are for version 7.4
+Typings are for version 10.1.1
 
 ## Library description:
 <p align="center"><img src ="https://github.com/bokuweb/react-rnd/blob/master/logo.png?raw=true" /></p>
@@ -24,7 +24,7 @@ Typings are for version 7.4
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

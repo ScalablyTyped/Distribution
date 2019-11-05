@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ConfigureOptions extends js.Object {
   var apiKey: String
-  var developmentEnvironment: js.UndefOr[js.Array[String]] = js.undefined
+  var developmentEnvironments: js.UndefOr[js.Array[String]] = js.undefined
   var endpoint: js.UndefOr[String] = js.undefined
   var environment: js.UndefOr[String] = js.undefined
   var filters: js.UndefOr[js.Array[String]] = js.undefined
@@ -20,7 +20,7 @@ object ConfigureOptions {
   @scala.inline
   def apply(
     apiKey: String,
-    developmentEnvironment: js.Array[String] = null,
+    developmentEnvironments: js.Array[String] = null,
     endpoint: String = null,
     environment: String = null,
     filters: js.Array[String] = null,
@@ -29,7 +29,7 @@ object ConfigureOptions {
     projectRoot: String = null
   ): ConfigureOptions = {
     val __obj = js.Dynamic.literal(apiKey = apiKey)
-    if (developmentEnvironment != null) __obj.updateDynamic("developmentEnvironment")(developmentEnvironment)
+    if (developmentEnvironments != null) __obj.updateDynamic("developmentEnvironments")(developmentEnvironments)
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (filters != null) __obj.updateDynamic("filters")(filters)

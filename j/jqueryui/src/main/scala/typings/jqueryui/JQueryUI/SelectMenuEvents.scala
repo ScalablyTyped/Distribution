@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +17,12 @@ trait SelectMenuEvents extends js.Object {
 object SelectMenuEvents {
   @scala.inline
   def apply(
-    change: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
-    close: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
-    create: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
-    focus: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
-    open: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
-    select: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null
+    change: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
+    close: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
+    focus: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
+    open: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
+    select: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null
   ): SelectMenuEvents = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))

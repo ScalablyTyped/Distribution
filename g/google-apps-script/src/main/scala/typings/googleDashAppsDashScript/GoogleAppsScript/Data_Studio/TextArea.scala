@@ -4,6 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Contains text area information for the config. Its properties determine how the text input is
+  * displayed in Data Studio.
+  *
+  * Usage:
+  *
+  *     var cc = DataStudioApp.createCommunityConnector();
+  *     var config = cc.getConfig();
+  *
+  *     var textArea1 = config.newTextArea()
+  *       .setId("textArea1")
+  *       .setName("Search")
+  *       .setHelpText("for example, Coldplay")
+  *       .setAllowOverride(true)
+  *       .setPlaceholder("Search for an artist for all songs.");
+  */
 trait TextArea extends js.Object {
   def setAllowOverride(allowOverride: Boolean): TextArea
   def setHelpText(helpText: String): TextArea

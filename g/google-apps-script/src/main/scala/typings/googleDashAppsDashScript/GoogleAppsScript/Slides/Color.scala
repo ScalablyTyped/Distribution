@@ -1,9 +1,14 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ColorType
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.RgbColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An opaque color
+  */
 trait Color extends js.Object {
   def asRgbColor(): RgbColor
   def asThemeColor(): ThemeColor

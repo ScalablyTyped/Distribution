@@ -2,14 +2,18 @@ package typings.googleDashAppsDashScript.GoogleAppsScript.Utilities
 
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Blob
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.BlobSource
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Byte
 import typings.googleDashAppsDashScript.GoogleAppsScript.Char
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * This service provides utilities for string encoding/decoding, date formatting, JSON manipulation,
+  * and other miscellaneous tasks.
+  */
 @js.native
 trait Utilities extends js.Object {
   var Charset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Charset */ js.Any = js.native

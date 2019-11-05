@@ -184,8 +184,8 @@ trait Root extends js.Object {
   /**
     * Generates a schema object that matches an object data type (as well as JSON strings that have been parsed into objects).
     */
-  def `object`(): ObjectSchema = js.native
-  def `object`(schema: SchemaMap): ObjectSchema = js.native
+  def `object`[TSchema](): ObjectSchema[TSchema] = js.native
+  def `object`[TSchema](schema: SchemaMap[TSchema]): ObjectSchema[TSchema] = js.native
   /**
     * Marks a key as optional which will allow undefined as values. Used to annotate the schema for readability as all keys are optional by default.
     */

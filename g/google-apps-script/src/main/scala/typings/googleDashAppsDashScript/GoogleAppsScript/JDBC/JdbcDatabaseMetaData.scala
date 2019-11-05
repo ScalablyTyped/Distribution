@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC database metadata object. For documentation of this class, see
+  * java.sql.DatabaseMetaData.
+  */
 @js.native
 trait JdbcDatabaseMetaData extends js.Object {
   def allProceduresAreCallable(): Boolean = js.native

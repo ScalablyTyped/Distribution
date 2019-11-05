@@ -7,6 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A page in a presentation.
+  */
 @js.native
 trait Page extends js.Object {
   def asLayout(): Layout = js.native

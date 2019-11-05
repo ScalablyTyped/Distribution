@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Color extends js.Object
 
+/**
+  * An enum representing the named colors available in the Calendar service.
+  */
 @JSGlobal("GoogleAppsScript.Calendar.Color")
 @js.native
 object Color extends js.Object {

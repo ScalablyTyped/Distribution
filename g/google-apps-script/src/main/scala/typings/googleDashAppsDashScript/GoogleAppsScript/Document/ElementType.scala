@@ -7,6 +7,17 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ElementType extends js.Object
 
+/**
+  * An enumeration of all the element types.
+  *
+  * Use the ElementType enumeration to check the type of a given element, for instance:
+  *
+  *     var firstChild = DocumentApp.getActiveDocument().getBody().getChild(0);
+  *     if (firstChild.getType() == DocumentApp.ElementType.PARAGRAPH) {
+  *       // It's a paragraph, apply a paragraph heading.
+  *       firstChild.asParagraph().setHeading(DocumentApp.ParagraphHeading.HEADING1);
+  *     }
+  */
 @JSGlobal("GoogleAppsScript.Document.ElementType")
 @js.native
 object ElementType extends js.Object {

@@ -1,0 +1,21 @@
+package typings.openapiDashDefaultDashSetter.openapiDashDefaultDashSetterMod
+
+import typings.openapiDashTypes.openapiDashTypesMod.OpenAPI.Request
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait OpenAPIDefaultSetter extends IOpenAPIDefaultSetter {
+  var headersDefaults: js.Any
+  var queryDefaults: js.Any
+}
+
+object OpenAPIDefaultSetter {
+  @scala.inline
+  def apply(handle: Request => Unit, headersDefaults: js.Any, queryDefaults: js.Any): OpenAPIDefaultSetter = {
+    val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle), headersDefaults = headersDefaults, queryDefaults = queryDefaults)
+  
+    __obj.asInstanceOf[OpenAPIDefaultSetter]
+  }
+}
+

@@ -4,13 +4,19 @@ import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrOb
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.react.NativeMouseEvent
+import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
-import typings.std.HTMLElement
+import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IColorSliderProps extends js.Object {
+  /**
+    * Label of the ColorSlider for the benefit of screen reader users.
+    */
+  var ariaLabel: js.UndefOr[String] = js.undefined
   /**
     * Additional CSS class(es) to apply to the ColorSlider.
     */
@@ -20,8 +26,9 @@ trait IColorSliderProps extends js.Object {
     */
   var componentRef: js.UndefOr[IRefObject[IColorSlider]] = js.undefined
   /**
-    * If true, the slider represents an alpha slider.
-    * Otherwise, the slider represents a hue slider.
+    * If true, the slider represents an alpha slider and will display a gray checkered pattern
+    * in the background. Otherwise, the slider represents a hue slider.
+    * @defaultvalue false
     */
   var isAlpha: js.UndefOr[Boolean] = js.undefined
   /**
@@ -37,15 +44,20 @@ trait IColorSliderProps extends js.Object {
     */
   var onChange: js.UndefOr[
     js.Function2[
-      /* event */ MouseEvent[HTMLElement, NativeMouseEvent], 
+      /* event */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element], 
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
   ] = js.undefined
   /**
-    * Custom style for the overlay element.
+    * Hex color to use when rendering an alpha slider's overlay.
     */
-  var overlayStyle: js.UndefOr[js.Any] = js.undefined
+  var overlayColor: js.UndefOr[String] = js.undefined
+  /**
+    * Custom style for the overlay element.
+    * @deprecated Use `overlayColor` instead
+    */
+  var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
   /**
     * Call to provide customized styling that will layer on top of the variant rules.
     */
@@ -56,6 +68,7 @@ trait IColorSliderProps extends js.Object {
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
     * CSS-compatible string for the color of the thumb element.
+    * @deprecated Not used. Use `styles.sliderThumb` instead.
     */
   var thumbColor: js.UndefOr[String] = js.undefined
   /**
@@ -67,25 +80,29 @@ trait IColorSliderProps extends js.Object {
 object IColorSliderProps {
   @scala.inline
   def apply(
+    ariaLabel: String = null,
     className: String = null,
     componentRef: IRefObject[IColorSlider] = null,
     isAlpha: js.UndefOr[Boolean] = js.undefined,
     maxValue: Int | Double = null,
     minValue: Int | Double = null,
-    onChange: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* newValue */ js.UndefOr[Double]) => Unit = null,
-    overlayStyle: js.Any = null,
+    onChange: (/* event */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element], /* newValue */ js.UndefOr[Double]) => Unit = null,
+    overlayColor: String = null,
+    overlayStyle: CSSProperties = null,
     styles: IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles] = null,
     theme: ITheme = null,
     thumbColor: String = null,
     value: Int | Double = null
   ): IColorSliderProps = {
     val __obj = js.Dynamic.literal()
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
     if (className != null) __obj.updateDynamic("className")(className)
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (!js.isUndefined(isAlpha)) __obj.updateDynamic("isAlpha")(isAlpha)
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor)
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

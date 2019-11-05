@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait TextBaselineOffset extends js.Object
 
+/**
+  * The text vertical offset from its normal position.
+  */
 @JSGlobal("GoogleAppsScript.Slides.TextBaselineOffset")
 @js.native
 object TextBaselineOffset extends js.Object {

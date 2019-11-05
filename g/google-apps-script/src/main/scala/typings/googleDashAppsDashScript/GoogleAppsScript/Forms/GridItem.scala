@@ -5,6 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item, presented as a grid of columns and rows, that allows the respondent to select
+  * one choice per row from a sequence of radio buttons. Items can be accessed or created from a
+  * Form.
+  *
+  *     // Open a form by ID and add a new grid item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addGridItem();
+  *     item.setTitle('Rate your interests')
+  *         .setRows(['Cars', 'Computers', 'Celebrities'])
+  *         .setColumns(['Boring', 'So-so', 'Interesting']);
+  */
 trait GridItem extends js.Object {
   def clearValidation(): GridItem
   def createResponse(responses: js.Array[String]): ItemResponse

@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,10 @@ trait ResizableEvents extends js.Object {
 object ResizableEvents {
   @scala.inline
   def apply(
-    create: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
-    resize: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
-    start: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
-    stop: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null
+    create: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
+    resize: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
+    start: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
+    stop: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null
   ): ResizableEvents = {
     val __obj = js.Dynamic.literal()
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))

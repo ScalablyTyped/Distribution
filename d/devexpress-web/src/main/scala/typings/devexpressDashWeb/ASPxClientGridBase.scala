@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class ASPxClientGridBase () extends ASPxClientControl {
   /**
+    * Fires when a user changes the summary item value.
+    */
+  var BatchEditSummaryDisplayText: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]] = js.native
+  /**
     * Fires after a toolbar item has been clicked.
     */
   var ToolbarItemClick: ASPxClientEvent[ASPxClientGridToolbarItemClickEventHandler[ASPxClientGridBase]] = js.native

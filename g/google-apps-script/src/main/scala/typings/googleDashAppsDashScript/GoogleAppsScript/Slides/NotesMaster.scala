@@ -5,6 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A notes master in a presentation.
+  *
+  * Notes masters define the default text styles and page elements for all notes pages. Notes
+  * masters are read-only.
+  */
 @js.native
 trait NotesMaster extends js.Object {
   def getGroups(): js.Array[Group] = js.native

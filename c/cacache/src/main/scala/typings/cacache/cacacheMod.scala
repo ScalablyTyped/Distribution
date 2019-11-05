@@ -2,6 +2,7 @@ package typings.cacache
 
 import typings.cacache.cacacheNumbers.`false`
 import typings.cacache.enMod.CacheObject
+import typings.cacache.enMod.GetCacheObject
 import typings.cacache.enMod.get.HasContentObject
 import typings.cacache.enMod.get.Options
 import typings.cacache.enMod.ls.Cache
@@ -21,8 +22,8 @@ object cacacheMod extends js.Object {
   def setLocale(locale: String): js.Any = js.native
   @js.native
   object get extends js.Object {
-    def apply(cachePath: String, key: String): js.Promise[CacheObject] = js.native
-    def apply(cachePath: String, key: String, options: Options): js.Promise[CacheObject] = js.native
+    def apply(cachePath: String, key: String): js.Promise[GetCacheObject] = js.native
+    def apply(cachePath: String, key: String, options: Options): js.Promise[GetCacheObject] = js.native
     def byDigest(cachePath: String, hash: String): js.Promise[String] = js.native
     def byDigest(cachePath: String, hash: String, opts: Options): js.Promise[String] = js.native
     /**

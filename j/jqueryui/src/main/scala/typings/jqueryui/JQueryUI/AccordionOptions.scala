@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,12 +22,12 @@ trait AccordionOptions extends AccordionEvents {
 object AccordionOptions {
   @scala.inline
   def apply(
-    activate: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null,
+    activate: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit = null,
     active: js.Any = null,
     animate: js.Any = null,
-    beforeActivate: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null,
+    beforeActivate: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
-    create: (/* event */ Event, /* ui */ AccordionUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     event: String = null,
     header: String = null,

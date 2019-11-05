@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC CallableStatement. For documentation of this class, see
+  * java.sql.CallableStatement.
+  */
 @js.native
 trait JdbcCallableStatement extends js.Object {
   def addBatch(): Unit = js.native

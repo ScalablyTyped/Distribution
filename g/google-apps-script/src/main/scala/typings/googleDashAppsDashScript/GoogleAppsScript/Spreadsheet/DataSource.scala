@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify existing data source. To create a data source table with new data source, see
+  * DataSourceTable.
+  */
 trait DataSource extends js.Object {
   def getSpec(): DataSourceSpec
   def updateSpec(spec: DataSourceSpec): DataSource

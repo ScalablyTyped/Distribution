@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Array. For documentation of this class, see java.sql.Array
+  * .
+  */
 @js.native
 trait JdbcArray extends js.Object {
   def free(): Unit = js.native

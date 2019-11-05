@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A column in a table. A column consists of a list of table cells. A column is identified by the
+  * column index.
+  */
 trait TableColumn extends js.Object {
   def getCell(cellIndex: Integer): TableCell
   def getIndex(): Integer

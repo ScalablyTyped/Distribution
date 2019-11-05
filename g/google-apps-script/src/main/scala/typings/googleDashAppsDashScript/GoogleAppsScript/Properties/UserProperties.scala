@@ -5,6 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  *
+  * Deprecated. This class is deprecated and should not be used in new scripts.
+  * User Properties are key-value pairs unique to a user. User Properties are scoped per user; any
+  * script running under the identity of a user can access User Properties for that user only.
+  */
 @js.native
 trait UserProperties extends js.Object {
   def deleteAllProperties(): UserProperties = js.native

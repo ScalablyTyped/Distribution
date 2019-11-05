@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Icon extends js.Object
 
+/**
+  * Predefined icons that can be used in various UI objects, such as ImageButton or KeyValue widgets.
+  */
 @JSGlobal("GoogleAppsScript.Card_Service.Icon")
 @js.native
 object Icon extends js.Object {

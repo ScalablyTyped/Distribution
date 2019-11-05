@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "openapi-jsonschema-parameters" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "openapi-jsonschema-parameters" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

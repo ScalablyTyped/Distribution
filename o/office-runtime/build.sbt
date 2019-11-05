@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "office-runtime"
-version := "1.0-dt-20190503Z-b09920"
+version := "1.0-dt-20191104Z-214040"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "denque" : "1.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "denque" : "1.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ trait ProgressbarEvents extends js.Object {
 object ProgressbarEvents {
   @scala.inline
   def apply(
-    change: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null,
-    complete: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null,
-    create: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null
+    change: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null,
+    complete: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null
   ): ProgressbarEvents = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))

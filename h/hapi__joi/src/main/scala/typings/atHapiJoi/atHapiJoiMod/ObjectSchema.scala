@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atHapiJoi.atHapiJoiMod._SchemaLike because Already inherited
-- typings.atHapiJoi.atHapiJoiMod.Schema because Already inherited */ @js.native
-trait ObjectSchema extends AnySchema {
+@js.native
+trait ObjectSchema[TSchema] extends AnySchema {
   /**
     * Defines an all-or-nothing relationship between keys where if one of the peers is present, all of them are required as well.
     *
@@ -19,7 +17,7 @@ trait ObjectSchema extends AnySchema {
     * Appends the allowed object keys. If schema is null, undefined, or {}, no changes will be applied.
     */
   def append(): this.type = js.native
-  def append(schema: SchemaMap): this.type = js.native
+  def append(schema: SchemaMap[TSchema]): this.type = js.native
   /**
     * Verifies an assertion where.
     */
@@ -40,7 +38,7 @@ trait ObjectSchema extends AnySchema {
     * Sets or extends the allowed object keys.
     */
   def keys(): this.type = js.native
-  def keys(schema: SchemaMap): this.type = js.native
+  def keys(schema: SchemaMap[TSchema]): this.type = js.native
   /**
     * Specifies the exact number of keys in the object.
     */

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait SlideLinkingMode extends js.Object
 
+/**
+  * The mode of links between slides.
+  */
 @JSGlobal("GoogleAppsScript.Slides.SlideLinkingMode")
 @js.native
 object SlideLinkingMode extends js.Object {

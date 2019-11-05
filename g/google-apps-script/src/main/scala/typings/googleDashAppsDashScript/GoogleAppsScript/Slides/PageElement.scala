@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A visual element rendered on a page.
+  */
 @js.native
 trait PageElement extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): PageElement = js.native

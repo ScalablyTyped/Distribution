@@ -4,6 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A UI element that supports being toggled on or off. This can only be used within a KeyValue widget.
+  *
+  *     var switchKeyValue = CardService.newKeyValue()
+  *         .setTopLabel("Switch key value widget label")
+  *         .setContent("This is a key value widget with a switch on the right")
+  *         .setSwitch(CardService.newSwitch()
+  *             .setFieldName("form_input_switch_key")
+  *             .setValue("form_input_switch_value")
+  *             .setOnChangeAction(CardService.newAction()
+  *                 .setFunctionName("handleSwitchChange")));
+  */
 trait Switch extends js.Object {
   def setFieldName(fieldName: String): Switch
   def setOnChangeAction(action: Action): Switch

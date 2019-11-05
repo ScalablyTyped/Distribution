@@ -1,13 +1,24 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents a recurrence rule for an event series.
+  *
+  * Note that this class also behaves like the EventRecurrence that it belongs to,
+  * allowing you to chain rule creation together like so:
+  *
+  *     recurrence.addDailyRule().times(3).interval(2).addWeeklyExclusion().times(2);
+  *
+  * times(times)
+  * interval(interval)
+  */
 trait RecurrenceRule extends js.Object {
   def addDailyExclusion(): RecurrenceRule
   def addDailyRule(): RecurrenceRule

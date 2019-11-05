@@ -26,6 +26,7 @@ class ASPxClientDashboard () extends ASPxClientControl {
     * Fires when a round trip to the server has been initiated by a call to the client ASPxClientDashboard.PerformDataCallback method.
     */
   var CustomDataCallback: ASPxClientEvent[ASPxClientCustomDataCallbackEventHandler[ASPxClientDashboard]] = js.native
+  var CustomizeDataSourceWizard: ASPxClientEvent[ASPxClientCustomizeDataSourceWizardEventHandler[ASPxClientDashboard]] = js.native
   /**
     * Occurs when a dashboard update is initiated.
     */

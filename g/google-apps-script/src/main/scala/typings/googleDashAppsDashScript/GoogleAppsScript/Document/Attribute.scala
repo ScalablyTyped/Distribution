@@ -7,6 +7,21 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Attribute extends js.Object
 
+/**
+  * An enumeration of the element attributes.
+  *
+  * Use attributes to compose custom styles. For example:
+  *
+  *     // Define a style with yellow background.
+  *     var highlightStyle = {};
+  *     highlightStyle[DocumentApp.Attribute.BACKGROUND_COLOR] = '#FFFF00';
+  *     highlightStyle[DocumentApp.Attribute.BOLD] = true;
+  *
+  *     // Insert "Hello", highlighted.
+  *     DocumentApp.getActiveDocument().editAsText()
+  *       .insertText(0, 'Hello\n')
+  *       .setAttributes(0, 4, highlightStyle);
+  */
 @JSGlobal("GoogleAppsScript.Document.Attribute")
 @js.native
 object Attribute extends js.Object {

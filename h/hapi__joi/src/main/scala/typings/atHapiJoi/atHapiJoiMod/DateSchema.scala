@@ -9,8 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atHapiJoi.atHapiJoiMod._SchemaLike because Already inherited
-- typings.atHapiJoi.atHapiJoiMod.Schema because Already inherited */ @js.native
+- typings.atHapiJoi.atHapiJoiMod._Schema because Already inherited */ @js.native
 trait DateSchema extends AnySchema {
   def greater(date: String): this.type = js.native
   def greater(date: Double): this.type = js.native

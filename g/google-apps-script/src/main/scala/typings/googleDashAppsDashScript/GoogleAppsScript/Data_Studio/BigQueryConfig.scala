@@ -4,6 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A configuration object for a native BigQuery connector. Return this object from getData()
+  * for Data Studio to query BigQuery for the connector.
+  *
+  *     var cc = DataStudioApp.createCommunityConnector();
+  *     var types = cc.BigQueryParameterType;
+  *
+  *     var bqConfig = cc.newBigQueryConfig()
+  *       .setBillingProjectId('billingProjectId')
+  *       .setQuery('queryString')
+  *       .setUseStandardSql(true)
+  *       .setAccessToken('accessToken')
+  *       .addQueryParameter('dob', types.STRING, '01011990')
+  *       .build();
+  */
 trait BigQueryConfig extends js.Object {
   def addQueryParameter(name: String, `type`: BigQueryParameterType, value: String): BigQueryConfig
   def build(): Config

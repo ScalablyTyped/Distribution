@@ -5,6 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for data validation rules.
+  *
+  *     // Set the data validation for cell A1 to require a value from B1:B10.
+  *     var cell = SpreadsheetApp.getActive().getRange('A1');
+  *     var range = SpreadsheetApp.getActive().getRange('B1:B10');
+  *     var rule = SpreadsheetApp.newDataValidation().requireValueInRange(range).build();
+  *     cell.setDataValidation(rule);
+  */
 @js.native
 trait DataValidationBuilder extends js.Object {
   def build(): DataValidation = js.native

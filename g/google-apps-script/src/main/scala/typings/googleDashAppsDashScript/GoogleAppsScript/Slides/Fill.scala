@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Describes the page element's background
+  */
 @js.native
 trait Fill extends js.Object {
   def getSolidFill(): SolidFill = js.native

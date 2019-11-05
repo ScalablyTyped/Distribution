@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "resourcejs"
-version := "1.9-dt-20191003Z-d91d02"
+version := "1.9-dt-20191003Z-4e3bda"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191101Z-ab49c4",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-8e1e66",
   "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191101Z-026a4d",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191030Z-725745",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191105Z-10d6e1",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c44ea2",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-6b473e",

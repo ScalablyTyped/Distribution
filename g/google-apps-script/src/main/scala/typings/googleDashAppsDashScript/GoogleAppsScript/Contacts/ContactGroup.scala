@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A ContactGroup is is a group of contacts.
+  */
 trait ContactGroup extends js.Object {
   def addContact(contact: Contact): ContactGroup
   def deleteGroup(): Unit

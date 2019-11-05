@@ -11,6 +11,10 @@ trait IColorRectangleStyles extends js.Object {
     */
   var dark: js.UndefOr[IStyle] = js.undefined
   /**
+    * Style for a hidden detailed description for screen reader users.
+    */
+  var description: js.UndefOr[IStyle] = js.undefined
+  /**
     * Style set for the light-colored rectangle.
     */
   var light: js.UndefOr[IStyle] = js.undefined
@@ -26,9 +30,16 @@ trait IColorRectangleStyles extends js.Object {
 
 object IColorRectangleStyles {
   @scala.inline
-  def apply(dark: IStyle = null, light: IStyle = null, root: IStyle = null, thumb: IStyle = null): IColorRectangleStyles = {
+  def apply(
+    dark: IStyle = null,
+    description: IStyle = null,
+    light: IStyle = null,
+    root: IStyle = null,
+    thumb: IStyle = null
+  ): IColorRectangleStyles = {
     val __obj = js.Dynamic.literal()
     if (dark != null) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])

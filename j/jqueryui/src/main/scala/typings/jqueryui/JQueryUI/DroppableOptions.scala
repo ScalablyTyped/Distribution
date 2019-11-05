@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,17 +20,17 @@ object DroppableOptions {
   @scala.inline
   def apply(
     accept: js.Any = null,
-    activate: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
+    activate: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
     activeClass: String = null,
     addClasses: js.UndefOr[Boolean] = js.undefined,
-    create: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
-    deactivate: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
+    deactivate: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    drop: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
+    drop: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
     greedy: js.UndefOr[Boolean] = js.undefined,
     hoverClass: String = null,
-    out: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
-    over: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
+    out: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
+    over: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
     scope: String = null,
     tolerance: String = null
   ): DroppableOptions = {

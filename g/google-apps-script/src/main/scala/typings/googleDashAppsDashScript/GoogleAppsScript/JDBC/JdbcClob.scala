@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Clob. For documentation of this class, see java.sql.Clob
+  * .
+  */
 @js.native
 trait JdbcClob extends js.Object {
   def free(): Unit = js.native

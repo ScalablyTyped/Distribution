@@ -7,6 +7,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A form that contains overall properties and items. Properties include title, settings, and where
+  * responses are stored. Items include question items like checkboxes or radio items, while layout
+  * items refer to things like page breaks. Forms can be accessed or created from FormApp.
+  *
+  *     // Open a form by ID and create a new spreadsheet.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var ss = SpreadsheetApp.create('Spreadsheet Name');
+  *
+  *     // Update form properties via chaining.
+  *     form.setTitle('Form Name')
+  *         .setDescription('Description of form')
+  *         .setConfirmationMessage('Thanks for responding!')
+  *         .setAllowResponseEdits(true)
+  *         .setAcceptingResponses(false);
+  *
+  *     // Update the form's response destination.
+  *     form.setDestination(FormApp.DestinationType.SPREADSHEET, ss.getId());
+  */
 @js.native
 trait Form extends js.Object {
   def addCheckboxGridItem(): CheckboxGridItem = js.native

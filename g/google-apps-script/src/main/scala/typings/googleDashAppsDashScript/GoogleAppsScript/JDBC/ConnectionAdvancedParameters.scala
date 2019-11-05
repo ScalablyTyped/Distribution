@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** JdbcAdvancedParameters */
 trait ConnectionAdvancedParameters extends js.Object {
   /** the client's SSL certificate */
   var _clientSslCertificate: js.UndefOr[String] = js.undefined

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait DigestAlgorithm extends js.Object
 
+/**
+  * Selector of Digest algorithm.
+  */
 @JSGlobal("GoogleAppsScript.Utilities.DigestAlgorithm")
 @js.native
 object DigestAlgorithm extends js.Object {

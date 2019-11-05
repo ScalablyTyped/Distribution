@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "honeybadger"
-version := "1.3-dt-20191017Z-d82157"
+version := "1.3-dt-20191104Z-3b8fe0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

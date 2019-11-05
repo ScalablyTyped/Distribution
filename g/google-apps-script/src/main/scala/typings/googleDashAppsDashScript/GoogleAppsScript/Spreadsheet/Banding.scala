@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify bandings, the color patterns applied to rows or columns of a range. Each
+  * banding consists of a range and a set of colors for rows, columns, headers, and footers.
+  */
 @js.native
 trait Banding extends js.Object {
   def copyTo(range: Range): Banding = js.native

@@ -4,9 +4,11 @@ import typings.prosemirrorDashModel.prosemirrorDashModelMod.Node
 import typings.prosemirrorDashModel.prosemirrorDashModelMod.ResolvedPos
 import typings.prosemirrorDashModel.prosemirrorDashModelMod.Schema
 import typings.prosemirrorDashModel.prosemirrorDashModelMod.Slice
+import typings.prosemirrorDashState.prosemirrorDashStateMod.Selection
 import typings.prosemirrorDashState.prosemirrorDashStateMod.SelectionRange
 import typings.prosemirrorDashState.prosemirrorDashStateMod.Transaction
 import typings.prosemirrorDashTables.Anon_Anchor
+import typings.prosemirrorDashTransform.prosemirrorDashTransformMod.Mappable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,12 +37,12 @@ class CellSelection[S /* <: Schema[_, _] */] protected () extends js.Object {
   var ranges: js.Array[SelectionRange[S]] = js.native
   var to: Double = js.native
   def content(): Slice[S] = js.native
-  def eq(other: js.Any): Boolean = js.native
+  def eq(other: Selection[S]): Boolean = js.native
   def forEachCell(f: js.Function2[/* node */ Node[S], /* pos */ Double, Unit]): Unit = js.native
   def getBookmark(): Anon_Anchor = js.native
   def isColSelection(): Boolean = js.native
   def isRowSelection(): Boolean = js.native
-  def map(doc: Node[S], mapping: js.Any): js.Any = js.native
+  def map(doc: Node[S], mapping: Mappable): js.Any = js.native
   def replace(tr: Transaction[S], content: Slice[S]): Unit = js.native
   def replaceWith(tr: Transaction[S], node: Node[S]): Unit = js.native
   def toJSON(): CellSelectionJSON = js.native

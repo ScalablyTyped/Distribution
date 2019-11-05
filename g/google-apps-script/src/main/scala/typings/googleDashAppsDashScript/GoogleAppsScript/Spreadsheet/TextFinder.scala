@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Find or replace text within a range, sheet or spreadsheet. Can also specify search options.
+  */
 trait TextFinder extends js.Object {
   def findAll(): js.Array[Range]
   def findNext(): Range | Null

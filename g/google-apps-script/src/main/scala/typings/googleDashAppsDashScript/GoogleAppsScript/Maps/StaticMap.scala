@@ -7,6 +7,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Allows for the creation and decoration of static map images.
+  *
+  * The example below shows how you can use this class to create a map of New York City's Theatre
+  * District, including nearby train stations, and display it in a simple web app.
+  *
+  *     // Create a map centered on Times Square.
+  *     var map = Maps.newStaticMap()
+  *         .setSize(600, 600)
+  *         .setCenter('Times Square, New York, NY');
+  *
+  *     // Add markers for the nearbye train stations.
+  *     map.setMarkerStyle(Maps.StaticMap.MarkerSize.MID, Maps.StaticMap.Color.RED, 'T');
+  *     map.addMarker('Grand Central Station, New York, NY');
+  *     map.addMarker('Penn Station, New York, NY');
+  *
+  *     // Show the boundaries of the Theatre District.
+  *     var corners = [
+  *       '8th Ave & 53rd St, New York, NY',
+  *       '6th Ave & 53rd St, New York, NY',
+  *       '6th Ave & 40th St, New York, NY',
+  *       '8th Ave & 40th St, New York, NY'
+  *     ];
+  *     map.setPathStyle(4, Maps.StaticMap.Color.BLACK, Maps.StaticMap.Color.BLUE);
+  *     map.beginPath();
+  *     for (var i = 0; i < corners.length; i++) {
+  *       map.addAddress(corners[i]);
+  *     }
+  *     // All static map URLs require an API key.
+  *     var url = map.getMapUrl() + "&key=YOUR_API_KEY";
+  *
+  * See also
+  *
+  * Google Static Maps API
+  */
 @js.native
 trait StaticMap extends js.Object {
   def addAddress(address: String): StaticMap = js.native

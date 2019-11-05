@@ -1,5 +1,6 @@
 package typings.reactDashRnd.reactDashRndMod
 
+import typings.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

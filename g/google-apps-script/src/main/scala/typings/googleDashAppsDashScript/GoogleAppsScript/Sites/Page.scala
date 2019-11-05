@@ -2,11 +2,18 @@ package typings.googleDashAppsDashScript.GoogleAppsScript.Sites
 
 import typings.googleDashAppsDashScript.Anon_Max
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.BlobSource
-import typings.std.Date
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A Page on a Google Site.
+  * A rebuilt
+  * version of Sites was launched on November 22, 2016. Apps Script cannot currently access or
+  * modify Sites made with this version, but script can still access
+  * classic Sites.
+  */
 @js.native
 trait Page extends js.Object {
   def addColumn(name: String): Column = js.native

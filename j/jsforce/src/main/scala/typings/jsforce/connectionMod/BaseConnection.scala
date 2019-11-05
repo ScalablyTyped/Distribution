@@ -147,6 +147,18 @@ abstract class BaseConnection () extends EventEmitter {
     options: ExecuteOptions,
     callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
   ): js.Promise[QueryResult[T]] = js.native
+  def recent(): js.Promise[js.Array[RecordResult]] = js.native
+  def recent(callback: js.Function2[/* err */ Error, /* result */ js.Array[RecordResult], Unit]): js.Promise[js.Array[RecordResult]] = js.native
+  def recent(param: String): js.Promise[js.Array[RecordResult]] = js.native
+  def recent(param: String, callback: js.Function2[/* err */ Error, /* result */ js.Array[RecordResult], Unit]): js.Promise[js.Array[RecordResult]] = js.native
+  def recent(param: Double): js.Promise[js.Array[RecordResult]] = js.native
+  def recent(param: Double, callback: js.Function2[/* err */ Error, /* result */ js.Array[RecordResult], Unit]): js.Promise[js.Array[RecordResult]] = js.native
+  def recent(`type`: String, limit: Double): js.Promise[js.Array[RecordResult]] = js.native
+  def recent(
+    `type`: String,
+    limit: Double,
+    callback: js.Function2[/* err */ Error, /* result */ js.Array[RecordResult], Unit]
+  ): js.Promise[js.Array[RecordResult]] = js.native
   def request(info: String): js.Promise[js.Object] = js.native
   def request(info: String, options: HttpApiOptions): js.Promise[js.Object] = js.native
   def request(

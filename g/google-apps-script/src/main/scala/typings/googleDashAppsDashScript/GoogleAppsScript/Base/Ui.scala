@@ -5,6 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An instance of the user-interface environment for a Google App that allows the script to add
+  * features like menus, dialogs, and sidebars. A script can only interact with the UI for the
+  * current instance of an open editor, and only if the script is container-bound to the editor.
+  *
+  *     // Display a dialog box with a title, message, input field, and "Yes" and "No" buttons. The
+  *     // user can also close the dialog by clicking the close button in its title bar.
+  *     var ui = SpreadsheetApp.getUi();
+  *     var response = ui.prompt('Getting to know you', 'May I know your name?', ui.ButtonSet.YES_NO);
+  *
+  *     // Process the user's response.
+  *     if (response.getSelectedButton() == ui.Button.YES) {
+  *       Logger.log('The user\'s name is %s.', response.getResponseText());
+  *     } else if (response.getSelectedButton() == ui.Button.NO) {
+  *       Logger.log('The user didn\'t want to provide a name.');
+  *     } else {
+  *       Logger.log('The user clicked the close button in the dialog\'s title bar.');
+  *     }
+  */
 @js.native
 trait Ui extends js.Object {
   var Button: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Button */ js.Any = js.native

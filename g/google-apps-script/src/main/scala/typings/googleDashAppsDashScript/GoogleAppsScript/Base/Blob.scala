@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A data interchange object for Apps Script services.
+  */
 @js.native
 trait Blob extends BlobSource {
   def copyBlob(): Blob = js.native

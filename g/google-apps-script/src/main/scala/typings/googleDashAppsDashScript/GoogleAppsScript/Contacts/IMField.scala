@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An instant messaging field in a Contact.
+  */
+// tslint:disable-next-line: interface-name
 @js.native
 trait IMField extends js.Object {
   def deleteIMField(): Unit = js.native

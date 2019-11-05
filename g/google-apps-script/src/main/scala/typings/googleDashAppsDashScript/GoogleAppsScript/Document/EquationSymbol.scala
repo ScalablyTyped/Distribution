@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a symbol in a mathematical Equation. An EquationSymbol
+  * cannot contain any other element. For more information on document structure, see the guide to extending Google Docs.
+  */
 trait EquationSymbol extends js.Object {
   def copy(): EquationSymbol
   def getAttributes(): js.Any

@@ -1,11 +1,14 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents a series of events (a recurring event).
+  */
 @js.native
 trait CalendarEventSeries extends js.Object {
   def addEmailReminder(minutesBefore: Integer): CalendarEventSeries = js.native

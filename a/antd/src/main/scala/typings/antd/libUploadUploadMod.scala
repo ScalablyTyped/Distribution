@@ -38,7 +38,7 @@ object libUploadUploadMod extends js.Object {
     def onFileDrop(e: DragEvent[HTMLDivElement]): Unit = js.native
     def onProgress(e: Anon_Percent, file: UploadFile[_]): Unit = js.native
     def onStart(file: RcFile): Unit = js.native
-    def onSuccess(response: js.Any, file: UploadFile[_]): Unit = js.native
+    def onSuccess(response: js.Any, file: UploadFile[_], xhr: js.Any): Unit = js.native
     def renderUpload(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
     def renderUploadList(locale: UploadLocale): Element = js.native
     def saveUpload(node: js.Any): Unit = js.native

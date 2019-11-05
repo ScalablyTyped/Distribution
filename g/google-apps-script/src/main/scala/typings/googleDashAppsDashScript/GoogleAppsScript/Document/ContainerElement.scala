@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A generic element that may contain other elements. All elements that may contain child elements,
+  * such as Paragraph, inherit from ContainerElement.
+  */
 @js.native
 trait ContainerElement extends js.Object {
   def asBody(): Body = js.native

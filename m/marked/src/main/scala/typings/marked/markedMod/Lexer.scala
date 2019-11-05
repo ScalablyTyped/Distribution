@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Lexer () extends js.Object {
   def this(options: MarkedOptions) = this()
+  var options: MarkedOptions = js.native
+  var rules: Rules = js.native
+  var tokens: TokensList = js.native
   def lex(src: String): TokensList = js.native
   def token(src: String, top: Boolean): TokensList = js.native
 }

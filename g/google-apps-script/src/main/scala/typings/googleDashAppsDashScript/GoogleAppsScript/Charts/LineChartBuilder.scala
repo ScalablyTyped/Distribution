@@ -5,6 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for line charts. For more details, see the Google Charts documentation.
+  *
+  * Here is an example that shows how to build a line chart. The data is imported from a Google spreadsheet.
+  *
+  *       // Get sample data from a spreadsheet.
+  *       var dataSourceUrl = 'https://docs.google.com/spreadsheet/tq?range=A1%3AG5' +
+  *           '&key=0Aq4s9w_HxMs7dHpfX05JdmVSb1FpT21sbXd4NVE3UEE&gid=2&headers=-1';
+  *
+  *       var chartBuilder = Charts.newLineChart()
+  *           .setTitle('Yearly Rainfall')
+  *           .setXAxisTitle('Month')
+  *           .setYAxisTitle('Rainfall (in)')
+  *           .setDimensions(600, 500)
+  *           .setCurveStyle(Charts.CurveStyle.SMOOTH)
+  *           .setPointStyle(Charts.PointStyle.MEDIUM)
+  *           .setDataSourceUrl(dataSourceUrl);
+  *
+  *       var chart = chartBuilder.build();
+  */
 @js.native
 trait LineChartBuilder extends js.Object {
   def build(): Chart = js.native

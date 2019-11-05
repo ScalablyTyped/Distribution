@@ -1,12 +1,15 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Contacts
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Month
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A Contact contains the name, address, and various contact details of a contact.
+  */
 @js.native
 trait Contact extends js.Object {
   def addAddress(label: String, address: String): AddressField = js.native

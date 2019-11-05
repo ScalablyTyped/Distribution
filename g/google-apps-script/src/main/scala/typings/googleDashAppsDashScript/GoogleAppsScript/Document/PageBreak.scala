@@ -4,6 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a page break. A PageBreak can be contained within a ListItem or Paragraph, unless the ListItem or Paragraph is within a
+  * Table, HeaderSection, FooterSection, or FootnoteSection. A PageBreak cannot itself contain any other element. For more information on document structure,
+  * see the guide to extending Google
+  * Docs.
+  */
 trait PageBreak extends js.Object {
   def copy(): PageBreak
   def getAttributes(): js.Any

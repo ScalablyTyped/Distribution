@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A collection of one or more Page instances.
+  */
 trait PageRange extends js.Object {
   def getPages(): js.Array[Page]
 }

@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for UpdateDraftActionResponse objects.
+  */
 trait UpdateDraftActionResponseBuilder extends js.Object {
   def build(): UpdateDraftActionResponse
   def setUpdateDraftBodyAction(updateDraftBodyAction: UpdateDraftBodyAction): UpdateDraftActionResponseBuilder

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "domelementtype"
-version := "1.3-dt-20190313Z-8b40d8"
+version := "2.0.1-233d2d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

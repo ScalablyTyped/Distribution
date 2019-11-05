@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-google-recaptcha"
-version := "1.1-dt-20190729Z-a6185d"
+version := "1.1-dt-20191104Z-696de3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

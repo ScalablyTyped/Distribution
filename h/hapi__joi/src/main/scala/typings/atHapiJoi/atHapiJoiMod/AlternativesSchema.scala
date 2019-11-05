@@ -8,8 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atHapiJoi.atHapiJoiMod._SchemaLike because Already inherited
-- typings.atHapiJoi.atHapiJoiMod.Schema because Already inherited */ @js.native
+- typings.atHapiJoi.atHapiJoiMod._Schema because Already inherited */ @js.native
 trait AlternativesSchema extends AnySchema {
   /**
     * Adds a conditional alternative schema type, either based on another key value, or a schema peeking into the current value.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for terser-webpack-plugin
 
-Typings are for version 1.2
+Typings are for version 2.2
 
 ## Library description:
 Terser plugin for webpack

@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify value groups in pivot tables.
+  */
 trait PivotValue extends js.Object {
   def getDisplayType(): PivotValueDisplayType
   def getFormula(): String | Null

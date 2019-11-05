@@ -6,6 +6,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a paragraph. A Paragraph may contain Equation, Footnote, HorizontalRule, InlineDrawing, InlineImage, PageBreak,
+  * and Text elements. For more information on document structure, see the guide to extending Google Docs.
+  *
+  * Paragraphs may not contain new-line characters. New-line characters ("\n") are
+  * converted to line-break characters ("\r").
+  *
+  *     var body = DocumentApp.getActiveDocument().getBody();
+  *
+  *     // Append a document header paragraph.
+  *     var header = body.appendParagraph("A Document");
+  *     header.setHeading(DocumentApp.ParagraphHeading.HEADING1);
+  *
+  *     // Append a section header paragraph.
+  *     var section = body.appendParagraph("Section 1");
+  *     section.setHeading(DocumentApp.ParagraphHeading.HEADING2);
+  *
+  *     // Append a regular paragraph.
+  *     body.appendParagraph("This is a typical paragraph.");
+  */
 @js.native
 trait Paragraph extends js.Object {
   def addPositionedImage(image: BlobSource): PositionedImage = js.native

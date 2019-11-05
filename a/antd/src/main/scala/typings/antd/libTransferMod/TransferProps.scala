@@ -22,7 +22,6 @@ trait TransferProps extends js.Object {
   var filterOption: js.UndefOr[js.Function2[/* inputValue */ String, /* item */ TransferItem, Boolean]] = js.undefined
   var footer: js.UndefOr[js.Function1[/* props */ TransferListProps, ReactNode]] = js.undefined
   var `lazy`: js.UndefOr[js.Object | Boolean] = js.undefined
-  var listStyle: js.UndefOr[CSSProperties] = js.undefined
   var locale: js.UndefOr[js.Object] = js.undefined
   var notFoundContent: js.UndefOr[ReactNode] = js.undefined
   var onChange: js.UndefOr[
@@ -63,12 +62,14 @@ trait TransferProps extends js.Object {
   var style: js.UndefOr[CSSProperties] = js.undefined
   var targetKeys: js.UndefOr[js.Array[String]] = js.undefined
   var titles: js.UndefOr[js.Array[String]] = js.undefined
+  def listStyle(style: ListStyle): CSSProperties
 }
 
 object TransferProps {
   @scala.inline
   def apply(
     dataSource: js.Array[TransferItem],
+    listStyle: ListStyle => CSSProperties,
     body: /* props */ TransferListProps => ReactNode = null,
     children: /* props */ TransferListBodyProps => ReactNode = null,
     className: String = null,
@@ -76,7 +77,6 @@ object TransferProps {
     filterOption: (/* inputValue */ String, /* item */ TransferItem) => Boolean = null,
     footer: /* props */ TransferListProps => ReactNode = null,
     `lazy`: js.Object | Boolean = null,
-    listStyle: CSSProperties = null,
     locale: js.Object = null,
     notFoundContent: ReactNode = null,
     onChange: (/* targetKeys */ js.Array[String], /* direction */ String, /* moveKeys */ js.Array[String]) => Unit = null,
@@ -97,7 +97,7 @@ object TransferProps {
     targetKeys: js.Array[String] = null,
     titles: js.Array[String] = null
   ): TransferProps = {
-    val __obj = js.Dynamic.literal(dataSource = dataSource)
+    val __obj = js.Dynamic.literal(dataSource = dataSource, listStyle = js.Any.fromFunction1(listStyle))
     if (body != null) __obj.updateDynamic("body")(js.Any.fromFunction1(body))
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (className != null) __obj.updateDynamic("className")(className)
@@ -105,7 +105,6 @@ object TransferProps {
     if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2(filterOption))
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
     if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3(onChange))

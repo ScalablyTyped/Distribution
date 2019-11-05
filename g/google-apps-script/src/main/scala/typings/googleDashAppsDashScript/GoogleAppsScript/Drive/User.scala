@@ -4,6 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A user associated with a file in Google Drive. Users can be accessed from File.getEditors(), Folder.getViewers(), and other methods.
+  *
+  *     // Log the email address of all users who have edit access to a file.
+  *     var file = DriveApp.getFileById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var editors = file.getEditors();
+  *     for (var i = 0; i < editors.length; i++) {
+  *       Logger.log(editors[i].getEmail());
+  *     }
+  */
 trait User extends js.Object {
   /** Gets the domain name associated with the user's account. */
   def getDomain(): String

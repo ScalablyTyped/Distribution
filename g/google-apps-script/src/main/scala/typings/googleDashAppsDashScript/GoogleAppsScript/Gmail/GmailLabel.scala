@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A user-created label in a user's Gmail account.
+  */
 @js.native
 trait GmailLabel extends js.Object {
   def addToThread(thread: GmailThread): GmailLabel = js.native

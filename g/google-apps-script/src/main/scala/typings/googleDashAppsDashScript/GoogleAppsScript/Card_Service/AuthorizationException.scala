@@ -4,6 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An error that can be returned to trigger an authorization card to be shown to the user.
+  *
+  *     CardService.newAuthorizationException()
+  *       .setAuthorizationUrl("http://auth.com/")
+  *       .setResourceDisplayName("Example Resource")
+  *       .throwException();
+  */
 trait AuthorizationException extends js.Object {
   def printJson(): String
   def setAuthorizationUrl(authUrl: String): AuthorizationException

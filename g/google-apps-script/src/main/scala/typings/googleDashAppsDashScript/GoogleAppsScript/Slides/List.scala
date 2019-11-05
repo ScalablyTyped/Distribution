@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A list in the text.
+  */
 trait List extends js.Object {
   def getListId(): String
   def getListParagraphs(): js.Array[Paragraph]

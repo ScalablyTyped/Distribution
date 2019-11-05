@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A collection of enums used by DirectionFinder.
+  */
 trait DirectionFinderEnums extends js.Object {
   var Avoid: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Avoid */ js.Any
   var Mode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Mode */ js.Any

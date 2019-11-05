@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nightwatch"
-version := "1.1-dt-20190802Z-f99330"
+version := "1.1-dt-20191105Z-aeac74"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-draft-wysiwyg"
-version := "1.12-dt-20190626Z-2d0e22"
+version := "1.13-dt-20191105Z-e174ab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

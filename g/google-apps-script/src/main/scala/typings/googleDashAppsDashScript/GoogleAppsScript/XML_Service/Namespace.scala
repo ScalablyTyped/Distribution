@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A representation of an XML namespace.
+  */
 trait Namespace extends js.Object {
   def getPrefix(): String
   def getURI(): String

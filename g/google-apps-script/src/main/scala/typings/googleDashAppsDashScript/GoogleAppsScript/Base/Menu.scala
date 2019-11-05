@@ -4,6 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A custom menu in an instance of the user interface for a Google App. A script can only interact
+  * with the UI for the current instance of an open document or form, and only if the script is container-bound to the document or form. For more
+  * information, see the guide to menus.
+  *
+  *     // Add a custom menu to the active spreadsheet, including a separator and a sub-menu.
+  *     function onOpen(e) {
+  *       SpreadsheetApp.getUi()
+  *           .createMenu('My Menu')
+  *           .addItem('My Menu Item', 'myFunction')
+  *           .addSeparator()
+  *           .addSubMenu(SpreadsheetApp.getUi().createMenu('My Submenu')
+  *               .addItem('One Submenu Item', 'mySecondFunction')
+  *               .addItem('Another Submenu Item', 'myThirdFunction'))
+  *           .addToUi();
+  *     }
+  */
 trait Menu extends js.Object {
   def addItem(caption: String, functionName: String): Menu
   def addSeparator(): Menu

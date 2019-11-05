@@ -1,10 +1,13 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Gmail
 
-import typings.std.Date
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A message in a user's Gmail account.
+  */
 @js.native
 trait GmailMessage extends js.Object {
   def createDraftReply(body: String): GmailDraft = js.native

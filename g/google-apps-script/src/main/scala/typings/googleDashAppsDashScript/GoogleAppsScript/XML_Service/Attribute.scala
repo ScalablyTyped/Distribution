@@ -4,6 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A representation of an XML attribute.
+  *
+  *     // Reads the first and last name of each person and adds a new attribute with the full name.
+  *     var xml = '<roster>'
+  *         + '<person first="John" last="Doe"/>'
+  *         + '<person first="Mary" last="Smith"/>'
+  *         + '</roster>';
+  *     var document = XmlService.parse(xml);
+  *     var people = document.getRootElement().getChildren('person');
+  *     for (var i = 0; i < people.length; i++) {
+  *       var person = people[i];
+  *       var firstName = person.getAttribute('first').getValue();
+  *       var lastName = person.getAttribute('last').getValue();
+  *       person.setAttribute('full', firstName + ' ' + lastName);
+  *     }
+  *     xml = XmlService.getPrettyFormat().format(document);
+  *     Logger.log(xml);
+  */
 trait Attribute extends js.Object {
   def getName(): String
   def getNamespace(): Namespace

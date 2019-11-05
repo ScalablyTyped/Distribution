@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Company field in a Contact.
+  */
 trait CompanyField extends js.Object {
   def deleteCompanyField(): Unit
   def getCompanyName(): String

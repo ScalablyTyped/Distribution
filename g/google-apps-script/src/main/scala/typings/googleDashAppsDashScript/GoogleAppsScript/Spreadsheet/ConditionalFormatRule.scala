@@ -4,6 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access conditional formatting rules. To create a new rule, use SpreadsheetApp.newConditionalFormatRule() and ConditionalFormatRuleBuilder.
+  * You can use Sheet.setConditionalFormatRules(rules) to set the
+  * rules for a given sheet.
+  */
 trait ConditionalFormatRule extends js.Object {
   def copy(): ConditionalFormatRuleBuilder
   def getBooleanCondition(): BooleanCondition | Null

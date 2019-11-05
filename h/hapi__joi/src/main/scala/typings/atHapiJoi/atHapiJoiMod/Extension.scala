@@ -53,7 +53,7 @@ object Extension {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (args != null) __obj.updateDynamic("args")(js.Any.fromFunction1(args))
-    if (base != null) __obj.updateDynamic("base")(base)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (cast != null) __obj.updateDynamic("cast")(cast)
     if (coerce != null) __obj.updateDynamic("coerce")(coerce.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags)

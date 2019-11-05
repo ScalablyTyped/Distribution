@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Weekday extends js.Object
 
+/**
+  * An enum representing the days of the week.
+  */
 @JSGlobal("GoogleAppsScript.Base.Weekday")
 @js.native
 object Weekday extends js.Object {

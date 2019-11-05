@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A PageElement representing a video.
+  */
 @js.native
 trait Video extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): Video = js.native

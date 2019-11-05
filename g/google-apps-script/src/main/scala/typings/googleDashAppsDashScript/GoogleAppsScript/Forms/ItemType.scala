@@ -7,6 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ItemType extends js.Object
 
+/**
+  * An enum representing the supported types of form items. Item types can be accessed from FormApp.ItemType.
+  *
+  *     // Open a form by ID and add a new section header.
+  *     var form = FormApp.create('Form Name');
+  *     var item = form.addSectionHeaderItem();
+  *     item.setTitle('Title of new section');
+  *
+  *     // Check the item type.
+  *     if (item.getType() == FormApp.ItemType.SECTION_HEADER) {
+  *       item.setHelpText('Description of new section.');
+  *     }
+  */
 @JSGlobal("GoogleAppsScript.Forms.ItemType")
 @js.native
 object ItemType extends js.Object {

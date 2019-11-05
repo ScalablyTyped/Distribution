@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait MarkerSize extends js.Object
 
+/**
+  * An enum representing the size of a marker added to a map.
+  * See also
+  *
+  * Google Static Maps API
+  */
 @JSGlobal("GoogleAppsScript.Maps.MarkerSize")
 @js.native
 object MarkerSize extends js.Object {

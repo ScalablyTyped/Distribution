@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait RelativeDate extends js.Object
 
+/**
+  * An enumeration representing the relative date options for calculating a value to be used in
+  * date-based BooleanCriteria.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.RelativeDate")
 @js.native
 object RelativeDate extends js.Object {

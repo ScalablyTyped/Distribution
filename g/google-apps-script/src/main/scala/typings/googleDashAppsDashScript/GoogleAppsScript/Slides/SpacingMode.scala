@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait SpacingMode extends js.Object
 
+/**
+  * The different modes for paragraph spacing.
+  */
 @JSGlobal("GoogleAppsScript.Slides.SpacingMode")
 @js.native
 object SpacingMode extends js.Object {

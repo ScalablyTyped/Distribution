@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A PageElement representing a generic shape that does not have a more specific
+  * classification. Includes text boxes, rectangles, and other predefined shapes.
+  */
 @js.native
 trait Shape extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): Shape = js.native

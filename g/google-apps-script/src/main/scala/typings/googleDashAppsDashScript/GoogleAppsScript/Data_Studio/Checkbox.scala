@@ -4,6 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Contains checkbox information for the config. Its properties determine how the checkbox is
+  * displayed in Data Studio.
+  *
+  *     var checkbox = config.newCheckbox()
+  *       .setId("use_https")
+  *       .setName("Use Https?")
+  *       .setHelpText("Whether or not https should be used.")
+  *       .setAllowOverride(true);
+  */
 trait Checkbox extends js.Object {
   def setAllowOverride(allowOverride: Boolean): Checkbox
   def setHelpText(helpText: String): Checkbox

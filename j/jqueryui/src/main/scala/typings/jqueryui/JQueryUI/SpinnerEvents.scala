@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +16,11 @@ trait SpinnerEvents extends js.Object {
 object SpinnerEvents {
   @scala.inline
   def apply(
-    change: (/* event */ Event, js.Object) => Unit = null,
-    create: (/* event */ Event, js.Object) => Unit = null,
-    spin: (/* event */ Event, SpinnerUIParam) => Unit = null,
-    start: (/* event */ Event, js.Object) => Unit = null,
-    stop: (/* event */ Event, js.Object) => Unit = null
+    change: (/* event */ JQueryEventObject, js.Object) => Unit = null,
+    create: (/* event */ JQueryEventObject, js.Object) => Unit = null,
+    spin: (/* event */ JQueryEventObject, SpinnerUIParam) => Unit = null,
+    start: (/* event */ JQueryEventObject, js.Object) => Unit = null,
+    stop: (/* event */ JQueryEventObject, js.Object) => Unit = null
   ): SpinnerEvents = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))

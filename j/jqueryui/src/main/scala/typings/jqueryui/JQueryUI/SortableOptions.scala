@@ -1,6 +1,5 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
 import typings.jquery.JQueryEventObject
 import typings.std.Element
 import scala.scalajs.js
@@ -29,7 +28,9 @@ trait SortableOptions extends SortableEvents {
   var forcePlaceholderSize: js.UndefOr[Boolean] = js.undefined
   var grid: js.UndefOr[js.Array[Double]] = js.undefined
   var handle: js.UndefOr[js.Any] = js.undefined
-  var helper: js.UndefOr[String | (js.Function2[/* event */ Event, /* element */ Sortable, Element])] = js.undefined
+  var helper: js.UndefOr[
+    String | (js.Function2[/* event */ JQueryEventObject, /* element */ Sortable, Element])
+  ] = js.undefined
    // Selector or Element
   var items: js.UndefOr[js.Any] = js.undefined
    // Selector
@@ -67,7 +68,7 @@ object SortableOptions {
     forcePlaceholderSize: js.UndefOr[Boolean] = js.undefined,
     grid: js.Array[Double] = null,
     handle: js.Any = null,
-    helper: String | (js.Function2[/* event */ Event, /* element */ Sortable, Element]) = null,
+    helper: String | (js.Function2[/* event */ JQueryEventObject, /* element */ Sortable, Element]) = null,
     items: js.Any = null,
     opacity: Int | Double = null,
     out: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,

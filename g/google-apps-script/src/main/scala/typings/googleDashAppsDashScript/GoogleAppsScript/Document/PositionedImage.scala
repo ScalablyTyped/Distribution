@@ -6,6 +6,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Fixed position image anchored to a Paragraph. Unlike an InlineImage, a PositionedImage is
+  * not an Element. It does not have a
+  * parent or sibling Element. Instead,
+  * it is anchored to a Paragraph or ListItem, and is placed via offsets from
+  * that anchor. A PositionedImage has an ID that can be used to reference it.
+  *
+  *     var body = DocumentApp.getActiveDocument().getBody();
+  *
+  *     // Append a new paragraph.
+  *     var paragraph = body.appendParagraph("New paragraph to anchor the image to.");
+  *     *
+  *     // Get an image in Drive from its ID.
+  *     var image = DriveApp.getFileById('ENTER_IMAGE_FILE_ID_HERE').getBlob();
+  *
+  *     // Add the PositionedImage with offsets (in points).
+  *     var posImage = paragraph.addPositionedImage(image)
+  *         .setTopOffset(60)
+  *         .setLeftOffset(40);
+  */
 trait PositionedImage extends js.Object {
   def getAs(contentType: String): Blob
   def getBlob(): Blob

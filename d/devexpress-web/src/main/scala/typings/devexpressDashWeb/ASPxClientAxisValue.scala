@@ -27,5 +27,6 @@ class ASPxClientAxisValue () extends js.Object {
     * Gets the axis scale type.
     */
   var scaleType: String = js.native
+  var timeSpanValue: js.Any = js.native
 }
 

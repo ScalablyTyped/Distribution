@@ -261,6 +261,7 @@ package object devexpressDashWeb {
     * @param e An ASPxClientCustomDataCallbackEventHandler&lt;Sender&gt; object that contains event data.
     */
   type ASPxClientCustomDataCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomDataCallbackEventArgs, Unit]
+  type ASPxClientCustomizeDataSourceWizardEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientCustomizeDataSourceWizardEventArgs, Unit]
   /**
     * References a method that handles the ASPxClientDashboard.BeforeRender event.
     * @param source The event source.
@@ -767,6 +768,11 @@ package object devexpressDashWeb {
     * @param e An ASPxDataValidationEventArgs object that contains event data.
     */
   type ASPxClientGlobalEndCallbackEventHandler[Sender] = js.Function2[/* source */ Sender, /* e */ ASPxClientGlobalEndCallbackEventArgs, Unit]
+  type ASPxClientGridBatchEditSummaryDisplayTextEventHandler[Sender] = js.Function2[
+    /* source */ Sender, 
+    /* e */ ASPxClientGridBatchEditSummaryDisplayTextEventArgs, 
+    Unit
+  ]
   /**
     * A method that will handle the ASPxClientGridBase.ToolbarItemClick event.
     * @param source The event source.

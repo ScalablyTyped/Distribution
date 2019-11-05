@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a header section. A Document typically contains at most one HeaderSection. The HeaderSection may contain ListItem, Paragraph, and
+  * Table elements. For more information on document structure, see the guide to extending Google Docs.
+  */
 @js.native
 trait HeaderSection extends js.Object {
   def appendHorizontalRule(): HorizontalRule = js.native

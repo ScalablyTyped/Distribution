@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__ui"
-version := "5.2.5-c6d746"
+version := "5.2.5-750029"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,12 +17,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-6c6f24",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
-  "org.scalablytyped" %%% "react-textarea-autosize" % "4.3.0-dt-20190404Z-654280",
+  "org.scalablytyped" %%% "react-textarea-autosize" % "4.3.0-dt-20191105Z-dc5e34",
   "org.scalablytyped" %%% "std" % "3.6-b80e7a",
   "org.scalablytyped" %%% "storybook__addon-actions" % "5.2.5-807b2b",
   "org.scalablytyped" %%% "storybook__api" % "5.2.5-a78663",
   "org.scalablytyped" %%% "storybook__channels" % "5.2.5-6a808a",
-  "org.scalablytyped" %%% "storybook__components" % "5.2.5-86c10d",
+  "org.scalablytyped" %%% "storybook__components" % "5.2.5-db4969",
   "org.scalablytyped" %%% "storybook__router" % "5.2.5-2279cd",
   "org.scalablytyped" %%% "storybook__theming" % "5.2.5-d155f6")
 publishArtifact in packageDoc := false

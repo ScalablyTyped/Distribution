@@ -5,21 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Lists task title positions.
+  * Declares client constants that specify the task title position.
   */
 @JSGlobal("ASPxClientGanttTaskTitlePosition")
 @js.native
 class ASPxClientGanttTaskTitlePosition () extends js.Object {
   /**
-    * Displays a title inside the task.
+    * Displays the title inside the task.
     */
   var Inside: Double = js.native
   /**
-    * Does not display the task's title.
+    * The title is hidden.
     */
   var None: Double = js.native
   /**
-    * Displays a title outside the task.
+    * Displays the title outside the task.
     */
   var Outside: Double = js.native
 }

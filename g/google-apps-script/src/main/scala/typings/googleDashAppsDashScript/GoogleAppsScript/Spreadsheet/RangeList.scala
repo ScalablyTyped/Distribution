@@ -17,6 +17,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A collection of one or more Range instances in the same sheet. You can use this class
+  * to apply operations on collections of non-adjacent ranges or cells.
+  */
 @js.native
 trait RangeList extends js.Object {
   def activate(): RangeList = js.native

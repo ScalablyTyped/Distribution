@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify pivot table filters.
+  */
 trait PivotFilter extends js.Object {
   def getFilterCriteria(): FilterCriteria
   def getPivotTable(): PivotTable

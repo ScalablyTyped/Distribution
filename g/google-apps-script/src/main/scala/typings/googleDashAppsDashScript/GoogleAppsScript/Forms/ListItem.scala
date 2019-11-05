@@ -5,6 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to select one choice from a drop-down list. Items can
+  * be accessed or created from a Form.
+  *
+  *     // Open a form by ID and add a new list item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addListItem();
+  *     item.setTitle('Do you prefer cats or dogs?')
+  *         .setChoices([
+  *             item.createChoice('Cats'),
+  *             item.createChoice('Dogs')
+  *         ]);
+  */
 @js.native
 trait ListItem extends js.Object {
   def createChoice(value: String): Choice = js.native

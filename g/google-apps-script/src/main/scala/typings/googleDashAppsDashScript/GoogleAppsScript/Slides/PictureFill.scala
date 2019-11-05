@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A fill that renders an image that's stretched to the dimensions of its container.
+  */
 trait PictureFill extends js.Object {
   def getAs(contentType: String): Blob
   def getBlob(): Blob

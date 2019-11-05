@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A hypertext link.
+  */
 trait Link extends js.Object {
   def getLinkType(): LinkType
   def getLinkedSlide(): Slide

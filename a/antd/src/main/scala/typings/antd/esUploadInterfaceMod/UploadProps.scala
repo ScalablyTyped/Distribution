@@ -1,5 +1,9 @@
 package typings.antd.esUploadInterfaceMod
 
+import typings.antd.antdStrings.POST
+import typings.antd.antdStrings.PUT
+import typings.antd.antdStrings.post
+import typings.antd.antdStrings.put
 import typings.react.reactMod.CSSProperties
 import typings.std.Blob
 import typings.std.File
@@ -24,6 +28,7 @@ trait UploadProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
   var locale: js.UndefOr[UploadLocale] = js.undefined
+  var method: js.UndefOr[POST | PUT | post | put] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile[_]], Unit]] = js.undefined
@@ -60,6 +65,7 @@ object UploadProps {
     id: String = null,
     listType: UploadListType = null,
     locale: UploadLocale = null,
+    method: POST | PUT | post | put = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onChange: /* info */ UploadChangeParam[UploadFile[_]] => Unit = null,
@@ -91,6 +97,7 @@ object UploadProps {
     if (id != null) __obj.updateDynamic("id")(id)
     if (listType != null) __obj.updateDynamic("listType")(listType)
     if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

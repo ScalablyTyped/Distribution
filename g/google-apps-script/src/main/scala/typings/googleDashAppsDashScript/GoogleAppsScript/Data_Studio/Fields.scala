@@ -4,6 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Contains a set of Fields for a community connector. This set of fields define which
+  * dimensions and metrics can be used in Data Studio.
+  *
+  *     var cc = DataStudioApp.createCommunityConnector();
+  *     var fields = cc.getFields();
+  *     var types = cc.FieldType;
+  *
+  *     var field1 = fields.newDimension()
+  *       // Set other properties as needed.
+  *       .setId('field1_id');
+  */
 trait Fields extends js.Object {
   def asArray(): js.Array[Field]
   def build(): js.Array[_]

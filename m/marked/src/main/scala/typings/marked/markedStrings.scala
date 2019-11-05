@@ -27,6 +27,9 @@ object markedStrings {
   sealed trait html extends js.Object
   
   @js.native
+  sealed trait indented extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -73,6 +76,8 @@ object markedStrings {
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
+  def indented: indented = "indented".asInstanceOf[indented]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline

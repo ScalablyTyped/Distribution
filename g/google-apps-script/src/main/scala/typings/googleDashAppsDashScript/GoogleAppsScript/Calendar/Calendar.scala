@@ -1,11 +1,14 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents a calendar that the user owns or is subscribed to.
+  */
 @js.native
 trait Calendar extends js.Object {
   def createAllDayEvent(title: String, date: Date): CalendarEvent = js.native

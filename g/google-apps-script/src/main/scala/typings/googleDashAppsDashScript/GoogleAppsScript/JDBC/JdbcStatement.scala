@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Statement. For documentation of this class, see java.sql.Statement
+  * .
+  */
 @js.native
 trait JdbcStatement extends js.Object {
   def addBatch(sql: String): Unit = js.native

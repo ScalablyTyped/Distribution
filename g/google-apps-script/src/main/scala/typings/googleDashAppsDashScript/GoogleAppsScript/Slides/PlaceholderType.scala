@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait PlaceholderType extends js.Object
 
+/**
+  * The placeholder types. Many of these placeholder types correspond to placeholder IDs from the
+  * ECMA-376 standard. More information on those shapes can be found in the description of the
+  * "ST_PlaceholderType" type in section 19.7.10 of "Office Open XML File Formats - Fundamentals and
+  * Markup Language Reference", part 1 of ECMA-376 5th
+  * edition.
+  */
 @JSGlobal("GoogleAppsScript.Slides.PlaceholderType")
 @js.native
 object PlaceholderType extends js.Object {

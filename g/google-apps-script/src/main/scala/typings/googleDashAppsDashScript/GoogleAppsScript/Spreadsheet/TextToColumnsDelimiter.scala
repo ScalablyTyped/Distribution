@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait TextToColumnsDelimiter extends js.Object
 
+/**
+  * An enumeration of the types of preset delimiters that can split a column of text into multiple
+  * columns.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter")
 @js.native
 object TextToColumnsDelimiter extends js.Object {

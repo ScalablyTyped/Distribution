@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A PageElement representing word art.
+  */
 @js.native
 trait WordArt extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): WordArt = js.native

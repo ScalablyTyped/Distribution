@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A script trigger.
+  */
 trait Trigger extends js.Object {
   def getEventType(): EventType
   def getHandlerFunction(): String

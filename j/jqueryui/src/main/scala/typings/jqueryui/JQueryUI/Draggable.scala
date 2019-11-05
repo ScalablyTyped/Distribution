@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +11,6 @@ trait Draggable
      with Widget
      with DraggableOptions {
   /* InferMemberOverrides */
-  override def apply(T0: /* event */ Event, T1: /* ui */ DraggableEventUIParams): Unit = js.native
+  override def apply(T0: /* event */ JQueryEventObject, T1: /* ui */ DraggableEventUIParams): Unit = js.native
 }
 

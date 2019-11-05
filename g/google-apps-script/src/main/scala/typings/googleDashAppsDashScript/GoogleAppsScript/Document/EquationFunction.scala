@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a function in a mathematical Equation. An EquationFunction may contain EquationFunction, EquationFunctionArgumentSeparator, EquationSymbol, and Text elements. For more
+  * information on document structure, see the guide to extending Google Docs.
+  */
 @js.native
 trait EquationFunction extends js.Object {
   def clear(): EquationFunction = js.native

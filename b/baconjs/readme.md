@@ -1,7 +1,7 @@
 
 # Scala.js typings for baconjs
 
-Typings are for version 0.7.0
+Typings are for version 3.0.11
 
 ## Library description:
 A small functional reactive programming lib for JavaScript.
@@ -24,7 +24,7 @@ A small functional reactive programming lib for JavaScript.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

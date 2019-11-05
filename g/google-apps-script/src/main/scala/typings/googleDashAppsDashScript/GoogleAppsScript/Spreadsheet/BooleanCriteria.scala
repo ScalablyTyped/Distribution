@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait BooleanCriteria extends js.Object
 
+/**
+  * An enumeration representing the boolean criteria that can be used in conditional format or
+  * filter.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.BooleanCriteria")
 @js.native
 object BooleanCriteria extends js.Object {

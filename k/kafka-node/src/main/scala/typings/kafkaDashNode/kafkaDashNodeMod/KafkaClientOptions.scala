@@ -9,8 +9,12 @@ trait KafkaClientOptions extends js.Object {
   var clientId: js.UndefOr[String] = js.undefined
   var connectRetryOptions: js.UndefOr[RetryOptions] = js.undefined
   var connectTimeout: js.UndefOr[Double] = js.undefined
+  var idleConnection: js.UndefOr[Double] = js.undefined
   var kafkaHost: js.UndefOr[String] = js.undefined
+  var maxAsyncRequests: js.UndefOr[Double] = js.undefined
+  var reconnectOnIdle: js.UndefOr[Boolean] = js.undefined
   var requestTimeout: js.UndefOr[Double] = js.undefined
+  var sasl: js.UndefOr[js.Any] = js.undefined
   var sslOptions: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -21,8 +25,12 @@ object KafkaClientOptions {
     clientId: String = null,
     connectRetryOptions: RetryOptions = null,
     connectTimeout: Int | Double = null,
+    idleConnection: Int | Double = null,
     kafkaHost: String = null,
+    maxAsyncRequests: Int | Double = null,
+    reconnectOnIdle: js.UndefOr[Boolean] = js.undefined,
     requestTimeout: Int | Double = null,
+    sasl: js.Any = null,
     sslOptions: js.Any = null
   ): KafkaClientOptions = {
     val __obj = js.Dynamic.literal()
@@ -30,8 +38,12 @@ object KafkaClientOptions {
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (connectRetryOptions != null) __obj.updateDynamic("connectRetryOptions")(connectRetryOptions)
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (idleConnection != null) __obj.updateDynamic("idleConnection")(idleConnection.asInstanceOf[js.Any])
     if (kafkaHost != null) __obj.updateDynamic("kafkaHost")(kafkaHost)
+    if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnectOnIdle)) __obj.updateDynamic("reconnectOnIdle")(reconnectOnIdle)
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    if (sasl != null) __obj.updateDynamic("sasl")(sasl)
     if (sslOptions != null) __obj.updateDynamic("sslOptions")(sslOptions)
     __obj.asInstanceOf[KafkaClientOptions]
   }

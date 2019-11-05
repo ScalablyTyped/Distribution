@@ -26,5 +26,6 @@ trait ReactResizeObserver
   def componentWillUnmount_MReactResizeObserver(): Unit = js.native
   def destroyObserver(): Unit = js.native
   def onComponentUpdated(): Unit = js.native
+  def setChildNode(node: RefNode): Unit = js.native
 }
 

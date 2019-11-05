@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** JdbcAdvancedParameters */
 trait CloudSqlAdvancedParameters extends js.Object {
   /** connection timeout in seconds */
   var connectTimeoutSeconds: js.UndefOr[Integer] = js.undefined

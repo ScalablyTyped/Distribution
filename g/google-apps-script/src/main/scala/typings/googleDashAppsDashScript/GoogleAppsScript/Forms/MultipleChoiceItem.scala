@@ -5,6 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to select one choice from a list of radio buttons or
+  * an optional "other" field. Items can be accessed or created from a Form. When used in a
+  * quiz, these items are autograded.
+  *
+  *     // Open a form by ID and add a new multiple choice item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addMultipleChoiceItem();
+  *     item.setTitle('Do you prefer cats or dogs?')
+  *         .setChoices([
+  *             item.createChoice('Cats'),
+  *             item.createChoice('Dogs')
+  *          ])
+  *         .showOtherOption(true);
+  */
 @js.native
 trait MultipleChoiceItem extends js.Object {
   def createChoice(value: String): Choice = js.native

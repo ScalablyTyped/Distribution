@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait LinkType extends js.Object
 
+/**
+  * The types of a Link.
+  */
 @JSGlobal("GoogleAppsScript.Slides.LinkType")
 @js.native
 object LinkType extends js.Object {

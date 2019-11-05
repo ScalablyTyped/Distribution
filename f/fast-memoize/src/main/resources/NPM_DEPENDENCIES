@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fast-memoize" : "2.5.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fast-memoize" : "2.5.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

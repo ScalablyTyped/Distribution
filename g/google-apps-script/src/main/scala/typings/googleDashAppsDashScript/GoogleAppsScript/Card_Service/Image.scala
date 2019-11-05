@@ -4,6 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A widget that shows a single image.
+  *
+  *     var image = CardService.newImage().setAltText("A nice image").setImageUrl("https://image.png");
+  */
 trait Image extends js.Object {
   def setAltText(altText: String): Image
   def setAuthorizationAction(action: AuthorizationAction): Image

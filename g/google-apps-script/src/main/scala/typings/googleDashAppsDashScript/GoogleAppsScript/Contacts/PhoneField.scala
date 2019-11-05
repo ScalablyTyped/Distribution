@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A phone number field in a Contact.
+  */
 @js.native
 trait PhoneField extends js.Object {
   def deletePhoneField(): Unit = js.native

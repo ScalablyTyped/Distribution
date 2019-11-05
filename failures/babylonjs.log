@@ -72,7 +72,12 @@
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DomManagement), TsIdentSimple(IsWindowObjectExist))) [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(BABYLON) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(IsWindowObjectExist) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:198 Couldn't resolve typeof DomManagement.IsWindowObjectExist [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(BABYLON) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(IsWindowObjectExist) / TsTypeQuery())] 
 [error] PhaseRes.scala:79 StackOverflowError [id => babylonjs, phase => typescript] java.lang.StackOverflowError
-	at com.olvind.tso.ts.TsTreeScope$.search(TsTreeScope.scala:442)
+	at scala.PartialFunction.$anonfun$runWith$1$adapted(PartialFunction.scala:145)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike.collect(TraversableLike.scala:359)
+	at scala.collection.TraversableLike.collect$(TraversableLike.scala:357)
+	at scala.collection.immutable.List.collect(List.scala:327)
+	at com.olvind.tso.ts.TsTreeScope$.search(TsTreeScope.scala:443)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.local$1(TsTreeScope.scala:331)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:402)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:94)
@@ -1091,11 +1096,6 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
 	at scala.collection.immutable.List.map(List.scala:298)
-	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:14)
-	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
-	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
-	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
-	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
 
 [error] PhaseRunner.scala:88 Failure, [babylonjs => java.lang.StackOverflowError] [id => babylonjs, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [babylonjs => java.lang.StackOverflowError] [id => babylonjs, phase => scala.js] 

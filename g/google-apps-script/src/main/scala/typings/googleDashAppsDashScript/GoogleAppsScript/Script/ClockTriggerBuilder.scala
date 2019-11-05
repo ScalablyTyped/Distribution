@@ -1,12 +1,15 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for clock triggers.
+  */
 trait ClockTriggerBuilder extends js.Object {
   def after(durationMilliseconds: Integer): ClockTriggerBuilder
   def at(date: Date): ClockTriggerBuilder

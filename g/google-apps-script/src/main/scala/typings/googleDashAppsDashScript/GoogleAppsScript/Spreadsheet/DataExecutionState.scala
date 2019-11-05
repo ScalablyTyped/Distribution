@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait DataExecutionState extends js.Object
 
+/**
+  * An enumeration of data execution states.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DataExecutionState")
 @js.native
 object DataExecutionState extends js.Object {

@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The rendered style of text in a cell.
+  *
+  * Text styles can have a corresponding RichTextValue. If the RichTextValue spans multiple text runs that have different values for a given text style read
+  * method, the method returns null. To avoid this, query for text styles using the Rich Text
+  * values returned by the RichTextValue.getRuns() method.
+  */
 trait TextStyle extends js.Object {
   def copy(): TextStyleBuilder
   def getFontFamily(): String | Null

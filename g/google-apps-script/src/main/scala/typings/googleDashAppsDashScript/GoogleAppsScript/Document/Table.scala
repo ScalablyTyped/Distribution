@@ -5,6 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a table. A Table may only contain TableRow elements. For
+  * more information on document structure, see the guide to extending Google Docs.
+  *
+  * When creating a Table that contains a large number of rows or cells, consider building
+  * it from a string array, as shown in the following example.
+  *
+  *     var body = DocumentApp.getActiveDocument().getBody();
+  *
+  *     // Create a two-dimensional array containing the cell contents.
+  *     var cells = [
+  *       ['Row 1, Cell 1', 'Row 1, Cell 2'],
+  *       ['Row 2, Cell 1', 'Row 2, Cell 2']
+  *     ];
+  *
+  *     // Build a table from the array.
+  *     body.appendTable(cells);
+  */
 @js.native
 trait Table extends js.Object {
   def appendTableRow(): TableRow = js.native

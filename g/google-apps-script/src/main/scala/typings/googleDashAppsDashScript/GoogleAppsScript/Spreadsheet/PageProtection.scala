@@ -4,6 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  *
+  * Deprecated. For spreadsheets created in the newer version of Google Sheets, use the more powerful
+  *     Protection class instead. Although this class is deprecated, it remains available
+  *     for compatibility with the older version of Sheets.
+  * Access and modify protected sheets in the older version of Google Sheets.
+  */
 trait PageProtection extends js.Object {
   def addUser(email: String): Unit
   def getUsers(): js.Array[String]

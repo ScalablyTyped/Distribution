@@ -88,7 +88,7 @@ trait Props extends js.Object {
     *
     * Default: false.
     */
-  var mouseDragEnabled: js.UndefOr[Boolean] = js.undefined
+  var mouseTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   /**
     * Fired when the gallery was initialized / returns event object
     */
@@ -163,6 +163,12 @@ trait Props extends js.Object {
     * Default: false.
     */
   var swipeDisabled: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Enable touch tracking animation
+    *
+    * Default: false.
+    */
+  var touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined
 }
 
 object Props {
@@ -181,7 +187,7 @@ object Props {
     infinite: js.UndefOr[Boolean] = js.undefined,
     items: js.Array[js.Object] = null,
     keysControlDisabled: js.UndefOr[Boolean] = js.undefined,
-    mouseDragEnabled: js.UndefOr[Boolean] = js.undefined,
+    mouseTrackingEnabled: js.UndefOr[Boolean] = js.undefined,
     onInitialized: /* e */ EventObject => Unit = null,
     onResized: /* e */ EventObject => Unit = null,
     onSlideChange: /* e */ EventObject => Unit = null,
@@ -195,7 +201,8 @@ object Props {
     stagePadding: js.Object = null,
     startIndex: Int | Double = null,
     stopAutoPlayOnHover: js.UndefOr[Boolean] = js.undefined,
-    swipeDisabled: js.UndefOr[Boolean] = js.undefined
+    swipeDisabled: js.UndefOr[Boolean] = js.undefined,
+    touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
@@ -211,7 +218,7 @@ object Props {
     if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
     if (items != null) __obj.updateDynamic("items")(items)
     if (!js.isUndefined(keysControlDisabled)) __obj.updateDynamic("keysControlDisabled")(keysControlDisabled)
-    if (!js.isUndefined(mouseDragEnabled)) __obj.updateDynamic("mouseDragEnabled")(mouseDragEnabled)
+    if (!js.isUndefined(mouseTrackingEnabled)) __obj.updateDynamic("mouseTrackingEnabled")(mouseTrackingEnabled)
     if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
     if (onResized != null) __obj.updateDynamic("onResized")(js.Any.fromFunction1(onResized))
     if (onSlideChange != null) __obj.updateDynamic("onSlideChange")(js.Any.fromFunction1(onSlideChange))
@@ -226,6 +233,7 @@ object Props {
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(stopAutoPlayOnHover)) __obj.updateDynamic("stopAutoPlayOnHover")(stopAutoPlayOnHover)
     if (!js.isUndefined(swipeDisabled)) __obj.updateDynamic("swipeDisabled")(swipeDisabled)
+    if (!js.isUndefined(touchTrackingEnabled)) __obj.updateDynamic("touchTrackingEnabled")(touchTrackingEnabled)
     __obj.asInstanceOf[Props]
   }
 }

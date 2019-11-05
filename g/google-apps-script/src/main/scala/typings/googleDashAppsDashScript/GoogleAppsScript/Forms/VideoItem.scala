@@ -5,6 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A layout item that displays a video. Items can be accessed or created from a Form.
+  *
+  *     // Open a form by ID and add three new video items, using a long URL,
+  *     // a short URL, and a video ID.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     form.addVideoItem()
+  *         .setTitle('Video Title')
+  *         .setHelpText('Video Caption')
+  *         .setVideoUrl('www.youtube.com/watch?v=1234abcdxyz');
+  *
+  *     form.addVideoItem()
+  *         .setTitle('Video Title')
+  *         .setHelpText('Video Caption')
+  *         .setVideoUrl('youtu.be/1234abcdxyz');
+  *
+  *     form.addVideoItem()
+  *         .setTitle('Video Title')
+  *         .setHelpText('Video Caption')
+  *         .setVideoUrl('1234abcdxyz');
+  */
 trait VideoItem extends js.Object {
   def duplicate(): VideoItem
   def getAlignment(): Alignment

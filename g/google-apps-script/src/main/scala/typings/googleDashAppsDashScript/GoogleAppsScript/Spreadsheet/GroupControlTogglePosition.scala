@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait GroupControlTogglePosition extends js.Object
 
+/**
+  * An enumeration representing the possible positions that a group control toggle can have.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.GroupControlTogglePosition")
 @js.native
 object GroupControlTogglePosition extends js.Object {

@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A representation of an XML Text node.
+  */
 trait Text extends js.Object {
   def append(text: String): Text
   def detach(): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content

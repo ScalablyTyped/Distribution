@@ -5,6 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for conditional format rules.
+  *
+  *     // Adds a conditional format rule to a sheet that causes cells in range A1:B3 to turn red if
+  *     // they contain a number between 1 and 10.
+  *     var sheet = SpreadsheetApp.getActiveSheet();
+  *     var range = sheet.getRange("A1:B3");
+  *     var rule = SpreadsheetApp.newConditionalFormatRule()
+  *         .whenNumberBetween(1, 10)
+  *         .setBackground("#FF0000")
+  *         .setRanges([range])
+  *         .build();
+  *     var rules = sheet.getConditionalFormatRules();
+  *     rules.push(rule);
+  *     sheet.setConditionalFormatRules(rules);
+  */
 @js.native
 trait ConditionalFormatRuleBuilder extends js.Object {
   def build(): ConditionalFormatRule = js.native

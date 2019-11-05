@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait PointStyle extends js.Object
 
+/**
+  * An enumeration of the styles of points in a line.
+  */
 @JSGlobal("GoogleAppsScript.Charts.PointStyle")
 @js.native
 object PointStyle extends js.Object {

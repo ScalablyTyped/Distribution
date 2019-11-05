@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A generic builder for script triggers.
+  */
 @js.native
 trait TriggerBuilder extends js.Object {
   def forDocument(document: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Document): DocumentTriggerBuilder = js.native

@@ -10,6 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for area charts. For more details, see the Gviz
+  * documentation.
+  */
 trait EmbeddedAreaChartBuilder extends js.Object {
   def addRange(range: Range): EmbeddedChartBuilder
   def asAreaChart(): EmbeddedAreaChartBuilder

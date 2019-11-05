@@ -4,6 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A TextButton with a text label. You can set the background color and disable the button when
+  * needed.
+  *
+  *     var textButton = CardService.newTextButton()
+  *         .setText("Open Link")
+  *         .setOpenLink(CardService.newOpenLink()
+  *             .setUrl("https://www.google.com"));
+  */
 trait TextButton extends js.Object {
   def setAuthorizationAction(action: AuthorizationAction): TextButton
   def setBackgroundColor(backgroundColor: String): TextButton

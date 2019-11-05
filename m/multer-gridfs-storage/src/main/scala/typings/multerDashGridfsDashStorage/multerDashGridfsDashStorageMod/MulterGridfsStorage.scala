@@ -30,5 +30,6 @@ trait MulterGridfsStorage
     callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]
   ): Unit = js.native
   def _removeFile(req: Request, file: File, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  def ready(): js.Promise[ConnectionResult] = js.native
 }
 

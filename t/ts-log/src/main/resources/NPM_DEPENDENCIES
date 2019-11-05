@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-log" : "2.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-log" : "2.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

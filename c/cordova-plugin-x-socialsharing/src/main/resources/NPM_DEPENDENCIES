@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cordova-plugin-x-socialsharing" : "5.6.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cordova-plugin-x-socialsharing" : "5.6.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

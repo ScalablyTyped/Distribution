@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Dimension extends js.Object
 
+/**
+  * An enumeration of possible directions along which data can be stored in a spreadsheet.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.Dimension")
 @js.native
 object Dimension extends js.Object {

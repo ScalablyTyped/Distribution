@@ -4,6 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A ImageButton with an image displayed on it.
+  *
+  *     var imageButton = CardService.newImageButton()
+  *         .setAltText("An image button with an airplane icon.")
+  *         .setIcon(CardService.Icon.AIRPLANE)
+  *         .setOpenLink(CardService.newOpenLink()
+  *             .setUrl("https://airplane.com"));
+  */
 trait ImageButton extends js.Object {
   def setAltText(altText: String): ImageButton
   def setAuthorizationAction(action: AuthorizationAction): ImageButton

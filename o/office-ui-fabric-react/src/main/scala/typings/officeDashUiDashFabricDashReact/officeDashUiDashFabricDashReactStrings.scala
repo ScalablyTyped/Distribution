@@ -378,6 +378,9 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait inputPlaceholderBackgroundChecked extends js.Object
   
   @js.native
+  sealed trait isAlpha extends js.Object
+  
+  @js.native
   sealed trait isHeader extends js.Object
   
   @js.native
@@ -1028,6 +1031,8 @@ object officeDashUiDashFabricDashReactStrings {
   def inputIconHovered: inputIconHovered = "inputIconHovered".asInstanceOf[inputIconHovered]
   @scala.inline
   def inputPlaceholderBackgroundChecked: inputPlaceholderBackgroundChecked = "inputPlaceholderBackgroundChecked".asInstanceOf[inputPlaceholderBackgroundChecked]
+  @scala.inline
+  def isAlpha: isAlpha = "isAlpha".asInstanceOf[isAlpha]
   @scala.inline
   def isHeader: isHeader = "isHeader".asInstanceOf[isHeader]
   @scala.inline

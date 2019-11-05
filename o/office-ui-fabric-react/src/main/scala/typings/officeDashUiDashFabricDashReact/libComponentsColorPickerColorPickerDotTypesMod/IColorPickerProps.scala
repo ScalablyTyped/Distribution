@@ -15,6 +15,7 @@ trait IColorPickerProps extends js.Object {
   /**
     * Label for the alpha textfield.
     * @defaultvalue Alpha
+    * @deprecated Use `strings`
     */
   var alphaLabel: js.UndefOr[String] = js.undefined
   /**
@@ -24,6 +25,7 @@ trait IColorPickerProps extends js.Object {
   /**
     * Label for the blue text field.
     * @defaultvalue Blue
+    * @deprecated Use `strings`
     */
   var blueLabel: js.UndefOr[String] = js.undefined
   /**
@@ -41,11 +43,13 @@ trait IColorPickerProps extends js.Object {
   /**
     * Label for the green text field.
     * @defaultvalue Green
+    * @deprecated Use `strings`
     */
   var greenLabel: js.UndefOr[String] = js.undefined
   /**
     * Label for the hex text field.
     * @defaultvalue Hex
+    * @deprecated Use `strings`
     */
   var hexLabel: js.UndefOr[String] = js.undefined
   /**
@@ -58,6 +62,7 @@ trait IColorPickerProps extends js.Object {
   /**
     * Label for the red text field.
     * @defaultvalue Red
+    * @deprecated Use `strings`
     */
   var redLabel: js.UndefOr[String] = js.undefined
   /**
@@ -65,6 +70,10 @@ trait IColorPickerProps extends js.Object {
     * @defaultvalue false
     */
   var showPreview: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Labels for elements within the ColorPicker. Defaults are provided in English only.
+    */
+  var strings: js.UndefOr[IColorPickerStrings] = js.undefined
   /**
     * Call to provide customized styling that will layer on top of the variant rules.
     */
@@ -89,6 +98,7 @@ object IColorPickerProps {
     onChange: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => Unit = null,
     redLabel: String = null,
     showPreview: js.UndefOr[Boolean] = js.undefined,
+    strings: IColorPickerStrings = null,
     styles: IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles] = null,
     theme: ITheme = null
   ): IColorPickerProps = {
@@ -103,6 +113,7 @@ object IColorPickerProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (redLabel != null) __obj.updateDynamic("redLabel")(redLabel)
     if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview)
+    if (strings != null) __obj.updateDynamic("strings")(strings)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)
     __obj.asInstanceOf[IColorPickerProps]

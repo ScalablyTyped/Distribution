@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The properties object acts as the interface to access user, document, or script properties. The
+  * specific property type depends on which of the three methods of PropertiesService the
+  * script called: PropertiesService.getDocumentProperties(), PropertiesService.getUserProperties(), or PropertiesService.getScriptProperties().
+  * Properties cannot be shared between scripts. For more information about property types, see the
+  * guide to the Properties service.
+  */
 @js.native
 trait Properties extends js.Object {
   def deleteAllProperties(): typings.googleDashAppsDashScript.GoogleAppsScript.Properties.Properties = js.native

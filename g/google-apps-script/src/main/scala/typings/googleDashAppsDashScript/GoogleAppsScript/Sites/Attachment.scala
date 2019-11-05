@@ -2,11 +2,27 @@ package typings.googleDashAppsDashScript.GoogleAppsScript.Sites
 
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Blob
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.BlobSource
-import typings.std.Date
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A Sites Attachment such as a file attached to a page.
+  *
+  * Note that an Attachment is a Blob and can be used anywhere Blob input is expected.
+  * A rebuilt
+  * version of Sites was launched on November 22, 2016. Apps Script cannot currently access or
+  * modify Sites made with this version, but script can still access
+  * classic Sites.
+  *
+  *     var filesPage = SitesApp.getSite('example.com', 'mysite').getChildByName("files");
+  *     var attachments = filesPage.getAttachments();
+  *
+  *     // DocsList.createFile accepts a blob input. Since an Attachment is just a blob, we can
+  *     // just pass it directly to that method
+  *     var file = DocsList.createFile(attachments[0]);
+  */
 trait Attachment extends js.Object {
   def deleteAttachment(): Unit
   def getAs(contentType: String): Blob

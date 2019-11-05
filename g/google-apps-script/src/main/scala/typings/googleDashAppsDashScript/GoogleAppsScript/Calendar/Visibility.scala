@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Visibility extends js.Object
 
+/**
+  * An enum representing the visibility of an event.
+  */
 @JSGlobal("GoogleAppsScript.Calendar.Visibility")
 @js.native
 object Visibility extends js.Object {

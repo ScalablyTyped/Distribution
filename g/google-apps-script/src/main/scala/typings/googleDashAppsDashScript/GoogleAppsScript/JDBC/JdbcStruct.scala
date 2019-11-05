@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Struct. For documentation of this class, see java.sql.Struct
+  * .
+  */
 trait JdbcStruct extends js.Object {
   def getAttributes(): js.Array[_]
   def getSQLTypeName(): String

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait MimeType extends js.Object
 
+/**
+  * An enum for mime types that can be served from a script.
+  */
 @JSGlobal("GoogleAppsScript.Content.MimeType")
 @js.native
 object MimeType extends js.Object {

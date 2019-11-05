@@ -7,6 +7,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A layout item that displays an image. Items can be accessed or created from a Form.
+  *
+  *     // Open a form by ID and add a new image item
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var img = UrlFetchApp.fetch('https://www.google.com/images/srpr/logo4w.png');
+  *     form.addImageItem()
+  *         .setTitle('Google')
+  *         .setHelpText('Google Logo') // The help text is the image description
+  *         .setImage(img);
+  */
 trait ImageItem extends js.Object {
   def duplicate(): ImageItem
   def getAlignment(): Alignment

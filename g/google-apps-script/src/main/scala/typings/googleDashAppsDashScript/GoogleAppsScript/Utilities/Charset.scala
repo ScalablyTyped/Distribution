@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Charset extends js.Object
 
+/**
+  * A typesafe enum for character sets.
+  */
 @JSGlobal("GoogleAppsScript.Utilities.Charset")
 @js.native
 object Charset extends js.Object {

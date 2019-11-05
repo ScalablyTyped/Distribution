@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Direction extends js.Object
 
+/**
+  * An enumeration representing the possible directions that one can move within a spreadsheet using
+  * the arrow keys.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.Direction")
 @js.native
 object Direction extends js.Object {

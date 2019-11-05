@@ -35,19 +35,11 @@ object API extends js.Object {
   /**
   		 * Logs messages with a `debug` severity-level.
   		 */
-  def debug(message: String): Unit = js.native
-  /**
-  		 * Logs messages with a `debug` severity-level.
-  		 */
-  def debug(message: js.Array[String]): Unit = js.native
+  def debug(message: String*): Unit = js.native
   /**
   		 * Logs messages with an `error` severity-level.
   		 */
-  def error(message: String): Unit = js.native
-  /**
-  		 * Logs messages with an `error` severity-level.
-  		 */
-  def error(message: js.Array[String]): Unit = js.native
+  def error(message: String*): Unit = js.native
   /**
   		 * Fires a synthesized event to any registered listeners.
   		 */
@@ -67,11 +59,7 @@ object API extends js.Object {
   /**
   		 * Logs messages with an `info` severity-level.
   		 */
-  def info(message: String): Unit = js.native
-  /**
-  		 * Logs messages with an `info` severity-level.
-  		 */
-  def info(message: js.Array[String]): Unit = js.native
+  def info(message: String*): Unit = js.native
   /**
   		 * Logs messages with the specified severity-level.
   		 */

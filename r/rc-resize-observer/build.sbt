@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-resize-observer"
-version := "0.1.2-52473a"
+version := "0.1.3-845194"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

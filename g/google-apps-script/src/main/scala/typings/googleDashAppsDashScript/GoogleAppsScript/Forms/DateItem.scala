@@ -6,6 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to indicate a date. Items can be accessed or created
+  * from a Form. When used in a quiz, these items are graded.
+  *
+  *     // Open a form by ID and add a new date item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addDateItem();
+  *     item.setTitle('When were you born?');
+  */
 trait DateItem extends js.Object {
   def createResponse(response: Date): ItemResponse
   def duplicate(): DateItem

@@ -156,6 +156,9 @@ object codemirrorStrings {
   sealed trait electricChars extends js.Object
   
   @js.native
+  sealed trait electricInput extends js.Object
+  
+  @js.native
   sealed trait emptied extends js.Object
   
   @js.native
@@ -195,6 +198,9 @@ object codemirrorStrings {
   sealed trait gutterClick extends js.Object
   
   @js.native
+  sealed trait gutterContextMenu extends js.Object
+  
+  @js.native
   sealed trait gutters extends js.Object
   
   @js.native
@@ -219,10 +225,16 @@ object codemirrorStrings {
   sealed trait input extends js.Object
   
   @js.native
+  sealed trait inputRead extends js.Object
+  
+  @js.native
   sealed trait inputStyle extends js.Object
   
   @js.native
   sealed trait invalid extends js.Object
+  
+  @js.native
+  sealed trait keyHandled extends js.Object
   
   @js.native
   sealed trait keyMap extends js.Object
@@ -303,6 +315,9 @@ object codemirrorStrings {
   sealed trait mouseup extends js.Object
   
   @js.native
+  sealed trait optionChange extends js.Object
+  
+  @js.native
   sealed trait overwriteToggle extends js.Object
   
   @js.native
@@ -363,6 +378,9 @@ object codemirrorStrings {
   sealed trait redraw extends js.Object
   
   @js.native
+  sealed trait refresh extends js.Object
+  
+  @js.native
   sealed trait renderLine extends js.Object
   
   @js.native
@@ -376,6 +394,9 @@ object codemirrorStrings {
   
   @js.native
   sealed trait scroll extends js.Object
+  
+  @js.native
+  sealed trait scrollCursorIntoView extends js.Object
   
   @js.native
   sealed trait scrollPastEnd extends js.Object
@@ -421,6 +442,9 @@ object codemirrorStrings {
   
   @js.native
   sealed trait suspend extends js.Object
+  
+  @js.native
+  sealed trait swapDoc extends js.Object
   
   @js.native
   sealed trait tabSize extends js.Object
@@ -602,6 +626,8 @@ object codemirrorStrings {
   @scala.inline
   def electricChars: electricChars = "electricChars".asInstanceOf[electricChars]
   @scala.inline
+  def electricInput: electricInput = "electricInput".asInstanceOf[electricInput]
+  @scala.inline
   def emptied: emptied = "emptied".asInstanceOf[emptied]
   @scala.inline
   def ended: ended = "ended".asInstanceOf[ended]
@@ -628,6 +654,8 @@ object codemirrorStrings {
   @scala.inline
   def gutterClick: gutterClick = "gutterClick".asInstanceOf[gutterClick]
   @scala.inline
+  def gutterContextMenu: gutterContextMenu = "gutterContextMenu".asInstanceOf[gutterContextMenu]
+  @scala.inline
   def gutters: gutters = "gutters".asInstanceOf[gutters]
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
@@ -644,9 +672,13 @@ object codemirrorStrings {
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
+  def inputRead: inputRead = "inputRead".asInstanceOf[inputRead]
+  @scala.inline
   def inputStyle: inputStyle = "inputStyle".asInstanceOf[inputStyle]
   @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
+  @scala.inline
+  def keyHandled: keyHandled = "keyHandled".asInstanceOf[keyHandled]
   @scala.inline
   def keyMap: keyMap = "keyMap".asInstanceOf[keyMap]
   @scala.inline
@@ -700,6 +732,8 @@ object codemirrorStrings {
   @scala.inline
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   @scala.inline
+  def optionChange: optionChange = "optionChange".asInstanceOf[optionChange]
+  @scala.inline
   def overwriteToggle: overwriteToggle = "overwriteToggle".asInstanceOf[overwriteToggle]
   @scala.inline
   def page: page = "page".asInstanceOf[page]
@@ -740,6 +774,8 @@ object codemirrorStrings {
   @scala.inline
   def redraw: redraw = "redraw".asInstanceOf[redraw]
   @scala.inline
+  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  @scala.inline
   def renderLine: renderLine = "renderLine".asInstanceOf[renderLine]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
@@ -749,6 +785,8 @@ object codemirrorStrings {
   def rtlMoveVisually: rtlMoveVisually = "rtlMoveVisually".asInstanceOf[rtlMoveVisually]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
+  def scrollCursorIntoView: scrollCursorIntoView = "scrollCursorIntoView".asInstanceOf[scrollCursorIntoView]
   @scala.inline
   def scrollPastEnd: scrollPastEnd = "scrollPastEnd".asInstanceOf[scrollPastEnd]
   @scala.inline
@@ -779,6 +817,8 @@ object codemirrorStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def suspend: suspend = "suspend".asInstanceOf[suspend]
+  @scala.inline
+  def swapDoc: swapDoc = "swapDoc".asInstanceOf[swapDoc]
   @scala.inline
   def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ex-react-native-i18n
 
-Typings are for version 0.0
+Typings are for version 0.0.6
 
 ## Library description:
 Exponentisation of => React Native and I18n.js integration
@@ -21,7 +21,7 @@ Exponentisation of => React Native and I18n.js integration
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

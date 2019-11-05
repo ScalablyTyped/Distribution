@@ -4,6 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Contains field-related data. Its properties determine how the field is used in Data Studio.
+  *
+  *     var cc = DataStudioApp.createCommunityConnector();
+  *     var fields = cc.getFields();
+  *     var types = cc.FieldType;
+  *
+  *     var field1 = fields.newDimension()
+  *       .setId('field1_id')
+  *       .setName('Field 1 ID')
+  *       .setDescription('The first field.')
+  *       .setType(types.YEAR_MONTH)
+  *       .setGroup('DATETIME');
+  */
 trait Field extends js.Object {
   def getAggregation(): AggregationType
   def getDescription(): String

@@ -21,6 +21,9 @@ object atHapiJoiStrings {
   sealed trait NFKD extends js.Object
   
   @js.native
+  sealed trait SchemaMap extends js.Object
+  
+  @js.native
   sealed trait ValidationError extends js.Object
   
   @js.native
@@ -151,6 +154,8 @@ object atHapiJoiStrings {
   def NFKC: NFKC = "NFKC".asInstanceOf[NFKC]
   @scala.inline
   def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
+  @scala.inline
+  def SchemaMap: SchemaMap = "SchemaMap".asInstanceOf[SchemaMap]
   @scala.inline
   def ValidationError: ValidationError = "ValidationError".asInstanceOf[ValidationError]
   @scala.inline

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait EventType extends js.Object
 
+/**
+  * An enumeration denoting the type of triggered event.
+  */
 @JSGlobal("GoogleAppsScript.Script.EventType")
 @js.native
 object EventType extends js.Object {

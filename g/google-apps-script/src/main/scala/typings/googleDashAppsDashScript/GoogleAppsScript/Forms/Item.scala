@@ -5,6 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A generic form item that contains properties common to all items, such as title and help text.
+  * Items can be accessed or created from a Form.
+  *
+  * To operate on type-specific properties, use getType() to check the item's ItemType, then cast the item to the
+  * appropriate class using a method like asCheckboxItem().
+  *
+  *     // Create a new form and add a text item.
+  *     var form = FormApp.create('Form Name');
+  *     form.addTextItem();
+  *
+  *     // Access the text item as a generic item.
+  *     var items = form.getItems();
+  *     var item = items[0];
+  *
+  *     // Cast the generic item to the text-item class.
+  *     if (item.getType() == 'TEXT') {
+  *       var textItem = item.asTextItem();
+  *       textItem.setRequired(false);
+  *     }
+  *
+  * Implementing classes
+  *
+  * NameBrief description
+  */
 trait Item extends js.Object {
   def asCheckboxGridItem(): CheckboxGridItem
   def asCheckboxItem(): CheckboxItem

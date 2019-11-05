@@ -17,6 +17,7 @@ trait EditorProps extends js.Object {
   var contentState: js.UndefOr[RawDraftContentState] = js.undefined
   var customBlockRenderFunc: js.UndefOr[js.Function1[/* block */ ContentBlock, _]] = js.undefined
   var customDecorators: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var customStyleMap: js.UndefOr[js.Object] = js.undefined
   var defaultContentState: js.UndefOr[RawDraftContentState] = js.undefined
   var defaultEditorState: js.UndefOr[EditorState] = js.undefined
   var editorClassName: js.UndefOr[String] = js.undefined
@@ -40,14 +41,9 @@ trait EditorProps extends js.Object {
   var onBlur: js.UndefOr[js.Function1[/* event */ SyntheticEvent, Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* contentState */ RawDraftContentState, Unit]] = js.undefined
   var onContentStateChange: js.UndefOr[js.Function1[/* contentState */ RawDraftContentState, Unit]] = js.undefined
-  var onDownArrow: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
   var onEditorStateChange: js.UndefOr[js.Function1[/* editorState */ EditorState, Unit]] = js.undefined
-  var onEscape: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ SyntheticEvent, Unit]] = js.undefined
-  var onLeftArrow: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
-  var onRightArrow: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
   var onTab: js.UndefOr[js.Function1[/* event */ SyntheticKeyboardEvent, Unit]] = js.undefined
-  var onUpArrow: js.UndefOr[js.Function1[/* e */ SyntheticKeyboardEvent, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var spellCheck: js.UndefOr[Boolean] = js.undefined
@@ -79,6 +75,7 @@ object EditorProps {
     contentState: RawDraftContentState = null,
     customBlockRenderFunc: /* block */ ContentBlock => _ = null,
     customDecorators: js.Array[js.Object] = null,
+    customStyleMap: js.Object = null,
     defaultContentState: RawDraftContentState = null,
     defaultEditorState: EditorState = null,
     editorClassName: String = null,
@@ -94,14 +91,9 @@ object EditorProps {
     onBlur: /* event */ SyntheticEvent => Unit = null,
     onChange: /* contentState */ RawDraftContentState => Unit = null,
     onContentStateChange: /* contentState */ RawDraftContentState => Unit = null,
-    onDownArrow: /* e */ SyntheticKeyboardEvent => Unit = null,
     onEditorStateChange: /* editorState */ EditorState => Unit = null,
-    onEscape: /* e */ SyntheticKeyboardEvent => Unit = null,
     onFocus: /* event */ SyntheticEvent => Unit = null,
-    onLeftArrow: /* e */ SyntheticKeyboardEvent => Unit = null,
-    onRightArrow: /* e */ SyntheticKeyboardEvent => Unit = null,
     onTab: /* event */ SyntheticKeyboardEvent => Unit = null,
-    onUpArrow: /* e */ SyntheticKeyboardEvent => Unit = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
@@ -130,6 +122,7 @@ object EditorProps {
     if (contentState != null) __obj.updateDynamic("contentState")(contentState)
     if (customBlockRenderFunc != null) __obj.updateDynamic("customBlockRenderFunc")(js.Any.fromFunction1(customBlockRenderFunc))
     if (customDecorators != null) __obj.updateDynamic("customDecorators")(customDecorators)
+    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap)
     if (defaultContentState != null) __obj.updateDynamic("defaultContentState")(defaultContentState)
     if (defaultEditorState != null) __obj.updateDynamic("defaultEditorState")(defaultEditorState)
     if (editorClassName != null) __obj.updateDynamic("editorClassName")(editorClassName)
@@ -145,14 +138,9 @@ object EditorProps {
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onContentStateChange != null) __obj.updateDynamic("onContentStateChange")(js.Any.fromFunction1(onContentStateChange))
-    if (onDownArrow != null) __obj.updateDynamic("onDownArrow")(js.Any.fromFunction1(onDownArrow))
     if (onEditorStateChange != null) __obj.updateDynamic("onEditorStateChange")(js.Any.fromFunction1(onEditorStateChange))
-    if (onEscape != null) __obj.updateDynamic("onEscape")(js.Any.fromFunction1(onEscape))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onLeftArrow != null) __obj.updateDynamic("onLeftArrow")(js.Any.fromFunction1(onLeftArrow))
-    if (onRightArrow != null) __obj.updateDynamic("onRightArrow")(js.Any.fromFunction1(onRightArrow))
     if (onTab != null) __obj.updateDynamic("onTab")(js.Any.fromFunction1(onTab))
-    if (onUpArrow != null) __obj.updateDynamic("onUpArrow")(js.Any.fromFunction1(onUpArrow))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)

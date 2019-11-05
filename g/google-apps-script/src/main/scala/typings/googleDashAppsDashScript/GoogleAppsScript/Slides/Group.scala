@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A collection of PageElements joined as a single unit.
+  */
 @js.native
 trait Group extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): Group = js.native

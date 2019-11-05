@@ -4,6 +4,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A generic element. Document contents are
+  * represented as elements. For example, ListItem, Paragraph, and Table are
+  * elements and inherit all of the methods defined by Element, such as getType().
+  * Implementing classes
+  *
+  * NameBrief description
+  *
+  * BodyAn element representing a document body.
+  *
+  * ContainerElementA generic element that may contain other elements.
+  *
+  * EquationAn element representing a mathematical expression.
+  *
+  * EquationFunctionAn element representing a function in a mathematical Equation.
+  *
+  * EquationFunctionArgumentSeparatorAn element representing a function separator in a mathematical Equation.
+  *
+  * EquationSymbolAn element representing a symbol in a mathematical Equation.
+  *
+  * FooterSectionAn element representing a footer section.
+  *
+  * FootnoteAn element representing a footnote.
+  *
+  * FootnoteSectionAn element representing a footnote section.
+  *
+  * HeaderSectionAn element representing a header section.
+  *
+  * HorizontalRuleAn element representing an horizontal rule.
+  *
+  * InlineDrawingAn element representing an embedded drawing.
+  *
+  * InlineImageAn element representing an embedded image.
+  *
+  * ListItemAn element representing a list item.
+  *
+  * PageBreakAn element representing a page break.
+  *
+  * ParagraphAn element representing a paragraph.
+  *
+  * TableAn element representing a table.
+  *
+  * TableCellAn element representing a table cell.
+  *
+  * TableOfContentsAn element containing a table of contents.
+  *
+  * TableRowAn element representing a table row.
+  *
+  * TextAn element representing a rich text region.
+  *
+  * UnsupportedElementAn element representing a region that is unknown or cannot be affected by a script, such as a
+  * page number.
+  */
 trait Element extends js.Object {
   def asBody(): Body
   def asEquation(): Equation

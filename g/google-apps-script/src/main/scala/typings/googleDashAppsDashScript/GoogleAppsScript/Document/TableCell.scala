@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a table cell. A TableCell is always contained within a TableRow and may contain ListItem, Paragraph, or Table elements. For
+  * more information on document structure, see the guide to extending Google Docs.
+  */
 @js.native
 trait TableCell extends js.Object {
   def appendHorizontalRule(): HorizontalRule = js.native

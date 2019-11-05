@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for the UniversalActionResponse objects.
+  */
 trait UniversalActionResponseBuilder extends js.Object {
   def build(): UniversalActionResponse
   def displayAddOnCards(cardObjects: js.Array[Card]): UniversalActionResponseBuilder

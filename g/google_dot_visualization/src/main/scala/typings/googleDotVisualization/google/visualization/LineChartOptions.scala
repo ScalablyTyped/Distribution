@@ -1,6 +1,15 @@
 package typings.googleDotVisualization.google.visualization
 
+import org.scalablytyped.runtime.NumberDictionary
+import typings.googleDotVisualization.Anon_Style
+import typings.googleDotVisualization.Anon_Type
+import typings.googleDotVisualization.googleDotVisualizationStrings.circle
+import typings.googleDotVisualization.googleDotVisualizationStrings.diamond
 import typings.googleDotVisualization.googleDotVisualizationStrings.none
+import typings.googleDotVisualization.googleDotVisualizationStrings.polygon
+import typings.googleDotVisualization.googleDotVisualizationStrings.square
+import typings.googleDotVisualization.googleDotVisualizationStrings.star
+import typings.googleDotVisualization.googleDotVisualizationStrings.triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +25,7 @@ trait LineChartOptions extends js.Object {
   var crosshair: js.UndefOr[ChartCrosshair] = js.undefined
   var curveType: js.UndefOr[String] = js.undefined
   var dataOpacity: js.UndefOr[Double] = js.undefined
+  var domainAxis: js.UndefOr[Anon_Type] = js.undefined
   var enableInteractivity: js.UndefOr[Boolean] = js.undefined
   var explorer: js.UndefOr[ChartExplorer] = js.undefined
   var focusTarget: js.UndefOr[String] = js.undefined
@@ -24,10 +34,13 @@ trait LineChartOptions extends js.Object {
   var hAxis: js.UndefOr[ChartAxis] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var interpolateNulls: js.UndefOr[Boolean] = js.undefined
+  var interval: js.UndefOr[js.Any] = js.undefined
+  var intervals: js.UndefOr[Anon_Style] = js.undefined
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
   var orientation: js.UndefOr[String] = js.undefined
+  var pointShape: js.UndefOr[String | circle | triangle | square | diamond | star | polygon] = js.undefined
   var pointSize: js.UndefOr[Double] = js.undefined
   var reverseCategories: js.UndefOr[Boolean] = js.undefined
   var selectionMode: js.UndefOr[String] = js.undefined
@@ -38,6 +51,7 @@ trait LineChartOptions extends js.Object {
   var titlePosition: js.UndefOr[String] = js.undefined
   var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
   var tooltip: js.UndefOr[ChartTooltip] = js.undefined
+  var trendlines: js.UndefOr[NumberDictionary[LineChartTrendlineOptions]] = js.undefined
   var vAxes: js.UndefOr[js.Any] = js.undefined
   var vAxis: js.UndefOr[ChartAxis] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
@@ -56,6 +70,7 @@ object LineChartOptions {
     crosshair: ChartCrosshair = null,
     curveType: String = null,
     dataOpacity: Int | Double = null,
+    domainAxis: Anon_Type = null,
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
     explorer: ChartExplorer = null,
     focusTarget: String = null,
@@ -64,10 +79,13 @@ object LineChartOptions {
     hAxis: ChartAxis = null,
     height: Int | Double = null,
     interpolateNulls: js.UndefOr[Boolean] = js.undefined,
+    interval: js.Any = null,
+    intervals: Anon_Style = null,
     legend: ChartLegend | none = null,
     lineWidth: Int | Double = null,
     min: Int | Double = null,
     orientation: String = null,
+    pointShape: String | circle | triangle | square | diamond | star | polygon = null,
     pointSize: Int | Double = null,
     reverseCategories: js.UndefOr[Boolean] = js.undefined,
     selectionMode: String = null,
@@ -77,6 +95,7 @@ object LineChartOptions {
     titlePosition: String = null,
     titleTextStyle: ChartTextStyle = null,
     tooltip: ChartTooltip = null,
+    trendlines: NumberDictionary[LineChartTrendlineOptions] = null,
     vAxes: js.Any = null,
     vAxis: ChartAxis = null,
     width: Int | Double = null
@@ -92,6 +111,7 @@ object LineChartOptions {
     if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair)
     if (curveType != null) __obj.updateDynamic("curveType")(curveType)
     if (dataOpacity != null) __obj.updateDynamic("dataOpacity")(dataOpacity.asInstanceOf[js.Any])
+    if (domainAxis != null) __obj.updateDynamic("domainAxis")(domainAxis)
     if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity)
     if (explorer != null) __obj.updateDynamic("explorer")(explorer)
     if (focusTarget != null) __obj.updateDynamic("focusTarget")(focusTarget)
@@ -100,10 +120,13 @@ object LineChartOptions {
     if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(interpolateNulls)) __obj.updateDynamic("interpolateNulls")(interpolateNulls)
+    if (interval != null) __obj.updateDynamic("interval")(interval)
+    if (intervals != null) __obj.updateDynamic("intervals")(intervals)
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape.asInstanceOf[js.Any])
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
     if (!js.isUndefined(reverseCategories)) __obj.updateDynamic("reverseCategories")(reverseCategories)
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
@@ -113,6 +136,7 @@ object LineChartOptions {
     if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition)
     if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (trendlines != null) __obj.updateDynamic("trendlines")(trendlines)
     if (vAxes != null) __obj.updateDynamic("vAxes")(vAxes)
     if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

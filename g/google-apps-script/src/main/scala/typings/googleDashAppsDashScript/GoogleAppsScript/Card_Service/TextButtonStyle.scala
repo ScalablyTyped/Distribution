@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait TextButtonStyle extends js.Object
 
+/**
+  * An enum that specifies the style for TextButton.
+  *
+  * TEXT is the default; it renders a simple text button with clear background.
+  * FILLED buttons have a background color you can set with
+  * TextButton.setBackgroundColor(backgroundColor).
+  */
 @JSGlobal("GoogleAppsScript.Card_Service.TextButtonStyle")
 @js.native
 object TextButtonStyle extends js.Object {

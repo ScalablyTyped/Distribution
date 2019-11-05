@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for Rich Text values.
+  */
 @js.native
 trait RichTextValueBuilder extends js.Object {
   def build(): RichTextValue = js.native

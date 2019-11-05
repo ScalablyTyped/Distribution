@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait RsaAlgorithm extends js.Object
 
+/**
+  * Selector of RSA algorithm
+  */
 @JSGlobal("GoogleAppsScript.Utilities.RsaAlgorithm")
 @js.native
 object RsaAlgorithm extends js.Object {

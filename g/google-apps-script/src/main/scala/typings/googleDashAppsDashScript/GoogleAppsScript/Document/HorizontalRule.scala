@@ -4,6 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing an horizontal rule. A HorizontalRule can be contained within a
+  * ListItem or Paragraph, but cannot itself contain any other element. For more
+  * information on document structure, see the guide to extending Google Docs.
+  */
 trait HorizontalRule extends js.Object {
   def copy(): HorizontalRule
   def getAttributes(): js.Any

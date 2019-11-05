@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait PositionedLayout extends js.Object
 
+/**
+  * An enumeration that specifies how to lay out a PositionedImage in relation to surrounding
+  * text.
+  */
 @JSGlobal("GoogleAppsScript.Document.PositionedLayout")
 @js.native
 object PositionedLayout extends js.Object {

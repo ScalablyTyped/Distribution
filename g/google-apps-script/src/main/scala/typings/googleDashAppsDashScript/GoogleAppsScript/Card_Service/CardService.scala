@@ -4,6 +4,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * CardService provides the ability to create generic cards used across different Google
+  * extensibility products, such as Gmail add-ons.
+  *
+  * Currently you can only use this service to construct Gmail add-ons.
+  *
+  *     return CardService.newCardBuilder()
+  *              .setHeader(CardService.newCardHeader().setTitle("CardTitle"))
+  *              .build();
+  *
+  * Or you can return multiple Cards like so:
+  *
+  *     return [
+  *       CardService.newCardBuilder().build(),
+  *       CardService.newCardBuilder().build(),
+  *       CardService.newCardBuilder().build()
+  *     ]
+  *
+  * The following shows how you could define a card with a header, text, an image and a menu item:
+  *
+  *     function createWidgetDemoCard() {
+  *       return CardService
+  *          .newCardBuilder()
+  *          .setHeader(
+  *              CardService.newCardHeader()
+  *                  .setTitle('Widget demonstration')
+  *                  .setSubtitle('Check out these widgets')
+  *                  .setImageStyle(CardService.ImageStyle.SQUARE)
+  *                  .setImageUrl(
+  *                      'https://www.example.com/images/headerImage.png'))
+  *          .addSection(
+  *               CardService.newCardSection()
+  *                   .setHeader('Simple widgets')  // optional
+  *                   .addWidget(CardService.newTextParagraph().setText(
+  *                       'These widgets are display-only. ' +
+  *                       'A text paragraph can have multiple lines and ' +
+  *                       'formatting.'))
+  *                   .addWidget(CardService.newImage().setImageUrl(
+  *                       'https://www.example.com/images/mapsImage.png')))
+  *          .addCardAction(CardService.newCardAction().setText('Gmail').setOpenLink(
+  *              CardService.newOpenLink().setUrl('https://mail.google.com/mail')))
+  *          .build();
+  *     }
+  */
 trait CardService extends js.Object {
   var ComposedEmailType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ComposedEmailType */ js.Any
   var ContentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ContentType */ js.Any

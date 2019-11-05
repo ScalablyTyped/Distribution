@@ -5,6 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A DataValidationBuilder for a ParagraphTextValidation.
+  *
+  *     // Add a paragraph text item to a form and require the answer to be at least 100 characters.
+  *     var paragraphTextItem = form.addParagraphTextItem().setTitle('Describe yourself:');
+  *     var paragraphtextValidation = FormApp.createParagraphTextValidation()
+  *       .setHelpText(“Answer must be more than 100 characters.”)
+  *       .requireTextLengthGreatherThan(100);
+  *     paragraphTextItem.setValidation(paragraphtextValidation);
+  */
 trait ParagraphTextValidationBuilder extends js.Object {
   def requireTextContainsPattern(pattern: String): ParagraphTextValidationBuilder
   def requireTextDoesNotContainPattern(pattern: String): ParagraphTextValidationBuilder

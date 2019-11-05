@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a table row. A TableRow is always contained within a Table and may only contain TableCell elements. For more information on document
+  * structure, see the guide to extending
+  * Google Docs.
+  */
 @js.native
 trait TableRow extends js.Object {
   def appendTableCell(): TableCell = js.native

@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The list styling for a range of text.
+  */
 trait ListStyle extends js.Object {
   def applyListPreset(listPreset: ListPreset): ListStyle
   def getGlyph(): String

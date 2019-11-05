@@ -3,6 +3,7 @@ package typings.multerDashGridfsDashStorage.multerDashGridfsDashStorageMod
 import typings.express.expressMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
 import typings.multer.multerMod._Global_.Express.Multer.File
+import typings.multerDashGridfsDashStorage.Anon_Filename
 import typings.std.Error
 import typings.std.Partial
 import scala.scalajs.js
@@ -28,5 +29,6 @@ class ^ protected () extends MulterGridfsStorage {
 @js.native
 object ^ extends js.Object {
   var cache: Cache = js.native
+  def generateBytes(): js.Promise[Anon_Filename] = js.native
 }
 

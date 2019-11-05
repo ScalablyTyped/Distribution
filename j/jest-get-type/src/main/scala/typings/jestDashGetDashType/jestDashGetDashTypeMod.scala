@@ -25,6 +25,7 @@ object jestDashGetDashTypeMod extends js.Object {
   */
   trait ValueType extends js.Object
   
+  var isPrimitive: js.Function1[/* value */ js.Any, Boolean] = js.native
   def apply(value: js.Any): ValueType = js.native
 }
 

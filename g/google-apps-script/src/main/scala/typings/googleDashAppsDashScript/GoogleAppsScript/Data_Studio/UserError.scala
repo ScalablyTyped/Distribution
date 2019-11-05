@@ -4,6 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An error that is shown to users of the connector.
+  *
+  *     var cc = DataStudioApp.createCommunityConnector();
+  *
+  *     cc.newUserError()
+  *       .setText("This is the debug error text.")
+  *       .setDebugText("This text is only shown to admins.")
+  *       .throwException();
+  */
 trait UserError extends js.Object {
   def printJson(): String
   def setDebugText(text: String): UserError

@@ -6,6 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Describes the page's background
+  */
 @js.native
 trait PageBackground extends js.Object {
   def getPictureFill(): PictureFill = js.native

@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,10 @@ trait MenuEvents extends js.Object {
 object MenuEvents {
   @scala.inline
   def apply(
-    blur: (/* event */ Event, /* ui */ MenuUIParams) => Unit = null,
-    create: (/* event */ Event, /* ui */ MenuUIParams) => Unit = null,
-    focus: (/* event */ Event, /* ui */ MenuUIParams) => Unit = null,
-    select: (/* event */ Event, /* ui */ MenuUIParams) => Unit = null
+    blur: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit = null,
+    focus: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit = null,
+    select: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit = null
   ): MenuEvents = {
     val __obj = js.Dynamic.literal()
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction2(blur))

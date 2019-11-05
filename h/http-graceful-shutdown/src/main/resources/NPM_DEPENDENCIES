@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "http-graceful-shutdown" : "2.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "http-graceful-shutdown" : "2.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

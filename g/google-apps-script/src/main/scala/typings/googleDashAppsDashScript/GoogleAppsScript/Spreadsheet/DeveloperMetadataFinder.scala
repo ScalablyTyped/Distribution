@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Search for developer metadata in a spreadsheet. To create new developer metadata finder use
+  * Range.createDeveloperMetadataFinder(), Sheet.createDeveloperMetadataFinder(),
+  * or Spreadsheet.createDeveloperMetadataFinder().
+  */
 trait DeveloperMetadataFinder extends js.Object {
   def find(): js.Array[DeveloperMetadata]
   def onIntersectingLocations(): DeveloperMetadataFinder

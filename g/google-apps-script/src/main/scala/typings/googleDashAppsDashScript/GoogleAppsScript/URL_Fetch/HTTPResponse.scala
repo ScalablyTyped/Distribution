@@ -7,6 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * This class allows users to access specific information on HTTP responses.
+  * See also
+  *
+  * UrlFetchApp
+  */
 @js.native
 trait HTTPResponse extends js.Object {
   def getAllHeaders(): js.Object = js.native

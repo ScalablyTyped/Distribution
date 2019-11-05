@@ -6,6 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An HtmlOutput object that can be served from a script. Due to security considerations,
+  * scripts cannot directly return HTML to a browser. Instead, they must sanitize it so that it
+  * cannot perform malicious actions. You can return sanitized HTML like this:
+  *
+  *     function doGet() {
+  *       return HtmlService.createHtmlOutput('<b>Hello, world!</b>');
+  *     }
+  *
+  * HtmlOutput
+  * Google Caja
+  * guide to restrictions in HTML service
+  */
 trait HtmlOutput extends js.Object {
   def addMetaTag(name: String, content: String): HtmlOutput
   def append(addedContent: String): HtmlOutput

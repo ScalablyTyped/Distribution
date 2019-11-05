@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Options for a Gmail Attachments.
+  */
 trait GmailAttachmentOptions extends js.Object {
   /**
     *  If the returned array of Blob attachments should include regular (non-inline) attachments.

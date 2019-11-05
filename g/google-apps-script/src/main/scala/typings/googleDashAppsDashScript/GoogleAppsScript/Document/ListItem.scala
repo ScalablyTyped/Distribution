@@ -6,6 +6,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a list item. A ListItem is a Paragraph that is associated
+  * with a list ID. A ListItem may contain Equation, Footnote, HorizontalRule, InlineDrawing, InlineImage, PageBreak, and Text
+  * elements. For more information on document structure, see the guide to extending Google Docs.
+  *
+  * ListItems may not contain new-line characters. New-line characters ("\n") are
+  * converted to line-break characters ("\r").
+  *
+  * ListItems with the same list ID belong to the same list and are numbered accordingly.
+  * The ListItems for a given list are not required to be adjacent in the document or even
+  * have the same parent element. Two items belonging to the same list may exist anywhere in the
+  * document while maintaining consecutive numbering, as the following example illustrates:
+  *
+  *     var body = DocumentApp.getActiveDocument().getBody();
+  *
+  *     // Append a new list item to the body.
+  *     var item1 = body.appendListItem('Item 1');
+  *
+  *     // Log the new list item's list ID.
+  *     Logger.log(item1.getListId());
+  *
+  *     // Append a table after the list item.
+  *     body.appendTable([
+  *       ['Cell 1', 'Cell 2']
+  *     ]);
+  *
+  *     // Append a second list item with the same list ID. The two items are treated as the same list,
+  *     // despite not being consecutive.
+  *     var item2 = body.appendListItem('Item 2');
+  *     item2.setListId(item1);
+  */
 @js.native
 trait ListItem extends js.Object {
   def addPositionedImage(image: BlobSource): PositionedImage = js.native

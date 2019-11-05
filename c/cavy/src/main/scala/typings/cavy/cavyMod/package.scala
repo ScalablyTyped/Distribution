@@ -13,5 +13,5 @@ package object cavyMod {
   type TestHookGenerator = TestHookGeneratorWithRefCallback with TestHookGeneratorWithRefObject
   type TestHookGeneratorWithRefCallback = js.Function2[/* label */ String, /* ref */ js.UndefOr[RefCallback], RefCallback]
   type TestHookGeneratorWithRefObject = js.Function2[/* label */ String, /* ref */ js.UndefOr[RefObject[js.Any]], RefObject[js.Any]]
-  type WithTestHook[T /* <: js.Object */] = T with Anon_GenerateTestHook
+  type WithTestHook[P /* <: js.Object */] = P with Anon_GenerateTestHook
 }

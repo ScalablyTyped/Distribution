@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * This class allows users to access their own Google Contacts and create, remove, and update
+  * contacts listed therein.
+  */
 @js.native
 trait ContactsApp extends js.Object {
   var ExtendedField: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ js.Any = js.native

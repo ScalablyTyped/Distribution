@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ChartHiddenDimensionStrategy extends js.Object
 
+/**
+  * An enumeration of how hidden dimensions in a source are expressed in a chart.
+  */
 @JSGlobal("GoogleAppsScript.Charts.ChartHiddenDimensionStrategy")
 @js.native
 object ChartHiddenDimensionStrategy extends js.Object {

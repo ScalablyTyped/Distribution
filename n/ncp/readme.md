@@ -1,7 +1,7 @@
 
 # Scala.js typings for ncp
 
-Typings are for version v2.0.0
+Typings are for version 2.0
 
 ## Library description:
 Asynchronous recursive file copy utility.

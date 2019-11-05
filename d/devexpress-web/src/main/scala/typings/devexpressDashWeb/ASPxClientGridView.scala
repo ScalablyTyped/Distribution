@@ -291,6 +291,22 @@ class ASPxClientGridView () extends ASPxClientGridBase {
     * Returns the number of columns within the client GridView.
     */
   def GetColumnsCount(): Double = js.native
+  /**
+    * Returns the edit form layout.
+    */
+  def GetEditFormLayout(): ASPxClientFormLayout = js.native
+  def GetEditFormLayoutItemByColumn(column: String): ASPxClientLayoutItem = js.native
+  def GetEditFormLayoutItemByColumn(column: Double): ASPxClientLayoutItem = js.native
+  /**
+    * Returns the form layout item. The form layout item.
+    * @param column The column, its index or field name.
+    */
+  def GetEditFormLayoutItemByColumn(column: ASPxClientGridViewColumn): ASPxClientLayoutItem = js.native
+  /**
+    * Returns the form layout item or group. The layout item.
+    * @param name The item's or group's name.
+    */
+  def GetEditFormLayoutItemOrGroup(name: String): ASPxClientLayoutItem = js.native
   def GetEditValue(column: String): String = js.native
   def GetEditValue(column: Double): String = js.native
   /**

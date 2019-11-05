@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grpc__proto-loader"
-version := "0.5.2-869e1a"
+version := "0.5.3-24bd99"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

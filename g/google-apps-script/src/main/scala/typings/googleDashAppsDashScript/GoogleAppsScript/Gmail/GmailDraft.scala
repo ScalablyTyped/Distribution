@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A user-created draft message in a user's Gmail account.
+  */
 @js.native
 trait GmailDraft extends js.Object {
   /**

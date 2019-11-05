@@ -5,6 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A representation of an XML Element node.
+  *
+  *     // Adds up the values listed in a sample XML document and adds a new element with the total.
+  *     var xml = '<things>'
+  *         + '<plates>12</plates>'
+  *         + '<bowls>18</bowls>'
+  *         + '<cups>25</cups>'
+  *         + '</things>';
+  *     var document = XmlService.parse(xml);
+  *     var root = document.getRootElement();
+  *     var items = root.getChildren();
+  *     var total = 0;
+  *     for (var i = 0; i < items.length; i++) {
+  *       total += Number(items[i].getText());
+  *     }
+  *     var totalElement = XmlService.createElement('total').setText(total);
+  *     root.addContent(totalElement);
+  *     xml = XmlService.getPrettyFormat().format(document);
+  *     Logger.log(xml);
+  */
 @js.native
 trait Element extends js.Object {
   def addContent(content: typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content): Element = js.native

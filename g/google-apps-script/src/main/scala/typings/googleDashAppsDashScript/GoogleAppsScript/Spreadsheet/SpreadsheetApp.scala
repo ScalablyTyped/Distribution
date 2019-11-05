@@ -1,12 +1,15 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Ui
+import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.File
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and create Google Sheets files. This class is the parent class for the Spreadsheet service.
+  */
 @js.native
 trait SpreadsheetApp extends js.Object {
   var AutoFillSeries: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AutoFillSeries */ js.Any = js.native

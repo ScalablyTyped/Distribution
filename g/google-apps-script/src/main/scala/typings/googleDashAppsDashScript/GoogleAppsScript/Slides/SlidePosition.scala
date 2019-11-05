@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait SlidePosition extends js.Object
 
+/**
+  * The relative position of a Slide.
+  */
 @JSGlobal("GoogleAppsScript.Slides.SlidePosition")
 @js.native
 object SlidePosition extends js.Object {

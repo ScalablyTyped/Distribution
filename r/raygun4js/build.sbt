@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "raygun4js"
-version := "2.13-dt-20190717Z-abfdd3"
+version := "2.13-dt-20191105Z-c50eba"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

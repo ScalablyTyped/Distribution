@@ -1,22 +1,35 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
-import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/**
+  * A builder for string filter controls.
+  *
+  * A string filter is a simple text input field that lets the user filter data via string
+  * matching. Given a column of type string and matching options, this control filters out the rows
+  * that don't match the term that's in the input field.
+  *
+  * For more details, see the Gviz
+  * documentation.
+  */
 trait StringFilterBuilder extends js.Object {
-  def build(): Control = js.native
-  def setCaseSensitive(caseSensitive: Boolean): StringFilterBuilder = js.native
-  def setDataTable(tableBuilder: DataTableBuilder): StringFilterBuilder = js.native
-  def setDataTable(table: DataTableSource): StringFilterBuilder = js.native
-  def setFilterColumnIndex(columnIndex: Integer): StringFilterBuilder = js.native
-  def setFilterColumnLabel(columnLabel: String): StringFilterBuilder = js.native
-  def setLabel(label: String): StringFilterBuilder = js.native
-  def setLabelSeparator(labelSeparator: String): StringFilterBuilder = js.native
-  def setLabelStacking(orientation: Orientation): StringFilterBuilder = js.native
-  def setMatchType(matchType: MatchType): StringFilterBuilder = js.native
-  def setRealtimeTrigger(realtimeTrigger: Boolean): StringFilterBuilder = js.native
+  def setCaseSensitive(caseSensitive: Boolean): StringFilterBuilder
+  def setMatchType(matchType: MatchType): StringFilterBuilder
+  def setRealtimeTrigger(realtimeTrigger: Boolean): StringFilterBuilder
+}
+
+object StringFilterBuilder {
+  @scala.inline
+  def apply(
+    setCaseSensitive: Boolean => StringFilterBuilder,
+    setMatchType: MatchType => StringFilterBuilder,
+    setRealtimeTrigger: Boolean => StringFilterBuilder
+  ): StringFilterBuilder = {
+    val __obj = js.Dynamic.literal(setCaseSensitive = js.Any.fromFunction1(setCaseSensitive), setMatchType = js.Any.fromFunction1(setMatchType), setRealtimeTrigger = js.Any.fromFunction1(setRealtimeTrigger))
+  
+    __obj.asInstanceOf[StringFilterBuilder]
+  }
 }
 

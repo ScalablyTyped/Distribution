@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A color scheme defines a mapping from members of ThemeColorType to the actual colors used
+  * to render them.
+  */
 @js.native
 trait ColorScheme extends js.Object {
   def getConcreteColor(theme: ThemeColorType): Color = js.native

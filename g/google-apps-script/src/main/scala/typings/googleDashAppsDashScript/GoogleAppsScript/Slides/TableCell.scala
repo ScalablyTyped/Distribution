@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A cell in a table.
+  */
 trait TableCell extends js.Object {
   def getColumnIndex(): Integer
   def getColumnSpan(): Integer

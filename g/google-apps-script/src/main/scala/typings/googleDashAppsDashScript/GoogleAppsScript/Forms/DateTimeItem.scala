@@ -6,6 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to indicate a date and time. Items can be accessed or
+  * created from a Form. When used in a quiz, these items are graded.
+  *
+  *     // Open a form by ID and add a new date-time item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addDateTimeItem();
+  *     item.setTitle('When do you want to meet?');
+  */
 trait DateTimeItem extends js.Object {
   def createResponse(response: Date): ItemResponse
   def duplicate(): DateTimeItem

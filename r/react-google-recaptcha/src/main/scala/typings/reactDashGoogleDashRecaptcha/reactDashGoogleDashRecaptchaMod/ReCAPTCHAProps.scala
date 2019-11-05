@@ -12,6 +12,10 @@ trait ReCAPTCHAProps extends js.Object {
   	 */
   var badge: js.UndefOr[Badge] = js.undefined
   /**
+    *  if you are using the barebone component you need to provide access  to the google grecaptcha object.
+    */
+  var grecaptcha: js.UndefOr[js.Object] = js.undefined
+  /**
   	 *  Optional. Forces the widget to render in a specific language. Auto-detects the user's language if unspecified.
   	 */
   var hl: js.UndefOr[String] = js.undefined
@@ -66,6 +70,7 @@ object ReCAPTCHAProps {
   def apply(
     sitekey: String,
     badge: Badge = null,
+    grecaptcha: js.Object = null,
     hl: String = null,
     onChange: /* token */ String | Null => Unit = null,
     onErrored: () => Unit = null,
@@ -78,6 +83,7 @@ object ReCAPTCHAProps {
   ): ReCAPTCHAProps = {
     val __obj = js.Dynamic.literal(sitekey = sitekey)
     if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (grecaptcha != null) __obj.updateDynamic("grecaptcha")(grecaptcha)
     if (hl != null) __obj.updateDynamic("hl")(hl)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onErrored != null) __obj.updateDynamic("onErrored")(js.Any.fromFunction0(onErrored))

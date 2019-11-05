@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for SuggestionsResponse objects.
+  */
 trait SuggestionsResponseBuilder extends js.Object {
   def build(): SuggestionsResponse
   def setSuggestions(suggestions: Suggestions): SuggestionsResponseBuilder

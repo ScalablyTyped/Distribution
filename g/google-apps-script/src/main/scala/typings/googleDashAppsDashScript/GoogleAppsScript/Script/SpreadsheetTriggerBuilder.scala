@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for spreadsheet triggers.
+  */
 trait SpreadsheetTriggerBuilder extends js.Object {
   def create(): Trigger
   def onChange(): SpreadsheetTriggerBuilder

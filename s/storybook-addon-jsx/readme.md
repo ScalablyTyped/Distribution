@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook-addon-jsx
 
-Typings are for version 5.4
+Typings are for version 7.0
 
 ## Library description:
 Display the JSX of the story

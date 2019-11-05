@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sortable-hoc"
-version := "0.6-dt-20191010Z-71f10f"
+version := "1.10.1-8c88c7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

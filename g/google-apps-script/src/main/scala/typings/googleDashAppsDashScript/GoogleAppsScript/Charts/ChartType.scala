@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ChartType extends js.Object
 
+/**
+  * Chart types supported by the Charts service.
+  */
 @JSGlobal("GoogleAppsScript.Charts.ChartType")
 @js.native
 object ChartType extends js.Object {

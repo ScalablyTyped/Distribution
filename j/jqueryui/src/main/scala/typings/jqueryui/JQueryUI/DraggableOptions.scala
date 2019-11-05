@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import typings.jqueryui.JQuery
 import typings.std.Element
 import scala.scalajs.js
@@ -47,13 +47,13 @@ object DraggableOptions {
     cancel: String = null,
     connectToSortable: Element | js.Array[Element] | JQuery | String = null,
     containment: js.Any = null,
-    create: (/* event */ Event, /* ui */ DraggableEventUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
     cursor: String = null,
     cursorAt: js.Any = null,
     delay: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     distance: Int | Double = null,
-    drag: (/* event */ Event, /* ui */ DraggableEventUIParams) => Unit = null,
+    drag: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
     grid: js.Array[Double] = null,
     handle: js.Any = null,
     helper: js.Any = null,
@@ -70,8 +70,8 @@ object DraggableOptions {
     snapMode: String = null,
     snapTolerance: Int | Double = null,
     stack: String = null,
-    start: (/* event */ Event, /* ui */ DraggableEventUIParams) => Unit = null,
-    stop: (/* event */ Event, /* ui */ DraggableEventUIParams) => Unit = null,
+    start: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
+    stop: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit = null,
     zIndex: Int | Double = null
   ): DraggableOptions = {
     val __obj = js.Dynamic.literal()

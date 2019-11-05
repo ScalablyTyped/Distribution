@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Ref. For documentation of this class, see java.sql.Ref.
+  */
 trait JdbcRef extends js.Object {
   def getBaseTypeName(): String
   def getObject(): js.Any

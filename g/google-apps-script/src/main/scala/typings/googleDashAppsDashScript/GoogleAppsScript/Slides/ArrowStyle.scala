@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ArrowStyle extends js.Object
 
+/**
+  * The kinds of start and end forms with which linear geometry can be rendered.
+  *
+  * Some values are based on the "ST_LineEndType" simple type described in section 20.1.10.33 of
+  * of "Office Open XML File Formats - Fundamentals and Markup Language Reference", part 1 of ECMA-376 4th
+  * edition.
+  */
 @JSGlobal("GoogleAppsScript.Slides.ArrowStyle")
 @js.native
 object ArrowStyle extends js.Object {

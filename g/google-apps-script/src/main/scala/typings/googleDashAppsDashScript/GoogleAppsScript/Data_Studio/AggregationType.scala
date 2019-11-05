@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait AggregationType extends js.Object
 
+/**
+  * An enum that defines the aggregation types that can be set for a Field.
+  */
 @JSGlobal("GoogleAppsScript.Data_Studio.AggregationType")
 @js.native
 object AggregationType extends js.Object {

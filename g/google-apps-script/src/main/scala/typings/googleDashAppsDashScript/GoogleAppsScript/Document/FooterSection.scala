@@ -6,6 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a footer section. A Document typically contains at most one FooterSection. The FooterSection may contain ListItem, Paragraph, and
+  * Table elements. For more information on document structure, see the guide to extending Google Docs.
+  */
 @js.native
 trait FooterSection extends js.Object {
   def appendHorizontalRule(): HorizontalRule = js.native

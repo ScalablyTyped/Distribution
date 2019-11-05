@@ -5,6 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a rich text region. All text in a Document is contained within Text elements.
+  * A Text element can be contained within an Equation, EquationFunction,
+  * ListItem, or Paragraph, but cannot itself contain any other element. For more
+  * information on document structure, see the guide to extending Google Docs.
+  *
+  *     var body = DocumentApp.getActiveDocument().getBody();
+  *
+  *     // Use editAsText to obtain a single text element containing
+  *     // all the characters in the document.
+  *     var text = body.editAsText();
+  *
+  *     // Insert text at the beginning of the document.
+  *     text.insertText(0, 'Inserted text.\n');
+  *
+  *     // Insert text at the end of the document.
+  *     text.appendText('\nAppended text.');
+  *
+  *     // Make the first half of the document blue.
+  *     text.setForegroundColor(0, text.getText().length / 2, '#00FFFF');
+  */
 @js.native
 trait Text extends js.Object {
   def appendText(text: String): Text = js.native

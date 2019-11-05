@@ -1,11 +1,18 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Sites
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A Sites ListItem - a list element from a Sites List page.
+  * A rebuilt
+  * version of Sites was launched on November 22, 2016. Apps Script cannot currently access or
+  * modify Sites made with this version, but script can still access
+  * classic Sites.
+  */
 trait ListItem extends js.Object {
   def deleteListItem(): Unit
   def getDatePublished(): Date

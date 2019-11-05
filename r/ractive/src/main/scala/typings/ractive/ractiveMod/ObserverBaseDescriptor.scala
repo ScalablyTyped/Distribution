@@ -1,0 +1,25 @@
+package typings.ractive.ractiveMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ObserverBaseDescriptor[T /* <: Ractive[T] */]
+  extends ObserverOpts
+     with ObserverDescriptor[T] {
+  /**
+  	 * The observer callback.
+  	 */
+  @JSName("handler")
+  var handler_Original: ObserverCallback[T] = js.native
+  /**
+  	 * Whether or not to use observeOnce when subscribing the observer. Defaults to false.
+  	 */
+  var once: js.UndefOr[Boolean] = js.native
+  /**
+  	 * The observer callback.
+  	 */
+  def handler(`this`: T, value: js.Any, old: js.Any, keypath: String, parts: String*): Unit | js.Promise[_] = js.native
+}
+

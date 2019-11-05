@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The style of text.
+  *
+  * Read methods in this class return null if the corresponding TextRange spans
+  * multiple text runs, and those runs have different values for the read method being called. To
+  * avoid this, query for text styles using the TextRanges returned by the TextRange.getRuns() method.
+  */
 @js.native
 trait TextStyle extends js.Object {
   def getBackgroundColor(): Color = js.native

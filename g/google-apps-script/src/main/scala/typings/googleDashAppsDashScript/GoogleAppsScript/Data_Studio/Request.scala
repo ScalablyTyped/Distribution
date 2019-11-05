@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * function getData(request: GoogleAppsScript.Data_Studio.Request<YourConnectorParams>)
+  *
+  * See https://developers.google.com/datastudio/connector/reference#getdata
+  */
 trait Request[T] extends js.Object {
   /** An object containing the user provided values for the config parameters defined by the connector. */
   var configParams: T

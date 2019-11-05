@@ -1,11 +1,11 @@
 package typings.antd.esMod
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.antd.Anon_AddonAfter
 import typings.antd.Anon_Type
 import typings.antd.Anon_ValueArray
 import typings.antd.TypeofClassPassword
 import typings.antd.TypeofClassSearch
+import typings.antd.TypeofClassTextArea
 import typings.antd.esInputGroupMod.GroupProps
 import typings.antd.esInputInputMod.InputProps
 import typings.antd.esInputMod.default
@@ -27,7 +27,7 @@ object Input extends js.Object {
   var Group: StatelessComponent[GroupProps] = js.native
   var Password: TypeofClassPassword = js.native
   var Search: TypeofClassSearch = js.native
-  var TextArea: Instantiable0[typings.antd.esInputTextAreaMod.default] = js.native
+  var TextArea: TypeofClassTextArea = js.native
   var defaultProps: Anon_Type = js.native
   var propTypes: Anon_AddonAfter = js.native
   def getDerivedStateFromProps(nextProps: InputProps): Anon_ValueArray | Null = js.native

@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,9 @@ trait ProgressbarOptions extends ProgressbarEvents {
 object ProgressbarOptions {
   @scala.inline
   def apply(
-    change: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null,
-    complete: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null,
-    create: (/* event */ Event, /* ui */ ProgressbarUIParams) => Unit = null,
+    change: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null,
+    complete: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     max: Int | Double = null,
     value: Double | Boolean = null

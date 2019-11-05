@@ -7,6 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A slide in a presentation.
+  *
+  * These pages contain the content you are presenting to your audience. Most slides are based on
+  * a master and a layout. You can specify which layout to use for each slide when it is created.
+  */
 @js.native
 trait Slide extends js.Object {
   def duplicate(): Slide = js.native

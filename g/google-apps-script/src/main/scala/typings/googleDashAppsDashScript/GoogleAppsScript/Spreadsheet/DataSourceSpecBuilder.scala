@@ -4,6 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The builder for DataSourceSpec. To create a specification for certain type, use as...() method. To create a new builder, use SpreadsheetApp.newDataSourceSpec(). To use the specification, see DataSourceTable.
+  *
+  * This examples show how to build a BigQuery data source specification.
+  *
+  *     var spec = SpreadsheetApp.newDataSourceSpec()
+  *                .asBigQuery()
+  *                .setProjectId('big_query_project')
+  *                .setRawQuery('select @FIELD from table limit @LIMIT')
+  *                .setParameterFromCell('FIELD', 'Sheet1!A1')
+  *                .setParameterFromCell('LIMIT', 'namedRangeCell')
+  *                .build();
+  */
 trait DataSourceSpecBuilder extends js.Object {
   def asBigQuery(): BigQueryDataSourceSpecBuilder
   def build(): DataSourceSpec

@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A template object for dynamically constructing HTML. For more information, see the guide to templates.
+  */
 trait HtmlTemplate
   extends /* propName */ StringDictionary[js.Any] {
   def evaluate(): HtmlOutput

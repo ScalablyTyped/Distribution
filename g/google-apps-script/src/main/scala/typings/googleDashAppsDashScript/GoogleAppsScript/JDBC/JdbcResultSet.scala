@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC ResultSet. For documentation of this class, see java.sql.ResultSet
+  * .
+  */
 @js.native
 trait JdbcResultSet extends js.Object {
   def absolute(row: Integer): Boolean = js.native

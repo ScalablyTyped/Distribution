@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait DeveloperMetadataVisibility extends js.Object
 
+/**
+  * An enumeration of the types of developer metadata visibility.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility")
 @js.native
 object DeveloperMetadataVisibility extends js.Object {

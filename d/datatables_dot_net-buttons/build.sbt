@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-buttons"
-version := "1.4-dt-20190416Z-b5ccff"
+version := "1.4-dt-20191104Z-c8a722"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,6 +7,25 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ParagraphHeading extends js.Object
 
+/**
+  * An enumeration of the standard paragraph headings.
+  *
+  * Use the ParagraphHeading enumeration to configure the heading style for ParagraphElement.
+  *
+  *     var body = DocumentApp.getActiveDocument().getBody();
+  *
+  *     // Append a paragraph, with heading 1.
+  *     var par1 = body.appendParagraph("Title");
+  *     par1.setHeading(DocumentApp.ParagraphHeading.HEADING1);
+  *
+  *     // Append a paragraph, with heading 2.
+  *     var par2 = body.appendParagraph("SubTitle");
+  *     par2.setHeading(DocumentApp.ParagraphHeading.HEADING2);
+  *
+  *     // Append a paragraph, with normal heading.
+  *     var par3 = body.appendParagraph("Text");
+  *     par3.setHeading(DocumentApp.ParagraphHeading.NORMAL);
+  */
 @JSGlobal("GoogleAppsScript.Document.ParagraphHeading")
 @js.native
 object ParagraphHeading extends js.Object {

@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify pivot tables.
+  */
 trait PivotTable extends js.Object {
   def addCalculatedPivotValue(name: String, formula: String): PivotValue
   def addColumnGroup(sourceDataColumn: Integer): PivotGroup

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "graphql-compose" : "6.3.6"
+      "graphql-compose" : "6.3.7"
     }
   ],
   "test-dependencies" : [
     {
-      "graphql-compose" : "6.3.6"
+      "graphql-compose" : "6.3.7"
     }
   ],
   "compile-devDependencies" : [

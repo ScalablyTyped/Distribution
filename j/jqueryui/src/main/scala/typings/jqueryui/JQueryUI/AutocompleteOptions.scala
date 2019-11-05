@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,19 +25,19 @@ object AutocompleteOptions {
   def apply(
     appendTo: js.Any = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
-    change: (/* event */ Event, /* ui */ AutocompleteUIParams) => Unit = null,
+    change: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
     classes: AutocompleteClasses = null,
-    close: (/* event */ Event, /* ui */ AutocompleteUIParams) => Unit = null,
-    create: (/* event */ Event, /* ui */ AutocompleteUIParams) => Unit = null,
+    close: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
     delay: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    focus: (/* event */ Event, /* ui */ AutocompleteUIParams) => Unit = null,
+    focus: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
     minLength: Int | Double = null,
-    open: (/* event */ Event, /* ui */ AutocompleteUIParams) => Unit = null,
+    open: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
     position: js.Any = null,
-    response: (/* event */ Event, /* ui */ AutocompleteUIParams) => Unit = null,
-    search: (/* event */ Event, /* ui */ AutocompleteUIParams) => Unit = null,
-    select: (/* event */ Event, /* ui */ AutocompleteUIParams) => Unit = null,
+    response: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
+    search: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
+    select: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit = null,
     source: js.Any = null
   ): AutocompleteOptions = {
     val __obj = js.Dynamic.literal()

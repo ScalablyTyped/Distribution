@@ -8,6 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder for table charts. For more details, see the Gviz documentation.
+  */
 @js.native
 trait EmbeddedTableChartBuilder extends js.Object {
   def addRange(range: Range): EmbeddedChartBuilder = js.native

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ColumnType extends js.Object
 
+/**
+  * An enumeration of the valid data types for columns in a DataTable.
+  */
 @JSGlobal("GoogleAppsScript.Charts.ColumnType")
 @js.native
 object ColumnType extends js.Object {

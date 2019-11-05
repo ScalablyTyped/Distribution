@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait DataExecutionErrorCode extends js.Object
 
+/**
+  * An enumeration of data execution error codes.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DataExecutionErrorCode")
 @js.native
 object DataExecutionErrorCode extends js.Object {

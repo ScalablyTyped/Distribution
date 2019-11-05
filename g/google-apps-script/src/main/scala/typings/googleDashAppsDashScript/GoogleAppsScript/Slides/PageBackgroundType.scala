@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait PageBackgroundType extends js.Object
 
+/**
+  * The kinds of page backgrounds.
+  */
 @JSGlobal("GoogleAppsScript.Slides.PageBackgroundType")
 @js.native
 object PageBackgroundType extends js.Object {

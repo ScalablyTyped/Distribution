@@ -6,6 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Options for a Gmail draft.
+  */
 trait GmailAdvancedOptions extends js.Object {
   /**
     * An array of files to send with the email.

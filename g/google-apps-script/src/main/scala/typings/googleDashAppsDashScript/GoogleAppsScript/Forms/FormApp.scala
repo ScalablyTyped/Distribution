@@ -5,6 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Allows a script to open an existing Form or create a new one.
+  *
+  *     // Open a form by ID.
+  *     var existingForm = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *
+  *     // Create and open a form.
+  *     var newForm = FormApp.create('Form Name');
+  */
 trait FormApp extends js.Object {
   var Alignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ js.Any
   var DestinationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ js.Any

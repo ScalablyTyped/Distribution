@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait PickerValuesLayout extends js.Object
 
+/**
+  * An enumeration of how to display selected values in picker widget.
+  */
 @JSGlobal("GoogleAppsScript.Charts.PickerValuesLayout")
 @js.native
 object PickerValuesLayout extends js.Object {

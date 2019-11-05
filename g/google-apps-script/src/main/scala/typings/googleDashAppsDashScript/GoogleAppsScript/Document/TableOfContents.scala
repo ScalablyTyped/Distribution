@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element containing a table of contents. A TableOfContents may contain ListItem, Paragraph, and Table elements, although the contents of a TableOfContents are usually generated automatically by Google Docs. For more information on
+  * document structure, see the guide to
+  * extending Google Docs.
+  */
 @js.native
 trait TableOfContents extends js.Object {
   def clear(): TableOfContents = js.native

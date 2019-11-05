@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access the existing BigQuery data source specification. To create a new data source
+  * specification, use SpreadsheetApp.newDataSourceSpec().
+  */
 trait BigQueryDataSourceSpec extends js.Object {
   def copy(): DataSourceSpecBuilder
   def getParameters(): js.Array[DataSourceParameter]

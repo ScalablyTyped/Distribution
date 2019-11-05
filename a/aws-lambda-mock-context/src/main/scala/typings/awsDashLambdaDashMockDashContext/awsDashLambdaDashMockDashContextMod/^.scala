@@ -1,5 +1,6 @@
 package typings.awsDashLambdaDashMockDashContext.awsDashLambdaDashMockDashContextMod
 
+import typings.awsDashLambda.awsDashLambdaMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): Context = js.native
-  def apply(options: Options): Context = js.native
+  def apply(options: ContextOptions): Context = js.native
 }
 

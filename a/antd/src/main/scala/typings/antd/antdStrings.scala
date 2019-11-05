@@ -154,7 +154,7 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT24DOT3` extends js.Object
+  sealed trait `3DOT25DOT0` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -170,6 +170,12 @@ object antdStrings {
   
   @js.native
   sealed trait PM extends js.Object
+  
+  @js.native
+  sealed trait POST extends js.Object
+  
+  @js.native
+  sealed trait PUT extends js.Object
   
   @js.native
   sealed trait SECRET_COMBOBOX_MODE_DO_NOT_USE
@@ -866,6 +872,9 @@ object antdStrings {
   sealed trait `inner-spin-button` extends js.Object
   
   @js.native
+  sealed trait input extends js.Object
+  
+  @js.native
   sealed trait inset extends js.Object
   
   @js.native
@@ -1316,6 +1325,9 @@ object antdStrings {
   sealed trait popup extends js.Object
   
   @js.native
+  sealed trait post extends js.Object
+  
+  @js.native
   sealed trait pre extends js.Object
   
   @js.native
@@ -1366,6 +1378,9 @@ object antdStrings {
   
   @js.native
   sealed trait `push-button` extends js.Object
+  
+  @js.native
+  sealed trait put extends js.Object
   
   @js.native
   sealed trait radio
@@ -2125,7 +2140,7 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT24DOT3`: `3DOT24DOT3` = "3.24.3".asInstanceOf[`3DOT24DOT3`]
+  def `3DOT25DOT0`: `3DOT25DOT0` = "3.25.0".asInstanceOf[`3DOT25DOT0`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -2136,6 +2151,10 @@ object antdStrings {
   def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
   @scala.inline
   def PM: PM = "PM".asInstanceOf[PM]
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
   def SECRET_COMBOBOX_MODE_DO_NOT_USE: SECRET_COMBOBOX_MODE_DO_NOT_USE = "SECRET_COMBOBOX_MODE_DO_NOT_USE".asInstanceOf[SECRET_COMBOBOX_MODE_DO_NOT_USE]
   @scala.inline
@@ -2495,6 +2514,8 @@ object antdStrings {
   @scala.inline
   def `inner-spin-button`: `inner-spin-button` = "inner-spin-button".asInstanceOf[`inner-spin-button`]
   @scala.inline
+  def input: input = "input".asInstanceOf[input]
+  @scala.inline
   def inset: inset = "inset".asInstanceOf[inset]
   @scala.inline
   def inside: inside = "inside".asInstanceOf[inside]
@@ -2747,6 +2768,8 @@ object antdStrings {
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
+  def post: post = "post".asInstanceOf[post]
+  @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
   def `pre-line`: `pre-line` = "pre-line".asInstanceOf[`pre-line`]
@@ -2778,6 +2801,8 @@ object antdStrings {
   def proximity: proximity = "proximity".asInstanceOf[proximity]
   @scala.inline
   def `push-button`: `push-button` = "push-button".asInstanceOf[`push-button`]
+  @scala.inline
+  def put: put = "put".asInstanceOf[put]
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   @scala.inline

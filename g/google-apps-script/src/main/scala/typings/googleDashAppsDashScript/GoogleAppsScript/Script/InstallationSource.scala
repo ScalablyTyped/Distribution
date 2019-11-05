@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait InstallationSource extends js.Object
 
+/**
+  * An enumeration that indicates how the script came to be installed as an add-on for the current
+  * user.
+  */
 @JSGlobal("GoogleAppsScript.Script.InstallationSource")
 @js.native
 object InstallationSource extends js.Object {

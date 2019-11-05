@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A PageElement representing a table.
+  */
 @js.native
 trait Table extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): Table = js.native

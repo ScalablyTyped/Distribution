@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("react-google-recaptcha", "ReCAPTCHA")
 @js.native
-trait ReCAPTCHA
+class ReCAPTCHA ()
   extends Component[ReCAPTCHAProps, js.Object, js.Any] {
   /**
   	 * Programatically invoke the reCAPTCHA check. Used if the invisible reCAPTCHA is on a div instead of a button

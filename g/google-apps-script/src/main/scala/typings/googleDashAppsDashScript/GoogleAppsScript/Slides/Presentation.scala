@@ -6,6 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A presentation.
+  */
 @js.native
 trait Presentation extends js.Object {
   def addEditor(emailAddress: String): Presentation = js.native

@@ -16,6 +16,7 @@ trait UploadFile[T] extends js.Object {
   var name: String
   var originFileObj: js.UndefOr[File | Blob] = js.undefined
   var percent: js.UndefOr[Double] = js.undefined
+  var preview: js.UndefOr[String] = js.undefined
   var response: js.UndefOr[T] = js.undefined
   var size: Double
   var status: js.UndefOr[UploadFileStatus] = js.undefined
@@ -23,6 +24,7 @@ trait UploadFile[T] extends js.Object {
   var `type`: String
   var uid: String
   var url: js.UndefOr[String] = js.undefined
+  var xhr: js.UndefOr[T] = js.undefined
 }
 
 object UploadFile {
@@ -39,10 +41,12 @@ object UploadFile {
     linkProps: js.Any = null,
     originFileObj: File | Blob = null,
     percent: Int | Double = null,
+    preview: String = null,
     response: T = null,
     status: UploadFileStatus = null,
     thumbUrl: String = null,
-    url: String = null
+    url: String = null,
+    xhr: T = null
   ): UploadFile[T] = {
     val __obj = js.Dynamic.literal(name = name, size = size, uid = uid)
     __obj.updateDynamic("type")(`type`)
@@ -53,10 +57,12 @@ object UploadFile {
     if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps)
     if (originFileObj != null) __obj.updateDynamic("originFileObj")(originFileObj.asInstanceOf[js.Any])
     if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (preview != null) __obj.updateDynamic("preview")(preview)
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status)
     if (thumbUrl != null) __obj.updateDynamic("thumbUrl")(thumbUrl)
     if (url != null) __obj.updateDynamic("url")(url)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFile[T]]
   }
 }

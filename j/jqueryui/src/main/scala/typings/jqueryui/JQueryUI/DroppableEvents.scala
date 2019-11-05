@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +17,12 @@ trait DroppableEvents extends js.Object {
 object DroppableEvents {
   @scala.inline
   def apply(
-    activate: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
-    create: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
-    deactivate: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
-    drop: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
-    out: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null,
-    over: (/* event */ Event, /* ui */ DroppableEventUIParam) => Unit = null
+    activate: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
+    deactivate: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
+    drop: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
+    out: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
+    over: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null
   ): DroppableEvents = {
     val __obj = js.Dynamic.literal()
     if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))

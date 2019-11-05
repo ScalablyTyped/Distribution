@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +13,8 @@ trait TooltipEvents extends js.Object {
 object TooltipEvents {
   @scala.inline
   def apply(
-    close: (/* event */ Event, /* ui */ TooltipUIParams) => Unit = null,
-    open: (/* event */ Event, /* ui */ TooltipUIParams) => Unit = null
+    close: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit = null,
+    open: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit = null
   ): TooltipEvents = {
     val __obj = js.Dynamic.literal()
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2(close))

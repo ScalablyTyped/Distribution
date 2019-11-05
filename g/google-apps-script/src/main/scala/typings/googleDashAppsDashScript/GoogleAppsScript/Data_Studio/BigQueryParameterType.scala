@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait BigQueryParameterType extends js.Object
 
+/**
+  * An enum that defines the BigQuery parameter types that you can set.
+  */
 @JSGlobal("GoogleAppsScript.Data_Studio.BigQueryParameterType")
 @js.native
 object BigQueryParameterType extends js.Object {

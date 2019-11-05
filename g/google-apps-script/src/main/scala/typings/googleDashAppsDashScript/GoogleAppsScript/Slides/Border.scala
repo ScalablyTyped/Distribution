@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Describes the border around an element.
+  */
 trait Border extends js.Object {
   def getDashStyle(): DashStyle
   def getLineFill(): LineFill

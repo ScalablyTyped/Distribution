@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait DashStyle extends js.Object
 
+/**
+  * The kinds of dashes with which linear geometry can be rendered. These values are based on the
+  * "ST_PresetLineDashVal" simple type described in section 20.1.10.48 of "Office Open XML File
+  * Formats - Fundamentals and Markup Language Reference", part 1 of ECMA-376 4th
+  * edition.
+  */
 @JSGlobal("GoogleAppsScript.Slides.DashStyle")
 @js.native
 object DashStyle extends js.Object {

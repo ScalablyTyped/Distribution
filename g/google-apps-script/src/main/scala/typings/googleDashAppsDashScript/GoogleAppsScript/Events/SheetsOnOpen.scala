@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// External interfaces
 trait SheetsOnOpen extends AppsScriptEvent {
   var source: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Spreadsheet
 }

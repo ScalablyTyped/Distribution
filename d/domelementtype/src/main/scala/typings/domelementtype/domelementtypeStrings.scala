@@ -1,33 +1,34 @@
 package typings.domelementtype
 
+import typings.domelementtype.domelementtypeMod.ElementType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object domelementtypeStrings {
   @js.native
-  sealed trait cdata extends js.Object
+  sealed trait cdata extends ElementType
   
   @js.native
-  sealed trait comment extends js.Object
+  sealed trait comment extends ElementType
   
   @js.native
-  sealed trait directive extends js.Object
+  sealed trait directive extends ElementType
   
   @js.native
-  sealed trait doctype extends js.Object
+  sealed trait doctype extends ElementType
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script extends ElementType
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style extends ElementType
   
   @js.native
-  sealed trait tag extends js.Object
+  sealed trait tag extends ElementType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text extends ElementType
   
   @scala.inline
   def cdata: cdata = "cdata".asInstanceOf[cdata]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "braft-editor"
-version := "1.9-dt-20190626Z-c86c0b"
+version := "2.3.8-137926"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

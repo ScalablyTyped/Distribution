@@ -5,6 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A card section holds groups of widgets and provides visual separation between them.
+  *
+  *     var image = CardService.newImage();
+  *     // Build image ...
+  *     var textParagraph = CardService.newTextParagraph();
+  *     // Build text paragraph ...
+  *
+  *     var cardSection = CardService.newCardSection()
+  *         .setHeader("Section header")
+  *         .addWidget(image)
+  *         .addWidget(textParagraph);
+  */
 trait CardSection extends js.Object {
   def addWidget(widget: Widget): CardSection
   def setCollapsible(collapsible: Boolean): CardSection

@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A wrapper around an Element with a possible start and end offset. These offsets allow a
+  * range of characters within a Text
+  * element to be represented in search results, document selections, and named ranges.
+  */
 trait RangeElement extends js.Object {
   def getElement(): Element
   def getEndOffsetInclusive(): Integer

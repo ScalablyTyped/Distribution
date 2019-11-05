@@ -1,6 +1,5 @@
 package typings.antd
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.antd.libInputGroupMod.GroupProps
 import typings.antd.libInputInputMod.InputProps
 import typings.react.reactMod.StatelessComponent
@@ -23,7 +22,7 @@ object libInputMod extends js.Object {
     var Group: StatelessComponent[GroupProps] = js.native
     var Password: TypeofClassPasswordDefaultProps = js.native
     var Search: TypeofClassSearchDefaultPropsAnonEnterButton = js.native
-    var TextArea: Instantiable0[typings.antd.libInputTextAreaMod.default] = js.native
+    var TextArea: TypeofClassTextAreaGetDerivedStateFromProps = js.native
     var defaultProps: Anon_Type = js.native
     var propTypes: Anon_AddonAfter = js.native
     def getDerivedStateFromProps(nextProps: InputProps): Anon_ValueArray | Null = js.native

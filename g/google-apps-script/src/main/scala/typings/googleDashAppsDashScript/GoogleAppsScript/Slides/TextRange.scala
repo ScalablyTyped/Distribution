@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A segment of the text contents of a Shape or a TableCell.
+  */
 @js.native
 trait TextRange extends js.Object {
   def appendParagraph(text: String): Paragraph = js.native

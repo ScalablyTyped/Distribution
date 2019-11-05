@@ -4,6 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Contains text input information for the config. Its properties determine how the text input is
+  * displayed in Data Studio.
+  *
+  *     var cc = DataStudioApp.createCommunityConnector();
+  *     var config = cc.getConfig();
+  *
+  *     var info1 = config.newTextInput()
+  *       .setId("info1")
+  *       .setName("Search")
+  *       .setHelpText("for example, Coldplay")
+  *       .setAllowOverride(true)
+  *       .setPlaceholder("Search for an artist for all songs.");
+  */
 trait TextInput extends js.Object {
   def setAllowOverride(allowOverride: Boolean): TextInput
   def setHelpText(helpText: String): TextInput

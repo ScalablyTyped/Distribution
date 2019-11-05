@@ -6,6 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Allows scripts to create, find, and modify files and folders in Google Drive.
+  *
+  *     // Log the name of every file in the user's Drive.
+  *     var files = DriveApp.getFiles();
+  *     while (files.hasNext()) {
+  *       var file = files.next();
+  *       Logger.log(file.getName());
+  *     }
+  */
 @js.native
 trait DriveApp extends js.Object {
   var Access: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Access */ js.Any = js.native

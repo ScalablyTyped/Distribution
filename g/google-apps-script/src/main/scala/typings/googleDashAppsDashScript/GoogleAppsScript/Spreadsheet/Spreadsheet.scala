@@ -11,6 +11,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify Google Sheets files. Common operations are adding new sheets and adding
+  * collaborators.
+  */
 @js.native
 trait Spreadsheet extends js.Object {
   def addDeveloperMetadata(key: String): typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Spreadsheet = js.native

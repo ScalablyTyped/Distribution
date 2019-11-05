@@ -4,6 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a footnote. Each Footnote is contained within a ListItem
+  * or Paragraph and has a corresponding FootnoteSection element for the footnote's
+  * contents. The Footnote itself cannot contain any other element. For more information on
+  * document structure, see the guide to
+  * extending Google Docs.
+  */
 trait Footnote extends js.Object {
   def copy(): Footnote
   def getAttributes(): js.Any

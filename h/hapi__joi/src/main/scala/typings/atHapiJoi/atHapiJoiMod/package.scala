@@ -16,16 +16,25 @@ package object atHapiJoiMod {
   type ExternalValidationFunction = js.Function1[/* value */ js.Any, js.Any]
   type LanguageMessages = Record[String, String]
   type RuleMethod = js.Function1[/* repeated */ js.Any, js.Any]
-  type SchemaFunction = js.Function1[/* schema */ Schema, Schema]
   /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - js.Object
-    - scala.Null
-    - typings.atHapiJoi.atHapiJoiMod.Schema
-    - typings.atHapiJoi.atHapiJoiMod.SchemaMap
+    - typings.atHapiJoi.atHapiJoiMod.AnySchema
+    - typings.atHapiJoi.atHapiJoiMod.ArraySchema
+    - typings.atHapiJoi.atHapiJoiMod.AlternativesSchema
+    - typings.atHapiJoi.atHapiJoiMod.BinarySchema
+    - typings.atHapiJoi.atHapiJoiMod.BooleanSchema
+    - typings.atHapiJoi.atHapiJoiMod.DateSchema
+    - typings.atHapiJoi.atHapiJoiMod.FunctionSchema
+    - typings.atHapiJoi.atHapiJoiMod.NumberSchema
+    - typings.atHapiJoi.atHapiJoiMod.ObjectSchema[js.Any]
+    - typings.atHapiJoi.atHapiJoiMod.StringSchema
+    - typings.atHapiJoi.atHapiJoiMod.LinkSchema
+    - typings.atHapiJoi.atHapiJoiMod.SymbolSchema
   */
-  type SchemaLike = _SchemaLike | String | Double | Boolean | js.Object | Null
+  type Schema = _Schema | ObjectSchema[js.Any]
+  type SchemaFunction = js.Function1[/* schema */ Schema, Schema]
+  type SchemaLike = String | Double | Boolean | js.Object | Null | Schema | SchemaMap[js.Any]
+  type SchemaMap[TSchema] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof TSchema ]:? @hapi/joi.@hapi/joi.SchemaLike | std.Array<@hapi/joi.@hapi/joi.SchemaLike>}
+    */ typings.atHapiJoi.atHapiJoiStrings.SchemaMap with js.Any
   type ValidationErrorFunction = js.Function1[/* errors */ js.Array[ValidationErrorItem], String | ValidationErrorItem | Error]
 }

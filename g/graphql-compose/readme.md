@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-compose
 
-Typings are for version 6.3.6
+Typings are for version 6.3.7
 
 ## Library description:
 GraphQL schema builder from different data sources with middleware extensions.

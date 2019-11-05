@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait DataSourceParameterType extends js.Object
 
+/**
+  * An enumeration of data source parameter types.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DataSourceParameterType")
 @js.native
 object DataSourceParameterType extends js.Object {

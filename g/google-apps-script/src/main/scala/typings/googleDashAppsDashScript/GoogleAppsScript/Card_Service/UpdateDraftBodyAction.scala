@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents an action that updates the email draft body.
+  */
 trait UpdateDraftBodyAction extends js.Object {
   def addUpdateContent(content: String, contentType: ContentType): UpdateDraftBodyAction
   def setUpdateType(updateType: UpdateDraftBodyType): UpdateDraftBodyAction

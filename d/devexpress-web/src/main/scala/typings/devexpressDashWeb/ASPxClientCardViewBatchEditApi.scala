@@ -61,10 +61,18 @@ class ASPxClientCardViewBatchEditApi () extends js.Object {
     * Gets information about the cell currently being edited.
     */
   def GetEditCellInfo(): ASPxClientCardViewCellInfo = js.native
+  def GetGroupSummaryValue(groupRowVisibleIndex: Double, summaryItemIndex: String): Double = js.native
+  def GetGroupSummaryValue(groupRowVisibleIndex: Double, summaryItemIndex: Double): Double = js.native
   /**
     * Returns an array of the inserted card visible indices.
     */
   def GetInsertedCardIndices(): js.Array[Double] = js.native
+  def GetTotalSummaryValue(summaryItemIndex: String): Double = js.native
+  /**
+    * Returns the total summary value. The value.
+    * @param summaryItemIndex The total summary's index or field name.
+    */
+  def GetTotalSummaryValue(summaryItemIndex: Double): Double = js.native
   /**
     * Returns an object that stores unsaved changes.
     */

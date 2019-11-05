@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Connection. For documentation of this class, see
+  * java.sql.Connection.
+  */
 @js.native
 trait JdbcConnection extends js.Object {
   def clearWarnings(): Unit = js.native

@@ -4,6 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Contains select multiple information for the config. Its properties determine how the select
+  * multiple is displayed in Data Studio.
+  *
+  * Usage:
+  *
+  *     var option1 = config.newOptionBuilder()
+  *       .setLabel("option label")
+  *       .setValue("option_value");
+  *
+  *     var option2 = config.newOptionBuilder()
+  *       .setLabel("second option label")
+  *       .setValue("option_value_2");
+  *
+  *     var info1 = config.newSelectMultiple()
+  *       .setId("api_endpoint")
+  *       .setName("Data Type")
+  *       .setHelpText("Select the data type you're interested in.")
+  *       .setAllowOverride(true)
+  *       .addOption(option1)
+  *       .addOption(option2);
+  */
 trait SelectMultiple extends js.Object {
   def addOption(optionBuilder: OptionBuilder): SelectMultiple
   def setAllowOverride(allowOverride: Boolean): SelectMultiple

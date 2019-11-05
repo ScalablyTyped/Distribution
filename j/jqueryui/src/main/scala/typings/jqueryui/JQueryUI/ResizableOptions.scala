@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ object ResizableOptions {
     autoHide: js.UndefOr[Boolean] = js.undefined,
     cancel: String = null,
     containment: js.Any = null,
-    create: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
     delay: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     distance: Int | Double = null,
@@ -56,9 +56,9 @@ object ResizableOptions {
     maxWidth: Int | Double = null,
     minHeight: Int | Double = null,
     minWidth: Int | Double = null,
-    resize: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
-    start: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null,
-    stop: (/* event */ Event, /* ui */ ResizableUIParams) => Unit = null
+    resize: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
+    start: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null,
+    stop: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Unit = null
   ): ResizableOptions = {
     val __obj = js.Dynamic.literal()
     if (alsoResize != null) __obj.updateDynamic("alsoResize")(alsoResize)

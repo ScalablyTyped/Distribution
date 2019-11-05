@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait TextDirection extends js.Object
 
+/**
+  * The directions text can flow in.
+  */
 @JSGlobal("GoogleAppsScript.Slides.TextDirection")
 @js.native
 object TextDirection extends js.Object {

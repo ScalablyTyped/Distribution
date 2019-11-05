@@ -1668,6 +1668,7 @@
 | 103 | [treeify](./t/treeify) | converts a JS object into a nice and readable tree
 | 102 | [aurelia-templating](./a/aurelia-templating) | An extensible HTML templating engine supporting da
 | 102 | [dropzone](./d/dropzone) | Handles drag and drop of files for you.
+| 102 | [fast-memoize](./f/fast-memoize) | Fastest memoization lib that supports N arguments
 | 102 | [glob-to-regexp](./g/glob-to-regexp) | Convert globs to regular expressions
 | 102 | [google-cloud__datastore](./g/google-cloud__datastore) | Cloud Datastore Client Library for Node.js
 | 102 | [iterall](./i/iterall) | Minimal zero-dependency utilities for using JavaSc
@@ -2728,6 +2729,7 @@
 | 41 | [chalk-animation](./c/chalk-animation) | Colorful animations in terminal output
 | 41 | [clean-stack](./c/clean-stack) | Clean up error stack traces
 | 41 | [crossroads](./c/crossroads) | Flexible router which can be used in multiple envi
+| 41 | [denque](./d/denque) | The fastest javascript implementation of a double-
 | 41 | [dlv](./d/dlv) | Safely get a dot-notated property within an object
 | 41 | [express-xml-bodyparser](./e/express-xml-bodyparser) | Simple XML body parser connect/express middleware
 | 41 | [feathersjs__express](./f/feathersjs__express) | Feathers Express framework bindings and REST provi
@@ -3197,6 +3199,7 @@
 | 28 | [diffie-hellman](./d/diffie-hellman) | pure js diffie-hellman
 | 28 | [dojo](./d/dojo) | Dojo core is a powerful, lightweight library that 
 | 28 | [dom4](./d/dom4) | a fully tested and covered polyfill for new DOM Le
+| 28 | [electron-localshortcut](./e/electron-localshortcut) | register/unregister a keyboard shortcut locally to
 | 28 | [eslint-visitor-keys](./e/eslint-visitor-keys) | Constants and utilities about visitor keys to trav
 | 28 | [firebase__app](./f/firebase__app) | The primary entrypoint to the Firebase JS SDK
 | 28 | [get-urls](./g/get-urls) | Get all URLs in a string
@@ -3778,6 +3781,7 @@
 | 18 | [svgr__rollup](./s/svgr__rollup) | SVGR Rollup plugin.
 | 18 | [theme-ui](./t/theme-ui) | Build consistent, themeable React UIs based on des
 | 18 | [thepiratebay](./t/thepiratebay) | The pirate bay client
+| 18 | [ts-log](./t/ts-log) | Abstract logger TypeScript interface with a dummy 
 | 18 | [unique-random](./u/unique-random) | Generate random numbers that are consecutively uni
 | 18 | [upng-js](./u/upng-js) | Small, fast and advanced PNG / APNG encoder and de
 | 18 | [upper-case-first](./u/upper-case-first) | Upper case the first character of a string
@@ -4161,7 +4165,6 @@
 | 13 | [vivus](./v/vivus) | JavaScript library to make drawing animation on SV
 | 13 | [vue2-editor](./v/vue2-editor) | HTML editor using Vue.js 2, and Quill.js, an open 
 | 13 | [websql](./w/websql) | WebSQL Database API, implemented for Node using sq
-| 13 | [wikidata-sdk](./w/wikidata-sdk) | A javascript tool-suite to query Wikidata and simp
 | 13 | [xmpp__jid](./x/xmpp__jid) | XMPP identifiers (JID) for JavaScript
 | 13 | [youtube-player](./y/youtube-player) | YouTube IFrame Player API abstraction.
 | 12 | [add-zero](./a/add-zero) | Add a leading zero to a number.
@@ -4218,6 +4221,7 @@
 | 12 | [numjs](./n/numjs) | Like NumPy, in JavaScript
 | 12 | [on-change](./o/on-change) | Watch an object or array for changes
 | 12 | [onsenui](./o/onsenui) | HTML5 Mobile Framework & UI Components
+| 12 | [openapi-schema-validator](./o/openapi-schema-validator) | A validator for OpenAPI documents.
 | 12 | [opentok](./o/opentok) | OpenTok server-side SDK
 | 12 | [p-reflect](./p/p-reflect) | Make a promise always fulfill with its actual fulf
 | 12 | [passport-oauth2-refresh](./p/passport-oauth2-refresh) | A passport.js add-on to provide automatic OAuth 2.
@@ -4382,6 +4386,7 @@
 | 11 | [uid-generator](./u/uid-generator) | Generates cryptographically strong pseudo-random U
 | 11 | [vkbeautify](./v/vkbeautify) | Pretty prints and minifies XML/JSON/SQL/CSS
 | 11 | [vue-datetime](./v/vue-datetime) | Mobile friendly datetime picker for Vue. Supports 
+| 11 | [w3c-keyname](./w/w3c-keyname) | Get a KeyboardEvent.key-style string from an event
 | 11 | [webpack-fail-plugin](./w/webpack-fail-plugin) | Webpack plugin that makes the process return an er
 | 11 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities.
 | 11 | [xhr-mock](./x/xhr-mock) | Utility for mocking XMLHttpRequest.
@@ -4918,6 +4923,7 @@
 | 7 | [wordpress__viewport](./w/wordpress__viewport) | Viewport module for WordPress.
 | 7 | [x-ray-crawler](./x/x-ray-crawler) | x-ray's crawler
 | 6 | [acme-client](./a/acme-client) | Simple and unopinionated ACME client
+| 6 | [alloy](./a/alloy) | Appcelerator Titanium MVC Framework
 | 6 | [amazon-product-api](./a/amazon-product-api) | Amazon Product Advertising API client
 | 6 | [angular-tooltips](./a/angular-tooltips) | Angular.js tooltips module.
 | 6 | [angular-websocket](./a/angular-websocket) | An Angular WebSocket service for connecting client
@@ -5009,6 +5015,7 @@
 | 6 | [object-map](./o/object-map) | Map a function over some Object's values to produc
 | 6 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s
 | 6 | [oibackoff](./o/oibackoff) | Incremental backoff flow-control for any : fn(func
+| 6 | [openapi-jsonschema-parame](./o/openapi-jsonschema-parameters) | Converts openapi parameters to a jsonschema format
 | 6 | [operation-retrier](./o/operation-retrier) | -
 | 6 | [opossum](./o/opossum) | A fail-fast circuit breaker for promises and callb
 | 6 | [p-do-whilst](./p/p-do-whilst) | Calls a function repeatedly while a condition retu
@@ -5326,6 +5333,7 @@
 | 4 | [electron-prompt](./e/electron-prompt) | Electron helper to prompt for a value via input or
 | 4 | [element-ready](./e/element-ready) | Detect when an element is ready in the DOM
 | 4 | [ember-resolver](./e/ember-resolver) | The default modules based resolver for Ember CLI.
+| 4 | [ember__ordered-set](./e/ember__ordered-set) | The default blueprint for ember-cli addons.
 | 4 | [emoji-flags](./e/emoji-flags) | return emoji flag symbol for country code
 | 4 | [empty-trash](./e/empty-trash) | Empty the trash
 | 4 | [ensure-error](./e/ensure-error) | Ensures a value is a valid error by making it one 
@@ -5409,6 +5417,8 @@
 | 4 | [node-snap7](./n/node-snap7) | Native node.js addon/wrapper for snap7
 | 4 | [normalize-jss](./n/normalize-jss) | JSS port of normalize.css
 | 4 | [obj-str](./o/obj-str) | A tiny library for serializing Object values to St
+| 4 | [openapi-request-coercer](./o/openapi-request-coercer) | Coerce request properties according to an openapi 
+| 4 | [openapi-request-validator](./o/openapi-request-validator) | Validate request properties against an OpenAPI spe
 | 4 | [osrm](./o/osrm) | The Open Source Routing Machine is a high performa
 | 4 | [parse-path](./p/parse-path) | Parse paths (local paths, urls: ssh/git/etc)
 | 4 | [phosphor__keyboard](./p/phosphor__keyboard) | PhosphorJS - Keyboard
@@ -5627,6 +5637,7 @@
 | 3 | [jupyterlab__vdom](./j/jupyterlab__vdom) | A viewer for VDOM documents.
 | 3 | [jwt-client](./j/jwt-client) | Micro service to read, write and save JWT headers
 | 3 | [knockout_dot_punches](./k/knockout_dot_punches) | Enhanced binding syntaxes for Knockout 3+
+| 3 | [koa-docs](./k/koa-docs) | An automatic documentation generator for koa.js AP
 | 3 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
 | 3 | [koa-redis-cache](./k/koa-redis-cache) | a middleware for koa to cache response with redis.
 | 3 | [kurento-utils](./k/kurento-utils) | Kurento Utilities
@@ -5659,7 +5670,6 @@
 | 3 | [micromodal](./m/micromodal) | Tiny javascript library for creating accessible mo
 | 3 | [min-indent](./m/min-indent) | Get the shortest leading whitespace from lines in 
 | 3 | [mobservable](./m/mobservable) | Observable data. Reactive functions. Simple code.
-| 3 | [mobx-devtools-mst](./m/mobx-devtools-mst) | Allows debugging mobx-state-tree roots. See 
 | 3 | [mocha-steps](./m/mocha-steps) | Sequential scenarios for Mocha
 | 3 | [mock-req-res](./m/mock-req-res) | Extensible mock req / res objects for use in unit 
 | 3 | [moment-business-time](./m/moment-business-time) | Query and manipulate moment objects within the con
@@ -5680,6 +5690,8 @@
 | 3 | [nodelib__fs_dot_stat](./n/nodelib__fs_dot_stat) | Get the status of a file with some features
 | 3 | [notifyjs-browser](./n/notifyjs-browser) | Notify.js =====
 | 3 | [oauth-shim](./o/oauth-shim) | OAuth2 shim for OAuth1 services, works with the cl
+| 3 | [openapi-default-setter](./o/openapi-default-setter) | Sets default values in request properties accordin
+| 3 | [openapi-response-validato](./o/openapi-response-validator) | Validate a response according to an openapi schema
 | 3 | [ospec](./o/ospec) | Noiseless testing framework
 | 3 | [parquetjs](./p/parquetjs) | fully asynchronous, pure JavaScript implementation
 | 3 | [parse5-parser-stream](./p/parse5-parser-stream) | Streaming HTML parser with scripting support.
@@ -5798,6 +5810,7 @@
 | 3 | [yog-bigpipe](./y/yog-bigpipe) | An express.js middleware for fis widget pipline ou
 | 3 | [yt-player](./y/yt-player) | Simple, robust YouTube Iframe Player API
 | 3 | [zen-push](./z/zen-push) | An Observable push stream
+| 2 | [adhan](./a/adhan) | Adhan is a well tested and well documented library
 | 2 | [adlib](./a/adlib) | Templating for deep JSON object graphs
 | 2 | [agora-rtc-sdk](./a/agora-rtc-sdk) | AgoraRTC SDK for web
 | 2 | [angular-environment](./a/angular-environment) | AngujarJS Environment Plugin
@@ -6030,12 +6043,15 @@
 | 2 | [obelisk_dot_js](./o/obelisk_dot_js) | JavaScript Library for Building Pixel Isometric El
 | 2 | [oidc-token-manager](./o/oidc-token-manager) | Library to manage tokens obtained via OpenID Conne
 | 2 | [ontime](./o/ontime) | a human-readable cron
+| 2 | [openapi-framework](./o/openapi-framework) | An OpenAPI framework for any web framework
+| 2 | [openapi-security-handler](./o/openapi-security-handler) | A library to process OpenAPI security definitions 
 | 2 | [p-loading](./p/p-loading) | Loading mask plugin for jQuery.
 | 2 | [park-miller](./p/park-miller) | Park-Miller pseudorandom number generator (PRNG)
 | 2 | [parse5-html-rewriting-str](./p/parse5-html-rewriting-stream) | Streaming HTML rewriter.
 | 2 | [passport-discord](./p/passport-discord) | Passport strategy for authentication with Discord 
 | 2 | [pdf2image](./p/pdf2image) | Converts a given pdf to the desired images
 | 2 | [peer-dial](./p/peer-dial) | Nodejs implementation of the Discovery and Launch 
+| 2 | [peerjs-js-binarypack](./p/peerjs-js-binarypack) | BinaryPack serialization for the web browser
 | 2 | [pg-large-object](./p/pg-large-object) | Large object support for PostgreSQL clients (node-
 | 2 | [phone-formatter](./p/phone-formatter) | Parse and format telephone numbers.
 | 2 | [pick-deep](./p/pick-deep) | Creates an object composed of the picked object pr
@@ -6344,6 +6360,7 @@
 | 1 | [fnv-lite](./f/fnv-lite) | Small 128-bit FNV-1a library for the browser.
 | 1 | [forge-di](./f/forge-di) | a dependency injector for node.js
 | 1 | [formstate](./f/formstate) | Painless and simple MobX form management
+| 1 | [fs-routes](./f/fs-routes) | Scan a filesystem for route files.
 | 1 | [fundamental-react](./f/fundamental-react) | SAP Fiori Fundamentals, implemented in React
 | 1 | [gaea-model](./g/gaea-model) | 盖亚-定义文件
 | 1 | [gfc](./g/gfc) | Simple way to initialize a new git repository in a
@@ -6471,6 +6488,7 @@
 | 1 | [knockout_dot_mapping](./k/knockout_dot_mapping) | Object mapping plugin for KnockoutJS
 | 1 | [known](./k/known) | Allow only access to known object properties using
 | 1 | [koa-bouncer](./k/koa-bouncer) | A parameter validation library for Koa routes
+| 1 | [koa-joi-router-docs](./k/koa-joi-router-docs) | OpenAPI(aka Swagger) API docs generator for koa-jo
 | 1 | [koa2-session-redis](./k/koa2-session-redis) | A simple redis store of koa-session
 | 1 | [koa__multer](./k/koa__multer) | Route middleware for Koa that handles multipart/fo
 | 1 | [kos-core](./k/kos-core) | 基于react-redux的可使用封装
@@ -6815,6 +6833,7 @@
 | 0 | [barcode](./b/barcode) | Generate 1D and 2D barcodes
 | 0 | [bardjs](./b/bardjs) | Spec helpers for testing angular v.1.x apps with M
 | 0 | [base64topdf](./b/base64topdf) | base64topdf
+| 0 | [beanstalkd-worker](./b/beanstalkd-worker) | High level library for running beanstalkd workers 
 | 0 | [beats](./b/beats) | A naive but generic beat-detection module.
 | 0 | [blissfuljs](./b/blissfuljs) | Lightweight helper library for modern browsers.
 | 0 | [blocks](./b/blocks) | jsblocks - Better MV-ish Framework
@@ -7429,6 +7448,7 @@
 | 0 | [valdr](./v/valdr) | A model centric approach to AngularJS form validat
 | 0 | [valerie](./v/valerie) | Simple JS object validator
 | 0 | [valiant](./v/valiant) | JavaScript interval arithmetic library
+| 0 | [vanilla-swipe](./v/vanilla-swipe) | Tiny vanilla JS library to detect swipe direction.
 | 0 | [vara](./v/vara) | Vara can create realistic text drawing animations 
 | 0 | [vexdb](./v/vexdb) | A simple tool for accessing the VexDB
 | 0 | [viewability-helper](./v/viewability-helper) | Lightweight cross-browser library that enables you

@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,17 +22,17 @@ trait DialogEvents extends js.Object {
 object DialogEvents {
   @scala.inline
   def apply(
-    beforeClose: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    close: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    create: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    drag: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    dragStart: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    dragStop: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    focus: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    open: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    resize: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    resizeStart: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null,
-    resizeStop: (/* event */ Event, /* ui */ DialogUIParams) => Unit = null
+    beforeClose: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    close: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    drag: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    dragStart: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    dragStop: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    focus: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    open: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    resize: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    resizeStart: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null,
+    resizeStop: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit = null
   ): DialogEvents = {
     val __obj = js.Dynamic.literal()
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction2(beforeClose))

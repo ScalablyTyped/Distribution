@@ -19,7 +19,9 @@ trait TerserPluginOptions extends js.Object {
   var sourceMap: js.UndefOr[Boolean] = js.undefined
   var terserOptions: js.UndefOr[MinifyOptions] = js.undefined
   var test: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
-  var warningsFilter: js.UndefOr[js.Function2[/* warning */ js.Any, /* source */ js.Any, Boolean]] = js.undefined
+  var warningsFilter: js.UndefOr[
+    js.Function3[/* warning */ String, /* source */ js.UndefOr[String], /* file */ String, Boolean]
+  ] = js.undefined
 }
 
 object TerserPluginOptions {
@@ -36,7 +38,7 @@ object TerserPluginOptions {
     sourceMap: js.UndefOr[Boolean] = js.undefined,
     terserOptions: MinifyOptions = null,
     test: String | RegExp | (js.Array[String | RegExp]) = null,
-    warningsFilter: (/* warning */ js.Any, /* source */ js.Any) => Boolean = null
+    warningsFilter: (/* warning */ String, /* source */ js.UndefOr[String], /* file */ String) => Boolean = null
   ): TerserPluginOptions = {
     val __obj = js.Dynamic.literal()
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
@@ -50,7 +52,7 @@ object TerserPluginOptions {
     if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
     if (terserOptions != null) __obj.updateDynamic("terserOptions")(terserOptions)
     if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (warningsFilter != null) __obj.updateDynamic("warningsFilter")(js.Any.fromFunction2(warningsFilter))
+    if (warningsFilter != null) __obj.updateDynamic("warningsFilter")(js.Any.fromFunction3(warningsFilter))
     __obj.asInstanceOf[TerserPluginOptions]
   }
 }

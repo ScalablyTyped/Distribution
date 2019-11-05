@@ -5,6 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item, presented as a grid of columns and rows, that allows the respondent to select
+  * multiple choices per row from a sequence of checkboxes. Items can be accessed or created from a
+  * Form.
+  *
+  *     // Open a form by ID and add a new checkgox grid item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addCheckboxGridItem();
+  *     item.setTitle('Where did you celebrate New Years?')
+  *       .setRows(['New York', 'San Francisco', 'London'])
+  *       .setColumns(['2014', '2015', '2016', '2017']);
+  */
 trait CheckboxGridItem extends js.Object {
   def clearValidation(): CheckboxGridItem
   def createResponse(responses: js.Array[js.Array[String]]): ItemResponse

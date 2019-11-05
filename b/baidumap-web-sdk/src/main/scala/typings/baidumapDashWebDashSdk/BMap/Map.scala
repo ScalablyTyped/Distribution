@@ -20,6 +20,7 @@ class Map protected () extends js.Object {
   def this(container: HTMLElement, opts: MapOptions) = this()
   def addContextMenu(menu: ContextMenu): Unit = js.native
   def addControl(control: Control): Unit = js.native
+  def addEventListener(event: String, handler: Callback): Unit = js.native
   def addHotspot(hotspot: Hotspot): Unit = js.native
   def addOverlay(overlay: Overlay): Unit = js.native
   def addTileLayer(tileLayer: TileLayer): Unit = js.native
@@ -106,6 +107,7 @@ class Map protected () extends js.Object {
   def pointToPixel(point: Point): Pixel = js.native
   def removeContextMenu(menu: ContextMenu): Unit = js.native
   def removeControl(control: Control): Unit = js.native
+  def removeEventListener(event: String, handler: Callback): Unit = js.native
   def removeHotspot(hotspot: Hotspot): Unit = js.native
   def removeOverlay(overlay: Overlay): Unit = js.native
   def removeTileLayer(tilelayer: TileLayer): Unit = js.native
@@ -116,6 +118,7 @@ class Map protected () extends js.Object {
   def setDefaultCursor(cursor: String): Unit = js.native
   def setDraggingCursor(cursor: String): Unit = js.native
   def setMapStyle(mapStyle: MapStyle): Unit = js.native
+  def setMapStyle2(style: MapStyleV2): Unit = js.native
   def setMapType(mapType: MapType): Unit = js.native
   def setMaxZoom(zoom: Double): Unit = js.native
   def setMinZoom(zoom: Double): Unit = js.native

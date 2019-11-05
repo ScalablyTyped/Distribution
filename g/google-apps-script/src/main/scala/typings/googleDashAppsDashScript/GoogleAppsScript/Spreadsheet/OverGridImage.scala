@@ -6,6 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents an image over the grid in a spreadsheet.
+  */
 @js.native
 trait OverGridImage extends js.Object {
   def assignScript(functionName: String): OverGridImage = js.native

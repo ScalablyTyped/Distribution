@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A collection of enums used by StaticMap.
+  */
 trait StaticMapEnums extends js.Object {
   var Color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color */ js.Any
   var Format: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Format */ js.Any

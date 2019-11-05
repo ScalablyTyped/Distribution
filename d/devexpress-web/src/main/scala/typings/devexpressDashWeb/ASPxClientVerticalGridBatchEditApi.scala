@@ -65,6 +65,12 @@ class ASPxClientVerticalGridBatchEditApi () extends js.Object {
     * @param includeDeleted true, to include visible indices of deleted records to the returned array; otherwise, false.
     */
   def GetRecordVisibleIndices(includeDeleted: Boolean): js.Array[Double] = js.native
+  def GetTotalSummaryValue(summaryItemIndex: String): Double = js.native
+  /**
+    * Returns the total summary value. The value.
+    * @param summaryItemIndex The total summary's index or field name.
+    */
+  def GetTotalSummaryValue(summaryItemIndex: Double): Double = js.native
   /**
     * Returns an object that stores unsaved changes.
     */

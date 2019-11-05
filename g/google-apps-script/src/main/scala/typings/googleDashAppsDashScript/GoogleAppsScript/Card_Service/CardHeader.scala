@@ -4,6 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The header of a Card.
+  *
+  *     var cardHeader = CardService.newCardHeader()
+  *         .setTitle("Card header title")
+  *         .setSubtitle("Card header subtitle")
+  *         .setImageStyle(CardService.ImageStyle.CIRCLE)
+  *         .setImageUrl("https://image.png");
+  */
 trait CardHeader extends js.Object {
   def setImageAltText(imageAltText: String): CardHeader
   def setImageStyle(imageStyle: ImageStyle): CardHeader

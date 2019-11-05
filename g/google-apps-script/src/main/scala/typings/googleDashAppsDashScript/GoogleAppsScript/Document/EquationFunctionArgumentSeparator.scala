@@ -4,6 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing a function separator in a mathematical Equation. An EquationFunctionArgumentSeparator cannot contain any other element. For more information on
+  * document structure, see the guide to
+  * extending Google Docs.
+  */
 trait EquationFunctionArgumentSeparator extends js.Object {
   def copy(): EquationFunctionArgumentSeparator
   def getAttributes(): js.Any

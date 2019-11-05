@@ -5,6 +5,7 @@ import typings.antd.Anon_LeftDataSourceRightDataSource
 import typings.antd.antdStrings.sourceSelectedKeys
 import typings.antd.antdStrings.targetSelectedKeys
 import typings.antd.libCollapseCollapseMod.ExpandIconPosition
+import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
@@ -34,6 +35,7 @@ trait Transfer
   def handleLeftScroll(e: SyntheticEvent[HTMLDivElement, Event]): Unit = js.native
   def handleLeftSelect(selectedItem: TransferItem, checked: Boolean): Unit = js.native
   def handleLeftSelectAll(filteredDataSource: js.Array[TransferItem], checkAll: Boolean): Unit = js.native
+  def handleListStyle(listStyle: js.Function1[/* style */ ListStyle, CSSProperties], direction: ExpandIconPosition): CSSProperties = js.native
   def handleRightClear(): Unit = js.native
   def handleRightFilter(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleRightScroll(e: SyntheticEvent[HTMLDivElement, Event]): Unit = js.native

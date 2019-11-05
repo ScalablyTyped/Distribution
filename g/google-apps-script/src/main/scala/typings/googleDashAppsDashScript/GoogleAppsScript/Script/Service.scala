@@ -4,7 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and manipulate script publishing.
+  */
 trait Service extends js.Object {
+  /** @deprecated DO NOT USE */
   def disable(): Unit
   def getUrl(): String
   def isEnabled(): Boolean

@@ -5,6 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to enter a block of text. Items can be accessed or
+  * created from a Form. When used in a quiz, these items are graded.
+  *
+  *     // Open a form by ID and add a new paragraph text item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addParagraphTextItem();
+  *     item.setTitle('What is your address?');
+  */
 trait ParagraphTextItem extends js.Object {
   def clearValidation(): ParagraphTextItem
   def createResponse(response: String): ItemResponse

@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atHapiJoi.atHapiJoiMod._SchemaLike because Already inherited
-- typings.atHapiJoi.atHapiJoiMod.Schema because Already inherited */ @js.native
+- typings.atHapiJoi.atHapiJoiMod._Schema because Already inherited */ @js.native
 trait BooleanSchema extends AnySchema {
   /**
     * Allows for additional values to be considered valid booleans by converting them to false during validation.

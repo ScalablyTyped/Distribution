@@ -4,6 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The user's selection in the active presentation.
+  *
+  *     var selection = SlidesApp.getActivePresentation().getSelection();
+  *     var currentPage = selection.getCurrentPage();
+  *     var selectionType = selection.getSelectionType();
+  *     }
+  */
 trait Selection extends js.Object {
   def getCurrentPage(): Page
   def getPageElementRange(): PageElementRange

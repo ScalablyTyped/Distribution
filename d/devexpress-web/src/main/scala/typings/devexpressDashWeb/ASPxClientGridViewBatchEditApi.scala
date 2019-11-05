@@ -70,6 +70,13 @@ class ASPxClientGridViewBatchEditApi () extends js.Object {
     * Gets information about the cell currently being edited.
     */
   def GetEditCellInfo(): ASPxClientGridViewCellInfo = js.native
+  def GetGroupSummaryValue(groupRowVisibleIndex: Double, summaryItemIndex: String): Double = js.native
+  /**
+    * Returns the group summery value. The group summary value.
+    * @param groupRowVisibleIndex The group row's visible index.
+    * @param summaryItemIndex The summary's index or field name.
+    */
+  def GetGroupSummaryValue(groupRowVisibleIndex: Double, summaryItemIndex: Double): Double = js.native
   /**
     * Returns an array of the inserted row visible indices.
     */
@@ -79,6 +86,12 @@ class ASPxClientGridViewBatchEditApi () extends js.Object {
     * @param includeDeleted true, to include visible indices of deleted rows to the returned array; otherwise, false.
     */
   def GetRowVisibleIndices(includeDeleted: Boolean): js.Array[Double] = js.native
+  def GetTotalSummaryValue(summaryItemIndex: String): Double = js.native
+  /**
+    * Returns the total summary value. The total summary value.
+    * @param summaryItemIndex The total summary's index or field name.
+    */
+  def GetTotalSummaryValue(summaryItemIndex: Double): Double = js.native
   /**
     * Returns an object that stores unsaved changes.
     */

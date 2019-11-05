@@ -7,6 +7,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A document, containing rich text and elements such as tables and lists.
+  *
+  * Documents may be opened or created using DocumentApp.
+  *
+  *     // Open a document by ID.
+  *     var doc = DocumentApp.openById("<my-id>");
+  *
+  *     // Create and open a document.
+  *     doc = DocumentApp.create("Document Title");
+  */
 @js.native
 trait Document extends js.Object {
   def addBookmark(position: Position): Bookmark = js.native

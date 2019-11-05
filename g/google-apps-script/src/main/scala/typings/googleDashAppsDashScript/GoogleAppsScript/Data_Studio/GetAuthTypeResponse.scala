@@ -4,6 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Builder to create a getAuthType() response for your script project.
+  *
+  *     function getAuthType() {
+  *       var cc = DataStudioApp.createCommunityConnector();
+  *       var authTypes = cc.AuthType;
+  *
+  *       return cc.newGetAuthTypeResponse()
+  *         .setAuthType(authTypes.USER_PASS)
+  *         .setHelpUrl("https://www.example.org/connector-auth-help")
+  *         .build();
+  *     }
+  */
 trait GetAuthTypeResponse extends js.Object {
   def build(): GetAuthTypeResponse
   def printJson(): String

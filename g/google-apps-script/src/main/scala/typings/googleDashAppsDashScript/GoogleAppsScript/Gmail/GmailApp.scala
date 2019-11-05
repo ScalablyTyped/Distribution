@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Provides access to Gmail threads, messages, and labels.
+  */
 @js.native
 trait GmailApp extends js.Object {
   def createDraft(recipient: String, subject: String, body: String): GmailDraft = js.native

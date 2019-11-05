@@ -5,6 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The document service creates and opens Documents that can be edited.
+  *
+  *     // Open a document by ID.
+  *     var doc = DocumentApp.openById('DOCUMENT_ID_GOES_HERE');
+  *
+  *     // Create and open a document.
+  *     doc = DocumentApp.create('Document Name');
+  */
 trait DocumentApp extends js.Object {
   var Attribute: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ js.Any
   var ElementType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ElementType */ js.Any

@@ -4,6 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A solid color fill.
+  *
+  * SolidFill objects are detached and immutable, so do not reflect changes made after
+  * they have been created.
+  */
 trait SolidFill extends js.Object {
   def getAlpha(): Double
   def getColor(): Color

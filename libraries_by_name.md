@@ -58,6 +58,7 @@
 | [add-zero](./a/add-zero) | Add a leading zero to a number. | zero, leading, places, decimal, number, format, formatter, digits |
 | [add2home](./a/add2home) | - | - |
 | [address](./a/address) | Get current machine IP, MAC and DNS servers. | address, ip, ipv4, mac |
+| [adhan](./a/adhan) | Adhan is a well tested and well documented library | adhan, islam, muslim, prayer |
 | [adler-32](./a/adler-32) | Pure-JS ADLER-32 | adler32, checksum |
 | [adlib](./a/adlib) | Templating for deep JSON object graphs | arcgis, json, templating |
 | [adm-zip](./a/adm-zip) | Javascript implementation of zip for nodejs with s | zip, methods, archive, unzip |
@@ -93,6 +94,7 @@
 | [alks-node](./a/alks-node) | Node client for ALKS | alks |
 | [all-keys](./a/all-keys) | Get all property keys of an object including non-e | get, all, object, property, names, keys, properties, inherited, prototype, enumerable, non-enumerable, reflect, ownkeys, symbol, symbols |
 | [all-the-package-names](./a/all-the-package-names) | A list of all the public package names on npm. Upd | npm, registry, packages, names, list, words, filter, search, offline |
+| [alloy](./a/alloy) | Appcelerator Titanium MVC Framework | appcelerator, titanium, alloy, mobile, ios, iphone, android, html5, appc-client |
 | [allure-js-commons](./a/allure-js-commons) | Common helper for writing plugins to allure-framew | - |
 | [almost-equal](./a/almost-equal) | Test if two floats are almost equal | float, compare, double, round, equal, almost, near, tolerance, epsilon, FLT_EPSILON, DBL_EPSILON |
 | [alt](./a/alt) | A flux implementation | alt, es6, flow, flux, react, unidirectional |
@@ -647,6 +649,7 @@
 | [bcryptjs](./b/bcryptjs) | Optimized bcrypt in plain JavaScript with zero dep | bcrypt, password, auth, authentication, encryption, crypt, crypto |
 | [bdfjs](./b/bdfjs) | Simple library for reading Adobe Glyph Bitmap Dist | adobe, bdf, font, bitmap |
 | [beanstalkd](./b/beanstalkd) | A beanstalkd client for Node.js with promises | beanstalkd |
+| [beanstalkd-worker](./b/beanstalkd-worker) | High level library for running beanstalkd workers  | beanstalkd, worker |
 | [beats](./b/beats) | A naive but generic beat-detection module. | - |
 | [bech32](./b/bech32) | Bech32 encoding / decoding | base32, bech32, bitcoin, crypto, crytography, decode, decoding, encode, encoding |
 | [beeper](./b/beeper) | Make your terminal beep | beep, beeper, boop, terminal, term, cli, console, ding, ping, alert, gulpfriendly |
@@ -1422,6 +1425,7 @@
 | [deline](./d/deline) | Template tag that takes out unwanted newlines | deline, tag, es6, multi-line, string |
 | [deluge](./d/deluge) | add magnet links and torrents to deluge | deluge, deluge-webui, torrent |
 | [denodeify](./d/denodeify) | Tool to turn functions with Node-style callback AP | - |
+| [denque](./d/denque) | The fastest javascript implementation of a double- | data-structure, data-structures, queue, double, end, ended, deque, denque, double-ended-queue |
 | [deoxxa-content-type](./d/deoxxa-content-type) | - | - |
 | [depcheck](./d/depcheck) | Check dependencies in your node module | check, unused, package, packages, depcheck, dependency, dependencies, devDependencies |
 | [depd](./d/depd) | Deprecate all the things | deprecate, deprecated |
@@ -1642,6 +1646,7 @@
 | [electron-is-dev](./e/electron-is-dev) | Check if Electron is running in development | electron, dev, development, mode, prod, production, detect, check, debug, app |
 | [electron-json-storage](./e/electron-json-storage) | Easily write and read user settings in Electron ap | electron, json, storage, user, app, data |
 | [electron-load-devtool](./e/electron-load-devtool) | Easily load dev-tool for electron | electron, chrome, extention |
+| [electron-localshortcut](./e/electron-localshortcut) | register/unregister a keyboard shortcut locally to | electron, shortcuts, browser-window |
 | [electron-notifications](./e/electron-notifications) | A node module for sending notifications in electro | electron, notification, notification center, toaster, growl, notify-send, terminal-notifier, notify |
 | [electron-notify](./e/electron-notify) | Nice and simple notifications for Electron apps | - |
 | [electron-packager](./e/electron-packager) | Customize and package your Electron app with OS-sp | electron, packager, bundler, app |
@@ -1684,6 +1689,7 @@
 | [ember__engine](./e/ember__engine) | - | - |
 | [ember__error](./e/ember__error) | - | - |
 | [ember__object](./e/ember__object) | - | - |
+| [ember__ordered-set](./e/ember__ordered-set) | The default blueprint for ember-cli addons. | ember-addon |
 | [ember__polyfills](./e/ember__polyfills) | - | - |
 | [ember__routing](./e/ember__routing) | - | - |
 | [ember__runloop](./e/ember__runloop) | - | - |
@@ -1961,6 +1967,7 @@
 | [fast-json-stable-stringif](./f/fast-json-stable-stringify) | deterministic JSON.stringify() - a faster version  | json, stringify, deterministic, hash, stable |
 | [fast-levenshtein](./f/fast-levenshtein) | Efficient implementation of Levenshtein algorithm  | levenshtein, distance, string |
 | [fast-list](./f/fast-list) | A fast linked list (good for queues, stacks, etc.) | - |
+| [fast-memoize](./f/fast-memoize) | Fastest memoization lib that supports N arguments | - |
 | [fast-memory-cache](./f/fast-memory-cache) | Simple in-memory cache implementation | memory, cache |
 | [fast-ratelimit](./f/fast-ratelimit) | Fast and efficient in-memory rate-limit for Node,  | ratelimit, rate-limit, rate, limit, attack, flood, security, dos, ddos |
 | [fast-safe-stringify](./f/fast-safe-stringify) | Safely and quickly serialize JavaScript objects | stable, stringify, JSON, JSON.stringify, safe, serialize |
@@ -2193,6 +2200,7 @@
 | [fs-promise](./f/fs-promise) | - | promise, fs, file, file system |
 | [fs-readdir-recursive](./f/fs-readdir-recursive) | Recursively read a directory | - |
 | [fs-readfile-promise](./f/fs-readfile-promise) | Promise version of fs.readFile | fs, read, file, promise, promises, then, thenable |
+| [fs-routes](./f/fs-routes) | Scan a filesystem for route files. | filesystem, routes, paths, api |
 | [fs-tree-diff](./f/fs-tree-diff) | Backs out file tree changes | broccoli |
 | [fscreen](./f/fscreen) | fullscreen spec api in a vendor agnostic wrapper | fullscreen, browser |
 | [fsevents](./f/fsevents) | Native Access to Mac OS-X FSEvents | fsevents, mac |
@@ -3703,6 +3711,7 @@
 | [koa-cors](./k/koa-cors) | CORS middleware for Koa | cors, koa, koajs |
 | [koa-csrf](./k/koa-csrf) | CSRF tokens for Koa | cross, csrf, forgery, koa, koa2, koa@2, koa@next, koanext, next, request, security, site |
 | [koa-dec-router](./k/koa-dec-router) | An ES6 decorator + class based router, support inh | koa, router, decorator, es6, es7, koa-router |
+| [koa-docs](./k/koa-docs) | An automatic documentation generator for koa.js AP | koa, koajs, api, documentation, generator, joi, docs |
 | [koa-ejs](./k/koa-ejs) | ejs render middleware for koa | koa, render, ejs, view |
 | [koa-etag](./k/koa-etag) | ETag support for koa | koa, middleware, cache, caching, etag, file, static, sendfile |
 | [koa-favicon](./k/koa-favicon) | favicon bounce middleware for koa | koa, middleware, favicon |
@@ -3712,6 +3721,7 @@
 | [koa-helmet](./k/koa-helmet) | Security header middleware collection for koa | security, headers, koa, x-frame-options, csp, hsts |
 | [koa-html-minifier](./k/koa-html-minifier) | minify HTML responses like some crazy guy | - |
 | [koa-joi-router](./k/koa-joi-router) | Configurable, input validated routing for koa. | joi, koa, router, validate, validator, validation |
+| [koa-joi-router-docs](./k/koa-joi-router-docs) | OpenAPI(aka Swagger) API docs generator for koa-jo | - |
 | [koa-json](./k/koa-json) | pretty (non-compressed) json response middleware | koa, json |
 | [koa-json-error](./k/koa-json-error) | Error handler for pure-JSON Koa apps | koa, json, error, api, handler, middleware |
 | [koa-jwt](./k/koa-jwt) | Koa JWT authentication middleware. | auth, authn, authentication, authz, authorization, http, jwt, json, middleware, token, oauth, koa |
@@ -4489,7 +4499,6 @@
 | [mobx](./m/mobx) | Simple, scalable state management. | mobx, mobservable, observable, react-component, react, reactjs, reactive, model, frp, functional-reactive-programming, state management, data flow |
 | [mobx-apollo](./m/mobx-apollo) | A MobX and Apollo Client integration utility. | - |
 | [mobx-cookie](./m/mobx-cookie) | Syncs a cookie's value with a MobX observable, all | - |
-| [mobx-devtools-mst](./m/mobx-devtools-mst) | Allows debugging mobx-state-tree roots. See  | mobx, mobx-state-tree, mst, devtools |
 | [mobx-react](./m/mobx-react) | React bindings for MobX. Create fully reactive com | mobx, mobservable, react-component, react, reactjs, reactive |
 | [mobx-react-devtools](./m/mobx-react-devtools) | Dev-tools for MobX and React | mobx, mobservable, react-component, react, reactjs, reactive, devtools |
 | [mobx-react-lite](./m/mobx-react-lite) | Lightweight React bindings for MobX based on React | mobx, mobservable, react-component, react, reactjs, reactive, hooks, observer, useObserver, useComputer |
@@ -4965,8 +4974,16 @@
 | [open](./o/open) | Open stuff like URLs, files, executables. Cross-pl | app, open, opener, opens, launch, start, xdg-open, xdg, default, cmd, browser, editor, executable, exe, url, urls, arguments, args, spawn, exec, child, process, website, file |
 | [open-editor](./o/open-editor) | Open files in your editor at a specific line and c | open, editor, launch, files, file, line, column, position, path, filepath, editors, start, app, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij |
 | [open-graph](./o/open-graph) | An Open Graph implementation for Node.js. | open graph, open, graph, opengraph, og |
+| [openapi-default-setter](./o/openapi-default-setter) | Sets default values in request properties accordin | openapi, default, setter |
 | [openapi-factory](./o/openapi-factory) | Build API's and serverless code using node and fir | aws, cloudfront, package creation, microservice, api gateway, serverless, api gateway, aws api gateway, lambda, aws lambda, api, openapi, api factory, openapi factory |
+| [openapi-framework](./o/openapi-framework) | An OpenAPI framework for any web framework | openapi, swagger, framework |
+| [openapi-jsonschema-parame](./o/openapi-jsonschema-parameters) | Converts openapi parameters to a jsonschema format | openapi, parameters, jsonschema, convert, converter |
+| [openapi-request-coercer](./o/openapi-request-coercer) | Coerce request properties according to an openapi  | openapi, coercion, request, coercer, jsonschema |
+| [openapi-request-validator](./o/openapi-request-validator) | Validate request properties against an OpenAPI spe | openapi, validator, jsonschema |
+| [openapi-response-validato](./o/openapi-response-validator) | Validate a response according to an openapi schema | openapi, validation, jsonschema, response |
+| [openapi-schema-validator](./o/openapi-schema-validator) | A validator for OpenAPI documents. | openapi, schema, validator |
 | [openapi-schemas](./o/openapi-schemas) | JSON Schemas for every version of the OpenAPI Spec | openapi, open-api, swagger, oas, api, rest, json, specification, definition, schema |
+| [openapi-security-handler](./o/openapi-security-handler) | A library to process OpenAPI security definitions  | openapi, security, handler, jsonschema |
 | [openapi-types](./o/openapi-types) | Types for OpenAPI documents. | openapi, swagger, types, typescript |
 | [opener](./o/opener) | Opens stuff, like webpages and files and executabl | - |
 | [openid](./o/openid) | OpenID 1.1/2.0 library for node.js | openid, auth, authentication, identity, identifier, relying, party, 1.1, 2.0, library |
@@ -5177,6 +5194,7 @@
 | [pebblekitjs](./p/pebblekitjs) | - | - |
 | [peer-dial](./p/peer-dial) | Nodejs implementation of the Discovery and Launch  | ssdp, upnp, nsd, discovery, launch, dial, multiscreen, chromecast |
 | [peerjs](./p/peerjs) | PeerJS client | - |
+| [peerjs-js-binarypack](./p/peerjs-js-binarypack) | BinaryPack serialization for the web browser | - |
 | [pegjs](./p/pegjs) | Parser generator for JavaScript | parser generator, PEG |
 | [pem](./p/pem) | Create private keys and certificates with node.js  | - |
 | [pem-jwk](./p/pem-jwk) | convert between PEM and JWK formats | - |
@@ -7308,6 +7326,7 @@
 | [tryghost__content-api](./t/tryghost__content-api) | JavaScript Client Library for the Ghost  | - |
 | [ts-essentials](./t/ts-essentials) | All essential Typescript types in one place | typescript, types, essentials |
 | [ts-invariant](./t/ts-invariant) | TypeScript implementation of invariant(condition,  | invariant, assertion, precondition, TypeScript |
+| [ts-log](./t/ts-log) | Abstract logger TypeScript interface with a dummy  | typescript, abstract, logger, console, dummy |
 | [ts-mockito](./t/ts-mockito) | Mocking library for TypeScript | mock, typescript, tests, fake, stub, spy, javascript |
 | [ts-nameof](./t/ts-nameof) | nameof in TypeScript | nameof, typescript, transformer, custom-transformer |
 | [ts-node](./t/ts-node) | TypeScript execution environment and REPL for node | typescript, node, runtime, environment, ts, compiler |
@@ -7526,6 +7545,7 @@
 | [validatorjs](./v/validatorjs) | Validation library inspired by Laravel's Validator | validatorjs, validator.js, data validation, validator, validate, validation, data, laravel, laravel-validator-for-js |
 | [vanilla-masker](./v/vanilla-masker) | VanillaMasker is a pure javascript input mask. | mask input, javascript, lightweight, cross-browser, cross-device |
 | [vanilla-modal](./v/vanilla-modal) | A dependency-free CSS-driven plain JavaScript moda | modal, ecmascript, harmony, es6, es2015 |
+| [vanilla-swipe](./v/vanilla-swipe) | Tiny vanilla JS library to detect swipe direction. | swipe, touch, touchable, swipeable, drag and drop |
 | [vanilla-tilt](./v/vanilla-tilt) | A smooth 3D tilt javascript library forked from Ti | tilt, effect, vanilla, js, 60fps, smooth, tilt.js |
 | [vara](./v/vara) | Vara can create realistic text drawing animations  | text, animation, drawing |
 | [varint](./v/varint) | protobuf-style varint bytes - use msb to create in | varint, protobuf, encode, decode |
@@ -7622,6 +7642,7 @@
 | [w3c-gamepad](./w/w3c-gamepad) | - | - |
 | [w3c-generic-sensor](./w/w3c-generic-sensor) | - | - |
 | [w3c-image-capture](./w/w3c-image-capture) | - | - |
+| [w3c-keyname](./w/w3c-keyname) | Get a KeyboardEvent.key-style string from an event | browser, key, event, key code |
 | [w3c-screen-orientation](./w/w3c-screen-orientation) | - | - |
 | [w3c-web-usb](./w/w3c-web-usb) | - | - |
 | [wait-for-expect](./w/wait-for-expect) | Wait for expectation to be true, useful for integr | jest, expect, wait, async, await, promise, integration, testing, unit |
@@ -7768,7 +7789,6 @@
 | [wicg-mediasession](./w/wicg-mediasession) | - | - |
 | [wif](./w/wif) | Bitcoin Wallet Import Format (WIF) decoding/encodi | bitcoin, base58, base58check, decode, decoding, encoding, encode, key, private, wif |
 | [wiiu](./w/wiiu) | - | - |
-| [wikidata-sdk](./w/wikidata-sdk) | A javascript tool-suite to query Wikidata and simp | wikidata, wikibase, sdk, api, wdq, sparql, wdk |
 | [wildstring](./w/wildstring) | Simple String Wildcard Handling | wildcard, string, interpolation |
 | [window-or-global](./w/window-or-global) | Use either the window object in the browser or the | window, global, isomorphic, universal |
 | [window-size](./w/window-size) | Reliable way to get the height and width of termin | columns, console, darwin, height, lines, redirected, resize, rows, size, term, term-size, terminal, tty, unix, width, win, window, windows |

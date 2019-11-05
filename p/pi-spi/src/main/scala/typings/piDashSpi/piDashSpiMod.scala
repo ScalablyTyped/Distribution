@@ -18,7 +18,7 @@ object piDashSpiMod extends js.Object {
     def bitOrder(order: order): Unit = js.native
     def clockSpeed(): Double = js.native
     def clockSpeed(speed: Double): Unit = js.native
-    def close(): Unit = js.native
+    def close(cb: js.Function1[/* error */ Error, Unit]): Unit = js.native
     def dataMode(): Double = js.native
     def dataMode(mode: mode): Unit = js.native
     def read(readcount: Double, cb: js.Function2[/* error */ Error, /* data */ Buffer, Unit]): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for marked
 
-Typings are for version 0.6
+Typings are for version 0.7
 
 ## Library description:
 A markdown parser built for speed

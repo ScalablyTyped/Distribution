@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A point representing a location.
+  */
 trait Point extends js.Object {
   def getX(): Double
   def getY(): Double

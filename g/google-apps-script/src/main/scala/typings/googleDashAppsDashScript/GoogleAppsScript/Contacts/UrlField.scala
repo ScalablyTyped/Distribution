@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A URL field in a Contact.
+  */
 @js.native
 trait UrlField extends js.Object {
   def deleteUrlField(): Unit = js.native

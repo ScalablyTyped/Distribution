@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Exphbs extends js.Object {
   var compiled: js.Object = js.native
-  var engine: js.Function = js.native
   var extname: String = js.native
   var precompiled: js.Object = js.native
   def create(): Exphbs = js.native
   def create(options: ExphbsOptions): Exphbs = js.native
+  def engine(
+    path: String,
+    options: js.Object,
+    callback: js.Function2[/* e */ js.Any, /* rendered */ String, Unit]
+  ): Unit = js.native
   def getPartials(): js.Promise[js.Object] = js.native
   def getPartials(options: PartialTemplateOptions): js.Promise[js.Object] = js.native
   def getTemplate(filePath: String): js.Promise[js.Function] = js.native

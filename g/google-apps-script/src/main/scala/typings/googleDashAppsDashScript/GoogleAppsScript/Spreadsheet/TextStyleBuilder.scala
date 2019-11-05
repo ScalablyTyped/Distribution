@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for text styles.
+  */
 trait TextStyleBuilder extends js.Object {
   def build(): TextStyle
   def setBold(bold: Boolean): TextStyleBuilder

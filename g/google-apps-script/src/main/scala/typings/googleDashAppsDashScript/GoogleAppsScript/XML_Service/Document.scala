@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A representation of an XML document.
+  */
 @js.native
 trait Document extends js.Object {
   def addContent(content: typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Document = js.native

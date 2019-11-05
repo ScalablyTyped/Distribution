@@ -9,8 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Renderer () extends js.Object {
   def this(options: MarkedOptions) = this()
+  var options: MarkedOptions = js.native
   def blockquote(quote: String): String = js.native
   def br(): String = js.native
+  def checkbox(checked: Boolean): String = js.native
   def code(code: String, language: String, isEscaped: Boolean): String = js.native
   def codespan(code: String): String = js.native
   def del(text: String): String = js.native

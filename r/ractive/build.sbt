@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ractive"
-version := "0.7.1-dt-20190322Z-20ac48"
+version := "1.3.8-ef2408"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

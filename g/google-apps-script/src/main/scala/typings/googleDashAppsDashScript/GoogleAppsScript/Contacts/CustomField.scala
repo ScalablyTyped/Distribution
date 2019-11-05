@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A custom field in a Contact.
+  */
 @js.native
 trait CustomField extends js.Object {
   def deleteCustomField(): Unit = js.native

@@ -1,7 +1,7 @@
 package typings.antd.libTransferMod
 
 import typings.antd.Anon_ArgsBodyClassName
-import typings.antd.Anon_DataSourceLocale
+import typings.antd.Anon_DataSourceListStyle
 import typings.antd.Anon_SourceSelectedKeys
 import typings.antd.TypeofClassListDefaultProps
 import typings.antd.TypeofClassSearchDefaultPropsAnonPlaceholder
@@ -23,7 +23,7 @@ class default protected () extends Transfer {
 object default extends js.Object {
   var List: TypeofClassListDefaultProps = js.native
   var Search: TypeofClassSearchDefaultPropsAnonPlaceholder = js.native
-  var defaultProps: Anon_DataSourceLocale = js.native
+  var defaultProps: Anon_DataSourceListStyle = js.native
   var propTypes: Anon_ArgsBodyClassName = js.native
   def Operation(
     hasDisabledMoveToLeftMoveToRightLeftArrowTextRightArrowTextLeftActiveRightActiveClassNameStyle: TransferOperationProps

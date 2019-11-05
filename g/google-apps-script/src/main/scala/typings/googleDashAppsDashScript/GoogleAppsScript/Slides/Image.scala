@@ -7,6 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A PageElement representing an image.
+  */
 @js.native
 trait Image extends js.Object {
   def alignOnPage(alignmentPosition: AlignmentPosition): Image = js.native

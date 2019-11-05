@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 object phoneMod extends js.Object {
   def apply(phoneNumber: String): js.Array[String] = js.native
   def apply(phoneNumber: String, countryCode: String): js.Array[String] = js.native
+  def apply(phoneNumber: String, countryCode: String, allowLandLine: Boolean): js.Array[String] = js.native
 }
 

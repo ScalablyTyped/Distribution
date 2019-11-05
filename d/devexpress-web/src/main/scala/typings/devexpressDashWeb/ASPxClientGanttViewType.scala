@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Lists the gantt's view types.
+  * Declare client constants that specify the Gantt's view type.
   */
 @JSGlobal("ASPxClientGanttViewType")
 @js.native
@@ -19,7 +19,7 @@ class ASPxClientGanttViewType () extends js.Object {
     */
   var Hours: Double = js.native
   /**
-    * Displays months.
+    * Display months.
     */
   var Months: Double = js.native
   /**

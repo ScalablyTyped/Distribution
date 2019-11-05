@@ -11,6 +11,8 @@ class Control () extends js.Object {
   var defaultAnchor: ControlAnchor = js.native
   var defaultOffset: Size = js.native
   def getAnchor(): ControlAnchor = js.native
+  /** 自定义Control在add之后立马能读取到Container, 内置Control不能 */
+  def getContainer(): js.UndefOr[HTMLElement] = js.native
   def getOffset(): Size = js.native
   def hide(): Unit = js.native
   def initialize(map: Map): HTMLElement = js.native

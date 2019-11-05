@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Describes the fill of a line or outline
+  */
 @js.native
 trait LineFill extends js.Object {
   def getFillType(): LineFillType = js.native

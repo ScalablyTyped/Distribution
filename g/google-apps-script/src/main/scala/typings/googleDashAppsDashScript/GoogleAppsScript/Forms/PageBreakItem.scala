@@ -5,6 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A layout item that marks the start of a page. Items can be accessed or created from a Form.
+  *
+  *     // Create a form and add three page-break items.
+  *     var form = FormApp.create('Form Name');
+  *     var pageTwo = form.addPageBreakItem().setTitle('Page Two');
+  *     var pageThree = form.addPageBreakItem().setTitle('Page Three');
+  *
+  *     // Make the first two pages navigate elsewhere upon completion.
+  *     pageTwo.setGoToPage(pageThree); // At end of page one (start of page two), jump to page three
+  *     pageThree.setGoToPage(FormApp.PageNavigationType.RESTART); // At end of page two, restart form
+  */
 @js.native
 trait PageBreakItem extends js.Object {
   def duplicate(): PageBreakItem = js.native

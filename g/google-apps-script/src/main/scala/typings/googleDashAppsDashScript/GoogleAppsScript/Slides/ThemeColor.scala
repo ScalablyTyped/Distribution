@@ -1,9 +1,13 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A color that refers to an entry in the page's ColorScheme.
+  */
 trait ThemeColor extends js.Object {
   def getColorType(): ColorType
   def getThemeColorType(): ThemeColorType

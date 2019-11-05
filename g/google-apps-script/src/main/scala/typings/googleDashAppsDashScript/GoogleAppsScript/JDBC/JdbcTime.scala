@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Time. For documentation of this class, see java.sql.Time
+  * .
+  */
 trait JdbcTime extends js.Object {
   def after(when: JdbcTime): Boolean
   def before(when: JdbcTime): Boolean

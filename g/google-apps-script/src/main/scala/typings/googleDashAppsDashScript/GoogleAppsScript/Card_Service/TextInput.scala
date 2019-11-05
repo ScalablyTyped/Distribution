@@ -4,6 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A input field widget that accepts text input.
+  *
+  *     var textInput = CardService.newTextInput()
+  *         .setFieldName("text_input_form_input_key")
+  *         .setTitle("Text input title")
+  *         .setHint("Text input hint");
+  */
 trait TextInput extends js.Object {
   def setFieldName(fieldName: String): TextInput
   def setHint(hint: String): TextInput

@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Date. For documentation of this class, see java.sql.Date
+  * .
+  */
 trait JdbcDate extends js.Object {
   def after(when: JdbcDate): Boolean
   def before(when: JdbcDate): Boolean

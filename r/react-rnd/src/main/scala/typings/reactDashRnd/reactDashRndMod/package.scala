@@ -5,22 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashRndMod {
-  import typings.react.reactMod.Component
-  import typings.reactDashRnd.reactDashRndNumbers.`false`
+  import typings.react.NativeMouseEvent
+  import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.TouchEvent
+  import typings.reactDashDraggable.reactDashDraggableMod.DraggableEventHandler
+  import typings.reactDashRnd.Anon_DeltaX
   import typings.std.HTMLDivElement
-  import typings.std.MouseEvent
-  import typings.std.Partial
-  import typings.std.TouchEvent
+  import typings.std.HTMLElement
+  import typings.std.SVGElement
 
-  type CSSProperties = typings.react.reactMod.CSSProperties
-  type DraggableEventHandler = js.Function2[/* e */ MouseEvent | TouchEvent, /* data */ DraggableData, Unit | `false`]
-  type ResizeHandler = js.Function5[
-    /* e */ MouseEvent | TouchEvent, 
-    /* direction */ Direction, 
-    /* ref */ HTMLDivElement, 
-    /* delta */ Size, 
+  type DraggableData = Anon_DeltaX with Position
+  type Grid = js.Tuple2[Double, Double]
+  type RndDragCallback = DraggableEventHandler
+  type RndDragEvent = (MouseEvent[HTMLElement | SVGElement, NativeMouseEvent]) | (TouchEvent[HTMLElement | SVGElement]) | typings.std.MouseEvent | typings.std.TouchEvent
+  type RndResizeCallback = js.Function5[
+    /* e */ typings.std.MouseEvent | typings.std.TouchEvent, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, 
+    /* elementRef */ HTMLDivElement, 
+    /* delta */ ResizableDelta, 
     /* position */ Position, 
     Unit
   ]
-  type Rnd = Component[Partial[Options], js.Object, js.Any]
+  type RndResizeStartCallback = js.Function3[
+    /* e */ (MouseEvent[HTMLDivElement, NativeMouseEvent]) | TouchEvent[HTMLDivElement], 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, 
+    /* elementRef */ HTMLDivElement, 
+    Unit
+  ]
 }

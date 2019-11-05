@@ -1,13 +1,15 @@
 package typings.reactDashGoogleDashRecaptcha
 
-import typings.reactDashGoogleDashRecaptcha.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashGoogleDashRecaptchaProps {
   @scala.inline
-  def ReactDashGoogleDashRecaptchaProps: ReCAPTCHAProps.type = typings.reactDashGoogleDashRecaptcha.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
-  type ReactDashGoogleDashRecaptchaProps = ReCAPTCHAProps
+  def ReCAPTCHAProps: typings.reactDashGoogleDashRecaptcha.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps.type = typings.reactDashGoogleDashRecaptcha.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
+  type ReCAPTCHAProps = typings.reactDashGoogleDashRecaptcha.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
+  @scala.inline
+  def ReactDashGoogleDashRecaptchaProps: typings.reactDashGoogleDashRecaptcha.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps.type = typings.reactDashGoogleDashRecaptcha.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
+  type ReactDashGoogleDashRecaptchaProps = typings.reactDashGoogleDashRecaptcha.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
 }
 

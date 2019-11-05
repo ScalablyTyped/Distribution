@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Format extends js.Object
 
+/**
+  * An enum representing the format of the map image.
+  * See also
+  *
+  * Google Static Maps API
+  */
 @JSGlobal("GoogleAppsScript.Maps.Format")
 @js.native
 object Format extends js.Object {

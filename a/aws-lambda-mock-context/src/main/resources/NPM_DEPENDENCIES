@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "aws-lambda-mock-context" : "3.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "aws-lambda-mock-context" : "3.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

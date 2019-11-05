@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-x-socialsharing"
-version := "v5.1.9-dt-20190322Z-727435"
+version := "5.6.2-5b19f5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

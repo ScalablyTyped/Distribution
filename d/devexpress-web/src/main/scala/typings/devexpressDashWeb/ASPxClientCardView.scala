@@ -214,6 +214,22 @@ class ASPxClientCardView () extends ASPxClientGridBase {
     * Returns the number of columns within the client grid.
     */
   def GetColumnCount(): Double = js.native
+  /**
+    * Gets the form layout.
+    */
+  def GetEditFormLayout(): ASPxClientFormLayout = js.native
+  def GetEditFormLayoutItemByColumn(column: String): ASPxClientLayoutItem = js.native
+  def GetEditFormLayoutItemByColumn(column: Double): ASPxClientLayoutItem = js.native
+  /**
+    * Gets the edit form layout item. The form layout item.
+    * @param column The column, its index or field name.
+    */
+  def GetEditFormLayoutItemByColumn(column: ASPxClientCardViewColumn): ASPxClientLayoutItem = js.native
+  /**
+    * Gets the edit form layout item or group. The layout item.
+    * @param name The layout item name.
+    */
+  def GetEditFormLayoutItemOrGroup(name: String): ASPxClientLayoutItem = js.native
   def GetEditValue(column: String): String = js.native
   def GetEditValue(column: Double): String = js.native
   /**

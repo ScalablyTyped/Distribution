@@ -39,6 +39,7 @@ object UserNotificationCenter extends js.Object {
   				 * Removes the specified pending notifications to prevent them from being triggered.
   				 * If no notifications are specified, all pending notifications will be removed.
   				 */
+  def removePendingNotifications(): Unit = js.native
   def removePendingNotifications(notifications: js.Array[UserNotificationDictionary]): Unit = js.native
   /**
   				 * Notification types and user notification categories the application is registered to use.

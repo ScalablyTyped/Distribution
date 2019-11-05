@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait CellMergeState extends js.Object
 
+/**
+  * The table cell merge states.
+  */
 @JSGlobal("GoogleAppsScript.Slides.CellMergeState")
 @js.native
 object CellMergeState extends js.Object {

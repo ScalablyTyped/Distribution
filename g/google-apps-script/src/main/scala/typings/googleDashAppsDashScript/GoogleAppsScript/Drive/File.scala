@@ -1,12 +1,24 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Drive
 
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Blob
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A file in Google Drive. Files can be accessed or created from DriveApp.
+  *
+  *     // Trash every untitled spreadsheet that hasn't been updated in a week.
+  *     var files = DriveApp.getFilesByName('Untitled spreadsheet');
+  *     while (files.hasNext()) {
+  *       var file = files.next();
+  *       if (new Date() - file.getLastUpdated() > 7 * 24 * 60 * 60 * 1000) {
+  *         file.setTrashed(true);
+  *       }
+  *     }
+  */
 @js.native
 trait File extends js.Object {
   def addCommenter(emailAddress: String): File = js.native

@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A notes page in a presentation.
+  *
+  * These pages contain the content for presentation handouts, including a a shape that contains
+  * the slide's speaker notes. Each slide has one corresponding notes page. Only the text in the
+  * speaker notes shape can be modified.
+  */
 @js.native
 trait NotesPage extends js.Object {
   def getGroups(): js.Array[Group] = js.native

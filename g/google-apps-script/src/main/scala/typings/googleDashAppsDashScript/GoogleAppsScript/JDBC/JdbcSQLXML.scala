@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC SQLXML. For documentation of this class, see java.sql.SQLXML
+  * .
+  */
 trait JdbcSQLXML extends js.Object {
   def free(): Unit
   def getString(): String

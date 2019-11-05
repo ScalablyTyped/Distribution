@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A collection of one or more TableCell instances.
+  */
 trait TableCellRange extends js.Object {
   def getTableCells(): js.Array[TableCell]
 }

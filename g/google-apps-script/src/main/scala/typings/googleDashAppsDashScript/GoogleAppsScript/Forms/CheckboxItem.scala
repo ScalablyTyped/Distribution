@@ -5,6 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to select one or more checkboxes, as well as an
+  * optional "other" field. Items can be accessed or created from a Form. When used in a
+  * quiz, these items are autograded.
+  *
+  *     // Open a form by ID and add a new checkbox item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addCheckboxItem();
+  *     item.setTitle('What condiments would you like on your hot dog?')
+  *         .setChoices([
+  *               item.createChoice('Ketchup'),
+  *               item.createChoice('Mustard'),
+  *               item.createChoice('Relish')
+  *         ])
+  *         .showOtherOption(true);
+  */
 @js.native
 trait CheckboxItem extends js.Object {
   def clearValidation(): CheckboxItem = js.native

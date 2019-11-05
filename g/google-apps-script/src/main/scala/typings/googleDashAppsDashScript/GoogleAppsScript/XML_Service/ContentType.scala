@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ContentType extends js.Object
 
+/**
+  * An enumeration representing the types of XML content nodes.
+  */
 @JSGlobal("GoogleAppsScript.XML_Service.ContentType")
 @js.native
 object ContentType extends js.Object {

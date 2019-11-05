@@ -58,6 +58,10 @@ trait ChromeOptions extends js.Object {
     */
   var prefs: js.UndefOr[Record[String, String]] = js.undefined
   /**
+    * Flag to activate W3C WebDriver API. Chromedriver (as of version 2.41 at least) simply does not support the W3C WebDriver API.
+    */
+  var w3c: js.UndefOr[Boolean] = js.undefined
+  /**
     * A list of window types that will appear in the list of window handles. For access to <webview> elements, include "webview" in this list.
     */
   var windowTypes: js.UndefOr[js.Array[String]] = js.undefined
@@ -77,6 +81,7 @@ object ChromeOptions {
     mobileEmulation: Record[String, String] = null,
     perfLoggingPrefs: ChromePerfLoggingPrefs = null,
     prefs: Record[String, String] = null,
+    w3c: js.UndefOr[Boolean] = js.undefined,
     windowTypes: js.Array[String] = null
   ): ChromeOptions = {
     val __obj = js.Dynamic.literal()
@@ -91,6 +96,7 @@ object ChromeOptions {
     if (mobileEmulation != null) __obj.updateDynamic("mobileEmulation")(mobileEmulation)
     if (perfLoggingPrefs != null) __obj.updateDynamic("perfLoggingPrefs")(perfLoggingPrefs)
     if (prefs != null) __obj.updateDynamic("prefs")(prefs)
+    if (!js.isUndefined(w3c)) __obj.updateDynamic("w3c")(w3c)
     if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes)
     __obj.asInstanceOf[ChromeOptions]
   }

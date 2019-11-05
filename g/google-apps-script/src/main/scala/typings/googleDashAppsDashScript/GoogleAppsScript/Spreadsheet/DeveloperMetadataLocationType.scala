@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait DeveloperMetadataLocationType extends js.Object
 
+/**
+  * An enumeration of the types of developer metadata location types.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DeveloperMetadataLocationType")
 @js.native
 object DeveloperMetadataLocationType extends js.Object {

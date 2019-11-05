@@ -13,7 +13,8 @@ import typings.codemirror.codemirrorMod.MatchTags
 import typings.codemirror.codemirrorMod.ShowHintOptions
 import typings.codemirror.codemirrorMod.StyleActiveLine
 import typings.codemirror.codemirrorMod.TextMarker
-import typings.std.Event
+import typings.std.DragEvent
+import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,8 +112,8 @@ object MergeViewEditorConfiguration {
     maxHighlightLength: Int | Double = null,
     mode: js.Any = null,
     onCollapse: (/* mergeView */ MergeViewEditor, /* line */ Double, /* size */ Double, /* mark */ TextMarker) => Unit = null,
-    onDragEvent: (/* instance */ Editor, /* event */ Event) => Boolean = null,
-    onKeyEvent: (/* instance */ Editor, /* event */ Event) => Boolean = null,
+    onDragEvent: (/* instance */ Editor, /* event */ DragEvent) => Boolean = null,
+    onKeyEvent: (/* instance */ Editor, /* event */ KeyboardEvent) => Boolean = null,
     origLeft: js.Any = null,
     origRight: js.Any = null,
     placeholder: String = null,

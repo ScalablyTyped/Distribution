@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("kafka-node", "Offset")
 @js.native
 class Offset protected () extends js.Object {
-  def this(client: Client) = this()
+  def this(client: KafkaClient) = this()
   def commit(
     groupId: String,
     payloads: js.Array[OffsetCommitRequest],

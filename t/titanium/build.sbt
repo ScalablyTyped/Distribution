@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "titanium"
-version := "8.0-dt-20191014Z-372c61"
+version := "8.0-dt-20191104Z-1c49e3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

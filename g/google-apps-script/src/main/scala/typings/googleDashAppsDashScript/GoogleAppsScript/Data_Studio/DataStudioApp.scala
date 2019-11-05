@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * DataStudioApp allows scripts to interact with developer-oriented features for Data Studio.
+  */
 trait DataStudioApp extends js.Object {
   def createCommunityConnector(): CommunityConnector
 }

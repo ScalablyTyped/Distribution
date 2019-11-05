@@ -19,6 +19,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access and modify spreadsheet ranges. A range can be a single cell in a sheet or a group of
+  * adjacent cells in a sheet.
+  */
 @js.native
 trait Range extends js.Object {
   def activate(): Range = js.native

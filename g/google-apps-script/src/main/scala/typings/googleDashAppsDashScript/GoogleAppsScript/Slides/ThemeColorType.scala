@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ThemeColorType extends js.Object
 
+/**
+  * The name of an entry in the page's color scheme.
+  */
 @JSGlobal("GoogleAppsScript.Slides.ThemeColorType")
 @js.native
 object ThemeColorType extends js.Object {

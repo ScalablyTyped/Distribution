@@ -4,6 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Allows for direction finding, geocoding, elevation sampling and the creation of static map
+  * images.
+  */
 trait Maps extends js.Object {
   var DirectionFinder: DirectionFinderEnums
   var StaticMap: StaticMapEnums

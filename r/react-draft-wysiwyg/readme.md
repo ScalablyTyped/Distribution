@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-draft-wysiwyg
 
-Typings are for version 1.12
+Typings are for version 1.13
 
 ## Library description:
 A wysiwyg on top of DraftJS.

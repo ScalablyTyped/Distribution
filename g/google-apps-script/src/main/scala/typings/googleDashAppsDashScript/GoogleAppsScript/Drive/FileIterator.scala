@@ -4,6 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An iterator that allows scripts to iterate over a potentially large collection of files. File
+  * iterators can be acccessed from DriveApp or a Folder.
+  *
+  *     // Log the name of every file in the user's Drive.
+  *     var files = DriveApp.getFiles();
+  *     while (files.hasNext()) {
+  *       var file = files.next();
+  *       Logger.log(file.getName());
+  *     }
+  */
 trait FileIterator extends js.Object {
   /**
     * Gets a token that can be used to resume this iteration at a later time.

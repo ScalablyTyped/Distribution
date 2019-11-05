@@ -4,6 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * CommunityConnector enables scripts to access builders and utilities to help with development of
+  * Community Connectors for Data Studio. Use this class to get a reference to the Fields
+  * object and the FieldType and AggregationType enums so they can be used in the
+  * construction of Fields.
+  *
+  *     var cc = DataStudioApp.createCommunityConnector();
+  *     var fieldType = cc.FieldType;
+  *     var aggregationType = cc.AggregationType;
+  *
+  *     var fields = cc.getFields();
+  *
+  *     fields.newMetric()
+  *       .setAggregation(aggregationType.AVG)
+  *       .setType(fieldType.CURRENCY_USD);
+  */
 trait CommunityConnector extends js.Object {
   var AggregationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AggregationType */ js.Any
   var AuthType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AuthType */ js.Any

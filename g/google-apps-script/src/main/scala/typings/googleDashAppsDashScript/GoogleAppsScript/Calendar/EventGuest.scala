@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents a guest of an event.
+  */
 trait EventGuest extends js.Object {
   def getAdditionalGuests(): Integer
   def getEmail(): String

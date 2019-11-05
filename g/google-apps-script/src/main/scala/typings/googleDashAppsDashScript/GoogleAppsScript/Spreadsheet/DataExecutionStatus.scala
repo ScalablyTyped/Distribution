@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The data execution status.
+  */
 trait DataExecutionStatus extends js.Object {
   def getErrorCode(): DataExecutionErrorCode
   def getErrorMessage(): String

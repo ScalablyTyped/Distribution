@@ -5,6 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A layout item that visually indicates the start of a section. Items can be accessed or created
+  * from a Form.
+  *
+  *     // Open a form by ID and add a new section header.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addSectionHeaderItem();
+  *     item.setTitle('Title of new section');
+  */
 trait SectionHeaderItem extends js.Object {
   def duplicate(): SectionHeaderItem
   def getHelpText(): String

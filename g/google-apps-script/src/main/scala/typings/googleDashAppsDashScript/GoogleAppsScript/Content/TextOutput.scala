@@ -4,6 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A TextOutput object that can be served from a script.
+  *
+  * Due to security considerations, scripts cannot directly return text content to a browser.
+  * Instead, the browser is redirected to googleusercontent.com, which will display it without any
+  * further sanitization or manipulation.
+  *
+  * You can return text content like this:
+  *
+  *     function doGet() {
+  *       return ContentService.createTextOutput("hello world!");
+  *     }
+  *
+  * ContentService
+  */
 trait TextOutput extends js.Object {
   def append(addedContent: String): TextOutput
   def clear(): TextOutput

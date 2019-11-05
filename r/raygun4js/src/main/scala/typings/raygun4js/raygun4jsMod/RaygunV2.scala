@@ -37,6 +37,7 @@ import typings.raygun4js.raygun4jsStrings.trackEvent
 import typings.raygun4js.raygun4jsStrings.whitelistCrossOriginDomains
 import typings.raygun4js.raygun4jsStrings.withCustomData
 import typings.raygun4js.raygun4jsStrings.withTags
+import typings.std.RegExp
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +52,7 @@ trait RaygunV2 extends js.Object {
   def apply(key: attach, value: Boolean): Unit = js.native
   def apply(key: enableCrashReporting, value: Boolean): Unit = js.native
   def apply(key: enablePulse, value: Boolean): Unit = js.native
-  def apply(key: filterSensitiveData, values: js.Array[String]): Unit = js.native
+  def apply(key: filterSensitiveData, values: js.Array[String | RegExp]): Unit = js.native
   def apply(key: getRaygunInstance): RaygunStatic = js.native
   def apply(
     key: groupingKey,

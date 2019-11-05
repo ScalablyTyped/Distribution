@@ -349,6 +349,7 @@ object ASPxClientUtils extends js.Object {
     * @param shortcutString A string value that specifies the key combination.
     */
   def StringToShortcutCode(shortcutString: String): Double = js.native
+  def ToggleClassName(element: js.Any, className: String, toggleState: Boolean): Unit = js.native
   /**
     * Trims all leading and trailing whitespaces from the string. A string value representing the trimmed string.
     * @param str A string value representing the string for trimming.

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ex-react-native-i18n" : "0.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ex-react-native-i18n" : "0.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

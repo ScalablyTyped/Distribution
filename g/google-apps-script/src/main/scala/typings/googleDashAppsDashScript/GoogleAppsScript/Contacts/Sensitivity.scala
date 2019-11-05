@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Sensitivity extends js.Object
 
+/**
+  * An enum for contact sensitivity.
+  */
 @JSGlobal("GoogleAppsScript.Contacts.Sensitivity")
 @js.native
 object Sensitivity extends js.Object {

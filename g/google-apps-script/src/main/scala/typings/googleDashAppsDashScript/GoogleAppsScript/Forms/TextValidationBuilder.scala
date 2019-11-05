@@ -5,6 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A DataValidationBuilder for a TextValidation.
+  *
+  *     // Add a text item to a form and require it to be a number within a range.
+  *     var textItem = form.addTextItem().setTitle('Pick a number between 1 and 100?');
+  *     var textValidation = FormApp.createTextValidation()
+  *       .setHelpText(“Input was not a number between 1 and 100.”)
+  *       .requireNumberBetween(1, 100);
+  *     textItem.setValidation(textValidation);
+  */
 trait TextValidationBuilder extends js.Object {
   def requireNumber(): TextValidationBuilder
   def requireNumberBetween(start: Double, end: Double): TextValidationBuilder

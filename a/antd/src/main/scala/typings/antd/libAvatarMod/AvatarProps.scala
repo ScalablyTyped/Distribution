@@ -15,7 +15,7 @@ trait AvatarProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   /** Type of the Icon to be used in avatar */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String | ReactNode] = js.undefined
   var onError: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   /** Shape of avatar, options:`circle`, `square` */
@@ -34,7 +34,7 @@ object AvatarProps {
     alt: String = null,
     children: ReactNode = null,
     className: String = null,
-    icon: String = null,
+    icon: String | ReactNode = null,
     onError: () => Boolean = null,
     prefixCls: String = null,
     shape: circle | square = null,
@@ -47,7 +47,7 @@ object AvatarProps {
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])

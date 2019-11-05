@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait Position extends js.Object
 
+/**
+  * An enumeration of legend positions within a chart.
+  */
 @JSGlobal("GoogleAppsScript.Charts.Position")
 @js.native
 object Position extends js.Object {

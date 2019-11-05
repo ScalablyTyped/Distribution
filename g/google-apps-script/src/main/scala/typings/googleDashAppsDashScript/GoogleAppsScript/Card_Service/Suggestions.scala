@@ -4,6 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Autocomplete suggestions to supplement a TextInput widget.
+  *
+  *     var textInput = CardService.newTextInput()
+  *         .setSuggestions(CardService.newSuggestions()
+  *             .addSuggestion("First suggestion")
+  *             .addSuggestion("Second suggestion"))
+  */
 trait Suggestions extends js.Object {
   def addSuggestion(suggestion: String): Suggestions
   def addSuggestions(suggestions: js.Array[String]): Suggestions

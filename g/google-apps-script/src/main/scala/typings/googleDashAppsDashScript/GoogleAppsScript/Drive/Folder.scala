@@ -1,12 +1,22 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Drive
 
 import typings.googleDashAppsDashScript.GoogleAppsScript.Base.BlobSource
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import typings.googleDashAppsDashScript.GoogleAppsScript.Integer
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A folder in Google Drive. Folders can be accessed or created from DriveApp.
+  *
+  *     // Log the name of every folder in the user's Drive.
+  *     var folders = DriveApp.getFolders();
+  *     while (folders.hasNext()) {
+  *       var folder = folders.next();
+  *       Logger.log(folder.getName());
+  *     }
+  */
 @js.native
 trait Folder extends js.Object {
   def addEditor(emailAddress: String): Folder = js.native

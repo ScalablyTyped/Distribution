@@ -5,6 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A builder for table charts. For more details, see the Google Charts documentation.
+  *
+  * Here is an example that shows how to build a table chart. The data is imported from a Google spreadsheet.
+  *
+  *     // Get sample data from a spreadsheet.
+  *     var dataSourceUrl = 'https://docs.google.com/spreadsheet/tq?range=A1%3AF' +
+  *         '&key=0Aq4s9w_HxMs7dHpfX05JdmVSb1FpT21sbXd4NVE3UEE&gid=4&headers=-1';
+  *
+  *     var chartBuilder = Charts.newTableChart()
+  *         .setDimensions(600, 500)
+  *         .enablePaging(20)
+  *         .setDataSourceUrl(dataSourceUrl);
+  *
+  *     var chart = chartBuilder.build();
+  */
 @js.native
 trait TableChartBuilder extends js.Object {
   def build(): Chart = js.native

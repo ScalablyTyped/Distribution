@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iframe-resizer"
-version := "3.5-dt-20181205Z-523f8d"
+version := "3.5-dt-20191104Z-b44c07"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

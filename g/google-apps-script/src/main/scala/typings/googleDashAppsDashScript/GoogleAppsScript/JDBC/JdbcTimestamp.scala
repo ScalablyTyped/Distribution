@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A JDBC Timestamp. For documentation of this class, see java.sql.Timestamp
+  * .
+  */
 trait JdbcTimestamp extends js.Object {
   def after(when: JdbcTimestamp): Boolean
   def before(when: JdbcTimestamp): Boolean

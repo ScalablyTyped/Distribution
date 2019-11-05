@@ -5,6 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A question item that allows the respondent to indicate a time of day. Items can be accessed or
+  * created from a Form. When used in a quiz, these items are graded.
+  *
+  *     // Open a form by ID and add a new time item.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var item = form.addTimeItem();
+  *     item.setTitle('What time do you usually wake up in the morning?');
+  */
 trait TimeItem extends js.Object {
   def createResponse(hour: Integer, minute: Integer): ItemResponse
   def duplicate(): TimeItem

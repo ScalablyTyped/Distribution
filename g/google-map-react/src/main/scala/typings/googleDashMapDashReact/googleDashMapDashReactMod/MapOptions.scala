@@ -10,6 +10,7 @@ trait MapOptions extends js.Object {
   // excluding 'zoom' and 'center' which get set via props.
   var backgroundColor: js.UndefOr[String] = js.undefined
   var clickableIcons: js.UndefOr[Boolean] = js.undefined
+  var controlSize: js.UndefOr[Double] = js.undefined
   var disableDefaultUI: js.UndefOr[Boolean] = js.undefined
   var disableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
@@ -50,6 +51,7 @@ object MapOptions {
   def apply(
     backgroundColor: String = null,
     clickableIcons: js.UndefOr[Boolean] = js.undefined,
+    controlSize: Int | Double = null,
     disableDefaultUI: js.UndefOr[Boolean] = js.undefined,
     disableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
@@ -87,6 +89,7 @@ object MapOptions {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (!js.isUndefined(clickableIcons)) __obj.updateDynamic("clickableIcons")(clickableIcons)
+    if (controlSize != null) __obj.updateDynamic("controlSize")(controlSize.asInstanceOf[js.Any])
     if (!js.isUndefined(disableDefaultUI)) __obj.updateDynamic("disableDefaultUI")(disableDefaultUI)
     if (!js.isUndefined(disableDoubleClickZoom)) __obj.updateDynamic("disableDoubleClickZoom")(disableDoubleClickZoom)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

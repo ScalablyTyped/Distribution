@@ -5,6 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A response to the form as a whole. A FormResponse can be used in three ways: to access
+  * the answers submitted by a respondent (see getItemResponses()), to programmatically
+  * submit a response to the form (see withItemResponse(response) and submit()), and to generate a URL for the form which pre-fills fields using the provided
+  * answers. FormResponses can be created or accessed from a Form.
+  *
+  *     // Open a form by ID and log the responses to each question.
+  *     var form = FormApp.openById('1234567890abcdefghijklmnopqrstuvwxyz');
+  *     var formResponses = form.getResponses();
+  *     for (var i = 0; i < formResponses.length; i++) {
+  *       var formResponse = formResponses[i];
+  *       var itemResponses = formResponse.getItemResponses();
+  *       for (var j = 0; j < itemResponses.length; j++) {
+  *         var itemResponse = itemResponses[j];
+  *         Logger.log('Response #%s to the question "%s" was "%s"',
+  *             (i + 1).toString(),
+  *             itemResponse.getItem().getTitle(),
+  *             itemResponse.getResponse());
+  *       }
+  *     }
+  */
 trait FormResponse extends js.Object {
   def getEditResponseUrl(): String
   def getGradableItemResponses(): js.Array[ItemResponse]

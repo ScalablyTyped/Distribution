@@ -1,10 +1,13 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
-import typings.std.Date
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents the recurrence settings for an event series.
+  */
 trait EventRecurrence extends js.Object {
   def addDailyExclusion(): RecurrenceRule
   def addDailyRule(): RecurrenceRule

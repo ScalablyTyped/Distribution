@@ -1,6 +1,6 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,15 +18,15 @@ object SelectMenuOptions {
   @scala.inline
   def apply(
     appendTo: String = null,
-    change: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
-    close: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
-    create: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
+    change: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
+    close: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
+    create: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    focus: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
+    focus: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
     icons: js.Any = null,
-    open: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
+    open: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
     position: JQueryPositionOptions = null,
-    select: (/* event */ Event, /* ui */ SelectMenuUIParams) => Unit = null,
+    select: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Unit = null,
     width: Int | Double = null
   ): SelectMenuOptions = {
     val __obj = js.Dynamic.literal()

@@ -1,5 +1,9 @@
 package typings.findDashProcess
 
+import typings.findDashProcess.findDashProcessStrings.name
+import typings.findDashProcess.findDashProcessStrings.pid
+import typings.findDashProcess.findDashProcessStrings.port
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +11,23 @@ import scala.scalajs.js.annotation._
 @JSImport("find-process", JSImport.Namespace)
 @js.native
 object findDashProcessMod extends js.Object {
-  def apply(by: String, value: String): js.Promise[js.Array[Anon_Cmd]] = js.native
-  def apply(by: String, value: Double): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: name, value: String): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: name, value: String, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: name, value: Double): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: name, value: Double, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: name, value: RegExp): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: name, value: RegExp, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: pid, value: String): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: pid, value: String, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: pid, value: Double): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: pid, value: Double, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: pid, value: RegExp): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: pid, value: RegExp, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: port, value: String): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: port, value: String, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: port, value: Double): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: port, value: Double, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: port, value: RegExp): js.Promise[js.Array[Anon_Cmd]] = js.native
+  def apply(`type`: port, value: RegExp, strict: Boolean): js.Promise[js.Array[Anon_Cmd]] = js.native
 }
 

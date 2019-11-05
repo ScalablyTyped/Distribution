@@ -4,6 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A representation of an XML CDATASection node.
+  *
+  *     // Create and log an XML document that shows how special characters like '<', '>', and '&' are
+  *     // stored in a CDATASection node as compared to in a Text node.
+  *     var illegalCharacters = '<em>The Amazing Adventures of Kavalier & Clay</em>';
+  *     var cdata = XmlService.createCdata(illegalCharacters);
+  *     var text = XmlService.createText(illegalCharacters);
+  *     var root = XmlService.createElement('root').addContent(cdata).addContent(text);
+  *     var document = XmlService.createDocument(root);
+  *     var xml = XmlService.getPrettyFormat().format(document);
+  *     Logger.log(xml);
+  */
 trait Cdata extends js.Object {
   def append(text: String): Text
   def detach(): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content

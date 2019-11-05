@@ -4,6 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Access boolean conditions in ConditionalFormatRules. Each
+  * conditional format rule may contain a single boolean condition. The boolean condition itself
+  * contains a boolean criteria (with values) and formatting settings. The criteria is evaluated
+  * against the content of a cell resulting in either a true or false value. If the
+  * criteria evaluates to true, the condition's formatting settings are applied to the cell.
+  */
 trait BooleanCondition extends js.Object {
   def getBackground(): String | Null
   def getBold(): Boolean | Null

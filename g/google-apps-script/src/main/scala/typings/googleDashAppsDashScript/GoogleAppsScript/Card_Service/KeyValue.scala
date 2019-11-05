@@ -4,6 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A widget that displays one or more "keys" around a text "value". The possible keys include an
+  * icon, a label above and a label below. Setting the text content and one of the keys is required
+  * using setContent(text) and one of setIcon(icon), setIconUrl(url), setTopLabel(text),
+  * or setBottomLabel(text).
+  *
+  *     var imageKeyValue = CardService.newKeyValue()
+  *         .setIconUrl("https://icon.png")
+  *         .setContent("KeyValue widget with an image on the left and text on the right");
+  *
+  *     var textKeyValue = CardService.newKeyValue()
+  *         .setTopLabel("Text key")
+  *         .setContent("KeyValue widget with text key on top and cotent below");
+  *
+  *     var multilineKeyValue = CardService.newKeyValue()
+  *         .setTopLabel("Top label - single line)")
+  *         .setContent("Content can be multiple lines")
+  *         .setMultiline(true)
+  *         .setBottomLabel("Bottom label - single line");
+  */
 trait KeyValue extends js.Object {
   def setAuthorizationAction(action: AuthorizationAction): KeyValue
   def setBottomLabel(text: String): KeyValue

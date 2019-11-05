@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait BandingTheme extends js.Object
 
+/**
+  * An enumeration of banding themes. Each theme consists of several complementary colors that are
+  * applied to different cells based on the banding settings.
+  */
 @JSGlobal("GoogleAppsScript.Spreadsheet.BandingTheme")
 @js.native
 object BandingTheme extends js.Object {

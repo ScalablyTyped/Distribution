@@ -1,11 +1,16 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Allows a script to read and update the user's Google Calendar. This class provides direct access
+  * to the user's default calendar, as well as the ability to retrieve additional calendars that the
+  * user owns or is subscribed to.
+  */
 @js.native
 trait CalendarApp extends js.Object {
   var Color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color */ js.Any = js.native

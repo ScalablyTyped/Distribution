@@ -1,7 +1,7 @@
 package typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod
 
-import typings.officeDashUiDashFabricDashReact.Anon_AlphaLabel
 import typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ class ColorPickerBase protected ()
 @JSImport("office-ui-fabric-react", "ColorPickerBase")
 @js.native
 object ColorPickerBase extends js.Object {
-  var defaultProps: Anon_AlphaLabel = js.native
+  var defaultProps: Partial[IColorPickerProps] = js.native
 }
 

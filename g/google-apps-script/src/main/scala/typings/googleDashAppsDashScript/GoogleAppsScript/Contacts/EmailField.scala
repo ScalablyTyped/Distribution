@@ -4,6 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An email field in a Contact.
+  */
 @js.native
 trait EmailField extends js.Object {
   def deleteEmailField(): Unit = js.native

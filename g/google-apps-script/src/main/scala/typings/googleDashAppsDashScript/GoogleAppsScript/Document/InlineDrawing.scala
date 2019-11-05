@@ -4,6 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An element representing an embedded drawing. An InlineDrawing can be contained within a
+  * ListItem or Paragraph, unless the ListItem or Paragraph is within
+  * a FootnoteSection. An InlineDrawing cannot itself contain any other element. For
+  * more information on document structure, see the guide to extending Google Docs.
+  */
 trait InlineDrawing extends js.Object {
   def copy(): InlineDrawing
   def getAltDescription(): String
