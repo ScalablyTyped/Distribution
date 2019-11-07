@@ -18,6 +18,7 @@ trait UserPreferences extends js.Object {
   /** Determines whether we import `foo/index.ts` as "foo", "foo/index", or "foo/index.js" */
   val importModuleSpecifierEnding: js.UndefOr[minimal | index | JS] = js.undefined
   val importModuleSpecifierPreference: js.UndefOr[relative | `non-relative`] = js.undefined
+  val includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined
   val includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined
   val includeCompletionsWithInsertText: js.UndefOr[Boolean] = js.undefined
   val providePrefixAndSuffixTextForRename: js.UndefOr[Boolean] = js.undefined
@@ -31,6 +32,7 @@ object UserPreferences {
     disableSuggestions: js.UndefOr[Boolean] = js.undefined,
     importModuleSpecifierEnding: minimal | index | JS = null,
     importModuleSpecifierPreference: relative | `non-relative` = null,
+    includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsWithInsertText: js.UndefOr[Boolean] = js.undefined,
     providePrefixAndSuffixTextForRename: js.UndefOr[Boolean] = js.undefined,
@@ -41,6 +43,7 @@ object UserPreferences {
     if (!js.isUndefined(disableSuggestions)) __obj.updateDynamic("disableSuggestions")(disableSuggestions)
     if (importModuleSpecifierEnding != null) __obj.updateDynamic("importModuleSpecifierEnding")(importModuleSpecifierEnding.asInstanceOf[js.Any])
     if (importModuleSpecifierPreference != null) __obj.updateDynamic("importModuleSpecifierPreference")(importModuleSpecifierPreference.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAutomaticOptionalChainCompletions)) __obj.updateDynamic("includeAutomaticOptionalChainCompletions")(includeAutomaticOptionalChainCompletions)
     if (!js.isUndefined(includeCompletionsForModuleExports)) __obj.updateDynamic("includeCompletionsForModuleExports")(includeCompletionsForModuleExports)
     if (!js.isUndefined(includeCompletionsWithInsertText)) __obj.updateDynamic("includeCompletionsWithInsertText")(includeCompletionsWithInsertText)
     if (!js.isUndefined(providePrefixAndSuffixTextForRename)) __obj.updateDynamic("providePrefixAndSuffixTextForRename")(providePrefixAndSuffixTextForRename)

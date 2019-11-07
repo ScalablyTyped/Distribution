@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-swipe-gestures" : "1.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-swipe-gestures" : "1.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

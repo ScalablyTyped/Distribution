@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLElement
   extends Element
-     with GlobalEventHandlers
      with DocumentAndElementEventHandlers
+     with ElementCSSInlineStyle
      with ElementContentEditable
-     with HTMLOrSVGElement
-     with ElementCSSInlineStyle {
+     with GlobalEventHandlers
+     with HTMLOrSVGElement {
   var accessKey: java.lang.String = js.native
   val accessKeyLabel: java.lang.String = js.native
   var autocapitalize: java.lang.String = js.native

@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
+trait LanguageServiceHost extends ModuleSpecifierResolutionHost {
   var error: js.UndefOr[js.Function1[/* s */ String, Unit]] = js.undefined
-  var fileExists: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
   var getCancellationToken: js.UndefOr[js.Function0[HostCancellationToken]] = js.undefined
   /**
     * Gets a set of custom transformers to use during emit.
@@ -41,7 +40,8 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
       js.Array[String]
     ]
   ] = js.undefined
-  var readFile: js.UndefOr[
+  @JSName("readFile")
+  var readFile_LanguageServiceHost: js.UndefOr[
     js.Function2[/* path */ String, /* encoding */ js.UndefOr[String], js.UndefOr[String]]
   ] = js.undefined
   var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.undefined
@@ -65,7 +65,6 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
     ]
   ] = js.undefined
   var trace: js.UndefOr[js.Function1[/* s */ String, Unit]] = js.undefined
-  var useCaseSensitiveFileNames: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var writeFile: js.UndefOr[js.Function2[/* fileName */ String, /* content */ String, Unit]] = js.undefined
   def getCompilationSettings(): CompilerOptions
   @JSName("getCurrentDirectory")

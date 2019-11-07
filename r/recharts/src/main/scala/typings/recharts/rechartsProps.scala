@@ -33,6 +33,9 @@ trait rechartsProps {
   def CurveProps: typings.recharts.rechartsMod.CurveProps.type = typings.recharts.rechartsMod.CurveProps
   type CurveProps = typings.recharts.rechartsMod.CurveProps
   @scala.inline
+  def CustomizedProps: typings.recharts.rechartsMod.CustomizedProps.type = typings.recharts.rechartsMod.CustomizedProps
+  type CustomizedProps = typings.recharts.rechartsMod.CustomizedProps
+  @scala.inline
   def DotProps: typings.recharts.rechartsMod.DotProps.type = typings.recharts.rechartsMod.DotProps
   type DotProps = typings.recharts.rechartsMod.DotProps
   @scala.inline

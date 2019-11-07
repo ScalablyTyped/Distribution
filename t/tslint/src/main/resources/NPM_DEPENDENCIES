@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tslint" : "5.20.0"
+      "tslint" : "5.20.1"
     }
   ],
   "test-dependencies" : [
     {
-      "tslint" : "5.20.0"
+      "tslint" : "5.20.1"
     }
   ],
   "compile-devDependencies" : [

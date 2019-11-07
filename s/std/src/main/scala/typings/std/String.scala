@@ -116,6 +116,12 @@ trait String
   def `match`(regexp: java.lang.String): RegExpMatchArray | Null = js.native
   def `match`(regexp: RegExp): RegExpMatchArray | Null = js.native
   /**
+    * Matches a string with a regular expression, and returns an iterable of matches
+    * containing the results of that search.
+    * @param regexp A variable name or string literal containing the regular expression pattern and flags.
+    */
+  def matchAll(regexp: RegExp): IterableIterator[RegExpMatchArray] = js.native
+  /**
     * Returns the String value result of normalizing the string into the normalization form
     * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
     * @param form Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default
@@ -273,8 +279,12 @@ trait String
   def sup(): java.lang.String = js.native
   /** Converts all alphabetic characters to lowercase, taking into account the host environment's current locale. */
   def toLocaleLowerCase(): java.lang.String = js.native
+  def toLocaleLowerCase(locales: java.lang.String): java.lang.String = js.native
+  def toLocaleLowerCase(locales: js.Array[java.lang.String]): java.lang.String = js.native
   /** Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale. */
   def toLocaleUpperCase(): java.lang.String = js.native
+  def toLocaleUpperCase(locales: java.lang.String): java.lang.String = js.native
+  def toLocaleUpperCase(locales: js.Array[java.lang.String]): java.lang.String = js.native
   /** Converts all the alphabetic characters in a string to lowercase. */
   def toLowerCase(): java.lang.String = js.native
   /** Converts all the alphabetic characters in a string to uppercase. */

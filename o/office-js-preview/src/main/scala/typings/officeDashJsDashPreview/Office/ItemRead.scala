@@ -69,13 +69,15 @@ trait ItemRead extends Item {
     */
   var itemClass: String = js.native
   /**
-    * Gets the Exchange Web Services item identifier for the current item.
+    * Gets the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
+    * for the current item.
     *
     * The itemId property is not available in compose mode. 
     * If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier 
     * in the asyncResult.value parameter in the callback function.
     *
-    * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
+    * **Note**: The identifier returned by the itemId property is the same as the
+    * {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}. 
     * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
     * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
     * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.

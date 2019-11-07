@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "js-data-http"
-version := "3.0.1-79b2d2"
+version := "3.0.1-03d0f8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "js-data" % "3.0.8-031eef",
-  "org.scalablytyped" %%% "js-data-adapter" % "1.0.1-0ff0d8",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "js-data" % "3.0.8-f27615",
+  "org.scalablytyped" %%% "js-data-adapter" % "1.0.1-c11fba",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

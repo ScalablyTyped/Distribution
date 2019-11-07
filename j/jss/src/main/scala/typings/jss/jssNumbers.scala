@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object jssNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `false` extends js.Object
   
   @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  def `false`: `false` = false.asInstanceOf[`false`]
 }
 

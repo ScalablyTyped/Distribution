@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "react-intl-redux"
-version := "v0.1.0-dt-20190806Z-ab6130"
+version := "v0.1.0-dt-20190806Z-93f3e6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.2.1-397221",
-  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "2.1.0-cc75e3",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.4.0-86ff36",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-df4379",
-  "org.scalablytyped" %%% "intl-messageformat" % "7.5.0-b21103",
-  "org.scalablytyped" %%% "intl-messageformat-parser" % "3.2.2-f42e36",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
-  "org.scalablytyped" %%% "react-intl" % "3.4.0-f91cc2",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20191018Z-c4576e",
-  "org.scalablytyped" %%% "redux" % "4.0.4-783f8a",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
+  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.2.1-88ce98",
+  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "2.1.0-e152cd",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.4.0-adedb9",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-e5e42d",
+  "org.scalablytyped" %%% "intl-messageformat" % "7.5.0-ac6947",
+  "org.scalablytyped" %%% "intl-messageformat-parser" % "3.2.2-01f04d",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "react-intl" % "3.4.0-a416db",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20191018Z-f1ed5d",
+  "org.scalablytyped" %%% "redux" % "4.0.4-ae4e73",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

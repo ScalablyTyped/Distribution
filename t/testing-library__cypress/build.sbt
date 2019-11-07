@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "testing-library__cypress"
-version := "5.0-dt-20191024Z-69f5e6"
+version := "5.0-dt-20191024Z-499480"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cypress" % "3.6.0-17acc2",
-  "org.scalablytyped" %%% "pretty-format" % "24.9.0-defaef",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-8ec6f6",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "testing-library__dom" % "6.10-dt-20191101Z-1b2880")
+  "org.scalablytyped" %%% "cypress" % "3.6.0-81e1a7",
+  "org.scalablytyped" %%% "pretty-format" % "24.9.0-681723",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a5fece",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
+  "org.scalablytyped" %%% "testing-library__dom" % "6.10-dt-20191101Z-cdbe98")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

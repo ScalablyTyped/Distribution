@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.typescript.typescriptMod.SyntaxKind.AbstractKeyword
   - typings.typescript.typescriptMod.SyntaxKind.AnyKeyword
   - typings.typescript.typescriptMod.SyntaxKind.AsKeyword
+  - typings.typescript.typescriptMod.SyntaxKind.AssertsKeyword
   - typings.typescript.typescriptMod.SyntaxKind.BigIntKeyword
   - typings.typescript.typescriptMod.SyntaxKind.BooleanKeyword
   - typings.typescript.typescriptMod.SyntaxKind.BreakKeyword

@@ -12,25 +12,45 @@ import scala.scalajs.js.annotation._
 trait Matchers[R, T] extends js.Object {
   /**
     * Ensures the last call to a mock function was provided specific args.
+    *
+    * Optionally, you can provide a type for the expected arguments via a generic.
+    * Note that the type must be either an array or a tuple.
     */
-  def lastCalledWith(args: js.Any*): R = js.native
+  def lastCalledWith[E /* <: js.Array[_] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type E is not an array type */ args: E
+  ): R = js.native
   /**
     * Ensure that the last call to a mock function has returned a specified value.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def lastReturnedWith(value: js.Any): R = js.native
+  def lastReturnedWith[E](value: E): R = js.native
   /**
     * Ensure that a mock function is called with specific arguments on an Nth call.
+    *
+    * Optionally, you can provide a type for the expected arguments via a generic.
+    * Note that the type must be either an array or a tuple.
     */
-  def nthCalledWith(nthCall: Double, params: js.Any*): R = js.native
+  def nthCalledWith[E /* <: js.Array[_] */](
+    nthCall: Double,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type E is not an array type */ params: E
+  ): R = js.native
   /**
     * Ensure that the nth call to a mock function has returned a specified value.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def nthReturnedWith(n: Double, value: js.Any): R = js.native
+  def nthReturnedWith[E](n: Double, value: E): R = js.native
   /**
     * Checks that a value is what you expect. It uses `===` to check strict equality.
     * Don't use `toBe` with floating-point numbers.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toBe(expected: js.Any): R = js.native
+  def toBe[E](expected: E): R = js.native
   /**
     * Ensures that a mock function is called.
     */
@@ -41,8 +61,13 @@ trait Matchers[R, T] extends js.Object {
   def toBeCalledTimes(expected: Double): R = js.native
   /**
     * Ensure that a mock function is called with specific arguments.
+    *
+    * Optionally, you can provide a type for the expected arguments via a generic.
+    * Note that the type must be either an array or a tuple.
     */
-  def toBeCalledWith(args: js.Any*): R = js.native
+  def toBeCalledWith[E /* <: js.Array[_] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type E is not an array type */ args: E
+  ): R = js.native
   /**
     * Using exact equality with floating point numbers is a bad idea.
     * Rounding means that intuitive things fail.
@@ -70,8 +95,11 @@ trait Matchers[R, T] extends js.Object {
   /**
     * Ensure that an object is an instance of a class.
     * This matcher uses `instanceof` underneath.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toBeInstanceOf(expected: js.Any): R = js.native
+  def toBeInstanceOf[E](expected: E): R = js.native
   /**
     * For comparing floating point numbers.
     */
@@ -102,19 +130,28 @@ trait Matchers[R, T] extends js.Object {
   /**
     * Used when you want to check that an item is in a list.
     * For testing the items in the list, this uses `===`, a strict equality check.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toContain(expected: js.Any): R = js.native
+  def toContain[E](expected: E): R = js.native
   /**
     * Used when you want to check that an item is in a list.
-    * For testing the items in the list, this  matcher recursively checks the
+    * For testing the items in the list, this matcher recursively checks the
     * equality of all fields, rather than checking for object identity.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toContainEqual(expected: js.Any): R = js.native
+  def toContainEqual[E](expected: E): R = js.native
   /**
     * Used when you want to check that two objects have the same value.
     * This matcher recursively checks the equality of all fields, rather than checking for object identity.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toEqual(expected: js.Any): R = js.native
+  def toEqual[E](expected: E): R = js.native
   /**
     * Ensures that a mock function is called.
     */
@@ -125,23 +162,42 @@ trait Matchers[R, T] extends js.Object {
   def toHaveBeenCalledTimes(expected: Double): R = js.native
   /**
     * Ensure that a mock function is called with specific arguments.
+    *
+    * Optionally, you can provide a type for the expected arguments via a generic.
+    * Note that the type must be either an array or a tuple.
     */
-  def toHaveBeenCalledWith(params: js.Any*): R = js.native
+  def toHaveBeenCalledWith[E /* <: js.Array[_] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type E is not an array type */ params: E
+  ): R = js.native
   /**
     * If you have a mock function, you can use `.toHaveBeenLastCalledWith`
     * to test what arguments it was last called with.
+    *
+    * Optionally, you can provide a type for the expected arguments via a generic.
+    * Note that the type must be either an array or a tuple.
     */
-  def toHaveBeenLastCalledWith(params: js.Any*): R = js.native
+  def toHaveBeenLastCalledWith[E /* <: js.Array[_] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type E is not an array type */ params: E
+  ): R = js.native
   /**
     * Ensure that a mock function is called with specific arguments on an Nth call.
+    *
+    * Optionally, you can provide a type for the expected arguments via a generic.
+    * Note that the type must be either an array or a tuple.
     */
-  def toHaveBeenNthCalledWith(nthCall: Double, params: js.Any*): R = js.native
+  def toHaveBeenNthCalledWith[E /* <: js.Array[_] */](
+    nthCall: Double,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type E is not an array type */ params: E
+  ): R = js.native
   /**
     * Use to test the specific value that a mock function last returned.
     * If the last call to the mock function threw an error, then this matcher will fail
     * no matter what value you provided as the expected return value.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toHaveLastReturnedWith(expected: js.Any): R = js.native
+  def toHaveLastReturnedWith[E](expected: E): R = js.native
   /**
     * Used to check that an object has a `.length` property
     * and it is set to a certain numeric value.
@@ -151,8 +207,11 @@ trait Matchers[R, T] extends js.Object {
     * Use to test the specific value that a mock function returned for the nth call.
     * If the nth call to the mock function threw an error, then this matcher will fail
     * no matter what value you provided as the expected return value.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toHaveNthReturnedWith(nthCall: Double, expected: js.Any): R = js.native
+  def toHaveNthReturnedWith[E](nthCall: Double, expected: E): R = js.native
   /**
     * Use to check if property at provided reference keyPath exists for an object.
     * For checking deeply nested properties in an object you may use dot notation or an array containing
@@ -166,10 +225,10 @@ trait Matchers[R, T] extends js.Object {
     *
     * expect(houseForSale).toHaveProperty('kitchen.area', 20);
     */
-  def toHaveProperty(propertyPath: String): R = js.native
-  def toHaveProperty(propertyPath: String, value: js.Any): R = js.native
-  def toHaveProperty(propertyPath: js.Array[_]): R = js.native
-  def toHaveProperty(propertyPath: js.Array[_], value: js.Any): R = js.native
+  def toHaveProperty[E](propertyPath: String): R = js.native
+  def toHaveProperty[E](propertyPath: String, value: E): R = js.native
+  def toHaveProperty[E](propertyPath: js.Array[_]): R = js.native
+  def toHaveProperty[E](propertyPath: js.Array[_], value: E): R = js.native
   /**
     * Use to test that the mock function successfully returned (i.e., did not throw an error) at least one time
     */
@@ -181,8 +240,11 @@ trait Matchers[R, T] extends js.Object {
   def toHaveReturnedTimes(expected: Double): R = js.native
   /**
     * Use to ensure that a mock function returned a specific value.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toHaveReturnedWith(expected: js.Any): R = js.native
+  def toHaveReturnedWith[E](expected: E): R = js.native
   /**
     * Check that a string matches a regular expression.
     */
@@ -253,12 +315,18 @@ trait Matchers[R, T] extends js.Object {
   def toReturnTimes(count: Double): R = js.native
   /**
     * Ensure that a mock function has returned a specified value at least once.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toReturnWith(value: js.Any): R = js.native
+  def toReturnWith[E](value: E): R = js.native
   /**
     * Use to test that objects have the same types as well as structure.
+    *
+    * Optionally, you can provide a type for the expected value via a generic.
+    * This is particuarly useful for ensuring expected objects have the right structure.
     */
-  def toStrictEqual(expected: js.Object): R = js.native
+  def toStrictEqual[E](expected: E): R = js.native
   /**
     * Used to test that a function throws when it is called.
     */

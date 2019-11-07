@@ -9,9 +9,11 @@ import typings.lightpick.lightpickMod.Options.OnErrorFn
 import typings.lightpick.lightpickMod.Options.OnMonthsChangeFn
 import typings.lightpick.lightpickMod.Options.OnOpenFn
 import typings.lightpick.lightpickMod.Options.OnSelectFn
+import typings.lightpick.lightpickMod.Options.OnSelectStartEndFn
 import typings.lightpick.lightpickMod.Options.OnYearsChangeFn
 import typings.lightpick.lightpickMod.Options.Orientation
 import typings.lightpick.lightpickMod.Options.WeekdayStyle
+import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -111,6 +113,14 @@ trait Options_ extends js.Object {
     */
   var onSelect: js.UndefOr[OnSelectFn] = js.undefined
   /**
+    * Triggered when end date has been changed.
+    */
+  var onSelectEnd: js.UndefOr[OnSelectStartEndFn] = js.undefined
+  /**
+    * Triggered when start date has been changed.
+    */
+  var onSelectStart: js.UndefOr[OnSelectStartEndFn] = js.undefined
+  /**
     * Triggered when the years select is changed.
     */
   var onYearsChange: js.UndefOr[OnYearsChangeFn] = js.undefined
@@ -118,7 +128,7 @@ trait Options_ extends js.Object {
   /**
     * Selector of the parent element that the date range picker will be added to, if not provided this will be 'body'.
     */
-  var parentEl: js.UndefOr[String] = js.undefined
+  var parentEl: js.UndefOr[String | Node] = js.undefined
   /**
     * Repick start/end instead of new range. This option working only when exists `secondField`.
     */
@@ -184,9 +194,11 @@ object Options_ {
     onMonthsChange: OnMonthsChangeFn = null,
     onOpen: OnOpenFn = null,
     onSelect: OnSelectFn = null,
+    onSelectEnd: OnSelectStartEndFn = null,
+    onSelectStart: OnSelectStartEndFn = null,
     onYearsChange: OnYearsChangeFn = null,
     orientation: Orientation = null,
-    parentEl: String = null,
+    parentEl: String | Node = null,
     repick: js.UndefOr[Boolean] = js.undefined,
     secondField: Field = null,
     selectBackward: js.UndefOr[Boolean] = js.undefined,
@@ -223,9 +235,11 @@ object Options_ {
     if (onMonthsChange != null) __obj.updateDynamic("onMonthsChange")(onMonthsChange)
     if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onSelectEnd != null) __obj.updateDynamic("onSelectEnd")(onSelectEnd)
+    if (onSelectStart != null) __obj.updateDynamic("onSelectStart")(onSelectStart)
     if (onYearsChange != null) __obj.updateDynamic("onYearsChange")(onYearsChange)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl)
+    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl.asInstanceOf[js.Any])
     if (!js.isUndefined(repick)) __obj.updateDynamic("repick")(repick)
     if (secondField != null) __obj.updateDynamic("secondField")(secondField)
     if (!js.isUndefined(selectBackward)) __obj.updateDynamic("selectBackward")(selectBackward)

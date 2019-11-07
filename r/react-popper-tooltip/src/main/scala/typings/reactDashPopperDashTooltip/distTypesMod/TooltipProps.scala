@@ -4,8 +4,6 @@ import typings.popperDotJs.popperDotJsMod.Popper.Placement
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import typings.reactDashPopper.reactDashPopperMod.PopperArrowProps
-import typings.reactDashPopper.reactDashPopperMod.RefHandler
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait TooltipProps extends js.Object {
   var arrowProps: PopperArrowProps
   var closeOnOutOfBoundaries: Boolean
-  var innerRef: RefHandler
+  var innerRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
   var outOfBoundaries: Boolean | Null
   var placement: Placement
   var style: CSSProperties
@@ -31,7 +29,7 @@ object TooltipProps {
     clearScheduled: () => Unit,
     closeOnOutOfBoundaries: Boolean,
     hideTooltip: () => Unit,
-    innerRef: /* ref */ HTMLElement | Null => Unit,
+    innerRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any,
     placement: Placement,
     scheduleUpdate: () => Unit,
     style: CSSProperties,
@@ -39,7 +37,7 @@ object TooltipProps {
     trigger: TriggerTypes,
     outOfBoundaries: js.UndefOr[Boolean] = js.undefined
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal(arrowProps = arrowProps, clearScheduled = js.Any.fromFunction0(clearScheduled), closeOnOutOfBoundaries = closeOnOutOfBoundaries, hideTooltip = js.Any.fromFunction0(hideTooltip), innerRef = js.Any.fromFunction1(innerRef), placement = placement, scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), style = style, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger)
+    val __obj = js.Dynamic.literal(arrowProps = arrowProps, clearScheduled = js.Any.fromFunction0(clearScheduled), closeOnOutOfBoundaries = closeOnOutOfBoundaries, hideTooltip = js.Any.fromFunction0(hideTooltip), innerRef = innerRef, placement = placement, scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), style = style, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger)
     if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
     __obj.asInstanceOf[TooltipProps]
   }

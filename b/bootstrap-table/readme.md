@@ -1,7 +1,7 @@
 
 # Scala.js typings for bootstrap-table
 
-Typings are for version v1.11.0
+Typings are for version 1.15.5
 
 ## Library description:
 An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features. (supports twitter bootstrap v2 and v3).
@@ -24,7 +24,7 @@ An extended Bootstrap table with radio, checkbox, sort, pagination, and other ad
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

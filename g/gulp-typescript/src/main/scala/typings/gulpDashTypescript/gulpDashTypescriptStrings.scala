@@ -9,7 +9,7 @@ object gulpDashTypescriptStrings {
   sealed trait `0DOT8` extends js.Object
   
   @js.native
-  sealed trait `3DOT6` extends js.Object
+  sealed trait `3DOT7` extends js.Object
   
   @js.native
   sealed trait JS extends js.Object
@@ -20,7 +20,7 @@ object gulpDashTypescriptStrings {
   @scala.inline
   def `0DOT8`: `0DOT8` = "0.8".asInstanceOf[`0DOT8`]
   @scala.inline
-  def `3DOT6`: `3DOT6` = "3.6".asInstanceOf[`3DOT6`]
+  def `3DOT7`: `3DOT7` = "3.7".asInstanceOf[`3DOT7`]
   @scala.inline
   def JS: JS = "js".asInstanceOf[JS]
   @scala.inline

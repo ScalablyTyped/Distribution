@@ -19,6 +19,7 @@ trait MUIDataTableColumnOptions extends js.Object {
       String | ReactNode
     ]
   ] = js.undefined
+  var customFilterListRender: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.undefined
   var customHeadRender: js.UndefOr[
     js.Function2[
       /* columnMeta */ MUIDataTableCustomHeadRenderer, 
@@ -32,6 +33,7 @@ trait MUIDataTableColumnOptions extends js.Object {
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterList: js.UndefOr[js.Array[String]] = js.undefined
   var filterOptions: js.UndefOr[MUIDataTableFilterOptions] = js.undefined
+  var filterType: js.UndefOr[FilterType] = js.undefined
   var hint: js.UndefOr[String] = js.undefined
   var print: js.UndefOr[Boolean] = js.undefined
   var searchable: js.UndefOr[Boolean] = js.undefined
@@ -47,6 +49,7 @@ object MUIDataTableColumnOptions {
   @scala.inline
   def apply(
     customBodyRender: (/* value */ js.Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function3[/* s */ js.Any, /* c */ js.Any, /* p */ js.Any, _]) => String | ReactNode = null,
+    customFilterListRender: /* value */ js.Any => String = null,
     customHeadRender: (/* columnMeta */ MUIDataTableCustomHeadRenderer, /* updateDirection */ js.Function1[/* params */ js.Any, _]) => String | ReactNode = null,
     display: `true` | `false` | excluded = null,
     download: js.UndefOr[Boolean] = js.undefined,
@@ -54,6 +57,7 @@ object MUIDataTableColumnOptions {
     filter: js.UndefOr[Boolean] = js.undefined,
     filterList: js.Array[String] = null,
     filterOptions: MUIDataTableFilterOptions = null,
+    filterType: FilterType = null,
     hint: String = null,
     print: js.UndefOr[Boolean] = js.undefined,
     searchable: js.UndefOr[Boolean] = js.undefined,
@@ -64,6 +68,7 @@ object MUIDataTableColumnOptions {
   ): MUIDataTableColumnOptions = {
     val __obj = js.Dynamic.literal()
     if (customBodyRender != null) __obj.updateDynamic("customBodyRender")(js.Any.fromFunction3(customBodyRender))
+    if (customFilterListRender != null) __obj.updateDynamic("customFilterListRender")(js.Any.fromFunction1(customFilterListRender))
     if (customHeadRender != null) __obj.updateDynamic("customHeadRender")(js.Any.fromFunction2(customHeadRender))
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
@@ -71,6 +76,7 @@ object MUIDataTableColumnOptions {
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
     if (filterList != null) __obj.updateDynamic("filterList")(filterList)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
     if (hint != null) __obj.updateDynamic("hint")(hint)
     if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)
     if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable)

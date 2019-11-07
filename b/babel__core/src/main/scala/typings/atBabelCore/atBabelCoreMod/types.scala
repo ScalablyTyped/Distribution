@@ -120,6 +120,15 @@ import typings.atBabelTypes.atBabelTypesMod.DoExpression
 import typings.atBabelTypes.atBabelTypesMod.DoWhileStatement
 import typings.atBabelTypes.atBabelTypesMod.EmptyStatement
 import typings.atBabelTypes.atBabelTypesMod.EmptyTypeAnnotation
+import typings.atBabelTypes.atBabelTypesMod.EnumBooleanBody
+import typings.atBabelTypes.atBabelTypesMod.EnumBooleanMember
+import typings.atBabelTypes.atBabelTypesMod.EnumDeclaration
+import typings.atBabelTypes.atBabelTypesMod.EnumDefaultedMember
+import typings.atBabelTypes.atBabelTypesMod.EnumNumberBody
+import typings.atBabelTypes.atBabelTypesMod.EnumNumberMember
+import typings.atBabelTypes.atBabelTypesMod.EnumStringBody
+import typings.atBabelTypes.atBabelTypesMod.EnumStringMember
+import typings.atBabelTypes.atBabelTypesMod.EnumSymbolBody
 import typings.atBabelTypes.atBabelTypesMod.ExistsTypeAnnotation
 import typings.atBabelTypes.atBabelTypesMod.ExportAllDeclaration
 import typings.atBabelTypes.atBabelTypesMod.ExportDefaultDeclaration
@@ -1186,6 +1195,7 @@ object types extends js.Object {
     _static: js.UndefOr[Boolean],
     `abstract`: js.UndefOr[Boolean | Null],
     accessibility: js.UndefOr[public | `private` | `protected` | Null],
+    declare: js.UndefOr[Boolean | Null],
     definite: js.UndefOr[Boolean | Null],
     optional: js.UndefOr[Boolean | Null],
     readonly: js.UndefOr[Boolean | Null]
@@ -1670,6 +1680,22 @@ object types extends js.Object {
     ],
     key: K
   ): BlockStatement = js.native
+  def enumBooleanBody(members: js.Array[EnumBooleanMember]): EnumBooleanBody = js.native
+  def enumBooleanBody(members: js.Array[EnumBooleanMember], explicit: Boolean): EnumBooleanBody = js.native
+  def enumBooleanMember(id: Identifier): EnumBooleanMember = js.native
+  def enumBooleanMember(id: Identifier, init: BooleanLiteral): EnumBooleanMember = js.native
+  def enumDeclaration(id: Identifier, body: EnumBooleanBody): EnumDeclaration = js.native
+  def enumDeclaration(id: Identifier, body: EnumNumberBody): EnumDeclaration = js.native
+  def enumDeclaration(id: Identifier, body: EnumStringBody): EnumDeclaration = js.native
+  def enumDeclaration(id: Identifier, body: EnumSymbolBody): EnumDeclaration = js.native
+  def enumDefaultedMember(id: Identifier): EnumDefaultedMember = js.native
+  def enumNumberBody(members: js.Array[EnumNumberMember]): EnumNumberBody = js.native
+  def enumNumberBody(members: js.Array[EnumNumberMember], explicit: Boolean): EnumNumberBody = js.native
+  def enumNumberMember(id: Identifier, init: NumericLiteral): EnumNumberMember = js.native
+  def enumStringBody(members: js.Array[EnumStringMember | EnumDefaultedMember]): EnumStringBody = js.native
+  def enumStringBody(members: js.Array[EnumStringMember | EnumDefaultedMember], explicit: Boolean): EnumStringBody = js.native
+  def enumStringMember(id: Identifier, init: StringLiteral): EnumStringMember = js.native
+  def enumSymbolBody(members: js.Array[EnumDefaultedMember]): EnumSymbolBody = js.native
   def existsTypeAnnotation(): ExistsTypeAnnotation = js.native
   def exportAllDeclaration(source: StringLiteral): ExportAllDeclaration = js.native
   def exportDefaultDeclaration(declaration: ClassDeclaration): ExportDefaultDeclaration = js.native
@@ -2726,6 +2752,61 @@ object types extends js.Object {
   def isEmptyTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.EmptyTypeAnnotation */ Boolean = js.native
   def isEmptyTypeAnnotation(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EmptyTypeAnnotation */ Boolean = js.native
   def isEmptyTypeAnnotation(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EmptyTypeAnnotation */ Boolean = js.native
+  def isEnumBody(): /* is @babel/types.@babel/types.EnumBody */ Boolean = js.native
+  def isEnumBody(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumBody */ Boolean = js.native
+  def isEnumBody(node: js.Object): /* is @babel/types.@babel/types.EnumBody */ Boolean = js.native
+  def isEnumBody(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumBody */ Boolean = js.native
+  def isEnumBody(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumBody */ Boolean = js.native
+  def isEnumBooleanBody(): /* is @babel/types.@babel/types.EnumBooleanBody */ Boolean = js.native
+  def isEnumBooleanBody(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumBooleanBody */ Boolean = js.native
+  def isEnumBooleanBody(node: js.Object): /* is @babel/types.@babel/types.EnumBooleanBody */ Boolean = js.native
+  def isEnumBooleanBody(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumBooleanBody */ Boolean = js.native
+  def isEnumBooleanBody(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumBooleanBody */ Boolean = js.native
+  def isEnumBooleanMember(): /* is @babel/types.@babel/types.EnumBooleanMember */ Boolean = js.native
+  def isEnumBooleanMember(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumBooleanMember */ Boolean = js.native
+  def isEnumBooleanMember(node: js.Object): /* is @babel/types.@babel/types.EnumBooleanMember */ Boolean = js.native
+  def isEnumBooleanMember(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumBooleanMember */ Boolean = js.native
+  def isEnumBooleanMember(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumBooleanMember */ Boolean = js.native
+  def isEnumDeclaration(): /* is @babel/types.@babel/types.EnumDeclaration */ Boolean = js.native
+  def isEnumDeclaration(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumDeclaration */ Boolean = js.native
+  def isEnumDeclaration(node: js.Object): /* is @babel/types.@babel/types.EnumDeclaration */ Boolean = js.native
+  def isEnumDeclaration(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumDeclaration */ Boolean = js.native
+  def isEnumDeclaration(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumDeclaration */ Boolean = js.native
+  def isEnumDefaultedMember(): /* is @babel/types.@babel/types.EnumDefaultedMember */ Boolean = js.native
+  def isEnumDefaultedMember(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumDefaultedMember */ Boolean = js.native
+  def isEnumDefaultedMember(node: js.Object): /* is @babel/types.@babel/types.EnumDefaultedMember */ Boolean = js.native
+  def isEnumDefaultedMember(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumDefaultedMember */ Boolean = js.native
+  def isEnumDefaultedMember(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumDefaultedMember */ Boolean = js.native
+  def isEnumMember(): /* is @babel/types.@babel/types.EnumMember */ Boolean = js.native
+  def isEnumMember(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumMember */ Boolean = js.native
+  def isEnumMember(node: js.Object): /* is @babel/types.@babel/types.EnumMember */ Boolean = js.native
+  def isEnumMember(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumMember */ Boolean = js.native
+  def isEnumMember(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumMember */ Boolean = js.native
+  def isEnumNumberBody(): /* is @babel/types.@babel/types.EnumNumberBody */ Boolean = js.native
+  def isEnumNumberBody(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumNumberBody */ Boolean = js.native
+  def isEnumNumberBody(node: js.Object): /* is @babel/types.@babel/types.EnumNumberBody */ Boolean = js.native
+  def isEnumNumberBody(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumNumberBody */ Boolean = js.native
+  def isEnumNumberBody(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumNumberBody */ Boolean = js.native
+  def isEnumNumberMember(): /* is @babel/types.@babel/types.EnumNumberMember */ Boolean = js.native
+  def isEnumNumberMember(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumNumberMember */ Boolean = js.native
+  def isEnumNumberMember(node: js.Object): /* is @babel/types.@babel/types.EnumNumberMember */ Boolean = js.native
+  def isEnumNumberMember(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumNumberMember */ Boolean = js.native
+  def isEnumNumberMember(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumNumberMember */ Boolean = js.native
+  def isEnumStringBody(): /* is @babel/types.@babel/types.EnumStringBody */ Boolean = js.native
+  def isEnumStringBody(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumStringBody */ Boolean = js.native
+  def isEnumStringBody(node: js.Object): /* is @babel/types.@babel/types.EnumStringBody */ Boolean = js.native
+  def isEnumStringBody(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumStringBody */ Boolean = js.native
+  def isEnumStringBody(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumStringBody */ Boolean = js.native
+  def isEnumStringMember(): /* is @babel/types.@babel/types.EnumStringMember */ Boolean = js.native
+  def isEnumStringMember(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumStringMember */ Boolean = js.native
+  def isEnumStringMember(node: js.Object): /* is @babel/types.@babel/types.EnumStringMember */ Boolean = js.native
+  def isEnumStringMember(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumStringMember */ Boolean = js.native
+  def isEnumStringMember(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumStringMember */ Boolean = js.native
+  def isEnumSymbolBody(): /* is @babel/types.@babel/types.EnumSymbolBody */ Boolean = js.native
+  def isEnumSymbolBody(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.EnumSymbolBody */ Boolean = js.native
+  def isEnumSymbolBody(node: js.Object): /* is @babel/types.@babel/types.EnumSymbolBody */ Boolean = js.native
+  def isEnumSymbolBody(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.EnumSymbolBody */ Boolean = js.native
+  def isEnumSymbolBody(node: Null, opts: js.Object): /* is @babel/types.@babel/types.EnumSymbolBody */ Boolean = js.native
   def isExistsTypeAnnotation(): /* is @babel/types.@babel/types.ExistsTypeAnnotation */ Boolean = js.native
   def isExistsTypeAnnotation(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.ExistsTypeAnnotation */ Boolean = js.native
   def isExistsTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.ExistsTypeAnnotation */ Boolean = js.native
@@ -5180,8 +5261,12 @@ object types extends js.Object {
   def tsTypeParameter(constraint: TSType, _default: TSType, name: String): TSTypeParameter = js.native
   def tsTypeParameterDeclaration(params: js.Array[TSTypeParameter]): TSTypeParameterDeclaration = js.native
   def tsTypeParameterInstantiation(params: js.Array[TSType]): TSTypeParameterInstantiation = js.native
-  def tsTypePredicate(parameterName: Identifier, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
-  def tsTypePredicate(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: Identifier, typeAnnotation: js.UndefOr[scala.Nothing], asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: Identifier, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: Identifier, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: TSThisType, typeAnnotation: js.UndefOr[scala.Nothing], asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: TSThisType, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = js.native
   def tsTypeQuery(exprName: TSEntityName): TSTypeQuery = js.native
   def tsTypeQuery(exprName: TSImportType): TSTypeQuery = js.native
   def tsTypeReference(typeName: TSEntityName): TSTypeReference = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cucumber
 
-Typings are for version 4.0
+Typings are for version 6.0
 
 ## Library description:
 The official JavaScript implementation of Cucumber.

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-json-pretty" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-json-pretty" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

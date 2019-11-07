@@ -22,11 +22,11 @@ object defineDashPropertiesMod extends js.Object {
     * @param map The map of newly defined properties.
     * @param predicates The optional predicates map, return `true` to override existing properties on `object`.
     */
-  def apply[K /* <: String */](`object`: js.Object, map: (Record[K, _]) with ThisType[_]): Unit = js.native
-  def apply[K /* <: String */](
+  def apply[M /* <: js.Object */](`object`: js.Object, map: M with ThisType[_]): Unit = js.native
+  def apply[M /* <: js.Object */](
     `object`: js.Object,
-    map: (Record[K, _]) with ThisType[_],
-    predicates: Partial[Record[K, js.Function0[Boolean]]]
+    map: M with ThisType[_],
+    predicates: Partial[Record[String, js.Function0[Boolean]]]
   ): Unit = js.native
 }
 

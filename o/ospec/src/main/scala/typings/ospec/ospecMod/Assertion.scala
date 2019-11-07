@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Assertion[T] extends js.Object {
   /** Asserts that two objects are recursively equal */
-  def deepEquals(`this`: Assertion[js.Object], expected: T): AssertionDescriber = js.native
+  def deepEquals(expected: T): AssertionDescriber = js.native
   /** Asserts that two objects are **not** recursively equal */
-  def notDeepEquals(`this`: Assertion[js.Object], value: T): AssertionDescriber = js.native
+  def notDeepEquals(value: T): AssertionDescriber = js.native
   /** Asserts that two values are **not** strictly equal */
   def notEquals(value: T): AssertionDescriber = js.native
   /** Asserts that the function does **not** throw an error of given type */

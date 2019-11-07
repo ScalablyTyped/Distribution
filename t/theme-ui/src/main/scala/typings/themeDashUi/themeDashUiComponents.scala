@@ -13,7 +13,9 @@ object themeDashUiComponents extends themeDashUiProps {
   ] = js.constructorOf[typings.themeDashUi.themeDashUiMod.Box].asInstanceOf[typings.react.reactMod.ComponentType[
   (/* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with typings.themeDashUi.themeDashUiMod.SxProps with typings.themeDashUi.Anon_As]]
   @scala.inline
-  def ColorMode: ComponentType[js.Object] = js.constructorOf[typings.themeDashUi.themeDashUiMod.ColorMode].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  def ColorMode: ComponentType[js.Object] = typings.themeDashUi.themeDashUiMod.ColorMode.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
+  def ColorModeCls: ComponentType[js.Object] = js.constructorOf[typings.themeDashUi.themeDashUiMod.ColorModeCls].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def Container: ComponentType[
     (/* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements['div'] */ js.Any) with SxProps with Anon_As

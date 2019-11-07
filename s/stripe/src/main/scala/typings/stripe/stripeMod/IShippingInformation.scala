@@ -12,7 +12,7 @@ trait IShippingInformation extends js.Object {
   /**
     * The delivery service that shipped a physical product, such as Fedex, UPS, USPS, etc.
     */
-  var carrier: js.UndefOr[String] = js.undefined
+  var carrier: js.UndefOr[String | Null] = js.undefined
   /**
     * Recipient name.
     */
@@ -20,12 +20,12 @@ trait IShippingInformation extends js.Object {
   /**
     * Recipient phone (including extension).
     */
-  var phone: js.UndefOr[String] = js.undefined
+  var phone: js.UndefOr[String | Null] = js.undefined
   /**
     * The tracking number for a physical product, obtained from the delivery service. If multiple
     * tracking numbers were generated for this purchase, please separate them with commas.
     */
-  var tracking_number: js.UndefOr[String] = js.undefined
+  var tracking_number: js.UndefOr[String | Null] = js.undefined
 }
 
 object IShippingInformation {

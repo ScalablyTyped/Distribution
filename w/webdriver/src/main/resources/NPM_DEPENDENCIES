@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webdriver" : "5.15.6"
+      "webdriver" : "5.16.2"
     }
   ],
   "test-dependencies" : [
     {
-      "webdriver" : "5.15.6"
+      "webdriver" : "5.16.2"
     }
   ],
   "compile-devDependencies" : [

@@ -13,6 +13,7 @@ trait OutboundMessage extends js.Object {
   var Cc: js.Array[Recipient]
   var From: String
   var MessageID: String
+  var MessageStream: String
   var Metadata: Hash[String]
   var ReceivedAt: String
   var Recipients: js.Array[String]
@@ -32,6 +33,7 @@ object OutboundMessage {
     Cc: js.Array[Recipient],
     From: String,
     MessageID: String,
+    MessageStream: String,
     Metadata: Hash[String],
     ReceivedAt: String,
     Recipients: js.Array[String],
@@ -42,7 +44,7 @@ object OutboundMessage {
     TrackOpens: Boolean,
     Tag: String = null
   ): OutboundMessage = {
-    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, Cc = Cc, From = From, MessageID = MessageID, Metadata = Metadata, ReceivedAt = ReceivedAt, Recipients = Recipients, Status = Status, Subject = Subject, To = To, TrackLinks = TrackLinks, TrackOpens = TrackOpens)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, Cc = Cc, From = From, MessageID = MessageID, MessageStream = MessageStream, Metadata = Metadata, ReceivedAt = ReceivedAt, Recipients = Recipients, Status = Status, Subject = Subject, To = To, TrackLinks = TrackLinks, TrackOpens = TrackOpens)
     if (Tag != null) __obj.updateDynamic("Tag")(Tag)
     __obj.asInstanceOf[OutboundMessage]
   }

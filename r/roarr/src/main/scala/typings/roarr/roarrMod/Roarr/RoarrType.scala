@@ -21,7 +21,7 @@ trait RoarrType extends js.Object {
   /**
   		 * Creates a child logger appending the provided context object to the previous logger context.
   		 *
-  		 * @param context
+  		 * @param contextOrFunction
   		 * @example
   		 * import Roarr from 'roarr';
   		 *
@@ -32,7 +32,8 @@ trait RoarrType extends js.Object {
   		 *
   		 * @see https://www.npmjs.com/package/roarr#child
   		 */
-  def child(context: MessageContextType): RoarrType = js.native
+  def child(contextOrFunction: MessageContextType): RoarrType = js.native
+  def child(contextOrFunction: TranslateMessageFunctionType): RoarrType = js.native
   /**
   		 * Convenience method for logging a message with logLevel context property value set to 20 (LogLevel.Debug)
   		 *

@@ -85,7 +85,34 @@ object sortablejsStrings {
   sealed trait baselineShift extends js.Object
   
   @js.native
+  sealed trait blockSize extends js.Object
+  
+  @js.native
   sealed trait border extends js.Object
+  
+  @js.native
+  sealed trait borderBlockEnd extends js.Object
+  
+  @js.native
+  sealed trait borderBlockEndColor extends js.Object
+  
+  @js.native
+  sealed trait borderBlockEndStyle extends js.Object
+  
+  @js.native
+  sealed trait borderBlockEndWidth extends js.Object
+  
+  @js.native
+  sealed trait borderBlockStart extends js.Object
+  
+  @js.native
+  sealed trait borderBlockStartColor extends js.Object
+  
+  @js.native
+  sealed trait borderBlockStartStyle extends js.Object
+  
+  @js.native
+  sealed trait borderBlockStartWidth extends js.Object
   
   @js.native
   sealed trait borderBottom extends js.Object
@@ -128,6 +155,30 @@ object sortablejsStrings {
   
   @js.native
   sealed trait borderImageWidth extends js.Object
+  
+  @js.native
+  sealed trait borderInlineEnd extends js.Object
+  
+  @js.native
+  sealed trait borderInlineEndColor extends js.Object
+  
+  @js.native
+  sealed trait borderInlineEndStyle extends js.Object
+  
+  @js.native
+  sealed trait borderInlineEndWidth extends js.Object
+  
+  @js.native
+  sealed trait borderInlineStart extends js.Object
+  
+  @js.native
+  sealed trait borderInlineStartColor extends js.Object
+  
+  @js.native
+  sealed trait borderInlineStartStyle extends js.Object
+  
+  @js.native
+  sealed trait borderInlineStartWidth extends js.Object
   
   @js.native
   sealed trait borderLeft extends js.Object
@@ -230,6 +281,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait color extends js.Object
+  
+  @js.native
+  sealed trait colorInterpolation extends js.Object
   
   @js.native
   sealed trait colorInterpolationFilters extends js.Object
@@ -374,6 +428,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait flexWrap extends js.Object
+  
+  @js.native
+  sealed trait float extends js.Object
   
   @js.native
   sealed trait floodColor extends js.Object
@@ -526,6 +583,9 @@ object sortablejsStrings {
   sealed trait imeMode extends js.Object
   
   @js.native
+  sealed trait inlineSize extends js.Object
+  
+  @js.native
   sealed trait invertSwap extends js.Object
   
   @js.native
@@ -592,7 +652,19 @@ object sortablejsStrings {
   sealed trait margin extends js.Object
   
   @js.native
+  sealed trait marginBlockEnd extends js.Object
+  
+  @js.native
+  sealed trait marginBlockStart extends js.Object
+  
+  @js.native
   sealed trait marginBottom extends js.Object
+  
+  @js.native
+  sealed trait marginInlineEnd extends js.Object
+  
+  @js.native
+  sealed trait marginInlineStart extends js.Object
   
   @js.native
   sealed trait marginLeft extends js.Object
@@ -637,13 +709,25 @@ object sortablejsStrings {
   sealed trait maskType extends js.Object
   
   @js.native
+  sealed trait maxBlockSize extends js.Object
+  
+  @js.native
   sealed trait maxHeight extends js.Object
+  
+  @js.native
+  sealed trait maxInlineSize extends js.Object
   
   @js.native
   sealed trait maxWidth extends js.Object
   
   @js.native
+  sealed trait minBlockSize extends js.Object
+  
+  @js.native
   sealed trait minHeight extends js.Object
+  
+  @js.native
+  sealed trait minInlineSize extends js.Object
   
   @js.native
   sealed trait minWidth extends js.Object
@@ -844,7 +928,19 @@ object sortablejsStrings {
   sealed trait padding extends js.Object
   
   @js.native
+  sealed trait paddingBlockEnd extends js.Object
+  
+  @js.native
+  sealed trait paddingBlockStart extends js.Object
+  
+  @js.native
   sealed trait paddingBottom extends js.Object
+  
+  @js.native
+  sealed trait paddingInlineEnd extends js.Object
+  
+  @js.native
+  sealed trait paddingInlineStart extends js.Object
   
   @js.native
   sealed trait paddingLeft extends js.Object
@@ -863,6 +959,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait pageBreakInside extends js.Object
+  
+  @js.native
+  sealed trait paintOrder extends js.Object
   
   @js.native
   sealed trait parentRule extends js.Object
@@ -944,6 +1043,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait selectedClass extends js.Object
+  
+  @js.native
+  sealed trait shapeRendering extends js.Object
   
   @js.native
   sealed trait sort extends js.Object
@@ -1049,6 +1151,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait textOverflow extends js.Object
+  
+  @js.native
+  sealed trait textRendering extends js.Object
   
   @js.native
   sealed trait textShadow extends js.Object
@@ -1457,7 +1562,25 @@ object sortablejsStrings {
   @scala.inline
   def baselineShift: baselineShift = "baselineShift".asInstanceOf[baselineShift]
   @scala.inline
+  def blockSize: blockSize = "blockSize".asInstanceOf[blockSize]
+  @scala.inline
   def border: border = "border".asInstanceOf[border]
+  @scala.inline
+  def borderBlockEnd: borderBlockEnd = "borderBlockEnd".asInstanceOf[borderBlockEnd]
+  @scala.inline
+  def borderBlockEndColor: borderBlockEndColor = "borderBlockEndColor".asInstanceOf[borderBlockEndColor]
+  @scala.inline
+  def borderBlockEndStyle: borderBlockEndStyle = "borderBlockEndStyle".asInstanceOf[borderBlockEndStyle]
+  @scala.inline
+  def borderBlockEndWidth: borderBlockEndWidth = "borderBlockEndWidth".asInstanceOf[borderBlockEndWidth]
+  @scala.inline
+  def borderBlockStart: borderBlockStart = "borderBlockStart".asInstanceOf[borderBlockStart]
+  @scala.inline
+  def borderBlockStartColor: borderBlockStartColor = "borderBlockStartColor".asInstanceOf[borderBlockStartColor]
+  @scala.inline
+  def borderBlockStartStyle: borderBlockStartStyle = "borderBlockStartStyle".asInstanceOf[borderBlockStartStyle]
+  @scala.inline
+  def borderBlockStartWidth: borderBlockStartWidth = "borderBlockStartWidth".asInstanceOf[borderBlockStartWidth]
   @scala.inline
   def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
   @scala.inline
@@ -1486,6 +1609,22 @@ object sortablejsStrings {
   def borderImageSource: borderImageSource = "borderImageSource".asInstanceOf[borderImageSource]
   @scala.inline
   def borderImageWidth: borderImageWidth = "borderImageWidth".asInstanceOf[borderImageWidth]
+  @scala.inline
+  def borderInlineEnd: borderInlineEnd = "borderInlineEnd".asInstanceOf[borderInlineEnd]
+  @scala.inline
+  def borderInlineEndColor: borderInlineEndColor = "borderInlineEndColor".asInstanceOf[borderInlineEndColor]
+  @scala.inline
+  def borderInlineEndStyle: borderInlineEndStyle = "borderInlineEndStyle".asInstanceOf[borderInlineEndStyle]
+  @scala.inline
+  def borderInlineEndWidth: borderInlineEndWidth = "borderInlineEndWidth".asInstanceOf[borderInlineEndWidth]
+  @scala.inline
+  def borderInlineStart: borderInlineStart = "borderInlineStart".asInstanceOf[borderInlineStart]
+  @scala.inline
+  def borderInlineStartColor: borderInlineStartColor = "borderInlineStartColor".asInstanceOf[borderInlineStartColor]
+  @scala.inline
+  def borderInlineStartStyle: borderInlineStartStyle = "borderInlineStartStyle".asInstanceOf[borderInlineStartStyle]
+  @scala.inline
+  def borderInlineStartWidth: borderInlineStartWidth = "borderInlineStartWidth".asInstanceOf[borderInlineStartWidth]
   @scala.inline
   def borderLeft: borderLeft = "borderLeft".asInstanceOf[borderLeft]
   @scala.inline
@@ -1552,6 +1691,8 @@ object sortablejsStrings {
   def clipRule: clipRule = "clipRule".asInstanceOf[clipRule]
   @scala.inline
   def color: color = "color".asInstanceOf[color]
+  @scala.inline
+  def colorInterpolation: colorInterpolation = "colorInterpolation".asInstanceOf[colorInterpolation]
   @scala.inline
   def colorInterpolationFilters: colorInterpolationFilters = "colorInterpolationFilters".asInstanceOf[colorInterpolationFilters]
   @scala.inline
@@ -1648,6 +1789,8 @@ object sortablejsStrings {
   def flexShrink: flexShrink = "flexShrink".asInstanceOf[flexShrink]
   @scala.inline
   def flexWrap: flexWrap = "flexWrap".asInstanceOf[flexWrap]
+  @scala.inline
+  def float: float = "float".asInstanceOf[float]
   @scala.inline
   def floodColor: floodColor = "floodColor".asInstanceOf[floodColor]
   @scala.inline
@@ -1749,6 +1892,8 @@ object sortablejsStrings {
   @scala.inline
   def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
   @scala.inline
+  def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
+  @scala.inline
   def invertSwap: invertSwap = "invertSwap".asInstanceOf[invertSwap]
   @scala.inline
   def invertedSwapThreshold: invertedSwapThreshold = "invertedSwapThreshold".asInstanceOf[invertedSwapThreshold]
@@ -1793,7 +1938,15 @@ object sortablejsStrings {
   @scala.inline
   def margin: margin = "margin".asInstanceOf[margin]
   @scala.inline
+  def marginBlockEnd: marginBlockEnd = "marginBlockEnd".asInstanceOf[marginBlockEnd]
+  @scala.inline
+  def marginBlockStart: marginBlockStart = "marginBlockStart".asInstanceOf[marginBlockStart]
+  @scala.inline
   def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
+  @scala.inline
+  def marginInlineEnd: marginInlineEnd = "marginInlineEnd".asInstanceOf[marginInlineEnd]
+  @scala.inline
+  def marginInlineStart: marginInlineStart = "marginInlineStart".asInstanceOf[marginInlineStart]
   @scala.inline
   def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
   @scala.inline
@@ -1823,11 +1976,19 @@ object sortablejsStrings {
   @scala.inline
   def maskType: maskType = "maskType".asInstanceOf[maskType]
   @scala.inline
+  def maxBlockSize: maxBlockSize = "maxBlockSize".asInstanceOf[maxBlockSize]
+  @scala.inline
   def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
+  @scala.inline
+  def maxInlineSize: maxInlineSize = "maxInlineSize".asInstanceOf[maxInlineSize]
   @scala.inline
   def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
   @scala.inline
+  def minBlockSize: minBlockSize = "minBlockSize".asInstanceOf[minBlockSize]
+  @scala.inline
   def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
+  @scala.inline
+  def minInlineSize: minInlineSize = "minInlineSize".asInstanceOf[minInlineSize]
   @scala.inline
   def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
   @scala.inline
@@ -1961,7 +2122,15 @@ object sortablejsStrings {
   @scala.inline
   def padding: padding = "padding".asInstanceOf[padding]
   @scala.inline
+  def paddingBlockEnd: paddingBlockEnd = "paddingBlockEnd".asInstanceOf[paddingBlockEnd]
+  @scala.inline
+  def paddingBlockStart: paddingBlockStart = "paddingBlockStart".asInstanceOf[paddingBlockStart]
+  @scala.inline
   def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
+  @scala.inline
+  def paddingInlineEnd: paddingInlineEnd = "paddingInlineEnd".asInstanceOf[paddingInlineEnd]
+  @scala.inline
+  def paddingInlineStart: paddingInlineStart = "paddingInlineStart".asInstanceOf[paddingInlineStart]
   @scala.inline
   def paddingLeft: paddingLeft = "paddingLeft".asInstanceOf[paddingLeft]
   @scala.inline
@@ -1974,6 +2143,8 @@ object sortablejsStrings {
   def pageBreakBefore: pageBreakBefore = "pageBreakBefore".asInstanceOf[pageBreakBefore]
   @scala.inline
   def pageBreakInside: pageBreakInside = "pageBreakInside".asInstanceOf[pageBreakInside]
+  @scala.inline
+  def paintOrder: paintOrder = "paintOrder".asInstanceOf[paintOrder]
   @scala.inline
   def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
   @scala.inline
@@ -2028,6 +2199,8 @@ object sortablejsStrings {
   def scrollSpeed: scrollSpeed = "scrollSpeed".asInstanceOf[scrollSpeed]
   @scala.inline
   def selectedClass: selectedClass = "selectedClass".asInstanceOf[selectedClass]
+  @scala.inline
+  def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
   @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   @scala.inline
@@ -2098,6 +2271,8 @@ object sortablejsStrings {
   def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
   @scala.inline
   def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
+  @scala.inline
+  def textRendering: textRendering = "textRendering".asInstanceOf[textRendering]
   @scala.inline
   def textShadow: textShadow = "textShadow".asInstanceOf[textShadow]
   @scala.inline

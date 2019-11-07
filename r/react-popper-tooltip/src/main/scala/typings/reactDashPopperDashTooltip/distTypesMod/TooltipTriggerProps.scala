@@ -3,7 +3,6 @@ package typings.reactDashPopperDashTooltip.distTypesMod
 import typings.popperDotJs.popperDotJsMod.Popper.Modifiers
 import typings.popperDotJs.popperDotJsMod.Popper.Placement
 import typings.react.reactMod.ReactNode
-import typings.reactDashPopper.reactDashPopperMod.RefHandler
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,11 +37,15 @@ trait TooltipTriggerProps extends js.Object {
   /**
     * Function that can be used to obtain a tooltip element reference
     */
-  var getTooltipRef: js.UndefOr[RefHandler] = js.undefined
+  var getTooltipRef: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
+  ] = js.undefined
   /**
     * Function that can be used to obtain a trigger element reference
     */
-  var getTriggerRef: js.UndefOr[RefHandler] = js.undefined
+  var getTriggerRef: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
+  ] = js.undefined
   /**
     * Modifiers passed directly to the underlying popper.js instance
     * For more information, refer to Popper.js’ modifier docs:
@@ -103,14 +106,14 @@ object TooltipTriggerProps {
     tooltip: TooltipArg => ReactNode,
     trigger: TriggerTypes,
     usePortal: Boolean,
-    getTooltipRef: /* ref */ HTMLElement | Null => Unit = null,
-    getTriggerRef: /* ref */ HTMLElement | Null => Unit = null,
+    getTooltipRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
+    getTriggerRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
     modifiers: Modifiers = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined
   ): TooltipTriggerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries, defaultTooltipShown = defaultTooltipShown, delayHide = delayHide, delayShow = delayShow, followCursor = followCursor, onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement, portalContainer = portalContainer, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger, usePortal = usePortal)
-    if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(js.Any.fromFunction1(getTooltipRef))
-    if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(js.Any.fromFunction1(getTriggerRef))
+    if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(getTooltipRef)
+    if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(getTriggerRef)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (!js.isUndefined(tooltipShown)) __obj.updateDynamic("tooltipShown")(tooltipShown)
     __obj.asInstanceOf[TooltipTriggerProps]

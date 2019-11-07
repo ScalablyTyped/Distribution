@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "hystrixjs"
-version := "0.2-dt-20191002Z-d57930"
+version := "0.2-dt-20191002Z-7fca19"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-e078c8",
-  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20190322Z-8159ee",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-bbe0c5",
+  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20190322Z-623e14",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

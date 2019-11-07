@@ -5,26 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GestureRecognizerProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties * / any */ trait GestureRecognizerProps extends js.Object {
   var config: js.UndefOr[GestureRecognizerConfig] = js.undefined
   var onSwipe: js.UndefOr[
-    js.Function2[/* gestureName */ String, /* state */ PanResponderGestureState, Unit]
+    js.Function2[/* gestureName */ String, /* gestureState */ PanResponderGestureState, Unit]
   ] = js.undefined
-  var onSwipeDown: js.UndefOr[js.Function1[/* state */ PanResponderGestureState, Unit]] = js.undefined
-  var onSwipeLeft: js.UndefOr[js.Function1[/* state */ PanResponderGestureState, Unit]] = js.undefined
-  var onSwipeRight: js.UndefOr[js.Function1[/* state */ PanResponderGestureState, Unit]] = js.undefined
-  var onSwipeUp: js.UndefOr[js.Function1[/* state */ PanResponderGestureState, Unit]] = js.undefined
+  var onSwipeDown: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.undefined
+  var onSwipeLeft: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.undefined
+  var onSwipeRight: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.undefined
+  var onSwipeUp: js.UndefOr[js.Function1[/* gestureState */ PanResponderGestureState, Unit]] = js.undefined
 }
 
 object GestureRecognizerProps {
   @scala.inline
   def apply(
     config: GestureRecognizerConfig = null,
-    onSwipe: (/* gestureName */ String, /* state */ PanResponderGestureState) => Unit = null,
-    onSwipeDown: /* state */ PanResponderGestureState => Unit = null,
-    onSwipeLeft: /* state */ PanResponderGestureState => Unit = null,
-    onSwipeRight: /* state */ PanResponderGestureState => Unit = null,
-    onSwipeUp: /* state */ PanResponderGestureState => Unit = null
+    onSwipe: (/* gestureName */ String, /* gestureState */ PanResponderGestureState) => Unit = null,
+    onSwipeDown: /* gestureState */ PanResponderGestureState => Unit = null,
+    onSwipeLeft: /* gestureState */ PanResponderGestureState => Unit = null,
+    onSwipeRight: /* gestureState */ PanResponderGestureState => Unit = null,
+    onSwipeUp: /* gestureState */ PanResponderGestureState => Unit = null
   ): GestureRecognizerProps = {
     val __obj = js.Dynamic.literal()
     if (config != null) __obj.updateDynamic("config")(config)

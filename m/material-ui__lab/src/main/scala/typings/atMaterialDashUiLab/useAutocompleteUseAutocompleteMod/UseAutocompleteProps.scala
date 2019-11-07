@@ -17,7 +17,7 @@ trait UseAutocompleteProps extends js.Object {
   /**
     * If `true`, the first option is automatically highlighted.
     */
-  var autoHightlight: js.UndefOr[Boolean] = js.undefined
+  var autoHighlight: js.UndefOr[Boolean] = js.undefined
   /**
     * If `true`, the selected option becomes the value of the input
     * when the Autocomplete loses focus unless the user chooses
@@ -55,11 +55,11 @@ trait UseAutocompleteProps extends js.Object {
     */
   var disableOpenOnFocus: js.UndefOr[Boolean] = js.undefined
   /**
-    * A filter function that determins the options that are eligible.
+    * A filter function that determines the options that are eligible.
     *
-    * @param {any} options The options to render.
+    * @param {any[]} options The options to render.
     * @param {object} state The state of the component.
-    * @returns {boolean}
+    * @returns {any[]}
     */
   var filterOptions: js.UndefOr[
     js.Function2[/* options */ js.Array[_], /* state */ FilterOptionsState, js.Array[_]]
@@ -145,7 +145,7 @@ object UseAutocompleteProps {
   @scala.inline
   def apply(
     autoComplete: js.UndefOr[Boolean] = js.undefined,
-    autoHightlight: js.UndefOr[Boolean] = js.undefined,
+    autoHighlight: js.UndefOr[Boolean] = js.undefined,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
     clearOnEscape: js.UndefOr[Boolean] = js.undefined,
     debug: js.UndefOr[Boolean] = js.undefined,
@@ -173,7 +173,7 @@ object UseAutocompleteProps {
   ): UseAutocompleteProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete)
-    if (!js.isUndefined(autoHightlight)) __obj.updateDynamic("autoHightlight")(autoHightlight)
+    if (!js.isUndefined(autoHighlight)) __obj.updateDynamic("autoHighlight")(autoHighlight)
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
     if (!js.isUndefined(clearOnEscape)) __obj.updateDynamic("clearOnEscape")(clearOnEscape)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)

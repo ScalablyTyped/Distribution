@@ -13,7 +13,6 @@ trait Options extends js.Object {
   var parsers: js.UndefOr[StringDictionary[Parser]] = js.undefined
   var skipMissing: js.UndefOr[Boolean] = js.undefined
   var specials: js.UndefOr[js.Array[Parser]] = js.undefined
-  var withoutDev: js.UndefOr[Boolean] = js.undefined
 }
 
 object Options {
@@ -25,8 +24,7 @@ object Options {
     ignoreMatches: js.Array[String] = null,
     parsers: StringDictionary[Parser] = null,
     skipMissing: js.UndefOr[Boolean] = js.undefined,
-    specials: js.Array[Parser] = null,
-    withoutDev: js.UndefOr[Boolean] = js.undefined
+    specials: js.Array[Parser] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (detectors != null) __obj.updateDynamic("detectors")(detectors)
@@ -36,7 +34,6 @@ object Options {
     if (parsers != null) __obj.updateDynamic("parsers")(parsers)
     if (!js.isUndefined(skipMissing)) __obj.updateDynamic("skipMissing")(skipMissing)
     if (specials != null) __obj.updateDynamic("specials")(specials)
-    if (!js.isUndefined(withoutDev)) __obj.updateDynamic("withoutDev")(withoutDev)
     __obj.asInstanceOf[Options]
   }
 }

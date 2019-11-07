@@ -7,5 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@redux-saga/core/types", "END")
 @js.native
-object END extends TopLevel[END]
+object END
+  extends TopLevel[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EndType */ js.Any
+    ]
 

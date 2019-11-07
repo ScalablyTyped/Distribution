@@ -11,31 +11,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait User extends js.Object {
-  var anonymous: Boolean
-  var app_id: js.UndefOr[String] = js.undefined
-  var avatar: Avatar
+trait User extends BaseUser {
   var companies: Anon_Companies
-  val created_at: Double
-  var custom_attributes: StringDictionary[js.Any]
-  var email: String | Null
-  val id: String
-  var last_request_at: Double | Null
-  var last_seen_ip: String | Null
   var location_data: LocationData | js.Object
-  var name: String | Null
-  var phone: String | Null
-  var pseudonym: String | Null
   var segments: Anon_Segmentlist
-  var session_count: Double
-  var signed_up_at: Double | Null
   var social_profiles: Anon_Socialprofilelist
   var tags: Anon_Taglist
-  var `type`: user | contact
-  var unsubscribed_from_emails: Boolean
-  val updated_at: Double
-  var user_agent_data: String | Null
-  var user_id: String | Null
 }
 
 object User {

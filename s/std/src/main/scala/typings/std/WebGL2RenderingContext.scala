@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WebGL2RenderingContext
-  extends WebGLRenderingContextBase
-     with WebGL2RenderingContextBase
+  extends WebGL2RenderingContextBase
      with WebGL2RenderingContextOverloads
+     with WebGLRenderingContextBase
      with OffscreenRenderingContext
      with RenderingContext
 

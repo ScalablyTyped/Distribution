@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-popper-tooltip"
-version := "2.9.1-19eac0"
+version := "2.9.1-46b191"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-91a4b3",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
-  "org.scalablytyped" %%% "react-popper" % "1.3.4-7d8f80",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-215b0c",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "react-popper" % "1.3.5-f2a47e",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

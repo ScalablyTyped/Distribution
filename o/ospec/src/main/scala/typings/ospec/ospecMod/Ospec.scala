@@ -22,6 +22,8 @@ trait Ospec extends js.Object {
   /** Defines code to be run before each test in a group */
   def beforeEach(teardown: Definer): Unit = js.native
   def `new`(): Ospec = js.native
+  /** Defines a test */
+  def only(name: String, assertions: Definer): Unit = js.native
   /** Default reporter used by `o.run()` */
   def report(results: js.Array[Result]): Double = js.native
   /** Runs the test suite */

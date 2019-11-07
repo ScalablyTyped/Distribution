@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Table extends js.Object {
+trait Table extends _ExportValue {
   val length: Double = js.native
   def get(index: Double): js.Function | Null = js.native
   def grow(delta: Double): Double = js.native

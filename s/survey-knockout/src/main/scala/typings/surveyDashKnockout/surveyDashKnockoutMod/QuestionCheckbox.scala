@@ -10,6 +10,7 @@ class QuestionCheckbox protected () extends QuestionCheckboxModel {
   def this(name: String) = this()
   var koAllSelected: js.Any = js.native
   def getItemClass(item: js.Any): js.Any = js.native
+  def getLabelClass(item: js.Any): js.Any = js.native
   /* protected */ def updateAllSelected(): Unit = js.native
 }
 

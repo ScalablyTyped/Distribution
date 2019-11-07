@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-saga__is
 
-Typings are for version 1.1.0
+Typings are for version 1.1.2
 
 ## Library description:
 Runtime type checking helpers

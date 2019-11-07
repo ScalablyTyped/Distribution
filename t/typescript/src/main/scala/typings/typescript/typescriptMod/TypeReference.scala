@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeReference extends ObjectType {
+  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.undefined
   var target: GenericType
   var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
 }
@@ -40,12 +41,14 @@ object TypeReference {
     target: GenericType,
     aliasSymbol: Symbol = null,
     aliasTypeArguments: js.Array[Type] = null,
+    node: TypeReferenceNode | ArrayTypeNode | TupleTypeNode = null,
     pattern: DestructuringPattern = null,
     typeArguments: js.Array[Type] = null
   ): TypeReference = {
     val __obj = js.Dynamic.literal(flags = flags, getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), objectFlags = objectFlags, symbol = symbol, target = target)
     if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol)
     if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments)
     __obj.asInstanceOf[TypeReference]

@@ -185,11 +185,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Element
   extends ChildNode
-     with ParentNode
-     with NonDocumentTypeChildNode
-     with Slotable
+     with Animatable
      with InnerHTML
-     with Animatable {
+     with NonDocumentTypeChildNode
+     with ParentNode
+     with Slotable {
   val attributes: NamedNodeMap = js.native
   /**
     * Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
@@ -629,8 +629,8 @@ trait Element
   def getAttributeNames(): js.Array[java.lang.String] = js.native
   def getAttributeNode(name: java.lang.String): Attr | Null = js.native
   def getAttributeNodeNS(namespaceURI: java.lang.String, localName: java.lang.String): Attr | Null = js.native
-  def getBoundingClientRect(): ClientRect | DOMRect = js.native
-  def getClientRects(): ClientRectList | DOMRectList = js.native
+  def getBoundingClientRect(): DOMRect = js.native
+  def getClientRects(): DOMRectList = js.native
   /**
     * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
     */

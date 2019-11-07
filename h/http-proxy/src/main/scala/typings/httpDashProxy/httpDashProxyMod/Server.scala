@@ -118,5 +118,12 @@ trait Server extends EventEmitter {
     */
   def ws(req: IncomingMessage, socket: js.Any, head: js.Any): Unit = js.native
   def ws(req: IncomingMessage, socket: js.Any, head: js.Any, options: ServerOptions): Unit = js.native
+  def ws(
+    req: IncomingMessage,
+    socket: js.Any,
+    head: js.Any,
+    options: ServerOptions,
+    callback: ErrorCallback
+  ): Unit = js.native
 }
 

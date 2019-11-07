@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait TextProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
-  var ellipsed: js.UndefOr[Boolean] = js.undefined
+  var ellipsis: js.UndefOr[Boolean] = js.undefined
   var light: js.UndefOr[Boolean] = js.undefined
   var secondary: js.UndefOr[Boolean] = js.undefined
   var showTooltip: js.UndefOr[Boolean] = js.undefined
@@ -20,7 +20,7 @@ object TextProps {
   @scala.inline
   def apply(
     className: String = null,
-    ellipsed: js.UndefOr[Boolean] = js.undefined,
+    ellipsis: js.UndefOr[Boolean] = js.undefined,
     light: js.UndefOr[Boolean] = js.undefined,
     secondary: js.UndefOr[Boolean] = js.undefined,
     showTooltip: js.UndefOr[Boolean] = js.undefined,
@@ -31,7 +31,7 @@ object TextProps {
   ): TextProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(ellipsed)) __obj.updateDynamic("ellipsed")(ellipsed)
+    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis)
     if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)
     if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)
     if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)

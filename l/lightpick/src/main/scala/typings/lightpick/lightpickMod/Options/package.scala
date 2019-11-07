@@ -31,6 +31,10 @@ package object Options {
     */
   type OnSelectFn = js.ThisFunction2[/* this */ Lightpick, /* startDate */ OutputDate, /* endDate */ OutputDate, Unit]
   /**
+    * Callback function for when either a start or an end date is selected.
+    */
+  type OnSelectStartEndFn = js.ThisFunction1[/* this */ Lightpick, /* date */ OutputDate, Unit]
+  /**
     * Callback function for when the years select is changed.
     */
   type OnYearsChangeFn = js.ThisFunction1[/* this */ Lightpick, /* year */ Double, Unit]

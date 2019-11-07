@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "moment-shortformat"
-version := "2.1-dt-20180809Z-b86ccb"
+version := "2.1-dt-20180809Z-6ef21a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "moment" % "2.24.0-3909a2",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "moment" % "2.24.0-122f60",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

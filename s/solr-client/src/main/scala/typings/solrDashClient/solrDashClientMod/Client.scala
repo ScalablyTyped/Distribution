@@ -143,6 +143,7 @@ trait Client extends js.Object {
   def search(query: Query, callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def searchAll(): ClientRequest = js.native
   def searchAll(callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
+  def searchAsync(query: Query): js.Promise[js.Object] = js.native
   def softCommit(): ClientRequest = js.native
   def softCommit(callback: js.Function2[/* err */ Error, /* data */ js.Object, Unit]): ClientRequest = js.native
   def unauth(): Client = js.native

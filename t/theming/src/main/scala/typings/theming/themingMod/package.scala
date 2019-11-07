@@ -5,10 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object themingMod {
-  import typings.std.Record
+  import typings.react.reactMod.ComponentType
+  import typings.theming.Anon_Theme
+  import typings.theming.Anon_ThemeNonNullable
 
-  type Channel = String
-  type ContextWithTheme[C /* <: String */] = Record[C, Broadcast[Theme]]
-  type SubscriptionId = Double
-  type Theme = js.Object | (js.Function1[/* outerTheme */ js.Object, js.Object])
+  type DefaultTheme = js.Object | Null
+  type ThemeProviderFactory[Theme] = ComponentType[ThemeProviderProps[Theme]]
+  type UseThemeFactory[Theme] = js.Function0[Theme]
+  type WithThemeFactory[Theme] = js.Function1[
+    /* comp */ ComponentType[Anon_Theme[Theme]], 
+    ComponentType[Anon_Theme[Theme] with Anon_ThemeNonNullable[Theme]]
+  ]
 }

@@ -5,13 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UploadResult extends js.Object {
-  // The HTTP response body
-  var body: String
   // The HTTP response headers from the server
-  var headers: Headers
-  // The upload job ID, required if one wishes to cancel the upload. See `stopUpload`.
-  var jobId: Double
+  var body: String
   // The HTTP status code
+  var headers: Headers
+  var jobId: Double
+  // The upload job ID, required if one wishes to cancel the upload. See `stopUpload`.
   var statusCode: Double
 }
 

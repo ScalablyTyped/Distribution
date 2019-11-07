@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Global extends js.Object {
+trait Global extends _ExportValue {
   var value: js.Any
 }
 
@@ -14,5 +14,5 @@ trait Global extends js.Object {
 @js.native
 object Global
   extends Instantiable1[/* descriptor */ GlobalDescriptor, Global]
-     with Instantiable2[/* descriptor */ GlobalDescriptor, /* value */ js.Any, Global]
+     with Instantiable2[/* descriptor */ GlobalDescriptor, /* v */ js.Any, Global]
 

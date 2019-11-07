@@ -21,6 +21,7 @@ trait CompilerOptions
   var declarationDir: js.UndefOr[String] = js.undefined
   var declarationMap: js.UndefOr[Boolean] = js.undefined
   var disableSizeLimit: js.UndefOr[Boolean] = js.undefined
+  var disableSourceOfProjectReferenceRedirect: js.UndefOr[Boolean] = js.undefined
   var downlevelIteration: js.UndefOr[Boolean] = js.undefined
   var emitBOM: js.UndefOr[Boolean] = js.undefined
   var emitDeclarationOnly: js.UndefOr[Boolean] = js.undefined
@@ -87,6 +88,7 @@ trait CompilerOptions
   /** Paths used to compute primary types search locations */
   var typeRoots: js.UndefOr[js.Array[String]] = js.undefined
   var types: js.UndefOr[js.Array[String]] = js.undefined
+  var useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
 }
 
 object CompilerOptions {
@@ -107,6 +109,7 @@ object CompilerOptions {
     declarationDir: String = null,
     declarationMap: js.UndefOr[Boolean] = js.undefined,
     disableSizeLimit: js.UndefOr[Boolean] = js.undefined,
+    disableSourceOfProjectReferenceRedirect: js.UndefOr[Boolean] = js.undefined,
     downlevelIteration: js.UndefOr[Boolean] = js.undefined,
     emitBOM: js.UndefOr[Boolean] = js.undefined,
     emitDeclarationOnly: js.UndefOr[Boolean] = js.undefined,
@@ -171,7 +174,8 @@ object CompilerOptions {
     traceResolution: js.UndefOr[Boolean] = js.undefined,
     tsBuildInfoFile: String = null,
     typeRoots: js.Array[String] = null,
-    types: js.Array[String] = null
+    types: js.Array[String] = null,
+    useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
   ): CompilerOptions = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -189,6 +193,7 @@ object CompilerOptions {
     if (declarationDir != null) __obj.updateDynamic("declarationDir")(declarationDir)
     if (!js.isUndefined(declarationMap)) __obj.updateDynamic("declarationMap")(declarationMap)
     if (!js.isUndefined(disableSizeLimit)) __obj.updateDynamic("disableSizeLimit")(disableSizeLimit)
+    if (!js.isUndefined(disableSourceOfProjectReferenceRedirect)) __obj.updateDynamic("disableSourceOfProjectReferenceRedirect")(disableSourceOfProjectReferenceRedirect)
     if (!js.isUndefined(downlevelIteration)) __obj.updateDynamic("downlevelIteration")(downlevelIteration)
     if (!js.isUndefined(emitBOM)) __obj.updateDynamic("emitBOM")(emitBOM)
     if (!js.isUndefined(emitDeclarationOnly)) __obj.updateDynamic("emitDeclarationOnly")(emitDeclarationOnly)
@@ -254,6 +259,7 @@ object CompilerOptions {
     if (tsBuildInfoFile != null) __obj.updateDynamic("tsBuildInfoFile")(tsBuildInfoFile)
     if (typeRoots != null) __obj.updateDynamic("typeRoots")(typeRoots)
     if (types != null) __obj.updateDynamic("types")(types)
+    if (!js.isUndefined(useDefineForClassFields)) __obj.updateDynamic("useDefineForClassFields")(useDefineForClassFields)
     __obj.asInstanceOf[CompilerOptions]
   }
 }

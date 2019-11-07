@@ -23,13 +23,17 @@ class QuestionFileModel protected () extends Question {
     */
   var allowMultiple: Boolean = js.native
   /**
-    * The choose files value button caption for modern theme
+    * The choose files button caption for modern theme.
     */
   val chooseButtonCaption: String = js.native
   /**
-    * The clean files value button caption.
+    * The clean files button caption.
     */
   val cleanButtonCaption: String = js.native
+  /**
+    * The remove all files confirmation message.
+    */
+  val confirmRemoveAllMessage: String = js.native
   var currentState: String = js.native
   /**
     * The image height.
@@ -48,7 +52,11 @@ class QuestionFileModel protected () extends Question {
     */
   var maxSize: Double = js.native
   /**
-    * The no file chosen caption for modern theme
+    * Use this property to setup confirmation to remove file.
+    */
+  var needConfirmRemoveFile: Boolean = js.native
+  /**
+    * The no file chosen caption for modern theme.
     */
   val noFileChosenCaption: String = js.native
   /**
@@ -82,6 +90,10 @@ class QuestionFileModel protected () extends Question {
     */
   def clear(): Unit = js.native
   def clear(doneCallback: js.Function0[Unit]): Unit = js.native
+  /**
+    * The remove file confirmation message.
+    */
+  def getConfirmRemoveMessage(fileName: String): String = js.native
   /**
     * Load multiple files programmatically.
     * @param files

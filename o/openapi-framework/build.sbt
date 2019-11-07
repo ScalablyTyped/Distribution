@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "openapi-framework"
-version := "0.25.0-c350df"
+version := "0.25.0-ed592f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.10.2-04ae0e",
-  "org.scalablytyped" %%% "openapi-default-setter" % "2.1.0-b03a13",
-  "org.scalablytyped" %%% "openapi-request-coercer" % "2.3.0-767217",
-  "org.scalablytyped" %%% "openapi-request-validator" % "4.1.0-964606",
-  "org.scalablytyped" %%% "openapi-response-validator" % "4.0.0-23aca1",
-  "org.scalablytyped" %%% "openapi-security-handler" % "2.0.4-12b6a8",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-9734cb",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
+  "org.scalablytyped" %%% "ajv" % "6.10.2-52b713",
+  "org.scalablytyped" %%% "openapi-default-setter" % "2.1.0-4412ea",
+  "org.scalablytyped" %%% "openapi-request-coercer" % "2.3.0-9a3207",
+  "org.scalablytyped" %%% "openapi-request-validator" % "4.1.0-af956b",
+  "org.scalablytyped" %%% "openapi-response-validator" % "4.0.0-ea86ad",
+  "org.scalablytyped" %%% "openapi-security-handler" % "2.0.4-842a9b",
+  "org.scalablytyped" %%% "openapi-types" % "1.3.5-47c407",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "ts-log" % "2.1.4-8a79a7")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

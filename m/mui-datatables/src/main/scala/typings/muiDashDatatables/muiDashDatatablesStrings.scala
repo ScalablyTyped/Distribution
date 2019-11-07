@@ -17,7 +17,7 @@ object muiDashDatatablesStrings {
   sealed trait checkbox extends FilterType
   
   @js.native
-  sealed trait chip extends FilterType
+  sealed trait chip extends js.Object
   
   @js.native
   sealed trait custom extends FilterType
@@ -44,7 +44,7 @@ object muiDashDatatablesStrings {
   sealed trait none extends SelectableRows
   
   @js.native
-  sealed trait reset extends FilterType
+  sealed trait reset extends js.Object
   
   @js.native
   sealed trait scrollFullHeight extends Responsive

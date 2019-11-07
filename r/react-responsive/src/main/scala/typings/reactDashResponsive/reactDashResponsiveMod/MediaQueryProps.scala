@@ -21,6 +21,7 @@ trait MediaQueryProps
   var children: js.UndefOr[ReactNode | (js.Function1[/* matches */ Boolean, ReactNode])] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var component: js.UndefOr[String | SFC[_] | (ClassType[_, _, _]) | (ComponentClass[_, ComponentState])] = js.undefined
+  var device: js.UndefOr[MediaQueryMatchers] = js.undefined
   var onBeforeChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* matches */ Boolean, Unit]] = js.undefined
   var query: js.UndefOr[String] = js.undefined
@@ -40,6 +41,7 @@ object MediaQueryProps {
     color: js.UndefOr[Boolean] = js.undefined,
     colorIndex: js.UndefOr[Boolean] = js.undefined,
     component: String | SFC[_] | (ClassType[_, _, _]) | (ComponentClass[_, ComponentState]) = null,
+    device: MediaQueryMatchers = null,
     deviceAspectRatio: String = null,
     deviceHeight: Double | String = null,
     deviceWidth: Double | String = null,
@@ -94,6 +96,7 @@ object MediaQueryProps {
     if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(colorIndex)) __obj.updateDynamic("colorIndex")(colorIndex)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device)
     if (deviceAspectRatio != null) __obj.updateDynamic("deviceAspectRatio")(deviceAspectRatio)
     if (deviceHeight != null) __obj.updateDynamic("deviceHeight")(deviceHeight.asInstanceOf[js.Any])
     if (deviceWidth != null) __obj.updateDynamic("deviceWidth")(deviceWidth.asInstanceOf[js.Any])

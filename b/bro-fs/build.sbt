@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "bro-fs"
-version := "0.4-dt-20190326Z-2a44c8"
+version := "0.4-dt-20190326Z-6f6b37"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-c11499",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-dce26a",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-2780ef",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-58b627",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

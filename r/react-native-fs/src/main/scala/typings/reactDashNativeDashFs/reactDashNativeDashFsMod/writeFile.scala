@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object writeFile extends js.Object {
   def apply(filepath: String, contents: String): js.Promise[Unit] = js.native
-  def apply(filepath: String, contents: String, encodingOrOptions: EncodingOrOptions): js.Promise[Unit] = js.native
+  def apply(filepath: String, contents: String, encodingOrOptions: js.Any): js.Promise[Unit] = js.native
 }
 

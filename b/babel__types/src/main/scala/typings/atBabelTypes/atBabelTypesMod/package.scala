@@ -63,6 +63,17 @@ package object atBabelTypesMod {
     - typings.atBabelTypes.atBabelTypesMod.DoWhileStatement
     - typings.atBabelTypes.atBabelTypesMod.EmptyStatement
     - typings.atBabelTypes.atBabelTypesMod.EmptyTypeAnnotation
+    - typings.atBabelTypes.atBabelTypesMod.EnumBody
+    - typings.atBabelTypes.atBabelTypesMod.EnumBooleanBody
+    - typings.atBabelTypes.atBabelTypesMod.EnumBooleanMember
+    - typings.atBabelTypes.atBabelTypesMod.EnumDeclaration
+    - typings.atBabelTypes.atBabelTypesMod.EnumDefaultedMember
+    - typings.atBabelTypes.atBabelTypesMod.EnumMember
+    - typings.atBabelTypes.atBabelTypesMod.EnumNumberBody
+    - typings.atBabelTypes.atBabelTypesMod.EnumNumberMember
+    - typings.atBabelTypes.atBabelTypesMod.EnumStringBody
+    - typings.atBabelTypes.atBabelTypesMod.EnumStringMember
+    - typings.atBabelTypes.atBabelTypesMod.EnumSymbolBody
     - typings.atBabelTypes.atBabelTypesMod.ExistsTypeAnnotation
     - typings.atBabelTypes.atBabelTypesMod.ExportAllDeclaration
     - typings.atBabelTypes.atBabelTypesMod.ExportDeclaration

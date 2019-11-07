@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "bootstrap-table" : "1.15.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "bootstrap-table" : "1.15.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

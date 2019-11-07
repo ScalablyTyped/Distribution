@@ -25,6 +25,7 @@ object OutboundMessageDetails {
     From: String,
     MessageEvents: js.Array[MessageEvent],
     MessageID: String,
+    MessageStream: String,
     Metadata: Hash[String],
     ReceivedAt: String,
     Recipients: js.Array[String],
@@ -37,7 +38,7 @@ object OutboundMessageDetails {
     Tag: String = null,
     TextBody: String = null
   ): OutboundMessageDetails = {
-    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, Body = Body, Cc = Cc, From = From, MessageEvents = MessageEvents, MessageID = MessageID, Metadata = Metadata, ReceivedAt = ReceivedAt, Recipients = Recipients, Status = Status, Subject = Subject, To = To, TrackLinks = TrackLinks, TrackOpens = TrackOpens)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, Body = Body, Cc = Cc, From = From, MessageEvents = MessageEvents, MessageID = MessageID, MessageStream = MessageStream, Metadata = Metadata, ReceivedAt = ReceivedAt, Recipients = Recipients, Status = Status, Subject = Subject, To = To, TrackLinks = TrackLinks, TrackOpens = TrackOpens)
     if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody)
     if (Tag != null) __obj.updateDynamic("Tag")(Tag)
     if (TextBody != null) __obj.updateDynamic("TextBody")(TextBody)

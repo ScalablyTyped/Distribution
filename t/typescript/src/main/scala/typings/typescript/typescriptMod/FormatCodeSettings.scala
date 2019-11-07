@@ -22,6 +22,7 @@ trait FormatCodeSettings extends EditorSettings {
   val insertSpaceBeforeTypeAnnotation: js.UndefOr[Boolean] = js.undefined
   val placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[Boolean] = js.undefined
   val placeOpenBraceOnNewLineForFunctions: js.UndefOr[Boolean] = js.undefined
+  val semicolons: js.UndefOr[SemicolonPreference] = js.undefined
 }
 
 object FormatCodeSettings {
@@ -49,6 +50,7 @@ object FormatCodeSettings {
     newLineCharacter: String = null,
     placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[Boolean] = js.undefined,
     placeOpenBraceOnNewLineForFunctions: js.UndefOr[Boolean] = js.undefined,
+    semicolons: SemicolonPreference = null,
     tabSize: Int | Double = null
   ): FormatCodeSettings = {
     val __obj = js.Dynamic.literal()
@@ -74,6 +76,7 @@ object FormatCodeSettings {
     if (newLineCharacter != null) __obj.updateDynamic("newLineCharacter")(newLineCharacter)
     if (!js.isUndefined(placeOpenBraceOnNewLineForControlBlocks)) __obj.updateDynamic("placeOpenBraceOnNewLineForControlBlocks")(placeOpenBraceOnNewLineForControlBlocks)
     if (!js.isUndefined(placeOpenBraceOnNewLineForFunctions)) __obj.updateDynamic("placeOpenBraceOnNewLineForFunctions")(placeOpenBraceOnNewLineForFunctions)
+    if (semicolons != null) __obj.updateDynamic("semicolons")(semicolons)
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatCodeSettings]
   }

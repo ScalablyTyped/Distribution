@@ -7,6 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScrollspyProps extends js.Object {
+  // ClassName attribute to be passed to the generated <ul /> element
+  var className: js.UndefOr[String] = js.undefined
   // HTML tag for Scrollspy component if you want to use other than ul
   var componentTag: js.UndefOr[String | ComponentType[js.Object]] = js.undefined
   // Class name that apply to the navigation element paired with the content element in viewport
@@ -30,6 +32,7 @@ object ScrollspyProps {
   def apply(
     currentClassName: String,
     items: js.Array[String],
+    className: String = null,
     componentTag: String | ComponentType[js.Object] = null,
     offset: Int | Double = null,
     onUpdate: /* item */ String => Unit = null,
@@ -38,6 +41,7 @@ object ScrollspyProps {
     style: CSSProperties = null
   ): ScrollspyProps = {
     val __obj = js.Dynamic.literal(currentClassName = currentClassName, items = items)
+    if (className != null) __obj.updateDynamic("className")(className)
     if (componentTag != null) __obj.updateDynamic("componentTag")(componentTag.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))

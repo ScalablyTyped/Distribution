@@ -77,6 +77,24 @@ trait MessageRead extends Message {
     */
   var dateTimeModified: Date = js.native
   /**
+    * Gets the date and time that the appointment is to end.
+    *
+    * The end property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. 
+    * You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
+    *
+    * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
+    * the client to UTC for the server.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var end: Date = js.native
+  /**
     * Gets the email address of the sender of a message.
     *
     * The from and sender properties represent the same person unless the message is sent by a delegate. 
@@ -145,13 +163,15 @@ trait MessageRead extends Message {
     */
   var itemClass: String = js.native
   /**
-    * Gets the Exchange Web Services item identifier for the current item.
+    * Gets the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}
+    * for the current item.
     *
     * The itemId property is not available in compose mode. 
     * If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier 
     * in the asyncResult.value parameter in the callback function.
     *
-    * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
+    * **Note**: The identifier returned by the itemId property is the same as the
+    * {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}. 
     * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
     * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
     * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
@@ -165,6 +185,20 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
     */
   var itemId: String = js.native
+  /**
+    * Gets the location of a meeting request.
+    *
+    * The location property returns a string that contains the location of the appointment.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var location: String = js.native
   /**
     * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
     *
@@ -220,6 +254,21 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
     */
   var sender: EmailAddressDetails = js.native
+  /**
+    * Gets the date and time that the appointment is to begin.
+    *
+    * The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. 
+    * You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
+    */
+  var start: Date = js.native
   /**
     * Gets the description that appears in the subject field of an item.
     *

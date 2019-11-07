@@ -28,7 +28,7 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var body: String
+  var body: Body | String
   /**
     * Gets or sets the date and time that the appointment is to end.
     *
@@ -54,7 +54,7 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var end: Date
+  var end: Time | Date
   /**
     * Gets or sets the location of an appointment.
     *
@@ -74,7 +74,7 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var location: String
+  var location: Location | String
   /**
     * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
     *
@@ -164,7 +164,7 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var start: Date
+  var start: Time | Date
   /**
     * Gets or sets the description that appears in the subject field of an item.
     *
@@ -186,22 +186,22 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var subject: String
+  var subject: Subject | String
 }
 
 object AppointmentForm {
   @scala.inline
   def apply(
-    body: String,
-    end: Date,
-    location: String,
+    body: Body | String,
+    end: Time | Date,
+    location: Location | String,
     optionalAttendees: js.Array[EmailAddressDetails | Recipients],
     requiredAttendees: js.Array[EmailAddressDetails | Recipients],
     resources: js.Array[String],
-    start: Date,
-    subject: String
+    start: Time | Date,
+    subject: Subject | String
   ): AppointmentForm = {
-    val __obj = js.Dynamic.literal(body = body, end = end, location = location, optionalAttendees = optionalAttendees, requiredAttendees = requiredAttendees, resources = resources, start = start, subject = subject)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], optionalAttendees = optionalAttendees, requiredAttendees = requiredAttendees, resources = resources, start = start.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppointmentForm]
   }

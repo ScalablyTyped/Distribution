@@ -12,6 +12,7 @@ package object hapiMod {
   import typings.hapi.Anon_Cache
   import typings.hapi.Anon_Constructor
   import typings.hapi.hapiMod.Lifecycle.Method
+  import typings.hapi.hapiMod.Util.Dictionary
   import typings.hapi.hapiNumbers.`false`
   import typings.hapi.hapiNumbers.`true`
   import typings.joi.joiMod.Schema
@@ -65,6 +66,7 @@ package object hapiMod {
   type ServerEventsApplication = String | ServerEventsApplicationObject | Podium
   type ServerExtPointFunction = js.Function1[/* server */ Server, Unit]
   type ServerMethod = js.Function1[/* repeated */ js.Any, js.Any]
+  type ServerMethods = Dictionary[ServerMethod]
   type StartEventHandler = js.Function0[Unit]
   type StopEventHandler = js.Function0[Unit]
   type ValidationObject = SchemaMap

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@redux-saga/delay-p" : "1.1.0"
+      "@redux-saga/delay-p" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@redux-saga/delay-p" : "1.1.0"
+      "@redux-saga/delay-p" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

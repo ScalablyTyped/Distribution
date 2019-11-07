@@ -11,7 +11,6 @@ import typings.atHapiHapi.Anon_Request
 import typings.atHapiHapi.Anon_Timeout
 import typings.atHapiHapi.Anon_Validate
 import typings.atHapiHapi.atHapiHapiMod.Lifecycle.Method
-import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
 import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS
 import typings.atHapiHapi.atHapiHapiStrings.handler
 import typings.atHapiHapi.atHapiHapiStrings.request
@@ -106,7 +105,7 @@ class Server () extends js.Object {
     * server method name is an object property.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servermethods
     */
-  val methods: Dictionary[ServerMethod] = js.native
+  val methods: ServerMethods = js.native
   /**
     * Provides access to the server MIME database used for setting content-type information. The object must not be
     * modified directly but only through the [mime](https://github.com/hapijs/hapi/blob/master/API.md#server.options.mime) server setting.

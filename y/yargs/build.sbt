@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "yargs"
-version := "13.0-dt-20190925Z-fa65c4"
+version := "13.0-dt-20190925Z-22543c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "yargs-parser" % "13.1-dt-20190905Z-0a7d60")
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
+  "org.scalablytyped" %%% "yargs-parser" % "13.1-dt-20190905Z-34249b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

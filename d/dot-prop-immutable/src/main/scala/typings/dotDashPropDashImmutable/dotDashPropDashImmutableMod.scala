@@ -27,8 +27,8 @@ object dotDashPropDashImmutableMod extends js.Object {
     * ```
     */
   def delete[T /* <: ArrayOrObject */](`object`: T, path: Path): T = js.native
-  def get(`object`: ArrayOrObject, path: Path): js.Any = js.native
-  def get[V](`object`: ArrayOrObject, path: Path, defaultValue: V): V = js.native
+  def get(`object`: js.UndefOr[ArrayOrObject], path: Path): js.Any = js.native
+  def get[V](`object`: js.UndefOr[ArrayOrObject], path: Path, defaultValue: V): V = js.native
   def merge[T /* <: ArrayOrObject */](`object`: T, path: Path, value: ArrayOrObject): T = js.native
   def set[T /* <: ArrayOrObject */](`object`: T, path: Path, value: js.Any): T = js.native
   def toggle[T /* <: ArrayOrObject */](`object`: T, path: Path): T = js.native

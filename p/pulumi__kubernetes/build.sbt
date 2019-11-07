@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "pulumi__kubernetes"
-version := "1.2.3-588d35"
+version := "1.2.3-6be247"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "pulumi__pulumi" % "1.4.1-93b42a",
-  "org.scalablytyped" %%% "pulumi__query" % "0.3.0-48aa33",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "pulumi__pulumi" % "1.5.0-2b218f",
+  "org.scalablytyped" %%% "pulumi__query" % "0.3.0-86a553",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

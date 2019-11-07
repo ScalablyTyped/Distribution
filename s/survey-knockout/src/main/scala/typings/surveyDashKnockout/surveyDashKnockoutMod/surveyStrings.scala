@@ -21,6 +21,8 @@ object surveyStrings extends js.Object {
   var completingSurvey: String = js.native
   var completingSurveyBefore: String = js.native
   var confirmDelete: String = js.native
+  var confirmRemoveAllFiles: String = js.native
+  var confirmRemoveFile: String = js.native
   var emptySurvey: String = js.native
   var exceedMaxSize: String = js.native
   var invalidEmail: String = js.native

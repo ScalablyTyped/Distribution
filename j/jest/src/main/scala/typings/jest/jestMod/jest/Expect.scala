@@ -59,8 +59,10 @@ trait Expect extends js.Object {
   /**
     * Matches any array made up entirely of elements in the provided array.
     * You can use it inside `toEqual` or `toBeCalledWith` instead of a literal value.
+    *
+    * Optionally, you can provide a type for the elements via a generic.
     */
-  def arrayContaining(arr: js.Array[_]): js.Any = js.native
+  def arrayContaining[E](arr: js.Array[E]): js.Any = js.native
   /**
     * Verifies that a certain number of assertions are called during a test.
     * This is often useful when testing asynchronous code, in order to
@@ -81,8 +83,11 @@ trait Expect extends js.Object {
   /**
     * Matches any object that recursively matches the provided keys.
     * This is often handy in conjunction with other asymmetric matchers.
+    *
+    * Optionally, you can provide a type for the object via a generic.
+    * This ensures that the object contains the desired structure.
     */
-  def objectContaining(obj: js.Object): js.Any = js.native
+  def objectContaining[E](obj: E): js.Any = js.native
   def setState(state: js.Object): Unit = js.native
   /**
     * Matches any received string that contains the exact expected string

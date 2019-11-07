@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.typescript.typescriptMod.FlowStart
   - typings.typescript.typescriptMod.FlowLabel
   - typings.typescript.typescriptMod.FlowAssignment
+  - typings.typescript.typescriptMod.FlowCall
   - typings.typescript.typescriptMod.FlowCondition
   - typings.typescript.typescriptMod.FlowSwitchClause
   - typings.typescript.typescriptMod.FlowArrayMutation

@@ -234,14 +234,22 @@ object dashPrivateNativeDashArrayMod extends js.Object {
     def shift(): js.UndefOr[T] = js.native
     /**
       * Determines whether the specified callback function returns true for any element of an array.
-      * @param callbackfn A function that accepts up to three arguments. The some method calls the callbackfn function for each element in array1 until the callbackfn returns true, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+      * @param callbackfn A function that accepts up to three arguments. The some method calls
+      * the callbackfn function for each element in the array until the callbackfn returns a value
+      * which is coercible to the Boolean value true, or until the end of the array.
+      * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+      * If thisArg is omitted, undefined is used as the this value.
       */
     def some(callbackfn: js.Function3[T, /* index */ Double, /* array */ js.Array[T], _]): Boolean = js.native
     def some(callbackfn: js.Function3[T, /* index */ Double, /* array */ js.Array[T], _], thisArg: js.Any): Boolean = js.native
     /**
       * Sorts an array.
-      * @param compareFn The name of the function used to determine the order of the elements. If omitted, the elements are sorted in ascending, ASCII character order.
+      * @param compareFn Function used to determine the order of the elements. It is expected to return
+      * a negative value if first argument is less than second argument, zero if they're equal and a positive
+      * value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
+      * ```ts
+      * [11,2,22,1].sort((a, b) => a - b)
+      * ```
       */
     def sort(): this.type = js.native
     def sort(compareFn: js.Function2[T, T, Double]): this.type = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-form
 
-Typings are for version 8.1
+Typings are for version 8.2
 
 ## Library description:
 A higher order component decorator for forms using Redux and React

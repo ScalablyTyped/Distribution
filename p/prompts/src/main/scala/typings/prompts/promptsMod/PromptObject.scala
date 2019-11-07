@@ -24,11 +24,9 @@ trait PromptObject[T /* <: String */] extends js.Object {
   var round: js.UndefOr[Double] = js.undefined
   var seperator: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[String] = js.undefined
-  var suggest: js.UndefOr[
-    js.Function3[/* prev */ js.Any, /* values */ js.Any, /* prompt */ PromptObject[String], Unit]
-  ] = js.undefined
+  var suggest: js.UndefOr[js.Function2[/* input */ js.Any, /* choices */ js.Array[Choice], js.Promise[_]]] = js.undefined
   var `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])
-  var validate: js.UndefOr[PrevCaller[T, Boolean | String]] = js.undefined
+  var validate: js.UndefOr[PrevCaller[T, Boolean | String | (js.Promise[Boolean | String])]] = js.undefined
 }
 
 object PromptObject {
@@ -52,9 +50,9 @@ object PromptObject {
     round: Int | Double = null,
     seperator: String = null,
     style: String = null,
-    suggest: (/* prev */ js.Any, /* values */ js.Any, /* prompt */ PromptObject[String]) => Unit = null,
+    suggest: (/* input */ js.Any, /* choices */ js.Array[Choice]) => js.Promise[_] = null,
     `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy]) = null,
-    validate: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Boolean | String = null
+    validate: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Boolean | String | (js.Promise[Boolean | String]) = null
   ): PromptObject[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (active != null) __obj.updateDynamic("active")(active)
@@ -74,7 +72,7 @@ object PromptObject {
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     if (seperator != null) __obj.updateDynamic("seperator")(seperator)
     if (style != null) __obj.updateDynamic("style")(style)
-    if (suggest != null) __obj.updateDynamic("suggest")(js.Any.fromFunction3(suggest))
+    if (suggest != null) __obj.updateDynamic("suggest")(js.Any.fromFunction2(suggest))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction3(validate))
     __obj.asInstanceOf[PromptObject[T]]

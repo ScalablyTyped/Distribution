@@ -11,6 +11,8 @@ trait IdentifierTypePredicate
   var kind_IdentifierTypePredicate: typings.typescript.typescriptMod.TypePredicateKind.Identifier
   var parameterIndex: Double
   var parameterName: String
+  @JSName("type")
+  var type_IdentifierTypePredicate: Type
 }
 
 object IdentifierTypePredicate {

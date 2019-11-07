@@ -99,7 +99,9 @@ class QuestionSelectBase protected () extends Question {
   /* protected */ def getChoices(): js.Array[ItemValue] = js.native
   /* protected */ def getChoicesDisplayValue(items: js.Array[ItemValue], `val`: js.Any): js.Any = js.native
   def getColumnClass(): js.Any = js.native
+  def getControlLabelClass(isChecked: Boolean): js.Any = js.native
   /* protected */ def getHasOther(`val`: js.Any): Boolean = js.native
+  def getLabelClass(isChecked: Boolean): js.Any = js.native
   /* protected */ def getStoreOthersAsComment(): Boolean = js.native
   /* protected */ def hasUnknownValue(`val`: js.Any): Boolean = js.native
   /* protected */ def hasUnknownValue(`val`: js.Any, includeOther: Boolean): Boolean = js.native

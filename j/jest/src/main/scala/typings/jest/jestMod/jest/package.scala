@@ -8,6 +8,7 @@ package object jest {
   import org.scalablytyped.runtime.StringDictionary
   import typings.jest.Anon_Not
   import typings.jest.Anon_Rejects
+  import typings.jest.Anon_SupportsColor
   import typings.jest.jestStrings.not
   import typings.jest.jestStrings.rejects
   import typings.jest.jestStrings.resolves
@@ -35,6 +36,7 @@ package object jest {
   ]
   type EmptyFunction = js.Function0[Unit]
   type Environment = $JestEnvironment
+  type EqualityTester = js.Function2[/* a */ js.Any, /* b */ js.Any, js.UndefOr[Boolean]]
   type ExpectExtendMap = StringDictionary[CustomMatcher]
   type ExpectProperties = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in 'not' ]: jest.jest.jest.Expect[K]}
@@ -61,7 +63,9 @@ package object jest {
   type Lifecycle = js.Function2[/* fn */ ProvidesCallback, /* timeout */ js.UndefOr[Double], js.Any]
   // Console
   type LogMessage = String
+  type MatcherColorFn = ChalkFunction with Anon_SupportsColor
   type MatcherContext = MatcherUtils with MatcherState
+  type MatcherHintColor = js.Function1[/* arg */ String, String]
   // types for implementing custom interfaces, from https://github.com/facebook/jest/tree/dd6c5c4/types
   // https://facebook.github.io/jest/docs/en/configuration.html#transform-object-string-string
   // const transformer: Transformer;
@@ -128,6 +132,7 @@ package object jest {
   type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   // Config
   type Path = String
+  type PrintLabel = js.Function1[/* string */ String, String]
   type PromiseMatchers[T /* <: JestMatchersShape[js.Object, js.Object] */] = Omit[
     /* import warning: ImportType.apply Failed type conversion: T['resolves'] */ js.Any, 
     not

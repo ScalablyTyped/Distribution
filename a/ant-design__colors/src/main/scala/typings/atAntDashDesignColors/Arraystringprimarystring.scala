@@ -54,8 +54,11 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
   def entries(): IterableIterator[js.Tuple2[Double, String]] = js.native
   /**
     * Determines whether all the members of an array satisfy the specified test.
-    * @param callbackfn A function that accepts up to three arguments. The every method calls the callbackfn function for each element in array1 until the callbackfn returns false, or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    * @param callbackfn A function that accepts up to three arguments. The every method calls
+    * the callbackfn function for each element in the array until the callbackfn returns a value
+    * which is coercible to the Boolean value false, or until the end of the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+    * If thisArg is omitted, undefined is used as the this value.
     */
   def every(callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): Boolean = js.native
   def every(
@@ -410,15 +413,18 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
   /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
-    * @param end The end of the specified portion of the array.
+    * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[String] = js.native
   def slice(start: Double): js.Array[String] = js.native
   def slice(start: Double, end: Double): js.Array[String] = js.native
   /**
     * Determines whether the specified callback function returns true for any element of an array.
-    * @param callbackfn A function that accepts up to three arguments. The some method calls the callbackfn function for each element in array1 until the callbackfn returns true, or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    * @param callbackfn A function that accepts up to three arguments. The some method calls
+    * the callbackfn function for each element in the array until the callbackfn returns a value
+    * which is coercible to the Boolean value true, or until the end of the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+    * If thisArg is omitted, undefined is used as the this value.
     */
   def some(callbackfn: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], _]): Boolean = js.native
   def some(
@@ -427,7 +433,12 @@ trait Arraystringprimarystring extends /* n */ NumberDictionary[String] {
   ): Boolean = js.native
   /**
     * Sorts an array.
-    * @param compareFn The name of the function used to determine the order of the elements. If omitted, the elements are sorted in ascending, ASCII character order.
+    * @param compareFn Function used to determine the order of the elements. It is expected to return
+    * a negative value if first argument is less than second argument, zero if they're equal and a positive
+    * value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
+    * ```ts
+    * [11,2,22,1].sort((a, b) => a - b)
+    * ```
     */
   def sort(): this.type = js.native
   def sort(compareFn: js.Function2[/* a */ String, /* b */ String, Double]): this.type = js.native

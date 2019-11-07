@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object readFileAssets extends js.Object {
   def apply(filepath: String): js.Promise[String] = js.native
-  def apply(filepath: String, encodingOrOptions: EncodingOrOptions): js.Promise[String] = js.native
+  def apply(filepath: String, encodingOrOptions: js.Any): js.Promise[String] = js.native
 }
 

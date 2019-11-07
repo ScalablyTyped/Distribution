@@ -19,10 +19,6 @@ object distClientBaseClientMod extends js.Object {
     var clientOptions: Configuration = js.native
     var clientVersion: String = js.native
     var errorHandler: ErrorHandler = js.native
-    /**
-      * JSON object with default headers sent by HTTP request.
-      */
-    var getComposedHttpRequestHeaders: js.Any = js.native
     var getHttpRequestURL: js.Any = js.native
     var getRequestTimeoutInSeconds: js.Any = js.native
     /**
@@ -82,6 +78,10 @@ object distClientBaseClientMod extends js.Object {
       * @param {string} token - HTTP request token
       */
     var verifyToken: js.Any = js.native
+    /**
+      * JSON object with default headers sent by HTTP request.
+      */
+    def getComposedHttpRequestHeaders(): js.Object = js.native
     /**
       * Process http request with sending body - data.
       *

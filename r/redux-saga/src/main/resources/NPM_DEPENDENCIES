@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "redux-saga" : "1.1.1"
+      "redux-saga" : "1.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "redux-saga" : "1.1.1"
+      "redux-saga" : "1.1.3"
     }
   ],
   "compile-devDependencies" : [

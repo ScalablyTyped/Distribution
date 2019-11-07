@@ -1,36 +1,30 @@
 package typings.jest.jestMod.jest
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jest.Anon_Actual
+import typings.jest.Anon_A
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MatcherUtils
   extends /* other */ StringDictionary[js.Any] {
-  val isNot: Boolean
-  val promise: String
-  var utils: Anon_Actual
-  def dontThrow(): Unit
+  val assertionCalls: Double = js.native
+  val currentTestName: String = js.native
+  val expand: Boolean = js.native
+  val expectedAssertionsNumber: Double | Null = js.native
+  val isExpectingAssertions: Boolean = js.native
+  val isNot: Boolean = js.native
+  val promise: String = js.native
+  val suppressedErrors: js.Array[_] = js.native
+  val testPath: String = js.native
+  var utils: Anon_A = js.native
+  def dontThrow(): Unit = js.native
   /**
     *  This is a deep-equality function that will return true if two objects have the same values (recursively).
     */
-  def equals(a: js.Any, b: js.Any): Boolean
-}
-
-object MatcherUtils {
-  @scala.inline
-  def apply(
-    dontThrow: () => Unit,
-    equals: (js.Any, js.Any) => Boolean,
-    isNot: Boolean,
-    promise: String,
-    utils: Anon_Actual,
-    StringDictionary: /* other */ StringDictionary[js.Any] = null
-  ): MatcherUtils = {
-    val __obj = js.Dynamic.literal(dontThrow = js.Any.fromFunction0(dontThrow), equals = js.Any.fromFunction2(equals), isNot = isNot, promise = promise, utils = utils)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[MatcherUtils]
-  }
+  def equals(a: js.Any, b: js.Any): Boolean = js.native
+  def equals(a: js.Any, b: js.Any, customTesters: js.Array[EqualityTester]): Boolean = js.native
+  def equals(a: js.Any, b: js.Any, customTesters: js.Array[EqualityTester], strictCheck: Boolean): Boolean = js.native
 }
 

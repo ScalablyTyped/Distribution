@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "angular-dynamic-locale" : "0.1.37"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "angular-dynamic-locale" : "0.1.37"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

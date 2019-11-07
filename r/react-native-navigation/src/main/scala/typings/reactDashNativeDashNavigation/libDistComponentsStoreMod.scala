@@ -22,7 +22,7 @@ object libDistComponentsStoreMod extends js.Object {
     def setComponentClassForName(componentName: String, ComponentClass: ComponentProvider): Unit = js.native
     def setComponentClassForName(componentName: Double, ComponentClass: ComponentProvider): Unit = js.native
     def setComponentInstance(id: String, component: IWrappedComponent): Unit = js.native
-    def setPropsForId(componentId: String, props: js.Any): Unit = js.native
+    def updateProps(componentId: String, props: js.Any): Unit = js.native
   }
   
 }

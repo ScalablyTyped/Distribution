@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReadDirItem extends js.Object {
-  // The creation date of the file (iOS only)
   var ctime: js.UndefOr[Date] = js.undefined
-  // The last modified date of the file
+  // The creation date of the file (iOS only)
   var mtime: js.UndefOr[Date] = js.undefined
-  // The name of the item
+  // The last modified date of the file
   var name: String
-  // The absolute path to the item
+  // The name of the item
   var path: String
-  // Size in bytes
+  // The absolute path to the item
   var size: String
-  // Is the file a directory?
-  def isDirectory(): Boolean
   // Is the file just a file?
+  def isDirectory(): Boolean
+  // Size in bytes
   def isFile(): Boolean
 }
 

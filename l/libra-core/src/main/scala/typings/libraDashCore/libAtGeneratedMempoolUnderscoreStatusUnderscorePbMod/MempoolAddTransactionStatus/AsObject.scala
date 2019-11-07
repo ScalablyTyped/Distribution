@@ -1,0 +1,21 @@
+package typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatus
+
+import typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AsObject extends js.Object {
+  var code: MempoolAddTransactionStatusCode
+  var message: String
+}
+
+object AsObject {
+  @scala.inline
+  def apply(code: MempoolAddTransactionStatusCode, message: String): AsObject = {
+    val __obj = js.Dynamic.literal(code = code, message = message)
+  
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

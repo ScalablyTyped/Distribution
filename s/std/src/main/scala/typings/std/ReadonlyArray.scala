@@ -33,8 +33,11 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
   def entries(): IterableIterator[js.Tuple2[Double, T]] = js.native
   /**
     * Determines whether all the members of an array satisfy the specified test.
-    * @param callbackfn A function that accepts up to three arguments. The every method calls the callbackfn function for each element in array1 until the callbackfn returns false, or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    * @param callbackfn A function that accepts up to three arguments. The every method calls
+    * the callbackfn function for each element in the array until the callbackfn returns a value
+    * which is coercible to the Boolean value false, or until the end of the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+    * If thisArg is omitted, undefined is used as the this value.
     */
   def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): scala.Boolean = js.native
   def every(
@@ -324,15 +327,18 @@ trait ReadonlyArray[T] extends /* n */ NumberDictionary[T] {
   /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
-    * @param end The end of the specified portion of the array.
+    * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[T] = js.native
   def slice(start: Double): js.Array[T] = js.native
   def slice(start: Double, end: Double): js.Array[T] = js.native
   /**
     * Determines whether the specified callback function returns true for any element of an array.
-    * @param callbackfn A function that accepts up to three arguments. The some method calls the callbackfn function for each element in array1 until the callbackfn returns true, or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+    * @param callbackfn A function that accepts up to three arguments. The some method calls
+    * the callbackfn function for each element in the array until the callbackfn returns a value
+    * which is coercible to the Boolean value true, or until the end of the array.
+    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+    * If thisArg is omitted, undefined is used as the this value.
     */
   def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): scala.Boolean = js.native
   def some(

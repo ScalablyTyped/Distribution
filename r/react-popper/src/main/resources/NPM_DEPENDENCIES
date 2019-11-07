@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-popper" : "1.3.4"
+      "react-popper" : "1.3.5"
     }
   ],
   "test-dependencies" : [
     {
-      "react-popper" : "1.3.4"
+      "react-popper" : "1.3.5"
     }
   ],
   "compile-devDependencies" : [

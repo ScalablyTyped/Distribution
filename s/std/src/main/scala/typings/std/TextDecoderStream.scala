@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextDecoderStream
-  extends TextDecoderCommon
-     with GenericTransformStream
+  extends GenericTransformStream
+     with TextDecoderCommon
 
 @JSGlobal("TextDecoderStream")
 @js.native

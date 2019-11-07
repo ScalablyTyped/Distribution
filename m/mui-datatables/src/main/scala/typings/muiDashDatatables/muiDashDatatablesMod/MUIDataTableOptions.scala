@@ -5,10 +5,8 @@ import typings.muiDashDatatables.Anon_Data
 import typings.muiDashDatatables.Anon_DataDataIndex
 import typings.muiDashDatatables.Anon_DataIndexRowIndex
 import typings.muiDashDatatables.Anon_Filename
-import typings.muiDashDatatables.muiDashDatatablesStrings.checkbox
-import typings.muiDashDatatables.muiDashDatatablesStrings.dropdown
-import typings.muiDashDatatables.muiDashDatatablesStrings.multiselect
-import typings.muiDashDatatables.muiDashDatatablesStrings.textField
+import typings.muiDashDatatables.muiDashDatatablesStrings.chip
+import typings.muiDashDatatables.muiDashDatatablesStrings.reset
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element
@@ -69,7 +67,7 @@ trait MUIDataTableOptions extends js.Object {
   var expandableRows: js.UndefOr[Boolean] = js.undefined
   var expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
-  var filterType: js.UndefOr[dropdown | checkbox | multiselect | textField] = js.undefined
+  var filterType: js.UndefOr[FilterType] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
   var isRowExpandable: js.UndefOr[
     js.Function2[
@@ -100,7 +98,12 @@ trait MUIDataTableOptions extends js.Object {
     ]
   ] = js.undefined
   var onFilterChange: js.UndefOr[
-    js.Function3[/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType, Unit]
+    js.Function3[
+      /* changedColumn */ String, 
+      /* filterList */ js.Array[_], 
+      /* type */ FilterType | chip | reset, 
+      Unit
+    ]
   ] = js.undefined
   var onFilterDialogClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -167,7 +170,7 @@ object MUIDataTableOptions {
     expandableRows: js.UndefOr[Boolean] = js.undefined,
     expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
     filter: js.UndefOr[Boolean] = js.undefined,
-    filterType: dropdown | checkbox | multiselect | textField = null,
+    filterType: FilterType = null,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
     isRowExpandable: (/* dataIndex */ Double, /* expandedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean = null,
     isRowSelectable: (/* dataIndex */ Double, /* selectedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean = null,
@@ -177,7 +180,7 @@ object MUIDataTableOptions {
     onColumnSortChange: (/* changedColumn */ String, /* direction */ String) => Unit = null,
     onColumnViewChange: (/* changedColumn */ String, /* action */ String) => Unit = null,
     onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => BlobPart = null,
-    onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType) => Unit = null,
+    onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType | chip | reset) => Unit = null,
     onFilterDialogClose: () => Unit = null,
     onFilterDialogOpen: () => Unit = null,
     onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ Anon_DataIndexRowIndex) => Unit = null,
@@ -232,7 +235,7 @@ object MUIDataTableOptions {
     if (!js.isUndefined(expandableRows)) __obj.updateDynamic("expandableRows")(expandableRows)
     if (!js.isUndefined(expandableRowsOnClick)) __obj.updateDynamic("expandableRowsOnClick")(expandableRowsOnClick)
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
     if (isRowExpandable != null) __obj.updateDynamic("isRowExpandable")(js.Any.fromFunction2(isRowExpandable))
     if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction2(isRowSelectable))

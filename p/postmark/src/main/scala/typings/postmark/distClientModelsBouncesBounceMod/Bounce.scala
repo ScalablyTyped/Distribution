@@ -16,6 +16,7 @@ trait Bounce extends js.Object {
   var ID: Double
   var Inactive: Boolean
   var MessageID: String
+  var MessageStream: String
   var Name: String
   var RecordType: String
   var ServerID: String
@@ -38,6 +39,7 @@ object Bounce {
     ID: Double,
     Inactive: Boolean,
     MessageID: String,
+    MessageStream: String,
     Name: String,
     RecordType: String,
     ServerID: String,
@@ -47,7 +49,7 @@ object Bounce {
     Content: String = null,
     Tag: String = null
   ): Bounce = {
-    val __obj = js.Dynamic.literal(BouncedAt = BouncedAt, CanActivate = CanActivate, Description = Description, Details = Details, DumpAvailable = DumpAvailable, Email = Email, From = From, ID = ID, Inactive = Inactive, MessageID = MessageID, Name = Name, RecordType = RecordType, ServerID = ServerID, Subject = Subject, Type = Type, TypeCode = TypeCode)
+    val __obj = js.Dynamic.literal(BouncedAt = BouncedAt, CanActivate = CanActivate, Description = Description, Details = Details, DumpAvailable = DumpAvailable, Email = Email, From = From, ID = ID, Inactive = Inactive, MessageID = MessageID, MessageStream = MessageStream, Name = Name, RecordType = RecordType, ServerID = ServerID, Subject = Subject, Type = Type, TypeCode = TypeCode)
     if (Content != null) __obj.updateDynamic("Content")(Content)
     if (Tag != null) __obj.updateDynamic("Tag")(Tag)
     __obj.asInstanceOf[Bounce]

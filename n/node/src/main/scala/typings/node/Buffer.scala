@@ -132,15 +132,6 @@ class Buffer protected ()
   def readUInt8(offset: Double): Double = js.native
   def readUIntBE(offset: Double, byteLength: Double): Double = js.native
   def readUIntLE(offset: Double, byteLength: Double): Double = js.native
-  /**
-    * Returns a new `Buffer` that references **the same memory as the original**, but offset and cropped by the start and end indices.
-    *
-    * This method is compatible with `Uint8Array#subarray()`.
-    *
-    * @param begin Where the new `Buffer` will start. Default: `0`.
-    * @param end Where the new `Buffer` will end (not inclusive). Default: `buf.length`.
-    */
-  def subarray(): Buffer = js.native
   def swap16(): Buffer = js.native
   def swap32(): Buffer = js.native
   def swap64(): Buffer = js.native

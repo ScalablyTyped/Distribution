@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "browserfs"
-version := "1.4.3-0e16ff"
+version := "1.4.3-c966db"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "dropboxjs" % "0.0-unknown-dt-20190322Z-9e0d7a",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-c11499",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-dce26a",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "dropboxjs" % "0.0-unknown-dt-20190322Z-efa4f4",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-2780ef",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-58b627",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

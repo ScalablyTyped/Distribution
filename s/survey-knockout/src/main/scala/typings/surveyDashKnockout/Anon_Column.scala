@@ -13,6 +13,7 @@ trait Anon_Column extends js.Object {
   var itemDecorator: String
   var itemInline: String
   var label: String
+  var labelChecked: String
   var materialDecorator: String
   var other: String
   var root: String
@@ -29,11 +30,12 @@ object Anon_Column {
     itemDecorator: String,
     itemInline: String,
     label: String,
+    labelChecked: String,
     materialDecorator: String,
     other: String,
     root: String
   ): Anon_Column = {
-    val __obj = js.Dynamic.literal(column = column, controlLabel = controlLabel, item = item, itemChecked = itemChecked, itemControl = itemControl, itemDecorator = itemDecorator, itemInline = itemInline, label = label, materialDecorator = materialDecorator, other = other, root = root)
+    val __obj = js.Dynamic.literal(column = column, controlLabel = controlLabel, item = item, itemChecked = itemChecked, itemControl = itemControl, itemDecorator = itemDecorator, itemInline = itemInline, label = label, labelChecked = labelChecked, materialDecorator = materialDecorator, other = other, root = root)
   
     __obj.asInstanceOf[Anon_Column]
   }

@@ -17,6 +17,7 @@ trait InboundMessage extends js.Object {
   var FromName: String
   var MailboxHash: String
   var MessageID: String
+  var MessageStream: String
   var OriginalRecipient: String
   var ReplyTo: String
   var Status: String
@@ -40,6 +41,7 @@ object InboundMessage {
     FromName: String,
     MailboxHash: String,
     MessageID: String,
+    MessageStream: String,
     OriginalRecipient: String,
     ReplyTo: String,
     Status: String,
@@ -48,7 +50,7 @@ object InboundMessage {
     ToFull: js.Array[InboundRecipient],
     Tag: String = null
   ): InboundMessage = {
-    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, BccFull = BccFull, Cc = Cc, CcFull = CcFull, Date = Date, From = From, FromFull = FromFull, FromName = FromName, MailboxHash = MailboxHash, MessageID = MessageID, OriginalRecipient = OriginalRecipient, ReplyTo = ReplyTo, Status = Status, Subject = Subject, To = To, ToFull = ToFull)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, BccFull = BccFull, Cc = Cc, CcFull = CcFull, Date = Date, From = From, FromFull = FromFull, FromName = FromName, MailboxHash = MailboxHash, MessageID = MessageID, MessageStream = MessageStream, OriginalRecipient = OriginalRecipient, ReplyTo = ReplyTo, Status = Status, Subject = Subject, To = To, ToFull = ToFull)
     if (Tag != null) __obj.updateDynamic("Tag")(Tag)
     __obj.asInstanceOf[InboundMessage]
   }

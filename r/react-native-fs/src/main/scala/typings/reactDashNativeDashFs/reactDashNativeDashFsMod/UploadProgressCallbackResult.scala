@@ -5,11 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UploadProgressCallbackResult extends js.Object {
-  // The upload job ID, required if one wishes to cancel the upload. See `stopUpload`.
   var jobId: Double
-  // The total number of bytes that will be sent to the server
+  // The upload job ID, required if one wishes to cancel the upload. See `stopUpload`.
   var totalBytesExpectedToSend: Double
-  // The number of bytes sent to the server
+  // The total number of bytes that will be sent to the server
   var totalBytesSent: Double
 }
 

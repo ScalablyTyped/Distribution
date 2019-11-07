@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   - typings.typescript.typescriptMod.StringLiteralLike
   - typings.typescript.typescriptMod.NumericLiteral
   - typings.typescript.typescriptMod.ComputedPropertyName
+  - typings.typescript.typescriptMod.ElementAccessExpression
   - typings.typescript.typescriptMod.BindingPattern
+  - typings.typescript.typescriptMod.EntityNameExpression
 */
 trait DeclarationName extends js.Object
 

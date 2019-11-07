@@ -60,7 +60,7 @@ trait Config extends js.Object {
     * if set, it represents the maximum number of retries after each disconnect before giving up
     * and completely killing a specific connection
     */
-  var maxRetries: Boolean
+  var maxRetries: Boolean | Double
   /**
     * Default: 'localhost'
     * The local or remote host on which TCP, TLS or UDP Sockets should connect
@@ -133,7 +133,7 @@ object Config {
     logInColor: Boolean,
     logger: String => Unit,
     maxConnections: Double,
-    maxRetries: Boolean,
+    maxRetries: Boolean | Double,
     networkHost: String,
     networkPort: Double,
     rawBuffer: Boolean,
@@ -145,7 +145,7 @@ object Config {
     tls: Anon_Private,
     unlink: Boolean
   ): Config = {
-    val __obj = js.Dynamic.literal(appspace = appspace, encoding = encoding.asInstanceOf[js.Any], id = id, interfaces = interfaces, logDepth = logDepth, logInColor = logInColor, logger = js.Any.fromFunction1(logger), maxConnections = maxConnections, maxRetries = maxRetries, networkHost = networkHost, networkPort = networkPort, rawBuffer = rawBuffer, retry = retry, silent = silent, socketRoot = socketRoot, stopRetrying = stopRetrying, sync = sync, tls = tls, unlink = unlink)
+    val __obj = js.Dynamic.literal(appspace = appspace, encoding = encoding.asInstanceOf[js.Any], id = id, interfaces = interfaces, logDepth = logDepth, logInColor = logInColor, logger = js.Any.fromFunction1(logger), maxConnections = maxConnections, maxRetries = maxRetries.asInstanceOf[js.Any], networkHost = networkHost, networkPort = networkPort, rawBuffer = rawBuffer, retry = retry, silent = silent, socketRoot = socketRoot, stopRetrying = stopRetrying, sync = sync, tls = tls, unlink = unlink)
   
     __obj.asInstanceOf[Config]
   }

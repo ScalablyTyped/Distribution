@@ -12,6 +12,7 @@ trait ClickEvent extends js.Object {
   var Client: ClientDetails
   var Geo: GeoLocation
   var MessageID: String
+  var MessageStream: String
   var OS: ClientDetails
   var OriginalLink: String
   var Platform: String
@@ -29,6 +30,7 @@ object ClickEvent {
     Client: ClientDetails,
     Geo: GeoLocation,
     MessageID: String,
+    MessageStream: String,
     OS: ClientDetails,
     OriginalLink: String,
     Platform: String,
@@ -38,7 +40,7 @@ object ClickEvent {
     Tag: String,
     UserAgent: String
   ): ClickEvent = {
-    val __obj = js.Dynamic.literal(ClickLocation = ClickLocation, Client = Client, Geo = Geo, MessageID = MessageID, OS = OS, OriginalLink = OriginalLink, Platform = Platform, ReceivedAt = ReceivedAt, Recipient = Recipient, RecordType = RecordType, Tag = Tag, UserAgent = UserAgent)
+    val __obj = js.Dynamic.literal(ClickLocation = ClickLocation, Client = Client, Geo = Geo, MessageID = MessageID, MessageStream = MessageStream, OS = OS, OriginalLink = OriginalLink, Platform = Platform, ReceivedAt = ReceivedAt, Recipient = Recipient, RecordType = RecordType, Tag = Tag, UserAgent = UserAgent)
   
     __obj.asInstanceOf[ClickEvent]
   }

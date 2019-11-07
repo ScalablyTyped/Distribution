@@ -1,0 +1,12 @@
+package typings.libraDashCore.libAtGeneratedMempoolUnderscoreGrpcUnderscorePbMod
+
+import typings.grpc.grpcMod.MethodDefinition
+import typings.libraDashCore.libAtGeneratedMempoolUnderscorePbMod.AddTransactionWithValidationRequest
+import typings.libraDashCore.libAtGeneratedMempoolUnderscorePbMod.AddTransactionWithValidationResponse
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait IMempoolService_IAddTransactionWithValidation extends MethodDefinition[AddTransactionWithValidationRequest, AddTransactionWithValidationResponse]
+

@@ -13,10 +13,10 @@ package object typescriptMod {
   import typings.typescript.Anon_Name
   import typings.typescript.Anon_PathBrand
   import typings.typescript.typescriptMod.SyntaxKind.AbstractKeyword
+  import typings.typescript.typescriptMod.SyntaxKind.AssertsKeyword
   import typings.typescript.typescriptMod.SyntaxKind.AsteriskAsteriskToken
   import typings.typescript.typescriptMod.SyntaxKind.AsyncKeyword
   import typings.typescript.typescriptMod.SyntaxKind.AwaitKeyword
-  import typings.typescript.typescriptMod.SyntaxKind.CommaToken
   import typings.typescript.typescriptMod.SyntaxKind.ConstKeyword
   import typings.typescript.typescriptMod.SyntaxKind.DeclareKeyword
   import typings.typescript.typescriptMod.SyntaxKind.DefaultKeyword
@@ -29,12 +29,22 @@ package object typescriptMod {
 
   type AdditiveOperatorOrHigher = MultiplicativeOperatorOrHigher | AdditiveOperator
   type AffectedFileResult[T] = js.UndefOr[Anon_Affected[T]]
-  type AssignmentOperatorOrHigher = LogicalOperatorOrHigher | AssignmentOperator
+  type AssertsToken = Token[AssertsKeyword]
+  /* Rewritten from type alias, can be one of: 
+    - typings.typescript.typescriptMod.SyntaxKind.QuestionQuestionToken
+    - typings.typescript.typescriptMod.LogicalOperatorOrHigher
+    - typings.typescript.typescriptMod.AssignmentOperator
+  */
+  type AssignmentOperatorOrHigher = _AssignmentOperatorOrHigher | LogicalOperatorOrHigher
   type AssignmentOperatorToken = Token[AssignmentOperator]
   type AsteriskToken = Token[typings.typescript.typescriptMod.SyntaxKind.AsteriskToken]
   type AwaitKeywordToken = Token[AwaitKeyword]
-  type BaseType = ObjectType | IntersectionType
-  type BinaryOperator = AssignmentOperatorOrHigher | CommaToken
+  type BaseType = ObjectType | IntersectionType | TypeVariable
+  /* Rewritten from type alias, can be one of: 
+    - typings.typescript.typescriptMod.AssignmentOperatorOrHigher
+    - typings.typescript.typescriptMod.SyntaxKind.CommaToken
+  */
+  type BinaryOperator = _BinaryOperator | LogicalOperatorOrHigher
   type BinaryOperatorToken = Token[BinaryOperator]
   /* Rewritten from type alias, can be one of: 
     - typings.typescript.typescriptMod.VariableDeclaration
@@ -77,10 +87,12 @@ package object typescriptMod {
     T
   ]
   type CustomTransformerFactory = js.Function1[/* context */ TransformationContext, CustomTransformer]
+  type DeferredTypeReference = TypeReference
   type DiagnosticReporter = js.Function1[/* diagnostic */ Diagnostic, Unit]
   type DirectoryWatcherCallback = js.Function1[/* fileName */ String, Unit]
   type DocumentRegistryBucketKey = String with Anon_BucketKey
   type DotDotDotToken = Token[typings.typescript.typescriptMod.SyntaxKind.DotDotDotToken]
+  type DotToken = Token[typings.typescript.typescriptMod.SyntaxKind.DotToken]
   type EmitHelperUniqueNameCallback = js.Function1[/* name */ String, String]
   type EndOfFileToken = Token[typings.typescript.typescriptMod.SyntaxKind.EndOfFileToken] with JSDocContainer
   type EnumType = Type
@@ -149,6 +161,7 @@ package object typescriptMod {
   type ParameterPropertyDeclaration = ParameterDeclaration with Anon_Name
   type Path = String with Anon_PathBrand
   type PlusToken = Token[typings.typescript.typescriptMod.SyntaxKind.PlusToken]
+  type QuestionDotToken = Token[typings.typescript.typescriptMod.SyntaxKind.QuestionDotToken]
   type QuestionToken = Token[typings.typescript.typescriptMod.SyntaxKind.QuestionToken]
   type ReadonlyToken = Token[ReadonlyKeyword]
   type RelationalOperatorOrHigher = ShiftOperatorOrHigher | RelationalOperator
@@ -168,7 +181,13 @@ package object typescriptMod {
     * Creates the watch what generates program using the config file
     */
   type WatchOfConfigFile[T] = Watch[T]
-  type WatchStatusReporter = js.Function3[/* diagnostic */ Diagnostic, /* newLine */ String, /* options */ CompilerOptions, Unit]
+  type WatchStatusReporter = js.Function4[
+    /* diagnostic */ Diagnostic, 
+    /* newLine */ String, 
+    /* options */ CompilerOptions, 
+    /* errorCount */ js.UndefOr[Double], 
+    Unit
+  ]
   type WithMetadata[T] = T with Anon_Metadata
   type WriteFileCallback = js.Function5[
     /* fileName */ String, 

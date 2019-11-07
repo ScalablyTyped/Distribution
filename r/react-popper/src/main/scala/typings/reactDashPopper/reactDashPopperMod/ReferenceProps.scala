@@ -1,24 +1,21 @@
 package typings.reactDashPopper.reactDashPopperMod
 
 import typings.react.reactMod.ReactNode
-import typings.std.HTMLElement
+import typings.react.reactMod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReferenceProps extends js.Object {
-  var innerRef: js.UndefOr[RefHandler] = js.undefined
+  var innerRef: js.UndefOr[Ref[_]] = js.undefined
   def children(props: ReferenceChildrenProps): ReactNode
 }
 
 object ReferenceProps {
   @scala.inline
-  def apply(
-    children: ReferenceChildrenProps => ReactNode,
-    innerRef: /* ref */ HTMLElement | Null => Unit = null
-  ): ReferenceProps = {
+  def apply(children: ReferenceChildrenProps => ReactNode, innerRef: Ref[_] = null): ReferenceProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (innerRef != null) __obj.updateDynamic("innerRef")(js.Any.fromFunction1(innerRef))
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceProps]
   }
 }

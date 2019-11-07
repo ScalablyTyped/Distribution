@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-chartjs-2"
-version := "2.8.0-f2f37c"
+version := "2.8.0-8b4299"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chart_dot_js" % "2.8-dt-20191029Z-19db59",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "chart_dot_js" % "2.8-dt-20191029Z-eaa1ef",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -7,12 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Instance extends js.Object {
-  val exports: js.Any
+  val exports: Exports
 }
 
 @JSGlobal("WebAssembly.Instance")
 @js.native
 object Instance
   extends Instantiable1[/* module */ Module, Instance]
-     with Instantiable2[/* module */ Module, /* importObject */ js.Any, Instance]
+     with Instantiable2[/* module */ Module, /* importObject */ Imports, Instance]
 

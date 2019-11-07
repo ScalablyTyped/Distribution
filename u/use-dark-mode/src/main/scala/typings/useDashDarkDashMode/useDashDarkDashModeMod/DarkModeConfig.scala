@@ -1,57 +1,47 @@
 package typings.useDashDarkDashMode.useDashDarkDashModeMod
 
-import typings.std.Element
-import typings.std.Storage
+import typings.std.HTMLElement
+import typings.std.Window
+import typings.std.WindowLocalStorage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DarkModeConfig extends js.Object {
-  /**
-    * The class to apply. Default = `dark-mode`.
-    */
-  var classNameDark: String
-  /**
-    * The class to apply. Default = `light-mode`.
-    */
-  var classNameLight: String
-  /**
-    * The element to apply the class name. Default = `document.body`.
-    */
-  var element: Element
-  /**
-    * A string that will be used by the `storageProvider` to persist the
-    * dark mode value. If you specify a value of `null`, nothing will not
-    * be persisted. Default = `darkMode`.
-    */
-  var storageKey: String | Null
-  /**
-    * A storage provider. Default = `localStorage`. You will generally
-    * never need to change this value.
-    */
-  var storageProvider: Storage
-  /**
-    * A function that will be called when the dark mode value changes and
-    * it is safe to access the DOM (i.e. it is called from within a
-    * `useEffect`). If you specify `onChange` then `classNameDark`,
-    * `classNameLight`, and `element` are ignored (i.e. no classes are
-    * automatically placed on the DOM). You have full control!
-    */
-  def onChange(value: Boolean): Unit
+  var classNameDark: js.UndefOr[String] = js.undefined
+   // A className to set "dark mode". Default = "dark-mode".
+  var classNameLight: js.UndefOr[String] = js.undefined
+   // A className to set "light mode". Default = "light-mode".
+  var element: js.UndefOr[HTMLElement] = js.undefined
+   // A storage provider. Default = `localStorage`.
+  var global: js.UndefOr[Window] = js.undefined
+   // The element to apply the className. Default = `document.body`
+  var onChange: js.UndefOr[js.Function1[/* val */ js.UndefOr[Boolean], Unit]] = js.undefined
+   // Overide the default className handler with a custom callback.
+  var storageKey: js.UndefOr[String] = js.undefined
+   // Specify the `localStorage` key. Default = "darkMode". Sewt to `null` to disable persistent storage.
+  var storageProvider: js.UndefOr[WindowLocalStorage] = js.undefined
 }
 
 object DarkModeConfig {
   @scala.inline
   def apply(
-    classNameDark: String,
-    classNameLight: String,
-    element: Element,
-    onChange: Boolean => Unit,
-    storageProvider: Storage,
-    storageKey: String = null
+    classNameDark: String = null,
+    classNameLight: String = null,
+    element: HTMLElement = null,
+    global: Window = null,
+    onChange: /* val */ js.UndefOr[Boolean] => Unit = null,
+    storageKey: String = null,
+    storageProvider: WindowLocalStorage = null
   ): DarkModeConfig = {
-    val __obj = js.Dynamic.literal(classNameDark = classNameDark, classNameLight = classNameLight, element = element, onChange = js.Any.fromFunction1(onChange), storageProvider = storageProvider)
+    val __obj = js.Dynamic.literal()
+    if (classNameDark != null) __obj.updateDynamic("classNameDark")(classNameDark)
+    if (classNameLight != null) __obj.updateDynamic("classNameLight")(classNameLight)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (global != null) __obj.updateDynamic("global")(global)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (storageKey != null) __obj.updateDynamic("storageKey")(storageKey)
+    if (storageProvider != null) __obj.updateDynamic("storageProvider")(storageProvider)
     __obj.asInstanceOf[DarkModeConfig]
   }
 }

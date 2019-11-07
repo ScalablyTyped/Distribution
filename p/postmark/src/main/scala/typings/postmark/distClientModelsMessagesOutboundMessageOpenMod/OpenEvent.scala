@@ -8,6 +8,7 @@ trait OpenEvent extends js.Object {
   var Client: ClientDetails
   var Geo: GeoLocation
   var MessageID: String
+  var MessageStream: String
   var OS: ClientDetails
   var Platform: String
   var ReadSeconds: Double
@@ -24,6 +25,7 @@ object OpenEvent {
     Client: ClientDetails,
     Geo: GeoLocation,
     MessageID: String,
+    MessageStream: String,
     OS: ClientDetails,
     Platform: String,
     ReadSeconds: Double,
@@ -33,7 +35,7 @@ object OpenEvent {
     Tag: String,
     UserAgent: String
   ): OpenEvent = {
-    val __obj = js.Dynamic.literal(Client = Client, Geo = Geo, MessageID = MessageID, OS = OS, Platform = Platform, ReadSeconds = ReadSeconds, ReceivedAt = ReceivedAt, Recipient = Recipient, RecordType = RecordType, Tag = Tag, UserAgent = UserAgent)
+    val __obj = js.Dynamic.literal(Client = Client, Geo = Geo, MessageID = MessageID, MessageStream = MessageStream, OS = OS, Platform = Platform, ReadSeconds = ReadSeconds, ReceivedAt = ReceivedAt, Recipient = Recipient, RecordType = RecordType, Tag = Tag, UserAgent = UserAgent)
   
     __obj.asInstanceOf[OpenEvent]
   }

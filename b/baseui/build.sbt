@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "baseui"
-version := "9.14.0-8b849c"
+version := "9.15.0-9c0068"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-550e52",
-  "org.scalablytyped" %%% "date-fns" % "2.6.0-0ece73",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-08cc8a",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-9e835e",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "styletron-react" % "5.0-dt-20190925Z-0c724a",
-  "org.scalablytyped" %%% "styletron-standard" % "2.0-dt-20190514Z-7ff2bd")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
+  "org.scalablytyped" %%% "date-fns" % "2.6.0-de4421",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
+  "org.scalablytyped" %%% "styletron-react" % "5.0-dt-20190925Z-b7c9ea",
+  "org.scalablytyped" %%% "styletron-standard" % "2.0-dt-20190514Z-b2c469")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

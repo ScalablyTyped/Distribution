@@ -7,9 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("orientjs", "ODatabaseSession")
 @js.native
-class ODatabaseSession () extends js.Object {
+class ODatabaseSession () extends ODatabase {
   def this(client: OrientDBClient) = this()
   def this(client: OrientDBClient, options: ODatabaseSessionOptions) = this()
+  var pool: ODatabaseSessionPool = js.native
+  var sessionManager: OSessionManager = js.native
   /**
     * Execute an SQL batch script against the database and retreive the results
     * @param   batch                    The SQL batch to execute.
@@ -20,6 +22,12 @@ class ODatabaseSession () extends js.Object {
     */
   def batch[R](batch: String): OResult[R] = js.native
   def batch[R](batch: String, options: Anon_PageSize): OResult[R] = js.native
+  /**
+    * Begin a transaction in this database session. ODatabaseSession supports only 1 transaction at time.
+    * Use multiple sessions if you want to run concurrent transactions.
+    * @returns {ODatabaseTransaction} The new transaction
+    */
+  def begin(): ODatabaseTransaction = js.native
   /**
     * Close the database session. If the session is pooled, the instance is returned to the pool,
     * leaving the session open on the server.

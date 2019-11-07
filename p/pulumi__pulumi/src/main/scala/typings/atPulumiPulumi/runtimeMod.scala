@@ -24,6 +24,7 @@ import typings.atPulumiPulumi.runtimeClosureSerializeClosureMod.SerializeFunctio
 import typings.atPulumiPulumi.runtimeClosureSerializeClosureMod.SerializedFunction
 import typings.atPulumiPulumi.runtimeRpcMod.OutputResolvers
 import typings.atPulumiPulumi.runtimeStackMod.Stack
+import typings.atPulumiQuery.interfacesMod.AsyncIterable
 import typings.atPulumiQuery.interfacesMod.AsyncQueryable
 import typings.std.Map
 import typings.std.Record
@@ -35,6 +36,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/pulumi/runtime", JSImport.Namespace)
 @js.native
 object runtimeMod extends js.Object {
+  @js.native
+  class StreamInvokeResponse[T] protected ()
+    extends typings.atPulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[T] {
+    def this(source: AsyncIterable[T], cancelSource: js.Function0[Unit]) = this()
+  }
+  
   var excessiveDebugOutput: Boolean = js.native
   val rootPulumiStackTypeName: `pulumi:pulumi:Stack` = js.native
   val specialArchiveSig: `0def7320c3a5731c473e5ecbe6d01bc7` = js.native
@@ -103,6 +110,8 @@ object runtimeMod extends js.Object {
   def serializeResourceProperties(label: String, props: Inputs): js.Promise[js.Tuple2[Record[String, _], Map[String, Set[Resource]]]] = js.native
   def setConfig(k: String, v: String): Unit = js.native
   def setRootResource(res: ComponentResource): js.Promise[Unit] = js.native
+  def streamInvoke(tok: String, props: Inputs): js.Promise[typings.atPulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[_]] = js.native
+  def streamInvoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[typings.atPulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[_]] = js.native
   def transferProperties(onto: Resource, label: String, props: Inputs): OutputResolvers = js.native
 }
 

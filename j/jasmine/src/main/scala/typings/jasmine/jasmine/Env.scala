@@ -26,6 +26,7 @@ trait Env extends js.Object {
   def clearReporters(): Unit = js.native
   def compareObjects_(a: js.Any, b: js.Any, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
   def compareRegExps_(a: RegExp, b: RegExp, mismatchKeys: js.Array[String], mismatchValues: js.Array[String]): Boolean = js.native
+  def configure(configuration: EnvConfiguration): Unit = js.native
   def contains_(haystack: js.Any, needle: js.Any): Boolean = js.native
   def currentRunner(): Runner = js.native
   def describe(description: String, specDefinitions: js.Function0[Unit]): Suite = js.native
@@ -35,10 +36,23 @@ trait Env extends js.Object {
   def nextSpecId(): Double = js.native
   def provideFallbackReporter(reporter: Reporter): Unit = js.native
   def randomTests(): Boolean = js.native
+  /**
+    * @deprecated Use random option in {@link jasmine.Env.configure} instead.
+    */
   def randomizeTests(b: Boolean): Unit = js.native
+  /**
+    * @deprecated Use seed option in {@link jasmine.Env.configure} instead.
+    */
   def seed(seed: String): String | Double = js.native
   def seed(seed: Double): String | Double = js.native
   def specFilter(spec: Spec): Boolean = js.native
+  /**
+    * @deprecated Use failFast option in {@link jasmine.Env.configure} instead.
+    */
+  def stopOnSpecFailure(value: Boolean): Unit = js.native
+  /**
+    * @deprecated Use oneFailurePerSpec option in {@link jasmine.Env.configure} instead.
+    */
   def throwOnExpectationFailure(value: Boolean): Unit = js.native
   def throwingExpectationFailures(): Boolean = js.native
   def version(): js.Any = js.native

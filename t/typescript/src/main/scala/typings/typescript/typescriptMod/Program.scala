@@ -1,5 +1,6 @@
 package typings.typescript.typescriptMod
 
+import typings.typescript.Anon_Assignable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,9 +40,12 @@ trait Program extends ScriptReferenceHost {
   def getDeclarationDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
   def getGlobalDiagnostics(): js.Array[Diagnostic] = js.native
   def getGlobalDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
+  def getIdentifierCount(): Double = js.native
+  def getNodeCount(): Double = js.native
   def getOptionsDiagnostics(): js.Array[Diagnostic] = js.native
   def getOptionsDiagnostics(cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   def getProjectReferences(): js.UndefOr[js.Array[ProjectReference]] = js.native
+  def getRelationCacheSizes(): Anon_Assignable = js.native
   def getResolvedProjectReferences(): js.UndefOr[js.Array[js.UndefOr[ResolvedProjectReference]]] = js.native
   /**
     * Get a list of root file names that were passed to a 'createProgram'
@@ -55,6 +59,7 @@ trait Program extends ScriptReferenceHost {
     * Get a list of files in the program
     */
   def getSourceFiles(): js.Array[SourceFile] = js.native
+  def getSymbolCount(): Double = js.native
   def getSyntacticDiagnostics(): js.Array[DiagnosticWithLocation] = js.native
   def getSyntacticDiagnostics(sourceFile: SourceFile): js.Array[DiagnosticWithLocation] = js.native
   def getSyntacticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
@@ -62,6 +67,7 @@ trait Program extends ScriptReferenceHost {
     * Gets a type checker that can be used to semantically analyze source files in the program.
     */
   def getTypeChecker(): TypeChecker = js.native
+  def getTypeCount(): Double = js.native
   def isSourceFileDefaultLibrary(file: SourceFile): Boolean = js.native
   def isSourceFileFromExternalLibrary(file: SourceFile): Boolean = js.native
 }

@@ -131,6 +131,10 @@ object libDistNavigationMod extends js.Object {
       * Show overlay on top of the entire app
       */
     def showOverlay[P](layout: Layout[P]): js.Promise[_] = js.native
+    /**
+      * Update a mounted component's props
+      */
+    def updateProps(componentId: String, props: js.Object): Unit = js.native
   }
   
 }

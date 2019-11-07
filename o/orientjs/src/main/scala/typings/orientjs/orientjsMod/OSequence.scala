@@ -27,12 +27,6 @@ class OSequence () extends js.Object {
     * @return                The db instance.
     */
   def cacheData(sequences: js.Array[OSequence]): ODB = js.native
-  /**
-    * Configure the sequence instance.
-    * @param  config The configuration object.
-    */
-  def configure(): Unit = js.native
-  def configure(config: js.Any): Unit = js.native
   @JSName("create")
   def create_CACHED(name: String, `type`: CACHED): js.Promise[OSequence] = js.native
   @JSName("create")
@@ -77,6 +71,10 @@ class OSequence () extends js.Object {
     */
   def get(name: String): js.Promise[OSequence] = js.native
   def get(name: String, refresh: Boolean): js.Promise[OSequence] = js.native
+  /**
+    * Configure the sequence instance.
+    * @param  config The configuration object.
+    */
   /**
     * Retreive a list of sequences from the database.
     *

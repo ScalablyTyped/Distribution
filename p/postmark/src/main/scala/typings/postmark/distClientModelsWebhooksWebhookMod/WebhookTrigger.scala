@@ -1,0 +1,19 @@
+package typings.postmark.distClientModelsWebhooksWebhookMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait WebhookTrigger extends js.Object {
+  var Enabled: Boolean
+}
+
+object WebhookTrigger {
+  @scala.inline
+  def apply(Enabled: Boolean): WebhookTrigger = {
+    val __obj = js.Dynamic.literal(Enabled = Enabled)
+  
+    __obj.asInstanceOf[WebhookTrigger]
+  }
+}
+

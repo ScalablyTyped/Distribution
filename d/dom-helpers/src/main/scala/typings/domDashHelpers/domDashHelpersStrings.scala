@@ -103,10 +103,37 @@ object domDashHelpersStrings {
   sealed trait baselineShift extends Styles
   
   @js.native
+  sealed trait blockSize extends Styles
+  
+  @js.native
   sealed trait blur extends js.Object
   
   @js.native
   sealed trait border extends Styles
+  
+  @js.native
+  sealed trait borderBlockEnd extends Styles
+  
+  @js.native
+  sealed trait borderBlockEndColor extends Styles
+  
+  @js.native
+  sealed trait borderBlockEndStyle extends Styles
+  
+  @js.native
+  sealed trait borderBlockEndWidth extends Styles
+  
+  @js.native
+  sealed trait borderBlockStart extends Styles
+  
+  @js.native
+  sealed trait borderBlockStartColor extends Styles
+  
+  @js.native
+  sealed trait borderBlockStartStyle extends Styles
+  
+  @js.native
+  sealed trait borderBlockStartWidth extends Styles
   
   @js.native
   sealed trait borderBottom extends Styles
@@ -149,6 +176,30 @@ object domDashHelpersStrings {
   
   @js.native
   sealed trait borderImageWidth extends Styles
+  
+  @js.native
+  sealed trait borderInlineEnd extends Styles
+  
+  @js.native
+  sealed trait borderInlineEndColor extends Styles
+  
+  @js.native
+  sealed trait borderInlineEndStyle extends Styles
+  
+  @js.native
+  sealed trait borderInlineEndWidth extends Styles
+  
+  @js.native
+  sealed trait borderInlineStart extends Styles
+  
+  @js.native
+  sealed trait borderInlineStartColor extends Styles
+  
+  @js.native
+  sealed trait borderInlineStartStyle extends Styles
+  
+  @js.native
+  sealed trait borderInlineStartWidth extends Styles
   
   @js.native
   sealed trait borderLeft extends Styles
@@ -260,6 +311,9 @@ object domDashHelpersStrings {
   
   @js.native
   sealed trait color extends Styles
+  
+  @js.native
+  sealed trait colorInterpolation extends Styles
   
   @js.native
   sealed trait colorInterpolationFilters extends Styles
@@ -412,6 +466,9 @@ object domDashHelpersStrings {
   sealed trait flexWrap extends Styles
   
   @js.native
+  sealed trait float extends Styles
+  
+  @js.native
   sealed trait floodColor extends Styles
   
   @js.native
@@ -562,6 +619,9 @@ object domDashHelpersStrings {
   sealed trait imeMode extends Styles
   
   @js.native
+  sealed trait inlineSize extends Styles
+  
+  @js.native
   sealed trait input extends js.Object
   
   @js.native
@@ -655,7 +715,19 @@ object domDashHelpersStrings {
   sealed trait margin extends Styles
   
   @js.native
+  sealed trait marginBlockEnd extends Styles
+  
+  @js.native
+  sealed trait marginBlockStart extends Styles
+  
+  @js.native
   sealed trait marginBottom extends Styles
+  
+  @js.native
+  sealed trait marginInlineEnd extends Styles
+  
+  @js.native
+  sealed trait marginInlineStart extends Styles
   
   @js.native
   sealed trait marginLeft extends Styles
@@ -700,13 +772,25 @@ object domDashHelpersStrings {
   sealed trait maskType extends Styles
   
   @js.native
+  sealed trait maxBlockSize extends Styles
+  
+  @js.native
   sealed trait maxHeight extends Styles
+  
+  @js.native
+  sealed trait maxInlineSize extends Styles
   
   @js.native
   sealed trait maxWidth extends Styles
   
   @js.native
+  sealed trait minBlockSize extends Styles
+  
+  @js.native
   sealed trait minHeight extends Styles
+  
+  @js.native
+  sealed trait minInlineSize extends Styles
   
   @js.native
   sealed trait minWidth extends Styles
@@ -922,7 +1006,19 @@ object domDashHelpersStrings {
   sealed trait padding extends Styles
   
   @js.native
+  sealed trait paddingBlockEnd extends Styles
+  
+  @js.native
+  sealed trait paddingBlockStart extends Styles
+  
+  @js.native
   sealed trait paddingBottom extends Styles
+  
+  @js.native
+  sealed trait paddingInlineEnd extends Styles
+  
+  @js.native
+  sealed trait paddingInlineStart extends Styles
   
   @js.native
   sealed trait paddingLeft extends Styles
@@ -941,6 +1037,9 @@ object domDashHelpersStrings {
   
   @js.native
   sealed trait pageBreakInside extends Styles
+  
+  @js.native
+  sealed trait paintOrder extends Styles
   
   @js.native
   sealed trait parentRule extends Styles
@@ -1066,6 +1165,9 @@ object domDashHelpersStrings {
   sealed trait selectstart extends js.Object
   
   @js.native
+  sealed trait shapeRendering extends Styles
+  
+  @js.native
   sealed trait stalled extends js.Object
   
   @js.native
@@ -1163,6 +1265,9 @@ object domDashHelpersStrings {
   
   @js.native
   sealed trait textOverflow extends Styles
+  
+  @js.native
+  sealed trait textRendering extends Styles
   
   @js.native
   sealed trait textShadow extends Styles
@@ -1616,9 +1721,27 @@ object domDashHelpersStrings {
   @scala.inline
   def baselineShift: baselineShift = "baselineShift".asInstanceOf[baselineShift]
   @scala.inline
+  def blockSize: blockSize = "blockSize".asInstanceOf[blockSize]
+  @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
   def border: border = "border".asInstanceOf[border]
+  @scala.inline
+  def borderBlockEnd: borderBlockEnd = "borderBlockEnd".asInstanceOf[borderBlockEnd]
+  @scala.inline
+  def borderBlockEndColor: borderBlockEndColor = "borderBlockEndColor".asInstanceOf[borderBlockEndColor]
+  @scala.inline
+  def borderBlockEndStyle: borderBlockEndStyle = "borderBlockEndStyle".asInstanceOf[borderBlockEndStyle]
+  @scala.inline
+  def borderBlockEndWidth: borderBlockEndWidth = "borderBlockEndWidth".asInstanceOf[borderBlockEndWidth]
+  @scala.inline
+  def borderBlockStart: borderBlockStart = "borderBlockStart".asInstanceOf[borderBlockStart]
+  @scala.inline
+  def borderBlockStartColor: borderBlockStartColor = "borderBlockStartColor".asInstanceOf[borderBlockStartColor]
+  @scala.inline
+  def borderBlockStartStyle: borderBlockStartStyle = "borderBlockStartStyle".asInstanceOf[borderBlockStartStyle]
+  @scala.inline
+  def borderBlockStartWidth: borderBlockStartWidth = "borderBlockStartWidth".asInstanceOf[borderBlockStartWidth]
   @scala.inline
   def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
   @scala.inline
@@ -1647,6 +1770,22 @@ object domDashHelpersStrings {
   def borderImageSource: borderImageSource = "borderImageSource".asInstanceOf[borderImageSource]
   @scala.inline
   def borderImageWidth: borderImageWidth = "borderImageWidth".asInstanceOf[borderImageWidth]
+  @scala.inline
+  def borderInlineEnd: borderInlineEnd = "borderInlineEnd".asInstanceOf[borderInlineEnd]
+  @scala.inline
+  def borderInlineEndColor: borderInlineEndColor = "borderInlineEndColor".asInstanceOf[borderInlineEndColor]
+  @scala.inline
+  def borderInlineEndStyle: borderInlineEndStyle = "borderInlineEndStyle".asInstanceOf[borderInlineEndStyle]
+  @scala.inline
+  def borderInlineEndWidth: borderInlineEndWidth = "borderInlineEndWidth".asInstanceOf[borderInlineEndWidth]
+  @scala.inline
+  def borderInlineStart: borderInlineStart = "borderInlineStart".asInstanceOf[borderInlineStart]
+  @scala.inline
+  def borderInlineStartColor: borderInlineStartColor = "borderInlineStartColor".asInstanceOf[borderInlineStartColor]
+  @scala.inline
+  def borderInlineStartStyle: borderInlineStartStyle = "borderInlineStartStyle".asInstanceOf[borderInlineStartStyle]
+  @scala.inline
+  def borderInlineStartWidth: borderInlineStartWidth = "borderInlineStartWidth".asInstanceOf[borderInlineStartWidth]
   @scala.inline
   def borderLeft: borderLeft = "borderLeft".asInstanceOf[borderLeft]
   @scala.inline
@@ -1721,6 +1860,8 @@ object domDashHelpersStrings {
   def close: close = "close".asInstanceOf[close]
   @scala.inline
   def color: color = "color".asInstanceOf[color]
+  @scala.inline
+  def colorInterpolation: colorInterpolation = "colorInterpolation".asInstanceOf[colorInterpolation]
   @scala.inline
   def colorInterpolationFilters: colorInterpolationFilters = "colorInterpolationFilters".asInstanceOf[colorInterpolationFilters]
   @scala.inline
@@ -1822,6 +1963,8 @@ object domDashHelpersStrings {
   @scala.inline
   def flexWrap: flexWrap = "flexWrap".asInstanceOf[flexWrap]
   @scala.inline
+  def float: float = "float".asInstanceOf[float]
+  @scala.inline
   def floodColor: floodColor = "floodColor".asInstanceOf[floodColor]
   @scala.inline
   def floodOpacity: floodOpacity = "floodOpacity".asInstanceOf[floodOpacity]
@@ -1922,6 +2065,8 @@ object domDashHelpersStrings {
   @scala.inline
   def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
   @scala.inline
+  def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
@@ -1984,7 +2129,15 @@ object domDashHelpersStrings {
   @scala.inline
   def margin: margin = "margin".asInstanceOf[margin]
   @scala.inline
+  def marginBlockEnd: marginBlockEnd = "marginBlockEnd".asInstanceOf[marginBlockEnd]
+  @scala.inline
+  def marginBlockStart: marginBlockStart = "marginBlockStart".asInstanceOf[marginBlockStart]
+  @scala.inline
   def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
+  @scala.inline
+  def marginInlineEnd: marginInlineEnd = "marginInlineEnd".asInstanceOf[marginInlineEnd]
+  @scala.inline
+  def marginInlineStart: marginInlineStart = "marginInlineStart".asInstanceOf[marginInlineStart]
   @scala.inline
   def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
   @scala.inline
@@ -2014,11 +2167,19 @@ object domDashHelpersStrings {
   @scala.inline
   def maskType: maskType = "maskType".asInstanceOf[maskType]
   @scala.inline
+  def maxBlockSize: maxBlockSize = "maxBlockSize".asInstanceOf[maxBlockSize]
+  @scala.inline
   def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
+  @scala.inline
+  def maxInlineSize: maxInlineSize = "maxInlineSize".asInstanceOf[maxInlineSize]
   @scala.inline
   def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
   @scala.inline
+  def minBlockSize: minBlockSize = "minBlockSize".asInstanceOf[minBlockSize]
+  @scala.inline
   def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
+  @scala.inline
+  def minInlineSize: minInlineSize = "minInlineSize".asInstanceOf[minInlineSize]
   @scala.inline
   def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
   @scala.inline
@@ -2162,7 +2323,15 @@ object domDashHelpersStrings {
   @scala.inline
   def padding: padding = "padding".asInstanceOf[padding]
   @scala.inline
+  def paddingBlockEnd: paddingBlockEnd = "paddingBlockEnd".asInstanceOf[paddingBlockEnd]
+  @scala.inline
+  def paddingBlockStart: paddingBlockStart = "paddingBlockStart".asInstanceOf[paddingBlockStart]
+  @scala.inline
   def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
+  @scala.inline
+  def paddingInlineEnd: paddingInlineEnd = "paddingInlineEnd".asInstanceOf[paddingInlineEnd]
+  @scala.inline
+  def paddingInlineStart: paddingInlineStart = "paddingInlineStart".asInstanceOf[paddingInlineStart]
   @scala.inline
   def paddingLeft: paddingLeft = "paddingLeft".asInstanceOf[paddingLeft]
   @scala.inline
@@ -2175,6 +2344,8 @@ object domDashHelpersStrings {
   def pageBreakBefore: pageBreakBefore = "pageBreakBefore".asInstanceOf[pageBreakBefore]
   @scala.inline
   def pageBreakInside: pageBreakInside = "pageBreakInside".asInstanceOf[pageBreakInside]
+  @scala.inline
+  def paintOrder: paintOrder = "paintOrder".asInstanceOf[paintOrder]
   @scala.inline
   def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
   @scala.inline
@@ -2258,6 +2429,8 @@ object domDashHelpersStrings {
   @scala.inline
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
+  def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
+  @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
   def stopColor: stopColor = "stopColor".asInstanceOf[stopColor]
@@ -2323,6 +2496,8 @@ object domDashHelpersStrings {
   def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
   @scala.inline
   def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
+  @scala.inline
+  def textRendering: textRendering = "textRendering".asInstanceOf[textRendering]
   @scala.inline
   def textShadow: textShadow = "textShadow".asInstanceOf[textShadow]
   @scala.inline

@@ -20,6 +20,7 @@ import typings.postmark.distClientModelsMod.ClientOptions.Configuration
 import typings.postmark.distClientModelsMod.CreateInboundRuleRequest
 import typings.postmark.distClientModelsMod.CreateTagTriggerRequest
 import typings.postmark.distClientModelsMod.CreateTemplateRequest
+import typings.postmark.distClientModelsMod.CreateWebhookRequest
 import typings.postmark.distClientModelsMod.FilteringParameters
 import typings.postmark.distClientModelsMod.InboundMessagesFilteringParameters
 import typings.postmark.distClientModelsMod.Message
@@ -34,6 +35,8 @@ import typings.postmark.distClientModelsMod.TemplatedMessage
 import typings.postmark.distClientModelsMod.UpdateServerRequest
 import typings.postmark.distClientModelsMod.UpdateTagTriggerRequest
 import typings.postmark.distClientModelsMod.UpdateTemplateRequest
+import typings.postmark.distClientModelsMod.UpdateWebhookRequest
+import typings.postmark.distClientModelsMod.WebhookFilteringParameters
 import typings.postmark.distClientModelsServerServerMod.Server
 import typings.postmark.distClientModelsStatsStatsMod.BounceCounts
 import typings.postmark.distClientModelsStatsStatsMod.BrowserUsageCounts
@@ -55,6 +58,8 @@ import typings.postmark.distClientModelsTriggersInboundRuleMod.InboundRule
 import typings.postmark.distClientModelsTriggersInboundRuleMod.InboundRules
 import typings.postmark.distClientModelsTriggersTagMod.TagTrigger
 import typings.postmark.distClientModelsTriggersTagMod.TagTriggers
+import typings.postmark.distClientModelsWebhooksWebhookMod.Webhook
+import typings.postmark.distClientModelsWebhooksWebhooksMod.Webhooks
 import typings.postmark.distClientServerClientMod.ServerClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -112,6 +117,15 @@ object distClientServerClientMod extends js.Object {
     def createTemplate(options: CreateTemplateRequest): js.Promise[Template] = js.native
     def createTemplate(options: CreateTemplateRequest, callback: Callback[Template]): js.Promise[Template] = js.native
     /**
+      * Create a Webhook on the associated server.
+      *
+      * @param options - Configuration options to be used when creating Webhook trigger.
+      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
+      * @returns A promise that will complete when the API responds (or an error occurs).
+      */
+    def createWebhook(options: CreateWebhookRequest): js.Promise[Webhook] = js.native
+    def createWebhook(options: CreateWebhookRequest, callback: Callback[Webhook]): js.Promise[Webhook] = js.native
+    /**
       * Delete an Inbound Rule Trigger.
       *
       * @param id - The ID of the Inbound Rule Trigger you wish to delete.
@@ -140,6 +154,15 @@ object distClientServerClientMod extends js.Object {
       */
     def deleteTemplate(idOrAlias: Double): js.Promise[DefaultResponse] = js.native
     def deleteTemplate(idOrAlias: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
+    /**
+      * Delete an existing Webhook.
+      *
+      * @param id - The ID of the Webhook you wish to delete.
+      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
+      * @returns A promise that will complete when the API responds (or an error occurs).
+      */
+    def deleteWebhook(id: Double): js.Promise[DefaultResponse] = js.native
+    def deleteWebhook(id: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
     /**
       * Modify the Server associated with this Client.
       *
@@ -171,6 +194,16 @@ object distClientServerClientMod extends js.Object {
       */
     def editTemplate(idOrAlias: Double, options: UpdateTemplateRequest): js.Promise[Template] = js.native
     def editTemplate(idOrAlias: Double, options: UpdateTemplateRequest, callback: Callback[Template]): js.Promise[Template] = js.native
+    /**
+      * Update Webhook on the associated server.
+      *
+      * @param id - Id of the webhook you wish to update.
+      * @param options - Webhook options you wish to update.
+      * @param callback If the callback is provided, it will be passed to the resulting promise as a continuation.
+      * @returns A promise that will complete when the API responds (or an error occurs).
+      */
+    def editWebhook(id: Double, options: UpdateWebhookRequest): js.Promise[Webhook] = js.native
+    def editWebhook(id: Double, options: UpdateWebhookRequest, callback: Callback[Webhook]): js.Promise[Webhook] = js.native
     /**
       * Get details for a specific Bounce.
       *
@@ -498,6 +531,25 @@ object distClientServerClientMod extends js.Object {
     def getTrackedEmailCounts(): js.Promise[TrackedEmailCounts] = js.native
     def getTrackedEmailCounts(filter: StatisticsFilteringParameters): js.Promise[TrackedEmailCounts] = js.native
     def getTrackedEmailCounts(filter: StatisticsFilteringParameters, callback: Callback[TrackedEmailCounts]): js.Promise[TrackedEmailCounts] = js.native
+    /**
+      * Get details for a specific Webhook.
+      *
+      * @param id - The ID of the Webhook you wish to retrieve.
+      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
+      * @returns A promise that will complete when the API responds (or an error occurs).
+      */
+    def getWebhook(id: Double): js.Promise[Webhook] = js.native
+    def getWebhook(id: Double, callback: Callback[Webhook]): js.Promise[Webhook] = js.native
+    /**
+      * Get the list of Webhooks for specific server.
+      *
+      * @param filter - Optional filtering parameters
+      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
+      * @returns A promise that will complete when the API responds (or an error occurs).
+      */
+    def getWebhooks(): js.Promise[Webhooks] = js.native
+    def getWebhooks(filter: WebhookFilteringParameters): js.Promise[Webhooks] = js.native
+    def getWebhooks(filter: WebhookFilteringParameters, callback: Callback[Webhooks]): js.Promise[Webhooks] = js.native
     /**
       * Request that Postmark retry POSTing to the Inbound Hook for the specified message.
       *

@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.std.EventTarget because Already inherited
 - typings.std.Node because Already inherited
-- typings.std.Animatable because Already inherited
-- typings.std.InnerHTML because Already inherited
 - typings.std.Slotable because Already inherited
-- typings.std.NonDocumentTypeChildNode because Already inherited
 - typings.std.ParentNode because Already inherited
+- typings.std.NonDocumentTypeChildNode because Already inherited
+- typings.std.InnerHTML because Already inherited
+- typings.std.Animatable because Already inherited
 - typings.std.ChildNode because Already inherited
-- typings.std.ElementCSSInlineStyle because Already inherited
 - typings.std.HTMLOrSVGElement because Already inherited
-- typings.std.ElementContentEditable because Already inherited
-- typings.std.DocumentAndElementEventHandlers because Already inherited
 - typings.std.GlobalEventHandlers because Already inherited
+- typings.std.ElementContentEditable because Already inherited
+- typings.std.ElementCSSInlineStyle because Already inherited
+- typings.std.DocumentAndElementEventHandlers because Already inherited
 - typings.std.Element because Already inherited
 - typings.std.HTMLElement because Already inherited
 - typings.skatejs.typesMod.WithContext because Inheritance from two classes. Inlined context

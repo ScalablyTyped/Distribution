@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "html-minifier"
-version := "3.5-dt-20190212Z-5d963c"
+version := "3.5-dt-20190212Z-d270be"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-4d963a",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
-  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-707462",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-54a40f",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-2f0bcb")
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-6f4fa1",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-516daa",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-00bd51",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-391be5")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

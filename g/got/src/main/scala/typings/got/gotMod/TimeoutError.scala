@@ -1,5 +1,12 @@
 package typings.got.gotMod
 
+import typings.got.gotStrings.connect
+import typings.got.gotStrings.lookup
+import typings.got.gotStrings.request
+import typings.got.gotStrings.response
+import typings.got.gotStrings.secureConnect
+import typings.got.gotStrings.send
+import typings.got.gotStrings.socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +14,7 @@ import scala.scalajs.js.annotation._
 trait TimeoutError
   extends StdError
      with GotError {
+  var event: lookup | connect | secureConnect | socket | response | send | request
   @JSName("name")
   var name_TimeoutError: typings.got.gotStrings.TimeoutError
 }
@@ -14,6 +22,7 @@ trait TimeoutError
 object TimeoutError {
   @scala.inline
   def apply(
+    event: lookup | connect | secureConnect | socket | response | send | request,
     message: String,
     name: typings.got.gotStrings.TimeoutError,
     code: String = null,
@@ -26,7 +35,7 @@ object TimeoutError {
     stack: String = null,
     url: String = null
   ): TimeoutError = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], message = message, name = name)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

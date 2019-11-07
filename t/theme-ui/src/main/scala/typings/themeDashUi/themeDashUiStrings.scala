@@ -346,9 +346,6 @@ object themeDashUiStrings {
   sealed trait meter extends js.Object
   
   @js.native
-  sealed trait modes extends js.Object
-  
-  @js.native
   sealed trait nav extends js.Object
   
   @js.native
@@ -766,8 +763,6 @@ object themeDashUiStrings {
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
-  @scala.inline
-  def modes: modes = "modes".asInstanceOf[modes]
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline

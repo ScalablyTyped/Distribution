@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Memory extends js.Object {
+trait Memory extends _ExportValue {
   val buffer: ArrayBuffer
   def grow(delta: Double): Double
 }

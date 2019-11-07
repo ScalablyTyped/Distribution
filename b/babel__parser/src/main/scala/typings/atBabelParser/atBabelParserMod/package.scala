@@ -38,6 +38,7 @@ package object atBabelParserMod {
     - typings.atBabelParser.atBabelParserStrings.pipelineOperator
     - typings.atBabelParser.atBabelParserStrings.placeholders
     - typings.atBabelParser.atBabelParserStrings.throwExpressions
+    - typings.atBabelParser.atBabelParserStrings.topLevelAwait
     - typings.atBabelParser.atBabelParserStrings.typescript
     - typings.atBabelParser.atBabelParserStrings.v8intrinsic
     - typings.atBabelParser.atBabelParserMod.ParserPluginWithOptions

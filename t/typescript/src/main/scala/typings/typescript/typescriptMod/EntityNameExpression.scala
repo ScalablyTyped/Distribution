@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.typescript.typescriptMod.Identifier
   - typings.typescript.typescriptMod.PropertyAccessEntityNameExpression
 */
-trait EntityNameExpression extends EntityNameOrEntityNameExpression
+trait EntityNameExpression
+  extends DeclarationName
+     with EntityNameOrEntityNameExpression
 

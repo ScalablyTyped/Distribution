@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation._
 - typings.typescript.typescriptMod.FlowType because Already inherited
 - typings.typescript.typescriptMod.Type because Already inherited
 - typings.typescript.typescriptMod.ObjectType because Already inherited
-- typings.typescript.typescriptMod.TypeReference because var conflicts: aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol. Inlined target, typeArguments */ trait TupleType extends InterfaceType {
+- typings.typescript.typescriptMod.TypeReference because var conflicts: aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol. Inlined target, node, typeArguments */ trait TupleType extends InterfaceType {
   var associatedNames: js.UndefOr[js.Array[__String]] = js.undefined
   var hasRestElement: Boolean
   var minLength: Double
+  var node: js.UndefOr[TypeReferenceNode | ArrayTypeNode | TupleTypeNode] = js.undefined
   var readonly: Boolean
   var target: GenericType
   var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
@@ -53,6 +54,7 @@ object TupleType {
     aliasTypeArguments: js.Array[Type] = null,
     associatedNames: js.Array[__String] = null,
     localTypeParameters: js.Array[TypeParameter] = null,
+    node: TypeReferenceNode | ArrayTypeNode | TupleTypeNode = null,
     outerTypeParameters: js.Array[TypeParameter] = null,
     pattern: DestructuringPattern = null,
     thisType: TypeParameter = null,
@@ -64,6 +66,7 @@ object TupleType {
     if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments)
     if (associatedNames != null) __obj.updateDynamic("associatedNames")(associatedNames)
     if (localTypeParameters != null) __obj.updateDynamic("localTypeParameters")(localTypeParameters)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     if (outerTypeParameters != null) __obj.updateDynamic("outerTypeParameters")(outerTypeParameters)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (thisType != null) __obj.updateDynamic("thisType")(thisType)

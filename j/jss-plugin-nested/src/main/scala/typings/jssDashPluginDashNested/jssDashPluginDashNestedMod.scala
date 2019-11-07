@@ -1,6 +1,6 @@
 package typings.jssDashPluginDashNested
 
-import typings.std.Plugin
+import typings.jss.jssMod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

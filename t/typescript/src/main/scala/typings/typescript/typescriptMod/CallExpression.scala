@@ -16,6 +16,7 @@ trait CallExpression
   var expression: LeftHandSideExpression = js.native
   @JSName("kind")
   var kind_CallExpression: typings.typescript.typescriptMod.SyntaxKind.CallExpression = js.native
+  var questionDotToken: js.UndefOr[QuestionDotToken] = js.native
   var typeArguments: js.UndefOr[NodeArray[TypeNode]] = js.native
 }
 

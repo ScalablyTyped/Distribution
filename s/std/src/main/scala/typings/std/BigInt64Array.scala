@@ -288,6 +288,7 @@ trait BigInt64Array extends /* index */ NumberDictionary[BigInt] {
     * @param begin The index of the beginning of the array.
     * @param end The index of the end of the array.
     */
+  def subarray(): BigInt64Array = js.native
   def subarray(begin: Double): BigInt64Array = js.native
   def subarray(begin: Double, end: Double): BigInt64Array = js.native
   /** Yields each value in the array. */

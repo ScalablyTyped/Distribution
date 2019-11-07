@@ -103,6 +103,9 @@ object atBabelParserStrings {
   sealed trait throwExpressions extends _ParserPlugin
   
   @js.native
+  sealed trait topLevelAwait extends _ParserPlugin
+  
+  @js.native
   sealed trait typescript extends _ParserPlugin
   
   @js.native
@@ -175,6 +178,8 @@ object atBabelParserStrings {
   def smart: smart = "smart".asInstanceOf[smart]
   @scala.inline
   def throwExpressions: throwExpressions = "throwExpressions".asInstanceOf[throwExpressions]
+  @scala.inline
+  def topLevelAwait: topLevelAwait = "topLevelAwait".asInstanceOf[topLevelAwait]
   @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   @scala.inline

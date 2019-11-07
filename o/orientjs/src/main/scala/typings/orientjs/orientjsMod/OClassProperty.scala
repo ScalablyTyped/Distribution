@@ -26,8 +26,6 @@ class OClassProperty () extends js.Object {
   var `type`: js.UndefOr[PropertyType] = js.native
   def alter(name: String): js.Promise[OClass] = js.native
   def alter(name: String, setting: js.Any): js.Promise[OClass] = js.native
-  def configure(): Unit = js.native
-  def configure(config: js.Any): Unit = js.native
   /**
     * Create a new property.
     *

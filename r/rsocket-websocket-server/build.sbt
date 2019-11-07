@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "rsocket-websocket-server"
-version := "0.0-dt-20190708Z-58f64f"
+version := "0.0-dt-20190708Z-bcbc06"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
-  "org.scalablytyped" %%% "rsocket-core" % "0.0-dt-20190708Z-578da0",
-  "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20190708Z-ce27ac",
-  "org.scalablytyped" %%% "rsocket-types" % "0.0-dt-20190708Z-6a4125",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20190823Z-3f4132")
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "rsocket-core" % "0.0-dt-20190708Z-58756c",
+  "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20190708Z-6c8884",
+  "org.scalablytyped" %%% "rsocket-types" % "0.0-dt-20190708Z-d20c81",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20190823Z-622711")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

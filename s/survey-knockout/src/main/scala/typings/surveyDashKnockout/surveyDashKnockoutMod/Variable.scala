@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Variable protected () extends Const {
   def this(variableName: String) = this()
+  val variable: String = js.native
 }
 

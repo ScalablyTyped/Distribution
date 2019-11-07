@@ -1,8 +1,8 @@
 package typings.jssDashPluginDashDefaultDashUnit
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jss.jssMod.Plugin
 import typings.jssDashPluginDashDefaultDashUnit.jssDashPluginDashDefaultDashUnitMod.Options
-import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

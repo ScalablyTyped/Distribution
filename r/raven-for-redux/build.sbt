@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "raven-for-redux"
-version := "1.1-dt-20181017Z-96a8fd"
+version := "1.1-dt-20181017Z-f62756"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "raven-js" % "3.27.2-861359",
-  "org.scalablytyped" %%% "redux" % "4.0.4-783f8a",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "raven-js" % "3.27.2-9f8051",
+  "org.scalablytyped" %%% "redux" % "4.0.4-ae4e73",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

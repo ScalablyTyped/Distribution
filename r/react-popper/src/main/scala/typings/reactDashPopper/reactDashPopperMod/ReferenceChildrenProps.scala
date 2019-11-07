@@ -1,19 +1,22 @@
 package typings.reactDashPopper.reactDashPopperMod
 
-import typings.std.HTMLElement
+import typings.react.reactMod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReferenceChildrenProps extends js.Object {
-  var ref: RefHandler
+  // React refs are supposed to be contravariant (allows a more general type to be passed rather than a more specific one)
+  // However, Typescript currently can't infer that fact for refs
+  // See https://github.com/microsoft/TypeScript/issues/30748 for more information
+  var ref: Ref[_]
 }
 
 object ReferenceChildrenProps {
   @scala.inline
-  def apply(ref: /* ref */ HTMLElement | Null => Unit): ReferenceChildrenProps = {
-    val __obj = js.Dynamic.literal(ref = js.Any.fromFunction1(ref))
-  
+  def apply(ref: Ref[_] = null): ReferenceChildrenProps = {
+    val __obj = js.Dynamic.literal()
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceChildrenProps]
   }
 }

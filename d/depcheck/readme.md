@@ -1,7 +1,7 @@
 
 # Scala.js typings for depcheck
 
-Typings are for version 0.8
+Typings are for version 0.9
 
 ## Library description:
 Check dependencies in your node module

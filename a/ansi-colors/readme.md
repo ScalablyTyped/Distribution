@@ -1,7 +1,7 @@
 
 # Scala.js typings for ansi-colors
 
-Typings are for version 3.2
+Typings are for version 4.1.1
 
 ## Library description:
 Easily add ANSI colors to your text and symbols in the terminal. A faster drop-in replacement for chalk, kleur and turbocolor (without the dependencies and rendering bugs).
@@ -24,7 +24,7 @@ Easily add ANSI colors to your text and symbols in the terminal. A faster drop-i
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -2,7 +2,7 @@ package typings.reactDashPopper.reactDashPopperMod
 
 import typings.popperDotJs.popperDotJsMod.Placement
 import typings.react.reactMod.CSSProperties
-import typings.std.HTMLElement
+import typings.react.reactMod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait PopperChildrenProps extends js.Object {
   var arrowProps: PopperArrowProps
   var outOfBoundaries: Boolean | Null
   var placement: Placement
-  var ref: RefHandler
+  var ref: Ref[_]
   var style: CSSProperties
   def scheduleUpdate(): Unit
 }
@@ -21,13 +21,14 @@ object PopperChildrenProps {
   def apply(
     arrowProps: PopperArrowProps,
     placement: Placement,
-    ref: /* ref */ HTMLElement | Null => Unit,
     scheduleUpdate: () => Unit,
     style: CSSProperties,
-    outOfBoundaries: js.UndefOr[Boolean] = js.undefined
+    outOfBoundaries: js.UndefOr[Boolean] = js.undefined,
+    ref: Ref[_] = null
   ): PopperChildrenProps = {
-    val __obj = js.Dynamic.literal(arrowProps = arrowProps, placement = placement, ref = js.Any.fromFunction1(ref), scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), style = style)
+    val __obj = js.Dynamic.literal(arrowProps = arrowProps, placement = placement, scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), style = style)
     if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopperChildrenProps]
   }
 }

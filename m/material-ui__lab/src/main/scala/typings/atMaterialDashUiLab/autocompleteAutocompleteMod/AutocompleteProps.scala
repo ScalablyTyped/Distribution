@@ -1,6 +1,5 @@
 package typings.atMaterialDashUiLab.autocompleteAutocompleteMod
 
-import typings.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps
 import typings.atMaterialDashUiLab.PartialClassNameMapAutocompleteClassKey
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`additions text`
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.`inline`
@@ -106,10 +105,6 @@ trait AutocompleteProps extends js.Object {
     * The component used to render the popup.
     */
   var PopupComponent: js.UndefOr[ComponentType[PopupProps]] = js.undefined
-  /**
-    * Props applied to the [`TextField`](/api/text-field/) element.
-    */
-  var TextFieldProps: js.UndefOr[typings.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps] = js.undefined
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -171,7 +166,7 @@ trait AutocompleteProps extends js.Object {
   /**
     * If `true`, the first option is automatically highlighted.
     */
-  var autoHightlight: js.UndefOr[Boolean] = js.undefined
+  var autoHighlight: js.UndefOr[Boolean] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
   /**
     * If `true`, the selected option becomes the value of the input
@@ -218,13 +213,17 @@ trait AutocompleteProps extends js.Object {
     * If `true`, the popup won't open on input focus.
     */
   var disableOpenOnFocus: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If `true`, the input will be disabled.
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   /**
-    * A filter function that determins the options that are eligible.
+    * A filter function that determines the options that are eligible.
     *
-    * @param {any} options The options to render.
+    * @param {any[]} options The options to render.
     * @param {object} state The state of the component.
-    * @returns {boolean}
+    * @returns {any[]}
     */
   var filterOptions: js.UndefOr[
     js.Function2[/* options */ js.Array[_], /* state */ FilterOptionsState, js.Array[_]]
@@ -542,7 +541,6 @@ object AutocompleteProps {
     ListboxComponent: ComponentType[HTMLAttributes[HTMLElement]] = null,
     PaperComponent: ComponentType[HTMLAttributes[HTMLElement]] = null,
     PopupComponent: ComponentType[PopupProps] = null,
-    TextFieldProps: TextFieldProps = null,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -596,7 +594,7 @@ object AutocompleteProps {
     autoCapitalize: String = null,
     autoComplete: js.UndefOr[Boolean] = js.undefined,
     autoCorrect: String = null,
-    autoHightlight: js.UndefOr[Boolean] = js.undefined,
+    autoHighlight: js.UndefOr[Boolean] = js.undefined,
     autoSave: String = null,
     autoSelect: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -615,6 +613,7 @@ object AutocompleteProps {
     disableCloseOnSelect: js.UndefOr[Boolean] = js.undefined,
     disableListWrap: js.UndefOr[Boolean] = js.undefined,
     disableOpenOnFocus: js.UndefOr[Boolean] = js.undefined,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     filterOptions: (/* options */ js.Array[_], /* state */ FilterOptionsState) => js.Array[_] = null,
     filterSelectedOptions: js.UndefOr[Boolean] = js.undefined,
@@ -750,7 +749,6 @@ object AutocompleteProps {
     if (ListboxComponent != null) __obj.updateDynamic("ListboxComponent")(ListboxComponent.asInstanceOf[js.Any])
     if (PaperComponent != null) __obj.updateDynamic("PaperComponent")(PaperComponent.asInstanceOf[js.Any])
     if (PopupComponent != null) __obj.updateDynamic("PopupComponent")(PopupComponent.asInstanceOf[js.Any])
-    if (TextFieldProps != null) __obj.updateDynamic("TextFieldProps")(TextFieldProps)
     if (about != null) __obj.updateDynamic("about")(about)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
@@ -804,7 +802,7 @@ object AutocompleteProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
     if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete)
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect)
-    if (!js.isUndefined(autoHightlight)) __obj.updateDynamic("autoHightlight")(autoHightlight)
+    if (!js.isUndefined(autoHighlight)) __obj.updateDynamic("autoHighlight")(autoHighlight)
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave)
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
     if (className != null) __obj.updateDynamic("className")(className)
@@ -823,6 +821,7 @@ object AutocompleteProps {
     if (!js.isUndefined(disableCloseOnSelect)) __obj.updateDynamic("disableCloseOnSelect")(disableCloseOnSelect)
     if (!js.isUndefined(disableListWrap)) __obj.updateDynamic("disableListWrap")(disableListWrap)
     if (!js.isUndefined(disableOpenOnFocus)) __obj.updateDynamic("disableOpenOnFocus")(disableOpenOnFocus)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(js.Any.fromFunction2(filterOptions))
     if (!js.isUndefined(filterSelectedOptions)) __obj.updateDynamic("filterSelectedOptions")(filterSelectedOptions)

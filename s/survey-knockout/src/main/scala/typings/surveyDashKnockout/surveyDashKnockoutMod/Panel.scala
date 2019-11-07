@@ -11,6 +11,7 @@ class Panel () extends PanelModel {
   var doExpand: js.Any = js.native
   var koCss: js.Any = js.native
   var koElementType: js.Any = js.native
+  var koErrorClass: js.Any = js.native
   var koIsCollapsed: js.Any = js.native
   var koIsExpanded: js.Any = js.native
   def getTitleStyle(): js.Any = js.native

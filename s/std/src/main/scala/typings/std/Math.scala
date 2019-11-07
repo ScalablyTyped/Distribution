@@ -169,8 +169,8 @@ trait Math extends js.Object {
   /** Returns a pseudorandom number between 0 and 1. */
   def random(): Double = js.native
   /**
-    * Returns a supplied numeric expression rounded to the nearest number.
-    * @param x The value to be rounded to the nearest number.
+    * Returns a supplied numeric expression rounded to the nearest integer.
+    * @param x The value to be rounded to the nearest integer.
     */
   def round(x: Double): Double = js.native
   /**

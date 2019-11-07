@@ -6,13 +6,18 @@ import scala.scalajs.js.annotation._
 
 trait MkdirOptions extends js.Object {
   // iOS only
+  var NSFileProtectionKey: js.UndefOr[String] = js.undefined
   var NSURLIsExcludedFromBackupKey: js.UndefOr[Boolean] = js.undefined
 }
 
 object MkdirOptions {
   @scala.inline
-  def apply(NSURLIsExcludedFromBackupKey: js.UndefOr[Boolean] = js.undefined): MkdirOptions = {
+  def apply(
+    NSFileProtectionKey: String = null,
+    NSURLIsExcludedFromBackupKey: js.UndefOr[Boolean] = js.undefined
+  ): MkdirOptions = {
     val __obj = js.Dynamic.literal()
+    if (NSFileProtectionKey != null) __obj.updateDynamic("NSFileProtectionKey")(NSFileProtectionKey)
     if (!js.isUndefined(NSURLIsExcludedFromBackupKey)) __obj.updateDynamic("NSURLIsExcludedFromBackupKey")(NSURLIsExcludedFromBackupKey)
     __obj.asInstanceOf[MkdirOptions]
   }

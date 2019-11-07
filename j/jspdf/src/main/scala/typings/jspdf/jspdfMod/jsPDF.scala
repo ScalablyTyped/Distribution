@@ -1,5 +1,6 @@
 package typings.jspdf.jspdfMod
 
+import typings.jspdf.Anon_Align
 import typings.jspdf.Anon_Anticlockwise
 import typings.jspdf.Anon_Collections
 import typings.jspdf.Anon_GetContext
@@ -269,7 +270,7 @@ trait jsPDF extends js.Object {
   def splitTextToSize(text: String, maxlen: Double): js.Any = js.native
   def splitTextToSize(text: String, maxlen: Double, options: js.Any): js.Any = js.native
   def supportsArrayBuffer(): Boolean = js.native
-  def table(x: Double, y: Double, data: js.Any, headers: js.Array[String], config: js.Any): jsPDF = js.native
+  def table(x: Double, y: Double, data: js.Any, headers: js.Array[Anon_Align], config: js.Any): jsPDF = js.native
   def text(text: js.Any, x: js.Any, y: js.Any): jsPDF = js.native
   def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any): jsPDF = js.native
   def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any, angle: js.Any): jsPDF = js.native

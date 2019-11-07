@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   var `abstract`: Boolean | Null
   var accessibility: public | `private` | `protected` | Null
   var computed: Boolean
+  var declare: Boolean | Null
   var decorators: js.Array[Decorator] | Null
   var definite: Boolean | Null
   var key: Identifier | StringLiteral | NumericLiteral | Expression
@@ -35,6 +36,7 @@ object ClassProperty {
     `type`: typings.atBabelTypes.atBabelTypesStrings.ClassProperty,
     `abstract`: js.UndefOr[Boolean] = js.undefined,
     accessibility: public | `private` | `protected` = null,
+    declare: js.UndefOr[Boolean] = js.undefined,
     decorators: js.Array[Decorator] = null,
     definite: js.UndefOr[Boolean] = js.undefined,
     end: Int | Double = null,
@@ -52,6 +54,7 @@ object ClassProperty {
     __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
+    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (!js.isUndefined(definite)) __obj.updateDynamic("definite")(definite)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
@@ -80,6 +83,7 @@ object classProperty extends js.Object {
     _static: js.UndefOr[Boolean],
     `abstract`: js.UndefOr[Boolean | Null],
     accessibility: js.UndefOr[public | `private` | `protected` | Null],
+    declare: js.UndefOr[Boolean | Null],
     definite: js.UndefOr[Boolean | Null],
     optional: js.UndefOr[Boolean | Null],
     readonly: js.UndefOr[Boolean | Null]

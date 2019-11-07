@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "jest-message-util"
-version := "24.9.0-03caa1"
+version := "24.9.0-fcdf65"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "callsites" % "3.1.0-85cdab",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-89f95c",
-  "org.scalablytyped" %%% "jest__console" % "24.9.0-17268e",
-  "org.scalablytyped" %%% "jest__source-map" % "24.9.0-a9314f",
-  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-ea894d",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-b2dec0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
-  "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20180214Z-f54c2a",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a",
-  "org.scalablytyped" %%% "yargs" % "13.0-dt-20190925Z-fa65c4",
-  "org.scalablytyped" %%% "yargs-parser" % "13.1-dt-20190905Z-0a7d60")
+  "org.scalablytyped" %%% "callsites" % "3.1.0-61ae0f",
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-797456",
+  "org.scalablytyped" %%% "jest__console" % "24.9.0-4ecf0f",
+  "org.scalablytyped" %%% "jest__source-map" % "24.9.0-3cceb5",
+  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-026f53",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-a388e9",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20180214Z-60ee07",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
+  "org.scalablytyped" %%% "yargs" % "13.0-dt-20190925Z-22543c",
+  "org.scalablytyped" %%% "yargs-parser" % "13.1-dt-20190905Z-34249b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

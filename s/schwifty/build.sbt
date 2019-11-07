@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "schwifty"
-version := "4.0-dt-20190314Z-71ce49"
+version := "4.0-dt-20191105Z-b3ef6c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.10.2-04ae0e",
-  "org.scalablytyped" %%% "boom" % "7.3-dt-20190805Z-210d99",
-  "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-b970ae",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20191014Z-c3a6bc",
-  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-cdcf6a",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20191101Z-c14a93",
-  "org.scalablytyped" %%% "knex" % "0.19.5-2b1105",
-  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-7db5f5",
-  "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-1cc445",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
-  "org.scalablytyped" %%% "objection" % "1.6.11-0f0681",
-  "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-281e7e",
-  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-2e844a",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "ajv" % "6.10.2-52b713",
+  "org.scalablytyped" %%% "boom" % "7.3-dt-20190805Z-5c1264",
+  "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-5479a7",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20191105Z-b89345",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-0138f4",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20191101Z-6c76f1",
+  "org.scalablytyped" %%% "knex" % "0.19.5-229b8e",
+  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-c223ab",
+  "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-7afbb3",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "objection" % "1.6.11-bd28ae",
+  "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-ae0e0c",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-89d1d8",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

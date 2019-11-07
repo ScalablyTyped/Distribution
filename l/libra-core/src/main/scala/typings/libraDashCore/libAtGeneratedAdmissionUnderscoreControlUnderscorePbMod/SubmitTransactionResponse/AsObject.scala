@@ -1,0 +1,36 @@
+package typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse
+
+import typings.std.Uint8Array
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AsObject extends js.Object {
+  var acStatus: js.UndefOr[
+    typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.AdmissionControlStatus.AsObject
+  ] = js.undefined
+  var mempoolStatus: js.UndefOr[
+    typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatus.AsObject
+  ] = js.undefined
+  var validatorId: Uint8Array | String
+  var vmStatus: js.UndefOr[
+    typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.AsObject
+  ] = js.undefined
+}
+
+object AsObject {
+  @scala.inline
+  def apply(
+    validatorId: Uint8Array | String,
+    acStatus: typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.AdmissionControlStatus.AsObject = null,
+    mempoolStatus: typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatus.AsObject = null,
+    vmStatus: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMStatus.AsObject = null
+  ): AsObject = {
+    val __obj = js.Dynamic.literal(validatorId = validatorId.asInstanceOf[js.Any])
+    if (acStatus != null) __obj.updateDynamic("acStatus")(acStatus)
+    if (mempoolStatus != null) __obj.updateDynamic("mempoolStatus")(mempoolStatus)
+    if (vmStatus != null) __obj.updateDynamic("vmStatus")(vmStatus)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

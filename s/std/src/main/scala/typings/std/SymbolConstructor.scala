@@ -32,6 +32,11 @@ trait SymbolConstructor extends js.Object {
     */
   val `match`: js.Symbol = js.native
   /**
+    * A regular expression method that matches the regular expression against a string. Called
+    * by the String.prototype.matchAll method.
+    */
+  val matchAll: js.Symbol = js.native
+  /**
     * A regular expression method that replaces matched substrings of a string. Called by the
     * String.prototype.replace method.
     */

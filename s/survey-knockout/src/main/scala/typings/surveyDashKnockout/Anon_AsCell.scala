@@ -14,6 +14,7 @@ trait Anon_AsCell extends js.Object {
   var flowRoot: String
   var footer: String
   var formGroup: String
+  var hasError: String
   var header: String
   var headerBottom: String
   var headerLeft: String
@@ -42,6 +43,7 @@ object Anon_AsCell {
     flowRoot: String,
     footer: String,
     formGroup: String,
+    hasError: String,
     header: String,
     headerBottom: String,
     headerLeft: String,
@@ -57,7 +59,7 @@ object Anon_AsCell {
     titleOnError: String,
     titleRequired: String
   ): Anon_AsCell = {
-    val __obj = js.Dynamic.literal(asCell = asCell, comment = comment, content = content, contentLeft = contentLeft, description = description, descriptionUnderInput = descriptionUnderInput, flowRoot = flowRoot, footer = footer, formGroup = formGroup, header = header, headerBottom = headerBottom, headerLeft = headerLeft, headerTop = headerTop, indent = indent, mainRoot = mainRoot, number = number, required = required, requiredText = requiredText, title = title, titleLeftRoot = titleLeftRoot, titleOnAnswer = titleOnAnswer, titleOnError = titleOnError, titleRequired = titleRequired)
+    val __obj = js.Dynamic.literal(asCell = asCell, comment = comment, content = content, contentLeft = contentLeft, description = description, descriptionUnderInput = descriptionUnderInput, flowRoot = flowRoot, footer = footer, formGroup = formGroup, hasError = hasError, header = header, headerBottom = headerBottom, headerLeft = headerLeft, headerTop = headerTop, indent = indent, mainRoot = mainRoot, number = number, required = required, requiredText = requiredText, title = title, titleLeftRoot = titleLeftRoot, titleOnAnswer = titleOnAnswer, titleOnError = titleOnError, titleRequired = titleRequired)
   
     __obj.asInstanceOf[Anon_AsCell]
   }

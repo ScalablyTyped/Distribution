@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Represents a contact stored on the server. Read mode only.
+  * Represents the details about a contact (similar to what's on a physical contact or business card) extracted from the item's body. Read mode only.
   *
-  * The list of contacts associated with an email message or appointment is returned in the contacts property of the {@link Office.Entities | Entities} object 
-  * that is returned by the getEntities or getEntitiesByType method of the active item.
+  * The list of contacts extracted from the body of an email message or appointment is returned in the contacts property of the
+  * {@link Office.Entities | Entities} object returned by the getEntities or getEntitiesByType method of the current item.
   *
   * [Api set: Mailbox 1.0]
   *

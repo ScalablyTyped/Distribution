@@ -8,6 +8,7 @@ trait IndicesPutMappingParams extends GenericParams {
   var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
   var index: NameList
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   var timeout: js.UndefOr[TimeSpan] = js.undefined
@@ -26,6 +27,7 @@ object IndicesPutMappingParams {
     filterPath: String | js.Array[String] = null,
     ignore: Double | js.Array[Double] = null,
     ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
+    includeTypeName: js.UndefOr[Boolean] = js.undefined,
     masterTimeout: TimeSpan = null,
     maxRetries: Int | Double = null,
     method: String = null,
@@ -40,6 +42,7 @@ object IndicesPutMappingParams {
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable)
+    if (!js.isUndefined(includeTypeName)) __obj.updateDynamic("includeTypeName")(includeTypeName)
     if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout)
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)

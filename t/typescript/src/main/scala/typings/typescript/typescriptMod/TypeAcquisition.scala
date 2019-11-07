@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 trait TypeAcquisition
   extends /* option */ StringDictionary[js.UndefOr[js.Array[String] | Boolean]] {
   var enable: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @deprecated typingOptions.enableAutoDiscovery
+    * Use typeAcquisition.enable instead.
+    */
   var enableAutoDiscovery: js.UndefOr[Boolean] = js.undefined
   var exclude: js.UndefOr[js.Array[String]] = js.undefined
   var include: js.UndefOr[js.Array[String]] = js.undefined

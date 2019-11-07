@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
   - typings.typescript.typescriptMod.SyntaxKind.EqualsToken
   - typings.typescript.typescriptMod.CompoundAssignmentOperator
 */
-trait AssignmentOperator extends js.Object
+trait AssignmentOperator extends _AssignmentOperatorOrHigher
 

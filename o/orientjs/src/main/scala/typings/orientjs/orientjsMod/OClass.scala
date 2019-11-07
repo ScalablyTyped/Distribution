@@ -28,12 +28,6 @@ class OClass () extends js.Object {
     */
   def cacheData(classes: js.Array[OClass]): ODB = js.native
   /**
-    * Configure the class instance.
-    * @param  config The configuration object.
-    */
-  def configure(): Unit = js.native
-  def configure(config: js.Any): Unit = js.native
-  /**
     * Create a new class.
     *
     * @param  name            The name of the class to create.
@@ -88,6 +82,10 @@ class OClass () extends js.Object {
   def list(limit: js.Any, offset: Double): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Boolean): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Boolean, offset: Double): js.Promise[js.Array[OClass]] = js.native
+  /**
+    * Configure the class instance.
+    * @param  config The configuration object.
+    */
   /**
     * Retreive a list of classes from the database.
     *

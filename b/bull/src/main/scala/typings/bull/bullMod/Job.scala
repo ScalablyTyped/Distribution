@@ -114,6 +114,10 @@ trait Job[T] extends js.Object {
   def moveToFailed(errorInfo: Anon_Message): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   def moveToFailed(errorInfo: Anon_Message, ignoreLock: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
   /**
+    * Get progress on a job
+    */
+  def progress(): js.Any = js.native
+  /**
     * Report progress on a job
     */
   def progress(value: js.Any): js.Promise[Unit] = js.native

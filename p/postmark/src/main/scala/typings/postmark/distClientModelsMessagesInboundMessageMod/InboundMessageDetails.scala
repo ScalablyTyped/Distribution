@@ -31,6 +31,7 @@ object InboundMessageDetails {
     HtmlBody: String,
     MailboxHash: String,
     MessageID: String,
+    MessageStream: String,
     OriginalRecipient: String,
     ReplyTo: String,
     Status: String,
@@ -41,7 +42,7 @@ object InboundMessageDetails {
     ToFull: js.Array[InboundRecipient],
     Tag: String = null
   ): InboundMessageDetails = {
-    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, BccFull = BccFull, BlockedReason = BlockedReason, Cc = Cc, CcFull = CcFull, Date = Date, From = From, FromFull = FromFull, FromName = FromName, Headers = Headers, HtmlBody = HtmlBody, MailboxHash = MailboxHash, MessageID = MessageID, OriginalRecipient = OriginalRecipient, ReplyTo = ReplyTo, Status = Status, StrippedTextReply = StrippedTextReply, Subject = Subject, TextBody = TextBody, To = To, ToFull = ToFull)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, Bcc = Bcc, BccFull = BccFull, BlockedReason = BlockedReason, Cc = Cc, CcFull = CcFull, Date = Date, From = From, FromFull = FromFull, FromName = FromName, Headers = Headers, HtmlBody = HtmlBody, MailboxHash = MailboxHash, MessageID = MessageID, MessageStream = MessageStream, OriginalRecipient = OriginalRecipient, ReplyTo = ReplyTo, Status = Status, StrippedTextReply = StrippedTextReply, Subject = Subject, TextBody = TextBody, To = To, ToFull = ToFull)
     if (Tag != null) __obj.updateDynamic("Tag")(Tag)
     __obj.asInstanceOf[InboundMessageDetails]
   }

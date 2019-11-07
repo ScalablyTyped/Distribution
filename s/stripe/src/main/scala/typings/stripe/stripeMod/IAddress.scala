@@ -8,11 +8,11 @@ trait IAddress extends js.Object {
   /**
     * City/Suburb/Town/Village
     */
-  var city: js.UndefOr[String] = js.undefined
+  var city: js.UndefOr[String | Null] = js.undefined
   /**
     * 2-letter country code
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String | Null] = js.undefined
   /**
     * Address line 1 (Street address/PO Box/Company name)
     */
@@ -20,15 +20,15 @@ trait IAddress extends js.Object {
   /**
     * Address line 2 (Apartment/Suite/Unit/Building)
     */
-  var line2: js.UndefOr[String] = js.undefined
+  var line2: js.UndefOr[String | Null] = js.undefined
   /**
     * Zip/Postal Code
     */
-  var postal_code: js.UndefOr[String] = js.undefined
+  var postal_code: js.UndefOr[String | Null] = js.undefined
   /**
     * State/Province/County
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
 }
 
 object IAddress {

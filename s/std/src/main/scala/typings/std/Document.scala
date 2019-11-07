@@ -197,12 +197,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Document
   extends Node
-     with NonElementParentNode
+     with DocumentAndElementEventHandlers
      with DocumentOrShadowRoot
-     with ParentNode
-     with XPathEvaluatorBase
      with GlobalEventHandlers
-     with DocumentAndElementEventHandlers {
+     with NonElementParentNode
+     with ParentNode
+     with XPathEvaluatorBase {
   /**
     * Sets or gets the URL for the current document.
     */

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "use-dark-mode" : "2.3.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "use-dark-mode" : "2.3.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

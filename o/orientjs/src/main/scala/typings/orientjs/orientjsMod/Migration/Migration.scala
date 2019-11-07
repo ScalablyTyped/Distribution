@@ -12,8 +12,6 @@ class Migration () extends js.Object {
   var db: ODB = js.native
   var name: String = js.native
   var server: OServer = js.native
-  def configure(): Unit = js.native
-  def configure(config: js.Any): Unit = js.native
   def down(): js.Promise[_] = js.native
   def up(): js.Promise[_] = js.native
 }

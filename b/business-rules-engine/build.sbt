@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "business-rules-engine"
-version := "v1.0.20-dt-20190322Z-8d19ec"
+version := "v1.0.20-dt-20190322Z-06bd9b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-c879d1",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-754e42",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

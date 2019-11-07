@@ -3,6 +3,7 @@ package typings.std
 import typings.std.Intl.DateTimeFormatPartTypes
 import typings.std.Intl.NumberFormatPartTypes
 import typings.std.WebAssembly.ImportExportKind
+import typings.std.WebAssembly.ValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -1216,6 +1217,12 @@ object stdStrings {
   sealed trait exponential extends DistanceModelType
   
   @js.native
+  sealed trait f32 extends ValueType
+  
+  @js.native
+  sealed trait f64 extends ValueType
+  
+  @js.native
   sealed trait fail extends PaymentComplete
   
   @js.native
@@ -1505,6 +1512,12 @@ object stdStrings {
   
   @js.native
   sealed trait i extends js.Object
+  
+  @js.native
+  sealed trait i32 extends ValueType
+  
+  @js.native
+  sealed trait i64 extends ValueType
   
   @js.native
   sealed trait icecandidate extends js.Object
@@ -2260,9 +2273,7 @@ object stdStrings {
   sealed trait premultiply extends js.Object
   
   @js.native
-  sealed trait prerender
-    extends NavigationType
-       with VisibilityState
+  sealed trait prerender extends NavigationType
   
   @js.native
   sealed trait preserve extends SelectionMode
@@ -3751,6 +3762,10 @@ object stdStrings {
   @scala.inline
   def exponential: exponential = "exponential".asInstanceOf[exponential]
   @scala.inline
+  def f32: f32 = "f32".asInstanceOf[f32]
+  @scala.inline
+  def f64: f64 = "f64".asInstanceOf[f64]
+  @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
@@ -3932,6 +3947,10 @@ object stdStrings {
   def `http://wwwDOTw3DOTorg/2000/svg`: `http://wwwDOTw3DOTorg/2000/svg` = "http://www.w3.org/2000/svg".asInstanceOf[`http://wwwDOTw3DOTorg/2000/svg`]
   @scala.inline
   def i: i = "i".asInstanceOf[i]
+  @scala.inline
+  def i32: i32 = "i32".asInstanceOf[i32]
+  @scala.inline
+  def i64: i64 = "i64".asInstanceOf[i64]
   @scala.inline
   def icecandidate: icecandidate = "icecandidate".asInstanceOf[icecandidate]
   @scala.inline

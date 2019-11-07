@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-saga
 
-Typings are for version 1.1.1
+Typings are for version 1.1.3
 
 ## Library description:
 Saga middleware for Redux to handle Side Effects

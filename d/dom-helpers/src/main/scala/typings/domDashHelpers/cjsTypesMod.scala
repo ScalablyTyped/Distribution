@@ -36,7 +36,16 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.backgroundRepeat
     - typings.domDashHelpers.domDashHelpersStrings.backgroundSize
     - typings.domDashHelpers.domDashHelpersStrings.baselineShift
+    - typings.domDashHelpers.domDashHelpersStrings.blockSize
     - typings.domDashHelpers.domDashHelpersStrings.border
+    - typings.domDashHelpers.domDashHelpersStrings.borderBlockEnd
+    - typings.domDashHelpers.domDashHelpersStrings.borderBlockEndColor
+    - typings.domDashHelpers.domDashHelpersStrings.borderBlockEndStyle
+    - typings.domDashHelpers.domDashHelpersStrings.borderBlockEndWidth
+    - typings.domDashHelpers.domDashHelpersStrings.borderBlockStart
+    - typings.domDashHelpers.domDashHelpersStrings.borderBlockStartColor
+    - typings.domDashHelpers.domDashHelpersStrings.borderBlockStartStyle
+    - typings.domDashHelpers.domDashHelpersStrings.borderBlockStartWidth
     - typings.domDashHelpers.domDashHelpersStrings.borderBottom
     - typings.domDashHelpers.domDashHelpersStrings.borderBottomColor
     - typings.domDashHelpers.domDashHelpersStrings.borderBottomLeftRadius
@@ -51,6 +60,14 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.borderImageSlice
     - typings.domDashHelpers.domDashHelpersStrings.borderImageSource
     - typings.domDashHelpers.domDashHelpersStrings.borderImageWidth
+    - typings.domDashHelpers.domDashHelpersStrings.borderInlineEnd
+    - typings.domDashHelpers.domDashHelpersStrings.borderInlineEndColor
+    - typings.domDashHelpers.domDashHelpersStrings.borderInlineEndStyle
+    - typings.domDashHelpers.domDashHelpersStrings.borderInlineEndWidth
+    - typings.domDashHelpers.domDashHelpersStrings.borderInlineStart
+    - typings.domDashHelpers.domDashHelpersStrings.borderInlineStartColor
+    - typings.domDashHelpers.domDashHelpersStrings.borderInlineStartStyle
+    - typings.domDashHelpers.domDashHelpersStrings.borderInlineStartWidth
     - typings.domDashHelpers.domDashHelpersStrings.borderLeft
     - typings.domDashHelpers.domDashHelpersStrings.borderLeftColor
     - typings.domDashHelpers.domDashHelpersStrings.borderLeftStyle
@@ -82,6 +99,7 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.clipPath
     - typings.domDashHelpers.domDashHelpersStrings.clipRule
     - typings.domDashHelpers.domDashHelpersStrings.color
+    - typings.domDashHelpers.domDashHelpersStrings.colorInterpolation
     - typings.domDashHelpers.domDashHelpersStrings.colorInterpolationFilters
     - typings.domDashHelpers.domDashHelpersStrings.columnCount
     - typings.domDashHelpers.domDashHelpersStrings.columnFill
@@ -115,6 +133,7 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.flexGrow
     - typings.domDashHelpers.domDashHelpersStrings.flexShrink
     - typings.domDashHelpers.domDashHelpersStrings.flexWrap
+    - typings.domDashHelpers.domDashHelpersStrings.float
     - typings.domDashHelpers.domDashHelpersStrings.floodColor
     - typings.domDashHelpers.domDashHelpersStrings.floodOpacity
     - typings.domDashHelpers.domDashHelpersStrings.font
@@ -159,6 +178,7 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.imageOrientation
     - typings.domDashHelpers.domDashHelpersStrings.imageRendering
     - typings.domDashHelpers.domDashHelpersStrings.imeMode
+    - typings.domDashHelpers.domDashHelpersStrings.inlineSize
     - typings.domDashHelpers.domDashHelpersStrings.justifyContent
     - typings.domDashHelpers.domDashHelpersStrings.justifyItems
     - typings.domDashHelpers.domDashHelpersStrings.justifySelf
@@ -179,7 +199,11 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.listStylePosition
     - typings.domDashHelpers.domDashHelpersStrings.listStyleType
     - typings.domDashHelpers.domDashHelpersStrings.margin
+    - typings.domDashHelpers.domDashHelpersStrings.marginBlockEnd
+    - typings.domDashHelpers.domDashHelpersStrings.marginBlockStart
     - typings.domDashHelpers.domDashHelpersStrings.marginBottom
+    - typings.domDashHelpers.domDashHelpersStrings.marginInlineEnd
+    - typings.domDashHelpers.domDashHelpersStrings.marginInlineStart
     - typings.domDashHelpers.domDashHelpersStrings.marginLeft
     - typings.domDashHelpers.domDashHelpersStrings.marginRight
     - typings.domDashHelpers.domDashHelpersStrings.marginTop
@@ -194,9 +218,13 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.maskRepeat
     - typings.domDashHelpers.domDashHelpersStrings.maskSize
     - typings.domDashHelpers.domDashHelpersStrings.maskType
+    - typings.domDashHelpers.domDashHelpersStrings.maxBlockSize
     - typings.domDashHelpers.domDashHelpersStrings.maxHeight
+    - typings.domDashHelpers.domDashHelpersStrings.maxInlineSize
     - typings.domDashHelpers.domDashHelpersStrings.maxWidth
+    - typings.domDashHelpers.domDashHelpersStrings.minBlockSize
     - typings.domDashHelpers.domDashHelpersStrings.minHeight
+    - typings.domDashHelpers.domDashHelpersStrings.minInlineSize
     - typings.domDashHelpers.domDashHelpersStrings.minWidth
     - typings.domDashHelpers.domDashHelpersStrings.msContentZoomChaining
     - typings.domDashHelpers.domDashHelpersStrings.msContentZoomLimit
@@ -261,13 +289,18 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.overflowX
     - typings.domDashHelpers.domDashHelpersStrings.overflowY
     - typings.domDashHelpers.domDashHelpersStrings.padding
+    - typings.domDashHelpers.domDashHelpersStrings.paddingBlockEnd
+    - typings.domDashHelpers.domDashHelpersStrings.paddingBlockStart
     - typings.domDashHelpers.domDashHelpersStrings.paddingBottom
+    - typings.domDashHelpers.domDashHelpersStrings.paddingInlineEnd
+    - typings.domDashHelpers.domDashHelpersStrings.paddingInlineStart
     - typings.domDashHelpers.domDashHelpersStrings.paddingLeft
     - typings.domDashHelpers.domDashHelpersStrings.paddingRight
     - typings.domDashHelpers.domDashHelpersStrings.paddingTop
     - typings.domDashHelpers.domDashHelpersStrings.pageBreakAfter
     - typings.domDashHelpers.domDashHelpersStrings.pageBreakBefore
     - typings.domDashHelpers.domDashHelpersStrings.pageBreakInside
+    - typings.domDashHelpers.domDashHelpersStrings.paintOrder
     - typings.domDashHelpers.domDashHelpersStrings.parentRule
     - typings.domDashHelpers.domDashHelpersStrings.penAction
     - typings.domDashHelpers.domDashHelpersStrings.perspective
@@ -287,6 +320,7 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.rubyPosition
     - typings.domDashHelpers.domDashHelpersStrings.scale
     - typings.domDashHelpers.domDashHelpersStrings.scrollBehavior
+    - typings.domDashHelpers.domDashHelpersStrings.shapeRendering
     - typings.domDashHelpers.domDashHelpersStrings.stopColor
     - typings.domDashHelpers.domDashHelpersStrings.stopOpacity
     - typings.domDashHelpers.domDashHelpersStrings.stroke
@@ -317,6 +351,7 @@ object cjsTypesMod extends js.Object {
     - typings.domDashHelpers.domDashHelpersStrings.textKashidaSpace
     - typings.domDashHelpers.domDashHelpersStrings.textOrientation
     - typings.domDashHelpers.domDashHelpersStrings.textOverflow
+    - typings.domDashHelpers.domDashHelpersStrings.textRendering
     - typings.domDashHelpers.domDashHelpersStrings.textShadow
     - typings.domDashHelpers.domDashHelpersStrings.textTransform
     - typings.domDashHelpers.domDashHelpersStrings.textUnderlinePosition

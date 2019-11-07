@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redux-storage-engine-localstorage"
-version := "1.1-dt-20190504Z-32cbe9"
+version := "1.1-dt-20190504Z-29a5ab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.4-783f8a",
-  "org.scalablytyped" %%% "redux-storage" % "4.1.2-dt-20190504Z-027040",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "redux" % "4.0.4-ae4e73",
+  "org.scalablytyped" %%% "redux-storage" % "4.1.2-dt-20190504Z-2f6133",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

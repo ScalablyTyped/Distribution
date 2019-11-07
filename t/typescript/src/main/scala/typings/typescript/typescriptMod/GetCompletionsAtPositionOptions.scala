@@ -31,6 +31,7 @@ object GetCompletionsAtPositionOptions {
     disableSuggestions: js.UndefOr[Boolean] = js.undefined,
     importModuleSpecifierEnding: minimal | index | JS = null,
     importModuleSpecifierPreference: relative | `non-relative` = null,
+    includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined,
     includeCompletionsWithInsertText: js.UndefOr[Boolean] = js.undefined,
     includeExternalModuleExports: js.UndefOr[Boolean] = js.undefined,
@@ -44,6 +45,7 @@ object GetCompletionsAtPositionOptions {
     if (!js.isUndefined(disableSuggestions)) __obj.updateDynamic("disableSuggestions")(disableSuggestions)
     if (importModuleSpecifierEnding != null) __obj.updateDynamic("importModuleSpecifierEnding")(importModuleSpecifierEnding.asInstanceOf[js.Any])
     if (importModuleSpecifierPreference != null) __obj.updateDynamic("importModuleSpecifierPreference")(importModuleSpecifierPreference.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAutomaticOptionalChainCompletions)) __obj.updateDynamic("includeAutomaticOptionalChainCompletions")(includeAutomaticOptionalChainCompletions)
     if (!js.isUndefined(includeCompletionsForModuleExports)) __obj.updateDynamic("includeCompletionsForModuleExports")(includeCompletionsForModuleExports)
     if (!js.isUndefined(includeCompletionsWithInsertText)) __obj.updateDynamic("includeCompletionsWithInsertText")(includeCompletionsWithInsertText)
     if (!js.isUndefined(includeExternalModuleExports)) __obj.updateDynamic("includeExternalModuleExports")(includeExternalModuleExports)

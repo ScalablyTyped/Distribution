@@ -1,7 +1,8 @@
 package typings.jssDashPluginDashRuleDashValueDashObservable
 
+import typings.jss.jssMod.Plugin
+import typings.jss.jssMod.UpdateOptions
 import typings.jssDashPluginDashRuleDashValueDashObservable.jssDashPluginDashRuleDashValueDashObservableMod.Options
-import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,6 @@ import scala.scalajs.js.annotation._
 object jssDashPluginDashRuleDashValueDashObservableMod extends js.Object {
   def default(): Plugin = js.native
   def default(options: Options): Plugin = js.native
-  type Options = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UpdateOptions */ js.Any
+  type Options = UpdateOptions
 }
 

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.rollupDashTypescript.rollupDashTypescriptNumbers.`false`
 import typings.rollupDashTypescript.rollupDashTypescriptStrings.JS
 import typings.rollupDashTypescript.rollupDashTypescriptStrings.`0DOT8`
-import typings.rollupDashTypescript.rollupDashTypescriptStrings.`3DOT6`
+import typings.rollupDashTypescript.rollupDashTypescriptStrings.`3DOT7`
 import typings.rollupDashTypescript.rollupDashTypescriptStrings.dts
 import typings.typescript.Anon_Config
 import typings.typescript.Anon_Errors
@@ -17,6 +17,7 @@ import typings.typescript.typescriptMod.ArrayLiteralExpression
 import typings.typescript.typescriptMod.ArrayTypeNode
 import typings.typescript.typescriptMod.ArrowFunction
 import typings.typescript.typescriptMod.AsExpression
+import typings.typescript.typescriptMod.AssertsToken
 import typings.typescript.typescriptMod.AsteriskToken
 import typings.typescript.typescriptMod.AwaitExpression
 import typings.typescript.typescriptMod.AwaitKeywordToken
@@ -33,6 +34,7 @@ import typings.typescript.typescriptMod.BuildOptions
 import typings.typescript.typescriptMod.BuilderProgram
 import typings.typescript.typescriptMod.BuilderProgramHost
 import typings.typescript.typescriptMod.Bundle
+import typings.typescript.typescriptMod.CallChain
 import typings.typescript.typescriptMod.CallExpression
 import typings.typescript.typescriptMod.CallSignatureDeclaration
 import typings.typescript.typescriptMod.CancellationToken
@@ -76,6 +78,7 @@ import typings.typescript.typescriptMod.DocumentRegistry
 import typings.typescript.typescriptMod.DotDotDotToken
 import typings.typescript.typescriptMod.EditorOptions
 import typings.typescript.typescriptMod.EditorSettings
+import typings.typescript.typescriptMod.ElementAccessChain
 import typings.typescript.typescriptMod.ElementAccessExpression
 import typings.typescript.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram
 import typings.typescript.typescriptMod.EmitFlags
@@ -126,7 +129,6 @@ import typings.typescript.typescriptMod.InferTypeNode
 import typings.typescript.typescriptMod.InputFiles
 import typings.typescript.typescriptMod.InterfaceDeclaration
 import typings.typescript.typescriptMod.IntersectionTypeNode
-import typings.typescript.typescriptMod.JSDocAllType
 import typings.typescript.typescriptMod.JSDocAugmentsTag
 import typings.typescript.typescriptMod.JSDocClassTag
 import typings.typescript.typescriptMod.JSDocEnumTag
@@ -216,6 +218,7 @@ import typings.typescript.typescriptMod.Printer
 import typings.typescript.typescriptMod.PrinterOptions
 import typings.typescript.typescriptMod.Program
 import typings.typescript.typescriptMod.ProjectReference
+import typings.typescript.typescriptMod.PropertyAccessChain
 import typings.typescript.typescriptMod.PropertyAccessExpression
 import typings.typescript.typescriptMod.PropertyAssignment
 import typings.typescript.typescriptMod.PropertyDeclaration
@@ -224,6 +227,7 @@ import typings.typescript.typescriptMod.PropertySignature
 import typings.typescript.typescriptMod.PseudoBigInt
 import typings.typescript.typescriptMod.Push
 import typings.typescript.typescriptMod.QualifiedName
+import typings.typescript.typescriptMod.QuestionDotToken
 import typings.typescript.typescriptMod.QuestionToken
 import typings.typescript.typescriptMod.ReadBuildProgramHost
 import typings.typescript.typescriptMod.ReadonlyToken
@@ -356,7 +360,7 @@ trait Typeofts extends js.Object {
   var unchangedTextChangeRange: TextChangeRange = js.native
   /** The version of the TypeScript compiler release */
   val version: String = js.native
-  val versionMajorMinor: `3DOT6` = js.native
+  val versionMajorMinor: `3DOT7` = js.native
   /**
     * Adds an EmitHelper to a node.
     */
@@ -748,6 +752,38 @@ trait Typeofts extends js.Object {
   ): CallExpression = js.native
   def createCall(expression: Expression, typeArguments: js.Array[TypeNode]): CallExpression = js.native
   def createCall(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): CallExpression = js.native
+  def createCallChain(expression: Expression): CallChain = js.native
+  def createCallChain(
+    expression: Expression,
+    questionDotToken: js.UndefOr[scala.Nothing],
+    typeArguments: js.UndefOr[scala.Nothing],
+    argumentsArray: js.Array[Expression]
+  ): CallChain = js.native
+  def createCallChain(
+    expression: Expression,
+    questionDotToken: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[TypeNode]
+  ): CallChain = js.native
+  def createCallChain(
+    expression: Expression,
+    questionDotToken: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[TypeNode],
+    argumentsArray: js.Array[Expression]
+  ): CallChain = js.native
+  def createCallChain(expression: Expression, questionDotToken: QuestionDotToken): CallChain = js.native
+  def createCallChain(
+    expression: Expression,
+    questionDotToken: QuestionDotToken,
+    typeArguments: js.UndefOr[scala.Nothing],
+    argumentsArray: js.Array[Expression]
+  ): CallChain = js.native
+  def createCallChain(expression: Expression, questionDotToken: QuestionDotToken, typeArguments: js.Array[TypeNode]): CallChain = js.native
+  def createCallChain(
+    expression: Expression,
+    questionDotToken: QuestionDotToken,
+    typeArguments: js.Array[TypeNode],
+    argumentsArray: js.Array[Expression]
+  ): CallChain = js.native
   def createCallSignature(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[ParameterDeclaration]): CallSignatureDeclaration = js.native
   def createCallSignature(
     typeParameters: js.UndefOr[scala.Nothing],
@@ -877,6 +913,10 @@ trait Typeofts extends js.Object {
   def createDocumentRegistry(useCaseSensitiveFileNames: Boolean, currentDirectory: String): DocumentRegistry = js.native
   def createElementAccess(expression: Expression, index: Double): ElementAccessExpression = js.native
   def createElementAccess(expression: Expression, index: Expression): ElementAccessExpression = js.native
+  def createElementAccessChain(expression: Expression, questionDotToken: js.UndefOr[scala.Nothing], index: Double): ElementAccessChain = js.native
+  def createElementAccessChain(expression: Expression, questionDotToken: js.UndefOr[scala.Nothing], index: Expression): ElementAccessChain = js.native
+  def createElementAccessChain(expression: Expression, questionDotToken: QuestionDotToken, index: Double): ElementAccessChain = js.native
+  def createElementAccessChain(expression: Expression, questionDotToken: QuestionDotToken, index: Expression): ElementAccessChain = js.native
   def createEmitAndSemanticDiagnosticsBuilderProgram(): EmitAndSemanticDiagnosticsBuilderProgram = js.native
   /**
     * Create the builder that can handle the changes in program and iterate through changed files
@@ -2093,6 +2133,7 @@ trait Typeofts extends js.Object {
     */
   def createNotEmittedStatement(original: Node): NotEmittedStatement = js.native
   def createNull(): NullLiteral with Token[NullKeyword] = js.native
+  def createNullishCoalesce(left: Expression, right: Expression): BinaryExpression = js.native
   def createNumericLiteral(value: String): NumericLiteral = js.native
   def createNumericLiteral(value: String, numericLiteralFlags: TokenFlags): NumericLiteral = js.native
   def createObjectBindingPattern(elements: js.Array[BindingElement]): ObjectBindingPattern = js.native
@@ -2790,6 +2831,10 @@ trait Typeofts extends js.Object {
   ): PropertyDeclaration = js.native
   def createPropertyAccess(expression: Expression, name: String): PropertyAccessExpression = js.native
   def createPropertyAccess(expression: Expression, name: Identifier): PropertyAccessExpression = js.native
+  def createPropertyAccessChain(expression: Expression, questionDotToken: js.UndefOr[scala.Nothing], name: String): PropertyAccessChain = js.native
+  def createPropertyAccessChain(expression: Expression, questionDotToken: js.UndefOr[scala.Nothing], name: Identifier): PropertyAccessChain = js.native
+  def createPropertyAccessChain(expression: Expression, questionDotToken: QuestionDotToken, name: String): PropertyAccessChain = js.native
+  def createPropertyAccessChain(expression: Expression, questionDotToken: QuestionDotToken, name: Identifier): PropertyAccessChain = js.native
   def createPropertyAssignment(name: String, initializer: Expression): PropertyAssignment = js.native
   def createPropertyAssignment(name: PropertyName, initializer: Expression): PropertyAssignment = js.native
   def createPropertySignature(modifiers: js.UndefOr[scala.Nothing], name: String): PropertySignature = js.native
@@ -3304,6 +3349,18 @@ trait Typeofts extends js.Object {
   def createTypePredicateNode(parameterName: String, `type`: TypeNode): TypePredicateNode = js.native
   def createTypePredicateNode(parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
   def createTypePredicateNode(parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: js.UndefOr[scala.Nothing], parameterName: String): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: js.UndefOr[scala.Nothing], parameterName: String, `type`: TypeNode): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: js.UndefOr[scala.Nothing], parameterName: Identifier): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: js.UndefOr[scala.Nothing], parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: js.UndefOr[scala.Nothing], parameterName: ThisTypeNode): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: js.UndefOr[scala.Nothing], parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: AssertsToken, parameterName: String): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: AssertsToken, parameterName: String, `type`: TypeNode): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: AssertsToken, parameterName: Identifier): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: AssertsToken, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: AssertsToken, parameterName: ThisTypeNode): TypePredicateNode = js.native
+  def createTypePredicateNodeWithModifier(assertsModifier: AssertsToken, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
   def createTypeQueryNode(exprName: EntityName): TypeQueryNode = js.native
   def createTypeReferenceNode(typeName: String): TypeReferenceNode = js.native
   def createTypeReferenceNode(typeName: String, typeArguments: js.Array[TypeNode]): TypeReferenceNode = js.native
@@ -3634,6 +3691,7 @@ trait Typeofts extends js.Object {
   def getOriginalNode_Node(node: Node): Node = js.native
   @JSName("getOriginalNode")
   def getOriginalNode_T_Node_T[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): T = js.native
+  def getOutputFileNames(commandLine: ParsedCommandLine, inputFileName: String, ignoreCase: Boolean): js.Array[String] = js.native
   /**
     * Gets the original parse tree node for a node.
     *
@@ -3678,6 +3736,7 @@ trait Typeofts extends js.Object {
     */
   def getTokenSourceMapRange(node: Node, token: SyntaxKind): js.UndefOr[SourceMapRange] = js.native
   def getTrailingCommentRanges(text: String, pos: Double): js.UndefOr[js.Array[CommentRange]] = js.native
+  def getTsBuildInfoEmitOutputFilePath(options: CompilerOptions): js.UndefOr[String] = js.native
   def getTypeParameterOwner(d: Declaration): js.UndefOr[Declaration] = js.native
   /**
     * Return true if the node has JSDoc parameter tags.
@@ -3704,6 +3763,7 @@ trait Typeofts extends js.Object {
   def isBreakOrContinueStatement(node: Node): /* is typescript.typescript.BreakOrContinueStatement */ Boolean = js.native
   def isBreakStatement(node: Node): /* is typescript.typescript.BreakStatement */ Boolean = js.native
   def isBundle(node: Node): /* is typescript.typescript.Bundle */ Boolean = js.native
+  def isCallChain(node: Node): /* is typescript.typescript.CallChain */ Boolean = js.native
   def isCallExpression(node: Node): /* is typescript.typescript.CallExpression */ Boolean = js.native
   def isCallLikeExpression(node: Node): /* is typescript.typescript.CallLikeExpression */ Boolean = js.native
   def isCallOrNewExpression(node: Node): Boolean = js.native
@@ -3730,6 +3790,7 @@ trait Typeofts extends js.Object {
   def isDefaultClause(node: Node): /* is typescript.typescript.DefaultClause */ Boolean = js.native
   def isDeleteExpression(node: Node): /* is typescript.typescript.DeleteExpression */ Boolean = js.native
   def isDoStatement(node: Node): /* is typescript.typescript.DoStatement */ Boolean = js.native
+  def isElementAccessChain(node: Node): /* is typescript.typescript.ElementAccessChain */ Boolean = js.native
   def isElementAccessExpression(node: Node): /* is typescript.typescript.ElementAccessExpression */ Boolean = js.native
   def isEmptyBindingElement(node: BindingElement): Boolean = js.native
   def isEmptyBindingPattern(node: BindingName): /* is typescript.typescript.BindingPattern */ Boolean = js.native
@@ -3777,7 +3838,7 @@ trait Typeofts extends js.Object {
   @JSName("isIterationStatement")
   def isIterationStatement_false(node: Node, lookInLabeledStatements: `false`): /* is typescript.typescript.IterationStatement */ Boolean = js.native
   def isJSDoc(node: Node): /* is typescript.typescript.JSDoc */ Boolean = js.native
-  def isJSDocAllType(node: JSDocAllType): /* is typescript.typescript.JSDocAllType */ Boolean = js.native
+  def isJSDocAllType(node: Node): /* is typescript.typescript.JSDocAllType */ Boolean = js.native
   def isJSDocAugmentsTag(node: Node): /* is typescript.typescript.JSDocAugmentsTag */ Boolean = js.native
   def isJSDocAuthorTag(node: Node): /* is typescript.typescript.JSDocAuthorTag */ Boolean = js.native
   def isJSDocCallbackTag(node: Node): /* is typescript.typescript.JSDocCallbackTag */ Boolean = js.native
@@ -3834,12 +3895,14 @@ trait Typeofts extends js.Object {
   def isNewExpression(node: Node): /* is typescript.typescript.NewExpression */ Boolean = js.native
   def isNoSubstitutionTemplateLiteral(node: Node): /* is typescript.typescript.NoSubstitutionTemplateLiteral */ Boolean = js.native
   def isNonNullExpression(node: Node): /* is typescript.typescript.NonNullExpression */ Boolean = js.native
+  def isNullishCoalesce(node: Node): Boolean = js.native
   def isNumericLiteral(node: Node): /* is typescript.typescript.NumericLiteral */ Boolean = js.native
   def isObjectBindingPattern(node: Node): /* is typescript.typescript.ObjectBindingPattern */ Boolean = js.native
   def isObjectLiteralElement(node: Node): /* is typescript.typescript.ObjectLiteralElement */ Boolean = js.native
   def isObjectLiteralElementLike(node: Node): /* is typescript.typescript.ObjectLiteralElementLike */ Boolean = js.native
   def isObjectLiteralExpression(node: Node): /* is typescript.typescript.ObjectLiteralExpression */ Boolean = js.native
   def isOmittedExpression(node: Node): /* is typescript.typescript.OmittedExpression */ Boolean = js.native
+  def isOptionalChain(node: Node): Boolean = js.native
   def isParameter(node: Node): /* is typescript.typescript.ParameterDeclaration */ Boolean = js.native
   def isParameterPropertyDeclaration(node: Node, parent: Node): /* is typescript.typescript.ParameterPropertyDeclaration */ Boolean = js.native
   def isParenthesizedExpression(node: Node): /* is typescript.typescript.ParenthesizedExpression */ Boolean = js.native
@@ -3852,6 +3915,7 @@ trait Typeofts extends js.Object {
   def isParseTreeNode(node: Node): Boolean = js.native
   def isPostfixUnaryExpression(node: Node): /* is typescript.typescript.PostfixUnaryExpression */ Boolean = js.native
   def isPrefixUnaryExpression(node: Node): /* is typescript.typescript.PrefixUnaryExpression */ Boolean = js.native
+  def isPropertyAccessChain(node: Node): /* is typescript.typescript.PropertyAccessChain */ Boolean = js.native
   def isPropertyAccessExpression(node: Node): /* is typescript.typescript.PropertyAccessExpression */ Boolean = js.native
   def isPropertyAccessOrQualifiedName(node: Node): Boolean = js.native
   def isPropertyAssignment(node: Node): /* is typescript.typescript.PropertyAssignment */ Boolean = js.native
@@ -4130,13 +4194,13 @@ trait Typeofts extends js.Object {
     * Sets a custom text range to use when emitting comments.
     */
   def setCommentRange[T /* <: Node */](node: T, range: TextRange): T = js.native
-  def setConstantValue(node: ElementAccessExpression, value: String): PropertyAccessExpression | ElementAccessExpression = js.native
-  def setConstantValue(node: ElementAccessExpression, value: Double): PropertyAccessExpression | ElementAccessExpression = js.native
+  def setConstantValue(node: ElementAccessExpression, value: String): ElementAccessExpression | PropertyAccessExpression = js.native
+  def setConstantValue(node: ElementAccessExpression, value: Double): ElementAccessExpression | PropertyAccessExpression = js.native
   /**
     * Sets the constant value to emit for an expression.
     */
-  def setConstantValue(node: PropertyAccessExpression, value: String): PropertyAccessExpression | ElementAccessExpression = js.native
-  def setConstantValue(node: PropertyAccessExpression, value: Double): PropertyAccessExpression | ElementAccessExpression = js.native
+  def setConstantValue(node: PropertyAccessExpression, value: String): ElementAccessExpression | PropertyAccessExpression = js.native
+  def setConstantValue(node: PropertyAccessExpression, value: Double): ElementAccessExpression | PropertyAccessExpression = js.native
   /**
     * Sets flags that control emit behavior of a node.
     */
@@ -4365,6 +4429,34 @@ trait Typeofts extends js.Object {
     typeArguments: js.Array[TypeNode],
     argumentsArray: js.Array[Expression]
   ): CallExpression = js.native
+  def updateCallChain(
+    node: CallChain,
+    expression: Expression,
+    questionDotToken: js.UndefOr[scala.Nothing],
+    typeArguments: js.UndefOr[scala.Nothing],
+    argumentsArray: js.Array[Expression]
+  ): CallChain = js.native
+  def updateCallChain(
+    node: CallChain,
+    expression: Expression,
+    questionDotToken: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[TypeNode],
+    argumentsArray: js.Array[Expression]
+  ): CallChain = js.native
+  def updateCallChain(
+    node: CallChain,
+    expression: Expression,
+    questionDotToken: QuestionDotToken,
+    typeArguments: js.UndefOr[scala.Nothing],
+    argumentsArray: js.Array[Expression]
+  ): CallChain = js.native
+  def updateCallChain(
+    node: CallChain,
+    expression: Expression,
+    questionDotToken: QuestionDotToken,
+    typeArguments: js.Array[TypeNode],
+    argumentsArray: js.Array[Expression]
+  ): CallChain = js.native
   def updateCallSignature(
     node: CallSignatureDeclaration,
     typeParameters: js.UndefOr[scala.Nothing],
@@ -4648,6 +4740,18 @@ trait Typeofts extends js.Object {
   def updateDelete(node: DeleteExpression, expression: Expression): DeleteExpression = js.native
   def updateDo(node: DoStatement, statement: Statement, expression: Expression): DoStatement = js.native
   def updateElementAccess(node: ElementAccessExpression, expression: Expression, argumentExpression: Expression): ElementAccessExpression = js.native
+  def updateElementAccessChain(
+    node: ElementAccessChain,
+    expression: Expression,
+    questionDotToken: js.UndefOr[scala.Nothing],
+    argumentExpression: Expression
+  ): ElementAccessChain = js.native
+  def updateElementAccessChain(
+    node: ElementAccessChain,
+    expression: Expression,
+    questionDotToken: QuestionDotToken,
+    argumentExpression: Expression
+  ): ElementAccessChain = js.native
   def updateEnumDeclaration(
     node: EnumDeclaration,
     decorators: js.UndefOr[scala.Nothing],
@@ -6387,6 +6491,18 @@ trait Typeofts extends js.Object {
     initializer: Expression
   ): PropertyDeclaration = js.native
   def updatePropertyAccess(node: PropertyAccessExpression, expression: Expression, name: Identifier): PropertyAccessExpression = js.native
+  def updatePropertyAccessChain(
+    node: PropertyAccessChain,
+    expression: Expression,
+    questionDotToken: js.UndefOr[scala.Nothing],
+    name: Identifier
+  ): PropertyAccessChain = js.native
+  def updatePropertyAccessChain(
+    node: PropertyAccessChain,
+    expression: Expression,
+    questionDotToken: QuestionDotToken,
+    name: Identifier
+  ): PropertyAccessChain = js.native
   def updatePropertyAssignment(node: PropertyAssignment, name: PropertyName, initializer: Expression): PropertyAssignment = js.native
   def updatePropertySignature(node: PropertySignature, modifiers: js.UndefOr[scala.Nothing], name: PropertyName): PropertySignature = js.native
   def updatePropertySignature(
@@ -6705,6 +6821,34 @@ trait Typeofts extends js.Object {
   def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
   def updateTypePredicateNode(node: TypePredicateNode, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
   def updateTypePredicateNode(node: TypePredicateNode, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
+  def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: js.UndefOr[scala.Nothing], parameterName: Identifier): TypePredicateNode = js.native
+  def updateTypePredicateNodeWithModifier(
+    node: TypePredicateNode,
+    assertsModifier: js.UndefOr[scala.Nothing],
+    parameterName: Identifier,
+    `type`: TypeNode
+  ): TypePredicateNode = js.native
+  def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: js.UndefOr[scala.Nothing], parameterName: ThisTypeNode): TypePredicateNode = js.native
+  def updateTypePredicateNodeWithModifier(
+    node: TypePredicateNode,
+    assertsModifier: js.UndefOr[scala.Nothing],
+    parameterName: ThisTypeNode,
+    `type`: TypeNode
+  ): TypePredicateNode = js.native
+  def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: AssertsToken, parameterName: Identifier): TypePredicateNode = js.native
+  def updateTypePredicateNodeWithModifier(
+    node: TypePredicateNode,
+    assertsModifier: AssertsToken,
+    parameterName: Identifier,
+    `type`: TypeNode
+  ): TypePredicateNode = js.native
+  def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: AssertsToken, parameterName: ThisTypeNode): TypePredicateNode = js.native
+  def updateTypePredicateNodeWithModifier(
+    node: TypePredicateNode,
+    assertsModifier: AssertsToken,
+    parameterName: ThisTypeNode,
+    `type`: TypeNode
+  ): TypePredicateNode = js.native
   def updateTypeQueryNode(node: TypeQueryNode, exprName: EntityName): TypeQueryNode = js.native
   def updateTypeReferenceNode(node: TypeReferenceNode, typeName: EntityName): TypeReferenceNode = js.native
   def updateTypeReferenceNode(node: TypeReferenceNode, typeName: EntityName, typeArguments: NodeArray[TypeNode]): TypeReferenceNode = js.native

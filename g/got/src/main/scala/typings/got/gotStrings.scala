@@ -51,6 +51,9 @@ object gotStrings {
   sealed trait UnsupportedProtocolError extends js.Object
   
   @js.native
+  sealed trait connect extends js.Object
+  
+  @js.native
   sealed trait delete extends js.Object
   
   @js.native
@@ -64,6 +67,9 @@ object gotStrings {
   
   @js.native
   sealed trait head extends js.Object
+  
+  @js.native
+  sealed trait lookup extends js.Object
   
   @js.native
   sealed trait patch extends js.Object
@@ -82,6 +88,15 @@ object gotStrings {
   
   @js.native
   sealed trait response extends js.Object
+  
+  @js.native
+  sealed trait secureConnect extends js.Object
+  
+  @js.native
+  sealed trait send extends js.Object
+  
+  @js.native
+  sealed trait socket extends js.Object
   
   @js.native
   sealed trait uploadProgress extends js.Object
@@ -117,6 +132,8 @@ object gotStrings {
   @scala.inline
   def UnsupportedProtocolError: UnsupportedProtocolError = "UnsupportedProtocolError".asInstanceOf[UnsupportedProtocolError]
   @scala.inline
+  def connect: connect = "connect".asInstanceOf[connect]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
   def downloadProgress: downloadProgress = "downloadProgress".asInstanceOf[downloadProgress]
@@ -126,6 +143,8 @@ object gotStrings {
   def get: get = "get".asInstanceOf[get]
   @scala.inline
   def head: head = "head".asInstanceOf[head]
+  @scala.inline
+  def lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
   @scala.inline
@@ -138,6 +157,12 @@ object gotStrings {
   def request: request = "request".asInstanceOf[request]
   @scala.inline
   def response: response = "response".asInstanceOf[response]
+  @scala.inline
+  def secureConnect: secureConnect = "secureConnect".asInstanceOf[secureConnect]
+  @scala.inline
+  def send: send = "send".asInstanceOf[send]
+  @scala.inline
+  def socket: socket = "socket".asInstanceOf[socket]
   @scala.inline
   def uploadProgress: uploadProgress = "uploadProgress".asInstanceOf[uploadProgress]
 }

@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 /** The state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities. */
 @js.native
 trait Navigator
-  extends NavigatorID
-     with NavigatorLanguage
-     with NavigatorOnLine
+  extends MSFileSaver
+     with MSNavigatorDoNotTrack
+     with NavigatorAutomationInformation
+     with NavigatorBeacon
+     with NavigatorConcurrentHardware
      with NavigatorContentUtils
      with NavigatorCookies
+     with NavigatorID
+     with NavigatorLanguage
+     with NavigatorOnLine
      with NavigatorPlugins
-     with NavigatorConcurrentHardware
-     with NavigatorStorage
-     with NavigatorAutomationInformation
-     with MSFileSaver
-     with MSNavigatorDoNotTrack
-     with NavigatorBeacon {
+     with NavigatorStorage {
   val activeVRDisplays: js.Array[VRDisplay] = js.native
   val clipboard: Clipboard = js.native
   val credentials: CredentialsContainer = js.native

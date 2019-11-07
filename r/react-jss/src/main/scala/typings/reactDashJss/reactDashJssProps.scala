@@ -10,6 +10,9 @@ trait reactDashJssProps {
   type JssProviderProps = Anon_Children
   @scala.inline
   def ThemeProviderProps: typings.theming.themingMod.ThemeProviderProps.type = typings.theming.themingMod.ThemeProviderProps
-  type ThemeProviderProps = typings.theming.themingMod.ThemeProviderProps
+  type ThemeProviderProps[Theme] = typings.theming.themingMod.ThemeProviderProps[Theme]
+  @scala.inline
+  def ThemeProviderClsProps: typings.theming.themingMod.ThemeProviderProps.type = typings.theming.themingMod.ThemeProviderProps
+  type ThemeProviderClsProps[Theme] = typings.theming.themingMod.ThemeProviderProps[Theme]
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("website-scraper", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[scrape]
+object ^ extends TopLevel[Scrape]
 

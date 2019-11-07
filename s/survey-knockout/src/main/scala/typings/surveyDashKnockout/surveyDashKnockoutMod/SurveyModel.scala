@@ -25,6 +25,11 @@ class SurveyModel ()
     * depricated, misspelling, use pageCount property
     */
   val PageCount: Double = js.native
+  /**
+    * Set it to false if you do not want to submit survey automatically if goNextPageAutomatic=true.
+    * @see goNextPageAutomatic
+    */
+  var allowCompleteSurveyAutomatic: Boolean = js.native
   val areInvisibleElementsShowing: Boolean = js.native
   /**
     * The list of calculated values in the survey.
@@ -32,7 +37,9 @@ class SurveyModel ()
     */
   var calculatedValues: js.Array[CalculatedValue] = js.native
   /**
-    * Change this property from 'onNextPage' to 'onValueChanged' to check erorrs on every question value changing.
+    * Change this property from 'onNextPage' to 'onValueChanged' to check erorrs on every question value changing,
+    * or change it to 'onComplete' to validate all visible questions on complete button. If there is the error on some pages,
+    * then the page with the first error becomes the current.
     * By default, library checks errors on changing current page to the next or on completing the survey.
     */
   var checkErrorsMode: String = js.native
@@ -1263,6 +1270,14 @@ class SurveyModel ()
   override def getValue(name: String): js.Any = js.native
   /* CompleteClass */
   override def getVariable(name: String): js.Any = js.native
+  /**
+    * Returns true, if there is an error on any visible page
+    * @param fireCallback set it to true, to show errors in UI
+    * @param focusOnFirstError set it to true to focus on the first question that doesn't pass the validation and make the page, where question located, the current.
+    */
+  def hasErrors(): Boolean = js.native
+  def hasErrors(fireCallback: Boolean): Boolean = js.native
+  def hasErrors(fireCallback: Boolean, focusOnFirstError: Boolean): Boolean = js.native
   def hasVisibleQuestionByValueName(valueName: String): Boolean = js.native
   def isPageStarted(page: IPage): Boolean = js.native
   /**

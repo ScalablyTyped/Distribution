@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "hapi-pino"
-version := "6.3-dt-20191022Z-36d0df"
+version := "6.3-dt-20191022Z-6300d5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "hapi__boom" % "7.4-dt-20190815Z-8d7495",
-  "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190521Z-5d686d",
-  "org.scalablytyped" %%% "hapi__hapi" % "18.2-dt-20190624Z-92883d",
-  "org.scalablytyped" %%% "hapi__iron" % "5.1-dt-20190404Z-3a4a03",
-  "org.scalablytyped" %%% "hapi__joi" % "16.0-dt-20191104Z-b693e1",
-  "org.scalablytyped" %%% "hapi__mimos" % "4.1-dt-20190404Z-b7faec",
-  "org.scalablytyped" %%% "hapi__podium" % "3.4-dt-20190404Z-39afd7",
-  "org.scalablytyped" %%% "hapi__shot" % "4.1-dt-20190404Z-d1a0cf",
-  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-7db5f5",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191101Z-508d7c",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20191028Z-c0f7b2",
-  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-21a962",
-  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-1714ed",
-  "org.scalablytyped" %%% "std" % "3.6-b80e7a")
+  "org.scalablytyped" %%% "hapi__boom" % "7.4-dt-20190815Z-e49b03",
+  "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190521Z-74d1e7",
+  "org.scalablytyped" %%% "hapi__hapi" % "18.2-dt-20191105Z-80f540",
+  "org.scalablytyped" %%% "hapi__iron" % "5.1-dt-20190404Z-990b29",
+  "org.scalablytyped" %%% "hapi__joi" % "16.0-dt-20191104Z-570e69",
+  "org.scalablytyped" %%% "hapi__mimos" % "4.1-dt-20190404Z-f69d9c",
+  "org.scalablytyped" %%% "hapi__podium" % "3.4-dt-20190404Z-44a969",
+  "org.scalablytyped" %%% "hapi__shot" % "4.1-dt-20190404Z-68ac56",
+  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-c223ab",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20191028Z-ec147a",
+  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-2a184a",
+  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-d4c226",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -22,11 +22,11 @@ trait ITaxRate extends IResourceObject {
   /**
     * An arbitrary string attached to the tax rate for your internal use only. It will not be visible to your customers.
     */
-  var description: String
+  var description: String | Null
   /**
     * The display name of the tax rates as it will appear to your customer on their receipt email, PDF, and the hosted invoice page.
     */
-  var display_name: String
+  var display_name: String | Null
   /**
     * This specifies if the tax rate is inclusive or exclusive.
     */
@@ -34,7 +34,7 @@ trait ITaxRate extends IResourceObject {
   /**
     * The jurisdiction for the tax rate.
     */
-  var jurisdiction: String
+  var jurisdiction: String | Null
   /**
     * Has the value true if the object exists in live mode or the value false if the object exists in test mode.
     */
@@ -59,18 +59,21 @@ object ITaxRate {
   def apply(
     active: Boolean,
     created: Double,
-    description: String,
-    display_name: String,
     id: String,
     inclusive: Boolean,
-    jurisdiction: String,
     livemode: Boolean,
     metadata: IMetadata,
     `object`: tax_rate,
+    description: String = null,
+    display_name: String = null,
+    jurisdiction: String = null,
     percentage: Int | Double = null
   ): ITaxRate = {
-    val __obj = js.Dynamic.literal(active = active, created = created, description = description, display_name = display_name, id = id, inclusive = inclusive, jurisdiction = jurisdiction, livemode = livemode, metadata = metadata)
+    val __obj = js.Dynamic.literal(active = active, created = created, id = id, inclusive = inclusive, livemode = livemode, metadata = metadata)
     __obj.updateDynamic("object")(`object`)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (display_name != null) __obj.updateDynamic("display_name")(display_name)
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITaxRate]
   }

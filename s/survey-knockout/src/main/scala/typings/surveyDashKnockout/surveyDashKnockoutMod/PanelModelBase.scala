@@ -220,12 +220,12 @@ class PanelModelBase ()
   /**
     * Returns true, if there is an error on this Page or inside the current Panel
     * @param fireCallback set it to true, to show errors in UI
-    * @param focuseOnFirstError set it to true to focuse on the first question that doesn't pass the validation
+    * @param focusOnFirstError set it to true to focus on the first question that doesn't pass the validation
     */
   def hasErrors(): Boolean = js.native
   def hasErrors(fireCallback: Boolean): Boolean = js.native
-  def hasErrors(fireCallback: Boolean, focuseOnFirstError: Boolean): Boolean = js.native
-  def hasErrors(fireCallback: Boolean, focuseOnFirstError: Boolean, rec: js.Any): Boolean = js.native
+  def hasErrors(fireCallback: Boolean, focusOnFirstError: Boolean): Boolean = js.native
+  def hasErrors(fireCallback: Boolean, focusOnFirstError: Boolean, rec: js.Any): Boolean = js.native
   /* protected */ def hasErrorsCore(rec: js.Any): Unit = js.native
   /**
     * Returns the index of element parameter in the elements list.

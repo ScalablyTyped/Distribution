@@ -5,21 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DarkMode extends js.Object {
-  /**
-    * The current state of dark mode.
-    */
-  var value: Boolean
-  /**
-    * A function that allows you to set dark mode to `false`.
-    */
+  val value: Boolean
   def disable(): Unit
-  /**
-    * A function that allows you to set dark mode to `true`.
-    */
   def enable(): Unit
-  /**
-    * A function that allows you to toggle dark mode.
-    */
   def toggle(): Unit
 }
 

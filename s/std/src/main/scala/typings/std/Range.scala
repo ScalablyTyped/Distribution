@@ -29,8 +29,8 @@ trait Range extends AbstractRange {
   def deleteContents(): Unit = js.native
   def detach(): Unit = js.native
   def extractContents(): DocumentFragment = js.native
-  def getBoundingClientRect(): ClientRect | DOMRect = js.native
-  def getClientRects(): ClientRectList | DOMRectList = js.native
+  def getBoundingClientRect(): DOMRect = js.native
+  def getClientRects(): DOMRectList = js.native
   def insertNode(node: Node): Unit = js.native
   /**
     * Returns whether range intersects node.

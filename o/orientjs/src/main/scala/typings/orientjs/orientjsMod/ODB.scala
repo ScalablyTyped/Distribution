@@ -31,18 +31,6 @@ class ODB () extends EventEmitter {
   var `type`: graph | document = js.native
   var username: String = js.native
   /**
-    * Begin a new transaction.
-    *
-    * @return The transaction instance.
-    */
-  def begin(): OTransaction = js.native
-  /**
-    * Close the database.
-    *
-    * @promise {Db} The now closed db instance.
-    */
-  def close(): js.Promise[ODB] = js.native
-  /**
     * Configure the database instance.
     * @param  config The configuration for the database.
     * @return            The configured database object.
@@ -143,15 +131,6 @@ class ODB () extends EventEmitter {
   def let(name: String, value: OStatement): OStatement = js.native
   def let(params: js.Any): OStatement = js.native
   /**
-    * Execute a live query against the database
-    *
-    * @param   query   The query or command to execute.
-    * @param   options The options for the query / command.
-    * @promise {Mixed}          The token of the live query.
-    */
-  def liveQuery[R](command: String): js.Promise[R] = js.native
-  def liveQuery[R](command: String, options: QueryOptions): js.Promise[R] = js.native
-  /**
     * Normalize a result, where possible.
     * @param  result The result to normalize.
     * @return        The normalized result.
@@ -169,15 +148,6 @@ class ODB () extends EventEmitter {
     * @promise {Db} The open db instance.
     */
   def open(): js.Promise[ODB] = js.native
-  /**
-    * Execute an SQL query against the database and retreive the results
-    *
-    * @param   query   The query or command to execute.
-    * @param   options The options for the query / command.
-    * @promise {Mixed}          The results of the query / command.
-    */
-  def query[R](command: String): js.Promise[R] = js.native
-  def query[R](command: String, options: QueryOptions): js.Promise[R] = js.native
   /**
     * Create a raw expression.
     *

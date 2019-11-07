@@ -299,9 +299,11 @@ class Question protected ()
   /**
     * Return the question value as a display text. For example, for dropdown, it would return the item text instead of item value.
     * @param keysAsText Set this value to true, to return key (in matrices questions) as display text as well.
+    * @param value use this parameter, if you want to get display value for this value and not question.value. It is undefined by default.
     */
   def getDisplayValue(keysAsText: Boolean): js.Any = js.native
-  /* protected */ def getDisplayValueCore(keyAsText: Boolean): js.Any = js.native
+  def getDisplayValue(keysAsText: Boolean, value: js.Any): js.Any = js.native
+  /* protected */ def getDisplayValueCore(keyAsText: Boolean, value: js.Any): js.Any = js.native
   /* CompleteClass */
   override def getErrorCustomText(text: String, error: SurveyError): String = js.native
   /* protected */ def getFirstErrorInputElementId(): String = js.native

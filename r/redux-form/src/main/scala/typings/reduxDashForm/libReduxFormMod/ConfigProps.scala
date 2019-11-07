@@ -65,6 +65,7 @@ trait ConfigProps[FormData, P, ErrorType] extends js.Object {
   var shouldError: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.undefined
   var shouldValidate: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.undefined
   var shouldWarn: js.UndefOr[js.Function1[/* params */ ValidateCallback[FormData, P, ErrorType], Boolean]] = js.undefined
+  var submitAsSideEffect: js.UndefOr[Boolean] = js.undefined
   var touchOnBlur: js.UndefOr[Boolean] = js.undefined
   var touchOnChange: js.UndefOr[Boolean] = js.undefined
   var updateUnregisteredFields: js.UndefOr[Boolean] = js.undefined
@@ -109,6 +110,7 @@ object ConfigProps {
     shouldError: /* params */ ValidateCallback[FormData, P, ErrorType] => Boolean = null,
     shouldValidate: /* params */ ValidateCallback[FormData, P, ErrorType] => Boolean = null,
     shouldWarn: /* params */ ValidateCallback[FormData, P, ErrorType] => Boolean = null,
+    submitAsSideEffect: js.UndefOr[Boolean] = js.undefined,
     touchOnBlur: js.UndefOr[Boolean] = js.undefined,
     touchOnChange: js.UndefOr[Boolean] = js.undefined,
     updateUnregisteredFields: js.UndefOr[Boolean] = js.undefined,
@@ -137,6 +139,7 @@ object ConfigProps {
     if (shouldError != null) __obj.updateDynamic("shouldError")(js.Any.fromFunction1(shouldError))
     if (shouldValidate != null) __obj.updateDynamic("shouldValidate")(js.Any.fromFunction1(shouldValidate))
     if (shouldWarn != null) __obj.updateDynamic("shouldWarn")(js.Any.fromFunction1(shouldWarn))
+    if (!js.isUndefined(submitAsSideEffect)) __obj.updateDynamic("submitAsSideEffect")(submitAsSideEffect)
     if (!js.isUndefined(touchOnBlur)) __obj.updateDynamic("touchOnBlur")(touchOnBlur)
     if (!js.isUndefined(touchOnChange)) __obj.updateDynamic("touchOnChange")(touchOnChange)
     if (!js.isUndefined(updateUnregisteredFields)) __obj.updateDynamic("updateUnregisteredFields")(updateUnregisteredFields)

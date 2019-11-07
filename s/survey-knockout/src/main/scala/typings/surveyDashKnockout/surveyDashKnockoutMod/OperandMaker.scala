@@ -19,7 +19,7 @@ object OperandMaker extends js.Object {
   def isNumeric(value: String): Boolean = js.native
   def isSpaceString(str: String): Boolean = js.native
   def operatorToString(operatorName: String): String = js.native
-  def safeToString(operand: Operand): String = js.native
+  def safeToString(operand: Operand, func: js.Function1[/* op */ Operand, String]): String = js.native
   def throwInvalidOperatorError(op: String): Unit = js.native
   def toOperandString(value: String): String = js.native
 }

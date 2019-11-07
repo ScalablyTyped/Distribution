@@ -160,6 +160,7 @@ trait LanguageService extends js.Object {
   ): js.UndefOr[RefactorEditInfo] = js.native
   def getEmitOutput(fileName: String): EmitOutput = js.native
   def getEmitOutput(fileName: String, emitOnlyDtsFiles: Boolean): EmitOutput = js.native
+  def getEmitOutput(fileName: String, emitOnlyDtsFiles: Boolean, forceDtsEmit: Boolean): EmitOutput = js.native
   def getEncodedSemanticClassifications(fileName: String, span: TextSpan): Classifications = js.native
   def getEncodedSyntacticClassifications(fileName: String, span: TextSpan): Classifications = js.native
   def getFormattingEditsAfterKeystroke(fileName: String, position: Double, key: String, options: FormatCodeOptions): js.Array[TextChange] = js.native

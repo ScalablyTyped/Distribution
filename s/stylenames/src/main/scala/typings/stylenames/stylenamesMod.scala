@@ -16,7 +16,7 @@ object stylenamesMod extends js.Object {
   def default(styles: StyleObject): String = js.native
   type StyleObject = Partial[
     Record[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 423 */ js.Any, 
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 458 */ js.Any, 
       StyleValue
     ]
   ]

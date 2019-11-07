@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait VFile extends js.Object {
+trait VFile extends _VFileCompatible {
   /**
     * Current name (including extension) of `vfile`.
     * Cannot contain path separators.

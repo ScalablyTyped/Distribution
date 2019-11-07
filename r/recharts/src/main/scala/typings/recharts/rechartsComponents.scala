@@ -29,6 +29,8 @@ object rechartsComponents extends rechartsProps {
   @scala.inline
   def Curve: ComponentType[CurveProps] = js.constructorOf[typings.recharts.rechartsMod.Curve].asInstanceOf[typings.react.reactMod.ComponentType[CurveProps]]
   @scala.inline
+  def Customized: ComponentType[CustomizedProps] = js.constructorOf[typings.recharts.rechartsMod.Customized].asInstanceOf[typings.react.reactMod.ComponentType[CustomizedProps]]
+  @scala.inline
   def Dot: ComponentType[DotProps] = js.constructorOf[typings.recharts.rechartsMod.Dot].asInstanceOf[typings.react.reactMod.ComponentType[DotProps]]
   @scala.inline
   def ErrorBar: ComponentType[ErrorBarProps] = js.constructorOf[typings.recharts.rechartsMod.ErrorBar].asInstanceOf[typings.react.reactMod.ComponentType[ErrorBarProps]]

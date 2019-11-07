@@ -1,6 +1,7 @@
 
 # Scala.js typings for node-persist
 
+Typings are for version 3.0
 
 ## Library description:
 Super-easy (and fast) persistent data structures in Node.js, modeled after HTML5 localStorage

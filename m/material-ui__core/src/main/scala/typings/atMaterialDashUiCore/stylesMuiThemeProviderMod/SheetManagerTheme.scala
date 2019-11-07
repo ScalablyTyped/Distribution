@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait SheetManagerTheme extends js.Object {
   var refs: Double
-  var sheet: StyleSheet[_]
+  var sheet: StyleSheet[String]
 }
 
 object SheetManagerTheme {
   @scala.inline
-  def apply(refs: Double, sheet: StyleSheet[_]): SheetManagerTheme = {
+  def apply(refs: Double, sheet: StyleSheet[String]): SheetManagerTheme = {
     val __obj = js.Dynamic.literal(refs = refs, sheet = sheet)
   
     __obj.asInstanceOf[SheetManagerTheme]

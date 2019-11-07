@@ -27,6 +27,10 @@ trait ImageData
 @JSGlobal("ImageData")
 @js.native
 object ImageData
-  extends Instantiable2[/* width */ Double, /* height */ Double, ImageData]
-     with Instantiable3[/* array */ Uint8ClampedArray, /* width */ Double, /* height */ Double, ImageData]
+  extends Instantiable3[/* array */ Uint8ClampedArray, /* width */ Double, /* height */ Double, ImageData]
+     with Instantiable2[
+      (/* width */ Double) | (/* array */ Uint8ClampedArray), 
+      /* height */ Double, 
+      ImageData
+    ]
 

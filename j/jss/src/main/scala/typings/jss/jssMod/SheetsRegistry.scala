@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SheetsRegistry () extends js.Object {
   val index: Double = js.native
-  var registry: js.Array[StyleSheet[_]] = js.native
   def add(sheet: StyleSheet[_]): Unit = js.native
   def remove(sheet: StyleSheet[_]): Unit = js.native
   def reset(): Unit = js.native

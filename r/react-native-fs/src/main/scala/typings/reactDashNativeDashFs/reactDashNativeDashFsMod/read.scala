@@ -10,6 +10,6 @@ object read extends js.Object {
   def apply(filepath: String): js.Promise[String] = js.native
   def apply(filepath: String, length: Double): js.Promise[String] = js.native
   def apply(filepath: String, length: Double, position: Double): js.Promise[String] = js.native
-  def apply(filepath: String, length: Double, position: Double, encodingOrOptions: EncodingOrOptions): js.Promise[String] = js.native
+  def apply(filepath: String, length: Double, position: Double, encodingOrOptions: js.Any): js.Promise[String] = js.native
 }
 

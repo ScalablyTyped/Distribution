@@ -235,6 +235,33 @@ object atBabelTypesStrings {
   sealed trait EmptyTypeAnnotation extends js.Object
   
   @js.native
+  sealed trait EnumBooleanBody extends js.Object
+  
+  @js.native
+  sealed trait EnumBooleanMember extends js.Object
+  
+  @js.native
+  sealed trait EnumDeclaration extends js.Object
+  
+  @js.native
+  sealed trait EnumDefaultedMember extends js.Object
+  
+  @js.native
+  sealed trait EnumNumberBody extends js.Object
+  
+  @js.native
+  sealed trait EnumNumberMember extends js.Object
+  
+  @js.native
+  sealed trait EnumStringBody extends js.Object
+  
+  @js.native
+  sealed trait EnumStringMember extends js.Object
+  
+  @js.native
+  sealed trait EnumSymbolBody extends js.Object
+  
+  @js.native
   sealed trait ExistsTypeAnnotation extends js.Object
   
   @js.native
@@ -1040,6 +1067,24 @@ object atBabelTypesStrings {
   def EmptyStatement: EmptyStatement = "EmptyStatement".asInstanceOf[EmptyStatement]
   @scala.inline
   def EmptyTypeAnnotation: EmptyTypeAnnotation = "EmptyTypeAnnotation".asInstanceOf[EmptyTypeAnnotation]
+  @scala.inline
+  def EnumBooleanBody: EnumBooleanBody = "EnumBooleanBody".asInstanceOf[EnumBooleanBody]
+  @scala.inline
+  def EnumBooleanMember: EnumBooleanMember = "EnumBooleanMember".asInstanceOf[EnumBooleanMember]
+  @scala.inline
+  def EnumDeclaration: EnumDeclaration = "EnumDeclaration".asInstanceOf[EnumDeclaration]
+  @scala.inline
+  def EnumDefaultedMember: EnumDefaultedMember = "EnumDefaultedMember".asInstanceOf[EnumDefaultedMember]
+  @scala.inline
+  def EnumNumberBody: EnumNumberBody = "EnumNumberBody".asInstanceOf[EnumNumberBody]
+  @scala.inline
+  def EnumNumberMember: EnumNumberMember = "EnumNumberMember".asInstanceOf[EnumNumberMember]
+  @scala.inline
+  def EnumStringBody: EnumStringBody = "EnumStringBody".asInstanceOf[EnumStringBody]
+  @scala.inline
+  def EnumStringMember: EnumStringMember = "EnumStringMember".asInstanceOf[EnumStringMember]
+  @scala.inline
+  def EnumSymbolBody: EnumSymbolBody = "EnumSymbolBody".asInstanceOf[EnumSymbolBody]
   @scala.inline
   def ExistsTypeAnnotation: ExistsTypeAnnotation = "ExistsTypeAnnotation".asInstanceOf[ExistsTypeAnnotation]
   @scala.inline
