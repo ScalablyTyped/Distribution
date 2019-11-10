@@ -14,24 +14,22 @@ object libNodeServerMod extends js.Object {
   @js.native
   class TeamSpeakServer protected () extends Abstract {
     def this(parent: TeamSpeak, list: ServerList) = this()
-    val autostart: Double = js.native
-    val clientsonline: Double = js.native
-    val id: Double = js.native
-    val machineId: String = js.native
-    val maxclients: Double = js.native
-    val name: String = js.native
-    val port: Double = js.native
-    val queryclientsonline: Double = js.native
-    val status: String = js.native
-    val uniqueIdentifier: js.UndefOr[String] = js.native
-    val uptime: Double = js.native
+    def autostart(): Double = js.native
+    def clientsonline(): Double = js.native
     /** deletes the server */
     def del(): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def id(): Double = js.native
+    def machineId(): String = js.native
+    def maxclients(): Double = js.native
+    def name(): String = js.native
+    def port(): Double = js.native
+    def queryclientsonline(): Double = js.native
     /**
       * Starts the virtual server.
       * Depending on your permissions, you're able to start either your own virtual server only or all virtual servers in the server instance.
       */
     def start(): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def status(): String = js.native
     /**
       * Stops the virtual server.
       * Depending on your permissions, you're able to stop either your own virtual server only or all virtual servers in the server instance.
@@ -39,6 +37,8 @@ object libNodeServerMod extends js.Object {
       */
     def stop(): js.Promise[js.Array[QueryResponseTypes]] = js.native
     def stop(msg: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def uniqueIdentifier(): js.UndefOr[String] = js.native
+    def uptime(): Double = js.native
     /**
       * selects a virtual server
       * @param client_nickname sets the nickname when selecting a server

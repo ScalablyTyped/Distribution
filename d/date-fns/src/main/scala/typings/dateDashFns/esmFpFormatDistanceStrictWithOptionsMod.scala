@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object esmFpFormatDistanceStrictWithOptionsMod extends js.Object {
   @js.native
-  object default
-    extends TopLevel[CurriedFn3[js.Object, Date | Double, Date | Double, String]]
+  object default extends TopLevel[CurriedFn3[Anon_AddSuffixCeilDay, Date | Double, Date | Double, String]]
   
 }
 

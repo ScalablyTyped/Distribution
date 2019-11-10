@@ -35,7 +35,7 @@ class MongoClient protected () extends EventEmitter {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#startSession */
   def startSession(): ClientSession = js.native
   def startSession(options: SessionOptions): ClientSession = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#watch */
+  /** http://mongodb.github.io/node-mongodb-native/3.3/api/MongoClient.html#watch */
   def watch(): ChangeStream = js.native
   def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
   def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptions with Anon_Session): ChangeStream = js.native

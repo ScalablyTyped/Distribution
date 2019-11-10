@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "express-async-wrap"
-version := "1.0-dt-20190502Z-e6334d"
+version := "1.0-dt-20190502Z-ef1fec"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-34724c",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191101Z-51a4ff",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-1971cc",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20191101Z-cdc4d1",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-6ebcbf",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false

@@ -83,6 +83,7 @@ import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.Picke
 import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
 import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
 import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
+import typings.atIonicCore.distTypesInterfaceMod.Config
 import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
 import typings.atIonicReact.atIonicReactStrings.`type`
 import typings.atIonicReact.atIonicReactStrings.activated
@@ -678,6 +679,7 @@ object distTypesComponentsMod extends js.Object {
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonVirtualScrollElement]
   ] = js.native
+  def getConfig(): Config | Null = js.native
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native

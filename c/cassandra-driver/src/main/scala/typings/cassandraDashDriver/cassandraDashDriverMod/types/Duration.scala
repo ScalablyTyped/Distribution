@@ -1,17 +1,23 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod.types
 
-import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Duration extends js.Object {
-  def equals(other: Duration): Boolean
-  def toBuffer(): Buffer
-}
-
 @JSImport("cassandra-driver", "types.Duration")
 @js.native
-object Duration extends TopLevel[DurationStatic]
+class Duration protected ()
+  extends typings.cassandraDashDriver.libTypesMod.types.Duration {
+  def this(month: Double, days: Double, nanoseconds: Double) = this()
+  def this(month: Double, days: Double, nanoseconds: typings.cassandraDashDriver.libTypesMod.types.Long) = this()
+}
+
+/* static members */
+@JSImport("cassandra-driver", "types.Duration")
+@js.native
+object Duration extends js.Object {
+  def fromBuffer(buffer: Buffer): typings.cassandraDashDriver.libTypesMod.types.Duration = js.native
+  def fromString(input: String): typings.cassandraDashDriver.libTypesMod.types.Duration = js.native
+}
 

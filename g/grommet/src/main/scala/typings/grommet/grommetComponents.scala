@@ -23,6 +23,7 @@ import typings.grommet.componentsGrommetMod.GrommetProps
 import typings.grommet.componentsHeadingMod.HeadingProps
 import typings.grommet.componentsImageMod.ImageProps
 import typings.grommet.componentsLayerMod.LayerProps
+import typings.grommet.componentsListMod.ListProps
 import typings.grommet.componentsMarkdownMod.MarkdownProps
 import typings.grommet.componentsMaskedInputMod.MaskedInputProps
 import typings.grommet.componentsMenuMod.MenuProps
@@ -87,6 +88,7 @@ import typings.std.HTMLTableElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTextAreaElement
+import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
 import typings.std.SVGSVGElement
 import scala.scalajs.js
@@ -297,6 +299,14 @@ object grommetComponents extends grommetProps {
   typings.grommet.componentsLayerMod.LayerProps with (typings.react.reactMod.DetailedHTMLProps[
     typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
+  ])]]
+  @scala.inline
+  def List: ComponentType[
+    ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement])
+  ] = js.constructorOf[typings.grommet.grommetMod.List].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommet.componentsListMod.ListProps with (typings.react.reactMod.DetailedHTMLProps[
+    typings.react.reactMod.HTMLAttributes[typings.std.HTMLUListElement], 
+    typings.std.HTMLUListElement
   ])]]
   @scala.inline
   def Markdown: ComponentType[

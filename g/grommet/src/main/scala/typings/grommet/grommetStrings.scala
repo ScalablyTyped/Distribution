@@ -1,12 +1,16 @@
 package typings.grommet
 
-import typings.grommet.componentsBoxMod.SideType
 import typings.grommet.componentsBoxMod.StyleType
-import typings.grommet.componentsBoxMod._SizeType
+import typings.grommet.componentsListMod.SideType
+import typings.grommet.componentsListMod._PadSizeType
+import typings.grommet.componentsListMod._SizeType
 import typings.grommet.contextsAnnounceContextMod.AnnounceMode
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.JustifyContentType
 import typings.grommet.utilsMod.TextAlignType
+import typings.grommet.utilsMod._BasisType
+import typings.grommet.utilsMod._ElevationType
 import typings.grommet.utilsMod._FillType
 import typings.grommet.utilsMod._GapType
 import typings.grommet.utilsMod._MarginType
@@ -22,13 +26,13 @@ object grommetStrings {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `1/2` extends js.Object
+  sealed trait `1/2` extends _BasisType
   
   @js.native
-  sealed trait `1/3` extends js.Object
+  sealed trait `1/3` extends _BasisType
   
   @js.native
-  sealed trait `1/4` extends js.Object
+  sealed trait `1/4` extends _BasisType
   
   @js.native
   sealed trait `12` extends js.Object
@@ -37,10 +41,10 @@ object grommetStrings {
   sealed trait `2` extends js.Object
   
   @js.native
-  sealed trait `2/3` extends js.Object
+  sealed trait `2/3` extends _BasisType
   
   @js.native
-  sealed trait `2/4` extends js.Object
+  sealed trait `2/4` extends _BasisType
   
   @js.native
   sealed trait `24` extends js.Object
@@ -49,7 +53,7 @@ object grommetStrings {
   sealed trait `3` extends js.Object
   
   @js.native
-  sealed trait `3/4` extends js.Object
+  sealed trait `3/4` extends _BasisType
   
   @js.native
   sealed trait `4` extends js.Object
@@ -109,7 +113,9 @@ object grommetStrings {
   sealed trait address extends _PolymorphicType
   
   @js.native
-  sealed trait all extends SideType
+  sealed trait all
+    extends SideType
+       with typings.grommet.componentsBoxMod.SideType
   
   @js.native
   sealed trait analog extends js.Object
@@ -127,7 +133,9 @@ object grommetStrings {
   sealed trait area extends _PolymorphicType
   
   @js.native
-  sealed trait around extends AlignContentType
+  sealed trait around
+    extends AlignContentType
+       with JustifyContentType
   
   @js.native
   sealed trait arrows extends js.Object
@@ -145,7 +153,7 @@ object grommetStrings {
   sealed trait audio extends _PolymorphicType
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends _BasisType
   
   @js.native
   sealed trait avg extends js.Object
@@ -175,7 +183,9 @@ object grommetStrings {
   sealed trait below extends js.Object
   
   @js.native
-  sealed trait between extends AlignContentType
+  sealed trait between
+    extends AlignContentType
+       with JustifyContentType
   
   @js.native
   sealed trait big extends _PolymorphicType
@@ -190,7 +200,9 @@ object grommetStrings {
   sealed trait bold extends js.Object
   
   @js.native
-  sealed trait bottom extends SideType
+  sealed trait bottom
+    extends SideType
+       with typings.grommet.componentsBoxMod.SideType
   
   @js.native
   sealed trait `bottom-left` extends js.Object
@@ -220,6 +232,7 @@ object grommetStrings {
   sealed trait center
     extends AlignContentType
        with AlignSelfType
+       with JustifyContentType
        with TextAlignType
   
   @js.native
@@ -263,6 +276,9 @@ object grommetStrings {
   
   @js.native
   sealed trait curved extends js.Object
+  
+  @js.native
+  sealed trait dark extends js.Object
   
   @js.native
   sealed trait dashed extends StyleType
@@ -331,6 +347,7 @@ object grommetStrings {
   sealed trait end
     extends AlignContentType
        with AlignSelfType
+       with JustifyContentType
        with TextAlignType
   
   @js.native
@@ -457,7 +474,7 @@ object grommetStrings {
   sealed trait forward extends js.Object
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait full extends _BasisType
   
   @js.native
   sealed trait g extends _PolymorphicType
@@ -504,6 +521,7 @@ object grommetStrings {
   @js.native
   sealed trait horizontal
     extends SideType
+       with typings.grommet.componentsBoxMod.SideType
        with _FillType
   
   @js.native
@@ -562,22 +580,31 @@ object grommetStrings {
   
   @js.native
   sealed trait large
-    extends _GapType
+    extends _PadSizeType
+       with _BasisType
+       with _ElevationType
+       with _GapType
        with _MarginType
        with _PadType
        with _SizeType
+       with typings.grommet.componentsBoxMod._SizeType
   
   @js.native
   sealed trait last extends js.Object
   
   @js.native
-  sealed trait left extends SideType
+  sealed trait left
+    extends SideType
+       with typings.grommet.componentsBoxMod.SideType
   
   @js.native
   sealed trait legend extends _PolymorphicType
   
   @js.native
   sealed trait li extends _PolymorphicType
+  
+  @js.native
+  sealed trait light extends js.Object
   
   @js.native
   sealed trait line extends _PolymorphicType
@@ -608,11 +635,15 @@ object grommetStrings {
   
   @js.native
   sealed trait medium
-    extends _GapType
+    extends _PadSizeType
+       with _BasisType
+       with _ElevationType
+       with _GapType
        with _MarginType
        with _OpacityType
        with _PadType
        with _SizeType
+       with typings.grommet.componentsBoxMod._SizeType
   
   @js.native
   sealed trait menu extends _PolymorphicType
@@ -655,7 +686,9 @@ object grommetStrings {
   
   @js.native
   sealed trait none
-    extends _GapType
+    extends _PadSizeType
+       with _ElevationType
+       with _GapType
        with _MarginType
        with _PadType
   
@@ -765,7 +798,9 @@ object grommetStrings {
   sealed trait ridge extends StyleType
   
   @js.native
-  sealed trait right extends SideType
+  sealed trait right
+    extends SideType
+       with typings.grommet.componentsBoxMod.SideType
   
   @js.native
   sealed trait row extends js.Object
@@ -832,11 +867,15 @@ object grommetStrings {
   
   @js.native
   sealed trait small
-    extends _GapType
+    extends _PadSizeType
+       with _BasisType
+       with _ElevationType
+       with _GapType
        with _MarginType
        with _PadType
        with _PolymorphicType
        with _SizeType
+       with typings.grommet.componentsBoxMod._SizeType
   
   @js.native
   sealed trait solid extends StyleType
@@ -851,6 +890,7 @@ object grommetStrings {
   sealed trait start
     extends AlignContentType
        with AlignSelfType
+       with JustifyContentType
        with TextAlignType
   
   @js.native
@@ -860,6 +900,7 @@ object grommetStrings {
   sealed trait stretch
     extends AlignContentType
        with AlignSelfType
+       with JustifyContentType
   
   @js.native
   sealed trait strong
@@ -930,7 +971,9 @@ object grommetStrings {
   sealed trait title extends _PolymorphicType
   
   @js.native
-  sealed trait top extends SideType
+  sealed trait top
+    extends SideType
+       with typings.grommet.componentsBoxMod.SideType
   
   @js.native
   sealed trait `top-left` extends js.Object
@@ -965,6 +1008,7 @@ object grommetStrings {
   @js.native
   sealed trait vertical
     extends SideType
+       with typings.grommet.componentsBoxMod.SideType
        with _FillType
   
   @js.native
@@ -990,26 +1034,37 @@ object grommetStrings {
   
   @js.native
   sealed trait xlarge
-    extends _GapType
+    extends _PadSizeType
+       with _BasisType
+       with _ElevationType
+       with _GapType
        with _MarginType
        with _PadType
        with _SizeType
+       with typings.grommet.componentsBoxMod._SizeType
   
   @js.native
   sealed trait xsmall
-    extends _GapType
+    extends _PadSizeType
+       with _BasisType
+       with _ElevationType
+       with _GapType
        with _MarginType
        with _PadType
        with _SizeType
+       with typings.grommet.componentsBoxMod._SizeType
   
   @js.native
-  sealed trait xxlarge extends js.Object
+  sealed trait xxlarge extends _BasisType
   
   @js.native
   sealed trait xxsmall
-    extends _GapType
+    extends _PadSizeType
+       with _BasisType
+       with _GapType
        with _MarginType
        with _PadType
+       with _SizeType
   
   @js.native
   sealed trait zoomIn extends js.Object
@@ -1179,6 +1234,8 @@ object grommetStrings {
   def cover: cover = "cover".asInstanceOf[cover]
   @scala.inline
   def curved: curved = "curved".asInstanceOf[curved]
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
   @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
   @scala.inline
@@ -1383,6 +1440,8 @@ object grommetStrings {
   def legend: legend = "legend".asInstanceOf[legend]
   @scala.inline
   def li: li = "li".asInstanceOf[li]
+  @scala.inline
+  def light: light = "light".asInstanceOf[light]
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   @scala.inline

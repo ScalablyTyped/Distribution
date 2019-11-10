@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-image-gallery"
-version := "0.9-dt-20191104Z-03f235"
+version := "0.9-dt-20191108Z-9bc212"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,6 +15,7 @@ object languages extends js.Object {
   def getDiagnostics(resource: Uri): js.Array[Diagnostic] = js.native
   def getLanguages(): Thenable[js.Array[String]] = js.native
   def `match`(selector: DocumentSelector, document: TextDocument): Double = js.native
+  def registerCallHierarchyProvider(selector: DocumentSelector, provider: CallHierarchyProvider): Disposable = js.native
   def registerCodeActionsProvider(selector: DocumentSelector, provider: CodeActionProvider): Disposable = js.native
   def registerCodeActionsProvider(selector: DocumentSelector, provider: CodeActionProvider, metadata: CodeActionProviderMetadata): Disposable = js.native
   def registerCodeLensProvider(selector: DocumentSelector, provider: CodeLensProvider): Disposable = js.native

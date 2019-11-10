@@ -1,11 +1,11 @@
 package typings.grommet.themesBaseMod
 
-import typings.grommet.Anon_A
 import typings.grommet.Anon_Active
 import typings.grommet.Anon_ActiveBackground
 import typings.grommet.Anon_Analog
 import typings.grommet.Anon_Animation
 import typings.grommet.Anon_BackgroundBorderContainer
+import typings.grommet.Anon_BackgroundContainer
 import typings.grommet.Anon_BackgroundEdge
 import typings.grommet.Anon_BackgroundExtend
 import typings.grommet.Anon_BackgroundExtendGap
@@ -23,6 +23,7 @@ import typings.grommet.Anon_ColorExtendColorType
 import typings.grommet.Anon_DisabledExtend
 import typings.grommet.Anon_ExtendExtendType
 import typings.grommet.Anon_ExtendFont
+import typings.grommet.Anon_ExtendItem
 import typings.grommet.Anon_ExtendLarge
 import typings.grommet.Anon_ExtendLine
 import typings.grommet.Anon_ExtendMaxHeight
@@ -56,6 +57,7 @@ trait ThemeType extends js.Object {
   var heading: js.UndefOr[Anon_ExtendFont] = js.undefined
   var icon: js.UndefOr[Anon_ExtendSizeAnonLargeMediumSmallX] = js.undefined
   var layer: js.UndefOr[Anon_BackgroundBorderContainer] = js.undefined
+  var list: js.UndefOr[Anon_ExtendItem] = js.undefined
   var maskedInput: js.UndefOr[Anon_ExtendExtendType] = js.undefined
   var menu: js.UndefOr[Anon_BackgroundExtend] = js.undefined
   var meter: js.UndefOr[Anon_ColorExtendColorType] = js.undefined
@@ -63,7 +65,7 @@ trait ThemeType extends js.Object {
   var radioButton: js.UndefOr[Anon_BorderCheckGap] = js.undefined
   var rangeInput: js.UndefOr[Anon_Thumb] = js.undefined
   var rangeSelector: js.UndefOr[Anon_BackgroundEdge] = js.undefined
-  var select: js.UndefOr[Anon_A] = js.undefined
+  var select: js.UndefOr[Anon_BackgroundContainer] = js.undefined
   var tab: js.UndefOr[Anon_ActiveBackground] = js.undefined
   var table: js.UndefOr[Anon_BodyFooter] = js.undefined
   var tabs: js.UndefOr[Anon_BackgroundExtendGap] = js.undefined
@@ -96,6 +98,7 @@ object ThemeType {
     heading: Anon_ExtendFont = null,
     icon: Anon_ExtendSizeAnonLargeMediumSmallX = null,
     layer: Anon_BackgroundBorderContainer = null,
+    list: Anon_ExtendItem = null,
     maskedInput: Anon_ExtendExtendType = null,
     menu: Anon_BackgroundExtend = null,
     meter: Anon_ColorExtendColorType = null,
@@ -103,7 +106,7 @@ object ThemeType {
     radioButton: Anon_BorderCheckGap = null,
     rangeInput: Anon_Thumb = null,
     rangeSelector: Anon_BackgroundEdge = null,
-    select: Anon_A = null,
+    select: Anon_BackgroundContainer = null,
     tab: Anon_ActiveBackground = null,
     table: Anon_BodyFooter = null,
     tabs: Anon_BackgroundExtendGap = null,
@@ -133,6 +136,7 @@ object ThemeType {
     if (heading != null) __obj.updateDynamic("heading")(heading)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (list != null) __obj.updateDynamic("list")(list)
     if (maskedInput != null) __obj.updateDynamic("maskedInput")(maskedInput)
     if (menu != null) __obj.updateDynamic("menu")(menu)
     if (meter != null) __obj.updateDynamic("meter")(meter)

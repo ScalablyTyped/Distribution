@@ -1,11 +1,14 @@
 organization := "org.scalablytyped"
 name := "web3-eth-abi"
-version := "1.0-dt-20180529Z-f9a600"
+version := "1.2.2-06cd8c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-227146",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
+  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
+  "org.scalablytyped" %%% "web3-utils" % "1.2.2-862267")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

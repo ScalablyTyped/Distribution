@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "frctl__fractal"
-version := "1.x-dt-20180725Z-8f0fad"
+version := "1.x-dt-20180725Z-6d465e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-48d4fc")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-d4cc87")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

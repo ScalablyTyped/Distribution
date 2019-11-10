@@ -116,7 +116,7 @@ object reactDashDatepickerMod extends js.Object {
     var previousYearButtonLabel: js.UndefOr[String] = js.native
     var readOnly: js.UndefOr[Boolean] = js.native
     var renderCustomHeader: js.UndefOr[js.Function1[/* params */ Anon_ChangeMonth, ReactNode]] = js.native
-    var renderDayContents: js.UndefOr[js.Function1[/* dayOfMonth */ Double, ReactNode]] = js.native
+    var renderDayContents: js.UndefOr[js.Function2[/* dayOfMonth */ Double, /* date */ js.UndefOr[Date], ReactNode]] = js.native
     var required: js.UndefOr[Boolean] = js.native
     var scrollableMonthYearDropdown: js.UndefOr[Boolean] = js.native
     var scrollableYearDropdown: js.UndefOr[Boolean] = js.native

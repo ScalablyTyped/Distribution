@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "imagemin-webp"
-version := "5.1-dt-20191022Z-cf4063"
+version := "5.1-dt-20191022Z-412609"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "imagemin" % "7.0-dt-20190909Z-e9b9c5",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "imagemin" % "7.0-dt-20190909Z-f71873",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

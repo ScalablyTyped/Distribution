@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mongodb-memory-server"
-version := "6.0.1-90b1dd"
+version := "6.0.1-4c86f1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-8fa8e7",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191101Z-0d6067",
-  "org.scalablytyped" %%% "mongodb-memory-server-core" % "6.0.1-06405b",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-fa6818",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191108Z-d64b40",
+  "org.scalablytyped" %%% "mongodb-memory-server-core" % "6.0.1-489c70",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,5 +1,6 @@
 package typings.neffosDotJs.neffosDotJsMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ class Message () extends js.Object {
   var Body: WSData = js.native
   /* The Err contains any message's error if defined and not empty.
     server-side and client-side can return an error instead of a message from inside event callbacks. */
-  var Err: String = js.native
+  var Err: Error = js.native
   /* The Event that this message sent to. */
   var Event: String = js.native
   /* The IsForced if true then it means that this is not an incoming action but a force action.
@@ -26,6 +27,8 @@ class Message () extends js.Object {
   var Namespace: String = js.native
   /* The Room that this message sent to. */
   var Room: String = js.native
+  /* The SetBinary can be filled to true if the client must send this message using the Binary format message. */
+  var SetBinary: Boolean = js.native
   /* unmarshal method returns this Message's `Body` as an object,
     equivalent to the Go's `neffos.Message.Unmarshal` method.
     It can be used inside an event's callbacks.

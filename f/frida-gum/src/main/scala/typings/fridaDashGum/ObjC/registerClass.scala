@@ -12,6 +12,6 @@ object registerClass extends js.Object {
     *
     * @param spec Class specification.
     */
-  def apply(spec: ClassSpec): Object = js.native
+  def apply(spec: ClassSpec[InstanceData, Object, Object]): Object = js.native
 }
 

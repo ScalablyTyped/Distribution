@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rdf-data-model"
-version := "1.0-dt-20181116Z-126b69"
+version := "1.0-dt-20181116Z-e61bdf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
-  "org.scalablytyped" %%% "rdf-js" % "2.0-dt-20190717Z-47b38c",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
+  "org.scalablytyped" %%% "rdf-js" % "2.0-dt-20190717Z-45026a",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

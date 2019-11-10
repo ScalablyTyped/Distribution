@@ -29,5 +29,6 @@ object xhrDashMockMod extends js.Object {
     req: typings.xhrDashMock.libMockRequestMod.default,
     res: typings.xhrDashMock.libMockResponseMod.default
   ): js.Promise[typings.xhrDashMock.libMockResponseMod.default] = js.native
+  def sequence(mocks: js.Array[MockFunction | MockObject]): MockFunction = js.native
 }
 

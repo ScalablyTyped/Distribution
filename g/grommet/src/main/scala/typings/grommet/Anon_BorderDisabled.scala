@@ -1,7 +1,6 @@
 package typings.grommet
 
 import typings.grommet.themesBaseMod.ExtendType
-import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ trait Anon_BorderDisabled extends js.Object {
   var maxWidth: js.UndefOr[String] = js.undefined
   var minWidth: js.UndefOr[String] = js.undefined
   var padding: js.UndefOr[Anon_Horizontal] = js.undefined
-  var primary: js.UndefOr[ColorType] = js.undefined
+  var primary: js.UndefOr[Anon_ColorColorType] = js.undefined
 }
 
 object Anon_BorderDisabled {
@@ -25,7 +24,7 @@ object Anon_BorderDisabled {
     maxWidth: String = null,
     minWidth: String = null,
     padding: Anon_Horizontal = null,
-    primary: ColorType = null
+    primary: Anon_ColorColorType = null
   ): Anon_BorderDisabled = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border)
@@ -34,7 +33,7 @@ object Anon_BorderDisabled {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth)
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth)
     if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (primary != null) __obj.updateDynamic("primary")(primary)
     __obj.asInstanceOf[Anon_BorderDisabled]
   }
 }

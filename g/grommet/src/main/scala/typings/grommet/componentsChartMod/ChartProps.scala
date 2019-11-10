@@ -1,7 +1,7 @@
 package typings.grommet.componentsChartMod
 
 import typings.grommet.Anon_Args
-import typings.grommet.Anon_ColorMedium
+import typings.grommet.Anon_Color
 import typings.grommet.Anon_Full
 import typings.grommet.grommetStrings.area
 import typings.grommet.grommetStrings.bar
@@ -17,6 +17,7 @@ import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
@@ -27,7 +28,8 @@ trait ChartProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
-  var color: js.UndefOr[String | Anon_ColorMedium] = js.undefined
+  var color: js.UndefOr[String | Anon_Color] = js.undefined
+  var gap: js.UndefOr[GapType] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
@@ -47,7 +49,8 @@ object ChartProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     bounds: js.Array[js.Array[Double]] = null,
-    color: String | Anon_ColorMedium = null,
+    color: String | Anon_Color = null,
+    gap: GapType = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,
     onClick: /* repeated */ js.Any => _ = null,
@@ -63,6 +66,7 @@ object ChartProps {
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))

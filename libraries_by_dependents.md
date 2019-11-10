@@ -1966,6 +1966,7 @@
 | 77 | [commondir](./c/commondir) | compute the closest common parent for file paths
 | 77 | [css-modules-require-hook](./c/css-modules-require-hook) | A require hook to compile CSS Modules on the fly
 | 77 | [fb](./f/fb) | NodeJS Library for Facebook
+| 77 | [jsonpath-plus](./j/jsonpath-plus) | A JS implementation of JSONPath with some addition
 | 77 | [karma-coverage-istanbul-r](./k/karma-coverage-istanbul-reporter) | A karma reporter that uses the latest istanbul 1.x
 | 77 | [map-obj](./m/map-obj) | Map object keys and values into a new object
 | 77 | [npm-run](./n/npm-run) | Run executables for locally-installed packages wit
@@ -2604,7 +2605,6 @@
 | 46 | [p-try](./p/p-try) | Start a promise chain
 | 46 | [parallel-transform](./p/parallel-transform) | Transform stream that allows you to run your trans
 | 46 | [plotly_dot_js](./p/plotly_dot_js) | The open source javascript graphing library that p
-| 46 | [rdflib](./r/rdflib) | an RDF library for node.js. Suitable for client an
 | 46 | [react-bootstrap-table](./r/react-bootstrap-table) | It's a react table for bootstrap
 | 46 | [registry-auth-token](./r/registry-auth-token) | Get the auth token set for an npm registry (if any
 | 46 | [sigmund](./s/sigmund) | Quick and dirty signatures for Objects.
@@ -3312,6 +3312,7 @@
 | 26 | [looks-same](./l/looks-same) | Pure node.js library for comparing PNG-images, tak
 | 26 | [magnet-uri](./m/magnet-uri) | Parse a magnet URI and return an object of keys/va
 | 26 | [memjs](./m/memjs) | A memcache client for node using the binary protoc
+| 26 | [moment-mini](./m/moment-mini) | Parse, validate, manipulate, and display dates
 | 26 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 26 | [muri](./m/muri) | MongoDB URI parser
 | 26 | [parchment](./p/parchment) | A document model for rich text editors
@@ -3417,6 +3418,7 @@
 | 24 | [storybook__addon-notes](./s/storybook__addon-notes) | Write notes for your Storybook stories.
 | 24 | [superagent-prefix](./s/superagent-prefix) | A plugin for superagent that prefixes absolute URL
 | 24 | [swagger-express-middlewar](./s/swagger-express-middleware) | Swagger middleware and mocks for Express
+| 24 | [trust__webcrypto](./t/trust__webcrypto) | WebCrypto API for Node.js
 | 24 | [uuid-1345](./u/uuid-1345) | Generate UUIDs of versions 1, 3, 4, and 5.
 | 24 | [vlq](./v/vlq) | Generate, and decode, base64 VLQ mappings for sour
 | 24 | [vue-ls](./v/vue-ls) | Vue plugin for work with LocalStorage from Vue con
@@ -4341,6 +4343,7 @@
 | 11 | [neat-csv](./n/neat-csv) | Fast CSV parser
 | 11 | [node-zendesk](./n/node-zendesk) | zendesk API client wrapper
 | 11 | [notie](./n/notie) | notie - a clean and simple notification, input, an
+| 11 | [nuid](./n/nuid) | NUID - A highly performant unique identifier gener
 | 11 | [object-refs](./o/object-refs) | Minimal bi-directional object references for JavaS
 | 11 | [open-editor](./o/open-editor) | Open files in your editor at a specific line and c
 | 11 | [page-icon](./p/page-icon) | Find the best icon for a web page
@@ -4433,6 +4436,7 @@
 | 10 | [expo-permissions](./e/expo-permissions) | Allows you prompt for various permissions to acces
 | 10 | [express-paginate](./e/express-paginate) | Node.js pagination middleware and view helpers
 | 10 | [falcor-http-datasource](./f/falcor-http-datasource) | This package contains falcor components for use in
+| 10 | [fast-stringify](./f/fast-stringify) | A blazing fast stringifier that safely handles cir
 | 10 | [find-project-root](./f/find-project-root) | Finds project root
 | 10 | [firebase__messaging](./f/firebase__messaging) | This is the Firebase Cloud Messaging component of 
 | 10 | [fluxible](./f/fluxible) | A pluggable container for isomorphic flux applicat
@@ -4606,6 +4610,7 @@
 | 9 | [react-notification-system](./r/react-notification-system-redux) | react-notification-system-redux
 | 9 | [react-qr-reader](./r/react-qr-reader) | A react component for reading QR codes from the we
 | 9 | [react-resolver](./r/react-resolver) | Async-rendering & data-fetching for universal Reac
+| 9 | [react-toast-notifications](./r/react-toast-notifications) | A configurable, composable, toast notification sys
 | 9 | [react-vega](./r/react-vega) | Convert Vega spec into React class conveniently
 | 9 | [react-weui](./r/react-weui) | weui for react
 | 9 | [receptacle](./r/receptacle) | In memory cache lru cache with ttl support.
@@ -4619,6 +4624,7 @@
 | 9 | [simple-mock](./s/simple-mock) | Super simple stubs and spies with 1-step sandbox r
 | 9 | [storybook__client-api](./s/storybook__client-api) | Storybook Client API
 | 9 | [storybook__vue](./s/storybook__vue) | Storybook for Vue: Develop Vue Component in isolat
+| 9 | [super-error](./s/super-error) | Easily subclass errors
 | 9 | [timezone-support](./t/timezone-support) | Lightweight time zone support for your application
 | 9 | [traverson](./t/traverson) | Hypermedia API/HATEOAS client for Node.js and the 
 | 9 | [turbolinks](./t/turbolinks) | Turbolinks makes navigating your web application f
@@ -4773,6 +4779,7 @@
 | 7 | [asana](./a/asana) | Official NodeJS and BrowserJS client for the Asana
 | 7 | [atob-lite](./a/atob-lite) | Smallest/simplest possible means of using atob wit
 | 7 | [audiobuffer-to-wav](./a/audiobuffer-to-wav) | convert an AudioBuffer to .wav format
+| 7 | [avvio](./a/avvio) | Asynchronous bootstrapping of Node applications
 | 7 | [aws-sdk__fetch-http-handl](./a/aws-sdk__fetch-http-handler) | Provides a way to make requests
 | 7 | [aws-sdk__property-provide](./a/aws-sdk__property-provider) | -
 | 7 | [aws-sdk__response-metadat](./a/aws-sdk__response-metadata-extractor) | Provides a function for extracting metadata from r
@@ -5125,7 +5132,6 @@
 | 5 | [cloud-env](./c/cloud-env) | Consistent naming for cloud-provided server config
 | 5 | [clusterize_dot_js](./c/clusterize_dot_js) | Tiny vanilla JS plugin to display large data sets 
 | 5 | [complex_dot_js](./c/complex_dot_js) | A complex number library
-| 5 | [composer-concerto](./c/composer-concerto) | Concerto
 | 5 | [cookie_js](./c/cookie_js) | A tiny JavaScript library that simplifies cookies.
 | 5 | [cordova-plugin-qrscanner](./c/cordova-plugin-qrscanner) | Fast, energy-efficient, highly-configurable QR cod
 | 5 | [correlation-id](./c/correlation-id) | Correlation id for node.js
@@ -5562,6 +5568,7 @@
 | 3 | [capture-console](./c/capture-console) | Simple and easy stdio capture for Node.js
 | 3 | [carbon__themes](./c/carbon__themes) | Themes for applying color in the Carbon Design Sys
 | 3 | [carbon__type](./c/carbon__type) | Typography for digital and software products using
+| 3 | [chai-like](./c/chai-like) | A JSON matcher for chai
 | 3 | [cloner](./c/cloner) | An ES5+ compatible utility to deep or shallow copy
 | 3 | [compressed-extensions](./c/compressed-extensions) | List of compressed file extensions
 | 3 | [cordova-plugin-app-versio](./c/cordova-plugin-app-version) | Cordova plugin to return the version number of the
@@ -5571,6 +5578,7 @@
 | 3 | [cqrs-domain](./c/cqrs-domain) | Node-cqrs-domain is a node.js module based on node
 | 3 | [csp-html-webpack-plugin](./c/csp-html-webpack-plugin) | A plugin which, when combined with HTMLWebpackPlug
 | 3 | [csvrow](./c/csvrow) | parse a CSV row string
+| 3 | [curriable](./c/curriable) | Convert any method to be curriable with placeholde
 | 3 | [d3-graphviz](./d/d3-graphviz) | Graphviz DOT rendering and animated transitions fo
 | 3 | [d3kit](./d/d3kit) | A kit of tools to speed D3 related project develop
 | 3 | [deprecation](./d/deprecation) | Log a deprecation message with stack
@@ -5592,6 +5600,7 @@
 | 3 | [fleximap](./f/fleximap) | A flexible hash map which supports deep keys.
 | 3 | [fluent-langneg](./f/fluent-langneg) | Language Negotiation API for Fluent
 | 3 | [fluent__bundle](./f/fluent__bundle) | Localization library for expressive translations.
+| 3 | [fluent__sequence](./f/fluent__sequence) | Manage ordered sequences of FluentBundles
 | 3 | [force-graph](./f/force-graph) | 2D force-directed graph rendered on HTML5 canvas
 | 3 | [format-unicorn](./f/format-unicorn) | Stack Exchange's string format function.
 | 3 | [foundation](./f/foundation) | You may also want to checkout:
@@ -6375,6 +6384,7 @@
 | 1 | [firebase__remote-config](./f/firebase__remote-config) | The Remote Config package of the Firebase JS SDK
 | 1 | [firebase__remote-config-t](./f/firebase__remote-config-types) | @firebase/remote-config Types
 | 1 | [flipsnap](./f/flipsnap) | Provides UI of snap and slide
+| 1 | [float-equal](./f/float-equal) | Check if two floats are almost equal
 | 1 | [float-regex](./f/float-regex) | regular expression to match floating point numbers
 | 1 | [fluent__dedent](./f/fluent__dedent) | A template literal tag for dedenting Fluent code
 | 1 | [fluent__langneg](./f/fluent__langneg) | Language Negotiation API for Fluent
@@ -6972,6 +6982,7 @@
 | 0 | [express-version-request](./e/express-version-request) | versions an incoming request to Express based on h
 | 0 | [express-version-route](./e/express-version-route) | provides middleware to load controllers based on a
 | 0 | [extended-listbox](./e/extended-listbox) | A simple to use javascript component as powerful a
+| 0 | [fast-chunk-string](./f/fast-chunk-string) | Chunk string into equal substrings with unicode su
 | 0 | [fast-shuffle](./f/fast-shuffle) | A fast implementation of a fisher-yates shuffle th
 | 0 | [fast64](./f/fast64) | The fastest in-browser base64 library
 | 0 | [fastify-favicon](./f/fastify-favicon) | Fastify plugin to serve default favicon requests
@@ -6993,7 +7004,9 @@
 | 0 | [fluent__react](./f/fluent__react) | Fluent bindings for React
 | 0 | [fm-websync](./f/fm-websync) | > npm install --save @types/fm-websync
 | 0 | [fnando__sparkline](./f/fnando__sparkline) | Generate SVG sparklines with JavaScript without an
+| 0 | [formatjs__intl-listformat](./f/formatjs__intl-listformat) | Formats JS list in a i18n-safe way
 | 0 | [formatjs__intl-utils](./f/formatjs__intl-utils) | Smartly determine best unit for relative time form
+| 0 | [formatjs__macro](./f/formatjs__macro) | formatjs-related compiler macros
 | 0 | [formol](./f/formol) | An opiniated react form framework.
 | 0 | [frecency](./f/frecency) | Frecency sorting for search results.
 | 0 | [fs-mock](./f/fs-mock) | -
@@ -7144,6 +7157,7 @@
 | 0 | [lodash_dot_flatmapdepth](./l/lodash_dot_flatmapdepth) | The lodash method _.flatMapDepth exported as a mod
 | 0 | [lodash_dot_meanby](./l/lodash_dot_meanby) | The lodash method _.meanBy exported as a module.
 | 0 | [lodash_dot_multiply](./l/lodash_dot_multiply) | The lodash method _.multiply exported as a module.
+| 0 | [lodash_dot_stubfalse](./l/lodash_dot_stubfalse) | The lodash method _.stubFalse exported as a module
 | 0 | [lodash_dot_stubtrue](./l/lodash_dot_stubtrue) | The lodash method _.stubTrue exported as a module.
 | 0 | [lodash_dot_tofinite](./l/lodash_dot_tofinite) | The lodash method _.toFinite exported as a module.
 | 0 | [lodash_dot_updatewith](./l/lodash_dot_updatewith) | The lodash method _.updateWith exported as a modul
@@ -7369,7 +7383,6 @@
 | 0 | [rx-lite-testing](./r/rx-lite-testing) | Lightweight library with testing functions for com
 | 0 | [rx-lite-time](./r/rx-lite-time) | Lightweight library with time-based functions for 
 | 0 | [sasl-external](./s/sasl-external) | JavaScript implementation of EXTERNAL SASL mechani
-| 0 | [sass-webpack-plugin](./s/sass-webpack-plugin) | Get your stylesheets together
 | 0 | [satnav](./s/satnav) | A micro front-end router
 | 0 | [sauronjs](./s/sauronjs) | frontend library for advanced interactivity based 
 | 0 | [save-csv](./s/save-csv) | Download an array of objects as a CSV file in the 

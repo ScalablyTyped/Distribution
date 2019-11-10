@@ -1,5 +1,6 @@
 package typings.pgDashPromise.typescriptPgDashSubsetMod
 
+import org.scalablytyped.runtime.Instantiable1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 // See:
 // 1) https://github.com/brianc/node-postgres/blob/master/lib/defaults.js
 // 2) https://github.com/brianc/node-pg-pool
-trait IConnectionParameters extends js.Object {
+trait IConnectionParameters[C /* <: IClient */] extends js.Object {
+  var Client: js.UndefOr[Instantiable1[/* config */ String | IConnectionParameters[IClient], C]] = js.undefined
   var application_name: js.UndefOr[String] = js.undefined
   var binary: js.UndefOr[Boolean] = js.undefined
   var client_encoding: js.UndefOr[String] = js.undefined
@@ -37,7 +39,8 @@ trait IConnectionParameters extends js.Object {
 
 object IConnectionParameters {
   @scala.inline
-  def apply(
+  def apply[C /* <: IClient */](
+    Client: Instantiable1[/* config */ String | IConnectionParameters[IClient], C] = null,
     application_name: String = null,
     binary: js.UndefOr[Boolean] = js.undefined,
     client_encoding: String = null,
@@ -63,8 +66,9 @@ object IConnectionParameters {
     ssl: Boolean | ISSLConfig = null,
     statement_timeout: Boolean | Double = null,
     user: String = null
-  ): IConnectionParameters = {
+  ): IConnectionParameters[C] = {
     val __obj = js.Dynamic.literal()
+    if (Client != null) __obj.updateDynamic("Client")(Client)
     if (application_name != null) __obj.updateDynamic("application_name")(application_name)
     if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
     if (client_encoding != null) __obj.updateDynamic("client_encoding")(client_encoding)
@@ -90,7 +94,7 @@ object IConnectionParameters {
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     if (statement_timeout != null) __obj.updateDynamic("statement_timeout")(statement_timeout.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user)
-    __obj.asInstanceOf[IConnectionParameters]
+    __obj.asInstanceOf[IConnectionParameters[C]]
   }
 }
 

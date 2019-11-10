@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel__parser"
-version := "7.7.2-b5beae"
+version := "7.7.3-860194"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

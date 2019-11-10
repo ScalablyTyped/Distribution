@@ -54,11 +54,11 @@ trait Client extends js.Object {
   def addCookie(cookie: js.Object): Unit = js.native
   /**
     * [saucelabs]
-    * Assert against the performance baseline of your app (private beta service, not yet available to the public).
+    * Assert against the performance baseline of your app.
     * https://wiki.saucelabs.com/display/DOCS/Custom+Sauce+Labs+WebDriver+Extensions+for+Network+and+Log+Commands
     */
-  def assertPerformance(name: String): Boolean = js.native
-  def assertPerformance(name: String, metrics: js.Array[String]): Boolean = js.native
+  def assertPerformance(name: String): ProtocolCommandResponse = js.native
+  def assertPerformance(name: String, metrics: js.Array[String]): ProtocolCommandResponse = js.native
   /**
     * [webdriver]
     * The Back command causes the browser to traverse one step backward in the joint session history of the current top-level browsing context. This is equivalent to pressing the back button in the browser chrome or calling `window.history.back`.

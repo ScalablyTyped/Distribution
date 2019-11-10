@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grommet-icons"
-version := "4.3.0-b9ded5"
+version := "4.4.0-56069c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

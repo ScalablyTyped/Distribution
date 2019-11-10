@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-popper-tooltip" : "2.9.1"
+      "react-popper-tooltip" : "2.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-popper-tooltip" : "2.9.1"
+      "react-popper-tooltip" : "2.10.0"
     }
   ],
   "compile-devDependencies" : [

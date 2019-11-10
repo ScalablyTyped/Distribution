@@ -73,6 +73,13 @@ class Task protected () extends js.Object {
     scope: Global,
     name: String,
     source: String,
+    execution: CustomExecution
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Global,
+    name: String,
+    source: String,
     execution: ProcessExecution
   ) = this()
   def this(
@@ -81,6 +88,13 @@ class Task protected () extends js.Object {
     name: String,
     source: String,
     execution: ShellExecution
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Workspace,
+    name: String,
+    source: String,
+    execution: CustomExecution
   ) = this()
   def this(
     taskDefinition: TaskDefinition,
@@ -101,6 +115,13 @@ class Task protected () extends js.Object {
     scope: WorkspaceFolder,
     name: String,
     source: String,
+    execution: CustomExecution
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: WorkspaceFolder,
+    name: String,
+    source: String,
     execution: ProcessExecution
   ) = this()
   def this(
@@ -115,6 +136,22 @@ class Task protected () extends js.Object {
     scope: Global,
     name: String,
     source: String,
+    execution: CustomExecution,
+    problemMatchers: String
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Global,
+    name: String,
+    source: String,
+    execution: CustomExecution,
+    problemMatchers: js.Array[String]
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Global,
+    name: String,
+    source: String,
     execution: ProcessExecution,
     problemMatchers: String
   ) = this()
@@ -147,6 +184,22 @@ class Task protected () extends js.Object {
     scope: Workspace,
     name: String,
     source: String,
+    execution: CustomExecution,
+    problemMatchers: String
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Workspace,
+    name: String,
+    source: String,
+    execution: CustomExecution,
+    problemMatchers: js.Array[String]
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Workspace,
+    name: String,
+    source: String,
     execution: ProcessExecution,
     problemMatchers: String
   ) = this()
@@ -172,6 +225,22 @@ class Task protected () extends js.Object {
     name: String,
     source: String,
     execution: ShellExecution,
+    problemMatchers: js.Array[String]
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: WorkspaceFolder,
+    name: String,
+    source: String,
+    execution: CustomExecution,
+    problemMatchers: String
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: WorkspaceFolder,
+    name: String,
+    source: String,
+    execution: CustomExecution,
     problemMatchers: js.Array[String]
   ) = this()
   def this(
@@ -213,7 +282,7 @@ class Task protected () extends js.Object {
   /**
   		 * The task's execution engine
   		 */
-  var execution: js.UndefOr[ProcessExecution | ShellExecution] = js.native
+  var execution: js.UndefOr[ProcessExecution | ShellExecution | CustomExecution] = js.native
   /**
   		 * The task group this tasks belongs to. See TaskGroup
   		 * for a predefined set of available groups.

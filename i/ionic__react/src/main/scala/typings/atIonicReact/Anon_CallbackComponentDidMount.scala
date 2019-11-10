@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_CallbackComponentDidMount extends js.Object {
   var context: js.Any = js.native
+  var isUnmounted: Boolean = js.native
   var overlay: js.UndefOr[HTMLIonAlertElement] = js.native
   val props: AlertOptions with ReactControllerProps with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native

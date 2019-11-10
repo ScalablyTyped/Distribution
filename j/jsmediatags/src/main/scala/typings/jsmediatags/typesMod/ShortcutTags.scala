@@ -10,7 +10,7 @@ trait ShortcutTags extends js.Object {
   var comment: js.UndefOr[String] = js.undefined
   var genre: js.UndefOr[String] = js.undefined
   var lyrics: js.UndefOr[String] = js.undefined
-  var picture: js.UndefOr[String] = js.undefined
+  var picture: js.UndefOr[PictureType] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var track: js.UndefOr[String] = js.undefined
   var year: js.UndefOr[String] = js.undefined
@@ -24,7 +24,7 @@ object ShortcutTags {
     comment: String = null,
     genre: String = null,
     lyrics: String = null,
-    picture: String = null,
+    picture: PictureType = null,
     title: String = null,
     track: String = null,
     year: String = null

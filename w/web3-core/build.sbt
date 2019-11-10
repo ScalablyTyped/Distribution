@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "web3-core"
-version := "1.2.2-9dc84d"
+version := "1.2.2-0ddd41"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-3c9a9a",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-227146",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "web3-core-helpers" % "1.2.2-3b0399",
+  "org.scalablytyped" %%% "web3-core-helpers" % "1.2.2-e7d0e2",
   "org.scalablytyped" %%% "web3-core-method" % "1.2.2-58ce73")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -50,7 +50,7 @@ object PoolConfig {
     multipleStatements: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
     port: Int | Double = null,
-    queryFormat: (/* query */ String, /* values */ js.Any) => Unit = null,
+    queryFormat: (/* query */ String, /* values */ js.Any) => String = null,
     queueLimit: Int | Double = null,
     socketPath: String = null,
     ssl: String | (SecureContextOptions with Anon_RejectUnauthorized) = null,

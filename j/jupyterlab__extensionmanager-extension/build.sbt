@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__extensionmanager-extension"
-version := "1.2.0-c1ea97"
+version := "1.2.1-bc09a6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

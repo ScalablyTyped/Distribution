@@ -6,7 +6,7 @@ import typings.mongodb.Anon_Full
 import typings.mongodb.Anon_ReadPreference
 import typings.mongodb.Anon_ReadPreferenceSession
 import typings.mongodb.Anon_Scale
-import typings.mongodb.Anon_SessionClientSession
+import typings.mongodb.Anon_Session
 import typings.mongodb.Default
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
@@ -87,13 +87,13 @@ class Db protected () extends EventEmitter {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingInfo */
   /** @deprecated Query the system.profile collection directly. */
   def profilingInfo(callback: MongoCallback[_]): Unit = js.native
-  def profilingInfo(options: Anon_SessionClientSession): js.Promise[Unit] = js.native
-  def profilingInfo(options: Anon_SessionClientSession, callback: MongoCallback[Unit]): Unit = js.native
+  def profilingInfo(options: Anon_Session): js.Promise[Unit] = js.native
+  def profilingInfo(options: Anon_Session, callback: MongoCallback[Unit]): Unit = js.native
   def profilingLevel(): js.Promise[ProfilingLevel] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingLevel */
   def profilingLevel(callback: MongoCallback[ProfilingLevel]): Unit = js.native
-  def profilingLevel(options: Anon_SessionClientSession): js.Promise[ProfilingLevel] = js.native
-  def profilingLevel(options: Anon_SessionClientSession, callback: MongoCallback[ProfilingLevel]): Unit = js.native
+  def profilingLevel(options: Anon_Session): js.Promise[ProfilingLevel] = js.native
+  def profilingLevel(options: Anon_Session, callback: MongoCallback[ProfilingLevel]): Unit = js.native
   def removeUser(username: String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#removeUser */
   def removeUser(username: String, callback: MongoCallback[_]): Unit = js.native
@@ -112,12 +112,16 @@ class Db protected () extends EventEmitter {
   def setProfilingLevel(level: ProfilingLevel): js.Promise[ProfilingLevel] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#setProfilingLevel */
   def setProfilingLevel(level: ProfilingLevel, callback: MongoCallback[ProfilingLevel]): Unit = js.native
-  def setProfilingLevel(level: ProfilingLevel, options: Anon_SessionClientSession): js.Promise[ProfilingLevel] = js.native
-  def setProfilingLevel(level: ProfilingLevel, options: Anon_SessionClientSession, callback: MongoCallback[ProfilingLevel]): Unit = js.native
+  def setProfilingLevel(level: ProfilingLevel, options: Anon_Session): js.Promise[ProfilingLevel] = js.native
+  def setProfilingLevel(level: ProfilingLevel, options: Anon_Session, callback: MongoCallback[ProfilingLevel]): Unit = js.native
   def stats(): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#stats */
   def stats(callback: MongoCallback[_]): Unit = js.native
   def stats(options: Anon_Scale): js.Promise[_] = js.native
   def stats(options: Anon_Scale, callback: MongoCallback[_]): Unit = js.native
+  /** http://mongodb.github.io/node-mongodb-native/3.3/api/Db.html#watch */
+  def watch(): ChangeStream = js.native
+  def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
+  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptions with Anon_Session): ChangeStream = js.native
 }
 

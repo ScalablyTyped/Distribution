@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-lambda"
-version := "8.10-dt-20191025Z-916b2f"
+version := "8.10-dt-20191108Z-3a84a5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

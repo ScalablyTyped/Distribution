@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation._
 
 package object libISlotsMod {
   import typings.atUifabricFoundation.Anon_Slots
-  import typings.atUifabricFoundation.libIComponentMod.IPropsWithChildren
   import typings.atUifabricMergeDashStyles.libIStyleMod.IStyle
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.ElementType
   import typings.react.reactMod.FunctionComponent
+  import typings.react.reactMod.PropsWithChildren
   import typings.std.ReturnType
 
   type ExtractProps[TUnion] = js.Any
@@ -27,7 +27,7 @@ package object libISlotsMod {
   ]
   type ISlotProp[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */] = TShorthandProp | TProps
   type ISlotRender[TProps] = js.Function2[
-    /* props */ IPropsWithChildren[TProps], 
+    /* props */ PropsWithChildren[TProps], 
     /* defaultComponent */ ComponentType[TProps], 
     ReturnType[FunctionComponent[TProps]]
   ]

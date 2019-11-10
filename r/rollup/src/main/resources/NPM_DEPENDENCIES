@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rollup" : "1.26.3"
+      "rollup" : "1.26.4"
     }
   ],
   "test-dependencies" : [
     {
-      "rollup" : "1.26.3"
+      "rollup" : "1.26.4"
     }
   ],
   "compile-devDependencies" : [

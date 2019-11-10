@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xhr-mock"
-version := "2.5.0-f80587"
+version := "2.5.1-238ed2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

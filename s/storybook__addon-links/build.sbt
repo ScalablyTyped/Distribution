@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-links"
-version := "5.2.5-ef3e5e"
+version := "5.2.6-7703c5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

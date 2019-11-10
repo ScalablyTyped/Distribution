@@ -28,7 +28,7 @@ trait CalendarProps extends js.Object {
   var header: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var locale: js.UndefOr[String] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
-  var onReference: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onReference: js.UndefOr[js.Function1[/* reference */ String, Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var range: js.UndefOr[Boolean] = js.undefined
   var reference: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ object CalendarProps {
     header: /* repeated */ js.Any => _ = null,
     locale: String = null,
     margin: MarginType = null,
-    onReference: /* repeated */ js.Any => _ = null,
+    onReference: /* reference */ String => Unit = null,
     onSelect: /* repeated */ js.Any => _ = null,
     range: js.UndefOr[Boolean] = js.undefined,
     reference: String = null,

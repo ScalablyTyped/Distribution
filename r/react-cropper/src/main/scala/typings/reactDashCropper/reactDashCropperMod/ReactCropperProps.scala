@@ -1,17 +1,18 @@
 package typings.reactDashCropper.reactDashCropperMod
 
-import typings.cropperjs.cropperjsMod.CropperCropEvent
-import typings.cropperjs.cropperjsMod.CropperCropStepEvent
-import typings.cropperjs.cropperjsMod.CropperOptions
-import typings.cropperjs.cropperjsMod.CropperReadyEvent
-import typings.cropperjs.cropperjsMod.CropperViewMods
-import typings.cropperjs.cropperjsMod.CropperZoomEvent
+import typings.cropperjs.Cropper.Data
+import typings.cropperjs.Cropper.DragMode
+import typings.cropperjs.Cropper.Options
+import typings.cropperjs.Cropper.ViewMode
+import typings.std.CustomEvent
+import typings.std.Element
+import typings.std.NodeList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLImageElement>, 'data' | 'ref'> ]: react.react.HTMLProps<std.HTMLImageElement>[P]} */ trait ReactCropperProps extends CropperOptions {
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLImageElement>, 'data' | 'ref'> ]: react.react.HTMLProps<std.HTMLImageElement>[P]} */ trait ReactCropperProps extends Options {
   var ref: js.UndefOr[String | (js.Function1[/* cropper */ Null | ReactCropper, _])] = js.undefined
 }
 
@@ -22,21 +23,20 @@ object ReactCropperProps {
     autoCrop: js.UndefOr[Boolean] = js.undefined,
     autoCropArea: Int | Double = null,
     background: js.UndefOr[Boolean] = js.undefined,
-    build: () => Boolean = null,
-    built: () => Unit = null,
     center: js.UndefOr[Boolean] = js.undefined,
     checkCrossOrigin: js.UndefOr[Boolean] = js.undefined,
     checkOrientation: js.UndefOr[Boolean] = js.undefined,
-    crop: /* event */ CropperCropEvent => Unit = null,
+    crop: /* event */ CustomEvent[_] => Unit = null,
     cropBoxMovable: js.UndefOr[Boolean] = js.undefined,
     cropBoxResizable: js.UndefOr[Boolean] = js.undefined,
-    cropend: /* event */ CropperCropStepEvent => Unit = null,
-    cropmove: /* event */ CropperCropStepEvent => Unit = null,
-    cropstart: /* event */ CropperCropStepEvent => Unit = null,
-    data: js.Object = null,
-    dragMode: String = null,
+    cropend: /* event */ CustomEvent[_] => Unit = null,
+    cropmove: /* event */ CustomEvent[_] => Unit = null,
+    cropstart: /* event */ CustomEvent[_] => Unit = null,
+    data: Data = null,
+    dragMode: DragMode = null,
     guides: js.UndefOr[Boolean] = js.undefined,
     highlight: js.UndefOr[Boolean] = js.undefined,
+    initialAspectRatio: Int | Double = null,
     minCanvasHeight: Int | Double = null,
     minCanvasWidth: Int | Double = null,
     minContainerHeight: Int | Double = null,
@@ -45,17 +45,17 @@ object ReactCropperProps {
     minCropBoxWidth: Int | Double = null,
     modal: js.UndefOr[Boolean] = js.undefined,
     movable: js.UndefOr[Boolean] = js.undefined,
-    preview: String = null,
-    ready: /* event */ CropperReadyEvent => Unit = null,
+    preview: Element | js.Array[Element] | NodeList | String = null,
+    ready: /* event */ CustomEvent[_] => Unit = null,
     ref: String | (js.Function1[/* cropper */ Null | ReactCropper, _]) = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
     restore: js.UndefOr[Boolean] = js.undefined,
     rotatable: js.UndefOr[Boolean] = js.undefined,
     scalable: js.UndefOr[Boolean] = js.undefined,
     toggleDragModeOnDblclick: js.UndefOr[Boolean] = js.undefined,
-    viewMode: CropperViewMods = null,
+    viewMode: ViewMode = null,
     wheelZoomRatio: Int | Double = null,
-    zoom: /* event */ CropperZoomEvent => Unit = null,
+    zoom: /* event */ CustomEvent[_] => Unit = null,
     zoomOnTouch: js.UndefOr[Boolean] = js.undefined,
     zoomOnWheel: js.UndefOr[Boolean] = js.undefined,
     zoomable: js.UndefOr[Boolean] = js.undefined
@@ -65,8 +65,6 @@ object ReactCropperProps {
     if (!js.isUndefined(autoCrop)) __obj.updateDynamic("autoCrop")(autoCrop)
     if (autoCropArea != null) __obj.updateDynamic("autoCropArea")(autoCropArea.asInstanceOf[js.Any])
     if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
-    if (build != null) __obj.updateDynamic("build")(js.Any.fromFunction0(build))
-    if (built != null) __obj.updateDynamic("built")(js.Any.fromFunction0(built))
     if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
     if (!js.isUndefined(checkCrossOrigin)) __obj.updateDynamic("checkCrossOrigin")(checkCrossOrigin)
     if (!js.isUndefined(checkOrientation)) __obj.updateDynamic("checkOrientation")(checkOrientation)
@@ -80,6 +78,7 @@ object ReactCropperProps {
     if (dragMode != null) __obj.updateDynamic("dragMode")(dragMode)
     if (!js.isUndefined(guides)) __obj.updateDynamic("guides")(guides)
     if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (initialAspectRatio != null) __obj.updateDynamic("initialAspectRatio")(initialAspectRatio.asInstanceOf[js.Any])
     if (minCanvasHeight != null) __obj.updateDynamic("minCanvasHeight")(minCanvasHeight.asInstanceOf[js.Any])
     if (minCanvasWidth != null) __obj.updateDynamic("minCanvasWidth")(minCanvasWidth.asInstanceOf[js.Any])
     if (minContainerHeight != null) __obj.updateDynamic("minContainerHeight")(minContainerHeight.asInstanceOf[js.Any])
@@ -88,7 +87,7 @@ object ReactCropperProps {
     if (minCropBoxWidth != null) __obj.updateDynamic("minCropBoxWidth")(minCropBoxWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
     if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable)
-    if (preview != null) __obj.updateDynamic("preview")(preview)
+    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)

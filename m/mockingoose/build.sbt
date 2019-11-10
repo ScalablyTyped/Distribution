@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mockingoose"
-version := "2.13.2-563f4f"
+version := "2.13.2-4d95f5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-8fa8e7",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191101Z-0d6067",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191105Z-dce9c9",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-fa6818",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191108Z-d64b40",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191107Z-3aa1e1",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

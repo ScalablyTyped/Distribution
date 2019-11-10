@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cropperjs"
-version := "1.1-dt-20190212Z-bd0f59"
+version := "1.5.6-316722"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

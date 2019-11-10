@@ -57,6 +57,7 @@ trait ChartDataSets extends js.Object {
   var stack: js.UndefOr[String] = js.undefined
   var steppedLine: js.UndefOr[before | after | middle | Boolean] = js.undefined
   var `type`: js.UndefOr[ChartType | String] = js.undefined
+  var weight: js.UndefOr[Double] = js.undefined
   var xAxisID: js.UndefOr[String] = js.undefined
   var yAxisID: js.UndefOr[String] = js.undefined
 }
@@ -102,6 +103,7 @@ object ChartDataSets {
     stack: String = null,
     steppedLine: before | after | middle | Boolean = null,
     `type`: ChartType | String = null,
+    weight: Int | Double = null,
     xAxisID: String = null,
     yAxisID: String = null
   ): ChartDataSets = {
@@ -144,6 +146,7 @@ object ChartDataSets {
     if (stack != null) __obj.updateDynamic("stack")(stack)
     if (steppedLine != null) __obj.updateDynamic("steppedLine")(steppedLine.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     if (xAxisID != null) __obj.updateDynamic("xAxisID")(xAxisID)
     if (yAxisID != null) __obj.updateDynamic("yAxisID")(yAxisID)
     __obj.asInstanceOf[ChartDataSets]

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "json-rules-engine" : "5.0.0-alpha3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "json-rules-engine" : "5.0.0-alpha3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

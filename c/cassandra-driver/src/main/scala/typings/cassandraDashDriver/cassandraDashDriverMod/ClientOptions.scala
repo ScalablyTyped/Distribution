@@ -1,22 +1,27 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod
 
 import typings.cassandraDashDriver.Anon_AddressResolution
-import typings.cassandraDashDriver.Anon_Args
 import typings.cassandraDashDriver.Anon_CoalescingThreshold
+import typings.cassandraDashDriver.Anon_CopyBuffer
 import typings.cassandraDashDriver.Anon_CoreConnectionsPerHost
 import typings.cassandraDashDriver.Anon_MaxSchemaAgreementWaitSeconds
-import typings.cassandraDashDriver.cassandraDashDriverMod.auth.AuthProvider
-import typings.cassandraDashDriver.cassandraDashDriverMod.metrics.ClientMetrics
-import typings.cassandraDashDriver.cassandraDashDriverMod.tracker.RequestTracker
+import typings.cassandraDashDriver.Anon_Password
+import typings.cassandraDashDriver.Anon_SecureConnectBundle
+import typings.cassandraDashDriver.libAuthMod.auth.AuthProvider
+import typings.cassandraDashDriver.libMetricsMod.metrics.ClientMetrics
+import typings.cassandraDashDriver.libTrackerMod.tracker.RequestTracker
 import typings.node.tlsMod.ConnectionOptions
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientOptions extends js.Object {
   var authProvider: js.UndefOr[AuthProvider] = js.undefined
-  var contactPoints: js.Array[String]
-  var encoding: js.UndefOr[Anon_Args] = js.undefined
+  var cloud: js.UndefOr[Anon_SecureConnectBundle] = js.undefined
+  var contactPoints: js.UndefOr[js.Array[String]] = js.undefined
+  var credentials: js.UndefOr[Anon_Password] = js.undefined
+  var encoding: js.UndefOr[Anon_CopyBuffer] = js.undefined
   var isMetadataSyncEnabled: js.UndefOr[Boolean] = js.undefined
   var keyspace: js.UndefOr[String] = js.undefined
   var localDataCenter: js.UndefOr[String] = js.undefined
@@ -29,7 +34,7 @@ trait ClientOptions extends js.Object {
   var promiseFactory: js.UndefOr[
     js.Function1[
       /* handler */ js.Function1[
-        /* callback */ js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], Unit], 
+        /* callback */ js.Function2[/* err */ Error, /* result */ js.UndefOr[js.Any], Unit], 
         Unit
       ], 
       js.Promise[_]
@@ -47,9 +52,11 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(
-    contactPoints: js.Array[String],
     authProvider: AuthProvider = null,
-    encoding: Anon_Args = null,
+    cloud: Anon_SecureConnectBundle = null,
+    contactPoints: js.Array[String] = null,
+    credentials: Anon_Password = null,
+    encoding: Anon_CopyBuffer = null,
     isMetadataSyncEnabled: js.UndefOr[Boolean] = js.undefined,
     keyspace: String = null,
     localDataCenter: String = null,
@@ -60,7 +67,7 @@ object ClientOptions {
     prepareOnAllHosts: js.UndefOr[Boolean] = js.undefined,
     profiles: js.Array[ExecutionProfile] = null,
     promiseFactory: /* handler */ js.Function1[
-      /* callback */ js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[js.Any], Unit], 
+      /* callback */ js.Function2[/* err */ Error, /* result */ js.UndefOr[js.Any], Unit], 
       Unit
     ] => js.Promise[_] = null,
     protocolOptions: Anon_MaxSchemaAgreementWaitSeconds = null,
@@ -71,8 +78,11 @@ object ClientOptions {
     socketOptions: Anon_CoalescingThreshold = null,
     sslOptions: ConnectionOptions = null
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal(contactPoints = contactPoints)
+    val __obj = js.Dynamic.literal()
     if (authProvider != null) __obj.updateDynamic("authProvider")(authProvider)
+    if (cloud != null) __obj.updateDynamic("cloud")(cloud)
+    if (contactPoints != null) __obj.updateDynamic("contactPoints")(contactPoints)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (!js.isUndefined(isMetadataSyncEnabled)) __obj.updateDynamic("isMetadataSyncEnabled")(isMetadataSyncEnabled)
     if (keyspace != null) __obj.updateDynamic("keyspace")(keyspace)

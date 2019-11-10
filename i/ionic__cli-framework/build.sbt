@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework"
-version := "3.0.0-0d84f6"
+version := "3.0.0-7a6590"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "ionic__utils-object" % "1.0.5-9af50d",
-  "org.scalablytyped" %%% "log-update" % "3.3.0-2332be",
+  "org.scalablytyped" %%% "log-update" % "3.3.0-362835",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-3c2e78",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "string-width" % "4.1.0-c153b0")
 publishArtifact in packageDoc := false

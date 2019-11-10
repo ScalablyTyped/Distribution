@@ -1,7 +1,7 @@
 
 # Scala.js typings for styled-components
 
-Typings are for version 4.1
+Typings are for version 4.4
 
 ## Library description:
 Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress

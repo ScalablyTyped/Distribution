@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "apollo-link-http-common"
-version := "0.2.15-2275ff"
+version := "0.2.15-7f4693"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "apollo-link" % "1.2.13-f78773",
   "org.scalablytyped" %%% "graphql" % "14.5.8-bafd12",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "ts-invariant" % "0.4.4-f9783e",
+  "org.scalablytyped" %%% "ts-invariant" % "0.4.4-0ec099",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-685134")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

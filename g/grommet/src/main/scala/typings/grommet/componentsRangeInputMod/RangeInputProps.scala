@@ -1,7 +1,5 @@
 package typings.grommet.componentsRangeInputMod
 
-import typings.react.reactMod.ChangeEvent
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +9,7 @@ trait RangeInputProps extends js.Object {
   var max: js.UndefOr[Double | String] = js.undefined
   var min: js.UndefOr[Double | String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
   var value: js.UndefOr[Double | String] = js.undefined
 }
@@ -23,7 +21,7 @@ object RangeInputProps {
     max: Double | String = null,
     min: Double | String = null,
     name: String = null,
-    onChange: /* event */ ChangeEvent[Element] => Unit = null,
+    onChange: /* repeated */ js.Any => Unit = null,
     step: Int | Double = null,
     value: Double | String = null
   ): RangeInputProps = {

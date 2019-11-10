@@ -23,6 +23,7 @@ import typings.web3DashEth.web3DashEthStrings.logs
 import typings.web3DashEth.web3DashEthStrings.newBlockHeaders
 import typings.web3DashEth.web3DashEthStrings.pendingTransactions
 import typings.web3DashEth.web3DashEthStrings.syncing
+import typings.web3DashEthDashAbi.web3DashEthDashAbiMod.AbiCoder
 import typings.web3DashEthDashAccounts.web3DashEthDashAccountsMod.Accounts
 import typings.web3DashEthDashContract.web3DashEthDashContractMod.ContractOptions
 import typings.web3DashEthDashEns.web3DashEthDashEnsMod.Ens
@@ -45,7 +46,7 @@ class Eth protected () extends js.Object {
     typings.web3DashEthDashContract.web3DashEthDashContractMod.Contract
   ] = js.native
   var Iban: Instantiable1[/* iban */ String, typings.web3DashEthDashIban.web3DashEthDashIbanMod.Iban] = js.native
-  var abi: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AbiCoder */ js.Any = js.native
+  var abi: AbiCoder = js.native
   var accounts: Accounts = js.native
   val currentProvider: provider = js.native
   var defaultAccount: String | Null = js.native

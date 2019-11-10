@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "fluxible-addons-react"
-version := "0.2-dt-20181009Z-db2acc"
+version := "0.2-dt-20181009Z-a13360"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20180425Z-474a9a",
-  "org.scalablytyped" %%% "fluxible" % "1.4-dt-20190507Z-d1aa40",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20180425Z-e7c635",
+  "org.scalablytyped" %%% "fluxible" % "1.4-dt-20190507Z-aa8b80",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")

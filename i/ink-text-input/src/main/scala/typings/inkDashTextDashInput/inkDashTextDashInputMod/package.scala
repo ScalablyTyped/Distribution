@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inkDashTextDashInputMod {
-  import typings.ink.inkMod.Component
-
-  type TextInput = Component[TextInputProps, js.Object, js.Object]
+  type TextInput = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Component<TextInputProps> */ js.Any
 }

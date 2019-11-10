@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-rules-engine
 
-Typings are for version 4.0
+Typings are for version 5.0.0-alpha3
 
 ## Library description:
 Rules Engine expressed in simple json
@@ -24,7 +24,7 @@ Rules Engine expressed in simple json
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -18,13 +18,13 @@ class ModalBase protected ()
   var _getMoveDelta: js.Any = js.native
   var _lastSetX: js.Any = js.native
   var _lastSetY: js.Any = js.native
-  var _onDialogKeyDown: js.Any = js.native
-  var _onDialogKeyUp: js.Any = js.native
   var _onDrag: js.Any = js.native
   var _onDragStart: js.Any = js.native
   var _onDragStop: js.Any = js.native
   var _onEnterKeyboardMoveMode: js.Any = js.native
   var _onExitKeyboardMoveMode: js.Any = js.native
+  var _onKeyDown: js.Any = js.native
+  var _onKeyUp: js.Any = js.native
   var _onModalClose: js.Any = js.native
   var _onModalCloseTimer: js.Any = js.native
   var _onModalContextMenuClose: js.Any = js.native

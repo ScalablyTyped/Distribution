@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.swaggerDashSchemaDashOfficial.swaggerDashSchemaDashOfficialStrings.boolean
   - typings.swaggerDashSchemaDashOfficial.swaggerDashSchemaDashOfficialStrings.array
   - typings.swaggerDashSchemaDashOfficial.swaggerDashSchemaDashOfficialStrings.`object`
+  - typings.swaggerDashSchemaDashOfficial.swaggerDashSchemaDashOfficialStrings.file
 */
 trait ParameterType extends js.Object
 

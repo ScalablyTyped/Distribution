@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__react-native
 
-Typings are for version 5.2.5
+Typings are for version 5.2.6
 
 ## Library description:
 A better way to develop React Native Components for your app

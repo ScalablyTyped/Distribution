@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jsreport-html-embedded-in-docx"
-version := "1.0-dt-20180926Z-f4fe21"
+version := "1.0-dt-20180926Z-3a11e5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-a0ead8",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-75ce4f",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

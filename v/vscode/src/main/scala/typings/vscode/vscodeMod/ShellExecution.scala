@@ -44,7 +44,7 @@ class ShellExecution protected () extends js.Object {
   /**
   		 * The shell command line. Is `undefined` if created with a command and arguments.
   		 */
-  var commandLine: String = js.native
+  var commandLine: js.UndefOr[String] = js.native
   /**
   		 * The shell options used when the command line is executed in a shell.
   		 * Defaults to undefined.

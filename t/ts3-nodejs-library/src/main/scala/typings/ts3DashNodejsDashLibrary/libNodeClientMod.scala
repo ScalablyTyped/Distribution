@@ -5,6 +5,7 @@ import typings.ts3DashNodejsDashLibrary.libNodeAbstractMod.Abstract
 import typings.ts3DashNodejsDashLibrary.libTeamSpeakMod.TeamSpeak
 import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.ClientType
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ClientDBEdit
+import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ClientEdit
 import typings.ts3DashNodejsDashLibrary.libTypesQueryResponseMod.QueryResponseTypes
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.BanAdd
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientDBInfo
@@ -22,35 +23,6 @@ object libNodeClientMod extends js.Object {
   @js.native
   class TeamSpeakClient protected () extends Abstract {
     def this(parent: TeamSpeak, list: ClientList) = this()
-    val away: js.UndefOr[Double] = js.native
-    val awayMessage: js.UndefOr[String] = js.native
-    val badges: js.UndefOr[String] = js.native
-    val channelGroupId: js.UndefOr[Double] = js.native
-    val channelGroupInheritedChannelId: js.UndefOr[Double] = js.native
-    val cid: Double = js.native
-    val clid: Double = js.native
-    val connectionClientIp: js.UndefOr[String] = js.native
-    val country: js.UndefOr[String] = js.native
-    val created: js.UndefOr[Double] = js.native
-    val databaseId: Double = js.native
-    val flagTalking: js.UndefOr[Double] = js.native
-    val idleTime: js.UndefOr[Double] = js.native
-    val inputHardware: js.UndefOr[Double] = js.native
-    val inputMuted: js.UndefOr[Double] = js.native
-    val isChannelCommander: js.UndefOr[Double] = js.native
-    val isPrioritySpeaker: js.UndefOr[Double] = js.native
-    val isRecording: js.UndefOr[Double] = js.native
-    val isTalker: js.UndefOr[Double] = js.native
-    val lastconnected: js.UndefOr[Double] = js.native
-    val nickname: String = js.native
-    val outputHardware: js.UndefOr[Double] = js.native
-    val outputMuted: js.UndefOr[Double] = js.native
-    val platform: js.UndefOr[String] = js.native
-    val servergroups: js.UndefOr[js.Array[Double]] = js.native
-    val talkPower: js.UndefOr[Double] = js.native
-    val `type`: ClientType = js.native
-    val uniqueIdentifier: String = js.native
-    val version: js.UndefOr[String] = js.native
     def addGroups(sgid: js.Array[Double]): js.Promise[js.Array[QueryResponseTypes]] = js.native
     /**
       * adds the client to one or more groups
@@ -72,6 +44,9 @@ object libNodeClientMod extends js.Object {
     def addPerm(perm: Double, value: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
     def addPerm(perm: Double, value: Double, skip: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
     def addPerm(perm: Double, value: Double, skip: Double, negate: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def away(): js.UndefOr[Double] = js.native
+    def awayMessage(): js.UndefOr[String] = js.native
+    def badges(): js.UndefOr[String] = js.native
     /**
       * bans the chosen client with its uid
       * @param banreason ban reason
@@ -79,6 +54,13 @@ object libNodeClientMod extends js.Object {
       */
     def ban(banreason: String): js.Promise[BanAdd] = js.native
     def ban(banreason: String, time: Double): js.Promise[BanAdd] = js.native
+    def channelGroupId(): js.UndefOr[Double] = js.native
+    def channelGroupInheritedChannelId(): js.UndefOr[Double] = js.native
+    def cid(): Double = js.native
+    def clid(): Double = js.native
+    def connectionClientIp(): js.UndefOr[String] = js.native
+    def country(): js.UndefOr[String] = js.native
+    def created(): js.UndefOr[Double] = js.native
     /**
       * removes a custom property from the client
       * @param ident the key which should be deleted
@@ -93,6 +75,7 @@ object libNodeClientMod extends js.Object {
       * @param value the value which should be set
       */
     def customSet(ident: String, value: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def databaseId(): Double = js.native
     /**
       * Changes a clients settings using given properties.
       * @param properties the properties which should be modified
@@ -112,6 +95,12 @@ object libNodeClientMod extends js.Object {
       */
     def delPerm(perm: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
     def delPerm(perm: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    /**
+      * edits the client
+      * @param properties the properties to change
+      */
+    def edit(properties: ClientEdit): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def flagTalking(): js.UndefOr[Double] = js.native
     /** returns a Buffer with the avatar of the user */
     def getAvatar(): js.Promise[Buffer] = js.native
     /** returns the avatar name of the client */
@@ -128,8 +117,15 @@ object libNodeClientMod extends js.Object {
       * Retrieves a displayable Client Link for the TeamSpeak Chat
       */
     def getUrl(): String = js.native
+    def idleTime(): js.UndefOr[Double] = js.native
+    def inputHardware(): js.UndefOr[Double] = js.native
+    def inputMuted(): js.UndefOr[Double] = js.native
+    def isChannelCommander(): js.UndefOr[Double] = js.native
+    def isPrioritySpeaker(): js.UndefOr[Double] = js.native
     /** evaluates if the client is a query client or a normal client */
     def isQuery(): Boolean = js.native
+    def isRecording(): js.UndefOr[Double] = js.native
+    def isTalker(): js.UndefOr[Double] = js.native
     /**
       * kicks the client from their currently joined channel
       * @param msg the message the client should receive when getting kicked (max 40 Chars)
@@ -140,6 +136,7 @@ object libNodeClientMod extends js.Object {
       * @param msg the message the client should receive when getting kicked
       */
     def kickFromServer(msg: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def lastconnected(): js.UndefOr[Double] = js.native
     /**
       * sends a textmessage to the client
       * @param msg the message the client should receive
@@ -152,17 +149,26 @@ object libNodeClientMod extends js.Object {
       */
     def move(cid: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
     def move(cid: Double, cpw: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def nickname(): String = js.native
+    def outputHardware(): js.UndefOr[Double] = js.native
+    def outputMuted(): js.UndefOr[Double] = js.native
     /**
       * returns a list of permissions defined for the client
       * @param permsid if the permsid option is set to true the output will contain the permission names
       */
     def permList(): js.Promise[js.Array[PermList]] = js.native
     def permList(permsid: Boolean): js.Promise[js.Array[PermList]] = js.native
+    def platform(): js.UndefOr[String] = js.native
     /**
       * pokes the client with a certain message
       * @param msg the message the client should receive
       */
     def poke(msg: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+    def servergroups(): js.UndefOr[js.Array[Double]] = js.native
+    def talkPower(): js.UndefOr[Double] = js.native
+    def `type`(): ClientType = js.native
+    def uniqueIdentifier(): String = js.native
+    def version(): js.UndefOr[String] = js.native
   }
   
 }

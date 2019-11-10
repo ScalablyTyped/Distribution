@@ -1,6 +1,7 @@
 
 # Scala.js typings for protractor-http-mock
 
+Typings are for version 0.10
 
 ## Library description:
 Mock HTTP calls in your protractor specs.

@@ -15,14 +15,14 @@ object esmParseMod extends js.Object {
       dateString: String,
       formatString: String,
       backupDate: Double,
-      options: Anon_01234567FirstWeekContainsDate
+      options: Anon_01234567FirstWeekContainsDateLocaleUseAdditionalDayOfYearTokens
     ): Date = js.native
     def apply(dateString: String, formatString: String, backupDate: Date): Date = js.native
     def apply(
       dateString: String,
       formatString: String,
       backupDate: Date,
-      options: Anon_01234567FirstWeekContainsDate
+      options: Anon_01234567FirstWeekContainsDateLocaleUseAdditionalDayOfYearTokens
     ): Date = js.native
   }
   

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-json-db" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-json-db" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

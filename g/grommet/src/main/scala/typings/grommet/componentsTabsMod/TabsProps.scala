@@ -25,7 +25,7 @@ trait TabsProps extends js.Object {
   var justify: js.UndefOr[start | center | end] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var messages: js.UndefOr[Anon_TabContents] = js.undefined
-  var onActive: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onActive: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
 }
 
 object TabsProps {
@@ -40,7 +40,7 @@ object TabsProps {
     justify: start | center | end = null,
     margin: MarginType = null,
     messages: Anon_TabContents = null,
-    onActive: /* repeated */ js.Any => _ = null
+    onActive: /* index */ Double => Unit = null
   ): TabsProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)

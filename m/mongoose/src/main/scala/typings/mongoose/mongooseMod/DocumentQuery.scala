@@ -341,9 +341,9 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     * getters/setters or other Mongoose magic applied.
     * @param {Boolean|Object} bool defaults to true
     */
-  def lean(): Query[_] with QueryHelpers = js.native
-  def lean(bool: js.Object): Query[_] with QueryHelpers = js.native
-  def lean(bool: Boolean): Query[_] with QueryHelpers = js.native
+  def lean[T](): Query[T] with QueryHelpers = js.native
+  def lean[T](bool: js.Object): Query[T] with QueryHelpers = js.native
+  def lean[T](bool: Boolean): Query[T] with QueryHelpers = js.native
   /** Specifies the maximum number of documents the query will return. Cannot be used with distinct() */
   def limit(`val`: Double): this.type = js.native
   def lt[T](path: String, `val`: T): this.type = js.native

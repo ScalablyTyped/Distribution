@@ -12,6 +12,6 @@ object registerProxy extends js.Object {
     *
     * @param spec Proxy specification.
     */
-  def apply(spec: ProxySpec): ProxyConstructor = js.native
+  def apply(spec: ProxySpec[ProxyData, Object, Object]): ProxyConstructor = js.native
 }
 

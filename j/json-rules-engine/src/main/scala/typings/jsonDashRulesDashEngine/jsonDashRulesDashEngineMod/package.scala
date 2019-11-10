@@ -5,10 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsonDashRulesDashEngineMod {
-  import typings.jsonDashRulesDashEngine.Anon_Key
-  import typings.std.JSON
+  import typings.jsonDashRulesDashEngine.jsonDashRulesDashEngineStrings.conditions
+  import typings.jsonDashRulesDashEngine.jsonDashRulesDashEngineStrings.event
+  import typings.jsonDashRulesDashEngine.jsonDashRulesDashEngineStrings.name
+  import typings.jsonDashRulesDashEngine.jsonDashRulesDashEngineStrings.priority
+  import typings.std.Pick
+  import typings.std.Record
+  import typings.std.Required
 
-  type DefinitionFunction = js.Function2[/* params */ Anon_Key, /* almanac */ Almanac, Unit]
-  type EngineEventFunction = js.Function3[/* event */ Event, /* almanac */ Almanac, /* ruleResult */ js.Object, Unit]
-  type OperatorEvaluateFunction = js.Function2[/* factValue */ String, /* jsonValue */ JSON, Unit]
+  type DynamicFactCallback[T] = js.Function2[/* params */ Record[String, js.Any], /* almanac */ Almanac, T]
+  type EventHandler = js.Function3[/* event */ Event, /* almanac */ Almanac, /* ruleResult */ RuleResult, Unit]
+  type OperatorEvaluator[A, B] = js.Function2[/* factValue */ A, /* compareToValue */ B, Boolean]
+  type RuleSerializable = Pick[Required[RuleProperties], conditions | event | name | priority]
 }

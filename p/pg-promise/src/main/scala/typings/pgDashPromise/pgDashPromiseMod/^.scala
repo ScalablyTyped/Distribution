@@ -1,5 +1,6 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
+import typings.pgDashPromise.typescriptPgDashSubsetMod.IClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   // Default library interface (before initialization)
   // API: http://vitaly-t.github.io/pg-promise/module-pg-promise.html
-  def apply[Ext](): IMain[Ext] = js.native
-  def apply[Ext](options: IInitOptions[Ext]): IMain[Ext] = js.native
+  def apply[Ext, C /* <: IClient */](): IMain[Ext, C] = js.native
+  def apply[Ext, C /* <: IClient */](options: IInitOptions[Ext, C]): IMain[Ext, C] = js.native
 }
 

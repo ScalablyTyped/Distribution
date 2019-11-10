@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/core" : "4.11.3"
+      "@ionic/core" : "4.11.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/core" : "4.11.3"
+      "@ionic/core" : "4.11.4"
     }
   ],
   "compile-devDependencies" : [

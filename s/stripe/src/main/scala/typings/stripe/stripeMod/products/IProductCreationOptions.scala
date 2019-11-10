@@ -60,10 +60,11 @@ trait IProductCreationOptions extends IDataOptionsWithMetadata {
     */
   var statement_descriptor: js.UndefOr[String] = js.undefined
   /**
-    * The type of the product. The product is either of type service, which is eligible for use with Subscriptions
-    * and Plans or good, which is eligible for use with Orders and SKUs.
+    * The type of the product. Defaults to `service` if not explicitly specified, enabling use of this product
+    * withSubscriptions and Plans. Set this parameter to `good` to use this product with Orders and SKUs. On API
+    * versions before `2018-02-05`, this field defaults to `good` for compatibility reasons.
     */
-  var `type`: ProductType
+  var `type`: js.UndefOr[ProductType] = js.undefined
   /**
     * A label that represents units of this product, such as seat(s), in Stripe and on customers’ receipts and invoices.
     * Only available on products of type=service.
@@ -79,7 +80,6 @@ object IProductCreationOptions {
   @scala.inline
   def apply(
     name: String,
-    `type`: ProductType,
     active: js.UndefOr[Boolean] = js.undefined,
     attributes: js.Array[String] = null,
     caption: String = null,
@@ -93,11 +93,11 @@ object IProductCreationOptions {
     package_dimensions: IPackageDimensions = null,
     shippable: js.UndefOr[Boolean] = js.undefined,
     statement_descriptor: String = null,
+    `type`: ProductType = null,
     unit_label: String = null,
     url: String = null
   ): IProductCreationOptions = {
     val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (caption != null) __obj.updateDynamic("caption")(caption)
@@ -111,6 +111,7 @@ object IProductCreationOptions {
     if (package_dimensions != null) __obj.updateDynamic("package_dimensions")(package_dimensions)
     if (!js.isUndefined(shippable)) __obj.updateDynamic("shippable")(shippable)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (unit_label != null) __obj.updateDynamic("unit_label")(unit_label)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[IProductCreationOptions]

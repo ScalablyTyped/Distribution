@@ -1,55 +1,73 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.cassandraDashDriver.Anon_Params
-import typings.cassandraDashDriver.cassandraDashDriverMod.metadata.ClientState
-import typings.cassandraDashDriver.cassandraDashDriverMod.metadata.Metadata
-import typings.cassandraDashDriver.cassandraDashDriverMod.metrics.ClientMetrics
-import typings.cassandraDashDriver.cassandraDashDriverMod.types.ResultSet
+import typings.cassandraDashDriver.Anon_ParamsQuery
+import typings.cassandraDashDriver.libMetadataMod.metadata.ClientState
+import typings.cassandraDashDriver.libMetadataMod.metadata.Metadata
+import typings.cassandraDashDriver.libMetricsMod.metrics.ClientMetrics
+import typings.cassandraDashDriver.libTypesMod.types.ResultSet
+import typings.cassandraDashDriver.libTypesMod.types.Row
 import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("cassandra-driver", "Client")
 @js.native
-trait Client extends EventEmitter {
+class Client protected () extends EventEmitter {
+  def this(options: ClientOptions) = this()
   var hosts: HostMap = js.native
   var keyspace: String = js.native
   var metadata: Metadata = js.native
   var metrics: ClientMetrics = js.native
-  def batch(queries: js.Array[Anon_Params | String]): js.Promise[ResultSet] = js.native
-  def batch(queries: js.Array[Anon_Params | String], callback: ResultCallback): Unit = js.native
-  def batch(queries: js.Array[Anon_Params | String], options: QueryOptions): js.Promise[ResultSet] = js.native
-  def batch(queries: js.Array[Anon_Params | String], options: QueryOptions, callback: ResultCallback): Unit = js.native
+  def batch(queries: js.Array[String | Anon_ParamsQuery]): js.Promise[ResultSet] = js.native
+  def batch(queries: js.Array[String | Anon_ParamsQuery], callback: ValueCallback[ResultSet]): Unit = js.native
+  def batch(queries: js.Array[String | Anon_ParamsQuery], options: QueryOptions): js.Promise[ResultSet] = js.native
+  def batch(
+    queries: js.Array[String | Anon_ParamsQuery],
+    options: QueryOptions,
+    callback: ValueCallback[ResultSet]
+  ): Unit = js.native
   def connect(): js.Promise[Unit] = js.native
-  def connect(callback: Callback): Unit = js.native
-  def eachRow(query: String): Unit = js.native
-  def eachRow(query: String, params: js.Any): Unit = js.native
-  def eachRow(query: String, params: js.Any, options: QueryOptions): Unit = js.native
-  def eachRow(query: String, params: js.Any, options: QueryOptions, rowCallback: Callback): Unit = js.native
-  def eachRow(query: String, params: js.Any, options: QueryOptions, rowCallback: Callback, callback: Callback): Unit = js.native
+  def connect(callback: EmptyCallback): Unit = js.native
+  def eachRow(
+    query: String,
+    params: ArrayOrObject,
+    options: QueryOptions,
+    rowCallback: js.Function2[/* n */ Double, /* row */ Row, Unit]
+  ): Unit = js.native
+  def eachRow(
+    query: String,
+    params: ArrayOrObject,
+    options: QueryOptions,
+    rowCallback: js.Function2[/* n */ Double, /* row */ Row, Unit],
+    callback: ValueCallback[ResultSet]
+  ): Unit = js.native
+  def eachRow(
+    query: String,
+    params: ArrayOrObject,
+    rowCallback: js.Function2[/* n */ Double, /* row */ Row, Unit]
+  ): Unit = js.native
+  def eachRow(
+    query: String,
+    params: ArrayOrObject,
+    rowCallback: js.Function2[/* n */ Double, /* row */ Row, Unit],
+    callback: ValueCallback[ResultSet]
+  ): Unit = js.native
+  def eachRow(query: String, rowCallback: js.Function2[/* n */ Double, /* row */ Row, Unit]): Unit = js.native
   def execute(query: String): js.Promise[ResultSet] = js.native
-  def execute(query: String, callback: ResultCallback): Unit = js.native
-  def execute(query: String, params: js.Any): js.Promise[ResultSet] = js.native
-  def execute(query: String, params: js.Any, callback: ResultCallback): Unit = js.native
-  def execute(query: String, params: js.Any, options: QueryOptions): js.Promise[ResultSet] = js.native
-  def execute(query: String, params: js.Any, options: QueryOptions, callback: ResultCallback): Unit = js.native
-  def getReplicas(keyspace: String, token: Buffer): js.Array[_] = js.native
-   // TODO: Should this be a more explicit return?
+  def execute(query: String, callback: ValueCallback[ResultSet]): Unit = js.native
+  def execute(query: String, params: ArrayOrObject): js.Promise[ResultSet] = js.native
+  def execute(query: String, params: ArrayOrObject, callback: ValueCallback[ResultSet]): Unit = js.native
+  def execute(query: String, params: ArrayOrObject, options: QueryOptions): js.Promise[ResultSet] = js.native
+  def execute(query: String, params: ArrayOrObject, options: QueryOptions, callback: ValueCallback[ResultSet]): Unit = js.native
+  def getReplicas(keyspace: String, token: Buffer): js.Array[Host] = js.native
   def getState(): ClientState = js.native
   def shutdown(): js.Promise[Unit] = js.native
-  def shutdown(callback: Callback): Unit = js.native
-  @JSName("shutdown")
-  def shutdown_Unit(): Unit = js.native
-  def stream(query: String): ReadableStream = js.native
-  def stream(query: String, params: js.Any): ReadableStream = js.native
-  def stream(query: String, params: js.Any, options: QueryOptions): ReadableStream = js.native
-  def stream(query: String, params: js.Any, options: QueryOptions, callback: Callback): ReadableStream = js.native
+  def shutdown(callback: EmptyCallback): Unit = js.native
+  def stream(query: String): EventEmitter = js.native
+  def stream(query: String, params: ArrayOrObject): EventEmitter = js.native
+  def stream(query: String, params: ArrayOrObject, options: QueryOptions): EventEmitter = js.native
+  def stream(query: String, params: ArrayOrObject, options: QueryOptions, callback: EmptyCallback): EventEmitter = js.native
 }
-
-@JSImport("cassandra-driver", "Client")
-@js.native
-object Client extends TopLevel[ClientStatic]
 

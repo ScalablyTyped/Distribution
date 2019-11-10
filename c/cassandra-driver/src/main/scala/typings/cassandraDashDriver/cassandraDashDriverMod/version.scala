@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cassandra-driver", "version")
 @js.native
-object version extends TopLevel[String]
+object version extends TopLevel[Double]
 

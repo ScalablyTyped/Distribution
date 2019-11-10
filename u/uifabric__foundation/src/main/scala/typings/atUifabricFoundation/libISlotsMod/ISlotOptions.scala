@@ -1,9 +1,9 @@
 package typings.atUifabricFoundation.libISlotsMod
 
-import typings.atUifabricFoundation.libIComponentMod.IPropsWithChildren
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ElementType
 import typings.react.reactMod.FunctionComponent
+import typings.react.reactMod.PropsWithChildren
 import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ object ISlotOptions {
   @scala.inline
   def apply[TProps](
     component: ElementType[TProps] = null,
-    render: (/* props */ IPropsWithChildren[TProps], /* defaultComponent */ ComponentType[TProps]) => ReturnType[FunctionComponent[TProps]] = null
+    render: (/* props */ PropsWithChildren[TProps], /* defaultComponent */ ComponentType[TProps]) => ReturnType[FunctionComponent[TProps]] = null
   ): ISlotOptions[TProps] = {
     val __obj = js.Dynamic.literal()
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])

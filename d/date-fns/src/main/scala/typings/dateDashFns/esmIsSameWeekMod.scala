@@ -11,13 +11,13 @@ object esmIsSameWeekMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(dateLeft: Double, dateRight: Double): Boolean = js.native
-    def apply(dateLeft: Double, dateRight: Double, options: Anon_0123456): Boolean = js.native
+    def apply(dateLeft: Double, dateRight: Double, options: Anon_0123456Locale): Boolean = js.native
     def apply(dateLeft: Double, dateRight: Date): Boolean = js.native
-    def apply(dateLeft: Double, dateRight: Date, options: Anon_0123456): Boolean = js.native
+    def apply(dateLeft: Double, dateRight: Date, options: Anon_0123456Locale): Boolean = js.native
     def apply(dateLeft: Date, dateRight: Double): Boolean = js.native
-    def apply(dateLeft: Date, dateRight: Double, options: Anon_0123456): Boolean = js.native
+    def apply(dateLeft: Date, dateRight: Double, options: Anon_0123456Locale): Boolean = js.native
     def apply(dateLeft: Date, dateRight: Date): Boolean = js.native
-    def apply(dateLeft: Date, dateRight: Date, options: Anon_0123456): Boolean = js.native
+    def apply(dateLeft: Date, dateRight: Date, options: Anon_0123456Locale): Boolean = js.native
   }
   
 }

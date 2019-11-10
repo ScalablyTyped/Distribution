@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-highcharts"
-version := "16.0-dt-20190315Z-95108e"
+version := "16.0-dt-20191107Z-95108e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

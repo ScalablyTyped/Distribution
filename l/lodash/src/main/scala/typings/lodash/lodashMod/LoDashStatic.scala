@@ -310,6 +310,7 @@ import scala.scalajs.js.annotation._
 // toPath
 // uniqueId
 // stubTrue
+// stubFalse
 @js.native
 trait LoDashStatic extends js.Object {
   /**

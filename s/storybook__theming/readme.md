@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__theming
 
-Typings are for version 5.2.5
+Typings are for version 5.2.6
 
 ## Library description:
 Core Storybook Components

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesMod {
+  import typings.atFormatjsIntlDashListformat.distCoreMod.IntlListFormatOptions
   import typings.atFormatjsIntlDashRelativetimeformat.distCoreMod.IntlRelativeTimeFormatOptions
   import typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormatOptions
   import typings.reactDashIntl.reactDashIntlStrings.localeMatcher
@@ -14,6 +15,7 @@ package object distTypesMod {
   import typings.std.Pick
 
   type FormatDateOptions = (Exclude[DateTimeFormatOptions, localeMatcher]) with CustomFormatConfig
+  type FormatListOptions = Exclude[IntlListFormatOptions, localeMatcher]
   type FormatNumberOptions = (Exclude[UnifiedNumberFormatOptions, localeMatcher]) with CustomFormatConfig
   type FormatPluralOptions = (Exclude[PluralRulesOptions, localeMatcher]) with CustomFormatConfig
   type FormatRelativeTimeOptions = (Exclude[IntlRelativeTimeFormatOptions, localeMatcher]) with CustomFormatConfig

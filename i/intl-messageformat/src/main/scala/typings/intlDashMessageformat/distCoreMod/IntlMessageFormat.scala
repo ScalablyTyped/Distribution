@@ -51,7 +51,7 @@ class IntlMessageFormat protected () extends js.Object {
   val formats: js.Any = js.native
   val formatterCache: js.Any = js.native
   val formatters: js.Any = js.native
-  val locale: js.Any = js.native
+  val locales: js.Any = js.native
   val message: js.Any = js.native
   def format(): String = js.native
   def format(values: Record[String, PrimitiveType]): String = js.native

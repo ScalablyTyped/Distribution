@@ -6,8 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ILostContext extends js.Object {
-  var client: IClient
+trait ILostContext[C /* <: IClient */] extends js.Object {
+  var client: C
   var cn: String
   var dc: js.Any
   var start: Date
@@ -15,10 +15,10 @@ trait ILostContext extends js.Object {
 
 object ILostContext {
   @scala.inline
-  def apply(client: IClient, cn: String, dc: js.Any, start: Date): ILostContext = {
-    val __obj = js.Dynamic.literal(client = client, cn = cn, dc = dc, start = start)
+  def apply[C /* <: IClient */](client: C, cn: String, dc: js.Any, start: Date): ILostContext[C] = {
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], cn = cn, dc = dc, start = start)
   
-    __obj.asInstanceOf[ILostContext]
+    __obj.asInstanceOf[ILostContext[C]]
   }
 }
 

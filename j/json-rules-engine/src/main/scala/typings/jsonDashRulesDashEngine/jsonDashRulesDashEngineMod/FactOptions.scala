@@ -5,15 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FactOptions extends js.Object {
-  var cache: Boolean
-  var priority: Double
+  var cache: js.UndefOr[Boolean] = js.undefined
+  var priority: js.UndefOr[Double] = js.undefined
 }
 
 object FactOptions {
   @scala.inline
-  def apply(cache: Boolean, priority: Double): FactOptions = {
-    val __obj = js.Dynamic.literal(cache = cache, priority = priority)
-  
+  def apply(cache: js.UndefOr[Boolean] = js.undefined, priority: Int | Double = null): FactOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[FactOptions]
   }
 }

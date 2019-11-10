@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xhr-mock" : "2.5.0"
+      "xhr-mock" : "2.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "xhr-mock" : "2.5.0"
+      "xhr-mock" : "2.5.1"
     }
   ],
   "compile-devDependencies" : [

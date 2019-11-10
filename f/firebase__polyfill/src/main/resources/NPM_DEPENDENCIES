@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/polyfill" : "0.3.26"
+      "@firebase/polyfill" : "0.3.27"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/polyfill" : "0.3.26"
+      "@firebase/polyfill" : "0.3.27"
     }
   ],
   "compile-devDependencies" : [

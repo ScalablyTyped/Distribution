@@ -967,6 +967,9 @@ object grommetDashIconsComponents extends grommetDashIconsProps {
   def More: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.More].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.std.SVGSVGElement]]]
   @scala.inline
+  def MoreVertical: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.MoreVertical].asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.std.SVGSVGElement]]]
+  @scala.inline
   def Multimedia: ComponentType[IconProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommetDashIcons.iconsMod.Multimedia].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommetDashIcons.iconsMod.IconProps with typings.react.reactMod.SVGProps[typings.std.SVGSVGElement]]]
   @scala.inline

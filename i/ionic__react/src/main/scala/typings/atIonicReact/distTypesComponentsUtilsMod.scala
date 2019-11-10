@@ -1,5 +1,6 @@
 package typings.atIonicReact
 
+import typings.atIonicCore.distTypesInterfaceMod.Config
 import typings.atIonicReact.atIonicReactStrings.android
 import typings.atIonicReact.atIonicReactStrings.capacitor
 import typings.atIonicReact.atIonicReactStrings.cordova
@@ -42,6 +43,7 @@ object distTypesComponentsUtilsMod extends js.Object {
   ] = js.native
   def dashToPascalCase(str: String): String = js.native
   def getClassName(classList: DOMTokenList, newProps: js.Any, oldProps: js.Any): String = js.native
+  def getConfig(): Config | Null = js.native
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = js.native

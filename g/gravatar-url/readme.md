@@ -1,7 +1,7 @@
 
 # Scala.js typings for gravatar-url
 
-Typings are for version 3.0.1
+Typings are for version 3.1.0
 
 ## Library description:
 Get the URL to a Gravatar image from an email

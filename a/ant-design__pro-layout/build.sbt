@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-layout"
-version := "4.6.2-c8df58"
+version := "4.6.2-711a60"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "antd" % "3.25.0-13f2d4",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-815dc4",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191107Z-8f9b3f",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191108Z-c322f2",
   "org.scalablytyped" %%% "moment" % "2.24.0-122f60",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
   "org.scalablytyped" %%% "rc-mentions" % "0.4.1-bbce39",

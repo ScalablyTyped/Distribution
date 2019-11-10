@@ -64,10 +64,11 @@ trait IProduct extends IResourceObject {
     */
   var statement_descriptor: String
   /**
-    * The type of the product. The product is either of type good, which is eligible for use with Orders and SKUs, or service, which is eligible for
-    * use with Subscriptions and Plans.
+    * The type of the product. Defaults to `service` if not explicitly specified, enabling use of this product
+    * withSubscriptions and Plans. Set this parameter to `good` to use this product with Orders and SKUs. On API
+    * versions before `2018-02-05`, this field defaults to `good` for compatibility reasons.
     */
-  var `type`: ProductType
+  var `type`: js.UndefOr[ProductType] = js.undefined
   /**
     * A label that represents units of this product, such as seat(s), in Stripe and on customers’ receipts and invoices.
     * Only available on products of type=service.
@@ -99,14 +100,14 @@ object IProduct {
     shippable: Boolean,
     skus: IList[ISku],
     statement_descriptor: String,
-    `type`: ProductType,
     updated: Double,
     url: String,
+    `type`: ProductType = null,
     unit_label: String = null
   ): IProduct = {
     val __obj = js.Dynamic.literal(active = active, attributes = attributes, caption = caption, created = created, deactivated_on = deactivated_on, description = description, id = id, images = images, livemode = livemode, metadata = metadata, name = name, package_dimensions = package_dimensions, shippable = shippable, skus = skus, statement_descriptor = statement_descriptor, updated = updated, url = url)
     __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (unit_label != null) __obj.updateDynamic("unit_label")(unit_label)
     __obj.asInstanceOf[IProduct]
   }

@@ -10,7 +10,7 @@ trait Anon_GroupEnd extends js.Object {
   var header: js.UndefOr[js.Object] = js.undefined
   var icons: js.UndefOr[Anon_Ascending] = js.undefined
   var primary: js.UndefOr[Anon_Weight] = js.undefined
-  var resize: js.UndefOr[Anon_BorderAnonColorSide] = js.undefined
+  var resize: js.UndefOr[Anon_BorderAnonColorSideColorType] = js.undefined
 }
 
 object Anon_GroupEnd {
@@ -21,7 +21,7 @@ object Anon_GroupEnd {
     header: js.Object = null,
     icons: Anon_Ascending = null,
     primary: Anon_Weight = null,
-    resize: Anon_BorderAnonColorSide = null
+    resize: Anon_BorderAnonColorSideColorType = null
   ): Anon_GroupEnd = {
     val __obj = js.Dynamic.literal()
     if (groupEnd != null) __obj.updateDynamic("groupEnd")(groupEnd)

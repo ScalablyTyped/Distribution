@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsmediatags"
-version := "3.9-dt-20190819Z-6cf74e"
+version := "3.9-dt-20191107Z-c6c838"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

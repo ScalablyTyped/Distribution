@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-popper
 
-Typings are for version 1.3.5
+Typings are for version 1.3.6
 
 ## Library description:
 React wrapper around Popper.js

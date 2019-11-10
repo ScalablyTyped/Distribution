@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "gulp-cache"
-version := "v0.4.5-dt-20190322Z-5fc2fc"
+version := "v0.4.5-dt-20190322Z-58b1bb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "chalk" % "2.4.2-60c74f",
-  "org.scalablytyped" %%% "gulp-util" % "3.0-dt-20180315Z-c7a706",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "gulp-util" % "3.0-dt-20180315Z-b4c64a",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "through2" % "2.0-dt-20190322Z-30e301",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-48d4fc")
+  "org.scalablytyped" %%% "through2" % "2.0-dt-20190322Z-53502e",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-d4cc87")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

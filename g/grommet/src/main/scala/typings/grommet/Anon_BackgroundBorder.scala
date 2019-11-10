@@ -1,30 +1,24 @@
 package typings.grommet
 
-import typings.grommet.utilsMod.BackgroundType
+import typings.grommet.componentsListMod.BorderType
+import typings.grommet.componentsListMod.PadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BackgroundBorder extends js.Object {
-  var background: js.UndefOr[BackgroundType] = js.undefined
-  var border: js.UndefOr[Anon_Radius] = js.undefined
-  var shadowSize: js.UndefOr[String] = js.undefined
-  var zIndex: js.UndefOr[String] = js.undefined
+  var background: js.UndefOr[String] = js.undefined
+  var border: js.UndefOr[BorderType] = js.undefined
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 
 object Anon_BackgroundBorder {
   @scala.inline
-  def apply(
-    background: BackgroundType = null,
-    border: Anon_Radius = null,
-    shadowSize: String = null,
-    zIndex: String = null
-  ): Anon_BackgroundBorder = {
+  def apply(background: String = null, border: BorderType = null, pad: PadType = null): Anon_BackgroundBorder = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (shadowSize != null) __obj.updateDynamic("shadowSize")(shadowSize)
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundBorder]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-relay"
-version := "7.0-dt-20191028Z-7e26f3"
+version := "7.0-dt-20191107Z-b3361d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

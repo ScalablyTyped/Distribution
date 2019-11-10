@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@formatjs/macro" : "0.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@formatjs/macro" : "0.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

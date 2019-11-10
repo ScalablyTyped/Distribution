@@ -1,7 +1,7 @@
 
 # Scala.js typings for jose
 
-Typings are for version 1.10.1
+Typings are for version 1.12.0
 
 ## Library description:
 JSON Object Signing and Encryption (JOSE) library (symmetric and asymmetric)

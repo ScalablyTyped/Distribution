@@ -1,7 +1,8 @@
 package typings.cassanknex.cassanknexMod
 
-import typings.cassandraDashDriver.cassandraDashDriverMod.ResultCallback
-import typings.cassandraDashDriver.cassandraDashDriverMod.types.Row
+import typings.cassandraDashDriver.cassandraDashDriverMod.ValueCallback
+import typings.cassandraDashDriver.libTypesMod.types.ResultSet
+import typings.cassandraDashDriver.libTypesMod.types.Row
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait QueryBuilder extends js.Object {
     onEachRow: js.Function2[/* n */ Double, /* row */ Row, _],
     onError: js.Function1[/* err */ Error, _]
   ): js.UndefOr[scala.Nothing]
-  def exec(cb: ResultCallback): js.UndefOr[scala.Nothing]
+  def exec(cb: ValueCallback[ResultSet]): js.UndefOr[scala.Nothing]
   def stream(params: StreamParams): js.UndefOr[scala.Nothing]
 }
 
@@ -24,7 +25,7 @@ object QueryBuilder {
     bindings: () => js.Array[_],
     cql: () => String,
     eachRow: (js.Function2[/* n */ Double, /* row */ Row, _], js.Function1[/* err */ Error, _]) => js.UndefOr[scala.Nothing],
-    exec: ResultCallback => js.UndefOr[scala.Nothing],
+    exec: ValueCallback[ResultSet] => js.UndefOr[scala.Nothing],
     stream: StreamParams => js.UndefOr[scala.Nothing]
   ): QueryBuilder = {
     val __obj = js.Dynamic.literal(bindings = js.Any.fromFunction0(bindings), cql = js.Any.fromFunction0(cql), eachRow = js.Any.fromFunction2(eachRow), exec = js.Any.fromFunction1(exec), stream = js.Any.fromFunction1(stream))

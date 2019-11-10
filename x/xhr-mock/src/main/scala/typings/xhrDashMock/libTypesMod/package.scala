@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesMod {
-  import org.scalablytyped.runtime.StringDictionary
   import typings.xhrDashMock.libMockRequestMod.default
 
   type Mock = MockObject | MockFunction
@@ -16,5 +15,4 @@ package object libTypesMod {
       typings.xhrDashMock.libMockResponseMod.default | js.Promise[js.UndefOr[typings.xhrDashMock.libMockResponseMod.default]]
     ]
   ]
-  type MockHeaders = StringDictionary[String]
 }

@@ -432,6 +432,7 @@
 | [autosuggest-highlight](./a/autosuggest-highlight) | Utilities for highlighting text in autosuggest and | autosuggest, autocomplete, auto suggest, auto complete, highlight autosuggest, highlight autocomplete, highlight auto suggest, highlight auto complete, autosuggest highlight, autocomplete highlight, auto suggest highlight, auto complete highlight |
 | [ava](./a/ava) | Testing can be a drag. AVA helps you get it done. | 🦄, test, runner, testing, ava, concurrent, parallel, fast, tdd, cli-app, cli, jest, mocha, tape, tap, qunit, jasmine, babel, assert, assertion, promise, promises, async, function, await, generator, generators, yield, observable, observables, unit, snapshot, expect, typescript, flow |
 | [avoscloud-sdk](./a/avoscloud-sdk) | AVOSCloud JavaScript SDK. | - |
+| [avvio](./a/avvio) | Asynchronous bootstrapping of Node applications | async, boot, delayed, open |
 | [await-timeout](./a/await-timeout) | A Promise-based API for setTimeout / clearTimeout | timeout, promise, promise-api, promises, settimeout, cleartimeout |
 | [awesomplete](./a/awesomplete) | http://leaverou.github.io/awesomplete/ | - |
 | [aws-crypto__crc32](./a/aws-crypto__crc32) | Pure JS implementation of CRC32 https://en.wikiped | - |
@@ -909,6 +910,7 @@
 | [chai-jest-snapshot](./c/chai-jest-snapshot) | Chai assertion that provides Jest's snapshot testi | mocha, chai, assertion, helper, jest, snapshot, react, test, spec, testing |
 | [chai-jquery](./c/chai-jquery) | jQuery assertions for the Chai assertion library | chai, chai-plugin, vendor, browser-only, dom, test, assertion, assert, testing, jQuery |
 | [chai-json-schema](./c/chai-json-schema) | Chai plugin for JSON Schema v4 | array, assert, assertion, browser, chai, chai-plugin, json, json-schema, objects, schema, test, testing |
+| [chai-like](./c/chai-like) | A JSON matcher for chai | chai, chai-plugin, objects, json, like, test, integration, API |
 | [chai-moment](./c/chai-moment) | date assertions for chai, powered by moment | chai, moment, test, assertions |
 | [chai-oequal](./c/chai-oequal) | Chai oequal() that uses object's equality method. | chai |
 | [chai-roughly](./c/chai-roughly) | deep equals assertions with tolerance for chai | assertions, testing, chai, chai-plugin, numbers, deep-eql, tolerance |
@@ -1078,7 +1080,6 @@
 | [complex_dot_js](./c/complex_dot_js) | A complex number library | complex numbers, math, complex, number, calculus, parser, arithmetic |
 | [component-emitter](./c/component-emitter) | Event emitter | - |
 | [compose-function](./c/compose-function) | Compose new functions f(g(x)) | function, compose, functional |
-| [composer-concerto](./c/composer-concerto) | Concerto | blockchain, hyperledger, solutions |
 | [compress_dot_js](./c/compress_dot_js) | A client side JavaScript image compression library | javascript, image, compression, base64 |
 | [compressed-extensions](./c/compressed-extensions) | List of compressed file extensions | extensions, extension, file, json, list, array, compressed, compress, archive, zip, tar, rar, 7z |
 | [compressible](./c/compressible) | Compressible Content-Type / mime checking | compress, gzip, mime, content-type |
@@ -1280,6 +1281,7 @@
 | [cuint](./c/cuint) | Unsigned integers for Javascript | C, unsigned, integer, 32bits, 64bits |
 | [currency-formatter](./c/currency-formatter) | A simple Javascript utility that helps you to disp | format, currency, money |
 | [current-git-branch](./c/current-git-branch) | A tool to check if files are added in a git reposi | is, git, added, HEAD, repo, is-git, exists |
+| [curriable](./c/curriable) | Convert any method to be curriable with placeholde | curry, functional |
 | [custom-error-generator](./c/custom-error-generator) | Custom errors and exceptions in Node.js | error, errors, error factory, custom error |
 | [custom-functions-runtime](./c/custom-functions-runtime) | - | - |
 | [cwd](./c/cwd) | Easily get the CWD (current working directory) of  | current, cwd, dir, directory, file, filepath, path, paths, process, process.cwd, resolve, resolved, working |
@@ -1962,6 +1964,7 @@
 | [fancy-log](./f/fancy-log) | Log things, prefixed with a timestamp. | console.log, log, logger, logging, pretty, timestamp |
 | [fancybox](./f/fancybox) | fancyBox is a tool that offers a nice and elegant  | fancybox, fancy, box, lightbox |
 | [farbtastic](./f/farbtastic) | - | - |
+| [fast-chunk-string](./f/fast-chunk-string) | Chunk string into equal substrings with unicode su | string, split, chunk, unicode, utf, utf8, substring |
 | [fast-csv](./f/fast-csv) | CSV parser and writer | csv, parser, fast, writer, csv writer, CSV |
 | [fast-deep-equal](./f/fast-deep-equal) | Fast deep equal | fast, equal, deep-equal |
 | [fast-diff](./f/fast-diff) | Fast Javascript text diff | diff |
@@ -1977,6 +1980,7 @@
 | [fast-safe-stringify](./f/fast-safe-stringify) | Safely and quickly serialize JavaScript objects | stable, stringify, JSON, JSON.stringify, safe, serialize |
 | [fast-shuffle](./f/fast-shuffle) | A fast implementation of a fisher-yates shuffle th | knuth, fisher-yates, shuffle, deterministic, pure |
 | [fast-stats](./f/fast-stats) | Quickly calculate common statistics on lists of nu | statistics, statistic, gauss, lognormal, normal, mean, median, mode, standard deviation, margin of error, iqr, quartile, inter quartile range |
+| [fast-stringify](./f/fast-stringify) | A blazing fast stringifier that safely handles cir | stringify, fast, serialize, json |
 | [fast64](./f/fast64) | The fastest in-browser base64 library | - |
 | [fastclick](./f/fastclick) | Polyfill to remove click delays on browsers with t | fastclick, mobile, touch, tap, click, delay |
 | [fastify-accepts](./f/fastify-accepts) | Add accept parser to fastify | - |
@@ -2117,6 +2121,7 @@
 | [flight](./f/flight) | Simple flat file database | database, flat, file |
 | [flightplan](./f/flightplan) | Library for streamlining application deployment or | deploy, deployment, commands, devops, exec, shell, bash, ssh, tasks, parallel, sequential, remote, local, cloud, fabric |
 | [flipsnap](./f/flipsnap) | Provides UI of snap and slide | mobile, ui, browser |
+| [float-equal](./f/float-equal) | Check if two floats are almost equal | float, number, epsilon, equal, same, almost, compare, comparison, round, near, tolerance, upperbound |
 | [float-regex](./f/float-regex) | regular expression to match floating point numbers | regex, regexp, regular expression, floating, point |
 | [flot](./f/flot) | - | - |
 | [flowdoc](./f/flowdoc) | - | - |
@@ -2129,6 +2134,7 @@
 | [fluent__dedent](./f/fluent__dedent) | A template literal tag for dedenting Fluent code | dedent, fluent, ftl |
 | [fluent__langneg](./f/fluent__langneg) | Language Negotiation API for Fluent | localization, l10n, internationalization, i18n, locale, language, language-negotiation |
 | [fluent__react](./f/fluent__react) | Fluent bindings for React | localization, l10n, internationalization, i18n, ftl, plural, gender, locale, language, formatting, translate, translation, format, parser, react, reactjs |
+| [fluent__sequence](./f/fluent__sequence) | Manage ordered sequences of FluentBundles | fluent, ftl |
 | [flush-write-stream](./f/flush-write-stream) | A write stream constructor that supports a flush f | - |
 | [flushable](./f/flushable) | A flushable timeout function | - |
 | [flux](./f/flux) | An application architecture based on a unidirectio | flux, react, facebook, dispatcher |
@@ -2161,9 +2167,11 @@
 | [format-number](./f/format-number) | Formats numbers with separators every 3 digits and | - |
 | [format-unicorn](./f/format-unicorn) | Stack Exchange's string format function. | string, format, formatunicorn, stackexchange |
 | [format-util](./f/format-util) | Lightweight util.format() for the browser. | util, format, string |
+| [formatjs__intl-listformat](./f/formatjs__intl-listformat) | Formats JS list in a i18n-safe way | intl, i18n, list, format, formatjs |
 | [formatjs__intl-relativeti](./f/formatjs__intl-relativetimeformat) | Formats JavaScript dates to relative time strings. | intl, i18n, relative, time, moment, format, date |
 | [formatjs__intl-unified-nu](./f/formatjs__intl-unified-numberformat) | Ponyfill for intl unified numberformat proposal | polyfill, i18n, numberformat, unified |
 | [formatjs__intl-utils](./f/formatjs__intl-utils) | Smartly determine best unit for relative time form | intl, i18n, relative, moment, format, date |
+| [formatjs__macro](./f/formatjs__macro) | formatjs-related compiler macros | intl, i18n, internationalization, locale, localization, globalization, react, react-intl, reactjs, format, formatjs, formatting, translate, translation, macro |
 | [formidable](./f/formidable) | A node.js module for parsing form data, especially | - |
 | [formik](./f/formik) | Forms in React, without tears | formik, react, react-dom, form, validation, forms, higher order component, hoc |
 | [formol](./f/formol) | An opiniated react form framework. | - |
@@ -3496,6 +3504,7 @@
 | [jsonp](./j/jsonp) | A sane JSONP implementation. | - |
 | [jsonpack](./j/jsonpack) | A compression algorithm for JSON | compress, json |
 | [jsonpath](./j/jsonpath) | Query JavaScript objects with JSONPath expressions | JSONPath, jsonpath, json-path, object, traversal, json, path, data structures |
+| [jsonpath-plus](./j/jsonpath-plus) | A JS implementation of JSONPath with some addition | json, jsonpath |
 | [jsonpointer](./j/jsonpointer) | Simple JSON Addressing. | - |
 | [jsonquery](./j/jsonquery) | MongoDB query language implemented as a node.js St | json, mongodb, mongo, stream, filter, query, database, levelup, leveldb |
 | [jsonrpc-serializer](./j/jsonrpc-serializer) | A simple library to serialize/deserialize JSON-RPC | json, jsonrpc, json-rpc, jsonrpc2 |
@@ -4170,6 +4179,7 @@
 | [lodash_dot_spread](./l/lodash_dot_spread) | The lodash method _.spread exported as a module. | lodash-modularized, spread |
 | [lodash_dot_startcase](./l/lodash_dot_startcase) | The lodash method _.startCase exported as a module | lodash-modularized, startcase |
 | [lodash_dot_startswith](./l/lodash_dot_startswith) | The lodash method _.startsWith exported as a modul | lodash-modularized, startswith |
+| [lodash_dot_stubfalse](./l/lodash_dot_stubfalse) | The lodash method _.stubFalse exported as a module | lodash-modularized, stubfalse |
 | [lodash_dot_stubtrue](./l/lodash_dot_stubtrue) | The lodash method _.stubTrue exported as a module. | lodash-modularized, stubtrue |
 | [lodash_dot_subtract](./l/lodash_dot_subtract) | The lodash method _.subtract exported as a module. | lodash-modularized, subtract |
 | [lodash_dot_sum](./l/lodash_dot_sum) | The lodash method _.sum exported as a module. | lodash-modularized, sum |
@@ -4551,6 +4561,7 @@
 | [moment-hijri](./m/moment-hijri) | A Hijri calendar (Based on Umm al-Qura calculation | hijri, hijriah, arabic, lunar, Umm al-Qura, date, calendar, conversion, convert |
 | [moment-holiday](./m/moment-holiday) | A Moment.js plugin for handling holidays. | moment, momentjs, holiday, holidays, calculation, united states, us, canada, croatia, denmark, hrvatska, india, easter, finland, germany |
 | [moment-jalaali](./m/moment-jalaali) | Jalaali (Jalali, Persian, Khorshidi, Shamsi) calen | jalaali, jalali, persian, khorshidi, shamsi, date, calendar, conversion, convert |
+| [moment-mini](./m/moment-mini) | Parse, validate, manipulate, and display dates | moment, date, time, parse, format, validate, i18n, l10n, ender |
 | [moment-precise-range-plug](./m/moment-precise-range-plugin) | This is a plugin for the moment.js JavaScript libr | - |
 | [moment-range](./m/moment-range) | Fancy date ranges for Moment.js | - |
 | [moment-round](./m/moment-round) | Date rounding for Moment.js | moment, moment.js, date, round |
@@ -4902,6 +4913,7 @@
 | [nsqjs](./n/nsqjs) | NodeJS client for NSQ | nsq, nsq client, nsq client official, nsqjs, distributed messaging, messaging, task, task management |
 | [nssm](./n/nssm) | Wrapper for nssm.exe to manage windows services | nssm.exe,nssm,windows,service,services,manager,install,remove,start,restart,stop,status,svc,winsvc |
 | [nteract__transform-vdom](./n/nteract__transform-vdom) | VDOM Transform for jupyter outputs | - |
+| [nuid](./n/nuid) | NUID - A highly performant unique identifier gener | unique, identifier, generator |
 | [nuka-carousel](./n/nuka-carousel) | Pure React Carousel | react, carousel, nuka |
 | [nullthrows](./n/nullthrows) | flow typed nullthrows | assert, flow, invariant, nullthrows |
 | [num-sort](./n/num-sort) | Sort an array of numbers | sort, sorter, compare, comparator, number, numbers, order, asc, ascending, desc, descending |
@@ -5650,7 +5662,6 @@
 | [rcloader](./r/rcloader) | For build system plugins that need to fetch relati | find, rcfile, rc, search, defaults, config |
 | [rdf-data-model](./r/rdf-data-model) | A basic implementation of the RDFJS Data Model | rdf, rdfjs, rdf-ext, data-model |
 | [rdf-js](./r/rdf-js) | Mirror of the RDFJS TS typings | RDF, RDFJS |
-| [rdflib](./r/rdflib) | an RDF library for node.js. Suitable for client an | linkeddata, linked data, rdf, rdfa, turtle, semantic, web, read-write web |
 | [re-base](./r/re-base) | A Relay inspired library for building React.js + F | - |
 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization | react, redux, reselect, memoize, cache |
 | [re-resizable](./r/re-resizable) | Resizable component for React. | react, resize, resizable, component |
@@ -6162,6 +6173,7 @@
 | [react-themeable-ts](./r/react-themeable-ts) | Handle classname and style props in React | typescript, react, style, classname |
 | [react-timeago](./r/react-timeago) | A simple Time-Ago component for ReactJs | React, ReactJS, Time, Ago, TimeAgo, ender |
 | [react-timeout](./r/react-timeout) | HOC for React and React Native providing versions  | react, reactjs, native, timer, timeout, hoc |
+| [react-toast-notifications](./r/react-toast-notifications) | A configurable, composable, toast notification sys | react, toast, toasts, notification, notifications |
 | [react-toastify](./r/react-toastify) | React notification made easy | react, notification, toast, react-component, react-toastify, push, alert |
 | [react-toastr](./r/react-toastr) | React.js toastr component | React.js, React, react-component, toastr, alert, toast, message, popup, jQuery |
 | [react-toggle](./r/react-toggle) | An elegant, accessible toggle component for React. | toggle, component, react, react-component |
@@ -6561,7 +6573,6 @@
 | [saslprep](./s/saslprep) | SASLprep: Stringprep Profile for User Names and Pa | sasl, saslprep, stringprep, rfc4013, 4013 |
 | [sass](./s/sass) | A pure JavaScript implementation of Sass. | style, scss, sass, preprocessor, css |
 | [sass-graph](./s/sass-graph) | Parse sass files and extract a graph of imports | sass, graph |
-| [sass-webpack-plugin](./s/sass-webpack-plugin) | Get your stylesheets together | sass, webpack, plugin |
 | [sat](./s/sat) | Library for performing 2D collision detection | collision detection, sat, game |
 | [satnav](./s/satnav) | A micro front-end router | routing, front-end |
 | [sauronjs](./s/sauronjs) | frontend library for advanced interactivity based  | observables, reactive, functional, broadcast, events |
@@ -7092,6 +7103,7 @@
 | [sumo-logger](./s/sumo-logger) | Sumo Logic Javascript SDK for sending logs to a HT | sumo-logger, jslogger, sumologic, logs, javascript |
 | [suncalc](./s/suncalc) | A tiny JavaScript library for calculating sun/moon | sun, astronomy, math, calculation, sunrise, sunset, twilight, moon, illumination |
 | [sunrise-sunset-js](./s/sunrise-sunset-js) | Sunrise and sunset time calculation for given coor | sunrise, sunset, sun, suncalc, day, events |
+| [super-error](./s/super-error) | Easily subclass errors | error, class, subclass, inheritance |
 | [superagent](./s/superagent) | elegant & feature rich browser / node HTTP with a  | agent, ajax, ajax, api, async, await, axios, cancel, client, frisbee, got, http, http, https, ky, promise, promise, promises, request, request, requests, response, rest, retry, super, superagent, timeout, transform, xhr, xmlhttprequest |
 | [superagent-bunyan](./s/superagent-bunyan) | a plugin for superagent that uses bunyan to log th | superagent, bunyan, log |
 | [superagent-no-cache](./s/superagent-no-cache) | Plugin for visionmedia/superagent that adds header | superagent, cache, request, AJAX |
@@ -7346,6 +7358,7 @@
 | [true-case-path](./t/true-case-path) | Given a possibly case-variant version of an existi | - |
 | [truffle-privatekey-provid](./t/truffle-privatekey-provider) | Private Key Web3 provider | ethereum, private key, wallet, provider, truffle provider |
 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension | truncate, trunk8, jquery, text, cut-off, spill-over |
+| [trust__webcrypto](./t/trust__webcrypto) | WebCrypto API for Node.js | WebCrypto |
 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types | - |
 | [tryer](./t/tryer) | Because everyone loves a tryer | repeat, retry, predicate, conditional, invocation, execution, loop, condition, termination, exponential, backoff |
 | [tryghost__content-api](./t/tryghost__content-api) | JavaScript Client Library for the Ghost  | - |

@@ -50,7 +50,7 @@ object swaggerDashSchemaDashOfficialStrings {
   sealed trait double extends js.Object
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file extends ParameterType
   
   @js.native
   sealed trait float extends js.Object

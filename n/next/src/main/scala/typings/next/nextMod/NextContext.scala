@@ -1,5 +1,6 @@
 package typings.next.nextMod
 
+import typings.next.Anon_StatusCode
 import typings.nextDashServer.routerMod.DefaultQuery
 import typings.nodeDashFetch.nodeDashFetchMod.Response
 import typings.std.Error
@@ -18,7 +19,7 @@ trait NextContext[Q /* <: DefaultQuery */, CustomReq] extends js.Object {
   /** String of the actual path (including the query) shows in the browser */
   var asPath: String
   /** Error object if any error is encountered during the rendering */
-  var err: js.UndefOr[Error] = js.undefined
+  var err: js.UndefOr[Error with Anon_StatusCode] = js.undefined
   /** Fetch Response object (client only) - from https://developer.mozilla.org/en-US/docs/Web/API/Response */
   var jsonPageRes: js.UndefOr[Response] = js.undefined
   /** path section of URL */
@@ -43,7 +44,7 @@ object NextContext {
     asPath: String,
     pathname: String,
     query: Q,
-    err: Error = null,
+    err: Error with Anon_StatusCode = null,
     jsonPageRes: Response = null,
     req: NextReq[CustomReq] | NextExportReq[CustomReq] = null,
     res: NextResponse | NextExportResponse = null

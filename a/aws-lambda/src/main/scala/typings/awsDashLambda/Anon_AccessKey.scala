@@ -14,6 +14,7 @@ trait Anon_AccessKey extends js.Object {
   var cognitoAuthenticationType: String | Null
   var cognitoIdentityId: String | Null
   var cognitoIdentityPoolId: String | Null
+  var principalOrgId: String | Null
   var sourceIp: String
   var user: String | Null
   var userAgent: String | Null
@@ -33,6 +34,7 @@ object Anon_AccessKey {
     cognitoAuthenticationType: String = null,
     cognitoIdentityId: String = null,
     cognitoIdentityPoolId: String = null,
+    principalOrgId: String = null,
     user: String = null,
     userAgent: String = null,
     userArn: String = null
@@ -47,6 +49,7 @@ object Anon_AccessKey {
     if (cognitoAuthenticationType != null) __obj.updateDynamic("cognitoAuthenticationType")(cognitoAuthenticationType)
     if (cognitoIdentityId != null) __obj.updateDynamic("cognitoIdentityId")(cognitoIdentityId)
     if (cognitoIdentityPoolId != null) __obj.updateDynamic("cognitoIdentityPoolId")(cognitoIdentityPoolId)
+    if (principalOrgId != null) __obj.updateDynamic("principalOrgId")(principalOrgId)
     if (user != null) __obj.updateDynamic("user")(user)
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
     if (userArn != null) __obj.updateDynamic("userArn")(userArn)

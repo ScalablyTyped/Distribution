@@ -6557,6 +6557,32 @@ trait Chainable[Subject] extends js.Object {
   def dblclick(): Chainable[Subject] = js.native
   def dblclick(options: Partial[ClickOptions]): Chainable[Subject] = js.native
   /**
+    * Double-click a DOM element at specific corner / side.
+    *
+    * @param {String} position - The position where the click should be issued.
+    * The `center` position is the default position.
+    * @see https://on.cypress.io/dblclick
+    * @example
+    *    cy.get('button').dblclick('topRight')
+    */
+  def dblclick(position: String): Chainable[Subject] = js.native
+  def dblclick(position: String, options: Partial[ClickOptions]): Chainable[Subject] = js.native
+  /**
+    * Double-click a DOM element at specific coordinates
+    *
+    * @param {number} x The distance in pixels from the element’s left to issue the click.
+    * @param {number} y The distance in pixels from the element’s top to issue the click.
+    * @see https://on.cypress.io/dblclick
+    * @example
+    ```
+    // The click below will be issued inside of the element
+    // (15px from the left and 40px from the top).
+    cy.get('button').dblclick(15, 40)
+    ```
+    */
+  def dblclick(x: Double, y: Double): Chainable[Subject] = js.native
+  def dblclick(x: Double, y: Double, options: Partial[ClickOptions]): Chainable[Subject] = js.native
+  /**
     * Set a debugger and log what the previous command yields.
     *
     * @see https://on.cypress.io/debug
@@ -13996,6 +14022,32 @@ trait Chainable[Subject] extends js.Object {
     */
   def rightclick(): Chainable[Subject] = js.native
   def rightclick(options: Partial[ClickOptions]): Chainable[Subject] = js.native
+  /**
+    * Right-click a DOM element at specific corner / side.
+    *
+    * @param {String} position - The position where the click should be issued.
+    * The `center` position is the default position.
+    * @see https://on.cypress.io/click
+    * @example
+    *    cy.get('button').rightclick('topRight')
+    */
+  def rightclick(position: String): Chainable[Subject] = js.native
+  def rightclick(position: String, options: Partial[ClickOptions]): Chainable[Subject] = js.native
+  /**
+    * Right-click a DOM element at specific coordinates
+    *
+    * @param {number} x The distance in pixels from the element’s left to issue the click.
+    * @param {number} y The distance in pixels from the element’s top to issue the click.
+    * @see https://on.cypress.io/rightclick
+    * @example
+    ```
+    // The click below will be issued inside of the element
+    // (15px from the left and 40px from the top).
+    cy.get('button').rightclick(15, 40)
+    ```
+    */
+  def rightclick(x: Double, y: Double): Chainable[Subject] = js.native
+  def rightclick(x: Double, y: Double, options: Partial[ClickOptions]): Chainable[Subject] = js.native
   /**
     * Get the root DOM element.
     * The root element yielded is `<html>` by default.

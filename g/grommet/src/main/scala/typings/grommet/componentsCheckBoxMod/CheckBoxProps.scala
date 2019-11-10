@@ -1,8 +1,6 @@
 package typings.grommet.componentsCheckBoxMod
 
-import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +12,6 @@ trait CheckBoxProps extends js.Object {
   var indeterminate: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[ReactNode] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
   var toggle: js.UndefOr[Boolean] = js.undefined
 }
@@ -28,7 +25,6 @@ object CheckBoxProps {
     indeterminate: js.UndefOr[Boolean] = js.undefined,
     label: ReactNode = null,
     name: String = null,
-    onChange: /* event */ ChangeEvent[Element] => Unit = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
     toggle: js.UndefOr[Boolean] = js.undefined
   ): CheckBoxProps = {
@@ -39,7 +35,6 @@ object CheckBoxProps {
     if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
     __obj.asInstanceOf[CheckBoxProps]

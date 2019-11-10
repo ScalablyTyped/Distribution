@@ -13,10 +13,8 @@ import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PlaceHolderType
-import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element
-import typings.std.HTMLSelectElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,11 +40,11 @@ trait SelectProps extends js.Object {
   var messages: js.UndefOr[Anon_Multiple] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLSelectElement], Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onSearch: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
   var open: js.UndefOr[Boolean] = js.undefined
   var options: js.Array[String | Boolean | Double | Element | js.Object]
   var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
@@ -84,11 +82,11 @@ object SelectProps {
     messages: Anon_Multiple = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onChange: /* event */ ChangeEvent[HTMLSelectElement] => Unit = null,
+    onChange: /* repeated */ js.Any => Unit = null,
     onClose: /* repeated */ js.Any => _ = null,
     onMore: /* repeated */ js.Any => _ = null,
     onOpen: /* repeated */ js.Any => _ = null,
-    onSearch: /* repeated */ js.Any => _ = null,
+    onSearch: /* search */ String => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     placeholder: PlaceHolderType = null,
     plain: js.UndefOr[Boolean] = js.undefined,

@@ -3,6 +3,7 @@ package typings.jose.joseMod.JWK
 import typings.jose.joseMod.keyObjectTypes
 import typings.jose.joseMod.keyOperation
 import typings.jose.joseMod.keyType
+import typings.node.cryptoMod.KeyObject
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Key () extends js.Object {
   var alg: js.UndefOr[String] = js.native
+  var keyObject: KeyObject = js.native
   var key_ops: js.UndefOr[js.Array[keyOperation]] = js.native
   var kid: String = js.native
   var kty: keyType = js.native

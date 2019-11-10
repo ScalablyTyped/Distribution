@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 
 // Database object in connected state;
 @js.native
-trait IConnected[Ext]
+trait IConnected[Ext, C /* <: IClient */]
   extends IBaseProtocol[Ext]
      with ISpexBase {
-  val client: IClient = js.native
+  val client: C = js.native
   def done(): Unit = js.native
 }
 

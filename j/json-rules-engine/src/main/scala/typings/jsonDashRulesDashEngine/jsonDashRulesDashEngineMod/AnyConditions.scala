@@ -1,0 +1,19 @@
+package typings.jsonDashRulesDashEngine.jsonDashRulesDashEngineMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AnyConditions extends TopLevelCondition {
+  var any: js.Array[NestedCondition]
+}
+
+object AnyConditions {
+  @scala.inline
+  def apply(any: js.Array[NestedCondition]): AnyConditions = {
+    val __obj = js.Dynamic.literal(any = any)
+  
+    __obj.asInstanceOf[AnyConditions]
+  }
+}
+

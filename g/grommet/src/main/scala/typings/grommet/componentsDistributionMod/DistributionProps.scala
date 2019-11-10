@@ -3,6 +3,7 @@ package typings.grommet.componentsDistributionMod
 import typings.grommet.Anon_ColorValue
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
+import typings.grommet.utilsMod.BasisType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
@@ -13,6 +14,7 @@ import scala.scalajs.js.annotation._
 trait DistributionProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
+  var basis: js.UndefOr[BasisType] = js.undefined
   var children: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var fill: js.UndefOr[Boolean] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
@@ -27,6 +29,7 @@ object DistributionProps {
     values: js.Array[Anon_ColorValue],
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
+    basis: BasisType = null,
     children: /* repeated */ js.Any => _ = null,
     fill: js.UndefOr[Boolean] = js.undefined,
     gap: GapType = null,
@@ -36,6 +39,7 @@ object DistributionProps {
     val __obj = js.Dynamic.literal(values = values)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
+    if (basis != null) __obj.updateDynamic("basis")(basis.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])

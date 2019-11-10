@@ -1,5 +1,6 @@
 package typings.reactDashIntl
 
+import typings.atFormatjsIntlDashListformat.distCoreMod.IntlListFormatOptions
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormatOptions
 import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
 import typings.react.reactMod.ComponentType
@@ -24,6 +25,9 @@ object reactDashIntlComponents extends reactDashIntlProps {
   FormattedHTMLMessageProps[
     typings.std.Record[java.lang.String, typings.intlDashMessageformat.distFormattersMod.PrimitiveType]
   ]]]
+  @scala.inline
+  def FormattedList: ComponentType[IntlListFormatOptions with Anon_ValueArray] = typings.reactDashIntl.reactDashIntlMod.FormattedList.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.atFormatjsIntlDashListformat.distCoreMod.IntlListFormatOptions with typings.reactDashIntl.Anon_ValueArray]]
   @scala.inline
   def FormattedMessage[V /* <: Record[String, _] */]: ComponentType[FormattedMessageProps[V]] = js.constructorOf[typings.reactDashIntl.reactDashIntlMod.FormattedMessage[V]].asInstanceOf[typings.react.reactMod.ComponentType[FormattedMessageProps[V]]]
   @scala.inline

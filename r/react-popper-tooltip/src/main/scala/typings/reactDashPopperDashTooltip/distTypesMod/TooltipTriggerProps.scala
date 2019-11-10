@@ -70,7 +70,7 @@ trait TooltipTriggerProps extends js.Object {
     * Event that triggers the tooltip
     * @default hover
     */
-  var trigger: TriggerTypes
+  var trigger: Trigger
   /**
     * Whether to use React.createPortal for creating tooltip
     * @default true // for browser environments
@@ -104,14 +104,14 @@ object TooltipTriggerProps {
     placement: Placement,
     portalContainer: HTMLElement,
     tooltip: TooltipArg => ReactNode,
-    trigger: TriggerTypes,
+    trigger: Trigger,
     usePortal: Boolean,
     getTooltipRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
     getTriggerRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
     modifiers: Modifiers = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined
   ): TooltipTriggerProps = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries, defaultTooltipShown = defaultTooltipShown, delayHide = delayHide, delayShow = delayShow, followCursor = followCursor, onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement, portalContainer = portalContainer, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger, usePortal = usePortal)
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), closeOnOutOfBoundaries = closeOnOutOfBoundaries, defaultTooltipShown = defaultTooltipShown, delayHide = delayHide, delayShow = delayShow, followCursor = followCursor, onVisibilityChange = js.Any.fromFunction1(onVisibilityChange), placement = placement, portalContainer = portalContainer, tooltip = js.Any.fromFunction1(tooltip), trigger = trigger.asInstanceOf[js.Any], usePortal = usePortal)
     if (getTooltipRef != null) __obj.updateDynamic("getTooltipRef")(getTooltipRef)
     if (getTriggerRef != null) __obj.updateDynamic("getTriggerRef")(getTriggerRef)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)

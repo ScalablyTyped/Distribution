@@ -4,14 +4,9 @@ import typings.grommet.Anon_Auto
 import typings.grommet.Anon_BottomLeft
 import typings.grommet.grommetStrings.auto
 import typings.grommet.grommetStrings.hidden
-import typings.grommet.grommetStrings.large
-import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.none
 import typings.grommet.grommetStrings.scroll
-import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.visible
-import typings.grommet.grommetStrings.xlarge
-import typings.grommet.grommetStrings.xsmall
+import typings.grommet.utilsMod.ElevationType
 import typings.grommet.utilsMod.KeyboardType
 import typings.react.reactMod.KeyboardEvent
 import typings.std.HTMLElement
@@ -21,7 +16,7 @@ import scala.scalajs.js.annotation._
 
 trait DropProps extends js.Object {
   var align: js.UndefOr[Anon_BottomLeft] = js.undefined
-  var elevation: js.UndefOr[none | xsmall | small | medium | large | xlarge | String] = js.undefined
+  var elevation: js.UndefOr[ElevationType] = js.undefined
   var onClickOutside: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onEsc: js.UndefOr[KeyboardType] = js.undefined
   var overflow: js.UndefOr[auto | hidden | scroll | visible | Anon_Auto | String] = js.undefined
@@ -36,7 +31,7 @@ object DropProps {
   @scala.inline
   def apply(
     align: Anon_BottomLeft = null,
-    elevation: none | xsmall | small | medium | large | xlarge | String = null,
+    elevation: ElevationType = null,
     onClickOutside: /* repeated */ js.Any => _ = null,
     onEsc: /* event */ KeyboardEvent[HTMLElement] => Unit = null,
     overflow: auto | hidden | scroll | visible | Anon_Auto | String = null,

@@ -42,7 +42,7 @@ trait DataTableProps extends js.Object {
   var groupBy: js.UndefOr[String | Anon_ArgsExpand] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var onSearch: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
   var pad: js.UndefOr[
     none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BodyBottom | String
   ] = js.undefined
@@ -68,7 +68,7 @@ object DataTableProps {
     groupBy: String | Anon_ArgsExpand = null,
     margin: MarginType = null,
     onMore: /* repeated */ js.Any => _ = null,
-    onSearch: /* repeated */ js.Any => _ = null,
+    onSearch: /* search */ String => Unit = null,
     pad: none | xxsmall | xsmall | small | medium | large | xlarge | Anon_BodyBottom | String = null,
     primaryKey: String = null,
     replace: js.UndefOr[Boolean] = js.undefined,

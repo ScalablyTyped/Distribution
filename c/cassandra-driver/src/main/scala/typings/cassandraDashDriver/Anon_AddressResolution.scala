@@ -1,11 +1,11 @@
 package typings.cassandraDashDriver
 
-import typings.cassandraDashDriver.cassandraDashDriverMod.policies.addressResolution.AddressTranslator
-import typings.cassandraDashDriver.cassandraDashDriverMod.policies.loadBalancing.LoadBalancingPolicy
-import typings.cassandraDashDriver.cassandraDashDriverMod.policies.reconnection.ReconnectionPolicy
-import typings.cassandraDashDriver.cassandraDashDriverMod.policies.retry.RetryPolicy
-import typings.cassandraDashDriver.cassandraDashDriverMod.policies.speculativeExecution.SpeculativeExecutionPolicy
-import typings.cassandraDashDriver.cassandraDashDriverMod.policies.timestampGeneration.TimestampGenerator
+import typings.cassandraDashDriver.libPoliciesMod.policies.addressResolution.AddressTranslator
+import typings.cassandraDashDriver.libPoliciesMod.policies.loadBalancing.LoadBalancingPolicy
+import typings.cassandraDashDriver.libPoliciesMod.policies.reconnection.ReconnectionPolicy
+import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryPolicy
+import typings.cassandraDashDriver.libPoliciesMod.policies.speculativeExecution.SpeculativeExecutionPolicy
+import typings.cassandraDashDriver.libPoliciesMod.policies.timestampGeneration.TimestampGenerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

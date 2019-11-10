@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fpLastDayOfQuarterWithOptionsMod extends js.Object {
   @js.native
-  object default
-    extends TopLevel[CurriedFn2[js.Object, Date | Double, Date]]
+  object default extends TopLevel[CurriedFn2[Anon_012, Date | Double, Date]]
   
 }
 

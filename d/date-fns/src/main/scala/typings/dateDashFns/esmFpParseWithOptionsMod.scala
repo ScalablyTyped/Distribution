@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object esmFpParseWithOptionsMod extends js.Object {
   @js.native
-  object default
-    extends TopLevel[CurriedFn4[js.Object, Date | Double, String, String, Date]]
+  object default extends TopLevel[
+          CurriedFn4[Anon_01234567FirstWeekContainsDate, Date | Double, String, String, Date]
+        ]
   
 }
 

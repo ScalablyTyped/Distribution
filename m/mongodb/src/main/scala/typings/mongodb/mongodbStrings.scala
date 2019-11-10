@@ -34,6 +34,9 @@ object mongodbStrings {
   sealed trait NotAcceptedFields extends js.Object
   
   @js.native
+  sealed trait ObjectQuerySelector extends js.Object
+  
+  @js.native
   sealed trait PLAIN extends js.Object
   
   @js.native
@@ -196,6 +199,8 @@ object mongodbStrings {
   def `MONGODB-X509`: `MONGODB-X509` = "MONGODB-X509".asInstanceOf[`MONGODB-X509`]
   @scala.inline
   def NotAcceptedFields: NotAcceptedFields = "NotAcceptedFields".asInstanceOf[NotAcceptedFields]
+  @scala.inline
+  def ObjectQuerySelector: ObjectQuerySelector = "ObjectQuerySelector".asInstanceOf[ObjectQuerySelector]
   @scala.inline
   def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
   @scala.inline

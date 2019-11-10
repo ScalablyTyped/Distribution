@@ -9,9 +9,7 @@ import typings.grommet.grommetStrings.`1/4`
 import typings.grommet.grommetStrings.`2/3`
 import typings.grommet.grommetStrings.`2/4`
 import typings.grommet.grommetStrings.`3/4`
-import typings.grommet.grommetStrings.around
 import typings.grommet.grommetStrings.auto
-import typings.grommet.grommetStrings.between
 import typings.grommet.grommetStrings.center
 import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.flex
@@ -29,6 +27,7 @@ import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
+import typings.grommet.utilsMod.JustifyContentType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.PolymorphicType
 import scala.scalajs.js
@@ -51,7 +50,7 @@ trait GridProps extends js.Object {
   var gap: js.UndefOr[GapType | Anon_Column] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var justify: js.UndefOr[start | center | end | stretch] = js.undefined
-  var justifyContent: js.UndefOr[start | center | end | between | around | stretch] = js.undefined
+  var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var rows: js.UndefOr[
     (js.Array[
@@ -77,7 +76,7 @@ object GridProps {
     gap: GapType | Anon_Column = null,
     gridArea: GridAreaType = null,
     justify: start | center | end | stretch = null,
-    justifyContent: start | center | end | between | around | stretch = null,
+    justifyContent: JustifyContentType = null,
     margin: MarginType = null,
     rows: (js.Array[
       xsmall | small | medium | large | xlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | flex | auto | String | js.Array[String]
@@ -96,7 +95,7 @@ object GridProps {
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
+    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])

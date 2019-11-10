@@ -56,6 +56,9 @@ object firebaseStrings {
   sealed trait `array-contains` extends WhereFilterOp
   
   @js.native
+  sealed trait `array-contains-any` extends WhereFilterOp
+  
+  @js.native
   sealed trait asc extends OrderByDirection
   
   @js.native
@@ -126,6 +129,9 @@ object firebaseStrings {
   
   @js.native
   sealed trait generate_lead extends EventNameString
+  
+  @js.native
+  sealed trait in extends WhereFilterOp
   
   @js.native
   sealed trait internal
@@ -291,6 +297,8 @@ object firebaseStrings {
   @scala.inline
   def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
   @scala.inline
+  def `array-contains-any`: `array-contains-any` = "array-contains-any".asInstanceOf[`array-contains-any`]
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
   def begin_checkout: begin_checkout = "begin_checkout".asInstanceOf[begin_checkout]
@@ -330,6 +338,8 @@ object firebaseStrings {
   def failure: failure = "failure".asInstanceOf[failure]
   @scala.inline
   def generate_lead: generate_lead = "generate_lead".asInstanceOf[generate_lead]
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   @scala.inline

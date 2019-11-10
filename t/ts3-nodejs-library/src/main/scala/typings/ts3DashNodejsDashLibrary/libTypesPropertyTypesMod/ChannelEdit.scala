@@ -23,6 +23,7 @@ trait ChannelEdit extends js.Object {
   var channel_name_phonetic: js.UndefOr[String] = js.undefined
   var channel_needed_talk_power: js.UndefOr[Double] = js.undefined
   var channel_order: js.UndefOr[Double] = js.undefined
+  var channel_password: js.UndefOr[String] = js.undefined
   var channel_topic: js.UndefOr[String] = js.undefined
   var cid: js.UndefOr[Double] = js.undefined
 }
@@ -47,6 +48,7 @@ object ChannelEdit {
     channel_name_phonetic: String = null,
     channel_needed_talk_power: Int | Double = null,
     channel_order: Int | Double = null,
+    channel_password: String = null,
     channel_topic: String = null,
     cid: Int | Double = null
   ): ChannelEdit = {
@@ -68,6 +70,7 @@ object ChannelEdit {
     if (channel_name_phonetic != null) __obj.updateDynamic("channel_name_phonetic")(channel_name_phonetic)
     if (channel_needed_talk_power != null) __obj.updateDynamic("channel_needed_talk_power")(channel_needed_talk_power.asInstanceOf[js.Any])
     if (channel_order != null) __obj.updateDynamic("channel_order")(channel_order.asInstanceOf[js.Any])
+    if (channel_password != null) __obj.updateDynamic("channel_password")(channel_password)
     if (channel_topic != null) __obj.updateDynamic("channel_topic")(channel_topic)
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelEdit]

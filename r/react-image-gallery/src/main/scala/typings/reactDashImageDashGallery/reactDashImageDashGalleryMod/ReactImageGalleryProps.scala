@@ -69,7 +69,7 @@ trait ReactImageGalleryProps extends js.Object {
   var showThumbnails: js.UndefOr[Boolean] = js.undefined
   var slideDuration: js.UndefOr[Double] = js.undefined
   var slideInterval: js.UndefOr[Double] = js.undefined
-  var slideOnThumbnailHover: js.UndefOr[Boolean] = js.undefined
+  var slideOnThumbnailOver: js.UndefOr[Boolean] = js.undefined
   var startIndex: js.UndefOr[Double] = js.undefined
   var stopPropagation: js.UndefOr[Boolean] = js.undefined
   var swipeThreshold: js.UndefOr[Double] = js.undefined
@@ -123,7 +123,7 @@ object ReactImageGalleryProps {
     showThumbnails: js.UndefOr[Boolean] = js.undefined,
     slideDuration: Int | Double = null,
     slideInterval: Int | Double = null,
-    slideOnThumbnailHover: js.UndefOr[Boolean] = js.undefined,
+    slideOnThumbnailOver: js.UndefOr[Boolean] = js.undefined,
     startIndex: Int | Double = null,
     stopPropagation: js.UndefOr[Boolean] = js.undefined,
     swipeThreshold: Int | Double = null,
@@ -173,7 +173,7 @@ object ReactImageGalleryProps {
     if (!js.isUndefined(showThumbnails)) __obj.updateDynamic("showThumbnails")(showThumbnails)
     if (slideDuration != null) __obj.updateDynamic("slideDuration")(slideDuration.asInstanceOf[js.Any])
     if (slideInterval != null) __obj.updateDynamic("slideInterval")(slideInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideOnThumbnailHover)) __obj.updateDynamic("slideOnThumbnailHover")(slideOnThumbnailHover)
+    if (!js.isUndefined(slideOnThumbnailOver)) __obj.updateDynamic("slideOnThumbnailOver")(slideOnThumbnailOver)
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation)
     if (swipeThreshold != null) __obj.updateDynamic("swipeThreshold")(swipeThreshold.asInstanceOf[js.Any])

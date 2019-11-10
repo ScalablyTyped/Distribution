@@ -1,7 +1,7 @@
 
 # Scala.js typings for qs
 
-Typings are for version 6.5
+Typings are for version 6.9
 
 ## Library description:
 A querystring parser that supports nesting and arrays, with a depth limit

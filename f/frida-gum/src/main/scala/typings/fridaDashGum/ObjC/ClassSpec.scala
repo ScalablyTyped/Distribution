@@ -1,16 +1,19 @@
 package typings.fridaDashGum.ObjC
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fridaDashGum.AnyFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClassSpec extends js.Object {
+trait ClassSpec[D, T, S] extends js.Object {
   /**
     * Methods to implement.
     */
-  var methods: js.UndefOr[StringDictionary[AnyFunction | MethodSpec]] = js.undefined
+  var methods: js.UndefOr[
+    StringDictionary[
+      (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
+    ]
+  ] = js.undefined
   /**
     * Name of the class.
     *
@@ -30,18 +33,20 @@ trait ClassSpec extends js.Object {
 
 object ClassSpec {
   @scala.inline
-  def apply(
-    methods: StringDictionary[AnyFunction | MethodSpec] = null,
+  def apply[D, T, S](
+    methods: StringDictionary[
+      (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
+    ] = null,
     name: String = null,
     protocols: js.Array[Protocol] = null,
     `super`: Object = null
-  ): ClassSpec = {
+  ): ClassSpec[D, T, S] = {
     val __obj = js.Dynamic.literal()
     if (methods != null) __obj.updateDynamic("methods")(methods)
     if (name != null) __obj.updateDynamic("name")(name)
     if (protocols != null) __obj.updateDynamic("protocols")(protocols)
     if (`super` != null) __obj.updateDynamic("super")(`super`)
-    __obj.asInstanceOf[ClassSpec]
+    __obj.asInstanceOf[ClassSpec[D, T, S]]
   }
 }
 

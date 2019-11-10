@@ -1,6 +1,5 @@
 package typings.inkDashTestingDashLibrary.inkDashTestingDashLibraryMod
 
-import typings.ink.inkMod.InkElement
 import typings.inkDashTestingDashLibrary.Anon_Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,9 @@ trait RenderResponse extends js.Object {
   var frames: js.Array[String]
   var stdin: Anon_Data
   def lastFrame(): String
-  def rerender(tree: InkElement): Unit
+  def rerender(
+    tree: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InkElement */ js.Any
+  ): Unit
   def unmount(): Unit
 }
 
@@ -19,7 +20,7 @@ object RenderResponse {
   def apply(
     frames: js.Array[String],
     lastFrame: () => String,
-    rerender: InkElement => Unit,
+    rerender: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InkElement */ js.Any => Unit,
     stdin: Anon_Data,
     unmount: () => Unit
   ): RenderResponse = {

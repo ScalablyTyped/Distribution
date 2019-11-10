@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.fridaDashGum.ObjC.SimpleMethodSpec
-  - typings.fridaDashGum.ObjC.DetailedMethodSpec
+  - typings.fridaDashGum.ObjC.SimpleMethodSpec[I]
+  - typings.fridaDashGum.ObjC.DetailedMethodSpec[I]
 */
-trait MethodSpec extends js.Object
+trait MethodSpec[I] extends js.Object
 

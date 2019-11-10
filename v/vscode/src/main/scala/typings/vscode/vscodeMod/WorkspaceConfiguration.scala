@@ -41,9 +41,9 @@ trait WorkspaceConfiguration
   		 * a workspace-specific value and a folder-specific value.
   		 *
   		 * The *effective* value (returned by [`get`](#WorkspaceConfiguration.get))
-  		 * is computed like this: `defaultValue` overwritten by `globalValue`,
-  		 * `globalValue` overwritten by `workspaceValue`. `workspaceValue` overwritten by `workspaceFolderValue`.
-  		 * Refer to [Settings Inheritance](https://code.visualstudio.com/docs/getstarted/settings)
+  		 * is computed like this: `defaultValue` overridden by `globalValue`,
+  		 * `globalValue` overridden by `workspaceValue`. `workspaceValue` overwridden by `workspaceFolderValue`.
+  		 * Refer to [Settings](https://code.visualstudio.com/docs/getstarted/settings)
   		 * for more information.
   		 *
   		 * *Note:* The configuration name must denote a leaf in the configuration tree

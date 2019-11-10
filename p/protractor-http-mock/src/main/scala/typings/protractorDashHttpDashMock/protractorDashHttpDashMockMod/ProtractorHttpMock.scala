@@ -1,6 +1,6 @@
 package typings.protractorDashHttpDashMock.protractorDashHttpDashMockMod
 
-import typings.protractorDashHttpDashMock.Anon_ProtractorConfig
+import typings.protractorDashHttpDashMock.Anon_Mocks
 import typings.protractorDashHttpDashMock.protractorDashHttpDashMockMod.requests.AllRequests
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,25 +11,22 @@ trait ProtractorHttpMock extends js.Object {
   /**
     * Module configuration to setup
     */
-  var config: Anon_ProtractorConfig = js.native
-  /**
-    * Instantiate mock modules from files. This must be done before the browser connects.
-    *
-    * @param mocks An array of mock module names relative to the rootDirectory configuration.
-    * @param plugins An array of Plugin objects.
-    * @param skipDefaults Set true to skip loading of default mocks.
-    */
-  def apply(mocks: js.Array[String]): ProtractorHttpMock = js.native
-  def apply(mocks: js.Array[String], plugins: js.Array[Plugin | String]): ProtractorHttpMock = js.native
-  def apply(mocks: js.Array[String], plugins: js.Array[Plugin | String], skipDefaults: Boolean): ProtractorHttpMock = js.native
+  var config: Anon_Mocks = js.native
   /**
     * Instantiate mock module. This must be done before the browser connects.
     *
-    * @param mocks An array of mock modules to load into the application.
-    * @param plugins An array of Plugin objects.
+    * @param mocks An array of either mock modules or module names relative to the rootDirectory configuration to load into the application.
+    * @param plugins An array of either Plugin objects or NPM modules as strings.
     * @param skipDefaults Set true to skip loading of default mocks.
     */
-  def apply[TResponse, TPayload](): ProtractorHttpMock = js.native
+  def apply(): ProtractorHttpMock = js.native
+  def apply(mocks: js.Array[AllRequests | String]): ProtractorHttpMock = js.native
+  def apply(mocks: js.Array[AllRequests | String], plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String]): ProtractorHttpMock = js.native
+  def apply(
+    mocks: js.Array[AllRequests | String],
+    plugins: js.Array[Plugin1[_] | (Plugin2[_, _]) | String],
+    skipDefaults: Boolean
+  ): ProtractorHttpMock = js.native
   /**
     * Add mocks during test execution.
     * Returns a promise that will be resolved with a true boolean
@@ -37,7 +34,7 @@ trait ProtractorHttpMock extends js.Object {
     *
     * @param mocks An array of mock modules to load into the application.
     */
-  def add[T1, T2](mocks: js.Array[AllRequests[T1, T2]]): js.Promise[Boolean] = js.native
+  def add(mocks: js.Array[AllRequests]): js.Promise[Boolean] = js.native
   /**
     * Returns a promise that will be resolved with a true boolean
     * when all matched HTTP requests are cleared.
@@ -50,7 +47,7 @@ trait ProtractorHttpMock extends js.Object {
     *
     * @param mocks An array of mock modules to remove from the application.
     */
-  def remove[T1, T2](mocks: js.Array[AllRequests[T1, T2]]): js.Promise[Boolean] = js.native
+  def remove(mocks: js.Array[AllRequests]): js.Promise[Boolean] = js.native
   /**
     * Returns a promise that will be resolved with an array of
     * all matched HTTP requests.

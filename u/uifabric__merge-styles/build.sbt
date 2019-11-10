@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__merge-styles"
-version := "7.8.0-c0deeb"
+version := "7.8.1-703b21"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

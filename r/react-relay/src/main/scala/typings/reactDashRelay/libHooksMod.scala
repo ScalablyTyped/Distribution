@@ -17,8 +17,10 @@ import typings.reactDashRelay.libRelayDashExperimentalUseBlockingPaginationFragm
 import typings.reactDashRelay.libRelayDashExperimentalUseBlockingPaginationFragmentMod.NonNullableReturnType
 import typings.reactDashRelay.libRelayDashExperimentalUseBlockingPaginationFragmentMod.NullableReturnType
 import typings.reactDashRelay.libRelayDashExperimentalUseBlockingPaginationFragmentMod.ReturnType
-import typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.NonNullableArrayReturnType
-import typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.NullableArrayReturnType
+import typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.ArrayKeyReturnType
+import typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.ArrayKeyType
+import typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.KeyReturnType
+import typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.KeyType
 import typings.relayDashRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment
 import typings.relayDashRuntime.libUtilRelayRuntimeTypesMod.OperationType
@@ -129,17 +131,22 @@ object libHooksMod extends js.Object {
   // prettier-ignore
   $Call[NonNullableReturnType[TKey] with NullableReturnType[TKey]]
   ] = js.native
-  def useFragment[TKey /* <: js.Array[Anon_DataUnknown] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[NonNullableArrayReturnType[TKey]] = js.native
+  def useFragment[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode): (js.Array[
+    typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[ArrayKeyReturnType[TKey]]
+  ]) | Null = js.native
+  def useFragment[TKey /* <: KeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[KeyReturnType[TKey]] = js.native
   @JSName("useFragment")
-  def useFragment_TKey_Anon_Data[TKey /* <: Anon_Data */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[
-    typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.NullableReturnType[TKey]
+  def useFragment_TKey_ArrayKeyType_Array[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): js.Array[
+    typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[ArrayKeyReturnType[TKey]]
   ] = js.native
   @JSName("useFragment")
-  def useFragment_TKey_Anon_DataUnknown[TKey /* <: Anon_DataUnknown */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[
-    typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.NonNullableReturnType[TKey]
-  ] = js.native
+  def useFragment_TKey_ArrayKeyType_Union[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (js.Array[
+    typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[ArrayKeyReturnType[TKey]]
+  ]) | Null = js.native
   @JSName("useFragment")
-  def useFragment_TKey_ArrayAnon_Data[TKey /* <: js.Array[Anon_Data] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[NullableArrayReturnType[TKey]] = js.native
+  def useFragment_TKey_KeyType[TKey /* <: KeyType */](fragmentInput: GraphQLTaggedNode): typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[KeyReturnType[TKey]] | Null = js.native
+  @JSName("useFragment")
+  def useFragment_TKey_KeyType_Union[TKey /* <: KeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactDashRelay.libRelayDashExperimentalUseFragmentMod.$Call[KeyReturnType[TKey]] | Null = js.native
   @JSName("useLazyLoadQuery")
   def useLazyLoadQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,

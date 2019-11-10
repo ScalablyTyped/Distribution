@@ -1,24 +1,26 @@
 package typings.fridaDashGum.ObjC
 
-import typings.fridaDashGum.AnyFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait DetailedMethodSpec extends MethodSpec {
+trait DetailedMethodSpec[I] extends MethodSpec[I] {
   /**
     * Implementation.
     */
-  @JSName("implementation")
-  var implementation_Original: AnyFunction = js.native
+  var implementation: I
   /**
     * Signature.
     */
-  var types: String = js.native
-  /**
-    * Implementation.
-    */
-  def implementation(args: js.Any*): js.Any = js.native
+  var types: String
+}
+
+object DetailedMethodSpec {
+  @scala.inline
+  def apply[I](implementation: I, types: String): DetailedMethodSpec[I] = {
+    val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any], types = types)
+  
+    __obj.asInstanceOf[DetailedMethodSpec[I]]
+  }
 }
 

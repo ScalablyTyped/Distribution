@@ -41,6 +41,9 @@ package object mongodbMod {
   type NotAcceptedFields[TSchema, FieldType] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ key in mongodb.mongodb.KeysOfOtherType<TSchema, FieldType> ]:? never}
     */ typings.mongodb.mongodbStrings.NotAcceptedFields with js.Any
+  type ObjectQuerySelector[T] = QuerySelector[T] | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof T ]:? mongodb.mongodb.QuerySelector<T[key]>}
+    */ typings.mongodb.mongodbStrings.ObjectQuerySelector with T)
   type OnlyFieldsOfType[TSchema, FieldType, AssignableType] = (AcceptedFields[TSchema, FieldType, AssignableType]) with (NotAcceptedFields[TSchema, FieldType]) with DotAndArrayNotation[AssignableType]
   type OptionalId[TSchema] = (Omit[TSchema, _id]) with Anon_IdAny
   type PullAllOperator[TSchema] = typings.mongodb.mongodbStrings.PullAllOperator with TSchema with (NotAcceptedFields[TSchema, js.Array[_]]) with StringDictionary[js.Array[_]]

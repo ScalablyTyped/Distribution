@@ -1,19 +1,19 @@
 package typings.natsDashHemera.natsDashHemeraMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ServerRequest extends js.Object {
-  var error: js.Any
-  var locals: js.Any
-  var payload: js.Any
+  var error: Error
+  var payload: HemeraMessagePayload
 }
 
 object ServerRequest {
   @scala.inline
-  def apply(error: js.Any, locals: js.Any, payload: js.Any): ServerRequest = {
-    val __obj = js.Dynamic.literal(error = error, locals = locals, payload = payload)
+  def apply(error: Error, payload: HemeraMessagePayload): ServerRequest = {
+    val __obj = js.Dynamic.literal(error = error, payload = payload)
   
     __obj.asInstanceOf[ServerRequest]
   }

@@ -14,9 +14,9 @@ trait Anon_Active extends js.Object {
   var control: js.UndefOr[Anon_Border] = js.undefined
   var debounceDelay: js.UndefOr[Double] = js.undefined
   var deviceBreakpoints: js.UndefOr[Anon_Computer] = js.undefined
-  var drop: js.UndefOr[Anon_BackgroundBorder] = js.undefined
+  var drop: js.UndefOr[Anon_BackgroundBorderShadowSize] = js.undefined
   var edgeSize: js.UndefOr[Anon_HairLarge] = js.undefined
-  var elevation: js.UndefOr[Anon_DarkLight] = js.undefined
+  var elevation: js.UndefOr[Anon_DarkLightAnonLargeMediumNone] = js.undefined
   var focus: js.UndefOr[Anon_BorderAnonColorColorType] = js.undefined
   var font: js.UndefOr[Anon_Face] = js.undefined
   var hover: js.UndefOr[Anon_BackgroundColorBackgroundType] = js.undefined
@@ -38,9 +38,9 @@ object Anon_Active {
     control: Anon_Border = null,
     debounceDelay: Int | Double = null,
     deviceBreakpoints: Anon_Computer = null,
-    drop: Anon_BackgroundBorder = null,
+    drop: Anon_BackgroundBorderShadowSize = null,
     edgeSize: Anon_HairLarge = null,
-    elevation: Anon_DarkLight = null,
+    elevation: Anon_DarkLightAnonLargeMediumNone = null,
     focus: Anon_BorderAnonColorColorType = null,
     font: Anon_Face = null,
     hover: Anon_BackgroundColorBackgroundType = null,

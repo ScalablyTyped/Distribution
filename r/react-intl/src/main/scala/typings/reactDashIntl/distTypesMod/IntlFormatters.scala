@@ -3,6 +3,7 @@ package typings.reactDashIntl.distTypesMod
 import typings.intlDashMessageformat.distFormattersMod.FormatXMLElementFn
 import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
 import typings.react.reactMod.ReactElement
+import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactNodeArray
 import typings.std.Intl.DateTimeFormatPart
 import typings.std.Intl.NumberFormatPart
@@ -38,6 +39,8 @@ trait IntlFormatters extends js.Object {
   ): String = js.native
   def formatHTMLMessage(descriptor: MessageDescriptor): String = js.native
   def formatHTMLMessage(descriptor: MessageDescriptor, values: Record[String, PrimitiveType]): String = js.native
+  def formatList(values: js.Array[String | ReactNode]): String | (js.Array[String | ReactNode]) = js.native
+  def formatList(values: js.Array[String | ReactNode], opts: FormatListOptions): String | (js.Array[String | ReactNode]) = js.native
   def formatMessage(descriptor: MessageDescriptor): String | ReactNodeArray = js.native
   def formatMessage(
     descriptor: MessageDescriptor,

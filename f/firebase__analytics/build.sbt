@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__analytics"
-version := "0.2.4-b1e125"
+version := "0.2.5-658775"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

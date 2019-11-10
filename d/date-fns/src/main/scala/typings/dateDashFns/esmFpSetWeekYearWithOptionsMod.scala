@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object esmFpSetWeekYearWithOptionsMod extends js.Object {
   @js.native
-  object default
-    extends TopLevel[CurriedFn3[js.Object, Double, Date | Double, Date]]
+  object default extends TopLevel[CurriedFn3[Anon_01234567, Double, Date | Double, Date]]
   
 }
 

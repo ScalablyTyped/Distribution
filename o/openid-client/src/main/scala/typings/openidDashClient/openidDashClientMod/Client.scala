@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jose.joseMod.JSONWebKeySet
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.httpMod.IncomingMessage
+import typings.openidDashClient.Anon_Body
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -136,6 +137,7 @@ class Client protected ()
   def revoke(token: String, tokenTypeHint: TokenTypeHint): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def revoke(token: String, tokenTypeHint: TokenTypeHint, extras: RevokeExtras): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   def userinfo(accessToken: String): js.Promise[UserinfoResponse] = js.native
+  def userinfo(accessToken: String, options: Anon_Body): js.Promise[UserinfoResponse] = js.native
   /**
     * Fetches the OIDC userinfo response with the provided Access Token. Also handles signed and/or
     * encrypted userinfo responses. When TokenSet is provided as an argument the userinfo sub property
@@ -143,8 +145,10 @@ class Client protected ()
     *
     * @param accessToken Access Token value. When TokenSet instance is provided its access_token property
     * will be used automatically.
+    * @param options Options for the UserInfo request.
     */
   def userinfo(accessToken: TokenSet): js.Promise[UserinfoResponse] = js.native
+  def userinfo(accessToken: TokenSet, options: Anon_Body): js.Promise[UserinfoResponse] = js.native
 }
 
 /* static members */

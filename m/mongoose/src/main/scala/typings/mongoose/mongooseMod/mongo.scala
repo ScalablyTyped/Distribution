@@ -140,6 +140,10 @@ object mongo extends js.Object {
   }
   
   @js.native
+  class ResumeToken ()
+    extends typings.mongodb.mongodbMod.ResumeToken
+  
+  @js.native
   class Server protected ()
     extends typings.mongodb.mongodbMod.Server {
     def this(host: String, port: scala.Double) = this()
@@ -196,6 +200,7 @@ object mongo extends js.Object {
     /* servers */ js.Array[typings.mongodb.mongodbMod.Server], 
     typings.mongodb.mongodbMod.ReplSet
   ] = js.native
+  var ResumeToken: Instantiable0[typings.mongodb.mongodbMod.ResumeToken] = js.native
   var Server: Instantiable2[/* host */ String, /* port */ scala.Double, typings.mongodb.mongodbMod.Server] = js.native
   var Timestamp: TypeofClassTimestamp = js.native
   def connect(uri: String): js.Promise[MongoClient] = js.native

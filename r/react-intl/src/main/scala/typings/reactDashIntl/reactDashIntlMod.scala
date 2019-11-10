@@ -1,5 +1,6 @@
 package typings.reactDashIntl
 
+import typings.atFormatjsIntlDashListformat.distCoreMod.IntlListFormatOptions
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormatOptions
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Context
@@ -17,7 +18,6 @@ import typings.reactDashIntl.distComponentsInjectIntlMod.WrappedComponentProps
 import typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig
 import typings.reactDashIntl.distComponentsRelativeMod.Props
 import typings.reactDashIntl.distComponentsRelativeMod.State
-import typings.reactDashIntl.distDefineDashMessagesMod.Messages
 import typings.reactDashIntl.distTypesMod.CustomFormatConfig
 import typings.reactDashIntl.distTypesMod.FormatNumberOptions
 import typings.reactDashIntl.distTypesMod.IntlCache
@@ -74,6 +74,7 @@ object reactDashIntlMod extends js.Object {
   
   val FormattedDate: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Value] = js.native
   val FormattedDateParts: FunctionComponent[DateTimeFormatOptions with CustomFormatConfig with Anon_Children] = js.native
+  val FormattedList: FunctionComponent[IntlListFormatOptions with Anon_ValueArray] = js.native
   val FormattedNumber: FunctionComponent[UnifiedNumberFormatOptions with CustomFormatConfig with Anon_ValueNumber] = js.native
   val FormattedNumberParts: FC[FormatNumberOptions with Anon_0] = js.native
   val FormattedPlural: (ForwardRefExoticComponent[
@@ -89,7 +90,6 @@ object reactDashIntlMod extends js.Object {
   def createIntl(config: OptionalIntlConfig): IntlShape = js.native
   def createIntl(config: OptionalIntlConfig, cache: IntlCache): IntlShape = js.native
   def createIntlCache(): IntlCache = js.native
-  def defineMessages[Names /* <: String */](messageDescriptors: Messages[Names]): Messages[Names] = js.native
   def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] with Anon_WrappedComponent = js.native
   @JSName("injectIntl")
   def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[P]] with RefAttributes[T]]) with Anon_WrappedComponent = js.native

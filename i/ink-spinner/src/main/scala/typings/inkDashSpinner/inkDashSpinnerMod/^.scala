@@ -1,12 +1,11 @@
 package typings.inkDashSpinner.inkDashSpinnerMod
 
-import typings.ink.inkMod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ink-spinner", JSImport.Namespace)
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Component<SpinnerProps & ChalkProps> * / any */ @JSImport("ink-spinner", JSImport.Namespace)
 @js.native
-class ^ ()
-  extends Component[SpinnerProps with ChalkProps, js.Object, js.Object]
+class ^ () extends js.Object
 

@@ -1,27 +1,29 @@
 package typings.cropperjs
 
+import typings.cropperjs.Cropper.DragMode
+import typings.cropperjs.Cropper.ImageSmoothingQuality
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object cropperjsStrings {
   @js.native
-  sealed trait crop extends js.Object
+  sealed trait crop extends DragMode
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait high extends ImageSmoothingQuality
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait low extends ImageSmoothingQuality
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait medium extends ImageSmoothingQuality
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait move extends DragMode
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none extends DragMode
   
   @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]

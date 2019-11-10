@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-dialog"
-version := "5.6-dt-20190822Z-df4552"
+version := "5.6-dt-20191108Z-c6866f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

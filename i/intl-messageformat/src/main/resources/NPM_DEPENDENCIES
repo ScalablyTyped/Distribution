@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "intl-messageformat" : "7.5.0"
+      "intl-messageformat" : "7.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "intl-messageformat" : "7.5.0"
+      "intl-messageformat" : "7.5.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "webtorrent"
-version := "0.107-dt-20190816Z-eacee9"
+version := "0.107-dt-20190816Z-5b49c8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bittorrent-protocol" % "2.2-dt-20190924Z-b945da",
-  "org.scalablytyped" %%% "magnet-uri" % "5.1-dt-20190212Z-ead139",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
-  "org.scalablytyped" %%% "parse-torrent" % "5.8-dt-20190212Z-657ea2",
-  "org.scalablytyped" %%% "parse-torrent-file" % "4.0-dt-20190212Z-c7195a",
-  "org.scalablytyped" %%% "simple-peer" % "6.1-dt-20190626Z-ebf34e",
+  "org.scalablytyped" %%% "bittorrent-protocol" % "2.2-dt-20190924Z-a5e7de",
+  "org.scalablytyped" %%% "magnet-uri" % "5.1-dt-20190212Z-cccdce",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
+  "org.scalablytyped" %%% "parse-torrent" % "5.8-dt-20190212Z-922913",
+  "org.scalablytyped" %%% "parse-torrent-file" % "4.0-dt-20190212Z-95ec2b",
+  "org.scalablytyped" %%% "simple-peer" % "6.1-dt-20190626Z-41b6dc",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

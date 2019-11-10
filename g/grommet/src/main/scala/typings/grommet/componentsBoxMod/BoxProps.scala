@@ -2,16 +2,9 @@ package typings.grommet.componentsBoxMod
 
 import typings.grommet.Anon_Auto
 import typings.grommet.Anon_Bottom
-import typings.grommet.Anon_Color
 import typings.grommet.Anon_Delay
 import typings.grommet.Anon_Grow
 import typings.grommet.Anon_Large
-import typings.grommet.grommetStrings.`1/2`
-import typings.grommet.grommetStrings.`1/3`
-import typings.grommet.grommetStrings.`1/4`
-import typings.grommet.grommetStrings.`2/3`
-import typings.grommet.grommetStrings.`2/4`
-import typings.grommet.grommetStrings.`3/4`
 import typings.grommet.grommetStrings.`column-reverse`
 import typings.grommet.grommetStrings.`row-responsive`
 import typings.grommet.grommetStrings.`row-reverse`
@@ -31,7 +24,6 @@ import typings.grommet.grommetStrings.hidden
 import typings.grommet.grommetStrings.jiggle
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
-import typings.grommet.grommetStrings.none
 import typings.grommet.grommetStrings.pulse
 import typings.grommet.grommetStrings.reverse
 import typings.grommet.grommetStrings.row
@@ -55,6 +47,9 @@ import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BackgroundType
+import typings.grommet.utilsMod.BasisType
+import typings.grommet.utilsMod.BorderType
+import typings.grommet.utilsMod.ElevationType
 import typings.grommet.utilsMod.FillType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
@@ -77,12 +72,10 @@ trait BoxProps extends js.Object {
   ] = js.undefined
   var as: js.UndefOr[PolymorphicType] = js.undefined
   var background: js.UndefOr[BackgroundType] = js.undefined
-  var basis: js.UndefOr[
-    xxsmall | xsmall | small | medium | large | xlarge | xxlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | auto | String
-  ] = js.undefined
-  var border: js.UndefOr[Boolean | SideType | Anon_Color | js.Array[Anon_Color]] = js.undefined
+  var basis: js.UndefOr[BasisType] = js.undefined
+  var border: js.UndefOr[BorderType] = js.undefined
   var direction: js.UndefOr[row | column | `row-responsive` | `row-reverse` | `column-reverse`] = js.undefined
-  var elevation: js.UndefOr[none | xsmall | small | medium | large | xlarge | String] = js.undefined
+  var elevation: js.UndefOr[ElevationType] = js.undefined
   var fill: js.UndefOr[FillType] = js.undefined
   var flex: js.UndefOr[grow | shrink | Boolean | Anon_Grow] = js.undefined
   var gap: js.UndefOr[GapType] = js.undefined
@@ -115,10 +108,10 @@ object BoxProps {
     ]) = null,
     as: PolymorphicType = null,
     background: BackgroundType = null,
-    basis: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | full | `1/2` | `1/3` | `2/3` | `1/4` | `2/4` | `3/4` | auto | String = null,
-    border: Boolean | SideType | Anon_Color | js.Array[Anon_Color] = null,
+    basis: BasisType = null,
+    border: BorderType = null,
     direction: row | column | `row-responsive` | `row-reverse` | `column-reverse` = null,
-    elevation: none | xsmall | small | medium | large | xlarge | String = null,
+    elevation: ElevationType = null,
     fill: FillType = null,
     flex: grow | shrink | Boolean | Anon_Grow = null,
     gap: GapType = null,

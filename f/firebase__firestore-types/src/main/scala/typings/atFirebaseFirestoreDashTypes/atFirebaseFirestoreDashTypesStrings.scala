@@ -38,6 +38,9 @@ object atFirebaseFirestoreDashTypesStrings {
   sealed trait `array-contains` extends WhereFilterOp
   
   @js.native
+  sealed trait `array-contains-any` extends WhereFilterOp
+  
+  @js.native
   sealed trait asc extends OrderByDirection
   
   @js.native
@@ -69,6 +72,9 @@ object atFirebaseFirestoreDashTypesStrings {
   
   @js.native
   sealed trait `failed-precondition` extends FirestoreErrorCode
+  
+  @js.native
+  sealed trait in extends WhereFilterOp
   
   @js.native
   sealed trait internal extends FirestoreErrorCode
@@ -137,6 +143,8 @@ object atFirebaseFirestoreDashTypesStrings {
   @scala.inline
   def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
   @scala.inline
+  def `array-contains-any`: `array-contains-any` = "array-contains-any".asInstanceOf[`array-contains-any`]
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
@@ -158,6 +166,8 @@ object atFirebaseFirestoreDashTypesStrings {
   def estimate: estimate = "estimate".asInstanceOf[estimate]
   @scala.inline
   def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   @scala.inline

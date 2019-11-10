@@ -19,6 +19,7 @@ trait Anon_Args extends js.Object {
   def getDateTimeFormat(locales: String, options: DateTimeFormatOptions): js.Any = js.native
   def getDateTimeFormat(locales: js.Array[String]): js.Any = js.native
   def getDateTimeFormat(locales: js.Array[String], options: DateTimeFormatOptions): js.Any = js.native
+  def getListFormat(args: js.Any*): js.Any = js.native
   def getMessageFormat(message: String | js.Array[MessageFormatElement]): js.Any = js.native
   def getMessageFormat(message: String | js.Array[MessageFormatElement], locales: String | js.Array[String]): js.Any = js.native
   def getMessageFormat(

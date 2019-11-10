@@ -5,31 +5,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Locale extends js.Object {
-  var date: js.Function
-  var dateTime: js.Function
-  var formatDistance: js.Function
   var formatLong: js.Object
-  var formatRelative: js.Function
-  var localize: Anon_Day
-  var `match`: Anon_Day
+  var localize: Anon_Args
+  var `match`: Anon_Args
   var options: js.UndefOr[Anon_0] = js.undefined
-  var time: js.Function
+  def date(args: js.Any*): js.Any
+  def dateTime(args: js.Any*): js.Any
+  def formatDistance(args: js.Any*): js.Any
+  def formatRelative(args: js.Any*): js.Any
+  def time(args: js.Any*): js.Any
 }
 
 object Locale {
   @scala.inline
   def apply(
-    date: js.Function,
-    dateTime: js.Function,
-    formatDistance: js.Function,
+    date: /* repeated */ js.Any => js.Any,
+    dateTime: /* repeated */ js.Any => js.Any,
+    formatDistance: /* repeated */ js.Any => js.Any,
     formatLong: js.Object,
-    formatRelative: js.Function,
-    localize: Anon_Day,
-    `match`: Anon_Day,
-    time: js.Function,
+    formatRelative: /* repeated */ js.Any => js.Any,
+    localize: Anon_Args,
+    `match`: Anon_Args,
+    time: /* repeated */ js.Any => js.Any,
     options: Anon_0 = null
   ): Locale = {
-    val __obj = js.Dynamic.literal(date = date, dateTime = dateTime, formatDistance = formatDistance, formatLong = formatLong, formatRelative = formatRelative, localize = localize, time = time)
+    val __obj = js.Dynamic.literal(date = js.Any.fromFunction1(date), dateTime = js.Any.fromFunction1(dateTime), formatDistance = js.Any.fromFunction1(formatDistance), formatLong = formatLong, formatRelative = js.Any.fromFunction1(formatRelative), localize = localize, time = js.Any.fromFunction1(time))
     __obj.updateDynamic("match")(`match`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Locale]

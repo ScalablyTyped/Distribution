@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__router"
-version := "5.2.5-421f9e"
+version := "5.2.6-acf5bc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

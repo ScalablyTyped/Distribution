@@ -10,6 +10,7 @@ import typings.ts3DashNodejsDashLibrary.libNodeChannelMod.TeamSpeakChannel
 import typings.ts3DashNodejsDashLibrary.libNodeClientMod.TeamSpeakClient
 import typings.ts3DashNodejsDashLibrary.libNodeServerGroupMod.TeamSpeakServerGroup
 import typings.ts3DashNodejsDashLibrary.libNodeServerMod.TeamSpeakServer
+import typings.ts3DashNodejsDashLibrary.libTransportTeamSpeakQueryMod.TeamSpeakQuery.executeArgs
 import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel
 import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.ReasonIdentifier
 import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.TextMessageTargetMode
@@ -25,8 +26,10 @@ import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.ServerEdit
 import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.TextMessage
 import typings.ts3DashNodejsDashLibrary.libTypesEventsMod.TokenUsed
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.BanAdd
+import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.BanClient
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ChannelEdit
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ClientDBEdit
+import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ClientEdit
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ClientUpdate
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.InstanceEdit
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ServerTempPasswordAdd
@@ -36,6 +39,9 @@ import typings.ts3DashNodejsDashLibrary.libTypesQueryResponseMod.QueryResponse
 import typings.ts3DashNodejsDashLibrary.libTypesQueryResponseMod.QueryResponseTypes
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.BanList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.BindingList
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelClientPermListId
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelClientPermListSid
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelFind
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelGroupClientList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelGroupCopy
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelGroupList
@@ -44,8 +50,15 @@ import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientDBFind
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientDBInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientDBList
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientFind
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientGetDbidFromUid
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientGetIds
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientGetNameFromDbid
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientGetNameFromUid
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientGetUidFromClid
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientList
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientSetServerQueryLogin
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ComplainList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.CustomInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.CustomSearch
@@ -53,6 +66,7 @@ import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.FTGetFileInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.FTGetFileList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.FTInitDownload
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.FTInitUpload
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.FTList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.HostInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.InstanceInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.LogView
@@ -71,14 +85,18 @@ import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerCreate
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerGroupClientList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerGroupCopy
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerGroupList
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerGroupsByClientId
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerIdGetByPort
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerRequestConnectionInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerTempPasswordList
+import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.SnapshotCreate
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.Token
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.Version
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.Whoami
+import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryNumbers.`false`
+import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryNumbers.`true`
 import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.channelcreate
 import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.channeldelete
 import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.channeledit
@@ -157,7 +175,7 @@ class TeamSpeak protected () extends EventEmitter {
     */
   var evtokenused: js.Any = js.native
   /**
-    * Parses the whole Cache by given Objects
+    * parses the whole cache by given objects
     * @param cache the cache object
     * @param list the list to check against the cache
     * @param key the key used to identify the object inside the cache
@@ -173,7 +191,12 @@ class TeamSpeak protected () extends EventEmitter {
     * Adds a new ban rule on the selected virtual server.
     * All parameters are optional but at least one of the following must be set: ip, name, uid or mytsid.
     */
-  def ban(hasIpNameUidMytsidTimeBanreason: BanAdd): js.Promise[typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.BanAdd] = js.native
+  def ban(properties: BanAdd): js.Promise[typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.BanAdd] = js.native
+  /**
+    * Bans the client specified with ID clid from the server.
+    * Please note that this will create two separate ban rules for the targeted clients IP address and his unique identifier.
+    */
+  def banClient(properties: BanClient): js.Promise[typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.BanAdd] = js.native
   /**
     * Removes one or all bans from the server
     * @param banid the banid to remove, if not provided it will remove all bans
@@ -190,6 +213,10 @@ class TeamSpeak protected () extends EventEmitter {
   def banList(start: Double, duration: Double): js.Promise[js.Array[BanList]] = js.native
   /** returns a list of IP addresses used by the server instance on multi-homed machines. */
   def bindingList(): js.Promise[js.Array[BindingList]] = js.native
+  @JSName("channelClientPermList")
+  def channelClientPermList_false(cid: Double, cldbid: Double, permsid: `false`): js.Promise[js.Array[ChannelClientPermListId]] = js.native
+  @JSName("channelClientPermList")
+  def channelClientPermList_true(cid: Double, cldbid: Double, permsid: `true`): js.Promise[js.Array[ChannelClientPermListSid]] = js.native
   /**
     * Creates a new channel using the given properties.
     * Note that this command accepts multiple properties which means that you're able to specifiy all settings of the new channel at once.
@@ -224,6 +251,11 @@ class TeamSpeak protected () extends EventEmitter {
     */
   def channelEdit(cid: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
   def channelEdit(cid: Double, properties: ChannelEdit): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  /**
+    * displays a list of channels matching a given name pattern
+    * @param pattern the channel name pattern to search for
+    */
+  def channelFind(pattern: String): js.Promise[js.Array[ChannelFind]] = js.native
   /**
     * Adds a specified permissions to the channel group. A permission can be specified by permid or permsid.
     * @param cgid the channelgroup id
@@ -421,6 +453,42 @@ class TeamSpeak protected () extends EventEmitter {
     * @param sgid one or more servergroup ids which the client should be removed from
     */
   def clientDelServerGroup(cldbid: Double, sgid: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  /**
+    * edits a specific client
+    * @param clid the client id to modify
+    * @param properties the properties to change
+    */
+  def clientEdit(clid: Double, properties: ClientEdit): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  /**
+    * displays a list of clients matching a given name pattern
+    * @param pattern the pattern to search clients
+    */
+  def clientFind(pattern: String): js.Promise[js.Array[ClientFind]] = js.native
+  /**
+    * displays the database ID matching the unique identifier specified by cluid
+    * @param cluid the unique id to search for
+    */
+  def clientGetDbidFromUid(cluid: String): js.Promise[ClientGetDbidFromUid] = js.native
+  /**
+    * displays all client IDs matching the unique identifier specified by cluid
+    * @param cluid the unique id to search for
+    */
+  def clientGetIds(cluid: String): js.Promise[js.Array[ClientGetIds]] = js.native
+  /**
+    * displays the unique identifier and nickname matching the database ID specified by cldbid
+    * @param cldbid client database it to search from
+    */
+  def clientGetNameFromDbid(cldbid: Double): js.Promise[ClientGetNameFromDbid] = js.native
+  /**
+    * displays the database ID and nickname matching the unique identifier specified by cluid
+    * @param cluid the unique id to search for
+    */
+  def clientGetNameFromUid(cluid: String): js.Promise[ClientGetNameFromUid] = js.native
+  /**
+    * displays the database ID and nickname matching the unique identifier specified by cluid
+    * @param clid the client id to search from
+    */
+  def clientGetUidFromClid(clid: Double): js.Promise[ClientGetUidFromClid] = js.native
   def clientInfo(clid: js.Array[Double]): js.Promise[js.Array[ClientInfo]] = js.native
   /**
     * Returns General Info of the Client, requires the Client to be online
@@ -461,6 +529,12 @@ class TeamSpeak protected () extends EventEmitter {
     */
   def clientPoke(clid: Double, msg: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
   /**
+    * Updates your own ServerQuery login credentials using a specified username.
+    * The password will be auto-generated.
+    * @param name
+    */
+  def clientSetServerQueryLogin(name: String): js.Promise[ClientSetServerQueryLogin] = js.native
+  /**
     * Change your ServerQuery clients settings using given properties.
     * @param properties the properties which should be changed
     */
@@ -491,6 +565,16 @@ class TeamSpeak protected () extends EventEmitter {
     * returns detailed connection information about the selected virtual server including uptime, traffic information, etc.
     */
   def connectionInfo(): js.Promise[ServerRequestConnectionInfo] = js.native
+  /**
+    * displays a snapshot of the selected virtual server containing all settings,
+    * groups and known client identities. The data from a server snapshot can be
+    * used to restore a virtual servers configuration, channels and permissions
+    * using the serversnapshotdeploy command.
+    * only supports version 2 (from server 3.10.0)
+    * @param password the optional password to encrypt the snapshot
+    */
+  def createSnapshot(): js.Promise[SnapshotCreate] = js.native
+  def createSnapshot(password: String): js.Promise[SnapshotCreate] = js.native
   /**
     * Removes a custom property from a client specified by the cldbid.
     * This requires TeamSpeak Server Version 3.2.0 or newer.
@@ -527,6 +611,20 @@ class TeamSpeak protected () extends EventEmitter {
   def deleteChannelGroup(cgid: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
   def deleteChannelGroup(cgid: Double, force: Double): js.Promise[js.Array[QueryResponseTypes]] = js.native
   /**
+    * displays a snapshot of the selected virtual server containing all settings,
+    * groups and known client identities. The data from a server snapshot can be
+    * used to restore a virtual servers configuration, channels and permissions
+    * using the serversnapshotdeploy command.
+    * only supports version 2 (from server 3.10.0)
+    * @param salt if a password has been set provide the salt from the response
+    * @param password the password which has been set while saving
+    * @param keepfiles wether it should keep the file mapping
+    */
+  def deploySnapshot(data: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def deploySnapshot(data: String, salt: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def deploySnapshot(data: String, salt: String, password: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def deploySnapshot(data: String, salt: String, password: String, keepfiles: Boolean): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  /**
     * Returns the file in the channel with the given path
     * @param path the path whith the filename where the file should be uploaded to
     * @param cid channel id to download from
@@ -547,8 +645,8 @@ class TeamSpeak protected () extends EventEmitter {
     * ts3.execute("clientlist", ["-ip"])
     * ts3.execute("use", [9987], { client_nickname: "test" })
     */
-  def execute(cmd: String, args: js.Any*): js.Promise[js.Array[QueryResponseTypes]] = js.native
-  /** Forcefully closes the socket connection */
+  def execute(cmd: String, args: executeArgs*): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  /** forcefully closes the socket connection */
   def forceQuit(): Unit = js.native
   /**
     * Creates new directory in a channels file repository
@@ -593,6 +691,7 @@ class TeamSpeak protected () extends EventEmitter {
     * On success, the server generates a new ftkey which is required to start uploading the file through TeamSpeak 3's file transfer interface.
     */
   def ftInitUpload(transfer: TransferUpload): js.Promise[FTInitUpload] = js.native
+  def ftList(): js.Promise[js.Array[FTList]] = js.native
   /**
     * Renames a file in a channels file repository.
     * If the two parameters tcid and tcpw are specified, the file will be moved into another channels file repository
@@ -880,7 +979,7 @@ class TeamSpeak protected () extends EventEmitter {
   def queryLoginList(pattern: String): js.Promise[js.Array[QueryLoginList]] = js.native
   def queryLoginList(pattern: String, start: Double): js.Promise[js.Array[QueryLoginList]] = js.native
   def queryLoginList(pattern: String, start: Double, duration: Double): js.Promise[js.Array[QueryLoginList]] = js.native
-  /** Closes the ServerQuery connection to the TeamSpeak 3 Server instance. */
+  /** closes the ServerQuery connection to the TeamSpeak server instance. */
   def quit(): js.Promise[js.Array[QueryResponseTypes]] = js.native
   /**
     * Subscribes to an Event
@@ -1013,6 +1112,11 @@ class TeamSpeak protected () extends EventEmitter {
     * @param name new name of the servergroup
     */
   def serverGroupRename(sgid: Double, name: String): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  /**
+    * displays all server groups the client specified with cldbid is currently residing in
+    * @param cldbid the client database id to check
+    */
+  def serverGroupsByClientId(cldbid: Double): js.Promise[js.Array[ServerGroupsByClientId]] = js.native
   /**
     * Displays the database ID of the virtual server running on the UDP port
     * @param virtualserver_port the server port where data should be retrieved

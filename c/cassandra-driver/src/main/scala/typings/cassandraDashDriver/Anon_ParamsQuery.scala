@@ -1,19 +1,20 @@
 package typings.cassandraDashDriver
 
+import typings.cassandraDashDriver.cassandraDashDriverMod.ArrayOrObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ParamsQuery extends js.Object {
-  var params: js.UndefOr[js.Array[_]] = js.undefined
+  var params: js.UndefOr[ArrayOrObject] = js.undefined
   var query: String
 }
 
 object Anon_ParamsQuery {
   @scala.inline
-  def apply(query: String, params: js.Array[_] = null): Anon_ParamsQuery = {
+  def apply(query: String, params: ArrayOrObject = null): Anon_ParamsQuery = {
     val __obj = js.Dynamic.literal(query = query)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ParamsQuery]
   }
 }

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-cropper"
-version := "0.10-dt-20190508Z-a2d342"
+version := "0.10-dt-20191107Z-dc8ff4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cropperjs" % "1.1-dt-20190212Z-bd0f59",
+  "org.scalablytyped" %%% "cropperjs" % "1.5.6-316722",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",

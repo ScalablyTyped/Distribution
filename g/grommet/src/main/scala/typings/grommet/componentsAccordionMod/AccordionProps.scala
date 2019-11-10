@@ -21,7 +21,7 @@ trait AccordionProps extends js.Object {
   var margin: js.UndefOr[MarginType] = js.undefined
   var messages: js.UndefOr[Anon_TabContents] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
-  var onActive: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var onActive: js.UndefOr[js.Function1[/* activeIndexes */ js.Array[Double], Unit]] = js.undefined
 }
 
 object AccordionProps {
@@ -36,7 +36,7 @@ object AccordionProps {
     margin: MarginType = null,
     messages: Anon_TabContents = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    onActive: /* repeated */ js.Any => _ = null
+    onActive: /* activeIndexes */ js.Array[Double] => Unit = null
   ): AccordionProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)

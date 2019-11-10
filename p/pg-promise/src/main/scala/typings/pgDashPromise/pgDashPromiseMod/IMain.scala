@@ -6,6 +6,7 @@ import typings.pgDashMinify.pgDashMinifyMod.IMinifyOptions
 import typings.pgDashPromise.Anon_Options
 import typings.pgDashPromise.Typeoferrors
 import typings.pgDashPromise.Typeofpg
+import typings.pgDashPromise.typescriptPgDashSubsetMod.IClient
 import typings.pgDashPromise.typescriptPgDashSubsetMod.IConnectionParameters
 import typings.spex.spexMod.ISpex
 import scala.scalajs.js
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation._
 // Post-initialization interface;
 // API: http://vitaly-t.github.io/pg-promise/module-pg-promise.html
 @js.native
-trait IMain[Ext] extends js.Object {
+trait IMain[Ext, C /* <: IClient */] extends js.Object {
   val ParameterizedQuery: Instantiable1[
     js.UndefOr[String | typings.pgDashPromise.pgDashPromiseMod.QueryFile | IParameterizedQuery], 
     typings.pgDashPromise.pgDashPromiseMod.ParameterizedQuery
@@ -40,10 +41,10 @@ trait IMain[Ext] extends js.Object {
   val spex: ISpex = js.native
   val txMode: ITXMode = js.native
   val utils: IUtils = js.native
-  def apply[T](cn: String): IDatabase[T] with T = js.native
-  def apply[T](cn: String, dc: js.Any): IDatabase[T] with T = js.native
-  def apply[T](cn: IConnectionParameters): IDatabase[T] with T = js.native
-  def apply[T](cn: IConnectionParameters, dc: js.Any): IDatabase[T] with T = js.native
+  def apply[T, C /* <: IClient */](cn: String): (IDatabase[T, C]) with T = js.native
+  def apply[T, C /* <: IClient */](cn: String, dc: js.Any): (IDatabase[T, C]) with T = js.native
+  def apply[T, C /* <: IClient */](cn: IConnectionParameters[C]): (IDatabase[T, C]) with T = js.native
+  def apply[T, C /* <: IClient */](cn: IConnectionParameters[C], dc: js.Any): (IDatabase[T, C]) with T = js.native
   def end(): Unit = js.native
   def minify(sql: String): String = js.native
   def minify(sql: String, options: IMinifyOptions): String = js.native

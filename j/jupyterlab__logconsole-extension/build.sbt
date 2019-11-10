@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__logconsole-extension"
-version := "1.0.1-9de5b9"
+version := "1.0.2-bb3c34"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

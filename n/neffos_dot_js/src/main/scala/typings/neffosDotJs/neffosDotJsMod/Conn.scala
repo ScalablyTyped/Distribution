@@ -12,6 +12,9 @@ class Conn protected () extends js.Object {
   /* ID is the generated connection ID from the server-side, all connected namespaces(`NSConn` instances)
     that belong to that connection have the same ID. It is available immediately after the `dial`. */
   var ID: String = js.native
+  /* If > 0 then this connection is the result of a reconnection,
+    see `wasReconnected()` too. */
+  var reconnectTries: Double = js.native
   /* The ask method writes a message to the server and blocks until a response or an error received. */
   def ask(msg: Message): js.Promise[Message] = js.native
   /* The close method will force-disconnect from all connected namespaces and force-leave from all joined rooms
@@ -26,6 +29,9 @@ class Conn protected () extends js.Object {
   /* waitServerConnect method blocks until server manually calls the connection's `Connect`
     on the `Server#OnConnected` event. */
   def waitServerConnect(namespace: String): js.Promise[NSConn] = js.native
+  /* The wasReconnected method reports whether the current connection is the result of a reconnection.
+    To get the numbers of total retries see the `reconnectTries` field. */
+  def wasReconnected(): Boolean = js.native
   /* The write method writes a message to the server and reports whether the connection is still available. */
   def write(msg: Message): Boolean = js.native
 }

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContextForceUpdate[OverlayType /* <: OverlayBase */, OptionsType /* <: js.Object */] extends js.Object {
   var context: js.Any = js.native
+  var isUnmounted: Boolean = js.native
   var overlay: js.UndefOr[OverlayType] = js.native
   val props: OptionsType with ReactControllerProps with Anon_Children = js.native
   var refs: StringDictionary[ReactInstance] = js.native

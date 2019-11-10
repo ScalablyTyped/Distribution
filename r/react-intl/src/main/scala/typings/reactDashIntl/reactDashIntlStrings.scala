@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashIntlStrings {
   @js.native
-  sealed trait Messages extends js.Object
-  
-  @js.native
   sealed trait WrappedComponentProps extends js.Object
   
   @js.native
@@ -148,6 +145,9 @@ object reactDashIntlStrings {
   
   @js.native
   sealed trait formatDate extends js.Object
+  
+  @js.native
+  sealed trait formatList extends js.Object
   
   @js.native
   sealed trait formatNumber extends js.Object
@@ -450,8 +450,6 @@ object reactDashIntlStrings {
   sealed trait zero extends js.Object
   
   @scala.inline
-  def Messages: Messages = "Messages".asInstanceOf[Messages]
-  @scala.inline
   def WrappedComponentProps: WrappedComponentProps = "WrappedComponentProps".asInstanceOf[WrappedComponentProps]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
@@ -545,6 +543,8 @@ object reactDashIntlStrings {
   def format: format = "format".asInstanceOf[format]
   @scala.inline
   def formatDate: formatDate = "formatDate".asInstanceOf[formatDate]
+  @scala.inline
+  def formatList: formatList = "formatList".asInstanceOf[formatList]
   @scala.inline
   def formatNumber: formatNumber = "formatNumber".asInstanceOf[formatNumber]
   @scala.inline

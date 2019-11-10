@@ -1,26 +1,28 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod.types
 
-import org.scalablytyped.runtime.TopLevel
-import typings.long.longMod.^
 import typings.node.Buffer
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LocalTime extends js.Object {
-  var hour: Double
-  var minute: Double
-  var nanosecond: Double
-  var second: Double
-  def compare(other: LocalTime): Boolean
-  def equals(other: LocalTime): Boolean
-  def getTotalNanoseconds(): ^
-  def inspect(): String
-  def toBuffer(): Buffer
-  def toJSON(): String
-}
-
 @JSImport("cassandra-driver", "types.LocalTime")
 @js.native
-object LocalTime extends TopLevel[LocalTimeStatic]
+class LocalTime protected ()
+  extends typings.cassandraDashDriver.libTypesMod.types.LocalTime {
+  def this(totalNanoseconds: typings.cassandraDashDriver.libTypesMod.types.Long) = this()
+}
+
+/* static members */
+@JSImport("cassandra-driver", "types.LocalTime")
+@js.native
+object LocalTime extends js.Object {
+  def fromBuffer(value: Buffer): typings.cassandraDashDriver.libTypesMod.types.LocalTime = js.native
+  def fromDate(date: Date, nanoseconds: Double): typings.cassandraDashDriver.libTypesMod.types.LocalTime = js.native
+  def fromMilliseconds(milliseconds: Double): typings.cassandraDashDriver.libTypesMod.types.LocalTime = js.native
+  def fromMilliseconds(milliseconds: Double, nanoseconds: Double): typings.cassandraDashDriver.libTypesMod.types.LocalTime = js.native
+  def fromString(value: String): typings.cassandraDashDriver.libTypesMod.types.LocalTime = js.native
+  def now(): typings.cassandraDashDriver.libTypesMod.types.LocalTime = js.native
+  def now(nanoseconds: Double): typings.cassandraDashDriver.libTypesMod.types.LocalTime = js.native
+}
 

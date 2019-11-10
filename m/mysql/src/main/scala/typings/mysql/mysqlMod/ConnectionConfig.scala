@@ -62,7 +62,7 @@ trait ConnectionConfig extends ConnectionOptions {
   /**
     * A custom query format function
     */
-  var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, Unit]] = js.undefined
+  var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, String]] = js.undefined
   /**
     * The path to a unix domain socket to connect to. When used host and port are ignored
     */
@@ -128,7 +128,7 @@ object ConnectionConfig {
     multipleStatements: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
     port: Int | Double = null,
-    queryFormat: (/* query */ String, /* values */ js.Any) => Unit = null,
+    queryFormat: (/* query */ String, /* values */ js.Any) => String = null,
     socketPath: String = null,
     ssl: String | (SecureContextOptions with Anon_RejectUnauthorized) = null,
     stringifyObjects: js.UndefOr[Boolean] = js.undefined,

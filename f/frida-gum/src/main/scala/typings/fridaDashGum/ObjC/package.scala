@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object ObjC {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.fridaDashGum.NativePointer
 
+  type BlockMethodImplementation = js.ThisFunction1[/* this */ Block, /* repeated */ js.Any, js.Any]
   type ChooseSpecifier = SimpleChooseSpecifier | DetailedChooseSpecifier
   type EnumerateLoadedClassesResult = /**
     * Class names grouped by name of owner module.
@@ -19,12 +19,6 @@ package object ObjC {
   type InstanceData = StringDictionary[js.Any]
   type ObjectMethods = StringDictionary[ObjectMethod]
   type ProtocolPropertyAttributes = StringDictionary[String]
-  /**
-    * Constructor for instantiating a proxy object.
-    *
-    * @param target Target object to proxy to.
-    * @param data Object with arbitrary data.
-    */
-  type ProxyConstructor = js.Function2[/* target */ Object | NativePointer, /* data */ InstanceData, Unit]
   type SimpleChooseSpecifier = Object
+  type UserMethodImplementation[D, T, S] = js.ThisFunction1[/* this */ UserMethodInvocation[D, T, S], /* repeated */ js.Any, js.Any]
 }

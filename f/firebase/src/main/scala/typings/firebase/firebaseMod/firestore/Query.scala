@@ -75,13 +75,24 @@ class Query protected () extends js.Object {
     */
   def isEqual(other: Query): Boolean = js.native
   /**
-    * Creates and returns a new Query where the results are limited to the
-    * specified number of documents.
+    * Creates and returns a new Query that only returns the first matching
+    * documents.
     *
     * @param limit The maximum number of items to return.
     * @return The created Query.
     */
   def limit(limit: Double): Query = js.native
+  /**
+    * Creates and returns a new Query that only returns the last matching
+    * documents.
+    *
+    * You must specify at least one `orderBy` clause for `limitToLast` queries,
+    * otherwise an exception will be thrown during execution.
+    *
+    * @param limit The maximum number of items to return.
+    * @return The created Query.
+    */
+  def limitToLast(limit: Double): Query = js.native
   /**
     * Attaches a listener for QuerySnapshot events. You may either pass
     * individual `onNext` and `onError` callbacks or pass a single observer

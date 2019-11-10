@@ -40,18 +40,6 @@ object pgDashPromiseStrings {
   sealed trait array extends js.Object
   
   @js.native
-  sealed trait drain extends js.Object
-  
-  @js.native
-  sealed trait error extends js.Object
-  
-  @js.native
-  sealed trait notice extends js.Object
-  
-  @js.native
-  sealed trait notification extends js.Object
-  
-  @js.native
   sealed trait `~` extends FormattingFilter
   
   @scala.inline
@@ -76,14 +64,6 @@ object pgDashPromiseStrings {
   def after: after = "after".asInstanceOf[after]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def notice: notice = "notice".asInstanceOf[notice]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
   @scala.inline
   def `~`: `~` = "~".asInstanceOf[`~`]
 }

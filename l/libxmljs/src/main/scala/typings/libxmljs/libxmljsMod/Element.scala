@@ -26,6 +26,7 @@ class Element protected () extends Node {
   def find(xpath: String, namespaces: StringMap): js.Array[Node] = js.native
   def find(xpath: String, ns_uri: String): js.Array[Node] = js.native
   def get(xpath: String): Element | Null = js.native
+  def get(xpath: String, namespaces: StringMap): Element | Null = js.native
   def get(xpath: String, ns_uri: String): Element | Null = js.native
   def name(): String = js.native
   def name(newName: String): this.type = js.native

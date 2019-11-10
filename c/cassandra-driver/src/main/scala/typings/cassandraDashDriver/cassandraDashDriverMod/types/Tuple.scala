@@ -1,19 +1,20 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod.types
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Tuple extends js.Object {
-  var elements: js.Array[_]
-  var length: Double
-  def get(index: Double): js.Any
-  def toJSON(): String
-  def values(): js.Array[_]
-}
-
 @JSImport("cassandra-driver", "types.Tuple")
 @js.native
-object Tuple extends TopLevel[TupleStatic]
+class Tuple protected ()
+  extends typings.cassandraDashDriver.libTypesMod.types.Tuple {
+  def this(args: js.Any*) = this()
+}
+
+/* static members */
+@JSImport("cassandra-driver", "types.Tuple")
+@js.native
+object Tuple extends js.Object {
+  def fromArray(elements: js.Array[_]): typings.cassandraDashDriver.libTypesMod.types.Tuple = js.native
+}
 

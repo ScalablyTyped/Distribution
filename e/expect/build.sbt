@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expect"
-version := "24.9.0-e3a823"
+version := "24.9.0-9f8883"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chalk" % "2.4.2-60c74f",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-797456",
   "org.scalablytyped" %%% "jest-matcher-utils" % "21.0-dt-20190212Z-ff4af6",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-a388e9",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-dc4163",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "yargs" % "13.0-dt-20190925Z-22543c",
   "org.scalablytyped" %%% "yargs-parser" % "13.1-dt-20190905Z-34249b")

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "imap-simple"
-version := "v4.2.0-dt-20190322Z-a7cc09"
+version := "v4.2.0-dt-20190322Z-f60f2a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "imap" % "v0.8.14-dt-20190322Z-418fe7",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "imap" % "v0.8.14-dt-20190322Z-4282aa",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

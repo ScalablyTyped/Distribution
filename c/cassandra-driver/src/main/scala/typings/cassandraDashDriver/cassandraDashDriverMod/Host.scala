@@ -1,6 +1,6 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod
 
-import typings.cassandraDashDriver.cassandraDashDriverMod.types.Uuid
+import typings.cassandraDashDriver.libTypesMod.types.Uuid
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

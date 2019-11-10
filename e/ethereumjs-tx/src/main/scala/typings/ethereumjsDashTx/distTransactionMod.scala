@@ -8,6 +8,7 @@ import typings.ethereumjsDashTx.distTypesMod.TransactionOptions
 import typings.ethereumjsDashTx.distTypesMod.TxData
 import typings.ethereumjsDashTx.ethereumjsDashTxNumbers.`false`
 import typings.ethereumjsDashTx.ethereumjsDashTxNumbers.`true`
+import typings.ethereumjsDashUtil.ethereumjsDashUtilMod.BN
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +39,7 @@ object distTransactionMod extends js.Object {
     /**
       * the minimum amount of gas the tx must have (DataFee + TxFee + Creation Fee)
       */
-    def getBaseFee(): js.Any = js.native
+    def getBaseFee(): BN = js.native
     /**
       * returns chain ID
       */
@@ -46,7 +47,7 @@ object distTransactionMod extends js.Object {
     /**
       * The amount of gas paid for the data in this tx
       */
-    def getDataFee(): js.Any = js.native
+    def getDataFee(): BN = js.native
     /**
       * returns the sender's address
       */
@@ -58,7 +59,7 @@ object distTransactionMod extends js.Object {
     /**
       * the up front amount that an account must have for this transaction to be valid
       */
-    def getUpfrontCost(): js.Any = js.native
+    def getUpfrontCost(): BN = js.native
     /**
       * Computes a sha3-256 hash of the serialized tx
       * @param includeSignature - Whether or not to include the signature

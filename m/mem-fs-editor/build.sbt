@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "mem-fs-editor"
-version := "5.1-dt-20190217Z-5eea65"
+version := "5.1-dt-20190217Z-d5c822"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "ejs" % "2.6-dt-20190223Z-03a0db",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-0b61e0",
-  "org.scalablytyped" %%% "mem-fs" % "1.1-dt-20181203Z-40e129",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-5a6f0e",
+  "org.scalablytyped" %%% "mem-fs" % "1.1-dt-20181203Z-ab363a",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-5242bd",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-48d4fc")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-d4cc87")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

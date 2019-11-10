@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/channel-websocket" : "5.2.5"
+      "@storybook/channel-websocket" : "5.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/channel-websocket" : "5.2.5"
+      "@storybook/channel-websocket" : "5.2.6"
     }
   ],
   "compile-devDependencies" : [

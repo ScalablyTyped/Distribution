@@ -12,6 +12,7 @@ trait ChangeStreamOptions extends js.Object {
   var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   var resumeAfter: js.UndefOr[js.Object] = js.undefined
   var startAfter: js.UndefOr[js.Object] = js.undefined
+  var startAtOperationTime: js.UndefOr[typings.bson.bsonMod.Timestamp] = js.undefined
 }
 
 object ChangeStreamOptions {
@@ -23,7 +24,8 @@ object ChangeStreamOptions {
     maxAwaitTimeMS: Int | scala.Double = null,
     readPreference: ReadPreferenceOrMode = null,
     resumeAfter: js.Object = null,
-    startAfter: js.Object = null
+    startAfter: js.Object = null,
+    startAtOperationTime: typings.bson.bsonMod.Timestamp = null
   ): ChangeStreamOptions = {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
@@ -33,6 +35,7 @@ object ChangeStreamOptions {
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
     if (resumeAfter != null) __obj.updateDynamic("resumeAfter")(resumeAfter)
     if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter)
+    if (startAtOperationTime != null) __obj.updateDynamic("startAtOperationTime")(startAtOperationTime)
     __obj.asInstanceOf[ChangeStreamOptions]
   }
 }

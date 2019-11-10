@@ -4,6 +4,8 @@ import typings.grommet.utilsMod.DeepFreeze
 import typings.grommet.utilsMod.DeepMerge
 import typings.grommet.utilsMod.DeepReadonly
 import typings.grommet.utilsMod.NonUndefinedProps
+import typings.grommet.utilsMod._BasisType
+import typings.grommet.utilsMod._ElevationType
 import typings.grommet.utilsMod._FillType
 import typings.grommet.utilsMod._GapType
 import typings.grommet.utilsMod._MarginType
@@ -54,8 +56,22 @@ object utilsMod extends js.Object {
     - typings.grommet.grommetStrings.start
     - typings.grommet.grommetStrings.center
     - typings.grommet.grommetStrings.end
+    - typings.grommet.grommetStrings.between
+    - typings.grommet.grommetStrings.around
+    - typings.grommet.grommetStrings.stretch
+  */
+  trait JustifyContentType extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.start
+    - typings.grommet.grommetStrings.center
+    - typings.grommet.grommetStrings.end
   */
   trait TextAlignType extends js.Object
+  
+  trait _BasisType extends js.Object
+  
+  trait _ElevationType extends js.Object
   
   trait _FillType extends js.Object
   
@@ -80,11 +96,41 @@ object utilsMod extends js.Object {
   type A11yTitleType = String
   type AnimateType = Boolean
   type BackgroundType = String | Anon_ColorContain
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.xxsmall
+    - typings.grommet.grommetStrings.xsmall
+    - typings.grommet.grommetStrings.small
+    - typings.grommet.grommetStrings.medium
+    - typings.grommet.grommetStrings.large
+    - typings.grommet.grommetStrings.xlarge
+    - typings.grommet.grommetStrings.xxlarge
+    - typings.grommet.grommetStrings.full
+    - typings.grommet.grommetStrings.`1/2`
+    - typings.grommet.grommetStrings.`1/3`
+    - typings.grommet.grommetStrings.`2/3`
+    - typings.grommet.grommetStrings.`1/4`
+    - typings.grommet.grommetStrings.`2/4`
+    - typings.grommet.grommetStrings.`3/4`
+    - typings.grommet.grommetStrings.auto
+    - java.lang.String
+  */
+  type BasisType = _BasisType | String
+  type BorderType = Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SideType */ js.Any) | Anon_ColorSideSizeStyle | js.Array[Anon_ColorSideSizeStyle]
   type ColorType = String | Anon_Dark
   type DeepFreeze = js.Function1[/* obj */ js.Object, DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}
     */ typings.grommet.grommetStrings.DeepReadonly with js.Any
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.none
+    - typings.grommet.grommetStrings.xsmall
+    - typings.grommet.grommetStrings.small
+    - typings.grommet.grommetStrings.medium
+    - typings.grommet.grommetStrings.large
+    - typings.grommet.grommetStrings.xlarge
+    - java.lang.String
+  */
+  type ElevationType = _ElevationType | String
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.horizontal
     - typings.grommet.grommetStrings.vertical

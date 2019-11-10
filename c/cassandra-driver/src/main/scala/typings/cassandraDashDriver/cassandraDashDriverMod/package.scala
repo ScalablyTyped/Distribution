@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cassandraDashDriverMod {
-  import typings.cassandraDashDriver.cassandraDashDriverMod.types.ResultSet
+  import org.scalablytyped.runtime.StringDictionary
   import typings.std.Error
 
-  type Callback = js.Function
-  type ExecutionProfile = ExecutionProfileOptions
-  type ResultCallback = js.Function2[/* err */ Error, /* result */ ResultSet, Unit]
+  type ArrayOrObject = js.Array[js.Any] | StringDictionary[js.Any]
+  type EmptyCallback = js.Function1[/* err */ Error, Unit]
+  type ValueCallback[T] = js.Function2[/* err */ Error, /* val */ T, Unit]
 }

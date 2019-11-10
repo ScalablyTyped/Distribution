@@ -1,28 +1,30 @@
 package typings.fridaDashGum.ObjC
 
-import typings.fridaDashGum.AnyFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait SimpleMethodSpec extends MethodSpec {
+trait SimpleMethodSpec[I] extends MethodSpec[I] {
   /**
     * Argument types.
     */
-  var argTypes: js.Array[String] = js.native
+  var argTypes: js.Array[String]
   /**
     * Implementation.
     */
-  @JSName("implementation")
-  var implementation_Original: AnyFunction = js.native
+  var implementation: I
   /**
     * Return type.
     */
-  var retType: String = js.native
-  /**
-    * Implementation.
-    */
-  def implementation(args: js.Any*): js.Any = js.native
+  var retType: String
+}
+
+object SimpleMethodSpec {
+  @scala.inline
+  def apply[I](argTypes: js.Array[String], implementation: I, retType: String): SimpleMethodSpec[I] = {
+    val __obj = js.Dynamic.literal(argTypes = argTypes, implementation = implementation.asInstanceOf[js.Any], retType = retType)
+  
+    __obj.asInstanceOf[SimpleMethodSpec[I]]
+  }
 }
 

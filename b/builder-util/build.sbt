@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "builder-util"
-version := "21.2.0-d43761"
+version := "21.2.0-3c9c5d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.3.0-83aebd",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.3.0-10e030",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-d67e76",
-  "org.scalablytyped" %%% "fs-extra" % "8.0-dt-20191016Z-763de9",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191105Z-2397f3",
+  "org.scalablytyped" %%% "fs-extra" % "8.0-dt-20191016Z-dd02dd",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "temp-file" % "3.3.4-954d5c")
 publishArtifact in packageDoc := false

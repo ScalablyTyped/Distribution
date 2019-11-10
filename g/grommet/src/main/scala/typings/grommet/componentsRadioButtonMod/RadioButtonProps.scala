@@ -1,8 +1,6 @@
 package typings.grommet.componentsRadioButtonMod
 
-import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ReactNode
-import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +11,6 @@ trait RadioButtonProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[ReactNode] = js.undefined
   var name: String
-  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[Element], Unit]] = js.undefined
 }
 
 object RadioButtonProps {
@@ -23,15 +20,13 @@ object RadioButtonProps {
     checked: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    label: ReactNode = null,
-    onChange: /* event */ ChangeEvent[Element] => Unit = null
+    label: ReactNode = null
   ): RadioButtonProps = {
     val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[RadioButtonProps]
   }
 }

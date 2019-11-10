@@ -33,6 +33,9 @@ object openidDashClientStrings {
   sealed trait access_token extends _TokenTypeHint
   
   @js.native
+  sealed trait body extends js.Object
+  
+  @js.native
   sealed trait client_secret_basic extends ClientAuthMethod
   
   @js.native
@@ -54,6 +57,9 @@ object openidDashClientStrings {
   sealed trait `code token` extends ResponseType
   
   @js.native
+  sealed trait header extends js.Object
+  
+  @js.native
   sealed trait id_token extends ResponseType
   
   @js.native
@@ -63,6 +69,9 @@ object openidDashClientStrings {
   
   @js.native
   sealed trait private_key_jwt extends ClientAuthMethod
+  
+  @js.native
+  sealed trait query extends js.Object
   
   @js.native
   sealed trait refresh_token extends _TokenTypeHint
@@ -90,6 +99,8 @@ object openidDashClientStrings {
   @scala.inline
   def access_token: access_token = "access_token".asInstanceOf[access_token]
   @scala.inline
+  def body: body = "body".asInstanceOf[body]
+  @scala.inline
   def client_secret_basic: client_secret_basic = "client_secret_basic".asInstanceOf[client_secret_basic]
   @scala.inline
   def client_secret_jwt: client_secret_jwt = "client_secret_jwt".asInstanceOf[client_secret_jwt]
@@ -104,11 +115,15 @@ object openidDashClientStrings {
   @scala.inline
   def `code token`: `code token` = "code token".asInstanceOf[`code token`]
   @scala.inline
+  def header: header = "header".asInstanceOf[header]
+  @scala.inline
   def id_token: id_token = "id_token".asInstanceOf[id_token]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def private_key_jwt: private_key_jwt = "private_key_jwt".asInstanceOf[private_key_jwt]
+  @scala.inline
+  def query: query = "query".asInstanceOf[query]
   @scala.inline
   def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   @scala.inline

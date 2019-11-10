@@ -38,7 +38,6 @@ trait ButtonProps extends js.Object {
   var icon: js.UndefOr[Element] = js.undefined
   var label: js.UndefOr[ReactNode] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var plain: js.UndefOr[Boolean] = js.undefined
   var primary: js.UndefOr[Boolean] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
@@ -64,7 +63,6 @@ object ButtonProps {
     icon: Element = null,
     label: ReactNode = null,
     margin: MarginType = null,
-    onClick: /* repeated */ js.Any => _ = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     primary: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
@@ -87,7 +85,6 @@ object ButtonProps {
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)

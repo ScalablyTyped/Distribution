@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /**
   * POST request mock with payload.
   */
-trait PostData[TResponse, TPayload] extends AllRequests[TResponse, TPayload] {
+trait PostData[TResponse, TPayload] extends js.Object {
   var request: Anon_DataMethod[TPayload]
   var response: Anon_Data[TResponse]
 }
