@@ -36,6 +36,7 @@ trait Transfer
   def handleLeftSelect(selectedItem: TransferItem, checked: Boolean): Unit = js.native
   def handleLeftSelectAll(filteredDataSource: js.Array[TransferItem], checkAll: Boolean): Unit = js.native
   def handleListStyle(listStyle: js.Function1[/* style */ ListStyle, CSSProperties], direction: ExpandIconPosition): CSSProperties = js.native
+  def handleListStyle(listStyle: CSSProperties, direction: ExpandIconPosition): CSSProperties = js.native
   def handleRightClear(): Unit = js.native
   def handleRightFilter(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def handleRightScroll(e: SyntheticEvent[HTMLDivElement, Event]): Unit = js.native

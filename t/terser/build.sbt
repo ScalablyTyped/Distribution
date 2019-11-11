@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "terser"
-version := "4.3.10-c88f6f"
+version := "4.4.0-ad91d9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vuex
 
-Typings are for version 3.1.1
+Typings are for version 3.1.2
 
 ## Library description:
 state management for Vue.js

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vuex" : "3.1.1"
+      "vuex" : "3.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "vuex" : "3.1.1"
+      "vuex" : "3.1.2"
     }
   ],
   "compile-devDependencies" : [

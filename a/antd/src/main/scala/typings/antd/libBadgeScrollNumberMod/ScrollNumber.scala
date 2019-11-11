@@ -1,8 +1,8 @@
 package typings.antd.libBadgeScrollNumberMod
 
 import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
+import typings.react.reactMod.CElement
 import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentElement
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
@@ -20,6 +20,6 @@ trait ScrollNumber
   def renderCurrentNumber(prefixCls: String, num: String, i: Double): Element = js.native
   def renderCurrentNumber(prefixCls: String, num: Double, i: Double): Element = js.native
   def renderNumberElement(prefixCls: String): js.UndefOr[String | Double | js.Array[Element] | Null] = js.native
-  def renderScrollNumber(hasGetPrefixCls: ConfigConsumerProps): (ComponentElement[_, Component[_, _, _]]) | ReactElement = js.native
+  def renderScrollNumber(hasGetPrefixCls: ConfigConsumerProps): (CElement[_, Component[_, _, _]]) | ReactElement = js.native
 }
 

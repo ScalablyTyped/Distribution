@@ -19,8 +19,6 @@ object pDashQueueMod extends js.Object {
   trait PQueue[QueueType /* <: Queue[EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] extends ^[active] {
     val _carryoverConcurrencyCount: js.Any = js.native
     var _concurrency: js.Any = js.native
-    val _doesConcurrentAllowAnother: js.Any = js.native
-    val _doesIntervalAllowAnother: js.Any = js.native
     var _initializeIntervalIfNeeded: js.Any = js.native
     val _interval: js.Any = js.native
     val _intervalCap: js.Any = js.native
@@ -47,23 +45,8 @@ object pDashQueueMod extends js.Object {
     var _timeout: js.UndefOr[js.Any] = js.native
     var _timeoutId: js.UndefOr[js.Any] = js.native
     var _tryToStartAnother: js.Any = js.native
-    var concurrency: Double = js.native
-    /**
-      Whether the queue is currently paused.
-      */
-    val isPaused: Boolean = js.native
-    /**
-      Number of pending promises.
-      */
-    val pending: Double = js.native
-    /**
-      Size of the queue.
-      */
-    val size: Double = js.native
-    /**
-      Set the timeout for future operations.
-      */
-    var timeout: js.UndefOr[Double] = js.native
+    /* private */ def _doesConcurrentAllowAnother(): js.Any = js.native
+    /* private */ def _doesIntervalAllowAnother(): js.Any = js.native
     /**
       Adds a sync or async task to the queue. Always returns a promise.
       */
@@ -79,6 +62,12 @@ object pDashQueueMod extends js.Object {
       Clear the queue.
       */
     def clear(): Unit = js.native
+    def concurrency(): Double = js.native
+    def concurrency(newConcurrency: Double): js.Any = js.native
+    /**
+      Whether the queue is currently paused.
+      */
+    def isPaused(): Boolean = js.native
     /**
       Can be called multiple times. Useful if you for example add additional items at a later time.
       @returns A promise that settles when the queue becomes empty.
@@ -94,9 +83,24 @@ object pDashQueueMod extends js.Object {
       */
     def pause(): Unit = js.native
     /**
+      Number of pending promises.
+      */
+    def pending(): Double = js.native
+    /**
+      Size of the queue.
+      */
+    def size(): Double = js.native
+    /**
       Start (or resume) executing enqueued tasks within concurrency limit. No need to call this if queue is not paused (via `options.autoStart = false` or by `.pause()` method.)
       */
     def start(): this.type = js.native
+    def timeout(): js.UndefOr[Double] = js.native
+    /**
+      Set the timeout for future operations.
+      */
+    def timeout(milliseconds: Double): js.Any = js.native
+    @JSName("timeout")
+    def timeout_Any(): js.Any = js.native
   }
   
   @js.native

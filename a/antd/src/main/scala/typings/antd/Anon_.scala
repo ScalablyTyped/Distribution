@@ -21,7 +21,6 @@ trait Anon_ extends js.Object {
   var help: Requireable[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]
   var id: Requireable[String]
   var label: Requireable[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]
-  var labelAlign: Requireable[String]
   var labelCol: Requireable[js.Object]
   var prefixCls: Requireable[String]
   var validateStatus: Requireable[Empty | error | success | warning | validating]
@@ -38,13 +37,12 @@ object Anon_ {
     help: Requireable[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray],
     id: Requireable[String],
     label: Requireable[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray],
-    labelAlign: Requireable[String],
     labelCol: Requireable[js.Object],
     prefixCls: Requireable[String],
     validateStatus: Requireable[Empty | error | success | warning | validating],
     wrapperCol: Requireable[js.Object]
   ): Anon_ = {
-    val __obj = js.Dynamic.literal(children = children, className = className, colon = colon, hasFeedback = hasFeedback, help = help, id = id, label = label, labelAlign = labelAlign, labelCol = labelCol, prefixCls = prefixCls, validateStatus = validateStatus, wrapperCol = wrapperCol)
+    val __obj = js.Dynamic.literal(children = children, className = className, colon = colon, hasFeedback = hasFeedback, help = help, id = id, label = label, labelCol = labelCol, prefixCls = prefixCls, validateStatus = validateStatus, wrapperCol = wrapperCol)
   
     __obj.asInstanceOf[Anon_]
   }

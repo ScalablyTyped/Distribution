@@ -2,8 +2,6 @@ package typings.atOctokitRequestDashError
 
 import typings.atOctokitRequestDashError.atOctokitRequestDashErrorStrings.HttpError
 import typings.atOctokitRequestDashError.distDashTypesTypesMod.RequestErrorOptions
-import typings.atOctokitRequestDashError.distDashTypesTypesMod.RequestOptions
-import typings.atOctokitRequestDashError.distDashTypesTypesMod.ResponseHeaders
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +22,7 @@ object atOctokitRequestDashErrorMod extends js.Object {
     /**
       * error response headers
       */
-    var headers: ResponseHeaders = js.native
+    var headers: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResponseHeaders */ js.Any = js.native
     /* CompleteClass */
     override var message: String = js.native
     /* CompleteClass */
@@ -34,7 +32,7 @@ object atOctokitRequestDashErrorMod extends js.Object {
     /**
       * Request options that lead to the error.
       */
-    var request: RequestOptions = js.native
+    var request: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RequestOptions */ js.Any = js.native
     /**
       * http status code
       */

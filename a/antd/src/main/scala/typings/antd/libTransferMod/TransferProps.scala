@@ -22,6 +22,7 @@ trait TransferProps extends js.Object {
   var filterOption: js.UndefOr[js.Function2[/* inputValue */ String, /* item */ TransferItem, Boolean]] = js.undefined
   var footer: js.UndefOr[js.Function1[/* props */ TransferListProps, ReactNode]] = js.undefined
   var `lazy`: js.UndefOr[js.Object | Boolean] = js.undefined
+  var listStyle: (js.Function1[/* style */ ListStyle, CSSProperties]) | CSSProperties
   var locale: js.UndefOr[js.Object] = js.undefined
   var notFoundContent: js.UndefOr[ReactNode] = js.undefined
   var onChange: js.UndefOr[
@@ -62,14 +63,13 @@ trait TransferProps extends js.Object {
   var style: js.UndefOr[CSSProperties] = js.undefined
   var targetKeys: js.UndefOr[js.Array[String]] = js.undefined
   var titles: js.UndefOr[js.Array[String]] = js.undefined
-  def listStyle(style: ListStyle): CSSProperties
 }
 
 object TransferProps {
   @scala.inline
   def apply(
     dataSource: js.Array[TransferItem],
-    listStyle: ListStyle => CSSProperties,
+    listStyle: (js.Function1[/* style */ ListStyle, CSSProperties]) | CSSProperties,
     body: /* props */ TransferListProps => ReactNode = null,
     children: /* props */ TransferListBodyProps => ReactNode = null,
     className: String = null,
@@ -97,7 +97,7 @@ object TransferProps {
     targetKeys: js.Array[String] = null,
     titles: js.Array[String] = null
   ): TransferProps = {
-    val __obj = js.Dynamic.literal(dataSource = dataSource, listStyle = js.Any.fromFunction1(listStyle))
+    val __obj = js.Dynamic.literal(dataSource = dataSource, listStyle = listStyle.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(js.Any.fromFunction1(body))
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (className != null) __obj.updateDynamic("className")(className)

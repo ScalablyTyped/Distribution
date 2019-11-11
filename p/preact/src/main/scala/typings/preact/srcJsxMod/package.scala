@@ -10,5 +10,6 @@ package object srcJsxMod {
   import typings.std.Partial
   import typings.std.Pick
 
-  type Defaultize[Props, Defaults] = (Partial[Pick[Props, Extract[String, String]]]) with (Pick[Props, Exclude[String, String]])
+  type Defaultize[Props, Defaults] = (Partial[Pick[Props, Extract[String, String]]]) with (// Include the remaining properties from Props
+  Pick[Props, Exclude[String, String]])
 }

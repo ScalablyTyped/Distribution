@@ -6,7 +6,9 @@ import typings.preact.srcMod.Attributes
 import typings.preact.srcMod.ComponentChildren
 import typings.preact.srcMod.ComponentType
 import typings.preact.srcMod.VNode
+import typings.std.EventTarget
 import typings.std.Record
+import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +19,7 @@ object ^ extends js.Object {
   def apply(`type`: String, children: ComponentChildren*): VNode[_] = js.native
   def apply(
     `type`: String,
-    props: HTMLAttributes with SVGAttributes with (Record[String, _]),
+    props: HTMLAttributes[EventTarget] with SVGAttributes[SVGElement] with (Record[String, _]),
     children: ComponentChildren*
   ): VNode[_] = js.native
   def apply[P](`type`: ComponentType[P], children: ComponentChildren*): VNode[_] = js.native

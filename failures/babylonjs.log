@@ -72,6 +72,7 @@
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DomManagement), TsIdentSimple(IsWindowObjectExist))) [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(BABYLON) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(IsWindowObjectExist) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:198 Couldn't resolve typeof DomManagement.IsWindowObjectExist [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(BABYLON) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(IsWindowObjectExist) / TsTypeQuery())] 
 [error] PhaseRes.scala:79 StackOverflowError [id => babylonjs, phase => typescript] java.lang.StackOverflowError
+	at scala.runtime.BoxesRunTime.equals2(BoxesRunTime.java:137)
 	at scala.runtime.BoxesRunTime.equals(BoxesRunTime.java:123)
 	at scala.collection.LinearSeqOptimized.contains(LinearSeqOptimized.scala:105)
 	at scala.collection.LinearSeqOptimized.contains$(LinearSeqOptimized.scala:102)
@@ -137,13 +138,12 @@
 	at com.olvind.tso.ts.TsTreeScope.lookupTypeIncludeScope$(TsTreeScope.scala:61)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupTypeIncludeScope(TsTreeScope.scala:280)
 	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:7)
-	at com.olvind.tso.ts.FollowAliases$.$anonfun$apply$3(FollowAliases.scala:14)
-	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
-	at scala.collection.immutable.List.foreach(List.scala:392)
-	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
-	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
-	at scala.collection.immutable.List.map(List.scala:298)
-	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:14)
+	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
+	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:9)
 	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
 	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
 	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)

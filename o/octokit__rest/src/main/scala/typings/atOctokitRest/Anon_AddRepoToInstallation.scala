@@ -6,13 +6,19 @@ import typings.atOctokitRest.atOctokitRestMod.AppsCheckAccountIsAssociatedWithAn
 import typings.atOctokitRest.atOctokitRestMod.AppsCheckAccountIsAssociatedWithAnyResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsCheckAccountIsAssociatedWithAnyStubbedParams
 import typings.atOctokitRest.atOctokitRestMod.AppsCheckAccountIsAssociatedWithAnyStubbedResponse
+import typings.atOctokitRest.atOctokitRestMod.AppsCheckAuthorizationParams
+import typings.atOctokitRest.atOctokitRestMod.AppsCheckAuthorizationResponse
+import typings.atOctokitRest.atOctokitRestMod.AppsCheckTokenParams
+import typings.atOctokitRest.atOctokitRestMod.AppsCheckTokenResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsCreateContentAttachmentParams
 import typings.atOctokitRest.atOctokitRestMod.AppsCreateContentAttachmentResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsCreateFromManifestParams
 import typings.atOctokitRest.atOctokitRestMod.AppsCreateFromManifestResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsCreateInstallationTokenParams
 import typings.atOctokitRest.atOctokitRestMod.AppsCreateInstallationTokenResponse
+import typings.atOctokitRest.atOctokitRestMod.AppsDeleteAuthorizationParams
 import typings.atOctokitRest.atOctokitRestMod.AppsDeleteInstallationParams
+import typings.atOctokitRest.atOctokitRestMod.AppsDeleteTokenParams
 import typings.atOctokitRest.atOctokitRestMod.AppsFindOrgInstallationParams
 import typings.atOctokitRest.atOctokitRestMod.AppsFindOrgInstallationResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsFindRepoInstallationParams
@@ -51,6 +57,12 @@ import typings.atOctokitRest.atOctokitRestMod.AppsListPlansStubbedResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsListReposParams
 import typings.atOctokitRest.atOctokitRestMod.AppsListReposResponse
 import typings.atOctokitRest.atOctokitRestMod.AppsRemoveRepoFromInstallationParams
+import typings.atOctokitRest.atOctokitRestMod.AppsResetAuthorizationParams
+import typings.atOctokitRest.atOctokitRestMod.AppsResetAuthorizationResponse
+import typings.atOctokitRest.atOctokitRestMod.AppsResetTokenParams
+import typings.atOctokitRest.atOctokitRestMod.AppsResetTokenResponse
+import typings.atOctokitRest.atOctokitRestMod.AppsRevokeAuthorizationForApplicationParams
+import typings.atOctokitRest.atOctokitRestMod.AppsRevokeGrantForApplicationParams
 import typings.atOctokitRest.atOctokitRestMod.EmptyParams
 import typings.atOctokitRest.atOctokitRestMod.RequestOptions
 import typings.atOctokitRest.atOctokitRestMod.Response
@@ -82,6 +94,19 @@ trait Anon_AddRepoToInstallation extends js.Object {
   @JSName("checkAccountIsAssociatedWithAny")
   var checkAccountIsAssociatedWithAny_Original: Anon_EndpointParamsAppsCheckAccountIsAssociatedWithAnyParams = js.native
   /**
+    * **Deprecation Notice:** GitHub will replace and discontinue OAuth endpoints containing `access_token` in the path parameter. We are introducing new endpoints that allow you to securely manage tokens for OAuth Apps by using `access_token` as an input parameter. For more information, see the [blog post](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api).
+    *
+    * OAuth applications can use a special API method for checking OAuth token validity without exceeding the normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
+    * @deprecated octokit.apps.checkAuthorization() is deprecated, see https://developer.github.com/v3/apps/oauth_applications/#check-an-authorization
+    */
+  @JSName("checkAuthorization")
+  var checkAuthorization_Original: Anon_EndpointParamsAppsCheckAuthorizationParams = js.native
+  /**
+    * OAuth applications can use a special API method for checking OAuth token validity without exceeding the normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) to use this endpoint, where the username is the OAuth application `client_id` and the password is its `client_secret`. Invalid tokens will return `404 NOT FOUND`.
+    */
+  @JSName("checkToken")
+  var checkToken_Original: Anon_EndpointParamsAppsCheckTokenParams = js.native
+  /**
     * Creates an attachment under a content reference URL in the body or comment of an issue or pull request. Use the `id` of the content reference from the [`content_reference` event](https://developer.github.com/v3/activity/events/types/#contentreferenceevent) to create an attachment.
     *
     * The app must create a content attachment within six hours of the content reference URL being posted. See "[Using content attachments](https://developer.github.com/apps/using-content-attachments/)" for details about content attachments.
@@ -109,12 +134,24 @@ trait Anon_AddRepoToInstallation extends js.Object {
   @JSName("createInstallationToken")
   var createInstallationToken_Original: Anon_EndpointParamsAppsCreateInstallationTokenParams = js.native
   /**
+    * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. You must also provide a valid OAuth `access_token` as an input parameter and the grant for the token's owner will be deleted.
+    *
+    * Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
+    */
+  @JSName("deleteAuthorization")
+  var deleteAuthorization_Original: Anon_EndpointParamsAnyResponseAppsDeleteAuthorizationParams = js.native
+  /**
     * Uninstalls a GitHub App on a user, organization, or business account.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("deleteInstallation")
   var deleteInstallation_Original: Anon_EndpointParamsAnyResponseAppsDeleteInstallationParams = js.native
+  /**
+    * OAuth application owners can revoke a single token for an OAuth application. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password.
+    */
+  @JSName("deleteToken")
+  var deleteToken_Original: Anon_EndpointParamsAnyResponseAppsDeleteTokenParams = js.native
   /**
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
@@ -257,6 +294,37 @@ trait Anon_AddRepoToInstallation extends js.Object {
   @JSName("removeRepoFromInstallation")
   var removeRepoFromInstallation_Original: Anon_EndpointParamsAnyResponseAppsRemoveRepoFromInstallationParams = js.native
   /**
+    * **Deprecation Notice:** GitHub will replace and discontinue OAuth endpoints containing `access_token` in the path parameter. We are introducing new endpoints that allow you to securely manage tokens for OAuth Apps by using `access_token` as an input parameter. For more information, see the [blog post](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api).
+    *
+    * OAuth applications can use this API method to reset a valid OAuth token without end-user involvement. Applications must save the "token" property in the response because changes take effect immediately. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
+    * @deprecated octokit.apps.resetAuthorization() is deprecated, see https://developer.github.com/v3/apps/oauth_applications/#reset-an-authorization
+    */
+  @JSName("resetAuthorization")
+  var resetAuthorization_Original: Anon_EndpointParamsAppsResetAuthorizationParams = js.native
+  /**
+    * OAuth applications can use this API method to reset a valid OAuth token without end-user involvement. Applications must save the "token" property in the response because changes take effect immediately. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
+    */
+  @JSName("resetToken")
+  var resetToken_Original: Anon_EndpointParamsAppsResetTokenParams = js.native
+  /**
+    * **Deprecation Notice:** GitHub will replace and discontinue OAuth endpoints containing `access_token` in the path parameter. We are introducing new endpoints that allow you to securely manage tokens for OAuth Apps by using `access_token` as an input parameter. For more information, see the [blog post](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api).
+    *
+    * OAuth application owners can revoke a single token for an OAuth application. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password.
+    * @deprecated octokit.apps.revokeAuthorizationForApplication() is deprecated, see https://developer.github.com/v3/apps/oauth_applications/#revoke-an-authorization-for-an-application
+    */
+  @JSName("revokeAuthorizationForApplication")
+  var revokeAuthorizationForApplication_Original: Anon_EndpointParamsAnyResponseAppsRevokeAuthorizationForApplicationParams = js.native
+  /**
+    * **Deprecation Notice:** GitHub will replace and discontinue OAuth endpoints containing `access_token` in the path parameter. We are introducing new endpoints that allow you to securely manage tokens for OAuth Apps by using `access_token` as an input parameter. For more information, see the [blog post](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api).
+    *
+    * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. You must also provide a valid token as `:access_token` and the grant for the token's owner will be deleted.
+    *
+    * Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the Applications settings page under "Authorized OAuth Apps" on GitHub](https://github.com/settings/applications#authorized).
+    * @deprecated octokit.apps.revokeGrantForApplication() is deprecated, see https://developer.github.com/v3/apps/oauth_applications/#revoke-a-grant-for-an-application
+    */
+  @JSName("revokeGrantForApplication")
+  var revokeGrantForApplication_Original: Anon_EndpointParamsAnyResponseAppsRevokeGrantForApplicationParams = js.native
+  /**
     * Add a single repository to an installation. The authenticated user must have admin access to the repository.
     *
     * You must use a personal access token (which you can create via the [command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or the [OAuth Authorizations API](https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization)) or [Basic Authentication](https://developer.github.com/v3/auth/#basic-authentication) to access this endpoint.
@@ -277,6 +345,19 @@ trait Anon_AddRepoToInstallation extends js.Object {
     */
   def checkAccountIsAssociatedWithAnyStubbed(): js.Promise[Response[AppsCheckAccountIsAssociatedWithAnyStubbedResponse]] = js.native
   def checkAccountIsAssociatedWithAnyStubbed(params: RequestOptions with AppsCheckAccountIsAssociatedWithAnyStubbedParams): js.Promise[Response[AppsCheckAccountIsAssociatedWithAnyStubbedResponse]] = js.native
+  /**
+    * **Deprecation Notice:** GitHub will replace and discontinue OAuth endpoints containing `access_token` in the path parameter. We are introducing new endpoints that allow you to securely manage tokens for OAuth Apps by using `access_token` as an input parameter. For more information, see the [blog post](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api).
+    *
+    * OAuth applications can use a special API method for checking OAuth token validity without exceeding the normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
+    * @deprecated octokit.apps.checkAuthorization() is deprecated, see https://developer.github.com/v3/apps/oauth_applications/#check-an-authorization
+    */
+  def checkAuthorization(): js.Promise[Response[AppsCheckAuthorizationResponse]] = js.native
+  def checkAuthorization(params: RequestOptions with AppsCheckAuthorizationParams): js.Promise[Response[AppsCheckAuthorizationResponse]] = js.native
+  /**
+    * OAuth applications can use a special API method for checking OAuth token validity without exceeding the normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) to use this endpoint, where the username is the OAuth application `client_id` and the password is its `client_secret`. Invalid tokens will return `404 NOT FOUND`.
+    */
+  def checkToken(): js.Promise[Response[AppsCheckTokenResponse]] = js.native
+  def checkToken(params: RequestOptions with AppsCheckTokenParams): js.Promise[Response[AppsCheckTokenResponse]] = js.native
   /**
     * Creates an attachment under a content reference URL in the body or comment of an issue or pull request. Use the `id` of the content reference from the [`content_reference` event](https://developer.github.com/v3/activity/events/types/#contentreferenceevent) to create an attachment.
     *
@@ -305,12 +386,24 @@ trait Anon_AddRepoToInstallation extends js.Object {
   def createInstallationToken(): js.Promise[Response[AppsCreateInstallationTokenResponse]] = js.native
   def createInstallationToken(params: RequestOptions with AppsCreateInstallationTokenParams): js.Promise[Response[AppsCreateInstallationTokenResponse]] = js.native
   /**
+    * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. You must also provide a valid OAuth `access_token` as an input parameter and the grant for the token's owner will be deleted.
+    *
+    * Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
+    */
+  def deleteAuthorization(): js.Promise[AnyResponse] = js.native
+  def deleteAuthorization(params: RequestOptions with AppsDeleteAuthorizationParams): js.Promise[AnyResponse] = js.native
+  /**
     * Uninstalls a GitHub App on a user, organization, or business account.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   def deleteInstallation(): js.Promise[AnyResponse] = js.native
   def deleteInstallation(params: RequestOptions with AppsDeleteInstallationParams): js.Promise[AnyResponse] = js.native
+  /**
+    * OAuth application owners can revoke a single token for an OAuth application. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password.
+    */
+  def deleteToken(): js.Promise[AnyResponse] = js.native
+  def deleteToken(params: RequestOptions with AppsDeleteTokenParams): js.Promise[AnyResponse] = js.native
   /**
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
@@ -452,5 +545,36 @@ trait Anon_AddRepoToInstallation extends js.Object {
     */
   def removeRepoFromInstallation(): js.Promise[AnyResponse] = js.native
   def removeRepoFromInstallation(params: RequestOptions with AppsRemoveRepoFromInstallationParams): js.Promise[AnyResponse] = js.native
+  /**
+    * **Deprecation Notice:** GitHub will replace and discontinue OAuth endpoints containing `access_token` in the path parameter. We are introducing new endpoints that allow you to securely manage tokens for OAuth Apps by using `access_token` as an input parameter. For more information, see the [blog post](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api).
+    *
+    * OAuth applications can use this API method to reset a valid OAuth token without end-user involvement. Applications must save the "token" property in the response because changes take effect immediately. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
+    * @deprecated octokit.apps.resetAuthorization() is deprecated, see https://developer.github.com/v3/apps/oauth_applications/#reset-an-authorization
+    */
+  def resetAuthorization(): js.Promise[Response[AppsResetAuthorizationResponse]] = js.native
+  def resetAuthorization(params: RequestOptions with AppsResetAuthorizationParams): js.Promise[Response[AppsResetAuthorizationResponse]] = js.native
+  /**
+    * OAuth applications can use this API method to reset a valid OAuth token without end-user involvement. Applications must save the "token" property in the response because changes take effect immediately. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
+    */
+  def resetToken(): js.Promise[Response[AppsResetTokenResponse]] = js.native
+  def resetToken(params: RequestOptions with AppsResetTokenParams): js.Promise[Response[AppsResetTokenResponse]] = js.native
+  /**
+    * **Deprecation Notice:** GitHub will replace and discontinue OAuth endpoints containing `access_token` in the path parameter. We are introducing new endpoints that allow you to securely manage tokens for OAuth Apps by using `access_token` as an input parameter. For more information, see the [blog post](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api).
+    *
+    * OAuth application owners can revoke a single token for an OAuth application. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password.
+    * @deprecated octokit.apps.revokeAuthorizationForApplication() is deprecated, see https://developer.github.com/v3/apps/oauth_applications/#revoke-an-authorization-for-an-application
+    */
+  def revokeAuthorizationForApplication(): js.Promise[AnyResponse] = js.native
+  def revokeAuthorizationForApplication(params: RequestOptions with AppsRevokeAuthorizationForApplicationParams): js.Promise[AnyResponse] = js.native
+  /**
+    * **Deprecation Notice:** GitHub will replace and discontinue OAuth endpoints containing `access_token` in the path parameter. We are introducing new endpoints that allow you to securely manage tokens for OAuth Apps by using `access_token` as an input parameter. For more information, see the [blog post](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api).
+    *
+    * OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. You must also provide a valid token as `:access_token` and the grant for the token's owner will be deleted.
+    *
+    * Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the Applications settings page under "Authorized OAuth Apps" on GitHub](https://github.com/settings/applications#authorized).
+    * @deprecated octokit.apps.revokeGrantForApplication() is deprecated, see https://developer.github.com/v3/apps/oauth_applications/#revoke-a-grant-for-an-application
+    */
+  def revokeGrantForApplication(): js.Promise[AnyResponse] = js.native
+  def revokeGrantForApplication(params: RequestOptions with AppsRevokeGrantForApplicationParams): js.Promise[AnyResponse] = js.native
 }
 

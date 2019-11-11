@@ -30,6 +30,9 @@ object preactStrings {
   sealed trait central extends js.Object
   
   @js.native
+  sealed trait currentTarget extends js.Object
+  
+  @js.native
   sealed trait evenodd extends js.Object
   
   @js.native
@@ -114,6 +117,8 @@ object preactStrings {
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
   def central: central = "central".asInstanceOf[central]
+  @scala.inline
+  def currentTarget: currentTarget = "currentTarget".asInstanceOf[currentTarget]
   @scala.inline
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   @scala.inline

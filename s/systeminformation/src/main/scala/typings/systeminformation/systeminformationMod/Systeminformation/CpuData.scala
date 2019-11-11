@@ -10,6 +10,7 @@ trait CpuData extends js.Object {
   var cache: CpuCacheData
   var cores: Double
   var family: String
+  var governor: String
   var manufacturer: String
   var model: String
   var physicalCores: Double
@@ -31,6 +32,7 @@ object CpuData {
     cache: CpuCacheData,
     cores: Double,
     family: String,
+    governor: String,
     manufacturer: String,
     model: String,
     physicalCores: Double,
@@ -44,7 +46,7 @@ object CpuData {
     vendor: String,
     voltage: String
   ): CpuData = {
-    val __obj = js.Dynamic.literal(brand = brand, cache = cache, cores = cores, family = family, manufacturer = manufacturer, model = model, physicalCores = physicalCores, processors = processors, revision = revision, socket = socket, speed = speed, speedmax = speedmax, speedmin = speedmin, stepping = stepping, vendor = vendor, voltage = voltage)
+    val __obj = js.Dynamic.literal(brand = brand, cache = cache, cores = cores, family = family, governor = governor, manufacturer = manufacturer, model = model, physicalCores = physicalCores, processors = processors, revision = revision, socket = socket, speed = speed, speedmax = speedmax, speedmin = speedmin, stepping = stepping, vendor = vendor, voltage = voltage)
   
     __obj.asInstanceOf[CpuData]
   }

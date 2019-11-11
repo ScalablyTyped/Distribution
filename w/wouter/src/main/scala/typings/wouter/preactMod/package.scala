@@ -7,13 +7,14 @@ import scala.scalajs.js.annotation._
 package object preactMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.preact.srcJsxMod.JSXInternal.HTMLAttributes
+  import typings.std.EventTarget
   import typings.std.Omit
   import typings.wouter.wouterNumbers.`false`
   import typings.wouter.wouterNumbers.`true`
   import typings.wouter.wouterStrings.href
 
   type DefaultParams = StringDictionary[String]
-  type LinkProps = (Omit[HTMLAttributes, href]) with NavigationalProps
+  type LinkProps = (Omit[HTMLAttributes[EventTarget], href]) with NavigationalProps
   type LocationHook = js.Function0[LocationTuple]
   type LocationTuple = js.Tuple2[Path, PushCallback]
   type Match[T /* <: DefaultParams */] = MatchWithParams[T] | NoMatch

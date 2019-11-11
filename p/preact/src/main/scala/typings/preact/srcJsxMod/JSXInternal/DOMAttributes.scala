@@ -3,363 +3,352 @@ package typings.preact.srcJsxMod.JSXInternal
 import typings.preact.Anon_Html
 import typings.preact.srcMod.ComponentChildren
 import typings.preact.srcMod.PreactDOMAttributes
-import typings.std.AnimationEvent
-import typings.std.ClipboardEvent
-import typings.std.CompositionEvent
-import typings.std.DragEvent
 import typings.std.Event
-import typings.std.FocusEvent
-import typings.std.KeyboardEvent
-import typings.std.MouseEvent
-import typings.std.PointerEvent
-import typings.std.TouchEvent
-import typings.std.TransitionEvent
-import typings.std.UIEvent
-import typings.std.WheelEvent
+import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DOMAttributes extends PreactDOMAttributes {
+trait DOMAttributes[Target /* <: EventTarget */] extends PreactDOMAttributes {
   // Media Events
-  var onAbort: js.UndefOr[GenericEventHandler] = js.undefined
-  var onAbortCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler] = js.undefined
-  var onAnimationEndCapture: js.UndefOr[AnimationEventHandler] = js.undefined
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler] = js.undefined
-  var onAnimationIterationCapture: js.UndefOr[AnimationEventHandler] = js.undefined
+  var onAbort: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onAbortCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[Target]] = js.undefined
+  var onAnimationEndCapture: js.UndefOr[AnimationEventHandler[Target]] = js.undefined
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[Target]] = js.undefined
+  var onAnimationIterationCapture: js.UndefOr[AnimationEventHandler[Target]] = js.undefined
   // Animation Events
-  var onAnimationStart: js.UndefOr[AnimationEventHandler] = js.undefined
-  var onAnimationStartCapture: js.UndefOr[AnimationEventHandler] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler] = js.undefined
-  var onBlurCapture: js.UndefOr[FocusEventHandler] = js.undefined
-  var onCanPlay: js.UndefOr[GenericEventHandler] = js.undefined
-  var onCanPlayCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onCanPlayThrough: js.UndefOr[GenericEventHandler] = js.undefined
-  var onCanPlayThroughCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[Target]] = js.undefined
+  var onAnimationStartCapture: js.UndefOr[AnimationEventHandler[Target]] = js.undefined
+  var onBlur: js.UndefOr[FocusEventHandler[Target]] = js.undefined
+  var onBlurCapture: js.UndefOr[FocusEventHandler[Target]] = js.undefined
+  var onCanPlay: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onCanPlayCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onCanPlayThroughCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
   // Form Events
-  var onChange: js.UndefOr[GenericEventHandler] = js.undefined
-  var onChangeCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onChange: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onChangeCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
   // MouseEvents
-  var onClick: js.UndefOr[MouseEventHandler] = js.undefined
-  var onClickCapture: js.UndefOr[MouseEventHandler] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onClickCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
   // Composition Events
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler] = js.undefined
-  var onCompositionEndCapture: js.UndefOr[CompositionEventHandler] = js.undefined
-  var onCompositionStart: js.UndefOr[CompositionEventHandler] = js.undefined
-  var onCompositionStartCapture: js.UndefOr[CompositionEventHandler] = js.undefined
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler] = js.undefined
-  var onCompositionUpdateCapture: js.UndefOr[CompositionEventHandler] = js.undefined
-  var onContextMenu: js.UndefOr[MouseEventHandler] = js.undefined
-  var onContextMenuCapture: js.UndefOr[MouseEventHandler] = js.undefined
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[Target]] = js.undefined
+  var onCompositionEndCapture: js.UndefOr[CompositionEventHandler[Target]] = js.undefined
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[Target]] = js.undefined
+  var onCompositionStartCapture: js.UndefOr[CompositionEventHandler[Target]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[Target]] = js.undefined
+  var onCompositionUpdateCapture: js.UndefOr[CompositionEventHandler[Target]] = js.undefined
+  var onContextMenu: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onContextMenuCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
   // Clipboard Events
-  var onCopy: js.UndefOr[ClipboardEventHandler] = js.undefined
-  var onCopyCapture: js.UndefOr[ClipboardEventHandler] = js.undefined
-  var onCut: js.UndefOr[ClipboardEventHandler] = js.undefined
-  var onCutCapture: js.UndefOr[ClipboardEventHandler] = js.undefined
-  var onDblClick: js.UndefOr[MouseEventHandler] = js.undefined
-  var onDblClickCapture: js.UndefOr[MouseEventHandler] = js.undefined
-  var onDrag: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragCapture: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragEnd: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragEndCapture: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragEnter: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragEnterCapture: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragExit: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragExitCapture: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragLeave: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragLeaveCapture: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragOver: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragOverCapture: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragStart: js.UndefOr[DragEventHandler] = js.undefined
-  var onDragStartCapture: js.UndefOr[DragEventHandler] = js.undefined
-  var onDrop: js.UndefOr[DragEventHandler] = js.undefined
-  var onDropCapture: js.UndefOr[DragEventHandler] = js.undefined
-  var onDurationChange: js.UndefOr[GenericEventHandler] = js.undefined
-  var onDurationChangeCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onEmptied: js.UndefOr[GenericEventHandler] = js.undefined
-  var onEmptiedCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onEncrypted: js.UndefOr[GenericEventHandler] = js.undefined
-  var onEncryptedCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onEnded: js.UndefOr[GenericEventHandler] = js.undefined
-  var onEndedCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onError: js.UndefOr[GenericEventHandler] = js.undefined
-  var onErrorCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onCopy: js.UndefOr[ClipboardEventHandler[Target]] = js.undefined
+  var onCopyCapture: js.UndefOr[ClipboardEventHandler[Target]] = js.undefined
+  var onCut: js.UndefOr[ClipboardEventHandler[Target]] = js.undefined
+  var onCutCapture: js.UndefOr[ClipboardEventHandler[Target]] = js.undefined
+  var onDblClick: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onDblClickCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onDrag: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragCapture: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragEnd: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragEndCapture: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragEnter: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragEnterCapture: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragExit: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragExitCapture: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragLeave: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragLeaveCapture: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragOver: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragOverCapture: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragStart: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDragStartCapture: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDrop: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDropCapture: js.UndefOr[DragEventHandler[Target]] = js.undefined
+  var onDurationChange: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onDurationChangeCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onEmptied: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onEmptiedCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onEncrypted: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onEncryptedCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onEnded: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onEndedCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onError: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onErrorCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
   // Focus Events
-  var onFocus: js.UndefOr[FocusEventHandler] = js.undefined
-  var onFocusCapture: js.UndefOr[FocusEventHandler] = js.undefined
-  var onGotPointerCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onGotPointerCaptureCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onInput: js.UndefOr[GenericEventHandler] = js.undefined
-  var onInputCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onInvalid: js.UndefOr[GenericEventHandler] = js.undefined
-  var onInvalidCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onFocus: js.UndefOr[FocusEventHandler[Target]] = js.undefined
+  var onFocusCapture: js.UndefOr[FocusEventHandler[Target]] = js.undefined
+  var onGotPointerCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onGotPointerCaptureCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onInput: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onInputCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onInvalid: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onInvalidCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
   // Keyboard Events
-  var onKeyDown: js.UndefOr[KeyboardEventHandler] = js.undefined
-  var onKeyDownCapture: js.UndefOr[KeyboardEventHandler] = js.undefined
-  var onKeyPress: js.UndefOr[KeyboardEventHandler] = js.undefined
-  var onKeyPressCapture: js.UndefOr[KeyboardEventHandler] = js.undefined
-  var onKeyUp: js.UndefOr[KeyboardEventHandler] = js.undefined
-  var onKeyUpCapture: js.UndefOr[KeyboardEventHandler] = js.undefined
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[Target]] = js.undefined
+  var onKeyDownCapture: js.UndefOr[KeyboardEventHandler[Target]] = js.undefined
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[Target]] = js.undefined
+  var onKeyPressCapture: js.UndefOr[KeyboardEventHandler[Target]] = js.undefined
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[Target]] = js.undefined
+  var onKeyUpCapture: js.UndefOr[KeyboardEventHandler[Target]] = js.undefined
   // Image Events
-  var onLoad: js.UndefOr[GenericEventHandler] = js.undefined
-  var onLoadCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onLoadStart: js.UndefOr[GenericEventHandler] = js.undefined
-  var onLoadStartCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onLoadedData: js.UndefOr[GenericEventHandler] = js.undefined
-  var onLoadedDataCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onLoadedMetadata: js.UndefOr[GenericEventHandler] = js.undefined
-  var onLoadedMetadataCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onLostPointerCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onLostPointerCaptureCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseDownCapture: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseEnterCapture: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseLeaveCapture: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseMove: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseMoveCapture: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseOut: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseOutCapture: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseOver: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseOverCapture: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseUp: js.UndefOr[MouseEventHandler] = js.undefined
-  var onMouseUpCapture: js.UndefOr[MouseEventHandler] = js.undefined
-  var onPaste: js.UndefOr[ClipboardEventHandler] = js.undefined
-  var onPasteCapture: js.UndefOr[ClipboardEventHandler] = js.undefined
-  var onPause: js.UndefOr[GenericEventHandler] = js.undefined
-  var onPauseCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onPlay: js.UndefOr[GenericEventHandler] = js.undefined
-  var onPlayCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onPlaying: js.UndefOr[GenericEventHandler] = js.undefined
-  var onPlayingCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onPointerCancel: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerCancelCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerDown: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerDownCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerEnter: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerEnterCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerLeave: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerLeaveCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerMove: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerMoveCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerOut: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerOutCapture: js.UndefOr[PointerEventHandler] = js.undefined
+  var onLoad: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onLoadCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onLoadStart: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onLoadStartCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onLoadedData: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onLoadedDataCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onLoadedMetadataCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onLostPointerCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onLostPointerCaptureCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onMouseDown: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseDownCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseEnter: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseEnterCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseLeave: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseLeaveCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseMove: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseMoveCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseOut: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseOutCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseOver: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseOverCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseUp: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onMouseUpCapture: js.UndefOr[MouseEventHandler[Target]] = js.undefined
+  var onPaste: js.UndefOr[ClipboardEventHandler[Target]] = js.undefined
+  var onPasteCapture: js.UndefOr[ClipboardEventHandler[Target]] = js.undefined
+  var onPause: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onPauseCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onPlay: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onPlayCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onPlaying: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onPlayingCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onPointerCancel: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerCancelCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerDown: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerDownCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerEnter: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerEnterCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerLeave: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerLeaveCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerMove: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerMoveCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerOut: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerOutCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
   // Pointer Events
-  var onPointerOver: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerOverCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerUp: js.UndefOr[PointerEventHandler] = js.undefined
-  var onPointerUpCapture: js.UndefOr[PointerEventHandler] = js.undefined
-  var onProgress: js.UndefOr[GenericEventHandler] = js.undefined
-  var onProgressCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onRateChange: js.UndefOr[GenericEventHandler] = js.undefined
-  var onRateChangeCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onPointerOver: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerOverCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerUp: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onPointerUpCapture: js.UndefOr[PointerEventHandler[Target]] = js.undefined
+  var onProgress: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onProgressCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onRateChange: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onRateChangeCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
   // UI Events
-  var onScroll: js.UndefOr[UIEventHandler] = js.undefined
-  var onScrollCapture: js.UndefOr[UIEventHandler] = js.undefined
-  var onSearch: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSearchCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSeeked: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSeekedCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSeeking: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSeekingCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onScroll: js.UndefOr[UIEventHandler[Target]] = js.undefined
+  var onScrollCapture: js.UndefOr[UIEventHandler[Target]] = js.undefined
+  var onSearch: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSearchCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSeeked: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSeekedCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSeeking: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSeekingCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
   // Selection Events
-  var onSelect: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSelectCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onStalled: js.UndefOr[GenericEventHandler] = js.undefined
-  var onStalledCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSubmit: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSubmitCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSuspend: js.UndefOr[GenericEventHandler] = js.undefined
-  var onSuspendCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onTimeUpdate: js.UndefOr[GenericEventHandler] = js.undefined
-  var onTimeUpdateCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onSelect: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSelectCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onStalled: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onStalledCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSubmit: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSubmitCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSuspend: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onSuspendCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onTimeUpdate: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onTimeUpdateCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
   // Touch Events
-  var onTouchCancel: js.UndefOr[TouchEventHandler] = js.undefined
-  var onTouchCancelCapture: js.UndefOr[TouchEventHandler] = js.undefined
-  var onTouchEnd: js.UndefOr[TouchEventHandler] = js.undefined
-  var onTouchEndCapture: js.UndefOr[TouchEventHandler] = js.undefined
-  var onTouchMove: js.UndefOr[TouchEventHandler] = js.undefined
-  var onTouchMoveCapture: js.UndefOr[TouchEventHandler] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler] = js.undefined
-  var onTouchStartCapture: js.UndefOr[TouchEventHandler] = js.undefined
+  var onTouchCancel: js.UndefOr[TouchEventHandler[Target]] = js.undefined
+  var onTouchCancelCapture: js.UndefOr[TouchEventHandler[Target]] = js.undefined
+  var onTouchEnd: js.UndefOr[TouchEventHandler[Target]] = js.undefined
+  var onTouchEndCapture: js.UndefOr[TouchEventHandler[Target]] = js.undefined
+  var onTouchMove: js.UndefOr[TouchEventHandler[Target]] = js.undefined
+  var onTouchMoveCapture: js.UndefOr[TouchEventHandler[Target]] = js.undefined
+  var onTouchStart: js.UndefOr[TouchEventHandler[Target]] = js.undefined
+  var onTouchStartCapture: js.UndefOr[TouchEventHandler[Target]] = js.undefined
   // Transition Events
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler] = js.undefined
-  var onTransitionEndCapture: js.UndefOr[TransitionEventHandler] = js.undefined
-  var onVolumeChange: js.UndefOr[GenericEventHandler] = js.undefined
-  var onVolumeChangeCapture: js.UndefOr[GenericEventHandler] = js.undefined
-  var onWaiting: js.UndefOr[GenericEventHandler] = js.undefined
-  var onWaitingCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[Target]] = js.undefined
+  var onTransitionEndCapture: js.UndefOr[TransitionEventHandler[Target]] = js.undefined
+  var onVolumeChange: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onVolumeChangeCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onWaiting: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  var onWaitingCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
   // Wheel Events
-  var onWheel: js.UndefOr[WheelEventHandler] = js.undefined
-  var onWheelCapture: js.UndefOr[WheelEventHandler] = js.undefined
+  var onWheel: js.UndefOr[WheelEventHandler[Target]] = js.undefined
+  var onWheelCapture: js.UndefOr[WheelEventHandler[Target]] = js.undefined
 }
 
 object DOMAttributes {
   @scala.inline
-  def apply(
+  def apply[Target /* <: EventTarget */](
     children: ComponentChildren = null,
     dangerouslySetInnerHTML: Anon_Html = null,
-    onAbort: Event => Unit = null,
-    onAbortCapture: Event => Unit = null,
-    onAnimationEnd: AnimationEvent => Unit = null,
-    onAnimationEndCapture: AnimationEvent => Unit = null,
-    onAnimationIteration: AnimationEvent => Unit = null,
-    onAnimationIterationCapture: AnimationEvent => Unit = null,
-    onAnimationStart: AnimationEvent => Unit = null,
-    onAnimationStartCapture: AnimationEvent => Unit = null,
-    onBlur: FocusEvent => Unit = null,
-    onBlurCapture: FocusEvent => Unit = null,
-    onCanPlay: Event => Unit = null,
-    onCanPlayCapture: Event => Unit = null,
-    onCanPlayThrough: Event => Unit = null,
-    onCanPlayThroughCapture: Event => Unit = null,
-    onChange: Event => Unit = null,
-    onChangeCapture: Event => Unit = null,
-    onClick: MouseEvent => Unit = null,
-    onClickCapture: MouseEvent => Unit = null,
-    onCompositionEnd: CompositionEvent => Unit = null,
-    onCompositionEndCapture: CompositionEvent => Unit = null,
-    onCompositionStart: CompositionEvent => Unit = null,
-    onCompositionStartCapture: CompositionEvent => Unit = null,
-    onCompositionUpdate: CompositionEvent => Unit = null,
-    onCompositionUpdateCapture: CompositionEvent => Unit = null,
-    onContextMenu: MouseEvent => Unit = null,
-    onContextMenuCapture: MouseEvent => Unit = null,
-    onCopy: ClipboardEvent => Unit = null,
-    onCopyCapture: ClipboardEvent => Unit = null,
-    onCut: ClipboardEvent => Unit = null,
-    onCutCapture: ClipboardEvent => Unit = null,
-    onDblClick: MouseEvent => Unit = null,
-    onDblClickCapture: MouseEvent => Unit = null,
-    onDrag: DragEvent => Unit = null,
-    onDragCapture: DragEvent => Unit = null,
-    onDragEnd: DragEvent => Unit = null,
-    onDragEndCapture: DragEvent => Unit = null,
-    onDragEnter: DragEvent => Unit = null,
-    onDragEnterCapture: DragEvent => Unit = null,
-    onDragExit: DragEvent => Unit = null,
-    onDragExitCapture: DragEvent => Unit = null,
-    onDragLeave: DragEvent => Unit = null,
-    onDragLeaveCapture: DragEvent => Unit = null,
-    onDragOver: DragEvent => Unit = null,
-    onDragOverCapture: DragEvent => Unit = null,
-    onDragStart: DragEvent => Unit = null,
-    onDragStartCapture: DragEvent => Unit = null,
-    onDrop: DragEvent => Unit = null,
-    onDropCapture: DragEvent => Unit = null,
-    onDurationChange: Event => Unit = null,
-    onDurationChangeCapture: Event => Unit = null,
-    onEmptied: Event => Unit = null,
-    onEmptiedCapture: Event => Unit = null,
-    onEncrypted: Event => Unit = null,
-    onEncryptedCapture: Event => Unit = null,
-    onEnded: Event => Unit = null,
-    onEndedCapture: Event => Unit = null,
-    onError: Event => Unit = null,
-    onErrorCapture: Event => Unit = null,
-    onFocus: FocusEvent => Unit = null,
-    onFocusCapture: FocusEvent => Unit = null,
-    onGotPointerCapture: PointerEvent => Unit = null,
-    onGotPointerCaptureCapture: PointerEvent => Unit = null,
-    onInput: Event => Unit = null,
-    onInputCapture: Event => Unit = null,
-    onInvalid: Event => Unit = null,
-    onInvalidCapture: Event => Unit = null,
-    onKeyDown: KeyboardEvent => Unit = null,
-    onKeyDownCapture: KeyboardEvent => Unit = null,
-    onKeyPress: KeyboardEvent => Unit = null,
-    onKeyPressCapture: KeyboardEvent => Unit = null,
-    onKeyUp: KeyboardEvent => Unit = null,
-    onKeyUpCapture: KeyboardEvent => Unit = null,
-    onLoad: Event => Unit = null,
-    onLoadCapture: Event => Unit = null,
-    onLoadStart: Event => Unit = null,
-    onLoadStartCapture: Event => Unit = null,
-    onLoadedData: Event => Unit = null,
-    onLoadedDataCapture: Event => Unit = null,
-    onLoadedMetadata: Event => Unit = null,
-    onLoadedMetadataCapture: Event => Unit = null,
-    onLostPointerCapture: PointerEvent => Unit = null,
-    onLostPointerCaptureCapture: PointerEvent => Unit = null,
-    onMouseDown: MouseEvent => Unit = null,
-    onMouseDownCapture: MouseEvent => Unit = null,
-    onMouseEnter: MouseEvent => Unit = null,
-    onMouseEnterCapture: MouseEvent => Unit = null,
-    onMouseLeave: MouseEvent => Unit = null,
-    onMouseLeaveCapture: MouseEvent => Unit = null,
-    onMouseMove: MouseEvent => Unit = null,
-    onMouseMoveCapture: MouseEvent => Unit = null,
-    onMouseOut: MouseEvent => Unit = null,
-    onMouseOutCapture: MouseEvent => Unit = null,
-    onMouseOver: MouseEvent => Unit = null,
-    onMouseOverCapture: MouseEvent => Unit = null,
-    onMouseUp: MouseEvent => Unit = null,
-    onMouseUpCapture: MouseEvent => Unit = null,
-    onPaste: ClipboardEvent => Unit = null,
-    onPasteCapture: ClipboardEvent => Unit = null,
-    onPause: Event => Unit = null,
-    onPauseCapture: Event => Unit = null,
-    onPlay: Event => Unit = null,
-    onPlayCapture: Event => Unit = null,
-    onPlaying: Event => Unit = null,
-    onPlayingCapture: Event => Unit = null,
-    onPointerCancel: PointerEvent => Unit = null,
-    onPointerCancelCapture: PointerEvent => Unit = null,
-    onPointerDown: PointerEvent => Unit = null,
-    onPointerDownCapture: PointerEvent => Unit = null,
-    onPointerEnter: PointerEvent => Unit = null,
-    onPointerEnterCapture: PointerEvent => Unit = null,
-    onPointerLeave: PointerEvent => Unit = null,
-    onPointerLeaveCapture: PointerEvent => Unit = null,
-    onPointerMove: PointerEvent => Unit = null,
-    onPointerMoveCapture: PointerEvent => Unit = null,
-    onPointerOut: PointerEvent => Unit = null,
-    onPointerOutCapture: PointerEvent => Unit = null,
-    onPointerOver: PointerEvent => Unit = null,
-    onPointerOverCapture: PointerEvent => Unit = null,
-    onPointerUp: PointerEvent => Unit = null,
-    onPointerUpCapture: PointerEvent => Unit = null,
-    onProgress: Event => Unit = null,
-    onProgressCapture: Event => Unit = null,
-    onRateChange: Event => Unit = null,
-    onRateChangeCapture: Event => Unit = null,
-    onScroll: UIEvent => Unit = null,
-    onScrollCapture: UIEvent => Unit = null,
-    onSearch: Event => Unit = null,
-    onSearchCapture: Event => Unit = null,
-    onSeeked: Event => Unit = null,
-    onSeekedCapture: Event => Unit = null,
-    onSeeking: Event => Unit = null,
-    onSeekingCapture: Event => Unit = null,
-    onSelect: Event => Unit = null,
-    onSelectCapture: Event => Unit = null,
-    onStalled: Event => Unit = null,
-    onStalledCapture: Event => Unit = null,
-    onSubmit: Event => Unit = null,
-    onSubmitCapture: Event => Unit = null,
-    onSuspend: Event => Unit = null,
-    onSuspendCapture: Event => Unit = null,
-    onTimeUpdate: Event => Unit = null,
-    onTimeUpdateCapture: Event => Unit = null,
-    onTouchCancel: TouchEvent => Unit = null,
-    onTouchCancelCapture: TouchEvent => Unit = null,
-    onTouchEnd: TouchEvent => Unit = null,
-    onTouchEndCapture: TouchEvent => Unit = null,
-    onTouchMove: TouchEvent => Unit = null,
-    onTouchMoveCapture: TouchEvent => Unit = null,
-    onTouchStart: TouchEvent => Unit = null,
-    onTouchStartCapture: TouchEvent => Unit = null,
-    onTransitionEnd: TransitionEvent => Unit = null,
-    onTransitionEndCapture: TransitionEvent => Unit = null,
-    onVolumeChange: Event => Unit = null,
-    onVolumeChangeCapture: Event => Unit = null,
-    onWaiting: Event => Unit = null,
-    onWaitingCapture: Event => Unit = null,
-    onWheel: WheelEvent => Unit = null,
-    onWheelCapture: WheelEvent => Unit = null
-  ): DOMAttributes = {
+    onAbort: TargetedEvent[Target, Event] => Unit = null,
+    onAbortCapture: TargetedEvent[Target, Event] => Unit = null,
+    onAnimationEnd: TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationEndCapture: TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationIteration: TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationIterationCapture: TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationStart: TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationStartCapture: TargetedAnimationEvent[Target] => Unit = null,
+    onBlur: TargetedFocusEvent[Target] => Unit = null,
+    onBlurCapture: TargetedFocusEvent[Target] => Unit = null,
+    onCanPlay: TargetedEvent[Target, Event] => Unit = null,
+    onCanPlayCapture: TargetedEvent[Target, Event] => Unit = null,
+    onCanPlayThrough: TargetedEvent[Target, Event] => Unit = null,
+    onCanPlayThroughCapture: TargetedEvent[Target, Event] => Unit = null,
+    onChange: TargetedEvent[Target, Event] => Unit = null,
+    onChangeCapture: TargetedEvent[Target, Event] => Unit = null,
+    onClick: TargetedMouseEvent[Target] => Unit = null,
+    onClickCapture: TargetedMouseEvent[Target] => Unit = null,
+    onCompositionEnd: TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionEndCapture: TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionStart: TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionStartCapture: TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionUpdate: TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionUpdateCapture: TargetedCompositionEvent[Target] => Unit = null,
+    onContextMenu: TargetedMouseEvent[Target] => Unit = null,
+    onContextMenuCapture: TargetedMouseEvent[Target] => Unit = null,
+    onCopy: TargetedClipboardEvent[Target] => Unit = null,
+    onCopyCapture: TargetedClipboardEvent[Target] => Unit = null,
+    onCut: TargetedClipboardEvent[Target] => Unit = null,
+    onCutCapture: TargetedClipboardEvent[Target] => Unit = null,
+    onDblClick: TargetedMouseEvent[Target] => Unit = null,
+    onDblClickCapture: TargetedMouseEvent[Target] => Unit = null,
+    onDrag: TargetedDragEvent[Target] => Unit = null,
+    onDragCapture: TargetedDragEvent[Target] => Unit = null,
+    onDragEnd: TargetedDragEvent[Target] => Unit = null,
+    onDragEndCapture: TargetedDragEvent[Target] => Unit = null,
+    onDragEnter: TargetedDragEvent[Target] => Unit = null,
+    onDragEnterCapture: TargetedDragEvent[Target] => Unit = null,
+    onDragExit: TargetedDragEvent[Target] => Unit = null,
+    onDragExitCapture: TargetedDragEvent[Target] => Unit = null,
+    onDragLeave: TargetedDragEvent[Target] => Unit = null,
+    onDragLeaveCapture: TargetedDragEvent[Target] => Unit = null,
+    onDragOver: TargetedDragEvent[Target] => Unit = null,
+    onDragOverCapture: TargetedDragEvent[Target] => Unit = null,
+    onDragStart: TargetedDragEvent[Target] => Unit = null,
+    onDragStartCapture: TargetedDragEvent[Target] => Unit = null,
+    onDrop: TargetedDragEvent[Target] => Unit = null,
+    onDropCapture: TargetedDragEvent[Target] => Unit = null,
+    onDurationChange: TargetedEvent[Target, Event] => Unit = null,
+    onDurationChangeCapture: TargetedEvent[Target, Event] => Unit = null,
+    onEmptied: TargetedEvent[Target, Event] => Unit = null,
+    onEmptiedCapture: TargetedEvent[Target, Event] => Unit = null,
+    onEncrypted: TargetedEvent[Target, Event] => Unit = null,
+    onEncryptedCapture: TargetedEvent[Target, Event] => Unit = null,
+    onEnded: TargetedEvent[Target, Event] => Unit = null,
+    onEndedCapture: TargetedEvent[Target, Event] => Unit = null,
+    onError: TargetedEvent[Target, Event] => Unit = null,
+    onErrorCapture: TargetedEvent[Target, Event] => Unit = null,
+    onFocus: TargetedFocusEvent[Target] => Unit = null,
+    onFocusCapture: TargetedFocusEvent[Target] => Unit = null,
+    onGotPointerCapture: TargetedPointerEvent[Target] => Unit = null,
+    onGotPointerCaptureCapture: TargetedPointerEvent[Target] => Unit = null,
+    onInput: TargetedEvent[Target, Event] => Unit = null,
+    onInputCapture: TargetedEvent[Target, Event] => Unit = null,
+    onInvalid: TargetedEvent[Target, Event] => Unit = null,
+    onInvalidCapture: TargetedEvent[Target, Event] => Unit = null,
+    onKeyDown: TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyDownCapture: TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyPress: TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyPressCapture: TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyUp: TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyUpCapture: TargetedKeyboardEvent[Target] => Unit = null,
+    onLoad: TargetedEvent[Target, Event] => Unit = null,
+    onLoadCapture: TargetedEvent[Target, Event] => Unit = null,
+    onLoadStart: TargetedEvent[Target, Event] => Unit = null,
+    onLoadStartCapture: TargetedEvent[Target, Event] => Unit = null,
+    onLoadedData: TargetedEvent[Target, Event] => Unit = null,
+    onLoadedDataCapture: TargetedEvent[Target, Event] => Unit = null,
+    onLoadedMetadata: TargetedEvent[Target, Event] => Unit = null,
+    onLoadedMetadataCapture: TargetedEvent[Target, Event] => Unit = null,
+    onLostPointerCapture: TargetedPointerEvent[Target] => Unit = null,
+    onLostPointerCaptureCapture: TargetedPointerEvent[Target] => Unit = null,
+    onMouseDown: TargetedMouseEvent[Target] => Unit = null,
+    onMouseDownCapture: TargetedMouseEvent[Target] => Unit = null,
+    onMouseEnter: TargetedMouseEvent[Target] => Unit = null,
+    onMouseEnterCapture: TargetedMouseEvent[Target] => Unit = null,
+    onMouseLeave: TargetedMouseEvent[Target] => Unit = null,
+    onMouseLeaveCapture: TargetedMouseEvent[Target] => Unit = null,
+    onMouseMove: TargetedMouseEvent[Target] => Unit = null,
+    onMouseMoveCapture: TargetedMouseEvent[Target] => Unit = null,
+    onMouseOut: TargetedMouseEvent[Target] => Unit = null,
+    onMouseOutCapture: TargetedMouseEvent[Target] => Unit = null,
+    onMouseOver: TargetedMouseEvent[Target] => Unit = null,
+    onMouseOverCapture: TargetedMouseEvent[Target] => Unit = null,
+    onMouseUp: TargetedMouseEvent[Target] => Unit = null,
+    onMouseUpCapture: TargetedMouseEvent[Target] => Unit = null,
+    onPaste: TargetedClipboardEvent[Target] => Unit = null,
+    onPasteCapture: TargetedClipboardEvent[Target] => Unit = null,
+    onPause: TargetedEvent[Target, Event] => Unit = null,
+    onPauseCapture: TargetedEvent[Target, Event] => Unit = null,
+    onPlay: TargetedEvent[Target, Event] => Unit = null,
+    onPlayCapture: TargetedEvent[Target, Event] => Unit = null,
+    onPlaying: TargetedEvent[Target, Event] => Unit = null,
+    onPlayingCapture: TargetedEvent[Target, Event] => Unit = null,
+    onPointerCancel: TargetedPointerEvent[Target] => Unit = null,
+    onPointerCancelCapture: TargetedPointerEvent[Target] => Unit = null,
+    onPointerDown: TargetedPointerEvent[Target] => Unit = null,
+    onPointerDownCapture: TargetedPointerEvent[Target] => Unit = null,
+    onPointerEnter: TargetedPointerEvent[Target] => Unit = null,
+    onPointerEnterCapture: TargetedPointerEvent[Target] => Unit = null,
+    onPointerLeave: TargetedPointerEvent[Target] => Unit = null,
+    onPointerLeaveCapture: TargetedPointerEvent[Target] => Unit = null,
+    onPointerMove: TargetedPointerEvent[Target] => Unit = null,
+    onPointerMoveCapture: TargetedPointerEvent[Target] => Unit = null,
+    onPointerOut: TargetedPointerEvent[Target] => Unit = null,
+    onPointerOutCapture: TargetedPointerEvent[Target] => Unit = null,
+    onPointerOver: TargetedPointerEvent[Target] => Unit = null,
+    onPointerOverCapture: TargetedPointerEvent[Target] => Unit = null,
+    onPointerUp: TargetedPointerEvent[Target] => Unit = null,
+    onPointerUpCapture: TargetedPointerEvent[Target] => Unit = null,
+    onProgress: TargetedEvent[Target, Event] => Unit = null,
+    onProgressCapture: TargetedEvent[Target, Event] => Unit = null,
+    onRateChange: TargetedEvent[Target, Event] => Unit = null,
+    onRateChangeCapture: TargetedEvent[Target, Event] => Unit = null,
+    onScroll: TargetedUIEvent[Target] => Unit = null,
+    onScrollCapture: TargetedUIEvent[Target] => Unit = null,
+    onSearch: TargetedEvent[Target, Event] => Unit = null,
+    onSearchCapture: TargetedEvent[Target, Event] => Unit = null,
+    onSeeked: TargetedEvent[Target, Event] => Unit = null,
+    onSeekedCapture: TargetedEvent[Target, Event] => Unit = null,
+    onSeeking: TargetedEvent[Target, Event] => Unit = null,
+    onSeekingCapture: TargetedEvent[Target, Event] => Unit = null,
+    onSelect: TargetedEvent[Target, Event] => Unit = null,
+    onSelectCapture: TargetedEvent[Target, Event] => Unit = null,
+    onStalled: TargetedEvent[Target, Event] => Unit = null,
+    onStalledCapture: TargetedEvent[Target, Event] => Unit = null,
+    onSubmit: TargetedEvent[Target, Event] => Unit = null,
+    onSubmitCapture: TargetedEvent[Target, Event] => Unit = null,
+    onSuspend: TargetedEvent[Target, Event] => Unit = null,
+    onSuspendCapture: TargetedEvent[Target, Event] => Unit = null,
+    onTimeUpdate: TargetedEvent[Target, Event] => Unit = null,
+    onTimeUpdateCapture: TargetedEvent[Target, Event] => Unit = null,
+    onTouchCancel: TargetedTouchEvent[Target] => Unit = null,
+    onTouchCancelCapture: TargetedTouchEvent[Target] => Unit = null,
+    onTouchEnd: TargetedTouchEvent[Target] => Unit = null,
+    onTouchEndCapture: TargetedTouchEvent[Target] => Unit = null,
+    onTouchMove: TargetedTouchEvent[Target] => Unit = null,
+    onTouchMoveCapture: TargetedTouchEvent[Target] => Unit = null,
+    onTouchStart: TargetedTouchEvent[Target] => Unit = null,
+    onTouchStartCapture: TargetedTouchEvent[Target] => Unit = null,
+    onTransitionEnd: TargetedTransitionEvent[Target] => Unit = null,
+    onTransitionEndCapture: TargetedTransitionEvent[Target] => Unit = null,
+    onVolumeChange: TargetedEvent[Target, Event] => Unit = null,
+    onVolumeChangeCapture: TargetedEvent[Target, Event] => Unit = null,
+    onWaiting: TargetedEvent[Target, Event] => Unit = null,
+    onWaitingCapture: TargetedEvent[Target, Event] => Unit = null,
+    onWheel: TargetedWheelEvent[Target] => Unit = null,
+    onWheelCapture: TargetedWheelEvent[Target] => Unit = null
+  ): DOMAttributes[Target] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML)
@@ -521,7 +510,7 @@ object DOMAttributes {
     if (onWaitingCapture != null) __obj.updateDynamic("onWaitingCapture")(js.Any.fromFunction1(onWaitingCapture))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(js.Any.fromFunction1(onWheelCapture))
-    __obj.asInstanceOf[DOMAttributes]
+    __obj.asInstanceOf[DOMAttributes[Target]]
   }
 }
 

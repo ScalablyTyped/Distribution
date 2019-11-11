@@ -31,11 +31,12 @@ import typings.preact.preactStrings.square
 import typings.preact.preactStrings.sum
 import typings.preact.preactStrings.terminal
 import typings.preact.preactStrings.yes
+import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SVGAttributes extends HTMLAttributes {
+trait SVGAttributes[Target /* <: EventTarget */] extends HTMLAttributes[Target] {
   var accentHeight: js.UndefOr[Double | String] = js.undefined
   var accumulate: js.UndefOr[none | sum] = js.undefined
   var additive: js.UndefOr[replace | sum] = js.undefined
@@ -281,8 +282,8 @@ trait SVGAttributes extends HTMLAttributes {
 
 object SVGAttributes {
   @scala.inline
-  def apply(
-    HTMLAttributes: HTMLAttributes = null,
+  def apply[Target /* <: EventTarget */](
+    HTMLAttributes: HTMLAttributes[Target] = null,
     accentHeight: Double | String = null,
     accumulate: none | sum = null,
     additive: replace | sum = null,
@@ -522,7 +523,7 @@ object SVGAttributes {
     yChannelSelector: String = null,
     z: Double | String = null,
     zoomAndPan: String = null
-  ): SVGAttributes = {
+  ): SVGAttributes[Target] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
@@ -764,7 +765,7 @@ object SVGAttributes {
     if (yChannelSelector != null) __obj.updateDynamic("yChannelSelector")(yChannelSelector)
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     if (zoomAndPan != null) __obj.updateDynamic("zoomAndPan")(zoomAndPan)
-    __obj.asInstanceOf[SVGAttributes]
+    __obj.asInstanceOf[SVGAttributes[Target]]
   }
 }
 

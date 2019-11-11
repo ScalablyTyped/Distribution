@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unist-util-stringify-position"
-version := "2.0.1-828c87"
+version := "2.0.2-4554d6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,8 +5,11 @@ import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
 import typings.moment.momentMod.Moment
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod.SyntheticEvent
 import typings.std.Element
+import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,9 +37,13 @@ object WeekPickerProps {
     inputPrefixCls: String = null,
     locale: js.Any = null,
     name: String = null,
+    onBlur: /* e */ SyntheticEvent[Element, Event] => Unit = null,
     onChange: (/* date */ Moment | Null, /* dateString */ String) => Unit = null,
+    onFocus: FocusEvent[Element] => Unit = null,
     onOpenChange: /* status */ Boolean => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
+    pickerClass: String = null,
+    pickerInputClass: String = null,
     placeholder: String = null,
     popupStyle: CSSProperties = null,
     prefixCls: String = null,
@@ -62,9 +69,13 @@ object WeekPickerProps {
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (pickerClass != null) __obj.updateDynamic("pickerClass")(pickerClass)
+    if (pickerInputClass != null) __obj.updateDynamic("pickerInputClass")(pickerInputClass)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

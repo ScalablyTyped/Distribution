@@ -16,6 +16,7 @@ object CpuWithFlagsData {
     cores: Double,
     family: String,
     flags: String,
+    governor: String,
     manufacturer: String,
     model: String,
     physicalCores: Double,
@@ -29,7 +30,7 @@ object CpuWithFlagsData {
     vendor: String,
     voltage: String
   ): CpuWithFlagsData = {
-    val __obj = js.Dynamic.literal(brand = brand, cache = cache, cores = cores, family = family, flags = flags, manufacturer = manufacturer, model = model, physicalCores = physicalCores, processors = processors, revision = revision, socket = socket, speed = speed, speedmax = speedmax, speedmin = speedmin, stepping = stepping, vendor = vendor, voltage = voltage)
+    val __obj = js.Dynamic.literal(brand = brand, cache = cache, cores = cores, family = family, flags = flags, governor = governor, manufacturer = manufacturer, model = model, physicalCores = physicalCores, processors = processors, revision = revision, socket = socket, speed = speed, speedmax = speedmax, speedmin = speedmin, stepping = stepping, vendor = vendor, voltage = voltage)
   
     __obj.asInstanceOf[CpuWithFlagsData]
   }

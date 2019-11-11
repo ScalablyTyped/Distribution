@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-pagination"
-version := "1.20.10-ba07ef"
+version := "1.20.11-14c95a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

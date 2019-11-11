@@ -18,6 +18,8 @@ trait Props extends js.Object {
   var inputMode: js.UndefOr[String] = js.undefined
   var locale: js.UndefOr[js.Object] = js.undefined
   var mode: js.UndefOr[Mode] = js.undefined
+  var monthCellContentRender: js.UndefOr[js.Function2[/* current */ Moment, /* locale */ js.Object, ReactNode]] = js.undefined
+  var monthCellRender: js.UndefOr[js.Function2[/* current */ Moment, /* locale */ js.Object, String]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* date */ Moment | Null, Unit]] = js.undefined
   var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -50,6 +52,8 @@ object Props {
     inputMode: String = null,
     locale: js.Object = null,
     mode: Mode = null,
+    monthCellContentRender: (/* current */ Moment, /* locale */ js.Object) => ReactNode = null,
+    monthCellRender: (/* current */ Moment, /* locale */ js.Object) => String = null,
     onChange: /* date */ Moment | Null => Unit = null,
     onClear: () => Unit = null,
     onKeyDown: () => Unit = null,
@@ -79,6 +83,8 @@ object Props {
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (monthCellContentRender != null) __obj.updateDynamic("monthCellContentRender")(js.Any.fromFunction2(monthCellContentRender))
+    if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction2(monthCellRender))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction0(onKeyDown))

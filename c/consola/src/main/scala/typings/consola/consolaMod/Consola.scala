@@ -13,6 +13,7 @@ class Consola protected () extends js.Object {
   val stdout: js.Any = js.native
   // Reporter
   def addReporter(reporter: ConsolaReporter): Consola = js.native
+  def clear(): Consola = js.native
   def clear(reporter: ConsolaReporter): Consola = js.native
   // Create
   def create(options: ConsolaOptions): Consola = js.native
@@ -35,7 +36,9 @@ class Consola protected () extends js.Object {
   def pauseLogs(): Unit = js.native
   def ready(message: js.Any, args: js.Any*): Unit = js.native
   def ready(message: ConsolaLogObject, args: js.Any*): Unit = js.native
+  def remove(): Consola = js.native
   def remove(reporter: ConsolaReporter): Consola = js.native
+  def removeReporter(): Consola = js.native
   def removeReporter(reporter: ConsolaReporter): Consola = js.native
   def restoreAll(): Unit = js.native
   def restoreConsole(): Unit = js.native

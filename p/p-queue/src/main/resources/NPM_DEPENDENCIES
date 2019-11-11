@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-queue" : "6.2.0"
+      "p-queue" : "6.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "p-queue" : "6.2.0"
+      "p-queue" : "6.2.1"
     }
   ],
   "compile-devDependencies" : [

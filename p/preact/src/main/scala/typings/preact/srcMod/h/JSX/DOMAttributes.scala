@@ -3,363 +3,352 @@ package typings.preact.srcMod.h.JSX
 import typings.preact.Anon_Html
 import typings.preact.srcMod.ComponentChildren
 import typings.preact.srcMod.PreactDOMAttributes
-import typings.std.AnimationEvent
-import typings.std.ClipboardEvent
-import typings.std.CompositionEvent
-import typings.std.DragEvent
 import typings.std.Event
-import typings.std.FocusEvent
-import typings.std.KeyboardEvent
-import typings.std.MouseEvent
-import typings.std.PointerEvent
-import typings.std.TouchEvent
-import typings.std.TransitionEvent
-import typings.std.UIEvent
-import typings.std.WheelEvent
+import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DOMAttributes extends PreactDOMAttributes {
+trait DOMAttributes[Target /* <: EventTarget */] extends PreactDOMAttributes {
   // Media Events
-  var onAbort: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onAbortCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onAnimationEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler] = js.undefined
-  var onAnimationEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler] = js.undefined
-  var onAnimationIteration: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler] = js.undefined
-  var onAnimationIterationCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler] = js.undefined
+  var onAbort: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onAbortCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onAnimationEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
+  var onAnimationEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
+  var onAnimationIteration: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
+  var onAnimationIterationCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
   // Animation Events
-  var onAnimationStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler] = js.undefined
-  var onAnimationStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler] = js.undefined
-  var onBlur: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.FocusEventHandler] = js.undefined
-  var onBlurCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.FocusEventHandler] = js.undefined
-  var onCanPlay: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onCanPlayCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onCanPlayThrough: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onCanPlayThroughCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
+  var onAnimationStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
+  var onAnimationStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.AnimationEventHandler[Target]] = js.undefined
+  var onBlur: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.FocusEventHandler[Target]] = js.undefined
+  var onBlurCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.FocusEventHandler[Target]] = js.undefined
+  var onCanPlay: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onCanPlayCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onCanPlayThroughCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   // Form Events
-  var onChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onChangeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
+  var onChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onChangeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   // MouseEvents
-  var onClick: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onClickCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
+  var onClick: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onClickCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
   // Composition Events
-  var onCompositionEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler] = js.undefined
-  var onCompositionEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler] = js.undefined
-  var onCompositionStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler] = js.undefined
-  var onCompositionStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler] = js.undefined
-  var onCompositionUpdate: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler] = js.undefined
-  var onCompositionUpdateCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler] = js.undefined
-  var onContextMenu: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onContextMenuCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
+  var onCompositionEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
+  var onCompositionEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
+  var onCompositionStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
+  var onCompositionStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
+  var onCompositionUpdateCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
+  var onContextMenu: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onContextMenuCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
   // Clipboard Events
-  var onCopy: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler] = js.undefined
-  var onCopyCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler] = js.undefined
-  var onCut: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler] = js.undefined
-  var onCutCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler] = js.undefined
-  var onDblClick: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onDblClickCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onDrag: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragEnter: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragEnterCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragExit: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragExitCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragLeave: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragLeaveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragOver: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragOverCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDragStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDrop: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDropCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler] = js.undefined
-  var onDurationChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onDurationChangeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onEmptied: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onEmptiedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onEncrypted: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onEncryptedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onEnded: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onEndedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onError: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onErrorCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
+  var onCopy: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
+  var onCopyCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
+  var onCut: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
+  var onCutCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
+  var onDblClick: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onDblClickCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onDrag: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragEnter: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragEnterCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragExit: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragExitCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragLeave: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragLeaveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragOver: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragOverCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDragStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDrop: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDropCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.DragEventHandler[Target]] = js.undefined
+  var onDurationChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onDurationChangeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onEmptied: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onEmptiedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onEncrypted: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onEncryptedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onEnded: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onEndedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onError: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onErrorCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   // Focus Events
-  var onFocus: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.FocusEventHandler] = js.undefined
-  var onFocusCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.FocusEventHandler] = js.undefined
-  var onGotPointerCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onGotPointerCaptureCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onInput: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onInputCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onInvalid: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onInvalidCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
+  var onFocus: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.FocusEventHandler[Target]] = js.undefined
+  var onFocusCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.FocusEventHandler[Target]] = js.undefined
+  var onGotPointerCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onGotPointerCaptureCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onInput: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onInputCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onInvalid: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onInvalidCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   // Keyboard Events
-  var onKeyDown: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler] = js.undefined
-  var onKeyDownCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler] = js.undefined
-  var onKeyPress: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler] = js.undefined
-  var onKeyPressCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler] = js.undefined
-  var onKeyUp: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler] = js.undefined
-  var onKeyUpCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler] = js.undefined
+  var onKeyDown: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
+  var onKeyDownCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
+  var onKeyPress: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
+  var onKeyPressCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
+  var onKeyUp: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
+  var onKeyUpCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
   // Image Events
-  var onLoad: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onLoadCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onLoadStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onLoadStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onLoadedData: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onLoadedDataCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onLoadedMetadata: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onLoadedMetadataCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onLostPointerCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onLostPointerCaptureCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onMouseDown: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseDownCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseEnter: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseEnterCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseLeave: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseLeaveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseMove: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseMoveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseOut: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseOutCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseOver: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseOverCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseUp: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onMouseUpCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler] = js.undefined
-  var onPaste: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler] = js.undefined
-  var onPasteCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler] = js.undefined
-  var onPause: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onPauseCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onPlay: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onPlayCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onPlaying: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onPlayingCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onPointerCancel: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerCancelCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerDown: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerDownCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerEnter: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerEnterCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerLeave: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerLeaveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerMove: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerMoveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerOut: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerOutCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
+  var onLoad: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onLoadCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onLoadStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onLoadStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onLoadedData: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onLoadedDataCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onLoadedMetadataCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onLostPointerCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onLostPointerCaptureCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onMouseDown: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseDownCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseEnter: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseEnterCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseLeave: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseLeaveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseMove: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseMoveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseOut: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseOutCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseOver: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseOverCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseUp: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onMouseUpCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  var onPaste: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
+  var onPasteCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.ClipboardEventHandler[Target]] = js.undefined
+  var onPause: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onPauseCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onPlay: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onPlayCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onPlaying: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onPlayingCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onPointerCancel: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerCancelCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerDown: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerDownCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerEnter: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerEnterCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerLeave: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerLeaveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerMove: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerMoveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerOut: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerOutCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
   // Pointer Events
-  var onPointerOver: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerOverCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerUp: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onPointerUpCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler] = js.undefined
-  var onProgress: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onProgressCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onRateChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onRateChangeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
+  var onPointerOver: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerOverCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerUp: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onPointerUpCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PointerEventHandler[Target]] = js.undefined
+  var onProgress: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onProgressCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onRateChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onRateChangeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   // UI Events
-  var onScroll: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.UIEventHandler] = js.undefined
-  var onScrollCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.UIEventHandler] = js.undefined
-  var onSearch: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSearchCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSeeked: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSeekedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSeeking: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSeekingCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
+  var onScroll: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.UIEventHandler[Target]] = js.undefined
+  var onScrollCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.UIEventHandler[Target]] = js.undefined
+  var onSearch: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSearchCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSeeked: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSeekedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSeeking: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSeekingCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   // Selection Events
-  var onSelect: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSelectCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onStalled: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onStalledCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSubmit: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSubmitCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSuspend: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onSuspendCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onTimeUpdate: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onTimeUpdateCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
+  var onSelect: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSelectCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onStalled: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onStalledCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSubmit: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSubmitCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSuspend: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onSuspendCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onTimeUpdate: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onTimeUpdateCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   // Touch Events
-  var onTouchCancel: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler] = js.undefined
-  var onTouchCancelCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler] = js.undefined
-  var onTouchEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler] = js.undefined
-  var onTouchEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler] = js.undefined
-  var onTouchMove: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler] = js.undefined
-  var onTouchMoveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler] = js.undefined
-  var onTouchStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler] = js.undefined
-  var onTouchStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler] = js.undefined
+  var onTouchCancel: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
+  var onTouchCancelCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
+  var onTouchEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
+  var onTouchEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
+  var onTouchMove: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
+  var onTouchMoveCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
+  var onTouchStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
+  var onTouchStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
   // Transition Events
-  var onTransitionEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler] = js.undefined
-  var onTransitionEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler] = js.undefined
-  var onVolumeChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onVolumeChangeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onWaiting: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
-  var onWaitingCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler] = js.undefined
+  var onTransitionEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
+  var onTransitionEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
+  var onVolumeChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onVolumeChangeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onWaiting: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  var onWaitingCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   // Wheel Events
-  var onWheel: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.WheelEventHandler] = js.undefined
-  var onWheelCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.WheelEventHandler] = js.undefined
+  var onWheel: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.WheelEventHandler[Target]] = js.undefined
+  var onWheelCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.WheelEventHandler[Target]] = js.undefined
 }
 
 object DOMAttributes {
   @scala.inline
-  def apply(
+  def apply[Target /* <: EventTarget */](
     children: ComponentChildren = null,
     dangerouslySetInnerHTML: Anon_Html = null,
-    onAbort: Event => Unit = null,
-    onAbortCapture: Event => Unit = null,
-    onAnimationEnd: AnimationEvent => Unit = null,
-    onAnimationEndCapture: AnimationEvent => Unit = null,
-    onAnimationIteration: AnimationEvent => Unit = null,
-    onAnimationIterationCapture: AnimationEvent => Unit = null,
-    onAnimationStart: AnimationEvent => Unit = null,
-    onAnimationStartCapture: AnimationEvent => Unit = null,
-    onBlur: FocusEvent => Unit = null,
-    onBlurCapture: FocusEvent => Unit = null,
-    onCanPlay: Event => Unit = null,
-    onCanPlayCapture: Event => Unit = null,
-    onCanPlayThrough: Event => Unit = null,
-    onCanPlayThroughCapture: Event => Unit = null,
-    onChange: Event => Unit = null,
-    onChangeCapture: Event => Unit = null,
-    onClick: MouseEvent => Unit = null,
-    onClickCapture: MouseEvent => Unit = null,
-    onCompositionEnd: CompositionEvent => Unit = null,
-    onCompositionEndCapture: CompositionEvent => Unit = null,
-    onCompositionStart: CompositionEvent => Unit = null,
-    onCompositionStartCapture: CompositionEvent => Unit = null,
-    onCompositionUpdate: CompositionEvent => Unit = null,
-    onCompositionUpdateCapture: CompositionEvent => Unit = null,
-    onContextMenu: MouseEvent => Unit = null,
-    onContextMenuCapture: MouseEvent => Unit = null,
-    onCopy: ClipboardEvent => Unit = null,
-    onCopyCapture: ClipboardEvent => Unit = null,
-    onCut: ClipboardEvent => Unit = null,
-    onCutCapture: ClipboardEvent => Unit = null,
-    onDblClick: MouseEvent => Unit = null,
-    onDblClickCapture: MouseEvent => Unit = null,
-    onDrag: DragEvent => Unit = null,
-    onDragCapture: DragEvent => Unit = null,
-    onDragEnd: DragEvent => Unit = null,
-    onDragEndCapture: DragEvent => Unit = null,
-    onDragEnter: DragEvent => Unit = null,
-    onDragEnterCapture: DragEvent => Unit = null,
-    onDragExit: DragEvent => Unit = null,
-    onDragExitCapture: DragEvent => Unit = null,
-    onDragLeave: DragEvent => Unit = null,
-    onDragLeaveCapture: DragEvent => Unit = null,
-    onDragOver: DragEvent => Unit = null,
-    onDragOverCapture: DragEvent => Unit = null,
-    onDragStart: DragEvent => Unit = null,
-    onDragStartCapture: DragEvent => Unit = null,
-    onDrop: DragEvent => Unit = null,
-    onDropCapture: DragEvent => Unit = null,
-    onDurationChange: Event => Unit = null,
-    onDurationChangeCapture: Event => Unit = null,
-    onEmptied: Event => Unit = null,
-    onEmptiedCapture: Event => Unit = null,
-    onEncrypted: Event => Unit = null,
-    onEncryptedCapture: Event => Unit = null,
-    onEnded: Event => Unit = null,
-    onEndedCapture: Event => Unit = null,
-    onError: Event => Unit = null,
-    onErrorCapture: Event => Unit = null,
-    onFocus: FocusEvent => Unit = null,
-    onFocusCapture: FocusEvent => Unit = null,
-    onGotPointerCapture: PointerEvent => Unit = null,
-    onGotPointerCaptureCapture: PointerEvent => Unit = null,
-    onInput: Event => Unit = null,
-    onInputCapture: Event => Unit = null,
-    onInvalid: Event => Unit = null,
-    onInvalidCapture: Event => Unit = null,
-    onKeyDown: KeyboardEvent => Unit = null,
-    onKeyDownCapture: KeyboardEvent => Unit = null,
-    onKeyPress: KeyboardEvent => Unit = null,
-    onKeyPressCapture: KeyboardEvent => Unit = null,
-    onKeyUp: KeyboardEvent => Unit = null,
-    onKeyUpCapture: KeyboardEvent => Unit = null,
-    onLoad: Event => Unit = null,
-    onLoadCapture: Event => Unit = null,
-    onLoadStart: Event => Unit = null,
-    onLoadStartCapture: Event => Unit = null,
-    onLoadedData: Event => Unit = null,
-    onLoadedDataCapture: Event => Unit = null,
-    onLoadedMetadata: Event => Unit = null,
-    onLoadedMetadataCapture: Event => Unit = null,
-    onLostPointerCapture: PointerEvent => Unit = null,
-    onLostPointerCaptureCapture: PointerEvent => Unit = null,
-    onMouseDown: MouseEvent => Unit = null,
-    onMouseDownCapture: MouseEvent => Unit = null,
-    onMouseEnter: MouseEvent => Unit = null,
-    onMouseEnterCapture: MouseEvent => Unit = null,
-    onMouseLeave: MouseEvent => Unit = null,
-    onMouseLeaveCapture: MouseEvent => Unit = null,
-    onMouseMove: MouseEvent => Unit = null,
-    onMouseMoveCapture: MouseEvent => Unit = null,
-    onMouseOut: MouseEvent => Unit = null,
-    onMouseOutCapture: MouseEvent => Unit = null,
-    onMouseOver: MouseEvent => Unit = null,
-    onMouseOverCapture: MouseEvent => Unit = null,
-    onMouseUp: MouseEvent => Unit = null,
-    onMouseUpCapture: MouseEvent => Unit = null,
-    onPaste: ClipboardEvent => Unit = null,
-    onPasteCapture: ClipboardEvent => Unit = null,
-    onPause: Event => Unit = null,
-    onPauseCapture: Event => Unit = null,
-    onPlay: Event => Unit = null,
-    onPlayCapture: Event => Unit = null,
-    onPlaying: Event => Unit = null,
-    onPlayingCapture: Event => Unit = null,
-    onPointerCancel: PointerEvent => Unit = null,
-    onPointerCancelCapture: PointerEvent => Unit = null,
-    onPointerDown: PointerEvent => Unit = null,
-    onPointerDownCapture: PointerEvent => Unit = null,
-    onPointerEnter: PointerEvent => Unit = null,
-    onPointerEnterCapture: PointerEvent => Unit = null,
-    onPointerLeave: PointerEvent => Unit = null,
-    onPointerLeaveCapture: PointerEvent => Unit = null,
-    onPointerMove: PointerEvent => Unit = null,
-    onPointerMoveCapture: PointerEvent => Unit = null,
-    onPointerOut: PointerEvent => Unit = null,
-    onPointerOutCapture: PointerEvent => Unit = null,
-    onPointerOver: PointerEvent => Unit = null,
-    onPointerOverCapture: PointerEvent => Unit = null,
-    onPointerUp: PointerEvent => Unit = null,
-    onPointerUpCapture: PointerEvent => Unit = null,
-    onProgress: Event => Unit = null,
-    onProgressCapture: Event => Unit = null,
-    onRateChange: Event => Unit = null,
-    onRateChangeCapture: Event => Unit = null,
-    onScroll: UIEvent => Unit = null,
-    onScrollCapture: UIEvent => Unit = null,
-    onSearch: Event => Unit = null,
-    onSearchCapture: Event => Unit = null,
-    onSeeked: Event => Unit = null,
-    onSeekedCapture: Event => Unit = null,
-    onSeeking: Event => Unit = null,
-    onSeekingCapture: Event => Unit = null,
-    onSelect: Event => Unit = null,
-    onSelectCapture: Event => Unit = null,
-    onStalled: Event => Unit = null,
-    onStalledCapture: Event => Unit = null,
-    onSubmit: Event => Unit = null,
-    onSubmitCapture: Event => Unit = null,
-    onSuspend: Event => Unit = null,
-    onSuspendCapture: Event => Unit = null,
-    onTimeUpdate: Event => Unit = null,
-    onTimeUpdateCapture: Event => Unit = null,
-    onTouchCancel: TouchEvent => Unit = null,
-    onTouchCancelCapture: TouchEvent => Unit = null,
-    onTouchEnd: TouchEvent => Unit = null,
-    onTouchEndCapture: TouchEvent => Unit = null,
-    onTouchMove: TouchEvent => Unit = null,
-    onTouchMoveCapture: TouchEvent => Unit = null,
-    onTouchStart: TouchEvent => Unit = null,
-    onTouchStartCapture: TouchEvent => Unit = null,
-    onTransitionEnd: TransitionEvent => Unit = null,
-    onTransitionEndCapture: TransitionEvent => Unit = null,
-    onVolumeChange: Event => Unit = null,
-    onVolumeChangeCapture: Event => Unit = null,
-    onWaiting: Event => Unit = null,
-    onWaitingCapture: Event => Unit = null,
-    onWheel: WheelEvent => Unit = null,
-    onWheelCapture: WheelEvent => Unit = null
-  ): DOMAttributes = {
+    onAbort: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onAbortCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onAnimationEnd: typings.preact.srcJsxMod.JSXInternal.TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationEndCapture: typings.preact.srcJsxMod.JSXInternal.TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationIteration: typings.preact.srcJsxMod.JSXInternal.TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationIterationCapture: typings.preact.srcJsxMod.JSXInternal.TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationStart: typings.preact.srcJsxMod.JSXInternal.TargetedAnimationEvent[Target] => Unit = null,
+    onAnimationStartCapture: typings.preact.srcJsxMod.JSXInternal.TargetedAnimationEvent[Target] => Unit = null,
+    onBlur: typings.preact.srcJsxMod.JSXInternal.TargetedFocusEvent[Target] => Unit = null,
+    onBlurCapture: typings.preact.srcJsxMod.JSXInternal.TargetedFocusEvent[Target] => Unit = null,
+    onCanPlay: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onCanPlayCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onCanPlayThrough: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onCanPlayThroughCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onChange: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onChangeCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onClick: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onClickCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onCompositionEnd: typings.preact.srcJsxMod.JSXInternal.TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionEndCapture: typings.preact.srcJsxMod.JSXInternal.TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionStart: typings.preact.srcJsxMod.JSXInternal.TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionStartCapture: typings.preact.srcJsxMod.JSXInternal.TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionUpdate: typings.preact.srcJsxMod.JSXInternal.TargetedCompositionEvent[Target] => Unit = null,
+    onCompositionUpdateCapture: typings.preact.srcJsxMod.JSXInternal.TargetedCompositionEvent[Target] => Unit = null,
+    onContextMenu: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onContextMenuCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onCopy: typings.preact.srcJsxMod.JSXInternal.TargetedClipboardEvent[Target] => Unit = null,
+    onCopyCapture: typings.preact.srcJsxMod.JSXInternal.TargetedClipboardEvent[Target] => Unit = null,
+    onCut: typings.preact.srcJsxMod.JSXInternal.TargetedClipboardEvent[Target] => Unit = null,
+    onCutCapture: typings.preact.srcJsxMod.JSXInternal.TargetedClipboardEvent[Target] => Unit = null,
+    onDblClick: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onDblClickCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onDrag: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragCapture: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragEnd: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragEndCapture: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragEnter: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragEnterCapture: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragExit: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragExitCapture: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragLeave: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragLeaveCapture: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragOver: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragOverCapture: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragStart: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDragStartCapture: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDrop: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDropCapture: typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target] => Unit = null,
+    onDurationChange: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onDurationChangeCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onEmptied: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onEmptiedCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onEncrypted: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onEncryptedCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onEnded: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onEndedCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onError: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onErrorCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onFocus: typings.preact.srcJsxMod.JSXInternal.TargetedFocusEvent[Target] => Unit = null,
+    onFocusCapture: typings.preact.srcJsxMod.JSXInternal.TargetedFocusEvent[Target] => Unit = null,
+    onGotPointerCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onGotPointerCaptureCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onInput: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onInputCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onInvalid: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onInvalidCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onKeyDown: typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyDownCapture: typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyPress: typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyPressCapture: typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyUp: typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target] => Unit = null,
+    onKeyUpCapture: typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target] => Unit = null,
+    onLoad: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onLoadCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onLoadStart: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onLoadStartCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onLoadedData: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onLoadedDataCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onLoadedMetadata: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onLoadedMetadataCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onLostPointerCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onLostPointerCaptureCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onMouseDown: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseDownCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseEnter: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseEnterCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseLeave: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseLeaveCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseMove: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseMoveCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseOut: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseOutCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseOver: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseOverCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseUp: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onMouseUpCapture: typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target] => Unit = null,
+    onPaste: typings.preact.srcJsxMod.JSXInternal.TargetedClipboardEvent[Target] => Unit = null,
+    onPasteCapture: typings.preact.srcJsxMod.JSXInternal.TargetedClipboardEvent[Target] => Unit = null,
+    onPause: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onPauseCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onPlay: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onPlayCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onPlaying: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onPlayingCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onPointerCancel: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerCancelCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerDown: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerDownCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerEnter: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerEnterCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerLeave: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerLeaveCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerMove: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerMoveCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerOut: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerOutCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerOver: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerOverCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerUp: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onPointerUpCapture: typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target] => Unit = null,
+    onProgress: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onProgressCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onRateChange: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onRateChangeCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onScroll: typings.preact.srcJsxMod.JSXInternal.TargetedUIEvent[Target] => Unit = null,
+    onScrollCapture: typings.preact.srcJsxMod.JSXInternal.TargetedUIEvent[Target] => Unit = null,
+    onSearch: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSearchCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSeeked: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSeekedCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSeeking: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSeekingCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSelect: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSelectCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onStalled: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onStalledCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSubmit: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSubmitCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSuspend: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onSuspendCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onTimeUpdate: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onTimeUpdateCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onTouchCancel: typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target] => Unit = null,
+    onTouchCancelCapture: typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target] => Unit = null,
+    onTouchEnd: typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target] => Unit = null,
+    onTouchEndCapture: typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target] => Unit = null,
+    onTouchMove: typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target] => Unit = null,
+    onTouchMoveCapture: typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target] => Unit = null,
+    onTouchStart: typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target] => Unit = null,
+    onTouchStartCapture: typings.preact.srcJsxMod.JSXInternal.TargetedTouchEvent[Target] => Unit = null,
+    onTransitionEnd: typings.preact.srcJsxMod.JSXInternal.TargetedTransitionEvent[Target] => Unit = null,
+    onTransitionEndCapture: typings.preact.srcJsxMod.JSXInternal.TargetedTransitionEvent[Target] => Unit = null,
+    onVolumeChange: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onVolumeChangeCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onWaiting: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onWaitingCapture: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event] => Unit = null,
+    onWheel: typings.preact.srcJsxMod.JSXInternal.TargetedWheelEvent[Target] => Unit = null,
+    onWheelCapture: typings.preact.srcJsxMod.JSXInternal.TargetedWheelEvent[Target] => Unit = null
+  ): DOMAttributes[Target] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML)
@@ -521,7 +510,7 @@ object DOMAttributes {
     if (onWaitingCapture != null) __obj.updateDynamic("onWaitingCapture")(js.Any.fromFunction1(onWaitingCapture))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(js.Any.fromFunction1(onWheelCapture))
-    __obj.asInstanceOf[DOMAttributes]
+    __obj.asInstanceOf[DOMAttributes[Target]]
   }
 }
 

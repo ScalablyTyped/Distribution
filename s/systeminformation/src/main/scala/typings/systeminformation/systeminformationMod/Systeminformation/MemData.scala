@@ -8,7 +8,10 @@ trait MemData extends js.Object {
   var active: Double
   var available: Double
   var buffcache: Double
+  var buffers: Double
+  var cached: Double
   var free: Double
+  var slab: Double
   var swapfree: Double
   var swaptotal: Double
   var swapused: Double
@@ -22,14 +25,17 @@ object MemData {
     active: Double,
     available: Double,
     buffcache: Double,
+    buffers: Double,
+    cached: Double,
     free: Double,
+    slab: Double,
     swapfree: Double,
     swaptotal: Double,
     swapused: Double,
     total: Double,
     used: Double
   ): MemData = {
-    val __obj = js.Dynamic.literal(active = active, available = available, buffcache = buffcache, free = free, swapfree = swapfree, swaptotal = swaptotal, swapused = swapused, total = total, used = used)
+    val __obj = js.Dynamic.literal(active = active, available = available, buffcache = buffcache, buffers = buffers, cached = cached, free = free, slab = slab, swapfree = swapfree, swaptotal = swaptotal, swapused = swapused, total = total, used = used)
   
     __obj.asInstanceOf[MemData]
   }

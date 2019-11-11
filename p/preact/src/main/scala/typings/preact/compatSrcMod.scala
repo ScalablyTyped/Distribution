@@ -17,7 +17,9 @@ import typings.preact.srcMod.RefObject
 import typings.preact.srcMod.VNode
 import typings.std.Document
 import typings.std.DocumentFragment
+import typings.std.EventTarget
 import typings.std.Record
+import typings.std.SVGElement
 import typings.std.ShadowRoot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -146,7 +148,7 @@ object compatSrcMod extends js.Object {
     // -----------------------------------
     def apply(
       `type`: String,
-      props: HTMLAttributes with SVGAttributes with (Record[String, _]),
+      props: HTMLAttributes[EventTarget] with SVGAttributes[SVGElement] with (Record[String, _]),
       children: ComponentChildren*
     ): VNode[_] = js.native
     def apply[P](`type`: ComponentType[P], children: ComponentChildren*): VNode[_] = js.native

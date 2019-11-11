@@ -2,13 +2,14 @@ package typings.preact.srcJsxMod.JSXInternal
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.preact.srcMod.ClassAttributes
+import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HTMLAttributes
-  extends ClassAttributes[js.Any]
-     with DOMAttributes {
+trait HTMLAttributes[RefType /* <: EventTarget */]
+  extends ClassAttributes[RefType]
+     with DOMAttributes[RefType] {
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
   // Standard HTML Attributes
@@ -19,6 +20,7 @@ trait HTMLAttributes
   var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   var allowTransparency: js.UndefOr[Boolean] = js.undefined
   var alt: js.UndefOr[String] = js.undefined
+  var as: js.UndefOr[String] = js.undefined
   var async: js.UndefOr[Boolean] = js.undefined
   var autoComplete: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
@@ -160,9 +162,9 @@ trait HTMLAttributes
 
 object HTMLAttributes {
   @scala.inline
-  def apply(
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    DOMAttributes: DOMAttributes = null,
+  def apply[RefType /* <: EventTarget */](
+    ClassAttributes: ClassAttributes[RefType] = null,
+    DOMAttributes: DOMAttributes[RefType] = null,
     about: String = null,
     accept: String = null,
     acceptCharset: String = null,
@@ -171,6 +173,7 @@ object HTMLAttributes {
     allowFullScreen: js.UndefOr[Boolean] = js.undefined,
     allowTransparency: js.UndefOr[Boolean] = js.undefined,
     alt: String = null,
+    as: String = null,
     async: js.UndefOr[Boolean] = js.undefined,
     autoComplete: String = null,
     autoCorrect: String = null,
@@ -307,7 +310,7 @@ object HTMLAttributes {
     width: Double | String = null,
     wmode: String = null,
     wrap: String = null
-  ): HTMLAttributes = {
+  ): HTMLAttributes[RefType] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
@@ -319,6 +322,7 @@ object HTMLAttributes {
     if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen)
     if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency)
     if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (as != null) __obj.updateDynamic("as")(as)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect)
@@ -455,7 +459,7 @@ object HTMLAttributes {
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (wmode != null) __obj.updateDynamic("wmode")(wmode)
     if (wrap != null) __obj.updateDynamic("wrap")(wrap)
-    __obj.asInstanceOf[HTMLAttributes]
+    __obj.asInstanceOf[HTMLAttributes[RefType]]
   }
 }
 
