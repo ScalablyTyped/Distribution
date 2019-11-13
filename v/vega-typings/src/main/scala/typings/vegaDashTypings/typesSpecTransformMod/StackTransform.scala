@@ -8,10 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StackTransform extends _Transforms {
+trait StackTransform extends Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
-  var field: js.UndefOr[String | TransformField] = js.undefined
-  var groupby: js.UndefOr[js.Array[String | TransformField]] = js.undefined
+  var field: js.UndefOr[FieldRef] = js.undefined
+  var groupby: js.UndefOr[js.Array[FieldRef]] = js.undefined
   var offset: js.UndefOr[StackOffset | SignalRef] = js.undefined
   var sort: js.UndefOr[Compare] = js.undefined
   var `type`: stack
@@ -22,8 +22,8 @@ object StackTransform {
   def apply(
     `type`: stack,
     as: (Vector2[String | SignalRef]) | SignalRef = null,
-    field: String | TransformField = null,
-    groupby: js.Array[String | TransformField] = null,
+    field: FieldRef = null,
+    groupby: js.Array[FieldRef] = null,
     offset: StackOffset | SignalRef = null,
     sort: Compare = null
   ): StackTransform = {

@@ -1,6 +1,7 @@
 package typings.intercomDashClient.userMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.intercomDashClient.Anon_Remove
 import typings.intercomDashClient.companyMod.Company
 import typings.intercomDashClient.intercomDashClientStrings.contact
 import typings.intercomDashClient.intercomDashClientStrings.user
@@ -10,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateUpdateUser extends BaseUser {
-  var companies: js.Array[Partial[Company]]
+  var companies: js.Array[Partial[Company] with Anon_Remove]
 }
 
 object CreateUpdateUser {
@@ -18,7 +19,7 @@ object CreateUpdateUser {
   def apply(
     anonymous: Boolean,
     avatar: Avatar,
-    companies: js.Array[Partial[Company]],
+    companies: js.Array[Partial[Company] with Anon_Remove],
     created_at: Double,
     custom_attributes: StringDictionary[js.Any],
     id: String,

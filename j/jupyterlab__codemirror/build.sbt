@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__codemirror"
-version := "1.2.0-c6939b"
+version := "1.2.1-ce7131"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20191104Z-eba61d",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-189c55",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.0-cc1aa9",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-45c609",
   "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-6eaed4",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-f3cdd1",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-43843a",

@@ -40,10 +40,6 @@ object distAssertionsMod extends js.Object {
     var pushResult: js.Any = js.native
     var rootElement: js.Any = js.native
     var target: js.Any = js.native
-    /**
-      * @private
-      */
-    val targetDescription: js.Any = js.native
     var testContext: js.Any = js.native
     def containsText(expected: String): Unit = js.native
     def containsText(expected: String, message: String): Unit = js.native
@@ -409,6 +405,8 @@ object distAssertionsMod extends js.Object {
       * Assert that the {@link HTMLElement} or an {@link HTMLElement} matching the
       * `selector` is currently checked.
       *
+      * Note: This also supports `aria-checked="true/false"`.
+      *
       * @param {string?} message
       *
       * @example
@@ -447,6 +445,8 @@ object distAssertionsMod extends js.Object {
     /**
       * Assert that the {@link HTMLElement} or an {@link HTMLElement} matching the
       * `selector` is currently unchecked.
+      *
+      * Note: This also supports `aria-checked="true/false"`.
       *
       * @param {string?} message
       *
@@ -600,6 +600,10 @@ object distAssertionsMod extends js.Object {
     def matchesText(expected: Anon_Any, message: String): Unit = js.native
     def matchesText(expected: RegExp): Unit = js.native
     def matchesText(expected: RegExp, message: String): Unit = js.native
+    /**
+      * @private
+      */
+    /* private */ def targetDescription(): js.Any = js.native
   }
   
   @js.native

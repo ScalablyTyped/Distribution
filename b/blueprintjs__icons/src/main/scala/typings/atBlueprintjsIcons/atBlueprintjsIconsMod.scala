@@ -468,6 +468,11 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE901
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE902
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE903
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE904
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE905
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE906
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE907
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE908
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE909
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`+`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`?`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`BACKSLASHu2191 `
@@ -528,6 +533,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`credit-card`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`cube-add`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`cube-remove`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`curved-range-chart`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`data-lineage`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`derive-column`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`diagram-tree`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`direction-left`
@@ -647,6 +653,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`merge-links`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`mobile-phone`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`mobile-video`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`multi-select`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-drawing`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-grid-item`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layer`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layers`
@@ -692,6 +699,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`series-derived`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`series-filtered`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`series-search`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`shopping-cart`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`signal-search`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`sim-card`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`small-cross`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`small-minus`
@@ -755,6 +763,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.airplane
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.annotation
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.application
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.applications
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.archive
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.asterisk
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.badge
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.barcode
@@ -937,6 +946,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.train
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.translate
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.trash
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tree
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.unarchive
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.underline
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.undo
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.unlock
@@ -984,6 +994,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val ANNOTATION: BACKSLASHuE6F0 = js.native
     val APPLICATION: BACKSLASHuE735 = js.native
     val APPLICATIONS: BACKSLASHuE621 = js.native
+    val ARCHIVE: BACKSLASHuE907 = js.native
     val ARROWS_HORIZONTAL: `BACKSLASHu2194 ` = js.native
     val ARROWS_VERTICAL: `BACKSLASHu2195 ` = js.native
     val ARROW_BOTTOM_LEFT: BACKSLASHu2199 = js.native
@@ -1059,6 +1070,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val CUT: BACKSLASHuE6EF = js.native
     val DASHBOARD: BACKSLASHuE751 = js.native
     val DATABASE: BACKSLASHuE683 = js.native
+    val DATA_LINEAGE: BACKSLASHuE908 = js.native
     val DELETE: BACKSLASHuE644 = js.native
     val DELTA: BACKSLASHu0394 = js.native
     val DERIVE_COLUMN: BACKSLASHuE739 = js.native
@@ -1258,6 +1270,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val MUGSHOT: BACKSLASHuE6DB = js.native
     val MULTI_SELECT: BACKSLASHuE680 = js.native
     val MUSIC: BACKSLASHuE6A6 = js.native
+    val NEW_DRAWING: BACKSLASHuE905 = js.native
     val NEW_GRID_ITEM: BACKSLASHuE747 = js.native
     val NEW_LAYER: BACKSLASHuE902 = js.native
     val NEW_LAYERS: BACKSLASHuE903 = js.native
@@ -1348,6 +1361,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val SHIELD: BACKSLASHuE7B2 = js.native
     val SHOP: BACKSLASHuE6C2 = js.native
     val SHOPPING_CART: BACKSLASHuE6C1 = js.native
+    val SIGNAL_SEARCH: BACKSLASHuE909 = js.native
     val SIM_CARD: BACKSLASHuE718 = js.native
     val SLASH: BACKSLASHuE769 = js.native
     val SMALL_CROSS: BACKSLASHuE6D7 = js.native
@@ -1410,6 +1424,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val TRENDING_DOWN: BACKSLASHuE71A = js.native
     val TRENDING_UP: BACKSLASHuE719 = js.native
     val TWO_COLUMNS: BACKSLASHuE657 = js.native
+    val UNARCHIVE: BACKSLASHuE906 = js.native
     val UNDERLINE: BACKSLASHu2381 = js.native
     val UNDO: BACKSLASHu238C = js.native
     val UNGROUP_OBJECTS: BACKSLASHuE688 = js.native
@@ -1464,6 +1479,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val ANNOTATION: annotation = js.native
     val APPLICATION: application = js.native
     val APPLICATIONS: applications = js.native
+    val ARCHIVE: archive = js.native
     val ARROWS_HORIZONTAL: `arrows-horizontal` = js.native
     val ARROWS_VERTICAL: `arrows-vertical` = js.native
     val ARROW_BOTTOM_LEFT: `arrow-bottom-left` = js.native
@@ -1539,6 +1555,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val CUT: cut = js.native
     val DASHBOARD: dashboard = js.native
     val DATABASE: database = js.native
+    val DATA_LINEAGE: `data-lineage` = js.native
     val DELETE: delete = js.native
     val DELTA: delta = js.native
     val DERIVE_COLUMN: `derive-column` = js.native
@@ -1738,6 +1755,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val MUGSHOT: mugshot = js.native
     val MULTI_SELECT: `multi-select` = js.native
     val MUSIC: music = js.native
+    val NEW_DRAWING: `new-drawing` = js.native
     val NEW_GRID_ITEM: `new-grid-item` = js.native
     val NEW_LAYER: `new-layer` = js.native
     val NEW_LAYERS: `new-layers` = js.native
@@ -1828,6 +1846,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val SHIELD: shield = js.native
     val SHOP: shop = js.native
     val SHOPPING_CART: `shopping-cart` = js.native
+    val SIGNAL_SEARCH: `signal-search` = js.native
     val SIM_CARD: `sim-card` = js.native
     val SLASH: slash = js.native
     val SMALL_CROSS: `small-cross` = js.native
@@ -1890,6 +1909,7 @@ object atBlueprintjsIconsMod extends js.Object {
     val TRENDING_DOWN: `trending-down` = js.native
     val TRENDING_UP: `trending-up` = js.native
     val TWO_COLUMNS: `two-columns` = js.native
+    val UNARCHIVE: unarchive = js.native
     val UNDERLINE: underline = js.native
     val UNDO: undo = js.native
     val UNGROUP_OBJECTS: `ungroup-objects` = js.native

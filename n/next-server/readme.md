@@ -1,7 +1,7 @@
 
 # Scala.js typings for next-server
 
-Typings are for version 8.1
+Typings are for version 9.0.5
 
 
 
@@ -20,7 +20,7 @@ Typings are for version 8.1
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

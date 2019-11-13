@@ -7,10 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CountPatternTransform extends _Transforms {
+trait CountPatternTransform extends Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var `case`: js.UndefOr[String | SignalRef] = js.undefined
-  var field: String | TransformField
+  var field: FieldRef
   var pattern: js.UndefOr[String | SignalRef] = js.undefined
   var stopwords: js.UndefOr[String | SignalRef] = js.undefined
   var `type`: countpattern
@@ -19,7 +19,7 @@ trait CountPatternTransform extends _Transforms {
 object CountPatternTransform {
   @scala.inline
   def apply(
-    field: String | TransformField,
+    field: FieldRef,
     `type`: countpattern,
     as: (Vector2[String | SignalRef]) | SignalRef = null,
     `case`: String | SignalRef = null,

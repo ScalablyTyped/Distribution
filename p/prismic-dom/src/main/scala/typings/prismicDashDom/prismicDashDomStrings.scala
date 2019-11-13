@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object prismicDashDomStrings {
   @js.native
-  sealed trait Elements extends js.Object
-  
-  @js.native
   sealed trait em extends ElementType
   
   @js.native
@@ -66,8 +63,6 @@ object prismicDashDomStrings {
   @js.native
   sealed trait strong extends ElementType
   
-  @scala.inline
-  def Elements: Elements = "Elements".asInstanceOf[Elements]
   @scala.inline
   def em: em = "em".asInstanceOf[em]
   @scala.inline

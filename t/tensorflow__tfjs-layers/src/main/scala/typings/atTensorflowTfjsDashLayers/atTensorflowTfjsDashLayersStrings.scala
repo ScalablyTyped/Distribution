@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashLayersStrings {
   @js.native
-  sealed trait `1DOT3DOT1` extends js.Object
+  sealed trait `1DOT3DOT2` extends js.Object
   
   @js.native
   sealed trait Adadelta extends js.Object
@@ -101,6 +101,12 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait batch extends _YieldEveryOptions
   
   @js.native
+  sealed trait batch_input_shape extends js.Object
+  
+  @js.native
+  sealed trait batch_size extends js.Object
+  
+  @js.native
   sealed trait bool extends DataType
   
   @js.native
@@ -135,6 +141,9 @@ object atTensorflowTfjsDashLayersStrings {
   
   @js.native
   sealed trait cosine_proximity extends js.Object
+  
+  @js.native
+  sealed trait dtype extends js.Object
   
   @js.native
   sealed trait elu extends ActivationIdentifier
@@ -188,6 +197,12 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait identity extends _InitializerIdentifier
   
   @js.native
+  sealed trait input_dtype extends js.Object
+  
+  @js.native
+  sealed trait input_shape extends js.Object
+  
+  @js.native
   sealed trait int32 extends DataType
   
   @js.native
@@ -237,6 +252,9 @@ object atTensorflowTfjsDashLayersStrings {
   
   @js.native
   sealed trait mul extends BidirectionalMergeMode
+  
+  @js.native
+  sealed trait name extends js.Object
   
   @js.native
   sealed trait never extends _YieldEveryOptions
@@ -307,6 +325,9 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait temporal extends js.Object
   
   @js.native
+  sealed trait trainable extends js.Object
+  
+  @js.native
   sealed trait truncatedNormal
     extends Distribution
        with _InitializerIdentifier
@@ -332,7 +353,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait zeros extends _InitializerIdentifier
   
   @scala.inline
-  def `1DOT3DOT1`: `1DOT3DOT1` = "1.3.1".asInstanceOf[`1DOT3DOT1`]
+  def `1DOT3DOT2`: `1DOT3DOT2` = "1.3.2".asInstanceOf[`1DOT3DOT2`]
   @scala.inline
   def Adadelta: Adadelta = "Adadelta".asInstanceOf[Adadelta]
   @scala.inline
@@ -386,6 +407,10 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def batch: batch = "batch".asInstanceOf[batch]
   @scala.inline
+  def batch_input_shape: batch_input_shape = "batch_input_shape".asInstanceOf[batch_input_shape]
+  @scala.inline
+  def batch_size: batch_size = "batch_size".asInstanceOf[batch_size]
+  @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   @scala.inline
   def categorical_crossentropy: categorical_crossentropy = "categorical_crossentropy".asInstanceOf[categorical_crossentropy]
@@ -409,6 +434,8 @@ object atTensorflowTfjsDashLayersStrings {
   def constant: constant = "constant".asInstanceOf[constant]
   @scala.inline
   def cosine_proximity: cosine_proximity = "cosine_proximity".asInstanceOf[cosine_proximity]
+  @scala.inline
+  def dtype: dtype = "dtype".asInstanceOf[dtype]
   @scala.inline
   def elu: elu = "elu".asInstanceOf[elu]
   @scala.inline
@@ -444,6 +471,10 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   @scala.inline
+  def input_dtype: input_dtype = "input_dtype".asInstanceOf[input_dtype]
+  @scala.inline
+  def input_shape: input_shape = "input_shape".asInstanceOf[input_shape]
+  @scala.inline
   def int32: int32 = "int32".asInstanceOf[int32]
   @scala.inline
   def kullback_leibler_divergence: kullback_leibler_divergence = "kullback_leibler_divergence".asInstanceOf[kullback_leibler_divergence]
@@ -477,6 +508,8 @@ object atTensorflowTfjsDashLayersStrings {
   def minMaxNorm: minMaxNorm = "minMaxNorm".asInstanceOf[minMaxNorm]
   @scala.inline
   def mul: mul = "mul".asInstanceOf[mul]
+  @scala.inline
+  def name: name = "name".asInstanceOf[name]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
@@ -521,6 +554,8 @@ object atTensorflowTfjsDashLayersStrings {
   def tanh: tanh = "tanh".asInstanceOf[tanh]
   @scala.inline
   def temporal: temporal = "temporal".asInstanceOf[temporal]
+  @scala.inline
+  def trainable: trainable = "trainable".asInstanceOf[trainable]
   @scala.inline
   def truncatedNormal: truncatedNormal = "truncatedNormal".asInstanceOf[truncatedNormal]
   @scala.inline

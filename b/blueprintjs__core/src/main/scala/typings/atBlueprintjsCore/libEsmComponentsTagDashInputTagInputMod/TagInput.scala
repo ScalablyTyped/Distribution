@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput")
 @js.native
-class TagInput () extends AbstractPureComponent2[ITagInputProps, ITagInputState, ITagInputSnapshot] {
+class TagInput ()
+  extends AbstractPureComponent2[ITagInputProps, ITagInputState, js.Object] {
   var addTags: js.Any = js.native
   var findNextIndex: js.Any = js.native
   var getNextActiveIndex: js.Any = js.native
@@ -35,10 +36,6 @@ class TagInput () extends AbstractPureComponent2[ITagInputProps, ITagInputState,
   var refHandlers: js.Any = js.native
   /** Remove the item at the given index by invoking `onRemove` and `onChange` accordingly. */
   var removeIndexFromValues: js.Any = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MTagInput(`_`: ITagInputProps, __ : ITagInputState, snapshot: ITagInputSnapshot): Unit = js.native
-  @JSName("getSnapshotBeforeUpdate")
-  def getSnapshotBeforeUpdate_MTagInput(prevProps: ITagInputProps): ITagInputSnapshot = js.native
 }
 
 /* static members */
@@ -47,5 +44,6 @@ class TagInput () extends AbstractPureComponent2[ITagInputProps, ITagInputState,
 object TagInput extends js.Object {
   var defaultProps: Partial[ITagInputProps] with js.Object = js.native
   var displayName: String = js.native
+  def getDerivedStateFromProps(props: ITagInputProps, state: ITagInputState): Partial[ITagInputState] | Null = js.native
 }
 

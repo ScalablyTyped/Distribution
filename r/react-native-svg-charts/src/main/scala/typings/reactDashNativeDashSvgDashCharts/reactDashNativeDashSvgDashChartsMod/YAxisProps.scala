@@ -5,7 +5,6 @@ import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.TextProps
 import typings.reactDashNativeDashSvgDashCharts.Anon_BottomTop
-import typings.reactDashNativeDashSvgDashCharts.Anon_Index
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +31,7 @@ object YAxisProps {
     spacingOuter: Int | Double = null,
     style: StyleProp[ViewStyle] = null,
     svg: Partial[TextProps] = null,
-    yAccessor: /* props */ Anon_Index[T] => _ = null
+    yAccessor: /* props */ AccessorFunctionProps[T] => _ = null
   ): YAxisProps[T] = {
     val __obj = js.Dynamic.literal(data = data)
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)

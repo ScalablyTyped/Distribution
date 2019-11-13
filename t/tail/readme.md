@@ -1,7 +1,7 @@
 
 # Scala.js typings for tail
 
-Typings are for version 1.2
+Typings are for version 2.0
 
 ## Library description:
 tail a file in node

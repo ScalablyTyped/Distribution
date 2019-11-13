@@ -102,7 +102,11 @@ trait ITransfer extends IResourceObject {
     */
   var status: Statuses
   /**
-    * Can be card, bank_account, or stripe_account.
+    * A string that identifies this transaction as part of a group.
+    */
+  var transfer_group: String | Null
+  /**
+    *  Can be card, bank_account, or stripe_account.
     */
   var `type`: card | bank_account | stripe_account
 }
@@ -132,11 +136,13 @@ object ITransfer {
     source_type: SourceTypes,
     statement_descriptor: String,
     status: Statuses,
-    `type`: card | bank_account | stripe_account
+    `type`: card | bank_account | stripe_account,
+    transfer_group: String = null
   ): ITransfer = {
     val __obj = js.Dynamic.literal(amount = amount, amount_reversed = amount_reversed, application_fee = application_fee, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, date = date, description = description, destination = destination.asInstanceOf[js.Any], destination_payment = destination_payment, failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, reversals = reversals, reversed = reversed, source_transaction = source_transaction.asInstanceOf[js.Any], source_type = source_type, statement_descriptor = statement_descriptor, status = status)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[ITransfer]
   }
 }

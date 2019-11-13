@@ -54,6 +54,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`credit-card`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`cube-add`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`cube-remove`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`curved-range-chart`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`data-lineage`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`derive-column`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`diagram-tree`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`direction-left`
@@ -173,6 +174,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`merge-links`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`mobile-phone`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`mobile-video`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`multi-select`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-drawing`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-grid-item`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layer`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-layers`
@@ -218,6 +220,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`series-derived`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`series-filtered`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`series-search`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`shopping-cart`
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`signal-search`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`sim-card`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`small-cross`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`small-minus`
@@ -281,6 +284,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.airplane
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.annotation
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.application
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.applications
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.archive
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.asterisk
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.badge
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.barcode
@@ -463,6 +467,7 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.train
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.translate
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.trash
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.tree
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.unarchive
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.underline
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.undo
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.unlock
@@ -504,6 +509,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val ANNOTATION: annotation = js.native
   val APPLICATION: application = js.native
   val APPLICATIONS: applications = js.native
+  val ARCHIVE: archive = js.native
   val ARROWS_HORIZONTAL: `arrows-horizontal` = js.native
   val ARROWS_VERTICAL: `arrows-vertical` = js.native
   val ARROW_BOTTOM_LEFT: `arrow-bottom-left` = js.native
@@ -579,6 +585,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val CUT: cut = js.native
   val DASHBOARD: dashboard = js.native
   val DATABASE: database = js.native
+  val DATA_LINEAGE: `data-lineage` = js.native
   val DELETE: delete = js.native
   val DELTA: delta = js.native
   val DERIVE_COLUMN: `derive-column` = js.native
@@ -778,6 +785,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val MUGSHOT: mugshot = js.native
   val MULTI_SELECT: `multi-select` = js.native
   val MUSIC: music = js.native
+  val NEW_DRAWING: `new-drawing` = js.native
   val NEW_GRID_ITEM: `new-grid-item` = js.native
   val NEW_LAYER: `new-layer` = js.native
   val NEW_LAYERS: `new-layers` = js.native
@@ -868,6 +876,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val SHIELD: shield = js.native
   val SHOP: shop = js.native
   val SHOPPING_CART: `shopping-cart` = js.native
+  val SIGNAL_SEARCH: `signal-search` = js.native
   val SIM_CARD: `sim-card` = js.native
   val SLASH: slash = js.native
   val SMALL_CROSS: `small-cross` = js.native
@@ -930,6 +939,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val TRENDING_DOWN: `trending-down` = js.native
   val TRENDING_UP: `trending-up` = js.native
   val TWO_COLUMNS: `two-columns` = js.native
+  val UNARCHIVE: unarchive = js.native
   val UNDERLINE: underline = js.native
   val UNDO: undo = js.native
   val UNGROUP_OBJECTS: `ungroup-objects` = js.native

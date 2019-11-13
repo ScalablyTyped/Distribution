@@ -13,6 +13,7 @@ class Toaster ()
   extends AbstractPureComponent2[IToasterProps, IToasterState, js.Object]
      with IToaster {
   var createToastOptions: js.Any = js.native
+  var dismissIfAtLimit: js.Any = js.native
   var getDismissHandler: js.Any = js.native
   var getPositionClasses: js.Any = js.native
   var handleClose: js.Any = js.native

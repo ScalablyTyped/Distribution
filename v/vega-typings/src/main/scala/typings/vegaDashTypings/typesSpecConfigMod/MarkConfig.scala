@@ -7,42 +7,6 @@ import typings.vegaDashTypings.typesSpecEncodeMod.Interpolate
 import typings.vegaDashTypings.typesSpecEncodeMod.Orientation
 import typings.vegaDashTypings.typesSpecEncodeMod.SymbolShape
 import typings.vegaDashTypings.typesSpecEncodeMod.TextBaseline
-import typings.vegaDashTypings.vegaDashTypingsStrings.`all-scroll`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`col-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`context-menu`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`e-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`ew-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`n-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`ne-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`nesw-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`no-drop`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`not-allowed`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`ns-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`nw-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`nwse-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`row-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`s-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`se-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`sw-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`vertical-text`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`w-resize`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`zoom-in`
-import typings.vegaDashTypings.vegaDashTypingsStrings.`zoom-out`
-import typings.vegaDashTypings.vegaDashTypingsStrings.alias
-import typings.vegaDashTypings.vegaDashTypingsStrings.auto
-import typings.vegaDashTypings.vegaDashTypingsStrings.cell
-import typings.vegaDashTypings.vegaDashTypingsStrings.copy
-import typings.vegaDashTypings.vegaDashTypingsStrings.crosshair
-import typings.vegaDashTypings.vegaDashTypingsStrings.default
-import typings.vegaDashTypings.vegaDashTypingsStrings.grab
-import typings.vegaDashTypings.vegaDashTypingsStrings.grabbing
-import typings.vegaDashTypings.vegaDashTypingsStrings.help
-import typings.vegaDashTypings.vegaDashTypingsStrings.move
-import typings.vegaDashTypings.vegaDashTypingsStrings.none
-import typings.vegaDashTypings.vegaDashTypingsStrings.pointer
-import typings.vegaDashTypings.vegaDashTypingsStrings.progress
-import typings.vegaDashTypings.vegaDashTypingsStrings.text
-import typings.vegaDashTypings.vegaDashTypingsStrings.wait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,9 +33,7 @@ trait MarkConfig extends js.Object {
   /**
     * The mouse cursor used over the mark. Any valid [CSS cursor type](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#Values) can be used.
     */
-  var cursor: js.UndefOr[
-    auto | default | none | `context-menu` | help | pointer | progress | wait | cell | crosshair | text | `vertical-text` | alias | copy | move | `no-drop` | `not-allowed` | `e-resize` | `n-resize` | `ne-resize` | `nw-resize` | `s-resize` | `se-resize` | `sw-resize` | `w-resize` | `ew-resize` | `ns-resize` | `nesw-resize` | `nwse-resize` | `col-resize` | `row-resize` | `all-scroll` | `zoom-in` | `zoom-out` | grab | grabbing
-  ] = js.undefined
+  var cursor: js.UndefOr[Cursor] = js.undefined
   /**
     * The horizontal offset, in pixels, between the text label and its anchor point. The offset is applied after rotation by the _angle_ property.
     */
@@ -265,7 +227,7 @@ object MarkConfig {
     align: Align = null,
     angle: Int | Double = null,
     baseline: TextBaseline = null,
-    cursor: auto | default | none | `context-menu` | help | pointer | progress | wait | cell | crosshair | text | `vertical-text` | alias | copy | move | `no-drop` | `not-allowed` | `e-resize` | `n-resize` | `ne-resize` | `nw-resize` | `s-resize` | `se-resize` | `sw-resize` | `w-resize` | `ew-resize` | `ns-resize` | `nesw-resize` | `nwse-resize` | `col-resize` | `row-resize` | `all-scroll` | `zoom-in` | `zoom-out` | grab | grabbing = null,
+    cursor: Cursor = null,
     dx: Int | Double = null,
     dy: Int | Double = null,
     fill: String = null,
@@ -300,7 +262,7 @@ object MarkConfig {
     if (align != null) __obj.updateDynamic("align")(align)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill)

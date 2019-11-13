@@ -1,7 +1,7 @@
 
 # Scala.js typings for split_dot_js
 
-Typings are for version 1.3
+Typings are for version 1.4
 
 ## Library description:
 2kb unopinionated utility for resizeable split views

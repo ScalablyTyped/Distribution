@@ -27,8 +27,8 @@ object distLibSerializationComponentsMod extends js.Object {
   
   @js.native
   abstract class SerializerComponent[T] () extends AbstractComponent[Serializer] {
-    val priority: Double = js.native
     var serializeGroupSymbol: js.Any = js.native
+    def priority(): Double = js.native
     def serializeGroup(instance: js.Any): Boolean = js.native
     def supports(item: js.Any): Boolean = js.native
     def toObject(item: T): js.Any = js.native

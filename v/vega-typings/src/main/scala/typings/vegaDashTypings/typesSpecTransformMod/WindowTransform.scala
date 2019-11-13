@@ -8,11 +8,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WindowTransform extends _Transforms {
+trait WindowTransform extends Transforms {
   var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
-  var fields: js.UndefOr[(js.Array[String | TransformField | Null]) | SignalRef] = js.undefined
+  var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.undefined
   var frame: js.UndefOr[(Vector2[Double | SignalRef | Null]) | SignalRef] = js.undefined
-  var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.undefined
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   var ignorePeers: js.UndefOr[Boolean | SignalRef] = js.undefined
   var ops: js.UndefOr[js.Array[AggregateOp | WindowOnlyOp | SignalRef]] = js.undefined
   var params: js.UndefOr[(js.Array[Double | SignalRef | Null]) | SignalRef] = js.undefined
@@ -25,9 +25,9 @@ object WindowTransform {
   def apply(
     `type`: window,
     as: (js.Array[String | SignalRef | Null]) | SignalRef = null,
-    fields: (js.Array[String | TransformField | Null]) | SignalRef = null,
+    fields: (js.Array[FieldRef | Null]) | SignalRef = null,
     frame: (Vector2[Double | SignalRef | Null]) | SignalRef = null,
-    groupby: (js.Array[String | TransformField]) | SignalRef = null,
+    groupby: js.Array[FieldRef] | SignalRef = null,
     ignorePeers: Boolean | SignalRef = null,
     ops: js.Array[AggregateOp | WindowOnlyOp | SignalRef] = null,
     params: (js.Array[Double | SignalRef | Null]) | SignalRef = null,

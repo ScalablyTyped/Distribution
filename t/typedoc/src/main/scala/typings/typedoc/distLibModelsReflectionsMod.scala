@@ -49,6 +49,7 @@ object distLibModelsReflectionsMod extends js.Object {
     def this(`type`: TypeParameterType, parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection) = this()
   }
   
+  def splitUnquotedString(input: String, delimiter: String): js.Array[String] = js.native
   @js.native
   object ReflectionFlag extends js.Object {
     /* 2048 */ val Abstract: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionFlag.Abstract with Double = js.native

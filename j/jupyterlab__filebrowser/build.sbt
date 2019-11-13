@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__filebrowser"
-version := "1.2.0-1c2076"
+version := "1.2.1-d52c06"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.0-cc1aa9",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-45c609",
   "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-6eaed4",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-f3cdd1",
-  "org.scalablytyped" %%% "jupyterlab__docmanager" % "1.2.0-7f2fc3",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.0-529053",
+  "org.scalablytyped" %%% "jupyterlab__docmanager" % "1.2.1-97f179",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-9d62a3",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-43843a",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.0-1de96d",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-246d92",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-3243c2",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-ba16eb",
-  "org.scalablytyped" %%% "jupyterlab__ui-components" % "1.2.0-949e18",
+  "org.scalablytyped" %%% "jupyterlab__ui-components" % "1.2.1-3938f7",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-64f755",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-d6a857",
   "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-94a0c4",

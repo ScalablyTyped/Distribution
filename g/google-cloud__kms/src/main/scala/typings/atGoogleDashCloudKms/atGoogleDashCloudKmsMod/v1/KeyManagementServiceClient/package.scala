@@ -9,6 +9,8 @@ package object KeyManagementServiceClient {
   import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyRing
   import typings.std.Error
 
+  type CreateCryptoKeyCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.Tuple3[CryptoKey, js.Any, js.Any], Unit]
+  type CreateKeyRingCallback = js.Function2[/* err */ Error | Null, /* apiResponse */ js.Tuple3[KeyRing, js.Any, js.Any], Unit]
   type DecryptCallback = js.Function2[
     /* err */ Error | Null, 
     /* apiResponse */ js.Tuple3[DecryptResponse, js.Any, js.Any], 

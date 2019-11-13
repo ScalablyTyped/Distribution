@@ -12,6 +12,8 @@ import typings.vegaDashTypings.typesSpecValuesMod.FontWeightValue
 import typings.vegaDashTypings.typesSpecValuesMod.NumberValue
 import typings.vegaDashTypings.typesSpecValuesMod.StringValue
 import typings.vegaDashTypings.typesSpecValuesMod.TextBaselineValue
+import typings.vegaDashTypings.vegaDashTypingsStrings.center
+import typings.vegaDashTypings.vegaDashTypingsStrings.extent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +24,11 @@ trait Axis extends BaseAxis {
     */
   var encode: js.UndefOr[AxisEncode] = js.undefined
   /**
-    * The format specifier pattern for axis labels. For numerical values, must be a legal [d3-format](https://github.com/d3/d3-format#locale_format) specifier. For date-time values, must be a legal [d3-time-format](https://github.com/d3/d3-time-format#locale_format) specifier.
+    * The format specifier pattern for axis labels. For numerical values, must be a legal [d3-format](https://github.com/d3/d3-format#locale_format) specifier. For date-time values, must be a legal [d3-time-format](https://github.com/d3/d3-time-format#locale_format) specifier or multi-format object.
     */
-  var format: js.UndefOr[String | SignalRef] = js.undefined
+  var format: js.UndefOr[String | TimeFormatSpecifier | SignalRef] = js.undefined
   /**
-    * The format type for axis labels (number or time).
+    * The format type for axis labels (number, time, or utc).
     */
   var formatType: js.UndefOr[FormatType | SignalRef] = js.undefined
   /**
@@ -95,7 +97,7 @@ object Axis {
     domainOpacity: NumberValue = null,
     domainWidth: NumberValue = null,
     encode: AxisEncode = null,
-    format: String | SignalRef = null,
+    format: String | TimeFormatSpecifier | SignalRef = null,
     formatType: FormatType | SignalRef = null,
     grid: js.UndefOr[Boolean] = js.undefined,
     gridColor: ColorValue = null,
@@ -125,6 +127,7 @@ object Axis {
     minExtent: NumberValue = null,
     offset: NumberValue = null,
     position: NumberValue = null,
+    tickBand: center | extent | SignalRef = null,
     tickColor: ColorValue = null,
     tickCount: TickCount = null,
     tickDash: DashArrayValue = null,
@@ -153,6 +156,7 @@ object Axis {
     titlePadding: NumberValue = null,
     titleX: NumberValue = null,
     titleY: NumberValue = null,
+    translate: Int | Double = null,
     values: js.Array[_] | SignalRef = null,
     zindex: Int | Double = null
   ): Axis = {
@@ -195,6 +199,7 @@ object Axis {
     if (minExtent != null) __obj.updateDynamic("minExtent")(minExtent.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (tickBand != null) __obj.updateDynamic("tickBand")(tickBand.asInstanceOf[js.Any])
     if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
     if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
     if (tickDash != null) __obj.updateDynamic("tickDash")(tickDash.asInstanceOf[js.Any])
@@ -223,6 +228,7 @@ object Axis {
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
     if (titleX != null) __obj.updateDynamic("titleX")(titleX.asInstanceOf[js.Any])
     if (titleY != null) __obj.updateDynamic("titleY")(titleY.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Axis]

@@ -38,11 +38,11 @@ trait Options extends js.Object {
   // Minimum size of each element.
   var minSize: js.UndefOr[Double | js.Array[Double]] = js.undefined
   // Callback on drag.
-  var onDrag: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onDrag: js.UndefOr[js.Function1[/* sizes */ js.Array[Double], Unit]] = js.undefined
   // Callback on drag end.
-  var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onDragEnd: js.UndefOr[js.Function1[/* sizes */ js.Array[Double], Unit]] = js.undefined
   // Callback on drag start.
-  var onDragStart: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onDragStart: js.UndefOr[js.Function1[/* sizes */ js.Array[Double], Unit]] = js.undefined
   // Initial sizes of each element in percents or CSS values.
   var sizes: js.UndefOr[js.Array[Double]] = js.undefined
   // Snap to minimum size offset in pixels.
@@ -59,9 +59,9 @@ object Options {
     gutterSize: Int | Double = null,
     gutterStyle: (/* dimension */ width | height, /* gutterSize */ Double) => CSSStyleDeclarationPartial = null,
     minSize: Double | js.Array[Double] = null,
-    onDrag: () => Unit = null,
-    onDragEnd: () => Unit = null,
-    onDragStart: () => Unit = null,
+    onDrag: /* sizes */ js.Array[Double] => Unit = null,
+    onDragEnd: /* sizes */ js.Array[Double] => Unit = null,
+    onDragStart: /* sizes */ js.Array[Double] => Unit = null,
     sizes: js.Array[Double] = null,
     snapOffset: Int | Double = null
   ): Options = {
@@ -73,9 +73,9 @@ object Options {
     if (gutterSize != null) __obj.updateDynamic("gutterSize")(gutterSize.asInstanceOf[js.Any])
     if (gutterStyle != null) __obj.updateDynamic("gutterStyle")(js.Any.fromFunction2(gutterStyle))
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction0(onDrag))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction0(onDragEnd))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
+    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (sizes != null) __obj.updateDynamic("sizes")(sizes)
     if (snapOffset != null) __obj.updateDynamic("snapOffset")(snapOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

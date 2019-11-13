@@ -32,6 +32,10 @@ object distLibConverterTypesMod extends js.Object {
     extends typings.typedoc.distLibConverterTypesIntrinsicMod.IntrinsicConverter
   
   @js.native
+  class PredicateConverter ()
+    extends typings.typedoc.distLibConverterTypesPredicateMod.PredicateConverter
+  
+  @js.native
   class ReferenceConverter ()
     extends typings.typedoc.distLibConverterTypesReferenceMod.ReferenceConverter
   

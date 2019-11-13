@@ -48,6 +48,7 @@ import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
 import typings.react.reactMod.CompositionEvent
@@ -161,7 +162,7 @@ trait TreeViewProps extends js.Object {
     */
   var defaultExpandIcon: js.UndefOr[ReactNode] = js.undefined
   /**
-    * Expanded node ids.
+    * Expanded node ids. (Uncontrolled)
     */
   var defaultExpanded: js.UndefOr[js.Array[String]] = js.undefined
   /**
@@ -172,6 +173,10 @@ trait TreeViewProps extends js.Object {
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Expanded node ids. (Controlled)
+    */
+  var expanded: js.UndefOr[js.Array[String]] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
@@ -283,12 +288,14 @@ trait TreeViewProps extends js.Object {
   var onMouseUp: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
   var onMouseUpCapture: js.UndefOr[MouseEventHandler[HTMLUListElement]] = js.undefined
   /**
-    * Callback fired when a `TreeItem` is expanded/collapsed.
+    * Callback fired when tree items are expanded/collapsed.
     *
-    * @param {string} nodeId The id of the toggled node.
-    * @param {boolean} expanded The node status - If `true` the node was expanded. If `false` the node was collapsed.
+    * @param {object} event The event source of the callback
+    * @param {array} nodeIds The ids of the expanded nodes.
     */
-  var onNodeToggle: js.UndefOr[js.Function2[/* nodeId */ String, /* expanded */ Boolean, Unit]] = js.undefined
+  var onNodeToggle: js.UndefOr[
+    js.Function2[/* event */ ChangeEvent[js.Object], /* nodeIds */ js.Array[String], Unit]
+  ] = js.undefined
   var onPaste: js.UndefOr[ClipboardEventHandler[HTMLUListElement]] = js.undefined
   var onPasteCapture: js.UndefOr[ClipboardEventHandler[HTMLUListElement]] = js.undefined
   var onPause: js.UndefOr[ReactEventHandler[HTMLUListElement]] = js.undefined
@@ -444,6 +451,7 @@ object TreeViewProps {
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
+    expanded: js.Array[String] = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -504,7 +512,7 @@ object TreeViewProps {
     onMouseOut: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit = null,
     onMouseOver: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLUListElement, NativeMouseEvent] => Unit = null,
-    onNodeToggle: (/* nodeId */ String, /* expanded */ Boolean) => Unit = null,
+    onNodeToggle: (/* event */ ChangeEvent[js.Object], /* nodeIds */ js.Array[String]) => Unit = null,
     onPaste: ClipboardEvent[HTMLUListElement] => Unit = null,
     onPause: SyntheticEvent[HTMLUListElement, Event] => Unit = null,
     onPlay: SyntheticEvent[HTMLUListElement, Event] => Unit = null,
@@ -626,6 +634,7 @@ object TreeViewProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)

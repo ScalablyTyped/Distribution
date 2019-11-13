@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ColumnLayout extends js.Object {
   /** field - Required (not required in icon/button columns) this is the key for this column in the data array*/
-  var field: String
+  var field: js.UndefOr[String] = js.undefined
   /** title - Required This is the title that will be displayed in the header for this column */
   var title: String
   /** visible - (boolean, default - true) determines if the column is visible. (see Column Visibility for more details */
@@ -18,12 +18,13 @@ trait ColumnLayout extends js.Object {
 object ColumnLayout {
   @scala.inline
   def apply(
-    field: String,
     title: String,
+    field: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null
   ): ColumnLayout = {
-    val __obj = js.Dynamic.literal(field = field, title = title)
+    val __obj = js.Dynamic.literal(title = title)
+    if (field != null) __obj.updateDynamic("field")(field)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnLayout]

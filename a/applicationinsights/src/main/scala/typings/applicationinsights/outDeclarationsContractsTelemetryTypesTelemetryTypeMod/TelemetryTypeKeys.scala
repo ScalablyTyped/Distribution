@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.applicationinsights.applicationinsightsStrings.Metric
   - typings.applicationinsights.applicationinsightsStrings.Request
   - typings.applicationinsights.applicationinsightsStrings.Dependency
+  - typings.applicationinsights.applicationinsightsStrings.Availability
 */
 trait TelemetryTypeKeys extends js.Object
 

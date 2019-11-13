@@ -3,6 +3,7 @@ package typings.atBlueprintjsDatetime.libEsmDatePickerMod
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerBaseProps
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerModifiers
+import typings.atBlueprintjsDatetime.libEsmShortcutsMod.IDatePickerShortcut
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.ITimePickerProps
 import typings.atBlueprintjsDatetime.libEsmTimePickerMod.TimePrecision
 import typings.reactDashDayDashPicker.typesPropsMod.DayPickerProps
@@ -52,6 +53,22 @@ trait IDatePickerProps
     */
   var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.undefined
   /**
+    * Called when the `shortcuts` props is enabled and the user changes the shortcut.
+    */
+  var onShortcutChange: js.UndefOr[js.Function2[/* shortcut */ IDatePickerShortcut, /* index */ Double, Unit]] = js.undefined
+  /**
+    * The currently selected shortcut.
+    * If this prop is provided, the component acts in a controlled manner.
+    */
+  var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
+  /**
+    * Whether shortcuts to quickly select a date are displayed or not.
+    * If `true`, preset shortcuts will be displayed.
+    * If `false`, no shortcuts will be displayed.
+    * If an array is provided, the custom shortcuts will be displayed.
+    */
+  var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.undefined
+  /**
     * Whether the bottom bar displaying "Today" and "Clear" buttons should be shown.
     * @default false
     */
@@ -83,7 +100,10 @@ object IDatePickerProps {
     minDate: Date = null,
     modifiers: IDatePickerModifiers = null,
     onChange: (/* selectedDate */ Date, /* isUserChange */ Boolean) => Unit = null,
+    onShortcutChange: (/* shortcut */ IDatePickerShortcut, /* index */ Double) => Unit = null,
     reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined,
+    selectedShortcutIndex: Int | Double = null,
+    shortcuts: Boolean | js.Array[IDatePickerShortcut] = null,
     showActionsBar: js.UndefOr[Boolean] = js.undefined,
     timePickerProps: ITimePickerProps = null,
     timePrecision: TimePrecision = null,
@@ -104,7 +124,10 @@ object IDatePickerProps {
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
+    if (onShortcutChange != null) __obj.updateDynamic("onShortcutChange")(js.Any.fromFunction2(onShortcutChange))
     if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus)
+    if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
+    if (shortcuts != null) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
     if (!js.isUndefined(showActionsBar)) __obj.updateDynamic("showActionsBar")(showActionsBar)
     if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps)
     if (timePrecision != null) __obj.updateDynamic("timePrecision")(timePrecision)

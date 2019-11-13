@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "aphrodite" : "2.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "aphrodite" : "2.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

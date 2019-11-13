@@ -17,7 +17,7 @@ object distLibConverterTypesArrayMod extends js.Object {
   - typings.typedoc.distLibUtilsEventsMod.EventDispatcher because Already inherited
   - typings.typedoc.distLibUtilsComponentMod.AbstractComponent because Already inherited
   - typings.typedoc.distLibConverterComponentsMod.ConverterTypeComponent because Already inherited
-  - typings.typedoc.distLibConverterComponentsMod.TypeNodeConverter because var conflicts: _componentOptions, _componentOwner, _events, _listeners, _listeningTo, _savedListenId, componentName, internalOn, priority. Inlined supportsNode, supportsNode, convertNode, convertNode */ @js.native
+  - typings.typedoc.distLibConverterComponentsMod.TypeNodeConverter because var conflicts: _componentOptions, _componentOwner, _events, _listeners, _listeningTo, _savedListenId, application, componentName, internalOn, priority. Inlined supportsNode, supportsNode, convertNode, convertNode */ @js.native
   class ArrayConverter () extends TypeTypeConverter[TypeReference] {
     def convertNode(context: Context, node: ArrayTypeNode): js.UndefOr[Type] = js.native
     def convertNode(context: Context, node: ArrayTypeNode, `type`: TypeReference): js.UndefOr[typings.typedoc.distLibModelsTypesAbstractMod.Type] = js.native

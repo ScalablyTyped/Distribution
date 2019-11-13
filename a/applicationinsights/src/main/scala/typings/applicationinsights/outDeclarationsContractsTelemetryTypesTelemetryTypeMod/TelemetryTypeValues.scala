@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.applicationinsights.applicationinsightsStrings.MetricData
   - typings.applicationinsights.applicationinsightsStrings.RequestData
   - typings.applicationinsights.applicationinsightsStrings.RemoteDependencyData
+  - typings.applicationinsights.applicationinsightsStrings.AvailabilityData
 */
 trait TelemetryTypeValues extends js.Object
 

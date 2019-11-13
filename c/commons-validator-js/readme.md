@@ -1,7 +1,7 @@
 
 # Scala.js typings for commons-validator-js
 
-Typings are for version 1.0
+Typings are for version 1.0.1394
 
 ## Library description:
 JavaScript port of Apache Commons Validator
@@ -24,7 +24,7 @@ JavaScript port of Apache Commons Validator
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

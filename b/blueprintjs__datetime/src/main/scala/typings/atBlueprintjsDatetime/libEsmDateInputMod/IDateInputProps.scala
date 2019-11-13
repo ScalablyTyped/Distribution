@@ -6,6 +6,7 @@ import typings.atBlueprintjsCore.libEsmComponentsFormsInputGroupMod.IInputGroupP
 import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import typings.atBlueprintjsDatetime.atBlueprintjsDatetimeNumbers.`false`
 import typings.atBlueprintjsDatetime.libEsmDatePickerCoreMod.IDatePickerBaseProps
+import typings.atBlueprintjsDatetime.libEsmShortcutsMod.IDatePickerShortcut
 import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashDayDashPicker.typesPropsMod.DayPickerProps
 import typings.std.Date
@@ -55,6 +56,10 @@ trait IDateInputProps
     */
   var disabled: js.UndefOr[Boolean] = js.native
   /**
+    * Whether the component should take up the full width of its container.
+    */
+  var fill: js.UndefOr[Boolean] = js.native
+  /**
     * Props to pass to the [input group](#core/components/text-inputs.input-group).
     * `disabled` and `value` will be ignored in favor of the top-level props on this component.
     * `type` is fixed to "text" and `ref` is not supported; use `inputRef` instead.
@@ -97,6 +102,14 @@ trait IDateInputProps
     * Element to render on right side of input.
     */
   var rightElement: js.UndefOr[Element] = js.native
+  /**
+    * Whether shortcuts to quickly select a date are displayed or not.
+    * If `true`, preset shortcuts will be displayed.
+    * If `false`, no shortcuts will be displayed.
+    * If an array is provided, the custom shortcuts will be displayed.
+    * @default false
+    */
+  var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.native
   /**
     * Whether the bottom bar displaying "Today" and "Clear" buttons should be shown below the calendar.
     * @default false

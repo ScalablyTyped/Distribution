@@ -27,14 +27,12 @@ import scala.scalajs.js.annotation._
   *     text.setForegroundColor(0, text.getText().length / 2, '#00FFFF');
   */
 @js.native
-trait Text extends js.Object {
+trait Text extends Element {
   def appendText(text: String): Text = js.native
-  def copy(): Text = js.native
   def deleteText(startOffset: Integer, endOffsetInclusive: Integer): Text = js.native
   def editAsText(): Text = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Any = js.native
   def getAttributes(offset: Integer): js.Any = js.native
   def getBackgroundColor(): String = js.native
   def getBackgroundColor(offset: Integer): String = js.native
@@ -46,16 +44,11 @@ trait Text extends js.Object {
   def getForegroundColor(offset: Integer): String = js.native
   def getLinkUrl(): String = js.native
   def getLinkUrl(offset: Integer): String = js.native
-  def getNextSibling(): Element = js.native
-  def getParent(): ContainerElement = js.native
-  def getPreviousSibling(): Element = js.native
   def getText(): String = js.native
   def getTextAlignment(): TextAlignment = js.native
   def getTextAlignment(offset: Integer): TextAlignment = js.native
   def getTextAttributeIndices(): js.Array[Integer] = js.native
-  def getType(): ElementType = js.native
   def insertText(offset: Integer, text: String): Text = js.native
-  def isAtDocumentEnd(): Boolean = js.native
   def isBold(): Boolean = js.native
   def isBold(offset: Integer): Boolean = js.native
   def isItalic(): Boolean = js.native
@@ -64,10 +57,7 @@ trait Text extends js.Object {
   def isStrikethrough(offset: Integer): Boolean = js.native
   def isUnderline(): Boolean = js.native
   def isUnderline(offset: Integer): Boolean = js.native
-  def merge(): Text = js.native
-  def removeFromParent(): Text = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Any): Text = js.native
   def setAttributes(startOffset: Integer, endOffsetInclusive: Integer, attributes: js.Any): Text = js.native
   def setBackgroundColor(color: String): Text = js.native
   def setBackgroundColor(startOffset: Integer, endOffsetInclusive: Integer, color: String): Text = js.native

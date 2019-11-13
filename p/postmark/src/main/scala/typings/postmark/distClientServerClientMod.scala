@@ -233,14 +233,6 @@ object distClientServerClientMod extends js.Object {
     def getBounceDump(id: Double): js.Promise[BounceDump] = js.native
     def getBounceDump(id: Double, callback: Callback[BounceDump]): js.Promise[BounceDump] = js.native
     /**
-      * Get an array of tags associated with bounces.
-      *
-      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
-      * @returns A promise that will complete when the API responds (or an error occurs).
-      */
-    def getBounceTags(): js.Promise[js.Array[String]] = js.native
-    def getBounceTags(callback: Callback[js.Array[String]]): js.Promise[js.Array[String]] = js.native
-    /**
       * Get a batch of bounces.
       *
       * @param filter - Optional filtering parameters.

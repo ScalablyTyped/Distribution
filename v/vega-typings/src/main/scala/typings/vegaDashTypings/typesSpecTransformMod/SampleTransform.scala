@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SampleTransform extends _Transforms {
+trait SampleTransform extends Transforms {
   var size: Double | SignalRef
   var `type`: sample
 }

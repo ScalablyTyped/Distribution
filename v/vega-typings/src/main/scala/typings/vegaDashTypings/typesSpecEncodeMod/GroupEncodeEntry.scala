@@ -13,6 +13,10 @@ object GroupEncodeEntry {
   def apply(
     clip: ProductionRule[BooleanValueRef] = null,
     cornerRadius: ProductionRule[NumericValueRef] = null,
+    cornerRadiusBottomLeft: ProductionRule[NumericValueRef] = null,
+    cornerRadiusBottomRight: ProductionRule[NumericValueRef] = null,
+    cornerRadiusTopLeft: ProductionRule[NumericValueRef] = null,
+    cornerRadiusTopRight: ProductionRule[NumericValueRef] = null,
     cursor: ProductionRule[StringValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
@@ -38,6 +42,10 @@ object GroupEncodeEntry {
     val __obj = js.Dynamic.literal()
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (cornerRadiusBottomLeft != null) __obj.updateDynamic("cornerRadiusBottomLeft")(cornerRadiusBottomLeft.asInstanceOf[js.Any])
+    if (cornerRadiusBottomRight != null) __obj.updateDynamic("cornerRadiusBottomRight")(cornerRadiusBottomRight.asInstanceOf[js.Any])
+    if (cornerRadiusTopLeft != null) __obj.updateDynamic("cornerRadiusTopLeft")(cornerRadiusTopLeft.asInstanceOf[js.Any])
+    if (cornerRadiusTopRight != null) __obj.updateDynamic("cornerRadiusTopRight")(cornerRadiusTopRight.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])

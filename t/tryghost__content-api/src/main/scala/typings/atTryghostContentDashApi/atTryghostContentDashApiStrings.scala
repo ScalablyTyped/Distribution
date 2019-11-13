@@ -38,6 +38,9 @@ object atTryghostContentDashApiStrings {
   @js.native
   sealed trait v2 extends js.Object
   
+  @js.native
+  sealed trait v3 extends js.Object
+  
   @scala.inline
   def authors: authors = "authors".asInstanceOf[authors]
   @scala.inline
@@ -58,5 +61,7 @@ object atTryghostContentDashApiStrings {
   def tags: tags = "tags".asInstanceOf[tags]
   @scala.inline
   def v2: v2 = "v2".asInstanceOf[v2]
+  @scala.inline
+  def v3: v3 = "v3".asInstanceOf[v3]
 }
 

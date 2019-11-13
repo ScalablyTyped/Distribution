@@ -11,7 +11,7 @@ trait PadInfo3D extends js.Object {
   var left: Double
   var right: Double
   var top: Double
-  var `type`: String
+  var `type`: PadType
 }
 
 object PadInfo3D {
@@ -23,7 +23,7 @@ object PadInfo3D {
     left: Double,
     right: Double,
     top: Double,
-    `type`: String
+    `type`: PadType
   ): PadInfo3D = {
     val __obj = js.Dynamic.literal(back = back, bottom = bottom, front = front, left = left, right = right, top = top)
     __obj.updateDynamic("type")(`type`)

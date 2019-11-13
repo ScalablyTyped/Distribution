@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__logconsole"
-version := "1.0.1-2d74df"
+version := "1.0.2-f5827d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.0-cc1aa9",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-45c609",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-f3cdd1",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-43843a",
-  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.2.1-0ed857",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.0-1de96d",
+  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.2.2-b09776",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-246d92",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-3243c2",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-ba16eb",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-64f755",

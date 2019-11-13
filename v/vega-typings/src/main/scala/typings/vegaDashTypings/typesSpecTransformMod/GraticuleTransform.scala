@@ -7,12 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GraticuleTransform extends _Transforms {
-  var extent: js.UndefOr[Vector2[_] | SignalRef] = js.undefined
-  var extentMajor: js.UndefOr[Vector2[_] | SignalRef] = js.undefined
-  var extentMinor: js.UndefOr[Vector2[_] | SignalRef] = js.undefined
+trait GraticuleTransform extends Transforms {
+  var extent: js.UndefOr[(Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef] = js.undefined
+  var extentMajor: js.UndefOr[(Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef] = js.undefined
+  var extentMinor: js.UndefOr[(Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef] = js.undefined
   var precision: js.UndefOr[Double | SignalRef] = js.undefined
-  var signal: js.UndefOr[String] = js.undefined
+  var signal: js.UndefOr[SignalName] = js.undefined
   var step: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   var stepMajor: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   var stepMinor: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
@@ -23,11 +23,11 @@ object GraticuleTransform {
   @scala.inline
   def apply(
     `type`: graticule,
-    extent: Vector2[_] | SignalRef = null,
-    extentMajor: Vector2[_] | SignalRef = null,
-    extentMinor: Vector2[_] | SignalRef = null,
+    extent: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef = null,
+    extentMajor: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef = null,
+    extentMinor: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef = null,
     precision: Double | SignalRef = null,
-    signal: String = null,
+    signal: SignalName = null,
     step: (Vector2[Double | SignalRef]) | SignalRef = null,
     stepMajor: (Vector2[Double | SignalRef]) | SignalRef = null,
     stepMinor: (Vector2[Double | SignalRef]) | SignalRef = null

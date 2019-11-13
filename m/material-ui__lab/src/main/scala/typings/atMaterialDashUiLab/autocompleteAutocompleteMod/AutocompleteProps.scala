@@ -50,7 +50,6 @@ import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
-import typings.react.reactMod.ChangeEventHandler
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
 import typings.react.reactMod.ComponentType
@@ -85,7 +84,6 @@ import typings.react.reactMod.WheelEventHandler
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
-import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -102,9 +100,9 @@ trait AutocompleteProps extends js.Object {
     */
   var PaperComponent: js.UndefOr[ComponentType[HTMLAttributes[HTMLElement]]] = js.undefined
   /**
-    * The component used to render the popup.
+    * The component used to position the popup.
     */
-  var PopupComponent: js.UndefOr[ComponentType[PopupProps]] = js.undefined
+  var PopperComponent: js.UndefOr[ComponentType[PopperProps]] = js.undefined
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -180,6 +178,10 @@ trait AutocompleteProps extends js.Object {
     * If `true`, clear all values when the user presses escape and the popup is closed.
     */
   var clearOnEscape: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The icon to display in place of the default close icon.
+    */
+  var closeIcon: js.UndefOr[ReactNode] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Boolean] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
@@ -213,6 +215,11 @@ trait AutocompleteProps extends js.Object {
     * If `true`, the popup won't open on input focus.
     */
   var disableOpenOnFocus: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Disable the portal behavior.
+    * The children stay within it's parent DOM hierarchy.
+    */
+  var disablePortal: js.UndefOr[Boolean] = js.undefined
   /**
     * If `true`, the input will be disabled.
     */
@@ -266,6 +273,10 @@ trait AutocompleteProps extends js.Object {
   var inlist: js.UndefOr[js.Any] = js.undefined
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  /**
+    * The input value.
+    */
+  var inputValue: js.UndefOr[String] = js.undefined
   var is: js.UndefOr[String] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -372,8 +383,11 @@ trait AutocompleteProps extends js.Object {
   var onInputCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   /**
     * Callback fired when the input value changes.
+    *
+    * @param {object} event The event source of the callback.
+    * @param {string} value
     */
-  var onInputChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
+  var onInputChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[js.Object], /* value */ js.Any, Unit]] = js.undefined
   var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onInvalidCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
@@ -482,6 +496,10 @@ trait AutocompleteProps extends js.Object {
     */
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
+  /**
+    * The icon to display in place of the default popup icon.
+    */
+  var popupIcon: js.UndefOr[ReactNode] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
   var radioGroup: js.UndefOr[String] = js.undefined
@@ -504,9 +522,10 @@ trait AutocompleteProps extends js.Object {
     * Render the selected value.
     *
     * @param {any} value The `value` provided to the component.
+    * @param {function} getTagProps A tag props getter.
     * @returns {ReactNode}
     */
-  var renderTags: js.UndefOr[js.Function2[/* value */ js.Any, /* state */ RenderValueState, ReactNode]] = js.undefined
+  var renderTags: js.UndefOr[js.Function2[/* value */ js.Any, /* getTagProps */ GetTagProps, ReactNode]] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
   var results: js.UndefOr[Double] = js.undefined
   var role: js.UndefOr[String] = js.undefined
@@ -521,7 +540,7 @@ trait AutocompleteProps extends js.Object {
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   /**
-    * The input value.
+    * The value of the autocomplete.
     */
   var value: js.UndefOr[js.Any] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
@@ -540,7 +559,7 @@ object AutocompleteProps {
     renderInput: RenderInputParams => ReactNode,
     ListboxComponent: ComponentType[HTMLAttributes[HTMLElement]] = null,
     PaperComponent: ComponentType[HTMLAttributes[HTMLElement]] = null,
-    PopupComponent: ComponentType[PopupProps] = null,
+    PopperComponent: ComponentType[PopperProps] = null,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -600,6 +619,7 @@ object AutocompleteProps {
     className: String = null,
     classes: PartialClassNameMapAutocompleteClassKey = null,
     clearOnEscape: js.UndefOr[Boolean] = js.undefined,
+    closeIcon: ReactNode = null,
     color: String = null,
     contentEditable: js.UndefOr[Boolean] = js.undefined,
     contextMenu: String = null,
@@ -613,6 +633,7 @@ object AutocompleteProps {
     disableCloseOnSelect: js.UndefOr[Boolean] = js.undefined,
     disableListWrap: js.UndefOr[Boolean] = js.undefined,
     disableOpenOnFocus: js.UndefOr[Boolean] = js.undefined,
+    disablePortal: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
     filterOptions: (/* options */ js.Array[_], /* state */ FilterOptionsState) => js.Array[_] = null,
@@ -627,6 +648,7 @@ object AutocompleteProps {
     inlist: js.Any = null,
     innerRef: Ref[_] | RefObject[_] = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
+    inputValue: String = null,
     is: String = null,
     itemID: String = null,
     itemProp: String = null,
@@ -672,7 +694,7 @@ object AutocompleteProps {
     onError: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onFocus: FocusEvent[HTMLDivElement] => Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
-    onInputChange: ChangeEvent[HTMLInputElement] => Unit = null,
+    onInputChange: (/* event */ ChangeEvent[js.Object], /* value */ js.Any) => Unit = null,
     onInvalid: FormEvent[HTMLDivElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLDivElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLDivElement] => Unit = null,
@@ -723,12 +745,13 @@ object AutocompleteProps {
     open: js.UndefOr[Boolean] = js.undefined,
     options: js.Array[_] = null,
     placeholder: String = null,
+    popupIcon: ReactNode = null,
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
     renderGroup: /* params */ RenderGroupParams => ReactNode = null,
     renderOption: (/* option */ js.Any, /* state */ RenderOptionState) => ReactNode = null,
-    renderTags: (/* value */ js.Any, /* state */ RenderValueState) => ReactNode = null,
+    renderTags: (/* value */ js.Any, /* getTagProps */ GetTagProps) => ReactNode = null,
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
@@ -748,7 +771,7 @@ object AutocompleteProps {
     val __obj = js.Dynamic.literal(renderInput = js.Any.fromFunction1(renderInput))
     if (ListboxComponent != null) __obj.updateDynamic("ListboxComponent")(ListboxComponent.asInstanceOf[js.Any])
     if (PaperComponent != null) __obj.updateDynamic("PaperComponent")(PaperComponent.asInstanceOf[js.Any])
-    if (PopupComponent != null) __obj.updateDynamic("PopupComponent")(PopupComponent.asInstanceOf[js.Any])
+    if (PopperComponent != null) __obj.updateDynamic("PopperComponent")(PopperComponent.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
@@ -808,6 +831,7 @@ object AutocompleteProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (!js.isUndefined(clearOnEscape)) __obj.updateDynamic("clearOnEscape")(clearOnEscape)
+    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable)
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu)
@@ -821,6 +845,7 @@ object AutocompleteProps {
     if (!js.isUndefined(disableCloseOnSelect)) __obj.updateDynamic("disableCloseOnSelect")(disableCloseOnSelect)
     if (!js.isUndefined(disableListWrap)) __obj.updateDynamic("disableListWrap")(disableListWrap)
     if (!js.isUndefined(disableOpenOnFocus)) __obj.updateDynamic("disableOpenOnFocus")(disableOpenOnFocus)
+    if (!js.isUndefined(disablePortal)) __obj.updateDynamic("disablePortal")(disablePortal)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(js.Any.fromFunction2(filterOptions))
@@ -835,6 +860,7 @@ object AutocompleteProps {
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
+    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
     if (is != null) __obj.updateDynamic("is")(is)
     if (itemID != null) __obj.updateDynamic("itemID")(itemID)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)
@@ -880,7 +906,7 @@ object AutocompleteProps {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction1(onInputChange))
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction2(onInputChange))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
@@ -931,6 +957,7 @@ object AutocompleteProps {
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (options != null) __obj.updateDynamic("options")(options)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (popupIcon != null) __obj.updateDynamic("popupIcon")(popupIcon.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (property != null) __obj.updateDynamic("property")(property)
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup)

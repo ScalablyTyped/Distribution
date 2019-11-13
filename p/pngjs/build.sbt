@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pngjs"
-version := "3.3-dt-20180613Z-74df97"
+version := "3.4-dt-20191111Z-a406ea"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

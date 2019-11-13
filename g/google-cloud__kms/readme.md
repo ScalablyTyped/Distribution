@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__kms
 
-Typings are for version 1.3
+Typings are for version 1.5
 
 ## Library description:
 Google Cloud Key Management Service (KMS) API client for Node.js

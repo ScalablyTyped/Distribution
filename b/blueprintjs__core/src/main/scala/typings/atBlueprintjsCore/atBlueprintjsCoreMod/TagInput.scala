@@ -1,6 +1,7 @@
 package typings.atBlueprintjsCore.atBlueprintjsCoreMod
 
 import typings.atBlueprintjsCore.libEsmComponentsTagDashInputTagInputMod.ITagInputProps
+import typings.atBlueprintjsCore.libEsmComponentsTagDashInputTagInputMod.ITagInputState
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,5 +18,6 @@ class TagInput ()
 object TagInput extends js.Object {
   var defaultProps: Partial[ITagInputProps] with js.Object = js.native
   var displayName: String = js.native
+  def getDerivedStateFromProps(props: ITagInputProps, state: ITagInputState): Partial[ITagInputState] | Null = js.native
 }
 

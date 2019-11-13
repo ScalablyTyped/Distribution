@@ -34,13 +34,6 @@ package object Chai {
   type ObjectProperty = String | js.Symbol | Double
   type Operator = String
   type OperatorComparable = js.UndefOr[Boolean | Null | Double | String | Date]
-  type OwnProperty = js.Function2[/* name */ String, /* message */ js.UndefOr[String], Assertion]
-  type Property = js.Function3[
-    /* name */ String, 
-    /* value */ js.UndefOr[js.Any], 
-    /* message */ js.UndefOr[String], 
-    Assertion
-  ]
   type PropertyChange = js.Function3[
     /* object */ Object, 
     /* property */ js.UndefOr[String], 

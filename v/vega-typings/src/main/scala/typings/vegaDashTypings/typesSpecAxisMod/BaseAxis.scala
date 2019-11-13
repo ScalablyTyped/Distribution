@@ -11,6 +11,8 @@ import typings.vegaDashTypings.typesSpecValuesMod.FontWeightValue
 import typings.vegaDashTypings.typesSpecValuesMod.NumberValue
 import typings.vegaDashTypings.typesSpecValuesMod.StringValue
 import typings.vegaDashTypings.typesSpecValuesMod.TextBaselineValue
+import typings.vegaDashTypings.vegaDashTypingsStrings.center
+import typings.vegaDashTypings.vegaDashTypingsStrings.extent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -186,6 +188,10 @@ trait BaseAxis extends js.Object {
     */
   var minExtent: js.UndefOr[NumberValue] = js.undefined
   /**
+    * For band scales, indicates if ticks and grid lines should be placed at the center of a band (default) or at the band extents to indicate intervals.
+    */
+  var tickBand: js.UndefOr[center | extent | SignalRef] = js.undefined
+  /**
     * The color of the axis's tick.
     *
     * __Default value:__ `"gray"`
@@ -304,6 +310,10 @@ trait BaseAxis extends js.Object {
     * Y-coordinate of the axis title relative to the axis group.
     */
   var titleY: js.UndefOr[NumberValue] = js.undefined
+  /**
+    * Translation offset in pixels applied to the axis group mark x and y. If specified, overrides the default behavior of a 0.5 offset to pixel-align stroked lines.
+    */
+  var translate: js.UndefOr[Double] = js.undefined
 }
 
 object BaseAxis {
@@ -341,6 +351,7 @@ object BaseAxis {
     labels: js.UndefOr[Boolean] = js.undefined,
     maxExtent: NumberValue = null,
     minExtent: NumberValue = null,
+    tickBand: center | extent | SignalRef = null,
     tickColor: ColorValue = null,
     tickDash: DashArrayValue = null,
     tickDashOffset: NumberValue = null,
@@ -365,7 +376,8 @@ object BaseAxis {
     titleOpacity: NumberValue = null,
     titlePadding: NumberValue = null,
     titleX: NumberValue = null,
-    titleY: NumberValue = null
+    titleY: NumberValue = null,
+    translate: Int | Double = null
   ): BaseAxis = {
     val __obj = js.Dynamic.literal()
     if (bandPosition != null) __obj.updateDynamic("bandPosition")(bandPosition.asInstanceOf[js.Any])
@@ -400,6 +412,7 @@ object BaseAxis {
     if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels)
     if (maxExtent != null) __obj.updateDynamic("maxExtent")(maxExtent.asInstanceOf[js.Any])
     if (minExtent != null) __obj.updateDynamic("minExtent")(minExtent.asInstanceOf[js.Any])
+    if (tickBand != null) __obj.updateDynamic("tickBand")(tickBand.asInstanceOf[js.Any])
     if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
     if (tickDash != null) __obj.updateDynamic("tickDash")(tickDash.asInstanceOf[js.Any])
     if (tickDashOffset != null) __obj.updateDynamic("tickDashOffset")(tickDashOffset.asInstanceOf[js.Any])
@@ -425,6 +438,7 @@ object BaseAxis {
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
     if (titleX != null) __obj.updateDynamic("titleX")(titleX.asInstanceOf[js.Any])
     if (titleY != null) __obj.updateDynamic("titleY")(titleY.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseAxis]
   }
 }

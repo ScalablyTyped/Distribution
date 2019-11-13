@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pouch-redux-middleware"
-version := "1.2-dt-20190924Z-0b62a3"
+version := "1.2-dt-20190924Z-05b2f2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-d67e76",
-  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190925Z-498396",
+  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20191111Z-7ff857",
   "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-0e2515",
   "org.scalablytyped" %%% "redux" % "4.0.4-ae4e73",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")

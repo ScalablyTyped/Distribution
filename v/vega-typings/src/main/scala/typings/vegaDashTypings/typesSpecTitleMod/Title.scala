@@ -16,18 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Title extends BaseTitle[
-      NumberValue, 
-      StringValue, 
-      ColorValue, 
-      FontWeightValue, 
-      FontStyleValue, 
-      AlignValue, 
-      TextBaselineValue, 
-      TitleFrame | StringValue, 
-      AnchorValue, 
-      TitleOrient | SignalRef
-    ] {
+trait Title extends BaseTitle {
   /**
     * Mark definitions for custom title encoding.
     */

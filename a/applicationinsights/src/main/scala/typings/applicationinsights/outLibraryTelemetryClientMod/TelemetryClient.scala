@@ -2,6 +2,7 @@ package typings.applicationinsights.outLibraryTelemetryClientMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.applicationinsights.outDeclarationsContractsMod.Envelope
+import typings.applicationinsights.outDeclarationsContractsTelemetryTypesAvailabilityTelemetryMod.AvailabilityTelemetry
 import typings.applicationinsights.outDeclarationsContractsTelemetryTypesDependencyTelemetryMod.DependencyTelemetry
 import typings.applicationinsights.outDeclarationsContractsTelemetryTypesEventTelemetryMod.EventTelemetry
 import typings.applicationinsights.outDeclarationsContractsTelemetryTypesExceptionTelemetryMod.ExceptionTelemetry
@@ -54,6 +55,11 @@ trait TelemetryClient extends js.Object {
     * @param telemetryType specify the type of telemetry you are tracking from the list of Contracts.DataTypes
     */
   def track(telemetry: Telemetry, telemetryType: TelemetryType): Unit = js.native
+  /**
+    * Log information about availability of an application
+    * @param telemetry      Object encapsulating tracking options
+    */
+  def trackAvailability(telemetry: AvailabilityTelemetry): Unit = js.native
   /**
     * Log a dependency. Note that the default client will attempt to collect dependencies automatically so only use this for dependencies
     * that aren't automatically captured or if you've disabled automatic dependency collection.

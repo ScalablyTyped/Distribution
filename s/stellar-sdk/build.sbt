@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stellar-sdk"
-version := "3.1.2-8252eb"
+version := "3.2.0-0be12d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

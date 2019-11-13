@@ -18,16 +18,19 @@ class DatePicker protected ()
   var handleClearClick: js.Any = js.native
   var handleDayClick: js.Any = js.native
   var handleMonthChange: js.Any = js.native
+  var handleShortcutClick: js.Any = js.native
   var handleTimeChange: js.Any = js.native
   var handleTodayClick: js.Any = js.native
   var ignoreNextMonthChange: js.Any = js.native
   var isToday: js.Any = js.native
+  var maybeRenderShortcuts: js.Any = js.native
   var maybeRenderTimePicker: js.Any = js.native
   var renderCaption: js.Any = js.native
   var renderDay: js.Any = js.native
   var renderNavbar: js.Any = js.native
   var renderOptionsBar: js.Any = js.native
   var shouldHighlightCurrentDay: js.Any = js.native
+  var updateDay: js.Any = js.native
   /**
     * Update `value` by invoking `onChange` (always) and setting state (if uncontrolled).
     */

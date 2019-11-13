@@ -2,6 +2,7 @@ package typings.atTryghostContentDashApi.atTryghostContentDashApiMod
 
 import typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.canary
 import typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.v2
+import typings.atTryghostContentDashApi.atTryghostContentDashApiStrings.v3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +17,14 @@ trait GhostContentAPIOptions extends js.Object {
   /**
     * Version of GhostContentAPI
     *
-    * Supported Versions: 'v2', 'canary'
+    * Supported Versions: 'v2', 'v3', 'canary'
     */
-  var version: v2 | canary
+  var version: v2 | v3 | canary
 }
 
 object GhostContentAPIOptions {
   @scala.inline
-  def apply(key: String, url: String, version: v2 | canary, ghostPath: String = null, host: String = null): GhostContentAPIOptions = {
+  def apply(key: String, url: String, version: v2 | v3 | canary, ghostPath: String = null, host: String = null): GhostContentAPIOptions = {
     val __obj = js.Dynamic.literal(key = key, url = url, version = version.asInstanceOf[js.Any])
     if (ghostPath != null) __obj.updateDynamic("ghostPath")(ghostPath)
     if (host != null) __obj.updateDynamic("host")(host)

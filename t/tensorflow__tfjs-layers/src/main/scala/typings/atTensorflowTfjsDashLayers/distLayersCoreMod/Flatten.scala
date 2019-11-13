@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashLayers.distLayersCoreMod
 
 import typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer
-import typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.LayerArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Flatten")
 @js.native
 class Flatten () extends Layer {
-  def this(args: LayerArgs) = this()
+  def this(args: FlattenLayerArgs) = this()
+  var dataFormat: js.Any = js.native
 }
 
 /* static members */

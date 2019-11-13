@@ -36,6 +36,10 @@ trait IPlan extends IResourceObject {
     */
   var amount: Double | Null
   /**
+    * Same as `amount`, but contains a decimal value with at most 12 decimal places.
+    */
+  var amount_decimal: String | Null
+  /**
     * Describes how to compute the price per period. Either `per_unit` or `tiered`. `per_unit` indicates that the fixed amount (specified in `amount`) will be charged per unit in `quantity` (for plans with `usage_type=licensed`), or per unit of total usage (for plans with `usage_type=metered`). `tiered` indicates that the unit pricing will be computed using a tiering strategy as defined using the `tiers` and `tiers_mode` attributes.
     */
   var billing_scheme: per_unit | tiered
@@ -114,6 +118,7 @@ object IPlan {
     usage_type: metered | licensed,
     aggregate_usage: sum | last_during_period | last_ever | max = null,
     amount: Int | Double = null,
+    amount_decimal: String = null,
     nickname: String = null,
     product: String | IProduct = null,
     tiers: js.Array[ITier] = null,
@@ -125,6 +130,7 @@ object IPlan {
     __obj.updateDynamic("object")(`object`)
     if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (amount_decimal != null) __obj.updateDynamic("amount_decimal")(amount_decimal)
     if (nickname != null) __obj.updateDynamic("nickname")(nickname)
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     if (tiers != null) __obj.updateDynamic("tiers")(tiers)

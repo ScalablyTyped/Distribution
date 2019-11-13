@@ -24,6 +24,7 @@ object IdbAdapterConfiguration {
   def apply(
     adapter: idb,
     auto_compaction: js.UndefOr[Boolean] = js.undefined,
+    deterministic_revs: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     prefix: String = null,
     revs_limit: Int | Double = null,
@@ -32,6 +33,7 @@ object IdbAdapterConfiguration {
   ): IdbAdapterConfiguration = {
     val __obj = js.Dynamic.literal(adapter = adapter)
     if (!js.isUndefined(auto_compaction)) __obj.updateDynamic("auto_compaction")(auto_compaction)
+    if (!js.isUndefined(deterministic_revs)) __obj.updateDynamic("deterministic_revs")(deterministic_revs)
     if (name != null) __obj.updateDynamic("name")(name)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (revs_limit != null) __obj.updateDynamic("revs_limit")(revs_limit.asInstanceOf[js.Any])

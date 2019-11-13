@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pixi-spine" : "2.1.3"
+      "pixi-spine" : "2.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "pixi-spine" : "2.1.3"
+      "pixi-spine" : "2.1.4"
     }
   ],
   "compile-devDependencies" : [

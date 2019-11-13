@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mapbox__mapbox-sdk"
-version := "0.6-dt-20190808Z-4f7e77"
+version := "0.6-dt-20190808Z-b3617f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-a51fd7",
-  "org.scalablytyped" %%% "mapbox-gl" % "1.5-dt-20191105Z-ce38a5",
+  "org.scalablytyped" %%% "mapbox-gl" % "1.5-dt-20191112Z-93d0a9",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

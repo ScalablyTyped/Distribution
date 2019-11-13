@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qunit-dom"
-version := "0.9.1-04162d"
+version := "0.9.2-22507d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

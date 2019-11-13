@@ -22,12 +22,9 @@ trait ContactsApp extends js.Object {
   def createContactGroup(name: String): ContactGroup = js.native
   def deleteContact(contact: Contact): Unit = js.native
   def deleteContactGroup(group: ContactGroup): Unit = js.native
-  /** @deprecated DO NOT USE */
-  def findByEmailAddress(email: String): Contact = js.native
-  /** @deprecated DO NOT USE */
-  def findContactGroup(name: String): ContactGroup = js.native
-  /** @deprecated DO NOT USE */
-  def getAllContacts(): js.Array[Contact] = js.native
+  /** @deprecated DO NOT USE */ def findByEmailAddress(email: String): Contact = js.native
+  /** @deprecated DO NOT USE */ def findContactGroup(name: String): ContactGroup = js.native
+  /** @deprecated DO NOT USE */ def getAllContacts(): js.Array[Contact] = js.native
   def getContact(emailAddress: String): Contact = js.native
   def getContactById(id: String): Contact = js.native
   def getContactGroup(name: String): ContactGroup = js.native

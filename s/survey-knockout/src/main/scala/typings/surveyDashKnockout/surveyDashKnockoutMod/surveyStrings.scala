@@ -23,6 +23,8 @@ object surveyStrings extends js.Object {
   var confirmDelete: String = js.native
   var confirmRemoveAllFiles: String = js.native
   var confirmRemoveFile: String = js.native
+  var currencySymbol: String = js.native
+  var dateSeparators: js.Array[String] = js.native
   var emptySurvey: String = js.native
   var exceedMaxSize: String = js.native
   var invalidEmail: String = js.native
@@ -60,6 +62,7 @@ object surveyStrings extends js.Object {
   var savingDataError: String = js.native
   var savingDataSuccess: String = js.native
   var selectAllItemText: String = js.native
+  var shortDateFormats: js.Array[_] = js.native
   var startSurveyText: String = js.native
   var textMaxLength: String = js.native
   var textMinLength: String = js.native

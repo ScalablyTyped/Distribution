@@ -1,7 +1,7 @@
 package typings.alloy
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.backbone.backboneMod.Model
+import typings.backbone.backboneMod.EventsMixin
 import typings.std.Partial
 import typings.titanium.Titanium.Proxy
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * The base class for Alloy controllers.
   */
 @js.native
-trait AlloyController extends Model {
+trait AlloyController extends EventsMixin {
   /**
     *
     * @param proxy View object to which to add class(es).
@@ -39,6 +39,7 @@ trait AlloyController extends Model {
     * @returns Dictionary of properties that can be passed to a view factory function or applyProperties().
     */
   def createStyle(opts: js.Any): Partial[Proxy] = js.native
+  def destroy(): Unit = js.native
   def getListener(): js.Array[_] = js.native
   def getListener(proxy: Proxy): js.Array[_] = js.native
   def getListener(proxy: Proxy, `type`: String): js.Array[_] = js.native

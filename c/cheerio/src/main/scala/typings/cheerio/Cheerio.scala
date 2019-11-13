@@ -14,6 +14,7 @@ trait Cheerio
 // Cheerio https://github.com/cheeriojs/cheerio
 // JQuery http://api.jquery.com
 /* index */ NumberDictionary[CheerioElement] {
+  var cheerio: String = js.native
   var length: Double = js.native
   def add(elements: js.Array[CheerioElement]): Cheerio = js.native
   def add(element: CheerioElement): Cheerio = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-ui-express"
-version := "3.0-dt-20190610Z-99afbc"
+version := "4.1-dt-20191111Z-f79540"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

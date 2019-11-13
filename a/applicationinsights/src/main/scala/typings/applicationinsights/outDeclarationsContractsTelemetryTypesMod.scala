@@ -14,6 +14,7 @@ object outDeclarationsContractsTelemetryTypesMod extends js.Object {
   def telemetryTypeToBaseType(`type`: TelemetryType): TelemetryTypeValues = js.native
   @js.native
   object TelemetryType extends js.Object {
+    /* 6 */ val Availability: typings.applicationinsights.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType.Availability with Double = js.native
     /* 5 */ val Dependency: typings.applicationinsights.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType.Dependency with Double = js.native
     /* 0 */ val Event: typings.applicationinsights.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType.Event with Double = js.native
     /* 1 */ val Exception: typings.applicationinsights.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType.Exception with Double = js.native

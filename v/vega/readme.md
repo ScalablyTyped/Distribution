@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega
 
-Typings are for version 5.7.3
+Typings are for version 5.8.0
 
 ## Library description:
 The Vega visualization grammar.

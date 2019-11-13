@@ -2,15 +2,13 @@ package typings.pngjs.pngjsMod
 
 import typings.pngjs.Anon_Blue
 import typings.pngjs.Fn_Options
-import typings.pngjs.pngjsNumbers.`16`
-import typings.pngjs.pngjsNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PackerOptions extends js.Object {
   var bgColor: js.UndefOr[Anon_Blue] = js.undefined
-  var bitDepth: js.UndefOr[`8` | `16`] = js.undefined
+  var bitDepth: js.UndefOr[BitDepth] = js.undefined
   var colorType: js.UndefOr[ColorType] = js.undefined
   var deflateChunkSize: js.UndefOr[Double] = js.undefined
   var deflateFactory: js.UndefOr[Fn_Options] = js.undefined
@@ -25,7 +23,7 @@ object PackerOptions {
   @scala.inline
   def apply(
     bgColor: Anon_Blue = null,
-    bitDepth: `8` | `16` = null,
+    bitDepth: BitDepth = null,
     colorType: ColorType = null,
     deflateChunkSize: Int | Double = null,
     deflateFactory: Fn_Options = null,
@@ -37,7 +35,7 @@ object PackerOptions {
   ): PackerOptions = {
     val __obj = js.Dynamic.literal()
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
-    if (bitDepth != null) __obj.updateDynamic("bitDepth")(bitDepth.asInstanceOf[js.Any])
+    if (bitDepth != null) __obj.updateDynamic("bitDepth")(bitDepth)
     if (colorType != null) __obj.updateDynamic("colorType")(colorType)
     if (deflateChunkSize != null) __obj.updateDynamic("deflateChunkSize")(deflateChunkSize.asInstanceOf[js.Any])
     if (deflateFactory != null) __obj.updateDynamic("deflateFactory")(deflateFactory)

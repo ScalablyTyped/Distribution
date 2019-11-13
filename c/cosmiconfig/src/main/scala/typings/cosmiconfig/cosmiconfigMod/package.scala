@@ -5,16 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object cosmiconfigMod {
-  import org.scalablytyped.runtime.StringDictionary
-  import typings.cosmiconfig.Anon_Config
+  import typings.cosmiconfig.distTypesMod.Config
+  import typings.cosmiconfig.distTypesMod.CosmiconfigResult
 
-  type AsyncLoader = js.Function2[
-    /* filepath */ String, 
-    /* content */ String, 
-    Config | Null | (js.Promise[js.Object | Null])
-  ]
-  type Config = StringDictionary[js.Any]
-  type CosmiconfigResult = Anon_Config | Null
-  type Loaders = StringDictionary[LoaderEntry]
-  type SyncLoader = js.Function2[/* filepath */ String, /* content */ String, Config | Null]
+  type Loader = (js.Function2[/* filepath */ String, /* content */ String, js.Promise[LoaderResult]]) | LoaderSync
+  type LoaderResult = Config | Null
+  type LoaderSync = js.Function2[/* filepath */ String, /* content */ String, LoaderResult]
+  type Transform = (js.Function1[/* CosmiconfigResult */ CosmiconfigResult, js.Promise[CosmiconfigResult]]) | TransformSync
+  type TransformSync = js.Function1[/* CosmiconfigResult */ CosmiconfigResult, CosmiconfigResult]
 }

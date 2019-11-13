@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/filebrowser" : "1.2.0"
+      "@jupyterlab/filebrowser" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/filebrowser" : "1.2.0"
+      "@jupyterlab/filebrowser" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

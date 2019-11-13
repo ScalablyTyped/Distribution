@@ -1,0 +1,104 @@
+package typings.next.distNextDashServerServerRenderMod
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.next.Anon_Error_1933525888
+import typings.next.Anon_FalseProps
+import typings.next.Anon_Params
+import typings.next.distNextDashServerLibUtilsMod.AppType
+import typings.next.distNextDashServerLibUtilsMod.DocumentType
+import typings.next.distNextDashServerLibUtilsMod.NextPageContext
+import typings.next.distNextDashServerServerGetDashPageDashFilesMod.BuildManifest
+import typings.react.reactMod.ComponentType
+import typings.std.Error
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RenderOpts extends js.Object {
+  var App: AppType
+  var Component: ComponentType[js.Object]
+  var Document: DocumentType
+  var ErrorDebug: js.UndefOr[ComponentType[Anon_Error_1933525888]] = js.undefined
+  var ampBindInitData: Boolean
+  var ampMode: js.UndefOr[js.Any] = js.undefined
+  var ampPath: js.UndefOr[String] = js.undefined
+  var ampValidator: js.UndefOr[js.Function2[/* html */ String, /* pathname */ String, js.Promise[Unit]]] = js.undefined
+  var assetPrefix: js.UndefOr[String] = js.undefined
+  var autoExport: js.UndefOr[Boolean] = js.undefined
+  var buildId: String
+  var buildManifest: BuildManifest
+  var canonicalBase: String
+  var dangerousAsPath: String
+  var dataOnly: js.UndefOr[Boolean] = js.undefined
+  var dev: js.UndefOr[Boolean] = js.undefined
+  var documentMiddlewareEnabled: Boolean
+  var err: js.UndefOr[Error | Null] = js.undefined
+  var hasCssMode: Boolean
+  var hybridAmp: js.UndefOr[Boolean] = js.undefined
+  var inAmpMode: js.UndefOr[Boolean] = js.undefined
+  var nextExport: js.UndefOr[Boolean] = js.undefined
+  var pageConfig: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PageConfig */ js.Any
+  var reactLoadableManifest: ReactLoadableManifest
+  var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var skeleton: js.UndefOr[Boolean] = js.undefined
+  var staticMarkup: Boolean
+  var unstable_getStaticParams: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var unstable_getStaticProps: js.UndefOr[js.Function1[/* params */ Anon_Params, Anon_FalseProps]] = js.undefined
+  def DocumentMiddleware(ctx: NextPageContext): Unit
+}
+
+object RenderOpts {
+  @scala.inline
+  def apply(
+    App: AppType,
+    Component: ComponentType[js.Object],
+    Document: DocumentType,
+    DocumentMiddleware: NextPageContext => Unit,
+    ampBindInitData: Boolean,
+    buildId: String,
+    buildManifest: BuildManifest,
+    canonicalBase: String,
+    dangerousAsPath: String,
+    documentMiddlewareEnabled: Boolean,
+    hasCssMode: Boolean,
+    pageConfig: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PageConfig */ js.Any,
+    reactLoadableManifest: ReactLoadableManifest,
+    staticMarkup: Boolean,
+    ErrorDebug: ComponentType[Anon_Error_1933525888] = null,
+    ampMode: js.Any = null,
+    ampPath: String = null,
+    ampValidator: (/* html */ String, /* pathname */ String) => js.Promise[Unit] = null,
+    assetPrefix: String = null,
+    autoExport: js.UndefOr[Boolean] = js.undefined,
+    dataOnly: js.UndefOr[Boolean] = js.undefined,
+    dev: js.UndefOr[Boolean] = js.undefined,
+    err: Error = null,
+    hybridAmp: js.UndefOr[Boolean] = js.undefined,
+    inAmpMode: js.UndefOr[Boolean] = js.undefined,
+    nextExport: js.UndefOr[Boolean] = js.undefined,
+    runtimeConfig: StringDictionary[js.Any] = null,
+    skeleton: js.UndefOr[Boolean] = js.undefined,
+    unstable_getStaticParams: () => Unit = null,
+    unstable_getStaticProps: /* params */ Anon_Params => Anon_FalseProps = null
+  ): RenderOpts = {
+    val __obj = js.Dynamic.literal(App = App.asInstanceOf[js.Any], Component = Component.asInstanceOf[js.Any], Document = Document.asInstanceOf[js.Any], DocumentMiddleware = js.Any.fromFunction1(DocumentMiddleware), ampBindInitData = ampBindInitData, buildId = buildId, buildManifest = buildManifest, canonicalBase = canonicalBase, dangerousAsPath = dangerousAsPath, documentMiddlewareEnabled = documentMiddlewareEnabled, hasCssMode = hasCssMode, pageConfig = pageConfig, reactLoadableManifest = reactLoadableManifest, staticMarkup = staticMarkup)
+    if (ErrorDebug != null) __obj.updateDynamic("ErrorDebug")(ErrorDebug.asInstanceOf[js.Any])
+    if (ampMode != null) __obj.updateDynamic("ampMode")(ampMode)
+    if (ampPath != null) __obj.updateDynamic("ampPath")(ampPath)
+    if (ampValidator != null) __obj.updateDynamic("ampValidator")(js.Any.fromFunction2(ampValidator))
+    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix)
+    if (!js.isUndefined(autoExport)) __obj.updateDynamic("autoExport")(autoExport)
+    if (!js.isUndefined(dataOnly)) __obj.updateDynamic("dataOnly")(dataOnly)
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev)
+    if (err != null) __obj.updateDynamic("err")(err)
+    if (!js.isUndefined(hybridAmp)) __obj.updateDynamic("hybridAmp")(hybridAmp)
+    if (!js.isUndefined(inAmpMode)) __obj.updateDynamic("inAmpMode")(inAmpMode)
+    if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport)
+    if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig)
+    if (!js.isUndefined(skeleton)) __obj.updateDynamic("skeleton")(skeleton)
+    if (unstable_getStaticParams != null) __obj.updateDynamic("unstable_getStaticParams")(js.Any.fromFunction0(unstable_getStaticParams))
+    if (unstable_getStaticProps != null) __obj.updateDynamic("unstable_getStaticProps")(js.Any.fromFunction1(unstable_getStaticProps))
+    __obj.asInstanceOf[RenderOpts]
+  }
+}
+

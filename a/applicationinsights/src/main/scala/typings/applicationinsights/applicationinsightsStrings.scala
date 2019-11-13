@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation._
 
 object applicationinsightsStrings {
   @js.native
+  sealed trait Availability extends TelemetryTypeKeys
+  
+  @js.native
+  sealed trait AvailabilityData extends TelemetryTypeValues
+  
+  @js.native
   sealed trait Dependency extends TelemetryTypeKeys
   
   @js.native
@@ -62,6 +68,10 @@ object applicationinsightsStrings {
   @js.native
   sealed trait location extends ConnectionStringKey
   
+  @scala.inline
+  def Availability: Availability = "Availability".asInstanceOf[Availability]
+  @scala.inline
+  def AvailabilityData: AvailabilityData = "AvailabilityData".asInstanceOf[AvailabilityData]
   @scala.inline
   def Dependency: Dependency = "Dependency".asInstanceOf[Dependency]
   @scala.inline

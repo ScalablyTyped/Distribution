@@ -83,6 +83,8 @@ trait Objects extends js.Object {
     */
   def extendObject(id: String, obj: PartialObject, callback: ExtendObjectCallback): Unit = js.native
   def extendObject(id: String, obj: PartialObject, options: js.Any, callback: ExtendObjectCallback): Unit = js.native
+  def findObject(idOrName: String, `type`: js.UndefOr[scala.Nothing], callback: FindObjectCallback): Unit = js.native
+  def findObject(idOrName: String, `type`: js.UndefOr[scala.Nothing], options: js.Any, callback: FindObjectCallback): Unit = js.native
   def findObject(idOrName: String, `type`: Null, callback: FindObjectCallback): Unit = js.native
   def findObject(idOrName: String, `type`: Null, options: js.Any, callback: FindObjectCallback): Unit = js.native
   /**
@@ -149,6 +151,14 @@ trait Objects extends js.Object {
   def getObjectList(params: GetObjectListParams, callback: GetObjectListCallback): Unit = js.native
   def getObjectList(params: GetObjectListParams, options: Anon_Sorted, callback: GetObjectListCallback): Unit = js.native
   def getObjectList(params: GetObjectListParams, options: Record[String, _], callback: GetObjectListCallback): Unit = js.native
+  def getObjectView(design: String, search: String, params: js.UndefOr[scala.Nothing], callback: GetObjectViewCallback): Unit = js.native
+  def getObjectView(
+    design: String,
+    search: String,
+    params: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    callback: GetObjectViewCallback
+  ): Unit = js.native
   def getObjectView(design: String, search: String, params: Null, callback: GetObjectViewCallback): Unit = js.native
   def getObjectView(design: String, search: String, params: Null, options: js.Any, callback: GetObjectViewCallback): Unit = js.native
   /**

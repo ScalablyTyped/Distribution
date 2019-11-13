@@ -1,7 +1,7 @@
 
 # Scala.js typings for swagger-ui-express
 
-Typings are for version 3.0
+Typings are for version 4.1
 
 ## Library description:
 Swagger UI Express

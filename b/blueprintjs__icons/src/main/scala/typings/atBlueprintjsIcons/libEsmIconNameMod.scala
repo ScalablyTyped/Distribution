@@ -127,6 +127,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`merge-links`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.download
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.headset
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-drawing`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`new-prescription`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.satellite
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`zoom-in`
@@ -138,6 +139,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`inbox-filtered`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.outdated
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`menu-closed`
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`signal-search`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`eye-on`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.clipboard
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.calculator
@@ -196,6 +198,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.paragraph
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`less-than-or-equal-to`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.dollar
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.archive
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`timeline-bar-chart`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`send-to-graph`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.error
@@ -261,6 +264,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.user
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`search-text`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`caret-down`
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.unarchive
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.unlock
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`curved-range-chart`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`widget-button`
@@ -354,6 +358,7 @@ object libEsmIconNameMod extends js.Object {
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`stacked-chart`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.more
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`remove-row-bottom`
+    - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`data-lineage`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.power
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`unknown-vehicle`
     - typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.barcode

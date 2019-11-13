@@ -1,6 +1,6 @@
 package typings.cosmiconfig
 
-import typings.cosmiconfig.cosmiconfigMod.Config
+import typings.cosmiconfig.distTypesMod.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

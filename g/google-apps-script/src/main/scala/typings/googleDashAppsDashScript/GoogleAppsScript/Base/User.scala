@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   */
 trait User extends js.Object {
   def getEmail(): String
-  /** @deprecated DO NOT USE */
-  def getUserLoginId(): String
+  /** @deprecated DO NOT USE */ def getUserLoginId(): String
 }
 
 object User {

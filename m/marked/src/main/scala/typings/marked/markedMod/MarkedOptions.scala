@@ -75,10 +75,6 @@ trait MarkedOptions extends js.Object {
     */
   var smartypants: js.UndefOr[Boolean] = js.undefined
   /**
-    * Enable GFM tables. This option requires the gfm option to be true.
-    */
-  var tables: js.UndefOr[Boolean] = js.undefined
-  /**
     * Generate closing slash for self-closing tags (<br/> instead of <br>)
     */
   var xhtml: js.UndefOr[Boolean] = js.undefined
@@ -102,7 +98,6 @@ object MarkedOptions {
     silent: js.UndefOr[Boolean] = js.undefined,
     smartLists: js.UndefOr[Boolean] = js.undefined,
     smartypants: js.UndefOr[Boolean] = js.undefined,
-    tables: js.UndefOr[Boolean] = js.undefined,
     xhtml: js.UndefOr[Boolean] = js.undefined
   ): MarkedOptions = {
     val __obj = js.Dynamic.literal()
@@ -121,7 +116,6 @@ object MarkedOptions {
     if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
     if (!js.isUndefined(smartLists)) __obj.updateDynamic("smartLists")(smartLists)
     if (!js.isUndefined(smartypants)) __obj.updateDynamic("smartypants")(smartypants)
-    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables)
     if (!js.isUndefined(xhtml)) __obj.updateDynamic("xhtml")(xhtml)
     __obj.asInstanceOf[MarkedOptions]
   }

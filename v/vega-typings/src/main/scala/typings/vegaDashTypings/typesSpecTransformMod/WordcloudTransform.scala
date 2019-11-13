@@ -5,14 +5,12 @@ import typings.vegaDashTypings.typesSpecEncodeMod.FontWeight
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import typings.vegaDashTypings.typesSpecUtilMod.Vector2
 import typings.vegaDashTypings.typesSpecUtilMod.Vector7
-import typings.vegaDashTypings.vegaDashTypingsStrings.archimedian
-import typings.vegaDashTypings.vegaDashTypingsStrings.rectangular
 import typings.vegaDashTypings.vegaDashTypingsStrings.wordcloud
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WordcloudTransform extends _Transforms {
+trait WordcloudTransform extends Transforms {
   var as: js.UndefOr[(Vector7[String | SignalRef]) | SignalRef] = js.undefined
   var font: js.UndefOr[String | TransformField] = js.undefined
   var fontSize: js.UndefOr[Double | TransformField] = js.undefined
@@ -21,9 +19,8 @@ trait WordcloudTransform extends _Transforms {
   var fontWeight: js.UndefOr[FontWeight | TransformField] = js.undefined
   var padding: js.UndefOr[Double | TransformField] = js.undefined
   var rotate: js.UndefOr[Double | TransformField] = js.undefined
-  var signal: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
-  var spiral: js.UndefOr[archimedian | rectangular] = js.undefined
+  var spiral: js.UndefOr[WordcloudSpiral | SignalRef] = js.undefined
   var text: js.UndefOr[String | TransformField] = js.undefined
   var `type`: wordcloud
 }
@@ -40,9 +37,8 @@ object WordcloudTransform {
     fontWeight: FontWeight | TransformField = null,
     padding: Double | TransformField = null,
     rotate: Double | TransformField = null,
-    signal: String = null,
     size: (Vector2[Double | SignalRef]) | SignalRef = null,
-    spiral: archimedian | rectangular = null,
+    spiral: WordcloudSpiral | SignalRef = null,
     text: String | TransformField = null
   ): WordcloudTransform = {
     val __obj = js.Dynamic.literal()
@@ -55,7 +51,6 @@ object WordcloudTransform {
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (spiral != null) __obj.updateDynamic("spiral")(spiral.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

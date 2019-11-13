@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-split-pane"
-version := "0.1.87-cbdecd"
+version := "0.1.89-133b21"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

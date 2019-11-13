@@ -2,11 +2,12 @@ package typings.vegaDashTypings
 
 import typings.vegaDashTypings.typesSpecScaleMod.ScaleField
 import typings.vegaDashTypings.typesSpecScaleMod.SortOrder
+import typings.vegaDashTypings.typesSpecScaleMod._SortField
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_FieldOp extends js.Object {
+trait Anon_FieldOp extends _SortField {
   var field: js.UndefOr[ScaleField] = js.undefined
   var op: ScaleField
   var order: js.UndefOr[SortOrder] = js.undefined

@@ -714,6 +714,48 @@ trait Adapter extends js.Object {
   /** Reads an object from the object db */
   def getObjectAsync(id: String): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
   def getObjectAsync(id: String, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
+  def getObjectView(design: String, search: String, params: js.UndefOr[scala.Nothing], callback: GetObjectViewCallback): Unit = js.native
+  def getObjectView(
+    design: String,
+    search: String,
+    params: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    callback: GetObjectViewCallback
+  ): Unit = js.native
+  def getObjectView(design: String, search: String, params: Null, callback: GetObjectViewCallback): Unit = js.native
+  def getObjectView(design: String, search: String, params: Null, options: js.Any, callback: GetObjectViewCallback): Unit = js.native
+  /**
+    * Query a predefined object view (similar to SQL stored procedures) and return the results
+    * For a detailed description refer to https://github.com/ioBroker/ioBroker/wiki/Adapter-Development-Documentation#object-fields
+    * or http://guide.couchdb.org/editions/1/en/views.html
+    * @param design The namespace of the object view, as defined in io-package.json. Usually the adapter name, e.g. "hm-rpc"
+    * @param search The name of the object view.
+    * @param params Parameters to additionally filter out objects from the return list. Null to include all objects
+    * @param options (optional) Some internal options.
+    * @param callback Is called when the operation has finished (successfully or not)
+    */
+  def getObjectView(design: String, search: String, params: GetObjectViewParams, callback: GetObjectViewCallback): Unit = js.native
+  def getObjectView(
+    design: String,
+    search: String,
+    params: GetObjectViewParams,
+    options: js.Any,
+    callback: GetObjectViewCallback
+  ): Unit = js.native
+  def getObjectViewAsync(design: String, search: String): js.Promise[NonNullCallbackReturnTypeOf[GetObjectViewCallback]] = js.native
+  def getObjectViewAsync(design: String, search: String, params: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[GetObjectViewCallback]] = js.native
+  def getObjectViewAsync(design: String, search: String, params: Null, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[GetObjectViewCallback]] = js.native
+  /**
+    * Query a predefined object view (similar to SQL stored procedures) and return the results
+    * For a detailed description refer to https://github.com/ioBroker/ioBroker/wiki/Adapter-Development-Documentation#object-fields
+    * or http://guide.couchdb.org/editions/1/en/views.html
+    * @param design The namespace of the object view, as defined in io-package.json. Usually the adapter name, e.g. "hm-rpc"
+    * @param search The name of the object view.
+    * @param params Parameters to additionally filter out objects from the return list. Null to include all objects
+    * @param options (optional) Some internal options.
+    */
+  def getObjectViewAsync(design: String, search: String, params: GetObjectViewParams): js.Promise[NonNullCallbackReturnTypeOf[GetObjectViewCallback]] = js.native
+  def getObjectViewAsync(design: String, search: String, params: GetObjectViewParams, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[GetObjectViewCallback]] = js.native
   /*	===============================
     Functions defined in adapter.js
     =============================== */

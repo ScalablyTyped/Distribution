@@ -14,6 +14,12 @@ trait IShortcutsProps extends js.Object {
   var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
   var shortcuts: js.Array[IDateRangeShortcut] | `true`
   var timePrecision: TimePrecision
+  /**
+    * The DatePicker component reuses this component for a single date.
+    * This changes the default shortcut labels and affects which shortcuts are used.
+    * @default false
+    */
+  var useSingleDateShortcuts: js.UndefOr[Boolean] = js.undefined
   def onShortcutClick(shortcut: IDateRangeShortcut, index: Double): Unit
 }
 
@@ -26,10 +32,12 @@ object IShortcutsProps {
     onShortcutClick: (IDateRangeShortcut, Double) => Unit,
     shortcuts: js.Array[IDateRangeShortcut] | `true`,
     timePrecision: TimePrecision,
-    selectedShortcutIndex: Int | Double = null
+    selectedShortcutIndex: Int | Double = null,
+    useSingleDateShortcuts: js.UndefOr[Boolean] = js.undefined
   ): IShortcutsProps = {
     val __obj = js.Dynamic.literal(allowSingleDayRange = allowSingleDayRange, maxDate = maxDate, minDate = minDate, onShortcutClick = js.Any.fromFunction2(onShortcutClick), shortcuts = shortcuts.asInstanceOf[js.Any], timePrecision = timePrecision)
     if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSingleDateShortcuts)) __obj.updateDynamic("useSingleDateShortcuts")(useSingleDateShortcuts)
     __obj.asInstanceOf[IShortcutsProps]
   }
 }

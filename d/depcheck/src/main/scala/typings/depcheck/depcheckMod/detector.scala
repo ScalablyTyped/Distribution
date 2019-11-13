@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("depcheck", "detector")
 @js.native
 object detector extends js.Object {
-  @JSName("detectTypescriptImportType")
-  var detectTypescriptImportType_Original: Detector = js.native
   @JSName("exportDeclaration")
   var exportDeclaration_Original: Detector = js.native
   @JSName("expressViewEngine")
@@ -25,7 +23,8 @@ object detector extends js.Object {
   var requireResolveCallExpression_Original: Detector = js.native
   @JSName("typescriptImportEqualsDeclaration")
   var typescriptImportEqualsDeclaration_Original: Detector = js.native
-  def detectTypescriptImportType(node: Node): js.Array[String] | String = js.native
+  @JSName("typescriptImportType")
+  var typescriptImportType_Original: Detector = js.native
   def exportDeclaration(node: Node): js.Array[String] | String = js.native
   def expressViewEngine(node: Node): js.Array[String] | String = js.native
   def gruntLoadTaskCallExpression(node: Node): js.Array[String] | String = js.native
@@ -34,5 +33,6 @@ object detector extends js.Object {
   def requireCallExpression(node: Node): js.Array[String] | String = js.native
   def requireResolveCallExpression(node: Node): js.Array[String] | String = js.native
   def typescriptImportEqualsDeclaration(node: Node): js.Array[String] | String = js.native
+  def typescriptImportType(node: Node): js.Array[String] | String = js.native
 }
 

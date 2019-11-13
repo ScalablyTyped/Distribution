@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "google-apps-script-oauth2"
-version := "24.0-dt-20191011Z-f76fdd"
+version := "24.0-dt-20191011Z-8e6b92"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "google-apps-script" % "1.0-dt-20191104Z-f7ecb6",
+  "org.scalablytyped" %%% "google-apps-script" % "1.0-dt-20191112Z-81f01a",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

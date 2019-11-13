@@ -21,14 +21,22 @@ object special extends js.Object {
   var gatsby_Original: Parser = js.native
   @JSName("gulp-load-plugins")
   var `gulp-load-plugins_Original`: Parser = js.native
+  @JSName("husky")
+  var husky_Original: Parser = js.native
   @JSName("jest")
   var jest_Original: Parser = js.native
   @JSName("karma")
   var karma_Original: Parser = js.native
+  @JSName("lint-staged")
+  var `lint-staged_Original`: Parser = js.native
   @JSName("mocha")
   var mocha_Original: Parser = js.native
+  @JSName("prettier")
+  var prettier_Original: Parser = js.native
   @JSName("tslint")
   var tslint_Original: Parser = js.native
+  @JSName("ttypescript")
+  var ttypescript_Original: Parser = js.native
   @JSName("webpack")
   var webpack_Original: Parser = js.native
   def babel(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
@@ -38,10 +46,14 @@ object special extends js.Object {
   def `feross-standard`(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def gatsby(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def `gulp-load-plugins`(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
+  def husky(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def jest(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def karma(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
+  def `lint-staged`(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def mocha(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
+  def prettier(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def tslint(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
+  def ttypescript(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def webpack(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
 }
 

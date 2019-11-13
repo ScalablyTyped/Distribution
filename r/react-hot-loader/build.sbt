@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-hot-loader"
-version := "4.12.16-830512"
+version := "4.12.17-dd8682"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

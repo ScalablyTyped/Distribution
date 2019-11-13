@@ -11,6 +11,7 @@ trait RedisStoreOptions extends js.Object {
   var client: js.UndefOr[RedisClient] = js.undefined
   var db: js.UndefOr[Double] = js.undefined
   var disableTTL: js.UndefOr[Boolean] = js.undefined
+  var disableTouch: js.UndefOr[Boolean] = js.undefined
   var host: js.UndefOr[String] = js.undefined
   var logErrors: js.UndefOr[Boolean | (js.Function1[/* error */ String, Unit])] = js.undefined
   var pass: js.UndefOr[String] = js.undefined
@@ -32,6 +33,7 @@ object RedisStoreOptions {
     client: RedisClient = null,
     db: Int | Double = null,
     disableTTL: js.UndefOr[Boolean] = js.undefined,
+    disableTouch: js.UndefOr[Boolean] = js.undefined,
     host: String = null,
     logErrors: Boolean | (js.Function1[/* error */ String, Unit]) = null,
     pass: String = null,
@@ -48,6 +50,7 @@ object RedisStoreOptions {
     if (client != null) __obj.updateDynamic("client")(client)
     if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     if (!js.isUndefined(disableTTL)) __obj.updateDynamic("disableTTL")(disableTTL)
+    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch)
     if (host != null) __obj.updateDynamic("host")(host)
     if (logErrors != null) __obj.updateDynamic("logErrors")(logErrors.asInstanceOf[js.Any])
     if (pass != null) __obj.updateDynamic("pass")(pass)

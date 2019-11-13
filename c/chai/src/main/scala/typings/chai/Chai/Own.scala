@@ -13,6 +13,7 @@ trait Own extends js.Object {
   def include(value: js.Any): Assertion = js.native
   def include(value: js.Any, message: String): Assertion = js.native
   def property(name: String): Assertion = js.native
+  def property(name: String, message: String): Assertion = js.native
   def property(name: String, value: js.Any): Assertion = js.native
   def property(name: String, value: js.Any, message: String): Assertion = js.native
 }

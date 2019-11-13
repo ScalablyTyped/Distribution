@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gulp-cheerio"
-version := "0.0-unknown-dt-20190322Z-c9616b"
+version := "0.0-unknown-dt-20190322Z-76d6b7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20190809Z-1f448f",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191112Z-1a46c9",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-d4cc87")

@@ -19,14 +19,13 @@ trait ScriptApp extends js.Object {
   var WeekDay: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Weekday */ js.Any = js.native
   def deleteTrigger(trigger: Trigger): Unit = js.native
   def getAuthorizationInfo(authMode: AuthMode): AuthorizationInfo = js.native
+  def getIdentityToken(): String = js.native
   def getInstallationSource(): InstallationSource = js.native
   def getOAuthToken(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getProjectKey(): String = js.native
+  /** @deprecated DO NOT USE */ def getProjectKey(): String = js.native
   def getProjectTriggers(): js.Array[Trigger] = js.native
   def getScriptId(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getScriptTriggers(): js.Array[Trigger] = js.native
+  /** @deprecated DO NOT USE */ def getScriptTriggers(): js.Array[Trigger] = js.native
   def getService(): Service = js.native
   def getUserTriggers(document: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Document): js.Array[Trigger] = js.native
   def getUserTriggers(form: Form): js.Array[Trigger] = js.native

@@ -45,8 +45,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options
-  extends OptionsGeneral
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.tabulatorDashTables.Tabulator.OptionsCell because var conflicts: cellClick, cellContext, cellDblClick, cellDblTap, cellEditCancelled, cellEdited, cellEditing, cellMouseEnter, cellMouseLeave, cellMouseMove, cellMouseOut, cellMouseOver, cellTap, cellTapHold. Inlined  */ trait Options
+  extends OptionsCells
+     with OptionsGeneral
      with OptionsHistory
      with OptionsLocale
      with OptionsDownload
@@ -60,7 +62,6 @@ trait Options
      with OptionsPersistentConfiguration
      with OptionsClipboard
      with OptionsDataTree
-     with OptionsCell
      with OptionsHTML
 
 object Options {
@@ -284,6 +285,7 @@ object Options {
     tooltipGenerationMode: load = null,
     tooltips: GlobalTooltipOption = null,
     tooltipsHeader: js.UndefOr[Boolean] = js.undefined,
+    validationFailed: (/* cell */ CellComponent, /* value */ js.Any, /* validators */ js.Array[StandardValidatorType | Validator]) => Unit = null,
     virtualDom: js.UndefOr[Boolean] = js.undefined,
     virtualDomBuffer: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -484,6 +486,7 @@ object Options {
     if (tooltipGenerationMode != null) __obj.updateDynamic("tooltipGenerationMode")(tooltipGenerationMode)
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     if (!js.isUndefined(tooltipsHeader)) __obj.updateDynamic("tooltipsHeader")(tooltipsHeader)
+    if (validationFailed != null) __obj.updateDynamic("validationFailed")(js.Any.fromFunction3(validationFailed))
     if (!js.isUndefined(virtualDom)) __obj.updateDynamic("virtualDom")(virtualDom)
     if (!js.isUndefined(virtualDomBuffer)) __obj.updateDynamic("virtualDomBuffer")(virtualDomBuffer)
     __obj.asInstanceOf[Options]

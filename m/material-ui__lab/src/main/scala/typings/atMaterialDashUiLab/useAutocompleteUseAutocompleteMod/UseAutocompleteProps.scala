@@ -1,8 +1,6 @@
 package typings.atMaterialDashUiLab.useAutocompleteUseAutocompleteMod
 
 import typings.react.reactMod.ChangeEvent
-import typings.react.reactMod.ChangeEventHandler
-import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -99,6 +97,10 @@ trait UseAutocompleteProps extends js.Object {
     */
   var includeInputInList: js.UndefOr[Boolean] = js.undefined
   /**
+    * The input value.
+    */
+  var inputValue: js.UndefOr[String] = js.undefined
+  /**
     * If true, `value` must be an array and the menu will support multiple selections.
     */
   var multiple: js.UndefOr[Boolean] = js.undefined
@@ -118,8 +120,11 @@ trait UseAutocompleteProps extends js.Object {
   var onClose: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
   /**
     * Callback fired when the input value changes.
+    *
+    * @param {object} event The event source of the callback.
+    * @param {string} value
     */
-  var onInputChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
+  var onInputChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[js.Object], /* value */ js.Any, Unit]] = js.undefined
   /**
     * Callback fired when the popup requests to be opened.
     * Use in controlled mode (see open).
@@ -136,7 +141,7 @@ trait UseAutocompleteProps extends js.Object {
     */
   var options: js.UndefOr[js.Array[_]] = js.undefined
   /**
-    * The input value.
+    * The value of the autocomplete.
     */
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -162,10 +167,11 @@ object UseAutocompleteProps {
     groupBy: /* option */ js.Any => String = null,
     id: String = null,
     includeInputInList: js.UndefOr[Boolean] = js.undefined,
+    inputValue: String = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     onChange: (/* event */ ChangeEvent[js.Object], /* value */ js.Any) => Unit = null,
     onClose: /* event */ ChangeEvent[js.Object] => Unit = null,
-    onInputChange: ChangeEvent[HTMLInputElement] => Unit = null,
+    onInputChange: (/* event */ ChangeEvent[js.Object], /* value */ js.Any) => Unit = null,
     onOpen: /* event */ ChangeEvent[js.Object] => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     options: js.Array[_] = null,
@@ -190,10 +196,11 @@ object UseAutocompleteProps {
     if (groupBy != null) __obj.updateDynamic("groupBy")(js.Any.fromFunction1(groupBy))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(includeInputInList)) __obj.updateDynamic("includeInputInList")(includeInputInList)
+    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction1(onInputChange))
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction2(onInputChange))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (options != null) __obj.updateDynamic("options")(options)

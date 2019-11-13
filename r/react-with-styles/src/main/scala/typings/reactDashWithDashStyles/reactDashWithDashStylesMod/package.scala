@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object reactDashWithDashStylesMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.aphrodite.aphroditeMod.CSSProperties
+  import typings.aphrodite.typingsCssDashPropertiesMod.CSSProperties
   import typings.react.reactMod._Global_.JSX.LibraryManagedAttributes
 
   type ComponentClassProps[C] = js.Any
@@ -17,7 +17,9 @@ package object reactDashWithDashStylesMod {
   type Styles = StringDictionary[
     Nullable[
       CSSProperties with (StringDictionary[
-        (/* import warning: ImportType.apply Failed type conversion: aphrodite.aphrodite.CSSProperties[keyof aphrodite.aphrodite.CSSProperties] */ js.Any) | CSSProperties
+        js.UndefOr[
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 260 */ js.Any
+        ]
       ])
     ]
   ]

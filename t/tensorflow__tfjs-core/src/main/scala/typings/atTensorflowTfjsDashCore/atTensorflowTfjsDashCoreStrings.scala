@@ -1,6 +1,7 @@
 package typings.atTensorflowTfjsDashCore
 
 import typings.atTensorflowTfjsDashCore.distIoTypesMod.WeightGroup
+import typings.atTensorflowTfjsDashCore.distOpsConvUnderscoreUtilMod.PadType
 import typings.atTensorflowTfjsDashCore.distOpsFusedUnderscoreUtilMod.Activation
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.NumericDataType
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashCoreStrings {
   @js.native
-  sealed trait `1DOT3DOT1` extends js.Object
+  sealed trait `1DOT3DOT2` extends js.Object
   
   @js.native
   sealed trait Engine extends js.Object
@@ -37,10 +38,19 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait NHWC extends js.Object
   
   @js.native
+  sealed trait NUMBER extends PadType
+  
+  @js.native
   sealed trait NWC extends js.Object
   
   @js.native
   sealed trait POST extends js.Object
+  
+  @js.native
+  sealed trait SAME extends PadType
+  
+  @js.native
+  sealed trait VALID extends PadType
   
   @js.native
   sealed trait avg extends js.Object
@@ -141,7 +151,7 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait valid extends js.Object
   
   @scala.inline
-  def `1DOT3DOT1`: `1DOT3DOT1` = "1.3.1".asInstanceOf[`1DOT3DOT1`]
+  def `1DOT3DOT2`: `1DOT3DOT2` = "1.3.2".asInstanceOf[`1DOT3DOT2`]
   @scala.inline
   def Engine: Engine = "Engine".asInstanceOf[Engine]
   @scala.inline
@@ -159,9 +169,15 @@ object atTensorflowTfjsDashCoreStrings {
   @scala.inline
   def NHWC: NHWC = "NHWC".asInstanceOf[NHWC]
   @scala.inline
+  def NUMBER: NUMBER = "NUMBER".asInstanceOf[NUMBER]
+  @scala.inline
   def NWC: NWC = "NWC".asInstanceOf[NWC]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
+  def SAME: SAME = "SAME".asInstanceOf[SAME]
+  @scala.inline
+  def VALID: VALID = "VALID".asInstanceOf[VALID]
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   @scala.inline

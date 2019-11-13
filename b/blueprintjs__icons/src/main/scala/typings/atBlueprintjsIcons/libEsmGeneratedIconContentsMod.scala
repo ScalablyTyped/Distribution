@@ -468,6 +468,11 @@ import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE901
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE902
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE903
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE904
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE905
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE906
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE907
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE908
+import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.BACKSLASHuE909
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`+`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`?`
 import typings.atBlueprintjsIcons.atBlueprintjsIconsStrings.`BACKSLASHu2191 `
@@ -502,6 +507,7 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val ANNOTATION: BACKSLASHuE6F0 = js.native
   val APPLICATION: BACKSLASHuE735 = js.native
   val APPLICATIONS: BACKSLASHuE621 = js.native
+  val ARCHIVE: BACKSLASHuE907 = js.native
   val ARROWS_HORIZONTAL: `BACKSLASHu2194 ` = js.native
   val ARROWS_VERTICAL: `BACKSLASHu2195 ` = js.native
   val ARROW_BOTTOM_LEFT: BACKSLASHu2199 = js.native
@@ -577,6 +583,7 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val CUT: BACKSLASHuE6EF = js.native
   val DASHBOARD: BACKSLASHuE751 = js.native
   val DATABASE: BACKSLASHuE683 = js.native
+  val DATA_LINEAGE: BACKSLASHuE908 = js.native
   val DELETE: BACKSLASHuE644 = js.native
   val DELTA: BACKSLASHu0394 = js.native
   val DERIVE_COLUMN: BACKSLASHuE739 = js.native
@@ -776,6 +783,7 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val MUGSHOT: BACKSLASHuE6DB = js.native
   val MULTI_SELECT: BACKSLASHuE680 = js.native
   val MUSIC: BACKSLASHuE6A6 = js.native
+  val NEW_DRAWING: BACKSLASHuE905 = js.native
   val NEW_GRID_ITEM: BACKSLASHuE747 = js.native
   val NEW_LAYER: BACKSLASHuE902 = js.native
   val NEW_LAYERS: BACKSLASHuE903 = js.native
@@ -866,6 +874,7 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val SHIELD: BACKSLASHuE7B2 = js.native
   val SHOP: BACKSLASHuE6C2 = js.native
   val SHOPPING_CART: BACKSLASHuE6C1 = js.native
+  val SIGNAL_SEARCH: BACKSLASHuE909 = js.native
   val SIM_CARD: BACKSLASHuE718 = js.native
   val SLASH: BACKSLASHuE769 = js.native
   val SMALL_CROSS: BACKSLASHuE6D7 = js.native
@@ -928,6 +937,7 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val TRENDING_DOWN: BACKSLASHuE71A = js.native
   val TRENDING_UP: BACKSLASHuE719 = js.native
   val TWO_COLUMNS: BACKSLASHuE657 = js.native
+  val UNARCHIVE: BACKSLASHuE906 = js.native
   val UNDERLINE: BACKSLASHu2381 = js.native
   val UNDO: BACKSLASHu238C = js.native
   val UNGROUP_OBJECTS: BACKSLASHuE688 = js.native

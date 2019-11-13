@@ -29,6 +29,13 @@ object distLibModelsTypesMod extends js.Object {
   }
   
   @js.native
+  class PredicateType protected ()
+    extends typings.typedoc.distLibModelsTypesPredicateMod.PredicateType {
+    def this(name: String, asserts: Boolean) = this()
+    def this(name: String, asserts: Boolean, targetType: typings.typedoc.distLibModelsTypesAbstractMod.Type) = this()
+  }
+  
+  @js.native
   class ReferenceType protected ()
     extends typings.typedoc.distLibModelsTypesReferenceMod.ReferenceType {
     def this(name: String, symbolID: Double) = this()

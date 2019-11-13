@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv-safe
 
-Typings are for version 5.0
+Typings are for version 8.1
 
 ## Library description:
 Load environment variables from .env and ensure they are defined

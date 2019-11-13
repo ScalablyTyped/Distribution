@@ -1,22 +1,19 @@
 package typings.next
 
-import typings.react.reactMod.HTMLProps
+import typings.next.distPagesUnderscoreDocumentMod.OriginProps
+import typings.react.reactMod.DetailedHTMLProps
+import typings.react.reactMod.HTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait nextProps {
+  type HtmlProps[E /* <: HTMLAttributes[T] */, T] = DetailedHTMLProps[E, T]
   @scala.inline
-  def HeadProps: typings.next.documentMod.HeadProps.type = typings.next.documentMod.HeadProps
-  type HeadProps = typings.next.documentMod.HeadProps
+  def LinkProps: typings.next.distClientLinkMod.LinkProps.type = typings.next.distClientLinkMod.LinkProps
+  type LinkProps = typings.next.distClientLinkMod.LinkProps
   @scala.inline
-  def HtmlProps: HTMLProps.type = typings.react.reactMod.HTMLProps
-  type HtmlProps[T] = HTMLProps[T]
-  @scala.inline
-  def LinkProps: typings.nextDashServer.linkMod.LinkProps.type = typings.nextDashServer.linkMod.LinkProps
-  type LinkProps = typings.nextDashServer.linkMod.LinkProps
-  @scala.inline
-  def NextScriptProps: typings.next.documentMod.NextScriptProps.type = typings.next.documentMod.NextScriptProps
-  type NextScriptProps = typings.next.documentMod.NextScriptProps
+  def NextScriptProps: OriginProps.type = typings.next.distPagesUnderscoreDocumentMod.OriginProps
+  type NextScriptProps = OriginProps
 }
 

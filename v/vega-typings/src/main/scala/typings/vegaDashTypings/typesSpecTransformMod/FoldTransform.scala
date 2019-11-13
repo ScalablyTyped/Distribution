@@ -7,16 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FoldTransform extends _Transforms {
+trait FoldTransform extends Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
-  var fields: (js.Array[String | TransformField]) | SignalRef
+  var fields: js.Array[FieldRef] | SignalRef
   var `type`: fold
 }
 
 object FoldTransform {
   @scala.inline
   def apply(
-    fields: (js.Array[String | TransformField]) | SignalRef,
+    fields: js.Array[FieldRef] | SignalRef,
     `type`: fold,
     as: (Vector2[String | SignalRef]) | SignalRef = null
   ): FoldTransform = {

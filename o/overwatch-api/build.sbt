@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "overwatch-api"
-version := "0.8.0-fa32bb"
+version := "0.8.2-70f276"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

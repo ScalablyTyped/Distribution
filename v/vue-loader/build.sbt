@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-loader"
-version := "15.7.2-e68812"
+version := "15.7.2-062714"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-1ad099",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-391be5",
+  "org.scalablytyped" %%% "vue" % "2.6.10-71f5d7",
+  "org.scalablytyped" %%% "vue-template-compiler" % "2.6.10-0d0153",
   "org.scalablytyped" %%% "webpack" % "4.39-dt-20191101Z-c328b2",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-7585ed")
 publishArtifact in packageDoc := false

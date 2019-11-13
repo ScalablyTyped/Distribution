@@ -96,6 +96,7 @@
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(once) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Howl))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(once) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Howl))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(off) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Howl))] 
+[info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(off) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Howl))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(stereo) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Howl))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(pos) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Howl))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(orientation) [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Howl))] 

@@ -35,7 +35,7 @@ trait Bluebird[R]
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def all(`this`: Bluebird[Iterable[js.Object]]): Bluebird[R] = js.native
+  def all[Q](`this`: Bluebird[R with Iterable[Q]]): Bluebird[R] = js.native
   /**
     * Same as calling `Promise.any(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
@@ -1040,7 +1040,7 @@ trait Bluebird[R]
     * Same as calling `Promise.some(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     * Same as calling `Promise.some(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def some(`this`: Bluebird[Iterable[js.Object]], count: Double): Bluebird[R] = js.native
+  def some[Q](`this`: Bluebird[R with Iterable[Q]], count: Double): Bluebird[R] = js.native
   /**
     * Like calling `.then`, but the fulfillment value or rejection reason is assumed to be an array, which is flattened to the formal parameters of the handlers.
     */

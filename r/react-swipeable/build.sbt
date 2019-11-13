@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-swipeable"
-version := "4.3-dt-20190322Z-da9a37"
+version := "5.4.0-0584f6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__kms"
-version := "1.3-dt-20190924Z-5d1781"
+version := "1.5-dt-20191112Z-d97ba3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

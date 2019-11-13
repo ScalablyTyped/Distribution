@@ -45,6 +45,7 @@ object OnGenerateOptions {
     noConflict: js.UndefOr[Boolean] = js.undefined,
     outro: String | (js.Function0[String | js.Promise[String]]) = null,
     paths: OptionsPaths = null,
+    plugins: js.Array[OutputPlugin] = null,
     preferConst: js.UndefOr[Boolean] = js.undefined,
     sourcemap: Boolean | `inline` | hidden = null,
     sourcemapExcludeSources: js.UndefOr[Boolean] = js.undefined,
@@ -79,6 +80,7 @@ object OnGenerateOptions {
     if (!js.isUndefined(noConflict)) __obj.updateDynamic("noConflict")(noConflict)
     if (outro != null) __obj.updateDynamic("outro")(outro.asInstanceOf[js.Any])
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (!js.isUndefined(preferConst)) __obj.updateDynamic("preferConst")(preferConst)
     if (sourcemap != null) __obj.updateDynamic("sourcemap")(sourcemap.asInstanceOf[js.Any])
     if (!js.isUndefined(sourcemapExcludeSources)) __obj.updateDynamic("sourcemapExcludeSources")(sourcemapExcludeSources)

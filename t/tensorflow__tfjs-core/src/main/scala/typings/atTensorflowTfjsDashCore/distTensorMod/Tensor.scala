@@ -389,6 +389,8 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
   def dispose(): Unit = js.native
   def div[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
   def div[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  def divNoNan[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
+  def divNoNan[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
   def divStrict[T /* <: this.type */](`this`: T, x: T): T = js.native
   def divStrict[T /* <: this.type */](`this`: T, x: TensorLike): T = js.native
   def dot(b: Tensor[Rank]): Tensor[Rank] = js.native

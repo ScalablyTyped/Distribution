@@ -10,6 +10,12 @@ trait StyleSheetTestUtilsStatic extends js.Object {
     */
   def clearBufferAndResumeStyleInjection(): Unit
   /**
+    * Returns a string of buffered styles which have not been flushed
+    *
+    * @returns {string}  Buffer of styles which have not yet been flushed.
+    */
+  def getBufferedStyles(): js.Array[String]
+  /**
     * Prevent styles from being injected into the DOM.
     *
     * This is useful in situations where you'd like to test rendering UI
@@ -25,8 +31,12 @@ trait StyleSheetTestUtilsStatic extends js.Object {
 
 object StyleSheetTestUtilsStatic {
   @scala.inline
-  def apply(clearBufferAndResumeStyleInjection: () => Unit, suppressStyleInjection: () => Unit): StyleSheetTestUtilsStatic = {
-    val __obj = js.Dynamic.literal(clearBufferAndResumeStyleInjection = js.Any.fromFunction0(clearBufferAndResumeStyleInjection), suppressStyleInjection = js.Any.fromFunction0(suppressStyleInjection))
+  def apply(
+    clearBufferAndResumeStyleInjection: () => Unit,
+    getBufferedStyles: () => js.Array[String],
+    suppressStyleInjection: () => Unit
+  ): StyleSheetTestUtilsStatic = {
+    val __obj = js.Dynamic.literal(clearBufferAndResumeStyleInjection = js.Any.fromFunction0(clearBufferAndResumeStyleInjection), getBufferedStyles = js.Any.fromFunction0(getBufferedStyles), suppressStyleInjection = js.Any.fromFunction0(suppressStyleInjection))
   
     __obj.asInstanceOf[StyleSheetTestUtilsStatic]
   }

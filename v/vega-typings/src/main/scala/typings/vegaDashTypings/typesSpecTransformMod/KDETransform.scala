@@ -2,24 +2,22 @@ package typings.vegaDashTypings.typesSpecTransformMod
 
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import typings.vegaDashTypings.typesSpecUtilMod.Vector2
-import typings.vegaDashTypings.vegaDashTypingsStrings.independent
 import typings.vegaDashTypings.vegaDashTypingsStrings.kde
-import typings.vegaDashTypings.vegaDashTypingsStrings.shared
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait KDETransform extends _Transforms {
+trait KDETransform extends Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var bandwidth: js.UndefOr[Double | SignalRef] = js.undefined
   var counts: js.UndefOr[Boolean | SignalRef] = js.undefined
   var cumulative: js.UndefOr[Boolean | SignalRef] = js.undefined
-  var extent: js.UndefOr[(js.Tuple2[Double, Double]) | SignalRef] = js.undefined
-  var field: String | TransformField
-  var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.undefined
+  var extent: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
+  var field: FieldRef
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   var maxsteps: js.UndefOr[Double | SignalRef] = js.undefined
   var minsteps: js.UndefOr[Double | SignalRef] = js.undefined
-  var resolve: js.UndefOr[shared | independent] = js.undefined
+  var resolve: js.UndefOr[KDEResolve | SignalRef] = js.undefined
   var steps: js.UndefOr[Double | SignalRef] = js.undefined
   var `type`: kde
 }
@@ -27,17 +25,17 @@ trait KDETransform extends _Transforms {
 object KDETransform {
   @scala.inline
   def apply(
-    field: String | TransformField,
+    field: FieldRef,
     `type`: kde,
     as: (Vector2[String | SignalRef]) | SignalRef = null,
     bandwidth: Double | SignalRef = null,
     counts: Boolean | SignalRef = null,
     cumulative: Boolean | SignalRef = null,
-    extent: (js.Tuple2[Double, Double]) | SignalRef = null,
-    groupby: (js.Array[String | TransformField]) | SignalRef = null,
+    extent: (Vector2[Double | SignalRef]) | SignalRef = null,
+    groupby: js.Array[FieldRef] | SignalRef = null,
     maxsteps: Double | SignalRef = null,
     minsteps: Double | SignalRef = null,
-    resolve: shared | independent = null,
+    resolve: KDEResolve | SignalRef = null,
     steps: Double | SignalRef = null
   ): KDETransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])

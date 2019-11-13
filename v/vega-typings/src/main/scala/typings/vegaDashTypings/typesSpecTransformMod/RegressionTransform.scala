@@ -2,39 +2,33 @@ package typings.vegaDashTypings.typesSpecTransformMod
 
 import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import typings.vegaDashTypings.typesSpecUtilMod.Vector2
-import typings.vegaDashTypings.vegaDashTypingsStrings.exp
-import typings.vegaDashTypings.vegaDashTypingsStrings.linear
-import typings.vegaDashTypings.vegaDashTypingsStrings.log
-import typings.vegaDashTypings.vegaDashTypingsStrings.poly
-import typings.vegaDashTypings.vegaDashTypingsStrings.pow
-import typings.vegaDashTypings.vegaDashTypingsStrings.quad
 import typings.vegaDashTypings.vegaDashTypingsStrings.regression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RegressionTransform extends _Transforms {
+trait RegressionTransform extends Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var extent: js.UndefOr[(js.Tuple2[Double, Double]) | SignalRef] = js.undefined
-  var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.undefined
-  var method: js.UndefOr[linear | exp | log | quad | poly | pow | SignalRef] = js.undefined
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
+  var method: js.UndefOr[RegressionMethod | SignalRef] = js.undefined
   var order: js.UndefOr[Double | SignalRef] = js.undefined
   var params: js.UndefOr[Boolean | SignalRef] = js.undefined
   var `type`: regression
-  var x: String | TransformField
-  var y: String | TransformField
+  var x: FieldRef
+  var y: FieldRef
 }
 
 object RegressionTransform {
   @scala.inline
   def apply(
     `type`: regression,
-    x: String | TransformField,
-    y: String | TransformField,
+    x: FieldRef,
+    y: FieldRef,
     as: (Vector2[String | SignalRef]) | SignalRef = null,
     extent: (js.Tuple2[Double, Double]) | SignalRef = null,
-    groupby: (js.Array[String | TransformField]) | SignalRef = null,
-    method: linear | exp | log | quad | poly | pow | SignalRef = null,
+    groupby: js.Array[FieldRef] | SignalRef = null,
+    method: RegressionMethod | SignalRef = null,
     order: Double | SignalRef = null,
     params: Boolean | SignalRef = null
   ): RegressionTransform = {

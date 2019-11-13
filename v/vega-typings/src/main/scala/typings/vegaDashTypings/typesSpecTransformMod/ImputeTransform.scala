@@ -6,12 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImputeTransform extends _Transforms {
-  var field: String
-  var groupby: js.UndefOr[js.Array[String]] = js.undefined
-  var key: String
+trait ImputeTransform extends Transforms {
+  var field: FieldRef
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
+  var key: FieldRef
   var keyvals: js.UndefOr[js.Array[_] | SignalRef] = js.undefined
-  var method: js.UndefOr[ImputeMethod] = js.undefined
+  var method: js.UndefOr[ImputeMethod | SignalRef] = js.undefined
   var `type`: impute
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -19,19 +19,19 @@ trait ImputeTransform extends _Transforms {
 object ImputeTransform {
   @scala.inline
   def apply(
-    field: String,
-    key: String,
+    field: FieldRef,
+    key: FieldRef,
     `type`: impute,
-    groupby: js.Array[String] = null,
+    groupby: js.Array[FieldRef] | SignalRef = null,
     keyvals: js.Array[_] | SignalRef = null,
-    method: ImputeMethod = null,
+    method: ImputeMethod | SignalRef = null,
     value: js.Any = null
   ): ImputeTransform = {
-    val __obj = js.Dynamic.literal(field = field, key = key)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
-    if (groupby != null) __obj.updateDynamic("groupby")(groupby)
+    if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
     if (keyvals != null) __obj.updateDynamic("keyvals")(keyvals.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ImputeTransform]
   }

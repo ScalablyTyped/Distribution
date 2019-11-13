@@ -8,7 +8,7 @@ trait BytesOptions extends js.Object {
   var decimalPlaces: js.UndefOr[Double] = js.undefined
   var fixedDecimals: js.UndefOr[Boolean] = js.undefined
   var thousandsSeparator: js.UndefOr[String] = js.undefined
-  var unit: js.UndefOr[String] = js.undefined
+  var unit: js.UndefOr[Unit] = js.undefined
   var unitSeparator: js.UndefOr[String] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object BytesOptions {
     decimalPlaces: Int | Double = null,
     fixedDecimals: js.UndefOr[Boolean] = js.undefined,
     thousandsSeparator: String = null,
-    unit: String = null,
+    unit: Unit = null,
     unitSeparator: String = null
   ): BytesOptions = {
     val __obj = js.Dynamic.literal()

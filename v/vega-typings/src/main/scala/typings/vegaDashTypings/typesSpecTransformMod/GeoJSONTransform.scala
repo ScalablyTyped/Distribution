@@ -7,25 +7,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeoJSONTransform extends _Transforms {
-  var fields: js.UndefOr[(Vector2[String | TransformField]) | SignalRef] = js.undefined
-  var geojson: js.UndefOr[TransformField] = js.undefined
-  var signal: String
+trait GeoJSONTransform extends Transforms {
+  var fields: js.UndefOr[Vector2[FieldRef] | SignalRef] = js.undefined
+  var geojson: js.UndefOr[FieldRef] = js.undefined
+  var signal: js.UndefOr[SignalName] = js.undefined
   var `type`: geojson
 }
 
 object GeoJSONTransform {
   @scala.inline
   def apply(
-    signal: String,
     `type`: geojson,
-    fields: (Vector2[String | TransformField]) | SignalRef = null,
-    geojson: TransformField = null
+    fields: Vector2[FieldRef] | SignalRef = null,
+    geojson: FieldRef = null,
+    signal: SignalName = null
   ): GeoJSONTransform = {
-    val __obj = js.Dynamic.literal(signal = signal)
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (geojson != null) __obj.updateDynamic("geojson")(geojson)
+    if (geojson != null) __obj.updateDynamic("geojson")(geojson.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal)
     __obj.asInstanceOf[GeoJSONTransform]
   }
 }

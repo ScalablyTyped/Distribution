@@ -1,6 +1,6 @@
 package typings.atZeitNextDashTypescript
 
-import typings.next.nextMod.ServerConfig
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@zeit/next-typescript", JSImport.Namespace)
 @js.native
 object atZeitNextDashTypescriptMod extends js.Object {
-  def apply(): ServerConfig = js.native
+  def apply(): StringDictionary[js.Any] = js.native
   def apply(/** @default {} */
-  nextConfig: ServerConfig): ServerConfig = js.native
+  nextConfig: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
 }
 

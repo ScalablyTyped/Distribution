@@ -1,7 +1,6 @@
 package typings.atMaterialDashUiLab.autocompleteAutocompleteMod
 
 import typings.atMaterialDashUiLab.Anon_ClassName
-import typings.react.reactMod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +9,8 @@ trait RenderInputParams extends js.Object {
   var InputLabelProps: js.Object
   var InputProps: Anon_ClassName
   var disabled: Boolean
+  var id: String
   var inputProps: js.Object
-  var ref: Ref[_]
 }
 
 object RenderInputParams {
@@ -20,11 +19,11 @@ object RenderInputParams {
     InputLabelProps: js.Object,
     InputProps: Anon_ClassName,
     disabled: Boolean,
-    inputProps: js.Object,
-    ref: Ref[_] = null
+    id: String,
+    inputProps: js.Object
   ): RenderInputParams = {
-    val __obj = js.Dynamic.literal(InputLabelProps = InputLabelProps, InputProps = InputProps, disabled = disabled, inputProps = inputProps)
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(InputLabelProps = InputLabelProps, InputProps = InputProps, disabled = disabled, id = id, inputProps = inputProps)
+  
     __obj.asInstanceOf[RenderInputParams]
   }
 }

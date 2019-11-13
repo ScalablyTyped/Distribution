@@ -1,7 +1,7 @@
 
 # Scala.js typings for tryghost__content-api
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 JavaScript Client Library for the Ghost [Content API](http://localhost:8003/api/content/)

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CollectTransform extends _Transforms {
+trait CollectTransform extends Transforms {
   var sort: Compare
   var `type`: collect
 }

@@ -32,9 +32,9 @@ trait sftp extends js.Object {
   def fastPut(localPath: String, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
   def get(path: String): js.Promise[String | ReadableStream | Buffer] = js.native
   def get(path: String, dst: String): js.Promise[String | ReadableStream | Buffer] = js.native
-  def get(path: String, dst: String, options: Boolean): js.Promise[String | ReadableStream | Buffer] = js.native
+  def get(path: String, dst: String, options: TransferOptions): js.Promise[String | ReadableStream | Buffer] = js.native
   def get(path: String, dst: ReadableStream): js.Promise[String | ReadableStream | Buffer] = js.native
-  def get(path: String, dst: ReadableStream, options: Boolean): js.Promise[String | ReadableStream | Buffer] = js.native
+  def get(path: String, dst: ReadableStream, options: TransferOptions): js.Promise[String | ReadableStream | Buffer] = js.native
   def list(remoteFilePath: String): js.Promise[js.Array[FileInfo]] = js.native
   def mkdir(remoteFilePath: String): js.Promise[String] = js.native
   def mkdir(remoteFilePath: String, recursive: Boolean): js.Promise[String] = js.native

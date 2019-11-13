@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-server" : "2.9.7"
+      "apollo-server" : "2.9.8"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-server" : "2.9.7"
+      "apollo-server" : "2.9.8"
     }
   ],
   "compile-devDependencies" : [

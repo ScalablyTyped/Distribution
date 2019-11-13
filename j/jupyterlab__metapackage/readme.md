@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__metapackage
 
-Typings are for version 1.2.2
+Typings are for version 1.2.3
 
 ## Library description:
 JupyterLab - Meta Package.  All of the packages used by the core JupyterLab application

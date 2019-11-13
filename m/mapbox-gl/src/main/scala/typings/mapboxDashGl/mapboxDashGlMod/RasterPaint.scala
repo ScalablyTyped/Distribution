@@ -18,7 +18,7 @@ trait RasterPaint extends js.Object {
   var `raster-hue-rotate-transition`: js.UndefOr[Transition] = js.undefined
   var `raster-opacity`: js.UndefOr[Double | Expression] = js.undefined
   var `raster-opacity-transition`: js.UndefOr[Transition] = js.undefined
-  var `raster-resample`: js.UndefOr[linear | nearest] = js.undefined
+  var `raster-resampling`: js.UndefOr[linear | nearest] = js.undefined
   var `raster-saturation`: js.UndefOr[Double | Expression] = js.undefined
   var `raster-saturation-transition`: js.UndefOr[Transition] = js.undefined
 }
@@ -37,7 +37,7 @@ object RasterPaint {
     `raster-hue-rotate-transition`: Transition = null,
     `raster-opacity`: Double | Expression = null,
     `raster-opacity-transition`: Transition = null,
-    `raster-resample`: linear | nearest = null,
+    `raster-resampling`: linear | nearest = null,
     `raster-saturation`: Double | Expression = null,
     `raster-saturation-transition`: Transition = null
   ): RasterPaint = {
@@ -53,7 +53,7 @@ object RasterPaint {
     if (`raster-hue-rotate-transition` != null) __obj.updateDynamic("raster-hue-rotate-transition")(`raster-hue-rotate-transition`)
     if (`raster-opacity` != null) __obj.updateDynamic("raster-opacity")(`raster-opacity`.asInstanceOf[js.Any])
     if (`raster-opacity-transition` != null) __obj.updateDynamic("raster-opacity-transition")(`raster-opacity-transition`)
-    if (`raster-resample` != null) __obj.updateDynamic("raster-resample")(`raster-resample`.asInstanceOf[js.Any])
+    if (`raster-resampling` != null) __obj.updateDynamic("raster-resampling")(`raster-resampling`.asInstanceOf[js.Any])
     if (`raster-saturation` != null) __obj.updateDynamic("raster-saturation")(`raster-saturation`.asInstanceOf[js.Any])
     if (`raster-saturation-transition` != null) __obj.updateDynamic("raster-saturation-transition")(`raster-saturation-transition`)
     __obj.asInstanceOf[RasterPaint]

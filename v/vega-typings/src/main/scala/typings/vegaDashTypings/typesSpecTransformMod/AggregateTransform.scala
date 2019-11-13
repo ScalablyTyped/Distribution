@@ -6,12 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AggregateTransform extends _Transforms {
+trait AggregateTransform extends Transforms {
   var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
   var cross: js.UndefOr[Boolean | SignalRef] = js.undefined
   var drop: js.UndefOr[Boolean | SignalRef] = js.undefined
-  var fields: js.UndefOr[(js.Array[String | TransformField | Null]) | SignalRef] = js.undefined
-  var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.undefined
+  var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.undefined
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   var key: js.UndefOr[String | TransformField] = js.undefined
   var ops: js.UndefOr[(js.Array[AggregateOp | SignalRef]) | SignalRef] = js.undefined
   var signal: js.UndefOr[String] = js.undefined
@@ -25,8 +25,8 @@ object AggregateTransform {
     as: (js.Array[String | SignalRef | Null]) | SignalRef = null,
     cross: Boolean | SignalRef = null,
     drop: Boolean | SignalRef = null,
-    fields: (js.Array[String | TransformField | Null]) | SignalRef = null,
-    groupby: (js.Array[String | TransformField]) | SignalRef = null,
+    fields: (js.Array[FieldRef | Null]) | SignalRef = null,
+    groupby: js.Array[FieldRef] | SignalRef = null,
     key: String | TransformField = null,
     ops: (js.Array[AggregateOp | SignalRef]) | SignalRef = null,
     signal: String = null

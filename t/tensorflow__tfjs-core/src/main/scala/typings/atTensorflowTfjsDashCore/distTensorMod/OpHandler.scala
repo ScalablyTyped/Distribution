@@ -228,6 +228,8 @@ trait OpHandler extends js.Object {
   ): Tensor[R3] = js.native
   def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
   def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
+  def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
+  def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
   def divStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
   def divStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
   def dot(t1: Tensor[Rank], t2: Tensor[Rank]): Tensor[Rank] = js.native

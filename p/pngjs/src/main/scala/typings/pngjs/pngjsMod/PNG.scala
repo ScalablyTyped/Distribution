@@ -3,6 +3,7 @@ package typings.pngjs.pngjsMod
 import typings.node.Buffer
 import typings.node.streamMod.Duplex
 import typings.pngjs.Anon_Buffer
+import typings.pngjs.pngjsStrings.close
 import typings.pngjs.pngjsStrings.error
 import typings.pngjs.pngjsStrings.metadata
 import typings.pngjs.pngjsStrings.parsed
@@ -29,6 +30,8 @@ class PNG () extends Duplex {
     deltaX: js.UndefOr[Double],
     deltaY: js.UndefOr[Double]
   ): PNG = js.native
+  @JSName("on")
+  def on_close(event: close, callback: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, callback: js.Function1[/* error */ Error, Unit]): this.type = js.native
   @JSName("on")

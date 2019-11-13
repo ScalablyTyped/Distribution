@@ -9,12 +9,12 @@ trait PadInfo extends js.Object {
   var left: Double
   var right: Double
   var top: Double
-  var `type`: String
+  var `type`: PadType
 }
 
 object PadInfo {
   @scala.inline
-  def apply(bottom: Double, left: Double, right: Double, top: Double, `type`: String): PadInfo = {
+  def apply(bottom: Double, left: Double, right: Double, top: Double, `type`: PadType): PadInfo = {
     val __obj = js.Dynamic.literal(bottom = bottom, left = left, right = right, top = top)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PadInfo]

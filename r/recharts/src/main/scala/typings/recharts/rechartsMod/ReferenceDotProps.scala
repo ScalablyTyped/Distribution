@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   var className: js.UndefOr[Double | String] = js.undefined
   var ifOverflow: js.UndefOr[IfOverflowType] = js.undefined
   var isFront: js.UndefOr[Boolean] = js.undefined
-  var label: String | Double | ReactElement | RechartsFunction
+  var label: js.UndefOr[String | Double | ReactElement | RechartsFunction] = js.undefined
   var r: js.UndefOr[Double] = js.undefined
   var shape: js.UndefOr[
     (ContentRenderer[
@@ -31,11 +31,11 @@ import scala.scalajs.js.annotation._
 object ReferenceDotProps {
   @scala.inline
   def apply(
-    label: String | Double | ReactElement | RechartsFunction,
     alwaysShow: js.UndefOr[Boolean] = js.undefined,
     className: Double | String = null,
     ifOverflow: IfOverflowType = null,
     isFront: js.UndefOr[Boolean] = js.undefined,
+    label: String | Double | ReactElement | RechartsFunction = null,
     onClick: /* repeated */ js.Any => Unit = null,
     onMouseDown: /* repeated */ js.Any => Unit = null,
     onMouseEnter: /* repeated */ js.Any => Unit = null,
@@ -59,11 +59,12 @@ object ReferenceDotProps {
     yAxis: ReferenceDotAxisConfiguration = null,
     yAxisId: String | Double = null
   ): ReferenceDotProps = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (ifOverflow != null) __obj.updateDynamic("ifOverflow")(ifOverflow)
     if (!js.isUndefined(isFront)) __obj.updateDynamic("isFront")(isFront)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))

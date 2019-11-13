@@ -1,7 +1,6 @@
 package typings.next
 
-import typings.nextDashServer.linkMod.LinkProps
-import typings.react.reactMod.Component
+import typings.next.distClientLinkMod.LinkProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object linkMod extends js.Object {
   @js.native
-  class default ()
-    extends Component[LinkProps, js.Object, js.Any]
+  class default protected ()
+    extends typings.next.distClientLinkMod.default {
+    def this(props: LinkProps) = this()
+  }
   
-  type LinkState = LinkProps
+  /* static members */
+  @js.native
+  object default extends js.Object {
+    var propTypes: js.UndefOr[js.Any] = js.native
+  }
+  
 }
 

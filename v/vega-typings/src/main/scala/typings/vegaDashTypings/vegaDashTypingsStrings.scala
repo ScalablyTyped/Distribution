@@ -10,6 +10,7 @@ import typings.vegaDashTypings.typesSpecAxisMod.FormatType
 import typings.vegaDashTypings.typesSpecAxisMod._LabelOverlap
 import typings.vegaDashTypings.typesSpecColorMod.ColorName
 import typings.vegaDashTypings.typesSpecConfigMod.AxisConfigKeys
+import typings.vegaDashTypings.typesSpecConfigMod.Cursor
 import typings.vegaDashTypings.typesSpecDataMod.DataType
 import typings.vegaDashTypings.typesSpecEncodeMod.Align
 import typings.vegaDashTypings.typesSpecEncodeMod.Baseline
@@ -47,9 +48,19 @@ import typings.vegaDashTypings.typesSpecTitleMod.TitleFrame
 import typings.vegaDashTypings.typesSpecTitleMod.TitleOrient
 import typings.vegaDashTypings.typesSpecTitleMod._TitleAnchor
 import typings.vegaDashTypings.typesSpecTransformMod.AggregateOp
+import typings.vegaDashTypings.typesSpecTransformMod.DensityMethod
 import typings.vegaDashTypings.typesSpecTransformMod.ImputeMethod
+import typings.vegaDashTypings.typesSpecTransformMod.KDEResolve
+import typings.vegaDashTypings.typesSpecTransformMod.LinkPathOrient
+import typings.vegaDashTypings.typesSpecTransformMod.LinkPathShape
+import typings.vegaDashTypings.typesSpecTransformMod.RegressionMethod
 import typings.vegaDashTypings.typesSpecTransformMod.StackOffset
+import typings.vegaDashTypings.typesSpecTransformMod.TimeUnit
+import typings.vegaDashTypings.typesSpecTransformMod.TimeZone
+import typings.vegaDashTypings.typesSpecTransformMod.TreeMethod
+import typings.vegaDashTypings.typesSpecTransformMod.TreemapMethod
 import typings.vegaDashTypings.typesSpecTransformMod.WindowOnlyOp
+import typings.vegaDashTypings.typesSpecTransformMod.WordcloudSpiral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -68,7 +79,7 @@ object vegaDashTypingsStrings {
   sealed trait albersUsa extends ProjectionType
   
   @js.native
-  sealed trait alias extends js.Object
+  sealed trait alias extends Cursor
   
   @js.native
   sealed trait aliceblue extends ColorName
@@ -77,7 +88,7 @@ object vegaDashTypingsStrings {
   sealed trait all extends LayoutAlign
   
   @js.native
-  sealed trait `all-scroll` extends js.Object
+  sealed trait `all-scroll` extends Cursor
   
   @js.native
   sealed trait allow extends js.Object
@@ -98,10 +109,12 @@ object vegaDashTypingsStrings {
   sealed trait aquamarine extends ColorName
   
   @js.native
-  sealed trait arc extends MarkType
+  sealed trait arc
+    extends LinkPathShape
+       with MarkType
   
   @js.native
-  sealed trait archimedian extends js.Object
+  sealed trait archimedian extends WordcloudSpiral
   
   @js.native
   sealed trait area extends MarkType
@@ -119,7 +132,7 @@ object vegaDashTypingsStrings {
   sealed trait ascending extends SortOrder
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends Cursor
   
   @js.native
   sealed trait average extends AggregateOp
@@ -180,6 +193,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait `bin-ordinal` extends DiscretizingScaleType
+  
+  @js.native
+  sealed trait binary extends TreemapMethod
   
   @js.native
   sealed trait bisque extends ColorName
@@ -377,7 +393,10 @@ object vegaDashTypingsStrings {
   sealed trait `catmull-rom` extends Interpolate
   
   @js.native
-  sealed trait cell extends js.Object
+  sealed trait cdf extends DensityMethod
+  
+  @js.native
+  sealed trait cell extends Cursor
   
   @js.native
   sealed trait center
@@ -407,10 +426,16 @@ object vegaDashTypingsStrings {
   sealed trait click extends EventType
   
   @js.native
-  sealed trait `col-resize` extends js.Object
+  sealed trait cluster extends TreeMethod
+  
+  @js.native
+  sealed trait `col-resize` extends Cursor
   
   @js.native
   sealed trait collect extends js.Object
+  
+  @js.native
+  sealed trait collide extends js.Object
   
   @js.native
   sealed trait conicConformal extends ProjectionType
@@ -428,13 +453,13 @@ object vegaDashTypingsStrings {
   sealed trait content extends js.Object
   
   @js.native
-  sealed trait `context-menu` extends js.Object
+  sealed trait `context-menu` extends Cursor
   
   @js.native
   sealed trait contour extends js.Object
   
   @js.native
-  sealed trait copy extends js.Object
+  sealed trait copy extends Cursor
   
   @js.native
   sealed trait coral extends ColorName
@@ -461,7 +486,7 @@ object vegaDashTypingsStrings {
   sealed trait crossfilter extends js.Object
   
   @js.native
-  sealed trait crosshair extends js.Object
+  sealed trait crosshair extends Cursor
   
   @js.native
   sealed trait csv extends js.Object
@@ -474,6 +499,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait cume_dist extends WindowOnlyOp
+  
+  @js.native
+  sealed trait curve extends LinkPathShape
   
   @js.native
   sealed trait cyan extends ColorName
@@ -539,10 +567,14 @@ object vegaDashTypingsStrings {
   sealed trait darkviolet extends ColorName
   
   @js.native
-  sealed trait date extends DataType
+  sealed trait date
+    extends DataType
+       with TimeUnit
   
   @js.native
-  sealed trait day extends TimeInterval
+  sealed trait day
+    extends TimeInterval
+       with TimeUnit
   
   @js.native
   sealed trait dblclick extends EventType
@@ -554,7 +586,7 @@ object vegaDashTypingsStrings {
   sealed trait deepskyblue extends ColorName
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default extends Cursor
   
   @js.native
   sealed trait dense_rank extends WindowOnlyOp
@@ -566,7 +598,13 @@ object vegaDashTypingsStrings {
   sealed trait descending extends SortOrder
   
   @js.native
+  sealed trait diagonal extends LinkPathShape
+  
+  @js.native
   sealed trait diamond extends _SymbolShape
+  
+  @js.native
+  sealed trait dice extends TreemapMethod
   
   @js.native
   sealed trait dimgray extends ColorName
@@ -599,7 +637,7 @@ object vegaDashTypingsStrings {
   sealed trait dsv extends js.Object
   
   @js.native
-  sealed trait `e-resize` extends js.Object
+  sealed trait `e-resize` extends Cursor
   
   @js.native
   sealed trait each extends LayoutAlign
@@ -619,13 +657,13 @@ object vegaDashTypingsStrings {
   sealed trait equirectangular extends ProjectionType
   
   @js.native
-  sealed trait `ew-resize` extends js.Object
+  sealed trait `ew-resize` extends Cursor
   
   @js.native
   sealed trait exit extends EncodeEntryName
   
   @js.native
-  sealed trait exp extends js.Object
+  sealed trait exp extends RegressionMethod
   
   @js.native
   sealed trait extent extends js.Object
@@ -709,10 +747,10 @@ object vegaDashTypingsStrings {
   sealed trait goldenrod extends ColorName
   
   @js.native
-  sealed trait grab extends js.Object
+  sealed trait grab extends Cursor
   
   @js.native
-  sealed trait grabbing extends js.Object
+  sealed trait grabbing extends Cursor
   
   @js.native
   sealed trait gradient extends LegendType
@@ -783,19 +821,24 @@ object vegaDashTypingsStrings {
   sealed trait height extends RangeEnum
   
   @js.native
-  sealed trait help extends js.Object
+  sealed trait help extends Cursor
   
   @js.native
   sealed trait honeydew extends ColorName
   
   @js.native
-  sealed trait horizontal extends Orientation
+  sealed trait horizontal
+    extends LinkPathOrient
+       with Orientation
   
   @js.native
   sealed trait hotpink extends ColorName
   
   @js.native
   sealed trait hour extends TimeInterval
+  
+  @js.native
+  sealed trait hours extends TimeUnit
   
   @js.native
   sealed trait hover extends EncodeEntryName
@@ -827,7 +870,7 @@ object vegaDashTypingsStrings {
   sealed trait impute extends js.Object
   
   @js.native
-  sealed trait independent extends js.Object
+  sealed trait independent extends KDEResolve
   
   @js.native
   sealed trait indianred extends ColorName
@@ -845,6 +888,9 @@ object vegaDashTypingsStrings {
   sealed trait interior extends js.Object
   
   @js.native
+  sealed trait isocontour extends js.Object
+  
+  @js.native
   sealed trait italic extends _FontStyle
   
   @js.native
@@ -858,6 +904,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait kde extends js.Object
+  
+  @js.native
+  sealed trait kde2d extends js.Object
   
   @js.native
   sealed trait keydown extends EventType
@@ -968,12 +1017,15 @@ object vegaDashTypingsStrings {
   sealed trait limegreen extends ColorName
   
   @js.native
-  sealed trait line extends MarkType
+  sealed trait line
+    extends LinkPathShape
+       with MarkType
   
   @js.native
   sealed trait linear
     extends QuantScaleType
        with Interpolate
+       with RegressionMethod
   
   @js.native
   sealed trait `linear-closed` extends Interpolate
@@ -982,13 +1034,24 @@ object vegaDashTypingsStrings {
   sealed trait linen extends ColorName
   
   @js.native
+  sealed trait link extends js.Object
+  
+  @js.native
   sealed trait linkpath extends js.Object
+  
+  @js.native
+  sealed trait local extends TimeZone
   
   @js.native
   sealed trait loess extends js.Object
   
   @js.native
-  sealed trait log extends QuantScaleType
+  sealed trait log
+    extends QuantScaleType
+       with RegressionMethod
+  
+  @js.native
+  sealed trait lognormal extends js.Object
   
   @js.native
   sealed trait lookup extends js.Object
@@ -1066,6 +1129,9 @@ object vegaDashTypingsStrings {
   sealed trait millisecond extends TimeInterval
   
   @js.native
+  sealed trait milliseconds extends TimeUnit
+  
+  @js.native
   sealed trait min
     extends AggregateOp
        with ImputeMethod
@@ -1077,10 +1143,16 @@ object vegaDashTypingsStrings {
   sealed trait minute extends TimeInterval
   
   @js.native
+  sealed trait minutes extends TimeUnit
+  
+  @js.native
   sealed trait missing extends AggregateOp
   
   @js.native
   sealed trait mistyrose extends ColorName
+  
+  @js.native
+  sealed trait mixture extends js.Object
   
   @js.native
   sealed trait moccasin extends ColorName
@@ -1089,7 +1161,9 @@ object vegaDashTypingsStrings {
   sealed trait monotone extends Interpolate
   
   @js.native
-  sealed trait month extends TimeInterval
+  sealed trait month
+    extends TimeInterval
+       with TimeUnit
   
   @js.native
   sealed trait mousedown extends EventType
@@ -1110,10 +1184,10 @@ object vegaDashTypingsStrings {
   sealed trait mousewheel extends EventType
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait move extends Cursor
   
   @js.native
-  sealed trait `n-resize` extends js.Object
+  sealed trait `n-resize` extends Cursor
   
   @js.native
   sealed trait natural extends Interpolate
@@ -1128,23 +1202,27 @@ object vegaDashTypingsStrings {
   sealed trait navy extends ColorName
   
   @js.native
-  sealed trait `ne-resize` extends js.Object
+  sealed trait nbody extends js.Object
+  
+  @js.native
+  sealed trait `ne-resize` extends Cursor
   
   @js.native
   sealed trait nest extends js.Object
   
   @js.native
-  sealed trait `nesw-resize` extends js.Object
+  sealed trait `nesw-resize` extends Cursor
   
   @js.native
   sealed trait next_value extends WindowOnlyOp
   
   @js.native
-  sealed trait `no-drop` extends js.Object
+  sealed trait `no-drop` extends Cursor
   
   @js.native
   sealed trait none
     extends AutoSizeType
+       with Cursor
        with LayoutAlign
        with LegendOrient
        with Renderers
@@ -1159,10 +1237,10 @@ object vegaDashTypingsStrings {
   sealed trait normalize extends StackOffset
   
   @js.native
-  sealed trait `not-allowed` extends js.Object
+  sealed trait `not-allowed` extends Cursor
   
   @js.native
-  sealed trait `ns-resize` extends js.Object
+  sealed trait `ns-resize` extends Cursor
   
   @js.native
   sealed trait nth_value extends WindowOnlyOp
@@ -1176,10 +1254,10 @@ object vegaDashTypingsStrings {
        with FormatType
   
   @js.native
-  sealed trait `nw-resize` extends js.Object
+  sealed trait `nw-resize` extends Cursor
   
   @js.native
-  sealed trait `nwse-resize` extends js.Object
+  sealed trait `nwse-resize` extends Cursor
   
   @js.native
   sealed trait oblique extends _FontStyle
@@ -1234,6 +1312,9 @@ object vegaDashTypingsStrings {
        with DiscreteScaleType
   
   @js.native
+  sealed trait orthogonal extends LinkPathShape
+  
+  @js.native
   sealed trait orthographic extends ProjectionType
   
   @js.native
@@ -1282,6 +1363,9 @@ object vegaDashTypingsStrings {
   sealed trait path extends MarkType
   
   @js.native
+  sealed trait pdf extends DensityMethod
+  
+  @js.native
   sealed trait peachpuff extends ColorName
   
   @js.native
@@ -1327,6 +1411,9 @@ object vegaDashTypingsStrings {
   sealed trait `pinkyellowgreen-9` extends Diverging
   
   @js.native
+  sealed trait pivot extends js.Object
+  
+  @js.native
   sealed trait plasma extends SequentialMultiHue
   
   @js.native
@@ -1336,13 +1423,15 @@ object vegaDashTypingsStrings {
   sealed trait point extends DiscreteScaleType
   
   @js.native
-  sealed trait pointer extends js.Object
+  sealed trait pointer extends Cursor
   
   @js.native
-  sealed trait poly extends js.Object
+  sealed trait poly extends RegressionMethod
   
   @js.native
-  sealed trait pow extends QuantScaleType
+  sealed trait pow
+    extends QuantScaleType
+       with RegressionMethod
   
   @js.native
   sealed trait powderblue extends ColorName
@@ -1354,7 +1443,7 @@ object vegaDashTypingsStrings {
   sealed trait prevent extends js.Object
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress extends Cursor
   
   @js.native
   sealed trait project extends js.Object
@@ -1504,7 +1593,7 @@ object vegaDashTypingsStrings {
   sealed trait q3 extends AggregateOp
   
   @js.native
-  sealed trait quad extends js.Object
+  sealed trait quad extends RegressionMethod
   
   @js.native
   sealed trait quantile extends DiscretizingScaleType
@@ -1513,7 +1602,10 @@ object vegaDashTypingsStrings {
   sealed trait quantize extends DiscretizingScaleType
   
   @js.native
-  sealed trait radial extends js.Object
+  sealed trait quarter extends TimeUnit
+  
+  @js.native
+  sealed trait radial extends LinkPathOrient
   
   @js.native
   sealed trait radio extends js.Object
@@ -1537,7 +1629,7 @@ object vegaDashTypingsStrings {
   sealed trait rect extends MarkType
   
   @js.native
-  sealed trait rectangular extends js.Object
+  sealed trait rectangular extends WordcloudSpiral
   
   @js.native
   sealed trait red extends ColorName
@@ -1699,6 +1791,9 @@ object vegaDashTypingsStrings {
   sealed trait resolvefilter extends js.Object
   
   @js.native
+  sealed trait resquarify extends TreemapMethod
+  
+  @js.native
   sealed trait rgb extends ScaleInterpolate
   
   @js.native
@@ -1714,7 +1809,7 @@ object vegaDashTypingsStrings {
   sealed trait rosybrown extends ColorName
   
   @js.native
-  sealed trait `row-resize` extends js.Object
+  sealed trait `row-resize` extends Cursor
   
   @js.native
   sealed trait row_number extends WindowOnlyOp
@@ -1729,7 +1824,7 @@ object vegaDashTypingsStrings {
   sealed trait rule extends MarkType
   
   @js.native
-  sealed trait `s-resize` extends js.Object
+  sealed trait `s-resize` extends Cursor
   
   @js.native
   sealed trait saddlebrown extends ColorName
@@ -1747,7 +1842,7 @@ object vegaDashTypingsStrings {
   sealed trait scope extends js.Object
   
   @js.native
-  sealed trait `se-resize` extends js.Object
+  sealed trait `se-resize` extends Cursor
   
   @js.native
   sealed trait seagreen extends ColorName
@@ -1757,6 +1852,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait second extends TimeInterval
+  
+  @js.native
+  sealed trait seconds extends TimeUnit
   
   @js.native
   sealed trait select extends EncodeEntryName
@@ -1780,7 +1878,7 @@ object vegaDashTypingsStrings {
   sealed trait shape extends MarkType
   
   @js.native
-  sealed trait shared extends js.Object
+  sealed trait shared extends KDEResolve
   
   @js.native
   sealed trait sienna extends ColorName
@@ -1802,6 +1900,12 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait slategrey extends ColorName
+  
+  @js.native
+  sealed trait slice extends TreemapMethod
+  
+  @js.native
+  sealed trait slicedice extends TreemapMethod
   
   @js.native
   sealed trait snow extends ColorName
@@ -1844,6 +1948,9 @@ object vegaDashTypingsStrings {
   
   @js.native
   sealed trait square extends _SymbolShape
+  
+  @js.native
+  sealed trait squarify extends TreemapMethod
   
   @js.native
   sealed trait stack extends js.Object
@@ -1893,7 +2000,7 @@ object vegaDashTypingsStrings {
   sealed trait svg extends Renderers
   
   @js.native
-  sealed trait `sw-resize` extends js.Object
+  sealed trait `sw-resize` extends Cursor
   
   @js.native
   sealed trait symbol
@@ -1917,7 +2024,9 @@ object vegaDashTypingsStrings {
   sealed trait teal extends ColorName
   
   @js.native
-  sealed trait text extends MarkType
+  sealed trait text
+    extends Cursor
+       with MarkType
   
   @js.native
   sealed trait thistle extends ColorName
@@ -1926,12 +2035,18 @@ object vegaDashTypingsStrings {
   sealed trait threshold extends DiscretizingScaleType
   
   @js.native
+  sealed trait tidy extends TreeMethod
+  
+  @js.native
   sealed trait time
     extends QuantScaleType
        with FormatType
   
   @js.native
   sealed trait timer extends EventType
+  
+  @js.native
+  sealed trait timeunit extends js.Object
   
   @js.native
   sealed trait tomato extends ColorName
@@ -2000,10 +2115,16 @@ object vegaDashTypingsStrings {
   sealed trait turquoise extends ColorName
   
   @js.native
+  sealed trait uniform extends js.Object
+  
+  @js.native
   sealed trait update extends EncodeEntryName
   
   @js.native
-  sealed trait utc extends QuantScaleType
+  sealed trait utc
+    extends QuantScaleType
+       with FormatType
+       with TimeZone
   
   @js.native
   sealed trait valid extends AggregateOp
@@ -2021,10 +2142,12 @@ object vegaDashTypingsStrings {
   sealed trait variancep extends AggregateOp
   
   @js.native
-  sealed trait vertical extends Orientation
+  sealed trait vertical
+    extends LinkPathOrient
+       with Orientation
   
   @js.native
-  sealed trait `vertical-text` extends js.Object
+  sealed trait `vertical-text` extends Cursor
   
   @js.native
   sealed trait view extends js.Object
@@ -2039,16 +2162,18 @@ object vegaDashTypingsStrings {
   sealed trait voronoi extends js.Object
   
   @js.native
-  sealed trait `w-resize` extends js.Object
+  sealed trait `w-resize` extends Cursor
   
   @js.native
-  sealed trait wait extends js.Object
+  sealed trait wait extends Cursor
   
   @js.native
   sealed trait wedge extends _SymbolShape
   
   @js.native
-  sealed trait week extends TimeInterval
+  sealed trait week
+    extends TimeInterval
+       with TimeUnit
   
   @js.native
   sealed trait wheat extends ColorName
@@ -2072,7 +2197,15 @@ object vegaDashTypingsStrings {
   sealed trait wordcloud extends js.Object
   
   @js.native
-  sealed trait year extends TimeInterval
+  sealed trait x extends js.Object
+  
+  @js.native
+  sealed trait y extends js.Object
+  
+  @js.native
+  sealed trait year
+    extends TimeInterval
+       with TimeUnit
   
   @js.native
   sealed trait yellow extends ColorName
@@ -2179,10 +2312,10 @@ object vegaDashTypingsStrings {
   sealed trait zero extends StackOffset
   
   @js.native
-  sealed trait `zoom-in` extends js.Object
+  sealed trait `zoom-in` extends Cursor
   
   @js.native
-  sealed trait `zoom-out` extends js.Object
+  sealed trait `zoom-out` extends Cursor
   
   @scala.inline
   def accent: accent = "accent".asInstanceOf[accent]
@@ -2268,6 +2401,8 @@ object vegaDashTypingsStrings {
   def bin: bin = "bin".asInstanceOf[bin]
   @scala.inline
   def `bin-ordinal`: `bin-ordinal` = "bin-ordinal".asInstanceOf[`bin-ordinal`]
+  @scala.inline
+  def binary: binary = "binary".asInstanceOf[binary]
   @scala.inline
   def bisque: bisque = "bisque".asInstanceOf[bisque]
   @scala.inline
@@ -2395,6 +2530,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def `catmull-rom`: `catmull-rom` = "catmull-rom".asInstanceOf[`catmull-rom`]
   @scala.inline
+  def cdf: cdf = "cdf".asInstanceOf[cdf]
+  @scala.inline
   def cell: cell = "cell".asInstanceOf[cell]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -2413,9 +2550,13 @@ object vegaDashTypingsStrings {
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
+  def cluster: cluster = "cluster".asInstanceOf[cluster]
+  @scala.inline
   def `col-resize`: `col-resize` = "col-resize".asInstanceOf[`col-resize`]
   @scala.inline
   def collect: collect = "collect".asInstanceOf[collect]
+  @scala.inline
+  def collide: collide = "collide".asInstanceOf[collide]
   @scala.inline
   def conicConformal: conicConformal = "conicConformal".asInstanceOf[conicConformal]
   @scala.inline
@@ -2458,6 +2599,8 @@ object vegaDashTypingsStrings {
   def `cubehelix-long`: `cubehelix-long` = "cubehelix-long".asInstanceOf[`cubehelix-long`]
   @scala.inline
   def cume_dist: cume_dist = "cume_dist".asInstanceOf[cume_dist]
+  @scala.inline
+  def curve: curve = "curve".asInstanceOf[curve]
   @scala.inline
   def cyan: cyan = "cyan".asInstanceOf[cyan]
   @scala.inline
@@ -2519,7 +2662,11 @@ object vegaDashTypingsStrings {
   @scala.inline
   def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
+  def diagonal: diagonal = "diagonal".asInstanceOf[diagonal]
+  @scala.inline
   def diamond: diamond = "diamond".asInstanceOf[diamond]
+  @scala.inline
+  def dice: dice = "dice".asInstanceOf[dice]
   @scala.inline
   def dimgray: dimgray = "dimgray".asInstanceOf[dimgray]
   @scala.inline
@@ -2671,6 +2818,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
+  def hours: hours = "hours".asInstanceOf[hours]
+  @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
   def hsl: hsl = "hsl".asInstanceOf[hsl]
@@ -2701,6 +2850,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def interior: interior = "interior".asInstanceOf[interior]
   @scala.inline
+  def isocontour: isocontour = "isocontour".asInstanceOf[isocontour]
+  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   @scala.inline
   def ivory: ivory = "ivory".asInstanceOf[ivory]
@@ -2710,6 +2861,8 @@ object vegaDashTypingsStrings {
   def json: json = "json".asInstanceOf[json]
   @scala.inline
   def kde: kde = "kde".asInstanceOf[kde]
+  @scala.inline
+  def kde2d: kde2d = "kde2d".asInstanceOf[kde2d]
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   @scala.inline
@@ -2787,11 +2940,17 @@ object vegaDashTypingsStrings {
   @scala.inline
   def linen: linen = "linen".asInstanceOf[linen]
   @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  @scala.inline
   def linkpath: linkpath = "linkpath".asInstanceOf[linkpath]
+  @scala.inline
+  def local: local = "local".asInstanceOf[local]
   @scala.inline
   def loess: loess = "loess".asInstanceOf[loess]
   @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
+  def lognormal: lognormal = "lognormal".asInstanceOf[lognormal]
   @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
@@ -2837,15 +2996,21 @@ object vegaDashTypingsStrings {
   @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   @scala.inline
+  def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
+  @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
   def mintcream: mintcream = "mintcream".asInstanceOf[mintcream]
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
+  def minutes: minutes = "minutes".asInstanceOf[minutes]
+  @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
   @scala.inline
   def mistyrose: mistyrose = "mistyrose".asInstanceOf[mistyrose]
+  @scala.inline
+  def mixture: mixture = "mixture".asInstanceOf[mixture]
   @scala.inline
   def moccasin: moccasin = "moccasin".asInstanceOf[moccasin]
   @scala.inline
@@ -2876,6 +3041,8 @@ object vegaDashTypingsStrings {
   def navajowhite: navajowhite = "navajowhite".asInstanceOf[navajowhite]
   @scala.inline
   def navy: navy = "navy".asInstanceOf[navy]
+  @scala.inline
+  def nbody: nbody = "nbody".asInstanceOf[nbody]
   @scala.inline
   def `ne-resize`: `ne-resize` = "ne-resize".asInstanceOf[`ne-resize`]
   @scala.inline
@@ -2939,6 +3106,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   @scala.inline
+  def orthogonal: orthogonal = "orthogonal".asInstanceOf[orthogonal]
+  @scala.inline
   def orthographic: orthographic = "orthographic".asInstanceOf[orthographic]
   @scala.inline
   def outer: outer = "outer".asInstanceOf[outer]
@@ -2971,6 +3140,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline
+  def pdf: pdf = "pdf".asInstanceOf[pdf]
+  @scala.inline
   def peachpuff: peachpuff = "peachpuff".asInstanceOf[peachpuff]
   @scala.inline
   def percent_rank: percent_rank = "percent_rank".asInstanceOf[percent_rank]
@@ -3000,6 +3171,8 @@ object vegaDashTypingsStrings {
   def `pinkyellowgreen-8`: `pinkyellowgreen-8` = "pinkyellowgreen-8".asInstanceOf[`pinkyellowgreen-8`]
   @scala.inline
   def `pinkyellowgreen-9`: `pinkyellowgreen-9` = "pinkyellowgreen-9".asInstanceOf[`pinkyellowgreen-9`]
+  @scala.inline
+  def pivot: pivot = "pivot".asInstanceOf[pivot]
   @scala.inline
   def plasma: plasma = "plasma".asInstanceOf[plasma]
   @scala.inline
@@ -3125,6 +3298,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def quantize: quantize = "quantize".asInstanceOf[quantize]
   @scala.inline
+  def quarter: quarter = "quarter".asInstanceOf[quarter]
+  @scala.inline
   def radial: radial = "radial".asInstanceOf[radial]
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
@@ -3249,6 +3424,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def resolvefilter: resolvefilter = "resolvefilter".asInstanceOf[resolvefilter]
   @scala.inline
+  def resquarify: resquarify = "resquarify".asInstanceOf[resquarify]
+  @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
@@ -3285,6 +3462,8 @@ object vegaDashTypingsStrings {
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   @scala.inline
+  def seconds: seconds = "seconds".asInstanceOf[seconds]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
   def sequence: sequence = "sequence".asInstanceOf[sequence]
@@ -3315,6 +3494,10 @@ object vegaDashTypingsStrings {
   @scala.inline
   def slategrey: slategrey = "slategrey".asInstanceOf[slategrey]
   @scala.inline
+  def slice: slice = "slice".asInstanceOf[slice]
+  @scala.inline
+  def slicedice: slicedice = "slicedice".asInstanceOf[slicedice]
+  @scala.inline
   def snow: snow = "snow".asInstanceOf[snow]
   @scala.inline
   def spectral: spectral = "spectral".asInstanceOf[spectral]
@@ -3342,6 +3525,8 @@ object vegaDashTypingsStrings {
   def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
+  def squarify: squarify = "squarify".asInstanceOf[squarify]
   @scala.inline
   def stack: stack = "stack".asInstanceOf[stack]
   @scala.inline
@@ -3393,9 +3578,13 @@ object vegaDashTypingsStrings {
   @scala.inline
   def threshold: threshold = "threshold".asInstanceOf[threshold]
   @scala.inline
+  def tidy: tidy = "tidy".asInstanceOf[tidy]
+  @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def timer: timer = "timer".asInstanceOf[timer]
+  @scala.inline
+  def timeunit: timeunit = "timeunit".asInstanceOf[timeunit]
   @scala.inline
   def tomato: tomato = "tomato".asInstanceOf[tomato]
   @scala.inline
@@ -3436,6 +3625,8 @@ object vegaDashTypingsStrings {
   def tsv: tsv = "tsv".asInstanceOf[tsv]
   @scala.inline
   def turquoise: turquoise = "turquoise".asInstanceOf[turquoise]
+  @scala.inline
+  def uniform: uniform = "uniform".asInstanceOf[uniform]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline
@@ -3482,6 +3673,10 @@ object vegaDashTypingsStrings {
   def window: window = "window".asInstanceOf[window]
   @scala.inline
   def wordcloud: wordcloud = "wordcloud".asInstanceOf[wordcloud]
+  @scala.inline
+  def x: x = "x".asInstanceOf[x]
+  @scala.inline
+  def y: y = "y".asInstanceOf[y]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
   @scala.inline

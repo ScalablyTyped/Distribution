@@ -1,7 +1,7 @@
 
 # Scala.js typings for bytes
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 Utility to parse a string bytes to bytes and vice-versa

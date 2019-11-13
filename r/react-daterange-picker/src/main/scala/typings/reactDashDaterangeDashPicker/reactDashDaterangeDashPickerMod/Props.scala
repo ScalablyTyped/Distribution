@@ -2,13 +2,14 @@ package typings.reactDashDaterangeDashPicker.reactDashDaterangeDashPickerMod
 
 import typings.moment.momentMod.Moment
 import typings.momentDashRange.momentDashRangeMod.DateRange
-import typings.momentDashRange.momentDashRangeMod.MomentRangeExtends
+import typings.momentDashRange.momentDashRangeMod.MomentRange
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SFC
+import typings.reactDashDaterangeDashPicker.Anon_CalendarFormat
 import typings.reactDashDaterangeDashPicker.reactDashDaterangeDashPickerStrings.range
 import typings.reactDashDaterangeDashPicker.reactDashDaterangeDashPickerStrings.single
 import typings.std.Date
@@ -38,7 +39,7 @@ trait Props[T]
   var onHighlightDate: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
   var onHighlightRange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* value */ OnSelectCallbackParam, Unit]] = js.undefined
-  var onSelectStart: js.UndefOr[js.Function1[/* value */ MomentRangeExtends, Unit]] = js.undefined
+  var onSelectStart: js.UndefOr[js.Function1[/* value */ MomentRange with Anon_CalendarFormat, Unit]] = js.undefined
   var paginationArrowComponent: js.UndefOr[
     (ComponentClass[PaginationArrowProps[js.Object], ComponentState]) | SFC[PaginationArrowProps[js.Object]]
   ] = js.undefined
@@ -47,7 +48,7 @@ trait Props[T]
   var showLegend: js.UndefOr[Boolean] = js.undefined
   var singleDateRange: js.UndefOr[Boolean] = js.undefined
   var stateDefinitions: js.UndefOr[StateDefinitions] = js.undefined
-  var value: js.UndefOr[MomentRangeExtends | DateRange | Moment] = js.undefined
+  var value: js.UndefOr[(MomentRange with Anon_CalendarFormat) | DateRange | Moment] = js.undefined
 }
 
 object Props {
@@ -73,7 +74,7 @@ object Props {
     onHighlightDate: /* date */ Date => Unit = null,
     onHighlightRange: /* date */ Date => Unit = null,
     onSelect: /* value */ OnSelectCallbackParam => Unit = null,
-    onSelectStart: /* value */ MomentRangeExtends => Unit = null,
+    onSelectStart: /* value */ MomentRange with Anon_CalendarFormat => Unit = null,
     paginationArrowComponent: (ComponentClass[PaginationArrowProps[js.Object], ComponentState]) | SFC[PaginationArrowProps[js.Object]] = null,
     ref: LegacyRef[T] = null,
     selectedLabel: String = null,
@@ -81,7 +82,7 @@ object Props {
     showLegend: js.UndefOr[Boolean] = js.undefined,
     singleDateRange: js.UndefOr[Boolean] = js.undefined,
     stateDefinitions: StateDefinitions = null,
-    value: MomentRangeExtends | DateRange | Moment = null
+    value: (MomentRange with Anon_CalendarFormat) | DateRange | Moment = null
   ): Props[T] = {
     val __obj = js.Dynamic.literal()
     if (bemBlock != null) __obj.updateDynamic("bemBlock")(bemBlock)

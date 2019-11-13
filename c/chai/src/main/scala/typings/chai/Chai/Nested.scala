@@ -17,6 +17,7 @@ trait Nested extends js.Object {
   def members(set: js.Array[_]): Assertion = js.native
   def members(set: js.Array[_], message: String): Assertion = js.native
   def property(name: String): Assertion = js.native
+  def property(name: String, message: String): Assertion = js.native
   def property(name: String, value: js.Any): Assertion = js.native
   def property(name: String, value: js.Any, message: String): Assertion = js.native
 }

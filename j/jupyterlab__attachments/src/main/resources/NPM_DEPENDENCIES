@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/attachments" : "1.2.0"
+      "@jupyterlab/attachments" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/attachments" : "1.2.0"
+      "@jupyterlab/attachments" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

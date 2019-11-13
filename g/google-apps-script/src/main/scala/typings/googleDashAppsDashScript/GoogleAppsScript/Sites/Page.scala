@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Page extends js.Object {
   def addColumn(name: String): Column = js.native
-  /** @deprecated DO NOT USE */
-  def addComment(content: String): Comment = js.native
+  /** @deprecated DO NOT USE */ def addComment(content: String): Comment = js.native
   def addHostedAttachment(blob: BlobSource): Attachment = js.native
   def addHostedAttachment(blob: BlobSource, description: String): Attachment = js.native
   def addListItem(values: js.Array[String]): ListItem = js.native
@@ -42,10 +41,8 @@ trait Page extends js.Object {
   def getChildren(): js.Array[Page] = js.native
   def getChildren(options: PageAdvancedParameters): js.Array[Page] = js.native
   def getColumns(): js.Array[Column] = js.native
-  /** @deprecated DO NOT USE */
-  def getComments(): js.Array[Comment] = js.native
-  /** @deprecated DO NOT USE */
-  def getComments(optOptions: Anon_Max): js.Array[Comment] = js.native
+  /** @deprecated DO NOT USE */ def getComments(): js.Array[Comment] = js.native
+  /** @deprecated DO NOT USE */ def getComments(optOptions: Anon_Max): js.Array[Comment] = js.native
   def getDatePublished(): Date = js.native
   def getHtmlContent(): String = js.native
   def getIsDraft(): Boolean = js.native
@@ -54,12 +51,10 @@ trait Page extends js.Object {
   def getListItems(): js.Array[ListItem] = js.native
   def getListItems(optOptions: Anon_Max): js.Array[ListItem] = js.native
   def getName(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getPageName(): String = js.native
+  /** @deprecated DO NOT USE */ def getPageName(): String = js.native
   def getPageType(): PageType = js.native
   def getParent(): Page = js.native
-  /** @deprecated DO NOT USE */
-  def getSelfLink(): String = js.native
+  /** @deprecated DO NOT USE */ def getSelfLink(): String = js.native
   def getTextContent(): String = js.native
   def getTitle(): String = js.native
   def getUrl(): String = js.native

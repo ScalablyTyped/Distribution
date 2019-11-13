@@ -7,6 +7,7 @@ import typings.react.reactMod.ReactNode
 import typings.reactDashResizeDashDetector.Anon_Leading
 import typings.reactDashResizeDashDetector.reactDashResizeDashDetectorStrings.debounce
 import typings.reactDashResizeDashDetector.reactDashResizeDashDetectorStrings.throttle
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,13 +65,21 @@ trait ReactResizeDetectorProps extends Props[ReactResizeDetector] {
     * efault: 1000.
     */
   var refreshRate: js.UndefOr[Double] = js.undefined
-   // will be passed to React.createElement()
   var render: js.UndefOr[js.Function1[/* props */ ReactResizeDetectorDimensions, ReactNode]] = js.undefined
   /**
     * Do not trigger onResize when a component mounts.
     * Default: false
     */
   var skipOnMount: js.UndefOr[Boolean] = js.undefined
+   // will be passed to React.createElement()
+  /**
+    * A DOM element to observe.
+    * By default it's a parent element in relation to the ReactResizeDetector component.
+    * But you can pass any DOM element to observe.
+    * This property is omitted when you pass querySelector.
+    * Default: undefined
+    */
+  var targetDomEl: js.UndefOr[HTMLElement] = js.undefined
 }
 
 object ReactResizeDetectorProps {
@@ -88,7 +97,8 @@ object ReactResizeDetectorProps {
     refreshOptions: Anon_Leading = null,
     refreshRate: Int | Double = null,
     render: /* props */ ReactResizeDetectorDimensions => ReactNode = null,
-    skipOnMount: js.UndefOr[Boolean] = js.undefined
+    skipOnMount: js.UndefOr[Boolean] = js.undefined,
+    targetDomEl: HTMLElement = null
   ): ReactResizeDetectorProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -104,6 +114,7 @@ object ReactResizeDetectorProps {
     if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (!js.isUndefined(skipOnMount)) __obj.updateDynamic("skipOnMount")(skipOnMount)
+    if (targetDomEl != null) __obj.updateDynamic("targetDomEl")(targetDomEl)
     __obj.asInstanceOf[ReactResizeDetectorProps]
   }
 }

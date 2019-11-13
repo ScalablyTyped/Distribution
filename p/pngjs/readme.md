@@ -1,7 +1,7 @@
 
 # Scala.js typings for pngjs
 
-Typings are for version 3.3
+Typings are for version 3.4
 
 ## Library description:
 PNG encoder/decoder in pure JS, supporting any bit size & interlace, async & sync with full test suite.

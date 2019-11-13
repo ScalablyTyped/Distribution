@@ -14,7 +14,7 @@ trait CentralDirectory extends js.Object {
   var offsetToStartOfCentralDirectory: Double
   var signature: Double
   var sizeOfCentralDirectory: Double
-  def extract(opts: ParseOptions): ParseStream
+  def extract(opts: ParseOptions): js.Promise[Unit]
 }
 
 object CentralDirectory {
@@ -23,7 +23,7 @@ object CentralDirectory {
     commentLength: Double,
     diskNumber: Double,
     diskStart: Double,
-    extract: ParseOptions => ParseStream,
+    extract: ParseOptions => js.Promise[Unit],
     files: js.Array[File],
     numberOfRecords: Double,
     numberOfRecordsOnDisk: Double,

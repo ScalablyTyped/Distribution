@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework"
-version := "3.0.0-7a6590"
+version := "3.0.0-bcb669"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-3c2e78",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "string-width" % "4.1.0-c153b0")
+  "org.scalablytyped" %%% "string-width" % "4.2.0-e3baca")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

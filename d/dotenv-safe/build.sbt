@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dotenv-safe"
-version := "5.0-dt-20191027Z-2f5211"
+version := "8.1-dt-20191111Z-9aef6d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

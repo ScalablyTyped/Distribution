@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RollupOptions extends InputOptions {
+  // This is included for compatibility with config files but ignored by rollup.rollup
   var output: js.UndefOr[OutputOptions | js.Array[OutputOptions]] = js.undefined
 }
 

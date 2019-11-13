@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-to-regexp
 
-Typings are for version 3.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 Express style path to RegExp utility

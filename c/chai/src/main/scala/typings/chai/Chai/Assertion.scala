@@ -67,7 +67,7 @@ trait Assertion
   @JSName("haveOwnPropertyDescriptor")
   var haveOwnPropertyDescriptor_Original: OwnPropertyDescriptor = js.native
   @JSName("haveOwnProperty")
-  var haveOwnProperty_Original: OwnProperty = js.native
+  var haveOwnProperty_Original: Property = js.native
   @JSName("include")
   var include_Original: Include = js.native
   @JSName("includes")
@@ -102,7 +102,7 @@ trait Assertion
   @JSName("ownPropertyDescriptor")
   var ownPropertyDescriptor_Original: OwnPropertyDescriptor = js.native
   @JSName("ownProperty")
-  var ownProperty_Original: OwnProperty = js.native
+  var ownProperty_Original: Property = js.native
   @JSName("property")
   var property_Original: Property = js.native
   @JSName("respondTo")
@@ -190,6 +190,8 @@ trait Assertion
   def frozen(`type`: String, message: String): Assertion = js.native
   def haveOwnProperty(name: String): Assertion = js.native
   def haveOwnProperty(name: String, message: String): Assertion = js.native
+  def haveOwnProperty(name: String, value: js.Any): Assertion = js.native
+  def haveOwnProperty(name: String, value: js.Any, message: String): Assertion = js.native
   def haveOwnPropertyDescriptor(name: String): Assertion = js.native
   def haveOwnPropertyDescriptor(name: String, descriptor: PropertyDescriptor): Assertion = js.native
   def haveOwnPropertyDescriptor(name: String, descriptor: PropertyDescriptor, message: String): Assertion = js.native
@@ -230,11 +232,14 @@ trait Assertion
   def oneOf(list: js.Array[_], message: String): Assertion = js.native
   def ownProperty(name: String): Assertion = js.native
   def ownProperty(name: String, message: String): Assertion = js.native
+  def ownProperty(name: String, value: js.Any): Assertion = js.native
+  def ownProperty(name: String, value: js.Any, message: String): Assertion = js.native
   def ownPropertyDescriptor(name: String): Assertion = js.native
   def ownPropertyDescriptor(name: String, descriptor: PropertyDescriptor): Assertion = js.native
   def ownPropertyDescriptor(name: String, descriptor: PropertyDescriptor, message: String): Assertion = js.native
   def ownPropertyDescriptor(name: String, message: String): Assertion = js.native
   def property(name: String): Assertion = js.native
+  def property(name: String, message: String): Assertion = js.native
   def property(name: String, value: js.Any): Assertion = js.native
   def property(name: String, value: js.Any, message: String): Assertion = js.native
   def respondTo(method: String): Assertion = js.native

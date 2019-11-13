@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iobroker"
-version := "1.4-dt-20191014Z-8d3f80"
+version := "1.4-dt-20191111Z-2b2dab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

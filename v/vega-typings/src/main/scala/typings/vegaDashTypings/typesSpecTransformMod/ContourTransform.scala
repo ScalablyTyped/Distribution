@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ContourTransform extends _Transforms {
+trait ContourTransform extends Transforms {
   var bandwidth: js.UndefOr[Double | SignalRef] = js.undefined
   var cellSize: js.UndefOr[Double | SignalRef] = js.undefined
   var count: js.UndefOr[Double | SignalRef] = js.undefined
@@ -15,10 +15,10 @@ trait ContourTransform extends _Transforms {
   var size: (js.Array[Double | SignalRef]) | SignalRef
   var thresholds: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
   var `type`: contour
-   // TODO: change to Vector2<SignalRef | number> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
+   // TODO: change to Vector2<number | SignalRef> after https://github.com/Microsoft/TypeScript/issues/28017 has been fixed
   var values: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
-  var x: js.UndefOr[String | TransformField] = js.undefined
-  var y: js.UndefOr[String | TransformField] = js.undefined
+  var x: js.UndefOr[FieldRef] = js.undefined
+  var y: js.UndefOr[FieldRef] = js.undefined
 }
 
 object ContourTransform {
@@ -33,8 +33,8 @@ object ContourTransform {
     signal: String = null,
     thresholds: (js.Array[Double | SignalRef]) | SignalRef = null,
     values: (js.Array[Double | SignalRef]) | SignalRef = null,
-    x: String | TransformField = null,
-    y: String | TransformField = null
+    x: FieldRef = null,
+    y: FieldRef = null
   ): ContourTransform = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)

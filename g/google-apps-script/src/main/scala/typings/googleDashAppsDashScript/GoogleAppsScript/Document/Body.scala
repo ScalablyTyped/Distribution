@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   *     body.appendPageBreak();
   */
 @js.native
-trait Body extends js.Object {
+trait Body extends Element {
   def appendHorizontalRule(): HorizontalRule = js.native
   def appendImage(image: BlobSource): InlineImage = js.native
   def appendImage(image: InlineImage): InlineImage = js.native
@@ -35,39 +35,29 @@ trait Body extends js.Object {
   def appendTable(cells: js.Array[js.Array[String]]): Table = js.native
   def appendTable(table: Table): Table = js.native
   def clear(): Body = js.native
-  def copy(): Body = js.native
   def editAsText(): Text = js.native
   def findElement(elementType: ElementType): RangeElement = js.native
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Any = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
-  /** @deprecated DO NOT USE */
-  def getFootnotes(): js.Array[Footnote] = js.native
+  /** @deprecated DO NOT USE */ def getFootnotes(): js.Array[Footnote] = js.native
   def getHeadingAttributes(paragraphHeading: ParagraphHeading): js.Any = js.native
   def getImages(): js.Array[InlineImage] = js.native
-  /** @deprecated DO NOT USE */
-  def getLinkUrl(): String = js.native
+  /** @deprecated DO NOT USE */ def getLinkUrl(): String = js.native
   def getListItems(): js.Array[ListItem] = js.native
   def getMarginBottom(): Double = js.native
   def getMarginLeft(): Double = js.native
   def getMarginRight(): Double = js.native
   def getMarginTop(): Double = js.native
-  /** @deprecated DO NOT USE */
-  def getNextSibling(): Element = js.native
   def getNumChildren(): Integer = js.native
   def getPageHeight(): Double = js.native
   def getPageWidth(): Double = js.native
   def getParagraphs(): js.Array[Paragraph] = js.native
-  def getParent(): ContainerElement = js.native
-  /** @deprecated DO NOT USE */
-  def getPreviousSibling(): Element = js.native
   def getTables(): js.Array[Table] = js.native
   def getText(): String = js.native
   def getTextAlignment(): TextAlignment = js.native
-  def getType(): ElementType = js.native
   def insertHorizontalRule(childIndex: Integer): HorizontalRule = js.native
   def insertImage(childIndex: Integer, image: BlobSource): InlineImage = js.native
   def insertImage(childIndex: Integer, image: InlineImage): InlineImage = js.native
@@ -80,14 +70,10 @@ trait Body extends js.Object {
   def insertTable(childIndex: Integer): Table = js.native
   def insertTable(childIndex: Integer, cells: js.Array[js.Array[String]]): Table = js.native
   def insertTable(childIndex: Integer, table: Table): Table = js.native
-  /** @deprecated DO NOT USE */
-  def isAtDocumentEnd(): Boolean = js.native
   def removeChild(child: Element): Body = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Any): Body = js.native
   def setHeadingAttributes(paragraphHeading: ParagraphHeading, attributes: js.Any): Body = js.native
-  /** @deprecated DO NOT USE */
-  def setLinkUrl(url: String): Body = js.native
+  /** @deprecated DO NOT USE */ def setLinkUrl(url: String): Body = js.native
   def setMarginBottom(marginBottom: Double): Body = js.native
   def setMarginLeft(marginLeft: Double): Body = js.native
   def setMarginRight(marginRight: Double): Body = js.native

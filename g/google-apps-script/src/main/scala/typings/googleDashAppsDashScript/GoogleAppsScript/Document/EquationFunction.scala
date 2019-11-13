@@ -10,31 +10,21 @@ import scala.scalajs.js.annotation._
   * information on document structure, see the guide to extending Google Docs.
   */
 @js.native
-trait EquationFunction extends js.Object {
+trait EquationFunction extends Element {
   def clear(): EquationFunction = js.native
-  def copy(): EquationFunction = js.native
   def editAsText(): Text = js.native
   def findElement(elementType: ElementType): RangeElement = js.native
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: String): RangeElement = js.native
   def findText(searchPattern: String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Any = js.native
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
   def getCode(): String = js.native
   def getLinkUrl(): String = js.native
-  def getNextSibling(): Element = js.native
   def getNumChildren(): Integer = js.native
-  def getParent(): ContainerElement = js.native
-  def getPreviousSibling(): Element = js.native
   def getText(): String = js.native
   def getTextAlignment(): TextAlignment = js.native
-  def getType(): ElementType = js.native
-  def isAtDocumentEnd(): Boolean = js.native
-  def merge(): EquationFunction = js.native
-  def removeFromParent(): EquationFunction = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
-  def setAttributes(attributes: js.Any): EquationFunction = js.native
   def setLinkUrl(url: String): EquationFunction = js.native
   def setTextAlignment(textAlignment: TextAlignment): EquationFunction = js.native
 }

@@ -3,6 +3,7 @@ package typings.vegaDashTypings.typesSpecLegendMod
 import typings.vegaDashTypings.typesSpecAxisMod.FormatType
 import typings.vegaDashTypings.typesSpecAxisMod.LabelOverlap
 import typings.vegaDashTypings.typesSpecAxisMod.TickCount
+import typings.vegaDashTypings.typesSpecAxisMod.TimeFormatSpecifier
 import typings.vegaDashTypings.typesSpecEncodeMod.Orientation
 import typings.vegaDashTypings.typesSpecEncodeMod.Text
 import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
@@ -35,11 +36,11 @@ trait Legend extends BaseLegend {
   var encode: js.UndefOr[LegendEncode] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
   /**
-    * The format specifier pattern for legend labels. For numerical values, must be a legal [d3-format](https://github.com/d3/d3-format#locale_format) specifier. For date-time values, must be a legal [d3-time-format](https://github.com/d3/d3-time-format#locale_format) specifier.
+    * The format specifier pattern for legend labels. For numerical values, must be a legal [d3-format](https://github.com/d3/d3-format#locale_format) specifier. For date-time values, must be a legal [d3-time-format](https://github.com/d3/d3-time-format#locale_format) specifier or multi-format object.
     */
-  var format: js.UndefOr[String | SignalRef] = js.undefined
+  var format: js.UndefOr[String | TimeFormatSpecifier | SignalRef] = js.undefined
   /**
-    * The format type for legend labels (number or time).
+    * The format type for legend labels (number, time, or utc).
     */
   var formatType: js.UndefOr[FormatType | SignalRef] = js.undefined
   var opacity: js.UndefOr[String] = js.undefined
@@ -84,7 +85,7 @@ object Legend {
     encode: LegendEncode = null,
     fill: String = null,
     fillColor: ColorValue = null,
-    format: String | SignalRef = null,
+    format: String | TimeFormatSpecifier | SignalRef = null,
     formatType: FormatType | SignalRef = null,
     gradientLength: Double | SignalRef = null,
     gradientOpacity: NumberValue = null,

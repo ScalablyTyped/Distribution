@@ -11,14 +11,12 @@ trait ContactGroup extends js.Object {
   def addContact(contact: Contact): ContactGroup
   def deleteGroup(): Unit
   def getContacts(): js.Array[Contact]
-  /** @deprecated DO NOT USE */
-  def getGroupName(): String
+  /** @deprecated DO NOT USE */ def getGroupName(): String
   def getId(): String
   def getName(): String
   def isSystemGroup(): Boolean
   def removeContact(contact: Contact): ContactGroup
-  /** @deprecated DO NOT USE */
-  def setGroupName(name: String): Unit
+  /** @deprecated DO NOT USE */ def setGroupName(name: String): Unit
   def setName(name: String): ContactGroup
 }
 

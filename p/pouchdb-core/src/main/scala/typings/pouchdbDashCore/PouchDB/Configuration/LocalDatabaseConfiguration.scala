@@ -15,6 +15,12 @@ trait LocalDatabaseConfiguration
     */
   var auto_compaction: js.UndefOr[Boolean] = js.undefined
   /**
+    * Use a md5 hash to create a deterministic revision number for documents.
+    * Setting it to false will mean that the revision number will be a random UUID.
+    * Defaults to true.
+    */
+  var deterministic_revs: js.UndefOr[Boolean] = js.undefined
+  /**
     * A special constructor option, which appends a prefix to the database name
     * and can be helpful for URL-based or file-based LevelDOWN path names.
     */
@@ -36,6 +42,7 @@ object LocalDatabaseConfiguration {
   def apply(
     adapter: String = null,
     auto_compaction: js.UndefOr[Boolean] = js.undefined,
+    deterministic_revs: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     prefix: String = null,
     revs_limit: Int | Double = null,
@@ -44,6 +51,7 @@ object LocalDatabaseConfiguration {
     val __obj = js.Dynamic.literal()
     if (adapter != null) __obj.updateDynamic("adapter")(adapter)
     if (!js.isUndefined(auto_compaction)) __obj.updateDynamic("auto_compaction")(auto_compaction)
+    if (!js.isUndefined(deterministic_revs)) __obj.updateDynamic("deterministic_revs")(deterministic_revs)
     if (name != null) __obj.updateDynamic("name")(name)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (revs_limit != null) __obj.updateDynamic("revs_limit")(revs_limit.asInstanceOf[js.Any])

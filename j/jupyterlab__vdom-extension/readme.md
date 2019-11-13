@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__vdom-extension
 
-Typings are for version 1.2.1
+Typings are for version 1.2.2
 
 ## Library description:
 JupyterLab - VDOM Renderer

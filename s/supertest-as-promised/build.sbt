@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "supertest-as-promised"
-version := "2.0-dt-20190524Z-308658"
+version := "2.0-dt-20190524Z-be762c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191014Z-44f16d",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-35b9bf",
   "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20190116Z-331cfe",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",

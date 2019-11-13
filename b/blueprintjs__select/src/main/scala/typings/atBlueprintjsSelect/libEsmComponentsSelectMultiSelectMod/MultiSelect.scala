@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 class MultiSelect[T] ()
   extends Component[IMultiSelectProps[T], IMultiSelectState, js.Any] {
   var TypedQueryList: js.Any = js.native
-  var getTargetKeyDownHandler: js.Any = js.native
+  var getTagInputKeyDownHandler: js.Any = js.native
+  var getTagInputKeyUpHandler: js.Any = js.native
   var handleItemSelect: js.Any = js.native
   var handlePopoverInteraction: js.Any = js.native
   var handlePopoverOpened: js.Any = js.native

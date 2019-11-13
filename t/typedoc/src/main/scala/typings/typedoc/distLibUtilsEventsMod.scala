@@ -18,9 +18,9 @@ object distLibUtilsEventsMod extends js.Object {
     var _isDefaultPrevented: js.Any = js.native
     var _isPropagationStopped: js.Any = js.native
     var _name: js.Any = js.native
-    val isDefaultPrevented: Boolean = js.native
-    val isPropagationStopped: Boolean = js.native
-    val name: String = js.native
+    def isDefaultPrevented(): Boolean = js.native
+    def isPropagationStopped(): Boolean = js.native
+    def name(): String = js.native
     def preventDefault(): Unit = js.native
     def stopPropagation(): Unit = js.native
   }
@@ -34,11 +34,11 @@ object distLibUtilsEventsMod extends js.Object {
   @js.native
   class EventDispatcher () extends js.Object {
     var _events: js.UndefOr[js.Any] = js.native
-    val _listenId: js.Any = js.native
     var _listeners: js.UndefOr[js.Any] = js.native
     var _listeningTo: js.UndefOr[js.Any] = js.native
     var _savedListenId: js.UndefOr[js.Any] = js.native
     var internalOn: js.Any = js.native
+    /* private */ def _listenId(): js.Any = js.native
     def listenTo(obj: EventDispatcher, name: String): this.type = js.native
     def listenTo(obj: EventDispatcher, name: String, callback: EventCallback): this.type = js.native
     def listenTo(obj: EventDispatcher, name: String, callback: EventCallback, priority: Double): this.type = js.native

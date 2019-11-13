@@ -19,6 +19,7 @@ class DateInput ()
   var handleInputFocus: js.Any = js.native
   var handleInputKeyDown: js.Any = js.native
   var handlePopoverBlur: js.Any = js.native
+  var handleShortcutChange: js.Any = js.native
   var hasMonthChanged: js.Any = js.native
   var hasTimeChanged: js.Any = js.native
   var inputEl: js.Any = js.native

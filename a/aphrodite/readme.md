@@ -1,7 +1,7 @@
 
 # Scala.js typings for aphrodite
 
-Typings are for version 0.5.0
+Typings are for version 2.4.0
 
 ## Library description:
 Framework-agnostic CSS-in-JS with support for server-side rendering, browser prefixing, and minimum CSS generation
@@ -24,7 +24,7 @@ Framework-agnostic CSS-in-JS with support for server-side rendering, browser pre
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

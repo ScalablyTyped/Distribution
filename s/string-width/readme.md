@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-width
 
-Typings are for version 4.1.0
+Typings are for version 4.2.0
 
 ## Library description:
 Get the visual width of a string - the number of columns required to display it

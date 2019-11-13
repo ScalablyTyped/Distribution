@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/docmanager-extension" : "1.2.0"
+      "@jupyterlab/docmanager-extension" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/docmanager-extension" : "1.2.0"
+      "@jupyterlab/docmanager-extension" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

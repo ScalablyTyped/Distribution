@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-peer-deps-external"
-version := "2.2-dt-20191002Z-8ce207"
+version := "2.2-dt-20191002Z-75bdf1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-189c55",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
-  "org.scalablytyped" %%% "rollup" % "1.26.4-95a041",
+  "org.scalablytyped" %%% "rollup" % "1.27.0-5c37af",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

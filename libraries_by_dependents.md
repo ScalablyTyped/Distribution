@@ -200,6 +200,7 @@
 | 1465 | [figlet](./f/figlet) | Creates ASCII Art from text. A full implementation
 | 1442 | [event-stream](./e/event-stream) | construct pipes of streams of events
 | 1435 | [sequelize](./s/sequelize) | Multi dialect ORM for Node.JS
+| 1432 | [vue-template-compiler](./v/vue-template-compiler) | template compiler for Vue 2.0
 | 1408 | [gulp-concat](./g/gulp-concat) | Concatenates files
 | 1407 | [optimize-css-assets-webpa](./o/optimize-css-assets-webpack-plugin) | A Webpack plugin to optimize \ minimize CSS assets
 | 1392 | [sw-precache-webpack-plugi](./s/sw-precache-webpack-plugin) | Webpack plugin for using service workers
@@ -1164,7 +1165,6 @@
 | 177 | [react-tools](./r/react-tools) | A set of complementary tools to React, including t
 | 177 | [redux-observable](./r/redux-observable) | RxJS based middleware for Redux. Compose and cance
 | 177 | [single-line-log](./s/single-line-log) | Keep writing to the same line in the terminal. Ver
-| 177 | [velocity-animate](./v/velocity-animate) | Accelerated JavaScript animation.
 | 176 | [bookshelf](./b/bookshelf) | A lightweight ORM for PostgreSQL, MySQL, and SQLit
 | 176 | [json-schema-ref-parser](./j/json-schema-ref-parser) | Parse, Resolve, and Dereference JSON Schema $ref p
 | 176 | [proxy-addr](./p/proxy-addr) | Determine address of proxied request
@@ -1801,6 +1801,7 @@
 | 90 | [fullcalendar](./f/fullcalendar) | Full-sized drag & drop event calendar
 | 90 | [init-package-json](./i/init-package-json) | A node module to get your node module started
 | 90 | [msgpack](./m/msgpack) | A space-efficient object serialization library for
+| 90 | [please-upgrade-node](./p/please-upgrade-node) | Displays a beginner-friendly message telling your 
 | 90 | [react-dom-factories](./r/react-dom-factories) | React package for DOM factory methods.
 | 90 | [rollup-plugin-node-builti](./r/rollup-plugin-node-builtins) | use node builtins in browser with rollup
 | 90 | [tabtab](./t/tabtab) | tab completion helpers, for node cli programs. Ins
@@ -1932,6 +1933,7 @@
 | 79 | [fast-json-stable-stringif](./f/fast-json-stable-stringify) | deterministic JSON.stringify() - a faster version 
 | 79 | [forever-agent](./f/forever-agent) | HTTP Agent that keeps socket connections alive bet
 | 79 | [gulp-gh-pages](./g/gulp-gh-pages) | gulp plugin to publish contents to Github pages
+| 79 | [import-fresh](./i/import-fresh) | Import a module while bypassing the cache
 | 79 | [lodash_dot_partial](./l/lodash_dot_partial) | The lodash method _.partial exported as a module.
 | 79 | [node-statsd](./n/node-statsd) | node client for Etsy'd StatsD server
 | 79 | [objection](./o/objection) | An SQL-friendly ORM for Node.js
@@ -2245,6 +2247,7 @@
 | 61 | [remove-markdown](./r/remove-markdown) | Remove Markdown formatting from text
 | 61 | [socketio-jwt](./s/socketio-jwt) | authenticate socket.io connections using JWTs
 | 61 | [ssri](./s/ssri) | Standard Subresource Integrity library --  parses,
+| 60 | [convert-units](./c/convert-units) | Convert between quantities in different units
 | 60 | [dagre](./d/dagre) | Graph layout for JavaScript
 | 60 | [deep-object-diff](./d/deep-object-diff) | Deep diffs two objects, including nested structure
 | 60 | [dom-serializer](./d/dom-serializer) | render dom nodes to string
@@ -2345,6 +2348,7 @@
 | 56 | [sass-graph](./s/sass-graph) | Parse sass files and extract a graph of imports
 | 56 | [signature_pad](./s/signature_pad) | Library for drawing smooth signatures.
 | 56 | [snapsvg](./s/snapsvg) | JavaScript Vector Library
+| 56 | [sodium-native](./s/sodium-native) | Low level bindings for libsodium
 | 56 | [spdx-correct](./s/spdx-correct) | correct invalid SPDX expressions
 | 56 | [storybook__addon-info](./s/storybook__addon-info) | A Storybook addon to show additional information f
 | 56 | [sw-precache](./s/sw-precache) | Generates a service worker to cache your local App
@@ -2412,6 +2416,7 @@
 | 53 | [jupyterlab__rendermime-in](./j/jupyterlab__rendermime-interfaces) | JupyterLab - Interfaces for Mime Renderers
 | 53 | [kss](./k/kss) | The Node.js port of KSS: A methodology for documen
 | 53 | [material__base](./m/material__base) | The set of base classes for Material Components fo
+| 53 | [n-readlines](./n/n-readlines) | Read file line by line without buffering the whole
 | 53 | [node-redis-pubsub](./n/node-redis-pubsub) | Redis PubSub client for Node
 | 53 | [onetime](./o/onetime) | Ensure a function is only called once
 | 53 | [openlayers](./o/openlayers) | Build tools and sources for developing OpenLayers 
@@ -3096,6 +3101,7 @@
 | 31 | [wepy](./w/wepy) | -
 | 30 | [agent-base](./a/agent-base) | Turn a function into an http.Agent instance
 | 30 | [angulartics](./a/angulartics) | Vendor-agnostic web analytics for AngularJS applic
+| 30 | [async-sema](./a/async-sema) | Semaphore using async and await
 | 30 | [asynciterator](./a/asynciterator) | An asynchronous iterator library for advanced obje
 | 30 | [aurelia-loader](./a/aurelia-loader) | An abstract module which specifies an interface fo
 | 30 | [body-scroll-lock](./b/body-scroll-lock) | Enables body scroll locking (for iOS Mobile and Ta
@@ -3150,6 +3156,7 @@
 | 29 | [ace](./a/ace) | ace
 | 29 | [actions-on-google](./a/actions-on-google) | Actions on Google Client Library for Node.js
 | 29 | [are-we-there-yet](./a/are-we-there-yet) | Keep track of the overall completion of many dispa
+| 29 | [calendar](./c/calendar) | calendar generator
 | 29 | [chai-things](./c/chai-things) | Chai Things adds support to 
 | 29 | [clsx](./c/clsx) | A tiny (223B) utility for constructing className s
 | 29 | [coinstring](./c/coinstring) | Create and parse crypto currency addresses and wal
@@ -4307,6 +4314,7 @@
 | 11 | [gtoken](./g/gtoken) | Node.js Google Authentication Service Account Toke
 | 11 | [hellojs](./h/hellojs) | A clientside Javascript library for standardizing 
 | 11 | [html-void-elements](./h/html-void-elements) | List of known void HTML elements
+| 11 | [http-build-query](./h/http-build-query) | Generate URL-encoded query string from the object 
 | 11 | [http-link-dataloader](./h/http-link-dataloader) | -
 | 11 | [imagemagick-native](./i/imagemagick-native) | ImageMagick's Magick++ bindings for NodeJS
 | 11 | [in-range](./i/in-range) | Check if a number is in a given range
@@ -4343,6 +4351,7 @@
 | 11 | [neat-csv](./n/neat-csv) | Fast CSV parser
 | 11 | [node-zendesk](./n/node-zendesk) | zendesk API client wrapper
 | 11 | [notie](./n/notie) | notie - a clean and simple notification, input, an
+| 11 | [nuclear-js](./n/nuclear-js) | Immutable, reactive Flux architecture. UI Agnostic
 | 11 | [nuid](./n/nuid) | NUID - A highly performant unique identifier gener
 | 11 | [object-refs](./o/object-refs) | Minimal bi-directional object references for JavaS
 | 11 | [open-editor](./o/open-editor) | Open files in your editor at a specific line and c
@@ -4657,6 +4666,7 @@
 | 8 | [config-yaml](./c/config-yaml) | YAML configuration for NodeJS
 | 8 | [console-ui](./c/console-ui) | common interface for abstracting a console ui
 | 8 | [convert-string](./c/convert-string) | Convert to/from strings and array of bytes
+| 8 | [devalue](./d/devalue) | Gets the job done when JSON.stringify can't
 | 8 | [ds18b20](./d/ds18b20) | Get temperature from the DS18B20 sensor connected 
 | 8 | [dygraphs](./d/dygraphs) | dygraphs is a fast, flexible open source JavaScrip
 | 8 | [egjs__axes](./e/egjs__axes) | A module used to change the information of user ac
@@ -5581,6 +5591,7 @@
 | 3 | [curriable](./c/curriable) | Convert any method to be curriable with placeholde
 | 3 | [d3-graphviz](./d/d3-graphviz) | Graphviz DOT rendering and animated transitions fo
 | 3 | [d3kit](./d/d3kit) | A kit of tools to speed D3 related project develop
+| 3 | [date-fp](./d/date-fp) | Functional programming date management.
 | 3 | [deprecation](./d/deprecation) | Log a deprecation message with stack
 | 3 | [detect-touch-events](./d/detect-touch-events) | Detect if the browser supports the touch events ap
 | 3 | [dir-resolve](./d/dir-resolve) | Extension for require.resolve which will resolve d
@@ -5726,6 +5737,7 @@
 | 3 | [piwik-tracker](./p/piwik-tracker) | A wrapper for the Piwik tracking HTTP API
 | 3 | [podcast](./p/podcast) | Podcast RSS feed generator. A really simple API to
 | 3 | [podium](./p/podium) | Node compatible event emitter with extra features
+| 3 | [poker-evaluator](./p/poker-evaluator) | A library to evaluate 3, 5 or 7 card poker hands
 | 3 | [pollyjs__core](./p/pollyjs__core) | Record, replay, and stub HTTP Interactions
 | 3 | [pollyjs__persister](./p/pollyjs__persister) | Extendable base persister class used by @pollyjs
 | 3 | [postmate](./p/postmate) | A powerful, simple, promise-based postMessage libr
@@ -6206,6 +6218,7 @@
 | 2 | [webrtc](./w/webrtc) | WebRTC abstraction for making it simple to manage 
 | 2 | [weighted-random-object](./w/weighted-random-object) | Get a weighted random object from an array of obje
 | 2 | [wepy-redux](./w/wepy-redux) | WePY bindings for Redux
+| 2 | [windows-process-tree](./w/windows-process-tree) | Fetch a Windows process tree fast
 | 2 | [wonder_dot_js](./w/wonder_dot_js) | 3d webgl engine
 | 2 | [wordcloud](./w/wordcloud) | Tag cloud/Wordle presentation on 2D canvas or HTML
 | 2 | [wordpress__block-serializ](./w/wordpress__block-serialization-default-parser) | Block serialization specification parser for WordP
@@ -6672,6 +6685,7 @@
 | 1 | [react-offcanvas](./r/react-offcanvas) | Off-canvas menus for React.
 | 1 | [react-owl-carousel](./r/react-owl-carousel) | React.js + Owl Carousel
 | 1 | [react-panelgroup](./r/react-panelgroup) | react-panelgroup React component
+| 1 | [react-query](./r/react-query) | Hooks for managing, caching and syncing asynchrono
 | 1 | [react-redux-epic](./r/react-redux-epic) | Server side rendering for Redux-Observable
 | 1 | [react-router-navigation](./r/react-router-navigation) | Declarative routing for 
 | 1 | [react-show-more](./r/react-show-more) | React component for truncating multi-line spans an
@@ -6768,6 +6782,7 @@
 | 1 | [wampy](./w/wampy) | Simple WAMP (WebSocket Application Messaging Proto
 | 1 | [webpack-blocks__babel](./w/webpack-blocks__babel) | Webpack block for babel 6+.
 | 1 | [websocket-async](./w/websocket-async) | An async/await WebSocket client for browsers
+| 1 | [windows-foreground-love](./w/windows-foreground-love) | API wrapper for AllowSetForegroundWindow
 | 1 | [word-extractor](./w/word-extractor) | Node.js package to read Word .doc files
 | 1 | [word2vector](./w/word2vector) | a word2vector interface for nodejs
 | 1 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__terminal"
-version := "1.2.0-fa9758"
+version := "1.2.1-214fe4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.0-cc1aa9",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-45c609",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-f3cdd1",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-43843a",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-ba16eb",

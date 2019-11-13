@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-with-styles"
-version := "4.0-dt-20191009Z-d80924"
+version := "4.0-dt-20191112Z-c38c59"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aphrodite" % "0.5.0-dt-20190322Z-fa2197",
+  "org.scalablytyped" %%% "aphrodite" % "2.4.0-606611",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",

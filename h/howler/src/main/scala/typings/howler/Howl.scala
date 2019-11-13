@@ -35,6 +35,7 @@ trait Howl extends js.Object {
   def mute(): Boolean = js.native
   def mute(muted: Boolean): this.type = js.native
   def mute(muted: Boolean, id: Double): this.type = js.native
+  def off(): this.type = js.native
   def off(event: String): this.type = js.native
   def off(event: String, callback: js.Function): this.type = js.native
   def off(event: String, callback: js.Function, id: Double): this.type = js.native

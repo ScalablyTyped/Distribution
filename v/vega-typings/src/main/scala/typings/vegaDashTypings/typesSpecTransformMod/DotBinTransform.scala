@@ -6,11 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DotBinTransform extends _Transforms {
+trait DotBinTransform extends Transforms {
   var as: js.UndefOr[String | SignalRef] = js.undefined
-  var field: String | TransformField
-  var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.undefined
-  var signal: js.UndefOr[String] = js.undefined
+  var field: FieldRef
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
+  var signal: js.UndefOr[SignalName] = js.undefined
   var smooth: js.UndefOr[Boolean | SignalRef] = js.undefined
   var step: js.UndefOr[Double | SignalRef] = js.undefined
   var `type`: dotbin
@@ -19,11 +19,11 @@ trait DotBinTransform extends _Transforms {
 object DotBinTransform {
   @scala.inline
   def apply(
-    field: String | TransformField,
+    field: FieldRef,
     `type`: dotbin,
     as: String | SignalRef = null,
-    groupby: (js.Array[String | TransformField]) | SignalRef = null,
-    signal: String = null,
+    groupby: js.Array[FieldRef] | SignalRef = null,
+    signal: SignalName = null,
     smooth: Boolean | SignalRef = null,
     step: Double | SignalRef = null
   ): DotBinTransform = {

@@ -9,18 +9,16 @@ import scala.scalajs.js.annotation._
 @JSImport("next/head", JSImport.Namespace)
 @js.native
 object headMod extends js.Object {
-  @js.native
-  class default ()
-    extends typings.nextDashServer.headMod.default
-  
   def defaultHead(): js.Array[Element] = js.native
-  def defaultHead(className: String): js.Array[Element] = js.native
-  /* static members */
+  def defaultHead(inAmpMode: Boolean): js.Array[Element] = js.native
   @js.native
   object default extends js.Object {
-    var canUseDOM: Boolean = js.native
-    def peek(): js.Array[ReactElement] = js.native
-    def rewind(): js.Array[ReactElement] = js.native
+    var rewind: js.Function0[js.UndefOr[js.Array[ReactElement]]] = js.native
+    /**
+      * This component injects elements to `<head>` of your page.
+      * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+      */
+    def apply(hasChildren: Anon_Children): Element = js.native
   }
   
 }

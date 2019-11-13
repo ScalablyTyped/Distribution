@@ -2,6 +2,10 @@ package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
 import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.GAX.CallOptions
 import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyManagementServiceClient.ConfigurationObject
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyManagementServiceClient.CreateCryptoKeyCallback
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyManagementServiceClient.CreateCryptoKeyRequest
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyManagementServiceClient.CreateKeyRingCallback
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyManagementServiceClient.CreateKeyRingRequest
 import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyManagementServiceClient.DecryptCallback
 import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyManagementServiceClient.DecryptRequest
 import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.KeyManagementServiceClient.DecryptResponse
@@ -20,6 +24,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyManagementServiceClient_ () extends js.Object {
   def this(options: ConfigurationObject) = this()
+  // This needs to be after the declaration that has callback but not options.
+  def createCryptoKey(request: CreateCryptoKeyRequest): js.Promise[js.Tuple3[CryptoKey, _, _]] = js.native
+  def createCryptoKey(request: CreateCryptoKeyRequest, callback: CreateCryptoKeyCallback): Unit = js.native
+  def createCryptoKey(request: CreateCryptoKeyRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[CryptoKey, _, _]] = js.native
+  def createCryptoKey(request: CreateCryptoKeyRequest, gaxOpts: CallOptions, callback: CreateCryptoKeyCallback): Unit = js.native
+  // This needs to be after the declaration that has callback but not options.
+  def createKeyRing(request: CreateKeyRingRequest): js.Promise[js.Tuple3[KeyRing, _, _]] = js.native
+  def createKeyRing(request: CreateKeyRingRequest, callback: CreateKeyRingCallback): Unit = js.native
+  def createKeyRing(request: CreateKeyRingRequest, gaxOpts: CallOptions): js.Promise[js.Tuple3[KeyRing, _, _]] = js.native
+  def createKeyRing(request: CreateKeyRingRequest, gaxOpts: CallOptions, callback: CreateKeyRingCallback): Unit = js.native
   def cryptoKeyPath(project: String, location: String, keyRing: String, cryptoKey: String): String = js.native
   def cryptoKeyPathPath(project: String, location: String, keyRing: String, cryptoKeyPath: String): String = js.native
   def cryptoKeyVersionPath(project: String, location: String, keyRing: String, cryptoKey: String, cryptoKeyVersion: String): String = js.native

@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation._
 trait Action extends js.Object {
   def setFunctionName(functionName: String): Action
   def setLoadIndicator(loadIndicator: LoadIndicator): Action
-  /** @deprecated DO NOT USE */
-  def setMethodName(functionName: String): Action
+  /** @deprecated DO NOT USE */ def setMethodName(functionName: String): Action
   def setParameters(parameters: StringDictionary[String]): Action
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "async-sema" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "async-sema" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

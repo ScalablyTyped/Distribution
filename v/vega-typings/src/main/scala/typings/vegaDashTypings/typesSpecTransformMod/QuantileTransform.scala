@@ -6,10 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait QuantileTransform extends _Transforms {
+trait QuantileTransform extends Transforms {
   var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.undefined
-  var field: String | TransformField
-  var groupby: js.UndefOr[(js.Array[String | TransformField]) | SignalRef] = js.undefined
+  var field: FieldRef
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   var probs: js.UndefOr[js.Array[Double] | SignalRef] = js.undefined
   var step: js.UndefOr[Double | SignalRef] = js.undefined
   var `type`: quantile
@@ -18,10 +18,10 @@ trait QuantileTransform extends _Transforms {
 object QuantileTransform {
   @scala.inline
   def apply(
-    field: String | TransformField,
+    field: FieldRef,
     `type`: quantile,
     as: (js.Array[String | SignalRef]) | SignalRef = null,
-    groupby: (js.Array[String | TransformField]) | SignalRef = null,
+    groupby: js.Array[FieldRef] | SignalRef = null,
     probs: js.Array[Double] | SignalRef = null,
     step: Double | SignalRef = null
   ): QuantileTransform = {

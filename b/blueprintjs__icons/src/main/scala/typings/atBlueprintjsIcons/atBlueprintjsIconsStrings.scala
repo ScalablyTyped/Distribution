@@ -1432,6 +1432,21 @@ object atBlueprintjsIconsStrings {
   sealed trait BACKSLASHuE904 extends js.Object
   
   @js.native
+  sealed trait BACKSLASHuE905 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE906 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE907 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE908 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE909 extends js.Object
+  
+  @js.native
   sealed trait DOLLAR extends js.Object
   
   @js.native
@@ -1496,6 +1511,9 @@ object atBlueprintjsIconsStrings {
   
   @js.native
   sealed trait applications extends IconName
+  
+  @js.native
+  sealed trait archive extends IconName
   
   @js.native
   sealed trait `arrow-bottom-left` extends IconName
@@ -1718,6 +1736,9 @@ object atBlueprintjsIconsStrings {
   
   @js.native
   sealed trait dashboard extends IconName
+  
+  @js.native
+  sealed trait `data-lineage` extends IconName
   
   @js.native
   sealed trait database extends IconName
@@ -2320,6 +2341,9 @@ object atBlueprintjsIconsStrings {
   sealed trait music extends IconName
   
   @js.native
+  sealed trait `new-drawing` extends IconName
+  
+  @js.native
   sealed trait `new-grid-item` extends IconName
   
   @js.native
@@ -2590,6 +2614,9 @@ object atBlueprintjsIconsStrings {
   sealed trait `shopping-cart` extends IconName
   
   @js.native
+  sealed trait `signal-search` extends IconName
+  
+  @js.native
   sealed trait `sim-card` extends IconName
   
   @js.native
@@ -2774,6 +2801,9 @@ object atBlueprintjsIconsStrings {
   
   @js.native
   sealed trait `two-columns` extends IconName
+  
+  @js.native
+  sealed trait unarchive extends IconName
   
   @js.native
   sealed trait underline extends IconName
@@ -3813,6 +3843,16 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def BACKSLASHuE904: BACKSLASHuE904 = "\uE904".asInstanceOf[BACKSLASHuE904]
   @scala.inline
+  def BACKSLASHuE905: BACKSLASHuE905 = "\uE905".asInstanceOf[BACKSLASHuE905]
+  @scala.inline
+  def BACKSLASHuE906: BACKSLASHuE906 = "\uE906".asInstanceOf[BACKSLASHuE906]
+  @scala.inline
+  def BACKSLASHuE907: BACKSLASHuE907 = "\uE907".asInstanceOf[BACKSLASHuE907]
+  @scala.inline
+  def BACKSLASHuE908: BACKSLASHuE908 = "\uE908".asInstanceOf[BACKSLASHuE908]
+  @scala.inline
+  def BACKSLASHuE909: BACKSLASHuE909 = "\uE909".asInstanceOf[BACKSLASHuE909]
+  @scala.inline
   def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
   @scala.inline
   def add: add = "add".asInstanceOf[add]
@@ -3856,6 +3896,8 @@ object atBlueprintjsIconsStrings {
   def application: application = "application".asInstanceOf[application]
   @scala.inline
   def applications: applications = "applications".asInstanceOf[applications]
+  @scala.inline
+  def archive: archive = "archive".asInstanceOf[archive]
   @scala.inline
   def `arrow-bottom-left`: `arrow-bottom-left` = "arrow-bottom-left".asInstanceOf[`arrow-bottom-left`]
   @scala.inline
@@ -4004,6 +4046,8 @@ object atBlueprintjsIconsStrings {
   def cut: cut = "cut".asInstanceOf[cut]
   @scala.inline
   def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
+  @scala.inline
+  def `data-lineage`: `data-lineage` = "data-lineage".asInstanceOf[`data-lineage`]
   @scala.inline
   def database: database = "database".asInstanceOf[database]
   @scala.inline
@@ -4405,6 +4449,8 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def music: music = "music".asInstanceOf[music]
   @scala.inline
+  def `new-drawing`: `new-drawing` = "new-drawing".asInstanceOf[`new-drawing`]
+  @scala.inline
   def `new-grid-item`: `new-grid-item` = "new-grid-item".asInstanceOf[`new-grid-item`]
   @scala.inline
   def `new-layer`: `new-layer` = "new-layer".asInstanceOf[`new-layer`]
@@ -4585,6 +4631,8 @@ object atBlueprintjsIconsStrings {
   @scala.inline
   def `shopping-cart`: `shopping-cart` = "shopping-cart".asInstanceOf[`shopping-cart`]
   @scala.inline
+  def `signal-search`: `signal-search` = "signal-search".asInstanceOf[`signal-search`]
+  @scala.inline
   def `sim-card`: `sim-card` = "sim-card".asInstanceOf[`sim-card`]
   @scala.inline
   def slash: slash = "slash".asInstanceOf[slash]
@@ -4708,6 +4756,8 @@ object atBlueprintjsIconsStrings {
   def `trending-up`: `trending-up` = "trending-up".asInstanceOf[`trending-up`]
   @scala.inline
   def `two-columns`: `two-columns` = "two-columns".asInstanceOf[`two-columns`]
+  @scala.inline
+  def unarchive: unarchive = "unarchive".asInstanceOf[unarchive]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline

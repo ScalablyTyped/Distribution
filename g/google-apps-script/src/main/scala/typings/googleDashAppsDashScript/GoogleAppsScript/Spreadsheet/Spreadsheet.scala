@@ -76,8 +76,7 @@ trait Spreadsheet extends js.Object {
   def getSheetByName(name: String): Sheet | Null = js.native
   def getSheetId(): Integer = js.native
   def getSheetName(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getSheetProtection(): PageProtection = js.native
+  /** @deprecated DO NOT USE */ def getSheetProtection(): PageProtection = js.native
   def getSheetValues(startRow: Integer, startColumn: Integer, numRows: Integer, numColumns: Integer): js.Array[js.Array[_]] = js.native
   def getSheets(): js.Array[Sheet] = js.native
   def getSpreadsheetLocale(): String = js.native
@@ -107,10 +106,8 @@ trait Spreadsheet extends js.Object {
   def insertSheet(sheetName: String, sheetIndex: Integer): Sheet = js.native
   def insertSheet(sheetName: String, sheetIndex: Integer, options: Anon_Template): Sheet = js.native
   def insertSheetWithDataSourceTable(spec: DataSourceSpec): Sheet = js.native
-  /** @deprecated DO NOT USE */
-  def isAnonymousView(): Boolean = js.native
-  /** @deprecated DO NOT USE */
-  def isAnonymousWrite(): Boolean = js.native
+  /** @deprecated DO NOT USE */ def isAnonymousView(): Boolean = js.native
+  /** @deprecated DO NOT USE */ def isAnonymousWrite(): Boolean = js.native
   def isColumnHiddenByUser(columnPosition: Integer): Boolean = js.native
   def isIterativeCalculationEnabled(): Boolean = js.native
   def isRowHiddenByFilter(rowPosition: Integer): Boolean = js.native
@@ -131,8 +128,7 @@ trait Spreadsheet extends js.Object {
   def setActiveSelection(range: Range): Range = js.native
   def setActiveSheet(sheet: Sheet): Sheet = js.native
   def setActiveSheet(sheet: Sheet, restoreSelection: Boolean): Sheet = js.native
-  /** @deprecated DO NOT USE */
-  def setAnonymousAccess(anonymousReadAllowed: Boolean, anonymousWriteAllowed: Boolean): Unit = js.native
+  /** @deprecated DO NOT USE */ def setAnonymousAccess(anonymousReadAllowed: Boolean, anonymousWriteAllowed: Boolean): Unit = js.native
   def setColumnWidth(columnPosition: Integer, width: Integer): Sheet = js.native
   def setCurrentCell(cell: Range): Range = js.native
   def setFrozenColumns(columns: Integer): Unit = js.native
@@ -143,8 +139,7 @@ trait Spreadsheet extends js.Object {
   def setNamedRange(name: String, range: Range): Unit = js.native
   def setRecalculationInterval(recalculationInterval: RecalculationInterval): typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Spreadsheet = js.native
   def setRowHeight(rowPosition: Integer, height: Integer): Sheet = js.native
-  /** @deprecated DO NOT USE */
-  def setSheetProtection(permissions: PageProtection): Unit = js.native
+  /** @deprecated DO NOT USE */ def setSheetProtection(permissions: PageProtection): Unit = js.native
   def setSpreadsheetLocale(locale: String): Unit = js.native
   def setSpreadsheetTimeZone(timezone: String): Unit = js.native
   def show(userInterface: HtmlOutput): Unit = js.native

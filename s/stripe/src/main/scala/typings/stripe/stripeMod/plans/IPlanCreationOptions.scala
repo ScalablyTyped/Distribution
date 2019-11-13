@@ -18,13 +18,21 @@ import scala.scalajs.js.annotation._
 
 trait IPlanCreationOptions extends IDataOptionsWithMetadata {
   /**
+    * Whether the plan is currently available for new subscriptions. Defaults to `true`.
+    */
+  var active: js.UndefOr[Boolean] = js.undefined
+  /**
     * Specifies a usage aggregation strategy for plans of `usage_type=metered`. Allowed values are `sum` for summing up all usage during a period, `last_during_period` for picking the last usage record reported within a period, `last_ever` for picking the last usage record ever (across period bounds) or `max` which picks the usage record with the maximum reported usage during a period. Defaults to `sum`.
     */
   var aggregate_usage: js.UndefOr[sum | last_during_period | last_ever | max] = js.undefined
   /**
-    * A positive integer in cents/pence (or 0 for a free plan) representing how much to charge (on a recurring basis).
+    * A positive integer in cents (or 0 for a free plan) representing how much to charge on a recurring basis.
     */
-  var amount: Double
+  var amount: js.UndefOr[Double] = js.undefined
+  /**
+    * Same as `amount`, but accepts a decimal value with at most 12 decimal places. Only one of `amount` and `amount_decimal` can be set.
+    */
+  var amount_decimal: js.UndefOr[Double] = js.undefined
   /**
     * Describes how to compute the price per period. Either `per_unit` or `tiered`. `per_unit` indicates that the fixed amount (specified in `amount`) will be charged per unit in `quantity` (for plans with `usage_type=licensed`), or per unit of total usage (for plans with `usage_type=metered`). `tiered` indicates that the unit pricing will be computed using a tiering strategy as defined using the `tiers` and `tiers_mode` attributes.
     */
@@ -48,10 +56,6 @@ trait IPlanCreationOptions extends IDataOptionsWithMetadata {
     * Maximum of one year interval allowed (1 year, 12 months, or 52 weeks).
     */
   var interval_count: js.UndefOr[Double] = js.undefined
-  /**
-    * Has the value `true` if the object exists in live mode or the value `false` if the object exists in test mode.
-    */
-  var livemode: js.UndefOr[Boolean] = js.undefined
   /**
     * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
     */
@@ -91,17 +95,18 @@ trait IPlanCreationOptions extends IDataOptionsWithMetadata {
 object IPlanCreationOptions {
   @scala.inline
   def apply(
-    amount: Double,
     currency: String,
     interval: IntervalUnit,
     product: String | IPlanCreationOptionsProductHash,
+    active: js.UndefOr[Boolean] = js.undefined,
     aggregate_usage: sum | last_during_period | last_ever | max = null,
+    amount: Int | Double = null,
+    amount_decimal: Int | Double = null,
     billing_scheme: per_unit | tiered = null,
     expand: js.Array[String] = null,
     id: String = null,
     include: js.Array[String] = null,
     interval_count: Int | Double = null,
-    livemode: js.UndefOr[Boolean] = js.undefined,
     metadata: IMetadata = null,
     nickname: String = null,
     tiers: js.Array[ITier] = null,
@@ -110,14 +115,16 @@ object IPlanCreationOptions {
     trial_period_days: Int | Double = null,
     usage_type: metered | licensed = null
   ): IPlanCreationOptions = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, interval = interval, product = product.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currency = currency, interval = interval, product = product.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (amount_decimal != null) __obj.updateDynamic("amount_decimal")(amount_decimal.asInstanceOf[js.Any])
     if (billing_scheme != null) __obj.updateDynamic("billing_scheme")(billing_scheme.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (id != null) __obj.updateDynamic("id")(id)
     if (include != null) __obj.updateDynamic("include")(include)
     if (interval_count != null) __obj.updateDynamic("interval_count")(interval_count.asInstanceOf[js.Any])
-    if (!js.isUndefined(livemode)) __obj.updateDynamic("livemode")(livemode)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (nickname != null) __obj.updateDynamic("nickname")(nickname)
     if (tiers != null) __obj.updateDynamic("tiers")(tiers)

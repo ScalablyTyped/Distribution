@@ -376,6 +376,7 @@
 | [async-lock](./a/async-lock) | Lock on asynchronous code | lock, async, concurrency, critical, section, mutex |
 | [async-polling](./a/async-polling) | An easy way to run reliable polling without messin | poll, polling, async, setTimeout, setInterval, task |
 | [async-retry](./a/async-retry) | Retrying made simple, easy and async | - |
+| [async-sema](./a/async-sema) | Semaphore using async and await | semaphore, async, await |
 | [async-stream-generator](./a/async-stream-generator) | Pipe ES6 Async Generators through Node.js Streams | streams, async, generators, async, iterators, pipe |
 | [async-writer](./a/async-writer) | The async-writer module makes it possible to async | - |
 | [async_dot_nexttick](./a/async_dot_nexttick) | async nexttickmethod as module. | async, async-modularized, nexttick |
@@ -846,6 +847,7 @@
 | [cachefactory](./c/cachefactory) | CacheFactory is a very simple and useful cache for | cache |
 | [cadesplugin](./c/cadesplugin) | CryptoPro Browser plug-in | - |
 | [cal-heatmap](./c/cal-heatmap) | Cal-Heatmap is a javascript module to create calen | calendar, graph, d3js, heat map |
+| [calendar](./c/calendar) | calendar generator | - |
 | [calidation](./c/calidation) | A red hot validation library for React | validation, react, react validation |
 | [caller](./c/caller) | @substack's caller.js as a module | caller, file, require |
 | [callsite](./c/callsite) | access to v8's CallSites | stack, trace, line |
@@ -1139,6 +1141,7 @@
 | [convert-layout](./c/convert-layout) | Converts text from one keyboard layout to other | keyboard, keyboard layout, russian, english, change, qwerty, belarusian, german, kazakh, spanish, ukrainian, hebrew, persian, farsi |
 | [convert-source-map](./c/convert-source-map) | Converts a source-map from/to  different formats a | convert, sourcemap, source, map, browser, debug |
 | [convert-string](./c/convert-string) | Convert to/from strings and array of bytes | string, strings, convert, hex, bytes |
+| [convert-units](./c/convert-units) | Convert between quantities in different units | metric, imperial, convert, ratio, fraction |
 | [convict](./c/convict) | Featureful configuration management library for No | configuration, config, key value store, schema, nested, validation |
 | [cookie](./c/cookie) | HTTP server cookie parsing and serialization | cookie, cookies |
 | [cookie-parser](./c/cookie-parser) | Parse HTTP request cookies | cookie, middleware |
@@ -1368,6 +1371,7 @@
 | [date-and-time](./d/date-and-time) | A Minimalist DateTime utility for Node.js and the  | date, time, format, parse, utility |
 | [date-arithmetic](./d/date-arithmetic) | simple date math util | moment, date, math |
 | [date-fns](./d/date-fns) | Modern JavaScript date utility library | - |
+| [date-fp](./d/date-fp) | Functional programming date management. | - |
 | [date-now](./d/date-now) | A requirable version of Date.now() | - |
 | [date-range-array](./d/date-range-array) | Create an array of dates. | date, date range, array, time |
 | [date-utils](./d/date-utils) | Date add-ons for Node.js | date, utils, date-utils, time |
@@ -1457,6 +1461,7 @@
 | [detective](./d/detective) | find all require() calls by walking the AST | analyze, ast, require, source |
 | [detox](./d/detox) | E2E tests and automation for mobile | - |
 | [dev-ip](./d/dev-ip) | Find a suitable IP host to view local websites on. | - |
+| [devalue](./d/devalue) | Gets the job done when JSON.stringify can't | - |
 | [devcert-san](./d/devcert-san) | Generate trusted local SSL/TLS certificates for lo | ssl, certificate, openssl, trust |
 | [devexpress-aspnetcore-boo](./d/devexpress-aspnetcore-bootstrap) | - | - |
 | [devexpress-web](./d/devexpress-web) | - | - |
@@ -2852,6 +2857,7 @@
 | [htmltojsx](./h/htmltojsx) | Converts HTML to JSX for use with React | react, jsx, htmltojsx, html, react-component |
 | [http-assert](./h/http-assert) | assert with status codes | assert, http |
 | [http-aws-es](./h/http-aws-es) | Use the elasticsearch-js client with Amazon ES | elasticsearch, elasticsearch-js, aws-es, aws, amazon, es, http, connector, extension, sign |
+| [http-build-query](./h/http-build-query) | Generate URL-encoded query string from the object  | http, build, query, url |
 | [http-cache-semantics](./h/http-cache-semantics) | Parses Cache-Control and other headers. Helps buil | - |
 | [http-codes](./h/http-codes) | Map of HTTP status messages to codes based on Node | http, status, codes, messages, builtin, map, javascript, nodejs, node |
 | [http-context](./h/http-context) | High-level request & response object. Inspired by  | - |
@@ -2950,6 +2956,7 @@
 | [immutability-helper](./i/immutability-helper) | mutate a copy of data without changing the origina | immutability |
 | [immutable](./i/immutable) | Immutable Data Collections | immutable, persistent, lazy, data, datastructure, functional, collection, stateless, sequence, iteration |
 | [imperium](./i/imperium) | Imperium is a role-based user's authorizations (AC | node acl, acl, auth, authorization, user acl, security, imperium |
+| [import-fresh](./i/import-fresh) | Import a module while bypassing the cache | require, cache, uncache, uncached, module, fresh, bypass |
 | [impress](./i/impress) | Impress Application Server for Node.js | application, server, api, rpc, soa, service, stateful, rest, restful, web, framework, router, routing, cluster, cloud, cache, http, https, sse, eventstream, static, websocket, websockets |
 | [imsi-grok](./i/imsi-grok) | Analyze IMSI (international mobile subscriber iden | IMSI |
 | [imul](./i/imul) | ES2015 Math.imul() ponyfill | es2015, ponyfill, polyfill, shim, number, math, imul, multiplication |
@@ -4654,6 +4661,7 @@
 | [mysql-import](./m/mysql-import) | Import .sql into a MySQL database with Node. | nodejs, mysql, textfiles, import, sql |
 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library. | spy, test, testing |
 | [mz](./m/mz) | modernize node.js to current ECMAScript standards | promisify, promise, thenify, then, es6 |
+| [n-readlines](./n/n-readlines) | Read file line by line without buffering the whole | read, line, reader, linereader, readfile, linebyline, synchronous, sync, readline, readlines |
 | [n3](./n/n3) | Lightning fast, asynchronous, streaming Turtle / N | turtle, rdf, n3, streaming, asynchronous |
 | [naja](./n/naja) | Modern AJAX library for Nette Framework | nette, ajax, history |
 | [named-regexp-groups](./n/named-regexp-groups) | Regular expressions with named capture groups and  | backreference, capture, expression, group, named, regex, regexp, regular |
@@ -4913,6 +4921,7 @@
 | [nsqjs](./n/nsqjs) | NodeJS client for NSQ | nsq, nsq client, nsq client official, nsqjs, distributed messaging, messaging, task, task management |
 | [nssm](./n/nssm) | Wrapper for nssm.exe to manage windows services | nssm.exe,nssm,windows,service,services,manager,install,remove,start,restart,stop,status,svc,winsvc |
 | [nteract__transform-vdom](./n/nteract__transform-vdom) | VDOM Transform for jupyter outputs | - |
+| [nuclear-js](./n/nuclear-js) | Immutable, reactive Flux architecture. UI Agnostic | flux, nuclear, immutable, react, vue, vuejs, functional, stateless |
 | [nuid](./n/nuid) | NUID - A highly performant unique identifier gener | unique, identifier, generator |
 | [nuka-carousel](./n/nuka-carousel) | Pure React Carousel | react, carousel, nuka |
 | [nullthrows](./n/nullthrows) | flow typed nullthrows | assert, flow, invariant, nullthrows |
@@ -5323,6 +5332,7 @@
 | [playcanvas](./p/playcanvas) | PlayCanvas WebGL game engine | 3D, 2D, VR, WebGL, WebGL2, game, engine, HTML5, browser, typings |
 | [playerframework](./p/playerframework) | - | - |
 | [playmusic](./p/playmusic) | Node JS Google Play Music API.  Supports All Acces | gmusic, gmusicapi, google play, play music, all access |
+| [please-upgrade-node](./p/please-upgrade-node) | Displays a beginner-friendly message telling your  | node, engines, version, check, verify, upgrade |
 | [pleasejs](./p/pleasejs) | JS library to generate random pleasing colors/colo | color, scheme, random |
 | [plist](./p/plist) | Mac OS X Plist parser/builder for Node.js and brow | apple, browser, mac, plist, parser, xml |
 | [plotly_dot_js](./p/plotly_dot_js) | The open source javascript graphing library that p | graphing, plotting, data, visualization, plotly |
@@ -5343,6 +5353,7 @@
 | [podium](./p/podium) | Node compatible event emitter with extra features | emitter, event |
 | [poi](./p/poi) | A zero-config bundler for JavaScript applications. | poi, webpack, zero-config, bundler, vue-cli, parcel, create-react-app, babel |
 | [point-in-polygon](./p/point-in-polygon) | determine if a point is inside a polygon with a ra | point, polygon, inside |
+| [poker-evaluator](./p/poker-evaluator) | A library to evaluate 3, 5 or 7 card poker hands | poker, games |
 | [polished](./p/polished) | A lightweight toolset for writing styles in Javasc | styled-components, polished, emotion, glamor, css-in-js, inline-styles, react, flow, typescript |
 | [pollyjs__adapter](./p/pollyjs__adapter) | Extendable base adapter class used by @pollyjs | polly, pollyjs, adapter |
 | [pollyjs__adapter-fetch](./p/pollyjs__adapter-fetch) | Fetch adapter for @pollyjs | polly, pollyjs, record, replay, fetch, adapter |
@@ -6078,6 +6089,7 @@
 | [react-primitives](./r/react-primitives) | Primitive React Interfaces Across Targets | react |
 | [react-props-decorators](./r/react-props-decorators) | Define props of React components by ES7 decorators | - |
 | [react-qr-reader](./r/react-qr-reader) | A react component for reading QR codes from the we | react, qr, qrcode, qrreader |
+| [react-query](./r/react-query) | Hooks for managing, caching and syncing asynchrono | - |
 | [react-radio-group](./r/react-radio-group) | Better radio buttons. | facebook, react, radio, radio-group, component, react-component |
 | [react-range](./r/react-range) | Range input. Slides in all directions. | react, react-dom, react-component, range, slider, interval |
 | [react-rangeslider](./r/react-rangeslider) | A lightweight react component that acts as a HTML5 | rangeslider, range-slider, react-rangeslider, input, range, react, slider |
@@ -6861,6 +6873,7 @@
 | [sockjs](./s/sockjs) | SockJS-node is a server counterpart of SockJS-clie | websockets, websocket |
 | [sockjs-client](./s/sockjs-client) | SockJS-client is a browser JavaScript library that | websockets, websocket |
 | [socks](./s/socks) | Fully featured SOCKS proxy client supporting SOCKS | socks, proxy, tor, socks 4, socks 5, socks4, socks5 |
+| [sodium-native](./s/sodium-native) | Low level bindings for libsodium | - |
 | [sodiumjs](./s/sodiumjs) | A Functional Reactive Programming (FRP) library fo | frp, functional, reactive, typescript, sodium |
 | [solid-auth-client](./s/solid-auth-client) | Opaquely authenticates solid clients | - |
 | [solid__react](./s/solid__react) | Efficiently build Solid apps and components with R | - |
@@ -7599,7 +7612,6 @@
 | [vega](./v/vega) | The Vega visualization grammar. | vega, visualization, interaction, dataflow, library, data, d3 |
 | [vega-typings](./v/vega-typings) | Typings for Vega. | vega, typescript, typings |
 | [vega-util](./v/vega-util) | JavaScript utilities for Vega. | vega, utilities |
-| [velocity-animate](./v/velocity-animate) | Accelerated JavaScript animation. | velocity, animation, jquery, animate, ui, velocity.js, velocityjs, javascript |
 | [venn](./v/venn) | fluent API library for set operations | venn, set, intersect, union |
 | [verror](./v/verror) | richer JavaScript errors | - |
 | [vertx3-eventbus-client](./v/vertx3-eventbus-client) | Vert.x 3 Event Bus Client as NPM | websockets, websocket, sockjs, vert.x |
@@ -7670,6 +7682,7 @@
 | [vue-server-renderer](./v/vue-server-renderer) | server renderer for Vue 2.0 | vue, server, ssr |
 | [vue-splitpane](./v/vue-splitpane) | vue split-pane component | - |
 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue | vue, telephone, phone, vue-tel-input, phone input, telephone input |
+| [vue-template-compiler](./v/vue-template-compiler) | template compiler for Vue 2.0 | vue, compiler |
 | [vue-the-mask](./v/vue-the-mask) | Tiny (2KB) and dependency free mask input for Vue. | vue, mask |
 | [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2 | vue, datepicker |
 | [vue2-editor](./v/vue2-editor) | HTML editor using Vue.js 2, and Quill.js, an open  | vue, vue-component, quill, html editor, text editor |
@@ -7833,6 +7846,8 @@
 | [window-or-global](./w/window-or-global) | Use either the window object in the browser or the | window, global, isomorphic, universal |
 | [window-size](./w/window-size) | Reliable way to get the height and width of termin | columns, console, darwin, height, lines, redirected, resize, rows, size, term, term-size, terminal, tty, unix, width, win, window, windows |
 | [windows-1251](./w/windows-1251) | A robust windows-1251 encoder/decoder written in J | codec, decoder, decoding, encoder, encoding, legacy, legacy-encoding, cp1251, windows-1251, x-cp1251 |
+| [windows-foreground-love](./w/windows-foreground-love) | API wrapper for AllowSetForegroundWindow | - |
+| [windows-process-tree](./w/windows-process-tree) | Fetch a Windows process tree fast | - |
 | [windows-release](./w/windows-release) | Get the name of a Windows version from the release | os, win, win32, windows, operating, system, platform, name, title, release, version |
 | [windows-script-host](./w/windows-script-host) | - | - |
 | [windows-service](./w/windows-service) | Run Node.JS programs as native Windows Services. | service, windows, windows-service |

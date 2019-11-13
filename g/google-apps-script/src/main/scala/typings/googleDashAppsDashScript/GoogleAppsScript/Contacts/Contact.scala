@@ -65,20 +65,16 @@ trait Contact extends js.Object {
   def getDates(): js.Array[DateField] = js.native
   def getDates(label: String): js.Array[DateField] = js.native
   def getDates(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[DateField] = js.native
-  /** @deprecated DO NOT USE */
-  def getEmailAddresses(): js.Array[String] = js.native
+  /** @deprecated DO NOT USE */ def getEmailAddresses(): js.Array[String] = js.native
   def getEmails(): js.Array[EmailField] = js.native
   def getEmails(label: String): js.Array[EmailField] = js.native
   def getEmails(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[EmailField] = js.native
   def getFamilyName(): String = js.native
   def getFullName(): String = js.native
   def getGivenName(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getHomeAddress(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getHomeFax(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getHomePhone(): String = js.native
+  /** @deprecated DO NOT USE */ def getHomeAddress(): String = js.native
+  /** @deprecated DO NOT USE */ def getHomeFax(): String = js.native
+  /** @deprecated DO NOT USE */ def getHomePhone(): String = js.native
   def getIMs(): js.Array[IMField] = js.native
   def getIMs(label: String): js.Array[IMField] = js.native
   def getIMs(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[IMField] = js.native
@@ -87,12 +83,10 @@ trait Contact extends js.Object {
   def getLastUpdated(): Date = js.native
   def getMaidenName(): String = js.native
   def getMiddleName(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getMobilePhone(): String = js.native
+  /** @deprecated DO NOT USE */ def getMobilePhone(): String = js.native
   def getNickname(): String = js.native
   def getNotes(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getPager(): String = js.native
+  /** @deprecated DO NOT USE */ def getPager(): String = js.native
   def getPhones(): js.Array[PhoneField] = js.native
   def getPhones(label: String): js.Array[PhoneField] = js.native
   def getPhones(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[PhoneField] = js.native
@@ -103,49 +97,33 @@ trait Contact extends js.Object {
   def getUrls(): js.Array[UrlField] = js.native
   def getUrls(label: String): js.Array[UrlField] = js.native
   def getUrls(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[UrlField] = js.native
-  /** @deprecated DO NOT USE */
-  def getUserDefinedField(key: String): String = js.native
-  /** @deprecated DO NOT USE */
-  def getUserDefinedFields(): js.Any = js.native
-  /** @deprecated DO NOT USE */
-  def getWorkAddress(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getWorkFax(): String = js.native
-  /** @deprecated DO NOT USE */
-  def getWorkPhone(): String = js.native
+  /** @deprecated DO NOT USE */ def getUserDefinedField(key: String): String = js.native
+  /** @deprecated DO NOT USE */ def getUserDefinedFields(): js.Any = js.native
+  /** @deprecated DO NOT USE */ def getWorkAddress(): String = js.native
+  /** @deprecated DO NOT USE */ def getWorkFax(): String = js.native
+  /** @deprecated DO NOT USE */ def getWorkPhone(): String = js.native
   def removeFromGroup(group: ContactGroup): Contact = js.native
   def setFamilyName(familyName: String): Contact = js.native
   def setFullName(fullName: String): Contact = js.native
   def setGivenName(givenName: String): Contact = js.native
-  /** @deprecated DO NOT USE */
-  def setHomeAddress(addr: String): Unit = js.native
-  /** @deprecated DO NOT USE */
-  def setHomeFax(phone: String): Unit = js.native
-  /** @deprecated DO NOT USE */
-  def setHomePhone(phone: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setHomeAddress(addr: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setHomeFax(phone: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setHomePhone(phone: String): Unit = js.native
   def setInitials(initials: String): Contact = js.native
   def setMaidenName(maidenName: String): Contact = js.native
   def setMiddleName(middleName: String): Contact = js.native
-  /** @deprecated DO NOT USE */
-  def setMobilePhone(phone: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setMobilePhone(phone: String): Unit = js.native
   def setNickname(nickname: String): Contact = js.native
   def setNotes(notes: String): Contact = js.native
-  /** @deprecated DO NOT USE */
-  def setPager(phone: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setPager(phone: String): Unit = js.native
   def setPrefix(prefix: String): Contact = js.native
-  /** @deprecated DO NOT USE */
-  def setPrimaryEmail(primaryEmail: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setPrimaryEmail(primaryEmail: String): Unit = js.native
   def setShortName(shortName: String): Contact = js.native
   def setSuffix(suffix: String): Contact = js.native
-  /** @deprecated DO NOT USE */
-  def setUserDefinedField(key: String, value: String): Unit = js.native
-  /** @deprecated DO NOT USE */
-  def setUserDefinedFields(o: js.Any): Unit = js.native
-  /** @deprecated DO NOT USE */
-  def setWorkAddress(addr: String): Unit = js.native
-  /** @deprecated DO NOT USE */
-  def setWorkFax(phone: String): Unit = js.native
-  /** @deprecated DO NOT USE */
-  def setWorkPhone(phone: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setUserDefinedField(key: String, value: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setUserDefinedFields(o: js.Any): Unit = js.native
+  /** @deprecated DO NOT USE */ def setWorkAddress(addr: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setWorkFax(phone: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setWorkPhone(phone: String): Unit = js.native
 }
 

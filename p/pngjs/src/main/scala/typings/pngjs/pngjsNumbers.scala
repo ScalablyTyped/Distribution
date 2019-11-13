@@ -1,5 +1,6 @@
 package typings.pngjs
 
+import typings.pngjs.pngjsMod.BitDepth
 import typings.pngjs.pngjsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ object pngjsNumbers {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `16` extends js.Object
+  sealed trait `16` extends BitDepth
   
   @js.native
   sealed trait `2` extends ColorType
@@ -28,7 +29,7 @@ object pngjsNumbers {
   sealed trait `6` extends ColorType
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8` extends BitDepth
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

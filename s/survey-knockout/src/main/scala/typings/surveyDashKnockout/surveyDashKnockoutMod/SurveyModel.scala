@@ -711,7 +711,8 @@ class SurveyModel ()
     * <br/> name the file name
     * <br/> file the Javascript File object
     * <br/> accept a boolean value, true by default. Set it to false to deny this file to upload
-    * @see uploadFile
+    * @see uploadFiles
+    * @see QuestionFileModel.storeDataAsText
     */
   var onUploadFiles: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**

@@ -32,8 +32,7 @@ import scala.scalajs.js.annotation._
   */
 trait Range extends js.Object {
   def getRangeElements(): js.Array[RangeElement]
-  /** @deprecated DO NOT USE */
-  def getSelectedElements(): js.Array[RangeElement]
+  /** @deprecated DO NOT USE */ def getSelectedElements(): js.Array[RangeElement]
 }
 
 object Range {

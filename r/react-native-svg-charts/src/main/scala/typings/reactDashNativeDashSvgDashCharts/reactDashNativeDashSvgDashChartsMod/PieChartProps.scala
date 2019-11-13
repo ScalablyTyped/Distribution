@@ -7,7 +7,6 @@ import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.PathProps
 import typings.reactDashNativeDashSvgDashCharts.Anon_Bottom
-import typings.reactDashNativeDashSvgDashCharts.Anon_Index
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,13 +41,13 @@ object PieChartProps {
     sort: (T, T) => Double = null,
     style: StyleProp[ViewStyle] = null,
     svg: Partial[PathProps] = null,
-    valueAccessor: /* props */ Anon_Index[T] => Double = null,
+    valueAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
     width: Int | Double = null,
-    xAccessor: /* props */ Anon_Index[T] => Double = null,
+    xAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
     xMax: Int | Double = null,
     xMin: Int | Double = null,
     xScale: () => (ScaleType[js.Any, js.Any]) | ScaleBand[js.Any] = null,
-    yAccessor: /* props */ Anon_Index[T] => Double = null,
+    yAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
     yMax: Int | Double = null,
     yMin: Int | Double = null,
     yScale: () => (ScaleType[js.Any, js.Any]) | ScaleBand[js.Any] = null

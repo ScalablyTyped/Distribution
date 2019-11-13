@@ -43,8 +43,10 @@ trait ColumnDefinition
   /**  additional parameters you can pass to the bottomCalcFormatter function */
   var bottomCalcFormatterParams: js.UndefOr[FormatterParams] = js.undefined
   var bottomCalcParams: js.UndefOr[ColumnCalcParams] = js.undefined
-  /**If you don't want to show a particular column in the clipboard output you can set the clipboard property in its column definition object to false */
+  /** If you don't want to show a particular column in the clipboard output you can set the clipboard property in its column definition object to false */
   var clipboard: js.UndefOr[Boolean] = js.undefined
+  /** A column can be a "group" of columns (Example: group header column -> Measurements, grouped column -> Length, Width, Height) */
+  var columns: js.UndefOr[js.Array[ColumnDefinition]] = js.undefined
   /** sets css classes on header and cells in this column. (value should be a string containing space separated class names) */
   var cssClass: js.UndefOr[String] = js.undefined
   /** show or hide column in downloaded data */
@@ -204,7 +206,6 @@ trait ColumnDefinition
 object ColumnDefinition {
   @scala.inline
   def apply(
-    field: String,
     title: String,
     accessor: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent]) => js.Any = null,
     accessorClipboard: (/* value */ js.Any, /* data */ js.Any, /* type */ data | download | clipboard, /* AccessorParams */ js.Any, /* column */ js.UndefOr[ColumnComponent]) => js.Any = null,
@@ -232,6 +233,7 @@ object ColumnDefinition {
     cellTap: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellTapHold: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     clipboard: js.UndefOr[Boolean] = js.undefined,
+    columns: js.Array[ColumnDefinition] = null,
     cssClass: String = null,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadTitle: String = null,
@@ -239,6 +241,7 @@ object ColumnDefinition {
     editableTitle: js.UndefOr[Boolean] = js.undefined,
     editor: Editor = null,
     editorParams: EditorParams = null,
+    field: String = null,
     formatter: Formatter = null,
     formatterParams: FormatterParams = null,
     frozen: js.UndefOr[Boolean] = js.undefined,
@@ -305,7 +308,7 @@ object ColumnDefinition {
     widthGrow: Int | Double = null,
     widthShrink: Int | Double = null
   ): ColumnDefinition = {
-    val __obj = js.Dynamic.literal(field = field, title = title)
+    val __obj = js.Dynamic.literal(title = title)
     if (accessor != null) __obj.updateDynamic("accessor")(js.Any.fromFunction5(accessor))
     if (accessorClipboard != null) __obj.updateDynamic("accessorClipboard")(js.Any.fromFunction5(accessorClipboard))
     if (accessorClipboardParams != null) __obj.updateDynamic("accessorClipboardParams")(accessorClipboardParams.asInstanceOf[js.Any])
@@ -332,6 +335,7 @@ object ColumnDefinition {
     if (cellTap != null) __obj.updateDynamic("cellTap")(js.Any.fromFunction2(cellTap))
     if (cellTapHold != null) __obj.updateDynamic("cellTapHold")(js.Any.fromFunction2(cellTapHold))
     if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
     if (downloadTitle != null) __obj.updateDynamic("downloadTitle")(downloadTitle)
@@ -339,6 +343,7 @@ object ColumnDefinition {
     if (!js.isUndefined(editableTitle)) __obj.updateDynamic("editableTitle")(editableTitle)
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     if (editorParams != null) __obj.updateDynamic("editorParams")(editorParams.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (formatterParams != null) __obj.updateDynamic("formatterParams")(formatterParams.asInstanceOf[js.Any])
     if (!js.isUndefined(frozen)) __obj.updateDynamic("frozen")(frozen)

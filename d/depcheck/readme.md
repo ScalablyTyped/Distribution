@@ -1,7 +1,7 @@
 
 # Scala.js typings for depcheck
 
-Typings are for version 0.9
+Typings are for version 0.9.1
 
 ## Library description:
 Check dependencies in your node module
@@ -24,7 +24,7 @@ Check dependencies in your node module
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

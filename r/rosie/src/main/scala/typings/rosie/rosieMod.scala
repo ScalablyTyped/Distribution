@@ -153,9 +153,9 @@ object rosieMod extends js.Object {
       * @param {object} attributes
       * @return {Factory}
       */
-    def attrs(
+    def attrs[Keys /* <: String */](
       attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
-    {[ K in keyof T ]: T[K] | (opts? : any): T[K]}
+    {[ K in Keys ]: T[K] | (opts? : any): T[K]}
       */ typings.rosie.rosieStrings.IFactory with js.Any
     ): IFactory[T] = js.native
     /**

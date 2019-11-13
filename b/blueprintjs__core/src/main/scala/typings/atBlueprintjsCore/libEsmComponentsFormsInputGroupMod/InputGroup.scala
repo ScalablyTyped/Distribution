@@ -13,11 +13,8 @@ class InputGroup ()
   var maybeRenderRightElement: js.Any = js.native
   var refHandlers: js.Any = js.native
   var rightElement: js.Any = js.native
-  var updateInputWidth: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MInputGroup(): Unit = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MInputGroup(): Unit = js.native
 }
 
 /* static members */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for typedoc
 
-Typings are for version 0.15.0
+Typings are for version 0.15.1
 
 ## Library description:
 Create api documentations for typescript projects.

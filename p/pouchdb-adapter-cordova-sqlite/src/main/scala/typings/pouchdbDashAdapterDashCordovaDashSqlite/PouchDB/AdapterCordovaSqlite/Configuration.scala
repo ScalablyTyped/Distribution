@@ -29,6 +29,7 @@ object Configuration {
     adapter: `cordova-sqlite`,
     androidDatabaseImplementation: Int | Double = null,
     auto_compaction: js.UndefOr[Boolean] = js.undefined,
+    deterministic_revs: js.UndefOr[Boolean] = js.undefined,
     iosDatabaseLocation: String = null,
     location: String = null,
     name: String = null,
@@ -39,6 +40,7 @@ object Configuration {
     val __obj = js.Dynamic.literal(adapter = adapter)
     if (androidDatabaseImplementation != null) __obj.updateDynamic("androidDatabaseImplementation")(androidDatabaseImplementation.asInstanceOf[js.Any])
     if (!js.isUndefined(auto_compaction)) __obj.updateDynamic("auto_compaction")(auto_compaction)
+    if (!js.isUndefined(deterministic_revs)) __obj.updateDynamic("deterministic_revs")(deterministic_revs)
     if (iosDatabaseLocation != null) __obj.updateDynamic("iosDatabaseLocation")(iosDatabaseLocation)
     if (location != null) __obj.updateDynamic("location")(location)
     if (name != null) __obj.updateDynamic("name")(name)

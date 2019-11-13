@@ -37,7 +37,7 @@ object distLibConverterComponentsMod extends js.Object {
   - typings.typedoc.distLibUtilsEventsMod.EventDispatcher because Already inherited
   - typings.typedoc.distLibUtilsComponentMod.AbstractComponent because Already inherited
   - typings.typedoc.distLibConverterComponentsMod.ConverterTypeComponent because Already inherited
-  - typings.typedoc.distLibConverterComponentsMod.TypeNodeConverter because var conflicts: _componentOptions, _componentOwner, _events, _listeners, _listeningTo, _savedListenId, componentName, internalOn, priority. Inlined supportsNode, supportsNode, convertNode, convertNode */ @js.native
+  - typings.typedoc.distLibConverterComponentsMod.TypeNodeConverter because var conflicts: _componentOptions, _componentOwner, _events, _listeners, _listeningTo, _savedListenId, application, componentName, internalOn, priority. Inlined supportsNode, supportsNode, convertNode, convertNode */ @js.native
   trait TypeConverter[T /* <: Type */, N /* <: Node */] extends TypeTypeConverter[T] {
     def convertNode(context: Context, node: N): js.UndefOr[typings.typedoc.distLibModelsTypesAbstractMod.Type] = js.native
     def convertNode(context: Context, node: N, `type`: T): js.UndefOr[typings.typedoc.distLibModelsTypesAbstractMod.Type] = js.native

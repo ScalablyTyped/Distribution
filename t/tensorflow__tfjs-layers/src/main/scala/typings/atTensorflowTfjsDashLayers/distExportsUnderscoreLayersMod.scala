@@ -21,10 +21,12 @@ import typings.atTensorflowTfjsDashLayers.distLayersConvolutionalUnderscoreDepth
 import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.ActivationLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.DenseLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.DropoutLayerArgs
+import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.FlattenLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.MaskingArgs
 import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.PermuteLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.RepeatVectorLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.ReshapeLayerArgs
+import typings.atTensorflowTfjsDashLayers.distLayersCoreMod.SpatialDropout1DLayerConfig
 import typings.atTensorflowTfjsDashLayers.distLayersEmbeddingsMod.EmbeddingLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersMergeMod.ConcatenateLayerArgs
 import typings.atTensorflowTfjsDashLayers.distLayersMergeMod.DotLayerArgs
@@ -124,7 +126,7 @@ object distExportsUnderscoreLayersMod extends js.Object {
   def elu(args: ELULayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def embedding(args: EmbeddingLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def flatten(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
-  def flatten(args: LayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
+  def flatten(args: FlattenLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def gaussianDropout(args: GaussianDropoutArgs): GaussianDropout = js.native
   def gaussianNoise(args: GaussianNoiseArgs): GaussianNoise = js.native
   def globalAveragePooling1d(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
@@ -167,6 +169,7 @@ object distExportsUnderscoreLayersMod extends js.Object {
   def simpleRNNCell(args: SimpleRNNCellLayerArgs): typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod.RNNCell = js.native
   def softmax(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def softmax(args: SoftmaxLayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
+  def spatialDropout1d(args: SpatialDropout1DLayerConfig): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def stackedRNNCells(args: StackedRNNCellsArgs): typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod.RNNCell = js.native
   def thresholdedReLU(): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native
   def thresholdedReLU(args: ThresholdedReLULayerArgs): typings.atTensorflowTfjsDashLayers.distEngineTopologyMod.Layer = js.native

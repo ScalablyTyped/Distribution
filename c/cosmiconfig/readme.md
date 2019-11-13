@@ -1,7 +1,7 @@
 
 # Scala.js typings for cosmiconfig
 
-Typings are for version 5.0
+Typings are for version 6.0.0
 
 ## Library description:
 Find and load configuration from a package.json property, rc file, or CommonJS module
@@ -24,7 +24,7 @@ Find and load configuration from a package.json property, rc file, or CommonJS m
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

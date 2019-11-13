@@ -20,6 +20,10 @@ object distLibSerializationSerializersTypesMod extends js.Object {
     extends typings.typedoc.distLibSerializationSerializersTypesIntrinsicMod.IntrinsicTypeSerializer
   
   @js.native
+  class PredicateTypeSerializer ()
+    extends typings.typedoc.distLibSerializationSerializersTypesPredicateMod.PredicateTypeSerializer
+  
+  @js.native
   class ReferenceTypeSerializer ()
     extends typings.typedoc.distLibSerializationSerializersTypesReferenceMod.ReferenceTypeSerializer
   

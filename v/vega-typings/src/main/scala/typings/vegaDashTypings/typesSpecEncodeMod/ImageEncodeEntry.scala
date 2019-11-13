@@ -9,6 +9,7 @@ trait ImageEncodeEntry
      with AlignProperty {
   var aspect: js.UndefOr[ProductionRule[BooleanValueRef]] = js.undefined
   var baseline: js.UndefOr[ProductionRule[ScaledValueRef[Baseline]]] = js.undefined
+  var smooth: js.UndefOr[ProductionRule[BooleanValueRef]] = js.undefined
   var url: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
 }
 
@@ -23,6 +24,7 @@ object ImageEncodeEntry {
     fillOpacity: ProductionRule[NumericValueRef] = null,
     height: ProductionRule[NumericValueRef] = null,
     opacity: ProductionRule[NumericValueRef] = null,
+    smooth: ProductionRule[BooleanValueRef] = null,
     stroke: ProductionRule[ColorValueRef] = null,
     strokeCap: ProductionRule[StringValueRef] = null,
     strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
@@ -50,6 +52,7 @@ object ImageEncodeEntry {
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
     if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash.asInstanceOf[js.Any])

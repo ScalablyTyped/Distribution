@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashConverterStrings {
   @js.native
-  sealed trait `1DOT3DOT1` extends js.Object
+  sealed trait `1DOT3DOT2` extends js.Object
   
   @js.native
   sealed trait `?tfjs-format=file` extends js.Object
@@ -104,7 +104,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait transformation extends Category
   
   @scala.inline
-  def `1DOT3DOT1`: `1DOT3DOT1` = "1.3.1".asInstanceOf[`1DOT3DOT1`]
+  def `1DOT3DOT2`: `1DOT3DOT2` = "1.3.2".asInstanceOf[`1DOT3DOT2`]
   @scala.inline
   def `?tfjs-format=file`: `?tfjs-format=file` = "?tfjs-format=file".asInstanceOf[`?tfjs-format=file`]
   @scala.inline

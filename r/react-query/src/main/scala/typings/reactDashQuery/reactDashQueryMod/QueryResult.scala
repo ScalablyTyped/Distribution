@@ -1,0 +1,24 @@
+package typings.reactDashQuery.reactDashQueryMod
+
+import typings.reactDashQuery.Anon_Args
+import typings.std.Error
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait QueryResult[TResult, TVariables] extends js.Object {
+  var canFetchMore: Boolean = js.native
+  var data: Null | TResult = js.native
+  var error: Null | Error = js.native
+  var failureCount: Double = js.native
+  var isCached: Boolean = js.native
+  var isFetching: Boolean = js.native
+  var isFetchingMore: Boolean = js.native
+  var isLoading: Boolean = js.native
+  def fetchMore(): js.Promise[TResult] = js.native
+  def fetchMore(variables: TVariables): js.Promise[TResult] = js.native
+  def refetch(): Unit = js.native
+  def refetch(arg: Anon_Args[TVariables]): Unit = js.native
+}
+

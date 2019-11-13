@@ -5,18 +5,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PathEncodeEntry extends EncodeEntry {
+  var angle: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
   var path: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
+  var scaleX: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
+  var scaleY: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
 }
 
 object PathEncodeEntry {
   @scala.inline
   def apply(
+    angle: ProductionRule[NumericValueRef] = null,
     cursor: ProductionRule[StringValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
     height: ProductionRule[NumericValueRef] = null,
     opacity: ProductionRule[NumericValueRef] = null,
     path: ProductionRule[StringValueRef] = null,
+    scaleX: ProductionRule[NumericValueRef] = null,
+    scaleY: ProductionRule[NumericValueRef] = null,
     stroke: ProductionRule[ColorValueRef] = null,
     strokeCap: ProductionRule[StringValueRef] = null,
     strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
@@ -35,12 +41,15 @@ object PathEncodeEntry {
     yc: ProductionRule[NumericValueRef] = null
   ): PathEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
+    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
     if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash.asInstanceOf[js.Any])

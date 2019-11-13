@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-resize-detector"
-version := "4.0-dt-20190815Z-eab6c6"
+version := "4.2-dt-20191112Z-46299d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

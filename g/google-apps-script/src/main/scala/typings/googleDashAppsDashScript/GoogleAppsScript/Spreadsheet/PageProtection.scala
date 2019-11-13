@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
   * Access and modify protected sheets in the older version of Google Sheets.
   */
 trait PageProtection extends js.Object {
-  def addUser(email: String): Unit
-  def getUsers(): js.Array[String]
-  def isProtected(): Boolean
-  def removeUser(user: String): Unit
-  def setProtected(protection: Boolean): Unit
+  /** @deprecated DO NOT USE */ def addUser(email: String): Unit
+  /** @deprecated DO NOT USE */ def getUsers(): js.Array[String]
+  /** @deprecated DO NOT USE */ def isProtected(): Boolean
+  /** @deprecated DO NOT USE */ def removeUser(user: String): Unit
+  /** @deprecated DO NOT USE */ def setProtected(protection: Boolean): Unit
 }
 
 object PageProtection {

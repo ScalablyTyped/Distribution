@@ -4,7 +4,6 @@ import typings.d3DashScale.d3DashScaleMod.ScaleBand
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.TextProps
-import typings.reactDashNativeDashSvgDashCharts.Anon_Index
 import typings.reactDashNativeDashSvgDashCharts.Anon_Left
 import typings.std.Partial
 import scala.scalajs.js
@@ -28,7 +27,7 @@ object XAxisProps {
     spacingOuter: Int | Double = null,
     style: StyleProp[ViewStyle] = null,
     svg: Partial[TextProps] = null,
-    xAccessor: /* props */ Anon_Index[T] => _ = null
+    xAccessor: /* props */ AccessorFunctionProps[T] => _ = null
   ): XAxisProps[T] = {
     val __obj = js.Dynamic.literal(data = data)
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
