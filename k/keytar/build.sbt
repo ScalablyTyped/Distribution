@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keytar"
-version := "5.0.0-beta.4-2bc231"
+version := "5.0.0-80982a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

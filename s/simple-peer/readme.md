@@ -1,7 +1,7 @@
 
 # Scala.js typings for simple-peer
 
-Typings are for version 6.1
+Typings are for version 9.6
 
 ## Library description:
 Simple one-to-one WebRTC video/voice and data channels

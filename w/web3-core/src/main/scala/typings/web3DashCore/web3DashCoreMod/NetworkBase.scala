@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("web3-core", "NetworkBase")
 @js.native
-class NetworkBase protected () extends js.Object {
+class NetworkBase () extends js.Object {
   def this(provider: provider) = this()
   def this(provider: provider, net: Socket) = this()
   var BatchRequest: Instantiable0[typings.web3DashCore.web3DashCoreMod.BatchRequest] = js.native
@@ -31,6 +31,7 @@ class NetworkBase protected () extends js.Object {
 @JSImport("web3-core", "NetworkBase")
 @js.native
 object NetworkBase extends js.Object {
+  val givenProvider: js.Any = js.native
   val providers: Providers = js.native
 }
 

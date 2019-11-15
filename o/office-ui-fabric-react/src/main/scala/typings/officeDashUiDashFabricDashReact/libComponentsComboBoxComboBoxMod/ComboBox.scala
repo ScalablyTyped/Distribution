@@ -192,6 +192,7 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
   var _onRenderList: js.Any = js.native
   var _onRenderLowerContent: js.Any = js.native
   var _onRenderOptionContent: js.Any = js.native
+  var _onRenderUpperContent: js.Any = js.native
   /**
     * Callback issued when the options should be resolved, if they have been updated or
     * if they need to be passed in the first time. This only does work if an onResolveOptions

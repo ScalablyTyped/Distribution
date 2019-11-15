@@ -22,7 +22,7 @@ object Anon_ActionKey {
     params: NavigationParams = null
   ): Anon_ActionKey = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[Anon_ActionKey]

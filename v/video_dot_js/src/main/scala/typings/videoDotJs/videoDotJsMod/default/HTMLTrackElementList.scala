@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object HTMLTrackElementList
   extends /**
-		 * Create an instance of this class.
-		 *
-		 * @param [tracks=[]]
-		 *        A list of `HtmlTrackElement` to instantiate the list with.
-		 */
+  * Create an instance of this class.
+  *
+  * @param [tracks=[]]
+  *        A list of `HtmlTrackElement` to instantiate the list with.
+  */
 Instantiable0[typings.videoDotJs.videoDotJsMod.videojs.HTMLTrackElementList]
      with Instantiable1[
       /* tracks */ js.Array[HTMLTrackElement], 

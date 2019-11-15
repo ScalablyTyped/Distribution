@@ -43,5 +43,8 @@ trait atAntDashDesignProDashLayoutProps {
   @scala.inline
   def SiderMenuProps: typings.atAntDashDesignProDashLayout.esSiderMenuSiderMenuMod.SiderMenuProps.type = typings.atAntDashDesignProDashLayout.esSiderMenuSiderMenuMod.SiderMenuProps
   type SiderMenuProps = typings.atAntDashDesignProDashLayout.esSiderMenuSiderMenuMod.SiderMenuProps
+  @scala.inline
+  def TopNavHeaderProps: typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.TopNavHeaderProps.type = typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.TopNavHeaderProps
+  type TopNavHeaderProps = typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.TopNavHeaderProps
 }
 

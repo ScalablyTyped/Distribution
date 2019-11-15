@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-pose
 
-Typings are for version 4.0.9
+Typings are for version 4.0.10
 
 ## Library description:
 A declarative animation library for React

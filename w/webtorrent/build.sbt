@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webtorrent"
-version := "0.107-dt-20190816Z-5b49c8"
+version := "0.107-dt-20190816Z-8c4c19"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
   "org.scalablytyped" %%% "parse-torrent" % "5.8-dt-20190212Z-922913",
   "org.scalablytyped" %%% "parse-torrent-file" % "4.0-dt-20190212Z-95ec2b",
-  "org.scalablytyped" %%% "simple-peer" % "6.1-dt-20190626Z-41b6dc",
+  "org.scalablytyped" %%% "simple-peer" % "9.6-dt-20191114Z-bdab1f",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

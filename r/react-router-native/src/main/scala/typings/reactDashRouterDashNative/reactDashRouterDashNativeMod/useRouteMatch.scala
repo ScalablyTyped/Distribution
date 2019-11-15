@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object useRouteMatch extends js.Object {
   def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactDashRouterDashNative.reactDashRouterDashNativeStrings.useRouteMatch with js.Any */](): `match`[Params] | Null = js.native
+    */ typings.reactDashRouterDashNative.reactDashRouterDashNativeStrings.useRouteMatch with js.Any */](): `match`[Params] = js.native
   def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactDashRouterDashNative.reactDashRouterDashNativeStrings.useRouteMatch with js.Any */](path: String): `match`[Params] | Null = js.native

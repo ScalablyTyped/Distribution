@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object getPlayers extends js.Object {
   /**
-  	 * Get an object with the currently created players, keyed by player ID
-  	 *
-  	 * @return	The created players
-  	 */
+    * Get an object with the currently created players, keyed by player ID
+    *
+    * @return	The created players
+    */
   def apply(): StringDictionary[Player] = js.native
 }
 

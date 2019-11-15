@@ -13,14 +13,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class CaptionsSettingsMenuItem protected () extends CaptionSettingsMenuItem {
   /**
-  		 * Creates an instance of this class.
-  		 *
-  		 * @param player
-  		 *        The `Player` that this class should be attached to.
-  		 *
-  		 * @param [options]
-  		 *        The key/value store of player options.
-  		 */
+    * Creates an instance of this class.
+    *
+    * @param player
+    *        The `Player` that this class should be attached to.
+    *
+    * @param [options]
+    *        The key/value store of player options.
+    */
   def this(player: Player) = this()
   def this(player: Player, options: CaptionSettingsMenuItemOptions) = this()
 }
@@ -29,14 +29,14 @@ class CaptionsSettingsMenuItem protected () extends CaptionSettingsMenuItem {
 @js.native
 object CaptionsSettingsMenuItem
   extends /**
-		 * Creates an instance of this class.
-		 *
-		 * @param player
-		 *        The `Player` that this class should be attached to.
-		 *
-		 * @param [options]
-		 *        The key/value store of player options.
-		 */
+  * Creates an instance of this class.
+  *
+  * @param player
+  *        The `Player` that this class should be attached to.
+  *
+  * @param [options]
+  *        The key/value store of player options.
+  */
 Instantiable1[/* player */ Player, CaptionSettingsMenuItem]
      with Instantiable2[
       /* player */ Player, 

@@ -406,6 +406,7 @@ trait ListView extends View {
   /**
   			 * Replaces an existing section.
   			 */
+  def replaceSectionAt(sectionIndex: Double, section: ListSection): Unit = js.native
   def replaceSectionAt(sectionIndex: Double, section: ListSection, animation: ListViewAnimationProperties): Unit = js.native
   /**
   			 * Scrolls to a specific item.

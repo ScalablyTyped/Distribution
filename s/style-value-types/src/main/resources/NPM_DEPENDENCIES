@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "style-value-types" : "3.1.6"
+      "style-value-types" : "3.1.7"
     }
   ],
   "test-dependencies" : [
     {
-      "style-value-types" : "3.1.6"
+      "style-value-types" : "3.1.7"
     }
   ],
   "compile-devDependencies" : [

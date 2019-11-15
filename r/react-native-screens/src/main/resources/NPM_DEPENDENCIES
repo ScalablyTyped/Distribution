@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-screens" : "1.0.0-alpha.23"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-screens" : "1.0.0-alpha.23"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

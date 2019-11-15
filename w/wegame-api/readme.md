@@ -1,7 +1,7 @@
 
 # Scala.js typings for wegame-api
 
-Typings are for version 2.6
+Typings are for version 2.7
 
 
 

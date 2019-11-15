@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/core" : "8.2.13"
+      "@angular/core" : "8.2.14"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/core" : "8.2.13"
+      "@angular/core" : "8.2.14"
     }
   ],
   "compile-devDependencies" : [

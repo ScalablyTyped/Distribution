@@ -485,8 +485,11 @@ trait Router[StateT, CustomT] extends js.Object {
     * // => "/users/3?limit=1"
     *
     */
+  def url(name: String): String = js.native
   def url(name: String, params: js.Any): String = js.native
   def url(name: String, params: js.Any, options: UrlOptionsQuery): String = js.native
+  @JSName("url")
+  def url_Error(name: String): Error = js.native
   @JSName("url")
   def url_Error(name: String, params: js.Any): Error = js.native
   @JSName("url")

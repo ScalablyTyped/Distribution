@@ -1,6 +1,7 @@
 package typings.connectDashRedis.connectDashRedisMod
 
 import typings.expressDashSession.expressDashSessionMod._Global_.Express.SessionData
+import typings.ioredis.ioredisMod.Redis
 import typings.redis.redisMod.RedisClient
 import typings.std.JSON
 import scala.scalajs.js
@@ -8,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RedisStoreOptions extends js.Object {
-  var client: js.UndefOr[RedisClient] = js.undefined
+  var client: js.UndefOr[RedisClient | Redis] = js.undefined
   var db: js.UndefOr[Double] = js.undefined
   var disableTTL: js.UndefOr[Boolean] = js.undefined
   var disableTouch: js.UndefOr[Boolean] = js.undefined
@@ -30,7 +31,7 @@ trait RedisStoreOptions extends js.Object {
 object RedisStoreOptions {
   @scala.inline
   def apply(
-    client: RedisClient = null,
+    client: RedisClient | Redis = null,
     db: Int | Double = null,
     disableTTL: js.UndefOr[Boolean] = js.undefined,
     disableTouch: js.UndefOr[Boolean] = js.undefined,
@@ -47,7 +48,7 @@ object RedisStoreOptions {
     url: String = null
   ): RedisStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     if (!js.isUndefined(disableTTL)) __obj.updateDynamic("disableTTL")(disableTTL)
     if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch)

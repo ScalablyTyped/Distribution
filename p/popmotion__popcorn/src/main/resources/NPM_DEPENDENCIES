@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@popmotion/popcorn" : "0.4.2"
+      "@popmotion/popcorn" : "0.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@popmotion/popcorn" : "0.4.2"
+      "@popmotion/popcorn" : "0.4.4"
     }
   ],
   "compile-devDependencies" : [

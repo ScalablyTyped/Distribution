@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simple-peer"
-version := "6.1-dt-20190626Z-41b6dc"
+version := "9.6-dt-20191114Z-bdab1f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

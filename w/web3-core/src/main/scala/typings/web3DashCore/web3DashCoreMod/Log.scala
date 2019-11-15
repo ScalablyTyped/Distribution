@@ -10,7 +10,7 @@ trait Log extends js.Object {
   var blockNumber: Double
   var data: String
   var logIndex: Double
-  var topics: js.Array[String | js.Array[String]]
+  var topics: js.Array[String]
   var transactionHash: String
   var transactionIndex: Double
 }
@@ -23,7 +23,7 @@ object Log {
     blockNumber: Double,
     data: String,
     logIndex: Double,
-    topics: js.Array[String | js.Array[String]],
+    topics: js.Array[String],
     transactionHash: String,
     transactionIndex: Double
   ): Log = {

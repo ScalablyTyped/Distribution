@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "popmotion-pose" : "3.4.8"
+      "popmotion-pose" : "3.4.10"
     }
   ],
   "test-dependencies" : [
     {
-      "popmotion-pose" : "3.4.8"
+      "popmotion-pose" : "3.4.10"
     }
   ],
   "compile-devDependencies" : [

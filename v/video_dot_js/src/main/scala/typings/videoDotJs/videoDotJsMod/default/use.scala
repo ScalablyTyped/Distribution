@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object use extends js.Object {
   /**
-  	 * Register a middleware to a source type.
-  	 *
-  	 * @param type A string representing a MIME type.
-  	 * @param middleware A middleware factory that takes a player.
-  	 */
+    * Register a middleware to a source type.
+    *
+    * @param type A string representing a MIME type.
+    * @param middleware A middleware factory that takes a player.
+    */
   def apply(`type`: String, middleware: js.Function1[/* player */ Player, Middleware]): Unit = js.native
 }
 

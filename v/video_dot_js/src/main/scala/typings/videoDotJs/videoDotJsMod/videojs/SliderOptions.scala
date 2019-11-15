@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait SliderOptions extends ComponentOptions {
   /**
-  		 * Set property names to bar to match with the child Slider class is looking for
-  		 */
+    * Set property names to bar to match with the child Slider class is looking for
+    */
   var barName: js.UndefOr[String] = js.undefined
   /**
-  		 * Set a horizontal or vertical class on the slider depending on the slider type
-  		 */
+    * Set a horizontal or vertical class on the slider depending on the slider type
+    */
   var vertical: js.UndefOr[Boolean] = js.undefined
 }
 

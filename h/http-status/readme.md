@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-status
 
-Typings are for version 1.4.0
+Typings are for version 1.4.1
 
 ## Library description:
 Interact with HTTP status code

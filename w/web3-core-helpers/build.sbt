@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "web3-core-helpers"
-version := "1.2.2-e7d0e2"
+version := "1.2.3-49a95b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 trait ClientStorageAPI extends js.Object {
   def getAsync(key: String): js.Promise[_]
-   // remember that any could be undefined
   def setAsync(key: String, value: js.Any): js.Promise[Unit]
 }
 

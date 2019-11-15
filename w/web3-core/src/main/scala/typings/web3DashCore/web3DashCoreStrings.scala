@@ -1,5 +1,6 @@
 package typings.web3DashCore
 
+import typings.web3DashCore.web3DashCoreMod._BlockNumber
 import typings.web3DashCore.web3DashCoreMod.chain
 import typings.web3DashCore.web3DashCoreMod.hardfork
 import scala.scalajs.js
@@ -23,6 +24,9 @@ object web3DashCoreStrings {
   sealed trait dao extends hardfork
   
   @js.native
+  sealed trait earliest extends _BlockNumber
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -38,7 +42,13 @@ object web3DashCoreStrings {
   sealed trait kovan extends chain
   
   @js.native
+  sealed trait latest extends _BlockNumber
+  
+  @js.native
   sealed trait mainnet extends chain
+  
+  @js.native
+  sealed trait pending extends _BlockNumber
   
   @js.native
   sealed trait petersburg extends hardfork
@@ -72,6 +82,8 @@ object web3DashCoreStrings {
   @scala.inline
   def dao: dao = "dao".asInstanceOf[dao]
   @scala.inline
+  def earliest: earliest = "earliest".asInstanceOf[earliest]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def goerli: goerli = "goerli".asInstanceOf[goerli]
@@ -82,7 +94,11 @@ object web3DashCoreStrings {
   @scala.inline
   def kovan: kovan = "kovan".asInstanceOf[kovan]
   @scala.inline
+  def latest: latest = "latest".asInstanceOf[latest]
+  @scala.inline
   def mainnet: mainnet = "mainnet".asInstanceOf[mainnet]
+  @scala.inline
+  def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline
   def petersburg: petersburg = "petersburg".asInstanceOf[petersburg]
   @scala.inline

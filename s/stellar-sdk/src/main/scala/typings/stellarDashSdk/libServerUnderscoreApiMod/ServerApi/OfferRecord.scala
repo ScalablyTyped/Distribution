@@ -10,7 +10,7 @@ trait OfferRecord
   extends BaseResponse[scala.Nothing] {
   var amount: String
   var buying: OfferAsset
-  var id: String
+  var id: Double | String
   var last_modified_ledger: Double
   var last_modified_time: String
   var paging_token: String
@@ -28,7 +28,7 @@ object OfferRecord {
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     amount: String,
     buying: OfferAsset,
-    id: String,
+    id: Double | String,
     last_modified_ledger: Double,
     last_modified_time: String,
     paging_token: String,
@@ -37,7 +37,7 @@ object OfferRecord {
     seller: String,
     selling: OfferAsset
   ): OfferRecord = {
-    val __obj = js.Dynamic.literal(_links = _links, amount = amount, buying = buying, id = id, last_modified_ledger = last_modified_ledger, last_modified_time = last_modified_time, paging_token = paging_token, price = price, price_r = price_r, seller = seller, selling = selling)
+    val __obj = js.Dynamic.literal(_links = _links, amount = amount, buying = buying, id = id.asInstanceOf[js.Any], last_modified_ledger = last_modified_ledger, last_modified_time = last_modified_time, paging_token = paging_token, price = price, price_r = price_r, seller = seller, selling = selling)
   
     __obj.asInstanceOf[OfferRecord]
   }

@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageFilters extends js.Object {
-  var contrast: js.UndefOr[Double] = js.undefined
-  var exposure: js.UndefOr[Double] = js.undefined
-  var highlights: js.UndefOr[Double] = js.undefined
-  var saturation: js.UndefOr[Double] = js.undefined
-  var shadows: js.UndefOr[Double] = js.undefined
-  var temperature: js.UndefOr[Double] = js.undefined
-  var tint: js.UndefOr[Double] = js.undefined
+  val contrast: js.UndefOr[Double] = js.undefined
+  val exposure: js.UndefOr[Double] = js.undefined
+  val highlights: js.UndefOr[Double] = js.undefined
+  val saturation: js.UndefOr[Double] = js.undefined
+  val shadows: js.UndefOr[Double] = js.undefined
+  val temperature: js.UndefOr[Double] = js.undefined
+  val tint: js.UndefOr[Double] = js.undefined
 }
 
 object ImageFilters {

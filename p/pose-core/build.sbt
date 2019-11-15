@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pose-core"
-version := "2.1.0-b86353"
+version := "2.1.1-f878ca"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

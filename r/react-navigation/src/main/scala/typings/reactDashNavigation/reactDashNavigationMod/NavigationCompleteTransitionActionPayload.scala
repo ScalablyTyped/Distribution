@@ -6,13 +6,15 @@ import scala.scalajs.js.annotation._
 
 trait NavigationCompleteTransitionActionPayload extends js.Object {
   var key: js.UndefOr[String] = js.undefined
+  var toChildKey: js.UndefOr[String] = js.undefined
 }
 
 object NavigationCompleteTransitionActionPayload {
   @scala.inline
-  def apply(key: String = null): NavigationCompleteTransitionActionPayload = {
+  def apply(key: String = null, toChildKey: String = null): NavigationCompleteTransitionActionPayload = {
     val __obj = js.Dynamic.literal()
     if (key != null) __obj.updateDynamic("key")(key)
+    if (toChildKey != null) __obj.updateDynamic("toChildKey")(toChildKey)
     __obj.asInstanceOf[NavigationCompleteTransitionActionPayload]
   }
 }

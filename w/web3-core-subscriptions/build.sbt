@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "web3-core-subscriptions"
-version := "1.2.2-bf1389"
+version := "1.2.3-2b90f0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,6 +10,7 @@ import typings.stripe.stripeMod.coupons.IDiscount
 import typings.stripe.stripeMod.customerTaxIds.ITaxIdCreationOptions
 import typings.stripe.stripeMod.customers.ICustomer
 import typings.stripe.stripeMod.paymentIntents.IPaymentIntent
+import typings.stripe.stripeMod.paymentMethods.IPaymentMethod
 import typings.stripe.stripeMod.subscriptions.ISubscription
 import typings.stripe.stripeMod.taxRates.ITaxAmount
 import typings.stripe.stripeMod.taxRates.ITaxRate
@@ -77,7 +78,7 @@ trait IInvoice extends IResourceObject {
     * @deprecated Stripe API Version 2019-03-14 changed the name of this property
     * @see application_fee_amount
     */
-  var application_fee: Double
+  var application_fee: js.UndefOr[Double] = js.undefined
   /**
     * The fee in pence that will be applied to the invoice and transferred to the application owner’s
     * Stripe account when the invoice is paid.
@@ -163,12 +164,12 @@ trait IInvoice extends IResourceObject {
     * The customer’s email. Until the invoice is finalized, this field will equal customer.email.
     * Once the invoice is finalized, this field will no longer be updated.
     */
-  var customer_email: String
+  var customer_email: String | Null
   /**
     * The customer’s name. Until the invoice is finalized, this field will equal customer.name.
     * Once the invoice is finalized, this field will no longer be updated.
     */
-  var customer_name: String
+  var customer_name: String | Null
   /**
     * The customer’s phone number. Until the invoice is finalized, this field will equal customer.phone.
     * Once the invoice is finalized, this field will no longer be updated.
@@ -178,12 +179,12 @@ trait IInvoice extends IResourceObject {
     * The customer’s shipping information. Until the invoice is finalized, this field will equal customer.shipping.
     * Once the invoice is finalized, this field will no longer be updated.
     */
-  var customer_shipping: IShippingInformation
+  var customer_shipping: IShippingInformation | Null
   /**
     * The customer’s tax exempt status. Until the invoice is finalized, this field will equal customer.tax_exempt.
     * Once the invoice is finalized, this field will no longer be updated.
     */
-  var customer_tax_exempt: String
+  var customer_tax_exempt: String | Null
   /**
     * The customer’s tax IDs. Until the invoice is finalized, this field will contain the same tax IDs as customer.tax_ids.
     * Once the invoice is finalized, this field will no longer be updated.
@@ -198,7 +199,7 @@ trait IInvoice extends IResourceObject {
     * If not set, defaults to the subscription’s default payment method, if any, or to the default payment method in
     * the customer’s invoice settings.
     */
-  var default_payment_method: String | Null
+  var default_payment_method: String | IPaymentMethod | Null
   /**
     * ID of the default payment source for the invoice. It must belong to the customer
     * associated with the invoice and be in a chargeable state. If not set, defaults to
@@ -327,7 +328,7 @@ trait IInvoice extends IResourceObject {
   /**
     * Only set for upcoming invoices that preview prorations. The time used to calculate prorations.
     */
-  var subscription_proration_date: Double
+  var subscription_proration_date: js.UndefOr[Double | Null] = js.undefined
   /**
     * Total of all subscriptions, invoice items, and prorations on the invoice before any discount is applied
     */
@@ -347,7 +348,7 @@ trait IInvoice extends IResourceObject {
     * If `billing_reason` is set to `subscription_threshold` this returns more information
     * on which threshold rules triggered the invoice.
     */
-  var threshold_reason: IThresholdReason
+  var threshold_reason: js.UndefOr[IThresholdReason] = js.undefined
   /**
     * Total after discount
     */
@@ -372,7 +373,6 @@ object IInvoice {
     amount_due: Double,
     amount_paid: Double,
     amount_remaining: Double,
-    application_fee: Double,
     application_fee_amount: Double,
     attempt_count: Double,
     attempted: Boolean,
@@ -382,10 +382,6 @@ object IInvoice {
     created: Double,
     currency: String,
     customer: String | ICustomer,
-    customer_email: String,
-    customer_name: String,
-    customer_shipping: IShippingInformation,
-    customer_tax_exempt: String,
     customer_tax_ids: js.Array[ITaxIdCreationOptions],
     default_tax_rates: js.Array[ITaxRate],
     id: String,
@@ -402,18 +398,21 @@ object IInvoice {
     starting_balance: Double,
     status: draft | open | paid | uncollectible | void,
     status_transitions: IStatusTransitions,
-    subscription_proration_date: Double,
     subtotal: Double,
-    threshold_reason: IThresholdReason,
     total: Double,
+    application_fee: Int | Double = null,
     charge: String | ICharge = null,
     closed: js.UndefOr[Boolean] = js.undefined,
     collection_method: charge_automatically | send_invoice = null,
     custom_fields: js.Array[ICustomField] = null,
     customer_address: IAddress = null,
+    customer_email: String = null,
+    customer_name: String = null,
     customer_phone: String = null,
+    customer_shipping: IShippingInformation = null,
+    customer_tax_exempt: String = null,
     date: Int | Double = null,
-    default_payment_method: String = null,
+    default_payment_method: String | IPaymentMethod = null,
     default_source: String = null,
     description: String = null,
     discount: IDiscount = null,
@@ -428,21 +427,28 @@ object IInvoice {
     receipt_number: String = null,
     statement_descriptor: String = null,
     subscription: String | ISubscription = null,
+    subscription_proration_date: Int | Double = null,
     tax: Int | Double = null,
     tax_percent: Int | Double = null,
+    threshold_reason: IThresholdReason = null,
     total_tax_amounts: js.Array[ITaxAmount] = null,
     webhooks_delivered_at: Int | Double = null
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(account_country = account_country, account_name = account_name, amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], created = created, currency = currency, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_shipping = customer_shipping, customer_tax_exempt = customer_tax_exempt, customer_tax_ids = customer_tax_ids, default_tax_rates = default_tax_rates, id = id, lines = lines, livemode = livemode, metadata = metadata, number = number, paid = paid, period_end = period_end, period_start = period_start, post_payment_credit_notes_amount = post_payment_credit_notes_amount, pre_payment_credit_notes_amount = pre_payment_credit_notes_amount, starting_balance = starting_balance, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total)
+    val __obj = js.Dynamic.literal(account_country = account_country, account_name = account_name, amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], created = created, currency = currency, customer = customer.asInstanceOf[js.Any], customer_tax_ids = customer_tax_ids, default_tax_rates = default_tax_rates, id = id, lines = lines, livemode = livemode, metadata = metadata, number = number, paid = paid, period_end = period_end, period_start = period_start, post_payment_credit_notes_amount = post_payment_credit_notes_amount, pre_payment_credit_notes_amount = pre_payment_credit_notes_amount, starting_balance = starting_balance, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subtotal = subtotal, total = total)
     __obj.updateDynamic("object")(`object`)
+    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
     if (charge != null) __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
     if (collection_method != null) __obj.updateDynamic("collection_method")(collection_method.asInstanceOf[js.Any])
     if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields)
     if (customer_address != null) __obj.updateDynamic("customer_address")(customer_address)
+    if (customer_email != null) __obj.updateDynamic("customer_email")(customer_email)
+    if (customer_name != null) __obj.updateDynamic("customer_name")(customer_name)
     if (customer_phone != null) __obj.updateDynamic("customer_phone")(customer_phone)
+    if (customer_shipping != null) __obj.updateDynamic("customer_shipping")(customer_shipping)
+    if (customer_tax_exempt != null) __obj.updateDynamic("customer_tax_exempt")(customer_tax_exempt)
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method)
+    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method.asInstanceOf[js.Any])
     if (default_source != null) __obj.updateDynamic("default_source")(default_source)
     if (description != null) __obj.updateDynamic("description")(description)
     if (discount != null) __obj.updateDynamic("discount")(discount)
@@ -457,8 +463,10 @@ object IInvoice {
     if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (subscription_proration_date != null) __obj.updateDynamic("subscription_proration_date")(subscription_proration_date.asInstanceOf[js.Any])
     if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
+    if (threshold_reason != null) __obj.updateDynamic("threshold_reason")(threshold_reason)
     if (total_tax_amounts != null) __obj.updateDynamic("total_tax_amounts")(total_tax_amounts)
     if (webhooks_delivered_at != null) __obj.updateDynamic("webhooks_delivered_at")(webhooks_delivered_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoice]

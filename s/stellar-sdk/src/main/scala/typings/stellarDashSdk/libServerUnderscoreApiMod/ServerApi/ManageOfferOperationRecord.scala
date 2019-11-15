@@ -21,7 +21,7 @@ trait ManageOfferOperationRecord
   var buying_asset_code: js.UndefOr[String] = js.native
   var buying_asset_issuer: js.UndefOr[String] = js.native
   var buying_asset_type: AssetType = js.native
-  var offer_id: Double = js.native
+  var offer_id: Double | String = js.native
   var price: String = js.native
   var price_r: PriceR = js.native
   var selling_asset_code: js.UndefOr[String] = js.native

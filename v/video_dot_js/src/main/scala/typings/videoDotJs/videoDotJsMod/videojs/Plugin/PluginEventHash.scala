@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation._
 
 trait PluginEventHash extends js.Object {
   /**
-  			 * For basic plugins, the return value of the plugin function. For
-  			 * advanced plugins, the plugin instance on which the event is fired.
-  			 */
+    * For basic plugins, the return value of the plugin function. For
+    * advanced plugins, the plugin instance on which the event is fired.
+    */
   var instance: typings.videoDotJs.videoDotJsMod.videojs.Plugin
   /**
-  			 * The name of the plugin.
-  			 */
+    * The name of the plugin.
+    */
   var name: String
   /**
-  			 * For basic plugins, the plugin function. For advanced plugins, the
-  			 * plugin class/constructor.
-  			 */
+    * For basic plugins, the plugin function. For advanced plugins, the
+    * plugin class/constructor.
+    */
   var plugin: String
 }
 

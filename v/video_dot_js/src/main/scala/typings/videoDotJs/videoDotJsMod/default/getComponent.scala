@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Get a component class object by name
-	 *
-	 * @borrows Component.getComponent as getComponent
-	 */
+  * Get a component class object by name
+  *
+  * @borrows Component.getComponent as getComponent
+  */
 @JSImport("video.js", "getComponent")
 @js.native
 object getComponent

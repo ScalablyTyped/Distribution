@@ -3,6 +3,7 @@ package typings.web3DashShh.web3DashShhMod
 import org.scalablytyped.runtime.Instantiable0
 import typings.node.netMod.Socket
 import typings.std.Error
+import typings.web3DashCore.web3DashCoreMod.Extension
 import typings.web3DashCore.web3DashCoreMod.Providers
 import typings.web3DashCore.web3DashCoreMod.provider
 import typings.web3DashNet.web3DashNetMod.Network
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("web3-shh", "Shh")
 @js.native
-class Shh protected () extends js.Object {
+class Shh () extends js.Object {
   def this(provider: provider) = this()
   def this(provider: provider, net: Socket) = this()
   var BatchRequest: Instantiable0[typings.web3DashCore.web3DashCoreMod.BatchRequest] = js.native
@@ -30,6 +31,7 @@ class Shh protected () extends js.Object {
   def deleteMessageFilter(id: String, callback: js.Function2[/* error */ Error, /* result */ String, Unit]): js.Promise[Boolean] = js.native
   def deleteSymKey(id: String): js.Promise[Boolean] = js.native
   def deleteSymKey(id: String, callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]): js.Promise[Boolean] = js.native
+  def extend(extension: Extension): js.Any = js.native
   def generateSymKeyFromPassword(password: String): js.Promise[String] = js.native
   def generateSymKeyFromPassword(password: String, callback: js.Function2[/* error */ Error, /* key */ String, Unit]): js.Promise[String] = js.native
   def getFilterMessages(id: String): js.Promise[js.Array[Notification]] = js.native
@@ -80,6 +82,7 @@ class Shh protected () extends js.Object {
 @JSImport("web3-shh", "Shh")
 @js.native
 object Shh extends js.Object {
+  val givenProvider: js.Any = js.native
   val providers: Providers = js.native
 }
 

@@ -1,22 +1,20 @@
 package typings.reactDashNavigation
 
-import typings.reactDashNavigation.reactDashNavigationMod.NavigationParams
-import typings.reactDashNavigation.reactDashNavigationMod.NavigationRoute
-import typings.reactDashNavigation.reactDashNavigationMod.NavigationScreenProp
+import typings.reactDashNavigation.reactDashNavigationMod.NavigationScreenConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_NavigationOptions extends js.Object {
-  var navigationOptions: NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
+trait Anon_NavigationOptions[Options, NavigationScreenPropType] extends js.Object {
+  var navigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, _]] = js.undefined
 }
 
 object Anon_NavigationOptions {
   @scala.inline
-  def apply(navigationOptions: NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]): Anon_NavigationOptions = {
-    val __obj = js.Dynamic.literal(navigationOptions = navigationOptions)
-  
-    __obj.asInstanceOf[Anon_NavigationOptions]
+  def apply[Options, NavigationScreenPropType](navigationOptions: NavigationScreenConfig[Options, NavigationScreenPropType, _] = null): Anon_NavigationOptions[Options, NavigationScreenPropType] = {
+    val __obj = js.Dynamic.literal()
+    if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_NavigationOptions[Options, NavigationScreenPropType]]
   }
 }
 

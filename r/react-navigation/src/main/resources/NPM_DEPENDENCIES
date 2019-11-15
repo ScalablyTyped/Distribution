@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-navigation" : "4.0.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-navigation" : "4.0.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

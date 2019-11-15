@@ -5,28 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcue}
-		 */
+  * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttrackcue}
+  */
 trait TextTrackCue extends js.Object {
   /**
-  			 * The end time for this text track cue
-  			 */
+    * The end time for this text track cue
+    */
   var endTime: Double
   /**
-  			 * The unique id for this text track cue
-  			 */
+    * The unique id for this text track cue
+    */
   var id: String
   /**
-  			 * Pause when the end time is reached if true.
-  			 */
+    * Pause when the end time is reached if true.
+    */
   var pauseOnExit: Boolean
   /**
-  			 * The start time for this text track cue
-  			 */
+    * The start time for this text track cue
+    */
   var startTime: Double
   /**
-  			 * The text this cue is holding
-  			 */
+    * The text this cue is holding
+    */
   var text: String
 }
 

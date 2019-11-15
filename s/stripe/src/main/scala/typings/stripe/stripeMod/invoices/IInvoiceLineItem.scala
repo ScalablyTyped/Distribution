@@ -3,6 +3,8 @@ package typings.stripe.stripeMod.invoices
 import typings.stripe.stripeMod.IMetadata
 import typings.stripe.stripeMod.IResourceObject
 import typings.stripe.stripeMod.plans.IPlan
+import typings.stripe.stripeMod.taxRates.ITaxAmount
+import typings.stripe.stripeMod.taxRates.ITaxRate
 import typings.stripe.stripeStrings.invoiceitem
 import typings.stripe.stripeStrings.line_item
 import typings.stripe.stripeStrings.subscription
@@ -62,6 +64,14 @@ trait IInvoiceLineItem extends IResourceObject {
     */
   var subscription_item: String
   /**
+    * The amount of tax calculated per tax rate for this line item
+    */
+  var tax_amounts: js.Array[ITaxAmount]
+  /**
+    * The tax rates which apply to the line item.
+    */
+  var tax_rates: js.Array[ITaxRate]
+  /**
     * A string identifying the type of the source of this line item, either an invoiceitem or a subscription
     */
   var `type`: invoiceitem | subscription
@@ -84,9 +94,11 @@ object IInvoiceLineItem {
     quantity: Double,
     subscription: String,
     subscription_item: String,
+    tax_amounts: js.Array[ITaxAmount],
+    tax_rates: js.Array[ITaxRate],
     `type`: invoiceitem | subscription
   ): IInvoiceLineItem = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription, subscription_item = subscription_item)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription, subscription_item = subscription_item, tax_amounts = tax_amounts, tax_rates = tax_rates)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceLineItem]

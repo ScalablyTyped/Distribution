@@ -21,7 +21,7 @@ trait GeocodeProperties extends GeocodeFeature {
   /**
     * The ISO 3166-1 country and ISO 3166-2 region code for the returned feature.
     */
-  var short_coide: String
+  var short_code: String
   /**
     * A formatted string of the telephone number for the returned  poi feature.
     */
@@ -46,7 +46,7 @@ object GeocodeProperties {
     place_type: js.Array[String],
     properties: GeocodeProperties,
     relevance: Double,
-    short_coide: String,
+    short_code: String,
     text: String,
     `type`: String,
     address: String = null,
@@ -57,7 +57,7 @@ object GeocodeProperties {
     tel: String = null,
     wikidata: String = null
   ): GeocodeProperties = {
-    val __obj = js.Dynamic.literal(center = center, context = context, geometry = geometry, id = id, language = language, matching_place_name = matching_place_name, matching_text = matching_text, place_name = place_name, place_type = place_type, properties = properties, relevance = relevance, short_coide = short_coide, text = text)
+    val __obj = js.Dynamic.literal(center = center, context = context, geometry = geometry, id = id, language = language, matching_place_name = matching_place_name, matching_text = matching_text, place_name = place_name, place_type = place_type, properties = properties, relevance = relevance, short_code = short_code, text = text)
     __obj.updateDynamic("type")(`type`)
     if (address != null) __obj.updateDynamic("address")(address)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox)

@@ -7,8 +7,10 @@ import typings.stripe.stripeMod.IResourceObject
 import typings.stripe.stripeMod.coupons.IDiscount
 import typings.stripe.stripeMod.customers.ICustomer
 import typings.stripe.stripeMod.invoices.IInvoice
+import typings.stripe.stripeMod.paymentMethods.IPaymentMethod
 import typings.stripe.stripeMod.plans.IPlan
 import typings.stripe.stripeMod.subscriptionItems.ISubscriptionItem
+import typings.stripe.stripeMod.taxRates.ITaxRate
 import typings.stripe.stripeStrings.subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -85,13 +87,18 @@ trait ISubscription extends IResourceObject {
     * ID of the default payment method for the subscription. It must belong to the customer associated with the subscription.
     * If not set, invoices will use the default payment method in the customer’s invoice settings. [Expandable]
     */
-  var default_payment_method: String | Null
+  var default_payment_method: String | IPaymentMethod | Null
   /**
     * ID of the default payment source for the subscription.
     * It must belong to the customer associated with the subscription and be in a chargeable state.
     * If not set, defaults to the customer’s default source. [Expandable]
     */
   var default_source: String | Null
+  /**
+    * The tax rates that will apply to any subscription item that does not have tax_rates set.
+    * Invoices created will have their default_tax_rates populated from the subscription.
+    */
+  var default_tax_rates: js.Array[ITaxRate]
   /**
     * Describes the current discount applied to this subscription, if there is one. When billing, a discount applied to a
     * subscription overrides a discount applied on a customer-wide basis.
@@ -195,6 +202,7 @@ object ISubscription {
     current_period_end: Double,
     current_period_start: Double,
     customer: String | ICustomer,
+    default_tax_rates: js.Array[ITaxRate],
     id: String,
     items: IList[ISubscriptionItem],
     livemode: Boolean,
@@ -208,7 +216,7 @@ object ISubscription {
     cancel_at: Int | Double = null,
     canceled_at: Int | Double = null,
     days_until_due: Int | Double = null,
-    default_payment_method: String = null,
+    default_payment_method: String | IPaymentMethod = null,
     default_source: String = null,
     discount: IDiscount = null,
     ended_at: Int | Double = null,
@@ -219,14 +227,14 @@ object ISubscription {
     trial_end: Int | Double = null,
     trial_start: Int | Double = null
   ): ISubscription = {
-    val __obj = js.Dynamic.literal(billing = billing, billing_cycle_anchor = billing_cycle_anchor, cancel_at_period_end = cancel_at_period_end, collection_method = collection_method, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], id = id, items = items, livemode = livemode, metadata = metadata, start = start, start_date = start_date, status = status)
+    val __obj = js.Dynamic.literal(billing = billing, billing_cycle_anchor = billing_cycle_anchor, cancel_at_period_end = cancel_at_period_end, collection_method = collection_method, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], default_tax_rates = default_tax_rates, id = id, items = items, livemode = livemode, metadata = metadata, start = start, start_date = start_date, status = status)
     __obj.updateDynamic("object")(`object`)
     if (application_fee_percent != null) __obj.updateDynamic("application_fee_percent")(application_fee_percent.asInstanceOf[js.Any])
     if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds)
     if (cancel_at != null) __obj.updateDynamic("cancel_at")(cancel_at.asInstanceOf[js.Any])
     if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
     if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
-    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method)
+    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method.asInstanceOf[js.Any])
     if (default_source != null) __obj.updateDynamic("default_source")(default_source)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (ended_at != null) __obj.updateDynamic("ended_at")(ended_at.asInstanceOf[js.Any])

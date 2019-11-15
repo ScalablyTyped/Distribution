@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QueryRendererProps[TOperation /* <: OperationType */] extends js.Object {
-  var environment: typings.relayDashRuntime.relayDashRuntimeMod.Environment
+  var environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment
   var query: js.UndefOr[GraphQLTaggedNode | Null] = js.undefined
   var variables: /* import warning: ImportType.apply Failed type conversion: TOperation['variables'] */ js.Any
   def render(renderProps: Anon_Error[TOperation]): ReactNode
@@ -18,7 +18,7 @@ trait QueryRendererProps[TOperation /* <: OperationType */] extends js.Object {
 object QueryRendererProps {
   @scala.inline
   def apply[TOperation /* <: OperationType */](
-    environment: typings.relayDashRuntime.relayDashRuntimeMod.Environment,
+    environment: typings.relayDashRuntime.libStoreRelayStoreTypesMod.Environment,
     render: Anon_Error[TOperation] => ReactNode,
     variables: /* import warning: ImportType.apply Failed type conversion: TOperation['variables'] */ js.Any,
     query: GraphQLTaggedNode = null

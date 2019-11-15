@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stylefire"
-version := "4.1.4-be1d98"
+version := "7.0.1-347cf2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

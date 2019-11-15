@@ -14,21 +14,25 @@ trait StringifyOptions extends js.Object {
   	@default 'none'
   	- `bracket`: Serialize arrays using bracket representation:
   		```
+  		import queryString = require('query-string');
   		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'});
   		//=> 'foo[]=1&foo[]=2&foo[]=3'
   		```
   	- `index`: Serialize arrays using index representation:
   		```
+  		import queryString = require('query-string');
   		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
   		//=> 'foo[0]=1&foo[1]=2&foo[2]=3'
   		```
   	- `comma`: Serialize arrays by separating elements with comma:
   		```
+  		import queryString = require('query-string');
   		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
   		//=> 'foo=1,2,3'
   		```
   	- `none`: Serialize arrays by using duplicate keys:
   		```
+  		import queryString = require('query-string');
   		queryString.stringify({foo: [1, 2, 3]});
   		//=> 'foo=1&foo=2&foo=3'
   		```
@@ -40,16 +44,39 @@ trait StringifyOptions extends js.Object {
   	*/
   val encode: js.UndefOr[Boolean] = js.undefined
   /**
+  	Skip keys with `null` as the value.
+  	Note that keys with `undefined` as the value are always skipped.
+  	@default false
+  	@example
+  	```
+  	import queryString = require('query-string');
+  	queryString.stringify({a: 1, b: undefined, c: null, d: 4}, {
+  		skipNull: true
+  	});
+  	//=> 'a=1&d=4'
+  	queryString.stringify({a: undefined, b: null}, {
+  		skipNull: true
+  	});
+  	//=> ''
+  	```
+  	*/
+  val skipNull: js.UndefOr[Boolean] = js.undefined
+  /**
   	Supports both `Function` as a custom sorting function or `false` to disable sorting.
   	If omitted, keys are sorted using `Array#sort`, which means, converting them to strings and comparing strings in Unicode code point order.
   	@default true
   	@example
   	```
+  	import queryString = require('query-string');
   	const order = ['c', 'a', 'b'];
   	queryString.stringify({a: 1, b: 2, c: 3}, {
   		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
   	});
   	//=> 'c=3&a=1&b=2'
+  	```
+  	@example
+  	```
+  	import queryString = require('query-string');
   	queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
   	//=> 'b=1&c=2&a=3'
   	```
@@ -67,12 +94,14 @@ object StringifyOptions {
   def apply(
     arrayFormat: bracket | index | comma | none = null,
     encode: js.UndefOr[Boolean] = js.undefined,
+    skipNull: js.UndefOr[Boolean] = js.undefined,
     sort: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false` = null,
     strict: js.UndefOr[Boolean] = js.undefined
   ): StringifyOptions = {
     val __obj = js.Dynamic.literal()
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode)
+    if (!js.isUndefined(skipNull)) __obj.updateDynamic("skipNull")(skipNull)
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[StringifyOptions]

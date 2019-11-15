@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object parseUrl extends js.Object {
   /**
-  	 * Resolve and parse the elements of a URL.
-  	 *
-  	 * @param url
-  	 *         The url to parse
-  	 *
-  	 * @return	An object of url details
-  	 */
+    * Resolve and parse the elements of a URL.
+    *
+    * @param url
+    *         The url to parse
+    *
+    * @return	An object of url details
+    */
   def apply(url: String): URLObject = js.native
 }
 

@@ -3,7 +3,6 @@ package typings.atUifabricUtilities
 import typings.atUifabricUtilities.atUifabricUtilitiesStrings.`data-portal-element`
 import typings.atUifabricUtilities.libDomIVirtualElementMod.IVirtualElement
 import typings.atUifabricUtilities.libIRectangleMod.IRectangle
-import typings.react.reactMod.Component
 import typings.std.Document
 import typings.std.Element
 import typings.std.Event
@@ -31,7 +30,6 @@ object libDomMod extends js.Object {
   def getChildren(parent: HTMLElement): js.Array[HTMLElement] = js.native
   def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = js.native
   def getDocument(): js.UndefOr[Document] = js.native
-  def getDocument(rootElement: Component[js.Object, js.Object, _]): js.UndefOr[Document] = js.native
   def getDocument(rootElement: HTMLElement): js.UndefOr[Document] = js.native
   def getParent(child: HTMLElement): HTMLElement | Null = js.native
   def getParent(child: HTMLElement, allowVirtualParents: Boolean): HTMLElement | Null = js.native
@@ -40,7 +38,6 @@ object libDomMod extends js.Object {
   def getRect(element: Window): js.UndefOr[IRectangle] = js.native
   def getVirtualParent(child: HTMLElement): js.UndefOr[HTMLElement] = js.native
   def getWindow(): js.UndefOr[Window] = js.native
-  def getWindow(rootElement: Component[js.Object, js.Object, _]): js.UndefOr[Window] = js.native
   def getWindow(rootElement: Element): js.UndefOr[Window] = js.native
   def isVirtualElement(element: IVirtualElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ Boolean = js.native
   def isVirtualElement(element: HTMLElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ Boolean = js.native

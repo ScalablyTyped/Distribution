@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/analytics" : "0.2.5"
+      "@firebase/analytics" : "0.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/analytics" : "0.2.5"
+      "@firebase/analytics" : "0.2.6"
     }
   ],
   "compile-devDependencies" : [

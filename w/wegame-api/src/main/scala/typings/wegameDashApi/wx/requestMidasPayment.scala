@@ -1,6 +1,6 @@
 package typings.wegameDashApi.wx
 
-import typings.wegameDashApi.Anon_0
+import typings.wegameDashApi.Anon_01
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object requestMidasPayment extends js.Object {
   /**
     * 发起米大师支付
     */
-  def apply(param: Anon_0): Unit = js.native
+  def apply(param: Anon_01): Unit = js.native
 }
 

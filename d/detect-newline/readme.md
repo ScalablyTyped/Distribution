@@ -1,7 +1,7 @@
 
 # Scala.js typings for detect-newline
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Detect the dominant newline character of a string

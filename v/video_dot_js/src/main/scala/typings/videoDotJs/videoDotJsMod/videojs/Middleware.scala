@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Middleware extends js.Object {
   /**
-  		 *
-  		 * @param src
-  		 * @param next
-  		 */
+    *
+    * @param src
+    * @param next
+    */
   def setSource(
     src: SourceObject,
     next: js.Function2[/* err */ js.Any, /* next */ js.Function1[/* src */ SourceObject, Unit], Unit]

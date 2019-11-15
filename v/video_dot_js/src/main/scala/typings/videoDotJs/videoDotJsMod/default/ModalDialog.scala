@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ModalDialog
   extends /**
-		 * Create an instance of this class.
-		 *
-		 * @param player
-		 *        The `Player` that this class should be attached to.
-		 *
-		 * @param [options]
-		 *        The key/value store of player options.
-		 */
+  * Create an instance of this class.
+  *
+  * @param player
+  *        The `Player` that this class should be attached to.
+  *
+  * @param [options]
+  *        The key/value store of player options.
+  */
 Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.ModalDialog]
      with Instantiable2[
       /* player */ Player, 

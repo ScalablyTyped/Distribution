@@ -15,11 +15,11 @@ object DrawerNavigationState {
     isDrawerOpen: Boolean,
     isTransitioning: Boolean,
     key: String,
-    params: NavigationParams,
-    routes: js.Array[NavigationRoute[NavigationParams]]
+    routes: js.Array[NavigationRoute[NavigationParams]],
+    params: NavigationParams = null
   ): DrawerNavigationState = {
-    val __obj = js.Dynamic.literal(index = index, isDrawerOpen = isDrawerOpen, isTransitioning = isTransitioning, key = key, params = params, routes = routes)
-  
+    val __obj = js.Dynamic.literal(index = index, isDrawerOpen = isDrawerOpen, isTransitioning = isTransitioning, key = key, routes = routes)
+    if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[DrawerNavigationState]
   }
 }

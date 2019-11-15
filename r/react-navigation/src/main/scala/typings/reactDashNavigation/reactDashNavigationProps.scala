@@ -6,26 +6,31 @@ import scala.scalajs.js.annotation._
 
 trait reactDashNavigationProps {
   @scala.inline
-  def DrawerItemsProps: typings.reactDashNavigation.reactDashNavigationMod.DrawerItemsProps.type = typings.reactDashNavigation.reactDashNavigationMod.DrawerItemsProps
-  type DrawerItemsProps = typings.reactDashNavigation.reactDashNavigationMod.DrawerItemsProps
-  @scala.inline
-  def HeaderProps: typings.reactDashNavigation.reactDashNavigationMod.HeaderProps.type = typings.reactDashNavigation.reactDashNavigationMod.HeaderProps
-  type HeaderProps = typings.reactDashNavigation.reactDashNavigationMod.HeaderProps
-  @scala.inline
-  def HeaderBackButtonProps: typings.reactDashNavigation.reactDashNavigationMod.HeaderBackButtonProps.type = typings.reactDashNavigation.reactDashNavigationMod.HeaderBackButtonProps
-  type HeaderBackButtonProps = typings.reactDashNavigation.reactDashNavigationMod.HeaderBackButtonProps
+  def FlatListProps: typings.reactDashNative.reactDashNativeMod.FlatListProps.type = typings.reactDashNative.reactDashNativeMod.FlatListProps
+  type FlatListProps[ItemT] = typings.reactDashNative.reactDashNativeMod.FlatListProps[ItemT]
   @scala.inline
   def NavigationEventsProps: typings.reactDashNavigation.reactDashNavigationMod.NavigationEventsProps.type = typings.reactDashNavigation.reactDashNavigationMod.NavigationEventsProps
   type NavigationEventsProps = typings.reactDashNavigation.reactDashNavigationMod.NavigationEventsProps
   @scala.inline
+  def NavigationProviderProps: typings.reactDashNavigation.Anon_Value.type = typings.reactDashNavigation.Anon_Value
+  type NavigationProviderProps = Anon_Value
+  @scala.inline
   def SafeAreaViewProps: typings.reactDashNavigation.reactDashNavigationMod.SafeAreaViewProps.type = typings.reactDashNavigation.reactDashNavigationMod.SafeAreaViewProps
   type SafeAreaViewProps = typings.reactDashNavigation.reactDashNavigationMod.SafeAreaViewProps
   @scala.inline
-  def TabBarBottomProps: typings.reactDashNavigation.reactDashNavigationMod.TabBarBottomProps.type = typings.reactDashNavigation.reactDashNavigationMod.TabBarBottomProps
-  type TabBarBottomProps = typings.reactDashNavigation.reactDashNavigationMod.TabBarBottomProps
+  def SceneViewProps: typings.reactDashNavigation.reactDashNavigationMod.SceneViewProps.type = typings.reactDashNavigation.reactDashNavigationMod.SceneViewProps
+  type SceneViewProps = typings.reactDashNavigation.reactDashNavigationMod.SceneViewProps
   @scala.inline
-  def TabBarTopProps: typings.reactDashNavigation.reactDashNavigationMod.TabBarTopProps.type = typings.reactDashNavigation.reactDashNavigationMod.TabBarTopProps
-  type TabBarTopProps = typings.reactDashNavigation.reactDashNavigationMod.TabBarTopProps
-  type TransitionerProps = typings.reactDashNavigation.reactDashNavigationMod.TransitionerProps
+  def ScrollViewProps: typings.reactDashNative.reactDashNativeMod.ScrollViewProps.type = typings.reactDashNative.reactDashNativeMod.ScrollViewProps
+  type ScrollViewProps = typings.reactDashNative.reactDashNativeMod.ScrollViewProps
+  @scala.inline
+  def SectionListProps: typings.reactDashNative.reactDashNativeMod.SectionListProps.type = typings.reactDashNative.reactDashNativeMod.SectionListProps
+  type SectionListProps[ItemT] = typings.reactDashNative.reactDashNativeMod.SectionListProps[ItemT]
+  @scala.inline
+  def SectionListClsProps: typings.reactDashNative.reactDashNativeMod.SectionListProps.type = typings.reactDashNative.reactDashNativeMod.SectionListProps
+  type SectionListClsProps[ItemT] = typings.reactDashNative.reactDashNativeMod.SectionListProps[ItemT]
+  type ThemedStatusBarProps = typings.reactDashNavigation.reactDashNavigationMod.ThemedStatusBarProps
+  type ThemedTextProps = typings.reactDashNavigation.reactDashNavigationMod.ThemedTextProps
+  type ThemedTextInputProps = typings.reactDashNavigation.reactDashNavigationMod.ThemedTextInputProps
 }
 

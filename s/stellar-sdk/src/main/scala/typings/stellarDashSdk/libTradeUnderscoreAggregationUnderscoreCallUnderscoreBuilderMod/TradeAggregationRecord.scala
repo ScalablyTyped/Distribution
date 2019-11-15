@@ -14,8 +14,8 @@ trait TradeAggregationRecord
   var high: String
   var low: String
   var open: String
-  var timestamp: String
-  var trade_count: Double
+  var timestamp: Double | String
+  var trade_count: Double | String
 }
 
 object TradeAggregationRecord {
@@ -31,10 +31,10 @@ object TradeAggregationRecord {
     high: String,
     low: String,
     open: String,
-    timestamp: String,
-    trade_count: Double
+    timestamp: Double | String,
+    trade_count: Double | String
   ): TradeAggregationRecord = {
-    val __obj = js.Dynamic.literal(_links = _links, avg = avg, base_volume = base_volume, close = close, counter_volume = counter_volume, high = high, low = low, open = open, timestamp = timestamp, trade_count = trade_count)
+    val __obj = js.Dynamic.literal(_links = _links, avg = avg, base_volume = base_volume, close = close, counter_volume = counter_volume, high = high, low = low, open = open, timestamp = timestamp.asInstanceOf[js.Any], trade_count = trade_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TradeAggregationRecord]
   }

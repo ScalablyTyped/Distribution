@@ -39,6 +39,7 @@ import typings.stripe.stripeMod.resources.Transfers
 import typings.stripe.stripeMod.resources.UsageRecordSummaries
 import typings.stripe.stripeMod.resources.UsageRecords
 import typings.stripe.stripeMod.resources.WebHooks
+import typings.stripe.stripeMod.resources.WebhookEndpoints
 import typings.stripe.stripeStrings.request
 import typings.stripe.stripeStrings.response
 import scala.scalajs.js
@@ -98,6 +99,7 @@ trait Stripe extends js.Object {
   var transfers: Transfers = js.native
   var usageRecordSummaries: UsageRecordSummaries = js.native
   var usageRecords: UsageRecords = js.native
+  var webhookEndpoints: WebhookEndpoints = js.native
   var webhooks: WebHooks = js.native
   def getClientUserAgent(response: js.Function1[/* userAgent */ String, Unit]): Unit = js.native
   def getConstant(c: String): js.Any = js.native

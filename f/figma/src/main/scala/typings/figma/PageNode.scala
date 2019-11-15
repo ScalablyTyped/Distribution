@@ -11,6 +11,7 @@ trait PageNode
      with ChildrenMixin
      with ExportMixin
      with BaseNode {
+  var backgrounds: js.Array[Paint] = js.native
   var guides: js.Array[Guide] = js.native
   var selection: js.Array[SceneNode] = js.native
   val `type`: PAGE = js.native

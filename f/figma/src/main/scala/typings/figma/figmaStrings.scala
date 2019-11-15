@@ -309,6 +309,27 @@ object figmaStrings {
   @js.native
   sealed trait Y extends js.Object
   
+  @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
+  sealed trait close extends js.Object
+  
+  @js.native
+  sealed trait currentpagechange extends js.Object
+  
+  @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
+  sealed trait last extends js.Object
+  
+  @js.native
+  sealed trait message extends js.Object
+  
+  @js.native
+  sealed trait selectionchange extends js.Object
+  
   @scala.inline
   def `1DOT0DOT0`: `1DOT0DOT0` = "1.0.0".asInstanceOf[`1DOT0DOT0`]
   @scala.inline
@@ -507,5 +528,19 @@ object figmaStrings {
   def X: X = "X".asInstanceOf[X]
   @scala.inline
   def Y: Y = "Y".asInstanceOf[Y]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def close: close = "close".asInstanceOf[close]
+  @scala.inline
+  def currentpagechange: currentpagechange = "currentpagechange".asInstanceOf[currentpagechange]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
+  def last: last = "last".asInstanceOf[last]
+  @scala.inline
+  def message: message = "message".asInstanceOf[message]
+  @scala.inline
+  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
 }
 

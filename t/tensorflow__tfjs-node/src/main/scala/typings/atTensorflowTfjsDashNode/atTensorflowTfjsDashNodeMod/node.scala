@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 
-import typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod.MetaGraphInfo
+import typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod.MetaGraph
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.Empty
@@ -67,7 +67,7 @@ object node extends js.Object {
   @JSName("encodePng")
   var encodePng_Original: js.Function2[/* image */ Tensor3D, /* compression */ js.UndefOr[Double], js.Promise[Uint8Array]] = js.native
   @JSName("getMetaGraphsFromSavedModel")
-  var getMetaGraphsFromSavedModel_Original: js.Function1[/* path */ String, js.Promise[js.Array[MetaGraphInfo]]] = js.native
+  var getMetaGraphsFromSavedModel_Original: js.Function1[/* path */ String, js.Promise[js.Array[MetaGraph]]] = js.native
   @JSName("loadSavedModel")
   var loadSavedModel_Original: js.Function3[
     /* path */ String, 
@@ -148,7 +148,7 @@ object node extends js.Object {
   ): js.Promise[Uint8Array] = js.native
   def encodePng(image: Tensor3D): js.Promise[Uint8Array] = js.native
   def encodePng(image: Tensor3D, compression: Double): js.Promise[Uint8Array] = js.native
-  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraphInfo]] = js.native
+  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = js.native
   def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
   def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
   def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native

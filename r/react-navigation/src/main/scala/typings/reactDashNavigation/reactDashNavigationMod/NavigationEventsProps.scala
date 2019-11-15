@@ -30,7 +30,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigationEventsProps extends ViewProps {
-  var navigation: js.UndefOr[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]] = js.undefined
   var onDidBlur: js.UndefOr[NavigationEventCallback] = js.undefined
   var onDidFocus: js.UndefOr[NavigationEventCallback] = js.undefined
   var onWillBlur: js.UndefOr[NavigationEventCallback] = js.undefined
@@ -59,7 +58,6 @@ object NavigationEventsProps {
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     isTVSelectable: js.UndefOr[Boolean] = js.undefined,
     nativeID: String = null,
-    navigation: NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams] = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
@@ -118,7 +116,6 @@ object NavigationEventsProps {
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
-    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))

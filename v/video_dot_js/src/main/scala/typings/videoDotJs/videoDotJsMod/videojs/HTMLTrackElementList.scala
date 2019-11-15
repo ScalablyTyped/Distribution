@@ -7,12 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * The current list of {@link HtmlTrackElement}s.
-	 */
+  * The current list of {@link HtmlTrackElement}s.
+  */
 trait HTMLTrackElementList extends /* index */ NumberDictionary[HTMLTrackElement] {
   /**
-  		 * The current number of `Track`s in the this Trackist.
-  		 */
+    * The current number of `Track`s in the this Trackist.
+    */
   var length: Double
 }
 

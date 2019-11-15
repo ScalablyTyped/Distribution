@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation._
 
 trait URLObject extends js.Object {
   /**
-  			 * The hash of the url that was parsed.
-  			 */
+    * The hash of the url that was parsed.
+    */
   var hash: String
   /**
-  			 * The host of the url that was parsed.
-  			 */
+    * The host of the url that was parsed.
+    */
   var host: String
   /**
-  			 * The hostname of the url that was parsed.
-  			 */
+    * The hostname of the url that was parsed.
+    */
   var hostname: String
   /**
-  			 * The pathname of the url that was parsed.
-  			 */
+    * The pathname of the url that was parsed.
+    */
   var pathname: String
   /**
-  			 * The port of the url that was parsed.
-  			 */
+    * The port of the url that was parsed.
+    */
   var port: String
   /**
-  			 * The protocol of the url that was parsed.
-  			 */
+    * The protocol of the url that was parsed.
+    */
   var protocol: String
   /**
-  			 * The search query of the url that was parsed.
-  			 */
+    * The search query of the url that was parsed.
+    */
   var search: String
 }
 

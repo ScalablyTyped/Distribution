@@ -34,6 +34,12 @@ trait TFJSBinding extends js.Object {
   def executeOp(opName: String, opAttrs: js.Array[TFEOpAttr], inputTensorIds: js.Array[Double], numOutputs: Double): js.Array[TensorMetadata]
   def isUsingGpuDevice(): Boolean
   def loadSavedModel(exportDir: String, tags: String): Double
+  def runSavedModel(
+    savedModelId: Double,
+    inputTensorIds: js.Array[Double],
+    inputOpNames: String,
+    outputOpNames: String
+  ): js.Array[TensorMetadata]
   def tensorDataSync(tensorId: Double): Float32Array | Int32Array | Uint8Array
 }
 
@@ -64,9 +70,10 @@ object TFJSBinding {
     executeOp: (String, js.Array[TFEOpAttr], js.Array[Double], Double) => js.Array[TensorMetadata],
     isUsingGpuDevice: () => Boolean,
     loadSavedModel: (String, String) => Double,
+    runSavedModel: (Double, js.Array[Double], String, String) => js.Array[TensorMetadata],
     tensorDataSync: Double => Float32Array | Int32Array | Uint8Array
   ): TFJSBinding = {
-    val __obj = js.Dynamic.literal(TFEOpAttr = TFEOpAttr, TF_ATTR_BOOL = TF_ATTR_BOOL, TF_ATTR_FLOAT = TF_ATTR_FLOAT, TF_ATTR_INT = TF_ATTR_INT, TF_ATTR_RESOURCE = TF_ATTR_RESOURCE, TF_ATTR_SHAPE = TF_ATTR_SHAPE, TF_ATTR_STRING = TF_ATTR_STRING, TF_ATTR_TYPE = TF_ATTR_TYPE, TF_BOOL = TF_BOOL, TF_COMPLEX64 = TF_COMPLEX64, TF_FLOAT = TF_FLOAT, TF_INT32 = TF_INT32, TF_INT64 = TF_INT64, TF_RESOURCE = TF_RESOURCE, TF_STRING = TF_STRING, TF_UINT8 = TF_UINT8, TF_Version = TF_Version, TensorMetadata = TensorMetadata, createTensor = js.Any.fromFunction3(createTensor), deleteSavedModel = js.Any.fromFunction1(deleteSavedModel), deleteTensor = js.Any.fromFunction1(deleteTensor), executeOp = js.Any.fromFunction4(executeOp), isUsingGpuDevice = js.Any.fromFunction0(isUsingGpuDevice), loadSavedModel = js.Any.fromFunction2(loadSavedModel), tensorDataSync = js.Any.fromFunction1(tensorDataSync))
+    val __obj = js.Dynamic.literal(TFEOpAttr = TFEOpAttr, TF_ATTR_BOOL = TF_ATTR_BOOL, TF_ATTR_FLOAT = TF_ATTR_FLOAT, TF_ATTR_INT = TF_ATTR_INT, TF_ATTR_RESOURCE = TF_ATTR_RESOURCE, TF_ATTR_SHAPE = TF_ATTR_SHAPE, TF_ATTR_STRING = TF_ATTR_STRING, TF_ATTR_TYPE = TF_ATTR_TYPE, TF_BOOL = TF_BOOL, TF_COMPLEX64 = TF_COMPLEX64, TF_FLOAT = TF_FLOAT, TF_INT32 = TF_INT32, TF_INT64 = TF_INT64, TF_RESOURCE = TF_RESOURCE, TF_STRING = TF_STRING, TF_UINT8 = TF_UINT8, TF_Version = TF_Version, TensorMetadata = TensorMetadata, createTensor = js.Any.fromFunction3(createTensor), deleteSavedModel = js.Any.fromFunction1(deleteSavedModel), deleteTensor = js.Any.fromFunction1(deleteTensor), executeOp = js.Any.fromFunction4(executeOp), isUsingGpuDevice = js.Any.fromFunction0(isUsingGpuDevice), loadSavedModel = js.Any.fromFunction2(loadSavedModel), runSavedModel = js.Any.fromFunction4(runSavedModel), tensorDataSync = js.Any.fromFunction1(tensorDataSync))
   
     __obj.asInstanceOf[TFJSBinding]
   }

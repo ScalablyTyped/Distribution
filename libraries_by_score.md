@@ -1639,6 +1639,7 @@
 | 0.7402207363599477 | [zen-observable](./z/zen-observable) | An Implementation of ES Observables
 | 0.7400876266309925 | [mem-fs-editor](./m/mem-fs-editor) | File edition helpers working on top of mem-fs
 | 0.740073158374648 | [uifabric__utilities](./u/uifabric__utilities) | Office UI Fabric utilities for building React comp
+| 0.7400257227316629 | [sade](./s/sade) | Smooth (CLI) operator 🎶
 | 0.7399375410230784 | [react-widgets](./r/react-widgets) | An à la carte set of polished, extensible, and acc
 | 0.7397940852258308 | [lodash_dot_foreachright](./l/lodash_dot_foreachright) | The lodash method _.forEachRight exported as a mod
 | 0.7397572603583152 | [throttleit](./t/throttleit) | Throttle a function
@@ -2576,6 +2577,7 @@
 | 0.6953359792491663 | [string-pixel-width](./s/string-pixel-width) | String pixel width measurement on the backend in J
 | 0.6953151474212332 | [critters-webpack-plugin](./c/critters-webpack-plugin) | Webpack plugin to inline critical CSS and lazy-loa
 | 0.6952982379487352 | [next-redux-saga](./n/next-redux-saga) | redux-saga HOC for Next.js
+| 0.6952635631359781 | [syslog-client](./s/syslog-client) | TCP and UDP syslog client RFC 5424 & RFC 3164
 | 0.6952539583804505 | [feathersjs__socket-common](./f/feathersjs__socket-commons) | Shared functionality for websocket providers
 | 0.6950950661922137 | [node-7z](./n/node-7z) | A Node.js wrapper for 7-Zip with platform binaries
 | 0.6950786492477865 | [chai-fs](./c/chai-fs) | Chai assertions for Node.js filesystem
@@ -2711,6 +2713,7 @@
 | 0.6899625126482175 | [koa-websocket](./k/koa-websocket) | Light wrapper around Koa providing a websocket mid
 | 0.6899396184385282 | [focus-within](./f/focus-within) | Style elements when they are focused or contain a 
 | 0.6899074872929442 | [webpack-blocks__typescrip](./w/webpack-blocks__typescript) | Webpack block for Typescript.
+| 0.6898816380102931 | [react-navigation__core](./r/react-navigation__core) | Core utilities for the react-navigation framework
 | 0.6898248654265831 | [hibp](./h/hibp) | A Promise-based API for querying the 'Have I been 
 | 0.6898233383170527 | [js-to-java](./j/js-to-java) | easy way to wrap js object to java object
 | 0.6897374246251107 | [react-vertical-timeline-c](./r/react-vertical-timeline-component) | Vertical timeline for React.js
@@ -3687,6 +3690,7 @@
 | 0.6526634131729199 | [react-slick](./r/react-slick) | React port of slick carousel
 | 0.652644421262202 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
 | 0.652553702151814 | [twig](./t/twig) | JS port of the Twig templating language.
+| 0.6525430853979566 | [set-link](./s/set-link) | Link header middleware for express with multiple v
 | 0.6524561224971386 | [json-rpc-ws](./j/json-rpc-ws) | json-rpc websocket transport
 | 0.6524111774761334 | [fnv-lite](./f/fnv-lite) | Small 128-bit FNV-1a library for the browser.
 | 0.6523580184320676 | [react-highlight_dot_js](./r/react-highlight_dot_js) | A lightweight React wrapper around the Highlight.j
@@ -3778,6 +3782,7 @@
 | 0.6477120032607364 | [react-form](./r/react-form) | React Form is a lightweight framework and utility 
 | 0.647644687069677 | [spdx-satisfies](./s/spdx-satisfies) | test whether SPDX expressions satisfy licensing cr
 | 0.6475873146396409 | [vue-scrollto](./v/vue-scrollto) | Adds a directive that listens for click events and
+| 0.6475859654722604 | [promise-hash](./p/promise-hash) | Adds an RSVP-like Promise.hash() method for resolv
 | 0.6475800692688651 | [tinycopy](./t/tinycopy) | Tiny library for clipboard copy.
 | 0.6475378068552022 | [ember-test-helpers](./e/ember-test-helpers) | Helpers for testing Ember.js applications
 | 0.6475256909326339 | [p-loading](./p/p-loading) | Loading mask plugin for jQuery.
@@ -4007,6 +4012,7 @@
 | 0.6358015358209748 | [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate
 | 0.6357751906187945 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
 | 0.6357097208651624 | [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider
+| 0.6356132140607906 | [react-native-screens](./r/react-native-screens) | First incomplete navigation solution for your reac
 | 0.6356053132776762 | [highcharts](./h/highcharts) | JavaScript charting framework
 | 0.6355517503766868 | [rollup-plugin-buble](./r/rollup-plugin-buble) | Compile ES2015 with buble
 | 0.635311937633098 | [react-tagcloud](./r/react-tagcloud) | Tag/word cloud component for react
@@ -4198,6 +4204,7 @@
 | 0.6220778890905001 | [events_dot_once](./e/events_dot_once) | Polyfill for Node core events.once
 | 0.6220174260177542 | [node-xlsx](./n/node-xlsx) | NodeJS Excel files parser & builder
 | 0.6216961575255888 | [memoizee](./m/memoizee) | Memoize/cache function results
+| 0.6216155944060088 | [rollup-plugin-typescript2](./r/rollup-plugin-typescript2) | Seamless integration between Rollup and TypeScript
 | 0.6215890653627776 | [exceljs](./e/exceljs) | Excel Workbook Manager - Read and Write xlsx and c
 | 0.6214994963134599 | [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension
 | 0.6214677132305224 | [jupyterlab__pdf-extension](./j/jupyterlab__pdf-extension) | JupyterLab - PDF Viewer

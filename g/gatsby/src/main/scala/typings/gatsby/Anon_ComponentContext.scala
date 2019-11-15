@@ -7,14 +7,15 @@ import scala.scalajs.js.annotation._
 trait Anon_ComponentContext[TContext] extends js.Object {
   var component: String
   var context: TContext
+  var matchPath: js.UndefOr[String] = js.undefined
   var path: String
 }
 
 object Anon_ComponentContext {
   @scala.inline
-  def apply[TContext](component: String, context: TContext, path: String): Anon_ComponentContext[TContext] = {
+  def apply[TContext](component: String, context: TContext, path: String, matchPath: String = null): Anon_ComponentContext[TContext] = {
     val __obj = js.Dynamic.literal(component = component, context = context.asInstanceOf[js.Any], path = path)
-  
+    if (matchPath != null) __obj.updateDynamic("matchPath")(matchPath)
     __obj.asInstanceOf[Anon_ComponentContext[TContext]]
   }
 }

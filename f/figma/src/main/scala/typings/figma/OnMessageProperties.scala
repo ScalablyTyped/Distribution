@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnMessageProperties extends js.Object {
-  var sourceOrigin: String
+  var origin: String
 }
 
 object OnMessageProperties {
   @scala.inline
-  def apply(sourceOrigin: String): OnMessageProperties = {
-    val __obj = js.Dynamic.literal(sourceOrigin = sourceOrigin)
+  def apply(origin: String): OnMessageProperties = {
+    val __obj = js.Dynamic.literal(origin = origin)
   
     __obj.asInstanceOf[OnMessageProperties]
   }

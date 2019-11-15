@@ -31,11 +31,30 @@ object esMod extends js.Object {
   class SettingDrawer ()
     extends typings.atAntDashDesignProDashLayout.esSettingDrawerMod.default
   
+  @js.native
+  class TopNavHeader ()
+    extends typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.TopNavHeader
+  
+  /**
+    * 🌃 Powerful and easy to use beautiful layout
+    * 🏄‍ Support multiple topics and layout types
+    * @param props
+    */
   val BasicLayout: FC[BasicLayoutProps] = js.native
   val DefaultFooter: FC[FooterProps] = js.native
+  /**
+    * This component can support contentWidth so you don't need to calculate the width
+    * contentWidth=Fixed, width will is 1200
+    * @param props
+    */
   val GridContent: SFC[GridContentProps] = js.native
   val PageHeaderWrapper: SFC[PageHeaderWrapperProps] = js.native
   val RouteContext: Context[RouteContextType] = js.native
+  /**
+    * 🌃 Powerful and easy to use beautiful layout
+    * 🏄‍ Support multiple topics and layout types
+    * @param props
+    */
   val default: FC[BasicLayoutProps] = js.native
   def getMenuData(routes: js.Array[Route]): Anon_Breadcrumb = js.native
   def getMenuData(

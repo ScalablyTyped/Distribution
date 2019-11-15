@@ -16,5 +16,5 @@ import scala.scalajs.js.annotation._
   - typings.reactDashNavigation.reactDashNavigationMod.NavigationPopToTopAction
   - typings.reactDashNavigation.reactDashNavigationMod.NavigationCompleteTransitionAction
 */
-trait NavigationStackAction extends NavigationAction
+trait NavigationStackAction extends _NavigationAction
 

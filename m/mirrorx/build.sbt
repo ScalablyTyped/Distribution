@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mirrorx"
-version := "0.2-dt-20190212Z-98644b"
+version := "0.2-dt-20190212Z-d9ff79"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
   "org.scalablytyped" %%% "react-redux" % "7.1-dt-20191018Z-f1ed5d",
-  "org.scalablytyped" %%% "react-router" % "5.1-dt-20191014Z-3a4233",
+  "org.scalablytyped" %%% "react-router" % "5.1-dt-20191113Z-0e312b",
   "org.scalablytyped" %%% "redux" % "4.0.4-ae4e73",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false

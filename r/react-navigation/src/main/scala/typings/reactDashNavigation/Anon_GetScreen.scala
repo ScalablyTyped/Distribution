@@ -1,21 +1,20 @@
 package typings.reactDashNavigation
 
-import typings.reactDashNavigation.reactDashNavigationMod.NavigationComponent
-import typings.reactDashNavigation.reactDashNavigationMod._NavigationScreenRouteConfig
+import typings.reactDashNavigation.reactDashNavigationMod.NavigationScreenComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_GetScreen extends _NavigationScreenRouteConfig {
-  def getScreen(): NavigationComponent
+trait Anon_GetScreen[Options, NavigationScreenPropType] extends js.Object {
+  def getScreen(): NavigationScreenComponent[Options, NavigationScreenPropType]
 }
 
 object Anon_GetScreen {
   @scala.inline
-  def apply(getScreen: () => NavigationComponent): Anon_GetScreen = {
+  def apply[Options, NavigationScreenPropType](getScreen: () => NavigationScreenComponent[Options, NavigationScreenPropType]): Anon_GetScreen[Options, NavigationScreenPropType] = {
     val __obj = js.Dynamic.literal(getScreen = js.Any.fromFunction0(getScreen))
   
-    __obj.asInstanceOf[Anon_GetScreen]
+    __obj.asInstanceOf[Anon_GetScreen[Options, NavigationScreenPropType]]
   }
 }
 

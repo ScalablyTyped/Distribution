@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rollup-plugin-typescript2" : "0.25.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rollup-plugin-typescript2" : "0.25.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

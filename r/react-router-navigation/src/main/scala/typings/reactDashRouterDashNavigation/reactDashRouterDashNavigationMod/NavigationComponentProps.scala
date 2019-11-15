@@ -5,8 +5,6 @@ import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
-import typings.reactDashNavigation.reactDashNavigationMod.NavigationTransitionProps
-import typings.reactDashNavigation.reactDashNavigationMod.NavigationTransitionSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +20,9 @@ object NavigationComponentProps {
     backButtonTitle: String = null,
     cardStyle: StyleProp[ViewStyle] = null,
     children: js.Array[ReactElement] = null,
-    configureTransition: (/* transitionProps */ NavigationTransitionProps, /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps]) => NavigationTransitionSpec = null,
+    configureTransition: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
+    ]) => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _ = null,
     hideBackButton: js.UndefOr[Boolean] = js.undefined,
     hideNavBar: js.UndefOr[Boolean] = js.undefined,
     navBarStyle: StyleProp[ViewStyle] = null,

@@ -22,7 +22,10 @@ class WebsocketProviderBase protected () extends js.Object {
   def removeAllListeners(`type`: String): Unit = js.native
   def removeListener(`type`: String, callback: js.Function0[Unit]): Unit = js.native
   def reset(): Unit = js.native
-  def send(payload: JsonRpcPayload, callback: js.Function2[/* error */ Error, /* result */ js.Any, Unit]): Unit = js.native
+  def send(
+    payload: JsonRpcPayload,
+    callback: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
+  ): Unit = js.native
   def supportsSubscriptions(): Boolean = js.native
 }
 

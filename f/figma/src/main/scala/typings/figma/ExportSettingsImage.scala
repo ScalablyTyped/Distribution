@@ -10,7 +10,7 @@ trait ExportSettingsImage extends ExportSettings {
   var constraint: js.UndefOr[ExportSettingsConstraints] = js.undefined
   var contentsOnly: js.UndefOr[Boolean] = js.undefined
   var format: JPG | PNG
-      // defaults to true
+   // defaults to true
   var suffix: js.UndefOr[String] = js.undefined
 }
 

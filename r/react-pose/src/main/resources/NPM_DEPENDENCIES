@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-pose" : "4.0.9"
+      "react-pose" : "4.0.10"
     }
   ],
   "test-dependencies" : [
     {
-      "react-pose" : "4.0.9"
+      "react-pose" : "4.0.10"
     }
   ],
   "compile-devDependencies" : [

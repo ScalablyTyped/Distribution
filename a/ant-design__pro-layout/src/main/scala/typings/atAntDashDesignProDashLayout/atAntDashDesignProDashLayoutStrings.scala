@@ -20,10 +20,28 @@ object atAntDashDesignProDashLayoutStrings {
   sealed trait `en-US` extends js.Object
   
   @js.native
+  sealed trait lg extends js.Object
+  
+  @js.native
+  sealed trait md extends js.Object
+  
+  @js.native
   sealed trait sidemenu extends js.Object
   
   @js.native
+  sealed trait sm extends js.Object
+  
+  @js.native
   sealed trait topmenu extends js.Object
+  
+  @js.native
+  sealed trait xl extends js.Object
+  
+  @js.native
+  sealed trait xs extends js.Object
+  
+  @js.native
+  sealed trait xxl extends js.Object
   
   @js.native
   sealed trait `zh-CN` extends js.Object
@@ -38,9 +56,21 @@ object atAntDashDesignProDashLayoutStrings {
   @scala.inline
   def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   @scala.inline
+  def lg: lg = "lg".asInstanceOf[lg]
+  @scala.inline
+  def md: md = "md".asInstanceOf[md]
+  @scala.inline
   def sidemenu: sidemenu = "sidemenu".asInstanceOf[sidemenu]
   @scala.inline
+  def sm: sm = "sm".asInstanceOf[sm]
+  @scala.inline
   def topmenu: topmenu = "topmenu".asInstanceOf[topmenu]
+  @scala.inline
+  def xl: xl = "xl".asInstanceOf[xl]
+  @scala.inline
+  def xs: xs = "xs".asInstanceOf[xs]
+  @scala.inline
+  def xxl: xxl = "xxl".asInstanceOf[xxl]
   @scala.inline
   def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
   @scala.inline

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object AudioTrack extends js.Object {
   /**
-  		 * All possible `AudioTrackKind`s
-  		 *
-  		 * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-audiotrack-kind
-  		 */
+    * All possible `AudioTrackKind`s
+    *
+    * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-audiotrack-kind
+    */
   /* Rewritten from type alias, can be one of: 
     - typings.videoDotJs.videoDotJsStrings.alternative
     - typings.videoDotJs.videoDotJsStrings.descriptions

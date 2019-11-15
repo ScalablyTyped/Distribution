@@ -5,12 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Block extends BlockHeader {
-  var difficulty: Double
-  var size: Double
-  var totalDifficulty: Double
+trait Block extends BlockTransactionBase {
   var transactions: js.Array[String | Transaction]
-  var uncles: js.Array[String]
 }
 
 object Block {

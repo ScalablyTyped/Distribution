@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "web3" : "1.2.2"
+      "web3" : "1.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "web3" : "1.2.2"
+      "web3" : "1.2.3"
     }
   ],
   "compile-devDependencies" : [

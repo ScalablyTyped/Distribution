@@ -14,17 +14,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object Spacer
   extends /**
-		 * Creates an instance of this class.
-		 *
-		 * @param player
-		 *        The `Player` that this class should be attached to.
-		 *
-		 * @param [options]
-		 *        The key/value store of player options.
-		 *
-		 * @param [ready]
-		 *        Function that gets called when the `Component` is ready.
-		 */
+  * Creates an instance of this class.
+  *
+  * @param player
+  *        The `Player` that this class should be attached to.
+  *
+  * @param [options]
+  *        The key/value store of player options.
+  *
+  * @param [ready]
+  *        Function that gets called when the `Component` is ready.
+  */
 Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.Spacer]
      with Instantiable2[
       /* player */ Player, 

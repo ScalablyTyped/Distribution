@@ -1,5 +1,6 @@
 package typings.atIonicReact.atIonicReactMod
 
+import typings.atIonicReact.distTypesContextsIonLifeCycleContextMod.LifeCycleCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/react", "useIonViewWillLeave")
 @js.native
 object useIonViewWillLeave extends js.Object {
-  def apply(callback: js.Function0[Unit]): Unit = js.native
+  def apply(callback: LifeCycleCallback): Unit = js.native
+  def apply(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
 }
 

@@ -482,17 +482,17 @@ trait VideoJsPlayer extends Component {
   def play(): js.UndefOr[js.Promise[Unit]] = js.native
   def playbackRate(): Double = js.native
   /**
-  		 * Gets or sets the current playback rate. A playback rate of
-  		 * 1.0 represents normal speed and 0.5 would indicate half-speed
-  		 * playback, for instance.
-  		 *
-  		 * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-playbackrate
-  		 *
-  		 * @param [rate]
-  		 *       New playback rate to set.
-  		 *
-  		 * @return The current playback rate when getting or 1.0
-  		 */
+    * Gets or sets the current playback rate. A playback rate of
+    * 1.0 represents normal speed and 0.5 would indicate half-speed
+    * playback, for instance.
+    *
+    * @see https://html.spec.whatwg.org/multipage/embedded-content.html#dom-media-playbackrate
+    *
+    * @param [rate]
+    *       New playback rate to set.
+    *
+    * @return The current playback rate when getting or 1.0
+    */
   def playbackRate(rate: Double): Unit = js.native
   def playsinline(): String = js.native
   /**

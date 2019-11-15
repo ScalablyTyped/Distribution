@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object TextTrackList
   extends /**
-		 * Create an instance of this class
-		 *
-		 * @param tracks
-		 *        A list of tracks to initialize the list with.
-		 */
+  * Create an instance of this class
+  *
+  * @param tracks
+  *        A list of tracks to initialize the list with.
+  */
 Instantiable0[typings.videoDotJs.videoDotJsMod.videojs.TextTrackList]
      with Instantiable1[
       /* tracks */ js.Array[typings.videoDotJs.videoDotJsMod.videojs.TextTrack], 

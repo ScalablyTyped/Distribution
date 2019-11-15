@@ -14,6 +14,7 @@ trait MockOptionsMethodPut extends MockOptions {
 object MockOptionsMethodPut {
   @scala.inline
   def apply(
+    body: String | js.Object = null,
     functionMatcher: (/* url */ String, /* opts */ MockRequest) => Boolean = null,
     headers: StringDictionary[String | Double] = null,
     includeContentLength: js.UndefOr[Boolean] = js.undefined,
@@ -28,6 +29,7 @@ object MockOptionsMethodPut {
     sendAsJson: js.UndefOr[Boolean] = js.undefined
   ): MockOptionsMethodPut = {
     val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (functionMatcher != null) __obj.updateDynamic("functionMatcher")(js.Any.fromFunction2(functionMatcher))
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(includeContentLength)) __obj.updateDynamic("includeContentLength")(includeContentLength)

@@ -102,6 +102,7 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
     def deleteSavedModel(id: Double): Unit = js.native
     def depthToSpace(x: Tensor[R4], blockSize: Double, dataFormat: String): Tensor[R4] = js.native
     def diag(x: Tensor[Rank]): Tensor[Rank] = js.native
+    def divNoNan(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     def divide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     def encodeJpeg(
       imageData: Uint8Array,
@@ -226,6 +227,12 @@ object distNodejsUnderscoreKernelUnderscoreBackendMod extends js.Object {
     def pow[T /* <: Tensor[Rank] */](a: T, b: Tensor[Rank]): T = js.native
     def prod(x: Tensor[Rank], axes: js.Array[Double]): Tensor[Rank] = js.native
     def realDivide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+    def runSavedModel(
+      id: Double,
+      inputs: js.Array[Tensor[Rank]],
+      inputOpNames: js.Array[String],
+      outputOpNames: js.Array[String]
+    ): js.Array[Tensor[Rank]] = js.native
     def scatterND[R /* <: Rank */](
       indices: Tensor[Rank],
       updates: Tensor[Rank],

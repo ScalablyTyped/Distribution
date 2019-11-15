@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class SeekBarCls protected () extends SeekBar {
   /**
-  		 * Creates an instance of this class.
-  		 *
-  		 * @param player
-  		 *        The `Player` that this class should be attached to.
-  		 *
-  		 * @param [options]
-  		 *        The key/value store of player options.
-  		 */
+    * Creates an instance of this class.
+    *
+    * @param player
+    *        The `Player` that this class should be attached to.
+    *
+    * @param [options]
+    *        The key/value store of player options.
+    */
   def this(player: Player) = this()
   def this(player: Player, options: SliderOptions) = this()
 }

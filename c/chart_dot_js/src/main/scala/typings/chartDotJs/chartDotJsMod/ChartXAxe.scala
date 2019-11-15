@@ -1,6 +1,5 @@
 package typings.chartDotJs.chartDotJsMod
 
-import typings.chartDotJs.chartDotJsStrings.flex
 import typings.chartDotJs.chartDotJsStrings.linear
 import typings.chartDotJs.chartDotJsStrings.series
 import scala.scalajs.js
@@ -8,8 +7,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartXAxe extends CommonAxe {
-  var barPercentage: js.UndefOr[Double] = js.undefined
-  var categoryPercentage: js.UndefOr[Double] = js.undefined
   var distribution: js.UndefOr[linear | series] = js.undefined
 }
 
@@ -23,8 +20,6 @@ object ChartXAxe {
     afterSetDimension: /* scale */ js.UndefOr[js.Any] => Unit = null,
     afterTickToLabelConversion: /* scale */ js.UndefOr[js.Any] => Unit = null,
     afterUpdate: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    barPercentage: Int | Double = null,
-    barThickness: Double | flex = null,
     beforeBuildTicks: /* scale */ js.UndefOr[js.Any] => Unit = null,
     beforeCalculateTickRotation: /* scale */ js.UndefOr[js.Any] => Unit = null,
     beforeDataLimits: /* scale */ js.UndefOr[js.Any] => Unit = null,
@@ -33,13 +28,10 @@ object ChartXAxe {
     beforeTickToLabelConversion: /* scale */ js.UndefOr[js.Any] => Unit = null,
     beforeUpdate: /* scale */ js.UndefOr[js.Any] => Unit = null,
     bounds: String = null,
-    categoryPercentage: Int | Double = null,
     display: Boolean | String = null,
     distribution: linear | series = null,
     gridLines: GridLineOptions = null,
     id: String = null,
-    maxBarThickness: Int | Double = null,
-    minBarLength: Int | Double = null,
     offset: js.UndefOr[Boolean] = js.undefined,
     position: String = null,
     scaleLabel: ScaleTitleOptions = null,
@@ -56,8 +48,6 @@ object ChartXAxe {
     if (afterSetDimension != null) __obj.updateDynamic("afterSetDimension")(js.Any.fromFunction1(afterSetDimension))
     if (afterTickToLabelConversion != null) __obj.updateDynamic("afterTickToLabelConversion")(js.Any.fromFunction1(afterTickToLabelConversion))
     if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction1(afterUpdate))
-    if (barPercentage != null) __obj.updateDynamic("barPercentage")(barPercentage.asInstanceOf[js.Any])
-    if (barThickness != null) __obj.updateDynamic("barThickness")(barThickness.asInstanceOf[js.Any])
     if (beforeBuildTicks != null) __obj.updateDynamic("beforeBuildTicks")(js.Any.fromFunction1(beforeBuildTicks))
     if (beforeCalculateTickRotation != null) __obj.updateDynamic("beforeCalculateTickRotation")(js.Any.fromFunction1(beforeCalculateTickRotation))
     if (beforeDataLimits != null) __obj.updateDynamic("beforeDataLimits")(js.Any.fromFunction1(beforeDataLimits))
@@ -66,13 +56,10 @@ object ChartXAxe {
     if (beforeTickToLabelConversion != null) __obj.updateDynamic("beforeTickToLabelConversion")(js.Any.fromFunction1(beforeTickToLabelConversion))
     if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction1(beforeUpdate))
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (categoryPercentage != null) __obj.updateDynamic("categoryPercentage")(categoryPercentage.asInstanceOf[js.Any])
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (maxBarThickness != null) __obj.updateDynamic("maxBarThickness")(maxBarThickness.asInstanceOf[js.Any])
-    if (minBarLength != null) __obj.updateDynamic("minBarLength")(minBarLength.asInstanceOf[js.Any])
     if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset)
     if (position != null) __obj.updateDynamic("position")(position)
     if (scaleLabel != null) __obj.updateDynamic("scaleLabel")(scaleLabel)

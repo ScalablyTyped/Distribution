@@ -26,8 +26,8 @@ trait EffectRecord
   var limit: js.UndefOr[String] = js.undefined
   var low_threshold: js.UndefOr[Double] = js.undefined
   var med_threshold: js.UndefOr[Double] = js.undefined
-  var new_seq: js.UndefOr[Double] = js.undefined
-  var offer_id: js.UndefOr[Double] = js.undefined
+  var new_seq: js.UndefOr[Double | String] = js.undefined
+  var offer_id: js.UndefOr[Double | String] = js.undefined
   var operation: js.UndefOr[CallFunction[OperationRecord]] = js.undefined
   var paging_token: String
   var precedes: js.UndefOr[CallFunction[EffectRecord]] = js.undefined
@@ -72,8 +72,8 @@ object EffectRecord {
     limit: String = null,
     low_threshold: Int | Double = null,
     med_threshold: Int | Double = null,
-    new_seq: Int | Double = null,
-    offer_id: Int | Double = null,
+    new_seq: Double | String = null,
+    offer_id: Double | String = null,
     operation: () => js.Promise[OperationRecord] = null,
     precedes: () => js.Promise[EffectRecord] = null,
     public_key: String = null,

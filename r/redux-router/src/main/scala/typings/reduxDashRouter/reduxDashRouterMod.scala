@@ -112,7 +112,7 @@ object reduxDashRouterMod extends js.Object {
       */ typings.reduxDashRouter.reduxDashRouterStrings.useParams with js.Any = js.native
     def useRouteMatch[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reduxDashRouter.reduxDashRouterStrings.useRouteMatch with js.Any */](): `match`[Params] | Null = js.native
+      */ typings.reduxDashRouter.reduxDashRouterStrings.useRouteMatch with js.Any */](): `match`[Params] = js.native
     def useRouteMatch[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
       */ typings.reduxDashRouter.reduxDashRouterStrings.useRouteMatch with js.Any */](path: String): `match`[Params] | Null = js.native

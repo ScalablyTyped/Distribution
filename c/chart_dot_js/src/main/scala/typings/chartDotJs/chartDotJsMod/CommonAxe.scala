@@ -1,6 +1,5 @@
 package typings.chartDotJs.chartDotJsMod
 
-import typings.chartDotJs.chartDotJsStrings.flex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,6 @@ trait CommonAxe extends js.Object {
   var afterSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   var afterTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   var afterUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var barThickness: js.UndefOr[Double | flex] = js.undefined
   var beforeBuildTicks: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   var beforeCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   var beforeDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
@@ -25,8 +23,6 @@ trait CommonAxe extends js.Object {
   var display: js.UndefOr[Boolean | String] = js.undefined
   var gridLines: js.UndefOr[GridLineOptions] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  var maxBarThickness: js.UndefOr[Double] = js.undefined
-  var minBarLength: js.UndefOr[Double] = js.undefined
   var offset: js.UndefOr[Boolean] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var scaleLabel: js.UndefOr[ScaleTitleOptions] = js.undefined
@@ -46,7 +42,6 @@ object CommonAxe {
     afterSetDimension: /* scale */ js.UndefOr[js.Any] => Unit = null,
     afterTickToLabelConversion: /* scale */ js.UndefOr[js.Any] => Unit = null,
     afterUpdate: /* scale */ js.UndefOr[js.Any] => Unit = null,
-    barThickness: Double | flex = null,
     beforeBuildTicks: /* scale */ js.UndefOr[js.Any] => Unit = null,
     beforeCalculateTickRotation: /* scale */ js.UndefOr[js.Any] => Unit = null,
     beforeDataLimits: /* scale */ js.UndefOr[js.Any] => Unit = null,
@@ -58,8 +53,6 @@ object CommonAxe {
     display: Boolean | String = null,
     gridLines: GridLineOptions = null,
     id: String = null,
-    maxBarThickness: Int | Double = null,
-    minBarLength: Int | Double = null,
     offset: js.UndefOr[Boolean] = js.undefined,
     position: String = null,
     scaleLabel: ScaleTitleOptions = null,
@@ -76,7 +69,6 @@ object CommonAxe {
     if (afterSetDimension != null) __obj.updateDynamic("afterSetDimension")(js.Any.fromFunction1(afterSetDimension))
     if (afterTickToLabelConversion != null) __obj.updateDynamic("afterTickToLabelConversion")(js.Any.fromFunction1(afterTickToLabelConversion))
     if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction1(afterUpdate))
-    if (barThickness != null) __obj.updateDynamic("barThickness")(barThickness.asInstanceOf[js.Any])
     if (beforeBuildTicks != null) __obj.updateDynamic("beforeBuildTicks")(js.Any.fromFunction1(beforeBuildTicks))
     if (beforeCalculateTickRotation != null) __obj.updateDynamic("beforeCalculateTickRotation")(js.Any.fromFunction1(beforeCalculateTickRotation))
     if (beforeDataLimits != null) __obj.updateDynamic("beforeDataLimits")(js.Any.fromFunction1(beforeDataLimits))
@@ -88,8 +80,6 @@ object CommonAxe {
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (maxBarThickness != null) __obj.updateDynamic("maxBarThickness")(maxBarThickness.asInstanceOf[js.Any])
-    if (minBarLength != null) __obj.updateDynamic("minBarLength")(minBarLength.asInstanceOf[js.Any])
     if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset)
     if (position != null) __obj.updateDynamic("position")(position)
     if (scaleLabel != null) __obj.updateDynamic("scaleLabel")(scaleLabel)

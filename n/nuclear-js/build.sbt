@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nuclear-js"
-version := "1.4-dt-20191111Z-495e3f"
+version := "1.4-dt-20191115Z-495e3f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

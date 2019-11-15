@@ -47,22 +47,22 @@ import scala.scalajs.js.annotation._
 class ^ protected ()
   extends typings.videoDotJs.videoDotJsMod.videojs.Component {
   /**
-  		 * Creates an instance of this class.
-  		 *
-  		 * @param player
-  		 *        The `Player` that this class should be attached to.
-  		 *
-  		 * @param [options]
-  		 *        The key/value store of player options.
-  		 *
-  		 * @param [options.children]
-  		 *        An array of children objects to intialize this component with. Children objects have
-  		 *        a name property that will be used if more than one component of the same type needs to be
-  		 *        added.
-  		 *
-  		 * @param [ready]
-  		 *        Function that gets called when the `Component` is ready.
-  		 */
+    * Creates an instance of this class.
+    *
+    * @param player
+    *        The `Player` that this class should be attached to.
+    *
+    * @param [options]
+    *        The key/value store of player options.
+    *
+    * @param [options.children]
+    *        An array of children objects to intialize this component with. Children objects have
+    *        a name property that will be used if more than one component of the same type needs to be
+    *        added.
+    *
+    * @param [ready]
+    *        Function that gets called when the `Component` is ready.
+    */
   def this(player: Player) = this()
   def this(player: Player, options: ComponentOptions) = this()
   def this(player: Player, options: ComponentOptions, ready: ReadyCallback) = this()
@@ -73,22 +73,22 @@ class ^ protected ()
 object ^
   extends TopLevel[
       (/**
-		 * Creates an instance of this class.
-		 *
-		 * @param player
-		 *        The `Player` that this class should be attached to.
-		 *
-		 * @param [options]
-		 *        The key/value store of player options.
-		 *
-		 * @param [options.children]
-		 *        An array of children objects to intialize this component with. Children objects have
-		 *        a name property that will be used if more than one component of the same type needs to be
-		 *        added.
-		 *
-		 * @param [ready]
-		 *        Function that gets called when the `Component` is ready.
-		 */
+  * Creates an instance of this class.
+  *
+  * @param player
+  *        The `Player` that this class should be attached to.
+  *
+  * @param [options]
+  *        The key/value store of player options.
+  *
+  * @param [options.children]
+  *        An array of children objects to intialize this component with. Children objects have
+  *        a name property that will be used if more than one component of the same type needs to be
+  *        added.
+  *
+  * @param [ready]
+  *        Function that gets called when the `Component` is ready.
+  */
 Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.Component]) with (Instantiable2[
         /* player */ Player, 
         /* options */ ComponentOptions, 
@@ -102,18 +102,18 @@ Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.Comp
     ] {
   def getComponent(name: String): TypeofComponent = js.native
   /**
-  		 * Get a `Component` based on the name it was registered with.
-  		 *
-  		 * @param name
-  		 *        The Name of the component to get.
-  		 *
-  		 * @return The `Component` that got registered under the given name.
-  		 *
-  		 * @deprecated In `videojs` 6 this will not return `Component`s that were not
-  		 *             registered using {@link Component.registerComponent}. Currently we
-  		 *             check the global `videojs` object for a `Component` name and
-  		 *             return that if it exists.
-  		 */
+    * Get a `Component` based on the name it was registered with.
+    *
+    * @param name
+    *        The Name of the component to get.
+    *
+    * @return The `Component` that got registered under the given name.
+    *
+    * @deprecated In `videojs` 6 this will not return `Component`s that were not
+    *             registered using {@link Component.registerComponent}. Currently we
+    *             check the global `videojs` object for a `Component` name and
+    *             return that if it exists.
+    */
   @JSName("getComponent")
   def getComponent_Button(name: Button): Anon_Options = js.native
   @JSName("getComponent")
@@ -159,23 +159,23 @@ Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.Comp
   @JSName("getComponent")
   def getComponent_timeTooltip(name: timeTooltip): Anon_OptionsPlayerComponentOptionsTimeToolTip = js.native
   /**
-  		 * Register a `Component` with `videojs` given the name and the component.
-  		 *
-  		 * > NOTE: {@link Tech}s should not be registered as a `Component`. {@link Tech}s
-  		 *         should be registered using {@link Tech.registerTech} or
-  		 *         {@link videojs:videojs.registerTech}.
-  		 *
-  		 * > NOTE: This function can also be seen on videojs as
-  		 *         {@link videojs:videojs.registerComponent}.
-  		 *
-  		 * @param name
-  		 *        The name of the `Component` to register.
-  		 *
-  		 * @param ComponentToRegister
-  		 *        The `Component` class to register.
-  		 *
-  		 * @return The `Component` that was registered.
-  		 */
+    * Register a `Component` with `videojs` given the name and the component.
+    *
+    * > NOTE: {@link Tech}s should not be registered as a `Component`. {@link Tech}s
+    *         should be registered using {@link Tech.registerTech} or
+    *         {@link videojs:videojs.registerTech}.
+    *
+    * > NOTE: This function can also be seen on videojs as
+    *         {@link videojs:videojs.registerComponent}.
+    *
+    * @param name
+    *        The name of the `Component` to register.
+    *
+    * @param ComponentToRegister
+    *        The `Component` class to register.
+    *
+    * @return The `Component` that was registered.
+    */
   def registerComponent(name: String, ComponentToRegister: js.Any): js.Any = js.native
 }
 

@@ -34,7 +34,7 @@ package object libTypescriptSrcTypesMod {
       navigationState | onIndexChange | onTabPress | renderScene | renderLabel | renderIcon | getAccessibilityLabel | getBadge | getColor | getLabelText | getTestID
     ]
   ]) with Anon_ActiveColorDark
-  type NavigationMaterialBottomTabScreenComponent[Params, ScreenProps] = (ComponentType[NavigationTabScreenProps[Params, ScreenProps]]) with Anon_NavigationOptions
+  type NavigationMaterialBottomTabScreenComponent[Params, ScreenProps] = (ComponentType[NavigationTabScreenProps[Params, ScreenProps]]) with (Anon_NavigationOptions[Params, ScreenProps])
   type NavigationTabProp[State, Params] = (NavigationScreenProp[State, Params]) with Anon_JumpTo
   type NavigationTabState = NavigationState
 }

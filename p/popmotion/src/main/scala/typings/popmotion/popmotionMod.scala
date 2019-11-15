@@ -26,8 +26,6 @@ import typings.popmotion.libReactionsValueMod.ValueProps
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Window
-import typings.styleDashValueDashTypes.Anon_Alpha
-import typings.styleDashValueDashTypes.Anon_AlphaBlue
 import typings.styleDashValueDashTypes.libTypesMod.HSLA
 import typings.styleDashValueDashTypes.libTypesMod.RGBA
 import typings.styleDashValueDashTypes.libTypesMod.ValueType
@@ -191,9 +189,9 @@ object popmotionMod extends js.Object {
     val vw: ValueType = js.native
     @js.native
     object complex extends js.Object {
-      def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | Anon_Alpha | Anon_AlphaBlue], String] = js.native
+      def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | HSLA | RGBA], String] = js.native
       def getAnimatableNone(target: String): String = js.native
-      def parse(v: js.Any): js.Array[Double | Anon_Alpha | Anon_AlphaBlue] = js.native
+      def parse(v: js.Any): js.Array[Double | HSLA | RGBA] = js.native
       def test(v: js.Any): Boolean = js.native
     }
     

@@ -13,33 +13,33 @@ import scala.scalajs.js.annotation._
 @js.native
 class TrackButton protected () extends MenuButton {
   /**
-  		 * Creates an instance of this class.
-  		 *
-  		 * @param player
-  		 *         The `Player` that this class should be attached to.
-  		 *
-  		 * @param [options]
-  		 *         The key/value store of player options.
-  		 */
+    * Creates an instance of this class.
+    *
+    * @param player
+    *         The `Player` that this class should be attached to.
+    *
+    * @param [options]
+    *         The key/value store of player options.
+    */
   def this(player: Player) = this()
   def this(player: Player, options: TrackButtonOptions) = this()
 }
 
 /**
-	 * The base class for buttons that toggle specific  track types (e.g. subtitles).
-	 */
+  * The base class for buttons that toggle specific  track types (e.g. subtitles).
+  */
 @JSImport("video.js", "TrackButton")
 @js.native
 object TrackButton
   extends /**
-		 * Creates an instance of this class.
-		 *
-		 * @param player
-		 *         The `Player` that this class should be attached to.
-		 *
-		 * @param [options]
-		 *         The key/value store of player options.
-		 */
+  * Creates an instance of this class.
+  *
+  * @param player
+  *         The `Player` that this class should be attached to.
+  *
+  * @param [options]
+  *         The key/value store of player options.
+  */
 Instantiable1[/* player */ Player, MenuButton]
      with Instantiable2[/* player */ Player, /* options */ TrackButtonOptions, MenuButton]
 

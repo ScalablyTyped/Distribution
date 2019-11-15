@@ -5469,6 +5469,7 @@
 | [promise-fs](./p/promise-fs) | Wraps FS methods using Promise | promise, promisify, fs |
 | [promise-ftp](./p/promise-ftp) | a promise-based ftp client for node.js | ftp, client, promise, node |
 | [promise-ftp-common](./p/promise-ftp-common) | error classes and other common code used in promis | - |
+| [promise-hash](./p/promise-hash) | Adds an RSVP-like Promise.hash() method for resolv | promise, nodejs, hash, promises |
 | [promise-map-limit](./p/promise-map-limit) | Map an array n items at a time with promises | promise, limit, limited, concurrency, throttle, rate, batch, ratelimit, queue, async, await, promises |
 | [promise-memoize](./p/promise-memoize) | Memoize promise-returning functions. Includes cach | promise, memoize, cache |
 | [promise-pg](./p/promise-pg) | Promise wrapper for node-postgres | postgres, promise |
@@ -6024,6 +6025,7 @@
 | [react-native-safe-area](./r/react-native-safe-area) | React Native module to get Safe Area Insets for iO | react-native, ios, iPhoneX, SafeArea |
 | [react-native-safe-area-vi](./r/react-native-safe-area-view) | JS only version of SafeAreaView for supporting iPh | react-native, iPhoneX, SafeAreaView |
 | [react-native-scaled-image](./r/react-native-scaled-image) | Image component to add images without defining bot | - |
+| [react-native-screens](./r/react-native-screens) | First incomplete navigation solution for your reac | - |
 | [react-native-scrollable-t](./r/react-native-scrollable-tab-view) | - | react-native-component, react-component, react-native, ios, tab, scrollable |
 | [react-native-sensor-manag](./r/react-native-sensor-manager) | A react-native module that allows you to use the a | react-native, android, react-native-sensor-manager, accelerometer, gyroscope, magnetometer, thermometer, step-counter |
 | [react-native-settings-lis](./r/react-native-settings-list) | A clean and highly customizable React Native imple | react-native, react-component, ios, android, settings-list, settings |
@@ -6061,6 +6063,7 @@
 | [react-native-zss-rich-tex](./r/react-native-zss-rich-text-editor) | React Native Wrapper for ZSSRichTextEditor | - |
 | [react-navigation](./r/react-navigation) | Routing and navigation for your React Native apps | - |
 | [react-navigation-material](./r/react-navigation-material-bottom-tabs) | Material Bottom Tab Navigation component for React | react-native-component, react-component, react-native, ios, android, tab, material |
+| [react-navigation__core](./r/react-navigation__core) | Core utilities for the react-navigation framework | react-navigation, routing, ios, android |
 | [react-no-ssr](./r/react-no-ssr) | React component to wrap non SSR components. | - |
 | [react-notification-system](./r/react-notification-system) | A React Notification System fully customized | react, notification, notification system, component, react component, react-component |
 | [react-notification-system](./r/react-notification-system-redux) | react-notification-system-redux | react-notification-system, redux |
@@ -6483,6 +6486,7 @@
 | [rollup-plugin-progress](./r/rollup-plugin-progress) | Rollup Progress Plugin | rollup, plugin, progress, progressbar |
 | [rollup-plugin-size-snapsh](./r/rollup-plugin-size-snapshot) | - | - |
 | [rollup-plugin-sourcemaps](./r/rollup-plugin-sourcemaps) | Rollup plugin for grabbing source maps from source | rollup, rollup-plugin, es2015, sourcemap, source-map, sourceMappingURL |
+| [rollup-plugin-typescript2](./r/rollup-plugin-typescript2) | Seamless integration between Rollup and TypeScript | rollup-plugin-typescript2, rollup-plugin-typescript, rollup-plugin, typescript, es2015, rollup, npm |
 | [rollup-plugin-url](./r/rollup-plugin-url) | Inline import files as data-URIs, or copy them to  | rollup-plugin, url, inline, copy |
 | [rollup-plugin-visualizer](./r/rollup-plugin-visualizer) | - | - |
 | [rollup-pluginutils](./r/rollup-pluginutils) | Functionality commonly needed by Rollup plugins | rollup, utils |
@@ -6551,6 +6555,7 @@
 | [s3-upload-stream](./s/s3-upload-stream) | Writeable stream for uploading content of unknown  | aws, s3, upload, pipe, stream |
 | [s3-uploader](./s/s3-uploader) | Resize, rename, and upload images to AWS S3 | aws, s3, imagemagic, image, resize, rename, upload, versions |
 | [s3rver](./s/s3rver) | Fake S3 server for node | fake, s3, server, mock, false, amazon |
+| [sade](./s/sade) | Smooth (CLI) operator 🎶 | cli, cli-app, commander, arguments, parser, yargs, argv |
 | [safari-extension](./s/safari-extension) | - | - |
 | [safari-extension-content](./s/safari-extension-content) | - | - |
 | [safe-buffer](./s/safe-buffer) | Safer Node.js Buffer API | buffer, buffer allocate, node security, safe, safe-buffer, security, uninitialized |
@@ -6706,6 +6711,7 @@
 | [session-file-store](./s/session-file-store) | Session file store is a provision for storing sess | session, file, store, express, connect |
 | [set-cookie-parser](./s/set-cookie-parser) | Parses set-cookie headers into objects | set-cookie, set, cookie, cookies, header, parser |
 | [set-interval-async](./s/set-interval-async) | Modern version of setInterval for promises and asy | setInterval, setTimeout, clearInterval, clearTimeout, interval, timeout, milliseconds, seconds, promise, promises, async, asynchronous, await, recurrent, concurrency, reentrancy |
+| [set-link](./s/set-link) | Link header middleware for express with multiple v | http, header, link |
 | [set-value](./s/set-value) | Create nested values and any intermediaries using  | bury, deep-get-set, deep-object, deep-property, deep-set, deep-set-in, deephas, dot-prop, dot2val, es5-dot-prop, get, getsetdeep, has, hasown, key, keys, lodash.set, nested, notation, object, object-path, object-path-set, object-set, prop, properties, property, props, set, set-deep, set-deep-prop, set-nested-prop, setvalue, value, values |
 | [setasap](./s/setasap) | setImmediate polyfill for the browser and node | setImmediate, task, setAsap, setTimeout, process.nextTick |
 | [setimmediate](./s/setimmediate) | A shim for the setImmediate efficient script yield | - |
@@ -7181,6 +7187,7 @@
 | [symlink-or-copy](./s/symlink-or-copy) | Symlink files or directories, falling back to copy | - |
 | [synaptic](./s/synaptic) | architecture-free neural network library | neural network, machine learning, long short term memory, perceptron, architecture free |
 | [syntax-error](./s/syntax-error) | detect and report syntax errors in source code str | syntax, error, esprima, stack, line, column |
+| [syslog-client](./s/syslog-client) | TCP and UDP syslog client RFC 5424 & RFC 3164 | logger, logging, syslog, syslog-client, syslog-logger, syslog-logging, tcp-syslog, tcp-syslog-client, udp-syslog, udp-syslog-client |
 | [systeminformation](./s/systeminformation) | Simple system and OS information library | system information, sysinfo, monitor, monitoring, os, linux, osx, windows, freebsd, cpu, cpuload, physical cores, logical cores, processor, cores, threads, socket type, memory, file system, fsstats, diskio, block devices, netstats, network, network interfaces, network connections, network stats, iface, processes, users, internet, battery, docker, docker stats, docker processes, graphics, graphic card, graphic controller, gpu, display, smart, disk layout |
 | [systemjs](./s/systemjs) | Dynamic ES module loader | - |
 | [tabbable](./t/tabbable) | Returns an array of all tabbable DOM nodes within  | - |

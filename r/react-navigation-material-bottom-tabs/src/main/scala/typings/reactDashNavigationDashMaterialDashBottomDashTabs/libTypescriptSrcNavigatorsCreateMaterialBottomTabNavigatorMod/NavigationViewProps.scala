@@ -5,14 +5,23 @@ import typings.react.reactMod.ReactNode
 import typings.reactDashNavigation.reactDashNavigationMod.NavigationDescriptor
 import typings.reactDashNavigation.reactDashNavigationMod.NavigationParams
 import typings.reactDashNavigation.reactDashNavigationMod.NavigationProp
+import typings.reactDashNavigation.reactDashNavigationMod.NavigationRoute
 import typings.reactDashNavigationDashMaterialDashBottomDashTabs.Anon_Route
+import typings.reactDashNavigationDashMaterialDashBottomDashTabs.libTypescriptSrcTypesMod.NavigationMaterialBottomTabOptions
+import typings.reactDashNavigationDashMaterialDashBottomDashTabs.libTypescriptSrcTypesMod.NavigationTabProp
 import typings.reactDashNavigationDashMaterialDashBottomDashTabs.libTypescriptSrcTypesMod.NavigationTabState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigationViewProps extends js.Object {
-  var descriptors: StringDictionary[NavigationDescriptor[NavigationParams]]
+  var descriptors: StringDictionary[
+    NavigationDescriptor[
+      NavigationParams, 
+      NavigationMaterialBottomTabOptions, 
+      NavigationTabProp[NavigationRoute[NavigationParams], NavigationParams]
+    ]
+  ]
   var navigation: NavigationProp[NavigationTabState]
   var navigationConfig: js.Any
   var screenProps: js.UndefOr[js.Any] = js.undefined
@@ -28,7 +37,13 @@ trait NavigationViewProps extends js.Object {
 object NavigationViewProps {
   @scala.inline
   def apply(
-    descriptors: StringDictionary[NavigationDescriptor[NavigationParams]],
+    descriptors: StringDictionary[
+      NavigationDescriptor[
+        NavigationParams, 
+        NavigationMaterialBottomTabOptions, 
+        NavigationTabProp[NavigationRoute[NavigationParams], NavigationParams]
+      ]
+    ],
     getAccessibilityLabel: Anon_Route => js.UndefOr[String],
     getLabelText: Anon_Route => js.UndefOr[String],
     getTestID: Anon_Route => js.UndefOr[String],

@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-eth
 
-Typings are for version 1.2.2
+Typings are for version 1.2.3
 
 ## Library description:
 Web3 module to interact with the Ethereum blockchain and smart contracts.

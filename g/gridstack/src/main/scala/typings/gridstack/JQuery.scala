@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 trait JQuery extends js.Object {
   @JSName("data")
   def data_gridstack(key: typings.gridstack.gridstackStrings.gridstack): GridStack
-  def gridstack(options: IGridstackOptions): JQuery
+  def gridstack(options: GridstackOptions): JQuery
 }
 
 object JQuery {
   @scala.inline
   def apply(
     data_gridstack: typings.gridstack.gridstackStrings.gridstack => GridStack,
-    gridstack: IGridstackOptions => JQuery
+    gridstack: GridstackOptions => JQuery
   ): JQuery = {
     val __obj = js.Dynamic.literal(gridstack = js.Any.fromFunction1(gridstack))
     __obj.updateDynamic("data")(js.Any.fromFunction1(data_gridstack))

@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * Register a Tech so it can referred to by name.
-	 * This is used in the tech order for the player.
-	 *
-	 * @borrows Tech.registerTech as registerTech
-	 */
+  * Register a Tech so it can referred to by name.
+  * This is used in the tech order for the player.
+  *
+  * @borrows Tech.registerTech as registerTech
+  */
 @JSImport("video.js", "registerTech")
 @js.native
 object registerTech

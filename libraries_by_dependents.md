@@ -1142,6 +1142,7 @@
 | 182 | [lockfile](./l/lockfile) | A very polite lock file utility, which endeavors t
 | 182 | [lodash_dot_keys](./l/lodash_dot_keys) | The lodash method _.keys exported as a module.
 | 182 | [nodemailer-smtp-transport](./n/nodemailer-smtp-transport) | SMTP transport for Nodemailer
+| 182 | [rollup-plugin-typescript2](./r/rollup-plugin-typescript2) | Seamless integration between Rollup and TypeScript
 | 182 | [terser](./t/terser) | JavaScript parser, mangler/compressor and beautifi
 | 181 | [autosize](./a/autosize) | Autosize is a small, stand-alone script to automat
 | 181 | [jsesc](./j/jsesc) | Given some data, jsesc returns the shortest possib
@@ -1596,6 +1597,7 @@
 | 110 | [koa-etag](./k/koa-etag) | ETag support for koa
 | 110 | [lodash_dot_union](./l/lodash_dot_union) | The lodash method _.union exported as a module.
 | 110 | [react-text-mask](./r/react-text-mask) | React input component that accepts mask pattern
+| 110 | [sade](./s/sade) | Smooth (CLI) operator 🎶
 | 110 | [storybook__addon-actions](./s/storybook__addon-actions) | Action Logger addon for storybook
 | 110 | [url-search-params](./u/url-search-params) | Simple polyfill for URLSearchParams standard
 | 110 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman
@@ -3370,6 +3372,7 @@
 | 25 | [postman-collection](./p/postman-collection) | Enables developers to use a unified Postman Collec
 | 25 | [prosemirror-schema-basic](./p/prosemirror-schema-basic) | Basic schema elements for ProseMirror
 | 25 | [react-infinite](./r/react-infinite) | A browser-ready efficient scrolling container base
+| 25 | [react-native-screens](./r/react-native-screens) | First incomplete navigation solution for your reac
 | 25 | [rollup-plugin-peer-deps-e](./r/rollup-plugin-peer-deps-external) | Rollup plugin to automatically add a library's pee
 | 25 | [rollup-plugin-url](./r/rollup-plugin-url) | Inline import files as data-URIs, or copy them to 
 | 25 | [sinon-as-promised](./s/sinon-as-promised) | Sugar methods for using sinon.js stubs with promis
@@ -3782,6 +3785,7 @@
 | 18 | [react-instantsearch](./r/react-instantsearch) | ⚡ Lightning-fast search for React and React Native
 | 18 | [react-native-calendars](./r/react-native-calendars) | React Native Calendar Components
 | 18 | [react-native-loading-spin](./r/react-native-loading-spinner-overlay) | The only pure React Native Native iOS and Android 
+| 18 | [react-navigation__core](./r/react-navigation__core) | Core utilities for the react-navigation framework
 | 18 | [react-rte](./r/react-rte) | React Rich Text Editor
 | 18 | [react-timeago](./r/react-timeago) | A simple Time-Ago component for ReactJs
 | 18 | [redux-batched-subscribe](./r/redux-batched-subscribe) | redux store enhancer which allows batching subscri
@@ -4518,6 +4522,7 @@
 | 10 | [storybook__channels](./s/storybook__channels) | Storybook Channel is similar to an EventEmitter. C
 | 10 | [storybook__react-native](./s/storybook__react-native) | A better way to develop React Native Components fo
 | 10 | [string-pixel-width](./s/string-pixel-width) | String pixel width measurement on the backend in J
+| 10 | [syslog-client](./s/syslog-client) | TCP and UDP syslog client RFC 5424 & RFC 3164
 | 10 | [tableify](./t/tableify) | Create HTML tables from Javascript Objects
 | 10 | [theo](./t/theo) | Design Tokens formatter
 | 10 | [tokenizr](./t/tokenizr) | String Tokenization Library for JavaScript
@@ -6104,6 +6109,7 @@
 | 2 | [pouchdb-http](./p/pouchdb-http) | PouchDB as an HTTP-only package.
 | 2 | [prefixfree](./p/prefixfree) | Break free from CSS prefix hell
 | 2 | [primereact](./p/primereact) | -
+| 2 | [promise-hash](./p/promise-hash) | Adds an RSVP-like Promise.hash() method for resolv
 | 2 | [promise-map-limit](./p/promise-map-limit) | Map an array n items at a time with promises
 | 2 | [pseudo-audio-param](./p/pseudo-audio-param) | Simulate scheduled AudioParam values
 | 2 | [pulltorefreshjs](./p/pulltorefreshjs) | Pull To Refresh
@@ -6170,6 +6176,7 @@
 | 2 | [secure-json-parse](./s/secure-json-parse) | JSON parse with prototype poisoning protection
 | 2 | [semantic-ui-form](./s/semantic-ui-form) | Single component release of form
 | 2 | [service-worker-mock](./s/service-worker-mock) | Service Worker Mock ========================= A mo
+| 2 | [set-link](./s/set-link) | Link header middleware for express with multiple v
 | 2 | [shopify-prime](./s/shopify-prime) | Shopify Prime is a NodeJS library built to help de
 | 2 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI
 | 2 | [simple-query-string](./s/simple-query-string) | Fast and simple way to parse and stringify URL que

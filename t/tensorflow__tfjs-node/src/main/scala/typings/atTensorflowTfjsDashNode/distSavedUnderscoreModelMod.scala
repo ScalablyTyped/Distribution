@@ -1,8 +1,9 @@
 package typings.atTensorflowTfjsDashNode
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atTensorflowTfjs.atTensorflowTfjsMod.Tensor
 import typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod.InferenceModel
-import typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod.MetaGraphInfo
+import typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod.MetaGraph
 import typings.atTensorflowTfjsDashCore.distModelUnderscoreTypesMod.ModelPredictConfig
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensorMap
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
@@ -20,8 +21,8 @@ object distSavedUnderscoreModelMod extends js.Object {
     def this(
       sessionId: Double,
       jsid: Double,
-      inputNodeNames: js.Array[String],
-      outputNodeNames: js.Array[String],
+      inputNodeNames: StringDictionary[String],
+      outputNodeNames: StringDictionary[String],
       backend: NodeJSKernelBackend
     ) = this()
     var backend: js.Any = js.native
@@ -63,7 +64,10 @@ object distSavedUnderscoreModelMod extends js.Object {
       * @param input The input tensors, when there is single input for the model,
       * inputs param should be a Tensor. For models with multiple inputs, inputs
       * params should be in either Tensor[] if the input order is fixed, or
-      * otherwise NamedTensorMap format.
+      * otherwise NamedTensorMap format. The keys in the NamedTensorMap are the
+      * name of input tensors in SavedModel signatureDef. It can be found through
+      * `tf.node.getMetaGraphsFromSavedModel()`.
+      *
       * For batch inference execution, the tensors for each input need to be
       * concatenated together. For example with mobilenet, the required input shape
       * is [1, 244, 244, 3], which represents the [batch, height, width, channel].
@@ -83,8 +87,8 @@ object distSavedUnderscoreModelMod extends js.Object {
   }
   
   def getEnumKeyFromValue(`object`: js.Any, value: Double): String = js.native
-  def getInputAndOutputNodeNameFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraphInfo], tags: js.Array[String], signature: String): js.Array[js.Array[String]] = js.native
-  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraphInfo]] = js.native
+  def getInputAndOutputNodeNameFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraph], tags: js.Array[String], signature: String): js.Array[StringDictionary[String]] = js.native
+  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = js.native
   def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
   def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
   def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native

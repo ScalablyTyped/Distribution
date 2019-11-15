@@ -3,10 +3,16 @@ package typings.web3DashEth.web3DashEthMod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable3
+import typings.bignumberDotJs.bignumberDotJsMod.BigNumber
+import typings.bnDotJs.bnDotJsMod.^
+import typings.node.netMod.Socket
 import typings.std.Error
+import typings.web3DashCore.web3DashCoreMod.BlockNumber
 import typings.web3DashCore.web3DashCoreMod.Common
 import typings.web3DashCore.web3DashCoreMod.Extension
 import typings.web3DashCore.web3DashCoreMod.Log
+import typings.web3DashCore.web3DashCoreMod.LogsOptions
+import typings.web3DashCore.web3DashCoreMod.PastLogsOptions
 import typings.web3DashCore.web3DashCoreMod.PromiEvent
 import typings.web3DashCore.web3DashCoreMod.Providers
 import typings.web3DashCore.web3DashCoreMod.RLPEncodedTransaction
@@ -17,8 +23,7 @@ import typings.web3DashCore.web3DashCoreMod.chain
 import typings.web3DashCore.web3DashCoreMod.hardfork
 import typings.web3DashCore.web3DashCoreMod.provider
 import typings.web3DashCoreDashSubscriptions.web3DashCoreDashSubscriptionsMod.Subscription
-import typings.web3DashEth.web3DashEthStrings.earliest
-import typings.web3DashEth.web3DashEthStrings.latest
+import typings.web3DashEth.web3DashEthNumbers.`true`
 import typings.web3DashEth.web3DashEthStrings.logs
 import typings.web3DashEth.web3DashEthStrings.newBlockHeaders
 import typings.web3DashEth.web3DashEthStrings.pendingTransactions
@@ -36,8 +41,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("web3-eth", "Eth")
 @js.native
-class Eth protected () extends js.Object {
-  def this(currentProvider: provider) = this()
+class Eth () extends js.Object {
+  def this(provider: provider) = this()
+  def this(provider: provider, net: Socket) = this()
   var BatchRequest: Instantiable0[typings.web3DashCore.web3DashCoreMod.BatchRequest] = js.native
   var Contract: Instantiable3[
     /* jsonInterface */ js.Array[AbiItem] | AbiItem, 
@@ -66,16 +72,10 @@ class Eth protected () extends js.Object {
     transactionConfig: TransactionConfig,
     callback: js.Function2[/* error */ Error, /* data */ String, Unit]
   ): js.Promise[String] = js.native
-  def call(transactionConfig: TransactionConfig, defaultBlock: String): js.Promise[String] = js.native
+  def call(transactionConfig: TransactionConfig, defaultBlock: BlockNumber): js.Promise[String] = js.native
   def call(
     transactionConfig: TransactionConfig,
-    defaultBlock: String,
-    callback: js.Function2[/* error */ Error, /* data */ String, Unit]
-  ): js.Promise[String] = js.native
-  def call(transactionConfig: TransactionConfig, defaultBlock: Double): js.Promise[String] = js.native
-  def call(
-    transactionConfig: TransactionConfig,
-    defaultBlock: Double,
+    defaultBlock: BlockNumber,
     callback: js.Function2[/* error */ Error, /* data */ String, Unit]
   ): js.Promise[String] = js.native
   def clearSubscriptions(callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]): Unit = js.native
@@ -89,34 +89,22 @@ class Eth protected () extends js.Object {
   def getAccounts(callback: js.Function2[/* error */ Error, /* accounts */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
   def getBalance(address: String): js.Promise[String] = js.native
   def getBalance(address: String, callback: js.Function2[/* error */ Error, /* balance */ String, Unit]): js.Promise[String] = js.native
-  def getBalance(address: String, defaultBlock: String): js.Promise[String] = js.native
+  def getBalance(address: String, defaultBlock: BlockNumber): js.Promise[String] = js.native
   def getBalance(
     address: String,
-    defaultBlock: String,
+    defaultBlock: BlockNumber,
     callback: js.Function2[/* error */ Error, /* balance */ String, Unit]
   ): js.Promise[String] = js.native
-  def getBalance(address: String, defaultBlock: Double): js.Promise[String] = js.native
-  def getBalance(
-    address: String,
-    defaultBlock: Double,
-    callback: js.Function2[/* error */ Error, /* balance */ String, Unit]
-  ): js.Promise[String] = js.native
-  def getBlock(blockHashOrBlockNumber: String): js.Promise[Block] = js.native
-  def getBlock(blockHashOrBlockNumber: String, callback: js.Function2[/* error */ Error, /* block */ Block, Unit]): js.Promise[Block] = js.native
-  def getBlock(blockHashOrBlockNumber: String, returnTransactionObjects: Boolean): js.Promise[Block] = js.native
+  def getBlock(blockHashOrBlockNumber: String): js.Promise[BlockTransactionString] = js.native
   def getBlock(
     blockHashOrBlockNumber: String,
-    returnTransactionObjects: Boolean,
-    callback: js.Function2[/* error */ Error, /* block */ Block, Unit]
-  ): js.Promise[Block] = js.native
-  def getBlock(blockHashOrBlockNumber: Double): js.Promise[Block] = js.native
-  def getBlock(blockHashOrBlockNumber: Double, callback: js.Function2[/* error */ Error, /* block */ Block, Unit]): js.Promise[Block] = js.native
-  def getBlock(blockHashOrBlockNumber: Double, returnTransactionObjects: Boolean): js.Promise[Block] = js.native
+    callback: js.Function2[/* error */ Error, /* block */ BlockTransactionString, Unit]
+  ): js.Promise[BlockTransactionString] = js.native
+  def getBlock(blockHashOrBlockNumber: BlockNumber): js.Promise[BlockTransactionString] = js.native
   def getBlock(
-    blockHashOrBlockNumber: Double,
-    returnTransactionObjects: Boolean,
-    callback: js.Function2[/* error */ Error, /* block */ Block, Unit]
-  ): js.Promise[Block] = js.native
+    blockHashOrBlockNumber: BlockNumber,
+    callback: js.Function2[/* error */ Error, /* block */ BlockTransactionString, Unit]
+  ): js.Promise[BlockTransactionString] = js.native
   def getBlockNumber(): js.Promise[Double] = js.native
   def getBlockNumber(callback: js.Function2[/* error */ Error, /* blockNumber */ Double, Unit]): js.Promise[Double] = js.native
   def getBlockTransactionCount(blockHashOrBlockNumber: String): js.Promise[Double] = js.native
@@ -124,25 +112,45 @@ class Eth protected () extends js.Object {
     blockHashOrBlockNumber: String,
     callback: js.Function2[/* error */ Error, /* numberOfTransactions */ Double, Unit]
   ): js.Promise[Double] = js.native
-  def getBlockTransactionCount(blockHashOrBlockNumber: Double): js.Promise[Double] = js.native
+  def getBlockTransactionCount(blockHashOrBlockNumber: BlockNumber): js.Promise[Double] = js.native
   def getBlockTransactionCount(
-    blockHashOrBlockNumber: Double,
+    blockHashOrBlockNumber: BlockNumber,
     callback: js.Function2[/* error */ Error, /* numberOfTransactions */ Double, Unit]
   ): js.Promise[Double] = js.native
+  def getBlockUncleCount(blockHashOrBlockNumber: String): js.Promise[Double] = js.native
+  def getBlockUncleCount(
+    blockHashOrBlockNumber: String,
+    callback: js.Function2[/* error */ Error, /* numberOfTransactions */ Double, Unit]
+  ): js.Promise[Double] = js.native
+  def getBlockUncleCount(blockHashOrBlockNumber: BlockNumber): js.Promise[Double] = js.native
+  def getBlockUncleCount(
+    blockHashOrBlockNumber: BlockNumber,
+    callback: js.Function2[/* error */ Error, /* numberOfTransactions */ Double, Unit]
+  ): js.Promise[Double] = js.native
+  @JSName("getBlock")
+  def getBlock_true(blockHashOrBlockNumber: String, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getBlock")
+  def getBlock_true(
+    blockHashOrBlockNumber: String,
+    returnTransactionObjects: `true`,
+    callback: js.Function2[/* error */ Error, /* block */ BlockTransactionObject, Unit]
+  ): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getBlock")
+  def getBlock_true(blockHashOrBlockNumber: BlockNumber, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getBlock")
+  def getBlock_true(
+    blockHashOrBlockNumber: BlockNumber,
+    returnTransactionObjects: `true`,
+    callback: js.Function2[/* error */ Error, /* block */ BlockTransactionObject, Unit]
+  ): js.Promise[BlockTransactionObject] = js.native
   def getChainId(): js.Promise[Double] = js.native
   def getChainId(callback: js.Function2[/* error */ Error, /* version */ Double, Unit]): js.Promise[Double] = js.native
   def getCode(address: String): js.Promise[String] = js.native
   def getCode(address: String, callback: js.Function2[/* error */ Error, /* code */ String, Unit]): js.Promise[String] = js.native
-  def getCode(address: String, defaultBlock: String): js.Promise[String] = js.native
+  def getCode(address: String, defaultBlock: BlockNumber): js.Promise[String] = js.native
   def getCode(
     address: String,
-    defaultBlock: String,
-    callback: js.Function2[/* error */ Error, /* code */ String, Unit]
-  ): js.Promise[String] = js.native
-  def getCode(address: String, defaultBlock: Double): js.Promise[String] = js.native
-  def getCode(
-    address: String,
-    defaultBlock: Double,
+    defaultBlock: BlockNumber,
     callback: js.Function2[/* error */ Error, /* code */ String, Unit]
   ): js.Promise[String] = js.native
   def getCoinbase(): js.Promise[String] = js.native
@@ -160,58 +168,65 @@ class Eth protected () extends js.Object {
   ): js.Promise[js.Array[Log]] = js.native
   def getPendingTransactions(): js.Promise[js.Array[Transaction]] = js.native
   def getPendingTransactions(callback: js.Function2[/* error */ Error, /* result */ js.Array[Transaction], Unit]): js.Promise[js.Array[Transaction]] = js.native
-  def getProof(address: String, storageKey: js.Array[String], blockNumber: String): js.Promise[GetProof] = js.native
+  def getProof(address: String, storageKey: js.Array[String], blockNumber: BlockNumber): js.Promise[GetProof] = js.native
   def getProof(
     address: String,
     storageKey: js.Array[String],
-    blockNumber: String,
-    callback: js.Function2[/* error */ Error, /* result */ GetProof, Unit]
-  ): js.Promise[GetProof] = js.native
-  def getProof(address: String, storageKey: js.Array[String], blockNumber: Double): js.Promise[GetProof] = js.native
-  def getProof(
-    address: String,
-    storageKey: js.Array[String],
-    blockNumber: Double,
-    callback: js.Function2[/* error */ Error, /* result */ GetProof, Unit]
-  ): js.Promise[GetProof] = js.native
-  @JSName("getProof")
-  def getProof_earliest(address: String, storageKey: js.Array[String], blockNumber: earliest): js.Promise[GetProof] = js.native
-  @JSName("getProof")
-  def getProof_earliest(
-    address: String,
-    storageKey: js.Array[String],
-    blockNumber: earliest,
-    callback: js.Function2[/* error */ Error, /* result */ GetProof, Unit]
-  ): js.Promise[GetProof] = js.native
-  @JSName("getProof")
-  def getProof_latest(address: String, storageKey: js.Array[String], blockNumber: latest): js.Promise[GetProof] = js.native
-  @JSName("getProof")
-  def getProof_latest(
-    address: String,
-    storageKey: js.Array[String],
-    blockNumber: latest,
+    blockNumber: BlockNumber,
     callback: js.Function2[/* error */ Error, /* result */ GetProof, Unit]
   ): js.Promise[GetProof] = js.native
   def getProtocolVersion(): js.Promise[String] = js.native
   def getProtocolVersion(callback: js.Function2[/* error */ Error, /* protocolVersion */ String, Unit]): js.Promise[String] = js.native
+  def getStorageAt(address: String, position: String): js.Promise[String] = js.native
+  def getStorageAt(
+    address: String,
+    position: String,
+    callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+  ): js.Promise[String] = js.native
+  def getStorageAt(address: String, position: String, defaultBlock: BlockNumber): js.Promise[String] = js.native
+  def getStorageAt(
+    address: String,
+    position: String,
+    defaultBlock: BlockNumber,
+    callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+  ): js.Promise[String] = js.native
   def getStorageAt(address: String, position: Double): js.Promise[String] = js.native
   def getStorageAt(
     address: String,
     position: Double,
     callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
   ): js.Promise[String] = js.native
-  def getStorageAt(address: String, position: Double, defaultBlock: String): js.Promise[String] = js.native
+  def getStorageAt(address: String, position: Double, defaultBlock: BlockNumber): js.Promise[String] = js.native
   def getStorageAt(
     address: String,
     position: Double,
-    defaultBlock: String,
+    defaultBlock: BlockNumber,
     callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
   ): js.Promise[String] = js.native
-  def getStorageAt(address: String, position: Double, defaultBlock: Double): js.Promise[String] = js.native
+  def getStorageAt(address: String, position: BigNumber): js.Promise[String] = js.native
   def getStorageAt(
     address: String,
-    position: Double,
-    defaultBlock: Double,
+    position: BigNumber,
+    callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+  ): js.Promise[String] = js.native
+  def getStorageAt(address: String, position: BigNumber, defaultBlock: BlockNumber): js.Promise[String] = js.native
+  def getStorageAt(
+    address: String,
+    position: BigNumber,
+    defaultBlock: BlockNumber,
+    callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+  ): js.Promise[String] = js.native
+  def getStorageAt(address: String, position: ^): js.Promise[String] = js.native
+  def getStorageAt(
+    address: String,
+    position: ^,
+    callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+  ): js.Promise[String] = js.native
+  def getStorageAt(address: String, position: ^, defaultBlock: BlockNumber): js.Promise[String] = js.native
+  def getStorageAt(
+    address: String,
+    position: ^,
+    defaultBlock: BlockNumber,
     callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
   ): js.Promise[String] = js.native
   def getTransaction(transactionHash: String): js.Promise[Transaction] = js.native
@@ -221,28 +236,46 @@ class Eth protected () extends js.Object {
   ): js.Promise[Transaction] = js.native
   def getTransactionCount(address: String): js.Promise[Double] = js.native
   def getTransactionCount(address: String, callback: js.Function2[/* error */ Error, /* count */ Double, Unit]): js.Promise[Double] = js.native
-  def getTransactionCount(address: String, defaultBlock: String): js.Promise[Double] = js.native
+  def getTransactionCount(address: String, defaultBlock: BlockNumber): js.Promise[Double] = js.native
   def getTransactionCount(
     address: String,
-    defaultBlock: String,
+    defaultBlock: BlockNumber,
     callback: js.Function2[/* error */ Error, /* count */ Double, Unit]
   ): js.Promise[Double] = js.native
-  def getTransactionCount(address: String, defaultBlock: Double): js.Promise[Double] = js.native
-  def getTransactionCount(
-    address: String,
-    defaultBlock: Double,
-    callback: js.Function2[/* error */ Error, /* count */ Double, Unit]
-  ): js.Promise[Double] = js.native
-  def getTransactionFromBlock(hashStringOrNumber: String, indexNumber: Double): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(blockHashOrBlockNumber: String, indexNumber: String): js.Promise[Transaction] = js.native
   def getTransactionFromBlock(
-    hashStringOrNumber: String,
+    blockHashOrBlockNumber: String,
+    indexNumber: String,
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(blockHashOrBlockNumber: String, indexNumber: Double): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(
+    blockHashOrBlockNumber: String,
     indexNumber: Double,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): js.Promise[Transaction] = js.native
-  def getTransactionFromBlock(hashStringOrNumber: Double, indexNumber: Double): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(blockHashOrBlockNumber: String, indexNumber: ^): js.Promise[Transaction] = js.native
   def getTransactionFromBlock(
-    hashStringOrNumber: Double,
+    blockHashOrBlockNumber: String,
+    indexNumber: ^,
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(blockHashOrBlockNumber: BlockNumber, indexNumber: String): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(
+    blockHashOrBlockNumber: BlockNumber,
+    indexNumber: String,
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(blockHashOrBlockNumber: BlockNumber, indexNumber: Double): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(
+    blockHashOrBlockNumber: BlockNumber,
     indexNumber: Double,
+    callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+  ): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(blockHashOrBlockNumber: BlockNumber, indexNumber: ^): js.Promise[Transaction] = js.native
+  def getTransactionFromBlock(
+    blockHashOrBlockNumber: BlockNumber,
+    indexNumber: ^,
     callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
   ): js.Promise[Transaction] = js.native
   def getTransactionReceipt(hash: String): js.Promise[TransactionReceipt] = js.native
@@ -250,32 +283,96 @@ class Eth protected () extends js.Object {
     hash: String,
     callback: js.Function2[/* error */ Error, /* transactionReceipt */ TransactionReceipt, Unit]
   ): js.Promise[TransactionReceipt] = js.native
-  def getUncle(blockHashOrBlockNumber: String, uncleIndex: Double): js.Promise[Block] = js.native
+  def getUncle(blockHashOrBlockNumber: String, uncleIndex: String): js.Promise[BlockTransactionString] = js.native
+  def getUncle(
+    blockHashOrBlockNumber: String,
+    uncleIndex: String,
+    callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+  ): js.Promise[BlockTransactionString] = js.native
+  def getUncle(blockHashOrBlockNumber: String, uncleIndex: Double): js.Promise[BlockTransactionString] = js.native
   def getUncle(
     blockHashOrBlockNumber: String,
     uncleIndex: Double,
     callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
-  ): js.Promise[Block] = js.native
-  def getUncle(blockHashOrBlockNumber: String, uncleIndex: Double, returnTransactionObjects: Boolean): js.Promise[Block] = js.native
+  ): js.Promise[BlockTransactionString] = js.native
+  def getUncle(blockHashOrBlockNumber: String, uncleIndex: ^): js.Promise[BlockTransactionString] = js.native
   def getUncle(
     blockHashOrBlockNumber: String,
-    uncleIndex: Double,
-    returnTransactionObjects: Boolean,
+    uncleIndex: ^,
     callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
-  ): js.Promise[Block] = js.native
-  def getUncle(blockHashOrBlockNumber: Double, uncleIndex: Double): js.Promise[Block] = js.native
+  ): js.Promise[BlockTransactionString] = js.native
+  def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: String): js.Promise[BlockTransactionString] = js.native
   def getUncle(
-    blockHashOrBlockNumber: Double,
-    uncleIndex: Double,
+    blockHashOrBlockNumber: BlockNumber,
+    uncleIndex: String,
     callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
-  ): js.Promise[Block] = js.native
-  def getUncle(blockHashOrBlockNumber: Double, uncleIndex: Double, returnTransactionObjects: Boolean): js.Promise[Block] = js.native
+  ): js.Promise[BlockTransactionString] = js.native
+  def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: Double): js.Promise[BlockTransactionString] = js.native
   def getUncle(
-    blockHashOrBlockNumber: Double,
+    blockHashOrBlockNumber: BlockNumber,
     uncleIndex: Double,
-    returnTransactionObjects: Boolean,
     callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
-  ): js.Promise[Block] = js.native
+  ): js.Promise[BlockTransactionString] = js.native
+  def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: ^): js.Promise[BlockTransactionString] = js.native
+  def getUncle(
+    blockHashOrBlockNumber: BlockNumber,
+    uncleIndex: ^,
+    callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+  ): js.Promise[BlockTransactionString] = js.native
+  @JSName("getUncle")
+  def getUncle_true(blockHashOrBlockNumber: String, uncleIndex: String, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(
+    blockHashOrBlockNumber: String,
+    uncleIndex: String,
+    returnTransactionObjects: `true`,
+    callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+  ): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(blockHashOrBlockNumber: String, uncleIndex: Double, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(
+    blockHashOrBlockNumber: String,
+    uncleIndex: Double,
+    returnTransactionObjects: `true`,
+    callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+  ): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(blockHashOrBlockNumber: String, uncleIndex: ^, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(
+    blockHashOrBlockNumber: String,
+    uncleIndex: ^,
+    returnTransactionObjects: `true`,
+    callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+  ): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(blockHashOrBlockNumber: BlockNumber, uncleIndex: String, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(
+    blockHashOrBlockNumber: BlockNumber,
+    uncleIndex: String,
+    returnTransactionObjects: `true`,
+    callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+  ): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(blockHashOrBlockNumber: BlockNumber, uncleIndex: Double, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(
+    blockHashOrBlockNumber: BlockNumber,
+    uncleIndex: Double,
+    returnTransactionObjects: `true`,
+    callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+  ): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(blockHashOrBlockNumber: BlockNumber, uncleIndex: ^, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+  @JSName("getUncle")
+  def getUncle_true(
+    blockHashOrBlockNumber: BlockNumber,
+    uncleIndex: ^,
+    returnTransactionObjects: `true`,
+    callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+  ): js.Promise[BlockTransactionObject] = js.native
   def getWork(): js.Promise[js.Array[String]] = js.native
   def getWork(callback: js.Function2[/* error */ Error, /* result */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
   def isMining(): js.Promise[Boolean] = js.native
@@ -319,79 +416,34 @@ class Eth protected () extends js.Object {
     callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]
   ): js.Promise[Boolean] = js.native
   @JSName("subscribe")
-  def subscribe_logs(`type`: logs): Subscription[Log] = js.native
-  @JSName("subscribe")
-  def subscribe_logs(
-    `type`: logs,
-    options: Null,
-    callback: js.Function2[/* error */ Error, /* item */ Log | Syncing | BlockHeader | String, Unit]
-  ): Subscription[Log | BlockHeader | Syncing | String] = js.native
-  @JSName("subscribe")
   def subscribe_logs(`type`: logs, options: LogsOptions): Subscription[Log] = js.native
   @JSName("subscribe")
-  def subscribe_logs(
-    `type`: logs,
-    options: LogsOptions,
-    callback: js.Function2[/* error */ Error, BlockHeader | (/* log */ Log) | String | Syncing, Unit]
-  ): Subscription[Log] = js.native
+  def subscribe_logs(`type`: logs, options: LogsOptions, callback: js.Function2[/* error */ Error, /* log */ Log, Unit]): Subscription[Log] = js.native
   @JSName("subscribe")
   def subscribe_newBlockHeaders(`type`: newBlockHeaders): Subscription[BlockHeader] = js.native
   @JSName("subscribe")
   def subscribe_newBlockHeaders(
     `type`: newBlockHeaders,
-    options: Null,
-    callback: js.Function2[/* error */ Error, BlockHeader | Log | String | Syncing, Unit]
+    callback: js.Function2[/* error */ Error, /* blockHeader */ BlockHeader, Unit]
   ): Subscription[BlockHeader] = js.native
-  @JSName("subscribe")
-  def subscribe_newBlockHeaders(`type`: newBlockHeaders, options: LogsOptions): Subscription[Log | BlockHeader | Syncing | String] = js.native
-  @JSName("subscribe")
-  def subscribe_newBlockHeaders(
-    `type`: newBlockHeaders,
-    options: LogsOptions,
-    callback: js.Function2[/* error */ Error, /* item */ Log | Syncing | BlockHeader | String, Unit]
-  ): Subscription[Log | BlockHeader | Syncing | String] = js.native
   @JSName("subscribe")
   def subscribe_pendingTransactions(`type`: pendingTransactions): Subscription[String] = js.native
   @JSName("subscribe")
   def subscribe_pendingTransactions(
     `type`: pendingTransactions,
-    options: Null,
-    callback: js.Function2[
-      /* error */ Error, 
-      BlockHeader | Log | (/* transactionHash */ String) | Syncing, 
-      Unit
-    ]
+    callback: js.Function2[/* error */ Error, /* transactionHash */ String, Unit]
   ): Subscription[String] = js.native
-  @JSName("subscribe")
-  def subscribe_pendingTransactions(`type`: pendingTransactions, options: LogsOptions): Subscription[Log | BlockHeader | Syncing | String] = js.native
-  @JSName("subscribe")
-  def subscribe_pendingTransactions(
-    `type`: pendingTransactions,
-    options: LogsOptions,
-    callback: js.Function2[/* error */ Error, /* item */ Log | Syncing | BlockHeader | String, Unit]
-  ): Subscription[Log | BlockHeader | Syncing | String] = js.native
   @JSName("subscribe")
   def subscribe_syncing(`type`: syncing): Subscription[Syncing] = js.native
   @JSName("subscribe")
-  def subscribe_syncing(
-    `type`: syncing,
-    options: Null,
-    callback: js.Function2[/* error */ Error, BlockHeader | Log | String | (/* result */ Syncing), Unit]
-  ): Subscription[Syncing] = js.native
-  @JSName("subscribe")
-  def subscribe_syncing(`type`: syncing, options: LogsOptions): Subscription[Log | BlockHeader | Syncing | String] = js.native
-  @JSName("subscribe")
-  def subscribe_syncing(
-    `type`: syncing,
-    options: LogsOptions,
-    callback: js.Function2[/* error */ Error, /* item */ Log | Syncing | BlockHeader | String, Unit]
-  ): Subscription[Log | BlockHeader | Syncing | String] = js.native
+  def subscribe_syncing(`type`: syncing, callback: js.Function2[/* error */ Error, /* result */ Syncing, Unit]): Subscription[Syncing] = js.native
 }
 
 /* static members */
 @JSImport("web3-eth", "Eth")
 @js.native
 object Eth extends js.Object {
+  val givenProvider: js.Any = js.native
   val providers: Providers = js.native
 }
 

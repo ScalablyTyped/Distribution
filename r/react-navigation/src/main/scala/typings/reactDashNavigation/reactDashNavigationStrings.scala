@@ -1,16 +1,17 @@
 package typings.reactDashNavigation
 
-import typings.reactDashNavigation.reactDashNavigationMod.DrawerLockMode
 import typings.reactDashNavigation.reactDashNavigationMod.EventType
-import typings.reactDashNavigation.reactDashNavigationMod.HeaderMode
-import typings.reactDashNavigation.reactDashNavigationMod.NavigationGestureDirection
 import typings.reactDashNavigation.reactDashNavigationMod.NavigatorType
 import typings.reactDashNavigation.reactDashNavigationMod.SafeAreaViewForceInsetValue
+import typings.reactDashNavigation.reactDashNavigationMod.SupportedThemes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashNavigationStrings {
+  @js.native
+  sealed trait CHILD_ACTION extends js.Object
+  
   @js.native
   sealed trait `Navigation/BACK` extends js.Object
   
@@ -21,7 +22,16 @@ object reactDashNavigationStrings {
   sealed trait `Navigation/COMPLETE_TRANSITION` extends js.Object
   
   @js.native
+  sealed trait `Navigation/DRAWER_CLOSED` extends js.Object
+  
+  @js.native
+  sealed trait `Navigation/DRAWER_OPENED` extends js.Object
+  
+  @js.native
   sealed trait `Navigation/INIT` extends js.Object
+  
+  @js.native
+  sealed trait `Navigation/JUMP_TO` extends js.Object
   
   @js.native
   sealed trait `Navigation/NAVIGATE` extends js.Object
@@ -60,16 +70,7 @@ object reactDashNavigationStrings {
   sealed trait always extends SafeAreaViewForceInsetValue
   
   @js.native
-  sealed trait bottom extends js.Object
-  
-  @js.native
-  sealed trait card extends js.Object
-  
-  @js.native
-  sealed trait center extends js.Object
-  
-  @js.native
-  sealed trait default extends js.Object
+  sealed trait dark extends SupportedThemes
   
   @js.native
   sealed trait didBlur extends EventType
@@ -78,37 +79,28 @@ object reactDashNavigationStrings {
   sealed trait didFocus extends EventType
   
   @js.native
-  sealed trait `fade-in-place` extends js.Object
-  
-  @js.native
-  sealed trait float extends HeaderMode
-  
-  @js.native
-  sealed trait horizontal extends NavigationGestureDirection
+  sealed trait history extends js.Object
   
   @js.native
   sealed trait initialRoute extends js.Object
   
   @js.native
-  sealed trait inverted extends js.Object
+  sealed trait isLandscape extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
-  
-  @js.native
-  sealed trait `locked-closed` extends DrawerLockMode
-  
-  @js.native
-  sealed trait `locked-open` extends DrawerLockMode
-  
-  @js.native
-  sealed trait modal extends js.Object
+  sealed trait light extends SupportedThemes
   
   @js.native
   sealed trait never extends SafeAreaViewForceInsetValue
   
   @js.native
-  sealed trait none extends HeaderMode
+  sealed trait `no-preference` extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
+  sealed trait order extends js.Object
   
   @js.native
   sealed trait `react-navigation/DRAWER` extends NavigatorType
@@ -120,22 +112,7 @@ object reactDashNavigationStrings {
   sealed trait `react-navigation/TABS` extends NavigatorType
   
   @js.native
-  sealed trait right extends js.Object
-  
-  @js.native
-  sealed trait screen extends HeaderMode
-  
-  @js.native
-  sealed trait top extends js.Object
-  
-  @js.native
-  sealed trait uikit extends js.Object
-  
-  @js.native
-  sealed trait unlocked extends DrawerLockMode
-  
-  @js.native
-  sealed trait vertical extends NavigationGestureDirection
+  sealed trait refocus extends js.Object
   
   @js.native
   sealed trait willBlur extends EventType
@@ -144,13 +121,21 @@ object reactDashNavigationStrings {
   sealed trait willFocus extends EventType
   
   @scala.inline
+  def CHILD_ACTION: CHILD_ACTION = "CHILD_ACTION".asInstanceOf[CHILD_ACTION]
+  @scala.inline
   def `Navigation/BACK`: `Navigation/BACK` = "Navigation/BACK".asInstanceOf[`Navigation/BACK`]
   @scala.inline
   def `Navigation/CLOSE_DRAWER`: `Navigation/CLOSE_DRAWER` = "Navigation/CLOSE_DRAWER".asInstanceOf[`Navigation/CLOSE_DRAWER`]
   @scala.inline
   def `Navigation/COMPLETE_TRANSITION`: `Navigation/COMPLETE_TRANSITION` = "Navigation/COMPLETE_TRANSITION".asInstanceOf[`Navigation/COMPLETE_TRANSITION`]
   @scala.inline
+  def `Navigation/DRAWER_CLOSED`: `Navigation/DRAWER_CLOSED` = "Navigation/DRAWER_CLOSED".asInstanceOf[`Navigation/DRAWER_CLOSED`]
+  @scala.inline
+  def `Navigation/DRAWER_OPENED`: `Navigation/DRAWER_OPENED` = "Navigation/DRAWER_OPENED".asInstanceOf[`Navigation/DRAWER_OPENED`]
+  @scala.inline
   def `Navigation/INIT`: `Navigation/INIT` = "Navigation/INIT".asInstanceOf[`Navigation/INIT`]
+  @scala.inline
+  def `Navigation/JUMP_TO`: `Navigation/JUMP_TO` = "Navigation/JUMP_TO".asInstanceOf[`Navigation/JUMP_TO`]
   @scala.inline
   def `Navigation/NAVIGATE`: `Navigation/NAVIGATE` = "Navigation/NAVIGATE".asInstanceOf[`Navigation/NAVIGATE`]
   @scala.inline
@@ -176,39 +161,27 @@ object reactDashNavigationStrings {
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def card: card = "card".asInstanceOf[card]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  def dark: dark = "dark".asInstanceOf[dark]
   @scala.inline
   def didBlur: didBlur = "didBlur".asInstanceOf[didBlur]
   @scala.inline
   def didFocus: didFocus = "didFocus".asInstanceOf[didFocus]
   @scala.inline
-  def `fade-in-place`: `fade-in-place` = "fade-in-place".asInstanceOf[`fade-in-place`]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  def history: history = "history".asInstanceOf[history]
   @scala.inline
   def initialRoute: initialRoute = "initialRoute".asInstanceOf[initialRoute]
   @scala.inline
-  def inverted: inverted = "inverted".asInstanceOf[inverted]
+  def isLandscape: isLandscape = "isLandscape".asInstanceOf[isLandscape]
   @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
-  @scala.inline
-  def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
-  @scala.inline
-  def modal: modal = "modal".asInstanceOf[modal]
+  def light: light = "light".asInstanceOf[light]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
+  def `no-preference`: `no-preference` = "no-preference".asInstanceOf[`no-preference`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def order: order = "order".asInstanceOf[order]
   @scala.inline
   def `react-navigation/DRAWER`: `react-navigation/DRAWER` = "react-navigation/DRAWER".asInstanceOf[`react-navigation/DRAWER`]
   @scala.inline
@@ -216,17 +189,7 @@ object reactDashNavigationStrings {
   @scala.inline
   def `react-navigation/TABS`: `react-navigation/TABS` = "react-navigation/TABS".asInstanceOf[`react-navigation/TABS`]
   @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def uikit: uikit = "uikit".asInstanceOf[uikit]
-  @scala.inline
-  def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  def refocus: refocus = "refocus".asInstanceOf[refocus]
   @scala.inline
   def willBlur: willBlur = "willBlur".asInstanceOf[willBlur]
   @scala.inline

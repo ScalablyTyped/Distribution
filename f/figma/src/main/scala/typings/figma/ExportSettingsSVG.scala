@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 trait ExportSettingsSVG extends ExportSettings {
   var contentsOnly: js.UndefOr[Boolean] = js.undefined
   var format: SVG
-      // defaults to true
+   // defaults to true
   var suffix: js.UndefOr[String] = js.undefined
-    // defaults to true
+   // defaults to true
   var svgIdAttribute: js.UndefOr[Boolean] = js.undefined
   var svgOutlineText: js.UndefOr[Boolean] = js.undefined
-    // defaults to false
+   // defaults to false
   var svgSimplifyStroke: js.UndefOr[Boolean] = js.undefined
 }
 

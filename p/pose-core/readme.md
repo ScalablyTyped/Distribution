@@ -1,7 +1,7 @@
 
 # Scala.js typings for pose-core
 
-Typings are for version 2.1.0
+Typings are for version 2.1.1
 
 ## Library description:
 Factory for Pose animation state machines

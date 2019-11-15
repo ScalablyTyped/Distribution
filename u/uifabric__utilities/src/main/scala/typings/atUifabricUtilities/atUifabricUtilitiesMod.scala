@@ -313,7 +313,6 @@ object atUifabricUtilitiesMod extends js.Object {
   def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = js.native
   def getDistanceBetweenPoints(point1: IPoint, point2: IPoint): Double = js.native
   def getDocument(): js.UndefOr[Document] = js.native
-  def getDocument(rootElement: Component[js.Object, js.Object, _]): js.UndefOr[Document] = js.native
   def getDocument(rootElement: HTMLElement): js.UndefOr[Document] = js.native
   def getElementIndexPath(fromElement: HTMLElement, toElement: HTMLElement): js.Array[Double] = js.native
   def getFirstFocusable(rootElement: HTMLElement, currentElement: HTMLElement): HTMLElement | Null = js.native
@@ -399,7 +398,6 @@ object atUifabricUtilitiesMod extends js.Object {
   def getScrollbarWidth(): Double = js.native
   def getVirtualParent(child: HTMLElement): js.UndefOr[HTMLElement] = js.native
   def getWindow(): js.UndefOr[Window] = js.native
-  def getWindow(rootElement: Component[js.Object, js.Object, _]): js.UndefOr[Window] = js.native
   def getWindow(rootElement: Element): js.UndefOr[Window] = js.native
   def hasHorizontalOverflow(element: HTMLElement): Boolean = js.native
   def hasOverflow(element: HTMLElement): Boolean = js.native

@@ -5,6 +5,7 @@ import typings.chartDotJs.chartDotJsStrings.before
 import typings.chartDotJs.chartDotJsStrings.bevel
 import typings.chartDotJs.chartDotJsStrings.butt
 import typings.chartDotJs.chartDotJsStrings.default
+import typings.chartDotJs.chartDotJsStrings.flex
 import typings.chartDotJs.chartDotJsStrings.middle
 import typings.chartDotJs.chartDotJsStrings.miter
 import typings.chartDotJs.chartDotJsStrings.monotone
@@ -18,6 +19,8 @@ import scala.scalajs.js.annotation._
 
 trait ChartDataSets extends js.Object {
   var backgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
+  var barPercentage: js.UndefOr[Double] = js.undefined
+  var barThickness: js.UndefOr[Double | flex] = js.undefined
   var borderAlign: js.UndefOr[BorderAlignment | js.Array[BorderAlignment] | Scriptable[BorderAlignment]] = js.undefined
   var borderCapStyle: js.UndefOr[butt | round | square] = js.undefined
   var borderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
@@ -26,6 +29,7 @@ trait ChartDataSets extends js.Object {
   var borderJoinStyle: js.UndefOr[bevel | round | miter] = js.undefined
   var borderSkipped: js.UndefOr[PositionType | js.Array[PositionType] | Scriptable[PositionType]] = js.undefined
   var borderWidth: js.UndefOr[BorderWidth | js.Array[BorderWidth] | Scriptable[BorderWidth]] = js.undefined
+  var categoryPercentage: js.UndefOr[Double] = js.undefined
   var cubicInterpolationMode: js.UndefOr[default | monotone] = js.undefined
   var data: js.UndefOr[js.Array[js.UndefOr[ChartPoint | Double | Null]]] = js.undefined
   var fill: js.UndefOr[Boolean | Double | String] = js.undefined
@@ -37,6 +41,8 @@ trait ChartDataSets extends js.Object {
   var hoverBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var lineTension: js.UndefOr[Double] = js.undefined
+  var maxBarThickness: js.UndefOr[Double] = js.undefined
+  var minBarLength: js.UndefOr[Double] = js.undefined
   var pointBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   var pointBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   var pointBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
@@ -66,6 +72,8 @@ object ChartDataSets {
   @scala.inline
   def apply(
     backgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
+    barPercentage: Int | Double = null,
+    barThickness: Double | flex = null,
     borderAlign: BorderAlignment | js.Array[BorderAlignment] | Scriptable[BorderAlignment] = null,
     borderCapStyle: butt | round | square = null,
     borderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
@@ -74,6 +82,7 @@ object ChartDataSets {
     borderJoinStyle: bevel | round | miter = null,
     borderSkipped: PositionType | js.Array[PositionType] | Scriptable[PositionType] = null,
     borderWidth: BorderWidth | js.Array[BorderWidth] | Scriptable[BorderWidth] = null,
+    categoryPercentage: Int | Double = null,
     cubicInterpolationMode: default | monotone = null,
     data: js.Array[js.UndefOr[ChartPoint | Double | Null]] = null,
     fill: Boolean | Double | String = null,
@@ -85,6 +94,8 @@ object ChartDataSets {
     hoverBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
     label: String = null,
     lineTension: Int | Double = null,
+    maxBarThickness: Int | Double = null,
+    minBarLength: Int | Double = null,
     pointBackgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     pointBorderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     pointBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
@@ -109,6 +120,8 @@ object ChartDataSets {
   ): ChartDataSets = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (barPercentage != null) __obj.updateDynamic("barPercentage")(barPercentage.asInstanceOf[js.Any])
+    if (barThickness != null) __obj.updateDynamic("barThickness")(barThickness.asInstanceOf[js.Any])
     if (borderAlign != null) __obj.updateDynamic("borderAlign")(borderAlign.asInstanceOf[js.Any])
     if (borderCapStyle != null) __obj.updateDynamic("borderCapStyle")(borderCapStyle.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
@@ -117,6 +130,7 @@ object ChartDataSets {
     if (borderJoinStyle != null) __obj.updateDynamic("borderJoinStyle")(borderJoinStyle.asInstanceOf[js.Any])
     if (borderSkipped != null) __obj.updateDynamic("borderSkipped")(borderSkipped.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (categoryPercentage != null) __obj.updateDynamic("categoryPercentage")(categoryPercentage.asInstanceOf[js.Any])
     if (cubicInterpolationMode != null) __obj.updateDynamic("cubicInterpolationMode")(cubicInterpolationMode.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
@@ -128,6 +142,8 @@ object ChartDataSets {
     if (hoverBorderWidth != null) __obj.updateDynamic("hoverBorderWidth")(hoverBorderWidth.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
     if (lineTension != null) __obj.updateDynamic("lineTension")(lineTension.asInstanceOf[js.Any])
+    if (maxBarThickness != null) __obj.updateDynamic("maxBarThickness")(maxBarThickness.asInstanceOf[js.Any])
+    if (minBarLength != null) __obj.updateDynamic("minBarLength")(minBarLength.asInstanceOf[js.Any])
     if (pointBackgroundColor != null) __obj.updateDynamic("pointBackgroundColor")(pointBackgroundColor.asInstanceOf[js.Any])
     if (pointBorderColor != null) __obj.updateDynamic("pointBorderColor")(pointBorderColor.asInstanceOf[js.Any])
     if (pointBorderWidth != null) __obj.updateDynamic("pointBorderWidth")(pointBorderWidth.asInstanceOf[js.Any])

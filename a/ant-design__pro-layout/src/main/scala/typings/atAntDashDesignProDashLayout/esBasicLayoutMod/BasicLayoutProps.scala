@@ -5,8 +5,15 @@ import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.antd.libMenuMod.MenuProps
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.MenuDataItemisUrlboolean
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.lg
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.md
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sm
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xl
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xs
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xxl
 import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
 import typings.atAntDashDesignProDashLayout.esGetPageTitleMod.GetPageTitleProps
 import typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps
@@ -16,6 +23,7 @@ import typings.atAntDashDesignProDashLayout.esTypingsMod.MenuDataItem
 import typings.atAntDashDesignProDashLayout.esTypingsMod.MessageDescriptor
 import typings.atAntDashDesignProDashLayout.esTypingsMod.WithFalse
 import typings.react.NativeMouseEvent
+import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
@@ -26,13 +34,14 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/es/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> ]:? @ant-design/pro-layout.@ant-design/pro-layout/es/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route>[P]}
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings ]:? @ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings[P]} */ /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps because var conflicts: logo, siderWidth. Inlined isMobile, collapsed, autoHideHeader, menuRender, headerRender, rightContentRender, menu, navTheme, contentWidth, layout, title, fixedHeader, iconfontUrl, fixSiderbar, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
+- typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps because var conflicts: className, logo, siderWidth, style. Inlined isMobile, collapsed, autoHideHeader, menuRender, headerRender, rightContentRender, menu, navTheme, contentWidth, layout, title, fixedHeader, iconfontUrl, fixSiderbar, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
   var autoHideHeader: js.UndefOr[Boolean] = js.undefined
   var breadcrumbRender: js.UndefOr[
     js.Function1[/* routers */ js.UndefOr[js.Array[Route]], js.UndefOr[js.Array[Route]]]
   ] = js.undefined
   var collapsed: js.UndefOr[Boolean] = js.undefined
   var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
+  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
   /**
     * 是否禁用移动端模式，有的管理系统不需要移动端模式，此属性设置为true即可
@@ -44,8 +53,11 @@ import scala.scalajs.js.annotation._
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
   var formatMessage: js.UndefOr[js.Function1[/* message */ MessageDescriptor, String]] = js.undefined
-  var headerRender: js.UndefOr[WithFalse[js.Function1[/* props */ HeaderViewProps, ReactNode]]] = js.undefined
+  var headerRender: js.UndefOr[
+    WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
+  ] = js.undefined
   var iconfontUrl: js.UndefOr[String] = js.undefined
+  var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   var isMobile: js.UndefOr[Boolean] = js.undefined
   var itemRender: js.UndefOr[
     js.Function4[
@@ -58,6 +70,9 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var locale: js.UndefOr[localeType] = js.undefined
+  /**
+    * logo url
+    */
   @JSName("logo")
   var logo_BasicLayoutProps: js.UndefOr[ReactNode | WithFalse[js.Function0[ReactNode]]] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
@@ -74,7 +89,7 @@ import scala.scalajs.js.annotation._
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var pageTitleRender: js.UndefOr[
     WithFalse[
-      js.Function2[/* props */ GetPageTitleProps, /* ignoreTile */ js.UndefOr[Boolean], String]
+      js.Function2[/* props */ GetPageTitleProps, /* defaultPageTitle */ js.UndefOr[String], String]
     ]
   ] = js.undefined
   var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
@@ -86,16 +101,20 @@ object BasicLayoutProps {
   def apply(
     autoHideHeader: js.UndefOr[Boolean] = js.undefined,
     breadcrumbRender: /* routers */ js.UndefOr[js.Array[Route]] => js.UndefOr[js.Array[Route]] = null,
+    breakpoint: xs | sm | md | lg | xl | xxl | `false` = null,
+    className: String = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
+    contentStyle: CSSProperties = null,
     contentWidth: ContentWidth = null,
     disableMobile: js.UndefOr[Boolean] = js.undefined,
     fixSiderbar: js.UndefOr[Boolean] = js.undefined,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
     footerRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
     formatMessage: /* message */ MessageDescriptor => String = null,
-    headerRender: WithFalse[js.Function1[/* props */ HeaderViewProps, ReactNode]] = null,
+    headerRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
     iconfontUrl: String = null,
+    isChildrenLayout: js.UndefOr[Boolean] = js.undefined,
     isMobile: js.UndefOr[Boolean] = js.undefined,
     itemRender: (/* route */ Route, /* params */ js.Any, /* routes */ js.Array[Route], /* paths */ js.Array[String]) => ReactNode = null,
     layout: sidemenu | topmenu = null,
@@ -113,17 +132,21 @@ object BasicLayoutProps {
     onCollapse: /* collapsed */ Boolean => Unit = null,
     onMenuHeaderClick: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     pageTitleRender: WithFalse[
-      js.Function2[/* props */ GetPageTitleProps, /* ignoreTile */ js.UndefOr[Boolean], String]
+      js.Function2[/* props */ GetPageTitleProps, /* defaultPageTitle */ js.UndefOr[String], String]
     ] = null,
     rightContentRender: WithFalse[js.Function1[BasicLayoutProps, ReactNode]] = null,
     siderWidth: Int | Double = null,
+    style: CSSProperties = null,
     title: String = null
   ): BasicLayoutProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader)
     if (breadcrumbRender != null) __obj.updateDynamic("breadcrumbRender")(js.Any.fromFunction1(breadcrumbRender))
+    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (collapsedButtonRender != null) __obj.updateDynamic("collapsedButtonRender")(collapsedButtonRender.asInstanceOf[js.Any])
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth)
     if (!js.isUndefined(disableMobile)) __obj.updateDynamic("disableMobile")(disableMobile)
     if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar)
@@ -132,6 +155,7 @@ object BasicLayoutProps {
     if (formatMessage != null) __obj.updateDynamic("formatMessage")(js.Any.fromFunction1(formatMessage))
     if (headerRender != null) __obj.updateDynamic("headerRender")(headerRender.asInstanceOf[js.Any])
     if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl)
+    if (!js.isUndefined(isChildrenLayout)) __obj.updateDynamic("isChildrenLayout")(isChildrenLayout)
     if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile)
     if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction4(itemRender))
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
@@ -149,6 +173,7 @@ object BasicLayoutProps {
     if (pageTitleRender != null) __obj.updateDynamic("pageTitleRender")(pageTitleRender.asInstanceOf[js.Any])
     if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])
     if (siderWidth != null) __obj.updateDynamic("siderWidth")(siderWidth.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[BasicLayoutProps]
   }

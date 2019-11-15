@@ -7,9 +7,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-	 * A suite of browser and device tests from {@link browser}.
-	 *
-	 */
+  * A suite of browser and device tests from {@link browser}.
+  *
+  */
 @JSImport("video.js", "browser")
 @js.native
 object browser extends TopLevel[Browser]

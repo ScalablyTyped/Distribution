@@ -11,7 +11,7 @@ trait NavigationState extends js.Object {
   var index: Double
   var isTransitioning: Boolean
   var key: String
-  var params: NavigationParams
+  var params: js.UndefOr[NavigationParams] = js.undefined
   var routes: js.Array[NavigationRoute[NavigationParams]]
 }
 
@@ -21,11 +21,11 @@ object NavigationState {
     index: Double,
     isTransitioning: Boolean,
     key: String,
-    params: NavigationParams,
-    routes: js.Array[NavigationRoute[NavigationParams]]
+    routes: js.Array[NavigationRoute[NavigationParams]],
+    params: NavigationParams = null
   ): NavigationState = {
-    val __obj = js.Dynamic.literal(index = index, isTransitioning = isTransitioning, key = key, params = params, routes = routes)
-  
+    val __obj = js.Dynamic.literal(index = index, isTransitioning = isTransitioning, key = key, routes = routes)
+    if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[NavigationState]
   }
 }

@@ -14,17 +14,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object CaptionsButton
   extends /**
-		 * Creates an instance of this class.
-		 *
-		 * @param player
-		 *        The `Player` that this class should be attached to.
-		 *
-		 * @param [options]
-		 *        The key/value store of player options.
-		 *
-		 * @param [ready]
-		 *        The function to call when this function is ready.
-		 */
+  * Creates an instance of this class.
+  *
+  * @param player
+  *        The `Player` that this class should be attached to.
+  *
+  * @param [options]
+  *        The key/value store of player options.
+  *
+  * @param [ready]
+  *        The function to call when this function is ready.
+  */
 Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.CaptionsButton]
      with Instantiable2[
       /* player */ Player, 

@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class MenuCls protected () extends Menu {
   /**
-  		 * Create an instance of this class.
-  		 *
-  		 * @param player
-  		 *        the player that this component should attach to
-  		 *
-  		 * @param [options]
-  		 *        Object of option names and values
-  		 *
-  		 */
+    * Create an instance of this class.
+    *
+    * @param player
+    *        the player that this component should attach to
+    *
+    * @param [options]
+    *        Object of option names and values
+    *
+    */
   def this(player: Player) = this()
   def this(player: Player, options: MenuOptions) = this()
 }

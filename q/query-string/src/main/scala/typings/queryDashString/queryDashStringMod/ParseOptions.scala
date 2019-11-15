@@ -14,21 +14,25 @@ trait ParseOptions extends js.Object {
   	@default 'none'
   	- `bracket`: Parse arrays with bracket representation:
   		```
+  		import queryString = require('query-string');
   		queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'});
   		//=> {foo: ['1', '2', '3']}
   		```
   	- `index`: Parse arrays with index representation:
   		```
+  		import queryString = require('query-string');
   		queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'});
   		//=> {foo: ['1', '2', '3']}
   		```
   	- `comma`: Parse arrays with elements separated by comma:
   		```
+  		import queryString = require('query-string');
   		queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
   		//=> {foo: ['1', '2', '3']}
   		```
   	- `none`: Parse arrays with elements using duplicate keys:
   		```
+  		import queryString = require('query-string');
   		queryString.parse('foo=1&foo=2&foo=3');
   		//=> {foo: ['1', '2', '3']}
   		```
@@ -44,6 +48,7 @@ trait ParseOptions extends js.Object {
   	@default false
   	@example
   	```
+  	import queryString = require('query-string');
   	queryString.parse('foo=true', {parseBooleans: true});
   	//=> {foo: true}
   	```
@@ -53,7 +58,8 @@ trait ParseOptions extends js.Object {
   	Parse the value as a number type instead of string type if it's a number.
   	@default false
   	@example
-  	```js
+  	```
+  	import queryString = require('query-string');
   	queryString.parse('foo=1', {parseNumbers: true});
   	//=> {foo: 1}
   	```
@@ -65,12 +71,16 @@ trait ParseOptions extends js.Object {
   	@default true
   	@example
   	```
+  	import queryString = require('query-string');
   	const order = ['c', 'a', 'b'];
   	queryString.parse('?a=one&b=two&c=three', {
   		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
   	});
   	//=> {c: 'three', a: 'one', b: 'two'}
   	```
+  	@example
+  	```
+  	import queryString = require('query-string');
   	queryString.parse('?a=one&c=three&b=two', {sort: false});
   	//=> {a: 'one', c: 'three', b: 'two'}
   	```

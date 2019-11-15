@@ -23,7 +23,6 @@ trait GatsbyImageProps extends js.Object {
   var imgStyle: js.UndefOr[js.Object] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
   var loading: js.UndefOr[auto | `lazy` | eager] = js.undefined
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
   var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onStartLoad: js.UndefOr[js.Function1[/* param */ Anon_WasCached, Unit]] = js.undefined
@@ -52,7 +51,6 @@ object GatsbyImageProps {
     imgStyle: js.Object = null,
     itemProp: String = null,
     loading: auto | `lazy` | eager = null,
-    onClick: () => Unit = null,
     onError: /* event */ js.Any => Unit = null,
     onLoad: () => Unit = null,
     onStartLoad: /* param */ Anon_WasCached => Unit = null,
@@ -78,7 +76,6 @@ object GatsbyImageProps {
     if (imgStyle != null) __obj.updateDynamic("imgStyle")(imgStyle)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
     if (onStartLoad != null) __obj.updateDynamic("onStartLoad")(js.Any.fromFunction1(onStartLoad))

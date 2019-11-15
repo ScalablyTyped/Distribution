@@ -5,8 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_X extends js.Object {
+  /**
+    * x 轴的角速度
+    */
   var x: Double
+  /**
+    * y 轴的角速度
+    */
   var y: Double
+  /**
+    * z 轴的角速度
+    */
   var z: Double
 }
 

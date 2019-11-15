@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wegame-api"
-version := "2.6-dt-20190925Z-0bda86"
+version := "2.7-dt-20191113Z-91ff77"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

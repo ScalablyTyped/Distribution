@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   - typings.reactDashNavigation.reactDashNavigationMod.NavigationNavigateAction
   - typings.reactDashNavigation.reactDashNavigationMod.NavigationBackAction
 */
-trait NavigationTabAction extends NavigationAction
+trait NavigationTabAction extends _NavigationAction
 

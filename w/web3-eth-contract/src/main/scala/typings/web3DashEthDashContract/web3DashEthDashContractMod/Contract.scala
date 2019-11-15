@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.web3DashCore.web3DashCoreMod.Common
 import typings.web3DashCore.web3DashCoreMod.chain
 import typings.web3DashCore.web3DashCoreMod.hardfork
-import typings.web3DashCore.web3DashCoreMod.provider
 import typings.web3DashUtils.web3DashUtilsMod.AbiItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation._
 @JSImport("web3-eth-contract", "Contract")
 @js.native
 class Contract protected () extends js.Object {
-  def this(provider: provider, abi: js.Array[AbiItem]) = this()
-  def this(provider: provider, abi: js.Array[AbiItem], address: String) = this()
-  def this(provider: provider, abi: js.Array[AbiItem], address: String, options: ContractOptions) = this()
+  def this(jsonInterface: js.Array[AbiItem]) = this()
+  def this(jsonInterface: js.Array[AbiItem], address: String) = this()
+  def this(jsonInterface: js.Array[AbiItem], address: String, options: ContractOptions) = this()
   var _address: String = js.native
   var _jsonInterface: js.Array[AbiItem] = js.native
   var defaultAccount: String | Null = js.native
@@ -32,10 +31,10 @@ class Contract protected () extends js.Object {
   def deploy(options: DeployOptions): ContractSendMethod = js.native
   def getPastEvents(event: String): js.Promise[js.Array[EventData]] = js.native
   def getPastEvents(event: String, callback: js.Function2[/* error */ Error, /* event */ EventData, Unit]): js.Promise[js.Array[EventData]] = js.native
-  def getPastEvents(event: String, options: EventOptions): js.Promise[js.Array[EventData]] = js.native
+  def getPastEvents(event: String, options: PastEventOptions): js.Promise[js.Array[EventData]] = js.native
   def getPastEvents(
     event: String,
-    options: EventOptions,
+    options: PastEventOptions,
     callback: js.Function2[/* error */ Error, /* event */ EventData, Unit]
   ): js.Promise[js.Array[EventData]] = js.native
   def once(event: String, callback: js.Function2[/* error */ Error, /* event */ EventData, Unit]): Unit = js.native

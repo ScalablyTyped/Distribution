@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object resetFormatTime extends js.Object {
   /**
-  	 * Resets formatTime to the default implementation.
-  	 */
+    * Resets formatTime to the default implementation.
+    */
   def apply(): Unit = js.native
 }
 

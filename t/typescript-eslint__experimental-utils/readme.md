@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript-eslint__experimental-utils
 
-Typings are for version 2.6.1
+Typings are for version 2.7.0
 
 ## Library description:
 (Experimental) Utilities for working with TypeScript + ESLint together

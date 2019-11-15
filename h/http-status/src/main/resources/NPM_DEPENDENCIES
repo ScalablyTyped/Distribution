@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "http-status" : "1.4.0"
+      "http-status" : "1.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "http-status" : "1.4.0"
+      "http-status" : "1.4.1"
     }
   ],
   "compile-devDependencies" : [

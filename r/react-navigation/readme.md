@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation
 
-Typings are for version 3.0
+Typings are for version 4.0.10
 
 ## Library description:
 Routing and navigation for your React Native apps
@@ -24,7 +24,7 @@ Routing and navigation for your React Native apps
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

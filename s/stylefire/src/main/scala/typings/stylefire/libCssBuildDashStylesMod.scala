@@ -20,5 +20,6 @@ object libCssBuildDashStylesMod extends js.Object {
   ): ResolvedState = js.native
   def createStyleBuilder(): js.Function1[/* state */ State, ResolvedState] = js.native
   def createStyleBuilder(enableHardwareAcceleration: Boolean): js.Function1[/* state */ State, ResolvedState] = js.native
+  def createStyleBuilder(enableHardwareAcceleration: Boolean, isDashCase: Boolean): js.Function1[/* state */ State, ResolvedState] = js.native
 }
 

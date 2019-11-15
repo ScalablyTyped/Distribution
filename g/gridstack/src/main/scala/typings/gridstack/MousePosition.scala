@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-* Defines the coordiantes of a object
-*/
+  * Defines the coordinates of an object
+  */
 trait MousePosition extends js.Object {
   var left: Double
   var top: Double

@@ -32,5 +32,7 @@ object atAntDashDesignProDashLayoutComponents extends atAntDashDesignProDashLayo
   def SettingDrawer: ComponentType[SettingDrawerProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esSettingDrawerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SettingDrawerProps]]
   @scala.inline
   def SiderMenu: ComponentType[SiderMenuProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esSiderMenuSiderMenuMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SiderMenuProps]]
+  @scala.inline
+  def TopNavHeader: ComponentType[TopNavHeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TopNavHeaderProps]]
 }
 

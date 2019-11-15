@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_OptionsPlayer
   extends /**
-		 * Creates an instance of this class.
-		 *
-		 * @param player
-		 *         The `Player` that this class should be attached to.
-		 *
-		 * @param [options]
-		 *         The key/value store of player options.
-		 */
+  * Creates an instance of this class.
+  *
+  * @param player
+  *         The `Player` that this class should be attached to.
+  *
+  * @param [options]
+  *         The key/value store of player options.
+  */
 Instantiable1[/* player */ Player, ClickableComponent]
      with Instantiable2[/* player */ Player, /* options */ ComponentOptions, ClickableComponent]
 

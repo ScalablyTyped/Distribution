@@ -147,6 +147,10 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
     */
   var onRenderLowerContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.undefined
   /**
+    * Add additional content above the callout list.
+    */
+  var onRenderUpperContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.undefined
+  /**
     * Callback issued when the options should be resolved, if they have been updated or
     * if they need to be passed in the first time
     */
@@ -230,6 +234,7 @@ object IComboBoxProps {
     onMenuOpen: () => Unit = null,
     onPendingValueChanged: (/* option */ js.UndefOr[IComboBoxOption], /* index */ js.UndefOr[Double], /* value */ js.UndefOr[String]) => Unit = null,
     onRenderLowerContent: (/* props */ js.UndefOr[IComboBoxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IComboBoxProps], Element | Null]]) => Element | Null = null,
+    onRenderUpperContent: (/* props */ js.UndefOr[IComboBoxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IComboBoxProps], Element | Null]]) => Element | Null = null,
     onResolveOptions: /* options */ js.Array[IComboBoxOption] => js.Array[IComboBoxOption] | js.Thenable[js.Array[IComboBoxOption]] = null,
     onScrollToItem: /* itemIndex */ Double => Unit = null,
     persistMenu: js.UndefOr[Boolean] = js.undefined,
@@ -263,6 +268,7 @@ object IComboBoxProps {
     if (onMenuOpen != null) __obj.updateDynamic("onMenuOpen")(js.Any.fromFunction0(onMenuOpen))
     if (onPendingValueChanged != null) __obj.updateDynamic("onPendingValueChanged")(js.Any.fromFunction3(onPendingValueChanged))
     if (onRenderLowerContent != null) __obj.updateDynamic("onRenderLowerContent")(js.Any.fromFunction2(onRenderLowerContent))
+    if (onRenderUpperContent != null) __obj.updateDynamic("onRenderUpperContent")(js.Any.fromFunction2(onRenderUpperContent))
     if (onResolveOptions != null) __obj.updateDynamic("onResolveOptions")(js.Any.fromFunction1(onResolveOptions))
     if (onScrollToItem != null) __obj.updateDynamic("onScrollToItem")(js.Any.fromFunction1(onScrollToItem))
     if (!js.isUndefined(persistMenu)) __obj.updateDynamic("persistMenu")(persistMenu)

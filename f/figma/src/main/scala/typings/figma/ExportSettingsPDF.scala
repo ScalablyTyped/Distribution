@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ExportSettingsPDF extends ExportSettings {
   var contentsOnly: js.UndefOr[Boolean] = js.undefined
   var format: PDF
-      // defaults to true
+   // defaults to true
   var suffix: js.UndefOr[String] = js.undefined
 }
 

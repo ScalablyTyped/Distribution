@@ -58,6 +58,20 @@ object distTypesCoreServicesJobsMod extends js.Object {
       artifactPath: String,
       hasStreamOptions: Anon_Stream with BaseRequestOptions
     ): js.Any = js.native
+    def downloadSingleArtifactFileFromRef(
+      projectId: String,
+      ref: String,
+      artifactPath: String,
+      name: String,
+      hasStreamOptions: Anon_Stream with BaseRequestOptions
+    ): js.Any = js.native
+    def downloadSingleArtifactFileFromRef(
+      projectId: Double,
+      ref: String,
+      artifactPath: String,
+      name: String,
+      hasStreamOptions: Anon_Stream with BaseRequestOptions
+    ): js.Any = js.native
     def downloadTraceFile(projectId: String, jobId: Double): js.Promise[GetResponse] = js.native
     def downloadTraceFile(projectId: String, jobId: Double, options: Sudo): js.Promise[GetResponse] = js.native
     def downloadTraceFile(projectId: Double, jobId: Double): js.Promise[GetResponse] = js.native

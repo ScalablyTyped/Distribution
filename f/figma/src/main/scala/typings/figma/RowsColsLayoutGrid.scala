@@ -18,9 +18,9 @@ trait RowsColsLayoutGrid extends LayoutGrid {
    // Not set for alignment: "STRETCH"
   val offset: js.UndefOr[Double] = js.undefined
   val pattern: ROWS | COLUMNS
-          // Infinity when "Auto" is set in the UI
+   // Infinity when "Auto" is set in the UI
   val sectionSize: js.UndefOr[Double] = js.undefined
-        // Not set for alignment: "CENTER"
+   // Not set for alignment: "CENTER"
   val visible: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylefire
 
-Typings are for version 4.1.4
+Typings are for version 7.0.1
 
 ## Library description:
 Performant, simplified stylers for CSS, SVG, path and DOM scroll.

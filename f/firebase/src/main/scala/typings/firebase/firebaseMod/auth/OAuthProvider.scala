@@ -52,26 +52,33 @@ class OAuthProvider protected () extends AuthProvider {
     * @param scope Provider OAuth scope to add.
     */
   def addScope(scope: String): AuthProvider = js.native
+  def credential(): OAuthCredential = js.native
+  def credential(optionsOrIdToken: String): OAuthCredential = js.native
+  def credential(optionsOrIdToken: String, accessToken: String): OAuthCredential = js.native
+  def credential(optionsOrIdToken: Null, accessToken: String): OAuthCredential = js.native
   /**
     * Creates a Firebase credential from a generic OAuth provider's access token or
-    * ID token.
+    * ID token. The raw nonce is required when an ID token with a nonce field is
+    * provided. The SHA-256 hash of the raw nonce must match the nonce field in
+    * the ID token.
     *
     * @example
     * ```javascript
     * // `googleUser` from the onsuccess Google Sign In callback.
     * // Initialize a generate OAuth provider with a `google.com` providerId.
     * var provider = new firebase.auth.OAuthProvider('google.com');
-    * var credential = provider.credential(
-    *     googleUser.getAuthResponse().id_token);
+    * var credential = provider.credential({
+    *   idToken: googleUser.getAuthResponse().id_token,
+    * });
     * firebase.auth().signInWithCredential(credential)
     * ```
     *
-    * @param idToken The OAuth ID token if OIDC compliant.
+    * @param optionsOrIdToken Either the options object containing
+    *     the ID token, access token and raw nonce or the ID token string.
     * @param accessToken The OAuth access token.
     */
-  def credential(): OAuthCredential = js.native
-  def credential(idToken: String): OAuthCredential = js.native
-  def credential(idToken: String, accessToken: String): OAuthCredential = js.native
+  def credential(optionsOrIdToken: OAuthCredentialOptions): OAuthCredential = js.native
+  def credential(optionsOrIdToken: OAuthCredentialOptions, accessToken: String): OAuthCredential = js.native
   /**
     * Sets the OAuth custom parameters to pass in an OAuth request for popup
     * and redirect sign-in operations.

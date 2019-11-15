@@ -5,26 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NavigationDescriptor[Params] extends js.Object {
+trait NavigationDescriptor[Params, Options, NavigationScreenPropType] extends js.Object {
   var key: String
-  var navigation: NavigationScreenProp[_, NavigationParams]
-  var options: NavigationScreenOptions
+  var navigation: NavigationScreenPropType
+  var options: Options
   var state: NavigationLeafRoute[Params] | NavigationStateRoute[Params]
   def getComponent(): ComponentType[js.Object]
 }
 
 object NavigationDescriptor {
   @scala.inline
-  def apply[Params](
+  def apply[Params, Options, NavigationScreenPropType](
     getComponent: () => ComponentType[js.Object],
     key: String,
-    navigation: NavigationScreenProp[_, NavigationParams],
-    options: NavigationScreenOptions,
+    navigation: NavigationScreenPropType,
+    options: Options,
     state: NavigationLeafRoute[Params] | NavigationStateRoute[Params]
-  ): NavigationDescriptor[Params] = {
-    val __obj = js.Dynamic.literal(getComponent = js.Any.fromFunction0(getComponent), key = key, navigation = navigation, options = options, state = state.asInstanceOf[js.Any])
+  ): NavigationDescriptor[Params, Options, NavigationScreenPropType] = {
+    val __obj = js.Dynamic.literal(getComponent = js.Any.fromFunction0(getComponent), key = key, navigation = navigation.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[NavigationDescriptor[Params]]
+    __obj.asInstanceOf[NavigationDescriptor[Params, Options, NavigationScreenPropType]]
   }
 }
 

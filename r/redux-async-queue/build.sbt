@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-async-queue"
-version := "1.0-dt-20180830Z-2d4213"
+version := "1.0-dt-20191113Z-bfa0f0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

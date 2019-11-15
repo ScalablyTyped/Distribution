@@ -19,6 +19,7 @@ object StackActions extends js.Object {
   val PUSH: `Navigation/PUSH` = js.native
   val REPLACE: `Navigation/REPLACE` = js.native
   val RESET: `Navigation/RESET` = js.native
+  def completeTransition(): NavigationCompleteTransitionAction = js.native
   def completeTransition(payload: NavigationCompleteTransitionActionPayload): NavigationCompleteTransitionAction = js.native
   def pop(options: NavigationPopActionPayload): NavigationPopAction = js.native
   def popToTop(): NavigationPopToTopAction = js.native

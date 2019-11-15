@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-		 * The postion of a DOM element on the page.
-		 */
+  * The postion of a DOM element on the page.
+  */
 trait Position extends js.Object {
   /**
-  			 * Pixels to the left
-  			 */
+    * Pixels to the left
+    */
   var left: Double
   /**
-  			 * Pixels on top
-  			 */
+    * Pixels on top
+    */
   var top: Double
 }
 

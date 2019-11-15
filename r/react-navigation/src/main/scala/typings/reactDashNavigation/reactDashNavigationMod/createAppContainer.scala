@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-navigation", "createAppContainer")
 @js.native
 object createAppContainer extends js.Object {
-  def apply(Component: NavigationNavigator[_, _, _]): NavigationContainer = js.native
+  def apply[Options, NavigationPropType](Component: NavigationNavigator[Options, NavigationPropType]): NavigationContainer = js.native
 }
 

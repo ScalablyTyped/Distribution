@@ -14,11 +14,9 @@ object PrefetchQueryOptions {
   def apply[TResult](
     cacheTime: Int | Double = null,
     force: js.UndefOr[Boolean] = js.undefined,
-    getCanFetchMore: (/* lastPage */ Double, /* allPages */ Double) => Boolean = null,
     manual: js.UndefOr[Boolean] = js.undefined,
     onError: /* err */ js.Any => Unit = null,
     onSucess: TResult => Unit = null,
-    paginated: js.UndefOr[Boolean] = js.undefined,
     refetchInterval: `false` | Double = null,
     retry: Boolean | Double = null,
     retryDelay: /* retryAttempt */ Double => Double = null,
@@ -28,11 +26,9 @@ object PrefetchQueryOptions {
     val __obj = js.Dynamic.literal()
     if (cacheTime != null) __obj.updateDynamic("cacheTime")(cacheTime.asInstanceOf[js.Any])
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (getCanFetchMore != null) __obj.updateDynamic("getCanFetchMore")(js.Any.fromFunction2(getCanFetchMore))
     if (!js.isUndefined(manual)) __obj.updateDynamic("manual")(manual)
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onSucess != null) __obj.updateDynamic("onSucess")(js.Any.fromFunction1(onSucess))
-    if (!js.isUndefined(paginated)) __obj.updateDynamic("paginated")(paginated)
     if (refetchInterval != null) __obj.updateDynamic("refetchInterval")(refetchInterval.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (retryDelay != null) __obj.updateDynamic("retryDelay")(js.Any.fromFunction1(retryDelay))

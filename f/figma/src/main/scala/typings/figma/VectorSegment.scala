@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait VectorSegment extends js.Object {
   val end: Double
   val start: Double
-    // Defaults to { x: 0, y: 0 }
+   // Defaults to { x: 0, y: 0 }
   val tangentEnd: js.UndefOr[Vector] = js.undefined
   val tangentStart: js.UndefOr[Vector] = js.undefined
 }

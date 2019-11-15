@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("web3", JSImport.Default)
 @js.native
-class default protected () extends Web3 {
+class default () extends Web3 {
   def this(provider: provider) = this()
   def this(provider: provider, net: Socket) = this()
   /* CompleteClass */
@@ -48,6 +48,7 @@ class default protected () extends Web3 {
 @JSImport("web3", JSImport.Default)
 @js.native
 object default extends js.Object {
+  val givenProvider: js.Any = js.native
   var modules: Modules = js.native
   val providers: Providers = js.native
   val utils: Utils = js.native

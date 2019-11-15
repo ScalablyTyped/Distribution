@@ -20,6 +20,7 @@ trait RouteContextType extends js.Object {
   var fixSiderbar: js.UndefOr[Boolean] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
   var iconfontUrl: js.UndefOr[String] = js.undefined
+  var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   var isMobile: js.UndefOr[Boolean] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
@@ -38,6 +39,7 @@ object RouteContextType {
     fixSiderbar: js.UndefOr[Boolean] = js.undefined,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
     iconfontUrl: String = null,
+    isChildrenLayout: js.UndefOr[Boolean] = js.undefined,
     isMobile: js.UndefOr[Boolean] = js.undefined,
     layout: sidemenu | topmenu = null,
     menu: Anon_Locale = null,
@@ -53,6 +55,7 @@ object RouteContextType {
     if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar)
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
     if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl)
+    if (!js.isUndefined(isChildrenLayout)) __obj.updateDynamic("isChildrenLayout")(isChildrenLayout)
     if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile)
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu)

@@ -18,7 +18,7 @@ trait ITaxRate extends IResourceObject {
   /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
-  var created: Double
+  var created: Double | Null
   /**
     * An arbitrary string attached to the tax rate for your internal use only. It will not be visible to your customers.
     */
@@ -58,19 +58,20 @@ object ITaxRate {
   @scala.inline
   def apply(
     active: Boolean,
-    created: Double,
     id: String,
     inclusive: Boolean,
     livemode: Boolean,
     metadata: IMetadata,
     `object`: tax_rate,
+    created: Int | Double = null,
     description: String = null,
     display_name: String = null,
     jurisdiction: String = null,
     percentage: Int | Double = null
   ): ITaxRate = {
-    val __obj = js.Dynamic.literal(active = active, created = created, id = id, inclusive = inclusive, livemode = livemode, metadata = metadata)
+    val __obj = js.Dynamic.literal(active = active, id = id, inclusive = inclusive, livemode = livemode, metadata = metadata)
     __obj.updateDynamic("object")(`object`)
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (display_name != null) __obj.updateDynamic("display_name")(display_name)
     if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
