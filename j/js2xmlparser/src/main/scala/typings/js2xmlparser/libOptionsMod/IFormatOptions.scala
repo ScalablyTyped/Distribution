@@ -6,23 +6,24 @@ import scala.scalajs.js.annotation._
 
 trait IFormatOptions extends js.Object {
   /**
-    * Whether double quotes or single quotes should be used in XML attributes.
-    * By default, single quotes are used.
+    * If `doubleQuotes` is `true`, double quotes are used in XML attributes.
+    * Otherwise, single quotes are used in XML attributes. If left undefined,
+    * the default value is `false`.
     */
   var doubleQuotes: js.UndefOr[Boolean] = js.undefined
   /**
-    * The indent string used for pretty-printing. The default indent string is
-    * four spaces.
+    * The indent string used for pretty-printing. If left undefined, the
+    * default value is four spaces.
     */
   var indent: js.UndefOr[String] = js.undefined
   /**
-    * The newline string used for pretty-printing. The default newline string
-    * is "\n".
+    * The newline string used for pretty-printing. If left undefined, the
+    * default value is `"\n"`.
     */
   var newline: js.UndefOr[String] = js.undefined
   /**
-    * Whether pretty-printing is enabled. By default, pretty-printing is
-    * enabled.
+    * If `pretty` is `true`, pretty-printing is enabled. If left undefined,
+    * the default value is `true`.
     */
   var pretty: js.UndefOr[Boolean] = js.undefined
 }

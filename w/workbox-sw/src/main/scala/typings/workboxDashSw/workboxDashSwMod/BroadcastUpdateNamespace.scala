@@ -1,8 +1,0 @@
-package typings.workboxDashSw.workboxDashSwMod
-
-import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-trait BroadcastUpdateNamespace extends js.Object
-

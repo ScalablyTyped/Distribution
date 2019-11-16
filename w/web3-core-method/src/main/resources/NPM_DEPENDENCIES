@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "web3-core-method" : "1.2.3"
+      "web3-core-method" : "1.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "web3-core-method" : "1.2.3"
+      "web3-core-method" : "1.2.4"
     }
   ],
   "compile-devDependencies" : [

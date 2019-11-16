@@ -10,7 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Handler extends RequestHandler[ParamsDictionary] {
+trait Handler
+  extends RequestHandler[ParamsDictionary, js.Any, js.Any] {
   var credentials: Anon_Cb = js.native
   @JSName("interpret")
   var interpret_Original: typings.express.expressMod.RequestHandler[ParamsDictionary] = js.native
@@ -22,23 +23,23 @@ trait Handler extends RequestHandler[ParamsDictionary] {
   var unhandled_Original: typings.express.expressMod.RequestHandler[ParamsDictionary] = js.native
   def init(configs: js.Array[Config]): Unit = js.native
   def interpret(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
-    res: Response,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, _, _],
+    res: Response[_],
     next: NextFunction
   ): js.Any = js.native
   def proxy(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
-    res: Response,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, _, _],
+    res: Response[_],
     next: NextFunction
   ): js.Any = js.native
   def redirect(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
-    res: Response,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, _, _],
+    res: Response[_],
     next: NextFunction
   ): js.Any = js.native
   def unhandled(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
-    res: Response,
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, _, _],
+    res: Response[_],
     next: NextFunction
   ): js.Any = js.native
 }

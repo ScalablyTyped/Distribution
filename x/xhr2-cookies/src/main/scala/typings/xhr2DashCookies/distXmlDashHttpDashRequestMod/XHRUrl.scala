@@ -13,11 +13,11 @@ trait XHRUrl extends Url {
 object XHRUrl {
   @scala.inline
   def apply(
+    href: String,
     auth: String = null,
     hash: String = null,
     host: String = null,
     hostname: String = null,
-    href: String = null,
     method: String = null,
     path: String = null,
     pathname: String = null,
@@ -27,12 +27,11 @@ object XHRUrl {
     search: String = null,
     slashes: js.UndefOr[Boolean] = js.undefined
   ): XHRUrl = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(href = href)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (href != null) __obj.updateDynamic("href")(href)
     if (method != null) __obj.updateDynamic("method")(method)
     if (path != null) __obj.updateDynamic("path")(path)
     if (pathname != null) __obj.updateDynamic("pathname")(pathname)

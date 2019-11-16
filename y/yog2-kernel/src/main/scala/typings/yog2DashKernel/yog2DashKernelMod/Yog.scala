@@ -112,16 +112,16 @@ trait Yog extends js.Object {
     * third argument.
     */
   def app(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
-    res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, _, _],
+    res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response[_]
   ): js.Any = js.native
   def app(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, _, _],
     res: ServerResponse
   ): js.Any = js.native
   def app(
     req: IncomingMessage,
-    res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
+    res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response[_]
   ): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   def bootstrap(option: YogBootstrapOption): Unit = js.native

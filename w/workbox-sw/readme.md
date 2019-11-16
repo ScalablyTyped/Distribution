@@ -1,7 +1,7 @@
 
 # Scala.js typings for workbox-sw
 
-Typings are for version 4.2
+Typings are for version 4.3
 
 ## Library description:
 This module makes it easy to get started with the Workbox service worker libraries.

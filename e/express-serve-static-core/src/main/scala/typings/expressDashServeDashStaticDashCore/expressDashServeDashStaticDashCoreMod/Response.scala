@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Response
+trait Response[ResBody]
   extends ServerResponse
      with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod._Global_.Express.Response {
   @JSName("app")
@@ -25,7 +25,7 @@ trait Response
     *     res.status(404).json('I dont have that');
     */
   @JSName("json")
-  var json_Original: Send[this.type] = js.native
+  var json_Original: Send[ResBody, this.type] = js.native
   /**
     * Send JSON response with JSONP callback support.
     *
@@ -37,13 +37,13 @@ trait Response
     *     res.status(404).jsonp('I dont have that');
     */
   @JSName("jsonp")
-  var jsonp_Original: Send[this.type] = js.native
+  var jsonp_Original: Send[ResBody, this.type] = js.native
   var locals: js.Any = js.native
   /**
     * After middleware.init executed, Response will contain req property
     * See: express/lib/middleware/init.js
     */
-  var req: js.UndefOr[Request[ParamsDictionary]] = js.native
+  var req: js.UndefOr[Request[ParamsDictionary, _, _]] = js.native
   /**
     * Send a response.
     *
@@ -55,14 +55,14 @@ trait Response
     *     res.status(404).send('Sorry, cant find that');
     */
   @JSName("send")
-  var send_Original: Send[this.type] = js.native
+  var send_Original: Send[ResBody, this.type] = js.native
   /**
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def app(req: Request[ParamsDictionary], res: Response): js.Any = js.native
-  def app(req: Request[ParamsDictionary], res: ServerResponse): js.Any = js.native
-  def app(req: IncomingMessage, res: Response): js.Any = js.native
+  def app(req: Request[ParamsDictionary, _, _], res: Response[_]): js.Any = js.native
+  def app(req: Request[ParamsDictionary, _, _], res: ServerResponse): js.Any = js.native
+  def app(req: IncomingMessage, res: Response[_]): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   /**
     * Appends the specified value to the HTTP response header field.
@@ -206,7 +206,7 @@ trait Response
     *     res.status(404).json('I dont have that');
     */
   def json(): this.type = js.native
-  def json(body: js.Any): this.type = js.native
+  def json(body: ResBody): this.type = js.native
   /**
     * Send JSON response with JSONP callback support.
     *
@@ -218,7 +218,7 @@ trait Response
     *     res.status(404).jsonp('I dont have that');
     */
   def jsonp(): this.type = js.native
-  def jsonp(body: js.Any): this.type = js.native
+  def jsonp(body: ResBody): this.type = js.native
   /**
     * Set Link header field with the given `links`.
     *
@@ -301,7 +301,7 @@ trait Response
     *     res.status(404).send('Sorry, cant find that');
     */
   def send(): this.type = js.native
-  def send(body: js.Any): this.type = js.native
+  def send(body: ResBody): this.type = js.native
   /**
     * Transfer the file at the given `path`.
     *

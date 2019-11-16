@@ -6,9 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Input to `url.format`
-trait UrlObject extends UrlObjectCommon {
-  var port: js.UndefOr[java.lang.String | Double] = js.undefined
+trait UrlObject extends js.Object {
+  var auth: js.UndefOr[java.lang.String | Null] = js.undefined
+  var hash: js.UndefOr[java.lang.String | Null] = js.undefined
+  var host: js.UndefOr[java.lang.String | Null] = js.undefined
+  var hostname: js.UndefOr[java.lang.String | Null] = js.undefined
+  var href: js.UndefOr[java.lang.String | Null] = js.undefined
+  var path: js.UndefOr[java.lang.String | Null] = js.undefined
+  var pathname: js.UndefOr[java.lang.String | Null] = js.undefined
+  var port: js.UndefOr[java.lang.String | Double | Null] = js.undefined
+  var protocol: js.UndefOr[java.lang.String | Null] = js.undefined
   var query: js.UndefOr[java.lang.String | Null | ParsedUrlQueryInput] = js.undefined
+  var search: js.UndefOr[java.lang.String | Null] = js.undefined
+  var slashes: js.UndefOr[Boolean | Null] = js.undefined
 }
 
 object UrlObject {

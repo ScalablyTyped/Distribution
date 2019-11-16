@@ -15,6 +15,6 @@ trait Anon_Formatter extends js.Object {
   var formatter_Original: RequestHandler[ParamsDictionary] = js.native
   def apply(): js.Function0[Unit] = js.native
   def apply(handler: RequestHandler[ParamsDictionary]): js.Function0[Unit] = js.native
-  def formatter(req: Request[ParamsDictionary], res: Response, next: NextFunction): js.Any = js.native
+  def formatter(req: Request[ParamsDictionary, _, _], res: Response[_], next: NextFunction): js.Any = js.native
 }
 

@@ -19,7 +19,12 @@ object libCoreTransportMod extends js.Object {
     def this(logger: Logger) = this()
     def this(logger: Logger, options: js.Any) = this()
     var logger: Logger = js.native
-    var server: js.Any = js.native
+    /**
+      * FIXME: This needs to be reworked.
+      * Some transport configuration which is controlling core behavior.
+      * @internal
+      */
+    var server: js.UndefOr[Anon_Scheme] = js.native
     def afterConnected(callback: js.Function0[Unit]): Unit = js.native
     /**
       * Returns the promise designated by the child layer then emits a connected event.

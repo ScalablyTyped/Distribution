@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jest-jasmine2" : "24.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jest-jasmine2" : "24.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

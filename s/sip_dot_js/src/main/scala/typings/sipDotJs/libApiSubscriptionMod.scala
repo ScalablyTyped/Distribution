@@ -1,6 +1,5 @@
 package typings.sipDotJs
 
-import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libApiEmitterMod.Emitter
 import typings.sipDotJs.libApiSubscriptionDashDelegateMod.SubscriptionDelegate
 import typings.sipDotJs.libApiSubscriptionDashOptionsMod.SubscriptionOptions
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libApiSubscriptionMod extends js.Object {
   @js.native
-  abstract class Subscription protected () extends EventEmitter {
+  abstract class Subscription protected () extends js.Object {
     /**
       * Constructor.
       * @param userAgent - User agent. See {@link UserAgent} for details.
@@ -62,7 +61,7 @@ object libApiSubscriptionMod extends js.Object {
       * Destructor.
       * @internal
       */
-    def dispose(): Unit = js.native
+    def _dispose(): Unit = js.native
     /** @internal */
     /* protected */ def stateTransition(newState: SubscriptionState): Unit = js.native
     /**

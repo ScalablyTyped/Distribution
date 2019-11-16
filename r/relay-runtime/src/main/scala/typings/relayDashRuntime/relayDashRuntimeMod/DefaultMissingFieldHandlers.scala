@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("relay-runtime", "DefaultMissingFieldHandlers")
 @js.native
-object DefaultMissingFieldHandlers extends TopLevel[MissingFieldHandler]
+object DefaultMissingFieldHandlers
+  extends TopLevel[js.Array[MissingFieldHandler]]
 

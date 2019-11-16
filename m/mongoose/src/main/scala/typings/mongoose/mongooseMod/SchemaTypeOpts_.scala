@@ -121,7 +121,7 @@ trait SchemaTypeOpts_[T]
     * and must return Boolean. Returning false means validation failed.
     */
   var validate: js.UndefOr[
-    RegExp | (js.Tuple2[RegExp | ValidateFn[T], String]) | ValidateFn[T] | ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts | (js.Array[
+    RegExp | (js.Tuple2[AsyncPromiseValidationFn[T] | RegExp | ValidateFn[T], String]) | ValidateFn[T] | ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts | (js.Array[
       ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts
     ])
   ] = js.undefined
@@ -154,7 +154,7 @@ object SchemaTypeOpts_ {
     `type`: T = null,
     unique: Boolean | js.Any = null,
     uppercase: Boolean | js.Any = null,
-    validate: RegExp | (js.Tuple2[RegExp | ValidateFn[T], String]) | ValidateFn[T] | ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts | (js.Array[
+    validate: RegExp | (js.Tuple2[AsyncPromiseValidationFn[T] | RegExp | ValidateFn[T], String]) | ValidateFn[T] | ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts | (js.Array[
       ValidateOpts | AsyncValidateOpts | AsyncPromiseValidationFn[T] | AsyncPromiseValidationOpts
     ]) = null
   ): SchemaTypeOpts_[T] = {

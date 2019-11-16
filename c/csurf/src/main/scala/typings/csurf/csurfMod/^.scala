@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("csurf", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): RequestHandler[ParamsDictionary] = js.native
-  def apply(options: Anon_Cookie): RequestHandler[ParamsDictionary] = js.native
+  def apply(): RequestHandler[ParamsDictionary, _, _] = js.native
+  def apply(options: Anon_Cookie): RequestHandler[ParamsDictionary, _, _] = js.native
 }
 

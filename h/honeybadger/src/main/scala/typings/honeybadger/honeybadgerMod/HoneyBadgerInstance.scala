@@ -19,7 +19,7 @@ trait HoneyBadgerInstance extends EventEmitter {
   @JSName("requestHandler")
   var requestHandler_Original: RequestHandler[ParamsDictionary] = js.native
   def configure(options: ConfigureOptions): Unit = js.native
-  def errorHandler(err: js.Any, req: Request[ParamsDictionary], res: Response, next: NextFunction): js.Any = js.native
+  def errorHandler(err: js.Any, req: Request[ParamsDictionary, _, _], res: Response[_], next: NextFunction): js.Any = js.native
   def factory(): HoneyBadgerInstance = js.native
   def factory(options: ConfigureOptions): HoneyBadgerInstance = js.native
   def lambdaHandler(handler: LambdaHandler): LambdaHandler = js.native
@@ -30,7 +30,7 @@ trait HoneyBadgerInstance extends EventEmitter {
   def notify(err: js.Any, name: js.Any, extra: metadata): Unit = js.native
   def notify(err: js.Any, name: js.Any, extra: metadata, callback: CallbackFunction): Unit = js.native
   def onUncaughtException(func: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  def requestHandler(req: Request[ParamsDictionary], res: Response, next: NextFunction): js.Any = js.native
+  def requestHandler(req: Request[ParamsDictionary, _, _], res: Response[_], next: NextFunction): js.Any = js.native
   def resetContext(): Unit = js.native
   def resetContext(context: js.Object): Unit = js.native
   def setContext(context: js.Object): Unit = js.native

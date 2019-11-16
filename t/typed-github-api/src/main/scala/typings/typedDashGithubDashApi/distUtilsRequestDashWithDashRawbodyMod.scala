@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object distUtilsRequestDashWithDashRawbodyMod extends js.Object {
   @js.native
-  trait RequestWithRawBody extends Request[ParamsDictionary] {
+  trait RequestWithRawBody
+    extends Request[ParamsDictionary, js.Any, js.Any] {
     var rawBody: js.UndefOr[Uint8Array] = js.native
   }
   

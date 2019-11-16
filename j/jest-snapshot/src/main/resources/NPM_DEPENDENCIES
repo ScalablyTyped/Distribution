@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jest-snapshot" : "24.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jest-snapshot" : "24.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

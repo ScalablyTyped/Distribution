@@ -1,7 +1,7 @@
 
 # Scala.js typings for lolex
 
-Typings are for version 3.1
+Typings are for version 5.1
 
 ## Library description:
 Fake JavaScript timers

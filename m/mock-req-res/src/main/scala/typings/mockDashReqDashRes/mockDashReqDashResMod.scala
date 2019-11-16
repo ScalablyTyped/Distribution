@@ -28,7 +28,8 @@ object mockDashReqDashResMod extends js.Object {
   }
   
   @js.native
-  trait RequestOutput extends Request[ParamsDictionary] {
+  trait RequestOutput
+    extends Request[ParamsDictionary, js.Any, js.Any] {
     @JSName("get")
     var get_Original: SinonStub = js.native
     // Methods
@@ -36,7 +37,8 @@ object mockDashReqDashResMod extends js.Object {
   }
   
   @js.native
-  trait ResponseOutput extends Response {
+  trait ResponseOutput
+    extends Response[js.Any] {
     @JSName("clearCookie")
     var clearCookie_Original: SinonSpy = js.native
     @JSName("cookie")

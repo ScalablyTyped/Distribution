@@ -66,6 +66,9 @@ object cytoscapeStrings {
   sealed trait breadthfirst extends js.Object
   
   @js.native
+  sealed trait butt extends js.Object
+  
+  @js.native
   sealed trait center extends js.Object
   
   @js.native
@@ -284,6 +287,9 @@ object cytoscapeStrings {
   sealed trait linear extends TransitionTimingFunction
   
   @js.native
+  sealed trait `linear-gradient` extends js.Object
+  
+  @js.native
   sealed trait lock extends CollectionEventName
   
   @js.native
@@ -351,6 +357,9 @@ object cytoscapeStrings {
   sealed trait preset extends js.Object
   
   @js.native
+  sealed trait `radial-gradient` extends js.Object
+  
+  @js.native
   sealed trait random extends js.Object
   
   @js.native
@@ -382,6 +391,9 @@ object cytoscapeStrings {
   
   @js.native
   sealed trait right extends js.Object
+  
+  @js.native
+  sealed trait round extends js.Object
   
   @js.native
   sealed trait `round-diamond` extends NodeShape
@@ -571,6 +583,8 @@ object cytoscapeStrings {
   @scala.inline
   def breadthfirst: breadthfirst = "breadthfirst".asInstanceOf[breadthfirst]
   @scala.inline
+  def butt: butt = "butt".asInstanceOf[butt]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def chevron: chevron = "chevron".asInstanceOf[chevron]
@@ -715,6 +729,8 @@ object cytoscapeStrings {
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
+  def `linear-gradient`: `linear-gradient` = "linear-gradient".asInstanceOf[`linear-gradient`]
+  @scala.inline
   def lock: lock = "lock".asInstanceOf[lock]
   @scala.inline
   def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
@@ -757,6 +773,8 @@ object cytoscapeStrings {
   @scala.inline
   def preset: preset = "preset".asInstanceOf[preset]
   @scala.inline
+  def `radial-gradient`: `radial-gradient` = "radial-gradient".asInstanceOf[`radial-gradient`]
+  @scala.inline
   def random: random = "random".asInstanceOf[random]
   @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
@@ -778,6 +796,8 @@ object cytoscapeStrings {
   def rhomboid: rhomboid = "rhomboid".asInstanceOf[rhomboid]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
   @scala.inline
   def `round-diamond`: `round-diamond` = "round-diamond".asInstanceOf[`round-diamond`]
   @scala.inline

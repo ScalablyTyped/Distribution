@@ -8,9 +8,7 @@ package object vcfMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.vcf.vcfStrings.vcard
 
-  type CardHeader = vcard
   /** jCard standard format */
-  type jCard = js.Tuple2[CardHeader, js.Array[jCardProperty]]
-  type jCardParameters = StringDictionary[String | js.Array[String]]
-  type jCardProperty = js.Tuple4[PropertyType, jCardParameters, ValueDataType, String | js.Array[String]]
+  type jCard = js.Tuple2[vcard, js.Array[jCardProperty]]
+  type jCardProperty = js.Tuple4[String, StringDictionary[String | js.Array[String]], String, String | js.Array[String]]
 }

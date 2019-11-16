@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-onsenui"
-version := "2.9.5-dt-20190326Z-c07321"
+version := "2.9.5-dt-20191115Z-6dd0f2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

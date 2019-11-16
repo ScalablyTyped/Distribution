@@ -1,7 +1,7 @@
 
 # Scala.js typings for luxon
 
-Typings are for version 1.15
+Typings are for version 1.21
 
 ## Library description:
 Immutable date wrapper

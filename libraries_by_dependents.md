@@ -87,6 +87,7 @@
 | 3858 | [chokidar](./c/chokidar) | A neat wrapper around node.js fs.watch / fs.watchF
 | 3837 | [babel__core](./b/babel__core) | Babel compiler core.
 | 3801 | [co](./c/co) | generator async control flow goodness
+| 3663 | [babel-jest](./b/babel-jest) | Jest plugin to use babel for transformation.
 | 3644 | [immutable](./i/immutable) | Immutable Data Collections
 | 3622 | [cookie-parser](./c/cookie-parser) | Parse HTTP request cookies
 | 3614 | [jest](./j/jest) | Delightful JavaScript Testing.
@@ -233,6 +234,7 @@
 | 1223 | [recompose](./r/recompose) | A React utility belt for function components and h
 | 1222 | [which](./w/which) | Like which(1) unix command. Find the first instanc
 | 1220 | [bignumber_dot_js](./b/bignumber_dot_js) | A library for arbitrary-precision decimal and non-
+| 1218 | [jest-resolve](./j/jest-resolve) | -
 | 1216 | [sqlite3](./s/sqlite3) | Asynchronous, non-blocking SQLite3 bindings
 | 1211 | [tar](./t/tar) | tar for node
 | 1209 | [markdown-it](./m/markdown-it) | Markdown-it - modern pluggable markdown parser.
@@ -427,6 +429,7 @@
 | 594 | [errorhandler](./e/errorhandler) | Development-only error handler middleware
 | 590 | [swig](./s/swig) | A simple, powerful, and extendable templating engi
 | 589 | [parse5](./p/parse5) | HTML parser and serializer.
+| 588 | [jest-pnp-resolver](./j/jest-pnp-resolver) | plug'n'play resolver for Webpack
 | 587 | [ethereumjs-util](./e/ethereumjs-util) | a collection of utility functions for Ethereum
 | 587 | [gulp-replace](./g/gulp-replace) | A string replace plugin for gulp
 | 585 | [slash](./s/slash) | Convert Windows backslash paths to slash paths
@@ -1194,6 +1197,7 @@
 | 171 | [rc-progress](./r/rc-progress) | progress ui component for react
 | 171 | [rc-time-picker](./r/rc-time-picker) | React TimePicker
 | 171 | [snekfetch](./s/snekfetch) | Just do http requests without all that weird nasti
+| 170 | [js2xmlparser](./j/js2xmlparser) | Parses JavaScript objects into XML
 | 170 | [ldapjs](./l/ldapjs) | LDAP client and server APIs
 | 170 | [pretty-format](./p/pretty-format) | Stringify any JavaScript value.
 | 170 | [styled-jsx](./s/styled-jsx) | Full CSS support for JSX without compromises
@@ -1276,6 +1280,7 @@
 | 156 | [wif](./w/wif) | Bitcoin Wallet Import Format (WIF) decoding/encodi
 | 155 | [pdfkit](./p/pdfkit) | A PDF generation library for Node.js
 | 155 | [sw-toolbox](./s/sw-toolbox) | Service Worker Toolbox provides some simple helper
+| 155 | [throat](./t/throat) | Throttle the parallelism of an asynchronous (promi
 | 154 | [angular-resource](./a/angular-resource) | AngularJS module for interacting with RESTful serv
 | 154 | [babel__template](./b/babel__template) | Generate an AST from a string template.
 | 154 | [d3-transition](./d/d3-transition) | Animated transitions for D3 selections.
@@ -1986,6 +1991,7 @@
 | 76 | [express-useragent](./e/express-useragent) | ExpressJS/Connect/TrinteJS user-agent middleware e
 | 76 | [filenamify](./f/filenamify) | Convert a string to a valid safe filename
 | 76 | [into-stream](./i/into-stream) | Convert a string/promise/array/iterable/buffer/typ
+| 76 | [jest-haste-map](./j/jest-haste-map) | -
 | 76 | [lodash_dot_capitalize](./l/lodash_dot_capitalize) | The lodash method _.capitalize exported as a modul
 | 76 | [lodash_dot_last](./l/lodash_dot_last) | The modern build of lodash’s _.last as a module.
 | 76 | [openpgp](./o/openpgp) | OpenPGP.js is a Javascript implementation of the O
@@ -2046,6 +2052,7 @@
 | 71 | [is-fullwidth-code-point](./i/is-fullwidth-code-point) | Check if the character represented by a given Unic
 | 71 | [lodash_dot_without](./l/lodash_dot_without) | The lodash method _.without exported as a module.
 | 71 | [lusca](./l/lusca) | Application security for express.
+| 71 | [pirates](./p/pirates) | Properly hijack require
 | 71 | [react-grid-layout](./r/react-grid-layout) | A draggable and resizable grid layout with respons
 | 71 | [react-side-effect](./r/react-side-effect) | Create components whose prop changes map to a glob
 | 71 | [revalidator](./r/revalidator) | A cross-browser / node.js validator powered by JSO
@@ -2179,6 +2186,7 @@
 | 64 | [gradient-string](./g/gradient-string) | Beautiful color gradients in terminal output
 | 64 | [gulp-copy](./g/gulp-copy) | Plugin copying files to a new destination and usin
 | 64 | [hex-rgb](./h/hex-rgb) | Convert HEX color to RGBA
+| 64 | [jest-environment-node](./j/jest-environment-node) | -
 | 64 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
 | 64 | [mu2](./m/mu2) | A Mustache template engine for Node.js
 | 64 | [password-hash](./p/password-hash) | Password hashing and verification for node.js
@@ -2584,6 +2592,7 @@
 | 47 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image
 | 47 | [is-svg](./i/is-svg) | Check if a string or buffer is SVG
 | 47 | [jaeger-client](./j/jaeger-client) | Jaeger binding for OpenTracing Node
+| 47 | [jest-config](./j/jest-config) | -
 | 47 | [jsonapi-serializer](./j/jsonapi-serializer) | A Node.js framework agnostic library for serializi
 | 47 | [lab](./l/lab) | Test utility
 | 47 | [lodash_dot_assignin](./l/lodash_dot_assignin) | The lodash method _.assignIn exported as a module.
@@ -2605,6 +2614,7 @@
 | 46 | [alt](./a/alt) | A flux implementation
 | 46 | [fs-cson](./f/fs-cson) | Read and write CSON to the filesystem
 | 46 | [gulp-remember](./g/gulp-remember) | Adds previously seen files back into the stream.
+| 46 | [jest-snapshot](./j/jest-snapshot) | -
 | 46 | [jest-worker](./j/jest-worker) | Module for executing heavy tasks under forked proc
 | 46 | [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel
 | 46 | [koa-websocket](./k/koa-websocket) | Light wrapper around Koa providing a websocket mid
@@ -2729,6 +2739,7 @@
 | 42 | [semantic-ui](./s/semantic-ui) | Semantic empowers designers and developers by crea
 | 42 | [slice-ansi](./s/slice-ansi) | Slice a string with ANSI escape codes
 | 42 | [store2](./s/store2) | Better localStorage
+| 42 | [styled-system__theme-get](./s/styled-system__theme-get) | The themeGet function is an existential getter fun
 | 42 | [ui-select](./u/ui-select) | -
 | 41 | [array-differ](./a/array-differ) | Create an array with values that are present in th
 | 41 | [ascii-art](./a/ascii-art) | Ansi codes, figlet fonts, and ascii art. 100% JS
@@ -2906,6 +2917,7 @@
 | 36 | [hexo](./h/hexo) | A fast, simple & powerful blog framework, powered 
 | 36 | [humanize-ms](./h/humanize-ms) | transform humanize time to ms
 | 36 | [ink-text-input](./i/ink-text-input) | Text input component for Ink
+| 36 | [jest-environment-jsdom](./j/jest-environment-jsdom) | -
 | 36 | [jest-validate](./j/jest-validate) | Generic configuration validation tool that helps y
 | 36 | [jpegtran-bin](./j/jpegtran-bin) | jpegtran (part of libjpeg-turbo) bin-wrapper that 
 | 36 | [js-data](./j/js-data) | Robust, framework-agnostic in-memory data store.
@@ -3019,6 +3031,7 @@
 | 33 | [geojson](./g/geojson) | Turn your geo data into GeoJSON
 | 33 | [humanize-plus](./h/humanize-plus) | A simple utility library for making the web more h
 | 33 | [istanbul-reports](./i/istanbul-reports) | istanbul reports
+| 33 | [jest-runtime](./j/jest-runtime) | -
 | 33 | [lodash_dot_isinteger](./l/lodash_dot_isinteger) | The lodash method _.isInteger exported as a module
 | 33 | [lodash_dot_pullall](./l/lodash_dot_pullall) | The lodash method _.pullAll exported as a module.
 | 33 | [loglevel-plugin-prefix](./l/loglevel-plugin-prefix) | Plugin for loglevel message prefixing
@@ -3123,6 +3136,7 @@
 | 30 | [fuzzaldrin-plus](./f/fuzzaldrin-plus) | Fuzzy filtering and string similarity scoring - co
 | 30 | [git-user-email](./g/git-user-email) | Get the email address of the current user from git
 | 30 | [gulp-coffeelint](./g/gulp-coffeelint) | Lint your CoffeeScript using gulp and CoffeeLint
+| 30 | [is-generator-fn](./i/is-generator-fn) | Check if something is a generator function
 | 30 | [jira-client](./j/jira-client) | Wrapper for the JIRA API
 | 30 | [kdbush](./k/kdbush) | A very fast static 2D index for points based on kd
 | 30 | [linkifyjs](./l/linkifyjs) | Intelligent link recognition, made easy
@@ -3269,6 +3283,7 @@
 | 27 | [no-case](./n/no-case) | Remove case from a string
 | 27 | [orientjs](./o/orientjs) | Official node.js driver for OrientDB. Fast, lightw
 | 27 | [p-filter](./p/p-filter) | Filter promises concurrently
+| 27 | [phin](./p/phin) | The ultra-lightweight Node.js HTTP client
 | 27 | [pigpio](./p/pigpio) | Fast GPIO, PWM, servo control, state change notifi
 | 27 | [promise-timeout](./p/promise-timeout) | Simple timeouts for promises
 | 27 | [psl](./p/psl) | Domain name parser based on the Public Suffix List
@@ -3336,6 +3351,7 @@
 | 26 | [react-pdf](./r/react-pdf) | Display PDFs in your React app as easily as if the
 | 26 | [react-rangeslider](./r/react-rangeslider) | A lightweight react component that acts as a HTML5
 | 26 | [react-truncate](./r/react-truncate) | React component for truncating multi-line spans an
+| 26 | [realpath-native](./r/realpath-native) | Use the system's native realpath
 | 26 | [regression](./r/regression) | Javascript least squares data fitting methods
 | 26 | [replace-string](./r/replace-string) | Replace all substring matches in a string
 | 26 | [rmc-pull-to-refresh](./r/rmc-pull-to-refresh) | React Mobile Pull To Refresh Component
@@ -3360,6 +3376,7 @@
 | 25 | [global-prefix](./g/global-prefix) | Get the npm global path prefix.
 | 25 | [hark](./h/hark) | Converts an audio stream to speech events in the b
 | 25 | [iron](./i/iron) | Encapsulated tokens (encrypted and mac'ed objects)
+| 25 | [jest-changed-files](./j/jest-changed-files) | A module used internally by Jest to check which fi
 | 25 | [jest-docblock](./j/jest-docblock) | jest-docblock is a package that can extract and pa
 | 25 | [json-file-plus](./j/json-file-plus) | Read from and write to a JSON file, minimizing dif
 | 25 | [jxon](./j/jxon) | A complete, bidirectional, JXON library
@@ -3448,6 +3465,7 @@
 | 23 | [ids](./i/ids) | Simple id generation and caching
 | 23 | [is-installed-globally](./i/is-installed-globally) | Check if your package was installed globally
 | 23 | [jdataview](./j/jdataview) | A unique way to work with a binary file in the bro
+| 23 | [jest-runner](./j/jest-runner) | -
 | 23 | [json2md](./j/json2md) | A JSON to Markdown converter.
 | 23 | [jsts](./j/jsts) | A JavaScript library of spatial predicates and fun
 | 23 | [keycloak-connect](./k/keycloak-connect) | Keycloak Connect Middleware
@@ -3568,6 +3586,7 @@
 | 21 | [inversify-express-utils](./i/inversify-express-utils) | Some utilities for the development of express appl
 | 21 | [is-valid-glob](./i/is-valid-glob) | Return true if a value is a valid glob pattern or 
 | 21 | [isotope-layout](./i/isotope-layout) | Filter and sort magical layouts
+| 21 | [jest-resolve-dependencies](./j/jest-resolve-dependencies) | -
 | 21 | [jquery-mask-plugin](./j/jquery-mask-plugin) | A jQuery Plugin to make masks on form fields and h
 | 21 | [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console
 | 21 | [koa-sslify](./k/koa-sslify) | Enforces HTTPS for node.js koa projects
@@ -3738,6 +3757,7 @@
 | 18 | [apollographql__graphql-pl](./a/apollographql__graphql-playground-html) | GraphQL IDE for better development workflows (Grap
 | 18 | [awesomplete](./a/awesomplete) | http://leaverou.github.io/awesomplete/
 | 18 | [aws-sdk__middleware-heade](./a/aws-sdk__middleware-header-default) | -
+| 18 | [babel-plugin-jest-hoist](./b/babel-plugin-jest-hoist) | Babel plugin to hoist jest.disableAutomock, jest.e
 | 18 | [blueprintjs__icons](./b/blueprintjs__icons) | Components, fonts, icons, and css files for creati
 | 18 | [braintree-web](./b/braintree-web) | A suite of tools for integrating Braintree in the 
 | 18 | [builder-util-runtime](./b/builder-util-runtime) | HTTP utilities. Used by 
@@ -3759,6 +3779,7 @@
 | 18 | [gulp-typedoc](./g/gulp-typedoc) | Gulp plugin for the TypeDoc typescript documentati
 | 18 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
 | 18 | [http-link-header](./h/http-link-header) | Parse & format HTTP link headers according to RFC 
+| 18 | [jest-jasmine2](./j/jest-jasmine2) | -
 | 18 | [jquery_dot_scrollto](./j/jquery_dot_scrollto) | Lightweight, cross-browser and highly customizable
 | 18 | [js-levenshtein](./j/js-levenshtein) | The most efficient JS implementation calculating t
 | 18 | [js-quantities](./j/js-quantities) | JavaScript library for quantity calculation and un
@@ -3944,6 +3965,7 @@
 | 16 | [uifabric__merge-styles](./u/uifabric__merge-styles) | Office UI Fabric style loading utilities.
 | 16 | [wavesurfer_dot_js](./w/wavesurfer_dot_js) | Interactive navigable audio visualization using We
 | 16 | [wildstring](./w/wildstring) | Simple String Wildcard Handling
+| 16 | [workbox-core](./w/workbox-core) | This module is used by a number of the other Workb
 | 15 | [algoliasearch-helper](./a/algoliasearch-helper) | Helper for implementing advanced search features w
 | 15 | [angular-ui-sortable](./a/angular-ui-sortable) | This directive allows you to jQueryUI Sortable.
 | 15 | [body-parser-xml](./b/body-parser-xml) | XML parser middleware for express.js.
@@ -3966,6 +3988,7 @@
 | 15 | [humane-js](./h/humane-js) | A simple, modern, browser notification system
 | 15 | [is-lite](./i/is-lite) | A tiny javascript type testing tool
 | 15 | [jasminewd2](./j/jasminewd2) | WebDriverJS adapter for Jasmine2.
+| 15 | [jest-serializer](./j/jest-serializer) | Module for serializing and deserializing object in
 | 15 | [js-data-adapter](./j/js-data-adapter) | Base adapter class that all other js-data adapters
 | 15 | [json-merge-patch](./j/json-merge-patch) | Implementation of JSON Merge Patch (RFC 7396)
 | 15 | [keyboardjs](./k/keyboardjs) | A library for binding to keys and key combos witho
@@ -4048,6 +4071,7 @@
 | 14 | [ipify](./i/ipify) | Get your public IP address
 | 14 | [jasmine-expect](./j/jasmine-expect) | Write Beautiful Specs with Custom Matchers
 | 14 | [jdenticon](./j/jdenticon) | Javascript identicon generator
+| 14 | [jest__environment](./j/jest__environment) | -
 | 14 | [json-editor](./j/json-editor) | JSON Schema based editor
 | 14 | [json-schema-merge-allof](./j/json-schema-merge-allof) | Simplify your schema by combining allOf into the r
 | 14 | [jss-plugin-nested](./j/jss-plugin-nested) | JSS plugin that enables support for nested selecto
@@ -4324,6 +4348,8 @@
 | 11 | [in-range](./i/in-range) | Check if a number is in a given range
 | 11 | [is-elevated](./i/is-elevated) | Check if the process is running with elevated priv
 | 11 | [jasmine-ajax](./j/jasmine-ajax) | A library for faking Ajax responses in your Jasmin
+| 11 | [jest-leak-detector](./j/jest-leak-detector) | Module for verifying whether an object has been ga
+| 11 | [jest-watcher](./j/jest-watcher) | Delightful JavaScript Testing.
 | 11 | [js-money](./j/js-money) | JavaScript implementation of the Money value objec
 | 11 | [jsonstream](./j/jsonstream) | rawStream.pipe(JSONStream.parse()).pipe(streamOfOb
 | 11 | [jss-plugin-global](./j/jss-plugin-global) | Global styles for JSS
@@ -4331,6 +4357,7 @@
 | 11 | [jss-plugin-rule-value-fun](./j/jss-plugin-rule-value-function) | JSS plugin for function value and rule syntax
 | 11 | [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area
 | 11 | [just-debounce-it](./j/just-debounce-it) | return a debounced function
+| 11 | [keystonejs__fields](./k/keystonejs__fields) | KeystoneJS Field Types including Text, Password, D
 | 11 | [knockout_dot_validation](./k/knockout_dot_validation) | A KnockoutJS Plugin for model and property validat
 | 11 | [koa-pino-logger](./k/koa-pino-logger) | pino logging koa middleware
 | 11 | [koa-pug](./k/koa-pug) | A Pug middleware for Koa
@@ -4466,6 +4493,7 @@
 | 10 | [identicon_dot_js](./i/identicon_dot_js) | GitHub-style identicons as PNGs or SVGs in JS.
 | 10 | [inversify-logger-middlewa](./i/inversify-logger-middleware) | A basic logger middleware for InversifyJS
 | 10 | [iterm2-version](./i/iterm2-version) | Get the iTerm2 version
+| 10 | [jest__transform](./j/jest__transform) | -
 | 10 | [jquery_dot_fancytree](./j/jquery_dot_fancytree) | JavaScript tree view / tree grid plugin with suppo
 | 10 | [jquery_dot_nicescroll](./j/jquery_dot_nicescroll) | Nicescroll is a jquery plugin, for nice customizab
 | 10 | [jss-plugin-camel-case](./j/jss-plugin-camel-case) | JSS plugin that allows to write camel cased rule p
@@ -4643,6 +4671,7 @@
 | 9 | [traverson](./t/traverson) | Hypermedia API/HATEOAS client for Node.js and the 
 | 9 | [turbolinks](./t/turbolinks) | Turbolinks makes navigating your web application f
 | 9 | [unused-filename](./u/unused-filename) | Get an unused filename by appending a number if it
+| 9 | [use-deep-compare-effect](./u/use-deep-compare-effect) | It's react's useEffect hook, except using deep com
 | 9 | [uuidjs](./u/uuidjs) | RFC-compliant UUID Generator for JavaScript
 | 9 | [webcrypto](./w/webcrypto) | Use the Node.js crypto module API without having t
 | 9 | [webdriver-js-extender](./w/webdriver-js-extender) | A plugin which adds additional commands to seleniu
@@ -5019,6 +5048,7 @@
 | 6 | [jsreport-jsrender](./j/jsreport-jsrender) | jsreport engine using jsrender
 | 6 | [just-clone](./j/just-clone) | deep copies objects and arrays
 | 6 | [keypress_dot_js](./k/keypress_dot_js) | a robust keyboard input capturing Javascript utili
+| 6 | [keystonejs__session](./k/keystonejs__session) | Tools to assist with setting up session management
 | 6 | [leaflet-providers](./l/leaflet-providers) | An extension to Leaflet that contains configuratio
 | 6 | [lingui__react](./l/lingui__react) | React components for translations
 | 6 | [loadable__server](./l/loadable__server) | Server utilities for loadable.
@@ -5182,6 +5212,8 @@
 | 5 | [is-alphanumerical](./i/is-alphanumerical) | Check if a character is alphanumerical
 | 5 | [jest-in-case](./j/jest-in-case) | Jest utility for creating variations of the same t
 | 5 | [jest-matchers](./j/jest-matchers) | -
+| 5 | [jest__core](./j/jest__core) | Delightful JavaScript Testing.
+| 5 | [jest__reporters](./j/jest__reporters) | Jest's reporters
 | 5 | [jquery-sortable](./j/jquery-sortable) | jquery plugin for sortable, nestable lists
 | 5 | [js-clipper](./j/js-clipper) | common.js compatible version of JSClipper
 | 5 | [js-data-http](./j/js-data-http) | HTTP (XHR) adapter for js-data in the browser.
@@ -5193,6 +5225,8 @@
 | 5 | [jupyterlab__inspector](./j/jupyterlab__inspector) | JupyterLab - Code Inspector
 | 5 | [jupyterlab__ui-components](./j/jupyterlab__ui-components) | JupyterLab - UI components written in React
 | 5 | [karma-chai-sinon](./k/karma-chai-sinon) | Chai + Sinon-Chai + Sinon for Karma
+| 5 | [keystonejs__adapter-knex](./k/keystonejs__adapter-knex) | KeystoneJS Knex Database Adapter
+| 5 | [keystonejs__logger](./k/keystonejs__logger) | Common logging functionality used within @keystone
 | 5 | [keysym](./k/keysym) | Look up X11 keysyms, unicode positions, and names.
 | 5 | [kiwicom__orbit-design-tok](./k/kiwicom__orbit-design-tokens) | Design tokens for Kiwi.com.
 | 5 | [koa-log](./k/koa-log) | logger middlware for koa
@@ -5379,6 +5413,7 @@
 | 4 | [extra-watch-webpack-plugi](./e/extra-watch-webpack-plugin) | extra-watch-webpack-plugin would help you to attac
 | 4 | [factory-girl](./f/factory-girl) | A factory library for Node.js and JavaScript inspi
 | 4 | [filesystem](./f/filesystem) | -
+| 4 | [format-link-header](./f/format-link-header) | Format a link header object, to the original RFC 5
 | 4 | [format-util](./f/format-util) | Lightweight util.format() for the browser.
 | 4 | [formatjs__intl-relativeti](./f/formatjs__intl-relativetimeformat) | Formats JavaScript dates to relative time strings.
 | 4 | [fxn](./f/fxn) | Stateless Architecture
@@ -5417,6 +5452,7 @@
 | 4 | [just-pick](./j/just-pick) | copy an object but with only the specified keys
 | 4 | [just-throttle](./j/just-throttle) | return a throttled function
 | 4 | [kdbxweb](./k/kdbxweb) | Kdbx KeePass database reader for web
+| 4 | [keystonejs__adapter-mongo](./k/keystonejs__adapter-mongoose) | KeystoneJS Mongoose Database adapter.
 | 4 | [keyv__redis](./k/keyv__redis) | Redis storage adapter for Keyv
 | 4 | [koa-requestid](./k/koa-requestid) | A middleware that adds a request id to a koa appli
 | 4 | [lil-uuid](./l/lil-uuid) | UUID v4 generator and validator (RFC4122 compliant
@@ -5483,6 +5519,7 @@
 | 4 | [react-native-signature-ca](./r/react-native-signature-capture) | Lets users sign their signatures
 | 4 | [react-native-touch-id](./r/react-native-touch-id) | React Native authentication with the native Touch 
 | 4 | [react-native-webrtc](./r/react-native-webrtc) | WebRTC for React Native
+| 4 | [react-photoswipe](./r/react-photoswipe) | PhotoSwipe, PhotoSwipeGallery component for ReactJ
 | 4 | [react-scrollable-anchor](./r/react-scrollable-anchor) | Provide smooth scrolling anchors in React.
 | 4 | [react-splitter-layout](./r/react-splitter-layout) | A simple split layout for React and modern browser
 | 4 | [reactour](./r/reactour) | Tourist Guide into your React Components
@@ -5537,10 +5574,12 @@
 | 4 | [wordpress__block-library](./w/wordpress__block-library) | Block library for the WordPress editor.
 | 4 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded.
 | 4 | [wordpress__nux](./w/wordpress__nux) | NUX (New User eXperience) module for WordPress.
+| 4 | [workbox-routing](./w/workbox-routing) | A service worker helper library to route request U
 | 4 | [xml-c14n](./x/xml-c14n) | XML canonicalisation
 | 4 | [xml-core](./x/xml-core) | xml-core is a set of classes that make it easier t
 | 4 | [xmlpoke](./x/xmlpoke) | Module for modifying XML files.
 | 4 | [xsd-schema-validator](./x/xsd-schema-validator) | A (XSD) schema validator for nodejs
+| 4 | [xstyled__system](./x/xstyled__system) | Modern style system for styled-components & emotio
 | 4 | [year-days](./y/year-days) | Get the number of days in a year
 | 3 | [activestorage](./a/activestorage) | Attach cloud and local files in Rails applications
 | 3 | [angular-http-auth](./a/angular-http-auth) | HTTP Auth Interceptor Module for AngularJS.
@@ -5677,6 +5716,7 @@
 | 3 | [jupyterlab__running](./j/jupyterlab__running) | JupyterLab - Running Sessions Panel
 | 3 | [jupyterlab__vdom](./j/jupyterlab__vdom) | A viewer for VDOM documents.
 | 3 | [jwt-client](./j/jwt-client) | Micro service to read, write and save JWT headers
+| 3 | [keystonejs__keystone](./k/keystonejs__keystone) | The main @keystonejs class & CLI. This is where th
 | 3 | [knockout_dot_punches](./k/knockout_dot_punches) | Enhanced binding syntaxes for Knockout 3+
 | 3 | [koa-docs](./k/koa-docs) | An automatic documentation generator for koa.js AP
 | 3 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
@@ -5849,6 +5889,7 @@
 | 3 | [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru
 | 3 | [worker-rpc](./w/worker-rpc) | A simple RPC layer for communicating with web work
 | 3 | [wx-server-sdk](./w/wx-server-sdk) | mini program cloud server sdk
+| 3 | [xmlcreate](./x/xmlcreate) | Simple XML builder for Node.js
 | 3 | [yesql](./y/yesql) | Read named SQL statements from .sql files. Also na
 | 3 | [yog-bigpipe](./y/yog-bigpipe) | An express.js middleware for fis widget pipline ou
 | 3 | [yt-player](./y/yt-player) | Simple, robust YouTube Iframe Player API
@@ -6018,6 +6059,7 @@
 | 2 | [jupyterlab__theme-light-e](./j/jupyterlab__theme-light-extension) | JupyterLab - Default Light Theme
 | 2 | [jupyterlab__ui-components](./j/jupyterlab__ui-components-extension) | JupyterLab - UI component plugins
 | 2 | [karma-viewport](./k/karma-viewport) | A Karma plugin for testing responsive features and
+| 2 | [keystonejs__app-graphql](./k/keystonejs__app-graphql) | KeystoneJS GraphQL App.
 | 2 | [kii-cloud-sdk](./k/kii-cloud-sdk) | This is the Kii Cloud SDK
 | 2 | [leaflet_dot_fullscreen](./l/leaflet_dot_fullscreen) | Simple plugin for Leaflet that adds fullscreen but
 | 2 | [legal-eagle](./l/legal-eagle) | A tool for listing the licenses of all dependencie
@@ -6232,6 +6274,9 @@
 | 2 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object.
 | 2 | [wordpress__redux-routine](./w/wordpress__redux-routine) | Redux middleware for generator coroutines.
 | 2 | [wordpress__shortcode](./w/wordpress__shortcode) | Shortcode module for WordPress.
+| 2 | [workbox-background-sync](./w/workbox-background-sync) | Queues failed requests and uses the Background Syn
+| 2 | [workbox-precaching](./w/workbox-precaching) | This module efficiently precaches assets.
+| 2 | [workbox-strategies](./w/workbox-strategies) | A service worker helper library implementing commo
 | 2 | [write-file-atomically](./w/write-file-atomically) | Promisified version of write-file-atomic
 | 2 | [xadesjs](./x/xadesjs) | A pure Typescript/Javascript implementation of XAd
 | 2 | [xmldsigjs](./x/xmldsigjs) | XMLDSIGjs provides an implementation of XMLDSIG in
@@ -6321,6 +6366,7 @@
 | 1 | [commander-remaining-args](./c/commander-remaining-args) | Get the remaining unknown arguments after parsing 
 | 1 | [commercetools__enzyme-ext](./c/commercetools__enzyme-extensions) | Enzyme extensions tailored at improving dealing wi
 | 1 | [compress_dot_js](./c/compress_dot_js) | A client side JavaScript image compression library
+| 1 | [compute-argmax](./c/compute-argmax) | Computes the maximum value of a numeric array and 
 | 1 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
 | 1 | [contextjs](./c/contextjs) | Context Oriented Programming (COP) for ECMAScript 
 | 1 | [cordova-plugin-battery-st](./c/cordova-plugin-battery-status) | Cordova Battery Plugin
@@ -6456,6 +6502,7 @@
 | 1 | [jasmine-fixture](./j/jasmine-fixture) | Makes injecting HTML snippets into the DOM easy & 
 | 1 | [jest-json-schema](./j/jest-json-schema) | JSON schema matcher for jest
 | 1 | [jest-when](./j/jest-when) | An extension lib for jest
+| 1 | [jest__test-sequencer](./j/jest__test-sequencer) | -
 | 1 | [jimp__bmp](./j/jimp__bmp) | Default Jimp bmp encoder/decoder.
 | 1 | [jimp__core](./j/jimp__core) | Jimp core
 | 1 | [jimp__plugin-blit](./j/jimp__plugin-blit) | Blit an image.
@@ -6795,6 +6842,13 @@
 | 1 | [wordpress__block-serializ](./w/wordpress__block-serialization-spec-parser) | Block serialization specification parser for WordP
 | 1 | [wordpress__dependency-ext](./w/wordpress__dependency-extraction-webpack-plugin) | Extract WordPress script dependencies from webpack
 | 1 | [wordpress__priority-queue](./w/wordpress__priority-queue) | Generic browser priority queue.
+| 1 | [workbox-broadcast-update](./w/workbox-broadcast-update) | A service worker helper library that uses the Broa
+| 1 | [workbox-cacheable-respons](./w/workbox-cacheable-response) | This library takes a Response object and determine
+| 1 | [workbox-expiration](./w/workbox-expiration) | A service worker helper library that expires cache
+| 1 | [workbox-google-analytics](./w/workbox-google-analytics) | Queues failed requests and uses the Background Syn
+| 1 | [workbox-navigation-preloa](./w/workbox-navigation-preload) | This library allows developers to opt-in to using 
+| 1 | [workbox-range-requests](./w/workbox-range-requests) | This library creates a new Response, given a sourc
+| 1 | [workbox-streams](./w/workbox-streams) | A library that makes it easier to work with Stream
 | 1 | [worker-threads-pool](./w/worker-threads-pool) | Easily manage a pool of Node.js Worker Threads
 | 1 | [wry__equality](./w/wry__equality) | Structural equality checking for JavaScript values
 | 1 | [xdomain](./x/xdomain) | A pure JavaScript CORS alternative
@@ -7138,6 +7192,17 @@
 | 0 | [jwt-then](./j/jwt-then) | jwt as promised
 | 0 | [k6](./k/k6) | Dummy package for autocompleting k6 scripts.
 | 0 | [kafka-node-avro](./k/kafka-node-avro) | kafka avro serialization
+| 0 | [keystonejs__apollo-helper](./k/keystonejs__apollo-helpers) | Utilities to make using react-apollo + KeystoneJS 
+| 0 | [keystonejs__app-admin-ui](./k/keystonejs__app-admin-ui) | KeystoneJS Admin UI App.
+| 0 | [keystonejs__app-next](./k/keystonejs__app-next) | KeystoneJS Next.js App.
+| 0 | [keystonejs__app-nuxt](./k/keystonejs__app-nuxt) | KeystoneJS Nuxt.js App.
+| 0 | [keystonejs__app-static](./k/keystonejs__app-static) | KeystoneJS Static File App.
+| 0 | [keystonejs__auth-passport](./k/keystonejs__auth-passport) | Provides Social Authentication Strategies based on
+| 0 | [keystonejs__auth-password](./k/keystonejs__auth-password) | Provides a basic password authentication strategy.
+| 0 | [keystonejs__email](./k/keystonejs__email) | Easily send emails from a KeystoneJS application
+| 0 | [keystonejs__file-adapters](./k/keystonejs__file-adapters) | Adapters for handling storage of the File type
+| 0 | [keystonejs__list-plugins](./k/keystonejs__list-plugins) | List level plugins which can update list config du
+| 0 | [keystonejs__oembed-adapte](./k/keystonejs__oembed-adapters) | Adapters for fetching oEmbed data for the OEmbed f
 | 0 | [kissfft-js](./k/kissfft-js) | Javascript port of KissFFT via Emscripten
 | 0 | [kms-json](./k/kms-json) | Encrypting and decrypting JSON objects using AWS K
 | 0 | [knockout-paging](./k/knockout-paging) | Adds an extender to Knockout to add paging functio

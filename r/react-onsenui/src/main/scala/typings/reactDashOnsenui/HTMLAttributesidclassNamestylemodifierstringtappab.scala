@@ -8,9 +8,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  modifier ? :string,   tappable ? :boolean,   tapBackgroundColor ? :string,   lockOnDrag ? :boolean,   onClick ? :react.react.MouseEventHandler<any>} */
+/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  modifier ? :string,   tappable ? :boolean,   tapBackgroundColor ? :string,   lockOnDrag ? :boolean,   expandable ? :boolean,   expanded ? :boolean,   onClick ? :react.react.MouseEventHandler<any>} */
 trait HTMLAttributesidclassNamestylemodifierstringtappab extends js.Object {
   var className: js.UndefOr[String] = js.undefined
+  var expandable: js.UndefOr[Boolean] = js.undefined
+  var expanded: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var lockOnDrag: js.UndefOr[Boolean] = js.undefined
   var modifier: js.UndefOr[String] = js.undefined
@@ -24,6 +26,8 @@ object HTMLAttributesidclassNamestylemodifierstringtappab {
   @scala.inline
   def apply(
     className: String = null,
+    expandable: js.UndefOr[Boolean] = js.undefined,
+    expanded: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     lockOnDrag: js.UndefOr[Boolean] = js.undefined,
     modifier: String = null,
@@ -34,6 +38,8 @@ object HTMLAttributesidclassNamestylemodifierstringtappab {
   ): HTMLAttributesidclassNamestylemodifierstringtappab = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(lockOnDrag)) __obj.updateDynamic("lockOnDrag")(lockOnDrag)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)

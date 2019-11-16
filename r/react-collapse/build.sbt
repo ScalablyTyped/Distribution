@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-collapse"
-version := "4.0-dt-20180803Z-4c5a1a"
+version := "5.0-dt-20191115Z-bfe451"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

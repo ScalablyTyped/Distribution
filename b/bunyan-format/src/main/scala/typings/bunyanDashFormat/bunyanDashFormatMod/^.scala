@@ -13,3 +13,10 @@ class ^ protected () extends Writable {
   def this(options: Options, output: Writable) = this()
 }
 
+@JSImport("bunyan-format", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def apply(options: Options): BunyanFormatWritable = js.native
+  def apply(options: Options, output: Writable): BunyanFormatWritable = js.native
+}
+

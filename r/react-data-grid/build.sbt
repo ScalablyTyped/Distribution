@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-data-grid"
-version := "4.0-dt-20190924Z-4028f3"
+version := "4.0-dt-20191115Z-7b1cbb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

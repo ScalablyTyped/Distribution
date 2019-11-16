@@ -13,6 +13,8 @@ trait Settings extends js.Object {
   var hostIcon: js.UndefOr[String] = js.undefined
   var hostLabel: js.UndefOr[String] = js.undefined
   var iframeSrc: js.UndefOr[String] = js.undefined
+  var lazyLoad: js.UndefOr[String] = js.undefined
+  var manifest: js.UndefOr[ManifestParams] = js.undefined
    // constant
   var origin: js.UndefOr[String] = js.undefined
   var pendingTransportEvent: js.UndefOr[Boolean] = js.undefined
@@ -36,6 +38,8 @@ object Settings {
     hostIcon: String = null,
     hostLabel: String = null,
     iframeSrc: String = null,
+    lazyLoad: String = null,
+    manifest: ManifestParams = null,
     origin: String = null,
     pendingTransportEvent: js.UndefOr[Boolean] = js.undefined,
     popup: js.UndefOr[Boolean] = js.undefined,
@@ -54,6 +58,8 @@ object Settings {
     if (hostIcon != null) __obj.updateDynamic("hostIcon")(hostIcon)
     if (hostLabel != null) __obj.updateDynamic("hostLabel")(hostLabel)
     if (iframeSrc != null) __obj.updateDynamic("iframeSrc")(iframeSrc)
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad)
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
     if (origin != null) __obj.updateDynamic("origin")(origin)
     if (!js.isUndefined(pendingTransportEvent)) __obj.updateDynamic("pendingTransportEvent")(pendingTransportEvent)
     if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)

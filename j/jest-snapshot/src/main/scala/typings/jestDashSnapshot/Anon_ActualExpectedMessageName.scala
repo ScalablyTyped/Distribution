@@ -1,0 +1,31 @@
+package typings.jestDashSnapshot
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_ActualExpectedMessageName extends js.Object {
+  var actual: String
+  var expected: String | Null
+  var name: String
+  var pass: Boolean
+  def message(): String
+  def report(): String
+}
+
+object Anon_ActualExpectedMessageName {
+  @scala.inline
+  def apply(
+    actual: String,
+    message: () => String,
+    name: String,
+    pass: Boolean,
+    report: () => String,
+    expected: String = null
+  ): Anon_ActualExpectedMessageName = {
+    val __obj = js.Dynamic.literal(actual = actual, message = js.Any.fromFunction0(message), name = name, pass = pass, report = js.Any.fromFunction0(report))
+    if (expected != null) __obj.updateDynamic("expected")(expected)
+    __obj.asInstanceOf[Anon_ActualExpectedMessageName]
+  }
+}
+

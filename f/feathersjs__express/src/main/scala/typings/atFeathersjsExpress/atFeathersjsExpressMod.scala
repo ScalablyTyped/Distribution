@@ -37,10 +37,12 @@ object atFeathersjsExpressMod extends js.Object {
   trait Application[T] extends js.Object {
     @JSName("use")
     var use_Original: FeathersApplicationRequestHandler[T] = js.native
-    def use(handlers: (RequestHandler[ParamsDictionary] | RequestHandlerParams[ParamsDictionary])*): T = js.native
+    def use(
+      handlers: ((RequestHandler[ParamsDictionary, _, _]) | (RequestHandlerParams[ParamsDictionary, _, _]))*
+    ): T = js.native
     def use(
       path: PathParams,
-      handlers: (RequestHandler[ParamsDictionary] | RequestHandlerParams[ParamsDictionary] | (Partial[ServiceMethods[_] with SetupMethod]) | Application[_])*
+      handlers: ((RequestHandler[ParamsDictionary, _, _]) | (RequestHandlerParams[ParamsDictionary, _, _]) | (Partial[ServiceMethods[_] with SetupMethod]) | Application[_])*
     ): T = js.native
   }
   
@@ -70,7 +72,7 @@ object atFeathersjsExpressMod extends js.Object {
     var formatter_Original: typings.express.expressMod.RequestHandler[ParamsDictionary] = js.native
     def apply(): js.Function0[Unit] = js.native
     def apply(handler: typings.express.expressMod.RequestHandler[ParamsDictionary]): js.Function0[Unit] = js.native
-    def formatter(req: Request[ParamsDictionary], res: Response, next: NextFunction): js.Any = js.native
+    def formatter(req: Request[ParamsDictionary, _, _], res: Response[_], next: NextFunction): js.Any = js.native
   }
   
   /**
@@ -97,10 +99,10 @@ object atFeathersjsExpressMod extends js.Object {
   
   // TypeScript methods cannot be overloaded with a different signature. Derive two application types without the use methods.
   type ExpressAndFeathersApplicationWithoutUse[T] = (Omit[typings.express.expressMod.Application, use]) with (Omit[typings.atFeathersjsFeathers.atFeathersjsFeathersMod.Application[T], use])
-  type FeathersApplicationRequestHandler[T] = IRouterHandler[T] with FeathersRouterMatcher[T] with (js.Function1[/* repeated */ RequestHandlerParams[ParamsDictionary], T])
+  type FeathersApplicationRequestHandler[T] = IRouterHandler[T] with FeathersRouterMatcher[T] with (js.Function1[/* repeated */ RequestHandlerParams[ParamsDictionary, _, _], T])
   type FeathersRouterMatcher[T] = js.Function2[
     /* path */ PathParams, 
-    /* repeated */ RequestHandler[ParamsDictionary] | RequestHandlerParams[ParamsDictionary] | (Partial[ServiceMethods[_] with SetupMethod]) | Application[js.Any], 
+    /* repeated */ (RequestHandler[ParamsDictionary, js.Any, js.Any]) | (RequestHandlerParams[ParamsDictionary, js.Any, js.Any]) | (Partial[ServiceMethods[_] with SetupMethod]) | Application[js.Any], 
     T
   ]
   type FeathersServiceOptions = js.Any

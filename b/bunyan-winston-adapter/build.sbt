@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "bunyan-winston-adapter"
-version := "0.2-dt-20181017Z-7f4f00"
+version := "0.2-dt-20181017Z-c85696"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-4a145a",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-c85424",
   "org.scalablytyped" %%% "logform" % "2.1.2-dd059e",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "winston" % "3.2.1-df199e",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-f31ace")
+  "org.scalablytyped" %%% "winston" % "3.2.1-10b45c",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-f13594")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

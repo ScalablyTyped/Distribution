@@ -15,7 +15,11 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends Instance {
   def this(options: Options) = this()
   /* CompleteClass */
-  override def apply(T0: /* req */ Request[ParamsDictionary], T1: /* res */ Response, T2: /* next */ NextFunction): js.Any = js.native
+  override def apply(
+    T0: /* req */ Request[ParamsDictionary, js.Any, js.Any],
+    T1: /* res */ Response[js.Any],
+    T2: /* next */ NextFunction
+  ): js.Any = js.native
 }
 
 @JSImport("express-rate-limit", JSImport.Namespace)

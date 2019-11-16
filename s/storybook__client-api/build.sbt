@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__client-api"
-version := "5.2.6-7eb476"
+version := "5.2.6-d908eb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,13 +14,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "emotion__utils" % "0.11.2-fb5db7",
   "org.scalablytyped" %%% "eventemitter3" % "4.0.0-b69538",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-815dc4",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191113Z-c322f2",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191115Z-a45339",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-000339",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "storybook__addons" % "5.2.6-044634",
+  "org.scalablytyped" %%% "storybook__addons" % "5.2.6-bb0a2b",
   "org.scalablytyped" %%% "storybook__api" % "5.2.6-d7d5aa",
   "org.scalablytyped" %%% "storybook__channels" % "5.2.6-4cda16",
   "org.scalablytyped" %%% "storybook__router" % "5.2.6-acf5bc",

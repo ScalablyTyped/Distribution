@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-collapse
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Component-wrapper for collapse animation with react-motion for elements with variable (and dynamic) height

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "behavior3"
-version := "0.2-dt-20190213Z-52576d"
+version := "0.2-dt-20191115Z-52576d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

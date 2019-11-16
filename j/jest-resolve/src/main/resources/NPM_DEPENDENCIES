@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jest-resolve" : "24.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jest-resolve" : "24.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

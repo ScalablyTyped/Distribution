@@ -7,7 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SteamRequest extends Request[ParamsDictionary] {
+trait SteamRequest
+  extends Request[ParamsDictionary, js.Any, js.Any] {
   var logout: js.UndefOr[
     js.Function0[
       js.Function1[/* req */ typings.express.expressMod.Request[ParamsDictionary], js.Function0[Unit]]

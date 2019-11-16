@@ -1,6 +1,7 @@
 package typings.httpDashProxyDashAgent.httpDashProxyDashAgentMod
 
 import typings.node.urlMod.Url
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends HttpProxyAgent {
   def this(options: String) = this()
-  def this(options: Url) = this()
+  def this(options: Partial[Url]) = this()
 }
 

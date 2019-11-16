@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-filepond"
-version := "5.0-dt-20190903Z-c7c773"
+version := "5.0-dt-20191115Z-db8d8e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

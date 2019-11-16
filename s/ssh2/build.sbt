@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ssh2"
-version := "v0.5.x-dt-20190903Z-3fe55d"
+version := "v0.5.x-dt-20190903Z-bd7f75"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
-  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20190322Z-8ba3ce",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20190322Z-612907",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

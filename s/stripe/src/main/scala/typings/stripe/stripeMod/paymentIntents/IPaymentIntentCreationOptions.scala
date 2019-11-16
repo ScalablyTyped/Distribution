@@ -22,6 +22,10 @@ trait IPaymentIntentCreationOptions extends IPaymentIntentUpdateOptions {
     */
   var confirmation_method: js.UndefOr[automatic | manual] = js.undefined
   /**
+    * Set to true to indicate that the customer is not in your checkout flow during this payment attempt, and therefore is unable to authenticate. This parameter is intended for scenarios where you collect card details and charge them later.
+    */
+  var off_session: js.UndefOr[Boolean] = js.undefined
+  /**
     * The Stripe account ID for which these funds are intended.
     */
   var on_behalf_of: js.UndefOr[String] = js.undefined
@@ -52,6 +56,7 @@ object IPaymentIntentCreationOptions {
     customer: String = null,
     description: String = null,
     metadata: IOptionsMetadata = null,
+    off_session: js.UndefOr[Boolean] = js.undefined,
     on_behalf_of: String = null,
     payment_method: String = null,
     payment_method_options: IPaymentMethodOptions = null,
@@ -76,6 +81,7 @@ object IPaymentIntentCreationOptions {
     if (customer != null) __obj.updateDynamic("customer")(customer)
     if (description != null) __obj.updateDynamic("description")(description)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (!js.isUndefined(off_session)) __obj.updateDynamic("off_session")(off_session)
     if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
     if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options)

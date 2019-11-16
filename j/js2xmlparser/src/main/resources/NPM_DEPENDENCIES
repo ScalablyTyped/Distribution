@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "js2xmlparser" : "4.0.0"
+      "js2xmlparser" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "js2xmlparser" : "4.0.0"
+      "js2xmlparser" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -9,6 +9,7 @@ package object httpDashProxyMod {
   import typings.node.httpMod.ServerResponse
   import typings.node.urlMod.Url
   import typings.std.Error
+  import typings.std.Partial
 
   type ErrorCallback = js.Function4[
     /* err */ Error, 
@@ -17,5 +18,5 @@ package object httpDashProxyMod {
     /* target */ js.UndefOr[ProxyTargetUrl], 
     Unit
   ]
-  type ProxyTargetUrl = String | Url
+  type ProxyTargetUrl = String | Partial[Url]
 }

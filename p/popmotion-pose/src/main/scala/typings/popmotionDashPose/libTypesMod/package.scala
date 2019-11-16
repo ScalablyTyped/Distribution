@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object libTypesMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.popmotion.libActionTypesMod.ColdSubscription
   import typings.popmotion.libAnimationsDecayTypesMod.DecayProps
   import typings.popmotion.libAnimationsKeyframesTypesMod.KeyframesProps
   import typings.popmotion.libAnimationsPhysicsTypesMod.PhysicsProps
@@ -38,9 +39,9 @@ package object libTypesMod {
   type Draggable = _Draggable | Boolean
   type KeyframesDefinition = Anon_Keyframes with TransitionDefinitionCommonProps with KeyframesProps
   type PhysicsDefinition = Anon_Physics with TransitionDefinitionCommonProps with PhysicsProps with NoEase
-  type Pose = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias popmotion-pose.popmotion-pose/lib/types.Pose */ js.Object
-  type PoseMap = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias popmotion-pose.popmotion-pose/lib/types.PoseMap */ js.Object
-  type PoserState = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias popmotion-pose.popmotion-pose/lib/types.PoserState */ js.Object
+  type Pose = typings.poseDashCore.libTypesMod.Pose[Action, TransitionDefinition]
+  type PoseMap = typings.poseDashCore.libTypesMod.PoseMap[Action, TransitionDefinition]
+  type PoserState = typings.poseDashCore.libTypesMod.PoserState[Value, Action, ColdSubscription, DomPopmotionPoser]
   type ResolverProps = TransitionProps with StringDictionary[js.Any]
   type SpringDefinition = Anon_Spring with TransitionDefinitionCommonProps with SpringProps with NoEase
   type Transformer = js.Function1[/* v */ js.Any, js.Any]

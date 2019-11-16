@@ -10,8 +10,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InviterOptions extends SessionOptions {
-  /** Modifiers to pass to SessionDescriptionHandler's getDescription() and setDescription(). */
-  var SessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.undefined
   /** If true, an anonymous call. */
   var anonymous: js.UndefOr[Boolean] = js.undefined
   /** @deprecated TODO: provide alternative. */
@@ -37,6 +35,8 @@ trait InviterOptions extends SessionOptions {
   var renderbody: js.UndefOr[String] = js.undefined
   /** @deprecated TODO: provide alternative. */
   var rendertype: js.UndefOr[String] = js.undefined
+  /** Modifiers to pass to SessionDescriptionHandler's getDescription() and setDescription(). */
+  var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.undefined
   /** Options to pass to SessionDescriptionHandler's getDescription() and setDescription(). */
   var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.undefined
 }
@@ -44,7 +44,6 @@ trait InviterOptions extends SessionOptions {
 object InviterOptions {
   @scala.inline
   def apply(
-    SessionDescriptionHandlerModifiers: js.Array[SessionDescriptionHandlerModifier] = null,
     anonymous: js.UndefOr[Boolean] = js.undefined,
     body: String = null,
     contentType: String = null,
@@ -56,10 +55,10 @@ object InviterOptions {
     params: Anon_FromDisplayName = null,
     renderbody: String = null,
     rendertype: String = null,
+    sessionDescriptionHandlerModifiers: js.Array[SessionDescriptionHandlerModifier] = null,
     sessionDescriptionHandlerOptions: SessionDescriptionHandlerOptions = null
   ): InviterOptions = {
     val __obj = js.Dynamic.literal()
-    if (SessionDescriptionHandlerModifiers != null) __obj.updateDynamic("SessionDescriptionHandlerModifiers")(SessionDescriptionHandlerModifiers)
     if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous)
     if (body != null) __obj.updateDynamic("body")(body)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
@@ -71,6 +70,7 @@ object InviterOptions {
     if (params != null) __obj.updateDynamic("params")(params)
     if (renderbody != null) __obj.updateDynamic("renderbody")(renderbody)
     if (rendertype != null) __obj.updateDynamic("rendertype")(rendertype)
+    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers)
     if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions)
     __obj.asInstanceOf[InviterOptions]
   }

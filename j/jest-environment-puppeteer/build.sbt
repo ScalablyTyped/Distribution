@@ -1,21 +1,22 @@
 organization := "org.scalablytyped"
 name := "jest-environment-puppeteer"
-version := "4.3-dt-20190819Z-68b95f"
+version := "4.3-dt-20190819Z-6320cc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "callsites" % "3.1.0-61ae0f",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-797456",
-  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-449c4c",
-  "org.scalablytyped" %%% "jest-mock" % "24.9.0-e5d4b3",
-  "org.scalablytyped" %%% "jest__console" % "24.9.0-d86f40",
-  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-869db9",
+  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-be883a",
+  "org.scalablytyped" %%% "jest-mock" % "24.9.0-7b576d",
+  "org.scalablytyped" %%% "jest__console" % "24.9.0-41e8b4",
+  "org.scalablytyped" %%% "jest__environment" % "24.9.0-149bfa",
+  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-109daa",
   "org.scalablytyped" %%% "jest__source-map" % "24.9.0-3cceb5",
-  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-52028b",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-dc4163",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
-  "org.scalablytyped" %%% "puppeteer" % "1.20-dt-20191010Z-2bd578",
+  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-75a02c",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-1b8e45",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "puppeteer" % "1.20-dt-20191010Z-683e39",
   "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20180214Z-60ee07",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "yargs" % "13.0-dt-20190925Z-22543c",

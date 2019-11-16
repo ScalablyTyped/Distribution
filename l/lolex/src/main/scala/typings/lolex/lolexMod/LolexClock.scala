@@ -28,15 +28,21 @@ trait LolexClock[TTimerId /* <: TimerId */] extends GlobalTimers[TTimerId] {
     */
   def cancelIdleCallback(id: TTimerId): Unit = js.native
   /**
-  	 * Get the number of waiting timers.
-  	 *
-  	 * @returns number of waiting timers.
-  	 */
+    * Get the number of waiting timers.
+    *
+    * @returns number of waiting timers.
+    */
   def countTimers(): Double = js.native
   /**
     * Advances the clock to the the moment of the first scheduled timer, firing it.
     */
   def next(): Unit = js.native
+  /**
+    * Advances the clock to the the moment of the first scheduled timer, firing it.
+    *
+    * Also breaks the event loop, allowing any scheduled promise callbacks to execute _before_ running the timers.
+    */
+  def nextAsync(): js.Promise[Unit] = js.native
   /**
     * Schedule callback to run in the next animation frame.
     *
@@ -64,14 +70,29 @@ trait LolexClock[TTimerId /* <: TimerId */] extends GlobalTimers[TTimerId] {
     */
   def runAll(): Unit = js.native
   /**
-  	 * Advanced the clock to the next animation frame while firing all scheduled callbacks.
-  	 */
+    * Runs all pending timers until there are none remaining.
+    *
+    * Also breaks the event loop, allowing any scheduled promise callbacks to execute _before_ running the timers.
+    *
+    * @remarks  If new timers are added while it is executing they will be run as well.
+    */
+  def runAllAsync(): js.Promise[Unit] = js.native
+  /**
+    * Advanced the clock to the next animation frame while firing all scheduled callbacks.
+    */
   def runToFrame(): Unit = js.native
   /**
     * Takes note of the last scheduled timer when it is run, and advances the clock to
     * that time firing callbacks as necessary.
     */
   def runToLast(): Unit = js.native
+  /**
+    * Takes note of the last scheduled timer when it is run, and advances the clock to
+    * that time firing callbacks as necessary.
+    *
+    * Also breaks the event loop, allowing any scheduled promise callbacks to execute _before_ running the timers.
+    */
+  def runToLastAsync(): js.Promise[Unit] = js.native
   /**
     * Simulates a user changing the system clock.
     *
@@ -88,5 +109,14 @@ trait LolexClock[TTimerId /* <: TimerId */] extends GlobalTimers[TTimerId] {
     * @param time   How many ticks to advance by.
     */
   def tick(time: Double): Unit = js.native
+  def tickAsync(time: String): js.Promise[Unit] = js.native
+  /**
+    * Advance the clock, firing callbacks if necessary.
+    *
+    * Also breaks the event loop, allowing any scheduled promise callbacks to execute _before_ running the timers.
+    *
+    * @param time   How many ticks to advance by.
+    */
+  def tickAsync(time: Double): js.Promise[Unit] = js.native
 }
 

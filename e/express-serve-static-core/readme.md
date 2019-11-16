@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-serve-static-core
 
-Typings are for version 4.16
+Typings are for version 4.17
 
 ## Library description:
 only here to make types work

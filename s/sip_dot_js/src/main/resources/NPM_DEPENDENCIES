@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sip.js" : "0.15.6"
+      "sip.js" : "0.15.7"
     }
   ],
   "test-dependencies" : [
     {
-      "sip.js" : "0.15.6"
+      "sip.js" : "0.15.7"
     }
   ],
   "compile-devDependencies" : [

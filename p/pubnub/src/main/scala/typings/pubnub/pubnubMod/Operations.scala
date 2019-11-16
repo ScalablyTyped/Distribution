@@ -8,6 +8,7 @@ trait Operations extends js.Object {
   var PNAccessManagerAudit: String
   var PNAccessManagerGrant: String
   var PNAddChannelsToGroupOperation: String
+  var PNAddMessageActionOperation: String
   var PNChannelGroupsOperation: String
   var PNChannelsForGroupOperation: String
   var PNCreateSpaceOperation: String
@@ -18,17 +19,20 @@ trait Operations extends js.Object {
   var PNFetchMessagesOperation: String
   var PNGetMembersOperation: String
   var PNGetMembershipsOperation: String
+  var PNGetMessageActionsOperation: String
   var PNGetSpacesOperation: String
   var PNGetStateOperation: String
   var PNGetUsersOperation: String
   var PNHeartbeatOperation: String
   var PNHereNowOperation: String
   var PNHistoryOperation: String
+  var PNMessageCountsOperation: String
   var PNPublishOperation: String
   var PNPushNotificationEnabledChannelsOperation: String
   var PNRemoveAllPushNotificationsOperation: String
   var PNRemoveChannelsFromGroupOperation: String
   var PNRemoveGroupOperation: String
+  var PNRemoveMessageActionOperation: String
   var PNSetStateOperation: String
   var PNSubscribeOperation: String
   var PNTimeOperation: String
@@ -45,6 +49,7 @@ object Operations {
     PNAccessManagerAudit: String,
     PNAccessManagerGrant: String,
     PNAddChannelsToGroupOperation: String,
+    PNAddMessageActionOperation: String,
     PNChannelGroupsOperation: String,
     PNChannelsForGroupOperation: String,
     PNCreateSpaceOperation: String,
@@ -55,17 +60,20 @@ object Operations {
     PNFetchMessagesOperation: String,
     PNGetMembersOperation: String,
     PNGetMembershipsOperation: String,
+    PNGetMessageActionsOperation: String,
     PNGetSpacesOperation: String,
     PNGetStateOperation: String,
     PNGetUsersOperation: String,
     PNHeartbeatOperation: String,
     PNHereNowOperation: String,
     PNHistoryOperation: String,
+    PNMessageCountsOperation: String,
     PNPublishOperation: String,
     PNPushNotificationEnabledChannelsOperation: String,
     PNRemoveAllPushNotificationsOperation: String,
     PNRemoveChannelsFromGroupOperation: String,
     PNRemoveGroupOperation: String,
+    PNRemoveMessageActionOperation: String,
     PNSetStateOperation: String,
     PNSubscribeOperation: String,
     PNTimeOperation: String,
@@ -75,7 +83,7 @@ object Operations {
     PNUpdateUserOperation: String,
     PNWhereNowOperation: String
   ): Operations = {
-    val __obj = js.Dynamic.literal(PNAccessManagerAudit = PNAccessManagerAudit, PNAccessManagerGrant = PNAccessManagerGrant, PNAddChannelsToGroupOperation = PNAddChannelsToGroupOperation, PNChannelGroupsOperation = PNChannelGroupsOperation, PNChannelsForGroupOperation = PNChannelsForGroupOperation, PNCreateSpaceOperation = PNCreateSpaceOperation, PNCreateUserOperation = PNCreateUserOperation, PNDeleteMessagesOperation = PNDeleteMessagesOperation, PNDeleteSpaceOperation = PNDeleteSpaceOperation, PNDeleteUserOperation = PNDeleteUserOperation, PNFetchMessagesOperation = PNFetchMessagesOperation, PNGetMembersOperation = PNGetMembersOperation, PNGetMembershipsOperation = PNGetMembershipsOperation, PNGetSpacesOperation = PNGetSpacesOperation, PNGetStateOperation = PNGetStateOperation, PNGetUsersOperation = PNGetUsersOperation, PNHeartbeatOperation = PNHeartbeatOperation, PNHereNowOperation = PNHereNowOperation, PNHistoryOperation = PNHistoryOperation, PNPublishOperation = PNPublishOperation, PNPushNotificationEnabledChannelsOperation = PNPushNotificationEnabledChannelsOperation, PNRemoveAllPushNotificationsOperation = PNRemoveAllPushNotificationsOperation, PNRemoveChannelsFromGroupOperation = PNRemoveChannelsFromGroupOperation, PNRemoveGroupOperation = PNRemoveGroupOperation, PNSetStateOperation = PNSetStateOperation, PNSubscribeOperation = PNSubscribeOperation, PNTimeOperation = PNTimeOperation, PNUnsubscribeOperation = PNUnsubscribeOperation, PNUpdateMembershipsOperation = PNUpdateMembershipsOperation, PNUpdateSpaceOperation = PNUpdateSpaceOperation, PNUpdateUserOperation = PNUpdateUserOperation, PNWhereNowOperation = PNWhereNowOperation)
+    val __obj = js.Dynamic.literal(PNAccessManagerAudit = PNAccessManagerAudit, PNAccessManagerGrant = PNAccessManagerGrant, PNAddChannelsToGroupOperation = PNAddChannelsToGroupOperation, PNAddMessageActionOperation = PNAddMessageActionOperation, PNChannelGroupsOperation = PNChannelGroupsOperation, PNChannelsForGroupOperation = PNChannelsForGroupOperation, PNCreateSpaceOperation = PNCreateSpaceOperation, PNCreateUserOperation = PNCreateUserOperation, PNDeleteMessagesOperation = PNDeleteMessagesOperation, PNDeleteSpaceOperation = PNDeleteSpaceOperation, PNDeleteUserOperation = PNDeleteUserOperation, PNFetchMessagesOperation = PNFetchMessagesOperation, PNGetMembersOperation = PNGetMembersOperation, PNGetMembershipsOperation = PNGetMembershipsOperation, PNGetMessageActionsOperation = PNGetMessageActionsOperation, PNGetSpacesOperation = PNGetSpacesOperation, PNGetStateOperation = PNGetStateOperation, PNGetUsersOperation = PNGetUsersOperation, PNHeartbeatOperation = PNHeartbeatOperation, PNHereNowOperation = PNHereNowOperation, PNHistoryOperation = PNHistoryOperation, PNMessageCountsOperation = PNMessageCountsOperation, PNPublishOperation = PNPublishOperation, PNPushNotificationEnabledChannelsOperation = PNPushNotificationEnabledChannelsOperation, PNRemoveAllPushNotificationsOperation = PNRemoveAllPushNotificationsOperation, PNRemoveChannelsFromGroupOperation = PNRemoveChannelsFromGroupOperation, PNRemoveGroupOperation = PNRemoveGroupOperation, PNRemoveMessageActionOperation = PNRemoveMessageActionOperation, PNSetStateOperation = PNSetStateOperation, PNSubscribeOperation = PNSubscribeOperation, PNTimeOperation = PNTimeOperation, PNUnsubscribeOperation = PNUnsubscribeOperation, PNUpdateMembershipsOperation = PNUpdateMembershipsOperation, PNUpdateSpaceOperation = PNUpdateSpaceOperation, PNUpdateUserOperation = PNUpdateUserOperation, PNWhereNowOperation = PNWhereNowOperation)
   
     __obj.asInstanceOf[Operations]
   }

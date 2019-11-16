@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("email-templates", JSImport.Namespace)
 @js.native
-class ^ protected () extends EmailTemplate {
-  def this(config: EmailConfig) = this()
+class ^[T] protected () extends EmailTemplate[T] {
+  def this(config: EmailConfig[_]) = this()
   /**
     *   shorthand use of `juiceResources` with the config
     *   mainly for custom renders like from a database).
@@ -20,11 +20,11 @@ class ^ protected () extends EmailTemplate {
     * @param locals The template Variables
     */
   /* CompleteClass */
-  override def render(view: String, locals: js.Any): js.Promise[String] = js.native
+  override def render(view: String, locals: T): js.Promise[String] = js.native
   /**
     * Send the Email
     */
   /* CompleteClass */
-  override def send(options: EmailOptions): js.Any = js.native
+  override def send(options: EmailOptions[T]): js.Any = js.native
 }
 

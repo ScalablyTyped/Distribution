@@ -11,7 +11,7 @@ trait Anon_Cookie extends js.Object {
   var cookie: js.UndefOr[CookieOptions | Boolean] = js.undefined
   var ignoreMethods: js.UndefOr[js.Array[String]] = js.undefined
   var sessionKey: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Function1[/* req */ Request[ParamsDictionary], String]] = js.undefined
+  var value: js.UndefOr[js.Function1[/* req */ Request[ParamsDictionary, _, _], String]] = js.undefined
 }
 
 object Anon_Cookie {
@@ -20,7 +20,7 @@ object Anon_Cookie {
     cookie: CookieOptions | Boolean = null,
     ignoreMethods: js.Array[String] = null,
     sessionKey: String = null,
-    value: /* req */ Request[ParamsDictionary] => String = null
+    value: /* req */ Request[ParamsDictionary, _, _] => String = null
   ): Anon_Cookie = {
     val __obj = js.Dynamic.literal()
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])

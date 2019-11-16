@@ -1,6 +1,7 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sipDotJs.libCoreLogLoggerMod.Logger
 import typings.sipDotJs.libCoreLogMod.LoggerFactory
 import typings.sipDotJs.libCoreMessagesBodyMod.Body
 import typings.sipDotJs.libCoreMessagesOutgoingDashRequestDashMessageMod.OutgoingRequestMessageOptions
@@ -174,6 +175,26 @@ object libCoreMessagesMod extends js.Object {
     /** Get a copy of the default options. */
     var getDefaultOptions: js.Any = js.native
     var makeNameAddrHeader: js.Any = js.native
+  }
+  
+  @js.native
+  object Parser extends js.Object {
+    def getHeader(data: js.Any, headerStart: Double): Double = js.native
+    def parseHeader(
+      message: typings.sipDotJs.libCoreMessagesIncomingDashRequestDashMessageMod.IncomingRequestMessage,
+      data: js.Any,
+      headerStart: Double,
+      headerEnd: Double
+    ): Boolean | Anon_Error = js.native
+    def parseHeader(
+      message: typings.sipDotJs.libCoreMessagesIncomingDashResponseDashMessageMod.IncomingResponseMessage,
+      data: js.Any,
+      headerStart: Double,
+      headerEnd: Double
+    ): Boolean | Anon_Error = js.native
+    def parseMessage(data: String, logger: Logger): js.UndefOr[
+        typings.sipDotJs.libCoreMessagesIncomingDashRequestDashMessageMod.IncomingRequestMessage | typings.sipDotJs.libCoreMessagesIncomingDashResponseDashMessageMod.IncomingResponseMessage
+      ] = js.native
   }
   
 }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "htmlparser2"
-version := "v3.10.x-dt-20190712Z-de8902"
+version := "v3.10.x-dt-20190712Z-e89cd6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "domhandler" % "2.4-dt-20190326Z-3936d9",
   "org.scalablytyped" %%% "domutils" % "1.7-dt-20190326Z-0c0418",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Request[P /* <: Params */]
+trait Request[P /* <: Params */, ResBody, ReqBody]
   extends IncomingMessage
      with typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod._Global_.Express.Request {
   /**
@@ -26,7 +26,7 @@ trait Request[P /* <: Params */]
   var app_Original: Application = js.native
   var baseUrl: String = js.native
   //body: { username: string; password: string; remember: boolean; title: string; };
-  var body: js.Any = js.native
+  var body: ReqBody = js.native
   //cookies: { string; remember: boolean; };
   var cookies: js.Any = js.native
   /**
@@ -81,7 +81,7 @@ trait Request[P /* <: Params */]
     * After middleware.init executed, Request will contain res and next properties
     * See: express/lib/middleware/init.js
     */
-  var res: js.UndefOr[Response] = js.native
+  var res: js.UndefOr[Response[ResBody]] = js.native
   var route: js.Any = js.native
   /**
     * Short-hand for:
@@ -192,9 +192,9 @@ trait Request[P /* <: Params */]
     * Express instance itself is a request handler, which could be invoked without
     * third argument.
     */
-  def app(req: Request[ParamsDictionary], res: Response): js.Any = js.native
-  def app(req: Request[ParamsDictionary], res: ServerResponse): js.Any = js.native
-  def app(req: IncomingMessage, res: Response): js.Any = js.native
+  def app(req: Request[ParamsDictionary, _, _], res: Response[_]): js.Any = js.native
+  def app(req: Request[ParamsDictionary, _, _], res: ServerResponse): js.Any = js.native
+  def app(req: IncomingMessage, res: Response[_]): js.Any = js.native
   def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
   def get(name: String): js.UndefOr[String] = js.native
   /**

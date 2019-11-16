@@ -65,7 +65,7 @@ trait ServeStaticOptions extends js.Object {
     * path the file path that is being sent
     * stat the stat object of the file that is being sent
     */
-  var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ js.Any, _]] = js.undefined
+  var setHeaders: js.UndefOr[js.Function3[/* res */ Response[_], /* path */ String, /* stat */ js.Any, _]] = js.undefined
 }
 
 object ServeStaticOptions {
@@ -81,7 +81,7 @@ object ServeStaticOptions {
     lastModified: js.UndefOr[Boolean] = js.undefined,
     maxAge: Double | String = null,
     redirect: js.UndefOr[Boolean] = js.undefined,
-    setHeaders: (/* res */ Response, /* path */ String, /* stat */ js.Any) => _ = null
+    setHeaders: (/* res */ Response[_], /* path */ String, /* stat */ js.Any) => _ = null
   ): ServeStaticOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl)

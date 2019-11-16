@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "agenda"
-version := "v2.0.0-dt-20191003Z-371159"
+version := "v2.0.0-dt-20191003Z-d711e8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-fa6818",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191108Z-d64b40",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-eea455",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191108Z-6974a9",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

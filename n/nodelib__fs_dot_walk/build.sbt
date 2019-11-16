@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "nodelib__fs_dot_walk"
-version := "1.2.3-970632"
+version := "1.2.3-580b67"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
-  "org.scalablytyped" %%% "nodelib__fs_dot_scandir" % "2.1.2-58136f",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "nodelib__fs_dot_scandir" % "2.1.2-13179d",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

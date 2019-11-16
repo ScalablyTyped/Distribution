@@ -28,19 +28,29 @@ class URL protected () extends _PathLike {
 }
 
 // Output of `url.parse`
-trait Url extends UrlObjectCommon {
-  var port: js.UndefOr[java.lang.String] = js.undefined
-  var query: js.UndefOr[java.lang.String | Null | ParsedUrlQuery] = js.undefined
+trait Url extends js.Object {
+  var auth: java.lang.String | Null
+  var hash: java.lang.String | Null
+  var host: java.lang.String | Null
+  var hostname: java.lang.String | Null
+  var href: java.lang.String
+  var path: java.lang.String | Null
+  var pathname: java.lang.String | Null
+  var port: java.lang.String | Null
+  var protocol: java.lang.String | Null
+  var query: java.lang.String | Null | ParsedUrlQuery
+  var search: java.lang.String | Null
+  var slashes: Boolean | Null
 }
 
 object Url {
   @scala.inline
   def apply(
+    href: java.lang.String,
     auth: java.lang.String = null,
     hash: java.lang.String = null,
     host: java.lang.String = null,
     hostname: java.lang.String = null,
-    href: java.lang.String = null,
     path: java.lang.String = null,
     pathname: java.lang.String = null,
     port: java.lang.String = null,
@@ -49,12 +59,11 @@ object Url {
     search: java.lang.String = null,
     slashes: js.UndefOr[Boolean] = js.undefined
   ): Url = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(href = href)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (href != null) __obj.updateDynamic("href")(href)
     if (path != null) __obj.updateDynamic("path")(path)
     if (pathname != null) __obj.updateDynamic("pathname")(pathname)
     if (port != null) __obj.updateDynamic("port")(port)

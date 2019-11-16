@@ -22,14 +22,8 @@ class Options () extends IOptions {
   var dtd_Options: DtdOptions = js.native
   @JSName("format")
   var format_Options: FormatOptions = js.native
-  @JSName("replaceInvalidChars")
-  var replaceInvalidChars_Options: Boolean = js.native
   @JSName("typeHandlers")
   var typeHandlers_Options: TypeHandlers = js.native
-  @JSName("useSelfClosingTagIfEmpty")
-  var useSelfClosingTagIfEmpty_Options: Boolean = js.native
-  @JSName("validation")
-  var validation_Options: Boolean = js.native
   @JSName("valueString")
   var valueString_Options: String = js.native
   @JSName("wrapHandlers")

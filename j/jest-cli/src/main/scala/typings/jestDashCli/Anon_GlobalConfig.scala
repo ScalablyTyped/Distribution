@@ -1,7 +1,7 @@
 package typings.jestDashCli
 
-import typings.jestDashCli.jestDashCliMod.AggregatedResult
-import typings.jestDashCli.jestDashCliMod.GlobalConfig
+import typings.atJestTestDashResult.buildTypesMod.AggregatedResult
+import typings.atJestTypes.buildConfigMod.GlobalConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -19,12 +19,12 @@ object Result {
   @scala.inline
   def apply(
     branch: String,
+    href: String,
     auth: String = null,
     filepath: String = null,
     hash: String = null,
     host: String = null,
     hostname: String = null,
-    href: String = null,
     name: String = null,
     owner: String = null,
     path: String = null,
@@ -37,13 +37,12 @@ object Result {
     search: String = null,
     slashes: js.UndefOr[Boolean] = js.undefined
   ): Result = {
-    val __obj = js.Dynamic.literal(branch = branch)
+    val __obj = js.Dynamic.literal(branch = branch, href = href)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (filepath != null) __obj.updateDynamic("filepath")(filepath)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (href != null) __obj.updateDynamic("href")(href)
     if (name != null) __obj.updateDynamic("name")(name)
     if (owner != null) __obj.updateDynamic("owner")(owner)
     if (path != null) __obj.updateDynamic("path")(path)

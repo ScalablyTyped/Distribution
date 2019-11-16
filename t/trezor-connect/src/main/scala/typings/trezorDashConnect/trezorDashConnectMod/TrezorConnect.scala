@@ -54,6 +54,7 @@ object TrezorConnect extends js.Object {
     * Initializes TrezorConnect.
     */
   def init(settings: Settings): Unit = js.native
+  def manifest(params: ManifestParams): Unit = js.native
   /**
     * Broadcasts the transaction to the selected network.
     */

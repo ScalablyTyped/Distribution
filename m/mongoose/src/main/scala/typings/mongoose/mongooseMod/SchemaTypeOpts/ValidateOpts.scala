@@ -16,12 +16,14 @@ object ValidateOpts {
   @scala.inline
   def apply(
     isAsync: `false` = null,
+    message: String = null,
     msg: String = null,
     `type`: String = null,
     validator: RegExp | ValidateFn[_] = null
   ): ValidateOpts = {
     val __obj = js.Dynamic.literal()
     if (isAsync != null) __obj.updateDynamic("isAsync")(isAsync)
+    if (message != null) __obj.updateDynamic("message")(message)
     if (msg != null) __obj.updateDynamic("msg")(msg)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])

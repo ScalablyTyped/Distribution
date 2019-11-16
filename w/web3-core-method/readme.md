@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-core-method
 
-Typings are for version 1.2.3
+Typings are for version 1.2.4
 
 ## Library description:
 Creates the methods on the web3 modules. This is an internal package.

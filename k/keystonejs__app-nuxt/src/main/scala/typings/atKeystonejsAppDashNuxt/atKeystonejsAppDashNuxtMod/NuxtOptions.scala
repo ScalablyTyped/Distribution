@@ -1,0 +1,21 @@
+package typings.atKeystonejsAppDashNuxt.atKeystonejsAppDashNuxtMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait NuxtOptions extends js.Object {
+  var buildDir: js.UndefOr[String] = js.undefined
+  var srcDir: js.UndefOr[String] = js.undefined
+}
+
+object NuxtOptions {
+  @scala.inline
+  def apply(buildDir: String = null, srcDir: String = null): NuxtOptions = {
+    val __obj = js.Dynamic.literal()
+    if (buildDir != null) __obj.updateDynamic("buildDir")(buildDir)
+    if (srcDir != null) __obj.updateDynamic("srcDir")(srcDir)
+    __obj.asInstanceOf[NuxtOptions]
+  }
+}
+

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RequestHandler
-  extends typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler[ParamsDictionary] {
+  extends typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler[ParamsDictionary, js.Any, js.Any] {
   @JSName("unless")
   var unless_Original: Fn_Options = js.native
   def unless(options: js.Function1[/* req */ Request[ParamsDictionary], Boolean]): typings.express.expressMod.RequestHandler[ParamsDictionary] = js.native

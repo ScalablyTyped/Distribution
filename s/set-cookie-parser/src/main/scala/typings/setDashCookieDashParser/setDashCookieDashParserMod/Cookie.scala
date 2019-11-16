@@ -12,6 +12,7 @@ trait Cookie extends js.Object {
   var maxAge: js.UndefOr[Double] = js.undefined
   var name: String
   var path: js.UndefOr[String] = js.undefined
+  var sameSite: js.UndefOr[String] = js.undefined
   var secure: js.UndefOr[Boolean] = js.undefined
   var value: String
 }
@@ -26,6 +27,7 @@ object Cookie {
     httpOnly: js.UndefOr[Boolean] = js.undefined,
     maxAge: Int | Double = null,
     path: String = null,
+    sameSite: String = null,
     secure: js.UndefOr[Boolean] = js.undefined
   ): Cookie = {
     val __obj = js.Dynamic.literal(name = name, value = value)
@@ -34,6 +36,7 @@ object Cookie {
     if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path)
+    if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite)
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
     __obj.asInstanceOf[Cookie]
   }

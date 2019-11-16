@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rebass"
-version := "4.0-dt-20191016Z-7bb12e"
+version := "4.0-dt-20191016Z-288634"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "styled-components" % "4.4-dt-20191109Z-67b13e",
   "org.scalablytyped" %%% "styled-system" % "5.1-dt-20191104Z-423714",
-  "org.scalablytyped" %%% "styled-system__css" % "5.0-dt-20190812Z-ee682a")
+  "org.scalablytyped" %%% "styled-system__css" % "5.0-dt-20191115Z-ee682a")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

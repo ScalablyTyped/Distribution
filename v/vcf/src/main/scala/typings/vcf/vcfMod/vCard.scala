@@ -1,5 +1,6 @@
 package typings.vcf.vcfMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,19 +8,21 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait vCard extends js.Object {
+  var data: StringDictionary[Property | js.Array[Property]] = js.native
+  var version: CardVersion = js.native
   /** Add a vCard property  */
-  def add(key: PropertyType, value: String): vCard = js.native
-  def add(key: PropertyType, value: String, params: jCardParameters): vCard = js.native
+  def add(key: String, value: String): vCard = js.native
+  def add(key: String, value: String, params: StringDictionary[String | js.Array[String]]): vCard = js.native
   /** Add a vCard property  */
   def addProperty(prop: Property): vCard = js.native
   /** Get a vCard property */
-  def get(key: PropertyType): Property | js.Array[Property] = js.native
+  def get(key: String): Property | js.Array[Property] = js.native
   /** Parse a vcf formatted vCard */
   def parse(value: String): vCard = js.native
   def parse(value: Buffer): vCard = js.native
   /** Set a vCard property */
-  def set(key: PropertyType, value: String): vCard = js.native
-  def set(key: PropertyType, value: String, params: jCardParameters): vCard = js.native
+  def set(key: String, value: String): vCard = js.native
+  def set(key: String, value: String, params: StringDictionary[String | js.Array[String]]): vCard = js.native
   /** Set a vCard property */
   def setProperty(prop: Property): vCard = js.native
   /** Returns a formatted jCard JSON object */

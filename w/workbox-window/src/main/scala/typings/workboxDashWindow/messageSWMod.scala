@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("workbox-window/messageSW", JSImport.Namespace)
 @js.native
 object messageSWMod extends js.Object {
-  def messageSW(sw: ServiceWorker, data: js.Object): js.Promise[js.UndefOr[js.Object]] = js.native
+  def messageSW(sw: ServiceWorker, data: js.Any): js.Promise[_] = js.native
 }
 

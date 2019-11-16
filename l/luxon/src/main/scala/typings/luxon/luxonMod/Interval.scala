@@ -47,6 +47,9 @@ class Interval () extends js.Object {
   def toFormat(dateFormat: String, options: Anon_Separator): String = js.native
   def toISO(): String = js.native
   def toISO(options: ToISOTimeOptions): String = js.native
+  def toISODate(): String = js.native
+  def toISOTime(): String = js.native
+  def toISOTime(options: ToISOTimeOptions): String = js.native
   def union(other: Interval): Interval = js.native
 }
 

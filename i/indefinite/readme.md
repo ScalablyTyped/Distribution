@@ -1,7 +1,7 @@
 
 # Scala.js typings for indefinite
 
-Typings are for version 2.2
+Typings are for version 2.3
 
 ## Library description:
 Prefix a noun with an indefinite article - a or an - based on whether it begins with a vowel

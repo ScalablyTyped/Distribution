@@ -16,7 +16,7 @@ import typings.sipDotJs.libCoreMod.Transport
 import typings.sipDotJs.libCoreMod.URI
 import typings.sipDotJs.libCoreMod.UserAgentCore
 import typings.sipDotJs.libCoreUserDashAgentDashCoreUserDashAgentDashCoreDashConfigurationMod.Contact
-import typings.sipDotJs.libEnumsMod.UAStatus
+import typings.std.Partial
 import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ object libApiUserDashAgentMod extends js.Object {
     * @param options - Options bucket. See {@link UserAgentOptions} for details.
     */
   class UserAgent () extends js.Object {
-    def this(options: UserAgentOptions) = this()
+    def this(options: Partial[UserAgentOptions]) = this()
     var _state: js.Any = js.native
     var _stateEventEmitter: js.Any = js.native
     /** @internal */
@@ -75,7 +75,7 @@ object libApiUserDashAgentMod extends js.Object {
       */
     var setTransportListeners: js.Any = js.native
     /** @internal */
-    var status: UAStatus = js.native
+    var status: js.Any = js.native
     /** @internal */
     var subscriptions: StringDictionary[Subscription] = js.native
     /** @internal */
@@ -127,6 +127,13 @@ object libApiUserDashAgentMod extends js.Object {
       * ```
       */
     def makeURI(uri: String): js.UndefOr[URI] = js.native
+    /**
+      * Strip properties with undefined values from options.
+      * This is a work around while waiting for missing vs undefined to be addressed (or not)...
+      * https://github.com/Microsoft/TypeScript/issues/13195
+      * @param options - Options to reduce
+      */
+    /* protected */ def stripUndefinedProperties(options: Partial[UserAgentOptions]): Partial[UserAgentOptions] = js.native
   }
   
 }

@@ -1,15 +1,14 @@
 package typings.reactDashNativeDashTabDashView
 
-import typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.RouteBase
+import typings.reactDashNativeDashTabDashView.libTypescriptSrcTabBarMod.Props
+import typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactDashNativeDashTabDashViewProps {
-  type PagerAndroidProps[T /* <: RouteBase */] = typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerAndroidProps[T]
-  type PagerPanProps[T /* <: RouteBase */] = typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerPanProps[T]
-  type PagerScrollProps[T /* <: RouteBase */] = typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.PagerScrollProps[T]
-  type TabBarProps[T /* <: RouteBase */] = typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabBarProps[T]
-  type TabViewProps[T /* <: RouteBase */] = typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.TabViewProps[T]
+  type TabBarProps[T /* <: Route */] = Props[T]
+  type TabBarIndicatorProps[T /* <: Route */] = typings.reactDashNativeDashTabDashView.libTypescriptSrcTabBarIndicatorMod.Props[T]
+  type TabViewProps[T /* <: Route */] = typings.reactDashNativeDashTabDashView.libTypescriptSrcTabViewMod.Props[T]
 }
 

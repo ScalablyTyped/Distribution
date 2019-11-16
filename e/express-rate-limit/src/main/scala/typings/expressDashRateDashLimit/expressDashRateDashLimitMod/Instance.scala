@@ -7,7 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Instance extends RequestHandler[ParamsDictionary] {
+trait Instance
+  extends RequestHandler[ParamsDictionary, js.Any, js.Any] {
   def resetKey(key: String): Unit = js.native
 }
 

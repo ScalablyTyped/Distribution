@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FilterResponse
-  extends Response
+  extends Response[js.Any]
      with /* other */ StringDictionary[js.Any]
 

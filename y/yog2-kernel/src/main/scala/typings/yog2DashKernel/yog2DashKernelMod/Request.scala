@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Request
-  extends typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary] {
+  extends typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, js.Any, js.Any] {
   var CURRENT_APP: String = js.native
   var ral: TypeofRAL = js.native
   var ralP: TypeofRALPromise = js.native

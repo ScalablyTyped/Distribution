@@ -1,7 +1,7 @@
 
 # Scala.js typings for jira-client
 
-Typings are for version 6.4
+Typings are for version 6.13
 
 ## Library description:
 Wrapper for the JIRA API

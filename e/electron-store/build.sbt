@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "electron-store"
-version := "5.1.0-17926b"
+version := "5.1.0-c64ba2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "conf" % "6.2.0-b8583f",
+  "org.scalablytyped" %%% "conf" % "6.2.0-bce4b2",
   "org.scalablytyped" %%% "json-schema-typed" % "7.0.2-ea5f07",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

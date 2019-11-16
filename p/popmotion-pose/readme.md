@@ -1,7 +1,7 @@
 
 # Scala.js typings for popmotion-pose
 
-Typings are for version 3.4.10
+Typings are for version 3.4.11
 
 ## Library description:
 A declarative animation library for HTML and SVG

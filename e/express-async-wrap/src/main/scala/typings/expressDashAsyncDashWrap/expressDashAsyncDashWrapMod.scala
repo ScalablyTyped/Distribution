@@ -15,20 +15,20 @@ import scala.scalajs.js.annotation._
 object expressDashAsyncDashWrapMod extends js.Object {
   def default(
     handler: js.Function3[
-      /* req */ Request[ParamsDictionary], 
-      /* res */ Response, 
+      /* req */ Request[ParamsDictionary, _, _], 
+      /* res */ Response[_], 
       /* next */ NextFunction, 
       js.Promise[Unit]
     ]
-  ): RequestHandler[ParamsDictionary] = js.native
+  ): RequestHandler[ParamsDictionary, _, _] = js.native
   def default(
     handler: js.Function4[
       /* err */ js.Any, 
-      /* req */ Request[ParamsDictionary], 
-      /* res */ Response, 
+      /* req */ Request[ParamsDictionary, _, _], 
+      /* res */ Response[_], 
       /* next */ NextFunction, 
       js.Promise[Unit]
     ]
-  ): ErrorRequestHandler[ParamsDictionary] = js.native
+  ): ErrorRequestHandler[ParamsDictionary, _, _] = js.native
 }
 

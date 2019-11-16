@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "trezor-connect"
-version := "6.0-dt-20190412Z-69a0ae"
+version := "7.0-dt-20191115Z-027d53"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

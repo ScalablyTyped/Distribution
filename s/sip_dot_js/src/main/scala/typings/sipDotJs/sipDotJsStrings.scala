@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object sipDotJsStrings {
   @js.native
-  sealed trait `0DOT15DOT6` extends js.Object
+  sealed trait `0DOT15DOT7` extends js.Object
   
   @js.native
   sealed trait ACK extends js.Object
@@ -142,6 +142,9 @@ object sipDotJsStrings {
   sealed trait message extends js.Object
   
   @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
   sealed trait notify extends js.Object
   
   @js.native
@@ -211,6 +214,9 @@ object sipDotJsStrings {
   sealed trait replaced extends js.Object
   
   @js.native
+  sealed trait required extends js.Object
+  
+  @js.native
   sealed trait setDescription extends js.Object
   
   @js.native
@@ -230,6 +236,9 @@ object sipDotJsStrings {
   
   @js.native
   sealed trait subscribe extends js.Object
+  
+  @js.native
+  sealed trait supported extends js.Object
   
   @js.native
   sealed trait terminated extends js.Object
@@ -256,7 +265,7 @@ object sipDotJsStrings {
   sealed trait warn extends LogLevel
   
   @scala.inline
-  def `0DOT15DOT6`: `0DOT15DOT6` = "0.15.6".asInstanceOf[`0DOT15DOT6`]
+  def `0DOT15DOT7`: `0DOT15DOT7` = "0.15.7".asInstanceOf[`0DOT15DOT7`]
   @scala.inline
   def ACK: ACK = "ACK".asInstanceOf[ACK]
   @scala.inline
@@ -346,6 +355,8 @@ object sipDotJsStrings {
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def outOfDialogReferRequested: outOfDialogReferRequested = "outOfDialogReferRequested".asInstanceOf[outOfDialogReferRequested]
   @scala.inline
   def `peerConnection-SetLocalDescriptionFailed`: `peerConnection-SetLocalDescriptionFailed` = "peerConnection-SetLocalDescriptionFailed".asInstanceOf[`peerConnection-SetLocalDescriptionFailed`]
@@ -390,6 +401,8 @@ object sipDotJsStrings {
   @scala.inline
   def replaced: replaced = "replaced".asInstanceOf[replaced]
   @scala.inline
+  def required: required = "required".asInstanceOf[required]
+  @scala.inline
   def setDescription: setDescription = "setDescription".asInstanceOf[setDescription]
   @scala.inline
   def setRemoteDescription: setRemoteDescription = "setRemoteDescription".asInstanceOf[setRemoteDescription]
@@ -403,6 +416,8 @@ object sipDotJsStrings {
   def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
   @scala.inline
   def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  @scala.inline
+  def supported: supported = "supported".asInstanceOf[supported]
   @scala.inline
   def terminated: terminated = "terminated".asInstanceOf[terminated]
   @scala.inline

@@ -21,7 +21,7 @@ package object webpackMod {
   type Condition = RuleSetCondition
   type ConfigurationFactory = js.Function2[
     /* env */ String | (Record[String, Boolean | Double | String]), 
-    /* args */ Record[String, String], 
+    /* args */ CliConfigOptions, 
     Configuration | js.Promise[Configuration]
   ]
   type DllPlugin = DllPlugin_
@@ -47,7 +47,7 @@ package object webpackMod {
   type Loader = String | NewLoader
   type MultiConfigurationFactory = js.Function2[
     /* env */ String | (Record[String, Boolean | Double | String]), 
-    /* args */ Record[String, String], 
+    /* args */ CliConfigOptions, 
     js.Array[Configuration] | js.Promise[js.Array[Configuration]]
   ]
   /** @deprecated use webpack.Options.Performance */

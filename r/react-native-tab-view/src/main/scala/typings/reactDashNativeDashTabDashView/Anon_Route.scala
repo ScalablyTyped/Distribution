@@ -1,21 +1,20 @@
 package typings.reactDashNativeDashTabDashView
 
-import typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.Route
-import typings.reactDashNativeDashTabDashView.reactDashNativeDashTabDashViewMod.RouteBase
+import typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Route extends js.Object {
-  var route: Route[RouteBase]
+trait Anon_Route[T /* <: Route */] extends js.Object {
+  var route: T
 }
 
 object Anon_Route {
   @scala.inline
-  def apply(route: Route[RouteBase]): Anon_Route = {
+  def apply[T /* <: Route */](route: T): Anon_Route[T] = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[Anon_Route]
+    __obj.asInstanceOf[Anon_Route[T]]
   }
 }
 

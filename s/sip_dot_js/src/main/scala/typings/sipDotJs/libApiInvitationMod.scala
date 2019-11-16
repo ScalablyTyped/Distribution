@@ -107,6 +107,12 @@ object libApiInvitationMod extends js.Object {
     var waitingForPrackReject: js.Any = js.native
     var waitingForPrackResolve: js.Any = js.native
     /**
+      * Handle CANCEL request.
+      * @param message - CANCEL message.
+      * @internal
+      */
+    def _onCancel(message: IncomingRequestMessage): Unit = js.native
+    /**
       * Accept the invitation.
       * @remarks
       * Accept the incoming INVITE request to start a Session.
@@ -115,12 +121,6 @@ object libApiInvitationMod extends js.Object {
       */
     def accept(): js.Promise[Unit] = js.native
     def accept(options: InvitationAcceptOptions): js.Promise[Unit] = js.native
-    /**
-      * Handle CANCEL request.
-      * @param message - CANCEL message.
-      * @internal
-      */
-    def onCancel(message: IncomingRequestMessage): Unit = js.native
     /**
       * Indicate progress processing the invitation.
       * @remarks

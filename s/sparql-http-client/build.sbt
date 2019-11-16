@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sparql-http-client"
-version := "1.1-dt-20191029Z-714517"
+version := "1.1-dt-20191029Z-a3fbed"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191108Z-6cbaae",
-  "org.scalablytyped" %%% "rdf-js" % "2.0-dt-20190717Z-45026a",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "rdf-js" % "2.0-dt-20190717Z-bc9bc0",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

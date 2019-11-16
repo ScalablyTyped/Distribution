@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait FilePondCallbackProps extends js.Object {
   /** If no error, file has been successfully loaded */
-  var onaddfile: js.UndefOr[js.Function2[/* file */ File, /* error */ FilePondErrorDescription, Unit]] = js.undefined
+  var onaddfile: js.UndefOr[js.Function2[/* error */ FilePondErrorDescription, /* file */ File, Unit]] = js.undefined
   /** Made progress loading a file */
   var onaddfileprogress: js.UndefOr[js.Function2[/* file */ File, /* progress */ Double, Unit]] = js.undefined
   /** Started file load */
@@ -17,8 +17,8 @@ trait FilePondCallbackProps extends js.Object {
     */
   var onerror: js.UndefOr[
     js.Function3[
+      /* error */ FilePondErrorDescription, 
       /* file */ js.UndefOr[File], 
-      /* error */ js.UndefOr[FilePondErrorDescription], 
       /* status */ js.UndefOr[js.Any], 
       Unit
     ]
@@ -32,7 +32,7 @@ trait FilePondCallbackProps extends js.Object {
     */
   var onpreparefile: js.UndefOr[js.Function2[/* file */ File, /* output */ js.Any, Unit]] = js.undefined
   /** If no error, Processing of a file has been completed */
-  var onprocessfile: js.UndefOr[js.Function2[/* file */ File, /* error */ FilePondErrorDescription, Unit]] = js.undefined
+  var onprocessfile: js.UndefOr[js.Function2[/* error */ FilePondErrorDescription, /* file */ File, Unit]] = js.undefined
   /** Aborted processing of a file */
   var onprocessfileabort: js.UndefOr[js.Function1[/* file */ File, Unit]] = js.undefined
   /** Made progress processing a file */
@@ -59,13 +59,13 @@ trait FilePondCallbackProps extends js.Object {
 object FilePondCallbackProps {
   @scala.inline
   def apply(
-    onaddfile: (/* file */ File, /* error */ FilePondErrorDescription) => Unit = null,
+    onaddfile: (/* error */ FilePondErrorDescription, /* file */ File) => Unit = null,
     onaddfileprogress: (/* file */ File, /* progress */ Double) => Unit = null,
     onaddfilestart: /* file */ File => Unit = null,
-    onerror: (/* file */ js.UndefOr[File], /* error */ js.UndefOr[FilePondErrorDescription], /* status */ js.UndefOr[js.Any]) => Unit = null,
+    onerror: (/* error */ FilePondErrorDescription, /* file */ js.UndefOr[File], /* status */ js.UndefOr[js.Any]) => Unit = null,
     oninit: () => Unit = null,
     onpreparefile: (/* file */ File, /* output */ js.Any) => Unit = null,
-    onprocessfile: (/* file */ File, /* error */ FilePondErrorDescription) => Unit = null,
+    onprocessfile: (/* error */ FilePondErrorDescription, /* file */ File) => Unit = null,
     onprocessfileabort: /* file */ File => Unit = null,
     onprocessfileprogress: (/* file */ File, /* progress */ Double) => Unit = null,
     onprocessfilestart: /* file */ File => Unit = null,

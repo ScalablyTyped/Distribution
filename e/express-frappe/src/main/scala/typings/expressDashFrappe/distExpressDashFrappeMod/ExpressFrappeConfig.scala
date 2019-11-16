@@ -31,7 +31,7 @@ object ExpressFrappeConfig {
   def apply(
     bodyParser: Boolean | Anon_Json = null,
     cors: Boolean | CorsOptions = null,
-    errorHandler: (/* err */ js.Any, /* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null,
+    errorHandler: (/* err */ js.Any, /* req */ Request[ParamsDictionary, js.Any, js.Any], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
     io: ExpressFrappeSocketIOConfig = null,
     middleware: js.Array[RequestHandler[ParamsDictionary]] = null,
     morgan: js.UndefOr[Boolean] = js.undefined,

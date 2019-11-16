@@ -57,7 +57,7 @@ object PassportSocketIoOptions {
   @scala.inline
   def apply(
     store: Store,
-    cookieParser: (/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction) => js.Any = null,
+    cookieParser: (/* req */ Request[ParamsDictionary, js.Any, js.Any], /* res */ Response[js.Any], /* next */ NextFunction) => js.Any = null,
     fail: (/* data */ js.Any, /* message */ String, /* critical */ String, /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit = null,
     key: String = null,
     passport: PassportStatic = null,

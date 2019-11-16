@@ -66,14 +66,14 @@ trait Typeofexpress extends js.Object {
     * These are the exposed prototypes.
     */
   def application(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
-    res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, _, _],
+    res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response[_]
   ): js.Any = js.native
   /**
     * These are the exposed prototypes.
     */
   def application(
-    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary],
+    req: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[ParamsDictionary, _, _],
     res: ServerResponse
   ): js.Any = js.native
   /**
@@ -81,7 +81,7 @@ trait Typeofexpress extends js.Object {
     */
   def application(
     req: IncomingMessage,
-    res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
+    res: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response[_]
   ): js.Any = js.native
   /**
     * These are the exposed prototypes.

@@ -41,7 +41,7 @@ object libApiPublisherMod extends js.Object {
       * Close
       * @internal
       */
-    def close(): Unit = js.native
+    def _close(): Unit = js.native
     /**
       * Publish
       * @param content - Body to publish

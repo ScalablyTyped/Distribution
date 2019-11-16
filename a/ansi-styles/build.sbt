@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ansi-styles"
-version := "3.2.1-dt-20190322Z-1af0c5"
+version := "3.2.1-dt-20191115Z-1af0c5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

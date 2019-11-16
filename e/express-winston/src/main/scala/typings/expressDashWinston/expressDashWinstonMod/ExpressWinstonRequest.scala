@@ -8,7 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ExpressWinstonRequest extends Request[ParamsDictionary] {
+trait ExpressWinstonRequest
+  extends Request[ParamsDictionary, js.Any, js.Any] {
   var _routeWhitelists: Anon_Body = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-navigation-core"
-version := "1.0-dt-20190930Z-7ab837"
+version := "1.0-dt-20191115Z-7ab837"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

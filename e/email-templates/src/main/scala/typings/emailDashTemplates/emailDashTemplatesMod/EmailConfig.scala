@@ -1,14 +1,19 @@
 package typings.emailDashTemplates.emailDashTemplatesMod
 
+import typings.emailDashTemplates.emailDashTemplatesNumbers.`false`
+import typings.htmlDashToDashText.HtmlToTextOptions
+import typings.nodemailer.libMailerMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EmailConfig extends js.Object {
+trait EmailConfig[T] extends js.Object {
   /**
     * <Https://github.com/werk85/node-html-to-text>
+    *
+    * configuration object for html-to-text
     */
-  var htmlToText: js.UndefOr[js.Any] = js.undefined
+  var htmlToText: js.UndefOr[HtmlToTextOptions | `false`] = js.undefined
   /**
     * Set to object to configure and Enable <https://github.com/ladjs/il8n>
     */
@@ -24,24 +29,24 @@ trait EmailConfig extends js.Object {
   /**
     * The message <Nodemailer.com/message/>
     */
-  var message: js.Any
+  var message: Options
   /**
     * Preview the email
     */
-  var preview: js.UndefOr[Boolean] = js.undefined
+  var preview: js.UndefOr[Boolean | PreviewEmailOpts] = js.undefined
   /**
     * Pass a custom render function if necessary
     */
-  var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ js.Any, js.Promise[_]]] = js.undefined
+  var render: js.UndefOr[js.Function2[/* view */ String, /* locals */ T, js.Promise[_]]] = js.undefined
   /**
-    *     Do you really want to send, false for test or development
+    * Do you really want to send, false for test or development
     */
   var send: js.UndefOr[Boolean] = js.undefined
   /**
     * You can pass an option to prefix subject lines with a string
     * env === 'production' ? false : `[${env.toUpperCase()}] `; // <--- HERE
     */
-  var subjectPrefix: js.UndefOr[js.Any] = js.undefined
+  var subjectPrefix: js.UndefOr[String | `false`] = js.undefined
   /**
     * force text-only rendering of template (disregards template folder)
     */
@@ -49,42 +54,42 @@ trait EmailConfig extends js.Object {
   /**
     * The nodemailer Transport created via nodemailer.createTransport
     */
-  var transport: js.UndefOr[js.Any] = js.undefined
+  var transport: js.UndefOr[NodeMailerTransportOptions] = js.undefined
   /**
     * The email template directory and engine information
     */
-  var views: js.UndefOr[js.Any] = js.undefined
+  var views: js.UndefOr[View] = js.undefined
 }
 
 object EmailConfig {
   @scala.inline
-  def apply(
-    message: js.Any,
-    htmlToText: js.Any = null,
+  def apply[T](
+    message: Options,
+    htmlToText: HtmlToTextOptions | `false` = null,
     i18n: js.Any = null,
     juice: js.UndefOr[Boolean] = js.undefined,
     juiceResources: js.Any = null,
-    preview: js.UndefOr[Boolean] = js.undefined,
-    render: (/* view */ String, /* locals */ js.Any) => js.Promise[_] = null,
+    preview: Boolean | PreviewEmailOpts = null,
+    render: (/* view */ String, /* locals */ T) => js.Promise[_] = null,
     send: js.UndefOr[Boolean] = js.undefined,
-    subjectPrefix: js.Any = null,
+    subjectPrefix: String | `false` = null,
     textOnly: js.UndefOr[Boolean] = js.undefined,
-    transport: js.Any = null,
-    views: js.Any = null
-  ): EmailConfig = {
+    transport: NodeMailerTransportOptions = null,
+    views: View = null
+  ): EmailConfig[T] = {
     val __obj = js.Dynamic.literal(message = message)
-    if (htmlToText != null) __obj.updateDynamic("htmlToText")(htmlToText)
+    if (htmlToText != null) __obj.updateDynamic("htmlToText")(htmlToText.asInstanceOf[js.Any])
     if (i18n != null) __obj.updateDynamic("i18n")(i18n)
     if (!js.isUndefined(juice)) __obj.updateDynamic("juice")(juice)
     if (juiceResources != null) __obj.updateDynamic("juiceResources")(juiceResources)
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
+    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction2(render))
     if (!js.isUndefined(send)) __obj.updateDynamic("send")(send)
-    if (subjectPrefix != null) __obj.updateDynamic("subjectPrefix")(subjectPrefix)
+    if (subjectPrefix != null) __obj.updateDynamic("subjectPrefix")(subjectPrefix.asInstanceOf[js.Any])
     if (!js.isUndefined(textOnly)) __obj.updateDynamic("textOnly")(textOnly)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views)
-    __obj.asInstanceOf[EmailConfig]
+    __obj.asInstanceOf[EmailConfig[T]]
   }
 }
 

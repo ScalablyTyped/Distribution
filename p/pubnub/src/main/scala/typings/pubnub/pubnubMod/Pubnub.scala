@@ -1,5 +1,7 @@
 package typings.pubnub.pubnubMod
 
+import typings.pubnub.Anon_DataMessageAction
+import typings.pubnub.Anon_Data_583575529
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,11 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Pubnub extends js.Object {
   var channelGroups: ChannelGroups = js.native
+  var push: Push = js.native
   def addListener(params: ListenerParameters): Unit = js.native
   def addMembers(params: MembersInputParameters): js.Promise[GetMembersResponse] = js.native
   def addMembers(
     params: MembersInputParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ GetMembersResponse, Unit]
+  ): Unit = js.native
+  def addMessageAction(params: AddMessageActionParameters): js.Promise[Anon_DataMessageAction] = js.native
+  def addMessageAction(
+    params: AddMessageActionParameters,
+    callback: js.Function2[/* status */ PubnubStatus, /* response */ Anon_DataMessageAction, Unit]
   ): Unit = js.native
   def createSpace(params: SpaceInputParameters): js.Promise[GetSpaceResponse] = js.native
   def createSpace(
@@ -29,6 +37,8 @@ trait Pubnub extends js.Object {
   def decrypt(data: js.Object): js.Any = js.native
   def decrypt(data: js.Object, customCipherKey: String): js.Any = js.native
   def decrypt(data: js.Object, customCipherKey: String, options: CryptoParameters): js.Any = js.native
+  def deleteMessages(params: DeleteMessagesParameters): js.Promise[Unit] = js.native
+  def deleteMessages(params: DeleteMessagesParameters, callback: js.Function1[/* status */ PubnubStatus, Unit]): Unit = js.native
   def deleteSpace(spaceId: String): js.Promise[DeleteSpaceResponse] = js.native
   def deleteSpace(
     spaceId: String,
@@ -42,6 +52,11 @@ trait Pubnub extends js.Object {
   def encrypt(data: String): js.Any = js.native
   def encrypt(data: String, customCipherKey: String): js.Any = js.native
   def encrypt(data: String, customCipherKey: String, options: CryptoParameters): js.Any = js.native
+  def fetchMessages(params: FetchMessagesParameters): js.Promise[FetchMessagesResponse] = js.native
+  def fetchMessages(
+    params: FetchMessagesParameters,
+    callback: js.Function2[/* status */ PubnubStatus, /* response */ FetchMessagesResponse, Unit]
+  ): Unit = js.native
   def fire(params: FireParameters): js.Promise[PublishResponse] = js.native
   def fire(
     params: FireParameters,
@@ -57,6 +72,11 @@ trait Pubnub extends js.Object {
   def getMemberships(
     params: GetMembershipsParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ GetMembershipsResponse, Unit]
+  ): Unit = js.native
+  def getMessageActions(params: GetMessageActionsParameters): js.Promise[GetMessageActionsResponse] = js.native
+  def getMessageActions(
+    params: GetMessageActionsParameters,
+    callback: js.Function2[/* status */ PubnubStatus, /* response */ GetMessageActionsResponse, Unit]
   ): Unit = js.native
   def getSpace(params: GetSpaceParameters): js.Promise[GetSpaceResponse] = js.native
   def getSpace(
@@ -94,6 +114,7 @@ trait Pubnub extends js.Object {
     params: HereNowParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ HereNowResponse, Unit]
   ): Unit = js.native
+  def history(params: HistoryParameters): js.Promise[HistoryResponse] = js.native
   def history(
     params: HistoryParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ HistoryResponse, Unit]
@@ -108,6 +129,11 @@ trait Pubnub extends js.Object {
     params: LeaveSpacesParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ GetMembershipsResponse, Unit]
   ): Unit = js.native
+  def messageCounts(params: MessageCountsParameters): js.Promise[MessageCountsResponse] = js.native
+  def messageCounts(
+    params: MessageCountsParameters,
+    callback: js.Function2[/* status */ PubnubStatus, /* response */ MessageCountsResponse, Unit]
+  ): Unit = js.native
   def publish(params: PublishParameters): js.Promise[PublishResponse] = js.native
   def publish(
     params: PublishParameters,
@@ -118,6 +144,11 @@ trait Pubnub extends js.Object {
   def removeMembers(
     params: RemoveMembersParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ GetMembersResponse, Unit]
+  ): Unit = js.native
+  def removeMessageAction(params: RemoveMessageActionParameters): js.Promise[Anon_Data_583575529] = js.native
+  def removeMessageAction(
+    params: RemoveMessageActionParameters,
+    callback: js.Function2[/* status */ PubnubStatus, /* response */ Anon_Data_583575529, Unit]
   ): Unit = js.native
   def setAuthKey(authKey: String): Unit = js.native
   def setFilterExpression(filterExpression: String): Unit = js.native

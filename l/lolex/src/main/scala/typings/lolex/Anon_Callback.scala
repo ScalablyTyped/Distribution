@@ -23,8 +23,8 @@ trait Anon_Callback extends js.Object {
     */
   def queueMicrotask(callback: js.Function0[Unit]): Unit = js.native
   /**
-  	 * Run all pending microtasks scheduled with nextTick.
-  	 */
+    * Run all pending microtasks scheduled with nextTick.
+    */
   def runMicrotasks(): Unit = js.native
 }
 

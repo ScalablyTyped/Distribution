@@ -1,6 +1,6 @@
 package typings.baseDashX.baseDashXMod
 
-import typings.node.bufferMod.Buffer
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

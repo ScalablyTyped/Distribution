@@ -1,5 +1,6 @@
 package typings.vcf.vcfMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("vcf", "Property")
 @js.native
 class Property protected () extends js.Object {
-  def this(field: PropertyType, value: String) = this()
-  def this(field: PropertyType, value: String, params: jCardParameters) = this()
+  def this(field: String, value: String) = this()
+  def this(field: String, value: String, params: StringDictionary[String | js.Array[String]]) = this()
   /** Check if the property is of a given type */
   def is(`type`: String): Boolean = js.native
   /** Check whether the property is empty */

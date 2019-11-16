@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "workbox-window"
-version := "4.3-dt-20190805Z-c733f2"
+version := "4.3-dt-20191115Z-730651"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

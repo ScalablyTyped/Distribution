@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object xmlMod {
   import org.scalablytyped.runtime.StringDictionary
 
-  type XmlAtom = String | Double | Boolean
-  type XmlAttrs = StringDictionary[String]
+  type XmlAtom = String | Double | Boolean | Null
+  type XmlAttrs = StringDictionary[XmlAtom]
   /* Rewritten from type alias, can be one of: 
     - typings.xml.Anon_Attr
     - typings.xml.Anon_Cdata

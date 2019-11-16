@@ -25,6 +25,7 @@ class Duration () extends js.Object {
   def as(unit: DurationUnit): Double = js.native
   def equals(other: Duration): Boolean = js.native
   def get(unit: DurationUnit): Double = js.native
+  def mapUnits(fn: js.Function2[/* x */ Double, /* u */ DurationUnit, Double]): Duration = js.native
   def minus(duration: Double): Duration = js.native
   def minus(duration: Duration): Duration = js.native
   def minus(duration: DurationObject): Duration = js.native

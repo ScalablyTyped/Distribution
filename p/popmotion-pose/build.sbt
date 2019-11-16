@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "popmotion-pose"
-version := "3.4.10-727c00"
+version := "3.4.11-e0a13d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

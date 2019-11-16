@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jest-changed-files" : "24.9.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jest-changed-files" : "24.9.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

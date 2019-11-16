@@ -1,9 +1,15 @@
 package typings.cytoscape.cytoscapeMod.Css
 
+import typings.cytoscape.cytoscapeStrings.`linear-gradient`
+import typings.cytoscape.cytoscapeStrings.`radial-gradient`
 import typings.cytoscape.cytoscapeStrings.`unbundled-bezier`
 import typings.cytoscape.cytoscapeStrings.bezier
+import typings.cytoscape.cytoscapeStrings.butt
 import typings.cytoscape.cytoscapeStrings.haystack
+import typings.cytoscape.cytoscapeStrings.round
 import typings.cytoscape.cytoscapeStrings.segments
+import typings.cytoscape.cytoscapeStrings.solid
+import typings.cytoscape.cytoscapeStrings.square
 import typings.cytoscape.cytoscapeStrings.straight
 import typings.cytoscape.cytoscapeStrings.taxi
 import scala.scalajs.js
@@ -11,6 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof cytoscape.cytoscape.Css.Gradient ]:? cytoscape.cytoscape.Css.Gradient[P]}
 - Dropped {[ P in keyof cytoscape.cytoscape.Css.Overlay ]:? cytoscape.cytoscape.Css.Overlay[P]}
 - Dropped {[ P in keyof cytoscape.cytoscape.Css.BezierEdges ]:? cytoscape.cytoscape.Css.BezierEdges[P]}
 - Dropped {[ P in keyof cytoscape.cytoscape.Css.UnbundledBezierEdges ]:? cytoscape.cytoscape.Css.UnbundledBezierEdges[P]}
@@ -25,7 +32,11 @@ object Edge {
   @scala.inline
   def apply(
     `curve-style`: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi] = null,
+    `line-cap`: PropertyValueEdge[butt | round | square] = null,
     `line-color`: PropertyValueEdge[Colour] = null,
+    `line-dash-offset`: PropertyValueEdge[Double] = null,
+    `line-dash-pattern`: js.Array[PropertyValueEdge[Double]] = null,
+    `line-fill`: PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`] = null,
     `line-style`: PropertyValueEdge[LineStyle] = null,
     `mid-source-arrow-color`: PropertyValueEdge[Colour] = null,
     `mid-source-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
@@ -43,7 +54,11 @@ object Edge {
   ): Edge = {
     val __obj = js.Dynamic.literal()
     if (`curve-style` != null) __obj.updateDynamic("curve-style")(`curve-style`.asInstanceOf[js.Any])
+    if (`line-cap` != null) __obj.updateDynamic("line-cap")(`line-cap`.asInstanceOf[js.Any])
     if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`.asInstanceOf[js.Any])
+    if (`line-dash-offset` != null) __obj.updateDynamic("line-dash-offset")(`line-dash-offset`.asInstanceOf[js.Any])
+    if (`line-dash-pattern` != null) __obj.updateDynamic("line-dash-pattern")(`line-dash-pattern`)
+    if (`line-fill` != null) __obj.updateDynamic("line-fill")(`line-fill`.asInstanceOf[js.Any])
     if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`.asInstanceOf[js.Any])
     if (`mid-source-arrow-color` != null) __obj.updateDynamic("mid-source-arrow-color")(`mid-source-arrow-color`.asInstanceOf[js.Any])
     if (`mid-source-arrow-fill` != null) __obj.updateDynamic("mid-source-arrow-fill")(`mid-source-arrow-fill`.asInstanceOf[js.Any])

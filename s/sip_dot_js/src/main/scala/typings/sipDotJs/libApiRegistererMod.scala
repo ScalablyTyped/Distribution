@@ -33,23 +33,27 @@ object libApiRegistererMod extends js.Object {
     var _waiting: js.Any = js.native
     /** Emits when waiting changes. */
     var _waitingEventEmitter: js.Any = js.native
-    /** @internal */
+    /**
+      * Clear registration timers.
+      */
     var clearTimers: js.Any = js.native
-    var contact: js.Any = js.native
     /** The registered contacts. */
     val contacts: js.Array[String] = js.native
     var expires: js.Any = js.native
     /**
-      * Helper Function to generate Contact Header
-      * @internal
+      * Generate Contact Header
       */
     var generateContactHeader: js.Any = js.native
     var id: js.Any = js.native
     var logger: js.Any = js.native
-    /** @internal */
+    /**
+      * @deprecated This should get cleaned up when Transport is reworked
+      */
     var onTransportDisconnected: js.Any = js.native
     var options: js.Any = js.native
-    /** @internal */
+    /**
+      * Helper function, called when registered.
+      */
     var registered: js.Any = js.native
     var registrationExpiredTimer: js.Any = js.native
     var registrationTimer: js.Any = js.native
@@ -60,19 +64,23 @@ object libApiRegistererMod extends js.Object {
     val stateChange: Emitter[RegistererState] = js.native
     /**
       * Transition registration state.
-      * @internal
       */
     var stateTransition: js.Any = js.native
-    /** @internal */
+    /**
+      * Helper function, called when terminated.
+      */
+    var terminated: js.Any = js.native
+    /**
+      * Helper function, called when unregistered.
+      */
     var unregistered: js.Any = js.native
     var userAgent: js.Any = js.native
-    /** True if waiting for final response to a REGISTER request. */
+    /** True if the registerer is currently waiting for final response to a REGISTER request. */
     val waiting: js.Any = js.native
-    /** Emits when the registerer toggles waiting. */
+    /** Emits when the registerer waiting state changes. */
     val waitingChange: js.Any = js.native
     /**
       * Toggle waiting.
-      * @internal
       */
     var waitingToggle: js.Any = js.native
     /** Destructor. */
@@ -81,14 +89,24 @@ object libApiRegistererMod extends js.Object {
       * Sends the REGISTER request.
       * @remarks
       * If successfull, sends re-REGISTER requests prior to registration expiration until `unsubscribe()` is called.
+      * Rejects with `RequestPendingError` if a REGISTER request is alreadly in progress.
       */
     def register(): js.Promise[OutgoingRegisterRequest] = js.native
     def register(options: RegistererRegisterOptions): js.Promise[OutgoingRegisterRequest] = js.native
     /**
       * Sends the REGISTER request with expires equal to zero.
+      * Rejects with `RequestPendingError` if a REGISTER request is alreadly in progress.
       */
     def unregister(): js.Promise[OutgoingRegisterRequest] = js.native
     def unregister(options: RegistererUnregisterOptions): js.Promise[OutgoingRegisterRequest] = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object Registerer extends js.Object {
+    /** Default registerer options. */
+    val defaultOptions: js.Any = js.native
+    var newUUID: js.Any = js.native
   }
   
 }

@@ -61,6 +61,7 @@ trait GridProps[T] extends js.Object {
   var getCellActions: js.UndefOr[
     js.Function2[/* column */ Column[T], /* row */ T, js.Array[ActionButton | ActionMenu]]
   ] = js.undefined
+  var getSubRowDetails: js.UndefOr[js.Function1[/* row */ T, SubRowDetails[_]]] = js.undefined
   /**
     * Responsible for returning an Array of values that can be used for filtering
     * a column that is column.filterable and using a column.filterRenderer that
@@ -109,6 +110,11 @@ trait GridProps[T] extends js.Object {
     * @param coordinates The row and column indices of the deselected cell.
     */
   var onCellDeSelected: js.UndefOr[js.Function1[/* coordinates */ Anon_Idx, Unit]] = js.undefined
+  /**
+    * Invoked when the user clicks on one cell to expand it.
+    * @param e Information about the event
+    */
+  var onCellExpand: js.UndefOr[js.Function1[/* e */ CellExpandEvent[T], Unit]] = js.undefined
   /**
     * Called when a cell is selected.
     * @param coordinates The row and column indices of the selected cell.
@@ -254,6 +260,7 @@ object GridProps {
     enableDragAndDrop: js.UndefOr[Boolean] = js.undefined,
     enableRowSelect: Boolean | single | multi = null,
     getCellActions: (/* column */ Column[T], /* row */ T) => js.Array[ActionButton | ActionMenu] = null,
+    getSubRowDetails: /* row */ T => SubRowDetails[_] = null,
     getValidFilterValues: /* columnKey */ String => js.Array[_] = null,
     headerFiltersHeight: Int | Double = null,
     headerRowHeight: Int | Double = null,
@@ -263,6 +270,7 @@ object GridProps {
     onAddFilter: /* filter */ Filter => Unit = null,
     onCellCopyPaste: /* e */ CellCopyPasteEvent => Unit = null,
     onCellDeSelected: /* coordinates */ Anon_Idx => Unit = null,
+    onCellExpand: /* e */ CellExpandEvent[T] => Unit = null,
     onCellSelected: /* coordinates */ Anon_Idx => Unit = null,
     onCellsDragged: /* e */ CellDragEvent => Unit = null,
     onClearFilters: () => Unit = null,
@@ -296,6 +304,7 @@ object GridProps {
     if (!js.isUndefined(enableDragAndDrop)) __obj.updateDynamic("enableDragAndDrop")(enableDragAndDrop)
     if (enableRowSelect != null) __obj.updateDynamic("enableRowSelect")(enableRowSelect.asInstanceOf[js.Any])
     if (getCellActions != null) __obj.updateDynamic("getCellActions")(js.Any.fromFunction2(getCellActions))
+    if (getSubRowDetails != null) __obj.updateDynamic("getSubRowDetails")(js.Any.fromFunction1(getSubRowDetails))
     if (getValidFilterValues != null) __obj.updateDynamic("getValidFilterValues")(js.Any.fromFunction1(getValidFilterValues))
     if (headerFiltersHeight != null) __obj.updateDynamic("headerFiltersHeight")(headerFiltersHeight.asInstanceOf[js.Any])
     if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
@@ -305,6 +314,7 @@ object GridProps {
     if (onAddFilter != null) __obj.updateDynamic("onAddFilter")(js.Any.fromFunction1(onAddFilter))
     if (onCellCopyPaste != null) __obj.updateDynamic("onCellCopyPaste")(js.Any.fromFunction1(onCellCopyPaste))
     if (onCellDeSelected != null) __obj.updateDynamic("onCellDeSelected")(js.Any.fromFunction1(onCellDeSelected))
+    if (onCellExpand != null) __obj.updateDynamic("onCellExpand")(js.Any.fromFunction1(onCellExpand))
     if (onCellSelected != null) __obj.updateDynamic("onCellSelected")(js.Any.fromFunction1(onCellSelected))
     if (onCellsDragged != null) __obj.updateDynamic("onCellsDragged")(js.Any.fromFunction1(onCellsDragged))
     if (onClearFilters != null) __obj.updateDynamic("onClearFilters")(js.Any.fromFunction0(onClearFilters))

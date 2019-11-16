@@ -10,7 +10,7 @@ package object expressMod {
   type Application = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Application
   type CookieOptions = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.CookieOptions
   type Errback = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Errback
-  type ErrorRequestHandler[P /* <: Params */] = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ErrorRequestHandler[P]
+  type ErrorRequestHandler[P /* <: Params */] = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ErrorRequestHandler[P, js.Any, js.Any]
   type Express = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Express
   type Handler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Handler
   type IRoute = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.IRoute
@@ -19,12 +19,13 @@ package object expressMod {
   type IRouterMatcher[T] = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.IRouterMatcher[T]
   type MediaType = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.MediaType
   type NextFunction = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.NextFunction
-  type Request[P /* <: Params */] = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[P]
-  type RequestHandler[P /* <: Params */] = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler[P]
+  type Request[P /* <: Params */] = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Request[P, js.Any, js.Any]
+  type RequestHandler[P /* <: Params */] = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandler[P, js.Any, js.Any]
   type RequestParamHandler = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestParamHandler
-  type Response = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
+  type Response = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response[js.Any]
   type Router = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Router
   type Send = typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Send[
-    typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
+    js.Any, 
+    typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response[js.Any]
   ]
 }

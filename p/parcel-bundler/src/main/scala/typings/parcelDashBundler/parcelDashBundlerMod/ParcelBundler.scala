@@ -21,7 +21,12 @@ trait ParcelBundler extends js.Object {
   def addAssetType(extension: String, path: String): Unit = js.native
   def addPackager(`type`: String, packager: String): Unit = js.native
   def bundle(): js.Promise[ParcelBundle] = js.native
-  def middleware(): js.Function3[/* req */ Request[ParamsDictionary], /* res */ Response, /* next */ NextFunction, _] = js.native
+  def middleware(): js.Function3[
+    /* req */ Request[ParamsDictionary, _, _], 
+    /* res */ Response[_], 
+    /* next */ NextFunction, 
+    _
+  ] = js.native
   @JSName("off")
   def off_buildEnd(name: buildEnd, cb: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   @JSName("off")

@@ -1,18 +1,21 @@
 package typings.emailDashTemplates.emailDashTemplatesMod
 
+import typings.nodemailer.libMailerMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EmailOptions extends js.Object {
+trait EmailOptions[T] extends js.Object {
   /**
     * The Template Variables
     */
-  var locals: js.Any
+  var locals: T
   /**
     * Nodemailer Message <Nodemailer.com/message/>
+    *
+    * Overrides what is given for constructor
     */
-  var message: js.Any
+  var message: Options
   /**
     * The template name
     */
@@ -21,10 +24,10 @@ trait EmailOptions extends js.Object {
 
 object EmailOptions {
   @scala.inline
-  def apply(locals: js.Any, message: js.Any, template: String): EmailOptions = {
-    val __obj = js.Dynamic.literal(locals = locals, message = message, template = template)
+  def apply[T](locals: T, message: Options, template: String): EmailOptions[T] = {
+    val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any], message = message, template = template)
   
-    __obj.asInstanceOf[EmailOptions]
+    __obj.asInstanceOf[EmailOptions[T]]
   }
 }
 

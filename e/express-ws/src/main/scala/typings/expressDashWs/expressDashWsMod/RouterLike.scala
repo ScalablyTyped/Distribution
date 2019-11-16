@@ -22,6 +22,9 @@ trait RouterLike
     subApplication: typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Application
   ): this.type = js.native
   // tslint:disable-next-line no-unnecessary-generics (This generic is meant to be passed explicitly.)
-  def get[P /* <: Params */](path: PathParams, handlers: (RequestHandler[P] | RequestHandlerParams[P])*): this.type = js.native
+  def get[P /* <: Params */, ResBody, ReqBody](
+    path: PathParams,
+    handlers: ((RequestHandler[P, ResBody, ReqBody]) | (RequestHandlerParams[P, ResBody, ReqBody]))*
+  ): this.type = js.native
 }
 
