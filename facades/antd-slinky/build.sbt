@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "antd-slinky-facade"
-version := "201910310431-8d4d6b"
+version := "201910310431-d06772"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "me.shadaj" %%% "slinky-web" % "0.6.2",
   "org.scalablytyped" %%% "ant-design__create-react-context" % "0.2.4-3d3062",
-  "org.scalablytyped" %%% "antd" % "3.25.1-93b588",
+  "org.scalablytyped" %%% "antd" % "3.25.2-a38dd7",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
   "org.scalablytyped" %%% "moment" % "2.24.0-122f60",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",

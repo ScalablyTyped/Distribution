@@ -2,6 +2,7 @@ package typings.antd
 
 import typings.propDashTypes.propDashTypesMod.ReactNodeLike
 import typings.propDashTypes.propDashTypesMod.Requireable
+import typings.react.reactMod.ReactText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ trait Anon_ArgsCancelText extends js.Object {
   var prefixCls: Requireable[String]
   var title: Requireable[ReactNodeLike]
   var visible: Requireable[Boolean]
-  var width: Requireable[String | Double]
+  var width: Requireable[ReactText]
 }
 
 object Anon_ArgsCancelText {
@@ -37,7 +38,7 @@ object Anon_ArgsCancelText {
     prefixCls: Requireable[String],
     title: Requireable[ReactNodeLike],
     visible: Requireable[Boolean],
-    width: Requireable[String | Double]
+    width: Requireable[ReactText]
   ): Anon_ArgsCancelText = {
     val __obj = js.Dynamic.literal(cancelText = cancelText, centered = centered, closable = closable, closeIcon = closeIcon, confirmLoading = confirmLoading, footer = footer, okText = okText, onCancel = onCancel, onOk = onOk, prefixCls = prefixCls, title = title, visible = visible, width = width)
   

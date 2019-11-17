@@ -3,7 +3,7 @@ package typings.antd.libCheckboxGroupMod
 import typings.antd.Anon_ArgsDefaultValue
 import typings.antd.Anon_CheckboxGroup
 import typings.antd.Anon_Options
-import typings.antd.Anon_Value
+import typings.antd.Anon_ValueArrayCheckboxValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,6 @@ object default extends js.Object {
   var childContextTypes: Anon_CheckboxGroup = js.native
   var defaultProps: Anon_Options = js.native
   var propTypes: Anon_ArgsDefaultValue = js.native
-  def getDerivedStateFromProps(nextProps: CheckboxGroupProps): Anon_Value | Null = js.native
+  def getDerivedStateFromProps(nextProps: CheckboxGroupProps): Anon_ValueArrayCheckboxValueType | Null = js.native
 }
 

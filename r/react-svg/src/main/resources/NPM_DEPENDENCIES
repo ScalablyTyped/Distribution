@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-svg" : "10.0.23"
+      "react-svg" : "10.0.25"
     }
   ],
   "test-dependencies" : [
     {
-      "react-svg" : "10.0.23"
+      "react-svg" : "10.0.25"
     }
   ],
   "compile-devDependencies" : [

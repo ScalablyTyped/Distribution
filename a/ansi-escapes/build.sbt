@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ansi-escapes"
-version := "4.2.1-ad5dfa"
+version := "4.3.0-09087d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

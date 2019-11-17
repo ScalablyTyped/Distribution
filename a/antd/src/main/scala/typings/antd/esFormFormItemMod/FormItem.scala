@@ -26,7 +26,7 @@ trait FormItem
   def getId(): js.Any = js.native
   def getMeta(): js.Any = js.native
   def getOnlyControl(): ReactElement | Null = js.native
-  def getValidateStatus(): error | Empty | success | validating = js.native
+  def getValidateStatus(): Empty | error | success | validating = js.native
   def isRequired(): js.Any = js.native
   def onHelpAnimEnd(_key: String, helpShow: Boolean): Unit = js.native
   def onLabelClick(): Unit = js.native

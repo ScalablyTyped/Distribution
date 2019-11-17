@@ -1,6 +1,7 @@
 package typings.antd
 
 import typings.antd.esCheckboxGroupMod.CheckboxOptionType
+import typings.antd.esCheckboxGroupMod.CheckboxValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_CancelValue extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var value: js.Array[String | Double | Boolean]
+  var value: js.Array[CheckboxValueType]
   def cancelValue(value: String): Unit
   def registerValue(value: String): Unit
   def toggleOption(option: CheckboxOptionType): Unit
@@ -20,7 +21,7 @@ object Anon_CancelValue {
     cancelValue: String => Unit,
     registerValue: String => Unit,
     toggleOption: CheckboxOptionType => Unit,
-    value: js.Array[String | Double | Boolean],
+    value: js.Array[CheckboxValueType],
     disabled: js.UndefOr[Boolean] = js.undefined,
     name: String = null
   ): Anon_CancelValue = {

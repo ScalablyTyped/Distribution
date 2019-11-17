@@ -23,7 +23,7 @@ trait ColumnProps[T] extends js.Object {
   var filterDropdownVisible: js.UndefOr[Boolean] = js.undefined
   var filterIcon: js.UndefOr[ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode])] = js.undefined
   var filterMultiple: js.UndefOr[Boolean] = js.undefined
-  var filteredValue: js.UndefOr[js.Array[_]] = js.undefined
+  var filteredValue: js.UndefOr[js.Array[_] | Null] = js.undefined
   var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
   var fixed: js.UndefOr[Boolean | left | right] = js.undefined
   var key: js.UndefOr[Key] = js.undefined

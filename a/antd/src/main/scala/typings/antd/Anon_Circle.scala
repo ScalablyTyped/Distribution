@@ -10,13 +10,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Circle extends js.Object {
-  var shape: js.UndefOr[square | circle] = js.undefined
+  var shape: js.UndefOr[circle | square] = js.undefined
   var size: js.UndefOr[Double | small | default | large] = js.undefined
 }
 
 object Anon_Circle {
   @scala.inline
-  def apply(shape: square | circle = null, size: Double | small | default | large = null): Anon_Circle = {
+  def apply(shape: circle | square = null, size: Double | small | default | large = null): Anon_Circle = {
     val __obj = js.Dynamic.literal()
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

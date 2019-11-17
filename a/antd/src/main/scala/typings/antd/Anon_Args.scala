@@ -21,7 +21,7 @@ trait Anon_Args extends js.Object {
   var icon: Requireable[String]
   var loading: Requireable[Boolean | js.Object]
   var onClick: Requireable[js.Function1[/* repeated */ _, _]]
-  var shape: Requireable[round | circle | `circle-outline`]
+  var shape: Requireable[circle | round | `circle-outline`]
   var size: Requireable[small | default | large]
   var title: Requireable[String]
   var `type`: Requireable[String]
@@ -36,7 +36,7 @@ object Anon_Args {
     icon: Requireable[String],
     loading: Requireable[Boolean | js.Object],
     onClick: Requireable[js.Function1[/* repeated */ _, _]],
-    shape: Requireable[round | circle | `circle-outline`],
+    shape: Requireable[circle | round | `circle-outline`],
     size: Requireable[small | default | large],
     title: Requireable[String],
     `type`: Requireable[String]

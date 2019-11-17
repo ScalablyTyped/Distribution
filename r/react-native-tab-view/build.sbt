@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-tab-view"
-version := "2.10.0-c2f9c3"
+version := "2.10.2-749a7e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

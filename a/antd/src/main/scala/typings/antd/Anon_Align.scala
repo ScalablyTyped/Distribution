@@ -17,11 +17,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Align extends js.Object {
-  var align: Requireable[top | middle | bottom | stretch]
+  var align: Requireable[stretch | bottom | top | middle]
   var children: Requireable[ReactNodeLike]
   var className: Requireable[String]
   var gutter: Requireable[Double | js.Object]
-  var justify: Requireable[start | center | end | `space-around` | `space-between`]
+  var justify: Requireable[`space-around` | `space-between` | center | end | start]
   var prefixCls: Requireable[String]
   var `type`: Requireable[flex]
 }
@@ -29,11 +29,11 @@ trait Anon_Align extends js.Object {
 object Anon_Align {
   @scala.inline
   def apply(
-    align: Requireable[top | middle | bottom | stretch],
+    align: Requireable[stretch | bottom | top | middle],
     children: Requireable[ReactNodeLike],
     className: Requireable[String],
     gutter: Requireable[Double | js.Object],
-    justify: Requireable[start | center | end | `space-around` | `space-between`],
+    justify: Requireable[`space-around` | `space-between` | center | end | start],
     prefixCls: Requireable[String],
     `type`: Requireable[flex]
   ): Anon_Align = {

@@ -205,6 +205,9 @@ object webpackStrings {
   sealed trait `eval-source-map` extends _Devtool
   
   @js.native
+  sealed trait exports extends js.Object
+  
+  @js.native
   sealed trait global extends LibraryTarget
   
   @js.native
@@ -544,6 +547,8 @@ object webpackStrings {
   def eval: eval = "eval".asInstanceOf[eval]
   @scala.inline
   def `eval-source-map`: `eval-source-map` = "eval-source-map".asInstanceOf[`eval-source-map`]
+  @scala.inline
+  def exports: exports = "exports".asInstanceOf[exports]
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   @scala.inline

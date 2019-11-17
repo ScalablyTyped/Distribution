@@ -23,6 +23,9 @@ object webpackNumbers {
   @js.native
   sealed trait `false` extends js.Object
   
+  @js.native
+  sealed trait `true` extends js.Object
+  
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
@@ -35,5 +38,7 @@ object webpackNumbers {
   def `50000`: `50000` = 50000.asInstanceOf[`50000`]
   @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
+  @scala.inline
+  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

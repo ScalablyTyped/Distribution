@@ -32,7 +32,7 @@ trait Anon_Bottom extends js.Object {
   var icon: Element
   var okType: js.UndefOr[link | default | dashed | primary | ghost | danger] = js.undefined
   var placement: js.UndefOr[
-    left | right | top | bottom | bottomRight | topLeft | topRight | bottomLeft | leftTop | leftBottom | rightTop | rightBottom
+    bottom | left | right | top | bottomRight | topLeft | topRight | bottomLeft | leftTop | leftBottom | rightTop | rightBottom
   ] = js.undefined
   var transitionName: String
   var trigger: js.UndefOr[click | focus | contextMenu | hover] = js.undefined
@@ -45,7 +45,7 @@ object Anon_Bottom {
     icon: Element,
     transitionName: String,
     okType: link | default | dashed | primary | ghost | danger = null,
-    placement: left | right | top | bottom | bottomRight | topLeft | topRight | bottomLeft | leftTop | leftBottom | rightTop | rightBottom = null,
+    placement: bottom | left | right | top | bottomRight | topLeft | topRight | bottomLeft | leftTop | leftBottom | rightTop | rightBottom = null,
     trigger: click | focus | contextMenu | hover = null
   ): Anon_Bottom = {
     val __obj = js.Dynamic.literal(disabled = disabled, icon = icon, transitionName = transitionName)

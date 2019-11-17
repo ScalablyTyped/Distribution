@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "write-json-file" : "4.2.0"
+      "write-json-file" : "4.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "write-json-file" : "4.2.0"
+      "write-json-file" : "4.2.1"
     }
   ],
   "compile-devDependencies" : [

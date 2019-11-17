@@ -276,9 +276,9 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Absolute extends js.Object {
   var KhtmlBoxAlign: js.UndefOr[
-    start | center | end | inherit | `-moz-initial` | initial | revert | unset | stretch | baseline
+    inherit | `-moz-initial` | initial | revert | unset | stretch | center | end | start | baseline
   ] = js.undefined
-  var KhtmlBoxDirection: js.UndefOr[normal | reverse | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var KhtmlBoxDirection: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | normal | reverse] = js.undefined
   var KhtmlBoxFlex: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var KhtmlBoxFlexGroup: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var KhtmlBoxLines: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | multiple | single] = js.undefined
@@ -287,14 +287,14 @@ trait Anon_Absolute extends js.Object {
     inherit | `-moz-initial` | initial | revert | unset | horizontal | vertical | `block-axis` | `inline-axis`
   ] = js.undefined
   var KhtmlBoxPack: js.UndefOr[
-    start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify
+    inherit | `-moz-initial` | initial | revert | unset | center | end | start | justify
   ] = js.undefined
   var KhtmlLineBreak: js.UndefOr[
-    auto | normal | inherit | `-moz-initial` | initial | revert | unset | strict | anywhere | loose
+    inherit | `-moz-initial` | initial | revert | unset | auto | normal | strict | anywhere | loose
   ] = js.undefined
   var KhtmlOpacity: js.UndefOr[String | Double] = js.undefined
   var KhtmlUserSelect: js.UndefOr[
-    all | auto | none | inherit | text | `-moz-initial` | initial | revert | unset | contain | `-moz-none` | element
+    text | none | inherit | `-moz-initial` | initial | revert | unset | auto | contain | all | `-moz-none` | element
   ] = js.undefined
   var MozAnimation: js.UndefOr[String | Double] = js.undefined
   var MozAnimationDelay: js.UndefOr[String] = js.undefined
@@ -308,16 +308,16 @@ trait Anon_Absolute extends js.Object {
   var MozAppearance: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
   ] = js.undefined
-  var MozBackfaceVisibility: js.UndefOr[inherit | hidden | visible | `-moz-initial` | initial | revert | unset] = js.undefined
+  var MozBackfaceVisibility: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | hidden | visible] = js.undefined
   var MozBackgroundClip: js.UndefOr[String] = js.undefined
-  var MozBackgroundInlinePolicy: js.UndefOr[slice | inherit | `-moz-initial` | initial | revert | unset | clone] = js.undefined
+  var MozBackgroundInlinePolicy: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | clone | slice] = js.undefined
   var MozBackgroundOrigin: js.UndefOr[String] = js.undefined
   var MozBackgroundSize: js.UndefOr[String | Double] = js.undefined
   var MozBinding: js.UndefOr[String] = js.undefined
   var MozBorderBottomColors: js.UndefOr[String] = js.undefined
   var MozBorderEndColor: js.UndefOr[String] = js.undefined
   var MozBorderEndStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var MozBorderEndWidth: js.UndefOr[String | Double] = js.undefined
   var MozBorderImage: js.UndefOr[String | Double] = js.undefined
@@ -330,28 +330,28 @@ trait Anon_Absolute extends js.Object {
   var MozBorderRightColors: js.UndefOr[String] = js.undefined
   var MozBorderStartColor: js.UndefOr[String] = js.undefined
   var MozBorderStartStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var MozBorderTopColors: js.UndefOr[String] = js.undefined
   var MozBoxAlign: js.UndefOr[
-    start | center | end | inherit | `-moz-initial` | initial | revert | unset | stretch | baseline
+    inherit | `-moz-initial` | initial | revert | unset | stretch | center | end | start | baseline
   ] = js.undefined
-  var MozBoxDirection: js.UndefOr[normal | reverse | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var MozBoxDirection: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | normal | reverse] = js.undefined
   var MozBoxFlex: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var MozBoxOrdinalGroup: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var MozBoxOrient: js.UndefOr[
     inherit | `-moz-initial` | initial | revert | unset | horizontal | vertical | `block-axis` | `inline-axis`
   ] = js.undefined
   var MozBoxPack: js.UndefOr[
-    start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify
+    inherit | `-moz-initial` | initial | revert | unset | center | end | start | justify
   ] = js.undefined
   var MozBoxShadow: js.UndefOr[String] = js.undefined
   var MozBoxSizing: js.UndefOr[
     inherit | `-moz-initial` | initial | revert | unset | `border-box` | `content-box`
   ] = js.undefined
-  var MozColumnCount: js.UndefOr[Double | auto | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var MozColumnCount: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset | auto] = js.undefined
   var MozColumnFill: js.UndefOr[
-    auto | inherit | `-moz-initial` | initial | revert | unset | balance | `balance-all`
+    inherit | `-moz-initial` | initial | revert | unset | auto | balance | `balance-all`
   ] = js.undefined
   var MozColumnGap: js.UndefOr[String | Double] = js.undefined
   var MozColumnRule: js.UndefOr[String | Double] = js.undefined
@@ -367,7 +367,7 @@ trait Anon_Absolute extends js.Object {
   var MozFontFeatureSettings: js.UndefOr[String] = js.undefined
   var MozFontLanguageOverride: js.UndefOr[String] = js.undefined
   var MozForceBrokenImageIcon: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
-  var MozHyphens: js.UndefOr[auto | none | manual | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var MozHyphens: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | manual] = js.undefined
   var MozImageRegion: js.UndefOr[String] = js.undefined
   var MozMarginEnd: js.UndefOr[String | Double] = js.undefined
   var MozMarginStart: js.UndefOr[String | Double] = js.undefined
@@ -391,9 +391,9 @@ trait Anon_Absolute extends js.Object {
   var MozStackSizing: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | ignore | `stretch-to-fit`] = js.undefined
   var MozTabSize: js.UndefOr[String | Double] = js.undefined
   var MozTextAlignLast: js.UndefOr[
-    auto | left | right | start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify
+    inherit | `-moz-initial` | initial | revert | unset | auto | center | end | start | left | right | justify
   ] = js.undefined
-  var MozTextBlink: js.UndefOr[blink | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var MozTextBlink: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | blink] = js.undefined
   var MozTextDecorationColor: js.UndefOr[String] = js.undefined
   var MozTextDecorationLine: js.UndefOr[String] = js.undefined
   var MozTextDecorationStyle: js.UndefOr[
@@ -408,20 +408,20 @@ trait Anon_Absolute extends js.Object {
   var MozTransitionProperty: js.UndefOr[String] = js.undefined
   var MozTransitionTimingFunction: js.UndefOr[String] = js.undefined
   var MozUserFocus: js.UndefOr[
-    normal | none | inherit | `-moz-initial` | initial | revert | unset | ignore | `select-after` | `select-all` | `select-before` | `select-menu` | `select-same`
+    none | inherit | `-moz-initial` | initial | revert | unset | normal | ignore | `select-after` | `select-all` | `select-before` | `select-menu` | `select-same`
   ] = js.undefined
   var MozUserInput: js.UndefOr[
-    auto | none | disabled | enabled | inherit | `-moz-initial` | initial | revert | unset
+    none | inherit | `-moz-initial` | initial | revert | unset | auto | disabled | enabled
   ] = js.undefined
   var MozUserModify: js.UndefOr[
     inherit | `-moz-initial` | initial | revert | unset | `read-only` | `read-write` | `write-only`
   ] = js.undefined
   var MozUserSelect: js.UndefOr[
-    all | auto | none | inherit | text | `-moz-initial` | initial | revert | unset | contain | `-moz-none` | element
+    text | none | inherit | `-moz-initial` | initial | revert | unset | auto | contain | all | `-moz-none` | element
   ] = js.undefined
-  var MozWindowDragging: js.UndefOr[inherit | drag | `-moz-initial` | initial | revert | unset | `no-drag`] = js.undefined
+  var MozWindowDragging: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | drag | `no-drag`] = js.undefined
   var MozWindowShadow: js.UndefOr[
-    none | default | inherit | menu | `-moz-initial` | initial | revert | unset | sheet | tooltip
+    menu | none | inherit | default | `-moz-initial` | initial | revert | unset | sheet | tooltip
   ] = js.undefined
   var OAnimation: js.UndefOr[String | Double] = js.undefined
   var OAnimationDelay: js.UndefOr[String] = js.undefined
@@ -463,7 +463,7 @@ trait Anon_Absolute extends js.Object {
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any
   ] = js.undefined
   var WebkitBackdropFilter: js.UndefOr[String] = js.undefined
-  var WebkitBackfaceVisibility: js.UndefOr[inherit | hidden | visible | `-moz-initial` | initial | revert | unset] = js.undefined
+  var WebkitBackfaceVisibility: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | hidden | visible] = js.undefined
   var WebkitBackgroundClip: js.UndefOr[String] = js.undefined
   var WebkitBackgroundOrigin: js.UndefOr[String] = js.undefined
   var WebkitBackgroundSize: js.UndefOr[String | Double] = js.undefined
@@ -479,10 +479,10 @@ trait Anon_Absolute extends js.Object {
   var WebkitBorderTopLeftRadius: js.UndefOr[String | Double] = js.undefined
   var WebkitBorderTopRightRadius: js.UndefOr[String | Double] = js.undefined
   var WebkitBoxAlign: js.UndefOr[
-    start | center | end | inherit | `-moz-initial` | initial | revert | unset | stretch | baseline
+    inherit | `-moz-initial` | initial | revert | unset | stretch | center | end | start | baseline
   ] = js.undefined
-  var WebkitBoxDecorationBreak: js.UndefOr[slice | inherit | `-moz-initial` | initial | revert | unset | clone] = js.undefined
-  var WebkitBoxDirection: js.UndefOr[normal | reverse | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var WebkitBoxDecorationBreak: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | clone | slice] = js.undefined
+  var WebkitBoxDirection: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | normal | reverse] = js.undefined
   var WebkitBoxFlex: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var WebkitBoxFlexGroup: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var WebkitBoxLines: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | multiple | single] = js.undefined
@@ -491,7 +491,7 @@ trait Anon_Absolute extends js.Object {
     inherit | `-moz-initial` | initial | revert | unset | horizontal | vertical | `block-axis` | `inline-axis`
   ] = js.undefined
   var WebkitBoxPack: js.UndefOr[
-    start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify
+    inherit | `-moz-initial` | initial | revert | unset | center | end | start | justify
   ] = js.undefined
   var WebkitBoxReflect: js.UndefOr[String | Double] = js.undefined
   var WebkitBoxShadow: js.UndefOr[String] = js.undefined
@@ -500,16 +500,16 @@ trait Anon_Absolute extends js.Object {
   ] = js.undefined
   var WebkitClipPath: js.UndefOr[String] = js.undefined
   var WebkitColorAdjust: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | economy | exact] = js.undefined
-  var WebkitColumnCount: js.UndefOr[Double | auto | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var WebkitColumnCount: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset | auto] = js.undefined
   var WebkitColumnFill: js.UndefOr[
-    auto | inherit | `-moz-initial` | initial | revert | unset | balance | `balance-all`
+    inherit | `-moz-initial` | initial | revert | unset | auto | balance | `balance-all`
   ] = js.undefined
   var WebkitColumnGap: js.UndefOr[String | Double] = js.undefined
   var WebkitColumnRule: js.UndefOr[String | Double] = js.undefined
   var WebkitColumnRuleColor: js.UndefOr[String] = js.undefined
   var WebkitColumnRuleStyle: js.UndefOr[String] = js.undefined
   var WebkitColumnRuleWidth: js.UndefOr[String | Double] = js.undefined
-  var WebkitColumnSpan: js.UndefOr[all | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var WebkitColumnSpan: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | all] = js.undefined
   var WebkitColumnWidth: js.UndefOr[String | Double] = js.undefined
   var WebkitColumns: js.UndefOr[String | Double] = js.undefined
   var WebkitFilter: js.UndefOr[String] = js.undefined
@@ -525,12 +525,12 @@ trait Anon_Absolute extends js.Object {
     inherit | `-moz-initial` | initial | revert | unset | nowrap | wrap | `wrap-reverse`
   ] = js.undefined
   var WebkitFontFeatureSettings: js.UndefOr[String] = js.undefined
-  var WebkitFontKerning: js.UndefOr[auto | normal | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var WebkitFontKerning: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | normal] = js.undefined
   var WebkitFontVariantLigatures: js.UndefOr[String] = js.undefined
-  var WebkitHyphens: js.UndefOr[auto | none | manual | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var WebkitHyphens: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | manual] = js.undefined
   var WebkitJustifyContent: js.UndefOr[String] = js.undefined
   var WebkitLineBreak: js.UndefOr[
-    auto | normal | inherit | `-moz-initial` | initial | revert | unset | strict | anywhere | loose
+    inherit | `-moz-initial` | initial | revert | unset | auto | normal | strict | anywhere | loose
   ] = js.undefined
   var WebkitLineClamp: js.UndefOr[Double | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var WebkitMarginEnd: js.UndefOr[String | Double] = js.undefined
@@ -546,15 +546,15 @@ trait Anon_Absolute extends js.Object {
   var WebkitMaskPositionY: js.UndefOr[String | Double] = js.undefined
   var WebkitMaskRepeat: js.UndefOr[String] = js.undefined
   var WebkitMaskRepeatX: js.UndefOr[
-    repeat | round | inherit | `-moz-initial` | initial | revert | unset | `no-repeat` | space
+    inherit | `-moz-initial` | initial | revert | unset | `no-repeat` | repeat | round | space
   ] = js.undefined
   var WebkitMaskRepeatY: js.UndefOr[
-    repeat | round | inherit | `-moz-initial` | initial | revert | unset | `no-repeat` | space
+    inherit | `-moz-initial` | initial | revert | unset | `no-repeat` | repeat | round | space
   ] = js.undefined
   var WebkitMaskSize: js.UndefOr[String | Double] = js.undefined
   var WebkitMaxInlineSize: js.UndefOr[String | Double] = js.undefined
   var WebkitOrder: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
-  var WebkitOverflowScrolling: js.UndefOr[auto | inherit | `-moz-initial` | initial | revert | unset | touch] = js.undefined
+  var WebkitOverflowScrolling: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | auto | touch] = js.undefined
   var WebkitPaddingEnd: js.UndefOr[String | Double] = js.undefined
   var WebkitPaddingStart: js.UndefOr[String | Double] = js.undefined
   var WebkitPerspective: js.UndefOr[String | Double] = js.undefined
@@ -581,7 +581,7 @@ trait Anon_Absolute extends js.Object {
   var WebkitTextStroke: js.UndefOr[String | Double] = js.undefined
   var WebkitTextStrokeColor: js.UndefOr[String] = js.undefined
   var WebkitTextStrokeWidth: js.UndefOr[String | Double] = js.undefined
-  var WebkitTouchCallout: js.UndefOr[none | default | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var WebkitTouchCallout: js.UndefOr[none | inherit | default | `-moz-initial` | initial | revert | unset] = js.undefined
   var WebkitTransform: js.UndefOr[String] = js.undefined
   var WebkitTransformOrigin: js.UndefOr[String | Double] = js.undefined
   var WebkitTransformStyle: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | flat | `preserve-3d`] = js.undefined
@@ -594,7 +594,7 @@ trait Anon_Absolute extends js.Object {
     inherit | `-moz-initial` | initial | revert | unset | `read-only` | `read-write` | `read-write-plaintext-only`
   ] = js.undefined
   var WebkitUserSelect: js.UndefOr[
-    all | auto | none | inherit | text | `-moz-initial` | initial | revert | unset | contain | `-moz-none` | element
+    text | none | inherit | `-moz-initial` | initial | revert | unset | auto | contain | all | `-moz-none` | element
   ] = js.undefined
   var WebkitWritingMode: js.UndefOr[
     inherit | `-moz-initial` | initial | revert | unset | `horizontal-tb` | `sideways-lr` | `sideways-rl` | `vertical-lr` | `vertical-rl`
@@ -603,7 +603,7 @@ trait Anon_Absolute extends js.Object {
   var alignItems: js.UndefOr[String] = js.undefined
   var alignSelf: js.UndefOr[String] = js.undefined
   var alignmentBaseline: js.UndefOr[
-    auto | inherit | hanging | middle | alphabetic | ideographic | `-moz-initial` | initial | revert | unset | baseline | `after-edge` | `before-edge` | central | mathematical | `text-after-edge` | `text-before-edge`
+    inherit | `-moz-initial` | initial | revert | unset | auto | baseline | middle | `after-edge` | alphabetic | `before-edge` | central | hanging | ideographic | mathematical | `text-after-edge` | `text-before-edge`
   ] = js.undefined
   var all: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var animation: js.UndefOr[String | Double] = js.undefined
@@ -616,10 +616,10 @@ trait Anon_Absolute extends js.Object {
   var animationPlayState: js.UndefOr[String] = js.undefined
   var animationTimingFunction: js.UndefOr[String] = js.undefined
   var appearance: js.UndefOr[
-    none | inherit | button | meter | textarea | `-moz-initial` | initial | revert | unset | `button-bevel` | checkbox | listbox | menulist | `menulist-button` | `progress-bar` | `push-button` | radio | searchfield | `slider-horizontal` | `square-button` | textfield
+    button | meter | textarea | none | inherit | `-moz-initial` | initial | revert | unset | `button-bevel` | checkbox | listbox | menulist | `menulist-button` | `progress-bar` | `push-button` | radio | searchfield | `slider-horizontal` | `square-button` | textfield
   ] = js.undefined
   var backdropFilter: js.UndefOr[String] = js.undefined
-  var backfaceVisibility: js.UndefOr[inherit | hidden | visible | `-moz-initial` | initial | revert | unset] = js.undefined
+  var backfaceVisibility: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | hidden | visible] = js.undefined
   var background: js.UndefOr[String | Double] = js.undefined
   var backgroundAttachment: js.UndefOr[String] = js.undefined
   var backgroundBlendMode: js.UndefOr[String] = js.undefined
@@ -641,17 +641,17 @@ trait Anon_Absolute extends js.Object {
   var borderBlockEnd: js.UndefOr[String | Double] = js.undefined
   var borderBlockEndColor: js.UndefOr[String] = js.undefined
   var borderBlockEndStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderBlockEndWidth: js.UndefOr[String | Double] = js.undefined
   var borderBlockStart: js.UndefOr[String | Double] = js.undefined
   var borderBlockStartColor: js.UndefOr[String] = js.undefined
   var borderBlockStartStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderBlockStartWidth: js.UndefOr[String | Double] = js.undefined
   var borderBlockStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderBlockWidth: js.UndefOr[String | Double] = js.undefined
   var borderBottom: js.UndefOr[String | Double] = js.undefined
@@ -659,7 +659,7 @@ trait Anon_Absolute extends js.Object {
   var borderBottomLeftRadius: js.UndefOr[String | Double] = js.undefined
   var borderBottomRightRadius: js.UndefOr[String | Double] = js.undefined
   var borderBottomStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderBottomWidth: js.UndefOr[String | Double] = js.undefined
   var borderCollapse: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | collapse | separate] = js.undefined
@@ -677,30 +677,30 @@ trait Anon_Absolute extends js.Object {
   var borderInlineEnd: js.UndefOr[String | Double] = js.undefined
   var borderInlineEndColor: js.UndefOr[String] = js.undefined
   var borderInlineEndStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderInlineEndWidth: js.UndefOr[String | Double] = js.undefined
   var borderInlineStart: js.UndefOr[String | Double] = js.undefined
   var borderInlineStartColor: js.UndefOr[String] = js.undefined
   var borderInlineStartStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderInlineStartWidth: js.UndefOr[String | Double] = js.undefined
   var borderInlineStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderInlineWidth: js.UndefOr[String | Double] = js.undefined
   var borderLeft: js.UndefOr[String | Double] = js.undefined
   var borderLeftColor: js.UndefOr[String] = js.undefined
   var borderLeftStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderLeftWidth: js.UndefOr[String | Double] = js.undefined
   var borderRadius: js.UndefOr[String | Double] = js.undefined
   var borderRight: js.UndefOr[String | Double] = js.undefined
   var borderRightColor: js.UndefOr[String] = js.undefined
   var borderRightStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderRightWidth: js.UndefOr[String | Double] = js.undefined
   var borderSpacing: js.UndefOr[String | Double] = js.undefined
@@ -712,16 +712,16 @@ trait Anon_Absolute extends js.Object {
   var borderTopLeftRadius: js.UndefOr[String | Double] = js.undefined
   var borderTopRightRadius: js.UndefOr[String | Double] = js.undefined
   var borderTopStyle: js.UndefOr[
-    none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid
+    none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid
   ] = js.undefined
   var borderTopWidth: js.UndefOr[String | Double] = js.undefined
   var borderWidth: js.UndefOr[String | Double] = js.undefined
   var bottom: js.UndefOr[String | Double] = js.undefined
   var boxAlign: js.UndefOr[
-    start | center | end | inherit | `-moz-initial` | initial | revert | unset | stretch | baseline
+    inherit | `-moz-initial` | initial | revert | unset | stretch | center | end | start | baseline
   ] = js.undefined
-  var boxDecorationBreak: js.UndefOr[slice | inherit | `-moz-initial` | initial | revert | unset | clone] = js.undefined
-  var boxDirection: js.UndefOr[normal | reverse | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var boxDecorationBreak: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | clone | slice] = js.undefined
+  var boxDirection: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | normal | reverse] = js.undefined
   var boxFlex: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var boxFlexGroup: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var boxLines: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | multiple | single] = js.undefined
@@ -730,47 +730,47 @@ trait Anon_Absolute extends js.Object {
     inherit | `-moz-initial` | initial | revert | unset | horizontal | vertical | `block-axis` | `inline-axis`
   ] = js.undefined
   var boxPack: js.UndefOr[
-    start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify
+    inherit | `-moz-initial` | initial | revert | unset | center | end | start | justify
   ] = js.undefined
   var boxShadow: js.UndefOr[String] = js.undefined
   var boxSizing: js.UndefOr[
     inherit | `-moz-initial` | initial | revert | unset | `border-box` | `content-box`
   ] = js.undefined
   var breakAfter: js.UndefOr[
-    all | auto | left | right | inherit | `-moz-initial` | initial | revert | unset | always | avoid | `avoid-column` | `avoid-page` | `avoid-region` | column | page | recto | region | verso
+    inherit | `-moz-initial` | initial | revert | unset | auto | left | right | all | always | avoid | `avoid-column` | `avoid-page` | `avoid-region` | column | page | recto | region | verso
   ] = js.undefined
   var breakBefore: js.UndefOr[
-    all | auto | left | right | inherit | `-moz-initial` | initial | revert | unset | always | avoid | `avoid-column` | `avoid-page` | `avoid-region` | column | page | recto | region | verso
+    inherit | `-moz-initial` | initial | revert | unset | auto | left | right | all | always | avoid | `avoid-column` | `avoid-page` | `avoid-region` | column | page | recto | region | verso
   ] = js.undefined
   var breakInside: js.UndefOr[
-    auto | inherit | `-moz-initial` | initial | revert | unset | avoid | `avoid-column` | `avoid-page` | `avoid-region`
+    inherit | `-moz-initial` | initial | revert | unset | auto | avoid | `avoid-column` | `avoid-page` | `avoid-region`
   ] = js.undefined
   var captionSide: js.UndefOr[
-    inherit | top | bottom | `-moz-initial` | initial | revert | unset | `block-end` | `block-start` | `inline-end` | `inline-start`
+    inherit | `-moz-initial` | initial | revert | unset | bottom | top | `block-end` | `block-start` | `inline-end` | `inline-start`
   ] = js.undefined
   var caretColor: js.UndefOr[String] = js.undefined
   var clear: js.UndefOr[
-    left | right | none | both | inherit | `-moz-initial` | initial | revert | unset | `inline-end` | `inline-start`
+    none | inherit | `-moz-initial` | initial | revert | unset | both | left | right | `inline-end` | `inline-start`
   ] = js.undefined
   var clip: js.UndefOr[String] = js.undefined
   var clipPath: js.UndefOr[String] = js.undefined
-  var clipRule: js.UndefOr[nonzero | evenodd | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var clipRule: js.UndefOr[evenodd | nonzero | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var colorAdjust: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | economy | exact] = js.undefined
-  var colorInterpolation: js.UndefOr[auto | inherit | `-moz-initial` | initial | revert | unset | linearRGB | sRGB] = js.undefined
+  var colorInterpolation: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | auto | linearRGB | sRGB] = js.undefined
   var colorRendering: js.UndefOr[
-    auto | inherit | `-moz-initial` | initial | revert | unset | optimizeSpeed | optimizeQuality
+    inherit | `-moz-initial` | initial | revert | unset | auto | optimizeSpeed | optimizeQuality
   ] = js.undefined
-  var columnCount: js.UndefOr[Double | auto | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var columnCount: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset | auto] = js.undefined
   var columnFill: js.UndefOr[
-    auto | inherit | `-moz-initial` | initial | revert | unset | balance | `balance-all`
+    inherit | `-moz-initial` | initial | revert | unset | auto | balance | `balance-all`
   ] = js.undefined
   var columnGap: js.UndefOr[String | Double] = js.undefined
   var columnRule: js.UndefOr[String | Double] = js.undefined
   var columnRuleColor: js.UndefOr[String] = js.undefined
   var columnRuleStyle: js.UndefOr[String] = js.undefined
   var columnRuleWidth: js.UndefOr[String | Double] = js.undefined
-  var columnSpan: js.UndefOr[all | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var columnSpan: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | all] = js.undefined
   var columnWidth: js.UndefOr[String | Double] = js.undefined
   var columns: js.UndefOr[String | Double] = js.undefined
   var contain: js.UndefOr[String] = js.undefined
@@ -779,15 +779,15 @@ trait Anon_Absolute extends js.Object {
   var counterReset: js.UndefOr[String] = js.undefined
   var counterSet: js.UndefOr[String] = js.undefined
   var cursor: js.UndefOr[String] = js.undefined
-  var direction: js.UndefOr[ltr | rtl | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var direction: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | ltr | rtl] = js.undefined
   var display: js.UndefOr[String] = js.undefined
   var dominantBaseline: js.UndefOr[
-    auto | inherit | hanging | middle | alphabetic | ideographic | `-moz-initial` | initial | revert | unset | central | mathematical | `text-after-edge` | `text-before-edge` | `no-change` | `reset-size` | `use-script`
+    inherit | `-moz-initial` | initial | revert | unset | auto | middle | alphabetic | central | hanging | ideographic | mathematical | `text-after-edge` | `text-before-edge` | `no-change` | `reset-size` | `use-script`
   ] = js.undefined
-  var emptyCells: js.UndefOr[show | hide | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var emptyCells: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | hide | show] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
-  var fillRule: js.UndefOr[nonzero | evenodd | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var fillRule: js.UndefOr[evenodd | nonzero | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var filter: js.UndefOr[String] = js.undefined
   var flex: js.UndefOr[String | Double] = js.undefined
   var flexBasis: js.UndefOr[String | Double] = js.undefined
@@ -801,16 +801,16 @@ trait Anon_Absolute extends js.Object {
     inherit | `-moz-initial` | initial | revert | unset | nowrap | wrap | `wrap-reverse`
   ] = js.undefined
   var float: js.UndefOr[
-    left | right | none | inherit | `-moz-initial` | initial | revert | unset | `inline-end` | `inline-start`
+    none | inherit | `-moz-initial` | initial | revert | unset | left | right | `inline-end` | `inline-start`
   ] = js.undefined
   var floodColor: js.UndefOr[String] = js.undefined
   var floodOpacity: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var font: js.UndefOr[String] = js.undefined
   var fontFamily: js.UndefOr[String] = js.undefined
   var fontFeatureSettings: js.UndefOr[String] = js.undefined
-  var fontKerning: js.UndefOr[auto | normal | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var fontKerning: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | normal] = js.undefined
   var fontLanguageOverride: js.UndefOr[String] = js.undefined
-  var fontOpticalSizing: js.UndefOr[auto | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var fontOpticalSizing: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto] = js.undefined
   var fontSize: js.UndefOr[String | Double] = js.undefined
   var fontSizeAdjust: js.UndefOr[Double | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var fontStretch: js.UndefOr[String] = js.undefined
@@ -819,15 +819,15 @@ trait Anon_Absolute extends js.Object {
   var fontVariant: js.UndefOr[String] = js.undefined
   var fontVariantAlternates: js.UndefOr[String] = js.undefined
   var fontVariantCaps: js.UndefOr[
-    normal | inherit | `-moz-initial` | initial | revert | unset | `all-petite-caps` | `all-small-caps` | `petite-caps` | `small-caps` | `titling-caps` | unicase
+    inherit | `-moz-initial` | initial | revert | unset | normal | `all-petite-caps` | `all-small-caps` | `petite-caps` | `small-caps` | `titling-caps` | unicase
   ] = js.undefined
   var fontVariantEastAsian: js.UndefOr[String] = js.undefined
   var fontVariantLigatures: js.UndefOr[String] = js.undefined
   var fontVariantNumeric: js.UndefOr[String] = js.undefined
-  var fontVariantPosition: js.UndefOr[sub | normal | inherit | `-moz-initial` | initial | revert | unset | `super`] = js.undefined
+  var fontVariantPosition: js.UndefOr[sub | inherit | `-moz-initial` | initial | revert | unset | normal | `super`] = js.undefined
   var fontVariationSettings: js.UndefOr[String] = js.undefined
   var fontWeight: js.UndefOr[
-    Double | bold | normal | inherit | `-moz-initial` | initial | revert | unset | bolder | lighter
+    Double | inherit | `-moz-initial` | initial | revert | unset | normal | bold | bolder | lighter
   ] = js.undefined
   var gap: js.UndefOr[String | Double] = js.undefined
   var glyphOrientationVertical: js.UndefOr[String | Double] = js.undefined
@@ -851,14 +851,14 @@ trait Anon_Absolute extends js.Object {
   var gridTemplateRows: js.UndefOr[String | Double] = js.undefined
   var hangingPunctuation: js.UndefOr[String] = js.undefined
   var height: js.UndefOr[String | Double] = js.undefined
-  var hyphens: js.UndefOr[auto | none | manual | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var hyphens: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | manual] = js.undefined
   var imageOrientation: js.UndefOr[String] = js.undefined
   var imageRendering: js.UndefOr[
-    auto | inherit | pixelated | `-moz-initial` | initial | revert | unset | `-moz-crisp-edges` | `-o-crisp-edges` | `-webkit-optimize-contrast` | `crisp-edges`
+    inherit | `-moz-initial` | initial | revert | unset | auto | `-moz-crisp-edges` | `-o-crisp-edges` | `-webkit-optimize-contrast` | `crisp-edges` | pixelated
   ] = js.undefined
   var imageResolution: js.UndefOr[String] = js.undefined
   var imeMode: js.UndefOr[
-    auto | normal | active | disabled | inactive | inherit | `-moz-initial` | initial | revert | unset
+    inherit | `-moz-initial` | initial | revert | unset | auto | disabled | normal | active | inactive
   ] = js.undefined
   var initialLetter: js.UndefOr[String | Double] = js.undefined
   var inlineSize: js.UndefOr[String | Double] = js.undefined
@@ -869,7 +869,7 @@ trait Anon_Absolute extends js.Object {
   var insetInline: js.UndefOr[String | Double] = js.undefined
   var insetInlineEnd: js.UndefOr[String | Double] = js.undefined
   var insetInlineStart: js.UndefOr[String | Double] = js.undefined
-  var isolation: js.UndefOr[auto | inherit | `-moz-initial` | initial | revert | unset | isolate] = js.undefined
+  var isolation: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | auto | isolate] = js.undefined
   var justifyContent: js.UndefOr[String] = js.undefined
   var justifyItems: js.UndefOr[String] = js.undefined
   var justifySelf: js.UndefOr[String] = js.undefined
@@ -877,7 +877,7 @@ trait Anon_Absolute extends js.Object {
   var letterSpacing: js.UndefOr[String | Double] = js.undefined
   var lightingColor: js.UndefOr[String] = js.undefined
   var lineBreak: js.UndefOr[
-    auto | normal | inherit | `-moz-initial` | initial | revert | unset | strict | anywhere | loose
+    inherit | `-moz-initial` | initial | revert | unset | auto | normal | strict | anywhere | loose
   ] = js.undefined
   var lineClamp: js.UndefOr[Double | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var lineHeight: js.UndefOr[String | Double] = js.undefined
@@ -928,15 +928,15 @@ trait Anon_Absolute extends js.Object {
   var minInlineSize: js.UndefOr[String | Double] = js.undefined
   var minWidth: js.UndefOr[String | Double] = js.undefined
   var mixBlendMode: js.UndefOr[
-    normal | inherit | `-moz-initial` | initial | revert | unset | color | `color-burn` | `color-dodge` | darken | difference | exclusion | `hard-light` | hue | lighten | luminosity | multiply | overlay | saturation | screen | `soft-light`
+    inherit | `-moz-initial` | initial | revert | unset | normal | color | `color-burn` | `color-dodge` | darken | difference | exclusion | `hard-light` | hue | lighten | luminosity | multiply | overlay | saturation | screen | `soft-light`
   ] = js.undefined
   var motion: js.UndefOr[String | Double] = js.undefined
   var motionDistance: js.UndefOr[String | Double] = js.undefined
   var motionPath: js.UndefOr[String] = js.undefined
   var motionRotation: js.UndefOr[String] = js.undefined
-  var msAccelerator: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | `false` | `true`] = js.undefined
+  var msAccelerator: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | `true` | `false`] = js.undefined
   var msAlignSelf: js.UndefOr[String] = js.undefined
-  var msBlockProgression: js.UndefOr[inherit | rl | lr | `-moz-initial` | initial | revert | unset | bt | tb] = js.undefined
+  var msBlockProgression: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | bt | lr | rl | tb] = js.undefined
   var msContentZoomChaining: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | chained] = js.undefined
   var msContentZoomLimit: js.UndefOr[String] = js.undefined
   var msContentZoomLimitMax: js.UndefOr[String] = js.undefined
@@ -957,27 +957,27 @@ trait Anon_Absolute extends js.Object {
   var msFlowInto: js.UndefOr[String] = js.undefined
   var msGridColumns: js.UndefOr[String | Double] = js.undefined
   var msGridRows: js.UndefOr[String | Double] = js.undefined
-  var msHighContrastAdjust: js.UndefOr[auto | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var msHighContrastAdjust: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto] = js.undefined
   var msHyphenateLimitChars: js.UndefOr[String | Double] = js.undefined
   var msHyphenateLimitLines: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset | `no-limit`] = js.undefined
   var msHyphenateLimitZone: js.UndefOr[String | Double] = js.undefined
-  var msHyphens: js.UndefOr[auto | none | manual | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
-  var msImeAlign: js.UndefOr[auto | inherit | `-moz-initial` | initial | revert | unset | after] = js.undefined
+  var msHyphens: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | manual] = js.undefined
+  var msImeAlign: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | auto | after] = js.undefined
   var msImeMode: js.UndefOr[
-    auto | normal | active | disabled | inactive | inherit | `-moz-initial` | initial | revert | unset
+    inherit | `-moz-initial` | initial | revert | unset | auto | disabled | normal | active | inactive
   ] = js.undefined
   var msLineBreak: js.UndefOr[
-    auto | normal | inherit | `-moz-initial` | initial | revert | unset | strict | anywhere | loose
+    inherit | `-moz-initial` | initial | revert | unset | auto | normal | strict | anywhere | loose
   ] = js.undefined
   var msOrder: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var msOverflowStyle: js.UndefOr[
-    auto | none | inherit | `-moz-initial` | initial | revert | unset | `-ms-autohiding-scrollbar` | scrollbar
+    none | inherit | `-moz-initial` | initial | revert | unset | auto | `-ms-autohiding-scrollbar` | scrollbar
   ] = js.undefined
   var msOverflowX: js.UndefOr[
-    auto | inherit | hidden | visible | scroll | `-moz-initial` | initial | revert | unset | clip
+    inherit | scroll | `-moz-initial` | initial | revert | unset | auto | hidden | visible | clip
   ] = js.undefined
   var msOverflowY: js.UndefOr[
-    auto | inherit | hidden | visible | scroll | `-moz-initial` | initial | revert | unset | clip
+    inherit | scroll | `-moz-initial` | initial | revert | unset | auto | hidden | visible | clip
   ] = js.undefined
   var msScrollChaining: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | chained] = js.undefined
   var msScrollLimit: js.UndefOr[String] = js.undefined
@@ -1018,12 +1018,12 @@ trait Anon_Absolute extends js.Object {
   var msTransitionDuration: js.UndefOr[String] = js.undefined
   var msTransitionProperty: js.UndefOr[String] = js.undefined
   var msTransitionTimingFunction: js.UndefOr[String] = js.undefined
-  var msUserSelect: js.UndefOr[none | inherit | text | `-moz-initial` | initial | revert | unset | element] = js.undefined
+  var msUserSelect: js.UndefOr[text | none | inherit | `-moz-initial` | initial | revert | unset | element] = js.undefined
   var msWordBreak: js.UndefOr[
-    normal | inherit | `-moz-initial` | initial | revert | unset | `break-word` | `break-all` | `keep-all`
+    inherit | `-moz-initial` | initial | revert | unset | normal | `break-word` | `break-all` | `keep-all`
   ] = js.undefined
   var msWrapFlow: js.UndefOr[
-    auto | both | start | end | inherit | `-moz-initial` | initial | revert | unset | clear | maximum
+    inherit | `-moz-initial` | initial | revert | unset | auto | end | start | both | clear | maximum
   ] = js.undefined
   var msWrapMargin: js.UndefOr[String | Double] = js.undefined
   var msWrapThrough: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | wrap] = js.undefined
@@ -1056,28 +1056,28 @@ trait Anon_Absolute extends js.Object {
   var outlineStyle: js.UndefOr[String] = js.undefined
   var outlineWidth: js.UndefOr[String | Double] = js.undefined
   var overflow: js.UndefOr[String] = js.undefined
-  var overflowAnchor: js.UndefOr[auto | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var overflowAnchor: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto] = js.undefined
   var overflowBlock: js.UndefOr[
-    auto | inherit | hidden | visible | scroll | `-moz-initial` | initial | revert | unset | clip
+    inherit | scroll | `-moz-initial` | initial | revert | unset | auto | hidden | visible | clip
   ] = js.undefined
   var overflowClipBox: js.UndefOr[
     inherit | `-moz-initial` | initial | revert | unset | `content-box` | `padding-box`
   ] = js.undefined
   var overflowInline: js.UndefOr[
-    auto | inherit | hidden | visible | scroll | `-moz-initial` | initial | revert | unset | clip
+    inherit | scroll | `-moz-initial` | initial | revert | unset | auto | hidden | visible | clip
   ] = js.undefined
   var overflowWrap: js.UndefOr[
-    normal | inherit | `-moz-initial` | initial | revert | unset | anywhere | `break-word`
+    inherit | `-moz-initial` | initial | revert | unset | normal | anywhere | `break-word`
   ] = js.undefined
   var overflowX: js.UndefOr[
-    auto | inherit | hidden | visible | scroll | `-moz-initial` | initial | revert | unset | clip
+    inherit | scroll | `-moz-initial` | initial | revert | unset | auto | hidden | visible | clip
   ] = js.undefined
   var overflowY: js.UndefOr[
-    auto | inherit | hidden | visible | scroll | `-moz-initial` | initial | revert | unset | clip
+    inherit | scroll | `-moz-initial` | initial | revert | unset | auto | hidden | visible | clip
   ] = js.undefined
   var overscrollBehavior: js.UndefOr[String] = js.undefined
-  var overscrollBehaviorX: js.UndefOr[auto | none | inherit | `-moz-initial` | initial | revert | unset | contain] = js.undefined
-  var overscrollBehaviorY: js.UndefOr[auto | none | inherit | `-moz-initial` | initial | revert | unset | contain] = js.undefined
+  var overscrollBehaviorX: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | contain] = js.undefined
+  var overscrollBehaviorY: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | contain] = js.undefined
   var padding: js.UndefOr[String | Double] = js.undefined
   var paddingBlock: js.UndefOr[String | Double] = js.undefined
   var paddingBlockEnd: js.UndefOr[String | Double] = js.undefined
@@ -1090,12 +1090,12 @@ trait Anon_Absolute extends js.Object {
   var paddingRight: js.UndefOr[String | Double] = js.undefined
   var paddingTop: js.UndefOr[String | Double] = js.undefined
   var pageBreakAfter: js.UndefOr[
-    auto | left | right | inherit | `-moz-initial` | initial | revert | unset | always | avoid | recto | verso
+    inherit | `-moz-initial` | initial | revert | unset | auto | left | right | always | avoid | recto | verso
   ] = js.undefined
   var pageBreakBefore: js.UndefOr[
-    auto | left | right | inherit | `-moz-initial` | initial | revert | unset | always | avoid | recto | verso
+    inherit | `-moz-initial` | initial | revert | unset | auto | left | right | always | avoid | recto | verso
   ] = js.undefined
-  var pageBreakInside: js.UndefOr[auto | inherit | `-moz-initial` | initial | revert | unset | avoid] = js.undefined
+  var pageBreakInside: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | auto | avoid] = js.undefined
   var paintOrder: js.UndefOr[String] = js.undefined
   var perspective: js.UndefOr[String | Double] = js.undefined
   var perspectiveOrigin: js.UndefOr[String | Double] = js.undefined
@@ -1103,25 +1103,25 @@ trait Anon_Absolute extends js.Object {
   var placeItems: js.UndefOr[String] = js.undefined
   var placeSelf: js.UndefOr[String] = js.undefined
   var pointerEvents: js.UndefOr[
-    all | auto | none | inherit | visible | `-moz-initial` | initial | revert | unset | fill | stroke | painted | visibleFill | visiblePainted | visibleStroke
+    none | inherit | `-moz-initial` | initial | revert | unset | auto | visible | all | fill | stroke | painted | visibleFill | visiblePainted | visibleStroke
   ] = js.undefined
   var position: js.UndefOr[
-    fixed | inherit | `-moz-initial` | initial | revert | unset | `-webkit-sticky` | absolute | relative | static | sticky
+    inherit | `-moz-initial` | initial | revert | unset | `-webkit-sticky` | absolute | fixed | relative | static | sticky
   ] = js.undefined
   var quotes: js.UndefOr[String] = js.undefined
   var resize: js.UndefOr[
-    none | both | inherit | `-moz-initial` | initial | revert | unset | block | `inline` | horizontal | vertical
+    none | inherit | `-moz-initial` | initial | revert | unset | both | block | `inline` | horizontal | vertical
   ] = js.undefined
   var right: js.UndefOr[String | Double] = js.undefined
   var rotate: js.UndefOr[String] = js.undefined
   var rowGap: js.UndefOr[String | Double] = js.undefined
   var rubyAlign: js.UndefOr[
-    start | center | inherit | `-moz-initial` | initial | revert | unset | `space-around` | `space-between`
+    inherit | `-moz-initial` | initial | revert | unset | `space-around` | `space-between` | center | start
   ] = js.undefined
-  var rubyMerge: js.UndefOr[auto | inherit | `-moz-initial` | initial | revert | unset | collapse | separate] = js.undefined
+  var rubyMerge: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | auto | collapse | separate] = js.undefined
   var rubyPosition: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | over | under] = js.undefined
   var scale: js.UndefOr[String | Double] = js.undefined
-  var scrollBehavior: js.UndefOr[auto | smooth | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var scrollBehavior: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | auto | smooth] = js.undefined
   var scrollMargin: js.UndefOr[String | Double] = js.undefined
   var scrollMarginBlock: js.UndefOr[String | Double] = js.undefined
   var scrollMarginBlockEnd: js.UndefOr[String | Double] = js.undefined
@@ -1149,7 +1149,7 @@ trait Anon_Absolute extends js.Object {
   var scrollSnapDestination: js.UndefOr[String | Double] = js.undefined
   var scrollSnapPointsX: js.UndefOr[String] = js.undefined
   var scrollSnapPointsY: js.UndefOr[String] = js.undefined
-  var scrollSnapStop: js.UndefOr[normal | inherit | `-moz-initial` | initial | revert | unset | always] = js.undefined
+  var scrollSnapStop: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | normal | always] = js.undefined
   var scrollSnapType: js.UndefOr[String] = js.undefined
   var scrollSnapTypeX: js.UndefOr[
     none | inherit | `-moz-initial` | initial | revert | unset | mandatory | proximity
@@ -1158,39 +1158,39 @@ trait Anon_Absolute extends js.Object {
     none | inherit | `-moz-initial` | initial | revert | unset | mandatory | proximity
   ] = js.undefined
   var scrollbarColor: js.UndefOr[String] = js.undefined
-  var scrollbarWidth: js.UndefOr[auto | none | inherit | `-moz-initial` | initial | revert | unset | thin] = js.undefined
+  var scrollbarWidth: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto | thin] = js.undefined
   var shapeImageThreshold: js.UndefOr[String | Double] = js.undefined
   var shapeMargin: js.UndefOr[String | Double] = js.undefined
   var shapeOutside: js.UndefOr[String] = js.undefined
   var shapeRendering: js.UndefOr[
-    auto | inherit | `-moz-initial` | initial | revert | unset | geometricPrecision | optimizeSpeed | crispEdges
+    inherit | `-moz-initial` | initial | revert | unset | auto | geometricPrecision | optimizeSpeed | crispEdges
   ] = js.undefined
   var stopColor: js.UndefOr[String] = js.undefined
   var stopOpacity: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var stroke: js.UndefOr[String] = js.undefined
   var strokeDasharray: js.UndefOr[String | Double] = js.undefined
   var strokeDashoffset: js.UndefOr[String | Double] = js.undefined
-  var strokeLinecap: js.UndefOr[square | butt | round | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
-  var strokeLinejoin: js.UndefOr[round | bevel | miter | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var strokeLinecap: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | round | butt | square] = js.undefined
+  var strokeLinejoin: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | round | bevel | miter] = js.undefined
   var strokeMiterlimit: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var strokeOpacity: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var strokeWidth: js.UndefOr[String | Double] = js.undefined
   var tabSize: js.UndefOr[String | Double] = js.undefined
-  var tableLayout: js.UndefOr[fixed | auto | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var tableLayout: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | auto | fixed] = js.undefined
   var textAlign: js.UndefOr[
-    left | right | start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify | `match-parent`
+    inherit | `-moz-initial` | initial | revert | unset | center | end | start | left | right | justify | `match-parent`
   ] = js.undefined
   var textAlignLast: js.UndefOr[
-    auto | left | right | start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify
+    inherit | `-moz-initial` | initial | revert | unset | auto | center | end | start | left | right | justify
   ] = js.undefined
-  var textAnchor: js.UndefOr[start | end | inherit | middle | `-moz-initial` | initial | revert | unset] = js.undefined
+  var textAnchor: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | end | start | middle] = js.undefined
   var textCombineHorizontal: js.UndefOr[String] = js.undefined
   var textCombineUpright: js.UndefOr[String] = js.undefined
   var textDecoration: js.UndefOr[String | Double] = js.undefined
   var textDecorationColor: js.UndefOr[String] = js.undefined
   var textDecorationLine: js.UndefOr[String] = js.undefined
   var textDecorationSkip: js.UndefOr[String] = js.undefined
-  var textDecorationSkipInk: js.UndefOr[auto | none | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var textDecorationSkipInk: js.UndefOr[none | inherit | `-moz-initial` | initial | revert | unset | auto] = js.undefined
   var textDecorationStyle: js.UndefOr[
     inherit | `-moz-initial` | initial | revert | unset | dashed | dotted | double | solid | wavy
   ] = js.undefined
@@ -1202,12 +1202,12 @@ trait Anon_Absolute extends js.Object {
   var textEmphasisStyle: js.UndefOr[String] = js.undefined
   var textIndent: js.UndefOr[String | Double] = js.undefined
   var textJustify: js.UndefOr[
-    auto | none | inherit | `-moz-initial` | initial | revert | unset | `inter-character` | `inter-word`
+    none | inherit | `-moz-initial` | initial | revert | unset | auto | `inter-character` | `inter-word`
   ] = js.undefined
   var textOrientation: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | mixed | sideways | upright] = js.undefined
   var textOverflow: js.UndefOr[String] = js.undefined
   var textRendering: js.UndefOr[
-    auto | inherit | `-moz-initial` | initial | revert | unset | geometricPrecision | optimizeLegibility | optimizeSpeed
+    inherit | `-moz-initial` | initial | revert | unset | auto | geometricPrecision | optimizeLegibility | optimizeSpeed
   ] = js.undefined
   var textShadow: js.UndefOr[String] = js.undefined
   var textSizeAdjust: js.UndefOr[String] = js.undefined
@@ -1231,50 +1231,50 @@ trait Anon_Absolute extends js.Object {
   var transitionTimingFunction: js.UndefOr[String] = js.undefined
   var translate: js.UndefOr[String | Double] = js.undefined
   var unicodeBidi: js.UndefOr[
-    normal | inherit | embed | `-moz-initial` | initial | revert | unset | isolate | `-moz-isolate` | `-moz-isolate-override` | `-moz-plaintext` | `-webkit-isolate` | `bidi-override` | `isolate-override` | plaintext
+    embed | inherit | `-moz-initial` | initial | revert | unset | normal | isolate | `-moz-isolate` | `-moz-isolate-override` | `-moz-plaintext` | `-webkit-isolate` | `bidi-override` | `isolate-override` | plaintext
   ] = js.undefined
   var userSelect: js.UndefOr[
-    all | auto | none | inherit | text | `-moz-initial` | initial | revert | unset | contain | `-moz-none` | element
+    text | none | inherit | `-moz-initial` | initial | revert | unset | auto | contain | all | `-moz-none` | element
   ] = js.undefined
   var vectorEffect: js.UndefOr[
     none | inherit | `-moz-initial` | initial | revert | unset | `non-scaling-stroke`
   ] = js.undefined
   var verticalAlign: js.UndefOr[String | Double] = js.undefined
   var visibility: js.UndefOr[
-    inherit | hidden | visible | `-moz-initial` | initial | revert | unset | collapse
+    inherit | `-moz-initial` | initial | revert | unset | hidden | visible | collapse
   ] = js.undefined
   var whiteSpace: js.UndefOr[
-    normal | inherit | pre | `-moz-initial` | initial | revert | unset | nowrap | `-moz-pre-wrap` | `break-spaces` | `pre-line` | `pre-wrap`
+    pre | inherit | `-moz-initial` | initial | revert | unset | normal | nowrap | `-moz-pre-wrap` | `break-spaces` | `pre-line` | `pre-wrap`
   ] = js.undefined
   var widows: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
   var width: js.UndefOr[String | Double] = js.undefined
   var willChange: js.UndefOr[String] = js.undefined
   var wordBreak: js.UndefOr[
-    normal | inherit | `-moz-initial` | initial | revert | unset | `break-word` | `break-all` | `keep-all`
+    inherit | `-moz-initial` | initial | revert | unset | normal | `break-word` | `break-all` | `keep-all`
   ] = js.undefined
   var wordSpacing: js.UndefOr[String | Double] = js.undefined
-  var wordWrap: js.UndefOr[normal | inherit | `-moz-initial` | initial | revert | unset | `break-word`] = js.undefined
+  var wordWrap: js.UndefOr[inherit | `-moz-initial` | initial | revert | unset | normal | `break-word`] = js.undefined
   var writingMode: js.UndefOr[
     inherit | `-moz-initial` | initial | revert | unset | `horizontal-tb` | `sideways-lr` | `sideways-rl` | `vertical-lr` | `vertical-rl`
   ] = js.undefined
-  var zIndex: js.UndefOr[Double | auto | inherit | `-moz-initial` | initial | revert | unset] = js.undefined
+  var zIndex: js.UndefOr[Double | inherit | `-moz-initial` | initial | revert | unset | auto] = js.undefined
   var zoom: js.UndefOr[String | Double] = js.undefined
 }
 
 object Anon_Absolute {
   @scala.inline
   def apply(
-    KhtmlBoxAlign: start | center | end | inherit | `-moz-initial` | initial | revert | unset | stretch | baseline = null,
-    KhtmlBoxDirection: normal | reverse | inherit | `-moz-initial` | initial | revert | unset = null,
+    KhtmlBoxAlign: inherit | `-moz-initial` | initial | revert | unset | stretch | center | end | start | baseline = null,
+    KhtmlBoxDirection: inherit | `-moz-initial` | initial | revert | unset | normal | reverse = null,
     KhtmlBoxFlex: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     KhtmlBoxFlexGroup: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     KhtmlBoxLines: inherit | `-moz-initial` | initial | revert | unset | multiple | single = null,
     KhtmlBoxOrdinalGroup: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     KhtmlBoxOrient: inherit | `-moz-initial` | initial | revert | unset | horizontal | vertical | `block-axis` | `inline-axis` = null,
-    KhtmlBoxPack: start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify = null,
-    KhtmlLineBreak: auto | normal | inherit | `-moz-initial` | initial | revert | unset | strict | anywhere | loose = null,
+    KhtmlBoxPack: inherit | `-moz-initial` | initial | revert | unset | center | end | start | justify = null,
+    KhtmlLineBreak: inherit | `-moz-initial` | initial | revert | unset | auto | normal | strict | anywhere | loose = null,
     KhtmlOpacity: String | Double = null,
-    KhtmlUserSelect: all | auto | none | inherit | text | `-moz-initial` | initial | revert | unset | contain | `-moz-none` | element = null,
+    KhtmlUserSelect: text | none | inherit | `-moz-initial` | initial | revert | unset | auto | contain | all | `-moz-none` | element = null,
     MozAnimation: String | Double = null,
     MozAnimationDelay: String = null,
     MozAnimationDirection: String = null,
@@ -1285,15 +1285,15 @@ object Anon_Absolute {
     MozAnimationPlayState: String = null,
     MozAnimationTimingFunction: String = null,
     MozAppearance: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
-    MozBackfaceVisibility: inherit | hidden | visible | `-moz-initial` | initial | revert | unset = null,
+    MozBackfaceVisibility: inherit | `-moz-initial` | initial | revert | unset | hidden | visible = null,
     MozBackgroundClip: String = null,
-    MozBackgroundInlinePolicy: slice | inherit | `-moz-initial` | initial | revert | unset | clone = null,
+    MozBackgroundInlinePolicy: inherit | `-moz-initial` | initial | revert | unset | clone | slice = null,
     MozBackgroundOrigin: String = null,
     MozBackgroundSize: String | Double = null,
     MozBinding: String = null,
     MozBorderBottomColors: String = null,
     MozBorderEndColor: String = null,
-    MozBorderEndStyle: none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid = null,
+    MozBorderEndStyle: none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid = null,
     MozBorderEndWidth: String | Double = null,
     MozBorderImage: String | Double = null,
     MozBorderLeftColors: String = null,
@@ -1304,18 +1304,18 @@ object Anon_Absolute {
     MozBorderRadiusTopright: String | Double = null,
     MozBorderRightColors: String = null,
     MozBorderStartColor: String = null,
-    MozBorderStartStyle: none | inherit | hidden | `-moz-initial` | initial | revert | unset | dashed | dotted | double | groove | inset | outset | ridge | solid = null,
+    MozBorderStartStyle: none | inherit | `-moz-initial` | initial | revert | unset | hidden | dashed | dotted | double | groove | inset | outset | ridge | solid = null,
     MozBorderTopColors: String = null,
-    MozBoxAlign: start | center | end | inherit | `-moz-initial` | initial | revert | unset | stretch | baseline = null,
-    MozBoxDirection: normal | reverse | inherit | `-moz-initial` | initial | revert | unset = null,
+    MozBoxAlign: inherit | `-moz-initial` | initial | revert | unset | stretch | center | end | start | baseline = null,
+    MozBoxDirection: inherit | `-moz-initial` | initial | revert | unset | normal | reverse = null,
     MozBoxFlex: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     MozBoxOrdinalGroup: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     MozBoxOrient: inherit | `-moz-initial` | initial | revert | unset | horizontal | vertical | `block-axis` | `inline-axis` = null,
-    MozBoxPack: start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify = null,
+    MozBoxPack: inherit | `-moz-initial` | initial | revert | unset | center | end | start | justify = null,
     MozBoxShadow: String = null,
     MozBoxSizing: inherit | `-moz-initial` | initial | revert | unset | `border-box` | `content-box` = null,
-    MozColumnCount: Double | auto | inherit | `-moz-initial` | initial | revert | unset = null,
-    MozColumnFill: auto | inherit | `-moz-initial` | initial | revert | unset | balance | `balance-all` = null,
+    MozColumnCount: Double | inherit | `-moz-initial` | initial | revert | unset | auto = null,
+    MozColumnFill: inherit | `-moz-initial` | initial | revert | unset | auto | balance | `balance-all` = null,
     MozColumnGap: String | Double = null,
     MozColumnRule: String | Double = null,
     MozColumnRuleColor: String = null,
@@ -1328,7 +1328,7 @@ object Anon_Absolute {
     MozFontFeatureSettings: String = null,
     MozFontLanguageOverride: String = null,
     MozForceBrokenImageIcon: Double | inherit | `-moz-initial` | initial | revert | unset = null,
-    MozHyphens: auto | none | manual | inherit | `-moz-initial` | initial | revert | unset = null,
+    MozHyphens: none | inherit | `-moz-initial` | initial | revert | unset | auto | manual = null,
     MozImageRegion: String = null,
     MozMarginEnd: String | Double = null,
     MozMarginStart: String | Double = null,
@@ -1349,8 +1349,8 @@ object Anon_Absolute {
     MozPerspectiveOrigin: String | Double = null,
     MozStackSizing: inherit | `-moz-initial` | initial | revert | unset | ignore | `stretch-to-fit` = null,
     MozTabSize: String | Double = null,
-    MozTextAlignLast: auto | left | right | start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify = null,
-    MozTextBlink: blink | none | inherit | `-moz-initial` | initial | revert | unset = null,
+    MozTextAlignLast: inherit | `-moz-initial` | initial | revert | unset | auto | center | end | start | left | right | justify = null,
+    MozTextBlink: none | inherit | `-moz-initial` | initial | revert | unset | blink = null,
     MozTextDecorationColor: String = null,
     MozTextDecorationLine: String = null,
     MozTextDecorationStyle: inherit | `-moz-initial` | initial | revert | unset | dashed | dotted | double | solid | wavy = null,
@@ -1362,12 +1362,12 @@ object Anon_Absolute {
     MozTransitionDuration: String = null,
     MozTransitionProperty: String = null,
     MozTransitionTimingFunction: String = null,
-    MozUserFocus: normal | none | inherit | `-moz-initial` | initial | revert | unset | ignore | `select-after` | `select-all` | `select-before` | `select-menu` | `select-same` = null,
-    MozUserInput: auto | none | disabled | enabled | inherit | `-moz-initial` | initial | revert | unset = null,
+    MozUserFocus: none | inherit | `-moz-initial` | initial | revert | unset | normal | ignore | `select-after` | `select-all` | `select-before` | `select-menu` | `select-same` = null,
+    MozUserInput: none | inherit | `-moz-initial` | initial | revert | unset | auto | disabled | enabled = null,
     MozUserModify: inherit | `-moz-initial` | initial | revert | unset | `read-only` | `read-write` | `write-only` = null,
-    MozUserSelect: all | auto | none | inherit | text | `-moz-initial` | initial | revert | unset | contain | `-moz-none` | element = null,
-    MozWindowDragging: inherit | drag | `-moz-initial` | initial | revert | unset | `no-drag` = null,
-    MozWindowShadow: none | default | inherit | menu | `-moz-initial` | initial | revert | unset | sheet | tooltip = null,
+    MozUserSelect: text | none | inherit | `-moz-initial` | initial | revert | unset | auto | contain | all | `-moz-none` | element = null,
+    MozWindowDragging: inherit | `-moz-initial` | initial | revert | unset | drag | `no-drag` = null,
+    MozWindowShadow: menu | none | inherit | default | `-moz-initial` | initial | revert | unset | sheet | tooltip = null,
     OAnimation: String | Double = null,
     OAnimationDelay: String = null,
     OAnimationDirection: String = null,
@@ -1404,7 +1404,7 @@ object Anon_Absolute {
     WebkitAnimationTimingFunction: String = null,
     WebkitAppearance: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any = null,
     WebkitBackdropFilter: String = null,
-    WebkitBackfaceVisibility: inherit | hidden | visible | `-moz-initial` | initial | revert | unset = null,
+    WebkitBackfaceVisibility: inherit | `-moz-initial` | initial | revert | unset | hidden | visible = null,
     WebkitBackgroundClip: String = null,
     WebkitBackgroundOrigin: String = null,
     WebkitBackgroundSize: String | Double = null,
@@ -1419,28 +1419,28 @@ object Anon_Absolute {
     WebkitBorderRadius: String | Double = null,
     WebkitBorderTopLeftRadius: String | Double = null,
     WebkitBorderTopRightRadius: String | Double = null,
-    WebkitBoxAlign: start | center | end | inherit | `-moz-initial` | initial | revert | unset | stretch | baseline = null,
-    WebkitBoxDecorationBreak: slice | inherit | `-moz-initial` | initial | revert | unset | clone = null,
-    WebkitBoxDirection: normal | reverse | inherit | `-moz-initial` | initial | revert | unset = null,
+    WebkitBoxAlign: inherit | `-moz-initial` | initial | revert | unset | stretch | center | end | start | baseline = null,
+    WebkitBoxDecorationBreak: inherit | `-moz-initial` | initial | revert | unset | clone | slice = null,
+    WebkitBoxDirection: inherit | `-moz-initial` | initial | revert | unset | normal | reverse = null,
     WebkitBoxFlex: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     WebkitBoxFlexGroup: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     WebkitBoxLines: inherit | `-moz-initial` | initial | revert | unset | multiple | single = null,
     WebkitBoxOrdinalGroup: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     WebkitBoxOrient: inherit | `-moz-initial` | initial | revert | unset | horizontal | vertical | `block-axis` | `inline-axis` = null,
-    WebkitBoxPack: start | center | end | inherit | `-moz-initial` | initial | revert | unset | justify = null,
+    WebkitBoxPack: inherit | `-moz-initial` | initial | revert | unset | center | end | start | justify = null,
     WebkitBoxReflect: String | Double = null,
     WebkitBoxShadow: String = null,
     WebkitBoxSizing: inherit | `-moz-initial` | initial | revert | unset | `border-box` | `content-box` = null,
     WebkitClipPath: String = null,
     WebkitColorAdjust: inherit | `-moz-initial` | initial | revert | unset | economy | exact = null,
-    WebkitColumnCount: Double | auto | inherit | `-moz-initial` | initial | revert | unset = null,
-    WebkitColumnFill: auto | inherit | `-moz-initial` | initial | revert | unset | balance | `balance-all` = null,
+    WebkitColumnCount: Double | inherit | `-moz-initial` | initial | revert | unset | auto = null,
+    WebkitColumnFill: inherit | `-moz-initial` | initial | revert | unset | auto | balance | `balance-all` = null,
     WebkitColumnGap: String | Double = null,
     WebkitColumnRule: String | Double = null,
     WebkitColumnRuleColor: String = null,
     WebkitColumnRuleStyle: String = null,
     WebkitColumnRuleWidth: String | Double = null,
-    WebkitColumnSpan: all | none | inherit | `-moz-initial` | initial | revert | unset = null,
+    WebkitColumnSpan: none | inherit | `-moz-initial` | initial | revert | unset | all = null,
     WebkitColumnWidth: String | Double = null,
     WebkitColumns: String | Double = null,
     WebkitFilter: String = null,
@@ -1452,11 +1452,11 @@ object Anon_Absolute {
     WebkitFlexShrink: Double | inherit | `-moz-initial` | initial | revert | unset = null,
     WebkitFlexWrap: inherit | `-moz-initial` | initial | revert | unset | nowrap | wrap | `wrap-reverse` = null,
     WebkitFontFeatureSettings: String = null,
-    WebkitFontKerning: auto | normal | none | inherit | `-moz-initial` | initial | revert | unset = null,
+    WebkitFontKerning: none | inherit | `-moz-initial` | initial | revert | unset | auto | normal = null,
     WebkitFontVariantLigatures: String = null,
-    WebkitHyphens: auto | none | manual | inherit | `-moz-initial` | initial | revert | unset = null,
+    WebkitHyphens: none | inherit | `-moz-initial` | initial | revert | unset | auto | manual = null,
     WebkitJustifyContent: String = null,
-    WebkitLineBreak: auto | normal | inherit | `-moz-initial` | initial | revert | unset | strict | anywhere | loose = null,
+    WebkitLineBreak: inherit | `-moz-initial` | initial | revert | unset | auto | normal | strict | anywhere | loose = null,
     WebkitLineClamp: Double | none | inherit | `-moz-initial` | initial | revert | unset = null,
     WebkitMarginEnd: String | Double = null,
     WebkitMarginStart: String | Double = null,
@@ -1470,12 +1470,12 @@ object Anon_Absolute {
     WebkitMaskPositionX: String | Double = null,
     WebkitMaskPositionY: String | Double = null,
     WebkitMaskRepeat: String = null,
-    WebkitMaskRepeatX: repeat | round | inherit | `-moz-initial` | initial | revert | unset | `no-repeat` | space = null,
-    WebkitMaskRepeatY: repeat | round | inherit | `-moz-initial` | initial | revert | unset | `no-repeat` | space = null,
+    WebkitMaskRepeatX: inherit | `-moz-initial` | initial | revert | unset | `no-repeat` | repeat | round | space = null,
+    WebkitMaskRepeatY: inherit | `-moz-initial` | initial | revert | unset | `no-repeat` | repeat | round | space = null,
     WebkitMaskSize: String | Double = null,
     WebkitMaxInlineSize: String | Double = null,
     WebkitOrder: Double | inherit | `-moz-initial` | initial | revert | unset = null,
-    WebkitOverflowScrolling: auto | inherit | `-moz-initial` | initial | revert | unset | touch = null,
+    WebkitOverflowScrolling: inherit | `-moz-initial` | initial | revert | unset | auto | touch = null,
     WebkitPaddingEnd: String | Double = null,
     WebkitPaddingStart: String | Double = null,
     WebkitPerspective: String | Double = null,
@@ -1500,7 +1500,7 @@ object Anon_Absolute {
     WebkitTextStroke: String | Double = null,
     WebkitTextStrokeColor: String = null,
     WebkitTextStrokeWidth: String | Double = null,
-    WebkitTouchCallout: none | default | inherit | `-moz-initial` | initial | revert | unset = null,
+    WebkitTouchCallout: none | inherit | default | `-moz-initial` | initial | revert | unset = null,
     WebkitTransform: String = null,
     WebkitTransformOrigin: String | Double = null,
     WebkitTransformStyle: inherit | `-moz-initial` | initial | revert | unset | flat | `preserve-3d` = null,
@@ -1510,12 +1510,12 @@ object Anon_Absolute {
     WebkitTransitionProperty: String = null,
     WebkitTransitionTimingFunction: String = null,
     WebkitUserModify: inherit | `-moz-initial` | initial | revert | unset | `read-only` | `read-write` | `read-write-plaintext-only` = null,
-    WebkitUserSelect: all | auto | none | inherit | text | `-moz-initial` | initial | revert | unset | contain | `-moz-none` | element = null,
+    WebkitUserSelect: text | none | inherit | `-moz-initial` | initial | revert | unset | auto | contain | all | `-moz-none` | element = null,
     WebkitWritingMode: inherit | `-moz-initial` | initial | revert | unset | `horizontal-tb` | `sideways-lr` | `sideways-rl` | `vertical-lr` | `vertical-rl` = null,
     alignContent: String = null,
     alignItems: String = null,
     alignSelf: String = null,
-    alignmentBaseline: auto | inherit | hanging | middle | alphabetic | ideographic | `-moz-initial` | initial | revert | unset | baseline | `after-edge` | `before-edge` | central | mathematical | `text-after-edge` | `text-before-edge` = null,
+    alignmentBaseline: inherit | `-moz-initial` | initial | revert | unset | auto | baseline | middle | `after-edge` | alphabetic | `before-edge` | central | hanging | ideographic | mathematical | `text-after-edge` | `text-before-edge` = null,
     all: inherit | `-moz-initial` | initial | revert | unset = null,
     animation: String | Double = null
   ): Anon_Absolute = {
