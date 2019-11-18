@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "node-cache" : "5.0.1"
+      "node-cache" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "node-cache" : "5.0.1"
+      "node-cache" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

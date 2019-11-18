@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-cache"
-version := "5.0.1-f6a319"
+version := "5.0.2-4e5459"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
