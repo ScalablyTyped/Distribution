@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-custom-error" : "2.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-custom-error" : "2.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

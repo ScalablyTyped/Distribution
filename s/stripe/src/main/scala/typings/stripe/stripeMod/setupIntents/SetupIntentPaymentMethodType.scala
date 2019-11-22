@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.stripe.stripeStrings.card
   - typings.stripe.stripeStrings.card_present
+  - typings.stripe.stripeStrings.sepa_debit
 */
 trait SetupIntentPaymentMethodType extends js.Object
 

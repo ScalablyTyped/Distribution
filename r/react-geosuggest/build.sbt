@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-geosuggest"
-version := "2.7-dt-20190918Z-da9d62"
+version := "2.7-dt-20191120Z-9b420f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

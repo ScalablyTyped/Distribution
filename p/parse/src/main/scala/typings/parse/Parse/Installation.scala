@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.Installation")
 @js.native
-class Installation () extends Object {
+class Installation[T /* <: js.Any */] () extends Object[T] {
   var appIdentifier: String = js.native
   var appName: String = js.native
   var appVersion: String = js.native

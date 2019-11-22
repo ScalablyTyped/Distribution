@@ -497,12 +497,6 @@ object gitlabStrings {
   sealed trait user extends js.Object
   
   @js.native
-  sealed trait v3 extends js.Object
-  
-  @js.native
-  sealed trait v4 extends js.Object
-  
-  @js.native
   sealed trait watch extends NotificationSettingLevel
   
   @scala.inline
@@ -829,10 +823,6 @@ object gitlabStrings {
   def updated: updated = "updated".asInstanceOf[updated]
   @scala.inline
   def user: user = "user".asInstanceOf[user]
-  @scala.inline
-  def v3: v3 = "v3".asInstanceOf[v3]
-  @scala.inline
-  def v4: v4 = "v4".asInstanceOf[v4]
   @scala.inline
   def watch: watch = "watch".asInstanceOf[watch]
 }

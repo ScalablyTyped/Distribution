@@ -1,14 +1,12 @@
 package typings.validator
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("validator/lib/isJWT", JSImport.Namespace)
 @js.native
-object libIsJWTMod
-  extends TopLevel[
-      (js.Function1[/* str */ String, Boolean]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isJWT */ js.Any)
-    ]
+object libIsJWTMod extends js.Object {
+  def default(str: String): Boolean = js.native
+}
 

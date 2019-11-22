@@ -20,7 +20,7 @@ class NextScript ()
   var context_NextScript: ContextType[Context[DocumentContext]] = js.native
   def getDynamicChunks(): js.Array[Element | Null] = js.native
   def getPolyfillScripts(): js.Array[Element] = js.native
-  def getScripts(): (js.Array[Element | Null]) | Null = js.native
+  def getScripts(): js.Array[Element] | Null = js.native
 }
 
 /* static members */

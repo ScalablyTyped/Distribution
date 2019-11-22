@@ -55,6 +55,8 @@ trait Request extends js.Object {
   @JSName("option")
   def option_agent(key: agent, value: Agent): this.type = js.native
   @JSName("option")
+  def option_auth(key: auth): this.type = js.native
+  @JSName("option")
   def option_auth(key: auth, value: String): this.type = js.native
   @JSName("option")
   def option_defaultAgent(key: _defaultAgent, value: Agent): this.type = js.native
@@ -67,7 +69,11 @@ trait Request extends js.Object {
   @JSName("option")
   def option_headers(key: headers, value: OutgoingHttpHeaders): this.type = js.native
   @JSName("option")
+  def option_host(key: host): this.type = js.native
+  @JSName("option")
   def option_host(key: host, value: String): this.type = js.native
+  @JSName("option")
+  def option_hostname(key: hostname): this.type = js.native
   @JSName("option")
   def option_hostname(key: hostname, value: String): this.type = js.native
   @JSName("option")
@@ -75,11 +81,17 @@ trait Request extends js.Object {
   @JSName("option")
   def option_method(key: method, value: String): this.type = js.native
   @JSName("option")
+  def option_path(key: path): this.type = js.native
+  @JSName("option")
   def option_path(key: path, value: String): this.type = js.native
+  @JSName("option")
+  def option_port(key: port): this.type = js.native
   @JSName("option")
   def option_port(key: port, value: String): this.type = js.native
   @JSName("option")
   def option_port(key: port, value: Double): this.type = js.native
+  @JSName("option")
+  def option_protocol(key: protocol): this.type = js.native
   @JSName("option")
   def option_protocol(key: protocol, value: String): this.type = js.native
   @JSName("option")

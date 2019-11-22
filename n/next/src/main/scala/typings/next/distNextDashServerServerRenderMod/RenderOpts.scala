@@ -40,7 +40,6 @@ trait RenderOpts extends js.Object {
   var pageConfig: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PageConfig */ js.Any
   var reactLoadableManifest: ReactLoadableManifest
   var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var skeleton: js.UndefOr[Boolean] = js.undefined
   var staticMarkup: Boolean
   var unstable_getStaticParams: js.UndefOr[js.Function0[Unit]] = js.undefined
   var unstable_getStaticProps: js.UndefOr[js.Function1[/* params */ Anon_Params, Anon_FalseProps]] = js.undefined
@@ -77,7 +76,6 @@ object RenderOpts {
     inAmpMode: js.UndefOr[Boolean] = js.undefined,
     nextExport: js.UndefOr[Boolean] = js.undefined,
     runtimeConfig: StringDictionary[js.Any] = null,
-    skeleton: js.UndefOr[Boolean] = js.undefined,
     unstable_getStaticParams: () => Unit = null,
     unstable_getStaticProps: /* params */ Anon_Params => Anon_FalseProps = null
   ): RenderOpts = {
@@ -95,7 +93,6 @@ object RenderOpts {
     if (!js.isUndefined(inAmpMode)) __obj.updateDynamic("inAmpMode")(inAmpMode)
     if (!js.isUndefined(nextExport)) __obj.updateDynamic("nextExport")(nextExport)
     if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig)
-    if (!js.isUndefined(skeleton)) __obj.updateDynamic("skeleton")(skeleton)
     if (unstable_getStaticParams != null) __obj.updateDynamic("unstable_getStaticParams")(js.Any.fromFunction0(unstable_getStaticParams))
     if (unstable_getStaticProps != null) __obj.updateDynamic("unstable_getStaticProps")(js.Any.fromFunction1(unstable_getStaticProps))
     __obj.asInstanceOf[RenderOpts]

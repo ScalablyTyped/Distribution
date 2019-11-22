@@ -1,6 +1,6 @@
 package typings.vexdb
 
-import typings.vexdb.vexdbMod.Endpoint
+import typings.vexdb.outConstantsRequestObjectsMod.Endpoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

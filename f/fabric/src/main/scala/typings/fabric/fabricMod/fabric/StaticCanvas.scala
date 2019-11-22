@@ -41,9 +41,9 @@ object StaticCanvas extends js.Object {
   	 * (either those of HTMLCanvasElement itself, or rendering context)
   	 *
   	 * @param {String} methodName Method to check support for;
-  	 *                            Could be one of "setLineDash"
+  	 *							Could be one of "setLineDash"
   	 * @return {Boolean | null} `true` if method is supported (or at least exists),
-  	 *                          `null` if canvas element or context can not be initialized
+  	 *						  `null` if canvas element or context can not be initialized
   	 */
   @JSName("supports")
   def supports_getImageData(methodName: getImageData): Boolean = js.native

@@ -2399,6 +2399,8 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def SelectSource(): Boolean = js.native
+  def SelectSource(optionalAsyncSuccessFunc: js.Function0[Unit]): Boolean = js.native
+  def SelectSource(optionalAsyncSuccessFunc: js.Function0[Unit], optionalAsyncFailureFunc: js.Function0[Unit]): Boolean = js.native
   /**
     * Selects the index-the source in SourceNameItems property as the current source.
     * @method WebTwain#SelectSourceByIndex

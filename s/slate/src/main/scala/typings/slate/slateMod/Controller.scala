@@ -208,6 +208,14 @@ trait Controller extends js.Object {
     * Focus the current selection
     */
   def focus(): Controller = js.native
+  /**
+    * Check if a command by type has been registered.
+    */
+  def hasCommand(`type`: String): Boolean = js.native
+  /**
+    * Check if a query by type has been registered.
+    */
+  def hasQuery(`type`: String): Boolean = js.native
   def insertBlock(block: String): Controller = js.native
   /**
     * Insert a new block at the same level as the current block, splitting the current block to make room if it is non-empty.

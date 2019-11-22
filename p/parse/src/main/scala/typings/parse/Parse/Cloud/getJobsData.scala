@@ -12,6 +12,6 @@ object getJobsData extends js.Object {
     * Gets data for the current set of cloud jobs.
     * @returns A promise that will be resolved with the result of the function.
     */
-  def apply(): js.Promise[Object] = js.native
+  def apply(): js.Promise[Object[_]] = js.native
 }
 

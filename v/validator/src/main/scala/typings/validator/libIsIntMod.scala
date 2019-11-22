@@ -1,15 +1,14 @@
 package typings.validator
 
-import org.scalablytyped.runtime.TopLevel
-import typings.validator.ValidatorJS.IsIntOptions
+import typings.validator.validatorMod.IsIntOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("validator/lib/isInt", JSImport.Namespace)
 @js.native
-object libIsIntMod
-  extends TopLevel[
-      (js.Function2[/* str */ String, /* options */ js.UndefOr[IsIntOptions], Boolean]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isInt */ js.Any)
-    ]
+object libIsIntMod extends js.Object {
+  def default(str: String): Boolean = js.native
+  def default(str: String, options: IsIntOptions): Boolean = js.native
+}
 

@@ -5,6 +5,9 @@ import typings.googlepay.google.payments.api.AllowedCardNetwork
 import typings.googlepay.google.payments.api.BillingAddressFormat
 import typings.googlepay.google.payments.api.ButtonColor
 import typings.googlepay.google.payments.api.ButtonType
+import typings.googlepay.google.payments.api.CheckoutOption
+import typings.googlepay.google.payments.api.DisplayItemStatus
+import typings.googlepay.google.payments.api.DisplayItemType
 import typings.googlepay.google.payments.api.EnvironmentType
 import typings.googlepay.google.payments.api.ErrorStatusCode
 import typings.googlepay.google.payments.api.TokenizationType
@@ -27,7 +30,13 @@ object googlepayStrings {
   sealed trait CARD extends js.Object
   
   @js.native
+  sealed trait COMPLETE_IMMEDIATE_PURCHASE extends CheckoutOption
+  
+  @js.native
   sealed trait CRYPTOGRAM_3DS extends AllowedAuthMethod
+  
+  @js.native
+  sealed trait DEFAULT extends CheckoutOption
   
   @js.native
   sealed trait DEVELOPER_ERROR extends ErrorStatusCode
@@ -42,7 +51,9 @@ object googlepayStrings {
   sealed trait ESTIMATED extends TotalPriceStatus
   
   @js.native
-  sealed trait FINAL extends TotalPriceStatus
+  sealed trait FINAL
+    extends DisplayItemStatus
+       with TotalPriceStatus
   
   @js.native
   sealed trait FULL extends BillingAddressFormat
@@ -55,6 +66,9 @@ object googlepayStrings {
   
   @js.native
   sealed trait JCB extends AllowedCardNetwork
+  
+  @js.native
+  sealed trait LINE_ITEM extends DisplayItemType
   
   @js.native
   sealed trait MASTERCARD extends AllowedCardNetwork
@@ -72,7 +86,13 @@ object googlepayStrings {
   sealed trait PAYMENT_GATEWAY extends TokenizationType
   
   @js.native
+  sealed trait PENDING extends DisplayItemStatus
+  
+  @js.native
   sealed trait PRODUCTION extends EnvironmentType
+  
+  @js.native
+  sealed trait SUBTOTAL extends DisplayItemType
   
   @js.native
   sealed trait TEST extends EnvironmentType
@@ -104,7 +124,11 @@ object googlepayStrings {
   @scala.inline
   def CARD: CARD = "CARD".asInstanceOf[CARD]
   @scala.inline
+  def COMPLETE_IMMEDIATE_PURCHASE: COMPLETE_IMMEDIATE_PURCHASE = "COMPLETE_IMMEDIATE_PURCHASE".asInstanceOf[COMPLETE_IMMEDIATE_PURCHASE]
+  @scala.inline
   def CRYPTOGRAM_3DS: CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[CRYPTOGRAM_3DS]
+  @scala.inline
+  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   @scala.inline
   def DEVELOPER_ERROR: DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[DEVELOPER_ERROR]
   @scala.inline
@@ -124,6 +148,8 @@ object googlepayStrings {
   @scala.inline
   def JCB: JCB = "JCB".asInstanceOf[JCB]
   @scala.inline
+  def LINE_ITEM: LINE_ITEM = "LINE_ITEM".asInstanceOf[LINE_ITEM]
+  @scala.inline
   def MASTERCARD: MASTERCARD = "MASTERCARD".asInstanceOf[MASTERCARD]
   @scala.inline
   def MIN: MIN = "MIN".asInstanceOf[MIN]
@@ -134,7 +160,11 @@ object googlepayStrings {
   @scala.inline
   def PAYMENT_GATEWAY: PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[PAYMENT_GATEWAY]
   @scala.inline
+  def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
+  @scala.inline
   def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
+  @scala.inline
+  def SUBTOTAL: SUBTOTAL = "SUBTOTAL".asInstanceOf[SUBTOTAL]
   @scala.inline
   def TEST: TEST = "TEST".asInstanceOf[TEST]
   @scala.inline

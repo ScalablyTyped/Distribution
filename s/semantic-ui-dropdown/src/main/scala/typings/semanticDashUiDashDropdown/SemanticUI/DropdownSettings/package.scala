@@ -47,17 +47,18 @@ package object DropdownSettings {
   import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.sortSelect
   import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.transition
   import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.useLabels
+  import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.values
   import typings.semanticDashUiDashDropdown.semanticDashUiDashDropdownStrings.verbose
   import typings.std.Partial
   import typings.std.Pick
 
   type Param = (Pick[
     _Impl, 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53 */ js.Any
   ]) with (Partial[
     Pick[
       _Impl, 
-      on | allowReselection | allowAdditions | hideAdditions | action | minCharacters | `match` | selectOnKeydown | forceSelection | allowCategorySelection | placeholder | apiSettings | fields | saveRemoteData | filterRemoteData | useLabels | maxSelections | glyphWidth | label | direction | keepOnScreen | context | fullTextSearch | preserveHTML | sortSelect | showOnFocus | allowTab | transition | duration | keys | delay | message | selector | regExp | metadata | className | error | namespace | name | silent | debug | performance | verbose
+      on | values | allowReselection | allowAdditions | hideAdditions | action | minCharacters | `match` | selectOnKeydown | forceSelection | allowCategorySelection | placeholder | apiSettings | fields | saveRemoteData | filterRemoteData | useLabels | maxSelections | glyphWidth | label | direction | keepOnScreen | context | fullTextSearch | preserveHTML | sortSelect | showOnFocus | allowTab | transition | duration | keys | delay | message | selector | regExp | metadata | className | error | namespace | name | silent | debug | performance | verbose
     ]
   ])
 }

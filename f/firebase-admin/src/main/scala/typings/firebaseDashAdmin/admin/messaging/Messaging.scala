@@ -55,7 +55,7 @@ trait Messaging extends js.Object {
     * return value.
     *
     * @param messages A non-empty array
-    *   containing up to 100 messages.
+    *   containing up to 500 messages.
     * @param dryRun Whether to send the messages in the dry-run
     *   (validation only) mode.
     * @return A Promise fulfilled with an object representing the result of the
@@ -75,7 +75,7 @@ trait Messaging extends js.Object {
     * a `BatchResponse` return value.
     *
     * @param message A multicast message
-    *   containing up to 100 tokens.
+    *   containing up to 500 tokens.
     * @param dryRun Whether to send the message in the dry-run
     *   (validation only) mode.
     * @return A Promise fulfilled with an object representing the result of the

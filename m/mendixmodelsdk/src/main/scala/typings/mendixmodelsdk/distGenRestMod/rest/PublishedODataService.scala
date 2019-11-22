@@ -43,6 +43,10 @@ class PublishedODataService protected () extends Document {
     * In version 8.0.0: introduced
     */
   val authenticationTypes: IList[RestAuthenticationType] = js.native
+  /**
+    * In version 8.4.0: introduced
+    */
+  var description: String = js.native
   var namespace: String = js.native
   var path: String = js.native
   /**
@@ -54,6 +58,10 @@ class PublishedODataService protected () extends Document {
     * In version 8.0.0: introduced
     */
   var serviceName: String = js.native
+  /**
+    * In version 8.4.0: introduced
+    */
+  var summary: String = js.native
   /**
     * In version 8.0.0: introduced
     */

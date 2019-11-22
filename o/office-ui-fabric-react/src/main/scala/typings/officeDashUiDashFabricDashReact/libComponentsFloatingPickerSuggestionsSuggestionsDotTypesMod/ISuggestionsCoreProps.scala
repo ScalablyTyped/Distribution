@@ -42,7 +42,7 @@ trait ISuggestionsCoreProps[T]
     */
   var resultsMaximumNumber: js.UndefOr[Double] = js.native
   /**
-    * Indicates whether to loop around to the top or bottom of the the suggestions
+    * Indicates whether to loop around to the top or bottom of the suggestions
     * on calling nextSuggestion and previousSuggestion, respectively
     */
   var shouldLoopSelection: Boolean = js.native

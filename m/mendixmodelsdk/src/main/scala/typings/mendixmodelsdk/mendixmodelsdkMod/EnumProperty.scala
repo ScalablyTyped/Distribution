@@ -2,7 +2,7 @@ package typings.mendixmodelsdk.mendixmodelsdkMod
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructureClass
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.ILifeCycle
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.ILifeCycle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

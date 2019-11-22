@@ -1,7 +1,7 @@
 
 # Scala.js typings for resumablejs
 
-Typings are for version v1.0.2
+Typings are for version 1.1.0
 
 ## Library description:
 A JavaScript library for providing multiple simultaneous, stable, fault-tolerant and resumable/restartable uploads via the HTML5 File API.
@@ -24,7 +24,7 @@ A JavaScript library for providing multiple simultaneous, stable, fault-tolerant
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

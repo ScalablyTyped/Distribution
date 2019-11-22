@@ -4,6 +4,8 @@ import typings.next.Anon_AmpBindInitData
 import typings.next.Anon_Amphtml
 import typings.next.Anon_False
 import typings.next.Anon_Match
+import typings.next.Anon_Redirects
+import typings.next.distNextDashServerServerRouterMod.Params
 import typings.next.distNextDashServerServerRouterMod.Route
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
@@ -20,6 +22,7 @@ trait Server extends js.Object {
   val _isLikeServerless: js.Any = js.native
   var buildId: String = js.native
   var compression: js.UndefOr[js.Any] = js.native
+  var customRoutes: js.UndefOr[Anon_Redirects] = js.native
   var dir: String = js.native
   var distDir: String = js.native
   var dynamicRoutes: js.UndefOr[js.Array[Anon_Match]] = js.native
@@ -33,6 +36,7 @@ trait Server extends js.Object {
   var handleApiRequest: js.Any = js.native
   var handleCompression: js.Any = js.native
   var handleRequest: js.Any = js.native
+  var hasStaticDir: Boolean = js.native
   var isServeableUrl: js.Any = js.native
   var logError: js.Any = js.native
   var nextConfig: NextConfig = js.native
@@ -44,10 +48,12 @@ trait Server extends js.Object {
   var renderOpts: Anon_AmpBindInitData = js.native
   var renderToHTMLWithComponents: js.Any = js.native
   var router: typings.next.distNextDashServerServerRouterMod.default = js.native
+  /* protected */ def _beforeCatchAllRender(_req: IncomingMessage, _res: ServerResponse, _params: Params, _parsedUrl: UrlWithParsedQuery): js.Promise[Boolean] = js.native
   /* protected */ def close(): js.Promise[Unit] = js.native
   /* protected */ def currentPhase(): String = js.native
   /* protected */ def generatePublicRoutes(): js.Array[Route] = js.native
   /* protected */ def generateRoutes(): js.Array[Route] = js.native
+  /* protected */ def getCustomRoutes(): js.Any = js.native
   /* protected */ def getDynamicRoutes(): js.Array[Anon_False] = js.native
   def getRequestHandler(): js.Function3[
     /* req */ IncomingMessage, 

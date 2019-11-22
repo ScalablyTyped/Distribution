@@ -17,16 +17,32 @@ object atFormatjsIntlDashRelativetimeformatStrings {
   sealed trait `best fit` extends js.Object
   
   @js.native
-  sealed trait day extends Unit
+  sealed trait day
+    extends Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
-  sealed trait days extends Units
+  sealed trait days
+    extends Units
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
-  sealed trait hour extends Unit
+  sealed trait hour
+    extends Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
-  sealed trait hours extends Units
+  sealed trait hours
+    extends Units
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
   sealed trait literal extends js.Object
@@ -41,46 +57,94 @@ object atFormatjsIntlDashRelativetimeformatStrings {
   sealed trait lookup extends js.Object
   
   @js.native
-  sealed trait minute extends Unit
+  sealed trait minute
+    extends Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
-  sealed trait minutes extends Units
+  sealed trait minutes
+    extends Units
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
-  sealed trait month extends Unit
+  sealed trait month
+    extends Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
-  sealed trait months extends Units
+  sealed trait months
+    extends Units
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
   sealed trait narrow extends js.Object
   
   @js.native
-  sealed trait quarter extends Unit
+  sealed trait quarter
+    extends Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
-  sealed trait quarters extends Units
+  sealed trait quarters
+    extends Units
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
-  sealed trait second extends Unit
+  sealed trait second
+    extends Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
-  sealed trait seconds extends Units
+  sealed trait seconds
+    extends Units
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
   sealed trait short extends js.Object
   
   @js.native
-  sealed trait week extends Unit
+  sealed trait week
+    extends Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
-  sealed trait weeks extends Units
+  sealed trait weeks
+    extends Units
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
-  sealed trait year extends Unit
+  sealed trait year
+    extends Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
-  sealed trait years extends Units
+  sealed trait years
+    extends Units
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

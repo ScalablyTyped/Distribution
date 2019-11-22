@@ -12,7 +12,16 @@ object fabricStrings {
   sealed trait anonymous extends js.Object
   
   @js.native
+  sealed trait bl extends js.Object
+  
+  @js.native
+  sealed trait br extends js.Object
+  
+  @js.native
   sealed trait circle extends js.Object
+  
+  @js.native
+  sealed trait equally extends js.Object
   
   @js.native
   sealed trait fill extends js.Object
@@ -22,6 +31,21 @@ object fabricStrings {
   
   @js.native
   sealed trait italic extends js.Object
+  
+  @js.native
+  sealed trait mb extends js.Object
+  
+  @js.native
+  sealed trait ml extends js.Object
+  
+  @js.native
+  sealed trait mr extends js.Object
+  
+  @js.native
+  sealed trait mt extends js.Object
+  
+  @js.native
+  sealed trait mtr extends js.Object
   
   @js.native
   sealed trait normal extends js.Object
@@ -39,10 +63,16 @@ object fabricStrings {
   sealed trait stroke extends js.Object
   
   @js.native
+  sealed trait tl extends js.Object
+  
+  @js.native
   sealed trait toDataURL extends js.Object
   
   @js.native
   sealed trait toDataURLWithQuality extends js.Object
+  
+  @js.native
+  sealed trait tr extends js.Object
   
   @js.native
   sealed trait `use-credentials` extends js.Object
@@ -58,13 +88,29 @@ object fabricStrings {
   @scala.inline
   def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   @scala.inline
+  def bl: bl = "bl".asInstanceOf[bl]
+  @scala.inline
+  def br: br = "br".asInstanceOf[br]
+  @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
+  @scala.inline
+  def equally: equally = "equally".asInstanceOf[equally]
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   @scala.inline
   def getImageData: getImageData = "getImageData".asInstanceOf[getImageData]
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
+  @scala.inline
+  def mb: mb = "mb".asInstanceOf[mb]
+  @scala.inline
+  def ml: ml = "ml".asInstanceOf[ml]
+  @scala.inline
+  def mr: mr = "mr".asInstanceOf[mr]
+  @scala.inline
+  def mt: mt = "mt".asInstanceOf[mt]
+  @scala.inline
+  def mtr: mtr = "mtr".asInstanceOf[mtr]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
@@ -76,9 +122,13 @@ object fabricStrings {
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   @scala.inline
+  def tl: tl = "tl".asInstanceOf[tl]
+  @scala.inline
   def toDataURL: toDataURL = "toDataURL".asInstanceOf[toDataURL]
   @scala.inline
   def toDataURLWithQuality: toDataURLWithQuality = "toDataURLWithQuality".asInstanceOf[toDataURLWithQuality]
+  @scala.inline
+  def tr: tr = "tr".asInstanceOf[tr]
   @scala.inline
   def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   @scala.inline

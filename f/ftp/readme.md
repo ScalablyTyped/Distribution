@@ -1,7 +1,7 @@
 
 # Scala.js typings for ftp
 
-Typings are for version 0.3.8
+Typings are for version 0.3.9
 
 ## Library description:
 An FTP client module for node.js

@@ -1,0 +1,20 @@
+package typings.instagramDashPrivateDashApi.distResponsesInsightsDotServiceDotAccountDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait InsightsServiceAccountResponseOrganic extends js.Object {
+  var status: String
+  var value: Double
+}
+
+object InsightsServiceAccountResponseOrganic {
+  @scala.inline
+  def apply(status: String, value: Double): InsightsServiceAccountResponseOrganic = {
+    val __obj = js.Dynamic.literal(status = status, value = value)
+  
+    __obj.asInstanceOf[InsightsServiceAccountResponseOrganic]
+  }
+}
+

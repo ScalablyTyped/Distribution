@@ -1,7 +1,7 @@
 
 # Scala.js typings for qrcode_dot_react
 
-Typings are for version 0.9
+Typings are for version 1.0
 
 ## Library description:
 React component to generate QR codes

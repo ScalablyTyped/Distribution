@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qrcode_dot_react"
-version := "0.9-dt-20191003Z-00ff64"
+version := "1.0-dt-20191118Z-09f2c9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

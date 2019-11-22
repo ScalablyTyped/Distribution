@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 //////////////////////////////////////////////////////////////////////////////
 @js.native
 trait ICollection[T] extends js.Object {
+  var _objects: js.Array[Object] = js.native
   /**
   	 * Adds objects to collection, then renders canvas (if `renderOnAddRemove` is not `false`)
   	 * Objects should be instances of (or inherit from) fabric.Object

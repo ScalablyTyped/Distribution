@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PieChartOptions extends js.Object {
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var chartArea: js.UndefOr[ChartArea] = js.undefined
   var colors: js.UndefOr[js.Array[String]] = js.undefined
   var enableInteractivity: js.UndefOr[Boolean] = js.undefined
@@ -34,7 +34,7 @@ trait PieChartOptions extends js.Object {
 object PieChartOptions {
   @scala.inline
   def apply(
-    backgroundColor: js.Any = null,
+    backgroundColor: String | ChartStrokeFill = null,
     chartArea: ChartArea = null,
     colors: js.Array[String] = null,
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
@@ -59,7 +59,7 @@ object PieChartOptions {
     width: Int | Double = null
   ): PieChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity)

@@ -1,5 +1,6 @@
 package typings.pubnub.pubnubMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +21,7 @@ object UserData {
     id: String,
     name: String,
     updated: String,
-    custom: js.Object = null,
+    custom: StringDictionary[String] = null,
     email: String = null,
     externalId: String = null,
     profileUrl: String = null

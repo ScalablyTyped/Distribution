@@ -9,7 +9,7 @@ trait Anon_CompactIsFixed extends js.Object {
   var compact: js.UndefOr[Boolean] = js.undefined
   /** Whether the list is fixed in size */
   var isFixed: js.UndefOr[Boolean] = js.undefined
-  /** Whether the the list is horizontally constrained */
+  /** Whether the list is horizontally constrained */
   var isHorizontalConstrained: js.UndefOr[Boolean] = js.undefined
 }
 

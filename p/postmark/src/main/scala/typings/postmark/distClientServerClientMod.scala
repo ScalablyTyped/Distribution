@@ -18,7 +18,6 @@ import typings.postmark.distClientModelsMessagesOutboundMessageOpenMod.OutboundM
 import typings.postmark.distClientModelsMod.BounceFilteringParameters
 import typings.postmark.distClientModelsMod.ClientOptions.Configuration
 import typings.postmark.distClientModelsMod.CreateInboundRuleRequest
-import typings.postmark.distClientModelsMod.CreateTagTriggerRequest
 import typings.postmark.distClientModelsMod.CreateTemplateRequest
 import typings.postmark.distClientModelsMod.CreateWebhookRequest
 import typings.postmark.distClientModelsMod.FilteringParameters
@@ -28,12 +27,10 @@ import typings.postmark.distClientModelsMod.OutboundMessageClicksFilteringParame
 import typings.postmark.distClientModelsMod.OutboundMessageOpensFilteringParameters
 import typings.postmark.distClientModelsMod.OutboundMessagesFilteringParameters
 import typings.postmark.distClientModelsMod.StatisticsFilteringParameters
-import typings.postmark.distClientModelsMod.TagTriggerFilteringParameters
 import typings.postmark.distClientModelsMod.TemplateFilteringParameters
 import typings.postmark.distClientModelsMod.TemplateValidationOptions
 import typings.postmark.distClientModelsMod.TemplatedMessage
 import typings.postmark.distClientModelsMod.UpdateServerRequest
-import typings.postmark.distClientModelsMod.UpdateTagTriggerRequest
 import typings.postmark.distClientModelsMod.UpdateTemplateRequest
 import typings.postmark.distClientModelsMod.UpdateWebhookRequest
 import typings.postmark.distClientModelsMod.WebhookFilteringParameters
@@ -56,8 +53,6 @@ import typings.postmark.distClientModelsTemplatesTemplateMod.TemplateValidation
 import typings.postmark.distClientModelsTemplatesTemplateMod.Templates
 import typings.postmark.distClientModelsTriggersInboundRuleMod.InboundRule
 import typings.postmark.distClientModelsTriggersInboundRuleMod.InboundRules
-import typings.postmark.distClientModelsTriggersTagMod.TagTrigger
-import typings.postmark.distClientModelsTriggersTagMod.TagTriggers
 import typings.postmark.distClientModelsWebhooksWebhookMod.Webhook
 import typings.postmark.distClientModelsWebhooksWebhooksMod.Webhooks
 import typings.postmark.distClientServerClientMod.ServerClient
@@ -99,15 +94,6 @@ object distClientServerClientMod extends js.Object {
     def createInboundRuleTrigger(options: CreateInboundRuleRequest): js.Promise[InboundRule] = js.native
     def createInboundRuleTrigger(options: CreateInboundRuleRequest, callback: Callback[InboundRule]): js.Promise[InboundRule] = js.native
     /**
-      * Create a new Tag Trigger.
-      *
-      * @param options - Configuration options to be used to create the trigger.
-      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
-      * @returns A promise that will complete when the API responds (or an error occurs).
-      */
-    def createTagTrigger(options: CreateTagTriggerRequest): js.Promise[TagTrigger] = js.native
-    def createTagTrigger(options: CreateTagTriggerRequest, callback: Callback[TagTrigger]): js.Promise[TagTrigger] = js.native
-    /**
       * Create a new template on the associated server.
       *
       * @param options - Configuration options to be used to create the Template.
@@ -134,15 +120,6 @@ object distClientServerClientMod extends js.Object {
       */
     def deleteInboundRuleTrigger(id: Double): js.Promise[DefaultResponse] = js.native
     def deleteInboundRuleTrigger(id: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
-    /**
-      * Delete an existing Tag Trigger.
-      *
-      * @param id - The ID of the Tag Trigger you wish to delete.
-      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
-      * @returns A promise that will complete when the API responds (or an error occurs).
-      */
-    def deleteTagTrigger(id: Double): js.Promise[DefaultResponse] = js.native
-    def deleteTagTrigger(id: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
     def deleteTemplate(idOrAlias: String): js.Promise[DefaultResponse] = js.native
     def deleteTemplate(idOrAlias: String, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
     /**
@@ -172,16 +149,6 @@ object distClientServerClientMod extends js.Object {
       */
     def editServer(options: UpdateServerRequest): js.Promise[Server] = js.native
     def editServer(options: UpdateServerRequest, callback: Callback[Server]): js.Promise[Server] = js.native
-    /**
-      * Modify an existing Tag Trigger.
-      *
-      * @param id - The ID of the Tag Trigger you wish to modify.
-      * @param options - Tag trigger options
-      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
-      * @returns A promise that will complete when the API responds (or an error occurs).
-      */
-    def editTagTrigger(id: Double, options: UpdateTagTriggerRequest): js.Promise[TagTrigger] = js.native
-    def editTagTrigger(id: Double, options: UpdateTagTriggerRequest, callback: Callback[TagTrigger]): js.Promise[TagTrigger] = js.native
     def editTemplate(idOrAlias: String, options: UpdateTemplateRequest): js.Promise[Template] = js.native
     def editTemplate(idOrAlias: String, options: UpdateTemplateRequest, callback: Callback[Template]): js.Promise[Template] = js.native
     /**
@@ -473,25 +440,6 @@ object distClientServerClientMod extends js.Object {
     def getSpamComplaintsCounts(): js.Promise[SpamCounts] = js.native
     def getSpamComplaintsCounts(filter: StatisticsFilteringParameters): js.Promise[SpamCounts] = js.native
     def getSpamComplaintsCounts(filter: StatisticsFilteringParameters, callback: Callback[SpamCounts]): js.Promise[SpamCounts] = js.native
-    /**
-      * Get a specific Tag Trigger.
-      *
-      * @param id - The ID of the Tag Trigger you wish to retrieve.
-      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
-      * @returns A promise that will complete when the API responds (or an error occurs).
-      */
-    def getTagTrigger(id: Double): js.Promise[TagTrigger] = js.native
-    def getTagTrigger(id: Double, callback: Callback[TagTrigger]): js.Promise[TagTrigger] = js.native
-    /**
-      * Get a list of Tag Trigger.
-      *
-      * @param filter - Optional filtering parameters.
-      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
-      * @returns A promise that will complete when the API responds (or an error occurs).
-      */
-    def getTagTriggers(): js.Promise[TagTriggers] = js.native
-    def getTagTriggers(filter: TagTriggerFilteringParameters): js.Promise[TagTriggers] = js.native
-    def getTagTriggers(filter: TagTriggerFilteringParameters, callback: Callback[TagTriggers]): js.Promise[TagTriggers] = js.native
     def getTemplate(idOrAlias: String): js.Promise[Template] = js.native
     def getTemplate(idOrAlias: String, callback: Callback[Template]): js.Promise[Template] = js.native
     /**

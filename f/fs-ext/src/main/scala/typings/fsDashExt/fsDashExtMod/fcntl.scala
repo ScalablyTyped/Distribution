@@ -1,6 +1,6 @@
 package typings.fsDashExt.fsDashExtMod
 
-import typings.std.Error
+import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,14 @@ import scala.scalajs.js.annotation._
 object fcntl extends js.Object {
   def apply(
     fd: Double,
-    cmd: String,
+    cmd: Double,
     arg: Double,
-    callback: js.Function2[/* err */ Error, /* result */ Double, Unit]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
   ): Unit = js.native
-  def apply(fd: Double, cmd: String, callback: js.Function2[/* err */ Error, /* result */ Double, Unit]): Unit = js.native
+  def apply(
+    fd: Double,
+    cmd: Double,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* result */ Double, Unit]
+  ): Unit = js.native
 }
 

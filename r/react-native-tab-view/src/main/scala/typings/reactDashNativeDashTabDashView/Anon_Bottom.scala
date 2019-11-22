@@ -6,6 +6,7 @@ import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PanGestureHandler
+import typings.reactDashNativeDashTabDashView.libTypescriptSrcPagerMod.Props
 import typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.NavigationState
 import typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.Route
 import typings.reactDashNativeDashTabDashView.libTypescriptSrcTypesMod.SceneRendererProps
@@ -30,6 +31,7 @@ trait Anon_Bottom[T /* <: Route */] extends js.Object {
   var tabBarPosition: top | bottom
   def onIndexChange(index: Double): Unit
   def renderLazyPlaceholder(props: Anon_Route[T]): ReactNode
+  def renderPager(props: Props[T]): ReactNode
   def renderScene(props: SceneRendererProps with Anon_Route[T]): ReactNode
   def renderTabBar(props: SceneRendererProps with Anon_NavigationState[T]): ReactNode
 }
@@ -43,6 +45,7 @@ object Anon_Bottom {
     navigationState: NavigationState[T],
     onIndexChange: Double => Unit,
     renderLazyPlaceholder: Anon_Route[T] => ReactNode,
+    renderPager: Props[T] => ReactNode,
     renderScene: SceneRendererProps with Anon_Route[T] => ReactNode,
     renderTabBar: SceneRendererProps with Anon_NavigationState[T] => ReactNode,
     tabBarPosition: top | bottom,
@@ -52,7 +55,7 @@ object Anon_Bottom {
     sceneContainerStyle: StyleProp[ViewStyle] = null,
     style: StyleProp[ViewStyle] = null
   ): Anon_Bottom[T] = {
-    val __obj = js.Dynamic.literal(gestureHandlerProps = gestureHandlerProps.asInstanceOf[js.Any], lazyPreloadDistance = lazyPreloadDistance, navigationState = navigationState, onIndexChange = js.Any.fromFunction1(onIndexChange), renderLazyPlaceholder = js.Any.fromFunction1(renderLazyPlaceholder), renderScene = js.Any.fromFunction1(renderScene), renderTabBar = js.Any.fromFunction1(renderTabBar), tabBarPosition = tabBarPosition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gestureHandlerProps = gestureHandlerProps.asInstanceOf[js.Any], lazyPreloadDistance = lazyPreloadDistance, navigationState = navigationState, onIndexChange = js.Any.fromFunction1(onIndexChange), renderLazyPlaceholder = js.Any.fromFunction1(renderLazyPlaceholder), renderPager = js.Any.fromFunction1(renderPager), renderScene = js.Any.fromFunction1(renderScene), renderTabBar = js.Any.fromFunction1(renderTabBar), tabBarPosition = tabBarPosition.asInstanceOf[js.Any])
     __obj.updateDynamic("lazy")(`lazy`)
     if (initialLayout != null) __obj.updateDynamic("initialLayout")(initialLayout)
     if (position != null) __obj.updateDynamic("position")(position)

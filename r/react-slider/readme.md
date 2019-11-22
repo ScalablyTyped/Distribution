@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-slider
 
-Typings are for version 0.8
+Typings are for version 1.0
 
 ## Library description:
 Slider component for React

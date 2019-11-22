@@ -30,10 +30,16 @@ object atGoogleDashCloudFirestoreStrings {
   sealed trait `array-contains` extends WhereFilterOp
   
   @js.native
+  sealed trait `array-contains-any` extends WhereFilterOp
+  
+  @js.native
   sealed trait asc extends OrderByDirection
   
   @js.native
   sealed trait desc extends OrderByDirection
+  
+  @js.native
+  sealed trait in extends WhereFilterOp
   
   @js.native
   sealed trait modified extends DocumentChangeType
@@ -56,9 +62,13 @@ object atGoogleDashCloudFirestoreStrings {
   @scala.inline
   def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
   @scala.inline
+  def `array-contains-any`: `array-contains-any` = "array-contains-any".asInstanceOf[`array-contains-any`]
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
+  def in: in = "in".asInstanceOf[in]
   @scala.inline
   def modified: modified = "modified".asInstanceOf[modified]
   @scala.inline

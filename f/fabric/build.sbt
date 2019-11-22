@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fabric"
-version := "3.4-dt-20191014Z-b1e2f5"
+version := "3.4-dt-20191118Z-7ff012"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

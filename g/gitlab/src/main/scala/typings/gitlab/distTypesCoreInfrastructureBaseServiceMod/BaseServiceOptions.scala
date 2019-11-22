@@ -1,9 +1,9 @@
 package typings.gitlab.distTypesCoreInfrastructureBaseServiceMod
 
+import typings.gitlab.gitlabNumbers.`3`
+import typings.gitlab.gitlabNumbers.`4`
 import typings.gitlab.gitlabStrings.execution
 import typings.gitlab.gitlabStrings.memory
-import typings.gitlab.gitlabStrings.v3
-import typings.gitlab.gitlabStrings.v4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait BaseServiceOptions extends js.Object {
   var sudo: js.UndefOr[String | Double] = js.undefined
   var token: js.UndefOr[String] = js.undefined
   var url: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[v3 | v4] = js.undefined
+  var version: js.UndefOr[`3` | `4`] = js.undefined
 }
 
 object BaseServiceOptions {
@@ -39,7 +39,7 @@ object BaseServiceOptions {
     sudo: String | Double = null,
     token: String = null,
     url: String = null,
-    version: v3 | v4 = null
+    version: `3` | `4` = null
   ): BaseServiceOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize)

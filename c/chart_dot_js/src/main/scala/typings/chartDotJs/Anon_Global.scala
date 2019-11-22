@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Global
   extends /* key */ StringDictionary[js.Any] {
-  var global: ChartOptions with ChartFontOptions
+  var global: ChartOptions with ChartFontOptions with Anon_Tooltips
 }
 
 object Anon_Global {
   @scala.inline
   def apply(
-    global: ChartOptions with ChartFontOptions,
+    global: ChartOptions with ChartFontOptions with Anon_Tooltips,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Anon_Global = {
     val __obj = js.Dynamic.literal(global = global)

@@ -43,6 +43,13 @@ trait Theme
   {[ P in theme-ui.theme-ui.StyledTags ]:? @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.themeDashUi.themeDashUiStrings.Theme with js.Any
   ] = js.undefined
+  /**
+    * Enable/disable custom CSS properties/variables if lower browser
+    * support is required (for eg. IE 11).
+    *
+    * References: https://theme-ui.com/color-modes/#turn-off-custom-properties
+    */
+  var useCustomProperties: js.UndefOr[Boolean] = js.undefined
 }
 
 object Theme {
@@ -70,6 +77,7 @@ object Theme {
   {[ P in theme-ui.theme-ui.StyledTags ]:? @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.themeDashUi.themeDashUiStrings.Theme with js.Any = null,
     textStyles: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[StandardProperties[String | `0`]] = null,
+    useCustomProperties: js.UndefOr[Boolean] = js.undefined,
     zIndices: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[ZIndexProperty] = null
   ): Theme = {
     val __obj = js.Dynamic.literal()
@@ -93,6 +101,7 @@ object Theme {
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles)
     if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomProperties)) __obj.updateDynamic("useCustomProperties")(useCustomProperties)
     if (zIndices != null) __obj.updateDynamic("zIndices")(zIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }

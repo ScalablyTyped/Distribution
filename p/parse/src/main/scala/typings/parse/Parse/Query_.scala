@@ -71,7 +71,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.Query")
 @js.native
-class Query_[T /* <: Object */] protected () extends BaseObject {
+class Query_[T /* <: Object[_] */] protected () extends BaseObject {
   def this(objectClass: String) = this()
   def this(objectClass: Instantiable1[/* args (repeated) */ js.Any, T]) = this()
   var className: String = js.native
@@ -95,8 +95,8 @@ class Query_[T /* <: Object */] protected () extends BaseObject {
   def descending(key: js.Array[String]): Query[T] = js.native
   def distinct[V](key: String): js.Promise[V] = js.native
   def doesNotExist(key: String): Query[T] = js.native
-  def doesNotMatchKeyInQuery[U /* <: Object */](key: String, queryKey: String, query: Query[U]): Query[T] = js.native
-  def doesNotMatchQuery[U /* <: Object */](key: String, query: Query[U]): Query[T] = js.native
+  def doesNotMatchKeyInQuery[U /* <: Object[_] */](key: String, queryKey: String, query: Query[U]): Query[T] = js.native
+  def doesNotMatchQuery[U /* <: Object[_] */](key: String, query: Query[U]): Query[T] = js.native
   def each(callback: js.Function): js.Promise[Unit] = js.native
   def each(callback: js.Function, options: EachOptions): js.Promise[Unit] = js.native
   def endsWith(key: String, suffix: String): Query[T] = js.native
@@ -122,8 +122,8 @@ class Query_[T /* <: Object */] protected () extends BaseObject {
   def lessThanOrEqualTo(key: String, value: js.Any): Query[T] = js.native
   def limit(n: Double): Query[T] = js.native
   def matches(key: String, regex: RegExp, modifiers: js.Any): Query[T] = js.native
-  def matchesKeyInQuery[U /* <: Object */](key: String, queryKey: String, query: Query[U]): Query[T] = js.native
-  def matchesQuery[U /* <: Object */](key: String, query: Query[U]): Query[T] = js.native
+  def matchesKeyInQuery[U /* <: Object[_] */](key: String, queryKey: String, query: Query[U]): Query[T] = js.native
+  def matchesQuery[U /* <: Object[_] */](key: String, query: Query[U]): Query[T] = js.native
   def near(key: String, point: GeoPoint): Query[T] = js.native
   def notContainedIn(key: String, values: js.Array[_]): Query[T] = js.native
   def notEqualTo(key: String, value: js.Any): Query[T] = js.native

@@ -1,7 +1,7 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod
 
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.IAbstractModel
-import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.IAbstractElementJson
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.IAbstractElementJson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

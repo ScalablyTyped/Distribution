@@ -1,7 +1,6 @@
 package typings.atFirebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.FIREBASE_DATABASE_EMULATOR_HOST
 import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.`[MAX_NAME]`
 import typings.atFirebaseDatabase.atFirebaseDatabaseStrings.`[MIN_NAME]`
 import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/util/util", JSImport.Namespace)
 @js.native
 object distSrcCoreUtilUtilMod extends js.Object {
-  val FIREBASE_DATABASE_EMULATOR_HOST_VAR: FIREBASE_DATABASE_EMULATOR_HOST = js.native
   val INTEGER_REGEXP_ : RegExp = js.native
   val MAX_NAME: `[MAX_NAME]` = js.native
   val MIN_NAME: `[MIN_NAME]` = js.native

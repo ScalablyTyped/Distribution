@@ -53,7 +53,7 @@
 [debug] PhaseRunner.scala:92 Ignored [id => babylonjs, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => babylonjs, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/babylonjs/babylon.module.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/babylonjs),TsIdentLibrarySimple(babylonjs)),TsIdentModule(None,List(babylonjs))) [id => babylonjs, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(babylonjs) [id => babylonjs, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibrarySimple(babylonjs) [id => babylonjs, phase => typescript] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(IDisplayChangedEventArgs))) [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(babylonjs/Engines/engine) / TsExport() / TsExporteeTree() / TsDeclClass(Engine) / TsMemberFunction(initWebVR) / TsFunSig() / TsTypeRef() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify IDisplayChangedEventArgs [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(babylonjs/Engines/engine) / TsExport() / TsExporteeTree() / TsDeclClass(Engine) / TsMemberFunction(initWebVR) / TsFunSig() / TsTypeRef() / TsTypeRef())] 
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DomManagement), TsIdentSimple(GetDOMTextContent))) [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(babylonjs/Misc/tools) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(GetDOMTextContent) / TsTypeQuery())] 
@@ -72,6 +72,16 @@
 [warn ] TsTreeScope.scala:78 Cannot resolve TsQIdent(List(TsIdentSimple(DomManagement), TsIdentSimple(IsWindowObjectExist))) [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(BABYLON) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(IsWindowObjectExist) / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:198 Couldn't resolve typeof DomManagement.IsWindowObjectExist [id => babylonjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(BABYLON) / TsExport() / TsExporteeTree() / TsDeclClass(Tools) / TsMemberProperty(IsWindowObjectExist) / TsTypeQuery())] 
 [error] PhaseRes.scala:79 StackOverflowError [id => babylonjs, phase => typescript] java.lang.StackOverflowError
+	at scala.collection.generic.GenericTraversableTemplate.genericBuilder(GenericTraversableTemplate.scala:72)
+	at scala.collection.generic.GenericTraversableTemplate.genericBuilder$(GenericTraversableTemplate.scala:72)
+	at scala.collection.AbstractTraversable.genericBuilder(Traversable.scala:108)
+	at scala.collection.generic.GenTraversableFactory$GenericCanBuildFrom.apply(GenTraversableFactory.scala:59)
+	at scala.collection.generic.GenTraversableFactory$GenericCanBuildFrom.apply(GenTraversableFactory.scala:54)
+	at scala.collection.TraversableLike.collect(TraversableLike.scala:358)
+	at scala.collection.TraversableLike.collect$(TraversableLike.scala:357)
+	at scala.collection.immutable.List.collect(List.scala:327)
+	at com.olvind.tso.ts.TsTreeScope$.search(TsTreeScope.scala:443)
+	at com.olvind.tso.ts.TsTreeScope$Scoped.local$1(TsTreeScope.scala:331)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:402)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:94)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal$(TsTreeScope.scala:83)
@@ -120,13 +130,18 @@
 	at com.olvind.tso.ts.TsTreeScope.lookupTypeIncludeScope$(TsTreeScope.scala:61)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupTypeIncludeScope(TsTreeScope.scala:280)
 	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:7)
-	at com.olvind.tso.ts.FollowAliases$.$anonfun$apply$3(FollowAliases.scala:14)
-	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
-	at scala.collection.immutable.List.foreach(List.scala:392)
-	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
-	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
-	at scala.collection.immutable.List.map(List.scala:298)
-	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:14)
+	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
+	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:9)
+	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
+	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:9)
 	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
 	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
 	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
@@ -1081,21 +1096,6 @@
 	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
 	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
 	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
-	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
-	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:9)
-	at com.olvind.tso.ts.FollowAliases$.$anonfun$apply$3(FollowAliases.scala:14)
-	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:238)
-	at scala.collection.immutable.List.foreach(List.scala:392)
-	at scala.collection.TraversableLike.map(TraversableLike.scala:238)
-	at scala.collection.TraversableLike.map$(TraversableLike.scala:231)
-	at scala.collection.immutable.List.map(List.scala:298)
-	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:14)
-	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:10)
-	at com.olvind.tso.ts.FollowAliases$$anonfun$apply$1.applyOrElse(FollowAliases.scala:9)
-	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
-	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
-	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
-	at com.olvind.tso.ts.FollowAliases$.apply(FollowAliases.scala:9)
 
 [error] PhaseRunner.scala:88 Failure, [babylonjs => java.lang.StackOverflowError] [id => babylonjs, phase => typescript] 
 [error] PhaseRunner.scala:88 Failure, [babylonjs => java.lang.StackOverflowError] [id => babylonjs, phase => scala.js] 

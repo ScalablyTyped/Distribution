@@ -1,12 +1,13 @@
 organization := "org.scalablytyped"
 name := "next-redux-wrapper"
-version := "2.0-dt-20181207Z-8d14d9"
+version := "4.0.1-2f1697"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "next" % "9.1.4-f06654",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
   "org.scalablytyped" %%% "redux" % "4.0.4-ae4e73",

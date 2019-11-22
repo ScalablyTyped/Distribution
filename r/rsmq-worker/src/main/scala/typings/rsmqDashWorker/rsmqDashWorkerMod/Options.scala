@@ -2,7 +2,6 @@ package typings.rsmqDashWorker.rsmqDashWorkerMod
 
 import typings.redis.redisMod.ClientOpts
 import typings.redis.redisMod.RedisClient
-import typings.rsmq.rsmqMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ trait Options extends js.Object {
   var port: js.UndefOr[Double] = js.undefined
   var redis: js.UndefOr[RedisClient] = js.undefined
   var redisPrefix: js.UndefOr[String] = js.undefined
-  var rsmq: js.UndefOr[typings.rsmq.rsmqMod.Client] = js.undefined
+  var rsmq: js.UndefOr[Client] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined
 }
 
@@ -27,7 +26,7 @@ object Options {
   @scala.inline
   def apply(
     autostart: js.UndefOr[Boolean] = js.undefined,
-    customExceedCheck: /* message */ Message => Boolean = null,
+    customExceedCheck: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any => Boolean = null,
     defaultDelay: Int | Double = null,
     host: String = null,
     interval: Int | Double = null,
@@ -37,7 +36,7 @@ object Options {
     port: Int | Double = null,
     redis: RedisClient = null,
     redisPrefix: String = null,
-    rsmq: typings.rsmq.rsmqMod.Client = null,
+    rsmq: Client = null,
     timeout: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()

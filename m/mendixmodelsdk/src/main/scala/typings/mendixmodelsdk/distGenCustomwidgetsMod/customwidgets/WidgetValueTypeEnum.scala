@@ -17,6 +17,7 @@ object WidgetValueTypeEnum extends js.Object {
   var Attribute: WidgetValueTypeEnum = js.native
   var Boolean: WidgetValueTypeEnum = js.native
   var DataSource: WidgetValueTypeEnum = js.native
+  var Decimal: WidgetValueTypeEnum = js.native
   var Entity: WidgetValueTypeEnum = js.native
   var EntityConstraint: WidgetValueTypeEnum = js.native
   var Enumeration: WidgetValueTypeEnum = js.native

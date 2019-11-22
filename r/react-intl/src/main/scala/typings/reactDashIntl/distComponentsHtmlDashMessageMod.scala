@@ -1,6 +1,6 @@
 package typings.reactDashIntl
 
-import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
+import typings.intlDashMessageformat.intlDashMessageformatMod.PrimitiveType
 import typings.reactDashIntl.distComponentsHtmlDashMessageMod.FormattedHTMLMessage
 import typings.std.Record
 import scala.scalajs.js

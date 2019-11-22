@@ -60,8 +60,11 @@ trait Options extends RequestInit {
   	*/
   var onDownloadProgress: js.UndefOr[js.Function2[/* progress */ DownloadProgress, /* chunk */ Uint8Array, Unit]] = js.undefined
   /**
-  	When specified, `prefixUrl` will be prepended to `input`. The prefix can be any valid URL, either relative or absolute. A trailing slash `/` is optional, one will be added automatically, if needed, when joining `prefixUrl` and `input`. The `input` argument cannot start with a `/` when using this option.
+  	A prefix to prepend to the `input` URL when making the request. It can be any valid URL, either relative or absolute. A trailing slash `/` is optional and will be added automatically, if needed, when it is joined with `input`. Only takes effect when `input` is a string. The `input` argument cannot start with a slash `/` when using this option.
   	Useful when used with [`ky.extend()`](#kyextenddefaultoptions) to create niche-specific Ky-instances.
+  	Notes:
+  	 - After `prefixUrl` and `input` are joined, the result is resolved against the [base URL](https://developer.mozilla.org/en-US/docs/Web/API/Node/baseURI) of the page (if any).
+  	 - Leading slashes in `input` are disallowed when using this option to enforce consistency and avoid confusion about how the `input` URL is handled, given that `input` will not follow the normal URL resolution rules when `prefixUrl` is being used, which changes the meaning of a leading slash.
   	@example
   	```
   	import ky from 'ky';
@@ -96,10 +99,12 @@ trait Options extends RequestInit {
   	*/
   var retry: js.UndefOr[RetryOptions | Double] = js.undefined
   /**
-  	Search parameters to include in the request URL.
-  	Setting this will override all existing search parameters in the input URL.
+  	Search parameters to include in the request URL. Setting this will override all existing search parameters in the input URL.
+  	Accepts any value supported by [`URLSearchParams()`](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams).
   	*/
-  var searchParams: js.UndefOr[String | (StringDictionary[String | Double]) | URLSearchParams] = js.undefined
+  var searchParams: js.UndefOr[
+    String | (StringDictionary[String | Double | Boolean]) | (js.Array[js.Array[String | Double | Boolean]]) | URLSearchParams
+  ] = js.undefined
   /**
   	Throw a `HTTPError` for error responses (non-2xx status codes).
   	Setting this to `false` may be useful if you are checking for resource availability and are expecting error responses.
@@ -133,7 +138,7 @@ object Options {
     referrer: String = null,
     referrerPolicy: ReferrerPolicy = null,
     retry: RetryOptions | Double = null,
-    searchParams: String | (StringDictionary[String | Double]) | URLSearchParams = null,
+    searchParams: String | (StringDictionary[String | Double | Boolean]) | (js.Array[js.Array[String | Double | Boolean]]) | URLSearchParams = null,
     signal: AbortSignal = null,
     throwHttpErrors: js.UndefOr[Boolean] = js.undefined,
     timeout: Double | `false` = null,

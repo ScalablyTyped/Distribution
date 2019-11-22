@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk", "JavaScriptSerializer")
 @js.native
 class JavaScriptSerializer protected ()
-  extends typings.mendixmodelsdk.distSdkExtrasAsDashModelDashSdkDashCodeDashSerializerMod.JavaScriptSerializer {
+  extends typings.mendixmodelsdk.distSdkExtrasJavaScriptSerializerMod.JavaScriptSerializer {
   def this(_unit: IAbstractUnit) = this()
 }
 

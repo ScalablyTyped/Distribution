@@ -6,17 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait EmulateOptions extends js.Object {
   /** The emulated user-agent. */
-  var userAgent: js.UndefOr[String] = js.undefined
+  var userAgent: String
   /** The viewport emulation options. */
-  var viewport: js.UndefOr[Viewport] = js.undefined
+  var viewport: Viewport
 }
 
 object EmulateOptions {
   @scala.inline
-  def apply(userAgent: String = null, viewport: Viewport = null): EmulateOptions = {
-    val __obj = js.Dynamic.literal()
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+  def apply(userAgent: String, viewport: Viewport): EmulateOptions = {
+    val __obj = js.Dynamic.literal(userAgent = userAgent, viewport = viewport)
+  
     __obj.asInstanceOf[EmulateOptions]
   }
 }

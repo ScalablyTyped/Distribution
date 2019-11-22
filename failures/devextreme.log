@@ -10,7 +10,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, localization)) [id => devextreme, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/devextreme/utils.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/devextreme),TsIdentLibrarySimple(devextreme)),TsIdentModule(None,List(devextreme, utils))) [id => devextreme, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(devextreme, utils)) [id => devextreme, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibrarySimple(devextreme) [id => devextreme, phase => typescript] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(on)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(on) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(one)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(one) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(DevExpress), TsIdentSimple(events), TsIdentSimple(off)))) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/events) / TsExport() / TsExporteeTree() / TsDeclVar(off) / TsTypeQuery())] 
@@ -1990,12 +1990,12 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:330)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$.apply(ExtractInterfaces.scala:12)
-	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$21(Phase1ReadTypescript.scala:244)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$31(Phase1ReadTypescript.scala:187)
+	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$21(Phase1ReadTypescript.scala:245)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$31(Phase1ReadTypescript.scala:188)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$23(Phase1ReadTypescript.scala:187)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$23(Phase1ReadTypescript.scala:188)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)

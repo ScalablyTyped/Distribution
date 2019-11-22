@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript-eslint__typescript-estree
 
-Typings are for version 2.7.0
+Typings are for version 2.8.0
 
 ## Library description:
 A parser that converts TypeScript source code into an ESTree compatible form

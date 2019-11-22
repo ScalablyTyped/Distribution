@@ -13,6 +13,7 @@ trait GlobalHeaderProps extends js.Object {
   var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
   var isMobile: js.UndefOr[Boolean] = js.undefined
   var logo: js.UndefOr[ReactNode] = js.undefined
+  var menuHeaderRender: js.UndefOr[WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]]] = js.undefined
   var menuRender: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/BasicLayout.BasicLayoutProps['menuRender'] */ js.Any
   ] = js.undefined
@@ -29,6 +30,7 @@ object GlobalHeaderProps {
     collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
     isMobile: js.UndefOr[Boolean] = js.undefined,
     logo: ReactNode = null,
+    menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,
     menuRender: /* import warning: ImportType.apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/BasicLayout.BasicLayoutProps['menuRender'] */ js.Any = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     rightContentRender: WithFalse[js.Function1[GlobalHeaderProps, ReactNode]] = null,
@@ -40,6 +42,7 @@ object GlobalHeaderProps {
     if (collapsedButtonRender != null) __obj.updateDynamic("collapsedButtonRender")(collapsedButtonRender.asInstanceOf[js.Any])
     if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile)
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (menuHeaderRender != null) __obj.updateDynamic("menuHeaderRender")(menuHeaderRender.asInstanceOf[js.Any])
     if (menuRender != null) __obj.updateDynamic("menuRender")(menuRender)
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
     if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])

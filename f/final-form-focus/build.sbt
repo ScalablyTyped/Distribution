@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "final-form-focus"
-version := "1.1-dt-20190917Z-d4bc82"
+version := "1.1-dt-20191120Z-c90f8d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

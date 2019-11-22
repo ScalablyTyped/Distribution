@@ -1,7 +1,6 @@
 package typings.atStorybookAddonDashInfo.atStorybookAddonDashInfoMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atStorybookAddonDashInfo.Anon_PropDefinitions
 import typings.atStorybookAddonDashInfo.atStorybookAddonDashInfoNumbers.`false`
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
@@ -9,11 +8,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var TableComponent: js.UndefOr[ComponentType[Anon_PropDefinitions]] = js.undefined
+  var TableComponent: js.UndefOr[ComponentType[TableComponentOptionProps]] = js.undefined
   var components: js.UndefOr[StringDictionary[ComponentType[_]]] = js.undefined
   var excludedPropTypes: js.UndefOr[js.Array[String]] = js.undefined
   var header: js.UndefOr[Boolean] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @deprecated "marksyConf" option has been renamed to "components"
+    */
   var marksyConf: js.UndefOr[js.Object] = js.undefined
   var maxPropArrayLength: js.UndefOr[Double] = js.undefined
   var maxPropObjectKeys: js.UndefOr[Double] = js.undefined
@@ -29,7 +31,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    TableComponent: ComponentType[Anon_PropDefinitions] = null,
+    TableComponent: ComponentType[TableComponentOptionProps] = null,
     components: StringDictionary[ComponentType[_]] = null,
     excludedPropTypes: js.Array[String] = null,
     header: js.UndefOr[Boolean] = js.undefined,

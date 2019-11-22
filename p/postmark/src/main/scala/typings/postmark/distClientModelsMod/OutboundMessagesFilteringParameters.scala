@@ -18,7 +18,8 @@ class OutboundMessagesFilteringParameters protected ()
     status: js.UndefOr[OutboundMessageStatus],
     fromDate: js.UndefOr[String],
     toDate: js.UndefOr[String],
-    subject: js.UndefOr[String]
+    subject: js.UndefOr[String],
+    messageStream: js.UndefOr[String]
   ) = this()
 }
 

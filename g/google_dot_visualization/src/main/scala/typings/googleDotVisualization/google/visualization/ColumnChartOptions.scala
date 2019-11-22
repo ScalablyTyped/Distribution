@@ -12,9 +12,8 @@ trait ColumnChartOptions extends js.Object {
   var aggregationTarget: js.UndefOr[String] = js.undefined
   var animation: js.UndefOr[TransitionAnimation] = js.undefined
   var annotations: js.UndefOr[ChartBarColumnAnnotations] = js.undefined
-  var axisTitlesPosition: js.UndefOr[String] = js.undefined
-   // in, out, none
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var bar: js.UndefOr[GroupWidth] = js.undefined
   var chartArea: js.UndefOr[ChartArea] = js.undefined
   var colors: js.UndefOr[js.Array[String]] = js.undefined
@@ -28,8 +27,7 @@ trait ColumnChartOptions extends js.Object {
   var isStacked: js.UndefOr[Boolean | percent | relative | absolute] = js.undefined
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
   var reverseCategories: js.UndefOr[Boolean] = js.undefined
-  var selectionMode: js.UndefOr[String] = js.undefined
-  // single / multiple
+  var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   var series: js.UndefOr[js.Any] = js.undefined
   var theme: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -47,8 +45,8 @@ object ColumnChartOptions {
     aggregationTarget: String = null,
     animation: TransitionAnimation = null,
     annotations: ChartBarColumnAnnotations = null,
-    axisTitlesPosition: String = null,
-    backgroundColor: js.Any = null,
+    axisTitlesPosition: ChartAxisTitlesPosition = null,
+    backgroundColor: String | ChartStrokeFill = null,
     bar: GroupWidth = null,
     chartArea: ChartArea = null,
     colors: js.Array[String] = null,
@@ -62,7 +60,7 @@ object ColumnChartOptions {
     isStacked: Boolean | percent | relative | absolute = null,
     legend: ChartLegend | none = null,
     reverseCategories: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: String = null,
+    selectionMode: ChartSelectionMode = null,
     series: js.Any = null,
     theme: String = null,
     title: String = null,
@@ -78,7 +76,7 @@ object ColumnChartOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bar != null) __obj.updateDynamic("bar")(bar)
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea)
     if (colors != null) __obj.updateDynamic("colors")(colors)

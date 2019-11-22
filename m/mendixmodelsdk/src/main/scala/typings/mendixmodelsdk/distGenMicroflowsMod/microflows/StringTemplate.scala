@@ -56,5 +56,14 @@ object StringTemplate extends js.Object {
     * of the parent LogMessageAction element passed as argument.
     */
   def createInLogMessageActionUnderMessageTemplate(container: LogMessageAction): StringTemplate = js.native
+  /**
+    * Creates and returns a new StringTemplate instance in the SDK and on the server.
+    * The new StringTemplate will be automatically stored in the 'template' property
+    * of the parent StringTemplateParameterValue element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.4.0 and higher
+    */
+  def createInStringTemplateParameterValueUnderTemplate(container: StringTemplateParameterValue): StringTemplate = js.native
 }
 

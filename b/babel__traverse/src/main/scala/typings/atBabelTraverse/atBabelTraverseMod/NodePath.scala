@@ -921,6 +921,13 @@ class NodePath[T] protected () extends js.Object {
   def matchesPattern(pattern: String): Boolean = js.native
   def matchesPattern(pattern: String, allowPartial: Boolean): Boolean = js.native
   def popContext(): Unit = js.native
+  def pushContainer(listKey: String, nodes: js.Array[Node]): Unit = js.native
+  /**
+    * Insert child nodes at the end of the current node.
+    * @param listKey - The key at which the child nodes are stored (usually body).
+    * @param nodes - the nodes to insert.
+    */
+  def pushContainer(listKey: String, nodes: Node): Unit = js.native
   def pushContext(context: TraversalContext): Unit = js.native
   /** Check if the currently assigned path references the `importName` of `moduleSource`. */
   def referencesImport(moduleSource: String, importName: String): Boolean = js.native
@@ -966,6 +973,13 @@ class NodePath[T] protected () extends js.Object {
   def stop(): Unit = js.native
   def traverse(visitor: Visitor[js.Object]): Unit = js.native
   def traverse[T](visitor: Visitor[T], state: T): Unit = js.native
+  def unshiftContainer(listKey: String, nodes: js.Array[Node]): Unit = js.native
+  /**
+    * Insert child nodes at the start of the current node.
+    * @param listKey - The key at which the child nodes are stored (usually body).
+    * @param nodes - the nodes to insert.
+    */
+  def unshiftContainer(listKey: String, nodes: Node): Unit = js.native
   /** Update all sibling node paths after `fromIndex` by `incrementBy`. */
   def updateSiblingKeys(fromIndex: Double, incrementBy: Double): Unit = js.native
   def visit(): Boolean = js.native

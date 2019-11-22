@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 abstract class Structure protected ()
   extends typings.mendixmodelsdk.distSdkInternalMod.Structure {
   def this(
-    _model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    _model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String
   ) = this()
   def this(
-    _model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    _model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     _isPartial: Boolean
   ) = this()
   def this(
-    _model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    _model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     _isPartial: Boolean,

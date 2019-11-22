@@ -2,9 +2,9 @@ package typings.apolloDashEngineDashReportingDashProtobuf.apolloDashEngineDashRe
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.IFieldStat
-import typings.protobufjs.protobufjsMod.IConversionOptions
-import typings.protobufjs.protobufjsMod.Reader
-import typings.protobufjs.protobufjsMod.Writer
+import typings.atApolloProtobufjs.atApolloProtobufjsMod.IConversionOptions
+import typings.atApolloProtobufjs.atApolloProtobufjsMod.Reader
+import typings.atApolloProtobufjs.atApolloProtobufjsMod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

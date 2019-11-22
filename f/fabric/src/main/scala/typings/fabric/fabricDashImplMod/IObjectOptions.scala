@@ -66,8 +66,8 @@ trait IObjectOptions extends js.Object {
   	 */
   var cacheProperties: js.UndefOr[js.Array[String]] = js.undefined
   /**
-    * The canvas the object belongs to
-    */
+  	 * The canvas the object belongs to
+  	 */
   var canvas: js.UndefOr[Canvas] = js.undefined
   /**
   	 * When true, this object will use center point as the origin of transformation
@@ -155,8 +155,8 @@ trait IObjectOptions extends js.Object {
   	 */
   var globalCompositeOperation: js.UndefOr[String] = js.undefined
   /**
-    * The group the object is part of
-    */
+  	 * The group the object is part of
+  	 */
   var group: js.UndefOr[Group] = js.undefined
   /**
   	 * When set to `false`, object's controlling borders are not rendered
@@ -339,12 +339,12 @@ trait IObjectOptions extends js.Object {
   	 */
   var skewY: js.UndefOr[Double] = js.undefined
   /**
-    * Indicates the angle that an object will lock to while rotating. Can get from canvas.
-    */
+  	 * Indicates the angle that an object will lock to while rotating. Can get from canvas.
+  	 */
   var snapAngle: js.UndefOr[Double] = js.undefined
   /**
-    * Indicates the distance from the snapAngle the rotation will lock to the snapAngle. Can get from canvas.
-    */
+  	 * Indicates the distance from the snapAngle the rotation will lock to the snapAngle. Can get from canvas.
+  	 */
   var snapThreshold: js.UndefOr[Null | Double] = js.undefined
   /**
   	 * List of properties to consider when checking if state

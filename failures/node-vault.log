@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => node-vault, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-vault/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-vault),TsIdentLibrarySimple(node-vault)),TsIdentModule(None,List(node-vault))) [id => node-vault, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(node-vault)) [id => node-vault, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(node-vault) [id => node-vault, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibrarySimple(node-vault) [id => node-vault, phase => typescript] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(mustache)))) [id => node-vault, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-vault) / TsExport() / TsExporteeTree() / TsDeclInterface(VaultOptions) / TsMemberProperty(mustache) / TsTypeQuery())] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => node-vault, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-vault))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(handleVaultResponse) [id => node-vault, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-vault) / TsDeclInterface(Client))] 

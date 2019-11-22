@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object sendListChangeDeltas extends js.Object {
   def apply[T, P](
-    property: (typings.mendixmodelsdk.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with Anon_ToRawChangeValue[P],
+    property: (typings.mendixmodelsdk.distSdkInternalPropertiesAbstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with Anon_ToRawChangeValue[P],
     change: IArrayWillChange[P]
   ): Unit = js.native
   def apply[T, P](
-    property: (typings.mendixmodelsdk.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with Anon_ToRawChangeValue[P],
+    property: (typings.mendixmodelsdk.distSdkInternalPropertiesAbstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with Anon_ToRawChangeValue[P],
     change: IArrayWillSplice[P]
   ): Unit = js.native
 }

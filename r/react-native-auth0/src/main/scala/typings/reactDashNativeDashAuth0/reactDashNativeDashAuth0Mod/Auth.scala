@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-auth0", "Auth")
 @js.native
 class Auth () extends js.Object {
-  def authorizationUrl(params: AuthorizationUrlParams): String = js.native
+  def authorizeUrl(params: AuthorizeUrlParams): String = js.native
   /* tslint:disable-next-line no-unnecessary-generics */
   def createUser[T](user: CreateUserParams[T]): js.Promise[CreateUserResponse] = js.native
   def exchange(params: ExchangeParams): js.Promise[String] = js.native

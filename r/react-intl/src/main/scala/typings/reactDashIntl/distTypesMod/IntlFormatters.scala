@@ -1,7 +1,7 @@
 package typings.reactDashIntl.distTypesMod
 
-import typings.intlDashMessageformat.distFormattersMod.FormatXMLElementFn
-import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
+import typings.intlDashMessageformat.intlDashMessageformatMod.FormatXMLElementFn
+import typings.intlDashMessageformat.intlDashMessageformatMod.PrimitiveType
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactNodeArray
@@ -37,10 +37,10 @@ trait IntlFormatters extends js.Object {
     value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<react-intl.Fn_Date>[0] */ js.Any,
     opts: FormatDateOptions
   ): String = js.native
-  def formatHTMLMessage(descriptor: MessageDescriptor): String = js.native
-  def formatHTMLMessage(descriptor: MessageDescriptor, values: Record[String, PrimitiveType]): String = js.native
-  def formatList(values: js.Array[String | ReactNode]): String | (js.Array[String | ReactNode]) = js.native
-  def formatList(values: js.Array[String | ReactNode], opts: FormatListOptions): String | (js.Array[String | ReactNode]) = js.native
+  def formatHTMLMessage(descriptor: MessageDescriptor): ReactNode = js.native
+  def formatHTMLMessage(descriptor: MessageDescriptor, values: Record[String, PrimitiveType]): ReactNode = js.native
+  def formatList(values: js.Array[String | ReactNode]): ReactNode = js.native
+  def formatList(values: js.Array[String | ReactNode], opts: FormatListOptions): ReactNode = js.native
   def formatMessage(descriptor: MessageDescriptor): String | ReactNodeArray = js.native
   def formatMessage(
     descriptor: MessageDescriptor,
@@ -78,17 +78,17 @@ trait IntlFormatters extends js.Object {
     opts: FormatPluralOptions
   ): ReturnType[js.Function1[/* n */ Double, String]] = js.native
   def formatRelativeTime(
-    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[0] */ js.Any,
-    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[1] */ js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.FormattableUnit): string>[0] */ js.Any,
+    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.FormattableUnit): string>[1] */ js.Any
   ): String = js.native
   def formatRelativeTime(
-    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[0] */ js.Any,
-    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[1] */ js.Any,
+    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.FormattableUnit): string>[0] */ js.Any,
+    unit: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.FormattableUnit): string>[1] */ js.Any,
     opts: FormatRelativeTimeOptions
   ): String = js.native
   @JSName("formatRelativeTime")
   def formatRelativeTime_0(
-    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/types.FormattableUnit): string>[0] */ js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.FormattableUnit): string>[0] */ js.Any
   ): String = js.native
   def formatTime(value: String): String = js.native
   def formatTime(value: String, opts: FormatDateOptions): String = js.native

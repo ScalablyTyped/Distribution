@@ -32,10 +32,17 @@ class StackReference protected () extends CustomResource {
     * The outputs of the referenced stack.
     */
   val outputs: Output[StringDictionary[_]] = js.native
+  var readOutputSync: js.Any = js.native
+  var readOutputsSync: js.Any = js.native
   /**
     * The names of any stack outputs which contain secrets.
     */
   val secretOutputNames: Output[js.Array[String]] = js.native
+  val stackReferenceName: js.Any = js.native
+  var syncName: js.Any = js.native
+  var syncOutputs: js.Any = js.native
+  var syncOutputsSupported: js.Any = js.native
+  var syncSecretOutputNames: js.Any = js.native
   /**
     * Fetches the value of the named stack output, or undefined if the stack output was not found.
     *
@@ -43,11 +50,10 @@ class StackReference protected () extends CustomResource {
     */
   def getOutput(name: Input[String]): Output[_] = js.native
   /**
-    * Fetches the value promptly of the named stack output.  May return undefined if the value is
+    * Fetches the value promptly of the named stack output. May return undefined if the value is
     * not known for some reason.
     *
-    * This operation is not supported (and will throw) if any exported values of the StackReference
-    * are secrets.
+    * This operation is not supported (and will throw) if the named stack output is a secret.
     *
     * @param name The name of the stack output to fetch.
     */
@@ -59,11 +65,10 @@ class StackReference protected () extends CustomResource {
     */
   def requireOutput(name: Input[String]): Output[_] = js.native
   /**
-    * Fetches the value promptly of the named stack output.  Throws an error if the stack output is
+    * Fetches the value promptly of the named stack output. Throws an error if the stack output is
     * not found.
     *
-    * This operation is not supported (and will throw) if any exported values of the StackReference
-    * are secrets.
+    * This operation is not supported (and will throw) if the named stack output is a secret.
     *
     * @param name The name of the stack output to fetch.
     */

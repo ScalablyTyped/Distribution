@@ -149,7 +149,7 @@ trait IContextualMenuProps
     */
   var items: js.Array[IContextualMenuItem]
   /**
-    * Used as `aria-labelledby` for the the menu element inside the callout.
+    * Used as `aria-labelledby` for the menu element inside the callout.
     */
   var labelElementId: js.UndefOr[String] = js.undefined
   /**

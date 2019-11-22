@@ -30,7 +30,7 @@ trait ListingElement extends js.Object {
   /**
     * The size of the entry in bytes
     */
-  var size: String
+  var size: Double
   /**
     * True if the sticky bit is set for this entry **(*NIX only)**.
     */
@@ -50,7 +50,7 @@ object ListingElement {
   def apply(
     date: Date,
     name: String,
-    size: String,
+    size: Double,
     `type`: String,
     group: String = null,
     owner: String = null,

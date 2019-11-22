@@ -1,10 +1,13 @@
 package typings.fabric.fabricDashImplMod
 
+import org.scalablytyped.runtime.NumberDictionary
 import typings.fabric.Anon_Baseline
 import typings.fabric.Anon_CharIndex
 import typings.fabric.Anon_DeltaY
+import typings.fabric.Anon_FontFamily
 import typings.fabric.Anon_GraphemeLines
 import typings.fabric.Anon_KernedWidth
+import typings.fabric.Anon_Left
 import typings.fabric.Anon_Line
 import typings.fabric.Anon_NumOfSpaces
 import typings.fabric.fabricStrings.Empty
@@ -31,64 +34,79 @@ class Text protected () extends Object {
   def this(text: String) = this()
   def this(text: String, options: TextOptions) = this()
   /**
-    * Contains characters bounding boxes for each line and char
-    * @private
-    * @type Array of char grapheme bounding boxes
-    */
+  	 * use this size when measuring text. To avoid IE11 rounding errors
+  	 * @type {Number}
+  	 * @default
+  	 * @readonly
+  	 * @private
+  	 */
+  var CACHE_FONT_SIZE: Double = js.native
+  /**
+  	 * Contains characters bounding boxes for each line and char
+  	 * @private
+  	 * @type Array of char grapheme bounding boxes
+  	 */
   var __charBounds: js.UndefOr[js.Array[js.Array[Anon_DeltaY]]] = js.native
   /**
-    * List of line heights
-    * @private
-    * @type Array<Number>
-    */
+  	 * List of line heights
+  	 * @private
+  	 * @type Array<Number>
+  	 */
   var __lineHeights: js.Array[Double] = js.native
   /**
-    * List of line widths
-    * @private
-    * @type Array<Number>
-    */
+  	 * List of line widths
+  	 * @private
+  	 * @type Array<Number>
+  	 */
   var __lineWidths: js.Array[Double] = js.native
   /**
-    * @private
-    * @type boolean
-    */
+  	 * @private
+  	 * @type boolean
+  	 */
   var __skipDimension: Boolean = js.native
   /**
-    * @private
-    * @type Number
-    */
+  	 * Properties which when set cause object to change dimensions
+  	 * @type Object
+  	 * @private
+  	 */
+  var _dimensionAffectingProps: js.Array[String] = js.native
+  /**
+  	 * @private
+  	 * @type Number
+  	 */
   var _fontSizeFraction: Double = js.native
   /**
-    * Text Line proportion to font Size (in pixels)
-    * @private
-    * @type Number
-    */
+  	 * Text Line proportion to font Size (in pixels)
+  	 * @private
+  	 * @type Number
+  	 */
   var _fontSizeMult: Double = js.native
   /**
-    * Use this regular expression to filter for whitespace that is not a new line.
-    * Mostly used when text is 'justify' aligned.
-    * @private
-    * @type RegExp
-    */
+  	 * Use this regular expression to filter for whitespace that is not a new line.
+  	 * Mostly used when text is 'justify' aligned.
+  	 * @private
+  	 * @type RegExp
+  	 */
   var _reSpaceAndTab: RegExp = js.native
   /**
-    * Use this regular expression to filter for whitespaces that is not a new line.
-    * Mostly used when text is 'justify' aligned.
-    * @private
-    * @type RegExp
-    */
+  	 * Use this regular expression to filter for whitespaces that is not a new line.
+  	 * Mostly used when text is 'justify' aligned.
+  	 * @private
+  	 * @type RegExp
+  	 */
   var _reSpacesAndTabs: RegExp = js.native
+  var _text: js.Array[String] = js.native
   /**
-    * List of grapheme lines in text object
-    * @private
-    * @type Array<string>
-    */
+  	 * List of grapheme lines in text object
+  	 * @private
+  	 * @type Array<string>
+  	 */
   var _textLines: js.Array[js.Array[String]] = js.native
   /**
-    * List of unwrapped grapheme lines in text object
-    * @private
-    * @type Array<string>
-    */
+  	 * List of unwrapped grapheme lines in text object
+  	 * @private
+  	 * @type Array<string>
+  	 */
   var _unwrappedTextLines: js.Array[js.Array[String]] = js.native
   /**
   	 * additional space between characters
@@ -96,6 +114,7 @@ class Text protected () extends Object {
   	 * @type Number
   	 */
   var charSpacing: js.UndefOr[Double] = js.native
+  var cursorOffsetCache: Anon_Left = js.native
   /**
   	 * Baseline shift, stlyes only, keep at 0 for the main text object
   	 * @type {Number}
@@ -165,9 +184,9 @@ class Text protected () extends Object {
   	 */
   var textBackgroundColor: js.UndefOr[String] = js.native
   /**
-    * List of lines in text object
-    * @type Array<string>
-    */
+  	 * List of lines in text object
+  	 * @type Array<string>
+  	 */
   var textLines: js.Array[String] = js.native
   /**
   	 * Text decoration underline.
@@ -175,14 +194,14 @@ class Text protected () extends Object {
   	 */
   var underline: js.UndefOr[Boolean] = js.native
   /**
-    * apply all the character style to canvas for rendering
-    * @private
-    * @param {String} _char
-    * @param {CanvasRenderingContext2D} ctx Context to render on
-    * @param {Number} lineIndex
-    * @param {Number} charIndex
-    * @param {Object} [decl]
-    */
+  	 * apply all the character style to canvas for rendering
+  	 * @private
+  	 * @param {String} _char
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 * @param {Number} lineIndex
+  	 * @param {Number} charIndex
+  	 * @param {Object} [decl]
+  	 */
   def _applyCharStyles(
     method: String,
     ctx: CanvasRenderingContext2D,
@@ -191,17 +210,17 @@ class Text protected () extends Object {
     styleDeclaration: js.Any
   ): Unit = js.native
   /**
-    * @private
-    */
+  	 * @private
+  	 */
   def _clearCache(): Unit = js.native
   /**
-    * Generate an object that translates the style object so that it is
-    * broken up by visual lines (new lines and automatic wrapping).
-    * The original text styles object is broken up by actual lines (new lines only),
-    * which is only sufficient for Text / IText
-    * @private
-    */
-  def _generateStyleMap(textInfo: Anon_GraphemeLines): js.Array[Anon_Line] = js.native
+  	 * Generate an object that translates the style object so that it is
+  	 * broken up by visual lines (new lines and automatic wrapping).
+  	 * The original text styles object is broken up by actual lines (new lines only),
+  	 * which is only sufficient for Text / IText
+  	 * @private
+  	 */
+  def _generateStyleMap(textInfo: Anon_GraphemeLines): NumberDictionary[Anon_Line] = js.native
   /**
   	 * @private
   	 * @param {Number} lineIndex index text line
@@ -209,46 +228,46 @@ class Text protected () extends Object {
   	 */
   def _getLineLeftOffset(lineIndex: Double): Double = js.native
   /**
-    * get the reference, not a clone, of the style object for a given character
-    * @param {Number} lineIndex
-    * @param {Number} charIndex
-    * @return {Object} style object
-    */
+  	 * get the reference, not a clone, of the style object for a given character
+  	 * @param {Number} lineIndex
+  	 * @param {Number} charIndex
+  	 * @return {Object} style object
+  	 */
   def _getStyleDeclaration(lineIndex: Double, charIndex: Double): js.Any = js.native
   /**
-    * @private
-    * Gets the width of character spacing
-    */
+  	 * @private
+  	 * Gets the width of character spacing
+  	 */
   def _getWidthOfCharSpacing(): Double = js.native
   /**
-    * @private
-    * @param {Object} prevStyle
-    * @param {Object} thisStyle
-    */
+  	 * @private
+  	 * @param {Object} prevStyle
+  	 * @param {Object} thisStyle
+  	 */
   def _hasStyleChanged(prevStyle: js.Any, thisStyle: js.Any): Boolean = js.native
   /**
-    * measure and return the width of a single character.
-    * possibly overridden to accommodate different measure logic or
-    * to hook some external lib for character measurement
-    * @private
-    * @param {String} char to be measured
-    * @param {Object} charStyle style of char to be measured
-    * @param {String} [previousChar] previous char
-    * @param {Object} [prevCharStyle] style of previous char
-    * @return {Object} object contained char width anf kerned width
-    */
+  	 * measure and return the width of a single character.
+  	 * possibly overridden to accommodate different measure logic or
+  	 * to hook some external lib for character measurement
+  	 * @private
+  	 * @param {String} char to be measured
+  	 * @param {Object} charStyle style of char to be measured
+  	 * @param {String} [previousChar] previous char
+  	 * @param {Object} [prevCharStyle] style of previous char
+  	 * @return {Object} object contained char width anf kerned width
+  	 */
   def _measureChar(_char: String, charStyle: js.Any, previousChar: String, prevCharStyle: js.Any): Anon_KernedWidth = js.native
   /**
-    * @private
-    * @param {String} method
-    * @param {CanvasRenderingContext2D} ctx Context to render on
-    * @param {Number} lineIndex
-    * @param {Number} charIndex
-    * @param {String} _char
-    * @param {Number} left Left coordinate
-    * @param {Number} top Top coordinate
-    * @param {Number} lineHeight Height of the line
-    */
+  	 * @private
+  	 * @param {String} method
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 * @param {Number} lineIndex
+  	 * @param {Number} charIndex
+  	 * @param {String} _char
+  	 * @param {Number} left Left coordinate
+  	 * @param {Number} top Top coordinate
+  	 * @param {Number} lineHeight Height of the line
+  	 */
   def _renderChar(
     method: String,
     ctx: CanvasRenderingContext2D,
@@ -259,15 +278,15 @@ class Text protected () extends Object {
     top: Double
   ): Unit = js.native
   /**
-    * @private
-    * @param {String} method
-    * @param {CanvasRenderingContext2D} ctx Context to render on
-    * @param {String} line Content of the line
-    * @param {Number} left
-    * @param {Number} top
-    * @param {Number} lineIndex
-    * @param {Number} charOffset
-    */
+  	 * @private
+  	 * @param {String} method
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 * @param {String} line Content of the line
+  	 * @param {Number} left
+  	 * @param {Number} top
+  	 * @param {Number} lineIndex
+  	 * @param {Number} charOffset
+  	 */
   def _renderChars(
     method: String,
     ctx: CanvasRenderingContext2D,
@@ -277,14 +296,36 @@ class Text protected () extends Object {
     lineIndex: Double
   ): Unit = js.native
   /**
-    * @private
-    * @param {String} method Method name ("fillText" or "strokeText")
-    * @param {CanvasRenderingContext2D} ctx Context to render on
-    * @param {Array} line Text to render
-    * @param {Number} left Left position of text
-    * @param {Number} top Top position of text
-    * @param {Number} lineIndex Index of a line in a text
-    */
+  	 * @private
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 */
+  def _renderText(ctx: CanvasRenderingContext2D): Unit = js.native
+  /**
+  	 * @private
+  	 * @param {String} method Method name ("fillText" or "strokeText")
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 * @param {String} line Text to render
+  	 * @param {Number} left Left position of text
+  	 * @param {Number} top Top position of text
+  	 * @param {Number} lineIndex Index of a line in a text
+  	 */
+  def _renderTextLine(
+    method: String,
+    ctx: CanvasRenderingContext2D,
+    line: String,
+    left: Double,
+    top: Double,
+    lineIndex: Double
+  ): Unit = js.native
+  /**
+  	 * @private
+  	 * @param {String} method Method name ("fillText" or "strokeText")
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 * @param {Array} line Text to render
+  	 * @param {Number} left Left position of text
+  	 * @param {Number} top Top position of text
+  	 * @param {Number} lineIndex Index of a line in a text
+  	 */
   def _renderTextLine(
     method: String,
     ctx: CanvasRenderingContext2D,
@@ -294,10 +335,27 @@ class Text protected () extends Object {
     lineIndex: Double
   ): Unit = js.native
   /**
-    * Divides text into lines of text and lines of graphemes.
-    * @private
-    * @returns {Object} Lines and text in the text
-    */
+  	 * Set the font parameter of the context with the object properties or with charStyle
+  	 * @private
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 * @param {Object} [charStyle] object with font style properties
+  	 * @param {String} [charStyle.fontFamily] Font Family
+  	 * @param {Number} [charStyle.fontSize] Font size in pixels. ( without px suffix )
+  	 * @param {String} [charStyle.fontWeight] Font weight
+  	 * @param {String} [charStyle.fontStyle] Font style (italic|normal)
+  	 */
+  def _setTextStyles(ctx: CanvasRenderingContext2D): Unit = js.native
+  def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: Anon_FontFamily): Unit = js.native
+  def _setTextStyles(ctx: CanvasRenderingContext2D, charStyle: Anon_FontFamily, forMeasuring: Boolean): Unit = js.native
+  /**
+  	 * @private
+  	 */
+  def _shouldClearDimensionCache(): Boolean = js.native
+  /**
+  	 * Divides text into lines of text and lines of graphemes.
+  	 * @private
+  	 * @returns {Object} Lines and text in the text
+  	 */
   def _splitText(): Anon_GraphemeLines = js.native
   /**
   	 * Calculate text box height
@@ -323,6 +381,8 @@ class Text protected () extends Object {
   	 * @param {Number} [selectionStart] Optional index. When not given, current selectionStart is used.
   	 * @param {Boolean} [skipWrapping] consider the location for unwrapped lines. usefull to manage styles.
   	 */
+  def get2DCursorLocation(): Anon_CharIndex = js.native
+  def get2DCursorLocation(selectionStart: Double): Anon_CharIndex = js.native
   def get2DCursorLocation(selectionStart: Double, skipWrapping: Boolean): Anon_CharIndex = js.native
   /**
   	 * return a new object that contains all the style property for a character
@@ -400,8 +460,8 @@ class Text protected () extends Object {
   /**
   	 * measure a text line measuring all characters.
   	 * @param {Number} lineIndex line number
-    * @return {Object} object.width total width of characters
-    * @return {Object} object.numOfSpaces length of chars that match this._reSpacesAndTabs
+  	 * @return {Object} object.width total width of characters
+  	 * @return {Object} object.numOfSpaces length of chars that match this._reSpacesAndTabs
   	 */
   def measureLine(lineIndex: Double): Anon_NumOfSpaces = js.native
   /**

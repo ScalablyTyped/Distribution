@@ -1,6 +1,6 @@
 package typings.intlDashMessageformat.distFormattersMod
 
-import typings.intlDashMessageformatDashParser.distTypesMod.MessageFormatElement
+import typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod.MessageFormatElement
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

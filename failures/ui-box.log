@@ -77,7 +77,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(ui-box, dist, utils, split-box-props)) [id => ui-box, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/ui-box/dist/utils/split-props.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/ui-box),TsIdentLibrarySimple(ui-box)),TsIdentModule(None,List(ui-box, dist, utils, split-props))) [id => ui-box, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(ui-box, dist, utils, split-props)) [id => ui-box, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(ui-box) [id => ui-box, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibrarySimple(ui-box) [id => ui-box, phase => typescript] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(cache), TsIdentSimple(hydrate)))) [id => ui-box, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ui-box) / TsExport() / TsExporteeTree() / TsDeclVar(hydrate) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:214 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(React), TsIdentSimple(Component)))) [id => ui-box, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ui-box/dist/types/box-types) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(RefType) / TsTypeConditional() / TsTypeConditional() / TsTypeExtends() / TsTypeQuery())] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(get) [id => ui-box, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ui-box/dist/cache))] 

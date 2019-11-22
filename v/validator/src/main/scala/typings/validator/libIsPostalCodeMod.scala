@@ -1,15 +1,16 @@
 package typings.validator
 
-import org.scalablytyped.runtime.TopLevel
-import typings.validator.ValidatorJS.PostalCodeLocale
+import typings.validator.validatorMod.PostalCodeLocale
+import typings.validator.validatorStrings.any
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("validator/lib/isPostalCode", JSImport.Namespace)
 @js.native
-object libIsPostalCodeMod
-  extends TopLevel[
-      (js.Function2[/* str */ String, /* locale */ PostalCodeLocale, Boolean]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isPostalCode */ js.Any)
-    ]
+object libIsPostalCodeMod extends js.Object {
+  def default(str: String, locale: PostalCodeLocale): Boolean = js.native
+  @JSName("default")
+  def default_any(str: String, locale: any): Boolean = js.native
+}
 

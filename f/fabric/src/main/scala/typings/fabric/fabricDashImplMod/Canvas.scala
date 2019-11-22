@@ -1,6 +1,7 @@
 package typings.fabric.fabricDashImplMod
 
 import typings.fabric.Anon_X
+import typings.fabric.fabricStrings.equally
 import typings.fabric.fabricStrings.getImageData
 import typings.fabric.fabricStrings.setLineDash
 import typings.fabric.fabricStrings.toDataURL
@@ -10,7 +11,6 @@ import typings.fabric.fabricStrings.y
 import typings.std.CanvasRenderingContext2D
 import typings.std.Event
 import typings.std.HTMLCanvasElement
-import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,8 @@ class Canvas protected () extends StaticCanvas {
   def this(element: HTMLCanvasElement) = this()
   def this(element: String, options: ICanvasOptions) = this()
   def this(element: HTMLCanvasElement, options: ICanvasOptions) = this()
-  var _objects: js.Array[Object] = js.native
+  @JSName("_activeObject")
+  var _activeObject_Canvas: Object = js.native
   /**
   	 * Indicates which key enable alternate action on corner
   	 * values: 'altKey', 'shiftKey', 'ctrlKey'.
@@ -52,7 +53,7 @@ class Canvas protected () extends StaticCanvas {
   	 * @type null|String
   	 * @default
   	 */
-  var altSelectionKey: js.UndefOr[String | Null] = js.native
+  var altSelectionKey: js.UndefOr[Null | String] = js.native
   /**
   	 * Indicates which key enable centered Transform
   	 * values: 'altKey', 'shiftKey', 'ctrlKey'.
@@ -82,8 +83,8 @@ class Canvas protected () extends StaticCanvas {
   	 */
   var defaultCursor: js.UndefOr[String] = js.native
   /**
-    * Color of object's fill
-    */
+  	 * Color of object's fill
+  	 */
   var fill: js.UndefOr[String | Pattern] = js.native
   /**
   	 * Indicates if the canvas can fire middle click events
@@ -182,6 +183,8 @@ class Canvas protected () extends StaticCanvas {
   var selectionLineWidth: js.UndefOr[Double] = js.native
   /**
   	 * When true, target detection is skipped when hovering over canvas. This can be used to improve performance.
+  	 * @type Boolean
+  	 * @default
   	 */
   var skipTargetFind: js.UndefOr[Boolean] = js.native
   /**
@@ -209,6 +212,7 @@ class Canvas protected () extends StaticCanvas {
   	 * Number of pixels around target pixel to tolerate (consider active) during object detection
   	 */
   var targetFindTolerance: js.UndefOr[Double] = js.native
+  var targets: js.Array[Object] = js.native
   /**
   	 * Indicates which key enable unproportional scaling
   	 * values: 'altKey', 'shiftKey', 'ctrlKey'.
@@ -223,6 +227,60 @@ class Canvas protected () extends StaticCanvas {
   	 * @type Boolean
   	 */
   var uniScaleTransform: js.UndefOr[Boolean] = js.native
+  /**
+  	 * @private
+  	 * Compares the old activeObject with the current one and fires correct events
+  	 * @param {fabric.Object} obj old activeObject
+  	 */
+  def _fireSelectionEvents(oldObjects: js.Array[Object]): Unit = js.native
+  def _fireSelectionEvents(oldObjects: js.Array[Object], e: Event): Unit = js.native
+  /**
+  	 * @private
+  	 * @param {fabric.Object} obj Object that was added
+  	 */
+  def _onObjectAdded(obj: Object): Unit = js.native
+  /**
+  	 * @private
+  	 * @param {fabric.Object} obj Object that was removed
+  	 */
+  def _onObjectRemoved(obj: Object): Unit = js.native
+  /**
+  	 * Resets the current transform to its original values and chooses the type of resizing based on the event
+  	 * @private
+  	 */
+  def _resetCurrentTransform(): Unit = js.native
+  /**
+  	 * Scales object by invoking its scaleX/scaleY methods
+  	 * @private
+  	 * @param {Number} x pointer's x coordinate
+  	 * @param {Number} y pointer's y coordinate
+  	 * @param {String} by Either 'x' or 'y' - specifies dimension constraint by which to scale an object.
+  	 *					When not provided, an object is scaled by both dimensions equally
+  	 * @return {Boolean} true if the scaling occurred
+  	 */
+  def _scaleObject(x: Double, y: Double): Boolean = js.native
+  @JSName("_scaleObject")
+  def _scaleObject_equally(x: Double, y: Double, by: equally): Boolean = js.native
+  @JSName("_scaleObject")
+  def _scaleObject_x(x: Double, y: Double, by: x): Boolean = js.native
+  @JSName("_scaleObject")
+  def _scaleObject_y(x: Double, y: Double, by: y): Boolean = js.native
+  /**
+  	 * Function used to search inside objects an object that contains pointer in bounding box or that contains pointerOnCanvas when painted
+  	 * @param {Array} [objects] objects array to look into
+  	 * @param {Object} [pointer] x,y object of point coordinates we want to check.
+  	 * @return {fabric.Object} object that contains pointer
+  	 * @private
+  	 */
+  def _searchPossibleTargets(objects: js.Array[Object], pointer: Anon_X): Object = js.native
+  /**
+  	 * @private
+  	 * @param {Object} object to set as active
+  	 * @param {Event} [e] Event (passed along when firing "object:selected")
+  	 * @return {Boolean} true if the selection happened
+  	 */
+  def _setActiveObject(`object`: Object): Boolean = js.native
+  def _setActiveObject(`object`: Object, e: Event): Boolean = js.native
   def _setObjectScale(
     localMouse: Point,
     transform: js.Any,
@@ -232,10 +290,20 @@ class Canvas protected () extends StaticCanvas {
     lockScalingFlip: Boolean,
     _dim: Point
   ): Boolean = js.native
+  @JSName("_setObjectScale")
+  def _setObjectScale_equally(
+    localMouse: Point,
+    transform: js.Any,
+    lockScalingX: Boolean,
+    lockScalingY: Boolean,
+    by: equally,
+    lockScalingFlip: Boolean,
+    _dim: Point
+  ): Boolean = js.native
   /**
-    * @private
-    * @return {Boolean} true if the scaling occurred
-    */
+  	 * @private
+  	 * @return {Boolean} true if the scaling occurred
+  	 */
   @JSName("_setObjectScale")
   def _setObjectScale_x(
     localMouse: Point,
@@ -284,11 +352,14 @@ class Canvas protected () extends StaticCanvas {
   /**
   	 * Method that determines what object we are clicking on
   	 * the skipGroup parameter is for internal use, is needed for shift+click action
+  	 * 11/09/2018 TODO: would be cool if findTarget could discern between being a full target
+  	 * or the outside part of the corner.
   	 * @param {Event} e mouse event
   	 * @param {Boolean} skipGroup when true, activeGroup is skipped and only objects are traversed through
   	 * @return {fabric.Object} the target found
   	 */
-  def findTarget(e: MouseEvent, skipGroup: Boolean): Object = js.native
+  def findTarget(e: Event, skipGroup: Boolean): js.UndefOr[Object] = js.native
+  def fire(eventName: String, options: js.Any): Unit = js.native
   /**
   	 * Returns currently active object
   	 * @return {fabric.Object} active object

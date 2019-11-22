@@ -1,0 +1,19 @@
+package typings.instagramDashPrivateDashApi.distResponsesTagsDotFeedDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TagsFeedResponseMediasItem extends js.Object {
+  var media: TagsFeedResponseMedia
+}
+
+object TagsFeedResponseMediasItem {
+  @scala.inline
+  def apply(media: TagsFeedResponseMedia): TagsFeedResponseMediasItem = {
+    val __obj = js.Dynamic.literal(media = media)
+  
+    __obj.asInstanceOf[TagsFeedResponseMediasItem]
+  }
+}
+

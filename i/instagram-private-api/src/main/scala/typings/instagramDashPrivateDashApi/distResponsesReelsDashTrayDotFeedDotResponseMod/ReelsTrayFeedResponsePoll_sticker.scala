@@ -1,0 +1,35 @@
+package typings.instagramDashPrivateDashApi.distResponsesReelsDashTrayDotFeedDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ReelsTrayFeedResponsePoll_sticker extends js.Object {
+  var finished: Boolean
+  var id: String
+  var is_shared_result: Boolean
+  var poll_id: String
+  var promotion_tallies: Null
+  var question: String
+  var tallies: js.Array[ReelsTrayFeedResponseTalliesItem]
+  var viewer_can_vote: Boolean
+}
+
+object ReelsTrayFeedResponsePoll_sticker {
+  @scala.inline
+  def apply(
+    finished: Boolean,
+    id: String,
+    is_shared_result: Boolean,
+    poll_id: String,
+    promotion_tallies: Null,
+    question: String,
+    tallies: js.Array[ReelsTrayFeedResponseTalliesItem],
+    viewer_can_vote: Boolean
+  ): ReelsTrayFeedResponsePoll_sticker = {
+    val __obj = js.Dynamic.literal(finished = finished, id = id, is_shared_result = is_shared_result, poll_id = poll_id, promotion_tallies = promotion_tallies, question = question, tallies = tallies, viewer_can_vote = viewer_can_vote)
+  
+    __obj.asInstanceOf[ReelsTrayFeedResponsePoll_sticker]
+  }
+}
+

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ColumnSpec extends js.Object {
-  var calc: js.UndefOr[js.Function2[/* dataTable */ DataTable, /* row */ Double, _]] = js.undefined
+  var calc: js.UndefOr[js.Function2[/* data */ DataTable, /* row */ Double, _]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var properties: js.UndefOr[Properties] = js.undefined
@@ -17,7 +17,7 @@ trait ColumnSpec extends js.Object {
 object ColumnSpec {
   @scala.inline
   def apply(
-    calc: (/* dataTable */ DataTable, /* row */ Double) => _ = null,
+    calc: (/* data */ DataTable, /* row */ Double) => _ = null,
     id: String = null,
     label: String = null,
     properties: Properties = null,

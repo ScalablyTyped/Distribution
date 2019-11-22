@@ -63,7 +63,8 @@ object distClientModelsMessagesMessageFilteringParametersMod extends js.Object {
       platform: js.UndefOr[String],
       country: js.UndefOr[String],
       region: js.UndefOr[String],
-      city: js.UndefOr[String]
+      city: js.UndefOr[String],
+      messageStream: js.UndefOr[String]
     ) = this()
     var city: js.UndefOr[String] = js.native
     var client_company: js.UndefOr[String] = js.native
@@ -91,7 +92,8 @@ object distClientModelsMessagesMessageFilteringParametersMod extends js.Object {
       status: js.UndefOr[OutboundMessageStatus],
       fromDate: js.UndefOr[String],
       toDate: js.UndefOr[String],
-      subject: js.UndefOr[String]
+      subject: js.UndefOr[String],
+      messageStream: js.UndefOr[String]
     ) = this()
     var fromDate: js.UndefOr[String] = js.native
     var fromEmail: js.UndefOr[String] = js.native

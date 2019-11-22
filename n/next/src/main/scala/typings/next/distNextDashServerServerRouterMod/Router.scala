@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 trait Router extends js.Object {
   var routes: js.Array[Route]
   def add(route: Route): Unit
-  def `match`(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.UndefOr[js.Function0[Unit]]
+  def execute(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.Promise[Boolean]
 }
 
 object Router {
   @scala.inline
   def apply(
     add: Route => Unit,
-    `match`: (IncomingMessage, ServerResponse, UrlWithParsedQuery) => js.UndefOr[js.Function0[Unit]],
+    execute: (IncomingMessage, ServerResponse, UrlWithParsedQuery) => js.Promise[Boolean],
     routes: js.Array[Route]
   ): Router = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), routes = routes)
-    __obj.updateDynamic("match")(js.Any.fromFunction3(`match`))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), execute = js.Any.fromFunction3(execute), routes = routes)
+  
     __obj.asInstanceOf[Router]
   }
 }

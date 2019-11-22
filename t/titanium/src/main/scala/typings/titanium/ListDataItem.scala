@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents displayed item data.
   */
-trait ListDataItem extends js.Object {
+trait ListDataItem
+  extends /* key */ StringDictionary[js.Any] {
   /**
   	 * Contains key-value pairs of view properties and their values that are applied to the
   	 * `ListItem`.
@@ -22,8 +24,13 @@ trait ListDataItem extends js.Object {
 
 object ListDataItem {
   @scala.inline
-  def apply(properties: js.Any = null, template: String | Double = null): ListDataItem = {
+  def apply(
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    properties: js.Any = null,
+    template: String | Double = null
+  ): ListDataItem = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataItem]

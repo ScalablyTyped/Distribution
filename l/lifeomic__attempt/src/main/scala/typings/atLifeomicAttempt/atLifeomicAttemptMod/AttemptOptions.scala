@@ -1,0 +1,46 @@
+package typings.atLifeomicAttempt.atLifeomicAttemptMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AttemptOptions[T] extends js.Object {
+  val beforeAttempt: BeforeAttempt[T] | Null
+  val calculateDelay: CalculateDelay[T] | Null
+  val delay: Double
+  val factor: Double
+  val handleError: HandleError[T] | Null
+  val handleTimeout: HandleTimeout[T] | Null
+  val initialDelay: Double
+  val jitter: Boolean
+  val maxAttempts: Double
+  val maxDelay: Double
+  val minDelay: Double
+  val timeout: Double
+}
+
+object AttemptOptions {
+  @scala.inline
+  def apply[T](
+    delay: Double,
+    factor: Double,
+    initialDelay: Double,
+    jitter: Boolean,
+    maxAttempts: Double,
+    maxDelay: Double,
+    minDelay: Double,
+    timeout: Double,
+    beforeAttempt: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit = null,
+    calculateDelay: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Double = null,
+    handleError: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit = null,
+    handleTimeout: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[T] = null
+  ): AttemptOptions[T] = {
+    val __obj = js.Dynamic.literal(delay = delay, factor = factor, initialDelay = initialDelay, jitter = jitter, maxAttempts = maxAttempts, maxDelay = maxDelay, minDelay = minDelay, timeout = timeout)
+    if (beforeAttempt != null) __obj.updateDynamic("beforeAttempt")(js.Any.fromFunction2(beforeAttempt))
+    if (calculateDelay != null) __obj.updateDynamic("calculateDelay")(js.Any.fromFunction2(calculateDelay))
+    if (handleError != null) __obj.updateDynamic("handleError")(js.Any.fromFunction3(handleError))
+    if (handleTimeout != null) __obj.updateDynamic("handleTimeout")(js.Any.fromFunction2(handleTimeout))
+    __obj.asInstanceOf[AttemptOptions[T]]
+  }
+}
+

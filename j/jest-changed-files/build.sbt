@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jest-changed-files"
-version := "24.9.0-bd04ec"
+version := "24.9.0-1841c1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-797456",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-1b8e45",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-7399ab",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "yargs" % "13.0-dt-20190925Z-22543c",
   "org.scalablytyped" %%% "yargs-parser" % "13.1-dt-20190905Z-34249b")

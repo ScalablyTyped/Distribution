@@ -1,5 +1,6 @@
 package typings.googleDotVisualization.google.visualization
 
+import typings.googleDotVisualization.googleDotVisualizationStrings.function
 import typings.googleDotVisualization.googleDotVisualizationStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,15 +11,14 @@ trait ComboChartOptions extends js.Object {
   var animation: js.UndefOr[TransitionAnimation] = js.undefined
   var annotations: js.UndefOr[ChartAnnotations] = js.undefined
   var areaOpacity: js.UndefOr[Double] = js.undefined
-  var axisTitlesPosition: js.UndefOr[String] = js.undefined
-   // in, out, none
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var bar: js.UndefOr[GroupWidth] = js.undefined
   var candlestick: js.UndefOr[Candlestick] = js.undefined
   var chartArea: js.UndefOr[ChartArea] = js.undefined
   var colors: js.UndefOr[js.Array[String]] = js.undefined
   var crosshair: js.UndefOr[ChartCrosshair] = js.undefined
-  var curveType: js.UndefOr[String] = js.undefined
+  var curveType: js.UndefOr[none | function] = js.undefined
   var dataOpacity: js.UndefOr[Double] = js.undefined
   var enableInteractivity: js.UndefOr[Boolean] = js.undefined
   var focusTarget: js.UndefOr[String] = js.undefined
@@ -32,13 +32,12 @@ trait ComboChartOptions extends js.Object {
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
   var lineDashStyle: js.UndefOr[js.Array[Double]] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
-  var pointShape: js.UndefOr[String] = js.undefined
+  var orientation: js.UndefOr[ChartOrientation] = js.undefined
+  var pointShape: js.UndefOr[ChartPointShape] = js.undefined
   var pointSize: js.UndefOr[Double] = js.undefined
   var pointsVisible: js.UndefOr[Boolean] = js.undefined
   var reverseCategories: js.UndefOr[Boolean] = js.undefined
-  var selectionMode: js.UndefOr[String] = js.undefined
-  // single / multiple
+  var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   var series: js.UndefOr[js.Any] = js.undefined
   var seriesType: js.UndefOr[String] = js.undefined
   var theme: js.UndefOr[String] = js.undefined
@@ -58,14 +57,14 @@ object ComboChartOptions {
     animation: TransitionAnimation = null,
     annotations: ChartAnnotations = null,
     areaOpacity: Int | Double = null,
-    axisTitlesPosition: String = null,
-    backgroundColor: js.Any = null,
+    axisTitlesPosition: ChartAxisTitlesPosition = null,
+    backgroundColor: String | ChartStrokeFill = null,
     bar: GroupWidth = null,
     candlestick: Candlestick = null,
     chartArea: ChartArea = null,
     colors: js.Array[String] = null,
     crosshair: ChartCrosshair = null,
-    curveType: String = null,
+    curveType: none | function = null,
     dataOpacity: Int | Double = null,
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
     focusTarget: String = null,
@@ -79,12 +78,12 @@ object ComboChartOptions {
     legend: ChartLegend | none = null,
     lineDashStyle: js.Array[Double] = null,
     lineWidth: Int | Double = null,
-    orientation: String = null,
-    pointShape: String = null,
+    orientation: ChartOrientation = null,
+    pointShape: ChartPointShape = null,
     pointSize: Int | Double = null,
     pointsVisible: js.UndefOr[Boolean] = js.undefined,
     reverseCategories: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: String = null,
+    selectionMode: ChartSelectionMode = null,
     series: js.Any = null,
     seriesType: String = null,
     theme: String = null,
@@ -102,13 +101,13 @@ object ComboChartOptions {
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (areaOpacity != null) __obj.updateDynamic("areaOpacity")(areaOpacity.asInstanceOf[js.Any])
     if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bar != null) __obj.updateDynamic("bar")(bar)
     if (candlestick != null) __obj.updateDynamic("candlestick")(candlestick)
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair)
-    if (curveType != null) __obj.updateDynamic("curveType")(curveType)
+    if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
     if (dataOpacity != null) __obj.updateDynamic("dataOpacity")(dataOpacity.asInstanceOf[js.Any])
     if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity)
     if (focusTarget != null) __obj.updateDynamic("focusTarget")(focusTarget)

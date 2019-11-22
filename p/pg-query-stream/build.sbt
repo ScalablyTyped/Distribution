@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pg-query-stream"
-version := "1.0-dt-20190904Z-9a33db"
+version := "1.0-dt-20190904Z-a70fb3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
-  "org.scalablytyped" %%% "pg" % "7.11-dt-20190926Z-6e96c6",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "pg" % "7.11-dt-20190926Z-2cd666",
   "org.scalablytyped" %%% "pg-types" % "1.11-dt-20191101Z-8564ea",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false

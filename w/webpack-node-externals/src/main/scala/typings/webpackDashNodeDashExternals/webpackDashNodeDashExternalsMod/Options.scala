@@ -19,7 +19,7 @@ trait Options extends js.Object {
     * 'commonjs' for node modules.
     * @default 'commonjs'
     */
-  var importType: js.UndefOr[`var` | `this` | commonjs | amd | umd] = js.undefined
+  var importType: js.UndefOr[`var` | `this` | commonjs | amd | umd | ImportTypeCallback] = js.undefined
   /**
     * @default false
     */
@@ -33,7 +33,7 @@ trait Options extends js.Object {
     * Read the modules from the package.json file instead of the node_modules folder.
     * @default false
     */
-  var modulesFromFile: js.UndefOr[Boolean] = js.undefined
+  var modulesFromFile: js.UndefOr[Boolean | ModulesFromFileType] = js.undefined
   /**
     * An array for the externals to whitelist, so they will be included in the bundle.
     * Can accept exact strings ('module_name'), regex patterns (/^module_name/), or a
@@ -50,10 +50,10 @@ object Options {
   @scala.inline
   def apply(
     binaryDirs: js.Array[String] = null,
-    importType: `var` | `this` | commonjs | amd | umd = null,
+    importType: `var` | `this` | commonjs | amd | umd | ImportTypeCallback = null,
     includeAbsolutePaths: js.UndefOr[Boolean] = js.undefined,
     modulesDir: String = null,
-    modulesFromFile: js.UndefOr[Boolean] = js.undefined,
+    modulesFromFile: Boolean | ModulesFromFileType = null,
     whitelist: js.Array[WhitelistOption] | WhitelistOption = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -61,7 +61,7 @@ object Options {
     if (importType != null) __obj.updateDynamic("importType")(importType.asInstanceOf[js.Any])
     if (!js.isUndefined(includeAbsolutePaths)) __obj.updateDynamic("includeAbsolutePaths")(includeAbsolutePaths)
     if (modulesDir != null) __obj.updateDynamic("modulesDir")(modulesDir)
-    if (!js.isUndefined(modulesFromFile)) __obj.updateDynamic("modulesFromFile")(modulesFromFile)
+    if (modulesFromFile != null) __obj.updateDynamic("modulesFromFile")(modulesFromFile.asInstanceOf[js.Any])
     if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

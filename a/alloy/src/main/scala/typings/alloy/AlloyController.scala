@@ -13,6 +13,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait AlloyController extends EventsMixin {
+  var UI: AlloyControllerUI = js.native
+  var args: js.Any = js.native
   /**
     *
     * @param proxy View object to which to add class(es).

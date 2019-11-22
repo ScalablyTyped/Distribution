@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angularlocalstorage"
-version := "0.1.7-dt-20190322Z-6fedb4"
+version := "0.1.7-dt-20190322Z-ea29a9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190812Z-fa1b72",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20191119Z-fa1b72",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

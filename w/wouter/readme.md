@@ -1,7 +1,7 @@
 
 # Scala.js typings for wouter
 
-Typings are for version 2.3.1
+Typings are for version 2.4.0
 
 ## Library description:
 A minimalistic routing for React. Nothing extra, just HOOKS.

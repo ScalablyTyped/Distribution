@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse/node", "Role")
 @js.native
-class Role protected ()
-  extends typings.parse.Parse.Role {
+class Role[T /* <: js.Any */] protected ()
+  extends typings.parse.Parse.Role[T] {
   def this(name: String, acl: typings.parse.Parse.ACL) = this()
 }
 

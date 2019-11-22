@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait BubbleChartOptions extends js.Object {
   var animation: js.UndefOr[TransitionAnimation] = js.undefined
-  var axisTitlesPosition: js.UndefOr[String] = js.undefined
-   // in, out, none
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var bubble: js.UndefOr[ChartBubble] = js.undefined
   var chartArea: js.UndefOr[ChartArea] = js.undefined
   var colorAxis: js.UndefOr[ChartColorAxis] = js.undefined
@@ -22,7 +21,7 @@ trait BubbleChartOptions extends js.Object {
   var hAxis: js.UndefOr[ChartAxis] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
-  var selectionMode: js.UndefOr[String] = js.undefined
+  var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   var series: js.UndefOr[js.Any] = js.undefined
   var sizeAxis: js.UndefOr[ChartSizeAxis] = js.undefined
   var sortBubblesBySize: js.UndefOr[Boolean] = js.undefined
@@ -39,8 +38,8 @@ object BubbleChartOptions {
   @scala.inline
   def apply(
     animation: TransitionAnimation = null,
-    axisTitlesPosition: String = null,
-    backgroundColor: js.Any = null,
+    axisTitlesPosition: ChartAxisTitlesPosition = null,
+    backgroundColor: String | ChartStrokeFill = null,
     bubble: ChartBubble = null,
     chartArea: ChartArea = null,
     colorAxis: ChartColorAxis = null,
@@ -53,7 +52,7 @@ object BubbleChartOptions {
     hAxis: ChartAxis = null,
     height: Int | Double = null,
     legend: ChartLegend | none = null,
-    selectionMode: String = null,
+    selectionMode: ChartSelectionMode = null,
     series: js.Any = null,
     sizeAxis: ChartSizeAxis = null,
     sortBubblesBySize: js.UndefOr[Boolean] = js.undefined,
@@ -68,7 +67,7 @@ object BubbleChartOptions {
     val __obj = js.Dynamic.literal()
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bubble != null) __obj.updateDynamic("bubble")(bubble)
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea)
     if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis)

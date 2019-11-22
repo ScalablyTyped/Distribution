@@ -149,6 +149,7 @@ class Client protected () extends js.Object {
   ): Unit = js.native
   def putObject(bucketName: String, objectName: String, stream: String): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: String, callback: ResultCallback[String]): Unit = js.native
+  def putObject(bucketName: String, objectName: String, stream: String, metaData: ItemBucketMetadata): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: String, size: Double): js.Promise[String] = js.native
   def putObject(
     bucketName: String,
@@ -168,6 +169,7 @@ class Client protected () extends js.Object {
   ): Unit = js.native
   def putObject(bucketName: String, objectName: String, stream: Buffer): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: Buffer, callback: ResultCallback[String]): Unit = js.native
+  def putObject(bucketName: String, objectName: String, stream: Buffer, metaData: ItemBucketMetadata): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: Buffer, size: Double): js.Promise[String] = js.native
   def putObject(
     bucketName: String,
@@ -187,6 +189,7 @@ class Client protected () extends js.Object {
   ): Unit = js.native
   def putObject(bucketName: String, objectName: String, stream: Stream): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: Stream, callback: ResultCallback[String]): Unit = js.native
+  def putObject(bucketName: String, objectName: String, stream: Stream, metaData: ItemBucketMetadata): js.Promise[String] = js.native
   def putObject(bucketName: String, objectName: String, stream: Stream, size: Double): js.Promise[String] = js.native
   def putObject(
     bucketName: String,

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait GroupKeyOptions extends js.Object {
   var column: Double
-  var id: js.UndefOr[js.Any] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var modifier: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
   var `type`: String
@@ -17,7 +17,7 @@ object GroupKeyOptions {
   def apply(
     column: Double,
     `type`: String,
-    id: js.Any = null,
+    id: String = null,
     label: String = null,
     modifier: /* value */ js.Any => _ = null
   ): GroupKeyOptions = {

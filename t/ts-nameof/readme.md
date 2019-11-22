@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-nameof
 
-Typings are for version 4.0
+Typings are for version 4.2
 
 ## Library description:
 nameof in TypeScript

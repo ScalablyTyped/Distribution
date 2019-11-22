@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 abstract class Element protected ()
   extends typings.mendixmodelsdk.distSdkInternalElementsMod.Element {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,

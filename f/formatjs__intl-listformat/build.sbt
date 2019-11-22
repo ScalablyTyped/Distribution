@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "formatjs__intl-listformat"
-version := "1.2.2-19524e"
+version := "1.2.4-f3182d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.4.0-adedb9",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "1.4.2-2bdd44",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

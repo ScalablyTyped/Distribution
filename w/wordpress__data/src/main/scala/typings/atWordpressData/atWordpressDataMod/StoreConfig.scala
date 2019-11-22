@@ -1,6 +1,7 @@
 package typings.atWordpressData.atWordpressDataMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atWordpressData.atWordpressDataNumbers.`true`
 import typings.redux.reduxMod.AnyAction
 import typings.redux.reduxMod.Reducer
 import typings.std.Generator
@@ -14,6 +15,25 @@ trait StoreConfig[S] extends js.Object {
   ] = js.undefined
   var controls: js.UndefOr[StringDictionary[js.Function1[/* action */ AnyAction, _]]] = js.undefined
   var initialState: js.UndefOr[S] = js.undefined
+  /**
+    * Use persist with the persistence plugin to persist state.
+    *
+    * The registry must use the `persistence` plugin.
+    *
+    * Set to `true` to persist all state, or pass an array of state keys to persist.
+    *
+    * @example
+    *
+    * import { plugins, registerStore, use } from '@wordpress/data';
+    *
+    * use( plugins.persistence, { storageKey: 'example' } );
+    *
+    * registerStore( 'my-plugin', {
+    *   // …
+    *   persist: [ 'state-key-to-persist' ],
+    * } );
+    */
+  var persist: js.UndefOr[`true` | js.Array[String]] = js.undefined
   var reducer: Reducer[S, AnyAction]
   var resolvers: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, _]]] = js.undefined
   var selectors: js.UndefOr[StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, _]]] = js.undefined
@@ -26,6 +46,7 @@ object StoreConfig {
     actions: StringDictionary[js.Function1[/* repeated */ js.Any, AnyAction | (Generator[_, _, _])]] = null,
     controls: StringDictionary[js.Function1[/* action */ AnyAction, _]] = null,
     initialState: S = null,
+    persist: `true` | js.Array[String] = null,
     resolvers: StringDictionary[js.Function1[/* repeated */ js.Any, _]] = null,
     selectors: StringDictionary[js.Function2[/* state */ S, /* repeated */ js.Any, _]] = null
   ): StoreConfig[S] = {
@@ -33,6 +54,7 @@ object StoreConfig {
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (controls != null) __obj.updateDynamic("controls")(controls)
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (persist != null) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
     if (selectors != null) __obj.updateDynamic("selectors")(selectors)
     __obj.asInstanceOf[StoreConfig[S]]

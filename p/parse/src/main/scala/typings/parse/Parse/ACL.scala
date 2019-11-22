@@ -26,22 +26,22 @@ class ACL () extends BaseObject {
   def getPublicReadAccess(): Boolean = js.native
   def getPublicWriteAccess(): Boolean = js.native
   def getReadAccess(userId: String): Boolean = js.native
-  def getReadAccess(userId: User): Boolean = js.native
+  def getReadAccess(userId: User[_]): Boolean = js.native
   def getRoleReadAccess(role: String): Boolean = js.native
-  def getRoleReadAccess(role: Role): Boolean = js.native
+  def getRoleReadAccess(role: Role[_]): Boolean = js.native
   def getRoleWriteAccess(role: String): Boolean = js.native
-  def getRoleWriteAccess(role: Role): Boolean = js.native
+  def getRoleWriteAccess(role: Role[_]): Boolean = js.native
   def getWriteAccess(userId: String): Boolean = js.native
-  def getWriteAccess(userId: User): Boolean = js.native
+  def getWriteAccess(userId: User[_]): Boolean = js.native
   def setPublicReadAccess(allowed: Boolean): Unit = js.native
   def setPublicWriteAccess(allowed: Boolean): Unit = js.native
   def setReadAccess(userId: String, allowed: Boolean): Unit = js.native
-  def setReadAccess(userId: User, allowed: Boolean): Unit = js.native
+  def setReadAccess(userId: User[_], allowed: Boolean): Unit = js.native
   def setRoleReadAccess(role: String, allowed: Boolean): Unit = js.native
-  def setRoleReadAccess(role: Role, allowed: Boolean): Unit = js.native
+  def setRoleReadAccess(role: Role[_], allowed: Boolean): Unit = js.native
   def setRoleWriteAccess(role: String, allowed: Boolean): Unit = js.native
-  def setRoleWriteAccess(role: Role, allowed: Boolean): Unit = js.native
+  def setRoleWriteAccess(role: Role[_], allowed: Boolean): Unit = js.native
   def setWriteAccess(userId: String, allowed: Boolean): Unit = js.native
-  def setWriteAccess(userId: User, allowed: Boolean): Unit = js.native
+  def setWriteAccess(userId: User[_], allowed: Boolean): Unit = js.native
 }
 

@@ -8,10 +8,17 @@ trait DataTableCellRangeFilter extends DataTableCellFilter
 
 object DataTableCellRangeFilter {
   @scala.inline
-  def apply(column: Double, maxValue: js.Any = null, minValue: js.Any = null, value: js.Any = null): DataTableCellRangeFilter = {
+  def apply(
+    column: Double,
+    maxValue: js.Any = null,
+    minValue: js.Any = null,
+    test: (/* value */ js.Any, /* row */ js.UndefOr[Double], /* column */ js.UndefOr[Double], /* data */ js.UndefOr[DataTable | DataView]) => Boolean = null,
+    value: js.Any = null
+  ): DataTableCellRangeFilter = {
     val __obj = js.Dynamic.literal(column = column)
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
     if (minValue != null) __obj.updateDynamic("minValue")(minValue)
+    if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction4(test))
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[DataTableCellRangeFilter]
   }

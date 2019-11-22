@@ -14,8 +14,9 @@ class EditableText ()
   var handleFocus: js.Any = js.native
   var handleKeyEvent: js.Any = js.native
   var handleTextChange: js.Any = js.native
-  var maybeRenderInput: js.Any = js.native
+  var inputElement: js.UndefOr[js.Any] = js.native
   var refHandlers: js.Any = js.native
+  var renderInput: js.Any = js.native
   var updateInputDimensions: js.Any = js.native
   var valueElement: js.Any = js.native
   def cancelEditing(): Unit = js.native

@@ -59,8 +59,8 @@ trait ICanvasOptions extends IStaticCanvasOptions {
   	 */
   var defaultCursor: js.UndefOr[String] = js.undefined
   /**
-    * Color of object's fill
-    */
+  	 * Color of object's fill
+  	 */
   var fill: js.UndefOr[String | Pattern] = js.undefined
   /**
   	 * Indicates if the canvas can fire middle click events

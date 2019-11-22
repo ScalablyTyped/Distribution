@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__pro-layout
 
-Typings are for version 4.7.2
+Typings are for version 4.7.3
 
 ## Library description:
 ant-design-pro layout, easy to use pro scaffolding.

@@ -2,8 +2,8 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distGenClientMod.client.SupportedPlatform
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractEnum
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.IStructureVersionInfo
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.StructureType
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.IStructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

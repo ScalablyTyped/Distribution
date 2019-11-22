@@ -23,9 +23,9 @@ trait ITextboxOptions extends ITextOptions {
   	 */
   var dynamicMinWidth: js.UndefOr[Double] = js.undefined
   /**
-    * Is the text wrapping
-    * @type Boolean
-    */
+  	 * Is the text wrapping
+  	 * @type Boolean
+  	 */
   var isWrapping: js.UndefOr[Boolean] = js.undefined
   /**
   	 * Minimum width of textbox, in pixels.

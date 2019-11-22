@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron" : "6.1.4"
+      "electron" : "6.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "electron" : "6.1.4"
+      "electron" : "6.1.5"
     }
   ],
   "compile-devDependencies" : [

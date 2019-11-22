@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GeoChartOptions extends js.Object {
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var colorAxis: js.UndefOr[ChartColorAxis] = js.undefined
   var datalessRegionColor: js.UndefOr[String] = js.undefined
   var defaultColor: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ trait GeoChartOptions extends js.Object {
 object GeoChartOptions {
   @scala.inline
   def apply(
-    backgroundColor: js.Any = null,
+    backgroundColor: String | ChartStrokeFill = null,
     colorAxis: ChartColorAxis = null,
     datalessRegionColor: String = null,
     defaultColor: String = null,
@@ -45,7 +45,7 @@ object GeoChartOptions {
     width: Int | Double = null
   ): GeoChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis)
     if (datalessRegionColor != null) __obj.updateDynamic("datalessRegionColor")(datalessRegionColor)
     if (defaultColor != null) __obj.updateDynamic("defaultColor")(defaultColor)

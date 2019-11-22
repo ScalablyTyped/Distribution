@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IBaseFilter extends js.Object {
   /**
+  	 * Apply the operation to a Uint8Array representing the pixels of an image.
+  	 *
+  	 * @param {Object} options
+  	 * @param {ImageData} options.imageData The Uint8Array to be filtered.
+  	 */
+  def applyTo2d(options: js.Any): Unit = js.native
+  /**
   	 * Sets filter's properties from options
   	 * @param [options] Options object
   	 */

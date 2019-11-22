@@ -5,7 +5,6 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIComponentAsMod.IComponentAs
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
-import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.IButtonProps
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod._Global_.JSX.Element
@@ -52,7 +51,7 @@ trait INavProps extends js.Object {
     * Render a custom link in place of the normal one.
     * This replaces the entire button rather than simply button content
     */
-  var linkAs: js.UndefOr[IComponentAs[IButtonProps]] = js.undefined
+  var linkAs: js.UndefOr[IComponentAs[INavButtonProps]] = js.undefined
   /**
     * Function callback invoked when a link in the navigation is clicked
     */
@@ -111,7 +110,7 @@ object INavProps {
     groups: js.Array[INavLinkGroup] = null,
     initialSelectedKey: String = null,
     isOnTop: js.UndefOr[Boolean] = js.undefined,
-    linkAs: IComponentAs[IButtonProps] = null,
+    linkAs: IComponentAs[INavButtonProps] = null,
     onLinkClick: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[INavLink]) => Unit = null,
     onLinkExpandClick: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[INavLink]) => Unit = null,
     onRenderGroupHeader: (/* props */ js.UndefOr[INavLinkGroup], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[INavLinkGroup], Element | Null]]) => Element | Null = null,

@@ -1,18 +1,14 @@
 package typings.sequelize.sequelizeMod
 
-import typings.validator.ValidatorJS.ValidatorStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-//
-//  Validator
-// ~~~~~~~~~~~
 /**
   * Validator Interface
   */
 @js.native
-trait Validator extends ValidatorStatic {
+trait Validator extends ValidatorJSType {
   def contains(str: String, element: js.Array[String]): Boolean = js.native
   def is(str: String, pattern: String, modifiers: String): Boolean = js.native
   def isIPv4(str: String): Boolean = js.native

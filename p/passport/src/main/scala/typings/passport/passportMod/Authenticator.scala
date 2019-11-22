@@ -1,5 +1,6 @@
 package typings.passport.passportMod
 
+import typings.node.httpMod.IncomingMessage
 import typings.passport.Anon_PauseStream
 import typings.passport.Anon_UserProperty
 import scala.scalajs.js
@@ -39,11 +40,27 @@ trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptio
       Unit
     ]
   ): Unit = js.native
+  def deserializeUser[TUser, TID, TR /* <: IncomingMessage */](
+    fn: js.Function3[
+      /* req */ TR, 
+      /* id */ TID, 
+      /* done */ js.Function2[/* err */ js.Any, /* user */ js.UndefOr[TUser], Unit], 
+      Unit
+    ]
+  ): Unit = js.native
   def framework[X, Y, Z](fw: Framework[X, Y, Z]): Authenticator[X, Y, Z, AuthenticateOptions] = js.native
   def initialize(): InitializeRet = js.native
   def initialize(options: Anon_UserProperty): InitializeRet = js.native
   def serializeUser[TUser, TID](
     fn: js.Function2[
+      /* user */ TUser, 
+      /* done */ js.Function2[/* err */ js.Any, /* id */ js.UndefOr[TID], Unit], 
+      Unit
+    ]
+  ): Unit = js.native
+  def serializeUser[TUser, TID, TR /* <: IncomingMessage */](
+    fn: js.Function3[
+      /* req */ TR, 
       /* user */ TUser, 
       /* done */ js.Function2[/* err */ js.Any, /* id */ js.UndefOr[TID], Unit], 
       Unit

@@ -1,8 +1,8 @@
 package typings.reactDashIntl
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.atFormatjsIntlDashListformat.atFormatjsIntlDashListformatMod.IntlListFormatOptions
 import typings.atFormatjsIntlDashListformat.atFormatjsIntlDashListformatMod.default
-import typings.atFormatjsIntlDashListformat.distCoreMod.IntlListFormatOptions
 import typings.atFormatjsIntlDashUtils.distListDashTypesMod.ListPatternFieldsData
 import typings.atFormatjsIntlDashUtils.distListDashTypesMod.ListPatternLocaleData
 import typings.reactDashIntl.reactDashIntlStrings.localeMatcher

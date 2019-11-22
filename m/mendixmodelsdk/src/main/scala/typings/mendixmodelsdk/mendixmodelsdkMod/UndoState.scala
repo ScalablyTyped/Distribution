@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod
 
-import typings.mendixmodelsdk.distSdkInternalDeltasDeltaDashManagerMod.IDeltaManager
+import typings.mendixmodelsdk.distSdkInternalDeltasDeltaManagerMod.IDeltaManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

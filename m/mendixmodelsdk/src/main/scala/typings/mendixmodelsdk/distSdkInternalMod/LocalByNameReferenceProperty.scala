@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalMod
 
-import typings.mendixmodelsdk.distSdkInternalPropertiesLocalDashByDashNameDashReferenceMod.INamedElement
+import typings.mendixmodelsdk.distSdkInternalPropertiesLocalByNameReferencePropertyMod.INamedElement
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructureClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -27,6 +27,7 @@ abstract class Template protected () extends Element {
   val containerAsHttpConfiguration: HttpConfiguration = js.native
   val containerAsLogMessageAction: LogMessageAction = js.native
   val containerAsShowMessageAction: ShowMessageAction = js.native
+  val containerAsStringTemplateParameterValue: StringTemplateParameterValue = js.native
   val containerAsValidationFeedbackAction: ValidationFeedbackAction = js.native
   @JSName("model")
   var model_Template: IModel = js.native

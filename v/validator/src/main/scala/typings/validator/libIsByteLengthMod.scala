@@ -1,14 +1,14 @@
 package typings.validator
 
-import org.scalablytyped.runtime.TopLevel
+import typings.validator.validatorMod.IsByteLengthOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("validator/lib/isByteLength", JSImport.Namespace)
 @js.native
-object libIsByteLengthMod
-  extends TopLevel[
-      Fn_Max with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isByteLength */ js.Any)
-    ]
+object libIsByteLengthMod extends js.Object {
+  def default(str: String): Boolean = js.native
+  def default(str: String, options: IsByteLengthOptions): Boolean = js.native
+}
 

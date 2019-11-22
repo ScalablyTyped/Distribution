@@ -9,7 +9,7 @@ trait ChartCrosshair extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var focused: js.UndefOr[Anon_Color] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
+  var orientation: js.UndefOr[ChartOrientation] = js.undefined
   var selected: js.UndefOr[Anon_Color] = js.undefined
   var trigger: js.UndefOr[String] = js.undefined
 }
@@ -20,7 +20,7 @@ object ChartCrosshair {
     color: String = null,
     focused: Anon_Color = null,
     opacity: Int | Double = null,
-    orientation: String = null,
+    orientation: ChartOrientation = null,
     selected: Anon_Color = null,
     trigger: String = null
   ): ChartCrosshair = {

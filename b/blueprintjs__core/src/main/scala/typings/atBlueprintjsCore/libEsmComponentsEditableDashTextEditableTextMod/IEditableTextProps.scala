@@ -11,6 +11,18 @@ trait IEditableTextProps
   extends IIntentProps
      with IProps {
   /**
+    * EXPERIMENTAL FEATURE.
+    *
+    * When true, this forces the component to _always_ render an editable input (or textarea)
+    * both when the component is focussed and unfocussed, instead of the component's default
+    * behavior of switching between a text span and a text input upon interaction.
+    *
+    * This behavior can help in certain applications where, for example, a custom right-click
+    * context menu is used to supply clipboard copy and paste functionality.
+    * @default false
+    */
+  var alwaysRenderInput: js.UndefOr[Boolean] = js.undefined
+  /**
     * If `true` and in multiline mode, the `enter` key will trigger onConfirm and `mod+enter`
     * will insert a newline. If `false`, the key bindings are inverted such that `enter`
     * adds a newline.
@@ -76,6 +88,7 @@ trait IEditableTextProps
 object IEditableTextProps {
   @scala.inline
   def apply(
+    alwaysRenderInput: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     confirmOnEnterKey: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String = null,
@@ -97,6 +110,7 @@ object IEditableTextProps {
     value: String = null
   ): IEditableTextProps = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alwaysRenderInput)) __obj.updateDynamic("alwaysRenderInput")(alwaysRenderInput)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(confirmOnEnterKey)) __obj.updateDynamic("confirmOnEnterKey")(confirmOnEnterKey)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)

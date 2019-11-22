@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mock-req-res"
-version := "1.1-dt-20191003Z-e944df"
+version := "1.1-dt-20191003Z-02f45d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-f0de5e",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-5f40d1",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-6ebcbf",
-  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191001Z-bc89ea",
+  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191120Z-bc89ea",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

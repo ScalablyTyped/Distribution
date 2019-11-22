@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-info
 
-Typings are for version 4.1
+Typings are for version 5.2
 
 ## Library description:
 A Storybook addon to show additional information for your stories.

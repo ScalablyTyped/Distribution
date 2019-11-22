@@ -1,0 +1,125 @@
+package typings.instagramDashPrivateDashApi.distResponsesLocationDotFeedDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait LocationFeedResponseMedia extends js.Object {
+  var can_see_insights_as_brand: js.UndefOr[Boolean] = js.undefined
+  var can_view_more_preview_comments: Boolean
+  var can_viewer_reshare: Boolean
+  var can_viewer_save: Boolean
+  var caption: LocationFeedResponseCaption | Null
+  var caption_is_edited: Boolean
+  var carousel_media: js.UndefOr[js.Array[LocationFeedResponseCarouselMediaItem]] = js.undefined
+  var carousel_media_count: js.UndefOr[Double] = js.undefined
+  var client_cache_key: String
+  var code: String
+  var comment_count: Double
+  var comment_likes_enabled: Boolean
+  var comment_threading_enabled: Boolean
+  var commenting_disabled_for_viewer: js.UndefOr[Boolean] = js.undefined
+  var device_timestamp: String | Double
+  var filter_type: Double
+  var has_audio: js.UndefOr[Boolean] = js.undefined
+  var has_liked: Boolean
+  var has_more_comments: Boolean
+  var id: String
+  var image_versions2: js.UndefOr[LocationFeedResponseImage_versions2] = js.undefined
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
+  var lat: String
+  var like_count: Double
+  var lng: String
+  var location: LocationFeedResponseLocation
+  var max_num_visible_preview_comments: Double
+  var media_type: Double
+  var next_max_id: String
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
+  var organic_tracking_token: String
+  var original_height: js.UndefOr[Double] = js.undefined
+  var original_width: js.UndefOr[Double] = js.undefined
+  var photo_of_you: Boolean
+  var pk: String
+  var preview_comments: js.Array[LocationFeedResponsePreviewCommentsItem]
+  var taken_at: Double
+  var top_likers: js.Array[_]
+  var user: LocationFeedResponseUser
+  var usertags: js.UndefOr[LocationFeedResponseUsertags] = js.undefined
+  var video_codec: js.UndefOr[String] = js.undefined
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
+  var video_duration: js.UndefOr[Double] = js.undefined
+  var video_versions: js.UndefOr[js.Array[LocationFeedResponseVideoVersionsItem]] = js.undefined
+  var view_count: js.UndefOr[Double] = js.undefined
+}
+
+object LocationFeedResponseMedia {
+  @scala.inline
+  def apply(
+    can_view_more_preview_comments: Boolean,
+    can_viewer_reshare: Boolean,
+    can_viewer_save: Boolean,
+    caption_is_edited: Boolean,
+    client_cache_key: String,
+    code: String,
+    comment_count: Double,
+    comment_likes_enabled: Boolean,
+    comment_threading_enabled: Boolean,
+    device_timestamp: String | Double,
+    filter_type: Double,
+    has_liked: Boolean,
+    has_more_comments: Boolean,
+    id: String,
+    lat: String,
+    like_count: Double,
+    lng: String,
+    location: LocationFeedResponseLocation,
+    max_num_visible_preview_comments: Double,
+    media_type: Double,
+    next_max_id: String,
+    organic_tracking_token: String,
+    photo_of_you: Boolean,
+    pk: String,
+    preview_comments: js.Array[LocationFeedResponsePreviewCommentsItem],
+    taken_at: Double,
+    top_likers: js.Array[_],
+    user: LocationFeedResponseUser,
+    can_see_insights_as_brand: js.UndefOr[Boolean] = js.undefined,
+    caption: LocationFeedResponseCaption = null,
+    carousel_media: js.Array[LocationFeedResponseCarouselMediaItem] = null,
+    carousel_media_count: Int | Double = null,
+    commenting_disabled_for_viewer: js.UndefOr[Boolean] = js.undefined,
+    has_audio: js.UndefOr[Boolean] = js.undefined,
+    image_versions2: LocationFeedResponseImage_versions2 = null,
+    is_dash_eligible: Int | Double = null,
+    number_of_qualities: Int | Double = null,
+    original_height: Int | Double = null,
+    original_width: Int | Double = null,
+    usertags: LocationFeedResponseUsertags = null,
+    video_codec: String = null,
+    video_dash_manifest: String = null,
+    video_duration: Int | Double = null,
+    video_versions: js.Array[LocationFeedResponseVideoVersionsItem] = null,
+    view_count: Int | Double = null
+  ): LocationFeedResponseMedia = {
+    val __obj = js.Dynamic.literal(can_view_more_preview_comments = can_view_more_preview_comments, can_viewer_reshare = can_viewer_reshare, can_viewer_save = can_viewer_save, caption_is_edited = caption_is_edited, client_cache_key = client_cache_key, code = code, comment_count = comment_count, comment_likes_enabled = comment_likes_enabled, comment_threading_enabled = comment_threading_enabled, device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type, has_liked = has_liked, has_more_comments = has_more_comments, id = id, lat = lat, like_count = like_count, lng = lng, location = location, max_num_visible_preview_comments = max_num_visible_preview_comments, media_type = media_type, next_max_id = next_max_id, organic_tracking_token = organic_tracking_token, photo_of_you = photo_of_you, pk = pk, preview_comments = preview_comments, taken_at = taken_at, top_likers = top_likers, user = user)
+    if (!js.isUndefined(can_see_insights_as_brand)) __obj.updateDynamic("can_see_insights_as_brand")(can_see_insights_as_brand)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (carousel_media != null) __obj.updateDynamic("carousel_media")(carousel_media)
+    if (carousel_media_count != null) __obj.updateDynamic("carousel_media_count")(carousel_media_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(commenting_disabled_for_viewer)) __obj.updateDynamic("commenting_disabled_for_viewer")(commenting_disabled_for_viewer)
+    if (!js.isUndefined(has_audio)) __obj.updateDynamic("has_audio")(has_audio)
+    if (image_versions2 != null) __obj.updateDynamic("image_versions2")(image_versions2)
+    if (is_dash_eligible != null) __obj.updateDynamic("is_dash_eligible")(is_dash_eligible.asInstanceOf[js.Any])
+    if (number_of_qualities != null) __obj.updateDynamic("number_of_qualities")(number_of_qualities.asInstanceOf[js.Any])
+    if (original_height != null) __obj.updateDynamic("original_height")(original_height.asInstanceOf[js.Any])
+    if (original_width != null) __obj.updateDynamic("original_width")(original_width.asInstanceOf[js.Any])
+    if (usertags != null) __obj.updateDynamic("usertags")(usertags)
+    if (video_codec != null) __obj.updateDynamic("video_codec")(video_codec)
+    if (video_dash_manifest != null) __obj.updateDynamic("video_dash_manifest")(video_dash_manifest)
+    if (video_duration != null) __obj.updateDynamic("video_duration")(video_duration.asInstanceOf[js.Any])
+    if (video_versions != null) __obj.updateDynamic("video_versions")(video_versions)
+    if (view_count != null) __obj.updateDynamic("view_count")(view_count.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocationFeedResponseMedia]
+  }
+}
+

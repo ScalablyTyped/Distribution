@@ -2,9 +2,9 @@ package typings.mendixmodelsdk
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.mendixmodelsdk.distCommonMod.common.IErrorCallback
-import typings.mendixmodelsdk.distSdkConfigMod.configuration.ISdkConfig
+import typings.mendixmodelsdk.distSdkConfigurationMod.configuration.ISdkConfig
+import typings.mendixmodelsdk.distSdkInternalIModelServerClientMod.IModelServerClient
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
-import typings.mendixmodelsdk.distSdkInternalModelDashServerDashClientMod.IModelServerClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typings.atStorybookAddonDashInfo.atStorybookAddonDashInfoMod
 
-import typings.atStorybookAddonDashInfo.Anon_Kind
-import typings.atStorybookReact.atStorybookReactMod.RenderFunction
-import typings.atStorybookReact.atStorybookReactMod.StoryDecorator
+import typings.atStorybookAddons.distTypesMod.DecoratorFunction
+import typings.atStorybookAddons.distTypesMod.StoryContext
+import typings.atStorybookAddons.distTypesMod.StoryFn
 import typings.react.reactMod.ReactElement
 import typings.std.ReturnType
 import scala.scalajs.js
@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object withInfo extends js.Object {
   def apply(): js.Function1[
-    /* storyFn */ RenderFunction, 
+    /* storyFn */ StoryFn[_], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = js.native
-  def apply(story: RenderFunction, context: Anon_Kind): ReturnType[StoryDecorator] = js.native
   def apply(textOrOptions: String): js.Function1[
-    /* storyFn */ RenderFunction, 
+    /* storyFn */ StoryFn[_], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = js.native
   def apply(textOrOptions: Options): js.Function1[
-    /* storyFn */ RenderFunction, 
+    /* storyFn */ StoryFn[_], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = js.native
+  def apply[A](story: StoryFn[A], context: StoryContext): ReturnType[DecoratorFunction[A]] = js.native
 }
 

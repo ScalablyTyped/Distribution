@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:92 Ignored [id => @octokit/types, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibraryScoped(octokit,Some(types)) [id => @octokit/types, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibraryScoped(octokit,Some(types)) [id => @octokit/types, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => @octokit/types, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:43 Processing @octokit/types [id => @octokit/types, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Expected code path [id => @octokit/types, phase => scala.js] java.lang.RuntimeException: Expected code path

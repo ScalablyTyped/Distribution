@@ -65,7 +65,7 @@ trait Protection extends js.Object {
   def remove(): Unit = js.native
   def removeEditor(emailAddress: String): Protection = js.native
   def removeEditor(user: User): Protection = js.native
-  def removeEditors(emailAddresses: js.Array[String]): Protection = js.native
+  def removeEditors(emailAddresses: js.Array[String | User]): Protection = js.native
   def setDescription(description: String): Protection = js.native
   def setDomainEdit(editable: Boolean): Protection = js.native
   def setNamedRange(namedRange: NamedRange): Protection = js.native

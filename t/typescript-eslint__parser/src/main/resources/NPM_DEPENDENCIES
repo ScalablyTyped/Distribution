@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@typescript-eslint/parser" : "2.7.0"
+      "@typescript-eslint/parser" : "2.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@typescript-eslint/parser" : "2.7.0"
+      "@typescript-eslint/parser" : "2.8.0"
     }
   ],
   "compile-devDependencies" : [

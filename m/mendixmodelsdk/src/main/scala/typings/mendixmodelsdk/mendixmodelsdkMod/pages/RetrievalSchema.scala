@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * In version 8.4.0: deleted
   * In version 6.2.0: introduced
   */
 @JSImport("mendixmodelsdk", "pages.RetrievalSchema")

@@ -99,6 +99,10 @@ trait RequiredOptions
     * Print trailing commas wherever possible.
     */
   var trailingComma: none | es5 | all
+  /**
+    * Whether or not to indent the code inside <script> and <style> tags in Vue files.
+    */
+  var vueIndentScriptAndStyle: Boolean
 }
 
 object RequiredOptions {
@@ -124,9 +128,10 @@ object RequiredOptions {
     singleQuote: Boolean,
     tabWidth: Double,
     trailingComma: none | es5 | all,
-    useTabs: Boolean
+    useTabs: Boolean,
+    vueIndentScriptAndStyle: Boolean
   ): RequiredOptions = {
-    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSpacing = bracketSpacing, endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath, htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma, jsxBracketSameLine = jsxBracketSameLine, jsxSingleQuote = jsxSingleQuote, parser = parser.asInstanceOf[js.Any], plugins = plugins, printWidth = printWidth, proseWrap = proseWrap.asInstanceOf[js.Any], quoteProps = quoteProps.asInstanceOf[js.Any], rangeEnd = rangeEnd, rangeStart = rangeStart, requirePragma = requirePragma, semi = semi, singleQuote = singleQuote, tabWidth = tabWidth, trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs)
+    val __obj = js.Dynamic.literal(arrowParens = arrowParens.asInstanceOf[js.Any], bracketSpacing = bracketSpacing, endOfLine = endOfLine.asInstanceOf[js.Any], filepath = filepath, htmlWhitespaceSensitivity = htmlWhitespaceSensitivity.asInstanceOf[js.Any], insertPragma = insertPragma, jsxBracketSameLine = jsxBracketSameLine, jsxSingleQuote = jsxSingleQuote, parser = parser.asInstanceOf[js.Any], plugins = plugins, printWidth = printWidth, proseWrap = proseWrap.asInstanceOf[js.Any], quoteProps = quoteProps.asInstanceOf[js.Any], rangeEnd = rangeEnd, rangeStart = rangeStart, requirePragma = requirePragma, semi = semi, singleQuote = singleQuote, tabWidth = tabWidth, trailingComma = trailingComma.asInstanceOf[js.Any], useTabs = useTabs, vueIndentScriptAndStyle = vueIndentScriptAndStyle)
   
     __obj.asInstanceOf[RequiredOptions]
   }

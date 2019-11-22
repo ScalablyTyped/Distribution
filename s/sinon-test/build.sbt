@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sinon-test"
-version := "2.4-dt-20190709Z-527c15"
+version := "2.4-dt-20190709Z-88b2d4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191001Z-bc89ea",
+  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191120Z-bc89ea",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

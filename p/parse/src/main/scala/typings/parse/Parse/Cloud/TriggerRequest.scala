@@ -12,10 +12,10 @@ trait TriggerRequest extends js.Object {
   var ip: String
   var log: js.Any
   var master: js.UndefOr[Boolean] = js.undefined
-  var `object`: Object
-  var original: js.UndefOr[Object] = js.undefined
+  var `object`: Object[_]
+  var original: js.UndefOr[Object[_]] = js.undefined
   var triggerName: String
-  var user: js.UndefOr[User] = js.undefined
+  var user: js.UndefOr[User[_]] = js.undefined
 }
 
 object TriggerRequest {
@@ -24,12 +24,12 @@ object TriggerRequest {
     headers: js.Any,
     ip: String,
     log: js.Any,
-    `object`: Object,
+    `object`: Object[_],
     triggerName: String,
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,
-    original: Object = null,
-    user: User = null
+    original: Object[_] = null,
+    user: User[_] = null
   ): TriggerRequest = {
     val __obj = js.Dynamic.literal(headers = headers, ip = ip, log = log, triggerName = triggerName)
     __obj.updateDynamic("object")(`object`)

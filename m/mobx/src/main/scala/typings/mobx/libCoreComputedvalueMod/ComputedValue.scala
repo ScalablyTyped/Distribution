@@ -58,8 +58,6 @@ class ComputedValue[T] protected ()
   var newObserving: js.Array[IObservable] | Null = js.native
   /* CompleteClass */
   override var observers: Set[IDerivation] = js.native
-  @JSName("observers")
-  var observers_ComputedValue: Set[_] = js.native
   @JSName("observing")
   var observing_ComputedValue: js.Array[IObservable] = js.native
   /**

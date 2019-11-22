@@ -115,9 +115,6 @@ object app extends js.Object {
       */
     def delete(): js.Promise[_] = js.native
     def firestore(): Firestore = js.native
-    /**
-      * @webonly
-      */
     def functions(): Functions = js.native
     def functions(region: String): Functions = js.native
     /**

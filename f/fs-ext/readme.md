@@ -1,6 +1,7 @@
 
 # Scala.js typings for fs-ext
 
+Typings are for version 2.0.0
 
 ## Library description:
 Extensions to core 'fs' module.

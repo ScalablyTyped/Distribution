@@ -12,8 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
+  * In version 8.4.0: removed experimental
   * In version 7.21.0: introduced
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.JavaScriptActionCallAction")
@@ -30,9 +29,6 @@ class JavaScriptActionCallAction protected () extends MicroflowAction {
   var javaScriptAction: IJavaScriptAction | Null = js.native
   val javaScriptActionQualifiedName: String | Null = js.native
   var outputVariableName: String = js.native
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    */
   val parameterMappings: IList[JavaScriptActionParameterMapping] = js.native
   var useReturnVariable: Boolean = js.native
 }

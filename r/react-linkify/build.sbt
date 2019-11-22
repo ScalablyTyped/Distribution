@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-linkify"
-version := "0.2-dt-20190403Z-107768"
+version := "1.0-dt-20191120Z-ecc3ff"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

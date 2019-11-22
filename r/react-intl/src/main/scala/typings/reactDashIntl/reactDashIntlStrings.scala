@@ -84,9 +84,6 @@ object reactDashIntlStrings {
   sealed trait datalist extends js.Object
   
   @js.native
-  sealed trait day extends js.Object
-  
-  @js.native
   sealed trait dd extends js.Object
   
   @js.native
@@ -186,9 +183,6 @@ object reactDashIntlStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
-  sealed trait hour extends js.Object
-  
-  @js.native
   sealed trait hr extends js.Object
   
   @js.native
@@ -258,12 +252,6 @@ object reactDashIntlStrings {
   sealed trait meter extends js.Object
   
   @js.native
-  sealed trait minute extends js.Object
-  
-  @js.native
-  sealed trait month extends js.Object
-  
-  @js.native
   sealed trait nav extends js.Object
   
   @js.native
@@ -312,9 +300,6 @@ object reactDashIntlStrings {
   sealed trait q extends js.Object
   
   @js.native
-  sealed trait quarter extends js.Object
-  
-  @js.native
   sealed trait relative extends js.Object
   
   @js.native
@@ -334,9 +319,6 @@ object reactDashIntlStrings {
   
   @js.native
   sealed trait script extends js.Object
-  
-  @js.native
-  sealed trait second extends js.Object
   
   @js.native
   sealed trait section extends js.Object
@@ -441,12 +423,6 @@ object reactDashIntlStrings {
   sealed trait webview extends js.Object
   
   @js.native
-  sealed trait week extends js.Object
-  
-  @js.native
-  sealed trait year extends js.Object
-  
-  @js.native
   sealed trait zero extends js.Object
   
   @scala.inline
@@ -501,8 +477,6 @@ object reactDashIntlStrings {
   def data: data = "data".asInstanceOf[data]
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
@@ -570,8 +544,6 @@ object reactDashIntlStrings {
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
@@ -618,10 +590,6 @@ object reactDashIntlStrings {
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
@@ -654,8 +622,6 @@ object reactDashIntlStrings {
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline
-  def quarter: quarter = "quarter".asInstanceOf[quarter]
-  @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
   def rp: rp = "rp".asInstanceOf[rp]
@@ -669,8 +635,6 @@ object reactDashIntlStrings {
   def samp: samp = "samp".asInstanceOf[samp]
   @scala.inline
   def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
   @scala.inline
   def section: section = "section".asInstanceOf[section]
   @scala.inline
@@ -739,10 +703,6 @@ object reactDashIntlStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline
   def webview: webview = "webview".asInstanceOf[webview]
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
   @scala.inline
   def zero: zero = "zero".asInstanceOf[zero]
 }

@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalElementsMod
 
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.Structure
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliases.Container
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliases.IContainer

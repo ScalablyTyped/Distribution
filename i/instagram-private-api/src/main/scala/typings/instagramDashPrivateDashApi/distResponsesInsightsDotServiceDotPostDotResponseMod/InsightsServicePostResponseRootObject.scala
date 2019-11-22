@@ -1,0 +1,19 @@
+package typings.instagramDashPrivateDashApi.distResponsesInsightsDotServiceDotPostDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait InsightsServicePostResponseRootObject extends js.Object {
+  var data: InsightsServicePostResponseData
+}
+
+object InsightsServicePostResponseRootObject {
+  @scala.inline
+  def apply(data: InsightsServicePostResponseData): InsightsServicePostResponseRootObject = {
+    val __obj = js.Dynamic.literal(data = data)
+  
+    __obj.asInstanceOf[InsightsServicePostResponseRootObject]
+  }
+}
+

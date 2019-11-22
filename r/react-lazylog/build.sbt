@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-lazylog"
-version := "3.1-dt-20180803Z-c9fb14"
+version := "4.4-dt-20191120Z-70ff5f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

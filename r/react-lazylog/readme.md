@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-lazylog
 
-Typings are for version 3.1
+Typings are for version 4.4
 
 ## Library description:
 React Lazy Logviewer

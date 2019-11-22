@@ -1,7 +1,7 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod
 
 import typings.mendixmodelsdk.distCommonMod.common.IErrorCallback
-import typings.mendixmodelsdk.distSdkInternalModelDashServerDashClientMod.IModelServerClient
+import typings.mendixmodelsdk.distSdkInternalIModelServerClientMod.IModelServerClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

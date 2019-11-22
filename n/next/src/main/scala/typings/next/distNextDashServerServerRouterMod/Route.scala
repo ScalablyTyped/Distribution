@@ -10,17 +10,25 @@ import scala.scalajs.js.annotation._
 
 trait Route extends js.Object {
   var `match`: RouteMatch
-  def fn(req: IncomingMessage, res: ServerResponse, params: Params, parsedUrl: UrlWithParsedQuery): Unit
+  var name: String
+  var statusCode: js.UndefOr[Double] = js.undefined
+  var `type`: String
+  def fn(req: IncomingMessage, res: ServerResponse, params: Params, parsedUrl: UrlWithParsedQuery): js.Promise[RouteResult] | RouteResult
 }
 
 object Route {
   @scala.inline
   def apply(
-    fn: (IncomingMessage, ServerResponse, Params, UrlWithParsedQuery) => Unit,
-    `match`: /* pathname */ js.UndefOr[String] => `false` | Params
+    fn: (IncomingMessage, ServerResponse, Params, UrlWithParsedQuery) => js.Promise[RouteResult] | RouteResult,
+    `match`: /* pathname */ js.UndefOr[String] => `false` | Params,
+    name: String,
+    `type`: String,
+    statusCode: Int | Double = null
   ): Route = {
-    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction4(fn))
+    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction4(fn), name = name)
     __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
+    __obj.updateDynamic("type")(`type`)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
 }

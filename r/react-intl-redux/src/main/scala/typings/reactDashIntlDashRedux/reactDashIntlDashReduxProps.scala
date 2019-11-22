@@ -1,6 +1,6 @@
 package typings.reactDashIntlDashRedux
 
-import typings.reactDashIntl.distComponentsProviderMod.OptionalIntlConfig
+import typings.reactDashIntl.reactDashIntlMod.OptionalIntlConfig
 import typings.redux.reduxMod.Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`

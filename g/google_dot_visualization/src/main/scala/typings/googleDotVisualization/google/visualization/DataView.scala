@@ -23,7 +23,7 @@ class DataView protected () extends js.Object {
   def getNumberOfRows(): Double = js.native
   def getProperties(rowIndex: Double, columnIndex: Double): Properties = js.native
   def getProperty(rowIndex: Double, columnIndex: Double, name: String): js.Any = js.native
-  def getRowProperty(rowIndex: Double, name: String): Properties = js.native
+  def getRowProperty(rowIndex: Double, name: String): js.Any = js.native
   def getSortedRows(sortColumn: Double): js.Array[Double] = js.native
   def getSortedRows(sortColumns: js.Array[Double | SortByColumn]): js.Array[Double] = js.native
   def getSortedRows(sortColumn: SortByColumn): js.Array[Double] = js.native

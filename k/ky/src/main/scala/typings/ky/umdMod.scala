@@ -24,6 +24,29 @@ object umdMod extends js.Object {
   @js.native
   object default extends js.Object {
     /**
+    	A `Symbol` that can be returned by a `beforeRetry` hook to stop the retry.
+    	This will also short circuit the remaining `beforeRetry` hooks.
+    	@example
+    	```
+    	import ky from 'ky';
+    	(async () => {
+    		await ky('https://example.com', {
+    			hooks: {
+    				beforeRetry: [
+    					async (request, options, errors, retryCount) => {
+    						const shouldStopRetry = await ky('https://example.com/api');
+    						if (shouldStopRetry) {
+    							return ky.stop;
+    						}
+    					}
+    				]
+    			}
+    		});
+    	})();
+    	```
+    	*/
+    val stop: js.Symbol = js.native
+    /**
     	Fetch the given `url`.
     	@param url - `Request` object, `URL` object, or URL string.
     	@returns A promise with `Body` method added.

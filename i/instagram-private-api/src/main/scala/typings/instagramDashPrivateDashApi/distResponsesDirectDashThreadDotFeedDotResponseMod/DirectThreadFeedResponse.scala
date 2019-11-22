@@ -1,0 +1,20 @@
+package typings.instagramDashPrivateDashApi.distResponsesDirectDashThreadDotFeedDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DirectThreadFeedResponse extends js.Object {
+  var status: String
+  var thread: DirectThreadFeedResponseThread
+}
+
+object DirectThreadFeedResponse {
+  @scala.inline
+  def apply(status: String, thread: DirectThreadFeedResponseThread): DirectThreadFeedResponse = {
+    val __obj = js.Dynamic.literal(status = status, thread = thread)
+  
+    __obj.asInstanceOf[DirectThreadFeedResponse]
+  }
+}
+

@@ -19,7 +19,7 @@ trait Props extends js.Object {
   var customOnKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[typings.std.Element], Unit]] = js.undefined
   var disableAutoFocus: js.UndefOr[Boolean] = js.undefined
   var disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined
-  var disableOverlayClick: js.UndefOr[Boolean] = js.undefined
+  var disableOverlayClick: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
   var htmlClassName: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var isOpen: js.UndefOr[Boolean] = js.undefined
@@ -28,6 +28,7 @@ trait Props extends js.Object {
   var menuClassName: js.UndefOr[String] = js.undefined
   var morphShapeClassName: js.UndefOr[String] = js.undefined
   var noOverlay: js.UndefOr[Boolean] = js.undefined
+  var noTransition: js.UndefOr[Boolean] = js.undefined
   var onStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.undefined
   // TODO (Rajab) This can be improved, though I do not know how. From PropTypes:
   // styles && styles.outerContainer ? PropTypes.string.isRequired : PropTypes.string
@@ -55,7 +56,7 @@ object Props {
     customOnKeyDown: /* event */ KeyboardEvent[typings.std.Element] => Unit = null,
     disableAutoFocus: js.UndefOr[Boolean] = js.undefined,
     disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
-    disableOverlayClick: js.UndefOr[Boolean] = js.undefined,
+    disableOverlayClick: Boolean | js.Function0[Boolean] = null,
     htmlClassName: String = null,
     id: String = null,
     isOpen: js.UndefOr[Boolean] = js.undefined,
@@ -64,6 +65,7 @@ object Props {
     menuClassName: String = null,
     morphShapeClassName: String = null,
     noOverlay: js.UndefOr[Boolean] = js.undefined,
+    noTransition: js.UndefOr[Boolean] = js.undefined,
     onStateChange: /* state */ State => Unit = null,
     outerContainerId: String = null,
     overlayClassName: String = null,
@@ -84,7 +86,7 @@ object Props {
     if (customOnKeyDown != null) __obj.updateDynamic("customOnKeyDown")(js.Any.fromFunction1(customOnKeyDown))
     if (!js.isUndefined(disableAutoFocus)) __obj.updateDynamic("disableAutoFocus")(disableAutoFocus)
     if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc)
-    if (!js.isUndefined(disableOverlayClick)) __obj.updateDynamic("disableOverlayClick")(disableOverlayClick)
+    if (disableOverlayClick != null) __obj.updateDynamic("disableOverlayClick")(disableOverlayClick.asInstanceOf[js.Any])
     if (htmlClassName != null) __obj.updateDynamic("htmlClassName")(htmlClassName)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
@@ -93,6 +95,7 @@ object Props {
     if (menuClassName != null) __obj.updateDynamic("menuClassName")(menuClassName)
     if (morphShapeClassName != null) __obj.updateDynamic("morphShapeClassName")(morphShapeClassName)
     if (!js.isUndefined(noOverlay)) __obj.updateDynamic("noOverlay")(noOverlay)
+    if (!js.isUndefined(noTransition)) __obj.updateDynamic("noTransition")(noTransition)
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (outerContainerId != null) __obj.updateDynamic("outerContainerId")(outerContainerId)
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)

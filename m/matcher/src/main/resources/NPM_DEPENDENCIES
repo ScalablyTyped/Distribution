@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "matcher" : "2.0.0"
+      "matcher" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "matcher" : "2.0.0"
+      "matcher" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

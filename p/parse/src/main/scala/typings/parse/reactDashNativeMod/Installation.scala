@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse/react-native", "Installation")
 @js.native
-class Installation ()
-  extends typings.parse.Parse.Installation
+class Installation[T /* <: js.Any */] ()
+  extends typings.parse.Parse.Installation[T]
 

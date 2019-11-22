@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.distGenJavaactionsMod.javaactions.IJavaActionParam
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
-import typings.mendixmodelsdk.distSdkInternalMod.Element
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.JavaActionParameterMapping")
 @js.native
-class JavaActionParameterMapping protected () extends Element {
+class JavaActionParameterMapping protected () extends CodeActionParameterMapping {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,9 +27,6 @@ class JavaActionParameterMapping protected () extends Element {
     * In version 6.7.0: deleted
     */
   var argument: String = js.native
-  val containerAsJavaActionCallAction: JavaActionCallAction = js.native
-  @JSName("model")
-  var model_JavaActionParameterMapping: IModel = js.native
   var parameter: IJavaActionParameter = js.native
   val parameterQualifiedName: String = js.native
   /**

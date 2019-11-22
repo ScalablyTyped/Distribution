@@ -7,9 +7,7 @@ import typings.next.distNextDashServerLibMittMod.MittEmitter
 import typings.next.distNextDashServerLibRouterRouterMod.NextRouter
 import typings.next.distNextDashServerLibUtilsMod.NextComponentType
 import typings.node.querystringMod.ParsedUrlQuery
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.Context
+import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +26,11 @@ object routerMod extends js.Object {
     ) = this()
   }
   
-  val RouterContext: Context[NextRouter] = js.native
   val default: SingletonRouter = js.native
   def createRouter(pathname: String, query: ParsedUrlQuery, as: String, __3: Anon_AppComponent): typings.next.distNextDashServerLibRouterRouterMod.default = js.native
   def makePublicRouterInstance(router: typings.next.distNextDashServerLibRouterRouterMod.default): NextRouter = js.native
   def useRouter(): NextRouter = js.native
-  def withRouter[P /* <: WithRouterProps */, C](ComposedComponent: NextComponentType[C, _, P]): ComponentClass[ExcludeRouterProps[P], ComponentState] = js.native
+  def withRouter[P /* <: WithRouterProps */, C](ComposedComponent: NextComponentType[C, _, P]): ComponentType[ExcludeRouterProps[P]] = js.native
   /* static members */
   @js.native
   object Router extends js.Object {

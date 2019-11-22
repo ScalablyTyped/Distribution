@@ -15,7 +15,7 @@ trait WidgetInterface extends js.Object {
     * @param name Name of controller to instantiate.
     * @param args Arguments to pass to the controller
     */
-  def createController(name: String): AlloyController = js.native
-  def createController(name: String, args: js.Any): AlloyController = js.native
+  def createController(name: String): js.Any = js.native
+  def createController(name: String, args: js.Any): js.Any = js.native
 }
 

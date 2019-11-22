@@ -74,8 +74,8 @@ import typings.mendixmodelsdk.distGenWebservicesMod.webservices.IPublishedServic
 import typings.mendixmodelsdk.distGenWebservicesMod.webservices.IPublishedWebService
 import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.IMxSchema
 import typings.mendixmodelsdk.distGenXmlschemasMod.xmlschemas.IXmlSchema
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.IAbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -84,7 +84,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distGenBaseDashModelMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.IAbstractModel because Already inherited
+  - typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel because Already inherited
   - typings.mendixmodelsdk.distGenBaseDashModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findSnippetByQualifiedName, findRegularExpressionByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findXmlSchemaByQualifiedName */ @js.native
   abstract class BaseModel () extends AbstractModel {
     def allBuildingBlocks(): js.Array[IBuildingBlock] = js.native

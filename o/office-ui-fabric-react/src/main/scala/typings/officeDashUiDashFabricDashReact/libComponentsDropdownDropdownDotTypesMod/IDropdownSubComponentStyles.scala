@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait IDropdownSubComponentStyles extends js.Object {
   /** Refers to the primary label for the Dropdown. */
   var label: IStyleFunctionOrObject[ILabelStyleProps, _]
-  /** Refers to the the individual dropdown item when the multiSelect prop is true. */
+  /** Refers to the individual dropdown item when the multiSelect prop is true. */
   var multiSelectItem: IStyleFunctionOrObject[ICheckboxStyleProps, _]
   /** Refers to the panel that hosts the Dropdown options in small viewports. */
   var panel: IStyleFunctionOrObject[IPanelStyleProps, _]

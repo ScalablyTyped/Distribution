@@ -17,9 +17,9 @@ class default[P] () extends Document[P]
 @JSImport("next/dist/pages/_document", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var bodyTagsMiddleware: js.Any = js.native
-  var headTagsMiddleware: js.Any = js.native
-  var htmlPropsMiddleware: js.Any = js.native
+  var bodyTagsMiddleware: js.Promise[_] | js.Function0[js.Array[scala.Nothing]] = js.native
+  var headTagsMiddleware: js.Promise[_] | js.Function0[js.Array[scala.Nothing]] = js.native
+  var htmlPropsMiddleware: js.Promise[_] | js.Function0[js.Array[scala.Nothing]] = js.native
   /**
     * `getInitialProps` hook returns the context object with the addition of `renderPage`.
     * `renderPage` callback executes `React` rendering logic synchronously to support server-rendering wrappers

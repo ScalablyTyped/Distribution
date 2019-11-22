@@ -20,6 +20,7 @@ trait Entry extends js.Object {
   var longitude: js.UndefOr[Double] = js.undefined
   var provider: js.UndefOr[String] = js.undefined
   var state: js.UndefOr[String] = js.undefined
+  var stateCode: js.UndefOr[String] = js.undefined
   var streetName: js.UndefOr[String] = js.undefined
   var streetNumber: js.UndefOr[String] = js.undefined
   var zipcode: js.UndefOr[String] = js.undefined
@@ -41,6 +42,7 @@ object Entry {
     longitude: Int | Double = null,
     provider: String = null,
     state: String = null,
+    stateCode: String = null,
     streetName: String = null,
     streetNumber: String = null,
     zipcode: String = null
@@ -59,6 +61,7 @@ object Entry {
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(provider)
     if (state != null) __obj.updateDynamic("state")(state)
+    if (stateCode != null) __obj.updateDynamic("stateCode")(stateCode)
     if (streetName != null) __obj.updateDynamic("streetName")(streetName)
     if (streetNumber != null) __obj.updateDynamic("streetNumber")(streetNumber)
     if (zipcode != null) __obj.updateDynamic("zipcode")(zipcode)

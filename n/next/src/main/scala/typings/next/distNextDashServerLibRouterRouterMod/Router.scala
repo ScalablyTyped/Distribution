@@ -18,7 +18,7 @@ trait Router extends BaseRouter {
     */
   var components: StringDictionary[RouteInfo] = js.native
   var events: MittEmitter = js.native
-  var historyId: Double = js.native
+  var isSsr: Boolean = js.native
   var pageLoader: js.Any = js.native
   var sub: Subscription = js.native
   def _wrapApp(App: ComponentType[js.Object]): js.Any = js.native

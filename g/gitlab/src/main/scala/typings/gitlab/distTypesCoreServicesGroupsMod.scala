@@ -5,6 +5,7 @@ import typings.gitlab.distTypesCoreInfrastructureRequestHelperMod.BaseRequestOpt
 import typings.gitlab.distTypesCoreInfrastructureRequestHelperMod.GetResponse
 import typings.gitlab.distTypesCoreInfrastructureRequestHelperMod.PaginatedRequestOptions
 import typings.gitlab.distTypesCoreInfrastructureRequestHelperMod.Sudo
+import typings.gitlab.distTypesCoreServicesProjectsMod.ProjectSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +27,10 @@ object distTypesCoreServicesGroupsMod extends js.Object {
     def edit(groupId: String, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     def edit(groupId: Double): js.Promise[js.Object] = js.native
     def edit(groupId: Double, options: BaseRequestOptions): js.Promise[js.Object] = js.native
+    def projects(groupId: String): js.Promise[js.Array[ProjectSchema]] = js.native
+    def projects(groupId: String, options: BaseRequestOptions): js.Promise[js.Array[ProjectSchema]] = js.native
+    def projects(groupId: Double): js.Promise[js.Array[ProjectSchema]] = js.native
+    def projects(groupId: Double, options: BaseRequestOptions): js.Promise[js.Array[ProjectSchema]] = js.native
     def remove(groupId: String): js.Promise[js.Object] = js.native
     def remove(groupId: String, options: Sudo): js.Promise[js.Object] = js.native
     def remove(groupId: Double): js.Promise[js.Object] = js.native

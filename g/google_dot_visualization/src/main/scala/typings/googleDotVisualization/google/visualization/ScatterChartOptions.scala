@@ -1,5 +1,7 @@
 package typings.googleDotVisualization.google.visualization
 
+import org.scalablytyped.runtime.NumberDictionary
+import typings.googleDotVisualization.googleDotVisualizationStrings.function
 import typings.googleDotVisualization.googleDotVisualizationStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,13 +11,12 @@ trait ScatterChartOptions extends js.Object {
   var aggregationTarget: js.UndefOr[String] = js.undefined
   var animation: js.UndefOr[TransitionAnimation] = js.undefined
   var annotations: js.UndefOr[ChartAnnotations] = js.undefined
-  var axisTitlesPosition: js.UndefOr[String] = js.undefined
-   // in, out, none
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var chartArea: js.UndefOr[ChartArea] = js.undefined
   var colors: js.UndefOr[js.Array[String]] = js.undefined
   var crosshair: js.UndefOr[ChartCrosshair] = js.undefined
-  var curveType: js.UndefOr[String] = js.undefined
+  var curveType: js.UndefOr[none | function] = js.undefined
   var dataOpacity: js.UndefOr[Double] = js.undefined
   var enableInteractivity: js.UndefOr[Boolean] = js.undefined
   var explorer: js.UndefOr[ChartExplorer] = js.undefined
@@ -26,14 +27,18 @@ trait ScatterChartOptions extends js.Object {
   var height: js.UndefOr[Double] = js.undefined
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
+  var orientation: js.UndefOr[ChartOrientation] = js.undefined
+  var pointShape: js.UndefOr[ChartPointShape] = js.undefined
   var pointSize: js.UndefOr[Double] = js.undefined
-  var selectionMode: js.UndefOr[String] = js.undefined
+  var pointsVisible: js.UndefOr[Boolean] = js.undefined
+  var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   var series: js.UndefOr[js.Any] = js.undefined
   var theme: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var titlePosition: js.UndefOr[String] = js.undefined
   var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
   var tooltip: js.UndefOr[ChartTooltip] = js.undefined
+  var trendlines: js.UndefOr[NumberDictionary[ChartTrendlineOptions]] = js.undefined
   var vAxis: js.UndefOr[ChartAxis] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -44,12 +49,12 @@ object ScatterChartOptions {
     aggregationTarget: String = null,
     animation: TransitionAnimation = null,
     annotations: ChartAnnotations = null,
-    axisTitlesPosition: String = null,
-    backgroundColor: js.Any = null,
+    axisTitlesPosition: ChartAxisTitlesPosition = null,
+    backgroundColor: String | ChartStrokeFill = null,
     chartArea: ChartArea = null,
     colors: js.Array[String] = null,
     crosshair: ChartCrosshair = null,
-    curveType: String = null,
+    curveType: none | function = null,
     dataOpacity: Int | Double = null,
     enableInteractivity: js.UndefOr[Boolean] = js.undefined,
     explorer: ChartExplorer = null,
@@ -60,14 +65,18 @@ object ScatterChartOptions {
     height: Int | Double = null,
     legend: ChartLegend | none = null,
     lineWidth: Int | Double = null,
+    orientation: ChartOrientation = null,
+    pointShape: ChartPointShape = null,
     pointSize: Int | Double = null,
-    selectionMode: String = null,
+    pointsVisible: js.UndefOr[Boolean] = js.undefined,
+    selectionMode: ChartSelectionMode = null,
     series: js.Any = null,
     theme: String = null,
     title: String = null,
     titlePosition: String = null,
     titleTextStyle: ChartTextStyle = null,
     tooltip: ChartTooltip = null,
+    trendlines: NumberDictionary[ChartTrendlineOptions] = null,
     vAxis: ChartAxis = null,
     width: Int | Double = null
   ): ScatterChartOptions = {
@@ -76,11 +85,11 @@ object ScatterChartOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair)
-    if (curveType != null) __obj.updateDynamic("curveType")(curveType)
+    if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
     if (dataOpacity != null) __obj.updateDynamic("dataOpacity")(dataOpacity.asInstanceOf[js.Any])
     if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity)
     if (explorer != null) __obj.updateDynamic("explorer")(explorer)
@@ -91,7 +100,10 @@ object ScatterChartOptions {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape)
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible)
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
     if (series != null) __obj.updateDynamic("series")(series)
     if (theme != null) __obj.updateDynamic("theme")(theme)
@@ -99,6 +111,7 @@ object ScatterChartOptions {
     if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition)
     if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (trendlines != null) __obj.updateDynamic("trendlines")(trendlines)
     if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScatterChartOptions]

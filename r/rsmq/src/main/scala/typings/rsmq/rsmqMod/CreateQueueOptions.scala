@@ -1,0 +1,48 @@
+package typings.rsmq.rsmqMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait CreateQueueOptions extends BaseOptions {
+  /**
+  		 * *(Default: 0)*
+  		 * The time in seconds that the delivery of all new messages in the queue will be delayed.
+  		 * Allowed values: 0-9999999 (around 115 days)
+  		 *
+  		 * @type {number}
+  		 * @memberof CreateQueueOptions
+  		 */
+  var delay: js.UndefOr[Double] = js.undefined
+  /**
+  		 * *(Default: 65536)*
+  		 * The maximum message size in bytes.
+  		 * Allowed values: 1024-65536 and -1 (for unlimited size)
+  		 *
+  		 * @type {number}
+  		 * @memberof CreateQueueOptions
+  		 */
+  var maxsize: js.UndefOr[Double] = js.undefined
+  /**
+  		 * *(Default: 30)*
+  		 * The length of time, in seconds, that a message received from a queue will
+  		 * be invisible to other receiving components when they ask to receive messages.
+  		 * Allowed values: 0-9999999 (around 115 days)
+  		 *
+  		 * @type {number}
+  		 * @memberof CreateQueueOptions
+  		 */
+  var vt: js.UndefOr[Double] = js.undefined
+}
+
+object CreateQueueOptions {
+  @scala.inline
+  def apply(qname: String, delay: Int | Double = null, maxsize: Int | Double = null, vt: Int | Double = null): CreateQueueOptions = {
+    val __obj = js.Dynamic.literal(qname = qname)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (maxsize != null) __obj.updateDynamic("maxsize")(maxsize.asInstanceOf[js.Any])
+    if (vt != null) __obj.updateDynamic("vt")(vt.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateQueueOptions]
+  }
+}
+

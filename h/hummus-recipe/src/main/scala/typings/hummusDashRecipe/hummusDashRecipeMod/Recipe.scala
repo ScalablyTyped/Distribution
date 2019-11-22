@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Recipe extends js.Object {
+  val metadata: Metadata = js.native
   def annot(x: Double, y: Double, subtype: AnnotSubtype): Recipe = js.native
   def annot(x: Double, y: Double, subtype: AnnotSubtype, options: AnnotOptions): Recipe = js.native
   def appendPage(pdfSrc: String, pages: js.Array[Double]): Recipe = js.native

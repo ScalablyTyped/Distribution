@@ -1,14 +1,14 @@
 package typings.expressDashSession.expressDashSessionMod
 
-import typings.express.expressMod.CookieOptions
 import typings.express.expressMod.Request
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.expressDashSession.Anon_Auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SessionOptions extends js.Object {
-  var cookie: js.UndefOr[CookieOptions] = js.undefined
+  var cookie: js.UndefOr[Anon_Auto] = js.undefined
   var genid: js.UndefOr[js.Function1[/* req */ Request[ParamsDictionary], String]] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var proxy: js.UndefOr[Boolean] = js.undefined
@@ -24,7 +24,7 @@ object SessionOptions {
   @scala.inline
   def apply(
     secret: String | js.Array[String],
-    cookie: CookieOptions = null,
+    cookie: Anon_Auto = null,
     genid: /* req */ Request[ParamsDictionary] => String = null,
     name: String = null,
     proxy: js.UndefOr[Boolean] = js.undefined,

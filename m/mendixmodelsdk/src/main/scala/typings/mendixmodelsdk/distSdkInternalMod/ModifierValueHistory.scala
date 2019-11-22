@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalMod
 
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.IModifierValueHistory
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.IModifierValueHistory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/sdk/internal", "ModifierValueHistory")
 @js.native
 class ModifierValueHistory protected ()
-  extends typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.ModifierValueHistory {
+  extends typings.mendixmodelsdk.distSdkInternalVersionChecksMod.ModifierValueHistory {
   def this(lifecycle: js.UndefOr[scala.Nothing], defaultFallback: Boolean) = this()
   def this(lifecycle: Null, defaultFallback: Boolean) = this()
   /**

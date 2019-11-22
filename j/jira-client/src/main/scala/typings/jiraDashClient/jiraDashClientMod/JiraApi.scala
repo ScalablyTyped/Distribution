@@ -205,6 +205,7 @@ trait JiraApi extends js.Object {
   def updateComment(issueId: String, commentId: String, comment: String): js.Promise[JsonResponse] = js.native
   def updateComment(issueId: String, commentId: String, comment: String, options: js.Any): js.Promise[JsonResponse] = js.native
   def updateIssue(issueId: String, issueUpdate: IssueObject): js.Promise[JsonResponse] = js.native
+  def updateIssue(issueId: String, issueUpdate: IssueObject, query: Query): js.Promise[JsonResponse] = js.native
   def updateVersion(version: String): js.Promise[JsonResponse] = js.native
   def upsertFieldOption(fieldKey: String, optionId: String, option: FieldOptionObject): js.Promise[JsonResponse] = js.native
 }

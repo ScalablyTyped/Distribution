@@ -12,7 +12,7 @@ trait InfiniteLoaderProps extends js.Object {
   var threshold: js.UndefOr[Double] = js.undefined
   def children(props: Anon_OnItemsRendered): ReactNode
   def isItemLoaded(index: Double): Boolean
-  def loadMoreItems(startIndex: Double, stopIndex: Double): js.Promise[_]
+  def loadMoreItems(startIndex: Double, stopIndex: Double): js.Promise[_] | Null
 }
 
 object InfiniteLoaderProps {
@@ -21,7 +21,7 @@ object InfiniteLoaderProps {
     children: Anon_OnItemsRendered => ReactNode,
     isItemLoaded: Double => Boolean,
     itemCount: Double,
-    loadMoreItems: (Double, Double) => js.Promise[_],
+    loadMoreItems: (Double, Double) => js.Promise[_] | Null,
     minimumBatchSize: Int | Double = null,
     threshold: Int | Double = null
   ): InfiniteLoaderProps = {

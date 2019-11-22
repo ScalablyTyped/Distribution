@@ -158,6 +158,8 @@ class Editor ()
   var flip_FEditor: Fn_Controller = js.native
   @JSName("focus")
   var focus_FEditor: Fn_Controller = js.native
+  var hasCommand: js.Function1[/* type */ String, Boolean] = js.native
+  var hasQuery: js.Function1[/* type */ String, Boolean] = js.native
   var insertBlock: Fn_Block = js.native
   var insertBlockAtRange: Fn_BlockRange = js.native
   var insertFragment: Fn_Fragment = js.native

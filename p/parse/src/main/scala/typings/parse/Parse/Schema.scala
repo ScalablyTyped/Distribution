@@ -134,8 +134,8 @@ object Schema extends js.Object {
     - js.Array[js.Any]
     - js.Object
     - typings.parse.Parse.Pointer
-    - typings.parse.Parse.Relation[typings.parse.Parse.Object, typings.parse.Parse.Object]
+    - typings.parse.Parse.Relation[typings.parse.Parse.Object[js.Any], typings.parse.Parse.Object[js.Any]]
   */
-  type TYPE = _TYPE | js.Array[js.Any] | (Relation[Object, Object]) | String | Double | Boolean | Date | js.Object
+  type TYPE = _TYPE | js.Array[js.Any] | (Relation[Object[js.Any], Object[js.Any]]) | String | Double | Boolean | Date | js.Object
 }
 

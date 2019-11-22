@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-maps"
-version := "0.24-dt-20190519Z-033a76"
+version := "0.24-dt-20190519Z-1d8ee8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191028Z-c727db",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191121Z-2e5baf",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

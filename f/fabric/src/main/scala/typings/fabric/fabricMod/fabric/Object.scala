@@ -17,14 +17,14 @@ class Object ()
 @js.native
 object Object extends js.Object {
   /**
-    * Creates fabric Object instance
-    * @param {string} Class name
-    * @param {fabric.Object} Original object
-    * @param {Function} Callback when complete
-    * @param {Object} Extra parameters for fabric.Object
-    * @private
-    * @return {fabric.Object}
-    */
+  	 * Creates fabric Object instance
+  	 * @param {string} Class name
+  	 * @param {fabric.Object} Original object
+  	 * @param {Function} Callback when complete
+  	 * @param {Object} Extra parameters for fabric.Object
+  	 * @private
+  	 * @return {fabric.Object}
+  	 */
   def _fromObject(className: String, `object`: typings.fabric.fabricDashImplMod.Object): typings.fabric.fabricDashImplMod.Object = js.native
   def _fromObject(className: String, `object`: typings.fabric.fabricDashImplMod.Object, callback: js.Function): typings.fabric.fabricDashImplMod.Object = js.native
   def _fromObject(

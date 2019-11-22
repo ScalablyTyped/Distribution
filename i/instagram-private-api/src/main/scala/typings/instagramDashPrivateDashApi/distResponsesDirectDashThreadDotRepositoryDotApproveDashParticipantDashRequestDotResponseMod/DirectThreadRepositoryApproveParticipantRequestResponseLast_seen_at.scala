@@ -1,0 +1,8 @@
+package typings.instagramDashPrivateDashApi.distResponsesDirectDashThreadDotRepositoryDotApproveDashParticipantDashRequestDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DirectThreadRepositoryApproveParticipantRequestResponseLast_seen_at extends js.Object
+

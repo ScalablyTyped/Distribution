@@ -16,7 +16,7 @@ trait HTTPOptions extends js.Object {
     * You can also set this to a Buffer object to send raw bytes.
     * If you use a Buffer, you should also set the Content-Type header explicitly to describe what these bytes represent.
     */
-  var body: js.UndefOr[String | Buffer | Object] = js.undefined
+  var body: js.UndefOr[String | Buffer | Object[_]] = js.undefined
   var error: js.UndefOr[js.Function1[/* response */ js.Any, Unit]] = js.undefined
   /**
     * Defaults to 'false'.

@@ -10,7 +10,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(wordpress),List(media-utils, utils)) [id => @wordpress/media-utils, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/wordpress__media-utils/utils/upload-media.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/wordpress__media-utils),TsIdentLibraryScoped(wordpress,Some(media-utils))),TsIdentModule(Some(wordpress),List(media-utils, utils, upload-media))) [id => @wordpress/media-utils, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(wordpress),List(media-utils, utils, upload-media)) [id => @wordpress/media-utils, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibraryScoped(wordpress,Some(media-utils)) [id => @wordpress/media-utils, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibraryScoped(wordpress,Some(media-utils)) [id => @wordpress/media-utils, phase => typescript] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => @wordpress/media-utils, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@wordpress/media-utils/components) / TsDeclNamespace(MediaUpload))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(uploadMedia) [id => @wordpress/media-utils, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@wordpress/media-utils))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => @wordpress/media-utils, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@wordpress/media-utils) / TsDeclNamespace(MediaUpload))] 

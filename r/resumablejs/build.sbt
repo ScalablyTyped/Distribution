@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "resumablejs"
-version := "v1.0.2-dt-20190322Z-fc654f"
+version := "1.1.0-fa029b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

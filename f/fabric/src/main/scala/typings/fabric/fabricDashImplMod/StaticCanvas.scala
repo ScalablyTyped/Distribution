@@ -180,8 +180,8 @@ class StaticCanvas protected ()
   	 * @deprecated since 1.2.2
   	 * @param {String|Object} json JSON string or object
   	 * @param {Function} callback Callback, invoked when json is parsed
-  	 *                            and corresponding objects (e.g: {@link fabric.Image})
-  	 *                            are initialized
+  	 *							and corresponding objects (e.g: {@link fabric.Image})
+  	 *							are initialized
   	 * @param {Function} [reviver] Method for further parsing of JSON elements, called after each fabric object created.
   	 * @return {fabric.Canvas} instance
   	 * @chainable
@@ -194,8 +194,8 @@ class StaticCanvas protected ()
   	 * JSON format must conform to the one of {@link fabric.Canvas#toJSON}
   	 * @param {String|Object} json JSON string or object
   	 * @param {Function} callback Callback, invoked when json is parsed
-  	 *                            and corresponding objects (e.g: {@link fabric.Image})
-  	 *                            are initialized
+  	 *							and corresponding objects (e.g: {@link fabric.Image})
+  	 *							are initialized
   	 * @param {Function} [reviver] Method for further parsing of JSON elements, called after each fabric object created.
   	 * @return {fabric.Canvas} instance
   	 */
@@ -293,8 +293,8 @@ class StaticCanvas protected ()
   def setBackgroundImage(image: Image, callback: js.Function, options: IImageOptions): Canvas = js.native
   /**
   	 * Sets dimensions (width, height) of this canvas instance. when options.cssOnly flag active you should also supply the unit of measure (px/%/em)
-  	 * @param        dimensions                    Object with width/height properties
-  	 * @param        [options]                     Options object
+  	 * @param		dimensions					Object with width/height properties
+  	 * @param		[options]					 Options object
   	 * @return {fabric.Canvas} thisArg
   	 * @chainable
   	 */
@@ -304,8 +304,8 @@ class StaticCanvas protected ()
   def setHeight(value: String, options: ICanvasDimensionsOptions): Canvas = js.native
   /**
   	 * Sets height of this canvas instance
-  	 * @param value                         Value to set height to
-  	 * @param        [options]                     Options object
+  	 * @param value						 Value to set height to
+  	 * @param		[options]					 Options object
   	 * @return {fabric.Canvas} instance
   	 * @chainable true
   	 */
@@ -343,8 +343,8 @@ class StaticCanvas protected ()
   def setWidth(value: String, options: ICanvasDimensionsOptions): Canvas = js.native
   /**
   	 * Sets width of this canvas instance
-  	 * @param {Number|String} value                         Value to set width to
-  	 * @param {Object}        [options]                     Options object
+  	 * @param {Number|String} value						 Value to set width to
+  	 * @param {Object}		[options]					 Options object
   	 * @return {fabric.Canvas} instance
   	 * @chainable true
   	 */
@@ -385,10 +385,10 @@ class StaticCanvas protected ()
   def toDatalessObject(): js.Any = js.native
   def toDatalessObject(propertiesToInclude: js.Array[String]): js.Any = js.native
   /**
-    * Returns JSON representation of canvas
-    * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
-    * @return {String} JSON string
-    */
+  	 * Returns JSON representation of canvas
+  	 * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
+  	 * @return {String} JSON string
+  	 */
   def toJSON(): String = js.native
   def toJSON(propertiesToInclude: js.Array[String]): String = js.native
   /**
@@ -453,9 +453,9 @@ object StaticCanvas extends js.Object {
   	 * (either those of HTMLCanvasElement itself, or rendering context)
   	 *
   	 * @param {String} methodName Method to check support for;
-  	 *                            Could be one of "setLineDash"
+  	 *							Could be one of "setLineDash"
   	 * @return {Boolean | null} `true` if method is supported (or at least exists),
-  	 *                          `null` if canvas element or context can not be initialized
+  	 *						  `null` if canvas element or context can not be initialized
   	 */
   @JSName("supports")
   def supports_getImageData(methodName: getImageData): Boolean = js.native

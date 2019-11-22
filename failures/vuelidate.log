@@ -9,7 +9,7 @@
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vue.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vue))) [id => vuelidate, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate/vuelidate.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/vuelidate),TsIdentLibrarySimple(vuelidate)),TsIdentModule(None,List(vuelidate, vuelidate))) [id => vuelidate, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(vuelidate, vuelidate)) [id => vuelidate, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(vuelidate) [id => vuelidate, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibrarySimple(vuelidate) [id => vuelidate, phase => typescript] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(required) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(requiredIf) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators))] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(requiredUnless) [id => vuelidate, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(vuelidate/lib/validators))] 

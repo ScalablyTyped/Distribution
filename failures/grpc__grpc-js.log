@@ -70,7 +70,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(grpc),List(grpc-js, build, src, status-builder)) [id => @grpc/grpc-js, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/@grpc/grpc-js/build/src/subchannel.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/@grpc/grpc-js),TsIdentLibraryScoped(grpc,Some(grpc-js))),TsIdentModule(Some(grpc),List(grpc-js, build, src, subchannel))) [id => @grpc/grpc-js, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(grpc),List(grpc-js, build, src, subchannel)) [id => @grpc/grpc-js, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibraryScoped(grpc,Some(grpc-js)) [id => @grpc/grpc-js, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibraryScoped(grpc,Some(grpc-js)) [id => @grpc/grpc-js, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(generateMetadata) [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/call-credentials) / TsDeclClass(CallCredentials))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(compose) [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/call-credentials) / TsDeclClass(CallCredentials))] 
 [info ] ExpandTypeParams.scala:61 Expanding 1 members for TsIdentSimple(_equals) [id => @grpc/grpc-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@grpc/grpc-js/build/src/call-credentials) / TsDeclClass(CallCredentials))] 

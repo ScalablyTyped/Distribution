@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalMod
 
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.IAbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/sdk/internal", "UndoManager")
 @js.native
 class UndoManager protected ()
-  extends typings.mendixmodelsdk.distSdkInternalUndoDashManagerMod.UndoManager {
+  extends typings.mendixmodelsdk.distSdkInternalUndoManagerMod.UndoManager {
   def this(_model: IAbstractModel) = this()
 }
 

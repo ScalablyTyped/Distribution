@@ -170,6 +170,9 @@ object chartDotJsStrings {
   sealed trait easeOutSine extends Easing
   
   @js.native
+  sealed trait end extends js.Object
+  
+  @js.native
   sealed trait flex extends js.Object
   
   @js.native
@@ -281,6 +284,9 @@ object chartDotJsStrings {
   
   @js.native
   sealed trait star extends PointStyle
+  
+  @js.native
+  sealed trait start extends js.Object
   
   @js.native
   sealed trait time extends ScaleType
@@ -412,6 +418,8 @@ object chartDotJsStrings {
   @scala.inline
   def easeOutSine: easeOutSine = "easeOutSine".asInstanceOf[easeOutSine]
   @scala.inline
+  def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   @scala.inline
   def horizontalBar: horizontalBar = "horizontalBar".asInstanceOf[horizontalBar]
@@ -481,6 +489,8 @@ object chartDotJsStrings {
   def square: square = "square".asInstanceOf[square]
   @scala.inline
   def star: star = "star".asInstanceOf[star]
+  @scala.inline
+  def start: start = "start".asInstanceOf[start]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline

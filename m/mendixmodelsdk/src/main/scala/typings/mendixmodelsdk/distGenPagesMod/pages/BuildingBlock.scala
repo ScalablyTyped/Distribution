@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.IFormBase because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.ITemplateFormBase because Already inherited
-- typings.mendixmodelsdk.distGenPagesMod.pages.IBuildingBlock because var conflicts: displayName, documentationUrl, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BuildingBlock")
+- typings.mendixmodelsdk.distGenPagesMod.pages.IBuildingBlock because var conflicts: displayName, documentationUrl, id, isLoaded, model, structureTypeName, unit. Inlined platform */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BuildingBlock")
 @js.native
 class BuildingBlock protected () extends TemplateFormBase {
   def this(
@@ -34,6 +34,7 @@ class BuildingBlock protected () extends TemplateFormBase {
     container: IFolderBase
   ) = this()
   /**
+    * In version 8.4.0: added public
     * In version 8.3.0: introduced
     */
   var platform: SnippetType = js.native

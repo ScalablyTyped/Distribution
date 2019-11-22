@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.distGenRestMod.rest
 import typings.mendixmodelsdk.distGenConstantsMod.constants.IConstant
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.RemoteEntitySourceDocument
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.HttpConfiguration
+import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.distGenMicroflowsMod.microflows.RequestProxyType
 import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenRestMod.StructureVersionInfo
@@ -42,6 +43,11 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   val entities: IList[ODataEntity] = js.native
+  /**
+    * In version 8.4.0: introduced
+    */
+  var headersMicroflow: IMicroflow | Null = js.native
+  val headersMicroflowQualifiedName: String | Null = js.native
   /**
     * In version 8.0.0: introduced
     */

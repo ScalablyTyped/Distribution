@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-burger-menu"
-version := "2.2-dt-20190424Z-50d531"
+version := "2.6-dt-20191118Z-ea2e3e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

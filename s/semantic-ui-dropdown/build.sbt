@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-dropdown"
-version := "2.2-dt-20180214Z-689a8a"
+version := "2.2-dt-20191120Z-20cb82"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

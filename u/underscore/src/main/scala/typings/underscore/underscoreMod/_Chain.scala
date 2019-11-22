@@ -779,15 +779,15 @@ trait _Chain[T, V] extends js.Object {
     * Wrapped type `any[]`.
     * @see _.sortBy
     **/
-  def sortBy(): _Chain[T, T] = js.native
+  def sortBy(): _Chain[T, js.Array[T]] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.sortBy
     **/
-  def sortBy(iterator: String): _Chain[T, T] = js.native
-  def sortBy(iterator: String, context: js.Any): _Chain[T, T] = js.native
-  def sortBy(iterator: ListIterator[T, _]): _Chain[T, T] = js.native
-  def sortBy(iterator: ListIterator[T, _], context: js.Any): _Chain[T, T] = js.native
+  def sortBy(iterator: String): _Chain[T, js.Array[T]] = js.native
+  def sortBy(iterator: String, context: js.Any): _Chain[T, js.Array[T]] = js.native
+  def sortBy(iterator: ListIterator[T, _]): _Chain[T, js.Array[T]] = js.native
+  def sortBy(iterator: ListIterator[T, _], context: js.Any): _Chain[T, js.Array[T]] = js.native
   /**
     * Wrapped type `any[]`.
     * @see _.sortedIndex

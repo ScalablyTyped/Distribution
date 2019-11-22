@@ -10,6 +10,7 @@ trait Anon_EyeOffset extends js.Object {
   var eyeOffset: js.UndefOr[Property] = js.undefined
   var fillColor: js.UndefOr[Color] = js.undefined
   var font: js.UndefOr[String] = js.undefined
+  var heightReference: js.UndefOr[Property] = js.undefined
   var horizontalOrigin: js.UndefOr[Property] = js.undefined
   var outlineColor: js.UndefOr[Color] = js.undefined
   var outlineWidth: js.UndefOr[Double] = js.undefined
@@ -29,6 +30,7 @@ object Anon_EyeOffset {
     eyeOffset: Property = null,
     fillColor: Color = null,
     font: String = null,
+    heightReference: Property = null,
     horizontalOrigin: Property = null,
     outlineColor: Color = null,
     outlineWidth: Int | Double = null,
@@ -45,6 +47,7 @@ object Anon_EyeOffset {
     if (eyeOffset != null) __obj.updateDynamic("eyeOffset")(eyeOffset)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (font != null) __obj.updateDynamic("font")(font)
+    if (heightReference != null) __obj.updateDynamic("heightReference")(heightReference)
     if (horizontalOrigin != null) __obj.updateDynamic("horizontalOrigin")(horizontalOrigin)
     if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
     if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])

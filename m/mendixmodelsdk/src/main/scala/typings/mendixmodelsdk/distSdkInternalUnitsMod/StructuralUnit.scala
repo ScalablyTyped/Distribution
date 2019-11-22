@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalUnitsMod
 
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.aliases.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`

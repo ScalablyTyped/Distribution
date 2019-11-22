@@ -12,18 +12,18 @@ package object kyMod {
   import typings.std.URL
 
   type AfterResponseHook = js.Function3[
-    /* input */ Input, 
+    /* request */ Request, 
     /* options */ NormalizedOptions, 
     /* response */ Response, 
     Response | Unit | (js.Promise[Response | Unit])
   ]
   type BeforeRequestHook = js.Function2[
-    /* input */ Input, 
+    /* request */ Request, 
     /* options */ NormalizedOptions, 
-    Response | Unit | (js.Promise[Response | Unit])
+    Request | Response | Unit | (js.Promise[Request | Response | Unit])
   ]
   type BeforeRetryHook = js.Function4[
-    /* input */ Input, 
+    /* request */ Request, 
     /* options */ NormalizedOptions, 
     /* error */ Error, 
     /* retryCount */ Double, 

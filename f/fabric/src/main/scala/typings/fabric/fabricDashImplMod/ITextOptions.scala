@@ -59,8 +59,8 @@ trait ITextOptions extends TextOptions {
   	 */
   var editingBorderColor: js.UndefOr[String] = js.undefined
   /**
-    * Exposes underlying hidden text area
-    */
+  	 * Exposes underlying hidden text area
+  	 */
   var hiddenTextarea: js.UndefOr[HTMLTextAreaElement] = js.undefined
   /**
   	 * Helps determining when the text is in composition, so that the cursor
@@ -86,9 +86,9 @@ trait ITextOptions extends TextOptions {
   var keysMap: js.UndefOr[js.Any] = js.undefined
   var path: js.UndefOr[String] = js.undefined
   /**
-    * Indicates whether text is selected
-    * @type Boolean
-    */
+  	 * Indicates whether text is selected
+  	 * @type Boolean
+  	 */
   var selected: js.UndefOr[Boolean] = js.undefined
   /**
   	 * Color of text selection

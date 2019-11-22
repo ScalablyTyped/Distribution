@@ -158,6 +158,13 @@ trait IUtilMisc extends js.Object {
   	 */
   def removeFromArray(array: js.Array[_], value: js.Any): js.Array[_] = js.native
   /**
+  	 * reset an object transform state to neutral. Top and left are not accounted for
+  	 * @static
+  	 * @memberOf fabric.util
+  	 * @param  {fabric.Object} target object to transform
+  	 */
+  def resetObjectTransform(target: Object): Unit = js.native
+  /**
   	 * Returns object of given namespace
   	 * @param namespace Namespace string e.g. 'fabric.Image.filter' or 'fabric'
   	 */
@@ -176,10 +183,10 @@ trait IUtilMisc extends js.Object {
   	 */
   def rotateVector(vector: Anon_X, radians: Double): Anon_X = js.native
   /**
-    * Extract Object transform values
-    * @param  {fabric.Object} target object to read from
-    * @return {Object} Components of transform
-    */
+  	 * Extract Object transform values
+  	 * @param  {fabric.Object} target object to read from
+  	 * @return {Object} Components of transform
+  	 */
   def saveObjectTransform(target: Object): Anon_AngleFlipX = js.native
   /**
   	 * A wrapper around Number#toFixed, which contrary to native method returns number, not string.

@@ -1,6 +1,7 @@
 package typings.chartDotJs.chartDotJsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.chartDotJs.Anon_DisableCSSInjection
 import typings.chartDotJs.Anon_Global
 import typings.chartDotJs.TypeofClassChart
 import typings.std.ArrayLike
@@ -28,6 +29,7 @@ object ^ extends js.Object {
   var controllers: StringDictionary[js.Any] = js.native
   var defaults: Anon_Global = js.native
   var helpers: StringDictionary[js.Any] = js.native
+  var platform: Anon_DisableCSSInjection = js.native
   var pluginService: PluginServiceStatic = js.native
   var plugins: PluginServiceStatic = js.native
 }

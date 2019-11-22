@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalMod
 
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.IAbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

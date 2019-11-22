@@ -19,7 +19,7 @@ trait PushData extends js.Object {
   var push_time: js.UndefOr[Date] = js.undefined
   var sound: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
-  var where: js.UndefOr[Query[Installation]] = js.undefined
+  var where: js.UndefOr[Query[Installation[_]]] = js.undefined
 }
 
 object PushData {
@@ -36,7 +36,7 @@ object PushData {
     push_time: Date = null,
     sound: String = null,
     title: String = null,
-    where: Query[Installation] = null
+    where: Query[Installation[_]] = null
   ): PushData = {
     val __obj = js.Dynamic.literal()
     if (alert != null) __obj.updateDynamic("alert")(alert)

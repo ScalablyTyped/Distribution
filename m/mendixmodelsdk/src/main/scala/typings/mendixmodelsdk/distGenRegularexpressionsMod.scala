@@ -6,8 +6,8 @@ import typings.mendixmodelsdk.distGenProjectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.distGenRegularexpressionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenRegularexpressionsMod.regularexpressions.RegularExpression
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.IStructureVersionInfo
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.StructureType
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.IStructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

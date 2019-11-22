@@ -10,5 +10,11 @@ import scala.scalajs.js.annotation._
   * In version 7.7.0: introduced
   */
 @js.native
-trait IBuildingBlock extends ITemplateFormBase
+trait IBuildingBlock extends ITemplateFormBase {
+  /**
+    * In version 8.4.0: added public
+    * In version 8.3.0: introduced
+    */
+  val platform: SnippetType = js.native
+}
 

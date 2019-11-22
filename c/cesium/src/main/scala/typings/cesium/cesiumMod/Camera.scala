@@ -64,6 +64,7 @@ class Camera protected () extends js.Object {
   def look(axis: Cartesian3, angle: Double): Unit = js.native
   def lookAt(target: Cartesian3, offset: Cartesian3): Unit = js.native
   def lookAt(target: Cartesian3, offset: HeadingPitchRange): Unit = js.native
+  def lookAtTransform(transform: Matrix4): Unit = js.native
   def lookAtTransform(transform: Matrix4, offset: Cartesian3): Unit = js.native
   def lookAtTransform(transform: Matrix4, offset: HeadingPitchRange): Unit = js.native
   def lookDown(): Unit = js.native

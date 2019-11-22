@@ -26,7 +26,7 @@ trait Mark extends js.Object {
     * @param options Optional options
     */
   def markRanges(ranges: js.Array[Range]): Unit = js.native
-  def markRanges(ranges: js.Array[Range], options: MarkOptions): Unit = js.native
+  def markRanges(ranges: js.Array[Range], options: MarkRangesOptions): Unit = js.native
   /**
     * highlight custom regular expressions.
     * @param regexp The regular expression to be marked. Example: /Lor[^]?m/gmi.

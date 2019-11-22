@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
   - typings.atGoogleDashCloudFirestore.atGoogleDashCloudFirestoreStrings.`>=`
   - typings.atGoogleDashCloudFirestore.atGoogleDashCloudFirestoreStrings.`>`
   - typings.atGoogleDashCloudFirestore.atGoogleDashCloudFirestoreStrings.`array-contains`
+  - typings.atGoogleDashCloudFirestore.atGoogleDashCloudFirestoreStrings.in
+  - typings.atGoogleDashCloudFirestore.atGoogleDashCloudFirestoreStrings.`array-contains-any`
 */
 trait WhereFilterOp extends js.Object
 

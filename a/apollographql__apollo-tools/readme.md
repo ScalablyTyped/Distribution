@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollographql__apollo-tools
 
-Typings are for version 0.4.0
+Typings are for version 0.4.1
 
 
 

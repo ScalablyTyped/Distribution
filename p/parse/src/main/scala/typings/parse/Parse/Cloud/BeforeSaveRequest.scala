@@ -17,12 +17,12 @@ object BeforeSaveRequest {
     headers: js.Any,
     ip: String,
     log: js.Any,
-    `object`: Object,
+    `object`: Object[_],
     triggerName: String,
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,
-    original: Object = null,
-    user: User = null
+    original: Object[_] = null,
+    user: User[_] = null
   ): BeforeSaveRequest = {
     val __obj = js.Dynamic.literal(context = context, headers = headers, ip = ip, log = log, triggerName = triggerName)
     __obj.updateDynamic("object")(`object`)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postmark" : "2.3.2"
+      "postmark" : "2.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "postmark" : "2.3.2"
+      "postmark" : "2.3.4"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-terminal
 
-Typings are for version 1.0.5
+Typings are for version 1.1.0
 
 ## Library description:
 Terminal utils for NodeJS

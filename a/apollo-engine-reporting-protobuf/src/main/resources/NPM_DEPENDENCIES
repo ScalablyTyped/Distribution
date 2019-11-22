@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-engine-reporting-protobuf" : "0.4.1"
+      "apollo-engine-reporting-protobuf" : "0.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-engine-reporting-protobuf" : "0.4.1"
+      "apollo-engine-reporting-protobuf" : "0.4.4"
     }
   ],
   "compile-devDependencies" : [

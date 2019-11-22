@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ClientRequestArgs extends js.Object {
   var _defaultAgent: js.UndefOr[Agent] = js.undefined
   var agent: js.UndefOr[Agent | Boolean] = js.undefined
-  var auth: js.UndefOr[java.lang.String] = js.undefined
+  var auth: js.UndefOr[java.lang.String | Null] = js.undefined
   // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L278
   var createConnection: js.UndefOr[
     js.Function2[
@@ -21,13 +21,13 @@ trait ClientRequestArgs extends js.Object {
   var defaultPort: js.UndefOr[Double | java.lang.String] = js.undefined
   var family: js.UndefOr[Double] = js.undefined
   var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
-  var host: js.UndefOr[java.lang.String] = js.undefined
-  var hostname: js.UndefOr[java.lang.String] = js.undefined
+  var host: js.UndefOr[java.lang.String | Null] = js.undefined
+  var hostname: js.UndefOr[java.lang.String | Null] = js.undefined
   var localAddress: js.UndefOr[java.lang.String] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
-  var path: js.UndefOr[java.lang.String] = js.undefined
-  var port: js.UndefOr[Double | java.lang.String] = js.undefined
-  var protocol: js.UndefOr[java.lang.String] = js.undefined
+  var path: js.UndefOr[java.lang.String | Null] = js.undefined
+  var port: js.UndefOr[Double | java.lang.String | Null] = js.undefined
+  var protocol: js.UndefOr[java.lang.String | Null] = js.undefined
   var setHost: js.UndefOr[Boolean] = js.undefined
   var socketPath: js.UndefOr[java.lang.String] = js.undefined
   var timeout: js.UndefOr[Double] = js.undefined

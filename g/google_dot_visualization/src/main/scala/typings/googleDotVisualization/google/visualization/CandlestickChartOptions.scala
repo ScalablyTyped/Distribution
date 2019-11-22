@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait CandlestickChartOptions extends js.Object {
   var aggregationTarget: js.UndefOr[String] = js.undefined
   var animation: js.UndefOr[TransitionAnimation] = js.undefined
-  var axisTitlesPosition: js.UndefOr[String] = js.undefined
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var bar: js.UndefOr[GroupWidth] = js.undefined
   var candlestick: js.UndefOr[Candlestick] = js.undefined
   var chartArea: js.UndefOr[ChartArea] = js.undefined
@@ -21,10 +21,9 @@ trait CandlestickChartOptions extends js.Object {
   var hAxis: js.UndefOr[ChartAxis] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
+  var orientation: js.UndefOr[ChartOrientation] = js.undefined
   var reverseCategories: js.UndefOr[Boolean] = js.undefined
-  var selectionMode: js.UndefOr[String] = js.undefined
-  // single / multiple
+  var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   var series: js.UndefOr[js.Any] = js.undefined
   var theme: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -41,8 +40,8 @@ object CandlestickChartOptions {
   def apply(
     aggregationTarget: String = null,
     animation: TransitionAnimation = null,
-    axisTitlesPosition: String = null,
-    backgroundColor: js.Any = null,
+    axisTitlesPosition: ChartAxisTitlesPosition = null,
+    backgroundColor: String | ChartStrokeFill = null,
     bar: GroupWidth = null,
     candlestick: Candlestick = null,
     chartArea: ChartArea = null,
@@ -54,9 +53,9 @@ object CandlestickChartOptions {
     hAxis: ChartAxis = null,
     height: Int | Double = null,
     legend: ChartLegend | none = null,
-    orientation: String = null,
+    orientation: ChartOrientation = null,
     reverseCategories: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: String = null,
+    selectionMode: ChartSelectionMode = null,
     series: js.Any = null,
     theme: String = null,
     title: String = null,
@@ -71,7 +70,7 @@ object CandlestickChartOptions {
     if (aggregationTarget != null) __obj.updateDynamic("aggregationTarget")(aggregationTarget)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bar != null) __obj.updateDynamic("bar")(bar)
     if (candlestick != null) __obj.updateDynamic("candlestick")(candlestick)
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea)

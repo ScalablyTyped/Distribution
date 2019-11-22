@@ -17,9 +17,15 @@ object gitlabNumbers {
        with typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
   
   @js.native
+  sealed trait `3` extends js.Object
+  
+  @js.native
   sealed trait `30`
     extends AccessLevel
        with typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
+  
+  @js.native
+  sealed trait `4` extends js.Object
   
   @js.native
   sealed trait `40`
@@ -39,7 +45,11 @@ object gitlabNumbers {
   @scala.inline
   def `20`: `20` = 20.asInstanceOf[`20`]
   @scala.inline
+  def `3`: `3` = 3.asInstanceOf[`3`]
+  @scala.inline
   def `30`: `30` = 30.asInstanceOf[`30`]
+  @scala.inline
+  def `4`: `4` = 4.asInstanceOf[`4`]
   @scala.inline
   def `40`: `40` = 40.asInstanceOf[`40`]
   @scala.inline

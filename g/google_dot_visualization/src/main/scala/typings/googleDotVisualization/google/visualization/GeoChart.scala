@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeoChart () extends ChartBase {
   def draw(data: DataTable, options: GeoChartOptions): Unit = js.native
+  def draw(data: DataView, options: GeoChartOptions): Unit = js.native
 }
 

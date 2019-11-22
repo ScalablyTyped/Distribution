@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => x-ray, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/x-ray/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/x-ray),TsIdentLibrarySimple(x-ray)),TsIdentModule(None,List(x-ray))) [id => x-ray, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(x-ray)) [id => x-ray, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:184 Processing TsIdentLibrarySimple(x-ray) [id => x-ray, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:185 Processing TsIdentLibrarySimple(x-ray) [id => x-ray, phase => typescript] 
 [info ] ExpandTypeParams.scala:74 Expanding 1 members for TsIdentSimple(^) [id => x-ray, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(x-ray))] 
 [info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => x-ray, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(x-ray) / TsDeclInterface(Instance))] 
 [info ] ExpandTypeParams.scala:53 Expanding 1 call members [id => x-ray, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(x-ray) / TsDeclInterface(Instance))] 

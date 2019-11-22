@@ -19,28 +19,46 @@ object intlDashMessageformatDashParserStrings {
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait few extends _ValidPluralRule
+  sealed trait few
+    extends _ValidPluralRule
+       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
+       with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
   sealed trait literal extends js.Object
   
   @js.native
-  sealed trait many extends _ValidPluralRule
+  sealed trait many
+    extends _ValidPluralRule
+       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
+       with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
-  sealed trait one extends _ValidPluralRule
+  sealed trait one
+    extends _ValidPluralRule
+       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
+       with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
   sealed trait ordinal extends js.Object
   
   @js.native
-  sealed trait other extends _ValidPluralRule
+  sealed trait other
+    extends _ValidPluralRule
+       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
+       with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
-  sealed trait two extends _ValidPluralRule
+  sealed trait two
+    extends _ValidPluralRule
+       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
+       with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
-  sealed trait zero extends _ValidPluralRule
+  sealed trait zero
+    extends _ValidPluralRule
+       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
+       with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @scala.inline
   def any: any = "any".asInstanceOf[any]

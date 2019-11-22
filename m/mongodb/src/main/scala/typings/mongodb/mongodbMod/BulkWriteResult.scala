@@ -14,8 +14,8 @@ trait BulkWriteResult extends js.Object {
   def getInsertedIds(): js.Array[js.Object]
   def getLastOp(): js.Object
   def getRawResponse(): js.Object
-  def getUpsertedIdAt(index: scala.Double): js.Object
-  def getUpsertedIds(): js.Array[js.Object]
+  def getUpsertedIdAt(index: scala.Double): BulkWriteResultUpsertedIdObject
+  def getUpsertedIds(): js.Array[BulkWriteResultUpsertedIdObject]
   def getWriteConcernError(): WriteConcernError
   def getWriteErrorAt(index: scala.Double): WriteError
   def getWriteErrorCount(): scala.Double
@@ -29,8 +29,8 @@ object BulkWriteResult {
     getInsertedIds: () => js.Array[js.Object],
     getLastOp: () => js.Object,
     getRawResponse: () => js.Object,
-    getUpsertedIdAt: scala.Double => js.Object,
-    getUpsertedIds: () => js.Array[js.Object],
+    getUpsertedIdAt: scala.Double => BulkWriteResultUpsertedIdObject,
+    getUpsertedIds: () => js.Array[BulkWriteResultUpsertedIdObject],
     getWriteConcernError: () => WriteConcernError,
     getWriteErrorAt: scala.Double => WriteError,
     getWriteErrorCount: () => scala.Double,

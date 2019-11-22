@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sql-template-strings" : "2.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sql-template-strings" : "2.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

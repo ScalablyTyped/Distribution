@@ -5,20 +5,18 @@ import typings.mendixmodelsdk.distGenJavascriptactionsMod.javascriptactions.IJav
 import typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.distSdkInternalMod.AbstractModel
-import typings.mendixmodelsdk.distSdkInternalMod.Element
 import typings.mendixmodelsdk.distSdkInternalMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
+  * In version 8.4.0: removed experimental
   * In version 7.21.0: introduced
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.JavaScriptActionParameterMapping")
 @js.native
-class JavaScriptActionParameterMapping protected () extends Element {
+class JavaScriptActionParameterMapping protected () extends CodeActionParameterMapping {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -27,9 +25,6 @@ class JavaScriptActionParameterMapping protected () extends Element {
     unit: ModelUnit,
     container: AbstractElement
   ) = this()
-  val containerAsJavaScriptActionCallAction: JavaScriptActionCallAction = js.native
-  @JSName("model")
-  var model_JavaScriptActionParameterMapping: IModel = js.native
   var parameter: IJavaScriptActionParameter = js.native
   val parameterQualifiedName: String = js.native
   var parameterValue: CodeActionParameterValue = js.native

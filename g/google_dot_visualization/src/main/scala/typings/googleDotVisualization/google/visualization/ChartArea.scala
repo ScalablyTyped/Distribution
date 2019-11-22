@@ -1,12 +1,11 @@
 package typings.googleDotVisualization.google.visualization
 
-import typings.googleDotVisualization.Anon_Stroke
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartArea extends js.Object {
-  var backgroundColor: js.UndefOr[String | Anon_Stroke] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var bottom: js.UndefOr[Double | String] = js.undefined
   var height: js.UndefOr[Double | String] = js.undefined
   var left: js.UndefOr[Double | String] = js.undefined
@@ -18,7 +17,7 @@ trait ChartArea extends js.Object {
 object ChartArea {
   @scala.inline
   def apply(
-    backgroundColor: String | Anon_Stroke = null,
+    backgroundColor: String | ChartStrokeFill = null,
     bottom: Double | String = null,
     height: Double | String = null,
     left: Double | String = null,

@@ -72,6 +72,9 @@ object nextStrings {
   sealed trait replace extends js.Object
   
   @js.native
+  sealed trait `routes-manifestDOTjson` extends js.Object
+  
+  @js.native
   sealed trait runtime extends js.Object
   
   @js.native
@@ -133,6 +136,8 @@ object nextStrings {
   def reload: reload = "reload".asInstanceOf[reload]
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
+  def `routes-manifestDOTjson`: `routes-manifestDOTjson` = "routes-manifest.json".asInstanceOf[`routes-manifestDOTjson`]
   @scala.inline
   def runtime: runtime = "runtime".asInstanceOf[runtime]
   @scala.inline

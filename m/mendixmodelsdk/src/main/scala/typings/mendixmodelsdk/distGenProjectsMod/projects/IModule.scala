@@ -4,7 +4,7 @@ import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenDomainmodelsMod.domainmodels.IDomainModel
 import typings.mendixmodelsdk.distGenSecurityMod.security.IModuleSecurity
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
-import typings.mendixmodelsdk.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty
+import typings.mendixmodelsdk.distSdkInternalPropertiesAbstractPropertyMod.AbstractProperty
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IAbstractUnit
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IStructuralUnit
 import scala.scalajs.js

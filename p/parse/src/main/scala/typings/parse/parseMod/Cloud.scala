@@ -46,7 +46,7 @@ object Cloud extends js.Object {
     arg1: js.Any,
     func: js.Function1[
       /* request */ BeforeFindRequest, 
-      (js.Promise[typings.parse.Parse.Query[typings.parse.Parse.Object] | Unit]) | typings.parse.Parse.Query[typings.parse.Parse.Object] | Unit
+      (js.Promise[typings.parse.Parse.Query[typings.parse.Parse.Object[_]] | Unit]) | typings.parse.Parse.Query[typings.parse.Parse.Object[_]] | Unit
     ]
   ): Unit = js.native
   def beforeLogin(): Unit = js.native
@@ -60,12 +60,12 @@ object Cloud extends js.Object {
     * @param jobStatusId The Id of Job Status.
     * @returns Status of Job.
     */
-  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.Parse.Object] = js.native
+  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.Parse.Object[_]] = js.native
   /**
     * Gets data for the current set of cloud jobs.
     * @returns A promise that will be resolved with the result of the function.
     */
-  def getJobsData(): js.Promise[typings.parse.Parse.Object] = js.native
+  def getJobsData(): js.Promise[typings.parse.Parse.Object[_]] = js.native
   def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = js.native
   def job(name: String): HttpResponse = js.native
   def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native

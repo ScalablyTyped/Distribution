@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/sdk/internal", "VersionInfo")
 @js.native
 abstract class VersionInfo ()
-  extends typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.VersionInfo
+  extends typings.mendixmodelsdk.distSdkInternalVersionChecksMod.VersionInfo
 

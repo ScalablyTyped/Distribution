@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "downshift"
-version := "3.4.1-438732"
+version := "3.4.2-2ed857"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-apps-script"
-version := "1.0-dt-20191112Z-81f01a"
+version := "1.0-dt-20191119Z-944dc8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

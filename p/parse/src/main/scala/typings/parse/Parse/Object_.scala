@@ -1,12 +1,13 @@
 package typings.parse.Parse
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.parse.Parse.Object.DestroyOptions
 import typings.parse.Parse.Object.FetchOptions
 import typings.parse.Parse.Object.SaveOptions
 import typings.parse.Parse.Object.SetOptions
 import typings.parse.parseNumbers.`false`
 import typings.std.Date
+import typings.std.Exclude
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,12 +39,11 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.Object")
 @js.native
-class Object_ () extends BaseObject {
-  def this(attributes: js.Array[String]) = this()
+class Object_[T /* <: js.Any */] () extends BaseObject {
   def this(className: String) = this()
-  def this(attributes: js.Array[String], options: js.Any) = this()
-  def this(className: String, options: js.Any) = this()
-  var attributes: js.Any = js.native
+  def this(className: String, attributes: T) = this()
+  def this(className: String, attributes: T, options: js.Any) = this()
+  var attributes: T = js.native
   var changed: Boolean = js.native
   var cid: String = js.native
   var className: String = js.native
@@ -72,7 +72,7 @@ class Object_ () extends BaseObject {
   def fetchWithInclude(keys: String, options: RequestOptions): js.Promise[this.type] = js.native
   def fetchWithInclude(keys: js.Array[String | js.Array[String]]): js.Promise[this.type] = js.native
   def fetchWithInclude(keys: js.Array[String | js.Array[String]], options: RequestOptions): js.Promise[this.type] = js.native
-  def get(attr: String): js.UndefOr[js.Any] = js.native
+  def get[K /* <: Exclude[String, js.Symbol | Double] */](attr: K): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native
   def getACL(): js.UndefOr[ACL] = js.native
   def has(attr: String): Boolean = js.native
   def hasChanged(attr: String): Boolean = js.native
@@ -87,23 +87,29 @@ class Object_ () extends BaseObject {
   def pinWithName(name: String): js.Promise[Unit] = js.native
   def previous(attr: String): js.Any = js.native
   def previousAttributes(): js.Any = js.native
-  def relation(attr: String): Relation[this.type, Object] = js.native
+  def relation(attr: String): Relation[this.type, Object[_]] = js.native
   def remove(attr: String, item: js.Any): this.type | `false` = js.native
   def removeAll(attr: String, items: js.Any): this.type | `false` = js.native
   def revert(): Unit = js.native
   def revert(keys: String*): Unit = js.native
   def save(): js.Promise[this.type] = js.native
-  def save(attrs: js.Object): js.Promise[this.type] = js.native
-  def save(attrs: js.Object, options: SaveOptions): js.Promise[this.type] = js.native
-  def save(attrs: StringDictionary[js.Any]): js.Promise[this.type] = js.native
-  def save(attrs: StringDictionary[js.Any], options: SaveOptions): js.Promise[this.type] = js.native
   def save(attrs: Null, options: SaveOptions): js.Promise[this.type] = js.native
-  def save(key: String, value: js.Any): js.Promise[this.type] = js.native
-  def save(key: String, value: js.Any, options: SaveOptions): js.Promise[this.type] = js.native
-  def set(attrs: js.Object): this.type | `false` = js.native
-  def set(attrs: js.Object, options: SetOptions): this.type | `false` = js.native
-  def set(key: String, value: js.Any): this.type | `false` = js.native
-  def set(key: String, value: js.Any, options: SetOptions): this.type | `false` = js.native
+  def save(attrs: Partial[T]): js.Promise[this.type] = js.native
+  def save(attrs: Partial[T], options: SaveOptions): js.Promise[this.type] = js.native
+  def save[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): js.Promise[this.type] = js.native
+  def save[K /* <: String */](
+    key: K,
+    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any,
+    options: SaveOptions
+  ): js.Promise[this.type] = js.native
+  def set(attrs: Partial[T]): this.type | `false` = js.native
+  def set(attrs: Partial[T], options: SetOptions): this.type | `false` = js.native
+  def set[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type | `false` = js.native
+  def set[K /* <: String */](
+    key: K,
+    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any,
+    options: SetOptions
+  ): this.type | `false` = js.native
   def setACL(acl: ACL): this.type | `false` = js.native
   def setACL(acl: ACL, options: SuccessFailureOptions): this.type | `false` = js.native
   def toPointer(): Pointer = js.native

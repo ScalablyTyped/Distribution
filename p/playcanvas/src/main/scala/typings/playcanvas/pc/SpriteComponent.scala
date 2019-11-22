@@ -22,6 +22,8 @@ import scala.scalajs.js.annotation._
   * @property {Number} frame The frame counter of the sprite. Specifies which frame from the current sprite asset to render.
   * @property {Number} spriteAsset The id of the sprite asset to render. Only works for {@link pc.SPRITETYPE_SIMPLE} types.
   * @property {pc.Sprite} sprite The current sprite.
+  * @property {Number} width The width of the sprite when rendering using 9-Slicing. The width and height are only used when the render mode of the sprite asset is Sliced or Tiled.
+  * @property {Number} height The height of the sprite when rendering using 9-Slicing. The width and height are only used when the render mode of the sprite asset is Sliced or Tiled.
   * @property {pc.Color} color The color tint of the sprite.
   * @property {Number} opacity The opacity of the sprite.
   * @property {Boolean} flipX Flip the X axis when rendering a sprite.
@@ -75,6 +77,10 @@ class SpriteComponent protected () extends Component {
     */
   var frame: Double = js.native
   /**
+    * The height of the sprite when rendering using 9-Slicing. The width and height are only used when the render mode of the sprite asset is Sliced or Tiled.
+    */
+  var height: Double = js.native
+  /**
     * An array of layer IDs ({@link pc.Layer#id}) to which this sprite should belong.
     */
   var layers: js.Array[Number] = js.native
@@ -102,6 +108,10 @@ class SpriteComponent protected () extends Component {
     * </ul>
     */
   var `type`: String = js.native
+  /**
+    * The width of the sprite when rendering using 9-Slicing. The width and height are only used when the render mode of the sprite asset is Sliced or Tiled.
+    */
+  var width: Double = js.native
   /**
     * @function
     * @name pc.SpriteComponent#addClip

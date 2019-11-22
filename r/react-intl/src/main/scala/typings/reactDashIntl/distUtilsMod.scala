@@ -1,7 +1,8 @@
 package typings.reactDashIntl
 
-import typings.atFormatjsIntlDashRelativetimeformat.distCoreMod.IntlRelativeTimeFormatOptions
+import typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.IntlRelativeTimeFormatOptions
 import typings.reactDashIntl.distTypesMod.CustomFormats
+import typings.reactDashIntl.distTypesMod.Formatters
 import typings.reactDashIntl.distTypesMod.IntlCache
 import typings.reactDashIntl.distTypesMod.IntlConfig
 import typings.reactDashIntl.reactDashIntlStrings.defaultFormats
@@ -31,8 +32,8 @@ object distUtilsMod extends js.Object {
   ] = js.native
   def createError(message: String): String = js.native
   def createError(message: String, exception: Error): String = js.native
-  def createFormatters(): Anon_Args = js.native
-  def createFormatters(cache: IntlCache): Anon_Args = js.native
+  def createFormatters(): Formatters = js.native
+  def createFormatters(cache: IntlCache): Formatters = js.native
   def createIntlCache(): IntlCache = js.native
   def defaultErrorHandler(error: String): Unit = js.native
   def escape(str: String): String = js.native

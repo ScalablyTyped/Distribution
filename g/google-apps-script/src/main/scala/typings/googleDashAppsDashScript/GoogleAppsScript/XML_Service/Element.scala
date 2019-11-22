@@ -27,11 +27,11 @@ import scala.scalajs.js.annotation._
   *     Logger.log(xml);
   */
 @js.native
-trait Element extends js.Object {
+trait Element
+  extends typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content {
   def addContent(content: typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content): Element = js.native
   def addContent(index: Integer, content: typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content): Element = js.native
   def cloneContent(): js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content] = js.native
-  def detach(): typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content = js.native
   def getAllContent(): js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.XML_Service.Content] = js.native
   def getAttribute(name: String): Attribute = js.native
   def getAttribute(name: String, namespace: Namespace): Attribute = js.native
@@ -50,10 +50,8 @@ trait Element extends js.Object {
   def getName(): String = js.native
   def getNamespace(): Namespace = js.native
   def getNamespace(prefix: String): Namespace = js.native
-  def getParentElement(): Element = js.native
   def getQualifiedName(): String = js.native
   def getText(): String = js.native
-  def getValue(): String = js.native
   def isAncestorOf(other: Element): Boolean = js.native
   def isRootElement(): Boolean = js.native
   def removeAttribute(attributeName: String): Boolean = js.native

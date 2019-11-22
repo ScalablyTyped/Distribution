@@ -76,7 +76,7 @@ trait IListProps[T] extends HTMLAttributes[List[T] | HTMLDivElement] {
   var onPagesUpdated: js.UndefOr[js.Function1[/* pages */ js.Array[IPage[T]], Unit]] = js.undefined
   /**
     * Method to call when trying to render an item.
-    * @param item - The the data associated with the cell that is being rendered.
+    * @param item - The data associated with the cell that is being rendered.
     * @param index - The index of the cell being rendered.
     * @param isScrolling - True if the list is being scrolled. May be useful for rendering a placeholder if your cells are complex.
     */

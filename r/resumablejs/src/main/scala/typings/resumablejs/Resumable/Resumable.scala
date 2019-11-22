@@ -19,7 +19,6 @@ import typings.resumablejs.resumablejsStrings.progress
 import typings.resumablejs.resumablejsStrings.uploadStart
 import typings.std.DragEvent
 import typings.std.Element
-import typings.std.Event
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,8 +28,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Resumable protected () extends js.Object {
   def this(options: ConfigurationHash) = this()
-  var defaults: ConfigurationHash = js.native
-  var events: js.Array[Event] = js.native
+  var events: js.Array[_] = js.native
   /**
     * An array of ResumableFile file objects added by the user (see full docs for this object type below).
     **/
@@ -44,10 +42,15 @@ class Resumable protected () extends js.Object {
     **/
   var support: Boolean = js.native
   var version: Double = js.native
+  var void: js.Any = js.native
   /**
     * Add a HTML5 File object to the list of files.
     **/
-  def addFile(file: File, event: Event): Unit = js.native
+  def addFile(file: File): Unit = js.native
+  /**
+    * Add an Array of HTML5 File objects to the list of files.
+    **/
+  def addFiles(files: js.Array[File]): Unit = js.native
   def assignBrowse(domNodes: js.Array[Element], isDirectory: Boolean): Unit = js.native
   /**
     * Assign a browse action to one or more DOM nodes. Pass in true to allow directories to be selected (Chrome only).
@@ -66,25 +69,17 @@ class Resumable protected () extends js.Object {
   /**
     * Look up a ResumableFile object by its unique identifier.
     **/
-  def getFromUniqueIdentifier(uniqueIdentifier: String): ResumableFile = js.native
+  def getFromUniqueIdentifier(uniqueIdentifier: String): Unit = js.native
   def getOpt(o: String): js.Any = js.native
   /**
     * Returns the total size of the upload in bytes.
     **/
-  def getSize(): Double = js.native
-  // Events
-  /**
-  	 * Change event handler
-  	 **/
-  def handleChangeEvent(e: Event): Unit = js.native
-  /**
-  	 * Drop event handler
-  	 **/
-  def handleDropEvent(e: Event): Unit = js.native
+  def getSize(): Unit = js.native
   /**
     * Returns a boolean indicating whether or not the instance is currently uploading anything.
     **/
   def isUploading(): Boolean = js.native
+  // Events
   /**
     * Listen for event from Resumable.js (see below)
     **/
@@ -103,7 +98,7 @@ class Resumable protected () extends js.Object {
     * Listen to all the events listed above with the same callback function.
     **/
   @JSName("on")
-  def on_catchAll(event: catchAll, callback: js.Function0[Unit]): Unit = js.native
+  def on_catchAll(event: catchAll, callback: js.Function0[Unit]): js.Any = js.native
   /**
     *  File is ready for upload
     **/
@@ -115,7 +110,7 @@ class Resumable protected () extends js.Object {
   @JSName("on")
   def on_chunkingProgress(
     event: chunkingProgress,
-    callback: js.Function2[/* file */ ResumableFile, /* ratio */ Double, Unit]
+    callback: js.Function2[/* file */ ResumableFile, /* ratio */ js.Any, Unit]
   ): Unit = js.native
   /**
     *  Started preparing file for upload
@@ -156,7 +151,7 @@ class Resumable protected () extends js.Object {
     *  A specific file was completed.
     **/
   @JSName("on")
-  def on_fileSuccess(event: fileSuccess, callback: js.Function1[/* file */ ResumableFile, Unit]): Unit = js.native
+  def on_fileSuccess(event: fileSuccess, callback: js.Function1[/* file */ ResumableFile, Unit]): js.Any = js.native
   /**
     *  New files were added.
     **/

@@ -5,17 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Candlestick extends js.Object {
-  var fallingColor: js.UndefOr[ChartStroke] = js.undefined
+  var fallingColor: js.UndefOr[ChartStrokeFill] = js.undefined
   var hollowIsRising: js.UndefOr[Boolean] = js.undefined
-  var risingColor: js.UndefOr[ChartStroke] = js.undefined
+  var risingColor: js.UndefOr[ChartStrokeFill] = js.undefined
 }
 
 object Candlestick {
   @scala.inline
   def apply(
-    fallingColor: ChartStroke = null,
+    fallingColor: ChartStrokeFill = null,
     hollowIsRising: js.UndefOr[Boolean] = js.undefined,
-    risingColor: ChartStroke = null
+    risingColor: ChartStrokeFill = null
   ): Candlestick = {
     val __obj = js.Dynamic.literal()
     if (fallingColor != null) __obj.updateDynamic("fallingColor")(fallingColor)

@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mendixmodelsdkMod
 
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.ILifeCycle
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.ILifeCycle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

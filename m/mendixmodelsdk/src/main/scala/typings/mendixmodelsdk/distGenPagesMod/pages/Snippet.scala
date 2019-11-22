@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.distGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.distGenPagesMod.pages.IFormBase because Already inherited
-- typings.mendixmodelsdk.distGenPagesMod.pages.ISnippet because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Snippet")
+- typings.mendixmodelsdk.distGenPagesMod.pages.ISnippet because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName, `type` */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Snippet")
 @js.native
 class Snippet protected () extends FormBase {
   def this(
@@ -34,6 +34,7 @@ class Snippet protected () extends FormBase {
   var entity: IEntity | Null = js.native
   val entityQualifiedName: Null | String = js.native
   /**
+    * In version 8.4.0: added public
     * In version 8.0.0: introduced
     */
   var `type`: SnippetType = js.native

@@ -15,7 +15,7 @@ package object wouterMod {
 
   type DefaultParams = StringDictionary[String]
   type LinkProps = (Omit[AnchorHTMLAttributes[HTMLAnchorElement], href]) with NavigationalProps
-  type LocationHook = js.Function0[LocationTuple]
+  type LocationHook = js.Function1[/* options */ js.UndefOr[LocationHookOptions], LocationTuple]
   type LocationTuple = js.Tuple2[Path, PushCallback]
   type Match[T /* <: DefaultParams */] = MatchWithParams[T] | NoMatch
   type MatchWithParams[T /* <: DefaultParams */] = js.Tuple2[`true`, Params[T]]

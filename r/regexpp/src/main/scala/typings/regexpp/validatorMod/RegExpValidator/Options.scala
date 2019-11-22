@@ -1,10 +1,6 @@
 package typings.regexpp.validatorMod.RegExpValidator
 
-import typings.regexpp.regexppNumbers.`2015`
-import typings.regexpp.regexppNumbers.`2016`
-import typings.regexpp.regexppNumbers.`2017`
-import typings.regexpp.regexppNumbers.`2018`
-import typings.regexpp.regexppNumbers.`5`
+import typings.regexpp.ecmaDashVersionsMod.EcmaVersion
 import typings.regexpp.regexppStrings.any
 import typings.regexpp.regexppStrings.digit
 import typings.regexpp.regexppStrings.end
@@ -19,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var ecmaVersion: js.UndefOr[`5` | `2015` | `2016` | `2017` | `2018`] = js.undefined
+  var ecmaVersion: js.UndefOr[EcmaVersion] = js.undefined
   var onAlternativeEnter: js.UndefOr[js.Function2[/* start */ Double, /* index */ Double, Unit]] = js.undefined
   var onAlternativeLeave: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, /* index */ Double, Unit]] = js.undefined
   var onAnyCharacterSet: js.UndefOr[js.Function3[/* start */ Double, /* end */ Double, any, Unit]] = js.undefined
@@ -109,7 +105,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    ecmaVersion: `5` | `2015` | `2016` | `2017` | `2018` = null,
+    ecmaVersion: EcmaVersion = null,
     onAlternativeEnter: (/* start */ Double, /* index */ Double) => Unit = null,
     onAlternativeLeave: (/* start */ Double, /* end */ Double, /* index */ Double) => Unit = null,
     onAnyCharacterSet: (/* start */ Double, /* end */ Double, any) => Unit = null,
@@ -139,7 +135,7 @@ object Options {
     strict: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
+    if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion)
     if (onAlternativeEnter != null) __obj.updateDynamic("onAlternativeEnter")(js.Any.fromFunction2(onAlternativeEnter))
     if (onAlternativeLeave != null) __obj.updateDynamic("onAlternativeLeave")(js.Any.fromFunction3(onAlternativeLeave))
     if (onAnyCharacterSet != null) __obj.updateDynamic("onAnyCharacterSet")(js.Any.fromFunction3(onAnyCharacterSet))

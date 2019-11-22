@@ -20,5 +20,7 @@ object reactDashLazylogComponents extends reactDashLazylogProps {
   def Loading: ComponentType[js.Object] = js.constructorOf[typings.reactDashLazylog.buildLoadingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def ScrollFollow: ComponentType[ScrollFollowProps] = js.constructorOf[typings.reactDashLazylog.buildScrollFollowMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ScrollFollowProps]]
+  @scala.inline
+  def SearchBar: ComponentType[SearchBarProps] = js.constructorOf[typings.reactDashLazylog.buildSearchBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SearchBarProps]]
 }
 

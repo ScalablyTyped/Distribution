@@ -1,0 +1,29 @@
+package typings.instagramDashPrivateDashApi.distResponsesDirectDashThreadDotRepositoryDotApproveDashParticipantDashRequestDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DirectThreadRepositoryApproveParticipantRequestResponseItemsItem extends js.Object {
+  var item_id: String
+  var item_type: String
+  var story_share: DirectThreadRepositoryApproveParticipantRequestResponseStory_share
+  var timestamp: String
+  var user_id: Double
+}
+
+object DirectThreadRepositoryApproveParticipantRequestResponseItemsItem {
+  @scala.inline
+  def apply(
+    item_id: String,
+    item_type: String,
+    story_share: DirectThreadRepositoryApproveParticipantRequestResponseStory_share,
+    timestamp: String,
+    user_id: Double
+  ): DirectThreadRepositoryApproveParticipantRequestResponseItemsItem = {
+    val __obj = js.Dynamic.literal(item_id = item_id, item_type = item_type, story_share = story_share, timestamp = timestamp, user_id = user_id)
+  
+    __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseItemsItem]
+  }
+}
+

@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-windows
 
-Typings are for version 0.2
+Typings are for version 1.0
 
 ## Library description:
 Returns true if the platform is windows. UMD module, works with node.js, commonjs, browser, AMD, electron, etc.

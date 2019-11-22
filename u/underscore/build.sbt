@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "underscore"
-version := "1.9-dt-20190918Z-f85423"
+version := "1.9-dt-20191118Z-4e59ef"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

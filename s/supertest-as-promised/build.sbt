@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "supertest-as-promised"
-version := "2.0-dt-20190524Z-6e3ca9"
+version := "2.0-dt-20190524Z-c32eab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-35b9bf",
   "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20190116Z-331cfe",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "superagent" % "4.1-dt-20191028Z-397afa",
-  "org.scalablytyped" %%% "supertest" % "v2.0.1-dt-20190703Z-3eec49")
+  "org.scalablytyped" %%% "superagent" % "4.1-dt-20191028Z-b2e7fc",
+  "org.scalablytyped" %%% "supertest" % "v2.0.1-dt-20190703Z-c186ec")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

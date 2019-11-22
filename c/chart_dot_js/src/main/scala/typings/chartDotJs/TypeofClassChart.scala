@@ -24,6 +24,7 @@ trait TypeofClassChart extends Instantiable2[
   var controllers: StringDictionary[js.Any] = js.native
   var defaults: Anon_Global = js.native
   var helpers: StringDictionary[js.Any] = js.native
+  var platform: Anon_DisableCSSInjection = js.native
   var pluginService: PluginServiceStatic = js.native
   var plugins: PluginServiceStatic = js.native
 }

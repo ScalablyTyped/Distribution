@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sic-ecies"
-version := "1.0-dt-20191001Z-a6e70f"
+version := "1.0-dt-20191001Z-4c037b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bitcore-lib" % "0.15-dt-20180723Z-82f40d",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "bitcore-lib" % "0.15-dt-20180723Z-c1e095",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

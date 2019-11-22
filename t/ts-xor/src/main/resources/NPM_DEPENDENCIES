@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-xor" : "1.0.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-xor" : "1.0.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

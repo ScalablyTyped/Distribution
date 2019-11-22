@@ -264,6 +264,12 @@ trait _Impl extends js.Object {
     */
   var useLabels: Boolean
   /**
+    * When specified allows you to initialize dropdown with specific values. See usage guide for details.
+    *
+    * @default false
+    */
+  var values: js.Any
+  /**
     * Debug output includes all internal behaviors
     */
   var verbose: Boolean
@@ -367,9 +373,10 @@ object _Impl {
     sortSelect: Boolean,
     transition: auto | String,
     useLabels: Boolean,
+    values: js.Any,
     verbose: Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], allowAdditions = allowAdditions, allowCategorySelection = allowCategorySelection, allowReselection = allowReselection, allowTab = allowTab, apiSettings = apiSettings.asInstanceOf[js.Any], className = className, context = context.asInstanceOf[js.Any], debug = debug, delay = delay, direction = direction.asInstanceOf[js.Any], duration = duration, error = error, fields = fields, filterRemoteData = filterRemoteData, forceSelection = forceSelection, fullTextSearch = fullTextSearch.asInstanceOf[js.Any], glyphWidth = glyphWidth, hideAdditions = hideAdditions, keepOnScreen = keepOnScreen, keys = keys, label = label, maxSelections = maxSelections.asInstanceOf[js.Any], message = message, metadata = metadata, minCharacters = minCharacters, name = name, namespace = namespace, on = on, onAdd = js.Any.fromFunction4(onAdd), onChange = js.Any.fromFunction4(onChange), onHide = js.Any.fromFunction1(onHide), onLabelCreate = js.Any.fromFunction3(onLabelCreate), onLabelRemove = js.Any.fromFunction2(onLabelRemove), onLabelSelect = js.Any.fromFunction2(onLabelSelect), onNoResults = js.Any.fromFunction2(onNoResults), onRemove = js.Any.fromFunction4(onRemove), onShow = js.Any.fromFunction1(onShow), performance = performance, placeholder = placeholder.asInstanceOf[js.Any], preserveHTML = preserveHTML, regExp = regExp, saveRemoteData = saveRemoteData, selectOnKeydown = selectOnKeydown, selector = selector, showOnFocus = showOnFocus, silent = silent, sortSelect = sortSelect, transition = transition.asInstanceOf[js.Any], useLabels = useLabels, verbose = verbose)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], allowAdditions = allowAdditions, allowCategorySelection = allowCategorySelection, allowReselection = allowReselection, allowTab = allowTab, apiSettings = apiSettings.asInstanceOf[js.Any], className = className, context = context.asInstanceOf[js.Any], debug = debug, delay = delay, direction = direction.asInstanceOf[js.Any], duration = duration, error = error, fields = fields, filterRemoteData = filterRemoteData, forceSelection = forceSelection, fullTextSearch = fullTextSearch.asInstanceOf[js.Any], glyphWidth = glyphWidth, hideAdditions = hideAdditions, keepOnScreen = keepOnScreen, keys = keys, label = label, maxSelections = maxSelections.asInstanceOf[js.Any], message = message, metadata = metadata, minCharacters = minCharacters, name = name, namespace = namespace, on = on, onAdd = js.Any.fromFunction4(onAdd), onChange = js.Any.fromFunction4(onChange), onHide = js.Any.fromFunction1(onHide), onLabelCreate = js.Any.fromFunction3(onLabelCreate), onLabelRemove = js.Any.fromFunction2(onLabelRemove), onLabelSelect = js.Any.fromFunction2(onLabelSelect), onNoResults = js.Any.fromFunction2(onNoResults), onRemove = js.Any.fromFunction4(onRemove), onShow = js.Any.fromFunction1(onShow), performance = performance, placeholder = placeholder.asInstanceOf[js.Any], preserveHTML = preserveHTML, regExp = regExp, saveRemoteData = saveRemoteData, selectOnKeydown = selectOnKeydown, selector = selector, showOnFocus = showOnFocus, silent = silent, sortSelect = sortSelect, transition = transition.asInstanceOf[js.Any], useLabels = useLabels, values = values, verbose = verbose)
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Impl]
   }

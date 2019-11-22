@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "firebase__remote-config"
-version := "0.1.6-3dafac"
+version := "0.1.7-9e9d09"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.4.6-183e40",
-  "org.scalablytyped" %%% "firebase__remote-config-types" % "0.1.2-4e1bb0",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.31-d7b171",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.4.7-c4a47c",
+  "org.scalablytyped" %%% "firebase__remote-config-types" % "0.1.3-49b632",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.33-12794d",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

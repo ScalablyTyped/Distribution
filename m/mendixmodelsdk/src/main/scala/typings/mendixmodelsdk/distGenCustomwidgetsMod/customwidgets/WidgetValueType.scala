@@ -25,6 +25,10 @@ class WidgetValueType protected () extends Element {
   var allowNonPersistableEntities: Boolean = js.native
   val attributeTypes: IList[CustomWidgetAttributeType] = js.native
   val containerAsWidgetPropertyType: WidgetPropertyType = js.native
+  /**
+    * In version 8.4.0: introduced
+    */
+  var dataSourceProperty: String = js.native
   var defaultValue: String = js.native
   var entityProperty: String = js.native
   val enumerationValues: IList[WidgetEnumerationValue] = js.native

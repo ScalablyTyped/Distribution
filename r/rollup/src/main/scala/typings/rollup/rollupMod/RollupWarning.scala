@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RollupWarning extends RollupLogProps {
+  var chunkName: js.UndefOr[String] = js.undefined
   var exportName: js.UndefOr[String] = js.undefined
   var exporter: js.UndefOr[String] = js.undefined
   var guess: js.UndefOr[String] = js.undefined
@@ -22,6 +23,7 @@ object RollupWarning {
   @scala.inline
   def apply(
     message: String,
+    chunkName: String = null,
     code: String = null,
     exportName: String = null,
     exporter: String = null,
@@ -44,6 +46,7 @@ object RollupWarning {
     url: String = null
   ): RollupWarning = {
     val __obj = js.Dynamic.literal(message = message)
+    if (chunkName != null) __obj.updateDynamic("chunkName")(chunkName)
     if (code != null) __obj.updateDynamic("code")(code)
     if (exportName != null) __obj.updateDynamic("exportName")(exportName)
     if (exporter != null) __obj.updateDynamic("exporter")(exporter)

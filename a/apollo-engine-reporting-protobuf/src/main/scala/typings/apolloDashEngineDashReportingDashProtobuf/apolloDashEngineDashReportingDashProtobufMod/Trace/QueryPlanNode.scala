@@ -7,9 +7,9 @@ import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.Q
 import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.QueryPlanNode.IParallelNode
 import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.QueryPlanNode.IResponsePathElement
 import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.QueryPlanNode.ISequenceNode
-import typings.protobufjs.protobufjsMod.IConversionOptions
-import typings.protobufjs.protobufjsMod.Reader
-import typings.protobufjs.protobufjsMod.Writer
+import typings.atApolloProtobufjs.atApolloProtobufjsMod.IConversionOptions
+import typings.atApolloProtobufjs.atApolloProtobufjsMod.Reader
+import typings.atApolloProtobufjs.atApolloProtobufjsMod.Writer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

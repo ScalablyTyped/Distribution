@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "intl-messageformat"
-version := "7.5.2-e6b507"
+version := "7.5.4-0e4171"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "intl-messageformat-parser" % "3.2.2-01f04d",
+  "org.scalablytyped" %%% "intl-messageformat-parser" % "3.2.4-6a0d50",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

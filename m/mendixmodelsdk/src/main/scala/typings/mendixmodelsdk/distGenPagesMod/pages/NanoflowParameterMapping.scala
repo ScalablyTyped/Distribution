@@ -31,7 +31,17 @@ class NanoflowParameterMapping protected () extends Element {
   var model_NanoflowParameterMapping: IModel = js.native
   var parameter: INanoflowParameter = js.native
   val parameterQualifiedName: String = js.native
+  /**
+    * In version 8.4.0: deleted
+    */
   var useAllPages: Boolean = js.native
+  /**
+    * In version 8.4.0: introduced
+    */
+  var variable: PageVariable = js.native
+  /**
+    * In version 8.4.0: deleted
+    */
   var widget: EntityWidget | Null = js.native
   val widgetLocalName: String | Null = js.native
 }

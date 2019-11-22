@@ -19,6 +19,9 @@ object gatsbyStrings {
   sealed trait `develop-html` extends GatsbyStages
   
   @js.native
+  sealed trait end extends js.Object
+  
+  @js.native
   sealed trait `initial-createPages` extends js.Object
   
   @js.native
@@ -47,6 +50,8 @@ object gatsbyStrings {
   def develop: develop = "develop".asInstanceOf[develop]
   @scala.inline
   def `develop-html`: `develop-html` = "develop-html".asInstanceOf[`develop-html`]
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
   @scala.inline
   def `initial-createPages`: `initial-createPages` = "initial-createPages".asInstanceOf[`initial-createPages`]
   @scala.inline

@@ -72,6 +72,8 @@ import typings.plotlyDotJs.plotlyDotJsStrings.delta
 import typings.plotlyDotJs.plotlyDotJsStrings.diameter
 import typings.plotlyDotJs.plotlyDotJsStrings.fast
 import typings.plotlyDotJs.plotlyDotJsStrings.fills
+import typings.plotlyDotJs.plotlyDotJsStrings.funnel
+import typings.plotlyDotJs.plotlyDotJsStrings.funnelarea
 import typings.plotlyDotJs.plotlyDotJsStrings.gauge
 import typings.plotlyDotJs.plotlyDotJsStrings.h
 import typings.plotlyDotJs.plotlyDotJsStrings.heatmap
@@ -117,6 +119,7 @@ import typings.plotlyDotJs.plotlyDotJsStrings.v
 import typings.plotlyDotJs.plotlyDotJsStrings.value
 import typings.plotlyDotJs.plotlyDotJsStrings.vh
 import typings.plotlyDotJs.plotlyDotJsStrings.vhv
+import typings.plotlyDotJs.plotlyDotJsStrings.waterfall
 import typings.plotlyDotJs.plotlyDotJsStrings.x
 import typings.std.Float32Array
 import typings.std.Partial
@@ -182,7 +185,7 @@ trait PlotData extends js.Object {
   var theta: js.Array[Datum]
   var transforms: js.Array[DataTransform]
   var transpose: Boolean
-  var `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap
+  var `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea
   var value: Double
   var values: js.Array[Datum]
   var visible: Boolean | legendonly
@@ -257,7 +260,7 @@ object PlotData {
     theta: js.Array[Datum],
     transforms: js.Array[DataTransform],
     transpose: Boolean,
-    `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap,
+    `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea,
     value: Double,
     values: js.Array[Datum],
     visible: Boolean | legendonly,

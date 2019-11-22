@@ -13,6 +13,6 @@ object getJobStatus extends js.Object {
     * @param jobStatusId The Id of Job Status.
     * @returns Status of Job.
     */
-  def apply(jobStatusId: String): js.Promise[Object] = js.native
+  def apply(jobStatusId: String): js.Promise[Object[_]] = js.native
 }
 

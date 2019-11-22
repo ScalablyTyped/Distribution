@@ -10,17 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AlloyInterface extends js.Object {
   /**
-    * An object that stores Alloy configuration values as defined in your app's app/config.json file
-    */
-  var CFG: js.Any = js.native
-  /**
     * An object for storing globally accessible Alloy collections. Singleton collections created via markup will be stored on this object.
     */
   var Collections: Anon_Instance = js.native
-  /**
-    * An object for storing globally accessible variables and functions.
-    */
-  var Globals: js.Any = js.native
   /**
     * An object for storing globally accessible Alloy models. Singleton models created via markup will be stored on this object.
     */
@@ -47,8 +39,8 @@ trait AlloyInterface extends js.Object {
     * @param name Name of controller to instantiate.
     * @param args Arguments to pass to the controller
     */
-  def createController(name: String): AlloyController = js.native
-  def createController(name: String, args: js.Any): AlloyController = js.native
+  def createController(name: String): js.Any = js.native
+  def createController(name: String, args: js.Any): js.Any = js.native
   /**
     * Factory method for instantiating a Backbone Model object. Creates and returns an instance of the named model.
     *
@@ -64,9 +56,9 @@ trait AlloyInterface extends js.Object {
     * @param name Name of the view within the widget to instantiate ('widget' by default)
     * @param args Arguments to pass to the widget.
     */
-  def createWidget(id: String): AlloyController = js.native
-  def createWidget(id: String, args: js.Any): AlloyController = js.native
-  def createWidget(id: String, name: String): AlloyController = js.native
-  def createWidget(id: String, name: String, args: js.Any): AlloyController = js.native
+  def createWidget(id: String): js.Any = js.native
+  def createWidget(id: String, args: js.Any): js.Any = js.native
+  def createWidget(id: String, name: String): js.Any = js.native
+  def createWidget(id: String, name: String, args: js.Any): js.Any = js.native
 }
 

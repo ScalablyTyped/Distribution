@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sqlite" : "3.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sqlite" : "3.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

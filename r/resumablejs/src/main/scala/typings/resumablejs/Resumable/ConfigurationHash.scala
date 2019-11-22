@@ -1,5 +1,12 @@
 package typings.resumablejs.Resumable
 
+import typings.resumablejs.resumablejsStrings.DELETE
+import typings.resumablejs.resumablejsStrings.GET
+import typings.resumablejs.resumablejsStrings.OPTIONS
+import typings.resumablejs.resumablejsStrings.POST
+import typings.resumablejs.resumablejsStrings.PUT
+import typings.resumablejs.resumablejsStrings.multipart
+import typings.resumablejs.resumablejsStrings.octet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +47,7 @@ trait ConfigurationHash extends js.Object {
   /**
     * A function which displays an error a selected file has type not allowed. (Default: displays an alert for every bad file.)
     **/
-  var fileTypeErrorCallback: js.UndefOr[js.Function2[/* file */ ResumableFile, /* errorCount */ Double, Unit]] = js.undefined
+  var fileTypeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
   /**
     * Force all chunks to be less or equal than chunkSize. Otherwise, the last chunk will be greater than or equal to chunkSize. (Default: false)
     **/
@@ -52,7 +59,7 @@ trait ConfigurationHash extends js.Object {
   /**
     * Extra headers to include in the multipart POST with data. This can be an object or a function that allows you to construct and return a value, based on supplied file (Default: {})
     **/
-  var headers: js.UndefOr[js.Object | (js.Function1[/* file */ ResumableFile, js.Object])] = js.undefined
+  var headers: js.UndefOr[js.Object | (js.Function1[/* file */ js.Any, js.Object])] = js.undefined
   /**
     * The name of the unique identifier POST parameter to use for the file chunk (Default: resumableIdentifier)
     */
@@ -68,7 +75,7 @@ trait ConfigurationHash extends js.Object {
   /**
     * A function which displays an error a selected file is larger than allowed. (Default: displays an alert for every bad file.)
     **/
-  var maxFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ ResumableFile, /* errorCount */ Double, Unit]] = js.undefined
+  var maxFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
   /**
     * Indicates how many files can be uploaded in a single session. Valid values are any positive integer and undefined for no limit. (Default: undefined)
     **/
@@ -76,11 +83,11 @@ trait ConfigurationHash extends js.Object {
   /**
     * A function which displays the please upload n file(s) at a time message. (Default: displays an alert box with the message Please n one file(s) at a time.)
     **/
-  var maxFilesErrorCallback: js.UndefOr[js.Function2[/* files */ ResumableFile, /* errorCount */ Double, Unit]] = js.undefined
+  var maxFilesErrorCallback: js.UndefOr[js.Function2[/* files */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
   /**
     * Method to use when POSTing chunks to the server (multipart or octet) (Default: multipart)
     **/
-  var method: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[multipart | octet] = js.undefined
   /**
     * The minimum allowed file size. (Default: undefined)
     **/
@@ -88,7 +95,7 @@ trait ConfigurationHash extends js.Object {
   /**
     * A function which displays an error a selected file is smaller than allowed. (Default: displays an alert for every bad file.)
     **/
-  var minFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ ResumableFile, /* errorCount */ Double, Unit]] = js.undefined
+  var minFileSizeErrorCallback: js.UndefOr[js.Function2[/* file */ js.Any, /* errorCount */ js.Any, Unit]] = js.undefined
   /**
     * Extra prefix added before the name of each parameter included in the multipart POST or in the test GET. (Default: '')
     **/
@@ -110,6 +117,10 @@ trait ConfigurationHash extends js.Object {
     */
   var relativePathParameterName: js.UndefOr[String] = js.undefined
   /**
+    * setChunkTypeFromFile` Set chunk content-type from original file.type. (Default: false, if false default Content-Type: application/octet-stream)
+    **/
+  var setChunkTypeFromFile: js.UndefOr[Boolean] = js.undefined
+  /**
     * Number of simultaneous uploads (Default: 3)
     **/
   var simultaneousUploads: js.UndefOr[Double] = js.undefined
@@ -124,7 +135,7 @@ trait ConfigurationHash extends js.Object {
   /**
     * Method for chunk test request. (Default: 'GET')
     **/
-  var testMethod: js.UndefOr[String] = js.undefined
+  var testMethod: js.UndefOr[GET | POST | OPTIONS | PUT | DELETE] = js.undefined
   /**
     * The name of the total number of chunks POST parameter to use for the file chunk (Default: resumableTotalChunks)
     */
@@ -140,7 +151,7 @@ trait ConfigurationHash extends js.Object {
   /**
     * Method for chunk upload request. (Default: 'POST')
     **/
-  var uploadMethod: js.UndefOr[String] = js.undefined
+  var uploadMethod: js.UndefOr[GET | POST | OPTIONS | PUT | DELETE] = js.undefined
   /**
     * Standard CORS requests do not send or set any cookies by default. In order to include cookies as part of the request, you need to set the withCredentials property to true. (Default: false)
     **/
@@ -158,32 +169,33 @@ object ConfigurationHash {
     fileNameParameterName: String = null,
     fileParameterName: String = null,
     fileType: js.Array[String] = null,
-    fileTypeErrorCallback: (/* file */ ResumableFile, /* errorCount */ Double) => Unit = null,
+    fileTypeErrorCallback: (/* file */ js.Any, /* errorCount */ js.Any) => Unit = null,
     forceChunkSize: js.UndefOr[Boolean] = js.undefined,
     generateUniqueIdentifier: () => String = null,
-    headers: js.Object | (js.Function1[/* file */ ResumableFile, js.Object]) = null,
+    headers: js.Object | (js.Function1[/* file */ js.Any, js.Object]) = null,
     identifierParameterName: String = null,
     maxChunkRetries: Int | Double = null,
     maxFileSize: js.UndefOr[Boolean] = js.undefined,
-    maxFileSizeErrorCallback: (/* file */ ResumableFile, /* errorCount */ Double) => Unit = null,
+    maxFileSizeErrorCallback: (/* file */ js.Any, /* errorCount */ js.Any) => Unit = null,
     maxFiles: Int | Double = null,
-    maxFilesErrorCallback: (/* files */ ResumableFile, /* errorCount */ Double) => Unit = null,
-    method: String = null,
+    maxFilesErrorCallback: (/* files */ js.Any, /* errorCount */ js.Any) => Unit = null,
+    method: multipart | octet = null,
     minFileSize: js.UndefOr[Boolean] = js.undefined,
-    minFileSizeErrorCallback: (/* file */ ResumableFile, /* errorCount */ Double) => Unit = null,
+    minFileSizeErrorCallback: (/* file */ js.Any, /* errorCount */ js.Any) => Unit = null,
     parameterNamespace: String = null,
     preprocess: /* chunk */ ResumableChunk => ResumableChunk = null,
     prioritizeFirstAndLastChunk: js.UndefOr[Boolean] = js.undefined,
     query: js.Object = null,
     relativePathParameterName: String = null,
+    setChunkTypeFromFile: js.UndefOr[Boolean] = js.undefined,
     simultaneousUploads: Int | Double = null,
     target: String = null,
     testChunks: js.UndefOr[Boolean] = js.undefined,
-    testMethod: String = null,
+    testMethod: GET | POST | OPTIONS | PUT | DELETE = null,
     totalChunksParameterName: String = null,
     totalSizeParameterName: String = null,
     typeParameterName: String = null,
-    uploadMethod: String = null,
+    uploadMethod: GET | POST | OPTIONS | PUT | DELETE = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): ConfigurationHash = {
     val __obj = js.Dynamic.literal()
@@ -205,7 +217,7 @@ object ConfigurationHash {
     if (maxFileSizeErrorCallback != null) __obj.updateDynamic("maxFileSizeErrorCallback")(js.Any.fromFunction2(maxFileSizeErrorCallback))
     if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
     if (maxFilesErrorCallback != null) __obj.updateDynamic("maxFilesErrorCallback")(js.Any.fromFunction2(maxFilesErrorCallback))
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (!js.isUndefined(minFileSize)) __obj.updateDynamic("minFileSize")(minFileSize)
     if (minFileSizeErrorCallback != null) __obj.updateDynamic("minFileSizeErrorCallback")(js.Any.fromFunction2(minFileSizeErrorCallback))
     if (parameterNamespace != null) __obj.updateDynamic("parameterNamespace")(parameterNamespace)
@@ -213,14 +225,15 @@ object ConfigurationHash {
     if (!js.isUndefined(prioritizeFirstAndLastChunk)) __obj.updateDynamic("prioritizeFirstAndLastChunk")(prioritizeFirstAndLastChunk)
     if (query != null) __obj.updateDynamic("query")(query)
     if (relativePathParameterName != null) __obj.updateDynamic("relativePathParameterName")(relativePathParameterName)
+    if (!js.isUndefined(setChunkTypeFromFile)) __obj.updateDynamic("setChunkTypeFromFile")(setChunkTypeFromFile)
     if (simultaneousUploads != null) __obj.updateDynamic("simultaneousUploads")(simultaneousUploads.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target)
     if (!js.isUndefined(testChunks)) __obj.updateDynamic("testChunks")(testChunks)
-    if (testMethod != null) __obj.updateDynamic("testMethod")(testMethod)
+    if (testMethod != null) __obj.updateDynamic("testMethod")(testMethod.asInstanceOf[js.Any])
     if (totalChunksParameterName != null) __obj.updateDynamic("totalChunksParameterName")(totalChunksParameterName)
     if (totalSizeParameterName != null) __obj.updateDynamic("totalSizeParameterName")(totalSizeParameterName)
     if (typeParameterName != null) __obj.updateDynamic("typeParameterName")(typeParameterName)
-    if (uploadMethod != null) __obj.updateDynamic("uploadMethod")(uploadMethod)
+    if (uploadMethod != null) __obj.updateDynamic("uploadMethod")(uploadMethod.asInstanceOf[js.Any])
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     __obj.asInstanceOf[ConfigurationHash]
   }

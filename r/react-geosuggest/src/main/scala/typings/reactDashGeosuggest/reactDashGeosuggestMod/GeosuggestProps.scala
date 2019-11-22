@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   var getSuggestLabel: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, String]] = js.undefined
   var googleMaps: js.UndefOr[Typeofmaps] = js.undefined
   var highlightMatch: js.UndefOr[Boolean] = js.undefined
+  var ignoreEnter: js.UndefOr[Boolean] = js.undefined
   var ignoreTab: js.UndefOr[Boolean] = js.undefined
   var initialValue: js.UndefOr[String] = js.undefined
   var inputClassName: js.UndefOr[String] = js.undefined
@@ -62,6 +63,7 @@ object GeosuggestProps {
     getSuggestLabel: /* googleSuggest */ AutocompletePrediction => String = null,
     googleMaps: Typeofmaps = null,
     highlightMatch: js.UndefOr[Boolean] = js.undefined,
+    ignoreEnter: js.UndefOr[Boolean] = js.undefined,
     ignoreTab: js.UndefOr[Boolean] = js.undefined,
     initialValue: String = null,
     inputClassName: String = null,
@@ -101,6 +103,7 @@ object GeosuggestProps {
     if (getSuggestLabel != null) __obj.updateDynamic("getSuggestLabel")(js.Any.fromFunction1(getSuggestLabel))
     if (googleMaps != null) __obj.updateDynamic("googleMaps")(googleMaps)
     if (!js.isUndefined(highlightMatch)) __obj.updateDynamic("highlightMatch")(highlightMatch)
+    if (!js.isUndefined(ignoreEnter)) __obj.updateDynamic("ignoreEnter")(ignoreEnter)
     if (!js.isUndefined(ignoreTab)) __obj.updateDynamic("ignoreTab")(ignoreTab)
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue)
     if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)

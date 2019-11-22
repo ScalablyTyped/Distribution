@@ -26,14 +26,14 @@ class Polyline protected () extends Object {
   	 */
   var points: js.UndefOr[js.Array[Point]] = js.native
   /**
-    * Calculate the polygon min and max point from points array,
-    * returning an object with left, top, width, height to measure the polygon size
-    * @private
-    * @return {Object} object.left X coordinate of the polygon leftmost point
-    * @return {Object} object.top Y coordinate of the polygon topmost point
-    * @return {Object} object.width distance between X coordinates of the polygon leftmost and rightmost point
-    * @return {Object} object.height distance between Y coordinates of the polygon topmost and bottommost point
-    */
+  	 * Calculate the polygon min and max point from points array,
+  	 * returning an object with left, top, width, height to measure the polygon size
+  	 * @private
+  	 * @return {Object} object.left X coordinate of the polygon leftmost point
+  	 * @return {Object} object.top Y coordinate of the polygon topmost point
+  	 * @return {Object} object.width distance between X coordinates of the polygon leftmost and rightmost point
+  	 * @return {Object} object.height distance between Y coordinates of the polygon topmost and bottommost point
+  	 */
   def _calcDimensions(): Anon_HeightLeft = js.native
 }
 

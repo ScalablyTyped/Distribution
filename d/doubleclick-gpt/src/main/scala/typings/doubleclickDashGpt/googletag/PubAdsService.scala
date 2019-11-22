@@ -1,6 +1,7 @@
 package typings.doubleclickDashGpt.googletag
 
 import typings.doubleclickDashGpt.Anon_ChangeCorrelator
+import typings.doubleclickDashGpt.Anon_RestrictDataProcessing
 import typings.doubleclickDashGpt.doubleclickDashGptNumbers.`0`
 import typings.doubleclickDashGpt.doubleclickDashGptNumbers.`1`
 import typings.std.Element
@@ -50,6 +51,7 @@ trait PubAdsService extends Service {
   def setLocation(latitudeOrAddress: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: Double, opt_longitude: Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: Double, opt_longitude: Double, opt_radius: Double): PubAdsService = js.native
+  def setPrivacySettings(settings: Anon_RestrictDataProcessing): Slot = js.native
   def setPublisherProvidedId(ppid: String): PubAdsService = js.native
   @JSName("setRequestNonPersonalizedAds")
   def setRequestNonPersonalizedAds_0(nonPersonalizedAds: `0`): PubAdsService = js.native

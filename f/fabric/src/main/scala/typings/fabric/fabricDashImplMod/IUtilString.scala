@@ -24,10 +24,10 @@ trait IUtilString extends js.Object {
   	 */
   def escapeXml(string: String): String
   /**
-    * Divide a string in the user perceived single units
-    * @param {String} textstring String to escape
-    * @return {Array} array containing the graphemes
-    */
+  	 * Divide a string in the user perceived single units
+  	 * @param {String} textstring String to escape
+  	 * @return {Array} array containing the graphemes
+  	 */
   def graphemeSplit(string: String): js.Array[String]
 }
 

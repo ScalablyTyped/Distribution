@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "srcset" : "2.0.0"
+      "srcset" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "srcset" : "2.0.0"
+      "srcset" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

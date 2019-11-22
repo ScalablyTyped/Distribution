@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-burger-menu
 
-Typings are for version 2.2
+Typings are for version 2.6
 
 ## Library description:
 An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations

@@ -1,0 +1,20 @@
+package typings.instagramDashPrivateDashApi.distResponsesHighlightsDotRepositoryDotEditDashReelDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HighlightsRepositoryEditReelResponseRootObject extends js.Object {
+  var reel: HighlightsRepositoryEditReelResponseReel
+  var status: String
+}
+
+object HighlightsRepositoryEditReelResponseRootObject {
+  @scala.inline
+  def apply(reel: HighlightsRepositoryEditReelResponseReel, status: String): HighlightsRepositoryEditReelResponseRootObject = {
+    val __obj = js.Dynamic.literal(reel = reel, status = status)
+  
+    __obj.asInstanceOf[HighlightsRepositoryEditReelResponseRootObject]
+  }
+}
+

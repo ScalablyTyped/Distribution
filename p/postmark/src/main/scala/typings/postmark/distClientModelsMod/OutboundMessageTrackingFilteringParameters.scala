@@ -22,7 +22,8 @@ class OutboundMessageTrackingFilteringParameters protected ()
     platform: js.UndefOr[String],
     country: js.UndefOr[String],
     region: js.UndefOr[String],
-    city: js.UndefOr[String]
+    city: js.UndefOr[String],
+    messageStream: js.UndefOr[String]
   ) = this()
 }
 

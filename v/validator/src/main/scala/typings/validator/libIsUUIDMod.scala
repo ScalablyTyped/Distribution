@@ -1,6 +1,5 @@
 package typings.validator
 
-import org.scalablytyped.runtime.TopLevel
 import typings.validator.validatorNumbers.`3`
 import typings.validator.validatorNumbers.`4`
 import typings.validator.validatorNumbers.`5`
@@ -11,14 +10,21 @@ import scala.scalajs.js.annotation._
 
 @JSImport("validator/lib/isUUID", JSImport.Namespace)
 @js.native
-object libIsUUIDMod
-  extends TopLevel[
-      (js.Function2[
-        /* str */ String, 
-        /* version */ js.UndefOr[
-          `3` | `4` | `5` | typings.validator.validatorStrings.`3` | typings.validator.validatorStrings.`4` | typings.validator.validatorStrings.`5` | all
-        ], 
-        Boolean
-      ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isUUID */ js.Any)
-    ]
+object libIsUUIDMod extends js.Object {
+  def default(str: String): Boolean = js.native
+  @JSName("default")
+  def default_3(str: String, version: `3`): Boolean = js.native
+  @JSName("default")
+  def default_3(str: String, version: typings.validator.validatorStrings.`3`): Boolean = js.native
+  @JSName("default")
+  def default_4(str: String, version: `4`): Boolean = js.native
+  @JSName("default")
+  def default_4(str: String, version: typings.validator.validatorStrings.`4`): Boolean = js.native
+  @JSName("default")
+  def default_5(str: String, version: `5`): Boolean = js.native
+  @JSName("default")
+  def default_5(str: String, version: typings.validator.validatorStrings.`5`): Boolean = js.native
+  @JSName("default")
+  def default_all(str: String, version: all): Boolean = js.native
+}
 

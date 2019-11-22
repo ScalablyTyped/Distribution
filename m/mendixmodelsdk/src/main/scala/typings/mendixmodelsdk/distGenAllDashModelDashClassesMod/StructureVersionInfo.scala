@@ -1,14 +1,14 @@
 package typings.mendixmodelsdk.distGenAllDashModelDashClassesMod
 
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.IStructureVersionInfo
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.StructureType
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.IStructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.VersionInfo because Already inherited
-- typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.StructureVersionInfo because Already inherited
+- typings.mendixmodelsdk.distSdkInternalVersionChecksMod.VersionInfo because Already inherited
+- typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureVersionInfo because Already inherited
 - typings.mendixmodelsdk.distSdkInternalMod.StructureVersionInfo because Already inherited
 - typings.mendixmodelsdk.distGenClientMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.distGenCodeactionsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.distGenMenusMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.distGenMessagedefinitionsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.distGenMicroflowsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
+- typings.mendixmodelsdk.distGenNanoflowsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.distGenNativepagesMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.distGenNavigationMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.distGenPagesMod.StructureVersionInfo because Inheritance from two classes. Inlined 

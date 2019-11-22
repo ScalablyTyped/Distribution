@@ -35,7 +35,7 @@ trait Layout extends js.Object {
   var calendar: Calendar
    // TODO
   var direction: clockwise | counterclockwise
-  var dragmode: zoom | pan | select | lasso | orbit | turntable
+  var dragmode: zoom | pan | select | lasso | orbit | turntable | `false`
   var font: Partial[Font]
   var height: Double
   var hiddenlabels: js.Array[String]
@@ -100,7 +100,7 @@ object Layout {
     barmode: stack | group | overlay | relative,
     calendar: Calendar,
     direction: clockwise | counterclockwise,
-    dragmode: zoom | pan | select | lasso | orbit | turntable,
+    dragmode: zoom | pan | select | lasso | orbit | turntable | `false`,
     font: Partial[Font],
     height: Double,
     hiddenlabels: js.Array[String],

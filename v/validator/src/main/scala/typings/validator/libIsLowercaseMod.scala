@@ -1,14 +1,12 @@
 package typings.validator
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("validator/lib/isLowercase", JSImport.Namespace)
 @js.native
-object libIsLowercaseMod
-  extends TopLevel[
-      (js.Function1[/* str */ String, Boolean]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isLowercase */ js.Any)
-    ]
+object libIsLowercaseMod extends js.Object {
+  def default(str: String): Boolean = js.native
+}
 

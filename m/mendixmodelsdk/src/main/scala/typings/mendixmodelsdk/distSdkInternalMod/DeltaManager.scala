@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class DeltaManager protected ()
   extends typings.mendixmodelsdk.distSdkInternalDeltasMod.DeltaManager {
-  def this(model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel) = this()
+  def this(model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel) = this()
 }
 

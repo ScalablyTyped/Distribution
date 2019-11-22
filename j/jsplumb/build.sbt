@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsplumb"
-version := "2.12.5-1e5a12"
+version := "2.12.6-ae908a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

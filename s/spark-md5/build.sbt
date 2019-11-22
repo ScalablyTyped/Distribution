@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spark-md5"
-version := "3.0-dt-20180814Z-a8f992"
+version := "3.0-dt-20191118Z-5a659e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

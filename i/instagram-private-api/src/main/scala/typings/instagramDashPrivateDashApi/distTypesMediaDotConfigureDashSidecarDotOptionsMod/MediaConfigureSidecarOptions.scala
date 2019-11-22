@@ -1,0 +1,55 @@
+package typings.instagramDashPrivateDashApi.distTypesMediaDotConfigureDashSidecarDotOptionsMod
+
+import typings.instagramDashPrivateDashApi.Anon_AndroidreleaseAndroidversion
+import typings.instagramDashPrivateDashApi.distTypesMediaDotConfigureDotOptionsMod.MediaLocation
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MediaConfigureSidecarOptions extends js.Object {
+  var _csrftoken: js.UndefOr[String] = js.undefined
+  var _uid: js.UndefOr[String] = js.undefined
+  var _uuid: js.UndefOr[String] = js.undefined
+  var caption: js.UndefOr[String] = js.undefined
+  var children_metadata: js.Array[MediaConfigureSidecarItem]
+  var client_sidecar_id: js.UndefOr[String] = js.undefined
+  var device: js.UndefOr[Anon_AndroidreleaseAndroidversion] = js.undefined
+  var device_id: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[MediaLocation | String] = js.undefined
+  var source_type: js.UndefOr[String] = js.undefined
+  var timezone_offset: js.UndefOr[String] = js.undefined
+  var upload_id: js.UndefOr[String] = js.undefined
+}
+
+object MediaConfigureSidecarOptions {
+  @scala.inline
+  def apply(
+    children_metadata: js.Array[MediaConfigureSidecarItem],
+    _csrftoken: String = null,
+    _uid: String = null,
+    _uuid: String = null,
+    caption: String = null,
+    client_sidecar_id: String = null,
+    device: Anon_AndroidreleaseAndroidversion = null,
+    device_id: String = null,
+    location: MediaLocation | String = null,
+    source_type: String = null,
+    timezone_offset: String = null,
+    upload_id: String = null
+  ): MediaConfigureSidecarOptions = {
+    val __obj = js.Dynamic.literal(children_metadata = children_metadata)
+    if (_csrftoken != null) __obj.updateDynamic("_csrftoken")(_csrftoken)
+    if (_uid != null) __obj.updateDynamic("_uid")(_uid)
+    if (_uuid != null) __obj.updateDynamic("_uuid")(_uuid)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (client_sidecar_id != null) __obj.updateDynamic("client_sidecar_id")(client_sidecar_id)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (device_id != null) __obj.updateDynamic("device_id")(device_id)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (source_type != null) __obj.updateDynamic("source_type")(source_type)
+    if (timezone_offset != null) __obj.updateDynamic("timezone_offset")(timezone_offset)
+    if (upload_id != null) __obj.updateDynamic("upload_id")(upload_id)
+    __obj.asInstanceOf[MediaConfigureSidecarOptions]
+  }
+}
+

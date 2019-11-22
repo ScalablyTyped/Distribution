@@ -9,7 +9,7 @@ trait FunctionRequest extends js.Object {
   var installationId: js.UndefOr[String] = js.undefined
   var master: js.UndefOr[Boolean] = js.undefined
   var params: js.UndefOr[js.Any] = js.undefined
-  var user: js.UndefOr[User] = js.undefined
+  var user: js.UndefOr[User[_]] = js.undefined
 }
 
 object FunctionRequest {
@@ -18,7 +18,7 @@ object FunctionRequest {
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,
     params: js.Any = null,
-    user: User = null
+    user: User[_] = null
   ): FunctionRequest = {
     val __obj = js.Dynamic.literal()
     if (installationId != null) __obj.updateDynamic("installationId")(installationId)

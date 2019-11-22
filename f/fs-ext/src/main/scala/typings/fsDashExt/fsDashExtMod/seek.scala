@@ -1,6 +1,6 @@
 package typings.fsDashExt.fsDashExtMod
 
-import typings.std.Error
+import typings.node.NodeJS.ErrnoException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ object seek extends js.Object {
     fd: Double,
     offset: Double,
     whence: Double,
-    callback: js.Function2[/* err */ Error, /* currFilePos */ Double, Unit]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* currFilePos */ Double, Unit]
   ): Unit = js.native
 }
 

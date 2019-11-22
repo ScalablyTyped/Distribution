@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NodeRequire extends NodeRequireFunction {
-  var cache: js.Any = js.native
+  var cache: NodeRequireCache = js.native
   /**
     * @deprecated
     */

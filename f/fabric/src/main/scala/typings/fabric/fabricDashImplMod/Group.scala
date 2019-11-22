@@ -33,8 +33,30 @@ class Group ()
   	 */
   var useSetOnGroup: js.UndefOr[Boolean] = js.native
   /**
+  	 * @private
+  	 */
+  def _calcBounds(): Unit = js.native
+  def _calcBounds(onlyWidthHeight: Boolean): Unit = js.native
+  /**
+  	 * @private
+  	 */
+  def _onObjectRemoved(`object`: Object): Unit = js.native
+  /**
+  	 * Retores original state of each of group objects (original state is that which was before group was created).
+  	 * @private
+  	 * @return {fabric.Group} thisArg
+  	 * @chainable
+  	 */
+  def _restoreObjectsState(): Group = js.native
+  /**
+  	 * @private
+  	 * @param {Boolean} [skipCoordsChange] if true, coordinates of objects enclosed in a group do not change
+  	 */
+  def _updateObjectsCoords(): Unit = js.native
+  def _updateObjectsCoords(center: Point): Unit = js.native
+  /**
   	 * Adds an object to a group; Then recalculates group's dimension, position.
-    * @param [Object] object
+  	 * @param [Object] object
   	 * @return thisArg
   	 * @chainable
   	 */

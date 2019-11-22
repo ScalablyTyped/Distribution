@@ -7,8 +7,7 @@ import typings.intlDashMessageformat.distFormattersMod.FormatXMLElementFn
 import typings.intlDashMessageformat.distFormattersMod.Formats
 import typings.intlDashMessageformat.distFormattersMod.MessageFormatPart
 import typings.intlDashMessageformat.distFormattersMod.PrimitiveType
-import typings.intlDashMessageformatDashParser.distParserMod.ParseFunction
-import typings.intlDashMessageformatDashParser.distTypesMod.MessageFormatElement
+import typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod.MessageFormatElement
 import typings.std.Date
 import typings.std.Partial
 import typings.std.Record
@@ -72,7 +71,7 @@ class IntlMessageFormat protected () extends js.Object {
 @JSImport("intl-messageformat/dist/core", "IntlMessageFormat")
 @js.native
 object IntlMessageFormat extends js.Object {
-  var __parse: js.UndefOr[Fn_Input with ParseFunction] = js.native
+  var __parse: js.UndefOr[Fn_Input] = js.native
   var defaultLocale: String = js.native
   var formats: Anon_Date = js.native
 }

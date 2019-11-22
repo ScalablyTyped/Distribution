@@ -1,11 +1,13 @@
 package typings.fabric.fabricDashImplMod
 
+import typings.fabric.Anon_CharHeight
 import typings.fabric.Anon_SelectionEnd
 import typings.fabric.Anon_X
 import typings.std.CanvasRenderingContext2D
 import typings.std.Event
 import typings.std.HTMLTextAreaElement
 import typings.std.MouseEvent
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +25,14 @@ class IText protected () extends Text {
   	 */
   def this(text: String) = this()
   def this(text: String, options: ITextOptions) = this()
+  /**
+  	 * @private
+  	 */
+  var _currentCursorOpacity: Double = js.native
+  /**
+  	 * @private
+  	 */
+  var _reSpace: RegExp = js.native
   /**
   	 * Indicates whether internal text char widths can be cached
   	 * @type Boolean
@@ -66,9 +76,10 @@ class IText protected () extends Text {
   	 * @type String
   	 */
   var editingBorderColor: js.UndefOr[String] = js.native
+  var fromPaste: Boolean = js.native
   /**
-    * Exposes underlying hidden text area
-    */
+  	 * Exposes underlying hidden text area
+  	 */
   var hiddenTextarea: js.UndefOr[HTMLTextAreaElement] = js.native
   /**
   	 * Helps determining when the text is in composition, so that the cursor
@@ -94,9 +105,9 @@ class IText protected () extends Text {
   var keysMap: js.UndefOr[js.Any] = js.native
   var path: js.UndefOr[String] = js.native
   /**
-    * Indicates whether text is selected
-    * @type Boolean
-    */
+  	 * Indicates whether text is selected
+  	 * @type Boolean
+  	 */
   var selected: js.UndefOr[Boolean] = js.native
   /**
   	 * Color of text selection
@@ -116,20 +127,25 @@ class IText protected () extends Text {
   var useNative: js.UndefOr[Boolean] = js.native
   /**
   	 * @private
+  	 * @return {Object} style contains style for hiddenTextarea
+  	 */
+  def _calcTextareaPosition(): Anon_CharHeight = js.native
+  /**
+  	 * @private
   	 */
   def _getNewSelectionStartFromOffset(mouseOffset: Anon_X, prevWidth: Double, width: Double, index: Double, jlen: Double): Double = js.native
   /**
-    * Default event handler for the basic functionalities needed on _mouseDown
-    * can be overridden to do something different.
-    * Scope of this implementation is: find the click position, set selectionStart
-    * find selectionEnd, initialize the drawing of either cursor or selection area
-    * @private
-    * @param {Object} Options (seems to have an event `e` parameter
-    */
+  	 * Default event handler for the basic functionalities needed on _mouseDown
+  	 * can be overridden to do something different.
+  	 * Scope of this implementation is: find the click position, set selectionStart
+  	 * find selectionEnd, initialize the drawing of either cursor or selection area
+  	 * @private
+  	 * @param {Object} Options (seems to have an event `e` parameter
+  	 */
   def _mouseDownHandler(options: js.Any): Unit = js.native
   /**
-    * @private
-    */
+  	 * @private
+  	 */
   def _updateTextarea(): Unit = js.native
   /**
   	 * Aborts cursor animation and clears all timeouts
@@ -145,10 +161,10 @@ class IText protected () extends Text {
   	 */
   def copy(): Unit = js.native
   /**
-    * Enters editing state
-    * @return {fabric.IText} thisArg
-    * @chainable
-    */
+  	 * Enters editing state
+  	 * @return {fabric.IText} thisArg
+  	 * @chainable
+  	 */
   def enterEditing(): IText = js.native
   def enterEditing(e: MouseEvent): IText = js.native
   /**
@@ -466,6 +482,10 @@ class IText protected () extends Text {
   	 * @param {Number} offset Can any number?
   	 */
   def shiftLineStyles(lineIndex: Double, offset: Double): Unit = js.native
+  /**
+  	 * @private
+  	 */
+  def updateFromTextArea(): Unit = js.native
 }
 
 /* static members */

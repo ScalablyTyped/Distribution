@@ -1,6 +1,6 @@
 package typings.reactDashIntl.distComponentsRelativeMod
 
-import typings.atFormatjsIntlDashRelativetimeformat.distTypesMod.Unit
+import typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
 import typings.react.reactMod.ReactChild
 import typings.reactDashIntl.distTypesMod.CustomFormatConfig
 import scala.scalajs.js
@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/core.IntlRelativeTimeFormatOptions extends 'localeMatcher' ? never : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat/dist/core.IntlRelativeTimeFormatOptions */ trait Props extends CustomFormatConfig {
+- Dropped @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.IntlRelativeTimeFormatOptions extends 'localeMatcher' ? never : @formatjs/intl-relativetimeformat.@formatjs/intl-relativetimeformat.IntlRelativeTimeFormatOptions */ trait Props extends CustomFormatConfig {
   var children: js.UndefOr[js.Function1[/* value */ String, ReactChild]] = js.undefined
   var unit: js.UndefOr[Unit] = js.undefined
   var updateIntervalInSeconds: js.UndefOr[Double] = js.undefined

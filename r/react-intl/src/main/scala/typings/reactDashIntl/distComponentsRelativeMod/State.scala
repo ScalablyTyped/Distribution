@@ -1,6 +1,6 @@
 package typings.reactDashIntl.distComponentsRelativeMod
 
-import typings.atFormatjsIntlDashRelativetimeformat.distTypesMod.Unit
+import typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ImportMappingParameterValue")
 @js.native
-class ImportMappingParameterValue protected () extends CodeActionParameterValue {
+class ImportMappingParameterValue protected () extends ExpressionBasedCodeActionParameterValue {
   def this(
     model: AbstractModel,
     structureTypeName: String,

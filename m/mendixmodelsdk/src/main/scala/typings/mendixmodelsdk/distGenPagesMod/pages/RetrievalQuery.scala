@@ -45,7 +45,18 @@ class RetrievalQuery protected () extends Element {
     */
   var pageName: String = js.native
   var queryId: String = js.native
+  /**
+    * In version 8.4.0: deleted
+    */
   var schemaId: String = js.native
+  /**
+    * In version 8.4.0: introduced
+    */
+  val usedAssociations: IList[String] = js.native
+  /**
+    * In version 8.4.0: introduced
+    */
+  var widgetName: String = js.native
   var xPath: String = js.native
 }
 

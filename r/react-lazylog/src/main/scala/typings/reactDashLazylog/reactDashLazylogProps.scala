@@ -23,5 +23,8 @@ trait reactDashLazylogProps {
   @scala.inline
   def ScrollFollowProps: typings.reactDashLazylog.buildScrollFollowMod.ScrollFollowProps.type = typings.reactDashLazylog.buildScrollFollowMod.ScrollFollowProps
   type ScrollFollowProps = typings.reactDashLazylog.buildScrollFollowMod.ScrollFollowProps
+  @scala.inline
+  def SearchBarProps: typings.reactDashLazylog.buildSearchBarMod.SearchBarProps.type = typings.reactDashLazylog.buildSearchBarMod.SearchBarProps
+  type SearchBarProps = typings.reactDashLazylog.buildSearchBarMod.SearchBarProps
 }
 

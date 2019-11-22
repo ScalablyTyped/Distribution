@@ -10,6 +10,7 @@ trait Anon_AlignedAxis extends js.Object {
   var color: js.UndefOr[Property] = js.undefined
   var eyeOffset: js.UndefOr[Property] = js.undefined
   var height: js.UndefOr[Property] = js.undefined
+  var heightReference: js.UndefOr[Property] = js.undefined
   var horizontalOrigin: js.UndefOr[Property] = js.undefined
   var image: js.UndefOr[Property] = js.undefined
   var imageSubRegion: js.UndefOr[Property] = js.undefined
@@ -31,6 +32,7 @@ object Anon_AlignedAxis {
     color: Property = null,
     eyeOffset: Property = null,
     height: Property = null,
+    heightReference: Property = null,
     horizontalOrigin: Property = null,
     image: Property = null,
     imageSubRegion: Property = null,
@@ -49,6 +51,7 @@ object Anon_AlignedAxis {
     if (color != null) __obj.updateDynamic("color")(color)
     if (eyeOffset != null) __obj.updateDynamic("eyeOffset")(eyeOffset)
     if (height != null) __obj.updateDynamic("height")(height)
+    if (heightReference != null) __obj.updateDynamic("heightReference")(heightReference)
     if (horizontalOrigin != null) __obj.updateDynamic("horizontalOrigin")(horizontalOrigin)
     if (image != null) __obj.updateDynamic("image")(image)
     if (imageSubRegion != null) __obj.updateDynamic("imageSubRegion")(imageSubRegion)

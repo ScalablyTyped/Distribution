@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "stellar-sdk"
-version := "3.3.0-3734bd"
+version := "3.3.0-6a983a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "axios" % "0.19.0-5acbe1",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "stellar-base" % "2.1.2-db81c8",
+  "org.scalablytyped" %%% "stellar-base" % "2.1.2-f3bb87",
   "org.scalablytyped" %%% "urijs" % "1.19-dt-20190924Z-e41f25")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

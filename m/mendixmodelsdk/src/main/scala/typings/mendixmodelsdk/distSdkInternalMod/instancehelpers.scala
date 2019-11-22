@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.distSdkInternalMod
 
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.IAbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.InstanceConstructor
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructure
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructureConstructor
-import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.IAbstractElementJson
-import typings.mendixmodelsdk.distSdkInternalTransportDashInterfacesMod.IAbstractUnitJson
+import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.IAbstractElementJson
+import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.IAbstractUnitJson
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IAbstractUnitConstructor
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IStructuralUnit
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object instancehelpers extends js.Object {
     * Should only be called if this unit was not already in memory.
     */
   def abstractUnitJsonToInstance(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     json: IAbstractUnitJson,
     isPartial: Boolean
   ): typings.mendixmodelsdk.distSdkInternalUnitsMod.AbstractUnit | Null = js.native
@@ -53,7 +53,7 @@ object instancehelpers extends js.Object {
     parentPropIsList: Boolean
   ): T = js.native
   def createNewElementInstanceFromJSON(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     json: IAbstractElementJson
   ): typings.mendixmodelsdk.distSdkInternalElementsMod.Element = js.native
   /**
@@ -65,7 +65,7 @@ object instancehelpers extends js.Object {
     */
   def lookupClass(qualifiedTypeName: String, classes: js.Any): InstanceConstructor = js.native
   def modelElementJsonToInstance(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     unit: typings.mendixmodelsdk.distSdkInternalUnitsMod.ModelUnit,
     container: typings.mendixmodelsdk.distSdkInternalElementsMod.AbstractElement,
     json: Null,
@@ -78,7 +78,7 @@ object instancehelpers extends js.Object {
     * Will update existing elements if this element was created before.
     */
   def modelElementJsonToInstance(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     unit: typings.mendixmodelsdk.distSdkInternalUnitsMod.ModelUnit,
     container: typings.mendixmodelsdk.distSdkInternalElementsMod.AbstractElement,
     json: IAbstractElementJson,

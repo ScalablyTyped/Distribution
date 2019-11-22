@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-share"
-version := "3.0-dt-20190927Z-430d3b"
+version := "3.0-dt-20191118Z-1d1ec7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

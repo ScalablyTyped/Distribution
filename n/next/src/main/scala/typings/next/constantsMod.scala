@@ -1,5 +1,6 @@
 package typings.next
 
+import typings.next.nextNumbers.`307`
 import typings.next.nextStrings.BUILD_ID
 import typings.next.nextStrings.`build-manifestDOTjson`
 import typings.next.nextStrings.`pages-manifestDOTjson`
@@ -9,6 +10,7 @@ import typings.next.nextStrings.`phase-production-build`
 import typings.next.nextStrings.`phase-production-server`
 import typings.next.nextStrings.`prerender-manifestDOTjson`
 import typings.next.nextStrings.`react-loadable-manifestDOTjson`
+import typings.next.nextStrings.`routes-manifestDOTjson`
 import typings.next.nextStrings.nextDOTconfigDOTjs
 import typings.next.nextStrings.public
 import typings.next.nextStrings.runtime
@@ -35,6 +37,7 @@ object constantsMod extends js.Object {
   val CLIENT_STATIC_FILES_RUNTIME_POLYFILLS: String = js.native
   val CLIENT_STATIC_FILES_RUNTIME_WEBPACK: String = js.native
   val CONFIG_FILE: nextDOTconfigDOTjs = js.native
+  val DEFAULT_REDIRECT_STATUS: `307` = js.native
   val IS_BUNDLED_PAGE_REGEX: RegExp = js.native
   val PAGES_MANIFEST: `pages-manifestDOTjson` = js.native
   val PHASE_DEVELOPMENT_SERVER: `phase-development-server` = js.native
@@ -43,6 +46,7 @@ object constantsMod extends js.Object {
   val PHASE_PRODUCTION_SERVER: `phase-production-server` = js.native
   val PRERENDER_MANIFEST: `prerender-manifestDOTjson` = js.native
   val REACT_LOADABLE_MANIFEST: `react-loadable-manifestDOTjson` = js.native
+  val ROUTES_MANIFEST: `routes-manifestDOTjson` = js.native
   val ROUTE_NAME_REGEX: RegExp = js.native
   val SERVERLESS_DIRECTORY: serverless = js.native
   val SERVERLESS_ROUTE_NAME_REGEX: RegExp = js.native

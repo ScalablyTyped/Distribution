@@ -184,6 +184,9 @@ object stripeStrings {
   sealed trait au_abn extends TaxIdType
   
   @js.native
+  sealed trait authorization_code extends js.Object
+  
+  @js.native
   sealed trait authorized extends js.Object
   
   @js.native
@@ -210,6 +213,9 @@ object stripeStrings {
   
   @js.native
   sealed trait bank_cannot_process extends js.Object
+  
+  @js.native
+  sealed trait bearer extends js.Object
   
   @js.native
   sealed trait bitcoin_receiver extends SourceTypes
@@ -611,6 +617,9 @@ object stripeStrings {
   
   @js.native
   sealed trait individual extends js.Object
+  
+  @js.native
+  sealed trait inf extends js.Object
   
   @js.native
   sealed trait infinite extends js.Object
@@ -1083,6 +1092,9 @@ object stripeStrings {
   sealed trait redirect_to_url extends js.Object
   
   @js.native
+  sealed trait refresh_token extends js.Object
+  
+  @js.native
   sealed trait refund extends js.Object
   
   @js.native
@@ -1181,7 +1193,7 @@ object stripeStrings {
   sealed trait send_invoice extends SubscriptionBilling
   
   @js.native
-  sealed trait sepa_debit extends js.Object
+  sealed trait sepa_debit extends SetupIntentPaymentMethodType
   
   @js.native
   sealed trait service extends ProductType
@@ -1601,6 +1613,8 @@ object stripeStrings {
   @scala.inline
   def au_abn: au_abn = "au_abn".asInstanceOf[au_abn]
   @scala.inline
+  def authorization_code: authorization_code = "authorization_code".asInstanceOf[authorization_code]
+  @scala.inline
   def authorized: authorized = "authorized".asInstanceOf[authorized]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
@@ -1616,6 +1630,8 @@ object stripeStrings {
   def bank_account: bank_account = "bank_account".asInstanceOf[bank_account]
   @scala.inline
   def bank_cannot_process: bank_cannot_process = "bank_cannot_process".asInstanceOf[bank_cannot_process]
+  @scala.inline
+  def bearer: bearer = "bearer".asInstanceOf[bearer]
   @scala.inline
   def bitcoin_receiver: bitcoin_receiver = "bitcoin_receiver".asInstanceOf[bitcoin_receiver]
   @scala.inline
@@ -1874,6 +1890,8 @@ object stripeStrings {
   def increment: increment = "increment".asInstanceOf[increment]
   @scala.inline
   def individual: individual = "individual".asInstanceOf[individual]
+  @scala.inline
+  def inf: inf = "inf".asInstanceOf[inf]
   @scala.inline
   def infinite: infinite = "infinite".asInstanceOf[infinite]
   @scala.inline
@@ -2182,6 +2200,8 @@ object stripeStrings {
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   @scala.inline
   def redirect_to_url: redirect_to_url = "redirect_to_url".asInstanceOf[redirect_to_url]
+  @scala.inline
+  def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   @scala.inline
   def refund: refund = "refund".asInstanceOf[refund]
   @scala.inline

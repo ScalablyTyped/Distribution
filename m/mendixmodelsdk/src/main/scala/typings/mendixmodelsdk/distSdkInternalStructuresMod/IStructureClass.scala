@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.distSdkInternalStructuresMod
 
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.StructureVersionInfo
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureVersionInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

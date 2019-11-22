@@ -71,7 +71,7 @@ object atFormatjsIntlDashUtilsMod extends js.Object {
   def getParentLocalesByLang(lang: String): Record[String, String] = js.native
   def invariant(condition: Boolean, message: String): Unit = js.native
   def invariant(condition: Boolean, message: String, Err: js.Any): Unit = js.native
-  def isMissingLocaleDataError(e: Error): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/polyfill-utils.MissingLocaleDataError */ Boolean = js.native
+  def isMissingLocaleDataError(e: Error): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/resolve-locale.MissingLocaleDataError */ Boolean = js.native
   def selectUnit(from: Double): Anon_Unit = js.native
   def selectUnit(from: Double, to: Double): Anon_Unit = js.native
   def selectUnit(from: Double, to: Double, thresholds: Partial[Thresholds]): Anon_Unit = js.native

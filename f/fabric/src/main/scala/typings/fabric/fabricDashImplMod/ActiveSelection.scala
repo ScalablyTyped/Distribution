@@ -15,6 +15,14 @@ class ActiveSelection () extends Group {
   def this(objects: js.Array[Object]) = this()
   def this(objects: js.Array[Object], options: IObjectOptions) = this()
   /**
+  	 * Constructor
+  	 * @param {Object} objects ActiveSelection objects
+  	 * @param {Object} [options] Options object
+  	 * @return {Object} thisArg
+  	 */
+  def initialize(objects: ActiveSelection): Object = js.native
+  def initialize(objects: ActiveSelection, options: IObjectOptions): Object = js.native
+  /**
   	 * Change te activeSelection to a normal group,
   	 * High level function that automatically adds it to canvas as
   	 * active object. no events fired.

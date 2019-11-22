@@ -1,0 +1,19 @@
+package typings.instagramDashPrivateDashApi.distResponsesMusicDashMoodDotFeedDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait MusicMoodFeedResponseItemsItem extends js.Object {
+  var track: MusicMoodFeedResponseTrack
+}
+
+object MusicMoodFeedResponseItemsItem {
+  @scala.inline
+  def apply(track: MusicMoodFeedResponseTrack): MusicMoodFeedResponseItemsItem = {
+    val __obj = js.Dynamic.literal(track = track)
+  
+    __obj.asInstanceOf[MusicMoodFeedResponseItemsItem]
+  }
+}
+

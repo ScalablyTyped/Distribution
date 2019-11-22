@@ -1,7 +1,7 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
-import typings.mendixmodelsdk.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty
+import typings.mendixmodelsdk.distSdkInternalPropertiesAbstractPropertyMod.AbstractProperty
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructureClass
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IModelUnit
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IStructuralUnit

@@ -18,7 +18,8 @@ class BounceFilteringParameters protected ()
     tag: js.UndefOr[String],
     messageID: js.UndefOr[String],
     fromDate: js.UndefOr[String],
-    toDate: js.UndefOr[String]
+    toDate: js.UndefOr[String],
+    messageStream: js.UndefOr[String]
   ) = this()
 }
 

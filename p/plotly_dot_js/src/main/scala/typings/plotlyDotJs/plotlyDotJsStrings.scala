@@ -422,6 +422,12 @@ object plotlyDotJsStrings {
   sealed trait free extends js.Object
   
   @js.native
+  sealed trait funnel extends js.Object
+  
+  @js.native
+  sealed trait funnelarea extends js.Object
+  
+  @js.native
   sealed trait gauge extends js.Object
   
   @js.native
@@ -1271,6 +1277,9 @@ object plotlyDotJsStrings {
   sealed trait video extends js.Object
   
   @js.native
+  sealed trait waterfall extends js.Object
+  
+  @js.native
   sealed trait wbr extends js.Object
   
   @js.native
@@ -1712,6 +1721,10 @@ object plotlyDotJsStrings {
   def frameset: frameset = "frameset".asInstanceOf[frameset]
   @scala.inline
   def free: free = "free".asInstanceOf[free]
+  @scala.inline
+  def funnel: funnel = "funnel".asInstanceOf[funnel]
+  @scala.inline
+  def funnelarea: funnelarea = "funnelarea".asInstanceOf[funnelarea]
   @scala.inline
   def gauge: gauge = "gauge".asInstanceOf[gauge]
   @scala.inline
@@ -2278,6 +2291,8 @@ object plotlyDotJsStrings {
   def vhv: vhv = "vhv".asInstanceOf[vhv]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
+  @scala.inline
+  def waterfall: waterfall = "waterfall".asInstanceOf[waterfall]
   @scala.inline
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline

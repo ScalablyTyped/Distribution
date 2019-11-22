@@ -1,13 +1,13 @@
 package typings.reactDashIntl.distTypesMod
 
-import typings.atFormatjsIntlDashRelativetimeformat.distCoreMod.IntlRelativeTimeFormatOptions
+import typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.IntlRelativeTimeFormatOptions
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof intl-messageformat.intl-messageformat/dist/formatters.Formats ]:? intl-messageformat.intl-messageformat/dist/formatters.Formats[P]} */ trait CustomFormats extends js.Object {
+- Dropped {[ P in keyof intl-messageformat.intl-messageformat.Formats ]:? intl-messageformat.intl-messageformat.Formats[P]} */ trait CustomFormats extends js.Object {
   var relative: js.UndefOr[Record[String, IntlRelativeTimeFormatOptions]] = js.undefined
 }
 

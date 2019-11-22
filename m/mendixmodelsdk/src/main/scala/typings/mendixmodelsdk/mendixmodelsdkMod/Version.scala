@@ -22,6 +22,6 @@ object Version extends js.Object {
     * This function is memoised to keep memory and time consumption low,
     * given that only a handful of versions exist at any time anyway.
     */
-  def parse(versionString: String): typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.Version = js.native
+  def parse(versionString: String): typings.mendixmodelsdk.distSdkInternalVersionChecksMod.Version = js.native
 }
 

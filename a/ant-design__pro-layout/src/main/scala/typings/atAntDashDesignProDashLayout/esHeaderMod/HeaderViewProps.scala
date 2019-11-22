@@ -30,6 +30,7 @@ trait HeaderViewProps extends js.Object {
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var logo: js.UndefOr[ReactNode] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
+  var menuHeaderRender: js.UndefOr[WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]]] = js.undefined
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
@@ -57,6 +58,7 @@ object HeaderViewProps {
     layout: sidemenu | topmenu = null,
     logo: ReactNode = null,
     menu: Anon_Locale = null,
+    menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
     navTheme: MenuTheme = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
@@ -79,6 +81,7 @@ object HeaderViewProps {
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu)
+    if (menuHeaderRender != null) __obj.updateDynamic("menuHeaderRender")(menuHeaderRender.asInstanceOf[js.Any])
     if (menuRender != null) __obj.updateDynamic("menuRender")(menuRender.asInstanceOf[js.Any])
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))

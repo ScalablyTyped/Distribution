@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 abstract class AbstractElement protected ()
   extends typings.mendixmodelsdk.distSdkInternalElementsMod.AbstractElement {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean
   ) = this()
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,

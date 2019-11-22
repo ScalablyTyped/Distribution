@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-linkify
 
-Typings are for version 0.2
+Typings are for version 1.0
 
 ## Library description:
 React component to parse links (urls, emails, etc.) in text into clickable links

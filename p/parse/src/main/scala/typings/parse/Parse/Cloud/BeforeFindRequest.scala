@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait BeforeFindRequest extends TriggerRequest {
   var count: Boolean
   var isGet: Boolean
-  var query: Query[Object]
+  var query: Query[Object[_]]
   var readPreference: js.UndefOr[ReadPreferenceOption] = js.undefined
 }
 
@@ -22,14 +22,14 @@ object BeforeFindRequest {
     ip: String,
     isGet: Boolean,
     log: js.Any,
-    `object`: Object,
-    query: Query[Object],
+    `object`: Object[_],
+    query: Query[Object[_]],
     triggerName: String,
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,
-    original: Object = null,
+    original: Object[_] = null,
     readPreference: ReadPreferenceOption = null,
-    user: User = null
+    user: User[_] = null
   ): BeforeFindRequest = {
     val __obj = js.Dynamic.literal(count = count, headers = headers, ip = ip, isGet = isGet, log = log, query = query, triggerName = triggerName)
     __obj.updateDynamic("object")(`object`)

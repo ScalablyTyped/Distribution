@@ -8,8 +8,17 @@ import typings.fabric.Anon_HeightLeft
 import typings.fabric.Anon_PropertySet
 import typings.fabric.Anon_ScaleX
 import typings.fabric.Anon_X
+import typings.fabric.fabricStrings.bl
+import typings.fabric.fabricStrings.br
 import typings.fabric.fabricStrings.fill
+import typings.fabric.fabricStrings.mb
+import typings.fabric.fabricStrings.ml
+import typings.fabric.fabricStrings.mr
+import typings.fabric.fabricStrings.mt
+import typings.fabric.fabricStrings.mtr
 import typings.fabric.fabricStrings.stroke
+import typings.fabric.fabricStrings.tl
+import typings.fabric.fabricStrings.tr
 import typings.std.CanvasRenderingContext2D
 import typings.std.Event
 import typings.std.Partial
@@ -24,6 +33,7 @@ class Object ()
      with IObjectOptions
      with IObjectAnimation[Object] {
   def this(options: IObjectOptions) = this()
+  var _controlsVisibility: Anon_BlBr = js.native
   /**
   	 * @private
   	 * @param {CanvasRenderingContext2D} ctx Context to render on
@@ -35,30 +45,37 @@ class Object ()
   def _applyPatternGradientTransform(ctx: CanvasRenderingContext2D, filler: Gradient): Unit = js.native
   def _applyPatternGradientTransform(ctx: CanvasRenderingContext2D, filler: Pattern): Unit = js.native
   /**
-    * Returns the instance of the control visibility set for this object.
-    * @private
-    * @returns {Object}
-    */
+  	 * Determines which corner has been clicked
+  	 * @private
+  	 * @param {Object} pointer The pointer indicating the mouse position
+  	 * @return {String|Boolean} corner code (tl, tr, bl, br, etc.), or false if nothing is found
+  	 */
+  def _findTargetCorner(pointer: Anon_X): Boolean | bl | br | mb | ml | mr | mt | tl | tr | mtr = js.native
+  /**
+  	 * Returns the instance of the control visibility set for this object.
+  	 * @private
+  	 * @returns {Object}
+  	 */
   def _getControlsVisibility(): Anon_BlBrMb = js.native
   /**
-    * Returns the top, left coordinates
-    * @private
-    * @return {fabric.Point}
-    */
+  	 * Returns the top, left coordinates
+  	 * @private
+  	 * @return {fabric.Point}
+  	 */
   def _getLeftTopCoords(): Point = js.native
   /*
-    * Calculate object dimensions from its properties
-    * @private
-    * @return {Object} .x width dimension
-    * @return {Object} .y height dimension
-    */
+  	 * Calculate object dimensions from its properties
+  	 * @private
+  	 * @return {Object} .x width dimension
+  	 * @return {Object} .y height dimension
+  	 */
   def _getNonTransformedDimensions(): Anon_X = js.native
   /*
-    * Calculate object bounding box dimensions from its properties scale, skew.
-    * @private
-    * @return {Object} .x width dimension
-    * @return {Object} .y height dimension
-    */
+  	 * Calculate object bounding box dimensions from its properties scale, skew.
+  	 * @private
+  	 * @return {Object} .x width dimension
+  	 * @return {Object} .y height dimension
+  	 */
   def _getTransformedDimensions(): Anon_X = js.native
   def _getTransformedDimensions(skewX: Double): Anon_X = js.native
   def _getTransformedDimensions(skewX: Double, skewY: Double): Anon_X = js.native
@@ -73,9 +90,9 @@ class Object ()
   	 */
   def _render(ctx: CanvasRenderingContext2D): Unit = js.native
   /**
-    * @private
-    * @param {CanvasRenderingContext2D} ctx Context to render on
-    */
+  	 * @private
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 */
   def _renderFill(ctx: CanvasRenderingContext2D): Unit = js.native
   /**
   	 * @private
@@ -87,6 +104,12 @@ class Object ()
   	 * @private
   	 */
   def _renderStroke(ctx: CanvasRenderingContext2D): Unit = js.native
+  /**
+  	 * @private
+  	 * @param {String} key
+  	 * @param {*} value
+  	 */
+  def _set(key: String, value: js.Any): Object = js.native
   /**
   	 * @private
   	 * Sets line dash
@@ -123,6 +146,12 @@ class Object ()
   	 */
   def calcCoords(): js.Any = js.native
   def calcCoords(absolute: Boolean): js.Any = js.native
+  /**
+  	 * calculate transform matrix that represents the current transformations from the
+  	 * object's properties, this matrix does not include the group transformation
+  	 * @return {Array} transform matrix for the object
+  	 */
+  def calcOwnMatrix(): js.Array[_] = js.native
   /**
   	 * calculate trasform Matrix that represent current transformation from
   	 * object properties.
@@ -244,6 +273,8 @@ class Object ()
   	 * @chainable
   	 */
   def drawSelectionBackground(ctx: CanvasRenderingContext2D): Object = js.native
+  def fire(eventName: String): Unit = js.native
+  def fire(eventName: String, options: js.Any): Unit = js.native
   /**
   	 * Same as straighten but with animation
   	 */
@@ -461,7 +492,7 @@ class Object ()
   /**
   	 * This callback function is called every time _discardActiveObject or _setActiveObject
   	 * try to to deselect this object. If the function returns true, the process is cancelled
-    * @return {Boolean} true to cancel selection
+  	 * @return {Boolean} true to cancel selection
   	 */
   def onDeselect(options: Anon_E): Boolean = js.native
   /**
@@ -599,8 +630,8 @@ class Object ()
   def setOptions(): Unit = js.native
   def setOptions(options: js.Any): Unit = js.native
   /* Sets object's properties from options
-    * @param {Object} [options] Options object
-    */
+  	 * @param {Object} [options] Options object
+  	 */
   def setOptions(options: IObjectOptions): Unit = js.native
   /**
   	 * Sets pattern fill of an object
@@ -777,14 +808,14 @@ class Object ()
 @js.native
 object Object extends js.Object {
   /**
-    * Creates fabric Object instance
-    * @param {string} Class name
-    * @param {fabric.Object} Original object
-    * @param {Function} Callback when complete
-    * @param {Object} Extra parameters for fabric.Object
-    * @private
-    * @return {fabric.Object}
-    */
+  	 * Creates fabric Object instance
+  	 * @param {string} Class name
+  	 * @param {fabric.Object} Original object
+  	 * @param {Function} Callback when complete
+  	 * @param {Object} Extra parameters for fabric.Object
+  	 * @private
+  	 * @return {fabric.Object}
+  	 */
   def _fromObject(className: String, `object`: Object): Object = js.native
   def _fromObject(className: String, `object`: Object, callback: js.Function): Object = js.native
   def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = js.native

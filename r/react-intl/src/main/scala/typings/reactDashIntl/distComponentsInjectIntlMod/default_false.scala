@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-intl/dist/components/injectIntl", JSImport.Default)
 @js.native
 object default_false extends js.Object {
-  def apply[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] with Anon_WrappedComponent = js.native
+  def apply[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] with Anon_WrappedComponent[P] = js.native
 }
 

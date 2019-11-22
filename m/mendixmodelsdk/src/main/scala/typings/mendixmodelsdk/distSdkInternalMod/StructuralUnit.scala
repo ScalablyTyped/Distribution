@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class StructuralUnit protected ()
   extends typings.mendixmodelsdk.distSdkInternalUnitsMod.StructuralUnit {
   def this(
-    model: typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel,
+    model: typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     _ignoredIsPartial: Boolean,

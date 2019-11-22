@@ -16,7 +16,7 @@ trait CommonShareButtonProps extends js.Object {
     *  Takes a function that returns a Promise to be fulfilled before calling
     * `onClick`. If you do not return promise, `onClick` is called immediately.
     */
-  var beforeOnClick: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
+  var beforeOnClick: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
   /** Disables click action and adds `disabled` class */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /**
@@ -41,7 +41,7 @@ object CommonShareButtonProps {
   def apply(
     url: String,
     additionalProps: HTMLAttributes[HTMLDivElement] = null,
-    beforeOnClick: () => js.Promise[Unit] = null,
+    beforeOnClick: () => js.Promise[Unit] | Unit = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     disabledStyle: StyleHTMLAttributes[HTMLDivElement] = null,
     onShareWindowClose: () => Unit = null,

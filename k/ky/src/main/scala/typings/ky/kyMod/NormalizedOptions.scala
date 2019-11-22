@@ -9,9 +9,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-Normalized options passed to the `fetch` call and the `beforeRequest` hooks.
-*/
 @js.native
 trait NormalizedOptions extends RequestInit {
   @JSName("credentials")

@@ -6,14 +6,15 @@ import typings.mendixmodelsdk.distSdkInternalElementsMod.Element
 import typings.mendixmodelsdk.distSdkInternalElementsMod.IAbstractElement
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.AbstractEnum
 import typings.mendixmodelsdk.distSdkInternalInstancesMod.IList
-import typings.mendixmodelsdk.distSdkInternalPropertiesLocalDashByDashNameDashReferenceMod.INamedElement
+import typings.mendixmodelsdk.distSdkInternalPropertiesLocalByNameReferencePropertyMod.INamedElement
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructure
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.IStructureClass
 import typings.mendixmodelsdk.distSdkInternalStructuresMod.Structure
+import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.IAbstractElementJson
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IModelUnit
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.IStructuralUnit
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.StructuralUnit
-import typings.mendixmodelsdk.distSdkInternalVersionDashChecksMod.ILifeCycle
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.ILifeCycle
 import typings.mobx.libTypesObservablearrayMod.IArrayWillChange
 import typings.mobx.libTypesObservablearrayMod.IArrayWillSplice
 import scala.scalajs.js
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation._
 object distSdkInternalPropertiesMod extends js.Object {
   @js.native
   abstract class AbstractProperty[T, P] protected ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[T, P] {
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesAbstractPropertyMod.AbstractProperty[T, P] {
     /**
       * parent is the structure that the value of this property attaches to,
       * so e.g. for all values `item` of Part(List)Property we (should) have the invariant:
@@ -39,11 +40,11 @@ object distSdkInternalPropertiesMod extends js.Object {
   
   @js.native
   class ByIdReferenceProperty[T /* <: AbstractElement */] ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesByDashIdDashReferenceMod.ByIdReferenceProperty[T]
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesByIdReferencePropertyMod.ByIdReferenceProperty[T]
   
   @js.native
   class ByNameReferenceListProperty[T /* <: IAbstractElement */] protected ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesByDashNameDashReferenceMod.ByNameReferenceListProperty[T] {
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesByNameReferencePropertyMod.ByNameReferenceListProperty[T] {
     def this(
       declaredOn: IStructureClass,
       parent: AbstractElement,
@@ -55,7 +56,7 @@ object distSdkInternalPropertiesMod extends js.Object {
   
   @js.native
   class ByNameReferenceProperty[T /* <: IAbstractElement */] protected ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesByDashNameDashReferenceMod.ByNameReferenceProperty[T] {
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesByNameReferencePropertyMod.ByNameReferenceProperty[T] {
     def this(
       declaredOn: IStructureClass,
       parent: AbstractElement,
@@ -74,7 +75,7 @@ object distSdkInternalPropertiesMod extends js.Object {
   
   @js.native
   class EnumListProperty[T /* <: AbstractEnum */] protected ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.EnumListProperty[T] {
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesEnumListPropertyMod.EnumListProperty[T] {
     def this(
       declaredOn: IStructureClass,
       parent: Structure,
@@ -86,7 +87,7 @@ object distSdkInternalPropertiesMod extends js.Object {
   
   @js.native
   class EnumProperty[T /* <: AbstractEnum */] protected ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.EnumProperty[T] {
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesEnumPropertyMod.EnumProperty[T] {
     def this(
       declaredOn: IStructureClass,
       parent: Structure,
@@ -98,7 +99,7 @@ object distSdkInternalPropertiesMod extends js.Object {
   
   @js.native
   class LocalByNameReferenceProperty[T /* <: INamedElement */] protected ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesLocalDashByDashNameDashReferenceMod.LocalByNameReferenceProperty[T] {
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesLocalByNameReferencePropertyMod.LocalByNameReferenceProperty[T] {
     def this(
       declaredOn: IStructureClass,
       parent: AbstractElement,
@@ -117,19 +118,19 @@ object distSdkInternalPropertiesMod extends js.Object {
   
   @js.native
   class PartListProperty[T /* <: Element */] ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesPartMod.PartListProperty[T]
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesPartListPropertyMod.PartListProperty[T]
   
   @js.native
   class PartProperty[T /* <: Element */] ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesPartMod.PartProperty[T]
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesPartPropertyMod.PartProperty[T]
   
   @js.native
   class PrimitiveListProperty[T] ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveListProperty[T]
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveListPropertyMod.PrimitiveListProperty[T]
   
   @js.native
   class PrimitiveProperty[T] ()
-    extends typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveProperty[T]
+    extends typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivePropertyMod.PrimitiveProperty[T]
   
   @js.native
   class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
@@ -159,30 +160,32 @@ object distSdkInternalPropertiesMod extends js.Object {
     ) = this()
   }
   
-  def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/local-by-name-reference.INamedElement */ Boolean = js.native
+  def instantiateChildElement(parent: AbstractElement): Element | Null = js.native
+  def instantiateChildElement(parent: AbstractElement, value: IAbstractElementJson): Element | Null = js.native
+  def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = js.native
   def sendListChangeDeltas[T, P](
-    property: (typings.mendixmodelsdk.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with Anon_ToRawChangeValue[P],
+    property: (typings.mendixmodelsdk.distSdkInternalPropertiesAbstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with Anon_ToRawChangeValue[P],
     change: IArrayWillChange[P]
   ): Unit = js.native
   def sendListChangeDeltas[T, P](
-    property: (typings.mendixmodelsdk.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with Anon_ToRawChangeValue[P],
+    property: (typings.mendixmodelsdk.distSdkInternalPropertiesAbstractPropertyMod.AbstractProperty[js.Array[T], IList[P]]) with Anon_ToRawChangeValue[P],
     change: IArrayWillSplice[P]
   ): Unit = js.native
   @js.native
   object PrimitiveTypeEnum extends js.Object {
-    /* 9 */ val Blob: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.Blob with scala.Double = js.native
-    /* 2 */ val Boolean: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.Boolean with scala.Double = js.native
-    /* 8 */ val Color: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.Color with scala.Double = js.native
-    /* 4 */ val DateTime: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.DateTime with scala.Double = js.native
-    /* 3 */ val Double: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.Double with scala.Double = js.native
-    /* 5 */ val Guid: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.Guid with scala.Double = js.native
-    /* 0 */ val Integer: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.Integer with scala.Double = js.native
-    /* 6 */ val Point: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.Point with scala.Double = js.native
-    /* 7 */ val Size: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.Size with scala.Double = js.native
-    /* 1 */ val String: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum.String with scala.Double = js.native
+    /* 9 */ val Blob: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Blob with scala.Double = js.native
+    /* 2 */ val Boolean: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Boolean with scala.Double = js.native
+    /* 8 */ val Color: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Color with scala.Double = js.native
+    /* 4 */ val DateTime: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.DateTime with scala.Double = js.native
+    /* 3 */ val Double: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Double with scala.Double = js.native
+    /* 5 */ val Guid: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Guid with scala.Double = js.native
+    /* 0 */ val Integer: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Integer with scala.Double = js.native
+    /* 6 */ val Point: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Point with scala.Double = js.native
+    /* 7 */ val Size: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Size with scala.Double = js.native
+    /* 1 */ val String: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.String with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[
-        typings.mendixmodelsdk.distSdkInternalPropertiesPrimitivesMod.PrimitiveTypeEnum with scala.Double
+        typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum with scala.Double
       ] = js.native
   }
   

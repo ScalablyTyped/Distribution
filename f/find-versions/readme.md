@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-versions
 
-Typings are for version 3.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 Find semver versions in a string: `unicorn v1.2.3` → `1.2.3`

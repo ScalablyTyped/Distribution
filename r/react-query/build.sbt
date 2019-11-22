@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-query"
-version := "0.3-dt-20191114Z-47291e"
+version := "0.3-dt-20191120Z-2426c4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

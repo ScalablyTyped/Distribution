@@ -23,6 +23,18 @@ trait Certificate extends js.Object {
   var validity: Anon_NotAfter = js.native
   var version: Double = js.native
   /**
+    * Gets an issuer or subject attribute from its name, type, or short name.
+    *
+    * @param options a short name string or an object with:
+    *          shortName the short name for the attribute.
+    *          name the name for the attribute.
+    *          type the type for the attribute.
+    *
+    * @return the attribute.
+    */
+  def getAttribute(opts: String): Attribute | Null = js.native
+  def getAttribute(opts: GetAttributeOpts): Attribute | Null = js.native
+  /**
     * Gets an extension by its name or id.
     *
     * @param options the name to use or an object with:

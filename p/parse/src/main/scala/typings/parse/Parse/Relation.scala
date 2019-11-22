@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.Relation")
 @js.native
-class Relation[S /* <: Object */, T /* <: Object */] () extends BaseObject {
+class Relation[S /* <: Object[_] */, T /* <: Object[_] */] () extends BaseObject {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()
   var key: String = js.native

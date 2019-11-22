@@ -13,8 +13,8 @@ trait AreaChartOptions extends js.Object {
   var animation: js.UndefOr[TransitionAnimation] = js.undefined
   var annotations: js.UndefOr[ChartAnnotations] = js.undefined
   var areaOpacity: js.UndefOr[Double] = js.undefined
-  var axisTitlesPosition: js.UndefOr[String] = js.undefined
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
+  var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   var chartArea: js.UndefOr[ChartArea] = js.undefined
   var colors: js.UndefOr[js.Array[String]] = js.undefined
   var crosshair: js.UndefOr[ChartCrosshair] = js.undefined
@@ -30,11 +30,10 @@ trait AreaChartOptions extends js.Object {
   var isStacked: js.UndefOr[Boolean | percent | relative | absolute] = js.undefined
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
+  var orientation: js.UndefOr[ChartOrientation] = js.undefined
   var pointSize: js.UndefOr[Double] = js.undefined
   var reverseCategories: js.UndefOr[Boolean] = js.undefined
-  var selectionMode: js.UndefOr[String] = js.undefined
-  // single / multiple
+  var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
   var series: js.UndefOr[js.Any] = js.undefined
   var theme: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
@@ -53,8 +52,8 @@ object AreaChartOptions {
     animation: TransitionAnimation = null,
     annotations: ChartAnnotations = null,
     areaOpacity: Int | Double = null,
-    axisTitlesPosition: String = null,
-    backgroundColor: js.Any = null,
+    axisTitlesPosition: ChartAxisTitlesPosition = null,
+    backgroundColor: String | ChartStrokeFill = null,
     chartArea: ChartArea = null,
     colors: js.Array[String] = null,
     crosshair: ChartCrosshair = null,
@@ -70,10 +69,10 @@ object AreaChartOptions {
     isStacked: Boolean | percent | relative | absolute = null,
     legend: ChartLegend | none = null,
     lineWidth: Int | Double = null,
-    orientation: String = null,
+    orientation: ChartOrientation = null,
     pointSize: Int | Double = null,
     reverseCategories: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: String = null,
+    selectionMode: ChartSelectionMode = null,
     series: js.Any = null,
     theme: String = null,
     title: String = null,
@@ -90,7 +89,7 @@ object AreaChartOptions {
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (areaOpacity != null) __obj.updateDynamic("areaOpacity")(areaOpacity.asInstanceOf[js.Any])
     if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair)

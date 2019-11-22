@@ -83,6 +83,7 @@ import scala.scalajs.js.annotation._
   var textShadowColor: js.UndefOr[String] = js.undefined
   var textShadowOffset: js.UndefOr[Anon_Height] = js.undefined
   var textShadowRadius: js.UndefOr[Double] = js.undefined
+  var textTransform: js.UndefOr[none | capitalize | uppercase | lowercase] = js.undefined
 }
 
 object TextStyle {

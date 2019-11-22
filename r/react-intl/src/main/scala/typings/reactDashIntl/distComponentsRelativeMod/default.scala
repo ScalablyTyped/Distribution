@@ -1,8 +1,8 @@
 package typings.reactDashIntl.distComponentsRelativeMod
 
-import typings.reactDashIntl.Anon_CurrentValueInSeconds
 import typings.reactDashIntl.reactDashIntlStrings.unit
 import typings.reactDashIntl.reactDashIntlStrings.value
+import typings.std.Partial
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,6 +20,6 @@ class default protected () extends FormattedRelativeTime {
 object default extends js.Object {
   var defaultProps: Pick[Props, unit | value] = js.native
   var displayName: String = js.native
-  def getDerivedStateFromProps(props: Props, state: State): Anon_CurrentValueInSeconds | Null = js.native
+  def getDerivedStateFromProps(props: Props, state: State): Partial[State] | Null = js.native
 }
 

@@ -67,9 +67,22 @@ trait Page
   def deleteCookie(cookies: DeleteCookie*): js.Promise[Unit] = js.native
   /** Emulates given device metrics and user agent. This method is a shortcut for `setUserAgent` and `setViewport`.  */
   def emulate(options: EmulateOptions): js.Promise[Unit] = js.native
-  def emulateMedia(): js.Promise[Unit] = js.native
+  def emulateMediaFeatures(): js.Promise[Unit] = js.native
+  /**
+    * Given an array of media feature objects, emulates CSS media features on the page.
+    * Passing null resets all.
+    */
+  def emulateMediaFeatures(features: js.Array[MediaFeature]): js.Promise[Unit] = js.native
+  def emulateMediaType(): js.Promise[Unit] = js.native
   /** Emulates the media. */
-  def emulateMedia(mediaType: MediaType): js.Promise[Unit] = js.native
+  def emulateMediaType(mediaType: MediaType): js.Promise[Unit] = js.native
+  def emulateTimezone(): js.Promise[Unit] = js.native
+  /**
+    * Changes the timezone of the page.
+    * See ICU’s [metaZones.txt](https://cs.chromium.org/chromium/src/third_party/icu/source/data/misc/metaZones.txt?rcl=faee8bc70570192d82d2978a71e2a615788597d1) for a list of supported timezone IDs.
+    * Passing null disables timezone emulation.
+    */
+  def emulateTimezone(tz: String): js.Promise[Unit] = js.native
   /**
     * Adds a function which would be invoked in one of the following scenarios: whenever the page is navigated; whenever the child frame is attached or navigated.
     * The function is invoked after the document was created but before any of its scripts were run. This is useful to amend JavaScript environment, e.g. to seed Math.random.

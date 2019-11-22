@@ -1,11 +1,15 @@
 package typings.chartDotJs.chartDotJsMod
 
+import typings.chartDotJs.chartDotJsStrings.center
+import typings.chartDotJs.chartDotJsStrings.end
+import typings.chartDotJs.chartDotJsStrings.start
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChartLegendOptions extends js.Object {
+  var align: js.UndefOr[center | end | start] = js.undefined
   var display: js.UndefOr[Boolean] = js.undefined
   var fullWidth: js.UndefOr[Boolean] = js.undefined
   var labels: js.UndefOr[ChartLegendLabelOptions] = js.undefined
@@ -22,6 +26,7 @@ trait ChartLegendOptions extends js.Object {
 object ChartLegendOptions {
   @scala.inline
   def apply(
+    align: center | end | start = null,
     display: js.UndefOr[Boolean] = js.undefined,
     fullWidth: js.UndefOr[Boolean] = js.undefined,
     labels: ChartLegendLabelOptions = null,
@@ -31,6 +36,7 @@ object ChartLegendOptions {
     reverse: js.UndefOr[Boolean] = js.undefined
   ): ChartLegendOptions = {
     val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
     if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
     if (labels != null) __obj.updateDynamic("labels")(labels)

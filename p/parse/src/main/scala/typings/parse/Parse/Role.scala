@@ -19,11 +19,11 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.Role")
 @js.native
-class Role protected () extends Object {
+class Role[T /* <: js.Any */] protected () extends Object[T] {
   def this(name: String, acl: ACL) = this()
   def getName(): String = js.native
-  def getRoles(): Relation[Role, Role] = js.native
-  def getUsers(): Relation[Role, User] = js.native
+  def getRoles(): Relation[Role[_], Role[_]] = js.native
+  def getUsers(): Relation[Role[_], User[_]] = js.native
   def setName(name: String): js.Any = js.native
   def setName(name: String, options: SuccessFailureOptions): js.Any = js.native
 }

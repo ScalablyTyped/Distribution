@@ -139,6 +139,7 @@ trait Pubnub extends js.Object {
     params: PublishParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ PublishResponse, Unit]
   ): Unit = js.native
+  def reconnect(): Unit = js.native
   def removeListener(params: ListenerParameters): Unit = js.native
   def removeMembers(params: RemoveMembersParameters): js.Promise[GetMembersResponse] = js.native
   def removeMembers(

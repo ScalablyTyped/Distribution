@@ -19,29 +19,29 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse/node", "User")
 @js.native
-class User ()
-  extends typings.parse.Parse.User
+class User[T /* <: js.Any */] ()
+  extends typings.parse.Parse.User[T]
 
 /* static members */
 @JSImport("parse/node", "User")
 @js.native
 object User extends js.Object {
   def allowCustomUserClass(isAllowed: Boolean): Unit = js.native
-  def become(sessionToken: String): js.Promise[typings.parse.Parse.User] = js.native
-  def become(sessionToken: String, options: UseMasterKeyOption): js.Promise[typings.parse.Parse.User] = js.native
-  def current(): js.UndefOr[typings.parse.Parse.User] = js.native
-  def currentAsync(): js.Promise[typings.parse.Parse.User | Null] = js.native
+  def become(sessionToken: String): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def become(sessionToken: String, options: UseMasterKeyOption): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def current(): js.UndefOr[typings.parse.Parse.User[_]] = js.native
+  def currentAsync(): js.Promise[typings.parse.Parse.User[_] | Null] = js.native
   def enableUnsafeCurrentUser(): Unit = js.native
   def extend(): js.Any = js.native
   def extend(protoProps: js.Any): js.Any = js.native
   def extend(protoProps: js.Any, classProps: js.Any): js.Any = js.native
-  def hydrate(userJSON: js.Any): js.Promise[typings.parse.Parse.User] = js.native
-  def logIn(username: String, password: String): js.Promise[typings.parse.Parse.User] = js.native
-  def logIn(username: String, password: String, options: FullOptions): js.Promise[typings.parse.Parse.User] = js.native
-  def logOut(): js.Promise[typings.parse.Parse.User] = js.native
-  def requestPasswordReset(email: String): js.Promise[typings.parse.Parse.User] = js.native
-  def requestPasswordReset(email: String, options: SuccessFailureOptions): js.Promise[typings.parse.Parse.User] = js.native
-  def signUp(username: String, password: String, attrs: js.Any): js.Promise[typings.parse.Parse.User] = js.native
-  def signUp(username: String, password: String, attrs: js.Any, options: SignUpOptions): js.Promise[typings.parse.Parse.User] = js.native
+  def hydrate(userJSON: js.Any): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def logIn(username: String, password: String): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def logIn(username: String, password: String, options: FullOptions): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def logOut(): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def requestPasswordReset(email: String): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def requestPasswordReset(email: String, options: SuccessFailureOptions): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def signUp(username: String, password: String, attrs: js.Any): js.Promise[typings.parse.Parse.User[_]] = js.native
+  def signUp(username: String, password: String, attrs: js.Any, options: SignUpOptions): js.Promise[typings.parse.Parse.User[_]] = js.native
 }
 

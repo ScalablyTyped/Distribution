@@ -1,7 +1,7 @@
 
 # Scala.js typings for trash
 
-Typings are for version 6.1.0
+Typings are for version 6.1.1
 
 ## Library description:
 Move files and folders to the trash

@@ -1,0 +1,19 @@
+package typings.instagramDashPrivateDashApi.distResponsesPostsDashInsightsDotFeedDotResponseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PostsInsightsFeedResponseData extends js.Object {
+  var user: PostsInsightsFeedResponseUser
+}
+
+object PostsInsightsFeedResponseData {
+  @scala.inline
+  def apply(user: PostsInsightsFeedResponseUser): PostsInsightsFeedResponseData = {
+    val __obj = js.Dynamic.literal(user = user)
+  
+    __obj.asInstanceOf[PostsInsightsFeedResponseData]
+  }
+}
+

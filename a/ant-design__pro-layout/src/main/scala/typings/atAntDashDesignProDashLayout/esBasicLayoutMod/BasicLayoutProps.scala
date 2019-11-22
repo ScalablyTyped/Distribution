@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/es/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> ]:? @ant-design/pro-layout.@ant-design/pro-layout/es/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route>[P]}
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings ]:? @ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings[P]} */ /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps because var conflicts: className, logo, siderWidth, style. Inlined isMobile, collapsed, autoHideHeader, menuRender, headerRender, rightContentRender, menu, navTheme, contentWidth, layout, title, fixedHeader, iconfontUrl, fixSiderbar, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
+- typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps because var conflicts: className, logo, menuHeaderRender, siderWidth, style. Inlined isMobile, collapsed, autoHideHeader, menuRender, headerRender, rightContentRender, menu, navTheme, contentWidth, layout, title, fixedHeader, iconfontUrl, fixSiderbar, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
   var autoHideHeader: js.UndefOr[Boolean] = js.undefined
   var breadcrumbRender: js.UndefOr[
     js.Function1[/* routers */ js.UndefOr[js.Array[Route]], js.UndefOr[js.Array[Route]]]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "roarr"
-version := "2.14-dt-20191116Z-d0f222"
+version := "2.14-dt-20191119Z-219081"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

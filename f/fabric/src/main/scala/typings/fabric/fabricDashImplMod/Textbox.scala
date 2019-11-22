@@ -1,5 +1,6 @@
 package typings.fabric.fabricDashImplMod
 
+import org.scalablytyped.runtime.NumberDictionary
 import typings.fabric.Anon_Line
 import typings.std.RegExp
 import scala.scalajs.js
@@ -21,20 +22,20 @@ class Textbox protected () extends IText {
   def this(text: String) = this()
   def this(text: String, options: ITextboxOptions) = this()
   /**
-    * Style objects for each line
-    * Generate an object that translates the style object so that it is
-    * broken up by visual lines (new lines and automatic wrapping).
-    * The original text styles object is broken up by actual lines (new lines only),
-    * which is only sufficient for Text / IText
-    * @private
-    * @type {Array} Line style { line: number, offset: number }
-    */
-  var _styleMap: js.UndefOr[js.Array[Anon_Line]] = js.native
+  	 * Style objects for each line
+  	 * Generate an object that translates the style object so that it is
+  	 * broken up by visual lines (new lines and automatic wrapping).
+  	 * The original text styles object is broken up by actual lines (new lines only),
+  	 * which is only sufficient for Text / IText
+  	 * @private
+  	 * @type {Array} Line style { line: number, offset: number }
+  	 */
+  var _styleMap: js.UndefOr[NumberDictionary[Anon_Line]] = js.native
   /**
-    * Use this regular expression to split strings in breakable lines
-    * @private
-    * @type RegExp
-    */
+  	 * Use this regular expression to split strings in breakable lines
+  	 * @private
+  	 * @type RegExp
+  	 */
   var _wordJoiners: RegExp = js.native
   /**
   	 * Minimum calculated width of a textbox, in pixels.
@@ -44,9 +45,9 @@ class Textbox protected () extends IText {
   	 */
   var dynamicMinWidth: js.UndefOr[Double] = js.native
   /**
-    * Is the text wrapping
-    * @type Boolean
-    */
+  	 * Is the text wrapping
+  	 * @type Boolean
+  	 */
   var isWrapping: js.UndefOr[Boolean] = js.native
   /**
   	 * Minimum width of textbox, in pixels.
@@ -61,29 +62,29 @@ class Textbox protected () extends IText {
   	 */
   var splitByGrapheme: js.UndefOr[Boolean] = js.native
   /**
-    * Helper function to measure a string of text, given its lineIndex and charIndex offset
-    * it gets called when charBounds are not available yet.
-    * @private
-    * @param {Array} text characters
-    * @param {number} lineIndex
-    * @param {number} charOffset
-    * @returns {number}
-    */
+  	 * Helper function to measure a string of text, given its lineIndex and charIndex offset
+  	 * it gets called when charBounds are not available yet.
+  	 * @private
+  	 * @param {Array} text characters
+  	 * @param {number} lineIndex
+  	 * @param {number} charOffset
+  	 * @returns {number}
+  	 */
   def _measureWord(word: js.Array[String], lineIndex: Double, charOffset: Double): Double = js.native
   /**
-    * Wraps text using the 'width' property of Textbox. First this function
-    * splits text on newlines, so we preserve newlines entered by the user.
-    * Then it wraps each line using the width of the Textbox by calling
-    * _wrapLine().
-    * @param {Array} lines The string array of text that is split into lines
-    * @param {Number} desiredWidth width you want to wrap to
-    * @returns {Array} Array of grapheme lines
-    */
+  	 * Wraps text using the 'width' property of Textbox. First this function
+  	 * splits text on newlines, so we preserve newlines entered by the user.
+  	 * Then it wraps each line using the width of the Textbox by calling
+  	 * _wrapLine().
+  	 * @param {Array} lines The string array of text that is split into lines
+  	 * @param {Number} desiredWidth width you want to wrap to
+  	 * @returns {Array} Array of grapheme lines
+  	 */
   def _wrapText(lines: js.Array[String], desiredWidth: Double): js.Array[js.Array[String]] = js.native
   /**
-    * Returns larger of min width and dynamic min width
-    * @return {Number}
-    */
+  	 * Returns larger of min width and dynamic min width
+  	 * @return {Number}
+  	 */
   def getMinWidth(): Double = js.native
 }
 

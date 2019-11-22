@@ -9,7 +9,6 @@ import typings.mobx.libApiComputedMod.IComputed
 import typings.mobx.libApiExtrasMod.IDependencyTree
 import typings.mobx.libApiExtrasMod.IObserverTree
 import typings.mobx.libApiFlowMod.CancellablePromise
-import typings.mobx.libApiFlowMod.FlowReturnType
 import typings.mobx.libApiInterceptDashReadMod.ReadInterceptor
 import typings.mobx.libApiObservableMod.CreateObservableOptions
 import typings.mobx.libApiObservableMod.IObservableFactories
@@ -59,6 +58,9 @@ import typings.mobx.libUtilsUtilsMod.Lambda
 import typings.mobx.mobxNumbers.`false`
 import typings.mobx.mobxNumbers.`true`
 import typings.mobx.mobxStrings.`An invariant failed, however the error is obfuscated because this is an production buildDOT`
+import typings.std.AsyncGenerator
+import typings.std.Error
+import typings.std.Generator
 import typings.std.IArguments
 import typings.std.IterableIterator
 import typings.std.Iterator
@@ -105,6 +107,10 @@ object libInternalMod extends js.Object {
       */
     def this(options: IComputedValueOptions[T]) = this()
   }
+  
+  @js.native
+  class FlowCancellationError ()
+    extends typings.mobx.libApiFlowMod.FlowCancellationError
   
   @js.native
   class MobXGlobals ()
@@ -282,7 +288,7 @@ object libInternalMod extends js.Object {
   def extendObservableObjectWithProperties(target: js.Any, properties: js.Any, decorators: js.Any, defaultDecorator: js.Any): Unit = js.native
   def fail(message: String): scala.Nothing = js.native
   def fail(message: Boolean): scala.Nothing = js.native
-  def flow[R, Args /* <: js.Array[_] */](generator: js.Function1[/* args */ Args, IterableIterator[R]]): js.Function1[/* args */ Args, CancellablePromise[FlowReturnType[R]]] = js.native
+  def flow[R, Args /* <: js.Array[_] */](generator: js.Function1[/* args */ Args, (Generator[_, R, _]) | (AsyncGenerator[_, R, _])]): js.Function1[/* args */ Args, CancellablePromise[R]] = js.native
   def generateComputedPropConfig(propName: js.Any): js.Any = js.native
   def generateObservablePropConfig(propName: js.Any): js.Any = js.native
   def get[T /* <: js.Object */](obj: T, key: String): js.Any = js.native
@@ -353,10 +359,11 @@ object libInternalMod extends js.Object {
   def isCaughtException(e: js.Any): /* is mobx.mobx/lib/core/derivation.CaughtException */ Boolean = js.native
   def isComputed(value: js.Any): Boolean = js.native
   def isComputedProp(value: js.Any, propName: String): Boolean = js.native
-  def isComputedValue(x: js.Any): /* is mobx.mobx/lib/core/computedvalue.ComputedValue<{}> */ Boolean = js.native
+  def isComputedValue(x: js.Any): /* is mobx.mobx/lib/core/computedvalue.ComputedValue<unknown> */ Boolean = js.native
   def isComputingDerivation(): Boolean = js.native
   def isES6Map(thing: js.Any): Boolean = js.native
   def isES6Set(thing: js.Any): /* is std.Set<any> */ Boolean = js.native
+  def isFlowCancellationError(error: Error): Boolean = js.native
   def isObject(value: js.Any): Boolean = js.native
   def isObservable(value: js.Any): Boolean = js.native
   def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ Boolean = js.native

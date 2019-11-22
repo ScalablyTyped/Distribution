@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "nats-hemera"
-version := "7.0.2-b51f86"
+version := "7.0.2-ce235b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20191028Z-af1389",
-  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-c510ab",
-  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-6b170d",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20191028Z-5d21c6",
+  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-2ef923",
+  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-6191e8",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

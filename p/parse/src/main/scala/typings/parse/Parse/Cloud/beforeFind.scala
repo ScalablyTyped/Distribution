@@ -14,7 +14,7 @@ object beforeFind extends js.Object {
     arg1: js.Any,
     func: js.Function1[
       /* request */ BeforeFindRequest, 
-      (js.Promise[Query[Object] | Unit]) | Query[Object] | Unit
+      (js.Promise[Query[Object[_]] | Unit]) | Query[Object[_]] | Unit
     ]
   ): Unit = js.native
 }

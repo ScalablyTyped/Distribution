@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.distSdkInternalElementsMod
 
 import typings.mendixmodelsdk.Anon_Copy
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.AbstractModel
-import typings.mendixmodelsdk.distSdkInternalAbstractDashModelMod.IAbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.AbstractModel
+import typings.mendixmodelsdk.distSdkInternalAbstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.distSdkInternalUnitsMod.ModelUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`

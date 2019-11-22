@@ -9,7 +9,6 @@ import typings.mobx.libApiComputedMod.IComputed
 import typings.mobx.libApiExtrasMod.IDependencyTree
 import typings.mobx.libApiExtrasMod.IObserverTree
 import typings.mobx.libApiFlowMod.CancellablePromise
-import typings.mobx.libApiFlowMod.FlowReturnType
 import typings.mobx.libApiInterceptDashReadMod.ReadInterceptor
 import typings.mobx.libApiObservableMod.CreateObservableOptions
 import typings.mobx.libApiObservableMod.IObservableFactories
@@ -43,8 +42,10 @@ import typings.mobx.libTypesObservablevalueMod.IObservableValue
 import typings.mobx.libTypesObservablevalueMod.IValueDidChange
 import typings.mobx.libTypesObservablevalueMod.IValueWillChange
 import typings.mobx.libUtilsUtilsMod.Lambda
+import typings.std.AsyncGenerator
+import typings.std.Error
+import typings.std.Generator
 import typings.std.IArguments
-import typings.std.IterableIterator
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,6 +54,10 @@ import scala.scalajs.js.annotation._
 @JSImport("mobx", JSImport.Namespace)
 @js.native
 object mobxMod extends js.Object {
+  @js.native
+  class FlowCancellationError ()
+    extends typings.mobx.libInternalMod.FlowCancellationError
+  
   @js.native
   class ObservableMap[K, V] ()
     extends typings.mobx.libInternalMod.ObservableMap[K, V] {
@@ -160,7 +165,7 @@ object mobxMod extends js.Object {
     */ typings.mobx.mobxStrings.extendObservable with js.Any,
     options: CreateObservableOptions
   ): A with B = js.native
-  def flow[R, Args /* <: js.Array[_] */](generator: js.Function1[/* args */ Args, IterableIterator[R]]): js.Function1[/* args */ Args, CancellablePromise[FlowReturnType[R]]] = js.native
+  def flow[R, Args /* <: js.Array[_] */](generator: js.Function1[/* args */ Args, (Generator[_, R, _]) | (AsyncGenerator[_, R, _])]): js.Function1[/* args */ Args, CancellablePromise[R]] = js.native
   def get[T /* <: js.Object */](obj: T, key: String): js.Any = js.native
   def get[T](obj: IObservableArray[T], index: Double): js.UndefOr[T] = js.native
   def get[K, V](obj: typings.mobx.libInternalMod.ObservableMap[K, V], key: K): js.UndefOr[V] = js.native
@@ -201,6 +206,7 @@ object mobxMod extends js.Object {
   def isBoxedObservable(x: js.Any): /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ Boolean = js.native
   def isComputed(value: js.Any): Boolean = js.native
   def isComputedProp(value: js.Any, propName: String): Boolean = js.native
+  def isFlowCancellationError(error: Error): Boolean = js.native
   def isObservable(value: js.Any): Boolean = js.native
   def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ Boolean = js.native
   def isObservableMap(thing: js.Any): /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ Boolean = js.native

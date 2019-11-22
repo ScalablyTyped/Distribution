@@ -16,6 +16,6 @@ class default () extends Router {
   /* CompleteClass */
   override def add(route: Route): Unit = js.native
   /* CompleteClass */
-  override def `match`(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.UndefOr[js.Function0[Unit]] = js.native
+  override def execute(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.Promise[Boolean] = js.native
 }
 

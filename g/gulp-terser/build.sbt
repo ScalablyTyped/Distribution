@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gulp-terser"
-version := "1.2-dt-20190605Z-9b90c4"
+version := "1.2-dt-20190605Z-0d04df"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191115Z-3b62fb",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
   "org.scalablytyped" %%% "source-map" % "0.7.3-00bd51",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "terser" % "4.4.0-ad91d9")

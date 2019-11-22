@@ -18,9 +18,6 @@ object atFirebaseDatabaseStrings {
   sealed trait ` child_removed` extends js.Object
   
   @js.native
-  sealed trait FIREBASE_DATABASE_EMULATOR_HOST extends js.Object
-  
-  @js.native
   sealed trait `[MAX_NAME]` extends js.Object
   
   @js.native
@@ -37,8 +34,6 @@ object atFirebaseDatabaseStrings {
   def ` child_moved`: ` child_moved` = " child_moved".asInstanceOf[` child_moved`]
   @scala.inline
   def ` child_removed`: ` child_removed` = " child_removed".asInstanceOf[` child_removed`]
-  @scala.inline
-  def FIREBASE_DATABASE_EMULATOR_HOST: FIREBASE_DATABASE_EMULATOR_HOST = "FIREBASE_DATABASE_EMULATOR_HOST".asInstanceOf[FIREBASE_DATABASE_EMULATOR_HOST]
   @scala.inline
   def `[MAX_NAME]`: `[MAX_NAME]` = "[MAX_NAME]".asInstanceOf[`[MAX_NAME]`]
   @scala.inline

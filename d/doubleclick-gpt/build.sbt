@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "doubleclick-gpt"
-version := "2019041801.0-dt-20190515Z-38068e"
+version := "2019041801.0-dt-20191120Z-9d29b7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
