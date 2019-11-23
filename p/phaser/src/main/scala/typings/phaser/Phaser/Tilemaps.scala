@@ -973,7 +973,7 @@ object Tilemaps extends js.Object {
     override def toggleFlipY(): this.type = js.native
     /**
       * Randomizes the indexes of a rectangular region of tiles (in tile coordinates) within the
-      * specified layer. Each tile will recieve a new index. New indexes are drawn from the given
+      * specified layer. Each tile will receive a new index. New indexes are drawn from the given
       * weightedIndexes array. An example weighted array:
       * 
       * [
@@ -2584,6 +2584,19 @@ object Tilemaps extends js.Object {
     * Note that all Tilemaps use a base tile size to calculate dimensions from, but that a
     * StaticTilemapLayer or DynamicTilemapLayer may have its own unique tile size that overrides
     * it.
+    * 
+    * As of Phaser 3.21.0, if your tilemap includes layer groups (a feature of Tiled 1.2.0+) these
+    * will be traversed and the following properties will affect children:
+    * - opacity (blended with parent) and visibility (parent overrides child)
+    * - Vertical and horizontal offset
+    * The grouping hierarchy is not preserved and all layers will be flattened into a single array.
+    * Group layers are parsed during Tilemap construction but are discarded after parsing so dynamic
+    * layers will NOT continue to be affected by a parent.
+    * 
+    * To avoid duplicate layer names, a layer that is a child of a group layer will have its parent
+    * group name prepended with a '/'.  For example, consider a group called 'ParentGroup' with a
+    * child called 'Layer 1'. In the Tilemap object, 'Layer 1' will have the name
+    * 'ParentGroup/Layer 1'.
     */
   @js.native
   class Tilemap protected () extends js.Object {
@@ -3287,6 +3300,10 @@ object Tilemaps extends js.Object {
       */
     def getImageIndex(name: String): integer = js.native
     /**
+      * Return a list of all valid imagelayer names loaded in this Tilemap.
+      */
+    def getImageLayerNames(): js.Array[String] = js.native
+    /**
       * Internally used. Returns the index of the object in one of the Tilemaps arrays whose name
       * property matches the given `name`.
       * @param location The Tilemap array to search.
@@ -3331,6 +3348,10 @@ object Tilemaps extends js.Object {
     def getObjectLayer(): ObjectLayer = js.native
     def getObjectLayer(name: String): ObjectLayer = js.native
     /**
+      * Return a list of all valid objectgroup names loaded in this Tilemap.
+      */
+    def getObjectLayerNames(): js.Array[String] = js.native
+    /**
       * Gets a tile at the given tile coordinates from the given layer.
       * If no layer specified, the map's current layer is used.
       * @param tileX X position to get the tile from (given in tile units, not pixels).
@@ -3360,6 +3381,10 @@ object Tilemaps extends js.Object {
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: DynamicTilemapLayer): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: StaticTilemapLayer): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: integer): Tile = js.native
+    /**
+      * Return a list of all valid tilelayer names loaded in this Tilemap.
+      */
+    def getTileLayerNames(): js.Any = js.native
     /**
       * Gets the tiles in the given rectangular area (in tile coordinates) of the layer.
       * If no layer specified, the maps current layer is used.
@@ -4196,7 +4221,7 @@ object Tilemaps extends js.Object {
     def setTileIndexCallback(indexes: integer, callback: js.Function, callbackContext: js.Object, layer: StaticTilemapLayer): Tilemap = js.native
     def setTileIndexCallback(indexes: integer, callback: js.Function, callbackContext: js.Object, layer: integer): Tilemap = js.native
     /**
-      * Sets a collision callback for the given rectangular area (in tile coordindates) within the layer.
+      * Sets a collision callback for the given rectangular area (in tile coordinates) within the layer.
       * If a callback is already set for the tile index it will be replaced. Set the callback to null to
       * remove it.
       * 
@@ -4824,14 +4849,23 @@ object Tilemaps extends js.Object {
         */
       def BuildTilesetIndex(mapData: MapData): js.Array[_] = js.native
       /**
+        * Parse a Tiled group layer and create a state object for inheriting.
+        * @param json The Tiled JSON object.
+        * @param currentl The current group layer from the Tiled JSON file.
+        * @param parentstate The state of the parent group (if any).
+        */
+      def CreateGroupLayer(json: js.Object): js.Object = js.native
+      def CreateGroupLayer(json: js.Object, currentl: js.Object): js.Object = js.native
+      def CreateGroupLayer(json: js.Object, currentl: js.Object, parentstate: js.Object): js.Object = js.native
+      /**
         * See Tiled documentation on tile flipping:
         * http://docs.mapeditor.org/en/latest/reference/tmx-map-format/
         * @param gid [description]
         */
       def ParseGID(gid: Double): js.Object = js.native
       /**
-        * [description]
-        * @param json [description]
+        * Parses a Tiled JSON object into an array of objects with details about the image layers.
+        * @param json The Tiled JSON object.
         */
       def ParseImageLayers(json: js.Object): js.Array[_] = js.native
       /**
@@ -4861,11 +4895,12 @@ object Tilemaps extends js.Object {
         */
       def ParseObjectLayers(json: js.Object): js.Array[_] = js.native
       /**
-        * [description]
-        * @param json [description]
-        * @param insertNull [description]
+        * Parses all tilemap layers in a Tiled JSON object into new LayerData objects.
+        * @param json The Tiled JSON object.
+        * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
+        * data are handled (see {@link Phaser.Tilemaps.Parsers.Tiled.ParseJSONTiled}).
         */
-      def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[_] = js.native
+      def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[LayerData] = js.native
       /**
         * Tilesets and Image Collections
         * @param json [description]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-owl-carousel"
-version := "2.3.1-ebdf1b"
+version := "2.3.1-cb40df"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-17006e",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191122Z-caf4d8",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a5fece",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false

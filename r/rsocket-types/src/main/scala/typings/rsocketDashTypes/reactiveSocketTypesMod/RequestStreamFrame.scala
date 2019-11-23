@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait RequestStreamFrame extends Frame {
   var data: Encodable
   var flags: Double
+  var length: js.UndefOr[Double] = js.undefined
   var metadata: Encodable
   var requestN: Double
   var streamId: Double
@@ -22,10 +23,12 @@ object RequestStreamFrame {
     metadata: Encodable,
     requestN: Double,
     streamId: Double,
-    `type`: `0x06`
+    `type`: `0x06`,
+    length: Int | Double = null
   ): RequestStreamFrame = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], flags = flags, metadata = metadata.asInstanceOf[js.Any], requestN = requestN, streamId = streamId)
     __obj.updateDynamic("type")(`type`)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestStreamFrame]
   }
 }

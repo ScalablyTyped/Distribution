@@ -11,6 +11,7 @@ trait SetupFrame extends Frame {
   var dataMimeType: String
   var flags: Double
   var keepAlive: Double
+  var length: js.UndefOr[Double] = js.undefined
   var lifetime: Double
   var majorVersion: Double
   var metadata: js.UndefOr[Encodable] = js.undefined
@@ -34,12 +35,14 @@ object SetupFrame {
     streamId: `0`,
     `type`: `0x01`,
     data: Encodable = null,
+    length: Int | Double = null,
     metadata: Encodable = null,
     resumeToken: Encodable = null
   ): SetupFrame = {
     val __obj = js.Dynamic.literal(dataMimeType = dataMimeType, flags = flags, keepAlive = keepAlive, lifetime = lifetime, majorVersion = majorVersion, metadataMimeType = metadataMimeType, minorVersion = minorVersion, streamId = streamId)
     __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetupFrame]

@@ -25,6 +25,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.location
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.menu
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mixed
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.move
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.no
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.none
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.numeric
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.off
@@ -43,6 +44,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.time
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tree
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.url
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.vertical
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.yes
 import typings.atMaterialDashUiLab.useAutocompleteUseAutocompleteMod.FilterOptionsState
 import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
@@ -179,9 +181,17 @@ trait AutocompleteProps extends js.Object {
     */
   var clearOnEscape: js.UndefOr[Boolean] = js.undefined
   /**
+    * Override the default text for the *clear* icon button.
+    */
+  var clearText: js.UndefOr[String] = js.undefined
+  /**
     * The icon to display in place of the default close icon.
     */
   var closeIcon: js.UndefOr[ReactNode] = js.undefined
+  /**
+    * Override the default text for the *close popup* icon button.
+    */
+  var closeText: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Boolean] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
@@ -293,7 +303,7 @@ trait AutocompleteProps extends js.Object {
     */
   var loadingText: js.UndefOr[ReactNode] = js.undefined
   /**
-    * If true, `value` must be an array and the menu will support multiple selections.
+    * If `true`, `value` must be an array and the menu will support multiple selections.
     */
   var multiple: js.UndefOr[Boolean] = js.undefined
   /**
@@ -492,6 +502,10 @@ trait AutocompleteProps extends js.Object {
     */
   var open: js.UndefOr[Boolean] = js.undefined
   /**
+    * Override the default text for the *open popup* icon button.
+    */
+  var openText: js.UndefOr[String] = js.undefined
+  /**
     * Array of options.
     */
   var options: js.UndefOr[js.Array[_]] = js.undefined
@@ -537,6 +551,7 @@ trait AutocompleteProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   /**
@@ -619,7 +634,9 @@ object AutocompleteProps {
     className: String = null,
     classes: PartialClassNameMapAutocompleteClassKey = null,
     clearOnEscape: js.UndefOr[Boolean] = js.undefined,
+    clearText: String = null,
     closeIcon: ReactNode = null,
+    closeText: String = null,
     color: String = null,
     contentEditable: js.UndefOr[Boolean] = js.undefined,
     contextMenu: String = null,
@@ -743,6 +760,7 @@ object AutocompleteProps {
     onWaiting: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
     onWheel: WheelEvent[HTMLDivElement] => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
+    openText: String = null,
     options: js.Array[_] = null,
     placeholder: String = null,
     popupIcon: ReactNode = null,
@@ -763,6 +781,7 @@ object AutocompleteProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     value: js.Any = null,
@@ -831,7 +850,9 @@ object AutocompleteProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (!js.isUndefined(clearOnEscape)) __obj.updateDynamic("clearOnEscape")(clearOnEscape)
+    if (clearText != null) __obj.updateDynamic("clearText")(clearText)
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
+    if (closeText != null) __obj.updateDynamic("closeText")(closeText)
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable)
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu)
@@ -955,6 +976,7 @@ object AutocompleteProps {
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (openText != null) __obj.updateDynamic("openText")(openText)
     if (options != null) __obj.updateDynamic("options")(options)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupIcon != null) __obj.updateDynamic("popupIcon")(popupIcon.asInstanceOf[js.Any])
@@ -975,6 +997,7 @@ object AutocompleteProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)

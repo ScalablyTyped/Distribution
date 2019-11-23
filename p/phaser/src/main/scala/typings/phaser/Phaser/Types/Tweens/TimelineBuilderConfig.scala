@@ -40,7 +40,7 @@ trait TimelineBuilderConfig extends js.Object {
     */
   var flipY: js.UndefOr[Boolean] = js.undefined
   /**
-    * The number of milliseconds to hold each tween before yoyoing. Each individual Tween configuration can override this value.
+    * The number of milliseconds to hold each tween before yoyo'ing. Each individual Tween configuration can override this value.
     */
   var hold: js.UndefOr[Double] = js.undefined
   /**

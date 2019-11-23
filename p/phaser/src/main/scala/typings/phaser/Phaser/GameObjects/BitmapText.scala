@@ -136,6 +136,17 @@ class BitmapText protected ()
     */
   var letterSpacing: Double = js.native
   /**
+    * The maximum display width of this BitmapText in pixels.
+    * 
+    * If BitmapText.text is longer than maxWidth then the lines will be automatically wrapped
+    * based on the last whitespace character found in the line.
+    * 
+    * If no whitespace was found then no wrapping will take place and consequently the maxWidth value will not be honored.
+    * 
+    * Disable maxWidth by setting the value to 0.
+    */
+  var maxWidth: Double = js.native
+  /**
     * The text that this Bitmap Text object displays.
     * 
     * You can also use the method `setText` if you want a chainable way to change the text content.
@@ -152,6 +163,11 @@ class BitmapText protected ()
     * The width of this Bitmap Text.
     */
   val width: Double = js.native
+  /**
+    * The character code used to detect for word wrapping.
+    * Defaults to 32 (a space character).
+    */
+  var wordWrapCharCode: Double = js.native
   /**
     * Calculate the bounds of this Bitmap Text.
     * 
@@ -216,6 +232,22 @@ class BitmapText protected ()
     */
   def setLetterSpacing(): this.type = js.native
   def setLetterSpacing(spacing: Double): this.type = js.native
+  /**
+    * Sets the maximum display width of this BitmapText in pixels.
+    * 
+    * If `BitmapText.text` is longer than `maxWidth` then the lines will be automatically wrapped
+    * based on the previous whitespace character found in the line.
+    * 
+    * If no whitespace was found then no wrapping will take place and consequently the `maxWidth` value will not be honored.
+    * 
+    * Disable maxWidth by setting the value to 0.
+    * 
+    * You can set the whitespace character to be searched for by setting the `wordWrapCharCode` parameter or property.
+    * @param value The maximum display width of this BitmapText in pixels. Set to zero to disable.
+    * @param wordWrapCharCode The character code to check for when word wrapping. Defaults to 32 (the space character).
+    */
+  def setMaxWidth(value: Double): this.type = js.native
+  def setMaxWidth(value: Double, wordWrapCharCode: Double): this.type = js.native
   /**
     * Set the lines of text in this BitmapText to be right-aligned.
     * This only has any effect if this BitmapText contains more than one line of text.

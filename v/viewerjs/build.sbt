@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "viewerjs"
-version := "1.4.0-450474"
+version := "1.5.0-4b790f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

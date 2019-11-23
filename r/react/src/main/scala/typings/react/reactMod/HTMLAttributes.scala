@@ -26,6 +26,7 @@ import typings.react.reactStrings.location
 import typings.react.reactStrings.menu
 import typings.react.reactStrings.mixed
 import typings.react.reactStrings.move
+import typings.react.reactStrings.no
 import typings.react.reactStrings.none
 import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
@@ -44,6 +45,7 @@ import typings.react.reactStrings.time
 import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
+import typings.react.reactStrings.yes
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -108,6 +110,7 @@ trait HTMLAttributes[T]
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
@@ -366,6 +369,7 @@ object HTMLAttributes {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null
@@ -621,6 +625,7 @@ object HTMLAttributes {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)

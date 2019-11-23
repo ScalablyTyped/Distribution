@@ -38,6 +38,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.location
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.menu
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mixed
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.move
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.no
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.none
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.numeric
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.off
@@ -58,6 +59,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.top
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tree
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.url
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.vertical
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.yes
 import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
@@ -400,6 +402,7 @@ trait SpeedDialActionProps extends js.Object {
     * Label to display in the tooltip.
     */
   var tooltipTitle: js.UndefOr[ReactNode] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
@@ -600,6 +603,7 @@ object SpeedDialActionProps {
     tooltipOpen: js.UndefOr[Boolean] = js.undefined,
     tooltipPlacement: `bottom-end` | `bottom-start` | bottom | `left-end` | `left-start` | left | `right-end` | `right-start` | right | `top-end` | `top-start` | top = null,
     tooltipTitle: ReactNode = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null
@@ -797,6 +801,7 @@ object SpeedDialActionProps {
     if (!js.isUndefined(tooltipOpen)) __obj.updateDynamic("tooltipOpen")(tooltipOpen)
     if (tooltipPlacement != null) __obj.updateDynamic("tooltipPlacement")(tooltipPlacement.asInstanceOf[js.Any])
     if (tooltipTitle != null) __obj.updateDynamic("tooltipTitle")(tooltipTitle.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for material-ui__lab
 
-Typings are for version 4.0.0-alpha.32
+Typings are for version 4.0.0-alpha.33
 
 ## Library description:
 Material-UI Lab - Incubator for Material-UI React components.

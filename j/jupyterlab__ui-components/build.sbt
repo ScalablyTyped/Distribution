@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__ui-components"
-version := "1.2.1-3938f7"
+version := "1.2.1-a60b38"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-b6f64a",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-8e0e80",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191122Z-caf4d8",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "typestyle" % "2.0.4-70af35")
 publishArtifact in packageDoc := false

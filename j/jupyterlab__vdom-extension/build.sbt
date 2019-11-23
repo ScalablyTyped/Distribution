@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__vdom-extension"
-version := "1.2.2-be2f87"
+version := "1.2.2-22e0fd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "jupyterlab__application" % "1.2.1-5453bb",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-45c609",
+  "org.scalablytyped" %%% "jupyterlab__application" % "1.2.1-64c8a8",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-84cb4b",
   "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-6eaed4",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-f3cdd1",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-9d62a3",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-d229f6",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-43843a",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-246d92",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-232c6b",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-3243c2",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-ba16eb",
-  "org.scalablytyped" %%% "jupyterlab__vdom" % "1.2.1-cb5c35",
-  "org.scalablytyped" %%% "nteract__transform-vdom" % "4.0.3-362095",
+  "org.scalablytyped" %%% "jupyterlab__vdom" % "1.2.1-fb8639",
+  "org.scalablytyped" %%% "nteract__transform-vdom" % "4.0.3-db671f",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-64f755",
   "org.scalablytyped" %%% "phosphor__application" % "1.7.3-94a74c",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-d6a857",
@@ -27,7 +27,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-b6f64a",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-8e0e80",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191122Z-caf4d8",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

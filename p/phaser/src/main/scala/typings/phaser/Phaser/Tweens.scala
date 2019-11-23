@@ -643,6 +643,7 @@ object Tweens extends js.Object {
       * Create a Tween Timeline and return it, but do NOT add it to the active or pending Tween lists.
       * @param config The configuration object for the Timeline and its Tweens.
       */
+    def createTimeline(): Timeline = js.native
     def createTimeline(config: TimelineBuilderConfig): Timeline = js.native
     /**
       * The Scene that owns this plugin is being destroyed.
@@ -766,6 +767,7 @@ object Tweens extends js.Object {
       * Create a Tween Timeline and add it to the active Tween list/
       * @param config The configuration object for the Timeline and its Tweens.
       */
+    def timeline(): Timeline = js.native
     def timeline(config: TimelineBuilderConfig): Timeline = js.native
     /**
       * Updates all Tweens and Timelines of the Tween Manager.

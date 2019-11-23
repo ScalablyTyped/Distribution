@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 - typings.atBabelTypes.atBabelTypesMod._Node because Already inherited */ trait TSTypePredicate
   extends TSType
      with BaseNode {
-  var asserts: Boolean
+  var asserts: Boolean | Null
   var parameterName: Identifier | TSThisType
   var typeAnnotation: TSTypeAnnotation | Null
   @JSName("type")
@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation._
 object TSTypePredicate {
   @scala.inline
   def apply(
-    asserts: Boolean,
     parameterName: Identifier | TSThisType,
     `type`: typings.atBabelTypes.atBabelTypesStrings.TSTypePredicate,
+    asserts: js.UndefOr[Boolean] = js.undefined,
     end: Int | Double = null,
     innerComments: js.Array[Comment] = null,
     leadingComments: js.Array[Comment] = null,
@@ -29,8 +29,9 @@ object TSTypePredicate {
     trailingComments: js.Array[Comment] = null,
     typeAnnotation: TSTypeAnnotation = null
   ): TSTypePredicate = {
-    val __obj = js.Dynamic.literal(asserts = asserts, parameterName = parameterName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(asserts)) __obj.updateDynamic("asserts")(asserts)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
@@ -45,11 +46,13 @@ object TSTypePredicate {
 @JSImport("@babel/types", "tsTypePredicate")
 @js.native
 object tsTypePredicate extends js.Object {
-  def apply(parameterName: Identifier, typeAnnotation: js.UndefOr[scala.Nothing], asserts: Boolean): TSTypePredicate = js.native
+  def apply(parameterName: Identifier): TSTypePredicate = js.native
   def apply(parameterName: Identifier, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = js.native
+  def apply(parameterName: Identifier, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
   def apply(parameterName: Identifier, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = js.native
-  def apply(parameterName: TSThisType, typeAnnotation: js.UndefOr[scala.Nothing], asserts: Boolean): TSTypePredicate = js.native
+  def apply(parameterName: TSThisType): TSTypePredicate = js.native
   def apply(parameterName: TSThisType, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = js.native
+  def apply(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
   def apply(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = js.native
 }
 

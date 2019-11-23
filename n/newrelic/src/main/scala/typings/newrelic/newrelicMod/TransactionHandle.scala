@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TransactionHandle extends js.Object {
   /**
+    * Parses incoming distributed trace header payload.
+    */
+  def acceptDistributedTracePayload(payload: DistributedTracePayload): Unit = js.native
+  /**
+    * Creates a distributed trace payload.
+    */
+  def createDistributedTracePayload(): DistributedTracePayload = js.native
+  /**
     * End the transaction.
     */
   def end(): Unit = js.native

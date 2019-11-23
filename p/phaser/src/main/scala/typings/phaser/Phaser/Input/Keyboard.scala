@@ -1070,6 +1070,10 @@ object Keyboard extends js.Object {
       */
     var NINE: integer = js.native
     /**
+      * The Numpad Addition (+) key.
+      */
+    var NUMPAD_ADD: integer = js.native
+    /**
       * The NUMPAD_EIGHT key.
       */
     var NUMPAD_EIGHT: integer = js.native
@@ -1097,6 +1101,10 @@ object Keyboard extends js.Object {
       * The NUMPAD_SIX key.
       */
     var NUMPAD_SIX: integer = js.native
+    /**
+      * The Numpad Subtraction (-) key.
+      */
+    var NUMPAD_SUBTRACT: integer = js.native
     /**
       * The NUMPAD_THREE key.
       */

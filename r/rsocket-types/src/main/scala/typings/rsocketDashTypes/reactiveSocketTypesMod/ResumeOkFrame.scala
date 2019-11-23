@@ -9,15 +9,17 @@ import scala.scalajs.js.annotation._
 trait ResumeOkFrame extends Frame {
   var clientPosition: Double
   var flags: Double
+  var length: js.UndefOr[Double] = js.undefined
   var streamId: `0`
   var `type`: `0x0e`
 }
 
 object ResumeOkFrame {
   @scala.inline
-  def apply(clientPosition: Double, flags: Double, streamId: `0`, `type`: `0x0e`): ResumeOkFrame = {
+  def apply(clientPosition: Double, flags: Double, streamId: `0`, `type`: `0x0e`, length: Int | Double = null): ResumeOkFrame = {
     val __obj = js.Dynamic.literal(clientPosition = clientPosition, flags = flags, streamId = streamId)
     __obj.updateDynamic("type")(`type`)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResumeOkFrame]
   }
 }

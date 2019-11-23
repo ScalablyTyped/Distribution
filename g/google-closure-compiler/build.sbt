@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "google-closure-compiler"
-version := "0.0-unknown-dt-20190322Z-26d4ef"
+version := "0.0-unknown-dt-20190322Z-351b90"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

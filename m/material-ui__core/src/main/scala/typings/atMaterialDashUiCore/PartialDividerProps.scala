@@ -27,6 +27,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.middle
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -45,6 +46,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.atMaterialDashUiCore.dividerDividerMod.DividerProps
 import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
@@ -345,6 +347,7 @@ trait PartialDividerProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var variant: js.UndefOr[fullWidth | inset | middle] = js.undefined
@@ -529,6 +532,7 @@ object PartialDividerProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     variant: fullWidth | inset | middle = null,
@@ -710,6 +714,7 @@ object PartialDividerProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])

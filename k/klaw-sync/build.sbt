@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "klaw-sync"
-version := "6.0-dt-20181231Z-d12dd3"
+version := "6.0-dt-20181231Z-848cc7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

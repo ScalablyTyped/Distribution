@@ -37,6 +37,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.middle
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -57,6 +58,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.top
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
 import typings.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
 import typings.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
@@ -366,6 +368,7 @@ trait TablePaginationProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
   var tabIndex: js.UndefOr[Double] = js.native
   var title: js.UndefOr[String] = js.native
+  var translate: js.UndefOr[yes | no] = js.native
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
   var valign: js.UndefOr[top | middle | bottom | baseline] = js.native

@@ -25,6 +25,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.location
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -43,6 +44,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.atMaterialDashUiCore.stylesCreateMuiThemeMod.Theme
 import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
@@ -360,6 +362,7 @@ trait BackdropProps extends js.Object {
   var timeout: js.UndefOr[Double | Anon_Appear] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var transitionDuration: js.UndefOr[Double | Anon_Appear] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -557,6 +560,7 @@ object BackdropProps {
     timeout: Double | Anon_Appear = null,
     title: String = null,
     transitionDuration: Double | Anon_Appear = null,
+    translate: yes | no = null,
     typeof: String = null,
     unmountOnExit: js.UndefOr[Boolean] = js.undefined,
     unselectable: on | off = null,
@@ -750,6 +754,7 @@ object BackdropProps {
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

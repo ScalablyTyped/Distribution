@@ -92,13 +92,20 @@ class ArcadePhysics protected () extends js.Object {
     ySpeedMax: Double
   ): Double = js.native
   /**
-    * Finds the Dynamic Body closest to a source point or object.
+    * Finds the Body or Game Object closest to a source point or object.
     * 
-    * If two or more bodies are the exact same distance from the source point, only the first body
+    * If a `targets` argument is passed, this method finds the closest of those.
+    * The targets can be Arcade Physics Game Objects, Dynamic Bodies, or Static Bodies.
+    * 
+    * If no `targets` argument is passed, this method finds the closest Dynamic Body.
+    * 
+    * If two or more targets are the exact same distance from the source point, only the first target
     * is returned.
     * @param source Any object with public `x` and `y` properties, such as a Game Object or Geometry object.
+    * @param targets The targets.
     */
-  def closest(source: js.Any): Body = js.native
+  def closest(source: js.Any): Body | StaticBody | GameObject = js.native
+  def closest(source: js.Any, targets: js.Array[Body | GameObject | StaticBody]): Body | StaticBody | GameObject = js.native
   /**
     * Performs a collision check and separation between the two physics enabled objects given, which can be single
     * Game Objects, arrays of Game Objects, Physics Groups, arrays of Physics Groups or normal Groups.
@@ -182,13 +189,20 @@ class ArcadePhysics protected () extends js.Object {
     */
   def destroy(): Unit = js.native
   /**
-    * Finds the Dynamic Body farthest from a source point or object.
+    * Finds the Body or Game Object farthest from a source point or object.
     * 
-    * If two or more bodies are the exact same distance from the source point, only the first body
+    * If a `targets` argument is passed, this method finds the farthest of those.
+    * The targets can be Arcade Physics Game Objects, Dynamic Bodies, or Static Bodies.
+    * 
+    * If no `targets` argument is passed, this method finds the farthest Dynamic Body.
+    * 
+    * If two or more targets are the exact same distance from the source point, only the first target
     * is returned.
     * @param source Any object with public `x` and `y` properties, such as a Game Object or Geometry object.
+    * @param targets The targets.
     */
-  def furthest(source: js.Any): Body = js.native
+  def furthest(source: js.Any): Body | StaticBody | GameObject = js.native
+  def furthest(source: js.Any, targets: js.Array[Body | GameObject | StaticBody]): Body | StaticBody | GameObject = js.native
   /**
     * Creates the physics configuration for the current Scene.
     */
@@ -248,6 +262,24 @@ class ArcadePhysics protected () extends js.Object {
     processCallback: ArcadePhysicsCallback,
     callbackContext: js.Any
   ): Boolean = js.native
+  /**
+    * This method will search the given circular area and return an array of all physics bodies that
+    * overlap with it. It can return either Dynamic, Static bodies or a mixture of both.
+    * 
+    * A body only has to intersect with the search area to be considered, it doesn't have to be fully
+    * contained within it.
+    * 
+    * If Arcade Physics is set to use the RTree (which it is by default) then the search is rather fast,
+    * otherwise the search is O(N) for Dynamic Bodies.
+    * @param x The x coordinate of the center of the area to search within.
+    * @param y The y coordinate of the center of the area to search within.
+    * @param radius The radius of the area to search within.
+    * @param includeDynamic Should the search include Dynamic Bodies? Default true.
+    * @param includeStatic Should the search include Static Bodies? Default false.
+    */
+  def overlapCirc(x: Double, y: Double, radius: Double): js.Array[Body | StaticBody] = js.native
+  def overlapCirc(x: Double, y: Double, radius: Double, includeDynamic: Boolean): js.Array[Body | StaticBody] = js.native
+  def overlapCirc(x: Double, y: Double, radius: Double, includeDynamic: Boolean, includeStatic: Boolean): js.Array[Body | StaticBody] = js.native
   /**
     * This method will search the given rectangular area and return an array of all physics bodies that
     * overlap with it. It can return either Dynamic, Static bodies or a mixture of both.

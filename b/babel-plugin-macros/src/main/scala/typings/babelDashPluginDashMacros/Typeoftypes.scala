@@ -5259,11 +5259,13 @@ trait Typeoftypes extends js.Object {
   def tsTypeParameter(constraint: TSType, _default: TSType, name: String): TSTypeParameter = js.native
   def tsTypeParameterDeclaration(params: js.Array[TSTypeParameter]): TSTypeParameterDeclaration = js.native
   def tsTypeParameterInstantiation(params: js.Array[TSType]): TSTypeParameterInstantiation = js.native
-  def tsTypePredicate(parameterName: Identifier, typeAnnotation: js.UndefOr[scala.Nothing], asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: Identifier): TSTypePredicate = js.native
   def tsTypePredicate(parameterName: Identifier, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: Identifier, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
   def tsTypePredicate(parameterName: Identifier, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = js.native
-  def tsTypePredicate(parameterName: TSThisType, typeAnnotation: js.UndefOr[scala.Nothing], asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: TSThisType): TSTypePredicate = js.native
   def tsTypePredicate(parameterName: TSThisType, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = js.native
+  def tsTypePredicate(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): TSTypePredicate = js.native
   def tsTypePredicate(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = js.native
   def tsTypeQuery(exprName: TSEntityName): TSTypeQuery = js.native
   def tsTypeQuery(exprName: TSImportType): TSTypeQuery = js.native

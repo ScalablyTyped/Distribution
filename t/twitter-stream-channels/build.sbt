@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "twitter-stream-channels"
-version := "1.0.0-dt-20190322Z-45ef54"
+version := "1.0.0-dt-20190322Z-8d29c0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-a51fd7",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "twit" % "2.2-dt-20191009Z-bb622b")
+  "org.scalablytyped" %%% "twit" % "2.2-dt-20191009Z-7f07bf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -24,6 +24,7 @@ import typings.antd.antdStrings.location
 import typings.antd.antdStrings.menu
 import typings.antd.antdStrings.mixed
 import typings.antd.antdStrings.move
+import typings.antd.antdStrings.no
 import typings.antd.antdStrings.none
 import typings.antd.antdStrings.numeric
 import typings.antd.antdStrings.off
@@ -42,6 +43,7 @@ import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
+import typings.antd.antdStrings.yes
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
@@ -323,6 +325,7 @@ trait WeakValidationMapBasicProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var translate: js.UndefOr[Validator[js.UndefOr[yes | no | Null]]] = js.undefined
   var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.undefined
   var vocab: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -502,6 +505,7 @@ object WeakValidationMapBasicProps {
     suppressHydrationWarning: Validator[js.UndefOr[Boolean | Null]] = null,
     tabIndex: Validator[js.UndefOr[Double | Null]] = null,
     title: Validator[js.UndefOr[Null | String]] = null,
+    translate: Validator[js.UndefOr[yes | no | Null]] = null,
     typeof: Validator[js.UndefOr[Null | String]] = null,
     unselectable: Validator[js.UndefOr[on | off | Null]] = null,
     vocab: Validator[js.UndefOr[Null | String]] = null
@@ -678,6 +682,7 @@ object WeakValidationMapBasicProps {
     if (suppressHydrationWarning != null) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
     if (title != null) __obj.updateDynamic("title")(title)
+    if (translate != null) __obj.updateDynamic("translate")(translate)
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable)
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)

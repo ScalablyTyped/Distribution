@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait ResumeFrame extends Frame {
   var clientPosition: Double
   var flags: Double
+  var length: js.UndefOr[Double] = js.undefined
   var majorVersion: Double
   var minorVersion: Double
   var resumeToken: Encodable
@@ -27,10 +28,12 @@ object ResumeFrame {
     resumeToken: Encodable,
     serverPosition: Double,
     streamId: `0`,
-    `type`: `0x0d`
+    `type`: `0x0d`,
+    length: Int | Double = null
   ): ResumeFrame = {
     val __obj = js.Dynamic.literal(clientPosition = clientPosition, flags = flags, majorVersion = majorVersion, minorVersion = minorVersion, resumeToken = resumeToken.asInstanceOf[js.Any], serverPosition = serverPosition, streamId = streamId)
     __obj.updateDynamic("type")(`type`)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResumeFrame]
   }
 }

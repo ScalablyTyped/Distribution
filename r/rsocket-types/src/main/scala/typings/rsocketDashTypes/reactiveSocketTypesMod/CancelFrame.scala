@@ -7,15 +7,17 @@ import scala.scalajs.js.annotation._
 
 trait CancelFrame extends Frame {
   var flags: Double
+  var length: js.UndefOr[Double] = js.undefined
   var streamId: Double
   var `type`: `0x09`
 }
 
 object CancelFrame {
   @scala.inline
-  def apply(flags: Double, streamId: Double, `type`: `0x09`): CancelFrame = {
+  def apply(flags: Double, streamId: Double, `type`: `0x09`, length: Int | Double = null): CancelFrame = {
     val __obj = js.Dynamic.literal(flags = flags, streamId = streamId)
     __obj.updateDynamic("type")(`type`)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelFrame]
   }
 }

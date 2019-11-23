@@ -24,6 +24,7 @@ import typings.antd.antdStrings.location
 import typings.antd.antdStrings.menu
 import typings.antd.antdStrings.mixed
 import typings.antd.antdStrings.move
+import typings.antd.antdStrings.no
 import typings.antd.antdStrings.none
 import typings.antd.antdStrings.numeric
 import typings.antd.antdStrings.off
@@ -42,6 +43,7 @@ import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
+import typings.antd.antdStrings.yes
 import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
@@ -348,6 +350,7 @@ trait CardProps extends js.Object {
   var tabIndex: js.UndefOr[Double] = js.undefined
   var tabList: js.UndefOr[js.Array[CardTabListType]] = js.undefined
   var title: js.UndefOr[ReactNode] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var `type`: js.UndefOr[CardType] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -542,6 +545,7 @@ object CardProps {
     tabIndex: Int | Double = null,
     tabList: js.Array[CardTabListType] = null,
     title: ReactNode = null,
+    translate: yes | no = null,
     `type`: CardType = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -733,6 +737,7 @@ object CardProps {
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tabList != null) __obj.updateDynamic("tabList")(tabList)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

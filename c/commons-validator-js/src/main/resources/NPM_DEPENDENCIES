@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "commons-validator-js" : "1.0.1402"
+      "commons-validator-js" : "1.0.1403"
     }
   ],
   "test-dependencies" : [
     {
-      "commons-validator-js" : "1.0.1402"
+      "commons-validator-js" : "1.0.1403"
     }
   ],
   "compile-devDependencies" : [

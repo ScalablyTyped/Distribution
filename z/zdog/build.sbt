@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zdog"
-version := "1.1-dt-20190715Z-5f1ee2"
+version := "1.1-dt-20191122Z-5f1ee2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

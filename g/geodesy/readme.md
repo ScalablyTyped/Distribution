@@ -1,7 +1,7 @@
 
 # Scala.js typings for geodesy
 
-Typings are for version 1.2
+Typings are for version 2.2
 
 ## Library description:
 Libraries of geodesy functions

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "gulp-imagemin"
-version := "4.1-dt-20180825Z-c104e5"
+version := "4.1-dt-20180825Z-ce4108"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "imagemin" % "7.0-dt-20190909Z-d41e95",
-  "org.scalablytyped" %%% "imagemin-gifsicle" % "5.2-dt-20180825Z-557331",
-  "org.scalablytyped" %%% "imagemin-jpegtran" % "5.0-dt-20180825Z-2a9d90",
-  "org.scalablytyped" %%% "imagemin-optipng" % "5.2-dt-20180825Z-0ef196",
-  "org.scalablytyped" %%% "imagemin-svgo" % "7.0-dt-20180825Z-90a424",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "imagemin" % "7.0-dt-20190909Z-b80395",
+  "org.scalablytyped" %%% "imagemin-gifsicle" % "5.2-dt-20180825Z-dc6ab2",
+  "org.scalablytyped" %%% "imagemin-jpegtran" % "5.0-dt-20180825Z-df16a4",
+  "org.scalablytyped" %%% "imagemin-optipng" % "5.2-dt-20180825Z-a2d77c",
+  "org.scalablytyped" %%% "imagemin-svgo" % "7.0-dt-20180825Z-0f9932",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "svgo" % "1.3-dt-20190927Z-8cf37a")
 publishArtifact in packageDoc := false

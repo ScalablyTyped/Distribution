@@ -65,6 +65,8 @@ object Time extends js.Object {
       * @param args The arguments to call the function with.
       * @param callbackScope The scope (`this` object) to call the function with.
       */
+    def delayedCall(delay: Double, callback: js.Function): TimerEvent = js.native
+    def delayedCall(delay: Double, callback: js.Function, args: js.Array[_]): TimerEvent = js.native
     def delayedCall(delay: Double, callback: js.Function, args: js.Array[_], callbackScope: js.Any): TimerEvent = js.native
     /**
       * Updates the arrays of active and pending Timer Events. Called at the start of the frame.

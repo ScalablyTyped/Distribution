@@ -372,10 +372,11 @@ object Utils extends js.Object {
       * Replaces an element of the array with the new element.
       * The new element cannot already be a member of the array.
       * The array is modified in-place.
+      * @param array The array to search within.
       * @param oldChild The element in the array that will be replaced.
       * @param newChild The element to be inserted into the array at the position of `oldChild`.
       */
-    def Replace(oldChild: js.Any, newChild: js.Any): Boolean = js.native
+    def Replace(array: js.Array[_], oldChild: js.Any, newChild: js.Any): Boolean = js.native
     /**
       * Moves the element at the start of the array to the end, shifting all items in the process.
       * The "rotation" happens to the left.

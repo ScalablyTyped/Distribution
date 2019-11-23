@@ -1,0 +1,20 @@
+package typings.ibmDashOpenapiDashValidator.ibmDashOpenapiDashValidatorMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait validatorResultItem extends js.Object {
+  var message: String
+  var path: String
+}
+
+object validatorResultItem {
+  @scala.inline
+  def apply(message: String, path: String): validatorResultItem = {
+    val __obj = js.Dynamic.literal(message = message, path = path)
+  
+    __obj.asInstanceOf[validatorResultItem]
+  }
+}
+

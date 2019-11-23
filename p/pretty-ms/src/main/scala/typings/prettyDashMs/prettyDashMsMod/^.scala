@@ -25,6 +25,9 @@ object ^ extends js.Object {
   // `verbose` option
   prettyMilliseconds(1335669000, {verbose: true});
   //=> '15 days 11 hours 1 minute 9 seconds'
+  // `colonNotation` option
+  prettyMilliseconds(95500, {colonNotation: true});
+  //=> '1:35.5'
   // `formatSubMilliseconds` option
   prettyMilliseconds(100.400080, {formatSubMilliseconds: true})
   //=> '100ms 400µs 80ns'

@@ -21,6 +21,8 @@ trait ParseConfig extends js.Object {
    // default: false
   var download: js.UndefOr[Boolean] = js.undefined
    // default: false
+  var downloadRequestHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
+   // default: false
   var dynamicTyping: js.UndefOr[
     Boolean | (StringDictionary[Boolean] with NumberDictionary[Boolean]) | (js.Function1[/* field */ String | Double, Boolean])
   ] = js.undefined
@@ -28,6 +30,8 @@ trait ParseConfig extends js.Object {
   var encoding: js.UndefOr[String] = js.undefined
    // default: undefined
   var error: js.UndefOr[js.Function2[/* error */ ParseError, /* file */ js.UndefOr[File], Unit]] = js.undefined
+   // default: '"'
+  var escapeChar: js.UndefOr[String] = js.undefined
    // default: false
   var fastMode: js.UndefOr[Boolean] = js.undefined
    // default: '"'
@@ -38,7 +42,7 @@ trait ParseConfig extends js.Object {
   var preview: js.UndefOr[Double] = js.undefined
    // default: "\r\n"
   var quoteChar: js.UndefOr[String] = js.undefined
-   // default: false
+   // default: undefined
   var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.undefined
    // default: undefined
   // Callbacks
@@ -64,9 +68,11 @@ object ParseConfig {
     complete: (/* results */ ParseResult, /* file */ js.UndefOr[File]) => Unit = null,
     delimiter: String = null,
     download: js.UndefOr[Boolean] = js.undefined,
+    downloadRequestHeaders: StringDictionary[String] = null,
     dynamicTyping: Boolean | (StringDictionary[Boolean] with NumberDictionary[Boolean]) | (js.Function1[/* field */ String | Double, Boolean]) = null,
     encoding: String = null,
     error: (/* error */ ParseError, /* file */ js.UndefOr[File]) => Unit = null,
+    escapeChar: String = null,
     fastMode: js.UndefOr[Boolean] = js.undefined,
     header: js.UndefOr[Boolean] = js.undefined,
     newline: String = null,
@@ -87,9 +93,11 @@ object ParseConfig {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
+    if (downloadRequestHeaders != null) __obj.updateDynamic("downloadRequestHeaders")(downloadRequestHeaders)
     if (dynamicTyping != null) __obj.updateDynamic("dynamicTyping")(dynamicTyping.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2(error))
+    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar)
     if (!js.isUndefined(fastMode)) __obj.updateDynamic("fastMode")(fastMode)
     if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
     if (newline != null) __obj.updateDynamic("newline")(newline)

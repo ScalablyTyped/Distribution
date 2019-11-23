@@ -6,7 +6,6 @@ import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.AnimateType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
-import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,6 @@ trait AccordionProps extends js.Object {
   var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var animate: js.UndefOr[AnimateType] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var messages: js.UndefOr[Anon_TabContents] = js.undefined
@@ -31,7 +29,6 @@ object AccordionProps {
     activeIndex: Double | js.Array[Double] = null,
     alignSelf: AlignSelfType = null,
     animate: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,
     messages: Anon_TabContents = null,
@@ -43,7 +40,6 @@ object AccordionProps {
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)

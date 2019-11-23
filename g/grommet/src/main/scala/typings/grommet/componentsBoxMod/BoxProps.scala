@@ -83,8 +83,10 @@ trait BoxProps extends js.Object {
   var height: js.UndefOr[
     xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large
   ] = js.undefined
+  var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.undefined
   var justify: js.UndefOr[around | between | center | end | evenly | start | stretch] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var overflow: js.UndefOr[auto | hidden | scroll | visible | Anon_Auto | String] = js.undefined
   var pad: js.UndefOr[PadType] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
@@ -117,8 +119,10 @@ object BoxProps {
     gap: GapType = null,
     gridArea: GridAreaType = null,
     height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Anon_Large = null,
+    hoverIndicator: BackgroundType | Boolean = null,
     justify: around | between | center | end | evenly | start | stretch = null,
     margin: MarginType = null,
+    onClick: /* repeated */ js.Any => _ = null,
     overflow: auto | hidden | scroll | visible | Anon_Auto | String = null,
     pad: PadType = null,
     responsive: js.UndefOr[Boolean] = js.undefined,
@@ -144,8 +148,10 @@ object BoxProps {
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hoverIndicator != null) __obj.updateDynamic("hoverIndicator")(hoverIndicator.asInstanceOf[js.Any])
     if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)

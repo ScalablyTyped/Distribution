@@ -20,6 +20,14 @@ trait SigninOptions extends js.Object {
     */
   var fetch_basic_profile: js.UndefOr[Boolean] = js.undefined
   /**
+    * When your app knows which user it is trying to authenticate, it can provide this parameter as a hint to the authentication server.
+    * Passing this hint suppresses the account chooser and either pre-fill the email box on the sign-in form, or select the proper session (if the user is using multiple sign-in),
+    * which can help you avoid problems that occur if your app logs in the wrong user account. The value can be either an email address or the sub string,
+    * which is equivalent to the user's Google ID.
+    * https://developers.google.com/identity/protocols/OpenIDConnect?hl=en#authenticationuriparameters
+    */
+  var login_hint: js.UndefOr[String] = js.undefined
+  /**
     * Specifies whether to prompt the user for re-authentication.
     * See OpenID Connect Request Parameters:
     * https://openid.net/specs/openid-connect-basic-1_0.html#RequestParameters
@@ -47,6 +55,7 @@ object SigninOptions {
   def apply(
     app_package_name: String = null,
     fetch_basic_profile: js.UndefOr[Boolean] = js.undefined,
+    login_hint: String = null,
     prompt: String = null,
     redirect_uri: String = null,
     scope: String = null,
@@ -55,6 +64,7 @@ object SigninOptions {
     val __obj = js.Dynamic.literal()
     if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name)
     if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile)
+    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint)
     if (prompt != null) __obj.updateDynamic("prompt")(prompt)
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
     if (scope != null) __obj.updateDynamic("scope")(scope)

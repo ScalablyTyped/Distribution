@@ -859,8 +859,10 @@ object Textures extends js.Object {
       * This is a WebGL only feature.
       * @param key The unique string-based key of the Texture.
       * @param glTexture The source Render Texture.
+      * @param width The new width of the Texture.
+      * @param height The new height of the Texture.
       */
-    def addGLTexture(key: String, glTexture: WebGLTexture): Texture = js.native
+    def addGLTexture(key: String, glTexture: WebGLTexture, width: Double, height: Double): Texture = js.native
     /**
       * Adds a new Texture to the Texture Manager created from the given Image element.
       * @param key The unique string-based key of the Texture.

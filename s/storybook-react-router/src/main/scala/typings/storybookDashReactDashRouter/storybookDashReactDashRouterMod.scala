@@ -1,6 +1,7 @@
 package typings.storybookDashReactDashRouter
 
-import typings.atStorybookReact.atStorybookReactMod.StoryDecorator
+import typings.atStorybookAddons.distTypesMod.DecoratorFunction
+import typings.atStorybookReact.distClientPreviewTypesMod.StoryFnReactReturnType
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
@@ -20,8 +21,8 @@ object storybookDashReactDashRouterMod extends js.Object {
   }
   
   val StoryRouter: ComponentType[Anon_Links] = js.native
-  def default(): StoryDecorator = js.native
-  def default(links: js.Object): StoryDecorator = js.native
-  def default(links: js.Object, routerProps: MemoryRouterProps): StoryDecorator = js.native
+  def default(): DecoratorFunction[StoryFnReactReturnType] = js.native
+  def default(links: js.Object): DecoratorFunction[StoryFnReactReturnType] = js.native
+  def default(links: js.Object, routerProps: MemoryRouterProps): DecoratorFunction[StoryFnReactReturnType] = js.native
 }
 

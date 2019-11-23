@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FetchError protected () extends Error {
   def this(message: String, `type`: String) = this()
-  def this(message: String, `type`: String, systemError: String) = this()
+  def this(message: String, `type`: String, systemError: SystemError) = this()
   var code: js.UndefOr[String] = js.native
   var errno: js.UndefOr[String] = js.native
   /* CompleteClass */

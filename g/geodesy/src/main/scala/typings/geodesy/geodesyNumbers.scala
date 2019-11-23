@@ -1,27 +1,31 @@
 package typings.geodesy
 
+import typings.geodesy.dmsMod.Precision
+import typings.geodesy.geodesyMod.Dp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object geodesyNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0` extends Dp
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1` extends Precision
   
   @js.native
   sealed trait `10` extends js.Object
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends Dp
+       with Precision
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3` extends Precision
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4` extends Dp
   
   @js.native
   sealed trait `6` extends js.Object

@@ -61,6 +61,7 @@ trait ReactImageGalleryProps extends js.Object {
   var renderRightNav: js.UndefOr[
     js.Function2[/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean, ReactNode]
   ] = js.undefined
+  var renderThumbInner: js.UndefOr[js.Function1[/* item */ ReactImageGalleryItem, ReactNode]] = js.undefined
   var showBullets: js.UndefOr[Boolean] = js.undefined
   var showFullscreenButton: js.UndefOr[Boolean] = js.undefined
   var showIndex: js.UndefOr[Boolean] = js.undefined
@@ -115,6 +116,7 @@ object ReactImageGalleryProps {
     renderLeftNav: (/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean) => ReactNode = null,
     renderPlayPauseButton: (/* onClick */ MouseEventHandler[HTMLElement], /* isPlaying */ Boolean) => ReactNode = null,
     renderRightNav: (/* onClick */ MouseEventHandler[HTMLElement], /* isDisabled */ Boolean) => ReactNode = null,
+    renderThumbInner: /* item */ ReactImageGalleryItem => ReactNode = null,
     showBullets: js.UndefOr[Boolean] = js.undefined,
     showFullscreenButton: js.UndefOr[Boolean] = js.undefined,
     showIndex: js.UndefOr[Boolean] = js.undefined,
@@ -165,6 +167,7 @@ object ReactImageGalleryProps {
     if (renderLeftNav != null) __obj.updateDynamic("renderLeftNav")(js.Any.fromFunction2(renderLeftNav))
     if (renderPlayPauseButton != null) __obj.updateDynamic("renderPlayPauseButton")(js.Any.fromFunction2(renderPlayPauseButton))
     if (renderRightNav != null) __obj.updateDynamic("renderRightNav")(js.Any.fromFunction2(renderRightNav))
+    if (renderThumbInner != null) __obj.updateDynamic("renderThumbInner")(js.Any.fromFunction1(renderThumbInner))
     if (!js.isUndefined(showBullets)) __obj.updateDynamic("showBullets")(showBullets)
     if (!js.isUndefined(showFullscreenButton)) __obj.updateDynamic("showFullscreenButton")(showFullscreenButton)
     if (!js.isUndefined(showIndex)) __obj.updateDynamic("showIndex")(showIndex)

@@ -687,7 +687,7 @@ class FacebookInstantGamesPlugin protected () extends EventEmitter {
   /**
     * Informs Facebook of a custom update that occurred in the game.
     * This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.
-    * Once Facebook returns control to the game the plugin will emit an `update` or `upatefail` event.
+    * Once Facebook returns control to the game the plugin will emit an `update` or `updatefail` event.
     * 
     * It makes an async call to the API, so the result isn't available immediately.
     * 
@@ -716,7 +716,7 @@ class FacebookInstantGamesPlugin protected () extends EventEmitter {
   /**
     * Informs Facebook of a leaderboard update that occurred in the game.
     * This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.
-    * Once Facebook returns control to the game the plugin will emit an `update` or `upatefail` event.
+    * Once Facebook returns control to the game the plugin will emit an `update` or `updatefail` event.
     * 
     * It makes an async call to the API, so the result isn't available immediately.
     * 

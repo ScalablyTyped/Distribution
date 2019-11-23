@@ -1185,6 +1185,9 @@ object antdStrings {
   sealed trait next extends js.Object
   
   @js.native
+  sealed trait no extends js.Object
+  
+  @js.native
   sealed trait `no-change` extends js.Object
   
   @js.native
@@ -2073,6 +2076,9 @@ object antdStrings {
        with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
   
   @js.native
+  sealed trait yes extends js.Object
+  
+  @js.native
   sealed trait zoom extends js.Object
   
   @scala.inline
@@ -2688,6 +2694,8 @@ object antdStrings {
   @scala.inline
   def next: next = "next".asInstanceOf[next]
   @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  @scala.inline
   def `no-change`: `no-change` = "no-change".asInstanceOf[`no-change`]
   @scala.inline
   def `no-drag`: `no-drag` = "no-drag".asInstanceOf[`no-drag`]
@@ -3173,6 +3181,8 @@ object antdStrings {
   def xxl: xxl = "xxl".asInstanceOf[xxl]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
 }

@@ -22,5 +22,6 @@ class ServerResponse protected () extends OutgoingMessage {
   def writeHead(statusCode: Double, headers: OutgoingHttpHeaders): this.type = js.native
   def writeHead(statusCode: Double, reasonPhrase: java.lang.String): this.type = js.native
   def writeHead(statusCode: Double, reasonPhrase: java.lang.String, headers: OutgoingHttpHeaders): this.type = js.native
+  def writeProcessing(): Unit = js.native
 }
 

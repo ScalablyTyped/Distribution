@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "griddle-react"
-version := "1.13.1-671a8d"
+version := "1.13.1-62a0ec"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-e5e42d",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-202a38",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-67e280",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20191018Z-f1ed5d",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191122Z-caf4d8",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20191018Z-0755fc",
   "org.scalablytyped" %%% "redux" % "4.0.4-ae4e73",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false

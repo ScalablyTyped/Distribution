@@ -16,6 +16,16 @@ object ^ extends js.Object {
     */
   var EPSILON: Double = js.native
   /**
+    * The maximum safe integer this browser supports.
+    * We use a const for backward compatibility with Internet Explorer.
+    */
+  var MAX_SAFE_INTEGER: Double = js.native
+  /**
+    * The minimum safe integer this browser supports.
+    * We use a const for backward compatibility with Internet Explorer.
+    */
+  var MIN_SAFE_INTEGER: Double = js.native
+  /**
     * The value of PI * 2.
     */
   var PI2: Double = js.native

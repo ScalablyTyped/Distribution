@@ -112,6 +112,6 @@ package object rollupMod {
     js.Promise[TransformResult] | TransformResult
   ]
   type TransformResult = js.UndefOr[String | Null | TransformSourceDescription]
-  type WarningHandler = js.Function1[/* warning */ String | RollupWarning, Unit]
-  type WarningHandlerWithDefault = js.Function2[/* warning */ String | RollupWarning, /* defaultHandler */ WarningHandler, Unit]
+  type WarningHandler = js.Function1[/* warning */ RollupWarning, Unit]
+  type WarningHandlerWithDefault = js.Function2[/* warning */ RollupWarning, /* defaultHandler */ WarningHandler, Unit]
 }

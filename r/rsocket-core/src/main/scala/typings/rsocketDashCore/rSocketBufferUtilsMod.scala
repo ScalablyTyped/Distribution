@@ -2,7 +2,6 @@ package typings.rsocketDashCore
 
 import typings.node.Buffer
 import typings.rsocketDashCore.rSocketBufferUtilsMod.Encoding
-import typings.rsocketDashCore.rsocketDashCoreNumbers._0x100000000
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,6 @@ object rSocketBufferUtilsMod extends js.Object {
   */
   trait Encoding extends js.Object
   
-  val BITWISE_OVERFLOW: _0x100000000 = js.native
   def byteLength(data: js.Any, encoding: Encoding): Double = js.native
   def createBuffer(args: js.Any*): Buffer = js.native
   def readUInt24BE(buffer: Buffer, offset: Double): Double = js.native

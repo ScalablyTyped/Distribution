@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation._
   * physics body, etc.
   * 
   * Transparent videos are also possible via the WebM file format. Providing the video file has was encoded with
-  * an alpha channel, and providing the browser supports WebM playback (not all of them do), then it willl render
+  * an alpha channel, and providing the browser supports WebM playback (not all of them do), then it will render
   * in-game with full transparency.
   * 
   * ### Autoplaying Videos
@@ -169,6 +169,11 @@ class Video protected ()
     */
   var playWhenUnlocked: Boolean = js.native
   /**
+    * Should the Video element that this Video is using, be removed from the DOM
+    * when this Video is destroyed?
+    */
+  var removeVideoElementOnDestroy: Boolean = js.native
+  /**
     * The current retry attempt.
     */
   var retry: integer = js.native
@@ -231,7 +236,7 @@ class Video protected ()
     * You can then play back specific markers via the `playMarker` method.
     * 
     * Note that marker timing is _not_ frame-perfect. You should construct your videos in such a way that you allow for
-    * plenty of extra padding before and after each sequence to allow for discrepencies in browser seek and currentTime accuracy.
+    * plenty of extra padding before and after each sequence to allow for discrepancies in browser seek and currentTime accuracy.
     * 
     * See https://github.com/w3c/media-and-entertainment/issues/4 for more details about this issue.
     * @param key A unique name to give this marker.
@@ -375,7 +380,7 @@ class Video protected ()
     * specified via the `addMarker` method.
     * 
     * Note that marker timing is _not_ frame-perfect. You should construct your videos in such a way that you allow for
-    * plenty of extra padding before and after each sequence to allow for discrepencies in browser seek and currentTime accuracy.
+    * plenty of extra padding before and after each sequence to allow for discrepancies in browser seek and currentTime accuracy.
     * 
     * See https://github.com/w3c/media-and-entertainment/issues/4 for more details about this issue.
     * @param key The name of the marker sequence to play.
@@ -438,7 +443,7 @@ class Video protected ()
     */
   def saveSnapshotTexture(key: String): CanvasTexture = js.native
   /**
-    * Stores this Video in the Texture Manager using the given key as a dyanmic texture,
+    * Stores this Video in the Texture Manager using the given key as a dynamic texture,
     * which any texture-based Game Object, such as a Sprite, can use as its texture:
     * 
     * ```javascript

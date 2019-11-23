@@ -8,6 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object createSpyObj extends js.Object {
   def apply(baseName: String, methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]]): js.Any = js.native
+  def apply(
+    baseName: String,
+    methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]],
+    propertyNames: SpyObjPropertyNames[js.UndefOr[scala.Nothing]]
+  ): js.Any = js.native
   def apply(methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]]): js.Any = js.native
+  def apply(
+    methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]],
+    propertyNames: SpyObjPropertyNames[js.UndefOr[scala.Nothing]]
+  ): js.Any = js.native
 }
 

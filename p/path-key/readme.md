@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-key
 
-Typings are for version 3.1.0
+Typings are for version 3.1.1
 
 ## Library description:
 Get the PATH environment variable key cross-platform

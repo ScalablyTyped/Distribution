@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "hexo-log"
-version := "0.2-dt-20190808Z-e53825"
+version := "0.2-dt-20190808Z-a71487"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-e3367c",
-  "org.scalablytyped" %%% "hexo-bunyan" % "1.0-dt-20180214Z-a6c977",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-f2b467",
+  "org.scalablytyped" %%% "hexo-bunyan" % "1.0-dt-20180214Z-11bdc3",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

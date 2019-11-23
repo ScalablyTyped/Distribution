@@ -5,6 +5,7 @@ import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.DOMAttributes
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.email
+import typings.react.reactStrings.no
 import typings.react.reactStrings.none
 import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
@@ -13,6 +14,7 @@ import typings.react.reactStrings.search
 import typings.react.reactStrings.tel
 import typings.react.reactStrings.text
 import typings.react.reactStrings.url
+import typings.react.reactStrings.yes
 import typings.reactDashFoundation.enumsMod.ButtonColors
 import typings.std.HTMLAnchorElement
 import scala.scalajs.js
@@ -20,7 +22,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.react.reactMod.HTMLAttributes because var conflicts: className. Inlined about, accessKey, autoCapitalize, autoCorrect, autoSave, color, contentEditable, contextMenu, datatype, defaultChecked, defaultValue, dir, draggable, hidden, id, inlist, inputMode, is, itemID, itemProp, itemRef, itemScope, itemType, lang, placeholder, prefix, property, radioGroup, resource, results, role, security, slot, spellCheck, style, suppressContentEditableWarning, suppressHydrationWarning, tabIndex, title, typeof, unselectable, vocab
+- typings.react.reactMod.HTMLAttributes because var conflicts: className. Inlined about, accessKey, autoCapitalize, autoCorrect, autoSave, color, contentEditable, contextMenu, datatype, defaultChecked, defaultValue, dir, draggable, hidden, id, inlist, inputMode, is, itemID, itemProp, itemRef, itemScope, itemType, lang, placeholder, prefix, property, radioGroup, resource, results, role, security, slot, spellCheck, style, suppressContentEditableWarning, suppressHydrationWarning, tabIndex, title, translate, typeof, unselectable, vocab
 - typings.react.reactMod.AnchorHTMLAttributes because var conflicts: className. Inlined download, href, hrefLang, media, ping, referrerPolicy, rel, target, `type` */ trait LinkProps
   extends ButtonPropsCommon
      with AriaAttributes
@@ -88,6 +90,7 @@ import scala.scalajs.js.annotation._
   var tabIndex: js.UndefOr[Double] = js.undefined
   var target: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -147,6 +150,7 @@ object LinkProps {
     tabIndex: Int | Double = null,
     target: String = null,
     title: String = null,
+    translate: yes | no = null,
     `type`: String = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -203,6 +207,7 @@ object LinkProps {
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target)
     if (title != null) __obj.updateDynamic("title")(title)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

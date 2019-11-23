@@ -6,6 +6,17 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
+  		Display time using colon notation: `5h 1m 45s` → `5:01:45`. Always shows time in at least minutes: `1s` → `0:01`
+  		Useful when you want to display time without the time units, similar to a digital watch.
+  		Setting `colonNotation` to `true` overrides the following options to `false`:
+  		- `compact`
+  		- `formatSubMilliseconds`
+  		- `separateMilliseconds`
+  		- `verbose`
+  		@default false
+  		*/
+  val colonNotation: js.UndefOr[Boolean] = js.undefined
+  /**
   		Only show the first unit: `1h 10m` → `~1h`.
   		Also ensures that `millisecondsDecimalDigits` and `secondsDecimalDigits` are both set to `0`.
   		@default false
@@ -53,6 +64,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    colonNotation: js.UndefOr[Boolean] = js.undefined,
     compact: js.UndefOr[Boolean] = js.undefined,
     formatSubMilliseconds: js.UndefOr[Boolean] = js.undefined,
     keepDecimalsOnWholeSeconds: js.UndefOr[Boolean] = js.undefined,
@@ -63,6 +75,7 @@ object Options {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(colonNotation)) __obj.updateDynamic("colonNotation")(colonNotation)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
     if (!js.isUndefined(formatSubMilliseconds)) __obj.updateDynamic("formatSubMilliseconds")(formatSubMilliseconds)
     if (!js.isUndefined(keepDecimalsOnWholeSeconds)) __obj.updateDynamic("keepDecimalsOnWholeSeconds")(keepDecimalsOnWholeSeconds)

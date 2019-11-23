@@ -1,5 +1,6 @@
 package typings.blessed.blessedMod.Widgets
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,7 @@ trait TputsOptions extends IOptions {
 object TputsOptions {
   @scala.inline
   def apply(
+    StringDictionary: StringDictionary[js.Any] = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     extended: js.UndefOr[Boolean] = js.undefined,
     termcap: String = null,
@@ -26,6 +28,7 @@ object TputsOptions {
     terminfoPrefix: String = null
   ): TputsOptions = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(extended)) __obj.updateDynamic("extended")(extended)
     if (termcap != null) __obj.updateDynamic("termcap")(termcap)

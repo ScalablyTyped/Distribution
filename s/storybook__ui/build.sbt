@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "storybook__ui"
-version := "5.2.6-4d9216"
+version := "5.2.6-4a2994"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "emotion-theming" % "10.0.19-2c27d4",
-  "org.scalablytyped" %%% "emotion__core" % "10.0.20-0119b7",
+  "org.scalablytyped" %%% "emotion-theming" % "10.0.19-a28b27",
+  "org.scalablytyped" %%% "emotion__core" % "10.0.20-9a50c4",
   "org.scalablytyped" %%% "emotion__serialize" % "0.11.11-02509b",
-  "org.scalablytyped" %%% "emotion__styled" % "10.0.17-e6dc56",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.19-8cc6ee",
+  "org.scalablytyped" %%% "emotion__styled" % "10.0.17-b142ff",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.19-6e7555",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.2-fb5db7",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-815dc4",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-215b0c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
-  "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-000339",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
-  "org.scalablytyped" %%% "react-textarea-autosize" % "4.3.0-dt-20191105Z-cc25b2",
+  "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-a01247",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191122Z-caf4d8",
+  "org.scalablytyped" %%% "react-textarea-autosize" % "4.3.0-dt-20191105Z-08dea7",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "storybook__addon-actions" % "5.2.6-3878d9",
-  "org.scalablytyped" %%% "storybook__api" % "5.2.6-d7d5aa",
+  "org.scalablytyped" %%% "storybook__api" % "5.2.6-df1d6f",
   "org.scalablytyped" %%% "storybook__channels" % "5.2.6-4cda16",
-  "org.scalablytyped" %%% "storybook__components" % "5.2.6-0cebf3",
-  "org.scalablytyped" %%% "storybook__router" % "5.2.6-acf5bc",
-  "org.scalablytyped" %%% "storybook__theming" % "5.2.6-299386")
+  "org.scalablytyped" %%% "storybook__components" % "5.2.6-6c83da",
+  "org.scalablytyped" %%% "storybook__router" % "5.2.6-64e75f",
+  "org.scalablytyped" %%% "storybook__theming" % "5.2.6-e7cc47")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

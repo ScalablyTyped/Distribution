@@ -2,6 +2,7 @@ package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
+import typings.phaser.Phaser.Structs.ProcessQueue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Phaser.GameObjects.UpdateList")
 @js.native
-class UpdateList protected () extends js.Object {
+class UpdateList protected () extends ProcessQueue[GameObject] {
   /**
     * 
     * @param scene The Scene that the Update List belongs to.
@@ -30,12 +31,6 @@ class UpdateList protected () extends js.Object {
     */
   var systems: Systems = js.native
   /**
-    * The Scene that owns this plugin is being destroyed.
-    * 
-    * We need to shutdown and then kill off all external references.
-    */
-  def destroy(): Unit = js.native
-  /**
     * The update step.
     * 
     * Pre-updates every active Game Object in the list.
@@ -43,11 +38,5 @@ class UpdateList protected () extends js.Object {
     * @param delta The delta time elapsed since the last frame.
     */
   def sceneUpdate(time: Double, delta: Double): Unit = js.native
-  /**
-    * The Scene that owns this plugin is shutting down.
-    * 
-    * We need to kill and reset all internal properties as well as stop listening to Scene events.
-    */
-  def shutdown(): Unit = js.native
 }
 

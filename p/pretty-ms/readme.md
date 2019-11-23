@@ -1,7 +1,7 @@
 
 # Scala.js typings for pretty-ms
 
-Typings are for version 5.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Convert milliseconds to a human readable string: `1337000000` → `15d 11h 23m 20s`

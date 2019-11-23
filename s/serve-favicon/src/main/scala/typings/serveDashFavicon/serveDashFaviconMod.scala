@@ -2,6 +2,7 @@ package typings.serveDashFavicon
 
 import typings.express.expressMod.RequestHandler
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,5 +15,7 @@ object serveDashFaviconMod extends js.Object {
     */
   def apply(path: String): RequestHandler[ParamsDictionary] = js.native
   def apply(path: String, options: Anon_MaxAge): RequestHandler[ParamsDictionary] = js.native
+  def apply(path: Buffer): RequestHandler[ParamsDictionary] = js.native
+  def apply(path: Buffer, options: Anon_MaxAge): RequestHandler[ParamsDictionary] = js.native
 }
 

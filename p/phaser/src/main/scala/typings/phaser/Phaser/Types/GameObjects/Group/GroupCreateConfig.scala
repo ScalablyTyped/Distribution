@@ -80,6 +80,15 @@ trait GroupCreateConfig extends js.Object {
     * The alpha value of each new Game Object.
     */
   var `setAlpha.value`: js.UndefOr[Double] = js.undefined
+  var setDepth: js.UndefOr[js.Object] = js.undefined
+  /**
+    * Increment each Game Object's depth from the previous by this amount, starting from `setDepth.value`.
+    */
+  var `setDepth.step`: js.UndefOr[Double] = js.undefined
+  /**
+    * The depth value of each new Game Object.
+    */
+  var `setDepth.value`: js.UndefOr[Double] = js.undefined
   var setRotation: js.UndefOr[js.Object] = js.undefined
   /**
     * Increment each Game Object's rotation from the previous by this amount, starting at `setRotation.value`.
@@ -106,6 +115,23 @@ trait GroupCreateConfig extends js.Object {
     * The vertical scale of each new Game Object.
     */
   var `setScale.y`: js.UndefOr[Double] = js.undefined
+  var setScrollFactor: js.UndefOr[js.Object] = js.undefined
+  /**
+    * Increment each Game Object's horizontal scroll factor from the previous by this amount, starting from `setScrollFactor.x`.
+    */
+  var `setScrollFactor.stepX`: js.UndefOr[Double] = js.undefined
+  /**
+    * Increment each Game object's vertical scroll factor from the previous by this amount, starting from `setScrollFactor.y`.
+    */
+  var `setScrollFactor.stepY`: js.UndefOr[Double] = js.undefined
+  /**
+    * The horizontal scroll factor of each new Game Object.
+    */
+  var `setScrollFactor.x`: js.UndefOr[Double] = js.undefined
+  /**
+    * The vertical scroll factor of each new Game Object.
+    */
+  var `setScrollFactor.y`: js.UndefOr[Double] = js.undefined
   var setXY: js.UndefOr[js.Object] = js.undefined
   /**
     * Increment each Game Object's horizontal position from the previous by this amount, starting from `setXY.x`.
@@ -152,6 +178,9 @@ object GroupCreateConfig {
     setAlpha: js.Object = null,
     `setAlpha.step`: Int | Double = null,
     `setAlpha.value`: Int | Double = null,
+    setDepth: js.Object = null,
+    `setDepth.step`: Int | Double = null,
+    `setDepth.value`: Int | Double = null,
     setRotation: js.Object = null,
     `setRotation.step`: Int | Double = null,
     `setRotation.value`: Int | Double = null,
@@ -160,6 +189,11 @@ object GroupCreateConfig {
     `setScale.stepY`: Int | Double = null,
     `setScale.x`: Int | Double = null,
     `setScale.y`: Int | Double = null,
+    setScrollFactor: js.Object = null,
+    `setScrollFactor.stepX`: Int | Double = null,
+    `setScrollFactor.stepY`: Int | Double = null,
+    `setScrollFactor.x`: Int | Double = null,
+    `setScrollFactor.y`: Int | Double = null,
     setXY: js.Object = null,
     `setXY.stepX`: Int | Double = null,
     `setXY.stepY`: Int | Double = null,
@@ -185,6 +219,9 @@ object GroupCreateConfig {
     if (setAlpha != null) __obj.updateDynamic("setAlpha")(setAlpha)
     if (`setAlpha.step` != null) __obj.updateDynamic("setAlpha.step")(`setAlpha.step`.asInstanceOf[js.Any])
     if (`setAlpha.value` != null) __obj.updateDynamic("setAlpha.value")(`setAlpha.value`.asInstanceOf[js.Any])
+    if (setDepth != null) __obj.updateDynamic("setDepth")(setDepth)
+    if (`setDepth.step` != null) __obj.updateDynamic("setDepth.step")(`setDepth.step`.asInstanceOf[js.Any])
+    if (`setDepth.value` != null) __obj.updateDynamic("setDepth.value")(`setDepth.value`.asInstanceOf[js.Any])
     if (setRotation != null) __obj.updateDynamic("setRotation")(setRotation)
     if (`setRotation.step` != null) __obj.updateDynamic("setRotation.step")(`setRotation.step`.asInstanceOf[js.Any])
     if (`setRotation.value` != null) __obj.updateDynamic("setRotation.value")(`setRotation.value`.asInstanceOf[js.Any])
@@ -193,6 +230,11 @@ object GroupCreateConfig {
     if (`setScale.stepY` != null) __obj.updateDynamic("setScale.stepY")(`setScale.stepY`.asInstanceOf[js.Any])
     if (`setScale.x` != null) __obj.updateDynamic("setScale.x")(`setScale.x`.asInstanceOf[js.Any])
     if (`setScale.y` != null) __obj.updateDynamic("setScale.y")(`setScale.y`.asInstanceOf[js.Any])
+    if (setScrollFactor != null) __obj.updateDynamic("setScrollFactor")(setScrollFactor)
+    if (`setScrollFactor.stepX` != null) __obj.updateDynamic("setScrollFactor.stepX")(`setScrollFactor.stepX`.asInstanceOf[js.Any])
+    if (`setScrollFactor.stepY` != null) __obj.updateDynamic("setScrollFactor.stepY")(`setScrollFactor.stepY`.asInstanceOf[js.Any])
+    if (`setScrollFactor.x` != null) __obj.updateDynamic("setScrollFactor.x")(`setScrollFactor.x`.asInstanceOf[js.Any])
+    if (`setScrollFactor.y` != null) __obj.updateDynamic("setScrollFactor.y")(`setScrollFactor.y`.asInstanceOf[js.Any])
     if (setXY != null) __obj.updateDynamic("setXY")(setXY)
     if (`setXY.stepX` != null) __obj.updateDynamic("setXY.stepX")(`setXY.stepX`.asInstanceOf[js.Any])
     if (`setXY.stepY` != null) __obj.updateDynamic("setXY.stepY")(`setXY.stepY`.asInstanceOf[js.Any])

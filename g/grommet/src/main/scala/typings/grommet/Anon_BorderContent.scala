@@ -1,5 +1,6 @@
 package typings.grommet
 
+import typings.grommet.componentsTextMod.TextProps
 import typings.grommet.utilsMod.BorderType
 import typings.grommet.utilsMod.MarginType
 import scala.scalajs.js
@@ -11,9 +12,7 @@ trait Anon_BorderContent extends js.Object {
   var content: js.UndefOr[Anon_Pad] = js.undefined
   var error: js.UndefOr[Anon_ColorMargin] = js.undefined
   var help: js.UndefOr[Anon_ColorMargin] = js.undefined
-  var label: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProps */ js.Any
-  ] = js.undefined
+  var label: js.UndefOr[TextProps] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
 }
 
@@ -24,7 +23,7 @@ object Anon_BorderContent {
     content: Anon_Pad = null,
     error: Anon_ColorMargin = null,
     help: Anon_ColorMargin = null,
-    label: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProps */ js.Any = null,
+    label: TextProps = null,
     margin: MarginType = null
   ): Anon_BorderContent = {
     val __obj = js.Dynamic.literal()

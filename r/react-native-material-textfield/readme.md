@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-material-textfield
 
-Typings are for version 0.15
+Typings are for version 0.16
 
 ## Library description:
 Material textfield

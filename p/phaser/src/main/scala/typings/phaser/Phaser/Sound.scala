@@ -14,6 +14,7 @@ import typings.phaser.Phaser.Types.Sound.DecodeAudioConfig
 import typings.phaser.Phaser.Types.Sound.SoundConfig
 import typings.phaser.Phaser.Types.Sound.SoundMarker
 import typings.std.ArrayBuffer
+import typings.std.AudioContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -568,6 +569,15 @@ object Sound extends js.Object {
     def decodeAudio(audioKey: js.Array[DecodeAudioConfig]): Unit = js.native
     def decodeAudio(audioKey: js.Array[DecodeAudioConfig], audioData: String): Unit = js.native
     def decodeAudio(audioKey: js.Array[DecodeAudioConfig], audioData: ArrayBuffer): Unit = js.native
+    /**
+      * This method takes a new AudioContext reference and then sets
+      * this Sound Manager to use that context for all playback.
+      * 
+      * As part of this call it also disconnects the master mute and volume
+      * nodes and then re-creates them on the new given context.
+      * @param context Reference to an already created AudioContext instance.
+      */
+    def setAudioContext(context: AudioContext): this.type = js.native
     /**
       * Sets the muted state of all this Sound Manager.
       * @param value `true` to mute all sounds, `false` to unmute them.

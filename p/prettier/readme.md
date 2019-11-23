@@ -1,7 +1,7 @@
 
 # Scala.js typings for prettier
 
-Typings are for version 1.18
+Typings are for version 1.19
 
 ## Library description:
 Prettier is an opinionated code formatter

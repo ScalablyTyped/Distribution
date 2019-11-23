@@ -129,6 +129,7 @@ object reactDashDatepickerMod extends js.Object {
     var showMonthYearDropdown: js.UndefOr[Boolean] = js.native
     var showMonthYearPicker: js.UndefOr[Boolean] = js.native
     var showPopperArrow: js.UndefOr[Boolean] = js.native
+    var showQuarterYearPicker: js.UndefOr[Boolean] = js.native
     var showTimeInput: js.UndefOr[Boolean] = js.native
     var showTimeSelect: js.UndefOr[Boolean] = js.native
     var showTimeSelectOnly: js.UndefOr[Boolean] = js.native

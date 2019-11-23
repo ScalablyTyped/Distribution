@@ -6,6 +6,8 @@ import typings.phaser.Phaser.Types.GameObjects.Group.GroupCallback
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupMultipleCreateCallback
+import typings.phaser.Phaser.Types.Input.HitAreaCallback
+import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.Phaser.Types.Physics.Arcade._ArcadeColliderType
 import typings.phaser.integer
 import scala.scalajs.js
@@ -99,6 +101,11 @@ class Group protected () extends _ArcadeColliderType {
     */
   var scene: Scene = js.native
   /**
+    * A textual representation of this Game Object.
+    * Used internally by Phaser but is available for your own custom classes to populate.
+    */
+  var `type`: String = js.native
+  /**
     * Adds a Game Object to this group.
     * 
     * Calls {@link Phaser.GameObjects.Group#createCallback}.
@@ -116,6 +123,13 @@ class Group protected () extends _ArcadeColliderType {
     */
   def addMultiple(children: js.Array[GameObject]): Group = js.native
   def addMultiple(children: js.Array[GameObject], addToScene: Boolean): Group = js.native
+  /**
+    * Sets the angle of each group member.
+    * @param value The amount to set the angle to, in degrees.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def angle(value: Double): Group = js.native
+  def angle(value: Double, step: Double): Group = js.native
   /**
     * Removes all members of this Group and optionally removes them from the Scene and / or destroys them.
     * 
@@ -366,6 +380,31 @@ class Group protected () extends _ArcadeColliderType {
     */
   def getTotalUsed(): integer = js.native
   /**
+    * Adds the given value to the x of each group member.
+    * @param value The amount to be added to the `x` property.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def incX(value: Double): Group = js.native
+  def incX(value: Double, step: Double): Group = js.native
+  /**
+    * Adds the given value to the x, y of each group member.
+    * @param x The amount to be added to the `x` property.
+    * @param y The amount to be added to the `y` property. If `undefined` or `null` it uses the `x` value. Default x.
+    * @param stepX This is added to the `x` amount, multiplied by the iteration counter. Default 0.
+    * @param stepY This is added to the `y` amount, multiplied by the iteration counter. Default 0.
+    */
+  def incXY(x: Double): Group = js.native
+  def incXY(x: Double, y: Double): Group = js.native
+  def incXY(x: Double, y: Double, stepX: Double): Group = js.native
+  def incXY(x: Double, y: Double, stepX: Double, stepY: Double): Group = js.native
+  /**
+    * Adds the given value to the y of each group member.
+    * @param value The amount to be added to the `y` property.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def incY(value: Double): Group = js.native
+  def incY(value: Double, step: Double): Group = js.native
+  /**
     * Whether this group's size at its {@link Phaser.GameObjects.Group#maxSize maximum}.
     */
   def isFull(): Boolean = js.native
@@ -393,6 +432,30 @@ class Group protected () extends _ArcadeColliderType {
     */
   def preUpdate(time: Double, delta: Double): Unit = js.native
   /**
+    * Adds the given value to the property as defined in `key` of each group member.
+    * @param key The property to be updated.
+    * @param value The amount to set the property to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    * @param index An optional offset to start searching from within the items array. Default 0.
+    * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
+    */
+  def propertyValueInc(key: String, value: Double): Group = js.native
+  def propertyValueInc(key: String, value: Double, step: Double): Group = js.native
+  def propertyValueInc(key: String, value: Double, step: Double, index: integer): Group = js.native
+  def propertyValueInc(key: String, value: Double, step: Double, index: integer, direction: integer): Group = js.native
+  /**
+    * Sets the property as defined in `key` of each group member to the given value.
+    * @param key The property to be updated.
+    * @param value The amount to set the property to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    * @param index An optional offset to start searching from within the items array. Default 0.
+    * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
+    */
+  def propertyValueSet(key: String, value: Double): Group = js.native
+  def propertyValueSet(key: String, value: Double, step: Double): Group = js.native
+  def propertyValueSet(key: String, value: Double, step: Double, index: integer): Group = js.native
+  def propertyValueSet(key: String, value: Double, step: Double, index: integer, direction: integer): Group = js.native
+  /**
     * Removes a member of this Group and optionally removes it from the Scene and / or destroys it.
     * 
     * Calls {@link Phaser.GameObjects.Group#removeCallback}.
@@ -408,11 +471,146 @@ class Group protected () extends _ArcadeColliderType {
     */
   def removeCallback(item: GameObject): Unit = js.native
   /**
+    * Sets the rotation of each group member.
+    * @param value The amount to set the rotation to, in radians.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def rotate(value: Double): Group = js.native
+  def rotate(value: Double, step: Double): Group = js.native
+  /**
+    * Rotates each group member around the given point by the given angle.
+    * @param point Any object with public `x` and `y` properties.
+    * @param angle The angle to rotate by, in radians.
+    */
+  def rotateAround(point: Vector2Like, angle: Double): Group = js.native
+  /**
+    * Rotates each group member around the given point by the given angle and distance.
+    * @param point Any object with public `x` and `y` properties.
+    * @param angle The angle to rotate by, in radians.
+    * @param distance The distance from the point of rotation in pixels.
+    */
+  def rotateAroundDistance(point: Vector2Like, angle: Double, distance: Double): Group = js.native
+  /**
+    * Sets the scaleX of each group member.
+    * @param value The amount to set the property to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def scaleX(value: Double): Group = js.native
+  def scaleX(value: Double, step: Double): Group = js.native
+  /**
+    * Sets the scaleX, scaleY of each group member.
+    * @param scaleX The amount to be added to the `scaleX` property.
+    * @param scaleY The amount to be added to the `scaleY` property. If `undefined` or `null` it uses the `scaleX` value.
+    * @param stepX This is added to the `scaleX` amount, multiplied by the iteration counter. Default 0.
+    * @param stepY This is added to the `scaleY` amount, multiplied by the iteration counter. Default 0.
+    */
+  def scaleXY(scaleX: Double): Group = js.native
+  def scaleXY(scaleX: Double, scaleY: Double): Group = js.native
+  def scaleXY(scaleX: Double, scaleY: Double, stepX: Double): Group = js.native
+  def scaleXY(scaleX: Double, scaleY: Double, stepX: Double, stepY: Double): Group = js.native
+  /**
+    * Sets the scaleY of each group member.
+    * @param value The amount to set the property to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def scaleY(value: Double): Group = js.native
+  def scaleY(value: Double, step: Double): Group = js.native
+  /**
+    * Sets the alpha of each group member.
+    * @param value The amount to set the alpha to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def setAlpha(value: Double): Group = js.native
+  def setAlpha(value: Double, step: Double): Group = js.native
+  /**
+    * Sets the blendMode of each group member.
+    * @param value The amount to set the property to.
+    */
+  def setBlendMode(value: Double): Group = js.native
+  /**
     * Sets the depth of each group member.
     * @param value The amount to set the property to.
-    * @param step This is added to the `value` amount, multiplied by the iteration counter.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
     */
+  def setDepth(value: Double): Group = js.native
   def setDepth(value: Double, step: Double): Group = js.native
+  /**
+    * Passes all group members to the Input Manager to enable them for input with identical areas and callbacks.
+    * @param hitArea Either an input configuration object, or a geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
+    * @param hitAreaCallback A callback to be invoked when the Game Object is interacted with. If you provide a shape you must also provide a callback.
+    */
+  def setHitArea(hitArea: js.Any, hitAreaCallback: HitAreaCallback): Group = js.native
+  /**
+    * Sets the originX, originY of each group member.
+    * @param originX The amount to set the `originX` property to.
+    * @param originY The amount to set the `originY` property to. If `undefined` or `null` it uses the `originX` value.
+    * @param stepX This is added to the `originX` amount, multiplied by the iteration counter. Default 0.
+    * @param stepY This is added to the `originY` amount, multiplied by the iteration counter. Default 0.
+    */
+  def setOrigin(originX: Double): Group = js.native
+  def setOrigin(originX: Double, originY: Double): Group = js.native
+  def setOrigin(originX: Double, originY: Double, stepX: Double): Group = js.native
+  def setOrigin(originX: Double, originY: Double, stepX: Double, stepY: Double): Group = js.native
+  /**
+    * Sets the tint of each group member.
+    * @param topLeft The tint being applied to top-left corner of item. If other parameters are given no value, this tint will be applied to whole item.
+    * @param topRight The tint to be applied to top-right corner of item.
+    * @param bottomLeft The tint to be applied to the bottom-left corner of item.
+    * @param bottomRight The tint to be applied to the bottom-right corner of item.
+    */
+  def setTint(topLeft: Double): Group = js.native
+  def setTint(topLeft: Double, topRight: Double): Group = js.native
+  def setTint(topLeft: Double, topRight: Double, bottomLeft: Double): Group = js.native
+  def setTint(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: Double): Group = js.native
+  /**
+    * Sets the visible of each group member.
+    * @param value The value to set the property to.
+    * @param index An optional offset to start searching from within the items array. Default 0.
+    * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
+    */
+  def setVisible(value: Boolean): Group = js.native
+  def setVisible(value: Boolean, index: integer): Group = js.native
+  def setVisible(value: Boolean, index: integer, direction: integer): Group = js.native
+  /**
+    * Sets the x of each group member.
+    * @param value The amount to set the property to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def setX(value: Double): Group = js.native
+  def setX(value: Double, step: Double): Group = js.native
+  /**
+    * Sets the x, y of each group member.
+    * @param x The amount to set the `x` property to.
+    * @param y The amount to set the `y` property to. If `undefined` or `null` it uses the `x` value. Default x.
+    * @param stepX This is added to the `x` amount, multiplied by the iteration counter. Default 0.
+    * @param stepY This is added to the `y` amount, multiplied by the iteration counter. Default 0.
+    */
+  def setXY(x: Double): Group = js.native
+  def setXY(x: Double, y: Double): Group = js.native
+  def setXY(x: Double, y: Double, stepX: Double): Group = js.native
+  def setXY(x: Double, y: Double, stepX: Double, stepY: Double): Group = js.native
+  /**
+    * Sets the y of each group member.
+    * @param value The amount to set the property to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    */
+  def setY(value: Double): Group = js.native
+  def setY(value: Double, step: Double): Group = js.native
+  /**
+    * Iterate through the group members changing the position of each element to be that of the element that came before
+    * it in the array (or after it if direction = 1)
+    * 
+    * The first group member position is set to x/y.
+    * @param x The x coordinate to place the first item in the array at.
+    * @param y The y coordinate to place the first item in the array at.
+    * @param direction The iteration direction. 0 = first to last and 1 = last to first. Default 0.
+    */
+  def shiftPosition(x: Double, y: Double): Group = js.native
+  def shiftPosition(x: Double, y: Double, direction: integer): Group = js.native
+  /**
+    * Shuffles the group members in place.
+    */
+  def shuffle(): Group = js.native
   /**
     * Toggles (flips) the visible state of each member of this group.
     */

@@ -35,6 +35,10 @@ trait RenderConfig extends js.Object {
     */
   var maxLights: js.UndefOr[integer] = js.undefined
   /**
+    * The mipmap magFilter to be used when creating WebGL textures.
+    */
+  var mipmapFilter: js.UndefOr[String] = js.undefined
+  /**
     * Sets `antialias` and `roundPixels` to true. This is the best setting for pixel-art games.
     */
   var pixelArt: js.UndefOr[Boolean] = js.undefined
@@ -66,6 +70,7 @@ object RenderConfig {
     desynchronized: js.UndefOr[Boolean] = js.undefined,
     failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined,
     maxLights: Int | Double = null,
+    mipmapFilter: String = null,
     pixelArt: js.UndefOr[Boolean] = js.undefined,
     powerPreference: String = null,
     premultipliedAlpha: js.UndefOr[Boolean] = js.undefined,
@@ -80,6 +85,7 @@ object RenderConfig {
     if (!js.isUndefined(desynchronized)) __obj.updateDynamic("desynchronized")(desynchronized)
     if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat)
     if (maxLights != null) __obj.updateDynamic("maxLights")(maxLights.asInstanceOf[js.Any])
+    if (mipmapFilter != null) __obj.updateDynamic("mipmapFilter")(mipmapFilter)
     if (!js.isUndefined(pixelArt)) __obj.updateDynamic("pixelArt")(pixelArt)
     if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference)
     if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)

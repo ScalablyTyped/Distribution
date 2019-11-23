@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_auth2"
-version := "0.0-dt-20190213Z-3db8ab"
+version := "0.0-dt-20191122Z-211089"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

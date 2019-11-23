@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "nivo__heatmap"
-version := "0.59.2-3e2329"
+version := "0.59.2-33cf0d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "nivo__axes" % "0.59.2-d5c178",
+  "org.scalablytyped" %%% "nivo__axes" % "0.59.2-183f60",
   "org.scalablytyped" %%% "nivo__colors" % "0.59.0-6ee024",
   "org.scalablytyped" %%% "nivo__core" % "0.59.1-ae8d18",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191122Z-caf4d8",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -159,10 +159,12 @@ object Curves extends js.Object {
     def getPointAt[O /* <: Vector2 */](u: Double, out: O): O = js.native
     /**
       * [description]
-      * @param divisions [description]
+      * @param divisions The number of evenly spaced points from the curve to return. If falsy, step param will be used to calculate the number of points.
+      * @param step Step between points. Used to calculate the number of points to return when divisions is falsy. Ignored if divisions is positive.
+      * @param out An optional array to store the points in.
       */
-    def getPoints(): js.Array[Vector2] = js.native
-    def getPoints(divisions: integer): js.Array[Vector2] = js.native
+    def getPoints(divisions: integer, step: Double): js.Array[_ | Vector2] = js.native
+    def getPoints(divisions: integer, step: Double, out: js.Array[_ | Vector2]): js.Array[_ | Vector2] = js.native
     /**
       * [description]
       * @param out [description]
@@ -553,7 +555,7 @@ object Curves extends js.Object {
       control2Y: Double
     ): Path = js.native
     /**
-      * [description]
+      * Disposes of this Path, clearing its internal references to objects so they can be garbage-collected.
       */
     def destroy(): Unit = js.native
     /**
@@ -631,38 +633,45 @@ object Curves extends js.Object {
     def getPoints(): js.Array[Vector2] = js.native
     def getPoints(divisions: integer): js.Array[Vector2] = js.native
     /**
-      * [description]
+      * Returns a randomly chosen point anywhere on the path. This follows the same rules as `getPoint` in that it may return a point on any Curve inside this path.
+      * 
+      * When calling this method multiple times, the points are not guaranteed to be equally spaced spatially.
       * @param out `Vector2` instance that should be used for storing the result. If `undefined` a new `Vector2` will be created.
       */
     def getRandomPoint[O /* <: Vector2 */](): O = js.native
     def getRandomPoint[O /* <: Vector2 */](out: O): O = js.native
     /**
-      * Creates a straight Line Curve from the ending point of the Path to the given coordinates.
-      * @param divisions The X coordinate of the line's ending point, or the line's ending point as a `Vector2`. Default 40.
+      * Divides this Path into a set of equally spaced points,
+      * 
+      * The resulting points are equally spaced with respect to the points' position on the path, but not necessarily equally spaced spatially.
+      * @param divisions The amount of points to divide this Path into. Default 40.
       */
     def getSpacedPoints(): js.Array[Vector2] = js.native
     def getSpacedPoints(divisions: integer): js.Array[Vector2] = js.native
     /**
-      * [description]
-      * @param out [description]
+      * Returns the starting point of the Path.
+      * @param out `Vector2` instance that should be used for storing the result. If `undefined` a new `Vector2` will be created.
       */
     def getStartPoint[O /* <: Vector2 */](): O = js.native
     def getStartPoint[O /* <: Vector2 */](out: O): O = js.native
     /**
-      * Creates a line curve from the previous end point to x/y
-      * @param x [description]
-      * @param y [description]
+      * Creates a line curve from the previous end point to x/y.
+      * @param x The X coordinate of the line's end point, or a `Vector2` containing the entire end point.
+      * @param y The Y coordinate of the line's end point, if a number was passed as the X parameter.
       */
     def lineTo(x: Double): Path = js.native
     def lineTo(x: Double, y: Double): Path = js.native
     def lineTo(x: Vector2): Path = js.native
     def lineTo(x: Vector2, y: Double): Path = js.native
     /**
-      * [description]
-      * @param x [description]
-      * @param y [description]
+      * Creates a "gap" in this path from the path's current end point to the given coordinates.
+      * 
+      * After calling this function, this Path's end point will be equal to the given coordinates
+      * @param x The X coordinate of the position to move the path's end point to, or a `Vector2` containing the entire new end point.
+      * @param y The Y coordinate of the position to move the path's end point to, if a number was passed as the X coordinate.
       */
     def moveTo(x: Double, y: Double): Path = js.native
+    def moveTo(x: Vector2, y: Double): Path = js.native
     def quadraticBezierTo(x: js.Array[Vector2]): Path = js.native
     def quadraticBezierTo(x: js.Array[Vector2], y: Double): Path = js.native
     def quadraticBezierTo(x: js.Array[Vector2], y: Double, controlX: Double): Path = js.native
@@ -679,12 +688,12 @@ object Curves extends js.Object {
     def quadraticBezierTo(x: Double, y: Double, controlX: Double): Path = js.native
     def quadraticBezierTo(x: Double, y: Double, controlX: Double, controlY: Double): Path = js.native
     /**
-      * [description]
-      * @param points [description]
+      * Creates a spline curve starting at the previous end point, using the given points on the curve.
+      * @param points The points the newly created spline curve should consist of.
       */
     def splineTo(points: js.Array[Vector2]): Path = js.native
     /**
-      * [description]
+      * Converts this Path to a JSON object containing the path information and its constituent curves.
       */
     def toJSON(): JSONPath = js.native
     /**

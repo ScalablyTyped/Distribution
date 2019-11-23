@@ -539,6 +539,9 @@ object stripeStrings {
   sealed trait fileDOTcreated extends EventType
   
   @js.native
+  sealed trait file_link extends js.Object
+  
+  @js.native
   sealed trait finite extends js.Object
   
   @js.native
@@ -1160,6 +1163,9 @@ object stripeStrings {
   sealed trait reverse extends js.Object
   
   @js.native
+  sealed trait reversed extends js.Object
+  
+  @js.native
   sealed trait reversed_after_approval extends js.Object
   
   @js.native
@@ -1362,6 +1368,9 @@ object stripeStrings {
   
   @js.native
   sealed trait token extends js.Object
+  
+  @js.native
+  sealed trait topup extends js.Object
   
   @js.native
   sealed trait topupDOTcreated extends EventType
@@ -1839,6 +1848,8 @@ object stripeStrings {
   @scala.inline
   def fileDOTcreated: fileDOTcreated = "file.created".asInstanceOf[fileDOTcreated]
   @scala.inline
+  def file_link: file_link = "file_link".asInstanceOf[file_link]
+  @scala.inline
   def finite: finite = "finite".asInstanceOf[finite]
   @scala.inline
   def forever: forever = "forever".asInstanceOf[forever]
@@ -2245,6 +2256,8 @@ object stripeStrings {
   @scala.inline
   def reverse: reverse = "reverse".asInstanceOf[reverse]
   @scala.inline
+  def reversed: reversed = "reversed".asInstanceOf[reversed]
+  @scala.inline
   def reversed_after_approval: reversed_after_approval = "reversed_after_approval".asInstanceOf[reversed_after_approval]
   @scala.inline
   def review: review = "review".asInstanceOf[review]
@@ -2380,6 +2393,8 @@ object stripeStrings {
   def tiered: tiered = "tiered".asInstanceOf[tiered]
   @scala.inline
   def token: token = "token".asInstanceOf[token]
+  @scala.inline
+  def topup: topup = "topup".asInstanceOf[topup]
   @scala.inline
   def topupDOTcreated: topupDOTcreated = "topup.created".asInstanceOf[topupDOTcreated]
   @scala.inline

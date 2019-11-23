@@ -1,5 +1,6 @@
 package typings.blessed.blessedMod.Widgets
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +16,7 @@ trait INodeOptions extends IOptions {
 object INodeOptions {
   @scala.inline
   def apply(
+    StringDictionary: StringDictionary[js.Any] = null,
     children: js.Array[Node] = null,
     focusable: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
@@ -22,6 +24,7 @@ object INodeOptions {
     screen: Screen = null
   ): INodeOptions = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (children != null) __obj.updateDynamic("children")(children)
     if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
     if (name != null) __obj.updateDynamic("name")(name)

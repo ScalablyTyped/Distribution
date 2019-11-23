@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object useAutocompleteUseAutocompleteMod {
   type CreateFilterOptions = js.Function1[
-    /* config */ CreateFilterOptionsConfig, 
+    /* config */ js.UndefOr[CreateFilterOptionsConfig], 
     js.Function2[/* option */ js.Any, /* state */ FilterOptionsState, js.Array[js.Any]]
   ]
 }

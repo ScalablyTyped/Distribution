@@ -37,12 +37,14 @@ trait Matchers[T]
   def toBeCloseTo(expected: Double, precision: js.Any, expectationFailOutput: js.Any): Boolean = js.native
   def toBeDefined(): Boolean = js.native
   def toBeDefined(expectationFailOutput: js.Any): Boolean = js.native
+  def toBeFalse(): Boolean = js.native
   def toBeFalsy(): Boolean = js.native
   def toBeFalsy(expectationFailOutput: js.Any): Boolean = js.native
   def toBeGreaterThan(expected: Double): Boolean = js.native
   def toBeGreaterThan(expected: Double, expectationFailOutput: js.Any): Boolean = js.native
   def toBeGreaterThanOrEqual(expected: Double): Boolean = js.native
   def toBeGreaterThanOrEqual(expected: Double, expectationFailOutput: js.Any): Boolean = js.native
+  def toBeInstanceOf(expected: Constructor): Boolean = js.native
   def toBeLessThan(expected: Double): Boolean = js.native
   def toBeLessThan(expected: Double, expectationFailOutput: js.Any): Boolean = js.native
   def toBeLessThanOrEqual(expected: Double): Boolean = js.native
@@ -54,6 +56,7 @@ trait Matchers[T]
   def toBeNull(expectationFailOutput: js.Any): Boolean = js.native
   def toBePositiveInfinity(): Boolean = js.native
   def toBePositiveInfinity(expectationFailOutput: js.Any): Boolean = js.native
+  def toBeTrue(): Boolean = js.native
   def toBeTruthy(): Boolean = js.native
   def toBeTruthy(expectationFailOutput: js.Any): Boolean = js.native
   def toBeUndefined(): Boolean = js.native

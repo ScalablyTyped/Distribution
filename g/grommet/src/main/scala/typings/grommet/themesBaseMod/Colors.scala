@@ -19,7 +19,7 @@ trait Colors extends /* x */ StringDictionary[ColorType] {
   var `dark-1`: js.UndefOr[ColorType] = js.undefined
   var `dark-2`: js.UndefOr[ColorType] = js.undefined
   var `dark-3`: js.UndefOr[ColorType] = js.undefined
-  var `dark-4`: js.UndefOr[String] = js.undefined
+  var `dark-4`: js.UndefOr[ColorType] = js.undefined
   var `dark-5`: js.UndefOr[ColorType] = js.undefined
   var `dark-6`: js.UndefOr[ColorType] = js.undefined
   var focus: js.UndefOr[ColorType] = js.undefined
@@ -62,7 +62,7 @@ object Colors {
     `dark-1`: ColorType = null,
     `dark-2`: ColorType = null,
     `dark-3`: ColorType = null,
-    `dark-4`: String = null,
+    `dark-4`: ColorType = null,
     `dark-5`: ColorType = null,
     `dark-6`: ColorType = null,
     focus: ColorType = null,
@@ -102,7 +102,7 @@ object Colors {
     if (`dark-1` != null) __obj.updateDynamic("dark-1")(`dark-1`.asInstanceOf[js.Any])
     if (`dark-2` != null) __obj.updateDynamic("dark-2")(`dark-2`.asInstanceOf[js.Any])
     if (`dark-3` != null) __obj.updateDynamic("dark-3")(`dark-3`.asInstanceOf[js.Any])
-    if (`dark-4` != null) __obj.updateDynamic("dark-4")(`dark-4`)
+    if (`dark-4` != null) __obj.updateDynamic("dark-4")(`dark-4`.asInstanceOf[js.Any])
     if (`dark-5` != null) __obj.updateDynamic("dark-5")(`dark-5`.asInstanceOf[js.Any])
     if (`dark-6` != null) __obj.updateDynamic("dark-6")(`dark-6`.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])

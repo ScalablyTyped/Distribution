@@ -679,7 +679,7 @@ object Display extends js.Object {
     def RGBStringToColor(rgb: String): typings.phaser.Phaser.Display.Color = js.native
     /**
       * Converts an RGB color value to HSV (hue, saturation and value).
-      * Conversion forumla from http://en.wikipedia.org/wiki/HSL_color_space.
+      * Conversion formula from http://en.wikipedia.org/wiki/HSL_color_space.
       * Assumes RGB values are contained in the set [0, 255] and returns h, s and v in the set [0, 1].
       * Based on code by Michael Jackson (https://github.com/mjijackson)
       * @param r The red color value. A number between 0 and 255.

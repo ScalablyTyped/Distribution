@@ -5,6 +5,8 @@ import typings.grommet.utilsMod.DeepMerge
 import typings.grommet.utilsMod.DeepReadonly
 import typings.grommet.utilsMod.NonUndefinedProps
 import typings.grommet.utilsMod._BasisType
+import typings.grommet.utilsMod._BorderType
+import typings.grommet.utilsMod._BoxSizeType
 import typings.grommet.utilsMod._ElevationType
 import typings.grommet.utilsMod._FillType
 import typings.grommet.utilsMod._GapType
@@ -44,6 +46,31 @@ object utilsMod extends js.Object {
   */
   trait AlignSelfType extends js.Object
   
+  // Extracting types for common properties among components
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.top
+    - typings.grommet.grommetStrings.left
+    - typings.grommet.grommetStrings.bottom
+    - typings.grommet.grommetStrings.right
+    - typings.grommet.grommetStrings.horizontal
+    - typings.grommet.grommetStrings.vertical
+    - typings.grommet.grommetStrings.all
+  */
+  trait BoxSideType extends _BorderType
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.solid
+    - typings.grommet.grommetStrings.dashed
+    - typings.grommet.grommetStrings.dotted
+    - typings.grommet.grommetStrings.double
+    - typings.grommet.grommetStrings.groove
+    - typings.grommet.grommetStrings.ridge
+    - typings.grommet.grommetStrings.inset
+    - typings.grommet.grommetStrings.outset
+    - typings.grommet.grommetStrings.hidden
+  */
+  trait BoxStyleType extends js.Object
+  
   @js.native
   trait DeepMerge extends js.Object {
     def apply[T /* <: js.Object */, S /* <: js.Array[js.Object] */](
@@ -70,6 +97,10 @@ object utilsMod extends js.Object {
   trait TextAlignType extends js.Object
   
   trait _BasisType extends js.Object
+  
+  trait _BorderType extends js.Object
+  
+  trait _BoxSizeType extends js.Object
   
   trait _ElevationType extends js.Object
   
@@ -115,7 +146,22 @@ object utilsMod extends js.Object {
     - java.lang.String
   */
   type BasisType = _BasisType | String
-  type BorderType = Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SideType */ js.Any) | Anon_ColorSideSizeStyle | js.Array[Anon_ColorSideSizeStyle]
+  /* Rewritten from type alias, can be one of: 
+    - scala.Boolean
+    - typings.grommet.utilsMod.BoxSideType
+    - typings.grommet.Anon_ColorSideSizeStyle
+    - js.Array[typings.grommet.Anon_ColorSideSizeStyleBoxStyleType]
+  */
+  type BorderType = _BorderType | js.Array[Anon_ColorSideSizeStyleBoxStyleType] | Boolean
+  /* Rewritten from type alias, can be one of: 
+    - typings.grommet.grommetStrings.xsmall
+    - typings.grommet.grommetStrings.small
+    - typings.grommet.grommetStrings.medium
+    - typings.grommet.grommetStrings.large
+    - typings.grommet.grommetStrings.xlarge
+    - java.lang.String
+  */
+  type BoxSizeType = _BoxSizeType | String
   type ColorType = String | Anon_Dark
   type DeepFreeze = js.Function1[/* obj */ js.Object, DeepReadonly[js.Object]]
   type DeepReadonly[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 

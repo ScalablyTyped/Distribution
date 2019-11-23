@@ -339,7 +339,7 @@ object Actions extends js.Object {
     * @param scaleX The amount to be added to the `scaleX` property.
     * @param scaleY The amount to be added to the `scaleY` property. If `undefined` or `null` it uses the `scaleX` value.
     * @param stepX This is added to the `scaleX` amount, multiplied by the iteration counter. Default 0.
-    * @param stepY This is added to the `y` amount, multiplied by the iteration counter. Default 0.
+    * @param stepY This is added to the `scaleY` amount, multiplied by the iteration counter. Default 0.
     * @param index An optional offset to start searching from within the items array. Default 0.
     * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
     */
@@ -539,6 +539,76 @@ object Actions extends js.Object {
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
   def SetScaleY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  /**
+    * Takes an array of Game Objects, or any objects that have the public properties `scrollFactorX` and `scrollFactorY`
+    * and then sets them to the given values.
+    * 
+    * The optional `stepX` and `stepY` properties are applied incrementally, multiplied by each item in the array.
+    * 
+    * To use this with a Group: `SetScrollFactor(group.getChildren(), scrollFactorX, scrollFactorY, stepX, stepY)`
+    * @param items The array of items to be updated by this action.
+    * @param scrollFactorX The amount to set the `scrollFactorX` property to.
+    * @param scrollFactorY The amount to set the `scrollFactorY` property to. If `undefined` or `null` it uses the `scrollFactorX` value.
+    * @param stepX This is added to the `scrollFactorX` amount, multiplied by the iteration counter. Default 0.
+    * @param stepY This is added to the `scrollFactorY` amount, multiplied by the iteration counter. Default 0.
+    * @param index An optional offset to start searching from within the items array. Default 0.
+    * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
+    */
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](items: G, scrollFactorX: Double, scrollFactorY: Double, stepX: Double, stepY: Double): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: integer
+  ): G = js.native
+  def SetScrollFactor[G /* <: js.Array[GameObject] */](
+    items: G,
+    scrollFactorX: Double,
+    scrollFactorY: Double,
+    stepX: Double,
+    stepY: Double,
+    index: integer,
+    direction: integer
+  ): G = js.native
+  /**
+    * Takes an array of Game Objects, or any objects that have the public property `scrollFactorX`
+    * and then sets it to the given value.
+    * 
+    * The optional `step` property is applied incrementally, multiplied by each item in the array.
+    * 
+    * To use this with a Group: `SetScrollFactorX(group.getChildren(), value, step)`
+    * @param items The array of items to be updated by this action.
+    * @param value The amount to set the property to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    * @param index An optional offset to start searching from within the items array. Default 0.
+    * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
+    */
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  def SetScrollFactorX[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
+  /**
+    * Takes an array of Game Objects, or any objects that have the public property `scrollFactorY`
+    * and then sets it to the given value.
+    * 
+    * The optional `step` property is applied incrementally, multiplied by each item in the array.
+    * 
+    * To use this with a Group: `SetScrollFactorY(group.getChildren(), value, step)`
+    * @param items The array of items to be updated by this action.
+    * @param value The amount to set the property to.
+    * @param step This is added to the `value` amount, multiplied by the iteration counter. Default 0.
+    * @param index An optional offset to start searching from within the items array. Default 0.
+    * @param direction The direction to iterate through the array. 1 is from beginning to end, -1 from end to beginning. Default 1.
+    */
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double): G = js.native
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double): G = js.native
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer): G = js.native
+  def SetScrollFactorY[G /* <: js.Array[GameObject] */](items: G, value: Double, step: Double, index: integer, direction: integer): G = js.native
   /**
     * Takes an array of Game Objects, or any objects that have the public method setTint() and then updates it to the given value(s). You can specify tint color per corner or provide only one color value for `topLeft` parameter, in which case whole item will be tinted with that color.
     * @param items An array of Game Objects. The contents of this array are updated by this Action.

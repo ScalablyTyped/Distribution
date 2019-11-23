@@ -42,5 +42,6 @@ package object jasmine {
   type SpyObjMethodNames[T] = js.Array[String] | (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends jasmine.jasmine.Func? std.ReturnType<T[P]> : any}
     */ typings.jasmine.jasmineStrings.SpyObjMethodNames with js.Any) | StringDictionary[js.Any]
+  type SpyObjPropertyNames[T] = js.Array[String] | StringDictionary[js.Any]
   type StringPrettyPrinter = PrettyPrinter
 }

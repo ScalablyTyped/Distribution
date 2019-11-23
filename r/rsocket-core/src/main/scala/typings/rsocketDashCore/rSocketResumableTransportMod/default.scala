@@ -1,5 +1,6 @@
 package typings.rsocketDashCore.rSocketResumableTransportMod
 
+import typings.rsocketDashCore.rSocketEncodingMod.Encoders
 import typings.rsocketDashFlowable.rsocketDashFlowableMod.Flowable
 import typings.rsocketDashTypes.reactiveSocketTypesMod.ConnectionStatus
 import typings.rsocketDashTypes.reactiveSocketTypesMod.DuplexConnection
@@ -12,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends RSocketResumableTransport {
   def this(source: js.Function0[DuplexConnection], options: Options) = this()
+  def this(source: js.Function0[DuplexConnection], options: Options, encoders: Encoders[_]) = this()
   /**
     * Close the underlying connection, emitting `onComplete` on the receive()
     * Publisher.

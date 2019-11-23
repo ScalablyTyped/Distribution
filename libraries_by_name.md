@@ -1267,6 +1267,7 @@
 | [csrf](./c/csrf) | primary logic behind csrf tokens | csrf, tokens |
 | [css](./c/css) | CSS parser / stringifier | css, parser, stringifier, stylesheet |
 | [css-font-loading-module](./c/css-font-loading-module) | - | - |
+| [css-mediaquery](./c/css-mediaquery) | Parses and determines if a given CSS Media Query m | css, media, query, mediaquery, mobile, parse, match |
 | [css-modules](./c/css-modules) | - | - |
 | [css-modules-loader-core](./c/css-modules-loader-core) | A loader-agnostic CSS Modules implementation, base | css-modules, postcss, loader |
 | [css-modules-require-hook](./c/css-modules-require-hook) | A require hook to compile CSS Modules on the fly | css-modules, require, hook |
@@ -1991,6 +1992,7 @@
 | [fast-shuffle](./f/fast-shuffle) | A fast implementation of a fisher-yates shuffle th | knuth, fisher-yates, shuffle, deterministic, pure |
 | [fast-stats](./f/fast-stats) | Quickly calculate common statistics on lists of nu | statistics, statistic, gauss, lognormal, normal, mean, median, mode, standard deviation, margin of error, iqr, quartile, inter quartile range |
 | [fast-stringify](./f/fast-stringify) | A blazing fast stringifier that safely handles cir | stringify, fast, serialize, json |
+| [fast-text-encoding](./f/fast-text-encoding) | Fast polyfill for TextEncoder and TextDecoder, onl | - |
 | [fast64](./f/fast64) | The fastest in-browser base64 library | - |
 | [fastclick](./f/fastclick) | Polyfill to remove click delays on browsers with t | fastclick, mobile, touch, tap, click, delay |
 | [fastify-accepts](./f/fastify-accepts) | Add accept parser to fastify | - |
@@ -2162,6 +2164,7 @@
 | [focus-within](./f/focus-within) | Style elements when they are focused or contain a  | postcss, css, postcss-plugin, javascript, js, polyfill, focus, within, pseudos, selectors, accessibility, a11y, descendants, ancestors |
 | [follow-redirects](./f/follow-redirects) | HTTP and HTTPS modules that follow redirects. | http, https, url, redirect, client, location, utility |
 | [fontfaceobserver](./f/fontfaceobserver) | Detect if web fonts are available | fontloader, fonts, font, font-face, web font, font load, font events |
+| [fontkit](./f/fontkit) | An advanced font engine for Node and the browser | opentype, font, typography, subset, emoji, glyph, layout |
 | [fontoxml](./f/fontoxml) | - | - |
 | [force-graph](./f/force-graph) | 2D force-directed graph rendered on HTML5 canvas | 2d, force, simulation, graph, canvas, d3 |
 | [forever-agent](./f/forever-agent) | HTTP Agent that keeps socket connections alive bet | - |
@@ -2225,7 +2228,6 @@
 | [fs-finder](./f/fs-finder) | - | file, fs, finder, recursive, walk |
 | [fs-mock](./f/fs-mock) | - | fs, file system, posix, linux, windows, testing, mock |
 | [fs-plus](./f/fs-plus) | node's fs with more helpers | fs, filesystem |
-| [fs-promise](./f/fs-promise) | - | promise, fs, file, file system |
 | [fs-readdir-recursive](./f/fs-readdir-recursive) | Recursively read a directory | - |
 | [fs-readfile-promise](./f/fs-readfile-promise) | Promise version of fs.readFile | fs, read, file, promise, promises, then, thenable |
 | [fs-routes](./f/fs-routes) | Scan a filesystem for route files. | filesystem, routes, paths, api |
@@ -2824,6 +2826,7 @@
 | [history_dot_js](./h/history_dot_js) | History.js gracefully supports the HTML5 History/S | javascript, html5 history api, hashchange, popstate, pushstate, replacestate, hashes, hashbang |
 | [historykana](./h/historykana) | Analyse Japanese Furigana from key input history | - |
 | [hjson](./h/hjson) | A user interface for JSON. | json, comments, config, hjson, parser, serializer, human |
+| [hls-parser](./h/hls-parser) | A simple library to read/write HLS playlists | HLS, media, video, audio, streaming |
 | [hls_dot_js](./h/hls_dot_js) | JavaScript HLS client using MediaSourceExtension | - |
 | [hoek](./h/hoek) | General purpose node utilities | utilities |
 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler. | mustache, template |
@@ -2916,6 +2919,7 @@
 | [iban](./i/iban) | A javascript library to validate, format and conve | - |
 | [ibm-cloud-sdk-core](./i/ibm-cloud-sdk-core) | Core functionality to support SDKs generated with  | ibm, sdk, openapi, core |
 | [ibm-mobilefirst](./i/ibm-mobilefirst) | - | - |
+| [ibm-openapi-validator](./i/ibm-openapi-validator) | Configurable and extensible validator/linter for O | - |
 | [ibm_db](./i/ibm_db) | IBM DB2 and IBM Informix bindings for node | node, odbc, db2, driver |
 | [ical](./i/ical) | A tolerant, minimal icalendar parser | ical, ics, calendar |
 | [icepick](./i/icepick) | Utilities for treating frozen JavaScript objects a | freeze, frozen, immutable, immutability, persistent, collections, structural, sharing, update, redux, flux, store, react, mori, clojure |
@@ -4711,7 +4715,6 @@
 | [mysql](./m/mysql) | A node.js driver for mysql. It is written in JavaS | - |
 | [mysql-import](./m/mysql-import) | Import .sql into a MySQL database with Node. | nodejs, mysql, textfiles, import, sql |
 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library. | spy, test, testing |
-| [mz](./m/mz) | modernize node.js to current ECMAScript standards | promisify, promise, thenify, then, es6 |
 | [n-readlines](./n/n-readlines) | Read file line by line without buffering the whole | read, line, reader, linereader, readfile, linebyline, synchronous, sync, readline, readlines |
 | [n3](./n/n3) | Lightning fast, asynchronous, streaming Turtle / N | turtle, rdf, n3, streaming, asynchronous |
 | [naja](./n/naja) | Modern AJAX library for Nette Framework | nette, ajax, history |
@@ -5583,6 +5586,7 @@
 | [protocol-buffers-schema](./p/protocol-buffers-schema) | No nonsense protocol buffers schema parser written | protobuf, protocol, buffers, schema, parser, parse |
 | [protocols](./p/protocols) | Get the protocols of an input url. | protocols, protocol, url, parse |
 | [proton-native](./p/proton-native) | React Native for the desktop, cross compatible | - |
+| [protoo-server](./p/protoo-server) | protoo Node.js server module | nodejs, websocket |
 | [protractor](./p/protractor) | Webdriver E2E test wrapper for Angular. | angular, test, testing, webdriver, webdriverjs, selenium |
 | [protractor-browser-logs](./p/protractor-browser-logs) | Provides tools for asserting browser logs inside p | angular, test, testing, webdriver, webdriverjs, selenium, protractor, protractor-plugin, browser, logs, console |
 | [protractor-helpers](./p/protractor-helpers) | Additional matchers / locators and helpers for sys | protractor, spec, helpers, matchers, angular, e2e |
@@ -5952,6 +5956,7 @@
 | [react-jss](./r/react-jss) | JSS integration with React | react, style, css, stylesheet, jss, hoc, decorator |
 | [react-kawaii](./r/react-kawaii) | React Kawaii is a library of cute SVG illustration | library, react, component, svg, illustration, kawaii, icon, ui, animation, icons, cute, mbe, cartoons, design |
 | [react-latex-next](./r/react-latex-next) | Render LaTeX in React apps | react, katex, latex, math |
+| [react-lazy-load-image-com](./r/react-lazy-load-image-component) | React Component to lazy load images using a HOC to | react, react-component, lazyload, lazyloading, lazy-loading, lazyload-images |
 | [react-lazyload](./r/react-lazyload) | Lazyload your components, images or anything where | react-component, react, lazyload |
 | [react-lazylog](./r/react-lazylog) | React Lazy Logviewer | react, log, viewer, logviewer, lazy, lazylog |
 | [react-leaflet](./r/react-leaflet) | React components for Leaflet maps | react-component, react, leaflet, map |
@@ -7321,6 +7326,7 @@
 | [test-listen](./t/test-listen) | Produce URLs to test HTTP servers with ephemeral p | - |
 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
+| [testing-library__jest-dom](./t/testing-library__jest-dom) | Custom jest matchers to test the state of the DOM | testing, dom, jest, jsdom |
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__react-ho](./t/testing-library__react-hooks) | Simple and complete React hooks testing utilities  | testing, react, hooks, unit, integration |
 | [testing-library__user-eve](./t/testing-library__user-event) | Simulate user events for react-testing-library | react-testing-library, dom-testing-library, react, testing |
@@ -8126,6 +8132,7 @@
 | [zeroclipboard](./z/zeroclipboard) | The ZeroClipboard library provides an easy way to  | flash, clipboard, copy, cut, paste, zclip, clip, clippy |
 | [zeromq](./z/zeromq) | ZeroMQ for node.js | zeromq, zmq, 0mq, ømq, libzmq, native, binding, addon |
 | [zetapush-js](./z/zetapush-js) | JavaScript SDK for ZetaPush | zetapush, realtime, sdk, websocket, long-polling |
+| [zfont](./z/zfont) | Text plugin for Zdog | zdog, 3d, font, text, truetype, ttf |
 | [zip-webpack-plugin](./z/zip-webpack-plugin) | Webpack plugin to zip up emitted files. | webpack |
 | [zip_dot_js](./z/zip_dot_js) | - | - |
 | [zipcelx](./z/zipcelx) | JSON Transformer to create .xlsx files | JSON, Excel, xlsx |

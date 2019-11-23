@@ -420,6 +420,9 @@ object atUifabricFoundationStrings {
   sealed trait nav extends js.Object
   
   @js.native
+  sealed trait no extends js.Object
+  
+  @js.native
   sealed trait noindex extends js.Object
   
   @js.native
@@ -652,6 +655,9 @@ object atUifabricFoundationStrings {
   
   @js.native
   sealed trait webview extends js.Object
+  
+  @js.native
+  sealed trait yes extends js.Object
   
   @scala.inline
   def Anon_Slots: Anon_Slots = "Anon_Slots".asInstanceOf[Anon_Slots]
@@ -930,6 +936,8 @@ object atUifabricFoundationStrings {
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
   @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  @scala.inline
   def noindex: noindex = "noindex".asInstanceOf[noindex]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -1085,5 +1093,7 @@ object atUifabricFoundationStrings {
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline
   def webview: webview = "webview".asInstanceOf[webview]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
 }
 

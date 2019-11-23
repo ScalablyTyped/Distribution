@@ -1069,7 +1069,7 @@ object Geom extends js.Object {
       * 
       * If optional `output` parameter is omitted, new Rectangle object is created and returned. If there is intersection, it will contain intersection area. If there is no intersection, it wil be empty Rectangle (all values set to zero).
       * 
-      * If Rectangle object is passed as `output` and there is intersection, then intersection area data will be loaded into it and it will be returned. If there is no intersetion, it will be returned without any change.
+      * If Rectangle object is passed as `output` and there is intersection, then intersection area data will be loaded into it and it will be returned. If there is no intersection, it will be returned without any change.
       * @param rectA The first Rectangle object.
       * @param rectB The second Rectangle object.
       * @param output Optional Rectangle object. If given, the intersection data will be loaded into it (in case of no intersection, it will be left unchanged). Otherwise, new Rectangle object will be created and returned with either intersection data or empty (all values set to zero), if there is no intersection.
@@ -1180,7 +1180,9 @@ object Geom extends js.Object {
     /**
       * Checks if two Rectangles intersect.
       * 
-      * A Rectangle intersects another Rectangle if any part of its bounds is within the other Rectangle's bounds. As such, the two Rectangles are considered "solid". A Rectangle with no width or no height will never intersect another Rectangle.
+      * A Rectangle intersects another Rectangle if any part of its bounds is within the other Rectangle's bounds.
+      * As such, the two Rectangles are considered "solid".
+      * A Rectangle with no width or no height will never intersect another Rectangle.
       * @param rectA The first Rectangle to check for intersection.
       * @param rectB The second Rectangle to check for intersection.
       */
@@ -1690,12 +1692,12 @@ object Geom extends js.Object {
       * 
       * Unlike the `FitInside` function, the target rectangle may extend further out than the source.
       * @param target The target rectangle to adjust.
-      * @param source The source rectangle to envlope the target in.
+      * @param source The source rectangle to envelope the target in.
       */
     def FitOutside[O /* <: Rectangle */](target: O, source: Rectangle): O = js.native
     /**
-      * Rounds down (floors) the top left X and Y co-ordinates of the given Rectangle to the largest integer less than or equal to them
-      * @param rect The rectangle to floor the top left X and Y co-ordinates of
+      * Rounds down (floors) the top left X and Y coordinates of the given Rectangle to the largest integer less than or equal to them
+      * @param rect The rectangle to floor the top left X and Y coordinates of
       */
     def Floor[O /* <: Rectangle */](rect: O): O = js.native
     /**
@@ -1733,8 +1735,8 @@ object Geom extends js.Object {
     /**
       * Return an array of points from the perimeter of the rectangle, each spaced out based on the quantity or step required.
       * @param rectangle The Rectangle object to get the points from.
-      * @param step Step between points. Used to calculate the number of points to return when quantity is falsy. Ignored if quantity is positive.
-      * @param quantity The number of evenly spaced points from the rectangles perimeter to return. If falsy, step param will be used to calculate the number of points.
+      * @param step Step between points. Used to calculate the number of points to return when quantity is falsey. Ignored if quantity is positive.
+      * @param quantity The number of evenly spaced points from the rectangles perimeter to return. If falsey, step param will be used to calculate the number of points.
       * @param out An optional array to store the points in.
       */
     def GetPoints[O /* <: js.Array[Point] */](rectangle: Rectangle, step: Double, quantity: integer): O = js.native
@@ -1885,8 +1887,8 @@ object Geom extends js.Object {
     def BuildEquilateral(x: Double, y: Double, length: Double): Triangle = js.native
     /**
       * [description]
-      * @param data A flat array of vertice coordinates like [x0,y0, x1,y1, x2,y2, ...]
-      * @param holes An array of hole indices if any (e.g. [5, 8] for a 12-vertice input would mean one hole with vertices 5–7 and another with 8–11). Default null.
+      * @param data A flat array of vertex coordinates like [x0,y0, x1,y1, x2,y2, ...]
+      * @param holes An array of hole indices if any (e.g. [5, 8] for a 12-vertex input would mean one hole with vertices 5–7 and another with 8–11). Default null.
       * @param scaleX [description] Default 1.
       * @param scaleY [description] Default 1.
       * @param out [description]

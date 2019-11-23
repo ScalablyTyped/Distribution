@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class SigninOptionsBuilder () extends js.Object {
   def setAppPackageName(name: String): js.Any = js.native
   def setFetchBasicProfile(fetch: Boolean): js.Any = js.native
+  def setLoginHint(hint: String): js.Any = js.native
   def setPrompt(prompt: String): js.Any = js.native
   def setScope(scope: String): js.Any = js.native
 }

@@ -282,6 +282,10 @@ object Core extends js.Object {
       */
     val minWidth: integer = js.native
     /**
+      * Sets the `mipmapFilter` property when the WebGL renderer is created.
+      */
+    val mipmapFilter: String = js.native
+    /**
       * A base64 encoded PNG that will be used as the default texture when a texture is assigned that is missing or not loaded.
       */
     val missingImage: String = js.native

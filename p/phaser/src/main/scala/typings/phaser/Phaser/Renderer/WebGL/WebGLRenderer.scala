@@ -175,6 +175,27 @@ class WebGLRenderer protected () extends js.Object {
     */
   var maskStack: js.Array[GeometryMask] = js.native
   /**
+    * The mipmap magFilter to be used when creating textures.
+    * 
+    * You can specify this as a string in the game config, i.e.:
+    * 
+    * `renderer: { mipmapFilter: 'NEAREST_MIPMAP_LINEAR' }`
+    * 
+    * The 6 options for WebGL1 are, in order from least to most computationally expensive:
+    * 
+    * NEAREST (for pixel art)
+    * LINEAR (the default)
+    * NEAREST_MIPMAP_NEAREST
+    * LINEAR_MIPMAP_NEAREST
+    * NEAREST_MIPMAP_LINEAR
+    * LINEAR_MIPMAP_LINEAR
+    * 
+    * Mipmaps only work with textures that are fully power-of-two in size.
+    * 
+    * For more details see https://webglfundamentals.org/webgl/lessons/webgl-3d-textures.html
+    */
+  var mipmapFilter: GLenum = js.native
+  /**
     * Keeps track of any WebGLTexture created with the current WebGLRenderingContext
     */
   var nativeTextures: js.Array[_] = js.native

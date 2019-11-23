@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@testing-library/jest-dom" : "4.2.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@testing-library/jest-dom" : "4.2.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -45,6 +45,10 @@ trait GameConfig extends js.Object {
     */
   var context: js.UndefOr[CanvasRenderingContext2D] = js.undefined
   /**
+    * Is Phaser running under a custom (non-native web) environment? If so, set this to `true` to skip internal Feature detection. If `true` the `renderType` cannot be left as `AUTO`.
+    */
+  var customEnvironment: js.UndefOr[Boolean] = js.undefined
+  /**
     * Disable the browser's default 'contextmenu' event (usually triggered by a right-button mouse click).
     */
   var disableContextMenu: js.UndefOr[Boolean] = js.undefined
@@ -147,6 +151,7 @@ object GameConfig {
     canvas: HTMLCanvasElement = null,
     canvasStyle: String = null,
     context: CanvasRenderingContext2D = null,
+    customEnvironment: js.UndefOr[Boolean] = js.undefined,
     disableContextMenu: js.UndefOr[Boolean] = js.undefined,
     dom: DOMContainerConfig = null,
     fps: FPSConfig = null,
@@ -179,6 +184,7 @@ object GameConfig {
     if (canvas != null) __obj.updateDynamic("canvas")(canvas)
     if (canvasStyle != null) __obj.updateDynamic("canvasStyle")(canvasStyle)
     if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(customEnvironment)) __obj.updateDynamic("customEnvironment")(customEnvironment)
     if (!js.isUndefined(disableContextMenu)) __obj.updateDynamic("disableContextMenu")(disableContextMenu)
     if (dom != null) __obj.updateDynamic("dom")(dom)
     if (fps != null) __obj.updateDynamic("fps")(fps)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/react" : "5.2.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/react" : "5.2.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

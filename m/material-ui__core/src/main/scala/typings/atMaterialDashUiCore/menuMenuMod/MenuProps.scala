@@ -31,6 +31,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.location
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -49,6 +50,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.atMaterialDashUiCore.backdropBackdropMod.BackdropProps
 import typings.atMaterialDashUiCore.modalModalManagerMod.ModalManager
 import typings.atMaterialDashUiCore.popoverPopoverMod.PopoverActions
@@ -400,6 +402,7 @@ trait MenuProps extends js.Object {
   var title: js.UndefOr[String] = js.undefined
   var transformOrigin: js.UndefOr[PopoverOrigin] = js.undefined
   var transitionDuration: js.UndefOr[Double | Anon_Appear | auto] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
@@ -622,6 +625,7 @@ object MenuProps {
     title: String = null,
     transformOrigin: PopoverOrigin = null,
     transitionDuration: Double | Anon_Appear | auto = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null
@@ -840,6 +844,7 @@ object MenuProps {
     if (title != null) __obj.updateDynamic("title")(title)
     if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)

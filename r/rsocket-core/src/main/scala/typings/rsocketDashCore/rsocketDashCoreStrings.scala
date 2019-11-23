@@ -1,17 +1,20 @@
 package typings.rsocketDashCore
 
 import typings.rsocketDashCore.rSocketBufferUtilsMod.Encoding
-import typings.rsocketDashCore.rSocketMachineMod.Role
+import typings.rsocketDashCore.rSocketLeaseMod.EventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rsocketDashCoreStrings {
   @js.native
-  sealed trait CLIENT extends Role
+  sealed trait Accept extends EventType
   
   @js.native
-  sealed trait SERVER extends Role
+  sealed trait Reject extends EventType
+  
+  @js.native
+  sealed trait Terminate extends EventType
   
   @js.native
   sealed trait ascii extends Encoding
@@ -26,9 +29,11 @@ object rsocketDashCoreStrings {
   sealed trait utf8 extends Encoding
   
   @scala.inline
-  def CLIENT: CLIENT = "CLIENT".asInstanceOf[CLIENT]
+  def Accept: Accept = "Accept".asInstanceOf[Accept]
   @scala.inline
-  def SERVER: SERVER = "SERVER".asInstanceOf[SERVER]
+  def Reject: Reject = "Reject".asInstanceOf[Reject]
+  @scala.inline
+  def Terminate: Terminate = "Terminate".asInstanceOf[Terminate]
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
   @scala.inline

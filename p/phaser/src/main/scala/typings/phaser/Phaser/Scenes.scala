@@ -237,7 +237,7 @@ object Scenes extends js.Object {
     def resume(key: String): SceneManager = js.native
     def resume(key: String, data: js.Object): SceneManager = js.native
     /**
-      * Runs the given Scene, but does not change the state of this Scene.
+      * Runs the given Scene.
       * 
       * If the given Scene is paused, it will resume it. If sleeping, it will wake it.
       * If not running at all, it will be started.

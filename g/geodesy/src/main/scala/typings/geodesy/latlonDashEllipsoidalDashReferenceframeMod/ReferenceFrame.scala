@@ -1,0 +1,22 @@
+package typings.geodesy.latlonDashEllipsoidalDashReferenceframeMod
+
+import typings.geodesy.geodesyMod.Ellipsoid
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ReferenceFrame extends js.Object {
+  var ellipsoid: Ellipsoid
+  var epoch: Double
+  var name: String
+}
+
+object ReferenceFrame {
+  @scala.inline
+  def apply(ellipsoid: Ellipsoid, epoch: Double, name: String): ReferenceFrame = {
+    val __obj = js.Dynamic.literal(ellipsoid = ellipsoid, epoch = epoch, name = name)
+  
+    __obj.asInstanceOf[ReferenceFrame]
+  }
+}
+

@@ -249,7 +249,6 @@
 | 1146 | [command-line-args](./c/command-line-args) | A mature, feature-complete library to parse comman
 | 1144 | [ini](./i/ini) | An ini encoder/decoder for node
 | 1140 | [vinyl](./v/vinyl) | Virtual file format.
-| 1136 | [mz](./m/mz) | modernize node.js to current ECMAScript standards
 | 1124 | [copy-webpack-plugin](./c/copy-webpack-plugin) | Copy files && directories with webpack
 | 1120 | [rollup](./r/rollup) | Next-generation ES module bundler
 | 1119 | [when](./w/when) | A lightweight Promises/A+ and when() implementatio
@@ -446,7 +445,6 @@
 | 564 | [lodash_dot_pick](./l/lodash_dot_pick) | The lodash method _.pick exported as a module.
 | 563 | [bytes](./b/bytes) | Utility to parse a string bytes to bytes and vice-
 | 560 | [estraverse](./e/estraverse) | ECMAScript JS AST traversal functions
-| 560 | [fs-promise](./f/fs-promise) | -
 | 560 | [liftoff](./l/liftoff) | Launch your command line tool with ease.
 | 560 | [oauth](./o/oauth) | Library for interacting with OAuth 1.0, 1.0A, 2 an
 | 559 | [debounce](./d/debounce) | Creates and returns a new debounced version of the
@@ -2391,6 +2389,7 @@
 | 55 | [vue__component-compiler-u](./v/vue__component-compiler-utils) | Lower level utilities for compiling Vue single fil
 | 54 | [aurelia-metadata](./a/aurelia-metadata) | Utilities for reading and writing the metadata of 
 | 54 | [co-views](./c/co-views) | Higher level promise-based template rendering for 
+| 54 | [css-mediaquery](./c/css-mediaquery) | Parses and determines if a given CSS Media Query m
 | 54 | [datejs](./d/datejs) | DateJS is the most full-featured, internationalize
 | 54 | [decode-uri-component](./d/decode-uri-component) | A better decodeURIComponent
 | 54 | [fs-readfile-promise](./f/fs-readfile-promise) | Promise version of fs.readFile
@@ -2569,6 +2568,7 @@
 | 48 | [currency-formatter](./c/currency-formatter) | A simple Javascript utility that helps you to disp
 | 48 | [draft-convert](./d/draft-convert) | Extensibly serialize & deserialize Draft.js Conten
 | 48 | [egg-logger](./e/egg-logger) | egg logger
+| 48 | [fontkit](./f/fontkit) | An advanced font engine for Node and the browser
 | 48 | [intl-messageformat-parser](./i/intl-messageformat-parser) | Parses ICU Message strings into an AST via JavaScr
 | 48 | [is-path-inside](./i/is-path-inside) | Check if a path is inside another path
 | 48 | [is-reachable](./i/is-reachable) | Check if servers are reachable
@@ -2630,6 +2630,7 @@
 | 46 | [sigmund](./s/sigmund) | Quick and dirty signatures for Objects.
 | 46 | [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client
 | 46 | [static-eval](./s/static-eval) | evaluate statically-analyzable expressions
+| 46 | [testing-library__jest-dom](./t/testing-library__jest-dom) | Custom jest matchers to test the state of the DOM
 | 46 | [topojson-client](./t/topojson-client) | Manipulate TopoJSON and convert it to GeoJSON.
 | 45 | [binary-extensions](./b/binary-extensions) | List of binary file extensions
 | 45 | [center-align](./c/center-align) | Center-align the text in a string.
@@ -3376,6 +3377,7 @@
 | 25 | [deep-freeze-strict](./d/deep-freeze-strict) | recursively Object.freeze() objects and functions,
 | 25 | [duplexer3](./d/duplexer3) | Like duplexer but using streams3
 | 25 | [express-socket_dot_io-ses](./e/express-socket_dot_io-session) | Share a cookie-based express-session middleware wi
+| 25 | [fast-text-encoding](./f/fast-text-encoding) | Fast polyfill for TextEncoder and TextDecoder, onl
 | 25 | [feathersjs__socketio](./f/feathersjs__socketio) | The Feathers Socket.io real-time API provider
 | 25 | [find-versions](./f/find-versions) | Find semver versions in a string: unicorn v1.2.3 →
 | 25 | [global-prefix](./g/global-prefix) | Get the npm global path prefix.
@@ -4498,6 +4500,7 @@
 | 10 | [giphy-api](./g/giphy-api) | JavaScript module for the giphy.com API that suppo
 | 10 | [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js
 | 10 | [google-images](./g/google-images) | Search images using Google Custom Search Engine AP
+| 10 | [hls-parser](./h/hls-parser) | A simple library to read/write HLS playlists
 | 10 | [hopscotch](./h/hopscotch) | A framework to make it easy for developers to add 
 | 10 | [html-parser](./h/html-parser) | HTML/XML parser with less explosions
 | 10 | [identicon_dot_js](./i/identicon_dot_js) | GitHub-style identicons as PNGs or SVGs in JS.
@@ -4790,6 +4793,7 @@
 | 8 | [react-css-transition-repl](./r/react-css-transition-replace) | A React component to animate replacing one element
 | 8 | [react-is-deprecated](./r/react-is-deprecated) | Adds an isDeprecated method to the React.PropTypes
 | 8 | [react-joyride](./r/react-joyride) | Create guided tours for your apps
+| 8 | [react-lazy-load-image-com](./r/react-lazy-load-image-component) | React Component to lazy load images using a HOC to
 | 8 | [react-mentions](./r/react-mentions) | React mentions input
 | 8 | [react-native-community__c](./r/react-native-community__cli) | React Native CLI
 | 8 | [react-native-firebase](./r/react-native-firebase) | A well tested, feature rich Firebase implementatio
@@ -6504,6 +6508,7 @@
 | 1 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 1 | [hookrouter](./h/hookrouter) | A hook based router for React
 | 1 | [hummus-recipe](./h/hummus-recipe) | A powerful PDF tool for NodeJS based on HummusJS
+| 1 | [ibm-openapi-validator](./i/ibm-openapi-validator) | Configurable and extensible validator/linter for O
 | 1 | [image-thumbnail](./i/image-thumbnail) | Generate an image thumbnail.
 | 1 | [infobox-parser](./i/infobox-parser) | Parse Wikipedia Infobox Source
 | 1 | [ink-testing-library](./i/ink-testing-library) | Utilities for testing Ink apps
@@ -6711,6 +6716,7 @@
 | 1 | [promise_dot_allsettled](./p/promise_dot_allsettled) | ES Proposal spec-compliant shim for Promise.allSet
 | 1 | [prosemirror-dev-tools](./p/prosemirror-dev-tools) | Dev Tools for ProseMirror
 | 1 | [prosemirror-test-builder](./p/prosemirror-test-builder) | Helpers for programatically building ProseMirror t
+| 1 | [protoo-server](./p/protoo-server) | protoo Node.js server module
 | 1 | [protractor-http-mock](./p/protractor-http-mock) | Mock HTTP calls in your protractor specs.
 | 1 | [proxy-verifier](./p/proxy-verifier) | Check that proxies are working, verify their anony
 | 1 | [q-retry](./q/q-retry) | A shell for Q to enable retries.
@@ -7626,4 +7632,5 @@
 | 0 | [yandex-money-sdk](./y/yandex-money-sdk) | SDK for working with yandex money API
 | 0 | [yog-ral](./y/yog-ral) | node-ral with mcpack and nshead
 | 0 | [zdog](./z/zdog) | Round, flat, designer-friendly pseudo-3D engine
-| 0 | [zenaton](./z/zenaton) | Zenaton library |
+| 0 | [zenaton](./z/zenaton) | Zenaton library
+| 0 | [zfont](./z/zfont) | Text plugin for Zdog |

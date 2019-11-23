@@ -199,7 +199,7 @@ object grommetComponents extends grommetProps {
     typings.std.HTMLTableElement
   ])]]
   @scala.inline
-  def Diagram: ComponentType[DiagramProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommet.grommetMod.Diagram].asInstanceOf[typings.react.reactMod.ComponentType[
+  def Diagram: ComponentType[DiagramProps with SVGProps[SVGSVGElement]] = typings.grommet.grommetMod.Diagram.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.grommet.componentsDiagramMod.DiagramProps with typings.react.reactMod.SVGProps[typings.std.SVGSVGElement]]]
   @scala.inline
   def Distribution: ComponentType[

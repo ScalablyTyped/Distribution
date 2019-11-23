@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "ethereumjs-tx"
-version := "2.1.1-a8e0c3"
+version := "2.1.1-5dc548"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-068208",
+  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20190328Z-d1847c",
   "org.scalablytyped" %%% "ethereumjs-common" % "1.3.2-7666b5",
-  "org.scalablytyped" %%% "ethereumjs-util" % "6.2.0-0bb272",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
-  "org.scalablytyped" %%% "rlp" % "2.2.3-712842",
+  "org.scalablytyped" %%% "ethereumjs-util" % "6.2.0-d8b045",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
+  "org.scalablytyped" %%% "rlp" % "2.2.3-32a355",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

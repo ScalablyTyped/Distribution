@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "undertaker"
-version := "1.2-dt-20190405Z-362fd6"
+version := "1.2-dt-20190405Z-818994"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20180214Z-6c4994")
 publishArtifact in packageDoc := false

@@ -47,7 +47,7 @@ object InputOptions {
     input: InputOption = null,
     manualChunks: ManualChunksOption = null,
     moduleContext: (js.Function1[/* id */ String, String]) | StringDictionary[String] = null,
-    onwarn: (/* warning */ String | RollupWarning, /* defaultHandler */ WarningHandler) => Unit = null,
+    onwarn: (/* warning */ RollupWarning, /* defaultHandler */ WarningHandler) => Unit = null,
     perf: js.UndefOr[Boolean] = js.undefined,
     plugins: js.Array[Plugin] = null,
     preserveModules: js.UndefOr[Boolean] = js.undefined,

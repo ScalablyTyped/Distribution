@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "jest-snapshot"
-version := "24.9.0-997078"
+version := "24.9.0-7be0ac"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "chalk" % "2.4.2-60c74f",
-  "org.scalablytyped" %%% "expect" % "24.9.0-929f1f",
+  "org.scalablytyped" %%% "expect" % "24.9.0-c39282",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-797456",
-  "org.scalablytyped" %%% "jest-haste-map" % "24.9.0-39515d",
+  "org.scalablytyped" %%% "jest-haste-map" % "24.9.0-8075c9",
   "org.scalablytyped" %%% "jest-matcher-utils" % "21.0-dt-20190212Z-ff4af6",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-7399ab",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-3a286f",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "pretty-format" % "24.9.0-681723",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
   "org.scalablytyped" %%% "yargs" % "13.0-dt-20190925Z-22543c",

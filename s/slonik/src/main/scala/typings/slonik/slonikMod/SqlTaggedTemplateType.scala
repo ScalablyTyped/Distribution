@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 trait SqlTaggedTemplateType extends js.Object {
   // tslint:disable-next-line no-unnecessary-generics (the sql<Foo>`select foo` is cleaner in this case than casting with 'as')
   def apply[T](template: TemplateStringsArray, vals: ValueExpressionType*): SqlSqlTokenType[T] = js.native
-  def array(values: js.Array[PrimitiveValueExpressionType], memberType: String): ArraySqlTokenType = js.native
+  def array(values: js.Array[PrimitiveValueExpressionType], memberType: SqlTokenType): ArraySqlTokenType = js.native
+  def array(values: js.Array[PrimitiveValueExpressionType], memberType: TypeNameIdentifierType): ArraySqlTokenType = js.native
   def identifier(names: js.Array[String]): IdentifierSqlTokenType = js.native
   def join(members: js.Array[ValueExpressionType], glue: SqlTokenType): ListSqlTokenType = js.native
   def json(value: SerializableValueType): JsonSqlTokenType = js.native

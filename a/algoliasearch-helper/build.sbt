@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "algoliasearch-helper"
-version := "2.26-dt-20190524Z-a33950"
+version := "2.26-dt-20190524Z-4ac7df"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "algoliasearch" % "3.34.0-dt-20191014Z-6de453",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -251,7 +251,6 @@
 | 0.8408299476880083 | [jquery](./j/jquery) | JavaScript library for DOM operations
 | 0.8406699444522329 | [polished](./p/polished) | A lightweight toolset for writing styles in Javasc
 | 0.8406457461844725 | [vary](./v/vary) | Manipulate the HTTP Vary header
-| 0.8404859689107886 | [mz](./m/mz) | modernize node.js to current ECMAScript standards
 | 0.8403232579804023 | [wrap-ansi](./w/wrap-ansi) | Wordwrap a string with ANSI escape codes
 | 0.8402438112169248 | [styled-components](./s/styled-components) | Visual primitives for the component age. Use the b
 | 0.8400416398115211 | [set-value](./s/set-value) | Create nested values and any intermediaries using 
@@ -831,6 +830,7 @@
 | 0.786360374020512 | [color-name](./c/color-name) | A list of color names and its values
 | 0.7861948441161768 | [tcomb](./t/tcomb) | Type checking and DDD for JavaScript
 | 0.7861805104072737 | [ava](./a/ava) | Testing can be a drag. AVA helps you get it done.
+| 0.7860571646048489 | [testing-library__jest-dom](./t/testing-library__jest-dom) | Custom jest matchers to test the state of the DOM
 | 0.7859856403731469 | [sindresorhus__is](./s/sindresorhus__is) | Type check values: is.string('🦄') //=> true
 | 0.7857738323018851 | [contains-path](./c/contains-path) | Return true if a file path contains the given path
 | 0.7857636259236822 | [proxy-from-env](./p/proxy-from-env) | Offers getProxyForUrl to get the proxy URL for a U
@@ -3420,6 +3420,7 @@
 | 0.6662002779849738 | [linkify-issues](./l/linkify-issues) | Linkify GitHub issue references
 | 0.666182319470578 | [hexo](./h/hexo) | A fast, simple & powerful blog framework, powered 
 | 0.6661268358435839 | [uifabric__foundation](./u/uifabric__foundation) | Foundation library for building Fabric components.
+| 0.6661239894358474 | [hls-parser](./h/hls-parser) | A simple library to read/write HLS playlists
 | 0.6661239428928114 | [signalfx](./s/signalfx) | Node.js client library for SignalFx
 | 0.6660869920096949 | [proxy-lists](./p/proxy-lists) | Get proxies from publicly available proxy lists.
 | 0.6660759396559688 | [ns-api](./n/ns-api) | Public transit data from Nederlandse Spoorwegen AP
@@ -4135,6 +4136,7 @@
 | 0.6305004222200287 | [autolinker](./a/autolinker) | Utility to automatically link the URLs, email addr
 | 0.630468197268847 | [sugar-core](./s/sugar-core) | Core module for the Sugar Javascript utility libra
 | 0.630396585737696 | [socketcluster-server](./s/socketcluster-server) | Server module for SocketCluster
+| 0.6301791320988295 | [ibm-openapi-validator](./i/ibm-openapi-validator) | Configurable and extensible validator/linter for O
 | 0.6300516362925298 | [phosphor__algorithm](./p/phosphor__algorithm) | PhosphorJS - Algorithms and Iterators
 | 0.6299985372232846 | [argon2-browser](./a/argon2-browser) | Argon2 library compiled for browser runtime
 | 0.6299382441524031 | [rrule](./r/rrule) | JavaScript library for working with recurrence rul
@@ -4383,6 +4385,7 @@
 | 0.6117660572842687 | [react-webcam](./r/react-webcam) | React webcam component
 | 0.6117391875111065 | [rheostat](./r/rheostat) | Rheostat is a www, mobile, and accessible slider c
 | 0.6117230252248578 | [prosemirror-dev-tools](./p/prosemirror-dev-tools) | Dev Tools for ProseMirror
+| 0.6116996359133353 | [react-lazy-load-image-com](./r/react-lazy-load-image-component) | React Component to lazy load images using a HOC to
 | 0.6116294729781757 | [promise-dag](./p/promise-dag) | Chain promises declaratively using high-level grap
 | 0.6114874362152027 | [http-codes](./h/http-codes) | Map of HTTP status messages to codes based on Node
 | 0.61139529600626 | [leaflet_dot_locatecontrol](./l/leaflet_dot_locatecontrol) | A useful control to geolocate the user with many o
@@ -5024,6 +5027,7 @@
 | 0.5338148387665608 | [react-list](./r/react-list) | A versatile infinite scroll 
 | 0.5337990991191275 | [datatables_dot_net-keytab](./d/datatables_dot_net-keytable) | KeyTable for DataTables
 | 0.5336933224274456 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4
+| 0.5335361223241682 | [zfont](./z/zfont) | Text plugin for Zdog
 | 0.5334938523464257 | [secure-random-password](./s/secure-random-password) | Generate passwords using a cryptographically-stron
 | 0.533349990473235 | [passport-twitter](./p/passport-twitter) | Twitter authentication strategy for Passport.
 | 0.5330126780874154 | [phosphor__virtualdom](./p/phosphor__virtualdom) | PhosphorJS - Virtual DOM
@@ -5289,6 +5293,7 @@
 | 0.4940268537012061 | [protractor-http-mock](./p/protractor-http-mock) | Mock HTTP calls in your protractor specs.
 | 0.4939800773733738 | [rsocket-core](./r/rsocket-core) | RSocket core
 | 0.4938777100210208 | [rsocket-types](./r/rsocket-types) | RSocket types
+| 0.49378205232959316 | [protoo-server](./p/protoo-server) | protoo Node.js server module
 | 0.4937527311889099 | [jsftp](./j/jsftp) | A sane FTP client implementation for NodeJS
 | 0.49324970574335314 | [react-resizable](./r/react-resizable) | A component that is resizable with handles.
 | 0.493185952074966 | [string](./s/string) | string contains methods that aren't included in th
@@ -5389,7 +5394,6 @@
 | 0.4774330158884048 | [askmethat-rating](./a/askmethat-rating) | Simple plugin providing to use fonts as rating
 | 0.47727151698910586 | [parity-pmr](./p/parity-pmr) | Parity's native market reporting protocol
 | 0.4771275702156601 | [restangular](./r/restangular) | Restful Resources service for AngularJS apps
-| 0.4770851394728636 | [fs-promise](./f/fs-promise) | -
 | 0.47705767973340424 | [vault-auth-aws](./v/vault-auth-aws) | js module that get token from vault HashiCorp serv
 | 0.4769052170845349 | [gdal](./g/gdal) | Bindings to GDAL (Geospatial Data Abstraction Libr
 | 0.4767727834783344 | [jsnlog](./j/jsnlog) | Simple logging package. Use on client and/or serve
@@ -5972,6 +5976,7 @@
 | 0.40670656439627617 | [react-fa](./r/react-fa) | Font Awesome icons as React components
 | 0.40667392910113015 | [tea-merge](./t/tea-merge) | Deep object merge utility.
 | 0.40666781734170593 | [react-native-referrer](./r/react-native-referrer) |  
+| 0.4066629408555553 | [css-mediaquery](./c/css-mediaquery) | Parses and determines if a given CSS Media Query m
 | 0.4065036240176447 | [firebird](./f/firebird) | Firebird binding to node, uses libfbclient.
 | 0.40640965510127103 | [chess_dot_js](./c/chess_dot_js) | A Javascript chess library for chess move generati
 | 0.4063619371122673 | [ngprogress-lite](./n/ngprogress-lite) | Angular provider for slim progress bars
@@ -6356,6 +6361,7 @@
 | 0.35866868616538544 | [atlaskit__inline-edit](./a/atlaskit__inline-edit) | A base component used to build inline-editable com
 | 0.358525524494979 | [grpc](./g/grpc) | gRPC Library for Node
 | 0.35820904054654645 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster_dot_layersupport) | Sub-plugin for Leaflet.markercluster plugin (MCG i
+| 0.3580329521189424 | [fast-text-encoding](./f/fast-text-encoding) | Fast polyfill for TextEncoder and TextDecoder, onl
 | 0.35790099753733745 | [pulumi__pulumi](./p/pulumi__pulumi) | Pulumi's Node.js SDK
 | 0.3578497342319805 | [react-better-password](./r/react-better-password) | Password input for ReactJS that mimics mobile pass
 | 0.35766738626929834 | [raspi-onewire](./r/raspi-onewire) | Provides access to 1-Wire on the Raspberry Pi from
@@ -6467,6 +6473,7 @@
 | 0.34462455715180806 | [jupyterlab__csvviewer](./j/jupyterlab__csvviewer) | JupyterLab - CSV Widget
 | 0.34461910787504196 | [rdf-js](./r/rdf-js) | Mirror of the RDFJS TS typings
 | 0.34432630381900386 | [halogenium](./h/halogenium) | A collection of loading spinners with React.js bas
+| 0.3442944170828878 | [fontkit](./f/fontkit) | An advanced font engine for Node and the browser
 | 0.3442793487014908 | [web3-core-method](./w/web3-core-method) | Creates the methods on the web3 modules. This is a
 | 0.3442732509508428 | [yog-bigpipe](./y/yog-bigpipe) | An express.js middleware for fis widget pipline ou
 | 0.3441635667875143 | [jupyterlab__inspector](./j/jupyterlab__inspector) | JupyterLab - Code Inspector

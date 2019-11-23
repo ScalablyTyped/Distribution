@@ -25,6 +25,7 @@ import typings.antd.antdStrings.location
 import typings.antd.antdStrings.menu
 import typings.antd.antdStrings.mixed
 import typings.antd.antdStrings.move
+import typings.antd.antdStrings.no
 import typings.antd.antdStrings.none
 import typings.antd.antdStrings.numeric
 import typings.antd.antdStrings.off
@@ -43,6 +44,7 @@ import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
+import typings.antd.antdStrings.yes
 import typings.antd.esMenuMod.ClickParam
 import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
@@ -337,6 +339,7 @@ trait MenuItemProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[ReactNode] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
@@ -517,6 +520,7 @@ object MenuItemProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: ReactNode = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null
@@ -694,6 +698,7 @@ object MenuItemProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webdriverio" : "5.16.7"
+      "webdriverio" : "5.16.8"
     }
   ],
   "test-dependencies" : [
     {
-      "webdriverio" : "5.16.7"
+      "webdriverio" : "5.16.8"
     }
   ],
   "compile-devDependencies" : [

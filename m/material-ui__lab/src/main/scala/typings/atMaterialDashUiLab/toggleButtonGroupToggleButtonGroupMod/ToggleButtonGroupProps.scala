@@ -27,6 +27,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.medium
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.menu
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mixed
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.move
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.no
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.none
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.numeric
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.off
@@ -46,6 +47,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.time
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tree
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.url
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.vertical
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.yes
 import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
@@ -362,6 +364,7 @@ trait ToggleButtonGroupProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   /**
@@ -548,6 +551,7 @@ object ToggleButtonGroupProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     value: js.Any = null,
@@ -727,6 +731,7 @@ object ToggleButtonGroupProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)

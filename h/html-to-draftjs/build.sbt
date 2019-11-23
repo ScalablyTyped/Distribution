@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "html-to-draftjs"
-version := "1.4-dt-20190925Z-413e96"
+version := "1.4-dt-20190925Z-3d04c0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20191014Z-dc11c2",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20191014Z-a66533",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-67e280",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191025Z-132fef",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191122Z-caf4d8",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

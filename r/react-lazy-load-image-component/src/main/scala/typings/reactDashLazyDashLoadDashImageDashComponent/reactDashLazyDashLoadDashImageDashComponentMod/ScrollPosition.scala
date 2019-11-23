@@ -1,0 +1,20 @@
+package typings.reactDashLazyDashLoadDashImageDashComponent.reactDashLazyDashLoadDashImageDashComponentMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ScrollPosition extends js.Object {
+  var x: Double
+  var y: Double
+}
+
+object ScrollPosition {
+  @scala.inline
+  def apply(x: Double, y: Double): ScrollPosition = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[ScrollPosition]
+  }
+}
+

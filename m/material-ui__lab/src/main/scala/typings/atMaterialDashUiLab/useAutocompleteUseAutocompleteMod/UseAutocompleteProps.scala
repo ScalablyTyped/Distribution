@@ -101,7 +101,7 @@ trait UseAutocompleteProps extends js.Object {
     */
   var inputValue: js.UndefOr[String] = js.undefined
   /**
-    * If true, `value` must be an array and the menu will support multiple selections.
+    * If `true`, `value` must be an array and the menu will support multiple selections.
     */
   var multiple: js.UndefOr[Boolean] = js.undefined
   /**

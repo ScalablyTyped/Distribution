@@ -17,6 +17,7 @@ import typings.stripe.stripeMod.resources.Customers
 import typings.stripe.stripeMod.resources.Disputes
 import typings.stripe.stripeMod.resources.EphemeralKeys
 import typings.stripe.stripeMod.resources.Events
+import typings.stripe.stripeMod.resources.FileLinks
 import typings.stripe.stripeMod.resources.Files
 import typings.stripe.stripeMod.resources.InvoiceItems
 import typings.stripe.stripeMod.resources.Invoices
@@ -30,12 +31,15 @@ import typings.stripe.stripeMod.resources.Products
 import typings.stripe.stripeMod.resources.RecipientCards
 import typings.stripe.stripeMod.resources.Recipients
 import typings.stripe.stripeMod.resources.Refunds
+import typings.stripe.stripeMod.resources.Reviews
 import typings.stripe.stripeMod.resources.SKUs
 import typings.stripe.stripeMod.resources.SetupIntents
 import typings.stripe.stripeMod.resources.Sources
 import typings.stripe.stripeMod.resources.SubscriptionItems
 import typings.stripe.stripeMod.resources.Subscriptions
+import typings.stripe.stripeMod.resources.TaxRates
 import typings.stripe.stripeMod.resources.Tokens
+import typings.stripe.stripeMod.resources.Topups
 import typings.stripe.stripeMod.resources.Transfers
 import typings.stripe.stripeMod.resources.UsageRecordSummaries
 import typings.stripe.stripeMod.resources.UsageRecords
@@ -72,6 +76,7 @@ trait Stripe extends js.Object {
   var disputes: Disputes = js.native
   var ephemeralKeys: EphemeralKeys = js.native
   var events: Events = js.native
+  var fileLinks: FileLinks = js.native
   var files: Files = js.native
   var invoiceItems: InvoiceItems = js.native
   var invoices: Invoices = js.native
@@ -92,12 +97,15 @@ trait Stripe extends js.Object {
   var recipients: Recipients = js.native
   var refunds: Refunds = js.native
   var resources: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Stripe.resources */ js.Any = js.native
+  var reviews: Reviews = js.native
   var setupIntents: SetupIntents = js.native
   var skus: SKUs = js.native
   var sources: Sources = js.native
   var subscriptionItems: SubscriptionItems = js.native
   var subscriptions: Subscriptions = js.native
+  var taxRates: TaxRates = js.native
   var tokens: Tokens = js.native
+  var topups: Topups = js.native
   var transfers: Transfers = js.native
   var usageRecordSummaries: UsageRecordSummaries = js.native
   var usageRecords: UsageRecords = js.native

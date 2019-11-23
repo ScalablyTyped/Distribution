@@ -47,6 +47,11 @@ object DOM extends js.Object {
     @JSName("step")
     var step_Original: FrameRequestCallback = js.native
     /**
+      * The target FPS rate in ms.
+      * Only used when setTimeout is used instead of RAF.
+      */
+    var target: Double = js.native
+    /**
       * The most recent timestamp. Either a DOMHighResTimeStamp under RAF or `Date.now` under SetTimeout.
       */
     var tick: Double = js.native
@@ -66,8 +71,9 @@ object DOM extends js.Object {
       * Starts the requestAnimationFrame or setTimeout process running.
       * @param callback The callback to invoke each step.
       * @param forceSetTimeOut Should it use SetTimeout, even if RAF is available?
+      * @param targetFPS The target fps rate (in ms). Only used when setTimeout is used.
       */
-    def start(callback: FrameRequestCallback, forceSetTimeOut: Boolean): Unit = js.native
+    def start(callback: FrameRequestCallback, forceSetTimeOut: Boolean, targetFPS: Double): Unit = js.native
     /**
       * The RAF step function.
       * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.

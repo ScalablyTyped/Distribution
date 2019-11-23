@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jest__console"
-version := "24.9.0-6482c5"
+version := "24.9.0-a0907d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "callsites" % "3.1.0-61ae0f",
   "org.scalablytyped" %%% "jest__source-map" % "24.9.0-3cceb5",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -37,6 +37,7 @@ import typings.nodeDashFetch.nodeDashFetchMod.HeadersInit
 import typings.nodeDashFetch.nodeDashFetchMod.RequestInfo
 import typings.nodeDashFetch.nodeDashFetchMod.RequestInit
 import typings.nodeDashFetch.nodeDashFetchMod.ResponseInit
+import typings.nodeDashFetch.nodeDashFetchMod.SystemError
 import typings.std.Error
 import typings.std.FormData
 import scala.scalajs.js
@@ -221,7 +222,7 @@ object frisbyMod extends js.Object {
     class FetchError protected ()
       extends typings.nodeDashFetch.nodeDashFetchMod.FetchError {
       def this(message: String, `type`: String) = this()
-      def this(message: String, `type`: String, systemError: String) = this()
+      def this(message: String, `type`: String, systemError: SystemError) = this()
     }
     
     @js.native

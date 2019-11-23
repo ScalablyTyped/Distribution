@@ -42,6 +42,7 @@ import typings.react.reactStrings.location
 import typings.react.reactStrings.menu
 import typings.react.reactStrings.mixed
 import typings.react.reactStrings.move
+import typings.react.reactStrings.no
 import typings.react.reactStrings.none
 import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
@@ -60,6 +61,7 @@ import typings.react.reactStrings.time
 import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
+import typings.react.reactStrings.yes
 import typings.std.Event
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -322,6 +324,7 @@ object INavbarDividerProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null
@@ -577,6 +580,7 @@ object INavbarDividerProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "node-redis-pubsub"
-version := "3.0-dt-20180918Z-207c5f"
+version := "3.0-dt-20180918Z-299d33"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190926Z-0c7458",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190926Z-5c8a01",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

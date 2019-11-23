@@ -39,10 +39,10 @@ object rsocketDashTypesNumbers {
   sealed trait `0x09` extends js.Object
   
   @js.native
-  sealed trait `0x0A` extends js.Object
+  sealed trait `0x0a` extends js.Object
   
   @js.native
-  sealed trait `0x0B` extends js.Object
+  sealed trait `0x0b` extends js.Object
   
   @js.native
   sealed trait `0x0c` extends js.Object
@@ -79,9 +79,9 @@ object rsocketDashTypesNumbers {
   @scala.inline
   def `0x09`: `0x09` = 0x09.asInstanceOf[`0x09`]
   @scala.inline
-  def `0x0A`: `0x0A` = 0x0A.asInstanceOf[`0x0A`]
+  def `0x0a`: `0x0a` = 0x0a.asInstanceOf[`0x0a`]
   @scala.inline
-  def `0x0B`: `0x0B` = 0x0B.asInstanceOf[`0x0B`]
+  def `0x0b`: `0x0b` = 0x0b.asInstanceOf[`0x0b`]
   @scala.inline
   def `0x0c`: `0x0c` = 0x0c.asInstanceOf[`0x0c`]
   @scala.inline

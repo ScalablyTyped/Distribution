@@ -25,6 +25,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.location
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -45,6 +46,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.atMaterialDashUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
 import typings.atMaterialDashUiCore.buttonBaseTouchRippleMod.TouchRippleProps
@@ -379,6 +381,7 @@ trait PartialTabProps extends js.Object {
   var target: js.UndefOr[String] = js.undefined
   var textColor: js.UndefOr[String | secondary | primary | inherit] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -592,6 +595,7 @@ object PartialTabProps {
     target: String = null,
     textColor: String | secondary | primary | inherit = null,
     title: String = null,
+    translate: yes | no = null,
     `type`: String = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -802,6 +806,7 @@ object PartialTabProps {
     if (target != null) __obj.updateDynamic("target")(target)
     if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

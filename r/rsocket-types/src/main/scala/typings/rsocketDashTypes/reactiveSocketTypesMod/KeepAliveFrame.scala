@@ -10,16 +10,25 @@ trait KeepAliveFrame extends Frame {
   var data: js.UndefOr[Encodable] = js.undefined
   var flags: Double
   var lastReceivedPosition: Double
+  var length: js.UndefOr[Double] = js.undefined
   var streamId: `0`
   var `type`: `0x03`
 }
 
 object KeepAliveFrame {
   @scala.inline
-  def apply(flags: Double, lastReceivedPosition: Double, streamId: `0`, `type`: `0x03`, data: Encodable = null): KeepAliveFrame = {
+  def apply(
+    flags: Double,
+    lastReceivedPosition: Double,
+    streamId: `0`,
+    `type`: `0x03`,
+    data: Encodable = null,
+    length: Int | Double = null
+  ): KeepAliveFrame = {
     val __obj = js.Dynamic.literal(flags = flags, lastReceivedPosition = lastReceivedPosition, streamId = streamId)
     __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeepAliveFrame]
   }
 }

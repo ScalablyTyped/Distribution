@@ -212,12 +212,6 @@ object atMaterialDashUiLabStrings {
   sealed trait inputRoot extends AutocompleteClassKey
   
   @js.native
-  sealed trait inputRootFilled extends AutocompleteClassKey
-  
-  @js.native
-  sealed trait inputRootOutlined extends AutocompleteClassKey
-  
-  @js.native
   sealed trait label
     extends RatingClassKey
        with ToggleButtonClassKey
@@ -269,6 +263,9 @@ object atMaterialDashUiLabStrings {
   sealed trait move extends js.Object
   
   @js.native
+  sealed trait no extends js.Object
+  
+  @js.native
   sealed trait noOptions extends AutocompleteClassKey
   
   @js.native
@@ -305,7 +302,13 @@ object atMaterialDashUiLabStrings {
   sealed trait polite extends js.Object
   
   @js.native
-  sealed trait popup extends AutocompleteClassKey
+  sealed trait popper extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait popperDisablePortal extends AutocompleteClassKey
+  
+  @js.native
+  sealed trait popup extends js.Object
   
   @js.native
   sealed trait popupIndicator extends AutocompleteClassKey
@@ -435,6 +438,9 @@ object atMaterialDashUiLabStrings {
   @js.native
   sealed trait visuallyhidden extends RatingClassKey
   
+  @js.native
+  sealed trait yes extends js.Object
+  
   @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]
   @scala.inline
@@ -562,10 +568,6 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def inputRoot: inputRoot = "inputRoot".asInstanceOf[inputRoot]
   @scala.inline
-  def inputRootFilled: inputRootFilled = "inputRootFilled".asInstanceOf[inputRootFilled]
-  @scala.inline
-  def inputRootOutlined: inputRootOutlined = "inputRootOutlined".asInstanceOf[inputRootOutlined]
-  @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
   def large: large = "large".asInstanceOf[large]
@@ -598,6 +600,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   @scala.inline
+  def no: no = "no".asInstanceOf[no]
+  @scala.inline
   def noOptions: noOptions = "noOptions".asInstanceOf[noOptions]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -621,6 +625,10 @@ object atMaterialDashUiLabStrings {
   def paper: paper = "paper".asInstanceOf[paper]
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
+  def popper: popper = "popper".asInstanceOf[popper]
+  @scala.inline
+  def popperDisablePortal: popperDisablePortal = "popperDisablePortal".asInstanceOf[popperDisablePortal]
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
@@ -699,5 +707,7 @@ object atMaterialDashUiLabStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def visuallyhidden: visuallyhidden = "visuallyhidden".asInstanceOf[visuallyhidden]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
 }
 

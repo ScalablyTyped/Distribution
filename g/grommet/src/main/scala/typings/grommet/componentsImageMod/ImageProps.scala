@@ -17,6 +17,7 @@ trait ImageProps extends js.Object {
   var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
   var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
   var fallback: js.UndefOr[String] = js.undefined
+  var fillProp: js.UndefOr[Boolean] = js.undefined
   var fit: js.UndefOr[cover | contain] = js.undefined
   var gridArea: js.UndefOr[GridAreaType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
@@ -29,6 +30,7 @@ object ImageProps {
     a11yTitle: A11yTitleType = null,
     alignSelf: AlignSelfType = null,
     fallback: String = null,
+    fillProp: js.UndefOr[Boolean] = js.undefined,
     fit: cover | contain = null,
     gridArea: GridAreaType = null,
     margin: MarginType = null,
@@ -38,6 +40,7 @@ object ImageProps {
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (!js.isUndefined(fillProp)) __obj.updateDynamic("fillProp")(fillProp)
     if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

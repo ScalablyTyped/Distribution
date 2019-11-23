@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait LeaseFrame extends Frame {
   var flags: Double
+  var length: js.UndefOr[Double] = js.undefined
   var metadata: js.UndefOr[Encodable] = js.undefined
   var requestCount: Double
   var streamId: `0`
@@ -23,10 +24,12 @@ object LeaseFrame {
     streamId: `0`,
     ttl: Double,
     `type`: `0x02`,
+    length: Int | Double = null,
     metadata: Encodable = null
   ): LeaseFrame = {
     val __obj = js.Dynamic.literal(flags = flags, requestCount = requestCount, streamId = streamId, ttl = ttl)
     __obj.updateDynamic("type")(`type`)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaseFrame]
   }

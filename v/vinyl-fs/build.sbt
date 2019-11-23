@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "vinyl-fs"
-version := "2.4-dt-20190228Z-6a2394"
+version := "2.4-dt-20190228Z-dcd487"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-12e3c6",
-  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-72cf58",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-d8d150",
+  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-218a48",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-5242bd",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191119Z-94c257",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
   "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-037b40")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-189020")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
